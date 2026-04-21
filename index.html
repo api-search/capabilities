@@ -1,0 +1,58 @@
+---
+layout: default
+meta_title: "API Capabilities | APIs.io"
+meta_description: "Browse API capabilities and workflows. Find what you can accomplish with APIs across the APIs.io network."
+---
+
+<style>
+  .page-hero { text-align: center; padding: 2rem 0 1.5rem; }
+  .page-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+  .page-hero p { color: #666; margin-bottom: 1.5rem; }
+  .filter-bar { max-width: 960px; margin: 0 auto 1.5rem; }
+  .cap-list { max-width: 960px; margin: 0 auto; }
+  .cap-item { background: white; border: 1px solid #e3e7ee; border-left: 3px solid #198754; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.5rem; transition: all 0.15s; }
+  .cap-item:hover { border-color: #198754; box-shadow: 0 2px 8px rgba(25,135,84,0.1); }
+  .cap-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .cap-item h3 a { color: #1a1a2e; text-decoration: none; }
+  .cap-item h3 a:hover { color: #198754; }
+  .cap-provider { font-size: 0.8rem; color: #6c757d; }
+  .cap-desc { font-size: 0.85rem; color: #666; margin-top: 0.25rem; }
+  .cap-tags { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.4rem; }
+  .tag-sm { display: inline-block; padding: 0.15em 0.5em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.7rem; }
+</style>
+
+<div class="page-hero">
+  <h1>API Capabilities</h1>
+  <p>Browse <strong>{{ site.capabilities | size }}</strong> capabilities across the APIs.io network</p>
+  <div class="alert alert-success d-inline-flex align-items-center gap-2" role="alert" style="border-radius: 8px;">
+    <strong>Run with Naftiko</strong> &mdash; Deploy and orchestrate API capabilities
+    <a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-success btn-sm">Get Started</a>
+  </div>
+  <div class="filter-bar" style="margin-top: 1.5rem;">
+    <input type="text" class="form-control" id="cap-filter" placeholder="Filter capabilities..." style="max-width: 400px; margin: 0 auto;">
+  </div>
+</div>
+
+<div class="cap-list" id="cap-list">
+  {% for cap in site.capabilities %}
+  <div class="cap-item" data-name="{{ cap.name | downcase }} {{ cap.provider_name | downcase }}">
+    <h3><a href="{{ cap.url }}">{{ cap.name }}</a></h3>
+    <div class="cap-provider"><a href="https://providers.apis.io/providers/{{ cap.provider_slug }}/">{{ cap.provider_name }}</a></div>
+    {% if cap.description %}<div class="cap-desc">{{ cap.description | strip_html | truncate: 200 }}</div>{% endif %}
+    {% if cap.tags.size > 0 %}
+    <div class="cap-tags">
+      {% for tag in cap.tags limit: 5 %}<span class="tag-sm">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+document.getElementById('cap-filter').addEventListener('input', function() {
+  var q = this.value.toLowerCase();
+  document.querySelectorAll('.cap-item').forEach(function(item) {
+    item.style.display = item.getAttribute('data-name').indexOf(q) !== -1 ? '' : 'none';
+  });
+});
+</script>

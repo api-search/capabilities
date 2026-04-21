@@ -1,0 +1,186 @@
+---
+consumed_apis:
+- conductor
+description: Unified workflow for managing workflow definitions, task definitions, workflow executions, and event handlers. Used by backend developers and DevOps engineers.
+layout: capability
+name: Conductor Workflow Orchestration
+operations:
+- description: List all workflow definitions.
+  method: GET
+  name: list-workflow-definitions
+  path: /v1/workflow-definitions
+- description: Create a workflow definition.
+  method: POST
+  name: create-workflow-definition
+  path: /v1/workflow-definitions
+- description: Get a workflow definition.
+  method: GET
+  name: get-workflow-definition
+  path: /v1/workflow-definitions/{id}
+- description: Delete a workflow definition.
+  method: DELETE
+  name: delete-workflow-definition
+  path: /v1/workflow-definitions/{id}
+- description: List all task definitions.
+  method: GET
+  name: list-task-definitions
+  path: /v1/task-definitions
+- description: Create task definitions.
+  method: POST
+  name: create-task-definitions
+  path: /v1/task-definitions
+- description: Start a new workflow.
+  method: POST
+  name: start-workflow
+  path: /v1/workflows
+- description: Get workflow execution status.
+  method: GET
+  name: get-workflow-execution
+  path: /v1/workflows/{id}
+- description: Delete a workflow execution.
+  method: DELETE
+  name: delete-workflow-execution
+  path: /v1/workflows/{id}
+personas: []
+provider_name: Conductor
+provider_slug: conductor
+search_terms:
+- create event handler
+- create workflow definition
+- get workflow definition
+- get workflow execution
+- list workflow definitions
+- start a new workflow execution.
+- resume workflow
+- terminate workflow
+- conductor
+- search for workflow executions.
+- get a task definition.
+- search workflows
+- workflows
+- individual workflow definition.
+- task management
+- automation
+- delete a workflow definition.
+- list all task definitions.
+- workflow definition management.
+- create task definitions.
+- update task
+- create an event handler.
+- create new task definitions.
+- orchestration
+- list all workflow definitions.
+- start workflow
+- tasks
+- workflow execution management.
+- pause workflow
+- list task definitions
+- create a workflow definition.
+- delete a workflow execution.
+- delete workflow execution
+- poll for task
+- poll for a task to execute.
+- start a new workflow.
+- individual workflow execution.
+- get a workflow definition by name.
+- terminate a running workflow.
+- list all event handlers.
+- delete workflow definition
+- create a new workflow definition.
+- task definition management.
+- resume a paused workflow.
+- workflow orchestration
+- get workflow execution status.
+- pause a running workflow.
+- list event handlers
+- state
+- get a workflow definition.
+- create task definitions
+- get task definition
+- update task execution status.
+slug: workflow-orchestration
+tags:
+- Conductor
+- Workflow Orchestration
+- Task Management
+- Automation
+tools:
+- description: List all workflow definitions.
+  hints:
+    openWorld: true
+    readOnly: true
+  name: list-workflow-definitions
+- description: Get a workflow definition by name.
+  hints:
+    readOnly: true
+  name: get-workflow-definition
+- description: Create a new workflow definition.
+  hints:
+    readOnly: false
+  name: create-workflow-definition
+- description: Delete a workflow definition.
+  hints:
+    destructive: true
+    idempotent: true
+    readOnly: false
+  name: delete-workflow-definition
+- description: List all task definitions.
+  hints:
+    openWorld: true
+    readOnly: true
+  name: list-task-definitions
+- description: Get a task definition.
+  hints:
+    readOnly: true
+  name: get-task-definition
+- description: Create new task definitions.
+  hints:
+    readOnly: false
+  name: create-task-definitions
+- description: Start a new workflow execution.
+  hints:
+    readOnly: false
+  name: start-workflow
+- description: Get workflow execution status.
+  hints:
+    readOnly: true
+  name: get-workflow-execution
+- description: Pause a running workflow.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: pause-workflow
+- description: Resume a paused workflow.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: resume-workflow
+- description: Terminate a running workflow.
+  hints:
+    destructive: true
+    idempotent: true
+    readOnly: false
+  name: terminate-workflow
+- description: Search for workflow executions.
+  hints:
+    openWorld: true
+    readOnly: true
+  name: search-workflows
+- description: Poll for a task to execute.
+  hints:
+    readOnly: true
+  name: poll-for-task
+- description: Update task execution status.
+  hints:
+    readOnly: false
+  name: update-task
+- description: List all event handlers.
+  hints:
+    openWorld: true
+    readOnly: true
+  name: list-event-handlers
+- description: Create an event handler.
+  hints:
+    readOnly: false
+  name: create-event-handler
+---

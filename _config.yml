@@ -1,0 +1,29 @@
+name: APIs.io Capabilities
+description: Browse API capabilities and workflows across the APIs.io network.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://capabilities.apis.io
+
+node: website
+nav_active: capabilities
+
+keywords:
+  - APIs
+  - Search
+  - Discovery
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts"]
+
+github_org: api-search
+github_repo: capabilities
+
+collections:
+  capabilities:
+    output: true
+    permalink: /capabilities/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: capabilities
+    values:
+      layout: capability

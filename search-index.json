@@ -1,0 +1,17 @@
+---
+layout: none
+---
+[
+{% assign idx = 0 %}{% for cap in site.capabilities %}{
+"i":{{ idx }},
+"type":"capability",
+"n":{{ cap.name | jsonify }},
+"d":{{ cap.description | strip_html | strip_newlines | truncate: 300 | jsonify }},
+"t":{{ cap.tags | jsonify }},
+"p":{{ cap.provider_name | default: cap.provider_slug | jsonify }},
+"ps":{{ cap.provider_slug | jsonify }},
+"u":"{{ cap.url | absolute_url }}",
+"st":{{ cap.search_terms | join: ' | ' | truncate: 800 | jsonify }}
+}{% assign idx = idx | plus: 1 %}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
