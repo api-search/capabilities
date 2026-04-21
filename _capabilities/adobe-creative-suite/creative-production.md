@@ -103,129 +103,129 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- alpha mask creation
-- get the status of an async photoshop job
-- smart object replacement
-- fill image
-- remove background
-- firefly generate composite
-- stock assets
-- stock asset search
-- psd layer management
-- product cropping
-- edit text layers
-- image editing
-- license a vector or illustration for use in a project
-- generate images from a text prompt using adobe firefly
-- photoshop create rendition
-- apply document operations
-- generate images similar to a reference image using firefly
-- firefly generate images
-- video
-- adobe
-- photoshop straighten image
-- create renditions from a psd or image in jpeg, png, or tiff
-- manage layers
-- generate similar image variations
-- expand an image beyond its boundaries using firefly generative ai
-- get the adobe stock content category tree
-- remove the background from an image using photoshop sensei ai
-- image rendition creation
-- straighten image
-- read, add, modify, or delete layers in a psd document
-- firefly fill image
-- creative
-- photoshop apply document operations
-- generate video
-- license a stock photo
-- apply resize, flatten, or trim operations to a psd
-- license image
-- stock get file metadata
-- generate similar images
-- license video
-- firefly generate similar images
 - stock get categories
-- get firefly job status
-- photoshop create artboard
-- photoshop create mask
-- create artboards in a psd document
-- stock video licensing
-- create artboards within a psd document
-- background removal
-- fill a masked region with ai-generated content
-- edit text content and styling in psd text layers
-- get metadata for a specific stock file
-- ai-powered image expansion
-- firefly generation job status
-- ai video generation
-- generate a video from a text prompt using firefly
-- stock image licensing
+- get the adobe stock content category tree
+- creative production
+- product cropping
+- stock license vector
+- license a stock photo for use in a project
+- stock license video
+- stock license image
+- photoshop product crop
+- firefly generate video
+- get the status of an async firefly generation job
+- apply resize, flatten, or trim operations to a psd document
+- alpha mask creation
+- straighten image
+- generate images similar to a reference image using firefly
+- creative
+- image rendition creation
+- photoshop get job status
 - image straightening
+- stock assets
+- get the status of an async photoshop job
+- remove background
+- photoshop edit smart object
+- replace smart object content in a psd
+- get photoshop job status
+- search the adobe stock library
+- get detailed metadata for a specific stock file
+- license a stock photo
+- create renditions from a psd or image in jpeg, png, or tiff
+- design
+- firefly get job status
+- fill image
+- edit text content and styling in psd text layers
+- stock vector licensing
+- firefly generate similar images
+- apply resize, flatten, or trim operations to a psd
+- psd layer management
+- photoshop edit text layers
+- photoshop operation job status
+- firefly generation job status
+- psd document operations
 - remove background from an image using photoshop
 - replace smart object content in a psd document
-- expand an image beyond its boundaries using firefly
-- auto-crop an image to focus on the primary product
-- get detailed metadata for a specific stock file
-- license vector
-- auto-crop an image to the primary product
-- photography
-- stock license video
-- get the status of an async firefly generation job
-- edit text layers in a psd document
-- firefly generate video
-- generate images
-- generate images similar to a reference image
-- create renditions from a psd or image
-- ai object compositing
-- photoshop manage layers
-- generative ai
-- license a stock photo for use in a project
-- stock vector licensing
-- stock file metadata
-- search stock files
-- photoshop operation job status
-- get stock file metadata
-- edit smart object
-- get photoshop job status
-- apply resize, flatten, or trim operations to a psd document
-- psd document operations
-- search the adobe stock library
-- graphics
-- creative production
-- ai-powered generative fill
-- manage layers in a psd document
-- create rendition
-- ai image generation from text prompts
-- firefly get job status
-- replace smart object content in a psd
-- stock license image
-- generate composite
-- generate and composite an ai object into a scene
-- photoshop product crop
-- generate an ai object and composite it into a scene using firefly
-- generate images from a text prompt using firefly
-- automatically straighten a rotated image
-- psd artboard creation
-- license a stock video clip
-- stock search files
-- design
-- create an alpha mask for an image using photoshop sensei ai
-- search the adobe stock library for photos, illustrations, vectors, and videos
 - create an alpha mask for an image
-- create mask
-- product crop
-- photoshop get job status
+- stock asset search
+- psd artboard creation
 - license a stock video clip for use in a project
-- photoshop edit smart object
-- photoshop remove background
-- license a vector or illustration
-- photoshop edit text layers
-- create artboard
-- fill a masked region of an image with ai-generated content using firefly
+- create artboards in a psd document
+- create rendition
+- expand an image beyond its boundaries using firefly generative ai
+- image editing
+- create renditions from a psd or image
+- firefly generate images
+- photoshop create rendition
+- stock get file metadata
 - psd text layer editing
-- firefly expand image
-- stock license vector
+- license a stock video clip
+- license a vector or illustration
+- fill a masked region of an image with ai-generated content using firefly
+- search the adobe stock library for photos, illustrations, vectors, and videos
+- auto-crop an image to the primary product
+- generate a video from a text prompt using firefly
+- firefly generate composite
+- apply document operations
+- edit smart object
+- ai-powered image expansion
+- manage layers in a psd document
+- generate composite
+- product crop
+- photoshop remove background
 - expand image
+- ai-powered generative fill
+- photoshop create mask
+- license vector
+- get stock file metadata
+- photoshop create artboard
+- ai image generation from text prompts
+- generate similar image variations
+- manage layers
+- generate video
+- license image
+- firefly fill image
+- fill a masked region with ai-generated content
+- edit text layers
+- background removal
+- photoshop straighten image
+- ai video generation
+- photoshop apply document operations
+- stock search files
+- stock file metadata
+- remove the background from an image using photoshop sensei ai
+- create mask
+- auto-crop an image to focus on the primary product
+- ai object compositing
+- video
+- generate similar images
+- license a vector or illustration for use in a project
+- smart object replacement
+- photoshop manage layers
+- get firefly job status
+- generate images from a text prompt using firefly
+- generate images from a text prompt using adobe firefly
+- stock video licensing
+- graphics
+- create artboard
+- read, add, modify, or delete layers in a psd document
+- license video
+- stock image licensing
+- generate an ai object and composite it into a scene using firefly
+- edit text layers in a psd document
+- search stock files
+- expand an image beyond its boundaries using firefly
+- photography
+- generate images similar to a reference image
+- adobe
+- generate and composite an ai object into a scene
+- automatically straighten a rotated image
+- get metadata for a specific stock file
+- create artboards within a psd document
+- create an alpha mask for an image using photoshop sensei ai
+- generative ai
+- generate images
+- firefly expand image
 slug: creative-production
 tags:
 - Adobe

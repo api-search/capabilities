@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- fraud detection
-- merchant
-- get payment
-- process a payment through the gateway
-- process a payment through the mastercard gateway
-- create a new checkout session for a merchant
-- mastercard
-- get payment details
-- financial services
-- checkout
-- create a unified checkout session
-- process a cloud commerce transaction
-- credit cards
-- buy-now-pay-later installment plans
-- digital identity
-- create checkout session
-- generate qr code
-- payment processing
-- qr code payment acceptance
-- payments
-- process cloud transaction
-- retrieve payment transaction details
-- create installment plan
-- create a buy-now-pay-later installment plan
-- create a unified checkout session supporting multiple payment methods
-- open banking
-- generate a merchant qr code for payment
-- create a new checkout session
-- e-commerce
-- unified checkout sessions
 - create unified session
-- generate a merchant-presented qr code for payment
-- checkout session management
-- process payment
-- register contactless reader
-- register a contactless reader device
+- digital identity
+- open banking
 - create an installment plan
+- buy-now-pay-later installment plans
+- generate a merchant-presented qr code for payment
+- process a cloud commerce transaction
+- process a payment through the mastercard gateway
+- retrieve payment transaction details
+- create checkout session
+- register contactless reader
+- checkout
+- merchant
+- fraud detection
+- generate a merchant qr code for payment
+- credit cards
+- qr code payment acceptance
+- process payment
+- create a unified checkout session
+- unified checkout sessions
+- create a new checkout session for a merchant
+- create a buy-now-pay-later installment plan
+- process cloud transaction
+- get payment
+- create installment plan
+- payment processing
+- generate qr code
+- get payment details
+- create a unified checkout session supporting multiple payment methods
+- register a contactless reader device
+- financial services
+- payments
+- mastercard
+- process a payment through the gateway
+- create a new checkout session
+- checkout session management
+- e-commerce
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

@@ -25,36 +25,36 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
+- list ofdb databases.
+- financial data
+- get content feeds
+- list ofdb
 - data management
-- list databases
-- get direct streaming data.
 - get standard datafeed
+- list datafeeds.
+- get xdf snapshot
+- get exchange datafeed snapshot.
+- get xdf model
+- etl
+- get prog env
+- list databases
+- factset
+- datafeed
+- market data
+- investment analytics
+- get streaming
+- list databases.
+- get direct streaming data.
+- get content feeds dictionary.
+- ofdb database management.
+- list datafeeds
+- portfolio analytics
+- get exchange datafeed model.
 - research
 - get programmatic environment.
-- ofdb database management.
-- get streaming
-- list datafeeds.
-- datafeed
-- financial data
-- financial
-- get exchange datafeed model.
-- get exchange datafeed snapshot.
-- get content feeds dictionary.
-- etl
-- market data
-- list datafeeds
-- get xdf model
-- portfolio analytics
-- list ofdb databases.
 - standard datafeed.
-- get xdf snapshot
-- factset
-- get prog env
-- list ofdb
+- financial
 - get standard datafeed.
-- investment analytics
-- list databases.
-- get content feeds
 slug: data-management
 tags:
 - FactSet

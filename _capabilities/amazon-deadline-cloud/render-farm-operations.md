@@ -8,11 +8,11 @@ personas: []
 provider_name: Amazon Deadline Cloud
 provider_slug: amazon-deadline-cloud
 search_terms:
-- rendering
 - aws
-- media
-- visual effects
 - compute
+- visual effects
+- media
+- rendering
 slug: render-farm-operations
 tags: []
 tools: []

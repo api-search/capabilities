@@ -25,39 +25,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- generate a chat response from any of 400+ ai language models via aimlapi
-- api key management and model discovery
-- image generation
 - create a chat completion
-- generate embeddings
-- create image
-- ai models
-- ai model inference across modalities
-- api gateway
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- speech
-- artificial intelligence
-- video generation
-- developer integrating ai capabilities into applications via aimlapi
-- ai engineer evaluating and comparing models for ml pipelines
-- list available models
-- generate an image
-- generate image
-- generate vector embeddings for semantic search and rag applications
-- machine learning
-- list models
 - embeddings
-- llm
-- chat completions via 400+ llms
-- create embedding
-- Developer
-- create chat completion
-- create embeddings
 - developer tools
-- list all models
-- generate an image from a text prompt using aimlapi image generation models
+- machine learning
 - AI Engineer
+- list all models
+- video generation
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- create embeddings
+- api gateway
+- list models
+- generate vector embeddings for semantic search and rag applications
+- generate an image
 - discover all 400+ available ai models on aimlapi platform
+- ai engineer evaluating and comparing models for ml pipelines
+- generate an image from a text prompt using aimlapi image generation models
+- list available models
+- ai model inference across modalities
+- chat completions via 400+ llms
+- create chat completion
+- generate embeddings
+- llm
+- generate a chat response from any of 400+ ai language models via aimlapi
+- Developer
+- api key management and model discovery
+- create embedding
+- create image
+- artificial intelligence
+- developer integrating ai capabilities into applications via aimlapi
+- speech
+- ai models
+- image generation
+- generate image
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

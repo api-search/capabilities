@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon Cloud9
 provider_slug: amazon-cloud9
 search_terms:
-- browser-based
-- ide
-- cloud9
 - aws
-- development
-- Software Developer
 - amazon web services
+- cloud9
+- Software Developer
+- ide
+- development
 - amazon cloud9
+- browser-based
 slug: development-environment
 tags:
 - Amazon Web Services

@@ -8,11 +8,11 @@ personas: []
 provider_name: Amazon Web Services
 provider_slug: amazon-web-services
 search_terms:
-- amazon
 - aws
-- cloud
-- network
 - index
+- network
+- cloud
+- amazon
 slug: amazon-web-services-capability
 tags: []
 tools: []

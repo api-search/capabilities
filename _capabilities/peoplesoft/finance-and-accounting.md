@@ -47,50 +47,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- budgeting
+- list ar items
 - expense reports
-- process approval
-- erp
-- approve, deny, or push back a finance approval request.
-- general ledger journal entries
-- finance
-- list journal entries
-- enterprise software
-- peopletools platform services.
-- retrieve forecast data and projections.
-- retrieve performance analytics reports.
+- retrieve pending finance approval requests.
+- list budgets
 - retrieve accounts receivable items.
-- forecast data and projections
-- individual approval operations
+- finance
+- crm
+- financial and supply chain management.
+- accounting
+- general ledger
 - budget definitions and data
-- list pending approvals
+- hcm
+- forecast data and projections
+- erp
+- campus solutions.
+- retrieve expense reports.
+- general ledger journal entries
+- financial management
 - retrieve budget definitions and data.
 - list vouchers
-- human capital management.
-- list ar items
-- list budgets
-- list expense reports
-- supply chain management
-- hcm
-- retrieve pending finance approval requests.
-- financial management
-- peoplesoft
 - list analytics reports
-- finance approval requests
-- retrieve accounts payable vouchers.
+- peopletools platform services.
+- process approval
+- individual approval operations
+- retrieve performance analytics reports.
+- enterprise software
+- list pending approvals
+- list expense reports
 - forecasting
+- human capital management.
+- supply chain management
+- retrieve accounts payable vouchers.
+- retrieve forecast data and projections.
+- list journal entries
 - accounts receivable items
-- financial and supply chain management.
-- campus solutions
-- retrieve expense reports.
-- general ledger
-- budgeting
+- retrieve general ledger journal entries.
 - list forecasts
 - accounts payable vouchers
-- campus solutions.
-- accounting
-- retrieve general ledger journal entries.
+- finance approval requests
+- campus solutions
+- approve, deny, or push back a finance approval request.
+- peoplesoft
 - performance analytics reports
-- crm
 slug: finance-and-accounting
 tags:
 - PeopleSoft

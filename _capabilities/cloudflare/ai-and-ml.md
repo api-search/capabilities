@@ -27,64 +27,64 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- cdn
-- ai create embeddings
-- dns
-- gateway list gateways
-- gateway delete gateway
-- edge computing
-- object storage
-- list vectorize indexes.
-- edge
-- run an ai model.
-- ddos protection
-- get ai gateway details.
-- ai gateway management.
-- vectorize index management.
-- vectorize insert vectors
-- delete a vectorize index.
-- serverless
-- vector database
-- create an ai response.
-- vectorize create index
-- gateway create gateway
-- platform
-- generate text embeddings.
-- vectorize list indexes
-- vectorize delete index
-- api gateway
-- artificial intelligence
-- containers
-- list ai gateways
-- create a vectorize index.
-- list ai gateway instances.
-- perform similarity query.
-- cloudflare
 - ai gateway
-- cloud
-- ai create response
-- real-time communication
+- cloudflare
+- vectorize insert vectors
+- ai create embeddings
+- gateway create gateway
+- ai create chat completion
+- list ai gateway instances.
+- list ai gateways
+- machine learning
+- gateway list logs
+- generate text embeddings.
 - vectorize query vectors
 - security
-- list ai gateway logs.
-- chat completions.
-- gateway get gateway
-- machine learning
-- list ai gateways.
-- delete an ai gateway.
-- create chat completion
-- create a chat completion.
-- list vectorize indexes
-- ai create chat completion
-- create embeddings
-- ai create text completion
-- ai execute model
-- text embeddings.
-- gateway list logs
-- insert vectors into an index.
-- create a text completion.
-- web performance
+- serverless
 - create an ai gateway.
+- create embeddings
+- chat completions.
+- api gateway
+- cdn
+- dns
+- gateway get gateway
+- create a text completion.
+- vectorize create index
+- vectorize index management.
+- insert vectors into an index.
+- cloud
+- edge computing
+- containers
+- ai execute model
+- ai create text completion
+- list vectorize indexes
+- create a vectorize index.
+- web performance
+- ai gateway management.
+- real-time communication
+- delete an ai gateway.
+- gateway delete gateway
+- vectorize list indexes
+- ddos protection
+- text embeddings.
+- vectorize delete index
+- list ai gateway logs.
+- platform
+- create chat completion
+- list ai gateways.
+- vector database
+- list vectorize indexes.
+- run an ai model.
+- get ai gateway details.
+- create an ai response.
+- ai create response
+- delete a vectorize index.
+- edge
+- gateway list gateways
+- artificial intelligence
+- object storage
+- perform similarity query.
+- create a chat completion.
 slug: ai-and-ml
 tags:
 - Cloudflare

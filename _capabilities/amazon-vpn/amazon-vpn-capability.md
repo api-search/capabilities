@@ -8,9 +8,9 @@ personas: []
 provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
-- vpn
-- aws
 - security
+- aws
+- vpn
 - networking
 slug: amazon-vpn-capability
 tags: []

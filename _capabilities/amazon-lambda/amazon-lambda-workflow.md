@@ -9,30 +9,30 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
-- unified workflow for amazon lambda resource management
 - event-driven
-- aws
-- functions create function
-- Administrator
-- creates a lambda function.
-- returns details about an event source mapping.
-- amazon lambda
-- functions get function
-- serverless
-- event source mappings get event source mapping
-- workflow
 - faas
-- manages resources and configurations
-- compute
-- functions
-- integrates api into applications
-- functions list functions
+- workflow
 - returns information about the function or function version.
+- integrates api into applications
+- serverless
+- functions
 - event source mappings list event source mappings
 - returns a list of lambda functions, with the version-specific configuration of each.
-- Developer
+- functions get function
 - event source mappings create event source mapping
+- creates a lambda function.
+- aws
+- manages resources and configurations
+- Administrator
+- functions create function
 - lists event source mappings.
+- functions list functions
+- unified workflow for amazon lambda resource management
+- Developer
+- compute
+- amazon lambda
+- returns details about an event source mapping.
+- event source mappings get event source mapping
 - creates a mapping between an event source and an aws lambda function.
 slug: amazon-lambda-workflow
 tags:

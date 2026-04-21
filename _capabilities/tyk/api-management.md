@@ -42,63 +42,63 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- dashboard create api
-- list keys
-- check gateway health
-- dashboard get catalogue
-- list all policies
-- dashboard delete api
-- dashboard list policies
-- update an api definition in the dashboard
-- gateway list apis
-- create a new api definition
-- get a specific api definition
-- create a new api key
-- gateway
-- dashboard get policy
-- gateway check health
-- dashboard list keys
-- api management
-- dashboard list apis
-- dashboard get api
-- dashboard create policy
-- graphql
+- dashboard list users
+- delete an api definition from the dashboard
 - api keys
+- dashboard list keys
+- get a specific policy
+- open source
+- create a new security policy
+- create a new api key
+- security policies
+- list all certificates on the gateway
+- api management
+- api definitions
 - list all security policies
 - list all api definitions from dashboard
-- gateway health
-- gateway list certificates
-- api gateway
-- list all api definitions directly from the gateway
-- tyk
-- list all api definitions from the tyk dashboard
-- delete an api definition from the dashboard
-- check the gateway health status
-- open source
-- dashboard users
-- list all dashboard users
-- get portal catalogue
-- get catalogue
-- create a new api definition in the dashboard
-- security policies
-- api definitions
-- list all api keys
-- list policies
-- get a specific policy
-- create a new security policy
-- check health
-- dashboard update api
-- dashboard create key
-- dashboard list users
-- create api
-- hot reload the gateway configuration
-- list all certificates on the gateway
-- get the developer portal catalogue
-- get api
-- list apis
-- gateway hot reload
-- portal catalogue
 - list users
+- list apis
+- get a specific api definition
+- list all api definitions from the tyk dashboard
+- gateway hot reload
+- dashboard create key
+- api gateway
+- list all api keys
+- dashboard list policies
+- dashboard create policy
+- gateway health
+- graphql
+- create a new api definition
+- dashboard delete api
+- dashboard update api
+- get the developer portal catalogue
+- dashboard get api
+- create a new api definition in the dashboard
+- dashboard users
+- dashboard get catalogue
+- gateway list certificates
+- check health
+- check gateway health
+- dashboard create api
+- list keys
+- get catalogue
+- hot reload the gateway configuration
+- gateway check health
+- list all api definitions directly from the gateway
+- dashboard list apis
+- list policies
+- portal catalogue
+- list all policies
+- gateway
+- get portal catalogue
+- list all dashboard users
+- check the gateway health status
+- tyk
+- create api
+- get api
+- update an api definition in the dashboard
+- gateway list apis
+- dashboard get policy
 - get a specific api definition from the dashboard
 slug: api-management
 tags:

@@ -18,26 +18,26 @@ provider_name: Workday
 provider_slug: workday
 search_terms:
 - get a supplier by id
-- get accounting journal
+- list customer invoices
+- accounting journals
+- cloud computing
 - get supplier
 - suppliers
-- enterprise software
-- list suppliers
-- list purchase orders
-- get an expense report by id
-- saas
-- workday
-- get expense report
-- cloud computing
-- list expense reports
-- procurement
-- list customer invoices
 - hcm
-- financial management
+- list suppliers
 - get an accounting journal by id
-- accounting journals
-- list journals
+- get an expense report by id
+- financial management
+- list purchase orders
+- enterprise software
+- workday
+- saas
+- list expense reports
 - list accounting journals
+- get accounting journal
+- list journals
+- procurement
+- get expense report
 slug: finance-and-procurement
 tags:
 - Workday

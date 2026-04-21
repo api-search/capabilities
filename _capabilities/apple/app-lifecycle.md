@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- modify app
-- build management.
-- remove a beta tester.
-- list beta testers.
-- create a new beta group.
-- update build information.
-- list all beta groups.
-- list apps
-- beta group management.
-- list all beta testers.
-- add a beta tester.
-- read app
-- modify beta group
-- list testers
 - modify build
-- app management.
-- beta tester management.
-- delete beta tester
-- delete beta group
-- read beta tester
-- list beta testers
-- list all builds.
-- get beta group details.
-- testflight
-- technology
-- create beta group
-- create tester
-- list beta groups.
-- create beta tester
-- app management
-- get details of a specific app.
-- create a beta group.
-- read beta group
 - list builds
-- developer
-- ios
-- list beta groups
-- mobile
-- app store
-- update app metadata.
-- read build
-- list groups
-- apple
-- list all apps.
-- list all apps in app store connect.
 - get build details.
-- update a beta group.
-- get beta tester details.
-- delete a beta group.
-- add a new beta tester.
-- macos
+- list all builds.
+- create a beta group.
+- list all apps.
+- read build
+- beta group management.
+- get details of a specific app.
+- modify app
+- app store
+- list apps
+- list beta testers
+- technology
+- list beta groups.
+- list groups
+- delete beta tester
+- create beta group
+- update build information.
 - create group
+- apple
+- beta tester management.
+- delete a beta group.
+- read app
+- add a new beta tester.
+- modify beta group
+- list all beta testers.
+- get beta group details.
+- mobile
+- list beta testers.
+- delete beta group
+- list beta groups
+- read beta tester
+- developer
+- app management
+- app management.
+- add a beta tester.
+- create beta tester
+- list all beta groups.
+- testflight
+- create a new beta group.
+- macos
+- list testers
+- update a beta group.
+- build management.
+- update app metadata.
+- list all apps in app store connect.
+- read beta group
+- ios
+- get beta tester details.
+- create tester
+- remove a beta tester.
 slug: app-lifecycle
 tags:
 - Apple

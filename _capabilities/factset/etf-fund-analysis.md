@@ -25,33 +25,33 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get estimates
-- get etfs
-- benchmarks
+- financial data
 - funds
-- get mutual fund data.
+- get etfs
+- get benchmarks
+- get fund data.
+- get funds
 - get etf data.
+- get estimates
+- benchmark data.
+- etf data.
+- get mutual fund data.
+- factset
+- get etf data
+- get etf profiles and prices.
+- get consensus estimates.
+- market data
+- investment analytics
+- get etf profiles
+- benchmarks
+- get etf reference data.
+- portfolio analytics
+- fund data.
+- get benchmark data.
 - research
 - etf
-- get etf profiles and prices.
-- get etf data
-- financial data
-- get etf profiles
-- get funds
 - financial
-- get benchmark data.
 - get fund data
-- market data
-- etf data.
-- get fund data.
-- get benchmarks
-- fund data.
-- portfolio analytics
-- get consensus estimates.
-- factset
-- get etf reference data.
-- investment analytics
-- benchmark data.
 slug: etf-fund-analysis
 tags:
 - FactSet

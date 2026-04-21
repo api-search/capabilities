@@ -37,53 +37,53 @@ personas: []
 provider_name: Microsoft Power Platform APIs
 provider_slug: power-platform
 search_terms:
-- power platform
-- check the installation status of an application package
-- update an existing billing policy
-- list packages
-- copilot studio
-- list tenant packages
-- get environment
-- delete environment
-- flow run monitoring
-- list installable application packages for the tenant
+- microsoft
+- governance
 - administration
-- get billing policy
-- delete a power platform environment
+- list packages
+- list environments
+- billing policy management
+- list power automate flow runs by workflow id
+- list tenant packages
+- create a billing policy
+- list installable application packages for the tenant
+- get install status
+- power pages
+- list all power platform environments in the tenant
+- dataverse
 - install an application package in an environment
+- list all billing policies
+- delete environment
+- get billing policy
+- single environment operations
+- list application packages
+- business applications
+- get environment
+- list application packages available in an environment
+- create a new billing policy linking azure subscription
+- update billing policy
+- list billing policies
+- no-code
+- environment management
+- create billing policy
+- get details for a specific power platform environment
+- delete a power platform environment
 - list all environments
 - delete an environment
-- get details for a specific power platform environment
-- get install status
-- environment management
-- list application packages for an environment
-- get environment details
-- create a billing policy
-- power pages
-- list billing policies for the tenant
-- list all power platform environments in the tenant
-- create a new billing policy linking azure subscription
-- low-code
-- single environment operations
-- list power automate flow runs by workflow id
-- billing policy management
-- application package management
-- list all billing policies
-- governance
-- update billing policy
-- install application package
-- list environments
-- get details for a specific billing policy
 - list flow runs
-- microsoft
-- no-code
-- list application packages
-- list application packages available in an environment
-- list billing policies
-- dataverse
-- business applications
+- install application package
+- get details for a specific billing policy
+- low-code
+- flow run monitoring
+- application package management
+- get environment details
+- check the installation status of an application package
+- list billing policies for the tenant
+- list application packages for an environment
+- power platform
+- update an existing billing policy
+- copilot studio
 - list flow runs for an environment
-- create billing policy
 slug: platform-administration
 tags:
 - Microsoft

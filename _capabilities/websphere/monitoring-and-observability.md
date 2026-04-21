@@ -39,47 +39,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get readiness
-- get liveness
-- get liberty log messages
-- check if liberty server is ready for traffic
-- metrics
-- get open liberty overall health
-- get recent liberty log messages
-- log management
-- get liberty metrics
-- monitoring
-- get was performance monitoring data
-- get liberty health
-- performance data
-- check if liberty server is alive
-- metrics collection
-- get was server health
-- get performance data
-- observability
 - cloud native
-- get open liberty overall health status
-- get batch job
-- get liberty admin metrics
-- get liberty logging configuration
-- list batch jobs
-- batch job monitoring
-- get log config
-- ibm websphere
-- application server
-- microservices
-- health check endpoints
-- j2ee
-- get all metrics
-- enterprise java
-- get was health
-- list batch job instances
-- get batch job instance details
-- get was server health status
-- get log messages
 - list jakarta batch job instances
 - middleware
+- enterprise java
+- application server
+- get liberty health
+- metrics collection
+- get open liberty overall health
 - get all open liberty metrics
+- get log config
+- performance data
+- get recent liberty log messages
+- get all metrics
+- get liberty admin metrics
+- get batch job instance details
+- check if liberty server is alive
+- check if liberty server is ready for traffic
+- ibm websphere
+- get liveness
+- get log messages
+- get readiness
+- list batch jobs
+- get open liberty overall health status
+- microservices
+- get performance data
+- monitoring
+- get was health
+- get liberty log messages
+- log management
+- get batch job
+- get was server health status
+- batch job monitoring
+- j2ee
+- get liberty logging configuration
+- get was server health
+- metrics
+- get was performance monitoring data
+- observability
+- list batch job instances
+- health check endpoints
+- get liberty metrics
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

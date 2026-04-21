@@ -19,41 +19,41 @@ provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
 - create a neptune ml inference endpoint for predictions
-- aws
-- list neptune ml training jobs
-- list analytics graphs
-- graph database management, querying, and data streaming
-- trains and deploys neptune ml graph neural network models
-- create ml inference endpoint
-- create analytics graph
-- neptune ml training job management
-- Data Scientist
-- list neptune analytics graphs for in-memory graph analysis
-- performs graph analytics and builds ml models on graph data
-- Graph Developer
-- rdf
-- list neptune ml graph neural network training jobs
-- bulk loading
-- sparql
-- neptune
-- graph analytics
-- manages neptune clusters, instances, and infrastructure
-- list ml jobs
-- property graph
-- writes gremlin, sparql, and opencypher queries against neptune
-- Graph Database Administrator
-- create a neptune analytics graph for graph analytics workloads
-- ML Engineer
-- list neptune analytics graphs
-- graph database
 - database
 - machine learning
-- data streaming
+- list neptune ml graph neural network training jobs
+- property graph
+- create ml inference endpoint
+- list ml jobs
+- graph database management, querying, and data streaming
+- sparql
+- create a neptune analytics graph for graph analytics workloads
+- manages neptune clusters, instances, and infrastructure
 - amazon neptune
-- neptune analytics graph management
-- gremlin
-- graph analytics, vector search, and ml model training and inference
+- ML Engineer
+- Data Scientist
+- create analytics graph
+- graph analytics
 - list ml training jobs
+- performs graph analytics and builds ml models on graph data
+- Graph Developer
+- aws
+- list analytics graphs
+- data streaming
+- bulk loading
+- graph analytics, vector search, and ml model training and inference
+- list neptune analytics graphs for in-memory graph analysis
+- writes gremlin, sparql, and opencypher queries against neptune
+- graph database
+- Graph Database Administrator
+- gremlin
+- trains and deploys neptune ml graph neural network models
+- list neptune ml training jobs
+- neptune analytics graph management
+- list neptune analytics graphs
+- rdf
+- neptune
+- neptune ml training job management
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

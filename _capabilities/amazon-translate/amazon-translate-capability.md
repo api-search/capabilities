@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Translate
 provider_slug: amazon-translate
 search_terms:
-- translation
 - aws
-- nlp
 - localization
-- language processing
 - machine translation
+- nlp
+- language processing
+- translation
 slug: amazon-translate-capability
 tags: []
 tools: []

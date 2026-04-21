@@ -63,65 +63,65 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- dashboard rest api getEventSegmentation
-- getRetentionAnalysis
-- amplitude get user activity
-- amplitude get revenue ltv data
-- dashboard rest api getRetentionAnalysis
-- analyzes data and manages cohorts
-- behavioral cohorts api uploadCohort
-- behavioral cohorts api getCohortExportStatus
-- getCohortExportStatus
-- amplitude export raw event data
-- dashboard rest api getUserActivity
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- unified workflow for sending events and identifying users. for data engineers.
-- amplitude get retention analysis
-- product analytics
-- getUserActivity
-- listCohorts
-- getFunnelAnalysis
-- export api exportEvents
-- dashboard rest api getRevenueLTV
-- dashboard rest api getFunnelAnalysis
-- runs experiments and feature flags
-- amplitude get event segmentation
-- identity management
-- amplitude list all cohorts
-- analytics
-- user behavior
-- data export
-- amplitude get cohort export status
-- amplitude search users
-- amplitude
-- manages privacy and compliance
-- listEventTypes
-- amplitude get funnel analysis
-- getRevenueLTV
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- amplitude list event types
 - export raw event data and manage behavioral cohorts. for data analysts.
-- exportEvents
-- privacy compliance
-- feature flags
-- data governance
-- a/b testing
-- dashboard rest api searchUsers
-- uploadCohort
-- getEventSegmentation
-- searchUsers
-- amplitude download cohort export file
-- behavioral cohorts api listCohorts
-- behavioral cohorts api requestCohortExport
-- behavioral cohorts api downloadCohortExport
-- downloadCohortExport
-- ingests and exports event data
-- experimentation
-- requestCohortExport
 - manage event schemas and chart annotations. for data governance teams.
-- dashboard rest api listEventTypes
+- behavioral cohorts api listCohorts
+- downloadCohortExport
+- behavioral cohorts api getCohortExportStatus
+- dashboard rest api getUserActivity
+- exportEvents
+- amplitude list event types
+- getRevenueLTV
+- feature flags
+- amplitude
+- amplitude search users
+- user behavior
+- getEventSegmentation
+- runs experiments and feature flags
+- data export
+- amplitude list all cohorts
+- data governance
+- product analytics
+- getCohortExportStatus
+- getFunnelAnalysis
+- amplitude get user activity
+- behavioral cohorts api downloadCohortExport
+- amplitude get revenue ltv data
+- behavioral cohorts api uploadCohort
+- export api exportEvents
+- behavioral cohorts api requestCohortExport
+- experimentation
+- amplitude download cohort export file
+- uploadCohort
+- getRetentionAnalysis
+- searchUsers
 - amplitude request a cohort export
+- manages privacy and compliance
+- analyzes data and manages cohorts
+- amplitude get cohort export status
+- amplitude get event segmentation
+- listCohorts
+- requestCohortExport
 - amplitude upload a cohort
+- amplitude get funnel analysis
+- listEventTypes
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- ingests and exports event data
+- identity management
+- amplitude export raw event data
+- dashboard rest api searchUsers
+- unified workflow for sending events and identifying users. for data engineers.
+- analytics
+- a/b testing
+- dashboard rest api getRetentionAnalysis
+- getUserActivity
+- dashboard rest api listEventTypes
+- amplitude get retention analysis
+- dashboard rest api getEventSegmentation
+- dashboard rest api getRevenueLTV
+- privacy compliance
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- dashboard rest api getFunnelAnalysis
 slug: amplitude-data-export-and-cohorts
 tags:
 - Amplitude

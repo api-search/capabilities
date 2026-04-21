@@ -8,13 +8,13 @@ personas: []
 provider_name: Block
 provider_slug: block
 search_terms:
+- fintech
 - point of sale
-- commerce
+- payments
 - square
+- commerce
 - ecommerce
 - cryptocurrency
-- fintech
-- payments
 slug: block-square-commerce
 tags: []
 tools: []

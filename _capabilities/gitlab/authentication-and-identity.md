@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- initiate the device authorization grant flow.
+- get information about the current oauth access token including scopes and expiration.
+- initiate the device authorization grant flow for input-constrained devices.
+- identity
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- software development
+- device authorization grant flow for input-constrained devices.
+- initiate the oauth 2.0 authorization code flow.
+- tokens
 - revoke an existing oauth access or refresh token.
-- code
+- get profile information about the currently authenticated user.
+- authorize oauth
+- authentication
+- oauth
+- token revocation.
+- oauth token exchange and creation.
+- get user info
 - oauth 2.0 authorization code flow initiation.
+- authorize device
+- token introspection and validation.
 - source control
 - authenticated user profile information.
-- initiate the device authorization grant flow for input-constrained devices.
-- token revocation.
-- get profile information about the currently authenticated user.
+- gitlab
+- revoke token
+- get information about the current access token.
+- code
+- platform
+- get profile information about the authenticated user.
+- get token info
 - exchange an authorization code, device code, or refresh token for an access token.
 - revoke an oauth access or refresh token.
-- authorize oauth
-- token introspection and validation.
-- software development
-- gitlab
-- device authorization grant flow for input-constrained devices.
-- get profile information about the authenticated user.
-- platform
-- get information about the current oauth access token including scopes and expiration.
-- initiate the oauth 2.0 authorization code flow.
+- initiate the device authorization grant flow.
 - exchange token
-- get information about the current access token.
-- authentication
-- revoke token
-- oauth
-- authorize device
-- get user info
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- get token info
-- tokens
-- identity
-- oauth token exchange and creation.
 slug: authentication-and-identity
 tags:
 - Gitlab

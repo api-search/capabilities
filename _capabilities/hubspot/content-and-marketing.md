@@ -46,60 +46,60 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list events
-- get blog post
+- get revision history for a blog post
+- retrieve analytics event data for crm objects
 - individual blog post
-- list available event types
-- update a blog post
+- customer service
 - blog post management
-- list all blog posts
-- hubspot
-- archive a blog post
-- retrieve analytics events
-- clone an existing blog post
-- sales
-- schedule blog post
-- create a blog post
-- get a specific blog post by id
-- list all blog authors
-- list blog authors
-- get analytics events
-- marketing automation
-- get a blog post
-- get event types
-- analytics
-- crm
-- cms
-- list event types
-- get blog author
-- schedule a blog post for publication
 - blog author management
+- list blog authors
+- update an existing blog post
 - commerce
-- list blog posts
+- list all blog posts in hubspot
+- crm
+- list available analytics event types
+- cms
+- content
 - create a new blog post
 - create a new blog author
-- create blog post
-- push blog post live
-- clone blog post
-- list all blog posts in hubspot
-- analytics events
-- event type definitions
-- update an existing blog post
+- list event types
+- archive a blog post
+- update a blog post
+- hubspot
+- get event types
+- get blog post revisions
+- list all blog posts
+- schedule blog post
+- sales
+- create a blog post
+- email marketing
+- clone an existing blog post
+- list available event types
+- blog
+- get a specific blog post by id
+- list all blog authors
+- list events
+- list blog posts
+- get a blog post
+- update blog post
+- push a draft blog post to live
+- analytics
+- get blog post
 - archive blog post
 - create blog author
-- customer service
+- create blog post
+- clone blog post
 - marketing
-- update blog post
-- retrieve analytics event data for crm objects
-- blog
-- get blog post revisions
-- operations
-- get revision history for a blog post
-- push a draft blog post to live
 - get a blog author by id
-- content
-- list available analytics event types
-- email marketing
+- event type definitions
+- push blog post live
+- marketing automation
+- operations
+- get blog author
+- analytics events
+- schedule a blog post for publication
+- retrieve analytics events
+- get analytics events
 slug: content-and-marketing
 tags:
 - HubSpot

@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- verify
-- list keys
-- get secret
-- create a new certificate.
-- cryptography
-- list certificates in the vault.
-- get key
-- individual secret management.
-- create a key.
-- set a secret.
-- certificate management.
-- delete certificate
-- list secrets.
-- list certificates.
-- set a secret value.
-- encrypt data using a key.
-- get key details.
-- certificates
-- azure
-- delete a secret.
-- decrypt
-- delete key
-- sign a digest using a key.
-- get a key.
-- delete a key.
-- get a secret value.
-- create key
-- key management
-- sign
-- get a secret.
 - key vault
-- secrets management
+- encrypt data using a key.
+- cryptography
+- decrypt
+- certificate management.
 - get a certificate.
-- create a new cryptographic key.
-- list cryptographic keys in the vault.
-- delete a certificate.
+- create key
 - security
+- list secrets
+- delete a certificate.
+- delete a key.
+- get secret
+- set a secret.
+- get a secret value.
+- create certificate
+- delete a secret.
+- delete key
+- list secrets in the vault.
+- set a secret value.
+- list secrets.
+- sign
+- delete secret
+- key management
+- create a new cryptographic key.
+- azure
+- certificates
+- set secret
+- individual key management.
+- cloud security
+- list certificates.
+- verify a signature.
+- list cryptographic keys in the vault.
+- create a key.
+- list keys.
+- list keys
+- decrypt data using a key.
+- get key
+- list certificates in the vault.
+- delete certificate
 - get certificate
 - list certificates
-- list secrets
-- list secrets in the vault.
-- individual key management.
-- delete secret
-- decrypt data using a key.
-- encrypt
-- create certificate
-- list keys.
-- secret management.
-- verify a signature.
+- get a key.
 - key management.
-- set secret
-- cloud security
+- sign a digest using a key.
+- verify
+- secret management.
+- individual secret management.
+- encrypt
+- get a secret.
+- secrets management
+- get key details.
+- create a new certificate.
 slug: secrets-and-keys
 tags:
 - Azure

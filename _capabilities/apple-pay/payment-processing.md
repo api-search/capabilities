@@ -17,31 +17,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- developer integrating apple pay into a web or mobile checkout experience
-- register a domain for apple pay on the web
-- registering and managing merchant identity and domains for apple pay
-- registers a merchant domain to accept apple pay on the web payments
-- E Commerce Developer
-- checkout
-- engineer building payment processing infrastructure supporting multiple payment methods
-- apple pay
-- validates merchant and obtains apple pay payment session
-- contactless payments
-- payments
-- digital wallet
-- register apple pay domain
-- e-commerce
-- validate apple pay merchant
 - apple pay merchant validation and payment session
-- mobile payments
-- Payment Integration Engineer
-- validate merchant
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- initiating and completing apple pay payment authorizations
-- apple
-- merchant domain management for apple pay
 - register domain
+- contactless payments
+- merchant domain management for apple pay
+- register apple pay domain
+- Payment Integration Engineer
+- initiating and completing apple pay payment authorizations
+- validate apple pay merchant
+- digital wallet
+- checkout
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- registering and managing merchant identity and domains for apple pay
+- apple
+- register a domain for apple pay on the web
+- apple pay
+- developer integrating apple pay into a web or mobile checkout experience
+- validate merchant
+- E Commerce Developer
+- engineer building payment processing infrastructure supporting multiple payment methods
+- payments
+- mobile payments
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- validates merchant and obtains apple pay payment session
+- e-commerce
+- registers a merchant domain to accept apple pay on the web payments
 slug: payment-processing
 tags:
 - Apple Pay

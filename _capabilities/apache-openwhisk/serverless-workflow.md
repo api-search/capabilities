@@ -29,50 +29,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- apache openwhisk
-- list all serverless functions/actions
-- DevOps Engineer
-- apache
+- cloud native
 - event-driven
 - list packages
-- fire an event trigger
-- list activation history
-- Platform Administrator
-- list triggers
-- delete a serverless action
-- get activation
-- invoke action
+- faas
+- open source
+- list actions
+- invoke a serverless action/function
 - serverless
 - serverless function actions
-- faas
-- list rules
-- invoke a serverless action/function
-- cloud native
 - create action
-- list all event triggers
-- functions
-- list all actions
-- Backend Developer
-- builds event-driven applications using serverless functions
-- serverless computing
-- functions as a service
-- fire trigger
-- get details of a specific activation
-- activation history
-- action packages
-- manages serverless deployments and ci/cd pipelines
-- list all trigger-to-action rules
-- event-driven architecture
-- event triggers
-- list all action packages
-- invoke an action
-- create a new serverless action
-- delete action
-- event driven
-- list actions
-- list activations
+- list rules
+- invoke action
+- DevOps Engineer
 - manages namespaces, limits, and platform configuration
-- open source
+- action packages
+- create a new serverless action
+- functions as a service
+- apache
+- serverless computing
+- functions
+- get details of a specific activation
+- delete a serverless action
+- list all trigger-to-action rules
+- event triggers
+- list activations
+- fire trigger
+- delete action
+- list all actions
+- list activation history
+- Backend Developer
+- manages serverless deployments and ci/cd pipelines
+- list all serverless functions/actions
+- event driven
+- list triggers
+- builds event-driven applications using serverless functions
+- event-driven architecture
+- get activation
+- activation history
+- Platform Administrator
+- invoke an action
+- list all event triggers
+- apache openwhisk
+- fire an event trigger
+- list all action packages
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

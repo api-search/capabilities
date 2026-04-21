@@ -46,58 +46,58 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
+- validate synthetic monitor configurations
+- synthetic testing
+- updateMonitor
+- list monitors
+- mute a synthetic test monitor
+- t1
+- get the synthetics on-demand concurrency cap
+- GetOnDemandConcurrencyCap
+- set concurrency cap
+- get monitor
+- validate a synthetic monitor configuration
+- datadog
+- get a monitor by id
+- individual monitor operations
+- delete monitor
+- monitors
+- createMonitor
+- qa
+- monitor management for synthetic alerts
+- get concurrency cap
+- delete a monitor
 - muteMonitor
 - synthetics
-- unmute monitor
+- update a monitor
 - create a monitor
-- qa
-- getMonitor
+- unmute monitor
+- validate monitor
 - get a monitor
-- SetOnDemandConcurrencyCap
-- get monitor
-- set the on-demand concurrency cap
-- monitoring
-- synthetic testing
-- unmute a synthetic test monitor
-- get the synthetics on-demand concurrency cap
 - create a synthetics alert monitor
-- delete a monitor
-- monitors
-- monitor management for synthetic alerts
-- validate synthetic monitor configurations
+- mute synthetic alert monitors
+- mute a monitor
 - create monitor
-- update monitor
-- analytics
-- validate a synthetic monitor configuration
-- dashboards
-- platform
-- validate a monitor
-- get a monitor by id
-- GetOnDemandConcurrencyCap
 - deleteMonitor
 - visualizations
-- mute a monitor
-- delete monitor
-- t1
 - get the on-demand concurrency cap
-- update a monitor
-- mute synthetic alert monitors
-- listMonitors
-- set concurrency cap
-- get concurrency cap
-- validate monitor
-- updateMonitor
-- mute monitor
-- list monitors including synthetic alert monitors
-- individual monitor operations
-- datadog
+- validateMonitor
+- validate a monitor
+- monitoring
+- set a new synthetics on-demand concurrency cap
+- update monitor
+- analytics
 - synthetics concurrency settings
 - update a synthetics alert monitor
-- set a new synthetics on-demand concurrency cap
-- createMonitor
-- mute a synthetic test monitor
-- validateMonitor
-- list monitors
+- getMonitor
+- platform
+- mute monitor
+- unmute a synthetic test monitor
+- SetOnDemandConcurrencyCap
+- set the on-demand concurrency cap
+- list monitors including synthetic alert monitors
+- listMonitors
+- dashboards
 slug: synthetic-testing
 tags:
 - Datadog

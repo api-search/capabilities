@@ -21,40 +21,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- caching
-- apache
-- data management
-- data grid
-- platform engineering
-- list regions
-- execute oql query
-- Platform Engineer
 - list all regions in the apache geode data grid
-- geode region management
 - developers using geode as a fast data store for applications
-- execute an oql query
-- list functions
-- Application Developer
-- list all geode regions
-- server-side function execution
-- execute query
-- get region keys
-- open source
-- list geode regions
-- region crud operations, oql queries, and function execution
-- apache geode
 - execute an oql query against geode regions
-- get all keys stored in a geode region
-- manage in-memory data with regions, queries, and functions
-- engineers managing the geode cluster infrastructure
-- distributed systems
+- open source
+- Platform Engineer
 - high-performance in-memory data caching and distribution
+- caching
+- data management
 - in-memory data grid
+- server-side function execution
+- platform engineering
+- execute query
+- apache
+- get region keys
 - list available functions
-- oql query execution
-- list geode functions
+- engineers managing the geode cluster infrastructure
 - list all server-side functions available in the cluster
 - in-memory
+- list all geode regions
+- manage in-memory data with regions, queries, and functions
+- data grid
+- execute oql query
+- geode region management
+- list functions
+- distributed systems
+- oql query execution
+- list geode regions
+- list geode functions
+- Application Developer
+- list regions
+- region crud operations, oql queries, and function execution
+- apache geode
+- get all keys stored in a geode region
+- execute an oql query
 slug: geode-data-management
 tags:
 - Apache Geode

@@ -25,25 +25,25 @@ personas: []
 provider_name: Google Marketing Platform Admin
 provider_slug: google-marketing-platform
 search_terms:
-- set analytics property service level (standard or 360).
-- set property service level
-- list marketing platform organizations.
-- delete an analytics account link.
-- analytics account link management.
-- list organizations
-- list analytics links
-- create analytics link
-- delete analytics link
-- analytics
-- google marketing platform
-- list analytics account links for an organization.
-- create an analytics account link.
-- list analytics account links.
 - organization management
 - organization management.
+- google marketing platform
+- create analytics link
 - list google marketing platform organizations.
-- marketing
 - individual analytics link management.
+- analytics account link management.
+- set analytics property service level (standard or 360).
+- create an analytics account link.
+- delete analytics link
+- list analytics account links for an organization.
+- analytics
+- list marketing platform organizations.
+- delete an analytics account link.
+- list analytics account links.
+- list organizations
+- marketing
+- list analytics links
+- set property service level
 - platform administration
 slug: marketing-analytics
 tags:

@@ -18,58 +18,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- get video details.
-- stream list live inputs
-- cdn
-- delete a video.
-- stream delete video
-- dns
-- images upload image
-- stream create live input
-- edge computing
-- object storage
-- get image details.
-- media
-- ddos protection
-- edge
-- images get image
-- stream upload video
-- delete an image.
-- images create direct upload
-- video management.
-- upload an image.
-- serverless
-- create a direct upload url.
-- stream create direct upload
-- platform
-- api gateway
-- list videos.
-- list images
-- stream get video
-- list all images.
-- artificial intelligence
-- create a live streaming input.
-- containers
-- list videos
-- video
-- images
-- cloudflare
-- stream list videos
-- images list images
 - ai gateway
-- cloud
-- create a direct upload url for images.
-- list live streaming inputs.
-- real-time communication
-- upload a video from url.
-- security
+- cloudflare
+- video
+- stream upload video
+- create a live streaming input.
+- images list images
 - images list variants
-- list all videos.
+- security
+- serverless
+- delete an image.
+- api gateway
+- cdn
+- dns
+- stream delete video
+- list images
+- get image details.
+- list videos
+- stream create live input
+- video management.
+- delete a video.
+- stream create direct upload
+- images
+- cloud
+- edge computing
+- containers
 - images delete image
-- list image variants.
-- image management.
-- list images.
+- upload an image.
+- images create direct upload
 - web performance
+- list image variants.
+- real-time communication
+- get video details.
+- ddos protection
+- list all images.
+- list images.
+- upload a video from url.
+- list videos.
+- list all videos.
+- images get image
+- platform
+- images upload image
+- create a direct upload url for images.
+- stream list live inputs
+- create a direct upload url.
+- media
+- edge
+- artificial intelligence
+- stream list videos
+- image management.
+- object storage
+- stream get video
+- list live streaming inputs.
 slug: media-and-content
 tags:
 - Cloudflare

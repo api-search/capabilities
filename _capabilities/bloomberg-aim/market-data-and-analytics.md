@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
+- list universes
+- list catalogs
+- list field lists
+- historical data access
 - list field lists for data requests
-- get reference data
-- security universe management
-- get historical data
-- get data catalog details
-- get historical end-of-day data
-- order management
-- list completed data distributions
-- create universe
-- get intraday bars
-- list available bloomberg data catalogs
-- create a bloomberg data request
-- search instruments
+- financial data
 - search for securities and instruments
 - get reference data for securities
-- trading
-- reference data
+- create universe
+- security universe management
 - create data request
-- get intraday bar data
-- list available data catalogs
-- financial data
-- historical data access
 - data catalog browsing
-- list distributions
-- search available bloomberg data fields
-- market data
-- list field lists
-- get historical data for securities
-- field list management
-- get catalog
-- portfolio management
-- reference data access
-- list catalogs
-- list universes
-- search fields
-- get reference data for securities via http api
-- financial analytics
+- list available data catalogs
 - list security universes
+- get reference data
+- get historical data
 - create a security universe for data requests
+- get intraday bars
+- market data
+- get catalog
+- search instruments
+- reference data
 - data distributions
+- financial analytics
 - bloomberg
+- get historical data for securities
+- order management
+- list distributions
+- get intraday bar data
+- portfolio management
+- field list management
+- search fields
+- get data catalog details
+- reference data access
+- get reference data for securities via http api
+- list available bloomberg data catalogs
+- list completed data distributions
+- search available bloomberg data fields
+- get historical end-of-day data
+- trading
+- create a bloomberg data request
 slug: market-data-and-analytics
 tags:
 - Bloomberg

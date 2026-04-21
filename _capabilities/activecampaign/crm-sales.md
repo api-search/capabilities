@@ -25,45 +25,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- crm, pipeline management, and revenue operations
-- retrieve a specific deal by id
-- activecampaign
-- Revenue Operations
-- create deal
-- sales
 - Sales Representative
-- list all company accounts in activecampaign crm
-- Account Manager
-- email, sms, and multi-channel marketing automation
-- company account management
-- orchestrate contact journeys, campaigns, automations, and list management
 - get deal
-- list all deals
 - deals
-- customer experience
-- manage sales pipeline, deals, accounts, and tasks
 - create account
-- Marketing Manager
-- marketing automation
+- crm
 - list deals
-- manages email campaigns, automations, and contact segmentation
-- list all accounts
 - create a new account
-- list all sales deals in activecampaign crm
-- create a new company account in activecampaign crm
-- accounts
-- Email Marketer
-- builds integrations, automation workflows, and uses the api directly
-- sales deal management
+- manages email campaigns, automations, and contact segmentation
+- activecampaign
+- company account management
 - Growth Engineer
-- create a new sales deal in activecampaign crm
+- create a new company account in activecampaign crm
+- Email Marketer
+- sales deal management
+- Marketing Manager
+- sales
+- email marketing
+- retrieve a specific deal by id
+- list all sales deals in activecampaign crm
 - list accounts
-- tracks deals, manages accounts, and uses crm features
-- cross-channel contact engagement and personalization
+- list all accounts
+- manage sales pipeline, deals, accounts, and tasks
+- create deal
+- crm, pipeline management, and revenue operations
+- create a new sales deal in activecampaign crm
 - create a new deal
 - sales automation
-- crm
-- email marketing
+- accounts
+- list all company accounts in activecampaign crm
+- cross-channel contact engagement and personalization
+- orchestrate contact journeys, campaigns, automations, and list management
+- Revenue Operations
+- builds integrations, automation workflows, and uses the api directly
+- customer experience
+- email, sms, and multi-channel marketing automation
+- marketing automation
+- tracks deals, manages accounts, and uses crm features
+- Account Manager
+- list all deals
 slug: crm-sales
 tags:
 - ActiveCampaign

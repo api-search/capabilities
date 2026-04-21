@@ -29,37 +29,37 @@ personas: []
 provider_name: Apache Livy
 provider_slug: apache-livy
 search_terms:
-- engineers who submit and monitor batch spark jobs via livy
-- delete spark session
-- submit a batch spark job to the cluster via livy
-- list spark sessions
-- submit batch spark job
 - create session
-- big data
-- get the current state of a spark session
-- list sessions
+- open source
 - execute a code statement in an interactive spark session
+- list spark sessions
+- get session state
 - get the current state of a batch spark job
-- data science
-- spark
+- create a new interactive spark session for code execution
+- list batches
+- run spark code
+- big data
+- list all active interactive spark sessions on the livy server
 - Data Scientist
 - interactive computing
+- delete an interactive spark session
+- Data Engineer
 - scientists who use interactive spark sessions for exploratory analysis
-- get session state
+- get the current state of a spark session
+- submit a batch spark job to the cluster via livy
+- rest
+- run statement
+- create spark session
+- submit batch spark job
+- data science
+- engineers who submit and monitor batch spark jobs via livy
+- list sessions
+- delete spark session
+- apache livy
 - create batch
 - get batch state
-- run statement
-- create a new interactive spark session for code execution
-- run spark code
 - data engineering
-- Data Engineer
-- list batches
-- create spark session
-- list all active interactive spark sessions on the livy server
-- rest
-- apache livy
-- delete an interactive spark session
-- open source
+- spark
 slug: spark-job-management
 tags:
 - Apache Livy

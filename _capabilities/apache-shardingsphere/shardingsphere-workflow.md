@@ -8,20 +8,20 @@ personas: []
 provider_name: Apache ShardingSphere
 provider_slug: apache-shardingsphere
 search_terms:
-- database
-- register databases and physical data sources
 - distributed sql
-- configure database sharding and read-write splitting
+- sql
+- register databases and physical data sources
+- open source
+- database
 - dba managing distributed database topology
 - sharding
-- apache
-- transparent sql routing and federation
 - read-write splitting
 - engineer deploying shardingsphere proxy
+- configure database sharding and read-write splitting
+- apache
 - developer using shardingsphere transparent sharding
-- sql
+- transparent sql routing and federation
 - horizontal scaling and data distribution across databases
-- open source
 slug: shardingsphere-workflow
 tags: []
 tools: []

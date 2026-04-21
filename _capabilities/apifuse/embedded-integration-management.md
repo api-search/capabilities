@@ -29,38 +29,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
+- create a workflow.
+- list all integrations.
+- apifuse
+- list all pre-built connectors available for embedding into your saas product.
+- create a new automation workflow connecting two or more integrated platforms.
+- SaaS Product Manager
 - browse pre-built connectors.
-- create workflow
-- integration analytics.
-- Integration Developer
-- saas
+- list connectors
 - list workflows
 - developer implementing and automating embedded integration workflows.
-- browse and manage integrations.
 - get analytics data.
-- manage workflows.
-- integrations
-- create a workflow.
-- browse all available embedded integrations, optionally filtered by category.
-- ipaas
-- list all integrations.
-- list integrations
-- marketplace
-- create a new automation workflow connecting two or more integrated platforms.
-- list all connectors.
-- list all pre-built connectors available for embedding into your saas product.
-- managing native integrations within saas products.
-- apifuse
-- list connectors
-- integration platform
-- workflow automation
 - embedded integrations
-- list workflows.
+- workflow automation
+- Integration Developer
 - list all integration workflows configured in the embedded marketplace.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- integration analytics.
+- browse all available embedded integrations, optionally filtered by category.
+- managing native integrations within saas products.
 - product manager building native integrations into a saas product.
-- SaaS Product Manager
+- list integrations
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- create workflow
+- list all connectors.
+- browse and manage integrations.
+- saas
+- integrations
 - get analytics
+- integration platform
+- list workflows.
+- marketplace
+- manage workflows.
+- ipaas
 slug: embedded-integration-management
 tags:
 - Apifuse

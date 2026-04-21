@@ -41,57 +41,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- hybrid cloud
-- list clients
-- list all realms.
-- list identity providers.
-- red hat
-- kubernetes
-- list client applications in a realm.
-- delete a user from a realm.
-- list roles.
-- list groups.
-- get realm configuration details.
-- terminate a user session.
-- access management
-- list users in a realm.
-- delete session
-- realm users.
-- list realms
-- create a user.
-- enterprise
-- realm roles.
-- identity providers.
 - list clients.
-- list users.
-- get user details.
-- containers
-- register a new client application.
-- list realm roles
+- kubernetes
 - open source
-- keycloak
-- realm clients.
-- cloud
-- list external identity providers.
-- list roles in a realm.
-- get realm
-- get user
-- keycloak realms.
-- list groups
-- get realm details.
-- specific realm.
-- list identity providers
-- create a new user in a realm.
-- create client
+- realm users.
+- list clients
 - list all keycloak realms.
+- list groups.
 - identity
-- realm groups.
-- delete user
-- linux
-- list groups in a realm.
-- list roles
+- realm clients.
 - list users
+- realm groups.
+- list groups
+- enterprise
+- get user details.
+- access management
+- get realm details.
+- list users.
+- hybrid cloud
+- linux
+- cloud
+- terminate a user session.
+- containers
+- list realms
+- list roles
+- get realm configuration details.
+- red hat
+- realm roles.
+- delete a user from a realm.
+- get realm
+- create client
+- get user
+- list realm roles
+- delete session
+- list client applications in a realm.
+- create a new user in a realm.
+- list roles.
+- list all realms.
+- register a new client application.
+- identity providers.
 - create user
+- specific realm.
+- list external identity providers.
+- keycloak
+- list identity providers.
+- list roles in a realm.
+- keycloak realms.
+- list users in a realm.
+- list groups in a realm.
+- delete user
+- list identity providers
+- create a user.
 slug: identity-and-access
 tags:
 - Red Hat

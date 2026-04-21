@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- update an item.
-- scan a table.
-- delete a table.
-- aws
-- delete item
-- database management
-- document store
-- update a table.
-- get an item by primary key.
-- list backups
-- put or delete multiple items in batch.
-- delete table
-- create a table.
-- individual table management.
-- create or replace an item.
-- scan an entire table or index.
-- create an on-demand backup.
-- item operations.
-- serverless
-- write items in a transaction.
-- table management.
-- batch get item
-- transact get items
-- list tables
-- query items.
-- list on-demand backups.
-- get item
-- scan
-- create table
-- query
+- nosql
 - create a new dynamodb table.
+- delete table
+- scan a table.
+- put or delete multiple items in batch.
+- database
+- database management
 - describe table
+- delete a dynamodb table.
+- serverless
+- table management.
+- transact get items
+- get item
+- list tables
+- scan an entire table or index.
+- update table
+- list dynamodb tables.
+- item operations.
+- create or replace an item.
 - cloud
+- update an item.
+- get an item by primary key.
+- get an item.
+- query items by primary key.
+- scan
+- aws
+- create an on-demand backup.
+- create a table.
+- write items in a transaction.
+- query items.
+- update a table.
+- document store
+- query
+- create table
+- delete a table.
+- update item
+- list tables.
 - key-value
-- query operations.
 - get multiple items from one or more tables.
 - delete an item.
-- dynamodb
+- list on-demand backups.
 - get items in a transaction.
-- update item
-- database
+- list backups
 - transact write items
-- nosql
-- update table
-- list tables.
-- list dynamodb tables.
-- get an item.
-- describe a dynamodb table.
-- create backup
-- query items by primary key.
 - batch write item
+- create backup
+- batch get item
 - put item
+- dynamodb
+- query operations.
+- delete item
 - managed service
+- describe a dynamodb table.
 - describe a table.
-- delete a dynamodb table.
+- individual table management.
 slug: database-management
 tags:
 - AWS

@@ -17,35 +17,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- import postman collection
-- export openapi specification from apidog project.
-- managing the complete lifecycle of api specifications from design to deployment.
-- Platform Engineer
 - export openapi spec
-- export openapi
-- unified workflow for managing api specifications lifecycle.
-- api design
-- developer building and managing apis using apidog's design-first platform.
-- import openapi spec
-- import openapi
-- platform
-- import api specifications from various formats.
-- import openapi specification into apidog project.
-- engineer automating api specification workflows via ci/cd integration.
-- import
-- mocking
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- export api specifications to standard formats.
+- Platform Engineer
+- export
 - import an openapi/swagger specification into an apidog project for design-first development.
 - API Developer
-- api testing
-- documentation
-- import a postman collection into apidog for converting to openapi-based workflows.
+- managing the complete lifecycle of api specifications from design to deployment.
 - design-first
+- import a postman collection into apidog for converting to openapi-based workflows.
+- import openapi specification into apidog project.
+- documentation
+- export openapi
 - apidog
-- collaboration
-- export
 - api lifecycle
+- unified workflow for managing api specifications lifecycle.
+- import openapi
+- api testing
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- collaboration
+- engineer automating api specification workflows via ci/cd integration.
+- import
+- export openapi specification from apidog project.
+- platform
+- import postman collection
+- api design
+- import openapi spec
+- import api specifications from various formats.
+- export api specifications to standard formats.
+- mocking
+- developer building and managing apis using apidog's design-first platform.
 slug: api-lifecycle-management
 tags:
 - Apidog

@@ -13,27 +13,27 @@ personas: []
 provider_name: Akri
 provider_slug: akri
 search_terms:
-- prometheus metrics for akri component health
 - kubernetes
-- device management
-- edge computing
-- opc ua
-- monitoring
-- get prometheus metrics from akri including instance discovery counts, discovery handler success/failure rates, discovery latency, and broker pod counts per configuration and node.
+- open source
+- manages kubernetes clusters with akri for iot and edge device workloads. monitors device discovery health, broker pod lifecycle, and cluster resource utilization.
 - iot
-- udev
+- device management
+- monitor akri edge device discovery and broker health
+- prometheus metrics for akri component health
+- akri
+- edge computing
+- get all akri prometheus metrics
+- get akri metrics
 - cncf
 - get metrics
-- akri
+- monitoring
+- udev
+- opc ua
 - onvif
-- get all akri prometheus metrics
 - Edge Computing Operator
+- get prometheus metrics from akri including instance discovery counts, discovery handler success/failure rates, discovery latency, and broker pod counts per configuration and node.
 - onvif, opc ua, and udev device discovery protocols
 - akri prometheus metrics for all components
-- manages kubernetes clusters with akri for iot and edge device workloads. monitors device discovery health, broker pod lifecycle, and cluster resource utilization.
-- get akri metrics
-- monitor akri edge device discovery and broker health
-- open source
 slug: edge-device-monitoring
 tags:
 - Akri

@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- list available frameworks
-- aws
-- create a custom compliance control for use in frameworks and assessments.
 - list controls
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- list all assessments
-- compliance framework management
-- list assessments
-- get complete details of a compliance assessment including control status.
-- list frameworks
-- create assessment
 - create a new assessment
-- generate a compliance assessment report from collected evidence.
 - list assessment reports
-- amazon audit manager
-- get assessment
-- audit
-- create assessment report
-- compliance
-- create control
-- update settings
-- risk management
-- list all compliance assessments to understand current audit coverage.
-- compliance assessment management
-- create a new compliance assessment using a regulatory framework.
-- list compliance controls available for building assessments.
-- update audit manager settings including sns notifications and default report destination.
-- list generated assessment reports for compliance documentation.
-- get audit manager account settings including default destinations and process owners.
 - get settings
+- list available frameworks
+- list generated assessment reports for compliance documentation.
+- risk management
+- list assessments
+- create a custom compliance control for use in frameworks and assessments.
+- generate a compliance assessment report from collected evidence.
+- audit
+- get assessment
+- compliance framework management
+- create assessment report
+- create a new compliance assessment using a regulatory framework.
+- list all assessments
+- aws
+- list compliance controls available for building assessments.
+- create assessment
+- compliance
+- list all compliance assessments to understand current audit coverage.
+- get audit manager account settings including default destinations and process owners.
+- update settings
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- amazon audit manager
+- get complete details of a compliance assessment including control status.
+- compliance assessment management
+- update audit manager settings including sns notifications and default report destination.
+- list frameworks
+- create control
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

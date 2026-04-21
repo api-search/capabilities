@@ -38,54 +38,54 @@ personas: []
 provider_name: Amazon Cognito
 provider_slug: aws-cognito
 search_terms:
-- identity provider
-- managing federated identities and temporary aws credential vending
+- create user pool
+- user account management
+- user group management
+- identity
+- create a federated identity pool
+- list users
+- list groups
+- describe identity pool
+- list all cognito user pools in the account
+- list users in a cognito user pool
+- manages cognito user pools, federation, and access control policies
+- oidc
+- configures cognito user pools and app clients for application authentication
+- list user pools
+- authorization
+- describe user pool
+- authentication
+- list all federated identity pools
+- oauth2
+- list identity pools
+- get details of a specific user in a cognito user pool
+- Identity Engineer
 - aws
 - managing user accounts, groups, and access within user pools
 - get details of a federated identity pool
-- create a federated identity pool for credential vending
-- create a new cognito user pool for authentication
-- list users in a cognito user pool
-- create a new user account in a cognito user pool
-- list all federated identity pools
-- create identity pool
-- get details of a specific user in a cognito user pool
-- list user pools
-- create a user in a user pool
-- list all user pools
 - identity management
-- list all cognito user pools in the account
-- Application Developer
-- manages cognito user pools, federation, and access control policies
-- get configuration details of a cognito user pool
 - list users in a user pool
-- describe identity pool
-- creating and configuring user pools with authentication flows and policies
-- user account management
-- authorization
+- get configuration details of a cognito user pool
+- create a federated identity pool for credential vending
 - list user groups
-- authentication
-- create user pool
+- federated identity pool management
+- get user
+- create a new user account in a cognito user pool
+- managing federated identities and temporary aws credential vending
+- list all user pools
+- list user groups in a cognito user pool
+- create user
+- create a new cognito user pool for authentication
+- creating and configuring user pools with authentication flows and policies
+- amazon cognito
+- manage cognito user pools, users, groups, and federated identity pools
+- create identity pool
 - user management
 - create a new user pool
-- create a federated identity pool
-- get user
-- oidc
-- configures cognito user pools and app clients for application authentication
+- Application Developer
 - user pool lifecycle management
-- describe user pool
-- federated identity pool management
-- manage cognito user pools, users, groups, and federated identity pools
-- list groups
-- list user groups in a cognito user pool
-- oauth2
-- identity
-- user group management
-- Identity Engineer
-- amazon cognito
-- list identity pools
-- list users
-- create user
+- identity provider
+- create a user in a user pool
 slug: identity-management-workflow
 tags:
 - Amazon Cognito

@@ -29,51 +29,51 @@ personas: []
 provider_name: AWS App Runner
 provider_slug: aws-app-runner
 search_terms:
-- resume service
-- delete an app runner service and all its resources
-- aws
-- list auto scaling configurations
-- start deployment
-- deploy a new containerized web application or api
-- Platform Engineer
-- get detailed status and configuration of an app runner service
-- vpc connectivity management
-- list connections
-- update service
-- pause service
-- create service
-- pause a service to save costs during idle periods
-- serverless
-- manages app runner infrastructure, scaling, and vpc connectivity
-- deployment
-- auto-scaling configuration
-- describe service
-- update application configuration, image, or code source
-- deploy a new containerized application
-- list services
-- containers
-- auto-scaling and observability configuration
-- deployment management
-- resume a paused service to resume traffic handling
-- list all app runner services and their status
-- list auto-scaling configurations for capacity management
-- deploys and manages containerized web applications and apis
-- trigger a new deployment of the current image or code
-- application service lifecycle
-- aws app runner
-- delete service
-- microservices
-- deploy, manage, and scale containerized applications with app runner
-- ci/cd
-- list github or bitbucket source code connections
-- list vpc connectors for private backend connectivity
-- Developer
-- service lifecycle from creation to deletion
-- list vpc connectors
 - trigger a new deployment
-- network connectivity including custom domains and vpc access
+- application service lifecycle
+- ci/cd
+- aws app runner
 - list auto-scaling configurations
+- resume service
+- Platform Engineer
+- delete service
+- network connectivity including custom domains and vpc access
 - list all app runner services
+- serverless
+- list services
+- describe service
+- containers
+- list all app runner services and their status
+- deploys and manages containerized web applications and apis
+- deploy a new containerized application
+- aws
+- list auto-scaling configurations for capacity management
+- list vpc connectors
+- microservices
+- start deployment
+- auto-scaling configuration
+- manages app runner infrastructure, scaling, and vpc connectivity
+- list auto scaling configurations
+- resume a paused service to resume traffic handling
+- pause a service to save costs during idle periods
+- list github or bitbucket source code connections
+- deploy, manage, and scale containerized applications with app runner
+- deploy a new containerized web application or api
+- update service
+- create service
+- service lifecycle from creation to deletion
+- deployment management
+- trigger a new deployment of the current image or code
+- Developer
+- list vpc connectors for private backend connectivity
+- pause service
+- auto-scaling and observability configuration
+- deployment
+- list connections
+- update application configuration, image, or code source
+- get detailed status and configuration of an app runner service
+- delete an app runner service and all its resources
+- vpc connectivity management
 slug: app-deployment-workflow
 tags:
 - AWS App Runner

@@ -24,35 +24,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list query executions
-- aws
-- download the results of a completed athena sql query.
-- list databases
-- start a sql query execution
-- get query execution
-- sql
-- check the status of a running or completed athena query execution.
-- list table metadata
-- list work groups
-- serverless
-- analytics
-- list data catalogs registered with athena to discover available data sources.
-- start query execution
-- named query management
-- list databases in an athena data catalog to explore available schemas.
-- sql query management
-- list athena workgroups to understand available query isolation environments.
-- list saved named queries available in an athena workgroup.
 - list data catalogs
-- list tables in an athena database to understand available data.
-- get query results
-- create a named query
+- list athena workgroups to understand available query isolation environments.
 - create named query
-- amazon athena
 - list named queries
+- list saved named queries available in an athena workgroup.
+- list tables in an athena database to understand available data.
+- start a sql query execution
+- list databases in an athena data catalog to explore available schemas.
+- serverless
+- check the status of a running or completed athena query execution.
+- list databases
+- list table metadata
+- get query results
+- aws
+- amazon athena
+- list data catalogs registered with athena to discover available data sources.
+- create a named query
+- list work groups
+- list query executions
 - save a sql query as a named query for reuse in athena.
-- list recent query executions in an athena workgroup.
+- analytics
+- sql
 - run a sql query against s3 data using amazon athena for serverless analytics.
+- download the results of a completed athena sql query.
+- sql query management
+- list recent query executions in an athena workgroup.
+- start query execution
+- get query execution
+- named query management
 slug: sql-analytics
 tags:
 - Amazon Athena

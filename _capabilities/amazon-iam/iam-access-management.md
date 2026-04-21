@@ -33,51 +33,51 @@ personas: []
 provider_name: Amazon IAM
 provider_slug: amazon-iam
 search_terms:
-- policy management
-- delete an iam user from the account
-- create policy
-- aws
-- attach a managed policy to an iam role
-- manage iam users
-- list all iam users in the account
-- create a new iam policy with specified permissions
-- reviews and audits iam configurations for security compliance
-- create a new iam user
+- create a new iam user with the specified username
 - list all iam roles
-- create a new iam role with a trust policy
-- manages iam users, roles, and policies for aws account governance
-- access management
-- Cloud Administrator
+- create a new iam policy
+- defining and enforcing what users and services can do
 - creating and managing aws user identities
 - Security Engineer
-- attach role policy
-- create a new iam role
-- iam
-- attach a managed policy to an iam user
-- manage iam policies
+- create a new iam role with a trust policy
+- identity
+- create a new iam user
+- security
 - list all iam users
-- list all iam roles in the account
-- attach user policy
-- access control
+- create policy
+- list users
+- attach a managed policy to an iam user
+- create a new iam policy with specified permissions
+- delete an iam user from the account
+- create a new iam role
+- manage iam policies
+- access management
 - authorization
 - authentication
-- manage iam roles
-- list access keys for an iam user
-- security
-- defining and enforcing what users and services can do
-- create a new iam user with the specified username
-- create role
-- list policies
 - list all iam policies
-- create a new iam policy
-- list access keys
+- manages iam users, roles, and policies for aws account governance
 - creating and attaching permission policies
-- identity
-- list iam policies available for attachment
-- delete user
 - list roles
-- list users
+- aws
+- list all iam users in the account
+- attach user policy
+- list all iam roles in the account
+- reviews and audits iam configurations for security compliance
 - create user
+- access control
+- manage iam users
+- list access keys
+- Cloud Administrator
+- list policies
+- manage iam roles
+- create role
+- policy management
+- attach a managed policy to an iam role
+- attach role policy
+- iam
+- delete user
+- list access keys for an iam user
+- list iam policies available for attachment
 slug: iam-access-management
 tags:
 - AWS

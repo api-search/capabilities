@@ -22,46 +22,46 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- network-based fraud prevention and authentication using sim swap and number verification
-- App Developer
+- retrieve sim swap date
 - IoT Engineer
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- number verify
-- sim swap check
-- connectivity
-- edge computing
+- at&t
+- get the exact date and time of the most recent sim swap for a phone number
+- sim swap date retrieval
+- check sim swap
+- security
+- Identity Developer
+- network-based security signals for fraud detection and identity verification
+- Security Developer
+- device status
+- phone number verification via network
+- sim swap
 - verify phone number
 - developer building fraud prevention and identity verification using network signals
-- device status
-- 5g
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- sim swap fraud detection
-- developer implementing passwordless or frictionless mobile authentication
-- phone number verification via network
-- Security Developer
-- mobile network-based authentication without otp
-- sim swap
-- sim swap date retrieval
+- edge computing
 - camara
+- number verify
+- 5g network quality monitoring and on-demand qos enhancement
+- sim swap fraud detection
+- authentication
+- App Developer
+- check if an at&t subscriber's sim card has been swapped recently to detect fraud
 - silently verify that a mobile device is associated with a phone number using the at&t network
 - fraud prevention
 - network apis
-- check if an at&t subscriber's sim card has been swapped recently to detect fraud
-- telecommunications
-- get date of most recent sim swap
-- authentication
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
 - check if a sim card has been swapped recently
-- security
-- network-based security signals for fraud detection and identity verification
-- get the exact date and time of the most recent sim swap for a phone number
-- check sim swap
-- retrieve sim swap date
-- mobile or web developer building connectivity-aware applications
-- Identity Developer
+- mobile network-based authentication without otp
+- 5g
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- connectivity
 - silently verify device phone number
+- telecommunications
+- sim swap check
+- mobile or web developer building connectivity-aware applications
+- get date of most recent sim swap
+- network-based fraud prevention and authentication using sim swap and number verification
 - sim swap get date
-- at&t
-- 5g network quality monitoring and on-demand qos enhancement
+- developer implementing passwordless or frictionless mobile authentication
 slug: network-security
 tags:
 - AT&T

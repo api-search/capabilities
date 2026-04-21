@@ -25,43 +25,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- apache
-- get metrics for a flink job
-- big data
-- job submission, tracking, and lifecycle management
-- list all flink jobs
-- monitoring
-- list all flink streaming and batch jobs
-- list all taskmanagers in the flink cluster
-- metrics, checkpoints, and cluster health monitoring
-- shut down the flink cluster
-- apache flink
-- real-time analytics
-- get details of a specific job
-- taskmanager management
-- get performance metrics for a flink job
-- Platform Operator
-- get job
-- operators managing the flink cluster and ensuring job reliability
-- batch processing
-- data engineering
-- Data Engineer
-- manage and monitor flink streaming and batch jobs
-- get detailed status and information for a specific flink job
-- get flink job
-- job performance metrics
-- list all taskmanagers
-- engineers submitting and monitoring flink streaming and batch jobs
-- shutdown cluster
-- stateful computing
-- flink job management
-- get job metrics
-- list jobs
-- list taskmanagers
-- stream processing
-- list flink jobs
 - job management
 - open source
+- get performance metrics for a flink job
+- Platform Operator
+- list flink jobs
+- list all flink jobs
+- shut down the flink cluster
+- real-time analytics
+- list jobs
+- metrics, checkpoints, and cluster health monitoring
+- apache
+- list taskmanagers
+- big data
+- manage and monitor flink streaming and batch jobs
+- stateful computing
+- Data Engineer
+- shutdown cluster
+- engineers submitting and monitoring flink streaming and batch jobs
+- get job
+- taskmanager management
+- operators managing the flink cluster and ensuring job reliability
+- get flink job
+- batch processing
+- get details of a specific job
+- monitoring
+- list all flink streaming and batch jobs
+- stream processing
+- job submission, tracking, and lifecycle management
+- get detailed status and information for a specific flink job
+- list all taskmanagers
+- job performance metrics
+- flink job management
+- get job metrics
+- list all taskmanagers in the flink cluster
+- get metrics for a flink job
+- data engineering
+- apache flink
 slug: flink-job-management
 tags:
 - Apache Flink

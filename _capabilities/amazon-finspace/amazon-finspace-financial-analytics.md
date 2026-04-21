@@ -8,15 +8,15 @@ personas: []
 provider_name: Amazon FinSpace
 provider_slug: amazon-finspace
 search_terms:
-- tick data
-- data management
-- data analytics
-- financial analytics
 - aws
-- financial services
-- capital markets
-- market data
 - kdb
+- market data
+- financial services
+- tick data
+- capital markets
+- financial analytics
+- data analytics
+- data management
 slug: amazon-finspace-financial-analytics
 tags:
 - Financial Analytics

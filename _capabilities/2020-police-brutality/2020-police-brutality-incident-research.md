@@ -17,33 +17,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
-- conducts academic or policy research on police use of force patterns
-- public data
-- Journalist
-- policing
-- research
 - Researcher
-- Legal Professional
-- uses incident documentation for prosecution or civil litigation
-- documented evidence of police brutality during 2020 protests
 - retrieve all police brutality incidents in the v2 data format with improved schema consistency.
-- export incidents csv
-- investigates and reports on documented police brutality incidents
-- uses data for advocacy, public education, and political campaigns
-- export all incidents as csv for spreadsheet and data analysis.
-- all incidents in csv format for data analysis.
+- public data
 - brutality
-- journalism
+- get all incidents
 - list all documented police brutality incidents.
-- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
+- Journalist
+- Legal Professional
+- documented evidence of police brutality during 2020 protests
+- investigates and reports on documented police brutality incidents
 - civil rights
+- policing
+- all incidents in csv format for data analysis.
 - research workflow for journalists, prosecutors, and activists
+- uses incident documentation for prosecution or civil litigation
+- list incidents
+- get incidents v2
+- uses data for advocacy, public education, and political campaigns
+- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
 - export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
+- export all incidents as csv for spreadsheet and data analysis.
 - Activist
 - all documented police brutality incidents from 2020 protests.
-- list incidents
-- get all incidents
-- get incidents v2
+- research
+- journalism
+- export incidents csv
+- conducts academic or policy research on police use of force patterns
 slug: 2020-police-brutality-incident-research
 tags:
 - Public Data

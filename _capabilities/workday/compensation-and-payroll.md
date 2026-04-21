@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- benefits
-- list all pay groups
-- request a one-time payment
-- enterprise software
-- payroll list pay slips
-- get a pay group by id
-- payroll get pay group
-- comp request one time payment
-- benefits list elections
-- saas
-- get eligible benefit plans for a worker
-- list all benefit plans
-- list plans
-- benefit plans
-- cloud computing
-- comp request change
-- benefits get eligible plans
-- comp list plans
-- list compensation grades
-- compensation plans
-- comp list grades
-- payroll list pay groups
-- list compensation scorecards
-- hcm
-- payroll get pay group details
-- benefits list plans
-- benefits change
-- financial management
-- get pay group details
-- payroll list inputs
-- submit a benefits change request
-- list payroll inputs
-- list pay slips
-- payroll
-- comp list scorecards
-- list benefit plans
-- compensation
-- list benefit elections
-- list pay groups
 - list compensation plans
-- submit a compensation change request
-- list dependents
 - pay groups
+- payroll get pay group
+- benefits list elections
+- list plans
+- list compensation grades
+- benefits get eligible plans
+- list all benefit plans
+- list payroll inputs
+- benefits
+- submit a benefits change request
+- cloud computing
+- comp request one time payment
+- payroll get pay group details
+- list all pay groups
+- hcm
+- list pay groups
+- benefits list plans
 - benefits list dependents
+- list benefit plans
+- comp list grades
+- list benefit elections
+- benefit plans
+- comp request change
+- get pay group details
+- get a pay group by id
+- financial management
+- payroll list pay groups
+- list dependents
+- payroll
+- enterprise software
 - workday
+- request a one-time payment
+- list pay slips
+- saas
+- payroll list inputs
+- payroll list pay slips
+- comp list plans
+- compensation
+- get eligible benefit plans for a worker
+- comp list scorecards
+- list compensation scorecards
+- compensation plans
+- benefits change
+- submit a compensation change request
 slug: compensation-and-payroll
 tags:
 - Workday

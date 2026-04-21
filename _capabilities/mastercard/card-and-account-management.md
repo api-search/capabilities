@@ -33,45 +33,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- issue card
-- manage a payment account
-- list bins
-- fraud detection
-- manage account
-- create fulfillment order
-- submit pan-related event for account level management
-- card management
-- mastercard
-- issuers
-- request updated card credentials for card-on-file
-- look up bin information
-- financial services
-- query payment account reference to link tokens to accounts
-- validate account
-- card issuance and management
-- look up bin information for a card
-- manage a payment account lifecycle
-- credit cards
-- digital identity
-- payment account management
-- create a physical card fulfillment order
-- get billing updates
-- payments
-- issue a new mastercard card
-- list available mastercard bins
-- issue a new card
-- open banking
-- bin lookup
-- account management
-- automatic billing updates
-- submit pan event
-- request updated card credentials
-- get card details
-- get account catalog
-- lookup bin
 - get payment account reference
-- validate account details
+- list available mastercard bins
+- manage a payment account lifecycle
+- digital identity
+- validate account
+- open banking
+- manage a payment account
+- look up bin information
+- lookup bin
+- issue a new mastercard card
+- create fulfillment order
+- request updated card credentials
+- fraud detection
+- submit pan-related event for account level management
+- issuers
 - manage payment account
+- validate account details
+- get billing updates
+- card management
+- request updated card credentials for card-on-file
+- credit cards
+- issue card
+- manage account
+- issue a new card
+- create a physical card fulfillment order
+- payment account management
+- bin lookup
+- query payment account reference to link tokens to accounts
+- get card details
+- submit pan event
+- financial services
+- account management
+- payments
+- mastercard
+- look up bin information for a card
+- get account catalog
+- card issuance and management
+- automatic billing updates
+- list bins
 - retrieve account catalog data
 slug: card-and-account-management
 tags:

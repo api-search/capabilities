@@ -30,44 +30,44 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- api test
-- connect to real-time messaging.
-- open dialog
-- manage assistant
-- list apps
-- app development
+- manage workflows
+- t1
+- list workflows
 - manage ai assistant threads.
-- workflow management.
+- bots
+- get bot information.
+- list apps
+- get bot info
+- open view
+- complete function
+- open dialog
+- messaging
+- open a modal view.
+- team communication
+- chat
+- manage voice/video calls.
+- manage assistant
+- collaboration
+- open a dialog.
+- api test
+- view management.
+- manage calls
 - rtm connect
 - app management.
-- team communication
+- platform
+- app development
+- connect to real-time messaging.
+- list workflows.
+- test api connectivity.
+- slack
+- list apps.
+- complete a workflow function.
+- workflow management.
+- list installed apps.
+- manage workflows.
 - productivity
 - open a view.
-- platform
-- list workflows
-- chat
-- list installed apps.
-- get bot info
-- manage workflows.
-- open view
-- t1
-- bots
-- messaging
-- view management.
-- manage voice/video calls.
-- open a modal view.
 - automation
-- list apps.
-- manage workflows
-- complete function
-- test api connectivity.
-- list workflows.
-- get bot information.
-- collaboration
-- complete a workflow function.
-- open a dialog.
-- manage calls
-- slack
 slug: app-platform
 tags:
 - Slack

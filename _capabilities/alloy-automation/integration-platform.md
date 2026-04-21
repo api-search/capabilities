@@ -8,12 +8,12 @@ personas: []
 provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
-- automation
-- workflows
-- integrations
-- embedded integrations
-- ipaas
 - unified api
+- workflows
+- ipaas
+- embedded integrations
+- integrations
+- automation
 slug: integration-platform
 tags: []
 tools: []

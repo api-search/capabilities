@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- execute a comparison job
-- data integration
-- data synchronization
-- get server info
-- list replication process performance metrics
-- database connections for verification
-- list compare groups
-- get veridata server information
-- repair job
-- list connections
-- cdc
-- repair out-of-sync data identified by a comparison job
-- compare groups
-- get job statistics
 - oracle goldengate
-- list compare groups for data verification
-- enterprise
-- create a new veridata database connection
+- execute a comparison job
 - list process metrics
-- create job
-- list comparison jobs
-- get goldengate process performance metrics for monitoring replication health
-- comparison jobs
-- list veridata database connections
-- create connection
-- data verification
-- compliance
-- create a new compare group
-- get comparison job statistics
-- replication process metrics
-- run job
 - database
-- real-time replication
-- data quality
-- list groups
-- list jobs
-- get details of out-of-sync data
+- data verification
+- data integration
+- repair out-of-sync data identified by a comparison job
+- cdc
+- list comparison jobs
 - create a new comparison job
+- list groups
+- repair job
+- list compare groups for data verification
+- get goldengate process performance metrics for monitoring replication health
+- list veridata database connections
+- list jobs
+- create connection
 - get out of sync data
+- enterprise
 - create group
+- get details of out-of-sync data
+- get server info
+- replication process metrics
+- comparison jobs
+- create job
+- run job
+- data quality
+- get comparison job statistics
+- database connections for verification
+- compliance
+- compare groups
+- real-time replication
+- list compare groups
+- create a new compare group
+- get veridata server information
+- create a new veridata database connection
+- list connections
+- data synchronization
+- get job statistics
+- list replication process performance metrics
 slug: data-verification
 tags:
 - Oracle GoldenGate

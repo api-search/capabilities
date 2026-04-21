@@ -86,74 +86,74 @@ provider_name: Google Campaign Manager
 provider_slug: google-campaign-manager
 search_terms:
 - campaign management.
-- digital marketing
-- create a placement.
-- create placement
-- individual campaign management.
-- update a report.
-- individual report management.
-- run report
-- advertising
-- update an existing campaign.
-- ad management.
-- report management.
-- list reports.
-- list advertising campaigns.
-- create an ad.
-- placement management.
-- get placement details.
-- run a report to generate results.
-- get ad
-- delete a report.
-- list campaigns
-- google
-- individual ad management.
-- generate ad tags for placements.
-- campaign management
 - list reports
-- create a new advertising campaign.
-- list ads
-- create campaign
-- get report
-- analytics
-- create ad
-- get campaign
-- get report details by id.
-- update a placement.
-- get campaign details.
-- update placement
-- create report
-- delete report
-- list ad placements.
-- update an ad.
-- get campaign details by id.
-- create a new ad.
-- run a report.
-- placement tag generation.
-- get report details.
-- list campaigns.
-- list placements.
-- update report
-- update an existing report.
-- get placement details by id.
-- update an existing placement.
-- reporting
-- update campaign
-- report execution.
-- update an existing ad.
-- create a new report.
+- list advertising campaigns.
 - create a campaign.
-- get ad details.
-- generate placement tags
-- create a report.
 - individual placement management.
-- list placements
-- update ad
-- create a new placement.
-- get ad details by id.
-- update a campaign.
+- list campaigns.
+- create ad
+- get ad
+- placement management.
+- campaign management
+- update placement
+- placement tag generation.
+- generate placement tags
+- report execution.
+- create a new ad.
+- get placement details.
+- create a new advertising campaign.
+- ad management.
+- get report
+- update campaign
+- get report details.
 - list ads.
+- get report details by id.
+- update ad
 - get placement
+- update an existing campaign.
+- advertising
+- update an existing ad.
+- individual report management.
+- update an existing placement.
+- get ad details by id.
+- update an existing report.
+- digital marketing
+- get campaign details.
+- individual ad management.
+- update an ad.
+- list placements.
+- generate ad tags for placements.
+- update a campaign.
+- individual campaign management.
+- list ad placements.
+- get campaign details by id.
+- run report
+- list campaigns
+- list reports.
+- report management.
+- analytics
+- run a report.
+- list placements
+- create campaign
+- create a placement.
+- delete report
+- update a placement.
+- update report
+- google
+- run a report to generate results.
+- create a report.
+- create placement
+- create report
+- delete a report.
+- get placement details by id.
+- create a new report.
+- get campaign
+- create an ad.
+- reporting
+- get ad details.
+- create a new placement.
+- list ads
+- update a report.
 slug: campaign-management
 tags:
 - Google

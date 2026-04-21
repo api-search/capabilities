@@ -14,21 +14,21 @@ personas:
 provider_name: Agency for Toxic Substances and Disease Registry
 provider_slug: agency-for-toxic-substances-and-disease-registry
 search_terms:
-- substance priority rankings based on toxicity and exposure frequency.
-- environmental health
-- public health researcher
-- exposure investigations and health consultations at contaminated sites.
-- diseases
-- toxic substances
-- public health
-- hazardous materials
-- health effects and exposure information for hazardous substances.
 - research and monitoring workflow for hazardous substance toxicology data.
-- minimum risk levels and safe exposure thresholds for chemicals.
 - government health officer assessing community exposure risks at contaminated sites.
 - federal government
+- toxic substances
+- environmental health
+- hazardous materials
+- minimum risk levels and safe exposure thresholds for chemicals.
+- public health
 - researcher studying health effects of hazardous substance exposure in communities.
+- public health researcher
 - environmental health officer
+- substance priority rankings based on toxicity and exposure frequency.
+- diseases
+- health effects and exposure information for hazardous substances.
+- exposure investigations and health consultations at contaminated sites.
 slug: toxic-substance-monitoring
 tags: []
 tools: []

@@ -14,24 +14,24 @@ provider_name: Azure Functions
 provider_slug: azure-functions
 search_terms:
 - event-driven
-- list bindings
-- list function apps
-- list triggers
-- list functionapp resources
-- azure
-- serverless
-- list functions
-- compute
-- management
-- functions
-- list trigger resources
-- cloud
 - list function resources
+- serverless
+- management
 - list all resources
-- list binding resources
-- resource management
+- functions
+- cloud
+- azure
+- list bindings
 - list
+- list functions
+- list functionapp resources
+- list trigger resources
+- list function apps
+- resource management
+- list triggers
+- compute
 - azure resource management
+- list binding resources
 slug: azure-functions-management
 tags:
 - Azure

@@ -17,27 +17,27 @@ personas: []
 provider_name: American Airlines
 provider_slug: american-airlines
 search_terms:
-- flight search and schedules
-- flights
-- booking
-- get flight status
-- developer experience
-- Travel Technology Developer
 - american airlines
-- travel technology
-- uses flight data to assist customers with bookings
-- aviation
-- Booking Agent
-- airlines
-- search american airlines flight schedules by origin, destination, and date
-- travel app workflow for searching and tracking american airlines flights
-- search flight schedules
-- travel
-- real-time flight status
-- flight operations
-- search flights
-- get real-time status of an american airlines flight
 - builds travel apps integrating american airlines flight data
+- real-time flight status
+- flights
+- get flight status
+- get real-time status of an american airlines flight
+- travel
+- search american airlines flight schedules by origin, destination, and date
+- search flights
+- aviation
+- developer experience
+- travel technology
+- Travel Technology Developer
+- airlines
+- flight operations
+- booking
+- Booking Agent
+- search flight schedules
+- travel app workflow for searching and tracking american airlines flights
+- flight search and schedules
+- uses flight data to assist customers with bookings
 slug: flight-operations
 tags:
 - American Airlines

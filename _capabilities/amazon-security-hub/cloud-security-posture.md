@@ -29,45 +29,45 @@ personas: []
 provider_name: Amazon Security Hub
 provider_slug: amazon-security-hub
 search_terms:
-- get and filter security findings from amazon security hub
-- aws
-- analysts who investigate security findings and track remediation workflows
-- engineers who configure security standards, manage controls, and remediate findings
-- compliance security standards monitoring
-- amazon security hub
-- get security findings
-- list controls
-- list insights
-- list findings
-- import custom security findings into amazon security hub
-- monitoring
-- get security insights
-- Cloud Security Engineer
-- list enabled compliance standards like cis, pci dss, soc 2
-- import findings
-- list compliance standards
-- cloud security posture and finding management across aws accounts
-- security controls status and configuration
-- list security controls
-- SOC Analyst
-- update findings
-- list enabled compliance standards
-- aggregated security insights across your environment
-- list standards
-- list and filter security findings
 - list security controls and their compliance status
-- import security findings
-- compliance
 - update security findings notes and status
-- security
-- security standards compliance monitoring and control management
-- cspm
-- list security insights and trends
+- list controls
+- list security controls
+- list findings
+- import findings
+- get security findings
+- SOC Analyst
+- centralized cloud security posture management including findings, compliance standards, controls, and insights
 - import findings from custom security tools
 - list security controls and check their compliance status
-- security findings from across your aws environment
+- list enabled compliance standards
+- security
+- cloud security posture and finding management across aws accounts
+- get and filter security findings from amazon security hub
+- list security insights and trends
+- Cloud Security Engineer
+- get security insights
+- cspm
+- security controls status and configuration
+- import security findings
+- aws
+- list compliance standards
+- compliance security standards monitoring
+- compliance
+- security standards compliance monitoring and control management
+- monitoring
+- list enabled compliance standards like cis, pci dss, soc 2
+- list and filter security findings
+- import custom security findings into amazon security hub
 - get aggregated security insights and trend analysis
-- centralized cloud security posture management including findings, compliance standards, controls, and insights
+- amazon security hub
+- aggregated security insights across your environment
+- security findings from across your aws environment
+- engineers who configure security standards, manage controls, and remediate findings
+- update findings
+- list standards
+- analysts who investigate security findings and track remediation workflows
+- list insights
 slug: cloud-security-posture
 tags:
 - Amazon Security Hub

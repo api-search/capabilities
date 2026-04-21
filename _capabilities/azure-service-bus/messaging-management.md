@@ -25,33 +25,33 @@ personas: []
 provider_name: Azure Service Bus
 provider_slug: azure-service-bus
 search_terms:
-- list topics
-- list queues
-- create or update a service bus namespace
-- get namespace
-- list azure service bus namespaces in a subscription
-- pub/sub
-- delete namespace
-- get namespace details
+- namespace details
 - list namespaces
-- azure
-- get details of a specific service bus namespace
-- queues
-- message queues
-- enterprise
-- pub/sub topics
 - service bus namespaces
-- cloud
-- list all namespaces
+- list topics
+- pub/sub
+- list queues within a service bus namespace
+- enterprise
+- queues
 - messaging
 - create or update namespace
-- list topics within a service bus namespace
-- delete a service bus namespace
-- list queues within a service bus namespace
-- message broker
+- list azure service bus namespaces in a subscription
+- cloud
 - service bus
-- namespace details
+- list queues
+- delete a service bus namespace
+- azure
+- delete namespace
+- message queues
+- list all namespaces
 - cloud infrastructure
+- message broker
+- get namespace
+- list topics within a service bus namespace
+- get namespace details
+- get details of a specific service bus namespace
+- create or update a service bus namespace
+- pub/sub topics
 slug: messaging-management
 tags:
 - Azure

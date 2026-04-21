@@ -69,48 +69,48 @@ personas: []
 provider_name: Amazon Entity Resolution
 provider_slug: amazon-entity-resolution
 search_terms:
-- data integration
-- amazon entity resolution listmatchingworkflows
-- GetMatchId
-- UpdateMatchingWorkflow
-- ListTagsForResource
-- aws
-- UntagResource
-- TagResource
-- CreateMatchingWorkflow
-- amazon entity resolution deletematchingworkflow
-- GetMatchingWorkflow
 - amazon entity resolution getmatchingworkflow
-- amazon entity resolution creatematchingworkflow
-- ListSchemaMappings
-- amazon entity resolution tagresource
-- amazon entity resolution updatematchingworkflow
-- unified capability for managing amazon entity resolution resources. combines amazon entity resolution apis for data analyst workflows in data quality.
-- GetSchemaMapping
-- amazon entity resolution createschemamapping
+- UpdateMatchingWorkflow
 - amazon entity resolution startmatchingjob
-- machine learning service for matching and linking related records
-- amazon entity resolution getschemamapping
-- data matching
-- developers building applications using amazon entity resolution
-- amazon entity resolution deleteschemamapping
-- DeleteSchemaMapping
-- amazon entity resolution untagresource
-- amazon web services
-- entity resolution
-- amazon entity resolution listtagsforresource
-- CreateSchemaMapping
-- amazon entity resolution listschemamappings
 - machine learning
-- DeleteMatchingWorkflow
-- operations teams managing amazon entity resolution infrastructure
+- amazon entity resolution getschemamapping
+- amazon entity resolution listtagsforresource
+- data integration
+- GetMatchId
+- UntagResource
+- unified capability for managing amazon entity resolution resources. combines amazon entity resolution apis for data analyst workflows in data quality.
+- entity resolution
+- amazon web services
+- amazon entity resolution deletematchingworkflow
+- GetSchemaMapping
+- amazon entity resolution deleteschemamapping
+- amazon entity resolution tagresource
 - amazon entity resolution getmatchid
 - StartMatchingJob
+- DeleteMatchingWorkflow
+- ListSchemaMappings
+- GetMatchingWorkflow
+- amazon entity resolution listmatchingworkflows
+- aws
 - GetMatchingJob
-- amazon entity resolution listmatchingjobs
+- amazon entity resolution updatematchingworkflow
+- CreateSchemaMapping
+- amazon entity resolution listschemamappings
 - amazon entity resolution getmatchingjob
+- amazon entity resolution untagresource
 - ListMatchingJobs
+- DeleteSchemaMapping
+- developers building applications using amazon entity resolution
+- amazon entity resolution listmatchingjobs
+- amazon entity resolution creatematchingworkflow
+- amazon entity resolution createschemamapping
+- TagResource
+- CreateMatchingWorkflow
+- machine learning service for matching and linking related records
+- data matching
 - ListMatchingWorkflows
+- ListTagsForResource
+- operations teams managing amazon entity resolution infrastructure
 slug: amazon-entity-resolution-capability
 tags:
 - Amazon Web Services

@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- confirm current price and availability.
-- gds
+- amadeus
 - flights
 - developer building online travel agency flight search and booking flows.
-- booking
-- search
-- OTA Developer
-- developer building conversational travel assistants for flight search.
-- flight offer discovery and comparison.
-- upsell, seat selection, and add-on services.
-- search available flights by origin, destination, and date.
-- pricing
-- complete flight shopping flow from search through price confirmation.
-- shopping
-- travel technology
-- airlines
+- gds
 - hotels
-- confirm flight price
 - search flights advanced
-- amadeus
+- pricing
 - travel
-- confirm price
-- search for available flight offers.
-- search flights
 - confirm the current price and availability of a selected flight offer before creating a booking.
-- confirm pricing for a selected flight offer.
-- price confirmation and validation before booking.
+- complete flight shopping flow from search through price confirmation.
+- search flights
+- confirm price
+- search available flights by origin, destination, and date.
 - search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- confirm pricing for a selected flight offer.
+- travel technology
+- upsell, seat selection, and add-on services.
+- shopping
+- airlines
 - Travel Chatbot Developer
+- confirm current price and availability.
+- booking
+- flight offer discovery and comparison.
+- search for available flight offers.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- OTA Developer
+- search
+- developer building conversational travel assistants for flight search.
+- confirm flight price
+- price confirmation and validation before booking.
 slug: flight-shopping
 tags:
 - Amadeus

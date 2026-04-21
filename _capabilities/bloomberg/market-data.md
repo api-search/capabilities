@@ -33,47 +33,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- historical data request
-- request historical data.
-- reference data request
-- look up metadata for bloomberg field mnemonics.
-- request intraday ticks.
-- intraday bar queries.
-- reference data queries.
-- intraday tick request
-- request intraday ohlc bars for a security.
-- financial services
-- transaction cost analysis
-- subscribe to streaming real-time market data.
-- subscribe to custom vwap stream.
-- request raw intraday tick data for a security.
-- execution management
-- trading
-- request reference data.
-- analytics
-- enterprise
-- subscribe market vwap
-- field discovery.
-- historical data queries.
-- news
-- market data
-- subscribe market bar
 - request end-of-day historical data for securities.
-- field search request
 - quantitative analysis
+- request historical data.
 - intraday bar request
 - data license
-- intraday tick queries.
+- intraday tick request
+- subscribe market vwap
 - request intraday bars.
-- request reference data for securities and fields.
 - field info request
 - subscribe market data
 - business intelligence
-- search for fields.
-- subscribe to interval-based real-time bars.
 - look up field metadata.
+- subscribe to streaming real-time market data.
+- enterprise
+- reference data request
+- request reference data for securities and fields.
+- news
+- request reference data.
+- subscribe to interval-based real-time bars.
+- search for fields.
+- look up metadata for bloomberg field mnemonics.
+- field discovery.
+- market data
+- request intraday ohlc bars for a security.
+- historical data queries.
 - search the bloomberg api data dictionary for fields.
 - bloomberg
+- analytics
+- subscribe to custom vwap stream.
+- execution management
+- intraday bar queries.
+- intraday tick queries.
+- financial services
+- request intraday ticks.
+- request raw intraday tick data for a security.
+- reference data queries.
+- transaction cost analysis
+- field search request
+- subscribe market bar
+- trading
+- historical data request
 slug: market-data
 tags:
 - Bloomberg

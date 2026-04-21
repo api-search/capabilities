@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- submit trust verification
-- get consent status
-- identity insights for transactions
+- digital identity
+- create auth consent
+- open banking
+- get identity intelligence insights for a transaction
+- get account identity insights
+- identity
+- create authentication consent
+- get account insights
+- authentication consent management
+- initiate authentication
 - kyc
+- initiate strong customer authentication
+- submit identity verification as a trust provider
+- verify a consumer identity
+- get transaction identity insights
 - fraud detection
 - identity insights for accounts
-- get account identity insights
-- mastercard
-- financial services
-- get transaction insights
-- submit identity verification as a trust provider
-- identity verification
-- create authentication consent
-- initiate authentication
-- credit cards
-- verify a consumer identity
-- create auth consent
 - verify a consumer identity using mastercard id
-- digital identity
-- get authentication consent status
-- payments
-- open banking
-- get identity insights for an account
-- get identity insights for a transaction
 - authentication
-- get transaction identity insights
-- verify identity
-- get identity intelligence insights for a transaction
-- initiate strong customer authentication
-- get identity intelligence insights for an account
-- authentication consent management
-- create an authentication consent request
-- identity
-- get account insights
 - create consent
+- credit cards
+- submit trust verification
+- identity insights for transactions
+- identity verification
+- verify identity
 - verification
+- get identity insights for a transaction
+- financial services
+- payments
+- get identity intelligence insights for an account
+- mastercard
+- get identity insights for an account
+- get transaction insights
+- get consent status
+- get authentication consent status
+- create an authentication consent request
 slug: identity-and-authentication
 tags:
 - Mastercard

@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon EKS
 provider_slug: amazon-eks
 search_terms:
-- DeleteCluster
-- aws
 - kubernetes
-- engineers managing amazon eks resources on aws.
-- CreateNodegroup
-- DeleteNodegroup
-- workflow capability for kubernetes platform management.
-- kubernetes platform management business domain for amazon eks.
-- amazon eks describe a managed node group
-- amazon eks list managed node groups
-- describe cluster
-- ListFargateProfiles
-- list nodegroups
-- amazon eks create a new eks cluster
-- create fargate profile
-- create nodegroup
-- list fargate profiles
-- containers
-- amazon eks list eks clusters
-- container orchestration
-- amazon eks describe an eks cluster
-- amazon eks
 - amazon eks list fargate profiles
-- create cluster
-- delete cluster
-- list clusters
-- DescribeNodegroup
-- CreateCluster
-- amazon eks delete a managed node group
-- ListClusters
-- amazon eks create a managed node group
-- ListNodegroups
-- amazon eks create a fargate profile
-- eks
+- amazon eks describe a managed node group
+- describe cluster
 - CreateFargateProfile
-- delete nodegroup
-- amazon eks delete an eks cluster
-- DescribeCluster
 - describe nodegroup
+- DescribeNodegroup
+- engineers managing amazon eks resources on aws.
+- amazon eks list eks clusters
+- amazon eks delete a managed node group
+- eks
+- amazon eks create a new eks cluster
+- CreateCluster
+- amazon eks describe an eks cluster
+- list clusters
+- ListNodegroups
+- DeleteNodegroup
+- ListClusters
+- kubernetes platform management business domain for amazon eks.
+- containers
+- aws
+- create cluster
+- amazon eks list managed node groups
+- list nodegroups
+- DeleteCluster
+- delete cluster
+- workflow capability for kubernetes platform management.
+- amazon eks
+- DescribeCluster
+- delete nodegroup
+- container orchestration
+- create fargate profile
+- amazon eks create a fargate profile
+- list fargate profiles
+- amazon eks delete an eks cluster
+- CreateNodegroup
+- ListFargateProfiles
+- create nodegroup
+- amazon eks create a managed node group
 slug: eks-management
 tags:
 - Amazon EKS

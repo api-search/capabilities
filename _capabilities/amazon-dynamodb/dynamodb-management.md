@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb query items in a table or index
-- aws
-- delete item
-- amazon dynamodb describe a dynamodb table
-- amazon dynamodb create a dynamodb table
-- amazon dynamodb list dynamodb tables
-- document store
+- nosql
 - delete table
-- putItem
-- listTables
-- amazon dynamodb
-- serverless
-- engineers managing amazon dynamodb resources on aws.
-- describeTable
-- list tables
-- amazon dynamodb update an item in a table
-- get item
-- amazon dynamodb delete a dynamodb table
-- create table
-- query
+- database
 - describe table
-- deleteItem
-- key-value
 - workflow capability for nosql database operations.
+- amazon dynamodb update an item in a table
+- putItem
+- engineers managing amazon dynamodb resources on aws.
+- serverless
 - amazon dynamodb put an item into a table
+- get item
+- list tables
+- update table
+- updateItem
+- amazon dynamodb delete an item from a table
+- amazon dynamodb delete a dynamodb table
 - createTable
+- updateTable
+- aws
+- deleteItem
+- delete item
+- amazon dynamodb get an item from a table
+- document store
+- amazon dynamodb describe a dynamodb table
+- query
+- create table
+- update item
+- deleteTable
+- key-value
+- amazon dynamodb list dynamodb tables
+- amazon dynamodb create a dynamodb table
+- describeTable
+- amazon dynamodb
+- put item
+- amazon dynamodb query items in a table or index
+- listTables
+- amazon dynamodb update a dynamodb table
 - getItem
 - nosql database operations business domain for amazon dynamodb.
-- update item
-- database
-- nosql
-- updateTable
-- update table
-- amazon dynamodb update a dynamodb table
-- deleteTable
-- updateItem
-- put item
-- amazon dynamodb delete an item from a table
-- amazon dynamodb get an item from a table
 slug: dynamodb-management
 tags:
 - Amazon DynamoDB

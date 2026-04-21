@@ -37,45 +37,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- verify send account
-- money transfer
-- fraud detection
-- funding transactions
-- process a direct service transaction
-- get currency conversion rate
-- get account info
-- mastercard
-- get account information for a send recipient
-- cross-border payment processing
-- create a cross-border payment
-- financial services
-- disbursement transactions
-- validate account
-- get currency conversion rate for cross-border transactions
-- credit cards
 - digital identity
-- validate account details before transfer
+- create cross border payment
+- validate account
+- open banking
+- get currency conversion rate
+- disbursements
+- create funding
 - create disbursement
 - create a person-to-person money transfer
-- create a disbursement
-- create a person-to-person transfer
-- payments
-- create funding
-- verify account eligibility for mastercard send
-- create p2p transfer
-- process direct transaction
-- currency conversion rates
-- open banking
 - create a cross-border international payment
-- create a funding transaction
-- cross-border
-- mastercard send
-- disbursements
-- create a funding transaction via mastercard send
-- create cross border payment
+- create a disbursement
+- fraud detection
+- funding transactions
 - create a disbursement to send money to a recipient
-- p2p transfers
+- create a person-to-person transfer
+- credit cards
 - get conversion rate
+- get account info
+- p2p transfers
+- money transfer
+- validate account details before transfer
+- mastercard send
+- create a funding transaction
+- cross-border payment processing
+- verify account eligibility for mastercard send
+- currency conversion rates
+- process a direct service transaction
+- disbursement transactions
+- financial services
+- cross-border
+- verify send account
+- payments
+- create a cross-border payment
+- get currency conversion rate for cross-border transactions
+- mastercard
+- get account information for a send recipient
+- process direct transaction
+- create p2p transfer
+- create a funding transaction via mastercard send
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

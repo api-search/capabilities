@@ -8,12 +8,12 @@ personas: []
 provider_name: Apache BookKeeper
 provider_slug: apache-bookkeeper
 search_terms:
-- apache
-- streaming
-- distributed systems
-- storage
-- log storage
 - open source
+- storage
+- distributed systems
+- streaming
+- apache
+- log storage
 slug: bookkeeper-cluster-management
 tags: []
 tools: []

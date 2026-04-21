@@ -29,51 +29,51 @@ personas: []
 provider_name: Amazon Lookout for Vision
 provider_slug: amazon-lookout-for-vision
 search_terms:
-- stop inspection model
-- manufacturing
-- train a computer vision model for defect detection
-- aws
-- list projects
-- create a new visual quality inspection project
-- list all trained inspection models in a project
-- running anomaly detection on product images
-- anomaly detection
-- run anomaly detection on images
-- workflow for building and deploying computer vision models for quality inspection
-- visual inspection
-- create project
-- quality inspection
-- check the training status and performance metrics of an inspection model
-- inspection projects
-- train a new inspection model
-- detect anomalies
-- detect visual anomalies in an image
-- Quality Inspector
-- builds and trains computer vision models for automated defect detection
-- start a trained model to enable real-time inspection
 - managing training and test datasets
-- train inspection model
-- create inspection project
-- list inspection models
-- training and lifecycle management of computer vision models
-- run anomaly detection on a product image to identify defects
-- get model status
 - Manufacturing Engineer
+- machine learning
+- list all inspection projects
+- list inspection projects
+- train inspection model
+- start inspection model
+- anomaly detection
+- detect anomalies
+- create project
+- list all visual inspection projects
+- list models
+- check the training status and performance metrics of an inspection model
+- computer vision
+- create inspection project
+- start a trained model to enable real-time inspection
+- manufacturing
+- Quality Inspector
+- create a visual inspection project
+- builds and trains computer vision models for automated defect detection
+- workflow for building and deploying computer vision models for quality inspection
+- aws
 - stop a running model to reduce costs when not actively inspecting
+- run anomaly detection on images
+- train a computer vision model for defect detection
+- running anomaly detection on product images
+- training and lifecycle management of computer vision models
+- create a new visual quality inspection project
+- amazon
+- list all trained inspection models in a project
+- quality inspection
+- list inspection models
+- list projects
+- visual inspection models
 - list trained models
 - runs inspection models on product images to detect defects in real time
-- visual inspection models
-- start inspection model
-- list all visual inspection projects
-- computer vision
-- machine learning
-- inspect image
-- create a visual inspection project
-- amazon
-- list all inspection projects
-- list models
+- inspection projects
+- detect visual anomalies in an image
+- train a new inspection model
+- run anomaly detection on a product image to identify defects
 - train model
-- list inspection projects
+- stop inspection model
+- get model status
+- visual inspection
+- inspect image
 slug: visual-inspection-workflow
 tags:
 - Amazon

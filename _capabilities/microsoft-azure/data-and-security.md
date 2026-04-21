@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cosmos db
-- keyvault get secret
-- list containers in a database
-- blob get properties
-- arm list resources
+- key vault
+- list resource providers
+- list subscription tags
+- arm list subscriptions
+- t1
+- list cosmos db databases
+- list resource groups
+- api management
+- list secrets
+- cloud computing
+- cosmos list databases
 - platform as a service
+- enterprise
+- list containers in a database
+- list blobs
+- blob storage operations
+- cosmos list containers
+- list items in a container
+- blob list blobs
+- cloud
+- subscription management
+- list azure subscriptions
 - list databases
 - cosmos list items
-- arm list tags
-- keyvault list certificates
-- list cosmos db databases
-- list cryptographic keys
-- list subscription tags
-- download a blob
-- api management
-- azure
-- list subscriptions
-- blob storage
-- arm list subscriptions
-- list blobs in a container
-- get blob properties
-- cloud computing
-- list azure subscriptions
-- enterprise
-- list items in a container
-- infrastructure as a service
-- cosmos list databases
-- list resource groups
-- blob list blobs
-- keyvault list secrets
-- list resources in a subscription
-- list blobs
-- cloud
-- t1
-- list certificates
-- get a secret value
-- arm list resource groups
-- list secrets
-- blob download
+- blob get properties
 - cosmos db database management
-- key vault secret management
-- list resource providers
-- resource manager
-- blob storage operations
-- keyvault list keys
+- azure
+- keyvault list secrets
+- infrastructure as a service
+- blob download
 - arm list providers
-- subscription management
-- key vault
-- cosmos list containers
+- get a secret value
+- blob storage
+- resource manager
+- cosmos db
+- keyvault list keys
+- keyvault get secret
+- list cryptographic keys
+- arm list resources
+- keyvault list certificates
+- list resources in a subscription
+- get blob properties
+- arm list tags
+- arm list resource groups
+- list blobs in a container
+- list certificates
+- download a blob
+- key vault secret management
+- list subscriptions
 slug: data-and-security
 tags:
 - Azure

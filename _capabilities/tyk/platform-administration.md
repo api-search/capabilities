@@ -30,43 +30,43 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- list admin users
-- update an organization
+- organization management
+- administration
+- open source
+- data plane monitoring
+- api management
+- list all connected data plane nodes
 - list all organizations
 - list all admin users
-- get details for a specific data plane
-- data plane monitoring
-- create a new organization
-- create organization
-- get dataplane
-- administration
-- list organizations
-- api management
-- mdcb health
-- graphql
-- platform
-- api gateway
-- tyk
-- delete organization
-- export system
-- list dataplanes
-- list all connected data planes
-- delete an organization
-- import system
-- organization management
-- mdcb
-- list all connected data plane nodes
-- list all tyk organizations
-- create admin user
-- get pprof diagnostic data from mdcb
-- export system configuration
-- update organization
-- admin user management
-- import system configuration
-- check mdcb health
 - get diagnostics
+- api gateway
+- delete organization
+- import system
+- delete an organization
+- graphql
+- get pprof diagnostic data from mdcb
+- export system
+- list admin users
+- get dataplane
+- update organization
+- list all tyk organizations
+- get details for a specific data plane
+- list all connected data planes
+- mdcb health
+- create organization
 - create an admin user
-- open source
+- import system configuration
+- update an organization
+- platform
+- list organizations
+- admin user management
+- mdcb
+- create a new organization
+- tyk
+- create admin user
+- export system configuration
+- list dataplanes
+- check mdcb health
 slug: platform-administration
 tags:
 - Administration

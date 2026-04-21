@@ -25,40 +25,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- apache
-- topic management and event publishing via cloudevents
-- list topics
-- event-driven
-- platform engineering
-- Platform Engineer
-- pub-sub
-- subscribe to topic
-- serverless
-- apache eventmesh
-- subscribe to eventmesh topics
-- publish a cloudevent
-- publish events
-- create a new eventmesh topic
-- cloudevents
-- engineers managing the eventmesh cluster and messaging infrastructure
-- messaging
-- publish cloud event
-- list all eventmesh topics
 - manage topics, subscriptions, and publish cloudevents
-- publish a cloudevent to an eventmesh topic
-- manage event subscriptions
-- list eventmesh topics
-- publish event
-- manage eventmesh topics
-- create eventmesh topic
-- create subscription
-- Developer
-- subscribe a consumer to an eventmesh topic
-- application developers building event-driven services on eventmesh
-- list all topics registered in eventmesh
-- create topic
-- pub-sub, request-reply, and broadcast messaging patterns
+- event-driven
 - open source
+- create a new eventmesh topic
+- create subscription
+- list eventmesh topics
+- Platform Engineer
+- list topics
+- manage event subscriptions
+- cloudevents
+- publish events
+- manage eventmesh topics
+- serverless
+- topic management and event publishing via cloudevents
+- create eventmesh topic
+- list all eventmesh topics
+- messaging
+- platform engineering
+- publish a cloudevent
+- apache
+- publish event
+- application developers building event-driven services on eventmesh
+- subscribe to topic
+- list all topics registered in eventmesh
+- publish a cloudevent to an eventmesh topic
+- pub-sub
+- subscribe a consumer to an eventmesh topic
+- create topic
+- Developer
+- publish cloud event
+- pub-sub, request-reply, and broadcast messaging patterns
+- subscribe to eventmesh topics
+- apache eventmesh
+- engineers managing the eventmesh cluster and messaging infrastructure
 slug: eventmesh-event-streaming
 tags:
 - Apache EventMesh

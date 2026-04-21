@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- seo
-- list sitemaps for a site.
-- webmaster tools
-- delete site
-- inspect urls for indexing status.
-- get details for a specific sitemap.
-- query search traffic data.
-- list sites
-- get details for a specific site.
-- remove a site from search console.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
+- query search analytics data with filters.
+- webmaster
+- inspect a url for index status and rich results.
 - get site
-- add site
-- search
-- query search traffic data with filters and dimensions.
-- google
-- get details for a specific search console site.
-- list sitemaps submitted for a site.
-- analytics
+- delete a sitemap.
 - list sitemaps
+- search console
+- get sitemap details.
+- query search analytics
+- add a site to search console.
+- inspect urls for indexing status.
+- delete a previously submitted sitemap.
+- submit sitemap
+- get details for a specific search console site.
+- add site
+- inspect a url for index status, crawl info, mobile usability, and rich results.
 - submit a sitemap.
 - delete sitemap
-- inspect url
-- search console
-- list all search console sites.
-- get sitemap
-- delete a previously submitted sitemap.
-- query search analytics data with filters.
-- delete a sitemap.
-- manage search console sites.
-- query search analytics
-- inspect a url for index status and rich results.
+- seo
 - list all search console sites for the authenticated user.
-- get sitemap details.
+- webmaster tools
+- list all search console sites.
+- manage search console sites.
+- remove a site from search console.
+- list sitemaps for a site.
+- get sitemap
 - manage sitemaps.
+- list sitemaps submitted for a site.
+- analytics
+- delete site
+- query search traffic data with filters and dimensions.
 - submit a sitemap for crawling.
-- webmaster
-- add a site to search console.
-- submit sitemap
+- google
+- inspect url
+- list sites
+- get details for a specific sitemap.
+- search
+- get details for a specific site.
+- query search traffic data.
 slug: seo-management
 tags:
 - Google

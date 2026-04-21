@@ -16,32 +16,32 @@ personas: []
 provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
-- apache
-- submit pig script
-- kill job
-- big data
-- scripting
-- get status and details of a pig job
-- submit a pig latin script for execution
-- list all pig data processing jobs
-- submit job
-- hadoop
-- validate a pig latin script for syntax errors
-- list pig jobs
-- etl
-- get job
-- runs ad-hoc data analysis jobs on hadoop clusters
-- Data Engineer
-- data analysis
-- get execution logs for a pig job
-- validate script
-- builds etl pipelines using pig latin scripts
-- list jobs
-- kill a running pig job
-- get job logs
-- apache pig
 - Data Analyst
+- data analysis
+- list pig jobs
 - open source
+- submit job
+- kill job
+- apache pig
+- builds etl pipelines using pig latin scripts
+- get status and details of a pig job
+- validate a pig latin script for syntax errors
+- list jobs
+- validate script
+- etl
+- big data
+- kill a running pig job
+- apache
+- submit a pig latin script for execution
+- get execution logs for a pig job
+- Data Engineer
+- list all pig data processing jobs
+- get job
+- get job logs
+- runs ad-hoc data analysis jobs on hadoop clusters
+- scripting
+- hadoop
+- submit pig script
 slug: pig-workflow
 tags:
 - Apache Pig

@@ -30,39 +30,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- start a media tracking session
-- create event forwarding rule
-- list event forwarding properties
-- tag management
-- end media session
-- send an interactive event to adobe edge network
-- edge network
-- server-side event forwarding properties
-- end a media tracking session
-- send interactive event
-- list event forwarding rules for a property
-- list secrets for a property
 - create a new event forwarding property
-- event forwarding rules
+- list event forwarding rules for a property
+- adobe launch
 - list secrets for authenticating with forwarding destinations
+- send interactive event
 - create a new event forwarding rule
 - secrets for event forwarding destinations
-- send an interactive event to edge network
-- start media session
-- list event forwarding rules
-- edge network data ingestion
-- data collection
-- list secrets
-- send batch events
-- create a secret for an event forwarding destination
-- create event forwarding property
-- marketing technology
+- event forwarding rules
 - send batch events to edge network
-- send batch events to adobe edge network
-- adobe launch
-- event forwarding
-- create secret
+- end a media tracking session
 - list server-side event forwarding properties
+- list event forwarding properties
+- list secrets
+- start a media tracking session
+- tag management
+- create a secret for an event forwarding destination
+- server-side event forwarding properties
+- send batch events
+- marketing technology
+- data collection
+- create event forwarding property
+- send an interactive event to edge network
+- edge network data ingestion
+- create event forwarding rule
+- create secret
+- send batch events to adobe edge network
+- send an interactive event to adobe edge network
+- start media session
+- end media session
+- list event forwarding rules
+- edge network
+- event forwarding
+- list secrets for a property
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

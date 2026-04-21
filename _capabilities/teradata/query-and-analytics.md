@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data management
-- list available vantage systems.
-- sql query execution and session management.
-- execute sql queries and analytics.
-- query sessions.
+- Data Analyst
 - create session
-- Platform Administrator
-- sql
-- system and fabric configuration management.
-- manages data fabric infrastructure and cross-system connectivity.
-- create a new query session on a vantage system.
-- teradata
-- execute a sql query.
-- get the status and results of a submitted query.
-- data warehousing
-- analytics
-- list querygrid queries
-- Application Developer
-- enterprise
-- list cross-system query summaries from querygrid.
-- execute query
-- query
-- health monitoring and issue detection.
-- integrates applications with teradata via rest apis.
-- cloud
-- available systems.
-- execute a sql query against teradata vantage.
-- Data Engineer
-- get query status
-- sql queries.
 - database
 - machine learning
-- manage querygrid data fabric infrastructure.
-- list available vantage systems for query execution.
+- sql queries.
+- manages data fabric infrastructure and cross-system connectivity.
+- get query status
+- data management
+- enterprise
 - executes queries and analyzes data across vantage systems.
-- create a query session.
-- Data Analyst
+- health monitoring and issue detection.
+- teradata
+- execute a sql query against teradata vantage.
+- data warehousing
+- integrates applications with teradata via rest apis.
+- cloud
+- execute sql queries and analytics.
+- list available vantage systems.
+- Data Engineer
+- available systems.
+- execute a sql query.
+- list cross-system query summaries from querygrid.
 - list query systems
+- create a new query session on a vantage system.
+- query
+- create a query session.
+- analytics
+- query sessions.
+- sql query execution and session management.
+- sql
+- list available vantage systems for query execution.
 - administers querygrid systems, nodes, and software.
+- system and fabric configuration management.
+- Application Developer
+- get the status and results of a submitted query.
+- Platform Administrator
+- manage querygrid data fabric infrastructure.
+- execute query
+- list querygrid queries
 slug: query-and-analytics
 tags:
 - Teradata
