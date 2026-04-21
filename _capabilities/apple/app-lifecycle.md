@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- modify build
-- list builds
-- get build details.
-- list all builds.
-- create a beta group.
-- list all apps.
-- read build
-- beta group management.
-- get details of a specific app.
-- modify app
-- app store
-- list apps
-- list beta testers
-- technology
-- list beta groups.
-- list groups
-- delete beta tester
-- create beta group
-- update build information.
-- create group
-- apple
 - beta tester management.
-- delete a beta group.
-- read app
-- add a new beta tester.
-- modify beta group
-- list all beta testers.
-- get beta group details.
-- mobile
-- list beta testers.
-- delete beta group
-- list beta groups
-- read beta tester
-- developer
-- app management
-- app management.
-- add a beta tester.
-- create beta tester
-- list all beta groups.
-- testflight
-- create a new beta group.
-- macos
-- list testers
-- update a beta group.
-- build management.
-- update app metadata.
-- list all apps in app store connect.
-- read beta group
-- ios
 - get beta tester details.
+- delete a beta group.
+- delete beta tester
+- apple
+- app management.
+- beta group management.
+- create a beta group.
+- testflight
+- list all beta testers.
+- create beta tester
+- read beta group
+- modify app
+- update a beta group.
+- ios
+- modify beta group
+- list apps
 - create tester
+- list all apps in app store connect.
+- list beta groups.
+- read app
+- read beta tester
+- list beta groups
 - remove a beta tester.
+- list testers
+- list groups
+- delete beta group
+- add a beta tester.
+- list all beta groups.
+- list all builds.
+- list beta testers.
+- list all apps.
+- modify build
+- get build details.
+- list builds
+- read build
+- create a new beta group.
+- technology
+- developer
+- build management.
+- add a new beta tester.
+- get details of a specific app.
+- app management
+- create beta group
+- create group
+- app store
+- macos
+- update build information.
+- list beta testers
+- update app metadata.
+- mobile
+- get beta group details.
 slug: app-lifecycle
 tags:
 - Apple

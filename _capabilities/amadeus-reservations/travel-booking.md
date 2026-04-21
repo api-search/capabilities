@@ -35,50 +35,50 @@ personas: []
 provider_name: Amadeus Reservations
 provider_slug: amadeus-reservations
 search_terms:
-- retrieve details of an existing flight reservation by order id.
-- cancel flight booking
-- airline reservation creation and management.
-- cancel a transfer booking.
-- create a confirmed flight booking.
-- end-to-end travel booking combining flights, hotels, and transfers.
-- retrieve a flight booking.
-- hotel reservation creation.
-- amadeus
-- create flight order
-- flights
-- hotels
-- Travel Booking Agent
-- create flight booking
+- hotel reservation operations.
 - cancel a flight booking.
 - travel
-- cancel an existing confirmed ground transfer reservation.
-- create a confirmed hotel booking.
-- cancel an existing confirmed flight reservation.
-- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
 - create hotel booking
+- retrieve details of an existing flight reservation by order id.
+- cancel an existing confirmed ground transfer reservation.
+- cancel transfer booking
+- create a confirmed airline reservation from a priced flight offer.
+- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
+- cancel an existing confirmed flight reservation.
+- transfers
+- flight reservation operations.
+- airline reservation creation and management.
+- cancel a transfer booking.
+- ground transfer reservation operations.
+- get flight booking
+- flights
+- retrieve a flight booking.
+- create flight booking
+- booking
+- create a confirmed transfer booking.
+- ground transportation booking and management.
+- create flight order
 - create transfer booking
 - developer building ai-powered travel assistants that create bookings conversationally.
-- individual flight order management.
-- cancel transfer order
-- get flight order
-- create hotel order
-- transfers
-- get flight booking
-- ground transportation booking and management.
 - reservations
-- cancel flight order
-- Travel Chatbot Developer
-- ground transfer reservation operations.
-- booking
-- human or automated agent creating and managing travel reservations on behalf of travelers.
-- hotel reservation operations.
-- cancel transfer booking
-- create transfer order
-- create a confirmed airline reservation from a priced flight offer.
-- create a confirmed transfer booking.
 - book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
-- flight reservation operations.
+- end-to-end travel booking combining flights, hotels, and transfers.
+- create hotel order
+- cancel transfer order
+- human or automated agent creating and managing travel reservations on behalf of travelers.
+- amadeus
+- create a confirmed hotel booking.
+- individual flight order management.
+- cancel flight order
+- get flight order
 - individual transfer management.
+- create a confirmed flight booking.
+- cancel flight booking
+- hotel reservation creation.
+- create transfer order
+- Travel Booking Agent
+- Travel Chatbot Developer
+- hotels
 slug: travel-booking
 tags:
 - Amadeus

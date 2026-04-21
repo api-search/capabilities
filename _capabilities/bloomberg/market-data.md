@@ -33,47 +33,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- request end-of-day historical data for securities.
-- quantitative analysis
-- request historical data.
-- intraday bar request
-- data license
-- intraday tick request
-- subscribe market vwap
-- request intraday bars.
-- field info request
-- subscribe market data
-- business intelligence
-- look up field metadata.
-- subscribe to streaming real-time market data.
+- subscribe to custom vwap stream.
+- intraday bar queries.
+- look up metadata for bloomberg field mnemonics.
+- intraday tick queries.
+- analytics
 - enterprise
-- reference data request
-- request reference data for securities and fields.
+- data license
+- subscribe to streaming real-time market data.
+- transaction cost analysis
+- subscribe market vwap
+- historical data request
+- trading
+- subscribe market data
+- quantitative analysis
+- look up field metadata.
+- financial services
+- request historical data.
+- request raw intraday tick data for a security.
+- bloomberg
+- business intelligence
+- subscribe market bar
 - news
+- request reference data for securities and fields.
+- reference data queries.
+- request intraday bars.
+- historical data queries.
+- market data
+- search the bloomberg api data dictionary for fields.
+- intraday tick request
 - request reference data.
+- reference data request
+- field discovery.
+- request intraday ohlc bars for a security.
+- execution management
+- request intraday ticks.
+- field info request
+- intraday bar request
 - subscribe to interval-based real-time bars.
 - search for fields.
-- look up metadata for bloomberg field mnemonics.
-- field discovery.
-- market data
-- request intraday ohlc bars for a security.
-- historical data queries.
-- search the bloomberg api data dictionary for fields.
-- bloomberg
-- analytics
-- subscribe to custom vwap stream.
-- execution management
-- intraday bar queries.
-- intraday tick queries.
-- financial services
-- request intraday ticks.
-- request raw intraday tick data for a security.
-- reference data queries.
-- transaction cost analysis
 - field search request
-- subscribe market bar
-- trading
-- historical data request
+- request end-of-day historical data for securities.
 slug: market-data
 tags:
 - Bloomberg

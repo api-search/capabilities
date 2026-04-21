@@ -29,38 +29,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- create a workflow.
-- list all integrations.
-- apifuse
-- list all pre-built connectors available for embedding into your saas product.
-- create a new automation workflow connecting two or more integrated platforms.
 - SaaS Product Manager
-- browse pre-built connectors.
-- list connectors
-- list workflows
-- developer implementing and automating embedded integration workflows.
-- get analytics data.
-- embedded integrations
-- workflow automation
-- Integration Developer
-- list all integration workflows configured in the embedded marketplace.
-- integration analytics.
-- browse all available embedded integrations, optionally filtered by category.
-- managing native integrations within saas products.
-- product manager building native integrations into a saas product.
-- list integrations
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- create workflow
 - list all connectors.
 - browse and manage integrations.
-- saas
-- integrations
-- get analytics
+- list integrations
 - integration platform
-- list workflows.
-- marketplace
+- create workflow
+- developer implementing and automating embedded integration workflows.
+- list connectors
+- create a workflow.
+- managing native integrations within saas products.
+- integration analytics.
+- create a new automation workflow connecting two or more integrated platforms.
 - manage workflows.
+- list workflows.
+- list workflows
+- list all integrations.
+- apifuse
+- saas
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- product manager building native integrations into a saas product.
+- get analytics
+- Integration Developer
+- workflow automation
+- browse pre-built connectors.
+- embedded integrations
+- list all integration workflows configured in the embedded marketplace.
+- get analytics data.
+- list all pre-built connectors available for embedding into your saas product.
+- marketplace
+- integrations
 - ipaas
+- browse all available embedded integrations, optionally filtered by category.
 slug: embedded-integration-management
 tags:
 - Apifuse

@@ -29,43 +29,43 @@ personas: []
 provider_name: Amazon WorkSpaces
 provider_slug: amazon-workspaces
 search_terms:
-- list registered directories for workspace deployment.
-- permanently terminate virtual desktop workspaces.
-- designs and operates virtual desktop infrastructure.
-- administration
-- list available workspace images for provisioning.
-- workflow for it administrators to provision and manage amazon workspaces virtual desktops including lifecycle, bundles, directories, and images.
-- list directories.
+- provision new virtual desktops.
+- it administration of desktop resources
 - list available bundles.
-- workspace image management.
-- End User Computing Engineer
-- remote work and desktop-as-a-service infrastructure
-- hardware bundle catalog.
-- describe workspace images
-- describe workspace directories
-- list virtual desktops.
-- desktop as a service
-- describe workspace bundles
-- terminate workspaces
-- directory management.
 - cloud-based virtual desktop provisioning and management
+- virtual desktop
+- provision new virtual desktop workspaces for users.
+- permanently terminate virtual desktop workspaces.
+- IT Administrator
+- workspace image management.
+- directory management.
+- workflow for it administrators to provision and manage amazon workspaces virtual desktops including lifecycle, bundles, directories, and images.
+- terminate workspaces
+- list registered directories for workspace deployment.
+- list virtual desktops.
+- describe workspaces
+- reboot workspaces
+- end user computing
+- hardware bundle catalog.
+- list workspace images.
+- desktop as a service
+- describe workspace directories
+- reboot virtual desktop workspaces to resolve issues.
+- list available hardware configuration bundles.
+- describe workspace bundles
+- administration
+- manages workspaces provisioning, lifecycle, and policy.
+- describe workspace images
+- list directories.
+- create workspaces
+- virtual desktop lifecycle management.
+- End User Computing Engineer
 - aws
 - desktop
-- reboot virtual desktop workspaces to resolve issues.
-- reboot workspaces
-- list available hardware configuration bundles.
-- create workspaces
-- virtual desktop
-- provision new virtual desktops.
-- describe workspaces
-- list workspace images.
 - list and describe all virtual desktop workspaces.
-- manages workspaces provisioning, lifecycle, and policy.
-- end user computing
-- IT Administrator
-- virtual desktop lifecycle management.
-- it administration of desktop resources
-- provision new virtual desktop workspaces for users.
+- remote work and desktop-as-a-service infrastructure
+- designs and operates virtual desktop infrastructure.
+- list available workspace images for provisioning.
 slug: virtual-desktop-management
 tags:
 - AWS

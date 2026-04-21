@@ -39,46 +39,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- match
-- digital identity
-- lookup transaction
-- open banking
-- confirmed fraud record management
-- search the match database
-- suspected fraud record management
-- risk management
-- get fraud statuses
-- get fraud alerts
-- update fraud alert
-- retrieve ethoca fraud alerts
-- lookup transaction clarity
-- look up transaction details for clarity
-- fraud detection
-- search terminated merchants
-- perform risk check on a merchant
-- credit cards
-- match terminated merchant screening
-- assess merchant risk during onboarding
-- fraud prevention
-- submit confirmed fraud
-- update the status of an ethoca fraud alert
-- look up transaction details to resolve disputes before chargebacks
-- submit a suspected fraud record
-- transaction detail lookups for dispute prevention
-- ethoca
-- ethoca fraud alerts
 - merchant onboarding risk assessment
+- search match database
+- fraud detection
+- lookup transaction clarity
+- mastercard
+- get fraud alerts
+- ethoca
+- look up transaction details for clarity
+- risk management
+- update the status of an ethoca fraud alert
+- update fraud alert
+- credit cards
+- submit suspected fraud
+- submit a confirmed fraud record
+- match terminated merchant screening
+- transaction detail lookups for dispute prevention
+- fraud prevention
+- search the match database for terminated merchants
+- financial services
+- match
+- search terminated merchants
 - get available fraud record statuses
 - check merchant risk
-- financial services
 - retrieve ethoca fraud alerts for chargeback prevention
-- payments
-- mastercard
-- submit suspected fraud
-- search the match database for terminated merchants
-- search match database
+- open banking
+- perform risk check on a merchant
+- assess merchant risk during onboarding
+- retrieve ethoca fraud alerts
+- ethoca fraud alerts
 - submit a confirmed fraud record to the mastercard fraud and loss database
-- submit a confirmed fraud record
+- payments
+- submit confirmed fraud
+- submit a suspected fraud record
+- confirmed fraud record management
+- look up transaction details to resolve disputes before chargebacks
+- get fraud statuses
+- digital identity
+- lookup transaction
+- search the match database
+- suspected fraud record management
 slug: fraud-prevention-and-risk
 tags:
 - Mastercard

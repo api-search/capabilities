@@ -26,48 +26,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- create a chat completion
-- t1
-- generate speech from text
-- generate images from text
-- api management
-- cognitive services
-- openai create speech
-- cloud computing
-- platform as a service
-- openai create embedding
-- list cognitive services accounts
-- enterprise
-- cognitive list models
-- list openai models
 - cognitive list accounts
-- openai list deployments
-- cloud
-- openai create translation
-- list model deployments
-- azure
-- infrastructure as a service
-- create text embeddings
-- list cognitive accounts
-- openai create transcription
-- chat completion operations
-- model listing
-- openai create chat completion
-- ai
-- create a text completion
-- embedding operations
-- create chat completion
-- cognitive services accounts
-- list available openai models
-- openai
-- transcribe audio to text
 - create embedding
-- openai create completion
+- openai create transcription
 - openai create image
-- openai list models
+- list available openai models
+- enterprise
+- create a text completion
+- ai
+- list cognitive accounts
+- azure
+- platform as a service
 - translate audio to english
-- list available ai models
+- generate speech from text
 - create a chat completion using azure openai
+- create text embeddings
+- cognitive services accounts
+- openai create embedding
+- openai list deployments
+- t1
+- generate images from text
+- list model deployments
+- transcribe audio to text
+- chat completion operations
+- openai
+- openai create completion
+- create a chat completion
+- cognitive list models
+- model listing
+- embedding operations
+- api management
+- openai create translation
+- cognitive services
+- cloud
+- openai create speech
+- list cognitive services accounts
+- create chat completion
+- openai list models
+- list available ai models
+- openai create chat completion
+- list openai models
+- infrastructure as a service
+- cloud computing
 slug: ai-and-cognitive
 tags:
 - Azure

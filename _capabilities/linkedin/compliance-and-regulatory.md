@@ -51,62 +51,62 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- get events for data portability.
-- linkedin
-- get dma posts
-- get business manager relationships
-- get dma lead gen responses
-- sales intelligence, lead management, and crm integration.
-- data portability
-- opt out a member from compliance monitoring.
-- social media
-- batch get organizations for data portability.
-- check member compliance monitoring status.
-- opt in member
-- get dma events
-- careers
-- get comments for data portability.
-- get lead gen responses for data portability.
 - get posts for data portability.
-- get organization
-- b2b advertising, audience targeting, and campaign analytics.
-- batch get organizations
-- get advertiser transparency data.
-- professional networking
-- get organization by id for data portability.
-- compliance
-- get dma reactions
-- employee development tracking and content access.
-- get advertiser transparency data for a sponsored account.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- recruiting
-- opt out member
-- get advertiser transparency
-- regulatory
-- get organization acls
-- get compliance events
-- archives communications for regulatory compliance.
-- integrates linkedin authentication and sharing into applications.
-- posts jobs and manages candidates through ats integrations.
-- check member status
-- get organization acls for data portability.
-- get page content analytics for data portability.
-- get dma comments
-- get page content analytics
-- tracks employee learning activity and completions.
-- authentication, sharing, and verification for consumer apps.
-- data portability and advertiser transparency for dma.
-- business
-- marketing
-- get business manager account relationships.
 - get organization by id.
-- retrieve compliance events for a regulated member.
+- get lead gen responses for data portability.
+- social media
+- opt out member
+- regulatory
+- get organization acls for data portability.
+- archives communications for regulatory compliance.
+- data portability
+- get organization acls
+- get advertiser transparency data for a sponsored account.
 - message archiving and regulatory communications governance.
-- get reactions for data portability.
-- opt in a member for compliance monitoring.
-- uses sales navigator for lead generation and crm sync.
 - job posting, recruiting, and applicant tracking.
+- get compliance events
+- posts jobs and manages candidates through ats integrations.
+- professional networking
+- get organization
+- careers
+- get dma events
+- opt in member
+- check member status
+- opt out a member from compliance monitoring.
+- opt in a member for compliance monitoring.
+- batch get organizations
+- get advertiser transparency
+- recruiting
+- compliance
 - retrieve compliance events.
+- get dma lead gen responses
+- business
+- get advertiser transparency data.
+- get page content analytics for data portability.
+- uses sales navigator for lead generation and crm sync.
+- get organization by id for data portability.
+- integrates linkedin authentication and sharing into applications.
+- get events for data portability.
+- get dma comments
+- manages b2b ad campaigns and audience targeting on linkedin.
+- sales intelligence, lead management, and crm integration.
+- get comments for data portability.
+- check member compliance monitoring status.
+- get dma reactions
+- get business manager account relationships.
+- batch get organizations for data portability.
+- get dma posts
+- authentication, sharing, and verification for consumer apps.
+- tracks employee learning activity and completions.
+- linkedin
+- data portability and advertiser transparency for dma.
+- get page content analytics
+- employee development tracking and content access.
+- b2b advertising, audience targeting, and campaign analytics.
+- get business manager relationships
+- retrieve compliance events for a regulated member.
+- get reactions for data portability.
+- marketing
 slug: compliance-and-regulatory
 tags:
 - LinkedIn

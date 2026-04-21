@@ -37,50 +37,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- flow management
-- list available connectors in an environment
-- microsoft
-- list environments
-- turn off flow
-- microsoft power automate
-- list connectors
 - stop/deactivate a flow
-- manage flows, environments, and connectors
-- list flows in an environment
-- start/activate a flow
-- Automation Engineer
-- integration
-- workflow
-- update flow
+- get details of a specific flow
 - get details of a specific connector
-- manages environments, connectors, and permissions
-- get flow
-- business process
-- list flows
-- create a new automation flow
+- managing environments and available connectors
 - flow lifecycle management
 - get flow details
-- delete a flow
-- creates and manages automation flows
-- get details of a specific flow
-- create a flow
-- create flow
-- update a flow's properties
-- managing environments and available connectors
-- environment management
-- delete flow
-- rpa
-- list all environments
-- connector management
-- update a flow
-- low-code
-- get connector
-- creating, running, and managing automation flows
-- turn on flow
-- list all power automate environments
 - Platform Administrator
+- microsoft power automate
+- list connectors
+- create flow
+- creates and manages automation flows
+- update a flow's properties
+- delete flow
+- manage flows, environments, and connectors
+- delete a flow
+- integration
 - power platform
+- environment management
+- manages environments, connectors, and permissions
+- list all environments
+- create a flow
+- connector management
+- low-code
+- Automation Engineer
 - automation
+- list all power automate environments
+- workflow
+- list flows in an environment
+- list flows
+- update a flow
+- get flow
+- business process
+- creating, running, and managing automation flows
+- list available connectors in an environment
+- create a new automation flow
+- update flow
+- turn off flow
+- get connector
+- turn on flow
+- list environments
+- microsoft
+- start/activate a flow
+- rpa
+- flow management
 slug: flow-automation
 tags:
 - Microsoft Power Automate

@@ -8,11 +8,11 @@ personas: []
 provider_name: Apache HTTP Server
 provider_slug: apache-httpd
 search_terms:
-- open source
+- load balancer
 - reverse proxy
 - web server
-- load balancer
 - apache
+- open source
 - proxy
 slug: httpd-server-monitoring
 tags: []

@@ -41,47 +41,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- create a new webhook subscription for data change notifications.
-- check compliance
-- validate a webhook target url is reachable.
 - update an existing webhook subscription.
-- validate target url
-- api usage
-- get api usage data.
-- api usage tracking.
-- b2b
-- contacts
-- validate a webhook target url.
-- get subscription types
-- update webhook
-- list webhooks
-- create webhook
-- sales intelligence
-- available webhook subscription types.
-- get usage
-- compliance
-- create a new webhook subscription.
-- check compliance status for specified contacts.
-- monitoring
-- check data compliance status for specified contacts.
+- webhooks
+- validate a webhook target url is reachable.
+- lead generation
 - data
+- create webhook
+- get api usage data and consumption metrics.
+- data compliance operations.
+- get available webhook subscription types.
+- api usage tracking.
+- create a new webhook subscription.
+- check compliance
+- list webhooks
+- webhook target url validation.
+- individual webhook management.
+- get api usage data.
+- get subscription types
+- contact database
 - marketing intelligence
 - webhook subscription management.
-- individual webhook management.
-- list all webhook subscriptions.
-- delete a webhook subscription.
-- get api usage data and consumption metrics.
-- lead generation
-- zoominfo
-- webhooks
-- get available webhook subscription types.
-- company data
-- webhook target url validation.
-- data compliance operations.
-- contact database
 - list all configured webhook subscriptions.
+- compliance
+- zoominfo
+- api usage
 - delete webhook
+- available webhook subscription types.
+- monitoring
+- get usage
+- list all webhook subscriptions.
 - b2b data
+- sales intelligence
+- update webhook
+- check compliance status for specified contacts.
+- create a new webhook subscription for data change notifications.
+- validate a webhook target url.
+- contacts
+- delete a webhook subscription.
+- company data
+- check data compliance status for specified contacts.
+- b2b
+- validate target url
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

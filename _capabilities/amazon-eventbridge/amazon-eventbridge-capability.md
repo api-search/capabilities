@@ -65,45 +65,45 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- ListTargetsByRule
-- event-driven
-- RemoveTargets
-- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
-- developers building applications using amazon eventbridge
-- amazon eventbridge put targets
-- amazon eventbridge list rules
-- integration
-- PutTargets
-- serverless
 - amazon eventbridge list archives
-- CreateEventBus
-- amazon web services
-- event bus
-- amazon eventbridge delete event bus
-- amazon eventbridge put events
-- DescribeRule
-- events
-- ListRules
-- aws
-- ListEventBuses
-- DeleteEventBus
-- amazon eventbridge remove targets
-- amazon eventbridge put rule
-- amazon eventbridge list targets by rule
 - DeleteRule
-- amazon eventbridge create event bus
-- amazon eventbridge list event buses
-- serverless event bus for connecting applications with real-time data
-- amazon eventbridge describe rule
-- amazon eventbridge describe event bus
-- amazon eventbridge delete rule
-- PutEvents
-- PutRule
-- amazon eventbridge create archive
-- CreateArchive
-- ListArchives
-- operations teams managing amazon eventbridge infrastructure
 - DescribeEventBus
+- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
+- amazon eventbridge remove targets
+- amazon web services
+- event-driven
+- ListArchives
+- amazon eventbridge put events
+- DeleteEventBus
+- serverless event bus for connecting applications with real-time data
+- amazon eventbridge describe event bus
+- amazon eventbridge delete event bus
+- amazon eventbridge create event bus
+- CreateEventBus
+- ListEventBuses
+- events
+- integration
+- ListTargetsByRule
+- PutEvents
+- PutTargets
+- amazon eventbridge describe rule
+- ListRules
+- amazon eventbridge list targets by rule
+- amazon eventbridge put targets
+- event bus
+- operations teams managing amazon eventbridge infrastructure
+- developers building applications using amazon eventbridge
+- amazon eventbridge put rule
+- CreateArchive
+- serverless
+- RemoveTargets
+- amazon eventbridge create archive
+- amazon eventbridge delete rule
+- aws
+- amazon eventbridge list event buses
+- amazon eventbridge list rules
+- PutRule
+- DescribeRule
 slug: amazon-eventbridge-capability
 tags:
 - Amazon Web Services

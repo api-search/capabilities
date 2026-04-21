@@ -17,34 +17,34 @@ personas: []
 provider_name: Aklivity
 provider_slug: aklivity
 search_terms:
-- connects iot devices via mqtt to kafka using zilla
-- event-driven
-- multi-protocol
-- apache kafka topic management and event streaming
-- consume events from a kafka topic via zilla http gateway
-- iot
-- kafka
-- Platform Engineer
-- event-driven application patterns with kafka as the backbone
-- aklivity
-- expose kafka topics as rest apis and manage event-driven integrations
-- real-time
-- API Developer
 - api gateway
-- apache kafka
-- consume events from kafka
+- Platform Engineer
+- connects iot devices via mqtt to kafka using zilla
 - kafka proxy
-- builds rest apis backed by kafka topics using zilla
-- produce event
-- multi-protocol api gateway for kafka access
-- produce kafka event
-- produce an event to kafka
-- consume events
-- kafka event production and consumption
-- configures and manages zilla gateway deployments for kafka access
-- IoT Developer
+- consume events from a kafka topic via zilla http gateway
+- event-driven
 - consume kafka events
+- kafka event production and consumption
+- produce kafka event
 - produce an event to a kafka topic via zilla http gateway
+- iot
+- configures and manages zilla gateway deployments for kafka access
+- expose kafka topics as rest apis and manage event-driven integrations
+- produce an event to kafka
+- kafka
+- IoT Developer
+- consume events from kafka
+- produce event
+- consume events
+- event-driven application patterns with kafka as the backbone
+- API Developer
+- builds rest apis backed by kafka topics using zilla
+- apache kafka
+- multi-protocol
+- real-time
+- multi-protocol api gateway for kafka access
+- apache kafka topic management and event streaming
+- aklivity
 slug: kafka-api-gateway
 tags:
 - Aklivity

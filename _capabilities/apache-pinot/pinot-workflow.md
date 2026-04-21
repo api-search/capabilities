@@ -16,39 +16,39 @@ personas: []
 provider_name: Apache Pinot
 provider_slug: apache-pinot
 search_terms:
-- list all registered schemas
-- Data Analyst
-- open source
-- olap
-- database
-- Platform Engineer
-- apache pinot
-- distributed databases
-- real-time
-- list tables
-- query sql
-- execute a sql query against pinot tables
-- real-time olap
+- get table
 - list all segments for a table
-- get pinot cluster status and information
-- get cluster info
+- Platform Engineer
+- database
+- sql
+- analytics
+- distributed databases
+- get a specific schema definition
+- query sql
 - manages pinot cluster, tables, and schemas
+- list all tables in the pinot cluster
 - low latency
 - get schema
-- apache
-- get a specific schema definition
-- list all tables in the pinot cluster
-- get the configuration of a specific table
-- query
-- create table
-- analytics
-- queries pinot for real-time analytics and dashboards
-- list schemas
+- real-time olap
 - execute sql query
-- create a new pinot table
-- sql
-- get table
 - list segments
+- Data Analyst
+- get cluster info
+- get the configuration of a specific table
+- list tables
+- list all registered schemas
+- queries pinot for real-time analytics and dashboards
+- create table
+- execute a sql query against pinot tables
+- apache pinot
+- query
+- olap
+- apache
+- real-time
+- open source
+- create a new pinot table
+- list schemas
+- get pinot cluster status and information
 slug: pinot-workflow
 tags:
 - Apache Pinot

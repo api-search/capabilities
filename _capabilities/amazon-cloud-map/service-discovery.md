@@ -25,37 +25,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- dynamic microservice registration and discovery
-- create a new cloud map service within a namespace
-- list namespaces
-- register instance
-- Platform Engineer
-- discover healthy service instances by namespace and service name
-- create a service
-- list services
-- amazon web services
-- DevOps Engineer
-- dns
-- manage service discovery namespaces
-- discover instances
-- list instances
-- list all cloud map service discovery namespaces
-- aws
-- register an instance with a cloud map service
-- engineers managing service registries and microservice infrastructure
-- microservices
-- devops practitioners automating service registration and health monitoring
 - devops
-- cloud map
-- service discovery
-- dynamic service registry and health-based routing
-- list all namespaces
-- create service
-- list all instances registered with a specific cloud map service
-- list services registered in cloud map
-- discover healthy instances
 - discover service instances
+- create a service
+- register an instance with a cloud map service
+- Platform Engineer
+- discover healthy instances
+- discover instances
+- create a new cloud map service within a namespace
+- discover healthy service instances by namespace and service name
+- dynamic microservice registration and discovery
 - manage services
+- list services
+- manage service discovery namespaces
+- register instance
+- DevOps Engineer
+- dynamic service registry and health-based routing
+- cloud map
+- list all cloud map service discovery namespaces
+- list all instances registered with a specific cloud map service
+- list namespaces
+- list instances
+- devops practitioners automating service registration and health monitoring
+- service discovery
+- aws
+- list all namespaces
+- dns
+- microservices
+- create service
+- list services registered in cloud map
+- engineers managing service registries and microservice infrastructure
+- amazon web services
 slug: service-discovery
 tags:
 - Amazon Web Services

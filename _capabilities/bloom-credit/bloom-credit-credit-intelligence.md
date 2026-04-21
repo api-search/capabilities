@@ -8,12 +8,12 @@ personas: []
 provider_name: Bloom Credit
 provider_slug: bloom-credit
 search_terms:
-- fintech
-- credit reports
-- credit bureau
-- personal finance
 - credit scores
+- fintech
+- personal finance
+- credit bureau
 - lending
+- credit reports
 slug: bloom-credit-credit-intelligence
 tags: []
 tools: []

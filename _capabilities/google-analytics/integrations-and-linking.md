@@ -51,82 +51,82 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- delete a google ads link
-- list firebase links
-- marketing team
-- data protection engineer
-- extracts insights from ga4 data through reports and explorations.
-- privacy officer
-- firebase
-- implements server-side event tracking and offline data collection.
-- machine learning
-- connecting ga4 with advertising, app, and measurement platforms.
-- create a google ads integration link on a ga4 property
-- integrates ga4 with other platforms and manages infrastructure.
-- list google ads links
-- get details of a specific measurement protocol secret
-- get a measurement protocol secret
-- create a firebase link
-- manage firebase integration links
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- web analytics
-- builds automated reporting pipelines and dashboards from ga4 data.
-- create google ads link
-- create a google ads link
-- bi engineer
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- list google ads links on a property
-- create a firebase integration link on a ga4 property
-- create, export, and query ga4 audience segments.
-- linking
-- create measurement protocol secret
-- audits data access and monitors configuration changes.
-- google
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- manage google ads integration links
-- compliance team
-- implements privacy-compliant data handling and deletion workflows.
-- list measurement protocol secrets for a data stream
-- marketing ops
-- get measurement protocol secret
-- data analyst
-- querying and analyzing ga4 event data through various report types.
-- analytics administrator
+- manage a specific google ads link
 - list google ads links on a ga4 property
+- querying and analyzing ga4 event data through various report types.
+- data
+- metrics
+- get details of a specific measurement protocol secret
+- sets up and maintains ga4 accounts, properties, and configurations.
+- extracts insights from ga4 data through reports and explorations.
+- marketing ops
+- segmenting and exporting user populations for analysis and activation.
+- data protection engineer
+- integrates ga4 with other platforms and manages infrastructure.
+- web analytics
+- analytics
+- create google ads link
+- privacy officer
+- update google ads link
+- get measurement protocol secret
+- list firebase links on a property
+- measures campaign performance, segments audiences, and tracks conversions.
+- update a google ads link configuration
+- create a firebase integration link on a ga4 property
+- manage firebase integration links
+- create firebase link
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- machine learning
+- delete a google ads link
+- delete google ads link
+- create measurement protocol secret
+- bi engineer
+- list google ads links on a property
+- server-side event tracking with data stream and secret management.
+- managing data privacy, deletion, and access auditing.
+- get a measurement protocol secret
+- implements server-side event tracking and offline data collection.
+- create a google ads integration link on a ga4 property
+- google analytics
+- create, export, and query ga4 audience segments.
+- list firebase links
+- create a firebase link
+- create a measurement protocol secret
+- linking
+- list firebase links on a ga4 property
+- backend engineer
+- setting up and maintaining ga4 account and property structure.
+- marketing team
+- firebase
+- google ads
+- manage google ads integration links
+- audits data access and monitors configuration changes.
+- list measurement protocol secrets
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- manages data privacy compliance including gdpr deletion requests.
+- connecting ga4 with advertising, app, and measurement platforms.
+- google
+- implements privacy-compliant data handling and deletion workflows.
+- delete a google ads integration link
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- analytics administrator
+- update a google ads link
+- get a specific measurement protocol secret
+- create a measurement protocol secret for server-side tracking
+- compliance team
+- manage measurement protocol secrets
+- attribution
+- list google ads links
+- connects advertising platforms and implements server-side tracking.
 - platform engineer
 - user data deletion, access auditing, and data collection acknowledgement.
-- measures campaign performance, segments audiences, and tracks conversions.
-- delete a google ads integration link
-- google ads
-- update google ads link
-- data
-- analytics
-- get a specific measurement protocol secret
+- builds automated reporting pipelines and dashboards from ga4 data.
+- create a google ads link
+- list measurement protocol secrets for a data stream
+- data analyst
 - integrations
-- manages data privacy compliance including gdpr deletion requests.
-- attribution
-- list firebase links on a ga4 property
-- list firebase links on a property
-- manage measurement protocol secrets
-- server-side event tracking with data stream and secret management.
-- backend engineer
-- sets up and maintains ga4 accounts, properties, and configurations.
-- update a google ads link configuration
-- connects advertising platforms and implements server-side tracking.
 - ingesting events from servers, apps, and offline sources.
-- managing data privacy, deletion, and access auditing.
-- google analytics
-- update a google ads link
-- create a measurement protocol secret
-- segmenting and exporting user populations for analysis and activation.
-- metrics
 - reporting
-- create firebase link
-- setting up and maintaining ga4 account and property structure.
-- manage a specific google ads link
-- list measurement protocol secrets
-- create a measurement protocol secret for server-side tracking
-- delete google ads link
 slug: integrations-and-linking
 tags:
 - Google Analytics

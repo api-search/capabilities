@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- videos
-- video
-- list youtube videos matching criteria
-- list playlists
-- upload a caption track
-- content management
-- delete a video from youtube
-- manage youtube playlists
-- delete a playlist
-- captions
-- delete video
-- manage video captions
-- list youtube playlists
-- upload a new caption track
-- delete a caption track
-- list videos
-- list playlist items
-- create a new playlist
-- delete caption
-- upload a new video to youtube
-- social
-- create playlist
-- list caption tracks for a video
-- add a video to a playlist
-- update caption
-- delete a video
+- remove playlist item
+- playlists
 - update playlist details
+- delete caption
+- list youtube videos matching criteria
+- remove a video from a playlist
+- manage video captions
+- update playlist
+- update a caption track
+- delete a playlist
+- upload caption
+- update video metadata
+- update caption
+- manage youtube videos
 - update video
 - list captions
-- streaming
-- manage items within playlists
-- upload video
-- update video metadata
-- update playlist
-- remove playlist item
-- upload caption
-- youtube
-- delete playlist
-- google
-- update a caption track
-- add playlist item
-- list videos matching criteria
-- upload a new video
-- media
+- create playlist
 - list items in a playlist
-- remove a video from a playlist
-- playlists
-- manage youtube videos
+- content management
+- create a new playlist
+- social
+- video
+- list youtube playlists
+- add playlist item
+- add a video to a playlist
+- delete a video from youtube
+- delete a caption track
+- google
+- youtube
+- list videos
+- streaming
+- list playlists
+- upload a new video
+- delete playlist
+- manage items within playlists
+- upload a new video to youtube
+- media
+- list playlist items
+- upload a new caption track
+- list videos matching criteria
+- delete video
+- delete a video
+- list caption tracks for a video
+- upload a caption track
+- upload video
+- captions
+- videos
+- manage youtube playlists
 slug: content-management
 tags:
 - YouTube

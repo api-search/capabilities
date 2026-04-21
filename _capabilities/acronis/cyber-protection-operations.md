@@ -43,59 +43,59 @@ personas: []
 provider_name: Acronis
 provider_slug: acronis
 search_terms:
-- get task
-- cybersecurity
-- get tenant usages
-- list agents
-- enterprise it admin managing backup agents, policies, and task monitoring
-- msp
-- get agent
-- get tenant details
-- backup and recovery task execution tracking
-- list acronis protection agents registered for a tenant
-- managed service provider admin managing multiple customer tenants, licensing, and usage
-- get usage metrics for a tenant
-- tenant usage monitoring
 - list agents for a tenant
-- protection policy creation and application
-- backup
-- Security Analyst
-- unified tenant, agent, and task management for msps and it admins
-- protection agent management
-- get tenant
-- MSP Administrator
-- create tenant
-- list backup tasks
-- list tasks
-- security professional monitoring edr events and threat response
 - backup task monitoring
-- get details about a specific acronis tenant
-- get current usage metrics for an acronis tenant across all services
-- list tenants
-- get details about a specific acronis backup task
-- list hardware nodes
-- data protection
-- list acronis tenant hierarchy - companies, partners, and customer accounts
-- get details about a specific acronis backup agent including online status
-- list acronis backup tasks with filtering by state, result, policy, and resource
-- monitoring
-- tenant user management
-- tenant hierarchy management
-- individual tenant operations
-- cross-tenant search
-- endpoint management
-- backup agent deployment and management across endpoints
-- list tenant users
-- multi-tier tenant hierarchy and licensing management
-- acronis
-- list hardware nodes managed by acronis for a tenant
-- account management
-- list users in an acronis tenant
-- IT Administrator
+- unified tenant, agent, and task management for msps and it admins
 - search acronis platform for tenants and users by name or email
-- search
+- get task
+- msp
+- list agents
+- get usage metrics for a tenant
+- list acronis protection agents registered for a tenant
+- cross-tenant search
+- list hardware nodes managed by acronis for a tenant
+- backup and recovery task execution tracking
+- get details about a specific acronis backup agent including online status
+- create tenant
+- IT Administrator
+- get tenant
+- get tenant usages
+- backup agent deployment and management across endpoints
+- list tenants
 - list users in a tenant
+- get agent
+- protection agent management
+- list tasks
+- enterprise it admin managing backup agents, policies, and task monitoring
+- list hardware nodes
+- managed service provider admin managing multiple customer tenants, licensing, and usage
+- cybersecurity
+- security professional monitoring edr events and threat response
+- acronis
+- get details about a specific acronis backup task
+- tenant usage monitoring
+- backup
+- list backup tasks
+- MSP Administrator
+- get current usage metrics for an acronis tenant across all services
+- monitoring
+- tenant hierarchy management
+- search
+- endpoint management
+- list acronis tenant hierarchy - companies, partners, and customer accounts
+- Security Analyst
+- individual tenant operations
+- get details about a specific acronis tenant
+- tenant user management
+- multi-tier tenant hierarchy and licensing management
+- list tenant users
 - search tenants and users
+- data protection
+- list users in an acronis tenant
+- list acronis backup tasks with filtering by state, result, policy, and resource
+- get tenant details
+- account management
+- protection policy creation and application
 slug: cyber-protection-operations
 tags:
 - Acronis

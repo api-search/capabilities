@@ -25,42 +25,42 @@ personas: []
 provider_name: AB Tasty
 provider_slug: ab-tasty
 search_terms:
-- quality assurance engineer using remote control api to test experiments
-- Product Manager
-- get visitor flags
-- retrieve feature flag values and metadata for a visitor
-- conversion tracking and experiment measurement
-- ab tasty
-- aggregation
-- feature flags
-- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
-- feature flag evaluation operations
-- manual campaign activation
+- personalization
 - get visitor campaigns
+- progressive feature releases and feature toggles
+- activate campaign
+- activate experiment
+- manual campaign activation
+- retrieve campaign assignments for a visitor based on context
+- retrieve a specific campaign assignment for a visitor
+- get campaign
+- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
+- retrieve feature flag values and metadata for a visitor
+- a/b testing
+- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
+- conversion tracking and experiment measurement
+- Developer
+- server side
 - retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
 - get campaigns
-- evaluate visitor context and retrieve all matching campaign assignments
-- get flags
-- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
 - experimentation
-- activate campaign
-- server side
-- retrieve a specific campaign assignment for a visitor
-- personalization
-- get visitor campaign
-- a/b testing, multivariate testing, and experiment management
-- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
-- manually activate a campaign variation for a visitor
-- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
-- activate experiment
-- a/b testing
-- Developer
+- get flags
+- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
 - get assignment for a specific campaign by id
-- get campaign
+- evaluate visitor context and retrieve all matching campaign assignments
+- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- feature flags
 - backend or frontend developer implementing server-side experiments and feature flags
-- progressive feature releases and feature toggles
 - product manager monitoring experiment assignments and flag rollouts
-- retrieve campaign assignments for a visitor based on context
+- ab tasty
+- quality assurance engineer using remote control api to test experiments
+- Product Manager
+- feature flag evaluation operations
+- get visitor flags
+- aggregation
+- a/b testing, multivariate testing, and experiment management
+- manually activate a campaign variation for a visitor
+- get visitor campaign
 slug: feature-experimentation
 tags:
 - AB Tasty

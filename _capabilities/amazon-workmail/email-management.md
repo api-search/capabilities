@@ -29,40 +29,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- administration
-- workmail organization management.
-- list mobile device access control rules.
-- business communication
-- list users in a workmail organization.
-- list users
-- list groups
-- enterprise
-- email
-- it administration of email infrastructure
-- list email groups.
-- list email distribution groups in an organization.
-- list users in an organization.
-- user provisioning and management.
-- mobile device access control.
-- aws
-- Email Operations
-- list all workmail organizations.
-- group management.
 - calendar
+- workmail organization management.
+- list email distribution groups in an organization.
+- email
+- enterprise
+- list email groups.
+- exchange
+- list organizations
+- IT Administrator
+- list all workmail organizations.
+- create a new workmail user with mailbox.
+- manages workmail infrastructure, user provisioning, and security policies.
+- Email Operations
 - list mobile device access rules
-- enterprise email provisioning and management
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- list groups
 - create user
 - handles day-to-day email user and group management.
-- list organizations
 - create a new email user.
-- exchange
-- create a new workmail user with mailbox.
+- list mobile device access control rules.
+- list users in an organization.
+- mobile device access control.
+- it administration of email infrastructure
+- list users
+- administration
+- group management.
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
 - list all amazon workmail organizations in the account.
-- IT Administrator
-- list mobile device access rules.
-- manages workmail infrastructure, user provisioning, and security policies.
+- list users in a workmail organization.
 - mobile device access control and compliance
+- user provisioning and management.
+- enterprise email provisioning and management
+- aws
+- business communication
+- list mobile device access rules.
 slug: email-management
 tags:
 - AWS

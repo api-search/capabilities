@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- list universes
-- list catalogs
-- list field lists
-- historical data access
-- list field lists for data requests
-- financial data
-- search for securities and instruments
-- get reference data for securities
-- create universe
-- security universe management
-- create data request
-- data catalog browsing
-- list available data catalogs
-- list security universes
-- get reference data
-- get historical data
-- create a security universe for data requests
-- get intraday bars
-- market data
-- get catalog
-- search instruments
-- reference data
-- data distributions
 - financial analytics
-- bloomberg
-- get historical data for securities
-- order management
-- list distributions
-- get intraday bar data
-- portfolio management
-- field list management
+- security universe management
+- data distributions
+- create data request
+- list field lists
 - search fields
-- get data catalog details
-- reference data access
 - get reference data for securities via http api
-- list available bloomberg data catalogs
-- list completed data distributions
-- search available bloomberg data fields
-- get historical end-of-day data
+- order management
+- reference data access
+- portfolio management
+- list universes
 - trading
+- get intraday bars
+- get historical end-of-day data
+- list security universes
+- list available bloomberg data catalogs
+- bloomberg
+- get data catalog details
+- get catalog
+- list field lists for data requests
+- list available data catalogs
+- historical data access
+- list completed data distributions
+- data catalog browsing
+- market data
+- get historical data
+- get historical data for securities
+- search for securities and instruments
 - create a bloomberg data request
+- get reference data for securities
+- get intraday bar data
+- reference data
+- create universe
+- create a security universe for data requests
+- list catalogs
+- financial data
+- list distributions
+- field list management
+- search instruments
+- search available bloomberg data fields
+- get reference data
 slug: market-data-and-analytics
 tags:
 - Bloomberg

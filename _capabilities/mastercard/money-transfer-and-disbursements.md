@@ -37,45 +37,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- digital identity
-- create cross border payment
-- validate account
-- open banking
-- get currency conversion rate
-- disbursements
-- create funding
-- create disbursement
-- create a person-to-person money transfer
-- create a cross-border international payment
-- create a disbursement
-- fraud detection
-- funding transactions
-- create a disbursement to send money to a recipient
-- create a person-to-person transfer
-- credit cards
-- get conversion rate
-- get account info
-- p2p transfers
-- money transfer
-- validate account details before transfer
-- mastercard send
-- create a funding transaction
-- cross-border payment processing
 - verify account eligibility for mastercard send
 - currency conversion rates
-- process a direct service transaction
-- disbursement transactions
-- financial services
-- cross-border
-- verify send account
-- payments
-- create a cross-border payment
-- get currency conversion rate for cross-border transactions
-- mastercard
-- get account information for a send recipient
+- fraud detection
 - process direct transaction
-- create p2p transfer
+- get account info
+- mastercard
 - create a funding transaction via mastercard send
+- create a person-to-person transfer
+- create a person-to-person money transfer
+- credit cards
+- cross-border payment processing
+- create disbursement
+- get currency conversion rate
+- process a direct service transaction
+- disbursements
+- financial services
+- create a cross-border payment
+- create a cross-border international payment
+- disbursement transactions
+- funding transactions
+- create cross border payment
+- create a disbursement to send money to a recipient
+- get currency conversion rate for cross-border transactions
+- cross-border
+- money transfer
+- open banking
+- verify send account
+- get conversion rate
+- create a funding transaction
+- create funding
+- p2p transfers
+- create a disbursement
+- validate account
+- create p2p transfer
+- mastercard send
+- payments
+- validate account details before transfer
+- get account information for a send recipient
+- digital identity
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

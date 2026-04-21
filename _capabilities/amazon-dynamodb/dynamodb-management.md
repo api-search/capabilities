@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- nosql
-- delete table
+- amazon dynamodb describe a dynamodb table
+- update item
+- deleteItem
 - database
-- describe table
 - workflow capability for nosql database operations.
-- amazon dynamodb update an item in a table
+- amazon dynamodb query items in a table or index
+- amazon dynamodb delete an item from a table
+- delete item
+- amazon dynamodb list dynamodb tables
+- get item
+- amazon dynamodb create a dynamodb table
 - putItem
+- update table
+- amazon dynamodb put an item into a table
+- amazon dynamodb get an item from a table
+- key-value
+- deleteTable
+- amazon dynamodb
+- list tables
+- updateItem
+- updateTable
+- amazon dynamodb update an item in a table
+- delete table
+- describeTable
 - engineers managing amazon dynamodb resources on aws.
 - serverless
-- amazon dynamodb put an item into a table
-- get item
-- list tables
-- update table
-- updateItem
-- amazon dynamodb delete an item from a table
-- amazon dynamodb delete a dynamodb table
-- createTable
-- updateTable
-- aws
-- deleteItem
-- delete item
-- amazon dynamodb get an item from a table
-- document store
-- amazon dynamodb describe a dynamodb table
-- query
 - create table
-- update item
-- deleteTable
-- key-value
-- amazon dynamodb list dynamodb tables
-- amazon dynamodb create a dynamodb table
-- describeTable
-- amazon dynamodb
+- describe table
 - put item
-- amazon dynamodb query items in a table or index
+- aws
+- document store
+- createTable
+- query
 - listTables
 - amazon dynamodb update a dynamodb table
 - getItem
 - nosql database operations business domain for amazon dynamodb.
+- amazon dynamodb delete a dynamodb table
+- nosql
 slug: dynamodb-management
 tags:
 - Amazon DynamoDB

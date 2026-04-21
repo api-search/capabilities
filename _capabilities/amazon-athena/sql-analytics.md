@@ -24,35 +24,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list data catalogs
-- list athena workgroups to understand available query isolation environments.
-- create named query
-- list named queries
-- list saved named queries available in an athena workgroup.
-- list tables in an athena database to understand available data.
-- start a sql query execution
-- list databases in an athena data catalog to explore available schemas.
-- serverless
-- check the status of a running or completed athena query execution.
-- list databases
-- list table metadata
-- get query results
-- aws
-- amazon athena
-- list data catalogs registered with athena to discover available data sources.
 - create a named query
+- start query execution
+- sql
+- analytics
+- check the status of a running or completed athena query execution.
+- get query execution
+- list named queries
+- list databases in an athena data catalog to explore available schemas.
+- named query management
+- list table metadata
+- save a sql query as a named query for reuse in athena.
+- list databases
+- start a sql query execution
+- list data catalogs
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list recent query executions in an athena workgroup.
+- amazon athena
+- list tables in an athena database to understand available data.
+- list data catalogs registered with athena to discover available data sources.
+- sql query management
+- list athena workgroups to understand available query isolation environments.
+- serverless
+- download the results of a completed athena sql query.
+- aws
+- create named query
+- get query results
 - list work groups
 - list query executions
-- save a sql query as a named query for reuse in athena.
-- analytics
-- sql
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- download the results of a completed athena sql query.
-- sql query management
-- list recent query executions in an athena workgroup.
-- start query execution
-- get query execution
-- named query management
+- list saved named queries available in an athena workgroup.
 slug: sql-analytics
 tags:
 - Amazon Athena

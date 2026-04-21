@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- key vault
-- encrypt data using a key.
-- cryptography
-- decrypt
-- certificate management.
-- get a certificate.
-- create key
-- security
-- list secrets
-- delete a certificate.
-- delete a key.
-- get secret
-- set a secret.
-- get a secret value.
-- create certificate
-- delete a secret.
-- delete key
-- list secrets in the vault.
-- set a secret value.
-- list secrets.
-- sign
-- delete secret
-- key management
-- create a new cryptographic key.
-- azure
-- certificates
-- set secret
-- individual key management.
-- cloud security
-- list certificates.
-- verify a signature.
-- list cryptographic keys in the vault.
-- create a key.
-- list keys.
-- list keys
-- decrypt data using a key.
-- get key
-- list certificates in the vault.
-- delete certificate
-- get certificate
-- list certificates
-- get a key.
-- key management.
-- sign a digest using a key.
-- verify
-- secret management.
-- individual secret management.
 - encrypt
-- get a secret.
-- secrets management
-- get key details.
 - create a new certificate.
+- sign a digest using a key.
+- get key
+- key management
+- delete key
+- list cryptographic keys in the vault.
+- sign
+- decrypt
+- get a secret value.
+- verify
+- list certificates in the vault.
+- list secrets.
+- azure
+- delete secret
+- create a key.
+- delete a key.
+- secret management.
+- list certificates
+- encrypt data using a key.
+- set secret
+- key management.
+- create certificate
+- get a key.
+- set a secret.
+- verify a signature.
+- list keys
+- cloud security
+- get a certificate.
+- list certificates.
+- key vault
+- security
+- get key details.
+- individual secret management.
+- list secrets in the vault.
+- get a secret.
+- get certificate
+- cryptography
+- decrypt data using a key.
+- list keys.
+- delete certificate
+- certificates
+- get secret
+- individual key management.
+- secrets management
+- create key
+- delete a secret.
+- list secrets
+- certificate management.
+- create a new cryptographic key.
+- set a secret value.
+- delete a certificate.
 slug: secrets-and-keys
 tags:
 - Azure

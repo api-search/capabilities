@@ -17,29 +17,29 @@ personas: []
 provider_name: APIGit
 provider_slug: apigit
 search_terms:
-- apigit
-- governance
-- create a new git-native api repository in apigit.
-- list repositories
-- API Developer
-- list repositories.
-- developer designing and building apis using git-native workflows.
-- documentation
 - api lifecycle
-- engineer using mock servers for frontend/backend parallel development.
-- git
-- Backend Engineer
-- list all api git repositories in apigit.
-- create repository
-- start mock server
 - list api repositories
-- platform
-- api design
-- testing
+- create a new git-native api repository in apigit.
 - start a dynamic mock server from an api definition for development testing.
 - create api repository
+- governance
+- git
+- developer designing and building apis using git-native workflows.
 - create repository.
+- engineer using mock servers for frontend/backend parallel development.
+- platform
+- Backend Engineer
+- apigit
+- list all api git repositories in apigit.
+- list repositories
+- list repositories.
+- start mock server
+- API Developer
+- testing
 - mocking
+- create repository
+- api design
+- documentation
 slug: api-lifecycle-development
 tags:
 - APIGit

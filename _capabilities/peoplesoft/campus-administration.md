@@ -38,42 +38,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve details for a specific student.
-- campus approval requests
-- retrieve pending campus approval requests.
-- crm
-- individual student details
+- admission applications
+- process approval
 - financial and supply chain management.
+- human capital management.
+- class schedule and enrollment data
+- list classes
+- higher education
+- peoplesoft
+- approve, deny, or push back a campus approval request.
+- list students
+- list pending approvals
 - retrieve financial aid award data.
-- hcm
-- retrieve class schedule and enrollment data.
+- list admission applications
+- retrieve pending campus approval requests.
+- campus solutions.
+- retrieve details for a specific student.
 - list financial aid awards
 - retrieve admission applications.
-- get student
-- erp
 - financial aid
-- admissions
-- list admission applications
-- campus solutions.
-- list classes
-- approve, deny, or push back a campus approval request.
-- financial management
-- financial aid awards
 - student records
-- higher education
-- peopletools platform services.
-- process approval
-- individual approval operations
-- enterprise software
-- list pending approvals
-- class schedule and enrollment data
-- human capital management.
-- supply chain management
-- admission applications
-- list students
-- retrieve student records.
+- hcm
 - campus solutions
-- peoplesoft
+- enterprise software
+- campus approval requests
+- crm
+- retrieve class schedule and enrollment data.
+- financial management
+- get student
+- financial aid awards
+- individual student details
+- individual approval operations
+- erp
+- peopletools platform services.
+- admissions
+- retrieve student records.
+- supply chain management
 slug: campus-administration
 tags:
 - PeopleSoft

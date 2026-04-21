@@ -12,8 +12,8 @@ search_terms:
 - aws
 - medical imaging
 - machine learning
-- hipaa
 - dicom
+- hipaa
 slug: amazon-healthimaging-medical-imaging-operations
 tags: []
 tools: []

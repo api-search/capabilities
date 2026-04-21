@@ -9,36 +9,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- describe profiling group
-- list findings reports for a profiling group
-- developer persona.
-- machine learning
-- Platform Engineer
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- get details about a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- list profile times
-- profiling
-- get profile
-- DevOps Engineer
-- list profiling groups
-- create profiling group
-- list profile collection times for a profiling group
-- aws
-- get aggregated profile data
-- devops engineer persona.
-- application performance
-- list profiling groups in the account
 - devops
-- platform engineer persona.
-- amazon
-- get recommendations
 - create a new profiling group
+- get recommendations
+- devops engineer persona.
+- get aggregated profile data
+- Platform Engineer
+- list findings reports
+- developer persona.
+- profiling
+- get optimization recommendations for a profiling group
+- create profiling group
 - post agent profile
 - Developer
-- get optimization recommendations for a profiling group
+- machine learning
+- list profiling groups in the account
+- DevOps Engineer
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- list profiling groups
+- amazon
+- platform engineer persona.
+- list findings reports for a profiling group
+- describe profiling group
+- list profile times
+- get details about a profiling group
+- aws
+- list profile collection times for a profiling group
+- application performance
+- get profile
 - submit profiling agent data
-- list findings reports
 slug: amazon-codeguru-profiler-application-performance
 tags:
 - Amazon

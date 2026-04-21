@@ -21,40 +21,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- list all regions in the apache geode data grid
-- developers using geode as a fast data store for applications
-- execute an oql query against geode regions
-- open source
-- Platform Engineer
-- high-performance in-memory data caching and distribution
-- caching
-- data management
-- in-memory data grid
-- server-side function execution
-- platform engineering
-- execute query
-- apache
-- get region keys
-- list available functions
-- engineers managing the geode cluster infrastructure
-- list all server-side functions available in the cluster
-- in-memory
-- list all geode regions
-- manage in-memory data with regions, queries, and functions
-- data grid
-- execute oql query
-- geode region management
-- list functions
-- distributed systems
-- oql query execution
-- list geode regions
-- list geode functions
-- Application Developer
-- list regions
-- region crud operations, oql queries, and function execution
 - apache geode
+- data grid
 - get all keys stored in a geode region
+- list all server-side functions available in the cluster
+- list all geode regions
+- Platform Engineer
+- manage in-memory data with regions, queries, and functions
+- data management
+- caching
+- oql query execution
+- region crud operations, oql queries, and function execution
+- get region keys
+- in-memory data grid
+- high-performance in-memory data caching and distribution
+- list all regions in the apache geode data grid
+- platform engineering
+- list regions
+- list available functions
+- execute query
+- list functions
+- list geode regions
+- execute oql query
+- developers using geode as a fast data store for applications
+- Application Developer
+- in-memory
 - execute an oql query
+- distributed systems
+- apache
+- server-side function execution
+- execute an oql query against geode regions
+- list geode functions
+- geode region management
+- open source
+- engineers managing the geode cluster infrastructure
 slug: geode-data-management
 tags:
 - Apache Geode

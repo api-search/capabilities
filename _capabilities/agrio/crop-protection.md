@@ -21,39 +21,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- supported crop catalog.
-- ai-powered plant disease diagnosis and crop advisory
-- Agronomist
-- check remaining api credits for plant diagnosis requests.
-- crop protection
-- agriculture
-- plant disease
-- diagnose
-- account credit management.
-- crop advisory
-- check credit balance
-- disease and pest identification from plant images
-- list crops
-- get current credit balance.
-- ai diagnosis
-- diagnose plant disease
-- supported crop types for diagnosis
-- get credit
-- list all supported crop types.
-- diagnose plant diseases and pests from an uploaded image.
-- developers building crop advisory and farm management applications
-- plant health diagnosis.
-- ai
 - submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
+- diagnose
+- check credit balance
+- supported crop catalog.
+- list all crop types supported by agrio's ai diagnosis service.
+- agricultural consultants providing plant health recommendations
+- get current credit balance.
+- ai
+- crop advisory
+- get credit
+- diagnose plant disease
+- agrio
+- Precision Agriculture Developer
+- field specialists diagnosing plant health issues in crops
+- disease and pest identification from plant images
 - pest detection
 - list supported crops
-- credit balance and api usage monitoring
 - Crop Advisor
-- list all crop types supported by agrio's ai diagnosis service.
-- agrio
-- agricultural consultants providing plant health recommendations
-- field specialists diagnosing plant health issues in crops
-- Precision Agriculture Developer
+- plant disease
+- plant health diagnosis.
+- list all supported crop types.
+- credit balance and api usage monitoring
+- ai-powered plant disease diagnosis and crop advisory
+- list crops
+- ai diagnosis
+- developers building crop advisory and farm management applications
+- check remaining api credits for plant diagnosis requests.
+- agriculture
+- diagnose plant diseases and pests from an uploaded image.
+- crop protection
+- account credit management.
+- supported crop types for diagnosis
+- Agronomist
 slug: crop-protection
 tags:
 - Agrio

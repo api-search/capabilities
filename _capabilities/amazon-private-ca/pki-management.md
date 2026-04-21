@@ -33,46 +33,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- list certificate authorities
+- create certificate authority
+- retrieve an issued certificate by arn
+- get details about a specific certificate authority
+- issue certificate
+- Platform Engineer
+- retrieve a certificate
+- get certificate authority details
 - revoke certificate
+- certificate authority
+- revoke an issued certificate
+- certificate lifecycle management
+- revoke a certificate
+- iot
+- issue a new x.509 certificate from a certificate authority
+- private pki infrastructure management workflow
+- tls
+- issue a new certificate
+- create ca
+- certificate management
 - create a new private certificate authority
 - create a new private certificate authority in the ca hierarchy
-- iot
-- get certificate authority details
-- Platform Engineer
-- describe certificate authority
-- Security Engineer
-- create certificate authority
-- security
-- get details about a specific certificate authority
-- retrieve an issued certificate by arn
-- retrieve a certificate
-- list all private certificate authorities
 - individual certificate operations
-- certificate management
-- x.509
-- create ca
-- pki
-- issues certificates for internal services and manages certificate lifecycle
-- aws
-- certificates
-- list cas
-- revoke a certificate
-- certificate authority hierarchy management
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- tls
-- amazon
-- certificate lifecycle management
-- revoke an issued certificate
-- issue a new certificate
-- issue a new x.509 certificate from a certificate authority
-- get certificate
+- security
+- list all private certificate authorities
 - individual certificate authority operations
-- private pki infrastructure management workflow
-- certificate authority
+- get certificate
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- Security Engineer
+- amazon
+- list certificate authorities
+- certificates
+- describe certificate authority
 - describe ca
+- aws
+- issues certificates for internal services and manages certificate lifecycle
+- list cas
+- pki
+- certificate authority hierarchy management
+- x.509
 - list all certificate authorities
-- issue certificate
 slug: pki-management
 tags:
 - Amazon

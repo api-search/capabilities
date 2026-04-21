@@ -33,44 +33,44 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- create a chat completion
-- audio create translation
-- t1
-- generate speech
-- embeddings create
-- get details of a specific model
-- chat completion
-- available models
-- create embeddings
-- list models
-- audio create transcription
-- generate an image
-- images create variation
-- create a variation of an existing image
-- audio create speech
-- chat create completion
-- generate an image from a text prompt using dall-e
-- images create
+- generate audio from text using tts models
+- create embedding
 - translate audio to english text
-- models list
-- transcribe audio to text using whisper
+- create embeddings
+- content generation
+- create image
+- list models
 - ai
+- chat completion
+- generate speech
+- text embeddings
+- generate a conversational response using gpt models
+- generate vector embeddings for text input
+- models list
+- audio create translation
+- available models
+- chat create completion
+- audio create transcription
+- audio create speech
+- text to speech
+- models get
 - edit an existing image with a text prompt
 - large language models
-- generate a conversational response using gpt models
-- generate audio from text using tts models
-- create speech
-- create chat completion
-- images edit
-- content generation
-- text embeddings
-- generate vector embeddings for text input
-- text to speech
+- t1
+- generate an image from a text prompt using dall-e
 - openai
+- create a chat completion
+- embeddings create
+- get details of a specific model
+- create speech
+- generate an image
+- transcribe audio to text using whisper
+- images create variation
+- create chat completion
 - list all available openai models
-- create embedding
-- create image
-- models get
+- images create
+- images edit
+- create a variation of an existing image
 - artificial intelligence
 - image generation
 slug: content-generation

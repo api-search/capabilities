@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- query search analytics data with filters.
 - webmaster
-- inspect a url for index status and rich results.
-- get site
 - delete a sitemap.
-- list sitemaps
-- search console
-- get sitemap details.
-- query search analytics
-- add a site to search console.
-- inspect urls for indexing status.
-- delete a previously submitted sitemap.
-- submit sitemap
-- get details for a specific search console site.
-- add site
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- submit a sitemap.
-- delete sitemap
-- seo
-- list all search console sites for the authenticated user.
-- webmaster tools
-- list all search console sites.
-- manage search console sites.
-- remove a site from search console.
-- list sitemaps for a site.
-- get sitemap
 - manage sitemaps.
-- list sitemaps submitted for a site.
 - analytics
-- delete site
-- query search traffic data with filters and dimensions.
-- submit a sitemap for crawling.
-- google
-- inspect url
-- list sites
-- get details for a specific sitemap.
-- search
 - get details for a specific site.
+- list sitemaps for a site.
+- webmaster tools
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- get sitemap details.
+- delete sitemap
+- query search analytics
+- get details for a specific sitemap.
+- list sites
+- add a site to search console.
+- list sitemaps
+- query search analytics data with filters.
+- inspect a url for index status and rich results.
+- delete site
+- search console
+- inspect url
+- query search traffic data with filters and dimensions.
 - query search traffic data.
+- google
+- submit sitemap
+- list all search console sites.
+- submit a sitemap for crawling.
+- search
+- get sitemap
+- delete a previously submitted sitemap.
+- list sitemaps submitted for a site.
+- manage search console sites.
+- inspect urls for indexing status.
+- submit a sitemap.
+- get site
+- get details for a specific search console site.
+- seo
+- remove a site from search console.
+- list all search console sites for the authenticated user.
+- add site
 slug: seo-management
 tags:
 - Google

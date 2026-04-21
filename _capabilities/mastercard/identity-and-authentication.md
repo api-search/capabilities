@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- digital identity
-- create auth consent
-- open banking
-- get identity intelligence insights for a transaction
-- get account identity insights
-- identity
-- create authentication consent
-- get account insights
-- authentication consent management
-- initiate authentication
-- kyc
-- initiate strong customer authentication
 - submit identity verification as a trust provider
-- verify a consumer identity
-- get transaction identity insights
-- fraud detection
-- identity insights for accounts
-- verify a consumer identity using mastercard id
 - authentication
-- create consent
+- verify a consumer identity using mastercard id
+- fraud detection
+- get consent status
+- authentication consent management
+- mastercard
 - credit cards
-- submit trust verification
-- identity insights for transactions
-- identity verification
-- verify identity
-- verification
-- get identity insights for a transaction
+- get identity intelligence insights for a transaction
+- get authentication consent status
 - financial services
+- identity verification
+- identity
+- initiate authentication
+- get identity insights for a transaction
+- get account identity insights
+- open banking
+- verify a consumer identity
+- create an authentication consent request
+- create authentication consent
+- get transaction identity insights
+- kyc
+- create auth consent
+- verification
+- identity insights for accounts
+- identity insights for transactions
 - payments
 - get identity intelligence insights for an account
-- mastercard
-- get identity insights for an account
 - get transaction insights
-- get consent status
-- get authentication consent status
-- create an authentication consent request
+- get account insights
+- create consent
+- get identity insights for an account
+- submit trust verification
+- digital identity
+- verify identity
+- initiate strong customer authentication
 slug: identity-and-authentication
 tags:
 - Mastercard

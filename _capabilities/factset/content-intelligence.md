@@ -31,39 +31,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get news articles.
 - get filings
-- global filings.
-- get regulatory filings.
-- natural language search.
-- financial data
-- conversational query
-- news
-- content
 - run nlp
-- nlp
-- material event signals.
-- factset
-- streetaccount news.
-- market data
 - investment analytics
+- content
+- get earnings call transcripts.
+- financial
+- global filings.
+- natural language search.
+- streetaccount news.
+- conversational ai query.
+- research
 - get signals
-- get callstreet events
 - portfolio analytics
-- get global regulatory filings.
-- run nlp analysis on text.
+- news
+- get callstreet events
+- get news articles.
 - search answers
+- run nlp analysis on text.
+- market data
 - get signals.
 - get material event signals.
-- get streetaccount news.
-- research
 - signals
-- conversational ai query.
 - search
-- get earnings call transcripts.
-- search for answers.
-- financial
+- get regulatory filings.
+- conversational query
 - get news
+- nlp
+- factset
+- get global regulatory filings.
+- financial data
+- search for answers.
+- get streetaccount news.
+- material event signals.
 slug: content-intelligence
 tags:
 - FactSet

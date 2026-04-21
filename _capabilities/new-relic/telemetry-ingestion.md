@@ -28,33 +28,33 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- analysis
+- devops
 - telemetry
 - send logs
-- send log records to new relic
-- new relic
-- send custom events to a new relic account
-- ops engineering
-- send traces
-- send dimensional metric data to new relic
-- send custom events to new relic
-- send distributed trace spans to new relic
-- send events
-- devops
-- monitoring
-- data ingestion
-- send trace spans
-- analytics
-- send log data
-- send custom events
-- platform
-- send metrics
 - performance
+- ops engineering
+- analytics
+- send metrics
+- send log records to new relic
+- send distributed trace spans to new relic
+- send dimensional metric data to new relic
+- platform
+- send trace spans
+- send custom events to a new relic account
+- data ingestion
+- new relic
+- apm
+- analysis
+- monitoring
 - infrastructure
 - observability
-- send metric data to new relic
+- send log data
+- send custom events
+- send traces
 - send metric data
-- apm
+- send events
+- send metric data to new relic
+- send custom events to new relic
 slug: telemetry-ingestion
 tags:
 - New Relic

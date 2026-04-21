@@ -9,9 +9,9 @@ provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
 - security
-- aws
 - vpn
 - networking
+- aws
 slug: amazon-vpn-capability
 tags: []
 tools: []

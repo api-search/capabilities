@@ -26,41 +26,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
+- workflow management
+- git-driven deployment and infrastructure management
+- Platform Engineer
+- create workflow
+- workflow engine
+- trigger an argo cd application sync from git
+- gitops
 - kubernetes
+- sync an application from git
+- list all argo cd applications with sync and health status
+- list applications
+- complete argo project platform combining workflows and cd for devops teams
+- applications list
+- container-native workflow execution
+- DevOps Engineer
+- container orchestration platform
+- list all workflows
+- argo
+- platform engineering
+- list all argo workflows in a namespace
+- list workflows
+- sync application
+- manages kubernetes platform tools including argo workflows and argo cd
+- list argo cd applications
+- cncf
+- submit a new argo workflow
+- workflows list
+- submit a new workflow
+- uses argo tools for ci/cd and gitops workflows
+- gitops application management
+- progressive delivery
+- workflows create
 - open source
 - ci/cd
-- list all workflows
-- list workflows
-- submit a new workflow
-- list all argo cd applications with sync and health status
-- Platform Engineer
-- applications list
-- sync an application from git
-- argo
-- DevOps Engineer
-- workflow management
-- platform engineering
-- trigger an argo cd application sync from git
 - applications sync
-- list all argo workflows in a namespace
-- git-driven deployment and infrastructure management
-- workflows list
-- progressive delivery
-- uses argo tools for ci/cd and gitops workflows
-- cncf
-- workflow engine
-- complete argo project platform combining workflows and cd for devops teams
-- create workflow
-- container-native workflow execution
-- manages kubernetes platform tools including argo workflows and argo cd
-- gitops application management
-- gitops
-- container orchestration platform
-- sync application
-- list argo cd applications
-- submit a new argo workflow
-- workflows create
-- list applications
 slug: argo-platform
 tags:
 - Argo

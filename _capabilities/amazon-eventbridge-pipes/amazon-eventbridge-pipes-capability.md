@@ -49,36 +49,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- event-driven
-- DescribePipe
-- amazon eventbridge pipes tagresource
-- amazon eventbridge pipes stoppipe
-- operations teams managing amazon eventbridge pipes infrastructure
-- amazon eventbridge pipes listtagsforresource
-- StopPipe
-- UntagResource
-- ListPipes
-- integration
-- amazon eventbridge pipes untagresource
-- serverless
-- amazon eventbridge pipes createpipe
-- amazon web services
-- messaging
-- amazon eventbridge pipes describepipe
-- developers building applications using amazon eventbridge pipes
-- aws
 - amazon eventbridge pipes deletepipe
-- DeletePipe
-- amazon eventbridge pipes listpipes
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- amazon eventbridge pipes updatepipe
-- UpdatePipe
-- point-to-point integration between event producers and consumers
+- event-driven
+- messaging
 - TagResource
+- amazon eventbridge pipes createpipe
+- amazon eventbridge pipes describepipe
+- integration
+- StopPipe
+- UpdatePipe
 - CreatePipe
+- amazon eventbridge pipes updatepipe
 - StartPipe
-- ListTagsForResource
+- amazon eventbridge pipes listtagsforresource
+- DescribePipe
+- serverless
+- UntagResource
+- operations teams managing amazon eventbridge pipes infrastructure
+- developers building applications using amazon eventbridge pipes
+- amazon eventbridge pipes untagresource
+- aws
 - amazon eventbridge pipes startpipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- amazon eventbridge pipes listpipes
+- point-to-point integration between event producers and consumers
+- amazon eventbridge pipes tagresource
+- DeletePipe
+- amazon eventbridge pipes stoppipe
+- ListPipes
+- amazon web services
+- ListTagsForResource
 slug: amazon-eventbridge-pipes-capability
 tags:
 - Amazon Web Services

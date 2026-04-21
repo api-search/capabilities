@@ -8,13 +8,13 @@ personas: []
 provider_name: Airwallex
 provider_slug: airwallex
 search_terms:
+- foreign exchange
+- global
+- cross-border payments
 - fintech
 - embedded finance
-- multi-currency
 - payments
-- foreign exchange
-- cross-border payments
-- global
+- multi-currency
 slug: payments-management
 tags: []
 tools: []

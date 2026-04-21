@@ -22,39 +22,39 @@ provider_name: Actor Model
 provider_slug: actor-model
 search_terms:
 - supervision
-- Platform Engineer
-- list actors
-- send message
 - Distributed Systems Developer
-- get system health
-- designs concurrent, fault-tolerant systems using actor model patterns
-- spawn actor
-- list supervisors
-- Site Reliability Engineer
-- get actor system health including throughput, error rate, and dead letter count
-- list all cluster nodes with their status, roles, and actor counts
-- system health status
-- spawn a new actor
-- list cluster members
-- get details of a specific actor including mailbox size and restart count
-- distributed systems
-- actor model
-- distributed cluster management, sharding, and fault tolerance
-- send a typed message to an actor's mailbox for asynchronous processing
-- monitors actor system health, throughput, and failure recovery
-- concurrency
-- list all active actors
-- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
-- get health
 - builds and operates distributed platforms using actor model frameworks like akka or orleans
-- inspect pending messages in an actor's mailbox for debugging
-- inspect mailbox
-- concurrent computation using actors, message passing, and isolation
-- get actor
-- list all actors in the system filtered by status
-- actor lifecycle management
+- Platform Engineer
 - list supervisors with their strategies and child actor counts
+- send message
+- list actors
+- spawn a new actor
+- get details of a specific actor including mailbox size and restart count
+- send a typed message to an actor's mailbox for asynchronous processing
+- distributed cluster management, sharding, and fault tolerance
+- list all active actors
+- list all cluster nodes with their status, roles, and actor counts
 - cluster management
+- monitors actor system health, throughput, and failure recovery
+- concurrent computation using actors, message passing, and isolation
+- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
+- actor model
+- system health status
+- inspect mailbox
+- get health
+- get system health
+- inspect pending messages in an actor's mailbox for debugging
+- get actor system health including throughput, error rate, and dead letter count
+- list supervisors
+- list all actors in the system filtered by status
+- concurrency
+- list cluster members
+- get actor
+- distributed systems
+- designs concurrent, fault-tolerant systems using actor model patterns
+- actor lifecycle management
+- spawn actor
+- Site Reliability Engineer
 slug: actor-system-management
 tags:
 - Actor Model

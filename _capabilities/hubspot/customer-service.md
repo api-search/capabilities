@@ -33,43 +33,43 @@ provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
 - customer service
-- contact lookup
-- search tickets with filters
-- list associations for a crm object
-- commerce
-- create a new support ticket
-- get ticket
-- conversations
-- crm
-- archive ticket
-- create association
-- content
-- hubspot
-- list tickets
-- associate a ticket with a contact or company
-- look up a contact for ticket context
-- get contact
-- email marketing
-- sales
-- search tickets
-- individual ticket
-- list all support tickets
-- update a support ticket
-- service
-- support
-- list associations
-- analytics
-- search contacts
-- archive a support ticket
-- create ticket
-- get a support ticket by id
 - support tickets
-- marketing
-- search contacts to find the customer
-- marketing automation
-- tickets
-- operations
 - update ticket
+- get a support ticket by id
+- support
+- search contacts to find the customer
+- associate a ticket with a contact or company
+- analytics
+- search tickets with filters
+- search contacts
+- list associations for a crm object
+- content
+- archive ticket
+- tickets
+- list tickets
+- contact lookup
+- hubspot
+- create a new support ticket
+- service
+- update a support ticket
+- operations
+- conversations
+- commerce
+- list associations
+- create ticket
+- crm
+- search tickets
+- create association
+- get ticket
+- sales
+- marketing
+- marketing automation
+- individual ticket
+- look up a contact for ticket context
+- email marketing
+- list all support tickets
+- archive a support ticket
+- get contact
 slug: customer-service
 tags:
 - HubSpot

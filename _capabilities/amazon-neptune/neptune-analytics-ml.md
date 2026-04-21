@@ -18,42 +18,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- create a neptune ml inference endpoint for predictions
-- database
-- machine learning
-- list neptune ml graph neural network training jobs
-- property graph
-- create ml inference endpoint
-- list ml jobs
-- graph database management, querying, and data streaming
-- sparql
-- create a neptune analytics graph for graph analytics workloads
-- manages neptune clusters, instances, and infrastructure
-- amazon neptune
-- ML Engineer
-- Data Scientist
-- create analytics graph
-- graph analytics
-- list ml training jobs
-- performs graph analytics and builds ml models on graph data
-- Graph Developer
-- aws
-- list analytics graphs
-- data streaming
-- bulk loading
 - graph analytics, vector search, and ml model training and inference
-- list neptune analytics graphs for in-memory graph analysis
 - writes gremlin, sparql, and opencypher queries against neptune
-- graph database
-- Graph Database Administrator
-- gremlin
-- trains and deploys neptune ml graph neural network models
-- list neptune ml training jobs
-- neptune analytics graph management
-- list neptune analytics graphs
-- rdf
-- neptune
+- list neptune analytics graphs for in-memory graph analysis
+- database
 - neptune ml training job management
+- create a neptune ml inference endpoint for predictions
+- list neptune ml training jobs
+- machine learning
+- graph analytics
+- manages neptune clusters, instances, and infrastructure
+- rdf
+- property graph
+- list neptune analytics graphs
+- Graph Database Administrator
+- bulk loading
+- trains and deploys neptune ml graph neural network models
+- performs graph analytics and builds ml models on graph data
+- data streaming
+- Graph Developer
+- Data Scientist
+- list ml jobs
+- list analytics graphs
+- graph database management, querying, and data streaming
+- graph database
+- create a neptune analytics graph for graph analytics workloads
+- gremlin
+- neptune
+- sparql
+- create ml inference endpoint
+- aws
+- ML Engineer
+- neptune analytics graph management
+- list neptune ml graph neural network training jobs
+- amazon neptune
+- create analytics graph
+- list ml training jobs
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

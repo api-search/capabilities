@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- copy a sheet to another spreadsheet
-- get values
-- clear values from a spreadsheet range
-- batch update spreadsheet
-- get developer metadata by id
-- get spreadsheet details
-- create a new google sheets spreadsheet
-- clear values from multiple ranges
+- read values from a spreadsheet range
+- batch update values
 - google workspace
-- data management
-- search developer metadata matching filters
-- append rows of data to a spreadsheet
-- read values from multiple ranges at once
-- search developer metadata
+- write values to multiple ranges at once
+- spreadsheet lifecycle operations
 - cell value read and write operations
+- append values
+- clear values from a range
+- search developer metadata
+- clear values from a spreadsheet range
+- get spreadsheet
+- data management
 - batch clear values
 - single spreadsheet operations
-- get spreadsheet details by id
-- write values to multiple ranges at once
-- copy sheet
-- google sheets
-- write values to a range
 - append values to a range
-- spreadsheet lifecycle operations
-- spreadsheets
-- read values from a spreadsheet range
+- append rows of data to a spreadsheet
 - update values
-- get spreadsheet
-- clear values
-- clear values from a range
-- batch update values
-- append values
-- read values from a range
-- productivity
+- batch update spreadsheet
+- create a new google sheets spreadsheet
 - apply batch updates to a spreadsheet
-- create spreadsheet
-- write values to a spreadsheet range
-- create a new spreadsheet
-- batch get values
-- get developer metadata
 - automation
+- google sheets
+- create spreadsheet
+- productivity
+- clear values
+- batch get values
+- search developer metadata matching filters
+- write values to a range
+- clear values from multiple ranges
+- create a new spreadsheet
+- read values from multiple ranges at once
+- copy sheet
+- get developer metadata by id
+- read values from a range
+- write values to a spreadsheet range
+- spreadsheets
+- get spreadsheet details by id
+- get spreadsheet details
+- copy a sheet to another spreadsheet
+- get developer metadata
+- get values
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

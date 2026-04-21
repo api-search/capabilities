@@ -31,44 +31,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- open source
-- production staff responsible for monitoring and managing render farm operations
-- standards
-- render wrangler
-- get details for a specific render job
+- vfx pipeline
+- linux foundation
+- vfx
 - opencue
 - list render jobs
-- list jobs
-- pipeline td
-- list render jobs for a show
-- visual effects
-- list render hosts
-- animation
 - rendering
-- list shows
-- monitoring and management of distributed render farm resources and jobs
-- vfx pipeline
-- academy software foundation
-- list and manage render shows (productions)
-- get job
-- list render jobs for a specific show with optional state filtering
-- technical director building and maintaining vfx production pipeline tools
-- list hosts
 - render farm
-- list all active shows in the render farm
+- get details for a specific render job
+- production staff responsible for monitoring and managing render farm operations
+- list render hosts
+- list hosts
+- academy software foundation
 - film
-- list and manage render jobs
-- vfx
-- list and manage render hosts
 - color management
-- list all render host machines
-- get detailed status and frame counts for a specific render job
-- linux foundation
-- get render job
 - monitor and manage render jobs, hosts, and shows using opencue
-- list all active shows (productions) in the render farm
 - list all render host machines and their current utilization
+- list jobs
+- get job
+- list all render host machines
+- list all active shows (productions) in the render farm
+- list render jobs for a specific show with optional state filtering
+- list all active shows in the render farm
+- list and manage render shows (productions)
+- technical director building and maintaining vfx production pipeline tools
+- list and manage render hosts
+- animation
+- list and manage render jobs
+- get render job
+- monitoring and management of distributed render farm resources and jobs
 - get or kill a specific render job
+- standards
+- list render jobs for a show
+- get detailed status and frame counts for a specific render job
+- visual effects
+- open source
+- pipeline td
+- render wrangler
+- list shows
 slug: render-farm-management
 tags:
 - Academy Software Foundation

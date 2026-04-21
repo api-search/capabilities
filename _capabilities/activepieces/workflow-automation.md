@@ -29,48 +29,48 @@ personas: []
 provider_name: Activepieces
 provider_slug: activepieces
 search_terms:
-- execution monitoring
-- open source
-- list execution history for automation flows
+- creates automation workflows using the visual builder
+- list all automation flows in the activepieces project
+- create flow
+- get details of a specific flow execution run
+- list all activepieces projects
+- Developer
+- delete flow
+- project, user, and organization administration
 - project management
-- builds custom integrations using the api and typescript pieces
-- automation flow management
-- get flow run
-- workflow
 - integration
 - Operations Engineer
-- get flow
-- list all activepieces projects
-- activepieces
-- app connection management
-- list app connections
-- list flows
-- third-party app connections and piece management
-- project, user, and organization administration
-- list automation flows
-- create a new automation flow
-- delete an automation flow
-- list all app connections available in the project
-- get details of a specific flow execution run
-- create flow
-- no-code
-- workflow automation and flow orchestration
-- delete flow
+- automation
+- automation flow management
 - list flow execution runs
-- list flow runs
 - monitors flow execution, manages connections, troubleshoots failures
-- list projects
-- No Code Builder
-- Developer
-- list all automation flows in the activepieces project
+- workflow
+- ai agents
+- list automation flows
+- build and monitor automation flows, manage connections, debug executions
+- list flows
+- list flow runs
+- list execution history for automation flows
 - mcp
 - list connections
-- build and monitor automation flows, manage connections, debug executions
-- creates automation workflows using the visual builder
+- list projects
+- get flow
+- activepieces
+- list all app connections available in the project
+- create a new automation flow
 - retrieve a specific automation flow by id
-- ai agents
 - create a new automation flow in activepieces
-- automation
+- delete an automation flow
+- builds custom integrations using the api and typescript pieces
+- get flow run
+- no-code
+- execution monitoring
+- list app connections
+- workflow automation and flow orchestration
+- third-party app connections and piece management
+- open source
+- app connection management
+- No Code Builder
 slug: workflow-automation
 tags:
 - Activepieces

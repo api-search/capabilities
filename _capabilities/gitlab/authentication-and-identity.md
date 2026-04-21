@@ -34,37 +34,37 @@ provider_name: GitLab
 provider_slug: gitlab
 search_terms:
 - get information about the current oauth access token including scopes and expiration.
-- initiate the device authorization grant flow for input-constrained devices.
-- identity
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- software development
-- device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow.
-- tokens
-- revoke an existing oauth access or refresh token.
-- get profile information about the currently authenticated user.
-- authorize oauth
-- authentication
-- oauth
 - token revocation.
-- oauth token exchange and creation.
-- get user info
-- oauth 2.0 authorization code flow initiation.
-- authorize device
-- token introspection and validation.
-- source control
-- authenticated user profile information.
-- gitlab
 - revoke token
-- get information about the current access token.
-- code
-- platform
-- get profile information about the authenticated user.
-- get token info
-- exchange an authorization code, device code, or refresh token for an access token.
+- initiate the device authorization grant flow for input-constrained devices.
+- oauth token exchange and creation.
+- get profile information about the currently authenticated user.
+- oauth
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- device authorization grant flow for input-constrained devices.
+- oauth 2.0 authorization code flow initiation.
+- authorize oauth
 - revoke an oauth access or refresh token.
+- software development
+- token introspection and validation.
+- get information about the current access token.
+- platform
+- authorize device
+- tokens
+- identity
+- revoke an existing oauth access or refresh token.
+- exchange an authorization code, device code, or refresh token for an access token.
+- get profile information about the authenticated user.
+- gitlab
+- authenticated user profile information.
+- get token info
 - initiate the device authorization grant flow.
+- code
+- source control
+- get user info
 - exchange token
+- authentication
+- initiate the oauth 2.0 authorization code flow.
 slug: authentication-and-identity
 tags:
 - Gitlab

@@ -45,54 +45,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- fetch warehouse
-- list warehouses
-- database
-- suspend a running service
-- execute alert
-- get service status
-- create a service
-- compute pool management
-- list services
-- create a monitoring alert
-- create an alert
-- warehouse management
-- list compute pools
-- create compute pool
-- resume a suspended service
-- data warehousing
-- data lakes
-- container service management
-- containers
-- data sharing
-- delete warehouse
-- create a virtual warehouse
-- execute an alert
-- create alert
-- create a compute pool
-- create a container service
-- snowflake
-- suspend service
 - list image repositories
 - list alerts
-- fetch warehouse details
-- create service
-- sql
-- infrastructure
-- compute
-- list monitoring alerts
-- create image repository
 - alert management
-- create warehouse
-- list virtual warehouses
+- create a service
 - get service logs
-- fetch service logs
-- list container services
-- create a warehouse
+- suspend a running service
+- data warehousing
+- warehouse management
+- fetch warehouse
+- create a container service
+- database
+- sql
+- list monitoring alerts
+- containers
+- snowflake
+- list compute pools
+- create alert
 - fetch service status
-- delete a warehouse
-- create an image repository
+- list virtual warehouses
+- resume a suspended service
+- create a monitoring alert
+- list services
+- compute
+- fetch warehouse details
+- compute pool management
 - resume service
+- create warehouse
+- data lakes
+- execute an alert
+- create image repository
+- list container services
+- create compute pool
+- list warehouses
+- delete warehouse
+- infrastructure
+- get service status
+- container service management
+- execute alert
+- create a virtual warehouse
+- create an image repository
+- create a compute pool
+- create service
+- delete a warehouse
+- create an alert
+- suspend service
+- data sharing
+- fetch service logs
+- create a warehouse
 slug: compute-and-services
 tags:
 - Snowflake

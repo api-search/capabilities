@@ -46,76 +46,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- get detailed information about a specific model.
-- get rows
-- create repositories
-- list and search ml models on the hugging face hub.
-- search rows in a dataset
-- manage models on the hub
-- get detailed information about a specific dataset.
-- get model information
-- models
-- data management
-- get model
-- create repo
-- get dataset splits
-- manage spaces on the hub
-- list models
-- list and search datasets
-- delete repo
-- search dataset
-- list all available model tags grouped by type.
-- get statistical information about a dataset split.
-- manage datasets on the hub
-- list and search spaces on the hub.
-- list and search models
-- get dataset information
-- create a new model, dataset, or space repository on the hub.
-- update repo settings
-- list model tags
-- get the list of splits for a dataset.
-- list spaces
-- preview dataset rows
 - get rows from a dataset split with pagination.
-- list and search datasets on the hub.
-- get detailed information about a specific space.
-- datasets
-- get dataset rows
-- get rows from a dataset
-- search dataset rows
-- user information
-- get model revision
-- get dataset details
-- get dataset statistics
-- get model details
-- hugging face
-- get size information for a dataset.
-- get space
-- create a new repository
-- get dataset
-- whoami
-- list all available dataset tags grouped by type.
-- list dataset tags
-- filter dataset rows using a condition.
-- check dataset validity
-- get croissant metadata
-- get model information at a specific revision or branch.
-- update settings for a repository.
-- check if a dataset is valid and available on the hub.
-- get the first rows of a dataset split for preview.
-- get dataset size
-- hub
-- get croissant metadata for a dataset.
-- delete a repository from the hub.
-- list datasets
-- search for rows matching a query in a dataset.
-- filter dataset
-- get authenticated user info
 - list and search spaces
-- get dataset parquet
+- user information
+- search dataset
+- get croissant metadata
+- create repositories
+- get model details
+- get model revision
+- get dataset statistics
+- list all available model tags grouped by type.
+- list model tags
+- get authenticated user info
+- list models
+- models
+- manage models on the hub
+- hugging face
+- data management
+- list and search models
+- get dataset details
+- list and search ml models on the hugging face hub.
+- delete a repository from the hub.
+- get the list of splits for a dataset.
+- get model information at a specific revision or branch.
+- get detailed information about a specific model.
+- get detailed information about a specific dataset.
 - get information about the authenticated user.
-- search rows
+- get dataset parquet
+- search for rows matching a query in a dataset.
+- search rows in a dataset
+- get model information
+- manage spaces on the hub
+- get the first rows of a dataset split for preview.
+- get detailed information about a specific space.
+- get dataset rows
+- get rows
+- create a new model, dataset, or space repository on the hub.
+- filter dataset rows using a condition.
+- get statistical information about a dataset split.
 - get parquet file urls for a dataset.
+- preview dataset rows
+- get dataset splits
+- check if a dataset is valid and available on the hub.
+- update repo settings
+- search dataset rows
+- get croissant metadata for a dataset.
+- get space
+- update settings for a repository.
+- create a new repository
+- create repo
+- datasets
+- search rows
+- list and search datasets on the hub.
+- list datasets
+- list dataset tags
+- check dataset validity
+- manage datasets on the hub
+- list all available dataset tags grouped by type.
+- hub
+- list and search datasets
+- get dataset size
+- get dataset
+- delete repo
+- list spaces
+- get model
+- get size information for a dataset.
+- list and search spaces on the hub.
+- whoami
+- get rows from a dataset
+- filter dataset
+- get dataset information
 slug: hub-and-data-management
 tags:
 - Hugging Face

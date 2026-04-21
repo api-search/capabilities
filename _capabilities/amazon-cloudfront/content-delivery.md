@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon CloudFront
 provider_slug: amazon-cloudfront
 search_terms:
+- cloudfront
 - aws
-- amazon web services
+- Platform Engineer
 - cdn
 - content delivery
-- Platform Engineer
 - amazon cloudfront
 - edge
-- cloudfront
+- amazon web services
 slug: content-delivery
 tags:
 - Amazon Web Services

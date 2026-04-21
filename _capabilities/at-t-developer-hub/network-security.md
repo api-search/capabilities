@@ -22,46 +22,46 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- retrieve sim swap date
-- IoT Engineer
-- at&t
-- get the exact date and time of the most recent sim swap for a phone number
-- sim swap date retrieval
-- check sim swap
-- security
-- Identity Developer
-- network-based security signals for fraud detection and identity verification
-- Security Developer
-- device status
-- phone number verification via network
-- sim swap
-- verify phone number
-- developer building fraud prevention and identity verification using network signals
-- edge computing
-- camara
-- number verify
-- 5g network quality monitoring and on-demand qos enhancement
-- sim swap fraud detection
-- authentication
-- App Developer
-- check if an at&t subscriber's sim card has been swapped recently to detect fraud
-- silently verify that a mobile device is associated with a phone number using the at&t network
-- fraud prevention
-- network apis
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- check if a sim card has been swapped recently
-- mobile network-based authentication without otp
-- 5g
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- connectivity
-- silently verify device phone number
-- telecommunications
-- sim swap check
-- mobile or web developer building connectivity-aware applications
 - get date of most recent sim swap
-- network-based fraud prevention and authentication using sim swap and number verification
-- sim swap get date
+- 5g
+- get the exact date and time of the most recent sim swap for a phone number
+- camara
+- edge computing
+- connectivity
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- network-based security signals for fraud detection and identity verification
+- Identity Developer
+- 5g network quality monitoring and on-demand qos enhancement
+- sim swap date retrieval
+- telecommunications
+- developer building fraud prevention and identity verification using network signals
+- IoT Engineer
+- fraud prevention
+- Security Developer
+- at&t
+- retrieve sim swap date
+- mobile network-based authentication without otp
+- security
+- verify phone number
+- sim swap check
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- phone number verification via network
+- App Developer
+- check sim swap
 - developer implementing passwordless or frictionless mobile authentication
+- network-based fraud prevention and authentication using sim swap and number verification
+- check if an at&t subscriber's sim card has been swapped recently to detect fraud
+- sim swap
+- sim swap fraud detection
+- sim swap get date
+- device status
+- silently verify that a mobile device is associated with a phone number using the at&t network
+- authentication
+- mobile or web developer building connectivity-aware applications
+- number verify
+- check if a sim card has been swapped recently
+- network apis
+- silently verify device phone number
 slug: network-security
 tags:
 - AT&T

@@ -14,26 +14,26 @@ provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
 - management
-- list big data pools
-- list sqlpool resources
-- list all resources
-- big data
-- etl
-- cloud
-- list sql pools
-- azure
-- list pipelines
-- list
-- analytics
-- list workspaces
 - sql
-- resource management
-- data warehouse
-- list pipeline resources
-- list bigdatapool resources
-- apache spark
-- list workspace resources
+- analytics
 - azure resource management
+- azure
+- list bigdatapool resources
+- resource management
+- list workspace resources
+- list pipelines
+- big data
+- list sqlpool resources
+- list workspaces
+- list sql pools
+- list big data pools
+- etl
+- list
+- list all resources
+- list pipeline resources
+- cloud
+- apache spark
+- data warehouse
 slug: azure-synapse-management
 tags:
 - Azure

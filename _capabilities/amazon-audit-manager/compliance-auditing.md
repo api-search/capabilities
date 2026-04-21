@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- list controls
-- create a new assessment
-- list assessment reports
-- get settings
-- list available frameworks
-- list generated assessment reports for compliance documentation.
-- risk management
-- list assessments
-- create a custom compliance control for use in frameworks and assessments.
-- generate a compliance assessment report from collected evidence.
-- audit
-- get assessment
 - compliance framework management
-- create assessment report
+- list available frameworks
+- list controls
 - create a new compliance assessment using a regulatory framework.
-- list all assessments
-- aws
+- risk management
+- create control
+- update settings
 - list compliance controls available for building assessments.
-- create assessment
+- update audit manager settings including sns notifications and default report destination.
+- get complete details of a compliance assessment including control status.
+- amazon audit manager
+- list all assessments
+- list assessment reports
+- generate a compliance assessment report from collected evidence.
 - compliance
+- create assessment
+- create assessment report
+- compliance assessment management
+- get assessment
 - list all compliance assessments to understand current audit coverage.
 - get audit manager account settings including default destinations and process owners.
-- update settings
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- amazon audit manager
-- get complete details of a compliance assessment including control status.
-- compliance assessment management
-- update audit manager settings including sns notifications and default report destination.
+- audit
 - list frameworks
-- create control
+- list generated assessment reports for compliance documentation.
+- aws
+- create a new assessment
+- get settings
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- create a custom compliance control for use in frameworks and assessments.
+- list assessments
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

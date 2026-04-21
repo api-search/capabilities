@@ -41,55 +41,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- retrieve message batch
-- delete message batch
-- get batch
-- machine learning
-- list all message batches.
-- conversational ai
 - list available claude models.
 - delete a completed batch.
+- delete message batch
+- get completed batch results.
+- count message tokens.
+- create message batch
+- conversational ai
+- create message
+- generative ai
 - message operations.
-- get model
-- create a batch of message requests.
-- chatbot
-- batch management.
-- create a message batch.
+- natural language processing
+- create batch
+- model discovery.
 - list batches
 - list models
-- messaging
-- count message tokens
-- create message
-- count message tokens.
-- list message batches.
-- cancel an in-progress batch.
-- get batch status.
-- create a message.
-- delete a batch.
-- anthropic
-- list available models.
-- send a message to claude and receive a response.
-- list message batches
-- model discovery.
-- individual batch management.
 - ai
-- claude
-- get completed batch results.
-- large language models
-- get message batch status and details.
+- cancel an in-progress batch.
 - cancel message batch
 - count tokens in a message.
-- count tokens
-- token counting.
-- delete batch
-- retrieve message batch results
-- create batch
+- messaging
+- individual batch management.
+- list message batches.
+- machine learning
+- anthropic
+- count message tokens
+- list message batches
+- claude
+- large language models
+- get batch status.
+- get batch
+- create a message.
+- create a message batch.
 - model details.
-- generative ai
-- natural language processing
+- create a batch of message requests.
+- get message batch status and details.
+- retrieve message batch results
+- batch management.
+- chatbot
+- count tokens
+- list all message batches.
+- delete a batch.
+- list available models.
 - get model metadata.
 - artificial intelligence
-- create message batch
+- delete batch
+- get model
+- token counting.
+- retrieve message batch
+- send a message to claude and receive a response.
 slug: ai-messaging
 tags:
 - Anthropic

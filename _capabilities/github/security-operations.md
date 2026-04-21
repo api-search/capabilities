@@ -57,75 +57,75 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- list analyses
-- get a secret scanning alert
-- vulnerability management
-- get dependabot alert
-- get code scanning alert
-- t1
-- upload sarif
-- individual code scanning alert
-- updateSecretScanningAlert
-- update code scanning alert
-- code scanning analyses
-- list secret scanning locations
-- security
-- github
-- software development
-- vulnerability alert settings
-- upload sarif analysis data
-- get a code scanning analysis
-- list locations for a secret scanning alert
-- update a code scanning alert
-- update default setup
-- get code scanning default setup configuration
-- listDependabotAlertsForRepository
-- get code scanning analysis
-- list code scanning alerts for a repository
-- get a code scanning alert
-- dependabot
-- disable vulnerability alerts
-- listCodeScanningAlertsForRepository
-- enable vulnerability alerts
-- pipelines
-- list code scanning analyses
-- list dependabot secrets
-- check if vulnerability alerts are enabled
-- update a secret scanning alert
-- update code scanning default setup
-- dependabot alert management
-- get a dependabot alert
-- secret scanning
-- check vulnerability alerts
-- getDependabotAlert
-- list dependabot alerts
-- code scanning
-- getCodeScanningAlert
-- individual secret scanning alert
-- update a code scanning alert (dismiss, reopen)
-- source control
-- update dependabot alert
-- code scanning alert management
-- update a dependabot alert
-- enableVulnerabilityAlerts
-- code
-- platform
-- getSecretScanningAlert
 - listCodeScanningAnalysesForRepository
-- get default setup
-- update a dependabot alert (dismiss, reopen)
+- list code scanning alerts for a repository
+- check vulnerability alerts
+- listDependabotAlertsForRepository
+- update secret scanning alert
+- update default setup
+- getCodeScanningAlert
+- individual dependabot alert
+- github
 - list code scanning alerts
-- list secret scanning alerts
-- update a secret scanning alert (resolve, reopen)
+- individual secret scanning alert
+- get a secret scanning alert
+- code scanning
+- list analyses
+- get a dependabot alert
+- checkIfVulnerabilityAlertsAreEnabledForRepository
+- get code scanning alert
+- update a dependabot alert (dismiss, reopen)
+- update code scanning default setup
+- list locations for a secret scanning alert
+- update code scanning alert
+- upload sarif analysis data
+- software development
+- check vulnerability alert status
+- list code scanning analyses
+- individual code scanning alert
+- get a code scanning analysis
+- get dependabot alert
+- list dependabot secrets
+- updateSecretScanningAlert
+- update a code scanning alert
+- get code scanning default setup configuration
+- platform
 - listSecretScanningAlertsForRepository
 - updateCodeScanningAlert
-- checkIfVulnerabilityAlertsAreEnabledForRepository
-- check vulnerability alert status
-- get secret scanning alert
-- individual dependabot alert
-- secret scanning alert management
-- update secret scanning alert
+- t1
 - updateDependabotAlert
+- disable vulnerability alerts
+- secret scanning
+- get secret scanning alert
+- enableVulnerabilityAlerts
+- security
+- listCodeScanningAlertsForRepository
+- vulnerability management
+- getDependabotAlert
+- update a code scanning alert (dismiss, reopen)
+- vulnerability alert settings
+- secret scanning alert management
+- get code scanning analysis
+- update a secret scanning alert (resolve, reopen)
+- list dependabot alerts
+- enable vulnerability alerts
+- get a code scanning alert
+- code
+- source control
+- code scanning alert management
+- list secret scanning locations
+- code scanning analyses
+- update dependabot alert
+- list secret scanning alerts
+- update a dependabot alert
+- getSecretScanningAlert
+- upload sarif
+- get default setup
+- dependabot
+- update a secret scanning alert
+- dependabot alert management
+- check if vulnerability alerts are enabled
+- pipelines
 slug: security-operations
 tags:
 - GitHub

@@ -22,46 +22,46 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list all environments (e.g., dev, staging, prod) in the organization.
-- monetization
-- list environments
-- manage api developers.
-- list hub apis
-- list api products
-- list all apis catalogued in apigee api hub for discovery and governance.
-- engineer managing api proxies, deployments, and policies in apigee.
-- list api proxies.
-- api management
-- manage api products.
-- developer portal
-- list proxies
-- enterprise
-- api gateway
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list all api products packaged for developer consumption.
-- hybrid
-- apigee
-- api lifecycle
-- list api products.
-- Platform Architect
-- api hub
-- microservices
-- manage api proxies.
-- list all api proxies in an apigee organization.
-- list api proxies
-- API Governance Lead
-- analytics
-- list developers
-- integrations
-- api governance
-- list developers.
-- API Product Manager
 - google cloud
+- list api products
+- API Governance Lead
+- api gateway
+- api lifecycle
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list all apis catalogued in apigee api hub for discovery and governance.
+- Platform Architect
+- engineer managing api proxies, deployments, and policies in apigee.
+- analytics
+- api hub
+- enterprise
 - API Platform Engineer
-- architect overseeing api platform strategy and governance across the organization.
+- list all api products packaged for developer consumption.
+- list api proxies.
+- list all environments (e.g., dev, staging, prod) in the organization.
+- list api products.
+- developer portal
+- list all api proxies in an apigee organization.
+- API Product Manager
+- list hub apis
+- list api proxies
+- api management
+- hybrid
+- manage api products.
+- api governance
 - list all registered api developers in the organization.
+- manage api proxies.
+- manage api developers.
+- apigee
+- list developers
+- monetization
+- list developers.
 - manager packaging api products and managing developer relationships.
+- integrations
+- microservices
+- list environments
+- architect overseeing api platform strategy and governance across the organization.
 - list products
+- list proxies
 slug: api-lifecycle-management
 tags:
 - Apigee

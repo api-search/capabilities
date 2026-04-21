@@ -29,47 +29,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- list rooms
-- open source
-- apache openmeetings
-- list session recordings
-- web conferencing
-- create room
-- list users
-- list public rooms
-- list groups
-- get room hash
-- get upcoming meetings
-- list upcoming
-- create a new conference room
-- close room
-- get recordings by type
-- apache
-- session recordings
-- video conferencing
-- unified workflow for managing conferencing sessions
-- authenticate a user to openmeetings
-- manages users, groups, and system health
-- collaboration
-- Meeting Organizer
-- manages conference rooms, invites participants, and handles recordings
-- create a new room
-- check system health status
+- generate a secure room access hash
 - conferencing
-- list all user groups
-- close a conference room
+- list public rooms
 - check health
 - list all registered users
-- list recordings
-- login
-- get upcoming calendar meetings
-- user management
-- conference room management
+- create room
+- get upcoming meetings
+- unified workflow for managing conferencing sessions
+- video conferencing
+- check system health status
+- authenticate a user to openmeetings
+- Meeting Organizer
+- list all user groups
+- list groups
+- session recordings
+- close room
+- get recordings by type
+- list session recordings
+- list users
+- apache openmeetings
 - calendar and scheduling
-- System Administrator
-- generate a secure room access hash
-- whiteboard
+- manages users, groups, and system health
 - list all public conference rooms
+- create a new conference room
+- manages conference rooms, invites participants, and handles recordings
+- conference room management
+- get upcoming calendar meetings
+- web conferencing
+- login
+- close a conference room
+- user management
+- list recordings
+- list upcoming
+- collaboration
+- create a new room
+- System Administrator
+- whiteboard
+- apache
+- open source
+- get room hash
+- list rooms
 slug: conferencing-workflow
 tags:
 - Apache OpenMeetings

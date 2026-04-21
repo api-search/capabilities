@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- nosql
-- create a new dynamodb table.
-- delete table
-- scan a table.
-- put or delete multiple items in batch.
-- database
-- database management
-- describe table
-- delete a dynamodb table.
-- serverless
-- table management.
-- transact get items
-- get item
-- list tables
-- scan an entire table or index.
-- update table
-- list dynamodb tables.
-- item operations.
-- create or replace an item.
-- cloud
-- update an item.
-- get an item by primary key.
-- get an item.
-- query items by primary key.
-- scan
-- aws
-- create an on-demand backup.
-- create a table.
-- write items in a transaction.
-- query items.
-- update a table.
-- document store
-- query
-- create table
-- delete a table.
 - update item
-- list tables.
-- key-value
-- get multiple items from one or more tables.
-- delete an item.
-- list on-demand backups.
-- get items in a transaction.
-- list backups
-- transact write items
-- batch write item
-- create backup
-- batch get item
-- put item
+- update an item.
+- database
 - dynamodb
-- query operations.
-- delete item
-- managed service
-- describe a dynamodb table.
+- table management.
+- item operations.
+- list tables.
+- delete a table.
+- query items by primary key.
+- create a new dynamodb table.
 - describe a table.
+- create a table.
+- delete item
+- get items in a transaction.
+- get an item.
+- get multiple items from one or more tables.
+- get item
+- managed service
+- update table
+- key-value
+- scan a table.
+- describe a dynamodb table.
+- scan an entire table or index.
+- write items in a transaction.
+- delete a dynamodb table.
+- list tables
+- scan
+- list on-demand backups.
+- delete table
+- create backup
+- create an on-demand backup.
+- query items.
+- list dynamodb tables.
+- serverless
+- put or delete multiple items in batch.
+- batch get item
+- create table
+- transact get items
+- describe table
+- database management
+- cloud
+- put item
+- aws
+- document store
+- update a table.
+- query
+- delete an item.
+- query operations.
+- transact write items
+- create or replace an item.
 - individual table management.
+- get an item by primary key.
+- batch write item
+- list backups
+- nosql
 slug: database-management
 tags:
 - AWS

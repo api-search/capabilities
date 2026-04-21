@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- oracle goldengate
-- execute a comparison job
-- list process metrics
+- get goldengate process performance metrics for monitoring replication health
+- list compare groups for data verification
+- create a new veridata database connection
+- compare groups
+- create connection
 - database
 - data verification
-- data integration
-- repair out-of-sync data identified by a comparison job
-- cdc
-- list comparison jobs
-- create a new comparison job
-- list groups
-- repair job
-- list compare groups for data verification
-- get goldengate process performance metrics for monitoring replication health
-- list veridata database connections
-- list jobs
-- create connection
-- get out of sync data
+- list process metrics
+- data synchronization
 - enterprise
-- create group
-- get details of out-of-sync data
-- get server info
-- replication process metrics
-- comparison jobs
-- create job
+- get out of sync data
 - run job
-- data quality
-- get comparison job statistics
+- create a new comparison job
+- create job
+- repair job
+- get details of out-of-sync data
+- list groups
 - database connections for verification
 - compliance
-- compare groups
-- real-time replication
-- list compare groups
+- oracle goldengate
+- list jobs
 - create a new compare group
-- get veridata server information
-- create a new veridata database connection
+- get server info
+- execute a comparison job
+- data integration
 - list connections
-- data synchronization
-- get job statistics
+- list compare groups
+- real-time replication
+- list veridata database connections
+- create group
+- repair out-of-sync data identified by a comparison job
+- data quality
+- comparison jobs
+- replication process metrics
+- get veridata server information
+- cdc
 - list replication process performance metrics
+- get job statistics
+- get comparison job statistics
+- list comparison jobs
 slug: data-verification
 tags:
 - Oracle GoldenGate

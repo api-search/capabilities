@@ -34,43 +34,43 @@ provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
 - cloud native
+- traffic management
+- create a new apisix route for traffic routing.
+- api gateway
+- create a backend upstream.
+- list all gateway routes.
+- Platform Engineer
+- API Gateway Administrator
+- list upstreams
+- delete an apisix route.
+- kubernetes
+- delete route
+- apache apisix
+- lua
+- create route
 - create consumer
 - configuration
-- kubernetes
 - update an existing apisix route.
-- open source
-- Platform Engineer
-- nginx
-- delete route
-- list api consumers.
-- list consumers
-- api gateway
-- apache
-- create a new api consumer with authentication plugins.
-- update route
-- authentication
 - list backend upstreams.
 - create upstream
-- apache apisix
-- create a new gateway route.
 - list routes
+- update route
 - list all api consumers and their plugin configs.
-- list all apisix gateway routes.
-- administrators configuring routes, consumers, and security policies.
-- list all backend upstream configurations.
-- traffic management
-- engineers deploying and managing api gateway infrastructure.
-- delete an apisix route.
-- lua
-- create a new apisix route for traffic routing.
-- API Gateway Administrator
+- nginx
+- list consumers
 - create a new backend upstream with load balancing config.
-- list upstreams
-- list all gateway routes.
-- create a backend upstream.
-- create an api consumer.
+- list all backend upstream configurations.
+- engineers deploying and managing api gateway infrastructure.
 - route, upstream, consumer, and ssl management workflow.
-- create route
+- create a new gateway route.
+- list api consumers.
+- create a new api consumer with authentication plugins.
+- apache
+- open source
+- authentication
+- administrators configuring routes, consumers, and security policies.
+- create an api consumer.
+- list all apisix gateway routes.
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

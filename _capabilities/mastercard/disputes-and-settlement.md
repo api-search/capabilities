@@ -28,37 +28,37 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- retrieval request management
-- digital identity
-- create retrieval request
-- open banking
-- authorize a transaction through core processing
-- create chargeback
-- chargeback management
-- lookup transaction clarity
-- authorize transaction
-- look up transaction details to aid dispute resolution
-- fraud detection
-- get chargebacks
-- look up transaction details for dispute resolution
-- create a retrieval request in mastercom
-- disputes
-- retrieve chargebacks
-- chargebacks
-- credit cards
-- lookup transaction for dispute
-- retrieve chargebacks from mastercom
-- create a retrieval request
-- get settlement rate
-- get currency conversion rate for settlement
-- mastercom
-- settlement
-- transaction clarity for dispute resolution
 - create a chargeback in mastercom
 - create a chargeback
-- financial services
-- payments
+- fraud detection
+- get settlement rate
+- create a retrieval request in mastercom
+- lookup transaction clarity
+- create chargeback
 - mastercard
+- authorize transaction
+- credit cards
+- get currency conversion rate for settlement
+- retrieve chargebacks
+- lookup transaction for dispute
+- get chargebacks
+- financial services
+- create a retrieval request
+- chargebacks
+- retrieval request management
+- create retrieval request
+- settlement
+- transaction clarity for dispute resolution
+- open banking
+- chargeback management
+- authorize a transaction through core processing
+- look up transaction details for dispute resolution
+- look up transaction details to aid dispute resolution
+- payments
+- retrieve chargebacks from mastercom
+- mastercom
+- disputes
+- digital identity
 - create retrieval
 slug: disputes-and-settlement
 tags:

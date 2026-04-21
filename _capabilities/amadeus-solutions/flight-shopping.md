@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- amadeus
-- flights
-- developer building online travel agency flight search and booking flows.
-- gds
-- hotels
-- search flights advanced
-- pricing
 - travel
-- confirm the current price and availability of a selected flight offer before creating a booking.
 - complete flight shopping flow from search through price confirmation.
-- search flights
-- confirm price
-- search available flights by origin, destination, and date.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- confirm pricing for a selected flight offer.
-- travel technology
-- upsell, seat selection, and add-on services.
-- shopping
-- airlines
-- Travel Chatbot Developer
-- confirm current price and availability.
-- booking
-- flight offer discovery and comparison.
-- search for available flight offers.
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- OTA Developer
-- search
-- developer building conversational travel assistants for flight search.
-- confirm flight price
 - price confirmation and validation before booking.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- upsell, seat selection, and add-on services.
+- search available flights by origin, destination, and date.
+- airlines
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- confirm flight price
+- confirm current price and availability.
+- flights
+- pricing
+- booking
+- developer building online travel agency flight search and booking flows.
+- confirm price
+- search for available flight offers.
+- developer building conversational travel assistants for flight search.
+- travel technology
+- confirm pricing for a selected flight offer.
+- search flights
+- amadeus
+- hotels
+- search
+- flight offer discovery and comparison.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- search flights advanced
+- gds
+- Travel Chatbot Developer
+- OTA Developer
+- shopping
 slug: flight-shopping
 tags:
 - Amadeus

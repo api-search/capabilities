@@ -27,31 +27,31 @@ personas:
 provider_name: agco
 provider_slug: agco
 search_terms:
-- precision ag developer
-- agricultural machine inventory and fleet management.
-- iot
-- list machines
-- agriculture
-- list all connected agco machines.
 - precision farming
+- fleet monitoring and performance tracking for agco agricultural machines.
+- agricultural operation manager monitoring machine fleet location and performance.
+- list machines
+- machine location history.
 - get machine locations
-- machine telematics.
-- farm manager
-- gps-based machine location and field work tracking.
+- get machine telemetry
+- get location history for an agco machine.
+- list all agco agricultural machines connected to the account.
+- iot
 - get real-time performance telemetry for an agco machine.
+- machine telematics.
+- gps-based machine location and field work tracking.
+- real-time engine, fuel, and operational telemetry monitoring.
+- farm manager
+- machine fleet management.
+- telematics
 - agco
 - get machine telemetry.
-- get location history for an agco machine.
-- agricultural operation manager monitoring machine fleet location and performance.
-- machine location history.
+- precision ag developer
+- agriculture
+- list all connected agco machines.
 - developer building farm management applications using agco machine telemetry data.
-- machine fleet management.
 - get machine location history.
-- fleet monitoring and performance tracking for agco agricultural machines.
-- get machine telemetry
-- telematics
-- list all agco agricultural machines connected to the account.
-- real-time engine, fuel, and operational telemetry monitoring.
+- agricultural machine inventory and fleet management.
 slug: precision-farming
 tags:
 - AGCO

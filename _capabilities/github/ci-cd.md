@@ -54,85 +54,85 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- ci/cd
-- getWorkflow
-- list variables
-- get workflow
-- deployments
-- list workflow runs
-- listRepositoryWorkflows
-- individual workflow operations
-- create or update a secret
-- environment management
-- list repository secrets
-- source control
-- enable workflow
-- code
-- list deployments
-- listEnvironments
-- disable workflow
-- download an artifact
-- workflow listing and dispatch
-- create or update secret
 - cancel run
-- listJobsForWorkflowRun
-- listRepositorySecrets
-- list environments
-- create a release
-- get a repository
-- software development
-- workflow run jobs
-- listWorkflowRunsForRepository
-- list self-hosted runners
-- re-run a workflow
-- list artifacts
-- get a workflow
-- individual run operations
-- trigger a workflow dispatch event
-- artifact management
-- t1
-- list caches
-- list runners
-- dispatch a workflow
-- list secrets
-- workflow run management
-- listArtifactsForRepository
-- dispatch workflow
-- actions
-- trigger workflow runs
-- getWorkflowRun
-- re-run failed jobs
-- download job logs
-- devops
-- list releases
-- deployment management
-- list repository workflows
-- rerun failed jobs
-- workflows
-- disable a workflow
 - get a job
-- download artifact
-- cancel a workflow run
-- list runs
-- create release
-- get repository
-- list workflows
-- list github actions caches
-- github
-- list repository variables
-- list jobs
-- rerun workflow
-- pipelines
-- get job
-- createWorkflowDispatchEvent
 - secret management
-- enable a workflow
-- get a workflow run
 - platform
+- cancel a workflow run
+- deployment management
+- list repository variables
+- rerun failed jobs
+- list workflows
+- artifact management
+- workflows
+- source control
+- list variables
+- actions
+- list runs
+- create or update a secret
+- list environments
+- workflow listing and dispatch
+- listArtifactsForRepository
+- get workflow
+- dispatch a workflow
+- github
+- download an artifact
+- list caches
+- list repository secrets
+- get a workflow run
+- listRepositoryWorkflows
+- create or update secret
 - get run
-- listDeployments
-- cancelWorkflowRun
+- deployments
+- list self-hosted runners
+- trigger workflow runs
+- get a repository
+- listEnvironments
+- list releases
+- getWorkflowRun
+- get repository
+- ci/cd
+- create a release
+- list github actions caches
+- devops
+- individual run operations
+- list deployments
+- createWorkflowDispatchEvent
+- environment management
+- trigger a workflow dispatch event
+- listRepositorySecrets
+- enable workflow
+- t1
 - list jobs for a workflow run
+- list jobs
+- get job
+- list artifacts
+- create release
+- list secrets
+- listJobsForWorkflowRun
+- get a workflow
+- pipelines
+- download artifact
+- list runners
+- workflow run management
+- enable a workflow
+- disable a workflow
+- individual workflow operations
+- software development
+- listWorkflowRunsForRepository
+- rerun workflow
+- workflow run jobs
+- list workflow runs
+- list repository workflows
+- dispatch workflow
+- getWorkflow
+- disable workflow
+- listDeployments
+- download job logs
+- cancelWorkflowRun
+- code
+- re-run a workflow
+- re-run failed jobs
 slug: ci-cd
 tags:
 - GitHub

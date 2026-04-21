@@ -25,39 +25,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- create a chat completion
-- embeddings
-- developer tools
-- machine learning
-- AI Engineer
-- list all models
-- video generation
+- create embedding
+- api gateway
 - access 400+ ai models for chat, image generation, embeddings, and model discovery
 - create embeddings
-- api gateway
-- list models
-- generate vector embeddings for semantic search and rag applications
-- generate an image
-- discover all 400+ available ai models on aimlapi platform
-- ai engineer evaluating and comparing models for ml pipelines
-- generate an image from a text prompt using aimlapi image generation models
-- list available models
-- ai model inference across modalities
-- chat completions via 400+ llms
-- create chat completion
-- generate embeddings
-- llm
-- generate a chat response from any of 400+ ai language models via aimlapi
-- Developer
 - api key management and model discovery
-- create embedding
 - create image
-- artificial intelligence
-- developer integrating ai capabilities into applications via aimlapi
-- speech
-- ai models
-- image generation
+- list models
+- list available models
+- ai engineer evaluating and comparing models for ml pipelines
+- embeddings
+- Developer
 - generate image
+- machine learning
+- list all models
+- generate a chat response from any of 400+ ai language models via aimlapi
+- create a chat completion
+- generate vector embeddings for semantic search and rag applications
+- speech
+- discover all 400+ available ai models on aimlapi platform
+- developer integrating ai capabilities into applications via aimlapi
+- video generation
+- generate an image
+- ai models
+- ai model inference across modalities
+- create chat completion
+- generate an image from a text prompt using aimlapi image generation models
+- generate embeddings
+- AI Engineer
+- chat completions via 400+ llms
+- artificial intelligence
+- image generation
+- llm
+- developer tools
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

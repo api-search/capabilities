@@ -29,28 +29,28 @@ personas: []
 provider_name: Amazon Elastic Beanstalk
 provider_slug: amazon-elastic-beanstalk
 search_terms:
-- amazon elastic beanstalk describe applications
-- auto scaling
 - unified capability for managing amazon elastic beanstalk resources. combines amazon elastic beanstalk apis for application developer workflows in application deployment.
-- amazon elastic beanstalk update environment
-- elastic beanstalk
-- platform as a service
-- createEnvironment
-- amazon web services
-- amazon elastic beanstalk create environment
-- amazon elastic beanstalk describe environments
-- platform-as-a-service for deploying and managing web applications
-- describeApplications
-- aws
-- describeEnvironments
-- developers building applications using amazon elastic beanstalk
-- amazon elastic beanstalk create application
-- createApplication
 - deployment
-- web applications
-- paas
-- updateEnvironment
+- describeApplications
+- platform as a service
+- amazon elastic beanstalk create application
+- developers building applications using amazon elastic beanstalk
 - operations teams managing amazon elastic beanstalk infrastructure
+- amazon elastic beanstalk update environment
+- describeEnvironments
+- amazon elastic beanstalk create environment
+- createEnvironment
+- amazon elastic beanstalk describe environments
+- elastic beanstalk
+- web applications
+- updateEnvironment
+- platform-as-a-service for deploying and managing web applications
+- auto scaling
+- aws
+- paas
+- createApplication
+- amazon elastic beanstalk describe applications
+- amazon web services
 slug: amazon-elastic-beanstalk-capability
 tags:
 - Amazon Web Services

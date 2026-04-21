@@ -25,34 +25,34 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- financial data
-- fixed income calculations.
-- fixed income terms and conditions.
-- get terms
-- s&p global evaluated prices.
-- get terms conditions
 - get s&p global evaluated prices.
-- get terms and conditions.
+- get terms
+- get terms conditions
+- optimize fi portfolio
+- batch fi analytics
+- get evaluated prices.
+- optimize fixed income portfolio.
+- bond analytics
+- financial
+- run fixed income calculation.
 - get fixed income terms and conditions.
+- batch fixed income analytics.
+- get fi calc
 - credit analysis
+- research
 - get fi calculations.
+- portfolio analytics
+- s&p global evaluated prices.
+- market data
+- get terms and conditions.
+- fixed income calculations.
+- run fi calculation
+- fixed income
 - factset
 - get evaluated prices
-- bond analytics
-- run fi calculation
-- market data
+- financial data
+- fixed income terms and conditions.
 - investment analytics
-- optimize fi portfolio
-- optimize fixed income portfolio.
-- batch fixed income analytics.
-- batch fi analytics
-- fixed income
-- portfolio analytics
-- research
-- financial
-- get evaluated prices.
-- get fi calc
-- run fixed income calculation.
 slug: fixed-income
 tags:
 - FactSet

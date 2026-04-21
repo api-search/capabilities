@@ -18,35 +18,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- linkedin
-- sales intelligence, lead management, and crm integration.
-- get learning activity reports
-- social media
-- retrieve learning activity reports.
-- careers
-- retrieve ad analytics by various pivots.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- b2b advertising, audience targeting, and campaign analytics.
 - get ad analytics
-- professional networking
+- social media
 - learning
-- employee development tracking and content access.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- recruiting
 - analytics
-- integrates linkedin authentication and sharing into applications.
 - archives communications for regulatory compliance.
+- message archiving and regulatory communications governance.
+- job posting, recruiting, and applicant tracking.
 - posts jobs and manages candidates through ats integrations.
+- professional networking
+- careers
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- retrieve ad analytics by various pivots.
+- recruiting
+- business
+- uses sales navigator for lead generation and crm sync.
+- retrieve learning activity reports.
+- integrates linkedin authentication and sharing into applications.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- sales intelligence, lead management, and crm integration.
 - authentication, sharing, and verification for consumer apps.
 - tracks employee learning activity and completions.
+- linkedin
 - data portability and advertiser transparency for dma.
-- business
-- marketing
-- message archiving and regulatory communications governance.
-- uses sales navigator for lead generation and crm sync.
 - retrieve ad analytics by various pivots and dimensions.
+- get learning activity reports
+- employee development tracking and content access.
+- b2b advertising, audience targeting, and campaign analytics.
 - reporting
-- job posting, recruiting, and applicant tracking.
+- marketing
 slug: reporting-and-analytics
 tags:
 - LinkedIn

@@ -38,54 +38,54 @@ personas: []
 provider_name: Amazon Cognito
 provider_slug: amazon-cognito
 search_terms:
-- list users in a cognito user pool.
-- delete user
+- authentication
+- initiate authentication flows.
+- create user pool
+- get credentials
+- delete a user from a cognito user pool.
 - list all cognito identity pools.
+- create a new cognito identity pool for federated identity management.
+- Platform Administrator
+- create identity pool
+- oauth
+- get temporary aws credentials for a federated cognito identity.
+- create a new amazon cognito user pool.
+- get temporary aws credentials.
 - end-to-end user authentication using user pools and identity pools.
 - get details of a specific cognito identity pool.
-- integrates cognito authentication into web and mobile applications.
-- create user pool
-- get temporary aws credentials.
-- initiate an authentication flow in cognito.
-- identity
-- list all identity pools.
-- list all user pools.
-- list users
-- get credentials
-- manage cognito user pools.
-- create a new user pool.
-- get temporary aws credentials for a federated identity.
-- get configuration details of a specific cognito user pool.
-- describe identity pool
-- create a new user in a cognito user pool.
-- list user pools
-- manage users within a user pool.
-- get details of a specific user in a cognito user pool.
-- describe user pool
 - federated identity
-- authentication
-- oauth
-- list identity pools
-- aws
+- get configuration details of a specific cognito user pool.
 - get user
-- amazon
 - manages user pools, groups, and identity pool configurations.
-- manage cognito identity pools.
 - create user
-- start the authentication flow.
-- list users in a user pool.
-- initiate authentication flows.
-- create a new cognito identity pool for federated identity management.
-- create identity pool
-- user management
-- Application Developer
-- Platform Administrator
-- initiate auth
-- create a new amazon cognito user pool.
+- describe user pool
+- identity
+- create a new user in a cognito user pool.
 - create a new user in the pool.
-- get temporary aws credentials for a federated cognito identity.
-- delete a user from a cognito user pool.
+- list users
+- delete user
+- list identity pools
+- initiate an authentication flow in cognito.
+- manage cognito identity pools.
+- amazon
+- manage users within a user pool.
+- list users in a user pool.
+- manage cognito user pools.
+- start the authentication flow.
+- describe identity pool
+- get details of a specific user in a cognito user pool.
+- list user pools
+- list users in a cognito user pool.
+- Application Developer
+- integrates cognito authentication into web and mobile applications.
+- user management
+- aws
 - list all amazon cognito user pools in the account.
+- create a new user pool.
+- list all identity pools.
+- initiate auth
+- get temporary aws credentials for a federated identity.
+- list all user pools.
 slug: user-authentication
 tags:
 - Amazon

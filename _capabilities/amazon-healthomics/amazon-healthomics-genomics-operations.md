@@ -10,10 +10,10 @@ provider_slug: amazon-healthomics
 search_terms:
 - healthcare
 - aws
-- life sciences
-- genomics
-- bioinformatics
 - cloud computing
+- genomics
+- life sciences
+- bioinformatics
 slug: amazon-healthomics-genomics-operations
 tags: []
 tools: []

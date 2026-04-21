@@ -39,47 +39,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- cloud native
-- list jakarta batch job instances
-- middleware
-- enterprise java
-- application server
-- get liberty health
-- metrics collection
-- get open liberty overall health
-- get all open liberty metrics
-- get log config
-- performance data
-- get recent liberty log messages
-- get all metrics
-- get liberty admin metrics
-- get batch job instance details
-- check if liberty server is alive
-- check if liberty server is ready for traffic
-- ibm websphere
-- get liveness
-- get log messages
-- get readiness
-- list batch jobs
-- get open liberty overall health status
-- microservices
-- get performance data
-- monitoring
-- get was health
-- get liberty log messages
-- log management
-- get batch job
-- get was server health status
 - batch job monitoring
-- j2ee
-- get liberty logging configuration
-- get was server health
+- get all metrics
+- list jakarta batch job instances
+- cloud native
+- ibm websphere
+- get open liberty overall health status
+- get was server health status
+- performance data
 - metrics
-- get was performance monitoring data
-- observability
+- get batch job
+- middleware
+- log management
+- get log messages
+- get liberty admin metrics
+- check if liberty server is ready for traffic
+- get open liberty overall health
+- enterprise java
+- get all open liberty metrics
 - list batch job instances
-- health check endpoints
+- get was performance monitoring data
+- check if liberty server is alive
 - get liberty metrics
+- metrics collection
+- get recent liberty log messages
+- list batch jobs
+- j2ee
+- get liberty health
+- get was server health
+- monitoring
+- get performance data
+- get liberty log messages
+- get liberty logging configuration
+- health check endpoints
+- observability
+- get log config
+- get was health
+- application server
+- get liveness
+- get readiness
+- microservices
+- get batch job instance details
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

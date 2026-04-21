@@ -10,22 +10,22 @@ provider_name: AWS Lake Formation
 provider_slug: amazon-lakeformation
 search_terms:
 - aws
-- databases list databases
-- manages resources and configurations
 - governance
 - Developer
+- workflow
+- retrieves the definition of a specified database.
+- databases list databases
+- databases get database
+- databases create database
 - unified workflow for aws lake formation resource management
 - lists all the registered databases in the data catalog.
-- databases get database
-- Administrator
+- manages resources and configurations
 - analytics
-- aws lake formation
-- workflow
 - creates a new database in the data catalog.
-- retrieves the definition of a specified database.
-- integrates api into applications
-- databases create database
+- Administrator
 - data lake
+- integrates api into applications
+- aws lake formation
 slug: amazon-lakeformation-workflow
 tags:
 - AWS Lake Formation

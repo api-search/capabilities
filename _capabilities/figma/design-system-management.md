@@ -37,61 +37,61 @@ personas: []
 provider_name: Figma
 provider_slug: figma
 search_terms:
-- render images from a file.
-- get comments
-- ui/ux
-- design
-- get a component by key.
-- post comment
-- get team styles
-- get download links for images used as fills in a file.
-- component access.
-- get image fills
-- get file versions
-- get team component sets
-- prototypes
-- get me
-- get project files
-- list comments on a figma file.
-- render and export images from a figma file.
-- get file components
-- project file access.
-- image rendering.
-- get team projects
-- figma
-- list projects for a team.
-- get a specific component by key.
-- get component
-- graphics
-- design file access.
-- get a figma file.
-- asset export
-- get specific nodes from a file.
-- collaboration
-- list version history of a figma file.
-- file node access.
-- get a figma file document tree.
-- list files in a project.
-- team project access.
-- post a comment on a figma file.
-- get team components
-- get images
-- design systems
-- get file nodes
-- prototyping
-- team component access.
-- list team projects.
 - list published component sets for a team.
-- list team components.
+- project file access.
+- get team component sets
+- get a specific component by key.
+- post comment
+- ui/ux
+- file node access.
+- get comments
+- get file nodes
+- component access.
+- get file versions
+- team project access.
+- image rendering.
+- design file access.
+- get component
+- get a component by key.
+- get specific nodes from a figma file by ids.
+- post a comment on a figma file.
+- get me
+- asset export
+- get images
+- get a figma file.
+- get information about the authenticated user.
+- graphics
+- get file components
+- prototyping
+- design systems
+- list published styles for a team.
+- design
+- get download links for images used as fills in a file.
+- get team components
+- get team styles
 - list components in a figma file.
 - files
-- get file
-- list published components for a team.
-- get specific nodes from a figma file by ids.
-- get information about the authenticated user.
 - components
-- list published styles for a team.
+- list files in a project.
+- get a figma file document tree.
+- get file
+- list team projects.
+- render and export images from a figma file.
+- get image fills
+- list comments on a figma file.
+- list projects for a team.
+- prototypes
+- list published components for a team.
 - interfaces
+- get project files
+- collaboration
+- team component access.
+- list team components.
+- render images from a file.
+- figma
+- get specific nodes from a file.
+- get team projects
+- list version history of a figma file.
 slug: design-system-management
 tags:
 - Figma

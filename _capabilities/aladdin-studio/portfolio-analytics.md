@@ -34,58 +34,58 @@ personas: []
 provider_name: Aladdin Studio
 provider_slug: aladdin-studio
 search_terms:
-- risk professional analyzing factor exposures, var, and stress test results for institutional portfolios using aladdin's risk engine.
-- security reference data
-- execute sql query against data cloud
-- investment management
-- get security reference data
-- portfolio metadata, positions, and performance tracking
-- risk management
 - Quantitative Researcher
-- get portfolio risk
-- get security reference data from aladdin including classification attributes
-- portfolio management and discovery
-- list portfolios
-- investment research and analyst insights
-- Portfolio Manager
-- query data cloud
-- data cloud
-- data cloud sql query execution
-- execute sql query against the aladdin data cloud snowflake database for large-scale portfolio analytics and data science workflows.
-- get current portfolio positions
-- get portfolio risk analytics and factor exposures
-- asset management
-- portfolio risk analytics
-- get portfolio
 - get risk
-- blackrock
-- list available data cloud datasets
-- quant researcher building and backtesting models using aladdin data cloud for large-scale portfolio analytics.
-- get positions
-- list accessible aladdin portfolios
-- get risk analytics for an aladdin portfolio including tracking error, var, beta, volatility, and factor exposures computed by aladdin's risk engine.
-- portfolio analytics
-- portfolio management
-- risk analytics, factor exposures, and stress testing
-- large-scale analytics on snowflake-based data warehouse
-- unified portfolio analytics combining graph api and data cloud for institutional portfolio managers and risk analysts
+- get portfolio risk
 - list data cloud datasets
-- get portfolio positions
+- execute sql query against the aladdin data cloud snowflake database for large-scale portfolio analytics and data science workflows.
+- portfolio risk analytics
+- institutional portfolio manager monitoring holdings, performance, and risk across aladdin-managed portfolios.
+- get positions
+- asset management
+- unified portfolio analytics combining graph api and data cloud for institutional portfolio managers and risk analysts
+- list portfolios
+- risk management
+- execute sql query against data cloud
+- get security reference data
+- get portfolio
+- data cloud
+- financial
+- investment management
+- get security reference data from aladdin including classification attributes
+- list aladdin portfolios accessible to the authenticated user
+- portfolio management
+- get current portfolio positions
+- get security
+- quant researcher building and backtesting models using aladdin data cloud for large-scale portfolio analytics.
+- get details for a specific aladdin portfolio
+- get portfolio risk analytics and factor exposures
+- portfolio analytics
+- list available datasets in the aladdin data cloud for analytics
+- get risk analytics for an aladdin portfolio including tracking error, var, beta, volatility, and factor exposures computed by aladdin's risk engine.
+- list available data cloud datasets
+- execute query
+- investment research and analyst insights
+- portfolio management and discovery
 - list datasets
 - aladdin data cloud available datasets
+- get current positions and holdings for an aladdin portfolio including market values, quantities, and weights by security.
+- Risk Analyst
+- portfolio metadata, positions, and performance tracking
+- get portfolio positions
+- query data cloud
+- data cloud sql query execution
+- list accessible aladdin portfolios
+- risk analytics, factor exposures, and stress testing
+- large-scale analytics on snowflake-based data warehouse
+- security reference data
+- Portfolio Manager
 - risk analytics
 - portfolio holdings and positions
-- Risk Analyst
-- get current positions and holdings for an aladdin portfolio including market values, quantities, and weights by security.
-- list available datasets in the aladdin data cloud for analytics
-- execute query
-- institutional portfolio manager monitoring holdings, performance, and risk across aladdin-managed portfolios.
-- financial
-- get security
+- blackrock
+- risk professional analyzing factor exposures, var, and stress test results for institutional portfolios using aladdin's risk engine.
 - order management and execution workflows
-- get details for a specific aladdin portfolio
 - aladdin studio
-- list aladdin portfolios accessible to the authenticated user
 slug: portfolio-analytics
 tags:
 - Aladdin Studio

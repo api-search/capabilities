@@ -9,43 +9,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- list instances in a deployment
-- manage codedeploy applications
-- stop deployment
-- stop an in-progress deployment
-- ci/cd
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- list deployment groups
-- get deployment information for a target instance
-- get deployment
-- create a deployment group for an application
-- DevOps Engineer
-- coordinates application releases.
-- get details about a specific deployment
-- list deployment instances
-- create application
-- list deployments for an application and deployment group
-- manages deployment infrastructure.
-- create and monitor deployments
-- create a new deployment
-- release management
-- aws
 - devops
-- list deployment groups for an application
-- amazon
-- create deployment
-- automated application deployment to compute targets.
-- list deployments
-- get deployment instance
-- manage deployment groups
-- list codedeploy applications
-- blue/green deployment
-- create a codedeploy application
 - deployment
-- Release Manager
-- create deployment group
+- release management
+- list deployments for an application and deployment group
+- create a deployment group for an application
+- list deployments
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- create a new deployment
 - list applications
+- create and monitor deployments
+- list codedeploy applications
+- Release Manager
+- get deployment
+- DevOps Engineer
+- manages deployment infrastructure.
+- list deployment groups
+- list deployment groups for an application
+- list instances in a deployment
+- create deployment
+- manage deployment groups
+- stop an in-progress deployment
+- amazon
+- get details about a specific deployment
+- blue/green deployment
+- manage codedeploy applications
+- get deployment information for a target instance
+- create deployment group
+- coordinates application releases.
 - managing software release processes and rollbacks.
+- aws
+- list deployment instances
+- automated application deployment to compute targets.
+- get deployment instance
+- create a codedeploy application
+- create application
+- ci/cd
+- stop deployment
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

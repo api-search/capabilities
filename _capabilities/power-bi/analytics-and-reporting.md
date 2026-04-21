@@ -45,67 +45,67 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
-- list all reports
-- data analysis
-- export a report
-- list reports
-- dashboard management
-- export report
-- create a dashboard
-- get tiles for a dashboard
-- create a new dataset
-- list all power bi datasets
-- gateway management
-- business intelligence
 - get report
-- get dataset refresh history
-- list all power bi reports
-- delete a dataset
 - power bi
-- create a new workspace
-- list gateways
-- delete dataset
-- get dashboard tiles
-- get datasources
-- create a new dashboard
-- create a dataset
-- get dataset details by id
-- create workspace
-- list dashboards
-- list all dashboards
-- get dashboard
-- create dataset
-- get dataset details
-- get dashboard details
-- clone report
-- trigger a dataset refresh
-- get dataset
-- clone a report
-- list all workspaces
-- workspace management
-- report management
-- list all datasets
-- get pages for a report
-- analytics
+- gateway management
 - refresh dataset
-- get gateway details
-- get datasources for a dataset
-- get refresh history
-- list workspaces
-- get gateway
-- list workspace users
-- list datasets
 - create dashboard
-- get report details by id
-- list data gateways
-- visualization
-- reporting
-- get gateway datasources
-- dashboards
-- individual dataset operations
+- analytics
 - get report pages
+- get dashboard tiles
+- get report details by id
+- workspace management
+- create a new workspace
+- data analysis
+- get dataset details
+- delete dataset
+- get datasources for a dataset
+- list gateways
+- get dataset details by id
+- list all power bi reports
+- export report
+- individual dataset operations
+- clone report
+- dashboards
+- visualization
+- report management
+- get dataset refresh history
+- get dashboard
+- create a new dashboard
+- business intelligence
+- list reports
+- get datasources
+- get tiles for a dashboard
+- list workspaces
+- list all workspaces
+- get gateway datasources
+- trigger a dataset refresh
+- export a report
+- list workspace users
+- list all reports
+- dashboard management
+- list all datasets
 - dataset management
 - get workspace users
+- list datasets
+- get pages for a report
+- list all dashboards
+- list data gateways
+- create workspace
+- create a dataset
+- get refresh history
+- create a new dataset
+- create dataset
+- clone a report
+- list dashboards
+- get dataset
+- create a dashboard
+- get gateway details
+- get dashboard details
+- reporting
+- delete a dataset
+- get gateway
+- list all power bi datasets
 slug: analytics-and-reporting
 tags:
 - Power BI

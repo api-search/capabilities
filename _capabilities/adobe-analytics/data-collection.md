@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- list dimensions to validate event data mapping.
-- report suite details.
-- customer intelligence
-- digital marketing
-- business intelligence
+- metric discovery for event mapping.
+- get details for a report suite to verify collection configuration.
+- dimension discovery for event mapping.
 - web analytics
 - adobe analytics
-- upload events
-- get report suite details.
-- list report suites to identify collection targets.
-- events
-- upload a batch events file.
-- server side
-- validate a batch events file without ingesting.
-- data collection
-- list metrics
-- upload a gzip-compressed csv file of batched analytics event data.
-- analytics
-- list available dimensions to validate event data mapping.
-- report suite discovery for data collection targeting.
-- validate events
-- list metrics to validate event data mapping.
-- list available metrics to validate event data mapping.
-- list dimensions
 - bulk data insertion
+- list available dimensions to validate event data mapping.
+- list report suites to identify collection targets.
+- analytics
+- validate a batch events file without ingesting.
+- list metrics
+- report suite details.
+- list dimensions to validate event data mapping.
+- validate events
+- server side
+- upload a batch events file.
+- list metrics to validate event data mapping.
+- digital marketing
+- get report suite details.
+- events
 - adobe
-- get details for a report suite to verify collection configuration.
-- marketing
-- get report suite
 - batch event upload.
-- dimension discovery for event mapping.
-- metric discovery for event mapping.
-- validate event files.
-- validate a batch events file without ingesting data.
+- list available metrics to validate event data mapping.
+- business intelligence
+- customer intelligence
+- get report suite
+- list dimensions
 - list report suites
+- data collection
 - list report suites to identify data collection targets.
+- upload a gzip-compressed csv file of batched analytics event data.
+- validate a batch events file without ingesting data.
+- report suite discovery for data collection targeting.
+- validate event files.
+- upload events
+- marketing
 slug: data-collection
 tags:
 - Adobe Analytics

@@ -8,10 +8,10 @@ personas: []
 provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
-- open source
 - java
 - http client
 - apache
+- open source
 - sdk
 slug: http-client-integration
 tags: []

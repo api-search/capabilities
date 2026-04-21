@@ -33,45 +33,45 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- get fields on an instagram photo, video, story, reel, or album.
-- content publishing and media management.
-- photos
-- individual media detail for analytics.
-- content publishing
 - social media
-- get user media
-- publishes and manages content across instagram accounts.
-- get business discovery
-- comments, mentions, and community interaction.
-- manages instagram direct conversations for business inquiries.
-- tracks content performance and audience insights.
-- get data about other instagram business or creator accounts.
-- competitor and business account research.
-- get social interaction metrics for a media object.
-- get a collection of ig media objects published on the account.
-- monitors mentions, comments, and brand sentiment on instagram.
-- website embedding of instagram content.
-- meta
-- account-level analytics.
-- get user
-- insights and performance metrics.
-- creates and publishes photos, videos, reels, and stories.
-- analytics
-- user profile data.
-- get media insights
-- get fields and edges on an instagram business or creator account.
 - instagram direct messaging.
-- user media for analytics review.
 - get fields on an instagram media object.
-- get user insights
-- get media
+- analytics
+- comments, mentions, and community interaction.
+- meta
+- content publishing
+- tracks content performance and audience insights.
+- user profile data.
+- creates and publishes photos, videos, reels, and stories.
+- get business discovery
+- get fields and edges on an instagram business or creator account.
+- content publishing and media management.
+- get user
+- get a collection of ig media objects published on the account.
 - insights
-- media-level analytics.
-- reporting
-- embeds instagram content on websites and applications.
+- photos
+- get social interaction metrics for a media object.
 - instagram
 - get social interaction metrics for the account.
+- media-level analytics.
+- manages instagram direct conversations for business inquiries.
+- get data about other instagram business or creator accounts.
+- get user media
+- competitor and business account research.
+- monitors mentions, comments, and brand sentiment on instagram.
+- user media for analytics review.
+- publishes and manages content across instagram accounts.
+- website embedding of instagram content.
+- insights and performance metrics.
+- embeds instagram content on websites and applications.
+- account-level analytics.
+- get media insights
+- get fields on an instagram photo, video, story, reel, or album.
+- reporting
 - videos
+- individual media detail for analytics.
+- get media
+- get user insights
 slug: analytics-and-insights
 tags:
 - Instagram

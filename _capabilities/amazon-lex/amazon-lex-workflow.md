@@ -11,18 +11,18 @@ provider_slug: amazon-lex
 search_terms:
 - aws
 - bots create bot
-- manages resources and configurations
+- bots list bots
+- workflow
 - Developer
+- unified workflow for amazon lex resource management
 - gets a list of available bots.
 - amazon lex
-- unified workflow for amazon lex resource management
-- bots list bots
-- provides metadata information about a bot.
-- Administrator
-- workflow
+- manages resources and configurations
 - creates an amazon lex conversational bot.
-- integrates api into applications
+- Administrator
 - bots describe bot
+- provides metadata information about a bot.
+- integrates api into applications
 slug: amazon-lex-workflow
 tags:
 - Amazon Lex
