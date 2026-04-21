@@ -30,43 +30,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- open banking
-- enroll issuer click to pay
-- check if a card is eligible for digitization
-- get token details
-- suspend an active token
-- submit a bulk tokenization request for a card portfolio
-- tokenize a payment card via mdes
-- push provision a token to a wallet
-- register token requestor
 - fraud detection
-- payments
-- enroll an issuer in click to pay
-- credit cards
-- financial services
-- check card eligibility for digitization
-- delete token
-- push provision
-- push provision to wallet
-- token lifecycle management
-- push provision a token to a digital wallet
-- bulk tokenization operations
-- digital identity
-- submit bulk tokenization
-- register a new token requestor
-- mastercard
-- delete a token
-- digital payments
-- click to pay
 - submit bulk tokenization request
-- tokenize a payment card
-- push provisioning to wallets
-- suspend token
-- mdes
-- tokenize card
+- push provision a token to a digital wallet
 - tokenization
+- mdes
+- bulk tokenization operations
+- suspend token
+- mastercard
+- submit bulk tokenization
+- financial services
+- push provision a token to a wallet
+- check card eligibility for digitization
+- tokenize a payment card via mdes
+- credit cards
+- delete token
+- digital identity
+- click to pay
+- push provision to wallet
+- enroll an issuer in click to pay
+- payments
+- submit a bulk tokenization request for a card portfolio
+- tokenize a payment card
+- token lifecycle management
+- suspend an active token
+- open banking
 - check digitization eligibility
+- register a new token requestor
+- delete a token
+- push provision
+- push provisioning to wallets
 - pre-digitization eligibility
+- register token requestor
+- tokenize card
+- digital payments
+- enroll issuer click to pay
+- get token details
+- check if a card is eligible for digitization
 slug: digital-enablement-and-tokenization
 tags:
 - Mastercard

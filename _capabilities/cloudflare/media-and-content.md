@@ -18,58 +18,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list image variants.
+- get video details.
+- stream list live inputs
+- cdn
+- delete a video.
+- stream delete video
+- dns
+- images upload image
+- stream create live input
 - edge computing
 - object storage
-- cloud
-- create a live streaming input.
-- list all videos.
-- list images.
-- stream upload video
-- image management.
-- containers
-- real-time communication
-- delete an image.
-- list images
 - get image details.
-- ai gateway
-- dns
-- stream delete video
-- video management.
-- images get image
-- list live streaming inputs.
-- get video details.
-- images create direct upload
-- security
-- platform
-- upload a video from url.
-- delete a video.
-- cloudflare
-- stream list live inputs
-- create a direct upload url.
-- stream list videos
-- stream create direct upload
-- edge
-- images delete image
-- list videos
-- list all images.
-- api gateway
-- images list variants
-- cdn
-- ddos protection
-- video
-- upload an image.
 - media
+- ddos protection
+- edge
+- images get image
+- stream upload video
+- delete an image.
+- images create direct upload
+- video management.
+- upload an image.
 - serverless
-- artificial intelligence
-- stream create live input
-- images
-- web performance
-- images list images
-- create a direct upload url for images.
+- create a direct upload url.
+- stream create direct upload
+- platform
+- api gateway
 - list videos.
-- images upload image
+- list images
 - stream get video
+- list all images.
+- artificial intelligence
+- create a live streaming input.
+- containers
+- list videos
+- video
+- images
+- cloudflare
+- stream list videos
+- images list images
+- ai gateway
+- cloud
+- create a direct upload url for images.
+- list live streaming inputs.
+- real-time communication
+- upload a video from url.
+- security
+- images list variants
+- list all videos.
+- images delete image
+- list image variants.
+- image management.
+- list images.
+- web performance
 slug: media-and-content
 tags:
 - Cloudflare

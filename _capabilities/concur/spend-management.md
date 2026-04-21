@@ -13,24 +13,24 @@ personas: []
 provider_name: SAP Concur
 provider_slug: concur
 search_terms:
-- managers approving expense reports and invoices
-- finance
-- list expense reports
-- Finance Team
-- expense management
-- Approver
-- travel
-- invoice
 - create expense report
 - unified spend management combining expense and invoice workflows
-- spend management
-- sap concur
-- create a new expense report
-- expense reports
-- sap
-- list reports
 - finance and accounting staff managing expense and invoice processing
 - list expense reports for a user
+- managers approving expense reports and invoices
+- list reports
+- expense reports
+- invoice
+- sap
+- sap concur
+- spend management
+- expense management
+- travel
+- Finance Team
+- finance
+- list expense reports
+- create a new expense report
+- Approver
 slug: spend-management
 tags:
 - Expense Management

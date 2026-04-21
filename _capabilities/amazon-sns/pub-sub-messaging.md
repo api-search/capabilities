@@ -29,53 +29,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- publish up to 10 messages in a batch
-- get attributes of an sns topic
-- create a platform application for mobile push
-- subscribe
-- pub/sub
-- notifications
-- subscription management
-- get attributes of a subscription
 - get sms attributes
-- email
-- create a subscription
-- get subscription attributes
-- publish a message to a topic
-- sms
-- create topic
-- set topic attributes
-- get sms messaging attributes
-- list all sns topics
-- list all subscriptions
 - topic management
 - unsubscribe from a topic
-- create a subscription to a topic
-- list tags for an sns resource
-- amazon
-- list tags
+- list topics
+- publish
+- aws
+- publish batch
+- check phone opted out
+- tag resource
+- publish a message to a topic or endpoint
+- pub/sub
+- create platform application
+- create a new sns topic
+- list all subscriptions
+- check if a phone number has opted out of sms
+- add tags to an sns resource
 - unsubscribe
 - push notifications
-- list subscriptions by topic
-- create platform application
-- publish batch
-- messaging
-- list subscriptions for a specific topic
-- get topic attributes
-- message publishing
-- set attributes on an sns topic
-- delete an sns topic
-- add tags to an sns resource
-- create a new sns topic
-- publish a message to a topic or endpoint
-- publish
-- list topics
 - list subscriptions
-- aws
-- tag resource
-- check if a phone number has opted out of sms
+- list all sns topics
+- list subscriptions for a specific topic
+- delete an sns topic
+- get sms messaging attributes
+- get topic attributes
+- notifications
+- list tags for an sns resource
+- set topic attributes
+- publish up to 10 messages in a batch
+- get attributes of a subscription
+- set attributes on an sns topic
+- email
+- message publishing
+- list subscriptions by topic
+- messaging
+- get attributes of an sns topic
+- create a subscription to a topic
+- create a platform application for mobile push
 - delete topic
-- check phone opted out
+- sms
+- amazon
+- get subscription attributes
+- publish a message to a topic
+- subscription management
+- create topic
+- list tags
+- subscribe
+- create a subscription
 slug: pub-sub-messaging
 tags:
 - Amazon

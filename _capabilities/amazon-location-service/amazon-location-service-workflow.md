@@ -9,25 +9,25 @@ personas: []
 provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
-- routing
-- geocoding
-- geofencing
-- map resources describe map
-- integrates api into applications
-- creates a map resource in your aws account.
-- amazon location service
-- map resources list maps
-- Administrator
-- Developer
-- location
-- unified workflow for amazon location service resource management
-- map resources create map
-- retrieves the map resource details.
-- manages resources and configurations
-- workflow
-- lists map resources in your aws account.
-- maps
 - aws
+- amazon location service
+- Administrator
+- retrieves the map resource details.
+- location
+- maps
+- workflow
+- manages resources and configurations
+- unified workflow for amazon location service resource management
+- geofencing
+- integrates api into applications
+- geocoding
+- map resources list maps
+- map resources describe map
+- creates a map resource in your aws account.
+- map resources create map
+- Developer
+- lists map resources in your aws account.
+- routing
 slug: amazon-location-service-workflow
 tags:
 - Amazon Location Service

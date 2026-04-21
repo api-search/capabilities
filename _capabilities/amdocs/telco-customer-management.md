@@ -33,44 +33,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- manages telco bss operations and system configuration
-- list customers
-- retrieve billing invoices for a customer
-- list all customer accounts
-- list subscriptions for a customer
-- unified bss workflow for customer onboarding, billing, and service management
-- browse available products and plans
-- mvno
-- customer billing invoices
-- bss
-- create customer
-- manages invoicing, payments, and revenue assurance
-- billing
-- oss
-- customer management
-- saas
-- amdocs
-- list invoices
-- Billing Team
-- add a service subscription
-- handles customer inquiries and account management
-- list invoices for a customer
-- customer subscription management
-- onboard a new telecom customer
-- add a service subscription to a customer account
 - BSS Operator
 - browse the service catalog and available plans
-- 5g
-- telecom customer account management
-- telecom
-- list telecom customer accounts
-- product and service catalog
-- list subscriptions
-- list products
-- list service subscriptions for a customer
 - onboard a new customer
-- create subscription
+- browse available products and plans
+- amdocs
+- mvno
+- oss
+- unified bss workflow for customer onboarding, billing, and service management
+- telecom
+- customer subscription management
+- 5g
+- customer management
+- list subscriptions
+- add a service subscription to a customer account
+- list subscriptions for a customer
+- telecom customer account management
+- billing
+- list customers
+- list products
+- onboard a new telecom customer
+- manages telco bss operations and system configuration
+- list invoices for a customer
+- customer billing invoices
 - Customer Care Agent
+- add a service subscription
+- list invoices
+- handles customer inquiries and account management
+- manages invoicing, payments, and revenue assurance
+- Billing Team
+- create subscription
+- list telecom customer accounts
+- retrieve billing invoices for a customer
+- list all customer accounts
+- list service subscriptions for a customer
+- create customer
+- bss
+- product and service catalog
+- saas
 slug: telco-customer-management
 tags:
 - Amdocs

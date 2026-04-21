@@ -33,46 +33,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- issue a new certificate
-- list all private certificate authorities
+- revoke certificate
 - create certificate authority
-- issues certificates for internal services and manages certificate lifecycle
-- certificate management
-- iot
-- retrieve an issued certificate by arn
-- list all certificate authorities
+- certificate lifecycle management
+- certificate authority
+- issue certificate
+- aws
 - x.509
-- private pki infrastructure management workflow
 - Platform Engineer
 - list cas
-- security
-- get certificate authority details
+- retrieve an issued certificate by arn
+- revoke a certificate
+- certificates
+- create a new private certificate authority in the ca hierarchy
+- describe certificate authority
+- iot
 - pki
-- amazon
-- issue certificate
+- get certificate authority details
+- Security Engineer
+- list all certificate authorities
+- retrieve a certificate
 - issue a new x.509 certificate from a certificate authority
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- revoke certificate
+- create a new private certificate authority
 - revoke an issued certificate
 - certificate authority hierarchy management
+- private pki infrastructure management workflow
+- certificate management
 - create ca
-- Security Engineer
-- individual certificate authority operations
-- retrieve a certificate
-- describe certificate authority
-- certificates
-- create a new private certificate authority
-- create a new private certificate authority in the ca hierarchy
-- list certificate authorities
-- aws
-- get certificate
-- tls
-- certificate authority
-- certificate lifecycle management
-- revoke a certificate
 - describe ca
+- security
+- get certificate
+- list certificate authorities
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- issues certificates for internal services and manages certificate lifecycle
+- amazon
+- tls
+- issue a new certificate
 - get details about a specific certificate authority
 - individual certificate operations
+- individual certificate authority operations
+- list all private certificate authorities
 slug: pki-management
 tags:
 - Amazon

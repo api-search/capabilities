@@ -57,51 +57,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- subscribe to channel
-- create comment
-- update an existing comment
-- subscribe
-- subscribe to a youtube channel
-- list comments
-- update comment
-- unsubscribe from a channel
-- list youtube channels
-- list comments on a video or channel
-- delete a comment
-- list channels
-- set moderation status on comments
-- manage channel information
-- community
-- update comment thread
-- subscriptions
-- list channel subscriptions
-- update channel settings
-- google
-- youtube
-- update a comment
-- unsubscribe from a youtube channel
 - update a comment thread
-- unsubscribe
-- set moderation status
-- unsubscribe from channel
-- social
-- manage individual comments
-- update channel
-- create comment thread
-- subscribe to a channel
-- videos
-- manage comment threads
-- create a new comment thread
-- delete comment
-- video
-- list subscriptions
-- post a new comment
-- manage channel subscriptions
-- list comment threads
+- update comment thread
 - streaming
 - comments
+- list comments on a video or channel
+- update a comment
+- unsubscribe from a youtube channel
+- list youtube channels
+- social
+- unsubscribe from channel
 - media
+- unsubscribe from a channel
+- subscriptions
+- unsubscribe
+- update channel settings
+- list subscriptions
+- google
+- update an existing comment
+- videos
+- list comments
 - moderation
+- post a new comment
+- list channels
+- youtube
+- subscribe to channel
+- delete comment
+- subscribe to a channel
+- video
+- create a new comment thread
+- set moderation status
+- manage comment threads
+- set moderation status on comments
+- manage channel subscriptions
+- manage channel information
+- create comment thread
+- update comment
+- create comment
+- list comment threads
+- community
+- manage individual comments
+- subscribe to a youtube channel
+- delete a comment
+- list channel subscriptions
+- update channel
+- subscribe
 slug: community-engagement
 tags:
 - YouTube

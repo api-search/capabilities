@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
+- initiate the device authorization grant flow.
 - revoke an existing oauth access or refresh token.
-- get profile information about the currently authenticated user.
-- get profile information about the authenticated user.
-- get token info
+- code
+- oauth 2.0 authorization code flow initiation.
+- source control
 - authenticated user profile information.
 - initiate the device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
 - token revocation.
-- tokens
-- authorize device
-- gitlab
-- get information about the current access token.
-- platform
+- get profile information about the currently authenticated user.
 - exchange an authorization code, device code, or refresh token for an access token.
-- authorize oauth
-- oauth token exchange and creation.
-- identity
-- device authorization grant flow for input-constrained devices.
-- source control
-- get user info
-- initiate the device authorization grant flow.
-- authentication
-- initiate the oauth 2.0 authorization code flow.
-- software development
-- oauth
-- oauth 2.0 authorization code flow initiation.
-- token introspection and validation.
-- exchange token
 - revoke an oauth access or refresh token.
-- revoke token
+- authorize oauth
+- token introspection and validation.
+- software development
+- gitlab
+- device authorization grant flow for input-constrained devices.
+- get profile information about the authenticated user.
+- platform
 - get information about the current oauth access token including scopes and expiration.
-- code
+- initiate the oauth 2.0 authorization code flow.
+- exchange token
+- get information about the current access token.
+- authentication
+- revoke token
+- oauth
+- authorize device
+- get user info
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get token info
+- tokens
+- identity
+- oauth token exchange and creation.
 slug: authentication-and-identity
 tags:
 - Gitlab

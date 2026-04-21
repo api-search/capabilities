@@ -10,12 +10,12 @@ provider_name: Amazon Cloud WAN
 provider_slug: amazon-cloud-wan
 search_terms:
 - wide area network
-- Network Engineer
+- sd-wan
 - amazon cloud wan
 - aws
-- amazon web services
 - networking
-- sd-wan
+- Network Engineer
+- amazon web services
 - cloud wan
 slug: wan-management
 tags:

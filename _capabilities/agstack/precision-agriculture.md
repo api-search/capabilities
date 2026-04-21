@@ -9,10 +9,10 @@ provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
 - linux foundation
-- geospatial
-- linked data
-- agriculture
 - precision agriculture
+- geospatial
+- agriculture
+- linked data
 - open source
 slug: precision-agriculture
 tags: []

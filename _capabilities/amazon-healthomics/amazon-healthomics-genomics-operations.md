@@ -9,10 +9,10 @@ provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
 - bioinformatics
-- genomics
 - aws
 - healthcare
 - cloud computing
+- genomics
 - life sciences
 slug: amazon-healthomics-genomics-operations
 tags: []

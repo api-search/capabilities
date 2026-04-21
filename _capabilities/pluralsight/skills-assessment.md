@@ -23,29 +23,29 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- query practice exams
-- skills assessment
-- technology
-- courses
-- learning
-- role iq
-- skill iq
-- query skill assessments and skill iq scores
-- role iq assessments, role catalogs, and skill assignments
-- skill iq assessments, scores, and competency measurements
-- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
-- engineering metrics
-- video training
-- manage role iq
-- practice exams
-- pluralsight
-- query practice exam attempt data and results
-- query skill assessments, skill iq scores, assessment catalogs, and competency measurements.
-- query skills assessment
-- query practice exam attempt data including scores and results.
-- query and manage role iq assessments and role associations
-- education
 - practice exam attempts, scores, and results
+- query practice exam attempt data including scores and results.
+- role iq
+- query skills assessment
+- query and manage role iq assessments and role associations
+- query skill assessments and skill iq scores
+- skill iq assessments, scores, and competency measurements
+- practice exams
+- education
+- video training
+- query practice exam attempt data and results
+- courses
+- technology
+- manage role iq
+- role iq assessments, role catalogs, and skill assignments
+- skills assessment
+- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
+- query practice exams
+- skill iq
+- query skill assessments, skill iq scores, assessment catalogs, and competency measurements.
+- engineering metrics
+- pluralsight
+- learning
 slug: skills-assessment
 tags:
 - Pluralsight

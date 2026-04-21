@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- OTA Developer
-- travel
-- hotels
-- developer building conversational travel assistants for flight search.
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- airlines
-- search for available flight offers.
-- search
-- gds
-- pricing
-- confirm current price and availability.
 - advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- confirm current price and availability.
+- gds
 - flights
-- confirm pricing for a selected flight offer.
-- Travel Chatbot Developer
-- search flights advanced
-- amadeus
-- flight offer discovery and comparison.
-- price confirmation and validation before booking.
-- upsell, seat selection, and add-on services.
-- search available flights by origin, destination, and date.
-- confirm price
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- confirm flight price
-- search flights
-- travel technology
-- shopping
 - developer building online travel agency flight search and booking flows.
 - booking
+- search
+- OTA Developer
+- developer building conversational travel assistants for flight search.
+- flight offer discovery and comparison.
+- upsell, seat selection, and add-on services.
+- search available flights by origin, destination, and date.
+- pricing
 - complete flight shopping flow from search through price confirmation.
+- shopping
+- travel technology
+- airlines
+- hotels
+- confirm flight price
+- search flights advanced
+- amadeus
+- travel
+- confirm price
+- search for available flight offers.
+- search flights
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- confirm pricing for a selected flight offer.
+- price confirmation and validation before booking.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- Travel Chatbot Developer
 slug: flight-shopping
 tags:
 - Amadeus

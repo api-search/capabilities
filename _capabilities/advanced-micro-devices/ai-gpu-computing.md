@@ -25,46 +25,46 @@ personas: []
 provider_name: Advanced Micro Devices
 provider_slug: advanced-micro-devices
 search_terms:
-- ai researcher
-- ml engineer
+- gpu instance management.
+- create instance
 - deploy a large language model on amd instinct gpus using vllm for high-throughput inference.
+- researcher training and evaluating large language models on amd gpu clusters
+- ai
+- check the current status and configuration of an amd gpu compute instance.
+- terminate instance
 - terminate an amd gpu compute instance to stop billing and release resources.
-- list ai models deployed and serving on amd instinct gpus.
-- machine learning
+- deploy model
 - ai model deployment.
-- list gpu instances.
-- list instances
-- launch an amd instinct gpu instance (mi300x, mi250, mi210) for ai training or hpc.
-- amd
-- check available amd developer cloud gpu credit balance and usage history.
-- list deployed ai models.
-- list deployed models
-- hpc
-- create a gpu instance.
 - deploy an ai model.
 - check credit balance
-- monitor gpu performance
-- developer running scientific simulations and hpc workloads with rocm
-- check the current status and configuration of an amd gpu compute instance.
-- get real-time gpu utilization, memory usage, temperature, and power draw for an amd instance.
-- unified workflow for ai and hpc workloads on amd instinct gpus
-- list gpu instances
-- deploy llm
-- engineer deploying and optimizing ml inference workloads on amd hardware
-- deploy model
-- create instance
-- list models
-- ai
-- list all amd instinct gpu compute instances in the developer cloud.
-- gpu
-- hpc developer
-- gpu instance management.
-- semiconductor
-- create gpu instance
-- get gpu instance status
 - cloud computing
-- researcher training and evaluating large language models on amd gpu clusters
-- terminate instance
+- launch an amd instinct gpu instance (mi300x, mi250, mi210) for ai training or hpc.
+- list all amd instinct gpu compute instances in the developer cloud.
+- unified workflow for ai and hpc workloads on amd instinct gpus
+- ml engineer
+- semiconductor
+- gpu
+- list gpu instances
+- create a gpu instance.
+- list ai models deployed and serving on amd instinct gpus.
+- list gpu instances.
+- hpc
+- monitor gpu performance
+- check available amd developer cloud gpu credit balance and usage history.
+- get gpu instance status
+- deploy llm
+- list deployed models
+- developer running scientific simulations and hpc workloads with rocm
+- list instances
+- machine learning
+- list models
+- list deployed ai models.
+- get real-time gpu utilization, memory usage, temperature, and power draw for an amd instance.
+- hpc developer
+- create gpu instance
+- ai researcher
+- amd
+- engineer deploying and optimizing ml inference workloads on amd hardware
 slug: ai-gpu-computing
 tags:
 - AMD

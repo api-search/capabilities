@@ -37,53 +37,53 @@ personas: []
 provider_name: Microsoft Power Platform APIs
 provider_slug: power-platform
 search_terms:
-- copilot studio
-- list billing policies
-- no-code
-- delete environment
-- list all billing policies
-- administration
-- power pages
-- get install status
-- dataverse
-- get details for a specific billing policy
 - power platform
+- check the installation status of an application package
 - update an existing billing policy
 - list packages
-- environment management
-- single environment operations
-- get environment details
-- list billing policies for the tenant
-- list all environments
-- microsoft
-- delete a power platform environment
-- low-code
-- list application packages
-- create a billing policy
-- install an application package in an environment
-- billing policy management
-- list power automate flow runs by workflow id
-- list application packages for an environment
-- create billing policy
+- copilot studio
+- list tenant packages
 - get environment
-- get details for a specific power platform environment
-- application package management
+- delete environment
 - flow run monitoring
 - list installable application packages for the tenant
-- list environments
-- create a new billing policy linking azure subscription
-- delete an environment
-- install application package
-- update billing policy
+- administration
 - get billing policy
-- list flow runs for an environment
-- list tenant packages
-- list flow runs
+- delete a power platform environment
+- install an application package in an environment
+- list all environments
+- delete an environment
+- get details for a specific power platform environment
+- get install status
+- environment management
+- list application packages for an environment
+- get environment details
+- create a billing policy
+- power pages
+- list billing policies for the tenant
 - list all power platform environments in the tenant
+- create a new billing policy linking azure subscription
+- low-code
+- single environment operations
+- list power automate flow runs by workflow id
+- billing policy management
+- application package management
+- list all billing policies
 - governance
-- business applications
-- check the installation status of an application package
+- update billing policy
+- install application package
+- list environments
+- get details for a specific billing policy
+- list flow runs
+- microsoft
+- no-code
+- list application packages
 - list application packages available in an environment
+- list billing policies
+- dataverse
+- business applications
+- list flow runs for an environment
+- create billing policy
 slug: platform-administration
 tags:
 - Microsoft

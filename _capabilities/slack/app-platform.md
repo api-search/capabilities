@@ -31,43 +31,43 @@ provider_name: Slack
 provider_slug: slack
 search_terms:
 - api test
-- manage ai assistant threads.
 - connect to real-time messaging.
-- open view
 - open dialog
-- open a modal view.
-- view management.
-- automation
-- list apps
-- collaboration
-- manage workflows
-- open a dialog.
-- platform
-- manage workflows.
-- get bot info
-- test api connectivity.
-- list apps.
-- chat
-- list workflows.
 - manage assistant
-- manage voice/video calls.
-- list installed apps.
-- complete function
+- list apps
 - app development
-- app management.
-- open a view.
-- messaging
-- manage calls
-- productivity
+- manage ai assistant threads.
 - workflow management.
 - rtm connect
-- list workflows
-- get bot information.
-- bots
-- slack
+- app management.
 - team communication
+- productivity
+- open a view.
+- platform
+- list workflows
+- chat
+- list installed apps.
+- get bot info
+- manage workflows.
+- open view
 - t1
+- bots
+- messaging
+- view management.
+- manage voice/video calls.
+- open a modal view.
+- automation
+- list apps.
+- manage workflows
+- complete function
+- test api connectivity.
+- list workflows.
+- get bot information.
+- collaboration
 - complete a workflow function.
+- open a dialog.
+- manage calls
+- slack
 slug: app-platform
 tags:
 - Slack

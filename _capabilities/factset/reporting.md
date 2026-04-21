@@ -26,40 +26,40 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- entity report
-- generate estimates report.
-- market data
-- factset
-- portfolio analytics
-- generate chart
-- build a custom report book.
-- generate a chart.
-- estimates report
-- report builder
-- generate capital structure report.
-- generate ownership report.
-- vermilion report
-- generate vermilion report.
-- capital structure report
-- investment analytics
 - visualization
-- generate fundamentals report.
-- research
-- reporting
-- list available reports.
-- fundamentals report
-- list reports
-- ownership report
-- generate a digital card.
-- financial data
-- chart generation.
 - generate overview report.
-- generate digital card
-- financial
-- build book
+- generate vermilion report.
+- estimates report
+- chart generation.
+- research
+- entity report
+- capital structure report
 - generate entity report.
+- generate estimates report.
 - report generation.
+- list reports
+- generate capital structure report.
+- build book
+- financial data
+- report builder
+- financial
+- market data
+- ownership report
+- generate digital card
+- fundamentals report
+- portfolio analytics
 - overview report
+- generate chart
+- factset
+- reporting
+- generate a digital card.
+- build a custom report book.
+- list available reports.
+- generate a chart.
+- vermilion report
+- investment analytics
+- generate ownership report.
+- generate fundamentals report.
 slug: reporting
 tags:
 - FactSet

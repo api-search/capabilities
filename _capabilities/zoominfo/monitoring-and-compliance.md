@@ -42,46 +42,46 @@ provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
 - list all configured webhook subscriptions.
-- check compliance status for specified contacts.
-- get subscription types
-- create a new webhook subscription for data change notifications.
-- validate a webhook target url.
-- list all webhook subscriptions.
-- list webhooks
-- lead generation
-- data
+- api usage tracking.
+- company data
 - sales intelligence
-- check data compliance status for specified contacts.
+- monitoring
+- list webhooks
+- get available webhook subscription types.
+- available webhook subscription types.
+- get api usage data and consumption metrics.
+- update webhook
 - validate target url
+- individual webhook management.
 - get usage
 - validate a webhook target url is reachable.
-- webhook subscription management.
-- delete webhook
-- delete a webhook subscription.
-- individual webhook management.
-- api usage tracking.
-- available webhook subscription types.
-- get api usage data.
-- get available webhook subscription types.
-- update an existing webhook subscription.
-- get api usage data and consumption metrics.
-- contacts
-- compliance
-- api usage
-- b2b data
-- company data
-- update webhook
-- b2b
-- create a new webhook subscription.
-- check compliance
+- check data compliance status for specified contacts.
 - marketing intelligence
-- create webhook
-- data compliance operations.
-- monitoring
-- webhook target url validation.
-- webhooks
-- contact database
+- validate a webhook target url.
+- update an existing webhook subscription.
+- delete a webhook subscription.
 - zoominfo
+- create a new webhook subscription.
+- delete webhook
+- create a new webhook subscription for data change notifications.
+- b2b
+- webhooks
+- webhook target url validation.
+- api usage
+- check compliance status for specified contacts.
+- list all webhook subscriptions.
+- data
+- compliance
+- get api usage data.
+- contact database
+- get subscription types
+- create webhook
+- contacts
+- b2b data
+- webhook subscription management.
+- lead generation
+- check compliance
+- data compliance operations.
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

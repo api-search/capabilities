@@ -49,47 +49,47 @@ personas: []
 provider_name: Amazon EC2 Image Builder
 provider_slug: amazon-ec2-image-builder
 search_terms:
-- CreateInfrastructureConfiguration
-- DeleteContainerRecipe
+- engineers managing amazon ec2 image builder resources.
+- CreateImageRecipe
+- amazon ec2 image builder create component
+- aws
+- create distribution configuration
 - CreateContainerRecipe
-- create image pipeline
-- create infrastructure configuration
-- image building
-- amazon web services
+- container images
+- CancelImageCreation
+- amazon ec2 image builder create image pipeline
+- cancel image creation
+- workflow capability for image pipeline management.
 - amazon ec2 image builder cancel image creation
-- automation
-- amazon ec2 image builder create infrastructure configuration
-- create component
-- amazon ec2 image builder create container recipe
-- CreateComponent
+- amazon ec2 image builder create distribution configuration
 - create image
+- image building
+- CreateImagePipeline
+- create container recipe
+- create image pipeline
+- CreateImage
+- create component
+- DeleteContainerRecipe
+- create infrastructure configuration
+- delete component
+- image pipeline management business domain.
+- amazon web services
 - DeleteComponent
 - delete container recipe
-- amazon ec2 image builder create image pipeline
-- delete component
-- CreateImage
-- engineers managing amazon ec2 image builder resources.
-- amazon ec2 image builder create image recipe
-- container images
-- cancel image creation
-- create distribution configuration
-- amazon ec2 image builder create distribution configuration
 - amazon ec2 image builder delete component
-- CancelImageCreation
-- ec2
-- amazon ec2 image builder delete container recipe
-- amazon ec2 image builder
-- create container recipe
-- image pipeline management business domain.
-- create image recipe
-- aws
 - CreateDistributionConfiguration
+- amazon ec2 image builder create image recipe
+- CreateComponent
+- automation
+- create image recipe
+- amazon ec2 image builder delete container recipe
 - virtual machine images
-- amazon ec2 image builder create component
-- CreateImagePipeline
 - amazon ec2 image builder create image
-- CreateImageRecipe
-- workflow capability for image pipeline management.
+- CreateInfrastructureConfiguration
+- amazon ec2 image builder create container recipe
+- amazon ec2 image builder create infrastructure configuration
+- ec2
+- amazon ec2 image builder
 slug: ec2-image-builder-management
 tags:
 - Amazon EC2 Image Builder

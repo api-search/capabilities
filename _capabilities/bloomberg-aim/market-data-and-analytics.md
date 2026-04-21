@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- historical data access
-- get historical data
-- search fields
-- create data request
-- get intraday bars
-- financial analytics
-- search available bloomberg data fields
-- reference data
-- market data
-- get reference data for securities via http api
-- portfolio management
-- trading
-- list catalogs
-- get data catalog details
-- search for securities and instruments
-- get catalog
-- search instruments
-- create universe
-- get historical data for securities
-- list available data catalogs
-- data distributions
-- get intraday bar data
-- create a bloomberg data request
 - list field lists for data requests
-- get historical end-of-day data
-- bloomberg
-- list completed data distributions
-- field list management
 - get reference data
-- reference data access
-- financial data
-- list field lists
-- list available bloomberg data catalogs
-- list universes
-- get reference data for securities
-- order management
-- data catalog browsing
 - security universe management
+- get historical data
+- get data catalog details
+- get historical end-of-day data
+- order management
+- list completed data distributions
+- create universe
+- get intraday bars
+- list available bloomberg data catalogs
+- create a bloomberg data request
+- search instruments
+- search for securities and instruments
+- get reference data for securities
+- trading
+- reference data
+- create data request
+- get intraday bar data
+- list available data catalogs
+- financial data
+- historical data access
+- data catalog browsing
 - list distributions
-- create a security universe for data requests
+- search available bloomberg data fields
+- market data
+- list field lists
+- get historical data for securities
+- field list management
+- get catalog
+- portfolio management
+- reference data access
+- list catalogs
+- list universes
+- search fields
+- get reference data for securities via http api
+- financial analytics
 - list security universes
+- create a security universe for data requests
+- data distributions
+- bloomberg
 slug: market-data-and-analytics
 tags:
 - Bloomberg

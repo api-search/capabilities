@@ -37,70 +37,70 @@ personas: []
 provider_name: Alteryx
 provider_slug: alteryx
 search_terms:
-- collection management
-- delete a workflow schedule
-- list all users
-- list all workflows
-- create job
-- data science
-- machine learning
 - create a new workflow schedule
-- delete user
-- alteryx
-- list users
-- delete schedule
-- predictive analytics
-- list all schedules
-- get execution jobs for a workflow
-- workflow management
-- automation
-- upload workflow
-- get workflow
-- user management
-- create credential
-- create collection
-- create a new collection
-- list all workflows on the alteryx server
-- delete workflow
-- delete a user
-- list all workflow schedules
-- create a new user
-- individual workflow operations
-- create schedule
-- data engineering
-- create user
-- delete collection
-- create a new schedule
-- download a workflow package
-- deactivate user
-- schedule management
-- delete a workflow
-- create and execute a workflow job
-- delete a collection
-- get analytic app questions for a workflow
-- update workflow metadata
-- list credentials
-- download workflow
 - get user details
+- download workflow
+- update workflow metadata
+- delete a user
+- get analytic app questions for a workflow
+- collection management
+- data preparation
+- data science
+- create a new schedule
+- list schedules
+- create and execute a workflow job
+- list all users
+- get workflow jobs
+- delete collection
+- analytics
+- list all workflow schedules
+- alteryx
+- list workflows
+- get execution jobs for a workflow
+- create job
+- upload workflow
+- upload a new workflow package
+- get workflow questions
+- delete a collection
+- etl
+- list all workflows on the alteryx server
+- delete schedule
+- create a new credential
+- get workflow details
+- create schedule
+- create a new collection
+- delete a workflow
+- list credentials
+- get workflow
+- list all schedules
+- data engineering
+- create credential
+- deactivate user
+- upload a new workflow
+- user management
+- list all stored credentials
 - update workflow
 - get user
-- get workflow questions
-- get details of a specific workflow
-- list collections
-- list all collections
-- get workflow details
-- list workflows
-- list all stored credentials
-- create a new credential
-- deactivate a user account
-- upload a new workflow
-- get workflow jobs
-- list schedules
+- machine learning
+- predictive analytics
 - list all users on the server
-- analytics
-- upload a new workflow package
-- data preparation
-- etl
+- automation
+- list all workflows
+- schedule management
+- list all collections
+- create collection
+- list collections
+- delete a workflow schedule
+- create user
+- individual workflow operations
+- create a new user
+- delete user
+- deactivate a user account
+- download a workflow package
+- delete workflow
+- get details of a specific workflow
+- list users
+- workflow management
 slug: analytics-automation
 tags:
 - Alteryx

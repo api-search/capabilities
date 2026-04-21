@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- open banking
-- create a unified checkout session supporting multiple payment methods
-- create a new checkout session
-- get payment details
 - fraud detection
-- register a contactless reader device
-- payments
-- process a payment through the gateway
-- process payment
-- buy-now-pay-later installment plans
-- credit cards
-- get payment
-- financial services
-- create checkout session
-- process cloud transaction
-- qr code payment acceptance
-- payment processing
-- unified checkout sessions
-- create a new checkout session for a merchant
-- checkout session management
-- create unified session
-- generate qr code
-- generate a merchant-presented qr code for payment
-- process a cloud commerce transaction
-- process a payment through the mastercard gateway
-- generate a merchant qr code for payment
-- digital identity
-- create an installment plan
 - merchant
+- get payment
+- process a payment through the gateway
+- process a payment through the mastercard gateway
+- create a new checkout session for a merchant
 - mastercard
-- create a unified checkout session
-- create a buy-now-pay-later installment plan
+- get payment details
+- financial services
 - checkout
-- e-commerce
+- create a unified checkout session
+- process a cloud commerce transaction
+- credit cards
+- buy-now-pay-later installment plans
+- digital identity
+- create checkout session
+- generate qr code
+- payment processing
+- qr code payment acceptance
+- payments
+- process cloud transaction
 - retrieve payment transaction details
 - create installment plan
+- create a buy-now-pay-later installment plan
+- create a unified checkout session supporting multiple payment methods
+- open banking
+- generate a merchant qr code for payment
+- create a new checkout session
+- e-commerce
+- unified checkout sessions
+- create unified session
+- generate a merchant-presented qr code for payment
+- checkout session management
+- process payment
 - register contactless reader
+- register a contactless reader device
+- create an installment plan
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

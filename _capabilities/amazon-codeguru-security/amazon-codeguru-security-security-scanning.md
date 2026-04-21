@@ -9,35 +9,35 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- sast
-- create scan
-- get metrics summary
-- get details about multiple findings
-- get security findings from a scan
-- list security scans
-- get scan
-- Developer
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
-- devsecops
-- security
-- amazon
-- get details about a security scan
-- list findings by account
-- batch get findings
-- developer tools
-- list scans
-- get security metrics summary
-- devsecops engineer persona.
-- Security Engineer
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
-- list findings across all scans in the account
-- security engineer persona.
 - aws
-- get findings
-- create a new security scan
-- developer persona.
+- list security scans
+- get security findings from a scan
 - DevSecOps Engineer
+- devsecops
+- list findings by account
+- Security Engineer
+- create scan
+- batch get findings
+- developer persona.
+- devsecops engineer persona.
+- get details about multiple findings
+- list scans
+- security
+- get metrics summary
+- get scan
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
+- amazon
+- Developer
+- security engineer persona.
+- get security metrics summary
+- sast
+- create a new security scan
+- developer tools
+- list findings across all scans in the account
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
 - code analysis
+- get findings
+- get details about a security scan
 slug: amazon-codeguru-security-security-scanning
 tags:
 - Amazon

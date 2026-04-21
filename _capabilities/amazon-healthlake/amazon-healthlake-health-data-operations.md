@@ -9,11 +9,11 @@ provider_name: Amazon HealthLake
 provider_slug: amazon-healthlake
 search_terms:
 - health data
-- hipaa
-- fhir
 - aws
 - healthcare
+- fhir
 - cloud computing
+- hipaa
 slug: amazon-healthlake-health-data-operations
 tags: []
 tools: []

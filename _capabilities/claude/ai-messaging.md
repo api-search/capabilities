@@ -41,55 +41,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- create message
-- large language models
-- create a message batch.
-- get message batch status and details.
-- machine learning
-- retrieve message batch
-- get model metadata.
-- cancel message batch
-- get batch status.
-- count message tokens
-- delete batch
-- list message batches.
-- delete a batch.
-- retrieve message batch results
-- model details.
-- get model
-- individual batch management.
-- list available models.
-- get batch
+- cancel an in-progress batch.
 - list message batches
-- generative ai
+- list message batches.
+- conversational ai
+- create a message batch.
+- natural language processing
+- delete a batch.
+- get model
+- chatbot
+- list all message batches.
+- retrieve message batch results
 - delete a completed batch.
+- count tokens
+- ai
+- send a message to claude and receive a response.
+- get message batch status and details.
 - list available claude models.
-- create a batch of message requests.
+- cancel message batch
+- create batch
+- count message tokens.
+- model details.
+- model discovery.
+- count tokens in a message.
+- artificial intelligence
 - claude
 - message operations.
+- count message tokens
+- generative ai
+- get batch status.
+- delete batch
 - messaging
-- conversational ai
+- get batch
+- list available models.
+- retrieve message batch
+- anthropic
 - list batches
+- create a batch of message requests.
+- create message
+- get model metadata.
+- machine learning
+- batch management.
+- list models
+- delete message batch
+- large language models
+- token counting.
+- individual batch management.
 - create message batch
 - get completed batch results.
-- token counting.
-- list models
-- list all message batches.
-- ai
-- delete message batch
-- count tokens
 - create a message.
-- chatbot
-- count message tokens.
-- create batch
-- batch management.
-- artificial intelligence
-- model discovery.
-- natural language processing
-- send a message to claude and receive a response.
-- cancel an in-progress batch.
-- anthropic
-- count tokens in a message.
 slug: ai-messaging
 tags:
 - Anthropic

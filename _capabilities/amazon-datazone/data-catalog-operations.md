@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon DataZone
 provider_slug: amazon-datazone
 search_terms:
-- data catalog
-- data sharing
 - data management
 - aws
 - data governance
+- data sharing
 - analytics
+- data catalog
 slug: data-catalog-operations
 tags: []
 tools: []

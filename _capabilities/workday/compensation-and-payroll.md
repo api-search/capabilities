@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- payroll get pay group
-- payroll list inputs
-- request a one-time payment
-- submit a benefits change request
-- comp list scorecards
-- get pay group details
-- payroll get pay group details
-- payroll
-- list dependents
-- benefits list elections
-- list pay groups
-- financial management
-- list compensation grades
-- benefits list plans
-- list benefit plans
-- list compensation scorecards
-- benefits change
-- workday
-- payroll list pay groups
-- saas
-- list payroll inputs
+- benefits
 - list all pay groups
-- hcm
-- list all benefit plans
-- get eligible benefit plans for a worker
-- list pay slips
-- benefits list dependents
-- compensation plans
-- benefits get eligible plans
+- request a one-time payment
 - enterprise software
 - payroll list pay slips
-- list benefit elections
-- pay groups
-- submit a compensation change request
-- list plans
-- list compensation plans
-- benefit plans
-- comp request one time payment
-- benefits
-- compensation
-- comp list plans
 - get a pay group by id
+- payroll get pay group
+- comp request one time payment
+- benefits list elections
+- saas
+- get eligible benefit plans for a worker
+- list all benefit plans
+- list plans
+- benefit plans
 - cloud computing
 - comp request change
+- benefits get eligible plans
+- comp list plans
+- list compensation grades
+- compensation plans
 - comp list grades
+- payroll list pay groups
+- list compensation scorecards
+- hcm
+- payroll get pay group details
+- benefits list plans
+- benefits change
+- financial management
+- get pay group details
+- payroll list inputs
+- submit a benefits change request
+- list payroll inputs
+- list pay slips
+- payroll
+- comp list scorecards
+- list benefit plans
+- compensation
+- list benefit elections
+- list pay groups
+- list compensation plans
+- submit a compensation change request
+- list dependents
+- pay groups
+- benefits list dependents
+- workday
 slug: compensation-and-payroll
 tags:
 - Workday

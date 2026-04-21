@@ -17,43 +17,43 @@ personas: []
 provider_name: SAP S/4HANA
 provider_slug: sap-s4hana
 search_terms:
-- create sales order
-- finance
-- create a new sales order
-- create a sales order
-- cloud
+- plant maintenance
 - manufacturing
-- order-to-cash
-- sap
-- retrieve a list of sales orders
-- s/4hana
-- retrieve header pricing elements
-- update sales order
-- get sales order
-- delete a sales order
-- create sales order item
-- create a new sales order item
-- list sales order partners
+- retrieve items for a sales order
+- retrieve a single sales order by key
 - erp
-- retrieve text records for a sales order
+- list sales orders
+- sales
+- finance
+- list sales order items
+- s/4hana
+- retrieve a list of sales orders
+- create a sales order
+- list sales order partners
+- update sales order
+- create sales order item
 - human resources
 - procurement
-- logistics
-- list sales order items
-- update a sales order header
-- sales order management
-- retrieve a single sales order by key
-- inventory
+- sap
 - list sales order pricing
-- sales
+- create a new sales order item
 - delete sales order
-- list sales order texts
-- list sales orders
-- enterprise resource planning
+- cloud
+- delete a sales order
+- inventory
+- create a new sales order
+- logistics
 - retrieve partners for a sales order
-- plant maintenance
+- order-to-cash
+- sales order management
+- retrieve header pricing elements
+- enterprise resource planning
+- create sales order
+- retrieve text records for a sales order
+- get sales order
+- list sales order texts
+- update a sales order header
 - business applications
-- retrieve items for a sales order
 slug: order-to-cash
 tags:
 - SAP

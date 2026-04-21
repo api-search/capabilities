@@ -65,106 +65,106 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- update a team member.
-- bookings
-- team
-- payments
-- create a digital gift card.
-- redeem a loyalty reward.
-- square
-- update a customer profile.
 - list gift cards
-- search customers
-- search for booking availability.
-- financial technology
-- refunds
-- search customer profiles.
-- delete a customer profile.
-- create booking
-- list all gift cards.
-- create a loyalty account.
-- checkout
-- create loyalty account
-- create location
-- add points to a loyalty account.
-- update a customer.
-- update a booking.
-- webhooks
-- update team member
-- loyalty
-- invoicing
-- get loyalty program
-- terminal
-- orders
-- labor
-- merchants
-- list business locations.
-- get booking
-- get a team member.
-- manage loyalty programs.
-- update booking
-- merchant information.
-- retrieve a booking.
-- list locations
-- update customer
-- search loyalty accounts.
-- gift cards
-- create team member
-- retail
-- list customer profiles.
-- accumulate loyalty points
-- retrieve a gift card.
-- create a new customer.
-- get gift card
-- manage customers.
-- create loyalty reward
-- list customers
-- search team members
-- create a new customer profile.
-- list merchants
-- get details for a specific customer.
-- manage a specific booking.
-- retrieve the loyalty program.
-- get customer details.
-- disputes
-- search loyalty accounts
-- manage a specific customer.
-- team management
-- search availability
-- delete a customer.
-- get booking details.
-- create a loyalty reward.
-- get merchant details.
-- create gift card
-- get team member
-- inventory
-- create a team member.
-- list bookings
-- get the loyalty program.
-- manage team members.
-- list gift cards.
-- ecommerce
-- redeem loyalty reward
-- delete customer
-- point of sale
-- create a location.
-- get customer
-- subscriptions
-- create customer
-- manage gift cards.
 - manage locations.
+- bookings
+- delete a customer profile.
+- list customer profiles.
+- loyalty
+- create a loyalty reward.
+- list merchants
+- merchants
+- manage team members.
+- update booking
+- get gift card
+- list gift cards.
 - create a booking.
-- get location
-- search team members.
-- get location details.
+- retrieve a booking.
+- manage a specific customer.
+- list customers
+- get details for a specific customer.
+- webhooks
+- retail
+- merchant information.
+- create loyalty reward
+- update a booking.
+- labor
+- search customer profiles.
+- list locations
 - catalog
-- create a gift card.
-- list bookings.
+- financial technology
+- create a location.
+- checkout
+- subscriptions
+- search availability
+- create loyalty account
+- invoicing
+- manage gift cards.
+- update team member
+- terminal
+- team management
+- manage loyalty programs.
+- search loyalty accounts
+- ecommerce
+- inventory
+- point of sale
+- create a new customer.
+- manage customers.
 - locations
-- manage bookings.
-- customers
-- cancel booking
+- get team member
+- redeem loyalty reward
+- disputes
+- delete a customer.
+- create customer
+- search for booking availability.
+- search customers
+- get the loyalty program.
+- accumulate loyalty points
+- update a customer profile.
+- refunds
+- search team members
+- add points to a loyalty account.
+- square
+- get a team member.
+- gift cards
+- list business locations.
+- get customer
 - cancel a booking.
+- payments
+- get booking details.
+- team
+- redeem a loyalty reward.
+- get loyalty program
+- get customer details.
+- update a customer.
+- create team member
+- search team members.
+- list bookings.
+- list all gift cards.
+- create a new customer profile.
+- retrieve the loyalty program.
+- create a loyalty account.
+- customers
+- retrieve a gift card.
+- manage a specific booking.
+- get merchant details.
+- get location
+- update customer
+- list bookings
+- create gift card
+- create location
+- get location details.
+- delete customer
+- manage bookings.
+- create booking
+- create a team member.
+- cancel booking
+- orders
+- create a gift card.
+- get booking
+- create a digital gift card.
+- update a team member.
+- search loyalty accounts.
 slug: customer-engagement
 tags:
 - Square

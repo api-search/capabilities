@@ -9,12 +9,12 @@ provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
 - behavior driven development
-- requirements
+- quality assurance
+- testing
 - user stories
 - gherkin
+- requirements
 - agile
-- testing
-- quality assurance
 slug: requirements-management
 tags: []
 tools: []

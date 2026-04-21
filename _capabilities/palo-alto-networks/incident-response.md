@@ -177,264 +177,264 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- xsoar update incident
-- investigates dlp incidents and manages sensitive data protection policies.
-- ai security engineer
-- list playbooks
-- get investigation
-- manages logging infrastructure, integrations, and platform automation.
-- search xsoar integration instances.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- xpanse list ip ranges
-- list available playbooks in cortex xsoar.
-- get xdr audit logs.
-- unisolate endpoints and restore network connectivity.
-- xsoar create incident
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- search xdr alerts with filters.
-- search for available integrations in xsoar.
-- threat hunter
-- malware researcher
-- get xpanse audit logs.
-- get xsiam management logs
-- search xsiam alerts
-- retrieve a specific incident by id from cortex xsoar.
-- xdr run script
-- enterprise it
-- cloud security posture management, compliance monitoring, and workload protection.
-- xsiam start xql query
-- get xsiam xql query results
-- get xql query results from xdr.
-- analyzes suspicious files and samples for malware characteristics.
-- manages service accounts, roles, and access policies for platform api access.
-- xsoar search integration instances
-- xdr list alerts
-- get a specific investigation.
-- xsiam list incidents
-- get xpanse incidents.
-- search xpanse incidents.
-- get extra data for a specific xdr incident.
-- get or update a specific incident.
-- digital experience monitoring, log management, and best practice assessment.
-- xsoar create investigation
-- get xpanse audit logs
-- red team operator
-- search xsiam endpoints.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- search xsiam alerts with filters.
-- palo alto networks
-- secures ai applications with runtime scanning and vulnerability assessment.
-- list incidents
-- start an xql query on xsiam.
-- search endpoints
-- cloud security
-- get audit management logs from xpanse.
-- get xql query results from xsiam.
-- search attack surface rules
-- create a new investigation in xsoar.
-- run a playbook on an investigation in xsoar.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- cybersecurity
-- xdr
-- search xsiam incidents
-- xdr list endpoints
-- list xdr alerts with optional filters, pagination, and sorting.
-- xsoar search integrations
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- sase admin
-- xsiam get management logs
-- search xsoar integrations.
-- update an xdr incident.
-- network architect
-- data loss prevention, saas security monitoring, and identity security posture.
-- run xsoar playbooks.
-- list xsiam endpoints with filters.
-- search internet-exposed assets.
-- xpanse update incident
-- create xsoar investigations.
-- create a new incident in cortex xsoar.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- subscription manager
-- search xsiam assets.
-- proactively searches for threats and iocs across telemetry data.
-- xpanse list attack surface rules
-- run script
-- unisolate endpoints.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- isolate endpoints from the network.
-- create a new investigation in cortex xsoar.
-- browser security admin
-- retrieve a specific investigation by id from cortex xsoar.
-- get script execution results.
-- update an attack surface rule in xpanse.
-- run playbook
-- sd wan operator
-- xdr unisolate endpoints
-- isolate endpoints.
-- update attack surface rule
-- list xdr incidents.
-- start xsiam xql query
-- start an xql query on xdr.
-- list xdr endpoints with optional filters, pagination, and sorting.
-- search attack surface rules.
-- xsiam list endpoints
-- search xsiam alerts.
-- manage enterprise browser policies, user sessions, and deployments.
-- monitors network health, performance, and digital experience metrics.
-- start xql queries on xsiam.
-- xpanse list services
-- manages enterprise browser policies and secure browsing configurations.
-- iam admin
-- list xsiam assets with optional filters.
-- list available playbooks in xsoar.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- designs and implements network security architectures and policies.
-- get incident details
-- soar
-- scan endpoints.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- platform engineer
-- executes containment, eradication, and recovery actions during security incidents.
-- saas security admin
-- xdr update incident
-- xdr list incidents
-- search for integration instances in xsoar.
-- list xsiam endpoints with optional filters.
-- search xpanse incidents with filters.
-- get xsiam management logs.
-- search xsiam assets
-- create incident
-- get incident details from xdr.
-- search integration instances
-- list xsiam alerts with optional filters and pagination.
-- xpanse list exposed assets
-- initiate a scan on endpoints.
-- list xsiam incidents with optional filters and pagination.
-- xdr get script results
-- list xdr incidents with optional filters, pagination, and sorting.
-- designs sase and sd-wan network architectures for secure remote access.
-- run scripts on endpoints.
-- search xdr alerts.
-- xsiam list alerts
-- search xsiam incidents.
-- xdr isolate endpoints
-- xdr scan endpoints
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- sre
-- xdr get incident details
-- update an existing incident in cortex xsoar.
-- unisolate endpoints
-- unisolate endpoints and restore network connectivity via xdr.
-- xsoar run playbook
-- get attack surface rules from xpanse.
-- get internet exposure details for specific assets from xpanse.
-- xpanse get audit logs
-- list xdr endpoints with filters.
-- update xpanse incident
-- incident response
-- search exposed assets
-- search services
-- get script execution results from xdr.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- configure a datasource for xsiam ingestion.
-- isolate endpoints from the network via xdr.
-- xsiam get xql results
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- threat intel analyst
-- search incidents with filters.
-- run a script on endpoints.
-- detection and response
-- xsoar add entry
-- search for available integrations in cortex xsoar.
-- firewall
-- xpanse get asset details
-- cloud security engineer
-- threat intelligence
-- enterprise browser policy management and secure browsing.
-- search xdr alerts
-- search incidents
-- get internet-exposed assets from xpanse.
-- retrieve a specific investigation by id from xsoar.
-- incident management — list, search, create, and update incidents.
-- list and manage xsoar playbooks.
-- get xql query results
-- xsoar get incident
-- incident responder
-- add entry
-- conducts automated adversarial testing against ai systems and llm applications.
-- xsiam configure datasource
-- search xdr endpoints.
-- manages multi-tenant security operations at scale for managed service providers.
-- security operations
-- configure xsiam datasources.
-- mssp operator
-- ai runtime security scanning and automated red teaming for ai applications.
-- data protection analyst
-- search for integration instances in cortex xsoar.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- create an incident in xsoar.
-- list xsiam assets with filters.
-- update an attack surface rule.
-- scan endpoints
-- xsoar list playbooks
-- xdr get audit logs
-- get xdr audit logs
-- xpanse list incidents
-- update incident
-- search owned ip ranges.
-- search xpanse incidents
-- network security engineer
-- xpanse update attack surface rule
-- sase
-- configure datasource
-- isolate endpoints
-- xsiam list assets
-- run a script on endpoints via xdr.
-- add an entry to an investigation in cortex xsoar.
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- network security
-- soc
-- identity and access management, tenant hierarchies, and subscription management.
-- xsoar search incidents
-- get script results
 - get asset details
-- update an xpanse incident.
-- search ip ranges
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- get management logs from xsiam.
-- get exposed services from xpanse.
-- run a playbook on an investigation in cortex xsoar.
-- vulnerability manager
-- firewall admin
-- search integrations
-- start xql query
-- search incidents with filters in cortex xsoar.
-- soc analyst
-- network operations
-- start xql queries on xdr.
-- create investigation
-- xdr get xql results
-- compliance team
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- search xsiam endpoints
-- get details for a specific exposed asset.
-- tenant operator
-- get owned ip ranges from xpanse.
-- get audit management logs from xdr.
-- initiate a scan on endpoints via xdr.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- search xsiam incidents with filters.
-- add an entry to an investigation in xsoar.
-- xdr start xql query
-- compliance officer
-- search exposed services.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- search xdr incidents with filters.
-- xsoar get investigation
+- get investigation
 - add entries to investigations.
+- red team operator
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- xdr list alerts
+- start xql queries on xdr.
+- network architect
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- data loss prevention, saas security monitoring, and identity security posture.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- get exposed services from xpanse.
+- get management logs from xsiam.
+- xsiam list alerts
+- get audit management logs from xpanse.
+- search integrations
+- xsoar search incidents
+- search xpanse incidents.
+- retrieve a specific incident by id from cortex xsoar.
+- xsiam start xql query
+- executes containment, eradication, and recovery actions during security incidents.
+- search xsiam alerts with filters.
+- list xsiam assets with optional filters.
+- xdr get xql results
+- configure datasource
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- vulnerability manager
+- scan endpoints.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- xpanse get asset details
+- start an xql query on xdr.
+- update attack surface rule
+- run xsoar playbooks.
+- sase admin
+- secures ai applications with runtime scanning and vulnerability assessment.
+- search owned ip ranges.
+- xdr unisolate endpoints
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- detection and response
+- search incidents with filters in cortex xsoar.
+- start an xql query on xsiam.
+- cybersecurity
+- update an attack surface rule.
+- configure a datasource for xsiam ingestion.
+- configure xsiam datasources.
+- run a playbook on an investigation in xsoar.
+- update an existing incident in cortex xsoar.
+- xsoar add entry
+- run scripts on endpoints.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- get owned ip ranges from xpanse.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- list xsiam endpoints with optional filters.
+- investigates dlp incidents and manages sensitive data protection policies.
+- create a new investigation in xsoar.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- analyzes suspicious files and samples for malware characteristics.
+- get incident details from xdr.
+- search xsiam endpoints.
+- search exposed services.
+- search for integration instances in xsoar.
+- xsoar get incident
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- conducts automated adversarial testing against ai systems and llm applications.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- search attack surface rules
+- search xdr alerts
+- search for integration instances in cortex xsoar.
+- xsoar list playbooks
+- xsiam configure datasource
+- get audit management logs from xdr.
+- search internet-exposed assets.
+- xpanse list services
+- network security engineer
+- manages enterprise browser policies and secure browsing configurations.
+- list and manage xsoar playbooks.
+- initiate a scan on endpoints via xdr.
+- xdr
+- search xsiam assets.
+- ai runtime security scanning and automated red teaming for ai applications.
+- enterprise browser policy management and secure browsing.
+- start xql queries on xsiam.
+- list xsiam endpoints with filters.
+- threat intel analyst
+- xpanse update attack surface rule
+- xpanse list ip ranges
+- soar
+- search xsiam incidents.
+- platform engineer
+- create incident
+- unisolate endpoints
+- list xsiam assets with filters.
+- xdr update incident
+- update an xdr incident.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- get script execution results from xdr.
+- manages logging infrastructure, integrations, and platform automation.
+- xsiam list incidents
+- get xdr audit logs
+- get xql query results from xsiam.
+- xsoar search integration instances
+- investigates security incidents, triages alerts, and coordinates response actions.
+- retrieve a specific investigation by id from xsoar.
+- subscription manager
+- add entry
+- xsoar get investigation
+- incident responder
+- ai security engineer
+- xsoar update incident
+- run a script on endpoints.
+- list available playbooks in xsoar.
+- xdr get incident details
+- update incident
+- start xql query
+- designs and implements network security architectures and policies.
+- list incidents
+- search ip ranges
+- search endpoints
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- cloud security
+- get xsiam xql query results
+- list xdr incidents with optional filters, pagination, and sorting.
+- unisolate endpoints.
+- xsiam get management logs
+- xdr isolate endpoints
+- saas security admin
+- xpanse list incidents
+- isolate endpoints
+- run a playbook on an investigation in cortex xsoar.
+- xpanse update incident
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- run playbook
+- search for available integrations in cortex xsoar.
+- get or update a specific incident.
+- search attack surface rules.
+- manages multi-tenant security operations at scale for managed service providers.
+- xpanse get audit logs
+- manages service accounts, roles, and access policies for platform api access.
+- search for available integrations in xsoar.
+- search xsoar integration instances.
+- xdr get script results
+- get xpanse audit logs.
+- soc analyst
+- identity and access management, tenant hierarchies, and subscription management.
+- get script execution results.
+- xdr scan endpoints
+- mssp operator
+- unisolate endpoints and restore network connectivity.
+- network operations
+- xdr start xql query
+- xsoar search integrations
+- create investigation
+- list available playbooks in cortex xsoar.
+- threat intelligence
+- get xsiam management logs.
+- xsoar create incident
+- get details for a specific exposed asset.
+- sre
+- get attack surface rules from xpanse.
+- list xsiam incidents with optional filters and pagination.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- search xdr incidents with filters.
+- get a specific investigation.
+- search xdr alerts.
+- proactively searches for threats and iocs across telemetry data.
+- designs sase and sd-wan network architectures for secure remote access.
+- create a new investigation in cortex xsoar.
+- get script results
+- digital experience monitoring, log management, and best practice assessment.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- xpanse list exposed assets
+- cloud security engineer
+- isolate endpoints from the network.
+- scan endpoints
+- list playbooks
+- get xsiam management logs
+- xsoar run playbook
+- get incident details
+- search xsiam incidents with filters.
+- list xdr endpoints with optional filters, pagination, and sorting.
+- xsiam get xql results
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- run script
+- security operations
+- create an incident in xsoar.
+- soc
+- search incidents
+- search xsiam assets
+- list xdr alerts with optional filters, pagination, and sorting.
+- run a script on endpoints via xdr.
+- xdr get audit logs
+- data protection analyst
+- enterprise it
+- search incidents with filters.
+- firewall
+- get internet-exposed assets from xpanse.
+- get xql query results from xdr.
+- create a new incident in cortex xsoar.
+- retrieve a specific investigation by id from cortex xsoar.
+- search xpanse incidents
+- search services
+- search xsiam alerts
+- search xdr endpoints.
+- search exposed assets
+- add an entry to an investigation in xsoar.
+- palo alto networks
+- firewall admin
+- isolate endpoints.
+- browser security admin
+- update an attack surface rule in xpanse.
+- iam admin
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- search xsoar integrations.
+- search xsiam endpoints
+- researches threat actors, malware campaigns, and vulnerability trends.
+- network security
+- get xpanse audit logs
+- get extra data for a specific xdr incident.
+- xdr list endpoints
+- threat hunter
+- incident response
+- cloud security posture management, compliance monitoring, and workload protection.
+- get internet exposure details for specific assets from xpanse.
+- xdr list incidents
+- xdr run script
+- tenant operator
+- list xdr endpoints with filters.
+- unisolate endpoints and restore network connectivity via xdr.
+- sase
+- start xsiam xql query
+- isolate endpoints from the network via xdr.
+- initiate a scan on endpoints.
+- sd wan operator
+- get xpanse incidents.
+- create xsoar investigations.
+- xsiam list endpoints
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- search xdr alerts with filters.
+- compliance team
+- update an xpanse incident.
+- manage enterprise browser policies, user sessions, and deployments.
+- get xql query results
+- list xsiam alerts with optional filters and pagination.
+- xsiam list assets
+- xpanse list attack surface rules
+- search integration instances
+- search xpanse incidents with filters.
+- list xdr incidents.
+- compliance officer
+- search xsiam alerts.
+- xsoar create investigation
+- search xsiam incidents
+- add an entry to an investigation in cortex xsoar.
+- monitors network health, performance, and digital experience metrics.
+- incident management — list, search, create, and update incidents.
+- update xpanse incident
+- malware researcher
+- get xdr audit logs.
 slug: incident-response
 tags:
 - Palo Alto Networks

@@ -61,63 +61,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- list looks
-- update look
-- looker
-- search dashboards
-- list all saved looks.
-- get look details.
-- get dashboard details.
-- query management.
-- bi platform
-- update dashboard
-- delete dashboard
-- run query
-- delete user
-- data analytics
-- list dashboards
-- list users
-- update user
-- update a user.
-- run look
-- create query
-- list all dashboards.
-- data visualization
-- run a saved query.
-- create a query.
-- create a user.
-- look management.
-- user management.
-- create a new user.
-- individual look management.
-- delete a dashboard.
-- create a dashboard.
-- search for dashboards.
-- get query details.
-- create user
-- create dashboard
 - run a look and return results.
-- delete a user.
-- delete a look.
-- list all looks.
-- get look
-- get user details.
-- dashboard management.
-- search looks
-- get query
-- get user
-- update a look.
+- update dashboard
 - update a dashboard.
+- data analytics
+- create a new dashboard.
+- looker
+- create a dashboard.
+- update a user.
+- create a query.
+- delete a look.
+- dashboard management.
+- create dashboard
+- update user
+- list all saved looks.
+- search looks
+- run look
+- search for looks by title.
+- analytics
+- create a user.
+- bi platform
+- dashboards
+- individual look management.
+- list dashboards
+- get dashboard
+- create a new user.
+- delete dashboard
+- get user details.
+- delete a dashboard.
+- update look
+- list looks
+- get look
+- create query
+- get query
+- run query
+- individual dashboard management.
+- individual query operations.
+- user management.
+- run a saved query.
 - business intelligence
 - list all users.
+- get query details.
+- get user
+- search dashboards
+- get dashboard details.
+- delete a user.
+- data visualization
+- look management.
+- query management.
+- search for dashboards.
+- list all looks.
+- get look details.
+- delete user
 - delete look
-- get dashboard
-- search for looks by title.
-- individual dashboard management.
-- analytics
-- create a new dashboard.
-- individual query operations.
-- dashboards
+- update a look.
+- list all dashboards.
+- list users
+- create user
 slug: analytics-and-reporting
 tags:
 - Looker

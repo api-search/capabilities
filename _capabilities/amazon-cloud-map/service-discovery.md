@@ -25,37 +25,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- list all cloud map service discovery namespaces
-- create a new cloud map service within a namespace
-- list namespaces
-- engineers managing service registries and microservice infrastructure
-- devops practitioners automating service registration and health monitoring
-- discover healthy instances
-- discover healthy service instances by namespace and service name
-- manage service discovery namespaces
-- list instances
-- amazon web services
-- dns
-- dynamic microservice registration and discovery
-- Platform Engineer
-- service discovery
-- microservices
-- list services
-- register instance
-- devops
-- discover service instances
-- dynamic service registry and health-based routing
-- cloud map
-- create service
-- discover instances
-- list all namespaces
 - DevOps Engineer
-- list services registered in cloud map
+- cloud map
 - aws
-- list all instances registered with a specific cloud map service
-- manage services
+- dns
+- engineers managing service registries and microservice infrastructure
+- Platform Engineer
 - create a service
+- register instance
+- list namespaces
+- create service
+- discover healthy service instances by namespace and service name
+- create a new cloud map service within a namespace
+- dynamic service registry and health-based routing
+- list all instances registered with a specific cloud map service
+- list services
+- manage service discovery namespaces
+- list all namespaces
+- discover instances
+- devops
+- amazon web services
+- list all cloud map service discovery namespaces
+- microservices
+- list instances
 - register an instance with a cloud map service
+- list services registered in cloud map
+- service discovery
+- discover service instances
+- dynamic microservice registration and discovery
+- manage services
+- discover healthy instances
+- devops practitioners automating service registration and health monitoring
 slug: service-discovery
 tags:
 - Amazon Web Services

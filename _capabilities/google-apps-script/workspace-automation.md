@@ -49,54 +49,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- create a deployment of an apps script project
-- delete a deployment
-- get project metrics
-- script project metrics
-- list deployments of an apps script project
-- delete deployment
-- create deployment
-- update project content
-- get a specific version
-- create project
-- create a new, empty script project
-- process monitoring
-- automation
 - get a script project's metadata
-- version management
-- get version
-- run script
-- deployment management
-- google
-- get deployment
-- list processes
-- run a function in an apps script project
-- create a new immutable version
-- script project management
-- update a deployment
 - update deployment
-- get project
-- get the code content of a script project
-- update the code content of a script project
-- get a specific deployment
-- list execution processes
-- list a specific script's executed processes
-- list deployments for a script project
-- list script processes
-- get execution metrics for a script project
-- script project content
-- create a new script project
+- run a function in an apps script project
 - list versions of a script project
-- get project content
-- list deployments
-- google workspace
-- create version
-- apps script
+- get a specific version
+- script project management
+- script project details and content
 - create a new deployment
+- version management
+- list execution processes
+- create a deployment of an apps script project
+- list script processes
+- google workspace
+- delete a deployment
 - deployments
 - scripting
+- list processes
+- list deployments of an apps script project
+- get version
+- create version
+- update the code content of a script project
+- google
+- get the code content of a script project
+- create project
+- list deployments for a script project
+- list a specific script's executed processes
+- get project
+- get execution metrics for a script project
+- list deployments
+- get a specific deployment
+- deployment management
 - list versions
-- script project details and content
+- get project content
+- get project metrics
+- update a deployment
+- create a new, empty script project
+- script project content
+- apps script
+- create a new script project
+- process monitoring
+- create deployment
+- script project metrics
+- automation
+- update project content
+- delete deployment
+- run script
+- create a new immutable version
+- get deployment
 slug: workspace-automation
 tags:
 - Google

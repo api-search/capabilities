@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Transfer Family
 provider_slug: amazon-transfer-family
 search_terms:
-- ftp
-- sftp
-- aws
 - file transfer
+- aws
+- sftp
+- ftp
 slug: amazon-transfer-family-capability
 tags: []
 tools: []

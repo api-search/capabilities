@@ -30,39 +30,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list secrets
-- send batch events to adobe edge network
-- create a new event forwarding property
-- start media session
-- end media session
-- create a new event forwarding rule
-- tag management
-- adobe launch
-- list event forwarding properties
-- data collection
-- send batch events
-- end a media tracking session
-- list secrets for authenticating with forwarding destinations
-- list server-side event forwarding properties
-- send batch events to edge network
-- server-side event forwarding properties
-- secrets for event forwarding destinations
-- marketing technology
-- list event forwarding rules for a property
-- create a secret for an event forwarding destination
-- list secrets for a property
-- send interactive event
 - start a media tracking session
-- list event forwarding rules
-- send an interactive event to adobe edge network
-- event forwarding rules
-- create event forwarding property
-- event forwarding
-- edge network data ingestion
-- send an interactive event to edge network
-- edge network
 - create event forwarding rule
+- list event forwarding properties
+- tag management
+- end media session
+- send an interactive event to adobe edge network
+- edge network
+- server-side event forwarding properties
+- end a media tracking session
+- send interactive event
+- list event forwarding rules for a property
+- list secrets for a property
+- create a new event forwarding property
+- event forwarding rules
+- list secrets for authenticating with forwarding destinations
+- create a new event forwarding rule
+- secrets for event forwarding destinations
+- send an interactive event to edge network
+- start media session
+- list event forwarding rules
+- edge network data ingestion
+- data collection
+- list secrets
+- send batch events
+- create a secret for an event forwarding destination
+- create event forwarding property
+- marketing technology
+- send batch events to edge network
+- send batch events to adobe edge network
+- adobe launch
+- event forwarding
 - create secret
+- list server-side event forwarding properties
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

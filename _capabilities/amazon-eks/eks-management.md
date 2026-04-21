@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon EKS
 provider_slug: amazon-eks
 search_terms:
-- eks
-- kubernetes platform management business domain for amazon eks.
-- ListFargateProfiles
-- amazon eks create a new eks cluster
-- engineers managing amazon eks resources on aws.
-- amazon eks delete a managed node group
-- containers
-- amazon eks describe a managed node group
-- describe cluster
 - DeleteCluster
-- create fargate profile
-- describe nodegroup
-- ListClusters
-- ListNodegroups
-- kubernetes
-- amazon eks create a managed node group
-- CreateFargateProfile
-- list nodegroups
-- DescribeCluster
-- amazon eks list eks clusters
-- list fargate profiles
-- delete nodegroup
-- CreateNodegroup
-- CreateCluster
-- amazon eks create a fargate profile
-- amazon eks describe an eks cluster
-- DescribeNodegroup
-- container orchestration
-- delete cluster
-- DeleteNodegroup
-- list clusters
-- amazon eks list fargate profiles
 - aws
-- amazon eks list managed node groups
-- amazon eks
-- amazon eks delete an eks cluster
-- create nodegroup
+- kubernetes
+- engineers managing amazon eks resources on aws.
+- CreateNodegroup
+- DeleteNodegroup
 - workflow capability for kubernetes platform management.
+- kubernetes platform management business domain for amazon eks.
+- amazon eks describe a managed node group
+- amazon eks list managed node groups
+- describe cluster
+- ListFargateProfiles
+- list nodegroups
+- amazon eks create a new eks cluster
+- create fargate profile
+- create nodegroup
+- list fargate profiles
+- containers
+- amazon eks list eks clusters
+- container orchestration
+- amazon eks describe an eks cluster
+- amazon eks
+- amazon eks list fargate profiles
 - create cluster
+- delete cluster
+- list clusters
+- DescribeNodegroup
+- CreateCluster
+- amazon eks delete a managed node group
+- ListClusters
+- amazon eks create a managed node group
+- ListNodegroups
+- amazon eks create a fargate profile
+- eks
+- CreateFargateProfile
+- delete nodegroup
+- amazon eks delete an eks cluster
+- DescribeCluster
+- describe nodegroup
 slug: eks-management
 tags:
 - Amazon EKS

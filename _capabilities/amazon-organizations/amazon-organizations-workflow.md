@@ -13,22 +13,22 @@ personas: []
 provider_name: Amazon Organizations
 provider_slug: amazon-organizations
 search_terms:
-- list amazon organizations resources
-- consolidated billing
-- list resources
 - core api workflow
+- list amazon organizations resources
 - Developer
 - aws
-- policies
-- multi-account
+- list openapi.yml
+- consolidated billing
+- organizations
+- primary amazon organizations resources
 - amazon organizations
 - account management
-- primary amazon organizations resources
+- policies
+- list and manage openapi.yml resources
+- multi-account
 - developer using amazon organizations apis
 - governance
-- list and manage openapi.yml resources
-- organizations
-- list openapi.yml
+- list resources
 slug: amazon-organizations-workflow
 tags:
 - Amazon Organizations

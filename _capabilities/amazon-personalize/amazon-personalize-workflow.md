@@ -13,22 +13,22 @@ personas: []
 provider_name: Amazon Personalize
 provider_slug: amazon-personalize
 search_terms:
-- core api workflow
-- Developer
-- aws
-- machine learning
-- personalization
-- customer experience
-- list amazon personalize resources
-- amazon personalize
-- developer using amazon personalize apis
 - ml
-- list resources
+- core api workflow
+- machine learning
 - primary amazon personalize resources
-- list and manage openapi.yml resources
-- recommendations
-- ai
+- developer using amazon personalize apis
+- Developer
+- personalization
+- aws
 - list openapi.yml
+- recommendations
+- amazon personalize
+- list amazon personalize resources
+- list and manage openapi.yml resources
+- customer experience
+- ai
+- list resources
 slug: amazon-personalize-workflow
 tags:
 - Amazon Personalize

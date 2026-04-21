@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve deliveries.
-- mfg get discrete job by id
-- mfg get bill of material by id
-- retrieve discrete jobs.
-- list on-hand quantities.
-- retrieve routings.
-- retrieve wip operations.
-- get bom by id.
-- complete an assembly.
-- inv get sales orders
 - manufacturing
-- discrete job management.
-- get inventory items
-- inv get inventory items
-- business applications
-- e-business suite
-- mfg complete assembly
-- inv get onhand quantities
-- retrieve inventory items.
-- create a discrete job.
-- supply chain
-- enterprise
-- on-hand quantity management.
-- retrieve sales orders.
-- mfg get routings
-- erp
-- bom management.
-- get discrete jobs
-- get onhand quantities
-- inv get deliveries
-- production
-- mfg create discrete job
 - get discrete job by id.
-- get bills of material
-- mfg get wip operations
-- list boms.
-- mfg get bills of material
-- issue material to a job.
-- mfg issue material
 - retrieve on-hand quantities.
+- erp
+- mfg complete assembly
 - mfg get discrete jobs
-- list inventory items.
-- retrieve bills of material.
-- inventory item management.
+- mfg get discrete job by id
 - list discrete jobs.
+- list inventory items.
+- production
+- inventory item management.
+- retrieve sales orders.
+- inv get sales orders
+- bom management.
+- get onhand quantities
+- mfg get bills of material
+- enterprise
+- create a discrete job.
+- get bills of material
+- inv get onhand quantities
+- supply chain
+- complete an assembly.
+- business applications
+- mfg get wip operations
+- get bom by id.
+- get inventory items
+- mfg get bill of material by id
+- retrieve bills of material.
+- inv get deliveries
+- e-business suite
+- list boms.
 - oracle
+- inv get inventory items
+- retrieve routings.
+- issue material to a job.
+- get discrete jobs
+- discrete job management.
+- retrieve wip operations.
+- retrieve inventory items.
+- retrieve discrete jobs.
+- retrieve deliveries.
+- mfg create discrete job
+- list on-hand quantities.
+- on-hand quantity management.
+- mfg issue material
+- mfg get routings
 slug: manufacturing-operations
 tags:
 - Oracle

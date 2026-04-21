@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
-- automation
-- storage
-- migration
-- data transfer
-- aws
 - hybrid cloud
+- data transfer
+- automation
+- aws
+- migration
+- storage
 slug: data-transfer-operations
 tags: []
 tools: []

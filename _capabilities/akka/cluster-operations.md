@@ -25,41 +25,41 @@ personas: []
 provider_name: Akka
 provider_slug: akka
 search_terms:
-- check alive
-- monitor and manage akka cluster health and membership
-- list members
-- join member
-- liveness and readiness health check monitoring
-- frameworks
-- manages akka cluster deployments and configurations
-- cluster health checks
-- check liveness and readiness of akka cluster nodes
-- Platform Engineer
-- check cluster health
-- monitors cluster health and responds to incidents
-- node liveness check
-- add a new node to the akka cluster
-- operations
-- microservices
 - join a cluster member
-- list all current members of the akka cluster
-- java
-- cluster management
-- join cluster member
-- akka
-- distributed systems
-- check cluster readiness
-- check ready
-- akka cluster membership and node lifecycle management
-- actor model
-- scala
-- list cluster members
-- reactive
-- cluster member management
-- node readiness check
 - SRE
 - check if akka cluster nodes are ready to serve traffic
+- scala
+- node readiness check
+- cluster health checks
+- cluster member management
+- join cluster member
+- Platform Engineer
+- akka cluster membership and node lifecycle management
+- java
+- reactive
 - health monitoring
+- check ready
+- check cluster health
+- akka
+- monitors cluster health and responds to incidents
+- monitor and manage akka cluster health and membership
+- cluster management
+- node liveness check
+- join member
+- liveness and readiness health check monitoring
+- actor model
+- list members
+- check liveness and readiness of akka cluster nodes
+- add a new node to the akka cluster
+- list all current members of the akka cluster
+- distributed systems
+- check cluster readiness
+- frameworks
+- microservices
+- operations
+- check alive
+- list cluster members
+- manages akka cluster deployments and configurations
 slug: cluster-operations
 tags:
 - Akka

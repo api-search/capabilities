@@ -21,28 +21,28 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
+- code
+- source control
 - list snippets
-- list code snippets
-- list teams in a workspace
+- workspace management
+- list pull requests
+- software development
+- productivity
+- platform
 - list workspaces
+- bitbucket
+- atlassian
+- list repositories
+- list bitbucket workspaces
+- list code snippets
+- repository management
+- list teams
+- list pull requests for a repository
+- pull request management
+- list teams in a workspace
 - list bitbucket repositories in a workspace
 - collaboration
 - list repositories in a workspace
-- list teams
-- platform
-- list pull requests for a repository
-- pull request management
-- workspace management
-- source control
-- productivity
-- software development
-- bitbucket
-- repository management
-- atlassian
-- list bitbucket workspaces
-- list repositories
-- list pull requests
-- code
 slug: source-control
 tags:
 - Atlassian

@@ -64,91 +64,91 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- create dm conversations
-- send a direct message to an existing conversation
-- manage user relationships, direct messages, spaces, and community interactions.
-- get recent dm events for the authenticated user
-- manage mutes
-- data compliance, deletion tracking, and regulatory event monitoring.
-- unmuteUser
-- get posts shared in a space
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- follow a user
-- data analyst
-- mute a user
-- community manager
-- unblockUsers
-- content
-- real-time data
-- user relationships, direct messaging, spaces, and community interaction.
-- engagement specialist
-- unfollowUser
-- creates, schedules, and analyzes social media content across platforms.
-- x api
-- get recent dm events
-- createDirectMessagesByParticipantId
-- createDirectMessagesConversation
-- getDirectMessagesEventsByConversationId
-- social media manager
-- unfollow a user
-- microblogging
-- get users muted by the authenticated user
-- send a dm to an existing conversation
-- getBlockedUsers
-- extracts insights from social data through search, streaming, and analytics.
-- send dm to a conversation
-- block a user
-- createDirectMessagesByConversationId
-- monitors brand mentions, sentiment, and competitive landscape.
-- handles customer inquiries and issues via direct messages and replies.
-- post creation, editing, media management, and content analytics.
-- monitor conversations, search posts, analyze trends, and extract insights.
-- search spaces
-- send a direct message to a user by participant id
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- getSpacesPosts
-- searchSpaces
-- getDirectMessagesEvents
-- muteUser
-- unmute a user
-- data engineer
-- engagement
-- researcher
-- platform operations
-- content creator
-- manage following
-- social monitoring, search, trending topics, and sentiment analysis.
-- social media
-- manage blocks
-- spaces
-- create a new group dm conversation
-- retrieve multiple spaces by their ids
-- get dm events for a specific conversation
-- marketing team
-- manages user relationships, follows, and interaction strategies.
-- advertising
-- conducts academic or market research using x data archives.
-- builds and maintains communities through engagement and moderation.
 - streaming
-- get dm events
-- produces original posts, threads, and media content on x.
-- retrieve spaces by ids
+- real-time data
+- manages data pipelines, streaming ingestion, and compliance data flows.
 - get users blocked by the authenticated user
-- community
-- search for spaces by keyword
-- getSpacesByIds
-- getMutedUsers
-- unblock a user
+- getBlockedUsers
+- microblogging
+- get posts shared in a space
 - manage compliance jobs, data streams, and real-time compliance monitoring.
-- direct messages
-- brand manager
+- x api
 - get multiple spaces by ids
+- data engineer
+- monitor conversations, search posts, analyze trends, and extract insights.
 - followUser
+- get users muted by the authenticated user
+- content
+- user relationships, direct messaging, spaces, and community interaction.
+- brand manager
+- send a direct message to a user by participant id
+- createDirectMessagesByConversationId
+- researcher
 - customer support
-- compliance officer
-- ensures data handling meets regulatory and platform compliance requirements.
+- spaces
+- data analyst
+- getDirectMessagesEvents
+- create a new group dm conversation
+- builds and maintains communities through engagement and moderation.
+- unfollow a user
+- content creator
+- follow a user
+- engagement
+- search for spaces by keyword
+- community
+- community manager
+- platform operations
+- post creation, editing, media management, and content analytics.
+- social media manager
+- search spaces
+- data compliance, deletion tracking, and regulatory event monitoring.
+- send a dm to an existing conversation
+- unblock a user
+- createDirectMessagesByParticipantId
+- searchSpaces
+- get recent dm events
+- creates, schedules, and analyzes social media content across platforms.
+- unblockUsers
+- send dm to a conversation
+- manage user relationships, direct messages, spaces, and community interactions.
+- manage mutes
+- marketing team
 - manages brand presence, campaigns, and content strategy.
+- get dm events for a specific conversation
+- getSpacesPosts
+- retrieve spaces by ids
+- send a direct message to an existing conversation
+- unfollowUser
+- getMutedUsers
+- social media
+- get recent dm events for the authenticated user
+- block a user
+- createDirectMessagesConversation
 - blockUsers
+- getDirectMessagesEventsByConversationId
+- handles customer inquiries and issues via direct messages and replies.
+- getSpacesByIds
+- social monitoring, search, trending topics, and sentiment analysis.
+- extracts insights from social data through search, streaming, and analytics.
+- monitors brand mentions, sentiment, and competitive landscape.
+- advertising
+- manage following
+- manage blocks
+- mute a user
+- unmute a user
+- produces original posts, threads, and media content on x.
+- conducts academic or market research using x data archives.
+- retrieve multiple spaces by their ids
+- direct messages
+- create dm conversations
+- manages user relationships, follows, and interaction strategies.
+- get dm events
+- muteUser
+- ensures data handling meets regulatory and platform compliance requirements.
+- unmuteUser
+- engagement specialist
+- compliance officer
+- create, manage, and analyze posts, media, bookmarks, and lists.
 slug: engagement
 tags:
 - X API

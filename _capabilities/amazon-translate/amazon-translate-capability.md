@@ -9,10 +9,10 @@ provider_name: Amazon Translate
 provider_slug: amazon-translate
 search_terms:
 - translation
-- nlp
 - aws
-- language processing
+- nlp
 - localization
+- language processing
 - machine translation
 slug: amazon-translate-capability
 tags: []

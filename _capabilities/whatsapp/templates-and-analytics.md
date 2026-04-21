@@ -33,33 +33,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- message templates
-- get template analytics
-- create message template
-- message template management.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- retrieves template analytics.
 - get conversation analytics
-- update message template
+- message templates
 - deletes a message template. deleting by name removes all language variants.
-- list message templates
-- template performance analytics.
 - whatsapp
-- reporting
 - creates a new message template.
-- individual message template management.
-- creates a new message template. templates must be approved by meta before use.
+- create message template
+- deletes a message template.
+- list message templates
+- analytics
+- template performance analytics.
+- updates an existing message template.
+- message template management.
+- conversation analytics and reporting.
+- retrieves template analytics.
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- retrieves conversation analytics.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
 - lists all message templates for a waba.
 - delete message template
-- conversation analytics and reporting.
-- updates an existing message template.
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- deletes a message template.
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- analytics
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- reporting
+- individual message template management.
 - marketing
-- retrieves conversation analytics.
+- update message template
+- creates a new message template. templates must be approved by meta before use.
+- get template analytics
 slug: templates-and-analytics
 tags:
 - WhatsApp

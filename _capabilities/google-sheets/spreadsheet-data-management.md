@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- write values to a range
-- get developer metadata by id
-- google sheets
-- search developer metadata matching filters
-- single spreadsheet operations
-- get spreadsheet details by id
 - append rows of data to a spreadsheet
-- batch update values
-- update values
-- clear values from multiple ranges
-- automation
-- get values
-- batch get values
-- get spreadsheet details
-- data management
-- batch clear values
-- append values
-- spreadsheet lifecycle operations
-- copy sheet
-- create spreadsheet
-- write values to multiple ranges at once
-- read values from multiple ranges at once
-- create a new google sheets spreadsheet
-- productivity
-- cell value read and write operations
-- get developer metadata
-- append values to a range
-- write values to a spreadsheet range
-- get spreadsheet
-- batch update spreadsheet
-- copy a sheet to another spreadsheet
 - create a new spreadsheet
+- data management
+- google sheets
+- get spreadsheet
+- spreadsheet lifecycle operations
+- cell value read and write operations
+- append values to a range
+- batch get values
+- copy a sheet to another spreadsheet
 - google workspace
 - search developer metadata
-- clear values from a range
-- clear values
-- clear values from a spreadsheet range
-- apply batch updates to a spreadsheet
-- read values from a spreadsheet range
-- read values from a range
+- append values
+- clear values from multiple ranges
+- batch clear values
+- get spreadsheet details
+- get values
+- write values to multiple ranges at once
+- write values to a spreadsheet range
+- get developer metadata by id
 - spreadsheets
+- write values to a range
+- single spreadsheet operations
+- productivity
+- batch update spreadsheet
+- update values
+- read values from a range
+- clear values
+- read values from a spreadsheet range
+- get developer metadata
+- copy sheet
+- search developer metadata matching filters
+- clear values from a spreadsheet range
+- automation
+- clear values from a range
+- batch update values
+- apply batch updates to a spreadsheet
+- create a new google sheets spreadsheet
+- create spreadsheet
+- read values from multiple ranges at once
+- get spreadsheet details by id
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

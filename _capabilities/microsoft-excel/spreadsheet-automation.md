@@ -33,44 +33,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- chart operations.
-- list all worksheets.
-- spreadsheets
-- manage worksheets.
-- update cell values in a specified range.
-- list rows in a table.
-- automation
-- read cell values from a specified range.
-- add table row
 - data management
-- manage table rows.
-- microsoft excel
-- list table rows
-- list all charts in a worksheet.
 - list worksheets
-- microsoft
-- microsoft 365
-- list all worksheets in the workbook.
-- list all rows in an excel table.
 - add a row to a table.
-- cell range operations.
-- automate excel workbook operations.
-- Data Analyst
 - analysts working with excel workbooks for data processing.
-- update range
-- spreadsheet automation
-- create a new worksheet.
-- get a cell range.
+- microsoft 365
+- add table row
+- list all charts in a worksheet.
+- read cell values from a specified range.
 - Business Analyst
+- get a cell range.
+- list table rows
+- spreadsheet automation
+- cell range operations.
 - business users automating excel-based reporting.
-- add a new data row to an excel table.
-- get range
-- create worksheet
+- manage table rows.
+- list all rows in an excel table.
 - office
+- spreadsheets
+- list all worksheets in the workbook.
+- list rows in a table.
+- update cell values in a specified range.
+- manage worksheets.
+- microsoft excel
 - list charts.
-- create a new worksheet in the workbook.
+- create a new worksheet.
+- list all worksheets.
+- automate excel workbook operations.
 - data analysis
+- create worksheet
+- create a new worksheet in the workbook.
+- automation
 - list charts
+- microsoft
+- update range
+- Data Analyst
+- chart operations.
+- get range
+- add a new data row to an excel table.
 slug: spreadsheet-automation
 tags:
 - Microsoft Excel

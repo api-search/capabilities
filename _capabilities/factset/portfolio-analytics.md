@@ -39,39 +39,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- portfolio resources.
-- list spar engine
-- list analytics datastore
-- list analytics datastore.
-- market data
-- list publisher resources.
-- factset
-- portfolio analytics
-- list publisher
-- list portfolios
-- vault resources.
-- list portfolio metadata
 - list spar engine resources.
-- investment analytics
-- research
-- list pa
+- portfolio metadata.
+- list spar
 - list metadata
-- list pa engine resources.
-- pa engine resources.
-- list vault resources.
-- list datastore
-- financial data
 - list pa engine
+- list datastore
+- list pa
+- research
+- list vault resources.
+- list portfolios
+- list publisher
+- risk analysis
+- spar engine resources.
+- list analytics datastore.
+- financial data
+- vault resources.
+- list pa engine resources.
+- financial
+- market data
+- list vault
+- portfolio analytics
+- list portfolio metadata
+- factset
 - performance attribution
 - list portfolio metadata.
-- risk analysis
-- financial
-- list spar
-- list vault
-- portfolio metadata.
-- analytics datastore.
-- spar engine resources.
 - list portfolios.
+- list publisher resources.
+- analytics datastore.
+- pa engine resources.
+- list analytics datastore
+- list spar engine
+- investment analytics
+- portfolio resources.
 slug: portfolio-analytics
 tags:
 - FactSet

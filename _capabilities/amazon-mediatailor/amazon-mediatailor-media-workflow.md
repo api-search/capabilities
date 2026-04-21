@@ -13,35 +13,35 @@ personas: []
 provider_name: Amazon MediaTailor
 provider_slug: amazon-mediatailor
 search_terms:
-- Broadcast Engineer
-- createlivesource
-- create channel
+- create live source
+- aws
 - delete channel
+- deletechannel
+- developer building media processing applications
+- configurelogsforchannel
+- describe live source
+- media processing
+- updatechannel
+- media
+- aws media processing and delivery
+- createlivesource
+- describe channel
+- workflow
 - configure logs for playback configuration
+- describelivesource
+- amazon mediatailor media processing workflow
+- describechannel
+- createchannel
+- Broadcast Engineer
+- create channel
 - engineer managing broadcast media workflows
+- configure logs for channel
+- manage media processing jobs
+- list jobs
+- configurelogsforplaybackconfiguration
 - broadcasting
 - Media Developer
-- manage media processing jobs
-- describe channel
-- describe live source
-- developer building media processing applications
-- updatechannel
-- configurelogsforplaybackconfiguration
 - update channel
-- createchannel
-- configure logs for channel
-- deletechannel
-- create live source
-- workflow
-- media processing
-- list jobs
-- amazon mediatailor media processing workflow
-- describelivesource
-- aws
-- aws media processing and delivery
-- describechannel
-- media
-- configurelogsforchannel
 slug: amazon-mediatailor-media-workflow
 tags:
 - AWS

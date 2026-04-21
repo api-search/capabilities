@@ -9,11 +9,11 @@ provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
 - speech-to-text
-- audio processing
 - machine learning
 - aws
 - speech recognition
 - transcription
+- audio processing
 slug: amazon-transcribe-capability
 tags: []
 tools: []

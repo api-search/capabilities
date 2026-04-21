@@ -28,35 +28,35 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get factor library data.
-- formula-based data retrieval.
-- quant engine computations.
-- universal screening.
-- market data
-- screening
-- factset
-- list factors
-- list screens
-- portfolio analytics
-- list screening resources.
-- list factor library resources.
-- run formula
-- investment analytics
-- research
-- run quant engine
-- run universal screening.
-- execute formula queries.
-- quantitative research
 - list quant
-- run quant engine computations.
-- factor library data.
-- financial data
-- factor analysis
-- financial
-- list quant engine resources.
+- run formula
 - run screen
+- factor analysis
+- research
+- execute formula queries.
+- run universal screening.
+- financial data
+- financial
+- list factors
+- list factor library resources.
+- market data
+- get factor library data.
 - list formulas
+- portfolio analytics
+- run quant engine computations.
+- run quant engine
 - get factors
+- screening
+- quantitative research
+- factset
+- universal screening.
+- list screens
+- quant engine computations.
+- formula-based data retrieval.
+- factor library data.
+- list quant engine resources.
+- list screening resources.
+- investment analytics
 slug: quantitative-research
 tags:
 - FactSet

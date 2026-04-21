@@ -37,55 +37,55 @@ personas: []
 provider_name: Amazon Config
 provider_slug: amazon-config
 search_terms:
-- audits resource compliance, reviews configuration history, and ensures governance standards.
-- remediation
-- remediation configuration and execution.
 - discovered resource inventory.
-- start remediation execution for noncompliant resources.
-- get config history
-- resource compliance monitoring, configuration history, and automated remediation.
-- get current config
-- auditing
-- list all aws config compliance rules in the account.
-- check resource compliance status.
-- get resource compliance
+- start remediation
 - get compliance summary across resource types.
-- list config rules
-- get compliance status for aws resources.
-- creates and manages config rules to enforce security policies.
-- configuration management
-- create config rule
-- security
-- get the configuration history for a specific aws resource.
-- amazon
-- get the current configuration of one or more aws resources.
-- list resources
+- aws
 - get resource history
-- check compliance status across all resources for a specific config rule.
-- start automated remediation for noncompliant resources.
-- get a summary of compliant vs noncompliant resources by resource type.
+- creates and manages config rules to enforce security policies.
+- create config rule
+- check rule compliance
 - create or update an aws config compliance rule.
-- delete an aws config compliance rule.
-- list all discovered aws resources of a given type in config inventory.
-- resource configuration history.
-- manage config compliance rules.
-- get compliance summary
-- Compliance Officer
+- check resource compliance status.
 - delete config rule
+- configuration management
+- get compliance status for aws resources.
+- manage config compliance rules.
+- list config rules
+- get resource compliance
+- compliance summary by resource type.
 - put config rule
+- remediation configuration and execution.
+- check resource compliance
+- Security Engineer
+- delete an aws config compliance rule.
+- get a summary of compliant vs noncompliant resources by resource type.
+- get current config
+- resource configuration history.
+- get configuration history for a resource.
+- get the configuration history for a specific aws resource.
+- auditing
+- get the current configuration of one or more aws resources.
+- get config history
 - compliance
+- resource compliance monitoring, configuration history, and automated remediation.
+- list all aws config compliance rules in the account.
+- start automated remediation for noncompliant resources.
+- check compliance status across all resources for a specific config rule.
+- security
+- list all aws config rules.
+- governance
+- create or update a config rule.
+- list resources
 - list discovered aws resources of a given type.
 - check compliance status of a specific aws resource against config rules.
-- check rule compliance
-- list all aws config rules.
-- Security Engineer
-- check resource compliance
-- start remediation
-- aws
-- create or update a config rule.
-- governance
-- get configuration history for a resource.
-- compliance summary by resource type.
+- amazon
+- start remediation execution for noncompliant resources.
+- get compliance summary
+- list all discovered aws resources of a given type in config inventory.
+- Compliance Officer
+- audits resource compliance, reviews configuration history, and ensures governance standards.
+- remediation
 slug: compliance-governance
 tags:
 - Amazon

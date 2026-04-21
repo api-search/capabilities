@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Trusted Advisor
 provider_slug: amazon-trusted-advisor
 search_terms:
+- cloud optimization
+- aws
 - security
 - best practices
-- aws
-- cloud optimization
 slug: amazon-trusted-advisor-capability
 tags: []
 tools: []

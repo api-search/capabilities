@@ -9,43 +9,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- manages deployment infrastructure.
-- create deployment
-- deployment
+- DevOps Engineer
+- managing software release processes and rollbacks.
+- list deployment groups
+- aws
+- create a new deployment
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- get deployment information for a target instance
+- list codedeploy applications
 - create and monitor deployments
-- create a deployment group for an application
-- list applications
-- release management
-- get deployment
-- amazon
-- blue/green deployment
-- get deployment instance
 - automated application deployment to compute targets.
+- list deployments for an application and deployment group
+- stop an in-progress deployment
+- get details about a specific deployment
+- list instances in a deployment
+- stop deployment
 - coordinates application releases.
+- blue/green deployment
+- deployment
+- list applications
+- list deployment groups for an application
+- list deployments
+- create application
+- list deployment instances
+- create a deployment group for an application
 - manage codedeploy applications
 - devops
-- stop deployment
+- create deployment
 - create deployment group
-- list deployment groups for an application
-- Release Manager
-- list deployment groups
-- list instances in a deployment
 - ci/cd
-- stop an in-progress deployment
-- list deployments for an application and deployment group
-- managing software release processes and rollbacks.
-- create a codedeploy application
-- list deployment instances
-- list deployments
-- get deployment information for a target instance
+- get deployment instance
+- amazon
 - manage deployment groups
-- create application
-- DevOps Engineer
-- create a new deployment
-- list codedeploy applications
-- aws
-- get details about a specific deployment
-- application deployment to ec2, lambda, ecs, and on-premises servers.
+- manages deployment infrastructure.
+- release management
+- create a codedeploy application
+- Release Manager
+- get deployment
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

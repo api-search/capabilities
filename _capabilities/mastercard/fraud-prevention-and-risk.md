@@ -39,46 +39,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get fraud alerts
-- open banking
+- search terminated merchants
 - fraud detection
-- get available fraud record statuses
-- payments
-- match
-- assess merchant risk during onboarding
-- credit cards
-- financial services
-- look up transaction details to resolve disputes before chargebacks
-- submit suspected fraud
-- submit a confirmed fraud record to the mastercard fraud and loss database
-- merchant onboarding risk assessment
-- match terminated merchant screening
-- ethoca fraud alerts
+- submit a confirmed fraud record
+- ethoca
 - search the match database
 - submit confirmed fraud
-- digital identity
-- look up transaction details for clarity
-- ethoca
 - mastercard
-- get fraud statuses
+- look up transaction details for clarity
+- search match database
+- financial services
+- get fraud alerts
+- confirmed fraud record management
 - transaction detail lookups for dispute prevention
-- retrieve ethoca fraud alerts for chargeback prevention
-- update fraud alert
+- lookup transaction
+- credit cards
+- get available fraud record statuses
+- digital identity
 - retrieve ethoca fraud alerts
-- perform risk check on a merchant
-- lookup transaction clarity
-- check merchant risk
-- search terminated merchants
+- payments
+- ethoca fraud alerts
 - fraud prevention
 - update the status of an ethoca fraud alert
-- submit a suspected fraud record
+- open banking
+- get fraud statuses
+- perform risk check on a merchant
 - search the match database for terminated merchants
-- suspected fraud record management
-- search match database
-- confirmed fraud record management
-- lookup transaction
-- submit a confirmed fraud record
+- merchant onboarding risk assessment
+- match terminated merchant screening
+- submit a confirmed fraud record to the mastercard fraud and loss database
+- update fraud alert
+- look up transaction details to resolve disputes before chargebacks
 - risk management
+- lookup transaction clarity
+- check merchant risk
+- suspected fraud record management
+- submit suspected fraud
+- match
+- submit a suspected fraud record
+- retrieve ethoca fraud alerts for chargeback prevention
+- assess merchant risk during onboarding
 slug: fraud-prevention-and-risk
 tags:
 - Mastercard

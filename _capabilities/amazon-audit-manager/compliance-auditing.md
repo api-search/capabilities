@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- get audit manager account settings including default destinations and process owners.
-- get settings
-- get assessment
-- create a new assessment
 - list available frameworks
-- audit
-- update audit manager settings including sns notifications and default report destination.
+- aws
+- create a custom compliance control for use in frameworks and assessments.
 - list controls
 - list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- list generated assessment reports for compliance documentation.
-- create a new compliance assessment using a regulatory framework.
-- compliance assessment management
-- list assessments
-- list compliance controls available for building assessments.
-- create assessment report
-- list assessment reports
-- create assessment
-- compliance
-- list frameworks
-- generate a compliance assessment report from collected evidence.
-- compliance framework management
-- amazon audit manager
-- create control
 - list all assessments
-- create a custom compliance control for use in frameworks and assessments.
-- aws
-- list all compliance assessments to understand current audit coverage.
+- compliance framework management
+- list assessments
 - get complete details of a compliance assessment including control status.
-- risk management
+- list frameworks
+- create assessment
+- create a new assessment
+- generate a compliance assessment report from collected evidence.
+- list assessment reports
+- amazon audit manager
+- get assessment
+- audit
+- create assessment report
+- compliance
+- create control
 - update settings
+- risk management
+- list all compliance assessments to understand current audit coverage.
+- compliance assessment management
+- create a new compliance assessment using a regulatory framework.
+- list compliance controls available for building assessments.
+- update audit manager settings including sns notifications and default report destination.
+- list generated assessment reports for compliance documentation.
+- get audit manager account settings including default destinations and process owners.
+- get settings
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

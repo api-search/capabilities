@@ -13,19 +13,19 @@ personas: []
 provider_name: Amazon EMR
 provider_slug: amazon-emr
 search_terms:
-- RunJobFlow
-- hadoop
-- amazon emr create and start an emr cluster
-- operations teams managing amazon emr infrastructure
-- unified capability for managing amazon emr resources. combines amazon emr apis for data engineer workflows in big data processing.
-- apache spark
-- big data
-- aws
-- analytics
-- big data platform for running apache spark, hadoop, and other frameworks
-- amazon web services
-- data processing
 - developers building applications using amazon emr
+- RunJobFlow
+- aws
+- apache spark
+- big data platform for running apache spark, hadoop, and other frameworks
+- hadoop
+- analytics
+- amazon emr create and start an emr cluster
+- data processing
+- operations teams managing amazon emr infrastructure
+- big data
+- unified capability for managing amazon emr resources. combines amazon emr apis for data engineer workflows in big data processing.
+- amazon web services
 slug: amazon-emr-capability
 tags:
 - Amazon Web Services

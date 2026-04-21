@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- ios
-- list testers
-- create a beta group.
-- list all apps in app store connect.
-- update build information.
 - modify app
-- get build details.
-- technology
+- build management.
+- remove a beta tester.
+- list beta testers.
+- create a new beta group.
+- update build information.
+- list all beta groups.
+- list apps
 - beta group management.
-- delete a beta group.
+- list all beta testers.
+- add a beta tester.
+- read app
+- modify beta group
+- list testers
+- modify build
+- app management.
+- beta tester management.
+- delete beta tester
+- delete beta group
+- read beta tester
+- list beta testers
+- list all builds.
+- get beta group details.
 - testflight
-- update a beta group.
+- technology
+- create beta group
+- create tester
+- list beta groups.
+- create beta tester
+- app management
+- get details of a specific app.
+- create a beta group.
+- read beta group
+- list builds
+- developer
+- ios
+- list beta groups
 - mobile
 - app store
-- delete beta group
-- create tester
-- create beta tester
+- update app metadata.
+- read build
 - list groups
 - apple
-- list beta testers.
-- list all beta testers.
-- beta tester management.
-- macos
-- update app metadata.
-- list apps
-- modify build
-- get beta tester details.
-- list beta groups
-- build management.
-- list beta groups.
-- remove a beta tester.
-- read build
 - list all apps.
-- create a new beta group.
-- app management.
-- get beta group details.
-- get details of a specific app.
+- list all apps in app store connect.
+- get build details.
+- update a beta group.
+- get beta tester details.
+- delete a beta group.
 - add a new beta tester.
-- list builds
-- app management
-- developer
-- read app
-- list all beta groups.
+- macos
 - create group
-- add a beta tester.
-- list beta testers
-- modify beta group
-- read beta group
-- list all builds.
-- create beta group
-- delete beta tester
-- read beta tester
 slug: app-lifecycle
 tags:
 - Apple

@@ -136,188 +136,188 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- update the status of a posture check.
-- investigates dlp incidents and manages sensitive data protection policies.
-- ai security engineer
-- identity security posture
-- create a new jira integration.
-- manage onboarded sspm applications.
-- manages logging infrastructure, integrations, and platform automation.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- list available applications in the catalog.
-- list all onboarded saas applications in sspm.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- retrieve details for a specific saas asset.
-- retrieve a list of saas security incidents.
-- access dlp report summaries.
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- list all sspm jira integrations.
-- cloud security posture management, compliance monitoring, and workload protection.
-- threat hunter
-- malware researcher
-- enterprise it
-- list saas assets
-- manage dlp incidents.
-- get or update a specific dlp incident.
-- analyzes suspicious files and samples for malware characteristics.
-- manages service accounts, roles, and access policies for platform api access.
-- get saas asset
-- dlp
-- get a specific posture check by id.
-- digital experience monitoring, log management, and best practice assessment.
-- sspm
-- retrieve log forwarding configuration settings.
-- red team operator
-- list saas security incidents with optional filters.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- palo alto networks
-- secures ai applications with runtime scanning and vulnerability assessment.
-- cloud security
-- list email dlp incidents.
-- get or update a specific saas security incident.
-- list available dlp data patterns.
-- list available applications in the sspm catalog.
-- update a specific saas security incident.
-- update email verdict
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- cybersecurity
-- get dlp incident
-- xdr
-- retrieve details for a specific saas security incident.
-- create a new jira integration for sspm.
-- get a specific data pattern.
-- get email attachments
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- sase admin
-- get email incident
 - get data snippets for a specific dlp incident.
-- update posture check status.
-- data loss prevention, saas security monitoring, and identity security posture.
-- network architect
-- update saas incident
-- data protection
-- investigates security incidents, triages alerts, and coordinates response actions.
-- subscription manager
-- proactively searches for threats and iocs across telemetry data.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- browser security admin
-- list dlp incidents
-- list sspm posture checks with optional filters.
-- retrieve a list of connected saas applications.
-- sd wan operator
-- list posture checks with optional filters.
-- list saas incidents
-- saas security
-- get attachments for a specific email dlp incident.
-- manage enterprise browser policies, user sessions, and deployments.
-- monitors network health, performance, and digital experience metrics.
-- list connected saas applications.
-- manages enterprise browser policies and secure browsing configurations.
-- iam admin
-- retrieve a list of monitored saas assets.
-- list email dlp incidents with optional filters.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- designs and implements network security architectures and policies.
-- access email incident attachments.
-- soar
-- platform engineer
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- executes containment, eradication, and recovery actions during security incidents.
-- onboard a new saas application.
-- saas security admin
-- get dlp report summary
-- manage saas security incidents.
-- get saas incident
-- get log forwarding configuration settings.
-- list users across saas applications.
-- get a specific sspm posture check by id.
-- get log forwarding settings
-- remove an onboarded saas application.
-- get posture check
-- designs sase and sd-wan network architectures for secure remote access.
-- get recipients for a specific email dlp incident.
-- remove app
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- update the verdict for an email dlp incident.
-- sre
-- get a specific saas asset.
-- list saas users
-- remove an onboarded saas application from sspm.
-- list app catalog
-- list dlp incidents with optional filters.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- retrieve a specific email dlp incident by id.
-- list posture checks
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- threat intel analyst
-- firewall
-- remove an onboarded sspm application.
-- list email incidents
 - retrieve activity log for a specific user.
-- get email recipients
-- update posture check status
-- get data pattern
-- retrieve a list of users across saas applications.
-- cloud security engineer
-- enterprise browser policy management and secure browsing.
-- threat intelligence
-- get user activity log.
-- get dlp snippets
-- get a specific posture check.
-- list dlp data patterns.
-- update a dlp incident.
-- list all jira integrations.
-- retrieve a specific dlp incident by id.
-- browse the sspm application catalog.
-- retrieve a specific dlp data pattern by id.
-- incident responder
-- conducts automated adversarial testing against ai systems and llm applications.
-- update a dlp incident status or assignee.
-- manages multi-tenant security operations at scale for managed service providers.
-- update the status of an sspm posture check.
-- mssp operator
-- ai runtime security scanning and automated red teaming for ai applications.
-- list monitored saas assets.
-- data protection analyst
-- access dlp incident data snippets.
-- retrieve a specific data pattern by id.
-- manage sspm jira integrations.
 - onboard a new saas application in sspm.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- manage sspm posture checks.
-- list saas applications
-- access email incident recipients.
-- sase
-- network security engineer
-- get a specific email dlp incident.
-- network security
-- onboard app
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- identity and access management, tenant hierarchies, and subscription management.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- list data patterns
-- firewall admin
-- vulnerability manager
-- list all onboarded saas applications.
-- soc analyst
-- network operations
-- get user activities
-- list onboarded apps
-- compliance team
-- list dlp incidents with optional filters for severity and status.
-- create jira integration
+- red team operator
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- list email incidents
+- network architect
 - manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
 - update dlp incident
-- list jira integrations
-- tenant operator
-- manage email incident verdicts.
-- compliance officer
+- list saas assets
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- data loss prevention, saas security monitoring, and identity security posture.
+- get data pattern
+- list all onboarded saas applications in sspm.
+- executes containment, eradication, and recovery actions during security incidents.
+- get or update a specific saas security incident.
+- list all sspm jira integrations.
 - list available data patterns.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- manage sspm posture checks.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- vulnerability manager
+- retrieve details for a specific saas security incident.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- get a specific sspm posture check by id.
+- manage email incident verdicts.
+- sase admin
+- secures ai applications with runtime scanning and vulnerability assessment.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- cybersecurity
+- list all onboarded saas applications.
 - get a dlp summary report for a given time range.
+- retrieve a specific data pattern by id.
+- list all jira integrations.
+- get a specific data pattern.
+- update email verdict
+- update the verdict for an email dlp incident.
+- update the status of an sspm posture check.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- saas security
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- investigates dlp incidents and manages sensitive data protection policies.
+- get saas asset
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- analyzes suspicious files and samples for malware characteristics.
+- retrieve a list of connected saas applications.
+- onboard app
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- conducts automated adversarial testing against ai systems and llm applications.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- get a specific email dlp incident.
+- update a dlp incident.
+- update the status of a posture check.
+- network security engineer
+- get dlp report summary
+- manages enterprise browser policies and secure browsing configurations.
+- list jira integrations
+- xdr
+- retrieve a specific dlp incident by id.
+- update a dlp incident status or assignee.
+- ai runtime security scanning and automated red teaming for ai applications.
+- enterprise browser policy management and secure browsing.
+- threat intel analyst
+- soar
+- retrieve a list of saas security incidents.
+- platform engineer
+- list connected saas applications.
+- access dlp incident data snippets.
+- list email dlp incidents.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- manages logging infrastructure, integrations, and platform automation.
+- create a new jira integration for sspm.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- access email incident recipients.
+- subscription manager
+- ai security engineer
+- incident responder
+- list dlp data patterns.
+- get a specific posture check.
+- onboard a new saas application.
+- list sspm posture checks with optional filters.
+- update saas incident
+- retrieve a specific dlp data pattern by id.
+- designs and implements network security architectures and policies.
+- list posture checks
+- list available dlp data patterns.
+- retrieve a list of users across saas applications.
+- list available applications in the catalog.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- cloud security
+- get user activity log.
+- saas security admin
+- get log forwarding configuration settings.
+- get saas incident
+- list users across saas applications.
+- get posture check
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- list monitored saas assets.
+- manage onboarded sspm applications.
+- manages multi-tenant security operations at scale for managed service providers.
+- manages service accounts, roles, and access policies for platform api access.
+- list saas security incidents with optional filters.
+- access email incident attachments.
+- get dlp snippets
+- remove an onboarded saas application from sspm.
+- soc analyst
+- identity and access management, tenant hierarchies, and subscription management.
+- remove an onboarded sspm application.
+- access dlp report summaries.
+- manage saas security incidents.
+- get recipients for a specific email dlp incident.
+- get email attachments
+- mssp operator
+- network operations
+- threat intelligence
+- update a specific saas security incident.
+- sre
+- retrieve a specific email dlp incident by id.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- manage sspm jira integrations.
+- manage dlp incidents.
+- proactively searches for threats and iocs across telemetry data.
+- remove app
+- designs sase and sd-wan network architectures for secure remote access.
+- get email recipients
+- digital experience monitoring, log management, and best practice assessment.
+- list saas applications
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- retrieve a list of monitored saas assets.
+- cloud security engineer
+- list data patterns
+- get attachments for a specific email dlp incident.
+- dlp
+- list dlp incidents
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- enterprise it
+- firewall
+- get or update a specific dlp incident.
+- get dlp incident
+- data protection analyst
+- list email dlp incidents with optional filters.
+- list dlp incidents with optional filters.
+- update posture check status
+- update posture check status.
+- remove an onboarded saas application.
+- identity security posture
+- palo alto networks
+- firewall admin
+- browser security admin
+- iam admin
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
 - researches threat actors, malware campaigns, and vulnerability trends.
+- network security
+- threat hunter
+- cloud security posture management, compliance monitoring, and workload protection.
+- get a specific saas asset.
+- get log forwarding settings
+- list saas incidents
+- retrieve details for a specific saas asset.
+- browse the sspm application catalog.
+- retrieve log forwarding configuration settings.
+- tenant operator
+- sase
+- create a new jira integration.
+- list dlp incidents with optional filters for severity and status.
+- get email incident
+- get user activities
+- sd wan operator
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- list available applications in the sspm catalog.
+- list posture checks with optional filters.
+- compliance team
+- get a specific posture check by id.
+- manage enterprise browser policies, user sessions, and deployments.
+- create jira integration
+- list app catalog
+- compliance officer
+- list onboarded apps
+- data protection
+- sspm
+- monitors network health, performance, and digital experience metrics.
+- list saas users
+- malware researcher
 slug: data-protection
 tags:
 - Palo Alto Networks

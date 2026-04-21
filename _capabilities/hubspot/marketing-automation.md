@@ -10,34 +10,34 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- getsmtptokenbyid
-- hubspot retrieve available event types
-- email
-- hubspot create an smtp token
-- crm
-- hubspot send a transactional email
-- marketing automation
 - createsmtptoken
-- operations
-- customer service
-- sendtransactionalemail
-- hubspot reset smtp token password
-- hubspot list all smtp tokens
-- resetsmtptokenpassword
-- sales
-- commerce
-- hubspot get an smtp token by id
-- email marketing
-- content
-- deletesmtptoken
-- hubspot
-- geteventtypes
-- analytics
 - listsmtptokens
-- geteventinstances
-- marketing
-- hubspot retrieve event instances
+- hubspot
+- hubspot get an smtp token by id
+- hubspot create an smtp token
+- deletesmtptoken
 - hubspot delete an smtp token
+- sales
+- getsmtptokenbyid
+- sendtransactionalemail
+- geteventinstances
+- resetsmtptokenpassword
+- hubspot list all smtp tokens
+- marketing automation
+- analytics
+- crm
+- hubspot retrieve event instances
+- commerce
+- email
+- hubspot reset smtp token password
+- customer service
+- marketing
+- operations
+- hubspot retrieve available event types
+- hubspot send a transactional email
+- geteventtypes
+- content
+- email marketing
 slug: marketing-automation
 tags:
 - HubSpot

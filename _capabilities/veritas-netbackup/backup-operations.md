@@ -33,62 +33,62 @@ personas: []
 provider_name: Veritas NetBackup
 provider_slug: veritas-netbackup
 search_terms:
-- get details for a specific backup image.
-- create policy
-- cancel a running backup job.
-- backup job management.
-- resume job
-- delete a backup policy.
-- get policy
-- expire a backup image.
-- disaster recovery
-- get job details.
-- recovery
-- get job
-- cancel job
-- list images
-- get file list for a backup job.
-- data protection
-- resume a suspended backup job.
-- storage
-- suspend a running backup job.
-- enterprise
-- get details for a specific client.
-- update a backup policy.
-- backup policy management.
-- authenticate to netbackup and obtain a jwt token.
-- create a new backup policy.
-- login
-- get file contents of a backup image.
-- get client
-- get job try logs
-- individual job operations.
-- suspend job
-- get job file list
-- restart a failed backup job.
-- get a specific backup policy.
-- netbackup client management.
-- update policy
-- veritas
-- list all backup jobs.
-- backup image catalog.
-- get try logs for a backup job.
-- list backup images in the catalog.
-- list jobs
-- expire image
-- list all clients.
-- restart job
-- get image contents
-- list backup images.
-- get details for a specific backup job.
-- get image
-- backup
-- list policies
-- list all backup policies.
-- list all backup jobs with optional filters.
-- list all netbackup clients.
 - list clients
+- restart a failed backup job.
+- list all backup jobs with optional filters.
+- create policy
+- disaster recovery
+- restart job
+- suspend a running backup job.
+- get try logs for a backup job.
+- list all backup policies.
+- get file list for a backup job.
+- get file contents of a backup image.
+- get image contents
+- get job file list
+- delete a backup policy.
+- backup
+- get job try logs
+- list all netbackup clients.
+- backup job management.
+- authenticate to netbackup and obtain a jwt token.
+- cancel job
+- resume a suspended backup job.
+- resume job
+- update a backup policy.
+- list backup images in the catalog.
+- expire a backup image.
+- suspend job
+- enterprise
+- list images
+- list all clients.
+- create a new backup policy.
+- get job
+- get client
+- netbackup client management.
+- get details for a specific backup image.
+- get details for a specific backup job.
+- cancel a running backup job.
+- backup policy management.
+- list all backup jobs.
+- individual job operations.
 - delete policy
+- veritas
+- list backup images.
+- update policy
+- list policies
+- get image
+- get details for a specific client.
+- login
+- get job details.
+- list jobs
+- data protection
+- get policy
+- recovery
+- expire image
+- storage
+- backup image catalog.
+- get a specific backup policy.
 slug: backup-operations
 tags:
 - Veritas

@@ -19,44 +19,44 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- prism list datasets
-- prism delete dataset
-- execute a wql query
-- wql execute query
-- prism get dataset
-- list available wql data sources
-- prism create dataset
-- delete a dataset
-- financial management
-- workday
-- create a data change task
-- get a wql data source by id
-- wql list data sources
-- list datasets
+- list data change tasks
 - wql get data source
-- saas
 - wql query endpoint
-- execute query
-- prism list data change tasks
-- hcm
-- prism create data change task
 - raas get report
+- wql list data sources
+- prism list data change tasks
+- wql execute query
+- prism list datasets
+- enterprise software
+- prism list tables
+- saas
+- wql get data source fields
+- retrieve a custom workday report
+- analytics
+- cloud computing
+- list all prism tables
+- get a wql data source by id
+- list all prism analytics datasets
+- prism create data change task
+- execute query
+- prism delete dataset
+- prism analytics datasets
+- prism get dataset
+- hcm
+- create a new prism analytics dataset
+- financial management
+- list available wql data sources
+- create a data change task
+- execute a wql query
+- reporting
+- business intelligence
+- list datasets
 - get a dataset by id
 - get fields for a wql data source
-- prism list tables
-- wql get data source fields
-- list all prism analytics datasets
-- reporting
-- retrieve a custom workday report
-- enterprise software
-- prism analytics datasets
-- list all prism tables
-- business intelligence
 - execute a wql query against workday data
-- cloud computing
-- create a new prism analytics dataset
-- analytics
-- list data change tasks
+- delete a dataset
+- prism create dataset
+- workday
 slug: analytics-and-reporting
 tags:
 - Workday

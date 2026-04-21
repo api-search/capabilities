@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- list secrets
-- list secrets.
-- get key details.
-- get secret
-- delete secret
 - verify
-- create a key.
-- individual secret management.
-- delete a key.
-- decrypt
-- sign
-- list secrets in the vault.
-- secrets management
-- azure
-- list certificates
-- create a new cryptographic key.
-- get a secret value.
-- list keys.
-- create a new certificate.
-- security
-- delete certificate
-- list certificates.
-- individual key management.
-- certificate management.
-- delete a certificate.
-- encrypt data using a key.
-- decrypt data using a key.
-- verify a signature.
-- secret management.
-- set a secret value.
-- get a secret.
-- list cryptographic keys in the vault.
-- get a certificate.
-- sign a digest using a key.
-- cloud security
-- key management
-- cryptography
-- set secret
-- create certificate
-- certificates
-- get certificate
-- create key
-- get a key.
-- delete a secret.
-- key management.
-- delete key
-- key vault
-- get key
-- encrypt
 - list keys
+- get secret
+- create a new certificate.
+- cryptography
 - list certificates in the vault.
+- get key
+- individual secret management.
+- create a key.
 - set a secret.
+- certificate management.
+- delete certificate
+- list secrets.
+- list certificates.
+- set a secret value.
+- encrypt data using a key.
+- get key details.
+- certificates
+- azure
+- delete a secret.
+- decrypt
+- delete key
+- sign a digest using a key.
+- get a key.
+- delete a key.
+- get a secret value.
+- create key
+- key management
+- sign
+- get a secret.
+- key vault
+- secrets management
+- get a certificate.
+- create a new cryptographic key.
+- list cryptographic keys in the vault.
+- delete a certificate.
+- security
+- get certificate
+- list certificates
+- list secrets
+- list secrets in the vault.
+- individual key management.
+- delete secret
+- decrypt data using a key.
+- encrypt
+- create certificate
+- list keys.
+- secret management.
+- verify a signature.
+- key management.
+- set secret
+- cloud security
 slug: secrets-and-keys
 tags:
 - Azure

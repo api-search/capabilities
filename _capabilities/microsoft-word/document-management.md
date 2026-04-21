@@ -55,94 +55,94 @@ personas: []
 provider_name: Microsoft Word
 provider_slug: microsoft-word
 search_terms:
-- list content controls in the document.
-- list permissions.
-- individual document operations.
-- list version history.
-- search for word documents in onedrive/sharepoint.
-- graph share document
-- graph list files
-- table operations.
-- create document
-- document lifecycle operations.
-- openxml add paragraph
-- builds automated document generation and processing pipelines.
+- add a paragraph to a document server-side.
+- get document
+- get document metadata.
+- search for documents.
+- graph list permissions
+- document content operations.
+- graph search documents
+- productivity
+- paragraph operations.
+- graph delete document
 - graph create folder
 - convert document
-- graph get document
-- document management
-- list tables in the document.
-- addin list tables
-- document search.
-- addin list content controls
-- permission and sharing operations.
-- document content operations.
-- search documents
-- graph list versions
-- version history operations.
-- get document
-- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
-- office
-- create a new word document.
-- word processing
-- insert text into the document body.
-- convert a word document to pdf or other format.
-- create a new word document server-side using open xml.
-- list files and folders in a onedrive directory.
-- create a sharing link for a document.
-- paragraph operations.
-- automation
-- collaboration
-- list tables
-- addin list comments
-- comment operations.
-- documents
 - create a new folder in onedrive.
-- addin insert html
-- insert a new table into the document.
-- Document Author
-- list comments
-- openxml create document
-- delete a document from onedrive/sharepoint.
-- list sharing permissions on a document.
-- search for text within the document.
-- get document metadata.
-- list permissions
-- Content Manager
-- addin insert text
-- insert html content into the document.
-- addin get body
-- get document body content.
-- document format conversion.
-- list version history of a document.
-- delete document
-- list paragraphs
-- list all paragraphs in the document.
-- openxml convert document
-- Automation Engineer
-- get content
-- list paragraphs.
-- addin list paragraphs
-- add a paragraph to a document server-side.
-- get metadata for a word document stored in onedrive/sharepoint.
-- list comments.
-- creates and edits word documents, manages formatting and content.
-- graph list permissions
-- search for documents.
-- convert to another format.
-- get the body content of an open word document.
-- microsoft 365
-- microsoft word
-- manages document templates, reviews, and publishing workflows.
-- list tables.
-- addin search text
-- productivity
-- addin insert table
-- graph delete document
 - delete a document.
-- graph search documents
-- list comments in the document.
+- search documents
+- builds automated document generation and processing pipelines.
+- document format conversion.
+- insert text into the document body.
+- addin list comments
+- delete document
+- addin list paragraphs
+- create a new word document server-side using open xml.
+- office
+- list comments
+- graph list versions
+- table operations.
+- creates and edits word documents, manages formatting and content.
+- list tables
+- addin list content controls
+- list files and folders in a onedrive directory.
 - list versions
+- document management
+- Content Manager
+- individual document operations.
+- addin insert text
+- graph get document
+- list permissions
+- openxml create document
+- create a new word document.
+- comment operations.
+- create document
+- insert a new table into the document.
+- list tables in the document.
+- convert to another format.
+- convert a word document to pdf or other format.
+- document lifecycle operations.
+- word processing
+- addin list tables
+- get content
+- list sharing permissions on a document.
+- addin insert table
+- microsoft word
+- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
+- list content controls in the document.
+- document search.
+- version history operations.
+- list tables.
+- openxml convert document
+- collaboration
+- addin insert html
+- create a sharing link for a document.
+- permission and sharing operations.
+- get metadata for a word document stored in onedrive/sharepoint.
+- microsoft 365
+- list version history of a document.
+- list permissions.
+- manages document templates, reviews, and publishing workflows.
+- list comments.
+- addin search text
+- delete a document from onedrive/sharepoint.
+- Automation Engineer
+- list paragraphs
+- get document body content.
+- list paragraphs.
+- list comments in the document.
+- list version history.
+- search for word documents in onedrive/sharepoint.
+- addin get body
+- graph list files
+- automation
+- documents
+- Document Author
+- insert html content into the document.
+- search for text within the document.
+- graph share document
+- list all paragraphs in the document.
+- get the body content of an open word document.
+- openxml add paragraph
 slug: document-management
 tags:
 - Microsoft Word

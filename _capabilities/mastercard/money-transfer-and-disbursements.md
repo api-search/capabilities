@@ -37,45 +37,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- open banking
-- p2p transfers
-- create cross border payment
-- disbursement transactions
-- get currency conversion rate
+- verify send account
+- money transfer
 - fraud detection
 - funding transactions
-- create a disbursement to send money to a recipient
-- validate account
-- payments
-- get account information for a send recipient
-- create disbursement
-- verify account eligibility for mastercard send
-- mastercard send
-- credit cards
-- financial services
-- disbursements
-- create a funding transaction
-- get currency conversion rate for cross-border transactions
-- create a person-to-person transfer
-- get conversion rate
-- cross-border payment processing
-- create a funding transaction via mastercard send
-- process direct transaction
-- money transfer
-- create funding
-- create a cross-border payment
-- digital identity
-- create a disbursement
-- mastercard
-- cross-border
-- get account info
 - process a direct service transaction
+- get currency conversion rate
+- get account info
+- mastercard
+- get account information for a send recipient
+- cross-border payment processing
+- create a cross-border payment
+- financial services
+- disbursement transactions
+- validate account
+- get currency conversion rate for cross-border transactions
+- credit cards
+- digital identity
 - validate account details before transfer
-- verify send account
-- create p2p transfer
-- create a cross-border international payment
+- create disbursement
 - create a person-to-person money transfer
+- create a disbursement
+- create a person-to-person transfer
+- payments
+- create funding
+- verify account eligibility for mastercard send
+- create p2p transfer
+- process direct transaction
 - currency conversion rates
+- open banking
+- create a cross-border international payment
+- create a funding transaction
+- cross-border
+- mastercard send
+- disbursements
+- create a funding transaction via mastercard send
+- create cross border payment
+- create a disbursement to send money to a recipient
+- p2p transfers
+- get conversion rate
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

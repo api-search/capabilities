@@ -29,40 +29,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- list users in a workmail organization.
-- it administration of email infrastructure
-- administration
-- list users in an organization.
-- calendar
 - workmail organization management.
-- group management.
-- email
-- list mobile device access control rules.
 - handles day-to-day email user and group management.
-- list users
-- list all workmail organizations.
-- list groups
-- enterprise email provisioning and management
-- create a new email user.
-- enterprise
-- mobile device access control.
-- list mobile device access rules.
-- list email distribution groups in an organization.
-- list email groups.
-- exchange
+- aws
+- it administration of email infrastructure
+- calendar
+- group management.
+- administration
 - list organizations
+- list email groups.
+- create a new workmail user with mailbox.
+- list users in an organization.
+- enterprise
+- list all amazon workmail organizations in the account.
+- mobile device access control.
+- list users in a workmail organization.
 - workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- create user
+- email
+- list email distribution groups in an organization.
+- manages workmail infrastructure, user provisioning, and security policies.
+- list mobile device access rules.
+- list mobile device access rules
 - IT Administrator
+- enterprise email provisioning and management
 - Email Operations
 - business communication
 - user provisioning and management.
-- create a new workmail user with mailbox.
+- list mobile device access control rules.
 - mobile device access control and compliance
-- manages workmail infrastructure, user provisioning, and security policies.
-- aws
-- list all amazon workmail organizations in the account.
-- list mobile device access rules
+- list groups
+- exchange
+- list all workmail organizations.
+- create a new email user.
+- list users
+- create user
 slug: email-management
 tags:
 - AWS

@@ -9,14 +9,14 @@ provider_name: Amazon FSx
 provider_slug: amazon-fsx
 search_terms:
 - windows
-- storage
 - aws
-- openzfs
+- netapp
 - high performance computing
+- file systems
+- openzfs
 - lustre
 - netapp ontap
-- netapp
-- file systems
+- storage
 slug: amazon-fsx-file-system-management
 tags:
 - Storage

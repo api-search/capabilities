@@ -21,40 +21,40 @@ personas: []
 provider_name: Actor Model
 provider_slug: actor-model
 search_terms:
-- monitors actor system health, throughput, and failure recovery
-- distributed cluster management, sharding, and fault tolerance
+- concurrency
 - list all actors in the system filtered by status
-- designs concurrent, fault-tolerant systems using actor model patterns
-- spawn actor
+- list all cluster nodes with their status, roles, and actor counts
 - concurrent computation using actors, message passing, and isolation
-- list supervisors
 - Platform Engineer
-- list actors
-- get system health
-- get actor
-- get actor system health including throughput, error rate, and dead letter count
-- Distributed Systems Developer
 - manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
-- inspect pending messages in an actor's mailbox for debugging
-- Site Reliability Engineer
+- spawn actor
 - builds and operates distributed platforms using actor model frameworks like akka or orleans
-- spawn a new actor
-- cluster management
+- get system health
 - system health status
-- distributed systems
+- supervision
+- cluster management
+- send a typed message to an actor's mailbox for asynchronous processing
 - list all active actors
-- get health
+- inspect pending messages in an actor's mailbox for debugging
+- actor lifecycle management
+- send message
 - list supervisors with their strategies and child actor counts
 - actor model
-- send message
+- Site Reliability Engineer
+- distributed cluster management, sharding, and fault tolerance
+- get health
+- list supervisors
+- list actors
+- distributed systems
+- get actor
 - inspect mailbox
-- list all cluster nodes with their status, roles, and actor counts
-- supervision
-- list cluster members
+- designs concurrent, fault-tolerant systems using actor model patterns
+- get actor system health including throughput, error rate, and dead letter count
 - get details of a specific actor including mailbox size and restart count
-- concurrency
-- send a typed message to an actor's mailbox for asynchronous processing
-- actor lifecycle management
+- Distributed Systems Developer
+- list cluster members
+- spawn a new actor
+- monitors actor system health, throughput, and failure recovery
 slug: actor-system-management
 tags:
 - Actor Model

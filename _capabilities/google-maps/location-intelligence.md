@@ -35,43 +35,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- search for places using a natural language text query like 'pizza in new york'
-- routing
-- geocoding
-- geocode an address to coordinates or reverse geocode coordinates to an address
-- directions
-- get place predictions for input text
-- geocode an address or reverse geocode coordinates
-- environment
-- search for places near a specific location with type filters
-- get place photo
-- get directions between two or more locations
+- search places text
+- autocomplete places
 - address to coordinate conversion and reverse geocoding
-- get detailed information about a place
-- place details retrieval
-- search places nearby
+- solar
 - location
-- google maps
-- get place details
-- get a photo for a place by place id and photo reference
-- place autocomplete predictions
-- search for places using a text query
-- get detailed information about a place including address, rating, hours, and reviews
-- places
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
-- location-based place search
+- maps
 - text-based place search
+- places
+- get detailed information about a place including address, rating, hours, and reviews
+- get a photo for a place by place id and photo reference
+- geocode
+- search for places near a specific location with type filters
 - get directions
 - get place autocomplete predictions as the user types
-- search for places near a location
-- solar
-- geocode
-- autocomplete places
-- maps
-- search places text
-- geolocation
-- route computation between locations
 - navigation
+- get directions between two or more locations
+- geocoding
+- route computation between locations
+- search for places near a location
+- get detailed information about a place
+- get place predictions for input text
+- geocode an address or reverse geocode coordinates
+- geolocation
+- get place photo
+- search for places using a natural language text query like 'pizza in new york'
+- geocode an address to coordinates or reverse geocode coordinates to an address
+- google maps
+- search for places using a text query
+- search places nearby
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- place autocomplete predictions
+- get place details
+- directions
+- place details retrieval
+- environment
+- routing
+- location-based place search
 slug: location-intelligence
 tags:
 - Google Maps
