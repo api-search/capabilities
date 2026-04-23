@@ -8,7 +8,9 @@ consumed_apis:
 - snowflake-iceberg-table
 - snowflake-event-table
 - snowflake-external-volume
-description: Unified workflow for managing databases, schemas, tables, views, dynamic tables, iceberg tables, and event tables. Used by Data Engineers and Database Administrators to create, organize, and maintain data structures.
+description: Unified workflow for managing databases, schemas, tables, views, dynamic
+  tables, iceberg tables, and event tables. Used by Data Engineers and Database Administrators
+  to create, organize, and maintain data structures.
 layout: capability
 name: Snowflake Data Management
 operations:
@@ -72,75 +74,65 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- table management
-- list event tables
-- delete database
-- restore a dropped database
-- create a table
-- iceberg table management
-- data warehousing
-- suspend dynamic table
-- list iceberg tables
-- database
-- create event table
-- clone database
-- sql
-- fetch database
-- fetch schema details
-- fetch a database
-- create a view
-- snowflake
-- data management
-- dynamic table management
-- create a new view
-- list all accessible databases
+- ai
 - clone a database
-- create a schema
-- list schemas in a database
-- list databases
-- single database operations
-- list views
-- list external volumes
-- create schema
-- data lakes
-- delete a schema
-- create iceberg table
-- list views in a schema
+- clone database
 - create a database
-- resume dynamic table
-- list tables
-- create a new schema
-- resume a dynamic table
-- undrop database
-- delete a table
-- create database
-- delete table
-- create a new table
-- view management
-- fetch table details
-- create an iceberg table
-- create table
-- database management
-- schema management
-- create an event table
-- fetch schema
-- suspend a dynamic table
 - create a dynamic table
-- create an external volume
-- delete a database
-- data engineering
-- create dynamic table
 - create a new database
-- fetch database details by name
-- list all databases
-- list dynamic tables
-- delete schema
-- list tables in a schema
-- fetch table
+- create a new schema
+- create a new table
+- create a new view
+- create a schema
+- create a table
+- create a view
+- create an event table
+- create an external volume
+- create an iceberg table
+- create database
+- create dynamic table
+- create event table
 - create external volume
-- list schemas
+- create iceberg table
+- create schema
+- create table
 - create view
-- data sharing
+- data engineering
+- data management
+- database
+- delete a database
+- delete a schema
+- delete a table
+- delete database
+- delete schema
+- delete table
+- fetch a database
+- fetch database
+- fetch database details by name
+- fetch schema
+- fetch schema details
+- fetch table
+- fetch table details
+- list all accessible databases
+- list all databases
+- list databases
+- list dynamic tables
+- list event tables
+- list external volumes
+- list iceberg tables
+- list schemas
+- list schemas in a database
+- list tables
+- list tables in a schema
+- list views
+- list views in a schema
+- restore a dropped database
+- resume a dynamic table
+- resume dynamic table
+- snowflake
+- suspend a dynamic table
+- suspend dynamic table
+- undrop database
 slug: data-management
 tags:
 - Snowflake
@@ -161,7 +153,7 @@ tools:
   name: fetch-database
 - description: Delete a database
   hints:
-    destructive: true
+    readOnly: false
   name: delete-database
 - description: Clone a database
   hints:
@@ -185,7 +177,7 @@ tools:
   name: fetch-schema
 - description: Delete a schema
   hints:
-    destructive: true
+    readOnly: false
   name: delete-schema
 - description: List tables in a schema
   hints:
@@ -201,7 +193,7 @@ tools:
   name: fetch-table
 - description: Delete a table
   hints:
-    destructive: true
+    readOnly: false
   name: delete-table
 - description: List views in a schema
   hints:

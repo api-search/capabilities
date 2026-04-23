@@ -9,7 +9,9 @@ consumed_apis:
 - snowflake-procedure
 - snowflake-udf
 - snowflake-result
-description: Unified workflow for building and managing data pipelines using SQL execution, tasks, streams, pipes, stages, and functions. Used by Data Engineers to orchestrate ETL/ELT workflows and continuous data ingestion.
+description: Unified workflow for building and managing data pipelines using SQL execution,
+  tasks, streams, pipes, stages, and functions. Used by Data Engineers to orchestrate
+  ETL/ELT workflows and continuous data ingestion.
 layout: capability
 name: Snowflake Data Engineering
 operations:
@@ -53,72 +55,63 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- cancel statement
-- list change data capture streams
-- stream management
-- resume a suspended task
-- suspend task
-- execute a function
-- data warehousing
-- database
-- create task
-- create a cdc stream
-- create stage
-- sql
-- create a stage
-- resume task
-- list data ingestion pipes
-- pipe management
-- snowflake
-- list stages
-- list scheduled tasks
-- execute task
-- cancel a running statement
-- get status of a submitted statement
-- sql statement execution
-- task management
-- list pipes
-- create pipe
-- submit a sql statement
-- list tasks
-- data lakes
-- create a task
-- list procedures
-- get a query result
-- create a stream
-- execute function
-- list streams
-- submit sql
-- create stream
-- suspend a running task
-- refresh a pipe
-- submit statement
 - call a stored procedure
-- list data loading stages
-- list functions
-- data pipelines
 - call procedure
-- stage management
-- create a pipe
-- etl
-- execute a task immediately
-- get statement status
-- get query result
-- list udfs
-- data engineering
-- list stage files
+- cancel a running statement
+- cancel statement
+- create a cdc stream
 - create a function
+- create a pipe
 - create a pipe for continuous ingestion
-- create function
 - create a scheduled task
-- list user defined functions
-- refresh pipe
-- list files in a stage
-- list stored procedures
-- data sharing
-- create procedure
-- submit a sql statement for execution
+- create a stage
 - create a stored procedure
+- create a stream
+- create a task
+- create function
+- create pipe
+- create procedure
+- create stage
+- create stream
+- create task
+- data engineering
+- data pipelines
+- etl
+- execute a function
+- execute a task immediately
+- execute function
+- execute task
+- get a query result
+- get query result
+- get statement status
+- get status of a submitted statement
+- list change data capture streams
+- list data ingestion pipes
+- list data loading stages
+- list files in a stage
+- list functions
+- list pipes
+- list procedures
+- list scheduled tasks
+- list stage files
+- list stages
+- list stored procedures
+- list streams
+- list tasks
+- list udfs
+- list user defined functions
+- refresh a pipe
+- refresh pipe
+- resume a suspended task
+- resume task
+- snowflake
+- sql
+- submit a sql statement
+- submit a sql statement for execution
+- submit sql
+- submit statement
+- suspend a running task
+- suspend task
 slug: data-engineering
 tags:
 - Snowflake
@@ -136,7 +129,7 @@ tools:
   name: get-statement-status
 - description: Cancel a running statement
   hints:
-    destructive: true
+    readOnly: false
   name: cancel-statement
 - description: List scheduled tasks
   hints:
