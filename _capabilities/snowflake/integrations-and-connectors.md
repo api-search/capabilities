@@ -3,7 +3,9 @@ consumed_apis:
 - snowflake-api-integration
 - snowflake-catalog-integration
 - snowflake-notification-integration
-description: Unified workflow for managing API integrations, catalog integrations, and notification integrations. Used by Platform Engineers and Data Architects to connect Snowflake with external services, catalogs, and notification systems.
+description: Unified workflow for managing API integrations, catalog integrations,
+  and notification integrations. Used by Platform Engineers and Data Architects to
+  connect Snowflake with external services, catalogs, and notification systems.
 layout: capability
 name: Snowflake Integrations and Connectors
 operations:
@@ -35,38 +37,40 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- fetch catalog integration
-- sql
-- connectors
+- api integration management
 - catalog integration management
-- fetch notification integration details
-- delete notification integration
-- list api integrations
+- connectors
+- create a catalog integration
+- create a notification integration
 - create an api integration
-- delete api integration
 - create api integration
-- notification integration management
+- create catalog integration
+- create notification integration
 - data lakes
-- snowflake
-- fetch api integration details
+- data sharing
+- data warehousing
+- database
 - delete a catalog integration
 - delete a notification integration
-- create a notification integration
-- fetch catalog integration details
-- data sharing
-- list notification integrations
-- create notification integration
-- fetch api integration
 - delete an api integration
-- integrations
+- delete api integration
 - delete catalog integration
-- create a catalog integration
-- database
+- delete notification integration
+- fetch api integration
+- fetch api integration details
+- fetch catalog integration
+- fetch catalog integration details
 - fetch notification integration
-- data warehousing
-- create catalog integration
-- api integration management
+- fetch notification integration details
+- integrations
+- list api integrations
+- list notification integrations
+- notification integration management
+- snowflake
+- sql
 - list catalog integrations
+- list notification integrations
+- snowflake
 slug: integrations-and-connectors
 tags:
 - Snowflake
@@ -87,7 +91,7 @@ tools:
   name: fetch-api-integration
 - description: Delete an API integration
   hints:
-    destructive: true
+    readOnly: false
   name: delete-api-integration
 - description: List catalog integrations
   hints:
@@ -103,7 +107,7 @@ tools:
   name: fetch-catalog-integration
 - description: Delete a catalog integration
   hints:
-    destructive: true
+    readOnly: false
   name: delete-catalog-integration
 - description: List notification integrations
   hints:
@@ -119,6 +123,6 @@ tools:
   name: fetch-notification-integration
 - description: Delete a notification integration
   hints:
-    destructive: true
+    readOnly: false
   name: delete-notification-integration
 ---

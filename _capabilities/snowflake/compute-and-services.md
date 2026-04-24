@@ -5,7 +5,9 @@ consumed_apis:
 - snowflake-service
 - snowflake-image-repository
 - snowflake-alert
-description: Unified workflow for managing warehouses, compute pools, Snowpark Container Services, image repositories, and monitoring alerts. Used by Platform Engineers and DevOps teams to provision and operate compute infrastructure.
+description: Unified workflow for managing warehouses, compute pools, Snowpark Container
+  Services, image repositories, and monitoring alerts. Used by Platform Engineers
+  and DevOps teams to provision and operate compute infrastructure.
 layout: capability
 name: Snowflake Compute and Services
 operations:
@@ -45,54 +47,55 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- compute pool management
+- ai
 - alert management
-- list compute pools
-- fetch warehouse
-- fetch service status
-- create a warehouse
-- sql
-- get service status
-- create a compute pool
-- create a virtual warehouse
 - compute
-- resume service
+- compute pool management
 - container service management
+- containers
+- create a compute pool
+- create a container service
+- create a monitoring alert
+- create a service
+- create a virtual warehouse
+- create a warehouse
+- create alert
+- create an alert
+- create an image repository
+- create compute pool
+- create image repository
+- create service
+- create warehouse
+- data lakes
+- data sharing
+- data warehousing
+- database
+- delete a warehouse
+- delete warehouse
+- execute alert
+- execute an alert
+- fetch service logs
+- fetch service status
+- fetch warehouse
+- fetch warehouse details
+- get service logs
+- get service status
+- infrastructure
+- list alerts
+- list compute pools
+- list container services
+- list image repositories
+- list monitoring alerts
+- list services
+- list virtual warehouses
 - list warehouses
+- resume a suspended service
+- resume service
+- snowflake
+- sql
 - suspend a running service
 - suspend service
-- execute alert
-- delete a warehouse
-- list monitoring alerts
-- create a monitoring alert
-- list image repositories
-- list container services
-- create compute pool
-- get service logs
-- data lakes
-- list alerts
-- fetch service logs
-- snowflake
-- data sharing
 - warehouse management
-- create a service
-- create an image repository
-- fetch warehouse details
-- resume a suspended service
-- create an alert
-- containers
-- database
-- create service
-- list services
-- create image repository
-- create warehouse
-- create alert
-- execute an alert
-- list virtual warehouses
-- data warehousing
-- create a container service
-- delete warehouse
-- infrastructure
 slug: compute-and-services
 tags:
 - Snowflake
@@ -114,7 +117,7 @@ tools:
   name: fetch-warehouse
 - description: Delete a warehouse
   hints:
-    destructive: true
+    readOnly: false
   name: delete-warehouse
 - description: List compute pools
   hints:
