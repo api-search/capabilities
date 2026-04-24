@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon CloudSearch
 provider_slug: amazon-cloudsearch
 search_terms:
-- Application Developer
-- cloudsearch
-- amazon cloudsearch
-- aws
-- full-text search
-- managed
-- search
 - amazon web services
+- full-text search
+- amazon cloudsearch
+- search
+- cloudsearch
+- Application Developer
+- managed
+- aws
 slug: search-management
 tags:
 - Amazon Web Services

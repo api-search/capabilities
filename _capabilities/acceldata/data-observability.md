@@ -9,12 +9,12 @@ provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
 - observability
-- data quality
-- ai agents
-- intelligence
-- data observability
-- data pipeline
 - data management
+- data observability
+- data quality
+- intelligence
+- data pipeline
+- ai agents
 slug: data-observability
 tags: []
 tools: []

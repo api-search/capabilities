@@ -9,43 +9,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- devops
-- deployment
-- release management
-- list deployments for an application and deployment group
-- create a deployment group for an application
-- list deployments
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- create a new deployment
-- list applications
-- create and monitor deployments
-- list codedeploy applications
-- Release Manager
-- get deployment
-- DevOps Engineer
-- manages deployment infrastructure.
-- list deployment groups
-- list deployment groups for an application
-- list instances in a deployment
-- create deployment
-- manage deployment groups
-- stop an in-progress deployment
-- amazon
-- get details about a specific deployment
-- blue/green deployment
 - manage codedeploy applications
 - get deployment information for a target instance
-- create deployment group
-- coordinates application releases.
-- managing software release processes and rollbacks.
-- aws
+- manages deployment infrastructure.
+- manage deployment groups
 - list deployment instances
-- automated application deployment to compute targets.
-- get deployment instance
-- create a codedeploy application
+- create a deployment group for an application
+- list codedeploy applications
+- get deployment
+- get details about a specific deployment
+- devops
 - create application
-- ci/cd
+- list applications
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- create deployment
 - stop deployment
+- create and monitor deployments
+- create a codedeploy application
+- DevOps Engineer
+- deployment
+- managing software release processes and rollbacks.
+- get deployment instance
+- list instances in a deployment
+- list deployments
+- automated application deployment to compute targets.
+- list deployments for an application and deployment group
+- blue/green deployment
+- release management
+- stop an in-progress deployment
+- aws
+- list deployment groups
+- amazon
+- Release Manager
+- coordinates application releases.
+- ci/cd
+- create a new deployment
+- list deployment groups for an application
+- create deployment group
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

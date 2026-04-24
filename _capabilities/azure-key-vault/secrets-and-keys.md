@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- encrypt
-- create a new certificate.
-- sign a digest using a key.
-- get key
-- key management
-- delete key
-- list cryptographic keys in the vault.
-- sign
-- decrypt
-- get a secret value.
-- verify
-- list certificates in the vault.
-- list secrets.
-- azure
-- delete secret
-- create a key.
-- delete a key.
-- secret management.
-- list certificates
-- encrypt data using a key.
-- set secret
-- key management.
-- create certificate
-- get a key.
-- set a secret.
-- verify a signature.
-- list keys
-- cloud security
-- get a certificate.
-- list certificates.
-- key vault
-- security
-- get key details.
-- individual secret management.
-- list secrets in the vault.
 - get a secret.
-- get certificate
-- cryptography
+- encrypt
 - decrypt data using a key.
-- list keys.
-- delete certificate
-- certificates
-- get secret
-- individual key management.
-- secrets management
-- create key
 - delete a secret.
-- list secrets
-- certificate management.
+- key management.
+- list certificates
+- create certificate
+- individual key management.
+- key management
+- list secrets.
+- set a secret.
+- get key details.
+- list certificates in the vault.
 - create a new cryptographic key.
+- delete secret
 - set a secret value.
+- sign a digest using a key.
+- decrypt
+- create a new certificate.
+- certificates
+- secrets management
+- create a key.
+- get certificate
+- encrypt data using a key.
+- delete key
+- get a key.
+- list secrets
+- list certificates.
+- cryptography
+- get key
+- list keys.
+- individual secret management.
+- delete certificate
+- cloud security
 - delete a certificate.
+- secret management.
+- list keys
+- key vault
+- sign
+- set secret
+- verify a signature.
+- verify
+- list cryptographic keys in the vault.
+- security
+- certificate management.
+- delete a key.
+- get secret
+- azure
+- create key
+- get a secret value.
+- get a certificate.
+- list secrets in the vault.
 slug: secrets-and-keys
 tags:
 - Azure

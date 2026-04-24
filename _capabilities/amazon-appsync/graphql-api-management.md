@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- start schema creation
-- list all data sources connected to a graphql api.
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
-- create a new graphql api with the specified authentication type and configuration.
-- create graphql api
 - list all appsync graphql apis to understand available apis and their configurations.
-- upload a new graphql schema
-- create a reusable pipeline function for use in pipeline resolvers.
 - get complete details of a graphql api including authentication configuration and endpoints.
-- create resolver
-- create a resolver that maps a graphql field to a data source operation.
-- upload a new graphql schema definition to an appsync api.
-- graphql api management
-- api management
-- serverless
-- graphql
-- create a graphql api
-- create data source
-- list functions
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- list data sources
-- list graphql apis
-- aws
 - list reusable pipeline functions available for composing complex resolvers.
-- amazon appsync
-- create function
-- graphql schema management
-- list all graphql apis
+- serverless
+- create resolver
+- list all data sources connected to a graphql api.
+- list data sources
 - list resolvers
+- graphql api management
+- upload a new graphql schema
+- create a new graphql api with the specified authentication type and configuration.
+- create a reusable pipeline function for use in pipeline resolvers.
+- graphql schema management
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- api management
+- create a graphql api
+- start schema creation
+- list functions
+- create function
+- amazon appsync
+- aws
+- list all graphql apis
 - get graphql api
+- graphql
+- upload a new graphql schema definition to an appsync api.
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- create graphql api
+- create a resolver that maps a graphql field to a data source operation.
+- create data source
+- list graphql apis
 slug: graphql-api-management
 tags:
 - Amazon AppSync

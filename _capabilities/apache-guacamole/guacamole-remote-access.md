@@ -25,46 +25,46 @@ personas: []
 provider_name: Apache Guacamole
 provider_slug: apache-guacamole
 search_terms:
-- user and group account administration
-- create connection
-- list active sessions
-- it administration
-- IT Administrator
-- administrators managing remote access infrastructure and user accounts
+- manage remote desktop connections, users, and active sessions
 - vpn alternative
-- user account management
-- create a new remote desktop connection in guacamole
-- remote access
-- web gateway
-- apache guacamole
-- list remote connections
-- session monitoring, access control, and audit logging
-- create a new remote desktop connection
-- create a new user account in guacamole
-- create guacamole user
+- Security Team
+- list all configured remote desktop connections in guacamole
+- remote desktop connection management
+- user and group account administration
+- IT Administrator
+- list guacamole users
 - list all remote desktop connections
-- security
-- list users
-- remote desktop
 - list all guacamole user accounts
 - list all active remote desktop sessions
-- list guacamole users
-- list connections
-- manage remote desktop connections, users, and active sessions
+- remote access
+- create connection
+- web gateway
 - list all guacamole users
 - rdp
-- list all configured remote desktop connections in guacamole
-- create remote connection
-- active session monitoring
-- Security Team
-- ssh
-- list all currently active remote desktop sessions
-- vnc
-- remote desktop connection management via vnc, rdp, ssh protocols
-- security teams monitoring active sessions and auditing connection history
+- it administration
+- remote desktop
+- session monitoring, access control, and audit logging
 - apache
+- create guacamole user
+- ssh
+- create remote connection
+- create a new remote desktop connection
+- active session monitoring
+- create a new user account in guacamole
 - open source
-- remote desktop connection management
+- apache guacamole
+- user account management
+- list remote connections
+- administrators managing remote access infrastructure and user accounts
+- create a new remote desktop connection in guacamole
+- vnc
+- security
+- security teams monitoring active sessions and auditing connection history
+- list all currently active remote desktop sessions
+- remote desktop connection management via vnc, rdp, ssh protocols
+- list connections
+- list active sessions
+- list users
 slug: guacamole-remote-access
 tags:
 - Apache Guacamole

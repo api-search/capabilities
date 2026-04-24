@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a new checkout session for a merchant
-- register a contactless reader device
-- e-commerce
-- create unified session
-- process cloud transaction
-- fraud detection
+- generate a merchant-presented qr code for payment
 - create checkout session
-- retrieve payment transaction details
-- mastercard
-- qr code payment acceptance
-- credit cards
-- process a cloud commerce transaction
+- create unified session
 - create a unified checkout session
-- create installment plan
+- payments
+- e-commerce
+- register contactless reader
+- digital identity
+- unified checkout sessions
+- payment processing
+- process a payment through the mastercard gateway
+- checkout
+- process a cloud commerce transaction
+- credit cards
+- get payment
+- qr code payment acceptance
+- process a payment through the gateway
+- fraud detection
+- mastercard
+- register a contactless reader device
+- process payment
+- checkout session management
+- create an installment plan
+- create a new checkout session for a merchant
+- get payment details
+- merchant
+- create a unified checkout session supporting multiple payment methods
 - create a buy-now-pay-later installment plan
+- generate qr code
 - financial services
 - buy-now-pay-later installment plans
-- generate a merchant qr code for payment
-- process payment
-- create a unified checkout session supporting multiple payment methods
-- process a payment through the gateway
-- open banking
-- generate qr code
+- retrieve payment transaction details
 - create a new checkout session
-- process a payment through the mastercard gateway
-- get payment details
-- checkout session management
-- merchant
-- generate a merchant-presented qr code for payment
-- unified checkout sessions
-- register contactless reader
-- payments
-- payment processing
-- create an installment plan
-- digital identity
-- checkout
-- get payment
+- generate a merchant qr code for payment
+- process cloud transaction
+- open banking
+- create installment plan
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

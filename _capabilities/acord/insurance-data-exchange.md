@@ -49,61 +49,61 @@ personas: []
 provider_name: ACORD
 provider_slug: acord
 search_terms:
-- update policy
 - insurance policy lifecycle management
-- acord
-- create party
-- list claims
-- primary insurer managing policy issuance, claims, and underwriting
-- Reinsurer
-- submit a first notice of loss (fnol) using acord ngds claims transaction model
-- list insurance parties (insureds, agents, brokers, carriers) from acord registry
-- list claims with filtering
-- list policies with filtering
-- reinsurance company accessing cedant data for risk assessment and settlement
-- endorse or amend a policy
-- get claim
-- individual policy operations
+- insurance party registry
+- list insurance policies using acord ngds standards with filtering by number, line of business, and status
+- Insurance Carrier
 - insurance
-- retrieve full acord claim details including reserves and payment history
-- get claim details and payment history
-- issue a new acord-compliant insurance policy
-- Broker
+- acord
+- retrieve full acord policy details including coverages and insured party
+- create party
+- list policies with filtering
 - register a new party
 - first notice of loss, reserves, and payment tracking for insurance claims
-- list parties
-- underwriting
-- list policies
-- create policy
-- get full policy details
-- Insurance Carrier
-- full lifecycle management of insurance policies from issuance to expiration
-- individual claim operations
-- submit underwriting
-- policy administration
-- claims intake and inquiry
-- retrieve full acord policy details including coverages and insured party
-- list registered parties
-- apply endorsements or amendments to an acord policy
-- risk assessment and policy issuance decision workflows
-- register a new insurance party in the acord ngds party registry
-- policy
-- get policy
-- registry of all insurance parties including insureds, agents, and carriers
 - claims
-- list insurance policies using acord ngds standards with filtering by number, line of business, and status
-- claims management
+- registry of all insurance parties including insureds, agents, and carriers
 - list insurance claims with acord ngds filtering by policy, status, and loss date range
-- standards
-- submit claim
-- underwriting application submission
-- insurance party registry
-- submit a first notice of loss
-- submit an insurance application for underwriting review using acord ngds
-- intermediary managing client policies, claims submissions, and party records
+- get policy
+- list claims with filtering
+- underwriting
+- individual policy operations
+- policy
+- Broker
 - submit an application for underwriting review
+- reinsurance company accessing cedant data for risk assessment and settlement
+- Reinsurer
+- risk assessment and policy issuance decision workflows
+- update policy
+- create policy
+- submit underwriting
+- get claim
+- policy administration
+- submit an insurance application for underwriting review using acord ngds
+- underwriting application submission
+- claims intake and inquiry
+- issue a new acord-compliant insurance policy
+- standards
+- register a new insurance party in the acord ngds party registry
+- list parties
+- intermediary managing client policies, claims submissions, and party records
+- primary insurer managing policy issuance, claims, and underwriting
 - issue a new insurance policy
+- get full policy details
+- list claims
+- submit a first notice of loss (fnol) using acord ngds claims transaction model
+- list policies
 - unified acord ngds workflow for policy, claims, party, and underwriting
+- list insurance parties (insureds, agents, brokers, carriers) from acord registry
+- submit a first notice of loss
+- list registered parties
+- endorse or amend a policy
+- apply endorsements or amendments to an acord policy
+- get claim details and payment history
+- submit claim
+- individual claim operations
+- claims management
+- full lifecycle management of insurance policies from issuance to expiration
+- retrieve full acord claim details including reserves and payment history
 slug: insurance-data-exchange
 tags:
 - ACORD

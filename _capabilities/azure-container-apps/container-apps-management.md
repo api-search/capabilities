@@ -21,35 +21,35 @@ personas: []
 provider_name: Azure Container Apps
 provider_slug: azure-container-apps
 search_terms:
-- devops
 - list all container apps
-- create or update an azure container app
+- serverless
 - Platform Engineer
-- delete an azure container app
+- container app job management
+- deploys and manages containerized application workloads
+- devops
+- list container apps
 - create container app
-- list all managed environments
-- containers
+- list all container app jobs
+- manages the container infrastructure and environments
+- delete an azure container app
+- list environments
+- serverless compute and job execution
+- create or update an azure container app
+- list jobs
+- manage containerized applications, environments, and jobs
+- list all azure container apps in a subscription
+- managed environment management
 - delete container app
+- container app deployment and management
+- containers
+- container app management
+- dapr
+- list all managed environments
 - azure
 - kubernetes
-- list all container app jobs
-- list container apps
-- container app job management
-- DevOps Engineer
-- serverless compute and job execution
-- list jobs
-- container app management
 - list all managed container app environments
-- serverless
-- list all azure container apps in a subscription
-- deploys and manages containerized application workloads
-- manage containerized applications, environments, and jobs
-- managed environment management
-- manages the container infrastructure and environments
 - microservices
-- list environments
-- dapr
-- container app deployment and management
+- DevOps Engineer
 slug: container-apps-management
 tags:
 - Azure

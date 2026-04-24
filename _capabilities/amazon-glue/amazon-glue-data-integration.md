@@ -41,64 +41,64 @@ personas: []
 provider_name: Amazon Glue
 provider_slug: amazon-glue
 search_terms:
-- create a new etl workflow with triggers and jobs
-- create connection
-- uses glue to access and prepare data for analytics
-- create workflow
-- list etl jobs
-- check the status of an etl job run
-- amazon glue
-- list tables in a data catalog database
-- analytics
-- list all catalog databases
-- data catalog databases
-- start job run
-- list all crawlers
-- list all amazon glue etl jobs with status and configuration
-- create job
-- list all etl workflow orchestrations
-- builds and manages etl pipelines and data catalog resources
-- create crawler
-- list databases
-- create a connection to a data source
-- Data Analyst
-- create etl job
-- create a new crawler
-- list all databases in the glue data catalog
-- list all workflows
-- list all data source connections
-- list workflows
-- list jobs
-- list all data catalog crawlers
-- list tables
-- list crawlers
-- etl workflow orchestration
-- create a new amazon glue etl job
-- list all glue ml transforms
-- data integration
-- create a new etl job
-- serverless
-- start a job run
-- run a crawler to populate the data catalog
-- Data Engineer
-- list connections
+- execute an etl job run
 - create a crawler to discover and catalog data sources
+- list all data source connections
+- serverless
+- list all crawlers
+- create a new etl workflow with triggers and jobs
+- create crawler
+- data catalog crawlers
+- etl workflow orchestration
+- create a new etl job
+- data pipeline
+- list workflows
+- analytics
+- list tables in a data catalog database
+- list all workflows
+- create connection
+- create a new amazon glue etl job
+- data integration
+- create workflow
+- create a new etl workflow
+- etl job lifecycle management
+- start crawler
+- list all databases in the glue data catalog
 - list all etl jobs
 - list data quality results
+- start job run
+- create job
 - etl
-- list data quality evaluation results
-- list ml transforms
-- aws
-- create a new etl workflow
-- data engineering
-- job execution runs
-- data pipeline
-- start crawler
 - data catalog
+- uses glue to access and prepare data for analytics
+- check the status of an etl job run
+- list jobs
+- job execution runs
+- list databases
+- list all catalog databases
+- list ml transforms
+- list data quality evaluation results
+- list all amazon glue etl jobs with status and configuration
+- list all etl workflow orchestrations
+- create a new crawler
+- data engineering
+- start a job run
+- Data Engineer
 - get job run status
-- execute an etl job run
-- etl job lifecycle management
-- data catalog crawlers
+- list all data catalog crawlers
+- aws
+- list all glue ml transforms
+- list etl jobs
+- amazon glue
+- list tables
+- run a crawler to populate the data catalog
+- data catalog databases
+- builds and manages etl pipelines and data catalog resources
+- list connections
+- create a connection to a data source
+- list crawlers
+- Data Analyst
+- create etl job
 slug: amazon-glue-data-integration
 tags:
 - Amazon Glue

@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Data Pipeline
 provider_slug: amazon-data-pipeline
 search_terms:
-- automation
-- aws
-- workflows
 - data processing
+- workflows
 - data pipeline
+- automation
 - etl
+- aws
 slug: etl-pipeline-operations
 tags: []
 tools: []

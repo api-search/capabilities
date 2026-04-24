@@ -37,52 +37,52 @@ personas: []
 provider_name: Amazon Glue DataBrew
 provider_slug: amazon-glue-databrew
 search_terms:
-- create a new recipe
-- create a new recipe with transformation steps
-- list all databrew jobs
+- create recipe job
+- manage collaborative databrew projects
+- get details about a specific dataset
+- create dataset
+- list job runs
+- Data Scientist
+- list all databrew transformation and profiling jobs
 - publish a recipe version for production use
-- data preparation
 - prepares and cleans data for business analytics
+- data preparation
 - analytics
-- create recipe
-- create a new dataset from s3, database, or other sources
-- create a new databrew project for collaborative data preparation
-- list all collaborative databrew projects
-- prepares datasets for machine learning model training
-- start job run
-- start a job execution
-- create project
-- manage datasets for transformation
+- create a new dataset
+- create a new recipe
 - manage data transformation recipes
+- execute a databrew transformation or profiling job
+- list all databrew jobs
+- list all collaborative databrew projects
+- manage and run databrew jobs
+- create a job to apply a recipe to a dataset
+- start a job execution
+- start job run
+- etl
+- create recipe
+- list recipes
+- prepares datasets for machine learning model training
+- list all data transformation recipes
+- list jobs
+- manage datasets for transformation
 - amazon glue databrew
 - machine learning
-- list all projects
-- Data Analyst
-- get details about a specific dataset
-- list all databrew datasets available for preparation
-- list jobs
-- manage and run databrew jobs
-- Data Scientist
-- data analytics
-- publish recipe
 - describe dataset
-- list all databrew transformation and profiling jobs
-- list all runs for a specific job
-- etl
-- list datasets
-- list projects
-- manage collaborative databrew projects
-- list job runs
-- create a job to apply a recipe to a dataset
-- aws
-- list all recipes
-- create a new dataset
-- create recipe job
+- data analytics
+- create project
+- create a new recipe with transformation steps
+- create a new databrew project for collaborative data preparation
+- publish recipe
 - list all databrew datasets
-- create dataset
-- execute a databrew transformation or profiling job
-- list all data transformation recipes
-- list recipes
+- list all recipes
+- aws
+- list projects
+- list all projects
+- create a new dataset from s3, database, or other sources
+- list all runs for a specific job
+- list datasets
+- list all databrew datasets available for preparation
+- Data Analyst
 slug: amazon-glue-databrew-data-preparation
 tags:
 - Amazon Glue DataBrew

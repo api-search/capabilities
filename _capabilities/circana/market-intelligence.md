@@ -49,72 +49,72 @@ personas: []
 provider_name: Circana
 provider_slug: circana
 search_terms:
-- get report
-- get detailed brand information including market presence
-- create a new analytics report for a category and time period
-- get market share
-- list all available product categories in circana taxonomy
-- point of sale
-- retrieve consumer segmentation data based on purchase behavior
-- get consumer segments
-- consumer panel data, purchase behavior, and segmentation
-- market research
-- consumer data
-- list retailers covered in circana measurement universe
-- analytics
-- get pos data
-- retrieve pos data by category and time period
-- brand analytics
-- retail
-- get consumer purchases
-- categories, brands, and retailers
-- list brands
-- report generation, management, and data export
-- create a new report
-- retrieve aggregated consumer purchase data from panel surveys
-- Category Manager
-- pos data, market share, and sales performance analytics
 - monitors retailer performance, distribution, and channel dynamics
-- get brand
-- market intelligence
 - unified market intelligence combining pos, share, consumer, and reporting data
-- list product categories
-- create report
-- report management
-- consumer purchase behavior data
-- create a data export
-- get category
-- cpg
-- list reports
-- retrieve market share data
-- retrieve market share data for brands in a product category
+- point of sale
 - business intelligence
-- retrieve point-of-sale data for a product category and time period
-- check data export status and get download url
-- list brands in a category
-- retailer coverage data
-- list brands within a specific product category
-- analyzes consumer behavior, market trends, and competitive dynamics
-- get detailed information about a specific product category
-- consumer insights
-- circana
-- list categories
-- create export
-- retrieve consumer purchase data
-- consumer segmentation data
-- get export
 - retrieve consumer segments
-- manages brand performance, market share, and competitive positioning
+- retrieve point-of-sale data for a product category and time period
+- retailer coverage data
+- create export
 - list retailers
-- list available analytics reports
-- manages product category performance, assortment, and shopper insights
-- product category taxonomy
-- data export
-- market share analytics
-- point-of-sale data access
 - get report status and details
+- product category taxonomy
 - Brand Manager
+- market intelligence
+- Category Manager
+- get pos data
+- analytics
+- list all available product categories in circana taxonomy
+- circana
+- get detailed brand information including market presence
+- get category
+- get brand
+- create a new analytics report for a category and time period
+- get detailed information about a specific product category
+- list reports
+- consumer panel data, purchase behavior, and segmentation
+- check data export status and get download url
+- list product categories
+- retrieve market share data for brands in a product category
+- list retailers covered in circana measurement universe
+- retail
+- point-of-sale data access
+- retrieve pos data by category and time period
+- consumer insights
+- report generation, management, and data export
+- get consumer segments
+- list brands within a specific product category
+- retrieve consumer purchase data
+- create a data export
+- market share analytics
+- get market share
+- list brands
+- report management
+- get report
+- consumer purchase behavior data
+- list brands in a category
+- manages brand performance, market share, and competitive positioning
+- get export
+- brand analytics
+- create a new report
+- manages product category performance, assortment, and shopper insights
+- retrieve market share data
 - create a data export job in csv, excel, json, or parquet format
+- categories, brands, and retailers
+- create report
+- market research
+- retrieve aggregated consumer purchase data from panel surveys
+- list categories
+- get consumer purchases
+- analyzes consumer behavior, market trends, and competitive dynamics
+- consumer data
+- list available analytics reports
+- retrieve consumer segmentation data based on purchase behavior
+- pos data, market share, and sales performance analytics
+- consumer segmentation data
+- data export
+- cpg
 slug: market-intelligence
 tags:
 - Circana

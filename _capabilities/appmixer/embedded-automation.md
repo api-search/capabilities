@@ -25,43 +25,43 @@ personas: []
 provider_name: Appmixer
 provider_slug: appmixer
 search_terms:
-- approve task
-- managing tasks requiring human review or approval
-- lists users who have access to the embedded automation platform
-- create automation flow
-- approves or completes a pending human-in-the-loop task in an automation flow
-- list all automation flows
-- product user interacting with embedded automation workflows
-- embedded ipaas
-- list pending people tasks
-- create flow
-- automation flow lifecycle
-- list tasks
-- starts/runs an automation flow to execute its workflow
-- low-code
-- human-in-the-loop tasks
-- automation
-- user management for embedded automation
-- appmixer
-- workflows
-- agentic
-- saas
-- list users
-- developer embedding white-labeled automation into a product
-- list automation flows
-- persisting and retrieving workflow state and data
-- creates a new automation flow in appmixer for embedding in a product
-- list flows
 - end-to-end workflow for embedding automation in saas products
-- creating, running, and managing automation flows
+- automation flow lifecycle
 - create a new automation flow
-- run automation flow
-- lists human-in-the-loop tasks waiting for user review or approval
-- integrations
-- list pending tasks
-- lists all automation workflows configured in appmixer
+- starts/runs an automation flow to execute its workflow
+- creating, running, and managing automation flows
 - list automation users
+- list all automation flows
+- create flow
+- appmixer
+- lists all automation workflows configured in appmixer
+- list tasks
+- user management for embedded automation
+- lists human-in-the-loop tasks waiting for user review or approval
 - provisioning and managing automation platform users
+- automation
+- list automation flows
+- agentic
+- run automation flow
+- low-code
+- list pending tasks
+- embedded ipaas
+- approve task
+- approves or completes a pending human-in-the-loop task in an automation flow
+- integrations
+- creates a new automation flow in appmixer for embedding in a product
+- persisting and retrieving workflow state and data
+- create automation flow
+- product user interacting with embedded automation workflows
+- saas
+- list flows
+- list pending people tasks
+- lists users who have access to the embedded automation platform
+- developer embedding white-labeled automation into a product
+- workflows
+- human-in-the-loop tasks
+- managing tasks requiring human review or approval
+- list users
 slug: embedded-automation
 tags:
 - Appmixer

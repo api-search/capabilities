@@ -21,40 +21,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- apache geode
-- data grid
-- get all keys stored in a geode region
-- list all server-side functions available in the cluster
-- list all geode regions
-- Platform Engineer
-- manage in-memory data with regions, queries, and functions
 - data management
-- caching
-- oql query execution
-- region crud operations, oql queries, and function execution
-- get region keys
-- in-memory data grid
-- high-performance in-memory data caching and distribution
-- list all regions in the apache geode data grid
-- platform engineering
 - list regions
-- list available functions
-- execute query
-- list functions
-- list geode regions
-- execute oql query
-- developers using geode as a fast data store for applications
-- Application Developer
-- in-memory
-- execute an oql query
-- distributed systems
-- apache
-- server-side function execution
-- execute an oql query against geode regions
-- list geode functions
+- list all regions in the apache geode data grid
+- caching
+- Platform Engineer
+- data grid
 - geode region management
+- execute an oql query against geode regions
+- execute an oql query
+- execute query
+- region crud operations, oql queries, and function execution
+- manage in-memory data with regions, queries, and functions
+- high-performance in-memory data caching and distribution
+- platform engineering
+- execute oql query
+- distributed systems
+- apache geode
+- list all geode regions
+- list available functions
+- apache
+- list all server-side functions available in the cluster
+- developers using geode as a fast data store for applications
 - open source
 - engineers managing the geode cluster infrastructure
+- list functions
+- list geode functions
+- Application Developer
+- get all keys stored in a geode region
+- get region keys
+- in-memory data grid
+- server-side function execution
+- oql query execution
+- in-memory
+- list geode regions
 slug: geode-data-management
 tags:
 - Apache Geode

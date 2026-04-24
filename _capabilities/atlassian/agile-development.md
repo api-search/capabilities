@@ -17,30 +17,30 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list all jira projects
-- jira
-- agile
-- list statuses
-- software development
-- list all projects
-- search issues using jql
-- platform
-- list filters
-- search jira issues using jql queries
-- list jira workflows
-- list workflows
-- productivity
-- jira issue management
-- jira project management
 - code
-- list projects
-- list workflow statuses
-- search issues
-- list saved jira filters
-- atlassian
-- collaboration
+- list filters
+- productivity
 - list dashboards
+- agile
+- collaboration
+- software development
+- list workflows
+- atlassian
+- jira project management
+- jira issue management
 - list jira dashboards
+- list workflow statuses
+- jira
+- search jira issues using jql queries
+- list all jira projects
+- list jira workflows
+- list saved jira filters
+- list projects
+- list all projects
+- list statuses
+- platform
+- search issues using jql
+- search issues
 slug: agile-development
 tags:
 - Agile

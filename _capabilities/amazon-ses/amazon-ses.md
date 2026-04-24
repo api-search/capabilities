@@ -14,21 +14,21 @@ provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
 - amazon ses
-- cloud operations
-- aws
-- marketing email
-- smtp
 - list amazon ses resources
 - email deliverability
 - email
-- email service
-- amazon ses resources
-- transactional email
-- notifications
-- list resources
 - engineer managing amazon ses resources
-- aws cloud resource management
 - automation workflow for amazon ses
+- list resources
+- amazon ses resources
+- aws cloud resource management
+- cloud operations
+- email service
+- transactional email
+- smtp
+- notifications
+- marketing email
+- aws
 slug: amazon-ses
 tags:
 - Amazon Ses

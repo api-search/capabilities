@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- webmaster
-- delete a sitemap.
-- manage sitemaps.
-- analytics
-- get details for a specific site.
+- inspect urls for indexing status.
 - list sitemaps for a site.
-- webmaster tools
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- get sitemap details.
-- delete sitemap
-- query search analytics
+- search
+- delete site
+- delete a sitemap.
+- get details for a specific search console site.
 - get details for a specific sitemap.
-- list sites
 - add a site to search console.
+- analytics
+- list sites
+- delete a previously submitted sitemap.
+- get sitemap details.
+- get sitemap
+- submit sitemap
+- webmaster
+- get details for a specific site.
+- submit a sitemap for crawling.
+- webmaster tools
+- delete sitemap
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- submit a sitemap.
+- query search traffic data with filters and dimensions.
+- get site
 - list sitemaps
 - query search analytics data with filters.
-- inspect a url for index status and rich results.
-- delete site
-- search console
-- inspect url
-- query search traffic data with filters and dimensions.
 - query search traffic data.
-- google
-- submit sitemap
-- list all search console sites.
-- submit a sitemap for crawling.
-- search
-- get sitemap
-- delete a previously submitted sitemap.
-- list sitemaps submitted for a site.
+- manage sitemaps.
 - manage search console sites.
-- inspect urls for indexing status.
-- submit a sitemap.
-- get site
-- get details for a specific search console site.
-- seo
 - remove a site from search console.
-- list all search console sites for the authenticated user.
+- list sitemaps submitted for a site.
+- seo
+- inspect a url for index status and rich results.
+- google
+- inspect url
+- search console
+- list all search console sites.
+- query search analytics
 - add site
+- list all search console sites for the authenticated user.
 slug: seo-management
 tags:
 - Google

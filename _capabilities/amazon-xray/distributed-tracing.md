@@ -29,42 +29,42 @@ personas: []
 provider_name: Amazon X-Ray
 provider_slug: amazon-xray
 search_terms:
-- trace filtering groups.
-- get summaries of distributed traces for a specified time range.
-- get sampling rules
-- get trace summaries for a time range.
-- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
-- application performance insights.
-- service dependency visualization.
-- analyzes traces to debug application issues.
-- get the service map.
-- application tracing and service map visualization
-- monitors service health and performance using x-ray.
-- get sampling rules.
-- trace sampling configuration.
-- Developer
-- distributed tracing
-- get insight summaries.
-- get trace groups.
-- get all trace sampling rules to understand data collection configuration.
-- retrieve complete trace documents for specific trace ids.
-- latency analysis and bottleneck identification
-- batch get traces
-- get trace summaries
-- get service graph
-- trace data access and analysis.
-- get insight summaries
-- root cause analysis using distributed trace data
-- monitoring
-- get the service map showing inter-service dependencies and request flow.
-- get groups
 - observability
-- aws
-- get x-ray groups used to filter and organize traces.
 - get summaries of x-ray insights identifying anomalies and performance issues.
-- application performance
-- debugging
+- batch get traces
+- get insight summaries.
 - Site Reliability Engineer
+- get service graph
+- get summaries of distributed traces for a specified time range.
+- analyzes traces to debug application issues.
+- debugging
+- monitoring
+- get trace summaries for a time range.
+- application performance
+- trace sampling configuration.
+- get sampling rules.
+- trace data access and analysis.
+- application tracing and service map visualization
+- get all trace sampling rules to understand data collection configuration.
+- root cause analysis using distributed trace data
+- get insight summaries
+- distributed tracing
+- service dependency visualization.
+- get trace summaries
+- retrieve complete trace documents for specific trace ids.
+- get the service map showing inter-service dependencies and request flow.
+- monitors service health and performance using x-ray.
+- application performance insights.
+- aws
+- get the service map.
+- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
+- get sampling rules
+- trace filtering groups.
+- Developer
+- latency analysis and bottleneck identification
+- get groups
+- get trace groups.
+- get x-ray groups used to filter and organize traces.
 slug: distributed-tracing
 tags:
 - AWS

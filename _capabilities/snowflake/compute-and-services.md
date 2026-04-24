@@ -45,54 +45,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list image repositories
-- list alerts
-- alert management
-- create a service
-- get service logs
-- suspend a running service
-- data warehousing
-- warehouse management
-- fetch warehouse
-- create a container service
-- database
-- sql
-- list monitoring alerts
-- containers
-- snowflake
-- list compute pools
-- create alert
-- fetch service status
-- list virtual warehouses
-- resume a suspended service
-- create a monitoring alert
-- list services
-- compute
-- fetch warehouse details
 - compute pool management
+- alert management
+- list compute pools
+- fetch warehouse
+- fetch service status
+- create a warehouse
+- sql
+- get service status
+- create a compute pool
+- create a virtual warehouse
+- compute
 - resume service
-- create warehouse
-- data lakes
-- execute an alert
-- create image repository
+- container service management
+- list warehouses
+- suspend a running service
+- suspend service
+- execute alert
+- delete a warehouse
+- list monitoring alerts
+- create a monitoring alert
+- list image repositories
 - list container services
 - create compute pool
-- list warehouses
+- get service logs
+- data lakes
+- list alerts
+- fetch service logs
+- snowflake
+- data sharing
+- warehouse management
+- create a service
+- create an image repository
+- fetch warehouse details
+- resume a suspended service
+- create an alert
+- containers
+- database
+- create service
+- list services
+- create image repository
+- create warehouse
+- create alert
+- execute an alert
+- list virtual warehouses
+- data warehousing
+- create a container service
 - delete warehouse
 - infrastructure
-- get service status
-- container service management
-- execute alert
-- create a virtual warehouse
-- create an image repository
-- create a compute pool
-- create service
-- delete a warehouse
-- create an alert
-- suspend service
-- data sharing
-- fetch service logs
-- create a warehouse
 slug: compute-and-services
 tags:
 - Snowflake

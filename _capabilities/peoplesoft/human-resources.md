@@ -47,49 +47,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- human resources
-- employee records
-- talent management
+- peoplesoft
+- list employees
+- candidate applications
+- list benefit enrollments
 - search jobs
+- list pending approvals
+- submit application
+- campus solutions
+- erp
+- hr approval requests
+- hcm
+- job postings
+- retrieve pending hr approval requests.
+- submit a candidate application for a job posting.
+- approve, deny, or push back an hr approval request.
+- supply chain management
 - benefit enrollment records
 - process approval
-- financial and supply chain management.
-- payroll run history and status
-- human capital management.
-- job posting details
-- peoplesoft
-- submit a candidate application for a job posting.
-- get job details
-- list pending approvals
-- retrieve benefit enrollment records.
-- retrieve employee records with optional department and status filters.
-- list benefit enrollments
 - list payroll runs
-- candidate applications
-- search available job postings.
+- recruiting
+- individual approval operations
+- human resources
+- payroll
+- financial and supply chain management.
+- get job details
 - retrieve details for a specific employee.
 - campus solutions.
 - retrieve details for a specific job posting.
+- crm
+- employee records
+- retrieve employee records with optional department and status filters.
+- get employee
+- retrieve benefit enrollment records.
+- payroll run history and status
+- enterprise software
+- job posting details
+- financial management
+- human capital management.
+- talent management
+- search available job postings.
+- peopletools platform services.
 - individual employee details
 - retrieve payroll run history and status.
-- hcm
-- recruiting
-- campus solutions
-- hr approval requests
-- get employee
-- payroll
-- submit application
-- enterprise software
-- list employees
-- crm
-- financial management
-- approve, deny, or push back an hr approval request.
-- job postings
-- individual approval operations
-- erp
-- peopletools platform services.
-- retrieve pending hr approval requests.
-- supply chain management
 slug: human-resources
 tags:
 - PeopleSoft

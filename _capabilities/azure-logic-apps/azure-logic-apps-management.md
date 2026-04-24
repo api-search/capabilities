@@ -13,24 +13,24 @@ personas: []
 provider_name: Azure Logic Apps
 provider_slug: azure-logic-apps
 search_terms:
-- list workflow runs
-- cloud
-- list workflows
-- list workflowtrigger resources
-- list workflow triggers
-- resource management
-- workflows
-- management
 - list workflow resources
+- list workflows
+- list workflowrun resources
+- azure resource management
+- list integrationaccount resources
 - integration
 - list integration accounts
-- list integrationaccount resources
-- azure resource management
-- list workflowrun resources
+- list workflow triggers
+- list workflowtrigger resources
 - ipaas
-- list
 - azure
+- workflows
+- resource management
+- management
 - list all resources
+- cloud
+- list
+- list workflow runs
 slug: azure-logic-apps-management
 tags:
 - Azure

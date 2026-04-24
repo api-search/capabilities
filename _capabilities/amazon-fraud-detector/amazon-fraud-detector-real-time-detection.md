@@ -8,13 +8,13 @@ personas: []
 provider_name: Amazon Fraud Detector
 provider_slug: amazon-fraud-detector
 search_terms:
-- aws
 - fraud detection
-- machine learning
+- financial services
 - security
+- machine learning
 - financial security
 - real-time
-- financial services
+- aws
 slug: amazon-fraud-detector-real-time-detection
 tags:
 - Fraud Detection

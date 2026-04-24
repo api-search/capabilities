@@ -9,10 +9,10 @@ provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
 - automation
-- workflows
 - unified api
-- integrations
 - embedded integrations
+- workflows
+- integrations
 - ipaas
 slug: integration-platform
 tags: []

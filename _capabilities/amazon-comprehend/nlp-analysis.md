@@ -41,55 +41,55 @@ personas: []
 provider_name: Amazon Comprehend
 provider_slug: amazon-comprehend
 search_terms:
-- text analysis
-- detect sentiment in multiple documents.
-- named entity recognition.
-- integrates comprehend nlp apis into applications for real-time text analysis.
-- detect pii
-- entity recognition
-- natural language processing
 - language detection.
-- list available document classifiers.
-- batch sentiment analysis.
-- detect the dominant language of input text using amazon comprehend.
-- detect sentiment in multiple text documents in one batch call.
-- get properties and status of a specific document classifier.
-- sentiment analysis.
-- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
-- key phrase extraction.
-- batch detect sentiment
-- detect entities in multiple documents.
-- detect key phrases
-- list custom document classifiers trained in amazon comprehend.
-- detect named entities in text.
-- machine learning
-- extract key phrases from text.
-- pii detection.
-- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
-- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
-- sentiment analysis
-- Data Scientist
-- detect language
+- detect pii
 - detect pii entities in text.
-- detect sentiment in text.
-- amazon
+- batch detect sentiment
 - extract key noun phrases from text using amazon comprehend.
-- detect sentiment
 - detect entities
-- describe classifier
-- detect the dominant language of text.
-- Application Developer
-- detect syntax
-- uses comprehend for bulk text analysis, topic modeling, and custom model training.
-- aws
+- sentiment analysis
+- batch sentiment analysis.
+- Data Scientist
+- detect sentiment in multiple documents.
 - batch detect entities
 - detect personally identifiable information (pii) entities in text using amazon comprehend.
-- nlp
+- list available document classifiers.
+- uses comprehend for bulk text analysis, topic modeling, and custom model training.
 - custom text classification.
-- batch entity detection.
-- detect entities in multiple text documents in one batch call.
-- list classifiers
+- entity recognition
+- detect sentiment
+- detect sentiment in multiple text documents in one batch call.
+- detect syntax
+- detect the dominant language of text.
+- detect sentiment in text.
+- key phrase extraction.
+- get properties and status of a specific document classifier.
+- natural language processing
+- nlp
+- detect the dominant language of input text using amazon comprehend.
 - analyze syntax and parts of speech in text using amazon comprehend.
+- text analysis
+- machine learning
+- detect named entities in text.
+- Application Developer
+- pii detection.
+- describe classifier
+- detect language
+- aws
+- named entity recognition.
+- list classifiers
+- detect entities in multiple documents.
+- extract key phrases from text.
+- amazon
+- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
+- list custom document classifiers trained in amazon comprehend.
+- sentiment analysis.
+- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
+- integrates comprehend nlp apis into applications for real-time text analysis.
+- detect key phrases
+- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
+- detect entities in multiple text documents in one batch call.
+- batch entity detection.
 slug: nlp-analysis
 tags:
 - Amazon

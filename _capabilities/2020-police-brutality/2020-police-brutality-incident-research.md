@@ -17,33 +17,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
-- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
-- research workflow for journalists, prosecutors, and activists
-- get incidents v2
-- Legal Professional
-- list incidents
-- Activist
+- all incidents in csv format for data analysis.
+- Journalist
 - uses data for advocacy, public education, and political campaigns
-- policing
+- research workflow for journalists, prosecutors, and activists
+- conducts academic or policy research on police use of force patterns
+- export all incidents as csv for spreadsheet and data analysis.
+- research
 - export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
 - Researcher
-- public data
+- uses incident documentation for prosecution or civil litigation
+- brutality
+- policing
 - journalism
-- research
-- Journalist
-- documented evidence of police brutality during 2020 protests
-- all incidents in csv format for data analysis.
 - civil rights
 - retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
-- uses incident documentation for prosecution or civil litigation
 - all documented police brutality incidents from 2020 protests.
+- Activist
+- get incidents v2
 - list all documented police brutality incidents.
+- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
+- public data
+- list incidents
+- documented evidence of police brutality during 2020 protests
 - get all incidents
-- brutality
-- export incidents csv
-- conducts academic or policy research on police use of force patterns
+- Legal Professional
 - investigates and reports on documented police brutality incidents
-- export all incidents as csv for spreadsheet and data analysis.
+- export incidents csv
 slug: 2020-police-brutality-incident-research
 tags:
 - Public Data

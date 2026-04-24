@@ -13,34 +13,34 @@ personas: []
 provider_name: Amazon MediaLive
 provider_slug: amazon-medialive
 search_terms:
-- batchdelete
-- describe schedule
-- batchstart
-- batch delete
-- delete schedule
-- batch stop
-- aws media processing and delivery
-- describeschedule
-- media processing
-- accept input device transfer
-- broadcasting
-- batch start
-- list jobs
-- batchstop
+- batchupdateschedule
+- amazon medialive media processing workflow
 - cancel input device transfer
+- batchdelete
+- aws media processing and delivery
+- batch stop
+- batch delete
 - workflow
 - acceptinputdevicetransfer
-- engineer managing broadcast media workflows
-- amazon medialive media processing workflow
-- batch update schedule
-- cancelinputdevicetransfer
-- deleteschedule
-- Broadcast Engineer
-- media
-- aws
-- Media Developer
 - developer building media processing applications
-- batchupdateschedule
+- Broadcast Engineer
+- delete schedule
+- media processing
+- broadcasting
+- describe schedule
+- cancelinputdevicetransfer
+- batchstart
+- list jobs
+- batch update schedule
+- media
+- engineer managing broadcast media workflows
+- batchstop
+- Media Developer
+- aws
+- describeschedule
+- batch start
+- accept input device transfer
+- deleteschedule
 - manage media processing jobs
 slug: amazon-medialive-media-workflow
 tags:

@@ -24,35 +24,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- create a named query
-- start query execution
-- sql
-- analytics
-- check the status of a running or completed athena query execution.
-- get query execution
-- list named queries
-- list databases in an athena data catalog to explore available schemas.
-- named query management
-- list table metadata
 - save a sql query as a named query for reuse in athena.
-- list databases
-- start a sql query execution
-- list data catalogs
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list recent query executions in an athena workgroup.
-- amazon athena
-- list tables in an athena database to understand available data.
-- list data catalogs registered with athena to discover available data sources.
-- sql query management
-- list athena workgroups to understand available query isolation environments.
-- serverless
-- download the results of a completed athena sql query.
-- aws
-- create named query
-- get query results
 - list work groups
-- list query executions
+- sql
+- list tables in an athena database to understand available data.
+- serverless
+- get query execution
 - list saved named queries available in an athena workgroup.
+- analytics
+- create named query
+- create a named query
+- amazon athena
+- start query execution
+- list data catalogs registered with athena to discover available data sources.
+- list table metadata
+- list query executions
+- list databases in an athena data catalog to explore available schemas.
+- list athena workgroups to understand available query isolation environments.
+- list databases
+- list data catalogs
+- aws
+- start a sql query execution
+- download the results of a completed athena sql query.
+- check the status of a running or completed athena query execution.
+- sql query management
+- named query management
+- list recent query executions in an athena workgroup.
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list named queries
+- get query results
 slug: sql-analytics
 tags:
 - Amazon Athena

@@ -57,56 +57,56 @@ personas: []
 provider_name: Salesforce Marketing Cloud
 provider_slug: salesforce-marketing-cloud
 search_terms:
-- personalization
-- search contacts by criteria
-- contact search
-- retrieve a contact by contact key
-- single journey operations
-- create a new customer journey
-- publish a journey to activate customer entry
-- email
-- publish a journey
-- journey management
-- get a journey
-- create one or more contacts in marketing cloud
-- delete journey
-- list customer journeys with filtering and pagination
-- search contacts
-- update contact
-- delete a journey
-- update a contact
-- list all contact attribute set definitions
 - digital marketing
-- contact management
-- single contact operations
-- list all journeys
-- get journey
-- journey publishing
 - create one or more contacts
-- create contacts
-- list attribute sets
+- delete a contact from marketing cloud
+- publish a journey to activate customer entry
+- marketing
+- get contact
+- search contacts by criteria
 - attribute set definitions
+- salesforce
+- marketing automation
+- single contact operations
+- create a new customer journey
+- publish a journey
+- update a contact
+- contact management
+- search for contacts using filter criteria
+- email
+- list attribute sets
+- list all contact attribute set definitions
+- update contact
+- update a journey
+- contact search
 - automation
+- create journey
 - publish journey
 - retrieve a journey by id
-- update an existing contact's attributes
-- delete a contact
-- update an existing journey specification
-- search for contacts using filter criteria
-- customer journey
-- get a contact
-- salesforce
-- delete contact
-- marketing automation
-- create journey
-- delete a contact from marketing cloud
-- marketing
-- create a journey
-- email marketing
-- list journeys
 - update journey
-- update a journey
-- get contact
+- retrieve a contact by contact key
+- delete a contact
+- search contacts
+- get journey
+- journey management
+- delete a journey
+- update an existing contact's attributes
+- delete journey
+- get a journey
+- get a contact
+- list all journeys
+- single journey operations
+- email marketing
+- update an existing journey specification
+- create contacts
+- list journeys
+- create one or more contacts in marketing cloud
+- customer journey
+- journey publishing
+- list customer journeys with filtering and pagination
+- create a journey
+- personalization
+- delete contact
 slug: marketing-automation
 tags:
 - Salesforce

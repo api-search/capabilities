@@ -34,58 +34,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- quality on demand session management
-- device roaming status
-- 5g
-- camara
-- terminate qod session
-- network performance
-- edge computing
-- get the current status of a quality on demand session
-- qod terminate session
-- connectivity
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- request enhanced qos for a device
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- network-based security signals for fraud detection and identity verification
-- get qod session
-- Identity Developer
-- get qod session status
-- quality of service
-- check connectivity
-- list active quality on demand sessions for the application
-- developer building fraud prevention and identity verification using network signals
-- 5g network quality monitoring and on-demand qos enhancement
-- IoT Engineer
-- device check roaming
-- telecommunications
-- create qod session
-- list active qod sessions
-- check if an at&t subscriber device is roaming on a partner network and get location
-- Security Developer
-- at&t
-- mobile network-based authentication without otp
-- device connectivity status
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- App Developer
-- developer implementing passwordless or frictionless mobile authentication
-- network-based fraud prevention and authentication using sim swap and number verification
-- sim swap
-- device status
-- qod list sessions
-- terminate an active quality on demand session and restore normal network quality
-- check if device is roaming
-- device check connectivity
-- qod get session
-- qod create session
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
 - check roaming
-- list qod sessions
-- check device connectivity and network connection type
-- delete qod session
-- mobile or web developer building connectivity-aware applications
-- individual qod session
+- quality on demand session management
+- terminate an active quality on demand session and restore normal network quality
+- network-based security signals for fraud detection and identity verification
+- list active quality on demand sessions for the application
+- request enhanced qos for a device
+- developer implementing passwordless or frictionless mobile authentication
+- device check roaming
+- qod terminate session
+- check if device is roaming
+- connectivity
 - network apis
+- get qod session
+- quality of service
+- at&t
+- mobile or web developer building connectivity-aware applications
+- qod list sessions
+- network performance
+- 5g
+- check connectivity
+- telecommunications
+- 5g network quality monitoring and on-demand qos enhancement
+- Identity Developer
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- device roaming status
+- get the current status of a quality on demand session
+- get qod session status
+- delete qod session
+- individual qod session
+- device connectivity status
+- device status
+- network-based fraud prevention and authentication using sim swap and number verification
+- App Developer
+- create qod session
+- edge computing
+- check if an at&t subscriber device is roaming on a partner network and get location
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- camara
+- qod get session
+- Security Developer
+- qod create session
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- terminate qod session
+- IoT Engineer
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- list active qod sessions
+- developer building fraud prevention and identity verification using network signals
+- mobile network-based authentication without otp
+- sim swap
+- check device connectivity and network connection type
+- list qod sessions
+- device check connectivity
 slug: network-performance
 tags:
 - AT&T

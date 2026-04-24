@@ -33,46 +33,46 @@ personas: []
 provider_name: Acquia
 provider_slug: acquia
 search_terms:
-- devops
-- list all accessible acquia cloud applications
-- list all organizations the current acquia user belongs to
 - get application
+- list all organizations
+- get the current acquia cloud user account profile and permissions
+- get detailed information about a specific acquia cloud application
+- acquia platform admin managing organizations, teams, and subscriptions
+- environments
+- applications
+- acquia
+- get detailed information about a specific acquia cloud environment
+- cloud
+- content
+- experience
+- devops
+- get application details
+- list environments for an application
+- list all accessible acquia cloud applications
+- list applications
+- list organizations
 - list all acquia cloud drupal applications the current user can access
 - developer building and deploying drupal applications on acquia cloud
-- Platform Administrator
-- list organizations
-- get detailed information about a specific acquia cloud environment
-- environments
-- engineer managing ci/cd pipelines, deployments, and environment configuration
-- experience
-- get application details
-- content
-- drupal application lifecycle management
-- get account
-- current user account
 - application discovery, environment management, and organization administration
 - list all environments (dev, staging, prod) for an acquia cloud application
-- list applications
-- acquia platform admin managing organizations, teams, and subscriptions
-- Drupal Developer
-- DevOps Engineer
-- drupal application hosting lifecycle on acquia cloud platform
-- get current user account details
-- get detailed information about a specific acquia cloud application
-- user, team, and organizational access control management
-- drupal
-- get the current acquia cloud user account profile and permissions
-- acquia
-- get environment
-- cloud
-- applications
-- organization management
-- list all organizations
 - list environments
-- application environment operations
+- list all organizations the current acquia user belongs to
+- drupal application hosting lifecycle on acquia cloud platform
+- get environment
+- drupal
+- Platform Administrator
 - get environment details
-- list environments for an application
+- Drupal Developer
+- drupal application lifecycle management
 - cloud ide environments and platform notification management
+- engineer managing ci/cd pipelines, deployments, and environment configuration
+- current user account
+- application environment operations
+- organization management
+- user, team, and organizational access control management
+- get current user account details
+- get account
+- DevOps Engineer
 slug: drupal-application-management
 tags:
 - Acquia

@@ -53,70 +53,70 @@ personas: []
 provider_name: Amazon Lookout for Metrics
 provider_slug: amazon-lookout-for-metrics
 search_terms:
-- list anomalies
-- list alerts
-- metrics
-- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
-- list all metrics that contributed to an anomaly group
-- retrieve previously submitted anomaly detection feedback
-- configuration and management of anomaly alert notifications
-- list summaries of detected anomaly groups for investigation
-- list all alerts
+- detection feedback
 - create a new anomaly detector
-- anomaly detection
-- list detectors
-- create alert
-- stop an anomaly detector from monitoring metrics
-- update detector
-- machine learning
-- get anomaly group
-- get anomaly
-- list anomaly group related metrics
-- operations
-- delete detector
-- get feedback
 - submit anomaly feedback
-- Operations Engineer
-- get anomaly feedback
-- anomaly group results
+- delete detector
 - business intelligence
-- manage anomaly detectors
+- Operations Engineer
+- get configuration and status details of an anomaly detector
+- metrics
+- anomaly detection
+- configuration and management of anomaly alert notifications
+- submit feedback on anomaly detections to improve ml model accuracy
+- list anomaly group related metrics
+- get detector details
 - list anomaly detectors
 - put feedback
-- single anomaly detector
-- list all anomaly detectors
+- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
+- create anomaly detector
 - Data Scientist
-- monitoring and assessment of metric data quality
-- create detector
-- describe anomaly detector
-- get detector
-- ml-powered detection of anomalies in business and operational metrics
-- list all configured anomaly alerts
-- list all configured anomaly detectors
-- amazon
 - monitoring
-- create a new anomaly detector for a set of business metrics
+- single anomaly group
+- get anomaly group details
 - manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
+- anomaly group results
+- list all configured anomaly detectors
+- list anomalies
+- get anomaly
+- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
+- anomaly alerts
+- retrieve previously submitted anomaly detection feedback
+- update detector
+- list summaries of detected anomaly groups for investigation
+- single anomaly detector
+- get anomaly group
+- list alerts
+- stop an anomaly detector from monitoring metrics
+- delete a detector
+- get feedback
+- list detectors
 - get full details of a specific anomaly group including contributing metrics
+- update detector configuration
+- list all metrics that contributed to an anomaly group
+- machine learning
+- get detector
+- create an alert to receive notifications when anomalies are detected
+- list all alerts
+- create an alert
 - activate anomaly detector
-- get configuration and status details of an anomaly detector
+- ml-powered detection of anomalies in business and operational metrics
 - submit feedback
 - aws
-- anomaly alerts
-- create an alert to receive notifications when anomalies are detected
-- submit feedback on anomaly detections to improve ml model accuracy
+- manage anomaly detectors
 - activate an anomaly detector to begin monitoring metrics
-- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
-- delete a detector
-- update detector configuration
-- get detector details
-- get anomaly group details
-- list anomaly group summaries
-- create an alert
-- detection feedback
+- amazon
+- monitoring and assessment of metric data quality
+- describe anomaly detector
+- get anomaly feedback
+- operations
+- create a new anomaly detector for a set of business metrics
+- create detector
+- list all anomaly detectors
+- list all configured anomaly alerts
 - deactivate anomaly detector
-- create anomaly detector
-- single anomaly group
+- create alert
+- list anomaly group summaries
 slug: anomaly-detection-operations
 tags:
 - Amazon

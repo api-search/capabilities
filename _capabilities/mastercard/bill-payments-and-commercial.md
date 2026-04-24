@@ -29,39 +29,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create virtual card
-- bill payment validation
-- search billers
-- treasury
-- search for billers in the rpps network
+- retrieve commercial event notifications
+- business payments
 - create a business spending control rule
-- fraud detection
-- validate payment
-- validate bill payment
-- create a virtual card
-- get commercial notifications
-- mastercard
-- list spending controls
-- digital identity
-- create a virtual card for commercial payments
-- credit cards
-- validate a bill payment
-- list business spending control rules
-- business spending controls
-- financial services
+- search for billers in the rpps network
+- payments
+- create a spending control rule
 - get biller details
 - virtual card management
+- bill payments
+- search billers
+- create a virtual card for commercial payments
+- digital identity
+- credit cards
+- validate payment
+- get commercial notifications
+- validate a bill payment before processing
+- business spending controls
+- create a virtual card
+- fraud detection
+- mastercard
+- create virtual card
+- list spending controls
+- bill payment validation
+- list business spending control rules
 - commercial
+- treasury
+- financial services
+- validate bill payment
 - search for billers
 - biller management
-- retrieve commercial event notifications
 - open banking
-- validate a bill payment before processing
-- payments
-- bill payments
 - create spending control
-- business payments
-- create a spending control rule
+- validate a bill payment
 slug: bill-payments-and-commercial
 tags:
 - Mastercard

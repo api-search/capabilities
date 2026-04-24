@@ -33,42 +33,42 @@ personas: []
 provider_name: AWS App Mesh
 provider_slug: aws-app-mesh
 search_terms:
-- list virtual gateways
-- managing gateway routing for external traffic ingress
-- Platform Engineer
-- aws app mesh
-- virtual router management
-- list virtual gateways in a mesh
-- create mesh
-- manage app mesh service meshes, virtual nodes, services, routers, and gateways
-- list all app mesh service meshes in the aws account
-- manages service mesh infrastructure and inter-service communication
-- creating and configuring service meshes and their components
-- list virtual routers
 - list meshes
-- list virtual services in a service mesh
-- list virtual routers in a mesh
-- networking
-- list virtual routers and their routing rules
-- list all service meshes
-- envoy
-- list virtual nodes in a service mesh
-- virtual gateway management
 - list virtual services in a mesh
-- list virtual nodes
-- list virtual nodes in a mesh
-- aws
-- deprecated
-- service mesh
-- virtual service management
-- list virtual services
-- configuring routing rules for service-to-service communication
-- create a new service mesh
+- envoy
 - list virtual gateways for ingress traffic management
-- microservices
-- virtual node management
-- create a new app mesh service mesh
+- Platform Engineer
 - service mesh lifecycle management
+- configuring routing rules for service-to-service communication
+- manages service mesh infrastructure and inter-service communication
+- virtual gateway management
+- virtual service management
+- list virtual gateways
+- virtual node management
+- list all service meshes
+- create a new app mesh service mesh
+- aws app mesh
+- networking
+- service mesh
+- create a new service mesh
+- create mesh
+- deprecated
+- list virtual routers in a mesh
+- list virtual routers
+- manage app mesh service meshes, virtual nodes, services, routers, and gateways
+- managing gateway routing for external traffic ingress
+- creating and configuring service meshes and their components
+- list virtual nodes in a mesh
+- list virtual gateways in a mesh
+- list all app mesh service meshes in the aws account
+- aws
+- virtual router management
+- list virtual routers and their routing rules
+- list virtual services
+- list virtual nodes
+- list virtual nodes in a service mesh
+- list virtual services in a service mesh
+- microservices
 slug: service-mesh-workflow
 tags:
 - AWS App Mesh

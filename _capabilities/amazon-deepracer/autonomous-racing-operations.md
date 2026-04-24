@@ -8,11 +8,11 @@ personas: []
 provider_name: Amazon DeepRacer
 provider_slug: amazon-deepracer
 search_terms:
-- aws
-- reinforcement learning
-- machine learning
 - robotics
 - autonomous vehicles
+- machine learning
+- reinforcement learning
+- aws
 slug: autonomous-racing-operations
 tags: []
 tools: []

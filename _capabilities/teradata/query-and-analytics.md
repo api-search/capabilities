@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- list cross-system query summaries from querygrid.
-- execute sql queries and analytics.
-- manage querygrid data fabric infrastructure.
-- create session
-- data warehousing
-- Platform Administrator
-- teradata
-- list querygrid queries
-- database
-- sql
-- analytics
-- enterprise
-- list query systems
 - data management
-- system and fabric configuration management.
-- create a new query session on a vantage system.
-- health monitoring and issue detection.
-- list available vantage systems.
-- machine learning
-- list available vantage systems for query execution.
-- Data Analyst
-- executes queries and analyzes data across vantage systems.
 - sql query execution and session management.
-- execute a sql query.
-- execute query
-- Data Engineer
-- available systems.
-- create a query session.
-- manages data fabric infrastructure and cross-system connectivity.
-- Application Developer
-- cloud
-- query sessions.
-- query
-- get query status
-- integrates applications with teradata via rest apis.
+- sql
+- system and fabric configuration management.
+- manage querygrid data fabric infrastructure.
 - sql queries.
+- list query systems
+- list available vantage systems.
+- cloud
+- execute query
+- query sessions.
+- list available vantage systems for query execution.
+- analytics
+- create a new query session on a vantage system.
 - administers querygrid systems, nodes, and software.
-- execute a sql query against teradata vantage.
 - get the status and results of a submitted query.
+- execute sql queries and analytics.
+- executes queries and analyzes data across vantage systems.
+- list cross-system query summaries from querygrid.
+- teradata
+- create a query session.
+- list querygrid queries
+- Platform Administrator
+- create session
+- machine learning
+- Application Developer
+- Data Engineer
+- execute a sql query against teradata vantage.
+- manages data fabric infrastructure and cross-system connectivity.
+- health monitoring and issue detection.
+- database
+- available systems.
+- get query status
+- execute a sql query.
+- data warehousing
+- Data Analyst
+- query
+- enterprise
+- integrates applications with teradata via rest apis.
 slug: query-and-analytics
 tags:
 - Teradata

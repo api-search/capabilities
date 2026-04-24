@@ -49,36 +49,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- amazon eventbridge pipes deletepipe
-- event-driven
-- messaging
-- TagResource
-- amazon eventbridge pipes createpipe
-- amazon eventbridge pipes describepipe
 - integration
-- StopPipe
+- point-to-point integration between event producers and consumers
+- ListPipes
+- ListTagsForResource
+- serverless
+- DescribePipe
+- amazon eventbridge pipes createpipe
+- amazon eventbridge pipes tagresource
+- UntagResource
 - UpdatePipe
 - CreatePipe
-- amazon eventbridge pipes updatepipe
-- StartPipe
-- amazon eventbridge pipes listtagsforresource
-- DescribePipe
-- serverless
-- UntagResource
-- operations teams managing amazon eventbridge pipes infrastructure
-- developers building applications using amazon eventbridge pipes
-- amazon eventbridge pipes untagresource
-- aws
-- amazon eventbridge pipes startpipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- amazon eventbridge pipes listpipes
-- point-to-point integration between event producers and consumers
-- amazon eventbridge pipes tagresource
-- DeletePipe
-- amazon eventbridge pipes stoppipe
-- ListPipes
 - amazon web services
-- ListTagsForResource
+- StartPipe
+- developers building applications using amazon eventbridge pipes
+- amazon eventbridge pipes deletepipe
+- TagResource
+- amazon eventbridge pipes describepipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- aws
+- amazon eventbridge pipes updatepipe
+- messaging
+- amazon eventbridge pipes startpipe
+- event-driven
+- DeletePipe
+- amazon eventbridge pipes listpipes
+- amazon eventbridge pipes listtagsforresource
+- amazon eventbridge pipes stoppipe
+- StopPipe
+- operations teams managing amazon eventbridge pipes infrastructure
+- amazon eventbridge pipes untagresource
 slug: amazon-eventbridge-pipes-capability
 tags:
 - Amazon Web Services

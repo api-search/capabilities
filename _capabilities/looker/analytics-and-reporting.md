@@ -61,63 +61,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- delete a user.
-- create a new user.
-- user management.
-- list all looks.
-- delete look
-- delete a dashboard.
+- bi platform
+- create user
 - get look
+- update a user.
+- business intelligence
+- list all looks.
+- list looks
 - create dashboard
-- create a dashboard.
-- data visualization
-- analytics
-- list all dashboards.
-- looker
-- update dashboard
-- update user
-- get dashboard details.
-- list all saved looks.
-- search for looks by title.
+- list dashboards
 - search dashboards
-- delete dashboard
-- update a look.
-- dashboards
+- get dashboard details.
 - run a saved query.
 - get user
-- create a new dashboard.
-- update look
-- create user
-- bi platform
-- get dashboard
-- business intelligence
-- get query
-- run a look and return results.
-- list all users.
-- delete a look.
-- data analytics
-- individual query operations.
-- list users
-- delete user
-- query management.
-- get user details.
-- run query
-- individual look management.
+- get look details.
+- individual dashboard management.
+- analytics
 - search looks
-- update a user.
+- create a new dashboard.
+- delete a dashboard.
+- update a look.
+- user management.
+- run a look and return results.
+- delete look
+- look management.
+- update user
+- update dashboard
 - update a dashboard.
 - create a user.
-- run look
-- look management.
-- dashboard management.
-- individual dashboard management.
+- list all saved looks.
 - get query details.
-- list looks
-- list dashboards
-- create query
+- delete dashboard
+- run query
+- run look
 - search for dashboards.
-- get look details.
+- individual query operations.
+- search for looks by title.
+- create a new user.
+- dashboard management.
+- data analytics
+- individual look management.
+- query management.
+- create query
 - create a query.
+- create a dashboard.
+- delete a user.
+- get dashboard
+- list all users.
+- get user details.
+- dashboards
+- update look
+- get query
+- data visualization
+- delete a look.
+- list all dashboards.
+- delete user
+- looker
+- list users
 slug: analytics-and-reporting
 tags:
 - Looker

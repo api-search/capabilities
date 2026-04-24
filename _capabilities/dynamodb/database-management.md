@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- update item
-- update an item.
-- database
-- dynamodb
-- table management.
+- document store
+- write items in a transaction.
 - item operations.
-- list tables.
-- delete a table.
-- query items by primary key.
 - create a new dynamodb table.
-- describe a table.
-- create a table.
-- delete item
-- get items in a transaction.
-- get an item.
-- get multiple items from one or more tables.
-- get item
-- managed service
-- update table
+- update a table.
+- batch get item
+- table management.
+- individual table management.
+- put item
+- serverless
 - key-value
-- scan a table.
+- get multiple items from one or more tables.
+- update an item.
+- cloud
+- create a table.
+- list tables.
+- get an item by primary key.
+- update table
+- query items.
+- delete a dynamodb table.
+- put or delete multiple items in batch.
+- create backup
+- describe a table.
+- get item
+- batch write item
+- scan
+- query operations.
+- create an on-demand backup.
+- update item
+- describe table
+- delete a table.
+- create table
+- get an item.
+- get items in a transaction.
+- list dynamodb tables.
 - describe a dynamodb table.
 - scan an entire table or index.
-- write items in a transaction.
-- delete a dynamodb table.
-- list tables
-- scan
-- list on-demand backups.
-- delete table
-- create backup
-- create an on-demand backup.
-- query items.
-- list dynamodb tables.
-- serverless
-- put or delete multiple items in batch.
-- batch get item
-- create table
-- transact get items
-- describe table
-- database management
-- cloud
-- put item
-- aws
-- document store
-- update a table.
-- query
+- scan a table.
 - delete an item.
-- query operations.
+- managed service
+- aws
+- dynamodb
+- nosql
+- delete table
+- query items by primary key.
+- transact get items
+- list on-demand backups.
+- database
+- list tables
+- list backups
 - transact write items
 - create or replace an item.
-- individual table management.
-- get an item by primary key.
-- batch write item
-- list backups
-- nosql
+- delete item
+- database management
+- query
 slug: database-management
 tags:
 - AWS

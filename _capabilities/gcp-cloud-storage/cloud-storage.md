@@ -53,53 +53,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- get object
-- google cloud
-- cloud storage
-- data
-- individual bucket management.
-- create a new storage bucket.
-- get bucket details.
-- object management.
-- set iam policy.
-- compose objects
-- update bucket
 - data management
-- update a bucket.
-- list objects
-- get object metadata.
-- individual object management.
-- delete a storage bucket.
-- set bucket iam policy
+- google cloud
+- compose objects
+- create a bucket.
+- list objects in a bucket.
+- list buckets.
 - get bucket
-- update object
-- list objects.
+- set iam policy.
+- get object metadata.
 - compose multiple objects into one.
-- object storage
+- blob storage
+- get object
+- bucket management.
+- update bucket
+- delete bucket
+- individual object management.
+- list buckets
+- get bucket iam policy
+- get iam policy.
+- create a new storage bucket.
+- list storage buckets in a project.
+- delete an object.
+- list objects.
+- file storage
+- delete a bucket.
+- update object metadata.
+- copy object
+- set bucket iam policy.
+- update object
 - get bucket iam policy.
 - bucket iam management.
-- copy object
-- bucket management.
-- update object metadata.
-- list objects in a bucket.
-- backup
-- list buckets.
-- get bucket iam policy
-- copy an object to another location.
+- cloud storage
+- set bucket iam policy
+- get bucket details.
+- object management.
 - archival
-- delete an object.
-- list buckets
-- delete object
-- file storage
-- set bucket iam policy.
-- blob storage
-- storage
 - create bucket
-- delete a bucket.
-- delete bucket
-- create a bucket.
-- get iam policy.
-- list storage buckets in a project.
+- list objects
+- individual bucket management.
+- copy an object to another location.
+- delete a storage bucket.
+- delete object
+- update a bucket.
+- data
+- object storage
+- storage
+- backup
 slug: cloud-storage
 tags:
 - Google Cloud

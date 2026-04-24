@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
-- aws
-- security
-- subnets
 - private cloud
+- security
 - vpc
 - networking
+- subnets
+- aws
 slug: amazon-vpc-capability
 tags: []
 tools: []

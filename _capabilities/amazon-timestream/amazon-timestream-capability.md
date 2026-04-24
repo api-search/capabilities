@@ -10,8 +10,8 @@ provider_slug: amazon-timestream
 search_terms:
 - time series
 - iot
-- aws
 - database
+- aws
 slug: amazon-timestream-capability
 tags: []
 tools: []

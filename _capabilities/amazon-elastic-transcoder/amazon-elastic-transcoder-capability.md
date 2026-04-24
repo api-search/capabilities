@@ -69,49 +69,49 @@ personas: []
 provider_name: Amazon Elastic Transcoder
 provider_slug: amazon-elastic-transcoder
 search_terms:
-- amazon elastic transcoder readjob
-- transcoding
-- DeletePreset
-- CreatePreset
-- ListJobsByPipeline
-- UpdatePipelineStatus
-- amazon elastic transcoder createpreset
-- amazon elastic transcoder testrole
-- amazon elastic transcoder updatepipeline
-- DeletePipeline
-- amazon elastic transcoder updatepipelinenotifications
-- amazon elastic transcoder createjob
-- ReadPipeline
-- amazon elastic transcoder readpreset
-- operations teams managing amazon elastic transcoder infrastructure
-- ReadJob
-- ReadPreset
-- ListJobsByStatus
-- media transcoding service for converting media files to various formats
-- developers building applications using amazon elastic transcoder
-- amazon elastic transcoder canceljob
-- TestRole
 - unified capability for managing amazon elastic transcoder resources. combines amazon elastic transcoder apis for media engineer workflows in media processing.
-- UpdatePipeline
-- amazon elastic transcoder listpresets
-- video
+- operations teams managing amazon elastic transcoder infrastructure
+- media transcoding service for converting media files to various formats
+- CreatePreset
+- amazon elastic transcoder createjob
+- ListJobsByPipeline
+- amazon elastic transcoder createpreset
+- UpdatePipelineNotifications
+- amazon elastic transcoder deletepreset
+- developers building applications using amazon elastic transcoder
 - ListPipelines
-- amazon elastic transcoder listpipelines
-- CreatePipeline
-- amazon elastic transcoder updatepipelinestatus
 - ListPresets
+- amazon elastic transcoder createpipeline
+- ReadJob
+- amazon elastic transcoder updatepipeline
+- amazon elastic transcoder updatepipelinenotifications
+- video
 - amazon elastic transcoder deletepipeline
-- amazon elastic transcoder listjobsbypipeline
+- amazon elastic transcoder readpipeline
+- amazon elastic transcoder updatepipelinestatus
+- UpdatePipeline
+- amazon web services
+- DeletePreset
 - media
+- ReadPipeline
+- amazon elastic transcoder testrole
+- TestRole
+- DeletePipeline
+- amazon elastic transcoder readpreset
+- ListJobsByStatus
+- amazon elastic transcoder listjobsbypipeline
 - aws
 - CancelJob
+- amazon elastic transcoder listpresets
+- transcoding
+- amazon elastic transcoder listpipelines
+- UpdatePipelineStatus
 - CreateJob
-- amazon elastic transcoder deletepreset
-- UpdatePipelineNotifications
-- amazon elastic transcoder readpipeline
-- amazon elastic transcoder createpipeline
+- CreatePipeline
 - amazon elastic transcoder listjobsbystatus
-- amazon web services
+- ReadPreset
+- amazon elastic transcoder canceljob
+- amazon elastic transcoder readjob
 slug: amazon-elastic-transcoder-capability
 tags:
 - Amazon Web Services

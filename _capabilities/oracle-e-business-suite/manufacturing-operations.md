@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- list on-hand quantities.
-- retrieve on-hand quantities.
-- list boms.
-- get discrete job by id.
-- manufacturing
-- retrieve bills of material.
-- discrete job management.
-- enterprise
-- inv get inventory items
-- business applications
-- mfg create discrete job
-- e-business suite
-- oracle
-- on-hand quantity management.
-- mfg get bills of material
-- bom management.
-- mfg get discrete job by id
-- retrieve discrete jobs.
-- retrieve wip operations.
-- retrieve inventory items.
-- get onhand quantities
-- retrieve routings.
-- production
-- retrieve deliveries.
-- supply chain
-- retrieve sales orders.
-- mfg issue material
-- inv get deliveries
-- create a discrete job.
-- complete an assembly.
-- list inventory items.
-- mfg get discrete jobs
 - mfg get routings
-- issue material to a job.
-- inventory item management.
+- bom management.
+- mfg get discrete jobs
 - get inventory items
-- get discrete jobs
-- list discrete jobs.
-- mfg get wip operations
-- inv get onhand quantities
+- list inventory items.
 - erp
-- inv get sales orders
+- supply chain
+- mfg get bills of material
+- mfg create discrete job
+- mfg get discrete job by id
+- mfg get wip operations
 - mfg complete assembly
+- discrete job management.
+- get discrete jobs
+- retrieve routings.
 - get bom by id.
+- inv get sales orders
+- manufacturing
+- retrieve deliveries.
+- retrieve discrete jobs.
+- retrieve bills of material.
+- get onhand quantities
+- list boms.
+- issue material to a job.
+- mfg issue material
+- business applications
+- e-business suite
+- get discrete job by id.
+- inv get inventory items
+- inv get onhand quantities
 - get bills of material
+- oracle
+- production
+- inventory item management.
+- on-hand quantity management.
+- list on-hand quantities.
+- create a discrete job.
+- inv get deliveries
+- retrieve wip operations.
 - mfg get bill of material by id
+- complete an assembly.
+- retrieve inventory items.
+- retrieve sales orders.
+- list discrete jobs.
+- enterprise
+- retrieve on-hand quantities.
 slug: manufacturing-operations
 tags:
 - Oracle

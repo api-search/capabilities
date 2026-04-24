@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- payroll get pay group
-- benefits list elections
-- list all pay groups
-- list payroll inputs
-- workday
-- list benefit plans
-- list benefit elections
-- list plans
-- get a pay group by id
-- payroll list inputs
-- benefits list dependents
-- benefits list plans
-- list pay groups
-- benefits get eligible plans
-- list all benefit plans
-- list compensation grades
-- list pay slips
-- compensation plans
-- get pay group details
-- benefits
-- hcm
-- comp request change
-- benefit plans
-- request a one-time payment
-- saas
-- payroll
-- comp list scorecards
-- list compensation plans
-- pay groups
-- enterprise software
-- financial management
-- benefits change
-- payroll get pay group details
-- submit a compensation change request
-- list compensation scorecards
-- comp list plans
-- payroll list pay groups
-- list dependents
-- payroll list pay slips
-- submit a benefits change request
-- comp list grades
-- comp request one time payment
-- get eligible benefit plans for a worker
-- cloud computing
 - compensation
+- list all benefit plans
+- comp list scorecards
+- payroll list pay groups
+- list benefit elections
+- list compensation grades
+- get pay group details
+- list plans
+- submit a compensation change request
+- pay groups
+- comp request one time payment
+- hcm
+- comp list plans
+- payroll get pay group
+- get a pay group by id
+- benefits
+- list all pay groups
+- list dependents
+- benefits change
+- benefits list dependents
+- submit a benefits change request
+- comp request change
+- get eligible benefit plans for a worker
+- list pay slips
+- benefits get eligible plans
+- payroll
+- workday
+- list compensation plans
+- benefits list plans
+- list benefit plans
+- list compensation scorecards
+- payroll list pay slips
+- request a one-time payment
+- list payroll inputs
+- benefits list elections
+- enterprise software
+- comp list grades
+- benefit plans
+- payroll get pay group details
+- financial management
+- saas
+- cloud computing
+- compensation plans
+- payroll list inputs
+- list pay groups
 slug: compensation-and-payroll
 tags:
 - Workday

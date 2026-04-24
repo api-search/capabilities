@@ -33,44 +33,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- unified bss workflow for customer onboarding, billing, and service management
-- retrieve billing invoices for a customer
-- onboard a new telecom customer
-- browse available products and plans
 - manages telco bss operations and system configuration
-- 5g
-- list service subscriptions for a customer
-- list invoices
-- add a service subscription
+- telecom
 - list telecom customer accounts
-- browse the service catalog and available plans
-- list customers
-- customer billing invoices
-- oss
-- list subscriptions for a customer
-- list subscriptions
-- Customer Care Agent
 - create customer
+- list all customer accounts
+- list subscriptions for a customer
+- retrieve billing invoices for a customer
+- Customer Care Agent
+- amdocs
+- Billing Team
+- onboard a new telecom customer
+- telecom customer account management
+- 5g
 - bss
-- handles customer inquiries and account management
-- saas
-- manages invoicing, payments, and revenue assurance
-- customer management
+- list subscriptions
+- mvno
 - onboard a new customer
 - create subscription
-- BSS Operator
-- product and service catalog
-- customer subscription management
-- Billing Team
-- telecom
-- telecom customer account management
-- list all customer accounts
-- list invoices for a customer
+- unified bss workflow for customer onboarding, billing, and service management
 - billing
+- list customers
 - add a service subscription to a customer account
-- mvno
-- amdocs
+- customer management
+- list invoices
+- product and service catalog
+- browse available products and plans
 - list products
+- customer billing invoices
+- list service subscriptions for a customer
+- oss
+- browse the service catalog and available plans
+- add a service subscription
+- saas
+- BSS Operator
+- handles customer inquiries and account management
+- manages invoicing, payments, and revenue assurance
+- list invoices for a customer
+- customer subscription management
 slug: telco-customer-management
 tags:
 - Amdocs

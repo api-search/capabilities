@@ -23,63 +23,63 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- get dns record details.
-- web performance
-- dns record management.
-- get logpush job details.
-- list turnstile widgets
-- api gateway
-- logpush delete job
-- cloudflare
-- ai gateway
-- edge computing
-- create a logpush job.
-- containers
-- ddos protection
-- real-time communication
-- logpush create job
-- logpush get job
-- create a turnstile widget.
-- list dns records
-- list logpush jobs.
-- turnstile list widgets
-- dns batch records
-- list dns records.
-- platform
-- create a dns record.
-- edge
-- dns create record
-- list dataset fields.
-- logpush list jobs
-- turnstile verify token
-- verify a turnstile token.
-- update a dns record.
-- list turnstile widgets.
-- dns list records
-- object storage
-- security
-- cdn
-- turnstile create widget
-- serverless
-- turnstile widget management.
-- turnstile delete widget
-- dns get record
-- logpush job management.
-- list dns records for a zone.
-- dns delete record
-- execute batch dns operations.
-- get dnssec settings.
-- dns get dnssec
-- delete a turnstile widget.
-- cloud
 - observability
-- dns
-- dns update record
-- logpush list dataset fields
+- turnstile widget management.
+- dns batch records
 - artificial intelligence
+- create a logpush job.
+- update a dns record.
+- serverless
+- dns update record
 - delete a logpush job.
+- dns get dnssec
+- cloud
+- create a turnstile widget.
+- dns
+- logpush job management.
+- logpush create job
+- real-time communication
+- list turnstile widgets.
+- verify a turnstile token.
+- turnstile delete widget
+- turnstile create widget
+- turnstile list widgets
+- edge
+- logpush get job
+- logpush list jobs
+- list dataset fields.
+- delete a turnstile widget.
+- logpush delete job
+- ai gateway
+- get logpush job details.
+- list dns records.
+- edge computing
+- dns get record
 - list logpush jobs
+- dns record management.
+- get dnssec settings.
+- ddos protection
+- containers
+- turnstile verify token
+- api gateway
 - delete a dns record.
+- cloudflare
+- list dns records
+- cdn
+- security
+- platform
+- list turnstile widgets
+- list logpush jobs.
+- create a dns record.
+- web performance
+- dns list records
+- list dns records for a zone.
+- dns create record
+- get dns record details.
+- object storage
+- execute batch dns operations.
+- logpush list dataset fields
+- dns delete record
 slug: dns-and-security
 tags:
 - Cloudflare

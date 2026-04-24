@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- submit identity verification as a trust provider
-- authentication
-- verify a consumer identity using mastercard id
-- fraud detection
-- get consent status
-- authentication consent management
-- mastercard
-- credit cards
-- get identity intelligence insights for a transaction
-- get authentication consent status
-- financial services
-- identity verification
-- identity
-- initiate authentication
 - get identity insights for a transaction
-- get account identity insights
-- open banking
-- verify a consumer identity
+- authentication consent management
+- get identity insights for an account
 - create an authentication consent request
-- create authentication consent
-- get transaction identity insights
 - kyc
-- create auth consent
-- verification
-- identity insights for accounts
+- verify a consumer identity using mastercard id
+- get transaction identity insights
 - identity insights for transactions
 - payments
-- get identity intelligence insights for an account
-- get transaction insights
-- get account insights
-- create consent
-- get identity insights for an account
 - submit trust verification
+- create auth consent
+- create authentication consent
 - digital identity
+- credit cards
+- get identity intelligence insights for a transaction
+- verification
+- get identity intelligence insights for an account
+- fraud detection
+- initiate authentication
+- authentication
+- mastercard
+- get account identity insights
+- submit identity verification as a trust provider
+- get account insights
+- identity insights for accounts
 - verify identity
+- verify a consumer identity
+- get transaction insights
 - initiate strong customer authentication
+- identity
+- financial services
+- open banking
+- identity verification
+- get authentication consent status
+- create consent
+- get consent status
 slug: identity-and-authentication
 tags:
 - Mastercard

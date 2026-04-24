@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- beta tester management.
-- get beta tester details.
-- delete a beta group.
-- delete beta tester
-- apple
-- app management.
-- beta group management.
-- create a beta group.
-- testflight
-- list all beta testers.
-- create beta tester
-- read beta group
-- modify app
-- update a beta group.
-- ios
-- modify beta group
-- list apps
 - create tester
-- list all apps in app store connect.
-- list beta groups.
-- read app
-- read beta tester
-- list beta groups
-- remove a beta tester.
-- list testers
-- list groups
-- delete beta group
-- add a beta tester.
-- list all beta groups.
-- list all builds.
-- list beta testers.
-- list all apps.
-- modify build
-- get build details.
-- list builds
-- read build
-- create a new beta group.
-- technology
+- beta group management.
 - developer
-- build management.
-- add a new beta tester.
-- get details of a specific app.
-- app management
-- create beta group
+- apple
 - create group
-- app store
+- list all beta testers.
+- technology
+- read build
+- delete a beta group.
+- get details of a specific app.
+- create a new beta group.
+- list beta testers.
+- list all beta groups.
+- update a beta group.
+- delete beta group
+- list beta groups
+- create beta tester
+- get build details.
+- testflight
+- add a beta tester.
+- list all apps in app store connect.
+- create beta group
+- read beta group
+- list all apps.
+- create a beta group.
+- remove a beta tester.
+- list builds
+- list beta groups.
+- list beta testers
 - macos
 - update build information.
-- list beta testers
-- update app metadata.
-- mobile
+- read app
+- app management.
+- ios
+- list testers
+- add a new beta tester.
+- app store
+- modify app
 - get beta group details.
+- mobile
+- build management.
+- modify build
+- list apps
+- delete beta tester
+- beta tester management.
+- read beta tester
+- modify beta group
+- list all builds.
+- get beta tester details.
+- list groups
+- app management
+- update app metadata.
 slug: app-lifecycle
 tags:
 - Apple

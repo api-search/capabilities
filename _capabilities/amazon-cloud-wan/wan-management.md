@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon Cloud WAN
 provider_slug: amazon-cloud-wan
 search_terms:
-- cloud wan
-- Network Engineer
 - amazon cloud wan
-- aws
+- amazon web services
+- Network Engineer
 - sd-wan
 - wide area network
-- amazon web services
+- cloud wan
 - networking
+- aws
 slug: wan-management
 tags:
 - Amazon Web Services

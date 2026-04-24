@@ -51,49 +51,49 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list database roles
-- create a database role
-- list managed accounts
-- grant a privilege
-- account management
-- data warehousing
-- list network policies
-- grant a privilege to a role
-- database
-- sql
-- create a new user
-- role management
-- snowflake
-- create role
-- create a user
-- list accounts
-- list all users
-- fetch user details
-- revoke privilege
-- data lakes
-- list grants to a role
-- grant management
 - create user
-- access control
+- sql
+- role management
+- delete a user
+- create a role
+- grant management
+- create a database role
+- create a new user
 - list all roles
 - revoke a privilege from a role
+- grant a privilege to a role
+- create role
 - create a new role
-- security
-- list users
+- data lakes
+- list database roles
+- create a user
 - administration
-- delete user
-- create database role
-- create a role
 - fetch user
-- list roles
-- user management
-- create network policy
-- list grants
-- create a network policy
+- revoke privilege
+- snowflake
 - data sharing
-- delete a user
+- create network policy
+- list all users
+- account management
+- create database role
+- grant a privilege
 - network policy management
+- list roles
+- database
+- list managed accounts
+- security
+- access control
+- fetch user details
+- list grants to a role
 - grant privilege
+- list grants
+- data warehousing
+- list accounts
+- create a network policy
+- delete user
+- list network policies
+- list users
+- user management
 slug: security-and-access
 tags:
 - Snowflake

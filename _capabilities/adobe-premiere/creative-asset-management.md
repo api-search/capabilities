@@ -25,37 +25,37 @@ personas: []
 provider_name: Adobe Premiere Pro
 provider_slug: adobe-premiere
 search_terms:
-- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
-- video editing
-- creative cloud
+- Media Asset Manager
 - list libraries
-- add an element to a library.
-- asset management
-- premiere pro
-- list elements in a library.
-- list all creative cloud libraries.
-- video production
-- creative cloud libraries for shared production assets.
-- add element
-- premiere pro plugin and extension ecosystem.
-- adobe premiere
-- create a new creative cloud library for organizing video production brand assets.
-- adobe
-- list all creative cloud libraries available for use in adobe premiere pro projects.
-- list elements
 - add library element
-- manage creative cloud libraries and assets for premiere pro video production.
+- create library
+- add element
+- list all creative cloud libraries.
+- list all creative cloud libraries available for use in adobe premiere pro projects.
+- video production
+- premiere pro plugin and extension ecosystem.
+- elements within a creative cloud library.
+- create a new creative cloud library for organizing video production brand assets.
+- Video Producer
+- list elements in a library.
 - automation
+- add an element to a library.
+- media
+- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
 - manager responsible for organizing shared brand assets in creative cloud.
 - list library elements
+- video editing
+- creative cloud libraries for shared production assets.
 - create a new creative cloud library.
-- Media Asset Manager
-- Video Producer
+- manage creative cloud libraries and assets for premiere pro video production.
+- asset management
+- adobe
+- adobe premiere
 - add a new design element to a creative cloud library for sharing with the premiere pro team.
-- media
+- premiere pro
+- list elements
+- creative cloud
 - video editor and producer using adobe premiere pro for content creation.
-- create library
-- elements within a creative cloud library.
 slug: creative-asset-management
 tags:
 - Adobe Premiere

@@ -8,13 +8,13 @@ personas: []
 provider_name: Apache Hive
 provider_slug: apache-hive
 search_terms:
-- big data
 - hadoop
-- apache
 - sql
+- big data
 - open source
 - data warehouse
 - etl
+- apache
 slug: hive-data-querying
 tags: []
 tools: []

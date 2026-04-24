@@ -33,47 +33,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
+- request end-of-day historical data for securities.
+- historical data queries.
+- bloomberg
+- search for fields.
+- business intelligence
+- data license
+- reference data queries.
 - subscribe to custom vwap stream.
 - intraday bar queries.
-- look up metadata for bloomberg field mnemonics.
-- intraday tick queries.
-- analytics
-- enterprise
-- data license
-- subscribe to streaming real-time market data.
-- transaction cost analysis
-- subscribe market vwap
-- historical data request
-- trading
-- subscribe market data
-- quantitative analysis
-- look up field metadata.
-- financial services
 - request historical data.
-- request raw intraday tick data for a security.
-- bloomberg
-- business intelligence
+- analytics
+- look up field metadata.
+- market data
+- intraday tick request
+- subscribe to interval-based real-time bars.
+- transaction cost analysis
+- subscribe market data
 - subscribe market bar
 - news
-- request reference data for securities and fields.
-- reference data queries.
-- request intraday bars.
-- historical data queries.
-- market data
-- search the bloomberg api data dictionary for fields.
-- intraday tick request
-- request reference data.
-- reference data request
-- field discovery.
-- request intraday ohlc bars for a security.
-- execution management
 - request intraday ticks.
-- field info request
 - intraday bar request
-- subscribe to interval-based real-time bars.
-- search for fields.
+- field discovery.
+- request reference data for securities and fields.
+- subscribe market vwap
+- reference data request
+- intraday tick queries.
+- execution management
+- historical data request
+- request intraday ohlc bars for a security.
+- subscribe to streaming real-time market data.
+- look up metadata for bloomberg field mnemonics.
+- financial services
+- search the bloomberg api data dictionary for fields.
+- trading
 - field search request
-- request end-of-day historical data for securities.
+- request reference data.
+- field info request
+- request intraday bars.
+- request raw intraday tick data for a security.
+- quantitative analysis
+- enterprise
 slug: market-data
 tags:
 - Bloomberg

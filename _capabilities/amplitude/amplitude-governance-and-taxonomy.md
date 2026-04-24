@@ -115,104 +115,104 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- export raw event data and manage behavioral cohorts. for data analysts.
-- amplitude create an event category
-- deleteEventType
-- getEventProperty
-- analytics
-- amplitude
-- amplitude update an event type
-- taxonomy api getUserProperty
-- analyzes data and manages cohorts
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- experimentation
-- taxonomy api createEventProperty
-- getUserProfile
-- amplitude create a user property
 - updateEventCategory
-- updateEventProperty
-- taxonomy api deleteUserProperty
-- amplitude delete an event category
-- amplitude get an annotation
-- amplitude get a user property
-- chart annotations api listAnnotations
-- amplitude update an annotation
-- data governance
-- a/b testing
-- amplitude get an event property
-- amplitude update a user property
-- amplitude delete an annotation
-- deleteAnnotation
-- createEventProperty
-- manages privacy and compliance
-- getEventCategory
-- deleteUserProperty
-- createEventCategory
-- getEventType
-- amplitude list all user properties
-- amplitude get an event category
-- chart annotations api getAnnotation
-- taxonomy api getEventProperty
-- taxonomy api createUserProperty
-- taxonomy api deleteEventType
-- taxonomy api listEventCategories
-- amplitude delete an event property
-- amplitude create an annotation
-- listEventCategories
-- user behavior
-- amplitude create an event type
-- chart annotations api deleteAnnotation
-- user profile api getUserProfile
-- amplitude list all event types
-- taxonomy api listEventTypes
-- amplitude update an event category
-- amplitude list all event properties
-- taxonomy api listEventProperties
-- getAnnotation
-- feature flags
-- chart annotations api updateAnnotation
-- updateUserProperty
-- taxonomy api getEventCategory
-- amplitude get a user profile
-- unified workflow for sending events and identifying users. for data engineers.
-- updateEventType
-- amplitude update an event property
-- amplitude list all annotations
-- ingests and exports event data
-- createAnnotation
-- listAnnotations
-- listEventProperties
 - listEventTypes
-- product analytics
-- privacy compliance
-- amplitude list all event categories
-- taxonomy api updateUserProperty
-- amplitude delete a user property
-- taxonomy api getEventType
-- chart annotations api createAnnotation
-- createEventType
-- taxonomy api listUserProperties
-- taxonomy api updateEventProperty
-- taxonomy api createEventType
+- amplitude get a user property
+- taxonomy api getEventCategory
+- updateEventType
+- experimentation
+- getUserProfile
 - amplitude delete an event type
-- taxonomy api deleteEventProperty
+- taxonomy api createEventType
+- chart annotations api getAnnotation
+- export raw event data and manage behavioral cohorts. for data analysts.
+- amplitude update an event category
+- amplitude list all user properties
+- amplitude get a user profile
+- getAnnotation
 - updateAnnotation
-- createUserProperty
-- taxonomy api createEventCategory
-- listUserProperties
-- taxonomy
-- deleteEventProperty
-- amplitude create an event property
+- taxonomy api updateEventProperty
+- taxonomy api getUserProperty
+- amplitude list all event properties
+- taxonomy api getEventType
+- taxonomy api updateUserProperty
+- amplitude get an event category
+- createEventType
+- taxonomy api createUserProperty
+- manage event schemas and chart annotations. for data governance teams.
+- amplitude delete an annotation
+- analytics
 - getUserProperty
 - amplitude get an event type
-- manage event schemas and chart annotations. for data governance teams.
-- taxonomy api updateEventCategory
+- listEventCategories
+- taxonomy api listUserProperties
+- amplitude update a user property
+- amplitude update an event type
+- user behavior
+- chart annotations api createAnnotation
+- listEventProperties
+- chart annotations api deleteAnnotation
+- chart annotations api listAnnotations
+- a/b testing
+- amplitude get an event property
+- amplitude
+- amplitude create an annotation
+- updateEventProperty
+- amplitude create an event property
+- feature flags
+- amplitude update an event property
+- listAnnotations
+- taxonomy api deleteUserProperty
+- taxonomy
+- updateUserProperty
+- chart annotations api updateAnnotation
+- data governance
+- createUserProperty
 - taxonomy api updateEventType
-- runs experiments and feature flags
+- amplitude list all annotations
+- amplitude create an event category
+- ingests and exports event data
 - deleteEventCategory
-- taxonomy api deleteEventCategory
+- deleteAnnotation
+- taxonomy api listEventCategories
+- user profile api getUserProfile
+- privacy compliance
+- manages privacy and compliance
+- getEventType
+- deleteEventProperty
+- taxonomy api listEventTypes
+- taxonomy api deleteEventType
+- amplitude delete a user property
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- taxonomy api updateEventCategory
+- taxonomy api createEventCategory
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- deleteEventType
+- amplitude update an annotation
+- taxonomy api getEventProperty
+- unified workflow for sending events and identifying users. for data engineers.
+- amplitude delete an event property
+- getEventCategory
+- analyzes data and manages cohorts
+- amplitude list all event categories
+- taxonomy api deleteEventProperty
+- createAnnotation
+- createEventProperty
+- amplitude create a user property
 - identity management
+- amplitude create an event type
+- getEventProperty
+- amplitude get an annotation
+- createEventCategory
+- runs experiments and feature flags
+- listUserProperties
+- taxonomy api deleteEventCategory
+- amplitude list all event types
+- deleteUserProperty
+- taxonomy api listEventProperties
+- product analytics
+- amplitude delete an event category
+- taxonomy api createEventProperty
 slug: amplitude-governance-and-taxonomy
 tags:
 - Amplitude

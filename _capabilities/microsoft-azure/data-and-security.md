@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- keyvault list keys
-- cosmos list items
-- cosmos list databases
-- keyvault get secret
-- keyvault list secrets
-- list containers in a database
-- enterprise
-- cosmos db
-- list cryptographic keys
-- arm list tags
-- key vault secret management
-- azure
-- list cosmos db databases
 - list resources in a subscription
-- platform as a service
 - list certificates
-- subscription management
-- list databases
-- list items in a container
-- blob list blobs
-- list resource providers
-- list subscriptions
-- arm list resource groups
-- list subscription tags
-- cosmos db database management
-- t1
-- arm list providers
-- keyvault list certificates
-- key vault
-- cloud computing
-- blob download
-- list resource groups
-- get blob properties
-- download a blob
-- api management
-- blob get properties
-- list azure subscriptions
-- list blobs in a container
-- cloud
 - resource manager
+- list containers in a database
 - get a secret value
 - blob storage
+- arm list tags
+- keyvault list keys
+- cosmos list items
 - arm list subscriptions
-- infrastructure as a service
-- list blobs
-- list secrets
+- cloud
+- list resource providers
+- list cosmos db databases
+- platform as a service
+- arm list providers
+- blob list blobs
+- cosmos db
 - blob storage operations
+- list subscriptions
 - cosmos list containers
+- blob get properties
+- list secrets
+- list items in a container
+- cosmos list databases
+- list blobs in a container
+- subscription management
+- api management
 - arm list resources
+- list azure subscriptions
+- t1
+- list resource groups
+- list databases
+- blob download
+- list subscription tags
+- list blobs
+- keyvault get secret
+- key vault
+- cosmos db database management
+- get blob properties
+- enterprise
+- download a blob
+- list cryptographic keys
+- cloud computing
+- infrastructure as a service
+- keyvault list certificates
+- key vault secret management
+- azure
+- keyvault list secrets
+- arm list resource groups
 slug: data-and-security
 tags:
 - Azure

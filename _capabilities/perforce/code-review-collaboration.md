@@ -33,43 +33,43 @@ personas: []
 provider_name: Perforce
 provider_slug: perforce
 search_terms:
+- update a review description or author
+- activity stream
+- list comments on reviews and changelists
+- list activity
+- get review details
+- delete a swarm project
+- create a new code review from a changelist
+- list activity stream entries
+- get swarm server version information
+- create comment
+- collaboration
+- list comments
 - devops
+- delete project
+- get details of a specific code review
+- list reviews
+- get version
 - get review
 - get details of a specific swarm project
-- code reviews
-- list swarm projects
-- get version
-- list comments
-- list activity entries
-- perforce
-- create comment
-- swarm projects
-- list activity stream entries
-- list code reviews in helix swarm
-- list reviews
-- create review
-- get project
-- list code reviews
-- get swarm server version information
-- review comments
 - review details
-- delete project
-- get review details
-- transition a review to a new state (approve, reject, etc.)
-- get details of a specific code review
-- list activity
-- update review
-- update a review description or author
-- transition review state
-- list projects
-- delete a swarm project
-- activity stream
-- create a new code review
+- list code reviews in helix swarm
+- perforce
 - add a comment to a review or changelist
-- list comments on reviews and changelists
+- create a new code review
+- create review
+- transition review state
+- list code reviews
+- list swarm projects
+- swarm projects
 - code review
-- collaboration
-- create a new code review from a changelist
+- review comments
+- update review
+- list projects
+- transition a review to a new state (approve, reject, etc.)
+- code reviews
+- get project
+- list activity entries
 slug: code-review-collaboration
 tags:
 - Perforce

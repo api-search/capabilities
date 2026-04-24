@@ -37,59 +37,59 @@ personas: []
 provider_name: Amazon DMS
 provider_slug: amazon-dms
 search_terms:
-- end-to-end database migration lifecycle using aws dms
-- replication tasks for migration
-- database migration
-- describe replication tasks
-- list all replication tasks
-- source and target database endpoint management
-- stop replication task
-- list all endpoints
-- database engineer managing migration projects and monitoring replication tasks
-- create a new replication task
-- describe certificates
-- database
+- source and target database endpoints
 - amazon dms
-- create a source or target database endpoint for migration
-- replication instances and network configuration
-- data replication
-- create a source or target endpoint
+- start or resume a database migration replication task
+- describe connections
+- cloud architect designing database migration strategy and infrastructure
+- list all replication instances
 - ssl certificates for encrypted migration
+- describe endpoints
+- create a new replication task
+- data replication
+- replication tasks for migration
+- create a new replication instance
+- create replication instance
+- list per-table migration statistics for a replication task
+- create a new replication task to migrate data between source and target
+- start replication task
+- create a source or target database endpoint for migration
+- stop a running database migration replication task
+- delete a dms replication instance
+- stop replication task
+- describe table statistics
+- end-to-end database migration lifecycle using aws dms
+- describe replication instances
+- replication task lifecycle and monitoring
+- test the connection between a replication instance and an endpoint
+- list replication tasks and their current migration status
+- create a source or target endpoint
+- describe certificates
+- list sns event subscriptions for migration notifications
+- list ssl certificates for encrypted database migration connections
+- Cloud Architect
+- Database Engineer
+- describe event subscriptions
+- list all source and target database endpoints configured for migration
+- list all dms replication instances used for database migration processing
+- database migration
+- delete replication instance
+- create replication task
+- aws
+- replication instances for migration processing
+- database
+- database engineer managing migration projects and monitoring replication tasks
+- list all endpoints
+- create a new dms replication instance to process migration tasks
+- source and target database endpoint management
+- list all replication tasks
+- migration
 - test connection
 - create endpoint
-- create a new replication task to migrate data between source and target
-- describe connections
-- create a new dms replication instance to process migration tasks
-- list per-table migration statistics for a replication task
-- create replication task
+- describe replication tasks
 - list connections between replication instances and endpoints
-- create a new replication instance
-- describe replication instances
-- Database Engineer
-- delete replication instance
-- describe table statistics
-- list sns event subscriptions for migration notifications
-- source and target database endpoints
 - list registered ssl certificates
-- test the connection between a replication instance and an endpoint
-- list all source and target database endpoints configured for migration
-- cloud architect designing database migration strategy and infrastructure
-- describe event subscriptions
-- delete a dms replication instance
-- replication task lifecycle and monitoring
-- create replication instance
-- aws
-- migration
-- list all dms replication instances used for database migration processing
-- start or resume a database migration replication task
-- list replication tasks and their current migration status
-- stop a running database migration replication task
-- replication instances for migration processing
-- describe endpoints
-- Cloud Architect
-- list all replication instances
-- start replication task
-- list ssl certificates for encrypted database migration connections
+- replication instances and network configuration
 slug: database-migration-management
 tags:
 - Amazon DMS

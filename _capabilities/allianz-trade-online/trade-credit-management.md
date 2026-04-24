@@ -8,12 +8,12 @@ personas: []
 provider_name: Allianz Trade
 provider_slug: allianz-trade-online
 search_terms:
+- e-commerce
+- surety
+- insurance
+- credit insurance
 - risk management
 - trade credit
-- e-commerce
-- credit insurance
-- insurance
-- surety
 slug: trade-credit-management
 tags: []
 tools: []

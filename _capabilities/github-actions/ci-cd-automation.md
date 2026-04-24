@@ -73,89 +73,89 @@ personas: []
 provider_name: GitHub Actions
 provider_slug: github-actions
 search_terms:
-- single workflow
-- jobs for a workflow run
 - delete an artifact
-- repository variables
-- cancel run
-- remove a self-hosted runner from a repository
-- trigger workflow
-- delete variable
-- cancel a workflow run
-- get a specific workflow by id or filename
-- cancel a running workflow
-- list repository variables
-- rerun failed jobs
-- list workflows
-- workflows
-- workflow runs
-- create or update a repository secret
-- get a specific workflow
-- create a repository variable
-- get details of a specific workflow run
-- list repository secrets (names only, not values)
-- list variables
-- actions
-- list runs
-- delete a specific cache entry
-- get artifact
-- get workflow
-- github
-- list workflow runs for a repository
-- delete secret
-- list caches
-- list repository secrets
-- get a workflow run
-- create or update secret
-- get run
-- list actions caches for a repository
-- list self-hosted runners
-- get details of a specific artifact
-- trigger a workflow dispatch
-- repository secrets
-- cancel
-- ci/cd
-- devops
-- re-run only the failed jobs from a workflow run
-- dispatch
 - delete cache
-- list workflow artifacts for a repository
-- delete a repository variable
-- trigger a workflow
-- trigger a workflow dispatch event
-- enable workflow
-- list jobs for a workflow run
-- automation
-- list jobs
-- get job
-- get runner
-- single artifact
-- list artifacts
-- get an artifact
-- rerun
-- delete a workflow run
-- get a specific self-hosted runner
-- action caches
-- delete a repository secret
-- create variable
-- list secrets
-- list runners
-- enable a workflow
-- delete runner
-- get a specific job from a workflow run
-- disable a workflow
-- delete a workflow artifact
-- self-hosted runners
-- delete run
-- workflow artifacts
-- rerun workflow
-- list workflow runs
-- list repository workflows
-- disable workflow
+- workflow runs
 - single workflow run
+- cancel
+- list workflow runs for a repository
+- get run
+- delete secret
+- workflow artifacts
+- delete a workflow run
+- devops
+- list workflows
+- get an artifact
+- create or update secret
+- delete a specific cache entry
+- single workflow
+- list repository secrets (names only, not values)
+- create a repository variable
+- cancel a workflow run
+- github
+- rerun
+- list jobs for a workflow run
+- get a specific workflow by id or filename
+- list actions caches for a repository
+- self-hosted runners
+- actions
+- jobs for a workflow run
+- list artifacts
+- get details of a specific workflow run
+- disable workflow
+- ci/cd
+- delete runner
+- list runs
+- re-run only the failed jobs from a workflow run
+- list repository workflows
+- enable workflow
+- get a workflow run
+- list repository secrets
+- delete a repository variable
 - re-run a workflow
+- get a specific job from a workflow run
+- trigger a workflow
+- rerun workflow
+- get a specific self-hosted runner
+- rerun failed jobs
+- delete a repository secret
+- repository variables
+- list repository variables
+- get job
+- trigger a workflow dispatch event
+- dispatch
+- get details of a specific artifact
+- list jobs
+- list caches
+- enable a workflow
+- single artifact
+- remove a self-hosted runner from a repository
+- list variables
+- list runners
+- delete a workflow artifact
+- get workflow
+- delete variable
+- create variable
+- repository secrets
+- list workflow runs
+- delete run
+- cancel run
+- disable a workflow
+- trigger workflow
+- list secrets
+- action caches
+- get runner
+- automation
 - list self-hosted runners for a repository
+- get artifact
+- get a specific workflow
+- trigger a workflow dispatch
 - delete artifact
+- list workflow artifacts for a repository
+- create or update a repository secret
+- list self-hosted runners
+- workflows
+- cancel a running workflow
 slug: ci-cd-automation
 tags:
 - GitHub

@@ -13,28 +13,28 @@ personas: []
 provider_name: Azure DevTest Labs
 provider_slug: azure-test-labs
 search_terms:
-- management
 - development
-- azure resource management
-- azure
+- list all resources
+- cloud
+- list customimage resources
+- list virtualmachine resources
+- list labs
+- list environments
 - list formulas
 - list lab resources
-- resource management
-- labs
-- list virtual machines
-- list labs
-- list virtualmachine resources
-- list formula resources
-- list customimage resources
-- list environment resources
-- list
-- list all resources
-- virtual machines
-- infrastructure
-- cloud
-- testing
-- list environments
 - list custom images
+- azure resource management
+- list virtual machines
+- testing
+- virtual machines
+- labs
+- resource management
+- management
+- list formula resources
+- list
+- list environment resources
+- azure
+- infrastructure
 slug: azure-test-labs-management
 tags:
 - Azure

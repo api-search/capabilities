@@ -9,12 +9,12 @@ provider_name: Amazon Data Lifecycle Manager
 provider_slug: amazon-data-lifecycle-manager
 search_terms:
 - automation
+- storage
 - compliance
-- aws
+- lifecycle management
 - ebs snapshots
 - backup
-- storage
-- lifecycle management
+- aws
 slug: backup-automation-operations
 tags: []
 tools: []

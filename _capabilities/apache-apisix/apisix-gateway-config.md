@@ -33,44 +33,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- cloud native
-- traffic management
-- create a new apisix route for traffic routing.
-- api gateway
-- create a backend upstream.
-- list all gateway routes.
-- Platform Engineer
 - API Gateway Administrator
-- list upstreams
+- create a backend upstream.
+- create a new apisix route for traffic routing.
+- update an existing apisix route.
+- delete route
+- list all backend upstream configurations.
+- Platform Engineer
+- apache apisix
+- administrators configuring routes, consumers, and security policies.
+- configuration
+- list backend upstreams.
+- list all apisix gateway routes.
+- nginx
+- list all api consumers and their plugin configs.
+- apache
+- create consumer
+- authentication
+- engineers deploying and managing api gateway infrastructure.
+- open source
+- create route
+- update route
+- traffic management
+- list api consumers.
+- list all gateway routes.
+- create a new backend upstream with load balancing config.
+- api gateway
+- route, upstream, consumer, and ssl management workflow.
+- lua
+- create a new api consumer with authentication plugins.
+- list consumers
+- create a new gateway route.
+- cloud native
+- create an api consumer.
+- list routes
 - delete an apisix route.
 - kubernetes
-- delete route
-- apache apisix
-- lua
-- create route
-- create consumer
-- configuration
-- update an existing apisix route.
-- list backend upstreams.
 - create upstream
-- list routes
-- update route
-- list all api consumers and their plugin configs.
-- nginx
-- list consumers
-- create a new backend upstream with load balancing config.
-- list all backend upstream configurations.
-- engineers deploying and managing api gateway infrastructure.
-- route, upstream, consumer, and ssl management workflow.
-- create a new gateway route.
-- list api consumers.
-- create a new api consumer with authentication plugins.
-- apache
-- open source
-- authentication
-- administrators configuring routes, consumers, and security policies.
-- create an api consumer.
-- list all apisix gateway routes.
+- list upstreams
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

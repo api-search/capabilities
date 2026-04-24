@@ -42,51 +42,51 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- post an event
-- getLogIndex
-- aggregate logs
-- search log events with query language
-- searchLogs
-- visualizations
-- log indexes
-- analytics
-- post an event to correlate with log data
-- aggregate log data
-- event correlation
-- search events
+- list log indexes
 - get a specific event
-- searchEvents
-- get event
+- send log entries to datadog
+- search
+- aggregate log data
+- log indexes
+- aggregate logs
+- search log events
+- searchLogs
+- monitoring
+- aggregateLogs
+- analytics
+- search log events with query language
+- submit logs
+- list configured log indexes
+- createEvent
+- send log entries
+- list events for correlation with logs
+- event correlation
+- search events alongside log analysis
+- t1
+- datadog
+- listEvents
+- compute aggregations over log events
+- submitLogs
+- post an event to correlate with log data
+- get a specific log index configuration
+- get a log index
+- search events
+- listLogIndexes
+- post an event
+- logs
 - get log index
+- visualizations
 - events
+- searchEvents
 - dashboards
 - platform
-- t1
-- get a specific log index configuration
-- createEvent
-- submitLogs
-- aggregateLogs
-- send log entries to datadog
-- logs
-- listEvents
-- submit logs
-- get a log index
-- list configured log indexes
-- search logs
-- compute aggregations over log events
-- search
-- monitoring
-- individual log index
-- send log entries
-- log analytics
 - list events
-- search events alongside log analysis
+- get event
+- individual log index
 - create event
-- list log indexes
-- search log events
-- list events for correlation with logs
-- datadog
-- listLogIndexes
+- search logs
+- getLogIndex
+- log analytics
 slug: log-analytics
 tags:
 - Datadog

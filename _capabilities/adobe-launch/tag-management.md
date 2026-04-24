@@ -50,58 +50,58 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- extension management
-- browse available extension packages in the marketplace
-- install extension
-- extension package marketplace
-- edge network
-- create property
-- data element management
-- list extensions installed on a property
-- list data elements
-- list libraries
-- create a new tag rule
-- create a new rule
-- create build
-- rule management
-- event forwarding
-- list all companies you have access to
-- extensions
-- list properties for a company
-- get property
-- install an extension on a property
-- tag property management
-- tag management
-- library and build management
-- list rules configured for a property
-- list available extension packages
-- get details of a specific property
-- environment management
-- company management
-- list rules
-- marketing technology
-- create data element
-- list environments for a property
-- list companies
-- data collection
-- build a library for deployment
-- create rule
-- list data elements for a property
 - create a new library
-- search
-- list tag properties for a company
-- create a new tag property
-- list rules for a property
-- create a new data element
-- list properties
-- list libraries for a property
-- search across all tag management resources
-- list extension packages
-- list extensions
-- list environments
+- tag management
+- edge network
+- environment management
+- list libraries
+- create a new rule
+- tag property management
+- create rule
 - create library
+- list extensions installed on a property
+- install an extension on a property
+- search
+- extension management
+- create a new data element
+- build a library for deployment
+- list properties
+- list available extension packages
+- browse available extension packages in the marketplace
+- create a new tag rule
+- list tag properties for a company
+- create property
+- list data elements
+- list libraries for a property
+- list rules configured for a property
+- extensions
+- list rules for a property
+- list environments
+- marketing technology
+- library and build management
+- create build
+- list rules
+- list extension packages
 - list all companies
+- company management
+- event forwarding
+- create data element
+- list data elements for a property
+- list companies
+- extension package marketplace
+- get details of a specific property
+- install extension
+- list environments for a property
+- create a new tag property
+- data collection
+- get property
+- list properties for a company
+- data element management
 - adobe launch
+- list extensions
+- rule management
+- search across all tag management resources
+- list all companies you have access to
 slug: tag-management
 tags:
 - Adobe Launch

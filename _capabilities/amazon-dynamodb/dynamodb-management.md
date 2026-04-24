@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb describe a dynamodb table
-- update item
-- deleteItem
-- database
-- workflow capability for nosql database operations.
-- amazon dynamodb query items in a table or index
-- amazon dynamodb delete an item from a table
-- delete item
-- amazon dynamodb list dynamodb tables
-- get item
-- amazon dynamodb create a dynamodb table
-- putItem
-- update table
-- amazon dynamodb put an item into a table
-- amazon dynamodb get an item from a table
-- key-value
-- deleteTable
-- amazon dynamodb
-- list tables
-- updateItem
-- updateTable
-- amazon dynamodb update an item in a table
-- delete table
-- describeTable
-- engineers managing amazon dynamodb resources on aws.
-- serverless
-- create table
-- describe table
-- put item
-- aws
-- document store
-- createTable
-- query
 - listTables
-- amazon dynamodb update a dynamodb table
-- getItem
-- nosql database operations business domain for amazon dynamodb.
+- document store
+- updateItem
+- engineers managing amazon dynamodb resources on aws.
+- amazon dynamodb update an item in a table
+- updateTable
+- serverless
+- put item
+- key-value
+- amazon dynamodb create a dynamodb table
+- update table
 - amazon dynamodb delete a dynamodb table
+- describeTable
+- amazon dynamodb delete an item from a table
+- get item
+- amazon dynamodb list dynamodb tables
+- putItem
+- workflow capability for nosql database operations.
+- nosql database operations business domain for amazon dynamodb.
+- update item
+- describe table
+- amazon dynamodb query items in a table or index
+- getItem
+- create table
+- amazon dynamodb describe a dynamodb table
+- createTable
+- deleteTable
+- amazon dynamodb get an item from a table
+- aws
 - nosql
+- deleteItem
+- delete table
+- database
+- list tables
+- amazon dynamodb update a dynamodb table
+- delete item
+- amazon dynamodb put an item into a table
+- amazon dynamodb
+- query
 slug: dynamodb-management
 tags:
 - Amazon DynamoDB

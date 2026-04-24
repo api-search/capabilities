@@ -26,48 +26,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cognitive list accounts
-- create embedding
-- openai create transcription
-- openai create image
-- list available openai models
-- enterprise
-- create a text completion
 - ai
-- list cognitive accounts
-- azure
-- platform as a service
-- translate audio to english
-- generate speech from text
-- create a chat completion using azure openai
-- create text embeddings
-- cognitive services accounts
-- openai create embedding
 - openai list deployments
+- model listing
+- openai create completion
+- list cognitive services accounts
+- openai create translation
+- list available openai models
+- embedding operations
+- openai create chat completion
+- create a chat completion
+- cognitive list accounts
+- openai create embedding
+- cloud
+- chat completion operations
+- create embedding
+- create a chat completion using azure openai
+- openai create transcription
+- platform as a service
+- transcribe audio to text
+- list cognitive accounts
+- openai
+- cognitive list models
+- create chat completion
+- openai create image
+- api management
 - t1
+- list available ai models
+- generate speech from text
+- cognitive services accounts
+- openai create speech
+- translate audio to english
+- create a text completion
+- enterprise
+- list openai models
 - generate images from text
 - list model deployments
-- transcribe audio to text
-- chat completion operations
-- openai
-- openai create completion
-- create a chat completion
-- cognitive list models
-- model listing
-- embedding operations
-- api management
-- openai create translation
-- cognitive services
-- cloud
-- openai create speech
-- list cognitive services accounts
-- create chat completion
-- openai list models
-- list available ai models
-- openai create chat completion
-- list openai models
-- infrastructure as a service
 - cloud computing
+- infrastructure as a service
+- create text embeddings
+- azure
+- openai list models
+- cognitive services
 slug: ai-and-cognitive
 tags:
 - Azure

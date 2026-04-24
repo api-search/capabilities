@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- read values from a spreadsheet range
-- batch update values
-- google workspace
-- write values to multiple ranges at once
-- spreadsheet lifecycle operations
-- cell value read and write operations
-- append values
-- clear values from a range
-- search developer metadata
-- clear values from a spreadsheet range
-- get spreadsheet
+- search developer metadata matching filters
 - data management
-- batch clear values
-- single spreadsheet operations
-- append values to a range
+- read values from a range
 - append rows of data to a spreadsheet
-- update values
-- batch update spreadsheet
-- create a new google sheets spreadsheet
-- apply batch updates to a spreadsheet
-- automation
-- google sheets
-- create spreadsheet
+- spreadsheets
+- read values from multiple ranges at once
+- append values to a range
 - productivity
 - clear values
+- write values to multiple ranges at once
+- google workspace
+- read values from a spreadsheet range
+- batch clear values
+- search developer metadata
+- cell value read and write operations
+- clear values from a range
 - batch get values
-- search developer metadata matching filters
-- write values to a range
-- clear values from multiple ranges
-- create a new spreadsheet
-- read values from multiple ranges at once
-- copy sheet
-- get developer metadata by id
-- read values from a range
-- write values to a spreadsheet range
-- spreadsheets
-- get spreadsheet details by id
 - get spreadsheet details
+- create a new spreadsheet
+- google sheets
 - copy a sheet to another spreadsheet
+- automation
+- copy sheet
+- batch update spreadsheet
+- get developer metadata by id
 - get developer metadata
+- create spreadsheet
+- batch update values
+- append values
+- get spreadsheet
+- clear values from multiple ranges
+- write values to a spreadsheet range
+- get spreadsheet details by id
+- update values
+- single spreadsheet operations
 - get values
+- spreadsheet lifecycle operations
+- clear values from a spreadsheet range
+- write values to a range
+- create a new google sheets spreadsheet
+- apply batch updates to a spreadsheet
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

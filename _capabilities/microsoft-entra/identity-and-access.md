@@ -101,86 +101,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- create a new user.
-- get application
-- remove a member from a group.
-- delete a service principal.
-- register a new application.
-- create a new group.
-- get user
-- list all groups in the directory.
-- list groups
-- azure ad
-- identity
-- list all users in the directory.
-- get user details.
-- delete application
-- access management
-- individual user management.
-- delete a group.
 - create group
-- directory management
-- remove group member
-- network security
-- microsoft
-- delete a user.
-- list groups and roles a user belongs to.
-- update group
-- get service principal
-- user account management.
-- list user memberships
-- create a new user in the directory.
-- delete an application.
-- user group membership.
-- list users
-- create service principal
-- add group member
-- add a member to a group.
-- update service principal
-- update user properties.
-- list all service principals.
-- update application properties.
-- get user properties by id.
-- delete group
-- get service principal details.
-- create a new service principal.
-- list applications
-- update service principal properties.
-- zero trust
-- create user
-- entra
-- update group properties.
-- security
-- delete service principal
-- individual application management.
-- microsoft entra
-- service principal management.
-- delete an application registration.
-- create application
-- get application details.
-- individual group management.
-- get group details.
-- list all application registrations.
-- update application
-- get group
-- list all applications.
-- update user
-- list members of a group.
-- list group members
-- delete a user from the directory.
-- identity governance
-- delete user
-- update service principal.
+- remove a member from a group.
 - individual service principal management.
-- group management.
-- application registration management.
-- list all users in microsoft entra directory.
-- group membership management.
-- list group members.
-- list service principals
+- create application
+- individual group management.
+- update service principal.
 - list user group memberships.
+- list groups and roles a user belongs to.
+- delete application
+- microsoft
+- security
+- identity
+- remove group member
+- delete user
+- list groups
+- update group properties.
+- individual user management.
+- update service principal
+- service principal management.
+- user account management.
+- list service principals
+- list all service principals.
+- user group membership.
+- get application details.
+- get user properties by id.
+- update user
+- register a new application.
+- access management
+- identity governance
 - authentication
+- delete service principal
+- list group members.
+- application registration management.
+- update application properties.
+- get service principal
+- get user details.
+- group membership management.
+- list all users in microsoft entra directory.
+- zero trust
+- microsoft entra
+- delete a user from the directory.
+- delete group
+- update service principal properties.
+- create a new service principal.
+- directory management
+- list applications
+- entra
+- list group members
+- azure ad
+- group management.
+- list all groups in the directory.
+- list all applications.
+- list all users in the directory.
+- update group
+- list members of a group.
+- create a new group.
+- add group member
+- individual application management.
+- get service principal details.
+- network security
+- list users
+- delete an application registration.
+- create user
+- get application
+- delete a group.
+- get user
+- update application
+- add a member to a group.
+- list all application registrations.
+- list user memberships
+- create a new user.
+- get group details.
+- create a new user in the directory.
+- delete a service principal.
+- delete a user.
 - list all groups.
+- delete an application.
+- create service principal
+- get group
+- update user properties.
 slug: identity-and-access
 tags:
 - Microsoft Entra

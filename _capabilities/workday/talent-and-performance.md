@@ -27,59 +27,59 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- talent management
-- succession plans
-- performance
-- workday
-- recruiting list prospects
-- list requisitions
-- list feedback badges
-- performance give badge
-- recruiting get requisition
-- request feedback for a worker
-- list job requisitions
-- job requisitions
-- recruiting get application
-- get a job application by id
-- get a job requisition by id
-- get talent profile for a worker
-- talent get certifications
-- talent list succession plans
 - list all candidates
-- performance list badges
-- list reviews
-- list succession plans
-- list all job postings
-- hcm
-- recruiting
 - performance reviews
-- recruiting get candidate
-- cloud computing
-- saas
+- list all prospects
+- talent get certifications
+- list all job postings
+- list job requisitions
+- request feedback for a worker
+- list all job requisitions
+- talent list succession plans
+- talent get skills
+- list requisitions
+- list succession plans
+- hcm
+- talent list mentorships
+- list feedback badges
+- job requisitions
+- list reviews
+- recruiting list applications
+- recruiting
+- succession plans
+- candidates
+- workday
 - performance list reviews
-- recruiting list postings
-- recruiting list candidates
-- list candidates
+- list performance reviews
+- recruiting get application
+- recruiting get requisition
+- get a job application by id
+- get talent profile for a worker
+- recruiting get candidate
+- performance get goals
 - enterprise software
+- list mentorships
+- performance give badge
+- list candidates
 - financial management
+- recruiting list requisitions
+- talent get profile
 - get goals for a worker
 - performance request feedback
-- list performance reviews
-- list all job applications
-- give a feedback badge to a worker
-- get skills for a worker
-- list all prospects
-- performance get goals
-- recruiting list requisitions
-- get certifications for a worker
-- candidates
-- talent list mentorships
-- talent get profile
 - get a candidate by id
-- recruiting list applications
-- list all job requisitions
-- list mentorships
-- talent get skills
+- cloud computing
+- saas
+- talent management
+- recruiting list candidates
+- recruiting list prospects
+- get certifications for a worker
+- give a feedback badge to a worker
+- performance list badges
+- get a job requisition by id
+- list all job applications
+- recruiting list postings
+- get skills for a worker
+- performance
 slug: talent-and-performance
 tags:
 - Workday

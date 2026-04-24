@@ -13,18 +13,18 @@ personas: []
 provider_name: Amazon Shield
 provider_slug: amazon-shield
 search_terms:
-- cloud operations
-- aws
-- automation workflow for amazon shield
-- security
 - engineer managing amazon shield resources
-- list resources
-- networking
 - amazon shield resources
 - amazon shield
-- ddos protection
-- aws cloud resource management
 - list amazon shield resources
+- security
+- list resources
+- automation workflow for amazon shield
+- aws cloud resource management
+- cloud operations
+- networking
+- ddos protection
+- aws
 slug: amazon-shield
 tags:
 - Amazon Shield

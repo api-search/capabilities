@@ -38,44 +38,44 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - verify account eligibility for mastercard send
-- currency conversion rates
-- fraud detection
-- process direct transaction
-- get account info
-- mastercard
+- get account information for a send recipient
+- funding transactions
+- disbursement transactions
+- get currency conversion rate
+- validate account details before transfer
+- create a cross-border payment
 - create a funding transaction via mastercard send
+- p2p transfers
+- create a funding transaction
+- payments
 - create a person-to-person transfer
+- create disbursement
+- process direct transaction
+- digital identity
 - create a person-to-person money transfer
 - credit cards
-- cross-border payment processing
-- create disbursement
-- get currency conversion rate
-- process a direct service transaction
-- disbursements
-- financial services
-- create a cross-border payment
-- create a cross-border international payment
-- disbursement transactions
-- funding transactions
-- create cross border payment
+- create a disbursement
 - create a disbursement to send money to a recipient
-- get currency conversion rate for cross-border transactions
-- cross-border
+- validate account
+- fraud detection
+- cross-border payment processing
 - money transfer
+- get conversion rate
+- mastercard
+- get currency conversion rate for cross-border transactions
+- disbursements
+- create cross border payment
+- get account info
+- create a cross-border international payment
+- process a direct service transaction
+- create p2p transfer
+- financial services
+- currency conversion rates
+- cross-border
+- create funding
 - open banking
 - verify send account
-- get conversion rate
-- create a funding transaction
-- create funding
-- p2p transfers
-- create a disbursement
-- validate account
-- create p2p transfer
 - mastercard send
-- payments
-- validate account details before transfer
-- get account information for a send recipient
-- digital identity
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

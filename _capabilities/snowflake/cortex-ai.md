@@ -36,46 +36,46 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- ask a question about your data
-- generate verified query suggestions
-- list available cortex llm models
-- list available llm models
+- ai
 - natural language data analytics
-- cortex
-- run llm inference completion
 - complete
-- data warehousing
-- database
+- generate verified query suggestions
 - sql
-- query search
+- semantic search
+- send analyst message
+- query a cortex search service
 - list models
 - create a notebook
-- ai
-- list notebooks
-- query a search service
-- create notebook
-- snowflake
-- semantic search
+- llm inference
 - ask a question about your data using natural language
-- send analyst message
-- machine learning
-- available models
-- execute notebook
+- list available cortex llm models
+- create notebook
+- ask a question about your data
+- list notebooks
+- generate query suggestions
+- send analyst feedback
+- execute a notebook
 - data lakes
+- send feedback on an analyst response
 - list search services
 - list llm models
-- list cortex search services
-- send analyst feedback
-- ask analyst
-- send feedback on an analyst response
-- generate query suggestions
-- query a cortex search service
-- execute a notebook
-- llm inference
-- run llm completion
-- llm complete
-- notebook management
+- machine learning
+- snowflake
 - data sharing
+- query search
+- notebook management
+- ask analyst
+- list cortex search services
+- database
+- execute notebook
+- cortex
+- available models
+- list available llm models
+- query a search service
+- run llm completion
+- run llm inference completion
+- data warehousing
+- llm complete
 slug: cortex-ai
 tags:
 - Snowflake

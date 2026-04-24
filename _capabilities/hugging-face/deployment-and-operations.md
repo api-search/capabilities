@@ -58,59 +58,59 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- list endpoints
+- manage inference endpoints
 - create a new endpoint
 - pause a running endpoint
 - get information about the deployed model and tgi server.
-- list all endpoints
-- delete an endpoint
-- get endpoint metrics
 - get details of a specific endpoint.
-- list available cloud providers
-- update endpoint configuration
-- resume a paused endpoint.
-- deployment
-- get endpoint details
-- tgi server info
-- hugging face
-- get endpoint logs
-- check if the tgi server is healthy and responding.
-- get metrics
-- get info
+- delete an endpoint
 - get endpoint
-- create endpoint
-- tgi health check
-- pause a running endpoint to stop billing.
 - update an existing endpoint configuration.
-- operations
+- resume a paused endpoint.
+- update endpoint
 - get logs
-- resume endpoint
-- resume a paused endpoint
-- health check
-- get metrics for an endpoint.
-- get prometheus metrics from the tgi server.
-- delete a dedicated inference endpoint.
-- resume an endpoint
-- pause endpoint
-- get logs for an endpoint.
+- tgi server health
 - list providers
 - mlops
-- create a new dedicated inference endpoint.
-- manage inference endpoints
-- cloud providers
-- delete endpoint
-- scale an endpoint to zero replicas.
-- infrastructure
 - individual endpoint operations
-- list all dedicated inference endpoints for a namespace.
-- list available cloud providers and hardware options.
-- update endpoint
+- get metrics for an endpoint.
+- resume endpoint
+- get info
+- tgi server info
+- cloud providers
 - get tgi server info
-- pause an endpoint
+- list all dedicated inference endpoints for a namespace.
 - scale to zero
+- hugging face
+- get endpoint metrics
+- list available cloud providers and hardware options.
+- create a new dedicated inference endpoint.
+- pause a running endpoint to stop billing.
+- deployment
+- scale an endpoint to zero replicas.
+- tgi health check
+- get endpoint logs
+- update endpoint configuration
+- get metrics
+- list available cloud providers
+- delete endpoint
+- get prometheus metrics from the tgi server.
+- check if the tgi server is healthy and responding.
+- resume a paused endpoint
+- list endpoints
+- health check
+- resume an endpoint
+- delete a dedicated inference endpoint.
+- get logs for an endpoint.
 - tgi metrics
+- operations
+- get endpoint details
+- pause endpoint
+- list all endpoints
+- create endpoint
+- pause an endpoint
 - check tgi server health
-- tgi server health
+- infrastructure
 slug: deployment-and-operations
 tags:
 - Hugging Face

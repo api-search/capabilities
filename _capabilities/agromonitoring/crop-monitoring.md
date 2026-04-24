@@ -11,9 +11,9 @@ search_terms:
 - weather
 - satellite imagery
 - vegetation indices
-- agriculture
-- precision agriculture
 - remote sensing
+- precision agriculture
+- agriculture
 slug: crop-monitoring
 tags: []
 tools: []

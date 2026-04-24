@@ -25,43 +25,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- real-time analytics
-- stateful computing
-- manage and monitor flink streaming and batch jobs
-- list all taskmanagers in the flink cluster
-- Platform Operator
-- flink job management
-- job submission, tracking, and lifecycle management
-- taskmanager management
-- apache flink
-- list all taskmanagers
-- get performance metrics for a flink job
-- big data
-- get metrics for a flink job
-- list jobs
-- get job
-- list all flink streaming and batch jobs
-- metrics, checkpoints, and cluster health monitoring
-- engineers submitting and monitoring flink streaming and batch jobs
-- get details of a specific job
-- Data Engineer
-- monitoring
-- list flink jobs
-- list all flink jobs
-- job performance metrics
-- stream processing
-- data engineering
-- get flink job
-- get job metrics
-- apache
-- batch processing
 - shut down the flink cluster
-- shutdown cluster
-- open source
-- operators managing the flink cluster and ensuring job reliability
+- flink job management
+- list flink jobs
+- monitoring
+- list all flink jobs
+- list all taskmanagers
+- batch processing
+- get job
+- stream processing
 - list taskmanagers
+- get job metrics
+- get performance metrics for a flink job
+- metrics, checkpoints, and cluster health monitoring
+- apache
+- list jobs
+- open source
+- engineers submitting and monitoring flink streaming and batch jobs
+- data engineering
+- list all flink streaming and batch jobs
+- job performance metrics
+- manage and monitor flink streaming and batch jobs
+- Data Engineer
+- Platform Operator
+- get metrics for a flink job
+- get details of a specific job
+- get flink job
+- operators managing the flink cluster and ensuring job reliability
 - get detailed status and information for a specific flink job
+- stateful computing
+- taskmanager management
+- big data
 - job management
+- job submission, tracking, and lifecycle management
+- real-time analytics
+- shutdown cluster
+- list all taskmanagers in the flink cluster
+- apache flink
 slug: flink-job-management
 tags:
 - Apache Flink

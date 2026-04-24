@@ -17,31 +17,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- e-commerce
 - apple
-- validates merchant and obtains apple pay payment session
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- apple pay
-- developer integrating apple pay into a web or mobile checkout experience
-- apple pay merchant validation and payment session
-- mobile payments
-- Payment Integration Engineer
-- E Commerce Developer
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- engineer building payment processing infrastructure supporting multiple payment methods
-- digital wallet
-- contactless payments
-- validate apple pay merchant
-- validate merchant
-- register apple pay domain
 - register domain
-- registers a merchant domain to accept apple pay on the web payments
 - payments
+- validate apple pay merchant
+- e-commerce
+- apple pay merchant validation and payment session
+- registers a merchant domain to accept apple pay on the web payments
 - merchant domain management for apple pay
-- register a domain for apple pay on the web
-- initiating and completing apple pay payment authorizations
+- validates merchant and obtains apple pay payment session
 - checkout
+- engineer building payment processing infrastructure supporting multiple payment methods
+- apple pay
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- digital wallet
+- E Commerce Developer
+- validate merchant
+- register a domain for apple pay on the web
+- register apple pay domain
+- contactless payments
+- developer integrating apple pay into a web or mobile checkout experience
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- Payment Integration Engineer
 - registering and managing merchant identity and domains for apple pay
+- initiating and completing apple pay payment authorizations
+- mobile payments
 slug: payment-processing
 tags:
 - Apple Pay

@@ -49,76 +49,76 @@ personas: []
 provider_name: Abortion Policy API
 provider_slug: abortion-policy-api
 search_terms:
-- get waiting periods by state
-- developers building conversational tools that answer abortion policy questions
+- waiting period restrictions for a state.
+- all abortion policies for a specific state.
+- abortion
+- get gestational limits by state
+- get gestational limits for a state.
+- get insurance coverage for a state.
+- minors abortion restrictions for a state.
+- get minors by state
+- all abortion policies for a specific zip code.
+- look up abortion insurance coverage restrictions for a specific us state.
+- lookup waiting periods
+- patient advocacy
 - look up abortion gestational limit policy for a specific zip code.
-- list abortion gestational limit policies for all us states.
-- get gestational limits by zip
-- get waiting periods all states
-- get minors all states
-- get gestational limits all states
-- list all insurance coverage
-- government
-- look up abortion restrictions for minors in a specific us state.
-- look up abortion gestational limit policy for a specific us state or zip code.
-- policies
-- government data
-- list abortion restrictions for minors across all us states.
 - insurance coverage restrictions for all states.
-- lookup waiting periods zip
+- list all insurance coverage
+- get minors all states
+- get minors restrictions for a state.
+- get gestational limits by zip
+- list abortion waiting period restrictions across all us states.
+- government
+- lookup gestational limits zip
+- get insurance coverage for all states.
+- gestational limit policy for a state.
+- get waiting periods for all states.
+- get insurance coverage all states
+- look up abortion waiting period requirements for a specific us state.
+- lookup minors restrictions
+- look up abortion waiting period requirements for a specific zip code.
+- get waiting periods all states
+- waiting period restrictions for all states.
+- Healthcare Provider
+- list abortion restrictions for minors across all us states.
+- advocates helping patients understand abortion access options in their state
 - look up abortion insurance coverage restrictions for a specific zip code.
 - get gestational limit policy for a state.
-- get gestational limit policy for a zip code.
 - list all waiting periods
-- gestational limit policy for a state.
-- us state laws governing abortion access including gestational limits, insurance, minors, and waiting periods
-- get insurance coverage all states
-- list abortion insurance coverage restrictions for all us states.
-- Healthcare Provider
+- government data
 - gestational limit policies for all states.
-- insurance coverage restrictions for a state.
-- look up abortion insurance coverage restrictions for a specific us state.
-- Patient Advocate
-- lookup insurance coverage
-- get minors by state
-- abortion policy
-- all abortion policies for a specific state.
-- patient advocacy
-- Legal Aid
-- list all gestational limits
-- get gestational limits for all states.
-- look up abortion waiting period requirements for a specific us state.
-- get waiting periods for all states.
-- get minors restrictions for a state.
-- minors restrictions for all states.
-- list abortion waiting period restrictions across all us states.
-- medical providers advising patients on state-specific abortion access restrictions
-- get minors restrictions for all states.
-- look up abortion restrictions for minors in a specific zip code.
-- lookup waiting periods
-- unified workflow for looking up us state abortion policies across all four data tables
-- lookup gestational limits
-- get insurance coverage for a state.
-- advocates helping patients understand abortion access options in their state
+- list abortion gestational limit policies for all us states.
+- lookup waiting periods zip
 - legal aid organizations advising clients on state abortion law
-- all abortion policies for a specific zip code.
-- get insurance coverage for all states.
-- healthcare
-- lookup insurance coverage zip
-- waiting period restrictions for a state.
-- lookup minors restrictions
-- lookup gestational limits zip
-- list all minors restrictions
-- get waiting periods for a state.
-- get gestational limits by state
+- list all gestational limits
+- insurance coverage restrictions for a state.
 - lookup minors restrictions zip
-- minors abortion restrictions for a state.
-- Chatbot Developer
-- abortion
-- waiting period restrictions for all states.
+- list all minors restrictions
+- look up abortion restrictions for minors in a specific zip code.
+- healthcare
 - get insurance coverage by state
-- get gestational limits for a state.
-- look up abortion waiting period requirements for a specific zip code.
+- get gestational limits for all states.
+- lookup gestational limits
+- lookup insurance coverage zip
+- us state laws governing abortion access including gestational limits, insurance, minors, and waiting periods
+- policies
+- abortion policy
+- list abortion insurance coverage restrictions for all us states.
+- get gestational limits all states
+- look up abortion restrictions for minors in a specific us state.
+- Legal Aid
+- unified workflow for looking up us state abortion policies across all four data tables
+- medical providers advising patients on state-specific abortion access restrictions
+- get gestational limit policy for a zip code.
+- minors restrictions for all states.
+- get minors restrictions for all states.
+- look up abortion gestational limit policy for a specific us state or zip code.
+- Chatbot Developer
+- Patient Advocate
+- developers building conversational tools that answer abortion policy questions
+- get waiting periods by state
+- get waiting periods for a state.
+- lookup insurance coverage
 slug: abortion-policy-lookup
 tags:
 - Abortion Policy

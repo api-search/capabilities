@@ -44,47 +44,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- voice portal
-- individual call details
-- list cdrs
-- list active sessions
-- list deployed applications
-- get call server health
-- list vxml applications
-- list sessions
-- get call details
-- get real-time call statistics
-- list call detail records
-- list applications
-- list deployed vxml applications
-- get statistics
-- list managed devices
-- voice
-- ivr
 - list active calls
-- check cvp call server health status
-- vxml
-- get health
-- vxml session monitoring
 - application management
-- list deployed cvp applications
-- device management
-- list active vxml sessions
-- system health
-- list managed cvp devices
-- list dialed number patterns
-- list call detail records from the reporting server
-- get details of a specific active call
-- active call management
-- list devices
-- list all active calls on the cvp call server
-- get call
-- cisco
 - call detail records
-- contact center
-- list configured dialed number patterns
-- real-time statistics
+- get call
+- device management
+- vxml
+- get details of a specific active call
+- list vxml applications
+- list cdrs
+- get real-time call statistics
+- list all active calls on the cvp call server
+- list dialed number patterns
+- get call details
+- active call management
+- list applications
+- list sessions
 - telephony
+- vxml session monitoring
+- contact center
+- real-time statistics
+- system health
+- list devices
+- list managed devices
+- list call detail records
+- voice portal
+- list deployed applications
+- individual call details
+- list call detail records from the reporting server
+- get health
+- get call server health
+- list configured dialed number patterns
+- ivr
+- cisco
+- get statistics
+- list managed cvp devices
+- check cvp call server health status
+- list deployed vxml applications
+- voice
+- list deployed cvp applications
+- list active sessions
+- list active vxml sessions
 slug: contact-center-operations
 tags:
 - Cisco

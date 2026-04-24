@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- travel
-- complete flight shopping flow from search through price confirmation.
-- price confirmation and validation before booking.
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- upsell, seat selection, and add-on services.
-- search available flights by origin, destination, and date.
-- airlines
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- confirm flight price
-- confirm current price and availability.
-- flights
-- pricing
-- booking
-- developer building online travel agency flight search and booking flows.
-- confirm price
-- search for available flight offers.
-- developer building conversational travel assistants for flight search.
-- travel technology
-- confirm pricing for a selected flight offer.
-- search flights
-- amadeus
-- hotels
 - search
 - flight offer discovery and comparison.
+- hotels
+- search flights
+- flights
+- gds
+- pricing
+- OTA Developer
+- upsell, seat selection, and add-on services.
+- shopping
+- developer building online travel agency flight search and booking flows.
+- confirm pricing for a selected flight offer.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- booking
+- complete flight shopping flow from search through price confirmation.
+- price confirmation and validation before booking.
+- airlines
+- confirm current price and availability.
+- Travel Chatbot Developer
+- confirm flight price
+- travel
+- search for available flight offers.
 - advanced flight search with complex criteria using request body for multi-city and detailed filters.
 - search flights advanced
-- gds
-- Travel Chatbot Developer
-- OTA Developer
-- shopping
+- search available flights by origin, destination, and date.
+- developer building conversational travel assistants for flight search.
+- confirm price
+- travel technology
+- amadeus
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
 slug: flight-shopping
 tags:
 - Amadeus

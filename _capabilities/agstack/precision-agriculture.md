@@ -8,12 +8,12 @@ personas: []
 provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
-- geospatial
-- linux foundation
-- agriculture
 - linked data
-- precision agriculture
 - open source
+- linux foundation
+- geospatial
+- precision agriculture
+- agriculture
 slug: precision-agriculture
 tags: []
 tools: []

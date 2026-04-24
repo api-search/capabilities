@@ -41,55 +41,55 @@ personas: []
 provider_name: Amazon SageMaker
 provider_slug: amazon-sagemaker
 search_terms:
-- list endpoints
-- operational management of ml pipelines, monitoring, and model governance
-- deploy a model to a sagemaker inference endpoint
-- trained model artifact management
-- register a trained model in sagemaker
-- list all sagemaker notebook instances
-- list models
 - ai
-- create model
-- feature creation, storage, and retrieval for ml models
-- list notebooks
-- create notebook
-- submit a new model training job
-- create notebook instance
-- describe training job
-- get details about a specific sagemaker training job
-- machine learning
-- jupyter notebook instance management for ml development
 - list training jobs
-- end-to-end ml lifecycle from notebook development through training, model registration, and endpoint deployment
-- list sagemaker jupyter notebook instances for ml development
-- scientists who explore data and experiment with ml models using notebooks and experiments
-- model training job management
-- Data Scientist
-- list all sagemaker inference endpoints
-- list notebook instances
-- list active sagemaker inference endpoints
-- register model
-- mlops
+- get the status and details of a sagemaker inference endpoint
+- create model
 - model inference endpoint management
-- training
 - create a sagemaker jupyter notebook instance
-- register a trained model for deployment
+- Data Scientist
+- core ml activities including model development, training, and inference
+- list all sagemaker training jobs
+- list models
+- jupyter notebook instance management for ml development
+- create notebook instance
 - create training job
-- list sagemaker model training jobs
-- aws
+- mlops
+- list all sagemaker notebook instances
+- inference
+- list sagemaker jupyter notebook instances for ml development
+- amazon sagemaker
+- scientists who explore data and experiment with ml models using notebooks and experiments
+- deploy endpoint
+- create notebook
+- register model
+- list notebooks
+- training
+- list all sagemaker inference endpoints
 - ML Engineer
 - create a sagemaker notebook instance for ml development
-- amazon sagemaker
-- inference
-- list all registered sagemaker models
-- deploy endpoint
-- get the status and details of a sagemaker inference endpoint
-- describe endpoint
-- engineers who build, train, and deploy machine learning models at scale
-- list all sagemaker training jobs
-- core ml activities including model development, training, and inference
-- submit a sagemaker model training job
+- machine learning
 - list registered sagemaker ml models
+- model training job management
+- submit a new model training job
+- deploy a model to a sagemaker inference endpoint
+- list active sagemaker inference endpoints
+- trained model artifact management
+- register a trained model for deployment
+- feature creation, storage, and retrieval for ml models
+- aws
+- describe endpoint
+- list endpoints
+- describe training job
+- engineers who build, train, and deploy machine learning models at scale
+- register a trained model in sagemaker
+- list sagemaker model training jobs
+- operational management of ml pipelines, monitoring, and model governance
+- submit a sagemaker model training job
+- end-to-end ml lifecycle from notebook development through training, model registration, and endpoint deployment
+- get details about a specific sagemaker training job
+- list notebook instances
+- list all registered sagemaker models
 slug: ml-lifecycle-management
 tags:
 - Amazon SageMaker

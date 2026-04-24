@@ -25,42 +25,42 @@ personas: []
 provider_name: Amazon Redshift
 provider_slug: amazon-redshift
 search_terms:
-- cancel statement
-- get statement result
-- batch execute statement
-- retrieve results from a completed sql statement
-- cancel a running sql statement
+- list tables in a schema
 - sql
-- analytics
 - list statements
-- describe statement
-- list databases in a redshift cluster or workgroup
-- list schemas in a database
-- machine learning
 - sql statement execution
+- batch execute statement
+- serverless
+- data warehouse
 - list sql statement executions
-- list databases
+- cloud
+- analytics
+- execute a sql statement
 - execute multiple sql statements in a batch transaction
-- list sql statements
 - data lake
 - table metadata
-- get details about a sql statement execution
-- big data
-- list tables
-- execute a sql statement asynchronously against redshift
-- execute a sql statement
-- serverless
-- amazon
-- database metadata
-- describe table
+- cancel statement
 - etl
-- cloud
+- execute a sql statement asynchronously against redshift
+- describe table
+- list databases
+- list databases in a redshift cluster or workgroup
+- machine learning
+- cancel a running sql statement
 - aws
-- list tables in a schema
-- describe the columns of a table
-- data warehouse
 - list schemas
+- get statement result
+- database metadata
+- amazon
+- describe the columns of a table
+- list tables
+- retrieve results from a completed sql statement
+- big data
+- list schemas in a database
+- get details about a sql statement execution
+- list sql statements
 - execute statement
+- describe statement
 slug: data-warehouse-analytics
 tags:
 - Amazon

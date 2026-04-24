@@ -35,43 +35,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- geocode an address to coordinates or reverse geocode coordinates to an address
-- place autocomplete predictions
-- environment
-- geocode
-- autocomplete places
-- google maps
-- get detailed information about a place including address, rating, hours, and reviews
-- directions
-- text-based place search
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- get detailed information about a place
+- routing
 - search for places using a text query
 - solar
-- get directions
-- location
-- geolocation
-- search for places using a natural language text query like 'pizza in new york'
-- place details retrieval
-- location-based place search
-- get directions between two or more locations
-- search for places near a specific location with type filters
-- geocode an address or reverse geocode coordinates
 - get place details
-- search places text
-- geocoding
-- get place photo
-- address to coordinate conversion and reverse geocoding
-- search places nearby
-- route computation between locations
-- search for places near a location
-- get place autocomplete predictions as the user types
-- navigation
-- get a photo for a place by place id and photo reference
-- routing
-- places
+- geocode an address to coordinates or reverse geocode coordinates to an address
+- get directions between two or more locations
+- geocode
+- google maps
+- location-based place search
+- environment
+- place details retrieval
+- text-based place search
+- directions
 - maps
+- get directions
+- geolocation
+- search for places near a specific location with type filters
+- location
 - get place predictions for input text
-- get detailed information about a place
+- places
+- geocode an address or reverse geocode coordinates
+- address to coordinate conversion and reverse geocoding
+- search places text
+- search for places using a natural language text query like 'pizza in new york'
+- navigation
+- get place photo
+- get detailed information about a place including address, rating, hours, and reviews
+- search places nearby
+- get place autocomplete predictions as the user types
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- geocoding
+- place autocomplete predictions
+- search for places near a location
+- get a photo for a place by place id and photo reference
+- route computation between locations
+- autocomplete places
 slug: location-intelligence
 tags:
 - Google Maps
