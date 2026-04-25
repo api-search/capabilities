@@ -8,12 +8,12 @@ personas: []
 provider_name: Agromonitoring
 provider_slug: agromonitoring
 search_terms:
-- satellite imagery
 - agriculture
-- precision agriculture
 - remote sensing
-- vegetation indices
 - weather
+- satellite imagery
+- precision agriculture
+- vegetation indices
 slug: crop-monitoring
 tags: []
 tools: []

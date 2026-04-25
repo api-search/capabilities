@@ -17,31 +17,31 @@ provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
 - hadoop
-- builds etl pipelines using pig latin scripts
-- apache pig
-- get job logs
-- get job
-- get status and details of a pig job
-- list jobs
-- get execution logs for a pig job
-- submit pig script
-- kill a running pig job
-- validate a pig latin script for syntax errors
-- etl
-- runs ad-hoc data analysis jobs on hadoop clusters
-- list all pig data processing jobs
-- validate script
-- big data
-- submit job
-- Data Analyst
 - scripting
-- submit a pig latin script for execution
+- kill a running pig job
 - list pig jobs
-- apache
 - Data Engineer
+- get job
+- list all pig data processing jobs
+- submit pig script
+- list jobs
+- validate a pig latin script for syntax errors
+- big data
+- apache
+- apache pig
+- get status and details of a pig job
 - data analysis
+- validate script
+- builds etl pipelines using pig latin scripts
+- get job logs
+- get execution logs for a pig job
+- Data Analyst
+- runs ad-hoc data analysis jobs on hadoop clusters
+- etl
 - open source
+- submit a pig latin script for execution
 - kill job
+- submit job
 slug: pig-workflow
 tags:
 - Apache Pig

@@ -21,36 +21,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- manage incident response plans
-- manage active incidents
-- update the summary or status of an active incident
-- create response plan
-- list timeline events for an incident
-- automated incident response plans and escalation
 - list timeline events
-- get incident
+- automated incident response plans and escalation
 - Site Reliability Engineer
-- automation
-- list active and recent incidents
-- aws
-- operations
-- devops
 - list response plans
-- create incident
-- manages incident response plans and responds to operational incidents
-- list all response plans
-- get details of a specific incident
+- automation
 - create a new incident response plan with escalation contacts
-- update incident
-- monitors system reliability and coordinates incident resolution
-- list incidents
-- creating, tracking, and resolving operational incidents
-- Operations Engineer
-- incident management
-- list all incident response plans
+- manages incident response plans and responds to operational incidents
+- get details of a specific incident
 - start a new incident and trigger response plan
+- devops
+- incident management
+- operations
+- monitors system reliability and coordinates incident resolution
 - list active incidents
+- update incident
+- list all incident response plans
+- Operations Engineer
+- create response plan
+- get incident
+- create incident
+- aws
+- manage incident response plans
+- creating, tracking, and resolving operational incidents
+- list active and recent incidents
+- list incidents
+- manage active incidents
 - create a new incident
+- list timeline events for an incident
+- list all response plans
+- update the summary or status of an active incident
 slug: incident-response
 tags:
 - AWS

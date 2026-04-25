@@ -9,23 +9,23 @@ personas: []
 provider_name: AWS Lake Formation
 provider_slug: amazon-lakeformation
 search_terms:
-- governance
-- databases list databases
-- lists all the registered databases in the data catalog.
-- databases create database
-- data lake
 - workflow
+- creates a new database in the data catalog.
+- aws lake formation
+- retrieves the definition of a specified database.
+- databases get database
+- databases list databases
+- analytics
 - Administrator
 - aws
-- unified workflow for aws lake formation resource management
+- data lake
+- governance
 - integrates api into applications
-- databases get database
-- creates a new database in the data catalog.
-- retrieves the definition of a specified database.
-- Developer
+- unified workflow for aws lake formation resource management
 - manages resources and configurations
-- analytics
-- aws lake formation
+- lists all the registered databases in the data catalog.
+- databases create database
+- Developer
 slug: amazon-lakeformation-workflow
 tags:
 - AWS Lake Formation

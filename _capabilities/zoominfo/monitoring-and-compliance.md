@@ -41,47 +41,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get subscription types
-- create a new webhook subscription.
-- create a new webhook subscription for data change notifications.
-- b2b
-- list all webhook subscriptions.
-- update an existing webhook subscription.
-- webhook target url validation.
-- update webhook
-- check compliance status for specified contacts.
 - b2b data
-- lead generation
-- sales intelligence
-- contact database
-- create webhook
-- get usage
-- api usage tracking.
-- marketing intelligence
-- api usage
-- list webhooks
-- list all configured webhook subscriptions.
-- check data compliance status for specified contacts.
-- monitoring
-- validate a webhook target url.
-- get available webhook subscription types.
-- contacts
-- data compliance operations.
-- webhook subscription management.
-- delete webhook
-- get api usage data.
-- validate target url
-- individual webhook management.
-- check compliance
-- company data
-- webhooks
+- update an existing webhook subscription.
+- check compliance status for specified contacts.
 - available webhook subscription types.
-- zoominfo
-- validate a webhook target url is reachable.
 - data
+- individual webhook management.
+- validate target url
+- create a new webhook subscription for data change notifications.
+- zoominfo
+- api usage
+- contacts
+- lead generation
+- contact database
+- monitoring
+- get subscription types
+- api usage tracking.
+- validate a webhook target url is reachable.
+- create webhook
+- sales intelligence
 - compliance
-- get api usage data and consumption metrics.
+- get available webhook subscription types.
+- get usage
+- webhook subscription management.
+- list all webhook subscriptions.
+- company data
+- b2b
+- get api usage data.
 - delete a webhook subscription.
+- list webhooks
+- create a new webhook subscription.
+- check data compliance status for specified contacts.
+- update webhook
+- list all configured webhook subscriptions.
+- webhook target url validation.
+- validate a webhook target url.
+- check compliance
+- delete webhook
+- get api usage data and consumption metrics.
+- webhooks
+- marketing intelligence
+- data compliance operations.
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

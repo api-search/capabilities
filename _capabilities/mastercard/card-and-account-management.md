@@ -33,46 +33,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- lookup bin
-- request updated card credentials
-- account management
-- fraud detection
-- retrieve account catalog data
-- create fulfillment order
-- get payment account reference
+- credit cards
+- digital identity
+- open banking
 - issue card
-- automatic billing updates
-- card issuance and management
-- payments
-- look up bin information for a card
+- account management
 - issuers
+- get billing updates
 - get card details
-- manage a payment account
+- lookup bin
+- manage a payment account lifecycle
+- submit pan event
+- retrieve account catalog data
+- get account catalog
+- request updated card credentials
+- validate account
 - issue a new mastercard card
 - payment account management
-- digital identity
-- submit pan-related event for account level management
-- manage payment account
-- validate account
-- credit cards
-- manage account
-- request updated card credentials for card-on-file
-- mastercard
-- look up bin information
-- query payment account reference to link tokens to accounts
-- manage a payment account lifecycle
-- list available mastercard bins
 - financial services
-- issue a new card
-- bin lookup
-- get account catalog
-- validate account details
-- open banking
-- card management
-- create a physical card fulfillment order
+- mastercard
 - list bins
-- submit pan event
-- get billing updates
+- automatic billing updates
+- validate account details
+- request updated card credentials for card-on-file
+- manage payment account
+- payments
+- get payment account reference
+- create fulfillment order
+- look up bin information
+- fraud detection
+- list available mastercard bins
+- card issuance and management
+- look up bin information for a card
+- submit pan-related event for account level management
+- bin lookup
+- issue a new card
+- manage a payment account
+- create a physical card fulfillment order
+- card management
+- manage account
+- query payment account reference to link tokens to accounts
 slug: card-and-account-management
 tags:
 - Mastercard

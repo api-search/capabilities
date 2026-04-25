@@ -9,11 +9,11 @@ provider_name: Amazon DataZone
 provider_slug: amazon-datazone
 search_terms:
 - data sharing
-- aws
-- data governance
-- data management
 - analytics
 - data catalog
+- aws
+- data management
+- data governance
 slug: data-catalog-operations
 tags: []
 tools: []

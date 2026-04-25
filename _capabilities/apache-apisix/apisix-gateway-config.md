@@ -33,43 +33,43 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- Platform Engineer
-- delete route
-- lua
-- API Gateway Administrator
-- api gateway
-- update an existing apisix route.
-- list routes
-- create a new api consumer with authentication plugins.
-- list all api consumers and their plugin configs.
-- route, upstream, consumer, and ssl management workflow.
-- cloud native
-- list upstreams
-- apache apisix
-- administrators configuring routes, consumers, and security policies.
-- list all apisix gateway routes.
-- create a new backend upstream with load balancing config.
-- create upstream
-- traffic management
-- create a backend upstream.
 - engineers deploying and managing api gateway infrastructure.
-- configuration
-- create a new gateway route.
-- open source
-- create consumer
-- update route
-- kubernetes
-- list all gateway routes.
-- apache
-- list backend upstreams.
-- create an api consumer.
 - delete an apisix route.
-- list api consumers.
-- authentication
-- create a new apisix route for traffic routing.
-- nginx
-- list consumers
+- list all gateway routes.
+- list all api consumers and their plugin configs.
 - create route
+- route, upstream, consumer, and ssl management workflow.
+- administrators configuring routes, consumers, and security policies.
+- traffic management
+- create a new api consumer with authentication plugins.
+- authentication
+- create a new gateway route.
+- list all apisix gateway routes.
+- create a new apisix route for traffic routing.
+- Platform Engineer
+- create a backend upstream.
+- API Gateway Administrator
+- list consumers
+- apache apisix
+- apache
+- configuration
+- update route
+- api gateway
+- create an api consumer.
+- list api consumers.
+- list backend upstreams.
+- create upstream
+- create consumer
+- update an existing apisix route.
+- kubernetes
+- list routes
+- lua
+- cloud native
+- open source
+- list upstreams
+- delete route
+- nginx
+- create a new backend upstream with load balancing config.
 - list all backend upstream configurations.
 slug: apisix-gateway-config
 tags:

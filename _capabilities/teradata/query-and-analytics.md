@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- create a new query session on a vantage system.
-- Platform Administrator
-- analytics
-- manage querygrid data fabric infrastructure.
-- database
-- get query status
-- create session
-- enterprise
-- query
-- execute query
-- executes queries and analyzes data across vantage systems.
-- health monitoring and issue detection.
-- machine learning
-- list query systems
-- cloud
-- manages data fabric infrastructure and cross-system connectivity.
-- teradata
-- create a query session.
-- sql query execution and session management.
-- sql queries.
-- execute sql queries and analytics.
-- data management
-- execute a sql query against teradata vantage.
-- list available vantage systems.
-- get the status and results of a submitted query.
-- Data Analyst
-- administers querygrid systems, nodes, and software.
 - available systems.
-- data warehousing
+- executes queries and analyzes data across vantage systems.
+- analytics
+- sql queries.
+- Data Engineer
+- administers querygrid systems, nodes, and software.
+- data management
+- execute a sql query.
+- health monitoring and issue detection.
 - query sessions.
-- system and fabric configuration management.
+- manage querygrid data fabric infrastructure.
+- manages data fabric infrastructure and cross-system connectivity.
+- get query status
+- list query systems
+- execute a sql query against teradata vantage.
+- enterprise
+- database
+- query
+- list available vantage systems.
+- machine learning
+- execute sql queries and analytics.
+- create session
 - sql
 - list available vantage systems for query execution.
-- list querygrid queries
-- Data Engineer
-- integrates applications with teradata via rest apis.
-- Application Developer
 - list cross-system query summaries from querygrid.
-- execute a sql query.
+- integrates applications with teradata via rest apis.
+- sql query execution and session management.
+- Platform Administrator
+- Application Developer
+- list querygrid queries
+- Data Analyst
+- create a query session.
+- system and fabric configuration management.
+- data warehousing
+- execute query
+- teradata
+- create a new query session on a vantage system.
+- cloud
+- get the status and results of a submitted query.
 slug: query-and-analytics
 tags:
 - Teradata

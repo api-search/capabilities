@@ -38,54 +38,54 @@ personas: []
 provider_name: Amazon Cognito
 provider_slug: aws-cognito
 search_terms:
-- describe user pool
-- federated identity pool management
-- oidc
-- oauth2
-- get configuration details of a cognito user pool
-- user account management
-- user pool lifecycle management
-- list user groups
-- manage cognito user pools, users, groups, and federated identity pools
-- configures cognito user pools and app clients for application authentication
-- authorization
-- identity management
-- list identity pools
-- identity provider
-- amazon cognito
-- list all federated identity pools
-- list groups
-- identity
-- create a new user account in a cognito user pool
-- creating and configuring user pools with authentication flows and policies
-- user group management
-- aws
-- list all cognito user pools in the account
-- user management
-- list users
-- get user
-- create a user in a user pool
-- list user pools
 - manages cognito user pools, federation, and access control policies
-- create a new cognito user pool for authentication
-- list user groups in a cognito user pool
-- get details of a specific user in a cognito user pool
-- managing user accounts, groups, and access within user pools
-- create a new user pool
-- get details of a federated identity pool
-- create user pool
-- create a federated identity pool for credential vending
-- create identity pool
-- list all user pools
-- managing federated identities and temporary aws credential vending
-- Identity Engineer
-- create a federated identity pool
-- Application Developer
-- authentication
-- list users in a cognito user pool
-- describe identity pool
-- list users in a user pool
+- creating and configuring user pools with authentication flows and policies
 - create user
+- describe user pool
+- list all cognito user pools in the account
+- amazon cognito
+- managing federated identities and temporary aws credential vending
+- create identity pool
+- list user groups
+- get configuration details of a cognito user pool
+- configures cognito user pools and app clients for application authentication
+- oidc
+- authentication
+- oauth2
+- user group management
+- create a new cognito user pool for authentication
+- list identity pools
+- manage cognito user pools, users, groups, and federated identity pools
+- user management
+- authorization
+- list users in a user pool
+- managing user accounts, groups, and access within user pools
+- get details of a specific user in a cognito user pool
+- Identity Engineer
+- list user pools
+- identity management
+- create a federated identity pool
+- list user groups in a cognito user pool
+- user pool lifecycle management
+- get user
+- Application Developer
+- identity
+- identity provider
+- describe identity pool
+- create a user in a user pool
+- user account management
+- list groups
+- create a new user pool
+- create user pool
+- list all federated identity pools
+- aws
+- list users
+- federated identity pool management
+- create a new user account in a cognito user pool
+- list users in a cognito user pool
+- get details of a federated identity pool
+- create a federated identity pool for credential vending
+- list all user pools
 slug: identity-management-workflow
 tags:
 - Amazon Cognito

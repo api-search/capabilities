@@ -41,79 +41,79 @@ personas: []
 provider_name: Microsoft Office 365
 provider_slug: microsoft-office-365
 search_terms:
-- remove group member
-- update event
-- remove a member from a group.
-- add group member
-- delete a message.
-- list mail folders.
-- get group
+- update user properties.
+- list events.
+- get a specific user.
+- list events
+- get signed in user
+- decline a meeting invitation.
 - add a member to a group.
+- list groups.
+- delete event
+- decline event
+- remove group member
+- get the signed-in user profile.
+- collaboration
+- create user
+- list messages.
+- list users.
+- mail management.
+- create an event.
+- create a calendar event.
+- create group
+- calendar management.
+- delete a calendar event.
+- office 365
+- user management.
+- delete a group.
+- group management.
+- enterprise
+- create event
+- get a specific message.
+- accept a meeting invitation.
+- productivity
+- update a calendar event.
+- create a new user.
+- list group members
 - list mail folders
 - list users in the organization.
-- list messages.
-- delete user
-- list members of a group.
-- enterprise
-- delete group
-- create a group.
-- create a user.
-- accept a meeting invitation.
-- get a specific message.
-- create event
-- list groups
-- update a calendar event.
-- delete a calendar event.
-- send mail.
-- group management.
-- update user properties.
-- productivity
-- microsoft
-- delete event
-- decline a meeting invitation.
-- accept event
-- collaboration
-- list calendars.
-- office 365
-- get signed in user
-- get a specific group.
-- list mail messages.
-- list users
-- get user
-- cloud
-- delete a group.
-- delete a user.
-- calendar management.
-- send mail
-- create a new group.
+- delete a message.
 - get a specific event.
-- get a specific user.
+- list calendars.
+- list mail folders.
+- update event
+- add group member
 - update user
-- create message
-- list calendars
-- get the signed-in user profile.
-- create a draft message.
-- create an event.
-- list events.
-- list group members
-- user management.
-- get message
-- decline event
-- list calendar events.
-- list events
-- list groups.
-- create a calendar event.
-- create a new user.
-- get calendar view
-- send an email message.
-- mail management.
-- list messages
-- list users.
-- get event
-- create group
-- get calendar view for a date range.
+- remove a member from a group.
+- create a new group.
+- send mail.
+- get user
 - delete message
-- create user
+- get calendar view
+- delete user
+- get group
+- accept event
+- get message
+- create a draft message.
+- get event
+- send mail
+- list mail messages.
+- list calendars
+- get a specific group.
+- list groups
+- get calendar view for a date range.
+- delete a user.
+- create message
+- list calendar events.
+- list users
+- microsoft
+- list members of a group.
+- cloud
+- create a user.
+- send an email message.
+- create a group.
+- list messages
+- delete group
 slug: productivity-and-collaboration
 tags:
 - Microsoft

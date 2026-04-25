@@ -9,37 +9,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- bankruptcywatch
-- compliance
-- bankruptcy case research, claims management, and automated monitoring
-- get case docket
-- list all active bankruptcy monitoring alerts
-- search for bankruptcy cases across all us bankruptcy court districts
-- create a bankruptcy monitoring alert for a debtor or entity
-- us bankruptcy court cases and proceedings
-- Creditor
+- list monitors
 - list claims register for a bankruptcy case
+- attorney managing creditor representation in bankruptcy proceedings
+- lending
+- bankruptcywatch
 - create bankruptcy monitor
-- file proof of claim
-- search bankruptcy cases
+- bankruptcy
+- bankruptcy case research, claims management, and automated monitoring
+- court data
+- create a bankruptcy monitoring alert for a debtor or entity
 - retrieve docket entries for a bankruptcy case
+- business or individual owed money by a bankruptcy filer
+- legal
 - file a proof of claim for a bankruptcy case
+- us bankruptcy court cases and proceedings
+- get case docket
+- file proof of claim
 - get bankruptcy case
+- automated alerts for bankruptcy filings
+- pacer
+- compliance
+- list all active bankruptcy monitoring alerts
+- Creditor
+- Bankruptcy Attorney
+- search for bankruptcy cases across all us bankruptcy court districts
+- creditor
 - Loan Officer
 - list case claims
-- pacer
-- lending
-- attorney managing creditor representation in bankruptcy proceedings
-- bankruptcy
-- creditor
-- business or individual owed money by a bankruptcy filer
-- lender monitoring borrowers for bankruptcy filings
-- automated alerts for bankruptcy filings
-- list monitors
-- Bankruptcy Attorney
-- court data
+- search bankruptcy cases
 - get detailed information about a specific bankruptcy case
-- legal
+- lender monitoring borrowers for bankruptcy filings
 slug: bankruptcy-monitoring
 tags:
 - BankruptcyWatch

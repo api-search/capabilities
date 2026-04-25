@@ -13,19 +13,19 @@ personas: []
 provider_name: Amazon App Mesh
 provider_slug: amazon-app-mesh
 search_terms:
-- Platform Engineer
-- engineer managing microservices networking infrastructure.
-- DevOps Engineer
-- list amazon app mesh api resources.
-- networking
 - service mesh
-- aws
-- amazon
 - list resources
 - engineer managing service deployments and traffic routing.
-- list resources.
+- aws
 - manage amazon app mesh api resources.
+- Platform Engineer
 - microservices
+- networking
+- list resources.
+- amazon
+- engineer managing microservices networking infrastructure.
+- list amazon app mesh api resources.
+- DevOps Engineer
 slug: app-mesh-management
 tags:
 - Amazon

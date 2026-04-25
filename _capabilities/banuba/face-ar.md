@@ -9,12 +9,12 @@ provider_name: Banuba
 provider_slug: banuba
 search_terms:
 - ar
+- face recognition
 - beauty
+- video
+- sdk
 - augmented reality
 - facial
-- sdk
-- video
-- face recognition
 slug: face-ar
 tags: []
 tools: []

@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- list available bloomberg data catalogs
+- search for securities and instruments
+- financial data
 - list catalogs
-- create a bloomberg data request
-- get reference data for securities
-- list distributions
-- create a security universe for data requests
-- get catalog
-- portfolio management
-- get historical data for securities
-- historical data access
-- list completed data distributions
+- reference data access
 - create data request
 - list field lists for data requests
-- get intraday bar data
-- get data catalog details
-- bloomberg
-- get historical end-of-day data
+- get historical data for securities
+- list distributions
+- security universe management
+- data catalog browsing
+- list available bloomberg data catalogs
+- reference data
+- get reference data for securities via http api
 - list security universes
-- get intraday bars
-- search available bloomberg data fields
-- search fields
-- get historical data
+- financial analytics
+- get intraday bar data
 - search instruments
-- list universes
+- search fields
+- get data catalog details
+- historical data access
+- get intraday bars
+- get historical end-of-day data
 - trading
 - market data
+- order management
+- field list management
+- list completed data distributions
 - create universe
 - list available data catalogs
-- order management
-- reference data
-- security universe management
-- get reference data for securities via http api
+- bloomberg
 - data distributions
-- data catalog browsing
+- create a security universe for data requests
+- get catalog
+- search available bloomberg data fields
+- get reference data for securities
+- portfolio management
 - list field lists
-- reference data access
-- financial data
+- create a bloomberg data request
 - get reference data
-- search for securities and instruments
-- financial analytics
-- field list management
+- list universes
+- get historical data
 slug: market-data-and-analytics
 tags:
 - Bloomberg

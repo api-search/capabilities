@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon VPC Lattice
 provider_slug: amazon-vpc-lattice
 search_terms:
-- service mesh
-- aws
 - service networking
 - microservices
+- aws
+- service mesh
 slug: amazon-vpc-lattice-capability
 tags: []
 tools: []

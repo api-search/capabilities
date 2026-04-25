@@ -51,82 +51,82 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- list firebase links
-- data analyst
-- create google ads link
-- connects advertising platforms and implements server-side tracking.
-- list google ads links
-- google analytics
-- integrations
-- metrics
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- analytics
-- audits data access and monitors configuration changes.
-- delete a google ads integration link
-- google
-- list firebase links on a ga4 property
-- attribution
-- get details of a specific measurement protocol secret
-- sets up and maintains ga4 accounts, properties, and configurations.
-- segmenting and exporting user populations for analysis and activation.
-- compliance team
-- manages data privacy compliance including gdpr deletion requests.
-- analytics administrator
-- create a google ads link
-- bi engineer
-- marketing team
-- managing data privacy, deletion, and access auditing.
-- create, export, and query ga4 audience segments.
-- extracts insights from ga4 data through reports and explorations.
-- list google ads links on a ga4 property
-- create a firebase integration link on a ga4 property
-- google ads
-- querying and analyzing ga4 event data through various report types.
-- update a google ads link
-- web analytics
-- linking
-- create measurement protocol secret
-- data protection engineer
-- builds automated reporting pipelines and dashboards from ga4 data.
-- machine learning
-- manage google ads integration links
-- connecting ga4 with advertising, app, and measurement platforms.
-- server-side event tracking with data stream and secret management.
-- platform engineer
-- privacy officer
-- create a firebase link
-- implements privacy-compliant data handling and deletion workflows.
-- create a measurement protocol secret for server-side tracking
-- user data deletion, access auditing, and data collection acknowledgement.
+- firebase
 - list measurement protocol secrets for a data stream
+- linking
+- connects advertising platforms and implements server-side tracking.
 - update google ads link
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- list measurement protocol secrets
-- backend engineer
-- get a specific measurement protocol secret
+- connecting ga4 with advertising, app, and measurement platforms.
+- analytics
+- bi engineer
+- builds automated reporting pipelines and dashboards from ga4 data.
+- list google ads links
+- data
+- google
+- update a google ads link
+- attribution
+- ingesting events from servers, apps, and offline sources.
 - measures campaign performance, segments audiences, and tracks conversions.
-- create a measurement protocol secret
-- manage firebase integration links
-- create firebase link
-- delete a google ads link
-- implements server-side event tracking and offline data collection.
-- update a google ads link configuration
-- delete google ads link
+- integrates ga4 with other platforms and manages infrastructure.
+- list firebase links
+- sets up and maintains ga4 accounts, properties, and configurations.
+- querying and analyzing ga4 event data through various report types.
+- managing data privacy, deletion, and access auditing.
+- integrations
+- get measurement protocol secret
 - get a measurement protocol secret
 - list google ads links on a property
-- get measurement protocol secret
-- marketing ops
-- ingesting events from servers, apps, and offline sources.
-- setting up and maintaining ga4 account and property structure.
-- manage a specific google ads link
-- manage measurement protocol secrets
-- firebase
-- list firebase links on a property
-- data
-- create a google ads integration link on a ga4 property
-- integrates ga4 with other platforms and manages infrastructure.
+- get a specific measurement protocol secret
+- implements privacy-compliant data handling and deletion workflows.
 - reporting
+- web analytics
 - connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- server-side event tracking with data stream and secret management.
+- list firebase links on a ga4 property
+- audits data access and monitors configuration changes.
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- create measurement protocol secret
+- create, export, and query ga4 audience segments.
+- machine learning
+- manage a specific google ads link
+- manage google ads integration links
+- privacy officer
+- list firebase links on a property
+- create a google ads integration link on a ga4 property
+- create a measurement protocol secret for server-side tracking
+- extracts insights from ga4 data through reports and explorations.
+- delete a google ads link
+- marketing ops
+- create google ads link
+- user data deletion, access auditing, and data collection acknowledgement.
+- setting up and maintaining ga4 account and property structure.
+- create a firebase integration link on a ga4 property
+- segmenting and exporting user populations for analysis and activation.
+- metrics
+- implements server-side event tracking and offline data collection.
+- google ads
+- manages data privacy compliance including gdpr deletion requests.
+- google analytics
+- create a measurement protocol secret
+- list google ads links on a ga4 property
+- compliance team
+- data protection engineer
+- create firebase link
+- manage measurement protocol secrets
+- manage firebase integration links
+- create a firebase link
+- delete google ads link
+- update a google ads link configuration
+- analytics administrator
+- backend engineer
+- create a google ads link
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- delete a google ads integration link
+- list measurement protocol secrets
+- marketing team
+- platform engineer
+- data analyst
+- get details of a specific measurement protocol secret
 slug: integrations-and-linking
 tags:
 - Google Analytics

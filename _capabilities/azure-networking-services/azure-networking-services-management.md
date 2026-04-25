@@ -13,24 +13,24 @@ personas: []
 provider_name: Azure Networking Services
 provider_slug: azure-networking-services
 search_terms:
-- azure resource management
-- list subnets
-- list virtual networks
-- infrastructure
-- list subnet resources
-- azure
-- list load balancers
-- list loadbalancer resources
-- resource management
-- list all resources
-- list
-- list networkinterface resources
-- list virtualnetwork resources
-- microsoft
-- networking
-- cloud
-- list network interfaces
 - management
+- resource management
+- list network interfaces
+- list loadbalancer resources
+- azure resource management
+- list load balancers
+- list all resources
+- list subnet resources
+- microsoft
+- cloud
+- list virtualnetwork resources
+- list networkinterface resources
+- list subnets
+- networking
+- list
+- infrastructure
+- azure
+- list virtual networks
 slug: azure-networking-services-management
 tags:
 - Azure

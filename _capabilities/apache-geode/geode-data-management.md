@@ -21,40 +21,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- Platform Engineer
-- engineers managing the geode cluster infrastructure
-- list geode functions
-- list all regions in the apache geode data grid
-- execute oql query
-- geode region management
-- execute query
-- get region keys
-- high-performance in-memory data caching and distribution
-- list available functions
-- execute an oql query
-- list regions
-- list geode regions
-- developers using geode as a fast data store for applications
-- execute an oql query against geode regions
-- server-side function execution
-- platform engineering
-- list all server-side functions available in the cluster
-- data management
-- manage in-memory data with regions, queries, and functions
-- data grid
 - apache geode
-- oql query execution
-- region crud operations, oql queries, and function execution
-- distributed systems
-- apache
-- caching
+- get region keys
 - in-memory data grid
-- list functions
-- Application Developer
-- get all keys stored in a geode region
-- list all geode regions
-- open source
+- platform engineering
+- data management
+- list available functions
+- list all server-side functions available in the cluster
+- list geode regions
+- engineers managing the geode cluster infrastructure
 - in-memory
+- oql query execution
+- list all regions in the apache geode data grid
+- list all geode regions
+- execute an oql query
+- Platform Engineer
+- developers using geode as a fast data store for applications
+- apache
+- list regions
+- manage in-memory data with regions, queries, and functions
+- caching
+- list geode functions
+- get all keys stored in a geode region
+- execute an oql query against geode regions
+- Application Developer
+- distributed systems
+- data grid
+- geode region management
+- list functions
+- open source
+- execute oql query
+- execute query
+- high-performance in-memory data caching and distribution
+- region crud operations, oql queries, and function execution
+- server-side function execution
 slug: geode-data-management
 tags:
 - Apache Geode

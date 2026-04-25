@@ -9,36 +9,36 @@ personas: []
 provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
-- describe code review
-- associate a repository for code review
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
-- DevOps Engineer
-- security
-- developer persona.
-- code review
-- get details about a code review
-- put recommendation feedback
-- list repositories associated with codeguru reviewer
-- aws
-- devops
-- list code reviews for a repository
-- list recommendations from a code review
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
-- machine learning
-- create code review
-- developer tools
-- Security Engineer
-- submit feedback on a code review recommendation
-- get details about a repository association
-- list repository associations
-- list recommendations
-- amazon
-- create a code review
-- associate repository
 - devops engineer persona.
-- describe repository association
+- create code review
+- list recommendations
+- list code reviews for a repository
+- developer tools
+- DevOps Engineer
+- associate repository
+- devops
+- create a code review
 - security engineer persona.
+- get details about a repository association
+- developer persona.
 - list code reviews
+- machine learning
+- code review
+- list recommendations from a code review
+- security
+- list repositories associated with codeguru reviewer
+- get details about a code review
+- associate a repository for code review
+- Security Engineer
+- describe repository association
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
+- put recommendation feedback
+- aws
+- submit feedback on a code review recommendation
+- list repository associations
+- amazon
+- describe code review
 - Developer
 slug: amazon-codeguru-reviewer-code-review
 tags:

@@ -17,31 +17,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- naics
+- crm
+- Data Engineer
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- test search returning fake data without consuming api credits.
+- business intelligence and crm enrichment workflow combining company search and test endpoints
+- appending firmographic data to crm records for sales and marketing
+- segments and scores prospects using naics, sic, and financial data
+- search companies
 - search for business entities and retrieve firmographic data.
+- sic
+- test company search returning fake firmographic data.
+- search business entities by name, address, phone, or url.
+- company data
+- search companies test
+- naics
+- Sales Representative
+- firmographic data retrieval and company lookup
+- Marketing Analyst
+- business intelligence
 - uses firmographic data to qualify leads and enrich crm account records
 - crm enrichment
-- firmographic data
-- search companies
-- test search returning fake data without consuming api credits.
-- sales enablement
-- search business entities by name, address, phone, or url.
-- crm
-- appending firmographic data to crm records for sales and marketing
-- sic
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- Marketing Analyst
-- segments and scores prospects using naics, sic, and financial data
-- firmographic data retrieval and company lookup
-- search companies test
-- test company search returning fake firmographic data.
-- company data
-- Data Engineer
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- Sales Representative
-- business intelligence
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- firmographic data
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
+- sales enablement
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

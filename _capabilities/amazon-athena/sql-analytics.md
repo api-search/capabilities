@@ -24,35 +24,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list query executions
-- list databases in an athena data catalog to explore available schemas.
-- analytics
-- amazon athena
-- serverless
-- list table metadata
-- save a sql query as a named query for reuse in athena.
-- named query management
-- get query results
-- start query execution
-- aws
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list work groups
-- list saved named queries available in an athena workgroup.
-- list recent query executions in an athena workgroup.
-- list athena workgroups to understand available query isolation environments.
-- download the results of a completed athena sql query.
-- sql query management
-- list databases
-- create named query
-- list named queries
 - create a named query
-- sql
+- analytics
+- list query executions
+- amazon athena
+- save a sql query as a named query for reuse in athena.
+- create named query
+- list recent query executions in an athena workgroup.
 - list tables in an athena database to understand available data.
+- list table metadata
+- serverless
+- get query results
+- list named queries
+- list saved named queries available in an athena workgroup.
+- sql
+- list work groups
 - list data catalogs
+- list athena workgroups to understand available query isolation environments.
 - start a sql query execution
-- list data catalogs registered with athena to discover available data sources.
-- get query execution
+- list databases in an athena data catalog to explore available schemas.
+- named query management
 - check the status of a running or completed athena query execution.
+- sql query management
+- aws
+- download the results of a completed athena sql query.
+- list data catalogs registered with athena to discover available data sources.
+- start query execution
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list databases
+- get query execution
 slug: sql-analytics
 tags:
 - Amazon Athena

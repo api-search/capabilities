@@ -8,13 +8,13 @@ personas: []
 provider_name: BLE
 provider_slug: ble
 search_terms:
+- wireless
+- standards
+- iot
+- ble
 - embedded
 - bluetooth
-- iot
-- wireless
 - protocols
-- standards
-- ble
 slug: ble-gatt-capability
 tags: []
 tools: []

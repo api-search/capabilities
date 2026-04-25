@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- get discrete jobs
-- mfg create discrete job
-- manufacturing
-- retrieve inventory items.
-- mfg get wip operations
-- e-business suite
-- discrete job management.
 - mfg get discrete jobs
-- issue material to a job.
-- create a discrete job.
-- inventory item management.
-- complete an assembly.
 - mfg complete assembly
-- enterprise
 - mfg get bill of material by id
-- oracle
-- mfg get bills of material
-- bom management.
-- retrieve wip operations.
-- list boms.
-- mfg get routings
 - inv get deliveries
-- retrieve sales orders.
-- inv get sales orders
+- bom management.
+- mfg get discrete job by id
+- get discrete jobs
 - list on-hand quantities.
-- inv get inventory items
-- get inventory items
+- retrieve on-hand quantities.
 - production
 - list inventory items.
+- retrieve sales orders.
+- create a discrete job.
+- manufacturing
+- enterprise
+- list discrete jobs.
+- inv get sales orders
+- get bills of material
+- get inventory items
+- on-hand quantity management.
+- retrieve bills of material.
+- get discrete job by id.
+- oracle
 - retrieve routings.
+- inventory item management.
+- supply chain
+- mfg get bills of material
+- issue material to a job.
+- retrieve wip operations.
+- retrieve discrete jobs.
+- inv get inventory items
+- business applications
+- get bom by id.
+- e-business suite
+- get onhand quantities
+- complete an assembly.
 - inv get onhand quantities
 - mfg issue material
+- mfg get wip operations
+- retrieve inventory items.
 - retrieve deliveries.
-- mfg get discrete job by id
-- get bills of material
-- get discrete job by id.
-- get onhand quantities
-- on-hand quantity management.
-- get bom by id.
-- business applications
-- retrieve discrete jobs.
-- retrieve on-hand quantities.
-- retrieve bills of material.
-- list discrete jobs.
 - erp
-- supply chain
+- discrete job management.
+- list boms.
+- mfg get routings
+- mfg create discrete job
 slug: manufacturing-operations
 tags:
 - Oracle

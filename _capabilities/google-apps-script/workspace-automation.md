@@ -49,54 +49,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- script project management
-- deployment management
-- create a new immutable version
-- get execution metrics for a script project
-- script project details and content
-- run script
-- update deployment
-- google
-- update the code content of a script project
-- deployments
-- get project content
-- list processes
-- list a specific script's executed processes
-- script project metrics
-- create a new script project
-- delete a deployment
-- get version
-- list versions of a script project
-- create a deployment of an apps script project
-- automation
-- version management
-- get project
-- apps script
-- list execution processes
-- create deployment
 - list script processes
-- create a new, empty script project
 - list deployments
-- update a deployment
-- create version
-- google workspace
-- list versions
-- scripting
-- get a specific deployment
-- run a function in an apps script project
-- script project content
-- create a new deployment
-- process monitoring
-- update project content
-- get project metrics
-- get deployment
-- delete deployment
-- get a specific version
-- list deployments for a script project
-- list deployments of an apps script project
 - create project
 - get the code content of a script project
+- google
+- create deployment
+- create version
+- create a new immutable version
+- scripting
+- process monitoring
+- get project metrics
+- get execution metrics for a script project
+- automation
+- delete a deployment
+- list versions
+- get version
+- list processes
+- apps script
 - get a script project's metadata
+- google workspace
+- update project content
+- script project content
+- list deployments for a script project
+- run a function in an apps script project
+- deployments
+- create a deployment of an apps script project
+- script project metrics
+- get project content
+- list deployments of an apps script project
+- get deployment
+- list a specific script's executed processes
+- get a specific version
+- update the code content of a script project
+- create a new deployment
+- list execution processes
+- get a specific deployment
+- update a deployment
+- deployment management
+- update deployment
+- run script
+- version management
+- script project details and content
+- delete deployment
+- create a new script project
+- list versions of a script project
+- script project management
+- create a new, empty script project
+- get project
 slug: workspace-automation
 tags:
 - Google

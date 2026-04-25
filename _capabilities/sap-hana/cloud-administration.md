@@ -37,53 +37,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- list alerts
-- list all sap hana cloud instances.
-- get instance
-- provision a new sap hana cloud instance.
-- list alert rules for an instance.
-- analytics
-- update alert rules
-- list all instances in the inventory.
-- database
-- alert monitoring.
-- enterprise
-- administration
-- sap hana
-- delete an instance mapping.
-- performance metrics.
-- create instance
-- list all sap hana cloud service instances.
-- get details of a specific instance.
-- list alert rules
-- list instance mappings.
-- delete instance
 - update alert rules for an instance.
-- provision a new instance.
-- cloud
-- list instances
-- get database metrics.
-- list alert events.
-- get instance details.
-- monitoring
-- delete mapping
-- delete a service instance permanently.
-- get metrics
-- update an instance.
-- retrieve consumption metering data.
-- update instance
+- list instance mappings.
+- list all sap hana cloud instances.
+- delete an instance mapping.
+- analytics
 - retrieve database performance metrics.
-- instance lifecycle management.
-- individual instance operations.
-- list mappings
-- list triggered alert events for an instance.
-- get metering
-- update instance configuration.
+- list alerts
+- create instance
+- administration
+- alert monitoring.
+- update alert rules
+- delete mapping
 - in-memory
-- create a new instance mapping.
-- delete an instance.
+- sap hana
+- monitoring
+- enterprise
+- database
+- update instance
+- provision a new instance.
 - create mapping
+- create a new instance mapping.
+- delete a service instance permanently.
+- list all sap hana cloud service instances.
+- instance lifecycle management.
+- list instances
+- list alert rules for an instance.
+- list all instances in the inventory.
+- list alert events.
+- individual instance operations.
+- get database metrics.
+- list mappings
+- performance metrics.
+- provision a new sap hana cloud instance.
+- list triggered alert events for an instance.
+- get instance details.
+- get details of a specific instance.
+- get metrics
+- delete instance
 - list inventory
+- retrieve consumption metering data.
+- get metering
+- get instance
+- cloud
+- update instance configuration.
+- delete an instance.
+- update an instance.
+- list alert rules
 slug: cloud-administration
 tags:
 - SAP HANA

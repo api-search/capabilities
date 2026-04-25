@@ -8,14 +8,14 @@ personas: []
 provider_name: Apache HBase
 provider_slug: apache-hbase
 search_terms:
-- apache
 - hadoop
-- nosql
 - wide column
-- bigtable
-- big data
-- database
 - open source
+- big data
+- bigtable
+- database
+- apache
+- nosql
 slug: hbase-data-access
 tags: []
 tools: []

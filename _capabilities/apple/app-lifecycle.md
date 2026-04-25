@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- beta tester management.
-- add a new beta tester.
-- modify build
-- get beta tester details.
-- update a beta group.
-- delete beta group
-- list beta testers.
-- list all builds.
-- remove a beta tester.
-- ios
 - macos
-- list apps
-- delete beta tester
-- list groups
-- read app
-- list all beta testers.
-- modify app
-- create beta tester
-- apple
-- delete a beta group.
-- list beta testers
-- update build information.
-- list all apps in app store connect.
 - create tester
-- list all apps.
-- app store
-- build management.
-- list builds
-- list beta groups
-- technology
-- testflight
-- beta group management.
-- create a new beta group.
-- get details of a specific app.
-- list all beta groups.
-- mobile
 - update app metadata.
-- read beta tester
-- create beta group
-- list testers
-- modify beta group
-- app management.
-- add a beta tester.
-- app management
+- create a new beta group.
+- list all beta groups.
+- list all apps in app store connect.
 - read beta group
-- create a beta group.
-- developer
+- modify beta group
+- get details of a specific app.
 - create group
-- get build details.
+- list beta groups
+- list all builds.
+- update a beta group.
+- create beta group
+- developer
+- list apps
 - list beta groups.
+- get build details.
+- update build information.
+- list testers
 - get beta group details.
+- remove a beta tester.
+- delete beta tester
+- list all apps.
+- read app
+- testflight
+- delete a beta group.
+- add a new beta tester.
+- list beta testers
+- create a beta group.
+- list all beta testers.
 - read build
+- create beta tester
+- app store
+- list builds
+- build management.
+- read beta tester
+- add a beta tester.
+- delete beta group
+- app management
+- app management.
+- beta tester management.
+- list beta testers.
+- list groups
+- ios
+- technology
+- modify app
+- modify build
+- apple
+- mobile
+- get beta tester details.
+- beta group management.
 slug: app-lifecycle
 tags:
 - Apple

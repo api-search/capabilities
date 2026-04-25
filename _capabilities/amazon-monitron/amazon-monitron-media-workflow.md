@@ -13,35 +13,35 @@ personas: []
 provider_name: Amazon Monitron
 provider_slug: amazon-monitron
 search_terms:
-- media
-- manage media processing jobs
-- delete project
-- amazon monitron list project admin users
-- amazon monitron create project
-- update project
-- amazon monitron get project
-- associate project admin user
-- amazon monitron media processing workflow
-- amazon monitron get project admin user
-- get project
-- aws
-- list jobs
-- list projects
 - list project admin users
-- amazon monitron delete project
-- amazon monitron update project
-- amazon monitron associate project admin user
-- developer building media processing applications
+- create project
 - media processing
-- workflow
-- Media Developer
-- engineer managing broadcast media workflows
-- broadcasting
 - amazon monitron list projects
 - aws media processing and delivery
+- list jobs
+- amazon monitron list project admin users
+- delete project
+- broadcasting
+- workflow
+- amazon monitron associate project admin user
+- update project
 - get project admin user
-- create project
+- developer building media processing applications
+- amazon monitron get project
+- amazon monitron delete project
 - Broadcast Engineer
+- amazon monitron media processing workflow
+- manage media processing jobs
+- amazon monitron get project admin user
+- amazon monitron update project
+- list projects
+- Media Developer
+- media
+- aws
+- amazon monitron create project
+- associate project admin user
+- engineer managing broadcast media workflows
+- get project
 slug: amazon-monitron-media-workflow
 tags:
 - AWS

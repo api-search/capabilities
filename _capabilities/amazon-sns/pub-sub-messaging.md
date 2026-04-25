@@ -29,53 +29,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- get topic attributes
-- pub/sub
-- get sms messaging attributes
-- create topic
-- create a platform application for mobile push
-- create a new sns topic
-- get sms attributes
-- delete an sns topic
-- set attributes on an sns topic
-- delete topic
-- list all subscriptions
-- messaging
-- publish up to 10 messages in a batch
-- publish a message to a topic
-- subscribe
-- get attributes of an sns topic
-- check if a phone number has opted out of sms
-- create platform application
-- list subscriptions by topic
-- list subscriptions for a specific topic
-- aws
-- list topics
-- get attributes of a subscription
-- tag resource
-- notifications
-- check phone opted out
-- create a subscription
-- get subscription attributes
-- publish
-- list tags for an sns resource
-- unsubscribe from a topic
-- publish batch
-- list tags
-- set topic attributes
 - topic management
+- delete an sns topic
+- get attributes of an sns topic
+- set topic attributes
+- get sms attributes
 - sms
-- amazon
-- create a subscription to a topic
-- message publishing
-- list all sns topics
-- email
-- unsubscribe
-- list subscriptions
+- publish batch
+- create platform application
+- publish
+- notifications
 - push notifications
+- unsubscribe from a topic
+- publish a message to a topic
+- list subscriptions
+- messaging
+- check phone opted out
+- get topic attributes
+- get sms messaging attributes
+- list all subscriptions
 - add tags to an sns resource
-- subscription management
+- create a platform application for mobile push
+- tag resource
+- create a subscription
+- unsubscribe
+- get subscription attributes
+- list topics
+- create a new sns topic
+- get attributes of a subscription
+- message publishing
+- create topic
+- create a subscription to a topic
+- check if a phone number has opted out of sms
+- aws
+- list all sns topics
+- list tags for an sns resource
+- subscribe
+- set attributes on an sns topic
+- list tags
+- pub/sub
+- list subscriptions by topic
+- delete topic
+- amazon
 - publish a message to a topic or endpoint
+- publish up to 10 messages in a batch
+- email
+- subscription management
+- list subscriptions for a specific topic
 slug: pub-sub-messaging
 tags:
 - Amazon

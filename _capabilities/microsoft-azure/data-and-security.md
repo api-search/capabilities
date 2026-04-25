@@ -28,54 +28,54 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- list cosmos db databases
-- get blob properties
-- keyvault get secret
-- list resource groups
-- azure
-- list resource providers
-- infrastructure as a service
-- blob storage
-- blob storage operations
-- resource manager
-- list blobs in a container
-- list certificates
-- get a secret value
-- enterprise
-- arm list subscriptions
-- arm list resource groups
-- keyvault list certificates
-- list azure subscriptions
-- cosmos list containers
-- api management
-- arm list tags
-- key vault
-- blob list blobs
-- cloud computing
-- cloud
-- list items in a container
 - arm list resources
-- list databases
-- blob download
-- keyvault list keys
+- key vault
+- arm list subscriptions
+- cosmos list containers
+- list resources in a subscription
+- cosmos list items
+- cosmos db database management
+- list items in a container
+- t1
+- blob storage operations
+- blob get properties
+- arm list resource groups
+- arm list tags
+- download a blob
+- cloud computing
+- list containers in a database
+- enterprise
+- keyvault list certificates
+- list subscription tags
+- blob storage
+- arm list providers
+- list certificates
+- list cosmos db databases
+- list subscriptions
+- list blobs in a container
+- platform as a service
+- get blob properties
+- list resource groups
+- list azure subscriptions
+- list cryptographic keys
+- get a secret value
+- cosmos db
+- blob list blobs
 - list blobs
+- azure
+- keyvault list keys
+- list secrets
 - keyvault list secrets
 - cosmos list databases
-- blob get properties
+- keyvault get secret
+- api management
+- resource manager
+- list databases
+- list resource providers
 - key vault secret management
-- list secrets
-- cosmos list items
-- arm list providers
-- download a blob
-- list cryptographic keys
-- platform as a service
-- list subscription tags
-- list resources in a subscription
-- list subscriptions
-- cosmos db database management
-- list containers in a database
-- cosmos db
-- t1
+- cloud
+- infrastructure as a service
+- blob download
 - subscription management
 slug: data-and-security
 tags:

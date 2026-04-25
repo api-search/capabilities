@@ -41,55 +41,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
+- create message batch
+- count message tokens.
+- chatbot
+- model discovery.
+- get batch status.
+- list batches
+- list message batches.
+- individual batch management.
+- get batch
+- list available models.
+- large language models
+- delete message batch
+- delete a completed batch.
+- list all message batches.
+- natural language processing
+- get model
+- model details.
+- get message batch status and details.
+- count tokens in a message.
 - delete batch
-- delete a batch.
+- create batch
 - message operations.
 - create a batch of message requests.
-- count message tokens.
-- get model
-- list message batches
-- claude
-- anthropic
-- create a message batch.
-- artificial intelligence
-- get completed batch results.
-- token counting.
-- individual batch management.
-- create a message.
-- get batch
-- retrieve message batch
-- chatbot
-- natural language processing
-- list message batches.
-- messaging
-- list available claude models.
-- send a message to claude and receive a response.
-- delete a completed batch.
-- count tokens
-- cancel message batch
-- cancel an in-progress batch.
-- conversational ai
-- list available models.
-- create message batch
 - machine learning
-- get batch status.
-- count tokens in a message.
-- delete message batch
 - retrieve message batch results
+- token counting.
+- create a message.
+- artificial intelligence
+- messaging
+- list message batches
+- count message tokens
 - generative ai
+- claude
+- send a message to claude and receive a response.
+- cancel an in-progress batch.
 - batch management.
-- create message
-- ai
 - list models
 - get model metadata.
-- list batches
-- list all message batches.
-- model details.
-- create batch
-- model discovery.
-- count message tokens
-- large language models
-- get message batch status and details.
+- cancel message batch
+- anthropic
+- list available claude models.
+- count tokens
+- create message
+- delete a batch.
+- conversational ai
+- get completed batch results.
+- create a message batch.
+- ai
+- retrieve message batch
 slug: ai-messaging
 tags:
 - Anthropic

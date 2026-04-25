@@ -33,48 +33,48 @@ personas: []
 provider_name: Amazon Polly
 provider_slug: amazon-polly
 search_terms:
-- neural engine
-- Content Creator
-- speech synthesis
-- list tasks
-- create lexicon
-- list custom pronunciation lexicons for controlling how words are spoken
-- multi-channel text-to-speech synthesis workflow
-- aws
-- tts
-- available synthesis voices
-- get the content of a pronunciation lexicon
-- machine learning
-- list synthesis tasks
-- speech synthesis from text
-- start synthesis task
-- voice
-- start an asynchronous synthesis task for long text with s3 output
-- convert text to speech audio
-- list lexicons
-- asynchronous synthesis tasks
-- list pronunciation lexicons
-- generative ai
-- ssml
-- ai
-- builds voice-enabled applications using polly speech synthesis
-- list and monitor asynchronous speech synthesis tasks
-- synthesize speech
-- amazon
-- creates audio content from written text using polly
 - start an asynchronous speech synthesis task
-- create or update a pronunciation lexicon
+- neural engine
+- speech synthesis from text
 - get lexicon
-- list available voices by language and engine
-- create or update a custom pronunciation lexicon
-- start task
-- list available amazon polly voices filterable by language and engine type
+- synthesize speech
+- speech synthesis
 - voice applications
-- Application Developer
-- convert text to lifelike speech audio using amazon polly
-- custom pronunciation lexicons
+- list pronunciation lexicons
+- get the content of a pronunciation lexicon
+- convert text to speech audio
+- list tasks
+- start synthesis task
+- ssml
+- creates audio content from written text using polly
 - list voices
+- machine learning
+- create or update a pronunciation lexicon
+- create lexicon
+- list synthesis tasks
+- Content Creator
+- asynchronous synthesis tasks
+- voice
+- start task
 - text-to-speech
+- list available amazon polly voices filterable by language and engine type
+- builds voice-enabled applications using polly speech synthesis
+- list custom pronunciation lexicons for controlling how words are spoken
+- generative ai
+- Application Developer
+- tts
+- convert text to lifelike speech audio using amazon polly
+- multi-channel text-to-speech synthesis workflow
+- custom pronunciation lexicons
+- aws
+- list lexicons
+- available synthesis voices
+- create or update a custom pronunciation lexicon
+- list available voices by language and engine
+- ai
+- start an asynchronous synthesis task for long text with s3 output
+- amazon
+- list and monitor asynchronous speech synthesis tasks
 slug: text-to-speech
 tags:
 - Amazon

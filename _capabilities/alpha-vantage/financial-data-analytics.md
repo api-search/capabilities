@@ -9,11 +9,11 @@ provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
 - technical indicators
-- financial
-- sentiment analysis
-- market data
 - economic data
 - stocks
+- market data
+- sentiment analysis
+- financial
 slug: financial-data-analytics
 tags: []
 tools: []

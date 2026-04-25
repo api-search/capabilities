@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process a payment through the mastercard gateway
-- fraud detection
-- process a payment through the gateway
-- get payment
-- create a buy-now-pay-later installment plan
-- create a unified checkout session supporting multiple payment methods
-- payment processing
-- create an installment plan
-- create a unified checkout session
-- create unified session
-- payments
-- e-commerce
-- unified checkout sessions
-- get payment details
-- digital identity
-- checkout session management
-- create checkout session
 - credit cards
-- buy-now-pay-later installment plans
-- checkout
+- digital identity
+- open banking
+- process a payment through the mastercard gateway
+- create checkout session
+- create installment plan
 - process payment
+- create unified session
 - generate a merchant qr code for payment
 - generate a merchant-presented qr code for payment
-- generate qr code
-- create a new checkout session for a merchant
-- process cloud transaction
-- mastercard
 - financial services
-- register a contactless reader device
-- register contactless reader
-- retrieve payment transaction details
-- open banking
-- merchant
+- payment processing
+- generate qr code
+- mastercard
+- create a unified checkout session supporting multiple payment methods
 - qr code payment acceptance
-- create a new checkout session
+- create a unified checkout session
+- get payment details
+- register contactless reader
+- get payment
+- unified checkout sessions
+- payments
+- retrieve payment transaction details
+- buy-now-pay-later installment plans
+- checkout session management
 - process a cloud commerce transaction
-- create installment plan
+- e-commerce
+- merchant
+- process cloud transaction
+- register a contactless reader device
+- create a new checkout session
+- create an installment plan
+- create a new checkout session for a merchant
+- fraud detection
+- create a buy-now-pay-later installment plan
+- process a payment through the gateway
+- checkout
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

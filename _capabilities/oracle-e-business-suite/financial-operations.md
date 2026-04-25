@@ -30,60 +30,60 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- get purchase orders
+- procurement
+- gl get journals
+- ar get receipts
+- retrieve requisitions.
+- po get suppliers
+- retrieve ap invoices.
+- retrieve purchase orders.
+- create an ar invoice.
+- financials
 - ap create invoice
-- get suppliers
+- ap invoice management.
+- list suppliers.
+- po get requisitions
+- get ar invoices
+- retrieve receipts.
+- journal entry management.
+- retrieve ar invoices.
+- retrieve fixed assets.
+- enterprise
+- fa get assets
+- retrieve bank accounts.
+- create a journal entry.
 - retrieve payments.
+- retrieve general ledger journal entries.
+- ap get invoices
+- get purchase order by id.
+- create an ap invoice.
+- get ap invoices
+- ar get invoices
+- retrieve suppliers.
+- list journal entries.
+- po get purchase orders
+- ap get payments
+- list ap invoices.
+- gl create journal
+- oracle
+- ce get bank accounts
+- list purchase orders.
+- supplier management.
+- ap get invoice by id
+- po create purchase order
+- po get purchase order by id
+- get purchase orders
+- list ar invoices.
+- purchase order management.
+- business applications
+- get ap invoice by id.
+- get journals
 - create a purchase order.
 - e-business suite
-- list suppliers.
-- retrieve ar invoices.
-- list purchase orders.
-- get purchase order by id.
-- enterprise
-- ap get invoices
-- journal entry management.
-- get ar invoices
-- oracle
 - ar invoice management.
-- get ap invoice by id.
-- ar get invoices
-- po create purchase order
-- po get requisitions
-- create a journal entry.
-- po get suppliers
-- list journal entries.
-- gl get journals
-- retrieve general ledger journal entries.
-- ap get invoice by id
-- ap invoice management.
-- po get purchase orders
 - ar create invoice
-- purchase order management.
-- gl create journal
-- list ap invoices.
-- po get purchase order by id
-- ar get receipts
-- retrieve receipts.
-- retrieve purchase orders.
-- supplier management.
-- business applications
-- ap get payments
-- get ap invoices
-- create an ar invoice.
-- retrieve fixed assets.
-- fa get assets
-- list ar invoices.
-- financials
-- procurement
-- create an ap invoice.
-- retrieve bank accounts.
-- retrieve ap invoices.
-- ce get bank accounts
-- retrieve suppliers.
 - erp
-- retrieve requisitions.
-- get journals
+- get suppliers
 slug: financial-operations
 tags:
 - Oracle

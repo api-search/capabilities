@@ -13,35 +13,35 @@ personas: []
 provider_name: Amazon MediaStore
 provider_slug: amazon-mediastore
 search_terms:
-- media
-- manage media processing jobs
-- delete container
 - delete container policy
-- create container
-- deletelifecyclepolicy
-- describe container
-- describecontainer
-- deletecontainerpolicy
-- delete cors policy
-- deletecontainer
-- delete metric policy
 - deletemetricpolicy
-- aws
-- list jobs
-- createcontainer
-- getcontainerpolicy
-- deletecorspolicy
-- developer building media processing applications
 - media processing
+- deletelifecyclepolicy
 - delete lifecycle policy
-- workflow
 - get container policy
-- Media Developer
-- engineer managing broadcast media workflows
-- broadcasting
+- delete cors policy
+- describe container
 - aws media processing and delivery
+- list jobs
+- broadcasting
+- workflow
 - amazon mediastore media processing workflow
+- delete container
+- delete metric policy
+- describecontainer
+- getcontainerpolicy
+- create container
+- developer building media processing applications
 - Broadcast Engineer
+- manage media processing jobs
+- deletecontainer
+- deletecontainerpolicy
+- deletecorspolicy
+- createcontainer
+- Media Developer
+- media
+- aws
+- engineer managing broadcast media workflows
 slug: amazon-mediastore-media-workflow
 tags:
 - AWS

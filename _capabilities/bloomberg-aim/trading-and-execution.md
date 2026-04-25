@@ -34,43 +34,43 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- get orders from blotter
-- fill tracking
-- get broker strategies
-- get emsx teams
-- get intraday ticks
-- get available broker strategies
-- portfolio management
-- modify an existing order
-- get routes
-- create a new trading order
-- execution management
+- create a trading order
+- financial data
 - route order
 - route management
-- bloomberg
-- cancel/delete an order
-- get security reference data
 - route an order to a broker
-- delete order
+- modify an existing order
+- market data for trading decisions
+- get emsx teams
+- create a new trading order
+- execution management
+- get broker strategies
 - get order and route fills
-- get order fills
-- get routes from the emsx blotter
+- get orders from the emsx blotter
+- get orders
+- get intraday tick data for a security
+- delete order
+- get security reference data
+- get fills
+- modify order
+- get intraday ticks
 - trading
+- order management
 - market data
 - get teams
-- get intraday tick data for a security
-- modify order
-- order management
-- get orders from the emsx blotter
-- get security reference data for trading
-- get orders
-- market data for trading decisions
-- create order
-- create a trading order
+- get order fills
 - get routes from blotter
-- financial data
+- bloomberg
+- cancel/delete an order
+- get routes from the emsx blotter
+- fill tracking
+- get orders from blotter
+- get security reference data for trading
+- portfolio management
+- get routes
 - get reference data
-- get fills
+- get available broker strategies
+- create order
 slug: trading-and-execution
 tags:
 - Bloomberg

@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Textract
 provider_slug: amazon-textract
 search_terms:
-- machine learning
-- aws
 - document processing
+- aws
 - ocr
+- machine learning
 slug: amazon-textract-capability
 tags: []
 tools: []

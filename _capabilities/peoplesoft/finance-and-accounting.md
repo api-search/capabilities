@@ -47,50 +47,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- campus solutions
+- campus solutions.
+- crm
+- forecasting
 - approve, deny, or push back a finance approval request.
-- list vouchers
-- budget definitions and data
-- list budgets
-- list forecasts
-- process approval
-- general ledger journal entries
+- retrieve accounts payable vouchers.
+- performance analytics reports
 - finance
 - accounts payable vouchers
-- accounts receivable items
-- retrieve budget definitions and data.
-- list analytics reports
-- human capital management.
-- campus solutions
-- general ledger
-- financial and supply chain management.
-- list journal entries
-- retrieve forecast data and projections.
-- accounting
-- forecast data and projections
-- forecasting
-- performance analytics reports
-- retrieve general ledger journal entries.
-- finance approval requests
-- peopletools platform services.
-- hcm
-- expense reports
-- crm
-- list ar items
-- list pending approvals
-- enterprise software
 - retrieve expense reports.
 - budgeting
-- individual approval operations
 - retrieve accounts receivable items.
-- retrieve performance analytics reports.
-- list expense reports
-- peoplesoft
-- retrieve pending finance approval requests.
-- campus solutions.
-- supply chain management
-- erp
+- list journal entries
+- accounts receivable items
+- financial and supply chain management.
+- human capital management.
 - financial management
-- retrieve accounts payable vouchers.
+- retrieve general ledger journal entries.
+- list vouchers
+- peoplesoft
+- expense reports
+- enterprise software
+- list budgets
+- retrieve forecast data and projections.
+- process approval
+- list analytics reports
+- individual approval operations
+- supply chain management
+- peopletools platform services.
+- retrieve budget definitions and data.
+- list ar items
+- list expense reports
+- finance approval requests
+- retrieve performance analytics reports.
+- retrieve pending finance approval requests.
+- accounting
+- list forecasts
+- list pending approvals
+- budget definitions and data
+- general ledger journal entries
+- erp
+- hcm
+- general ledger
+- forecast data and projections
 slug: finance-and-accounting
 tags:
 - PeopleSoft

@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- query search traffic data.
-- add site
+- submit sitemap
+- list all search console sites for the authenticated user.
+- google
+- get details for a specific site.
+- analytics
+- query search analytics data with filters.
+- query search analytics
+- webmaster tools
+- delete sitemap
+- list sitemaps
+- delete a sitemap.
+- query search traffic data with filters and dimensions.
+- search console
+- delete site
+- get site
+- submit a sitemap.
+- inspect url
+- manage search console sites.
+- webmaster
+- inspect a url for index status and rich results.
+- submit a sitemap for crawling.
 - remove a site from search console.
 - add a site to search console.
-- inspect a url for index status and rich results.
-- google
-- analytics
-- list all search console sites.
-- get details for a specific site.
-- get details for a specific search console site.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- manage search console sites.
-- delete sitemap
-- submit a sitemap.
 - get sitemap details.
-- get sitemap
-- seo
-- search console
-- list sites
-- search
-- list sitemaps for a site.
-- query search traffic data with filters and dimensions.
-- delete site
-- inspect url
-- delete a sitemap.
-- list sitemaps
-- submit sitemap
-- webmaster tools
-- submit a sitemap for crawling.
-- get site
-- manage sitemaps.
-- webmaster
 - inspect urls for indexing status.
-- list sitemaps submitted for a site.
-- query search analytics
-- query search analytics data with filters.
-- get details for a specific sitemap.
+- get sitemap
+- inspect a url for index status, crawl info, mobile usability, and rich results.
 - delete a previously submitted sitemap.
-- list all search console sites for the authenticated user.
+- query search traffic data.
+- seo
+- get details for a specific search console site.
+- search
+- list sitemaps submitted for a site.
+- get details for a specific sitemap.
+- list sites
+- list sitemaps for a site.
+- add site
+- list all search console sites.
+- manage sitemaps.
 slug: seo-management
 tags:
 - Google

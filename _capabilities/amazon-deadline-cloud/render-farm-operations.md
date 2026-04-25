@@ -9,10 +9,10 @@ provider_name: Amazon Deadline Cloud
 provider_slug: amazon-deadline-cloud
 search_terms:
 - media
-- compute
 - visual effects
 - aws
 - rendering
+- compute
 slug: render-farm-operations
 tags: []
 tools: []

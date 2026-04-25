@@ -57,56 +57,56 @@ personas: []
 provider_name: Salesforce Marketing Cloud
 provider_slug: salesforce-marketing-cloud
 search_terms:
-- update a contact
+- create contacts
+- update a journey
 - get contact
-- email marketing
-- get a contact
-- journey management
-- create journey
-- retrieve a contact by contact key
-- search contacts by criteria
-- delete a journey
-- create a journey
-- customer journey
-- search for contacts using filter criteria
-- publish a journey
-- publish journey
-- contact search
-- get a journey
-- journey publishing
-- single contact operations
-- delete a contact from marketing cloud
-- automation
-- list journeys
-- list all contact attribute set definitions
+- update a contact
 - salesforce
-- digital marketing
-- list customer journeys with filtering and pagination
-- create a new customer journey
-- single journey operations
-- list attribute sets
-- get journey
-- list all journeys
-- attribute set definitions
-- update contact
-- create one or more contacts
-- delete a contact
-- retrieve a journey by id
-- search contacts
-- delete contact
-- delete journey
-- update an existing journey specification
-- contact management
-- update an existing contact's attributes
-- marketing automation
-- email
-- publish a journey to activate customer entry
 - create one or more contacts in marketing cloud
 - marketing
-- update a journey
-- create contacts
-- update journey
+- update contact
 - personalization
+- get a contact
+- delete a contact
+- automation
+- retrieve a journey by id
+- delete a contact from marketing cloud
+- marketing automation
+- list customer journeys with filtering and pagination
+- delete journey
+- create one or more contacts
+- contact search
+- publish a journey to activate customer entry
+- create a journey
+- update an existing contact's attributes
+- update journey
+- list all contact attribute set definitions
+- journey publishing
+- publish a journey
+- search for contacts using filter criteria
+- email
+- contact management
+- list all journeys
+- get journey
+- get a journey
+- retrieve a contact by contact key
+- digital marketing
+- create journey
+- update an existing journey specification
+- delete a journey
+- create a new customer journey
+- single contact operations
+- journey management
+- publish journey
+- attribute set definitions
+- single journey operations
+- list journeys
+- customer journey
+- delete contact
+- list attribute sets
+- search contacts by criteria
+- email marketing
+- search contacts
 slug: marketing-automation
 tags:
 - Salesforce

@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- batch update spreadsheet
-- search developer metadata matching filters
-- apply batch updates to a spreadsheet
-- append rows of data to a spreadsheet
-- spreadsheets
 - batch update values
-- single spreadsheet operations
-- read values from a spreadsheet range
-- batch clear values
+- append rows of data to a spreadsheet
+- get developer metadata
+- batch update spreadsheet
+- google sheets
 - clear values from a range
-- clear values from a spreadsheet range
-- write values to a range
+- data management
+- read values from a spreadsheet range
+- single spreadsheet operations
 - automation
+- write values to multiple ranges at once
+- get spreadsheet details
+- write values to a spreadsheet range
+- batch get values
+- write values to a range
 - copy sheet
 - productivity
-- get spreadsheet
-- create spreadsheet
-- google sheets
-- get spreadsheet details
-- read values from a range
-- get values
-- data management
-- write values to multiple ranges at once
-- search developer metadata
-- google workspace
+- clear values from a spreadsheet range
 - clear values
-- get spreadsheet details by id
-- clear values from multiple ranges
-- read values from multiple ranges at once
-- batch get values
-- get developer metadata
-- spreadsheet lifecycle operations
-- create a new spreadsheet
-- cell value read and write operations
+- update values
+- google workspace
+- get spreadsheet
+- read values from a range
 - append values to a range
+- cell value read and write operations
+- create spreadsheet
+- create a new google sheets spreadsheet
+- read values from multiple ranges at once
+- create a new spreadsheet
+- spreadsheets
+- append values
+- get values
+- batch clear values
 - copy a sheet to another spreadsheet
 - get developer metadata by id
-- update values
-- write values to a spreadsheet range
-- create a new google sheets spreadsheet
-- append values
+- apply batch updates to a spreadsheet
+- clear values from multiple ranges
+- search developer metadata
+- search developer metadata matching filters
+- spreadsheet lifecycle operations
+- get spreadsheet details by id
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

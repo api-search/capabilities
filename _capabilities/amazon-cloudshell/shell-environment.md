@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon CloudShell
 provider_slug: amazon-cloudshell
 search_terms:
-- terminal
+- cli
+- Cloud Administrator
 - browser-based
 - amazon cloudshell
 - aws
-- cli
-- amazon web services
 - cloudshell
-- Cloud Administrator
+- terminal
+- amazon web services
 slug: shell-environment
 tags:
 - Amazon Web Services

@@ -29,47 +29,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- get room hash
-- manages users, groups, and system health
-- Meeting Organizer
-- list all user groups
-- web conferencing
-- close room
-- list rooms
-- apache openmeetings
-- manages conference rooms, invites participants, and handles recordings
-- generate a secure room access hash
-- list groups
-- list recordings
-- video conferencing
-- create a new room
-- check system health status
-- collaboration
-- create room
 - get recordings by type
-- user management
-- list public rooms
-- list users
-- list all registered users
-- login
-- System Administrator
-- calendar and scheduling
-- authenticate a user to openmeetings
-- session recordings
-- close a conference room
-- conferencing
-- conference room management
-- check health
-- get upcoming calendar meetings
+- list all user groups
+- generate a secure room access hash
 - unified workflow for managing conferencing sessions
-- apache
-- get upcoming meetings
-- list session recordings
-- list upcoming
+- collaboration
+- close a conference room
+- create room
+- check health
+- login
+- conference room management
+- check system health status
+- list rooms
+- get upcoming calendar meetings
+- create a new room
+- get room hash
+- close room
+- Meeting Organizer
+- manages conference rooms, invites participants, and handles recordings
+- web conferencing
 - create a new conference room
-- whiteboard
-- open source
+- list session recordings
+- apache
+- user management
+- conferencing
 - list all public conference rooms
+- manages users, groups, and system health
+- whiteboard
+- System Administrator
+- list groups
+- authenticate a user to openmeetings
+- get upcoming meetings
+- list users
+- open source
+- list public rooms
+- list upcoming
+- session recordings
+- list all registered users
+- video conferencing
+- list recordings
+- apache openmeetings
+- calendar and scheduling
 slug: conferencing-workflow
 tags:
 - Apache OpenMeetings

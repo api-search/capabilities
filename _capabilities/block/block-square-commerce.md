@@ -9,12 +9,12 @@ provider_name: Block
 provider_slug: block
 search_terms:
 - square
-- cryptocurrency
-- fintech
-- commerce
-- point of sale
 - payments
+- commerce
 - ecommerce
+- point of sale
+- fintech
+- cryptocurrency
 slug: block-square-commerce
 tags: []
 tools: []

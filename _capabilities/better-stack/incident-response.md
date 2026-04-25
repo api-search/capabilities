@@ -71,74 +71,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- on-call
-- delete a monitor
-- delete incident
-- list all incidents
-- incidents
-- list incidents with optional date and filter parameters
-- list all uptime monitors to check what is being monitored
-- get heartbeat availability
-- monitor availability metrics
-- get monitor
-- platform
-- list all heartbeats
-- update a monitor
-- list heartbeats
-- on call engineer
-- get incident
-- engineer on-call rotation responsible for responding to incidents
-- resolve an active incident once the issue is fixed
-- status
-- create a manual incident
-- single incident operations
+- acknowledge incident
+- uptime and availability monitoring for services and scheduled jobs
+- list monitors
+- better stack
+- create monitor
 - delete an incident
-- acknowledge an incident
-- get monitor availability
-- create incident
-- get monitor details
+- delete monitor
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- update a monitor
+- monitor availability metrics
+- resolve an incident
+- list incidents with optional date and filter parameters
+- resolve an active incident
+- list all heartbeat monitors for scheduled jobs
+- monitor management for uptime checks
+- acknowledge an active incident
+- detection, acknowledgement, and resolution of service incidents
+- engineer on-call rotation responsible for responding to incidents
+- communicating service health to customers and stakeholders
+- sre engineer
 - create a new uptime monitor for a url or api
 - create a heartbeat monitor
-- uptime and availability monitoring for services and scheduled jobs
-- get monitor availability summary
-- heartbeat monitor management
-- sre engineer
-- observability
-- get details for a specific uptime monitor
-- acknowledge an active incident
-- site reliability engineer managing infrastructure uptime and incident response
 - monitoring
-- update monitor
-- communicating service health to customers and stakeholders
-- get incident details
-- get availability for a heartbeat monitor
-- heartbeats
-- detection, acknowledgement, and resolution of service incidents
-- list all heartbeat monitors for scheduled jobs
-- list incidents
-- create a new uptime monitor
-- list all uptime monitors
-- uptime
-- better stack
-- delete monitor
-- create heartbeat
-- incident management
-- resolve an incident
-- get availability metrics for a monitor
-- get details for a specific incident
-- single monitor operations
-- managing team access and membership
-- sre
-- monitor management for uptime checks
-- list monitors
-- incident response
-- create monitor
-- acknowledge incident
-- resolve an active incident
-- acknowledge an active incident to indicate someone is working on it
-- resolve incident
+- list all heartbeats
+- site reliability engineer managing infrastructure uptime and incident response
 - logs
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- heartbeat monitor management
+- create a new uptime monitor
+- list all incidents
+- incident management
+- on-call
+- single incident operations
+- list all uptime monitors to check what is being monitored
+- status
+- get monitor availability
+- acknowledge an incident
+- single monitor operations
+- on call engineer
+- resolve incident
+- sre
+- list all uptime monitors
+- get availability metrics for a monitor
+- platform
+- incident response
+- get monitor availability summary
+- create incident
+- get incident
+- delete incident
+- acknowledge an active incident to indicate someone is working on it
+- update monitor
+- incidents
+- create heartbeat
+- list heartbeats
+- uptime
+- get monitor
+- get details for a specific incident
+- observability
+- delete a monitor
+- create a manual incident
+- resolve an active incident once the issue is fixed
+- heartbeats
+- managing team access and membership
+- get heartbeat availability
+- get details for a specific uptime monitor
+- list incidents
+- get monitor details
+- get availability for a heartbeat monitor
+- get incident details
 slug: incident-response
 tags:
 - Better Stack

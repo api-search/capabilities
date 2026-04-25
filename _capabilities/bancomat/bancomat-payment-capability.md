@@ -9,12 +9,12 @@ provider_name: Bancomat
 provider_slug: bancomat
 search_terms:
 - atm
-- financial services
-- banking
-- debit cards
-- payments
 - italy
 - mobile payments
+- payments
+- debit cards
+- financial services
+- banking
 slug: bancomat-payment-capability
 tags: []
 tools: []

@@ -39,42 +39,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- content management
-- chatbot intent fulfillments
-- send notification
-- human capital management.
-- create content
-- list notifications
+- retrieve portal content items.
 - campus solutions
+- chatbot
+- campus solutions.
+- send a notification via email, text, or in-app channels.
+- send notification
+- crm
+- create a new portal content item.
+- retrieve available chatbot intents.
+- list themes
 - fulfill intent
 - financial and supply chain management.
-- chatbot
-- list themes
-- retrieve notifications for the current user.
-- send a notification via email, text, or in-app channels.
-- notification management
-- portal content items
-- peopletools platform services.
-- hcm
-- notifications
-- retrieve available chatbot intents.
-- retrieve portal content items.
-- crm
-- list intents
+- list notifications
+- human capital management.
 - financial management
-- enterprise software
-- process a chatbot intent fulfillment request.
-- list content
-- chatbot intents
-- peoplesoft
-- campus solutions.
-- create a new portal content item.
-- branding themes
-- supply chain management
-- communications
-- erp
-- retrieve available branding themes.
+- notifications
 - portal
+- enterprise software
+- peoplesoft
+- portal content items
+- create content
+- list content
+- communications
+- supply chain management
+- peopletools platform services.
+- notification management
+- list intents
+- retrieve notifications for the current user.
+- process a chatbot intent fulfillment request.
+- chatbot intents
+- chatbot intent fulfillments
+- content management
+- branding themes
+- retrieve available branding themes.
+- erp
+- hcm
 slug: portal-and-communications
 tags:
 - PeopleSoft

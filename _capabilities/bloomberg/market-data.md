@@ -33,47 +33,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- request intraday bars.
-- reference data queries.
-- subscribe market vwap
-- news
-- request raw intraday tick data for a security.
-- intraday bar request
+- search for fields.
+- transaction cost analysis
 - analytics
-- subscribe to custom vwap stream.
-- subscribe to interval-based real-time bars.
-- quantitative analysis
-- data license
-- enterprise
-- request historical data.
 - request intraday ticks.
-- intraday tick request
-- execution management
-- field discovery.
-- request intraday ohlc bars for a security.
-- look up metadata for bloomberg field mnemonics.
-- bloomberg
-- intraday bar queries.
-- reference data request
-- request reference data.
-- subscribe to streaming real-time market data.
+- request historical data.
+- subscribe market vwap
 - intraday tick queries.
-- historical data request
+- subscribe to streaming real-time market data.
+- subscribe to custom vwap stream.
+- quantitative analysis
+- subscribe market data
+- request raw intraday tick data for a security.
+- enterprise
+- news
+- reference data request
+- execution management
+- request intraday bars.
+- financial services
+- intraday bar queries.
+- intraday tick request
+- subscribe market bar
+- request end-of-day historical data for securities.
+- intraday bar request
+- request intraday ohlc bars for a security.
+- request reference data for securities and fields.
+- request reference data.
+- reference data queries.
+- look up metadata for bloomberg field mnemonics.
 - trading
 - market data
-- look up field metadata.
-- request reference data for securities and fields.
-- subscribe market data
-- transaction cost analysis
-- historical data queries.
-- financial services
-- request end-of-day historical data for securities.
-- search the bloomberg api data dictionary for fields.
-- subscribe market bar
-- field info request
-- field search request
-- search for fields.
 - business intelligence
+- subscribe to interval-based real-time bars.
+- field search request
+- bloomberg
+- historical data queries.
+- search the bloomberg api data dictionary for fields.
+- look up field metadata.
+- field info request
+- data license
+- historical data request
+- field discovery.
 slug: market-data
 tags:
 - Bloomberg

@@ -101,86 +101,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- remove group member
-- group membership management.
-- list user memberships
-- list all groups.
-- delete application
-- get group
-- list members of a group.
-- delete group
-- user account management.
-- application registration management.
-- get service principal
-- individual group management.
-- list users
-- delete a user.
-- get group details.
-- list user group memberships.
-- get service principal details.
-- get application
-- create group
-- update service principal
-- create user
-- delete a user from the directory.
-- list all groups in the directory.
-- update group properties.
 - directory management
-- security
-- microsoft entra
-- add a member to a group.
-- create service principal
-- individual service principal management.
-- identity
-- list groups and roles a user belongs to.
-- network security
-- list all users in the directory.
-- update application properties.
-- delete a group.
-- update group
-- create a new group.
-- update application
+- list user group memberships.
+- create user
 - azure ad
-- individual application management.
-- delete service principal
+- update application properties.
+- individual service principal management.
+- service principal management.
+- update group properties.
+- individual group management.
+- get group
+- list all groups in the directory.
 - create a new user in the directory.
-- list all applications.
-- create application
-- identity governance
 - list group members.
+- list users
+- get application
+- get application details.
+- list all groups.
+- identity governance
+- update application
+- delete a user from the directory.
+- remove group member
+- delete application
 - get user properties by id.
-- remove a member from a group.
-- user group membership.
-- update user properties.
-- list service principals
-- list all application registrations.
-- list all users in microsoft entra directory.
-- create a new user.
-- zero trust
+- list all applications.
+- update service principal properties.
+- entra
+- delete a group.
+- delete a service principal.
+- security
 - add group member
+- get user
+- delete an application.
+- list all application registrations.
+- individual application management.
+- get group details.
+- list user memberships
 - list applications
-- delete user
-- update service principal.
-- list groups
+- add a member to a group.
+- get service principal
+- create service principal
+- application registration management.
 - create a new service principal.
 - group management.
-- delete a service principal.
-- register a new application.
-- microsoft
-- list all service principals.
-- get user
-- update service principal properties.
-- service principal management.
-- entra
-- update user
+- user account management.
 - list group members
-- individual user management.
-- delete an application registration.
-- get application details.
+- remove a member from a group.
+- update user
+- create a new group.
+- identity
+- list all users in the directory.
+- microsoft entra
+- user group membership.
 - access management
-- authentication
+- update service principal
+- delete service principal
+- network security
+- microsoft
+- register a new application.
+- update user properties.
 - get user details.
-- delete an application.
+- list all users in microsoft entra directory.
+- group membership management.
+- list all service principals.
+- create group
+- list groups and roles a user belongs to.
+- authentication
+- update group
+- create a new user.
+- zero trust
+- list service principals
+- delete user
+- create application
+- list groups
+- update service principal.
+- delete an application registration.
+- delete a user.
+- individual user management.
+- list members of a group.
+- get service principal details.
+- delete group
 slug: identity-and-access
 tags:
 - Microsoft Entra

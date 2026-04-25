@@ -9,12 +9,12 @@ provider_name: Apache Hudi
 provider_slug: apache-hudi
 search_terms:
 - acid
-- apache
 - data lake
+- open source
 - lakehouse
 - big data
-- open source
 - incremental processing
+- apache
 slug: hudi-lakehouse-management
 tags: []
 tools: []

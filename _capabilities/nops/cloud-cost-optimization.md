@@ -13,34 +13,34 @@ personas: []
 provider_name: nOps
 provider_slug: nops
 search_terms:
-- enable scheduler
-- map migration projects
-- get scheduler workload summary
-- list map resources
-- get workload recommendations
-- get utilization recommendations
-- trigger scheduler
+- get scheduler workload recommendations
 - list resources in a map project
-- disable scheduler
+- get workload recommendations
+- finops
+- get map migration project details
+- create scheduler
+- nops
+- enable scheduler
 - cloud costs
 - get utilization summary
-- manually trigger a scheduler
-- disable a scheduler
-- optimization
-- finops
-- get map project
-- get workload summary
-- create scheduler
-- list products in a map project
 - costs
-- get map migration project details
-- nops
-- list map products
-- get scheduler workload recommendations
+- list map projects
+- disable a scheduler
 - create a scheduler
 - enable a scheduler
-- list map projects
+- disable scheduler
 - list map migration projects
+- map migration projects
+- get utilization recommendations
+- list products in a map project
+- get map project
+- get scheduler workload summary
+- trigger scheduler
+- list map products
+- get workload summary
+- optimization
+- manually trigger a scheduler
+- list map resources
 slug: cloud-cost-optimization
 tags:
 - nOps

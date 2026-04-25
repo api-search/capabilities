@@ -18,31 +18,31 @@ provider_name: Apache Giraph
 provider_slug: apache-giraph
 search_terms:
 - hadoop
-- iterative bsp graph algorithm execution at scale
-- list all giraph graph processing jobs
-- get detailed status of a specific giraph job
-- get yarn cluster metrics
-- apache giraph
-- list giraph jobs
-- list jobs
-- job status tracking and cluster capacity monitoring
-- get cluster metrics
-- get giraph job
 - graph processing
-- monitoring
-- engineers running large-scale graph algorithms with giraph on hadoop
-- get metrics
-- cluster capacity metrics
-- big data
-- giraph graph processing jobs
-- apache
-- get yarn cluster capacity metrics for running giraph jobs
-- retired
-- Data Engineer
-- bsp
 - list all giraph graph processing jobs running on yarn
-- open source
+- Data Engineer
+- list jobs
+- giraph graph processing jobs
+- get yarn cluster capacity metrics for running giraph jobs
+- get detailed status of a specific giraph job
+- cluster capacity metrics
+- monitoring
+- list giraph jobs
+- get cluster metrics
+- big data
+- get yarn cluster metrics
+- bsp
 - monitor giraph graph processing jobs on hadoop yarn
+- apache
+- retired
+- get giraph job
+- list all giraph graph processing jobs
+- iterative bsp graph algorithm execution at scale
+- job status tracking and cluster capacity monitoring
+- get metrics
+- open source
+- engineers running large-scale graph algorithms with giraph on hadoop
+- apache giraph
 slug: giraph-graph-processing
 tags:
 - Apache Giraph

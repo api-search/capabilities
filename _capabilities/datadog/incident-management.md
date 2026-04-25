@@ -55,65 +55,65 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- createIncident
-- listEvents
-- delete incident
-- list events for correlation
-- incidents
-- events
-- updateIncident
-- update an incident
-- post an event during incident
+- list monitors
+- list events
+- event correlation
+- delete an incident
 - analytics
-- get monitor
-- getIncident
+- mute monitor during incident
+- dashboards
+- list monitors to check alert status
+- individual incident operations
+- search events
+- unmute monitor
+- t1
+- listMonitors
+- visualizations
+- update an incident
+- get an incident
+- monitoring
+- events
+- create event
+- individual monitor
+- incident management
+- list events for correlation
+- search events related to incident
+- listEvents
+- updateIncident
+- update incident
+- listIncidents
+- datadog
 - unmute a monitor after incident resolution
 - platform
-- get incident
-- create an incident
-- individual monitor
-- delete an incident
 - monitor status
-- getMonitor
-- monitors
-- event correlation
+- createIncident
+- get monitor status
+- get incident
 - create incident
-- mute monitor during incident
-- muteMonitor
-- get a specific event
-- datadog
-- visualizations
+- delete incident
+- list incident teams
+- incidents
 - createEvent
+- create an incident
+- get event
 - post an event
 - get a monitor
-- searchEvents
-- search events
-- monitoring
-- get monitor status
-- unmute monitor
-- update incident
-- get incident details
-- update an existing incident
-- list incident teams
-- list incidents
-- list events
-- individual incident operations
+- post an event during incident
+- get monitor
 - mute monitor
-- t1
-- listIncidents
-- incident management
-- deleteIncident
-- list monitors
-- search events related to incident
-- list monitors to check alert status
-- get event
+- getMonitor
+- muteMonitor
+- monitors
+- get a specific event
 - mute a monitor during incident response
+- getIncident
 - mute a monitor
-- get an incident
-- listMonitors
-- dashboards
+- list incidents
 - create a new incident
-- create event
+- deleteIncident
+- update an existing incident
+- get incident details
+- searchEvents
 slug: incident-management
 tags:
 - Datadog

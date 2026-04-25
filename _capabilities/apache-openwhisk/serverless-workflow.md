@@ -29,50 +29,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- manages namespaces, limits, and platform configuration
-- DevOps Engineer
-- serverless computing
+- apache openwhisk
+- action packages
+- faas
+- functions
+- Backend Developer
 - list all event triggers
-- list rules
-- Platform Administrator
-- builds event-driven applications using serverless functions
-- get activation
-- serverless
+- list activations
+- DevOps Engineer
 - invoke a serverless action/function
-- event driven
-- event-driven architecture
-- cloud native
-- create action
-- event triggers
 - fire trigger
 - manages serverless deployments and ci/cd pipelines
-- list all trigger-to-action rules
-- action packages
-- delete action
-- list packages
-- list activations
+- list rules
+- functions as a service
 - list triggers
-- apache openwhisk
+- manages namespaces, limits, and platform configuration
+- event-driven architecture
+- apache
+- serverless
+- delete action
+- list all actions
+- invoke an action
+- fire an event trigger
 - list all action packages
 - list activation history
-- activation history
+- get activation
+- Platform Administrator
+- list packages
 - invoke action
-- Backend Developer
-- invoke an action
-- list all serverless functions/actions
-- apache
-- functions
-- faas
+- serverless computing
+- event triggers
+- cloud native
 - event-driven
-- list all actions
-- functions as a service
-- create a new serverless action
-- delete a serverless action
-- fire an event trigger
-- get details of a specific activation
-- serverless function actions
-- open source
+- event driven
 - list actions
+- create a new serverless action
+- builds event-driven applications using serverless functions
+- open source
+- serverless function actions
+- list all serverless functions/actions
+- create action
+- activation history
+- list all trigger-to-action rules
+- get details of a specific activation
+- delete a serverless action
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

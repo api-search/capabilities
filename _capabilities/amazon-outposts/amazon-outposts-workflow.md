@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon Outposts
 provider_slug: amazon-outposts
 search_terms:
-- developer using amazon outposts apis
-- list and manage openapi.yml resources
-- infrastructure
-- hybrid cloud
-- list openapi.yml
-- aws
-- list amazon outposts resources
-- Developer
-- primary amazon outposts resources
-- list resources
 - core api workflow
-- on-premises
+- list resources
+- list amazon outposts resources
+- infrastructure
+- list and manage openapi.yml resources
 - amazon outposts
+- aws
+- on-premises
+- list openapi.yml
+- developer using amazon outposts apis
+- hybrid cloud
+- Developer
 - edge computing
+- primary amazon outposts resources
 slug: amazon-outposts-workflow
 tags:
 - Amazon Outposts

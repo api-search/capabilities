@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- list console connections
-- get details of a specific image
-- instance action
-- get instance
-- compute
-- list vnic attachments in a compartment
-- list volume attachments in a compartment
-- update instance details
-- terminate instance
-- get image
-- create a custom image from an instance
-- database
-- list instance console connections
-- enterprise
-- list images
-- manage a specific image
-- update image details
-- oracle
-- delete a custom image
-- create image
-- create a custom image
-- update image
-- launch instance
-- get details of a specific instance
-- list vnic attachments
-- saas
-- delete image
-- list compute instances in a compartment
-- manage compute images
-- cloud
-- list instances
-- perform an action on an instance (start, stop, reset)
-- list compute images
-- list volume attachments
-- update instance
-- terminate an instance
-- get image details
-- get instance details
-- infrastructure
-- launch a new compute instance
-- list shapes
 - list available compute shapes
-- manage compute instances
+- list images
+- list shapes
+- list vnic attachments in a compartment
+- get image details
+- update instance details
+- saas
+- terminate an instance
+- delete a custom image
+- enterprise
+- get details of a specific image
+- create a custom image
+- database
+- update instance
+- create a custom image from an instance
+- list console connections
+- terminate instance
+- list compute instances in a compartment
 - manage a specific compute instance
+- compute
+- launch a new compute instance
+- list instances
+- get instance details
+- manage a specific image
+- oracle
+- update image
+- manage compute images
+- create image
+- instance action
+- get image
+- list instance console connections
+- get details of a specific instance
+- perform an action on an instance (start, stop, reset)
+- update image details
+- manage compute instances
+- get instance
+- cloud
+- list vnic attachments
+- delete image
+- list volume attachments
+- list compute images
+- list volume attachments in a compartment
+- launch instance
+- infrastructure
 slug: cloud-compute
 tags:
 - Oracle

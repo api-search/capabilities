@@ -33,43 +33,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- Platform Engineer
-- list endpoint connections
-- accept pending vpc endpoint connection requests
-- manages vpc endpoint services and private connectivity architecture
-- list connections
-- security
-- reject vpc endpoint connection requests
-- accept connections
-- list vpc endpoints
-- list available vpc endpoint services for private connectivity
-- private vpc connectivity workflow
-- list vpc endpoints in the account
-- list endpoint services
-- list pending and active connections to endpoint services
-- aws
-- create a vpc endpoint service
-- vpc endpoint consumer management
+- create vpc endpoint
 - vpc
-- create endpoint service
-- vpc endpoint service provider management
 - Network Engineer
-- list vpc endpoint services
-- reject endpoint connections
+- accept pending vpc endpoint connection requests
+- vpc endpoint consumer management
 - endpoint services
+- reject vpc endpoint connection requests
+- list vpc endpoints
+- create a vpc endpoint service
+- consumes endpoint services and manages vpc endpoints for internal services
+- create a vpc endpoint service backed by a load balancer
+- vpc endpoint service provider management
+- list vpc endpoints in the account
+- Platform Engineer
+- list endpoint services
+- create a private vpc endpoint for an aws service or endpoint service
+- security
+- zero trust
+- accept endpoint connections
+- list connections
+- list endpoint connections
+- private connectivity
+- private vpc connectivity workflow
+- list pending and active connections to endpoint services
+- manages vpc endpoint services and private connectivity architecture
+- list vpc endpoint services
+- networking
+- reject endpoint connections
+- list available vpc endpoint services for private connectivity
+- endpoint connection management
 - create endpoint
+- create a vpc endpoint
+- aws
 - list endpoints
 - amazon
-- networking
-- create vpc endpoint
-- accept endpoint connections
-- consumes endpoint services and manages vpc endpoints for internal services
-- endpoint connection management
-- create a private vpc endpoint for an aws service or endpoint service
-- create a vpc endpoint
-- create a vpc endpoint service backed by a load balancer
-- zero trust
-- private connectivity
+- create endpoint service
+- accept connections
 slug: private-connectivity
 tags:
 - Amazon

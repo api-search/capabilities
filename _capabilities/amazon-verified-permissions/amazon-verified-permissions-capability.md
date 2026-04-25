@@ -9,8 +9,8 @@ provider_name: Amazon Verified Permissions
 provider_slug: amazon-verified-permissions
 search_terms:
 - permissions
-- aws
 - security
+- aws
 - authorization
 slug: amazon-verified-permissions-capability
 tags: []

@@ -29,37 +29,37 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- create a workflow.
-- list all connectors.
-- marketplace
-- browse pre-built connectors.
-- workflow automation
 - ipaas
-- get analytics
-- developer implementing and automating embedded integration workflows.
-- list connectors
+- browse all available embedded integrations, optionally filtered by category.
+- list workflows
+- list all integration workflows configured in the embedded marketplace.
+- get analytics data.
+- list all connectors.
+- integration platform
+- manage workflows.
+- saas
+- embedded integrations
+- browse and manage integrations.
 - integrations
 - create workflow
-- apifuse
-- browse all available embedded integrations, optionally filtered by category.
-- list workflows.
-- list all pre-built connectors available for embedding into your saas product.
-- SaaS Product Manager
-- manage workflows.
+- create a workflow.
 - list integrations
-- list workflows
-- saas
-- Integration Developer
-- create a new automation workflow connecting two or more integrated platforms.
-- browse and manage integrations.
-- embedded integrations
-- integration analytics.
-- integration platform
-- get analytics data.
-- product manager building native integrations into a saas product.
-- list all integration workflows configured in the embedded marketplace.
-- managing native integrations within saas products.
+- browse pre-built connectors.
+- apifuse
+- workflow automation
+- SaaS Product Manager
+- list all pre-built connectors available for embedding into your saas product.
+- developer implementing and automating embedded integration workflows.
 - list all integrations.
+- integration analytics.
+- get analytics
+- marketplace
+- list workflows.
+- list connectors
+- Integration Developer
+- product manager building native integrations into a saas product.
+- managing native integrations within saas products.
+- create a new automation workflow connecting two or more integrated platforms.
 - retrieve integration usage analytics including total tasks, active integrations, and active users.
 slug: embedded-integration-management
 tags:

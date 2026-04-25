@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- media
-- content management
-- manage youtube videos
-- list youtube videos matching criteria
-- list caption tracks for a video
-- update a caption track
-- list youtube playlists
-- manage youtube playlists
-- update playlist details
-- google
-- list videos matching criteria
-- update video metadata
-- playlists
-- create playlist
-- streaming
-- upload video
-- delete caption
-- list captions
-- upload a new video
-- update video
 - manage items within playlists
-- list videos
-- add a video to a playlist
-- video
-- upload a caption track
-- captions
-- youtube
-- list playlists
-- videos
-- update playlist
-- delete a playlist
-- delete a caption track
-- delete playlist
-- create a new playlist
-- upload a new video to youtube
-- delete a video from youtube
-- add playlist item
-- upload a new caption track
-- remove a video from a playlist
-- list items in a playlist
-- delete video
-- delete a video
-- remove playlist item
-- social
+- update playlist details
 - list playlist items
 - manage video captions
-- update caption
+- manage youtube playlists
+- google
+- playlists
+- list playlists
 - upload caption
+- delete video
+- delete playlist
+- create a new playlist
+- list items in a playlist
+- delete caption
+- list youtube videos matching criteria
+- delete a playlist
+- delete a video
+- remove playlist item
+- list captions
+- list videos
+- add a video to a playlist
+- update video
+- upload video
+- video
+- update caption
+- social
+- upload a new caption track
+- update playlist
+- create playlist
+- upload a caption track
+- update a caption track
+- delete a caption track
+- remove a video from a playlist
+- streaming
+- delete a video from youtube
+- list videos matching criteria
+- media
+- youtube
+- upload a new video to youtube
+- manage youtube videos
+- content management
+- list caption tracks for a video
+- videos
+- add playlist item
+- list youtube playlists
+- update video metadata
+- captions
+- upload a new video
 slug: content-management
 tags:
 - YouTube

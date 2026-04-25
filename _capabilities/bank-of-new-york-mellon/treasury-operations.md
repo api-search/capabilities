@@ -9,35 +9,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- institutional treasury operations including accounts, payments, and funds transfers
-- list bny accounts
-- treasury
-- executive managing corporate liquidity and treasury operations
-- bny mellon
-- initiate a funds transfer between bny mellon accounts
-- get current and available balances for a bny mellon account
-- institutional investor or fund manager using bny custody and treasury services
 - initiate funds transfer
-- payments
-- list bny mellon treasury accounts for the authenticated client
-- wire transfers
-- institutional banking
 - Treasury Analyst
-- list transactions for a bny mellon account
-- asset servicing
-- get the status and details of a bny mellon payment
-- Corporate Treasurer
-- wire, ach, swift, and chips payment execution
-- internal funds transfers and liquidity management
+- initiate a funds transfer between bny mellon accounts
 - get payment status
-- get account balances
-- list transactions
-- banking
-- initiate a payment (wire, ach, swift, chips) through bny mellon
-- analyst executing treasury transactions and reporting
-- initiate payment
-- Institutional Client
+- wire, ach, swift, and chips payment execution
+- list bny accounts
 - institutional account management and cash positioning
+- executive managing corporate liquidity and treasury operations
+- treasury
+- institutional banking
+- wire transfers
+- bny mellon
+- analyst executing treasury transactions and reporting
+- list transactions
+- initiate payment
+- get the status and details of a bny mellon payment
+- banking
+- payments
+- Corporate Treasurer
+- list bny mellon treasury accounts for the authenticated client
+- internal funds transfers and liquidity management
+- institutional treasury operations including accounts, payments, and funds transfers
+- asset servicing
+- get account balances
+- initiate a payment (wire, ach, swift, chips) through bny mellon
+- Institutional Client
+- institutional investor or fund manager using bny custody and treasury services
+- list transactions for a bny mellon account
+- get current and available balances for a bny mellon account
 slug: treasury-operations
 tags:
 - BNY Mellon

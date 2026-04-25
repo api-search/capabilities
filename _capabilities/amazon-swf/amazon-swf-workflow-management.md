@@ -8,9 +8,9 @@ personas: []
 provider_name: Amazon Simple Workflow Service
 provider_slug: amazon-swf
 search_terms:
+- automation
 - aws
 - workflow
-- automation
 - task coordination
 slug: amazon-swf-workflow-management
 tags: []

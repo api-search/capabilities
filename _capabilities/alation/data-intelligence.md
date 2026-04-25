@@ -28,57 +28,57 @@ personas: []
 provider_name: Alation
 provider_slug: alation
 search_terms:
-- governance
-- unified data catalog search, lineage, governance, and discovery
-- lineage
-- get aggregated context from alation for ai-powered data discovery. returns structured catalog information for a natural language query.
-- list business glossary terms from the alation catalog.
-- manage policies, glossary, and data quality
-- data quality
-- data governance
-- track data flows between systems and tables
-- get lineage for a catalog object
-- business glossary
-- search catalog
-- metadata management
-- search alation catalog
-- get alation context
-- list glossary terms
-- search all alation catalog objects
-- get lineage
-- search and browse catalog assets
-- list all data sources configured in the alation catalog.
-- list all data sources
-- list alation columns
 - search the alation catalog
-- data intelligence
-- search
-- get alation lineage
-- Data Steward
-- get upstream and downstream data lineage for a catalog object in alation, showing how data flows between tables and systems.
-- data lineage
-- get alation data quality
-- list data governance policies in the alation catalog.
-- list columns for a table in the alation catalog.
-- list alation tables
-- discovers and explores data assets in the alation catalog. searches for tables and columns, reviews lineage, and accesses metadata to understand data context.
-- builds ai applications using alation's catalog context and search apis. integrates aggregated context into llm workflows for data discovery.
-- ai
-- alation
-- get data lineage
-- Data Analyst
-- list tables in an alation schema or data source.
-- get data quality scores for a catalog object in alation.
+- list all data sources configured in the alation catalog.
+- track data flows between systems and tables
+- search the alation data catalog for tables, columns, data sources, glossary terms, and articles. returns ranked results with metadata.
+- metadata management
 - list datasources
-- list data sources
-- list alation datasources
-- list alation glossary terms
+- get alation lineage
+- AI Agent Developer
+- get alation context
+- data governance
+- get lineage for a catalog object
+- get data lineage
+- list alation policies
+- discovers and explores data assets in the alation catalog. searches for tables and columns, reviews lineage, and accesses metadata to understand data context.
+- Data Steward
+- data quality
+- list data governance policies in the alation catalog.
+- get lineage
+- data intelligence
+- search and browse catalog assets
 - business glossary terms
 - manages data quality, governance policies, and business glossary in the alation catalog. assigns stewardship, creates glossary terms, and monitors data quality scores.
-- search the alation data catalog for tables, columns, data sources, glossary terms, and articles. returns ranked results with metadata.
-- list alation policies
-- AI Agent Developer
+- alation
+- manage policies, glossary, and data quality
+- unified data catalog search, lineage, governance, and discovery
+- search all alation catalog objects
+- list alation tables
+- governance
+- list all data sources
+- get alation data quality
+- get data quality scores for a catalog object in alation.
+- list columns for a table in the alation catalog.
+- business glossary
+- list alation datasources
+- data lineage
+- Data Analyst
+- get aggregated context from alation for ai-powered data discovery. returns structured catalog information for a natural language query.
+- get upstream and downstream data lineage for a catalog object in alation, showing how data flows between tables and systems.
+- builds ai applications using alation's catalog context and search apis. integrates aggregated context into llm workflows for data discovery.
+- list glossary terms
+- search catalog
 - data catalog
+- search
+- list tables in an alation schema or data source.
+- list alation columns
+- list alation glossary terms
+- search alation catalog
+- ai
+- lineage
+- list data sources
+- list business glossary terms from the alation catalog.
 slug: data-intelligence
 tags:
 - Alation

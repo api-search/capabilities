@@ -37,53 +37,53 @@ personas: []
 provider_name: Allianz
 provider_slug: allianz-docs
 search_terms:
-- price estimation and quote generation for end customers
-- insurance lead referral resources
+- complete an insurance policy application on behalf of a customer
+- retrieve an insurance certificate of currency for a bound policy
+- insurance policy completion resources
+- policy completion and certificate management
 - create a self-service quote session for a customer to complete via internet banking
-- create self service quote
-- embedded insurance product distribution through partner apis
-- email an insurance quote to a customer for asynchronous review
-- create a staff-assisted insurance price estimate for home, landlord, or car insurance
-- create self service policy
-- send quote email
-- submit a customer insurance lead to the allianz sales team for follow-up
-- insurance certificate retrieval resources
-- partner integration
 - create a staff-assisted insurance quote for a customer
-- complete a policy application via staff-assisted workflow
+- Financial Institution Integration Team
+- create self service policy
+- retrieve the status and summary of an existing insurance quote
+- send quote email
+- submit a customer lead to the allianz sales team
+- complete policy assisted
+- get certificate
+- australia
+- get quote summary
+- insurance lead referral resources
+- submit lead referral
+- get the current status and details of a quote
+- partner integration
+- quoting
+- create a self-service policy completion session for customer
+- unified workflow for partners embedding allianz insurance into customer journeys
+- financial services
+- get quote rating factors
 - get certificate of currency
-- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
+- insurance certificate retrieval resources
+- submit lead
+- retrieve a certificate of currency for a policy
+- submit a customer insurance lead to the allianz sales team for follow-up
+- price estimation and quote generation for end customers
 - Partner Developer
+- get the detailed premium breakdown and rating factors for an insurance quote
+- insurance
+- create a staff-assisted insurance price estimate for home, landlord, or car insurance
+- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
+- create self service quote
+- insurance quoting and estimation resources
+- email an insurance quote to a customer for asynchronous review
+- embedded insurance
+- get the rating factors behind a quote premium
+- create assisted quote
 - email a quote to a customer for their review
 - asset management
-- get certificate
-- insurance policy completion resources
-- insurance
-- create assisted quote
-- policy completion and certificate management
-- retrieve an insurance certificate of currency for a bound policy
-- get the detailed premium breakdown and rating factors for an insurance quote
-- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
-- quoting
-- australia
-- create a self-service policy completion session for customer
-- submit lead
-- financial services
-- retrieve a certificate of currency for a policy
-- insurance quoting and estimation resources
-- complete policy assisted
-- unified workflow for partners embedding allianz insurance into customer journeys
-- get the rating factors behind a quote premium
+- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
+- embedded insurance product distribution through partner apis
+- complete a policy application via staff-assisted workflow
 - individual quote detail and rating factor resources
-- complete an insurance policy application on behalf of a customer
-- embedded insurance
-- submit lead referral
-- retrieve the status and summary of an existing insurance quote
-- get the current status and details of a quote
-- get quote summary
-- get quote rating factors
-- submit a customer lead to the allianz sales team
-- Financial Institution Integration Team
 slug: insurance-partner-integration
 tags:
 - Insurance

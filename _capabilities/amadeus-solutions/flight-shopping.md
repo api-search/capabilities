@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- travel
-- developer building online travel agency flight search and booking flows.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- airlines
-- search flights advanced
-- complete flight shopping flow from search through price confirmation.
-- flights
-- search for available flight offers.
-- confirm current price and availability.
-- booking
-- search
-- search available flights by origin, destination, and date.
-- flight offer discovery and comparison.
-- search flights
-- hotels
-- OTA Developer
 - confirm flight price
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
 - upsell, seat selection, and add-on services.
-- confirm pricing for a selected flight offer.
-- confirm price
-- developer building conversational travel assistants for flight search.
+- confirm current price and availability.
+- OTA Developer
+- flight offer discovery and comparison.
+- complete flight shopping flow from search through price confirmation.
 - advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- price confirmation and validation before booking.
-- shopping
-- gds
+- developer building conversational travel assistants for flight search.
+- booking
 - travel technology
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- pricing
+- confirm price
+- confirm pricing for a selected flight offer.
+- hotels
+- price confirmation and validation before booking.
+- gds
+- search available flights by origin, destination, and date.
+- travel
+- search for available flight offers.
 - Travel Chatbot Developer
+- search flights advanced
+- developer building online travel agency flight search and booking flows.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- shopping
+- airlines
+- search
+- search flights
+- pricing
 - amadeus
+- flights
 slug: flight-shopping
 tags:
 - Amadeus

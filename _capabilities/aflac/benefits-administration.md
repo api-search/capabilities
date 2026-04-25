@@ -39,42 +39,42 @@ personas:
 provider_name: aflac
 provider_slug: aflac
 search_terms:
-- list aflac supplemental insurance claims.
-- specific enrollment operations.
 - create enrollment
-- claims management.
-- benefits administrator
-- list aflac supplemental insurance benefit enrollments for a group or employee.
-- enroll an employee in an aflac supplemental insurance product.
-- claim submission and tracking for qualifying health events.
-- submit an aflac supplemental insurance claim for a qualifying event.
-- claims
-- eligibility verification.
-- verify an employee's eligibility for an aflac supplemental insurance product.
-- verify eligibility
+- list enrollments
 - full supplemental insurance benefits lifecycle from enrollment through claims and eligibility verification.
+- specific enrollment operations.
+- claim submission and tracking for qualifying health events.
+- list aflac supplemental insurance benefit enrollments for a group or employee.
+- real-time eligibility verification for supplemental insurance products.
+- enroll an employee in an aflac supplemental insurance product.
+- list aflac supplemental insurance claims.
+- hr platform engineer
+- submit a claim.
+- list benefit enrollments.
+- submit claim
+- employee enrollment in supplemental insurance products.
+- verify an employee's eligibility for an aflac supplemental insurance product.
 - create a new enrollment.
+- claims management.
+- enrollment
+- retrieve an enrollment.
+- verify employee eligibility.
+- hr or benefits team member managing employee enrollment, claims, and eligibility for supplemental insurance.
+- benefits
+- backend developer integrating aflac supplemental insurance enrollment into an hr or benefits administration platform.
+- aflac
 - get enrollment
 - insurance
-- submit claim
-- backend developer integrating aflac supplemental insurance enrollment into an hr or benefits administration platform.
-- list claims.
-- verify employee eligibility.
-- benefit enrollment management.
-- list enrollments
-- list benefit enrollments.
+- eligibility verification.
 - active supplemental insurance policy tracking.
 - list claims
 - retrieve a specific aflac enrollment record.
-- hr platform engineer
-- employee enrollment in supplemental insurance products.
-- aflac
-- hr or benefits team member managing employee enrollment, claims, and eligibility for supplemental insurance.
-- benefits
-- enrollment
-- retrieve an enrollment.
-- submit a claim.
-- real-time eligibility verification for supplemental insurance products.
+- claims
+- benefits administrator
+- list claims.
+- benefit enrollment management.
+- verify eligibility
+- submit an aflac supplemental insurance claim for a qualifying event.
 slug: benefits-administration
 tags:
 - Aflac

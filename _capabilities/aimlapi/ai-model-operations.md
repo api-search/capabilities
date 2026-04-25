@@ -25,39 +25,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- speech
-- artificial intelligence
-- video generation
-- generate vector embeddings for semantic search and rag applications
-- create embedding
 - generate an image from a text prompt using aimlapi image generation models
-- api gateway
-- generate an image
 - ai engineer evaluating and comparing models for ml pipelines
-- create chat completion
-- AI Engineer
-- list all models
 - generate embeddings
 - developer integrating ai capabilities into applications via aimlapi
-- create image
-- api key management and model discovery
-- machine learning
-- llm
-- developer tools
-- create a chat completion
-- image generation
-- embeddings
-- ai models
-- list models
-- chat completions via 400+ llms
-- list available models
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
 - ai model inference across modalities
-- create embeddings
-- Developer
 - generate a chat response from any of 400+ ai language models via aimlapi
-- generate image
+- developer tools
+- AI Engineer
+- create a chat completion
+- chat completions via 400+ llms
+- create chat completion
 - discover all 400+ available ai models on aimlapi platform
+- machine learning
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- ai models
+- llm
+- image generation
+- artificial intelligence
+- api gateway
+- generate an image
+- list available models
+- embeddings
+- create embeddings
+- create image
+- generate image
+- generate vector embeddings for semantic search and rag applications
+- list models
+- list all models
+- create embedding
+- video generation
+- speech
+- api key management and model discovery
+- Developer
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

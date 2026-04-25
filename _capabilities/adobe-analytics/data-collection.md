@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- events
-- list dimensions to validate event data mapping.
-- upload events
-- analytics
-- validate event files.
-- get report suite
-- report suite details.
-- list available dimensions to validate event data mapping.
 - bulk data insertion
-- validate a batch events file without ingesting data.
+- list dimensions to validate event data mapping.
+- analytics
+- upload events
+- validate events
+- marketing
+- list available dimensions to validate event data mapping.
+- upload a batch events file.
+- report suite discovery for data collection targeting.
+- events
 - web analytics
 - list available metrics to validate event data mapping.
-- metric discovery for event mapping.
-- validate events
-- get details for a report suite to verify collection configuration.
-- digital marketing
-- list metrics to validate event data mapping.
-- upload a batch events file.
-- validate a batch events file without ingesting.
-- server side
-- get report suite details.
-- list report suites to identify collection targets.
-- list metrics
-- customer intelligence
-- adobe
-- data collection
-- upload a gzip-compressed csv file of batched analytics event data.
-- adobe analytics
-- list report suites
-- batch event upload.
 - dimension discovery for event mapping.
-- report suite discovery for data collection targeting.
-- marketing
-- list report suites to identify data collection targets.
-- business intelligence
 - list dimensions
+- batch event upload.
+- list report suites to identify data collection targets.
+- customer intelligence
+- list report suites
+- upload a gzip-compressed csv file of batched analytics event data.
+- adobe
+- digital marketing
+- list report suites to identify collection targets.
+- business intelligence
+- metric discovery for event mapping.
+- adobe analytics
+- validate a batch events file without ingesting.
+- get report suite details.
+- validate a batch events file without ingesting data.
+- get report suite
+- get details for a report suite to verify collection configuration.
+- data collection
+- validate event files.
+- server side
+- list metrics to validate event data mapping.
+- report suite details.
+- list metrics
 slug: data-collection
 tags:
 - Adobe Analytics

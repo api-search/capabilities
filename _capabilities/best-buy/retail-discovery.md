@@ -39,56 +39,56 @@ personas: []
 provider_name: Best Buy
 provider_slug: best-buy
 search_terms:
-- get trending best buy products
-- search the best buy product catalog by keyword, price range, or product attributes
-- get also-bought product recommendations
-- get store
-- get hours, services, and contact information for a specific best buy store
-- get products frequently purchased with this sku
-- get detailed product information for a specific best buy sku including price, availability, and specs
-- get the most viewed best buy products in the last 48 hours
-- get also bought products
-- behavioral recommendations and trending data
-- get product
-- store location, hours, and services
-- get also viewed products
-- product search, filtering, and attribute retrieval
 - get the top trending best buy products by category or across the entire catalog
-- get trending products
-- developer building retail integrations and shopping applications
-- get store details including hours and services
-- get products frequently purchased together with a specific sku for bundle recommendations
-- products
-- consumer electronics
-- get a specific best buy product by sku
-- get trending
-- find best buy stores with proximity search
-- e-commerce
-- recommendations
-- get also viewed
-- get products frequently viewed alongside this sku
-- find stores
-- Partner
-- best buy
-- stores
-- get detailed product information by sku
-- get a specific best buy store
+- get trending best buy products
 - search and browse the best buy product catalog
-- find best buy stores near a location using postal code or gps coordinates
+- get also viewed products
+- get also bought
+- get a specific best buy product by sku
 - find best buy stores near a location
+- get also bought products
 - product search, store lookup, and recommendations
 - list products
-- get also bought
+- developer building retail integrations and shopping applications
+- authorized best buy commerce partner building shopping experiences
+- find best buy stores near a location using postal code or gps coordinates
+- get product
 - list stores
 - search and filter best buy products with keyword search and attribute filtering
-- search products
-- get most viewed products
-- get products frequently viewed alongside a specific sku for cross-sell discovery
-- get top trending products by view velocity
-- retail
-- authorized best buy commerce partner building shopping experiences
-- Developer
+- store location, hours, and services
+- get store details including hours and services
+- behavioral recommendations and trending data
 - get also-viewed product recommendations
+- find best buy stores with proximity search
+- consumer electronics
+- get trending products
+- get the most viewed best buy products in the last 48 hours
+- get also viewed
+- get products frequently purchased together with a specific sku for bundle recommendations
+- stores
+- get hours, services, and contact information for a specific best buy store
+- get products frequently viewed alongside this sku
+- product search, filtering, and attribute retrieval
+- retail
+- get detailed product information for a specific best buy sku including price, availability, and specs
+- get products frequently viewed alongside a specific sku for cross-sell discovery
+- find stores
+- get top trending products by view velocity
+- e-commerce
+- get trending
+- get most viewed products
+- best buy
+- search the best buy product catalog by keyword, price range, or product attributes
+- get also-bought product recommendations
+- products
+- recommendations
+- get a specific best buy store
+- search products
+- Partner
+- get store
+- Developer
+- get products frequently purchased with this sku
+- get detailed product information by sku
 slug: retail-discovery
 tags:
 - Best Buy

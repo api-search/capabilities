@@ -9,23 +9,23 @@ personas: []
 provider_name: Amazon Kinesis Data Firehose
 provider_slug: amazon-kinesis-firehose
 search_terms:
-- amazon kinesis data firehose
-- manages resources and configurations
 - streaming
-- delivery streams describe delivery stream
 - creates a kinesis data firehose delivery stream.
 - workflow
 - delivery streams list delivery streams
+- data delivery
+- analytics
+- lists your delivery streams in alphabetical order of their names.
 - aws
+- delivery streams describe delivery stream
+- delivery streams create delivery stream
 - Administrator
 - integrates api into applications
-- analytics
 - unified workflow for amazon kinesis data firehose resource management
-- Developer
-- data delivery
+- manages resources and configurations
 - describes the specified delivery stream.
-- lists your delivery streams in alphabetical order of their names.
-- delivery streams create delivery stream
+- Developer
+- amazon kinesis data firehose
 slug: amazon-kinesis-firehose-workflow
 tags:
 - Amazon Kinesis Data Firehose

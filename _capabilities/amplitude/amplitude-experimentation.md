@@ -66,67 +66,67 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude get a flag
-- amplitude create a flag
-- experimentation
-- listFlags
-- amplitude evaluate variants for a user
-- experiment management api getDeployment
-- analyzes data and manages cohorts
-- experiment management api listExperiments
-- analytics
-- data governance
-- identity management
 - getFlags
-- amplitude get flag configurations
-- experiment management api createExperiment
-- experiment management api getExperiment
-- product analytics
-- experiment evaluation api evaluateVariantsGet
-- getExperiment
-- ingests and exports event data
-- listVersions
-- experiment management api updateFlag
-- amplitude evaluate variants for a user via get
-- experiment management api getFlag
-- amplitude list flag and experiment versions
-- feature flags
-- updateFlag
-- unified workflow for sending events and identifying users. for data engineers.
-- runs experiments and feature flags
-- amplitude update a flag
-- amplitude list all deployments
-- amplitude get a deployment
-- user behavior
-- manages privacy and compliance
-- manage event schemas and chart annotations. for data governance teams.
-- experiment management api listVersions
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- privacy compliance
-- evaluateVariantsGet
-- amplitude update an experiment
-- amplitude create an experiment
-- createExperiment
-- listExperiments
-- amplitude get an experiment
-- listDeployments
-- amplitude
-- evaluateVariants
-- getDeployment
-- amplitude list all experiments
-- experiment management api listFlags
-- experiment management api listDeployments
-- experiment evaluation api getFlags
-- experiment management api updateExperiment
 - experiment management api createFlag
-- createFlag
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- experiment evaluation api evaluateVariants
-- updateExperiment
-- export raw event data and manage behavioral cohorts. for data analysts.
-- a/b testing
-- amplitude list all flags
+- experiment management api listDeployments
+- experiment management api getFlag
+- analyzes data and manages cohorts
+- analytics
+- experimentation
+- amplitude get flag configurations
+- experiment management api updateExperiment
+- updateFlag
+- amplitude create a flag
+- amplitude update a flag
+- runs experiments and feature flags
+- getExperiment
+- data governance
+- getDeployment
+- amplitude evaluate variants for a user via get
+- experiment management api createExperiment
+- evaluateVariantsGet
+- manages privacy and compliance
 - getFlag
+- createExperiment
+- amplitude get an experiment
+- listExperiments
+- evaluateVariants
+- amplitude list all flags
+- amplitude
+- listDeployments
+- amplitude list all deployments
+- listFlags
+- amplitude list flag and experiment versions
+- experiment management api getDeployment
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- manage event schemas and chart annotations. for data governance teams.
+- product analytics
+- experiment management api updateFlag
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- ingests and exports event data
+- experiment evaluation api evaluateVariantsGet
+- experiment management api listVersions
+- amplitude list all experiments
+- amplitude update an experiment
+- experiment evaluation api getFlags
+- experiment management api listExperiments
+- feature flags
+- export raw event data and manage behavioral cohorts. for data analysts.
+- identity management
+- user behavior
+- updateExperiment
+- privacy compliance
+- unified workflow for sending events and identifying users. for data engineers.
+- a/b testing
+- createFlag
+- experiment management api getExperiment
+- amplitude get a deployment
+- amplitude get a flag
+- amplitude evaluate variants for a user
+- experiment evaluation api evaluateVariants
+- listVersions
+- amplitude create an experiment
+- experiment management api listFlags
 slug: amplitude-experimentation
 tags:
 - Amplitude

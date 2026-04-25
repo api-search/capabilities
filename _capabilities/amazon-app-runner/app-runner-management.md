@@ -13,22 +13,22 @@ personas: []
 provider_name: Amazon App Runner
 provider_slug: amazon-app-runner
 search_terms:
-- list amazon app runner api resources.
-- manage amazon app runner api resources.
-- Backend Developer
-- DevOps Engineer
-- managed service
+- list resources
+- developer deploying web apis and services on app runner.
+- serverless
+- containers
+- web applications
 - aws
 - ci/cd
-- containers
-- developer deploying web apis and services on app runner.
-- deployment
-- serverless
-- amazon
-- list resources
-- web applications
 - list resources.
+- managed service
+- amazon
+- deployment
+- Backend Developer
+- manage amazon app runner api resources.
+- list amazon app runner api resources.
 - engineer automating deployments using app runner api.
+- DevOps Engineer
 slug: app-runner-management
 tags:
 - Amazon
