@@ -9,10 +9,10 @@ provider_name: Barclays
 provider_slug: barclays
 search_terms:
 - credit cards
-- psd2
-- open banking
 - finance
 - payments
+- psd2
+- open banking
 - uk banking
 - banking
 slug: open-banking

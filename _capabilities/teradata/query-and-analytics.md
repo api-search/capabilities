@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- available systems.
-- executes queries and analyzes data across vantage systems.
-- analytics
-- sql queries.
-- Data Engineer
-- administers querygrid systems, nodes, and software.
-- data management
-- execute a sql query.
-- health monitoring and issue detection.
-- query sessions.
-- manage querygrid data fabric infrastructure.
-- manages data fabric infrastructure and cross-system connectivity.
-- get query status
-- list query systems
-- execute a sql query against teradata vantage.
 - enterprise
+- sql
+- get query status
+- execute a sql query against teradata vantage.
+- integrates applications with teradata via rest apis.
+- execute sql queries and analytics.
+- cloud
+- machine learning
+- health monitoring and issue detection.
+- execute a sql query.
+- list cross-system query summaries from querygrid.
 - database
+- list querygrid queries
+- create a query session.
+- get the status and results of a submitted query.
+- Data Engineer
 - query
 - list available vantage systems.
-- machine learning
-- execute sql queries and analytics.
-- create session
-- sql
-- list available vantage systems for query execution.
-- list cross-system query summaries from querygrid.
-- integrates applications with teradata via rest apis.
 - sql query execution and session management.
-- Platform Administrator
-- Application Developer
-- list querygrid queries
-- Data Analyst
-- create a query session.
-- system and fabric configuration management.
-- data warehousing
-- execute query
-- teradata
 - create a new query session on a vantage system.
-- cloud
-- get the status and results of a submitted query.
+- Data Analyst
+- manages data fabric infrastructure and cross-system connectivity.
+- data management
+- create session
+- manage querygrid data fabric infrastructure.
+- list query systems
+- sql queries.
+- executes queries and analyzes data across vantage systems.
+- analytics
+- Platform Administrator
+- administers querygrid systems, nodes, and software.
+- Application Developer
+- query sessions.
+- data warehousing
+- system and fabric configuration management.
+- execute query
+- available systems.
+- list available vantage systems for query execution.
+- teradata
 slug: query-and-analytics
 tags:
 - Teradata

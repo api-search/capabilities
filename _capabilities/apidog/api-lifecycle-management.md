@@ -17,35 +17,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- documentation
-- import
-- collaboration
-- mocking
-- import openapi
-- import an openapi/swagger specification into an apidog project for design-first development.
-- Platform Engineer
-- import openapi specification into apidog project.
-- import a postman collection into apidog for converting to openapi-based workflows.
-- import api specifications from various formats.
-- unified workflow for managing api specifications lifecycle.
-- export openapi
-- api design
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- api testing
-- import postman collection
-- export
-- api lifecycle
-- platform
-- export openapi spec
 - engineer automating api specification workflows via ci/cd integration.
-- apidog
-- export openapi specification from apidog project.
-- design-first
-- export api specifications to standard formats.
-- import openapi spec
-- API Developer
-- managing the complete lifecycle of api specifications from design to deployment.
+- collaboration
+- api design
 - developer building and managing apis using apidog's design-first platform.
+- api testing
+- mocking
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- import api specifications from various formats.
+- import a postman collection into apidog for converting to openapi-based workflows.
+- design-first
+- unified workflow for managing api specifications lifecycle.
+- import
+- Platform Engineer
+- managing the complete lifecycle of api specifications from design to deployment.
+- platform
+- export
+- import openapi
+- export openapi
+- export openapi specification from apidog project.
+- export api specifications to standard formats.
+- documentation
+- api lifecycle
+- import openapi spec
+- export openapi spec
+- import postman collection
+- apidog
+- import an openapi/swagger specification into an apidog project for design-first development.
+- import openapi specification into apidog project.
+- API Developer
 slug: api-lifecycle-management
 tags:
 - Apidog

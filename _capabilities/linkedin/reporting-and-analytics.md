@@ -18,35 +18,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- archives communications for regulatory compliance.
 - sales intelligence, lead management, and crm integration.
-- analytics
-- marketing
-- authentication, sharing, and verification for consumer apps.
-- social media
-- recruiting
-- get learning activity reports
-- manages b2b ad campaigns and audience targeting on linkedin.
-- employee development tracking and content access.
-- reporting
-- careers
-- business
+- data portability and advertiser transparency for dma.
 - learning
-- linkedin
+- archives communications for regulatory compliance.
+- get learning activity reports
+- retrieve learning activity reports.
 - retrieve ad analytics by various pivots and dimensions.
-- retrieve ad analytics by various pivots.
-- posts jobs and manages candidates through ats integrations.
-- integrates linkedin authentication and sharing into applications.
-- b2b advertising, audience targeting, and campaign analytics.
+- authentication, sharing, and verification for consumer apps.
+- job posting, recruiting, and applicant tracking.
+- reporting
 - retrieve learning activity reports aggregated by account, group, individual, or content.
+- b2b advertising, audience targeting, and campaign analytics.
+- get ad analytics
+- integrates linkedin authentication and sharing into applications.
+- marketing
+- business
+- linkedin
 - uses sales navigator for lead generation and crm sync.
-- message archiving and regulatory communications governance.
+- careers
+- employee development tracking and content access.
 - professional networking
 - tracks employee learning activity and completions.
-- retrieve learning activity reports.
-- job posting, recruiting, and applicant tracking.
-- get ad analytics
-- data portability and advertiser transparency for dma.
+- retrieve ad analytics by various pivots.
+- analytics
+- message archiving and regulatory communications governance.
+- posts jobs and manages candidates through ats integrations.
+- recruiting
+- social media
+- manages b2b ad campaigns and audience targeting on linkedin.
 slug: reporting-and-analytics
 tags:
 - LinkedIn

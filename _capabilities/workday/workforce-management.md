@@ -36,60 +36,60 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- get worker
-- list all locations
-- staffing list job profiles
-- worker management
-- workforce management
-- person data
-- list all people
-- list workers
-- get change history for a worker
-- hcm get worker inbox tasks
-- staffing create job change
-- initiate a worker termination
-- staffing terminate worker
-- human resources
-- hcm get worker
-- hcm list locations
-- saas
-- list all positions
 - person list people
-- list all workers
 - supervisory organizations
-- country reference data
-- get inbox tasks for a worker
-- hcm list organizations
-- position management
-- workday
-- list all currencies
 - financial management
-- enterprise software
-- staffing list positions
+- list all job profiles
+- get a worker by id
+- person get work contact
 - list people
 - common list countries
-- list all countries
-- list organizations
+- list all people
+- list workers
+- enterprise software
+- list all locations
 - list all workers with optional search and pagination
-- create a job change request
-- get a person by id
-- list positions
-- person get home contact
-- list supervisory organizations
-- worker detail
-- hcm list workers
-- get work contact information
-- list all job profiles
-- get a specific worker by id
-- person get work contact
-- list countries
-- person get person
-- get home contact information
-- common list currencies
-- hcm get worker history
+- get change history for a worker
 - hcm
+- worker detail
+- get work contact information
+- hcm list workers
+- staffing list positions
+- list positions
+- hcm get worker history
+- position management
+- initiate a worker termination
+- list supervisory organizations
+- list all currencies
+- get worker
+- staffing terminate worker
+- list all positions
+- get inbox tasks for a worker
+- hcm list locations
+- workday
+- person get person
+- common list currencies
+- get a specific worker by id
+- staffing create job change
 - cloud computing
-- get a worker by id
+- person data
+- hcm get worker
+- list all workers
+- create a job change request
+- person get home contact
+- list countries
+- hcm list organizations
+- country reference data
+- human resources
+- list all countries
+- workforce management
+- staffing list job profiles
+- worker management
+- list organizations
+- get a person by id
+- get home contact information
+- hcm get worker inbox tasks
+- saas
 slug: workforce-management
 tags:
 - Workday

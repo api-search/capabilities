@@ -17,40 +17,40 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: apache-airflow
 search_terms:
-- trigger a dag run.
-- Data Engineer
-- dag
-- list task instances for monitoring dag run progress.
-- data pipeline
-- workflow
-- get the status of an airflow dag run.
-- list airflow resource pools.
-- workflow orchestration
-- get dag run status
-- apache
+- dag management
 - engineers who build and manage data pipelines using airflow dags.
-- trigger dag run
-- trigger an airflow dag run.
+- workflow orchestration
 - list airflow variables.
 - list pools
-- operators who monitor and maintain airflow platform health.
 - Platform Operator
 - task scheduling
-- list all airflow dags.
-- list dags
-- list variables
-- dag management
 - list all dags.
-- list connections
-- list airflow connections for integrations.
-- apache airflow
-- scheduling
-- etl
+- get dag run status
+- list task instances for monitoring dag run progress.
+- data pipeline
 - open source
 - python
-- dag and task management capability.
-- orchestration
+- scheduling
+- list dags
+- trigger an airflow dag run.
+- apache airflow
+- apache
+- dag
+- operators who monitor and maintain airflow platform health.
+- Data Engineer
+- list all airflow dags.
+- trigger dag run
+- workflow
 - list task instances
+- orchestration
+- list airflow resource pools.
+- etl
+- dag and task management capability.
+- list variables
+- trigger a dag run.
+- list airflow connections for integrations.
+- list connections
+- get the status of an airflow dag run.
 slug: airflow-orchestration
 tags:
 - Apache Airflow

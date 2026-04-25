@@ -8,12 +8,12 @@ personas: []
 provider_name: Apache CloudStack
 provider_slug: apache-cloudstack
 search_terms:
-- virtualization
 - open source
+- infrastructure
+- virtualization
+- apache
 - cloud
 - iaas
-- apache
-- infrastructure
 slug: cloudstack-iaas-management
 tags: []
 tools: []

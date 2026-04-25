@@ -17,49 +17,49 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- procurement
-- create an invoice
-- create a requisition
-- ariba
-- create a purchase order
 - create a receipt
-- get purchase order
-- create receipt
 - list suppliers
-- list line items
-- get requisition details
-- create invoice
-- list purchase orders
-- reject an invoice
-- update a purchase order
-- get purchase order details
-- procure-to-pay
-- cancel purchase order
-- reject invoice
-- spend analysis
-- list invoices
-- sap
-- b2b
-- list receipts for an order
-- get supplier profile
-- purchase order management
-- supplier management
-- supply chain
-- get invoice
-- get supplier
-- get requisition
-- list receipts
-- list requisitions
-- list line items for an order
-- cancel a purchase order
-- create requisition
-- approve invoice
 - sourcing
+- list line items
+- get supplier profile
+- list invoices
+- supply chain
+- create a purchase order
+- approve invoice
 - approve an invoice for payment
-- create purchase order
-- get invoice details
-- contract management
 - update purchase order
+- create invoice
+- get purchase order
+- list receipts for an order
+- get invoice details
+- cancel a purchase order
+- get supplier
+- list line items for an order
+- purchase order management
+- reject invoice
+- get invoice
+- create an invoice
+- list requisitions
+- b2b
+- create receipt
+- list purchase orders
+- update a purchase order
+- sap
+- get requisition
+- supplier management
+- list receipts
+- procure-to-pay
+- spend analysis
+- reject an invoice
+- procurement
+- create purchase order
+- cancel purchase order
+- contract management
+- ariba
+- create requisition
+- create a requisition
+- get requisition details
+- get purchase order details
 slug: procure-to-pay
 tags:
 - SAP

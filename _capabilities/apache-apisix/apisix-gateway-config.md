@@ -33,44 +33,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- engineers deploying and managing api gateway infrastructure.
-- delete an apisix route.
-- list all gateway routes.
-- list all api consumers and their plugin configs.
-- create route
-- route, upstream, consumer, and ssl management workflow.
-- administrators configuring routes, consumers, and security policies.
-- traffic management
-- create a new api consumer with authentication plugins.
-- authentication
-- create a new gateway route.
-- list all apisix gateway routes.
-- create a new apisix route for traffic routing.
-- Platform Engineer
-- create a backend upstream.
-- API Gateway Administrator
-- list consumers
-- apache apisix
-- apache
-- configuration
-- update route
-- api gateway
-- create an api consumer.
-- list api consumers.
-- list backend upstreams.
-- create upstream
-- create consumer
-- update an existing apisix route.
-- kubernetes
-- list routes
-- lua
-- cloud native
-- open source
-- list upstreams
-- delete route
 - nginx
+- list all apisix gateway routes.
+- update an existing apisix route.
+- delete route
+- list upstreams
+- lua
+- list api consumers.
+- create an api consumer.
+- authentication
+- list all api consumers and their plugin configs.
+- create a new apisix route for traffic routing.
+- list backend upstreams.
+- open source
 - create a new backend upstream with load balancing config.
+- cloud native
+- list consumers
+- API Gateway Administrator
+- create consumer
+- engineers deploying and managing api gateway infrastructure.
+- apache
+- create upstream
+- Platform Engineer
+- list all gateway routes.
+- traffic management
+- administrators configuring routes, consumers, and security policies.
+- update route
+- delete an apisix route.
+- list routes
+- create a backend upstream.
+- create a new api consumer with authentication plugins.
+- route, upstream, consumer, and ssl management workflow.
+- api gateway
+- kubernetes
+- create a new gateway route.
 - list all backend upstream configurations.
+- configuration
+- create route
+- apache apisix
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

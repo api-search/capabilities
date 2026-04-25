@@ -50,50 +50,50 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- update application
-- query metric data
-- list applications
-- create deployment
-- get application hosts
-- query metric data for an application
-- analytics
-- list deployments for an application
-- send events
-- update application settings
-- list available metric names for an application
-- get application details
-- list application hosts
-- get details of a specific application
-- developer
-- monitoring
-- devops
-- get key transactions
-- send custom events for application tracking
-- list deployment records for an application
-- list all monitored applications
-- get applications
-- send custom events
-- performance
-- deployments
-- record a new deployment
 - get or update an application
-- get deployments
-- list available metric names
-- list application metrics
-- analysis
-- apm
+- list deployments for an application
+- list applications
+- update application
 - new relic
-- application monitoring
-- platform
+- get applications
+- list deployment records for an application
+- query metric data for an application
+- get key transactions
+- list available metric names for an application
+- get application
+- devops
+- observability
 - record a new deployment for an application
-- get application metrics data
+- list application hosts
 - list hosts for an application
+- update application settings
+- send custom events
+- platform
+- performance
+- monitoring
+- deployments
+- list key transactions
+- send custom events for application tracking
+- list application metrics
+- get deployments
+- list all monitored applications
+- application monitoring
+- developer
 - query metric data points for an application
 - get application metrics
-- observability
-- get application
-- list key transactions
+- create deployment
+- query metric data
+- send events
+- get application metrics data
+- record a new deployment
+- get details of a specific application
+- get application hosts
+- analysis
+- list available metric names
+- analytics
 - infrastructure
+- apm
+- get application details
 - manage deployments
 slug: application-monitoring
 tags:

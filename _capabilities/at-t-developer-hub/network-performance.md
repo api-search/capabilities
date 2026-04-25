@@ -34,58 +34,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- qod create session
-- IoT Engineer
-- connectivity
-- App Developer
-- get qod session
-- list active quality on demand sessions for the application
-- 5g network quality monitoring and on-demand qos enhancement
-- quality on demand session management
-- developer building fraud prevention and identity verification using network signals
-- network performance
-- check roaming
-- network-based security signals for fraud detection and identity verification
-- request enhanced qos for a device
-- terminate qod session
-- network-based fraud prevention and authentication using sim swap and number verification
-- check if an at&t subscriber device is roaming on a partner network and get location
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- qod list sessions
-- mobile or web developer building connectivity-aware applications
-- device roaming status
-- device connectivity status
-- qod get session
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- device status
-- check if device is roaming
-- 5g
-- list qod sessions
-- terminate an active quality on demand session and restore normal network quality
-- telecommunications
 - check device connectivity and network connection type
-- individual qod session
-- developer implementing passwordless or frictionless mobile authentication
-- get the current status of a quality on demand session
-- get qod session status
-- mobile network-based authentication without otp
-- create qod session
-- sim swap
-- list active qod sessions
-- delete qod session
-- camara
-- device check connectivity
-- at&t
-- quality of service
-- check connectivity
-- device check roaming
-- Security Developer
-- network apis
+- network-based fraud prevention and authentication using sim swap and number verification
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
 - Identity Developer
+- device check connectivity
+- sim swap
+- network performance
+- connectivity
+- network apis
+- telecommunications
+- qod get session
+- at&t
+- device check roaming
+- check connectivity
+- check roaming
+- individual qod session
+- App Developer
 - edge computing
+- camara
+- mobile or web developer building connectivity-aware applications
+- IoT Engineer
+- device roaming status
+- terminate an active quality on demand session and restore normal network quality
+- device connectivity status
+- get qod session status
+- delete qod session
+- check if device is roaming
+- quality on demand session management
 - qod terminate session
+- Security Developer
+- request enhanced qos for a device
+- get qod session
+- developer building fraud prevention and identity verification using network signals
+- list active qod sessions
+- get the current status of a quality on demand session
+- qod create session
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- network-based security signals for fraud detection and identity verification
+- check if an at&t subscriber device is roaming on a partner network and get location
+- list qod sessions
+- 5g
+- quality of service
+- create qod session
+- terminate qod session
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- list active quality on demand sessions for the application
+- qod list sessions
+- developer implementing passwordless or frictionless mobile authentication
+- mobile network-based authentication without otp
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- device status
+- 5g network quality monitoring and on-demand qos enhancement
 slug: network-performance
 tags:
 - AT&T

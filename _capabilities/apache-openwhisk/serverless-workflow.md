@@ -29,50 +29,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- apache openwhisk
-- action packages
-- faas
-- functions
-- Backend Developer
-- list all event triggers
-- list activations
-- DevOps Engineer
-- invoke a serverless action/function
-- fire trigger
-- manages serverless deployments and ci/cd pipelines
-- list rules
-- functions as a service
-- list triggers
-- manages namespaces, limits, and platform configuration
-- event-driven architecture
-- apache
-- serverless
-- delete action
-- list all actions
 - invoke an action
-- fire an event trigger
-- list all action packages
-- list activation history
+- list all trigger-to-action rules
 - get activation
-- Platform Administrator
-- list packages
-- invoke action
-- serverless computing
-- event triggers
-- cloud native
-- event-driven
-- event driven
-- list actions
-- create a new serverless action
 - builds event-driven applications using serverless functions
-- open source
-- serverless function actions
 - list all serverless functions/actions
 - create action
-- activation history
-- list all trigger-to-action rules
+- create a new serverless action
+- action packages
+- list packages
 - get details of a specific activation
+- activation history
+- fire an event trigger
+- Backend Developer
+- open source
+- cloud native
+- event triggers
+- invoke a serverless action/function
+- apache openwhisk
+- list actions
+- apache
+- event-driven architecture
+- event driven
+- list triggers
+- list all event triggers
+- delete action
+- invoke action
+- serverless
+- list activation history
+- event-driven
+- list all actions
+- manages namespaces, limits, and platform configuration
+- list rules
+- manages serverless deployments and ci/cd pipelines
+- serverless computing
+- functions
+- Platform Administrator
+- fire trigger
+- functions as a service
 - delete a serverless action
+- DevOps Engineer
+- faas
+- list all action packages
+- list activations
+- serverless function actions
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

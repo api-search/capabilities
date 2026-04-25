@@ -8,11 +8,11 @@ personas: []
 provider_name: Baker Hughes
 provider_slug: baker-hughes
 search_terms:
-- oil and gas
-- digital energy
-- industrial iot
-- asset performance management
 - energy technology
+- industrial iot
+- oil and gas
+- asset performance management
+- digital energy
 slug: baker-hughes-industrial-platform
 tags: []
 tools: []

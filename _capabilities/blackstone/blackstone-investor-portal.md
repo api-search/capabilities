@@ -8,11 +8,11 @@ personas: []
 provider_name: Blackstone
 provider_slug: blackstone
 search_terms:
-- investment management
-- alternative assets
+- finance
 - private equity
 - real estate
-- finance
+- investment management
+- alternative assets
 slug: blackstone-investor-portal
 tags: []
 tools: []

@@ -29,42 +29,42 @@ personas: []
 provider_name: Azure Kubernetes Service
 provider_slug: azure-kubernetes-service
 search_terms:
-- stop cluster
-- create or update an aks managed cluster
-- delete an aks managed cluster
-- list all aks managed clusters in a subscription
-- create or update agent pool
-- list agent pools
-- cluster lifecycle operations
-- list all managed clusters
-- start a stopped aks cluster
-- get the upgrade profile for a cluster
-- list agent pools in a cluster
-- get upgrade profile
-- devops
-- containers
-- create or update cluster
-- agent pool operations
-- create or update an agent pool
-- get agent pool
-- get cluster details
-- get cluster
-- get agent pool details
-- cluster management
-- delete cluster
-- kubernetes
-- get details of an aks cluster
-- start cluster
-- azure
-- delete an agent pool from a cluster
-- delete agent pool
-- stop a running aks cluster
-- single cluster operations
-- create or update a cluster
-- cloud
-- delete a cluster
-- orchestration
 - list clusters
+- get details of an aks cluster
+- azure
+- cloud
+- delete agent pool
+- list all managed clusters
+- delete a cluster
+- devops
+- start a stopped aks cluster
+- create or update an aks managed cluster
+- cluster management
+- create or update cluster
+- create or update a cluster
+- get agent pool details
+- delete an aks managed cluster
+- start cluster
+- create or update agent pool
+- get upgrade profile
+- containers
+- get the upgrade profile for a cluster
+- delete cluster
+- orchestration
+- agent pool operations
+- get cluster details
+- list agent pools in a cluster
+- cluster lifecycle operations
+- single cluster operations
+- get cluster
+- create or update an agent pool
+- delete an agent pool from a cluster
+- stop a running aks cluster
+- stop cluster
+- get agent pool
+- list agent pools
+- kubernetes
+- list all aks managed clusters in a subscription
 slug: cluster-management
 tags:
 - Azure

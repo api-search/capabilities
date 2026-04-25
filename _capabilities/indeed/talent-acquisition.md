@@ -33,48 +33,48 @@ personas: []
 provider_name: Indeed
 provider_slug: indeed
 search_terms:
-- register candidate sync
-- create an employer entity on indeed.
-- create employer
-- job search
-- hiring
-- candidate management.
 - register employer for candidate sync.
-- recruiting
-- jobs
-- job posting management.
-- get candidate
-- list jobs
-- get job posting
-- get employer
-- list candidates for an employer.
-- list job postings for an employer.
-- job postings
-- update a job posting.
-- create a job posting on indeed.
-- careers
-- create job posting
-- create job
-- update candidate disposition status.
-- indeed
-- update employer details.
-- get job posting details.
-- get candidate details.
-- talent acquisition
-- update disposition
-- get employer details.
-- list candidates
-- list employer jobs
-- expire job posting
-- create an employer entity.
-- individual employer management.
-- employment
-- update job posting
-- update employer
-- employer management.
 - create a job posting.
+- recruiting
+- update employer
+- create an employer entity on indeed.
+- expire job posting
+- list job postings for an employer.
+- get job posting
+- update employer details.
+- register candidate sync
+- job postings
+- list jobs
+- create employer
+- list candidates for an employer.
+- create job
+- employer management.
+- indeed
+- get candidate
+- get employer details.
+- hiring
+- talent acquisition
+- job search
+- careers
 - list job postings.
+- create an employer entity.
+- get candidate details.
+- individual employer management.
+- update candidate disposition status.
+- create a job posting on indeed.
+- update a job posting.
+- update disposition
+- employment
+- create job posting
+- list employer jobs
+- get job posting details.
+- job posting management.
+- update job posting
 - expire a job posting.
+- candidate management.
+- jobs
+- list candidates
+- get employer
 slug: talent-acquisition
 tags:
 - Indeed

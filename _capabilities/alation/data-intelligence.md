@@ -28,57 +28,57 @@ personas: []
 provider_name: Alation
 provider_slug: alation
 search_terms:
-- search the alation catalog
-- list all data sources configured in the alation catalog.
-- track data flows between systems and tables
+- list columns for a table in the alation catalog.
+- list alation policies
 - search the alation data catalog for tables, columns, data sources, glossary terms, and articles. returns ranked results with metadata.
 - metadata management
-- list datasources
-- get alation lineage
-- AI Agent Developer
-- get alation context
-- data governance
 - get lineage for a catalog object
-- get data lineage
-- list alation policies
-- discovers and explores data assets in the alation catalog. searches for tables and columns, reviews lineage, and accesses metadata to understand data context.
-- Data Steward
-- data quality
 - list data governance policies in the alation catalog.
-- get lineage
-- data intelligence
-- search and browse catalog assets
-- business glossary terms
-- manages data quality, governance policies, and business glossary in the alation catalog. assigns stewardship, creates glossary terms, and monitors data quality scores.
-- alation
-- manage policies, glossary, and data quality
-- unified data catalog search, lineage, governance, and discovery
-- search all alation catalog objects
-- list alation tables
-- governance
-- list all data sources
-- get alation data quality
-- get data quality scores for a catalog object in alation.
-- list columns for a table in the alation catalog.
-- business glossary
-- list alation datasources
-- data lineage
-- Data Analyst
-- get aggregated context from alation for ai-powered data discovery. returns structured catalog information for a natural language query.
-- get upstream and downstream data lineage for a catalog object in alation, showing how data flows between tables and systems.
-- builds ai applications using alation's catalog context and search apis. integrates aggregated context into llm workflows for data discovery.
-- list glossary terms
 - search catalog
-- data catalog
 - search
-- list tables in an alation schema or data source.
-- list alation columns
-- list alation glossary terms
-- search alation catalog
+- list glossary terms
+- governance
+- get data quality scores for a catalog object in alation.
+- Data Steward
 - ai
+- get alation context
+- business glossary terms
+- get data lineage
+- search alation catalog
+- get lineage
+- get upstream and downstream data lineage for a catalog object in alation, showing how data flows between tables and systems.
+- get aggregated context from alation for ai-powered data discovery. returns structured catalog information for a natural language query.
+- builds ai applications using alation's catalog context and search apis. integrates aggregated context into llm workflows for data discovery.
+- search all alation catalog objects
+- track data flows between systems and tables
+- search and browse catalog assets
+- list alation datasources
+- list all data sources
+- manage policies, glossary, and data quality
+- list tables in an alation schema or data source.
+- list all data sources configured in the alation catalog.
 - lineage
-- list data sources
+- business glossary
+- data governance
+- Data Analyst
+- get alation lineage
+- get alation data quality
+- data intelligence
 - list business glossary terms from the alation catalog.
+- alation
+- list alation columns
+- list datasources
+- data quality
+- unified data catalog search, lineage, governance, and discovery
+- list alation glossary terms
+- list data sources
+- data lineage
+- discovers and explores data assets in the alation catalog. searches for tables and columns, reviews lineage, and accesses metadata to understand data context.
+- AI Agent Developer
+- data catalog
+- search the alation catalog
+- list alation tables
+- manages data quality, governance policies, and business glossary in the alation catalog. assigns stewardship, creates glossary terms, and monitors data quality scores.
 slug: data-intelligence
 tags:
 - Alation

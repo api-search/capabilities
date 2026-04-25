@@ -47,47 +47,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- financial management
 - campus solutions
-- chatbot
-- customer records
-- list opportunities
+- chatbot intents
+- list customers
+- retrieve available chatbot intents.
+- sales
+- erp
+- retrieve notifications for the current user.
+- sales opportunities
+- process a chatbot intent fulfillment request.
+- list notifications
+- retrieve customer records.
+- create case
+- enterprise software
+- list intents
+- hcm
 - campus solutions.
+- chatbot
+- retrieve support and service cases.
+- list cases
+- list opportunities
+- customer records
+- retrieve details for a specific customer.
+- individual customer details
 - send a notification via email, text, or in-app channels.
+- case management
+- fulfill intent
+- create a new support or service case.
+- customer engagement
 - crm
 - send notification
-- retrieve sales opportunities.
-- retrieve available chatbot intents.
-- create case
-- individual customer details
-- fulfill intent
-- financial and supply chain management.
-- list notifications
-- human capital management.
-- financial management
-- enterprise software
-- peoplesoft
-- case management
-- sales opportunities
-- supply chain management
-- retrieve details for a specific customer.
-- peopletools platform services.
-- list intents
-- notification management
-- retrieve notifications for the current user.
-- process a chatbot intent fulfillment request.
-- list customers
 - support and service cases
-- list cases
-- create a new support or service case.
-- sales
-- chatbot intents
-- chatbot intent fulfillments
-- retrieve support and service cases.
-- retrieve customer records.
+- peopletools platform services.
+- retrieve sales opportunities.
+- human capital management.
+- supply chain management
 - get customer
-- erp
-- customer engagement
-- hcm
+- peoplesoft
+- financial and supply chain management.
+- notification management
+- chatbot intent fulfillments
 slug: customer-engagement
 tags:
 - PeopleSoft

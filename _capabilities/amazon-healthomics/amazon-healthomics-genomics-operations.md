@@ -8,11 +8,11 @@ personas: []
 provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
-- cloud computing
+- life sciences
 - aws
 - healthcare
-- life sciences
 - genomics
+- cloud computing
 - bioinformatics
 slug: amazon-healthomics-genomics-operations
 tags: []

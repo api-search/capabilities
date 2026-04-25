@@ -9,9 +9,9 @@ provider_name: Amazon Transfer Family
 provider_slug: amazon-transfer-family
 search_terms:
 - sftp
+- file transfer
 - ftp
 - aws
-- file transfer
 slug: amazon-transfer-family-capability
 tags: []
 tools: []

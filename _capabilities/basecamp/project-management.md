@@ -9,35 +9,35 @@ personas: []
 provider_name: Basecamp
 provider_slug: basecamp
 search_terms:
-- list to-dos in a basecamp todolist
-- list all people in the basecamp account
-- list team members
 - Project Manager
-- to-dos, messages, and team member management
-- collaboration
-- post message
-- create a new basecamp project
-- post a new message to a basecamp message board
-- list todos
-- saas
-- create a new to-do item in a basecamp project
-- full basecamp project lifecycle including todos, messages, scheduling, and team management
-- manager overseeing project progress, tasks, and team communication
 - Team Member
-- individual contributor managing tasks and collaborating on projects
-- list all active basecamp projects for the account
+- list todos
+- collaboration
+- list basecamp projects
 - basecamp
 - create todo
-- team communication
-- list messages on a basecamp message board
-- list basecamp projects
-- create basecamp project
-- developer integrating basecamp into custom workflows and tools
-- project creation and lifecycle management
 - project management
-- list messages
-- Developer
+- developer integrating basecamp into custom workflows and tools
+- individual contributor managing tasks and collaborating on projects
+- manager overseeing project progress, tasks, and team communication
+- list all people in the basecamp account
+- list all active basecamp projects for the account
+- list team members
+- full basecamp project lifecycle including todos, messages, scheduling, and team management
 - rest
+- team communication
+- post a new message to a basecamp message board
+- post message
+- list messages on a basecamp message board
+- Developer
+- create basecamp project
+- create a new to-do item in a basecamp project
+- project creation and lifecycle management
+- create a new basecamp project
+- to-dos, messages, and team member management
+- list to-dos in a basecamp todolist
+- list messages
+- saas
 slug: project-management
 tags:
 - Basecamp

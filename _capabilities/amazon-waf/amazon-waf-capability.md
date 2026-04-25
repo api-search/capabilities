@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon WAF
 provider_slug: amazon-waf
 search_terms:
-- security
-- waf
-- aws
 - bot management
-- web application firewall
+- aws
+- security
 - ddos protection
+- waf
+- web application firewall
 slug: amazon-waf-capability
 tags: []
 tools: []

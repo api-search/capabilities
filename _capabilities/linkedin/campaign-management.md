@@ -64,78 +64,78 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- retrieve a campaign by id.
-- get ad account by id
-- create ad account
-- archives communications for regulatory compliance.
 - sales intelligence, lead management, and crm integration.
-- update an ad account.
-- archive campaign
-- search for campaigns.
-- get ad targeting facets
-- marketing
-- authentication, sharing, and verification for consumer apps.
-- social media
-- retrieve dmp segments.
-- archive a campaign.
-- delete a campaign group.
-- get campaign by id
 - search ad targeting entities
 - recruiting
-- search for ad accounts.
-- media plan forecasting.
-- retrieve an ad account by id.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- employee development tracking and content access.
-- audience count estimation.
-- create a new dmp segment.
-- ad targeting facets.
-- careers
-- create dmp segment
-- individual ad account operations.
-- retrieve available ad targeting facets.
-- stream company data to a dmp segment.
-- get audience count by targeting criteria.
-- search ad accounts
+- media planning
+- delete a campaign group.
+- data portability and advertiser transparency for dma.
+- create ad account
+- archives communications for regulatory compliance.
+- search campaign groups
 - create creative
 - fetch audience insights by targeting criteria.
-- search for campaign groups.
-- create a new ad creative.
-- forecast reach and impressions.
+- retrieve available ad targeting facets.
+- audience insights.
 - search campaigns
-- stream users
-- business
-- update ad account
-- media planning
-- linkedin
-- creative management.
-- search for ad targeting entities.
-- campaign group management.
-- posts jobs and manages candidates through ats integrations.
-- create a new ad account.
+- search ad accounts
+- get ad targeting facets
 - get audience insights
-- integrates linkedin authentication and sharing into applications.
+- forecast impressions
+- stream companies
+- create a new ad account.
+- stream users
+- search for ad accounts.
+- authentication, sharing, and verification for consumer apps.
+- job posting, recruiting, and applicant tracking.
 - b2b advertising, audience targeting, and campaign analytics.
 - get audience count
-- campaign management.
-- delete campaign group
-- stream user data to a dmp segment.
-- uses sales navigator for lead generation and crm sync.
-- dmp segment management.
-- message archiving and regulatory communications governance.
-- advertising
-- professional networking
-- search campaign groups
-- ad account management.
-- tracks employee learning activity and completions.
+- archive campaign
+- forecast reach and impressions.
+- integrates linkedin authentication and sharing into applications.
+- update an ad account.
+- media plan forecasting.
+- audience count estimation.
+- campaign group management.
 - get dmp segments
-- stream companies
+- marketing
+- business
+- campaign management.
+- linkedin
+- ad account management.
+- ad targeting facets.
+- stream company data to a dmp segment.
+- uses sales navigator for lead generation and crm sync.
+- careers
+- employee development tracking and content access.
+- retrieve dmp segments.
+- create a new dmp segment.
+- individual ad account operations.
+- professional networking
+- retrieve an ad account by id.
+- search for campaigns.
+- retrieve a campaign by id.
+- search for campaign groups.
+- advertising
+- tracks employee learning activity and completions.
+- get ad account by id
+- get campaign by id
+- update ad account
+- create a new ad creative.
 - forecast reach and impressions for media planning.
-- audience insights.
-- job posting, recruiting, and applicant tracking.
-- data portability and advertiser transparency for dma.
-- forecast impressions
+- stream user data to a dmp segment.
+- creative management.
+- dmp segment management.
+- archive a campaign.
+- delete campaign group
+- get audience count by targeting criteria.
+- search for ad targeting entities.
 - campaign management
+- posts jobs and manages candidates through ats integrations.
+- message archiving and regulatory communications governance.
+- social media
+- create dmp segment
+- manages b2b ad campaigns and audience targeting on linkedin.
 slug: campaign-management
 tags:
 - LinkedIn

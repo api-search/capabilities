@@ -45,54 +45,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- create an image repository
-- container service management
-- create a virtual warehouse
-- delete a warehouse
-- fetch service logs
-- list alerts
-- list image repositories
-- execute an alert
-- fetch warehouse
-- get service logs
-- data lakes
-- containers
-- suspend a running service
-- create warehouse
-- resume service
-- create a warehouse
-- database
-- list compute pools
-- create a monitoring alert
-- execute alert
-- fetch warehouse details
-- compute
-- delete warehouse
-- sql
-- create a container service
-- data sharing
 - compute pool management
-- get service status
-- suspend service
-- warehouse management
-- create a compute pool
-- resume a suspended service
-- create service
-- create an alert
-- create image repository
-- alert management
-- list virtual warehouses
 - list services
+- list virtual warehouses
+- execute an alert
+- sql
+- container service management
+- list alerts
+- list compute pools
+- create warehouse
+- get service logs
 - snowflake
-- data warehousing
-- create alert
-- create a service
-- list container services
-- list warehouses
+- resume service
+- create a monitoring alert
+- database
+- delete a warehouse
+- suspend a running service
 - list monitoring alerts
-- fetch service status
-- infrastructure
+- create a warehouse
+- containers
+- create image repository
+- create an image repository
 - create compute pool
+- list image repositories
+- list container services
+- create an alert
+- create service
+- resume a suspended service
+- get service status
+- delete warehouse
+- create alert
+- data lakes
+- fetch warehouse
+- fetch service logs
+- execute alert
+- create a virtual warehouse
+- fetch warehouse details
+- alert management
+- create a service
+- create a container service
+- suspend service
+- infrastructure
+- data sharing
+- warehouse management
+- fetch service status
+- data warehousing
+- compute
+- list warehouses
+- create a compute pool
 slug: compute-and-services
 tags:
 - Snowflake

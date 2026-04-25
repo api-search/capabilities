@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- manage items within playlists
-- update playlist details
-- list playlist items
-- manage video captions
-- manage youtube playlists
-- google
-- playlists
-- list playlists
-- upload caption
-- delete video
-- delete playlist
-- create a new playlist
-- list items in a playlist
-- delete caption
-- list youtube videos matching criteria
-- delete a playlist
-- delete a video
 - remove playlist item
-- list captions
-- list videos
-- add a video to a playlist
 - update video
+- manage youtube playlists
+- add a video to a playlist
 - upload video
-- video
-- update caption
-- social
-- upload a new caption track
-- update playlist
-- create playlist
-- upload a caption track
-- update a caption track
-- delete a caption track
-- remove a video from a playlist
-- streaming
+- list playlists
 - delete a video from youtube
-- list videos matching criteria
-- media
+- create playlist
 - youtube
+- media
+- list caption tracks for a video
+- remove a video from a playlist
+- playlists
+- list videos matching criteria
+- list captions
+- delete caption
+- delete video
+- streaming
 - upload a new video to youtube
+- manage items within playlists
+- upload caption
+- list videos
+- upload a caption track
+- video
+- manage video captions
+- update video metadata
+- list items in a playlist
+- videos
+- captions
+- delete a caption track
+- update caption
+- list playlist items
+- update playlist details
+- google
+- upload a new caption track
+- update a caption track
+- add playlist item
+- delete playlist
+- list youtube playlists
+- social
+- create a new playlist
+- upload a new video
 - manage youtube videos
 - content management
-- list caption tracks for a video
-- videos
-- add playlist item
-- list youtube playlists
-- update video metadata
-- captions
-- upload a new video
+- delete a playlist
+- delete a video
+- list youtube videos matching criteria
+- update playlist
 slug: content-management
 tags:
 - YouTube

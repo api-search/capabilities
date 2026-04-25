@@ -8,13 +8,13 @@ personas: []
 provider_name: Apache Hudi
 provider_slug: apache-hudi
 search_terms:
-- acid
-- data lake
 - open source
-- lakehouse
-- big data
+- acid
 - incremental processing
 - apache
+- data lake
+- big data
+- lakehouse
 slug: hudi-lakehouse-management
 tags: []
 tools: []

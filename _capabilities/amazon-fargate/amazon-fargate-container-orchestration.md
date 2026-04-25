@@ -49,71 +49,71 @@ personas: []
 provider_name: Amazon Fargate
 provider_slug: amazon-fargate
 search_terms:
-- Cloud Architect
-- deregister a task definition revision
-- list all services running in a fargate cluster
-- create a new cluster
-- manage services
-- stop a running fargate task
-- get details of a task definition
-- deploying and scaling microservices architectures
-- ecs
-- get deployment status and health of fargate services
-- register task definition
-- amazon fargate
-- list tasks
-- list all registered task definitions
-- full lifecycle management of serverless container workloads
-- DevOps Engineer
-- describe services
-- manage ecs clusters
-- architects designing serverless container solutions
-- devops
-- containers
-- run task
-- delete service
-- delete a fargate cluster
-- launch a fargate task with specified cpu, memory, and networking
-- engineers deploying and operating containerized applications
-- managing container lifecycle from definition to deployment
-- deregister task definition
-- Platform Engineer
-- microservices
-- running workloads without managing infrastructure
-- list all ecs clusters for fargate workloads
-- deploy a persistent fargate service with load balancing and auto-scaling
-- list all ecs clusters
-- serverless
-- scale or update a fargate service task count or definition
-- compute
-- list task definitions
-- get cluster details
-- get detailed cluster information
-- engineers building container platforms and infrastructure
-- register a task definition
-- manage task execution
-- create cluster
-- register a task definition specifying container images, cpu, memory, and networking
-- describe clusters
-- delete cluster
-- list clusters
-- create service
-- create a new ecs cluster
-- manage specific cluster
-- list services
-- eks
-- create a service
-- remove a fargate service from a cluster
-- manage task definitions
-- get status and details of running tasks
-- update service
-- describe tasks
-- aws
-- list tasks in a cluster with status filtering
 - describe task definition
-- stop task
-- run a task
+- list all ecs clusters for fargate workloads
+- list services
+- manage specific cluster
+- deploy a persistent fargate service with load balancing and auto-scaling
+- list clusters
+- running workloads without managing infrastructure
+- stop a running fargate task
+- microservices
+- register task definition
 - delete a cluster
+- devops
+- amazon fargate
+- register a task definition specifying container images, cpu, memory, and networking
+- create a new ecs cluster
+- describe clusters
+- delete a fargate cluster
+- get status and details of running tasks
+- run a task
+- list all services running in a fargate cluster
+- scale or update a fargate service task count or definition
+- Cloud Architect
+- eks
+- list all ecs clusters
+- manage task execution
+- engineers deploying and operating containerized applications
+- deploying and scaling microservices architectures
+- run task
+- manage task definitions
+- containers
+- Platform Engineer
+- update service
+- deregister task definition
+- get deployment status and health of fargate services
+- manage ecs clusters
+- list all registered task definitions
+- architects designing serverless container solutions
+- create service
+- delete cluster
+- describe tasks
+- list tasks
+- manage services
+- get cluster details
+- deregister a task definition revision
+- get detailed cluster information
+- serverless
+- engineers building container platforms and infrastructure
+- get details of a task definition
+- list tasks in a cluster with status filtering
+- launch a fargate task with specified cpu, memory, and networking
+- ecs
+- create a new cluster
+- create a service
+- managing container lifecycle from definition to deployment
+- delete service
+- aws
+- DevOps Engineer
+- list task definitions
+- create cluster
+- compute
+- register a task definition
+- stop task
+- describe services
+- full lifecycle management of serverless container workloads
+- remove a fargate service from a cluster
 slug: amazon-fargate-container-orchestration
 tags:
 - Amazon Fargate

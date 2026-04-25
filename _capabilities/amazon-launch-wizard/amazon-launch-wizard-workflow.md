@@ -9,24 +9,24 @@ personas: []
 provider_name: Amazon Launch Wizard
 provider_slug: amazon-launch-wizard
 search_terms:
-- sap
-- lists the deployments that have been created.
-- workflow
 - unified workflow for amazon launch wizard resource management
-- enterprise applications
+- Developer
+- Administrator
+- aws
+- workflow
 - deployments list deployments
 - sql server
-- deployments create deployment
-- aws
-- Administrator
+- deployment
+- manages resources and configurations
+- creates a deployment for the given workload.
+- amazon launch wizard
+- sap
+- lists the deployments that have been created.
 - deployments get deployment
 - returns information about the deployment.
-- creates a deployment for the given workload.
+- deployments create deployment
+- enterprise applications
 - integrates api into applications
-- manages resources and configurations
-- deployment
-- amazon launch wizard
-- Developer
 slug: amazon-launch-wizard-workflow
 tags:
 - Amazon Launch Wizard

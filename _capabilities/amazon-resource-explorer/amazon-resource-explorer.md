@@ -13,19 +13,19 @@ personas: []
 provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
-- list resources
-- aws
 - inventory
-- aws cloud resource management
-- automation workflow for amazon resource explorer
-- amazon resource explorer resources
-- amazon resource explorer
-- discovery
-- operations
-- list amazon resource explorer resources
 - engineer managing amazon resource explorer resources
-- resource management
+- automation workflow for amazon resource explorer
+- operations
+- aws
+- discovery
+- amazon resource explorer resources
+- aws cloud resource management
+- amazon resource explorer
 - cloud operations
+- list resources
+- list amazon resource explorer resources
+- resource management
 slug: amazon-resource-explorer
 tags:
 - Amazon Resource Explorer

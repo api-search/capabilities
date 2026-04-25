@@ -37,53 +37,53 @@ personas: []
 provider_name: BlaBlaCar Bus API
 provider_slug: blablacar-bus-api
 search_terms:
-- retrieve booking details
-- cancel an existing blablacar bus booking. refund eligibility depends on the fare type.
-- integrates blablacar bus into travel booking platforms and aggregators
-- search available trips between stations on a given date
-- Corporate Travel Manager
-- europe
-- cancel a booking
-- create a confirmed blablacar bus booking for one or more passengers on a specific trip.
-- retrieve an electronic ticket with qr code for passenger validation on a blablacar bus trip.
-- list all stations in the blablacar bus network, optionally filtered by country or search query.
-- create booking
-- mobility
-- list stations in the blablacar bus network
-- list available coach routes between stations
-- OTA Developer
-- get ticket
-- booking
-- creating and managing coach reservations
-- list available blablacar bus coach routes between stations across europe.
-- transportation
-- electronic ticket retrieval
-- station information
-- trip search with pricing and availability
-- available coach routes in the blablacar bus network
-- Traveler
-- route search, trip availability, and station data
 - buses
+- create booking
+- Traveler
+- retrieve electronic ticket with qr code
+- single booking retrieval and cancellation
+- search available trips between stations on a given date
+- retrieve booking details
+- get ticket
+- create a confirmed blablacar bus booking for one or more passengers on a specific trip.
+- search for available coach trips between two stations on a specific date, returning departure times, seat availability, and pricing.
+- coach
+- electronic ticket retrieval
+- cancel booking
+- booking
+- list stations
+- cancel an existing blablacar bus booking. refund eligibility depends on the fare type.
+- ota
+- travel
+- station information
+- creating and managing coach reservations
+- trip search with pricing and availability
+- Travel Agent
+- mobility
+- books and manages coach trips via partner platforms
+- transportation
+- europe
+- create a confirmed coach booking
+- OTA Developer
+- cancel a booking
+- list available blablacar bus coach routes between stations across europe.
+- list available coach routes between stations
+- retrieve an electronic ticket with qr code for passenger validation on a blablacar bus trip.
+- available coach routes in the blablacar bus network
+- get booking
+- Corporate Travel Manager
+- list stations in the blablacar bus network
+- list routes
+- ticketing
+- list all stations in the blablacar bus network, optionally filtered by country or search query.
 - booking creation and management
 - end-to-end coach booking workflow for otas and travel aggregators
-- travel
-- search trips
-- retrieve electronic ticket with qr code
 - books coach tickets for customers as part of multi-modal travel itineraries
-- cancel booking
-- get booking
-- list routes
-- list stations
-- search for available coach trips between two stations on a specific date, returning departure times, seat availability, and pricing.
-- Travel Agent
-- books and manages coach trips via partner platforms
-- ticketing
-- retrieve the details of an existing blablacar bus booking including status and tickets.
+- route search, trip availability, and station data
 - books affordable intercity coach travel for business travelers
-- ota
-- create a confirmed coach booking
-- coach
-- single booking retrieval and cancellation
+- integrates blablacar bus into travel booking platforms and aggregators
+- search trips
+- retrieve the details of an existing blablacar bus booking including status and tickets.
 slug: blablacar-bus-booking
 tags:
 - Booking

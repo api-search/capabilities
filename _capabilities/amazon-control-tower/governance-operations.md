@@ -8,13 +8,13 @@ personas: []
 provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
-- security
-- landing zone
-- governance
-- aws
 - controls
-- compliance
+- aws
+- landing zone
+- security
 - multi-account
+- governance
+- compliance
 slug: governance-operations
 tags: []
 tools: []

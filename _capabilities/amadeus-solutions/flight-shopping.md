@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- confirm flight price
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- upsell, seat selection, and add-on services.
-- confirm current price and availability.
-- OTA Developer
-- flight offer discovery and comparison.
 - complete flight shopping flow from search through price confirmation.
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
 - developer building conversational travel assistants for flight search.
-- booking
-- travel technology
+- confirm the current price and availability of a selected flight offer before creating a booking.
 - confirm price
-- confirm pricing for a selected flight offer.
-- hotels
-- price confirmation and validation before booking.
-- gds
-- search available flights by origin, destination, and date.
-- travel
+- upsell, seat selection, and add-on services.
+- search
 - search for available flight offers.
 - Travel Chatbot Developer
-- search flights advanced
-- developer building online travel agency flight search and booking flows.
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- shopping
 - airlines
-- search
+- shopping
+- price confirmation and validation before booking.
+- booking
 - search flights
+- developer building online travel agency flight search and booking flows.
+- travel
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- flights
+- confirm pricing for a selected flight offer.
 - pricing
 - amadeus
-- flights
+- confirm current price and availability.
+- OTA Developer
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- search flights advanced
+- gds
+- search available flights by origin, destination, and date.
+- hotels
+- flight offer discovery and comparison.
+- confirm flight price
+- travel technology
 slug: flight-shopping
 tags:
 - Amadeus

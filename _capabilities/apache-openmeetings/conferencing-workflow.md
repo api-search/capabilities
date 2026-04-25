@@ -29,47 +29,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- get recordings by type
-- list all user groups
-- generate a secure room access hash
-- unified workflow for managing conferencing sessions
-- collaboration
-- close a conference room
-- create room
-- check health
 - login
-- conference room management
-- check system health status
-- list rooms
-- get upcoming calendar meetings
-- create a new room
-- get room hash
-- close room
-- Meeting Organizer
-- manages conference rooms, invites participants, and handles recordings
-- web conferencing
 - create a new conference room
-- list session recordings
-- apache
-- user management
-- conferencing
-- list all public conference rooms
-- manages users, groups, and system health
-- whiteboard
-- System Administrator
-- list groups
-- authenticate a user to openmeetings
-- get upcoming meetings
-- list users
-- open source
-- list public rooms
-- list upcoming
+- get upcoming calendar meetings
 - session recordings
-- list all registered users
+- collaboration
+- list session recordings
+- check health
 - video conferencing
+- get upcoming meetings
+- close a conference room
+- close room
+- open source
 - list recordings
+- authenticate a user to openmeetings
+- apache
+- list all registered users
+- create room
+- conference room management
+- whiteboard
+- list public rooms
+- generate a secure room access hash
+- list all public conference rooms
+- check system health status
+- list users
+- create a new room
+- get recordings by type
+- manages conference rooms, invites participants, and handles recordings
+- list rooms
+- get room hash
+- Meeting Organizer
+- manages users, groups, and system health
+- System Administrator
 - apache openmeetings
+- unified workflow for managing conferencing sessions
 - calendar and scheduling
+- conferencing
+- list groups
+- web conferencing
+- list upcoming
+- user management
+- list all user groups
 slug: conferencing-workflow
 tags:
 - Apache OpenMeetings

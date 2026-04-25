@@ -17,29 +17,29 @@ personas: []
 provider_name: Amazon Managed Grafana
 provider_slug: amazon-managed-grafana
 search_terms:
-- grafana workspaces
-- create grafana workspace
-- dashboards
+- update workspace
+- get workspace details
 - create workspace api key
+- observability
+- create grafana workspace
+- list all grafana workspaces for observability dashboards
+- create a workspace
+- grafana
+- grafana workspaces
+- Platform Engineer
+- visualization
 - monitoring
 - list workspaces
-- Platform Engineer
-- create a new grafana workspace for observability dashboards
-- get workspace details
-- list grafana workspaces
-- create workspace
 - Operations Engineer
-- grafana
-- get configuration and authentication details of a grafana workspace
-- update workspace
-- observability
-- create a workspace
-- aws
 - create an api key for programmatic grafana workspace access
-- update grafana workspace configuration, authentication, or data sources
-- visualization
 - amazon
-- list all grafana workspaces for observability dashboards
+- create a new grafana workspace for observability dashboards
+- get configuration and authentication details of a grafana workspace
+- list grafana workspaces
+- aws
+- update grafana workspace configuration, authentication, or data sources
+- dashboards
+- create workspace
 slug: observability-dashboard-workflow
 tags:
 - Amazon

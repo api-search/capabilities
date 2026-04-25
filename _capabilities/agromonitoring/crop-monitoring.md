@@ -10,10 +10,10 @@ provider_slug: agromonitoring
 search_terms:
 - agriculture
 - remote sensing
-- weather
-- satellite imagery
 - precision agriculture
 - vegetation indices
+- weather
+- satellite imagery
 slug: crop-monitoring
 tags: []
 tools: []

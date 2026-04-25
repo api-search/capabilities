@@ -32,44 +32,44 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- hubspot
-- get contact
-- tickets
-- crm
-- individual ticket
-- analytics
-- search tickets with filters
-- marketing
-- list all support tickets
-- associate a ticket with a contact or company
-- marketing automation
-- get ticket
-- look up a contact for ticket context
-- get a support ticket by id
-- operations
-- list tickets
-- list associations
-- contact lookup
-- support
-- conversations
-- customer service
-- create association
-- search contacts to find the customer
-- search tickets
-- archive ticket
-- create a new support ticket
-- list associations for a crm object
-- update a support ticket
-- sales
-- email marketing
-- content
-- create ticket
-- support tickets
-- update ticket
-- commerce
 - service
+- tickets
+- individual ticket
+- sales
+- customer service
+- get ticket
+- create a new support ticket
+- update a support ticket
+- email marketing
+- associate a ticket with a contact or company
+- operations
+- list all support tickets
+- list tickets
 - search contacts
+- list associations
+- content
+- marketing
+- contact lookup
+- conversations
+- create association
+- hubspot
+- support tickets
+- search tickets with filters
+- get a support ticket by id
+- create ticket
+- search contacts to find the customer
+- support
+- list associations for a crm object
+- look up a contact for ticket context
+- commerce
+- crm
+- update ticket
 - archive a support ticket
+- archive ticket
+- get contact
+- analytics
+- marketing automation
+- search tickets
 slug: customer-service
 tags:
 - HubSpot

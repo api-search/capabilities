@@ -57,62 +57,62 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- delete a group
-- update a user's profile and group memberships
-- get user details
-- update user profile and groups
-- analytics
-- create a new user
-- cloud monitoring
-- create user
-- dynatrace
-- list permissions
-- automation
-- iam
-- create group
-- get, update, or delete a specific user
-- list all environments associated with the account
 - get group details
-- manage user groups
-- permanently remove a user from the account
-- manage account users
-- query permissions
-- update group
-- get details of a specific group
-- delete a user
-- application security
-- get, update, or delete a specific group
-- list all environments
-- application performance monitoring
-- permanently delete a group
-- list all permissions for the account
-- apm
-- list all user groups in the account
-- update user
-- list all users in the dynatrace account
-- list all permissions defined for the account
-- get user
+- delete user
+- list all groups
+- access control
+- intelligence
+- automation
+- list all users in the account
 - identity
 - ai operations
-- delete user
-- get group
-- get details of a specific user
 - update a group's name and description
-- access control
+- update a user's profile and group memberships
+- list all permissions defined for the account
 - observability
-- digital experience management
-- platform administration
-- list groups
-- update group name and description
-- create a new group
-- list users
-- intelligence
-- list all groups
-- create a new user group
-- list all users in the account
+- create a new user
+- manage user groups
+- delete a user
+- delete a group
+- create user
+- update user
+- create group
 - create a new user and send an invitation email
+- list all user groups in the account
+- query permissions
+- get user
+- list permissions
+- application performance monitoring
+- get group
+- permanently remove a user from the account
+- get, update, or delete a specific group
 - list environments
+- list all users in the dynatrace account
 - delete group
+- list users
+- digital experience management
+- dynatrace
+- iam
+- update group
+- update user profile and groups
+- get details of a specific group
+- manage account users
+- create a new group
+- get details of a specific user
+- get user details
+- list all environments associated with the account
+- list all permissions for the account
+- list groups
+- list all environments
+- permanently delete a group
+- analytics
+- apm
+- cloud monitoring
+- get, update, or delete a specific user
+- platform administration
+- application security
+- create a new user group
+- update group name and description
 slug: identity-and-access
 tags:
 - Dynatrace

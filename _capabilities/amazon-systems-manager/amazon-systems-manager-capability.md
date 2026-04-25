@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Systems Manager
 provider_slug: amazon-systems-manager
 search_terms:
-- automation
-- management
-- aws
 - operations
+- management
+- automation
+- aws
 slug: amazon-systems-manager-capability
 tags: []
 tools: []

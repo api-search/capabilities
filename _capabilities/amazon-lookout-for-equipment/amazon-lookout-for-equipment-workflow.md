@@ -9,24 +9,24 @@ personas: []
 provider_name: Amazon Lookout for Equipment
 provider_slug: amazon-lookout-for-equipment
 search_terms:
-- industrial iot
-- workflow
-- creates a container (dataset) for a collection of data being ingested for analysis.
-- machine learning
-- provides a json containing the overall information about a specific dataset.
-- datasets list datasets
-- Administrator
-- aws
-- manages resources and configurations
-- datasets describe dataset
-- predictive maintenance
-- lists all datasets currently available in your account.
-- integrates api into applications
-- amazon lookout for equipment
 - Developer
-- equipment monitoring
 - unified workflow for amazon lookout for equipment resource management
 - datasets create dataset
+- Administrator
+- datasets list datasets
+- industrial iot
+- predictive maintenance
+- aws
+- workflow
+- lists all datasets currently available in your account.
+- datasets describe dataset
+- creates a container (dataset) for a collection of data being ingested for analysis.
+- provides a json containing the overall information about a specific dataset.
+- amazon lookout for equipment
+- machine learning
+- manages resources and configurations
+- equipment monitoring
+- integrates api into applications
 slug: amazon-lookout-for-equipment-workflow
 tags:
 - Amazon Lookout for Equipment

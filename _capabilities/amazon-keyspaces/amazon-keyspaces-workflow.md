@@ -9,31 +9,31 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
-- returns a list of keyspaces.
 - Administrator
 - returns a list of tables for a specified keyspace.
-- nosql
-- keyspaces get keyspace
-- amazon keyspaces
-- tables get table
-- creates a new keyspace.
-- wide column
-- workflow
 - the createtable operation adds a new table to the specified keyspace.
-- managed database
-- database
-- unified workflow for amazon keyspaces resource management
-- returns the name and the amazon resource name (arn) of a keyspace.
 - returns information about the table.
 - tables list tables
-- keyspaces create keyspace
-- cassandra
-- integrates api into applications
+- unified workflow for amazon keyspaces resource management
+- returns a list of keyspaces.
 - manages resources and configurations
-- aws
-- keyspaces list keyspaces
+- integrates api into applications
+- database
+- wide column
+- managed database
+- creates a new keyspace.
+- nosql
+- amazon keyspaces
+- workflow
+- cassandra
 - tables create table
 - Developer
+- aws
+- keyspaces list keyspaces
+- tables get table
+- keyspaces create keyspace
+- returns the name and the amazon resource name (arn) of a keyspace.
+- keyspaces get keyspace
 slug: amazon-keyspaces-workflow
 tags:
 - Amazon Keyspaces

@@ -33,43 +33,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- list trust stores.
-- configures browser policies and access controls.
-- trust store management.
-- list secure browser portals.
-- list browser settings.
-- list user settings.
-- administration
-- list all workspaces web secure browser portals.
-- network configuration management.
-- list network settings.
-- browser policy and access control enforcement
-- list portals
+- secure browser
+- portal management.
+- create a portal.
 - browser policy management.
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
 - zero trust
+- create a new secure browser portal.
+- list network settings
+- manages workspaces web portals and configurations.
+- Security Engineer
+- list user settings configurations for portals.
+- list portals
+- browser policy and access control enforcement
+- IT Administrator
+- configures browser policies and access controls.
 - create portal
 - secure remote browser access infrastructure
-- IT Administrator
+- list ssl certificate trust stores.
+- trust store management.
+- end user computing
+- network configuration management.
+- list user settings
+- list browser settings.
 - user settings management.
+- list all workspaces web secure browser portals.
+- list user settings.
+- aws
+- administration
+- list network settings.
+- list secure browser portals.
 - list browser settings
 - virtual desktop
-- end user computing
+- list trust stores.
 - list network settings for portal connectivity.
-- list network settings
-- secure browser
-- Security Engineer
-- portal management.
-- list user settings configurations for portals.
-- list ssl certificate trust stores.
-- aws
-- create a portal.
-- list user settings
 - list trust stores
-- create a new secure browser portal.
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- list browser policy settings for portals.
 - portal and resource provisioning
-- manages workspaces web portals and configurations.
+- list browser policy settings for portals.
 slug: secure-browser-management
 tags:
 - AWS

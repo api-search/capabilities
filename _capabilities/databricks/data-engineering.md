@@ -29,73 +29,73 @@ personas: []
 provider_name: Databricks
 provider_slug: databricks
 search_terms:
-- list all jobs.
-- import a notebook or workspace object.
 - delta lake
-- vector search
-- analytics
-- data
-- apache spark
-- delete a workspace object.
-- get job
-- visualize
-- data governance
-- list jobs
-- create a new job.
-- clean rooms
-- create a new spark cluster.
-- list workspace objects.
-- export a notebook or workspace object.
-- trigger a job run immediately.
-- cancel job run
-- data analytics
-- delete job
-- delete workspace object
 - terminate cluster
-- list all clusters.
-- create job
-- big data
-- get details of a specific run.
-- machine learning
-- unity catalog
-- list workspace objects
-- run job now
-- delta sharing
-- export workspace object
-- data engineering
-- cancel a running job.
-- security
-- get cluster
-- edit cluster
-- sql
-- cluster lifecycle management.
-- list runs for a job.
-- identity management
-- create cluster
-- model serving
-- get cluster details.
-- get job run
 - list all databricks jobs.
-- start cluster
-- etl
-- list job runs
-- list objects in a workspace directory.
+- sql
 - import workspace object
 - databricks
-- create a new cluster.
-- get job details.
-- list all databricks clusters.
-- delete a job.
-- terminate a running cluster.
-- workspace object management.
-- lakehouse
-- job orchestration.
-- start a terminated cluster.
-- ai
-- edit cluster configuration.
-- mlflow
-- cloud computing
+- cancel job run
 - list clusters
+- list runs for a job.
+- delete a job.
+- workspace object management.
+- run job now
+- list all databricks clusters.
+- terminate a running cluster.
+- machine learning
+- list workspace objects
+- data engineering
+- ai
+- start a terminated cluster.
+- create a new cluster.
+- delete job
+- edit cluster
+- security
+- list objects in a workspace directory.
+- list jobs
+- delete a workspace object.
+- create job
+- start cluster
+- edit cluster configuration.
+- apache spark
+- lakehouse
+- get details of a specific run.
+- get job run
+- get job
+- vector search
+- create a new job.
+- data analytics
+- export a notebook or workspace object.
+- list workspace objects.
+- data governance
+- trigger a job run immediately.
+- list job runs
+- list all clusters.
+- etl
+- get cluster
+- cancel a running job.
+- cloud computing
+- visualize
+- unity catalog
+- delta sharing
+- clean rooms
+- import a notebook or workspace object.
+- data
+- mlflow
+- analytics
+- get job details.
+- export workspace object
+- identity management
+- get cluster details.
+- job orchestration.
+- big data
+- create cluster
+- create a new spark cluster.
+- model serving
+- delete workspace object
+- list all jobs.
+- cluster lifecycle management.
 slug: data-engineering
 tags:
 - Databricks

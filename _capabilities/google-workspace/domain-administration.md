@@ -57,57 +57,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- get group details.
-- list groups.
-- patch user properties.
-- list groups in the domain.
-- get user details.
-- collaboration
-- create user
-- update a user.
-- create group
-- list users in the domain.
-- patch user
-- sign out user
-- delete a group.
-- storage
-- group management.
-- domain administration
-- user account management.
 - productivity
-- update group
-- create a new user in the domain.
-- google workspace
-- create a new user.
-- create org unit
-- undelete a deleted user.
-- user management
-- make a user an admin.
-- create an organizational unit.
-- email
-- undelete user
-- update user
-- create a new group.
-- get user
-- individual group management.
-- delete user
-- get group
-- calendar
-- group management
-- update a group.
-- list groups
-- make user admin
-- delete a user.
-- list users
-- individual user management.
 - organizational unit management.
-- list organizational units.
-- video conferencing
-- list users in the google workspace domain.
-- create a group.
+- delete user
+- email
+- storage
 - sign out a user from all sessions.
-- list org units
+- google workspace
+- make user admin
+- create a new user.
+- collaboration
+- domain administration
+- video conferencing
+- list users in the domain.
+- individual group management.
+- patch user properties.
+- create user
+- create an organizational unit.
+- update user
+- delete a group.
+- create group
+- calendar
+- group management.
+- get user
+- get group
+- create a new user in the domain.
+- group management
+- list users in the google workspace domain.
+- update a user.
+- undelete user
+- get user details.
 - delete group
+- list users
+- update group
+- create a group.
+- list groups in the domain.
+- individual user management.
+- list org units
+- sign out user
+- list groups.
+- user account management.
+- patch user
+- undelete a deleted user.
+- delete a user.
+- list groups
+- update a group.
+- get group details.
+- create a new group.
+- user management
+- list organizational units.
+- create org unit
+- make a user an admin.
 slug: domain-administration
 tags:
 - Google Workspace

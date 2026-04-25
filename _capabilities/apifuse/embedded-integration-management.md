@@ -29,38 +29,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- ipaas
-- browse all available embedded integrations, optionally filtered by category.
+- browse pre-built connectors.
+- Integration Developer
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- browse and manage integrations.
+- managing native integrations within saas products.
+- integrations
+- list workflows.
+- apifuse
+- list connectors
+- integration analytics.
 - list workflows
 - list all integration workflows configured in the embedded marketplace.
-- get analytics data.
-- list all connectors.
+- SaaS Product Manager
 - integration platform
-- manage workflows.
-- saas
-- embedded integrations
-- browse and manage integrations.
-- integrations
+- create a new automation workflow connecting two or more integrated platforms.
 - create workflow
 - create a workflow.
-- list integrations
-- browse pre-built connectors.
-- apifuse
+- list all connectors.
+- get analytics data.
 - workflow automation
-- SaaS Product Manager
-- list all pre-built connectors available for embedding into your saas product.
-- developer implementing and automating embedded integration workflows.
-- list all integrations.
-- integration analytics.
-- get analytics
-- marketplace
-- list workflows.
-- list connectors
-- Integration Developer
 - product manager building native integrations into a saas product.
-- managing native integrations within saas products.
-- create a new automation workflow connecting two or more integrated platforms.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- marketplace
+- list all integrations.
+- get analytics
+- list all pre-built connectors available for embedding into your saas product.
+- list integrations
+- embedded integrations
+- ipaas
+- manage workflows.
+- browse all available embedded integrations, optionally filtered by category.
+- developer implementing and automating embedded integration workflows.
+- saas
 slug: embedded-integration-management
 tags:
 - Apifuse

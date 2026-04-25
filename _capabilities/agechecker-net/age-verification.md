@@ -14,19 +14,19 @@ personas:
 provider_name: AgeChecker.Net
 provider_slug: agechecker-net
 search_terms:
-- compliance officer
-- end-to-end age verification workflow for e-commerce businesses selling age-restricted products.
-- customer age verification for regulated product purchases.
-- developer integrating age verification into online checkout flows for age-restricted products.
-- tracking and auditing age verification session history.
-- identity
-- e commerce developer
-- webhook-based real-time notifications for verification outcomes.
-- compliance
-- age verification
-- regulatory compliance officer ensuring age verification requirements are met for restricted product sales.
 - regulatory
+- regulatory compliance officer ensuring age verification requirements are met for restricted product sales.
 - e-commerce
+- e commerce developer
+- age verification
+- compliance
+- end-to-end age verification workflow for e-commerce businesses selling age-restricted products.
+- identity
+- developer integrating age verification into online checkout flows for age-restricted products.
+- webhook-based real-time notifications for verification outcomes.
+- tracking and auditing age verification session history.
+- customer age verification for regulated product purchases.
+- compliance officer
 slug: age-verification
 tags: []
 tools: []

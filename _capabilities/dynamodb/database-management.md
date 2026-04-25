@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
+- put item
+- list backups
+- managed service
+- delete table
+- create a table.
+- batch get item
+- scan an entire table or index.
+- individual table management.
+- cloud
+- update an item.
+- item operations.
+- write items in a transaction.
+- put or delete multiple items in batch.
+- scan a table.
+- query items.
+- delete a table.
+- update table
+- key-value
+- database
+- list on-demand backups.
+- delete a dynamodb table.
+- update a table.
+- get items in a transaction.
+- create an on-demand backup.
+- nosql
+- query
+- list dynamodb tables.
+- create backup
+- create a new dynamodb table.
 - delete item
 - describe table
-- update table
-- delete an item.
-- transact write items
-- table management.
-- nosql
-- create or replace an item.
 - query operations.
-- individual table management.
-- delete table
-- create a new dynamodb table.
-- transact get items
-- get an item.
-- put item
-- database
-- dynamodb
-- get item
-- query
-- batch get item
-- create an on-demand backup.
-- serverless
-- update an item.
-- scan a table.
-- describe a dynamodb table.
-- get items in a transaction.
-- list tables.
-- list backups
-- delete a table.
-- list tables
-- list on-demand backups.
-- scan an entire table or index.
-- put or delete multiple items in batch.
-- create a table.
-- query items by primary key.
-- update item
-- delete a dynamodb table.
-- managed service
-- scan
-- update a table.
-- create backup
-- list dynamodb tables.
-- create table
-- query items.
-- item operations.
-- key-value
+- transact write items
 - batch write item
+- describe a dynamodb table.
 - document store
-- get multiple items from one or more tables.
+- serverless
+- create or replace an item.
+- scan
+- table management.
 - aws
-- describe a table.
-- cloud
-- write items in a transaction.
 - get an item by primary key.
 - database management
+- update item
+- create table
+- query items by primary key.
+- get multiple items from one or more tables.
+- list tables.
+- get an item.
+- delete an item.
+- get item
+- transact get items
+- describe a table.
+- list tables
+- dynamodb
 slug: database-management
 tags:
 - AWS

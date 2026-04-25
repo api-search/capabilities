@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- compliance assessment management
-- update audit manager settings including sns notifications and default report destination.
-- list frameworks
-- list compliance controls available for building assessments.
-- get assessment
-- update settings
-- compliance framework management
+- generate a compliance assessment report from collected evidence.
 - get complete details of a compliance assessment including control status.
-- create a new assessment
 - list generated assessment reports for compliance documentation.
 - compliance
-- create control
-- audit
-- list assessment reports
 - list all compliance assessments to understand current audit coverage.
-- get audit manager account settings including default destinations and process owners.
+- list compliance controls available for building assessments.
+- create control
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
 - create a custom compliance control for use in frameworks and assessments.
-- amazon audit manager
-- list available frameworks
+- compliance assessment management
+- get assessment
+- list assessments
+- create assessment
+- list assessment reports
+- get audit manager account settings including default destinations and process owners.
+- list all assessments
+- compliance framework management
+- update audit manager settings including sns notifications and default report destination.
+- audit
 - create a new compliance assessment using a regulatory framework.
+- create a new assessment
+- amazon audit manager
+- get settings
+- aws
+- list frameworks
+- update settings
+- risk management
+- list available frameworks
 - create assessment report
 - list controls
-- list all assessments
-- aws
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- generate a compliance assessment report from collected evidence.
-- get settings
-- create assessment
-- list assessments
-- risk management
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

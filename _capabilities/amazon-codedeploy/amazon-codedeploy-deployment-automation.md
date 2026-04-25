@@ -9,43 +9,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- release management
-- list deployments
-- list applications
-- create deployment
-- coordinates application releases.
-- managing software release processes and rollbacks.
-- blue/green deployment
-- get deployment instance
-- create and monitor deployments
-- create a deployment group for an application
-- get deployment information for a target instance
-- list codedeploy applications
-- DevOps Engineer
-- get details about a specific deployment
-- stop deployment
-- devops
-- list deployment groups for an application
-- list deployment groups
-- create deployment group
-- amazon
-- get deployment
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- manage codedeploy applications
-- automated application deployment to compute targets.
-- Release Manager
-- create a new deployment
 - stop an in-progress deployment
-- deployment
-- create a codedeploy application
-- create application
 - manages deployment infrastructure.
 - list deployments for an application and deployment group
-- aws
-- manage deployment groups
+- create a codedeploy application
+- list applications
 - list instances in a deployment
-- list deployment instances
+- get deployment
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- create application
+- release management
+- devops
+- get details about a specific deployment
+- blue/green deployment
+- Release Manager
+- manage codedeploy applications
+- list deployments
+- manage deployment groups
+- create a new deployment
+- list deployment groups
+- get deployment instance
+- create deployment group
+- stop deployment
 - ci/cd
+- get deployment information for a target instance
+- amazon
+- create a deployment group for an application
+- create deployment
+- coordinates application releases.
+- list codedeploy applications
+- aws
+- list deployment groups for an application
+- DevOps Engineer
+- automated application deployment to compute targets.
+- list deployment instances
+- managing software release processes and rollbacks.
+- create and monitor deployments
+- deployment
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

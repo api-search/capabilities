@@ -17,35 +17,35 @@ personas: []
 provider_name: Amnic
 provider_slug: amnic
 search_terms:
-- cost optimization
-- retrieve cloud cost data from an amnic saved chart with custom filters for ai-powered finops analysis, anomaly investigation, and cost optimization recommendations.
-- get chart data
-- Finance Team
-- finops
-- cloud cost management specialist responsible for cost visibility, optimization, and governance across cloud environments.
-- FinOps Practitioner
+- engineering manager integrating cloud cost data into ci/cd pipelines and automated reporting workflows.
 - cloud cost observability
+- retrieve the filter dimensions configured in a saved amnic cost chart for understanding available cost segmentation options.
+- azure
+- google cloud
+- Engineering Lead
+- cost optimization
 - cloud cost
 - cost observability
-- get chart filters
-- returns the filter dimensions and values configured in a saved amnic cost analyzer chart.
-- cloud cost management
-- finance professionals consuming cloud cost reports for budgeting, forecasting, and chargeback allocation.
-- retrieve configured filters for a saved cost analysis chart.
-- engineering manager integrating cloud cost data into ci/cd pipelines and automated reporting workflows.
-- google cloud
-- kubernetes
 - get cost chart data
-- management and optimization of cloud infrastructure costs across aws, gcp, azure, and kubernetes.
-- azure
 - amnic
-- aws
-- finops workflow for retrieving and analyzing cloud cost data programmatically.
+- finops
+- get chart data
+- retrieve configured filters for a saved cost analysis chart.
 - retrieves cloud cost data by applying custom filters to a saved amnic cost chart.
-- Engineering Lead
+- management and optimization of cloud infrastructure costs across aws, gcp, azure, and kubernetes.
 - retrieve cloud cost data from a saved chart with optional custom filters.
+- returns the filter dimensions and values configured in a saved amnic cost analyzer chart.
+- retrieve cloud cost data from an amnic saved chart with custom filters for ai-powered finops analysis, anomaly investigation, and cost optimization recommendations.
+- cloud cost management specialist responsible for cost visibility, optimization, and governance across cloud environments.
 - get cost chart filters
-- retrieve the filter dimensions configured in a saved amnic cost chart for understanding available cost segmentation options.
+- aws
+- Finance Team
+- kubernetes
+- get chart filters
+- FinOps Practitioner
+- finops workflow for retrieving and analyzing cloud cost data programmatically.
+- finance professionals consuming cloud cost reports for budgeting, forecasting, and chargeback allocation.
+- cloud cost management
 slug: cloud-cost-observability
 tags:
 - Amnic

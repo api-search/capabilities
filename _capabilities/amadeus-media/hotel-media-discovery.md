@@ -26,38 +26,38 @@ personas: []
 provider_name: Amadeus Media
 provider_slug: amadeus-media
 search_terms:
-- hotel property information, descriptions, and classifications.
+- find hotels by location
+- find hotels near a geographic location using latitude and longitude coordinates.
+- retrieve hotel photos and media assets organized by category (exterior, lobby, rooms, restaurant, pool, spa).
+- find hotels in a city using its iata code for content and media retrieval.
+- get hotel details
+- Travel Platform Developer
+- media
+- get hotel photos
+- OTA Content Team
+- retrieve rich hotel property content including descriptions, amenities, address, and contact information.
 - find hotels near geographic coordinates.
 - images
-- get hotel photos and media assets.
-- get hotel details
-- retrieve hotel photos and media assets organized by category (exterior, lobby, rooms, restaurant, pool, spa).
-- combines hotel list and hotel content apis for comprehensive hotel property discovery with rich media retrieval.
-- get hotel media
-- find hotels in a city by iata code.
-- hotel property content and descriptions.
-- hotel discovery and search.
-- retrieve rich hotel property content including descriptions, amenities, address, and contact information.
-- find hotels near a geographic location using latitude and longitude coordinates.
-- find hotels by location
-- hotels
-- content team maintaining hotel profiles, photos, and descriptions on online travel agencies.
 - visual media assets including photos and videos for hotel properties.
-- OTA Content Team
-- travel
-- Travel Platform Developer
-- find hotels in a city using its iata code for content and media retrieval.
-- get hotel content
-- get hotels by geocode
-- media
-- developer building hotel search and booking experiences requiring property data and media.
 - content
-- get hotels by city
-- hotel media assets including images.
-- get hotel photos
-- amadeus
-- find hotels by city
+- get hotel photos and media assets.
+- travel
+- hotel discovery and search.
+- get hotel content
 - get detailed hotel property content.
+- amadeus
+- hotel media assets including images.
+- hotel property information, descriptions, and classifications.
+- hotel property content and descriptions.
+- combines hotel list and hotel content apis for comprehensive hotel property discovery with rich media retrieval.
+- developer building hotel search and booking experiences requiring property data and media.
+- get hotels by geocode
+- hotels
+- get hotels by city
+- get hotel media
+- find hotels by city
+- find hotels in a city by iata code.
+- content team maintaining hotel profiles, photos, and descriptions on online travel agencies.
 slug: hotel-media-discovery
 tags:
 - Amadeus

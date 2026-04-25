@@ -41,55 +41,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- create message batch
-- count message tokens.
-- chatbot
-- model discovery.
-- get batch status.
-- list batches
-- list message batches.
-- individual batch management.
-- get batch
-- list available models.
-- large language models
-- delete message batch
-- delete a completed batch.
-- list all message batches.
-- natural language processing
-- get model
 - model details.
-- get message batch status and details.
-- count tokens in a message.
-- delete batch
-- create batch
-- message operations.
 - create a batch of message requests.
-- machine learning
-- retrieve message batch results
-- token counting.
-- create a message.
-- artificial intelligence
-- messaging
-- list message batches
-- count message tokens
-- generative ai
-- claude
 - send a message to claude and receive a response.
-- cancel an in-progress batch.
-- batch management.
-- list models
+- list available models.
+- artificial intelligence
+- machine learning
+- get model
+- ai
+- list all message batches.
 - get model metadata.
-- cancel message batch
-- anthropic
-- list available claude models.
-- count tokens
-- create message
-- delete a batch.
-- conversational ai
+- list message batches.
+- chatbot
 - get completed batch results.
 - create a message batch.
-- ai
+- count tokens in a message.
+- generative ai
+- message operations.
+- delete a batch.
+- list batches
+- count message tokens
+- get batch status.
+- model discovery.
+- delete message batch
 - retrieve message batch
+- get message batch status and details.
+- messaging
+- get batch
+- token counting.
+- create batch
+- conversational ai
+- cancel message batch
+- large language models
+- count message tokens.
+- batch management.
+- individual batch management.
+- create message
+- delete batch
+- list models
+- create message batch
+- list message batches
+- natural language processing
+- retrieve message batch results
+- create a message.
+- delete a completed batch.
+- cancel an in-progress batch.
+- claude
+- count tokens
+- anthropic
+- list available claude models.
 slug: ai-messaging
 tags:
 - Anthropic

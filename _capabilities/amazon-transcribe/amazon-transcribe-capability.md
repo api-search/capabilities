@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
-- speech recognition
 - transcription
-- aws
-- audio processing
 - speech-to-text
+- aws
 - machine learning
+- audio processing
+- speech recognition
 slug: amazon-transcribe-capability
 tags: []
 tools: []

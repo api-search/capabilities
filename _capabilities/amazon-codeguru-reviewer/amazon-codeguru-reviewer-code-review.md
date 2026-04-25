@@ -9,37 +9,37 @@ personas: []
 provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
-- devops engineer persona.
-- create code review
-- list recommendations
-- list code reviews for a repository
-- developer tools
-- DevOps Engineer
-- associate repository
-- devops
-- create a code review
-- security engineer persona.
-- get details about a repository association
-- developer persona.
-- list code reviews
-- machine learning
-- code review
-- list recommendations from a code review
-- security
-- list repositories associated with codeguru reviewer
-- get details about a code review
-- associate a repository for code review
-- Security Engineer
 - describe repository association
+- list recommendations from a code review
+- describe code review
 - unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- developer persona.
+- machine learning
+- list repository associations
+- devops
+- code review
+- list code reviews for a repository
+- get details about a repository association
+- Security Engineer
+- security
+- developer tools
+- create code review
+- associate repository
 - unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
 - put recommendation feedback
-- aws
-- submit feedback on a code review recommendation
-- list repository associations
+- list code reviews
 - amazon
-- describe code review
+- list repositories associated with codeguru reviewer
+- get details about a code review
 - Developer
+- security engineer persona.
+- associate a repository for code review
+- create a code review
+- aws
+- DevOps Engineer
+- devops engineer persona.
+- list recommendations
+- submit feedback on a code review recommendation
 slug: amazon-codeguru-reviewer-code-review
 tags:
 - Amazon

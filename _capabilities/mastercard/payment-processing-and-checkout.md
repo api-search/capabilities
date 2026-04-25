@@ -39,42 +39,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- credit cards
-- digital identity
-- open banking
-- process a payment through the mastercard gateway
-- create checkout session
-- create installment plan
 - process payment
-- create unified session
-- generate a merchant qr code for payment
-- generate a merchant-presented qr code for payment
-- financial services
-- payment processing
 - generate qr code
-- mastercard
-- create a unified checkout session supporting multiple payment methods
-- qr code payment acceptance
-- create a unified checkout session
-- get payment details
-- register contactless reader
 - get payment
-- unified checkout sessions
-- payments
+- checkout session management
+- create a unified checkout session
+- credit cards
+- process a payment through the mastercard gateway
+- create installment plan
+- merchant
+- financial services
+- create unified session
 - retrieve payment transaction details
 - buy-now-pay-later installment plans
-- checkout session management
-- process a cloud commerce transaction
-- e-commerce
-- merchant
-- process cloud transaction
-- register a contactless reader device
-- create a new checkout session
-- create an installment plan
 - create a new checkout session for a merchant
+- create an installment plan
+- create a unified checkout session supporting multiple payment methods
 - fraud detection
+- create checkout session
+- register contactless reader
+- mastercard
+- qr code payment acceptance
 - create a buy-now-pay-later installment plan
+- generate a merchant qr code for payment
 - process a payment through the gateway
+- register a contactless reader device
+- payment processing
+- get payment details
+- e-commerce
+- payments
+- process cloud transaction
+- create a new checkout session
+- process a cloud commerce transaction
+- digital identity
+- open banking
+- unified checkout sessions
+- generate a merchant-presented qr code for payment
 - checkout
 slug: payment-processing-and-checkout
 tags:

@@ -33,41 +33,41 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- get do not disturb status.
-- admin controls.
-- access admin controls.
-- admin controls
-- list workspace users.
-- collaboration
-- slack
-- list users.
-- t1
-- administration
-- list user groups.
-- list user groups
-- user management.
-- enterprise
-- test authentication.
-- get team info
 - productivity
-- user management
+- enterprise
+- user group management.
+- collaboration
+- t1
+- admin controls
+- bots
+- admin controls.
+- get team info.
+- list users.
 - get dnd status
 - get team
-- messaging
-- migrate enterprise ids.
-- migrate ids
-- get workspace information.
-- get team info.
-- auth test
-- list admin
-- list groups
-- user group management.
-- team communication
-- list users
-- bots
-- list admin resources.
 - chat
+- auth test
 - team information.
+- test authentication.
+- list admin
+- list user groups.
+- list users
+- user management.
+- list user groups
+- team communication
+- messaging
+- get workspace information.
+- list admin resources.
+- migrate enterprise ids.
+- list groups
+- administration
+- slack
+- user management
+- migrate ids
+- access admin controls.
+- get team info
+- list workspace users.
+- get do not disturb status.
 slug: workspace-administration
 tags:
 - Slack

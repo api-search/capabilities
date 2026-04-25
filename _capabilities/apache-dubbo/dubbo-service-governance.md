@@ -29,49 +29,49 @@ personas: []
 provider_name: Apache Dubbo
 provider_slug: apache-dubbo
 search_terms:
-- get dubbo cluster health metrics
-- apache dubbo
+- list services
+- list all condition routing rules in the cluster
+- create traffic rule
+- create a new condition routing rule for traffic management
+- java
 - list applications
-- list all registered dubbo applications
 - create a new condition routing rule
-- list all services registered in the dubbo cluster
+- list all registered dubbo applications
+- microservices
+- sres monitoring cluster health and responding to service incidents
 - list all registered dubbo services
-- cluster metrics, flow metrics, and observability
-- platform engineering
 - list dubbo services
-- list condition routing rules
+- open source
+- engineers managing the dubbo cluster infrastructure and governance policies
+- list dubbo applications
 - rpc
+- SRE
+- service discovery
+- list condition routing rules
+- apache dubbo
+- manage dubbo applications
+- manage dubbo services
+- apache
+- get dubbo cluster health metrics
+- list traffic rules
+- Platform Engineer
+- list all applications registered in the dubbo cluster
+- cluster monitoring metrics
+- traffic management
+- list condition routes
 - manage services, applications, traffic rules, and cluster monitoring
 - get health and performance metrics for the dubbo cluster
-- create a new condition routing rule for traffic management
-- routing rules, load balancing, gray releases, and traffic shaping
-- service mesh
-- traffic management
-- manage dubbo applications
 - get cluster metrics
-- list dubbo applications
-- Platform Engineer
-- service governance
-- microservices
-- apache
-- manage dubbo services
-- list all applications registered in the dubbo cluster
-- create traffic rule
-- list traffic rules
-- sres monitoring cluster health and responding to service incidents
 - discovery, registration, and lifecycle of dubbo services and applications
-- list condition routes
-- go
+- service governance
+- list all services registered in the dubbo cluster
+- routing rules, load balancing, gray releases, and traffic shaping
+- cluster metrics, flow metrics, and observability
 - manage traffic routing rules
-- list services
-- engineers managing the dubbo cluster infrastructure and governance policies
-- open source
-- SRE
-- java
-- cluster monitoring metrics
-- service discovery
-- list all condition routing rules in the cluster
 - create condition route
+- platform engineering
+- go
+- service mesh
 slug: dubbo-service-governance
 tags:
 - Apache Dubbo

@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon Network Firewall
 provider_slug: amazon-network-firewall
 search_terms:
-- core api workflow
-- developer using amazon network firewall apis
-- list resources
-- intrusion detection
+- Developer
 - amazon network firewall
 - list and manage openapi.yml resources
-- primary amazon network firewall resources
-- vpc
-- aws
-- list openapi.yml
-- network security
 - list amazon network firewall resources
+- core api workflow
+- aws
+- developer using amazon network firewall apis
+- network security
+- primary amazon network firewall resources
+- list openapi.yml
+- list resources
+- intrusion detection
+- vpc
 - firewall
-- Developer
 slug: amazon-network-firewall-workflow
 tags:
 - Amazon Network Firewall

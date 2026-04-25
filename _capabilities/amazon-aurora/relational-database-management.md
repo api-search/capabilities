@@ -16,34 +16,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- create db instance
-- add a new read replica or writer instance to an aurora db cluster.
-- stop db cluster
-- mysql
-- postgresql
-- list aurora db clusters
-- modify db cluster
-- create a new aurora mysql or postgresql compatible db cluster.
-- modify the configuration of an existing aurora db cluster.
-- list all db instances in aurora clusters.
-- list available aurora db cluster snapshots for backup management.
-- relational database
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- start a stopped aurora db cluster to resume database operations.
-- aurora db cluster management
-- create db cluster snapshot
-- create db cluster
-- create a new aurora db cluster
-- aws
-- restore db cluster from snapshot
-- amazon aurora
-- list all aurora db clusters to understand available databases and their status.
-- stop an aurora db cluster to reduce costs when not in use.
-- describe db clusters
-- create a snapshot of an aurora db cluster for backup or cloning.
 - start db cluster
+- mysql
+- create a new aurora db cluster
+- add a new read replica or writer instance to an aurora db cluster.
+- list available aurora db cluster snapshots for backup management.
+- start a stopped aurora db cluster to resume database operations.
+- create db instance
+- modify db cluster
 - describe db cluster snapshots
+- create db cluster
+- list all aurora db clusters to understand available databases and their status.
+- create a new aurora mysql or postgresql compatible db cluster.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- modify the configuration of an existing aurora db cluster.
+- amazon aurora
+- create db cluster snapshot
+- aurora db cluster management
+- postgresql
+- list all db instances in aurora clusters.
+- describe db clusters
 - describe db instances
+- aws
+- stop an aurora db cluster to reduce costs when not in use.
+- restore db cluster from snapshot
+- relational database
+- list aurora db clusters
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- stop db cluster
 slug: relational-database-management
 tags:
 - Amazon Aurora

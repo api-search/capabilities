@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- key vault
-- set secret
-- create a key.
-- get secret
-- create certificate
-- delete certificate
-- sign a digest using a key.
-- delete a key.
-- cloud security
-- list cryptographic keys in the vault.
-- verify a signature.
-- get certificate
-- get a secret value.
-- create key
-- get a secret.
-- get key
-- decrypt data using a key.
-- list certificates
-- list keys.
 - list certificates in the vault.
-- list keys
-- encrypt data using a key.
-- create a new certificate.
-- security
-- delete key
-- certificates
-- get a certificate.
-- list secrets.
-- list certificates.
-- delete a secret.
-- secrets management
-- get key details.
-- verify
-- create a new cryptographic key.
-- key management.
-- set a secret value.
-- key management
-- individual secret management.
-- encrypt
-- individual key management.
-- azure
-- delete a certificate.
-- certificate management.
+- delete a key.
 - list secrets
-- cryptography
-- secret management.
-- list secrets in the vault.
-- sign
-- decrypt
+- get key details.
+- key management
 - delete secret
-- get a key.
+- set secret
+- secrets management
+- list keys.
+- create key
+- azure
+- individual key management.
 - set a secret.
+- encrypt data using a key.
+- set a secret value.
+- create a key.
+- get a certificate.
+- create certificate
+- decrypt data using a key.
+- security
+- secret management.
+- cloud security
+- key vault
+- delete certificate
+- list keys
+- get certificate
+- get a key.
+- decrypt
+- get secret
+- get a secret value.
+- individual secret management.
+- list certificates.
+- create a new cryptographic key.
+- delete a secret.
+- sign
+- list certificates
+- verify a signature.
+- list cryptographic keys in the vault.
+- encrypt
+- certificate management.
+- create a new certificate.
+- cryptography
+- list secrets.
+- get key
+- key management.
+- list secrets in the vault.
+- certificates
+- delete key
+- sign a digest using a key.
+- delete a certificate.
+- verify
+- get a secret.
 slug: secrets-and-keys
 tags:
 - Azure

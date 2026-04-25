@@ -18,40 +18,40 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- aks list clusters
-- get aks cluster details
-- acr list repositories
-- acr list manifests
-- list repositories
-- t1
-- aks get admin credentials
-- list container repositories
-- containers
-- aks get cluster
-- aks list agent pools
 - enterprise
-- aks cluster management
-- acr get repository
-- get repository attributes
-- list aks clusters
-- platform as a service
 - acr list tags
-- get agent pool details
-- list tags for a repository
-- list manifests for a repository
-- kubernetes
-- get cluster admin credentials
-- azure
-- list aks managed clusters
-- aks get agent pool
-- list cluster agent pools
+- list clusters
+- aks list clusters
+- get repository attributes
+- platform as a service
 - api management
-- container registry
+- aks cluster management
+- azure
 - cloud
 - infrastructure as a service
-- cloud computing
+- t1
+- list aks managed clusters
+- aks get cluster
+- get agent pool details
+- get aks cluster details
 - container repositories
-- list clusters
+- list repositories
+- containers
+- list tags for a repository
+- acr list manifests
+- aks get agent pool
+- acr list repositories
+- acr get repository
+- container registry
+- cloud computing
+- list container repositories
+- get cluster admin credentials
+- list aks clusters
+- kubernetes
+- aks get admin credentials
+- list manifests for a repository
+- aks list agent pools
+- list cluster agent pools
 slug: container-platform
 tags:
 - Azure

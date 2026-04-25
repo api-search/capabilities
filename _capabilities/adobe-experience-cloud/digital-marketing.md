@@ -35,65 +35,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- ajo create offer
-- CDP Administrator
-- target audiences.
-- run an adobe analytics report with dimensions, metrics, and segments.
-- list audience segments in adobe analytics.
-- analytics
-- list analytics segments.
-- list audiences
-- profile management, audience segmentation, and data ingestion.
-- Data Engineer
-- list segments
-- target list offers
-- list customer journeys in adobe journey optimizer.
-- personalization
-- journey orchestration
-- Marketing Technologist
-- unified customer profiles and data management.
-- list targeting audiences in adobe target.
-- list journey optimizer offers.
-- customer journeys.
-- create a new personalized offer in adobe journey optimizer.
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- Digital Marketer
-- marketing professional using analytics, personalization, and journey tools.
-- target list activities
-- list offers
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- analytics list segments
-- list a/b test and personalization activities in adobe target.
-- list campaign messages in adobe journey optimizer.
-- audience segment management.
-- ajo list journeys
-- ajo list offers
-- technical marketer integrating experience cloud apis into marketing stack.
-- a/b testing and content personalization.
-- customer experience
-- digital marketing
-- list target audiences.
-- a/b test and personalization activities.
-- campaign management
-- list journey optimizer journeys.
-- adobe experience cloud
-- run report
-- digital analytics reporting and audience insights.
-- analytics list metrics
-- target list audiences
 - list journeys
-- run analytics report
-- list target activities.
-- list available metrics for an adobe analytics report suite.
+- technical marketer integrating experience cloud apis into marketing stack.
+- create a new personalized offer in adobe journey optimizer.
+- marketing professional using analytics, personalization, and journey tools.
+- journey orchestration
+- audience segment management.
+- personalization
+- ajo list offers
+- list target audiences.
+- analytics list metrics
+- customer journeys.
+- list offers
+- list customer journeys in adobe journey optimizer.
+- ajo list messages
+- analytics list segments
+- list campaign messages in adobe journey optimizer.
+- list personalized offers in adobe journey optimizer.
+- unified customer profiles and data management.
 - list content offers in adobe target.
+- ajo list journeys
 - list activities
 - analytics report execution.
+- target list activities
+- list journey optimizer journeys.
+- Data Engineer
+- a/b testing and content personalization.
+- run an adobe analytics report.
+- target audiences.
+- target list audiences
+- ajo create offer
+- list audiences
+- customer experience
+- list target activities.
+- list journey optimizer offers.
+- target list offers
+- adobe experience cloud
+- list available metrics for an adobe analytics report suite.
+- list targeting audiences in adobe target.
+- profile management, audience segmentation, and data ingestion.
+- CDP Administrator
+- digital analytics reporting and audience insights.
+- digital marketing
+- Marketing Technologist
+- list segments
+- run report
+- analytics
+- run an adobe analytics report with dimensions, metrics, and segments.
+- list analytics segments.
+- engineer managing data pipelines, schemas, and datasets in experience platform.
 - administrator managing customer profiles, segments, and identity resolution.
 - multi-channel customer journey management.
-- list personalized offers in adobe journey optimizer.
-- ajo list messages
+- a/b test and personalization activities.
+- run analytics report
+- list audience segments in adobe analytics.
+- Digital Marketer
+- campaign management
 - personalized offers.
-- run an adobe analytics report.
+- list a/b test and personalization activities in adobe target.
+- analytics, a/b testing, and journey orchestration for digital marketers.
 slug: digital-marketing
 tags:
 - Adobe Experience Cloud

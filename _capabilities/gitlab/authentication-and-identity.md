@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- initiate the device authorization grant flow.
-- get token info
-- authorize oauth
-- oauth
-- authorize device
-- token revocation.
-- get user info
-- get information about the current oauth access token including scopes and expiration.
-- source control
-- authentication
-- token introspection and validation.
-- get information about the current access token.
-- device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow.
-- get profile information about the authenticated user.
-- exchange token
-- code
-- exchange an authorization code, device code, or refresh token for an access token.
 - oauth token exchange and creation.
-- oauth 2.0 authorization code flow initiation.
+- get profile information about the currently authenticated user.
+- identity
+- token introspection and validation.
+- authentication
+- tokens
+- token revocation.
+- software development
+- authenticated user profile information.
+- code
+- get information about the current access token.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get token info
+- source control
+- platform
+- initiate the device authorization grant flow for input-constrained devices.
 - gitlab
 - revoke an oauth access or refresh token.
-- platform
-- identity
-- revoke token
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- tokens
-- authenticated user profile information.
+- authorize device
+- exchange an authorization code, device code, or refresh token for an access token.
+- initiate the oauth 2.0 authorization code flow.
+- device authorization grant flow for input-constrained devices.
+- oauth 2.0 authorization code flow initiation.
+- oauth
+- authorize oauth
+- initiate the device authorization grant flow.
+- get profile information about the authenticated user.
 - revoke an existing oauth access or refresh token.
-- initiate the device authorization grant flow for input-constrained devices.
-- get profile information about the currently authenticated user.
-- software development
+- exchange token
+- revoke token
+- get user info
+- get information about the current oauth access token including scopes and expiration.
 slug: authentication-and-identity
 tags:
 - Gitlab

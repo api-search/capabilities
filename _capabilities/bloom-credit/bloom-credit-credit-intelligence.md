@@ -10,10 +10,10 @@ provider_slug: bloom-credit
 search_terms:
 - credit bureau
 - lending
-- credit reports
-- credit scores
-- fintech
 - personal finance
+- credit scores
+- credit reports
+- fintech
 slug: bloom-credit-credit-intelligence
 tags: []
 tools: []

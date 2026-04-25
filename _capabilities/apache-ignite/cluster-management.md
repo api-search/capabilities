@@ -21,33 +21,33 @@ personas: []
 provider_name: Apache Ignite
 provider_slug: apache-ignite
 search_terms:
-- get configuration
-- distributed database
-- engineers who deploy and maintain ignite clusters in production
-- in-memory database
-- in-memory
-- update configuration
-- execute sql query
-- Platform Engineer
-- retrieve the current apache ignite cluster configuration
-- get cluster configuration
-- caching
-- database administration
-- sql
-- get cluster state
-- initialize a new apache ignite cluster
-- database administrators and platform engineers managing ignite clusters
-- Database Administrator
-- dbas who manage ignite cluster health, configuration, and sql workloads
-- open source
-- retrieve the current state and health of the apache ignite cluster
-- compute grid
-- update apache ignite cluster configuration parameters
-- apache ignite
-- execute sql
-- init cluster
 - execute sql queries on the distributed ignite cluster
+- sql
+- in-memory
+- initialize a new apache ignite cluster
+- execute sql query
+- compute grid
+- get cluster state
+- update configuration
+- in-memory database
+- dbas who manage ignite cluster health, configuration, and sql workloads
+- engineers who deploy and maintain ignite clusters in production
+- open source
 - cluster management
+- get configuration
+- retrieve the current apache ignite cluster configuration
+- caching
+- init cluster
+- database administrators and platform engineers managing ignite clusters
+- Platform Engineer
+- execute sql
+- update apache ignite cluster configuration parameters
+- database administration
+- apache ignite
+- Database Administrator
+- retrieve the current state and health of the apache ignite cluster
+- get cluster configuration
+- distributed database
 slug: cluster-management
 tags:
 - Apache Ignite

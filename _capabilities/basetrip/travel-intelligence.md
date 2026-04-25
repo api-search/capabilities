@@ -8,21 +8,21 @@ personas: []
 provider_name: Basetrip
 provider_slug: basetrip
 search_terms:
-- safety
-- embed country, city, safety, cost, visa, and health data into travel platforms
-- cities
-- Trip Planner
-- travel safety ratings and advisories
-- Travel Content Publisher
-- health
-- countries
-- travel planning, booking, and destination information
 - travel
-- content creator embedding destination guides with live data
-- developer building travel booking or trip planning apps
-- Travel App Developer
-- individual or business planning international travel
+- countries
+- Trip Planner
+- travel planning, booking, and destination information
+- embed country, city, safety, cost, visa, and health data into travel platforms
 - visa
+- health
+- Travel App Developer
+- developer building travel booking or trip planning apps
+- cities
+- safety
+- Travel Content Publisher
+- individual or business planning international travel
+- travel safety ratings and advisories
+- content creator embedding destination guides with live data
 slug: travel-intelligence
 tags: []
 tools: []

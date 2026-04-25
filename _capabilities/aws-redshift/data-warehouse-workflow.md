@@ -10,27 +10,27 @@ personas: []
 provider_name: AWS Redshift
 provider_slug: aws-redshift
 search_terms:
-- create a snapshot of a redshift cluster
-- analytics
-- list_clusters
-- delete a redshift cluster
-- cancel_sql_statement
-- execute a sql statement against a redshift cluster
-- list recent sql statement executions
-- create_cluster
-- big data
-- list_sql_statements
-- get the result of a sql statement execution
 - sql
-- execute_sql
-- create a new amazon redshift cluster
-- cloud database
-- data warehouse
-- get_sql_result
+- list_clusters
 - delete_cluster
-- cancel a running sql statement
-- list all redshift clusters in the account
 - create_snapshot
+- get the result of a sql statement execution
+- create a snapshot of a redshift cluster
+- execute a sql statement against a redshift cluster
+- get_sql_result
+- execute_sql
+- data warehouse
+- list recent sql statement executions
+- create a new amazon redshift cluster
+- create_cluster
+- list all redshift clusters in the account
+- cloud database
+- cancel_sql_statement
+- list_sql_statements
+- delete a redshift cluster
+- cancel a running sql statement
+- analytics
+- big data
 slug: data-warehouse-workflow
 tags:
 - Analytics

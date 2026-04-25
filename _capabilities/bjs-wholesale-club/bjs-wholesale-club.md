@@ -8,10 +8,10 @@ personas: []
 provider_name: BJ's Wholesale Club
 provider_slug: bjs-wholesale-club
 search_terms:
-- ecommerce
-- retail
 - wholesale
+- retail
 - membership
+- ecommerce
 slug: bjs-wholesale-club
 tags: []
 tools: []

@@ -18,40 +18,40 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- absence get balances
-- time tracking
-- absence request time off
-- list time-off entries
-- time list clock events
-- create a time clock event
-- submit a leave of absence request
-- time list entries
+- time list timesheets
+- list timesheets
 - list time clock events
-- absence request leave
-- saas
-- get time-off balances for a worker
-- absence list leaves
-- cloud computing
-- workday
-- absence list time off entries
 - financial management
+- time request entry
+- absence request time off
+- time tracking
+- list time-off balances
+- time list clock events
+- absence list leaves
 - absence get eligible types
 - enterprise software
-- list time-off balances
 - hcm
-- time-off balances
-- list timesheets
-- time create clock event
-- list balances
-- time entries
-- list time entries
-- absence management
-- submit a time-off request
-- time request entry
-- list leaves of absence
+- absence get balances
 - submit a time entry request
+- absence list time off entries
+- submit a leave of absence request
+- absence management
+- workday
+- time entries
+- list time-off entries
+- list time entries
+- cloud computing
+- create a time clock event
+- submit a time-off request
+- list balances
+- time-off balances
+- time create clock event
+- time list entries
+- list leaves of absence
 - get eligible absence types for a worker
-- time list timesheets
+- get time-off balances for a worker
+- absence request leave
+- saas
 slug: time-and-absence
 tags:
 - Workday

@@ -29,40 +29,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- list users in a workmail organization.
-- manages workmail infrastructure, user provisioning, and security policies.
-- create user
-- administration
-- user provisioning and management.
-- group management.
-- enterprise
-- create a new workmail user with mailbox.
 - it administration of email infrastructure
-- mobile device access control.
-- list email distribution groups in an organization.
-- exchange
-- Email Operations
+- enterprise
+- list users in a workmail organization.
 - email
-- list mobile device access control rules.
-- list organizations
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- list all amazon workmail organizations in the account.
-- IT Administrator
-- enterprise email provisioning and management
-- list all workmail organizations.
+- create a new email user.
 - handles day-to-day email user and group management.
+- exchange
+- user provisioning and management.
+- create user
+- list all workmail organizations.
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
 - calendar
 - list mobile device access rules
-- list groups
-- business communication
-- create a new email user.
-- aws
-- list users
-- list email groups.
-- mobile device access control and compliance
+- group management.
+- IT Administrator
+- manages workmail infrastructure, user provisioning, and security policies.
+- create a new workmail user with mailbox.
 - list mobile device access rules.
-- list users in an organization.
+- list users
+- mobile device access control and compliance
+- enterprise email provisioning and management
+- Email Operations
+- list email distribution groups in an organization.
+- list email groups.
+- mobile device access control.
+- business communication
+- aws
 - workmail organization management.
+- list groups
+- administration
+- list organizations
+- list all amazon workmail organizations in the account.
+- list users in an organization.
+- list mobile device access control rules.
 slug: email-management
 tags:
 - AWS

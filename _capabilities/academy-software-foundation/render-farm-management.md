@@ -31,44 +31,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- monitor and manage render jobs, hosts, and shows using opencue
-- visual effects
-- list all active shows in the render farm
-- get job
-- list hosts
-- color management
-- render wrangler
-- rendering
-- vfx
-- get render job
-- list jobs
-- production staff responsible for monitoring and managing render farm operations
-- opencue
-- list and manage render hosts
-- animation
-- film
-- list all active shows (productions) in the render farm
-- get or kill a specific render job
-- monitoring and management of distributed render farm resources and jobs
-- list render hosts
-- list shows
-- list and manage render jobs
-- standards
-- get details for a specific render job
-- vfx pipeline
-- academy software foundation
-- pipeline td
 - list render jobs for a show
-- list render jobs for a specific show with optional state filtering
-- list and manage render shows (productions)
-- list render jobs
 - linux foundation
-- technical director building and maintaining vfx production pipeline tools
+- list and manage render jobs
+- list all active shows (productions) in the render farm
+- list and manage render hosts
+- vfx
+- vfx pipeline
+- render wrangler
+- get render job
+- pipeline td
 - open source
-- list all render host machines and their current utilization
+- list render jobs for a specific show with optional state filtering
+- monitoring and management of distributed render farm resources and jobs
+- production staff responsible for monitoring and managing render farm operations
+- list jobs
+- technical director building and maintaining vfx production pipeline tools
+- standards
 - render farm
-- get detailed status and frame counts for a specific render job
+- list all active shows in the render farm
+- list shows
+- get job
+- film
+- list and manage render shows (productions)
+- animation
+- list render jobs
+- list all render host machines and their current utilization
+- color management
+- visual effects
+- rendering
+- list render hosts
+- academy software foundation
+- get or kill a specific render job
+- opencue
+- list hosts
+- get details for a specific render job
+- monitor and manage render jobs, hosts, and shows using opencue
 - list all render host machines
+- get detailed status and frame counts for a specific render job
 slug: render-farm-management
 tags:
 - Academy Software Foundation

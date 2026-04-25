@@ -8,11 +8,11 @@ personas: []
 provider_name: Blobr
 provider_slug: blobr
 search_terms:
-- marketing automation
-- ai agents
-- google ads
-- advertising
 - ppc
+- marketing automation
+- google ads
+- ai agents
+- advertising
 slug: blobr-google-ads-ai
 tags: []
 tools: []

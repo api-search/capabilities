@@ -62,64 +62,64 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- remove an item from an analytics group
-- list generated reports for a job
-- google
-- analytics
-- manage bulk reporting jobs
-- list group items
-- query youtube analytics data
-- list items in an analytics group
-- access generated bulk reports
-- create analytics group
-- create a new bulk reporting job
 - delete a reporting job
-- list jobs
-- create group
-- query real-time analytics reports
-- manage items within analytics groups
-- delete analytics group
-- create a reporting job
-- query analytics
-- get bulk report
-- manage analytics groups
-- reporting
-- delete an analytics group
-- remove group item
-- remove an item from a group
-- delete job
-- create an analytics group for organizing data
-- update group
-- create job
-- update analytics group
-- add group item
 - update an analytics group
-- list bulk reports
-- query youtube analytics data with dimensions and metrics
-- list reporting jobs
-- delete a bulk reporting job
-- add an item to a group
-- delete reporting job
-- video
-- list report types
-- metrics
-- list bulk reporting jobs
-- social
-- list analytics groups
-- add an item to an analytics group
-- create reporting job
-- list youtube analytics groups
-- get metadata for a specific bulk report
-- streaming
-- media
+- manage items within analytics groups
+- create an analytics group for organizing data
+- delete an analytics group
 - youtube
-- available report types
-- list groups
-- list generated bulk reports for a job
+- delete analytics group
+- media
+- query youtube analytics data
+- remove an item from an analytics group
+- reporting
+- list youtube analytics groups
+- delete job
+- get metadata for a specific bulk report
+- query analytics
+- create group
 - create an analytics group
-- videos
+- update analytics group
+- list jobs
+- remove group item
+- create reporting job
+- delete reporting job
+- add an item to an analytics group
+- create job
+- get bulk report
+- video
+- query real-time analytics reports
+- create a new bulk reporting job
 - list available report types
+- list items in an analytics group
 - delete group
+- create analytics group
+- update group
+- videos
+- list report types
+- google
+- list bulk reporting jobs
+- list generated reports for a job
+- metrics
+- remove an item from a group
+- list analytics groups
+- delete a bulk reporting job
+- add group item
+- add an item to a group
+- access generated bulk reports
+- analytics
+- list groups
+- list group items
+- manage analytics groups
+- create a reporting job
+- query youtube analytics data with dimensions and metrics
+- social
+- available report types
+- list bulk reports
+- list generated bulk reports for a job
+- manage bulk reporting jobs
+- list reporting jobs
+- streaming
 slug: analytics-and-reporting
 tags:
 - YouTube

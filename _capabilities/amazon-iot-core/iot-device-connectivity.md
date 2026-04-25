@@ -13,32 +13,32 @@ personas: []
 provider_name: Amazon IoT Core
 provider_slug: amazon-iot-core
 search_terms:
-- amazon iot core attach policy
+- amazon iot core create thing
 - managed cloud service for iot device connectivity and message routing.
 - amazon iot core create policy
-- amazon iot core create thing
-- amazon iot core delete thing
-- create policy
-- manages amazon iot core resources and operations
-- iot
+- mqtt
 - amazon iot core resources
+- amazon iot core list rules
+- attach policy
+- amazon iot core list things
+- Solutions Architect
+- amazon iot core delete thing
+- IoT Developer
+- list things
+- create thing
+- amazon iot core get thing
+- amazon iot core attach policy
+- device management
+- message routing
+- delete thing
+- manages amazon iot core resources and operations
 - list rules
+- aws
+- create policy
+- create topic rule
 - get thing
 - amazon iot core create topic rule
-- amazon iot core list things
-- device management
-- delete thing
-- create topic rule
-- mqtt
-- attach policy
-- IoT Developer
-- create thing
-- list things
-- Solutions Architect
-- aws
-- amazon iot core get thing
-- message routing
-- amazon iot core list rules
+- iot
 slug: iot-device-connectivity
 tags:
 - IoT

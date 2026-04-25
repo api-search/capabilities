@@ -37,39 +37,39 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- delete volume
-- describeSnapshots
-- ebs
-- createVolume
-- block storage management business domain for amazon ebs.
-- describe volumes
-- amazon ebs attach volume
-- create snapshot
-- amazon ebs
-- attach volume
-- engineers managing amazon ebs resources on aws.
-- ec2
+- amazon ebs describe volumes
 - storage
 - describe snapshots
-- create volume
-- block storage
-- volumes
-- createSnapshot
-- detachVolume
-- deleteVolume
-- amazon ebs describe volumes
-- workflow capability for block storage management.
-- amazon ebs describe snapshots
-- describeVolumes
-- snapshots
-- amazon ebs create volume
-- attachVolume
-- amazon ebs create snapshot
-- aws
-- amazon ebs delete volume
-- detach volume
-- amazon ebs detach volume
+- create snapshot
+- amazon ebs attach volume
+- delete volume
 - amazon web services
+- block storage management business domain for amazon ebs.
+- createSnapshot
+- amazon ebs describe snapshots
+- attach volume
+- amazon ebs create volume
+- describe volumes
+- create volume
+- snapshots
+- amazon ebs
+- amazon ebs create snapshot
+- amazon ebs detach volume
+- detachVolume
+- workflow capability for block storage management.
+- attachVolume
+- describeSnapshots
+- volumes
+- deleteVolume
+- block storage
+- createVolume
+- ebs
+- ec2
+- aws
+- describeVolumes
+- amazon ebs delete volume
+- engineers managing amazon ebs resources on aws.
+- detach volume
 slug: ebs-management
 tags:
 - Amazon EBS

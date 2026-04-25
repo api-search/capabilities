@@ -30,48 +30,48 @@ personas: []
 provider_name: Airtable
 provider_slug: airtable
 search_terms:
-- low-code
-- data
-- a specific airtable record.
-- list all airtable bases the user has access to.
-- collaboration
-- list records from a table.
-- list all accessible bases.
-- applications
-- reads and analyzes airtable data programmatically.
-- delete record
-- create records
-- delete an airtable record permanently.
-- manages users, audit logs, and shares across the organization.
-- get base schema
-- productivity
-- database
-- create records in a table.
-- list records from an airtable table with optional filtering.
-- records
-- creating, reading, updating, and deleting data records.
-- spreadsheets
-- real-time event-driven integrations via webhooks.
-- update record
-- list records
-- schema
-- list bases
-- delete a record.
-- airtable
-- Data Analyst
-- user management, audit logs, and access control.
-- integrates airtable with external systems via the rest api.
-- no-code
-- create one or more records in an airtable table.
-- update a record.
 - update specific fields in an airtable record.
-- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
-- databases
+- productivity
+- airtable
 - airtable table records.
-- get the schema of an airtable base with all tables and fields.
+- create records
+- collaboration
+- update a record.
+- integrates airtable with external systems via the rest api.
+- delete record
+- create records in a table.
+- list all airtable bases the user has access to.
+- applications
+- database
+- spreadsheets
+- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
+- records
+- list bases
+- managing the structure of bases, tables, and fields.
+- a specific airtable record.
+- reads and analyzes airtable data programmatically.
+- list records
+- real-time event-driven integrations via webhooks.
+- user management, audit logs, and access control.
+- creating, reading, updating, and deleting data records.
+- update record
+- manages users, audit logs, and shares across the organization.
+- low-code
+- databases
+- get base schema
+- Data Analyst
+- create one or more records in an airtable table.
 - airtable bases and schemas.
 - Developer
-- managing the structure of bases, tables, and fields.
+- data
+- get the schema of an airtable base with all tables and fields.
+- list all accessible bases.
+- schema
+- no-code
+- list records from an airtable table with optional filtering.
+- delete a record.
+- delete an airtable record permanently.
+- list records from a table.
 slug: database-management
 tags:
 - Airtable

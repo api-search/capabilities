@@ -9,35 +9,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- initiate funds transfer
-- Treasury Analyst
-- initiate a funds transfer between bny mellon accounts
-- get payment status
-- wire, ach, swift, and chips payment execution
-- list bny accounts
-- institutional account management and cash positioning
-- executive managing corporate liquidity and treasury operations
-- treasury
-- institutional banking
-- wire transfers
-- bny mellon
-- analyst executing treasury transactions and reporting
+- institutional investor or fund manager using bny custody and treasury services
+- Institutional Client
+- Corporate Treasurer
 - list transactions
-- initiate payment
+- get current and available balances for a bny mellon account
+- internal funds transfers and liquidity management
+- treasury
 - get the status and details of a bny mellon payment
+- get account balances
+- institutional treasury operations including accounts, payments, and funds transfers
+- initiate funds transfer
+- initiate a payment (wire, ach, swift, chips) through bny mellon
+- list bny accounts
+- executive managing corporate liquidity and treasury operations
+- institutional banking
+- bny mellon
+- asset servicing
+- list bny mellon treasury accounts for the authenticated client
+- list transactions for a bny mellon account
+- analyst executing treasury transactions and reporting
+- institutional account management and cash positioning
+- initiate a funds transfer between bny mellon accounts
+- initiate payment
 - banking
 - payments
-- Corporate Treasurer
-- list bny mellon treasury accounts for the authenticated client
-- internal funds transfers and liquidity management
-- institutional treasury operations including accounts, payments, and funds transfers
-- asset servicing
-- get account balances
-- initiate a payment (wire, ach, swift, chips) through bny mellon
-- Institutional Client
-- institutional investor or fund manager using bny custody and treasury services
-- list transactions for a bny mellon account
-- get current and available balances for a bny mellon account
+- wire transfers
+- get payment status
+- wire, ach, swift, and chips payment execution
+- Treasury Analyst
 slug: treasury-operations
 tags:
 - BNY Mellon

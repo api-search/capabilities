@@ -9,15 +9,15 @@ personas: []
 provider_name: Amazon CloudHSM
 provider_slug: amazon-cloudhsm
 search_terms:
-- security
 - cryptography
-- cloudhsm
+- Security Engineer
 - aws
+- security
 - amazon cloudhsm
 - compliance
+- cloudhsm
 - hsm
 - amazon web services
-- Security Engineer
 slug: cryptographic-key-management
 tags:
 - Amazon Web Services

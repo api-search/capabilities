@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Data Exchange
 provider_slug: amazon-data-exchange
 search_terms:
-- data marketplace
-- analytics
 - aws
-- third-party data
-- subscriptions
 - data exchange
+- analytics
+- third-party data
+- data marketplace
+- subscriptions
 slug: data-marketplace-operations
 tags: []
 tools: []
