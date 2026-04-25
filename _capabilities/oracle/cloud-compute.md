@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- list compute images
-- update instance
-- list vnic attachments
-- update instance details
-- list volume attachments in a compartment
-- update image
-- compute
-- cloud
-- perform an action on an instance (start, stop, reset)
-- launch a new compute instance
-- terminate an instance
-- get instance
-- manage a specific compute instance
-- create image
-- get image details
-- update image details
-- get instance details
 - list console connections
-- list vnic attachments in a compartment
-- delete image
-- list instance console connections
-- list available compute shapes
-- manage compute instances
-- launch instance
-- manage compute images
 - get details of a specific image
 - instance action
-- list instances
+- get instance
+- compute
+- list vnic attachments in a compartment
+- list volume attachments in a compartment
+- update instance details
+- terminate instance
+- get image
+- create a custom image from an instance
+- database
+- list instance console connections
+- enterprise
+- list images
+- manage a specific image
+- update image details
 - oracle
 - delete a custom image
-- list compute instances in a compartment
-- get image
-- terminate instance
-- list images
-- database
-- saas
+- create image
 - create a custom image
-- manage a specific image
-- create a custom image from an instance
+- update image
+- launch instance
 - get details of a specific instance
+- list vnic attachments
+- saas
+- delete image
+- list compute instances in a compartment
+- manage compute images
+- cloud
+- list instances
+- perform an action on an instance (start, stop, reset)
+- list compute images
 - list volume attachments
-- list shapes
+- update instance
+- terminate an instance
+- get image details
+- get instance details
 - infrastructure
-- enterprise
+- launch a new compute instance
+- list shapes
+- list available compute shapes
+- manage compute instances
+- manage a specific compute instance
 slug: cloud-compute
 tags:
 - Oracle

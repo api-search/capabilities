@@ -8,18 +8,18 @@ personas: []
 provider_name: Apache ServiceMix
 provider_slug: apache-servicemix
 search_terms:
-- esb
+- osgi
 - integration
 - messaging
-- osgi
-- jms/activemq message routing and transformation
-- engineer managing servicemix esb infrastructure
-- open source
-- developer building and deploying camel/cxf integration routes
-- deploy and manage esb integration routes and endpoints
-- enterprise integration
-- esb-based enterprise application integration
 - apache
+- deploy and manage esb integration routes and endpoints
+- engineer managing servicemix esb infrastructure
+- enterprise integration
+- esb
+- jms/activemq message routing and transformation
+- open source
+- esb-based enterprise application integration
+- developer building and deploying camel/cxf integration routes
 slug: servicemix-workflow
 tags: []
 tools: []

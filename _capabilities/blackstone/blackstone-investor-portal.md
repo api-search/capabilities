@@ -10,8 +10,8 @@ provider_slug: blackstone
 search_terms:
 - real estate
 - finance
-- investment management
 - alternative assets
+- investment management
 - private equity
 slug: blackstone-investor-portal
 tags: []

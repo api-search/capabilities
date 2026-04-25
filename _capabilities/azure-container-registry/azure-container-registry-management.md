@@ -13,25 +13,25 @@ personas: []
 provider_name: Azure Container Registry
 provider_slug: azure-container-registry
 search_terms:
-- registry
-- list replications
-- list registry resources
-- list all resources
-- cloud
-- list replication resources
-- list tasks
-- list webhooks
 - azure resource management
-- list registrys
+- list tasks
+- azure
+- registry
 - resource management
-- management
-- container images
+- list all resources
 - list
-- containers
 - list webhook resources
 - list task resources
-- azure
+- management
 - docker
+- list webhooks
+- cloud
+- list registry resources
+- list registrys
+- containers
+- container images
+- list replications
+- list replication resources
 slug: azure-container-registry-management
 tags:
 - Azure

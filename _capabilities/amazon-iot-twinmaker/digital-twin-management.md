@@ -13,32 +13,32 @@ personas: []
 provider_name: Amazon IoT TwinMaker
 provider_slug: amazon-iot-twinmaker
 search_terms:
-- digital twin
-- manages amazon iot twinmaker resources and operations
-- Solutions Architect
-- amazon iot twinmaker update entity
-- list components
-- list entities
-- amazon iot twinmaker create entity
 - industrial iot
-- iot
-- amazon iot twinmaker list components
-- amazon iot twinmaker create scene
-- amazon iot twinmaker list entities
-- list workspaces
-- create entity
-- Industrial Engineer
-- list scenes
-- 3d visualization
-- amazon iot twinmaker list workspaces
-- create scene
-- amazon iot twinmaker list scenes
-- amazon iot twinmaker resources
-- aws
-- create digital twins of physical systems and environments.
-- update entity
-- create workspace
 - amazon iot twinmaker create workspace
+- list scenes
+- manages amazon iot twinmaker resources and operations
+- amazon iot twinmaker list components
+- Industrial Engineer
+- list workspaces
+- update entity
+- amazon iot twinmaker create entity
+- aws
+- amazon iot twinmaker list scenes
+- digital twin
+- 3d visualization
+- Solutions Architect
+- create scene
+- amazon iot twinmaker list entities
+- amazon iot twinmaker list workspaces
+- create entity
+- amazon iot twinmaker create scene
+- create workspace
+- iot
+- create digital twins of physical systems and environments.
+- amazon iot twinmaker update entity
+- amazon iot twinmaker resources
+- list entities
+- list components
 slug: digital-twin-management
 tags:
 - IoT

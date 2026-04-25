@@ -34,43 +34,43 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- ibm websphere
-- get individual server health
-- list managed servers
-- get vulnerability
-- initiate vulnerability resolution
-- list servers managed by websphere automation
-- get vulnerability details
-- get overall health
-- fix and patch management
-- enterprise java
-- list known vulnerabilities
-- apply a fix to managed servers
-- resolve vulnerability
-- vulnerability tracking and remediation
-- j2ee
-- list fixes
-- health monitoring
-- compliance
-- list available fixes
-- vulnerability management
-- list security users
-- list available security fixes
 - compliance reporting
-- get overall health status
-- get overall environment health
-- get server health
-- apply fix
+- get overall health
 - security
-- list compliance reports
 - middleware
-- list known security vulnerabilities
-- list vulnerabilities
-- security user management
-- microservices
+- list servers managed by websphere automation
+- apply a fix to managed servers
+- list security users
+- list compliance reports
+- list known vulnerabilities
+- list managed servers
 - application server
-- list users
 - cloud native
+- get vulnerability
+- apply fix
+- vulnerability tracking and remediation
+- vulnerability management
+- list users
+- microservices
+- list fixes
+- get server health
+- list available security fixes
+- list known security vulnerabilities
+- initiate vulnerability resolution
+- get overall health status
+- get vulnerability details
+- ibm websphere
+- get overall environment health
+- enterprise java
+- fix and patch management
+- list available fixes
+- list vulnerabilities
+- get individual server health
+- security user management
+- j2ee
+- resolve vulnerability
+- compliance
+- health monitoring
 slug: security-and-compliance
 tags:
 - IBM WebSphere

@@ -45,74 +45,74 @@ personas: []
 provider_name: Informatica
 provider_slug: informatica
 search_terms:
-- login
-- delete a mapping task.
-- get mapping
-- data quality
-- delete connection
-- list all mapping tasks.
-- idmc
-- informatica
-- stop job
-- delete a schedule.
-- master data management
-- retrieve the activity log.
-- data governance
-- data source connection management.
-- list all connections.
-- address verification
-- delete mapping task
-- delete a connection.
-- list all data mappings.
-- create connection
 - delete schedule
-- iics
-- update a connection.
-- data integration
-- update connection
-- update a mapping task.
 - reference data management
-- create a new data source connection.
-- mapping task management.
-- update mapping task
-- get mapping details by id.
-- etl
-- authenticate and obtain a session id.
-- stop a running job.
-- get connection
-- start job
-- create a new mapping task.
-- get mapping task
-- get schedule
-- update a schedule.
-- list mappings
-- get activity log
-- pipeline management
-- create a new schedule.
-- job execution management.
-- enterprise software
-- update schedule
-- get connection details by id.
-- list schedules
-- get schedule details by id.
-- get mapping task details by id.
-- start a job.
-- start a job for a task or taskflow.
-- create a new connection.
-- individual connection management.
-- get connection details.
-- list mapping tasks
 - create mapping task
-- b2b gateway
-- list all data source connections.
-- create schedule
-- data profiling
-- list all task schedules.
-- data mapping management.
-- update an existing connection.
-- list connections
-- list all mappings.
 - cloud services
+- list connections
+- create a new mapping task.
+- create a new schedule.
+- data governance
+- data mapping management.
+- data quality
+- delete mapping task
+- update a schedule.
+- informatica
+- update mapping task
+- delete connection
+- data integration
+- create schedule
+- get schedule
+- list schedules
+- job execution management.
+- delete a schedule.
+- update a mapping task.
+- get mapping task details by id.
+- update an existing connection.
+- get connection details by id.
+- create a new data source connection.
+- pipeline management
+- list mapping tasks
+- list all mappings.
+- stop a running job.
+- delete a mapping task.
+- get connection details.
+- update connection
+- data source connection management.
+- authenticate and obtain a session id.
+- update a connection.
+- address verification
+- b2b gateway
+- data profiling
+- iics
+- etl
+- mapping task management.
+- login
+- get mapping
+- enterprise software
+- get mapping details by id.
+- retrieve the activity log.
+- start a job.
+- master data management
+- get activity log
+- list all data mappings.
+- individual connection management.
+- delete a connection.
+- list all mapping tasks.
+- start job
+- start a job for a task or taskflow.
+- get connection
+- update schedule
+- list mappings
+- list all task schedules.
+- list all connections.
+- create a new connection.
+- list all data source connections.
+- get schedule details by id.
+- get mapping task
+- stop job
+- idmc
+- create connection
 slug: data-integration
 tags:
 - Informatica

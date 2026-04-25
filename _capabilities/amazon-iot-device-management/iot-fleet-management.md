@@ -13,32 +13,32 @@ personas: []
 provider_name: Amazon IoT Device Management
 provider_slug: amazon-iot-device-management
 search_terms:
-- device management
-- Operations Engineer
 - create thing group
-- amazon iot device management create thing group
-- list things in group
 - ota updates
-- iot
+- amazon iot device management list things in group
+- amazon iot device management create thing group
+- amazon iot device management create job
+- create job
+- amazon iot device management describe job
+- amazon iot device management list job executions
+- amazon iot device management add thing to group
+- amazon iot device management list thing groups
+- list job executions
+- device management
+- describe job
+- aws
+- list jobs
 - manages amazon iot device management resources and operations
+- amazon iot device management resources
+- onboard, organize, and manage iot devices at scale.
+- IoT Engineer
+- list thing groups
+- list things in group
+- Operations Engineer
+- iot
+- amazon iot device management list jobs
 - add thing to group
 - fleet management
-- onboard, organize, and manage iot devices at scale.
-- amazon iot device management create job
-- amazon iot device management list thing groups
-- describe job
-- amazon iot device management list job executions
-- create job
-- amazon iot device management list things in group
-- list jobs
-- amazon iot device management list jobs
-- amazon iot device management resources
-- list thing groups
-- aws
-- IoT Engineer
-- amazon iot device management describe job
-- amazon iot device management add thing to group
-- list job executions
 slug: iot-fleet-management
 tags:
 - IoT

@@ -101,109 +101,109 @@ personas: []
 provider_name: Backblaze
 provider_slug: backblaze
 search_terms:
-- create a new application key with specific capabilities and optional bucket/prefix restrictions
-- get a time-limited token for downloading private files
-- permanently delete an application key
-- delete file version
 - get notification rules for a bucket
-- set bucket notification rules
-- cancel a large file upload
-- set event notification rules for a bucket
-- update bucket
-- cancel a large file upload and remove all parts
-- list buckets
-- delete an empty bucket
-- list parts
-- initiate a multi-part upload for files larger than 5gb
-- single key management
-- permanently delete a specific version of a file
-- application key management for scoped, least-privilege api access
-- backup
-- list keys
-- list large file uploads that have been started but not yet completed or cancelled
-- file hiding operations
-- list all b2 buckets associated with the account
-- copy a file to create a new version with a different name or in another bucket
-- file upload url generation
-- create key
-- object storage
-- storage
-- get upload part url
-- storage management
-- start large file
-- finish large file
-- get the event notification rules configured for a bucket
-- authorize account
-- bucket management
-- update bucket settings including type, cors rules, and lifecycle rules
-- authorize account and obtain api token
-- delete key
-- list file names
-- list the parts uploaded so far for an in-progress large file upload
-- hide file
-- get upload url
-- file listing and management within a bucket
-- cloud storage
-- create bucket
-- Developer
-- list in-progress large file uploads
-- complete a large file upload
-- delete an empty b2 bucket permanently
-- account authorization
-- list all application keys for the account
-- create a new b2 bucket
-- copy file
-- assemble all uploaded parts into a complete large file
-- hide a file from name-based downloads
-- create a new scoped application key
-- list uploaded parts for a large file
-- get download authorization
-- generate a time-limited authorization token for downloading private files
-- delete a specific file version
-- application key management
-- delete bucket
-- list all b2 buckets in the account
-- assemble parts into a complete file
-- get a url for uploading one part of an in-progress large file upload
-- webhook-based event notifications for real-time storage event processing
-- start a multi-part large file upload
 - list unfinished large files
 - get bucket notification rules
-- single file operations
+- delete key
 - hide a file so it cannot be found by name (soft delete for versioned buckets)
-- list file versions
-- object storage for application data, media, and backups
-- large file part management
-- get metadata about a specific file version including size, checksums, and custom info
-- update bucket type, cors, or lifecycle settings
-- delete an application key
-- operations engineer managing b2 buckets, lifecycle rules, and application keys as infrastructure
-- file copy operations
-- cancel large file
-- list all application keys
-- bucket event notification rules
-- list file names in a bucket
-- Application Integrator
-- backblaze
-- get a url and token for uploading a file to a specific bucket
-- unified workflow for bucket administration, file lifecycle, large file uploads, key management, and event notifications
-- create a new b2 bucket with specified privacy type
-- multi-part large file upload management
-- log in to the backblaze b2 api and obtain an authorization token for subsequent calls
-- list all versions of all files in a bucket
-- get file info
-- file version listing
-- cancel a large file upload and permanently delete all uploaded parts
-- set or replace all event notification webhook rules for a bucket
-- copy a file to a new name or bucket
-- integration specialist connecting third-party tools (backup, cdn, media) to b2
-- list current file names in a bucket with optional prefix filtering and pagination
-- get file metadata
-- application developer building on b2 for file storage and delivery
-- single bucket operations
+- authorize account
+- backup
+- initiate a multi-part upload for files larger than 5gb
+- complete a large file upload
+- delete an empty bucket
 - get a url to upload a file to a bucket
-- download authorization token generation
+- large file part management
+- object storage for application data, media, and backups
+- list the parts uploaded so far for an in-progress large file upload
+- get a time-limited token for downloading private files
+- start a multi-part large file upload
+- single key management
+- cancel a large file upload
+- list all application keys
+- authorize account and obtain api token
+- file listing and management within a bucket
+- set or replace all event notification webhook rules for a bucket
+- storage management
+- list all application keys for the account
+- list file versions
+- cancel a large file upload and remove all parts
+- copy file
 - DevOps Engineer
+- application key management for scoped, least-privilege api access
+- update bucket
+- finish large file
+- list file names in a bucket
+- webhook-based event notifications for real-time storage event processing
+- hide a file from name-based downloads
+- multi-part large file upload management
+- delete a specific file version
+- update bucket settings including type, cors rules, and lifecycle rules
+- bucket event notification rules
+- create a new scoped application key
+- permanently delete a specific version of a file
+- list file names
+- get metadata about a specific file version including size, checksums, and custom info
+- set event notification rules for a bucket
+- start large file
+- integration specialist connecting third-party tools (backup, cdn, media) to b2
+- single bucket operations
+- list in-progress large file uploads
+- list current file names in a bucket with optional prefix filtering and pagination
+- generate a time-limited authorization token for downloading private files
+- list all versions of all files in a bucket
+- set bucket notification rules
+- bucket management
+- object storage
+- cancel large file
+- get a url and token for uploading a file to a specific bucket
+- delete bucket
+- hide file
+- file copy operations
+- cloud storage
+- get download authorization
+- get upload part url
+- unified workflow for bucket administration, file lifecycle, large file uploads, key management, and event notifications
+- application key management
+- list all b2 buckets in the account
+- operations engineer managing b2 buckets, lifecycle rules, and application keys as infrastructure
+- delete file version
+- download authorization token generation
+- create a new b2 bucket with specified privacy type
+- assemble all uploaded parts into a complete large file
+- create bucket
+- storage
+- get the event notification rules configured for a bucket
+- list parts
+- list buckets
+- permanently delete an application key
+- create key
+- cancel a large file upload and permanently delete all uploaded parts
+- delete an application key
+- list keys
+- list all b2 buckets associated with the account
+- get file metadata
+- file version listing
+- single file operations
+- create a new b2 bucket
+- list large file uploads that have been started but not yet completed or cancelled
+- log in to the backblaze b2 api and obtain an authorization token for subsequent calls
+- update bucket type, cors, or lifecycle settings
+- copy a file to a new name or bucket
+- Application Integrator
+- copy a file to create a new version with a different name or in another bucket
+- delete an empty b2 bucket permanently
+- get upload url
+- file hiding operations
+- application developer building on b2 for file storage and delivery
+- account authorization
+- assemble parts into a complete file
+- get a url for uploading one part of an in-progress large file upload
+- backblaze
+- list uploaded parts for a large file
+- create a new application key with specific capabilities and optional bucket/prefix restrictions
+- file upload url generation
+- Developer
+- get file info
 slug: cloud-storage-management
 tags:
 - Backblaze

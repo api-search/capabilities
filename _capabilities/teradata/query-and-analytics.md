@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data management
-- sql query execution and session management.
-- sql
-- system and fabric configuration management.
-- manage querygrid data fabric infrastructure.
-- sql queries.
-- list query systems
-- list available vantage systems.
-- cloud
-- execute query
-- query sessions.
-- list available vantage systems for query execution.
-- analytics
 - create a new query session on a vantage system.
-- administers querygrid systems, nodes, and software.
-- get the status and results of a submitted query.
-- execute sql queries and analytics.
+- Platform Administrator
+- analytics
+- manage querygrid data fabric infrastructure.
+- database
+- get query status
+- create session
+- enterprise
+- query
+- execute query
 - executes queries and analyzes data across vantage systems.
-- list cross-system query summaries from querygrid.
+- health monitoring and issue detection.
+- machine learning
+- list query systems
+- cloud
+- manages data fabric infrastructure and cross-system connectivity.
 - teradata
 - create a query session.
-- list querygrid queries
-- Platform Administrator
-- create session
-- machine learning
-- Application Developer
-- Data Engineer
+- sql query execution and session management.
+- sql queries.
+- execute sql queries and analytics.
+- data management
 - execute a sql query against teradata vantage.
-- manages data fabric infrastructure and cross-system connectivity.
-- health monitoring and issue detection.
-- database
-- available systems.
-- get query status
-- execute a sql query.
-- data warehousing
+- list available vantage systems.
+- get the status and results of a submitted query.
 - Data Analyst
-- query
-- enterprise
+- administers querygrid systems, nodes, and software.
+- available systems.
+- data warehousing
+- query sessions.
+- system and fabric configuration management.
+- sql
+- list available vantage systems for query execution.
+- list querygrid queries
+- Data Engineer
 - integrates applications with teradata via rest apis.
+- Application Developer
+- list cross-system query summaries from querygrid.
+- execute a sql query.
 slug: query-and-analytics
 tags:
 - Teradata

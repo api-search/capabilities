@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Verified Permissions
 provider_slug: amazon-verified-permissions
 search_terms:
-- security
 - permissions
-- authorization
 - aws
+- security
+- authorization
 slug: amazon-verified-permissions-capability
 tags: []
 tools: []

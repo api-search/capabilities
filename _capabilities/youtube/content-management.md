@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- delete a video
-- upload a caption track
-- update video metadata
-- upload a new video
-- remove playlist item
-- manage items within playlists
-- list captions
-- manage youtube playlists
-- add playlist item
-- delete a caption track
-- playlists
-- list youtube playlists
-- delete playlist
-- upload video
-- create a new playlist
-- captions
-- delete a playlist
-- list videos
-- update video
-- videos
+- media
+- content management
+- manage youtube videos
+- list youtube videos matching criteria
 - list caption tracks for a video
 - update a caption track
-- video
-- upload caption
+- list youtube playlists
+- manage youtube playlists
 - update playlist details
-- remove a video from a playlist
-- list youtube videos matching criteria
-- content management
-- delete a video from youtube
-- update caption
-- upload a new video to youtube
-- upload a new caption track
-- media
-- manage youtube videos
-- create playlist
-- list playlist items
-- social
-- streaming
-- delete video
-- update playlist
-- list playlists
-- list videos matching criteria
-- manage video captions
 - google
-- add a video to a playlist
+- list videos matching criteria
+- update video metadata
+- playlists
+- create playlist
+- streaming
+- upload video
 - delete caption
+- list captions
+- upload a new video
+- update video
+- manage items within playlists
+- list videos
+- add a video to a playlist
+- video
+- upload a caption track
+- captions
 - youtube
+- list playlists
+- videos
+- update playlist
+- delete a playlist
+- delete a caption track
+- delete playlist
+- create a new playlist
+- upload a new video to youtube
+- delete a video from youtube
+- add playlist item
+- upload a new caption track
+- remove a video from a playlist
 - list items in a playlist
+- delete video
+- delete a video
+- remove playlist item
+- social
+- list playlist items
+- manage video captions
+- update caption
+- upload caption
 slug: content-management
 tags:
 - YouTube

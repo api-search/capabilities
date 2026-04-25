@@ -55,65 +55,65 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- get a specific event
-- individual monitor
-- individual incident operations
-- getMonitor
-- delete an incident
-- deleteIncident
-- update an existing incident
-- mute monitor
-- list monitors to check alert status
-- updateIncident
-- unmute monitor
-- monitoring
-- get incident details
-- create incident
-- monitor status
-- search events related to incident
-- analytics
-- list monitors
-- get incident
-- update an incident
-- listIncidents
-- createEvent
-- incidents
-- list events for correlation
 - createIncident
-- monitors
-- get monitor
-- event correlation
-- create a new incident
-- incident management
-- t1
-- datadog
-- mute a monitor
 - listEvents
 - delete incident
-- post an event during incident
-- list incident teams
-- getIncident
-- search events
-- muteMonitor
-- post an event
-- get monitor status
-- listMonitors
-- visualizations
+- list events for correlation
+- incidents
 - events
-- searchEvents
-- mute monitor during incident
-- update incident
-- mute a monitor during incident response
-- dashboards
-- get a monitor
-- list incidents
-- platform
-- get an incident
-- list events
-- get event
-- create an incident
-- create event
+- updateIncident
+- update an incident
+- post an event during incident
+- analytics
+- get monitor
+- getIncident
 - unmute a monitor after incident resolution
+- platform
+- get incident
+- create an incident
+- individual monitor
+- delete an incident
+- monitor status
+- getMonitor
+- monitors
+- event correlation
+- create incident
+- mute monitor during incident
+- muteMonitor
+- get a specific event
+- datadog
+- visualizations
+- createEvent
+- post an event
+- get a monitor
+- searchEvents
+- search events
+- monitoring
+- get monitor status
+- unmute monitor
+- update incident
+- get incident details
+- update an existing incident
+- list incident teams
+- list incidents
+- list events
+- individual incident operations
+- mute monitor
+- t1
+- listIncidents
+- incident management
+- deleteIncident
+- list monitors
+- search events related to incident
+- list monitors to check alert status
+- get event
+- mute a monitor during incident response
+- mute a monitor
+- get an incident
+- listMonitors
+- dashboards
+- create a new incident
+- create event
 slug: incident-management
 tags:
 - Datadog

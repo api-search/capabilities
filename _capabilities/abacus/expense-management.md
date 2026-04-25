@@ -37,46 +37,46 @@ personas: []
 provider_name: Abacus
 provider_slug: abacus
 search_terms:
-- list members
-- expense report management
-- expense management
 - finance
-- invite member
-- HR Manager
-- organization member management
-- get detailed information for a specific expense report including receipt url
-- update member role or department
-- suspend member
-- list all members in the organization with pagination support
-- accounting
-- update a member's role, department, or status within the organization
-- invite a new member to the organization
-- list expense reports with filtering by status, member, or date range
-- hr manager responsible for member provisioning and access management
-- individual expense report
-- organization employee submitting expense reports for reimbursement
-- members
 - get member details
-- list expenses
-- individual member operations
+- list members
+- list all members in the organization with pagination support
 - expense report submission, approval, and reimbursement workflows
-- get member
-- update member
-- list expense reports with filters
+- update a member's role, department, or status within the organization
+- individual expense report
 - reimbursement
-- invite a new member to the organization with email and role assignment
-- member suspension
-- suspend an organization member to prevent expense submissions
-- get expense report details
-- abacus
 - suspend a member
+- invite a new member to the organization with email and role assignment
 - unified workflow for member management and expense tracking
-- list all organization members
-- finance team member responsible for expense approvals and reimbursements
+- HR Manager
+- invite a new member to the organization
+- list expense reports with filters
+- accounting
 - organization member provisioning, role management, and access control
-- get detailed information for a specific organization member
-- get expense
+- members
 - Finance Administrator
+- list expenses
+- get expense report details
+- get member
+- expense management
+- update member role or department
+- list all organization members
+- update member
+- get detailed information for a specific organization member
+- suspend an organization member to prevent expense submissions
+- list expense reports with filtering by status, member, or date range
+- expense report management
+- finance team member responsible for expense approvals and reimbursements
+- hr manager responsible for member provisioning and access management
+- member suspension
+- suspend member
+- get detailed information for a specific expense report including receipt url
+- get expense
+- organization employee submitting expense reports for reimbursement
+- organization member management
+- invite member
+- abacus
+- individual member operations
 slug: expense-management
 tags:
 - Abacus

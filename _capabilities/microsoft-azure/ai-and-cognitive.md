@@ -26,48 +26,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- ai
-- openai list deployments
-- model listing
-- openai create completion
-- list cognitive services accounts
-- openai create translation
-- list available openai models
-- embedding operations
-- openai create chat completion
-- create a chat completion
-- cognitive list accounts
-- openai create embedding
-- cloud
-- chat completion operations
-- create embedding
-- create a chat completion using azure openai
-- openai create transcription
-- platform as a service
-- transcribe audio to text
-- list cognitive accounts
-- openai
-- cognitive list models
-- create chat completion
-- openai create image
-- api management
-- t1
-- list available ai models
 - generate speech from text
-- cognitive services accounts
-- openai create speech
-- translate audio to english
-- create a text completion
-- enterprise
 - list openai models
-- generate images from text
-- list model deployments
-- cloud computing
+- cognitive list models
 - infrastructure as a service
-- create text embeddings
-- azure
-- openai list models
 - cognitive services
+- azure
+- create text embeddings
+- create a chat completion using azure openai
+- create embedding
+- openai create completion
+- openai create embedding
+- create chat completion
+- enterprise
+- chat completion operations
+- openai create translation
+- openai create speech
+- openai list models
+- cognitive list accounts
+- api management
+- embedding operations
+- transcribe audio to text
+- openai create transcription
+- cloud computing
+- cloud
+- translate audio to english
+- create a chat completion
+- create a text completion
+- generate images from text
+- list available ai models
+- openai
+- openai create image
+- ai
+- openai create chat completion
+- openai list deployments
+- list cognitive services accounts
+- platform as a service
+- cognitive services accounts
+- list cognitive accounts
+- list model deployments
+- model listing
+- list available openai models
+- t1
 slug: ai-and-cognitive
 tags:
 - Azure

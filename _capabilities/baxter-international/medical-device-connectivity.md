@@ -8,10 +8,10 @@ personas: []
 provider_name: Baxter International
 provider_slug: baxter-international
 search_terms:
+- patient monitoring
 - connected health
 - infusion pumps
 - healthcare
-- patient monitoring
 - medical devices
 slug: medical-device-connectivity
 tags: []

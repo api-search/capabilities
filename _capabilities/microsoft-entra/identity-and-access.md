@@ -101,86 +101,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- create group
-- remove a member from a group.
-- individual service principal management.
-- create application
-- individual group management.
-- update service principal.
-- list user group memberships.
-- list groups and roles a user belongs to.
-- delete application
-- microsoft
-- security
-- identity
 - remove group member
-- delete user
-- list groups
-- update group properties.
-- individual user management.
-- update service principal
-- service principal management.
-- user account management.
-- list service principals
-- list all service principals.
-- user group membership.
-- get application details.
-- get user properties by id.
-- update user
-- register a new application.
-- access management
-- identity governance
-- authentication
-- delete service principal
-- list group members.
-- application registration management.
-- update application properties.
-- get service principal
-- get user details.
 - group membership management.
-- list all users in microsoft entra directory.
-- zero trust
-- microsoft entra
-- delete a user from the directory.
-- delete group
-- update service principal properties.
-- create a new service principal.
-- directory management
-- list applications
-- entra
-- list group members
-- azure ad
-- group management.
-- list all groups in the directory.
-- list all applications.
-- list all users in the directory.
-- update group
-- list members of a group.
-- create a new group.
-- add group member
-- individual application management.
-- get service principal details.
-- network security
-- list users
-- delete an application registration.
-- create user
-- get application
-- delete a group.
-- get user
-- update application
-- add a member to a group.
-- list all application registrations.
 - list user memberships
-- create a new user.
-- get group details.
-- create a new user in the directory.
-- delete a service principal.
-- delete a user.
 - list all groups.
-- delete an application.
-- create service principal
+- delete application
 - get group
+- list members of a group.
+- delete group
+- user account management.
+- application registration management.
+- get service principal
+- individual group management.
+- list users
+- delete a user.
+- get group details.
+- list user group memberships.
+- get service principal details.
+- get application
+- create group
+- update service principal
+- create user
+- delete a user from the directory.
+- list all groups in the directory.
+- update group properties.
+- directory management
+- security
+- microsoft entra
+- add a member to a group.
+- create service principal
+- individual service principal management.
+- identity
+- list groups and roles a user belongs to.
+- network security
+- list all users in the directory.
+- update application properties.
+- delete a group.
+- update group
+- create a new group.
+- update application
+- azure ad
+- individual application management.
+- delete service principal
+- create a new user in the directory.
+- list all applications.
+- create application
+- identity governance
+- list group members.
+- get user properties by id.
+- remove a member from a group.
+- user group membership.
 - update user properties.
+- list service principals
+- list all application registrations.
+- list all users in microsoft entra directory.
+- create a new user.
+- zero trust
+- add group member
+- list applications
+- delete user
+- update service principal.
+- list groups
+- create a new service principal.
+- group management.
+- delete a service principal.
+- register a new application.
+- microsoft
+- list all service principals.
+- get user
+- update service principal properties.
+- service principal management.
+- entra
+- update user
+- list group members
+- individual user management.
+- delete an application registration.
+- get application details.
+- access management
+- authentication
+- get user details.
+- delete an application.
 slug: identity-and-access
 tags:
 - Microsoft Entra

@@ -8,21 +8,21 @@ personas: []
 provider_name: Apache POI
 provider_slug: apache-poi
 search_terms:
+- powerpoint
 - java
-- end-to-end workflow for creating and manipulating office documents
+- word
+- apache
+- microsoft office
 - java developer building office document generation features
-- open source
+- extracting structured data from office file formats
 - workflow for extracting data from excel, word, and powerpoint files
 - document processing
-- developer generating automated excel or word reports
 - creation, manipulation, and conversion of office documents
-- microsoft office
-- word
-- powerpoint
 - excel
-- apache
+- end-to-end workflow for creating and manipulating office documents
+- open source
 - engineer extracting and transforming data from office files
-- extracting structured data from office file formats
+- developer generating automated excel or word reports
 slug: poi-workflow
 tags: []
 tools: []

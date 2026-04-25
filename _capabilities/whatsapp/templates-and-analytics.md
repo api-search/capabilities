@@ -33,33 +33,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- marketing
-- retrieves template analytics.
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- message templates
-- individual message template management.
-- reporting
-- deletes a message template. deleting by name removes all language variants.
-- analytics
-- creates a new message template. templates must be approved by meta before use.
 - retrieves conversation analytics.
-- updates an existing message template.
+- individual message template management.
+- analytics
+- retrieves template analytics.
+- get conversation analytics
+- deletes a message template. deleting by name removes all language variants.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- message templates
+- creates a new message template.
 - deletes a message template.
-- list message templates
-- delete message template
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
 - update message template
-- whatsapp
-- conversation analytics and reporting.
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- delete message template
+- create message template
 - retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- creates a new message template. templates must be approved by meta before use.
 - get template analytics
 - lists all message templates for a waba.
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- whatsapp
 - message template management.
-- create message template
-- creates a new message template.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 - template performance analytics.
-- get conversation analytics
+- marketing
+- conversation analytics and reporting.
+- list message templates
+- updates an existing message template.
+- reporting
 slug: templates-and-analytics
 tags:
 - WhatsApp

@@ -25,45 +25,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- customer experience
+- email marketing
+- list all deals
+- Marketing Manager
+- create account
+- Email Marketer
+- list all sales deals in activecampaign crm
+- accounts
+- manage sales pipeline, deals, accounts, and tasks
+- activecampaign
+- builds integrations, automation workflows, and uses the api directly
+- email, sms, and multi-channel marketing automation
+- list accounts
+- list all company accounts in activecampaign crm
+- orchestrate contact journeys, campaigns, automations, and list management
 - tracks deals, manages accounts, and uses crm features
-- crm, pipeline management, and revenue operations
+- retrieve a specific deal by id
 - list all accounts
 - create a new deal
-- manages email campaigns, automations, and contact segmentation
+- sales
 - Growth Engineer
-- accounts
-- list all sales deals in activecampaign crm
-- list all company accounts in activecampaign crm
+- sales automation
+- crm
+- create a new company account in activecampaign crm
+- Account Manager
+- company account management
+- Revenue Operations
+- sales deal management
+- create a new account
+- deals
+- list deals
+- cross-channel contact engagement and personalization
+- customer experience
+- manages email campaigns, automations, and contact segmentation
 - get deal
 - marketing automation
-- list all deals
-- create a new account
-- Sales Representative
-- company account management
-- orchestrate contact journeys, campaigns, automations, and list management
-- Email Marketer
-- cross-channel contact engagement and personalization
-- sales deal management
-- activecampaign
-- deals
-- Revenue Operations
-- builds integrations, automation workflows, and uses the api directly
-- list deals
 - create a new sales deal in activecampaign crm
-- crm
-- retrieve a specific deal by id
-- create a new company account in activecampaign crm
-- sales automation
-- create account
-- Marketing Manager
-- sales
-- email marketing
-- Account Manager
-- list accounts
-- email, sms, and multi-channel marketing automation
-- manage sales pipeline, deals, accounts, and tasks
+- crm, pipeline management, and revenue operations
 - create deal
+- Sales Representative
 slug: crm-sales
 tags:
 - ActiveCampaign

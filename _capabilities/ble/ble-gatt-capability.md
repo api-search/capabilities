@@ -9,12 +9,12 @@ provider_name: BLE
 provider_slug: ble
 search_terms:
 - embedded
-- wireless
-- iot
-- protocols
-- ble
 - bluetooth
+- iot
+- wireless
+- protocols
 - standards
+- ble
 slug: ble-gatt-capability
 tags: []
 tools: []

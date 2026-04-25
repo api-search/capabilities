@@ -38,46 +38,46 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- portfolio analytics
-- global equity prices.
-- pricing
-- get fx rates.
-- get quotes
-- get real-time news.
-- market data
-- get real-time quotes.
-- research
-- get ticks
 - get real-time time series.
-- get price alerting data.
-- options data.
-- real-time data
-- get rt quotes
-- get price alerts
-- real-time quotes.
-- get intraday ticks
-- get tick history
-- get intraday tick history.
-- get equity prices and returns.
-- get rt news
-- get global equity prices.
-- get equity prices.
-- get options
-- get time series
 - get fx rates
+- get fx rates.
+- portfolio analytics
 - investment analytics
-- get historical tick data.
-- historical tick data.
-- financial data
-- get tick history.
-- financial
-- factset
-- foreign exchange rates.
-- get prices
+- get quotes
+- get intraday ticks
+- get real-time news.
+- get real-time quotes.
 - get fx
+- real-time data
+- get equity prices.
+- options data.
+- historical tick data.
+- real-time quotes.
+- get rt quotes
 - get global prices
 - get options data.
+- get rt news
+- get options
+- get ticks
+- factset
+- market data
+- get tick history.
+- research
+- foreign exchange rates.
+- get global equity prices.
+- get time series
+- get price alerts
+- get equity prices and returns.
 - get foreign exchange rates.
+- global equity prices.
+- pricing
+- financial
+- get prices
+- get intraday tick history.
+- financial data
+- get price alerting data.
+- get historical tick data.
+- get tick history
 slug: market-data-pricing
 tags:
 - FactSet

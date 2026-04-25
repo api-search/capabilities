@@ -75,90 +75,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- check if a bucket exists
-- single access point
-- get details of an s3 table bucket
-- list storage lens configurations
-- get table
-- create a batch operations job
-- head bucket
-- list table buckets
-- create a new s3 bucket
-- list storage lens configs
-- delete an s3 bucket
-- get an object
-- get access point
-- list buckets
-- list s3 access points
-- list namespaces
-- data storage
-- upload an object
-- list s3 access points for the account
-- list tables
-- s3 buckets
-- object storage
-- storage management
-- list storage lens
-- get versioning configuration for an s3 bucket
 - put object
-- get table bucket
-- list objects in a bucket
-- single object
-- delete multiple objects from an s3 bucket
-- delete an object from s3
-- copy object
-- delete objects
-- describe batch job
-- list s3 storage lens configurations
-- cloud storage
-- get details of a table
-- list batch operations jobs
-- create bucket
-- create an s3 bucket
-- s3 table buckets
-- tables in a table bucket
-- list namespaces in a table bucket
-- single s3 bucket
-- objects in a bucket
-- copy an object within s3
-- get bucket versioning
-- get configuration of an s3 access point
-- s3
-- list s3 batch operations jobs
-- get object
-- delete bucket
-- list s3 table buckets
-- s3 batch operations jobs
-- list jobs
-- single batch operations job
-- get public access block settings for the account
-- s3 access points
-- get lifecycle configuration for an s3 bucket
-- scalable storage
-- get encryption configuration for an s3 bucket
-- list objects in an s3 bucket
-- list all s3 buckets
-- list objects
-- delete object
-- list access points
-- archive
-- delete an object
-- list all s3 buckets owned by the account
-- get details of a batch operations job
-- list tables in a namespace
-- storage lens configurations
-- get an access point
-- get public access block
-- describe job
-- create job
-- retrieve an object from s3
-- upload an object to s3
-- aws
-- list batch jobs
-- get bucket encryption
-- amazon
-- get bucket lifecycle
+- get details of an s3 table bucket
+- list s3 access points for the account
 - backup
+- list storage lens configs
+- list access points
+- objects in a bucket
+- s3 batch operations jobs
+- get configuration of an s3 access point
+- describe job
+- list namespaces
+- get bucket encryption
+- list s3 batch operations jobs
+- get access point
+- check if a bucket exists
+- list tables in a namespace
+- list table buckets
+- storage management
+- list all s3 buckets
+- list all s3 buckets owned by the account
+- get public access block settings for the account
+- tables in a table bucket
+- get details of a batch operations job
+- single batch operations job
+- storage lens configurations
+- describe batch job
+- get details of a table
+- upload an object to s3
+- get an access point
+- aws
+- list s3 table buckets
+- get table
+- s3 buckets
+- get object
+- archive
+- copy object
+- delete an object from s3
+- s3 access points
+- get bucket versioning
+- object storage
+- delete bucket
+- delete multiple objects from an s3 bucket
+- single object
+- cloud storage
+- create a batch operations job
+- list storage lens
+- retrieve an object from s3
+- delete object
+- list s3 storage lens configurations
+- list s3 access points
+- scalable storage
+- list storage lens configurations
+- head bucket
+- create bucket
+- delete an object
+- create a new s3 bucket
+- amazon
+- get table bucket
+- list buckets
+- delete an s3 bucket
+- list batch jobs
+- delete objects
+- list objects in an s3 bucket
+- list objects
+- get an object
+- list namespaces in a table bucket
+- single access point
+- create job
+- data storage
+- list objects in a bucket
+- copy an object within s3
+- list jobs
+- list tables
+- get lifecycle configuration for an s3 bucket
+- s3
+- get encryption configuration for an s3 bucket
+- single s3 bucket
+- list batch operations jobs
+- get public access block
+- upload an object
+- create an s3 bucket
+- get versioning configuration for an s3 bucket
+- get bucket lifecycle
+- s3 table buckets
 slug: storage-management
 tags:
 - Amazon

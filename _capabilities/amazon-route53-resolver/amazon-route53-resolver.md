@@ -14,17 +14,17 @@ provider_name: Amazon Route 53 Resolver
 provider_slug: amazon-route53-resolver
 search_terms:
 - automation workflow for amazon route53 resolver
-- dns
-- hybrid cloud
-- amazon route53 resolver
 - amazon route53 resolver resources
-- list resources
-- engineer managing amazon route53 resolver resources
-- aws cloud resource management
-- cloud operations
+- hybrid cloud
 - list amazon route53 resolver resources
-- networking
 - aws
+- engineer managing amazon route53 resolver resources
+- cloud operations
+- networking
+- list resources
+- amazon route53 resolver
+- dns
+- aws cloud resource management
 slug: amazon-route53-resolver
 tags:
 - Amazon Route53 Resolver

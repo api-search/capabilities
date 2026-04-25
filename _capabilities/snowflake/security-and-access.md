@@ -7,9 +7,7 @@ consumed_apis:
 - snowflake-network-policy
 - snowflake-account
 - snowflake-managed-account
-description: Unified workflow for managing users, roles, grants, database roles, network
-  policies, and account administration. Used by Platform Administrators and Security
-  Engineers to govern access control and security posture.
+description: Unified workflow for managing users, roles, grants, database roles, network policies, and account administration. Used by Platform Administrators and Security Engineers to govern access control and security posture.
 layout: capability
 name: Snowflake Security and Access
 operations:
@@ -53,51 +51,49 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- access control
-- account management
-- administration
-- create a database role
-- create a network policy
-- create a new role
-- create a new user
-- create a role
-- create a user
-- create database role
-- create network policy
-- create role
-- create user
-- data lakes
-- data sharing
-- data warehousing
-- database
-- delete a user
-- delete user
-- fetch user
-- fetch user details
-- fetch user details by name
-- grant a privilege
-- grant a privilege to a role
-- grant management
-- grant privilege
-- list accounts
-- list all roles
-- list all users
-- list all users in the snowflake account
-- list database roles
-- list grants
-- list grants to a role
 - list managed accounts
-- list network policies
-- list roles
-- list users
+- data sharing
+- account management
+- security
 - network policy management
 - revoke a privilege from a role
-- revoke privilege
-- role management
-- security
+- list roles
 - snowflake
-- sql
+- fetch user
+- delete user
+- database
+- administration
+- list grants to a role
+- create a new user
+- list accounts
+- list all users
+- access control
 - user management
+- create a network policy
+- list users
+- list all roles
+- create database role
+- data lakes
+- grant a privilege to a role
+- fetch user details
+- revoke privilege
+- list network policies
+- delete a user
+- grant a privilege
+- create a new role
+- create a database role
+- data warehousing
+- grant privilege
+- create a user
+- sql
+- list grants
+- create network policy
+- create role
+- list database roles
+- role management
+- grant management
+- create a role
+- create user
 slug: security-and-access
 tags:
 - Snowflake
@@ -105,7 +101,7 @@ tags:
 - Access Control
 - Administration
 tools:
-- description: List all users in the Snowflake account
+- description: List all users
   hints:
     readOnly: true
   name: list-users
@@ -113,13 +109,13 @@ tools:
   hints:
     readOnly: false
   name: create-user
-- description: Fetch user details by name
+- description: Fetch user details
   hints:
     readOnly: true
   name: fetch-user
 - description: Delete a user
   hints:
-    readOnly: false
+    destructive: true
   name: delete-user
 - description: List all roles
   hints:

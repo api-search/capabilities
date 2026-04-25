@@ -8,13 +8,13 @@ personas: []
 provider_name: Banuba
 provider_slug: banuba
 search_terms:
-- beauty
-- facial
-- video
-- augmented reality
 - ar
-- face recognition
+- beauty
+- augmented reality
+- facial
 - sdk
+- video
+- face recognition
 slug: face-ar
 tags: []
 tools: []

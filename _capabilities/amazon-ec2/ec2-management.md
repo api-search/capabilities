@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- createImage
-- workflow capability for cloud compute management.
-- runInstances
+- reboot instances
+- compute
+- amazon ec2 create an ami from an instance
+- stop instances
+- start instances
+- describeInstanceStatus
+- describeImages
+- deregister image
+- rebootInstances
+- virtual machines
+- describeInstances
+- create image
 - amazon ec2 describe amis
 - startInstances
-- stop instances
-- cloud compute management business domain for amazon ec2.
-- amazon ec2 describe instance status
-- amazon ec2 launch ec2 instances
-- stopInstances
-- compute
-- describeInstanceStatus
-- terminate instances
-- deregister image
-- amazon ec2 terminate instances
-- describeInstances
-- amazon ec2 start stopped instances
-- reboot instances
-- create image
-- amazon ec2 describe ec2 instances
-- amazon ec2 reboot instances
-- amazon ec2 create an ami from an instance
-- engineers managing amazon ec2 resources on aws.
-- terminateInstances
-- virtual machines
-- describe instances
-- describe images
-- run instances
-- amazon ec2
-- amazon ec2 deregister an ami
-- rebootInstances
 - aws
-- deregisterImage
-- start instances
+- describe images
+- stopInstances
+- amazon ec2 launch ec2 instances
 - cloud computing
-- amazon ec2 stop running instances
-- describeImages
+- describe instances
+- terminate instances
+- amazon ec2 terminate instances
 - iaas
+- amazon ec2
+- createImage
+- amazon ec2 start stopped instances
+- runInstances
+- workflow capability for cloud compute management.
+- amazon ec2 describe ec2 instances
+- terminateInstances
+- engineers managing amazon ec2 resources on aws.
+- amazon ec2 stop running instances
+- run instances
+- cloud compute management business domain for amazon ec2.
 - infrastructure
+- amazon ec2 reboot instances
+- deregisterImage
+- amazon ec2 describe instance status
+- amazon ec2 deregister an ami
 - describe instance status
 slug: ec2-management
 tags:

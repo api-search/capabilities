@@ -10,34 +10,34 @@ provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
 - institutional treasury operations including accounts, payments, and funds transfers
-- institutional banking
+- list bny accounts
+- treasury
 - executive managing corporate liquidity and treasury operations
-- get current and available balances for a bny mellon account
-- asset servicing
-- analyst executing treasury transactions and reporting
-- get account balances
-- payments
-- institutional account management and cash positioning
-- Treasury Analyst
-- initiate funds transfer
-- wire, ach, swift, and chips payment execution
 - bny mellon
+- initiate a funds transfer between bny mellon accounts
+- get current and available balances for a bny mellon account
+- institutional investor or fund manager using bny custody and treasury services
+- initiate funds transfer
+- payments
+- list bny mellon treasury accounts for the authenticated client
+- wire transfers
+- institutional banking
+- Treasury Analyst
+- list transactions for a bny mellon account
+- asset servicing
+- get the status and details of a bny mellon payment
+- Corporate Treasurer
+- wire, ach, swift, and chips payment execution
+- internal funds transfers and liquidity management
+- get payment status
+- get account balances
 - list transactions
+- banking
+- initiate a payment (wire, ach, swift, chips) through bny mellon
+- analyst executing treasury transactions and reporting
 - initiate payment
 - Institutional Client
-- internal funds transfers and liquidity management
-- get the status and details of a bny mellon payment
-- initiate a payment (wire, ach, swift, chips) through bny mellon
-- Corporate Treasurer
-- wire transfers
-- get payment status
-- initiate a funds transfer between bny mellon accounts
-- treasury
-- institutional investor or fund manager using bny custody and treasury services
-- list bny accounts
-- banking
-- list transactions for a bny mellon account
-- list bny mellon treasury accounts for the authenticated client
+- institutional account management and cash positioning
 slug: treasury-operations
 tags:
 - BNY Mellon

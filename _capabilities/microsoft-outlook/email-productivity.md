@@ -77,82 +77,82 @@ personas: []
 provider_name: Microsoft Outlook
 provider_slug: microsoft-outlook
 search_terms:
-- reply to a message
-- delete an attachment from a message
-- outlook
-- send a draft message
-- send draft
-- single mail folder
-- delete a mail folder
-- forward a message
-- send an existing draft message
-- reply
-- update message
-- update folder
-- get attachment
-- productivity
-- copy message
-- send a new email message
-- get a specific mail folder
-- list messages in a folder
-- single email message
-- create folder
-- email messages
-- reply to message
-- forward an email message to recipients
-- create a new mail folder
-- office 365
-- email
-- list messages in a specific mail folder
-- list folder messages
-- messages in a folder
-- list email messages
-- get message
-- get a mail folder
-- list mail folders in the mailbox
-- reply all to message
-- graph api
-- send a new email directly
-- create a draft email message
-- list attachments for a message
-- get folder
-- calendar
-- forward
-- list folders
-- list mail folders
-- update a mail folder
-- list email messages in the outlook mailbox
-- reply to an email message
-- move a message to a different folder
-- move message
-- list messages
-- delete a message
-- create a mail folder
 - list attachments
 - mail folders
-- copy a message to a different folder
-- delete attachment
-- send a new email message directly
-- add an attachment
-- create a draft message
-- delete an email message
-- reply all to an email message
-- microsoft
-- delete folder
-- get a specific message
-- update a message
-- get a specific attachment from a message
-- message attachments
-- create draft
-- add attachment
+- reply to message
+- get attachment
+- list email messages
+- reply to a message
 - forward message
-- contacts
-- get a specific email message by id
-- update an email message
-- send mail
-- add an attachment to a message
-- delete message
+- list mail folders
+- create folder
+- forward
+- get a mail folder
+- calendar
+- reply all to an email message
+- list attachments for a message
 - enterprise
+- delete a message
+- graph api
+- get folder
+- move a message to a different folder
+- list messages in a specific mail folder
+- add an attachment to a message
+- reply to an email message
+- delete an attachment from a message
+- outlook
+- get a specific attachment from a message
+- single mail folder
+- message attachments
+- copy a message to a different folder
+- move message
+- send an existing draft message
+- get a specific email message by id
+- productivity
+- microsoft
+- delete a mail folder
+- send a new email message directly
+- list folder messages
+- forward an email message to recipients
+- office 365
+- send draft
+- reply
+- send mail
+- copy message
+- delete folder
+- update an email message
+- send a new email directly
+- list messages in a folder
+- send a draft message
+- messages in a folder
+- delete an email message
+- get message
+- create draft
+- single email message
+- add attachment
+- forward a message
+- update message
+- update folder
+- create a draft email message
+- send a new email message
+- email
+- get a specific mail folder
+- update a message
+- get a specific message
+- create a mail folder
+- create a draft message
+- list messages
+- list email messages in the outlook mailbox
+- delete attachment
+- list folders
+- update a mail folder
+- reply all to message
+- email messages
+- add an attachment
+- list mail folders in the mailbox
+- contacts
+- create a new mail folder
+- delete message
 slug: email-productivity
 tags:
 - Microsoft

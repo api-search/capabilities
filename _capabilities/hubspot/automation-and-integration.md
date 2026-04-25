@@ -12,100 +12,100 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- batchupsertportalflagstates
-- commerce
-- batchdeleteportalflagstates
-- hubspot delete a portal flag state
-- listactiondefinitions
 - hubspot list conversation threads
-- hubspot retrieve function by type
-- deleteactionfunctionbytype
-- getaccesstokenmetadata
-- hubspot delete a feature flag
-- getactorbyid
-- crm
-- hubspot list action functions
-- sales
-- setportalflagstate
-- hubspot batch delete portal flag states
 - hubspot list thread messages
-- getrefreshtokenmetadata
-- completecallback
-- hubspot create an action definition
-- hubspot retrieve a specific function
-- integration
-- getactiondefinitionrevisionbyid
-- customer service
 - createorrefreshaccesstoken
-- analytics
-- listchannels
-- listactiondefinitionrevisions
-- archiveactiondefinitionbyid
-- hubspot list portal flag states
-- revokerefreshtoken
 - hubspot list actors
-- deleteapplicationfeatureflag
-- updatethread
-- upsertapplicationfeatureflag
-- hubspot archive a thread
-- upsertactionfunction
-- getactiondefinitionbyid
-- hubspot revoke a refresh token
-- hubspot create or update a function
-- archivethread
-- getactionfunctionbytype
-- hubspot retrieve refresh token metadata
-- getmessagebyid
-- hubspot batch create or update portal flag states
-- hubspot
-- getinboxbyid
-- sendmessage
-- deleteportalflagstate
-- getthreadbyid
 - hubspot retrieve an actor
-- batchcompletecallbacks
-- hubspot retrieve a portal flag state
-- hubspot retrieve an inbox
-- hubspot create or refresh an access token
-- hubspot set a portal flag state
-- hubspot send a message
-- oauth
-- hubspot update an action definition
-- listthreadmessages
-- hubspot retrieve a thread
-- hubspot retrieve a message
-- hubspot create or update a feature flag
-- hubspot retrieve a feature flag configuration
-- operations
-- hubspot archive an action definition
-- hubspot retrieve a specific revision
-- email marketing
-- hubspot retrieve access token metadata
-- hubspot list channels
-- createactiondefinition
+- hubspot revoke a refresh token
+- getrefreshtokenmetadata
+- customer service
+- archivethread
+- upsertactionfunction
 - listthreads
-- hubspot list all inboxes
-- marketing
-- updateactiondefinitionbyid
-- getapplicationfeatureflag
-- hubspot update a thread
-- content
-- marketing automation
-- listactors
-- getactionfunctionbyid
-- listinboxes
-- automation
-- hubspot complete multiple callbacks
-- listportalflagstates
-- listactionfunctions
-- hubspot delete a function by type
-- hubspot retrieve an action definition
-- hubspot complete a single callback
+- hubspot retrieve a specific revision
+- hubspot retrieve an inbox
+- hubspot list channels
+- deleteactionfunctionbytype
 - deleteactionfunctionbyid
-- hubspot list action definitions
-- hubspot delete a specific function
+- hubspot delete a portal flag state
+- hubspot delete a function by type
+- hubspot complete a single callback
+- marketing
+- sendmessage
+- hubspot create an action definition
+- hubspot create or refresh an access token
+- analytics
+- getthreadbyid
+- integration
+- hubspot
+- hubspot archive an action definition
+- deleteapplicationfeatureflag
+- hubspot list portal flag states
+- getapplicationfeatureflag
+- operations
+- hubspot complete multiple callbacks
+- updatethread
+- hubspot batch create or update portal flag states
+- createactiondefinition
+- hubspot archive a thread
+- getactionfunctionbytype
+- listactors
+- batchcompletecallbacks
+- crm
+- listinboxes
+- commerce
+- listthreadmessages
 - getportalflagstate
+- hubspot list action functions
+- hubspot create or update a feature flag
+- hubspot set a portal flag state
+- hubspot retrieve a message
+- hubspot retrieve a specific function
+- marketing automation
+- hubspot create or update a function
+- getmessagebyid
+- hubspot delete a specific function
+- revokerefreshtoken
+- listactionfunctions
+- hubspot retrieve an action definition
+- getactorbyid
+- getactiondefinitionbyid
+- hubspot retrieve a portal flag state
+- hubspot update a thread
+- getactionfunctionbyid
+- updateactiondefinitionbyid
+- hubspot retrieve access token metadata
+- setportalflagstate
+- hubspot retrieve function by type
+- batchupsertportalflagstates
+- batchdeleteportalflagstates
+- sales
+- hubspot batch delete portal flag states
+- archiveactiondefinitionbyid
+- listactiondefinitions
+- hubspot list all inboxes
+- hubspot retrieve refresh token metadata
+- hubspot retrieve a thread
 - hubspot list definition revisions
+- email marketing
+- getactiondefinitionrevisionbyid
+- oauth
+- listportalflagstates
+- completecallback
+- hubspot send a message
+- content
+- hubspot list action definitions
+- listactiondefinitionrevisions
+- getaccesstokenmetadata
+- deleteportalflagstate
+- automation
+- hubspot retrieve a feature flag configuration
+- hubspot update an action definition
+- upsertapplicationfeatureflag
+- hubspot delete a feature flag
+- listchannels
+- getinboxbyid
 slug: automation-and-integration
 tags:
 - HubSpot

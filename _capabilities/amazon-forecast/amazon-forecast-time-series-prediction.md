@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Forecast
 provider_slug: amazon-forecast
 search_terms:
-- demand planning
 - predictive analytics
+- demand planning
+- aws
+- time series
 - forecasting
 - machine learning
-- time series
-- aws
 slug: amazon-forecast-time-series-prediction
 tags:
 - Forecasting

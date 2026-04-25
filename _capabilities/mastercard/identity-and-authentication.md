@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get identity insights for a transaction
-- authentication consent management
-- get identity insights for an account
-- create an authentication consent request
-- kyc
-- verify a consumer identity using mastercard id
-- get transaction identity insights
 - identity insights for transactions
-- payments
-- submit trust verification
-- create auth consent
-- create authentication consent
-- digital identity
-- credit cards
-- get identity intelligence insights for a transaction
-- verification
-- get identity intelligence insights for an account
-- fraud detection
-- initiate authentication
-- authentication
-- mastercard
-- get account identity insights
-- submit identity verification as a trust provider
-- get account insights
-- identity insights for accounts
-- verify identity
-- verify a consumer identity
-- get transaction insights
-- initiate strong customer authentication
-- identity
-- financial services
-- open banking
+- get transaction identity insights
 - identity verification
+- get transaction insights
+- create authentication consent
+- fraud detection
+- get identity intelligence insights for an account
+- get identity insights for an account
+- verify identity
+- get identity intelligence insights for a transaction
+- kyc
+- identity
+- verification
+- payments
+- initiate strong customer authentication
+- initiate authentication
+- digital identity
 - get authentication consent status
-- create consent
+- credit cards
+- submit trust verification
+- authentication consent management
+- get identity insights for a transaction
 - get consent status
+- verify a consumer identity
+- create auth consent
+- create consent
+- mastercard
+- submit identity verification as a trust provider
+- identity insights for accounts
+- financial services
+- get account identity insights
+- create an authentication consent request
+- verify a consumer identity using mastercard id
+- authentication
+- open banking
+- get account insights
 slug: identity-and-authentication
 tags:
 - Mastercard

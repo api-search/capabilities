@@ -71,74 +71,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- observability
-- single incident operations
-- create a new uptime monitor
-- single monitor operations
-- acknowledge an incident
-- on call engineer
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- on-call
+- delete a monitor
+- delete incident
+- list all incidents
+- incidents
+- list incidents with optional date and filter parameters
 - list all uptime monitors to check what is being monitored
-- communicating service health to customers and stakeholders
-- delete an incident
-- create a heartbeat monitor
-- acknowledge an active incident to indicate someone is working on it
-- get details for a specific incident
-- monitor management for uptime checks
-- delete monitor
-- monitoring
-- create incident
-- get incident details
-- get availability for a heartbeat monitor
-- list monitors
+- get heartbeat availability
+- monitor availability metrics
+- get monitor
+- platform
+- list all heartbeats
+- update a monitor
+- list heartbeats
+- on call engineer
 - get incident
 - engineer on-call rotation responsible for responding to incidents
-- acknowledge incident
-- resolve incident
-- delete a monitor
-- incidents
-- uptime and availability monitoring for services and scheduled jobs
-- list heartbeats
-- detection, acknowledgement, and resolution of service incidents
-- update monitor
-- get monitor
-- get monitor details
-- incident management
-- get monitor availability summary
-- get monitor availability
-- resolve an incident
-- list all heartbeat monitors for scheduled jobs
-- delete incident
-- create monitor
-- list all heartbeats
-- list all incidents
-- create a manual incident
-- site reliability engineer managing infrastructure uptime and incident response
-- better stack
-- resolve an active incident
-- get details for a specific uptime monitor
-- create a new uptime monitor for a url or api
-- heartbeats
-- acknowledge an active incident
-- uptime
-- update a monitor
-- list all uptime monitors
-- heartbeat monitor management
-- get availability metrics for a monitor
-- sre
-- sre engineer
-- logs
-- status
-- get heartbeat availability
-- list incidents with optional date and filter parameters
-- platform
-- list incidents
-- on-call
-- managing team access and membership
-- incident response
-- monitor availability metrics
-- create heartbeat
 - resolve an active incident once the issue is fixed
+- status
+- create a manual incident
+- single incident operations
+- delete an incident
+- acknowledge an incident
+- get monitor availability
+- create incident
+- get monitor details
+- create a new uptime monitor for a url or api
+- create a heartbeat monitor
+- uptime and availability monitoring for services and scheduled jobs
+- get monitor availability summary
+- heartbeat monitor management
+- sre engineer
+- observability
+- get details for a specific uptime monitor
+- acknowledge an active incident
+- site reliability engineer managing infrastructure uptime and incident response
+- monitoring
+- update monitor
+- communicating service health to customers and stakeholders
+- get incident details
+- get availability for a heartbeat monitor
+- heartbeats
+- detection, acknowledgement, and resolution of service incidents
+- list all heartbeat monitors for scheduled jobs
+- list incidents
+- create a new uptime monitor
+- list all uptime monitors
+- uptime
+- better stack
+- delete monitor
+- create heartbeat
+- incident management
+- resolve an incident
+- get availability metrics for a monitor
+- get details for a specific incident
+- single monitor operations
+- managing team access and membership
+- sre
+- monitor management for uptime checks
+- list monitors
+- incident response
+- create monitor
+- acknowledge incident
+- resolve an active incident
+- acknowledge an active incident to indicate someone is working on it
+- resolve incident
+- logs
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
 slug: incident-response
 tags:
 - Better Stack

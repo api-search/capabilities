@@ -110,151 +110,151 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- subscription manager
-- browser security admin
-- firewall admin
-- network architect
-- researches threat actors, malware campaigns, and vulnerability trends.
-- enterprise browser policy management and secure browsing.
-- platform engineer
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- list child tenant service groups
-- executes containment, eradication, and recovery actions during security incidents.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- list all tenant service groups with optional filtering.
-- create access policy
-- list all available sase roles.
-- list all sase service accounts with optional filtering by tsg.
-- red team operator
-- delete a tenant service group.
-- cloud security
-- generate credentials for a service account.
-- get service account
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- manages service accounts, roles, and access policies for platform api access.
 - get subscription
 - manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- create a new access policy.
-- get, update, or delete a specific tenant service group.
-- list sase subscriptions.
-- analyzes suspicious files and samples for malware characteristics.
-- identity
-- manage sase access policies.
-- enterprise it
+- get details of a specific access policy by id.
+- update service account
+- update tenant service group
+- list roles
+- manage enterprise browser policies, user sessions, and deployments.
+- cloud security posture management, compliance monitoring, and workload protection.
+- list all service accounts with optional filtering.
+- revoke service account key
+- compliance team
+- subscription manager
+- incident responder
+- update an existing tenant service group.
 - delete a service account by id.
+- enterprise browser policy management and secure browsing.
+- tenant operator
+- red team operator
+- mssp operator
+- sase admin
+- list access policies
+- investigates dlp incidents and manages sensitive data protection policies.
+- delete an access policy.
+- monitors network health, performance, and digital experience metrics.
+- get entitlements for a specific subscription.
+- update an existing access policy.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- list child tenant service groups.
+- cloud security
+- proactively searches for threats and iocs across telemetry data.
+- conducts automated adversarial testing against ai systems and llm applications.
+- list all tenant service groups with optional filtering.
+- create service account
+- list subscriptions
+- sre
+- generate credentials for a service account.
+- get service account
+- create tenant service group
+- data loss prevention, saas security monitoring, and identity security posture.
+- list available sase roles.
 - allocate licenses
-- get details of a specific service account.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- sd wan operator
-- compliance officer
+- manages enterprise browser policies and secure browsing configurations.
+- get details of a specific subscription.
+- manages logging infrastructure, integrations, and platform automation.
+- ai runtime security scanning and automated red teaming for ai applications.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
 - list child tenant service groups for a given parent.
 - firewall
-- get subscription entitlements
-- threat hunter
-- tenancy
-- get details of a specific subscription.
-- access management
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- create service account
-- manages logging infrastructure, integrations, and platform automation.
-- data protection analyst
-- update service account
-- manages service accounts, roles, and access policies for platform api access.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- create a new sase service account.
-- sre
-- palo alto networks
-- list roles
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- compliance team
-- list child tenant service groups.
-- create a new service account.
-- cloud security engineer
-- investigates security incidents, triages alerts, and coordinates response actions.
-- get, update, or delete a specific service account.
-- network operations
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- sase admin
-- manage enterprise browser policies, user sessions, and deployments.
-- ai security engineer
-- list tenant service groups
-- generate service account credentials
-- manages enterprise browser policies and secure browsing configurations.
-- get access policy
-- delete tenant service group
-- get details of a specific service account by id.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- ai runtime security scanning and automated red teaming for ai applications.
-- list available sase roles.
-- soar
-- investigates dlp incidents and manages sensitive data protection policies.
-- conducts automated adversarial testing against ai systems and llm applications.
-- cybersecurity
-- malware researcher
-- get, update, or delete a specific access policy.
-- get tenant service group
-- revoke service account key
-- incident responder
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- iam admin
-- list service accounts
-- cloud identity engine
-- list all available roles.
-- threat intel analyst
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- digital experience monitoring, log management, and best practice assessment.
-- proactively searches for threats and iocs across telemetry data.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- delete an access policy.
-- get details of a specific tenant service group.
-- list all access policies with optional filtering.
-- mssp operator
-- manage sase service accounts.
-- delete service account
-- update an existing tenant service group.
-- list all subscriptions for a tenant service group.
+- identity
+- get details of a specific service account.
 - network security
-- threat intelligence
-- update access policy
-- update an existing service account.
-- create a new tenant service group.
-- monitors network health, performance, and digital experience metrics.
+- list all subscriptions for a tenant service group.
 - manages multi-tenant security operations at scale for managed service providers.
-- allocate licenses from a subscription.
-- update tenant service group
-- delete a service account.
-- list access policies
-- secures ai applications with runtime scanning and vulnerability assessment.
-- list all service accounts with optional filtering.
-- get details of a specific access policy.
-- tenant operator
-- manage sase tenant service groups.
-- revoke a specific key for a service account.
-- list subscriptions
-- identity and access management, tenant hierarchies, and subscription management.
-- delete access policy
-- soc analyst
-- allocate licenses from a subscription to tenant service groups.
-- update an existing access policy.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- designs and implements network security architectures and policies.
-- sase
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- subscriptions
-- get entitlements for a specific subscription.
-- saas security admin
-- create tenant service group
-- xdr
-- get details of a specific access policy by id.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- executes containment, eradication, and recovery actions during security incidents.
+- data protection analyst
+- palo alto networks
+- create a new sase service account.
 - vulnerability manager
-- cloud security posture management, compliance monitoring, and workload protection.
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- delete an access policy by id.
-- network security engineer
+- manage sase tenant service groups.
+- manage sase access policies.
+- xdr
+- sase
+- get subscription entitlements
+- soc analyst
+- researches threat actors, malware campaigns, and vulnerability trends.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- digital experience monitoring, log management, and best practice assessment.
+- soar
+- get access policy
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- generate service account credentials
+- create a new service account.
+- delete a tenant service group.
+- get details of a specific access policy.
+- delete tenant service group
+- update access policy
+- sd wan operator
+- secures ai applications with runtime scanning and vulnerability assessment.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- network architect
+- iam admin
+- saas security admin
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- browser security admin
+- list tenant service groups
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- network operations
+- ai security engineer
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- threat intelligence
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
 - designs sase and sd-wan network architectures for secure remote access.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- data loss prevention, saas security monitoring, and identity security posture.
+- subscriptions
+- list service accounts
+- create access policy
+- enterprise it
+- allocate licenses from a subscription to tenant service groups.
+- cybersecurity
+- manage sase service accounts.
+- create a new tenant service group.
+- revoke a specific key for a service account.
+- list all available sase roles.
+- compliance officer
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- list child tenant service groups
+- allocate licenses from a subscription.
+- delete service account
+- create a new access policy.
+- update an existing service account.
+- delete a service account.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- network security engineer
+- tenancy
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- get tenant service group
+- platform engineer
+- designs and implements network security architectures and policies.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- cloud identity engine
+- get, update, or delete a specific service account.
+- list all available roles.
+- get, update, or delete a specific tenant service group.
+- get details of a specific service account by id.
+- delete access policy
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- analyzes suspicious files and samples for malware characteristics.
+- list all sase service accounts with optional filtering by tsg.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- list all access policies with optional filtering.
+- threat intel analyst
+- firewall admin
+- threat hunter
+- identity and access management, tenant hierarchies, and subscription management.
+- access management
+- malware researcher
+- get details of a specific tenant service group.
+- get, update, or delete a specific access policy.
+- delete an access policy by id.
+- cloud security engineer
+- list sase subscriptions.
 slug: identity-and-access
 tags:
 - Palo Alto Networks

@@ -13,25 +13,25 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-dev-ops
 search_terms:
-- list all resources
-- cloud
-- devops
-- list organizations
-- list pipelines
-- list repository resources
 - azure resource management
-- version control
-- list pipeline resources
-- resource management
-- management
-- list project resources
-- project management
-- list
-- list projects
-- list organization resources
 - azure
-- ci/cd
+- resource management
+- list all resources
+- list
+- list organization resources
+- management
+- project management
+- version control
+- devops
+- list projects
+- list organizations
+- cloud
 - list repositorys
+- list repository resources
+- list project resources
+- list pipelines
+- list pipeline resources
+- ci/cd
 slug: azure-dev-ops-management
 tags:
 - Azure

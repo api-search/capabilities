@@ -17,39 +17,39 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- list bank of america cashpro accounts for the authenticated client
+- treasury
 - finance
-- list statements
-- get account balances
-- corporate treasury operations including account management, payments, and reporting
-- payments
-- list available bank of america account statements
+- account management
+- list account transactions
+- list cashpro accounts
+- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- list transactions for a bank of america account within a date range
+- payment initiation and tracking across 350+ payment types
+- get the current status of a bank of america payment
 - payment management
+- list accounts
+- list bofa accounts
+- payments
+- list bank of america cashpro accounts for the authenticated client
+- initiate a payment
+- corporate banking
 - Treasury Analyst
 - executive responsible for corporate cash and liquidity management
+- list available bank of america account statements
 - analyst managing day-to-day treasury operations and reporting
-- list transactions for a bank of america account within a date range
-- system integration connecting erp/tms to bank of america cashpro apis
-- initiate payment
-- get the current status of a bank of america payment
-- list bofa accounts
 - Corporate Treasurer
-- payment initiation and tracking across 350+ payment types
-- get payment status
-- list cashpro accounts
-- initiate a payment
-- treasury
-- account management
-- corporate banking
-- cashpro
-- initiate a payment through bank of america cashpro (supports 350+ payment types)
 - get current and available balances for a cashpro account
-- ERP Integration
-- corporate cash management, balance reporting, and liquidity
-- banking
-- list accounts
-- list account transactions
+- get payment status
 - bank of america
+- cashpro
+- get account balances
+- list statements
+- system integration connecting erp/tms to bank of america cashpro apis
+- ERP Integration
+- banking
+- initiate payment
+- corporate cash management, balance reporting, and liquidity
+- corporate treasury operations including account management, payments, and reporting
 slug: treasury-banking
 tags:
 - Bank of America

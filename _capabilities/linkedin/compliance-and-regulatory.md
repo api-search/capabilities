@@ -51,62 +51,62 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- marketing
-- get advertiser transparency data.
-- tracks employee learning activity and completions.
-- b2b advertising, audience targeting, and campaign analytics.
-- get organization
-- uses sales navigator for lead generation and crm sync.
-- archives communications for regulatory compliance.
-- data portability
-- get compliance events
-- get dma reactions
-- authentication, sharing, and verification for consumer apps.
-- get organization by id for data portability.
-- get page content analytics for data portability.
-- message archiving and regulatory communications governance.
-- opt in member
 - regulatory
-- get business manager relationships
-- check member status
-- professional networking
-- get posts for data portability.
-- batch get organizations for data portability.
-- get dma posts
-- get dma comments
-- opt out a member from compliance monitoring.
-- recruiting
-- get organization by id.
-- retrieve compliance events.
-- compliance
 - get advertiser transparency data for a sponsored account.
-- get business manager account relationships.
-- get reactions for data portability.
-- careers
-- batch get organizations
-- opt in a member for compliance monitoring.
-- business
-- check member compliance monitoring status.
-- social media
-- get dma lead gen responses
-- get lead gen responses for data portability.
-- job posting, recruiting, and applicant tracking.
-- get comments for data portability.
-- sales intelligence, lead management, and crm integration.
-- get dma events
-- data portability and advertiser transparency for dma.
-- get events for data portability.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get organization acls
-- get page content analytics
-- opt out member
-- retrieve compliance events for a regulated member.
-- employee development tracking and content access.
-- linkedin
-- get advertiser transparency
-- posts jobs and manages candidates through ats integrations.
+- compliance
 - integrates linkedin authentication and sharing into applications.
+- archives communications for regulatory compliance.
+- recruiting
+- check member status
+- get reactions for data portability.
+- social media
+- get organization by id for data portability.
+- get page content analytics
+- batch get organizations
+- get organization
+- check member compliance monitoring status.
+- get organization acls
+- get dma comments
+- sales intelligence, lead management, and crm integration.
+- batch get organizations for data portability.
+- get business manager account relationships.
+- get events for data portability.
+- get advertiser transparency
+- get page content analytics for data portability.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- get compliance events
+- posts jobs and manages candidates through ats integrations.
+- get dma lead gen responses
+- data portability
+- linkedin
+- get dma events
+- retrieve compliance events for a regulated member.
+- opt out a member from compliance monitoring.
+- b2b advertising, audience targeting, and campaign analytics.
+- get organization by id.
+- get dma reactions
+- get comments for data portability.
+- get advertiser transparency data.
+- opt out member
+- uses sales navigator for lead generation and crm sync.
+- employee development tracking and content access.
+- careers
+- data portability and advertiser transparency for dma.
+- opt in a member for compliance monitoring.
+- tracks employee learning activity and completions.
+- get lead gen responses for data portability.
+- message archiving and regulatory communications governance.
+- business
+- authentication, sharing, and verification for consumer apps.
+- get business manager relationships
+- job posting, recruiting, and applicant tracking.
+- professional networking
+- opt in member
+- get posts for data portability.
+- marketing
 - get organization acls for data portability.
+- get dma posts
+- retrieve compliance events.
 slug: compliance-and-regulatory
 tags:
 - LinkedIn

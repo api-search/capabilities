@@ -14,17 +14,17 @@ provider_name: Amazon Shield
 provider_slug: amazon-shield
 search_terms:
 - engineer managing amazon shield resources
-- amazon shield resources
-- amazon shield
-- list amazon shield resources
-- security
-- list resources
 - automation workflow for amazon shield
-- aws cloud resource management
-- cloud operations
-- networking
-- ddos protection
+- security
+- list amazon shield resources
 - aws
+- cloud operations
+- amazon shield
+- ddos protection
+- list resources
+- amazon shield resources
+- aws cloud resource management
+- networking
 slug: amazon-shield
 tags:
 - Amazon Shield

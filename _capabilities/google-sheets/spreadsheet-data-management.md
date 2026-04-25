@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
+- batch update spreadsheet
 - search developer metadata matching filters
-- data management
-- read values from a range
+- apply batch updates to a spreadsheet
 - append rows of data to a spreadsheet
 - spreadsheets
-- read values from multiple ranges at once
-- append values to a range
-- productivity
-- clear values
-- write values to multiple ranges at once
-- google workspace
+- batch update values
+- single spreadsheet operations
 - read values from a spreadsheet range
 - batch clear values
-- search developer metadata
-- cell value read and write operations
 - clear values from a range
-- batch get values
-- get spreadsheet details
-- create a new spreadsheet
-- google sheets
-- copy a sheet to another spreadsheet
-- automation
-- copy sheet
-- batch update spreadsheet
-- get developer metadata by id
-- get developer metadata
-- create spreadsheet
-- batch update values
-- append values
-- get spreadsheet
-- clear values from multiple ranges
-- write values to a spreadsheet range
-- get spreadsheet details by id
-- update values
-- single spreadsheet operations
-- get values
-- spreadsheet lifecycle operations
 - clear values from a spreadsheet range
 - write values to a range
+- automation
+- copy sheet
+- productivity
+- get spreadsheet
+- create spreadsheet
+- google sheets
+- get spreadsheet details
+- read values from a range
+- get values
+- data management
+- write values to multiple ranges at once
+- search developer metadata
+- google workspace
+- clear values
+- get spreadsheet details by id
+- clear values from multiple ranges
+- read values from multiple ranges at once
+- batch get values
+- get developer metadata
+- spreadsheet lifecycle operations
+- create a new spreadsheet
+- cell value read and write operations
+- append values to a range
+- copy a sheet to another spreadsheet
+- get developer metadata by id
+- update values
+- write values to a spreadsheet range
 - create a new google sheets spreadsheet
-- apply batch updates to a spreadsheet
+- append values
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

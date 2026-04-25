@@ -45,59 +45,59 @@ personas: []
 provider_name: Microsoft Windows Server
 provider_slug: microsoft-windows-server
 search_terms:
-- update an iis web site configuration
-- create application pool
-- list all iis web sites on the server
-- get application
-- windows server
-- list all applications
-- delete a web site
-- list all web applications
-- update application pool
-- single web site operations
-- web server
-- create an application
-- update application
-- get web site details
-- list all web sites
-- update a web site
-- server management
-- create application
-- web application management
-- list all iis application pools
-- iis
-- list applications
-- get web application details
-- create an iis application pool
-- list application pools
-- update a web application
-- operating system
 - list websites
-- create a new iis web site
-- web site management
-- delete application pool
-- delete an iis web site
-- create an application pool
-- delete website
-- get details for a specific web site
-- list all application pools
-- delete application
 - create a web site
-- windows server 2025
-- microsoft
+- list all web sites
 - update website
-- delete a web application
-- datacenter
-- get website
-- create a new web application
-- delete an application pool
+- list application pools
+- delete website
 - application pool management
-- get application pool
-- get application pool details
-- update an application pool configuration
-- create website
-- infrastructure
+- list all iis web sites on the server
+- delete application
+- operating system
+- list applications
+- create application pool
+- list all iis application pools
 - enterprise
+- update an application pool configuration
+- get website
+- create an iis application pool
+- web application management
+- get application pool
+- list all web applications
+- single web site operations
+- create a new web application
+- update application pool
+- iis
+- microsoft
+- update a web site
+- get web application details
+- web server
+- update an iis web site configuration
+- datacenter
+- web site management
+- get details for a specific web site
+- update application
+- delete a web site
+- list all applications
+- windows server
+- create website
+- create a new iis web site
+- list all application pools
+- server management
+- delete a web application
+- update a web application
+- windows server 2025
+- infrastructure
+- delete an application pool
+- create application
+- get application pool details
+- get application
+- create an application
+- delete application pool
+- create an application pool
+- delete an iis web site
+- get web site details
 slug: web-server-management
 tags:
 - Microsoft

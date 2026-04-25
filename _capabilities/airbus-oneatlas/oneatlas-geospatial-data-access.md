@@ -8,8 +8,8 @@ personas: []
 provider_name: Airbus OneAtlas
 provider_slug: airbus-oneatlas
 search_terms:
-- imagery
 - satellites
+- imagery
 slug: oneatlas-geospatial-data-access
 tags: []
 tools: []

@@ -8,15 +8,15 @@ personas: []
 provider_name: Biogen
 provider_slug: biogen
 search_terms:
-- api key lifecycle and access management
-- biotechnology
 - developer integrating with biogen pharmaceutical services apis
-- life sciences
 - neurology
+- api key lifecycle and access management
+- healthcare
 - pharmaceuticals
+- biotechnology
 - discovery of available biogen api services
 - discover and manage access to biogen pharmaceutical apis
-- healthcare
+- life sciences
 slug: api-access-management
 tags: []
 tools: []

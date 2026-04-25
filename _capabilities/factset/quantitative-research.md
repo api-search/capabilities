@@ -29,34 +29,34 @@ provider_name: Factset
 provider_slug: factset
 search_terms:
 - portfolio analytics
-- formula-based data retrieval.
-- factor library data.
-- get factors
-- run screen
-- factor analysis
-- list quant
-- run quant engine
-- market data
-- research
-- get factor library data.
-- run formula
+- screening
 - list formulas
-- list quant engine resources.
+- quant engine computations.
+- investment analytics
+- run quant engine
+- list factor library resources.
+- factor library data.
 - list screens
 - quantitative research
-- screening
-- run quant engine computations.
-- quant engine computations.
-- run universal screening.
-- list screening resources.
-- investment analytics
-- financial data
-- list factors
-- financial
-- factset
-- list factor library resources.
-- execute formula queries.
+- list quant engine resources.
+- formula-based data retrieval.
 - universal screening.
+- get factor library data.
+- list factors
+- factset
+- list screening resources.
+- list quant
+- run universal screening.
+- run quant engine computations.
+- execute formula queries.
+- market data
+- research
+- run formula
+- financial
+- factor analysis
+- get factors
+- financial data
+- run screen
 slug: quantitative-research
 tags:
 - FactSet

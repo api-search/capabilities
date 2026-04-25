@@ -44,47 +44,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- list active calls
-- application management
-- call detail records
-- get call
-- device management
-- vxml
-- get details of a specific active call
-- list vxml applications
-- list cdrs
-- get real-time call statistics
-- list all active calls on the cvp call server
-- list dialed number patterns
-- get call details
-- active call management
-- list applications
-- list sessions
-- telephony
-- vxml session monitoring
-- contact center
-- real-time statistics
-- system health
-- list devices
-- list managed devices
-- list call detail records
-- voice portal
-- list deployed applications
-- individual call details
-- list call detail records from the reporting server
-- get health
-- get call server health
 - list configured dialed number patterns
-- ivr
-- cisco
-- get statistics
-- list managed cvp devices
-- check cvp call server health status
-- list deployed vxml applications
-- voice
-- list deployed cvp applications
-- list active sessions
+- get health
+- system health
+- list deployed applications
 - list active vxml sessions
+- list applications
+- telephony
+- application management
+- vxml session monitoring
+- list active calls
+- voice portal
+- active call management
+- list dialed number patterns
+- get details of a specific active call
+- cisco
+- device management
+- list deployed cvp applications
+- get call
+- list vxml applications
+- vxml
+- get real-time call statistics
+- list sessions
+- list managed devices
+- ivr
+- voice
+- list devices
+- list cdrs
+- real-time statistics
+- check cvp call server health status
+- list call detail records from the reporting server
+- list call detail records
+- get call server health
+- list active sessions
+- get statistics
+- get call details
+- list all active calls on the cvp call server
+- list managed cvp devices
+- list deployed vxml applications
+- individual call details
+- call detail records
+- contact center
 slug: contact-center-operations
 tags:
 - Cisco

@@ -9,37 +9,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
+- bankruptcywatch
+- compliance
+- bankruptcy case research, claims management, and automated monitoring
+- get case docket
+- list all active bankruptcy monitoring alerts
+- search for bankruptcy cases across all us bankruptcy court districts
+- create a bankruptcy monitoring alert for a debtor or entity
 - us bankruptcy court cases and proceedings
-- creditor
-- bankruptcy
-- legal
-- lending
-- list monitors
-- list case claims
+- Creditor
+- list claims register for a bankruptcy case
+- create bankruptcy monitor
+- file proof of claim
+- search bankruptcy cases
+- retrieve docket entries for a bankruptcy case
+- file a proof of claim for a bankruptcy case
+- get bankruptcy case
 - Loan Officer
+- list case claims
+- pacer
+- lending
+- attorney managing creditor representation in bankruptcy proceedings
+- bankruptcy
+- creditor
+- business or individual owed money by a bankruptcy filer
+- lender monitoring borrowers for bankruptcy filings
+- automated alerts for bankruptcy filings
+- list monitors
 - Bankruptcy Attorney
 - court data
-- list all active bankruptcy monitoring alerts
-- create a bankruptcy monitoring alert for a debtor or entity
-- business or individual owed money by a bankruptcy filer
-- Creditor
-- lender monitoring borrowers for bankruptcy filings
-- create bankruptcy monitor
-- compliance
-- attorney managing creditor representation in bankruptcy proceedings
-- search bankruptcy cases
-- file a proof of claim for a bankruptcy case
-- bankruptcy case research, claims management, and automated monitoring
-- automated alerts for bankruptcy filings
-- list claims register for a bankruptcy case
 - get detailed information about a specific bankruptcy case
-- search for bankruptcy cases across all us bankruptcy court districts
-- get bankruptcy case
-- pacer
-- retrieve docket entries for a bankruptcy case
-- file proof of claim
-- bankruptcywatch
-- get case docket
+- legal
 slug: bankruptcy-monitoring
 tags:
 - BankruptcyWatch

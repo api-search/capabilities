@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- replication process metrics
-- cdc
-- data quality
-- list compare groups
-- create a new comparison job
-- create group
-- repair job
 - get veridata server information
-- get details of out-of-sync data
-- data synchronization
-- get server info
-- get goldengate process performance metrics for monitoring replication health
-- create connection
-- list veridata database connections
-- list compare groups for data verification
-- data integration
-- list replication process performance metrics
-- oracle goldengate
-- get comparison job statistics
-- list comparison jobs
-- real-time replication
-- compliance
+- list connections
 - create job
-- database connections for verification
+- list veridata database connections
+- data quality
+- list process metrics
+- database
+- get job statistics
+- enterprise
+- create a new compare group
+- create a new comparison job
+- data integration
+- execute a comparison job
 - compare groups
+- get comparison job statistics
+- list groups
 - create a new veridata database connection
 - list jobs
-- create a new compare group
-- execute a comparison job
-- get out of sync data
+- real-time replication
+- get server info
+- cdc
 - run job
-- data verification
-- get job statistics
-- database
+- get goldengate process performance metrics for monitoring replication health
+- list compare groups
+- list replication process performance metrics
+- replication process metrics
+- list comparison jobs
 - repair out-of-sync data identified by a comparison job
 - comparison jobs
-- list process metrics
-- list connections
-- list groups
-- enterprise
+- list compare groups for data verification
+- get out of sync data
+- get details of out-of-sync data
+- data synchronization
+- repair job
+- create group
+- database connections for verification
+- compliance
+- oracle goldengate
+- create connection
+- data verification
 slug: data-verification
 tags:
 - Oracle GoldenGate

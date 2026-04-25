@@ -10,10 +10,10 @@ provider_slug: amazon-vpc
 search_terms:
 - private cloud
 - security
-- vpc
+- aws
 - networking
 - subnets
-- aws
+- vpc
 slug: amazon-vpc-capability
 tags: []
 tools: []

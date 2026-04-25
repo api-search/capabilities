@@ -13,33 +13,33 @@ personas: []
 provider_name: Amazon IoT Device Defender
 provider_slug: amazon-iot-device-defender
 search_terms:
-- manages amazon iot device defender resources and operations
-- list audit tasks
-- device management
-- amazon iot device defender list security profiles
-- amazon iot device defender describe security profile
-- describe security profile
-- iot
-- amazon iot device defender resources
-- list security profiles
-- amazon iot device defender list audit findings
-- list violations
-- IoT Developer
-- compliance
-- create security profile
-- list audit findings
-- Security Engineer
-- vulnerability management
-- amazon iot device defender create security profile
-- list detect mitigations
-- aws
-- security
-- security service for iot fleet auditing and anomaly detection.
-- amazon iot device defender list audit tasks
-- start audit
-- amazon iot device defender list violations
-- amazon iot device defender list detect mitigations
 - amazon iot device defender start audit
+- security
+- list security profiles
+- list audit tasks
+- security service for iot fleet auditing and anomaly detection.
+- amazon iot device defender list audit findings
+- amazon iot device defender list detect mitigations
+- list detect mitigations
+- amazon iot device defender describe security profile
+- create security profile
+- device management
+- amazon iot device defender resources
+- aws
+- amazon iot device defender list security profiles
+- list audit findings
+- vulnerability management
+- describe security profile
+- start audit
+- Security Engineer
+- manages amazon iot device defender resources and operations
+- amazon iot device defender create security profile
+- IoT Developer
+- amazon iot device defender list audit tasks
+- amazon iot device defender list violations
+- iot
+- compliance
+- list violations
 slug: iot-security-monitoring
 tags:
 - IoT

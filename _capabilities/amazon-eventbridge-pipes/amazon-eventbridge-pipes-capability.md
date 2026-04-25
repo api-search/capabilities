@@ -49,36 +49,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- integration
-- point-to-point integration between event producers and consumers
-- ListPipes
-- ListTagsForResource
-- serverless
-- DescribePipe
-- amazon eventbridge pipes createpipe
-- amazon eventbridge pipes tagresource
-- UntagResource
-- UpdatePipe
-- CreatePipe
-- amazon web services
-- StartPipe
-- developers building applications using amazon eventbridge pipes
-- amazon eventbridge pipes deletepipe
-- TagResource
-- amazon eventbridge pipes describepipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- aws
-- amazon eventbridge pipes updatepipe
-- messaging
-- amazon eventbridge pipes startpipe
-- event-driven
-- DeletePipe
-- amazon eventbridge pipes listpipes
-- amazon eventbridge pipes listtagsforresource
-- amazon eventbridge pipes stoppipe
-- StopPipe
 - operations teams managing amazon eventbridge pipes infrastructure
+- StopPipe
+- amazon eventbridge pipes updatepipe
+- amazon eventbridge pipes stoppipe
+- serverless
+- amazon web services
+- messaging
+- TagResource
+- integration
+- DeletePipe
+- DescribePipe
+- StartPipe
+- amazon eventbridge pipes startpipe
+- aws
 - amazon eventbridge pipes untagresource
+- UpdatePipe
+- developers building applications using amazon eventbridge pipes
+- amazon eventbridge pipes listtagsforresource
+- UntagResource
+- ListTagsForResource
+- amazon eventbridge pipes tagresource
+- amazon eventbridge pipes deletepipe
+- ListPipes
+- CreatePipe
+- amazon eventbridge pipes createpipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- event-driven
+- point-to-point integration between event producers and consumers
+- amazon eventbridge pipes describepipe
+- amazon eventbridge pipes listpipes
 slug: amazon-eventbridge-pipes-capability
 tags:
 - Amazon Web Services

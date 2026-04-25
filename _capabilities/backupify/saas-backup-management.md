@@ -21,35 +21,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- datto
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- IT Administrator
-- list backup domains
-- google workspace
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- saas backup domains
-- list seats
-- backupify
-- saas backup
-- list seats for a customer
-- customer backup seats
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- managed service provider technician managing backup coverage across customer accounts
-- cloud-to-cloud backup and recovery for saas platforms
-- bulk license/unlicense/pause seats
-- bulk seat change
-- list domains
 - microsoft 365
+- customer backup seats
+- IT Administrator
+- list domains
+- saas backup
+- saas backup domains
+- datto
+- list seats
 - data protection
-- msp
-- list all backupify saas backup domains with customer ids and subscription information
+- backupify
+- cloud-to-cloud backup and recovery for saas platforms
+- list seats for a customer
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- domain and seat management for backupify cloud-to-cloud backup
 - MSP Technician
 - cloud backup
-- list backup seats
-- domain and seat management for backupify cloud-to-cloud backup
-- bulk change seat licenses
+- msp
+- list backup domains
+- managed service provider technician managing backup coverage across customer accounts
+- google workspace
 - list all backup customer domains
 - bulk seat management
+- list all backupify saas backup domains with customer ids and subscription information
+- bulk change seat licenses
+- bulk seat change
+- bulk license/unlicense/pause seats
+- list backup seats
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
 slug: saas-backup-management
 tags:
 - Backupify

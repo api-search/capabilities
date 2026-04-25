@@ -11,9 +11,9 @@ search_terms:
 - translation
 - nlp
 - machine translation
-- language processing
-- localization
 - aws
+- localization
+- language processing
 slug: amazon-translate-capability
 tags: []
 tools: []

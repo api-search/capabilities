@@ -10,23 +10,23 @@ provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
 - list_contexts
-- event sourcing
-- create_application
-- delete an axon application registration
 - java
-- messaging
-- cqrs
-- delete_application
-- list all registered axon applications
-- event-driven
-- list all axon contexts
 - get axon server metrics and health information
-- create_context
 - create a new axon context
-- list_applications
-- get_metrics
-- microservices
+- event sourcing
+- event-driven
 - create a new axon application registration
+- list all axon contexts
+- get_metrics
+- list all registered axon applications
+- delete an axon application registration
+- create_application
+- list_applications
+- create_context
+- delete_application
+- cqrs
+- messaging
+- microservices
 slug: event-driven-workflow
 tags:
 - CQRS

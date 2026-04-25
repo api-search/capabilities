@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- search
-- flight offer discovery and comparison.
-- hotels
-- search flights
-- flights
-- gds
-- pricing
-- OTA Developer
-- upsell, seat selection, and add-on services.
-- shopping
-- developer building online travel agency flight search and booking flows.
-- confirm pricing for a selected flight offer.
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- booking
-- complete flight shopping flow from search through price confirmation.
-- price confirmation and validation before booking.
-- airlines
-- confirm current price and availability.
-- Travel Chatbot Developer
-- confirm flight price
 - travel
-- search for available flight offers.
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- search flights advanced
-- search available flights by origin, destination, and date.
-- developer building conversational travel assistants for flight search.
-- confirm price
-- travel technology
-- amadeus
+- developer building online travel agency flight search and booking flows.
 - search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- airlines
+- search flights advanced
+- complete flight shopping flow from search through price confirmation.
+- flights
+- search for available flight offers.
+- confirm current price and availability.
+- booking
+- search
+- search available flights by origin, destination, and date.
+- flight offer discovery and comparison.
+- search flights
+- hotels
+- OTA Developer
+- confirm flight price
+- upsell, seat selection, and add-on services.
+- confirm pricing for a selected flight offer.
+- confirm price
+- developer building conversational travel assistants for flight search.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- price confirmation and validation before booking.
+- shopping
+- gds
+- travel technology
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- pricing
+- Travel Chatbot Developer
+- amadeus
 slug: flight-shopping
 tags:
 - Amadeus

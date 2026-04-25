@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- get a secret.
+- individual secret management.
 - encrypt
-- decrypt data using a key.
-- delete a secret.
-- key management.
-- list certificates
-- create certificate
-- individual key management.
-- key management
-- list secrets.
-- set a secret.
-- get key details.
-- list certificates in the vault.
-- create a new cryptographic key.
-- delete secret
-- set a secret value.
-- sign a digest using a key.
-- decrypt
-- create a new certificate.
-- certificates
-- secrets management
-- create a key.
-- get certificate
+- delete certificate
+- create key
+- azure
+- security
 - encrypt data using a key.
 - delete key
-- get a key.
-- list secrets
-- list certificates.
-- cryptography
-- get key
-- list keys.
-- individual secret management.
-- delete certificate
-- cloud security
-- delete a certificate.
-- secret management.
 - list keys
-- key vault
-- sign
-- set secret
-- verify a signature.
-- verify
-- list cryptographic keys in the vault.
-- security
-- certificate management.
-- delete a key.
-- get secret
-- azure
-- create key
-- get a secret value.
+- create a new certificate.
+- list certificates
+- decrypt
+- key management
+- set a secret.
+- list keys.
 - get a certificate.
+- get a secret.
+- secrets management
+- get a secret value.
+- secret management.
+- list secrets.
+- get secret
+- get key details.
+- decrypt data using a key.
+- set secret
+- key vault
+- get certificate
+- delete a key.
+- delete a certificate.
+- certificates
+- individual key management.
+- verify
+- create a key.
 - list secrets in the vault.
+- get key
+- sign
+- cryptography
+- create certificate
+- delete secret
+- list secrets
+- certificate management.
+- list certificates.
+- get a key.
+- set a secret value.
+- cloud security
+- sign a digest using a key.
+- key management.
+- list cryptographic keys in the vault.
+- create a new cryptographic key.
+- verify a signature.
+- delete a secret.
+- list certificates in the vault.
 slug: secrets-and-keys
 tags:
 - Azure

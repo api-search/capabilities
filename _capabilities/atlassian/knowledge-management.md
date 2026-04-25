@@ -21,31 +21,31 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- code
-- space management
-- list content
-- list confluence pages and blog posts
-- list confluence content
-- list confluence users
-- productivity
-- search confluence content
-- collaboration
 - software development
-- atlassian
-- search content
-- search confluence content using cql
-- list users
-- list confluence groups
-- knowledge management
 - content management
-- confluence
-- list templates
-- list spaces
-- content search
+- space management
+- list confluence pages and blog posts
 - platform
-- list confluence templates
+- list confluence groups
 - list groups
+- list confluence templates
+- productivity
+- code
+- content search
+- list confluence users
+- collaboration
+- search confluence content
+- list users
+- search confluence content using cql
+- atlassian
 - list confluence spaces
+- list templates
+- list content
+- list spaces
+- knowledge management
+- list confluence content
+- search content
+- confluence
 slug: knowledge-management
 tags:
 - Atlassian

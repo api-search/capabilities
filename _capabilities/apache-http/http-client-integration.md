@@ -9,10 +9,10 @@ provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
 - java
-- open source
+- apache
 - http client
 - sdk
-- apache
+- open source
 slug: http-client-integration
 tags: []
 tools: []

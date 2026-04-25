@@ -21,30 +21,30 @@ personas: []
 provider_name: Apache Kylin
 provider_slug: apache-kylin
 search_terms:
-- business intelligence
+- cancel job
+- list data models in a kylin project
+- analytics
+- list cube build jobs and their statuses
+- execute query
+- apache kylin
+- list jobs
+- list projects
+- big data analytics
+- execute a sql query on apache kylin to retrieve olap analytics results
+- olap
+- analysts who execute olap sql queries over large hadoop datasets
+- execute sql query
+- big data
+- list models
+- Data Analyst
+- cancel a running kylin cube build job
 - sql
 - cube
-- list models
-- execute query
-- analytics
-- execute a sql query on apache kylin to retrieve olap analytics results
-- cancel a running kylin cube build job
-- engineers who build and manage kylin cubes for bi tool consumption
 - BI Engineer
-- list jobs
+- engineers who build and manage kylin cubes for bi tool consumption
 - open source
-- apache kylin
-- list data models in a kylin project
-- analysts who execute olap sql queries over large hadoop datasets
-- olap
+- business intelligence
 - list all kylin projects and their configurations
-- list projects
-- list cube build jobs and their statuses
-- cancel job
-- big data
-- execute sql query
-- big data analytics
-- Data Analyst
 slug: olap-analytics
 tags:
 - Apache Kylin

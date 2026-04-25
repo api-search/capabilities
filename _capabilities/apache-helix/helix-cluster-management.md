@@ -8,12 +8,12 @@ personas: []
 provider_name: Apache Helix
 provider_slug: apache-helix
 search_terms:
-- distributed systems
-- partitioning
+- apache
+- cluster management
 - replication
 - open source
-- cluster management
-- apache
+- partitioning
+- distributed systems
 slug: helix-cluster-management
 tags: []
 tools: []

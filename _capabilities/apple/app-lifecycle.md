@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- create tester
-- beta group management.
-- developer
-- apple
-- create group
-- list all beta testers.
-- technology
-- read build
-- delete a beta group.
-- get details of a specific app.
-- create a new beta group.
-- list beta testers.
-- list all beta groups.
+- beta tester management.
+- add a new beta tester.
+- modify build
+- get beta tester details.
 - update a beta group.
 - delete beta group
-- list beta groups
-- create beta tester
-- get build details.
-- testflight
-- add a beta tester.
-- list all apps in app store connect.
-- create beta group
-- read beta group
-- list all apps.
-- create a beta group.
+- list beta testers.
+- list all builds.
 - remove a beta tester.
-- list builds
-- list beta groups.
-- list beta testers
-- macos
-- update build information.
-- read app
-- app management.
 - ios
-- list testers
-- add a new beta tester.
-- app store
-- modify app
-- get beta group details.
-- mobile
-- build management.
-- modify build
+- macos
 - list apps
 - delete beta tester
-- beta tester management.
-- read beta tester
-- modify beta group
-- list all builds.
-- get beta tester details.
 - list groups
-- app management
+- read app
+- list all beta testers.
+- modify app
+- create beta tester
+- apple
+- delete a beta group.
+- list beta testers
+- update build information.
+- list all apps in app store connect.
+- create tester
+- list all apps.
+- app store
+- build management.
+- list builds
+- list beta groups
+- technology
+- testflight
+- beta group management.
+- create a new beta group.
+- get details of a specific app.
+- list all beta groups.
+- mobile
 - update app metadata.
+- read beta tester
+- create beta group
+- list testers
+- modify beta group
+- app management.
+- add a beta tester.
+- app management
+- read beta group
+- create a beta group.
+- developer
+- create group
+- get build details.
+- list beta groups.
+- get beta group details.
+- read build
 slug: app-lifecycle
 tags:
 - Apple

@@ -26,50 +26,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- login
-- integration
-- initialize responsibility context.
-- get wadl for a rest service.
-- trading partner management.
-- get trading partners
-- list trading partners.
-- get inbound transactions
-- edi get code conversions
-- retrieve trading partners.
-- end the current session.
-- isg login
 - authenticate.
-- edi get outbound transactions
-- erp
-- outbound edi transactions.
-- edi get trading partner by id
-- edi get trading partners
-- inbound edi transactions.
-- retrieve inbound edi transactions.
-- list outbound transactions.
-- isg logout
-- soa gateway
-- retrieve outbound edi transactions.
-- get outbound transactions
-- business applications
-- e-business suite
-- list inbound transactions.
-- isg initialize
-- edi get inbound transactions
+- get trading partners
+- retrieve trading partners.
 - edi import inbound transaction
-- edi extract outbound transaction
-- extract an outbound edi transaction.
-- oracle
-- edi
-- import an inbound edi transaction.
-- invoke a rest method on a service.
-- get trading partner by id.
-- isg get service wadl
-- authentication.
 - retrieve code conversion mappings.
-- authenticate and obtain session token.
+- e-business suite
+- isg login
 - isg invoke rest method
+- invoke a rest method on a service.
 - enterprise
+- initialize responsibility context.
+- authenticate and obtain session token.
+- retrieve outbound edi transactions.
+- trading partner management.
+- integration
+- isg get service wadl
+- oracle
+- list trading partners.
+- edi extract outbound transaction
+- soa gateway
+- edi get outbound transactions
+- authentication.
+- isg logout
+- outbound edi transactions.
+- retrieve inbound edi transactions.
+- edi get trading partner by id
+- login
+- end the current session.
+- edi get inbound transactions
+- import an inbound edi transaction.
+- get trading partner by id.
+- inbound edi transactions.
+- edi get code conversions
+- get wadl for a rest service.
+- get outbound transactions
+- edi
+- isg initialize
+- get inbound transactions
+- extract an outbound edi transaction.
+- business applications
+- list inbound transactions.
+- edi get trading partners
+- erp
+- list outbound transactions.
 slug: integration-and-edi
 tags:
 - Oracle

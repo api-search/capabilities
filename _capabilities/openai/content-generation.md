@@ -33,46 +33,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- ai
-- images edit
-- artificial intelligence
-- generate audio from text using tts models
-- audio create speech
-- create a chat completion
-- list models
-- edit an existing image with a text prompt
-- chat create completion
-- create embedding
-- audio create transcription
-- openai
-- create image
-- generate speech
-- list all available openai models
-- create chat completion
-- large language models
-- t1
-- translate audio to english text
-- create a variation of an existing image
-- embeddings create
-- create embeddings
-- images create variation
-- generate an image from a text prompt using dall-e
-- generate a conversational response using gpt models
-- transcribe audio to text using whisper
-- text to speech
-- content generation
-- images create
-- image generation
-- chat completion
 - audio create translation
-- get details of a specific model
-- available models
-- models get
-- text embeddings
-- generate vector embeddings for text input
+- list all available openai models
+- artificial intelligence
+- create embedding
 - generate an image
-- create speech
+- create chat completion
+- create a variation of an existing image
+- translate audio to english text
+- images edit
+- chat completion
+- generate a conversational response using gpt models
+- generate an image from a text prompt using dall-e
+- images create
+- generate vector embeddings for text input
+- generate speech
+- create image
+- text embeddings
+- audio create transcription
+- content generation
+- chat create completion
+- text to speech
+- embeddings create
+- images create variation
+- generate audio from text using tts models
+- available models
+- audio create speech
+- transcribe audio to text using whisper
+- create a chat completion
 - models list
+- image generation
+- models get
+- openai
+- edit an existing image with a text prompt
+- ai
+- list models
+- large language models
+- create speech
+- create embeddings
+- t1
+- get details of a specific model
 slug: content-generation
 tags:
 - OpenAI

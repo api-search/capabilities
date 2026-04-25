@@ -13,23 +13,23 @@ personas: []
 provider_name: Azure Container Instances
 provider_slug: azure-container-instances
 search_terms:
-- list container groups
-- list containers
-- azure resource management
-- containers
-- list containergroupusage resources
-- microsoft
-- serverless
-- list container group usages
-- azure
-- list containergroup resources
-- resource management
-- management
-- list all resources
-- cloud
-- list
 - list container resources
+- azure resource management
+- list containergroup resources
 - container instances
+- azure
+- list container group usages
+- list container groups
+- resource management
+- list all resources
+- list
+- microsoft
+- containers
+- serverless
+- list containers
+- list containergroupusage resources
+- cloud
+- management
 slug: azure-container-instances-management
 tags:
 - Azure

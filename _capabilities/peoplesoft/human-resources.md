@@ -47,49 +47,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peoplesoft
-- list employees
-- candidate applications
-- list benefit enrollments
-- search jobs
-- list pending approvals
-- submit application
+- process approval
+- human capital management.
+- recruiting
+- retrieve payroll run history and status.
 - campus solutions
-- erp
-- hr approval requests
-- hcm
-- job postings
-- retrieve pending hr approval requests.
+- submit application
+- financial and supply chain management.
+- retrieve employee records with optional department and status filters.
+- human resources
+- list payroll runs
+- employee records
 - submit a candidate application for a job posting.
 - approve, deny, or push back an hr approval request.
-- supply chain management
-- benefit enrollment records
-- process approval
-- list payroll runs
-- recruiting
-- individual approval operations
-- human resources
-- payroll
-- financial and supply chain management.
 - get job details
-- retrieve details for a specific employee.
-- campus solutions.
 - retrieve details for a specific job posting.
-- crm
-- employee records
-- retrieve employee records with optional department and status filters.
-- get employee
-- retrieve benefit enrollment records.
-- payroll run history and status
-- enterprise software
-- job posting details
-- financial management
-- human capital management.
-- talent management
-- search available job postings.
 - peopletools platform services.
+- hcm
+- hr approval requests
+- payroll run history and status
+- job posting details
+- list benefit enrollments
+- list employees
+- crm
+- financial management
+- list pending approvals
+- retrieve details for a specific employee.
+- benefit enrollment records
+- retrieve pending hr approval requests.
+- enterprise software
+- payroll
+- individual approval operations
+- retrieve benefit enrollment records.
+- talent management
+- candidate applications
+- job postings
+- peoplesoft
+- campus solutions.
+- supply chain management
+- search available job postings.
+- get employee
+- erp
+- search jobs
 - individual employee details
-- retrieve payroll run history and status.
 slug: human-resources
 tags:
 - PeopleSoft

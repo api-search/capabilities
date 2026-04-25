@@ -30,39 +30,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- edge network
-- tag management
-- list event forwarding rules for a property
-- create secret
-- list server-side event forwarding properties
-- secrets for event forwarding destinations
-- edge network data ingestion
 - end a media tracking session
+- start a media tracking session
+- list secrets for authenticating with forwarding destinations
+- event forwarding
+- create event forwarding property
 - list event forwarding properties
+- send batch events
+- send batch events to edge network
+- start media session
+- create a new event forwarding rule
+- edge network data ingestion
+- list event forwarding rules
 - server-side event forwarding properties
+- create event forwarding rule
+- list event forwarding rules for a property
+- event forwarding rules
+- create a new event forwarding property
 - send an interactive event to adobe edge network
 - end media session
-- event forwarding rules
-- list secrets
-- marketing technology
-- create a new event forwarding rule
-- start media session
 - list secrets for a property
-- list secrets for authenticating with forwarding destinations
-- send batch events to adobe edge network
-- create event forwarding rule
-- create event forwarding property
-- event forwarding
-- send interactive event
-- start a media tracking session
-- send an interactive event to edge network
-- create a secret for an event forwarding destination
-- send batch events to edge network
-- create a new event forwarding property
-- send batch events
-- adobe launch
-- list event forwarding rules
+- list secrets
 - data collection
+- send interactive event
+- list server-side event forwarding properties
+- send an interactive event to edge network
+- edge network
+- create secret
+- create a secret for an event forwarding destination
+- send batch events to adobe edge network
+- tag management
+- marketing technology
+- secrets for event forwarding destinations
+- adobe launch
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

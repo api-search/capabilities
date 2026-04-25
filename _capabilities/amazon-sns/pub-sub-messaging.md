@@ -29,53 +29,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- publish up to 10 messages in a batch
-- add tags to an sns resource
-- push notifications
-- set attributes on an sns topic
-- message publishing
-- check phone opted out
-- unsubscribe
-- publish a message to a topic or endpoint
-- get subscription attributes
-- list tags for an sns resource
-- list all subscriptions
-- unsubscribe from a topic
-- set topic attributes
-- list subscriptions for a specific topic
-- email
-- create platform application
-- list subscriptions
-- create topic
-- create a subscription
-- create a new sns topic
-- list topics
-- create a subscription to a topic
-- get attributes of a subscription
+- get topic attributes
+- pub/sub
 - get sms messaging attributes
-- subscription management
+- create topic
+- create a platform application for mobile push
+- create a new sns topic
+- get sms attributes
+- delete an sns topic
+- set attributes on an sns topic
+- delete topic
+- list all subscriptions
+- messaging
+- publish up to 10 messages in a batch
+- publish a message to a topic
+- subscribe
+- get attributes of an sns topic
+- check if a phone number has opted out of sms
+- create platform application
+- list subscriptions by topic
+- list subscriptions for a specific topic
+- aws
+- list topics
+- get attributes of a subscription
+- tag resource
+- notifications
+- check phone opted out
+- create a subscription
+- get subscription attributes
+- publish
+- list tags for an sns resource
+- unsubscribe from a topic
 - publish batch
 - list tags
-- create a platform application for mobile push
-- list subscriptions by topic
-- pub/sub
-- list all sns topics
-- delete an sns topic
-- check if a phone number has opted out of sms
-- get attributes of an sns topic
-- notifications
-- aws
-- publish
+- set topic attributes
 - topic management
-- messaging
-- amazon
 - sms
-- get topic attributes
-- get sms attributes
-- delete topic
-- subscribe
-- publish a message to a topic
-- tag resource
+- amazon
+- create a subscription to a topic
+- message publishing
+- list all sns topics
+- email
+- unsubscribe
+- list subscriptions
+- push notifications
+- add tags to an sns resource
+- subscription management
+- publish a message to a topic or endpoint
 slug: pub-sub-messaging
 tags:
 - Amazon

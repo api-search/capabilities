@@ -9,27 +9,27 @@ personas: []
 provider_name: Appwrite
 provider_slug: appwrite
 search_terms:
-- administrator managing appwrite project users and configuration
-- database and file storage management
-- applications
-- appwrite
+- backend-as-a-service
+- user authentication and account management
 - list project users
-- lists all registered users in the appwrite project backend
-- developer building ios, android, or web apps with appwrite
-- creates a new user account in the appwrite backend for a mobile app
-- developer tools
+- appwrite
+- lists appwrite databases available in the backend project
 - configure and manage a mobile app backend with appwrite
-- list databases
-- list storage buckets
-- open source
-- cloud function deployment and execution
 - lists file storage buckets configured in the appwrite backend
 - backends
+- administrator managing appwrite project users and configuration
+- list storage buckets
+- developer tools
+- creates a new user account in the appwrite backend for a mobile app
+- list databases
+- cloud function deployment and execution
+- applications
 - mobile
-- backend-as-a-service
-- lists appwrite databases available in the backend project
-- user authentication and account management
+- developer building ios, android, or web apps with appwrite
+- database and file storage management
+- lists all registered users in the appwrite project backend
 - provision user
+- open source
 slug: mobile-backend
 tags:
 - Appwrite

@@ -13,27 +13,27 @@ personas: []
 provider_name: Apache Flume
 provider_slug: apache-flume
 search_terms:
-- flume agent component metrics
-- get all metrics for apache flume agent components (sources, channels, sinks)
-- monitoring
+- engineers configuring and monitoring flume log collection pipelines
 - log aggregation
-- agent component metrics and health monitoring
+- Platform Operator
+- get all component metrics for a flume agent
+- get all metrics for apache flume agent components (sources, channels, sinks)
+- streaming
 - get flume agent metrics
+- flume agent component metrics
+- monitor flume agent metrics for log collection pipelines
 - collecting, aggregating, and moving log and event data
 - etl
-- apache
-- monitor flume agent metrics for log collection pipelines
-- apache flume
-- open source
-- data engineering
-- Platform Operator
-- Data Engineer
-- streaming
-- get all component metrics for a flume agent
-- get agent metrics
-- engineers configuring and monitoring flume log collection pipelines
+- agent component metrics and health monitoring
+- monitoring
 - data collection
+- data engineering
+- apache
+- Data Engineer
+- apache flume
 - operators monitoring flume agent health and throughput
+- open source
+- get agent metrics
 slug: flume-log-collection
 tags:
 - Apache Flume

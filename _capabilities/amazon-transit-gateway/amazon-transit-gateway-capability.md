@@ -8,12 +8,12 @@ personas: []
 provider_name: Amazon Transit Gateway
 provider_slug: amazon-transit-gateway
 search_terms:
-- transit gateway
-- vpc
 - cloud networking
 - network hub
-- networking
+- transit gateway
 - aws
+- networking
+- vpc
 slug: amazon-transit-gateway-capability
 tags: []
 tools: []

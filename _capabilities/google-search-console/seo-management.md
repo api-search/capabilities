@@ -49,44 +49,44 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- inspect urls for indexing status.
-- list sitemaps for a site.
-- search
-- delete site
-- delete a sitemap.
-- get details for a specific search console site.
-- get details for a specific sitemap.
-- add a site to search console.
-- analytics
-- list sites
-- delete a previously submitted sitemap.
-- get sitemap details.
-- get sitemap
-- submit sitemap
-- webmaster
-- get details for a specific site.
-- submit a sitemap for crawling.
-- webmaster tools
-- delete sitemap
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- submit a sitemap.
-- query search traffic data with filters and dimensions.
-- get site
-- list sitemaps
-- query search analytics data with filters.
 - query search traffic data.
-- manage sitemaps.
-- manage search console sites.
+- add site
 - remove a site from search console.
-- list sitemaps submitted for a site.
-- seo
+- add a site to search console.
 - inspect a url for index status and rich results.
 - google
-- inspect url
-- search console
+- analytics
 - list all search console sites.
+- get details for a specific site.
+- get details for a specific search console site.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- manage search console sites.
+- delete sitemap
+- submit a sitemap.
+- get sitemap details.
+- get sitemap
+- seo
+- search console
+- list sites
+- search
+- list sitemaps for a site.
+- query search traffic data with filters and dimensions.
+- delete site
+- inspect url
+- delete a sitemap.
+- list sitemaps
+- submit sitemap
+- webmaster tools
+- submit a sitemap for crawling.
+- get site
+- manage sitemaps.
+- webmaster
+- inspect urls for indexing status.
+- list sitemaps submitted for a site.
 - query search analytics
-- add site
+- query search analytics data with filters.
+- get details for a specific sitemap.
+- delete a previously submitted sitemap.
 - list all search console sites for the authenticated user.
 slug: seo-management
 tags:

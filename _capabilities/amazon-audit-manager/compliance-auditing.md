@@ -20,36 +20,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- get settings
-- generate a compliance assessment report from collected evidence.
-- create a custom compliance control for use in frameworks and assessments.
+- list all compliance assessments to understand current audit coverage.
 - list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- compliance framework management
-- update audit manager settings including sns notifications and default report destination.
-- list compliance controls available for building assessments.
+- create a new compliance assessment using a regulatory framework.
 - audit
 - update settings
-- get complete details of a compliance assessment including control status.
-- list controls
-- create control
-- list available frameworks
-- get assessment
-- get audit manager account settings including default destinations and process owners.
-- compliance
-- list all compliance assessments to understand current audit coverage.
 - create a new assessment
-- amazon audit manager
-- risk management
-- list assessment reports
-- create assessment report
-- create a new compliance assessment using a regulatory framework.
-- list assessments
-- list all assessments
-- aws
-- list frameworks
-- create assessment
+- list controls
+- get complete details of a compliance assessment including control status.
 - compliance assessment management
+- create assessment
+- aws
+- create control
+- compliance framework management
+- get settings
+- amazon audit manager
+- get audit manager account settings including default destinations and process owners.
+- list all assessments
+- list assessments
+- generate a compliance assessment report from collected evidence.
+- list available frameworks
 - list generated assessment reports for compliance documentation.
+- create a custom compliance control for use in frameworks and assessments.
+- list frameworks
+- list compliance controls available for building assessments.
+- create assessment report
+- list assessment reports
+- compliance
+- update audit manager settings including sns notifications and default report destination.
+- risk management
+- get assessment
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

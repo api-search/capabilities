@@ -65,45 +65,45 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- integration
-- amazon eventbridge describe event bus
-- amazon eventbridge list rules
-- CreateArchive
-- serverless
+- developers building applications using amazon eventbridge
+- events
 - CreateEventBus
-- PutEvents
-- amazon eventbridge delete rule
-- amazon eventbridge create event bus
-- ListTargetsByRule
-- ListEventBuses
-- amazon eventbridge list event buses
+- amazon eventbridge put rule
 - ListArchives
+- serverless
+- operations teams managing amazon eventbridge infrastructure
 - amazon eventbridge put events
 - amazon web services
-- developers building applications using amazon eventbridge
-- amazon eventbridge put targets
-- amazon eventbridge describe rule
-- DescribeRule
-- ListRules
-- amazon eventbridge delete event bus
-- RemoveTargets
-- DeleteEventBus
-- PutRule
-- serverless event bus for connecting applications with real-time data
+- amazon eventbridge list event buses
+- integration
+- ListEventBuses
 - aws
-- events
-- operations teams managing amazon eventbridge infrastructure
-- amazon eventbridge put rule
-- amazon eventbridge list targets by rule
-- event-driven
+- amazon eventbridge delete rule
+- DeleteEventBus
+- amazon eventbridge delete event bus
+- PutRule
 - amazon eventbridge list archives
-- amazon eventbridge remove targets
-- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
-- PutTargets
-- amazon eventbridge create archive
-- DeleteRule
 - event bus
+- PutTargets
+- CreateArchive
+- amazon eventbridge list rules
+- DeleteRule
+- amazon eventbridge remove targets
+- ListTargetsByRule
+- amazon eventbridge describe rule
 - DescribeEventBus
+- RemoveTargets
+- amazon eventbridge list targets by rule
+- ListRules
+- DescribeRule
+- amazon eventbridge describe event bus
+- amazon eventbridge put targets
+- event-driven
+- amazon eventbridge create archive
+- amazon eventbridge create event bus
+- serverless event bus for connecting applications with real-time data
+- PutEvents
+- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
 slug: amazon-eventbridge-capability
 tags:
 - Amazon Web Services

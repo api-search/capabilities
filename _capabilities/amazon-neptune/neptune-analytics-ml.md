@@ -18,42 +18,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- rdf
-- list neptune analytics graphs for in-memory graph analysis
-- Graph Developer
-- create a neptune analytics graph for graph analytics workloads
-- writes gremlin, sparql, and opencypher queries against neptune
-- neptune ml training job management
-- graph analytics, vector search, and ml model training and inference
-- data streaming
+- list ml training jobs
 - create ml inference endpoint
+- graph analytics
 - graph database management, querying, and data streaming
+- create a neptune ml inference endpoint for predictions
+- database
+- rdf
+- data streaming
+- property graph
 - Data Scientist
-- Graph Database Administrator
+- create a neptune analytics graph for graph analytics workloads
+- aws
+- amazon neptune
 - list neptune analytics graphs
 - neptune
-- list analytics graphs
-- amazon neptune
-- graph database
-- list neptune ml training jobs
-- bulk loading
-- ML Engineer
-- create analytics graph
-- neptune analytics graph management
-- trains and deploys neptune ml graph neural network models
-- gremlin
+- writes gremlin, sparql, and opencypher queries against neptune
 - machine learning
-- graph analytics
+- bulk loading
 - performs graph analytics and builds ml models on graph data
+- list neptune ml training jobs
+- list analytics graphs
+- neptune analytics graph management
+- graph analytics, vector search, and ml model training and inference
+- gremlin
+- neptune ml training job management
 - manages neptune clusters, instances, and infrastructure
-- aws
-- list ml training jobs
-- database
-- create a neptune ml inference endpoint for predictions
-- property graph
-- list neptune ml graph neural network training jobs
 - sparql
+- create analytics graph
+- trains and deploys neptune ml graph neural network models
+- ML Engineer
+- Graph Developer
+- list neptune analytics graphs for in-memory graph analysis
+- list neptune ml graph neural network training jobs
 - list ml jobs
+- Graph Database Administrator
+- graph database
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

@@ -21,33 +21,33 @@ personas: []
 provider_name: Air Quality Programmatic APIs
 provider_slug: air-quality-programmatic-apis
 search_terms:
-- search monitoring stations
-- Environmental Analyst
-- app developer integrating air quality data into mobile or web applications
-- search stations
-- get current aqi for a city
-- monitoring
-- search for air quality monitoring stations by city or station name
-- search stations by keyword
-- iot
-- environment
-- real-time data
-- get aqi by city
-- query real-time aqi and search monitoring stations
-- government data
-- get aqi for coordinates
-- get real-time air quality index (aqi) and pollutant data for a city
-- epa
 - air quality by city name
-- open data
-- air quality
-- search air quality stations
-- get aqi by coordinates
-- air quality by coordinates
-- Developer
 - researcher or analyst studying air quality trends and patterns
+- get real-time air quality index (aqi) and pollutant data for a city
+- get aqi by coordinates
+- query real-time aqi and search monitoring stations
 - public health
+- search stations
+- real-time data
+- air quality
+- open data
+- app developer integrating air quality data into mobile or web applications
+- search air quality stations
+- monitoring
+- environment
+- government data
+- search for air quality monitoring stations by city or station name
 - get real-time aqi for a geographic location using latitude and longitude
+- search monitoring stations
+- air quality by coordinates
+- iot
+- get current aqi for a city
+- epa
+- Developer
+- get aqi by city
+- get aqi for coordinates
+- search stations by keyword
+- Environmental Analyst
 slug: air-quality-monitoring
 tags:
 - Air Quality

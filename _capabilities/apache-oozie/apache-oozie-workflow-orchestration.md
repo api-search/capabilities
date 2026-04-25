@@ -37,66 +37,66 @@ personas: []
 provider_name: Apache Oozie
 provider_slug: apache-oozie
 search_terms:
-- get job information, definition, logs, or dag.
-- hadoop
-- scheduling
-- system status and administration.
-- submit a workflow, coordinator, or bundle job.
-- apply a bulk action to multiple matching jobs.
-- workflow orchestration
-- scheduling and executing directed acyclic graphs of hadoop processing actions.
-- manage job
-- terminate an oozie job immediately.
-- get job info
-- list jobs with filters and pagination.
-- list oozie jobs with optional filtering by user, status, job type (wf/coordinator/bundle), and pagination.
-- retrieve execution logs for a specific oozie job for debugging and monitoring.
-- get system status
-- workflow
-- submit an oozie workflow job to execute a hadoop data pipeline. pass an xml configuration with oozie.wf.application.path pointing to the hdfs workflow directory.
-- get oozie system configuration properties.
-- java
-- suspend job
-- Hadoop Pipeline Operator
-- get job
-- building reliable data pipelines for batch processing of large datasets on hadoop.
-- apache oozie
-- get apache oozie system configuration properties for troubleshooting and verification.
-- get configuration
-- get the current apache oozie system mode. returns normal, safemode, or nowebservice.
-- bulk kill jobs
-- engineers building and managing hadoop data processing pipelines using oozie workflows.
-- apache
-- apply a lifecycle action to a job.
-- kill multiple oozie jobs matching specified filter criteria.
-- start job
-- get status
-- get oozie system mode (normal, safemode, nowebservice).
-- resume job
-- list jobs
-- rerun job
-- open source
-- submit workflow job
-- pipeline management
-- data engineering
-- system configuration access.
-- Data Engineer
 - end-to-end workflow orchestration for hadoop data pipelines covering job submission, monitoring, and lifecycle management.
-- resume a suspended oozie job.
-- get system config
-- operators monitoring and managing oozie job execution in production hadoop environments.
-- kill job
-- get job log
-- big data
-- bulk action
-- get detailed information about a specific oozie job including status, actions, and timeline.
-- single job management.
+- hadoop
 - start a submitted but not yet running oozie job.
-- orchestration
+- rerun job
+- engineers building and managing hadoop data processing pipelines using oozie workflows.
+- building reliable data pipelines for batch processing of large datasets on hadoop.
+- get oozie system mode (normal, safemode, nowebservice).
+- list oozie jobs with optional filtering by user, status, job type (wf/coordinator/bundle), and pagination.
+- submit workflow job
 - suspend a running oozie job, pausing execution until resumed.
+- get system config
+- get job
+- java
 - job submission and bulk management.
+- apply a lifecycle action to a job.
+- get job info
+- pipeline management
+- get configuration
+- list jobs
+- manage job
+- retrieve execution logs for a specific oozie job for debugging and monitoring.
+- orchestration
+- Hadoop Pipeline Operator
+- scheduling
+- get detailed information about a specific oozie job including status, actions, and timeline.
+- apache oozie
+- apply a bulk action to multiple matching jobs.
+- get system status
+- bulk action
+- get status
+- get the current apache oozie system mode. returns normal, safemode, or nowebservice.
+- resume a suspended oozie job.
+- bulk kill jobs
+- open source
+- workflow
 - submit job
+- big data
+- system status and administration.
+- get oozie system configuration properties.
+- workflow orchestration
+- data engineering
+- start job
+- operators monitoring and managing oozie job execution in production hadoop environments.
+- apache
+- list jobs with filters and pagination.
+- resume job
 - rerun a completed or failed oozie workflow job, optionally skipping specific nodes.
+- suspend job
+- Data Engineer
+- system configuration access.
+- get job information, definition, logs, or dag.
+- scheduling and executing directed acyclic graphs of hadoop processing actions.
+- get apache oozie system configuration properties for troubleshooting and verification.
+- get job log
+- kill multiple oozie jobs matching specified filter criteria.
+- submit a workflow, coordinator, or bundle job.
+- kill job
+- terminate an oozie job immediately.
+- submit an oozie workflow job to execute a hadoop data pipeline. pass an xml configuration with oozie.wf.application.path pointing to the hdfs workflow directory.
+- single job management.
 slug: apache-oozie-workflow-orchestration
 tags:
 - Apache Oozie

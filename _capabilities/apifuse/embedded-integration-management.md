@@ -29,38 +29,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- get analytics
-- browse all available embedded integrations, optionally filtered by category.
-- integration analytics.
-- SaaS Product Manager
-- apifuse
-- list workflows.
-- product manager building native integrations into a saas product.
-- list workflows
-- managing native integrations within saas products.
-- ipaas
-- create workflow
-- browse pre-built connectors.
-- developer implementing and automating embedded integration workflows.
-- list all pre-built connectors available for embedding into your saas product.
-- list all connectors.
-- Integration Developer
-- list connectors
-- manage workflows.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- embedded integrations
-- browse and manage integrations.
-- integrations
 - create a workflow.
-- integration platform
-- workflow automation
-- list all integrations.
-- saas
-- create a new automation workflow connecting two or more integrated platforms.
+- list all connectors.
 - marketplace
+- browse pre-built connectors.
+- workflow automation
+- ipaas
+- get analytics
+- developer implementing and automating embedded integration workflows.
+- list connectors
+- integrations
+- create workflow
+- apifuse
+- browse all available embedded integrations, optionally filtered by category.
+- list workflows.
+- list all pre-built connectors available for embedding into your saas product.
+- SaaS Product Manager
+- manage workflows.
 - list integrations
-- list all integration workflows configured in the embedded marketplace.
+- list workflows
+- saas
+- Integration Developer
+- create a new automation workflow connecting two or more integrated platforms.
+- browse and manage integrations.
+- embedded integrations
+- integration analytics.
+- integration platform
 - get analytics data.
+- product manager building native integrations into a saas product.
+- list all integration workflows configured in the embedded marketplace.
+- managing native integrations within saas products.
+- list all integrations.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
 slug: embedded-integration-management
 tags:
 - Apifuse

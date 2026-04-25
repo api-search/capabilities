@@ -20,35 +20,35 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- list all appsync graphql apis to understand available apis and their configurations.
 - get complete details of a graphql api including authentication configuration and endpoints.
-- list reusable pipeline functions available for composing complex resolvers.
-- serverless
-- create resolver
-- list all data sources connected to a graphql api.
-- list data sources
-- list resolvers
-- graphql api management
-- upload a new graphql schema
-- create a new graphql api with the specified authentication type and configuration.
-- create a reusable pipeline function for use in pipeline resolvers.
-- graphql schema management
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- api management
 - create a graphql api
-- start schema creation
-- list functions
-- create function
+- graphql schema management
+- serverless
+- list reusable pipeline functions available for composing complex resolvers.
+- graphql
+- list all appsync graphql apis to understand available apis and their configurations.
+- list all data sources connected to a graphql api.
+- upload a new graphql schema
+- create resolver
 - amazon appsync
+- start schema creation
+- create data source
+- api management
 - aws
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- create function
+- create graphql api
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- create a reusable pipeline function for use in pipeline resolvers.
+- upload a new graphql schema definition to an appsync api.
+- create a new graphql api with the specified authentication type and configuration.
+- list resolvers
+- list data sources
+- create a resolver that maps a graphql field to a data source operation.
+- list functions
+- graphql api management
 - list all graphql apis
 - get graphql api
-- graphql
-- upload a new graphql schema definition to an appsync api.
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
-- create graphql api
-- create a resolver that maps a graphql field to a data source operation.
-- create data source
 - list graphql apis
 slug: graphql-api-management
 tags:

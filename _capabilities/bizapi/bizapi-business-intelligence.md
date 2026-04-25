@@ -17,31 +17,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- business intelligence
-- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- test company search returning fake firmographic data.
-- search business entities by name, address, phone, or url.
-- search companies test
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- crm enrichment
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- segments and scores prospects using naics, sic, and financial data
-- Sales Representative
-- company data
-- sic
-- firmographic data
-- uses firmographic data to qualify leads and enrich crm account records
-- test search returning fake data without consuming api credits.
-- crm
-- Data Engineer
-- firmographic data retrieval and company lookup
-- appending firmographic data to crm records for sales and marketing
-- search for business entities and retrieve firmographic data.
 - naics
+- search for business entities and retrieve firmographic data.
+- uses firmographic data to qualify leads and enrich crm account records
+- crm enrichment
+- firmographic data
 - search companies
+- test search returning fake data without consuming api credits.
+- sales enablement
+- search business entities by name, address, phone, or url.
+- crm
+- appending firmographic data to crm records for sales and marketing
+- sic
+- business intelligence and crm enrichment workflow combining company search and test endpoints
 - integrates bizapi into data pipelines for crm and data warehouse enrichment
 - Marketing Analyst
-- sales enablement
+- segments and scores prospects using naics, sic, and financial data
+- firmographic data retrieval and company lookup
+- search companies test
+- test company search returning fake firmographic data.
+- company data
+- Data Engineer
+- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
+- Sales Representative
+- business intelligence
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

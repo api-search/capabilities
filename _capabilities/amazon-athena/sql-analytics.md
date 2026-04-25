@@ -24,35 +24,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- save a sql query as a named query for reuse in athena.
-- list work groups
-- sql
-- list tables in an athena database to understand available data.
-- serverless
-- get query execution
-- list saved named queries available in an athena workgroup.
-- analytics
-- create named query
-- create a named query
-- amazon athena
-- start query execution
-- list data catalogs registered with athena to discover available data sources.
-- list table metadata
 - list query executions
 - list databases in an athena data catalog to explore available schemas.
-- list athena workgroups to understand available query isolation environments.
-- list databases
-- list data catalogs
-- aws
-- start a sql query execution
-- download the results of a completed athena sql query.
-- check the status of a running or completed athena query execution.
-- sql query management
+- analytics
+- amazon athena
+- serverless
+- list table metadata
+- save a sql query as a named query for reuse in athena.
 - named query management
-- list recent query executions in an athena workgroup.
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list named queries
 - get query results
+- start query execution
+- aws
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list work groups
+- list saved named queries available in an athena workgroup.
+- list recent query executions in an athena workgroup.
+- list athena workgroups to understand available query isolation environments.
+- download the results of a completed athena sql query.
+- sql query management
+- list databases
+- create named query
+- list named queries
+- create a named query
+- sql
+- list tables in an athena database to understand available data.
+- list data catalogs
+- start a sql query execution
+- list data catalogs registered with athena to discover available data sources.
+- get query execution
+- check the status of a running or completed athena query execution.
 slug: sql-analytics
 tags:
 - Amazon Athena

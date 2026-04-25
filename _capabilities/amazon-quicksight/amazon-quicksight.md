@@ -14,21 +14,21 @@ provider_name: Amazon QuickSight
 provider_slug: amazon-quicksight
 search_terms:
 - automation workflow for amazon quicksight
-- analytics
-- amazon quicksight
-- visualization
-- amazon quicksight resources
-- business intelligence
-- bi
-- dashboards
 - engineer managing amazon quicksight resources
-- machine learning
-- list amazon quicksight resources
-- list resources
-- aws cloud resource management
-- cloud operations
 - reporting
+- amazon quicksight
+- list amazon quicksight resources
+- visualization
 - aws
+- analytics
+- cloud operations
+- bi
+- list resources
+- amazon quicksight resources
+- machine learning
+- business intelligence
+- dashboards
+- aws cloud resource management
 slug: amazon-quicksight
 tags:
 - Amazon Quicksight

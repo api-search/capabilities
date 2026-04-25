@@ -57,61 +57,61 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
+- ocr
 - generate document
+- export pdf
+- get the status of a pdf operation
+- get metadata and download uri for an uploaded asset
+- permanently delete an uploaded asset
+- create a pdf from word, excel, powerpoint, or html
+- upload asset
+- accessibility tagging operations
+- individual asset operations
+- ocr pdf
+- operation status polling
 - export a pdf to word, excel, powerpoint, rtf, or text
+- apply ocr to a scanned pdf
+- upload an asset for use in pdf operations
+- creative
+- linearize pdf
+- linearize a pdf for fast web viewing
+- get asset metadata and download uri
+- template-based document generation
+- apply ocr to a scanned pdf to make text searchable
+- auto-tag a pdf for accessibility compliance
+- pdf linearization for web optimization
+- compress a pdf to reduce file size
+- combine pdfs
+- auto tag pdf
+- upload an asset for pdf operations
+- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
+- video
+- combine multiple pdfs into one
+- pdf export to other formats
+- get asset
+- delete asset
 - asset upload and management for pdf operations
 - create pdf
-- linearize a pdf for fast web viewing
-- pdf linearization for web optimization
-- operation status polling
-- pdf compression operations
-- generate a document by merging json data into a template
-- pdf creation from other formats
-- get asset metadata and download uri
-- combine multiple pdfs into a single document
-- document conversion
-- get asset
-- compress a pdf to reduce file size
-- ocr pdf
-- video
-- creative
-- get operation status
-- combine pdfs
-- ocr processing operations
-- get metadata and download uri for an uploaded asset
-- apply ocr to a scanned pdf to make text searchable
-- accessibility
-- graphics
-- compress pdf
-- combine multiple pdfs into one
-- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
-- pdf combination operations
-- upload an asset for use in pdf operations
-- export pdf
-- compress a pdf to reduce its file size
-- auto tag pdf
-- photography
-- design
-- template-based document generation
-- create a pdf from word, excel, powerpoint, or html
-- generate a document from a template and data
-- pdf
-- accessibility tagging operations
-- linearize pdf
-- upload an asset for pdf operations
-- ocr
-- delete asset
-- apply ocr to a scanned pdf
 - adobe
-- permanently delete an uploaded asset
-- get the status of a pdf services operation job
-- delete an uploaded asset
+- photography
+- pdf compression operations
 - document management
-- individual asset operations
-- auto-tag a pdf for accessibility compliance
-- upload asset
-- get the status of a pdf operation
-- pdf export to other formats
+- combine multiple pdfs into a single document
+- get operation status
+- pdf
+- generate a document from a template and data
+- compress a pdf to reduce its file size
+- delete an uploaded asset
+- accessibility
+- generate a document by merging json data into a template
+- design
+- compress pdf
+- get the status of a pdf services operation job
+- pdf creation from other formats
+- pdf combination operations
+- graphics
+- ocr processing operations
+- document conversion
 slug: document-management
 tags:
 - Adobe

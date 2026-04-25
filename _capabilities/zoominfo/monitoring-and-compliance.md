@@ -41,46 +41,46 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- list all configured webhook subscriptions.
-- contact database
-- marketing intelligence
-- update an existing webhook subscription.
-- get available webhook subscription types.
-- check compliance status for specified contacts.
-- monitoring
-- get api usage data and consumption metrics.
-- b2b
-- data compliance operations.
-- sales intelligence
-- webhook subscription management.
-- zoominfo
-- validate a webhook target url.
-- validate a webhook target url is reachable.
-- individual webhook management.
-- company data
-- list webhooks
-- api usage
-- compliance
-- contacts
-- lead generation
-- api usage tracking.
-- update webhook
-- check compliance
-- create webhook
-- validate target url
-- available webhook subscription types.
-- webhooks
-- get usage
-- create a new webhook subscription for data change notifications.
-- webhook target url validation.
 - get subscription types
 - create a new webhook subscription.
-- get api usage data.
-- b2b data
+- create a new webhook subscription for data change notifications.
+- b2b
 - list all webhook subscriptions.
-- data
-- delete webhook
+- update an existing webhook subscription.
+- webhook target url validation.
+- update webhook
+- check compliance status for specified contacts.
+- b2b data
+- lead generation
+- sales intelligence
+- contact database
+- create webhook
+- get usage
+- api usage tracking.
+- marketing intelligence
+- api usage
+- list webhooks
+- list all configured webhook subscriptions.
 - check data compliance status for specified contacts.
+- monitoring
+- validate a webhook target url.
+- get available webhook subscription types.
+- contacts
+- data compliance operations.
+- webhook subscription management.
+- delete webhook
+- get api usage data.
+- validate target url
+- individual webhook management.
+- check compliance
+- company data
+- webhooks
+- available webhook subscription types.
+- zoominfo
+- validate a webhook target url is reachable.
+- data
+- compliance
+- get api usage data and consumption metrics.
 - delete a webhook subscription.
 slug: monitoring-and-compliance
 tags:

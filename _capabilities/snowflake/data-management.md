@@ -8,9 +8,7 @@ consumed_apis:
 - snowflake-iceberg-table
 - snowflake-event-table
 - snowflake-external-volume
-description: Unified workflow for managing databases, schemas, tables, views, dynamic
-  tables, iceberg tables, and event tables. Used by Data Engineers and Database Administrators
-  to create, organize, and maintain data structures.
+description: Unified workflow for managing databases, schemas, tables, views, dynamic tables, iceberg tables, and event tables. Used by Data Engineers and Database Administrators to create, organize, and maintain data structures.
 layout: capability
 name: Snowflake Data Management
 operations:
@@ -74,76 +72,75 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- ai
-- clone a database
-- clone database
-- create a database
-- create a dynamic table
-- create a new database
-- create a new schema
-- create a new table
-- create a new view
-- create a schema
-- create a table
-- create a view
-- create an event table
-- create an external volume
-- create an iceberg table
-- create database
-- create dynamic table
-- create event table
-- create external volume
-- create iceberg table
-- create schema
-- create table
-- create view
-- data engineering
-- data lakes
-- data management
-- data sharing
-- data warehousing
-- database
-- database management
-- delete a database
-- delete a schema
-- delete a table
-- delete database
-- delete schema
-- delete table
 - dynamic table management
-- fetch a database
-- fetch database
-- fetch database details by name
-- fetch schema
-- fetch schema details
-- fetch table
-- fetch table details
-- iceberg table management
-- list all accessible databases
-- list all databases
-- list databases
-- list dynamic tables
-- list event tables
-- list external volumes
+- data sharing
+- create a new database
+- delete a table
 - list iceberg tables
-- list schemas
-- list schemas in a database
-- list tables
-- list tables in a schema
-- list views
-- list views in a schema
-- restore a dropped database
+- snowflake
+- table management
+- database
 - resume a dynamic table
 - resume dynamic table
 - schema management
-- single database operations
-- snowflake
-- sql
-- suspend a dynamic table
 - suspend dynamic table
-- table management
-- undrop database
+- list dynamic tables
+- delete database
+- fetch table
+- fetch database
 - view management
+- list tables
+- list views
+- create a dynamic table
+- database management
+- delete table
+- create an iceberg table
+- list all databases
+- create a table
+- iceberg table management
+- delete a schema
+- list databases
+- create a database
+- list schemas
+- create schema
+- create dynamic table
+- create a new schema
+- create an external volume
+- create external volume
+- create a new table
+- restore a dropped database
+- data lakes
+- data management
+- clone database
+- list schemas in a database
+- fetch schema details
+- suspend a dynamic table
+- delete a database
+- create iceberg table
+- single database operations
+- list event tables
+- data warehousing
+- create database
+- delete schema
+- data engineering
+- list all accessible databases
+- create event table
+- sql
+- clone a database
+- create a schema
+- list tables in a schema
+- list external volumes
+- create view
+- undrop database
+- list views in a schema
+- create an event table
+- create table
+- create a new view
+- fetch database details by name
+- fetch table details
+- fetch a database
+- fetch schema
+- create a view
 slug: data-management
 tags:
 - Snowflake
@@ -164,7 +161,7 @@ tools:
   name: fetch-database
 - description: Delete a database
   hints:
-    readOnly: false
+    destructive: true
   name: delete-database
 - description: Clone a database
   hints:
@@ -188,7 +185,7 @@ tools:
   name: fetch-schema
 - description: Delete a schema
   hints:
-    readOnly: false
+    destructive: true
   name: delete-schema
 - description: List tables in a schema
   hints:
@@ -204,7 +201,7 @@ tools:
   name: fetch-table
 - description: Delete a table
   hints:
-    readOnly: false
+    destructive: true
   name: delete-table
 - description: List views in a schema
   hints:

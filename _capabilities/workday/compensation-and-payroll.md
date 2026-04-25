@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- compensation
-- list all benefit plans
-- comp list scorecards
-- payroll list pay groups
-- list benefit elections
-- list compensation grades
-- get pay group details
-- list plans
-- submit a compensation change request
-- pay groups
-- comp request one time payment
-- hcm
-- comp list plans
-- payroll get pay group
-- get a pay group by id
-- benefits
-- list all pay groups
-- list dependents
-- benefits change
-- benefits list dependents
-- submit a benefits change request
-- comp request change
-- get eligible benefit plans for a worker
-- list pay slips
-- benefits get eligible plans
-- payroll
-- workday
-- list compensation plans
-- benefits list plans
-- list benefit plans
-- list compensation scorecards
-- payroll list pay slips
-- request a one-time payment
-- list payroll inputs
-- benefits list elections
-- enterprise software
-- comp list grades
-- benefit plans
-- payroll get pay group details
-- financial management
-- saas
-- cloud computing
 - compensation plans
-- payroll list inputs
+- payroll get pay group
+- comp request change
+- benefits get eligible plans
+- payroll list pay groups
+- benefits list elections
+- get pay group details
+- benefits list plans
+- payroll get pay group details
+- list payroll inputs
+- list benefit plans
+- workday
+- benefit plans
+- compensation
+- saas
+- pay groups
 - list pay groups
+- comp list plans
+- cloud computing
+- hcm
+- benefits change
+- list plans
+- submit a benefits change request
+- list all pay groups
+- list all benefit plans
+- list compensation scorecards
+- benefits list dependents
+- list compensation grades
+- get eligible benefit plans for a worker
+- enterprise software
+- list compensation plans
+- payroll
+- request a one-time payment
+- comp request one time payment
+- list pay slips
+- payroll list inputs
+- list dependents
+- get a pay group by id
+- list benefit elections
+- submit a compensation change request
+- benefits
+- comp list scorecards
+- payroll list pay slips
+- financial management
+- comp list grades
 slug: compensation-and-payroll
 tags:
 - Workday

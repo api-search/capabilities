@@ -25,38 +25,38 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
+- get partner documents.
+- list issues
 - portfolio analytics
-- list trading
+- list trading resources.
+- investment analytics
+- administration
+- event calendar.
 - get private markets data.
+- manage users
+- get marketplace
+- list trading
+- operations
+- get security models
+- get partner docs
+- trading operations.
+- factset
+- trading
+- market data
+- list events.
+- research
+- list events
+- get private markets
+- refresh ib office
 - list support issues.
 - get events
 - get open marketplace.
-- get security models.
-- refresh ib office
-- market data
-- get security models
-- refresh ib office data.
-- research
-- list issues
-- trading operations.
-- manage users
-- administration
-- manage user provisioning.
-- get marketplace
-- event calendar.
-- list trading resources.
-- get partner documents.
-- list events.
-- investment analytics
-- financial data
-- get private markets
 - financial
-- factset
-- operations
-- trading
-- list events
-- get partner docs
+- refresh ib office data.
 - get event calendar.
+- financial data
+- get security models.
+- manage user provisioning.
 slug: trading-operations
 tags:
 - FactSet

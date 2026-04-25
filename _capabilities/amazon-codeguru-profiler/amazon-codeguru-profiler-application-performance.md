@@ -9,36 +9,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- list findings reports
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- post agent profile
-- profiling
-- create a new profiling group
 - Platform Engineer
+- list findings reports for a profiling group
 - describe profiling group
-- devops engineer persona.
-- devops
-- get recommendations
-- get optimization recommendations for a profiling group
-- application performance
-- list profiling groups
+- DevOps Engineer
 - developer persona.
 - create profiling group
-- list profile collection times for a profiling group
-- list profile times
-- platform engineer persona.
-- list findings reports for a profiling group
-- machine learning
-- list profiling groups in the account
 - aws
-- get aggregated profile data
-- amazon
-- Developer
-- get details about a profiling group
+- devops
+- machine learning
+- list findings reports
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- list profiling groups
 - unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- get profile
-- DevOps Engineer
+- get aggregated profile data
+- list profiling groups in the account
+- create a new profiling group
+- post agent profile
+- amazon
+- get optimization recommendations for a profiling group
+- profiling
+- list profile collection times for a profiling group
+- devops engineer persona.
 - submit profiling agent data
+- list profile times
+- get profile
+- get recommendations
+- application performance
+- get details about a profiling group
+- platform engineer persona.
+- Developer
 slug: amazon-codeguru-profiler-application-performance
 tags:
 - Amazon

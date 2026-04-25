@@ -4,9 +4,7 @@ consumed_apis:
 - snowflake-cortex-inference
 - snowflake-cortex-search
 - snowflake-notebook
-description: Unified workflow for AI and ML capabilities including LLM inference,
-  natural language analytics, semantic search, and notebook-based development. Used
-  by Data Scientists and ML Engineers for AI-powered data exploration and model deployment.
+description: Unified workflow for AI and ML capabilities including LLM inference, natural language analytics, semantic search, and notebook-based development. Used by Data Scientists and ML Engineers for AI-powered data exploration and model deployment.
 layout: capability
 name: Snowflake Cortex AI
 operations:
@@ -38,46 +36,46 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- ai
-- ask a question about your data
-- ask a question about your data using natural language
-- ask analyst
-- available models
-- complete
-- cortex
-- create a notebook
-- create notebook
-- data lakes
 - data sharing
-- data warehousing
-- database
-- execute a notebook
-- execute notebook
-- generate query suggestions
-- generate verified query suggestions
-- list available cortex llm models
-- list available llm models
 - list cortex search services
-- list llm models
-- list models
-- list notebooks
-- list search services
-- llm complete
-- llm inference
-- machine learning
-- natural language data analytics
-- notebook management
-- query a cortex search service
-- query a search service
-- query search
-- run llm completion
-- run llm inference completion
-- semantic search
-- send analyst feedback
-- send analyst message
 - send feedback on an analyst response
 - snowflake
+- llm complete
+- database
+- list notebooks
+- execute notebook
+- create a notebook
+- notebook management
+- ask a question about your data
+- execute a notebook
+- run llm completion
+- run llm inference completion
+- machine learning
+- generate query suggestions
+- available models
+- data lakes
+- ask a question about your data using natural language
+- complete
+- ai
+- query a cortex search service
+- list llm models
+- list models
+- cortex
+- data warehousing
+- send analyst message
+- send analyst feedback
 - sql
+- semantic search
+- list available cortex llm models
+- llm inference
+- ask analyst
+- list search services
+- list available llm models
+- query search
+- query a search service
+- natural language data analytics
+- create notebook
+- generate verified query suggestions
 slug: cortex-ai
 tags:
 - Snowflake

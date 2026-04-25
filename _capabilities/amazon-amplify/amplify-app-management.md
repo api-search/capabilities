@@ -13,27 +13,27 @@ personas: []
 provider_name: Amazon Amplify
 provider_slug: amazon-amplify
 search_terms:
-- Frontend Developer
-- engineer managing ci/cd pipelines and deployments for amplify applications.
 - mobile development
-- create amplify app
 - hosting
-- amplify application management.
-- developer building and deploying web and mobile frontends on aws amplify.
-- amplify
-- manage amplify apps, branches, and deployments.
-- deployment
-- web applications
-- frontend
-- list all amplify apps.
-- create a new amplify full-stack application connected to a code repository.
-- aws
-- list all amazon amplify applications in the aws account.
-- amazon
-- list amplify apps
+- DevOps Engineer
+- engineer managing ci/cd pipelines and deployments for amplify applications.
 - list apps
 - full stack
-- DevOps Engineer
+- frontend
+- amplify
+- list amplify apps
+- aws
+- Frontend Developer
+- manage amplify apps, branches, and deployments.
+- list all amazon amplify applications in the aws account.
+- deployment
+- create amplify app
+- amazon
+- web applications
+- list all amplify apps.
+- create a new amplify full-stack application connected to a code repository.
+- amplify application management.
+- developer building and deploying web and mobile frontends on aws amplify.
 slug: amplify-app-management
 tags:
 - Amazon

@@ -33,42 +33,42 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- search payments
-- create a commerce payment
-- marketing
-- hubdb
-- update a commerce payment
-- commerce
-- customer service
-- individual subscription
-- content
-- marketing automation
-- search commerce subscriptions
-- analytics
-- admin
-- list subscriptions
-- list payments
-- create subscription
-- create a commerce subscription
-- get payment
-- list all commerce payments
-- search commerce payments
-- commerce payments
-- commerce subscriptions
-- cms
-- get subscription
-- individual payment
-- crm
-- update payment
-- get a subscription by id
-- get a payment by id
-- search subscriptions
-- sales
-- list all commerce subscriptions
 - create payment
-- operations
+- list all commerce subscriptions
 - email marketing
+- get subscription
+- list payments
+- commerce subscriptions
+- individual payment
+- analytics
+- get payment
+- cms
+- content
 - hubspot
+- admin
+- create subscription
+- individual subscription
+- list all commerce payments
+- get a payment by id
+- customer service
+- operations
+- search payments
+- update payment
+- create a commerce subscription
+- sales
+- commerce payments
+- crm
+- commerce
+- get a subscription by id
+- hubdb
+- search commerce payments
+- update a commerce payment
+- create a commerce payment
+- marketing automation
+- list subscriptions
+- search commerce subscriptions
+- marketing
+- search subscriptions
 slug: commerce-admin
 tags:
 - HubSpot

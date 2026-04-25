@@ -38,39 +38,39 @@ personas: []
 provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
-- update a sharepoint list item
-- download a file from sharepoint
-- search
-- collaboration
-- upload a file to sharepoint
-- search query
-- get current user's sharepoint profile
-- get my user profile
-- enterprise content management
-- upload file
-- delete a sharepoint list item
 - content management
-- get items from a sharepoint list
-- list all sharepoint lists
-- add an item to a sharepoint list
-- get files
-- get files in folder
-- list files in a sharepoint folder
-- search across all sharepoint content
-- sharepoint
-- update list item
 - get web
-- create a new sharepoint list
-- download file
-- microsoft
-- create list
-- document management
-- get sharepoint site properties
+- get my user profile
+- add an item to a sharepoint list
+- get current user's sharepoint profile
 - get lists
-- create list item
+- download file
+- list files in a sharepoint folder
+- get files
+- create list
+- get sharepoint site properties
+- update list item
+- create a new sharepoint list
+- search across all sharepoint content
+- microsoft
 - intranet
-- get list items
+- collaboration
+- delete a sharepoint list item
+- search
+- create list item
+- enterprise content management
 - delete list item
+- get items from a sharepoint list
+- download a file from sharepoint
+- search query
+- get files in folder
+- sharepoint
+- upload file
+- document management
+- list all sharepoint lists
+- upload a file to sharepoint
+- update a sharepoint list item
+- get list items
 slug: content-management
 tags:
 - SharePoint

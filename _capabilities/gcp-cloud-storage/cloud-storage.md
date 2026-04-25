@@ -53,53 +53,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- data management
-- google cloud
-- compose objects
-- create a bucket.
-- list objects in a bucket.
-- list buckets.
-- get bucket
-- set iam policy.
-- get object metadata.
-- compose multiple objects into one.
-- blob storage
-- get object
-- bucket management.
-- update bucket
-- delete bucket
-- individual object management.
-- list buckets
-- get bucket iam policy
-- get iam policy.
-- create a new storage bucket.
-- list storage buckets in a project.
-- delete an object.
 - list objects.
-- file storage
-- delete a bucket.
-- update object metadata.
-- copy object
-- set bucket iam policy.
-- update object
-- get bucket iam policy.
-- bucket iam management.
+- delete bucket
 - cloud storage
-- set bucket iam policy
+- blob storage
+- bucket management.
 - get bucket details.
-- object management.
-- archival
-- create bucket
-- list objects
-- individual bucket management.
-- copy an object to another location.
-- delete a storage bucket.
-- delete object
 - update a bucket.
-- data
-- object storage
-- storage
+- update bucket
+- compose objects
+- compose multiple objects into one.
+- archival
+- delete object
 - backup
+- individual bucket management.
+- create a bucket.
+- individual object management.
+- copy an object to another location.
+- create a new storage bucket.
+- set bucket iam policy
+- get object
+- file storage
+- update object metadata.
+- create bucket
+- delete an object.
+- set bucket iam policy.
+- data management
+- get iam policy.
+- list storage buckets in a project.
+- get bucket
+- list objects in a bucket.
+- storage
+- object management.
+- get object metadata.
+- list objects
+- google cloud
+- update object
+- delete a storage bucket.
+- list buckets
+- set iam policy.
+- copy object
+- delete a bucket.
+- data
+- bucket iam management.
+- list buckets.
+- object storage
+- get bucket iam policy.
+- get bucket iam policy
 slug: cloud-storage
 tags:
 - Google Cloud

@@ -15,15 +15,15 @@ provider_slug: amazon-robomaker
 search_terms:
 - amazon robomaker
 - robotics
-- list amazon robomaker resources
-- engineer managing amazon robomaker resources
-- list resources
-- aws cloud resource management
-- cloud operations
 - amazon robomaker resources
-- simulation
-- automation workflow for amazon robomaker
 - aws
+- automation workflow for amazon robomaker
+- cloud operations
+- engineer managing amazon robomaker resources
+- list amazon robomaker resources
+- list resources
+- simulation
+- aws cloud resource management
 slug: amazon-robomaker
 tags:
 - Amazon Robomaker

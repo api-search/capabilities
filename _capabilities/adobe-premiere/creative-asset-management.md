@@ -25,36 +25,36 @@ personas: []
 provider_name: Adobe Premiere Pro
 provider_slug: adobe-premiere
 search_terms:
-- Media Asset Manager
-- list libraries
-- add library element
-- create library
-- add element
-- list all creative cloud libraries.
-- list all creative cloud libraries available for use in adobe premiere pro projects.
-- video production
-- premiere pro plugin and extension ecosystem.
-- elements within a creative cloud library.
-- create a new creative cloud library for organizing video production brand assets.
-- Video Producer
-- list elements in a library.
-- automation
-- add an element to a library.
 - media
-- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
 - manager responsible for organizing shared brand assets in creative cloud.
-- list library elements
 - video editing
-- creative cloud libraries for shared production assets.
-- create a new creative cloud library.
-- manage creative cloud libraries and assets for premiere pro video production.
-- asset management
-- adobe
-- adobe premiere
 - add a new design element to a creative cloud library for sharing with the premiere pro team.
+- add library element
+- Media Asset Manager
+- creative cloud libraries for shared production assets.
 - premiere pro
+- add an element to a library.
+- manage creative cloud libraries and assets for premiere pro video production.
+- Video Producer
 - list elements
 - creative cloud
+- create a new creative cloud library.
+- automation
+- asset management
+- adobe premiere
+- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
+- list all creative cloud libraries.
+- add element
+- create a new creative cloud library for organizing video production brand assets.
+- list elements in a library.
+- list library elements
+- list all creative cloud libraries available for use in adobe premiere pro projects.
+- premiere pro plugin and extension ecosystem.
+- list libraries
+- adobe
+- create library
+- elements within a creative cloud library.
+- video production
 - video editor and producer using adobe premiere pro for content creation.
 slug: creative-asset-management
 tags:

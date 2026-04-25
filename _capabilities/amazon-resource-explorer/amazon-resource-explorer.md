@@ -14,18 +14,18 @@ provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
 - amazon resource explorer
-- amazon resource explorer resources
 - engineer managing amazon resource explorer resources
-- operations
-- list resources
 - automation workflow for amazon resource explorer
-- aws cloud resource management
-- cloud operations
+- amazon resource explorer resources
 - list amazon resource explorer resources
 - inventory
-- resource management
 - discovery
+- resource management
 - aws
+- operations
+- cloud operations
+- list resources
+- aws cloud resource management
 slug: amazon-resource-explorer
 tags:
 - Amazon Resource Explorer

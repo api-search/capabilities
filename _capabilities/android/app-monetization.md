@@ -25,40 +25,40 @@ personas: []
 provider_name: Android
 provider_slug: android
 search_terms:
-- google play
-- subscription products
-- get purchase product
-- ai
-- get purchase subscription
-- list user reviews from google play store
-- list voided purchases
-- reviews
 - mobile development
-- wearables
-- get product purchase status
-- tv
-- app reviews
-- list reviews
-- list subscriptions
-- list app reviews
-- voided purchases
-- monetization
-- in-app product purchases
-- get review
-- create subscription
-- list cancelled, refunded, or charged-back purchases
-- get a specific user review with comments
-- sdk
+- google play
 - create a new subscription product
-- android
-- subscriptions
-- machine learning
-- list all subscription products for an app
-- check subscription purchase validity and expiry
-- list subscription products
+- list app reviews
 - google
-- check in-app product purchase and consumption status
+- list subscription products
+- sdk
+- get purchase subscription
 - automotive
+- tv
+- get review
+- wearables
+- create subscription
+- get product purchase status
+- check subscription purchase validity and expiry
+- in-app product purchases
+- machine learning
+- reviews
+- voided purchases
+- list voided purchases
+- check in-app product purchase and consumption status
+- ai
+- android
+- list reviews
+- subscription products
+- list user reviews from google play store
+- list all subscription products for an app
+- subscriptions
+- list subscriptions
+- app reviews
+- get purchase product
+- get a specific user review with comments
+- list cancelled, refunded, or charged-back purchases
+- monetization
 slug: app-monetization
 tags:
 - Android

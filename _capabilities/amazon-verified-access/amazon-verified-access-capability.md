@@ -9,9 +9,9 @@ provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
 - access management
-- security
-- zero trust
 - aws
+- zero trust
+- security
 slug: amazon-verified-access-capability
 tags: []
 tools: []

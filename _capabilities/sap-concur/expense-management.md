@@ -41,55 +41,55 @@ personas: []
 provider_name: SAP Concur
 provider_slug: sap-concur
 search_terms:
-- update report
-- create a new expense report.
-- expense management
-- submit an expense report for approval.
-- invoice management
-- approve report
-- travel management
+- get expenses
+- get a single expense entry.
 - send back report
+- approve report.
+- submit an expense report for approval.
+- send back an expense report for revision.
+- approve an expense report.
+- submit for approval.
+- retrieve a report.
+- get comments on an expense report.
+- create report comment
+- get reports pending approval.
+- delete report
+- list expense reports pending approval.
+- submit report
+- get report comments
+- expense entry operations.
+- invoice management
+- create report
+- get reports to approve
+- travel management
+- individual report operations.
+- get expenses for a report.
+- delete an unsubmitted expense report.
+- create a new expense report.
+- business travel
+- get report
+- retrieve an expense report by id.
 - add a comment to an expense report.
-- get expense allocations.
+- update report
+- expense management
+- get comments
+- update an unsubmitted expense report.
 - create comment
 - report comments.
-- sap concur
-- delete an unsubmitted expense report.
-- recall a submitted expense report.
-- submit report
-- approval workflows
-- add a report comment.
-- create report comment
-- get allocations
-- individual report operations.
-- retrieve a report.
-- get reports to approve
-- business travel
-- get report comments
-- expense report lifecycle management.
-- recall report
-- send back an expense report for revision.
-- get comments on an expense report.
-- approve an expense report.
-- get report
-- update an unsubmitted expense report.
 - get expense entries for a report.
-- delete report
-- get a single expense entry.
-- get report comments.
-- list expense reports pending approval.
-- retrieve an expense report by id.
-- expense entry operations.
-- submit report.
-- create report
+- get expense allocations.
 - financial services
-- get reports pending approval.
-- get comments
-- get expenses
-- approve report.
-- get expenses for a report.
+- get allocations
+- submit report.
+- add a report comment.
+- approval workflows
+- get report comments.
 - get expense
-- submit for approval.
+- sap concur
+- recall report
+- expense report lifecycle management.
+- recall a submitted expense report.
+- approve report
 slug: expense-management
 tags:
 - SAP Concur

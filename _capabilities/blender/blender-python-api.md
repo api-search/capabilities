@@ -9,13 +9,13 @@ provider_name: Blender
 provider_slug: blender
 search_terms:
 - 3d
-- game development
-- open source
 - python
+- game development
 - rendering
 - vfx
-- animation
+- open source
 - modeling
+- animation
 slug: blender-python-api
 tags: []
 tools: []

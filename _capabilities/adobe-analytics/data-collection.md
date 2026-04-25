@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- digital marketing
-- list available dimensions to validate event data mapping.
-- web analytics
-- list available metrics to validate event data mapping.
-- business intelligence
-- list report suites to identify collection targets.
-- marketing
-- list report suites
-- report suite discovery for data collection targeting.
-- server side
-- list metrics to validate event data mapping.
-- get report suite
+- events
+- list dimensions to validate event data mapping.
 - upload events
 - analytics
-- validate a batch events file without ingesting.
-- get details for a report suite to verify collection configuration.
-- validate events
-- bulk data insertion
-- batch event upload.
 - validate event files.
-- list report suites to identify data collection targets.
-- adobe analytics
+- get report suite
 - report suite details.
-- get report suite details.
-- list dimensions
+- list available dimensions to validate event data mapping.
+- bulk data insertion
+- validate a batch events file without ingesting data.
+- web analytics
+- list available metrics to validate event data mapping.
+- metric discovery for event mapping.
+- validate events
+- get details for a report suite to verify collection configuration.
+- digital marketing
+- list metrics to validate event data mapping.
 - upload a batch events file.
-- events
+- validate a batch events file without ingesting.
+- server side
+- get report suite details.
+- list report suites to identify collection targets.
 - list metrics
-- dimension discovery for event mapping.
+- customer intelligence
 - adobe
 - data collection
-- validate a batch events file without ingesting data.
 - upload a gzip-compressed csv file of batched analytics event data.
-- customer intelligence
-- list dimensions to validate event data mapping.
-- metric discovery for event mapping.
+- adobe analytics
+- list report suites
+- batch event upload.
+- dimension discovery for event mapping.
+- report suite discovery for data collection targeting.
+- marketing
+- list report suites to identify data collection targets.
+- business intelligence
+- list dimensions
 slug: data-collection
 tags:
 - Adobe Analytics

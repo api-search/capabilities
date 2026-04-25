@@ -21,35 +21,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- internal developer platform
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- delete an entity from the software catalog
-- list locations
-- Platform Engineer
-- create location
-- delete catalog entity
-- list entities
-- central inventory of all software components, apis, and resources
-- register catalog location
-- developer portal
-- software catalog entities
-- list catalog locations
-- software catalog
-- get catalog entity
-- backstage
-- list catalog entities
 - register a new catalog location
-- open source
+- Platform Engineer
+- get catalog entity
+- internal developer platform
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- catalog locations
-- get a specific catalog entity by kind, namespace, and name
-- scaffolding, documentation, and search to accelerate development
+- delete an entity from the software catalog
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- list catalog entities
+- software catalog
+- delete catalog entity
+- list locations
+- developer portal
+- software developer using backstage to discover services, bootstrap projects, and read documentation
 - engineer building and maintaining the internal developer platform and backstage configuration
-- list all catalog entities
+- list catalog locations
+- software catalog entities
+- central inventory of all software components, apis, and resources
+- scaffolding, documentation, and search to accelerate development
+- backstage
+- open source
+- catalog locations
 - list all registered catalog locations
-- Developer
+- get a specific catalog entity by kind, namespace, and name
 - unified workflow for managing entities, locations, scaffolding, documentation, and search
+- list all catalog entities
+- create location
+- Developer
+- list entities
+- register catalog location
 slug: developer-portal
 tags:
 - Backstage

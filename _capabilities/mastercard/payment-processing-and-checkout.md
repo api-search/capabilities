@@ -39,42 +39,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- generate a merchant-presented qr code for payment
-- create checkout session
-- create unified session
+- process a payment through the mastercard gateway
+- fraud detection
+- process a payment through the gateway
+- get payment
+- create a buy-now-pay-later installment plan
+- create a unified checkout session supporting multiple payment methods
+- payment processing
+- create an installment plan
 - create a unified checkout session
+- create unified session
 - payments
 - e-commerce
-- register contactless reader
-- digital identity
 - unified checkout sessions
-- payment processing
-- process a payment through the mastercard gateway
-- checkout
-- process a cloud commerce transaction
-- credit cards
-- get payment
-- qr code payment acceptance
-- process a payment through the gateway
-- fraud detection
-- mastercard
-- register a contactless reader device
-- process payment
-- checkout session management
-- create an installment plan
-- create a new checkout session for a merchant
 - get payment details
-- merchant
-- create a unified checkout session supporting multiple payment methods
-- create a buy-now-pay-later installment plan
-- generate qr code
-- financial services
+- digital identity
+- checkout session management
+- create checkout session
+- credit cards
 - buy-now-pay-later installment plans
-- retrieve payment transaction details
-- create a new checkout session
+- checkout
+- process payment
 - generate a merchant qr code for payment
+- generate a merchant-presented qr code for payment
+- generate qr code
+- create a new checkout session for a merchant
 - process cloud transaction
+- mastercard
+- financial services
+- register a contactless reader device
+- register contactless reader
+- retrieve payment transaction details
 - open banking
+- merchant
+- qr code payment acceptance
+- create a new checkout session
+- process a cloud commerce transaction
 - create installment plan
 slug: payment-processing-and-checkout
 tags:

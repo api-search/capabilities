@@ -22,54 +22,54 @@ personas: []
 provider_name: Spot
 provider_slug: spot
 search_terms:
-- elastigroup get status aws
-- list virtual node groups
-- scale up an aws elastigroup
-- get elastigroup activity logs
-- ocean list virtual node groups
-- compute
-- elastigroup compute groups
-- list aws ocean clusters
-- finops
-- ocean virtual node groups
 - get right-sizing suggestions for an ocean cluster
-- list gcp elastigroups
-- ocean list clusters gke
-- list ocean spark clusters
-- list aws elastigroups
-- cost optimization
-- ocean list spark clusters
-- spot instances
-- elastigroup get costs
-- elastigroup list gcp
-- ocean get cluster aws
-- elastigroup list azure
-- list aks ocean clusters
-- ocean list clusters aks
-- autoscaling
-- spot
-- list ocean virtual node groups
-- list ocean clusters
-- list azure elastigroups
-- cloud infrastructure
-- get an aws ocean cluster
-- elastigroup scale up aws
-- get elastigroup instance status
-- ocean kubernetes clusters
-- get elastigroup cost data
-- ocean get right sizing
-- scale down an aws elastigroup
-- containers
-- elastigroup get group aws
-- list gke ocean clusters
-- get an aws elastigroup by id
-- elastigroup list groups aws
-- elastigroup scale down aws
-- list elastigroups
-- elastigroup get logs
-- kubernetes
+- compute
 - ocean list clusters aws
+- list aws ocean clusters
+- get elastigroup cost data
+- spot instances
+- get elastigroup activity logs
+- get an aws elastigroup by id
+- list ocean clusters
+- ocean get right sizing
+- get elastigroup instance status
+- elastigroup get status aws
+- spot
+- ocean get cluster aws
+- autoscaling
+- finops
+- elastigroup scale up aws
+- scale up an aws elastigroup
+- ocean list clusters gke
+- list elastigroups
+- list aws elastigroups
+- elastigroup get group aws
+- list azure elastigroups
+- ocean list clusters aks
+- cloud infrastructure
+- elastigroup get logs
+- get an aws ocean cluster
+- kubernetes
+- elastigroup compute groups
+- elastigroup list groups aws
+- elastigroup list gcp
+- list ocean virtual node groups
+- ocean list virtual node groups
+- ocean list spark clusters
+- containers
 - list all aws elastigroups
+- list aks ocean clusters
+- ocean kubernetes clusters
+- ocean virtual node groups
+- cost optimization
+- elastigroup scale down aws
+- elastigroup list azure
+- scale down an aws elastigroup
+- list gke ocean clusters
+- list gcp elastigroups
+- elastigroup get costs
+- list virtual node groups
+- list ocean spark clusters
 slug: compute-optimization
 tags:
 - Spot

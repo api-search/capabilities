@@ -39,47 +39,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- observability
-- get performance data
-- microservices
-- ibm websphere
-- log management
-- get batch job instance details
-- metrics
-- get open liberty overall health status
-- monitoring
-- get batch job
-- get all open liberty metrics
-- list batch job instances
-- get all metrics
-- enterprise java
-- metrics collection
-- get was server health
-- get liberty metrics
-- get was health
-- j2ee
-- batch job monitoring
-- get readiness
-- get open liberty overall health
-- check if liberty server is alive
-- get was performance monitoring data
-- get liveness
+- get liberty admin metrics
 - get log messages
+- metrics
+- middleware
 - get liberty logging configuration
+- get was server health
+- get liberty log messages
+- get was health
+- batch job monitoring
+- get open liberty overall health
+- check if liberty server is ready for traffic
+- get readiness
+- get was server health status
+- get log config
+- application server
+- performance data
+- cloud native
+- health check endpoints
+- get performance data
+- metrics collection
+- observability
+- microservices
+- get liberty metrics
+- list batch job instances
+- monitoring
+- get all open liberty metrics
+- get batch job
+- get was performance monitoring data
+- get open liberty overall health status
+- ibm websphere
+- get liveness
+- enterprise java
+- get batch job instance details
+- get recent liberty log messages
+- get all metrics
+- log management
 - list batch jobs
 - get liberty health
-- check if liberty server is ready for traffic
-- get recent liberty log messages
-- middleware
-- get was server health status
-- get liberty admin metrics
-- health check endpoints
+- j2ee
 - list jakarta batch job instances
-- performance data
-- get log config
-- get liberty log messages
-- application server
-- cloud native
+- check if liberty server is alive
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

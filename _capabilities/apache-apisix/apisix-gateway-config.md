@@ -33,44 +33,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- API Gateway Administrator
-- create a backend upstream.
-- create a new apisix route for traffic routing.
-- update an existing apisix route.
-- delete route
-- list all backend upstream configurations.
 - Platform Engineer
+- delete route
+- lua
+- API Gateway Administrator
+- api gateway
+- update an existing apisix route.
+- list routes
+- create a new api consumer with authentication plugins.
+- list all api consumers and their plugin configs.
+- route, upstream, consumer, and ssl management workflow.
+- cloud native
+- list upstreams
 - apache apisix
 - administrators configuring routes, consumers, and security policies.
-- configuration
-- list backend upstreams.
 - list all apisix gateway routes.
-- nginx
-- list all api consumers and their plugin configs.
-- apache
-- create consumer
-- authentication
-- engineers deploying and managing api gateway infrastructure.
-- open source
-- create route
-- update route
-- traffic management
-- list api consumers.
-- list all gateway routes.
 - create a new backend upstream with load balancing config.
-- api gateway
-- route, upstream, consumer, and ssl management workflow.
-- lua
-- create a new api consumer with authentication plugins.
-- list consumers
-- create a new gateway route.
-- cloud native
-- create an api consumer.
-- list routes
-- delete an apisix route.
-- kubernetes
 - create upstream
-- list upstreams
+- traffic management
+- create a backend upstream.
+- engineers deploying and managing api gateway infrastructure.
+- configuration
+- create a new gateway route.
+- open source
+- create consumer
+- update route
+- kubernetes
+- list all gateway routes.
+- apache
+- list backend upstreams.
+- create an api consumer.
+- delete an apisix route.
+- list api consumers.
+- authentication
+- create a new apisix route for traffic routing.
+- nginx
+- list consumers
+- create route
+- list all backend upstream configurations.
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

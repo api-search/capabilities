@@ -17,35 +17,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- managing the complete lifecycle of api specifications from design to deployment.
-- apidog
-- import
-- api design
-- import postman collection
-- api testing
 - Platform Engineer
-- export openapi spec
-- collaboration
-- export api specifications to standard formats.
-- import api specifications from various formats.
 - export openapi specification from apidog project.
-- import openapi specification into apidog project.
-- import a postman collection into apidog for converting to openapi-based workflows.
-- design-first
-- API Developer
-- import openapi spec
-- unified workflow for managing api specifications lifecycle.
-- export
-- developer building and managing apis using apidog's design-first platform.
+- import
+- import postman collection
 - mocking
 - export openapi
-- engineer automating api specification workflows via ci/cd integration.
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- api lifecycle
 - platform
-- documentation
+- export openapi spec
 - import an openapi/swagger specification into an apidog project for design-first development.
+- import openapi specification into apidog project.
+- api testing
+- engineer automating api specification workflows via ci/cd integration.
+- unified workflow for managing api specifications lifecycle.
+- collaboration
+- documentation
 - import openapi
+- import openapi spec
+- export api specifications to standard formats.
+- design-first
+- developer building and managing apis using apidog's design-first platform.
+- api lifecycle
+- apidog
+- api design
+- export
+- import a postman collection into apidog for converting to openapi-based workflows.
+- import api specifications from various formats.
+- API Developer
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- managing the complete lifecycle of api specifications from design to deployment.
 slug: api-lifecycle-management
 tags:
 - Apidog
