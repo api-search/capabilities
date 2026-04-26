@@ -8,11 +8,11 @@ personas: []
 provider_name: BB&T Corp (Truist)
 provider_slug: bbandt-corp
 search_terms:
-- bb&t
 - open banking
-- financial services
 - truist
+- financial services
 - banking
+- bb&t
 slug: open-banking
 tags: []
 tools: []

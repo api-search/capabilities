@@ -8,13 +8,13 @@ personas: []
 provider_name: Barclays
 provider_slug: barclays
 search_terms:
-- credit cards
-- finance
 - payments
-- psd2
 - open banking
+- finance
 - uk banking
+- credit cards
 - banking
+- psd2
 slug: open-banking
 tags: []
 tools: []

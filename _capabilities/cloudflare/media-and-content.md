@@ -18,58 +18,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
+- stream create live input
+- create a direct upload url.
+- list image variants.
+- get video details.
+- stream get video
+- serverless
+- list images
+- list videos.
+- cloud
+- web performance
+- images
 - ai gateway
-- edge
-- cloudflare
+- get image details.
+- stream upload video
+- images delete image
+- dns
+- edge computing
+- stream list videos
+- cdn
+- platform
+- ddos protection
 - upload a video from url.
 - artificial intelligence
-- ddos protection
-- media
-- cloud
-- stream list videos
-- images list images
-- create a live streaming input.
-- create a direct upload url.
-- delete a video.
-- images create direct upload
-- list images.
-- dns
-- list images
-- security
-- images upload image
-- list all images.
-- edge computing
-- images
-- list videos
-- containers
+- edge
 - video
-- platform
-- stream upload video
-- list all videos.
-- cdn
-- object storage
-- real-time communication
-- images delete image
-- upload an image.
-- list image variants.
-- images list variants
-- web performance
-- serverless
-- video management.
-- stream delete video
-- stream list live inputs
-- stream create live input
-- create a direct upload url for images.
-- list live streaming inputs.
+- images create direct upload
 - api gateway
-- stream get video
-- get image details.
+- create a live streaming input.
+- containers
+- stream list live inputs
 - stream create direct upload
-- images get image
-- list videos.
-- get video details.
-- delete an image.
+- security
+- real-time communication
+- list videos
+- delete a video.
+- upload an image.
+- create a direct upload url for images.
+- video management.
+- object storage
+- list all images.
+- list images.
+- cloudflare
+- media
+- list live streaming inputs.
+- list all videos.
 - image management.
+- images get image
+- delete an image.
+- images upload image
+- images list images
+- images list variants
+- stream delete video
 slug: media-and-content
 tags:
 - Cloudflare

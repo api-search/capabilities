@@ -9,35 +9,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- institutional investor or fund manager using bny custody and treasury services
-- Institutional Client
-- Corporate Treasurer
-- list transactions
-- get current and available balances for a bny mellon account
-- internal funds transfers and liquidity management
-- treasury
-- get the status and details of a bny mellon payment
-- get account balances
-- institutional treasury operations including accounts, payments, and funds transfers
-- initiate funds transfer
 - initiate a payment (wire, ach, swift, chips) through bny mellon
-- list bny accounts
-- executive managing corporate liquidity and treasury operations
-- institutional banking
-- bny mellon
-- asset servicing
-- list bny mellon treasury accounts for the authenticated client
-- list transactions for a bny mellon account
 - analyst executing treasury transactions and reporting
-- institutional account management and cash positioning
-- initiate a funds transfer between bny mellon accounts
+- list bny accounts
 - initiate payment
-- banking
-- payments
-- wire transfers
-- get payment status
-- wire, ach, swift, and chips payment execution
+- institutional banking
+- institutional account management and cash positioning
 - Treasury Analyst
+- list transactions
+- initiate a funds transfer between bny mellon accounts
+- institutional treasury operations including accounts, payments, and funds transfers
+- banking
+- get current and available balances for a bny mellon account
+- get the status and details of a bny mellon payment
+- executive managing corporate liquidity and treasury operations
+- internal funds transfers and liquidity management
+- asset servicing
+- bny mellon
+- get account balances
+- list bny mellon treasury accounts for the authenticated client
+- Institutional Client
+- payments
+- institutional investor or fund manager using bny custody and treasury services
+- list transactions for a bny mellon account
+- treasury
+- wire transfers
+- wire, ach, swift, and chips payment execution
+- initiate funds transfer
+- get payment status
+- Corporate Treasurer
 slug: treasury-operations
 tags:
 - BNY Mellon

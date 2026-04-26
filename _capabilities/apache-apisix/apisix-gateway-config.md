@@ -33,44 +33,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- nginx
-- list all apisix gateway routes.
-- update an existing apisix route.
-- delete route
-- list upstreams
-- lua
-- list api consumers.
-- create an api consumer.
-- authentication
-- list all api consumers and their plugin configs.
 - create a new apisix route for traffic routing.
-- list backend upstreams.
-- open source
-- create a new backend upstream with load balancing config.
-- cloud native
-- list consumers
-- API Gateway Administrator
-- create consumer
-- engineers deploying and managing api gateway infrastructure.
-- apache
-- create upstream
-- Platform Engineer
-- list all gateway routes.
-- traffic management
-- administrators configuring routes, consumers, and security policies.
-- update route
-- delete an apisix route.
-- list routes
-- create a backend upstream.
-- create a new api consumer with authentication plugins.
-- route, upstream, consumer, and ssl management workflow.
-- api gateway
-- kubernetes
-- create a new gateway route.
-- list all backend upstream configurations.
 - configuration
+- administrators configuring routes, consumers, and security policies.
+- list upstreams
+- list backend upstreams.
+- authentication
+- create a new gateway route.
+- update an existing apisix route.
+- list routes
+- apache
 - create route
+- list all api consumers and their plugin configs.
+- create consumer
+- API Gateway Administrator
+- kubernetes
+- list consumers
+- update route
+- api gateway
+- delete route
+- route, upstream, consumer, and ssl management workflow.
+- list all gateway routes.
+- create upstream
+- create a backend upstream.
+- list all backend upstream configurations.
+- list api consumers.
+- create a new api consumer with authentication plugins.
+- Platform Engineer
+- nginx
+- traffic management
+- list all apisix gateway routes.
+- create an api consumer.
 - apache apisix
+- lua
+- delete an apisix route.
+- engineers deploying and managing api gateway infrastructure.
+- create a new backend upstream with load balancing config.
+- open source
+- cloud native
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

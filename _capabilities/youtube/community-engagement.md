@@ -58,50 +58,50 @@ provider_name: Youtube
 provider_slug: youtube
 search_terms:
 - subscribe to a channel
-- unsubscribe from a youtube channel
-- list channels
-- list comments
-- update an existing comment
-- youtube
-- media
 - update a comment
-- list youtube channels
-- subscriptions
-- list comment threads
-- unsubscribe
-- list comments on a video or channel
-- post a new comment
-- community
 - comments
-- update comment
-- subscribe to channel
-- unsubscribe from a channel
-- video
-- unsubscribe from channel
-- update channel
+- subscriptions
+- create a new comment thread
 - update channel settings
-- update comment thread
-- list channel subscriptions
+- community
+- unsubscribe from channel
+- manage channel subscriptions
+- update channel
+- update comment
+- post a new comment
+- list channels
+- update an existing comment
+- list comment threads
+- set moderation status on comments
 - subscribe to a youtube channel
 - videos
-- update a comment thread
-- delete comment
-- set moderation status
-- google
-- manage comment threads
-- manage individual comments
-- create comment
-- subscribe
-- set moderation status on comments
-- manage channel subscriptions
-- list subscriptions
-- delete a comment
-- social
-- create a new comment thread
-- create comment thread
-- manage channel information
+- unsubscribe
 - streaming
+- list comments
+- set moderation status
+- manage individual comments
 - moderation
+- manage channel information
+- youtube
+- video
+- google
+- create comment thread
+- delete comment
+- manage comment threads
+- list comments on a video or channel
+- subscribe to channel
+- unsubscribe from a youtube channel
+- update a comment thread
+- social
+- create comment
+- delete a comment
+- update comment thread
+- subscribe
+- list channel subscriptions
+- unsubscribe from a channel
+- media
+- list youtube channels
+- list subscriptions
 slug: community-engagement
 tags:
 - YouTube

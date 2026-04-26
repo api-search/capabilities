@@ -21,48 +21,48 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- enterprise
-- app management
 - get api product
-- list all apps registered by a developer, including their api product subscriptions.
-- api products available for subscription.
-- API Governance Lead
-- integrations
-- architect overseeing api platform strategy and governance across the organization.
-- api management
-- google cloud
-- microservices
-- get developer app
-- list all api products available in the developer portal for subscription.
-- apps registered by a developer.
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- get details for a specific developer including their registered apps.
-- list products
-- API Product Manager
-- registered api developers.
-- list apps for a developer.
-- API Platform Engineer
-- get details for a specific developer app including its credentials and product subscriptions.
-- get details for a specific api product including its quota limits and proxy bindings.
-- hybrid
-- engineer managing api proxies, deployments, and policies in apigee.
-- list all registered developers.
-- api governance
-- list developers
-- list all developers registered in the apigee organization.
-- list api products
-- manager packaging api products and managing developer relationships.
-- list developer apps
-- monetization
-- Platform Architect
-- api gateway
-- analytics
-- api hub
 - api monetization
-- apigee
+- API Platform Engineer
+- api hub
+- analytics
 - developer portal
 - get developer
 - list all api products.
+- integrations
+- api products available for subscription.
+- list api products
+- registered api developers.
+- list all registered developers.
+- list developer apps
+- get details for a specific developer including their registered apps.
+- list all developers registered in the apigee organization.
+- API Product Manager
+- apps registered by a developer.
+- app management
+- list all apps registered by a developer, including their api product subscriptions.
+- api management
+- monetization
+- list apps for a developer.
+- list products
+- get details for a specific developer app including its credentials and product subscriptions.
+- API Governance Lead
+- manager packaging api products and managing developer relationships.
+- api gateway
+- architect overseeing api platform strategy and governance across the organization.
+- google cloud
+- Platform Architect
+- enterprise
+- api governance
+- apigee
+- hybrid
+- get details for a specific api product including its quota limits and proxy bindings.
+- list developers
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- engineer managing api proxies, deployments, and policies in apigee.
+- list all api products available in the developer portal for subscription.
+- get developer app
+- microservices
 slug: developer-portal-app-management
 tags:
 - Apigee

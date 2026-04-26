@@ -49,61 +49,61 @@ personas: []
 provider_name: ACORD
 provider_slug: acord
 search_terms:
-- claims intake and inquiry
-- endorse or amend a policy
-- insurance
-- submit an application for underwriting review
-- retrieve full acord policy details including coverages and insured party
-- list insurance parties (insureds, agents, brokers, carriers) from acord registry
-- get claim
-- list claims with filtering
-- reinsurance company accessing cedant data for risk assessment and settlement
 - register a new insurance party in the acord ngds party registry
-- claims
-- update policy
-- submit a first notice of loss (fnol) using acord ngds claims transaction model
-- submit a first notice of loss
-- policy
-- list policies
-- primary insurer managing policy issuance, claims, and underwriting
-- list registered parties
-- insurance policy lifecycle management
-- Reinsurer
-- list insurance policies using acord ngds standards with filtering by number, line of business, and status
-- issue a new acord-compliant insurance policy
-- intermediary managing client policies, claims submissions, and party records
-- issue a new insurance policy
-- standards
-- get claim details and payment history
-- unified acord ngds workflow for policy, claims, party, and underwriting
-- Insurance Carrier
-- individual policy operations
-- apply endorsements or amendments to an acord policy
-- policy administration
 - registry of all insurance parties including insureds, agents, and carriers
-- submit underwriting
-- Broker
-- get policy
-- retrieve full acord claim details including reserves and payment history
-- submit claim
-- submit an insurance application for underwriting review using acord ngds
-- list policies with filtering
-- underwriting application submission
-- register a new party
+- insurance policy lifecycle management
+- get claim
+- intermediary managing client policies, claims submissions, and party records
+- update policy
 - list insurance claims with acord ngds filtering by policy, status, and loss date range
-- get full policy details
-- acord
-- create party
-- insurance party registry
+- list claims with filtering
 - create policy
 - individual claim operations
-- list parties
-- full lifecycle management of insurance policies from issuance to expiration
-- list claims
-- underwriting
-- risk assessment and policy issuance decision workflows
-- first notice of loss, reserves, and payment tracking for insurance claims
+- retrieve full acord claim details including reserves and payment history
+- get policy
+- reinsurance company accessing cedant data for risk assessment and settlement
+- Insurance Carrier
+- apply endorsements or amendments to an acord policy
 - claims management
+- issue a new acord-compliant insurance policy
+- submit a first notice of loss (fnol) using acord ngds claims transaction model
+- primary insurer managing policy issuance, claims, and underwriting
+- claims intake and inquiry
+- Reinsurer
+- list insurance parties (insureds, agents, brokers, carriers) from acord registry
+- get full policy details
+- underwriting application submission
+- submit an insurance application for underwriting review using acord ngds
+- standards
+- insurance
+- submit claim
+- list parties
+- insurance party registry
+- full lifecycle management of insurance policies from issuance to expiration
+- unified acord ngds workflow for policy, claims, party, and underwriting
+- list policies with filtering
+- register a new party
+- Broker
+- create party
+- policy
+- risk assessment and policy issuance decision workflows
+- get claim details and payment history
+- acord
+- issue a new insurance policy
+- list insurance policies using acord ngds standards with filtering by number, line of business, and status
+- underwriting
+- list registered parties
+- individual policy operations
+- submit underwriting
+- submit an application for underwriting review
+- list claims
+- claims
+- retrieve full acord policy details including coverages and insured party
+- policy administration
+- list policies
+- endorse or amend a policy
+- first notice of loss, reserves, and payment tracking for insurance claims
+- submit a first notice of loss
 slug: insurance-data-exchange
 tags:
 - ACORD

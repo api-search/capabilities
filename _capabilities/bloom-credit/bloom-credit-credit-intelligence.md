@@ -9,11 +9,11 @@ provider_name: Bloom Credit
 provider_slug: bloom-credit
 search_terms:
 - credit bureau
+- credit reports
 - lending
 - personal finance
-- credit scores
-- credit reports
 - fintech
+- credit scores
 slug: bloom-credit-credit-intelligence
 tags: []
 tools: []

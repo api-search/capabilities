@@ -17,31 +17,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
+- initiating and completing apple pay payment authorizations
+- mobile payments
+- register a domain for apple pay on the web
+- contactless payments
+- validates merchant and obtains apple pay payment session
 - developer integrating apple pay into a web or mobile checkout experience
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- merchant domain management for apple pay
-- digital wallet
+- checkout
 - apple pay merchant validation and payment session
 - validates merchant identity with apple and returns a payment session object for completing checkout
-- registering and managing merchant identity and domains for apple pay
-- register domain
-- E Commerce Developer
-- contactless payments
-- validate merchant
-- validates merchant and obtains apple pay payment session
-- apple
-- mobile payments
 - registers a merchant domain to accept apple pay on the web payments
-- engineer building payment processing infrastructure supporting multiple payment methods
-- validate apple pay merchant
-- apple pay
-- Payment Integration Engineer
-- payments
-- e-commerce
-- initiating and completing apple pay payment authorizations
-- register a domain for apple pay on the web
-- checkout
+- validate merchant
 - register apple pay domain
+- register domain
+- e-commerce
+- registering and managing merchant identity and domains for apple pay
+- apple pay
+- validate apple pay merchant
+- engineer building payment processing infrastructure supporting multiple payment methods
+- digital wallet
+- payments
+- E Commerce Developer
+- Payment Integration Engineer
+- apple
+- merchant domain management for apple pay
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
 slug: payment-processing
 tags:
 - Apple Pay

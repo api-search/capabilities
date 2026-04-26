@@ -9,48 +9,48 @@ personas: []
 provider_name: Amazon CodeBuild
 provider_slug: amazon-codebuild
 search_terms:
-- list builds for project
-- list reports
-- delete project
-- list projects
-- get details about specific codebuild projects
-- list all builds or builds for a specific project
+- build project management and build execution workflows.
+- list builds for a specific codebuild project
 - get projects
-- delete a codebuild project
-- runs and monitors builds for their projects.
-- list all codebuild projects
-- devops
-- manage codebuild build projects
-- stop a running codebuild build
-- continuous integration and delivery pipeline management.
-- build automation
-- start build
-- create a new codebuild build project
-- automated compilation, testing, and artifact production.
+- list builds
+- list builds for project
 - access build and test reports
 - list codebuild test and coverage reports
-- start and monitor builds
-- update project
-- list builds for a specific codebuild project
-- list codebuild report groups
-- ci/cd
-- update an existing codebuild project configuration
-- amazon
-- list builds
-- get builds
-- get details about specific builds
-- stop build
-- Developer
-- continuous integration
-- aws
-- list report groups
-- manages build infrastructure and pipelines.
-- DevOps Engineer
-- create project
-- build project management and build execution workflows.
 - start a new build for a codebuild project
+- manages build infrastructure and pipelines.
+- automated compilation, testing, and artifact production.
+- update project
+- list report groups
+- list all codebuild projects
+- update an existing codebuild project configuration
+- get details about specific codebuild projects
+- create project
+- aws
+- delete a codebuild project
+- get builds
+- list all builds or builds for a specific project
 - build
+- create a new codebuild build project
+- get details about specific builds
+- list codebuild report groups
+- manage codebuild build projects
+- start and monitor builds
+- build automation
 - testing
+- list projects
+- devops
+- stop a running codebuild build
+- runs and monitors builds for their projects.
+- start build
+- amazon
+- continuous integration
+- DevOps Engineer
+- list reports
+- Developer
+- continuous integration and delivery pipeline management.
+- stop build
+- ci/cd
+- delete project
 slug: amazon-codebuild-cicd
 tags:
 - Amazon

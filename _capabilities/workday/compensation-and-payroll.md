@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- financial management
-- benefits
-- benefit plans
-- benefits list plans
-- list compensation scorecards
-- get eligible benefit plans for a worker
-- list all benefit plans
-- list all pay groups
-- list compensation grades
-- submit a compensation change request
-- benefits get eligible plans
-- payroll list pay slips
-- list benefit elections
-- payroll get pay group details
-- submit a benefits change request
-- list compensation plans
-- enterprise software
-- comp request one time payment
-- hcm
-- benefits list elections
-- pay groups
-- payroll list inputs
-- benefits change
-- benefits list dependents
-- get pay group details
-- list payroll inputs
 - comp request change
-- list pay groups
-- payroll list pay groups
-- payroll get pay group
-- payroll
-- list dependents
-- list benefit plans
-- compensation plans
-- compensation
-- workday
-- comp list plans
-- list pay slips
-- cloud computing
-- request a one-time payment
+- list compensation scorecards
 - comp list grades
-- comp list scorecards
+- pay groups
+- list benefit plans
+- list all pay groups
+- payroll list pay groups
+- submit a benefits change request
+- benefits get eligible plans
+- list all benefit plans
+- compensation
+- list compensation grades
+- list pay groups
+- cloud computing
+- payroll list inputs
+- list payroll inputs
+- financial management
+- benefits list elections
+- benefits change
+- payroll list pay slips
 - get a pay group by id
-- list plans
+- list pay slips
+- comp list scorecards
+- list benefit elections
+- list dependents
 - saas
+- workday
+- payroll get pay group
+- hcm
+- comp list plans
+- compensation plans
+- payroll
+- benefit plans
+- benefits
+- get pay group details
+- benefits list dependents
+- benefits list plans
+- enterprise software
+- list compensation plans
+- payroll get pay group details
+- submit a compensation change request
+- comp request one time payment
+- list plans
+- request a one-time payment
+- get eligible benefit plans for a worker
 slug: compensation-and-payroll
 tags:
 - Workday

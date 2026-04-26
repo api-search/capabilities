@@ -17,39 +17,39 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
+- get current and available balances for a cashpro account
+- initiate payment
+- list bank of america cashpro accounts for the authenticated client
+- Treasury Analyst
+- list transactions for a bank of america account within a date range
+- analyst managing day-to-day treasury operations and reporting
+- list available bank of america account statements
 - finance
 - get the current status of a bank of america payment
-- initiate a payment through bank of america cashpro (supports 350+ payment types)
-- list bank of america cashpro accounts for the authenticated client
-- analyst managing day-to-day treasury operations and reporting
-- Corporate Treasurer
+- executive responsible for corporate cash and liquidity management
+- list account transactions
+- banking
+- corporate treasury operations including account management, payments, and reporting
 - corporate cash management, balance reporting, and liquidity
-- get current and available balances for a cashpro account
+- corporate banking
+- list statements
+- cashpro
+- list cashpro accounts
+- get account balances
 - bank of america
 - ERP Integration
-- corporate treasury operations including account management, payments, and reporting
-- treasury
-- executive responsible for corporate cash and liquidity management
-- payment initiation and tracking across 350+ payment types
-- list bofa accounts
-- get account balances
-- system integration connecting erp/tms to bank of america cashpro apis
-- account management
-- payment management
-- list statements
-- list cashpro accounts
-- cashpro
-- initiate payment
-- banking
-- list transactions for a bank of america account within a date range
 - payments
-- corporate banking
-- get payment status
+- payment management
+- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- system integration connecting erp/tms to bank of america cashpro apis
+- payment initiation and tracking across 350+ payment types
 - list accounts
+- account management
+- treasury
+- get payment status
 - initiate a payment
-- Treasury Analyst
-- list account transactions
-- list available bank of america account statements
+- Corporate Treasurer
+- list bofa accounts
 slug: treasury-banking
 tags:
 - Bank of America

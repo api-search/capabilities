@@ -11,13 +11,13 @@ provider_slug: amazon-cloudtrail
 search_terms:
 - cloudtrail
 - aws
-- security
-- amazon cloudtrail
-- Security Analyst
 - audit
-- governance
+- amazon cloudtrail
 - compliance
+- Security Analyst
 - amazon web services
+- security
+- governance
 slug: audit-trail-management
 tags:
 - Amazon Web Services

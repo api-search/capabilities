@@ -9,10 +9,10 @@ provider_name: Blobr
 provider_slug: blobr
 search_terms:
 - ppc
-- marketing automation
 - google ads
-- ai agents
+- marketing automation
 - advertising
+- ai agents
 slug: blobr-google-ads-ai
 tags: []
 tools: []

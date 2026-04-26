@@ -25,40 +25,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- create topic
-- engineers managing the eventmesh cluster and messaging infrastructure
-- apache eventmesh
-- list all eventmesh topics
-- manage topics, subscriptions, and publish cloudevents
-- publish event
 - topic management and event publishing via cloudevents
-- create subscription
-- open source
-- subscribe a consumer to an eventmesh topic
-- subscribe to eventmesh topics
-- create a new eventmesh topic
-- list topics
-- subscribe to topic
-- publish cloud event
-- apache
-- publish a cloudevent to an eventmesh topic
-- Platform Engineer
-- publish a cloudevent
-- application developers building event-driven services on eventmesh
-- messaging
-- manage event subscriptions
-- cloudevents
+- pub-sub, request-reply, and broadcast messaging patterns
 - serverless
+- subscribe a consumer to an eventmesh topic
+- subscribe to topic
+- manage event subscriptions
+- apache eventmesh
+- event-driven
 - list eventmesh topics
 - list all topics registered in eventmesh
-- event-driven
+- apache
 - pub-sub
-- Developer
-- manage eventmesh topics
-- platform engineering
-- pub-sub, request-reply, and broadcast messaging patterns
+- list all eventmesh topics
+- manage topics, subscriptions, and publish cloudevents
+- messaging
+- publish a cloudevent to an eventmesh topic
+- publish a cloudevent
+- subscribe to eventmesh topics
+- create topic
+- publish cloud event
+- create a new eventmesh topic
 - create eventmesh topic
 - publish events
+- Platform Engineer
+- publish event
+- application developers building event-driven services on eventmesh
+- manage eventmesh topics
+- platform engineering
+- create subscription
+- Developer
+- cloudevents
+- engineers managing the eventmesh cluster and messaging infrastructure
+- open source
+- list topics
 slug: eventmesh-event-streaming
 tags:
 - Apache EventMesh

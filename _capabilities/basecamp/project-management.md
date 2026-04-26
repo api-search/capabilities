@@ -9,35 +9,35 @@ personas: []
 provider_name: Basecamp
 provider_slug: basecamp
 search_terms:
-- Project Manager
-- Team Member
-- list todos
-- collaboration
-- list basecamp projects
-- basecamp
-- create todo
-- project management
-- developer integrating basecamp into custom workflows and tools
-- individual contributor managing tasks and collaborating on projects
-- manager overseeing project progress, tasks, and team communication
-- list all people in the basecamp account
-- list all active basecamp projects for the account
-- list team members
-- full basecamp project lifecycle including todos, messages, scheduling, and team management
-- rest
-- team communication
-- post a new message to a basecamp message board
-- post message
-- list messages on a basecamp message board
-- Developer
-- create basecamp project
-- create a new to-do item in a basecamp project
-- project creation and lifecycle management
-- create a new basecamp project
-- to-dos, messages, and team member management
-- list to-dos in a basecamp todolist
 - list messages
+- list basecamp projects
+- post a new message to a basecamp message board
+- create todo
+- developer integrating basecamp into custom workflows and tools
+- collaboration
+- project management
+- basecamp
+- project creation and lifecycle management
+- Team Member
+- post message
+- Project Manager
+- full basecamp project lifecycle including todos, messages, scheduling, and team management
+- individual contributor managing tasks and collaborating on projects
+- list all active basecamp projects for the account
+- team communication
 - saas
+- list to-dos in a basecamp todolist
+- list messages on a basecamp message board
+- create a new to-do item in a basecamp project
+- rest
+- create basecamp project
+- list all people in the basecamp account
+- list team members
+- manager overseeing project progress, tasks, and team communication
+- Developer
+- create a new basecamp project
+- list todos
+- to-dos, messages, and team member management
 slug: project-management
 tags:
 - Basecamp

@@ -16,34 +16,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- start db cluster
-- mysql
-- create a new aurora db cluster
-- add a new read replica or writer instance to an aurora db cluster.
-- list available aurora db cluster snapshots for backup management.
-- start a stopped aurora db cluster to resume database operations.
-- create db instance
-- modify db cluster
-- describe db cluster snapshots
-- create db cluster
 - list all aurora db clusters to understand available databases and their status.
-- create a new aurora mysql or postgresql compatible db cluster.
-- create a snapshot of an aurora db cluster for backup or cloning.
-- modify the configuration of an existing aurora db cluster.
-- amazon aurora
-- create db cluster snapshot
-- aurora db cluster management
+- describe db cluster snapshots
 - postgresql
-- list all db instances in aurora clusters.
-- describe db clusters
-- describe db instances
-- aws
-- stop an aurora db cluster to reduce costs when not in use.
-- restore db cluster from snapshot
-- relational database
+- create db instance
 - list aurora db clusters
+- relational database
+- aurora db cluster management
+- start db cluster
+- stop an aurora db cluster to reduce costs when not in use.
+- start a stopped aurora db cluster to resume database operations.
+- create a new aurora mysql or postgresql compatible db cluster.
+- modify the configuration of an existing aurora db cluster.
+- aws
+- add a new read replica or writer instance to an aurora db cluster.
+- create a new aurora db cluster
+- modify db cluster
+- restore db cluster from snapshot
+- create db cluster
 - restore an aurora db cluster from a snapshot for disaster recovery.
+- amazon aurora
+- list available aurora db cluster snapshots for backup management.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- list all db instances in aurora clusters.
+- mysql
+- describe db instances
 - stop db cluster
+- describe db clusters
+- create db cluster snapshot
 slug: relational-database-management
 tags:
 - Amazon Aurora

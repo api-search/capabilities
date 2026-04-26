@@ -31,44 +31,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- list render jobs for a show
-- linux foundation
 - list and manage render jobs
-- list all active shows (productions) in the render farm
-- list and manage render hosts
-- vfx
-- vfx pipeline
-- render wrangler
-- get render job
-- pipeline td
-- open source
-- list render jobs for a specific show with optional state filtering
-- monitoring and management of distributed render farm resources and jobs
-- production staff responsible for monitoring and managing render farm operations
-- list jobs
-- technical director building and maintaining vfx production pipeline tools
-- standards
-- render farm
-- list all active shows in the render farm
-- list shows
-- get job
-- film
-- list and manage render shows (productions)
-- animation
-- list render jobs
-- list all render host machines and their current utilization
-- color management
-- visual effects
-- rendering
-- list render hosts
-- academy software foundation
-- get or kill a specific render job
-- opencue
-- list hosts
-- get details for a specific render job
-- monitor and manage render jobs, hosts, and shows using opencue
-- list all render host machines
+- linux foundation
 - get detailed status and frame counts for a specific render job
+- list jobs
+- vfx pipeline
+- technical director building and maintaining vfx production pipeline tools
+- list render jobs for a specific show with optional state filtering
+- list render jobs
+- visual effects
+- list hosts
+- list all active shows in the render farm
+- animation
+- get render job
+- get or kill a specific render job
+- list shows
+- pipeline td
+- monitoring and management of distributed render farm resources and jobs
+- academy software foundation
+- list render jobs for a show
+- list render hosts
+- list all render host machines and their current utilization
+- monitor and manage render jobs, hosts, and shows using opencue
+- render wrangler
+- list all active shows (productions) in the render farm
+- get job
+- color management
+- film
+- standards
+- opencue
+- list all render host machines
+- vfx
+- render farm
+- get details for a specific render job
+- rendering
+- list and manage render shows (productions)
+- production staff responsible for monitoring and managing render farm operations
+- open source
+- list and manage render hosts
 slug: render-farm-management
 tags:
 - Academy Software Foundation

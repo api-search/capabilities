@@ -30,60 +30,60 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
+- ar create invoice
+- get purchase order by id.
+- ap create invoice
 - get suppliers
-- enterprise
-- financials
-- create a journal entry.
-- po get suppliers
-- erp
-- list journal entries.
-- list purchase orders.
-- get purchase orders
-- supplier management.
-- retrieve requisitions.
-- po get purchase order by id
-- retrieve ap invoices.
-- retrieve payments.
-- ar invoice management.
+- ap invoice management.
+- create an ap invoice.
+- oracle
 - get journals
-- ap get payments
+- list suppliers.
+- gl create journal
+- retrieve purchase orders.
+- ap get invoices
+- ar invoice management.
+- retrieve fixed assets.
+- ce get bank accounts
+- retrieve suppliers.
 - get ar invoices
 - purchase order management.
-- create an ar invoice.
-- po get purchase orders
-- oracle
 - retrieve ar invoices.
-- list ar invoices.
-- get ap invoice by id.
-- list suppliers.
-- po create purchase order
-- journal entry management.
-- list ap invoices.
-- ap get invoices
-- po get requisitions
 - fa get assets
-- get purchase order by id.
-- retrieve fixed assets.
-- e-business suite
-- retrieve suppliers.
-- retrieve purchase orders.
-- create a purchase order.
-- ap invoice management.
-- ar get invoices
-- ar create invoice
 - business applications
-- ap get invoice by id
+- create a journal entry.
+- po get requisitions
+- retrieve payments.
 - retrieve general ledger journal entries.
-- retrieve receipts.
-- procurement
-- ce get bank accounts
+- ar get invoices
 - ar get receipts
-- create an ap invoice.
-- ap create invoice
-- gl create journal
 - retrieve bank accounts.
 - get ap invoices
+- procurement
 - gl get journals
+- erp
+- financials
+- list purchase orders.
+- list ap invoices.
+- list ar invoices.
+- po get purchase orders
+- e-business suite
+- po create purchase order
+- journal entry management.
+- enterprise
+- create a purchase order.
+- retrieve requisitions.
+- po get suppliers
+- po get purchase order by id
+- ap get invoice by id
+- get purchase orders
+- supplier management.
+- ap get payments
+- retrieve ap invoices.
+- get ap invoice by id.
+- retrieve receipts.
+- list journal entries.
+- create an ar invoice.
 slug: financial-operations
 tags:
 - Oracle

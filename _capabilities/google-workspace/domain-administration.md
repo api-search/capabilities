@@ -57,57 +57,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- productivity
-- organizational unit management.
-- delete user
-- email
-- storage
-- sign out a user from all sessions.
-- google workspace
-- make user admin
-- create a new user.
-- collaboration
-- domain administration
-- video conferencing
-- list users in the domain.
 - individual group management.
-- patch user properties.
-- create user
-- create an organizational unit.
-- update user
-- delete a group.
-- create group
+- delete group
+- make user admin
+- list groups
 - calendar
 - group management.
-- get user
-- get group
-- create a new user in the domain.
-- group management
-- list users in the google workspace domain.
-- update a user.
-- undelete user
-- get user details.
-- delete group
-- list users
-- update group
-- create a group.
-- list groups in the domain.
-- individual user management.
-- list org units
-- sign out user
-- list groups.
-- user account management.
-- patch user
-- undelete a deleted user.
-- delete a user.
-- list groups
-- update a group.
-- get group details.
-- create a new group.
+- create user
 - user management
-- list organizational units.
+- email
+- collaboration
 - create org unit
+- sign out user
+- create a new user.
+- organizational unit management.
+- video conferencing
 - make a user an admin.
+- list users
+- undelete user
+- delete user
+- create an organizational unit.
+- delete a user.
+- get group details.
+- sign out a user from all sessions.
+- list groups in the domain.
+- group management
+- get user details.
+- google workspace
+- list users in the domain.
+- create a group.
+- list organizational units.
+- list users in the google workspace domain.
+- create a new user in the domain.
+- productivity
+- update a user.
+- create a new group.
+- update a group.
+- storage
+- individual user management.
+- get group
+- patch user
+- list groups.
+- domain administration
+- list org units
+- patch user properties.
+- user account management.
+- get user
+- update user
+- delete a group.
+- update group
+- create group
+- undelete a deleted user.
 slug: domain-administration
 tags:
 - Google Workspace

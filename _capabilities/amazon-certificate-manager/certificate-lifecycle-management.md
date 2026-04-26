@@ -25,34 +25,34 @@ personas: []
 provider_name: Amazon Certificate Manager
 provider_slug: amazon-certificate-manager
 search_terms:
-- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
-- list all acm certificates with optional status filtering
-- devops
-- manage the full lifecycle of acm ssl/tls certificates
-- amazon web services
-- delete an acm certificate
-- Security Engineer
-- security professionals overseeing certificate compliance and expiry monitoring
-- security
-- request a new acm ssl/tls certificate for a domain using dns or email validation
 - ssl
-- delete certificate
-- engineers managing infrastructure and certificate rotation for web services
-- delete an acm certificate by arn. cannot delete certificates in use by aws services.
-- request a new ssl/tls certificate with dns or email validation
 - get full details of a specific acm certificate
-- list certificates
-- request certificate
-- tls
-- list all acm ssl/tls certificates, optionally filtered by status
-- describe certificate
-- aws
+- delete an acm certificate by arn. cannot delete certificates in use by aws services.
+- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
+- security professionals overseeing certificate compliance and expiry monitoring
 - certificates
-- DevOps Engineer
-- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
-- ssl/tls certificate provisioning, validation, and lifecycle operations
-- encryption
+- aws
 - inspect or delete a specific certificate
+- Security Engineer
+- tls
+- manage the full lifecycle of acm ssl/tls certificates
+- encryption
+- list all acm certificates with optional status filtering
+- request a new acm ssl/tls certificate for a domain using dns or email validation
+- list certificates
+- delete an acm certificate
+- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- amazon web services
+- security
+- delete certificate
+- request certificate
+- devops
+- request a new ssl/tls certificate with dns or email validation
+- DevOps Engineer
+- list all acm ssl/tls certificates, optionally filtered by status
+- engineers managing infrastructure and certificate rotation for web services
+- ssl/tls certificate provisioning, validation, and lifecycle operations
+- describe certificate
 slug: certificate-lifecycle-management
 tags:
 - Amazon Web Services

@@ -30,43 +30,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
+- check if a card is eligible for digitization
+- enroll an issuer in click to pay
+- submit bulk tokenization request
+- financial services
+- mdes
+- tokenization
+- suspend an active token
+- credit cards
+- submit bulk tokenization
+- submit a bulk tokenization request for a card portfolio
+- register token requestor
+- tokenize a payment card via mdes
+- tokenize a payment card
+- enroll issuer click to pay
+- register a new token requestor
 - get token details
-- push provision a token to a wallet
+- click to pay
 - tokenize card
+- mastercard
+- delete token
+- push provision to wallet
+- digital payments
+- token lifecycle management
+- push provision a token to a digital wallet
+- check digitization eligibility
+- check card eligibility for digitization
+- push provisioning to wallets
+- digital identity
+- payments
+- open banking
+- push provision
+- pre-digitization eligibility
 - delete a token
 - suspend token
-- tokenization
-- digital payments
-- credit cards
-- check digitization eligibility
-- register token requestor
-- push provision a token to a digital wallet
-- financial services
-- token lifecycle management
-- submit bulk tokenization
-- bulk tokenization operations
-- push provisioning to wallets
+- push provision a token to a wallet
 - fraud detection
-- click to pay
-- register a new token requestor
-- check if a card is eligible for digitization
-- submit bulk tokenization request
-- submit a bulk tokenization request for a card portfolio
-- push provision
-- check card eligibility for digitization
-- mastercard
-- tokenize a payment card
-- enroll an issuer in click to pay
-- payments
-- delete token
-- mdes
-- tokenize a payment card via mdes
-- digital identity
-- open banking
-- enroll issuer click to pay
-- pre-digitization eligibility
-- suspend an active token
-- push provision to wallet
+- bulk tokenization operations
 slug: digital-enablement-and-tokenization
 tags:
 - Mastercard

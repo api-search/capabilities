@@ -37,44 +37,44 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a funding transaction via mastercard send
-- verify send account
-- process a direct service transaction
-- validate account
-- get currency conversion rate
 - create a person-to-person transfer
-- create cross border payment
-- credit cards
-- funding transactions
-- disbursement transactions
-- create disbursement
-- financial services
-- disbursements
 - create a cross-border payment
-- get account information for a send recipient
-- get currency conversion rate for cross-border transactions
-- fraud detection
-- create a person-to-person money transfer
-- mastercard
 - p2p transfers
-- currency conversion rates
-- create a cross-border international payment
-- create p2p transfer
-- money transfer
-- create a funding transaction
-- get account info
-- process direct transaction
-- payments
-- cross-border payment processing
-- get conversion rate
+- financial services
 - verify account eligibility for mastercard send
-- digital identity
-- open banking
-- mastercard send
-- create a disbursement
-- cross-border
+- verify send account
 - create funding
+- credit cards
+- create a disbursement
+- create p2p transfer
+- create a funding transaction
+- money transfer
+- create a funding transaction via mastercard send
+- create a person-to-person money transfer
+- get currency conversion rate for cross-border transactions
+- process direct transaction
+- get account information for a send recipient
+- get currency conversion rate
+- validate account
+- get conversion rate
+- funding transactions
+- mastercard
+- disbursements
+- cross-border
+- get account info
+- process a direct service transaction
+- currency conversion rates
+- mastercard send
 - validate account details before transfer
+- create disbursement
+- digital identity
+- payments
+- open banking
+- fraud detection
+- create a cross-border international payment
+- disbursement transactions
+- cross-border payment processing
+- create cross border payment
 - create a disbursement to send money to a recipient
 slug: money-transfer-and-disbursements
 tags:

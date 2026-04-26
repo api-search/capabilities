@@ -45,53 +45,53 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- stock
-- vector and illustration licensing
-- search the adobe stock library
-- stock content categories
-- get the stock content category tree
-- license a vector or illustration for use in a project
-- digital assets
+- adobe
+- license a stock photo
+- get licensing statistics
+- search the adobe stock library for photos, illustrations, vectors, and videos
 - get member profile
-- search
-- get stock file metadata
-- get the hierarchical category tree for adobe stock content
-- license a vector or illustration
-- get licensing statistics for the authenticated member
+- digital assets
+- licensing
+- get category tree
+- image licensing
 - license history
+- get detailed metadata for a specific stock file by content id
+- content sourcing
+- get license history for the member
+- get the hierarchical category tree for adobe stock content
+- license a stock video clip for use in a project
+- get the stock content category tree
+- stock content categories
+- license video
+- license a stock video clip
+- search the adobe stock library
+- search stock files
+- get license stats
+- vector and illustration licensing
+- video licensing
+- stock
+- licensing statistics
+- get licensing statistics for the authenticated member
+- get the authenticated member profile
+- stock file metadata
+- video
+- license a vector or illustration
+- get the license history for the authenticated member
+- license a stock photo for use in a project
+- design
+- get the authenticated adobe stock member profile and quota information
 - license image
+- search
+- get license history
+- stock content search
+- get stock file metadata
+- member profile and quota
+- graphics
+- license a vector or illustration for use in a project
 - license vector
 - creative
-- get the license history for the authenticated member
-- get the authenticated adobe stock member profile and quota information
-- get detailed metadata for a specific stock file by content id
-- video
-- get license history for the member
-- get licensing statistics
-- get category tree
-- license a stock photo
-- design
-- stock file metadata
-- member profile and quota
-- get license history
-- video licensing
-- search stock files
-- license a stock photo for use in a project
-- license a stock video clip for use in a project
-- licensing
-- get the authenticated member profile
-- content sourcing
-- license a stock video clip
-- get license stats
-- licensing statistics
-- search the adobe stock library for photos, illustrations, vectors, and videos
-- photography
 - get metadata for a specific stock file
-- image licensing
-- adobe
-- stock content search
-- license video
-- graphics
+- photography
 slug: stock-asset-sourcing
 tags:
 - Adobe

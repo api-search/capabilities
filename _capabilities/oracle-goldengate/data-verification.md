@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- oracle goldengate
-- enterprise
-- list process metrics
-- get veridata server information
-- data verification
-- database connections for verification
-- compare groups
-- compliance
 - create a new comparison job
-- replication process metrics
-- get server info
-- create group
-- database
+- data quality
+- list groups
 - list jobs
-- create job
-- create connection
-- execute a comparison job
-- get details of out-of-sync data
-- repair job
+- database
+- run job
+- real-time replication
 - create a new veridata database connection
-- list comparison jobs
+- compare groups
+- repair out-of-sync data identified by a comparison job
+- create a new compare group
+- repair job
+- get server info
+- list replication process performance metrics
+- get veridata server information
+- database connections for verification
+- replication process metrics
+- execute a comparison job
 - get comparison job statistics
-- get out of sync data
+- oracle goldengate
+- data verification
 - comparison jobs
 - get job statistics
-- data quality
-- real-time replication
-- run job
-- list compare groups
-- create a new compare group
-- data integration
-- list groups
 - cdc
-- list connections
-- list replication process performance metrics
-- data synchronization
-- repair out-of-sync data identified by a comparison job
-- list compare groups for data verification
-- get goldengate process performance metrics for monitoring replication health
+- list compare groups
+- create job
+- get out of sync data
+- enterprise
+- list process metrics
+- data integration
 - list veridata database connections
+- data synchronization
+- get goldengate process performance metrics for monitoring replication health
+- list comparison jobs
+- list compare groups for data verification
+- list connections
+- compliance
+- create connection
+- get details of out-of-sync data
+- create group
 slug: data-verification
 tags:
 - Oracle GoldenGate

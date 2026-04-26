@@ -53,68 +53,68 @@ personas: []
 provider_name: Hunter
 provider_slug: hunter
 search_terms:
-- prospecting
-- sales prospecting
-- individual lead management.
-- update lead
-- contact discovery
-- update a lead.
-- email
-- create lead
-- discover companies.
-- list leads lists
-- get combined person and company data.
-- email outreach
-- domain search
-- enrich email
-- verify email
-- get account
-- delete leads list
-- discover companies matching criteria.
-- list leads
-- enrich company data from domain.
-- sales intelligence
-- company discovery.
-- lead management.
-- count emails
-- get lead details.
-- hunter
-- update leads list
-- create a new lead.
-- verify emails.
-- email enrichment.
+- create a new lead list.
 - discover companies
-- delete a lead list.
-- enrich company
-- update a lead list.
-- email verification
-- get lead list details.
-- search for emails by domain.
-- find email addresses.
-- get account information and usage.
-- company enrichment.
-- delete a lead.
-- find the most likely email for a person at a company.
-- get lead
-- get leads list
-- create leads list
 - enrich combined
 - create a lead.
-- lead generation
-- search emails by domain.
-- verify email deliverability.
-- list all lead lists.
+- enrich company
+- discover companies.
+- email verification
 - delete lead
-- find email for a person.
-- search for email addresses by domain.
+- get lead details.
+- email
 - enrich personal data from email address.
-- enrich personal data from email.
-- count emails for a domain.
-- list all email campaigns.
-- list campaigns
+- get lead list details.
+- hunter
 - list all leads.
-- create a new lead list.
+- enrich personal data from email.
+- verify emails.
 - find email
+- update lead
+- delete a lead.
+- find email for a person.
+- company discovery.
+- find the most likely email for a person at a company.
+- search for email addresses by domain.
+- company enrichment.
+- get account information and usage.
+- get account
+- list leads lists
+- search emails by domain.
+- list campaigns
+- update a lead list.
+- list leads
+- contact discovery
+- discover companies matching criteria.
+- lead management.
+- get lead
+- enrich email
+- delete a lead list.
+- list all lead lists.
+- list all email campaigns.
+- prospecting
+- update leads list
+- delete leads list
+- update a lead.
+- search for emails by domain.
+- lead generation
+- create a new lead.
+- enrich company data from domain.
+- count emails for a domain.
+- domain search
+- count emails
+- verify email deliverability.
+- email outreach
+- individual lead management.
+- email enrichment.
+- get combined person and company data.
+- verify email
+- get leads list
+- sales prospecting
+- create leads list
+- create lead
+- sales intelligence
+- find email addresses.
 slug: sales-prospecting
 tags:
 - Hunter

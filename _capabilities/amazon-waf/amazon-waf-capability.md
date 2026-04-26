@@ -10,10 +10,10 @@ provider_slug: amazon-waf
 search_terms:
 - bot management
 - aws
+- web application firewall
+- waf
 - security
 - ddos protection
-- waf
-- web application firewall
 slug: amazon-waf-capability
 tags: []
 tools: []

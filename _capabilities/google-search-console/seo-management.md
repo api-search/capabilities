@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- manage sitemaps.
-- delete a sitemap.
-- submit a sitemap.
-- search
-- delete sitemap
-- remove a site from search console.
-- submit a sitemap for crawling.
-- get sitemap details.
-- get details for a specific site.
-- query search analytics
-- query search analytics data with filters.
-- inspect url
-- list sitemaps
+- query search traffic data.
+- get sitemap
 - seo
-- get details for a specific sitemap.
-- inspect a url for index status and rich results.
-- list sites
+- analytics
+- query search analytics data with filters.
+- list sitemaps for a site.
 - add site
 - delete a previously submitted sitemap.
+- submit a sitemap.
+- list all search console sites for the authenticated user.
+- search console
+- webmaster tools
+- get sitemap details.
+- get site
+- manage search console sites.
+- query search analytics
 - delete site
+- list sitemaps
+- google
+- get details for a specific search console site.
+- list sitemaps submitted for a site.
+- inspect a url for index status and rich results.
+- search
+- list all search console sites.
+- delete a sitemap.
+- get details for a specific site.
+- delete sitemap
 - submit sitemap
 - webmaster
-- google
-- query search traffic data.
 - inspect a url for index status, crawl info, mobile usability, and rich results.
-- inspect urls for indexing status.
-- get site
-- search console
-- list sitemaps submitted for a site.
-- manage search console sites.
-- analytics
-- webmaster tools
-- list all search console sites.
-- list sitemaps for a site.
-- get details for a specific search console site.
 - query search traffic data with filters and dimensions.
-- get sitemap
-- list all search console sites for the authenticated user.
 - add a site to search console.
+- manage sitemaps.
+- remove a site from search console.
+- list sites
+- get details for a specific sitemap.
+- inspect url
+- inspect urls for indexing status.
+- submit a sitemap for crawling.
 slug: seo-management
 tags:
 - Google

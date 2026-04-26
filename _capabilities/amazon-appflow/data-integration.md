@@ -45,79 +45,79 @@ personas: []
 provider_name: Amazon AppFlow
 provider_slug: amazon-appflow
 search_terms:
-- browse entities available from a connector
-- get all fields available for a connector entity
-- create flow
-- workflow for data engineers and integration architects to orchestrate, monitor, and manage saas-to-aws data flows
-- remove a custom connector registration from your aws account.
-- amazon appflow
-- get details about a specific flow
-- describe connector entity
-- update flow
-- manage saas connector credentials
-- data engineering
-- manage a specific data flow
-- designs integration patterns, manages connector credentials, and establishes data governance for appflow
-- list entities available from a connector
-- list all connector profiles
-- list connector profiles that store credentials for connecting to saas applications.
-- data flow
-- update the credentials or configuration of an existing connector profile.
-- deactivate a running flow
-- describe connector profiles
-- start flow
-- update connector profile
-- list all amazon appflow data integration flows in your account.
-- get the field definitions and capabilities for a specific connector entity to understand what data can be transferred.
-- cancel flow executions
-- saas
-- builds and maintains data pipelines between saas applications and aws analytics/ml services
-- integration
-- start a flow
-- update an existing appflow flow's configuration, schedule, or field mappings.
-- create a new appflow data flow to transfer data between a saas source and an aws destination.
-- list all available appflow connectors including salesforce, servicenow, sap, slack, and custom connectors.
-- get complete details about an appflow data flow including source, destination, trigger, and task configuration.
-- Data Engineer
-- delete flow
-- list flows
-- clear cached connector metadata to force appflow to fetch the latest entity and field information from the source system.
-- discover available connectors
-- activate or trigger an appflow data flow to begin transferring data.
-- delete a connector profile and remove its stored credentials.
-- configuring and managing connections to saas applications
-- unregister connector
-- list connector entities
-- stop an active appflow data flow.
-- create and list data flows
-- register connector
-- data transfer
-- etl
-- Integration Architect
-- view flow execution history
-- activate a flow to begin data transfer
-- permanently delete an appflow data flow.
-- connectors
-- list all available appflow connectors
-- describe flow execution records
-- cancel in-progress runs of an appflow data flow.
-- describe connectors
-- get field definitions for a connector entity
-- view the execution history and results of appflow flow runs, including records processed and any errors.
-- aws
-- list all data flows in your account
-- create connector profile
-- list the entities (objects) available from a specific connector, such as salesforce account, contact, or opportunity.
-- stop a flow
-- register a new custom lambda-backed connector with your aws account.
-- create a connector profile to store authentication credentials for a saas application.
-- reset connector metadata cache
-- get execution history and results for a flow
 - describe flow
+- delete a connector profile and remove its stored credentials.
+- get the field definitions and capabilities for a specific connector entity to understand what data can be transferred.
+- start flow
 - moving data between saas applications and aws services
-- delete connector profile
+- manage saas connector credentials
+- Integration Architect
+- data transfer
+- list connector profiles that store credentials for connecting to saas applications.
+- list all amazon appflow data integration flows in your account.
+- cancel flow executions
+- register a new custom lambda-backed connector with your aws account.
+- connectors
+- workflow for data engineers and integration architects to orchestrate, monitor, and manage saas-to-aws data flows
+- get all fields available for a connector entity
+- start a flow
+- browse entities available from a connector
+- stop an active appflow data flow.
+- integration
+- view flow execution history
+- get field definitions for a connector entity
+- Data Engineer
+- aws
+- create and list data flows
+- get execution history and results for a flow
+- list flows
+- list all connector profiles
+- describe connectors
+- permanently delete an appflow data flow.
+- remove a custom connector registration from your aws account.
+- builds and maintains data pipelines between saas applications and aws analytics/ml services
+- update the credentials or configuration of an existing connector profile.
+- data engineering
+- configuring and managing connections to saas applications
+- discover available connectors
+- describe connector entity
+- cancel in-progress runs of an appflow data flow.
+- update flow
+- create connector profile
+- create a new appflow data flow to transfer data between a saas source and an aws destination.
+- list the entities (objects) available from a specific connector, such as salesforce account, contact, or opportunity.
+- activate or trigger an appflow data flow to begin transferring data.
+- describe flow execution records
+- amazon appflow
+- saas
+- clear cached connector metadata to force appflow to fetch the latest entity and field information from the source system.
+- delete flow
+- view the execution history and results of appflow flow runs, including records processed and any errors.
+- reset connector metadata cache
 - stop flow
+- activate a flow to begin data transfer
+- create a connector profile to store authentication credentials for a saas application.
+- designs integration patterns, manages connector credentials, and establishes data governance for appflow
+- etl
 - data integration
+- update an existing appflow flow's configuration, schedule, or field mappings.
+- register connector
+- list all available appflow connectors including salesforce, servicenow, sap, slack, and custom connectors.
+- data flow
+- unregister connector
+- describe connector profiles
+- get complete details about an appflow data flow including source, destination, trigger, and task configuration.
+- delete connector profile
+- create flow
+- list connector entities
+- list all available appflow connectors
+- deactivate a running flow
+- list entities available from a connector
+- stop a flow
+- get details about a specific flow
+- list all data flows in your account
+- update connector profile
+- manage a specific data flow
 slug: data-integration
 tags:
 - Amazon AppFlow

@@ -37,59 +37,59 @@ personas: []
 provider_name: Amazon DMS
 provider_slug: amazon-dms
 search_terms:
-- create a new dms replication instance to process migration tasks
-- stop a running database migration replication task
-- list replication tasks and their current migration status
-- list all replication instances
-- describe replication tasks
-- replication instances for migration processing
-- describe connections
-- amazon dms
-- delete a dms replication instance
-- list sns event subscriptions for migration notifications
-- database engineer managing migration projects and monitoring replication tasks
-- stop replication task
-- describe certificates
-- source and target database endpoint management
-- source and target database endpoints
-- create endpoint
-- describe replication instances
-- list all replication tasks
-- cloud architect designing database migration strategy and infrastructure
-- migration
-- create a new replication instance
-- end-to-end database migration lifecycle using aws dms
 - Cloud Architect
-- database
-- replication task lifecycle and monitoring
-- describe event subscriptions
-- create replication instance
-- list all source and target database endpoints configured for migration
-- list all endpoints
-- start or resume a database migration replication task
-- describe table statistics
-- test connection
-- replication instances and network configuration
-- create replication task
-- list all dms replication instances used for database migration processing
+- migration
 - create a new replication task to migrate data between source and target
-- list registered ssl certificates
-- list per-table migration statistics for a replication task
-- create a new replication task
-- data replication
-- create a source or target database endpoint for migration
-- delete replication instance
+- end-to-end database migration lifecycle using aws dms
+- stop replication task
+- database
+- replication instances and network configuration
+- list sns event subscriptions for migration notifications
 - Database Engineer
+- source and target database endpoint management
+- start or resume a database migration replication task
+- cloud architect designing database migration strategy and infrastructure
+- replication task lifecycle and monitoring
+- create a new replication instance
 - aws
-- describe endpoints
+- list all endpoints
+- describe connections
+- database migration
+- create a new dms replication instance to process migration tasks
+- amazon dms
+- create endpoint
+- replication instances for migration processing
+- database engineer managing migration projects and monitoring replication tasks
+- list all replication tasks
+- create replication task
+- list all replication instances
+- create a source or target database endpoint for migration
+- list all dms replication instances used for database migration processing
+- list per-table migration statistics for a replication task
 - list ssl certificates for encrypted database migration connections
 - create a source or target endpoint
+- list registered ssl certificates
 - list connections between replication instances and endpoints
-- test the connection between a replication instance and an endpoint
 - start replication task
-- ssl certificates for encrypted migration
 - replication tasks for migration
-- database migration
+- data replication
+- source and target database endpoints
+- stop a running database migration replication task
+- test the connection between a replication instance and an endpoint
+- describe replication instances
+- list all source and target database endpoints configured for migration
+- list replication tasks and their current migration status
+- create replication instance
+- describe endpoints
+- describe certificates
+- delete replication instance
+- test connection
+- describe table statistics
+- ssl certificates for encrypted migration
+- create a new replication task
+- describe event subscriptions
+- describe replication tasks
+- delete a dms replication instance
 slug: database-migration-management
 tags:
 - Amazon DMS

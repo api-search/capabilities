@@ -9,12 +9,12 @@ provider_name: Apache Hive
 provider_slug: apache-hive
 search_terms:
 - open source
-- data warehouse
-- sql
-- hadoop
 - apache
+- sql
 - big data
 - etl
+- hadoop
+- data warehouse
 slug: hive-data-querying
 tags: []
 tools: []

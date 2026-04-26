@@ -41,57 +41,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- linux
-- delete a user from a realm.
-- enterprise
-- delete user
-- list all keycloak realms.
-- list identity providers
-- keycloak
-- identity
-- cloud
-- register a new client application.
-- list external identity providers.
-- list users.
-- create user
-- open source
-- list clients
-- access management
-- get realm details.
-- create a new user in a realm.
-- get user
-- delete session
-- get realm configuration details.
-- get realm
-- containers
-- specific realm.
-- list groups in a realm.
-- list roles in a realm.
-- list realm roles
-- get user details.
-- list realms
 - realm users.
-- list users
-- list roles
-- realm clients.
-- keycloak realms.
-- list roles.
-- create a user.
-- hybrid cloud
-- terminate a user session.
-- list identity providers.
-- list groups.
-- create client
-- list all realms.
-- red hat
-- list clients.
-- realm groups.
-- identity providers.
+- delete a user from a realm.
 - list groups
-- list users in a realm.
+- list external identity providers.
+- list roles in a realm.
+- keycloak
+- realm roles.
+- create user
+- list realm roles
+- linux
+- realm clients.
+- realm groups.
+- get realm configuration details.
+- cloud
+- list identity providers
+- list realms
+- specific realm.
+- list users
+- identity
+- delete user
+- terminate a user session.
+- list groups in a realm.
+- list clients
+- register a new client application.
+- access management
+- list roles.
+- list clients.
+- get user details.
+- list identity providers.
 - list client applications in a realm.
 - kubernetes
-- realm roles.
+- get realm details.
+- get realm
+- containers
+- enterprise
+- hybrid cloud
+- identity providers.
+- list users.
+- list all keycloak realms.
+- list groups.
+- delete session
+- keycloak realms.
+- red hat
+- list users in a realm.
+- create a new user in a realm.
+- create client
+- get user
+- list roles
+- list all realms.
+- open source
+- create a user.
 slug: identity-and-access
 tags:
 - Red Hat

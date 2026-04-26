@@ -13,32 +13,32 @@ personas: []
 provider_name: Amazon Interactive Video Service
 provider_slug: amazon-interactive-video-service
 search_terms:
-- amazon interactive video service list channels
-- amazon interactive video service create stream key
-- amazon interactive video service delete channel
-- list channels
+- stop stream
 - amazon interactive video service create channel
-- Media Engineer
-- media
-- amazon interactive video service resources
-- managed live streaming with low latency for interactive applications.
-- create stream key
-- list recordings
-- create channel
-- video
-- amazon interactive video service get channel
 - live streaming
+- list recordings
+- aws
+- list channels
+- amazon interactive video service get channel
+- amazon interactive video service create stream key
+- amazon interactive video service list channels
+- real-time
+- manages amazon interactive video service resources and operations
+- video
+- get channel
+- create stream key
+- managed live streaming with low latency for interactive applications.
 - amazon interactive video service list stream keys
+- amazon interactive video service delete channel
+- amazon interactive video service stop stream
+- amazon interactive video service resources
+- Media Engineer
+- list stream keys
+- media
+- create channel
+- Developer
 - amazon interactive video service list recordings
 - delete channel
-- amazon interactive video service stop stream
-- Developer
-- aws
-- stop stream
-- manages amazon interactive video service resources and operations
-- list stream keys
-- get channel
-- real-time
 slug: live-streaming-management
 tags:
 - Live Streaming

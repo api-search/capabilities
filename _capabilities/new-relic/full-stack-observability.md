@@ -41,42 +41,42 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- list alert events
-- create a new alert policy
-- list alert incidents
-- list alert violations
-- new relic
-- update alerts policy
-- devops
-- observability
-- list conditions for a policy
-- list alert events filtered by product or entity type
-- delete an alert policy
-- get alerts incidents
-- get alerts conditions
-- list alert conditions for a specific policy
-- get alerts violations
-- platform
-- performance
-- list alert policies
-- monitoring
-- list alert conditions
-- get alerts policies
-- list all alert policies
-- update or delete an alert policy
-- update an alert policy
 - alerting
-- policies
-- analysis
-- analytics
-- get alerts events
+- list alert policies
 - apm
-- infrastructure
-- delete alerts policy
-- platform administration
 - configuration
-- create alerts policy
+- analytics
+- new relic
+- list all alert policies
 - manage alert policies
+- performance
+- list alert violations
+- update alerts policy
+- platform administration
+- list alert incidents
+- get alerts conditions
+- observability
+- get alerts violations
+- delete alerts policy
+- get alerts events
+- list alert conditions
+- platform
+- delete an alert policy
+- update an alert policy
+- infrastructure
+- create a new alert policy
+- list conditions for a policy
+- analysis
+- monitoring
+- get alerts policies
+- devops
+- list alert conditions for a specific policy
+- update or delete an alert policy
+- get alerts incidents
+- list alert events
+- list alert events filtered by product or entity type
+- policies
+- create alerts policy
 slug: full-stack-observability
 tags:
 - New Relic

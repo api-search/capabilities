@@ -22,32 +22,32 @@ provider_name: Apache Jena
 provider_slug: apache-jena
 search_terms:
 - ontology
-- create a dataset
-- get graph
 - list datasets
-- list all rdf datasets available on the fuseki server
-- retrieve a named rdf graph from a dataset
-- Knowledge Graph Architect
-- create a new rdf dataset on the fuseki server
-- architects who design rdf schemas and knowledge graph structures
-- java
-- sparql query
 - execute a sparql select query to retrieve rdf data from a fuseki dataset
 - create dataset
+- create a dataset
+- sparql update
+- list all rdf datasets available on the fuseki server
+- retrieve a named rdf graph from a dataset
+- java
 - semantic web
-- apache jena
-- open source
-- linked data
+- sparql
+- sparql query
+- list all datasets
+- Data Engineer
 - engineers who manage and query rdf datasets with sparql
 - knowledge graph
-- sparql
-- Data Engineer
-- owl
-- execute sparql query
-- list all datasets
-- sparql update
-- execute a sparql update to insert or delete rdf triples
 - rdf
+- get graph
+- Knowledge Graph Architect
+- create a new rdf dataset on the fuseki server
+- owl
+- apache jena
+- linked data
+- execute sparql query
+- architects who design rdf schemas and knowledge graph structures
+- open source
+- execute a sparql update to insert or delete rdf triples
 slug: sparql-data-management
 tags:
 - Apache Jena

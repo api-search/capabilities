@@ -29,38 +29,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- browse pre-built connectors.
 - Integration Developer
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- browse and manage integrations.
-- managing native integrations within saas products.
-- integrations
-- list workflows.
-- apifuse
-- list connectors
-- integration analytics.
-- list workflows
-- list all integration workflows configured in the embedded marketplace.
 - SaaS Product Manager
-- integration platform
-- create a new automation workflow connecting two or more integrated platforms.
-- create workflow
-- create a workflow.
-- list all connectors.
-- get analytics data.
-- workflow automation
-- product manager building native integrations into a saas product.
-- marketplace
-- list all integrations.
-- get analytics
-- list all pre-built connectors available for embedding into your saas product.
-- list integrations
-- embedded integrations
-- ipaas
 - manage workflows.
-- browse all available embedded integrations, optionally filtered by category.
+- create workflow
+- list all pre-built connectors available for embedding into your saas product.
+- workflow automation
+- integrations
+- list all integration workflows configured in the embedded marketplace.
+- create a new automation workflow connecting two or more integrated platforms.
+- browse pre-built connectors.
+- list integrations
+- get analytics data.
 - developer implementing and automating embedded integration workflows.
+- browse all available embedded integrations, optionally filtered by category.
+- list workflows.
+- list all connectors.
+- get analytics
+- managing native integrations within saas products.
 - saas
+- list all integrations.
+- browse and manage integrations.
+- embedded integrations
+- create a workflow.
+- list connectors
+- integration platform
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- marketplace
+- ipaas
+- apifuse
+- integration analytics.
+- product manager building native integrations into a saas product.
+- list workflows
 slug: embedded-integration-management
 tags:
 - Apifuse

@@ -9,23 +9,23 @@ personas: []
 provider_name: AppSumo
 provider_slug: appsumo
 search_terms:
-- marketplace
-- licensing
-- activate customer license
-- validates and retrieves details for an appsumo license key
-- validate and activate appsumo licenses for newly onboarded customers
-- saas partners
-- appsumo customer activating a purchased license
-- appsumo
-- checks the appsumo partner profile and integration configuration
-- managing license activation and status for appsumo purchases
-- developer integrating appsumo licensing into their product
-- configuring and managing the appsumo marketplace partnership
-- validate license
-- check partner profile
 - activates an appsumo license for a newly onboarded customer
-- software deals
+- appsumo
+- saas partners
+- check partner profile
+- developer integrating appsumo licensing into their product
+- activate customer license
+- appsumo customer activating a purchased license
+- marketplace
 - saas
+- managing license activation and status for appsumo purchases
+- validate license
+- checks the appsumo partner profile and integration configuration
+- software deals
+- validate and activate appsumo licenses for newly onboarded customers
+- licensing
+- validates and retrieves details for an appsumo license key
+- configuring and managing the appsumo marketplace partnership
 slug: license-management
 tags:
 - AppSumo

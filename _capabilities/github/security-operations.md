@@ -57,75 +57,75 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- update a dependabot alert (dismiss, reopen)
-- listDependabotAlertsForRepository
-- checkIfVulnerabilityAlertsAreEnabledForRepository
-- get a code scanning analysis
-- list analyses
-- update code scanning alert
-- code scanning analyses
-- update secret scanning alert
-- listCodeScanningAlertsForRepository
-- check if vulnerability alerts are enabled
-- update code scanning default setup
-- individual secret scanning alert
-- t1
-- update default setup
-- code scanning alert management
-- list secret scanning alerts
-- listSecretScanningAlertsForRepository
-- update a secret scanning alert
-- list code scanning analyses
-- update a dependabot alert
-- updateDependabotAlert
-- get a secret scanning alert
-- upload sarif analysis data
-- individual dependabot alert
-- software development
-- security
-- dependabot
-- updateSecretScanningAlert
-- list code scanning alerts
-- getDependabotAlert
-- code
-- secret scanning alert management
-- list secret scanning locations
-- update dependabot alert
-- get default setup
-- disable vulnerability alerts
-- source control
-- get a dependabot alert
-- platform
-- get a code scanning alert
-- code scanning
-- github
-- pipelines
-- get dependabot alert
-- vulnerability management
-- enable vulnerability alerts
-- secret scanning
-- update a code scanning alert (dismiss, reopen)
-- upload sarif
-- updateCodeScanningAlert
-- list dependabot secrets
-- individual code scanning alert
-- getSecretScanningAlert
-- get secret scanning alert
-- list dependabot alerts
-- get code scanning analysis
-- get code scanning default setup configuration
 - listCodeScanningAnalysesForRepository
-- update a code scanning alert
-- check vulnerability alert status
-- check vulnerability alerts
-- update a secret scanning alert (resolve, reopen)
-- enableVulnerabilityAlerts
-- getCodeScanningAlert
-- list code scanning alerts for a repository
-- list locations for a secret scanning alert
-- get code scanning alert
 - vulnerability alert settings
+- checkIfVulnerabilityAlertsAreEnabledForRepository
+- getSecretScanningAlert
+- upload sarif analysis data
+- pipelines
+- code scanning
+- update code scanning alert
+- list locations for a secret scanning alert
+- update default setup
+- source control
+- update a code scanning alert (dismiss, reopen)
+- disable vulnerability alerts
+- get a secret scanning alert
+- code scanning analyses
 - dependabot alert management
+- listSecretScanningAlertsForRepository
+- get code scanning alert
+- get dependabot alert
+- get secret scanning alert
+- check if vulnerability alerts are enabled
+- get a dependabot alert
+- check vulnerability alerts
+- platform
+- check vulnerability alert status
+- update a dependabot alert (dismiss, reopen)
+- github
+- get a code scanning alert
+- listCodeScanningAlertsForRepository
+- list dependabot alerts
+- update a secret scanning alert
+- get default setup
+- enable vulnerability alerts
+- list code scanning analyses
+- update code scanning default setup
+- get a code scanning analysis
+- update a dependabot alert
+- list code scanning alerts
+- update secret scanning alert
+- updateDependabotAlert
+- secret scanning alert management
+- code
+- dependabot
+- get code scanning default setup configuration
+- security
+- listDependabotAlertsForRepository
+- updateCodeScanningAlert
+- update a code scanning alert
+- get code scanning analysis
+- upload sarif
+- code scanning alert management
+- individual dependabot alert
+- list secret scanning alerts
+- enableVulnerabilityAlerts
+- update dependabot alert
+- secret scanning
+- getCodeScanningAlert
+- update a secret scanning alert (resolve, reopen)
+- updateSecretScanningAlert
+- software development
+- getDependabotAlert
+- individual secret scanning alert
+- vulnerability management
+- list code scanning alerts for a repository
+- individual code scanning alert
+- list dependabot secrets
+- list analyses
+- list secret scanning locations
+- t1
 slug: security-operations
 tags:
 - GitHub

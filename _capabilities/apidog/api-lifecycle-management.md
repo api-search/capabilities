@@ -17,35 +17,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- engineer automating api specification workflows via ci/cd integration.
-- collaboration
 - api design
-- developer building and managing apis using apidog's design-first platform.
-- api testing
-- mocking
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- import api specifications from various formats.
-- import a postman collection into apidog for converting to openapi-based workflows.
-- design-first
-- unified workflow for managing api specifications lifecycle.
-- import
-- Platform Engineer
-- managing the complete lifecycle of api specifications from design to deployment.
-- platform
-- export
-- import openapi
-- export openapi
-- export openapi specification from apidog project.
-- export api specifications to standard formats.
-- documentation
-- api lifecycle
-- import openapi spec
-- export openapi spec
-- import postman collection
 - apidog
-- import an openapi/swagger specification into an apidog project for design-first development.
 - import openapi specification into apidog project.
+- developer building and managing apis using apidog's design-first platform.
+- managing the complete lifecycle of api specifications from design to deployment.
+- collaboration
+- api testing
+- design-first
+- engineer automating api specification workflows via ci/cd integration.
+- import
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
 - API Developer
+- import postman collection
+- unified workflow for managing api specifications lifecycle.
+- export openapi spec
+- import openapi
+- api lifecycle
+- platform
+- export openapi
+- import openapi spec
+- import api specifications from various formats.
+- export api specifications to standard formats.
+- import a postman collection into apidog for converting to openapi-based workflows.
+- documentation
+- export
+- Platform Engineer
+- import an openapi/swagger specification into an apidog project for design-first development.
+- export openapi specification from apidog project.
+- mocking
 slug: api-lifecycle-management
 tags:
 - Apidog

@@ -9,9 +9,9 @@ provider_name: Amazon Trusted Advisor
 provider_slug: amazon-trusted-advisor
 search_terms:
 - security
-- cloud optimization
 - best practices
 - aws
+- cloud optimization
 slug: amazon-trusted-advisor-capability
 tags: []
 tools: []

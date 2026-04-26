@@ -29,39 +29,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- search merchant locations
-- search for mastercard merchant locations
 - search for atm locations
-- track merchant data
-- merchant location search
-- submit a transaction as an acquirer
-- acquirer
-- credit cards
-- search for merchant locations
-- search for merchants in the mastercard track network
-- list countries with merchant locations
-- merchant
 - financial services
-- search atm locations
-- fraud detection
-- submit acquirer transaction
-- search for merchant places with location intelligence
-- atm location search
-- search track merchants
-- list merchant countries
-- mastercard
-- search places
-- search for mastercard atm locations
-- list countries with mastercard atms
+- list countries with merchant locations
 - locations
+- search track merchants
+- credit cards
+- list atm countries
+- search for mastercard atm locations
+- search for mastercard merchant locations
 - search for merchants in track
+- search for merchants in the mastercard track network
+- search for merchant places with location intelligence
+- submit acquirer transaction
+- search places
+- merchant location search
+- search for merchant places
+- mastercard
+- acquirer
+- search merchant locations
+- search for merchant locations
+- list countries with mastercard atms
+- atm location search
+- merchant
+- places location intelligence
+- list merchant countries
+- digital identity
 - payments
 - track
-- places location intelligence
-- search for merchant places
-- digital identity
 - open banking
-- list atm countries
+- search atm locations
+- fraud detection
+- track merchant data
+- submit a transaction as an acquirer
 slug: merchant-services-and-locations
 tags:
 - Mastercard

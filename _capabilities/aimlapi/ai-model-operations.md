@@ -25,39 +25,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- ai engineer evaluating and comparing models for ml pipelines
-- list available models
-- artificial intelligence
-- machine learning
-- image generation
-- chat completions via 400+ llms
-- speech
-- create a chat completion
-- create embeddings
-- developer tools
-- create chat completion
-- list all models
-- generate vector embeddings for semantic search and rag applications
-- embeddings
-- generate an image from a text prompt using aimlapi image generation models
-- discover all 400+ available ai models on aimlapi platform
 - AI Engineer
-- generate embeddings
-- api key management and model discovery
+- generate vector embeddings for semantic search and rag applications
+- machine learning
 - create embedding
+- embeddings
+- list all models
 - ai model inference across modalities
-- Developer
-- llm
-- api gateway
-- developer integrating ai capabilities into applications via aimlapi
-- list models
-- generate an image
+- image generation
+- discover all 400+ available ai models on aimlapi platform
 - create image
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- ai models
-- generate a chat response from any of 400+ ai language models via aimlapi
 - generate image
+- speech
+- artificial intelligence
 - video generation
+- create chat completion
+- generate an image
+- api gateway
+- generate embeddings
+- generate a chat response from any of 400+ ai language models via aimlapi
+- generate an image from a text prompt using aimlapi image generation models
+- create embeddings
+- llm
+- list models
+- chat completions via 400+ llms
+- developer integrating ai capabilities into applications via aimlapi
+- list available models
+- ai models
+- api key management and model discovery
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- create a chat completion
+- Developer
+- ai engineer evaluating and comparing models for ml pipelines
+- developer tools
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

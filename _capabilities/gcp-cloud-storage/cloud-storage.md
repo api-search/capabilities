@@ -53,53 +53,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- get bucket iam policy
-- create a new storage bucket.
-- get iam policy.
-- compose multiple objects into one.
-- storage
-- individual object management.
-- list objects in a bucket.
-- list objects
-- google cloud
-- copy an object to another location.
-- update a bucket.
-- backup
-- get bucket iam policy.
-- delete object
-- list buckets
-- copy object
-- update object
-- list buckets.
-- set bucket iam policy
-- delete bucket
-- file storage
-- delete a bucket.
-- get bucket details.
-- bucket iam management.
-- get object
-- get object metadata.
-- object storage
-- compose objects
-- update bucket
-- object management.
-- delete a storage bucket.
-- data management
 - individual bucket management.
-- update object metadata.
-- cloud storage
-- list storage buckets in a project.
-- set bucket iam policy.
-- data
-- archival
-- create a bucket.
 - bucket management.
-- delete an object.
-- create bucket
-- get bucket
-- list objects.
 - set iam policy.
+- update object metadata.
+- list storage buckets in a project.
+- file storage
+- backup
+- update a bucket.
+- delete a bucket.
+- list buckets.
+- copy an object to another location.
 - blob storage
+- list buckets
+- compose multiple objects into one.
+- delete bucket
+- copy object
+- data management
+- create bucket
+- update object
+- compose objects
+- bucket iam management.
+- get bucket details.
+- get iam policy.
+- cloud storage
+- delete object
+- list objects.
+- delete an object.
+- update bucket
+- individual object management.
+- set bucket iam policy.
+- google cloud
+- get object metadata.
+- storage
+- delete a storage bucket.
+- create a new storage bucket.
+- archival
+- list objects in a bucket.
+- object management.
+- get bucket iam policy.
+- set bucket iam policy
+- list objects
+- object storage
+- get bucket iam policy
+- get object
+- create a bucket.
+- get bucket
+- data
 slug: cloud-storage
 tags:
 - Google Cloud

@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- oauth token exchange and creation.
-- get profile information about the currently authenticated user.
-- identity
 - token introspection and validation.
-- authentication
-- tokens
-- token revocation.
-- software development
-- authenticated user profile information.
-- code
-- get information about the current access token.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- get token info
-- source control
-- platform
-- initiate the device authorization grant flow for input-constrained devices.
-- gitlab
 - revoke an oauth access or refresh token.
+- initiate the oauth 2.0 authorization code flow.
+- get user info
+- authentication
+- oauth 2.0 authorization code flow initiation.
+- initiate the device authorization grant flow.
+- source control
 - authorize device
 - exchange an authorization code, device code, or refresh token for an access token.
-- initiate the oauth 2.0 authorization code flow.
-- device authorization grant flow for input-constrained devices.
-- oauth 2.0 authorization code flow initiation.
-- oauth
 - authorize oauth
-- initiate the device authorization grant flow.
-- get profile information about the authenticated user.
-- revoke an existing oauth access or refresh token.
-- exchange token
+- device authorization grant flow for input-constrained devices.
+- get profile information about the currently authenticated user.
+- tokens
+- gitlab
+- authenticated user profile information.
+- identity
+- platform
 - revoke token
-- get user info
+- revoke an existing oauth access or refresh token.
 - get information about the current oauth access token including scopes and expiration.
+- initiate the device authorization grant flow for input-constrained devices.
+- code
+- exchange token
+- get information about the current access token.
+- get profile information about the authenticated user.
+- software development
+- oauth token exchange and creation.
+- token revocation.
+- get token info
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- oauth
 slug: authentication-and-identity
 tags:
 - Gitlab

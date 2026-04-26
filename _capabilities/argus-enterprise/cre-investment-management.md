@@ -33,45 +33,45 @@ personas: []
 provider_name: ARGUS Enterprise
 provider_slug: argus-enterprise
 search_terms:
-- get property cash flow projections
-- get cash flow projections for a commercial property
-- valuation
-- portfolio management
-- cash flow modeling
-- get property details and current metrics
-- argus enterprise
-- commercial property management
-- list properties
-- list all real estate portfolios
-- investment management
-- list lease records with tenant and expiry information
-- list all leases
-- complete commercial real estate investment management workflow
-- list portfolios
-- multi-asset portfolio analytics and reporting
-- list leases
-- commercial property investment and management
-- property valuation and appraisal
-- property valuations
-- get cashflows
-- list commercial real estate properties with current status and metrics
-- get property cashflows
 - manages individual commercial real estate assets
-- oversees a portfolio of commercial real estate assets
-- altus group
-- commercial real estate
-- Portfolio Manager
-- list current and historical property valuations
-- Asset Manager
-- get detailed information about a commercial property including valuation and occupancy
-- list real estate portfolios with aggregate performance metrics
-- list all commercial properties
-- get property
 - lease management
-- asset management
+- oversees a portfolio of commercial real estate assets
+- list all leases
+- get cashflows
+- list all real estate portfolios
+- list current and historical property valuations
+- list all commercial properties
+- multi-asset portfolio analytics and reporting
 - list property valuations
+- list commercial real estate properties with current status and metrics
+- list leases
+- commercial property management
 - cash flow projections
+- list real estate portfolios with aggregate performance metrics
+- get property cash flow projections
+- argus enterprise
+- list portfolios
+- cash flow modeling
+- investment management
 - list valuations
+- commercial property investment and management
+- get property details and current metrics
+- valuation
+- get property cashflows
+- list properties
+- Portfolio Manager
+- property valuations
+- get detailed information about a commercial property including valuation and occupancy
+- Asset Manager
+- get cash flow projections for a commercial property
+- altus group
+- asset management
+- complete commercial real estate investment management workflow
+- property valuation and appraisal
+- list lease records with tenant and expiry information
+- get property
+- commercial real estate
+- portfolio management
 slug: cre-investment-management
 tags:
 - ARGUS Enterprise

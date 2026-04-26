@@ -9,14 +9,14 @@ personas: []
 provider_name: Amazon CloudFormation
 provider_slug: amazon-cloudformation
 search_terms:
+- cloudformation
+- infrastructure as code
 - aws
-- amazon cloudformation
 - DevOps Engineer
 - iac
-- infrastructure as code
-- cloudformation
-- devops
 - amazon web services
+- amazon cloudformation
+- devops
 slug: infrastructure-as-code
 tags:
 - Amazon Web Services

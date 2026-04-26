@@ -9,11 +9,11 @@ provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
 - medical imaging
-- dicom
-- aws
 - machine learning
-- healthcare
 - hipaa
+- aws
+- healthcare
+- dicom
 slug: amazon-healthimaging-medical-imaging-operations
 tags: []
 tools: []

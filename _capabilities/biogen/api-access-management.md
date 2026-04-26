@@ -9,14 +9,14 @@ provider_name: Biogen
 provider_slug: biogen
 search_terms:
 - pharmaceuticals
-- biotechnology
-- life sciences
-- api key lifecycle and access management
-- neurology
 - developer integrating with biogen pharmaceutical services apis
+- life sciences
+- neurology
 - discovery of available biogen api services
-- discover and manage access to biogen pharmaceutical apis
+- biotechnology
 - healthcare
+- api key lifecycle and access management
+- discover and manage access to biogen pharmaceutical apis
 slug: api-access-management
 tags: []
 tools: []

@@ -17,31 +17,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- search companies
-- segments and scores prospects using naics, sic, and financial data
-- business intelligence and crm enrichment workflow combining company search and test endpoints
+- firmographic data
+- business intelligence
+- test company search returning fake firmographic data.
+- Sales Representative
 - search companies test
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- sales enablement
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- Sales Representative
-- company data
-- naics
-- firmographic data retrieval and company lookup
-- test company search returning fake firmographic data.
-- appending firmographic data to crm records for sales and marketing
-- firmographic data
 - crm enrichment
-- Data Engineer
-- test search returning fake data without consuming api credits.
-- sic
-- search business entities by name, address, phone, or url.
 - crm
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- Data Engineer
 - Marketing Analyst
 - integrates bizapi into data pipelines for crm and data warehouse enrichment
-- business intelligence
+- segments and scores prospects using naics, sic, and financial data
+- company data
+- naics
 - uses firmographic data to qualify leads and enrich crm account records
+- appending firmographic data to crm records for sales and marketing
+- search business entities by name, address, phone, or url.
+- sic
+- test search returning fake data without consuming api credits.
+- business intelligence and crm enrichment workflow combining company search and test endpoints
+- firmographic data retrieval and company lookup
+- search companies
 - search for business entities and retrieve firmographic data.
+- sales enablement
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

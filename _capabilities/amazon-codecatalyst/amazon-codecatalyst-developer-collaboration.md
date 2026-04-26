@@ -9,42 +9,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- manage projects
-- create a new project
-- list projects
-- list source repositories
+- start a workflow run
+- continuous integration and deployment workflows.
+- create a source repository
+- list codecatalyst spaces
+- start workflow run
+- create a cloud dev environment
+- source control
 - collaboration
 - project management
-- manage codecatalyst spaces
-- writes code and manages repos and dev environments.
-- devops
-- developer collaboration
-- developer tools
-- start a workflow run
-- list workflows
-- source control
-- list projects in a space
-- list dev environments
-- start workflow run
-- project and workflow management for development teams.
-- team collaboration on code and projects.
-- list workflows for a project
-- create a source repository
-- ci/cd
-- continuous integration and deployment workflows.
-- amazon
-- list spaces
-- Developer
-- aws
-- manage ci/cd workflows
-- list codecatalyst spaces
-- create a cloud dev environment
-- manages ci/cd workflows and project automation.
-- DevOps Engineer
-- create project
-- create source repository
 - create dev environment
+- create project
+- aws
+- create a new project
 - list workflow runs
+- list workflows for a project
+- writes code and manages repos and dev environments.
+- list projects in a space
+- manage ci/cd workflows
+- team collaboration on code and projects.
+- developer collaboration
+- list projects
+- devops
+- list spaces
+- manage codecatalyst spaces
+- manages ci/cd workflows and project automation.
+- manage projects
+- list source repositories
+- create source repository
+- amazon
+- project and workflow management for development teams.
+- list dev environments
+- Developer
+- DevOps Engineer
+- list workflows
+- developer tools
+- ci/cd
 slug: amazon-codecatalyst-developer-collaboration
 tags:
 - Amazon

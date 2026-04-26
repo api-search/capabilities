@@ -10,8 +10,8 @@ provider_slug: amazon-vpn
 search_terms:
 - security
 - networking
-- vpn
 - aws
+- vpn
 slug: amazon-vpn-capability
 tags: []
 tools: []

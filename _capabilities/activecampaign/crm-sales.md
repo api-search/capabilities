@@ -25,45 +25,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- company account management
-- Growth Engineer
-- activecampaign
-- Email Marketer
-- builds integrations, automation workflows, and uses the api directly
-- sales
-- create a new sales deal in activecampaign crm
-- accounts
-- list all company accounts in activecampaign crm
-- Sales Representative
-- email marketing
-- Revenue Operations
 - create deal
-- list all deals
-- crm, pipeline management, and revenue operations
-- email, sms, and multi-channel marketing automation
-- cross-channel contact engagement and personalization
 - orchestrate contact journeys, campaigns, automations, and list management
-- list all sales deals in activecampaign crm
-- tracks deals, manages accounts, and uses crm features
-- create account
-- deals
-- manages email campaigns, automations, and contact segmentation
-- customer experience
-- sales automation
-- create a new deal
-- sales deal management
-- list deals
-- crm
-- manage sales pipeline, deals, accounts, and tasks
-- create a new account
-- list all accounts
-- retrieve a specific deal by id
-- marketing automation
-- list accounts
-- create a new company account in activecampaign crm
 - Marketing Manager
+- sales
+- Sales Representative
+- crm
+- list all sales deals in activecampaign crm
+- company account management
+- manages email campaigns, automations, and contact segmentation
+- create a new deal
+- Email Marketer
+- cross-channel contact engagement and personalization
+- create a new company account in activecampaign crm
+- builds integrations, automation workflows, and uses the api directly
+- create a new account
 - get deal
+- list all deals
+- email, sms, and multi-channel marketing automation
+- sales automation
+- marketing automation
+- list all accounts
+- activecampaign
+- customer experience
+- deals
+- create account
+- crm, pipeline management, and revenue operations
+- accounts
+- list deals
+- retrieve a specific deal by id
+- list accounts
 - Account Manager
+- list all company accounts in activecampaign crm
+- Growth Engineer
+- tracks deals, manages accounts, and uses crm features
+- Revenue Operations
+- sales deal management
+- create a new sales deal in activecampaign crm
+- manage sales pipeline, deals, accounts, and tasks
+- email marketing
 slug: crm-sales
 tags:
 - ActiveCampaign

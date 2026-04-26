@@ -12,12 +12,12 @@ search_terms:
 - Operations Engineer
 - cloudwatch
 - aws
+- logs
 - metrics
-- amazon cloudwatch
 - monitoring
 - observability
-- logs
 - amazon web services
+- amazon cloudwatch
 slug: observability
 tags:
 - Amazon Web Services

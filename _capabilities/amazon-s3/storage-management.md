@@ -75,90 +75,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- create a new s3 bucket
-- get public access block settings for the account
-- get an object
-- storage lens configurations
-- delete object
-- single batch operations job
-- list s3 table buckets
-- delete an s3 bucket
-- list jobs
-- get table bucket
-- create job
-- check if a bucket exists
-- upload an object to s3
-- get public access block
-- archive
-- amazon
-- list namespaces
-- aws
-- list access points
-- tables in a table bucket
-- list tables
-- data storage
-- s3 batch operations jobs
-- get bucket versioning
-- single access point
-- list tables in a namespace
-- list s3 access points
-- list batch operations jobs
-- single s3 bucket
-- list objects
-- list batch jobs
-- get versioning configuration for an s3 bucket
-- backup
-- get table
-- list buckets
-- get an access point
-- list storage lens configurations
-- copy an object within s3
-- delete bucket
-- get object
-- list all s3 buckets owned by the account
-- list s3 access points for the account
-- object storage
-- get configuration of an s3 access point
-- cloud storage
-- list storage lens configs
-- put object
-- upload an object
-- list storage lens
-- list namespaces in a table bucket
-- s3 buckets
-- copy object
-- get bucket lifecycle
-- get details of an s3 table bucket
 - s3 table buckets
-- s3
-- get encryption configuration for an s3 bucket
-- delete objects
-- scalable storage
-- list s3 storage lens configurations
-- list objects in an s3 bucket
-- get details of a batch operations job
+- describe batch job
 - describe job
 - get access point
 - create a batch operations job
-- storage management
-- create bucket
-- list all s3 buckets
-- create an s3 bucket
-- s3 access points
-- get lifecycle configuration for an s3 bucket
-- retrieve an object from s3
-- list objects in a bucket
-- delete multiple objects from an s3 bucket
-- head bucket
-- get details of a table
-- list table buckets
-- delete an object from s3
-- get bucket encryption
-- describe batch job
-- delete an object
-- objects in a bucket
-- single object
+- backup
+- list namespaces
+- scalable storage
+- single s3 bucket
+- list s3 table buckets
+- delete bucket
 - list s3 batch operations jobs
+- cloud storage
+- list storage lens configurations
+- single object
+- list objects
+- get object
+- get bucket lifecycle
+- list s3 access points
+- delete an object
+- list all s3 buckets
+- list tables in a namespace
+- create a new s3 bucket
+- create an s3 bucket
+- aws
+- list batch operations jobs
+- list objects in an s3 bucket
+- upload an object
+- list namespaces in a table bucket
+- get an object
+- get details of a table
+- create job
+- get lifecycle configuration for an s3 bucket
+- delete multiple objects from an s3 bucket
+- list all s3 buckets owned by the account
+- put object
+- upload an object to s3
+- s3
+- delete objects
+- get bucket encryption
+- list jobs
+- retrieve an object from s3
+- get table
+- list buckets
+- create bucket
+- s3 access points
+- objects in a bucket
+- get versioning configuration for an s3 bucket
+- single access point
+- tables in a table bucket
+- head bucket
+- get details of an s3 table bucket
+- get table bucket
+- storage management
+- get public access block
+- list s3 storage lens configurations
+- data storage
+- object storage
+- amazon
+- s3 batch operations jobs
+- list storage lens configs
+- check if a bucket exists
+- s3 buckets
+- delete an s3 bucket
+- get public access block settings for the account
+- list storage lens
+- get details of a batch operations job
+- get encryption configuration for an s3 bucket
+- copy object
+- get configuration of an s3 access point
+- archive
+- copy an object within s3
+- get bucket versioning
+- single batch operations job
+- storage lens configurations
+- delete object
+- list access points
+- get an access point
+- list table buckets
+- list objects in a bucket
+- list batch jobs
+- list tables
+- list s3 access points for the account
+- delete an object from s3
 slug: storage-management
 tags:
 - Amazon

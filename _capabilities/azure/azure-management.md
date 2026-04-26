@@ -14,27 +14,27 @@ provider_name: Microsoft Azure
 provider_slug: azure
 search_terms:
 - list
-- list providers
-- list resource groups
-- storage
-- list provider resources
-- platform as a service
-- networking
-- azure
-- cloud
 - machine learning
-- list all resources
-- azure resource management
-- management
-- list resources
+- list provider resources
 - databases
-- cloud computing
-- list resourcegroup resources
-- infrastructure
-- list subscriptions
-- list resource resources
 - list subscription resources
+- cloud
+- cloud computing
+- platform as a service
+- list resources
+- list all resources
+- management
+- list providers
 - resource management
+- list resource groups
+- infrastructure
+- storage
+- list resourcegroup resources
+- azure
+- azure resource management
+- networking
+- list resource resources
+- list subscriptions
 slug: azure-management
 tags:
 - Azure

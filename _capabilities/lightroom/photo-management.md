@@ -50,65 +50,65 @@ personas: []
 provider_name: Adobe Lightroom
 provider_slug: lightroom
 search_terms:
-- apply presets.
+- get a specific album.
+- adobe
 - apply ai auto straighten.
-- lightroom
-- album assets.
-- list albums.
 - get xmp develop settings.
-- delete album
-- auto straighten
-- get a specific photo asset.
-- photo assets.
-- add assets to an album.
-- metadata
-- edit an image.
-- get a rendition.
-- image editing
-- list assets
-- photo management
-- lightroom catalog.
-- list photo albums.
-- get develop xmp
-- get catalog
-- list assets in an album.
-- ai auto straighten.
-- preset application.
-- create or update an album.
-- get a rendered version of an asset.
-- upload an original master file.
-- list assets in a catalog.
-- get asset
 - get the lightroom catalog.
-- apply auto tone.
+- upload master
 - list album assets
-- ai image editing
-- apply auto straighten.
-- edit image
-- list photo assets in a catalog.
+- get the user's catalog.
 - delete an album.
+- photo assets.
+- apply ai auto tone adjustment.
+- apply presets.
+- get a rendered version of an asset.
 - auto tone
-- get album
-- image editing.
+- list assets
+- create or update an album.
+- add assets to an album.
+- apply auto tone.
+- auto straighten
+- ai auto straighten.
+- photo management
+- list albums.
 - ai auto tone.
+- metadata
+- apply lightroom presets to an image.
+- get a rendition.
+- lightroom
+- image editing
+- album assets.
+- edit image
 - get rendition
 - specific asset operations.
+- cloud storage
+- add assets to album
+- apply programmatic edits to an image.
+- get a specific photo asset.
+- upload an original master file.
+- get catalog
+- preset application.
+- get develop xmp
+- photo albums.
+- list photo albums.
+- list assets in an album.
+- asset renditions.
+- ai image editing
 - create or update album
 - get asset details.
-- add assets to album
-- cloud storage
-- photo albums.
-- get the user's catalog.
-- photography
-- asset renditions.
-- adobe
-- apply ai auto tone adjustment.
-- get a specific album.
-- apply presets
-- apply programmatic edits to an image.
+- delete album
+- image editing.
+- list photo assets in a catalog.
+- get album
+- list assets in a catalog.
+- lightroom catalog.
+- edit an image.
+- get asset
 - list albums
-- apply lightroom presets to an image.
-- upload master
+- apply auto straighten.
+- apply presets
+- photography
 slug: photo-management
 tags:
 - Adobe

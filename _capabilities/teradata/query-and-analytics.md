@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- enterprise
-- sql
-- get query status
-- execute a sql query against teradata vantage.
-- integrates applications with teradata via rest apis.
-- execute sql queries and analytics.
-- cloud
 - machine learning
-- health monitoring and issue detection.
-- execute a sql query.
-- list cross-system query summaries from querygrid.
-- database
-- list querygrid queries
-- create a query session.
-- get the status and results of a submitted query.
-- Data Engineer
-- query
-- list available vantage systems.
-- sql query execution and session management.
-- create a new query session on a vantage system.
-- Data Analyst
-- manages data fabric infrastructure and cross-system connectivity.
-- data management
-- create session
-- manage querygrid data fabric infrastructure.
-- list query systems
-- sql queries.
-- executes queries and analyzes data across vantage systems.
+- sql
 - analytics
+- manages data fabric infrastructure and cross-system connectivity.
+- database
+- execute a sql query.
+- create a new query session on a vantage system.
+- sql query execution and session management.
+- health monitoring and issue detection.
+- query
+- list query systems
+- cloud
+- list querygrid queries
+- Data Engineer
+- manage querygrid data fabric infrastructure.
 - Platform Administrator
-- administers querygrid systems, nodes, and software.
-- Application Developer
-- query sessions.
-- data warehousing
-- system and fabric configuration management.
 - execute query
-- available systems.
-- list available vantage systems for query execution.
+- data management
+- list available vantage systems.
+- get the status and results of a submitted query.
+- administers querygrid systems, nodes, and software.
+- system and fabric configuration management.
+- query sessions.
 - teradata
+- create session
+- get query status
+- data warehousing
+- sql queries.
+- enterprise
+- execute a sql query against teradata vantage.
+- available systems.
+- executes queries and analyzes data across vantage systems.
+- list available vantage systems for query execution.
+- integrates applications with teradata via rest apis.
+- Data Analyst
+- execute sql queries and analytics.
+- create a query session.
+- Application Developer
+- list cross-system query summaries from querygrid.
 slug: query-and-analytics
 tags:
 - Teradata

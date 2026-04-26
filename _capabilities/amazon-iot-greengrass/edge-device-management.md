@@ -13,34 +13,34 @@ personas: []
 provider_name: Amazon IoT Greengrass
 provider_slug: amazon-iot-greengrass
 search_terms:
-- Edge Computing Engineer
-- extend aws compute and services to edge devices.
-- list components
-- create component version
-- machine learning
 - list core devices
-- amazon iot greengrass describe component
-- manages amazon iot greengrass resources and operations
-- edge computing
-- list deployments
-- amazon iot greengrass get core device
-- amazon iot greengrass list component versions
-- amazon iot greengrass list deployments
-- IoT Developer
-- amazon iot greengrass list components
-- lambda
-- create deployment
-- device management
+- machine learning
+- list components
 - amazon iot greengrass create component version
-- amazon iot greengrass list core devices
-- aws
-- amazon iot greengrass create deployment
-- amazon iot greengrass resources
-- get core device
-- real-time processing
-- describe component
+- list deployments
+- manages amazon iot greengrass resources and operations
+- amazon iot greengrass get core device
 - list component versions
+- aws
+- real-time processing
+- edge computing
+- create component version
+- amazon iot greengrass list deployments
+- amazon iot greengrass list core devices
+- describe component
+- amazon iot greengrass list component versions
+- amazon iot greengrass list components
+- amazon iot greengrass create deployment
+- lambda
 - iot
+- device management
+- extend aws compute and services to edge devices.
+- create deployment
+- Edge Computing Engineer
+- amazon iot greengrass describe component
+- amazon iot greengrass resources
+- IoT Developer
+- get core device
 slug: edge-device-management
 tags:
 - IoT

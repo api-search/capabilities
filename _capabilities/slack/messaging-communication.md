@@ -36,45 +36,45 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- manage canvases
-- productivity
-- search messages and files.
-- list emoji
-- manage reminders.
-- collaboration
-- t1
-- list files
-- bots
-- search
-- list files.
-- search workspace.
-- list conversations
-- manage lists
+- manage channel bookmarks.
 - add reaction
-- file management.
-- post a message to a channel.
+- manage reminders
 - chat
 - list conversations.
-- list custom emoji.
+- collaboration
 - search messages
-- communication
-- message management.
-- manage canvases.
-- add pin
-- add a reaction.
-- team communication
-- messaging
-- list starred items.
-- manage reminders
-- pin a message.
-- manage channel bookmarks.
 - post message
+- message management.
 - post a message.
+- manage canvases.
+- messaging
+- list emoji
+- list conversations
+- team communication
+- search workspace.
+- list starred items.
+- productivity
+- manage reminders.
+- list stars
+- list files
 - manage bookmarks
+- search messages and files.
+- search
+- file management.
+- manage lists
+- add pin
+- manage canvases
+- list files.
+- add a reaction.
+- bots
 - conversation management.
 - slack
-- list stars
+- list custom emoji.
+- communication
 - manage lists.
+- post a message to a channel.
+- pin a message.
+- t1
 slug: messaging-communication
 tags:
 - Slack

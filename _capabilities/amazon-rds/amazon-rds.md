@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
-- amazon rds
-- aws
-- dbaas
-- list amazon rds resources
-- engineer managing amazon rds resources
 - cloud databases
-- managed databases
-- aws cloud resource management
-- cloud operations
-- list resources
-- relational databases
 - amazon rds resources
-- automation workflow for amazon rds
+- dbaas
 - database service
+- list amazon rds resources
+- relational databases
+- list resources
+- aws
+- cloud operations
+- aws cloud resource management
+- managed databases
+- amazon rds
+- engineer managing amazon rds resources
+- automation workflow for amazon rds
 slug: amazon-rds
 tags:
 - Amazon Rds

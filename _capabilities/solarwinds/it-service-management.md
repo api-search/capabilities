@@ -26,34 +26,34 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- database monitoring
-- ip address management
-- list changes
-- itsm
-- change management
-- list change requests
-- get incident
-- list assets
-- observability
-- solarwinds
-- query orion infrastructure data via swql
-- service request management
-- create a new incident
 - list service requests
-- query infrastructure
+- create incident
+- solarwinds
+- network monitoring
+- database monitoring
+- create a new incident
+- list assets
 - list hardware assets
 - it management
-- application monitoring
-- network monitoring
-- list service desk incidents
-- incident management
-- service desk
-- infrastructure
+- change management
+- service request management
 - log management
+- observability
+- application monitoring
+- get incident
+- incident management
 - list incidents
+- infrastructure
 - asset management
+- itsm
+- query infrastructure
+- query orion infrastructure data via swql
 - get incident details
-- create incident
+- service desk
+- list changes
+- list service desk incidents
+- ip address management
+- list change requests
 slug: it-service-management
 tags:
 - SolarWinds

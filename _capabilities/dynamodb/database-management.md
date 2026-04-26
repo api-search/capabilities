@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- put item
-- list backups
-- managed service
-- delete table
-- create a table.
-- batch get item
-- scan an entire table or index.
-- individual table management.
-- cloud
-- update an item.
-- item operations.
-- write items in a transaction.
-- put or delete multiple items in batch.
-- scan a table.
-- query items.
-- delete a table.
-- update table
-- key-value
-- database
-- list on-demand backups.
-- delete a dynamodb table.
-- update a table.
-- get items in a transaction.
-- create an on-demand backup.
-- nosql
-- query
 - list dynamodb tables.
-- create backup
-- create a new dynamodb table.
-- delete item
-- describe table
-- query operations.
-- transact write items
-- batch write item
-- describe a dynamodb table.
-- document store
-- serverless
-- create or replace an item.
-- scan
-- table management.
-- aws
-- get an item by primary key.
+- batch get item
 - database management
-- update item
-- create table
-- query items by primary key.
-- get multiple items from one or more tables.
-- list tables.
-- get an item.
-- delete an item.
+- get an item by primary key.
+- create or replace an item.
+- update an item.
+- batch write item
+- create an on-demand backup.
+- scan a table.
+- database
 - get item
+- query operations.
+- document store
+- list on-demand backups.
+- serverless
+- list tables.
+- describe table
+- transact write items
+- query
+- delete an item.
+- query items by primary key.
+- scan
+- create a new dynamodb table.
+- cloud
+- get items in a transaction.
+- list backups
+- aws
+- individual table management.
 - transact get items
-- describe a table.
+- scan an entire table or index.
+- delete item
+- create a table.
+- put item
+- get an item.
+- update a table.
+- create table
+- delete a dynamodb table.
+- nosql
+- table management.
+- update item
+- create backup
+- delete table
+- put or delete multiple items in batch.
+- item operations.
 - list tables
+- managed service
+- key-value
 - dynamodb
+- describe a table.
+- delete a table.
+- get multiple items from one or more tables.
+- write items in a transaction.
+- update table
+- describe a dynamodb table.
+- query items.
 slug: database-management
 tags:
 - AWS

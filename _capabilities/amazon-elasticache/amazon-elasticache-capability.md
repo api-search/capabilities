@@ -29,28 +29,28 @@ personas: []
 provider_name: Amazon ElastiCache
 provider_slug: amazon-elasticache
 search_terms:
-- in-memory
-- elasticache
-- describeReplicationGroups
-- amazon web services
 - in-memory caching service supporting redis and memcached
-- describeCacheClusters
-- database
-- caching
-- unified capability for managing amazon elasticache resources. combines amazon elasticache apis for backend developer workflows in data caching.
-- createReplicationGroup
-- developers building applications using amazon elasticache
 - redis
-- createCacheCluster
-- memcached
-- amazon elasticache describe replication groups
-- operations teams managing amazon elasticache infrastructure
-- aws
-- amazon elasticache create replication group
-- deleteCacheCluster
-- amazon elasticache create cache cluster
+- elasticache
 - amazon elasticache describe cache clusters
+- database
+- describeCacheClusters
+- caching
+- amazon elasticache describe replication groups
+- developers building applications using amazon elasticache
+- aws
+- unified capability for managing amazon elasticache resources. combines amazon elasticache apis for backend developer workflows in data caching.
+- deleteCacheCluster
+- operations teams managing amazon elasticache infrastructure
 - amazon elasticache delete cache cluster
+- createCacheCluster
+- amazon elasticache create replication group
+- amazon web services
+- in-memory
+- describeReplicationGroups
+- amazon elasticache create cache cluster
+- memcached
+- createReplicationGroup
 slug: amazon-elasticache-capability
 tags:
 - Amazon Web Services

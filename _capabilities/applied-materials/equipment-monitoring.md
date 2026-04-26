@@ -9,26 +9,26 @@ personas: []
 provider_name: Applied Materials
 provider_slug: applied-materials
 search_terms:
-- views maintenance history and upcoming scheduled maintenance for equipment
-- semiconductor
-- check equipment status
-- equipment monitoring
-- materials engineering
-- lists all semiconductor manufacturing equipment in the fab
-- checks the operational status of a specific piece of fab equipment
-- monitor fab equipment status and manage maintenance schedules
-- scheduling and recording equipment maintenance activities
-- schedule preventive maintenance
-- tracking and monitoring semiconductor manufacturing equipment
-- fab operations
-- schedules preventive maintenance for semiconductor manufacturing equipment
-- engineers overseeing semiconductor equipment operation and performance
-- manufacturing
-- view maintenance history
-- list fab equipment
-- technicians performing scheduled and emergency equipment maintenance
 - applied materials
+- manufacturing
+- engineers overseeing semiconductor equipment operation and performance
+- list fab equipment
+- tracking and monitoring semiconductor manufacturing equipment
 - equipment
+- lists all semiconductor manufacturing equipment in the fab
+- view maintenance history
+- technicians performing scheduled and emergency equipment maintenance
+- scheduling and recording equipment maintenance activities
+- schedules preventive maintenance for semiconductor manufacturing equipment
+- equipment monitoring
+- semiconductor
+- views maintenance history and upcoming scheduled maintenance for equipment
+- materials engineering
+- check equipment status
+- monitor fab equipment status and manage maintenance schedules
+- fab operations
+- schedule preventive maintenance
+- checks the operational status of a specific piece of fab equipment
 slug: equipment-monitoring
 tags:
 - Applied Materials

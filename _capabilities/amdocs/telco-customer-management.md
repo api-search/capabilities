@@ -33,44 +33,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- product and service catalog
-- list customers
 - telecom customer account management
-- list invoices
-- amdocs
-- BSS Operator
-- list service subscriptions for a customer
-- list all customer accounts
-- customer subscription management
-- oss
-- create subscription
+- bss
 - customer management
-- billing
+- oss
+- 5g
 - add a service subscription
+- browse the service catalog and available plans
+- Customer Care Agent
+- unified bss workflow for customer onboarding, billing, and service management
+- telecom
+- customer billing invoices
+- list service subscriptions for a customer
+- customer subscription management
+- mvno
+- onboard a new customer
+- list all customer accounts
+- product and service catalog
 - list products
+- manages telco bss operations and system configuration
+- saas
 - manages invoicing, payments, and revenue assurance
 - Billing Team
-- list subscriptions for a customer
-- handles customer inquiries and account management
-- list telecom customer accounts
-- customer billing invoices
-- telecom
-- unified bss workflow for customer onboarding, billing, and service management
-- onboard a new telecom customer
-- add a service subscription to a customer account
-- onboard a new customer
-- bss
-- manages telco bss operations and system configuration
-- list invoices for a customer
-- Customer Care Agent
-- mvno
-- browse the service catalog and available plans
-- list subscriptions
 - browse available products and plans
-- create customer
-- 5g
+- add a service subscription to a customer account
+- amdocs
+- BSS Operator
+- list subscriptions for a customer
+- onboard a new telecom customer
+- list invoices
+- create subscription
 - retrieve billing invoices for a customer
-- saas
+- handles customer inquiries and account management
+- create customer
+- billing
+- list telecom customer accounts
+- list invoices for a customer
+- list customers
+- list subscriptions
 slug: telco-customer-management
 tags:
 - Amdocs

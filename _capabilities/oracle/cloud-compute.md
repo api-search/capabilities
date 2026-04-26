@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- manage a specific image
-- launch a new compute instance
-- list volume attachments
-- enterprise
-- get instance details
-- create a custom image
-- list vnic attachments
-- manage compute instances
-- update instance details
-- cloud
-- manage a specific compute instance
-- delete image
-- create a custom image from an instance
 - list available compute shapes
-- list shapes
-- update instance
-- oracle
-- list images
-- update image
-- database
-- update image details
-- get image details
-- terminate an instance
-- delete a custom image
-- get details of a specific image
-- list vnic attachments in a compartment
-- list volume attachments in a compartment
-- list console connections
-- manage compute images
-- terminate instance
-- list compute instances in a compartment
-- instance action
-- launch instance
-- get instance
-- infrastructure
 - get details of a specific instance
-- perform an action on an instance (start, stop, reset)
-- list compute images
-- create image
-- compute
+- delete a custom image
+- list compute instances in a compartment
+- oracle
+- update instance
+- manage a specific compute instance
+- manage a specific image
 - list instances
+- list volume attachments
 - list instance console connections
+- database
+- instance action
+- list images
+- get instance details
+- cloud
+- manage compute images
+- create image
+- perform an action on an instance (start, stop, reset)
+- get image details
+- create a custom image from an instance
+- list volume attachments in a compartment
 - get image
+- manage compute instances
+- launch instance
 - saas
+- list vnic attachments in a compartment
+- list console connections
+- update image details
+- launch a new compute instance
+- infrastructure
+- terminate instance
+- terminate an instance
+- list compute images
+- create a custom image
+- delete image
+- enterprise
+- compute
+- list shapes
+- get details of a specific image
+- list vnic attachments
+- get instance
+- update instance details
+- update image
 slug: cloud-compute
 tags:
 - Oracle

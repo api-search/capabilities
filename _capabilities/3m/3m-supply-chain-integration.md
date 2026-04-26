@@ -33,45 +33,45 @@ personas: []
 provider_name: 3M
 provider_slug: 3m
 search_terms:
-- track deliveries
-- 3m product catalog and partner pricing.
-- searches products, compares pricing, and submits purchase orders
-- retrieves invoices and reconciles billing with purchase orders
-- get negotiated price for a specific 3m product.
-- list invoices
-- supply chain
-- purchase order management.
-- Procurement Manager
-- end-to-end supply chain workflow for procurement and billing
-- retrieve invoices for billing reconciliation.
-- invoice retrieval for billing reconciliation.
-- Accounts Payable
 - list 3m products available to the authenticated partner.
-- list products
-- submit a new purchase order for 3m products.
+- manufacturing
 - retrieve 3m invoices for accounts payable reconciliation.
 - invoice retrieval and accounts payable reconciliation
-- get product price
-- logistics
-- list 3m products available to the authenticated partner with pricing.
-- list purchase orders with status information.
-- manufacturing
-- list orders
-- purchase order submission and tracking
-- industrial
-- delivery tracking and shipment status
-- procurement
-- list purchase orders placed with 3m with status and tracking.
-- track delivery status for partner orders.
-- create order
 - 3m product discovery and pricing
-- get the partner-negotiated price for a specific 3m product.
-- delivery tracking and logistics.
-- list deliveries
+- create order
+- list purchase orders with status information.
+- purchase order submission and tracking
+- list orders
+- list purchase orders placed with 3m with status and tracking.
+- retrieves invoices and reconciles billing with purchase orders
+- purchase order management.
 - track delivery status and estimated arrival for 3m orders.
+- get the partner-negotiated price for a specific 3m product.
+- submit a new purchase order for 3m products.
 - tracks order status, monitors deliveries, and analyzes supply chain data
+- industrial
+- 3m product catalog and partner pricing.
 - Supply Chain Analyst
+- procurement
+- delivery tracking and logistics.
+- invoice retrieval for billing reconciliation.
+- list products
+- get product price
+- list 3m products available to the authenticated partner with pricing.
+- track delivery status for partner orders.
+- track deliveries
+- delivery tracking and shipment status
+- searches products, compares pricing, and submits purchase orders
 - submit a new purchase order.
+- Accounts Payable
+- list invoices
+- get negotiated price for a specific 3m product.
+- supply chain
+- logistics
+- list deliveries
+- retrieve invoices for billing reconciliation.
+- Procurement Manager
+- end-to-end supply chain workflow for procurement and billing
 slug: 3m-supply-chain-integration
 tags:
 - Manufacturing

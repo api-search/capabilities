@@ -9,24 +9,24 @@ personas: []
 provider_name: AWS X-Ray
 provider_slug: aws-x-ray
 search_terms:
-- distributed tracing
-- create a new x-ray group with a filter expression
-- list x-ray groups for filtering traces
-- create_group
-- debugging
-- aws
-- get active sampling rules controlling trace collection
-- retrieve full trace details by trace ids
-- batch_get_traces
-- get_groups
-- get summaries of x-ray traces for a time period
-- get a service graph showing service dependencies and health
 - get_service_graph
+- list x-ray groups for filtering traces
+- retrieve full trace details by trace ids
+- create a new x-ray group with a filter expression
+- create_group
+- aws
+- batch_get_traces
+- get active sampling rules controlling trace collection
+- performance
+- observability
+- get_groups
+- debugging
+- get a service graph showing service dependencies and health
+- get summaries of x-ray traces for a time period
+- distributed tracing
+- get_sampling_rules
 - microservices
 - get_trace_summaries
-- performance
-- get_sampling_rules
-- observability
 slug: distributed-tracing-workflow
 tags:
 - Observability

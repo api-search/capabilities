@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- complete an assembly.
-- enterprise
-- mfg complete assembly
-- discrete job management.
-- erp
-- mfg issue material
-- mfg get discrete job by id
-- supply chain
-- on-hand quantity management.
-- mfg get routings
-- list discrete jobs.
-- inv get inventory items
-- inv get onhand quantities
-- oracle
-- mfg get bills of material
-- get bom by id.
-- mfg get wip operations
-- get discrete job by id.
-- retrieve on-hand quantities.
-- retrieve routings.
-- retrieve deliveries.
-- bom management.
-- retrieve bills of material.
-- mfg get discrete jobs
-- retrieve wip operations.
-- inv get sales orders
-- retrieve inventory items.
+- mfg get bill of material by id
+- manufacturing
 - list boms.
 - mfg create discrete job
-- retrieve sales orders.
-- get inventory items
-- manufacturing
-- e-business suite
-- get onhand quantities
+- list discrete jobs.
 - production
-- business applications
-- issue material to a job.
-- get discrete jobs
-- inventory item management.
-- list on-hand quantities.
+- mfg get discrete job by id
+- oracle
 - list inventory items.
-- mfg get bill of material by id
-- inv get deliveries
-- get bills of material
-- retrieve discrete jobs.
+- retrieve sales orders.
+- complete an assembly.
+- retrieve on-hand quantities.
+- business applications
+- mfg issue material
 - create a discrete job.
+- inv get onhand quantities
+- bom management.
+- retrieve discrete jobs.
+- on-hand quantity management.
+- mfg get discrete jobs
+- mfg get bills of material
+- issue material to a job.
+- get bills of material
+- get onhand quantities
+- retrieve deliveries.
+- inv get sales orders
+- discrete job management.
+- retrieve routings.
+- erp
+- get bom by id.
+- get discrete job by id.
+- inv get inventory items
+- inv get deliveries
+- inventory item management.
+- retrieve inventory items.
+- e-business suite
+- mfg get wip operations
+- retrieve bills of material.
+- enterprise
+- retrieve wip operations.
+- mfg complete assembly
+- list on-hand quantities.
+- supply chain
+- mfg get routings
+- get discrete jobs
+- get inventory items
 slug: manufacturing-operations
 tags:
 - Oracle

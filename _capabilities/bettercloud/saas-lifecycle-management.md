@@ -55,65 +55,65 @@ personas:
 provider_name: BetterCloud
 provider_slug: bettercloud
 search_terms:
-- add group member
-- user discovery and management
-- enterprise
-- user onboarding and offboarding across saas applications
-- list all groups
-- create a group
-- automation
-- it operations
-- user lifecycle
-- compliance
-- update user attributes like department or title
-- update user
-- create group
-- list users across all connected saas applications
-- security
-- get user
-- list workflows
-- saas application connectivity
-- list events
-- add a user to a group
-- trigger workflow execution
-- group management
-- individual user operations
-- run a workflow
-- suspend a departing or at-risk user across all saas apps
-- fully deprovision a user removing all saas application access
-- offboarding
-- security engineer
-- bettercloud
-- run workflow
-- get full details for a specific user including saas access
-- workflow automation for it operations
-- list users
-- update user attributes
-- list all automation workflows
-- list all users
-- automation workflow management
-- it administrator
-- suspend user
+- list all workflows
 - it admin managing saas access and user lifecycle
-- saas management
-- list all connected saas application integrations
+- automation
+- list groups
+- user onboarding and offboarding across saas applications
+- deprovision user
+- list users across all connected saas applications
+- suspend user
+- onboarding, management, and offboarding of users across saas
+- user lifecycle
+- suspend a user
 - security team member managing compliance and access policies
 - audit event log
-- get user details
-- suspend a user
-- list audit events
+- run workflow
 - deprovision a user
-- list groups
-- list all workflows
-- trigger a workflow for a set of users (e.g., offboarding)
+- workflows
+- get full details for a specific user including saas access
+- list audit events
+- suspend a departing or at-risk user across all saas apps
+- list users
 - list audit events for compliance investigation
 - list integrations
-- onboarding
+- individual user operations
+- list all groups
+- it operations
+- create a group
 - audit trails and policy enforcement
+- group management
+- trigger workflow execution
+- saas application connectivity
+- list all users
+- enterprise
+- get user details
+- offboarding
+- security
+- security engineer
+- run a workflow
+- list all connected saas application integrations
+- update user attributes
+- bettercloud
+- list events
+- list all automation workflows
+- automation workflow management
+- user discovery and management
+- update user attributes like department or title
+- fully deprovision a user removing all saas application access
+- trigger a workflow for a set of users (e.g., offboarding)
+- saas management
+- add a user to a group
+- add group member
+- workflow automation for it operations
+- compliance
+- get user
+- update user
+- list workflows
 - list all groups from connected directory services
-- workflows
-- onboarding, management, and offboarding of users across saas
-- deprovision user
+- it administrator
+- create group
+- onboarding
 slug: saas-lifecycle-management
 tags:
 - BetterCloud

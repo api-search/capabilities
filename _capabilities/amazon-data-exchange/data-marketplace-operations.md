@@ -9,11 +9,11 @@ provider_name: Amazon Data Exchange
 provider_slug: amazon-data-exchange
 search_terms:
 - aws
-- data exchange
-- analytics
 - third-party data
 - data marketplace
+- analytics
 - subscriptions
+- data exchange
 slug: data-marketplace-operations
 tags: []
 tools: []

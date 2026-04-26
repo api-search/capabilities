@@ -29,45 +29,45 @@ personas: []
 provider_name: Akamai API Security
 provider_slug: akamai-api-security
 search_terms:
-- list configurations
+- get api discovery
+- api posture assessment and vulnerability management
+- monitors api discovery, threat detection, and posture findings
+- real-time api threat detection and blocking
 - runtime protection
-- API Security Analyst
-- manages api security configurations and activations
-- list policies
-- list all api security configurations
-- Security Engineer
-- cloud security
-- api discovery
-- akamai
 - api inventory and discovery
 - discover apis
-- list configuration activations
-- create configuration
 - security policy management
-- api security configuration and policy management
+- list configurations
 - check activation status
-- list security configurations
-- create a new api security configuration
-- list and check status of security configuration activations
-- create security configuration
-- configuration activations
-- posture management
-- get api inventory including shadow and zombie api findings
-- monitors api discovery, threat detection, and posture findings
-- security automation
-- create a new akamai api security configuration
-- real-time api threat detection and blocking
-- api posture assessment and vulnerability management
-- threat protection
-- list security policies
-- list all akamai api security configurations
-- get api discovery results
-- manage api security configurations and posture
-- api security
-- api security configuration management
-- list security policies within a configuration
-- get api discovery
+- list all api security configurations
 - list activations
+- Security Engineer
+- cloud security
+- create a new api security configuration
+- api discovery
+- list security configurations
+- create configuration
+- akamai
+- get api inventory including shadow and zombie api findings
+- list and check status of security configuration activations
+- list security policies
+- api security
+- create a new akamai api security configuration
+- create security configuration
+- manage api security configurations and posture
+- manages api security configurations and activations
+- posture management
+- list security policies within a configuration
+- api security configuration management
+- API Security Analyst
+- api security configuration and policy management
+- list all akamai api security configurations
+- security automation
+- list configuration activations
+- configuration activations
+- list policies
+- get api discovery results
+- threat protection
 slug: api-security-management
 tags:
 - Akamai

@@ -29,50 +29,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- invoke an action
-- list all trigger-to-action rules
-- get activation
-- builds event-driven applications using serverless functions
+- event driven
 - list all serverless functions/actions
+- list activation history
+- invoke a serverless action/function
 - create action
-- create a new serverless action
+- functions as a service
+- serverless
 - action packages
-- list packages
+- delete action
+- list all trigger-to-action rules
+- list all actions
+- apache openwhisk
+- serverless function actions
+- get activation
+- event-driven
+- invoke an action
+- builds event-driven applications using serverless functions
+- event-driven architecture
+- apache
+- list activations
+- Platform Administrator
+- faas
+- delete a serverless action
 - get details of a specific activation
 - activation history
-- fire an event trigger
-- Backend Developer
-- open source
-- cloud native
-- event triggers
-- invoke a serverless action/function
-- apache openwhisk
-- list actions
-- apache
-- event-driven architecture
-- event driven
-- list triggers
-- list all event triggers
-- delete action
-- invoke action
-- serverless
-- list activation history
-- event-driven
-- list all actions
-- manages namespaces, limits, and platform configuration
-- list rules
-- manages serverless deployments and ci/cd pipelines
-- serverless computing
 - functions
-- Platform Administrator
+- event triggers
+- list actions
 - fire trigger
-- functions as a service
-- delete a serverless action
-- DevOps Engineer
-- faas
+- serverless computing
+- list triggers
+- list packages
 - list all action packages
-- list activations
-- serverless function actions
+- list rules
+- manages namespaces, limits, and platform configuration
+- fire an event trigger
+- DevOps Engineer
+- list all event triggers
+- Backend Developer
+- invoke action
+- create a new serverless action
+- open source
+- manages serverless deployments and ci/cd pipelines
+- cloud native
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

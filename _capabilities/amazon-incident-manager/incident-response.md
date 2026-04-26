@@ -21,36 +21,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- get details of a specific incident
-- automation
-- manage active incidents
-- list timeline events for an incident
-- get incident
-- devops
-- update the summary or status of an active incident
-- operations
-- update incident
-- list all incident response plans
-- list all response plans
-- start a new incident and trigger response plan
-- create a new incident
-- list active incidents
-- manage incident response plans
-- create response plan
-- Operations Engineer
-- create a new incident response plan with escalation contacts
-- list timeline events
-- monitors system reliability and coordinates incident resolution
-- list active and recent incidents
-- automated incident response plans and escalation
-- creating, tracking, and resolving operational incidents
-- incident management
-- list response plans
-- aws
-- list incidents
-- Site Reliability Engineer
-- manages incident response plans and responds to operational incidents
 - create incident
+- create a new incident response plan with escalation contacts
+- automated incident response plans and escalation
+- get details of a specific incident
+- list timeline events for an incident
+- create a new incident
+- list timeline events
+- list active incidents
+- manages incident response plans and responds to operational incidents
+- Site Reliability Engineer
+- aws
+- creating, tracking, and resolving operational incidents
+- operations
+- manage incident response plans
+- list all incident response plans
+- get incident
+- list response plans
+- update the summary or status of an active incident
+- incident management
+- list incidents
+- update incident
+- devops
+- list all response plans
+- list active and recent incidents
+- Operations Engineer
+- monitors system reliability and coordinates incident resolution
+- create response plan
+- start a new incident and trigger response plan
+- manage active incidents
+- automation
 slug: incident-response
 tags:
 - AWS

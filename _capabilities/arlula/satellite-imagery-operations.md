@@ -8,10 +8,10 @@ personas: []
 provider_name: Arlula
 provider_slug: arlula
 search_terms:
-- earth observation
 - geospatial
-- remote sensing
+- earth observation
 - imagery
+- remote sensing
 - satellites
 slug: satellite-imagery-operations
 tags: []

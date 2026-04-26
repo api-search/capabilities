@@ -25,57 +25,57 @@ personas: []
 provider_name: Amazon SQS
 provider_slug: amazon-sqs
 search_terms:
-- message operations
-- start message move task
-- list dead-letter queue source queues
 - queue management
-- purge queue
-- change message visibility
-- cloud
 - send up to 10 messages in a batch
-- list all sqs queues
-- create a new sqs queue
-- microservices
-- list queue tags
-- create queue
-- send a message to a queue
+- dead-letter queue management
 - get attributes for a queue
-- set queue attributes
-- list dlq sources
-- delete all messages in a queue
-- delete an sqs queue
-- delete up to 10 messages in a batch
-- create a new standard or fifo queue
-- list queues
-- list queues that feed a dead-letter queue
-- receive messages from a queue
-- delete message batch
-- change the visibility timeout of a message
-- queue
-- set attributes for a queue
-- messaging
-- get queue url
-- add a permission to a queue
-- amazon
-- start moving messages from a dead-letter queue
-- remove permission
+- remove a permission from a queue
+- distributed systems
 - delete a message from a queue
-- add tags to a queue
-- list dead letter source queues
-- delete message
-- tag queue
-- send message batch
-- add permission
+- purge queue
+- start message move task
+- remove permission
+- list all sqs queues
+- change message visibility
+- start moving messages from a dead-letter queue
+- list dead-letter queue source queues
+- delete an sqs queue
+- cloud
+- get the url of a queue by name
+- get queue attributes
+- set queue attributes
 - send message
+- delete all messages in a queue
 - receive message
 - aws
-- list tags for a queue
-- remove a permission from a queue
+- message operations
 - delete queue
-- distributed systems
-- dead-letter queue management
-- get queue attributes
-- get the url of a queue by name
+- list dlq sources
+- messaging
+- send a message to a queue
+- change the visibility timeout of a message
+- list queues
+- list dead letter source queues
+- list tags for a queue
+- receive messages from a queue
+- delete message
+- delete message batch
+- queue
+- create queue
+- tag queue
+- set attributes for a queue
+- add tags to a queue
+- delete up to 10 messages in a batch
+- list queues that feed a dead-letter queue
+- list queue tags
+- amazon
+- create a new standard or fifo queue
+- send message batch
+- create a new sqs queue
+- add a permission to a queue
+- add permission
+- get queue url
+- microservices
 slug: message-queuing
 tags:
 - Amazon

@@ -33,47 +33,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- append values
-- productivity
-- read values from a spreadsheet range
-- cell value read and write operations
-- automation
-- google workspace
+- get spreadsheet
+- batch update spreadsheet
+- clear values
+- create spreadsheet
 - create a new google sheets spreadsheet
-- apply batch updates to a spreadsheet
-- update values
-- read values from a range
-- spreadsheets
+- clear values from a spreadsheet range
+- create a new spreadsheet
+- write values to a range
+- read values from a spreadsheet range
+- google sheets
+- cell value read and write operations
+- get values
+- data management
+- copy sheet
+- clear values from multiple ranges
 - batch update values
+- search developer metadata matching filters
+- update values
+- copy a sheet to another spreadsheet
+- append values to a range
+- clear values from a range
+- batch get values
+- spreadsheet lifecycle operations
+- read values from a range
+- append values
+- google workspace
+- productivity
+- get developer metadata by id
+- get spreadsheet details by id
+- single spreadsheet operations
+- batch clear values
 - get developer metadata
 - write values to a spreadsheet range
-- create spreadsheet
-- google sheets
-- get spreadsheet
-- write values to multiple ranges at once
-- write values to a range
 - search developer metadata
-- search developer metadata matching filters
-- append values to a range
-- single spreadsheet operations
-- create a new spreadsheet
-- batch get values
-- get developer metadata by id
-- spreadsheet lifecycle operations
-- read values from multiple ranges at once
-- data management
-- clear values from a spreadsheet range
-- copy a sheet to another spreadsheet
-- batch update spreadsheet
-- clear values from a range
-- clear values from multiple ranges
-- get spreadsheet details by id
-- get values
-- batch clear values
-- clear values
+- write values to multiple ranges at once
+- apply batch updates to a spreadsheet
 - get spreadsheet details
+- spreadsheets
 - append rows of data to a spreadsheet
-- copy sheet
+- read values from multiple ranges at once
+- automation
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

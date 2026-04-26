@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process payment
 - generate qr code
-- get payment
-- checkout session management
+- payment processing
 - create a unified checkout session
-- credit cards
-- process a payment through the mastercard gateway
-- create installment plan
-- merchant
-- financial services
 - create unified session
+- financial services
+- checkout
+- credit cards
+- create checkout session
+- process payment
+- process a cloud commerce transaction
+- qr code payment acceptance
 - retrieve payment transaction details
 - buy-now-pay-later installment plans
-- create a new checkout session for a merchant
-- create an installment plan
-- create a unified checkout session supporting multiple payment methods
-- fraud detection
-- create checkout session
-- register contactless reader
-- mastercard
-- qr code payment acceptance
-- create a buy-now-pay-later installment plan
-- generate a merchant qr code for payment
-- process a payment through the gateway
-- register a contactless reader device
-- payment processing
-- get payment details
 - e-commerce
-- payments
-- process cloud transaction
+- mastercard
+- register a contactless reader device
+- process a payment through the gateway
+- create installment plan
+- checkout session management
+- get payment
+- process a payment through the mastercard gateway
+- generate a merchant-presented qr code for payment
 - create a new checkout session
-- process a cloud commerce transaction
+- create a new checkout session for a merchant
+- merchant
+- create a unified checkout session supporting multiple payment methods
 - digital identity
+- payments
+- generate a merchant qr code for payment
 - open banking
 - unified checkout sessions
-- generate a merchant-presented qr code for payment
-- checkout
+- create an installment plan
+- register contactless reader
+- fraud detection
+- get payment details
+- process cloud transaction
+- create a buy-now-pay-later installment plan
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

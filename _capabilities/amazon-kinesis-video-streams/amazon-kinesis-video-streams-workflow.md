@@ -9,30 +9,30 @@ personas: []
 provider_name: Amazon Kinesis Video Streams
 provider_slug: amazon-kinesis-video-streams
 search_terms:
-- Administrator
 - channels describe signaling channel
-- video streaming
-- unified workflow for amazon kinesis video streams resource management
-- media
-- amazon kinesis video streams
-- returns an array of streaminfo objects.
-- machine learning
-- manages resources and configurations
-- integrates api into applications
-- streams list streams
-- streams create stream
-- returns the most current information about the signaling channel.
-- creates a signaling channel.
-- returns an array of channelinfo objects.
-- creates a new kinesis video stream.
-- workflow
-- returns the most current information about the specified stream.
-- Developer
-- aws
-- channels create signaling channel
 - channels list signaling channels
+- machine learning
+- returns the most current information about the specified stream.
+- returns an array of channelinfo objects.
+- unified workflow for amazon kinesis video streams resource management
+- streams list streams
+- aws
+- creates a signaling channel.
+- video streaming
+- Administrator
+- integrates api into applications
+- manages resources and configurations
 - streams describe stream
+- streams create stream
+- channels create signaling channel
+- creates a new kinesis video stream.
 - iot
+- workflow
+- returns an array of streaminfo objects.
+- returns the most current information about the signaling channel.
+- amazon kinesis video streams
+- Developer
+- media
 slug: amazon-kinesis-video-streams-workflow
 tags:
 - Amazon Kinesis Video Streams

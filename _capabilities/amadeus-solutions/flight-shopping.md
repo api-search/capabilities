@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
+- shopping
+- search available flights by origin, destination, and date.
+- travel
+- confirm current price and availability.
+- confirm flight price
+- Travel Chatbot Developer
 - complete flight shopping flow from search through price confirmation.
+- search flights advanced
+- search for available flight offers.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- flights
+- airlines
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- pricing
+- developer building online travel agency flight search and booking flows.
+- confirm pricing for a selected flight offer.
+- booking
 - developer building conversational travel assistants for flight search.
+- hotels
+- search flights
+- amadeus
+- search
+- OTA Developer
 - confirm the current price and availability of a selected flight offer before creating a booking.
+- travel technology
+- price confirmation and validation before booking.
 - confirm price
 - upsell, seat selection, and add-on services.
-- search
-- search for available flight offers.
-- Travel Chatbot Developer
-- airlines
-- shopping
-- price confirmation and validation before booking.
-- booking
-- search flights
-- developer building online travel agency flight search and booking flows.
-- travel
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- flights
-- confirm pricing for a selected flight offer.
-- pricing
-- amadeus
-- confirm current price and availability.
-- OTA Developer
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- search flights advanced
 - gds
-- search available flights by origin, destination, and date.
-- hotels
 - flight offer discovery and comparison.
-- confirm flight price
-- travel technology
 slug: flight-shopping
 tags:
 - Amadeus

@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- report suite discovery for data collection targeting.
-- validate event files.
-- list available metrics to validate event data mapping.
-- list report suites to identify data collection targets.
-- list metrics
-- events
-- upload events
-- get report suite
-- list metrics to validate event data mapping.
-- server side
-- marketing
-- metric discovery for event mapping.
-- dimension discovery for event mapping.
-- validate events
 - report suite details.
-- list report suites
-- upload a batch events file.
-- data collection
-- validate a batch events file without ingesting.
+- adobe
+- list available metrics to validate event data mapping.
 - get details for a report suite to verify collection configuration.
-- web analytics
-- digital marketing
-- get report suite details.
-- bulk data insertion
+- list metrics
+- list report suites to identify data collection targets.
+- metric discovery for event mapping.
 - business intelligence
 - analytics
-- adobe
+- validate a batch events file without ingesting data.
+- dimension discovery for event mapping.
+- list report suites
+- upload a batch events file.
+- list metrics to validate event data mapping.
+- get report suite details.
 - list dimensions
+- events
+- adobe analytics
+- bulk data insertion
+- report suite discovery for data collection targeting.
+- digital marketing
+- list dimensions to validate event data mapping.
+- data collection
+- validate events
+- marketing
+- validate a batch events file without ingesting.
+- batch event upload.
 - customer intelligence
 - upload a gzip-compressed csv file of batched analytics event data.
-- adobe analytics
-- batch event upload.
+- get report suite
+- validate event files.
 - list report suites to identify collection targets.
-- validate a batch events file without ingesting data.
+- server side
+- upload events
+- web analytics
 - list available dimensions to validate event data mapping.
-- list dimensions to validate event data mapping.
 slug: data-collection
 tags:
 - Adobe Analytics

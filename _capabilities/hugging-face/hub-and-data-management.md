@@ -46,76 +46,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- get model details
-- list and search datasets on the hub.
-- get space
-- create a new model, dataset, or space repository on the hub.
-- list datasets
-- update repo settings
-- get detailed information about a specific dataset.
-- search for rows matching a query in a dataset.
-- get dataset size
-- search dataset
-- list and search datasets
-- filter dataset
-- create repo
-- get parquet file urls for a dataset.
-- get dataset splits
-- check dataset validity
-- get model
-- get croissant metadata
-- manage datasets on the hub
-- list model tags
-- get dataset details
 - get the first rows of a dataset split for preview.
-- get the list of splits for a dataset.
-- get model information
+- get space
+- list datasets
+- list and search ml models on the hugging face hub.
+- list dataset tags
+- get dataset splits
 - get dataset rows
-- search dataset rows
-- manage models on the hub
-- create repositories
-- check if a dataset is valid and available on the hub.
-- get rows from a dataset
-- user information
-- list and search spaces
-- get model information at a specific revision or branch.
-- get size information for a dataset.
 - create a new repository
-- delete repo
-- list all available dataset tags grouped by type.
-- get authenticated user info
-- get rows from a dataset split with pagination.
-- update settings for a repository.
-- models
-- preview dataset rows
-- get model revision
-- hub
-- get detailed information about a specific space.
 - whoami
+- manage spaces on the hub
+- search dataset rows
+- get dataset details
+- delete repo
+- check if a dataset is valid and available on the hub.
+- manage datasets on the hub
+- get model
+- get parquet file urls for a dataset.
+- get model information at a specific revision or branch.
+- get rows from a dataset
+- get statistical information about a dataset split.
+- search rows in a dataset
+- get model information
+- datasets
+- manage models on the hub
+- get rows
+- create repo
+- get the list of splits for a dataset.
 - list and search spaces on the hub.
 - data management
-- get information about the authenticated user.
-- list dataset tags
-- get statistical information about a dataset split.
-- get dataset information
-- list and search models
-- datasets
-- list spaces
-- list and search ml models on the hugging face hub.
-- filter dataset rows using a condition.
-- delete a repository from the hub.
-- get rows
-- get dataset
-- manage spaces on the hub
-- get detailed information about a specific model.
-- get dataset statistics
-- list models
-- get croissant metadata for a dataset.
-- search rows in a dataset
-- hugging face
-- get dataset parquet
-- list all available model tags grouped by type.
+- get detailed information about a specific dataset.
+- filter dataset
 - search rows
+- get dataset information
+- list model tags
+- user information
+- update repo settings
+- check dataset validity
+- get detailed information about a specific space.
+- get dataset size
+- list all available dataset tags grouped by type.
+- filter dataset rows using a condition.
+- get information about the authenticated user.
+- get size information for a dataset.
+- get model revision
+- get croissant metadata
+- list and search datasets
+- delete a repository from the hub.
+- get dataset
+- list models
+- get dataset statistics
+- models
+- get detailed information about a specific model.
+- list spaces
+- search dataset
+- create a new model, dataset, or space repository on the hub.
+- get authenticated user info
+- get dataset parquet
+- get rows from a dataset split with pagination.
+- list and search spaces
+- preview dataset rows
+- list and search datasets on the hub.
+- hugging face
+- get croissant metadata for a dataset.
+- create repositories
+- hub
+- update settings for a repository.
+- search for rows matching a query in a dataset.
+- list and search models
+- list all available model tags grouped by type.
+- get model details
 slug: hub-and-data-management
 tags:
 - Hugging Face

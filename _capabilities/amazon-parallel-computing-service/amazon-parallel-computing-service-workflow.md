@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon Parallel Computing Service
 provider_slug: amazon-parallel-computing-service
 search_terms:
-- Developer
-- list and manage openapi.yml resources
-- core api workflow
-- high performance computing
-- primary amazon parallel computing service resources
-- hpc
-- parallel computing
-- aws
 - list amazon parallel computing service resources
+- core api workflow
+- list and manage openapi.yml resources
 - developer using amazon parallel computing service apis
 - list openapi.yml
 - list resources
-- scientific computing
+- aws
+- high performance computing
 - amazon parallel computing service
+- scientific computing
+- Developer
+- parallel computing
+- hpc
+- primary amazon parallel computing service resources
 slug: amazon-parallel-computing-service-workflow
 tags:
 - Amazon Parallel Computing Service

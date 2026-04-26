@@ -53,56 +53,56 @@ personas: []
 provider_name: Zoom
 provider_slug: zoom
 search_terms:
-- list participants of a live or past meeting.
-- meeting lifecycle management.
-- update meeting details.
-- update a meeting.
+- get recordings for a meeting.
+- list all meetings for a user.
+- individual meeting operations.
 - get meeting
-- collaboration
-- webinars
+- list registrants
+- delete recordings
 - list all polls for a meeting.
+- get recordings
+- communications
+- add a registrant to a meeting.
+- meeting lifecycle management.
+- create a new meeting for a user.
+- chat
+- collaboration
+- list polls for a meeting.
+- delete a meeting permanently.
+- get all recordings for a meeting.
+- list meetings
 - video conferencing
 - create poll
 - meeting recording management.
-- delete a meeting.
-- add a registrant to a meeting.
-- list all meetings for a user.
-- create meeting
-- update a meeting's live stream configuration.
-- delete meeting
-- chat
-- update meeting
-- list all meetings scheduled for a user.
-- list registrants
-- list polls
 - add registrant
-- meeting poll management.
-- delete recordings
-- retrieve details of a specific meeting.
-- delete a meeting permanently.
-- list registrants for a meeting.
-- communications
-- get meeting details.
-- zoom
-- videos
-- get recordings
-- delete recordings for a meeting.
-- get all recordings for a meeting.
-- meeting registration management.
-- get recordings for a meeting.
-- delete all recordings for a meeting.
-- get details of a past meeting.
 - update livestream
-- get past meeting details
-- list polls for a meeting.
-- create a new meeting for a user.
+- videos
+- delete meeting
+- meeting registration management.
+- zoom
 - list participants
-- create a poll for a meeting.
-- list all registrants for a meeting.
-- list meetings
-- individual meeting operations.
 - meetings
 - create a new meeting.
+- create a poll for a meeting.
+- webinars
+- list all meetings scheduled for a user.
+- get details of a past meeting.
+- update meeting
+- create meeting
+- delete a meeting.
+- list polls
+- update a meeting's live stream configuration.
+- get past meeting details
+- list all registrants for a meeting.
+- get meeting details.
+- meeting poll management.
+- retrieve details of a specific meeting.
+- delete all recordings for a meeting.
+- list registrants for a meeting.
+- update meeting details.
+- delete recordings for a meeting.
+- update a meeting.
+- list participants of a live or past meeting.
 slug: meeting-management
 tags:
 - Zoom

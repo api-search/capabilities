@@ -45,55 +45,55 @@ personas: []
 provider_name: Amazon CodeStar
 provider_slug: amazon-codestar
 search_terms:
-- create a new aws codestar project.
-- delete project
-- add an iam user to an aws codestar project team with a role.
-- team collaboration
-- list projects
-- list all user profiles.
-- delete an aws codestar project and its resources.
-- list all aws codestar user profiles.
-- add tags to an aws codestar project for organization.
-- project management
-- list tags
-- create and manage codestar projects, team members, and user profiles.
-- devops
-- create a user profile.
-- get details of a specific aws codestar project.
-- manages user profiles and project-level access controls.
-- developer tools
-- describe project
-- list all team members and their roles in a codestar project.
-- create a new aws codestar development project with ci/cd toolchain.
-- list team members
-- list resources
-- update attributes of an aws codestar project.
-- creates and manages codestar projects and team membership.
-- update project
-- add an iam user to the project team.
-- delete a codestar project.
-- manage tags on a project.
-- amazon
-- list all aws codestar projects.
-- list aws resources associated with a codestar project.
-- manage team members for a project.
-- list all team members in a project.
-- create user profile
-- aws
 - list tags for a codestar project.
-- Platform Administrator
-- get and update individual codestar project.
+- list all user profiles.
+- describe project
+- manage team members for a project.
+- delete a codestar project.
+- tag project
+- describe a specific codestar project.
+- update attributes of an aws codestar project.
+- delete an aws codestar project and its resources.
+- add an iam user to the project team.
+- project management
+- update project
+- manage tags on a project.
+- add tags to an aws codestar project for organization.
 - create project
 - list all aws codestar projects in the account.
-- remove an iam user from an aws codestar project team.
-- manage codestar user profiles.
-- disassociate team member
-- manage codestar projects.
-- describe a specific codestar project.
-- create a user profile for aws codestar.
+- aws
+- list all aws codestar projects.
 - associate team member
+- list aws resources associated with a codestar project.
+- list resources
+- creates and manages codestar projects and team membership.
+- Platform Administrator
+- create user profile
+- create a user profile for aws codestar.
+- create and manage codestar projects, team members, and user profiles.
+- team collaboration
+- manage codestar projects.
+- manage codestar user profiles.
+- list all aws codestar user profiles.
+- list all team members and their roles in a codestar project.
+- disassociate team member
+- list projects
+- devops
+- add an iam user to an aws codestar project team with a role.
+- get and update individual codestar project.
+- create a new aws codestar development project with ci/cd toolchain.
+- remove an iam user from an aws codestar project team.
 - Development Team Lead
-- tag project
+- create a user profile.
+- list team members
+- amazon
+- create a new aws codestar project.
+- list tags
+- manages user profiles and project-level access controls.
+- developer tools
+- get details of a specific aws codestar project.
+- list all team members in a project.
+- delete project
 - list user profiles
 slug: project-management
 tags:
