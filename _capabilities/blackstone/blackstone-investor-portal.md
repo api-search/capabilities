@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Blackstone
 provider_slug: blackstone
 search_terms:
-- investment management
-- private equity
-- finance
 - real estate
+- investment management
 - alternative assets
+- finance
+- private equity
 slug: blackstone-investor-portal
 tags: []
 tools: []

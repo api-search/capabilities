@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - call-control
 - reporting
@@ -44,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- get call server health
-- vxml
-- list active sessions
 - vxml session monitoring
-- application management
-- get call
-- contact center
-- list managed cvp devices
-- list call detail records
-- get statistics
-- get health
-- ivr
-- cisco
-- list active vxml sessions
-- list deployed cvp applications
-- individual call details
-- real-time statistics
-- check cvp call server health status
-- list configured dialed number patterns
-- list deployed vxml applications
+- list active sessions
+- list active calls
 - get call details
-- call detail records
-- system health
-- voice portal
+- real-time statistics
+- get health
+- list deployed vxml applications
 - get details of a specific active call
+- contact center
+- system health
+- individual call details
+- voice portal
+- list managed cvp devices
+- telephony
 - voice
+- check cvp call server health status
+- list active vxml sessions
+- list managed devices
+- list all active calls on the cvp call server
+- list deployed applications
+- ivr
+- list call detail records from the reporting server
+- get statistics
+- list devices
+- get call
+- list deployed cvp applications
+- cisco
+- active call management
+- call detail records
+- list cdrs
+- list applications
+- get call server health
+- application management
+- device management
+- list sessions
 - list vxml applications
 - get real-time call statistics
-- list managed devices
-- list cdrs
-- list devices
-- device management
-- list call detail records from the reporting server
-- list sessions
-- list all active calls on the cvp call server
 - list dialed number patterns
-- list applications
-- telephony
-- list deployed applications
-- list active calls
-- active call management
+- list configured dialed number patterns
+- vxml
+- list call detail records
 slug: contact-center-operations
 tags:
 - Cisco

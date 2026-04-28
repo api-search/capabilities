@@ -1,4 +1,6 @@
 ---
+categories:
+- recruiting-ats
 consumed_apis:
 - indeed
 description: Unified workflow for managing the hiring pipeline including employer setup, job posting, candidate retrieval, and disposition tracking. Used by ATS partners and hiring platform developers.
@@ -33,48 +35,48 @@ personas: []
 provider_name: Indeed
 provider_slug: indeed
 search_terms:
-- update employer details.
-- candidate management.
+- get candidate details.
+- update disposition
+- register candidate sync
+- list job postings.
+- register employer for candidate sync.
+- employment
+- update employer
+- careers
+- get employer details.
+- indeed
+- create employer
+- job search
+- get candidate
+- job postings
+- expire job posting
+- update a job posting.
+- list employer jobs
+- create job
+- list candidates for an employer.
+- update job posting
 - get job posting details.
+- employer management.
+- update candidate disposition status.
+- recruiting
+- talent acquisition
+- create an employer entity.
+- create an employer entity on indeed.
+- get employer
+- job posting management.
+- individual employer management.
+- hiring
+- candidate management.
+- create a job posting on indeed.
+- create job posting
+- list job postings for an employer.
+- list candidates
 - list jobs
 - expire a job posting.
 - jobs
-- employment
-- list candidates
-- get employer
-- create job posting
-- job search
-- update employer
-- list candidates for an employer.
-- list job postings.
-- create employer
-- list job postings for an employer.
-- list employer jobs
-- careers
-- register candidate sync
-- get candidate
-- create an employer entity on indeed.
-- update a job posting.
-- indeed
-- create a job posting.
-- create job
-- create a job posting on indeed.
-- expire job posting
-- talent acquisition
-- get candidate details.
-- update candidate disposition status.
-- employer management.
-- update job posting
-- create an employer entity.
 - get job posting
-- individual employer management.
-- hiring
-- job postings
-- job posting management.
-- update disposition
-- recruiting
-- register employer for candidate sync.
-- get employer details.
+- create a job posting.
+- update employer details.
 slug: talent-acquisition
 tags:
 - Indeed

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amat
 description: Workflow capability for monitoring and maintaining semiconductor manufacturing equipment from Applied Materials. Supports fab operations teams tracking equipment status and scheduling preventive maintenance.
@@ -9,26 +10,26 @@ personas: []
 provider_name: Applied Materials
 provider_slug: applied-materials
 search_terms:
-- applied materials
-- manufacturing
-- engineers overseeing semiconductor equipment operation and performance
+- equipment monitoring
+- checks the operational status of a specific piece of fab equipment
+- semiconductor
 - list fab equipment
+- views maintenance history and upcoming scheduled maintenance for equipment
+- engineers overseeing semiconductor equipment operation and performance
+- applied materials
+- schedule preventive maintenance
+- fab operations
+- monitor fab equipment status and manage maintenance schedules
 - tracking and monitoring semiconductor manufacturing equipment
-- equipment
+- manufacturing
 - lists all semiconductor manufacturing equipment in the fab
 - view maintenance history
-- technicians performing scheduled and emergency equipment maintenance
-- scheduling and recording equipment maintenance activities
 - schedules preventive maintenance for semiconductor manufacturing equipment
-- equipment monitoring
-- semiconductor
-- views maintenance history and upcoming scheduled maintenance for equipment
-- materials engineering
+- technicians performing scheduled and emergency equipment maintenance
 - check equipment status
-- monitor fab equipment status and manage maintenance schedules
-- fab operations
-- schedule preventive maintenance
-- checks the operational status of a specific piece of fab equipment
+- equipment
+- materials engineering
+- scheduling and recording equipment maintenance activities
 slug: equipment-monitoring
 tags:
 - Applied Materials

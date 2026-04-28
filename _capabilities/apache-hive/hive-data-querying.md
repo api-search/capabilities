@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: Apache Hive
 provider_slug: apache-hive
 search_terms:
-- open source
-- apache
-- sql
-- big data
 - etl
 - hadoop
 - data warehouse
+- apache
+- sql
+- open source
+- big data
 slug: hive-data-querying
 tags: []
 tools: []

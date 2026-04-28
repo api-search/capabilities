@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - factset-formula
 - factset-quant
@@ -28,35 +29,35 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- quantitative research
-- universal screening.
-- run screen
-- run quant engine computations.
-- get factor library data.
-- list screens
-- list factors
-- portfolio analytics
-- list quant engine resources.
-- financial data
-- get factors
 - investment analytics
-- screening
-- execute formula queries.
-- factset
-- list factor library resources.
-- research
 - list quant
-- financial
-- quant engine computations.
-- formula-based data retrieval.
-- factor library data.
-- run universal screening.
 - run quant engine
-- list screening resources.
-- list formulas
+- screening
+- research
+- list quant engine resources.
+- factset
+- factor library data.
 - market data
-- run formula
+- list factors
+- list screens
 - factor analysis
+- financial
+- run formula
+- run universal screening.
+- get factor library data.
+- financial data
+- universal screening.
+- portfolio analytics
+- formula-based data retrieval.
+- quantitative research
+- quant engine computations.
+- run quant engine computations.
+- execute formula queries.
+- list screening resources.
+- get factors
+- list factor library resources.
+- run screen
+- list formulas
 slug: quantitative-research
 tags:
 - FactSet

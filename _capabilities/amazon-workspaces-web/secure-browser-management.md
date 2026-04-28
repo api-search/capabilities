@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - workspaces-web
 description: Unified workflow for IT administrators to manage Amazon WorkSpaces Web portals, user settings, browser policies, network configurations, and trust stores for enterprise secure browser deployments.
@@ -33,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- end user computing
-- list user settings configurations for portals.
-- list browser settings
-- secure browser
-- list ssl certificate trust stores.
 - create a portal.
-- list trust stores
-- zero trust
+- network configuration management.
+- list user settings
+- list secure browser portals.
+- end user computing
 - virtual desktop
-- create portal
+- secure browser
+- list network settings
+- list portals
+- list trust stores
+- portal and resource provisioning
 - user settings management.
-- portal management.
-- browser policy management.
+- list browser settings.
+- list all workspaces web secure browser portals.
+- browser policy and access control enforcement
+- IT Administrator
+- configures browser policies and access controls.
+- list trust stores.
+- create a new secure browser portal.
 - list network settings for portal connectivity.
+- administration
+- list browser policy settings for portals.
+- portal management.
+- list user settings configurations for portals.
+- list user settings.
+- Security Engineer
+- trust store management.
+- manages workspaces web portals and configurations.
+- list browser settings
+- list ssl certificate trust stores.
+- zero trust
+- browser policy management.
 - aws
 - workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- portal and resource provisioning
-- Security Engineer
-- administration
-- IT Administrator
-- create a new secure browser portal.
-- list user settings
-- configures browser policies and access controls.
-- list browser settings.
-- list trust stores.
 - secure remote browser access infrastructure
-- list browser policy settings for portals.
 - list network settings.
-- list network settings
-- browser policy and access control enforcement
-- network configuration management.
-- list user settings.
-- list portals
-- list secure browser portals.
-- manages workspaces web portals and configurations.
-- trust store management.
-- list all workspaces web secure browser portals.
+- create portal
 slug: secure-browser-management
 tags:
 - AWS

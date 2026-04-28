@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - ait
 description: Workflow capability for industrial product procurement using the Applied Industrial Technologies catalog. Combines product search and order management for procurement teams sourcing bearings, power transmission, and fluid power components.
@@ -9,26 +11,26 @@ personas: []
 provider_name: Applied Industrial Technologies
 provider_slug: applied-industrial-technologies
 search_terms:
-- creating and tracking purchase orders
-- sources replacement parts and components for equipment maintenance
-- list orders
-- applied industrial technologies
-- lists existing purchase orders for the authenticated account
-- place order
 - searches the applied industrial technologies product catalog by category or manufacturer
-- browsing and searching the industrial product catalog
-- search products
-- end-to-end workflow for sourcing and ordering industrial components
-- procurement
-- power transmission
-- places a purchase order for industrial products with shipping address
-- gets detailed specifications for a specific industrial product
-- fluid power
-- get product details
+- sources replacement parts and components for equipment maintenance
+- applied industrial technologies
 - bearings
-- supply chain
-- manages industrial component sourcing and purchase orders
+- procurement
+- places a purchase order for industrial products with shipping address
 - industrial distribution
+- fluid power
+- manages industrial component sourcing and purchase orders
+- get product details
+- end-to-end workflow for sourcing and ordering industrial components
+- gets detailed specifications for a specific industrial product
+- list orders
+- search products
+- lists existing purchase orders for the authenticated account
+- browsing and searching the industrial product catalog
+- power transmission
+- supply chain
+- place order
+- creating and tracking purchase orders
 slug: industrial-procurement
 tags:
 - Applied Industrial Technologies

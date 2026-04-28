@@ -1,4 +1,6 @@
 ---
+categories:
+- crm-sales
 consumed_apis:
 - crm-tickets
 - conversations
@@ -32,44 +34,44 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- search contacts
-- associate a ticket with a contact or company
-- search tickets
-- search contacts to find the customer
+- look up a contact for ticket context
+- hubspot
+- archive ticket
+- get a support ticket by id
+- conversations
+- individual ticket
+- email marketing
 - analytics
+- search tickets
+- marketing automation
+- search contacts
+- update a support ticket
+- update ticket
 - commerce
+- marketing
+- search tickets with filters
+- list associations for a crm object
+- create association
+- list associations
+- support tickets
+- tickets
+- archive a support ticket
+- service
+- contact lookup
+- list tickets
+- create ticket
+- get contact
+- create a new support ticket
 - content
 - sales
-- create a new support ticket
-- archive a support ticket
-- crm
-- archive ticket
-- list associations
-- list associations for a crm object
-- operations
-- hubspot
-- individual ticket
-- create ticket
 - support
-- customer service
-- get contact
-- list tickets
-- support tickets
-- conversations
-- marketing automation
 - get ticket
-- service
-- search tickets with filters
-- tickets
-- create association
-- update ticket
-- marketing
-- update a support ticket
 - list all support tickets
-- contact lookup
-- get a support ticket by id
-- look up a contact for ticket context
-- email marketing
+- search contacts to find the customer
+- crm
+- customer service
+- operations
+- associate a ticket with a contact or company
 slug: customer-service
 tags:
 - HubSpot

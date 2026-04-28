@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - factset-callstreet
 - factset-streetaccount
@@ -31,39 +32,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get news articles.
-- get news
-- run nlp
-- global filings.
-- get regulatory filings.
-- material event signals.
-- content
-- get earnings call transcripts.
-- portfolio analytics
-- get signals
-- financial data
 - investment analytics
+- global filings.
+- get filings
+- get earnings call transcripts.
 - get material event signals.
-- search for answers.
-- factset
-- get global regulatory filings.
 - research
+- get callstreet events
+- factset
+- market data
+- get signals
+- financial
+- get signals.
+- get news
+- conversational ai query.
+- news
+- get news articles.
+- search for answers.
+- material event signals.
+- financial data
 - signals
+- portfolio analytics
+- get regulatory filings.
+- run nlp analysis on text.
+- get global regulatory filings.
+- get streetaccount news.
+- search answers
+- natural language search.
+- content
 - conversational query
 - streetaccount news.
-- news
-- get filings
-- financial
-- run nlp analysis on text.
-- get signals.
 - search
-- conversational ai query.
+- run nlp
 - nlp
-- get callstreet events
-- search answers
-- market data
-- get streetaccount news.
-- natural language search.
 slug: content-intelligence
 tags:
 - FactSet

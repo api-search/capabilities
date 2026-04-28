@@ -1,4 +1,6 @@
 ---
+categories:
+- document-processing
 consumed_apis: []
 description: Workflow for creating, manipulating, extracting text from, and digitally signing PDF documents using Apache PDFBox.
 layout: capability
@@ -16,36 +18,36 @@ personas: []
 provider_name: Apache PDFBox
 provider_slug: apache-pdfbox
 search_terms:
-- split document
-- apache pdfbox
 - create pdf document
-- create a new pdf document
-- java
-- integrates pdf processing into applications
-- apache
-- create document
-- extract text content from a pdf document
-- merge documents
-- get metadata
-- sign document
-- apply a digital signature to a pdf document
-- extract text
-- merge multiple pdf documents into one
-- split a pdf document at specified page boundaries
-- document processing
-- pdf
-- list pages and their dimensions in a pdf
-- get interactive form fields from a pdf document
-- get pdf document metadata (title, author, dates)
-- text extraction
+- apache pdfbox
 - get form fields
+- pdf
 - list pages
-- creates and manages pdf documents with metadata and signatures
-- extract text from pdf
+- get interactive form fields from a pdf document
+- apply a digital signature to a pdf document
 - digital signatures
-- Document Manager
-- Application Developer
+- create document
+- get metadata
+- document processing
+- split a pdf document at specified page boundaries
+- extract text content from a pdf document
+- apache
+- java
+- merge documents
 - open source
+- split document
+- Document Manager
+- create a new pdf document
+- sign document
+- get pdf document metadata (title, author, dates)
+- Application Developer
+- list pages and their dimensions in a pdf
+- integrates pdf processing into applications
+- creates and manages pdf documents with metadata and signatures
+- merge multiple pdf documents into one
+- extract text
+- text extraction
+- extract text from pdf
 slug: pdfbox-workflow
 tags:
 - Apache PDFBox

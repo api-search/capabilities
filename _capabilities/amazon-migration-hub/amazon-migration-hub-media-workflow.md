@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - migration_hub
 description: Workflow capability for Amazon Migration Hub media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon Migration Hub
 provider_slug: amazon-migration-hub
 search_terms:
-- associate created artifact
-- create progress update stream
-- developer building media processing applications
-- list jobs
-- describeapplicationstate
-- disassociate created artifact
-- amazon migration hub media processing workflow
-- describe migration task
-- describe application state
-- manage media processing jobs
-- engineer managing broadcast media workflows
-- aws
-- associatediscoveredresource
-- disassociatecreatedartifact
-- associate discovered resource
-- deleteprogressupdatestream
-- associatecreatedartifact
-- describemigrationtask
-- disassociatediscoveredresource
-- Broadcast Engineer
-- delete progress update stream
-- workflow
-- Media Developer
-- aws media processing and delivery
-- media
-- disassociate discovered resource
 - broadcasting
+- describe application state
+- describe migration task
+- Broadcast Engineer
+- disassociate created artifact
+- associatediscoveredresource
 - createprogressupdatestream
+- associate discovered resource
+- manage media processing jobs
+- disassociatecreatedartifact
+- disassociatediscoveredresource
+- create progress update stream
+- aws media processing and delivery
+- deleteprogressupdatestream
+- amazon migration hub media processing workflow
+- media
+- describeapplicationstate
+- disassociate discovered resource
+- Media Developer
+- associatecreatedartifact
+- associate created artifact
+- list jobs
 - media processing
+- aws
+- workflow
+- developer building media processing applications
+- delete progress update stream
+- describemigrationtask
+- engineer managing broadcast media workflows
 slug: amazon-migration-hub-media-workflow
 tags:
 - AWS

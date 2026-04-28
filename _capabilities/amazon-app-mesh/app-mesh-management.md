@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-app-mesh
 description: Workflow for managing Amazon App Mesh API resources.
@@ -13,19 +14,19 @@ personas: []
 provider_name: Amazon App Mesh
 provider_slug: amazon-app-mesh
 search_terms:
-- Platform Engineer
-- engineer managing microservices networking infrastructure.
-- list amazon app mesh api resources.
-- list resources
-- aws
-- amazon
-- DevOps Engineer
-- networking
-- engineer managing service deployments and traffic routing.
 - manage amazon app mesh api resources.
-- list resources.
-- microservices
+- aws
+- list amazon app mesh api resources.
+- engineer managing service deployments and traffic routing.
 - service mesh
+- networking
+- list resources.
+- Platform Engineer
+- microservices
+- DevOps Engineer
+- amazon
+- engineer managing microservices networking infrastructure.
+- list resources
 slug: app-mesh-management
 tags:
 - Amazon

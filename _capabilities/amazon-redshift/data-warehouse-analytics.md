@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - redshift-data
 description: Data warehouse analytics workflow combining Redshift Data API for SQL execution, statement management, and database metadata exploration. Used by data analysts and engineers for ad-hoc queries, ETL processing, and serverless data warehouse operations.
@@ -25,42 +27,42 @@ personas: []
 provider_name: Amazon Redshift
 provider_slug: amazon-redshift
 search_terms:
-- machine learning
-- sql
-- analytics
-- big data
-- batch execute statement
-- serverless
-- describe table
-- database metadata
-- data warehouse
-- cancel statement
-- list tables in a schema
-- cloud
-- get statement result
-- aws
-- list schemas
-- list databases in a redshift cluster or workgroup
-- list sql statement executions
-- data lake
-- table metadata
 - cancel a running sql statement
-- execute a sql statement
-- list schemas in a database
+- describe table
+- describe the columns of a table
+- batch execute statement
 - get details about a sql statement execution
+- serverless
+- describe statement
+- analytics
+- execute multiple sql statements in a batch transaction
+- get statement result
+- table metadata
+- list sql statement executions
+- execute statement
 - sql statement execution
-- list statements
+- execute a sql statement
+- list tables in a schema
+- data warehouse
 - list tables
-- etl
-- retrieve results from a completed sql statement
-- amazon
+- list schemas in a database
 - list sql statements
+- big data
+- list schemas
+- cancel statement
+- etl
+- machine learning
+- retrieve results from a completed sql statement
+- aws
+- list databases in a redshift cluster or workgroup
+- database metadata
+- sql
 - list databases
 - execute a sql statement asynchronously against redshift
-- execute statement
-- describe the columns of a table
-- describe statement
-- execute multiple sql statements in a batch transaction
+- list statements
+- cloud
+- data lake
+- amazon
 slug: data-warehouse-analytics
 tags:
 - Amazon

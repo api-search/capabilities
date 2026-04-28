@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis:
 - snowflake-cortex-analyst
 - snowflake-cortex-inference
@@ -36,45 +38,45 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- machine learning
-- list available cortex llm models
-- ask a question about your data
-- available models
-- database
-- sql
-- create notebook
-- ask a question about your data using natural language
-- list notebooks
-- create a notebook
-- query a cortex search service
-- ask analyst
-- run llm inference completion
-- execute a notebook
-- snowflake
-- send analyst feedback
-- query search
-- llm inference
-- natural language data analytics
-- llm complete
-- generate query suggestions
-- data sharing
-- send feedback on an analyst response
-- ai
-- execute notebook
-- data warehousing
 - list models
-- query a search service
-- list cortex search services
+- create notebook
+- data sharing
+- list search services
+- data warehousing
+- llm inference
+- generate verified query suggestions
+- send analyst message
+- notebook management
+- query search
+- send analyst feedback
+- execute notebook
+- data lakes
 - run llm completion
 - semantic search
-- data lakes
-- generate verified query suggestions
-- list llm models
-- notebook management
+- database
+- list available cortex llm models
+- send feedback on an analyst response
+- query a cortex search service
 - cortex
-- send analyst message
-- list search services
+- create a notebook
+- available models
+- ask analyst
+- execute a notebook
+- natural language data analytics
+- ask a question about your data using natural language
+- generate query suggestions
+- ai
+- list notebooks
+- list llm models
+- run llm inference completion
+- query a search service
+- machine learning
+- list cortex search services
+- ask a question about your data
 - complete
+- llm complete
+- sql
+- snowflake
 - list available llm models
 slug: cortex-ai
 tags:

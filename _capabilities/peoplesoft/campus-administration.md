@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - campus-solutions
 - approval-workflow
@@ -38,42 +39,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- student records
-- list admission applications
-- retrieve admission applications.
-- higher education
-- class schedule and enrollment data
+- retrieve class schedule and enrollment data.
 - list students
-- list pending approvals
-- peopletools platform services.
-- crm
-- retrieve pending campus approval requests.
-- campus approval requests
-- financial and supply chain management.
-- financial management
-- approve, deny, or push back a campus approval request.
-- admissions
-- financial aid awards
-- campus solutions.
-- financial aid
-- erp
-- retrieve details for a specific student.
-- process approval
-- hcm
-- list financial aid awards
-- list classes
-- supply chain management
-- retrieve financial aid award data.
-- individual approval operations
 - get student
-- enterprise software
-- individual student details
+- higher education
+- list admission applications
+- retrieve student records.
+- financial and supply chain management.
+- individual approval operations
+- retrieve pending campus approval requests.
+- peoplesoft
+- financial aid
+- financial aid awards
 - human capital management.
 - campus solutions
-- peoplesoft
-- retrieve student records.
+- hcm
+- campus solutions.
+- peopletools platform services.
+- retrieve admission applications.
+- list classes
+- retrieve details for a specific student.
+- admissions
+- class schedule and enrollment data
+- erp
+- enterprise software
 - admission applications
-- retrieve class schedule and enrollment data.
+- list pending approvals
+- process approval
+- campus approval requests
+- student records
+- supply chain management
+- approve, deny, or push back a campus approval request.
+- crm
+- financial management
+- retrieve financial aid award data.
+- list financial aid awards
+- individual student details
 slug: campus-administration
 tags:
 - PeopleSoft

@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - factset-ent-rb
 - factset-fund-rb
@@ -26,40 +28,40 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- generate a digital card.
-- build book
-- vermilion report
-- report builder
-- portfolio analytics
-- capital structure report
-- generate ownership report.
-- overview report
-- financial data
 - investment analytics
-- generate digital card
-- factset
-- visualization
-- estimates report
-- research
-- generate overview report.
-- generate capital structure report.
-- generate chart
-- entity report
-- financial
 - report generation.
+- research
+- generate a digital card.
+- generate digital card
 - reporting
-- list available reports.
-- generate vermilion report.
-- ownership report
-- generate entity report.
+- factset
 - market data
-- generate estimates report.
-- list reports
-- chart generation.
-- generate a chart.
+- estimates report
+- entity report
+- ownership report
+- financial
+- generate vermilion report.
 - build a custom report book.
-- generate fundamentals report.
+- capital structure report
+- overview report
+- visualization
 - fundamentals report
+- generate entity report.
+- generate chart
+- chart generation.
+- financial data
+- portfolio analytics
+- vermilion report
+- list reports
+- report builder
+- list available reports.
+- generate fundamentals report.
+- generate ownership report.
+- generate capital structure report.
+- generate overview report.
+- generate estimates report.
+- generate a chart.
+- build book
 slug: reporting
 tags:
 - FactSet

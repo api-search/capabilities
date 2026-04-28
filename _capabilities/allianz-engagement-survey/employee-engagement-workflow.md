@@ -1,4 +1,6 @@
 ---
+categories:
+- payroll-hr
 consumed_apis:
 - allianz-engagement-survey
 description: Workflow capability for HR teams running employee engagement surveys at Allianz, covering survey planning, participant management, results analysis, and action plan tracking.
@@ -37,54 +39,54 @@ personas: []
 provider_name: Allianz Engagement Survey
 provider_slug: allianz-engagement-survey
 search_terms:
-- create an action plan from survey insights
-- create a new annual, pulse, onboarding, or exit engagement survey
-- list action plans for a survey
-- surveys
-- create engagement survey
-- analytics
-- People Analytics Analyst
-- employee experience
-- participant management for a survey
-- list participants and response status
-- get engagement analytics for a survey
-- create an action plan to address employee engagement survey findings
-- hr professional responsible for running engagement surveys and following up with business units
-- list improvement action plans created from survey findings
-- list action plans
-- get engagement survey
-- creating and tracking improvement initiatives from survey findings
-- add survey participants
-- list survey participants
-- creating and managing employee engagement surveys
-- list participants and track who has responded to a survey
-- add employees as survey participants
-- get analytics
-- get aggregated engagement scores, participation rates, and insights for a survey
-- list all engagement surveys
-- list participants
-- HR Business Partner
-- get details and configuration of a specific engagement survey
-- create survey
-- people manager who reviews team-level results and creates action plans
-- create action plan
-- insurance
-- survey management for hr teams
-- list engagement surveys
-- list all allianz employee engagement surveys with status and type filtering
-- enterprise
-- human resources
-- analyst who interprets engagement data and generates insights and recommendations
-- add employees to a survey and send invitation emails
-- get survey analytics
-- add participants
-- Team Manager
-- analyzing survey results and generating engagement insights
-- survey analytics and reporting
 - action plan management
+- create an action plan from survey insights
+- get survey analytics
+- list participants
+- list action plans
+- human resources
+- list all engagement surveys
+- create survey
+- list improvement action plans created from survey findings
+- analyst who interprets engagement data and generates insights and recommendations
+- list survey participants
+- analytics
+- create engagement survey
+- list participants and track who has responded to a survey
+- survey analytics and reporting
+- get engagement analytics for a survey
+- list all allianz employee engagement surveys with status and type filtering
+- list action plans for a survey
+- creating and tracking improvement initiatives from survey findings
+- enterprise
+- surveys
+- add survey participants
+- survey management for hr teams
+- hr professional responsible for running engagement surveys and following up with business units
+- analyzing survey results and generating engagement insights
+- People Analytics Analyst
+- get analytics
 - create a new engagement survey
-- list surveys
+- create a new annual, pulse, onboarding, or exit engagement survey
+- create an action plan to address employee engagement survey findings
+- get aggregated engagement scores, participation rates, and insights for a survey
+- list participants and response status
+- HR Business Partner
 - end-to-end workflow for hr teams running engagement surveys
+- list engagement surveys
+- participant management for a survey
+- add participants
+- create action plan
+- add employees to a survey and send invitation emails
+- get engagement survey
+- creating and managing employee engagement surveys
+- add employees as survey participants
+- insurance
+- list surveys
+- Team Manager
+- employee experience
+- people manager who reviews team-level results and creates action plans
+- get details and configuration of a specific engagement survey
 slug: employee-engagement-workflow
 tags:
 - Human Resources

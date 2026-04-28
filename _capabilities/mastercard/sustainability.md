@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - carbon-calculator
 - doconomy-aland
@@ -23,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- financial services
-- create a donation to environmental causes
-- environmental impact
 - credit cards
-- environmental impact scoring
-- get environmental impact score
-- calculate carbon footprint from transactions
-- get impact score
-- environmental cause donations
-- calculate the carbon footprint of payment transactions
-- calculate carbon footprint
-- mastercard
-- donate to environment
-- get the environmental impact score for a transaction using the aland index
-- carbon footprint calculations
-- esg
-- digital identity
-- payments
-- open banking
-- fraud detection
-- carbon footprint
-- create a donation to support environmental causes
-- create environmental donation
 - sustainability
+- calculate the carbon footprint of payment transactions
+- calculate carbon footprint from transactions
+- get environmental impact score
+- carbon footprint
+- create environmental donation
+- carbon footprint calculations
+- digital identity
+- environmental impact scoring
+- open banking
+- donate to environment
+- create a donation to environmental causes
+- esg
+- mastercard
+- fraud detection
+- get the environmental impact score for a transaction using the aland index
+- calculate carbon footprint
+- financial services
+- environmental cause donations
+- create a donation to support environmental causes
+- get impact score
+- payments
+- environmental impact
 slug: sustainability
 tags:
 - Mastercard

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-container-registry
 description: Workflow capability for managing Azure Container Registry resources. Used by cloud engineers and DevOps teams.
@@ -13,25 +14,25 @@ personas: []
 provider_name: Azure Container Registry
 provider_slug: azure-container-registry
 search_terms:
-- list registry resources
 - list tasks
-- cloud
+- list task resources
+- list webhooks
+- management
+- docker
+- azure resource management
+- list
 - list all resources
 - list webhook resources
-- management
-- list task resources
-- resource management
-- list webhooks
 - list registrys
-- container images
-- docker
-- list replications
 - containers
-- registry
+- container images
 - azure
-- azure resource management
+- list registry resources
+- resource management
 - list replication resources
-- list
+- registry
+- cloud
+- list replications
 slug: azure-container-registry-management
 tags:
 - Azure

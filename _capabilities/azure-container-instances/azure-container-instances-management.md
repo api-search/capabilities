@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-container-instances
 description: Workflow capability for managing Azure Container Instances resources. Used by cloud engineers and DevOps teams.
@@ -14,22 +15,22 @@ provider_name: Azure Container Instances
 provider_slug: azure-container-instances
 search_terms:
 - azure
-- list containergroupusage resources
-- azure resource management
-- cloud
-- list container group usages
-- container instances
-- list all resources
-- list container groups
-- management
-- list containers
-- containers
-- microsoft
-- serverless
 - list containergroup resources
-- resource management
+- list container groups
+- list container group usages
 - list container resources
+- resource management
+- azure resource management
+- container instances
+- containers
+- list containers
 - list
+- management
+- list containergroupusage resources
+- microsoft
+- cloud
+- list all resources
+- serverless
 slug: azure-container-instances-management
 tags:
 - Azure

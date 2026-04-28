@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - att-wireless-apis
 description: Workflow capability combining AT&T Wireless APIs for SMS messaging and OAuth authentication. Used by developers building consumer and business messaging applications on the AT&T network.
@@ -25,53 +27,53 @@ personas: []
 provider_name: AT&T
 provider_slug: atandt
 search_terms:
-- developer integrating at&t enterprise connectivity and ebonding apis
-- Identity Developer
-- sms
+- oauth
+- att check sms delivery
+- get token
 - sms outbound messaging
+- developer building fraud prevention and identity verification using at&t network signals
+- mobile virtual network operator managing subscribers on at&t infrastructure
+- fortune 100
+- send sms message
 - network-based fraud detection and threat intelligence
-- 5g
+- sms messaging and oauth authentication for consumer and business applications
 - App Developer
-- check delivery status of a sent at&t sms message
+- sms inbound messages
+- get delivery status
+- camara network-based fraud prevention using sim swap and number verification
+- mobile or web developer building consumer applications on at&t apis
+- oauth and network-based authentication
+- at&t
+- send sms
+- Enterprise Developer
+- wireline
+- Identity Developer
+- wireline service ordering and qualification
+- get inbound sms messages
+- sms delivery status
+- wireless
+- broadband
+- 5g
+- enterprise
+- att send sms
+- send an sms message to one or more recipients via at&t network
 - engineer integrating enterprise wireline services and ebonding systems
 - telecommunications
-- sms messaging and oauth authentication for consumer and business applications
-- wireline
-- oauth token management
-- get delivery status
-- att check sms delivery
-- wireless
-- camara network-based fraud prevention using sim swap and number verification
-- oauth and network-based authentication
-- get inbound sms messages
-- sms inbound messages
-- messaging
-- mobile virtual network operator managing subscribers on at&t infrastructure
-- network
-- get token
-- developer building fraud prevention and identity verification using at&t network signals
-- device status, roaming, and qos management
-- at&t
-- sms delivery status
-- att get inbound sms
-- sms and in-app messaging services
-- obtain oauth access token
-- att send sms
-- wireline service ordering and qualification
-- enterprise
-- broadband
-- retrieve inbound sms messages for an at&t registered endpoint
-- Security Developer
-- Enterprise Developer
-- get sms delivery status
-- developer implementing frictionless mobile authentication via at&t network
-- fortune 100
-- send an sms message to one or more recipients via at&t network
-- send sms
-- send sms message
+- developer integrating at&t enterprise connectivity and ebonding apis
 - get inbound sms
-- mobile or web developer building consumer applications on at&t apis
-- oauth
+- sms
+- Security Developer
+- obtain oauth access token
+- att get inbound sms
+- check delivery status of a sent at&t sms message
+- device status, roaming, and qos management
+- developer implementing frictionless mobile authentication via at&t network
+- messaging
+- get sms delivery status
+- network
+- oauth token management
+- sms and in-app messaging services
+- retrieve inbound sms messages for an at&t registered endpoint
 slug: wireless-messaging
 tags:
 - AT&T

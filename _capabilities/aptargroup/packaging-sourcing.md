@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - aptar
 description: Workflow capability for sourcing dispensing and packaging solutions from AptarGroup. Supports product development teams browsing sustainable packaging options and requesting samples for beauty, pharmaceutical, and food products.
@@ -9,24 +11,24 @@ personas: []
 provider_name: AptarGroup
 provider_slug: aptargroup
 search_terms:
-- evaluates and sources packaging solutions for consumer products
-- manufacturing
-- packaging
-- browse and sample sustainable packaging solutions from aptargroup
-- submits a sample request for aptargroup packaging evaluation
-- requesting and tracking product samples for evaluation
-- find sustainable packaging
-- gets detailed specifications for a specific aptargroup packaging product
+- aptargroup
 - finds sustainable dispensing and packaging solutions from aptargroup
 - order packaging samples
-- get packaging specs
-- manages packaging supplier relationships and sample requests
-- product development
-- browsing dispensing and packaging product options
-- dispensing
-- consumer goods
-- aptargroup
 - sustainability
+- manufacturing
+- requesting and tracking product samples for evaluation
+- consumer goods
+- find sustainable packaging
+- get packaging specs
+- gets detailed specifications for a specific aptargroup packaging product
+- manages packaging supplier relationships and sample requests
+- browse and sample sustainable packaging solutions from aptargroup
+- product development
+- dispensing
+- evaluates and sources packaging solutions for consumer products
+- browsing dispensing and packaging product options
+- submits a sample request for aptargroup packaging evaluation
+- packaging
 slug: packaging-sourcing
 tags:
 - AptarGroup

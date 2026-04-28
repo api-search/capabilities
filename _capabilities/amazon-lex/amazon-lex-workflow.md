@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - lex
 description: Unified workflow capability for Amazon Lex combining resource management and operations.
@@ -9,20 +10,20 @@ personas: []
 provider_name: Amazon Lex
 provider_slug: amazon-lex
 search_terms:
-- amazon lex
-- bots describe bot
-- workflow
 - integrates api into applications
-- manages resources and configurations
-- Administrator
-- bots list bots
-- aws
-- gets a list of available bots.
-- unified workflow for amazon lex resource management
-- Developer
-- bots create bot
 - creates an amazon lex conversational bot.
+- bots describe bot
+- gets a list of available bots.
+- bots create bot
+- aws
+- workflow
+- bots list bots
 - provides metadata information about a bot.
+- amazon lex
+- manages resources and configurations
+- Developer
+- unified workflow for amazon lex resource management
+- Administrator
 slug: amazon-lex-workflow
 tags:
 - Amazon Lex

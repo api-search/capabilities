@@ -1,0 +1,53 @@
+---
+layout: default
+title: Capability Categories
+meta_title: Canonical Capability Categories | APIs.io
+meta_description: Cross-provider capability categories — find every API provider that implements analytics, monitoring, payments, and more.
+permalink: /categories/
+---
+<style>
+  .cats-hero { margin-bottom: 2rem; }
+  .cats-hero h1 { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
+  .cats-hero p { color: #4a5568; line-height: 1.55; max-width: 60rem; }
+  .domain-block { margin-top: 2rem; }
+  .domain-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #6b7280; font-weight: 700; margin-bottom: 0.75rem; }
+  .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.75rem; }
+  .cat-card { background: #fff; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1rem 1.1rem; text-decoration: none; color: inherit; transition: border-color 0.15s, transform 0.15s; }
+  .cat-card:hover { border-color: #1e40af; transform: translateY(-1px); text-decoration: none; }
+  .cat-card-name { font-weight: 700; color: #1a1a2e; font-size: 1rem; margin-bottom: 0.25rem; }
+  .cat-card-short { color: #475569; font-size: 0.85rem; line-height: 1.45; margin-bottom: 0.6rem; }
+  .cat-card-stats { font-size: 0.75rem; color: #6b7280; font-family: monospace; }
+  .cat-card-stats strong { color: #1e40af; }
+</style>
+
+<div class="cats-hero">
+  <h1>Capability Categories</h1>
+  <p>
+    Each category aggregates capabilities offered by multiple providers — so you can compare
+    implementations side-by-side, discover alternatives, and pick the API best suited to a task.
+    Categories are defined by the canonical taxonomy maintained at
+    <a href="https://github.com/api-search/network/blob/main/_data/canonical-capabilities.yml"><code>canonical-capabilities.yml</code></a>.
+  </p>
+</div>
+
+{% assign cats_sorted = site.categories | sort: 'name' %}
+{% assign domains = cats_sorted | map: 'domain' | uniq | sort %}
+
+{% for domain in domains %}
+<div class="domain-block">
+  <div class="domain-title">{% if domain == "" %}Other{% else %}{{ domain | replace: '-', ' ' }}{% endif %}</div>
+  <div class="cat-grid">
+    {% for cat in cats_sorted %}
+      {% if cat.domain == domain %}
+      <a class="cat-card" href="{{ cat.url }}">
+        <div class="cat-card-name">{{ cat.name }}</div>
+        <div class="cat-card-short">{{ cat.short }}</div>
+        <div class="cat-card-stats">
+          <strong>{{ cat.implementation_count }}</strong> caps &middot; <strong>{{ cat.provider_count }}</strong> providers
+        </div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}

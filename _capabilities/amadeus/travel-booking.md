@@ -1,4 +1,6 @@
 ---
+categories:
+- travel-booking
 consumed_apis:
 - flight-offers-search
 - hotel-search
@@ -18,35 +20,35 @@ personas: []
 provider_name: Amadeus
 provider_slug: amadeus
 search_terms:
-- travel
 - search hotels
-- hospitality
-- flight search.
-- flight search, pricing, booking, and order management.
-- search for available hotel rooms and rates for specific hotel properties.
-- search available hotels.
+- end-to-end trip booking combining flight search, hotel search, and transfer booking.
+- flights
 - search available flights.
-- destinations
-- developer building travel search and booking applications using amadeus apis.
-- hotel search, availability, and booking.
+- flight search.
+- hotels
+- search for available flights between two cities on a given date.
 - online travel agency team managing flight, hotel, and transfer bookings.
 - Travel Developer
-- flights
 - airlines
-- market insights
-- end-to-end trip booking combining flight search, hotel search, and transfer booking.
-- search for available flights between two cities on a given date.
-- booking
-- hotels
-- OTA Booking Team
-- transfer search, booking, and management.
-- search flights
-- amadeus
-- points of interest, tours, activities, and destination data.
 - aviation
-- transfers
-- tourism
 - hotel search.
+- booking
+- flight search, pricing, booking, and order management.
+- developer building travel search and booking applications using amadeus apis.
+- points of interest, tours, activities, and destination data.
+- transfer search, booking, and management.
+- travel
+- search for available hotel rooms and rates for specific hotel properties.
+- amadeus
+- search available hotels.
+- hotel search, availability, and booking.
+- destinations
+- hospitality
+- OTA Booking Team
+- search flights
+- tourism
+- transfers
+- market insights
 slug: travel-booking
 tags:
 - Amadeus

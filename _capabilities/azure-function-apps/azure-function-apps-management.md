@@ -1,4 +1,6 @@
 ---
+categories:
+- serverless
 consumed_apis:
 - azure-function-apps
 description: Workflow capability for managing Azure Function Apps resources. Used by cloud engineers and DevOps teams.
@@ -13,25 +15,25 @@ personas: []
 provider_name: Azure Function Apps
 provider_slug: azure-function-apps
 search_terms:
-- list configuration resources
-- list deployment resources
-- serverless
-- list deployments
-- list configurations
-- cloud
-- list all resources
-- list function resources
-- management
-- faas
-- resource management
 - list function apps
-- functions
-- compute
-- azure
-- azure resource management
+- faas
 - list functionapp resources
+- management
+- serverless
 - list functions
+- list deployment resources
+- azure resource management
 - list
+- list all resources
+- list deployments
+- azure
+- functions
+- resource management
+- list configurations
+- list function resources
+- cloud
+- compute
+- list configuration resources
 slug: azure-function-apps-management
 tags:
 - Azure

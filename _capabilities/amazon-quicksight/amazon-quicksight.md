@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-quicksight
 description: Workflow capability for Amazon Quicksight. Enables automation of Amazon Quicksight resources for cloud operations teams.
@@ -14,21 +15,21 @@ provider_name: Amazon QuickSight
 provider_slug: amazon-quicksight
 search_terms:
 - list amazon quicksight resources
-- amazon quicksight resources
-- amazon quicksight
 - machine learning
-- list resources
-- aws
-- business intelligence
+- engineer managing amazon quicksight resources
+- amazon quicksight
 - analytics
+- aws
+- visualization
 - cloud operations
+- dashboards
+- amazon quicksight resources
+- business intelligence
+- aws cloud resource management
 - reporting
 - bi
-- dashboards
 - automation workflow for amazon quicksight
-- aws cloud resource management
-- engineer managing amazon quicksight resources
-- visualization
+- list resources
 slug: amazon-quicksight
 tags:
 - Amazon Quicksight

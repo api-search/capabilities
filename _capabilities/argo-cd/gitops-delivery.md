@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - argocd
 description: Unified capability for GitOps-driven continuous delivery using Argo CD. Combines application management, cluster registration, repository configuration, and project governance for Platform Engineers and DevOps teams.
@@ -41,55 +43,55 @@ personas: []
 provider_name: Argo CD
 provider_slug: argo-cd
 search_terms:
-- remove an application
-- trigger an argo cd application sync to reconcile desired git state
-- list all argo cd projects
-- list clusters
-- deploy a new application from git
-- automated application deployment and lifecycle management
-- list all deployed applications
-- sync application
-- list repositories
-- list configured git repositories
-- list all argo cd applications with their sync and health status
-- list all argo cd projects and their rbac policies
-- end-to-end gitops continuous delivery combining application lifecycle, cluster management, and repository configuration
-- trigger application sync from git
-- list registered kubernetes clusters
-- manages the argo cd platform, clusters, and project rbac
-- delete an argo cd application and optionally cascade delete resources
-- kubernetes
-- create application
-- git repository configuration
-- application synchronization
-- delete application
-- get application
-- containers
-- argo cd
-- continuous delivery
-- git as single source of truth for infrastructure and application state
-- gitops application lifecycle management
-- gitops
-- project and rbac management
-- open source
-- list all git repositories configured in argo cd
-- deploy a new application by creating an argo cd application resource
-- list projects
-- list all kubernetes clusters registered with argo cd
-- Platform Engineer
-- list accounts
-- kubernetes cluster registry
-- list applications
-- cncf
-- get detailed status of an argo cd application including resource tree
-- platform engineering
-- single application management
-- DevOps Engineer
 - container orchestration platform
 - get application details and sync status
 - list all argo cd user accounts
+- list all kubernetes clusters registered with argo cd
+- gitops application lifecycle management
+- list repositories
+- trigger application sync from git
+- platform engineering
+- list all argo cd projects
 - deployment
+- application synchronization
+- get application
+- continuous delivery
+- git as single source of truth for infrastructure and application state
+- trigger an argo cd application sync to reconcile desired git state
+- list projects
+- remove an application
+- sync application
+- list clusters
+- DevOps Engineer
+- manages the argo cd platform, clusters, and project rbac
+- open source
+- list all argo cd projects and their rbac policies
+- deploy a new application by creating an argo cd application resource
+- list configured git repositories
+- list all argo cd applications with their sync and health status
 - deploys and manages applications using gitops workflows
+- delete an argo cd application and optionally cascade delete resources
+- kubernetes
+- end-to-end gitops continuous delivery combining application lifecycle, cluster management, and repository configuration
+- list all deployed applications
+- containers
+- Platform Engineer
+- kubernetes cluster registry
+- list applications
+- single application management
+- create application
+- delete application
+- git repository configuration
+- list registered kubernetes clusters
+- get detailed status of an argo cd application including resource tree
+- automated application deployment and lifecycle management
+- deploy a new application from git
+- cncf
+- project and rbac management
+- list accounts
+- argo cd
+- gitops
+- list all git repositories configured in argo cd
 slug: gitops-delivery
 tags:
 - Argo CD

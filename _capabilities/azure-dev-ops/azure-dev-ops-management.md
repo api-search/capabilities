@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-dev-ops
 description: Workflow capability for managing Azure DevOps resources. Used by cloud engineers and DevOps teams.
@@ -13,25 +14,25 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-dev-ops
 search_terms:
-- list pipelines
-- list repositorys
-- project management
 - list organization resources
-- cloud
-- list all resources
-- list repository resources
-- list organizations
 - management
-- resource management
 - list project resources
-- list pipeline resources
-- version control
+- list organizations
+- azure resource management
+- list repository resources
+- list
+- list projects
+- list all resources
+- ci/cd
+- list repositorys
 - devops
 - azure
-- azure resource management
-- list projects
-- ci/cd
-- list
+- project management
+- resource management
+- version control
+- cloud
+- list pipeline resources
+- list pipelines
 slug: azure-dev-ops-management
 tags:
 - Azure

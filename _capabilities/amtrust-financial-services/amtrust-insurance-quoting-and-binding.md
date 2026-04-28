@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amtrust-commercial-lines
 description: Workflow capability for reviewing appetite, generating quotes, and binding commercial lines policies. Used by insurance agents and broker platforms.
@@ -21,31 +22,31 @@ personas: []
 provider_name: AmTrust Financial Services
 provider_slug: amtrust-financial-services
 search_terms:
-- workers compensation
-- developer integrating amtrust api into agent or broker platform
-- small business
 - amtrust financial services
-- createQuote
-- end-to-end insurance quoting and binding workflow
-- get policy
-- generate a commercial lines quote
-- list all quotes for the agent account
-- check coverage appetite
+- commercial insurance
 - bind an approved quote to issue a policy
-- check appetite
-- check amtrust coverage appetite for a business risk
+- createQuote
+- list all quotes for the agent account
 - list quotes
+- developer integrating amtrust api into agent or broker platform
+- bind policy
+- check appetite
+- check coverage appetite
+- commercial lines
+- workers compensation
+- create quote
+- get policy
+- check amtrust coverage appetite for a business risk
+- generate a commercial lines quote
 - agent checking appetite and generating quotes for clients
+- property and casualty
 - getPolicy
 - insurance technology
-- insurance
+- end-to-end insurance quoting and binding workflow
 - checkAppetite
-- create quote
+- insurance
 - retrieve policy details by policy number
-- commercial lines
-- property and casualty
-- bind policy
-- commercial insurance
+- small business
 slug: amtrust-insurance-quoting-and-binding
 tags:
 - AmTrust Financial Services

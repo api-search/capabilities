@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - whatsapp-cloud
 description: Unified workflow for sending messages, managing media files, and creating QR codes for customer conversations. Combines WhatsApp Cloud API messaging, media management, and QR code capabilities used by customer engagement teams and chatbot developers.
@@ -45,40 +47,40 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- get qr code
-- uploads media to whatsapp servers. returns a media id for use when sending media messages.
-- updates the prefilled message for a qr code.
-- lists all qr codes for a phone number.
-- updates a qr code.
-- upload media
-- deletes a qr code.
-- send message
-- retrieves a temporary download url for media.
-- list qr codes
-- retrieves a temporary download url for a media file. url expires after 5 minutes.
-- sends a message to a whatsapp user.
-- deletes a media file from whatsapp servers.
-- messaging
-- customer engagement
-- uploads media to whatsapp servers.
-- create qr code
-- update qr code
-- qr codes
-- creates a qr code that customers can scan to start a conversation.
-- individual qr code management.
-- retrieve and delete media files.
-- delete media
-- send messages of all types to whatsapp users.
-- qr codes for starting customer conversations.
-- delete qr code
-- retrieves a specific qr code.
-- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
 - get media url
-- whatsapp
-- deletes a media file.
-- media
+- lists all qr codes for a phone number.
 - upload media files to whatsapp servers.
+- delete qr code
+- deletes a media file.
+- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- customer engagement
+- individual qr code management.
+- send message
+- updates a qr code.
+- get qr code
+- delete media
+- qr codes for starting customer conversations.
+- media
+- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
+- retrieves a specific qr code.
+- list qr codes
+- deletes a qr code.
+- retrieves a temporary download url for media.
+- update qr code
+- creates a qr code that customers can scan to start a conversation.
+- retrieve and delete media files.
+- whatsapp
+- updates the prefilled message for a qr code.
+- sends a message to a whatsapp user.
+- qr codes
+- messaging
+- send messages of all types to whatsapp users.
+- create qr code
+- upload media
+- deletes a media file from whatsapp servers.
+- uploads media to whatsapp servers.
 - creates a qr code for starting conversations.
+- retrieves a temporary download url for a media file. url expires after 5 minutes.
 slug: messaging-and-media
 tags:
 - WhatsApp

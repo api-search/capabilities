@@ -1,4 +1,6 @@
 ---
+categories:
+- api-management
 consumed_apis:
 - backstage-catalog
 description: Unified developer portal workflow combining the Backstage Software Catalog, Scaffolder, TechDocs, Search, Auth, and Permissions APIs. Serves platform engineers and developers managing internal developer platforms.
@@ -21,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- scaffolding, documentation, and search to accelerate development
-- get catalog entity
-- get a specific catalog entity by kind, namespace, and name
-- developer portal
-- create location
-- list locations
-- list catalog locations
-- engineer building and maintaining the internal developer platform and backstage configuration
-- software catalog
-- delete an entity from the software catalog
-- register a new catalog location
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- backstage
-- list all registered catalog locations
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
+- delete catalog entity
+- scaffolding, documentation, and search to accelerate development
+- engineer building and maintaining the internal developer platform and backstage configuration
+- get catalog entity
+- list catalog entities
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- Developer
+- create location
+- list all registered catalog locations
+- internal developer platform
+- software catalog entities
+- backstage
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- open source
+- list catalog locations
+- catalog locations
 - central inventory of all software components, apis, and resources
 - list entities
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- list catalog entities
-- catalog locations
-- list all catalog entities
-- software catalog entities
-- Platform Engineer
-- Developer
+- developer portal
+- get a specific catalog entity by kind, namespace, and name
+- software catalog
 - register catalog location
-- internal developer platform
-- delete catalog entity
-- open source
+- list locations
+- register a new catalog location
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- list all catalog entities
+- delete an entity from the software catalog
+- Platform Engineer
 slug: developer-portal
 tags:
 - Backstage

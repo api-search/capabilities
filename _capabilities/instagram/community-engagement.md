@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - instagram-graph
 description: Unified workflow for managing Instagram community interactions including comment moderation, replies, hashtag discovery, and mention tracking. Used by community managers and social media teams to engage with followers, moderate comments, discover trending content via hashtags, and monitor brand mentions.
@@ -53,56 +54,56 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- meta
-- search hashtag
-- comments
-- recent media for a hashtag.
-- get fields on an instagram comment.
-- get hashtag recent media
-- individual comment operations.
-- instagram
-- social media
-- insights and performance metrics.
-- manages instagram direct conversations for business inquiries.
-- website embedding of instagram content.
-- delete a comment on your media.
-- reply to a comment.
-- get the most recently published media tagged with a specific hashtag.
-- content publishing and media management.
-- embeds instagram content on websites and applications.
-- videos
-- creates and publishes photos, videos, reels, and stories.
-- search for hashtags.
-- tracks content performance and audience insights.
-- content publishing
-- mentions
-- get media comments
-- get hashtag top media
-- delete comment
-- get ig media objects where the user has been tagged by other users.
-- comments on a media object.
-- search for a hashtag by name and get its id.
-- top media for a hashtag.
-- hide or unhide a comment on your media.
-- get comments on an instagram media object.
-- hide comment
-- create a comment on an instagram media object.
-- create comment
-- get comment replies
-- community engagement
-- create comment reply
-- publishes and manages content across instagram accounts.
-- monitors mentions, comments, and brand sentiment on instagram.
-- instagram direct messaging.
-- get the most popular media tagged with a specific hashtag.
-- photos
-- get user tags
-- replies to a comment.
-- hashtags
-- get replies to a comment.
 - get comment
-- comments, mentions, and community interaction.
 - media where user was tagged.
+- videos
+- get replies to a comment.
+- publishes and manages content across instagram accounts.
+- insights and performance metrics.
+- recent media for a hashtag.
+- get comment replies
+- instagram
+- mentions
+- search hashtag
+- individual comment operations.
+- get user tags
+- reply to a comment.
+- hide comment
+- website embedding of instagram content.
+- replies to a comment.
+- community engagement
+- delete a comment on your media.
+- monitors mentions, comments, and brand sentiment on instagram.
+- social media
+- get ig media objects where the user has been tagged by other users.
+- hashtags
+- get the most popular media tagged with a specific hashtag.
+- comments on a media object.
+- delete comment
+- creates and publishes photos, videos, reels, and stories.
+- search for a hashtag by name and get its id.
+- get comments on an instagram media object.
+- comments, mentions, and community interaction.
+- content publishing
+- create comment reply
+- content publishing and media management.
+- photos
+- comments
+- get hashtag top media
+- get the most recently published media tagged with a specific hashtag.
+- tracks content performance and audience insights.
+- create comment
+- create a comment on an instagram media object.
+- search for hashtags.
+- get fields on an instagram comment.
+- meta
+- get hashtag recent media
+- top media for a hashtag.
+- instagram direct messaging.
+- hide or unhide a comment on your media.
+- embeds instagram content on websites and applications.
+- get media comments
+- manages instagram direct conversations for business inquiries.
 slug: community-engagement
 tags:
 - Instagram

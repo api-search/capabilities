@@ -1,4 +1,6 @@
 ---
+categories:
+- collaboration
 consumed_apis:
 - planner
 description: Manage plans, tasks, and buckets in Microsoft Planner for team collaboration and project management. Used by project managers and team leads.
@@ -61,64 +63,64 @@ personas: []
 provider_name: Microsoft Planner
 provider_slug: microsoft-planner
 search_terms:
-- manage tasks
-- create task
-- create a new task in a plan
-- create a new bucket in a plan
-- get plan details including category labels
-- manage a specific plan
-- get task details
-- create plan
-- get plan
-- update plan details
-- list my tasks
-- list plans for a group
 - microsoft 365
-- collaboration
+- list plans for a group
 - manage a specific task
-- list group plans
-- project management
 - list tasks in a specific bucket
-- get plan details
 - update a plan
-- list bucket tasks
-- delete bucket
-- create bucket
+- update a bucket
+- update task
+- create a new bucket
+- manage a specific bucket
 - list plan buckets
-- list plan tasks
-- update a task
+- create a new planner plan
+- get details of a specific plan
+- update bucket
+- manage buckets
+- list my tasks
+- get details of a specific bucket
+- get details of a specific task
 - delete a bucket
 - list tasks assigned to the current user
-- list all tasks in a plan
-- create a new planner plan
-- task management
-- delete a plan
-- productivity
-- delete plan
-- update bucket
-- get task
-- delete a task
-- update task
-- update a bucket
-- microsoft
-- get details of a specific plan
-- get task details including checklist and references
-- get details of a specific bucket
-- update plan
-- manage a specific bucket
-- list all buckets in a plan
-- delete task
-- create a new bucket
-- update task details including checklist items
-- planner
-- get details of a specific task
-- create a new plan
-- manage plans
+- get plan details
 - get bucket
+- create task
+- update a task
+- create a new task in a plan
+- update plan
+- collaboration
+- create bucket
+- get task details
+- update plan details
+- delete a task
+- list plan tasks
+- delete a plan
 - create a new task
-- update task details
+- manage tasks
+- manage a specific plan
+- update task details including checklist items
+- create plan
+- delete task
+- microsoft
+- manage plans
+- list all buckets in a plan
+- create a new bucket in a plan
+- create a new plan
 - get bucket details
-- manage buckets
+- get task
+- list all tasks in a plan
+- delete bucket
+- list bucket tasks
+- productivity
+- planner
+- project management
+- delete plan
+- get plan details including category labels
+- list group plans
+- update task details
+- get plan
+- task management
+- get task details including checklist and references
 slug: task-management
 tags:
 - Microsoft

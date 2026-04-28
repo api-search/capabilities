@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - pcs
 description: Workflow capability composing Amazon Parallel Computing Service APIs for developers and operators.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon Parallel Computing Service
 provider_slug: amazon-parallel-computing-service
 search_terms:
-- list amazon parallel computing service resources
-- core api workflow
 - list and manage openapi.yml resources
-- developer using amazon parallel computing service apis
-- list openapi.yml
-- list resources
-- aws
+- hpc
 - high performance computing
 - amazon parallel computing service
-- scientific computing
+- aws
+- developer using amazon parallel computing service apis
+- list openapi.yml
+- list amazon parallel computing service resources
 - Developer
-- parallel computing
-- hpc
 - primary amazon parallel computing service resources
+- parallel computing
+- core api workflow
+- scientific computing
+- list resources
 slug: amazon-parallel-computing-service-workflow
 tags:
 - Amazon Parallel Computing Service

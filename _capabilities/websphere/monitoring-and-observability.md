@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - open-liberty
 - admin-rest
@@ -39,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get readiness
-- list jakarta batch job instances
-- get recent liberty log messages
-- middleware
-- get liberty logging configuration
-- cloud native
-- get open liberty overall health
-- list batch job instances
-- get was health
 - get was server health
-- metrics collection
+- get recent liberty log messages
+- get open liberty overall health
+- get liberty log messages
+- get log messages
+- get was server health status
+- get all metrics
+- get liveness
+- get liberty logging configuration
+- get all open liberty metrics
+- metrics
+- cloud native
+- observability
+- get liberty metrics
+- log management
+- get was performance monitoring data
+- list batch jobs
+- get readiness
+- monitoring
+- enterprise java
+- get batch job
+- get liberty admin metrics
+- check if liberty server is ready for traffic
+- ibm websphere
+- get performance data
+- middleware
+- get log config
+- application server
 - check if liberty server is alive
 - performance data
-- get was performance monitoring data
-- get liberty admin metrics
-- observability
-- log management
-- get liberty health
-- get batch job
-- get liveness
-- check if liberty server is ready for traffic
-- get all open liberty metrics
-- get was server health status
-- application server
-- get performance data
-- health check endpoints
-- batch job monitoring
-- get liberty log messages
-- get batch job instance details
-- metrics
-- monitoring
-- get open liberty overall health status
-- enterprise java
-- list batch jobs
-- get liberty metrics
-- ibm websphere
-- get log messages
 - j2ee
+- get open liberty overall health status
+- list batch job instances
+- get was health
+- get batch job instance details
+- health check endpoints
+- metrics collection
+- batch job monitoring
+- list jakarta batch job instances
 - microservices
-- get all metrics
-- get log config
+- get liberty health
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

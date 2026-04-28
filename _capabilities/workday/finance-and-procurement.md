@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - workday-finance
 description: Unified financial operations combining Financial Management and procurement data for finance teams to manage accounting, suppliers, expenses, and invoices.
@@ -17,27 +19,27 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list journals
 - cloud computing
-- financial management
-- list expense reports
-- list customer invoices
-- list suppliers
-- get an expense report by id
-- get accounting journal
-- get an accounting journal by id
-- procurement
 - suppliers
-- saas
-- get a supplier by id
-- workday
-- hcm
-- get expense report
-- accounting journals
-- enterprise software
-- list accounting journals
-- list purchase orders
+- procurement
 - get supplier
+- list customer invoices
+- get an accounting journal by id
+- get a supplier by id
+- get expense report
+- hcm
+- get accounting journal
+- workday
+- accounting journals
+- list purchase orders
+- saas
+- list accounting journals
+- enterprise software
+- list expense reports
+- financial management
+- get an expense report by id
+- list journals
+- list suppliers
 slug: finance-and-procurement
 tags:
 - Workday

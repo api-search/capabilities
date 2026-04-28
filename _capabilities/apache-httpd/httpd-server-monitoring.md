@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Apache HTTP Server
 provider_slug: apache-httpd
 search_terms:
-- web server
-- load balancer
-- reverse proxy
-- apache
-- open source
 - proxy
+- reverse proxy
+- web server
+- apache
+- load balancer
+- open source
 slug: httpd-server-monitoring
 tags: []
 tools: []

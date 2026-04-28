@@ -1,4 +1,6 @@
 ---
+categories:
+- incident-management
 consumed_apis:
 - ssm-incidents
 description: Unified capability for operations teams to manage incident response plans, respond to active incidents, update timelines, and coordinate responders.
@@ -21,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- create incident
-- create a new incident response plan with escalation contacts
-- automated incident response plans and escalation
-- get details of a specific incident
-- list timeline events for an incident
-- create a new incident
-- list timeline events
-- list active incidents
-- manages incident response plans and responds to operational incidents
-- Site Reliability Engineer
-- aws
-- creating, tracking, and resolving operational incidents
-- operations
-- manage incident response plans
-- list all incident response plans
-- get incident
-- list response plans
-- update the summary or status of an active incident
-- incident management
-- list incidents
-- update incident
-- devops
-- list all response plans
-- list active and recent incidents
-- Operations Engineer
-- monitors system reliability and coordinates incident resolution
-- create response plan
-- start a new incident and trigger response plan
 - manage active incidents
 - automation
+- monitors system reliability and coordinates incident resolution
+- create a new incident
+- incident management
+- list timeline events for an incident
+- get details of a specific incident
+- list incidents
+- Site Reliability Engineer
+- list all incident response plans
+- start a new incident and trigger response plan
+- update incident
+- create response plan
+- create a new incident response plan with escalation contacts
+- list active and recent incidents
+- list timeline events
+- manage incident response plans
+- list active incidents
+- update the summary or status of an active incident
+- get incident
+- devops
+- list response plans
+- aws
+- operations
+- list all response plans
+- automated incident response plans and escalation
+- creating, tracking, and resolving operational incidents
+- Operations Engineer
+- create incident
+- manages incident response plans and responds to operational incidents
 slug: incident-response
 tags:
 - AWS

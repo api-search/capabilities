@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - comprehend
 description: Workflow capability for natural language processing analysis including entity recognition, sentiment analysis, key phrase extraction, language detection, PII detection, and custom text classification. Used by data scientists and application developers to extract insights from unstructured text.
@@ -41,55 +42,55 @@ personas: []
 provider_name: Amazon Comprehend
 provider_slug: amazon-comprehend
 search_terms:
-- named entity recognition.
+- detect sentiment
+- detect the dominant language of input text using amazon comprehend.
+- describe classifier
+- detect entities
+- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
+- batch entity detection.
+- extract key phrases from text.
+- uses comprehend for bulk text analysis, topic modeling, and custom model training.
+- natural language processing
+- batch detect sentiment
+- list classifiers
+- integrates comprehend nlp apis into applications for real-time text analysis.
+- detect sentiment in multiple text documents in one batch call.
 - list available document classifiers.
+- named entity recognition.
+- detect key phrases
+- analyze syntax and parts of speech in text using amazon comprehend.
+- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
+- Data Scientist
+- detect personally identifiable information (pii) entities in text using amazon comprehend.
+- batch detect entities
+- custom text classification.
+- key phrase extraction.
+- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
+- nlp
+- text analysis
+- detect language
+- pii detection.
+- detect syntax
+- detect named entities in text.
+- detect entities in multiple documents.
+- detect sentiment in text.
+- detect pii
+- extract key noun phrases from text using amazon comprehend.
+- list custom document classifiers trained in amazon comprehend.
+- get properties and status of a specific document classifier.
+- Application Developer
+- detect sentiment in multiple documents.
 - entity recognition
 - machine learning
-- detect language
-- detect pii entities in text.
-- analyze syntax and parts of speech in text using amazon comprehend.
-- detect key phrases
-- detect personally identifiable information (pii) entities in text using amazon comprehend.
-- detect sentiment in multiple text documents in one batch call.
-- extract key phrases from text.
-- pii detection.
-- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
 - language detection.
-- sentiment analysis
-- custom text classification.
-- detect the dominant language of text.
-- get properties and status of a specific document classifier.
-- uses comprehend for bulk text analysis, topic modeling, and custom model training.
-- describe classifier
-- sentiment analysis.
-- aws
-- integrates comprehend nlp apis into applications for real-time text analysis.
-- natural language processing
 - batch sentiment analysis.
-- key phrase extraction.
-- detect sentiment in multiple documents.
-- detect entities in multiple documents.
-- detect named entities in text.
-- list custom document classifiers trained in amazon comprehend.
-- batch entity detection.
-- detect the dominant language of input text using amazon comprehend.
-- text analysis
+- aws
+- detect the dominant language of text.
 - detect entities in multiple text documents in one batch call.
-- detect sentiment in text.
-- nlp
-- detect entities
-- Data Scientist
-- batch detect sentiment
-- detect syntax
-- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
-- batch detect entities
-- detect pii
-- list classifiers
+- sentiment analysis
+- sentiment analysis.
+- detect pii entities in text.
 - amazon
-- detect sentiment
-- extract key noun phrases from text using amazon comprehend.
-- Application Developer
-- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
 slug: nlp-analysis
 tags:
 - Amazon

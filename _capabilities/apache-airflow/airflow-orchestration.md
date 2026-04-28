@@ -1,4 +1,6 @@
 ---
+categories:
+- data-engineering
 consumed_apis:
 - airflow-rest
 description: Unified capability for managing and monitoring Apache Airflow DAGs, runs, tasks, connections, and variables. Used by data engineers and platform operators to orchestrate data pipelines.
@@ -17,40 +19,40 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: apache-airflow
 search_terms:
-- list task instances
-- engineers who build and manage data pipelines using airflow dags.
-- trigger dag run
-- list airflow resource pools.
-- workflow orchestration
 - operators who monitor and maintain airflow platform health.
+- apache airflow
+- list connections
+- task scheduling
+- Platform Operator
 - list pools
-- trigger a dag run.
+- data pipeline
 - list dags
-- orchestration
+- list airflow resource pools.
+- list airflow connections for integrations.
+- python
+- scheduling
 - list all airflow dags.
-- Data Engineer
+- get dag run status
+- list task instances for monitoring dag run progress.
+- trigger an airflow dag run.
+- orchestration
 - apache
 - dag management
+- trigger a dag run.
+- open source
 - get the status of an airflow dag run.
-- list task instances for monitoring dag run progress.
-- python
-- list airflow variables.
-- Platform Operator
-- get dag run status
-- list all dags.
-- task scheduling
 - list variables
+- trigger dag run
+- engineers who build and manage data pipelines using airflow dags.
+- Data Engineer
+- workflow orchestration
 - etl
-- scheduling
-- list airflow connections for integrations.
-- apache airflow
-- data pipeline
+- dag
+- list airflow variables.
 - dag and task management capability.
 - workflow
-- trigger an airflow dag run.
-- dag
-- list connections
-- open source
+- list all dags.
+- list task instances
 slug: airflow-orchestration
 tags:
 - Apache Airflow

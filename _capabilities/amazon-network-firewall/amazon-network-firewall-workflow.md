@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - network_firewall
 description: Workflow capability composing Amazon Network Firewall APIs for developers and operators.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon Network Firewall
 provider_slug: amazon-network-firewall
 search_terms:
-- amazon network firewall
-- primary amazon network firewall resources
-- vpc
-- core api workflow
 - list and manage openapi.yml resources
-- list openapi.yml
-- developer using amazon network firewall apis
-- aws
-- list resources
-- firewall
-- Developer
+- amazon network firewall
 - intrusion detection
-- network security
 - list amazon network firewall resources
+- aws
+- firewall
+- list openapi.yml
+- network security
+- developer using amazon network firewall apis
+- Developer
+- core api workflow
+- vpc
+- primary amazon network firewall resources
+- list resources
 slug: amazon-network-firewall-workflow
 tags:
 - Amazon Network Firewall

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - factset-irn-config
 - factset-irn-contacts
@@ -25,32 +26,32 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- list irn notes
-- list notes
-- portfolio analytics
-- crm
+- irn meeting management.
+- investment analytics
+- irn
 - get irn configuration.
+- research
+- factset
+- market data
+- financial
+- get irn config
+- list irn notes
 - list irn contacts
-- list meetings
+- list irn meetings
+- list irn notes.
+- list irn custom symbols.
 - irn note management.
 - financial data
-- investment analytics
-- list irn contacts.
-- factset
-- research notes
-- research
-- list contacts
-- financial
-- irn meeting management.
-- list irn notes.
-- get irn config
-- list irn custom symbols.
+- list notes
+- portfolio analytics
 - list irn meetings.
-- list irn meetings
+- list irn contacts.
+- crm
 - irn contact management.
+- list meetings
+- list contacts
+- research notes
 - list irn symbols
-- market data
-- irn
 slug: investment-research-notes
 tags:
 - FactSet

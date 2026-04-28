@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: BB&T Corp (Truist)
 provider_slug: bbandt-corp
 search_terms:
-- open banking
-- truist
 - financial services
-- banking
 - bb&t
+- open banking
+- banking
+- truist
 slug: open-banking
 tags: []
 tools: []

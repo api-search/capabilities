@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - bizapi
 description: Workflow capability for business intelligence and CRM data enrichment using the BizAPI. Enables sales, marketing, and data teams to search and enrich company records with firmographic data including NAICS, SIC, DUNS, employee counts, and corporate hierarchy.
@@ -17,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- firmographic data
+- business intelligence and crm enrichment workflow combining company search and test endpoints
+- naics
 - business intelligence
-- test company search returning fake firmographic data.
+- segments and scores prospects using naics, sic, and financial data
 - Sales Representative
-- search companies test
-- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- crm enrichment
-- crm
+- company data
+- firmographic data
+- uses firmographic data to qualify leads and enrich crm account records
 - test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- search companies
+- search business entities by name, address, phone, or url.
+- search for business entities and retrieve firmographic data.
+- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
+- test search returning fake data without consuming api credits.
 - Data Engineer
 - Marketing Analyst
 - integrates bizapi into data pipelines for crm and data warehouse enrichment
-- segments and scores prospects using naics, sic, and financial data
-- company data
-- naics
-- uses firmographic data to qualify leads and enrich crm account records
-- appending firmographic data to crm records for sales and marketing
-- search business entities by name, address, phone, or url.
-- sic
-- test search returning fake data without consuming api credits.
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- firmographic data retrieval and company lookup
-- search companies
-- search for business entities and retrieve firmographic data.
 - sales enablement
+- test company search returning fake firmographic data.
+- appending firmographic data to crm records for sales and marketing
+- crm
+- sic
+- crm enrichment
+- firmographic data retrieval and company lookup
+- search companies test
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

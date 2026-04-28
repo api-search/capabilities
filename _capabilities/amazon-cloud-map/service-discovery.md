@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudmap
 description: Workflow for dynamically discovering and registering microservices using AWS Cloud Map, enabling DevOps and platform engineers to maintain service registries with health-based routing.
@@ -25,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- create a service
-- create service
-- devops practitioners automating service registration and health monitoring
-- list services registered in cloud map
+- dns
+- register an instance with a cloud map service
+- service discovery
+- list services
 - list instances
-- cloud map
+- create a new cloud map service within a namespace
+- dynamic microservice registration and discovery
+- amazon web services
 - list namespaces
-- discover instances
+- register instance
+- list all instances registered with a specific cloud map service
+- DevOps Engineer
+- cloud map
+- engineers managing service registries and microservice infrastructure
+- manage service discovery namespaces
+- discover service instances
+- list services registered in cloud map
+- create service
+- devops
+- list all namespaces
 - discover healthy service instances by namespace and service name
 - aws
-- dns
-- discover healthy instances
-- create a new cloud map service within a namespace
-- list all namespaces
+- create a service
+- discover instances
 - manage services
-- list services
-- register instance
-- list all cloud map service discovery namespaces
-- amazon web services
-- register an instance with a cloud map service
-- discover service instances
-- devops
-- Platform Engineer
-- dynamic service registry and health-based routing
-- manage service discovery namespaces
-- list all instances registered with a specific cloud map service
-- dynamic microservice registration and discovery
-- DevOps Engineer
-- engineers managing service registries and microservice infrastructure
 - microservices
-- service discovery
+- discover healthy instances
+- devops practitioners automating service registration and health monitoring
+- dynamic service registry and health-based routing
+- list all cloud map service discovery namespaces
+- Platform Engineer
 slug: service-discovery
 tags:
 - Amazon Web Services

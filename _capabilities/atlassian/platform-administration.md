@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - atlassian-admin
 description: Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.
@@ -33,39 +35,39 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- audit events
-- list users in an organization
-- get organization
-- policy management
-- list domains
-- list groups
-- user management
-- atlassian
-- collaboration
-- list audit events
-- get organization details
-- list users
-- list organizations
-- identity
-- administration
 - list groups in an organization
-- platform
-- group management
-- productivity
-- list domains in an organization
-- code
-- list organization groups
-- list organization domains
-- list atlassian organizations
-- list events
-- software development
-- list all atlassian organizations
-- list organization policies
 - organization management
+- get organization details
 - list organization users
 - domain management
+- atlassian
+- list organizations
+- audit events
 - list policies
+- platform
+- list organization domains
+- list audit events
+- list all atlassian organizations
+- list organization groups
+- list domains
+- list organization policies
+- collaboration
+- administration
+- identity
+- list users
+- group management
+- code
+- list domains in an organization
+- get organization
 - list organization audit events
+- productivity
+- list users in an organization
+- user management
+- list groups
+- list events
+- policy management
+- software development
+- list atlassian organizations
 slug: platform-administration
 tags:
 - Administration

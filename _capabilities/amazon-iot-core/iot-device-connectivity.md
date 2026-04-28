@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-core
 description: Unified capability for IoT Developer, Solutions Architect to manage managed cloud service for iot device connectivity and message routing operations.
@@ -14,30 +16,30 @@ provider_name: Amazon IoT Core
 provider_slug: amazon-iot-core
 search_terms:
 - amazon iot core create topic rule
-- message routing
-- create thing
-- get thing
-- amazon iot core list rules
-- create policy
-- amazon iot core create thing
-- manages amazon iot core resources and operations
-- aws
-- mqtt
-- create topic rule
-- amazon iot core list things
 - list things
-- delete thing
-- managed cloud service for iot device connectivity and message routing.
-- amazon iot core delete thing
+- manages amazon iot core resources and operations
+- create policy
 - amazon iot core attach policy
-- Solutions Architect
 - iot
 - attach policy
-- device management
+- amazon iot core create policy
+- create thing
+- IoT Developer
+- amazon iot core delete thing
+- get thing
+- create topic rule
+- amazon iot core list things
+- amazon iot core create thing
 - list rules
 - amazon iot core resources
-- amazon iot core create policy
-- IoT Developer
+- managed cloud service for iot device connectivity and message routing.
+- device management
+- delete thing
+- aws
+- mqtt
+- message routing
+- Solutions Architect
+- amazon iot core list rules
 - amazon iot core get thing
 slug: iot-device-connectivity
 tags:

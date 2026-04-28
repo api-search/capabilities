@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Blobr
 provider_slug: blobr
 search_terms:
-- ppc
-- google ads
-- marketing automation
 - advertising
+- google ads
 - ai agents
+- marketing automation
+- ppc
 slug: blobr-google-ads-ai
 tags: []
 tools: []

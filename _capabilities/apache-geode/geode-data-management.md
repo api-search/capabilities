@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - geode-rest
 description: Unified capability for managing data in Apache Geode in-memory data grid — accessing regions, executing OQL queries, and running server-side functions. Designed for application developers and platform engineers working with high-performance in-memory data.
@@ -21,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- in-memory data grid
-- distributed systems
-- list all geode regions
-- caching
-- execute an oql query
-- manage in-memory data with regions, queries, and functions
-- region crud operations, oql queries, and function execution
-- server-side function execution
-- apache
-- data management
-- data grid
-- execute query
-- execute an oql query against geode regions
-- list geode functions
-- get region keys
-- list regions
-- execute oql query
-- list geode regions
-- geode region management
-- developers using geode as a fast data store for applications
 - list available functions
 - high-performance in-memory data caching and distribution
-- engineers managing the geode cluster infrastructure
-- apache geode
+- in-memory data grid
 - get all keys stored in a geode region
-- oql query execution
-- list all regions in the apache geode data grid
-- Platform Engineer
-- in-memory
-- list all server-side functions available in the cluster
+- developers using geode as a fast data store for applications
+- execute an oql query
 - platform engineering
+- data management
+- list geode functions
+- distributed systems
+- region crud operations, oql queries, and function execution
+- execute an oql query against geode regions
+- server-side function execution
 - list functions
-- Application Developer
+- apache
+- caching
 - open source
+- list all regions in the apache geode data grid
+- execute oql query
+- list all server-side functions available in the cluster
+- list all geode regions
+- data grid
+- list geode regions
+- list regions
+- Application Developer
+- apache geode
+- manage in-memory data with regions, queries, and functions
+- get region keys
+- execute query
+- engineers managing the geode cluster infrastructure
+- in-memory
+- oql query execution
+- geode region management
+- Platform Engineer
 slug: geode-data-management
 tags:
 - Apache Geode

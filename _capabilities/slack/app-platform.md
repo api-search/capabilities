@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - slack-apps
 - slack-views
@@ -30,44 +31,44 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- open dialog
-- manage workflows.
-- manage workflows
-- workflow management.
-- open a dialog.
-- chat
-- collaboration
-- view management.
-- manage calls
-- complete a workflow function.
-- api test
-- app management.
-- t1
-- app development
-- get bot information.
-- manage ai assistant threads.
-- get bot info
-- list workflows.
-- test api connectivity.
-- messaging
-- platform
-- rtm connect
-- team communication
-- productivity
-- manage voice/video calls.
-- open a modal view.
 - complete function
 - list apps
-- open a view.
-- connect to real-time messaging.
-- bots
-- list apps.
-- list installed apps.
-- slack
-- list workflows
-- manage assistant
-- open view
 - automation
+- open a view.
+- bots
+- open dialog
+- list installed apps.
+- open view
+- app development
+- rtm connect
+- manage calls
+- manage ai assistant threads.
+- platform
+- manage workflows.
+- list workflows
+- workflow management.
+- open a modal view.
+- slack
+- list apps.
+- collaboration
+- chat
+- open a dialog.
+- manage voice/video calls.
+- complete a workflow function.
+- manage assistant
+- get bot info
+- app management.
+- productivity
+- view management.
+- t1
+- messaging
+- api test
+- connect to real-time messaging.
+- test api connectivity.
+- manage workflows
+- list workflows.
+- team communication
+- get bot information.
 slug: app-platform
 tags:
 - Slack

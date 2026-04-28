@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - amazon-health-dashboard
 description: Workflow capability for operations teams using AWS Health Dashboard to monitor AWS service health, track events affecting resources, and coordinate incident response to AWS infrastructure events.
@@ -21,43 +23,43 @@ personas: []
 provider_name: Amazon Health Dashboard
 provider_slug: amazon-health-dashboard
 search_terms:
-- get aws resources affected by specific health events
-- list health events across all accounts in an aws organization
-- get org event details
-- list aws service health events
-- get event details
-- list org events
-- manages organization-wide health visibility and notifications
-- get the catalog of all aws health event type codes and categories
-- resources affected by health events
-- list affected entities
-- incident response
-- list events across the organization
-- Cloud Administrator
-- aws
-- get event types
-- operations
-- list aws health events filtering by service, region, or status
-- get comprehensive details about specific aws health events including description and guidance
-- organization-wide events
-- get org affected entities
-- tracks events affecting ci/cd and deployment infrastructure
-- amazon health dashboard
-- get detailed health event information for organization-level events
-- notifications
-- get affected aws resources
-- aws health events
-- monitoring
 - service status
+- tracks events affecting ci/cd and deployment infrastructure
+- organization-wide events
+- list aws health events filtering by service, region, or status
+- manages organization-wide health visibility and notifications
+- resources affected by health events
+- list org events
+- aws health events
+- get comprehensive details about specific aws health events including description and guidance
+- get affected aws resources
+- get the catalog of all aws health event type codes and categories
+- list health events across all accounts in an aws organization
+- get event details
+- get org affected entities
+- get org event details
 - health monitoring
-- Operations Engineer
-- list events
-- get resources affected by health events across the organization
-- monitors aws service health and coordinates response to events
-- DevOps Engineer
-- list health events
 - list org health events
+- list affected entities
+- DevOps Engineer
+- incident response
+- get event types
+- list health events
+- get resources affected by health events across the organization
+- Cloud Administrator
+- amazon health dashboard
+- notifications
+- monitoring
+- list events across the organization
+- aws
+- list aws service health events
 - get affected resources
+- get aws resources affected by specific health events
+- get detailed health event information for organization-level events
+- list events
+- monitors aws service health and coordinates response to events
+- Operations Engineer
+- operations
 slug: amazon-health-dashboard-operations-monitoring
 tags:
 - Amazon Health Dashboard

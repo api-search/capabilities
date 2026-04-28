@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudhsm
 description: Workflow for cryptographic key management using Amazon CloudHSM for Security Engineer personas.
@@ -9,15 +10,15 @@ personas: []
 provider_name: Amazon CloudHSM
 provider_slug: amazon-cloudhsm
 search_terms:
-- aws
-- Security Engineer
 - cloudhsm
-- compliance
-- cryptography
-- amazon web services
-- security
+- aws
 - hsm
+- Security Engineer
 - amazon cloudhsm
+- security
+- cryptography
+- compliance
+- amazon web services
 slug: cryptographic-key-management
 tags:
 - Amazon Web Services

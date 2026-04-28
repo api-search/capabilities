@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
-- unified api
-- ipaas
-- workflows
 - integrations
-- embedded integrations
 - automation
+- unified api
+- embedded integrations
+- workflows
+- ipaas
 slug: integration-platform
 tags: []
 tools: []

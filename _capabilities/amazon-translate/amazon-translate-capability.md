@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Amazon Translate
 provider_slug: amazon-translate
 search_terms:
-- translation
-- machine translation
-- localization
 - aws
+- machine translation
 - language processing
+- localization
+- translation
 - nlp
 slug: amazon-translate-capability
 tags: []

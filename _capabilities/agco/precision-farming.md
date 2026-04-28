@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - agco-agcommand
 description: Unified workflow capability for AGCO precision farming — monitoring machine location, performance telemetry, and operating conditions across a connected fleet. Used by farm managers and precision agriculture software developers.
@@ -27,31 +29,31 @@ personas:
 provider_name: agco
 provider_slug: agco
 search_terms:
-- get machine telemetry.
-- precision ag developer
-- precision farming
-- list all connected agco machines.
-- machine location history.
-- machine fleet management.
-- get real-time performance telemetry for an agco machine.
-- list all agco agricultural machines connected to the account.
-- list machines
-- telematics
-- agricultural machine inventory and fleet management.
-- machine telematics.
-- real-time engine, fuel, and operational telemetry monitoring.
-- get machine telemetry
-- farm manager
-- gps-based machine location and field work tracking.
-- agco
-- agriculture
-- iot
-- agricultural operation manager monitoring machine fleet location and performance.
-- get machine location history.
 - developer building farm management applications using agco machine telemetry data.
-- get location history for an agco machine.
+- list machines
+- iot
 - fleet monitoring and performance tracking for agco agricultural machines.
 - get machine locations
+- machine location history.
+- agricultural operation manager monitoring machine fleet location and performance.
+- get machine telemetry.
+- real-time engine, fuel, and operational telemetry monitoring.
+- list all agco agricultural machines connected to the account.
+- get machine location history.
+- farm manager
+- agricultural machine inventory and fleet management.
+- get location history for an agco machine.
+- machine telematics.
+- precision ag developer
+- agco
+- telematics
+- gps-based machine location and field work tracking.
+- get real-time performance telemetry for an agco machine.
+- agriculture
+- precision farming
+- get machine telemetry
+- list all connected agco machines.
+- machine fleet management.
 slug: precision-farming
 tags:
 - AGCO

@@ -1,4 +1,6 @@
 ---
+categories:
+- security
 consumed_apis:
 - codegurusecurity
 description: Unified workflow for security and DevOps teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation using Amazon CodeGuru Security.
@@ -9,35 +11,35 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- devsecops
-- get metrics summary
-- devsecops engineer persona.
-- create a new security scan
-- DevSecOps Engineer
-- sast
-- get security metrics summary
-- aws
-- get security findings from a scan
-- Security Engineer
-- create scan
-- get scan
-- list findings across all scans in the account
-- batch get findings
-- get details about multiple findings
-- list findings by account
-- developer persona.
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
-- security
-- code analysis
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
-- amazon
-- Developer
-- get details about a security scan
-- list scans
-- get findings
 - developer tools
-- list security scans
+- list scans
+- create scan
+- get findings
+- Developer
+- get scan
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
 - security engineer persona.
+- developer persona.
+- security
+- get security metrics summary
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
+- list security scans
+- DevSecOps Engineer
+- devsecops
+- Security Engineer
+- get details about a security scan
+- devsecops engineer persona.
+- get metrics summary
+- create a new security scan
+- list findings by account
+- aws
+- sast
+- get details about multiple findings
+- list findings across all scans in the account
+- code analysis
+- get security findings from a scan
+- amazon
+- batch get findings
 slug: amazon-codeguru-security-security-scanning
 tags:
 - Amazon

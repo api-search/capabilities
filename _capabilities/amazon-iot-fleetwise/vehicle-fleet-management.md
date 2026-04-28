@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-fleetwise
 description: Unified capability for Automotive Engineer, IoT Developer to manage collect, transform, and transfer vehicle data to the cloud operations.
@@ -13,34 +15,34 @@ personas: []
 provider_name: Amazon IoT FleetWise
 provider_slug: amazon-iot-fleetwise
 search_terms:
-- vehicle telematics
-- list vehicles
-- amazon iot fleetwise list fleets
-- amazon iot fleetwise list vehicles
 - create signal catalog
-- list campaigns
-- aws
 - collect, transform, and transfer vehicle data to the cloud.
-- amazon iot fleetwise create fleet
-- amazon iot fleetwise resources
-- telematics
-- amazon iot fleetwise list signal catalogs
-- create vehicle
-- amazon iot fleetwise list campaigns
-- connected vehicles
-- amazon iot fleetwise create campaign
-- iot
-- vehicle data
-- automotive
 - create campaign
-- list signal catalogs
-- create fleet
-- IoT Developer
-- Automotive Engineer
+- iot
 - amazon iot fleetwise create signal catalog
-- manages amazon iot fleetwise resources and operations
+- vehicle telematics
+- list signal catalogs
+- connected vehicles
+- IoT Developer
+- amazon iot fleetwise list fleets
+- Automotive Engineer
+- list vehicles
+- amazon iot fleetwise resources
+- list campaigns
+- telematics
+- amazon iot fleetwise create campaign
+- amazon iot fleetwise list campaigns
+- amazon iot fleetwise list vehicles
 - amazon iot fleetwise create vehicle
+- amazon iot fleetwise create fleet
+- create fleet
 - list fleets
+- amazon iot fleetwise list signal catalogs
+- manages amazon iot fleetwise resources and operations
+- automotive
+- create vehicle
+- aws
+- vehicle data
 slug: vehicle-fleet-management
 tags:
 - IoT

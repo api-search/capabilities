@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,12 +10,12 @@ provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
 - data quality
+- ai agents
+- data observability
 - intelligence
+- data pipeline
 - data management
 - observability
-- data observability
-- ai agents
-- data pipeline
 slug: data-observability
 tags: []
 tools: []

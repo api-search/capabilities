@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-app-runner
 description: Workflow for managing Amazon App Runner API resources.
@@ -13,22 +14,22 @@ personas: []
 provider_name: Amazon App Runner
 provider_slug: amazon-app-runner
 search_terms:
-- web applications
-- list amazon app runner api resources.
 - manage amazon app runner api resources.
-- list resources
-- aws
-- amazon
-- engineer automating deployments using app runner api.
-- DevOps Engineer
-- containers
-- Backend Developer
 - developer deploying web apis and services on app runner.
-- serverless
-- list resources.
-- managed service
 - deployment
 - ci/cd
+- aws
+- list amazon app runner api resources.
+- web applications
+- containers
+- serverless
+- engineer automating deployments using app runner api.
+- list resources.
+- managed service
+- Backend Developer
+- DevOps Engineer
+- amazon
+- list resources
 slug: app-runner-management
 tags:
 - Amazon

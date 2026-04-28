@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Bloom Credit
 provider_slug: bloom-credit
 search_terms:
+- credit scores
+- fintech
 - credit bureau
-- credit reports
 - lending
 - personal finance
-- fintech
-- credit scores
+- credit reports
 slug: bloom-credit-credit-intelligence
 tags: []
 tools: []

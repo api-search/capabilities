@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-ses
 description: Workflow capability for Amazon Ses. Enables automation of Amazon Ses resources for cloud operations teams.
@@ -13,22 +14,22 @@ personas: []
 provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
-- notifications
 - transactional email
-- amazon ses
-- list resources
+- email
+- amazon ses resources
 - aws
-- marketing email
-- cloud operations
-- email deliverability
+- automation workflow for amazon ses
 - list amazon ses resources
+- engineer managing amazon ses resources
+- cloud operations
+- marketing email
+- notifications
 - smtp
+- email deliverability
+- amazon ses
 - aws cloud resource management
 - email service
-- automation workflow for amazon ses
-- email
-- engineer managing amazon ses resources
-- amazon ses resources
+- list resources
 slug: amazon-ses
 tags:
 - Amazon Ses

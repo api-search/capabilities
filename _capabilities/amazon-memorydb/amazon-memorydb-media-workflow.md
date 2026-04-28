@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - memorydb
 description: Workflow capability for Amazon MemoryDB media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MemoryDB
 provider_slug: amazon-memorydb
 search_terms:
-- amazon memorydb deletecluster
-- amazon memorydb updatecluster
-- developer building media processing applications
-- list jobs
-- amazon memorydb media processing workflow
-- describe ac ls
-- delete cluster
-- manage media processing jobs
-- amazon memorydb deleteacl
-- engineer managing broadcast media workflows
-- aws
-- delete acl
-- update cluster
-- describe clusters
-- amazon memorydb describeacls
-- amazon memorydb updateacl
-- amazon memorydb describeclusters
-- Broadcast Engineer
-- media processing
-- workflow
-- amazon memorydb createcluster
-- Media Developer
-- aws media processing and delivery
-- create cluster
-- media
 - broadcasting
-- create acl
+- delete cluster
+- amazon memorydb updateacl
+- describe ac ls
+- Broadcast Engineer
+- amazon memorydb deleteacl
+- manage media processing jobs
 - update acl
+- describe clusters
+- create cluster
+- aws media processing and delivery
+- delete acl
+- amazon memorydb describeacls
+- create acl
+- media
+- amazon memorydb deletecluster
+- amazon memorydb media processing workflow
+- Media Developer
 - amazon memorydb createacl
+- list jobs
+- media processing
+- amazon memorydb createcluster
+- aws
+- workflow
+- developer building media processing applications
+- amazon memorydb updatecluster
+- amazon memorydb describeclusters
+- engineer managing broadcast media workflows
+- update cluster
 slug: amazon-memorydb-media-workflow
 tags:
 - AWS

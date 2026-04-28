@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - james-webadmin
 description: Workflow capability for mail server administrators to manage domains, users, mailboxes, and monitor tasks in Apache James.
@@ -29,28 +30,28 @@ personas: []
 provider_name: Apache James
 provider_slug: apache-james
 search_terms:
-- apache james
-- list domains
-- create domain
-- create a new email domain in the james server
-- jmap
-- create user
-- list tasks
-- list all email domains configured in the james server
-- mail server
 - email
-- imap
-- java
+- list tasks
 - list asynchronous administrative tasks and their statuses
-- email administration
-- administrators who manage james mail server domains, users, and queues
-- list users
-- smtp
-- Mail Administrator
-- open source
 - create a new mail user account
 - mail server management
+- jmap
+- Mail Administrator
 - list all user accounts in the james mail server
+- email administration
+- smtp
+- apache james
+- java
+- list domains
+- open source
+- list users
+- create a new email domain in the james server
+- list all email domains configured in the james server
+- imap
+- administrators who manage james mail server domains, users, and queues
+- create domain
+- create user
+- mail server
 slug: mail-server-management
 tags:
 - Apache James

@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - giraph-job
 description: Capability for monitoring Apache Giraph graph processing jobs on Hadoop YARN — tracking job status, completion progress, and cluster capacity. Designed for data engineers running large-scale graph algorithms. Note - Apache Giraph has been retired.
@@ -17,32 +19,32 @@ personas: []
 provider_name: Apache Giraph
 provider_slug: apache-giraph
 search_terms:
-- engineers running large-scale graph algorithms with giraph on hadoop
-- get metrics
-- list jobs
-- big data
-- get giraph job
-- get yarn cluster capacity metrics for running giraph jobs
-- get detailed status of a specific giraph job
-- giraph graph processing jobs
 - get yarn cluster metrics
-- Data Engineer
-- list all giraph graph processing jobs running on yarn
-- iterative bsp graph algorithm execution at scale
-- cluster capacity metrics
+- list giraph jobs
+- get metrics
 - get cluster metrics
+- giraph graph processing jobs
 - apache
+- bsp
+- engineers running large-scale graph algorithms with giraph on hadoop
+- graph processing
+- list all giraph graph processing jobs
+- open source
+- iterative bsp graph algorithm execution at scale
+- get giraph job
+- job status tracking and cluster capacity monitoring
 - monitor giraph graph processing jobs on hadoop yarn
 - retired
-- list giraph jobs
-- hadoop
-- bsp
-- list all giraph graph processing jobs
 - monitoring
-- job status tracking and cluster capacity monitoring
-- graph processing
+- list all giraph graph processing jobs running on yarn
+- Data Engineer
+- get yarn cluster capacity metrics for running giraph jobs
+- cluster capacity metrics
+- big data
+- list jobs
+- get detailed status of a specific giraph job
+- hadoop
 - apache giraph
-- open source
 slug: giraph-graph-processing
 tags:
 - Apache Giraph

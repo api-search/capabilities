@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - slides-api
 description: Unified presentation management workflow for creating, reading, editing, and generating thumbnails of Google Slides presentations for content creators and automation engineers.
@@ -29,30 +30,30 @@ personas: []
 provider_name: Google Slides
 provider_slug: google-slides
 search_terms:
-- get a presentation by id with all slides, masters, and layouts.
-- create presentation
-- get a thumbnail image of a presentation page.
-- get a specific page.
-- get page
-- collaboration
-- create and manage presentations.
 - create a new presentation.
-- create a new blank google slides presentation.
-- get a presentation by id.
-- get presentation
-- get a page thumbnail.
-- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
-- productivity
-- google
 - google workspace
-- content creation
-- get a specific page from a presentation.
-- apply batch updates.
-- batch update presentation
-- batch update
-- access individual pages and thumbnails.
-- presentations
+- get a thumbnail image of a presentation page.
 - slides
+- get a specific page.
+- presentations
+- content creation
+- google
+- create a new blank google slides presentation.
+- apply batch updates.
+- collaboration
+- get presentation
+- batch update presentation
+- access individual pages and thumbnails.
+- get a page thumbnail.
+- create presentation
+- get a presentation by id.
+- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
+- get a presentation by id with all slides, masters, and layouts.
+- get a specific page from a presentation.
+- productivity
+- create and manage presentations.
+- batch update
+- get page
 - get page thumbnail
 slug: presentation-management
 tags:

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Verified Permissions
 provider_slug: amazon-verified-permissions
 search_terms:
-- security
+- authorization
 - aws
 - permissions
-- authorization
+- security
 slug: amazon-verified-permissions-capability
 tags: []
 tools: []

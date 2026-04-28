@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - google-apps-script
 description: Workflow capability for managing Google Apps Script projects, deployments, versions, and script execution. Enables developers and IT admins to automate Google Workspace workflows, manage script lifecycle, and monitor execution health.
@@ -49,54 +51,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- delete deployment
-- script project details and content
+- create a new script project
+- create a new, empty script project
+- create a new deployment
+- get version
+- google workspace
+- list processes
+- create deployment
+- deployments
 - automation
 - list versions of a script project
-- get a script project's metadata
 - delete a deployment
-- create a new deployment
-- process monitoring
-- get deployment
-- get project metrics
-- list script processes
-- list deployments
-- get version
 - apps script
-- update deployment
-- update project content
-- version management
+- script project management
+- scripting
+- get a specific deployment
+- get deployment
+- list deployments for a script project
+- create version
 - get a specific version
+- update deployment
 - create project
 - list versions
-- list processes
-- create a new, empty script project
-- create a new immutable version
-- get a specific deployment
-- deployments
-- get project
-- run script
-- update a deployment
-- create a deployment of an apps script project
-- create version
-- google
-- google workspace
-- update the code content of a script project
-- list deployments for a script project
-- get execution metrics for a script project
-- list a specific script's executed processes
-- list deployments of an apps script project
 - run a function in an apps script project
-- script project metrics
-- deployment management
-- list execution processes
-- create deployment
-- script project management
+- google
+- get a script project's metadata
+- create a new immutable version
+- list a specific script's executed processes
+- script project details and content
+- update project content
+- process monitoring
+- delete deployment
 - get the code content of a script project
-- scripting
+- deployment management
+- list deployments
+- create a deployment of an apps script project
 - script project content
-- create a new script project
+- get project metrics
+- get execution metrics for a script project
+- script project metrics
+- update a deployment
+- get project
+- list script processes
+- update the code content of a script project
+- list execution processes
 - get project content
+- list deployments of an apps script project
+- run script
+- version management
 slug: workspace-automation
 tags:
 - Google

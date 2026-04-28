@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - backupify-saas-api
 description: SaaS backup management workflow for Backupify (Datto), covering domain administration and seat licensing for Microsoft 365 and Google Workspace. Serves MSPs and IT administrators managing cloud-to-cloud backup coverage.
@@ -21,35 +22,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- list domains
-- bulk seat change
-- list seats
 - microsoft 365
-- customer backup seats
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- managed service provider technician managing backup coverage across customer accounts
-- IT Administrator
-- saas backup domains
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- msp
-- list seats for a customer
+- saas backup
 - google workspace
-- data protection
-- list backup domains
-- cloud backup
-- MSP Technician
-- bulk license/unlicense/pause seats
+- cloud-to-cloud backup and recovery for saas platforms
 - domain and seat management for backupify cloud-to-cloud backup
+- bulk seat change
+- list backup domains
+- IT Administrator
 - backupify
 - bulk change seat licenses
-- saas backup
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- cloud-to-cloud backup and recovery for saas platforms
-- list all backup customer domains
-- list all backupify saas backup domains with customer ids and subscription information
-- datto
+- list domains
 - list backup seats
 - bulk seat management
+- MSP Technician
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
+- list all backupify saas backup domains with customer ids and subscription information
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- managed service provider technician managing backup coverage across customer accounts
+- saas backup domains
+- cloud backup
+- list seats
+- customer backup seats
+- list seats for a customer
+- data protection
+- msp
+- list all backup customer domains
+- bulk license/unlicense/pause seats
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- datto
 slug: saas-backup-management
 tags:
 - Backupify

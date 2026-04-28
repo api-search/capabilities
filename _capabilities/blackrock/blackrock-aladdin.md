@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: BlackRock
 provider_slug: blackrock
 search_terms:
-- investment management
-- finance
-- fintech
 - risk analytics
-- asset management
 - portfolio management
+- investment management
+- fintech
+- asset management
+- finance
 slug: blackrock-aladdin
 tags: []
 tools: []

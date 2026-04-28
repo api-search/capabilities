@@ -1,4 +1,6 @@
 ---
+categories:
+- security
 consumed_apis: []
 description: Centrally manage WAF, Shield, Network Firewall, and security group policies across AWS accounts.
 layout: capability
@@ -8,13 +10,13 @@ personas: []
 provider_name: Amazon Firewall Manager
 provider_slug: amazon-firewall-manager
 search_terms:
-- multi-account
-- network security
-- firewall
 - aws
-- compliance
+- firewall
 - security
 - aws organizations
+- compliance
+- multi-account
+- network security
 slug: amazon-firewall-manager-security-governance
 tags:
 - Security

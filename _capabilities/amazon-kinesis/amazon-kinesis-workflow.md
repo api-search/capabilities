@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - kinesis
 description: Unified workflow capability for Amazon Kinesis combining resource management and operations.
@@ -9,25 +10,25 @@ personas: []
 provider_name: Amazon Kinesis
 provider_slug: amazon-kinesis
 search_terms:
-- analytics
-- big data
-- amazon kinesis
-- data processing
-- unified workflow for amazon kinesis resource management
-- streams list streams
-- aws
-- streaming
-- real-time
-- Administrator
-- integrates api into applications
-- manages resources and configurations
-- streams create stream
-- creates a kinesis data stream.
 - provides a summarized description of the specified kinesis data stream.
-- workflow
-- streams describe stream summary
-- lists your kinesis data streams.
 - Developer
+- Administrator
+- analytics
+- unified workflow for amazon kinesis resource management
+- streams create stream
+- data processing
+- streaming
+- streams describe stream summary
+- streams list streams
+- real-time
+- creates a kinesis data stream.
+- lists your kinesis data streams.
+- big data
+- integrates api into applications
+- aws
+- workflow
+- amazon kinesis
+- manages resources and configurations
 slug: amazon-kinesis-workflow
 tags:
 - Amazon Kinesis

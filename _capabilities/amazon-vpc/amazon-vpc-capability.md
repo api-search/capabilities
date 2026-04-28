@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
-- vpc
 - aws
+- vpc
 - networking
+- private cloud
 - security
 - subnets
-- private cloud
 slug: amazon-vpc-capability
 tags: []
 tools: []

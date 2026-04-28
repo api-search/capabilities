@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - bigip-icontrol
 description: Unified workflow for managing application delivery infrastructure including virtual servers, server pools, backend nodes, and traffic profiles on F5 BIG-IP. Used by network administrators and DevOps engineers for load balancing configuration and application traffic management.
@@ -81,79 +82,79 @@ personas: []
 provider_name: F5 Networks
 provider_slug: f5-networks
 search_terms:
-- create pool
-- add pool member
-- get pool details
-- automation
-- list tcp profiles
 - get details of a pool member
-- delete a node
-- update a virtual server
-- list all backend nodes
-- add a pool member
-- create node
-- get virtual server
-- add a member to a pool
-- list pools
-- update pool member
-- delete node
-- manage a specific pool
-- list http traffic profiles
-- multi-cloud
-- delete a virtual server
-- get node details
-- update a pool
 - list all pools
-- get node
-- list nodes
-- remove a pool member
-- create a new backend node
+- update a pool
+- update a virtual server
+- delete virtual server
 - get pool member
+- list nodes
+- automation
+- multi-cloud
+- create a new pool
+- delete pool
+- list pools
+- delete a node
 - get details of a specific node
-- edge computing
+- get pool details
+- view traffic profiles
+- manage a specific pool
+- list virtual servers
+- create pool
+- get pool
+- update virtual server
+- delete node
+- nginx
+- update pool member
+- create a node
+- get virtual server
+- update pool
+- update a node
+- list tcp profiles
+- get virtual server details
+- security
+- network management
+- create a new virtual server
+- get node details
+- list pool members
+- manage a specific node
+- add a member to a pool
+- delete pool member
+- api gateway
 - list all virtual servers on the big-ip
 - list members of a pool
-- list tcp traffic profiles
-- manage server pools
-- update a pool member
-- update pool
-- get pool
-- manage a specific virtual server
-- list virtual servers
-- update node
-- application delivery
-- create a node
-- kubernetes
-- manage backend nodes
-- manage a specific node
-- update a node
-- delete virtual server
-- get details of a specific pool
-- create a new virtual server
-- api gateway
-- list all virtual servers
 - list http profiles
-- delete pool
-- security
-- create virtual server
-- f5
-- list pool members
-- delete pool member
-- view traffic profiles
-- nginx
-- list all server pools
-- network management
-- manage virtual servers that direct client traffic
-- get virtual server details
-- waf
+- application delivery
+- get node
 - list client ssl profiles
-- update virtual server
-- delete a pool
-- manage pool members
-- create a new pool
-- get details of a specific virtual server
+- manage virtual servers that direct client traffic
+- create virtual server
+- list all server pools
+- create a new backend node
+- kubernetes
+- f5
 - load balancing
+- update a pool member
+- add a pool member
+- manage a specific virtual server
+- manage backend nodes
+- get details of a specific pool
+- edge computing
+- manage server pools
+- list all virtual servers
+- remove a pool member
+- list tcp traffic profiles
+- delete a pool
+- get details of a specific virtual server
+- manage pool members
+- waf
+- list http traffic profiles
+- update node
+- create node
+- list all backend nodes
+- add pool member
 - list all nodes
+- delete a virtual server
 slug: application-delivery
 tags:
 - F5

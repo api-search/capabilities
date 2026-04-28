@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - apis-io-search
 description: Workflow capability for searching, discovering, and submitting APIs using the APIs.io search engine. Enables developers and platform engineers to programmatically find APIs by keyword across the full APIs.io index and submit their own APIs for discovery by others. The primary personas are API developers building integrations and API producers wanting their APIs discovered.
@@ -17,29 +18,29 @@ personas: []
 provider_name: APIs.io
 provider_slug: apis-io
 search_terms:
+- api discovery
+- apis.io
+- search apis
+- api indexing
+- search for apis in the directory and submit new apis for indexing
+- an api owner or provider submitting their api for discovery in the index
+- API Developer
+- api aggregation
+- a developer searching for apis to integrate into their applications
+- submitting new apis to the directory for indexing and discovery
 - submit a new api to the directory
+- api directory
+- search for apis by keyword or phrase
 - search and submit apis in the directory
 - API Producer
-- a developer searching for apis to integrate into their applications
-- submit a new api to the apis.io index by providing a valid apis.json document. the api will be reviewed and added to the searchable directory.
-- apis.json
-- apis.io
-- api rating
-- api aggregation
-- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
-- API Developer
-- api discovery
-- finding apis in the directory by keyword or topic
-- api directory
-- submitting new apis to the directory for indexing and discovery
-- search for apis in the directory and submit new apis for indexing
 - api search
+- api rating
+- apis.json
 - search engine
-- search for apis by keyword or phrase
-- search apis
+- finding apis in the directory by keyword or topic
+- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
 - submit api
-- an api owner or provider submitting their api for discovery in the index
-- api indexing
+- submit a new api to the apis.io index by providing a valid apis.json document. the api will be reviewed and added to the searchable directory.
 slug: api-discovery-search
 tags:
 - API Discovery

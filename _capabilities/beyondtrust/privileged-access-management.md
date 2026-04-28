@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - beyondtrust
 description: Unified privileged access management workflow combining Password Safe credential management, access request workflows, and secrets management. Used by security engineers and DevOps teams to manage just-in-time privileged access and secrets retrieval for automated pipelines.
@@ -51,54 +52,54 @@ personas:
 provider_name: BeyondTrust
 provider_slug: beyondtrust
 search_terms:
-- get credentials for approved request
-- list access requests
 - privileged access management
-- individual secret operations
-- cancel and delete an access request
-- devops engineer
-- zero trust
-- list managed systems
 - credentials
-- access request management
-- retrieve credentials for an approved privileged access request
-- list secrets stored in beyondtrust secrets safe
-- get secret
-- access
-- just in time access
-- delete secret
-- create a new secret
-- delete a secret
-- privileged account discovery
-- get request credentials
-- create a just-in-time access request for a privileged account
-- list secrets
-- secrets management
-- list systems registered in password safe
 - devops engineer retrieving secrets and credentials for ci/cd pipelines
-- secure storage and retrieval of secrets and credentials
-- security team member managing privileged access policies and requests
-- create secret
-- retrieve a specific secret value from secrets safe
+- security engineer
+- list managed accounts
 - credential retrieval for approved requests
 - access management
-- store a new secret in secrets safe
-- list requests
-- managed system discovery
-- security
-- secrets
-- security engineer
-- get a secret value
-- delete request
-- just-in-time access to privileged accounts on managed systems
-- create request
-- list all active privileged access requests
-- list managed accounts
-- create an access request
-- privileged access
 - compliance
+- store a new secret in secrets safe
+- privileged access
+- list all active privileged access requests
+- cancel and delete an access request
+- get secret
 - beyondtrust
+- just in time access
+- delete secret
+- list systems registered in password safe
+- secrets management
+- create a new secret
+- individual secret operations
+- just-in-time access to privileged accounts on managed systems
+- security
+- list secrets stored in beyondtrust secrets safe
+- security team member managing privileged access policies and requests
+- secrets
+- get request credentials
+- get a secret value
+- retrieve credentials for an approved privileged access request
+- create secret
+- privileged account discovery
+- create request
+- delete a secret
+- create a just-in-time access request for a privileged account
 - list privileged accounts available for just-in-time access
+- access request management
+- list requests
+- zero trust
+- create an access request
+- retrieve a specific secret value from secrets safe
+- list secrets
+- access
+- delete request
+- secure storage and retrieval of secrets and credentials
+- list access requests
+- devops engineer
+- list managed systems
+- managed system discovery
+- get credentials for approved request
 slug: privileged-access-management
 tags:
 - BeyondTrust

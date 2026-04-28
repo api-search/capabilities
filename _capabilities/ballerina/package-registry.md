@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ballerina-central
 description: Ballerina Central package registry workflow for discovering, searching, and retrieving Ballerina language packages. Serves Ballerina developers and integration engineers building on the Ballerina language ecosystem.
@@ -17,31 +18,31 @@ personas: []
 provider_name: Ballerina
 provider_slug: ballerina
 search_terms:
-- get ballerina package version
-- package discovery and retrieval from ballerina central
-- search for ballerina packages in the central registry by name, keyword, or organization
-- search ballerina packages
-- get ballerina package
-- integrations
-- developer building integration services using the ballerina language
-- integration
-- engineer building enterprise integrations using ballerina language packages
-- package registry
-- package discovery and search
-- get details about a specific version of a ballerina package
-- discovery and retrieval of ballerina language packages
-- Integration Engineer
-- get package details
-- orchestrations
-- ballerina
-- package details
-- programming language
 - search for ballerina packages
-- get details about a specific ballerina package including versions and documentation
+- programming language
+- package details
+- integration
+- developer building integration services using the ballerina language
+- get ballerina package
+- Integration Engineer
+- get details about a specific version of a ballerina package
+- orchestrations
 - get package
-- search packages
-- open source
+- discovery and retrieval of ballerina language packages
+- search for ballerina packages in the central registry by name, keyword, or organization
 - Ballerina Developer
+- search ballerina packages
+- open source
+- package registry
+- integrations
+- engineer building enterprise integrations using ballerina language packages
+- search packages
+- package discovery and retrieval from ballerina central
+- get ballerina package version
+- get package details
+- get details about a specific ballerina package including versions and documentation
+- ballerina
+- package discovery and search
 slug: package-registry
 tags:
 - Ballerina

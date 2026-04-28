@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - service-bus
 description: Unified workflow for managing Azure Service Bus messaging infrastructure including namespaces, queues, topics, and subscriptions. Designed for cloud architects and platform engineers managing enterprise messaging.
@@ -25,33 +27,33 @@ personas: []
 provider_name: Azure Service Bus
 provider_slug: azure-service-bus
 search_terms:
-- cloud infrastructure
-- create or update a service bus namespace
-- get namespace details
-- message queues
-- list namespaces
-- list topics within a service bus namespace
-- list queues within a service bus namespace
-- cloud
-- delete namespace
-- message broker
-- pub/sub topics
-- messaging
-- service bus namespaces
-- list all namespaces
-- list queues
-- get details of a specific service bus namespace
-- pub/sub
-- get namespace
-- enterprise
-- create or update namespace
-- azure
-- list azure service bus namespaces in a subscription
-- namespace details
-- queues
-- service bus
-- delete a service bus namespace
 - list topics
+- create or update namespace
+- service bus
+- cloud infrastructure
+- list queues within a service bus namespace
+- get namespace
+- queues
+- create or update a service bus namespace
+- pub/sub topics
+- delete a service bus namespace
+- enterprise
+- service bus namespaces
+- list topics within a service bus namespace
+- namespace details
+- get details of a specific service bus namespace
+- list all namespaces
+- get namespace details
+- azure
+- messaging
+- list azure service bus namespaces in a subscription
+- message broker
+- delete namespace
+- pub/sub
+- message queues
+- cloud
+- list namespaces
+- list queues
 slug: messaging-management
 tags:
 - Azure

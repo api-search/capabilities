@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - eventbridge_pipes
 description: Unified capability for managing Amazon EventBridge Pipes resources. Combines Amazon EventBridge Pipes APIs for Integration Engineer workflows in Event Processing.
@@ -49,36 +50,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- amazon eventbridge pipes updatepipe
 - amazon eventbridge pipes untagresource
-- amazon eventbridge pipes startpipe
-- serverless
-- UpdatePipe
+- UntagResource
 - integration
-- event-driven
-- aws
-- ListPipes
+- amazon eventbridge pipes startpipe
+- amazon eventbridge pipes stoppipe
+- ListTagsForResource
+- amazon eventbridge pipes listtagsforresource
 - DeletePipe
+- amazon web services
+- amazon eventbridge pipes updatepipe
+- serverless
 - DescribePipe
-- amazon eventbridge pipes createpipe
 - amazon eventbridge pipes deletepipe
+- amazon eventbridge pipes tagresource
+- TagResource
+- UpdatePipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- operations teams managing amazon eventbridge pipes infrastructure
 - developers building applications using amazon eventbridge pipes
+- CreatePipe
+- StartPipe
+- ListPipes
+- event-driven
 - messaging
+- aws
+- amazon eventbridge pipes createpipe
 - point-to-point integration between event producers and consumers
 - amazon eventbridge pipes describepipe
-- amazon eventbridge pipes stoppipe
-- operations teams managing amazon eventbridge pipes infrastructure
-- CreatePipe
-- TagResource
-- amazon web services
-- StartPipe
-- StopPipe
-- amazon eventbridge pipes tagresource
-- ListTagsForResource
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- amazon eventbridge pipes listtagsforresource
-- UntagResource
 - amazon eventbridge pipes listpipes
+- StopPipe
 slug: amazon-eventbridge-pipes-capability
 tags:
 - Amazon Web Services

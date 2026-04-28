@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-robomaker
 description: Workflow capability for Amazon Robomaker. Enables automation of Amazon Robomaker resources for cloud operations teams.
@@ -13,17 +14,17 @@ personas: []
 provider_name: Amazon RoboMaker
 provider_slug: amazon-robomaker
 search_terms:
-- amazon robomaker
-- engineer managing amazon robomaker resources
-- simulation
-- list resources
-- aws
-- amazon robomaker resources
-- robotics
-- cloud operations
+- list amazon robomaker resources
 - automation workflow for amazon robomaker
 - aws cloud resource management
-- list amazon robomaker resources
+- engineer managing amazon robomaker resources
+- simulation
+- aws
+- robotics
+- cloud operations
+- amazon robomaker resources
+- amazon robomaker
+- list resources
 slug: amazon-robomaker
 tags:
 - Amazon Robomaker

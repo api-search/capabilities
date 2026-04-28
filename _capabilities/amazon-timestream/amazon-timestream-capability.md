@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
-- time series
 - aws
-- iot
+- time series
 - database
+- iot
 slug: amazon-timestream-capability
 tags: []
 tools: []

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,11 +10,11 @@ provider_name: Amazon DataZone
 provider_slug: amazon-datazone
 search_terms:
 - data sharing
-- aws
 - analytics
-- data management
-- data governance
+- aws
 - data catalog
+- data governance
+- data management
 slug: data-catalog-operations
 tags: []
 tools: []

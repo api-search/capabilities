@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-shield
 description: Workflow capability for Amazon Shield. Enables automation of Amazon Shield resources for cloud operations teams.
@@ -13,18 +14,18 @@ personas: []
 provider_name: Amazon Shield
 provider_slug: amazon-shield
 search_terms:
-- engineer managing amazon shield resources
-- list amazon shield resources
-- list resources
-- aws
 - amazon shield resources
-- cloud operations
-- aws cloud resource management
-- security
-- networking
-- amazon shield
-- automation workflow for amazon shield
 - ddos protection
+- aws
+- amazon shield
+- list amazon shield resources
+- engineer managing amazon shield resources
+- cloud operations
+- automation workflow for amazon shield
+- networking
+- security
+- aws cloud resource management
+- list resources
 slug: amazon-shield
 tags:
 - Amazon Shield

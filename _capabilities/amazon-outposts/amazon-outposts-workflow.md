@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - outposts
 description: Workflow capability composing Amazon Outposts APIs for developers and operators.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon Outposts
 provider_slug: amazon-outposts
 search_terms:
-- developer using amazon outposts apis
-- core api workflow
 - list and manage openapi.yml resources
+- infrastructure
+- amazon outposts
+- aws
 - list amazon outposts resources
 - list openapi.yml
-- list resources
-- aws
-- hybrid cloud
-- edge computing
-- Developer
-- infrastructure
-- on-premises
 - primary amazon outposts resources
-- amazon outposts
+- Developer
+- developer using amazon outposts apis
+- edge computing
+- on-premises
+- core api workflow
+- hybrid cloud
+- list resources
 slug: amazon-outposts-workflow
 tags:
 - Amazon Outposts

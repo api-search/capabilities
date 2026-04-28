@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,21 +9,21 @@ personas: []
 provider_name: Basetrip
 provider_slug: basetrip
 search_terms:
-- Trip Planner
-- countries
-- travel
-- travel planning, booking, and destination information
-- individual or business planning international travel
+- travel safety ratings and advisories
 - Travel App Developer
 - content creator embedding destination guides with live data
-- safety
-- visa
-- travel safety ratings and advisories
-- developer building travel booking or trip planning apps
-- health
 - embed country, city, safety, cost, visa, and health data into travel platforms
-- Travel Content Publisher
+- travel
+- individual or business planning international travel
+- safety
+- health
+- travel planning, booking, and destination information
+- visa
 - cities
+- Travel Content Publisher
+- developer building travel booking or trip planning apps
+- countries
+- Trip Planner
 slug: travel-intelligence
 tags: []
 tools: []

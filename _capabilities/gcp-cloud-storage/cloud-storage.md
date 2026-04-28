@@ -1,4 +1,6 @@
 ---
+categories:
+- object-storage
 consumed_apis:
 - cloud-storage
 description: Unified workflow for managing cloud storage buckets, objects, access controls, and IAM policies. Used by cloud engineers and data platform teams.
@@ -53,53 +55,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- individual bucket management.
-- bucket management.
-- set iam policy.
-- update object metadata.
-- list storage buckets in a project.
-- file storage
-- backup
-- update a bucket.
-- delete a bucket.
-- list buckets.
-- copy an object to another location.
-- blob storage
-- list buckets
-- compose multiple objects into one.
-- delete bucket
-- copy object
-- data management
-- create bucket
-- update object
-- compose objects
-- bucket iam management.
-- get bucket details.
 - get iam policy.
-- cloud storage
-- delete object
-- list objects.
-- delete an object.
-- update bucket
-- individual object management.
-- set bucket iam policy.
-- google cloud
-- get object metadata.
-- storage
-- delete a storage bucket.
-- create a new storage bucket.
-- archival
-- list objects in a bucket.
-- object management.
-- get bucket iam policy.
-- set bucket iam policy
-- list objects
+- file storage
+- get bucket details.
 - object storage
+- list objects.
+- delete object
+- bucket management.
+- bucket iam management.
+- set bucket iam policy
+- storage
+- data management
+- update bucket
+- create a new storage bucket.
+- update object metadata.
+- compose objects
+- get object metadata.
 - get bucket iam policy
-- get object
-- create a bucket.
+- individual object management.
+- delete a bucket.
+- google cloud
 - get bucket
+- list objects
+- list buckets
+- list objects in a bucket.
+- list storage buckets in a project.
+- set bucket iam policy.
+- create bucket
 - data
+- copy object
+- delete a storage bucket.
+- list buckets.
+- update a bucket.
+- archival
+- object management.
+- blob storage
+- individual bucket management.
+- get object
+- delete bucket
+- copy an object to another location.
+- backup
+- set iam policy.
+- create a bucket.
+- delete an object.
+- update object
+- get bucket iam policy.
+- compose multiple objects into one.
+- cloud storage
 slug: cloud-storage
 tags:
 - Google Cloud

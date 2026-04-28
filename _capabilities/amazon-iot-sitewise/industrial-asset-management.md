@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-sitewise
 description: Unified capability for OT Engineer, Data Analyst to manage collect, organize, and analyze industrial equipment data operations.
@@ -13,32 +15,32 @@ personas: []
 provider_name: Amazon IoT SiteWise
 provider_slug: amazon-iot-sitewise
 search_terms:
+- industrial iot
+- manages amazon iot sitewise resources and operations
+- batch put asset property value
 - create asset
+- list portals
+- amazon iot sitewise create portal
+- iot
+- Data Analyst
+- asset management
 - collect, organize, and analyze industrial equipment data.
-- create asset model
-- create portal
+- time series data
+- list asset models
+- amazon iot sitewise list asset models
 - list assets
+- amazon iot sitewise batch put asset property value
+- create asset model
 - amazon iot sitewise get asset property value
 - OT Engineer
-- aws
-- amazon iot sitewise resources
 - amazon iot sitewise list assets
-- time series data
-- batch put asset property value
-- amazon iot sitewise create asset model
 - amazon iot sitewise create asset
-- amazon iot sitewise create portal
-- industrial iot
-- amazon iot sitewise list asset models
-- asset management
-- iot
-- list asset models
-- get asset property value
-- list portals
-- manages amazon iot sitewise resources and operations
-- Data Analyst
-- amazon iot sitewise batch put asset property value
 - amazon iot sitewise list portals
+- aws
+- get asset property value
+- amazon iot sitewise create asset model
+- amazon iot sitewise resources
+- create portal
 slug: industrial-asset-management
 tags:
 - IoT

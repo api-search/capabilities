@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-resource-explorer
 description: Workflow capability for Amazon Resource Explorer. Enables automation of Amazon Resource Explorer resources for cloud operations teams.
@@ -13,19 +14,19 @@ personas: []
 provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
-- resource management
-- discovery
-- aws
-- list resources
-- inventory
-- cloud operations
-- amazon resource explorer
-- aws cloud resource management
-- operations
-- amazon resource explorer resources
 - automation workflow for amazon resource explorer
+- discovery
+- aws cloud resource management
+- amazon resource explorer
+- amazon resource explorer resources
+- aws
 - list amazon resource explorer resources
+- resource management
+- cloud operations
+- inventory
 - engineer managing amazon resource explorer resources
+- operations
+- list resources
 slug: amazon-resource-explorer
 tags:
 - Amazon Resource Explorer

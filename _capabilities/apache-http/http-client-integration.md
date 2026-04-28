@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
-- java
-- sdk
 - http client
 - apache
+- java
 - open source
+- sdk
 slug: http-client-integration
 tags: []
 tools: []

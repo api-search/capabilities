@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-rds
 description: Workflow capability for Amazon Rds. Enables automation of Amazon Rds resources for cloud operations teams.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
-- cloud databases
-- amazon rds resources
-- dbaas
+- amazon rds
 - database service
+- managed databases
+- automation workflow for amazon rds
+- engineer managing amazon rds resources
+- aws cloud resource management
+- aws
 - list amazon rds resources
+- cloud operations
+- dbaas
+- amazon rds resources
+- cloud databases
 - relational databases
 - list resources
-- aws
-- cloud operations
-- aws cloud resource management
-- managed databases
-- amazon rds
-- engineer managing amazon rds resources
-- automation workflow for amazon rds
 slug: amazon-rds
 tags:
 - Amazon Rds

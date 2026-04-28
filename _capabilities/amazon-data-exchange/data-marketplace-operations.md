@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Data Exchange
 provider_slug: amazon-data-exchange
 search_terms:
-- aws
 - third-party data
-- data marketplace
-- analytics
-- subscriptions
 - data exchange
+- analytics
+- aws
+- data marketplace
+- subscriptions
 slug: data-marketplace-operations
 tags: []
 tools: []

@@ -1,4 +1,6 @@
 ---
+categories:
+- object-storage
 consumed_apis: []
 description: Workflow capability for managing object storage using Apache Ozone's S3-compatible API.
 layout: capability
@@ -16,36 +18,36 @@ personas: []
 provider_name: Apache Ozone
 provider_slug: apache-ozone
 search_terms:
-- s3 compatible
-- get metadata for an object
-- list all buckets
-- list buckets
-- s3-compatible
-- Data Engineer
-- delete bucket
-- apache
-- uses s3-compatible api for application storage
-- create bucket
-- hadoop
-- list all object storage buckets
-- Application Developer
-- delete object
-- apache ozone
-- list objects in a bucket
-- delete an object from a bucket
-- create a new storage bucket
-- upload an object to a bucket
-- open source
-- head object
-- list objects
 - object storage
-- put object
-- get object
+- upload an object to a bucket
+- delete object
+- uses s3-compatible api for application storage
+- head object
+- s3 compatible
 - manages data lake storage with ozone
-- download an object from a bucket
-- delete an empty bucket
+- apache
 - distributed storage
 - cloud native
+- download an object from a bucket
+- list objects
+- open source
+- list buckets
+- delete an object from a bucket
+- create bucket
+- list all object storage buckets
+- put object
+- create a new storage bucket
+- get metadata for an object
+- delete an empty bucket
+- Data Engineer
+- Application Developer
+- apache ozone
+- get object
+- list objects in a bucket
+- delete bucket
+- hadoop
+- list all buckets
+- s3-compatible
 slug: ozone-workflow
 tags:
 - Apache Ozone

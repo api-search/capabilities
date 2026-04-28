@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
-- security
-- access management
-- aws
 - zero trust
+- aws
+- access management
+- security
 slug: amazon-verified-access-capability
 tags: []
 tools: []

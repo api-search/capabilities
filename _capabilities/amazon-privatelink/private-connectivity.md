@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-privatelink
 description: Workflow capability for establishing and managing private connectivity between VPCs and AWS services using Amazon PrivateLink. Covers endpoint service creation, VPC endpoint management, and connection lifecycle for network engineers and platform teams.
@@ -33,43 +34,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- reject vpc endpoint connection requests
-- list pending and active connections to endpoint services
-- list vpc endpoint services
-- zero trust
-- list available vpc endpoint services for private connectivity
 - vpc endpoint consumer management
+- list connections
 - create endpoint service
-- accept connections
-- Network Engineer
-- private vpc connectivity workflow
-- create a vpc endpoint service
-- aws
-- consumes endpoint services and manages vpc endpoints for internal services
-- create endpoint
-- create a private vpc endpoint for an aws service or endpoint service
+- list pending and active connections to endpoint services
 - manages vpc endpoint services and private connectivity architecture
-- vpc
-- create vpc endpoint
-- endpoint services
-- list vpc endpoints in the account
-- endpoint connection management
-- vpc endpoint service provider management
-- create a vpc endpoint
-- list vpc endpoints
 - private connectivity
-- security
-- accept endpoint connections
-- list endpoint services
-- list endpoints
+- create a vpc endpoint service
+- create a vpc endpoint
 - reject endpoint connections
-- Platform Engineer
+- accept connections
+- list endpoints
 - create a vpc endpoint service backed by a load balancer
+- consumes endpoint services and manages vpc endpoints for internal services
+- security
+- endpoint services
+- vpc
+- accept endpoint connections
+- list vpc endpoints in the account
+- Network Engineer
+- create endpoint
 - amazon
 - list endpoint connections
-- accept pending vpc endpoint connection requests
-- list connections
+- private vpc connectivity workflow
 - networking
+- create a private vpc endpoint for an aws service or endpoint service
+- list vpc endpoints
+- create vpc endpoint
+- zero trust
+- reject vpc endpoint connection requests
+- aws
+- vpc endpoint service provider management
+- list endpoint services
+- endpoint connection management
+- list available vpc endpoint services for private connectivity
+- accept pending vpc endpoint connection requests
+- list vpc endpoint services
+- Platform Engineer
 slug: private-connectivity
 tags:
 - Amazon

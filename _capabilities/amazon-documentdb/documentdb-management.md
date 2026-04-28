@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - documentdb
 description: Unified capability for managing DocumentDB clusters, instances, and snapshots for DevOps and database administrators.
@@ -29,33 +30,33 @@ personas: []
 provider_name: Amazon DocumentDB
 provider_slug: amazon-documentdb
 search_terms:
-- createDBCluster
-- amazon documentdb describe db instances
-- database
-- describeDBClusters
-- create db instance
 - amazon documentdb describe db clusters
+- delete db cluster
+- engineers managing amazon documentdb resources on aws.
 - documentdb
+- amazon web services
+- describeDBClusters
 - database administration business domain for amazon documentdb.
+- database
+- managed database
+- amazon documentdb delete db cluster
+- describeDBInstances
+- amazon documentdb create db cluster
+- describe db instances
+- workflow capability for database administration.
+- nosql
+- deleteDBCluster
+- createDBInstance
+- createDBCluster
+- document database
+- mongodb
+- amazon documentdb describe db instances
+- create db cluster
+- create db instance
+- aws
+- describe db clusters
 - amazon documentdb
 - amazon documentdb create db instance
-- aws
-- managed database
-- workflow capability for database administration.
-- deleteDBCluster
-- amazon documentdb delete db cluster
-- nosql
-- delete db cluster
-- create db cluster
-- describeDBInstances
-- amazon web services
-- mongodb
-- amazon documentdb create db cluster
-- engineers managing amazon documentdb resources on aws.
-- document database
-- createDBInstance
-- describe db instances
-- describe db clusters
 slug: documentdb-management
 tags:
 - Amazon DocumentDB

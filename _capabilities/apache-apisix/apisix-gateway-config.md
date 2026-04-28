@@ -1,4 +1,6 @@
 ---
+categories:
+- api-management
 consumed_apis:
 - apisix-admin
 description: Unified capability for configuring and managing Apache APISIX API gateway resources including routes, upstreams, services, consumers, and SSL certificates. Used by platform engineers and API gateway administrators.
@@ -33,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- create a new apisix route for traffic routing.
-- configuration
-- administrators configuring routes, consumers, and security policies.
-- list upstreams
-- list backend upstreams.
-- authentication
-- create a new gateway route.
-- update an existing apisix route.
-- list routes
-- apache
-- create route
-- list all api consumers and their plugin configs.
-- create consumer
-- API Gateway Administrator
-- kubernetes
-- list consumers
-- update route
-- api gateway
-- delete route
-- route, upstream, consumer, and ssl management workflow.
-- list all gateway routes.
-- create upstream
-- create a backend upstream.
-- list all backend upstream configurations.
-- list api consumers.
-- create a new api consumer with authentication plugins.
-- Platform Engineer
-- nginx
-- traffic management
-- list all apisix gateway routes.
-- create an api consumer.
-- apache apisix
-- lua
-- delete an apisix route.
 - engineers deploying and managing api gateway infrastructure.
+- traffic management
+- create a new gateway route.
+- list api consumers.
+- delete an apisix route.
+- create route
+- list upstreams
+- update an existing apisix route.
+- create an api consumer.
+- administrators configuring routes, consumers, and security policies.
+- nginx
+- list all backend upstream configurations.
+- authentication
+- apache
 - create a new backend upstream with load balancing config.
-- open source
 - cloud native
+- list all api consumers and their plugin configs.
+- api gateway
+- create consumer
+- open source
+- list all apisix gateway routes.
+- create upstream
+- configuration
+- create a new apisix route for traffic routing.
+- apache apisix
+- list routes
+- list consumers
+- route, upstream, consumer, and ssl management workflow.
+- kubernetes
+- create a backend upstream.
+- update route
+- lua
+- delete route
+- list all gateway routes.
+- create a new api consumer with authentication plugins.
+- list backend upstreams.
+- API Gateway Administrator
+- Platform Engineer
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mq
 description: Workflow capability for Amazon MQ media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MQ
 provider_slug: amazon-mq
 search_terms:
+- broadcasting
+- list brokers
+- createuser
+- Broadcast Engineer
+- describeuser
+- create broker
+- create tags
+- manage media processing jobs
+- aws media processing and delivery
+- list tags
+- describe user
+- media
 - listtags
-- developer building media processing applications
+- create configuration
+- Media Developer
 - amazon mq media processing workflow
 - list jobs
-- create user
 - listconfigurations
-- list configurations
-- describe user
-- manage media processing jobs
-- createbroker
-- createtags
-- createconfiguration
-- create tags
 - listbrokers
-- engineer managing broadcast media workflows
-- aws
-- create broker
-- create configuration
-- Broadcast Engineer
-- workflow
-- Media Developer
-- createuser
-- list brokers
-- describeuser
-- aws media processing and delivery
-- media
-- broadcasting
-- list tags
+- createtags
 - media processing
+- aws
+- workflow
+- developer building media processing applications
+- list configurations
+- createconfiguration
+- create user
+- engineer managing broadcast media workflows
+- createbroker
 slug: amazon-mq-media-workflow
 tags:
 - AWS

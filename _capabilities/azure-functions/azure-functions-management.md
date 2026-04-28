@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-functions
 description: Workflow capability for managing Azure Functions resources. Used by cloud engineers and DevOps teams.
@@ -13,25 +14,25 @@ personas: []
 provider_name: Azure Functions
 provider_slug: azure-functions
 search_terms:
-- serverless
-- cloud
-- event-driven
-- list all resources
-- list function resources
-- management
-- list trigger resources
-- list bindings
-- resource management
 - list function apps
-- list binding resources
-- functions
-- compute
-- list triggers
-- azure
-- azure resource management
 - list functionapp resources
+- management
+- serverless
+- list trigger resources
 - list functions
+- azure resource management
 - list
+- list all resources
+- list triggers
+- list bindings
+- azure
+- event-driven
+- functions
+- resource management
+- list function resources
+- list binding resources
+- cloud
+- compute
 slug: azure-functions-management
 tags:
 - Azure

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - dms
 description: Workflow capability for database engineers and cloud architects to manage end-to-end database migrations using AWS Database Migration Service. Covers replication instance provisioning, source and target endpoint configuration, replication task management, migration monitoring, and schema conversion support.
@@ -37,59 +38,59 @@ personas: []
 provider_name: Amazon DMS
 provider_slug: amazon-dms
 search_terms:
-- Cloud Architect
-- migration
-- create a new replication task to migrate data between source and target
-- end-to-end database migration lifecycle using aws dms
-- stop replication task
-- database
-- replication instances and network configuration
-- list sns event subscriptions for migration notifications
-- Database Engineer
-- source and target database endpoint management
-- start or resume a database migration replication task
-- cloud architect designing database migration strategy and infrastructure
-- replication task lifecycle and monitoring
-- create a new replication instance
-- aws
-- list all endpoints
-- describe connections
-- database migration
-- create a new dms replication instance to process migration tasks
-- amazon dms
-- create endpoint
-- replication instances for migration processing
-- database engineer managing migration projects and monitoring replication tasks
-- list all replication tasks
-- create replication task
-- list all replication instances
-- create a source or target database endpoint for migration
-- list all dms replication instances used for database migration processing
 - list per-table migration statistics for a replication task
-- list ssl certificates for encrypted database migration connections
-- create a source or target endpoint
-- list registered ssl certificates
-- list connections between replication instances and endpoints
-- start replication task
-- replication tasks for migration
-- data replication
-- source and target database endpoints
+- cloud architect designing database migration strategy and infrastructure
 - stop a running database migration replication task
-- test the connection between a replication instance and an endpoint
-- describe replication instances
-- list all source and target database endpoints configured for migration
-- list replication tasks and their current migration status
-- create replication instance
+- create a new replication task
 - describe endpoints
 - describe certificates
-- delete replication instance
 - test connection
+- database engineer managing migration projects and monitoring replication tasks
 - describe table statistics
-- ssl certificates for encrypted migration
-- create a new replication task
+- Database Engineer
+- stop replication task
+- list all replication tasks
+- source and target database endpoint management
+- database
+- list all replication instances
+- replication tasks for migration
+- list all source and target database endpoints configured for migration
+- list registered ssl certificates
 - describe event subscriptions
-- describe replication tasks
+- list replication tasks and their current migration status
+- ssl certificates for encrypted migration
+- create a source or target database endpoint for migration
+- create endpoint
+- create replication instance
+- create a new replication task to migrate data between source and target
+- start replication task
+- create a new replication instance
+- create a source or target endpoint
+- list sns event subscriptions for migration notifications
+- describe connections
+- source and target database endpoints
+- describe replication instances
+- data replication
+- replication instances for migration processing
+- start or resume a database migration replication task
+- create replication task
+- list connections between replication instances and endpoints
+- list ssl certificates for encrypted database migration connections
+- end-to-end database migration lifecycle using aws dms
 - delete a dms replication instance
+- migration
+- aws
+- replication task lifecycle and monitoring
+- database migration
+- create a new dms replication instance to process migration tasks
+- list all endpoints
+- replication instances and network configuration
+- Cloud Architect
+- list all dms replication instances used for database migration processing
+- delete replication instance
+- describe replication tasks
+- test the connection between a replication instance and an endpoint
+- amazon dms
 slug: database-migration-management
 tags:
 - Amazon DMS

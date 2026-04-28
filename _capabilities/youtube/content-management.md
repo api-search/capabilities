@@ -1,4 +1,6 @@
 ---
+categories:
+- content-management
 consumed_apis:
 - youtube-data
 description: Unified workflow for managing YouTube video content lifecycle including uploading, updating, organizing into playlists, managing captions, and moderating comments. Designed for content creators, media teams, and platform administrators.
@@ -69,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- update caption
-- remove playlist item
-- add a video to a playlist
-- upload a new video
-- update a caption track
-- manage youtube videos
-- content management
-- delete caption
-- list youtube playlists
-- update video
-- update playlist
-- create playlist
-- captions
-- list captions
-- manage video captions
-- videos
-- delete a playlist
-- streaming
-- update playlist details
-- list youtube videos matching criteria
-- upload video
-- remove a video from a playlist
-- upload caption
-- youtube
-- upload a new video to youtube
-- video
 - update video metadata
-- list playlist items
+- delete a caption track
+- videos
+- delete playlist
+- captions
+- remove a video from a playlist
+- list captions
+- create a new playlist
+- update a caption track
+- list youtube playlists
+- list videos matching criteria
+- add a video to a playlist
+- remove playlist item
+- update caption
 - list items in a playlist
+- youtube
+- update playlist details
+- update playlist
+- list youtube videos matching criteria
 - google
 - delete a video
-- add playlist item
-- social
-- list videos
-- delete a caption track
-- upload a new caption track
-- list caption tracks for a video
-- manage youtube playlists
-- manage items within playlists
-- delete a video from youtube
-- create a new playlist
-- media
-- delete playlist
-- delete video
-- upload a caption track
-- list videos matching criteria
-- playlists
 - list playlists
+- media
+- upload a new video to youtube
+- manage items within playlists
+- streaming
+- create playlist
+- manage video captions
+- playlists
+- list videos
+- manage youtube videos
+- upload a new caption track
+- update video
+- list caption tracks for a video
+- content management
+- add playlist item
+- delete a playlist
+- upload a caption track
+- video
+- delete video
+- upload a new video
+- social
+- upload caption
+- list playlist items
+- upload video
+- delete a video from youtube
+- manage youtube playlists
+- delete caption
 slug: content-management
 tags:
 - YouTube

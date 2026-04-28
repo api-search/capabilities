@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - kafka-rest-proxy
 - kafka-connect
@@ -26,30 +27,30 @@ personas: []
 provider_name: Apache Kafka
 provider_slug: apache-kafka
 search_terms:
-- engineers who build data pipelines using kafka topics and connectors
-- apache kafka
+- list topics
+- data engineering
+- create connector
+- event streaming
 - distributed systems
-- list all kafka connect connectors
+- platform architecture
+- engineers who build data pipelines using kafka topics and connectors
+- restart a failed kafka connect connector
+- produce a message to a kafka topic via the rest proxy
+- restart connector
+- Platform Architect
+- apache kafka
+- open source
+- create a new kafka connect connector for data integration
+- list connectors
+- produce message
+- get the status of a specific kafka connect connector
 - list all kafka topics in the cluster
 - architects who design and manage kafka cluster topology and connectivity
-- platform architecture
-- produce message
 - Data Engineer
-- pub-sub
-- get connector status
+- list all kafka connect connectors
 - messaging
-- data engineering
-- create a new kafka connect connector for data integration
-- get the status of a specific kafka connect connector
-- restart a failed kafka connect connector
-- restart connector
-- list connectors
-- Platform Architect
-- produce a message to a kafka topic via the rest proxy
-- create connector
-- open source
-- event streaming
-- list topics
+- get connector status
+- pub-sub
 slug: event-streaming
 tags:
 - Apache Kafka

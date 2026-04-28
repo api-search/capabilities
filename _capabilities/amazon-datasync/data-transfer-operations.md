@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -10,10 +11,10 @@ provider_slug: amazon-datasync
 search_terms:
 - migration
 - aws
+- automation
 - data transfer
 - storage
 - hybrid cloud
-- automation
 slug: data-transfer-operations
 tags: []
 tools: []

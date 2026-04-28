@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis: []
 description: Workflow capability for running and managing SQL analytics queries with Amazon Athena including query execution, named queries, work groups, and data catalog management.
 layout: capability
@@ -24,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list recent query executions in an athena workgroup.
-- list table metadata
-- create a named query
-- check the status of a running or completed athena query execution.
-- sql
-- analytics
-- list saved named queries available in an athena workgroup.
-- serverless
-- named query management
-- list data catalogs
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list work groups
-- aws
-- start query execution
-- get query execution
-- download the results of a completed athena sql query.
-- amazon athena
-- get query results
-- save a sql query as a named query for reuse in athena.
 - list databases in an athena data catalog to explore available schemas.
-- create named query
-- sql query management
-- list tables in an athena database to understand available data.
+- list work groups
+- get query execution
+- list data catalogs
 - list query executions
+- named query management
+- serverless
+- start query execution
+- analytics
+- check the status of a running or completed athena query execution.
+- download the results of a completed athena sql query.
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list data catalogs registered with athena to discover available data sources.
+- save a sql query as a named query for reuse in athena.
+- amazon athena
+- list recent query executions in an athena workgroup.
+- list tables in an athena database to understand available data.
 - list named queries
+- create a named query
+- list saved named queries available in an athena workgroup.
+- create named query
+- list athena workgroups to understand available query isolation environments.
+- aws
+- list table metadata
+- get query results
+- sql query management
+- sql
 - list databases
 - start a sql query execution
-- list athena workgroups to understand available query isolation environments.
-- list data catalogs registered with athena to discover available data sources.
 slug: sql-analytics
 tags:
 - Amazon Athena

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - factset-trading
 - factset-private
@@ -25,38 +26,38 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- trading operations.
-- refresh ib office
-- trading
-- manage users
-- get partner documents.
-- portfolio analytics
-- list trading
-- manage user provisioning.
-- financial data
-- refresh ib office data.
-- event calendar.
-- get private markets
-- get event calendar.
-- get security models.
-- get partner docs
-- list events.
-- operations
-- factset
-- administration
-- research
-- financial
-- get private markets data.
-- get events
-- list issues
-- investment analytics
-- list events
-- list trading resources.
-- get marketplace
-- market data
 - get open marketplace.
-- list support issues.
+- get private markets
+- investment analytics
+- list trading
+- list events.
+- manage users
+- get event calendar.
+- get marketplace
+- refresh ib office data.
+- research
+- factset
+- list trading resources.
+- market data
+- list issues
+- get partner docs
+- trading operations.
+- event calendar.
+- financial
+- refresh ib office
+- get private markets data.
+- administration
 - get security models
+- get partner documents.
+- manage user provisioning.
+- get events
+- financial data
+- trading
+- portfolio analytics
+- list support issues.
+- list events
+- get security models.
+- operations
 slug: trading-operations
 tags:
 - FactSet

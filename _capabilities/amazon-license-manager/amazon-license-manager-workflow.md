@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - license-manager
 description: Unified workflow capability for Amazon License Manager combining resource management and operations.
@@ -9,23 +10,23 @@ personas: []
 provider_name: Amazon License Manager
 provider_slug: amazon-license-manager
 search_terms:
-- license configurations get license configuration
 - integrates api into applications
-- unified workflow for amazon license manager resource management
-- workflow
-- gets detailed information about the specified license configuration.
-- manages resources and configurations
-- cost management
-- lists the license configurations for your account.
 - software licensing
 - aws
-- creates a license configuration.
-- Developer
-- license configurations create license configuratio
-- compliance
-- license management
+- workflow
 - amazon license manager
+- unified workflow for amazon license manager resource management
 - Administrator
+- creates a license configuration.
+- gets detailed information about the specified license configuration.
+- lists the license configurations for your account.
+- license configurations create license configuratio
+- manages resources and configurations
+- cost management
+- compliance
+- license configurations get license configuration
+- Developer
+- license management
 - license configurations list license configurations
 slug: amazon-license-manager-workflow
 tags:

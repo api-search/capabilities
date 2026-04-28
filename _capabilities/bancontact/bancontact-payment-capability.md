@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Bancontact
 provider_slug: bancontact
 search_terms:
-- payments
-- belgium
 - debit cards
-- fintech
+- payments
 - banking
 - e-commerce
+- fintech
+- belgium
 slug: bancontact-payment-capability
 tags: []
 tools: []

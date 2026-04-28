@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - organizations
 description: Workflow capability composing Amazon Organizations APIs for developers and operators.
@@ -13,22 +14,22 @@ personas: []
 provider_name: Amazon Organizations
 provider_slug: amazon-organizations
 search_terms:
-- core api workflow
 - list and manage openapi.yml resources
-- consolidated billing
-- multi-account
-- list openapi.yml
-- list resources
-- aws
-- list amazon organizations resources
 - account management
+- organizations
 - governance
-- amazon organizations
+- list amazon organizations resources
+- consolidated billing
+- aws
+- list openapi.yml
 - Developer
 - policies
 - developer using amazon organizations apis
-- organizations
+- amazon organizations
+- core api workflow
 - primary amazon organizations resources
+- multi-account
+- list resources
 slug: amazon-organizations-workflow
 tags:
 - Amazon Organizations

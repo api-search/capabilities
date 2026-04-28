@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis:
 - well-architected-tool
 description: Unified workflow for architecture governance using the AWS Well-Architected Tool. Enables cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate consolidated reports across the organization's cloud portfolio.
@@ -45,56 +47,56 @@ personas: []
 provider_name: Amazon Well-Architected Tool
 provider_slug: amazon-well-architected-tool
 search_terms:
-- Cloud Architect
-- cloud workload design and best practices
-- create workload
-- best practices
-- list lens reviews
-- list profiles
-- designs and reviews cloud workload architectures against aws best practices.
-- create milestone
-- get workload details.
-- list lens reviews for a workload.
-- oversight and compliance of cloud architecture decisions
-- list answers for a workload lens review.
-- Governance Team
+- architectural review answers.
 - oversees architectural compliance and risk across the cloud portfolio.
+- well-architected
+- create workload
+- unified workflow for cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate reports.
+- list lenses
+- list available lenses.
+- get workload
+- manage workloads under architectural review.
+- get consolidated report
+- compliance
+- create milestone
+- list lens reviews for a specific workload.
+- best practices
+- cloud workload design and best practices
+- designs and reviews cloud workload architectures against aws best practices.
+- list all workloads in the account.
+- lens reviews for workloads.
+- list lens reviews for a workload.
+- list answers for a workload lens review.
+- list workloads
+- regulatory and organizational policy adherence
+- single workload management.
+- Governance Team
+- list answers
+- list all workloads under architectural review in the aws account.
+- architecture
+- workloads
+- get consolidated architectural review report.
+- get details and metadata for a specific workload.
+- save a milestone snapshot of the current workload review state.
+- get workload details.
+- list profiles
+- list lens reviews
+- lens catalog for architectural reviews.
+- cloud governance
 - workload profiles.
 - list profiles.
-- create a new workload to begin an architectural review.
 - list architectural review answers for a workload and lens.
 - aws
-- create a milestone to capture review state.
-- generate a consolidated architectural review report across workloads.
 - create a new workload for architectural review.
-- list lens reviews for a specific workload.
-- architecture
-- lens catalog for architectural reviews.
-- lens reviews for workloads.
-- list available lenses.
-- list available aws and custom lenses for architectural reviews.
-- get consolidated report
-- single workload management.
-- list answers
-- get workload
-- unified workflow for cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate reports.
-- list all workloads in the account.
+- create a milestone to capture review state.
 - consolidated governance reports.
-- regulatory and organizational policy adherence
-- manage workloads under architectural review.
-- get consolidated architectural review report.
-- cloud governance
-- architectural review answers.
-- list lenses
-- well-architected
+- oversight and compliance of cloud architecture decisions
+- create a new workload to begin an architectural review.
+- list available aws and custom lenses for architectural reviews.
+- Cloud Architect
+- generate a consolidated architectural review report across workloads.
 - workload review milestones.
-- save a milestone snapshot of the current workload review state.
 - list workload profiles used to customize reviews.
-- compliance
-- list all workloads under architectural review in the aws account.
-- workloads
-- list workloads
-- get details and metadata for a specific workload.
 slug: architecture-governance
 tags:
 - Architecture

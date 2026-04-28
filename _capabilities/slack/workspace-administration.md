@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - slack-admin
 - slack-team
@@ -33,41 +34,41 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- admin controls
-- get dnd status
-- list groups
-- user management.
-- list user groups
-- chat
-- user management
-- get do not disturb status.
-- auth test
-- collaboration
 - list admin resources.
-- list workspace users.
-- list users
-- access admin controls.
-- t1
-- get team
-- administration
-- team information.
-- migrate enterprise ids.
-- messaging
-- team communication
-- test authentication.
-- productivity
-- admin controls.
-- list user groups.
-- enterprise
-- get workspace information.
-- list users.
-- user group management.
-- get team info.
+- admin controls
 - bots
-- list admin
-- slack
+- migrate enterprise ids.
 - get team info
+- user management.
+- admin controls.
+- list user groups
 - migrate ids
+- auth test
+- test authentication.
+- slack
+- enterprise
+- access admin controls.
+- list users.
+- collaboration
+- administration
+- chat
+- get do not disturb status.
+- list users
+- list workspace users.
+- get team
+- get workspace information.
+- list admin
+- productivity
+- get team info.
+- user management
+- user group management.
+- list groups
+- list user groups.
+- messaging
+- t1
+- get dnd status
+- team information.
+- team communication
 slug: workspace-administration
 tags:
 - Slack

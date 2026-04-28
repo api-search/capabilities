@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - step-functions
 description: Workflow capability for managing state machines and executions with AWS Step Functions.
@@ -9,26 +11,26 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: aws-step-functions
 search_terms:
-- state machine
-- describe_execution
+- start_execution
+- create_state_machine
 - serverless
 - list_state_machines
-- delete_state_machine
-- orchestration
-- workflows
 - list executions for a state machine
-- aws
+- orchestration
+- state machine
+- workflows
 - stop_execution
-- start an execution of a state machine
 - stop a running state machine execution
-- list_executions
-- create_state_machine
-- create a new step functions state machine
-- delete a step functions state machine
-- ipaas
+- start an execution of a state machine
 - get details about a state machine execution
-- start_execution
+- list_executions
+- create a new step functions state machine
+- delete_state_machine
+- aws
+- describe_execution
+- delete a step functions state machine
 - list all step functions state machines
+- ipaas
 slug: orchestration-workflow
 tags:
 - Orchestration

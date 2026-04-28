@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - google-sheets
 description: Workflow for managing spreadsheet data including creating spreadsheets, reading and writing cell values, batch operations, and metadata management. Used by data analysts, developers, and automation engineers.
@@ -33,47 +35,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- get spreadsheet
-- batch update spreadsheet
-- clear values
-- create spreadsheet
-- create a new google sheets spreadsheet
-- clear values from a spreadsheet range
-- create a new spreadsheet
-- write values to a range
-- read values from a spreadsheet range
-- google sheets
-- cell value read and write operations
-- get values
-- data management
-- copy sheet
-- clear values from multiple ranges
-- batch update values
-- search developer metadata matching filters
-- update values
-- copy a sheet to another spreadsheet
-- append values to a range
-- clear values from a range
-- batch get values
-- spreadsheet lifecycle operations
-- read values from a range
-- append values
-- google workspace
-- productivity
-- get developer metadata by id
-- get spreadsheet details by id
-- single spreadsheet operations
-- batch clear values
-- get developer metadata
-- write values to a spreadsheet range
 - search developer metadata
-- write values to multiple ranges at once
-- apply batch updates to a spreadsheet
-- get spreadsheet details
+- create a new spreadsheet
+- update values
+- google workspace
+- append values to a range
 - spreadsheets
-- append rows of data to a spreadsheet
-- read values from multiple ranges at once
 - automation
+- write values to multiple ranges at once
+- batch clear values
+- write values to a range
+- apply batch updates to a spreadsheet
+- read values from a spreadsheet range
+- get developer metadata
+- create a new google sheets spreadsheet
+- data management
+- search developer metadata matching filters
+- create spreadsheet
+- copy a sheet to another spreadsheet
+- copy sheet
+- get spreadsheet
+- clear values from a spreadsheet range
+- append values
+- batch get values
+- clear values from a range
+- google sheets
+- batch update values
+- clear values from multiple ranges
+- single spreadsheet operations
+- get spreadsheet details
+- append rows of data to a spreadsheet
+- cell value read and write operations
+- read values from multiple ranges at once
+- get developer metadata by id
+- productivity
+- spreadsheet lifecycle operations
+- get values
+- get spreadsheet details by id
+- clear values
+- write values to a spreadsheet range
+- batch update spreadsheet
+- read values from a range
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

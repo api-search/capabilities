@@ -1,4 +1,6 @@
 ---
+categories:
+- security
 consumed_apis:
 - key-vault
 description: Unified workflow for managing cryptographic keys, secrets, and certificates with encryption, signing, and certificate lifecycle operations. Used by security engineers and DevOps teams.
@@ -45,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- set a secret.
-- sign a digest using a key.
-- verify a signature.
-- list keys.
-- sign
-- list keys
-- list secrets in the vault.
-- create a key.
-- encrypt
-- cryptography
-- get secret
-- delete a key.
 - get a certificate.
-- decrypt
-- list secrets.
-- delete secret
-- individual key management.
-- encrypt data using a key.
-- individual secret management.
-- certificates
-- delete key
-- key vault
-- key management
-- list secrets
-- secrets management
-- create a new certificate.
-- cloud security
-- list certificates.
-- create a new cryptographic key.
-- get certificate
-- verify
-- create key
 - list cryptographic keys in the vault.
-- list certificates
-- get key details.
-- get a secret value.
-- get key
-- security
-- delete certificate
-- get a key.
-- azure
-- list certificates in the vault.
-- key management.
-- create certificate
-- certificate management.
-- set secret
-- set a secret value.
-- get a secret.
+- list keys.
+- list certificates.
 - decrypt data using a key.
+- create certificate
+- create a key.
+- cloud security
+- list certificates
+- verify a signature.
+- delete key
+- set a secret.
+- get a secret.
+- create a new cryptographic key.
+- individual key management.
+- get secret
+- delete secret
+- encrypt data using a key.
+- secrets management
+- individual secret management.
+- create a new certificate.
+- get certificate
+- security
+- create key
+- cryptography
+- list secrets.
+- sign
+- get key
+- get a secret value.
+- list certificates in the vault.
 - delete a certificate.
-- secret management.
 - delete a secret.
+- get a key.
+- key vault
+- decrypt
+- delete certificate
+- key management
+- verify
+- certificates
+- set a secret value.
+- azure
+- set secret
+- list secrets
+- list secrets in the vault.
+- delete a key.
+- list keys
+- encrypt
+- secret management.
+- certificate management.
+- key management.
+- get key details.
+- sign a digest using a key.
 slug: secrets-and-keys
 tags:
 - Azure

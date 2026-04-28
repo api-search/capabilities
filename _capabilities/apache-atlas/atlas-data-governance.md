@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis:
 - atlas-rest
 description: Unified capability for Apache Atlas data governance workflows including metadata discovery, lineage tracking, entity management, and glossary management. Used by data governance teams and data engineers.
@@ -21,36 +23,36 @@ personas: []
 provider_name: Apache Atlas
 provider_slug: apache-atlas
 search_terms:
-- apache atlas
-- big data
-- data governance
-- teams responsible for data quality, compliance, and metadata policies.
-- search atlas metadata entities by type and attributes.
-- metadata management
-- search entities.
-- full-text search across all atlas metadata.
-- Data Engineer
-- apache
-- metadata
-- data lineage
-- list glossaries
-- engineers tracking data lineage and managing metadata for pipelines.
-- get an atlas entity by guid.
-- hadoop
-- get entity.
-- Data Governance Team
-- get lineage
 - get entity
-- search entities
-- fulltext search
-- create entities
-- get entity lineage.
-- create metadata entities in atlas for data governance.
-- get data lineage graph for an atlas entity.
-- compliance
+- get entity.
+- get an atlas entity by guid.
+- data governance
 - list business glossaries for data governance.
+- compliance
+- get data lineage graph for an atlas entity.
+- search entities
+- create metadata entities in atlas for data governance.
+- search atlas metadata entities by type and attributes.
+- apache
+- teams responsible for data quality, compliance, and metadata policies.
+- create entities
 - open source
+- engineers tracking data lineage and managing metadata for pipelines.
+- full-text search across all atlas metadata.
+- list glossaries
+- metadata management
+- get lineage
 - metadata discovery, lineage tracking, and governance workflow.
+- Data Engineer
+- data lineage
+- metadata
+- big data
+- get entity lineage.
+- hadoop
+- fulltext search
+- search entities.
+- Data Governance Team
+- apache atlas
 slug: atlas-data-governance
 tags:
 - Apache Atlas

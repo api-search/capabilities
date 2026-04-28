@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - akka-management
 description: Workflow for monitoring and managing Akka cluster operations including health checks, member management, and cluster bootstrap. For platform engineers and SREs operating distributed Akka systems.
@@ -25,41 +26,41 @@ personas: []
 provider_name: Akka
 provider_slug: akka
 search_terms:
-- actor model
-- list members
-- distributed systems
-- check alive
-- frameworks
-- liveness and readiness health check monitoring
-- check liveness and readiness of akka cluster nodes
-- list cluster members
-- join member
-- monitors cluster health and responds to incidents
 - join cluster member
-- java
-- operations
-- node liveness check
-- add a new node to the akka cluster
-- node readiness check
+- liveness and readiness health check monitoring
 - monitor and manage akka cluster health and membership
-- check if akka cluster nodes are ready to serve traffic
-- cluster member management
-- scala
-- reactive
-- list all current members of the akka cluster
-- check ready
-- akka cluster membership and node lifecycle management
-- join a cluster member
-- check cluster readiness
-- health monitoring
-- SRE
-- Platform Engineer
-- check cluster health
 - akka
+- add a new node to the akka cluster
+- SRE
+- distributed systems
 - cluster management
-- manages akka cluster deployments and configurations
+- node readiness check
+- check if akka cluster nodes are ready to serve traffic
+- reactive
+- node liveness check
+- health monitoring
 - cluster health checks
+- list members
+- java
+- scala
+- manages akka cluster deployments and configurations
+- actor model
+- join a cluster member
+- list all current members of the akka cluster
+- akka cluster membership and node lifecycle management
+- check liveness and readiness of akka cluster nodes
+- check ready
+- check cluster readiness
+- monitors cluster health and responds to incidents
+- check alive
+- join member
+- frameworks
+- cluster member management
+- check cluster health
+- list cluster members
+- operations
 - microservices
+- Platform Engineer
 slug: cluster-operations
 tags:
 - Akka

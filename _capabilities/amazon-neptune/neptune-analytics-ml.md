@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis:
 - analytics
 - ml
@@ -18,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- property graph
-- create a neptune analytics graph for graph analytics workloads
-- machine learning
-- data streaming
-- database
-- manages neptune clusters, instances, and infrastructure
-- writes gremlin, sparql, and opencypher queries against neptune
-- list neptune analytics graphs for in-memory graph analysis
-- sparql
-- aws
-- create analytics graph
-- Graph Database Administrator
-- ML Engineer
-- list analytics graphs
-- neptune
-- gremlin
-- list neptune ml training jobs
 - list ml jobs
-- rdf
-- trains and deploys neptune ml graph neural network models
-- list neptune analytics graphs
-- amazon neptune
-- list ml training jobs
-- neptune ml training job management
-- create ml inference endpoint
-- Data Scientist
-- performs graph analytics and builds ml models on graph data
-- graph analytics, vector search, and ml model training and inference
-- graph analytics
-- Graph Developer
+- manages neptune clusters, instances, and infrastructure
+- list neptune ml training jobs
+- list neptune analytics graphs for in-memory graph analysis
 - graph database management, querying, and data streaming
+- property graph
+- create ml inference endpoint
+- amazon neptune
 - neptune analytics graph management
-- list neptune ml graph neural network training jobs
-- graph database
+- neptune ml training job management
+- graph analytics, vector search, and ml model training and inference
+- list neptune analytics graphs
+- database
 - create a neptune ml inference endpoint for predictions
+- ML Engineer
+- Data Scientist
+- create analytics graph
+- graph database
 - bulk loading
+- rdf
+- graph analytics
+- list analytics graphs
+- sparql
+- neptune
+- list neptune ml graph neural network training jobs
+- gremlin
+- list ml training jobs
+- writes gremlin, sparql, and opencypher queries against neptune
+- performs graph analytics and builds ml models on graph data
+- data streaming
+- machine learning
+- trains and deploys neptune ml graph neural network models
+- aws
+- create a neptune analytics graph for graph analytics workloads
+- Graph Database Administrator
+- Graph Developer
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

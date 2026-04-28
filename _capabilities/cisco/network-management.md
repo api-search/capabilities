@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - meraki
 description: Unified network management workflow combining Meraki, Catalyst Center, and SD-WAN APIs for network administrators.
@@ -17,24 +18,24 @@ personas: []
 provider_name: Cisco
 provider_slug: cisco
 search_terms:
-- Network Admin
-- network organizations
-- sd-wan
-- list devices
-- list networks in organization
-- networks
-- unified network management combining meraki and other cisco apis
-- cisco
-- network management
-- list meraki organizations
 - list organizations
-- security
-- network administrators managing cisco infrastructure
-- list devices in network
-- enterprise
-- networking
 - collaboration
+- sd-wan
+- list devices in network
+- cisco
+- network organizations
+- Network Admin
+- list networks in organization
+- unified network management combining meraki and other cisco apis
+- list meraki organizations
+- network administrators managing cisco infrastructure
+- networking
+- networks
 - list networks
+- security
+- network management
+- enterprise
+- list devices
 slug: network-management
 tags:
 - Cisco

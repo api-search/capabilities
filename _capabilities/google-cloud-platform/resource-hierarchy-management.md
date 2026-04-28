@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloud-resource-manager
 description: Workflow for managing the Google Cloud resource hierarchy including projects, folders, organizations, and tags. Used by cloud administrators and platform engineers.
@@ -41,47 +42,47 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- create a folder
-- get organization
-- folder management
-- delete folder
-- list google cloud projects under a parent
-- delete a google cloud project
-- update project
-- project management
-- get folder
-- create a project
-- get project details
-- search organizations
-- create tag key
-- cloud computing
-- update a project
-- list folders
-- create project
-- search projects
-- delete a folder
-- get organization details
-- api management
-- resource management
-- get folder details
-- governance
-- list tag keys for resource tagging
-- get project
-- list tag keys
-- single project operations
-- create folder
-- infrastructure
-- google cloud
-- create a new tag key
-- create a new google cloud project
-- list projects
-- list folders under a parent
 - delete a project
+- create tag key
+- create a folder
+- single project operations
+- get organization details
+- cloud computing
 - search for organizations
+- delete a folder
+- search organizations
+- api management
+- update a project
+- get folder
 - organization operations
+- search projects
+- create project
+- create a new google cloud project
+- google cloud
+- list projects
+- get project details
+- create a new tag key
+- update project
+- get folder details
+- list google cloud projects under a parent
+- folder management
 - platform as a service
 - delete project
 - search for projects matching a query
+- governance
+- create a project
+- get organization
+- infrastructure
+- get project
+- list folders under a parent
+- project management
+- delete a google cloud project
+- list folders
+- resource management
+- delete folder
+- list tag keys
+- list tag keys for resource tagging
+- create folder
 slug: resource-hierarchy-management
 tags:
 - Google Cloud

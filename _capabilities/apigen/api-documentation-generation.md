@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - apigen
 description: Workflow for generating, publishing, and managing API documentation using APIGen - creating projects from PHP source code, configuring endpoints, and deploying documentation sites.
@@ -21,28 +22,28 @@ personas: []
 provider_name: APIGen
 provider_slug: apigen
 search_terms:
-- developer generating api documentation for php projects using apigen.
-- deploy documentation.
-- deploy
-- create a new php api documentation project in apigen.
-- PHP Developer
-- deploy documentation site
-- create project
-- api code generation
-- writer managing and publishing api documentation sites.
-- generation
-- create project.
 - apigen
-- Technical Writer
-- code
-- deploy an api documentation site for a project.
+- deploy documentation site
+- writer managing and publishing api documentation sites.
+- developer generating api documentation for php projects using apigen.
+- deploy
 - documentation
-- list projects
-- list all apigen documentation projects.
-- create documentation project
-- php
+- deploy documentation.
+- Technical Writer
 - list projects.
+- api code generation
+- create project
+- php
+- list projects
+- create a new php api documentation project in apigen.
 - open source
+- list all apigen documentation projects.
+- deploy an api documentation site for a project.
+- create project.
+- code
+- generation
+- create documentation project
+- PHP Developer
 slug: api-documentation-generation
 tags:
 - APIGen

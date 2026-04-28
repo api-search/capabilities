@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - opensearch_service
 description: Workflow capability composing Amazon OpenSearch Service APIs for developers and operators.
@@ -13,22 +14,22 @@ personas: []
 provider_name: Amazon OpenSearch Service
 provider_slug: amazon-opensearch-service
 search_terms:
-- primary amazon opensearch service resources
-- core api workflow
 - list and manage openapi.yml resources
-- full-text search
 - log analytics
-- list openapi.yml
-- list resources
-- aws
-- opensearch
-- developer using amazon opensearch service apis
+- core api workflow
 - analytics
-- Developer
+- aws
+- full-text search
 - search
-- list amazon opensearch service resources
-- elasticsearch
+- list openapi.yml
+- Developer
+- opensearch
 - amazon opensearch service
+- elasticsearch
+- list amazon opensearch service resources
+- developer using amazon opensearch service apis
+- primary amazon opensearch service resources
+- list resources
 slug: amazon-opensearch-service-workflow
 tags:
 - Amazon OpenSearch Service

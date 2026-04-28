@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: BBVA
 provider_slug: bbva
 search_terms:
+- financial services
+- open banking
+- banking
 - spain
 - mexico
-- open banking
-- financial services
-- banking
 - psd2
 slug: open-banking
 tags: []

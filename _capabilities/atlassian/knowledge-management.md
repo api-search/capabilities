@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - atlassian-admin
 description: Knowledge management workflow combining Confluence Content, Space, Search, Template, Label, and User APIs for technical writers and team leads to create, organize, and share documentation.
@@ -21,31 +22,31 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list groups
-- list confluence users
-- search content
-- search confluence content using cql
-- content management
-- search confluence content
+- list spaces
+- list confluence spaces
 - atlassian
-- collaboration
 - list confluence templates
+- search confluence content
+- platform
+- content search
+- list confluence pages and blog posts
 - space management
 - list content
-- list users
-- content search
-- list confluence content
-- list confluence spaces
-- platform
-- productivity
-- list confluence pages and blog posts
-- code
-- list templates
+- search content
+- search confluence content using cql
 - knowledge management
+- list confluence content
+- collaboration
+- list users
+- code
 - confluence
-- list spaces
-- software development
+- list templates
+- content management
+- productivity
+- list groups
+- list confluence users
 - list confluence groups
+- software development
 slug: knowledge-management
 tags:
 - Atlassian

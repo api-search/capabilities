@@ -1,4 +1,6 @@
 ---
+categories:
+- crm-sales
 consumed_apis:
 - crm
 - chatbot
@@ -47,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- chatbot intents
-- retrieve support and service cases.
-- retrieve available chatbot intents.
-- send a notification via email, text, or in-app channels.
-- create case
 - create a new support or service case.
-- sales
-- list opportunities
-- crm
-- process a chatbot intent fulfillment request.
-- chatbot intent fulfillments
-- chatbot
-- peopletools platform services.
-- list intents
-- get customer
-- financial management
-- campus solutions.
-- retrieve sales opportunities.
-- customer engagement
-- case management
-- erp
-- retrieve details for a specific customer.
-- individual customer details
-- list cases
-- hcm
-- retrieve notifications for the current user.
-- fulfill intent
-- supply chain management
-- list notifications
 - retrieve customer records.
-- sales opportunities
-- enterprise software
-- send notification
-- human capital management.
-- notification management
-- campus solutions
-- peoplesoft
-- customer records
-- financial and supply chain management.
-- support and service cases
 - list customers
+- sales opportunities
+- support and service cases
+- chatbot intents
+- retrieve notifications for the current user.
+- financial and supply chain management.
+- retrieve sales opportunities.
+- customer records
+- customer engagement
+- peoplesoft
+- create case
+- individual customer details
+- send a notification via email, text, or in-app channels.
+- fulfill intent
+- get customer
+- human capital management.
+- campus solutions
+- hcm
+- retrieve details for a specific customer.
+- campus solutions.
+- peopletools platform services.
+- retrieve available chatbot intents.
+- list intents
+- send notification
+- retrieve support and service cases.
+- erp
+- process a chatbot intent fulfillment request.
+- enterprise software
+- case management
+- chatbot
+- list opportunities
+- supply chain management
+- sales
+- list cases
+- chatbot intent fulfillments
+- crm
+- financial management
+- notification management
+- list notifications
 slug: customer-engagement
 tags:
 - PeopleSoft

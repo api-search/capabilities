@@ -1,4 +1,6 @@
 ---
+categories:
+- object-storage
 consumed_apis:
 - ebs
 description: Unified capability for managing EBS volumes, snapshots, and encryption for cloud storage administrators.
@@ -37,38 +39,38 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- amazon ebs detach volume
-- describe volumes
-- workflow capability for block storage management.
-- deleteVolume
-- describeSnapshots
-- snapshots
-- amazon ebs describe volumes
-- amazon ebs create snapshot
-- block storage
-- attach volume
+- create volume
 - delete volume
-- createVolume
-- block storage management business domain for amazon ebs.
-- aws
-- detachVolume
-- create snapshot
-- engineers managing amazon ebs resources on aws.
-- amazon ebs create volume
-- amazon ebs delete volume
-- amazon ebs
 - describeVolumes
 - ebs
-- storage
-- describe snapshots
-- amazon web services
-- volumes
-- detach volume
-- amazon ebs attach volume
+- describe volumes
 - attachVolume
+- workflow capability for block storage management.
+- storage
+- detachVolume
+- amazon ebs attach volume
+- amazon web services
+- block storage
+- amazon ebs describe volumes
+- amazon ebs delete volume
+- create snapshot
+- snapshots
 - ec2
+- amazon ebs create snapshot
+- createVolume
+- describe snapshots
+- amazon ebs create volume
+- block storage management business domain for amazon ebs.
+- attach volume
 - createSnapshot
-- create volume
+- aws
+- describeSnapshots
+- detach volume
+- amazon ebs
+- amazon ebs detach volume
+- engineers managing amazon ebs resources on aws.
+- deleteVolume
+- volumes
 - amazon ebs describe snapshots
 slug: ebs-management
 tags:

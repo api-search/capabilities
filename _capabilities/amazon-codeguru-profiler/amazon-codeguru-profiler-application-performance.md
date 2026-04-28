@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - codeguruprofiler
 description: Unified workflow for DevOps teams to manage profiling groups, retrieve CPU and heap profile data, and act on performance recommendations for production applications.
@@ -9,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- list findings reports
-- get details about a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- machine learning
-- create profiling group
-- list profiling groups
-- post agent profile
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- list profile times
-- list profiling groups in the account
-- aws
-- get recommendations
-- developer persona.
-- application performance
-- get optimization recommendations for a profiling group
-- list profile collection times for a profiling group
-- devops engineer persona.
 - profiling
-- create a new profiling group
-- get aggregated profile data
-- devops
-- submit profiling agent data
-- Platform Engineer
-- platform engineer persona.
-- amazon
-- DevOps Engineer
+- create profiling group
 - Developer
-- list findings reports for a profiling group
-- get profile
+- post agent profile
 - describe profiling group
+- developer persona.
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- application performance
+- DevOps Engineer
+- list profiling groups in the account
+- get profile
+- platform engineer persona.
+- devops
+- Platform Engineer
+- list profiling groups
+- list profile times
+- list findings reports
+- get aggregated profile data
+- machine learning
+- list findings reports for a profiling group
+- get details about a profiling group
+- devops engineer persona.
+- aws
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- get optimization recommendations for a profiling group
+- submit profiling agent data
+- get recommendations
+- list profile collection times for a profiling group
+- amazon
+- create a new profiling group
 slug: amazon-codeguru-profiler-application-performance
 tags:
 - Amazon

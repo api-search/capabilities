@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - x-ray
 description: Workflow capability for collecting, analyzing, and visualizing distributed traces with AWS X-Ray.
@@ -10,23 +12,23 @@ provider_name: AWS X-Ray
 provider_slug: aws-x-ray
 search_terms:
 - get_service_graph
-- list x-ray groups for filtering traces
-- retrieve full trace details by trace ids
-- create a new x-ray group with a filter expression
-- create_group
-- aws
-- batch_get_traces
-- get active sampling rules controlling trace collection
 - performance
-- observability
-- get_groups
+- retrieve full trace details by trace ids
+- create_group
+- get active sampling rules controlling trace collection
+- aws
+- list x-ray groups for filtering traces
+- batch_get_traces
+- create a new x-ray group with a filter expression
 - debugging
-- get a service graph showing service dependencies and health
-- get summaries of x-ray traces for a time period
-- distributed tracing
+- get_groups
 - get_sampling_rules
 - microservices
+- get summaries of x-ray traces for a time period
 - get_trace_summaries
+- distributed tracing
+- observability
+- get a service graph showing service dependencies and health
 slug: distributed-tracing-workflow
 tags:
 - Observability

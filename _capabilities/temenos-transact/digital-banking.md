@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - core-banking
 description: Unified digital banking capability combining account management, customer operations, payment processing, deposits, loans, and reference data for retail and corporate banking applications. Used by digital banking developers and fintech integration teams.
@@ -45,67 +47,67 @@ personas: []
 provider_name: Temenos Transact
 provider_slug: temenos-transact
 search_terms:
+- validate iban
+- list cards
+- get account balance information
+- list available currencies
+- list accounts for a customer
+- cancel a pending payment order
+- create customer
+- list deposits
+- initiate a fund transfer between accounts
+- list customers
+- list payment orders
+- cancel payment order
+- list beneficiaries
+- get account
+- customer management
+- validate an iban and resolve bank details
+- submit a payment order
+- get account balances
+- list banking products from the catalog
+- digital banking
+- create payment order
+- list payment beneficiaries
+- list loan arrangements
+- payment operations
+- account management
+- list products
+- fund transfers
+- list loans
+- banking
+- fintech
+- get customer
+- enterprise
+- register a new payment beneficiary
+- list customer accounts with optional filters
 - get account details
 - get account transactions
-- temenos
-- get account details by id
-- initiate a fund transfer
-- list beneficiaries
-- create fund transfer
-- financial services
-- get transaction history for an account
-- create a payment order
 - account details
-- list deposit arrangements
-- list cards
-- create a customer
-- list customer accounts
-- fund transfers
-- list currencies
-- list accounts for a customer
-- list payment beneficiaries
-- initiate a fund transfer between accounts
-- get customer accounts
-- get transaction history
-- get customer
-- get account
-- cancel payment order
-- fintech
-- list loans
-- list available currencies
-- validate an iban and resolve bank details
-- banking
-- list banking products from the catalog
-- validate iban
-- list products
-- get customer details
-- create beneficiary
-- create payment order
-- create a new customer
-- list debit and credit cards
-- account balances
-- get account balances
-- enterprise
-- get account balance information
-- list loan arrangements
-- get fund transfer
-- payment operations
-- payments
-- list payment orders
-- list accounts
-- cancel a pending payment order
-- account management
-- list deposits
-- transaction history
-- list customer accounts with optional filters
+- get account details by id
 - core banking
-- create customer
+- create beneficiary
+- temenos
+- initiate a fund transfer
+- get customer accounts
+- create a customer
+- list currencies
+- get customer details
+- create a payment order
+- financial services
+- transaction history
+- create fund transfer
+- account balances
+- payments
 - get fund transfer status and details
-- digital banking
-- submit a payment order
-- register a new payment beneficiary
-- list customers
-- customer management
+- get transaction history for an account
+- create a new customer
+- list accounts
+- list customer accounts
+- get transaction history
+- list debit and credit cards
+- get fund transfer
+- list deposit arrangements
 slug: digital-banking
 tags:
 - Temenos

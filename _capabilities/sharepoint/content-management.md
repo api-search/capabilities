@@ -1,4 +1,6 @@
 ---
+categories:
+- content-management
 consumed_apis:
 - sp-sites-lists
 - sp-files-search
@@ -39,38 +41,38 @@ provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
 - upload file
-- list files in a sharepoint folder
-- download file
-- get items from a sharepoint list
-- enterprise content management
-- get list items
-- content management
-- document management
-- collaboration
-- get lists
-- get my user profile
-- search across all sharepoint content
-- update list item
-- delete a sharepoint list item
-- create a new sharepoint list
-- get sharepoint site properties
-- create list item
-- delete list item
-- get files in folder
-- sharepoint
-- get files
-- upload a file to sharepoint
-- search
-- microsoft
-- get web
-- intranet
-- list all sharepoint lists
-- get current user's sharepoint profile
 - download a file from sharepoint
-- create list
+- get list items
+- list all sharepoint lists
+- update list item
+- get web
 - search query
-- update a sharepoint list item
+- create list
+- intranet
+- create list item
+- document management
+- search across all sharepoint content
+- upload a file to sharepoint
+- get my user profile
+- get sharepoint site properties
+- get files in folder
+- collaboration
+- list files in a sharepoint folder
+- get lists
+- get items from a sharepoint list
+- get files
 - add an item to a sharepoint list
+- get current user's sharepoint profile
+- microsoft
+- update a sharepoint list item
+- content management
+- download file
+- delete list item
+- sharepoint
+- create a new sharepoint list
+- enterprise content management
+- search
+- delete a sharepoint list item
 slug: content-management
 tags:
 - SharePoint

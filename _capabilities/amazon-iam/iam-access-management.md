@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - iam
 description: Unified capability for cloud administrators to manage IAM users, roles, groups, and policies for AWS account access control and security governance.
@@ -33,51 +35,51 @@ personas: []
 provider_name: Amazon IAM
 provider_slug: amazon-iam
 search_terms:
-- list all iam roles in the account
-- policy management
-- create a new iam role with a trust policy
-- create a new iam policy
-- authentication
-- manage iam users
-- creating and managing aws user identities
-- create user
-- attach role policy
-- list all iam users
-- create policy
-- manage iam policies
-- Cloud Administrator
-- attach a managed policy to an iam user
-- list access keys
-- aws
-- list all iam users in the account
-- list all iam roles
-- list users
-- create a new iam policy with specified permissions
-- identity
-- delete user
-- Security Engineer
-- defining and enforcing what users and services can do
-- list access keys for an iam user
-- delete an iam user from the account
 - create a new iam user with the specified username
-- access management
-- authorization
-- reviews and audits iam configurations for security compliance
-- manage iam roles
-- create a new iam role
-- create a new iam user
-- security
-- list all iam policies
-- creating and attaching permission policies
+- list all iam users in the account
 - attach user policy
-- attach a managed policy to an iam role
-- manages iam users, roles, and policies for aws account governance
-- list iam policies available for attachment
-- access control
-- create role
-- list roles
+- create policy
+- manage iam roles
+- access management
+- reviews and audits iam configurations for security compliance
+- list all iam roles
+- creating and attaching permission policies
 - list policies
+- authentication
+- manage iam policies
+- create a new iam policy with specified permissions
+- list access keys for an iam user
+- security
 - iam
+- delete an iam user from the account
+- creating and managing aws user identities
+- manage iam users
+- create a new iam policy
+- Cloud Administrator
+- identity
+- create a new iam role
+- list users
+- attach a managed policy to an iam user
+- Security Engineer
+- attach role policy
+- manages iam users, roles, and policies for aws account governance
+- defining and enforcing what users and services can do
+- access control
+- attach a managed policy to an iam role
+- list all iam users
+- list access keys
+- create a new iam user
+- list all iam policies
+- create a new iam role with a trust policy
+- list all iam roles in the account
+- aws
+- authorization
+- create user
+- list roles
+- list iam policies available for attachment
+- create role
+- delete user
+- policy management
 slug: iam-access-management
 tags:
 - AWS

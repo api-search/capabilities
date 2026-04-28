@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Workflow capability for executing lift-and-shift migrations from on-premises to AWS using Application Migration Service.
 layout: capability
@@ -24,39 +25,39 @@ personas: []
 provider_name: Amazon Application Migration Service
 provider_slug: amazon-application-migration-service
 search_terms:
-- migration
-- lift and shift
-- describe source servers
-- amazon application migration service
-- start cutover
-- finalize cutover
-- test migration operations
-- start test
-- list all source servers and their current migration lifecycle state to understand readiness.
-- aws
-- list all source servers with lifecycle state
-- review launch settings for a source server to verify target instance type and licensing.
-- finalize the cutover to disconnect replication and complete the migration.
-- cutover migration operations
-- review replication settings for a source server to ensure correct staging area configuration.
-- start production cutover to aws
-- execute the production cutover to migrate source servers to aws with minimal downtime.
 - launch test instances to validate migration without impacting production source servers.
-- migration jobs
-- monitor all migration jobs to track progress and identify any failures.
-- track migration progress at the wave level for large-scale migrations.
-- get launch configuration
-- terminate test instances after validation to avoid unnecessary costs.
-- monitor all migration jobs
-- cloud migration
-- get replication configuration
-- describe jobs
-- list applications
-- review migration application groupings to track which servers belong to each application.
+- finalize the cutover to disconnect replication and complete the migration.
 - terminate test instances
-- source servers to migrate
-- list waves
+- list all source servers with lifecycle state
+- review migration application groupings to track which servers belong to each application.
+- amazon application migration service
+- execute the production cutover to migrate source servers to aws with minimal downtime.
+- start production cutover to aws
+- finalize cutover
+- monitor all migration jobs to track progress and identify any failures.
+- review launch settings for a source server to verify target instance type and licensing.
+- track migration progress at the wave level for large-scale migrations.
+- list all source servers and their current migration lifecycle state to understand readiness.
+- get launch configuration
+- migration jobs
 - launch test instances for source servers
+- lift and shift
+- list waves
+- cutover migration operations
+- monitor all migration jobs
+- describe source servers
+- terminate test instances after validation to avoid unnecessary costs.
+- list applications
+- get replication configuration
+- migration
+- aws
+- start test
+- start cutover
+- describe jobs
+- review replication settings for a source server to ensure correct staging area configuration.
+- cloud migration
+- test migration operations
+- source servers to migrate
 slug: lift-and-shift-migration
 tags:
 - Amazon Application Migration Service

@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - redshift
 - redshift-data
@@ -10,27 +12,27 @@ personas: []
 provider_name: AWS Redshift
 provider_slug: aws-redshift
 search_terms:
-- create_snapshot
-- list all redshift clusters in the account
-- sql
-- analytics
-- big data
-- list_sql_statements
-- data warehouse
-- create a new amazon redshift cluster
-- delete_cluster
+- get_sql_result
 - cancel_sql_statement
-- execute a sql statement against a redshift cluster
-- delete a redshift cluster
-- execute_sql
-- list_clusters
 - cancel a running sql statement
+- execute a sql statement against a redshift cluster
+- delete_cluster
+- list all redshift clusters in the account
+- list_sql_statements
+- list_clusters
+- delete a redshift cluster
+- analytics
 - create_cluster
 - create a snapshot of a redshift cluster
-- get the result of a sql statement execution
-- list recent sql statement executions
+- execute_sql
 - cloud database
-- get_sql_result
+- data warehouse
+- create_snapshot
+- big data
+- create a new amazon redshift cluster
+- list recent sql statement executions
+- sql
+- get the result of a sql statement execution
 slug: data-warehouse-workflow
 tags:
 - Analytics

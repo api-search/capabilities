@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
-- cloud computing
 - life sciences
-- bioinformatics
-- aws
 - genomics
+- aws
+- cloud computing
 - healthcare
+- bioinformatics
 slug: amazon-healthomics-genomics-operations
 tags: []
 tools: []

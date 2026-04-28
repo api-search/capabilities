@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Allianz Trade
 provider_slug: allianz-trade-online
 search_terms:
-- credit insurance
-- insurance
-- trade credit
-- e-commerce
-- risk management
 - surety
+- credit insurance
+- e-commerce
+- insurance
+- risk management
+- trade credit
 slug: trade-credit-management
 tags: []
 tools: []

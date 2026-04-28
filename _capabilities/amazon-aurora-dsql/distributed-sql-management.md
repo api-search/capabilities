@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Workflow capability for creating and managing distributed SQL clusters with Amazon Aurora DSQL including multi-region configurations.
 layout: capability
@@ -16,28 +17,28 @@ personas: []
 provider_name: Amazon Aurora DSQL
 provider_slug: amazon-aurora-dsql
 search_terms:
-- create linked aurora dsql clusters across multiple aws regions for global distribution.
-- postgresql
-- list clusters
-- serverless
 - delete cluster
-- get cluster endpoint
-- create multi region clusters
-- get the current status and configuration of an aurora dsql cluster.
-- amazon aurora dsql
-- aws
-- create a new cluster
-- update cluster
 - list all aurora dsql clusters to understand available databases.
-- distributed sql cluster management
-- get cluster
-- list all clusters
-- delete an aurora dsql cluster when it is no longer needed.
+- create a new cluster
 - distributed sql
+- serverless
 - get the postgresql-compatible connection endpoint for an aurora dsql cluster.
 - create a new aurora dsql cluster for distributed sql workloads.
-- update the configuration of an aurora dsql cluster.
 - create cluster
+- get the current status and configuration of an aurora dsql cluster.
+- list all clusters
+- amazon aurora dsql
+- list clusters
+- create multi region clusters
+- postgresql
+- update the configuration of an aurora dsql cluster.
+- get cluster
+- get cluster endpoint
+- delete an aurora dsql cluster when it is no longer needed.
+- aws
+- create linked aurora dsql clusters across multiple aws regions for global distribution.
+- distributed sql cluster management
+- update cluster
 slug: distributed-sql-management
 tags:
 - Amazon Aurora DSQL

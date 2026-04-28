@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - cloudwatch
 description: Workflow for observability and monitoring using Amazon CloudWatch for Operations Engineer personas.
@@ -9,15 +11,15 @@ personas: []
 provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
-- Operations Engineer
-- cloudwatch
-- aws
-- logs
-- metrics
-- monitoring
 - observability
-- amazon web services
+- aws
 - amazon cloudwatch
+- cloudwatch
+- logs
+- monitoring
+- Operations Engineer
+- metrics
+- amazon web services
 slug: observability
 tags:
 - Amazon Web Services

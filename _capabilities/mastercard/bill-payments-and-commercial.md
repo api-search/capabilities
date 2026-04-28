@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - bill-pay
 - bill-payment-validator
@@ -29,39 +30,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- business payments
-- retrieve commercial event notifications
-- validate a bill payment before processing
-- bill payment validation
-- get commercial notifications
-- financial services
-- search billers
-- credit cards
-- virtual card management
-- list business spending control rules
-- list spending controls
-- commercial
-- validate bill payment
-- business spending controls
-- mastercard
-- create spending control
-- search for billers in the rpps network
-- biller management
-- create a spending control rule
-- validate payment
-- digital identity
-- create a virtual card
-- get biller details
-- bill payments
-- payments
-- open banking
-- create a business spending control rule
-- search for billers
-- treasury
-- fraud detection
-- validate a bill payment
-- create virtual card
 - create a virtual card for commercial payments
+- validate a bill payment before processing
+- bill payments
+- search billers
+- list spending controls
+- credit cards
+- treasury
+- create spending control
+- biller management
+- commercial
+- business spending controls
+- digital identity
+- search for billers
+- validate bill payment
+- create a business spending control rule
+- open banking
+- get commercial notifications
+- validate payment
+- create a spending control rule
+- virtual card management
+- validate a bill payment
+- business payments
+- mastercard
+- retrieve commercial event notifications
+- create a virtual card
+- bill payment validation
+- fraud detection
+- create virtual card
+- financial services
+- get biller details
+- payments
+- search for billers in the rpps network
+- list business spending control rules
 slug: bill-payments-and-commercial
 tags:
 - Mastercard

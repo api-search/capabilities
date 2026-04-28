@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-logic-apps
 description: Workflow capability for managing Azure Logic Apps resources. Used by cloud engineers and DevOps teams.
@@ -14,23 +15,23 @@ provider_name: Azure Logic Apps
 provider_slug: azure-logic-apps
 search_terms:
 - azure
-- list workflowrun resources
-- azure resource management
-- cloud
-- integration
-- list workflow triggers
-- ipaas
-- workflows
 - list integrationaccount resources
-- list all resources
-- list workflow resources
-- management
 - list integration accounts
-- list workflowtrigger resources
-- list workflows
+- integration
 - resource management
-- list workflow runs
+- azure resource management
+- list workflows
+- list workflow triggers
+- list workflowrun resources
 - list
+- management
+- list workflow resources
+- list workflow runs
+- workflows
+- cloud
+- list all resources
+- list workflowtrigger resources
+- ipaas
 slug: azure-logic-apps-management
 tags:
 - Azure

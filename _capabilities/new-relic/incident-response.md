@@ -1,4 +1,6 @@
 ---
+categories:
+- incident-management
 consumed_apis:
 - rest-api
 description: Incident response workflow combining alerts, incidents, violations, and events for SREs investigating and resolving production issues detected by New Relic.
@@ -33,41 +35,41 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- apm
+- get alerts incidents
+- list alert incidents
+- list alert incidents, optionally filtered to only open ones
+- list alert events filtered by product or entity type
+- get alerts conditions
+- incidents
+- list alert violations, optionally filtered to only open ones
+- get application
+- list applications for incident context
 - analytics
+- apm
+- platform
+- get application details for incident investigation
+- get application details
+- incident response
+- observability
+- list alert conditions for a specific policy
 - new relic
 - performance
-- list alert violations
-- incident response
-- get applications
-- get application details for incident investigation
-- list alert incidents
-- get alerts conditions
-- observability
-- get application details for incident context
-- get alerts violations
-- list applications for context
-- list applications for incident context
-- platform
-- get alerts events
-- list alert conditions
-- list alert violations, optionally filtered to only open ones
-- sre
-- incidents
-- get application
-- infrastructure
+- list alert conditions for a policy
 - analysis
-- monitoring
+- sre
+- get alerts violations
+- list alert conditions
 - devops
-- list alert conditions for a specific policy
-- alerts
-- get alerts incidents
+- monitoring
 - list alert events
 - list applications
-- get application details
-- list alert events filtered by product or entity type
-- list alert conditions for a policy
-- list alert incidents, optionally filtered to only open ones
+- get application details for incident context
+- get applications
+- infrastructure
+- list alert violations
+- get alerts events
+- list applications for context
+- alerts
 slug: incident-response
 tags:
 - New Relic

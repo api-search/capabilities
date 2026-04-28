@@ -1,4 +1,6 @@
 ---
+categories:
+- crm-sales
 consumed_apis:
 - activecampaign-v3
 description: Workflow capability for CRM and sales pipeline management including deals, accounts, tasks, and pipeline stages. Used by sales teams and revenue operations to track and advance deals.
@@ -25,45 +27,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- create deal
-- orchestrate contact journeys, campaigns, automations, and list management
-- Marketing Manager
-- sales
-- Sales Representative
-- crm
-- list all sales deals in activecampaign crm
-- company account management
-- manages email campaigns, automations, and contact segmentation
-- create a new deal
-- Email Marketer
-- cross-channel contact engagement and personalization
-- create a new company account in activecampaign crm
-- builds integrations, automation workflows, and uses the api directly
-- create a new account
-- get deal
-- list all deals
-- email, sms, and multi-channel marketing automation
-- sales automation
-- marketing automation
 - list all accounts
-- activecampaign
-- customer experience
-- deals
-- create account
-- crm, pipeline management, and revenue operations
-- accounts
 - list deals
-- retrieve a specific deal by id
-- list accounts
-- Account Manager
-- list all company accounts in activecampaign crm
-- Growth Engineer
-- tracks deals, manages accounts, and uses crm features
-- Revenue Operations
+- email, sms, and multi-channel marketing automation
+- get deal
+- builds integrations, automation workflows, and uses the api directly
+- orchestrate contact journeys, campaigns, automations, and list management
+- create a new deal
+- manages email campaigns, automations, and contact segmentation
 - sales deal management
-- create a new sales deal in activecampaign crm
-- manage sales pipeline, deals, accounts, and tasks
+- create a new company account in activecampaign crm
+- Sales Representative
 - email marketing
+- create a new account
+- Account Manager
+- Email Marketer
+- activecampaign
+- tracks deals, manages accounts, and uses crm features
+- marketing automation
+- customer experience
+- Revenue Operations
+- retrieve a specific deal by id
+- Marketing Manager
+- create a new sales deal in activecampaign crm
+- create deal
+- cross-channel contact engagement and personalization
+- manage sales pipeline, deals, accounts, and tasks
+- create account
+- Growth Engineer
+- list all sales deals in activecampaign crm
+- sales
+- sales automation
+- list all deals
+- crm
+- accounts
+- list all company accounts in activecampaign crm
+- deals
+- list accounts
+- crm, pipeline management, and revenue operations
+- company account management
 slug: crm-sales
 tags:
 - ActiveCampaign

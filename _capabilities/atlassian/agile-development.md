@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - atlassian-admin
 description: Agile software development workflow combining Jira Issue, Project, Filter, Search, Field, Workflow, and Dashboard APIs for software developers and scrum masters to plan, track, and deliver software.
@@ -17,30 +18,30 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
+- list all jira projects
+- agile
+- search issues
+- search jira issues using jql queries
+- jira
+- atlassian
+- list jira dashboards
+- platform
+- list workflows
+- jira issue management
+- list projects
+- list all projects
+- list filters
+- collaboration
+- jira project management
+- list statuses
 - list dashboards
 - list workflow statuses
-- list saved jira filters
-- search issues
-- list all jira projects
-- atlassian
-- collaboration
-- list statuses
-- list all projects
-- platform
-- search jira issues using jql queries
-- productivity
-- jira project management
 - code
-- agile
-- list projects
-- software development
-- search issues using jql
-- jira
-- list jira dashboards
 - list jira workflows
-- jira issue management
-- list workflows
-- list filters
+- search issues using jql
+- list saved jira filters
+- productivity
+- software development
 slug: agile-development
 tags:
 - Agile

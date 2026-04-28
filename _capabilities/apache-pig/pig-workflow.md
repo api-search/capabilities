@@ -1,4 +1,6 @@
 ---
+categories:
+- data-engineering
 consumed_apis: []
 description: Workflow for submitting, monitoring, and managing Pig Latin data analysis jobs on Hadoop clusters.
 layout: capability
@@ -16,32 +18,32 @@ personas: []
 provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
-- list pig jobs
-- list jobs
-- big data
-- apache pig
-- validate a pig latin script for syntax errors
-- builds etl pipelines using pig latin scripts
-- Data Engineer
-- apache
 - submit job
-- get status and details of a pig job
-- submit a pig latin script for execution
-- hadoop
-- get job
-- validate script
-- runs ad-hoc data analysis jobs on hadoop clusters
-- etl
-- get execution logs for a pig job
-- kill a running pig job
-- get job logs
-- list all pig data processing jobs
-- submit pig script
 - kill job
-- scripting
+- builds etl pipelines using pig latin scripts
 - Data Analyst
-- open source
+- scripting
 - data analysis
+- submit pig script
+- runs ad-hoc data analysis jobs on hadoop clusters
+- apache
+- get job
+- apache pig
+- submit a pig latin script for execution
+- validate a pig latin script for syntax errors
+- open source
+- kill a running pig job
+- list all pig data processing jobs
+- validate script
+- list pig jobs
+- Data Engineer
+- get execution logs for a pig job
+- big data
+- get job logs
+- list jobs
+- etl
+- hadoop
+- get status and details of a pig job
 slug: pig-workflow
 tags:
 - Apache Pig

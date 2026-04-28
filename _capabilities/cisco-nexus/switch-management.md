@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - nxapi-rest
 description: Unified workflow for network administrators to configure and monitor Cisco Nexus switches including interfaces, VLANs, routing, and system features via the NX-API REST DME object model.
@@ -41,62 +42,62 @@ personas: []
 provider_name: Cisco Nexus Dashboard
 provider_slug: cisco-nexus
 search_terms:
-- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
-- create a vlan
-- list all static routes
-- get a specific static route by vrf and prefix
-- configure static route
-- delete a vlan
-- create or modify ipv4 static routes
-- configure system
-- sdn
-- switches
-- single interface operations
-- single vlan operations
-- list routes
-- network automation
-- get system info
-- interface management
+- get configuration and operational state of a physical interface
 - apply system-level configuration changes
-- list all vlan bridge domains on the switch
-- configure features
-- system information
-- get interface
 - delete a vlan bridge domain from the switch
 - get svi
-- list all vlans
-- cisco
-- get system information
-- configure interface
+- list all vlan bridge domains on the switch
 - create or modify a vlan bridge domain
-- get configuration and operational state of a physical interface
-- networking
-- data center
-- list vlans
 - configure svi
-- get vlan details
-- get bgp config
-- delete vlan
-- infrastructure
-- vlan management
-- list all physical ethernet interfaces on the switch
-- get static route
-- configure a physical ethernet interface (admin state, speed, vlan, etc.)
+- get a specific static route by vrf and prefix
+- list all ipv4 static routes across all vrfs
+- list all physical interfaces
+- get the full bgp configuration tree
+- get switch virtual interface configuration
+- get interface details
+- single vlan operations
+- create a vlan
+- delete a vlan
+- network automation
+- get interface
+- list all vlans
+- create or modify ipv4 static routes
 - get vlan
+- single interface operations
+- sdn
+- get system information
+- network management
+- static route management
+- configure static route
+- get static route
+- system information
+- list static routes
+- list routes
+- cisco
+- vlan management
 - create or modify a switch virtual interface for layer 3 routing
+- interface management
+- list interfaces
+- get system info
+- networking
+- configure features
+- list all static routes
+- nexus
+- list all physical ethernet interfaces on the switch
 - create vlan
 - get nexus switch system information including hostname, serial, and nx-os version
-- get switch virtual interface configuration
-- list all ipv4 static routes across all vrfs
+- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
 - get vlan bridge domain details
-- network management
-- list all physical interfaces
-- static route management
-- list static routes
-- get the full bgp configuration tree
-- list interfaces
-- nexus
-- get interface details
+- infrastructure
+- configure interface
+- configure system
+- get vlan details
+- get bgp config
+- list vlans
+- delete vlan
+- configure a physical ethernet interface (admin state, speed, vlan, etc.)
+- data center
+- switches
 slug: switch-management
 tags:
 - Cisco

@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-events
 description: Unified capability for IoT Developer, Solutions Architect to manage detect and respond to events from iot sensors and applications operations.
@@ -13,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Events
 provider_slug: amazon-iot-events
 search_terms:
-- list alarms
-- detect and respond to events from iot sensors and applications.
-- state machine
-- amazon iot events create detector model
-- event detection
-- manages amazon iot events resources and operations
-- list inputs
-- aws
-- create alarm model
 - amazon iot events list detector models
-- describe alarm model
-- amazon iot events describe detector model
-- amazon iot events create input
-- amazon iot events resources
-- amazon iot events list inputs
-- list detector models
-- amazon iot events describe alarm model
-- Solutions Architect
-- create input
-- amazon iot events create alarm model
-- describe detector model
-- iot
-- amazon iot events list alarms
-- create detector model
-- IoT Developer
 - automation
+- manages amazon iot events resources and operations
+- amazon iot events create input
+- iot
+- describe alarm model
+- describe detector model
+- create detector model
+- event detection
+- amazon iot events list alarms
+- create input
+- IoT Developer
+- list detector models
+- list inputs
+- state machine
+- detect and respond to events from iot sensors and applications.
+- amazon iot events resources
+- amazon iot events create alarm model
+- amazon iot events describe alarm model
+- amazon iot events create detector model
+- create alarm model
+- aws
+- amazon iot events describe detector model
+- Solutions Architect
+- amazon iot events list inputs
+- list alarms
 slug: iot-event-management
 tags:
 - IoT

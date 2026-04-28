@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - zoominfo-api
 description: Workflow for sales teams to find, qualify, and enrich prospect data. Combines contact search, company search, intent signals, and enrichment for targeted outreach.
@@ -33,51 +34,51 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- zoominfo
-- search contacts
-- enrich company records
-- search scoops
-- get intent data for a specific company
-- enrich company
-- search zoominfo for companies by industry, revenue, employee count, and tech stack
-- company search
-- search intent
-- find companies showing buying intent signals in your category
-- enrich orgchart
-- enrich a company with firmographic data
-- sales intelligence
-- enrich intent
-- enrich a company with firmographic data including revenue and employee count
-- b2b
-- marketing intelligence
-- intent data
-- search for contacts matching sales criteria
-- find companies showing buying intent
 - get technology stack details for a target company
+- zoominfo
+- enrich intent
+- enrich contact records
+- search scoops
+- marketing intelligence
+- search and discover contacts
+- search for business scoops about companies
+- company search
+- enrich a company with firmographic data
+- search zoominfo for companies by industry, revenue, employee count, and tech stack
+- enrich a company with firmographic data including revenue and employee count
+- company data
+- enrich company
+- search intent
+- find companies showing buying intent
+- enrich orgchart
+- sales prospecting
+- get intent data for a specific company
+- enrich a contact with verified data
+- business intelligence scoops
+- contacts
+- find companies showing buying intent signals in your category
+- contact search
+- b2b
+- sales intelligence
+- search for companies matching ideal customer profile
+- search and discover companies
+- search contacts
+- search companies
+- search for business intelligence scoops about target companies
+- search for contacts matching sales criteria
 - search for recent news about target companies
 - get org chart to identify decision makers at target company
-- enrich contact
-- buyer intent signals
 - b2b data
-- company data
-- search news
-- search for companies matching ideal customer profile
-- search for business intelligence scoops about target companies
-- contact database
-- lead generation
-- enrich contact records
-- search and discover companies
-- search for business scoops about companies
-- enrich a contact with verified data
-- search companies
-- enrich technology
-- contacts
-- search and discover contacts
 - enrich a contact record with verified email, phone, and professional details
+- enrich company records
+- intent data
+- enrich contact
+- lead generation
+- contact database
+- enrich technology
 - search zoominfo for contacts by job title, company, location, and industry
-- sales prospecting
-- business intelligence scoops
-- contact search
+- search news
+- buyer intent signals
 - data
 slug: sales-prospecting
 tags:

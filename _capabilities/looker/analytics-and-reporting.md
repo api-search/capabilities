@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - looker
 description: Unified workflow for business intelligence analytics including dashboards, looks, queries, and user management. Used by data analysts and BI administrators.
@@ -61,63 +63,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- delete look
-- get query
-- data visualization
-- search for dashboards.
-- business intelligence
-- list dashboards
-- analytics
-- create query
-- user management.
-- delete a dashboard.
-- create user
-- update look
-- get look details.
-- looker
-- list all dashboards.
-- get dashboard
-- delete dashboard
-- get query details.
-- create a new user.
-- dashboard management.
-- list all users.
-- list users
-- list all saved looks.
-- delete user
-- dashboards
-- run a saved query.
-- individual query operations.
-- delete a user.
-- create a dashboard.
-- individual look management.
-- update a look.
-- list looks
-- search for looks by title.
-- get user details.
-- search dashboards
-- run look
-- update a user.
-- get dashboard details.
-- data analytics
-- delete a look.
-- get look
-- search looks
 - create a new dashboard.
-- bi platform
-- update a dashboard.
-- query management.
-- create a query.
-- run query
+- individual query operations.
+- run a saved query.
+- get user details.
+- create query
+- individual look management.
+- dashboards
+- get look
 - create dashboard
-- update dashboard
-- look management.
-- individual dashboard management.
-- get user
-- update user
-- list all looks.
+- business intelligence
+- user management.
+- search for dashboards.
+- create a new user.
+- update a look.
 - run a look and return results.
+- get look details.
+- list all looks.
+- looker
+- analytics
+- update a dashboard.
+- get query details.
+- update user
+- update a user.
+- bi platform
+- run look
+- get dashboard
+- get dashboard details.
+- delete dashboard
+- update dashboard
+- list users
 - create a user.
+- individual dashboard management.
+- list dashboards
+- list all dashboards.
+- delete a dashboard.
+- look management.
+- delete a look.
+- search dashboards
+- dashboard management.
+- search for looks by title.
+- get user
+- list looks
+- run query
+- data analytics
+- list all saved looks.
+- delete look
+- create a query.
+- delete a user.
+- get query
+- create a dashboard.
+- create user
+- data visualization
+- list all users.
+- delete user
+- query management.
+- update look
+- search looks
 slug: analytics-and-reporting
 tags:
 - Looker

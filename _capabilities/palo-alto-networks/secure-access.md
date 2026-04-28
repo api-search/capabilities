@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - prisma-access
 - ztna-connector
@@ -323,291 +324,291 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- compliance officer
-- create a new subnet rule.
-- fqdn rules.
-- retrieve details for a specific 5g tenant.
-- create path rule
-- create a new 5g security policy.
-- 5g tenant by id.
-- vulnerability manager
-- retrieve a list of qos rules.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- delete network slice
-- threat intelligence
-- retrieve a list of 5g tenants.
-- sd-wan site by id.
-- ztna licenses.
-- create a lan network for a specific site.
-- update a specific ztna application by id.
-- monitors network health, performance, and digital experience metrics.
-- list all ztna connector groups.
-- create a new ztna connector group.
-- analyzes suspicious files and samples for malware characteristics.
-- 5g security policy by id.
-- soar
-- get ztna licenses
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- get ztna license information.
-- qos rules.
-- bandwidth allocations.
-- retrieve a list of path rules.
-- wan interfaces for an sd-wan site.
-- update 5g tenant
-- firewall
-- xdr
-- prisma access locations.
-- delete service connection
-- delete a specific ztna connector group by id.
-- update an existing 5g network slice.
-- incident responder
-- manage enterprise browser policies, user sessions, and deployments.
-- list all prisma access remote networks with pagination.
-- list all ztna connectors.
-- create lan network
-- subscription manager
-- proactively searches for threats and iocs across telemetry data.
 - threat intel analyst
-- delete an orchestrated remote network by id.
-- retrieve monitoring metrics for a specific sd-wan site.
-- list ztna connectors
-- get connector group
-- soc analyst
-- update a specific remote network by id.
-- update 5g security policy
-- list sdwan sites
-- tenant operator
-- ai runtime security scanning and automated red teaming for ai applications.
-- ztna
-- create network slice
-- secures ai applications with runtime scanning and vulnerability assessment.
-- get a specific prisma access remote network by id.
-- prisma access remote network by id.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- list all prisma access service connections with pagination.
-- create connector group
-- enterprise browser policy management and secure browsing.
-- delete a specific ztna application by id.
-- get a specific ztna connector by id.
-- enterprise it
-- get sdwan site
-- get a specific remote network by id.
-- create a new 5g tenant.
-- prisma access service connection by id.
-- update sdwan site
-- refresh ike gateway for an orchestrated remote network.
-- ztna connectors.
-- application usage metrics.
-- network security engineer
-- get bandwidth allocations optionally filtered by location.
-- list wan interfaces
-- update a specific prisma access remote network by id.
-- sase admin
-- update an existing orchestrated remote network configuration.
-- create orchestrated remote network
-- update a specific ztna connector group by id.
-- ztna applications.
-- create a new orchestrated remote network configuration.
-- list all remote networks with pagination.
-- investigates dlp incidents and manages sensitive data protection policies.
-- get onboarding status
-- delete an sd-wan site.
-- retrieve details for a specific 5g security policy.
-- get a specific ztna connector group by id.
-- sase config orchestration remote networks.
-- delete 5g tenant
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- delete 5g security policy
-- lan networks for an sd-wan site.
-- sd-wan sites.
-- data loss prevention, saas security monitoring, and identity security posture.
-- malware researcher
-- update an existing network slice.
-- cloud security
-- 5g network slices.
-- ai security engineer
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- 5g tenants.
-- compliance team
-- path rules.
-- ike gateways.
-- sre
-- conducts automated adversarial testing against ai systems and llm applications.
-- manages multi-tenant security operations at scale for managed service providers.
-- update orchestrated remote network
-- create a new prisma access remote network.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- get mobile agent infrastructure settings.
-- data protection analyst
-- get service connection
-- list all subnet rules.
-- delete ztna connector
-- get ztna application
-- get a specific prisma access service connection by id.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- create sdwan site
-- create a new prisma access service connection.
-- update ztna application
-- sase
-- get orchestrated remote network
-- schedule ztna connector upgrade.
-- update network slice
-- create fqdn rule
-- manages enterprise browser policies and secure browsing configurations.
-- identity and access management, tenant hierarchies, and subscription management.
-- service provider interconnect
-- delete a 5g network slice.
-- update service connection
-- create a new service connection.
-- get details of a specific orchestrated remote network by id.
-- create a wan interface for a specific site.
-- retrieve details for a specific 5g network slice.
-- delete a 5g security policy.
-- create qos rule
-- create ztna connector
+- delete a network slice.
+- create a new 5g network slice.
 - retrieve a list of sd-wan alarms.
-- update ztna connector
-- list all fqdn rules.
-- list all available prisma access locations.
-- 5g
-- delete a specific remote network by id.
-- ztna connector group by id.
-- delete a specific prisma access remote network by id.
-- secure access
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- update an existing 5g security policy.
-- sd-wan
-- delete orchestrated remote network
-- delete a 5g tenant.
-- get network slice
-- list fqdn rules
-- delete sdwan site
-- manages service accounts, roles, and access policies for platform api access.
-- list network slices
-- retrieve details for a specific sd-wan site.
-- update an existing 5g tenant.
-- red team operator
-- retrieve 5g security monitoring metrics.
-- sd-wan alarms.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- mobile agent infrastructure settings.
-- update a specific ztna connector by id.
-- iam admin
-- ztna connector by id.
-- ztna application by id.
-- 5g network slice by id.
-- cloud security engineer
-- delete a specific ztna connector by id.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- list all orchestrated remote networks with optional filtering.
-- refresh the ike gateway for a specific remote network.
-- manages logging infrastructure, integrations, and platform automation.
-- mssp operator
-- retrieve lan networks for a specific site.
-- list qos rules
-- investigates security incidents, triages alerts, and coordinates response actions.
-- prisma access remote networks.
-- palo alto networks
-- get a specific ztna application by id.
-- delete a specific prisma access service connection by id.
-- network security
-- schedule an upgrade for a ztna connector.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- retrieve wan interfaces for a specific site.
-- create service connection
-- list access locations
-- get site metrics
 - 5g security metrics.
-- executes containment, eradication, and recovery actions during security incidents.
+- analyzes suspicious files and samples for malware characteristics.
+- lan networks for an sd-wan site.
+- list all prisma access remote networks with pagination.
+- get site metrics
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- retrieve details for a specific 5g tenant.
+- list ztna applications
+- list all orchestrated remote networks with optional filtering.
+- update ztna connector
+- create fqdn rule
+- create 5g security policy
+- retrieve 5g security monitoring metrics.
+- enterprise browser policy management and secure browsing.
+- compliance team
+- update a specific ztna application by id.
+- create a wan interface for a specific site.
+- conducts automated adversarial testing against ai systems and llm applications.
+- subnet rules.
+- create network slice
+- list wan interfaces
+- retrieve monitoring metrics for a specific site.
+- browser security admin
+- create remote network
+- update connector group
+- list ztna connectors
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- create a new fqdn rule.
+- retrieve lan networks for a specific site.
+- sd-wan alarms.
+- get a specific ztna connector by id.
 - cloud security posture management, compliance monitoring, and workload protection.
-- get 5g security metrics
-- sase config orchestration remote network by id.
-- create a new ztna connector.
-- threat hunter
-- list ike gateways
-- update an existing sd-wan site.
+- sre
+- designs sase and sd-wan network architectures for secure remote access.
+- schedule an upgrade for a ztna connector.
+- list sdwan sites
+- ai runtime security scanning and automated red teaming for ai applications.
+- prisma access locations.
+- get connector group
+- update an existing 5g network slice.
+- list access locations
+- saas security admin
+- get 5g tenant
+- create or update mobile agent infrastructure settings.
+- ztna application by id.
+- firewall admin
+- platform engineer
+- list all prisma access service connections with pagination.
+- update sdwan site
+- create a new ztna application.
+- list all orchestrated remote networks with optional filtering by location and status.
+- update network slice
+- researches threat actors, malware campaigns, and vulnerability trends.
+- delete a specific service connection by id.
+- list sdwan alarms
+- red team operator
+- update an existing network slice.
+- get details of a specific orchestrated remote network by id.
+- list 5g security policies
+- create 5g tenant
 - create ztna application
+- update an existing 5g security policy.
+- sd wan operator
+- list all available prisma access locations.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- network security engineer
+- secure access
+- monitors network health, performance, and digital experience metrics.
+- application usage metrics.
+- ztna connector groups.
+- delete a 5g network slice.
+- mssp operator
+- cloud security engineer
+- cloud security
+- delete remote network
+- update 5g security policy
+- update a specific ztna connector by id.
+- delete a specific remote network by id.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- sd-wan
+- prisma access service connection by id.
+- get mobile agent infrastructure settings.
+- firewall
+- create a new 5g security policy.
+- create subnet rule
+- get 5g security policy
+- update an existing 5g tenant.
+- threat hunter
+- schedule ztna connector upgrade.
+- ztna connectors.
+- create a new 5g tenant.
+- delete ztna application
+- sd-wan site by id.
+- network operations
+- secures ai applications with runtime scanning and vulnerability assessment.
+- data protection analyst
+- network security
 - get mobile agent settings
 - 5g security policies.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- create a new remote network.
-- get ztna connector
-- ztna connector groups.
-- create a new fqdn rule.
-- list all service connections with pagination.
-- network operations
-- list lan networks
-- list all ztna applications.
-- designs and implements network security architectures and policies.
+- create connector group
+- ztna
 - get bandwidth allocations
-- list subnet rules
-- saas security admin
-- list connector groups
-- get application usage
-- create mobile agent settings
-- delete connector group
-- prisma access service connections.
-- retrieve a list of sd-wan sites.
-- sd-wan site metrics.
-- retrieve details for a specific network slice.
-- delete ztna application
-- retrieve application usage metrics across the sd-wan.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- subnet rules.
-- retrieve monitoring metrics for a specific site.
-- list 5g security policies
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- delete a specific service connection by id.
-- list service connections
+- delete a specific prisma access service connection by id.
+- enterprise it
+- get onboarding status
+- sase config orchestration remote network by id.
+- update service connection
 - get remote network
-- list 5g tenants
-- digital experience monitoring, log management, and best practice assessment.
-- get 5g security policy
-- delete remote network
-- create 5g tenant
-- get the onboarding status for a specific resource.
-- list orchestrated remote networks
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- 5g security policy by id.
+- list fqdn rules
+- retrieve details for a specific 5g network slice.
+- create qos rule
+- soc analyst
+- retrieve a list of path rules.
+- update orchestrated remote network
+- ztna connector group by id.
+- delete network slice
+- list connector groups
+- wan interfaces for an sd-wan site.
+- 5g network slice by id.
 - network architect
-- list remote networks
-- create a new path rule.
-- browser security admin
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- designs sase and sd-wan network architectures for secure remote access.
-- update a specific service connection by id.
-- update a specific prisma access service connection by id.
-- cybersecurity
-- create or update mobile agent infrastructure settings.
-- list sdwan alarms
-- refresh ike gateway
-- list all orchestrated remote networks with optional filtering by location and status.
-- create remote network
-- create a new ztna application.
-- create subnet rule
-- create 5g security policy
+- list all remote networks with pagination.
+- create a new service connection.
+- get ztna licenses
+- sd-wan site metrics.
+- get application usage
+- delete orchestrated remote network
+- get a specific remote network by id.
+- retrieve a list of 5g tenants.
+- get a specific ztna connector group by id.
 - incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- firewall admin
-- list path rules
-- get a specific service connection by id.
-- list all ike gateways with pagination.
-- retrieve a list of 5g network slices.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- create a new sd-wan site.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- schedule connector upgrade
-- update connector group
-- update remote network
+- list all ztna connector groups.
+- create a new remote network.
+- update ztna application
+- mobile agent infrastructure settings.
+- update 5g tenant
+- retrieve details for a specific sd-wan site.
+- tenant operator
+- manage enterprise browser policies, user sessions, and deployments.
+- create service connection
+- retrieve details for a specific 5g security policy.
+- get ztna application
+- update a specific service connection by id.
 - create wan interface
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- refresh ike gateway
+- list orchestrated remote networks
+- ai security engineer
+- delete an orchestrated remote network by id.
 - create a new qos rule.
-- delete a network slice.
-- sd wan operator
-- retrieve a list of 5g security policies.
-- get 5g tenant
-- platform engineer
+- list remote networks
+- create lan network
+- bandwidth allocations.
+- retrieve monitoring metrics for a specific sd-wan site.
+- prisma access service connections.
+- proactively searches for threats and iocs across telemetry data.
+- create mobile agent settings
+- list all fqdn rules.
+- sase admin
+- refresh ike gateway for an orchestrated remote network.
+- 5g tenant by id.
+- list all subnet rules.
+- 5g
+- update a specific prisma access service connection by id.
+- investigates dlp incidents and manages sensitive data protection policies.
+- path rules.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- create a lan network for a specific site.
+- create a new prisma access service connection.
+- list all ike gateways with pagination.
+- subscription manager
+- create ztna connector
+- update a specific ztna connector group by id.
+- delete a 5g security policy.
+- get 5g security metrics
+- delete a specific prisma access remote network by id.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- prisma access remote network by id.
+- list service connections
+- get service connection
+- list network slices
+- get the onboarding status for a specific resource.
+- delete a specific ztna application by id.
+- delete service connection
+- get bandwidth allocations optionally filtered by location.
+- ztna applications.
+- delete 5g security policy
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- get a specific ztna application by id.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- list path rules
+- fqdn rules.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- get network slice
+- get a specific prisma access remote network by id.
+- iam admin
+- palo alto networks
+- create sdwan site
+- create a new ztna connector.
+- update remote network
+- malware researcher
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- qos rules.
+- delete ztna connector
+- create a new path rule.
+- soar
+- list qos rules
+- retrieve a list of qos rules.
+- threat intelligence
+- create orchestrated remote network
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- list all ztna applications.
+- delete sdwan site
+- sase
+- 5g network slices.
+- ztna licenses.
+- update a specific prisma access remote network by id.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- manages multi-tenant security operations at scale for managed service providers.
+- refresh the ike gateway for a specific remote network.
+- retrieve a list of 5g network slices.
+- retrieve details for a specific network slice.
+- list 5g tenants
+- incident responder
+- get ztna connector
+- manages service accounts, roles, and access policies for platform api access.
+- delete connector group
+- ike gateways.
+- create path rule
+- vulnerability manager
+- update a specific remote network by id.
+- create a new orchestrated remote network configuration.
 - onboarding status.
-- create a new 5g network slice.
-- list ztna applications
+- cybersecurity
+- list all ztna connectors.
+- get ztna license information.
+- digital experience monitoring, log management, and best practice assessment.
+- delete a specific ztna connector by id.
+- ztna connector by id.
+- service provider interconnect
+- sase config orchestration remote networks.
+- delete an sd-wan site.
+- retrieve wan interfaces for a specific site.
+- manages logging infrastructure, integrations, and platform automation.
+- xdr
+- update an existing orchestrated remote network configuration.
+- delete a 5g tenant.
+- list lan networks
+- list all service connections with pagination.
+- executes containment, eradication, and recovery actions during security incidents.
+- list ike gateways
+- compliance officer
+- schedule connector upgrade
+- get a specific service connection by id.
+- sd-wan sites.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- create a new prisma access remote network.
+- get orchestrated remote network
+- get a specific prisma access service connection by id.
+- designs and implements network security architectures and policies.
+- identity and access management, tenant hierarchies, and subscription management.
+- retrieve application usage metrics across the sd-wan.
+- create a new ztna connector group.
+- retrieve a list of 5g security policies.
+- update an existing sd-wan site.
+- 5g tenants.
+- manages enterprise browser policies and secure browsing configurations.
+- data loss prevention, saas security monitoring, and identity security posture.
+- delete a specific ztna connector group by id.
+- create a new sd-wan site.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- retrieve a list of sd-wan sites.
+- get sdwan site
+- delete 5g tenant
+- create a new subnet rule.
+- prisma access remote networks.
+- list subnet rules
+- investigates security incidents, triages alerts, and coordinates response actions.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
 slug: secure-access
 tags:
 - Palo Alto Networks

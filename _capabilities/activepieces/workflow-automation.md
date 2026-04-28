@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - activepieces
 description: Unified workflow capability for building, managing, monitoring, and debugging automation flows. Used by developers and no-code builders to orchestrate integrations across 400+ app connections.
@@ -29,48 +31,48 @@ personas: []
 provider_name: Activepieces
 provider_slug: activepieces
 search_terms:
-- no-code
-- create a new automation flow
-- retrieve a specific automation flow by id
-- automation flow management
-- builds custom integrations using the api and typescript pieces
-- delete an automation flow
 - list all activepieces projects
-- project management
-- get flow run
-- integration
-- mcp
-- list flows
-- list all automation flows in the activepieces project
-- No Code Builder
-- build and monitor automation flows, manage connections, debug executions
-- ai agents
-- third-party app connections and piece management
-- create a new automation flow in activepieces
-- app connection management
-- get details of a specific flow execution run
-- list flow execution runs
-- delete flow
-- list execution history for automation flows
-- project, user, and organization administration
-- list automation flows
-- execution monitoring
-- monitors flow execution, manages connections, troubleshoots failures
 - list app connections
-- open source
-- get flow
-- list projects
-- activepieces
-- Operations Engineer
-- workflow
-- create flow
-- Developer
-- list flow runs
+- integration
 - list connections
-- list all app connections available in the project
-- workflow automation and flow orchestration
-- creates automation workflows using the visual builder
 - automation
+- list automation flows
+- workflow automation and flow orchestration
+- create flow
+- get flow
+- create a new automation flow in activepieces
+- creates automation workflows using the visual builder
+- Developer
+- delete an automation flow
+- activepieces
+- monitors flow execution, manages connections, troubleshoots failures
+- third-party app connections and piece management
+- list all app connections available in the project
+- list flow runs
+- list flows
+- build and monitor automation flows, manage connections, debug executions
+- list all automation flows in the activepieces project
+- list projects
+- list flow execution runs
+- get details of a specific flow execution run
+- open source
+- mcp
+- ai agents
+- builds custom integrations using the api and typescript pieces
+- list execution history for automation flows
+- retrieve a specific automation flow by id
+- create a new automation flow
+- no-code
+- No Code Builder
+- execution monitoring
+- project, user, and organization administration
+- app connection management
+- get flow run
+- project management
+- workflow
+- delete flow
+- Operations Engineer
+- automation flow management
 slug: workflow-automation
 tags:
 - Activepieces

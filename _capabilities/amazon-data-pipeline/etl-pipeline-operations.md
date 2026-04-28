@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Data Pipeline
 provider_slug: amazon-data-pipeline
 search_terms:
-- workflows
-- aws
-- data processing
 - etl
-- data pipeline
+- aws
 - automation
+- data pipeline
+- data processing
+- workflows
 slug: etl-pipeline-operations
 tags: []
 tools: []

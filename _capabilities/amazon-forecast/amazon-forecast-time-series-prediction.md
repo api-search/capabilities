@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: 'Manage end-to-end time-series forecasting pipelines: datasets, predictors, and forecast generation.'
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Forecast
 provider_slug: amazon-forecast
 search_terms:
+- machine learning
+- aws
+- predictive analytics
 - forecasting
 - time series
 - demand planning
-- predictive analytics
-- machine learning
-- aws
 slug: amazon-forecast-time-series-prediction
 tags:
 - Forecasting

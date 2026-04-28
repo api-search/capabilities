@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - youtube-live
 description: Workflow for managing YouTube live events including scheduling broadcasts, linking streams, managing live chat, and moderating live interactions. Designed for live event producers, streaming teams, and broadcast operators.
@@ -65,60 +66,60 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- manage live broadcasts
-- remove moderator
-- transition broadcast
-- remove a live chat moderator
-- create a new live video stream
-- create a new live broadcast
-- live streaming
-- bind broadcast
-- list live chat moderators
-- delete a live chat message
-- list broadcasts
-- add moderator
-- delete a live broadcast
-- delete a live stream
-- list streams
-- delete stream
-- list moderators
-- update stream
-- send chat message
+- broadcasting
 - update live broadcast settings
-- streaming
-- list live streams
-- list live chat messages
-- videos
-- add a live chat moderator
-- list live video streams
-- list messages in live chat
-- send a message to live chat
-- youtube
-- update broadcast
-- video
-- manage live chat messages
-- list youtube live broadcasts
-- google
-- delete broadcast
-- create stream
-- social
-- bind a broadcast to a video stream
-- live chat
-- delete a broadcast
-- delete chat message
-- transition broadcast status (testing, live, complete)
 - list chat messages
+- delete a live broadcast
+- manage live broadcasts
+- videos
+- list live video streams
+- create a new live stream
+- add moderator
+- list youtube live broadcasts
+- send a live chat message
+- remove a live chat moderator
+- create broadcast
+- create a new live video stream
+- transition broadcast status (testing, live, complete)
+- manage live chat moderators
+- live chat
+- update broadcast
+- bind a broadcast to a video stream
+- send a message to live chat
+- create stream
+- youtube
+- list live chat messages
+- list live chat moderators
+- manage live video streams
+- google
+- remove moderator
+- list messages in live chat
+- transition broadcast
+- delete a live stream
+- media
+- send chat message
+- streaming
+- update stream settings
+- manage live chat messages
+- list moderators
 - list live broadcasts
 - update broadcast settings
-- manage live chat moderators
-- create a new live stream
-- update stream settings
+- delete a live chat message
+- list broadcasts
+- live streaming
+- delete stream
+- delete chat message
 - create a new live broadcast event
-- media
-- manage live video streams
-- broadcasting
-- create broadcast
-- send a live chat message
+- update stream
+- delete a broadcast
+- create a new live broadcast
+- add a live chat moderator
+- video
+- bind broadcast
+- delete broadcast
+- list streams
+- social
+- list live streams
 slug: live-streaming
 tags:
 - YouTube

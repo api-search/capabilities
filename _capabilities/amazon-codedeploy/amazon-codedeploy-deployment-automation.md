@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - codedeploy
 description: Unified workflow for DevOps teams to create deployment groups, deploy revisions to EC2, Lambda, and ECS targets, and monitor deployment status.
@@ -9,43 +11,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- Release Manager
-- manage codedeploy applications
-- stop an in-progress deployment
+- blue/green deployment
 - create a new deployment
-- get deployment
-- list deployments for an application and deployment group
-- managing software release processes and rollbacks.
-- list deployments
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- coordinates application releases.
+- create deployment
 - list instances in a deployment
-- aws
+- create deployment group
 - release management
 - get details about a specific deployment
-- get deployment instance
-- get deployment information for a target instance
-- list codedeploy applications
-- manage deployment groups
-- list deployment groups
-- create a codedeploy application
-- stop deployment
-- create application
-- create deployment group
-- list deployment groups for an application
-- list deployment instances
-- blue/green deployment
-- create and monitor deployments
-- devops
-- create deployment
-- create a deployment group for an application
-- list applications
-- amazon
-- manages deployment infrastructure.
-- DevOps Engineer
-- automated application deployment to compute targets.
+- get deployment
 - deployment
+- coordinates application releases.
+- stop an in-progress deployment
 - ci/cd
+- get deployment instance
+- DevOps Engineer
+- managing software release processes and rollbacks.
+- list deployments for an application and deployment group
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- list deployment groups
+- manages deployment infrastructure.
+- list deployment instances
+- devops
+- list deployments
+- automated application deployment to compute targets.
+- list deployment groups for an application
+- list applications
+- manage deployment groups
+- list codedeploy applications
+- create application
+- create and monitor deployments
+- get deployment information for a target instance
+- create a deployment group for an application
+- aws
+- Release Manager
+- stop deployment
+- create a codedeploy application
+- manage codedeploy applications
+- amazon
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

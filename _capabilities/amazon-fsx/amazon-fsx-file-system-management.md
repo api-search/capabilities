@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Manage fully managed Amazon FSx file systems including Lustre, Windows File Server, NetApp ONTAP, and OpenZFS.
 layout: capability
@@ -8,15 +9,15 @@ personas: []
 provider_name: Amazon FSx
 provider_slug: amazon-fsx
 search_terms:
-- netapp ontap
-- file systems
 - openzfs
-- aws
+- file systems
 - high performance computing
+- windows
+- aws
 - netapp
 - storage
-- windows
 - lustre
+- netapp ontap
 slug: amazon-fsx-file-system-management
 tags:
 - Storage

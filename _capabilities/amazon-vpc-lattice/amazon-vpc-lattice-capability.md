@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon VPC Lattice
 provider_slug: amazon-vpc-lattice
 search_terms:
-- service networking
-- aws
 - microservices
+- aws
 - service mesh
+- service networking
 slug: amazon-vpc-lattice-capability
 tags: []
 tools: []

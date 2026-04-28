@@ -21,6 +21,9 @@ collections:
   capabilities:
     output: true
     permalink: /capabilities/:path/
+  categories:
+    output: true
+    permalink: /categories/:path/
 
 defaults:
   - scope:
@@ -28,3 +31,8 @@ defaults:
       type: capabilities
     values:
       layout: capability
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category

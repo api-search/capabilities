@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - managed-blockchain
 description: Workflow capability for blockchain architects and developers to create and manage Hyperledger Fabric and Ethereum networks, members, peer nodes, and proposals on Amazon Managed Blockchain.
@@ -33,38 +34,38 @@ personas: []
 provider_name: Amazon Managed Blockchain
 provider_slug: amazon-managed-blockchain
 search_terms:
-- create a new hyperledger fabric or ethereum blockchain network
-- create member
-- invite an aws account to join a blockchain network as a member
-- list members
-- distributed ledger
-- invite network member
-- create peer node
-- Blockchain Architect
-- blockchain networks
-- peer nodes
-- hyperledger fabric
-- network members
-- list all members of a blockchain network
 - list nodes
-- list all amazon managed blockchain networks
-- create a blockchain network
-- create a peer node
-- list peer nodes
-- aws
-- ethereum
-- create blockchain network
-- Blockchain Developer
-- list blockchain networks
-- blockchain
-- list networks
 - create a member
-- list all peer nodes in a blockchain network
-- amazon
+- create member
+- Blockchain Architect
+- create a new hyperledger fabric or ethereum blockchain network
+- distributed ledger
+- list blockchain networks
+- invite network member
+- list members
+- Blockchain Developer
+- ethereum
+- create a blockchain network
+- list all amazon managed blockchain networks
+- create blockchain network
+- peer nodes
+- list all members of a blockchain network
+- hyperledger fabric
+- list networks
 - create network
 - list network members
+- blockchain
+- create peer node
 - create a peer node to participate in a blockchain network
+- list peer nodes
+- aws
+- list all peer nodes in a blockchain network
+- invite an aws account to join a blockchain network as a member
+- blockchain networks
 - create node
+- network members
+- create a peer node
+- amazon
 slug: blockchain-network-operations
 tags:
 - Amazon

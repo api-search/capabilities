@@ -1,4 +1,6 @@
 ---
+categories:
+- api-management
 consumed_apis:
 - zilla-gateway
 description: Workflow for exposing Apache Kafka topics as REST APIs and managing event-driven integrations via Zilla. Enables HTTP, MQTT, and gRPC clients to produce and consume Kafka events without Kafka client libraries.
@@ -17,34 +19,34 @@ personas: []
 provider_name: Aklivity
 provider_slug: aklivity
 search_terms:
-- apache kafka
-- produce an event to kafka
-- kafka
-- consume events from kafka
-- configures and manages zilla gateway deployments for kafka access
-- kafka event production and consumption
 - event-driven application patterns with kafka as the backbone
+- multi-protocol
+- multi-protocol api gateway for kafka access
+- iot
+- expose kafka topics as rest apis and manage event-driven integrations
+- IoT Developer
+- API Developer
+- connects iot devices via mqtt to kafka using zilla
+- consume events from kafka
+- apache kafka
+- api gateway
+- kafka
 - builds rest apis backed by kafka topics using zilla
-- aklivity
-- consume kafka events
+- consume events
+- produce an event to a kafka topic via zilla http gateway
+- kafka event production and consumption
+- kafka proxy
+- real-time
+- produce an event to kafka
 - event-driven
 - apache kafka topic management and event streaming
-- kafka proxy
-- API Developer
-- consume events from a kafka topic via zilla http gateway
+- configures and manages zilla gateway deployments for kafka access
 - produce event
-- consume events
-- expose kafka topics as rest apis and manage event-driven integrations
-- real-time
-- api gateway
-- multi-protocol api gateway for kafka access
+- aklivity
+- consume kafka events
+- consume events from a kafka topic via zilla http gateway
 - produce kafka event
-- iot
 - Platform Engineer
-- multi-protocol
-- produce an event to a kafka topic via zilla http gateway
-- IoT Developer
-- connects iot devices via mqtt to kafka using zilla
 slug: kafka-api-gateway
 tags:
 - Aklivity

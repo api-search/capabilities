@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - youtube-data
 description: Workflow for managing community interactions including comments, comment threads, subscriptions, and channel management. Designed for community managers, social media teams, and content moderators.
@@ -57,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- subscribe to a channel
-- update a comment
-- comments
-- subscriptions
-- create a new comment thread
-- update channel settings
-- community
-- unsubscribe from channel
-- manage channel subscriptions
-- update channel
-- update comment
-- post a new comment
-- list channels
-- update an existing comment
-- list comment threads
-- set moderation status on comments
-- subscribe to a youtube channel
-- videos
-- unsubscribe
-- streaming
-- list comments
-- set moderation status
-- manage individual comments
-- moderation
 - manage channel information
-- youtube
-- video
-- google
-- create comment thread
-- delete comment
-- manage comment threads
-- list comments on a video or channel
+- videos
+- list comment threads
 - subscribe to channel
-- unsubscribe from a youtube channel
-- update a comment thread
-- social
-- create comment
-- delete a comment
-- update comment thread
+- unsubscribe from channel
+- list comments
+- list comments on a video or channel
+- list channels
+- subscribe to a channel
 - subscribe
-- list channel subscriptions
+- unsubscribe
+- set moderation status
+- youtube
+- update comment thread
+- google
 - unsubscribe from a channel
+- delete a comment
+- delete comment
+- list channel subscriptions
+- update comment
+- community
+- update an existing comment
+- update a comment
 - media
-- list youtube channels
+- streaming
+- subscribe to a youtube channel
+- create a new comment thread
 - list subscriptions
+- unsubscribe from a youtube channel
+- update channel settings
+- comments
+- list youtube channels
+- moderation
+- subscriptions
+- manage individual comments
+- create comment
+- post a new comment
+- update a comment thread
+- set moderation status on comments
+- video
+- manage channel subscriptions
+- create comment thread
+- manage comment threads
+- update channel
+- social
 slug: community-engagement
 tags:
 - YouTube

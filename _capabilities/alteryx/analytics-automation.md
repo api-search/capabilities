@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - alteryx-server
 description: Analytics automation workflow combining Alteryx Server V3 API for workflow management, job execution, scheduling, user administration, credential management, and collection organization. Used by data analysts and server administrators to automate analytics pipelines.
@@ -37,70 +39,70 @@ personas: []
 provider_name: Alteryx
 provider_slug: alteryx
 search_terms:
-- list all workflows
-- delete workflow
+- create a new schedule
+- get analytic app questions for a workflow
+- data engineering
 - delete schedule
+- automation
+- delete workflow
+- delete a workflow schedule
+- list all workflows
 - create a new workflow schedule
-- machine learning
-- create credential
-- download a workflow package
-- get workflow
-- list all workflow schedules
-- analytics
-- delete a user
-- delete a collection
-- delete collection
-- list all collections
-- create user
-- get execution jobs for a workflow
-- user management
-- list collections
-- upload workflow
-- get workflow details
-- upload a new workflow package
+- predictive analytics
+- create collection
+- create a new collection
+- upload a new workflow
+- create and execute a workflow job
+- data science
+- alteryx
 - list schedules
+- schedule management
+- download workflow
+- deactivate a user account
+- analytics
+- create job
+- list workflows
+- create credential
+- get workflow questions
+- upload a new workflow package
+- list all users
+- delete user
+- workflow management
+- delete collection
+- delete a collection
+- list users
+- download a workflow package
+- list all users on the server
+- create a new user
+- create schedule
+- upload workflow
+- update workflow
+- get execution jobs for a workflow
+- get user
+- individual workflow operations
+- list all workflow schedules
+- list collections
+- get user details
+- list credentials
+- update workflow metadata
+- list all stored credentials
+- etl
+- get workflow details
+- machine learning
+- list all schedules
+- user management
+- collection management
+- get details of a specific workflow
 - deactivate user
 - data preparation
-- predictive analytics
+- create user
+- delete a user
+- get workflow
 - list all workflows on the alteryx server
-- get workflow questions
-- create collection
-- get details of a specific workflow
-- list users
-- delete a workflow
-- data science
-- delete user
-- individual workflow operations
-- alteryx
-- schedule management
-- update workflow metadata
-- upload a new workflow
-- data engineering
-- delete a workflow schedule
-- create a new user
-- list all users on the server
-- download workflow
-- list credentials
-- list all stored credentials
-- create a new schedule
-- list all users
-- create and execute a workflow job
-- create job
-- get analytic app questions for a workflow
-- etl
-- get user details
-- list all schedules
-- create schedule
-- collection management
-- create a new collection
-- update workflow
+- list all collections
 - create a new credential
-- get user
-- workflow management
-- list workflows
-- deactivate a user account
+- delete a workflow
 - get workflow jobs
-- automation
 slug: analytics-automation
 tags:
 - Alteryx

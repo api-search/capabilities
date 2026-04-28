@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - api-hub
 - apim
@@ -19,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list api specifications tracked in the apigee registry.
-- API Platform Engineer
-- api hub
-- analytics
-- developer portal
-- integrations
-- list catalogued apis
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- list observed shadow apis.
-- list all apis in the apigee api hub catalog.
-- API Product Manager
-- api catalog
-- api discovery
-- api management
-- monetization
-- api catalog from api hub.
-- list observed apis
-- API Governance Lead
-- discover shadow apis
-- manager packaging api products and managing developer relationships.
-- api gateway
-- architect overseeing api platform strategy and governance across the organization.
-- google cloud
-- list all catalogued apis.
-- Platform Architect
-- enterprise
-- api governance
-- list apis
-- apigee
-- hybrid
 - shadow apis discovered via apim.
+- list observed shadow apis.
 - leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- engineer managing api proxies, deployments, and policies in apigee.
-- list api specs
+- api hub
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- api discovery
+- API Governance Lead
+- api management
+- hybrid
+- list all apis in the apigee api hub catalog.
+- analytics
+- monetization
 - microservices
+- google cloud
+- enterprise
+- Platform Architect
+- api gateway
+- list observed apis
+- integrations
+- developer portal
+- engineer managing api proxies, deployments, and policies in apigee.
+- apigee
+- api catalog from api hub.
+- architect overseeing api platform strategy and governance across the organization.
+- api governance
+- list api specifications tracked in the apigee registry.
+- manager packaging api products and managing developer relationships.
+- list apis
+- API Product Manager
+- list api specs
+- discover shadow apis
+- list catalogued apis
+- api catalog
+- list all catalogued apis.
+- API Platform Engineer
 slug: api-governance-observability
 tags:
 - Apigee

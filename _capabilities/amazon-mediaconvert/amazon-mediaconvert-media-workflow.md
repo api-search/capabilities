@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mediaconvert
 description: Workflow capability for Amazon MediaConvert media processing operations for broadcast engineers and media developers.
@@ -13,34 +14,34 @@ personas: []
 provider_name: Amazon MediaConvert
 provider_slug: amazon-mediaconvert
 search_terms:
-- developer building media processing applications
-- list presets
-- list jobs
-- createjobtemplate
-- associate certificate
-- listpresets
-- manage media processing jobs
-- create job template
-- engineer managing broadcast media workflows
+- broadcasting
 - amazon mediaconvert media processing workflow
-- aws
-- cancel job
-- get job
+- getjob
+- list presets
+- Broadcast Engineer
+- manage media processing jobs
+- listjobtemplates
+- canceljob
 - create job
 - createjob
-- Broadcast Engineer
-- list job templates
-- workflow
-- Media Developer
-- listjobs
+- get job
 - aws media processing and delivery
+- listjobs
 - media
-- broadcasting
-- canceljob
-- media processing
-- getjob
 - associatecertificate
-- listjobtemplates
+- associate certificate
+- list job templates
+- Media Developer
+- createjobtemplate
+- create job template
+- list jobs
+- cancel job
+- media processing
+- aws
+- workflow
+- developer building media processing applications
+- listpresets
+- engineer managing broadcast media workflows
 slug: amazon-mediaconvert-media-workflow
 tags:
 - AWS

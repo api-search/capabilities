@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - app-store-connect
 description: Unified workflow for managing the Apple app lifecycle including app metadata, builds, TestFlight beta testing, and beta group management. Used by app developers and release managers.
@@ -33,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- testflight
-- list groups
-- read beta group
-- list builds
-- get build details.
-- modify build
-- get details of a specific app.
-- add a new beta tester.
-- create beta tester
+- list all beta testers.
 - update a beta group.
-- beta group management.
-- list all apps in app store connect.
-- get beta group details.
-- modify beta group
-- beta tester management.
-- list testers
-- build management.
-- list beta groups.
-- list all builds.
-- delete a beta group.
-- app management.
-- app management
-- read beta tester
-- create tester
-- read app
-- create beta group
-- add a beta tester.
-- get beta tester details.
-- technology
-- delete beta tester
-- developer
-- macos
-- update app metadata.
-- remove a beta tester.
-- mobile
-- list all beta groups.
 - list apps
 - read build
-- create a new beta group.
-- modify app
+- list beta testers
+- testflight
+- create group
+- read beta group
+- technology
 - ios
 - list beta groups
-- list beta testers
-- app store
+- app management
+- get details of a specific app.
+- list builds
 - delete beta group
-- list all beta testers.
-- create a beta group.
-- list beta testers.
+- modify build
 - apple
+- read beta tester
 - update build information.
+- delete beta tester
+- create a new beta group.
 - list all apps.
-- create group
+- read app
+- update app metadata.
+- modify beta group
+- beta tester management.
+- list all beta groups.
+- add a beta tester.
+- beta group management.
+- list beta testers.
+- add a new beta tester.
+- mobile
+- get beta tester details.
+- developer
+- macos
+- create beta group
+- build management.
+- create tester
+- modify app
+- get build details.
+- get beta group details.
+- remove a beta tester.
+- list all apps in app store connect.
+- list beta groups.
+- create beta tester
+- list groups
+- delete a beta group.
+- list testers
+- list all builds.
+- create a beta group.
+- app store
+- app management.
 slug: app-lifecycle
 tags:
 - Apple

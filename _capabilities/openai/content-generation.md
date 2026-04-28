@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - openai-chat
 - openai-images
@@ -33,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- list all available openai models
-- get details of a specific model
-- images edit
-- embeddings create
-- chat completion
-- images create
-- available models
-- generate speech
-- create embedding
-- generate a conversational response using gpt models
-- audio create translation
-- image generation
-- text embeddings
-- openai
-- content generation
-- generate an image from a text prompt using dall-e
-- create image
-- transcribe audio to text using whisper
-- chat create completion
-- create speech
-- models list
-- large language models
-- artificial intelligence
-- models get
-- create chat completion
-- generate an image
-- ai
+- list models
+- create embeddings
 - text to speech
 - generate vector embeddings for text input
-- create embeddings
-- list models
-- edit an existing image with a text prompt
+- generate an image from a text prompt using dall-e
+- artificial intelligence
+- generate an image
+- content generation
 - images create variation
-- create a variation of an existing image
-- create a chat completion
 - audio create speech
+- images edit
+- create embedding
 - generate audio from text using tts models
+- list all available openai models
+- create chat completion
+- create a variation of an existing image
+- embeddings create
+- models list
+- text embeddings
+- generate speech
+- generate a conversational response using gpt models
+- available models
+- image generation
+- large language models
 - audio create transcription
-- translate audio to english text
+- chat create completion
+- create a chat completion
+- ai
+- openai
+- edit an existing image with a text prompt
+- audio create translation
+- chat completion
 - t1
+- create image
+- models get
+- create speech
+- translate audio to english text
+- transcribe audio to text using whisper
+- get details of a specific model
+- images create
 slug: content-generation
 tags:
 - OpenAI

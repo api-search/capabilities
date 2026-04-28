@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - appsmith
 description: Workflow capability for building and managing internal tools using the Appsmith low-code platform. Supports developers creating workflow applications with connected datasources and team workspaces.
@@ -9,26 +10,26 @@ personas: []
 provider_name: Appsmith
 provider_slug: appsmith
 search_terms:
-- list connected datasources
-- connecting databases and apis to power application data
-- manages workspaces and application access for teams
-- internal tools
-- workflow automation
-- list team workspaces
-- creating and managing low-code applications
-- creates a new internal tool application in appsmith
-- lists datasources connected to appsmith for powering internal tools
-- lists all low-code internal tool applications built in appsmith
-- low-code
-- appsmith
-- developer productivity
-- lists workspaces available for organizing internal tools
-- builds low-code internal tools and workflow applications
-- build and deploy low-code internal tools with appsmith
 - create internal tool
 - developer tools
+- internal tools
+- workflow automation
+- list connected datasources
+- lists datasources connected to appsmith for powering internal tools
+- creates a new internal tool application in appsmith
+- low-code
+- builds low-code internal tools and workflow applications
+- developer productivity
 - list internal tools
+- lists all low-code internal tool applications built in appsmith
+- connecting databases and apis to power application data
 - open source
+- build and deploy low-code internal tools with appsmith
+- lists workspaces available for organizing internal tools
+- manages workspaces and application access for teams
+- appsmith
+- list team workspaces
+- creating and managing low-code applications
 slug: internal-tool-builder
 tags:
 - Appsmith

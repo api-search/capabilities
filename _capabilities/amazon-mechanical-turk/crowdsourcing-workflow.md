@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mturk-requester
 description: Workflow capability for data scientists and researchers to create HITs, manage worker assignments, approve work, and coordinate crowdsourced human intelligence tasks through Amazon Mechanical Turk.
@@ -33,53 +34,53 @@ personas: []
 provider_name: Amazon Mechanical Turk
 provider_slug: amazon-mechanical-turk
 search_terms:
-- list qualification types
-- Researcher
-- create hit
-- list all active and reviewable hits in the requester account.
-- machine learning
-- reject a completed worker assignment with feedback.
-- get hit
-- send a bonus payment to a worker.
-- approve a completed assignment and release payment.
-- labor
-- list qualification types used to filter and target the right worker pool.
-- create and manage human intelligence tasks.
-- list all worker assignments submitted for a specific hit for review.
+- data scientist using mturk for data labeling, annotation, and validation tasks.
+- get detailed information about a specific hit including status and completion metrics.
 - account balance and status.
+- create and manage human intelligence tasks.
+- list qualification types
+- manage worker bonuses and notifications.
+- creating and managing hits for crowdsourced work.
+- send a bonus payment to a worker for exceptional task completion.
+- list assignments for hit
+- send a bonus payment to a worker.
+- create hit
+- reject a completed worker assignment with feedback.
+- approve assignment
 - send notification messages to specific workers.
-- list all hits in the requester account.
-- aws
+- notify workers
+- list qualification types used to filter and target the right worker pool.
+- Data Scientist
+- list assignments
+- academic or market researcher coordinating human intelligence tasks for studies and surveys.
 - mechanical turk
-- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
+- get the current prepaid balance in the mturk account.
+- get account balance
+- get the current prepaid balance available in the mturk requester account.
+- reject assignment
+- Researcher
+- list all active and reviewable hits in the requester account.
+- labor
+- amazon
 - review and manage worker assignment submissions.
 - list hits
-- creating and managing hits for crowdsourced work.
-- send bonus
-- data scientist using mturk for data labeling, annotation, and validation tasks.
-- tasks
-- academic or market researcher coordinating human intelligence tasks for studies and surveys.
-- get the current prepaid balance in the mturk account.
-- crowdsourcing
-- notify workers
-- get account balance
-- list all assignments submitted for a hit.
-- manage worker bonuses and notifications.
-- approve assignment
+- get hit
+- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- list all worker assignments submitted for a specific hit for review.
 - create a new hit for crowdsourced task execution.
-- get the current prepaid balance available in the mturk requester account.
-- Data Scientist
-- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
-- get detailed information about a specific hit including status and completion metrics.
-- send a bonus payment to a worker for exceptional task completion.
-- reject assignment
-- amazon
-- list assignments
-- managing account balance and prepaid funds.
-- approve a completed worker assignment and release payment.
+- tasks
 - human intelligence
-- list assignments for hit
+- managing account balance and prepaid funds.
+- crowdsourcing
+- machine learning
+- list all hits in the requester account.
+- approve a completed assignment and release payment.
+- aws
+- approve a completed worker assignment and release payment.
 - managing worker qualifications, blocks, bonuses, and notifications.
+- list all assignments submitted for a hit.
+- send bonus
 slug: crowdsourcing-workflow
 tags:
 - Amazon

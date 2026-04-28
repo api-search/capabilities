@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - panorama
 description: Workflow capability composing Amazon Panorama APIs for developers and operators.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon Panorama
 provider_slug: amazon-panorama
 search_terms:
-- core api workflow
+- list amazon panorama resources
 - list and manage openapi.yml resources
-- cameras
-- list openapi.yml
-- list resources
+- edge ml
 - amazon panorama
 - aws
-- list amazon panorama resources
-- edge ml
-- Developer
-- industrial iot
-- computer vision
 - primary amazon panorama resources
+- industrial iot
+- list openapi.yml
+- computer vision
+- Developer
 - developer using amazon panorama apis
+- cameras
+- core api workflow
+- list resources
 slug: amazon-panorama-workflow
 tags:
 - Amazon Panorama

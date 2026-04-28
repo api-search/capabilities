@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - apifuse
 description: Unified workflow for managing embedded integrations within SaaS products - browsing connectors, building workflows, monitoring usage analytics, and managing user connections.
@@ -29,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- Integration Developer
-- SaaS Product Manager
-- manage workflows.
-- create workflow
-- list all pre-built connectors available for embedding into your saas product.
-- workflow automation
-- integrations
-- list all integration workflows configured in the embedded marketplace.
-- create a new automation workflow connecting two or more integrated platforms.
-- browse pre-built connectors.
-- list integrations
-- get analytics data.
-- developer implementing and automating embedded integration workflows.
-- browse all available embedded integrations, optionally filtered by category.
-- list workflows.
 - list all connectors.
-- get analytics
-- managing native integrations within saas products.
-- saas
-- list all integrations.
-- browse and manage integrations.
-- embedded integrations
+- workflow automation
 - create a workflow.
+- list all pre-built connectors available for embedding into your saas product.
+- get analytics data.
+- create a new automation workflow connecting two or more integrated platforms.
+- manage workflows.
+- list workflows
+- integration analytics.
+- SaaS Product Manager
+- developer implementing and automating embedded integration workflows.
+- apifuse
+- create workflow
 - list connectors
 - integration platform
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- integrations
+- saas
+- embedded integrations
+- list integrations
+- get analytics
 - marketplace
-- ipaas
-- apifuse
-- integration analytics.
+- browse pre-built connectors.
+- browse all available embedded integrations, optionally filtered by category.
+- list all integration workflows configured in the embedded marketplace.
+- managing native integrations within saas products.
 - product manager building native integrations into a saas product.
-- list workflows
+- list all integrations.
+- Integration Developer
+- browse and manage integrations.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- list workflows.
+- ipaas
 slug: embedded-integration-management
 tags:
 - Apifuse

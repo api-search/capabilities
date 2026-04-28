@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - aruba-central
 description: Unified network management workflow combining Aruba Central API for device inventory, configuration groups, sites, access points, clients, and gateway monitoring. Used by network administrators to manage campus and branch infrastructure.
@@ -53,61 +55,61 @@ personas: []
 provider_name: Aruba
 provider_slug: aruba
 search_terms:
-- cloud management
-- delete group
-- access point monitoring
-- list groups
-- network monitoring
-- get access point
-- switches
-- list all connected clients
-- get device
-- list all access points with status and statistics
-- sd-wan
-- list gateways
-- cloud
-- site management
-- device inventory management
-- list all devices in the network inventory
-- remove a device from inventory
-- delete a configuration group
-- get site
-- wireless
-- delete a site
-- device details
-- create a new configuration group
-- list clients
-- aruba
-- create a new site
 - get device details by serial number
-- gateway monitoring
-- delete site
-- list all access points with status
-- list access points
-- get group details by name
-- monitoring
-- infrastructure
-- create site
-- security
-- configuration group management
-- list all sites
-- list devices
-- list networks
-- list all gateways
-- remove device
-- get group
-- get access point details by serial number
-- list all networks
+- device details
 - get site details by id
-- associate devices to a site
-- list all devices in the aruba central device inventory
-- network management
-- list all configuration groups
-- associate devices to site
-- list sites
-- client connectivity
-- networking
+- list all sites
+- get access point details by serial number
+- cloud management
+- access point monitoring
+- get device
 - create group
+- list all networks
+- list all configuration groups
+- create a new site
+- list clients
+- sd-wan
+- aruba
+- list all connected clients
+- create site
+- network monitoring
+- associate devices to a site
+- wireless
+- security
+- device inventory management
+- network management
+- client connectivity
+- list devices
+- list all access points with status
+- delete a configuration group
+- list all devices in the aruba central device inventory
+- list all access points with status and statistics
+- list sites
+- get group details by name
+- networking
+- site management
+- configuration group management
+- list networks
+- monitoring
+- create a new configuration group
+- list all gateways
+- associate devices to site
+- delete group
+- remove a device from inventory
+- get site
+- infrastructure
+- remove device
+- delete a site
+- list groups
+- delete site
+- gateway monitoring
+- list gateways
+- get group
+- list access points
+- get access point
+- cloud
+- list all devices in the network inventory
+- switches
 slug: network-management
 tags:
 - Aruba

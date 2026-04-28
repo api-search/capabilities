@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - data-license
 - http-api
@@ -34,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
+- list available bloomberg data catalogs
+- data distributions
 - list field lists
+- order management
+- get reference data for securities
+- field list management
+- create a security universe for data requests
+- market data
+- get data catalog details
+- bloomberg
+- list universes
+- list field lists for data requests
+- list catalogs
+- get reference data for securities via http api
+- create data request
+- get intraday bar data
+- get catalog
+- financial analytics
+- search fields
+- reference data access
+- get reference data
+- portfolio management
+- search instruments
+- get historical data
 - create universe
 - list security universes
-- reference data
-- order management
-- create a bloomberg data request
-- list universes
-- trading
-- get data catalog details
-- list completed data distributions
-- search available bloomberg data fields
 - list available data catalogs
-- historical data access
-- search fields
-- financial data
-- list distributions
-- financial analytics
-- field list management
-- get reference data
-- get reference data for securities via http api
-- list catalogs
-- search instruments
-- get historical end-of-day data
-- get intraday bars
-- bloomberg
-- get historical data for securities
-- get catalog
-- create a security universe for data requests
-- create data request
-- reference data access
-- get historical data
 - search for securities and instruments
-- list available bloomberg data catalogs
-- security universe management
-- list field lists for data requests
-- market data
-- get reference data for securities
-- data distributions
-- get intraday bar data
-- portfolio management
+- list completed data distributions
+- financial data
+- trading
+- get intraday bars
+- search available bloomberg data fields
+- create a bloomberg data request
 - data catalog browsing
+- list distributions
+- reference data
+- get historical data for securities
+- historical data access
+- security universe management
+- get historical end-of-day data
 slug: market-data-and-analytics
 tags:
 - Bloomberg

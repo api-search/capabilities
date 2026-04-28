@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - firefly
 description: AI-powered content generation workflow using Adobe Firefly for creating images, videos, and visual variations from text prompts. Used by content creators, marketers, and designers who need to rapidly produce visual assets using generative AI.
@@ -37,45 +38,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- adobe
-- get job status
-- generate images
-- generate a short video clip from a text prompt
-- generate a video from a text prompt
-- fill a masked region of an image with ai-generated content
-- image generation
-- generate similar images
-- expand an image beyond its boundaries
-- generation job status
-- generate an ai object and composite it into a scene image
-- expand an image beyond its original boundaries using generative ai
+- generate images from a text prompt
+- graphics
 - content generation
-- similar image generation from reference
-- generative fill operations
-- text-to-image generation
+- generate one or more images from a text prompt using adobe firefly
+- get the status of an async generation job
+- generate images
+- photography
+- generate an ai object and composite it into a scene image
+- get the status of an asynchronous firefly generation job
 - ai video generation
 - generate video
-- generate images similar to a reference image
-- generate and composite an ai object into a scene
-- video generation
-- firefly
-- get the status of an asynchronous firefly generation job
-- fill image
-- video
-- design
-- generate composite
-- generate one or more images from a text prompt using adobe firefly
-- expand image
-- graphics
-- generate images from a text prompt
-- creative
-- generative image expansion
-- get the status of an async generation job
-- ai object compositing
 - fill a masked region with ai-generated content
-- generate images visually similar to a reference image
+- image generation
+- creative
+- generative fill operations
+- firefly
+- fill image
+- expand an image beyond its original boundaries using generative ai
+- generate images similar to a reference image
+- get job status
+- text-to-image generation
+- expand an image beyond its boundaries
 - generative ai
-- photography
+- generate composite
+- adobe
+- ai object compositing
+- generate and composite an ai object into a scene
+- design
+- video
+- generate a video from a text prompt
+- expand image
+- generation job status
+- generate similar images
+- similar image generation from reference
+- generate images visually similar to a reference image
+- generative image expansion
+- generate a short video clip from a text prompt
+- video generation
+- fill a masked region of an image with ai-generated content
 slug: ai-content-generation
 tags:
 - Adobe

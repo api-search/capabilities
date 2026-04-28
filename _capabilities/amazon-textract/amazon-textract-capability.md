@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Textract
 provider_slug: amazon-textract
 search_terms:
-- document processing
-- machine learning
 - aws
 - ocr
+- document processing
+- machine learning
 slug: amazon-textract-capability
 tags: []
 tools: []

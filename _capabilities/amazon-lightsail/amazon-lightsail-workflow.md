@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - lightsail
 description: Unified workflow capability for Amazon Lightsail combining resource management and operations.
@@ -9,20 +10,20 @@ personas: []
 provider_name: Amazon Lightsail
 provider_slug: amazon-lightsail
 search_terms:
-- amazon lightsail
 - integrates api into applications
 - instances get instances
-- workflow
-- manages resources and configurations
-- instances create instances
-- creates one or more amazon lightsail instances.
-- aws
-- instances get instance
-- Developer
-- unified workflow for amazon lightsail resource management
-- returns information about a specific amazon lightsail instance.
-- Administrator
 - returns information about all amazon lightsail virtual private servers.
+- aws
+- workflow
+- instances get instance
+- amazon lightsail
+- unified workflow for amazon lightsail resource management
+- instances create instances
+- manages resources and configurations
+- creates one or more amazon lightsail instances.
+- returns information about a specific amazon lightsail instance.
+- Developer
+- Administrator
 slug: amazon-lightsail-workflow
 tags:
 - Amazon Lightsail

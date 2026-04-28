@@ -1,4 +1,6 @@
 ---
+categories:
+- incident-management
 consumed_apis:
 - better-stack
 description: Unified incident response workflow combining Better Stack uptime monitoring, heartbeat monitoring, and incident management. Used by SRE teams and on-call engineers to detect, acknowledge, and resolve infrastructure incidents.
@@ -71,74 +73,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- create a new uptime monitor
-- get details for a specific uptime monitor
-- delete a monitor
-- create incident
-- list heartbeats
-- managing team access and membership
-- list all uptime monitors
-- list all heartbeats
-- heartbeats
-- better stack
-- get monitor availability
-- get monitor details
-- delete incident
-- get monitor
-- engineer on-call rotation responsible for responding to incidents
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- incident response
-- create heartbeat
-- communicating service health to customers and stakeholders
+- sre engineer
 - update a monitor
-- acknowledge an incident
+- single incident operations
+- managing team access and membership
+- create heartbeat
+- monitor availability metrics
+- status
+- list all uptime monitors
 - heartbeat monitor management
+- better stack
+- incident management
+- get monitor details
+- list all heartbeats
+- acknowledge an active incident to indicate someone is working on it
+- engineer on-call rotation responsible for responding to incidents
+- delete monitor
+- list incidents
 - resolve an incident
+- incidents
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- platform
+- create a heartbeat monitor
 - logs
 - create monitor
-- observability
-- list monitors
-- acknowledge incident
-- sre engineer
-- detection, acknowledgement, and resolution of service incidents
-- platform
-- monitor availability metrics
-- get incident
-- on call engineer
-- get availability metrics for a monitor
-- list incidents with optional date and filter parameters
-- delete an incident
-- sre
-- incidents
-- incident management
-- monitoring
-- single monitor operations
-- list incidents
-- list all incidents
-- list all uptime monitors to check what is being monitored
-- create a new uptime monitor for a url or api
-- get heartbeat availability
-- create a heartbeat monitor
 - uptime and availability monitoring for services and scheduled jobs
-- uptime
-- list all heartbeat monitors for scheduled jobs
-- status
+- list heartbeats
 - monitor management for uptime checks
-- resolve incident
-- resolve an active incident
-- get details for a specific incident
 - create a manual incident
-- get incident details
-- get monitor availability summary
-- update monitor
-- resolve an active incident once the issue is fixed
-- acknowledge an active incident to indicate someone is working on it
-- acknowledge an active incident
+- acknowledge incident
+- get details for a specific incident
+- incident response
+- observability
 - get availability for a heartbeat monitor
-- single incident operations
-- delete monitor
-- on-call
+- resolve an active incident
+- list all incidents
+- delete incident
+- sre
+- delete an incident
+- on call engineer
+- get monitor availability
 - site reliability engineer managing infrastructure uptime and incident response
+- get incident
+- list all heartbeat monitors for scheduled jobs
+- acknowledge an active incident
+- monitoring
+- resolve incident
+- list all uptime monitors to check what is being monitored
+- list incidents with optional date and filter parameters
+- on-call
+- list monitors
+- create a new uptime monitor
+- update monitor
+- delete a monitor
+- get monitor availability summary
+- uptime
+- acknowledge an incident
+- single monitor operations
+- get heartbeat availability
+- create a new uptime monitor for a url or api
+- get details for a specific uptime monitor
+- communicating service health to customers and stakeholders
+- get monitor
+- get availability metrics for a monitor
+- resolve an active incident once the issue is fixed
+- get incident details
+- create incident
+- heartbeats
+- detection, acknowledgement, and resolution of service incidents
 slug: incident-response
 tags:
 - Better Stack

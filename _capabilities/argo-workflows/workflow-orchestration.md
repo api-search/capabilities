@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - argoworkflows
 description: Unified capability for container-native workflow orchestration on Kubernetes using Argo Workflows. Combines workflow lifecycle management, template reuse, cron scheduling, and workflow history for Data Engineers and Platform Engineers.
@@ -29,42 +31,42 @@ personas: []
 provider_name: Argo Workflows
 provider_slug: argo-workflows
 search_terms:
+- container orchestration platform
 - workflow execution history
-- submit a new workflow
-- argo workflows
-- create workflow
-- machine learning
-- scheduled cron workflows
-- workflow engine
-- list archived workflow runs
-- list all workflows in a namespace
-- data processing
-- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
-- list scheduled cron workflows in a namespace
-- Data Engineer
-- list all cron workflows
-- container-native workflow execution and lifecycle management
-- runs ml training, data processing, and etl workflows on kubernetes
-- reusable workflow templates
 - data engineering
-- list workflow templates
-- kubernetes
-- list all argo workflows in a kubernetes namespace with status
-- manages argo workflows platform, templates, and scheduling
-- containers
-- workflow lifecycle management
+- list cron workflows
 - list reusable workflow templates in a namespace
 - submit a new argo workflow to a kubernetes namespace
+- workflow engine
+- argo workflows
+- list workflows
+- manages argo workflows platform, templates, and scheduling
+- data processing
+- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
 - list historical archived workflow executions
-- Platform Engineer
-- list cron workflows
-- cncf
+- open source
+- workflow lifecycle management
+- create workflow
+- list all cron workflows
+- list all workflows in a namespace
+- runs ml training, data processing, and etl workflows on kubernetes
+- kubernetes
+- list scheduled cron workflows in a namespace
+- container-native workflow execution and lifecycle management
+- containers
+- reusable workflow templates
+- scheduled cron workflows
+- Data Engineer
+- machine learning
+- list archived workflows
+- list workflow templates
 - parallel data transformation, ml training, and etl
 - list all workflow templates
-- container orchestration platform
-- list workflows
-- list archived workflows
-- open source
+- cncf
+- list all argo workflows in a kubernetes namespace with status
+- submit a new workflow
+- list archived workflow runs
+- Platform Engineer
 slug: workflow-orchestration
 tags:
 - Argo Workflows

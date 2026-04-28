@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - rest-api
 description: Unified platform management capability for OpenShift clusters including projects, builds, deployments, routes, and monitoring. Used by platform engineers and cluster administrators.
@@ -13,37 +15,37 @@ personas: []
 provider_name: OpenShift
 provider_slug: openshift
 search_terms:
-- list configmaps
-- openshift
-- list pods
-- list builds
-- list deployments
-- list routes
-- list image streams
-- list images
-- project management
-- get project details
+- list config maps
 - list nodes
-- list storage
-- paas
-- platform
-- get project
-- kubernetes
-- get pod details
+- get pod
 - list openshift projects
 - list services
 - list persistent volumes
-- list installed operators
-- containers
-- enterprise
-- list config maps
-- list projects
-- devops
+- list images
+- list builds
 - list operators
-- get pod
-- list cluster nodes
-- ci/cd
+- list installed operators
+- platform
+- list projects
 - cloud native
+- enterprise
+- ci/cd
+- get project details
+- list routes
+- openshift
+- list cluster nodes
+- paas
+- kubernetes
+- containers
+- devops
+- list deployments
+- list storage
+- list image streams
+- get project
+- project management
+- get pod details
+- list pods
+- list configmaps
 slug: platform-management
 tags:
 - OpenShift

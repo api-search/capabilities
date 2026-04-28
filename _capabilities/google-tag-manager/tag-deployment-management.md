@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - tag-manager
 description: Workflow for managing tag deployment lifecycle including accounts, containers, workspaces, tags, triggers, variables, and version publishing. Used by marketing technologists and web analytics engineers.
@@ -37,63 +39,63 @@ personas: []
 provider_name: Google Tag Manager
 provider_slug: google-tag-manager
 search_terms:
-- get account details
+- delete variable
+- publish version
+- update account
+- create a container
+- conversion tracking
+- create a new container
+- list containers in an account
+- get account
+- delete tag
 - get container
-- tag management
-- create variable
-- get tag
-- delete a trigger
+- delete a tag
+- list all gtm accounts
+- account management
+- trigger management
 - analytics
-- list all google tag manager accounts
+- list versions
 - delete trigger
+- list variables in a workspace
+- create tag
+- list containers
+- list tags
+- get container details
+- get tag details
+- list all google tag manager accounts
 - delete workspace
+- list tags in a workspace
+- marketing
+- list variables
+- list workspaces
+- list triggers
+- update account settings
 - create trigger
 - create a new variable
-- get container details
-- publish version
-- delete container
-- list containers in an account
-- delete a container
-- create tag
-- publish a container version
-- trigger management
-- delete a tag
-- container management
-- list versions
-- get account
-- variable management
-- create a new trigger
-- get tag details
-- list workspaces
-- create a new tag
-- delete tag
-- create container
+- get account details
 - list workspaces in a container
-- create a container
-- list variables in a workspace
-- create a new workspace
-- delete a workspace
-- conversion tracking
-- tracking
-- list variables
-- list triggers
-- create a new container
-- marketing
-- list triggers in a workspace
-- update account settings
-- create a tag
-- update account
-- list accounts
+- delete a container
 - create workspace
-- list container version headers
-- account management
-- list all gtm accounts
-- list tags in a workspace
-- delete variable
-- list containers
 - google tag manager
-- list tags
+- container management
+- create container
+- list triggers in a workspace
+- create a new workspace
+- tag management
+- create a new tag
+- create a tag
+- list container version headers
+- delete container
+- tracking
+- publish a container version
+- get tag
+- delete a workspace
 - delete a variable
+- list accounts
+- create a new trigger
+- create variable
+- variable management
+- delete a trigger
 slug: tag-deployment-management
 tags:
 - Google Tag Manager

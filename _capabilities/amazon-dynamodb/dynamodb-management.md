@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - dynamodb
 description: Unified capability for managing DynamoDB tables, items, queries, and transactions for application developers and data engineers.
@@ -49,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb
-- nosql database operations business domain for amazon dynamodb.
-- listTables
-- database
-- amazon dynamodb describe a dynamodb table
-- get item
-- document store
-- serverless
-- describe table
-- query
-- amazon dynamodb update a dynamodb table
-- createTable
-- aws
-- updateTable
-- delete item
-- amazon dynamodb update an item in a table
-- put item
-- engineers managing amazon dynamodb resources on aws.
-- amazon dynamodb put an item into a table
 - create table
-- amazon dynamodb list dynamodb tables
-- nosql
+- describe table
+- engineers managing amazon dynamodb resources on aws.
+- createTable
+- delete item
+- amazon dynamodb
+- serverless
 - deleteItem
-- amazon dynamodb create a dynamodb table
-- amazon dynamodb query items in a table or index
-- update item
-- updateItem
-- delete table
-- list tables
-- workflow capability for nosql database operations.
-- key-value
-- amazon dynamodb delete a dynamodb table
-- putItem
-- deleteTable
 - getItem
+- database
+- nosql database operations business domain for amazon dynamodb.
+- amazon dynamodb query items in a table or index
+- amazon dynamodb describe a dynamodb table
+- amazon dynamodb put an item into a table
+- updateItem
+- deleteTable
+- putItem
+- amazon dynamodb update a dynamodb table
+- nosql
+- delete table
+- document store
+- amazon dynamodb list dynamodb tables
+- list tables
+- put item
+- amazon dynamodb update an item in a table
+- query
+- update item
 - amazon dynamodb delete an item from a table
-- update table
 - describeTable
 - amazon dynamodb get an item from a table
+- listTables
+- workflow capability for nosql database operations.
+- aws
+- key-value
+- amazon dynamodb create a dynamodb table
+- updateTable
+- get item
+- amazon dynamodb delete a dynamodb table
+- update table
 slug: dynamodb-management
 tags:
 - Amazon DynamoDB

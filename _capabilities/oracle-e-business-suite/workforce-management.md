@@ -1,4 +1,6 @@
 ---
+categories:
+- payroll-hr
 consumed_apis:
 - oracle-human-resources
 description: Human capital management combining HR, payroll, benefits, and organizational management. Used by HR administrators and payroll managers for employee lifecycle operations.
@@ -21,40 +23,40 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve payroll definitions.
-- employee management.
-- retrieve employees.
-- update employee record.
-- workforce management
-- get positions
-- create an employee record.
-- create employee
-- get employee by id.
-- oracle
-- retrieve positions.
-- retrieve payroll runs.
-- retrieve benefit enrollments.
-- update employee
-- business applications
-- get employee by id
-- retrieve assignments.
-- get employees
-- get assignments
-- list organizations.
-- erp
 - list employees.
 - get benefit enrollments
 - organization management.
-- e-business suite
-- enterprise
+- get payrolls
+- get positions
+- create employee
+- employee management.
+- create an employee record.
 - human resources
-- payroll
 - retrieve organizations.
+- payroll
+- e-business suite
+- retrieve assignments.
+- business applications
+- retrieve employees.
+- retrieve payroll definitions.
+- update employee record.
+- retrieve payroll runs.
+- enterprise
+- update employee
+- retrieve benefit enrollments.
+- erp
+- oracle
+- get employees
+- retrieve positions.
+- get organizations
+- get employee by id.
 - get payroll runs
+- get assignments
+- workforce management
+- list organizations.
+- get employee by id
 - list payrolls.
 - payroll management.
-- get payrolls
-- get organizations
 slug: workforce-management
 tags:
 - Oracle

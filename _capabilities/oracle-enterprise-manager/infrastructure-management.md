@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - cloud-control
 description: Unified workflow for monitoring, incident response, and maintenance management across Oracle infrastructure using Enterprise Manager Cloud Control APIs. Designed for infrastructure administrators and operations teams.
@@ -37,56 +39,56 @@ personas: []
 provider_name: Oracle Enterprise Manager
 provider_slug: oracle-enterprise-manager
 search_terms:
-- list blackouts
-- list metric groups
-- cloud management
+- get metric time series data
+- list blackouts (maintenance windows)
 - delete a scheduled blackout
-- database management
-- oracle
-- get blackout
-- get details of a specific incident
-- create a new monitored target
-- list targets
-- infrastructure management
-- get metric time series data for performance analysis
-- list incidents in enterprise manager
-- clear incident
-- get details of a specific monitored target
-- incident details
-- clear an incident marking it as resolved
 - suppress an incident from active views
-- get target
-- get configuration properties of a target
-- enterprise manager
-- list global target properties
-- enterprise management
 - maintenance windows
 - create target
-- get incident
-- monitored targets
-- get target details
-- performance metrics
-- list monitored targets
-- list blackouts (maintenance windows)
+- cloud management
 - get event
-- create a new blackout (maintenance window)
-- monitoring
+- get metric time series data for performance analysis
+- get details of a specific monitoring event
+- list monitored targets
+- enterprise manager
+- list blackouts
+- get details of a specific incident
+- infrastructure incidents
+- create blackout
 - list incidents
 - delete blackout
-- list global target properties for classification
-- target details
-- get details of a specific monitoring event
-- get details of a specific blackout
-- get incident details
-- get metric time series
-- list metric groups available for a target
-- create a monitored target
-- list monitored targets in enterprise manager
-- get metric time series data
-- create blackout
-- infrastructure incidents
-- suppress incident
+- get target
+- clear an incident marking it as resolved
 - get target properties
+- get metric time series
+- get details of a specific monitored target
+- get configuration properties of a target
+- list targets
+- get target details
+- list metric groups
+- database management
+- enterprise management
+- suppress incident
+- oracle
+- get incident
+- create a new blackout (maintenance window)
+- monitored targets
+- list global target properties for classification
+- monitoring
+- get blackout
+- list monitored targets in enterprise manager
+- create a monitored target
+- incident details
+- create a new monitored target
+- get details of a specific blackout
+- list metric groups available for a target
+- list global target properties
+- clear incident
+- infrastructure management
+- get incident details
+- list incidents in enterprise manager
+- target details
+- performance metrics
 slug: infrastructure-management
 tags:
 - Oracle

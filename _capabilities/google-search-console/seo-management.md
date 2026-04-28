@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - search-console
 description: Unified SEO management workflow combining search analytics, sitemap management, URL inspection, and site management for SEO specialists and webmasters.
@@ -49,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- query search traffic data.
-- get sitemap
-- seo
-- analytics
-- query search analytics data with filters.
-- list sitemaps for a site.
-- add site
 - delete a previously submitted sitemap.
-- submit a sitemap.
-- list all search console sites for the authenticated user.
-- search console
-- webmaster tools
 - get sitemap details.
-- get site
-- manage search console sites.
-- query search analytics
-- delete site
-- list sitemaps
-- google
-- get details for a specific search console site.
-- list sitemaps submitted for a site.
+- submit a sitemap.
 - inspect a url for index status and rich results.
-- search
-- list all search console sites.
-- delete a sitemap.
-- get details for a specific site.
-- delete sitemap
-- submit sitemap
-- webmaster
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- query search traffic data with filters and dimensions.
-- add a site to search console.
-- manage sitemaps.
-- remove a site from search console.
-- list sites
-- get details for a specific sitemap.
-- inspect url
+- query search analytics
+- list all search console sites for the authenticated user.
+- analytics
 - inspect urls for indexing status.
+- submit sitemap
 - submit a sitemap for crawling.
+- list all search console sites.
+- list sitemaps
+- query search analytics data with filters.
+- webmaster
+- seo
+- google
+- get details for a specific sitemap.
+- manage search console sites.
+- webmaster tools
+- delete a sitemap.
+- list sites
+- add a site to search console.
+- get details for a specific search console site.
+- search console
+- remove a site from search console.
+- inspect url
+- list sitemaps submitted for a site.
+- delete sitemap
+- query search traffic data.
+- get site
+- get details for a specific site.
+- delete site
+- add site
+- manage sitemaps.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- get sitemap
+- search
+- query search traffic data with filters and dimensions.
+- list sitemaps for a site.
 slug: seo-management
 tags:
 - Google

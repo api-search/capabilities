@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - affirm-checkout
 - affirm-transactions
@@ -54,61 +56,61 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- retrieve or update a checkout session.
-- capture transaction
-- payment ops
+- list transactions
+- buy now pay later
+- refund a captured affirm transaction partially or fully.
+- handling of customer chargebacks and disputes.
+- read a checkout session.
+- list all disputes.
+- submit dispute evidence
+- get affirm promotional financing terms and messaging for a purchase amount.
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- refund a transaction.
+- authorize an affirm transaction using a checkout token.
+- get details of a specific affirm payment dispute.
+- authorization, capture, void, and refund of payment transactions.
+- refund a captured transaction.
+- specific dispute operations.
+- get dispute details.
+- list all affirm payment transactions for reconciliation.
+- disputes
+- affirm
+- dispute management.
 - backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
 - checkout
-- specific dispute operations.
-- get dispute
-- list all affirm payment transactions for reconciliation.
-- buy now pay later
-- affirm
-- merchant operations team member managing transaction reconciliation and dispute resolution.
-- handling of customer chargebacks and disputes.
-- dispute management.
-- authorize an affirm transaction using a checkout token.
-- submit evidence to contest an affirm payment dispute.
-- list disputes
-- list transactions
-- checkout session management.
-- capture an authorized transaction.
 - full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
-- refund a transaction.
-- list all transactions.
-- transactions
-- create an affirm checkout session.
-- get dispute details.
-- displaying financing terms and promotional messaging to customers.
-- void transaction
-- read checkout
-- get details of a specific affirm payment dispute.
-- store checkout
-- get affirm promotional financing terms and messaging for a purchase amount.
-- get promo messaging
-- read a checkout session.
-- payment transaction management.
-- capture a transaction.
-- list all disputes.
-- authorization, capture, void, and refund of payment transactions.
-- disputes
-- refund transaction
-- payments
-- create an affirm bnpl checkout session for a customer purchase.
-- read an affirm checkout session by token.
-- list all affirm payment disputes for a merchant.
-- authorize a transaction.
-- refund a captured transaction.
-- capture an authorized affirm transaction to collect funds.
-- submit dispute evidence
-- get promo
-- authorize transaction
-- refund a captured affirm transaction partially or fully.
-- initiation and management of customer financing sessions.
-- get promotional financing terms.
+- get dispute
 - promotional messaging.
-- void an authorized affirm transaction before capture.
 - merchant engineer
+- create an affirm checkout session.
+- create an affirm bnpl checkout session for a customer purchase.
+- payment ops
+- capture transaction
+- void an authorized affirm transaction before capture.
+- retrieve or update a checkout session.
+- void transaction
+- checkout session management.
+- payment transaction management.
+- refund transaction
+- initiation and management of customer financing sessions.
+- get promo messaging
+- capture an authorized transaction.
+- capture a transaction.
+- authorize a transaction.
+- list all affirm payment disputes for a merchant.
+- capture an authorized affirm transaction to collect funds.
+- list disputes
+- read an affirm checkout session by token.
+- read checkout
+- payments
+- get promotional financing terms.
+- displaying financing terms and promotional messaging to customers.
+- authorize transaction
+- store checkout
+- list all transactions.
+- get promo
+- submit evidence to contest an affirm payment dispute.
+- transactions
 slug: payment-management
 tags:
 - Affirm

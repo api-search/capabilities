@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: Bancomat
 provider_slug: bancomat
 search_terms:
-- italy
-- payments
-- debit cards
-- atm
 - financial services
+- debit cards
+- payments
 - banking
+- italy
 - mobile payments
+- atm
 slug: bancomat-payment-capability
 tags: []
 tools: []

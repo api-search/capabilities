@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - acquia-cloud
 description: Unified workflow for managing Drupal applications on Acquia Cloud, including application discovery, environment management, organization administration, and account operations. Used by Drupal developers, DevOps engineers, and platform administrators to automate Acquia Cloud Platform workflows.
@@ -33,46 +34,46 @@ personas: []
 provider_name: Acquia
 provider_slug: acquia
 search_terms:
-- list all environments (dev, staging, prod) for an acquia cloud application
-- Drupal Developer
-- get environment
-- content
-- get current user account details
-- drupal application lifecycle management
-- applications
-- developer building and deploying drupal applications on acquia cloud
-- user, team, and organizational access control management
-- engineer managing ci/cd pipelines, deployments, and environment configuration
-- cloud
-- list all organizations
-- get account
-- drupal application hosting lifecycle on acquia cloud platform
-- list organizations
-- Platform Administrator
-- get environment details
-- acquia
-- current user account
-- get detailed information about a specific acquia cloud application
-- experience
-- get detailed information about a specific acquia cloud environment
-- list all accessible acquia cloud applications
-- environments
-- list environments
-- get application
-- acquia platform admin managing organizations, teams, and subscriptions
-- devops
-- list all acquia cloud drupal applications the current user can access
-- list environments for an application
-- list applications
-- list all organizations the current acquia user belongs to
 - organization management
+- get detailed information about a specific acquia cloud application
+- acquia platform admin managing organizations, teams, and subscriptions
+- get detailed information about a specific acquia cloud environment
+- acquia
+- drupal application hosting lifecycle on acquia cloud platform
+- get account
+- Platform Administrator
+- environments
+- cloud ide environments and platform notification management
+- applications
+- list organizations
+- get application
+- user, team, and organizational access control management
+- list all environments (dev, staging, prod) for an acquia cloud application
 - get application details
 - DevOps Engineer
+- list all organizations
+- list environments
 - get the current acquia cloud user account profile and permissions
+- list all accessible acquia cloud applications
+- engineer managing ci/cd pipelines, deployments, and environment configuration
+- list environments for an application
+- Drupal Developer
+- get current user account details
+- current user account
+- devops
+- drupal application lifecycle management
+- get environment details
+- experience
+- list applications
+- get environment
 - application environment operations
-- cloud ide environments and platform notification management
-- application discovery, environment management, and organization administration
 - drupal
+- content
+- list all organizations the current acquia user belongs to
+- list all acquia cloud drupal applications the current user can access
+- developer building and deploying drupal applications on acquia cloud
+- application discovery, environment management, and organization administration
+- cloud
 slug: drupal-application-management
 tags:
 - Acquia

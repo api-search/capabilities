@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - nops
 description: Unified cloud cost optimization capability combining MAP migration tracking, scheduler automation, and cost recommendations. Used by FinOps teams and cloud operations engineers.
@@ -13,34 +14,34 @@ personas: []
 provider_name: nOps
 provider_slug: nops
 search_terms:
-- list map migration projects
 - optimization
-- finops
-- manually trigger a scheduler
-- get scheduler workload summary
-- enable scheduler
-- disable a scheduler
-- trigger scheduler
-- list map products
-- create a scheduler
-- costs
-- get utilization summary
 - create scheduler
-- enable a scheduler
-- get workload recommendations
-- get utilization recommendations
-- get map migration project details
-- get scheduler workload recommendations
-- get workload summary
+- get scheduler workload summary
+- get utilization summary
 - list map resources
 - nops
-- list products in a map project
-- disable scheduler
-- list map projects
-- list resources in a map project
-- cloud costs
-- get map project
 - map migration projects
+- get workload summary
+- list resources in a map project
+- get map migration project details
+- get scheduler workload recommendations
+- list map products
+- cloud costs
+- list products in a map project
+- disable a scheduler
+- create a scheduler
+- finops
+- manually trigger a scheduler
+- get utilization recommendations
+- trigger scheduler
+- enable scheduler
+- costs
+- list map projects
+- get map project
+- get workload recommendations
+- enable a scheduler
+- disable scheduler
+- list map migration projects
 slug: cloud-cost-optimization
 tags:
 - nOps

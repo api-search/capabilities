@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Workflow capability for managing Amazon Aurora relational database clusters including creation, scaling, snapshots, and global database configurations.
 layout: capability
@@ -16,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- list all aurora db clusters to understand available databases and their status.
-- describe db cluster snapshots
-- postgresql
-- create db instance
-- list aurora db clusters
-- relational database
-- aurora db cluster management
-- start db cluster
-- stop an aurora db cluster to reduce costs when not in use.
-- start a stopped aurora db cluster to resume database operations.
-- create a new aurora mysql or postgresql compatible db cluster.
-- modify the configuration of an existing aurora db cluster.
-- aws
-- add a new read replica or writer instance to an aurora db cluster.
-- create a new aurora db cluster
-- modify db cluster
-- restore db cluster from snapshot
-- create db cluster
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- amazon aurora
-- list available aurora db cluster snapshots for backup management.
+- create db cluster snapshot
 - create a snapshot of an aurora db cluster for backup or cloning.
 - list all db instances in aurora clusters.
+- modify the configuration of an existing aurora db cluster.
+- list all aurora db clusters to understand available databases and their status.
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- start a stopped aurora db cluster to resume database operations.
+- start db cluster
 - mysql
+- add a new read replica or writer instance to an aurora db cluster.
 - describe db instances
-- stop db cluster
+- postgresql
+- list available aurora db cluster snapshots for backup management.
+- create a new aurora mysql or postgresql compatible db cluster.
+- describe db cluster snapshots
+- create db cluster
+- create db instance
+- aws
+- amazon aurora
+- aurora db cluster management
+- modify db cluster
 - describe db clusters
-- create db cluster snapshot
+- create a new aurora db cluster
+- stop an aurora db cluster to reduce costs when not in use.
+- stop db cluster
+- list aurora db clusters
+- relational database
+- restore db cluster from snapshot
 slug: relational-database-management
 tags:
 - Amazon Aurora

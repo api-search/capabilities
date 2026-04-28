@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - apple-pay-js
 description: Workflow capability for integrating Apple Pay into e-commerce and mobile payment flows. Combines merchant validation, payment session management, and payment token processing into a unified workflow for e-commerce developers and payment integration engineers enabling secure, one-touch checkout on Apple devices.
@@ -17,31 +19,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- initiating and completing apple pay payment authorizations
-- mobile payments
-- register a domain for apple pay on the web
 - contactless payments
-- validates merchant and obtains apple pay payment session
-- developer integrating apple pay into a web or mobile checkout experience
-- checkout
-- apple pay merchant validation and payment session
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- registers a merchant domain to accept apple pay on the web payments
-- validate merchant
-- register apple pay domain
-- register domain
 - e-commerce
-- registering and managing merchant identity and domains for apple pay
+- register a domain for apple pay on the web
+- registers a merchant domain to accept apple pay on the web payments
 - apple pay
-- validate apple pay merchant
-- engineer building payment processing infrastructure supporting multiple payment methods
-- digital wallet
-- payments
-- E Commerce Developer
-- Payment Integration Engineer
+- mobile payments
+- register apple pay domain
 - apple
+- checkout
+- validate apple pay merchant
+- initiating and completing apple pay payment authorizations
+- digital wallet
+- Payment Integration Engineer
+- validate merchant
 - merchant domain management for apple pay
+- E Commerce Developer
+- developer integrating apple pay into a web or mobile checkout experience
+- register domain
+- apple pay merchant validation and payment session
+- registering and managing merchant identity and domains for apple pay
 - end-to-end apple pay checkout integration with merchant validation and payment token handling
+- validates merchant and obtains apple pay payment session
+- engineer building payment processing infrastructure supporting multiple payment methods
+- payments
+- validates merchant identity with apple and returns a payment session object for completing checkout
 slug: payment-processing
 tags:
 - Apple Pay

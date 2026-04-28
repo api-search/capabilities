@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-greengrass
 description: Unified capability for IoT Developer, Edge Computing Engineer to manage extend aws compute and services to edge devices operations.
@@ -13,34 +15,34 @@ personas: []
 provider_name: Amazon IoT Greengrass
 provider_slug: amazon-iot-greengrass
 search_terms:
-- list core devices
-- machine learning
-- list components
-- amazon iot greengrass create component version
-- list deployments
-- manages amazon iot greengrass resources and operations
-- amazon iot greengrass get core device
-- list component versions
-- aws
-- real-time processing
-- edge computing
-- create component version
-- amazon iot greengrass list deployments
-- amazon iot greengrass list core devices
-- describe component
-- amazon iot greengrass list component versions
-- amazon iot greengrass list components
-- amazon iot greengrass create deployment
-- lambda
-- iot
-- device management
-- extend aws compute and services to edge devices.
 - create deployment
 - Edge Computing Engineer
-- amazon iot greengrass describe component
-- amazon iot greengrass resources
-- IoT Developer
+- extend aws compute and services to edge devices.
+- amazon iot greengrass list deployments
+- create component version
+- amazon iot greengrass get core device
+- iot
+- real-time processing
 - get core device
+- amazon iot greengrass list core devices
+- amazon iot greengrass describe component
+- list component versions
+- IoT Developer
+- amazon iot greengrass create deployment
+- list core devices
+- describe component
+- amazon iot greengrass list components
+- edge computing
+- list deployments
+- lambda
+- amazon iot greengrass list component versions
+- amazon iot greengrass resources
+- manages amazon iot greengrass resources and operations
+- machine learning
+- device management
+- aws
+- list components
+- amazon iot greengrass create component version
 slug: edge-device-management
 tags:
 - IoT

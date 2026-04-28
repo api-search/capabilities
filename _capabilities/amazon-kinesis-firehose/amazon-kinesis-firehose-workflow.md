@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - kinesis-firehose
 description: Unified workflow capability for Amazon Kinesis Data Firehose combining resource management and operations.
@@ -9,23 +10,23 @@ personas: []
 provider_name: Amazon Kinesis Data Firehose
 provider_slug: amazon-kinesis-firehose
 search_terms:
-- delivery streams create delivery stream
-- integrates api into applications
-- workflow
-- manages resources and configurations
-- Administrator
-- aws
-- delivery streams describe delivery stream
-- analytics
-- Developer
-- lists your delivery streams in alphabetical order of their names.
-- creates a kinesis data firehose delivery stream.
-- amazon kinesis data firehose
-- streaming
-- data delivery
-- delivery streams list delivery streams
 - describes the specified delivery stream.
+- lists your delivery streams in alphabetical order of their names.
+- integrates api into applications
+- delivery streams list delivery streams
+- streaming
+- amazon kinesis data firehose
 - unified workflow for amazon kinesis data firehose resource management
+- aws
+- workflow
+- analytics
+- delivery streams create delivery stream
+- Administrator
+- data delivery
+- manages resources and configurations
+- Developer
+- delivery streams describe delivery stream
+- creates a kinesis data firehose delivery stream.
 slug: amazon-kinesis-firehose-workflow
 tags:
 - Amazon Kinesis Data Firehose

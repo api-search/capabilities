@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: Airwallex
 provider_slug: airwallex
 search_terms:
-- multi-currency
-- payments
 - cross-border payments
 - embedded finance
+- payments
 - foreign exchange
-- fintech
 - global
+- fintech
+- multi-currency
 slug: payments-management
 tags: []
 tools: []

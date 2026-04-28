@@ -1,4 +1,6 @@
 ---
+categories:
+- customer-engagement
 consumed_apis:
 - marketing-emal-api
 - analytics-events-api
@@ -10,34 +12,34 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- hubspot retrieve event instances
-- commerce
-- hubspot send a transactional email
-- analytics
-- content
-- sales
 - hubspot delete an smtp token
 - email
-- crm
-- geteventtypes
-- resetsmtptokenpassword
-- hubspot get an smtp token by id
-- operations
+- hubspot send a transactional email
 - hubspot
-- hubspot reset smtp token password
-- hubspot retrieve available event types
-- sendtransactionalemail
-- geteventinstances
-- hubspot create an smtp token
-- customer service
-- getsmtptokenbyid
 - createsmtptoken
-- marketing automation
-- marketing
 - hubspot list all smtp tokens
-- listsmtptokens
-- deletesmtptoken
+- hubspot reset smtp token password
 - email marketing
+- resetsmtptokenpassword
+- analytics
+- deletesmtptoken
+- marketing automation
+- sendtransactionalemail
+- listsmtptokens
+- commerce
+- marketing
+- geteventtypes
+- hubspot create an smtp token
+- geteventinstances
+- hubspot get an smtp token by id
+- sales
+- content
+- crm
+- customer service
+- operations
+- hubspot retrieve available event types
+- getsmtptokenbyid
+- hubspot retrieve event instances
 slug: marketing-automation
 tags:
 - HubSpot

@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - hana-cloud-rest
 description: Unified workflow for SAP HANA Cloud database administration including instance lifecycle management, monitoring alerts, performance metrics, and metering. Used by database administrators and cloud platform engineers.
@@ -37,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- provision a new instance.
-- provision a new sap hana cloud instance.
-- list alert rules for an instance.
-- update instance configuration.
+- get database metrics.
+- delete an instance.
+- list inventory
+- instance lifecycle management.
+- individual instance operations.
+- list mappings
+- database
+- update an instance.
+- analytics
+- list alert events.
 - delete an instance mapping.
 - get metrics
-- update alert rules
-- get database metrics.
+- retrieve database performance metrics.
+- list triggered alert events for an instance.
+- list all sap hana cloud service instances.
+- performance metrics.
 - update instance
-- analytics
-- database
-- list instances
-- create instance
-- create mapping
-- update an instance.
 - get metering
 - get instance details.
-- cloud
+- enterprise
+- update alert rules
+- delete a service instance permanently.
+- administration
+- list alert rules for an instance.
+- update instance configuration.
+- alert monitoring.
+- list instance mappings.
+- monitoring
+- provision a new sap hana cloud instance.
+- sap hana
+- delete mapping
+- create instance
 - retrieve consumption metering data.
 - list all sap hana cloud instances.
-- create a new instance mapping.
-- delete mapping
-- individual instance operations.
-- administration
-- list alert events.
-- alert monitoring.
-- list all instances in the inventory.
-- list alerts
-- list inventory
-- update alert rules for an instance.
-- list triggered alert events for an instance.
-- monitoring
-- list all sap hana cloud service instances.
-- get details of a specific instance.
-- list alert rules
-- performance metrics.
-- enterprise
-- delete an instance.
-- list instance mappings.
-- in-memory
-- retrieve database performance metrics.
-- delete a service instance permanently.
 - get instance
-- sap hana
+- in-memory
+- create a new instance mapping.
+- provision a new instance.
+- list all instances in the inventory.
 - delete instance
-- list mappings
-- instance lifecycle management.
+- list alerts
+- list alert rules
+- create mapping
+- get details of a specific instance.
+- list instances
+- cloud
+- update alert rules for an instance.
 slug: cloud-administration
 tags:
 - SAP HANA

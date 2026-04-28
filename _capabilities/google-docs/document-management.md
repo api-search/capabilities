@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - docs-api
 description: Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting, and template automation. Used by developers automating document workflows.
@@ -21,26 +23,26 @@ personas: []
 provider_name: Google Docs
 provider_slug: google-docs
 search_terms:
-- get document
-- documents
 - apply batch updates to a document.
-- document batch updates.
-- document management
-- retrieve a google docs document by its id.
-- collaboration
-- document creation.
-- create document
-- create a new google docs document with a title.
-- word processing
-- create a new document.
-- get a document by id.
-- productivity
 - google docs
 - google workspace
-- batch update document
-- apply batch updates to insert, replace, or delete content in a document.
-- document retrieval and updates.
 - automation
+- document batch updates.
+- create document
+- word processing
+- document retrieval and updates.
+- create a new document.
+- document management
+- documents
+- collaboration
+- apply batch updates to insert, replace, or delete content in a document.
+- get document
+- batch update document
+- get a document by id.
+- retrieve a google docs document by its id.
+- productivity
+- document creation.
+- create a new google docs document with a title.
 slug: document-management
 tags:
 - Google Docs

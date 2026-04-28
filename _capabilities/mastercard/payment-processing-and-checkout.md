@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - checkout-solutions
 - unified-checkout
@@ -39,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- generate qr code
-- payment processing
+- process cloud transaction
 - create a unified checkout session
-- create unified session
-- financial services
-- checkout
 - credit cards
-- create checkout session
-- process payment
-- process a cloud commerce transaction
-- qr code payment acceptance
-- retrieve payment transaction details
-- buy-now-pay-later installment plans
+- create a new checkout session for a merchant
 - e-commerce
-- mastercard
-- register a contactless reader device
-- process a payment through the gateway
-- create installment plan
-- checkout session management
-- get payment
-- process a payment through the mastercard gateway
+- create an installment plan
+- digital identity
+- merchant
+- checkout
+- buy-now-pay-later installment plans
+- generate qr code
+- open banking
+- create checkout session
+- get payment details
 - generate a merchant-presented qr code for payment
 - create a new checkout session
-- create a new checkout session for a merchant
-- merchant
-- create a unified checkout session supporting multiple payment methods
-- digital identity
-- payments
-- generate a merchant qr code for payment
-- open banking
-- unified checkout sessions
-- create an installment plan
+- checkout session management
 - register contactless reader
+- qr code payment acceptance
+- get payment
+- generate a merchant qr code for payment
+- create installment plan
+- process payment
+- process a payment through the gateway
+- retrieve payment transaction details
+- unified checkout sessions
+- mastercard
+- process a cloud commerce transaction
 - fraud detection
-- get payment details
-- process cloud transaction
+- register a contactless reader device
+- financial services
+- process a payment through the mastercard gateway
+- create unified session
+- payments
+- payment processing
 - create a buy-now-pay-later installment plan
+- create a unified checkout session supporting multiple payment methods
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

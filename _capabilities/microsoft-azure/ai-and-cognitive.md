@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis:
 - azure-openai
 - azure-cognitive
@@ -26,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- translate audio to english
-- cognitive services
-- create embedding
-- openai create translation
-- cognitive list accounts
 - create a text completion
-- cognitive services accounts
-- openai create completion
-- cloud
-- cloud computing
-- openai
-- openai list models
-- t1
-- openai create speech
-- generate images from text
-- infrastructure as a service
-- generate speech from text
-- api management
-- list available ai models
-- embedding operations
-- chat completion operations
-- create chat completion
-- ai
-- create a chat completion using azure openai
-- openai list deployments
-- enterprise
-- list openai models
-- azure
-- cognitive list models
-- list available openai models
-- openai create image
+- openai create translation
 - create text embeddings
-- transcribe audio to text
-- openai create transcription
-- create a chat completion
-- list cognitive accounts
-- openai create chat completion
-- list model deployments
-- openai create embedding
-- model listing
-- platform as a service
+- cognitive list accounts
+- cognitive list models
+- cloud computing
+- embedding operations
+- list available openai models
+- create embedding
+- api management
+- create chat completion
+- openai create image
+- openai list models
+- list openai models
+- cloud
+- cognitive services
+- list available ai models
+- openai create completion
+- chat completion operations
+- enterprise
+- infrastructure as a service
 - list cognitive services accounts
+- openai create embedding
+- generate images from text
+- openai create chat completion
+- create a chat completion
+- translate audio to english
+- transcribe audio to text
+- platform as a service
+- ai
+- openai
+- model listing
+- azure
+- list cognitive accounts
+- t1
+- cognitive services accounts
+- generate speech from text
+- openai list deployments
+- openai create speech
+- list model deployments
+- create a chat completion using azure openai
+- openai create transcription
 slug: ai-and-cognitive
 tags:
 - Azure

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Workflow capability for reading, writing, converting, and analyzing Apache ORC columnar files.
 layout: capability
@@ -16,33 +17,33 @@ personas: []
 provider_name: Apache ORC
 provider_slug: apache-orc
 search_terms:
-- merge multiple orc files into one
-- get column statistics from an orc file
-- big data
-- data processing
-- convert
+- reads orc files and analyzes column statistics
 - get metadata about an orc file
-- convert to orc
-- Data Engineer
-- apache
-- manages orc file creation, conversion, and schema evolution
+- get file schema
+- convert
 - merge orc files
-- hadoop
-- file format
-- get file metadata
-- compression
+- Data Analyst
+- columnar storage
+- apache
+- data processing
+- get column statistics from an orc file
+- list available orc files
+- merge multiple orc files into one
+- open source
+- apache orc
+- Data Engineer
 - list files
+- big data
+- hadoop
+- get column statistics
+- file format
+- convert to orc
+- get file metadata
+- manages orc file creation, conversion, and schema evolution
+- list orc files
+- compression
 - convert csv, json, or parquet to orc format
 - get the schema of an orc file
-- columnar storage
-- list orc files
-- apache orc
-- reads orc files and analyzes column statistics
-- get file schema
-- get column statistics
-- list available orc files
-- Data Analyst
-- open source
 slug: orc-workflow
 tags:
 - Apache ORC

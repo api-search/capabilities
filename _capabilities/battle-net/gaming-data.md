@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,20 +9,20 @@ personas: []
 provider_name: Battle.net
 provider_slug: battle-net
 search_terms:
-- players tracking character progress, gear, and achievements
 - diablo
-- authenticated player-specific data
-- oauth token management
-- blizzard
-- starcraft
-- players using deck-building tools and card databases
-- competitive rankings and season data
+- players tracking character progress, gear, and achievements
 - world of warcraft
-- gaming
+- blizzard
 - games
-- hearthstone
 - developers building companion apps, stat trackers, or tools for blizzard games
+- hearthstone
 - static and dynamic game reference data
+- competitive rankings and season data
+- oauth token management
+- gaming
+- authenticated player-specific data
+- players using deck-building tools and card databases
+- starcraft
 slug: gaming-data
 tags: []
 tools: []

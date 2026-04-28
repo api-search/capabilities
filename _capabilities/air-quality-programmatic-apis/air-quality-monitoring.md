@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - aqicn
 description: Unified workflow for querying real-time air quality data, monitoring station health, and spatial air quality analysis. Used by environmental monitoring applications and public health systems.
@@ -21,33 +23,33 @@ personas: []
 provider_name: Air Quality Programmatic APIs
 provider_slug: air-quality-programmatic-apis
 search_terms:
-- search air quality stations
-- get real-time aqi for a geographic location using latitude and longitude
-- air quality by city name
-- app developer integrating air quality data into mobile or web applications
-- researcher or analyst studying air quality trends and patterns
-- open data
-- environment
-- search stations by keyword
-- search monitoring stations
-- get current aqi for a city
-- get aqi by coordinates
-- search for air quality monitoring stations by city or station name
-- get aqi by city
 - Environmental Analyst
-- search stations
-- public health
-- government data
-- air quality by coordinates
-- monitoring
-- get real-time air quality index (aqi) and pollutant data for a city
-- air quality
-- iot
-- epa
-- Developer
-- query real-time aqi and search monitoring stations
 - real-time data
+- search for air quality monitoring stations by city or station name
+- air quality
+- environment
+- open data
+- get real-time air quality index (aqi) and pollutant data for a city
+- iot
 - get aqi for coordinates
+- Developer
+- search monitoring stations
+- get real-time aqi for a geographic location using latitude and longitude
+- public health
+- air quality by coordinates
+- get aqi by coordinates
+- air quality by city name
+- government data
+- search air quality stations
+- query real-time aqi and search monitoring stations
+- epa
+- get current aqi for a city
+- app developer integrating air quality data into mobile or web applications
+- search stations by keyword
+- monitoring
+- researcher or analyst studying air quality trends and patterns
+- search stations
+- get aqi by city
 slug: air-quality-monitoring
 tags:
 - Air Quality

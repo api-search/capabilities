@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - concur-expense
 description: Unified spend management workflow combining expense, travel, and invoice APIs for finance teams managing employee spend.
@@ -13,24 +14,24 @@ personas: []
 provider_name: SAP Concur
 provider_slug: concur
 search_terms:
+- finance and accounting staff managing expense and invoice processing
+- list reports
+- list expense reports
+- invoice
+- list expense reports for a user
+- create a new expense report
+- expense reports
 - unified spend management combining expense and invoice workflows
 - sap concur
-- expense reports
-- finance and accounting staff managing expense and invoice processing
 - create expense report
-- create a new expense report
-- travel
-- sap
-- expense management
 - finance
-- list expense reports
-- managers approving expense reports and invoices
-- list reports
-- Approver
-- list expense reports for a user
-- spend management
-- invoice
+- sap
 - Finance Team
+- managers approving expense reports and invoices
+- travel
+- spend management
+- Approver
+- expense management
 slug: spend-management
 tags:
 - Expense Management

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-q
 description: Workflow capability for Amazon Q. Enables automation of Amazon Q resources for cloud operations teams.
@@ -13,19 +14,19 @@ personas: []
 provider_name: Amazon Q
 provider_slug: amazon-q
 search_terms:
-- list amazon q resources
-- artificial intelligence
-- list resources
-- aws
-- automation workflow for amazon q
-- cloud operations
-- engineer managing amazon q resources
-- aws cloud resource management
-- enterprise
-- assistant
 - amazon q resources
-- generative ai
+- aws cloud resource management
+- list amazon q resources
+- aws
 - amazon q
+- artificial intelligence
+- cloud operations
+- assistant
+- generative ai
+- automation workflow for amazon q
+- enterprise
+- engineer managing amazon q resources
+- list resources
 slug: amazon-q
 tags:
 - Amazon Q

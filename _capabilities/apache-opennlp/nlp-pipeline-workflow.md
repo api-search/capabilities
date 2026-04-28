@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - opennlp
 description: End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging, NER, chunking, and parsing for comprehensive text analysis.
@@ -45,63 +46,63 @@ personas: []
 provider_name: Apache OpenNLP
 provider_slug: apache-opennlp
 search_terms:
-- phrase chunking
-- machine learning
-- chunk
-- full syntactic parsing
-- tokenize text into words and punctuation
-- detect language
-- tokenization
-- parse
-- assign pos tags to each token in tokenized text
+- list models
+- integrates opennlp into custom nlp pipelines and applications
+- apache opennlp
+- parse sentence
+- named entity recognition
+- identify noun phrases, verb phrases, and other chunks
 - categorize
-- language detection
-- detect the language of input text
-- find named entities
-- text processing
-- split text into sentences
-- java
-- build a full parse tree for a sentence
-- apache
-- find named entities (persons, locations, organizations) in text
+- sentence boundary detection
+- chunk text into phrases
+- list available models
 - natural language processing
 - tokenize
-- reduce tokens to their base/lemma forms
-- sentence boundary detection
-- NLP Engineer
-- detect document language
-- apache opennlp
-- document categorization
-- tag parts of speech
-- uses nlp pipeline for text analysis and feature extraction
-- parse sentence
-- parse sentence structure
-- tokenize text
-- chunk text into phrases
+- language detection
+- split text into sentences
+- parse
+- find named entities (persons, locations, organizations) in text
 - classify a document into predefined categories
-- text analysis
-- tag pos
-- uses opennlp apis to add language processing capabilities to applications
-- split text into individual sentences
-- categorize document
-- model management
-- end-to-end nlp processing pipeline
-- list models
-- information extraction
-- nlp
-- find entities
-- chunk phrases
 - part-of-speech tagging
 - Data Scientist
-- lemmatize
-- list available models
-- named entity recognition
-- detect sentences
-- list all available nlp models
-- integrates opennlp into custom nlp pipelines and applications
-- identify noun phrases, verb phrases, and other chunks
-- Application Developer
+- build a full parse tree for a sentence
+- parse sentence structure
+- assign pos tags to each token in tokenized text
+- information extraction
+- uses nlp pipeline for text analysis and feature extraction
+- find entities
+- uses opennlp apis to add language processing capabilities to applications
+- apache
+- phrase chunking
+- model management
+- java
 - open source
+- tokenization
+- tokenize text into words and punctuation
+- detect document language
+- NLP Engineer
+- text analysis
+- detect language
+- full syntactic parsing
+- document categorization
+- end-to-end nlp processing pipeline
+- categorize document
+- chunk
+- chunk phrases
+- tag parts of speech
+- Application Developer
+- text processing
+- tokenize text
+- machine learning
+- tag pos
+- split text into individual sentences
+- lemmatize
+- reduce tokens to their base/lemma forms
+- list all available nlp models
+- detect the language of input text
+- detect sentences
+- nlp
+- find named entities
 slug: nlp-pipeline-workflow
 tags:
 - Apache OpenNLP

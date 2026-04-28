@@ -1,4 +1,6 @@
 ---
+categories:
+- travel-booking
 consumed_apis:
 - flight-offers-search
 - flight-offers-price
@@ -18,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- shopping
+- flights
+- price confirmation and validation before booking.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- hotels
+- developer building online travel agency flight search and booking flows.
 - search available flights by origin, destination, and date.
-- travel
+- airlines
 - confirm current price and availability.
-- confirm flight price
-- Travel Chatbot Developer
-- complete flight shopping flow from search through price confirmation.
+- booking
+- shopping
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- flight offer discovery and comparison.
 - search flights advanced
+- travel
+- confirm flight price
 - search for available flight offers.
 - advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- flights
-- airlines
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- pricing
-- developer building online travel agency flight search and booking flows.
-- confirm pricing for a selected flight offer.
-- booking
-- developer building conversational travel assistants for flight search.
-- hotels
-- search flights
 - amadeus
-- search
-- OTA Developer
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- travel technology
-- price confirmation and validation before booking.
 - confirm price
-- upsell, seat selection, and add-on services.
+- confirm pricing for a selected flight offer.
 - gds
-- flight offer discovery and comparison.
+- complete flight shopping flow from search through price confirmation.
+- search flights
+- upsell, seat selection, and add-on services.
+- Travel Chatbot Developer
+- travel technology
+- search
+- pricing
+- OTA Developer
+- developer building conversational travel assistants for flight search.
 slug: flight-shopping
 tags:
 - Amadeus

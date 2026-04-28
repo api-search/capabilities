@@ -1,4 +1,6 @@
 ---
+categories:
+- serverless
 consumed_apis:
 - lambda
 description: Unified workflow capability for Amazon Lambda combining resource management and operations.
@@ -9,31 +11,31 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
-- event source mappings create event source mapping
-- functions create function
-- serverless
-- functions list functions
-- amazon lambda
-- event-driven
-- returns details about an event source mapping.
-- aws
-- lists event source mappings.
 - faas
-- creates a lambda function.
-- Administrator
-- integrates api into applications
 - event source mappings list event source mappings
-- manages resources and configurations
-- event source mappings get event source mapping
-- returns a list of lambda functions, with the version-specific configuration of each.
 - returns information about the function or function version.
-- functions
-- compute
-- workflow
-- unified workflow for amazon lambda resource management
 - Developer
-- functions get function
+- Administrator
+- serverless
+- creates a lambda function.
+- functions create function
+- returns details about an event source mapping.
 - creates a mapping between an event source and an aws lambda function.
+- lists event source mappings.
+- functions list functions
+- event source mappings get event source mapping
+- unified workflow for amazon lambda resource management
+- amazon lambda
+- event source mappings create event source mapping
+- integrates api into applications
+- event-driven
+- functions
+- aws
+- workflow
+- returns a list of lambda functions, with the version-specific configuration of each.
+- functions get function
+- manages resources and configurations
+- compute
 slug: amazon-lambda-workflow
 tags:
 - Amazon Lambda

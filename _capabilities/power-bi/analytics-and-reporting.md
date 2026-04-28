@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - power-bi
 description: Unified workflow for Power BI analytics operations including dataset management, report creation and distribution, dashboard monitoring, workspace administration, and gateway configuration. Used by BI analysts, report developers, and Power BI administrators.
@@ -45,67 +47,67 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
-- clone report
-- get dashboard tiles
-- list datasets
-- get pages for a report
-- get gateway details
-- get refresh history
-- business intelligence
-- create dataset
-- list dashboards
-- analytics
-- create a new dashboard
-- refresh dataset
-- create a dataset
-- get dataset details
-- export report
-- get datasources for a dataset
-- create a dashboard
-- get dashboard details
-- get report
-- export a report
-- clone a report
-- get dashboard
-- list gateways
-- individual dataset operations
+- create a new dataset
 - list all power bi datasets
-- delete dataset
-- list all datasets
-- get datasources
-- gateway management
-- dashboards
-- power bi
-- visualization
-- list all reports
-- list workspaces
-- list data gateways
-- get report pages
+- dataset management
+- create a dashboard
 - workspace management
 - get tiles for a dashboard
-- report management
-- create a new workspace
-- reporting
-- list workspace users
+- get gateway details
+- create dataset
+- dashboards
 - trigger a dataset refresh
-- get workspace users
-- get dataset
-- list all dashboards
-- list all power bi reports
-- list all workspaces
-- get gateway
-- create workspace
-- dashboard management
-- dataset management
-- data analysis
-- get dataset details by id
 - create dashboard
-- get report details by id
+- business intelligence
+- list workspace users
+- reporting
+- get datasources
+- data analysis
+- get gateway
+- export a report
+- get report
+- refresh dataset
+- individual dataset operations
+- analytics
+- get refresh history
+- get pages for a report
+- list data gateways
+- get report pages
+- get dashboard details
+- list workspaces
+- get dataset details by id
+- dashboard management
+- get dashboard
+- get workspace users
+- visualization
+- create workspace
+- list dashboards
+- list all datasets
+- clone report
+- get dataset
+- create a new workspace
+- delete dataset
+- get dashboard tiles
+- list all dashboards
+- get dataset details
 - list reports
-- delete a dataset
-- get gateway datasources
-- create a new dataset
+- gateway management
+- get report details by id
+- export report
+- create a dataset
+- list datasets
+- power bi
 - get dataset refresh history
+- clone a report
+- create a new dashboard
+- list all workspaces
+- list gateways
+- get gateway datasources
+- list all power bi reports
+- report management
+- get datasources for a dataset
+- list all reports
+- delete a dataset
 slug: analytics-and-reporting
 tags:
 - Power BI

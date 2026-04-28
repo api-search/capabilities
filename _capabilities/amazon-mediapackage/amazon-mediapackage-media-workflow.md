@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mediapackage
 description: Workflow capability for Amazon MediaPackage media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MediaPackage
 provider_slug: amazon-mediapackage
 search_terms:
-- developer building media processing applications
-- createoriginendpoint
-- list jobs
-- listchannels
-- create origin endpoint
-- describe channel
-- manage media processing jobs
-- engineer managing broadcast media workflows
-- listharvestjobs
-- aws
-- list channels
-- create harvest job
-- configure logs
-- configurelogs
-- listoriginendpoints
-- list harvest jobs
-- createchannel
-- createharvestjob
-- Broadcast Engineer
-- workflow
-- Media Developer
-- aws media processing and delivery
-- media
-- create channel
 - broadcasting
-- media processing
+- list harvest jobs
+- Broadcast Engineer
+- configurelogs
+- create harvest job
 - describechannel
-- amazon mediapackage media processing workflow
+- manage media processing jobs
+- configure logs
+- listoriginendpoints
+- list channels
+- aws media processing and delivery
+- describe channel
+- media
+- create origin endpoint
+- createchannel
+- Media Developer
 - list origin endpoints
+- list jobs
+- createoriginendpoint
+- amazon mediapackage media processing workflow
+- media processing
+- aws
+- workflow
+- createharvestjob
+- developer building media processing applications
+- listharvestjobs
+- create channel
+- engineer managing broadcast media workflows
+- listchannels
 slug: amazon-mediapackage-media-workflow
 tags:
 - AWS

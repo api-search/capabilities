@@ -1,4 +1,6 @@
 ---
+categories:
+- content-management
 consumed_apis:
 - tableau-rest
 description: Workflow for managing Tableau content including workbooks, data sources, views, sites, users, and permissions. Used by Tableau administrators and content managers.
@@ -41,51 +43,51 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- sign in
-- data visualization
+- list workbooks
+- list users on a site
+- data source operations
+- dashboards
+- list data sources
 - business intelligence
-- tableau
+- list data sources on a site
+- create a new site
+- delete workbook
+- update a site
+- get details of a specific site
+- update site configuration
+- delete a workbook
 - analytics
+- create site
+- add user
+- get site details
+- sign out from tableau
+- list all sites on the server
+- tableau
+- administration
+- update site
+- single site operations
+- list sites
+- list users
+- sign out
+- get data source
+- site management
+- workbook operations
+- sign in to tableau server or cloud
+- delete data source
 - user operations
 - content management
-- list data sources on a site
-- add user
-- get data source
-- delete a data source
-- update a site
-- site management
-- sign out from tableau
-- list users
-- get details of a specific workbook
 - get site
-- delete a site
-- dashboards
-- administration
-- list workbooks
-- update site configuration
-- get details of a specific data source
-- create a new site
-- get site details
-- delete a workbook
-- sign out
-- delete site
-- get workbook
-- workbook operations
-- create site
-- data source operations
-- list all sites
-- delete workbook
-- list data sources
-- delete data source
 - add a user to a site
-- update site
+- get workbook
+- delete a data source
 - list workbooks on a site
-- list users on a site
-- list sites
-- sign in to tableau server or cloud
-- get details of a specific site
-- list all sites on the server
-- single site operations
+- delete a site
+- delete site
+- sign in
+- get details of a specific workbook
+- data visualization
+- get details of a specific data source
+- list all sites
 slug: content-management
 tags:
 - Tableau

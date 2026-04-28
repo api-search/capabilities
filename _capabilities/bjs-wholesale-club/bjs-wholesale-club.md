@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,9 +10,9 @@ provider_name: BJ's Wholesale Club
 provider_slug: bjs-wholesale-club
 search_terms:
 - ecommerce
+- wholesale
 - retail
 - membership
-- wholesale
 slug: bjs-wholesale-club
 tags: []
 tools: []

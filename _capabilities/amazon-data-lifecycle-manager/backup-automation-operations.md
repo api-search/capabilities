@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: Amazon Data Lifecycle Manager
 provider_slug: amazon-data-lifecycle-manager
 search_terms:
-- lifecycle management
 - ebs snapshots
 - aws
 - backup
+- automation
+- lifecycle management
 - storage
 - compliance
-- automation
 slug: backup-automation-operations
 tags: []
 tools: []

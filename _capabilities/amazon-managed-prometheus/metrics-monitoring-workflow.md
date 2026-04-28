@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - managed-prometheus
 description: Workflow capability for DevOps and SRE teams to manage Prometheus workspaces, configure alerting, and define recording rules for container metrics monitoring.
@@ -21,33 +23,33 @@ personas: []
 provider_name: Amazon Managed Service for Prometheus
 provider_slug: amazon-managed-prometheus
 search_terms:
-- configure alert manager for prometheus alerting notifications
-- alerting
-- list prometheus workspaces
 - create prometheus workspace
-- prometheus workspaces
-- prometheus
-- configure alert manager
-- describe prometheus workspace
-- aws
-- create prometheus recording and alerting rules namespace
-- observability
-- create recording rules
 - list all prometheus rule group namespaces
-- list workspaces
-- create a new prometheus workspace for storing container metrics
-- list rule groups
-- monitoring
-- containers
+- prometheus
 - SRE
 - list all prometheus workspaces
-- create alert manager
-- create a workspace
-- create workspace
-- get workspace details and prometheus remote write endpoint url
-- amazon
+- configure alert manager for prometheus alerting notifications
+- alerting
+- prometheus workspaces
+- configure alert manager
+- list rule groups
 - DevOps Engineer
+- observability
+- create prometheus recording and alerting rules namespace
+- list workspaces
+- create a new prometheus workspace for storing container metrics
+- create workspace
+- containers
+- list prometheus workspaces
+- monitoring
+- describe prometheus workspace
+- get workspace details and prometheus remote write endpoint url
+- create alert manager
+- create recording rules
+- aws
 - alert manager configuration
+- create a workspace
+- amazon
 slug: metrics-monitoring-workflow
 tags:
 - Amazon

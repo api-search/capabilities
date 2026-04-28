@@ -1,4 +1,6 @@
 ---
+categories:
+- travel-booking
 consumed_apis:
 - points-of-interest
 - hotel-ratings
@@ -22,38 +24,38 @@ personas: []
 provider_name: Amadeus Traveler Media
 provider_slug: amadeus-traveler-media
 search_terms:
-- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
-- travel
-- get hotel ratings
-- Destination Content Manager
-- points of interest
-- content
-- hotel ratings and traveler sentiment data.
-- destinations
+- discovery
 - points of interest discovery.
-- content manager building rich destination guides with attractions and ratings.
-- get details for a specific point of interest.
+- Travel App Developer
+- tourist attractions, pois, and destination information.
+- Destination Content Manager
+- hotel sentiment ratings.
 - retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
-- search pois
-- find attractions and points of interest near a location.
+- developer building destination discovery and travel planning applications.
+- content manager building rich destination guides with attractions and ratings.
+- hotels
+- search attractions
+- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
+- get poi
+- get attraction details
+- media
+- individual point of interest details.
+- get hotel sentiment ratings.
 - get hotel sentiment ratings
 - discover destinations with pois, hotel ratings, and recommendations.
-- search attractions
-- hotels
-- amadeus
-- developer building destination discovery and travel planning applications.
-- tourist attractions, pois, and destination information.
-- hotel sentiment ratings.
+- get details for a specific point of interest.
 - photos
-- individual point of interest details.
-- discovery
-- Travel App Developer
-- get hotel sentiment ratings.
-- media
+- travel
+- hotel ratings and traveler sentiment data.
+- amadeus
 - destination
-- get attraction details
+- destinations
+- find attractions and points of interest near a location.
+- content
+- get hotel ratings
+- search pois
 - retrieve detailed information about a specific tourist attraction or point of interest.
-- get poi
+- points of interest
 - tourism
 slug: destination-discovery
 tags:

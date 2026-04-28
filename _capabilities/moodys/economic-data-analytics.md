@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - data-buffet
 description: Unified economic data analytics capability combining time series retrieval, basket management, order processing, and data search. Used by economists, risk analysts, and data scientists.
@@ -13,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- search for available series
-- update a basket
-- create a new data basket
-- analytics
-- delete a basket
-- create order
-- get order
-- list orders
+- retrieve a single time series by mnemonic
+- search series
+- download completed order output
+- screening
+- credit risk
+- moody's
+- get multi series
+- kyc
+- risk
+- compliance
+- entity verification
 - list all data baskets
-- get series
-- download order
-- climate risk
+- search for available series
+- get order status and details
+- create basket
+- analytics
+- list baskets
+- time series data
+- delete basket
+- list supported output file types
+- update basket
+- update a basket
+- list vintages for a series
+- list orders
+- financial analytics
+- list frequencies
+- list available data frequencies
+- get order
+- economic data
+- check data buffet api health
 - retrieve a time series
 - get basket details
-- delete basket
-- financial analytics
-- list baskets
-- update basket
-- screening
-- time series data
-- list available data frequencies
-- forecasting
-- list file types
-- check data buffet api health
-- list supported output file types
+- download order
 - check health
-- get multi series
-- insurance
-- create basket
-- risk
-- list frequencies
-- retrieve multiple time series
-- create a new data order
-- list vintages
-- credit risk
-- retrieve a single time series by mnemonic
-- kyc
-- entity verification
+- delete a basket
 - list all orders
-- get order status and details
-- list vintages for a series
-- search series
-- compliance
-- download completed order output
-- economic data
+- list vintages
+- get series
+- create order
+- retrieve multiple time series
+- climate risk
+- create a new data basket
+- create a new data order
+- insurance
+- list file types
+- forecasting
 - get basket
-- moody's
 slug: economic-data-analytics
 tags:
 - Moody's

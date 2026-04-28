@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis: []
 description: Manage FreeRTOS software configurations and OTA firmware updates for microcontroller IoT devices.
 layout: capability
@@ -8,13 +10,13 @@ personas: []
 provider_name: Amazon FreeRTOS
 provider_slug: amazon-freertos
 search_terms:
-- embedded systems
-- firmware
-- rtos
 - aws
 - microcontrollers
-- ota updates
 - iot
+- embedded systems
+- rtos
+- ota updates
+- firmware
 slug: amazon-freertos-device-management
 tags:
 - IoT

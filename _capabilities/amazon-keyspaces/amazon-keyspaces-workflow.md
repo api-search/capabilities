@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - keyspaces
 description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.
@@ -9,31 +10,31 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
-- wide column
-- returns information about the table.
-- returns the name and the amazon resource name (arn) of a keyspace.
-- tables create table
-- database
 - keyspaces get keyspace
-- returns a list of keyspaces.
-- amazon keyspaces
-- keyspaces create keyspace
-- returns a list of tables for a specified keyspace.
 - keyspaces list keyspaces
-- aws
-- managed database
-- Administrator
-- tables list tables
-- integrates api into applications
-- manages resources and configurations
-- creates a new keyspace.
-- nosql
-- cassandra
-- the createtable operation adds a new table to the specified keyspace.
-- workflow
-- tables get table
+- returns a list of tables for a specified keyspace.
 - unified workflow for amazon keyspaces resource management
+- tables get table
+- returns information about the table.
 - Developer
+- Administrator
+- database
+- managed database
+- cassandra
+- nosql
+- amazon keyspaces
+- tables list tables
+- returns the name and the amazon resource name (arn) of a keyspace.
+- returns a list of keyspaces.
+- the createtable operation adds a new table to the specified keyspace.
+- integrates api into applications
+- creates a new keyspace.
+- aws
+- workflow
+- wide column
+- tables create table
+- manages resources and configurations
+- keyspaces create keyspace
 slug: amazon-keyspaces-workflow
 tags:
 - Amazon Keyspaces

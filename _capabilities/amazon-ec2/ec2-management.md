@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ec2
 description: Unified capability for managing EC2 instances, AMIs, security groups, and networking for cloud infrastructure engineers.
@@ -49,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- amazon ec2 deregister an ami
-- stop instances
-- describe images
-- amazon ec2 start stopped instances
-- amazon ec2 reboot instances
-- rebootInstances
-- amazon ec2 describe instance status
-- deregisterImage
-- cloud compute management business domain for amazon ec2.
-- start instances
-- iaas
-- terminateInstances
 - amazon ec2 stop running instances
-- describeInstances
-- run instances
+- describe instances
+- describeImages
 - cloud computing
 - describe instance status
-- describeImages
-- aws
-- amazon ec2 describe amis
-- create image
-- amazon ec2
-- reboot instances
 - runInstances
-- amazon ec2 describe ec2 instances
-- engineers managing amazon ec2 resources on aws.
-- stopInstances
-- amazon ec2 launch ec2 instances
-- amazon ec2 create an ami from an instance
-- deregister image
-- infrastructure
-- compute
-- workflow capability for cloud compute management.
-- startInstances
-- describeInstanceStatus
 - createImage
-- terminate instances
+- startInstances
+- workflow capability for cloud compute management.
+- iaas
+- amazon ec2
+- stop instances
+- terminateInstances
+- run instances
+- amazon ec2 start stopped instances
+- deregister image
+- rebootInstances
+- cloud compute management business domain for amazon ec2.
+- reboot instances
+- amazon ec2 create an ami from an instance
+- describeInstances
+- stopInstances
+- start instances
 - amazon ec2 terminate instances
-- describe instances
+- amazon ec2 describe instance status
+- deregisterImage
+- engineers managing amazon ec2 resources on aws.
+- infrastructure
+- amazon ec2 launch ec2 instances
+- describeInstanceStatus
+- aws
+- amazon ec2 describe ec2 instances
+- amazon ec2 deregister an ami
+- create image
+- describe images
+- amazon ec2 reboot instances
 - virtual machines
+- terminate instances
+- amazon ec2 describe amis
+- compute
 slug: ec2-management
 tags:
 - Amazon EC2

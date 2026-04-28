@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis:
 - appomni
 description: Workflow capability for continuous SaaS security monitoring using AppOmni. Supports security teams investigating threats, managing policies, and generating compliance reports for enterprise SaaS environments.
@@ -9,26 +11,26 @@ personas: []
 provider_name: AppOmni
 provider_slug: appomni
 search_terms:
-- casb
-- lists and filters security events across enterprise saas applications
-- get event details
-- zero trust
-- generates and reviews compliance reports for regulatory frameworks
-- detecting and investigating security threats in saas applications
-- managing security policies for saas application governance
-- generating and managing compliance reports for regulatory needs
 - saas security
-- investigates security events and threats in saas applications
-- gets full details of a specific security event for investigation
-- investigate security events
-- appomni
-- review security policies
-- threat detection
-- reviews security policies configured across monitored saas applications
 - compliance
-- retrieves compliance reports for audit and governance purposes
-- get compliance reports
+- get event details
+- gets full details of a specific security event for investigation
+- review security policies
+- casb
+- generates and reviews compliance reports for regulatory frameworks
+- generating and managing compliance reports for regulatory needs
+- reviews security policies configured across monitored saas applications
+- detecting and investigating security threats in saas applications
 - continuous monitoring and investigation of saas security threats
+- managing security policies for saas application governance
+- investigates security events and threats in saas applications
+- zero trust
+- appomni
+- get compliance reports
+- threat detection
+- lists and filters security events across enterprise saas applications
+- retrieves compliance reports for audit and governance purposes
+- investigate security events
 slug: saas-security-monitoring
 tags:
 - AppOmni

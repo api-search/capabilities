@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-twinmaker
 description: Unified capability for Solutions Architect, Industrial Engineer to manage create digital twins of physical systems and environments operations.
@@ -13,31 +15,31 @@ personas: []
 provider_name: Amazon IoT TwinMaker
 provider_slug: amazon-iot-twinmaker
 search_terms:
-- amazon iot twinmaker list scenes
-- amazon iot twinmaker resources
-- list components
-- amazon iot twinmaker create workspace
-- amazon iot twinmaker create entity
-- amazon iot twinmaker update entity
-- create digital twins of physical systems and environments.
-- aws
-- digital twin
-- amazon iot twinmaker list entities
-- 3d visualization
-- list entities
-- list workspaces
-- amazon iot twinmaker list components
-- create entity
-- industrial iot
-- Solutions Architect
-- amazon iot twinmaker create scene
-- iot
-- manages amazon iot twinmaker resources and operations
-- create scene
 - amazon iot twinmaker list workspaces
-- create workspace
+- industrial iot
+- create digital twins of physical systems and environments.
+- amazon iot twinmaker list scenes
+- amazon iot twinmaker list entities
+- iot
+- amazon iot twinmaker create entity
 - update entity
 - Industrial Engineer
+- manages amazon iot twinmaker resources and operations
+- 3d visualization
+- amazon iot twinmaker create scene
+- digital twin
+- create scene
+- list workspaces
+- amazon iot twinmaker list components
+- list entities
+- create workspace
+- amazon iot twinmaker resources
+- amazon iot twinmaker create workspace
+- create entity
+- amazon iot twinmaker update entity
+- aws
+- list components
+- Solutions Architect
 - list scenes
 slug: digital-twin-management
 tags:

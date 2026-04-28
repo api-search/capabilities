@@ -1,4 +1,6 @@
 ---
+categories:
+- serverless
 consumed_apis:
 - openwhisk
 description: Unified workflow capability for deploying and managing serverless functions, event triggers, rules, and activations in Apache OpenWhisk.
@@ -29,50 +31,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- event driven
-- list all serverless functions/actions
-- list activation history
-- invoke a serverless action/function
-- create action
+- list actions
+- manages namespaces, limits, and platform configuration
+- faas
+- list all trigger-to-action rules
+- get activation
+- serverless function actions
+- Platform Administrator
 - functions as a service
 - serverless
-- action packages
-- delete action
-- list all trigger-to-action rules
-- list all actions
-- apache openwhisk
-- serverless function actions
-- get activation
-- event-driven
-- invoke an action
-- builds event-driven applications using serverless functions
-- event-driven architecture
-- apache
-- list activations
-- Platform Administrator
-- faas
-- delete a serverless action
-- get details of a specific activation
-- activation history
-- functions
+- create action
 - event triggers
-- list actions
-- fire trigger
+- list activation history
 - serverless computing
-- list triggers
-- list packages
-- list all action packages
-- list rules
-- manages namespaces, limits, and platform configuration
-- fire an event trigger
-- DevOps Engineer
-- list all event triggers
-- Backend Developer
-- invoke action
-- create a new serverless action
-- open source
 - manages serverless deployments and ci/cd pipelines
+- fire trigger
+- event driven
+- apache
+- apache openwhisk
+- action packages
 - cloud native
+- event-driven architecture
+- list all event triggers
+- DevOps Engineer
+- get details of a specific activation
+- open source
+- builds event-driven applications using serverless functions
+- list triggers
+- invoke an action
+- create a new serverless action
+- list all serverless functions/actions
+- fire an event trigger
+- delete action
+- Backend Developer
+- list packages
+- list rules
+- event-driven
+- list activations
+- functions
+- delete a serverless action
+- list all actions
+- activation history
+- list all action packages
+- invoke a serverless action/function
+- invoke action
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

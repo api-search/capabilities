@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mediatailor
 description: Workflow capability for Amazon MediaTailor media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MediaTailor
 provider_slug: amazon-mediatailor
 search_terms:
-- create live source
-- developer building media processing applications
-- list jobs
-- configure logs for channel
-- describe channel
-- manage media processing jobs
-- update channel
-- engineer managing broadcast media workflows
-- aws
-- amazon mediatailor media processing workflow
-- configurelogsforplaybackconfiguration
-- describelivesource
-- describe live source
-- createlivesource
-- createchannel
-- configure logs for playback configuration
-- Broadcast Engineer
-- configurelogsforchannel
-- workflow
-- deletechannel
-- Media Developer
-- aws media processing and delivery
-- media
-- create channel
 - broadcasting
-- updatechannel
-- media processing
+- configurelogsforplaybackconfiguration
+- Broadcast Engineer
 - describechannel
+- manage media processing jobs
 - delete channel
+- updatechannel
+- aws media processing and delivery
+- describe live source
+- describe channel
+- configurelogsforchannel
+- media
+- amazon mediatailor media processing workflow
+- configure logs for playback configuration
+- createchannel
+- Media Developer
+- engineer managing broadcast media workflows
+- list jobs
+- deletechannel
+- configure logs for channel
+- media processing
+- aws
+- workflow
+- createlivesource
+- developer building media processing applications
+- describelivesource
+- create channel
+- create live source
+- update channel
 slug: amazon-mediatailor-media-workflow
 tags:
 - AWS

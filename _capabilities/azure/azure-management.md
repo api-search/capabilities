@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure
 description: Workflow capability for managing Microsoft Azure resources. Used by cloud engineers and DevOps teams.
@@ -13,28 +14,28 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: azure
 search_terms:
-- list
-- machine learning
-- list provider resources
 - databases
-- list subscription resources
-- cloud
-- cloud computing
-- platform as a service
-- list resources
-- list all resources
-- management
-- list providers
-- resource management
 - list resource groups
-- infrastructure
+- cloud computing
+- management
 - storage
 - list resourcegroup resources
-- azure
 - azure resource management
-- networking
+- list providers
+- list
+- list all resources
+- list provider resources
 - list resource resources
+- platform as a service
 - list subscriptions
+- networking
+- list resources
+- azure
+- infrastructure
+- machine learning
+- list subscription resources
+- resource management
+- cloud
 slug: azure-management
 tags:
 - Azure

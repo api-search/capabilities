@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - elastic_beanstalk
 description: Unified capability for managing Amazon Elastic Beanstalk resources. Combines Amazon Elastic Beanstalk APIs for Application Developer workflows in Application Deployment.
@@ -29,28 +30,28 @@ personas: []
 provider_name: Amazon Elastic Beanstalk
 provider_slug: amazon-elastic-beanstalk
 search_terms:
-- developers building applications using amazon elastic beanstalk
-- describeApplications
-- amazon elastic beanstalk create application
-- amazon elastic beanstalk describe environments
-- unified capability for managing amazon elastic beanstalk resources. combines amazon elastic beanstalk apis for application developer workflows in application deployment.
-- aws
-- auto scaling
-- describeEnvironments
-- paas
-- operations teams managing amazon elastic beanstalk infrastructure
-- createEnvironment
-- amazon elastic beanstalk update environment
-- amazon elastic beanstalk create environment
-- amazon web services
-- platform-as-a-service for deploying and managing web applications
-- web applications
-- elastic beanstalk
-- createApplication
 - amazon elastic beanstalk describe applications
-- platform as a service
+- platform-as-a-service for deploying and managing web applications
+- unified capability for managing amazon elastic beanstalk resources. combines amazon elastic beanstalk apis for application developer workflows in application deployment.
+- createApplication
+- developers building applications using amazon elastic beanstalk
+- web applications
+- amazon web services
+- amazon elastic beanstalk update environment
 - updateEnvironment
 - deployment
+- elastic beanstalk
+- auto scaling
+- paas
+- operations teams managing amazon elastic beanstalk infrastructure
+- platform as a service
+- amazon elastic beanstalk create application
+- aws
+- amazon elastic beanstalk describe environments
+- describeApplications
+- amazon elastic beanstalk create environment
+- describeEnvironments
+- createEnvironment
 slug: amazon-elastic-beanstalk-capability
 tags:
 - Amazon Web Services

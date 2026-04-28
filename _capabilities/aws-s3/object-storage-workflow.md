@@ -1,4 +1,6 @@
 ---
+categories:
+- object-storage
 consumed_apis:
 - s3
 description: Workflow capability for managing Amazon S3 buckets and objects for scalable object storage.
@@ -9,27 +11,27 @@ personas: []
 provider_name: Amazon S3 API
 provider_slug: aws-s3
 search_terms:
-- delete an s3 bucket
-- create a new s3 bucket
-- list_objects
-- aws
-- list objects in an s3 bucket
-- data management
-- cloud storage
-- list_buckets
-- download an object from s3
-- delete_object
-- upload_object
-- copy an object within or between s3 buckets
-- delete_bucket
-- storage
 - object storage
-- create_bucket
-- upload an object to s3
-- delete an object from s3
-- list all s3 buckets in the account
+- storage
+- data management
+- create a new s3 bucket
 - copy_object
 - get_object
+- copy an object within or between s3 buckets
+- list all s3 buckets in the account
+- delete_bucket
+- create_bucket
+- delete an s3 bucket
+- download an object from s3
+- delete_object
+- list_buckets
+- aws
+- upload an object to s3
+- list objects in an s3 bucket
+- list_objects
+- upload_object
+- delete an object from s3
+- cloud storage
 slug: object-storage-workflow
 tags:
 - Cloud Storage

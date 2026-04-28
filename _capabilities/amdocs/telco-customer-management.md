@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - amdocs-connectx
 description: Unified workflow for telecom operators managing customer accounts, subscriptions, billing, and service catalog via Amdocs connectX BSS API. Supports BSS operators, customer care agents, and billing teams.
@@ -33,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- telecom customer account management
-- bss
-- customer management
-- oss
-- 5g
-- add a service subscription
-- browse the service catalog and available plans
-- Customer Care Agent
-- unified bss workflow for customer onboarding, billing, and service management
-- telecom
-- customer billing invoices
-- list service subscriptions for a customer
-- customer subscription management
-- mvno
-- onboard a new customer
-- list all customer accounts
-- product and service catalog
-- list products
-- manages telco bss operations and system configuration
-- saas
-- manages invoicing, payments, and revenue assurance
-- Billing Team
-- browse available products and plans
-- add a service subscription to a customer account
-- amdocs
-- BSS Operator
 - list subscriptions for a customer
-- onboard a new telecom customer
-- list invoices
-- create subscription
-- retrieve billing invoices for a customer
-- handles customer inquiries and account management
+- Customer Care Agent
 - create customer
-- billing
-- list telecom customer accounts
-- list invoices for a customer
 - list customers
+- add a service subscription to a customer account
+- customer management
+- telecom customer account management
+- list telecom customer accounts
+- list products
+- onboard a new telecom customer
+- amdocs
+- unified bss workflow for customer onboarding, billing, and service management
+- oss
+- manages telco bss operations and system configuration
+- onboard a new customer
+- browse available products and plans
+- telecom
+- 5g
+- Billing Team
+- customer billing invoices
+- add a service subscription
+- billing
+- retrieve billing invoices for a customer
+- saas
+- list invoices for a customer
+- bss
 - list subscriptions
+- handles customer inquiries and account management
+- list service subscriptions for a customer
+- browse the service catalog and available plans
+- product and service catalog
+- manages invoicing, payments, and revenue assurance
+- list all customer accounts
+- customer subscription management
+- list invoices
+- BSS Operator
+- create subscription
+- mvno
 slug: telco-customer-management
 tags:
 - Amdocs

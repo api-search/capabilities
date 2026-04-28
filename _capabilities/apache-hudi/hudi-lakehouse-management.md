@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,12 +10,12 @@ provider_name: Apache Hudi
 provider_slug: apache-hudi
 search_terms:
 - lakehouse
-- incremental processing
 - apache
-- big data
-- data lake
-- acid
 - open source
+- incremental processing
+- acid
+- data lake
+- big data
 slug: hudi-lakehouse-management
 tags: []
 tools: []

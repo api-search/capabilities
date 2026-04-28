@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Simple Workflow Service
 provider_slug: amazon-swf
 search_terms:
-- task coordination
-- aws
-- workflow
 - automation
+- workflow
+- aws
+- task coordination
 slug: amazon-swf-workflow-management
 tags: []
 tools: []

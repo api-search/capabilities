@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - payment_cryptography
 description: Workflow capability composing Amazon Payment Cryptography APIs for developers and operators.
@@ -13,20 +14,20 @@ personas: []
 provider_name: Amazon Payment Cryptography
 provider_slug: amazon-payment-cryptography
 search_terms:
-- core api workflow
 - list and manage openapi.yml resources
-- payment processing
-- pci
-- list openapi.yml
-- aws
-- list resources
-- financial services
-- Developer
-- cryptography
-- amazon payment cryptography
-- list amazon payment cryptography resources
 - developer using amazon payment cryptography apis
 - primary amazon payment cryptography resources
+- financial services
+- amazon payment cryptography
+- aws
+- list openapi.yml
+- payment processing
+- Developer
+- pci
+- cryptography
+- list amazon payment cryptography resources
+- core api workflow
+- list resources
 slug: amazon-payment-cryptography-workflow
 tags:
 - Amazon Payment Cryptography

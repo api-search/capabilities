@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - medialive
 description: Workflow capability for Amazon MediaLive media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MediaLive
 provider_slug: amazon-medialive
 search_terms:
-- batchstart
-- batch stop
-- delete schedule
-- developer building media processing applications
-- describe schedule
-- list jobs
-- batchupdateschedule
-- manage media processing jobs
-- amazon medialive media processing workflow
-- engineer managing broadcast media workflows
-- aws
-- batchstop
-- describeschedule
-- accept input device transfer
-- cancel input device transfer
-- batch update schedule
-- Broadcast Engineer
-- deleteschedule
-- workflow
-- cancelinputdevicetransfer
-- batch start
-- Media Developer
-- batchdelete
-- aws media processing and delivery
-- acceptinputdevicetransfer
-- media
 - broadcasting
-- media processing
+- delete schedule
+- Broadcast Engineer
+- amazon medialive media processing workflow
+- acceptinputdevicetransfer
+- batchstop
+- manage media processing jobs
+- describeschedule
+- cancelinputdevicetransfer
+- aws media processing and delivery
+- media
+- batch stop
+- batchstart
+- Media Developer
+- batchupdateschedule
+- batchdelete
+- list jobs
+- deleteschedule
 - batch delete
+- batch start
+- cancel input device transfer
+- aws
+- workflow
+- developer building media processing applications
+- media processing
+- batch update schedule
+- engineer managing broadcast media workflows
+- accept input device transfer
+- describe schedule
 slug: amazon-medialive-media-workflow
 tags:
 - AWS

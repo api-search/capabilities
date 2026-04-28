@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - graph-identity
 description: Unified identity and access management workflow combining user lifecycle, group management, application registration, and service principal operations. Used by IT administrators and identity engineers to manage enterprise identity infrastructure.
@@ -57,72 +59,72 @@ personas: []
 provider_name: Azure Active Directory
 provider_slug: azure-active-directory
 search_terms:
-- single sign-on
-- list group members
-- delete group
-- create a new azure ad user account.
-- user lifecycle management.
-- list groups
-- get azure ad user details by id or upn.
-- authentication
-- group management.
-- zero trust
-- add a member to an azure ad group.
-- create user
-- single group operations.
-- list azure ad groups with optional filtering.
-- get an application registration by id.
-- update user properties.
-- create a new user.
+- list directory users.
 - oauth
-- create a new azure ad group.
-- microsoft entra
-- list users
-- identity
-- delete user
-- delete a user.
-- get group details.
-- group membership.
-- list app registrations.
-- list groups and roles a user belongs to.
 - service principal management.
-- list group members.
+- get user details.
+- list azure ad users with optional filtering.
+- list user memberships
+- list azure ad groups with optional filtering.
+- register a new application in azure ad.
 - get service principal
 - access management
-- list service principals.
-- authorization
-- list azure ad application registrations.
-- get user details.
-- create a group.
-- create application
-- list service principals
-- get application
-- update azure ad user properties.
-- list directory users.
-- list azure ad users with optional filtering.
-- microsoft
-- scim
-- add a group member.
-- get group
+- group membership.
 - create group
-- list azure ad service principals.
-- delete an azure ad user account.
-- list groups.
-- azure active directory
+- create a new user.
 - saml
-- list applications
-- delete an azure ad group.
-- app registration management.
-- list user memberships
-- add group member
-- register a new application in azure ad.
-- get user
-- update user
+- get group details.
+- create a new azure ad group.
+- get an application registration by id.
 - openid connect
+- create a group.
+- list azure ad service principals.
+- microsoft entra
 - list members of an azure ad group.
-- get azure ad group details.
-- single user operations.
+- add a member to an azure ad group.
+- list groups.
+- authentication
+- get application
+- single sign-on
+- scim
+- delete an azure ad user account.
+- update user
+- update azure ad user properties.
+- list app registrations.
+- single group operations.
+- add a group member.
+- user lifecycle management.
+- update user properties.
+- identity
 - get a service principal by id.
+- list users
+- get azure ad group details.
+- microsoft
+- get user
+- list groups and roles a user belongs to.
+- group management.
+- list group members
+- get azure ad user details by id or upn.
+- list applications
+- delete group
+- add group member
+- list service principals
+- create a new azure ad user account.
+- delete a user.
+- create application
+- list azure ad application registrations.
+- zero trust
+- list group members.
+- list groups
+- azure active directory
+- authorization
+- create user
+- app registration management.
+- list service principals.
+- get group
+- single user operations.
+- delete an azure ad group.
+- delete user
 slug: identity-and-access
 tags:
 - Microsoft Entra

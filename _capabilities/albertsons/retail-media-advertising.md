@@ -1,4 +1,6 @@
 ---
+categories:
+- customer-engagement
 consumed_apis:
 - retail-media-api
 description: Unified retail media advertising workflow combining campaign management, audience targeting, performance analytics, and custom reporting for advertisers on the Albertsons Media Collective platform. Designed for brand managers and media planners managing grocery retail advertising campaigns.
@@ -33,48 +35,48 @@ personas: []
 provider_name: albertsons
 provider_slug: albertsons
 search_terms:
-- pharmacy
-- list audience targeting segments available on albertsons media collective based on shopper purchase behavior.
-- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
-- analytics
-- list performance metrics
-- generate a custom performance report.
-- campaign creation, management, and performance optimization for brands.
-- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
-- retail media
-- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
-- audience targeting segments.
-- food
-- list campaigns
-- campaigns
-- advertising
-- Brand Manager
 - albertsons
-- list all advertising campaigns with status and budget details.
-- list audience segments for campaign targeting.
-- retail
+- create campaign
+- list audience targeting segments available on albertsons media collective based on shopper purchase behavior.
+- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
+- pharmacy
+- list performance metrics
+- custom performance report generation.
+- retrieve near-real-time performance metrics.
+- audience targeting
+- campaigns
 - performance analytics
+- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
+- campaign detail retrieval.
+- digital advertising within retail environments, leveraging shopper purchase data for targeting.
+- generate report
+- analytics
+- get campaign
+- Brand Manager
+- retail
+- Media Planner
+- retail media
+- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
+- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
+- advertising
 - get detailed information about a specific advertising campaign by its identifier.
 - advertising campaign management.
-- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
-- digital advertising within retail environments, leveraging shopper purchase data for targeting.
-- custom performance report generation.
-- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
-- campaign performance metrics.
-- grocery
-- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
-- get campaign
-- create campaign
-- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
-- generate report
-- get campaign details by identifier.
-- list audiences
+- list campaigns
 - create a new advertising campaign.
-- Media Planner
-- campaign detail retrieval.
-- audience targeting
 - consumer goods
-- retrieve near-real-time performance metrics.
+- list all advertising campaigns with status and budget details.
+- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
+- campaign creation, management, and performance optimization for brands.
+- get campaign details by identifier.
+- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
+- grocery
+- audience targeting segments.
+- food
+- list audience segments for campaign targeting.
+- generate a custom performance report.
+- list audiences
+- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
+- campaign performance metrics.
 slug: retail-media-advertising
 tags:
 - Albertsons

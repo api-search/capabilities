@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - gitlab-oauth2
 description: Unified capability for GitLab OAuth 2.0 authentication flows and user identity. Enables developers and platform administrators to manage OAuth application authorization, token lifecycle, and authenticated user profile retrieval.
@@ -33,38 +35,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- token introspection and validation.
-- revoke an oauth access or refresh token.
-- initiate the oauth 2.0 authorization code flow.
-- get user info
-- authentication
-- oauth 2.0 authorization code flow initiation.
-- initiate the device authorization grant flow.
-- source control
-- authorize device
-- exchange an authorization code, device code, or refresh token for an access token.
-- authorize oauth
-- device authorization grant flow for input-constrained devices.
-- get profile information about the currently authenticated user.
-- tokens
-- gitlab
+- oauth
 - authenticated user profile information.
-- identity
+- tokens
+- get information about the current access token.
+- exchange token
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get profile information about the authenticated user.
+- authentication
 - platform
+- token introspection and validation.
+- device authorization grant flow for input-constrained devices.
+- initiate the device authorization grant flow.
 - revoke token
+- get profile information about the currently authenticated user.
 - revoke an existing oauth access or refresh token.
-- get information about the current oauth access token including scopes and expiration.
+- initiate the oauth 2.0 authorization code flow.
+- get token info
+- gitlab
+- identity
+- authorize oauth
 - initiate the device authorization grant flow for input-constrained devices.
 - code
-- exchange token
-- get information about the current access token.
-- get profile information about the authenticated user.
-- software development
-- oauth token exchange and creation.
+- exchange an authorization code, device code, or refresh token for an access token.
 - token revocation.
-- get token info
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- oauth
+- get information about the current oauth access token including scopes and expiration.
+- oauth 2.0 authorization code flow initiation.
+- get user info
+- oauth token exchange and creation.
+- authorize device
+- revoke an oauth access or refresh token.
+- source control
+- software development
 slug: authentication-and-identity
 tags:
 - Gitlab

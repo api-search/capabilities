@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - mq-rest
 description: Workflow for managing IBM MQ messaging infrastructure including queue management, message operations, channels, and topics for integration architects and middleware administrators.
@@ -29,38 +31,38 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- queue management
-- middleware
-- queue manager operations
-- delete a queue
-- get queue manager
-- get queue manager details
-- list channels on a queue manager
-- channel management
 - integration
-- send message
-- browse messages
+- channel management
+- queue manager operations
 - message operations
+- get queue manager
 - list channels
-- list queues on a queue manager
-- list queue managers
-- delete queue
-- messaging
 - get queue details
-- send a message to a queue
-- browse messages on a queue
-- application server
-- ibm mq
-- list queues
-- enterprise java
-- browse messages on a queue non-destructively
-- create queue
-- list available queue managers
-- microservices
 - get queue
-- j2ee
-- create a new queue
+- create queue
+- delete queue
+- send message
+- list channels on a queue manager
 - cloud native
+- list queues on a queue manager
+- queue management
+- delete a queue
+- browse messages on a queue non-destructively
+- enterprise java
+- list queues
+- get queue manager details
+- middleware
+- application server
+- browse messages on a queue
+- j2ee
+- messaging
+- ibm mq
+- list queue managers
+- microservices
+- create a new queue
+- send a message to a queue
+- list available queue managers
+- browse messages
 slug: messaging-and-integration
 tags:
 - IBM MQ

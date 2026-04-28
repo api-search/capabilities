@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - amazon-proton
 description: Workflow capability for platform engineering teams using Amazon Proton to publish standardized templates and automate infrastructure provisioning for development teams. Covers template management, environment deployment, and service lifecycle management.
@@ -41,46 +43,46 @@ personas: []
 provider_name: Amazon Proton
 provider_slug: amazon-proton
 search_terms:
-- create service
-- list service templates
-- create a service template
-- create a service from a template
-- list environment templates for standardized infrastructure
-- serverless
-- create a new standardized environment template for developers
-- list all deployed services
-- platform engineering template and deployment workflow
-- create an environment template
-- create an environment from a template
-- create service template
-- infrastructure as code
-- aws
-- deploys services using self-service templates provided by platform engineers
-- create environment
-- list environment templates
-- list service templates available for developer self-service
-- service template catalog for developers
-- templates
-- environment template management for platform engineers
-- create environment template
-- self-service
-- deploy a new environment from a standardized template
-- list environments
-- list services
-- devops
-- Platform Engineer
-- create a new service template for standardized application deployments
-- amazon
 - list deployed services
-- platform engineering
-- deployed environment management
-- deploy a new application service from a service template
-- list all deployed environments
+- create an environment template
+- list service templates
+- deploys services using self-service templates provided by platform engineers
+- create a new service template for standardized application deployments
 - deployed service management
-- Application Developer
-- list deployed environments
+- list service templates available for developer self-service
+- deploy a new application service from a service template
+- list services
+- deployed environment management
+- platform engineering
+- create environment template
+- platform engineering template and deployment workflow
+- serverless
+- list all deployed services
+- environment template management for platform engineers
+- self-service
+- service template catalog for developers
 - ci/cd
 - creates and manages environment and service templates for standardized deployments
+- templates
+- create a new standardized environment template for developers
+- list environments
+- infrastructure as code
+- deploy a new environment from a standardized template
+- create an environment from a template
+- create service
+- devops
+- Application Developer
+- list environment templates
+- create a service from a template
+- create environment
+- list deployed environments
+- create a service template
+- list environment templates for standardized infrastructure
+- aws
+- list all deployed environments
+- create service template
+- amazon
+- Platform Engineer
 slug: platform-engineering
 tags:
 - Amazon

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudwan
 description: Workflow for wan management using Amazon Cloud WAN for Network Engineer personas.
@@ -9,14 +10,14 @@ personas: []
 provider_name: Amazon Cloud WAN
 provider_slug: amazon-cloud-wan
 search_terms:
+- wide area network
+- Network Engineer
 - sd-wan
-- amazon cloud wan
 - aws
 - cloud wan
-- wide area network
-- amazon web services
 - networking
-- Network Engineer
+- amazon cloud wan
+- amazon web services
 slug: wan-management
 tags:
 - Amazon Web Services

@@ -1,4 +1,6 @@
 ---
+categories:
+- data-engineering
 consumed_apis:
 - factset-ofdb
 - factset-sdf
@@ -25,36 +27,36 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get exchange datafeed snapshot.
-- ofdb database management.
+- investment analytics
 - get xdf snapshot
-- get prog env
-- portfolio analytics
+- list datafeeds
 - get standard datafeed.
+- standard datafeed.
+- research
+- get content feeds
+- factset
+- data management
+- market data
+- list databases.
+- financial
+- list ofdb
+- get standard datafeed
+- get exchange datafeed snapshot.
+- datafeed
+- get content feeds dictionary.
+- get programmatic environment.
+- get direct streaming data.
 - get xdf model
 - financial data
-- investment analytics
-- data management
-- factset
-- get content feeds dictionary.
-- research
-- get standard datafeed
-- list datafeeds
-- list datafeeds.
-- financial
-- datafeed
-- get exchange datafeed model.
+- ofdb database management.
+- portfolio analytics
 - etl
-- get direct streaming data.
-- get programmatic environment.
-- get content feeds
-- get streaming
-- standard datafeed.
-- market data
 - list ofdb databases.
+- list datafeeds.
+- get prog env
 - list databases
-- list databases.
-- list ofdb
+- get streaming
+- get exchange datafeed model.
 slug: data-management
 tags:
 - FactSet

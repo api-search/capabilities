@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - marketing-reporting-roi
 - learning-activity-reports
@@ -18,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- message archiving and regulatory communications governance.
-- analytics
-- social media
-- b2b advertising, audience targeting, and campaign analytics.
-- learning
-- professional networking
-- manages b2b ad campaigns and audience targeting on linkedin.
-- authentication, sharing, and verification for consumer apps.
-- integrates linkedin authentication and sharing into applications.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
+- archives communications for regulatory compliance.
 - retrieve ad analytics by various pivots.
-- business
+- get learning activity reports
 - careers
-- job posting, recruiting, and applicant tracking.
-- posts jobs and manages candidates through ats integrations.
 - reporting
 - uses sales navigator for lead generation and crm sync.
-- data portability and advertiser transparency for dma.
-- marketing
-- archives communications for regulatory compliance.
-- tracks employee learning activity and completions.
-- get learning activity reports
-- sales intelligence, lead management, and crm integration.
-- get ad analytics
-- linkedin
 - retrieve learning activity reports.
+- tracks employee learning activity and completions.
+- professional networking
+- analytics
+- message archiving and regulatory communications governance.
+- social media
+- authentication, sharing, and verification for consumer apps.
+- b2b advertising, audience targeting, and campaign analytics.
+- linkedin
 - retrieve ad analytics by various pivots and dimensions.
+- learning
 - employee development tracking and content access.
+- marketing
+- sales intelligence, lead management, and crm integration.
 - recruiting
+- business
+- job posting, recruiting, and applicant tracking.
+- get ad analytics
+- integrates linkedin authentication and sharing into applications.
+- posts jobs and manages candidates through ats integrations.
+- data portability and advertiser transparency for dma.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- retrieve learning activity reports aggregated by account, group, individual, or content.
 slug: reporting-and-analytics
 tags:
 - LinkedIn

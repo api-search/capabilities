@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudshell
 description: Workflow for cloud shell environment management using Amazon CloudShell for Cloud Administrator personas.
@@ -9,14 +10,14 @@ personas: []
 provider_name: Amazon CloudShell
 provider_slug: amazon-cloudshell
 search_terms:
-- Cloud Administrator
-- amazon cloudshell
-- aws
-- cloudshell
-- browser-based
-- amazon web services
-- cli
 - terminal
+- cli
+- Cloud Administrator
+- aws
+- amazon web services
+- browser-based
+- cloudshell
+- amazon cloudshell
 slug: shell-environment
 tags:
 - Amazon Web Services

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - card-issuance
 - traditional-fulfillment
@@ -33,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- request updated card credentials for card-on-file
 - automatic billing updates
-- manage a payment account
-- create a physical card fulfillment order
-- retrieve account catalog data
-- submit pan-related event for account level management
-- financial services
-- manage a payment account lifecycle
-- bin lookup
-- credit cards
 - submit pan event
 - issue a new card
-- request updated card credentials
-- list available mastercard bins
-- look up bin information for a card
-- card management
-- query payment account reference to link tokens to accounts
-- validate account
-- get billing updates
-- create fulfillment order
-- issue a new mastercard card
-- mastercard
-- manage account
-- issuers
-- look up bin information
-- payment account management
+- credit cards
 - issue card
-- validate account details
+- look up bin information for a card
+- list available mastercard bins
+- issuers
+- create fulfillment order
+- manage a payment account
 - digital identity
-- payments
-- open banking
-- get account catalog
-- get card details
-- get payment account reference
-- card issuance and management
+- manage account
+- retrieve account catalog data
 - account management
-- manage payment account
-- fraud detection
-- list bins
+- get account catalog
+- bin lookup
+- query payment account reference to link tokens to accounts
+- look up bin information
+- open banking
+- get card details
+- manage a payment account lifecycle
+- card management
 - lookup bin
+- issue a new mastercard card
+- submit pan-related event for account level management
+- validate account details
+- get billing updates
+- list bins
+- card issuance and management
+- mastercard
+- get payment account reference
+- fraud detection
+- financial services
+- request updated card credentials
+- payments
+- manage payment account
+- validate account
+- payment account management
+- create a physical card fulfillment order
+- request updated card credentials for card-on-file
 slug: card-and-account-management
 tags:
 - Mastercard

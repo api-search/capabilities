@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - custom-workflow-actions
 - feature-flags
@@ -16,25 +18,25 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- commerce
-- analytics
-- get token metadata
-- content
-- sales
-- crm
-- operations
+- oauth
 - hubspot
-- platform
-- customer service
-- retrieve metadata for an oauth access token
-- get access token metadata
+- automation
 - oauth token metadata
+- get access token metadata
+- email marketing
+- analytics
+- platform
 - marketing automation
+- commerce
 - developer
 - marketing
-- oauth
-- email marketing
-- automation
+- get token metadata
+- sales
+- content
+- crm
+- customer service
+- operations
+- retrieve metadata for an oauth access token
 slug: developer-platform
 tags:
 - HubSpot

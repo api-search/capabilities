@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - ecr
 description: Unified capability for managing ECR repositories, container images, and lifecycle policies for DevOps engineers.
@@ -33,36 +35,36 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
+- describeRepositories
+- create repository
+- amazon ecr describe repositories
+- amazon ecr
+- container registry
+- amazon web services
+- list images
+- batch get image
+- ecr
+- delete repository
+- docker
+- describe repositories
+- amazon ecr create repository
+- putImage
+- amazon ecr list images
+- put image
+- deleteRepository
 - amazon ecr put image
+- amazon ecr batch get image
+- engineers managing amazon ecr resources on aws.
+- oci
+- batchGetImage
+- containers
+- container images
+- container registry management business domain for amazon ecr.
+- aws
 - createRepository
 - amazon ecr delete repository
-- deleteRepository
-- listImages
-- list images
-- amazon ecr
-- amazon ecr list images
-- amazon ecr describe repositories
-- batch get image
-- aws
-- amazon ecr create repository
 - workflow capability for container registry management.
-- container images
-- docker
-- describeRepositories
-- describe repositories
-- put image
-- containers
-- amazon web services
-- container registry management business domain for amazon ecr.
-- batchGetImage
-- putImage
-- amazon ecr batch get image
-- ecr
-- oci
-- create repository
-- container registry
-- delete repository
-- engineers managing amazon ecr resources on aws.
+- listImages
 slug: ecr-management
 tags:
 - Amazon ECR

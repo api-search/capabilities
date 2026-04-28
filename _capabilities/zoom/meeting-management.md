@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - zoom-meeting
 description: Unified workflow for managing the complete Zoom meeting lifecycle including scheduling, registrants, polls, participants, recordings, and live streaming. Used by meeting organizers, administrators, and automation tools.
@@ -53,56 +54,56 @@ personas: []
 provider_name: Zoom
 provider_slug: zoom
 search_terms:
-- get recordings for a meeting.
-- list all meetings for a user.
-- individual meeting operations.
-- get meeting
+- update a meeting.
 - list registrants
-- delete recordings
-- list all polls for a meeting.
+- videos
+- update meeting
+- list participants
+- get meeting details.
+- list all meetings scheduled for a user.
+- list polls
+- list participants of a live or past meeting.
 - get recordings
-- communications
-- add a registrant to a meeting.
-- meeting lifecycle management.
-- create a new meeting for a user.
-- chat
-- collaboration
-- list polls for a meeting.
+- delete meeting
+- list all registrants for a meeting.
 - delete a meeting permanently.
-- get all recordings for a meeting.
-- list meetings
-- video conferencing
+- meeting registration management.
+- list all polls for a meeting.
 - create poll
 - meeting recording management.
-- add registrant
-- update livestream
-- videos
-- delete meeting
-- meeting registration management.
-- zoom
-- list participants
-- meetings
-- create a new meeting.
-- create a poll for a meeting.
-- webinars
-- list all meetings scheduled for a user.
-- get details of a past meeting.
-- update meeting
 - create meeting
-- delete a meeting.
-- list polls
-- update a meeting's live stream configuration.
-- get past meeting details
-- list all registrants for a meeting.
-- get meeting details.
-- meeting poll management.
-- retrieve details of a specific meeting.
-- delete all recordings for a meeting.
+- add registrant
 - list registrants for a meeting.
+- zoom
+- video conferencing
+- collaboration
+- get past meeting details
+- chat
+- delete all recordings for a meeting.
+- retrieve details of a specific meeting.
 - update meeting details.
+- update a meeting's live stream configuration.
+- list all meetings for a user.
+- get meeting
+- meeting lifecycle management.
+- individual meeting operations.
+- delete recordings
+- list polls for a meeting.
+- get recordings for a meeting.
+- update livestream
+- delete a meeting.
 - delete recordings for a meeting.
-- update a meeting.
-- list participants of a live or past meeting.
+- create a poll for a meeting.
+- get all recordings for a meeting.
+- meetings
+- add a registrant to a meeting.
+- get details of a past meeting.
+- list meetings
+- communications
+- create a new meeting for a user.
+- create a new meeting.
+- webinars
+- meeting poll management.
 slug: meeting-management
 tags:
 - Zoom

@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - flume-monitoring
 description: Capability for monitoring Apache Flume log collection agents — tracking source throughput, channel fill levels, and sink drain rates. Designed for data engineers and platform operators managing log aggregation pipelines.
@@ -14,26 +16,26 @@ provider_name: Apache Flume
 provider_slug: apache-flume
 search_terms:
 - log aggregation
-- get agent metrics
-- get all component metrics for a flume agent
-- operators monitoring flume agent health and throughput
-- collecting, aggregating, and moving log and event data
-- Data Engineer
-- apache
-- streaming
-- get all metrics for apache flume agent components (sources, channels, sinks)
-- data engineering
-- get flume agent metrics
-- Platform Operator
-- monitoring
 - data collection
-- etl
-- engineers configuring and monitoring flume log collection pipelines
-- apache flume
-- flume agent component metrics
-- monitor flume agent metrics for log collection pipelines
+- data engineering
 - agent component metrics and health monitoring
+- Platform Operator
+- operators monitoring flume agent health and throughput
+- get flume agent metrics
+- apache
+- get all component metrics for a flume agent
+- monitor flume agent metrics for log collection pipelines
 - open source
+- engineers configuring and monitoring flume log collection pipelines
+- get all metrics for apache flume agent components (sources, channels, sinks)
+- streaming
+- flume agent component metrics
+- apache flume
+- collecting, aggregating, and moving log and event data
+- monitoring
+- Data Engineer
+- etl
+- get agent metrics
 slug: flume-log-collection
 tags:
 - Apache Flume

@@ -1,4 +1,6 @@
 ---
+categories:
+- incident-management
 consumed_apis:
 - rest-api
 description: Alert policy and condition management workflow for platform admins configuring and maintaining New Relic alerting rules, notification channels, and policy structures.
@@ -41,42 +43,42 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- alerting
 - list alert policies
-- apm
-- configuration
+- get alerts incidents
+- list alert incidents
+- list alert events filtered by product or entity type
+- get alerts policies
+- get alerts conditions
+- update an alert policy
 - analytics
+- platform
+- apm
+- alerting
+- delete alerts policy
+- policies
+- observability
+- configuration
+- list alert conditions for a specific policy
 - new relic
+- performance
+- analysis
+- create alerts policy
+- get alerts violations
+- list alert conditions
+- create a new alert policy
+- delete an alert policy
+- devops
+- monitoring
+- list alert events
+- infrastructure
+- update or delete an alert policy
+- list conditions for a policy
+- list alert violations
 - list all alert policies
 - manage alert policies
-- performance
-- list alert violations
 - update alerts policy
-- platform administration
-- list alert incidents
-- get alerts conditions
-- observability
-- get alerts violations
-- delete alerts policy
 - get alerts events
-- list alert conditions
-- platform
-- delete an alert policy
-- update an alert policy
-- infrastructure
-- create a new alert policy
-- list conditions for a policy
-- analysis
-- monitoring
-- get alerts policies
-- devops
-- list alert conditions for a specific policy
-- update or delete an alert policy
-- get alerts incidents
-- list alert events
-- list alert events filtered by product or entity type
-- policies
-- create alerts policy
+- platform administration
 slug: full-stack-observability
 tags:
 - New Relic

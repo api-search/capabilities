@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis: []
 description: Workflow for executing real-time OLAP queries, managing schemas and tables, and monitoring the Pinot cluster.
 layout: capability
@@ -16,39 +18,39 @@ personas: []
 provider_name: Apache Pinot
 provider_slug: apache-pinot
 search_terms:
-- create a new pinot table
-- sql
-- analytics
-- execute sql query
-- database
-- list all tables in the pinot cluster
-- list all segments for a table
-- queries pinot for real-time analytics and dashboards
-- real-time olap
-- query
-- get table
-- get cluster info
-- list schemas
-- apache
-- list segments
-- get pinot cluster status and information
-- real-time
-- get schema
-- query sql
-- list all registered schemas
 - create table
-- get a specific schema definition
+- query sql
+- list segments
+- real-time olap
 - manages pinot cluster, tables, and schemas
-- apache pinot
-- list tables
-- get the configuration of a specific table
-- low latency
-- distributed databases
-- Platform Engineer
-- olap
-- execute a sql query against pinot tables
 - Data Analyst
+- low latency
+- list all tables in the pinot cluster
+- database
+- olap
+- analytics
+- list all segments for a table
+- create a new pinot table
+- apache
+- get a specific schema definition
+- get the configuration of a specific table
+- queries pinot for real-time analytics and dashboards
 - open source
+- get table
+- list all registered schemas
+- list tables
+- real-time
+- execute sql query
+- query
+- list schemas
+- apache pinot
+- get cluster info
+- execute a sql query against pinot tables
+- distributed databases
+- sql
+- get schema
+- get pinot cluster status and information
+- Platform Engineer
 slug: pinot-workflow
 tags:
 - Apache Pinot

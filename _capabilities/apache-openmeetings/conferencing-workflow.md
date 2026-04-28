@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - openmeetings
 description: Unified workflow capability for managing web conferencing sessions, users, rooms, recordings, and calendars in Apache OpenMeetings.
@@ -29,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- manages conference rooms, invites participants, and handles recordings
+- calendar and scheduling
 - get upcoming meetings
 - whiteboard
-- list groups
-- conferencing
-- list session recordings
-- System Administrator
-- list upcoming
-- web conferencing
-- get upcoming calendar meetings
-- user management
 - conference room management
-- collaboration
-- list all public conference rooms
-- list recordings
-- apache openmeetings
-- authenticate a user to openmeetings
-- list rooms
-- video conferencing
-- check system health status
-- get room hash
-- create room
-- apache
-- list users
-- close room
-- Meeting Organizer
-- create a new conference room
-- login
+- conferencing
+- web conferencing
 - list all user groups
-- check health
-- generate a secure room access hash
-- session recordings
-- list all registered users
-- get recordings by type
 - unified workflow for managing conferencing sessions
-- create a new room
-- close a conference room
+- generate a secure room access hash
+- login
+- list session recordings
+- list all registered users
+- Meeting Organizer
 - list public rooms
-- manages users, groups, and system health
+- apache
+- create room
+- video conferencing
 - open source
-- calendar and scheduling
+- collaboration
+- close a conference room
+- list all public conference rooms
+- list users
+- list recordings
+- get room hash
+- authenticate a user to openmeetings
+- close room
+- check health
+- apache openmeetings
+- manages users, groups, and system health
+- list rooms
+- list upcoming
+- get recordings by type
+- user management
+- list groups
+- create a new conference room
+- get upcoming calendar meetings
+- System Administrator
+- create a new room
+- check system health status
+- session recordings
+- manages conference rooms, invites participants, and handles recordings
 slug: conferencing-workflow
 tags:
 - Apache OpenMeetings

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
-- medical imaging
 - machine learning
-- hipaa
+- medical imaging
+- dicom
 - aws
 - healthcare
-- dicom
+- hipaa
 slug: amazon-healthimaging-medical-imaging-operations
 tags: []
 tools: []

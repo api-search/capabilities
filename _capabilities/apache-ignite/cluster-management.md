@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ignite-rest-api
 description: Workflow capability for database administrators and platform engineers to manage Apache Ignite clusters, execute SQL queries, and configure distributed nodes.
@@ -21,33 +22,33 @@ personas: []
 provider_name: Apache Ignite
 provider_slug: apache-ignite
 search_terms:
-- apache ignite
-- distributed database
-- database administration
-- Database Administrator
-- execute sql query
-- sql
-- caching
-- retrieve the current state and health of the apache ignite cluster
-- init cluster
-- update apache ignite cluster configuration parameters
 - initialize a new apache ignite cluster
-- execute sql
 - execute sql queries on the distributed ignite cluster
-- dbas who manage ignite cluster health, configuration, and sql workloads
-- get cluster configuration
-- compute grid
-- get configuration
-- retrieve the current apache ignite cluster configuration
-- update configuration
-- open source
-- Platform Engineer
-- in-memory
-- get cluster state
-- engineers who deploy and maintain ignite clusters in production
+- retrieve the current state and health of the apache ignite cluster
+- Database Administrator
+- init cluster
 - in-memory database
 - cluster management
+- dbas who manage ignite cluster health, configuration, and sql workloads
+- database administration
+- distributed database
+- compute grid
+- retrieve the current apache ignite cluster configuration
+- get configuration
+- caching
+- apache ignite
+- open source
+- get cluster configuration
+- get cluster state
 - database administrators and platform engineers managing ignite clusters
+- update configuration
+- execute sql query
+- engineers who deploy and maintain ignite clusters in production
+- execute sql
+- in-memory
+- sql
+- update apache ignite cluster configuration parameters
+- Platform Engineer
 slug: cluster-management
 tags:
 - Apache Ignite

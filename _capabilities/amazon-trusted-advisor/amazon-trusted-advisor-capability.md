@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,8 +10,8 @@ provider_name: Amazon Trusted Advisor
 provider_slug: amazon-trusted-advisor
 search_terms:
 - security
-- best practices
 - aws
+- best practices
 - cloud optimization
 slug: amazon-trusted-advisor-capability
 tags: []

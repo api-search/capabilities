@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Arlula
 provider_slug: arlula
 search_terms:
-- geospatial
-- earth observation
-- imagery
 - remote sensing
 - satellites
+- imagery
+- geospatial
+- earth observation
 slug: satellite-imagery-operations
 tags: []
 tools: []

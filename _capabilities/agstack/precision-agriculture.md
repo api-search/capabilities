@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,10 +10,10 @@ provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
 - linux foundation
-- linked data
-- geospatial
 - agriculture
+- linked data
 - open source
+- geospatial
 - precision agriculture
 slug: precision-agriculture
 tags: []

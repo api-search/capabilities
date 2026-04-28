@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - iis-administration
 description: Unified workflow for IT administrators to manage IIS web sites, applications, and application pools for enterprise web hosting on Windows Server.
@@ -45,59 +46,59 @@ personas: []
 provider_name: Microsoft Windows Server
 provider_slug: microsoft-windows-server
 search_terms:
-- update application pool
-- update application
-- windows server 2025
-- list application pools
-- delete application pool
-- list all iis web sites on the server
-- web server
-- create application pool
-- create a new iis web site
-- update a web site
-- delete a web application
-- application pool management
-- get application pool details
-- web application management
-- update website
-- create an application pool
-- get web site details
-- create a new web application
-- server management
-- create an application
-- create website
-- update an application pool configuration
-- operating system
-- create an iis application pool
-- delete an application pool
-- get web application details
-- create application
 - list all web applications
-- infrastructure
-- delete application
-- get application
-- list all iis application pools
-- windows server
-- datacenter
-- microsoft
-- list all web sites
-- update a web application
+- server management
+- list application pools
+- delete website
+- get web application details
+- web server
+- iis
+- create website
+- update a web site
+- create a new iis web site
 - list all applications
+- get web site details
+- update an application pool configuration
+- get application
+- windows server 2025
+- single web site operations
+- update application
+- update website
+- get application pool details
+- create an application
+- web application management
+- delete a web site
+- create application pool
+- enterprise
 - list all application pools
 - update an iis web site configuration
-- enterprise
-- web site management
-- delete a web site
-- get application pool
-- iis
-- get website
-- get details for a specific web site
-- list websites
-- list applications
-- create a web site
-- single web site operations
+- delete application pool
+- list all iis application pools
+- list all iis web sites on the server
 - delete an iis web site
-- delete website
+- create a web site
+- delete a web application
+- microsoft
+- operating system
+- list websites
+- web site management
+- list applications
+- get details for a specific web site
+- datacenter
+- infrastructure
+- create application
+- delete application
+- create an iis application pool
+- update application pool
+- delete an application pool
+- create a new web application
+- create an application pool
+- get application pool
+- get website
+- application pool management
+- list all web sites
+- windows server
+- update a web application
 slug: web-server-management
 tags:
 - Microsoft

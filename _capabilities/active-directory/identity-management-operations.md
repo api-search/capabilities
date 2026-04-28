@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - active-directory-users
 - active-directory-groups
@@ -51,57 +53,57 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- list group members
-- directory services
-- list groups
-- get details about a specific microsoft entra user by object id or userprincipalname
-- authentication
-- zero trust
-- get signed-in user profile
-- enterprise it admin managing user accounts, groups, device policies, and access management
-- create user
-- create, update, and deactivate user accounts throughout the employee/guest lifecycle
-- user management
 - list microsoft entra id groups — security groups and microsoft 365 groups
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- service principals
-- list application registrations in the microsoft entra tenant
-- signed-in user profile
-- identity management
-- active directory
-- microsoft entra
-- list users
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- individual group operations
-- Security Analyst
-- individual user operations
-- IT Administrator
-- application registration and service principal lifecycle for zero-trust app governance
-- security professional monitoring identity risks, conditional access policies, and audit logs
-- periodic access reviews and identity risk remediation
-- get details about a specific microsoft entra application registration
-- get the signed-in user's microsoft entra profile
-- group management
-- authorization
-- list service principals
-- get application
-- create a new user account in microsoft entra id with required profile and password settings
-- conditional access policy automation for zero-trust enforcement
-- Identity Engineer
-- get group
+- get signed-in user profile
 - group member management
-- unified user, group, and application management for microsoft entra id
-- registered and joined device management for compliant device access policies
+- application registration and service principal lifecycle for zero-trust app governance
+- periodic access reviews and identity risk remediation
 - group-based access control and app role assignment for resource permissions
-- get details about a specific microsoft entra group including type and membership settings
-- list applications
-- application registrations
-- user lifecycle management
-- get user
 - list service principals in the microsoft entra tenant
-- get user by id or upn
 - list direct members of a microsoft entra group
 - create group
+- service principals
+- microsoft entra
+- enterprise it admin managing user accounts, groups, device policies, and access management
+- create a new user account in microsoft entra id with required profile and password settings
+- active directory
+- authentication
+- get application
+- get details about a specific microsoft entra user by object id or userprincipalname
+- unified user, group, and application management for microsoft entra id
+- IT Administrator
+- Identity Engineer
+- create, update, and deactivate user accounts throughout the employee/guest lifecycle
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- application registrations
+- individual user operations
+- list users
+- individual group operations
+- group management
+- directory services
+- get details about a specific microsoft entra application registration
+- security professional monitoring identity risks, conditional access policies, and audit logs
+- conditional access policy automation for zero-trust enforcement
+- Security Analyst
+- get user
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- user lifecycle management
+- list group members
+- list application registrations in the microsoft entra tenant
+- list applications
+- get details about a specific microsoft entra group including type and membership settings
+- list service principals
+- zero trust
+- get user by id or upn
+- user management
+- registered and joined device management for compliant device access policies
+- list groups
+- signed-in user profile
+- authorization
+- create user
+- get group
+- get the signed-in user's microsoft entra profile
+- identity management
 - get me
 slug: identity-management-operations
 tags:

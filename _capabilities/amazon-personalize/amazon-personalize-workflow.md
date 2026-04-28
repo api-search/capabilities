@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - personalize
 description: Workflow capability composing Amazon Personalize APIs for developers and operators.
@@ -13,22 +14,22 @@ personas: []
 provider_name: Amazon Personalize
 provider_slug: amazon-personalize
 search_terms:
-- personalization
-- core api workflow
 - list and manage openapi.yml resources
-- amazon personalize
-- ml
 - machine learning
+- aws
+- personalization
 - list openapi.yml
 - ai
-- list resources
-- aws
-- developer using amazon personalize apis
-- customer experience
-- Developer
-- recommendations
-- list amazon personalize resources
+- amazon personalize
 - primary amazon personalize resources
+- Developer
+- customer experience
+- recommendations
+- ml
+- core api workflow
+- developer using amazon personalize apis
+- list amazon personalize resources
+- list resources
 slug: amazon-personalize-workflow
 tags:
 - Amazon Personalize

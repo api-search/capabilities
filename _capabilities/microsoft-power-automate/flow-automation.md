@@ -1,4 +1,6 @@
 ---
+categories:
+- automation
 consumed_apis:
 - management-api
 description: Workflow capability for managing Power Automate flows, environments, and connectors. Used by automation engineers and platform administrators.
@@ -37,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- update a flow's properties
-- create a new automation flow
-- environment management
-- get details of a specific connector
-- get connector
-- turn on flow
-- get flow details
-- stop/deactivate a flow
-- flow management
-- creating, running, and managing automation flows
-- get details of a specific flow
-- integration
-- Automation Engineer
-- turn off flow
-- list flows
-- rpa
-- Platform Administrator
-- list available connectors in an environment
-- list all environments
-- manages environments, connectors, and permissions
-- flow lifecycle management
-- update flow
-- update a flow
-- power platform
-- low-code
-- list environments
-- delete a flow
-- delete flow
-- microsoft
-- business process
-- list connectors
-- create a flow
-- microsoft power automate
-- get flow
 - manage flows, environments, and connectors
-- workflow
+- Automation Engineer
+- integration
+- delete a flow
+- get details of a specific flow
+- automation
 - creates and manages automation flows
 - create flow
-- list all power automate environments
-- start/activate a flow
+- get flow
+- Platform Administrator
+- update a flow's properties
 - connector management
+- power platform
+- update flow
+- get flow details
+- low-code
+- list flows
+- list all power automate environments
+- stop/deactivate a flow
+- business process
+- environment management
+- manages environments, connectors, and permissions
+- start/activate a flow
+- list environments
+- list connectors
+- turn on flow
+- list all environments
+- get details of a specific connector
 - managing environments and available connectors
+- create a new automation flow
+- microsoft
+- create a flow
+- get connector
+- list available connectors in an environment
+- rpa
+- flow management
+- flow lifecycle management
+- turn off flow
+- workflow
+- microsoft power automate
+- delete flow
+- creating, running, and managing automation flows
+- update a flow
 - list flows in an environment
-- automation
 slug: flow-automation
 tags:
 - Microsoft Power Automate

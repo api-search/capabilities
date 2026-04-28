@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - business-central-v2
 description: Unified workflow for day-to-day business operations in Dynamics 365 Business Central combining the Business Central API v2.0 for managing customers, vendors, items, orders, invoices, and financials. Used by accountants, sales teams, and operations managers.
@@ -57,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- create purchase order
-- inventory
-- create a new sales order
-- single customer
-- create a customer
-- sales
-- list journals
-- list all items
-- create vendor
-- create a new inventory item
-- list employees
-- list sales orders
-- list vendors
-- inventory items
-- general journals
-- get a customer
-- purchasing
-- list items
-- list all vendors
-- create sales order
-- sales orders
-- get customer
-- finance
-- create a new purchase order
-- business central
-- list all sales orders
-- create a sales order
-- get a customer by id
-- list inventory items
-- create item
-- sales invoices
-- erp
-- list available companies
-- create a new customer
-- list all customers
-- dynamics 365
-- list all employees
-- business management
-- microsoft
-- vendor management
-- create a new vendor
-- list all purchase orders
-- list general ledger accounts
-- navision
-- list general journals
-- company information
-- list purchase invoices
-- list accounts
 - list sales invoices
-- general ledger accounts
-- list purchase orders
+- business central
+- get a customer
+- list available companies
+- list all vendors
+- create purchase order
 - create customer
-- dynamics nav
-- purchase orders
+- list purchase invoices
+- dynamics 365
 - list customers
-- list companies
 - customer management
+- finance
+- vendor management
+- sales invoices
+- list general journals
+- dynamics nav
+- list all customers
+- list items
+- list all employees
+- list sales orders
+- create vendor
+- list all items
+- list general ledger accounts
+- inventory
+- get customer
+- inventory items
+- create a sales order
+- list inventory items
+- business management
+- create a new vendor
+- purchase orders
+- list purchase orders
+- list all purchase orders
+- sales orders
+- navision
+- erp
+- get a customer by id
+- create a new purchase order
+- microsoft
+- create item
+- create a new sales order
+- list employees
+- list all sales orders
+- purchasing
+- create a customer
+- list companies
+- sales
+- create sales order
+- general ledger accounts
+- create a new customer
+- single customer
+- list accounts
+- list vendors
+- create a new inventory item
+- general journals
+- list journals
+- company information
 slug: business-operations
 tags:
 - Business Central

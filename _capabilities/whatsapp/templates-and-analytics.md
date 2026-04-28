@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - whatsapp-business-mgmt
 description: Unified workflow for managing message templates and analyzing conversation and template performance. Combines Business Management API template CRUD and analytics capabilities used by marketing teams, content managers, and business analysts.
@@ -33,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- individual message template management.
-- deletes a message template. deleting by name removes all language variants.
-- analytics
-- get conversation analytics
-- retrieves conversation analytics.
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- message templates
-- message template management.
-- get template analytics
-- retrieves template analytics.
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
 - lists all message templates for a waba.
-- template performance analytics.
-- list message templates
-- reporting
-- deletes a message template.
-- create message template
-- creates a new message template. templates must be approved by meta before use.
-- marketing
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- whatsapp
 - conversation analytics and reporting.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- list message templates
 - creates a new message template.
 - delete message template
 - update message template
+- reporting
+- template performance analytics.
+- analytics
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- get template analytics
+- create message template
+- marketing
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- creates a new message template. templates must be approved by meta before use.
+- message template management.
+- message templates
+- whatsapp
 - updates an existing message template.
+- deletes a message template. deleting by name removes all language variants.
+- individual message template management.
+- retrieves template analytics.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- deletes a message template.
+- retrieves conversation analytics.
+- get conversation analytics
 slug: templates-and-analytics
 tags:
 - WhatsApp

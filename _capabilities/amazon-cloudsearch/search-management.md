@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudsearch
 description: Workflow for search domain management using Amazon CloudSearch for Application Developer personas.
@@ -9,14 +10,14 @@ personas: []
 provider_name: Amazon CloudSearch
 provider_slug: amazon-cloudsearch
 search_terms:
-- full-text search
-- cloudsearch
 - managed
-- aws
+- cloudsearch
 - amazon cloudsearch
+- aws
 - search
-- amazon web services
 - Application Developer
+- full-text search
+- amazon web services
 slug: search-management
 tags:
 - Amazon Web Services

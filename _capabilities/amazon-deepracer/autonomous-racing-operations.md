@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,8 +9,8 @@ personas: []
 provider_name: Amazon DeepRacer
 provider_slug: amazon-deepracer
 search_terms:
-- reinforcement learning
 - machine learning
+- reinforcement learning
 - aws
 - autonomous vehicles
 - robotics

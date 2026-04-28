@@ -1,4 +1,6 @@
 ---
+categories:
+- collaboration
 consumed_apis:
 - helix-swarm
 description: Unified workflow for code review, commenting, and project management using Helix Swarm. Designed for development teams managing code review workflows integrated with Helix Core version control.
@@ -33,43 +35,43 @@ personas: []
 provider_name: Perforce
 provider_slug: perforce
 search_terms:
-- code review
-- transition review state
+- create review
 - get version
-- collaboration
-- get details of a specific code review
-- transition a review to a new state (approve, reject, etc.)
-- list code reviews
-- activity stream
-- list activity entries
 - list comments
-- get project
-- list swarm projects
-- review comments
-- get details of a specific swarm project
-- code reviews
-- list reviews
-- list comments on reviews and changelists
 - get review
+- get details of a specific code review
+- list code reviews in helix swarm
+- update review
+- delete a swarm project
+- list projects
+- list swarm projects
+- code reviews
+- collaboration
+- swarm projects
+- update a review description or author
+- list activity
+- get details of a specific swarm project
+- list activity stream entries
+- create a new code review from a changelist
+- review details
+- add a comment to a review or changelist
+- code review
+- devops
+- transition review state
+- delete project
+- review comments
+- list code reviews
 - create a new code review
 - create comment
-- list projects
-- devops
-- list activity
-- get review details
-- create a new code review from a changelist
-- list code reviews in helix swarm
-- delete a swarm project
-- review details
-- perforce
-- update review
+- get project
+- activity stream
+- list reviews
+- list comments on reviews and changelists
 - get swarm server version information
-- list activity stream entries
-- swarm projects
-- create review
-- add a comment to a review or changelist
-- update a review description or author
-- delete project
+- perforce
+- get review details
+- transition a review to a new state (approve, reject, etc.)
+- list activity entries
 slug: code-review-collaboration
 tags:
 - Perforce

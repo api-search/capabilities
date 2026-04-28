@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - 2020-police-brutality
 description: Workflow for accessing and analyzing documented police brutality incidents from the 2020 George Floyd protests. Designed for journalists, researchers, prosecutors, and activists who need programmatic access to incident data for reporting, legal proceedings, and advocacy work.
@@ -17,33 +18,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
-- Researcher
-- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
-- export incidents csv
+- brutality
 - get all incidents
-- export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
-- documented evidence of police brutality during 2020 protests
-- list all documented police brutality incidents.
-- uses incident documentation for prosecution or civil litigation
-- journalism
-- conducts academic or policy research on police use of force patterns
-- Journalist
 - get incidents v2
+- investigates and reports on documented police brutality incidents
 - research
-- Legal Professional
-- uses data for advocacy, public education, and political campaigns
-- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
+- public data
 - all incidents in csv format for data analysis.
 - list incidents
-- public data
-- investigates and reports on documented police brutality incidents
-- policing
-- all documented police brutality incidents from 2020 protests.
+- uses data for advocacy, public education, and political campaigns
+- Legal Professional
+- list all documented police brutality incidents.
+- research workflow for journalists, prosecutors, and activists
 - export all incidents as csv for spreadsheet and data analysis.
 - Activist
-- brutality
-- research workflow for journalists, prosecutors, and activists
+- conducts academic or policy research on police use of force patterns
+- Researcher
 - civil rights
+- journalism
+- all documented police brutality incidents from 2020 protests.
+- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
+- documented evidence of police brutality during 2020 protests
+- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
+- export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
+- policing
+- export incidents csv
+- uses incident documentation for prosecution or civil litigation
+- Journalist
 slug: 2020-police-brutality-incident-research
 tags:
 - Public Data

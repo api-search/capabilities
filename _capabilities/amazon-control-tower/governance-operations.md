@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
-- multi-account
 - landing zone
 - aws
 - controls
-- compliance
 - security
+- compliance
+- multi-account
 - governance
 slug: governance-operations
 tags: []

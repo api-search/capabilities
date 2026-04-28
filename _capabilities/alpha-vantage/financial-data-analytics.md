@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
+- economic data
+- financial
+- stocks
+- sentiment analysis
 - technical indicators
 - market data
-- financial
-- economic data
-- sentiment analysis
-- stocks
 slug: financial-data-analytics
 tags: []
 tools: []

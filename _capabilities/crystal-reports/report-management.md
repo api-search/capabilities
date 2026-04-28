@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - cr-reporting
 description: Unified workflow for managing Crystal Reports including authentication, repository browsing, report viewing, data access, and export. Used by report developers, BI analysts, and application developers.
@@ -29,36 +31,36 @@ personas: []
 provider_name: Crystal Reports
 provider_slug: crystal-reports
 search_terms:
-- logon
-- browse the bi platform report repository
+- get report summary
 - business intelligence
-- get report structure
+- get edmx metadata describing the report data model
+- get rows
+- reporting
+- export
+- get report grand totals and summaries
+- export report to pdf, excel, csv, word, xml, or other format
+- get grand totals
+- get report metadata with datasources, fields, parameters, and formulas
+- push data to a transient report instance
+- get report data rows via odata with pagination and filtering
+- logon
+- authenticate to crystal reports server
+- list folder children
+- crystal reports
+- list contents of a repository folder
+- enterprise software
+- create a transient report instance
+- sap
+- get odata metadata
+- data analytics
 - create instance
 - export report
-- push data to a transient report instance
-- list contents of a repository folder
-- get rows
-- crystal reports
-- get report grand totals and summaries
-- create a transient report instance
-- get report summary
-- get report metadata with datasources, fields, parameters, and formulas
-- authenticate to crystal reports server
-- get report summary including name, author, and uris
-- export report to pdf, excel, csv, word, xml, or other format
-- post row
-- report management
-- get odata metadata
-- reporting
-- get grand totals
-- data analytics
 - browse repository
-- export
-- get report data rows via odata with pagination and filtering
-- get edmx metadata describing the report data model
-- sap
-- enterprise software
-- list folder children
+- get report structure
+- post row
+- browse the bi platform report repository
+- report management
+- get report summary including name, author, and uris
 slug: report-management
 tags:
 - Crystal Reports

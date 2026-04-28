@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - bny-treasury
 description: BNY Mellon treasury operations workflow for institutional clients covering account management, balance reporting, payment initiation, funds transfers, and transaction history. Integrates with TMS and ERP platforms for automated treasury operations.
@@ -9,35 +11,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- initiate a payment (wire, ach, swift, chips) through bny mellon
+- get the status and details of a bny mellon payment
+- list transactions
+- get current and available balances for a bny mellon account
+- treasury
 - analyst executing treasury transactions and reporting
 - list bny accounts
-- initiate payment
-- institutional banking
-- institutional account management and cash positioning
-- Treasury Analyst
-- list transactions
-- initiate a funds transfer between bny mellon accounts
-- institutional treasury operations including accounts, payments, and funds transfers
-- banking
-- get current and available balances for a bny mellon account
-- get the status and details of a bny mellon payment
 - executive managing corporate liquidity and treasury operations
-- internal funds transfers and liquidity management
-- asset servicing
-- bny mellon
 - get account balances
-- list bny mellon treasury accounts for the authenticated client
+- initiate funds transfer
+- wire transfers
+- institutional banking
+- banking
+- initiate payment
+- institutional account management and cash positioning
+- Corporate Treasurer
+- initiate a payment (wire, ach, swift, chips) through bny mellon
+- initiate a funds transfer between bny mellon accounts
+- bny mellon
+- Treasury Analyst
+- get payment status
+- list transactions for a bny mellon account
+- wire, ach, swift, and chips payment execution
 - Institutional Client
 - payments
+- asset servicing
+- institutional treasury operations including accounts, payments, and funds transfers
+- internal funds transfers and liquidity management
 - institutional investor or fund manager using bny custody and treasury services
-- list transactions for a bny mellon account
-- treasury
-- wire transfers
-- wire, ach, swift, and chips payment execution
-- initiate funds transfer
-- get payment status
-- Corporate Treasurer
+- list bny mellon treasury accounts for the authenticated client
 slug: treasury-operations
 tags:
 - BNY Mellon

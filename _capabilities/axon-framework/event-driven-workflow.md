@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - axon-server
 description: Workflow capability for managing Axon Server applications, contexts, and event streaming.
@@ -9,24 +10,24 @@ personas: []
 provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
-- list_applications
-- event-driven
-- delete an axon application registration
-- list all registered axon applications
-- list_contexts
-- create_context
-- get_metrics
-- java
 - create a new axon context
-- create a new axon application registration
-- delete_application
+- event-driven
+- list all registered axon applications
+- get_metrics
+- create_context
+- delete an axon application registration
+- list_contexts
 - messaging
-- get axon server metrics and health information
-- create_application
-- cqrs
-- list all axon contexts
-- microservices
 - event sourcing
+- create a new axon application registration
+- list_applications
+- create_application
+- list all axon contexts
+- get axon server metrics and health information
+- delete_application
+- microservices
+- java
+- cqrs
 slug: event-driven-workflow
 tags:
 - CQRS

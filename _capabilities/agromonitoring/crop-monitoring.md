@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,11 +9,11 @@ personas: []
 provider_name: Agromonitoring
 provider_slug: agromonitoring
 search_terms:
-- remote sensing
-- vegetation indices
 - satellite imagery
-- agriculture
+- vegetation indices
 - weather
+- remote sensing
+- agriculture
 - precision agriculture
 slug: crop-monitoring
 tags: []

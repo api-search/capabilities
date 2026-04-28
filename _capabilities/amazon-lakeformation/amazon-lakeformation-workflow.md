@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - lakeformation
 description: Unified workflow capability for AWS Lake Formation combining resource management and operations.
@@ -9,23 +10,23 @@ personas: []
 provider_name: AWS Lake Formation
 provider_slug: amazon-lakeformation
 search_terms:
-- integrates api into applications
-- manages resources and configurations
-- workflow
-- databases get database
 - unified workflow for aws lake formation resource management
-- aws
-- databases list databases
+- integrates api into applications
 - analytics
-- governance
-- Developer
-- aws lake formation
-- data lake
+- aws
+- workflow
 - creates a new database in the data catalog.
-- databases create database
 - lists all the registered databases in the data catalog.
-- Administrator
 - retrieves the definition of a specified database.
+- databases get database
+- databases list databases
+- aws lake formation
+- manages resources and configurations
+- Developer
+- data lake
+- Administrator
+- databases create database
+- governance
 slug: amazon-lakeformation-workflow
 tags:
 - AWS Lake Formation

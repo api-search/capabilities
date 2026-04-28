@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,18 +9,18 @@ personas: []
 provider_name: Apache SeaTunnel
 provider_slug: apache-seatunnel
 search_terms:
-- open source
-- end-to-end data synchronization from source to sink
-- data integration
-- apache
-- elt
+- etl
 - streaming
 - batch
-- etl
-- engineer managing seatunnel clusters
+- apache
 - moving and transforming data between systems
-- extract, transform, load pipeline processing
 - engineer designing and operating data pipelines
+- data integration
+- engineer managing seatunnel clusters
+- end-to-end data synchronization from source to sink
+- extract, transform, load pipeline processing
+- elt
+- open source
 slug: seatunnel-workflow
 tags: []
 tools: []

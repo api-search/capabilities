@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - jena-fuseki
 description: Workflow capability for data engineers and knowledge graph architects to query, update, and manage RDF datasets using Apache Jena Fuseki.
@@ -21,33 +22,33 @@ personas: []
 provider_name: Apache Jena
 provider_slug: apache-jena
 search_terms:
-- ontology
-- list datasets
-- execute a sparql select query to retrieve rdf data from a fuseki dataset
 - create dataset
-- create a dataset
 - sparql update
-- list all rdf datasets available on the fuseki server
-- retrieve a named rdf graph from a dataset
+- apache jena
+- Knowledge Graph Architect
+- ontology
+- owl
+- rdf
 - java
-- semantic web
-- sparql
+- open source
+- get graph
 - sparql query
-- list all datasets
-- Data Engineer
+- semantic web
+- create a new rdf dataset on the fuseki server
+- sparql
 - engineers who manage and query rdf datasets with sparql
 - knowledge graph
-- rdf
-- get graph
-- Knowledge Graph Architect
-- create a new rdf dataset on the fuseki server
-- owl
-- apache jena
-- linked data
-- execute sparql query
-- architects who design rdf schemas and knowledge graph structures
-- open source
+- list all datasets
+- Data Engineer
 - execute a sparql update to insert or delete rdf triples
+- architects who design rdf schemas and knowledge graph structures
+- create a dataset
+- list datasets
+- retrieve a named rdf graph from a dataset
+- linked data
+- execute a sparql select query to retrieve rdf data from a fuseki dataset
+- list all rdf datasets available on the fuseki server
+- execute sparql query
 slug: sparql-data-management
 tags:
 - Apache Jena

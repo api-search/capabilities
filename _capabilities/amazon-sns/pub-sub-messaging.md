@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - amazon-sns
 description: Pub/sub messaging workflow combining topic management, subscription lifecycle, message publishing, mobile push, and SMS operations. Used by developers and platform engineers for event-driven architectures and notification systems.
@@ -29,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- get subscription attributes
-- create a platform application for mobile push
-- publish a message to a topic
-- publish a message to a topic or endpoint
-- set attributes on an sns topic
-- set topic attributes
-- sms
-- delete an sns topic
-- check if a phone number has opted out of sms
+- message publishing
 - email
-- subscription management
-- list subscriptions for a specific topic
-- get sms messaging attributes
-- push notifications
-- aws
+- create a platform application for mobile push
+- list topics
+- create platform application
+- get attributes of an sns topic
 - get sms attributes
 - delete topic
-- unsubscribe
-- add tags to an sns resource
-- messaging
-- create platform application
-- list all subscriptions
-- notifications
-- message publishing
+- list subscriptions for a specific topic
+- get subscription attributes
 - get attributes of a subscription
+- list subscriptions by topic
+- subscribe
+- unsubscribe
+- subscription management
+- list tags for an sns resource
+- list tags
+- delete an sns topic
+- unsubscribe from a topic
+- add tags to an sns resource
+- publish batch
+- sms
+- create topic
+- create a subscription
+- notifications
+- publish a message to a topic
+- list subscriptions
+- check if a phone number has opted out of sms
+- create a new sns topic
+- get sms messaging attributes
+- list all sns topics
+- create a subscription to a topic
+- topic management
+- push notifications
+- set attributes on an sns topic
 - get topic attributes
 - tag resource
-- pub/sub
-- create topic
-- create a new sns topic
-- topic management
-- create a subscription to a topic
-- list all sns topics
 - publish up to 10 messages in a batch
-- get attributes of an sns topic
-- create a subscription
-- amazon
-- subscribe
-- unsubscribe from a topic
-- publish
-- list tags
-- list tags for an sns resource
-- list subscriptions by topic
+- messaging
+- aws
+- publish a message to a topic or endpoint
 - check phone opted out
-- publish batch
-- list topics
-- list subscriptions
+- pub/sub
+- set topic attributes
+- publish
+- amazon
+- list all subscriptions
 slug: pub-sub-messaging
 tags:
 - Amazon

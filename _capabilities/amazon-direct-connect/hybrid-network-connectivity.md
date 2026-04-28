@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - direct-connect
 description: Workflow capability for network engineers and cloud architects to manage dedicated private connections between on-premises networks and AWS using Amazon Direct Connect. Covers connection provisioning, virtual interface management, gateway associations, LAG configuration, and network troubleshooting.
@@ -49,64 +50,64 @@ personas: []
 provider_name: Amazon Direct Connect
 provider_slug: amazon-direct-connect
 search_terms:
-- Cloud Architect
-- delete virtual interface
 - amazon direct connect
-- list all virtual interfaces configured on direct connect connections
-- create a transit virtual interface for accessing transit gateway via direct connect
-- list all direct connect connections
-- available direct connect locations
-- end-to-end hybrid network management using amazon direct connect
-- describe direct connect gateways
-- list link aggregation groups
-- list all direct connect dedicated connections in the account
 - create a new dedicated connection
-- managing virtual interfaces and bgp peering
-- Network Engineer
+- delete a virtual interface from a direct connect connection
+- direct connect gateways for multi-vpc and multi-region access
+- describe locations
+- create a private virtual interface for accessing a vpc via direct connect
+- list all direct connect dedicated connections in the account
+- create a new dedicated physical connection at a direct connect location
+- multi-vpc and multi-region access via direct connect gateways
+- link aggregation groups for redundant connections
+- list all available direct connect colocation facility locations
+- hybrid cloud
+- delete a direct connect connection
+- create private virtual interface
+- create transit virtual interface
+- create direct connect gateway
+- available direct connect locations
+- create transit vif
+- create a link aggregation group
+- list direct connect colocation facilities
+- describe gateways
+- cloud architect designing hybrid network connectivity between on-premises and aws
+- create connection
+- end-to-end hybrid network management using amazon direct connect
+- list direct connect gateways
 - direct connect
 - create a direct connect gateway to attach multiple vpcs across regions
-- aws
-- describe gateways
-- describe connections
-- list direct connect gateways
-- create a private virtual interface for vpc access
-- dedicated physical connections to aws
-- networking
-- list direct connect colocation facilities
-- create transit vif
-- dedicated connection
-- create gateway
-- link aggregation groups for redundant connections
-- list link aggregation groups providing redundant bundled connections
-- cloud architect designing hybrid network connectivity between on-premises and aws
-- list all virtual interfaces
-- create a direct connect gateway
-- create transit virtual interface
 - describe lags
-- list all available direct connect colocation facility locations
 - create a transit virtual interface for transit gateway
-- describe locations
-- virtual interfaces providing network access
-- hybrid cloud
-- create direct connect gateway
-- create private vif
-- direct connect gateways for multi-vpc and multi-region access
-- create a new dedicated physical connection at a direct connect location
-- create private virtual interface
-- create a link aggregation group
+- create a transit virtual interface for accessing transit gateway via direct connect
+- Network Engineer
 - provisioning and managing physical dedicated connections
-- delete a direct connect connection
+- create gateway
+- delete virtual interface
+- describe direct connect gateways
 - list direct connect gateways for multi-region and multi-vpc connectivity
-- delete a virtual interface from a direct connect connection
-- describe virtual interfaces
-- delete connection
-- create a link aggregation group to bundle multiple connections for redundancy
-- create connection
-- create lag
-- network engineer provisioning and managing dedicated connections and virtual interfaces
-- multi-vpc and multi-region access via direct connect gateways
+- networking
 - network engineering
-- create a private virtual interface for accessing a vpc via direct connect
+- delete connection
+- dedicated physical connections to aws
+- dedicated connection
+- describe connections
+- list link aggregation groups providing redundant bundled connections
+- create private vif
+- list all virtual interfaces configured on direct connect connections
+- list link aggregation groups
+- create a direct connect gateway
+- create a link aggregation group to bundle multiple connections for redundancy
+- aws
+- create lag
+- virtual interfaces providing network access
+- network engineer provisioning and managing dedicated connections and virtual interfaces
+- managing virtual interfaces and bgp peering
+- Cloud Architect
+- create a private virtual interface for vpc access
+- list all direct connect connections
+- describe virtual interfaces
+- list all virtual interfaces
 slug: hybrid-network-connectivity
 tags:
 - Amazon Direct Connect

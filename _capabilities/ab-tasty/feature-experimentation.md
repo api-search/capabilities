@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - decision-api
 description: Unified workflow for server-side feature experimentation, A/B testing, and feature flag management. Enables developers and product teams to evaluate campaigns, retrieve flag values, and track activations for controlled rollouts and experiments.
@@ -25,42 +26,42 @@ personas: []
 provider_name: AB Tasty
 provider_slug: ab-tasty
 search_terms:
-- get visitor campaigns
-- experimentation
-- ab tasty
-- activate experiment
-- quality assurance engineer using remote control api to test experiments
-- feature flags
-- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
-- conversion tracking and experiment measurement
-- personalization
-- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
-- backend or frontend developer implementing server-side experiments and feature flags
-- product manager monitoring experiment assignments and flag rollouts
-- retrieve a specific campaign assignment for a visitor
-- get flags
-- progressive feature releases and feature toggles
-- get visitor campaign
-- feature flag evaluation operations
-- retrieve campaign assignments for a visitor based on context
 - evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
-- a/b testing, multivariate testing, and experiment management
-- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
-- manual campaign activation
-- manually activate a campaign variation for a visitor
-- aggregation
-- get assignment for a specific campaign by id
-- Product Manager
-- get campaign
-- retrieve feature flag values and metadata for a visitor
-- get campaigns
-- get visitor flags
-- Developer
-- a/b testing
-- server side
+- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
+- conversion tracking and experiment measurement
 - unified workflow for server-side feature experimentation, a/b testing, and feature flag management
+- get visitor campaign
+- get flags
+- retrieve campaign assignments for a visitor based on context
+- retrieve feature flag values and metadata for a visitor
+- Developer
+- aggregation
+- manually activate a campaign variation for a visitor
+- activate experiment
+- get assignment for a specific campaign by id
+- progressive feature releases and feature toggles
+- get campaign
+- feature flag evaluation operations
+- get visitor campaigns
 - activate campaign
+- experimentation
+- a/b testing
+- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
+- get visitor flags
+- backend or frontend developer implementing server-side experiments and feature flags
+- ab tasty
+- get campaigns
 - evaluate visitor context and retrieve all matching campaign assignments
+- feature flags
+- product manager monitoring experiment assignments and flag rollouts
+- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
+- a/b testing, multivariate testing, and experiment management
+- server side
+- quality assurance engineer using remote control api to test experiments
+- personalization
+- manual campaign activation
+- Product Manager
+- retrieve a specific campaign assignment for a visitor
 slug: feature-experimentation
 tags:
 - AB Tasty

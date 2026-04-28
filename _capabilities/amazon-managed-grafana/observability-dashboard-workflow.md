@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - managed-grafana
 description: Workflow capability for platform and operations teams to create and manage Grafana workspaces, dashboards, and access controls for observability on Amazon Managed Grafana.
@@ -17,29 +19,29 @@ personas: []
 provider_name: Amazon Managed Grafana
 provider_slug: amazon-managed-grafana
 search_terms:
+- get configuration and authentication details of a grafana workspace
 - list grafana workspaces
-- create a new grafana workspace for observability dashboards
-- create grafana workspace
-- aws
-- observability
 - dashboards
+- grafana workspaces
+- create workspace api key
+- update grafana workspace configuration, authentication, or data sources
+- grafana
 - create an api key for programmatic grafana workspace access
+- list all grafana workspaces for observability dashboards
+- get workspace details
+- observability
+- list workspaces
 - update workspace
 - visualization
-- list workspaces
-- update grafana workspace configuration, authentication, or data sources
-- grafana workspaces
-- monitoring
-- list all grafana workspaces for observability dashboards
-- get configuration and authentication details of a grafana workspace
-- grafana
-- Operations Engineer
-- Platform Engineer
-- create a workspace
-- get workspace details
 - create workspace
+- monitoring
+- aws
+- create grafana workspace
+- create a workspace
+- Operations Engineer
+- create a new grafana workspace for observability dashboards
 - amazon
-- create workspace api key
+- Platform Engineer
 slug: observability-dashboard-workflow
 tags:
 - Amazon

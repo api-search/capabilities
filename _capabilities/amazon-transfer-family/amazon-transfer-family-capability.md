@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Transfer Family
 provider_slug: amazon-transfer-family
 search_terms:
+- ftp
 - file transfer
 - aws
 - sftp
-- ftp
 slug: amazon-transfer-family-capability
 tags: []
 tools: []

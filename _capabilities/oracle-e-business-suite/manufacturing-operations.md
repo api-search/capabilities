@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - oracle-manufacturing
 - oracle-supply-chain
@@ -26,52 +28,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- mfg get bill of material by id
-- manufacturing
-- list boms.
 - mfg create discrete job
-- list discrete jobs.
-- production
-- mfg get discrete job by id
-- oracle
-- list inventory items.
-- retrieve sales orders.
 - complete an assembly.
-- retrieve on-hand quantities.
-- business applications
-- mfg issue material
-- create a discrete job.
-- inv get onhand quantities
-- bom management.
-- retrieve discrete jobs.
-- on-hand quantity management.
-- mfg get discrete jobs
-- mfg get bills of material
-- issue material to a job.
-- get bills of material
-- get onhand quantities
+- mfg get routings
 - retrieve deliveries.
+- list on-hand quantities.
+- retrieve wip operations.
+- retrieve discrete jobs.
+- mfg complete assembly
+- get onhand quantities
+- mfg issue material
+- e-business suite
+- get discrete jobs
 - inv get sales orders
 - discrete job management.
-- retrieve routings.
-- erp
+- mfg get bills of material
+- inv get deliveries
+- business applications
+- bom management.
 - get bom by id.
 - get discrete job by id.
-- inv get inventory items
-- inv get deliveries
-- inventory item management.
+- retrieve on-hand quantities.
 - retrieve inventory items.
-- e-business suite
 - mfg get wip operations
-- retrieve bills of material.
 - enterprise
-- retrieve wip operations.
-- mfg complete assembly
-- list on-hand quantities.
-- supply chain
-- mfg get routings
-- get discrete jobs
+- mfg get bill of material by id
+- on-hand quantity management.
+- list inventory items.
+- retrieve bills of material.
+- get bills of material
+- mfg get discrete job by id
+- list discrete jobs.
+- production
+- manufacturing
+- inventory item management.
+- create a discrete job.
+- retrieve routings.
+- inv get inventory items
+- erp
+- oracle
+- mfg get discrete jobs
 - get inventory items
+- retrieve sales orders.
+- list boms.
+- issue material to a job.
+- supply chain
+- inv get onhand quantities
 slug: manufacturing-operations
 tags:
 - Oracle

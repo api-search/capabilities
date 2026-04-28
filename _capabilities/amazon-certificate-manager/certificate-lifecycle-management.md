@@ -1,4 +1,6 @@
 ---
+categories:
+- security
 consumed_apis:
 - acm
 description: Unified workflow for managing SSL/TLS certificate lifecycles on AWS, enabling DevOps engineers and security teams to provision, inspect, and retire certificates for websites and internal services.
@@ -25,34 +27,34 @@ personas: []
 provider_name: Amazon Certificate Manager
 provider_slug: amazon-certificate-manager
 search_terms:
-- ssl
-- get full details of a specific acm certificate
 - delete an acm certificate by arn. cannot delete certificates in use by aws services.
-- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
-- security professionals overseeing certificate compliance and expiry monitoring
-- certificates
-- aws
-- inspect or delete a specific certificate
-- Security Engineer
-- tls
-- manage the full lifecycle of acm ssl/tls certificates
-- encryption
-- list all acm certificates with optional status filtering
-- request a new acm ssl/tls certificate for a domain using dns or email validation
-- list certificates
 - delete an acm certificate
-- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- request a new acm ssl/tls certificate for a domain using dns or email validation
+- inspect or delete a specific certificate
+- list certificates
+- manage the full lifecycle of acm ssl/tls certificates
 - amazon web services
+- tls
+- list all acm certificates with optional status filtering
 - security
-- delete certificate
-- request certificate
-- devops
-- request a new ssl/tls certificate with dns or email validation
 - DevOps Engineer
-- list all acm ssl/tls certificates, optionally filtered by status
-- engineers managing infrastructure and certificate rotation for web services
+- request a new ssl/tls certificate with dns or email validation
+- security professionals overseeing certificate compliance and expiry monitoring
+- ssl
 - ssl/tls certificate provisioning, validation, and lifecycle operations
+- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
+- engineers managing infrastructure and certificate rotation for web services
+- Security Engineer
 - describe certificate
+- delete certificate
+- devops
+- request certificate
+- certificates
+- get full details of a specific acm certificate
+- list all acm ssl/tls certificates, optionally filtered by status
+- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- aws
+- encryption
 slug: certificate-lifecycle-management
 tags:
 - Amazon Web Services

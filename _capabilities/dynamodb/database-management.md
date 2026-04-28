@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - dynamodb
 description: Unified workflow for managing DynamoDB tables, items, queries, batch operations, transactions, and backups. Used by backend developers and data engineers.
@@ -45,61 +46,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- list dynamodb tables.
-- batch get item
-- database management
-- get an item by primary key.
-- create or replace an item.
-- update an item.
-- batch write item
-- create an on-demand backup.
-- scan a table.
-- database
-- get item
+- get an item.
+- create table
 - query operations.
-- document store
+- describe table
+- batch get item
+- update a table.
+- update an item.
+- delete item
+- batch write item
+- put or delete multiple items in batch.
+- list tables.
+- get items in a transaction.
 - list on-demand backups.
 - serverless
-- list tables.
-- describe table
-- transact write items
-- query
-- delete an item.
-- query items by primary key.
-- scan
-- create a new dynamodb table.
-- cloud
-- get items in a transaction.
-- list backups
-- aws
-- individual table management.
-- transact get items
-- scan an entire table or index.
-- delete item
-- create a table.
-- put item
-- get an item.
-- update a table.
-- create table
-- delete a dynamodb table.
-- nosql
-- table management.
-- update item
+- list dynamodb tables.
 - create backup
-- delete table
-- put or delete multiple items in batch.
-- item operations.
-- list tables
-- managed service
-- key-value
-- dynamodb
-- describe a table.
-- delete a table.
-- get multiple items from one or more tables.
-- write items in a transaction.
+- scan a table.
+- create or replace an item.
+- query items by primary key.
+- database
 - update table
-- describe a dynamodb table.
+- managed service
 - query items.
+- individual table management.
+- describe a dynamodb table.
+- delete a dynamodb table.
+- database management
+- get multiple items from one or more tables.
+- delete an item.
+- nosql
+- write items in a transaction.
+- create a new dynamodb table.
+- delete table
+- scan
+- dynamodb
+- document store
+- table management.
+- list tables
+- create a table.
+- query
+- update item
+- transact get items
+- transact write items
+- describe a table.
+- aws
+- create an on-demand backup.
+- key-value
+- delete a table.
+- get an item by primary key.
+- get item
+- scan an entire table or index.
+- list backups
+- cloud
+- put item
+- item operations.
 slug: database-management
 tags:
 - AWS

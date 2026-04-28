@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis:
 - aimlapi
 description: Unified workflow for accessing 400+ AI models via AIMLAPI gateway including chat completions, image generation, embeddings, and model discovery. Used by developers building AI-powered applications.
@@ -25,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- AI Engineer
-- generate vector embeddings for semantic search and rag applications
-- machine learning
+- list models
+- create embeddings
+- developer tools
+- artificial intelligence
+- generate an image
+- discover all 400+ available ai models on aimlapi platform
+- llm
 - create embedding
-- embeddings
-- list all models
+- list available models
+- Developer
+- create chat completion
+- ai models
+- chat completions via 400+ llms
+- AI Engineer
 - ai model inference across modalities
 - image generation
-- discover all 400+ available ai models on aimlapi platform
-- create image
-- generate image
-- speech
-- artificial intelligence
-- video generation
-- create chat completion
-- generate an image
-- api gateway
-- generate embeddings
-- generate a chat response from any of 400+ ai language models via aimlapi
-- generate an image from a text prompt using aimlapi image generation models
-- create embeddings
-- llm
-- list models
-- chat completions via 400+ llms
 - developer integrating ai capabilities into applications via aimlapi
-- list available models
-- ai models
+- list all models
+- generate image
+- api gateway
+- generate an image from a text prompt using aimlapi image generation models
+- create a chat completion
 - api key management and model discovery
 - access 400+ ai models for chat, image generation, embeddings, and model discovery
-- create a chat completion
-- Developer
+- generate a chat response from any of 400+ ai language models via aimlapi
+- machine learning
 - ai engineer evaluating and comparing models for ml pipelines
-- developer tools
+- speech
+- generate embeddings
+- create image
+- generate vector embeddings for semantic search and rag applications
+- video generation
+- embeddings
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

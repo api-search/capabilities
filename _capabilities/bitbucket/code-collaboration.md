@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - cloud-rest-api
 description: Workflow capability for code collaboration using Bitbucket - managing repositories, pull requests, code reviews, and CI/CD pipelines. Used by developers and DevOps engineers.
@@ -41,57 +43,57 @@ personas: []
 provider_name: Bitbucket
 provider_slug: bitbucket
 search_terms:
-- code review
-- trigger pipeline
-- ci/cd pipeline management
-- list pipelines
-- repository management
-- merge pullrequest
-- repository management, pull requests, code reviews, and ci/cd pipelines
-- create a new git repository
-- list repositories
-- create a pull request
-- atlassian
-- git
-- bitbucket
-- list ci/cd pipelines
-- get pullrequest
-- trigger a new ci/cd pipeline
-- get pull request details
-- code collaboration
-- continuous integration and deployment pipelines
-- create pullrequest
-- repository hosting
-- manages ci/cd pipelines, deployments, and repository settings
-- merge a pull request
-- pull requests
-- managing git repositories, branches, and commits
-- stop a running pipeline
-- get repository
-- get repository details
-- list pullrequests
-- pull request management
-- stop pipeline
-- create a repository
-- version control
-- decline a pull request
-- devops
-- pull request workflows and code reviews
-- list pull requests
-- list pull requests for a repository
-- trigger a pipeline
-- list repositories in a workspace
-- create a new pull request
-- get pipeline
-- delete a repository
-- decline pullrequest
-- Developer
-- DevOps Engineer
-- get pipeline execution details
 - create repository
+- create a pull request
+- code collaboration
+- list repositories
+- atlassian
+- Developer
 - delete repository
 - writes code, creates pull requests, and reviews code
+- bitbucket
+- pull requests
+- get pull request details
+- merge pullrequest
+- repository management, pull requests, code reviews, and ci/cd pipelines
+- get pipeline execution details
+- pull request workflows and code reviews
 - ci/cd
+- DevOps Engineer
+- manages ci/cd pipelines, deployments, and repository settings
+- ci/cd pipeline management
+- trigger a pipeline
+- delete a repository
+- list repositories in a workspace
+- list pullrequests
+- create a new pull request
+- code review
+- list pull requests for a repository
+- git
+- devops
+- trigger pipeline
+- decline pullrequest
+- merge a pull request
+- list pull requests
+- get repository
+- get repository details
+- repository management
+- decline a pull request
+- list ci/cd pipelines
+- get pipeline
+- create a new git repository
+- get pullrequest
+- repository hosting
+- create a repository
+- trigger a new ci/cd pipeline
+- continuous integration and deployment pipelines
+- stop pipeline
+- stop a running pipeline
+- version control
+- create pullrequest
+- pull request management
+- managing git repositories, branches, and commits
+- list pipelines
 slug: code-collaboration
 tags:
 - Bitbucket

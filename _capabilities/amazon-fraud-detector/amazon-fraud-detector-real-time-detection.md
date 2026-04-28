@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Orchestrate ML models and business rules for real-time transaction fraud scoring and decision-making.
 layout: capability
@@ -9,12 +10,12 @@ provider_name: Amazon Fraud Detector
 provider_slug: amazon-fraud-detector
 search_terms:
 - machine learning
-- aws
 - financial services
-- fraud detection
+- financial security
+- aws
 - security
 - real-time
-- financial security
+- fraud detection
 slug: amazon-fraud-detector-real-time-detection
 tags:
 - Fraud Detection

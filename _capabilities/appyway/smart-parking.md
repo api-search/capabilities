@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - appyway
 description: Workflow capability for smart parking and urban mobility management using AppyWay. Provides real-time parking availability and traffic data for cities, fleet operators, and mobility app developers.
@@ -9,27 +10,27 @@ personas: []
 provider_name: AppyWay
 provider_slug: appyway
 search_terms:
-- parking
+- traffic management
+- uses traffic and parking data for urban mobility planning
+- finds available parking spaces near a location using appyway real-time data
+- location data for parking bays with restrictions and charging
+- traffic
+- smart parking
+- checks real-time traffic congestion and flow data for route planning
+- lists kerbside parking locations with restrictions and ev charging availability
+- check traffic congestion
+- find and route to available parking using real-time appyway data
+- finds available parking and avoids congestion zones
+- smart cities
+- real-time and historical traffic flow data
+- ev charging
+- urban mobility
 - real-time data on parking space availability
 - appyway
-- lists kerbside parking locations with restrictions and ev charging availability
-- find and route to available parking using real-time appyway data
-- uses traffic and parking data for urban mobility planning
-- list kerbside locations
-- smart cities
-- urban mobility
 - manages fleet routing and parking compliance using kerbside data
-- location data for parking bays with restrictions and charging
-- checks real-time traffic congestion and flow data for route planning
-- finds available parking spaces near a location using appyway real-time data
-- finds available parking and avoids congestion zones
-- smart parking
-- traffic
 - find available parking
-- traffic management
-- check traffic congestion
-- ev charging
-- real-time and historical traffic flow data
+- list kerbside locations
+- parking
 slug: smart-parking
 tags:
 - AppyWay

@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - activemq-rest
 description: Unified capability for Apache ActiveMQ messaging operations and broker management. Used by application developers and platform operators to send/receive messages and monitor broker health.
@@ -21,34 +23,34 @@ personas: []
 provider_name: Apache ActiveMQ
 provider_slug: apache-activemq
 search_terms:
-- produce and consume messages.
-- java
-- send message
-- receive message
-- unified messaging and monitoring capability for activemq.
-- apache
-- receive a message from a queue or topic.
-- message broker
 - broker management
-- amqp
-- developers integrating applications with activemq for asynchronous messaging.
-- messaging
-- mqtt
 - read a broker jmx mbean attribute.
-- send a message to a queue or topic.
-- apache activemq
-- send a message to an activemq queue or topic.
 - Platform Operator
-- monitoring
-- jms
+- produce and consume messages.
 - operators monitoring and managing activemq broker health and performance.
 - read broker metric
-- monitor broker jmx attributes.
-- receive a message from an activemq queue or topic.
-- read a jmx mbean attribute from the activemq broker for monitoring.
+- send message
+- apache
+- apache activemq
+- developers integrating applications with activemq for asynchronous messaging.
+- receive a message from a queue or topic.
 - stomp
-- Application Developer
+- send a message to a queue or topic.
+- java
 - open source
+- receive a message from an activemq queue or topic.
+- unified messaging and monitoring capability for activemq.
+- monitoring
+- receive message
+- Application Developer
+- monitor broker jmx attributes.
+- amqp
+- send a message to an activemq queue or topic.
+- messaging
+- mqtt
+- read a jmx mbean attribute from the activemq broker for monitoring.
+- message broker
+- jms
 slug: activemq-messaging
 tags:
 - Apache ActiveMQ

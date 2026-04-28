@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - square
 description: Unified workflow for commerce operations combining payments, orders, catalog, inventory, checkout, invoicing, subscriptions, and refunds. Used by commerce developers and business operators to manage the full sales lifecycle.
@@ -61,102 +63,102 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- get an invoice.
-- get invoice
-- list catalog objects.
-- list disputes
-- list payments taken by the account.
-- catalog
-- manage disputes.
-- retrieve inventory counts.
-- list invoices for a location.
-- list payments
-- apply inventory adjustments.
-- batch change inventory
-- get a single catalog object.
-- create subscription
-- webhooks
-- manage invoices.
-- manage a specific order.
-- get details for a specific payment.
-- list invoices.
-- list catalog
-- search all orders.
-- inventory
-- get order
-- refunds
-- get catalog object
 - create a payment link.
-- square
-- manage refunds.
-- create a new order.
-- terminal
-- get dispute details.
-- retrieve an order by id.
-- list payments.
-- manage orders.
-- accept dispute
-- list payment links
-- cancel a payment.
-- manage payments.
-- disputes
-- payments
-- create a payment.
-- point of sale
-- create payment
-- refund a payment.
 - create a checkout payment link.
-- complete payment
-- manage payment links.
-- get order details.
-- search orders
-- financial technology
-- accept a dispute.
-- complete a payment.
-- subscriptions
-- labor
-- orders
-- invoicing
-- merchants
-- list disputes.
-- manage a specific payment.
-- refund payment
-- retail
-- search catalog objects
-- create a draft invoice.
-- create payment link
-- get payment
-- search subscriptions
 - search catalog objects.
-- list invoices
+- invoicing
+- list payment disputes.
+- get details for a specific payment.
+- manage payments.
 - ecommerce
-- list refunds.
-- manage catalog items.
-- list payment refunds.
-- list payment links.
-- create a subscription.
+- create a payment.
+- inventory
+- list invoices for a location.
 - commerce
+- create refund
+- manage catalog items.
+- refunds
+- complete payment
+- get payment details.
+- create or update a catalog object.
+- create a subscription.
+- payments
+- list refunds
+- complete a payment.
+- list invoices
+- search subscriptions
+- manage a specific order.
+- manage refunds.
+- list payments.
+- square
+- refund a payment.
+- point of sale
+- batch retrieve inventory counts
+- loyalty
+- financial technology
+- get dispute details.
+- get a single catalog object.
+- list refunds.
+- get dispute
+- apply inventory adjustments.
+- retail
+- accept a dispute.
+- get catalog object
+- get order
+- create invoice
+- accept dispute
+- get invoice
+- get payment
+- team
+- webhooks
+- search catalog objects
+- terminal
+- retrieve an order by id.
+- search orders
+- retrieve inventory counts.
+- manage invoices.
+- search all orders.
+- refund payment
+- list disputes
+- bookings
+- get order details.
+- catalog
+- manage payment links.
+- gift cards
+- list catalog
 - checkout
 - create an order.
-- create order
-- locations
-- get dispute
-- team
-- list refunds
-- manage subscriptions.
-- batch retrieve inventory counts
-- list payment disputes.
-- create refund
-- customers
-- create or update a catalog object.
+- get an invoice.
+- labor
+- list payment links.
 - search subscriptions.
-- get payment details.
-- upsert catalog object
 - cancel payment
-- gift cards
-- loyalty
-- create invoice
-- bookings
+- create order
+- manage subscriptions.
+- cancel a payment.
+- create subscription
+- list payment refunds.
+- list catalog objects.
+- customers
+- batch change inventory
+- list invoices.
+- disputes
+- manage disputes.
+- list payments taken by the account.
+- locations
+- manage orders.
+- merchants
+- create payment link
+- manage a specific payment.
+- create a new order.
+- subscriptions
+- list payments
+- orders
+- create payment
+- list disputes.
+- upsert catalog object
+- list payment links
+- create a draft invoice.
 slug: commerce-operations
 tags:
 - Square

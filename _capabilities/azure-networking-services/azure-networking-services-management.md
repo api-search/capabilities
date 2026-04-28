@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-networking-services
 description: Workflow capability for managing Azure Networking Services resources. Used by cloud engineers and DevOps teams.
@@ -14,23 +15,23 @@ provider_name: Azure Networking Services
 provider_slug: azure-networking-services
 search_terms:
 - azure
+- infrastructure
+- resource management
 - azure resource management
-- cloud
-- list virtual networks
 - list load balancers
+- list loadbalancer resources
 - list networkinterface resources
-- list virtualnetwork resources
+- networking
+- list
+- management
+- list network interfaces
+- list virtual networks
+- microsoft
+- cloud
 - list all resources
 - list subnet resources
-- list network interfaces
-- infrastructure
-- management
-- microsoft
-- networking
-- resource management
 - list subnets
-- list loadbalancer resources
-- list
+- list virtualnetwork resources
 slug: azure-networking-services-management
 tags:
 - Azure

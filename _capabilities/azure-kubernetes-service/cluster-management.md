@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - aks-rest
 description: Workflow for managing AKS clusters and agent pools including lifecycle operations, upgrades, scaling, and credentials. Used by DevOps engineers and platform administrators.
@@ -29,42 +31,42 @@ personas: []
 provider_name: Azure Kubernetes Service
 provider_slug: azure-kubernetes-service
 search_terms:
-- get the upgrade profile for a cluster
-- agent pool operations
-- list all aks managed clusters in a subscription
-- create or update agent pool
-- create or update an aks managed cluster
-- list clusters
-- list all managed clusters
-- delete an aks managed cluster
 - delete cluster
-- single cluster operations
-- cloud
-- orchestration
-- get agent pool details
-- start cluster
-- create or update an agent pool
-- get cluster details
-- get cluster
-- kubernetes
-- stop a running aks cluster
-- delete a cluster
-- delete agent pool
-- list agent pools
-- start a stopped aks cluster
 - get upgrade profile
-- containers
+- stop a running aks cluster
+- list all managed clusters
+- create or update an agent pool
 - get agent pool
-- devops
-- azure
-- get details of an aks cluster
-- list agent pools in a cluster
 - cluster management
-- create or update a cluster
-- create or update cluster
-- cluster lifecycle operations
-- delete an agent pool from a cluster
+- create or update agent pool
+- orchestration
+- cloud
+- list clusters
+- start a stopped aks cluster
+- get agent pool details
+- delete a cluster
+- create or update an aks managed cluster
+- kubernetes
+- get the upgrade profile for a cluster
+- containers
+- devops
 - stop cluster
+- get cluster
+- create or update a cluster
+- start cluster
+- delete agent pool
+- list all aks managed clusters in a subscription
+- azure
+- cluster lifecycle operations
+- get cluster details
+- create or update cluster
+- agent pool operations
+- single cluster operations
+- delete an aks managed cluster
+- get details of an aks cluster
+- list agent pools
+- list agent pools in a cluster
+- delete an agent pool from a cluster
 slug: cluster-management
 tags:
 - Azure

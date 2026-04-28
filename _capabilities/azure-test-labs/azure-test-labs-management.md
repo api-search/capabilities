@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-test-labs
 description: Workflow capability for managing Azure DevTest Labs resources. Used by cloud engineers and DevOps teams.
@@ -13,28 +14,28 @@ personas: []
 provider_name: Azure DevTest Labs
 provider_slug: azure-test-labs
 search_terms:
-- list formula resources
-- list virtualmachine resources
-- cloud
-- list custom images
-- list all resources
+- labs
 - management
-- list customimage resources
-- resource management
-- list labs
-- list environment resources
-- list environments
-- infrastructure
-- testing
-- development
 - list lab resources
-- azure
 - azure resource management
 - list virtual machines
-- list formulas
-- labs
-- virtual machines
+- testing
 - list
+- list all resources
+- list environments
+- development
+- list custom images
+- list environment resources
+- list labs
+- list virtualmachine resources
+- list formula resources
+- azure
+- infrastructure
+- resource management
+- list customimage resources
+- virtual machines
+- cloud
+- list formulas
 slug: azure-test-labs-management
 tags:
 - Azure

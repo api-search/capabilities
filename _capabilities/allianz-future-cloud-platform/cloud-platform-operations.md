@@ -1,4 +1,6 @@
 ---
+categories:
+- monitoring
 consumed_apis:
 - allianz-platform-services
 description: Workflow capability for platform engineering and DevOps teams operating the Allianz Future Cloud Platform, combining service management, deployment automation, observability, and infrastructure provisioning.
@@ -33,56 +35,56 @@ personas: []
 provider_name: Allianz Future Cloud Platform
 provider_slug: allianz-future-cloud-platform
 search_terms:
-- register a new insurance microservice on the kubernetes platform
-- get metrics
-- register a new microservice
-- developer building insurance microservices on the allianz future cloud platform
-- financial services
-- Insurance Product Developer
-- list deployments
-- cloud resource provisioning for microservice dependencies
-- engineer responsible for maintaining and evolving the allianz future cloud platform
-- metrics, monitoring, and alerting for platform health
-- get cpu, memory, request rate, error rate, and latency metrics for a service
-- list deployment history for a platform service including version and status
-- provision resource
-- microservice lifecycle management
-- get platform service
-- deploy platform service
-- observability
-- get service metrics
-- engineer deploying and operating insurance microservices on the platform
-- provision redis, rds, msk, or s3 resources for insurance microservices
-- list service deployments
-- register service
-- end-to-end platform operations for devops teams
-- kubernetes
-- list platform services
-- deploy service
-- platform observability metrics
-- trigger a rolling, blue-green, or canary deployment for a microservice
-- list services
-- insurance
-- list deployment history
-- list all microservices registered on the allianz future cloud platform
-- registration and lifecycle management of insurance microservices
 - cloud platform
-- enterprise
-- gitops-based deployment pipelines for microservice updates
-- get platform metrics
-- devops
-- get details and status of a specific platform service
-- Platform Engineer
-- register platform service
-- deployment management for services
-- list platform namespaces
-- provision infrastructure resource
-- platform engineering
-- DevOps Engineer
 - list kubernetes namespaces and their team ownership on the platform
+- list deployment history
+- trigger a rolling, blue-green, or canary deployment for a microservice
+- provision redis, rds, msk, or s3 resources for insurance microservices
+- deploy service
+- list services
+- list platform services
 - infrastructure provisioning
+- platform engineering
+- list service deployments
+- register a new insurance microservice on the kubernetes platform
+- get cpu, memory, request rate, error rate, and latency metrics for a service
+- get details and status of a specific platform service
+- get service metrics
+- deployment management for services
+- get metrics
+- engineer responsible for maintaining and evolving the allianz future cloud platform
+- enterprise
+- DevOps Engineer
+- engineer deploying and operating insurance microservices on the platform
+- observability
+- metrics, monitoring, and alerting for platform health
+- register platform service
+- register a new microservice
+- platform observability metrics
+- end-to-end platform operations for devops teams
+- deploy platform service
+- provision infrastructure resource
+- kubernetes
 - list all platform services
+- microservice lifecycle management
+- developer building insurance microservices on the allianz future cloud platform
+- devops
+- list deployments
+- list deployment history for a platform service including version and status
+- gitops-based deployment pipelines for microservice updates
+- cloud resource provisioning for microservice dependencies
+- list all microservices registered on the allianz future cloud platform
+- financial services
 - trigger a deployment
+- get platform metrics
+- provision resource
+- list platform namespaces
+- Insurance Product Developer
+- insurance
+- get platform service
+- registration and lifecycle management of insurance microservices
+- register service
+- Platform Engineer
 slug: cloud-platform-operations
 tags:
 - Cloud Platform

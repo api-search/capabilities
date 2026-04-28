@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - monitron
 description: Workflow capability for Amazon Monitron media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon Monitron
 provider_slug: amazon-monitron
 search_terms:
-- amazon monitron get project
-- developer building media processing applications
-- amazon monitron list projects
-- list jobs
-- amazon monitron media processing workflow
-- update project
-- amazon monitron update project
-- manage media processing jobs
-- create project
-- engineer managing broadcast media workflows
-- aws
-- amazon monitron associate project admin user
-- get project
-- amazon monitron delete project
-- amazon monitron list project admin users
-- list project admin users
-- amazon monitron get project admin user
-- Broadcast Engineer
-- list projects
-- media processing
-- workflow
-- Media Developer
-- aws media processing and delivery
-- media
 - broadcasting
-- amazon monitron create project
-- associate project admin user
+- amazon monitron get project admin user
+- amazon monitron list projects
+- amazon monitron get project
+- Broadcast Engineer
+- list project admin users
+- manage media processing jobs
 - get project admin user
+- amazon monitron create project
+- amazon monitron update project
+- create project
+- aws media processing and delivery
+- list projects
+- amazon monitron delete project
+- media
+- update project
+- associate project admin user
+- Media Developer
 - delete project
+- list jobs
+- get project
+- media processing
+- aws
+- workflow
+- amazon monitron media processing workflow
+- developer building media processing applications
+- engineer managing broadcast media workflows
+- amazon monitron associate project admin user
+- amazon monitron list project admin users
 slug: amazon-monitron-media-workflow
 tags:
 - AWS

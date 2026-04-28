@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - managed-apache-flink
 description: Workflow capability for data engineers and analysts to build, manage, and monitor Apache Flink streaming analytics applications on AWS.
@@ -17,29 +18,29 @@ personas: []
 provider_name: Amazon Managed Service for Apache Flink
 provider_slug: amazon-managed-apache-flink
 search_terms:
-- apache flink
-- start streaming application
-- big data
-- Analytics Engineer
-- start a flink application to begin real-time stream processing
 - flink streaming applications
-- Data Engineer
-- aws
-- create a new apache flink streaming analytics application on aws
+- start a flink application to begin real-time stream processing
+- start streaming application
 - real-time processing
-- create a streaming application
-- list streaming applications
-- stop streaming application
-- create application
-- list all streaming applications
-- stop a running flink streaming application
-- list applications
-- amazon
-- create streaming application
-- get configuration and status details of a flink application
 - get application details
+- create a new apache flink streaming analytics application on aws
+- Analytics Engineer
+- create a streaming application
+- list all streaming applications
+- create streaming application
+- Data Engineer
+- list applications
+- big data
+- apache flink
+- create application
+- stop streaming application
+- aws
+- stop a running flink streaming application
 - streaming analytics
 - list all flink streaming analytics applications
+- list streaming applications
+- amazon
+- get configuration and status details of a flink application
 slug: streaming-analytics-workflow
 tags:
 - Amazon

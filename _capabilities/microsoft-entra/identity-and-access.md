@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - entra-graph
 description: Unified workflow for managing identity and access including users, groups, applications, and service principals in Microsoft Entra ID. Used by IT administrators and identity engineers.
@@ -101,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- update application
-- application registration management.
-- zero trust
-- list all users in the directory.
-- create a new service principal.
-- list users
-- delete user
-- service principal management.
-- list group members.
-- get service principal
-- list all users in microsoft entra directory.
-- get user details.
-- get user properties by id.
-- entra
-- get application
-- update application properties.
-- delete group
-- get service principal details.
-- list members of a group.
-- create user
-- individual service principal management.
-- group membership management.
-- individual application management.
-- register a new application.
-- azure ad
-- create a new user.
-- list all groups.
-- get application details.
-- delete a user.
-- get group details.
-- list all applications.
-- create a new group.
 - create service principal
-- individual user management.
-- get group
-- remove group member
-- list applications
-- list all application registrations.
-- list user memberships
-- add group member
-- delete a group.
-- update group
-- create group
-- list all service principals.
-- authentication
-- group management.
-- delete an application.
-- update user properties.
-- microsoft entra
-- list user group memberships.
-- list all groups in the directory.
+- get user details.
 - access management
-- user group membership.
-- delete a service principal.
-- create application
-- update service principal.
-- delete service principal
-- security
-- network security
-- update group properties.
-- update service principal
-- identity governance
-- list group members
-- individual group management.
-- list groups
-- identity
-- list groups and roles a user belongs to.
-- update service principal properties.
-- list service principals
-- delete application
-- delete an application registration.
-- create a new user in the directory.
-- microsoft
-- directory management
-- delete a user from the directory.
-- add a member to a group.
-- remove a member from a group.
 - user account management.
+- get service principal details.
+- individual service principal management.
+- list all groups in the directory.
+- update service principal.
+- list all groups.
+- microsoft
 - get user
+- delete a user.
+- individual group management.
+- create application
+- delete application
+- list all service principals.
+- get service principal
+- delete user
+- create a new user.
+- get group details.
+- update application properties.
+- update application
+- delete service principal
+- list all applications.
+- create a new user in the directory.
+- individual application management.
+- list group members
+- list service principals
+- zero trust
+- get user properties by id.
+- group membership management.
+- service principal management.
+- directory management
+- create group
+- delete a group.
+- update service principal properties.
+- microsoft entra
+- authentication
+- remove a member from a group.
+- security
 - update user
+- user group membership.
+- identity
+- list users
+- update service principal
+- list all users in microsoft entra directory.
+- list groups and roles a user belongs to.
+- group management.
+- delete group
+- add group member
+- create user
+- add a member to a group.
+- entra
+- azure ad
+- delete an application.
+- list user memberships
+- update group
+- list all users in the directory.
+- create a new group.
+- application registration management.
+- list all application registrations.
+- register a new application.
+- get application
+- list members of a group.
+- delete a user from the directory.
+- remove group member
+- identity governance
+- individual user management.
+- get application details.
+- update user properties.
+- delete an application registration.
+- list applications
+- delete a service principal.
+- update group properties.
+- list group members.
+- list groups
+- list user group memberships.
+- create a new service principal.
+- get group
+- network security
 slug: identity-and-access
 tags:
 - Microsoft Entra

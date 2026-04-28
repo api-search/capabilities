@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-storage-accounts
 description: Workflow capability for managing Azure Storage Accounts resources. Used by cloud engineers and DevOps teams.
@@ -13,27 +14,27 @@ personas: []
 provider_name: Azure Storage Accounts
 provider_slug: azure-storage-accounts
 search_terms:
-- list file shares
-- blob storage
-- cloud
-- list all resources
 - list blobcontainer resources
-- management
+- file storage
 - list blob containers
-- resource management
+- management
+- storage
+- list fileshare resources
+- list storage accounts
+- azure resource management
+- queue storage
+- list
+- list all resources
 - list storageaccount resources
+- blob storage
+- list queue resources
+- azure
+- table storage
+- resource management
+- cloud
 - cloud storage
 - list queues
-- storage
-- queue storage
-- azure
-- azure resource management
-- list fileshare resources
-- list queue resources
-- list storage accounts
-- table storage
-- file storage
-- list
+- list file shares
 slug: azure-storage-accounts-management
 tags:
 - Azure

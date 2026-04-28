@@ -1,4 +1,6 @@
 ---
+categories:
+- object-storage
 consumed_apis:
 - efs
 description: Unified capability for managing EFS file systems, mount targets, and access points for storage administrators.
@@ -29,34 +31,34 @@ personas: []
 provider_name: Amazon EFS
 provider_slug: amazon-efs
 search_terms:
-- amazon efs describe mount targets
-- create file system
-- create mount target
-- amazon efs create file system
-- amazon efs describe file systems
-- serverless
-- describe file systems
-- describeFileSystems
-- createMountTarget
-- amazon efs
-- amazon efs delete file system
-- aws
-- file system
-- workflow capability for file system management.
 - describeMountTargets
-- deleteFileSystem
-- efs
-- amazon efs create mount target
-- delete file system
+- createFileSystem
+- file storage
+- describe file systems
+- createMountTarget
+- create file system
+- describe mount targets
 - storage
 - amazon web services
-- nfs
+- serverless
+- file system
 - engineers managing amazon efs resources on aws.
-- createFileSystem
-- file system management business domain for amazon efs.
-- describe mount targets
-- file storage
 - elastic file system
+- amazon efs create file system
+- file system management business domain for amazon efs.
+- efs
+- deleteFileSystem
+- describeFileSystems
+- create mount target
+- workflow capability for file system management.
+- amazon efs create mount target
+- amazon efs describe file systems
+- nfs
+- aws
+- amazon efs delete file system
+- amazon efs
+- amazon efs describe mount targets
+- delete file system
 slug: efs-management
 tags:
 - Amazon EFS

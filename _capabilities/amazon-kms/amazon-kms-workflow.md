@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - kms
 description: Unified workflow capability for Amazon KMS combining resource management and operations.
@@ -9,31 +10,31 @@ personas: []
 provider_name: Amazon KMS
 provider_slug: amazon-kms
 search_terms:
-- unified workflow for amazon kms resource management
-- returns a unique symmetric data key for use outside of kms.
-- cryptography
-- keys list keys
-- decrypts ciphertext that was encrypted by a kms key.
-- amazon kms
-- key management
-- aws
+- gets a list of all kms keys in the caller's aws account and region.
 - encrypts plaintext of up to 4,096 bytes using a kms key.
 - crypto generate data key
-- Administrator
-- encryption
-- keys create key
-- integrates api into applications
-- manages resources and configurations
-- data protection
-- keys describe key
-- provides detailed information about a kms key.
-- security
+- decrypts ciphertext that was encrypted by a kms key.
 - crypto encrypt
-- workflow
-- crypto decrypt
 - Developer
-- gets a list of all kms keys in the caller's aws account and region.
+- Administrator
+- keys describe key
+- crypto decrypt
+- provides detailed information about a kms key.
+- keys list keys
+- cryptography
+- security
 - creates a unique customer managed kms key in your aws account and region.
+- unified workflow for amazon kms resource management
+- key management
+- keys create key
+- data protection
+- returns a unique symmetric data key for use outside of kms.
+- integrates api into applications
+- amazon kms
+- aws
+- workflow
+- manages resources and configurations
+- encryption
 slug: amazon-kms-workflow
 tags:
 - Amazon KMS

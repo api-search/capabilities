@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - stock
 description: Stock asset discovery, licensing, and management workflow using the Adobe Stock API. Used by content curators, marketing teams, and creative directors to search for stock photos, illustrations, vectors, and videos, license them for projects, and manage licensing history and quotas.
@@ -45,53 +46,53 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- adobe
-- license a stock photo
-- get licensing statistics
-- search the adobe stock library for photos, illustrations, vectors, and videos
-- get member profile
-- digital assets
-- licensing
-- get category tree
-- image licensing
-- license history
-- get detailed metadata for a specific stock file by content id
-- content sourcing
-- get license history for the member
 - get the hierarchical category tree for adobe stock content
-- license a stock video clip for use in a project
-- get the stock content category tree
-- stock content categories
-- license video
-- license a stock video clip
-- search the adobe stock library
-- search stock files
-- get license stats
-- vector and illustration licensing
-- video licensing
-- stock
-- licensing statistics
-- get licensing statistics for the authenticated member
-- get the authenticated member profile
-- stock file metadata
-- video
 - license a vector or illustration
-- get the license history for the authenticated member
-- license a stock photo for use in a project
-- design
-- get the authenticated adobe stock member profile and quota information
-- license image
-- search
-- get license history
-- stock content search
-- get stock file metadata
-- member profile and quota
-- graphics
-- license a vector or illustration for use in a project
-- license vector
-- creative
+- stock file metadata
 - get metadata for a specific stock file
+- video licensing
+- license video
+- get detailed metadata for a specific stock file by content id
+- graphics
+- license a stock photo
+- get member profile
+- get the stock content category tree
 - photography
+- license vector
+- member profile and quota
+- content sourcing
+- license a stock video clip for use in a project
+- stock content search
+- get licensing statistics
+- search stock files
+- get the license history for the authenticated member
+- license a vector or illustration for use in a project
+- creative
+- search the adobe stock library for photos, illustrations, vectors, and videos
+- stock
+- license image
+- stock content categories
+- vector and illustration licensing
+- licensing
+- licensing statistics
+- get the authenticated adobe stock member profile and quota information
+- search the adobe stock library
+- get the authenticated member profile
+- license a stock photo for use in a project
+- digital assets
+- get license history
+- adobe
+- get license stats
+- video
+- design
+- get licensing statistics for the authenticated member
+- license a stock video clip
+- get stock file metadata
+- get license history for the member
+- license history
+- get category tree
+- search
+- image licensing
 slug: stock-asset-sourcing
 tags:
 - Adobe

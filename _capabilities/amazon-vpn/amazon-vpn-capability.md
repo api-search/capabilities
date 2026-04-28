@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
-- security
+- vpn
 - networking
 - aws
-- vpn
+- security
 slug: amazon-vpn-capability
 tags: []
 tools: []

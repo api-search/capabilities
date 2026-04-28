@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon WAF
 provider_slug: amazon-waf
 search_terms:
-- bot management
+- ddos protection
+- waf
 - aws
 - web application firewall
-- waf
 - security
-- ddos protection
+- bot management
 slug: amazon-waf-capability
 tags: []
 tools: []

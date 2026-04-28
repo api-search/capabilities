@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - concur-expense
 description: Unified expense management workflow combining report creation, expense tracking, approval workflows, and allocation management. Used by finance teams, approvers, and employees to manage the full expense lifecycle.
@@ -41,55 +42,55 @@ personas: []
 provider_name: SAP Concur
 provider_slug: sap-concur
 search_terms:
-- update an unsubmitted expense report.
-- individual report operations.
-- get expense allocations.
+- create a new expense report.
+- approve report
+- delete report
+- retrieve an expense report by id.
+- get expenses
+- expense management
+- get report
+- send back report
+- get expense entries for a report.
+- create report comment
+- retrieve a report.
+- submit report.
+- get comments
+- approve an expense report.
 - business travel
+- update an unsubmitted expense report.
+- add a report comment.
+- expense entry operations.
+- submit an expense report for approval.
+- approve report.
+- get report comments.
+- get allocations
+- individual report operations.
+- sap concur
+- get report comments
+- approval workflows
+- recall a submitted expense report.
+- get expense
+- list expense reports pending approval.
+- travel management
+- create comment
+- update report
 - get comments on an expense report.
 - financial services
-- list expense reports pending approval.
-- send back report
-- create report comment
-- delete report
-- approve report
-- get report
-- get expense
-- sap concur
-- approve report.
-- submit an expense report for approval.
-- get reports to approve
-- approve an expense report.
-- update report
-- approval workflows
-- create a new expense report.
-- get comments
-- get expense entries for a report.
-- submit report.
-- retrieve a report.
-- get a single expense entry.
-- submit report
-- retrieve an expense report by id.
-- add a comment to an expense report.
-- create report
-- submit for approval.
-- expense entry operations.
-- delete an unsubmitted expense report.
-- get report comments
-- invoice management
-- create comment
-- get allocations
-- get expenses
-- report comments.
-- get report comments.
-- expense management
-- get expenses for a report.
-- expense report lifecycle management.
 - send back an expense report for revision.
-- add a report comment.
-- travel management
-- recall report
-- recall a submitted expense report.
+- submit for approval.
+- report comments.
 - get reports pending approval.
+- get expense allocations.
+- get expenses for a report.
+- delete an unsubmitted expense report.
+- get a single expense entry.
+- recall report
+- expense report lifecycle management.
+- invoice management
+- create report
+- submit report
+- add a comment to an expense report.
+- get reports to approve
 slug: expense-management
 tags:
 - SAP Concur

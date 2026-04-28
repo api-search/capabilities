@@ -1,4 +1,6 @@
 ---
+categories:
+- customer-engagement
 consumed_apis:
 - loyalty-promotions
 - loyalty-user-mgmt
@@ -35,53 +37,53 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- personalized offers
-- enroll a cardholder in a loyalty promotion
-- get merchant offer content
 - get personalized merchant offers for a cardholder
-- create donation
-- rewards
-- get points balance
-- financial services
-- submit a loyalty insurance claim
-- apply loyalty rewards as payment
-- activate offer
 - credit cards
-- check eligibility
-- check cardholder benefit eligibility
-- list priceless experiences
-- get loyalty points balance
-- get merchant offer content and promotional materials
-- create a loyalty program user
-- check cardholder benefit eligibility by pan
-- get personalized offers for a cardholder
-- priceless
-- list available loyalty promotions
-- check benefit eligibility
-- mastercard
-- get loyalty user details
-- submit insurance claim
-- list experiences
-- get loyalty user
-- offers
-- pay with rewards
-- enroll in promotion
-- create loyalty user
-- create a charitable donation
-- digital identity
-- payments
-- loyalty
-- priceless experiences
-- allocate a benefit to a cardholder
-- open banking
-- get personalized offers
-- activate an offer for a cardholder
-- allocate benefit
-- loyalty promotions
-- fraud detection
-- benefit eligibility checks
 - list available priceless experiences
+- loyalty
+- activate an offer for a cardholder
+- list priceless experiences
+- check cardholder benefit eligibility by pan
+- allocate benefit
+- personalized offers
+- apply loyalty rewards as payment
+- digital identity
+- create loyalty user
+- rewards
+- get loyalty user details
+- create a loyalty program user
+- get merchant offer content and promotional materials
+- get merchant offer content
+- open banking
+- check benefit eligibility
+- loyalty promotions
+- get loyalty points balance
+- offers
+- activate offer
+- submit insurance claim
+- check cardholder benefit eligibility
+- create a charitable donation
 - list promotions
+- priceless
+- enroll in promotion
+- pay with rewards
+- list available loyalty promotions
+- allocate a benefit to a cardholder
+- benefit eligibility checks
+- enroll a cardholder in a loyalty promotion
+- mastercard
+- fraud detection
+- get personalized offers
+- list experiences
+- financial services
+- check eligibility
+- submit a loyalty insurance claim
+- payments
+- create donation
+- priceless experiences
+- get loyalty user
+- get points balance
+- get personalized offers for a cardholder
 slug: loyalty-and-offers
 tags:
 - Mastercard

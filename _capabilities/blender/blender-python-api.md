@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,14 +9,14 @@ personas: []
 provider_name: Blender
 provider_slug: blender
 search_terms:
-- python
-- animation
-- vfx
 - modeling
-- rendering
-- game development
 - 3d
+- rendering
+- vfx
+- animation
+- game development
 - open source
+- python
 slug: blender-python-api
 tags: []
 tools: []

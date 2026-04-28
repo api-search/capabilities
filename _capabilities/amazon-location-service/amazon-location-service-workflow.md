@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - location-service
 description: Unified workflow capability for Amazon Location Service combining resource management and operations.
@@ -9,25 +10,25 @@ personas: []
 provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
-- amazon location service
-- creates a map resource in your aws account.
-- geocoding
-- geofencing
-- aws
-- routing
-- unified workflow for amazon location service resource management
-- location
-- Administrator
-- integrates api into applications
-- manages resources and configurations
 - lists map resources in your aws account.
-- retrieves the map resource details.
-- map resources create map
-- workflow
-- map resources list maps
-- maps
-- Developer
 - map resources describe map
+- unified workflow for amazon location service resource management
+- Developer
+- Administrator
+- location
+- map resources create map
+- retrieves the map resource details.
+- routing
+- maps
+- amazon location service
+- geofencing
+- creates a map resource in your aws account.
+- map resources list maps
+- integrates api into applications
+- aws
+- workflow
+- geocoding
+- manages resources and configurations
 slug: amazon-location-service-workflow
 tags:
 - Amazon Location Service

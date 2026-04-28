@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ontap
 description: Unified workflow for managing NetApp ONTAP storage infrastructure including volumes, aggregates, SVMs, snapshots, and network interfaces. Used by storage administrators for provisioning and day-to-day management.
@@ -57,57 +58,57 @@ personas: []
 provider_name: NetApp
 provider_slug: netapp
 search_terms:
-- network interface management
-- ontap
-- storage volume management
-- list svms
-- delete a storage volume
-- list storage volumes
-- update properties of an existing volume
-- individual volume operations
-- cloud
-- aggregate management
-- cluster information and configuration
-- list nodes
-- delete volume
-- create a point-in-time snapshot of a volume
-- create snapshot
-- data management
-- create a new volume
-- update a volume
-- delete a volume
-- list volumes
-- storage virtual machine management
-- create a new storage volume on a specified svm and aggregate
-- list storage virtual machines in the cluster
-- list volume snapshots
-- get cluster
-- volume snapshot management
-- list storage aggregates (local tiers) in the cluster
-- retrieve a specific volume
-- data protection
-- cluster node management
-- list storage aggregates
-- create a volume snapshot
-- list all storage volumes across the cluster
-- retrieve detailed information about a specific volume
-- infrastructure
-- list snapshots
-- list snapshots for a specific volume
-- netapp
-- get volume
-- retrieve cluster information
-- storage
-- hybrid cloud
-- list network interfaces (lifs) in the cluster
-- storage management
-- list network interfaces
 - create volume
+- delete volume
+- list nodes
+- netapp
 - retrieve ontap cluster information including name, version, and health
-- update volume
+- aggregate management
+- retrieve detailed information about a specific volume
+- list snapshots for a specific volume
+- retrieve cluster information
+- storage virtual machine management
+- cluster information and configuration
+- create a new storage volume on a specified svm and aggregate
+- storage
+- retrieve a specific volume
 - list aggregates
+- delete a storage volume
+- list storage aggregates (local tiers) in the cluster
+- data management
+- hybrid cloud
+- list all storage volumes across the cluster
+- get volume
+- create a new volume
+- create snapshot
+- list network interfaces
+- list storage virtual machines in the cluster
+- storage management
+- create a point-in-time snapshot of a volume
+- list network interfaces (lifs) in the cluster
+- delete a volume
 - list cluster nodes
+- list storage volumes
+- list volumes
+- list volume snapshots
+- storage volume management
 - list all nodes in the ontap cluster
+- update properties of an existing volume
+- list snapshots
+- list svms
+- get cluster
+- network interface management
+- data protection
+- individual volume operations
+- update a volume
+- infrastructure
+- list storage aggregates
+- ontap
+- cluster node management
+- update volume
+- cloud
+- volume snapshot management
+- create a volume snapshot
 slug: storage-management
 tags:
 - NetApp

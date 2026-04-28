@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,10 +9,10 @@ personas: []
 provider_name: Amazon Systems Manager
 provider_slug: amazon-systems-manager
 search_terms:
-- management
-- aws
 - operations
 - automation
+- management
+- aws
 slug: amazon-systems-manager-capability
 tags: []
 tools: []

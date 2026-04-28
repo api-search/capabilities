@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - knox-admin
 description: Workflow capability for Hadoop administrators and security engineers to manage Knox gateway topologies, service descriptors, and provider configurations.
@@ -21,30 +22,30 @@ personas: []
 provider_name: Apache Knox
 provider_slug: apache-knox
 search_terms:
-- authentication
+- sso
+- get apache knox gateway version information
+- list all knox gateway topologies and their service urls
+- get knox version
 - security engineering
+- apache knox
+- delete topology
+- authentication
+- security
+- api gateway
+- Hadoop Administrator
+- open source
+- engineers who configure authentication and authorization for knox
+- hadoop administration
 - Security Engineer
+- delete a knox gateway topology
+- get the configuration details of a specific knox topology
+- get topology
+- admins who configure knox topologies for hadoop cluster access
 - list topologies
 - gateway management
-- admins who configure knox topologies for hadoop cluster access
-- get topology
 - hadoop
-- sso
-- engineers who configure authentication and authorization for knox
-- get the configuration details of a specific knox topology
-- hadoop administration
-- get knox version
-- api gateway
-- list all knox gateway topologies and their service urls
-- apache knox
-- get apache knox gateway version information
-- security
-- delete a knox gateway topology
-- delete topology
 - create or update a knox gateway topology
-- Hadoop Administrator
 - create topology
-- open source
 slug: gateway-management
 tags:
 - Apache Knox

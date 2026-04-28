@@ -1,4 +1,6 @@
 ---
+categories:
+- travel-booking
 consumed_apis:
 - aa-runway
 description: Unified workflow for travel applications and agents accessing American Airlines flight data, status, and booking capabilities. Serves travel technology teams and booking platform developers.
@@ -17,27 +19,27 @@ personas: []
 provider_name: American Airlines
 provider_slug: american-airlines
 search_terms:
-- travel
-- flight search and schedules
 - real-time flight status
-- Booking Agent
-- uses flight data to assist customers with bookings
-- search american airlines flight schedules by origin, destination, and date
-- builds travel apps integrating american airlines flight data
-- travel app workflow for searching and tracking american airlines flights
-- flights
-- airlines
 - get flight status
+- flights
+- american airlines
+- flight search and schedules
+- Booking Agent
+- Travel Technology Developer
+- airlines
+- aviation
 - booking
 - get real-time status of an american airlines flight
+- builds travel apps integrating american airlines flight data
+- uses flight data to assist customers with bookings
+- travel app workflow for searching and tracking american airlines flights
+- search american airlines flight schedules by origin, destination, and date
+- travel
+- search flight schedules
+- flight operations
+- developer experience
 - search flights
 - travel technology
-- developer experience
-- flight operations
-- search flight schedules
-- Travel Technology Developer
-- aviation
-- american airlines
 slug: flight-operations
 tags:
 - American Airlines

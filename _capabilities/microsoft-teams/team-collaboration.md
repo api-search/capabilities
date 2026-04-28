@@ -1,4 +1,6 @@
 ---
+categories:
+- collaboration
 consumed_apis:
 - teams-graph
 description: Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings, and calls. Used by IT administrators, team leads, and developers building Teams integrations.
@@ -41,53 +43,53 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- list joined teams
-- create a new channel.
-- chat
-- list joined teams.
-- initiate a call.
-- Team Lead
-- collaboration
 - microsoft 365
-- team management.
-- meeting management.
-- manage teams collaboration workflows.
-- video conferencing
-- member management.
-- list channels in a team.
-- list channels
-- send a message.
-- list messages.
-- send channel message
-- list all members of a team.
-- messaging.
-- IT Administrator
-- add team member
-- create a team.
-- microsoft teams
-- create team
-- create a new team.
-- list messages from a channel.
-- create call
-- send a message to a channel.
-- productivity
-- add a member to a team.
-- it admins managing teams infrastructure and policies.
-- create a meeting.
-- developers building teams integrations and bots.
-- list all teams the user has joined.
-- create an online meeting.
-- list members.
-- list channels.
-- list team members
-- team leads managing channels, members, and communication.
-- list channel messages
-- create channel
-- Developer
-- communication
-- create a channel.
+- list joined teams.
 - channel management.
+- team leads managing channels, members, and communication.
+- list all members of a team.
+- list all teams the user has joined.
+- send a message to a channel.
+- developers building teams integrations and bots.
+- Developer
+- list channels
+- messaging.
+- create a meeting.
+- create a new channel.
+- list channel messages
+- initiate a call.
+- IT Administrator
+- video conferencing
+- create a channel.
+- collaboration
+- create call
+- create a team.
+- list messages from a channel.
+- chat
+- member management.
+- manage teams collaboration workflows.
+- list team members
+- list members.
+- Team Lead
+- microsoft teams
+- meeting management.
+- add team member
 - create online meeting
+- communication
+- send a message.
+- productivity
+- list joined teams
+- add a member to a team.
+- create an online meeting.
+- list messages.
+- it admins managing teams infrastructure and policies.
+- list channels.
+- list channels in a team.
+- create channel
+- create team
+- team management.
+- send channel message
+- create a new team.
 slug: team-collaboration
 tags:
 - Microsoft Teams

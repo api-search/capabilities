@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis: []
 description: Workflow capability for managing human-in-the-loop review of machine learning predictions using Amazon Augmented AI.
 layout: capability
@@ -16,22 +18,22 @@ personas: []
 provider_name: Amazon Augmented AI
 provider_slug: amazon-augmented-ai
 search_terms:
-- start a human review loop
-- describe human loop
-- stop an in-progress human review loop when review is no longer needed.
-- stop human loop
-- amazon augmented ai
-- ai review
-- machine learning
-- start human loop
-- aws
 - human review loop management
-- list human review loops
+- machine learning
 - human in the loop
-- initiate human review of an ml prediction by starting a new human loop.
 - list human loops
 - list all human review loops to track review progress and status.
+- aws
+- start a human review loop
+- ai review
 - get the current status and output of a specific human review loop.
+- describe human loop
+- start human loop
+- stop human loop
+- initiate human review of an ml prediction by starting a new human loop.
+- stop an in-progress human review loop when review is no longer needed.
+- list human review loops
+- amazon augmented ai
 slug: human-review-workflow
 tags:
 - Amazon Augmented AI

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - snowflake-api-integration
 - snowflake-catalog-integration
@@ -35,38 +36,38 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- delete an api integration
-- delete notification integration
-- fetch catalog integration details
-- database
-- delete api integration
-- sql
-- integrations
-- fetch catalog integration
-- fetch notification integration details
-- create notification integration
-- delete a notification integration
-- connectors
-- fetch api integration
-- create a notification integration
 - list catalog integrations
-- delete catalog integration
-- api integration management
-- list notification integrations
-- catalog integration management
-- snowflake
-- create an api integration
-- create catalog integration
 - data sharing
-- list api integrations
-- create a catalog integration
-- delete a catalog integration
 - data warehousing
+- list api integrations
 - notification integration management
+- fetch notification integration
+- api integration management
 - data lakes
+- fetch api integration
+- connectors
+- database
+- delete catalog integration
 - create api integration
 - fetch api integration details
-- fetch notification integration
+- fetch catalog integration details
+- delete a notification integration
+- list notification integrations
+- integrations
+- create a catalog integration
+- fetch catalog integration
+- create an api integration
+- catalog integration management
+- create a notification integration
+- fetch notification integration details
+- create catalog integration
+- delete a catalog integration
+- sql
+- snowflake
+- create notification integration
+- delete an api integration
+- delete api integration
+- delete notification integration
 slug: integrations-and-connectors
 tags:
 - Snowflake

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - management
 - disputes
@@ -34,55 +35,55 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- supply defense document
-- accept a dispute.
-- list all stores for a merchant account.
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- list merchants
-- financial services
-- list stores for a merchant.
-- manage payment terminals.
-- list terminals for a merchant.
-- submit a defense document.
-- list stores
-- manage merchant stores.
-- manage merchant accounts.
-- merchants
-- get dispute defense reasons.
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- accept a chargeback dispute.
-- merchant account and balance platform configuration.
-- get applicable defense reasons for a chargeback dispute.
-- marketplace and platform fund management.
-- retrieve defense reasons for a dispute.
-- get details of a specific merchant account.
-- fintech
-- management
-- operations
-- accept chargeback dispute
-- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
 - supply dispute defense document
 - get defense reasons
-- list payment method settings for a merchant.
-- submit a defense document for a chargeback dispute.
-- accept dispute
-- get dispute defense reasons
-- list all payment terminals for a merchant account.
-- list all merchant accounts.
-- submit dispute defense documents.
-- accept a chargeback dispute and let it proceed.
-- builds marketplace and fintech platforms using adyen balance platform.
-- adyen
-- disputes
-- list payment method settings
-- payments
-- list terminals
 - list all adyen merchant accounts.
-- builds payment integrations using adyen apis and sdks.
-- chargeback and dispute handling.
-- online and in-person payment acceptance.
 - manages merchant accounts, terminals, and dispute responses.
+- management
+- supply defense document
+- submit a defense document.
+- accept chargeback dispute
+- get applicable defense reasons for a chargeback dispute.
+- disputes
+- list stores for a merchant.
+- get dispute defense reasons.
+- marketplace and platform fund management.
+- list all merchant accounts.
+- list terminals for a merchant.
+- list payment method settings for a merchant.
+- merchants
+- fintech
+- accept a dispute.
+- list all payment terminals for a merchant account.
+- list payment method settings
+- manage merchant stores.
+- list merchants
+- submit a defense document for a chargeback dispute.
+- accept a chargeback dispute and let it proceed.
+- list stores
+- accept dispute
+- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- manage payment terminals.
+- accept a chargeback dispute.
+- get dispute defense reasons
+- builds payment integrations using adyen apis and sdks.
+- manage merchant accounts.
+- adyen
+- chargeback and dispute handling.
+- submit dispute defense documents.
 - get merchant
+- list terminals
+- online and in-person payment acceptance.
+- builds marketplace and fintech platforms using adyen balance platform.
+- financial services
+- payments
+- get details of a specific merchant account.
+- retrieve defense reasons for a dispute.
+- operations
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- list all stores for a merchant account.
+- merchant account and balance platform configuration.
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
 slug: merchant-account-management
 tags:
 - Adyen

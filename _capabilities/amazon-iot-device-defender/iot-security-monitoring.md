@@ -1,4 +1,6 @@
 ---
+categories:
+- iot
 consumed_apis:
 - iot-device-defender
 description: Unified capability for Security Engineer, IoT Developer to manage security service for iot fleet auditing and anomaly detection operations.
@@ -13,33 +15,33 @@ personas: []
 provider_name: Amazon IoT Device Defender
 provider_slug: amazon-iot-device-defender
 search_terms:
-- start audit
-- amazon iot device defender list audit tasks
-- amazon iot device defender list violations
-- list audit findings
-- amazon iot device defender create security profile
-- amazon iot device defender describe security profile
-- amazon iot device defender list detect mitigations
-- list security profiles
-- security service for iot fleet auditing and anomaly detection.
-- list violations
-- create security profile
-- aws
-- list detect mitigations
-- list audit tasks
-- Security Engineer
-- amazon iot device defender resources
-- amazon iot device defender list security profiles
-- describe security profile
-- amazon iot device defender start audit
-- security
 - amazon iot device defender list audit findings
-- iot
-- device management
-- vulnerability management
-- compliance
-- IoT Developer
 - manages amazon iot device defender resources and operations
+- security service for iot fleet auditing and anomaly detection.
+- amazon iot device defender list violations
+- list audit tasks
+- iot
+- list security profiles
+- compliance
+- vulnerability management
+- amazon iot device defender start audit
+- IoT Developer
+- list violations
+- security
+- amazon iot device defender list detect mitigations
+- list detect mitigations
+- describe security profile
+- amazon iot device defender list security profiles
+- amazon iot device defender describe security profile
+- amazon iot device defender list audit tasks
+- Security Engineer
+- list audit findings
+- device management
+- aws
+- start audit
+- create security profile
+- amazon iot device defender create security profile
+- amazon iot device defender resources
 slug: iot-security-monitoring
 tags:
 - IoT

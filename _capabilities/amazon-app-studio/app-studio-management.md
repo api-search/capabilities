@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-app-studio
 description: Workflow for managing App Studio low-code applications.
@@ -13,24 +14,24 @@ personas: []
 provider_name: Amazon App Studio
 provider_slug: amazon-app-studio
 search_terms:
-- it admin managing app studio deployments and access.
-- generative ai
-- no-code
-- Business Developer
-- business user building internal tools with app studio.
-- low-code
-- aws
-- amazon
 - app studio
-- list all amazon app studio applications in the account.
-- internal tools
-- manage app studio low-code applications.
-- get details for a specific app studio application by id.
-- IT Administrator
-- list apps
 - list applications.
-- list app studio apps
+- it admin managing app studio deployments and access.
+- list all amazon app studio applications in the account.
+- low-code
+- list apps
+- aws
 - get app studio app
+- internal tools
+- Business Developer
+- list app studio apps
+- manage app studio low-code applications.
+- IT Administrator
+- generative ai
+- get details for a specific app studio application by id.
+- no-code
+- business user building internal tools with app studio.
+- amazon
 slug: app-studio-management
 tags:
 - Amazon

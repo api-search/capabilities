@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - atlassian-admin
 description: Source control workflow combining Bitbucket Repositories, Pull Requests, Workspaces, Snippets, and Teams APIs for developers to manage code, reviews, and collaboration.
@@ -21,28 +22,28 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list teams
-- list bitbucket repositories in a workspace
-- repository management
-- source control
-- atlassian
-- collaboration
-- list repositories
-- bitbucket
-- list code snippets
-- list snippets
-- platform
-- list workspaces
-- productivity
 - workspace management
-- code
-- pull request management
-- list bitbucket workspaces
-- list pull requests
-- list pull requests for a repository
-- list repositories in a workspace
-- software development
+- list teams
+- list repositories
+- atlassian
+- platform
+- bitbucket
 - list teams in a workspace
+- list workspaces
+- collaboration
+- list repositories in a workspace
+- list pull requests for a repository
+- code
+- list bitbucket repositories in a workspace
+- list pull requests
+- repository management
+- productivity
+- list bitbucket workspaces
+- list code snippets
+- source control
+- pull request management
+- software development
+- list snippets
 slug: source-control
 tags:
 - Atlassian

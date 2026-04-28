@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - actions
 description: Unified capability for GitHub Actions CI/CD automation combining workflow management, run monitoring, artifact handling, secrets/variables management, and runner administration. Used by DevOps engineers, platform teams, and release managers.
@@ -73,89 +75,89 @@ personas: []
 provider_name: GitHub Actions
 provider_slug: github-actions
 search_terms:
-- delete a repository variable
-- dispatch
-- list repository variables
-- get runner
-- delete run
-- disable workflow
-- list workflow runs
-- workflow runs
-- list repository secrets (names only, not values)
-- action caches
-- create or update secret
-- list jobs for a workflow run
-- delete a workflow artifact
-- disable a workflow
-- delete variable
-- list workflow runs for a repository
-- delete runner
-- single workflow run
-- re-run a workflow
-- jobs for a workflow run
-- delete a specific cache entry
-- list runners
-- re-run only the failed jobs from a workflow run
-- cancel run
+- automation
 - get a workflow run
-- remove a self-hosted runner from a repository
-- cancel a running workflow
-- devops
-- delete artifact
-- rerun failed jobs
-- create a repository variable
-- rerun
+- self-hosted runners
+- get details of a specific artifact
+- action caches
+- list self-hosted runners
+- disable a workflow
+- workflow artifacts
+- get a specific workflow by id or filename
 - ci/cd
-- get an artifact
-- repository secrets
-- rerun workflow
-- delete a repository secret
-- list repository secrets
-- get workflow
+- list variables
+- devops
+- trigger a workflow
+- single workflow
+- get details of a specific workflow run
 - list jobs
+- trigger a workflow dispatch event
+- delete a workflow artifact
+- list workflow artifacts for a repository
+- get an artifact
+- trigger a workflow dispatch
+- remove a self-hosted runner from a repository
+- workflow runs
+- rerun failed jobs
+- cancel
+- list repository workflows
+- get artifact
+- delete secret
+- get job
+- dispatch
+- workflows
+- list jobs for a workflow run
+- cancel run
+- repository variables
+- list runners
+- list secrets
+- jobs for a workflow run
+- re-run only the failed jobs from a workflow run
+- delete an artifact
+- disable workflow
+- delete variable
+- get runner
+- list actions caches for a repository
+- cancel a running workflow
+- list runs
+- delete run
+- actions
+- get a specific job from a workflow run
+- github
+- repository secrets
+- single artifact
+- cancel a workflow run
+- rerun
+- list workflow runs
+- get a specific workflow
+- list repository variables
+- delete artifact
+- get run
+- delete a repository variable
+- create or update secret
+- list workflow runs for a repository
+- delete a repository secret
+- list artifacts
+- rerun workflow
 - create variable
 - list self-hosted runners for a repository
-- trigger a workflow dispatch
-- get a specific job from a workflow run
-- list workflow artifacts for a repository
-- trigger workflow
-- enable a workflow
-- single workflow
-- list actions caches for a repository
-- repository variables
-- single artifact
-- trigger a workflow
-- github
-- get job
-- self-hosted runners
-- list variables
 - get a specific self-hosted runner
-- list workflows
-- get a specific workflow by id or filename
-- delete an artifact
-- automation
-- trigger a workflow dispatch event
-- delete secret
 - delete a workflow run
-- workflows
-- list secrets
-- workflow artifacts
-- get a specific workflow
-- create or update a repository secret
-- cancel
-- get details of a specific artifact
-- list self-hosted runners
-- delete cache
-- enable workflow
-- list artifacts
-- list runs
-- get details of a specific workflow run
-- actions
-- cancel a workflow run
-- get artifact
+- trigger workflow
 - list caches
-- get run
-- list repository workflows
+- list workflows
+- enable workflow
+- list repository secrets
+- list repository secrets (names only, not values)
+- enable a workflow
+- create or update a repository secret
+- delete cache
+- delete runner
+- re-run a workflow
+- delete a specific cache entry
+- single workflow run
+- create a repository variable
+- get workflow
 slug: ci-cd-automation
 tags:
 - GitHub

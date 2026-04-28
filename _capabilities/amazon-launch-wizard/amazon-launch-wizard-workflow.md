@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - launch-wizard
 description: Unified workflow capability for Amazon Launch Wizard combining resource management and operations.
@@ -10,23 +11,23 @@ provider_name: Amazon Launch Wizard
 provider_slug: amazon-launch-wizard
 search_terms:
 - integrates api into applications
-- manages resources and configurations
-- workflow
-- lists the deployments that have been created.
-- returns information about the deployment.
 - deployments list deployments
-- amazon launch wizard
-- sap
-- aws
-- unified workflow for amazon launch wizard resource management
-- deployments get deployment
-- Developer
-- sql server
 - deployments create deployment
-- creates a deployment for the given workload.
 - deployment
-- Administrator
+- aws
+- workflow
+- unified workflow for amazon launch wizard resource management
+- lists the deployments that have been created.
+- sql server
+- returns information about the deployment.
 - enterprise applications
+- Developer
+- deployments get deployment
+- creates a deployment for the given workload.
+- manages resources and configurations
+- sap
+- amazon launch wizard
+- Administrator
 slug: amazon-launch-wizard-workflow
 tags:
 - Amazon Launch Wizard

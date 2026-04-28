@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - excel-graph
 description: Workflow capability for automating Excel spreadsheet operations including worksheet management, data manipulation, table operations, and chart generation via Microsoft Graph.
@@ -33,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- list all rows in an excel table.
-- chart operations.
-- update range
-- office
 - microsoft 365
-- list table rows
-- list all worksheets.
+- spreadsheets
 - spreadsheet automation
-- list charts.
-- automate excel workbook operations.
-- data management
-- list all worksheets in the workbook.
-- create worksheet
-- cell range operations.
+- automation
+- chart operations.
 - read cell values from a specified range.
-- Business Analyst
-- analysts working with excel workbooks for data processing.
+- list rows in a table.
+- Data Analyst
+- data analysis
+- data management
+- list all worksheets.
 - add a row to a table.
-- get a cell range.
+- get range
+- automate excel workbook operations.
+- list charts.
+- cell range operations.
+- office
+- Business Analyst
 - manage worksheets.
-- create a new worksheet.
-- update cell values in a specified range.
+- list all rows in an excel table.
+- create worksheet
+- update range
+- get a cell range.
+- list worksheets
+- microsoft excel
 - business users automating excel-based reporting.
 - microsoft
-- list all charts in a worksheet.
-- create a new worksheet in the workbook.
-- get range
-- list worksheets
 - list charts
-- list rows in a table.
-- spreadsheets
-- microsoft excel
 - manage table rows.
+- analysts working with excel workbooks for data processing.
+- list all worksheets in the workbook.
 - add table row
-- Data Analyst
+- list all charts in a worksheet.
+- list table rows
+- update cell values in a specified range.
 - add a new data row to an excel table.
-- data analysis
-- automation
+- create a new worksheet.
+- create a new worksheet in the workbook.
 slug: spreadsheet-automation
 tags:
 - Microsoft Excel

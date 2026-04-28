@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: Workflow capability for managing FinSpace environments, kdb clusters, databases, and users for financial analytics.
 layout: capability
@@ -8,15 +9,15 @@ personas: []
 provider_name: Amazon FinSpace
 provider_slug: amazon-finspace
 search_terms:
-- tick data
-- financial analytics
-- aws
-- market data
-- capital markets
-- data analytics
-- data management
 - financial services
+- aws
+- tick data
 - kdb
+- data analytics
+- capital markets
+- data management
+- financial analytics
+- market data
 slug: amazon-finspace-financial-analytics
 tags:
 - Financial Analytics

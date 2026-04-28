@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - apigit
 description: Workflow for Git-native API lifecycle development using APIGit - managing API repositories, designing APIs with visual tools, running mock servers for development, and executing automated tests.
@@ -17,29 +18,29 @@ personas: []
 provider_name: APIGit
 provider_slug: apigit
 search_terms:
-- create repository.
-- api design
-- developer designing and building apis using git-native workflows.
-- list repositories.
-- git
-- list repositories
-- list api repositories
-- create api repository
-- list all api git repositories in apigit.
-- API Developer
-- governance
-- api lifecycle
-- platform
-- create a new git-native api repository in apigit.
-- Backend Engineer
-- start mock server
+- create repository
 - start a dynamic mock server from an api definition for development testing.
 - documentation
-- testing
-- apigit
-- create repository
 - mocking
+- list repositories
+- api design
+- create repository.
+- platform
+- create api repository
+- API Developer
+- list api repositories
+- apigit
+- Backend Engineer
+- list all api git repositories in apigit.
+- start mock server
+- git
+- api lifecycle
+- create a new git-native api repository in apigit.
+- governance
+- developer designing and building apis using git-native workflows.
+- list repositories.
 - engineer using mock servers for frontend/backend parallel development.
+- testing
 slug: api-lifecycle-development
 tags:
 - APIGit

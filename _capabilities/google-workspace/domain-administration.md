@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - gws-admin
 description: Unified workflow for managing Google Workspace domain resources including users, groups, and organizational units. Used by IT administrators and workspace domain managers.
@@ -57,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- individual group management.
-- delete group
-- make user admin
-- list groups
-- calendar
-- group management.
-- create user
-- user management
 - email
-- collaboration
-- create org unit
-- sign out user
-- create a new user.
-- organizational unit management.
-- video conferencing
-- make a user an admin.
-- list users
-- undelete user
-- delete user
-- create an organizational unit.
-- delete a user.
-- get group details.
-- sign out a user from all sessions.
-- list groups in the domain.
-- group management
-- get user details.
 - google workspace
-- list users in the domain.
-- create a group.
-- list organizational units.
-- list users in the google workspace domain.
-- create a new user in the domain.
-- productivity
-- update a user.
-- create a new group.
-- update a group.
-- storage
-- individual user management.
-- get group
-- patch user
-- list groups.
-- domain administration
-- list org units
-- patch user properties.
-- user account management.
-- get user
-- update user
-- delete a group.
-- update group
+- get user details.
+- make user admin
 - create group
+- create a new user.
+- update group
+- create a new group.
+- organizational unit management.
+- get group details.
+- user account management.
+- undelete user
+- storage
+- delete a group.
+- create a group.
+- domain administration
+- sign out user
+- list groups.
+- patch user
+- update user
+- sign out a user from all sessions.
+- update a user.
+- individual user management.
+- list groups in the domain.
+- video conferencing
+- list users in the google workspace domain.
+- collaboration
+- create a new user in the domain.
+- list org units
 - undelete a deleted user.
+- create an organizational unit.
+- list users
+- group management
+- list users in the domain.
+- get user
+- group management.
+- calendar
+- delete group
+- delete a user.
+- individual group management.
+- productivity
+- user management
+- create org unit
+- list groups
+- patch user properties.
+- create user
+- make a user an admin.
+- get group
+- delete user
+- update a group.
+- list organizational units.
 slug: domain-administration
 tags:
 - Google Workspace

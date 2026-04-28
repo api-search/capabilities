@@ -1,4 +1,6 @@
 ---
+categories:
+- payroll-hr
 consumed_apis:
 - hcm
 - recruiting
@@ -47,49 +49,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- employee records
-- search available job postings.
-- list pending approvals
-- list employees
-- individual employee details
-- job posting details
-- approve, deny, or push back an hr approval request.
-- get job details
-- crm
-- financial and supply chain management.
-- financial management
 - search jobs
-- candidate applications
-- retrieve benefit enrollment records.
-- campus solutions.
-- list payroll runs
-- retrieve employee records with optional department and status filters.
-- erp
-- submit application
-- process approval
-- retrieve payroll run history and status.
-- hcm
-- submit a candidate application for a job posting.
-- get employee
-- human resources
-- payroll
-- list benefit enrollments
-- supply chain management
-- hr approval requests
-- benefit enrollment records
-- payroll run history and status
 - retrieve pending hr approval requests.
+- financial and supply chain management.
+- human resources
 - individual approval operations
-- enterprise software
-- talent management
+- individual employee details
+- payroll
+- candidate applications
+- job postings
+- submit application
+- get employee
+- peoplesoft
 - human capital management.
 - campus solutions
-- peoplesoft
-- job postings
-- retrieve details for a specific employee.
-- recruiting
+- hcm
+- campus solutions.
 - peopletools platform services.
+- submit a candidate application for a job posting.
+- job posting details
+- retrieve benefit enrollment records.
+- recruiting
+- search available job postings.
+- erp
+- enterprise software
+- talent management
+- list benefit enrollments
+- list employees
+- list pending approvals
+- retrieve payroll run history and status.
+- list payroll runs
+- hr approval requests
+- process approval
+- employee records
+- supply chain management
+- payroll run history and status
+- retrieve details for a specific employee.
+- crm
+- financial management
 - retrieve details for a specific job posting.
+- get job details
+- retrieve employee records with optional department and status filters.
+- benefit enrollment records
+- approve, deny, or push back an hr approval request.
 slug: human-resources
 tags:
 - PeopleSoft

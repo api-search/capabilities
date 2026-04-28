@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - eventmesh-admin
 description: Unified capability for event-driven architectures using Apache EventMesh — managing topics, subscriptions, and publishing CloudEvents. Designed for platform engineers and developers building distributed event streaming pipelines.
@@ -25,40 +26,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- topic management and event publishing via cloudevents
-- pub-sub, request-reply, and broadcast messaging patterns
-- serverless
 - subscribe a consumer to an eventmesh topic
-- subscribe to topic
-- manage event subscriptions
-- apache eventmesh
-- event-driven
-- list eventmesh topics
-- list all topics registered in eventmesh
-- apache
-- pub-sub
-- list all eventmesh topics
-- manage topics, subscriptions, and publish cloudevents
-- messaging
-- publish a cloudevent to an eventmesh topic
-- publish a cloudevent
-- subscribe to eventmesh topics
-- create topic
-- publish cloud event
-- create a new eventmesh topic
-- create eventmesh topic
-- publish events
-- Platform Engineer
-- publish event
-- application developers building event-driven services on eventmesh
-- manage eventmesh topics
-- platform engineering
-- create subscription
-- Developer
-- cloudevents
-- engineers managing the eventmesh cluster and messaging infrastructure
-- open source
 - list topics
+- list all eventmesh topics
+- apache eventmesh
+- subscribe to topic
+- Developer
+- platform engineering
+- manage eventmesh topics
+- serverless
+- application developers building event-driven services on eventmesh
+- engineers managing the eventmesh cluster and messaging infrastructure
+- create eventmesh topic
+- topic management and event publishing via cloudevents
+- list eventmesh topics
+- publish cloud event
+- create subscription
+- manage topics, subscriptions, and publish cloudevents
+- publish a cloudevent
+- publish event
+- apache
+- open source
+- publish a cloudevent to an eventmesh topic
+- pub-sub, request-reply, and broadcast messaging patterns
+- create topic
+- cloudevents
+- publish events
+- event-driven
+- messaging
+- manage event subscriptions
+- list all topics registered in eventmesh
+- pub-sub
+- subscribe to eventmesh topics
+- create a new eventmesh topic
+- Platform Engineer
 slug: eventmesh-event-streaming
 tags:
 - Apache EventMesh

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mediastore
 description: Workflow capability for Amazon MediaStore media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MediaStore
 provider_slug: amazon-mediastore
 search_terms:
-- deletecontainer
-- developer building media processing applications
-- delete metric policy
-- list jobs
-- delete lifecycle policy
-- createcontainer
-- delete container
-- manage media processing jobs
-- delete cors policy
-- describe container
-- deletemetricpolicy
-- engineer managing broadcast media workflows
-- aws
-- deletecorspolicy
-- getcontainerpolicy
-- create container
-- deletelifecyclepolicy
-- Broadcast Engineer
-- describecontainer
-- workflow
-- amazon mediastore media processing workflow
-- delete container policy
-- Media Developer
-- aws media processing and delivery
-- get container policy
-- media
 - broadcasting
+- deletecontainer
+- describe container
+- Broadcast Engineer
+- delete cors policy
+- deletelifecyclepolicy
+- manage media processing jobs
+- delete metric policy
+- createcontainer
+- deletecorspolicy
+- amazon mediastore media processing workflow
+- describecontainer
+- aws media processing and delivery
 - deletecontainerpolicy
+- getcontainerpolicy
+- deletemetricpolicy
+- media
+- delete lifecycle policy
+- delete container policy
+- create container
+- Media Developer
+- list jobs
+- delete container
 - media processing
+- aws
+- workflow
+- developer building media processing applications
+- engineer managing broadcast media workflows
+- get container policy
 slug: amazon-mediastore-media-workflow
 tags:
 - AWS

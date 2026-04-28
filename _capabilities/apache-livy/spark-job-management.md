@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - livy-rest-api
 description: Workflow capability for data engineers and data scientists to manage interactive Spark sessions and submit batch Spark jobs via Apache Livy REST API.
@@ -29,37 +30,37 @@ personas: []
 provider_name: Apache Livy
 provider_slug: apache-livy
 search_terms:
-- list batches
-- engineers who submit and monitor batch spark jobs via livy
-- delete an interactive spark session
-- list spark sessions
-- run statement
-- big data
-- spark
-- scientists who use interactive spark sessions for exploratory analysis
-- list all active interactive spark sessions on the livy server
-- get session state
-- get batch state
-- submit batch spark job
-- Data Engineer
-- data science
-- data engineering
-- create spark session
-- create batch
 - run spark code
+- create batch
+- data engineering
+- get batch state
 - get the current state of a spark session
-- create session
 - get the current state of a batch spark job
-- open source
-- rest
+- list batches
+- create spark session
+- data science
 - create a new interactive spark session for code execution
-- Data Scientist
-- list sessions
-- delete spark session
-- submit a batch spark job to the cluster via livy
-- interactive computing
-- apache livy
 - execute a code statement in an interactive spark session
+- Data Scientist
+- submit batch spark job
+- run statement
+- submit a batch spark job to the cluster via livy
+- apache livy
+- open source
+- get session state
+- delete an interactive spark session
+- scientists who use interactive spark sessions for exploratory analysis
+- delete spark session
+- list spark sessions
+- Data Engineer
+- big data
+- interactive computing
+- list sessions
+- spark
+- engineers who submit and monitor batch spark jobs via livy
+- rest
+- list all active interactive spark sessions on the livy server
+- create session
 slug: spark-job-management
 tags:
 - Apache Livy

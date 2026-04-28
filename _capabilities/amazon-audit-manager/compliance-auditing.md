@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis: []
 description: Workflow capability for conducting continuous compliance auditing with Amazon Audit Manager including assessment creation, evidence collection, and report generation.
 layout: capability
@@ -20,36 +22,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- list all compliance assessments to understand current audit coverage.
-- get settings
-- create control
-- get complete details of a compliance assessment including control status.
-- create a custom compliance control for use in frameworks and assessments.
-- list compliance controls available for building assessments.
-- list all assessments
-- create a new assessment
-- get audit manager account settings including default destinations and process owners.
-- update settings
-- list assessment reports
-- aws
-- list assessments
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- risk management
-- create a new compliance assessment using a regulatory framework.
-- generate a compliance assessment report from collected evidence.
-- list available frameworks
+- compliance assessment management
 - list controls
 - list frameworks
-- list generated assessment reports for compliance documentation.
-- amazon audit manager
-- compliance assessment management
-- compliance framework management
-- create assessment report
-- update audit manager settings including sns notifications and default report destination.
-- create assessment
+- list available frameworks
 - get assessment
-- audit
+- create control
+- amazon audit manager
+- list assessment reports
 - compliance
+- list generated assessment reports for compliance documentation.
+- generate a compliance assessment report from collected evidence.
+- get audit manager account settings including default destinations and process owners.
+- create a new assessment
+- create a custom compliance control for use in frameworks and assessments.
+- create a new compliance assessment using a regulatory framework.
+- update settings
+- list compliance controls available for building assessments.
+- create assessment report
+- audit
+- get settings
+- list assessments
+- risk management
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- get complete details of a compliance assessment including control status.
+- list all assessments
+- create assessment
+- update audit manager settings including sns notifications and default report destination.
+- list all compliance assessments to understand current audit coverage.
+- aws
+- compliance framework management
 slug: compliance-auditing
 tags:
 - Amazon Audit Manager

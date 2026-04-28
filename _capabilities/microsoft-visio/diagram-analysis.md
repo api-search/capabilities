@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - visio-graph
 description: Workflow capability for analyzing Visio diagrams including reading pages, shapes, data items, comments, and hyperlinks. Used by business analysts and IT architects to programmatically inspect diagram content.
@@ -21,32 +22,32 @@ personas: []
 provider_name: Microsoft Visio
 provider_slug: microsoft-visio
 search_terms:
-- it architects analyzing network and system diagrams.
-- diagramming
-- flowcharts
-- analyze visio diagrams programmatically.
-- list data items attached to a shape.
-- diagram analysis
-- microsoft 365
-- get shape
-- list all pages in a visio diagram.
-- business analysts reviewing process flow diagrams.
-- IT Architect
-- visualization
-- Business Analyst
-- list all pages.
-- diagram page operations.
-- list data items for a shape.
 - get details of a specific shape.
-- business process
-- list shape data items
-- list shapes
-- list shapes on a page.
-- shape operations.
+- microsoft 365
 - list pages
-- shape data operations.
 - list all shapes on a diagram page.
 - microsoft visio
+- it architects analyzing network and system diagrams.
+- diagramming
+- list all pages.
+- business process
+- list shape data items
+- list data items for a shape.
+- IT Architect
+- Business Analyst
+- get shape
+- list all pages in a visio diagram.
+- visualization
+- analyze visio diagrams programmatically.
+- diagram page operations.
+- shape data operations.
+- diagram analysis
+- list shapes
+- list shapes on a page.
+- business analysts reviewing process flow diagrams.
+- list data items attached to a shape.
+- flowcharts
+- shape operations.
 slug: diagram-analysis
 tags:
 - Microsoft Visio

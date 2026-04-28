@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: BLE
 provider_slug: ble
 search_terms:
-- bluetooth
+- standards
 - ble
 - embedded
-- standards
-- wireless
 - protocols
+- bluetooth
 - iot
+- wireless
 slug: ble-gatt-capability
 tags: []
 tools: []

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,13 +9,13 @@ personas: []
 provider_name: Block
 provider_slug: block
 search_terms:
-- payments
-- point of sale
-- commerce
-- fintech
-- square
 - ecommerce
 - cryptocurrency
+- payments
+- point of sale
+- fintech
+- square
+- commerce
 slug: block-square-commerce
 tags: []
 tools: []

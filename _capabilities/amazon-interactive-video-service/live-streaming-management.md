@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ivs
 description: Unified capability for Developer, Media Engineer to manage managed live streaming with low latency for interactive applications operations.
@@ -13,32 +14,32 @@ personas: []
 provider_name: Amazon Interactive Video Service
 provider_slug: amazon-interactive-video-service
 search_terms:
-- stop stream
-- amazon interactive video service create channel
-- live streaming
-- list recordings
-- aws
-- list channels
-- amazon interactive video service get channel
-- amazon interactive video service create stream key
-- amazon interactive video service list channels
-- real-time
-- manages amazon interactive video service resources and operations
-- video
-- get channel
-- create stream key
 - managed live streaming with low latency for interactive applications.
-- amazon interactive video service list stream keys
-- amazon interactive video service delete channel
-- amazon interactive video service stop stream
-- amazon interactive video service resources
+- amazon interactive video service list channels
 - Media Engineer
+- amazon interactive video service stop stream
 - list stream keys
-- media
-- create channel
+- amazon interactive video service create stream key
+- amazon interactive video service resources
+- stop stream
 - Developer
-- amazon interactive video service list recordings
 - delete channel
+- list channels
+- create stream key
+- manages amazon interactive video service resources and operations
+- amazon interactive video service delete channel
+- get channel
+- media
+- amazon interactive video service list recordings
+- list recordings
+- live streaming
+- real-time
+- amazon interactive video service list stream keys
+- video
+- amazon interactive video service get channel
+- aws
+- amazon interactive video service create channel
+- create channel
 slug: live-streaming-management
 tags:
 - Live Streaming

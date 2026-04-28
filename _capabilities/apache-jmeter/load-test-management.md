@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - jmeter-rest-api
 description: Workflow capability for QA engineers and performance engineers to manage and monitor Apache JMeter load tests via the REST API.
@@ -21,30 +22,30 @@ personas: []
 provider_name: Apache JMeter
 provider_slug: apache-jmeter
 search_terms:
-- get current status and metrics of a running jmeter test
-- performance engineering
 - get test status
-- start test
 - api testing
-- start an apache jmeter load test with a specified test plan
-- java
-- get test results
-- stop load test
-- load testing
-- performance testing
-- start load test
-- get status
-- Performance Engineer
-- get results
-- stress testing
-- apache jmeter
-- qa engineers who run and monitor jmeter load tests
-- stop the currently running jmeter load test
-- qa automation
-- QA Engineer
+- get current status and metrics of a running jmeter test
 - retrieve performance test results including response times and throughput
+- stop the currently running jmeter load test
+- get results
+- QA Engineer
+- get status
+- stop load test
+- java
 - open source
+- qa automation
+- stress testing
+- start an apache jmeter load test with a specified test plan
+- start load test
+- apache jmeter
+- performance testing
 - engineers who analyze performance test results and tune systems
+- get test results
+- start test
+- Performance Engineer
+- load testing
+- performance engineering
+- qa engineers who run and monitor jmeter load tests
 slug: load-test-management
 tags:
 - Apache JMeter

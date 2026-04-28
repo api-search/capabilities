@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - oci-compute
 description: Manage Oracle Cloud Infrastructure compute resources including instances, images, shapes, and attachments. Used by cloud engineers and platform administrators.
@@ -53,49 +54,49 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
+- manage compute images
+- launch a new compute instance
+- update image details
+- list images
+- database
+- create a custom image from an instance
+- update instance details
+- get image details
 - list available compute shapes
-- get details of a specific instance
-- delete a custom image
-- list compute instances in a compartment
-- oracle
+- get details of a specific image
+- get image
+- list volume attachments in a compartment
+- list console connections
 - update instance
+- enterprise
+- list compute instances in a compartment
+- create a custom image
+- manage compute instances
+- terminate an instance
+- saas
+- oracle
+- delete image
+- list volume attachments
+- list compute images
+- get instance details
+- instance action
+- list vnic attachments in a compartment
+- infrastructure
+- list shapes
+- get details of a specific instance
+- launch instance
+- get instance
+- create image
+- delete a custom image
 - manage a specific compute instance
 - manage a specific image
-- list instances
-- list volume attachments
 - list instance console connections
-- database
-- instance action
-- list images
-- get instance details
-- cloud
-- manage compute images
-- create image
-- perform an action on an instance (start, stop, reset)
-- get image details
-- create a custom image from an instance
-- list volume attachments in a compartment
-- get image
-- manage compute instances
-- launch instance
-- saas
-- list vnic attachments in a compartment
-- list console connections
-- update image details
-- launch a new compute instance
-- infrastructure
 - terminate instance
-- terminate an instance
-- list compute images
-- create a custom image
-- delete image
-- enterprise
-- compute
-- list shapes
-- get details of a specific image
 - list vnic attachments
-- get instance
-- update instance details
+- list instances
+- cloud
+- perform an action on an instance (start, stop, reset)
+- compute
 - update image
 slug: cloud-compute
 tags:

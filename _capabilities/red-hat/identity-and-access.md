@@ -1,4 +1,6 @@
 ---
+categories:
+- identity-access
 consumed_apis:
 - keycloak-admin
 description: Identity and access management workflow using Keycloak for managing realms, users, clients, roles, groups, and identity federation. Used by platform admins and security teams.
@@ -41,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- realm users.
-- delete a user from a realm.
-- list groups
-- list external identity providers.
-- list roles in a realm.
-- keycloak
-- realm roles.
-- create user
-- list realm roles
-- linux
-- realm clients.
-- realm groups.
-- get realm configuration details.
-- cloud
-- list identity providers
-- list realms
-- specific realm.
-- list users
-- identity
-- delete user
-- terminate a user session.
-- list groups in a realm.
-- list clients
-- register a new client application.
-- access management
-- list roles.
-- list clients.
+- create client
 - get user details.
-- list identity providers.
-- list client applications in a realm.
-- kubernetes
 - get realm details.
-- get realm
-- containers
-- enterprise
+- linux
+- access management
+- list identity providers
+- list all realms.
+- keycloak
+- list groups in a realm.
+- delete session
 - hybrid cloud
 - identity providers.
-- list users.
-- list all keycloak realms.
-- list groups.
-- delete session
-- keycloak realms.
 - red hat
-- list users in a realm.
-- create a new user in a realm.
-- create client
-- get user
-- list roles
-- list all realms.
+- list clients
+- terminate a user session.
+- list groups.
+- list roles in a realm.
+- register a new client application.
+- delete a user from a realm.
+- realm groups.
+- enterprise
+- list clients.
+- delete user
 - open source
+- list all keycloak realms.
+- list client applications in a realm.
+- list external identity providers.
+- list users.
+- list users in a realm.
+- get realm
+- identity
+- list users
+- keycloak realms.
 - create a user.
+- list realm roles
+- kubernetes
+- containers
+- get user
+- list identity providers.
+- get realm configuration details.
+- specific realm.
+- list groups
+- realm roles.
+- realm users.
+- list realms
+- create user
+- realm clients.
+- list roles
+- create a new user in a realm.
+- list roles.
+- cloud
 slug: identity-and-access
 tags:
 - Red Hat

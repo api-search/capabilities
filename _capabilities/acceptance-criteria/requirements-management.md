@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -9,9 +10,9 @@ provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
 - quality assurance
-- gherkin
 - behavior driven development
 - agile
+- gherkin
 - requirements
 - user stories
 - testing

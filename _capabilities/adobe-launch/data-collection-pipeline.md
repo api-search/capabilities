@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - event-forwarding
 - data-collection
@@ -30,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- tag management
-- create a new event forwarding property
-- start a media tracking session
 - list event forwarding rules for a property
+- list secrets for authenticating with forwarding destinations
+- data collection
+- create a secret for an event forwarding destination
+- list event forwarding rules
 - event forwarding
-- secrets for event forwarding destinations
+- send an interactive event to adobe edge network
+- server-side event forwarding properties
+- list secrets for a property
+- send interactive event
+- end media session
+- adobe launch
+- list server-side event forwarding properties
+- list event forwarding properties
+- create a new event forwarding rule
+- edge network
+- start a media tracking session
 - send batch events to edge network
-- list secrets
-- send an interactive event to edge network
+- marketing technology
+- create a new event forwarding property
+- start media session
+- create secret
+- send batch events to adobe edge network
 - end a media tracking session
 - edge network data ingestion
-- send an interactive event to adobe edge network
-- send batch events to adobe edge network
-- event forwarding rules
-- edge network
-- end media session
-- create secret
-- list event forwarding properties
-- list secrets for a property
-- marketing technology
-- data collection
-- adobe launch
-- server-side event forwarding properties
-- start media session
-- create event forwarding rule
-- list server-side event forwarding properties
+- send an interactive event to edge network
+- tag management
+- secrets for event forwarding destinations
 - create event forwarding property
-- send interactive event
+- create event forwarding rule
+- list secrets
+- event forwarding rules
 - send batch events
-- list secrets for authenticating with forwarding destinations
-- create a new event forwarding rule
-- list event forwarding rules
-- create a secret for an event forwarding destination
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - codebuild
 description: Unified workflow for DevOps teams to manage build projects, run builds, monitor build status, and integrate with CI/CD pipelines using Amazon CodeBuild.
@@ -9,48 +11,48 @@ personas: []
 provider_name: Amazon CodeBuild
 provider_slug: amazon-codebuild
 search_terms:
+- update an existing codebuild project configuration
 - build project management and build execution workflows.
 - list builds for a specific codebuild project
-- get projects
-- list builds
-- list builds for project
-- access build and test reports
-- list codebuild test and coverage reports
-- start a new build for a codebuild project
 - manages build infrastructure and pipelines.
-- automated compilation, testing, and artifact production.
-- update project
-- list report groups
 - list all codebuild projects
-- update an existing codebuild project configuration
-- get details about specific codebuild projects
+- get details about specific builds
+- continuous integration and delivery pipeline management.
+- Developer
+- stop a running codebuild build
+- list builds
+- build automation
+- access build and test reports
+- build
 - create project
-- aws
+- list codebuild report groups
+- list projects
+- ci/cd
+- DevOps Engineer
 - delete a codebuild project
 - get builds
-- list all builds or builds for a specific project
-- build
-- create a new codebuild build project
-- get details about specific builds
-- list codebuild report groups
-- manage codebuild build projects
-- start and monitor builds
-- build automation
-- testing
-- list projects
+- update project
+- start a new build for a codebuild project
 - devops
-- stop a running codebuild build
-- runs and monitors builds for their projects.
-- start build
-- amazon
-- continuous integration
-- DevOps Engineer
-- list reports
-- Developer
-- continuous integration and delivery pipeline management.
-- stop build
-- ci/cd
 - delete project
+- list all builds or builds for a specific project
+- list builds for project
+- runs and monitors builds for their projects.
+- continuous integration
+- list codebuild test and coverage reports
+- get projects
+- create a new codebuild build project
+- stop build
+- list reports
+- start build
+- aws
+- start and monitor builds
+- get details about specific codebuild projects
+- list report groups
+- automated compilation, testing, and artifact production.
+- amazon
+- manage codebuild build projects
+- testing
 slug: amazon-codebuild-cicd
 tags:
 - Amazon

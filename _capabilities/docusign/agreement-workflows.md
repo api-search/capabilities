@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - esignature
 description: Unified workflow for managing the full agreement lifecycle using DocuSign eSignature APIs, combining envelope management, document handling, templates, and signing workflows for business users and developers.
@@ -25,27 +26,27 @@ personas: []
 provider_name: Docusign
 provider_slug: docusign
 search_terms:
-- digital transaction management
-- electronic signatures
-- documents
-- docusign
-- create and optionally send an agreement envelope
 - create and send an envelope
-- contracts
-- workflows
-- list envelopes in the docusign account
-- list envelopes
-- retrieve envelope details
-- list templates
-- template management
-- get envelope
-- envelope lifecycle management
+- electronic signatures
 - agreements
-- esignature
-- individual envelope operations
-- create envelope
+- list envelopes
+- create and optionally send an agreement envelope
+- template management
 - list available agreement templates
+- esignature
+- documents
+- workflows
+- contracts
+- create envelope
+- envelope lifecycle management
+- digital transaction management
+- list templates
+- docusign
+- individual envelope operations
+- retrieve envelope details
+- get envelope
 - retrieve details of a specific envelope
+- list envelopes in the docusign account
 slug: agreement-workflows
 tags:
 - DocuSign

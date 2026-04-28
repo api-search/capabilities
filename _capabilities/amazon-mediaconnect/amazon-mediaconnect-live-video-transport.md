@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mediaconnect
 description: Workflow capability for live video transport operations including flow management, source configuration, output routing, and entitlement management for broadcast engineers.
@@ -33,43 +34,43 @@ personas: []
 provider_name: Amazon MediaConnect
 provider_slug: amazon-mediaconnect
 search_terms:
-- stop a mediaconnect flow
-- list entitlements
-- describe flow
-- manage live video flows
-- start flow
-- live video transport workflow for broadcast engineers
-- get flow details
-- list all mediaconnect bridges
-- list all flow entitlements
-- media transport
+- broadcasting
+- delete a flow
 - get details of a specific flow
-- list gateways
+- live video
+- manage bridges
+- create flow
+- Broadcast Engineer
+- media transport
+- live video transport workflow for broadcast engineers
+- describe flow
+- live video transport and distribution
+- list all bridges
+- list all mediaconnect bridges
+- manage live video flows
 - manage entitlements
-- aws
-- create a new flow
-- list all flows
+- get flow details
 - list flows
 - list all mediaconnect gateways
-- list all bridges
-- manage bridges
-- live video transport and distribution
-- manage individual flow
-- delete a flow
-- list bridges
-- delete flow
-- start a mediaconnect flow
-- stop flow
-- live video
-- flows
-- Broadcast Engineer
-- create a new mediaconnect flow
 - list all entitlements
-- create flow
-- media
-- broadcasting
-- engineer managing live video workflows
 - list all mediaconnect flows for live video transport
+- media
+- start a mediaconnect flow
+- list entitlements
+- stop flow
+- list bridges
+- list all flows
+- manage individual flow
+- list all flow entitlements
+- engineer managing live video workflows
+- aws
+- start flow
+- create a new mediaconnect flow
+- stop a mediaconnect flow
+- create a new flow
+- list gateways
+- delete flow
+- flows
 slug: amazon-mediaconnect-live-video-transport
 tags:
 - AWS

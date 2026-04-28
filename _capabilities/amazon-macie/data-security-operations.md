@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis:
 - macie
 description: Workflow capability for security and compliance teams to discover sensitive data, investigate findings, and manage data security posture in Amazon S3 using Amazon Macie.
@@ -37,50 +39,50 @@ personas: []
 provider_name: Amazon Macie
 provider_slug: amazon-macie
 search_terms:
-- privacy
-- machine learning
-- create identifier
-- Compliance Officer
-- list jobs
-- sensitive data
-- manages macie configuration, discovery jobs, and investigates sensitive data findings
-- get security details and sensitive data statistics for monitored s3 buckets
+- automated discovery and classification of sensitive data in s3
+- s3
 - sensitive data findings
-- get bucket security details
-- get detailed information about specific sensitive data findings
-- list discovery jobs
-- reviews sensitive data findings to ensure data governance and regulatory compliance
-- list custom identifiers
-- get bucket security posture
-- describe buckets
-- workflow for discovering sensitive data, investigating findings, and managing data security posture
-- aws
-- monitored s3 buckets
-- Security Engineer
-- list all discovery jobs
 - data security
-- create a custom pattern to detect organization-specific sensitive data types
-- list all sensitive data findings detected by macie
-- list all custom sensitive data identifiers
-- list all sensitive data discovery jobs
-- list findings
-- create a job to discover sensitive data in s3 buckets
-- data discovery jobs
-- create custom data identifier
-- create job
-- managing and investigating sensitive data findings
+- list sensitive data findings
+- monitored s3 buckets
 - list identifiers
-- custom patterns for identifying organization-specific sensitive data
+- describe buckets
+- list custom identifiers
+- reviews sensitive data findings to ensure data governance and regulatory compliance
+- data discovery jobs
+- compliance
+- get findings
+- create identifier
+- create a job to discover sensitive data in s3 buckets
+- get security details and sensitive data statistics for monitored s3 buckets
+- get bucket security posture
+- create job
 - get finding details
 - custom data identifiers
-- automated discovery and classification of sensitive data in s3
-- list sensitive data findings
-- amazon
+- list all custom sensitive data identifiers
+- get bucket security details
+- custom patterns for identifying organization-specific sensitive data
+- workflow for discovering sensitive data, investigating findings, and managing data security posture
+- privacy
+- list all sensitive data discovery jobs
+- sensitive data
+- Security Engineer
+- list all discovery jobs
+- managing and investigating sensitive data findings
+- manages macie configuration, discovery jobs, and investigates sensitive data findings
+- create custom data identifier
+- list discovery jobs
+- list findings
+- create a custom pattern to detect organization-specific sensitive data types
+- list jobs
+- machine learning
 - create discovery job
-- compliance
+- Compliance Officer
+- aws
+- get detailed information about specific sensitive data findings
 - create a data discovery job
-- get findings
-- s3
+- list all sensitive data findings detected by macie
+- amazon
 slug: data-security-operations
 tags:
 - Amazon

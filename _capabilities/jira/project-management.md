@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - jira-cloud
 description: Unified project management workflow combining issue tracking, workflow transitions, JQL search, and project management. Used by project managers, developers, and team leads to manage agile software delivery.
@@ -53,58 +54,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- search with jql.
-- get issue
-- service management
-- search jira issues using jql.
-- issue tracking
-- edit an issue.
-- get issue comments.
-- add comment
-- search issues
-- get jira issue details.
-- edit an existing jira issue.
-- project management
-- issue comments.
-- add a comment to a jira issue.
-- list all jira projects.
-- get comments on a jira issue.
-- get priorities
-- list all projects.
-- get issue types
-- edit issue
-- get all jira issue statuses.
-- get all jira issue types.
-- create a new issue.
-- add a comment.
-- get available transitions.
-- single issue operations.
-- issue lifecycle management.
-- get comments
-- project management.
-- get project
-- transition an issue through its workflow.
-- get jira project details.
-- single project.
-- agile
-- get project details.
-- get issue details.
 - get statuses
-- itsm
-- list projects
-- get available workflow transitions.
-- delete an issue.
-- jira
-- workflow transitions.
-- create a new jira issue.
-- delete a jira issue.
-- jql issue search.
-- get all jira priorities.
+- single issue operations.
+- edit issue
 - perform a transition.
-- delete issue
-- create issue
-- do transition
+- agile
+- get issue details.
+- search issues
+- project management.
+- transition an issue through its workflow.
+- jql issue search.
+- jira
+- get available workflow transitions.
 - get transitions
+- get all jira priorities.
+- get project details.
+- create a new jira issue.
+- get all jira issue types.
+- itsm
+- get jira issue details.
+- delete issue
+- get all jira issue statuses.
+- get comments
+- workflow transitions.
+- get jira project details.
+- get priorities
+- list projects
+- add a comment to a jira issue.
+- issue tracking
+- create a new issue.
+- create issue
+- edit an issue.
+- issue comments.
+- add comment
+- delete an issue.
+- delete a jira issue.
+- get issue
+- get comments on a jira issue.
+- edit an existing jira issue.
+- get available transitions.
+- get issue comments.
+- issue lifecycle management.
+- search with jql.
+- get project
+- service management
+- project management
+- get issue types
+- do transition
+- single project.
+- search jira issues using jql.
+- list all jira projects.
+- add a comment.
+- list all projects.
 slug: project-management
 tags:
 - Jira

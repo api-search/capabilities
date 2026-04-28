@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - cloudtrail
 description: Workflow for audit trail management using Amazon CloudTrail for Security Analyst personas.
@@ -9,14 +10,14 @@ personas: []
 provider_name: Amazon CloudTrail
 provider_slug: amazon-cloudtrail
 search_terms:
-- cloudtrail
-- aws
 - audit
+- aws
+- cloudtrail
 - amazon cloudtrail
-- compliance
 - Security Analyst
-- amazon web services
 - security
+- compliance
+- amazon web services
 - governance
 slug: audit-trail-management
 tags:

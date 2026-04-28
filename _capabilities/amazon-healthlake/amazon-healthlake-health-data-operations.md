@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon HealthLake
 provider_slug: amazon-healthlake
 search_terms:
-- cloud computing
-- fhir
-- hipaa
 - aws
 - health data
+- cloud computing
 - healthcare
+- hipaa
+- fhir
 slug: amazon-healthlake-health-data-operations
 tags: []
 tools: []

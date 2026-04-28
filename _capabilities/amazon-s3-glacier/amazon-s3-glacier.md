@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-s3-glacier
 description: Workflow capability for Amazon S3 Glacier. Enables automation of Amazon S3 Glacier resources for cloud operations teams.
@@ -13,18 +14,18 @@ personas: []
 provider_name: Amazon S3 Glacier
 provider_slug: amazon-s3-glacier
 search_terms:
+- amazon s3 glacier resources
 - list amazon s3 glacier resources
 - engineer managing amazon s3 glacier resources
-- list resources
-- aws
 - archive
-- cloud operations
-- backup
-- storage
-- aws cloud resource management
-- amazon s3 glacier
+- aws
 - automation workflow for amazon s3 glacier
-- amazon s3 glacier resources
+- backup
+- cloud operations
+- amazon s3 glacier
+- aws cloud resource management
+- storage
+- list resources
 slug: amazon-s3-glacier
 tags:
 - Amazon S3 Glacier

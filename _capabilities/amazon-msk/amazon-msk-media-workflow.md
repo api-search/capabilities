@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - msk
 description: Workflow capability for Amazon MSK media processing operations for broadcast engineers and media developers.
@@ -13,35 +14,35 @@ personas: []
 provider_name: Amazon MSK
 provider_slug: amazon-msk
 search_terms:
-- developer building media processing applications
-- list jobs
-- listclustersv2
-- list clusters
-- amazon msk media processing workflow
-- listconfigurations
-- createcluster
-- list configurations
-- manage media processing jobs
-- list clusters v2
-- engineer managing broadcast media workflows
-- aws
-- createclusterv2
-- batch associate scram secret
-- listscramsecrets
-- create cluster v2
-- batch disassociate scram secret
-- Broadcast Engineer
-- workflow
-- Media Developer
-- list scram secrets
-- batchdisassociatescramsecret
-- aws media processing and delivery
-- create cluster
-- media
-- batchassociatescramsecret
 - broadcasting
-- listclusters
+- create cluster v2
+- Broadcast Engineer
+- batch disassociate scram secret
+- manage media processing jobs
+- createcluster
+- listclustersv2
+- create cluster
+- aws media processing and delivery
+- listscramsecrets
+- list clusters
+- list scram secrets
+- batchassociatescramsecret
+- batchdisassociatescramsecret
+- media
+- Media Developer
+- createclusterv2
+- list jobs
+- listconfigurations
 - media processing
+- aws
+- workflow
+- list clusters v2
+- developer building media processing applications
+- batch associate scram secret
+- list configurations
+- amazon msk media processing workflow
+- engineer managing broadcast media workflows
+- listclusters
 slug: amazon-msk-media-workflow
 tags:
 - AWS

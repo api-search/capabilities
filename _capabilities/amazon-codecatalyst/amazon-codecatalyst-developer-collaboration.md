@@ -1,4 +1,6 @@
 ---
+categories:
+- ci-cd
 consumed_apis:
 - codecatalyst
 description: Unified workflow for development teams to collaborate on projects, manage spaces, workflows, and source repositories using Amazon CodeCatalyst.
@@ -9,42 +11,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- start a workflow run
-- continuous integration and deployment workflows.
 - create a source repository
-- list codecatalyst spaces
-- start workflow run
-- create a cloud dev environment
-- source control
-- collaboration
-- project management
-- create dev environment
-- create project
-- aws
-- create a new project
-- list workflow runs
-- list workflows for a project
-- writes code and manages repos and dev environments.
-- list projects in a space
-- manage ci/cd workflows
-- team collaboration on code and projects.
-- developer collaboration
-- list projects
-- devops
+- developer tools
 - list spaces
+- start workflow run
+- continuous integration and deployment workflows.
+- create a new project
+- team collaboration on code and projects.
+- start a workflow run
+- project and workflow management for development teams.
+- list source repositories
+- Developer
 - manage codecatalyst spaces
 - manages ci/cd workflows and project automation.
-- manage projects
-- list source repositories
-- create source repository
-- amazon
-- project and workflow management for development teams.
-- list dev environments
-- Developer
-- DevOps Engineer
+- manage ci/cd workflows
+- create dev environment
+- create a cloud dev environment
+- create project
 - list workflows
-- developer tools
+- list projects
+- list workflow runs
+- list dev environments
 - ci/cd
+- DevOps Engineer
+- list codecatalyst spaces
+- collaboration
+- developer collaboration
+- list projects in a space
+- devops
+- create source repository
+- manage projects
+- writes code and manages repos and dev environments.
+- project management
+- aws
+- list workflows for a project
+- source control
+- amazon
 slug: amazon-codecatalyst-developer-collaboration
 tags:
 - Amazon

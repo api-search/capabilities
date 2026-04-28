@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - blpapi
 description: Unified workflow for accessing Bloomberg reference data, historical data, intraday analytics, and field discovery. Used by quantitative analysts and portfolio managers.
@@ -33,47 +34,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- data license
-- request reference data for securities and fields.
-- financial services
-- business intelligence
 - execution management
-- request intraday ticks.
-- intraday bar queries.
-- analytics
-- look up metadata for bloomberg field mnemonics.
-- trading
-- intraday bar request
-- request end-of-day historical data for securities.
-- subscribe market data
-- request intraday ohlc bars for a security.
-- subscribe to streaming real-time market data.
-- quantitative analysis
-- intraday tick request
-- historical data request
-- subscribe to custom vwap stream.
-- search for fields.
-- subscribe market bar
-- field discovery.
-- intraday tick queries.
-- bloomberg
-- news
-- field info request
-- search the bloomberg api data dictionary for fields.
-- subscribe market vwap
-- request raw intraday tick data for a security.
-- subscribe to interval-based real-time bars.
-- reference data request
-- enterprise
 - historical data queries.
-- look up field metadata.
+- subscribe to interval-based real-time bars.
 - reference data queries.
+- search for fields.
+- intraday tick queries.
+- business intelligence
+- request reference data for securities and fields.
+- look up field metadata.
 - market data
-- field search request
-- request historical data.
-- request reference data.
-- transaction cost analysis
+- bloomberg
+- look up metadata for bloomberg field mnemonics.
+- analytics
+- reference data request
+- subscribe market bar
+- enterprise
+- subscribe market vwap
 - request intraday bars.
+- subscribe to streaming real-time market data.
+- news
+- search the bloomberg api data dictionary for fields.
+- field search request
+- transaction cost analysis
+- request reference data.
+- intraday bar queries.
+- request intraday ohlc bars for a security.
+- intraday tick request
+- request intraday ticks.
+- subscribe market data
+- field discovery.
+- subscribe to custom vwap stream.
+- trading
+- historical data request
+- quantitative analysis
+- financial services
+- intraday bar request
+- request historical data.
+- request raw intraday tick data for a security.
+- data license
+- field info request
+- request end-of-day historical data for securities.
 slug: market-data
 tags:
 - Bloomberg

@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
-- audio processing
-- machine learning
-- aws
 - transcription
-- speech recognition
+- machine learning
+- audio processing
+- aws
 - speech-to-text
+- speech recognition
 slug: amazon-transcribe-capability
 tags: []
 tools: []

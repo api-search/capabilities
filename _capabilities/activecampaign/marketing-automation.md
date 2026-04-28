@@ -1,4 +1,6 @@
 ---
+categories:
+- customer-engagement
 consumed_apis:
 - activecampaign-v3
 description: Unified workflow capability for marketing automation, contact management, campaign execution, and list segmentation. Used by marketing teams and growth engineers to orchestrate multi-channel customer journeys.
@@ -37,58 +39,58 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- Marketing Manager
-- orchestrate contact journeys, campaigns, automations, and list management
-- list and search contacts
-- create contact
 - marketing automation workflows
-- Sales Representative
-- crm
-- list all campaigns
-- contact list management
-- list all email campaigns in activecampaign
-- create a new contact tag in activecampaign
-- create tag
-- manages email campaigns, automations, and contact segmentation
-- list campaigns
-- Email Marketer
-- list all contact tags in activecampaign
-- list all contact lists in activecampaign
-- cross-channel contact engagement and personalization
-- campaigns
-- create a new contact in activecampaign
-- list contact lists
-- builds integrations, automation workflows, and uses the api directly
-- sync contact
-- list all automations
-- email campaign management
-- list all tags
-- manage sales pipeline, deals, accounts, and tasks
 - list all marketing automations in activecampaign
+- list all email campaigns in activecampaign
 - email, sms, and multi-channel marketing automation
-- list contacts
-- sales automation
-- marketing automation
-- create a new contact
-- activecampaign
-- customer experience
-- contact tag management
-- sync a contact's data to activecampaign, creating or updating as needed
-- crm, pipeline management, and revenue operations
-- list lists
-- create a new contact list
-- list automations
+- builds integrations, automation workflows, and uses the api directly
+- list all contact lists
+- orchestrate contact journeys, campaigns, automations, and list management
+- manages email campaigns, automations, and contact segmentation
+- list and search activecampaign contacts by email, name, or other criteria
+- list all campaigns
+- Sales Representative
+- campaigns
 - create list
+- email campaign management
+- list and search contacts
+- email marketing
 - Account Manager
 - contacts
-- Growth Engineer
-- contact lifecycle management
-- list tags
+- Email Marketer
+- create a new contact in activecampaign
+- activecampaign
 - tracks deals, manages accounts, and uses crm features
-- list and search activecampaign contacts by email, name, or other criteria
+- marketing automation
+- create tag
+- sync contact
+- customer experience
+- list all tags
+- list lists
+- list automations
+- list tags
+- list contact lists
 - Revenue Operations
-- list all contact lists
-- email marketing
+- Marketing Manager
+- contact lifecycle management
+- list campaigns
+- contact list management
+- create a new contact list
+- cross-channel contact engagement and personalization
+- contact tag management
+- list all automations
+- sync a contact's data to activecampaign, creating or updating as needed
+- create a new contact tag in activecampaign
+- create a new contact
+- manage sales pipeline, deals, accounts, and tasks
+- create contact
+- Growth Engineer
+- list all contact lists in activecampaign
+- sales automation
+- crm
+- crm, pipeline management, and revenue operations
+- list contacts
+- list all contact tags in activecampaign
 slug: marketing-automation
 tags:
 - ActiveCampaign

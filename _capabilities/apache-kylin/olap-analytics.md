@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - kylin-rest-api
 description: Workflow capability for data analysts and BI engineers to execute OLAP queries, manage projects, and monitor cube build jobs in Apache Kylin.
@@ -21,30 +23,30 @@ personas: []
 provider_name: Apache Kylin
 provider_slug: apache-kylin
 search_terms:
-- analysts who execute olap sql queries over large hadoop datasets
+- list models
 - business intelligence
-- list jobs
-- execute sql query
-- BI Engineer
-- analytics
-- big data
-- sql
-- list all kylin projects and their configurations
+- Data Analyst
+- execute a sql query on apache kylin to retrieve olap analytics results
+- apache kylin
 - list cube build jobs and their statuses
+- analytics
+- list projects
+- BI Engineer
 - cube
+- analysts who execute olap sql queries over large hadoop datasets
+- open source
+- engineers who build and manage kylin cubes for bi tool consumption
+- list data models in a kylin project
+- execute sql query
+- big data
+- list jobs
 - execute query
 - cancel job
-- execute a sql query on apache kylin to retrieve olap analytics results
-- engineers who build and manage kylin cubes for bi tool consumption
-- list models
-- apache kylin
-- list projects
-- olap
-- cancel a running kylin cube build job
+- sql
 - big data analytics
-- Data Analyst
-- open source
-- list data models in a kylin project
+- list all kylin projects and their configurations
+- cancel a running kylin cube build job
+- olap
 slug: olap-analytics
 tags:
 - Apache Kylin

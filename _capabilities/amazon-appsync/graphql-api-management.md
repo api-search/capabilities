@@ -1,4 +1,6 @@
 ---
+categories:
+- api-management
 consumed_apis: []
 description: Workflow capability for building and managing GraphQL APIs with AppSync including data sources, resolvers, and schema management.
 layout: capability
@@ -20,36 +22,36 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- create a resolver that maps a graphql field to a data source operation.
-- create a reusable pipeline function for use in pipeline resolvers.
-- create a new graphql api with the specified authentication type and configuration.
-- graphql schema management
-- get graphql api
-- serverless
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- list graphql apis
-- start schema creation
-- create function
-- aws
-- upload a new graphql schema definition to an appsync api.
-- api management
-- get complete details of a graphql api including authentication configuration and endpoints.
-- create a graphql api
-- upload a new graphql schema
-- list all appsync graphql apis to understand available apis and their configurations.
-- list all data sources connected to a graphql api.
-- list resolvers
-- amazon appsync
 - connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
 - graphql
-- list data sources
-- list all graphql apis
-- create data source
-- graphql api management
-- create graphql api
-- list functions
-- create resolver
 - list reusable pipeline functions available for composing complex resolvers.
+- list data sources
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- create a graphql api
+- api management
+- serverless
+- create data source
+- list functions
+- get graphql api
+- graphql schema management
+- create a resolver that maps a graphql field to a data source operation.
+- start schema creation
+- list all data sources connected to a graphql api.
+- upload a new graphql schema
+- get complete details of a graphql api including authentication configuration and endpoints.
+- create a reusable pipeline function for use in pipeline resolvers.
+- create function
+- list resolvers
+- list all appsync graphql apis to understand available apis and their configurations.
+- upload a new graphql schema definition to an appsync api.
+- list graphql apis
+- create a new graphql api with the specified authentication type and configuration.
+- create graphql api
+- aws
+- create resolver
+- graphql api management
+- list all graphql apis
+- amazon appsync
 slug: graphql-api-management
 tags:
 - Amazon AppSync

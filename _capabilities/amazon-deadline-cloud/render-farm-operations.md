@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,8 +9,8 @@ personas: []
 provider_name: Amazon Deadline Cloud
 provider_slug: amazon-deadline-cloud
 search_terms:
-- aws
 - media
+- aws
 - rendering
 - visual effects
 - compute

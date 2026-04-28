@@ -1,4 +1,6 @@
 ---
+categories:
+- container-orchestration
 consumed_apis:
 - apptainer
 description: Workflow capability for managing HPC containers using Apptainer for scientific computing and research workloads. Supports researchers pulling container images and running reproducible computational experiments.
@@ -9,26 +11,26 @@ personas: []
 provider_name: Apptainer
 provider_slug: apptainer
 search_terms:
-- linux foundation
-- monitor running instances
-- system administrator managing container infrastructure on hpc clusters
-- run scientific workload
-- hpc
 - researcher running reproducible computational experiments in containers
+- monitor running instances
+- pulls a container image for hpc workloads from docker or oci registry
 - research
-- lists apptainer container images optimized for hpc workloads
-- monitors currently running apptainer container instances
+- linux foundation
+- starting and monitoring container instances for scientific computation
+- open source
+- list hpc images
+- apptainer
 - containers
 - pull hpc image
-- pulls a container image for hpc workloads from docker or oci registry
 - starts an apptainer container instance to run a scientific computing workload
 - managing container images for hpc workloads
-- list hpc images
-- pull images and run reproducible scientific computing workloads
+- system administrator managing container infrastructure on hpc clusters
 - scientific computing
-- open source
-- starting and monitoring container instances for scientific computation
-- apptainer
+- hpc
+- run scientific workload
+- lists apptainer container images optimized for hpc workloads
+- monitors currently running apptainer container instances
+- pull images and run reproducible scientific computing workloads
 slug: hpc-container-management
 tags:
 - Apptainer

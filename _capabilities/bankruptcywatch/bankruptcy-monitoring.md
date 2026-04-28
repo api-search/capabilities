@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - bankruptcywatch-pacer
 description: BankruptcyWatch bankruptcy monitoring and case management workflow for creditors, lenders, and legal teams. Covers case search, docket retrieval, claims management, Proof of Claim filing, and automated bankruptcy monitoring alerts.
@@ -9,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- get bankruptcy case
+- list all active bankruptcy monitoring alerts
+- automated alerts for bankruptcy filings
+- Bankruptcy Attorney
+- file proof of claim
+- compliance
+- get case docket
+- attorney managing creditor representation in bankruptcy proceedings
+- business or individual owed money by a bankruptcy filer
+- bankruptcy case research, claims management, and automated monitoring
+- search bankruptcy cases
+- search for bankruptcy cases across all us bankruptcy court districts
+- file a proof of claim for a bankruptcy case
+- lender monitoring borrowers for bankruptcy filings
+- pacer
+- retrieve docket entries for a bankruptcy case
 - Creditor
+- bankruptcywatch
+- creditor
+- court data
+- get bankruptcy case
+- create a bankruptcy monitoring alert for a debtor or entity
+- bankruptcy
+- create bankruptcy monitor
+- list monitors
+- list claims register for a bankruptcy case
+- us bankruptcy court cases and proceedings
+- lending
 - legal
 - get detailed information about a specific bankruptcy case
-- attorney managing creditor representation in bankruptcy proceedings
-- get case docket
-- list case claims
-- automated alerts for bankruptcy filings
-- file proof of claim
-- list monitors
-- bankruptcywatch
-- Bankruptcy Attorney
-- search bankruptcy cases
-- list claims register for a bankruptcy case
-- lender monitoring borrowers for bankruptcy filings
-- bankruptcy
-- create a bankruptcy monitoring alert for a debtor or entity
-- create bankruptcy monitor
-- bankruptcy case research, claims management, and automated monitoring
-- pacer
-- search for bankruptcy cases across all us bankruptcy court districts
-- lending
-- retrieve docket entries for a bankruptcy case
-- us bankruptcy court cases and proceedings
-- court data
-- file a proof of claim for a bankruptcy case
-- creditor
-- list all active bankruptcy monitoring alerts
 - Loan Officer
-- compliance
-- business or individual owed money by a bankruptcy filer
+- list case claims
 slug: bankruptcy-monitoring
 tags:
 - BankruptcyWatch

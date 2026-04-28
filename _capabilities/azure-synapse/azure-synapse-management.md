@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - azure-synapse
 description: Workflow capability for managing Azure Synapse Analytics resources. Used by cloud engineers and DevOps teams.
@@ -13,27 +14,27 @@ personas: []
 provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
-- list pipelines
-- sql
-- analytics
-- big data
-- data warehouse
-- cloud
-- list all resources
-- management
-- resource management
-- list workspaces
-- apache spark
-- list big data pools
 - list sqlpool resources
-- list pipeline resources
-- list bigdatapool resources
-- etl
+- management
+- analytics
+- azure resource management
 - list sql pools
+- list
+- list bigdatapool resources
+- list all resources
+- list workspaces
+- data warehouse
+- big data
 - azure
 - list workspace resources
-- azure resource management
-- list
+- etl
+- resource management
+- apache spark
+- sql
+- list big data pools
+- cloud
+- list pipeline resources
+- list pipelines
 slug: azure-synapse-management
 tags:
 - Azure

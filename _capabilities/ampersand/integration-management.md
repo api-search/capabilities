@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - ampersand-api
 description: Workflow capability for product developers and platform engineers to manage SaaS integrations, connections, installations, and destinations programmatically through the Ampersand platform.
@@ -33,46 +34,46 @@ personas: []
 provider_name: Ampersand
 provider_slug: ampersand
 search_terms:
-- finops
-- list all integration installations mapping end-user groups to integration configurations in ampersand.
+- oauth
+- developer tools
+- list connections
 - list all saas providers available for integration through ampersand, including salesforce, hubspot, marketo, zendesk, and hundreds more.
-- ampersand
-- integrations
-- saas integrations
-- create a new ampersand integration installation to connect an end user's saas account with a configured integration.
-- oauth connections to third-party saas providers.
-- list installations
-- infrastructure engineer automating integration deployment and managing connections at scale.
-- integration installations for end-user connections.
+- list all data destinations configured in an ampersand project for integration data delivery to webhooks, databases, or other targets.
+- list all integration definitions in an ampersand project.
+- data destinations for integration output delivery.
+- list destinations
+- available saas provider connectors.
+- list all oauth connections to third-party saas providers established by end users in an ampersand project.
 - Product Developer
-- list integrations
-- workflow for managing saas integrations, connections, and installations.
+- ampersand
+- create a new ampersand integration installation to connect an end user's saas account with a configured integration.
+- list all integration installations mapping end-user groups to integration configurations in ampersand.
+- list all connections established for saas providers in a project.
 - list providers
 - platform
-- available saas provider connectors.
-- data sync
-- saas product developer building native integrations with third-party tools using ampersand.
-- saas
-- list all integration definitions in an ampersand project.
-- integration management
-- list all integration installations for end-user connections.
-- list all oauth connections to third-party saas providers established by end users in an ampersand project.
-- list all connections established for saas providers in a project.
-- list all destinations for integration data delivery.
+- infrastructure engineer automating integration deployment and managing connections at scale.
 - list all integration definitions configured in an ampersand project for a saas product.
-- Platform Engineer
-- native product integrations between saas applications using managed oauth, data sync, and field mapping.
-- list destinations
-- data destinations for integration output delivery.
-- list all saas providers available for integration through ampersand.
-- list connections
-- create installation
-- create a new integration installation for an end user.
-- list all data destinations configured in an ampersand project for integration data delivery to webhooks, databases, or other targets.
-- webhooks
-- developer tools
-- oauth
+- integrations
+- list all integration installations for end-user connections.
 - integration definitions for a project.
+- saas
+- list integrations
+- webhooks
+- list all saas providers available for integration through ampersand.
+- list installations
+- finops
+- data sync
+- list all destinations for integration data delivery.
+- workflow for managing saas integrations, connections, and installations.
+- create installation
+- integration management
+- create a new integration installation for an end user.
+- native product integrations between saas applications using managed oauth, data sync, and field mapping.
+- saas product developer building native integrations with third-party tools using ampersand.
+- saas integrations
+- integration installations for end-user connections.
+- oauth connections to third-party saas providers.
+- Platform Engineer
 slug: integration-management
 tags:
 - Ampersand

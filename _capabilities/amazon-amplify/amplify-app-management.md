@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-amplify
 description: Workflow capability for managing full-stack Amplify applications including app creation, branch management, and deployment workflows.
@@ -13,27 +14,27 @@ personas: []
 provider_name: Amazon Amplify
 provider_slug: amazon-amplify
 search_terms:
-- hosting
-- Frontend Developer
 - amplify application management.
-- list amplify apps
-- engineer managing ci/cd pipelines and deployments for amplify applications.
-- aws
-- frontend
-- developer building and deploying web and mobile frontends on aws amplify.
-- list all amazon amplify applications in the aws account.
-- create a new amplify full-stack application connected to a code repository.
-- list all amplify apps.
-- amplify
 - list apps
-- mobile development
-- create amplify app
+- list all amazon amplify applications in the aws account.
 - web applications
-- manage amplify apps, branches, and deployments.
-- full stack
-- amazon
-- DevOps Engineer
 - deployment
+- engineer managing ci/cd pipelines and deployments for amplify applications.
+- create amplify app
+- list amplify apps
+- amplify
+- list all amplify apps.
+- DevOps Engineer
+- mobile development
+- hosting
+- developer building and deploying web and mobile frontends on aws amplify.
+- create a new amplify full-stack application connected to a code repository.
+- full stack
+- aws
+- manage amplify apps, branches, and deployments.
+- Frontend Developer
+- frontend
+- amazon
 slug: amplify-app-management
 tags:
 - Amazon

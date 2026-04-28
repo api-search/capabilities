@@ -1,4 +1,6 @@
 ---
+categories:
+- payments
 consumed_apis:
 - google-play
 description: Unified workflow for managing Android app monetization through in-app purchases, subscriptions, reviews, and order management using the Google Play Developer API. Designed for app developers and product managers managing app revenue and user feedback.
@@ -25,40 +27,40 @@ personas: []
 provider_name: Android
 provider_slug: android
 search_terms:
-- app reviews
-- tv
-- machine learning
-- subscriptions
-- check in-app product purchase and consumption status
-- sdk
-- get product purchase status
-- wearables
-- subscription products
-- monetization
-- get a specific user review with comments
-- list subscription products
-- list cancelled, refunded, or charged-back purchases
-- list user reviews from google play store
-- voided purchases
-- list app reviews
-- google
-- ai
-- in-app product purchases
+- list all subscription products for an app
 - list voided purchases
-- list reviews
 - check subscription purchase validity and expiry
-- create a new subscription product
-- get review
-- mobile development
-- reviews
-- get purchase subscription
-- automotive
-- android
+- list cancelled, refunded, or charged-back purchases
+- app reviews
 - google play
 - get purchase product
-- create subscription
-- list all subscription products for an app
+- get purchase subscription
+- reviews
+- get review
+- list app reviews
+- android
+- monetization
+- get product purchase status
+- tv
+- google
+- wearables
+- mobile development
+- in-app product purchases
+- get a specific user review with comments
+- subscription products
 - list subscriptions
+- voided purchases
+- ai
+- list subscription products
+- check in-app product purchase and consumption status
+- subscriptions
+- machine learning
+- automotive
+- list reviews
+- create a new subscription product
+- list user reviews from google play store
+- create subscription
+- sdk
 slug: app-monetization
 tags:
 - Android

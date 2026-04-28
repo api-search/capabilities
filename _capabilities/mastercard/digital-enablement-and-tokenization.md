@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - mdes-digital
 - mdes-token-connect
@@ -30,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- check if a card is eligible for digitization
-- enroll an issuer in click to pay
-- submit bulk tokenization request
-- financial services
-- mdes
-- tokenization
-- suspend an active token
-- credit cards
-- submit bulk tokenization
-- submit a bulk tokenization request for a card portfolio
-- register token requestor
-- tokenize a payment card via mdes
-- tokenize a payment card
-- enroll issuer click to pay
-- register a new token requestor
-- get token details
-- click to pay
-- tokenize card
-- mastercard
-- delete token
-- push provision to wallet
-- digital payments
-- token lifecycle management
-- push provision a token to a digital wallet
-- check digitization eligibility
 - check card eligibility for digitization
-- push provisioning to wallets
-- digital identity
-- payments
-- open banking
-- push provision
+- token lifecycle management
+- enroll an issuer in click to pay
+- credit cards
+- get token details
 - pre-digitization eligibility
-- delete a token
-- suspend token
-- push provision a token to a wallet
-- fraud detection
+- push provision
+- push provision to wallet
 - bulk tokenization operations
+- digital identity
+- mdes
+- push provisioning to wallets
+- push provision a token to a digital wallet
+- open banking
+- register token requestor
+- delete token
+- check if a card is eligible for digitization
+- register a new token requestor
+- enroll issuer click to pay
+- tokenization
+- push provision a token to a wallet
+- check digitization eligibility
+- suspend token
+- tokenize card
+- submit a bulk tokenization request for a card portfolio
+- mastercard
+- fraud detection
+- digital payments
+- financial services
+- suspend an active token
+- payments
+- click to pay
+- submit bulk tokenization
+- delete a token
+- tokenize a payment card
+- tokenize a payment card via mdes
+- submit bulk tokenization request
 slug: digital-enablement-and-tokenization
 tags:
 - Mastercard

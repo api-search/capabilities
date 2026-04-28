@@ -1,4 +1,6 @@
 ---
+categories:
+- messaging
 consumed_apis:
 - slack-chat
 - slack-conversations
@@ -36,45 +38,45 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- manage channel bookmarks.
-- add reaction
-- manage reminders
-- chat
-- list conversations.
-- collaboration
+- list stars
+- search messages and files.
+- manage bookmarks
+- list custom emoji.
 - search messages
-- post message
-- message management.
+- bots
 - post a message.
-- manage canvases.
-- messaging
-- list emoji
-- list conversations
-- team communication
 - search workspace.
 - list starred items.
-- productivity
-- manage reminders.
-- list stars
-- list files
-- manage bookmarks
-- search messages and files.
-- search
-- file management.
-- manage lists
-- add pin
-- manage canvases
-- list files.
 - add a reaction.
-- bots
-- conversation management.
-- slack
-- list custom emoji.
-- communication
-- manage lists.
+- post message
 - post a message to a channel.
+- manage channel bookmarks.
 - pin a message.
+- add pin
+- slack
+- manage lists.
+- manage canvases
+- collaboration
+- manage lists
+- chat
+- message management.
+- manage reminders
+- conversation management.
+- add reaction
+- list files
+- communication
+- list conversations.
+- manage canvases.
+- manage reminders.
+- productivity
 - t1
+- messaging
+- list files.
+- list emoji
+- file management.
+- search
+- team communication
+- list conversations
 slug: messaging-communication
 tags:
 - Slack

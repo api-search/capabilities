@@ -1,4 +1,6 @@
 ---
+categories:
+- compliance
 consumed_apis:
 - zoominfo
 description: Unified capability for monitoring and compliance workflows combining webhook management, API usage tracking, and compliance operations. Used by platform admins and data governance teams to manage data monitoring, ensure compliance, and track API consumption.
@@ -41,47 +43,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
+- validate a webhook target url.
 - zoominfo
-- delete a webhook subscription.
-- api usage
-- available webhook subscription types.
-- data compliance operations.
-- create webhook
-- check data compliance status for specified contacts.
-- create a new webhook subscription.
-- list all webhook subscriptions.
-- check compliance status for specified contacts.
-- sales intelligence
-- b2b
-- create a new webhook subscription for data change notifications.
-- list all configured webhook subscriptions.
-- webhook target url validation.
+- marketing intelligence
 - list webhooks
-- get available webhook subscription types.
-- update webhook
-- get usage
+- available webhook subscription types.
+- compliance
 - get subscription types
-- b2b data
+- get available webhook subscription types.
+- get api usage data.
 - company data
 - check compliance
-- monitoring
-- contact database
-- delete webhook
-- get api usage data and consumption metrics.
-- lead generation
-- validate target url
-- validate a webhook target url.
-- api usage tracking.
-- update an existing webhook subscription.
 - contacts
-- get api usage data.
-- validate a webhook target url is reachable.
-- webhooks
-- compliance
-- individual webhook management.
-- marketing intelligence
-- data
+- sales intelligence
+- b2b
 - webhook subscription management.
+- check data compliance status for specified contacts.
+- list all configured webhook subscriptions.
+- delete a webhook subscription.
+- api usage tracking.
+- data
+- individual webhook management.
+- delete webhook
+- create a new webhook subscription.
+- validate a webhook target url is reachable.
+- check compliance status for specified contacts.
+- api usage
+- b2b data
+- webhooks
+- monitoring
+- list all webhook subscriptions.
+- webhook target url validation.
+- validate target url
+- create webhook
+- get api usage data and consumption metrics.
+- create a new webhook subscription for data change notifications.
+- update an existing webhook subscription.
+- lead generation
+- update webhook
+- contact database
+- data compliance operations.
+- get usage
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

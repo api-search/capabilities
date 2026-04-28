@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis: []
 description: ''
 layout: capability
@@ -8,12 +9,12 @@ personas: []
 provider_name: Amazon Transit Gateway
 provider_slug: amazon-transit-gateway
 search_terms:
-- vpc
+- cloud networking
 - aws
 - transit gateway
 - networking
 - network hub
-- cloud networking
+- vpc
 slug: amazon-transit-gateway-capability
 tags: []
 tools: []

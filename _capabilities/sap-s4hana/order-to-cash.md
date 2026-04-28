@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - sales-order
 description: Unified order-to-cash capability combining sales order management with items, partners, pricing, schedule lines, and text records. Used by sales operations and order management teams.
@@ -17,43 +18,43 @@ personas: []
 provider_name: SAP S/4HANA
 provider_slug: sap-s4hana
 search_terms:
-- manufacturing
-- inventory
-- create a new sales order
-- retrieve a single sales order by key
-- retrieve items for a sales order
-- sales
-- retrieve partners for a sales order
+- delete sales order
+- delete a sales order
+- sales order management
 - list sales order texts
-- list sales orders
+- retrieve partners for a sales order
+- procurement
+- finance
+- human resources
+- order-to-cash
+- list sales order partners
 - list sales order pricing
 - business applications
-- cloud
-- update a sales order header
-- create sales order
+- list sales orders
 - plant maintenance
-- finance
-- sales order management
+- cloud
+- inventory
+- create sales order item
 - create a sales order
 - enterprise resource planning
-- list sales order partners
-- list sales order items
-- create a new sales order item
-- create sales order item
-- procurement
-- delete sales order
-- erp
-- s/4hana
-- update sales order
-- retrieve a list of sales orders
-- retrieve text records for a sales order
-- human resources
-- get sales order
-- sap
 - logistics
+- retrieve a single sales order by key
+- manufacturing
+- erp
+- retrieve text records for a sales order
 - retrieve header pricing elements
-- order-to-cash
-- delete a sales order
+- sap
+- create a new sales order
+- create a new sales order item
+- update sales order
+- retrieve items for a sales order
+- get sales order
+- list sales order items
+- sales
+- create sales order
+- s/4hana
+- update a sales order header
+- retrieve a list of sales orders
 slug: order-to-cash
 tags:
 - SAP

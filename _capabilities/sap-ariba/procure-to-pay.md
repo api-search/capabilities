@@ -1,4 +1,6 @@
 ---
+categories:
+- procurement-supply-chain
 consumed_apis:
 - procurement
 description: Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts. Used by procurement teams and AP automation workflows.
@@ -17,49 +19,49 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- create a requisition
-- create purchase order
-- get invoice
-- approve an invoice for payment
-- list line items for an order
-- approve invoice
-- reject invoice
-- cancel a purchase order
-- list line items
-- list receipts for an order
-- update a purchase order
-- b2b
-- list requisitions
-- list suppliers
-- spend analysis
-- procurement
-- create a purchase order
 - get supplier profile
-- create requisition
-- supplier management
-- purchase order management
-- create a receipt
-- list receipts
-- contract management
-- get purchase order
-- get requisition details
-- get invoice details
-- procure-to-pay
-- create receipt
-- ariba
-- cancel purchase order
-- get purchase order details
-- sap
-- create invoice
-- list invoices
-- create an invoice
-- get requisition
-- sourcing
-- list purchase orders
-- supply chain
-- get supplier
 - update purchase order
+- create a receipt
+- create purchase order
+- cancel a purchase order
+- procurement
+- create requisition
+- list line items for an order
+- procure-to-pay
+- update a purchase order
+- get supplier
+- list requisitions
+- b2b
+- list receipts
+- create receipt
+- reject invoice
+- create an invoice
+- get invoice details
+- list receipts for an order
+- get purchase order
+- ariba
+- supplier management
+- create invoice
+- list purchase orders
+- get invoice
+- get requisition
+- get purchase order details
 - reject an invoice
+- spend analysis
+- sourcing
+- approve invoice
+- cancel purchase order
+- contract management
+- get requisition details
+- supply chain
+- purchase order management
+- list invoices
+- create a purchase order
+- create a requisition
+- sap
+- list line items
+- approve an invoice for payment
+- list suppliers
 slug: procure-to-pay
 tags:
 - SAP

@@ -1,4 +1,6 @@
 ---
+categories:
+- machine-learning
 consumed_apis:
 - claude-messages
 description: Unified workflow for AI-powered messaging, token counting, batch processing, and model discovery. Used by AI application developers and data scientists.
@@ -41,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- list batches
-- count tokens
-- count message tokens
-- machine learning
-- create a message.
-- delete batch
-- retrieve message batch results
-- anthropic
-- model details.
-- get model
-- get model metadata.
-- send a message to claude and receive a response.
-- batch management.
-- chatbot
-- get message batch status and details.
-- natural language processing
-- delete a batch.
-- list message batches
-- messaging
-- large language models
-- artificial intelligence
-- get completed batch results.
-- create batch
-- cancel an in-progress batch.
-- ai
-- individual batch management.
-- cancel message batch
-- claude
-- count tokens in a message.
-- list all message batches.
-- token counting.
-- list message batches.
-- get batch status.
-- create a batch of message requests.
-- delete message batch
-- list available claude models.
 - list models
-- conversational ai
-- retrieve message batch
-- model discovery.
-- create a message batch.
-- delete a completed batch.
-- get batch
-- list available models.
-- create message batch
+- create batch
+- count message tokens
+- count tokens in a message.
 - create message
+- cancel message batch
+- artificial intelligence
+- conversational ai
+- get completed batch results.
+- send a message to claude and receive a response.
+- list message batches.
+- list batches
+- natural language processing
+- individual batch management.
+- delete a completed batch.
+- get message batch status and details.
+- retrieve message batch results
+- cancel an in-progress batch.
+- count tokens
+- delete batch
+- model details.
+- large language models
+- list available claude models.
+- model discovery.
+- create message batch
+- delete message batch
+- batch management.
+- ai
+- token counting.
 - message operations.
-- count message tokens.
+- list all message batches.
+- create a message.
 - generative ai
+- count message tokens.
+- retrieve message batch
+- claude
+- machine learning
+- list available models.
+- chatbot
+- create a message batch.
+- messaging
+- get model
+- get batch status.
+- get batch
+- create a batch of message requests.
+- list message batches
+- get model metadata.
+- anthropic
+- delete a batch.
 slug: ai-messaging
 tags:
 - Anthropic

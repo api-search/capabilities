@@ -1,4 +1,6 @@
 ---
+categories:
+- analytics
 consumed_apis:
 - gmp-admin
 description: Unified workflow for managing Google Marketing Platform organizations and their Analytics account integrations including service level configuration. Used by marketing platform administrators and analytics managers.
@@ -25,26 +27,26 @@ personas: []
 provider_name: Google Marketing Platform Admin
 provider_slug: google-marketing-platform
 search_terms:
-- set analytics property service level (standard or 360).
-- analytics
-- list analytics links
-- delete an analytics account link.
-- delete analytics link
-- platform administration
-- list organizations
-- list analytics account links for an organization.
-- analytics account link management.
-- list google marketing platform organizations.
-- create an analytics account link.
-- individual analytics link management.
-- organization management.
-- create analytics link
-- marketing
-- list analytics account links.
-- google marketing platform
 - organization management
+- organization management.
+- set analytics property service level (standard or 360).
 - set property service level
 - list marketing platform organizations.
+- analytics account link management.
+- list organizations
+- analytics
+- list google marketing platform organizations.
+- create analytics link
+- individual analytics link management.
+- create an analytics account link.
+- marketing
+- list analytics account links for an organization.
+- google marketing platform
+- list analytics links
+- delete analytics link
+- list analytics account links.
+- platform administration
+- delete an analytics account link.
 slug: marketing-analytics
 tags:
 - Google Marketing Platform

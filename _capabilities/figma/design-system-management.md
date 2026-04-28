@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - figma-rest
 description: Unified workflow for managing design files, components, styles, projects, comments, and asset export. Combines the Figma REST API endpoints into a cohesive design system management experience. Used by design system engineers, developers, and design ops teams.
@@ -37,60 +38,60 @@ personas: []
 provider_name: Figma
 provider_slug: figma
 search_terms:
-- list team components.
-- team project access.
-- get a figma file.
-- file node access.
-- get file versions
-- post a comment on a figma file.
-- list components in a figma file.
-- list published components for a team.
-- component access.
-- figma
-- render images from a file.
-- list published component sets for a team.
-- collaboration
-- design file access.
-- ui/ux
-- list projects for a team.
-- list team projects.
-- get team styles
-- prototyping
-- post comment
-- prototypes
-- get team component sets
-- get component
-- get file
-- get comments
-- get specific nodes from a figma file by ids.
-- get a specific component by key.
-- get team components
-- get file nodes
-- team component access.
-- list files in a project.
-- components
-- get a figma file document tree.
-- get information about the authenticated user.
-- files
-- get file components
-- render and export images from a figma file.
-- design
-- get specific nodes from a file.
-- list version history of a figma file.
-- interfaces
-- list published styles for a team.
-- project file access.
-- graphics
-- get team projects
-- design systems
-- get download links for images used as fills in a file.
-- get project files
-- get a component by key.
-- list comments on a figma file.
 - asset export
+- post comment
+- prototyping
+- prototypes
+- graphics
+- list published styles for a team.
+- figma
 - get image fills
-- get images
+- component access.
+- get download links for images used as fills in a file.
+- render and export images from a figma file.
 - image rendering.
+- components
+- get specific nodes from a file.
+- list files in a project.
+- get information about the authenticated user.
+- render images from a file.
+- team project access.
+- get comments
+- get file versions
+- get component
+- get team component sets
+- project file access.
+- list projects for a team.
+- ui/ux
+- list comments on a figma file.
+- collaboration
+- get file nodes
+- list published component sets for a team.
+- design file access.
+- get team components
+- team component access.
+- interfaces
+- get a figma file document tree.
+- get file
+- get a specific component by key.
+- list version history of a figma file.
+- list team projects.
+- get specific nodes from a figma file by ids.
+- get file components
+- list published components for a team.
+- get team styles
+- get a component by key.
+- design
+- files
+- post a comment on a figma file.
+- design systems
+- get team projects
+- list components in a figma file.
+- get a figma file.
+- list team components.
+- get project files
+- get images
+- file node access.
 - get me
 slug: design-system-management
 tags:

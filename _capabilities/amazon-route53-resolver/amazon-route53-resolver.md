@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - amazon-route53-resolver
 description: Workflow capability for Amazon Route53 Resolver. Enables automation of Amazon Route53 Resolver resources for cloud operations teams.
@@ -14,17 +15,17 @@ provider_name: Amazon Route 53 Resolver
 provider_slug: amazon-route53-resolver
 search_terms:
 - amazon route53 resolver resources
-- list amazon route53 resolver resources
-- list resources
+- dns
 - aws
 - automation workflow for amazon route53 resolver
 - cloud operations
-- engineer managing amazon route53 resolver resources
-- dns
-- aws cloud resource management
-- hybrid cloud
+- list amazon route53 resolver resources
 - networking
 - amazon route53 resolver
+- aws cloud resource management
+- engineer managing amazon route53 resolver resources
+- hybrid cloud
+- list resources
 slug: amazon-route53-resolver
 tags:
 - Amazon Route53 Resolver

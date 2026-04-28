@@ -1,4 +1,5 @@
 ---
+categories: []
 consumed_apis:
 - zones-mgmt
 description: Unified zone lifecycle workflow combining zone creation, configuration, administration, monitoring, and migration. Used by system administrators and platform engineers to manage Solaris virtualization infrastructure.
@@ -45,60 +46,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- boot the zone.
-- kernel zones
-- list zones
-- shutdown zone
-- migrate zone
-- oracle
-- get current zone state.
-- zone inventory and creation.
-- install zone
+- virtualization
+- shutdown a zone.
+- boot a zone.
+- get zone
+- clone a solaris zone.
+- verify zone configuration integrity.
+- get solaris zone details.
+- delete a zone.
+- migrate to another host.
+- install a solaris zone.
+- zone state operations.
+- operating systems
 - halt a zone immediately.
 - list all solaris zones with status.
-- list all zones.
-- get zone
-- virtualization
-- get zone details.
-- shutdown a zone.
-- zones
-- zone state operations.
-- migrate a zone.
-- resource management
-- operating systems
-- halt zone
-- verify zone configuration integrity.
-- gracefully shutdown a zone.
-- boot a solaris zone.
-- uninstall a solaris zone.
-- verify zone
-- delete zone
-- individual zone operations.
-- gracefully shutdown.
-- migrate to another host.
-- reboot the zone.
-- containers
-- create a new zone.
-- get solaris zone details.
-- delete a solaris zone.
-- lifecycle management
-- reboot a solaris zone.
-- create a new solaris zone.
-- migrate a zone to another host.
+- shutdown zone
+- zone inventory and creation.
 - get zone state
-- create zone
-- install a solaris zone.
-- uninstall zone
-- solaris
-- reboot zone
-- clone a solaris zone.
-- statsstore
-- boot a zone.
-- delete a zone.
 - reboot a zone.
+- reboot the zone.
+- migrate a zone to another host.
+- delete zone
+- create a new zone.
+- boot a solaris zone.
 - clone zone
+- oracle
+- containers
+- statsstore
+- solaris
 - boot zone
+- create zone
+- reboot a solaris zone.
 - rad
+- list zones
+- gracefully shutdown.
+- halt zone
+- delete a solaris zone.
+- migrate a zone.
+- individual zone operations.
+- gracefully shutdown a zone.
+- boot the zone.
+- migrate zone
+- resource management
+- create a new solaris zone.
+- zones
+- list all zones.
+- reboot zone
+- verify zone
+- lifecycle management
+- uninstall a solaris zone.
+- kernel zones
+- get current zone state.
+- uninstall zone
+- install zone
+- get zone details.
 slug: zone-lifecycle
 tags:
 - Solaris
