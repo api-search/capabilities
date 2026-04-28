@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get card details
-- fraud detection
-- look up bin information for a card
-- issue a new card
-- automatic billing updates
-- account management
-- digital identity
+- manage a payment account lifecycle
+- query payment account reference to link tokens to accounts
+- financial services
+- create fulfillment order
 - open banking
 - card issuance and management
-- create fulfillment order
-- manage a payment account lifecycle
-- get account catalog
-- request updated card credentials for card-on-file
-- bin lookup
-- manage a payment account
-- submit pan-related event for account level management
-- issue card
-- retrieve account catalog data
-- create a physical card fulfillment order
-- issue a new mastercard card
-- look up bin information
-- list bins
-- request updated card credentials
-- financial services
-- get payment account reference
-- query payment account reference to link tokens to accounts
-- payments
-- manage account
-- issuers
-- validate account
-- payment account management
 - manage payment account
-- credit cards
+- validate account details
+- submit pan-related event for account level management
+- get payment account reference
+- card management
+- create a physical card fulfillment order
+- fraud detection
+- look up bin information for a card
+- automatic billing updates
+- request updated card credentials
+- manage account
+- retrieve account catalog data
+- payment account management
+- manage a payment account
+- issue card
+- bin lookup
+- get account catalog
+- issuers
+- get card details
+- validate account
+- account management
+- lookup bin
+- payments
+- look up bin information
+- request updated card credentials for card-on-file
+- mastercard
+- issue a new card
+- issue a new mastercard card
+- digital identity
 - list available mastercard bins
 - submit pan event
-- card management
-- validate account details
-- mastercard
+- credit cards
 - get billing updates
-- lookup bin
+- list bins
 slug: card-and-account-management
 tags:
 - Mastercard

@@ -18,24 +18,24 @@ personas: []
 provider_name: Cisco
 provider_slug: cisco
 search_terms:
-- networks
-- list networks
-- collaboration
-- enterprise
-- unified network management combining meraki and other cisco apis
-- networking
-- security
-- list devices
-- list organizations
-- list devices in network
-- cisco
-- Network Admin
-- list networks in organization
-- network management
-- list meraki organizations
-- network administrators managing cisco infrastructure
 - sd-wan
+- network administrators managing cisco infrastructure
+- list organizations
 - network organizations
+- enterprise
+- security
+- networking
+- cisco
+- network management
+- list devices
+- list devices in network
+- unified network management combining meraki and other cisco apis
+- list networks in organization
+- collaboration
+- list networks
+- Network Admin
+- networks
+- list meraki organizations
 slug: network-management
 tags:
 - Cisco

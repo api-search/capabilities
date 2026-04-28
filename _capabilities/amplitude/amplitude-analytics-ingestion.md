@@ -25,35 +25,35 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- attribution api sendAttribution
 - sendAttribution
-- product analytics
-- export raw event data and manage behavioral cohorts. for data analysts.
-- a/b testing
-- identify api identifyUser
-- feature flags
-- identifyUser
-- event ingestion
-- user behavior
-- uploadEvents
-- amplitude send attribution data
-- unified workflow for sending events and identifying users. for data engineers.
 - scim provisioning and privacy compliance. for it admins and compliance teams.
+- uploadEvents
+- identifyUser
+- runs experiments and feature flags
+- manages privacy and compliance
+- event ingestion
+- amplitude send attribution data
+- ingests and exports event data
+- export raw event data and manage behavioral cohorts. for data analysts.
+- amplitude identify a user
+- data governance
 - amplitude
 - amplitude upload events
+- identify api identifyUser
 - manage event schemas and chart annotations. for data governance teams.
-- http v2 api uploadEvents
-- ingests and exports event data
-- experimentation
-- amplitude identify a user
-- privacy compliance
-- analytics
-- data governance
+- feature flags
 - analyzes data and manages cohorts
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- runs experiments and feature flags
 - identity management
-- manages privacy and compliance
+- privacy compliance
+- product analytics
+- analytics
+- experimentation
+- unified workflow for sending events and identifying users. for data engineers.
+- http v2 api uploadEvents
+- a/b testing
+- attribution api sendAttribution
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- user behavior
 slug: amplitude-analytics-ingestion
 tags:
 - Amplitude

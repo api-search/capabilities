@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- get query status
-- list querygrid queries
-- sql
-- execute sql queries and analytics.
-- query sessions.
+- get the status and results of a submitted query.
 - administers querygrid systems, nodes, and software.
-- execute a sql query against teradata vantage.
-- list available vantage systems.
+- list querygrid queries
 - create a new query session on a vantage system.
-- enterprise
-- execute query
-- execute a sql query.
-- available systems.
-- list cross-system query summaries from querygrid.
-- Data Analyst
-- manage querygrid data fabric infrastructure.
-- executes queries and analyzes data across vantage systems.
-- Data Engineer
-- sql queries.
-- manages data fabric infrastructure and cross-system connectivity.
-- query
-- teradata
-- Application Developer
-- machine learning
-- create a query session.
 - list query systems
+- execute a sql query.
+- list cross-system query summaries from querygrid.
+- query
+- create a query session.
+- Data Engineer
+- health monitoring and issue detection.
+- executes queries and analyzes data across vantage systems.
+- sql queries.
+- Data Analyst
+- available systems.
+- integrates applications with teradata via rest apis.
+- machine learning
+- list available vantage systems.
+- database
+- execute a sql query against teradata vantage.
+- cloud
+- Platform Administrator
+- execute query
+- data warehousing
 - create session
 - analytics
-- list available vantage systems for query execution.
-- system and fabric configuration management.
-- cloud
-- data warehousing
-- integrates applications with teradata via rest apis.
-- get the status and results of a submitted query.
-- health monitoring and issue detection.
-- database
-- data management
-- Platform Administrator
 - sql query execution and session management.
+- data management
+- enterprise
+- Application Developer
+- get query status
+- list available vantage systems for query execution.
+- sql
+- manage querygrid data fabric infrastructure.
+- teradata
+- execute sql queries and analytics.
+- query sessions.
+- manages data fabric infrastructure and cross-system connectivity.
+- system and fabric configuration management.
 slug: query-and-analytics
 tags:
 - Teradata

@@ -15,27 +15,27 @@ provider_name: Azure DevTest Labs
 provider_slug: azure-test-labs
 search_terms:
 - list lab resources
-- virtual machines
-- list custom images
-- development
-- azure resource management
 - azure
-- resource management
-- list virtualmachine resources
-- list virtual machines
-- list customimage resources
-- list formulas
+- labs
 - list environments
 - list labs
+- development
+- list virtualmachine resources
+- list custom images
 - list formula resources
-- list
 - infrastructure
-- labs
-- cloud
-- management
-- testing
-- list all resources
 - list environment resources
+- list formulas
+- list
+- cloud
+- testing
+- virtual machines
+- list all resources
+- azure resource management
+- resource management
+- list virtual machines
+- management
+- list customimage resources
 slug: azure-test-labs-management
 tags:
 - Azure

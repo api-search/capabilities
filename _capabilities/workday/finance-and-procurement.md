@@ -19,27 +19,27 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- procurement
-- list expense reports
-- cloud computing
-- financial management
-- get an accounting journal by id
-- list customer invoices
 - get accounting journal
-- suppliers
-- get a supplier by id
-- get an expense report by id
-- hcm
-- workday
+- get expense report
 - list accounting journals
 - get supplier
-- enterprise software
-- get expense report
-- accounting journals
+- get an accounting journal by id
 - list journals
+- list customer invoices
+- get a supplier by id
+- workday
+- accounting journals
+- get an expense report by id
 - list purchase orders
-- list suppliers
+- enterprise software
+- procurement
+- financial management
+- cloud computing
 - saas
+- list expense reports
+- hcm
+- list suppliers
+- suppliers
 slug: finance-and-procurement
 tags:
 - Workday

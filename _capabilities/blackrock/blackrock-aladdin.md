@@ -9,12 +9,12 @@ personas: []
 provider_name: BlackRock
 provider_slug: blackrock
 search_terms:
-- risk analytics
-- fintech
 - finance
-- portfolio management
-- investment management
+- risk analytics
 - asset management
+- investment management
+- fintech
+- portfolio management
 slug: blackrock-aladdin
 tags: []
 tools: []

@@ -59,75 +59,75 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- get code scanning analysis
-- secret scanning alert management
-- get a code scanning alert
-- code scanning alert management
-- getSecretScanningAlert
-- get a code scanning analysis
-- get default setup
-- check vulnerability alert status
-- get a secret scanning alert
-- get code scanning alert
-- update default setup
-- update a dependabot alert
-- list dependabot secrets
-- listDependabotAlertsForRepository
-- platform
-- update a code scanning alert
-- listCodeScanningAlertsForRepository
-- individual code scanning alert
-- list code scanning analyses
-- get code scanning default setup configuration
-- update secret scanning alert
-- update a secret scanning alert
-- individual dependabot alert
-- dependabot alert management
-- getCodeScanningAlert
-- vulnerability alert settings
-- get dependabot alert
-- list analyses
-- github
-- update a dependabot alert (dismiss, reopen)
-- disable vulnerability alerts
-- dependabot
-- software development
-- listSecretScanningAlertsForRepository
-- list secret scanning alerts
-- code
-- get a dependabot alert
-- update code scanning alert
+- check if vulnerability alerts are enabled
+- code scanning
+- enableVulnerabilityAlerts
 - checkIfVulnerabilityAlertsAreEnabledForRepository
+- code scanning alert management
+- individual dependabot alert
+- get secret scanning alert
+- update a dependabot alert
+- list dependabot alerts
+- vulnerability management
+- individual code scanning alert
+- get a code scanning alert
+- update a code scanning alert
+- update a code scanning alert (dismiss, reopen)
+- listSecretScanningAlertsForRepository
+- get code scanning default setup configuration
+- list secret scanning locations
+- disable vulnerability alerts
+- get a code scanning analysis
+- list secret scanning alerts
+- dependabot alert management
+- update a secret scanning alert
+- update default setup
+- update dependabot alert
+- software development
+- list dependabot secrets
+- getDependabotAlert
+- list locations for a secret scanning alert
+- list code scanning alerts
+- get a dependabot alert
+- list code scanning alerts for a repository
+- individual secret scanning alert
+- get a secret scanning alert
+- upload sarif analysis data
+- update code scanning alert
+- updateDependabotAlert
+- enable vulnerability alerts
+- list analyses
+- get dependabot alert
+- list code scanning analyses
+- listDependabotAlertsForRepository
+- source control
+- check vulnerability alerts
+- secret scanning
+- code scanning analyses
+- upload sarif
+- update secret scanning alert
+- code
+- listCodeScanningAlertsForRepository
+- updateCodeScanningAlert
+- get code scanning analysis
+- update a dependabot alert (dismiss, reopen)
+- vulnerability alert settings
+- getSecretScanningAlert
+- t1
+- pipelines
+- secret scanning alert management
+- platform
+- get default setup
+- getCodeScanningAlert
+- listCodeScanningAnalysesForRepository
+- github
+- dependabot
+- check vulnerability alert status
+- get code scanning alert
+- update code scanning default setup
+- update a secret scanning alert (resolve, reopen)
 - security
 - updateSecretScanningAlert
-- check vulnerability alerts
-- t1
-- upload sarif analysis data
-- updateDependabotAlert
-- enableVulnerabilityAlerts
-- list code scanning alerts
-- enable vulnerability alerts
-- update a code scanning alert (dismiss, reopen)
-- upload sarif
-- list secret scanning locations
-- update a secret scanning alert (resolve, reopen)
-- list dependabot alerts
-- code scanning analyses
-- list locations for a secret scanning alert
-- getDependabotAlert
-- vulnerability management
-- check if vulnerability alerts are enabled
-- pipelines
-- code scanning
-- list code scanning alerts for a repository
-- source control
-- secret scanning
-- update dependabot alert
-- get secret scanning alert
-- updateCodeScanningAlert
-- individual secret scanning alert
-- update code scanning default setup
-- listCodeScanningAnalysesForRepository
 slug: security-operations
 tags:
 - GitHub

@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- manages invoicing, payments, and revenue assurance
-- list service subscriptions for a customer
-- manages telco bss operations and system configuration
-- list telecom customer accounts
+- bss
+- create subscription
+- customer subscription management
+- onboard a new telecom customer
+- customer management
+- list customers
+- billing
+- mvno
 - BSS Operator
-- handles customer inquiries and account management
-- Billing Team
+- list service subscriptions for a customer
+- add a service subscription to a customer account
+- list subscriptions
+- Customer Care Agent
+- oss
+- browse available products and plans
+- 5g
+- list subscriptions for a customer
+- amdocs
 - retrieve billing invoices for a customer
 - browse the service catalog and available plans
-- customer billing invoices
-- list subscriptions
-- list all customer accounts
-- list invoices for a customer
-- billing
-- telecom
-- Customer Care Agent
-- list invoices
-- add a service subscription to a customer account
-- 5g
-- customer management
-- unified bss workflow for customer onboarding, billing, and service management
-- browse available products and plans
 - product and service catalog
-- list customers
-- create subscription
-- onboard a new customer
-- oss
-- telecom customer account management
-- onboard a new telecom customer
-- add a service subscription
-- list products
-- customer subscription management
-- bss
-- list subscriptions for a customer
-- saas
-- amdocs
-- mvno
+- customer billing invoices
+- list invoices
+- list telecom customer accounts
 - create customer
+- handles customer inquiries and account management
+- list invoices for a customer
+- Billing Team
+- telecom customer account management
+- saas
+- onboard a new customer
+- add a service subscription
+- manages telco bss operations and system configuration
+- manages invoicing, payments, and revenue assurance
+- unified bss workflow for customer onboarding, billing, and service management
+- list all customer accounts
+- list products
+- telecom
 slug: telco-customer-management
 tags:
 - Amdocs

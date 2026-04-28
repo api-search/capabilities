@@ -36,38 +36,38 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- api integration management
-- create notification integration
+- notification integration management
+- snowflake
+- create api integration
+- fetch catalog integration details
+- list catalog integrations
+- fetch notification integration
+- delete notification integration
 - data lakes
-- sql
-- create an api integration
-- delete a catalog integration
+- delete api integration
+- catalog integration management
+- create notification integration
 - create catalog integration
 - list api integrations
-- create a catalog integration
-- delete notification integration
-- list catalog integrations
-- fetch api integration details
-- notification integration management
-- delete api integration
-- fetch notification integration details
-- fetch notification integration
-- fetch api integration
-- delete catalog integration
 - integrations
-- create api integration
-- list notification integrations
-- snowflake
-- fetch catalog integration details
-- create a notification integration
-- catalog integration management
-- fetch catalog integration
-- data warehousing
+- delete catalog integration
+- api integration management
 - delete a notification integration
-- database
-- data sharing
-- connectors
+- list notification integrations
+- fetch catalog integration
+- create a notification integration
 - delete an api integration
+- create an api integration
+- database
+- fetch api integration details
+- fetch notification integration details
+- data warehousing
+- data sharing
+- fetch api integration
+- sql
+- connectors
+- delete a catalog integration
+- create a catalog integration
 slug: integrations-and-connectors
 tags:
 - Snowflake

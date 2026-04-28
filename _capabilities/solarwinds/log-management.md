@@ -23,39 +23,39 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- papertrail
-- list systems
-- papertrail search
 - itsm
-- solarwinds
-- loggly
-- loggly get account info
+- papertrail system management
+- papertrail search events
+- papertrail log search
+- list log-sending systems
+- database monitoring
+- search papertrail log events
 - it management
 - list papertrail system groups
-- papertrail list saved searches
-- get loggly account information
-- papertrail system management
-- database monitoring
-- ip address management
-- papertrail log search
-- search papertrail log events
-- list papertrail saved searches
-- log management
-- search loggly log events
-- loggly search
-- loggly get events
-- papertrail list groups
 - observability
-- network monitoring
+- loggly search
+- get loggly account information
 - infrastructure
-- application monitoring
 - list papertrail log-sending systems
-- papertrail search events
-- retrieve loggly search results by rsid
 - loggly log search
-- loggly search events
+- log management
+- solarwinds
 - papertrail list systems
-- list log-sending systems
+- list papertrail saved searches
+- papertrail list saved searches
+- search loggly log events
+- loggly search events
+- ip address management
+- loggly get account info
+- papertrail list groups
+- papertrail search
+- application monitoring
+- papertrail
+- loggly get events
+- retrieve loggly search results by rsid
+- loggly
+- list systems
+- network monitoring
 slug: log-management
 tags:
 - SolarWinds

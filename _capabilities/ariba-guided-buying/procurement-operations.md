@@ -36,53 +36,53 @@ personas: []
 provider_name: Ariba Guided Buying
 provider_slug: ariba-guided-buying
 search_terms:
-- get search suggestions from catalog.
-- list catalog items with details from an sap ariba shop.
-- procurement
-- administrator who manages asset assignments and procurement workflows.
-- list catalog items from a shop.
-- count requisitions
-- supply chain
-- erp
-- list purchase requisitions with asset items.
-- tracking and assignment of asset numbers to purchased items.
-- management of supplier product catalogs on sap business network.
-- list requisitions
-- list items
-- assign unique asset numbers to line items on sap ariba purchase requisitions.
-- catalog shop items and facets.
-- shopping
-- get typeahead search suggestions from an sap ariba catalog.
-- assign asset numbers to requisition line items.
-- list sap ariba purchase requisitions containing asset line items pending asset assignment.
-- sap
-- catalog search typeahead.
-- requisitions
-- asset management
-- assign asset numbers
 - asset-based purchase requisitions.
-- requisition count.
-- list asset requisitions
-- get shop
-- employee who uses guided buying to search catalogs and create purchase requests.
+- management of supplier product catalogs on sap business network.
+- assign asset numbers
+- catalog item listing.
+- administrator who manages asset assignments and procurement workflows.
+- tracking and assignment of asset numbers to purchased items.
+- Enterprise Buyer
+- autocomplete
+- shopping
 - catalog
 - get catalog items and facets from sap business network.
-- get total count of asset-based purchase requisitions in sap ariba.
-- get shop catalog
-- batch asset assignment.
-- retrieve catalog items and facets from an sap ariba shop on sap business network.
-- count asset requisitions
-- autocomplete
-- unified catalog shopping and asset management workflow
-- b2b
-- count asset-based requisitions.
-- update assets
-- search catalog
-- ariba
-- catalog item listing.
-- Enterprise Buyer
-- Procurement Administrator
+- sap
+- list catalog items from a shop.
 - list catalog items
+- ariba
+- batch asset assignment.
+- employee who uses guided buying to search catalogs and create purchase requests.
+- list catalog items with details from an sap ariba shop.
+- assign asset numbers to requisition line items.
+- list requisitions
+- b2b
+- get search suggestions from catalog.
+- retrieve catalog items and facets from an sap ariba shop on sap business network.
+- assign unique asset numbers to line items on sap ariba purchase requisitions.
+- procurement
+- catalog shop items and facets.
+- count asset-based requisitions.
+- list asset requisitions
+- search catalog
+- list purchase requisitions with asset items.
+- supply chain
+- requisition count.
+- list sap ariba purchase requisitions containing asset line items pending asset assignment.
+- count requisitions
+- get typeahead search suggestions from an sap ariba catalog.
+- catalog search typeahead.
+- unified catalog shopping and asset management workflow
+- Procurement Administrator
+- erp
+- requisitions
+- asset management
+- list items
+- get shop
+- get shop catalog
+- count asset requisitions
+- get total count of asset-based purchase requisitions in sap ariba.
+- update assets
 slug: procurement-operations
 tags:
 - Ariba

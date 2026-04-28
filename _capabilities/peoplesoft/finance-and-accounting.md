@@ -48,50 +48,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- expense reports
-- retrieve forecast data and projections.
-- individual approval operations
-- list expense reports
-- general ledger journal entries
-- list ar items
-- erp
-- list vouchers
-- peopletools platform services.
 - approve, deny, or push back a finance approval request.
+- peoplesoft
+- forecast data and projections
+- accounts receivable items
+- peopletools platform services.
+- accounting
+- retrieve performance analytics reports.
+- process approval
+- budgeting
+- general ledger
+- general ledger journal entries
+- list forecasts
 - budget definitions and data
-- list journal entries
-- retrieve budget definitions and data.
-- financial management
+- list ar items
+- campus solutions
+- retrieve accounts payable vouchers.
+- retrieve expense reports.
+- finance
+- performance analytics reports
 - retrieve general ledger journal entries.
 - campus solutions.
-- finance
-- process approval
-- accounting
-- retrieve accounts payable vouchers.
-- list pending approvals
-- crm
-- performance analytics reports
-- financial and supply chain management.
-- general ledger
-- retrieve pending finance approval requests.
-- hcm
-- retrieve performance analytics reports.
-- list budgets
-- list forecasts
-- accounts receivable items
-- list analytics reports
 - human capital management.
-- supply chain management
-- peoplesoft
-- budgeting
-- forecasting
-- accounts payable vouchers
+- retrieve budget definitions and data.
 - enterprise software
-- retrieve accounts receivable items.
+- financial management
+- expense reports
+- list pending approvals
+- accounts payable vouchers
+- supply chain management
+- list journal entries
 - finance approval requests
-- campus solutions
-- forecast data and projections
-- retrieve expense reports.
+- list analytics reports
+- list expense reports
+- list budgets
+- crm
+- erp
+- forecasting
+- retrieve pending finance approval requests.
+- retrieve accounts receivable items.
+- individual approval operations
+- financial and supply chain management.
+- hcm
+- retrieve forecast data and projections.
+- list vouchers
 slug: finance-and-accounting
 tags:
 - PeopleSoft

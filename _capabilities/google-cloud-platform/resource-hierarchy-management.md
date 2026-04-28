@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- list folders
-- search for projects matching a query
+- project management
+- delete project
+- get folder
 - list tag keys
-- cloud computing
-- create folder
-- folder management
-- create a project
-- update project
-- list google cloud projects under a parent
-- platform as a service
-- list folders under a parent
-- search organizations
 - create a new tag key
-- single project operations
+- list folders
+- search for organizations
+- create folder
 - get organization
-- create a new google cloud project
+- api management
+- create tag key
+- infrastructure
+- search for projects matching a query
+- list projects
+- folder management
+- delete a google cloud project
+- search organizations
+- list folders under a parent
+- list tag keys for resource tagging
+- platform as a service
 - get folder details
+- get project
+- update project
+- cloud computing
+- create a project
+- create a folder
+- delete a project
+- google cloud
+- delete a folder
+- create a new google cloud project
+- list google cloud projects under a parent
+- delete folder
+- governance
 - resource management
 - create project
-- delete project
-- get organization details
-- search projects
-- project management
-- get project
-- list projects
-- update a project
-- delete folder
-- create a folder
-- organization operations
-- api management
 - get project details
-- delete a google cloud project
-- search for organizations
-- infrastructure
-- governance
-- create tag key
-- get folder
-- list tag keys for resource tagging
-- delete a project
-- delete a folder
-- google cloud
+- single project operations
+- search projects
+- organization operations
+- get organization details
+- update a project
 slug: resource-hierarchy-management
 tags:
 - Google Cloud

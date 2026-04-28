@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Migration Hub
 provider_slug: amazon-migration-hub
 search_terms:
-- associatecreatedartifact
-- Media Developer
-- manage media processing jobs
-- workflow
-- associatediscoveredresource
-- describeapplicationstate
-- disassociatecreatedartifact
-- associate discovered resource
-- disassociate discovered resource
-- list jobs
-- broadcasting
-- describemigrationtask
 - media processing
-- describe migration task
-- disassociatediscoveredresource
-- amazon migration hub media processing workflow
-- aws media processing and delivery
-- media
 - Broadcast Engineer
-- disassociate created artifact
-- associate created artifact
-- createprogressupdatestream
+- workflow
+- broadcasting
 - engineer managing broadcast media workflows
-- describe application state
-- developer building media processing applications
-- aws
-- create progress update stream
+- associatediscoveredresource
+- describe migration task
+- associatecreatedartifact
+- associate discovered resource
+- Media Developer
+- aws media processing and delivery
+- amazon migration hub media processing workflow
 - deleteprogressupdatestream
+- aws
+- manage media processing jobs
 - delete progress update stream
+- describe application state
+- associate created artifact
+- list jobs
+- disassociatecreatedartifact
+- disassociate discovered resource
+- createprogressupdatestream
+- describeapplicationstate
+- disassociate created artifact
+- media
+- developer building media processing applications
+- create progress update stream
+- disassociatediscoveredresource
+- describemigrationtask
 slug: amazon-migration-hub-media-workflow
 tags:
 - AWS

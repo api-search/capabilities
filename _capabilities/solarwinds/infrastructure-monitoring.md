@@ -27,40 +27,40 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- infrastructure monitoring
-- get pingdom check results
+- list pingdom uptime monitoring checks
 - itsm
-- get check details
-- query swis
-- solarwinds
-- it management
-- create a new pingdom monitoring check
-- execute a swql query
-- get results
-- get check results
-- get check
-- uptime monitoring checks
-- execute a swql query against orion platform
-- get pingdom performance summary
+- get summary average
+- get pingdom check results
 - database monitoring
-- ip address management
-- check results
-- list pingdom checks
+- uptime monitoring checks
+- get pingdom check details
 - query orion
-- log management
+- it management
+- infrastructure monitoring
 - create a monitored entity in orion
 - observability
-- network monitoring
-- infrastructure
-- application monitoring
-- get pingdom check details
-- list pingdom uptime monitoring checks
-- create orion entity
 - create check
-- list checks
-- get summary average
-- swql query execution
+- check results
+- create orion entity
+- infrastructure
+- execute a swql query
 - uptime monitoring
+- log management
+- solarwinds
+- get check details
+- list checks
+- get check results
+- get check
+- execute a swql query against orion platform
+- swql query execution
+- list pingdom checks
+- create a new pingdom monitoring check
+- ip address management
+- get results
+- application monitoring
+- query swis
+- get pingdom performance summary
+- network monitoring
 slug: infrastructure-monitoring
 tags:
 - SolarWinds

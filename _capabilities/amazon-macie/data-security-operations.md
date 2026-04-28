@@ -39,50 +39,50 @@ personas: []
 provider_name: Amazon Macie
 provider_slug: amazon-macie
 search_terms:
-- list all sensitive data findings detected by macie
-- privacy
-- custom patterns for identifying organization-specific sensitive data
-- amazon
-- create a data discovery job
-- reviews sensitive data findings to ensure data governance and regulatory compliance
-- get finding details
-- list findings
-- compliance
-- create a job to discover sensitive data in s3 buckets
-- list identifiers
-- managing and investigating sensitive data findings
-- list all sensitive data discovery jobs
-- list all custom sensitive data identifiers
-- workflow for discovering sensitive data, investigating findings, and managing data security posture
-- data discovery jobs
-- custom data identifiers
-- list discovery jobs
-- Compliance Officer
-- list jobs
-- list sensitive data findings
-- automated discovery and classification of sensitive data in s3
-- list custom identifiers
-- list all discovery jobs
-- get bucket security details
-- create a custom pattern to detect organization-specific sensitive data types
-- get bucket security posture
-- machine learning
-- Security Engineer
-- get detailed information about specific sensitive data findings
 - monitored s3 buckets
 - sensitive data
 - manages macie configuration, discovery jobs, and investigates sensitive data findings
-- s3
+- list all custom sensitive data identifiers
 - data security
-- create identifier
-- create job
-- describe buckets
-- create discovery job
+- list findings
+- custom data identifiers
+- create a data discovery job
+- list sensitive data findings
+- amazon
+- managing and investigating sensitive data findings
 - create custom data identifier
+- data discovery jobs
 - aws
-- get findings
-- get security details and sensitive data statistics for monitored s3 buckets
 - sensitive data findings
+- create job
+- compliance
+- list discovery jobs
+- create discovery job
+- get security details and sensitive data statistics for monitored s3 buckets
+- list jobs
+- privacy
+- Security Engineer
+- create a job to discover sensitive data in s3 buckets
+- machine learning
+- list all sensitive data discovery jobs
+- Compliance Officer
+- get findings
+- get bucket security posture
+- get finding details
+- create identifier
+- s3
+- get detailed information about specific sensitive data findings
+- list all discovery jobs
+- workflow for discovering sensitive data, investigating findings, and managing data security posture
+- list custom identifiers
+- create a custom pattern to detect organization-specific sensitive data types
+- custom patterns for identifying organization-specific sensitive data
+- get bucket security details
+- reviews sensitive data findings to ensure data governance and regulatory compliance
+- list all sensitive data findings detected by macie
+- list identifiers
+- automated discovery and classification of sensitive data in s3
+- describe buckets
 slug: data-security-operations
 tags:
 - Amazon

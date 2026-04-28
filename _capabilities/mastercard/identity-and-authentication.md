@@ -33,42 +33,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get transaction insights
-- fraud detection
-- get consent status
-- get authentication consent status
-- identity insights for transactions
-- submit trust verification
-- digital identity
-- kyc
-- open banking
-- identity insights for accounts
-- submit identity verification as a trust provider
-- verify a consumer identity
-- get identity intelligence insights for an account
-- identity
 - initiate authentication
-- create auth consent
-- verification
 - get identity intelligence insights for a transaction
-- get identity insights for a transaction
-- get identity insights for an account
-- get account identity insights
-- verify identity
-- create consent
-- authentication consent management
-- authentication
-- create an authentication consent request
-- get transaction identity insights
+- identity
+- initiate strong customer authentication
+- verify a consumer identity
 - financial services
-- payments
-- create authentication consent
-- credit cards
-- identity verification
+- open banking
+- create auth consent
+- get transaction insights
+- authentication
+- get identity insights for a transaction
 - get account insights
 - verify a consumer identity using mastercard id
+- fraud detection
+- verify identity
+- get identity insights for an account
+- get account identity insights
+- submit trust verification
+- create authentication consent
+- create consent
+- verification
+- get consent status
+- identity insights for transactions
+- payments
 - mastercard
-- initiate strong customer authentication
+- kyc
+- identity verification
+- get transaction identity insights
+- digital identity
+- get identity intelligence insights for an account
+- submit identity verification as a trust provider
+- credit cards
+- create an authentication consent request
+- get authentication consent status
+- identity insights for accounts
+- authentication consent management
 slug: identity-and-authentication
 tags:
 - Mastercard

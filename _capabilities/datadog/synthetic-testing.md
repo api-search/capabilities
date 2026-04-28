@@ -47,57 +47,57 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- list monitors including synthetic alert monitors
-- set the on-demand concurrency cap
-- muteMonitor
-- create a synthetics alert monitor
-- set concurrency cap
-- mute synthetic alert monitors
-- synthetics
-- mute monitor
-- create a monitor
-- SetOnDemandConcurrencyCap
-- validate synthetic monitor configurations
-- get the synthetics on-demand concurrency cap
-- get monitor
-- platform
-- unmute monitor
-- synthetics concurrency settings
-- validate monitor
-- unmute a synthetic test monitor
-- delete monitor
-- delete a monitor
-- get concurrency cap
+- get the on-demand concurrency cap
+- individual monitor operations
 - get a monitor by id
+- set a new synthetics on-demand concurrency cap
+- qa
+- validate monitor
+- update a monitor
+- createMonitor
+- updateMonitor
+- deleteMonitor
+- datadog
+- mute synthetic alert monitors
+- mute a monitor
+- visualizations
+- getMonitor
 - create monitor
+- delete monitor
+- get concurrency cap
+- validateMonitor
+- unmute monitor
+- mute a synthetic test monitor
+- unmute a synthetic test monitor
+- list monitors
+- muteMonitor
+- validate synthetic monitor configurations
+- set concurrency cap
+- validate a monitor
+- GetOnDemandConcurrencyCap
 - update a synthetics alert monitor
 - monitor management for synthetic alerts
-- getMonitor
-- updateMonitor
-- get the on-demand concurrency cap
-- listMonitors
-- mute a synthetic test monitor
-- GetOnDemandConcurrencyCap
-- set a new synthetics on-demand concurrency cap
-- list monitors
-- dashboards
-- datadog
-- individual monitor operations
-- validateMonitor
-- qa
-- validate a monitor
-- t1
 - get a monitor
-- deleteMonitor
-- visualizations
-- validate a synthetic monitor configuration
-- createMonitor
-- analytics
-- update monitor
-- update a monitor
-- monitors
-- mute a monitor
+- delete a monitor
 - monitoring
+- get the synthetics on-demand concurrency cap
+- update monitor
+- mute monitor
+- validate a synthetic monitor configuration
+- set the on-demand concurrency cap
+- analytics
+- monitors
+- synthetics
+- listMonitors
+- t1
+- create a monitor
+- dashboards
+- create a synthetics alert monitor
+- platform
+- get monitor
+- synthetics concurrency settings
+- list monitors including synthetic alert monitors
+- SetOnDemandConcurrencyCap
 - synthetic testing
 slug: synthetic-testing
 tags:

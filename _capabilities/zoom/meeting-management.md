@@ -54,56 +54,56 @@ personas: []
 provider_name: Zoom
 provider_slug: zoom
 search_terms:
-- delete meeting
-- list participants of a live or past meeting.
-- delete recordings for a meeting.
-- list polls for a meeting.
+- create a new meeting.
+- individual meeting operations.
 - retrieve details of a specific meeting.
-- delete all recordings for a meeting.
+- list all polls for a meeting.
+- meeting poll management.
+- meeting recording management.
 - list registrants for a meeting.
-- chat
-- create a poll for a meeting.
-- meeting registration management.
-- list polls
-- delete a meeting permanently.
-- zoom
-- list participants
-- list all meetings for a user.
-- communications
-- add a registrant to a meeting.
-- collaboration
+- delete all recordings for a meeting.
+- webinars
+- create meeting
+- create a new meeting for a user.
+- update meeting
 - list meetings
 - get meeting details.
-- get recordings for a meeting.
-- individual meeting operations.
-- webinars
-- list registrants
-- update livestream
-- get details of a past meeting.
-- add registrant
-- create poll
-- update meeting
-- delete a meeting.
-- videos
-- get recordings
-- create a new meeting.
-- list all polls for a meeting.
-- meeting lifecycle management.
-- get meeting
-- create meeting
-- update meeting details.
-- get all recordings for a meeting.
-- video conferencing
-- create a new meeting for a user.
-- list all meetings scheduled for a user.
 - delete recordings
-- get past meeting details
-- meetings
-- meeting poll management.
-- update a meeting's live stream configuration.
-- list all registrants for a meeting.
-- meeting recording management.
 - update a meeting.
+- get recordings
+- video conferencing
+- meetings
+- get meeting
+- get details of a past meeting.
+- communications
+- list all meetings for a user.
+- add registrant
+- delete recordings for a meeting.
+- add a registrant to a meeting.
+- list participants of a live or past meeting.
+- create poll
+- list polls
+- get recordings for a meeting.
+- list participants
+- meeting registration management.
+- collaboration
+- list all registrants for a meeting.
+- update meeting details.
+- delete meeting
+- create a poll for a meeting.
+- update a meeting's live stream configuration.
+- update livestream
+- delete a meeting.
+- get all recordings for a meeting.
+- videos
+- list registrants
+- list polls for a meeting.
+- zoom
+- chat
+- list all meetings scheduled for a user.
+- get past meeting details
+- meeting lifecycle management.
+- delete a meeting permanently.
 slug: meeting-management
 tags:
 - Zoom

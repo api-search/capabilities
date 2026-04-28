@@ -14,24 +14,24 @@ personas: []
 provider_name: Amazon App Studio
 provider_slug: amazon-app-studio
 search_terms:
-- list apps
-- generative ai
-- app studio
-- amazon
-- internal tools
-- it admin managing app studio deployments and access.
-- Business Developer
-- get app studio app
-- manage app studio low-code applications.
-- IT Administrator
-- no-code
-- aws
-- list applications.
-- low-code
-- list app studio apps
-- get details for a specific app studio application by id.
 - list all amazon app studio applications in the account.
+- list applications.
+- get details for a specific app studio application by id.
+- aws
+- Business Developer
+- generative ai
+- it admin managing app studio deployments and access.
 - business user building internal tools with app studio.
+- list app studio apps
+- low-code
+- no-code
+- get app studio app
+- amazon
+- IT Administrator
+- manage app studio low-code applications.
+- internal tools
+- list apps
+- app studio
 slug: app-studio-management
 tags:
 - Amazon

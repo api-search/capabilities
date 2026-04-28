@@ -15,25 +15,25 @@ personas: []
 provider_name: Azure Function Apps
 provider_slug: azure-function-apps
 search_terms:
-- list function apps
+- azure
+- list functions
 - list configuration resources
-- functions
 - compute
 - faas
-- azure resource management
-- azure
-- resource management
-- list deployment resources
-- list deployments
-- list functions
-- list functionapp resources
+- list function apps
 - list function resources
-- serverless
-- list
 - list configurations
+- list
 - cloud
-- management
+- list deployments
 - list all resources
+- serverless
+- azure resource management
+- resource management
+- list functionapp resources
+- functions
+- list deployment resources
+- management
 slug: azure-function-apps-management
 tags:
 - Azure

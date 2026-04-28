@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- developer
-- get beta tester details.
-- add a new beta tester.
-- testflight
-- read build
-- list beta testers
-- list beta groups.
-- update build information.
-- delete beta tester
-- list builds
-- read beta group
-- get beta group details.
-- list testers
-- technology
-- create tester
-- create beta group
-- list groups
-- ios
-- list all apps.
-- modify build
-- list all builds.
-- create group
-- list all apps in app store connect.
-- list all beta groups.
-- create a beta group.
-- list beta groups
-- remove a beta tester.
-- delete a beta group.
-- beta group management.
-- get details of a specific app.
-- list beta testers.
-- apple
-- update app metadata.
-- delete beta group
-- create beta tester
-- app store
-- macos
-- read app
-- beta tester management.
-- list apps
-- read beta tester
-- app management
-- modify app
-- app management.
-- get build details.
-- modify beta group
-- add a beta tester.
 - list all beta testers.
-- update a beta group.
+- get details of a specific app.
+- apple
 - build management.
-- create a new beta group.
+- list all beta groups.
+- app store
+- app management
+- beta group management.
+- create tester
+- modify build
+- get beta tester details.
 - mobile
+- read build
+- delete beta group
+- add a new beta tester.
+- developer
+- create beta group
+- update a beta group.
+- get beta group details.
+- ios
+- modify app
+- list beta groups
+- list testers
+- get build details.
+- app management.
+- read beta group
+- read beta tester
+- add a beta tester.
+- create a new beta group.
+- technology
+- modify beta group
+- update build information.
+- remove a beta tester.
+- list groups
+- list beta testers
+- list beta testers.
+- list builds
+- delete a beta group.
+- macos
+- list all apps.
+- list apps
+- list all apps in app store connect.
+- update app metadata.
+- beta tester management.
+- read app
+- list all builds.
+- list beta groups.
+- create group
+- delete beta tester
+- testflight
+- create beta tester
+- create a beta group.
 slug: app-lifecycle
 tags:
 - Apple

@@ -46,60 +46,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- reboot a solaris zone.
-- install zone
-- statsstore
 - create zone
 - boot a solaris zone.
-- uninstall zone
-- install a solaris zone.
-- boot zone
-- boot the zone.
-- oracle
-- migrate to another host.
-- halt zone
-- halt a zone immediately.
-- migrate a zone to another host.
-- clone zone
-- solaris
-- list all zones.
-- rad
-- lifecycle management
-- get current zone state.
-- kernel zones
-- get zone
-- create a new zone.
-- virtualization
-- reboot zone
-- resource management
-- shutdown a zone.
-- zones
-- get zone state
-- delete a zone.
-- operating systems
-- containers
 - zone state operations.
-- uninstall a solaris zone.
-- boot a zone.
-- verify zone
-- reboot the zone.
+- halt zone
+- reboot zone
 - individual zone operations.
-- gracefully shutdown.
-- migrate zone
-- delete a solaris zone.
-- zone inventory and creation.
-- gracefully shutdown a zone.
+- containers
+- migrate a zone to another host.
 - get solaris zone details.
-- shutdown zone
-- list zones
-- list all solaris zones with status.
-- get zone details.
-- clone a solaris zone.
-- delete zone
 - verify zone configuration integrity.
-- reboot a zone.
-- migrate a zone.
+- gracefully shutdown.
+- lifecycle management
+- install zone
+- get zone details.
+- install a solaris zone.
+- list zones
+- rad
+- list all solaris zones with status.
+- uninstall zone
+- reboot the zone.
+- zone inventory and creation.
+- virtualization
+- uninstall a solaris zone.
+- shutdown zone
+- oracle
+- kernel zones
+- clone zone
+- delete a zone.
+- boot the zone.
 - create a new solaris zone.
+- gracefully shutdown a zone.
+- clone a solaris zone.
+- halt a zone immediately.
+- list all zones.
+- delete zone
+- reboot a zone.
+- solaris
+- shutdown a zone.
+- get zone state
+- statsstore
+- migrate a zone.
+- boot zone
+- operating systems
+- reboot a solaris zone.
+- delete a solaris zone.
+- get zone
+- migrate zone
+- get current zone state.
+- migrate to another host.
+- verify zone
+- resource management
+- create a new zone.
+- zones
+- boot a zone.
 slug: zone-lifecycle
 tags:
 - Solaris

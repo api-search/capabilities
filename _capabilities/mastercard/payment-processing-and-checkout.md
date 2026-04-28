@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- fraud detection
-- create an installment plan
-- qr code payment acceptance
-- process a payment through the gateway
-- generate a merchant qr code for payment
-- create a new checkout session for a merchant
-- digital identity
-- register a contactless reader device
-- open banking
-- create a new checkout session
-- create unified session
-- process payment
-- retrieve payment transaction details
-- get payment details
-- checkout
-- process a cloud commerce transaction
-- get payment
-- create installment plan
-- create a unified checkout session supporting multiple payment methods
-- generate a merchant-presented qr code for payment
-- process a payment through the mastercard gateway
-- unified checkout sessions
-- financial services
-- payment processing
-- payments
-- credit cards
-- merchant
-- generate qr code
-- process cloud transaction
-- checkout session management
 - buy-now-pay-later installment plans
-- create a unified checkout session
-- create a buy-now-pay-later installment plan
-- register contactless reader
-- mastercard
-- e-commerce
+- create an installment plan
+- financial services
 - create checkout session
+- process cloud transaction
+- open banking
+- retrieve payment transaction details
+- create installment plan
+- process a cloud commerce transaction
+- process payment
+- generate a merchant qr code for payment
+- fraud detection
+- create a new checkout session for a merchant
+- generate a merchant-presented qr code for payment
+- get payment
+- checkout session management
+- register contactless reader
+- qr code payment acceptance
+- merchant
+- create unified session
+- process a payment through the gateway
+- get payment details
+- create a new checkout session
+- register a contactless reader device
+- checkout
+- create a unified checkout session supporting multiple payment methods
+- payments
+- mastercard
+- create a buy-now-pay-later installment plan
+- payment processing
+- digital identity
+- e-commerce
+- create a unified checkout session
+- credit cards
+- process a payment through the mastercard gateway
+- generate qr code
+- unified checkout sessions
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

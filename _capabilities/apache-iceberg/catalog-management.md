@@ -50,65 +50,65 @@ personas: []
 provider_name: Apache Iceberg
 provider_slug: apache-iceberg
 search_terms:
-- list tables
-- commit table
-- drop an iceberg table from the catalog
+- drop table
+- create namespace
+- table management within a namespace
 - list views
-- architects who design lakehouse schemas, partition strategies, and catalog topology
-- load an iceberg table and its metadata from the catalog
-- metrics collection and reporting
-- namespace management
-- list all views in a namespace
-- apache iceberg
-- get catalog config
-- get iceberg catalog configuration settings
-- load metadata and properties for a specific iceberg namespace
+- load a table from the catalog
 - load table
-- list all tables in a namespace
-- create a new iceberg table
-- get config
-- list all namespaces in the iceberg catalog, optionally filtered by parent namespace
-- create a new namespace in the iceberg catalog
-- data engineers and lakehouse architects managing namespaces, tables, and views
-- table format
-- lakehouse
-- apache
-- drop a table from the catalog
-- data lake
-- individual table operations
-- catalog configuration
-- create a new iceberg table in a namespace
-- list namespaces
-- data engineering
-- load namespace metadata
-- Lakehouse Architect
-- engineers who build and maintain data pipelines and manage iceberg tables and namespaces
-- acid
-- create a new namespace
-- Data Engineer
-- object storage credential management
-- view management within a namespace
-- drop namespace
-- create table
-- open source
+- create view
 - list all iceberg table identifiers in a namespace
+- lakehouse
+- create a new iceberg table in a namespace
+- table and namespace discovery and management
+- commit table
+- acid
+- catalog management
+- data engineers and lakehouse architects managing namespaces, tables, and views
+- data lake
+- list all namespaces in the iceberg catalog, optionally filtered by parent namespace
+- commit updates and schema changes to an iceberg table
+- create a new iceberg table
+- list all views in a namespace
+- get iceberg catalog configuration settings
+- Data Engineer
+- individual table operations
+- apache iceberg
+- load metadata and properties for a specific iceberg namespace
+- create a new namespace in the iceberg catalog
+- architects who design lakehouse schemas, partition strategies, and catalog topology
+- metrics collection and reporting
+- get config
+- get catalog config
 - list all namespaces in the catalog
 - drop an empty namespace from the iceberg catalog
-- retrieve iceberg catalog configuration settings
-- load a table from the catalog
-- table and namespace discovery and management
-- create a new view in the iceberg catalog
-- analytics
-- catalog management
-- create view
-- create namespace
+- list all tables in a namespace
+- catalog configuration
+- namespace management
 - server-side scan planning for compute engine integration
+- create table
+- retrieve iceberg catalog configuration settings
+- create a new view in the iceberg catalog
+- Lakehouse Architect
 - drop a namespace
-- commit updates and schema changes to an iceberg table
-- list all view identifiers in a namespace
+- drop a table from the catalog
+- apache
 - individual namespace
-- drop table
-- table management within a namespace
+- view management within a namespace
+- drop an iceberg table from the catalog
+- analytics
+- object storage credential management
+- list namespaces
+- table format
+- create a new namespace
+- open source
+- drop namespace
+- load namespace metadata
+- load an iceberg table and its metadata from the catalog
+- list tables
+- list all view identifiers in a namespace
+- data engineering
+- engineers who build and maintain data pipelines and manage iceberg tables and namespaces
 slug: catalog-management
 tags:
 - Apache Iceberg

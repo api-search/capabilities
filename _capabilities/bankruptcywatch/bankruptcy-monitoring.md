@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- bankruptcy case research, claims management, and automated monitoring
-- legal
-- court data
-- lender monitoring borrowers for bankruptcy filings
-- list case claims
-- bankruptcy
-- compliance
-- Bankruptcy Attorney
-- create bankruptcy monitor
-- attorney managing creditor representation in bankruptcy proceedings
-- search bankruptcy cases
-- lending
-- list claims register for a bankruptcy case
-- business or individual owed money by a bankruptcy filer
-- automated alerts for bankruptcy filings
-- get case docket
-- pacer
-- search for bankruptcy cases across all us bankruptcy court districts
-- create a bankruptcy monitoring alert for a debtor or entity
-- Creditor
-- us bankruptcy court cases and proceedings
-- file proof of claim
-- list monitors
-- bankruptcywatch
-- retrieve docket entries for a bankruptcy case
-- creditor
-- file a proof of claim for a bankruptcy case
 - get detailed information about a specific bankruptcy case
-- get bankruptcy case
+- business or individual owed money by a bankruptcy filer
+- list case claims
+- legal
+- list claims register for a bankruptcy case
 - list all active bankruptcy monitoring alerts
+- Creditor
+- file proof of claim
+- get case docket
+- bankruptcywatch
+- Bankruptcy Attorney
+- court data
+- get bankruptcy case
+- bankruptcy case research, claims management, and automated monitoring
+- list monitors
+- compliance
+- create bankruptcy monitor
+- retrieve docket entries for a bankruptcy case
+- search bankruptcy cases
+- create a bankruptcy monitoring alert for a debtor or entity
+- file a proof of claim for a bankruptcy case
 - Loan Officer
+- pacer
+- creditor
+- lender monitoring borrowers for bankruptcy filings
+- bankruptcy
+- lending
+- us bankruptcy court cases and proceedings
+- automated alerts for bankruptcy filings
+- attorney managing creditor representation in bankruptcy proceedings
+- search for bankruptcy cases across all us bankruptcy court districts
 slug: bankruptcy-monitoring
 tags:
 - BankruptcyWatch

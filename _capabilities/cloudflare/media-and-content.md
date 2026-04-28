@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- stream create live input
-- delete a video.
-- get image details.
-- list videos.
-- edge
-- images
-- platform
-- list all images.
-- images upload image
-- real-time communication
-- create a direct upload url.
-- edge computing
-- list images.
-- stream upload video
-- create a live streaming input.
-- images get image
-- upload an image.
-- api gateway
-- stream delete video
-- list live streaming inputs.
-- containers
-- video management.
 - stream create direct upload
-- list videos
-- stream list live inputs
-- create a direct upload url for images.
-- list images
-- security
-- web performance
-- images create direct upload
-- media
-- image management.
-- ai gateway
-- cdn
-- video
-- ddos protection
-- delete an image.
-- artificial intelligence
-- serverless
-- cloudflare
-- upload a video from url.
-- stream list videos
-- images delete image
-- list all videos.
-- cloud
-- dns
-- list image variants.
-- object storage
-- get video details.
-- images list images
+- stream create live input
+- containers
 - images list variants
+- api gateway
+- stream list videos
+- list videos.
+- object storage
+- list images.
+- stream delete video
+- real-time communication
+- list images
+- list live streaming inputs.
+- edge computing
+- dns
+- cdn
+- upload a video from url.
+- images create direct upload
+- upload an image.
+- get video details.
+- edge
+- images delete image
+- video management.
+- image management.
+- create a direct upload url.
+- ddos protection
+- images upload image
+- video
+- list all images.
+- ai gateway
+- list image variants.
+- cloud
+- images list images
+- stream upload video
+- web performance
+- create a direct upload url for images.
+- delete a video.
+- serverless
+- media
+- images get image
+- artificial intelligence
 - stream get video
+- create a live streaming input.
+- cloudflare
+- platform
+- get image details.
+- delete an image.
+- list all videos.
+- images
+- list videos
+- security
+- stream list live inputs
 slug: media-and-content
 tags:
 - Cloudflare

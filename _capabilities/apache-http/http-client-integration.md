@@ -9,11 +9,11 @@ personas: []
 provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
-- sdk
 - http client
-- java
 - open source
+- sdk
 - apache
+- java
 slug: http-client-integration
 tags: []
 tools: []

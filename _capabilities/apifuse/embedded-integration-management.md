@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- list all connectors.
-- create a workflow.
-- manage workflows.
-- list all integration workflows configured in the embedded marketplace.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- marketplace
-- create a new automation workflow connecting two or more integrated platforms.
-- ipaas
-- apifuse
-- browse all available embedded integrations, optionally filtered by category.
 - Integration Developer
-- get analytics data.
+- browse all available embedded integrations, optionally filtered by category.
+- list workflows
 - product manager building native integrations into a saas product.
 - managing native integrations within saas products.
-- embedded integrations
-- create workflow
-- integration analytics.
-- workflow automation
-- list all integrations.
-- developer implementing and automating embedded integration workflows.
-- list integrations
-- list workflows
-- browse and manage integrations.
-- list connectors
-- integrations
-- SaaS Product Manager
+- get analytics data.
 - list all pre-built connectors available for embedding into your saas product.
+- create workflow
+- marketplace
 - browse pre-built connectors.
-- get analytics
 - integration platform
+- list all connectors.
+- create a new automation workflow connecting two or more integrated platforms.
+- list integrations
+- apifuse
+- integrations
+- list all integration workflows configured in the embedded marketplace.
+- SaaS Product Manager
+- create a workflow.
+- browse and manage integrations.
+- workflow automation
+- developer implementing and automating embedded integration workflows.
 - saas
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- embedded integrations
+- ipaas
+- manage workflows.
+- list connectors
+- get analytics
 - list workflows.
+- list all integrations.
+- integration analytics.
 slug: embedded-integration-management
 tags:
 - Apifuse

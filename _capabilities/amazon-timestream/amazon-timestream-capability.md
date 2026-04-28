@@ -10,8 +10,8 @@ provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
 - database
-- time series
 - aws
+- time series
 - iot
 slug: amazon-timestream-capability
 tags: []

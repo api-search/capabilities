@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- OTA Developer
-- flights
 - search for available flight offers.
-- airlines
-- developer building conversational travel assistants for flight search.
-- upsell, seat selection, and add-on services.
-- booking
-- shopping
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- pricing
-- search available flights by origin, destination, and date.
-- search flights advanced
-- confirm price
-- travel
-- amadeus
-- confirm current price and availability.
-- confirm pricing for a selected flight offer.
-- developer building online travel agency flight search and booking flows.
-- hotels
-- search
 - advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- flight offer discovery and comparison.
-- confirm the current price and availability of a selected flight offer before creating a booking.
 - complete flight shopping flow from search through price confirmation.
 - travel technology
-- search flights
-- price confirmation and validation before booking.
-- gds
+- search
+- amadeus
+- shopping
+- confirm price
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- pricing
+- flights
+- confirm pricing for a selected flight offer.
+- developer building online travel agency flight search and booking flows.
+- airlines
+- booking
 - confirm flight price
+- travel
+- developer building conversational travel assistants for flight search.
+- search available flights by origin, destination, and date.
+- confirm current price and availability.
+- OTA Developer
+- search flights advanced
+- gds
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- price confirmation and validation before booking.
+- hotels
+- search flights
 - Travel Chatbot Developer
+- flight offer discovery and comparison.
+- upsell, seat selection, and add-on services.
 slug: flight-shopping
 tags:
 - Amadeus

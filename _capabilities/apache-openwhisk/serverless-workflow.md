@@ -31,50 +31,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- list activations
-- delete action
 - serverless function actions
-- list all event triggers
-- fire trigger
-- list packages
+- invoke a serverless action/function
 - event triggers
-- list rules
-- functions
-- fire an event trigger
-- faas
-- get details of a specific activation
+- manages namespaces, limits, and platform configuration
+- event-driven
+- event driven
+- builds event-driven applications using serverless functions
+- list all action packages
+- DevOps Engineer
+- list all serverless functions/actions
+- invoke action
+- create action
+- fire trigger
+- functions as a service
+- list actions
+- activation history
 - list all trigger-to-action rules
 - get activation
-- event-driven architecture
-- apache
-- DevOps Engineer
-- builds event-driven applications using serverless functions
-- list all actions
-- action packages
-- invoke action
-- list triggers
-- event driven
-- create a new serverless action
-- cloud native
-- apache openwhisk
-- invoke a serverless action/function
-- list activation history
-- serverless computing
-- create action
-- open source
-- event-driven
-- serverless
-- list actions
-- list all action packages
-- list all serverless functions/actions
-- manages namespaces, limits, and platform configuration
-- activation history
-- delete a serverless action
-- functions as a service
 - invoke an action
-- Platform Administrator
-- manages serverless deployments and ci/cd pipelines
 - Backend Developer
+- faas
+- list triggers
+- apache openwhisk
+- list rules
+- get details of a specific activation
+- list activations
+- serverless computing
+- delete a serverless action
+- manages serverless deployments and ci/cd pipelines
+- apache
+- list packages
+- Platform Administrator
+- action packages
+- list all actions
+- serverless
+- event-driven architecture
+- fire an event trigger
+- open source
+- create a new serverless action
+- list activation history
+- delete action
+- functions
+- list all event triggers
+- cloud native
 slug: serverless-workflow
 tags:
 - Apache OpenWhisk

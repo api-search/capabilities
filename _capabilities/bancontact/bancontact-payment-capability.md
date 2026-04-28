@@ -9,12 +9,12 @@ personas: []
 provider_name: Bancontact
 provider_slug: bancontact
 search_terms:
+- e-commerce
 - belgium
-- debit cards
 - fintech
 - banking
-- e-commerce
 - payments
+- debit cards
 slug: bancontact-payment-capability
 tags: []
 tools: []

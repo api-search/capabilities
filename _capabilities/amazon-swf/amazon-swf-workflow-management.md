@@ -11,8 +11,8 @@ provider_slug: amazon-swf
 search_terms:
 - automation
 - aws
-- workflow
 - task coordination
+- workflow
 slug: amazon-swf-workflow-management
 tags: []
 tools: []

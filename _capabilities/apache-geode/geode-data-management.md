@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- execute an oql query
-- platform engineering
-- apache geode
-- server-side function execution
-- developers using geode as a fast data store for applications
-- caching
-- region crud operations, oql queries, and function execution
-- list all server-side functions available in the cluster
-- data grid
-- manage in-memory data with regions, queries, and functions
-- execute query
-- list available functions
-- high-performance in-memory data caching and distribution
-- in-memory data grid
-- list all geode regions
-- apache
-- execute an oql query against geode regions
-- Platform Engineer
-- execute oql query
-- list functions
-- list geode functions
-- list regions
-- Application Developer
-- open source
-- list all regions in the apache geode data grid
-- in-memory
-- oql query execution
-- list geode regions
-- get all keys stored in a geode region
 - geode region management
-- distributed systems
+- list functions
+- caching
+- execute oql query
+- list available functions
+- server-side function execution
 - get region keys
-- data management
+- distributed systems
+- list geode regions
+- in-memory
+- list all geode regions
+- get all keys stored in a geode region
+- oql query execution
+- platform engineering
+- execute an oql query
 - engineers managing the geode cluster infrastructure
+- list regions
+- manage in-memory data with regions, queries, and functions
+- Platform Engineer
+- apache
+- data grid
+- execute query
+- high-performance in-memory data caching and distribution
+- list geode functions
+- data management
+- in-memory data grid
+- list all server-side functions available in the cluster
+- Application Developer
+- developers using geode as a fast data store for applications
+- region crud operations, oql queries, and function execution
+- open source
+- execute an oql query against geode regions
+- apache geode
+- list all regions in the apache geode data grid
 slug: geode-data-management
 tags:
 - Apache Geode

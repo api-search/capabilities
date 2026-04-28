@@ -10,11 +10,11 @@ provider_name: Amazon Forecast
 provider_slug: amazon-forecast
 search_terms:
 - forecasting
-- demand planning
-- predictive analytics
-- machine learning
-- time series
 - aws
+- predictive analytics
+- time series
+- demand planning
+- machine learning
 slug: amazon-forecast-time-series-prediction
 tags:
 - Forecasting

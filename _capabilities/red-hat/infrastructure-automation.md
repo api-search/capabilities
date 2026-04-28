@@ -49,80 +49,80 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- host-level errata.
-- list systems
-- get details of an ansible job template.
-- satellite
-- managed hosts from satellite.
-- list ansible inventories.
-- ansible list job templates
-- errata advisories.
-- insights get system
-- insights get system stats
-- list content views.
-- satellite list host errata
-- list rules
-- red hat
-- ansible cancel job
-- insights list topics
-- list content views
-- list host errata
-- list job templates.
-- kubernetes
-- list hosts managed by satellite.
-- list advisor detection rules.
-- enterprise
-- list ansible job templates.
-- satellite get host
-- list errata for a host.
-- list software repositories.
-- ansible get job
-- get details for a system in insights.
-- cancel a running job.
-- list jobs
-- insights-registered systems.
-- get a specific satellite host.
-- list errata applicable to a host.
-- insights
-- list managed hosts.
+- list automation job executions.
 - linux
-- ansible list inventories
-- ansible
-- launch automation jobs.
+- list errata applicable to a host.
+- satellite list host errata
+- containers
+- list all available errata.
+- launch an ansible job template.
+- get a specific satellite host.
+- get details of a job execution.
+- satellite get host
+- managed hosts from satellite.
+- list hosts
+- get details for a system in insights.
+- list advisor detection rules.
+- insights get system stats
+- hybrid cloud
+- kubernetes
+- list ansible inventories.
+- list jobs.
+- insights-registered systems.
+- insights list rules
+- list recommendation topics.
+- ansible job templates.
 - automation jobs.
 - advisor rules.
-- get details of a job execution.
-- satellite list hosts
-- satellite list errata
-- satellite list repositories
-- list advisor rules.
-- list systems registered with insights.
-- content views.
-- containers
-- list errata
-- launch an ansible job template.
-- insights list rules
-- list registered systems.
-- launch a job template.
-- ansible launch job template
-- open source
-- launch job template
-- list jobs.
-- list errata.
+- satellite
+- ansible get job
+- ansible list job templates
+- list ansible job templates.
 - list job templates
-- get aggregate system health statistics.
-- ansible job templates.
-- satellite list content views
-- list all available errata.
-- list automation job executions.
-- hybrid cloud
-- cloud
-- ansible list jobs
-- list recommendation topics.
-- list hosts
-- ansible get job template
+- list errata
+- insights get system
+- insights
+- list systems registered with insights.
+- list jobs
+- ansible cancel job
+- list job templates.
+- satellite list errata
 - automation
+- satellite list repositories
+- launch a job template.
+- list rules
+- get aggregate system health statistics.
+- red hat
+- list content views.
+- content views.
+- cancel a running job.
+- cloud
+- launch automation jobs.
+- list errata for a host.
+- ansible launch job template
+- list host errata
+- list advisor rules.
+- satellite list hosts
+- list software repositories.
+- errata advisories.
+- list registered systems.
+- insights list topics
+- ansible list jobs
+- open source
+- enterprise
+- list errata.
+- satellite list content views
+- ansible list inventories
+- get details of an ansible job template.
+- list content views
+- ansible
+- launch job template
+- ansible get job template
+- list managed hosts.
+- list hosts managed by satellite.
 - insights list systems
+- list systems
+- host-level errata.
 slug: infrastructure-automation
 tags:
 - Red Hat

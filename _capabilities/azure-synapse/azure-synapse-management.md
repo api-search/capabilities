@@ -14,27 +14,27 @@ personas: []
 provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
-- sql
-- list pipeline resources
-- azure resource management
-- list bigdatapool resources
-- list sql pools
 - azure
-- resource management
-- list workspace resources
+- list bigdatapool resources
 - apache spark
-- list workspaces
+- list big data pools
 - etl
+- data warehouse
+- list sql pools
+- list sqlpool resources
+- list workspaces
+- list pipeline resources
+- list workspace resources
+- list
+- cloud
+- analytics
+- list all resources
+- azure resource management
+- resource management
+- sql
 - list pipelines
 - big data
-- list
-- analytics
-- data warehouse
-- cloud
 - management
-- list big data pools
-- list all resources
-- list sqlpool resources
 slug: azure-synapse-management
 tags:
 - Azure

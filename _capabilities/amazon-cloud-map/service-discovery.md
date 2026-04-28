@@ -26,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- cloud map
-- devops
-- create a new cloud map service within a namespace
-- list all instances registered with a specific cloud map service
-- list all cloud map service discovery namespaces
-- create a service
-- discover instances
-- list instances
-- list all namespaces
-- engineers managing service registries and microservice infrastructure
-- list services
-- discover healthy instances
 - register instance
-- dynamic microservice registration and discovery
-- DevOps Engineer
-- devops practitioners automating service registration and health monitoring
-- create service
-- list namespaces
-- Platform Engineer
-- manage service discovery namespaces
-- manage services
+- discover instances
 - discover healthy service instances by namespace and service name
-- microservices
-- dynamic service registry and health-based routing
-- service discovery
-- discover service instances
-- dns
-- amazon web services
-- aws
-- list services registered in cloud map
+- devops
+- list all namespaces
+- dynamic microservice registration and discovery
 - register an instance with a cloud map service
+- service discovery
+- microservices
+- list services registered in cloud map
+- DevOps Engineer
+- manage services
+- list instances
+- amazon web services
+- dns
+- aws
+- list all cloud map service discovery namespaces
+- discover healthy instances
+- cloud map
+- create a new cloud map service within a namespace
+- Platform Engineer
+- devops practitioners automating service registration and health monitoring
+- dynamic service registry and health-based routing
+- list services
+- list namespaces
+- manage service discovery namespaces
+- engineers managing service registries and microservice infrastructure
+- create a service
+- list all instances registered with a specific cloud map service
+- create service
+- discover service instances
 slug: service-discovery
 tags:
 - Amazon Web Services

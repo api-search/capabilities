@@ -22,40 +22,40 @@ personas: []
 provider_name: Actor Model
 provider_slug: actor-model
 search_terms:
-- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
-- concurrency
+- concurrent computation using actors, message passing, and isolation
 - list actors
-- list all actors in the system filtered by status
 - get health
-- get details of a specific actor including mailbox size and restart count
+- actor lifecycle management
 - get system health
-- builds and operates distributed platforms using actor model frameworks like akka or orleans
-- supervision
-- get actor system health including throughput, error rate, and dead letter count
+- spawn a new actor
+- concurrency
+- distributed systems
+- designs concurrent, fault-tolerant systems using actor model patterns
 - list cluster members
-- distributed cluster management, sharding, and fault tolerance
-- list all active actors
-- actor model
-- list supervisors
 - cluster management
 - system health status
-- send a typed message to an actor's mailbox for asynchronous processing
-- concurrent computation using actors, message passing, and isolation
-- inspect mailbox
-- Platform Engineer
-- get actor
-- spawn actor
 - send message
-- designs concurrent, fault-tolerant systems using actor model patterns
-- spawn a new actor
-- Distributed Systems Developer
+- list all actors in the system filtered by status
+- distributed cluster management, sharding, and fault tolerance
 - Site Reliability Engineer
-- actor lifecycle management
-- list supervisors with their strategies and child actor counts
-- distributed systems
-- monitors actor system health, throughput, and failure recovery
-- list all cluster nodes with their status, roles, and actor counts
+- list supervisors
+- inspect mailbox
 - inspect pending messages in an actor's mailbox for debugging
+- monitors actor system health, throughput, and failure recovery
+- get details of a specific actor including mailbox size and restart count
+- Distributed Systems Developer
+- actor model
+- spawn actor
+- send a typed message to an actor's mailbox for asynchronous processing
+- list supervisors with their strategies and child actor counts
+- Platform Engineer
+- get actor system health including throughput, error rate, and dead letter count
+- supervision
+- list all active actors
+- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
+- list all cluster nodes with their status, roles, and actor counts
+- builds and operates distributed platforms using actor model frameworks like akka or orleans
+- get actor
 slug: actor-system-management
 tags:
 - Actor Model

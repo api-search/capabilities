@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list realms
-- specific realm.
-- list users.
-- list roles.
-- identity providers.
-- list users
-- create a new user in a realm.
-- list clients
-- red hat
-- keycloak realms.
-- list users in a realm.
-- realm users.
-- list groups.
-- create a user.
-- list identity providers.
-- kubernetes
-- identity
-- get user details.
-- realm roles.
-- create user
-- terminate a user session.
-- enterprise
-- list groups
-- get realm details.
-- get user
-- access management
-- linux
-- list identity providers
-- list groups in a realm.
-- containers
-- list client applications in a realm.
-- list clients.
-- list roles
-- open source
-- register a new client application.
-- create client
-- list roles in a realm.
-- realm clients.
-- get realm configuration details.
-- list realm roles
-- get realm
-- hybrid cloud
-- delete user
-- cloud
 - realm groups.
-- delete session
-- list all realms.
+- identity providers.
+- identity
+- linux
+- list realm roles
+- containers
+- create client
+- create user
+- list client applications in a realm.
 - keycloak
-- list all keycloak realms.
+- list groups in a realm.
+- kubernetes
+- hybrid cloud
+- create a new user in a realm.
+- keycloak realms.
+- list realms
+- get user details.
+- list users.
+- list roles
+- list users in a realm.
+- get realm
+- list roles.
 - list external identity providers.
+- list clients
+- list all keycloak realms.
+- list all realms.
+- create a user.
+- list clients.
+- realm roles.
+- list identity providers
+- list roles in a realm.
+- get realm configuration details.
+- realm users.
+- get user
+- delete user
+- red hat
+- register a new client application.
+- delete session
+- list users
+- cloud
+- list groups
+- open source
+- access management
+- list groups.
+- enterprise
+- list identity providers.
 - delete a user from a realm.
+- get realm details.
+- specific realm.
+- realm clients.
+- terminate a user session.
 slug: identity-and-access
 tags:
 - Red Hat

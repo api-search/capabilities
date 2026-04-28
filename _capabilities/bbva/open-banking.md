@@ -9,12 +9,12 @@ personas: []
 provider_name: BBVA
 provider_slug: bbva
 search_terms:
-- banking
+- spain
 - financial services
 - psd2
-- mexico
 - open banking
-- spain
+- banking
+- mexico
 slug: open-banking
 tags: []
 tools: []

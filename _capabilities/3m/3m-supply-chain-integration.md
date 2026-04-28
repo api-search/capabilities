@@ -35,45 +35,45 @@ personas: []
 provider_name: 3M
 provider_slug: 3m
 search_terms:
-- procurement
-- Supply Chain Analyst
-- list deliveries
-- track delivery status and estimated arrival for 3m orders.
-- supply chain
-- retrieve invoices for billing reconciliation.
 - Accounts Payable
-- retrieves invoices and reconciles billing with purchase orders
-- list purchase orders with status information.
-- delivery tracking and logistics.
-- list purchase orders placed with 3m with status and tracking.
-- end-to-end supply chain workflow for procurement and billing
+- list 3m products available to the authenticated partner.
 - submit a new purchase order.
-- logistics
-- purchase order management.
-- 3m product discovery and pricing
 - invoice retrieval for billing reconciliation.
-- track deliveries
-- create order
-- tracks order status, monitors deliveries, and analyzes supply chain data
-- Procurement Manager
+- submit a new purchase order for 3m products.
+- list orders
 - purchase order submission and tracking
-- list invoices
+- retrieve 3m invoices for accounts payable reconciliation.
+- delivery tracking and shipment status
+- get the partner-negotiated price for a specific 3m product.
+- retrieves invoices and reconciles billing with purchase orders
 - searches products, compares pricing, and submits purchase orders
 - get negotiated price for a specific 3m product.
-- get the partner-negotiated price for a specific 3m product.
+- manufacturing
+- invoice retrieval and accounts payable reconciliation
+- create order
+- tracks order status, monitors deliveries, and analyzes supply chain data
+- list deliveries
+- delivery tracking and logistics.
+- retrieve invoices for billing reconciliation.
+- procurement
+- list invoices
+- logistics
+- supply chain
+- list purchase orders placed with 3m with status and tracking.
+- Supply Chain Analyst
+- 3m product discovery and pricing
+- purchase order management.
+- Procurement Manager
+- track delivery status for partner orders.
+- industrial
+- track delivery status and estimated arrival for 3m orders.
+- list products
 - 3m product catalog and partner pricing.
 - get product price
+- track deliveries
+- end-to-end supply chain workflow for procurement and billing
+- list purchase orders with status information.
 - list 3m products available to the authenticated partner with pricing.
-- list 3m products available to the authenticated partner.
-- track delivery status for partner orders.
-- invoice retrieval and accounts payable reconciliation
-- list products
-- submit a new purchase order for 3m products.
-- industrial
-- delivery tracking and shipment status
-- list orders
-- retrieve 3m invoices for accounts payable reconciliation.
-- manufacturing
 slug: 3m-supply-chain-integration
 tags:
 - Manufacturing

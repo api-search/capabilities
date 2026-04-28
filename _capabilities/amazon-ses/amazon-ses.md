@@ -14,22 +14,22 @@ personas: []
 provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
-- automation workflow for amazon ses
+- marketing email
 - email service
+- automation workflow for amazon ses
+- transactional email
+- aws
 - list amazon ses resources
-- engineer managing amazon ses resources
-- smtp
-- amazon ses resources
 - aws cloud resource management
+- notifications
+- cloud operations
+- email deliverability
+- amazon ses resources
+- smtp
+- engineer managing amazon ses resources
 - list resources
 - amazon ses
 - email
-- marketing email
-- cloud operations
-- aws
-- email deliverability
-- notifications
-- transactional email
 slug: amazon-ses
 tags:
 - Amazon Ses

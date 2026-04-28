@@ -70,82 +70,82 @@ personas: []
 provider_name: Amazon Device Farm
 provider_slug: amazon-device-farm
 search_terms:
-- quality assurance
+- list test grid projects
+- create test grid project
+- create device pool
+- create a device pool with filter rules
+- list unique problems
+- list devices
+- get upload
+- browser testing
+- get test run results and status
+- start a remote access session on a device
+- check the status of an uploaded app or test package
+- upload an app or test package
+- list device pools configured for a project
+- list all aws device farm test projects
+- amazon device farm
+- app and test artifact uploads
+- list device pools
+- list available real physical devices for testing
+- device testing
+- get the status and results of a test run
+- test project management
+- aws
+- list unique problems found across test runs
+- schedule a test run on real physical devices
+- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
+- create upload
+- list available real physical devices
+- list jobs within a test run
+- create a new test project
+- get run
+- list projects
+- list selenium test grid projects
+- mobile app developer running tests on real devices to validate app quality
+- stop a currently running test
+- device pool configuration
+- individual run management
+- list jobs
+- remote device access sessions
+- create a device pool with rules to filter devices for testing
+- start an interactive remote access session on a real device
+- stop an active remote access session
+- list uploads for a project
+- list selenium test grid projects for browser testing
 - QA Engineer
 - list uploads
-- remote device access sessions
-- create a new test project
-- list available real physical devices
-- list all aws device farm test projects
 - application testing
-- testing web applications in selenium-powered desktop browsers
-- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
-- list runs
 - list test runs for a project
-- list device pools
-- get run
-- list jobs within a test run
-- list selenium test grid projects for browser testing
-- device testing
-- list uploads for a project
-- create upload
-- create device pool
-- test project management
-- stop a running test
-- list selenium test grid projects
-- Mobile Developer
-- create test grid project
-- create test grid url
-- device pool configuration
-- test automation
-- create a new device farm test project
-- stop run
-- create an upload slot and get a pre-signed url to upload your app or test package
-- mobile testing
-- list jobs
-- create project
-- mobile app developer running tests on real devices to validate app quality
-- selenium browser test grid projects
-- list artifacts
-- quality assurance engineer managing test infrastructure and running automated test suites
-- testing mobile applications on real physical ios and android devices
-- list devices
-- create a signed url for selenium remotewebdriver to connect to device farm
-- list available real physical devices for testing
-- get test run results and status
-- amazon device farm
-- list test artifacts like screenshots, logs, and videos from a run
-- list projects
-- create a device pool with filter rules
-- individual run management
-- create remote access session
-- start an interactive remote access session on a real device
-- create a device pool with rules to filter devices for testing
-- create a new selenium test grid project
-- list unique problems
-- list device pools configured for a project
-- get upload
-- stop remote access session
-- list test grid projects
-- stop an active remote access session
-- list unique problems found across test runs
-- check the status of an uploaded app or test package
-- schedule a test run on real physical devices
-- real device catalog
-- list all device farm test projects
-- upload an app or test package
-- list all test runs for a project
-- app and test artifact uploads
-- schedule a test run on real devices
-- start a remote access session on a device
-- aws
-- schedule run
-- browser testing
 - list remote access sessions
-- get the status and results of a test run
+- testing mobile applications on real physical ios and android devices
+- mobile testing
+- schedule run
+- quality assurance
+- list all device farm test projects
+- quality assurance engineer managing test infrastructure and running automated test suites
+- real device catalog
+- stop remote access session
+- create test grid url
+- list test artifacts like screenshots, logs, and videos from a run
+- Mobile Developer
+- list artifacts
+- testing web applications in selenium-powered desktop browsers
+- create a new device farm test project
+- list runs
+- schedule a test run on real devices
+- stop a running test
+- create an upload slot and get a pre-signed url to upload your app or test package
+- create project
+- stop run
+- create remote access session
+- list all test runs for a project
+- create a signed url for selenium remotewebdriver to connect to device farm
 - test run lifecycle
+- test automation
 - interactive remote access to real devices for debugging
-- stop a currently running test
+- create a new selenium test grid project
+- selenium browser test grid projects
 slug: mobile-browser-testing
 tags:
 - Amazon Device Farm

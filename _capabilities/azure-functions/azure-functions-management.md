@@ -14,25 +14,25 @@ personas: []
 provider_name: Azure Functions
 provider_slug: azure-functions
 search_terms:
-- list trigger resources
-- list function apps
-- list bindings
-- functions
-- compute
-- azure resource management
 - azure
-- resource management
 - list functions
-- list triggers
-- list functionapp resources
-- list function resources
 - event-driven
-- serverless
+- list trigger resources
+- compute
+- list function apps
+- list function resources
+- list triggers
+- list binding resources
 - list
 - cloud
-- management
 - list all resources
-- list binding resources
+- serverless
+- list bindings
+- azure resource management
+- resource management
+- list functionapp resources
+- functions
+- management
 slug: azure-functions-management
 tags:
 - Azure

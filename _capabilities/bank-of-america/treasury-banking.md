@@ -18,39 +18,39 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- analyst managing day-to-day treasury operations and reporting
-- list accounts
-- list cashpro accounts
-- corporate banking
+- initiate a payment
+- list available bank of america account statements
+- get the current status of a bank of america payment
+- bank of america
+- banking
 - corporate treasury operations including account management, payments, and reporting
 - payment management
-- get account balances
-- account management
-- corporate cash management, balance reporting, and liquidity
-- ERP Integration
-- finance
-- list bank of america cashpro accounts for the authenticated client
-- get current and available balances for a cashpro account
-- list statements
-- list account transactions
-- system integration connecting erp/tms to bank of america cashpro apis
-- bank of america
 - executive responsible for corporate cash and liquidity management
-- initiate a payment
-- payment initiation and tracking across 350+ payment types
+- finance
+- corporate cash management, balance reporting, and liquidity
+- system integration connecting erp/tms to bank of america cashpro apis
+- get current and available balances for a cashpro account
+- list bank of america cashpro accounts for the authenticated client
 - list bofa accounts
+- initiate payment
+- corporate banking
+- list account transactions
+- cashpro
+- list accounts
+- list transactions for a bank of america account within a date range
+- Treasury Analyst
+- account management
+- get payment status
+- ERP Integration
+- payment initiation and tracking across 350+ payment types
 - payments
 - initiate a payment through bank of america cashpro (supports 350+ payment types)
-- Treasury Analyst
-- cashpro
-- list transactions for a bank of america account within a date range
-- get the current status of a bank of america payment
-- list available bank of america account statements
+- list statements
+- list cashpro accounts
 - Corporate Treasurer
-- banking
-- initiate payment
-- get payment status
 - treasury
+- get account balances
+- analyst managing day-to-day treasury operations and reporting
 slug: treasury-banking
 tags:
 - Bank of America

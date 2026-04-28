@@ -10,60 +10,60 @@ personas: []
 provider_name: Amazon CodeArtifact
 provider_slug: amazon-codeartifact
 search_terms:
-- manage packages and package versions
-- create domain
-- associate external connection
-- publish a new package version to a repository
-- amazon
-- list packages
-- list repositories in a domain
-- manages repository infrastructure, external connections, and domain policies.
-- list repositories
 - get details about a codeartifact domain
+- manages repository infrastructure, external connections, and domain policies.
 - devops
+- associate external connection
 - artifact repository
-- list packages in a repository
-- get details about a codeartifact repository
-- get details about a package in a repository
-- copy package versions between repositories in the same domain
+- list repositories
 - delete package versions
-- create a new codeartifact domain
-- managing software package lifecycle including publishing, versioning, and deprecation.
-- software supply chain
-- connect a repository to a public package registry like npmjs or pypi
-- publish package version
-- describe repository
-- list versions of a package in a repository
 - DevOps Engineer
-- list domains
-- get repository endpoint
-- pypi
-- Platform Engineer
-- unified workflow for managing artifact repositories, packages, and software supply chain governance.
-- list package versions
-- describe domain
-- publishes and consumes packages from codeartifact repositories.
-- list all codeartifact domains in the account
+- governance and security of external package dependencies and internal packages.
+- managing software package lifecycle including publishing, versioning, and deprecation.
+- npm
 - nuget
-- package management
-- sets up domains, repositories, and governance controls across teams.
-- create a new codeartifact repository within a domain
 - get authorization tokens for package managers
-- Software Developer
-- delete specific package versions from a repository
-- get authorization token
-- copy package versions
+- amazon
+- connect a repository to a public package registry like npmjs or pypi
 - storage and retrieval of software artifacts and their metadata.
 - manage codeartifact domains
-- create repository
-- npm
-- maven
-- get the package-format-specific endpoint url for a repository
+- manage packages and package versions
+- create a new codeartifact domain
+- sets up domains, repositories, and governance controls across teams.
 - aws
+- get authorization token
+- create repository
+- create domain
+- list packages in a repository
+- pypi
+- list all codeartifact domains in the account
+- describe domain
+- get details about a package in a repository
 - describe package
-- governance and security of external package dependencies and internal packages.
-- manage codeartifact repositories
+- get repository endpoint
+- package management
+- list versions of a package in a repository
+- get the package-format-specific endpoint url for a repository
+- describe repository
+- Platform Engineer
+- Software Developer
+- list packages
 - generate a temporary authorization token for accessing codeartifact repositories
+- publish a new package version to a repository
+- list domains
+- list repositories in a domain
+- list package versions
+- publish package version
+- maven
+- copy package versions between repositories in the same domain
+- software supply chain
+- delete specific package versions from a repository
+- copy package versions
+- unified workflow for managing artifact repositories, packages, and software supply chain governance.
+- get details about a codeartifact repository
+- publishes and consumes packages from codeartifact repositories.
+- manage codeartifact repositories
+- create a new codeartifact repository within a domain
 slug: amazon-codeartifact-package-management
 tags:
 - Amazon

@@ -14,28 +14,28 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: azure
 search_terms:
-- cloud computing
-- list resource resources
-- list subscription resources
-- storage
-- platform as a service
+- azure
+- list resourcegroup resources
+- list resource groups
 - list providers
-- azure resource management
+- list resource resources
+- list provider resources
 - list subscriptions
+- networking
+- infrastructure
+- list subscription resources
+- machine learning
+- platform as a service
+- list
+- cloud
+- cloud computing
+- list all resources
+- azure resource management
+- resource management
+- storage
 - databases
 - list resources
-- azure
-- resource management
-- list provider resources
-- machine learning
-- list
-- infrastructure
-- list resource groups
-- cloud
 - management
-- list resourcegroup resources
-- networking
-- list all resources
 slug: azure-management
 tags:
 - Azure

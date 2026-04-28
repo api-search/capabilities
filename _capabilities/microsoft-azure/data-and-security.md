@@ -30,54 +30,54 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- arm list tags
-- arm list subscriptions
-- cloud computing
-- cosmos db
-- list resource providers
-- infrastructure as a service
-- platform as a service
-- keyvault get secret
-- cosmos list containers
-- keyvault list secrets
-- key vault
-- list blobs in a container
-- cosmos list items
-- list subscriptions
-- list cryptographic keys
-- enterprise
-- azure
-- download a blob
 - list blobs
+- azure
+- list blobs in a container
+- list cryptographic keys
 - list certificates
-- arm list providers
-- keyvault list certificates
-- arm list resource groups
-- list resources in a subscription
+- list resource groups
 - subscription management
+- blob storage
+- get a secret value
+- list databases
+- keyvault get secret
+- infrastructure as a service
+- key vault secret management
+- api management
+- keyvault list keys
+- list subscriptions
+- arm list providers
+- resource manager
+- cosmos list containers
+- list subscription tags
+- cosmos list databases
 - blob get properties
-- get blob properties
 - list secrets
 - list containers in a database
-- blob storage operations
-- arm list resources
-- list subscription tags
-- api management
-- t1
-- list databases
-- key vault secret management
-- get a secret value
-- cosmos db database management
-- list resource groups
-- blob storage
-- list cosmos db databases
 - list items in a container
+- cosmos db database management
+- download a blob
+- platform as a service
+- get blob properties
+- keyvault list secrets
 - cloud
+- cloud computing
 - list azure subscriptions
-- resource manager
-- keyvault list keys
+- blob storage operations
+- keyvault list certificates
+- cosmos db
+- list resources in a subscription
+- enterprise
+- arm list tags
+- arm list resources
+- arm list subscriptions
+- cosmos list items
+- arm list resource groups
+- t1
 - blob list blobs
-- cosmos list databases
+- list resource providers
+- key vault
+- list cosmos db databases
 - blob download
 slug: data-and-security
 tags:

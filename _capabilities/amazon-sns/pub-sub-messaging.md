@@ -31,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- get topic attributes
-- get attributes of an sns topic
-- amazon
+- create platform application
+- get sms attributes
+- create a new sns topic
+- set topic attributes
 - list all sns topics
+- unsubscribe
+- topic management
+- publish a message to a topic or endpoint
+- get sms messaging attributes
+- notifications
+- messaging
+- publish batch
+- subscription management
+- email
+- list topics
+- amazon
+- list subscriptions by topic
+- create a platform application for mobile push
+- create a subscription to a topic
+- delete topic
+- check if a phone number has opted out of sms
+- list subscriptions for a specific topic
+- message publishing
+- aws
+- push notifications
+- list subscriptions
+- get topic attributes
+- publish
+- pub/sub
+- delete an sns topic
+- publish up to 10 messages in a batch
+- get attributes of an sns topic
+- subscribe
+- tag resource
+- publish a message to a topic
+- create topic
+- add tags to an sns resource
 - list all subscriptions
 - list tags for an sns resource
-- email
-- message publishing
-- delete topic
-- set attributes on an sns topic
-- create topic
-- unsubscribe from a topic
-- list subscriptions for a specific topic
-- unsubscribe
-- publish
-- create platform application
-- pub/sub
-- list subscriptions
-- sms
-- topic management
-- list subscriptions by topic
-- create a subscription
-- notifications
-- delete an sns topic
-- create a new sns topic
-- subscription management
-- get attributes of a subscription
-- publish a message to a topic
-- create a platform application for mobile push
-- get sms messaging attributes
-- publish up to 10 messages in a batch
-- list topics
-- create a subscription to a topic
-- check if a phone number has opted out of sms
-- publish a message to a topic or endpoint
-- messaging
-- get sms attributes
-- publish batch
-- push notifications
-- set topic attributes
-- get subscription attributes
-- check phone opted out
-- add tags to an sns resource
 - list tags
-- aws
-- tag resource
-- subscribe
+- check phone opted out
+- get subscription attributes
+- sms
+- get attributes of a subscription
+- set attributes on an sns topic
+- unsubscribe from a topic
+- create a subscription
 slug: pub-sub-messaging
 tags:
 - Amazon

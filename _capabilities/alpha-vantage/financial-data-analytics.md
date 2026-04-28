@@ -9,12 +9,12 @@ personas: []
 provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
-- economic data
-- market data
-- financial
 - stocks
+- financial
 - sentiment analysis
+- economic data
 - technical indicators
+- market data
 slug: financial-data-analytics
 tags: []
 tools: []

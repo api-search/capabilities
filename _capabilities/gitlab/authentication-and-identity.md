@@ -35,38 +35,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- authenticated user profile information.
-- authorize oauth
-- initiate the oauth 2.0 authorization code flow.
-- initiate the device authorization grant flow.
-- get information about the current access token.
-- token revocation.
-- platform
-- revoke token
-- identity
-- oauth
-- get profile information about the currently authenticated user.
 - authorize device
-- revoke an oauth access or refresh token.
-- exchange an authorization code, device code, or refresh token for an access token.
-- exchange token
+- identity
+- revoke an existing oauth access or refresh token.
+- initiate the device authorization grant flow.
+- initiate the device authorization grant flow for input-constrained devices.
+- oauth 2.0 authorization code flow initiation.
+- get profile information about the authenticated user.
 - software development
-- code
-- token introspection and validation.
-- get information about the current oauth access token including scopes and expiration.
-- tokens
-- oauth token exchange and creation.
+- authenticated user profile information.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
 - authentication
 - get user info
-- oauth 2.0 authorization code flow initiation.
-- get token info
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- get profile information about the authenticated user.
-- revoke an existing oauth access or refresh token.
-- gitlab
+- get information about the current oauth access token including scopes and expiration.
+- revoke an oauth access or refresh token.
+- exchange token
 - device authorization grant flow for input-constrained devices.
 - source control
-- initiate the device authorization grant flow for input-constrained devices.
+- authorize oauth
+- oauth token exchange and creation.
+- oauth
+- revoke token
+- code
+- get token info
+- get information about the current access token.
+- initiate the oauth 2.0 authorization code flow.
+- token revocation.
+- gitlab
+- get profile information about the currently authenticated user.
+- token introspection and validation.
+- platform
+- tokens
+- exchange an authorization code, device code, or refresh token for an access token.
 slug: authentication-and-identity
 tags:
 - Gitlab

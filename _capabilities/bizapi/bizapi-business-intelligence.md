@@ -19,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- firmographic data
-- Marketing Analyst
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
 - search companies
+- business intelligence
+- crm enrichment
+- uses firmographic data to qualify leads and enrich crm account records
+- firmographic data retrieval and company lookup
+- Data Engineer
+- sic
+- naics
+- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
+- sales enablement
+- search for business entities and retrieve firmographic data.
 - segments and scores prospects using naics, sic, and financial data
 - search business entities by name, address, phone, or url.
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- firmographic data retrieval and company lookup
-- company data
-- crm enrichment
-- crm
-- business intelligence
-- sic
-- uses firmographic data to qualify leads and enrich crm account records
-- Data Engineer
-- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- search for business entities and retrieve firmographic data.
-- test search returning fake data without consuming api credits.
-- naics
 - search companies test
+- company data
+- crm
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 - appending firmographic data to crm records for sales and marketing
-- sales enablement
+- firmographic data
+- test search returning fake data without consuming api credits.
+- Marketing Analyst
+- business intelligence and crm enrichment workflow combining company search and test endpoints
 - Sales Representative
 - test company search returning fake firmographic data.
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

@@ -22,31 +22,31 @@ personas: []
 provider_name: AmTrust Financial Services
 provider_slug: amtrust-financial-services
 search_terms:
-- createQuote
-- agent checking appetite and generating quotes for clients
-- insurance technology
-- workers compensation
-- insurance
-- amtrust financial services
-- getPolicy
-- list all quotes for the agent account
-- list quotes
+- create quote
 - generate a commercial lines quote
-- end-to-end insurance quoting and binding workflow
-- commercial insurance
-- get policy
-- checkAppetite
-- check amtrust coverage appetite for a business risk
-- check coverage appetite
-- retrieve policy details by policy number
-- property and casualty
-- small business
-- developer integrating amtrust api into agent or broker platform
-- commercial lines
-- bind an approved quote to issue a policy
+- getPolicy
 - check appetite
 - bind policy
-- create quote
+- developer integrating amtrust api into agent or broker platform
+- insurance technology
+- createQuote
+- retrieve policy details by policy number
+- list all quotes for the agent account
+- small business
+- commercial lines
+- end-to-end insurance quoting and binding workflow
+- check amtrust coverage appetite for a business risk
+- check coverage appetite
+- property and casualty
+- agent checking appetite and generating quotes for clients
+- list quotes
+- checkAppetite
+- amtrust financial services
+- insurance
+- workers compensation
+- commercial insurance
+- get policy
+- bind an approved quote to issue a policy
 slug: amtrust-insurance-quoting-and-binding
 tags:
 - AmTrust Financial Services

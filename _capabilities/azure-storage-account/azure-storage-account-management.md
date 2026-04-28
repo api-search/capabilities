@@ -14,26 +14,26 @@ personas: []
 provider_name: Azure Storage Account
 provider_slug: azure-storage-account
 search_terms:
-- file storage
-- storage
-- list blob containers
-- microsoft
-- list file shares
-- list blobcontainer resources
-- list fileshare resources
-- azure resource management
 - azure
-- resource management
+- microsoft
+- list fileshare resources
+- cloud storage
+- blob storage
+- list storageaccount resources
 - list queue resources
+- list blobcontainer resources
 - list queues
 - list
-- list storage accounts
-- list storageaccount resources
-- blob storage
 - cloud
-- management
+- list file shares
 - list all resources
-- cloud storage
+- azure resource management
+- resource management
+- storage
+- file storage
+- list blob containers
+- management
+- list storage accounts
 slug: azure-storage-account-management
 tags:
 - Azure

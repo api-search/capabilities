@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon Route 53 Resolver
 provider_slug: amazon-route53-resolver
 search_terms:
-- list amazon route53 resolver resources
-- aws cloud resource management
-- hybrid cloud
-- amazon route53 resolver
-- list resources
-- engineer managing amazon route53 resolver resources
-- automation workflow for amazon route53 resolver
-- dns
-- cloud operations
-- aws
-- networking
 - amazon route53 resolver resources
+- dns
+- list amazon route53 resolver resources
+- aws
+- amazon route53 resolver
+- engineer managing amazon route53 resolver resources
+- cloud operations
+- aws cloud resource management
+- networking
+- hybrid cloud
+- list resources
+- automation workflow for amazon route53 resolver
 slug: amazon-route53-resolver
 tags:
 - Amazon Route53 Resolver

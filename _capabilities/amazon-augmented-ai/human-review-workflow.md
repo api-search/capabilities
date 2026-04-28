@@ -18,22 +18,22 @@ personas: []
 provider_name: Amazon Augmented AI
 provider_slug: amazon-augmented-ai
 search_terms:
-- get the current status and output of a specific human review loop.
-- human in the loop
 - ai review
-- amazon augmented ai
+- human in the loop
 - stop human loop
+- list all human review loops to track review progress and status.
 - initiate human review of an ml prediction by starting a new human loop.
-- list human review loops
-- machine learning
 - aws
-- start a human review loop
+- start human loop
 - list human loops
-- stop an in-progress human review loop when review is no longer needed.
 - describe human loop
 - human review loop management
-- start human loop
-- list all human review loops to track review progress and status.
+- amazon augmented ai
+- list human review loops
+- get the current status and output of a specific human review loop.
+- stop an in-progress human review loop when review is no longer needed.
+- start a human review loop
+- machine learning
 slug: human-review-workflow
 tags:
 - Amazon Augmented AI

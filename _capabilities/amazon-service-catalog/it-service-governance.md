@@ -31,37 +31,37 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- it governance
-- describe portfolio
-- provision product
-- provision an approved product
-- compliance
-- terminate and decommission a provisioned product
-- approved product catalog
-- add a product to the catalog
-- create an it service portfolio
+- check the status of a provisioned product
 - create product
-- browse approved products
-- create portfolio
 - self-service provision an approved it product
 - terminate provisioned product
-- add a new product to the it service catalog
-- it service portfolio management
-- cloud governance
-- search products
-- self-service product provisioning
-- get details about an it service portfolio
-- browse and search approved it products
-- create a new it service catalog portfolio
-- service catalog
-- describe provisioned product
 - list portfolios
-- amazon service catalog
-- self-service
 - aws
-- list all it service catalog portfolios
-- check the status of a provisioned product
+- create an it service portfolio
+- compliance
+- cloud governance
+- describe portfolio
 - list all it service portfolios
+- amazon service catalog
+- browse and search approved it products
+- add a product to the catalog
+- provision product
+- browse approved products
+- search products
+- it governance
+- self-service product provisioning
+- terminate and decommission a provisioned product
+- it service portfolio management
+- create a new it service catalog portfolio
+- get details about an it service portfolio
+- describe provisioned product
+- provision an approved product
+- add a new product to the it service catalog
+- self-service
+- list all it service catalog portfolios
+- service catalog
+- create portfolio
+- approved product catalog
 slug: it-service-governance
 tags:
 - Amazon Service Catalog

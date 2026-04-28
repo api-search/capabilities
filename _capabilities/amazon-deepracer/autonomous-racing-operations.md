@@ -10,10 +10,10 @@ provider_name: Amazon DeepRacer
 provider_slug: amazon-deepracer
 search_terms:
 - autonomous vehicles
+- robotics
+- aws
 - reinforcement learning
 - machine learning
-- aws
-- robotics
 slug: autonomous-racing-operations
 tags: []
 tools: []

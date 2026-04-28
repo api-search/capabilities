@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- API Platform Engineer
-- hybrid
-- API Product Manager
-- list catalogued apis
-- API Governance Lead
-- manager packaging api products and managing developer relationships.
-- architect overseeing api platform strategy and governance across the organization.
-- list api specs
-- google cloud
-- list observed shadow apis.
-- enterprise
-- list all catalogued apis.
-- engineer managing api proxies, deployments, and policies in apigee.
-- monetization
-- api gateway
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- Platform Architect
-- list observed apis
-- api hub
-- api governance
-- discover shadow apis
-- integrations
-- api management
-- api discovery
-- shadow apis discovered via apim.
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
 - developer portal
-- api catalog
+- manager packaging api products and managing developer relationships.
+- api gateway
+- API Governance Lead
+- api discovery
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- discover undocumented shadow apis in google cloud infrastructure using apim.
 - microservices
+- architect overseeing api platform strategy and governance across the organization.
+- api governance
+- shadow apis discovered via apim.
+- list observed shadow apis.
+- api management
+- list api specifications tracked in the apigee registry.
+- Platform Architect
+- API Product Manager
+- list api specs
 - apigee
+- integrations
+- discover shadow apis
+- API Platform Engineer
+- monetization
+- api catalog
 - api catalog from api hub.
+- google cloud
+- engineer managing api proxies, deployments, and policies in apigee.
+- list apis
 - analytics
 - list all apis in the apigee api hub catalog.
-- list apis
-- list api specifications tracked in the apigee registry.
+- list catalogued apis
+- list all catalogued apis.
+- enterprise
+- hybrid
+- list observed apis
+- api hub
 slug: api-governance-observability
 tags:
 - Apigee

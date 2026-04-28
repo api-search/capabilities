@@ -10,12 +10,12 @@ provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
 - multi-account
+- aws
+- controls
 - governance
 - landing zone
-- security
-- aws
 - compliance
-- controls
+- security
 slug: governance-operations
 tags: []
 tools: []

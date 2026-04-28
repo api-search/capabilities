@@ -18,31 +18,31 @@ personas: []
 provider_name: Ballerina
 provider_slug: ballerina
 search_terms:
-- package discovery and retrieval from ballerina central
-- get ballerina package
-- search for ballerina packages in the central registry by name, keyword, or organization
-- package details
-- engineer building enterprise integrations using ballerina language packages
 - get package
-- search ballerina packages
-- discovery and retrieval of ballerina language packages
+- developer building integration services using the ballerina language
 - get details about a specific ballerina package including versions and documentation
 - Ballerina Developer
-- programming language
-- integration
 - get ballerina package version
-- ballerina
-- search for ballerina packages
-- integrations
 - Integration Engineer
+- search for ballerina packages
+- search ballerina packages
+- get ballerina package
+- integration
+- integrations
+- package discovery and retrieval from ballerina central
+- package discovery and search
+- package details
+- get package details
+- discovery and retrieval of ballerina language packages
+- package registry
 - open source
 - search packages
-- package discovery and search
+- engineer building enterprise integrations using ballerina language packages
+- programming language
 - get details about a specific version of a ballerina package
 - orchestrations
-- get package details
-- package registry
-- developer building integration services using the ballerina language
+- ballerina
+- search for ballerina packages in the central registry by name, keyword, or organization
 slug: package-registry
 tags:
 - Ballerina

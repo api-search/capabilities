@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- generate image
-- generate a chat response from any of 400+ ai language models via aimlapi
-- create chat completion
-- discover all 400+ available ai models on aimlapi platform
-- create image
-- list models
-- ai models
-- embeddings
-- chat completions via 400+ llms
-- generate vector embeddings for semantic search and rag applications
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- AI Engineer
-- developer tools
-- list all models
-- api gateway
-- create a chat completion
 - ai engineer evaluating and comparing models for ml pipelines
-- machine learning
+- generate image
+- api gateway
 - developer integrating ai capabilities into applications via aimlapi
-- Developer
-- video generation
-- create embeddings
-- ai model inference across modalities
-- generate embeddings
-- generate an image
-- generate an image from a text prompt using aimlapi image generation models
-- artificial intelligence
-- image generation
-- create embedding
-- list available models
-- speech
+- AI Engineer
+- list all models
 - api key management and model discovery
 - llm
+- create embeddings
+- ai models
+- speech
+- create chat completion
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- discover all 400+ available ai models on aimlapi platform
+- ai model inference across modalities
+- developer tools
+- generate embeddings
+- machine learning
+- generate vector embeddings for semantic search and rag applications
+- generate a chat response from any of 400+ ai language models via aimlapi
+- create image
+- video generation
+- create a chat completion
+- image generation
+- list available models
+- list models
+- Developer
+- generate an image
+- create embedding
+- embeddings
+- artificial intelligence
+- chat completions via 400+ llms
+- generate an image from a text prompt using aimlapi image generation models
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

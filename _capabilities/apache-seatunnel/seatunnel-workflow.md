@@ -9,18 +9,18 @@ personas: []
 provider_name: Apache SeaTunnel
 provider_slug: apache-seatunnel
 search_terms:
-- elt
-- extract, transform, load pipeline processing
 - streaming
-- etl
 - engineer designing and operating data pipelines
-- data integration
-- batch
-- apache
-- engineer managing seatunnel clusters
+- etl
 - open source
+- engineer managing seatunnel clusters
 - end-to-end data synchronization from source to sink
+- elt
+- apache
+- data integration
 - moving and transforming data between systems
+- batch
+- extract, transform, load pipeline processing
 slug: seatunnel-workflow
 tags: []
 tools: []

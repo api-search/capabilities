@@ -35,46 +35,46 @@ provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
 - request intraday bars.
-- reference data queries.
-- search for fields.
-- request historical data.
-- intraday tick queries.
-- intraday bar queries.
-- request end-of-day historical data for securities.
-- subscribe to interval-based real-time bars.
-- field discovery.
-- subscribe to streaming real-time market data.
-- transaction cost analysis
-- bloomberg
-- subscribe market bar
-- request reference data for securities and fields.
-- enterprise
-- request raw intraday tick data for a security.
-- data license
-- reference data request
-- field search request
-- business intelligence
-- request reference data.
-- news
-- request intraday ohlc bars for a security.
-- look up metadata for bloomberg field mnemonics.
-- intraday tick request
-- subscribe market data
 - financial services
-- look up field metadata.
-- subscribe to custom vwap stream.
-- trading
-- intraday bar request
+- business intelligence
+- data license
+- request end-of-day historical data for securities.
 - field info request
-- analytics
-- request intraday ticks.
-- search the bloomberg api data dictionary for fields.
-- market data
 - execution management
+- field discovery.
+- look up field metadata.
+- request raw intraday tick data for a security.
+- search the bloomberg api data dictionary for fields.
+- trading
+- request historical data.
+- request reference data for securities and fields.
 - quantitative analysis
-- historical data request
-- historical data queries.
+- request intraday ohlc bars for a security.
+- reference data queries.
+- market data
+- search for fields.
 - subscribe market vwap
+- news
+- bloomberg
+- intraday tick request
+- intraday bar request
+- historical data queries.
+- intraday bar queries.
+- historical data request
+- intraday tick queries.
+- reference data request
+- look up metadata for bloomberg field mnemonics.
+- subscribe market data
+- analytics
+- field search request
+- subscribe to interval-based real-time bars.
+- enterprise
+- subscribe to streaming real-time market data.
+- request reference data.
+- request intraday ticks.
+- subscribe market bar
+- transaction cost analysis
+- subscribe to custom vwap stream.
 slug: market-data
 tags:
 - Bloomberg

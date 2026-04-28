@@ -49,49 +49,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- individual approval operations
-- payroll run history and status
+- recruiting
+- peoplesoft
+- peopletools platform services.
+- retrieve employee records with optional department and status filters.
+- search available job postings.
+- process approval
 - benefit enrollment records
+- list benefit enrollments
+- retrieve details for a specific job posting.
+- approve, deny, or push back an hr approval request.
+- campus solutions
+- candidate applications
+- payroll run history and status
+- talent management
+- search jobs
+- list employees
+- retrieve details for a specific employee.
+- retrieve pending hr approval requests.
+- campus solutions.
+- get job details
+- human capital management.
+- human resources
+- job postings
+- submit a candidate application for a job posting.
+- enterprise software
+- individual employee details
+- financial management
+- retrieve payroll run history and status.
+- list pending approvals
+- supply chain management
+- hr approval requests
+- payroll
+- submit application
+- employee records
+- hcm
+- retrieve benefit enrollment records.
+- job posting details
+- list payroll runs
+- individual approval operations
+- financial and supply chain management.
+- crm
 - erp
 - get employee
-- retrieve payroll run history and status.
-- retrieve benefit enrollment records.
-- retrieve employee records with optional department and status filters.
-- list payroll runs
-- search available job postings.
-- hr approval requests
-- search jobs
-- peopletools platform services.
-- list employees
-- job postings
-- candidate applications
-- financial management
-- individual employee details
-- campus solutions.
-- process approval
-- recruiting
-- crm
-- list pending approvals
-- talent management
-- financial and supply chain management.
-- human resources
-- hcm
-- approve, deny, or push back an hr approval request.
-- human capital management.
-- submit a candidate application for a job posting.
-- supply chain management
-- job posting details
-- retrieve pending hr approval requests.
-- employee records
-- peoplesoft
-- get job details
-- enterprise software
-- submit application
-- retrieve details for a specific employee.
-- payroll
-- retrieve details for a specific job posting.
-- campus solutions
-- list benefit enrollments
 slug: human-resources
 tags:
 - PeopleSoft

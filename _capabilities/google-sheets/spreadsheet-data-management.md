@@ -35,47 +35,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- write values to a spreadsheet range
-- clear values from a range
-- clear values from multiple ranges
-- clear values from a spreadsheet range
-- read values from a spreadsheet range
-- apply batch updates to a spreadsheet
-- create spreadsheet
-- copy sheet
-- get developer metadata
-- copy a sheet to another spreadsheet
-- get spreadsheet details
-- batch update values
-- read values from a range
-- clear values
-- search developer metadata matching filters
 - batch clear values
-- create a new spreadsheet
-- get spreadsheet details by id
-- append values to a range
-- append rows of data to a spreadsheet
-- write values to a range
-- google workspace
-- single spreadsheet operations
-- get spreadsheet
-- search developer metadata
-- google sheets
+- clear values from multiple ranges
 - append values
-- productivity
-- write values to multiple ranges at once
-- update values
-- spreadsheets
+- google workspace
+- read values from a range
+- append values to a range
+- create spreadsheet
+- copy a sheet to another spreadsheet
+- clear values
 - get values
 - batch update spreadsheet
+- get spreadsheet details by id
+- search developer metadata
+- google sheets
+- get spreadsheet details
 - batch get values
+- write values to multiple ranges at once
+- search developer metadata matching filters
+- productivity
+- read values from multiple ranges at once
+- single spreadsheet operations
+- spreadsheet lifecycle operations
+- apply batch updates to a spreadsheet
+- clear values from a range
+- get developer metadata
+- read values from a spreadsheet range
+- write values to a range
+- update values
+- write values to a spreadsheet range
+- create a new spreadsheet
 - create a new google sheets spreadsheet
 - get developer metadata by id
-- read values from multiple ranges at once
-- data management
-- automation
 - cell value read and write operations
-- spreadsheet lifecycle operations
+- batch update values
+- data management
+- copy sheet
+- clear values from a spreadsheet range
+- append rows of data to a spreadsheet
+- automation
+- get spreadsheet
+- spreadsheets
 slug: spreadsheet-data-management
 tags:
 - Google Sheets

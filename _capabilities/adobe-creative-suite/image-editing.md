@@ -55,60 +55,60 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- job status polling
-- apply document operations
-- background removal operations
-- remove the background from an image using adobe sensei ai
-- remove background
-- photography
-- alpha mask creation
-- get the status of an async photoshop job
-- text layer editing
-- straighten image
-- replace smart object content in a psd
+- create artboards in a psd document
+- product crop
 - artboard creation
-- read, add, modify, or delete layers in a psd document
-- creative
-- get job status
-- auto-crop an image to focus on the primary product
-- get the status of an asynchronous photoshop api job
-- automatically straighten a rotated image
-- photoshop
-- auto-crop an image to the primary product
-- edit smart object
-- apply resize, flatten, or trim operations to a psd
-- manage layers
-- create artboards within a psd document
-- remove the background from an image
-- create renditions from a psd or image in jpeg, png, or tiff
-- straighten a rotated image
-- create mask
-- replace smart object content in a psd document
-- image editing
-- image processing
-- smart object editing
+- rendition creation
+- apply resize, flatten, or trim operations to a psd document
+- straighten image
 - layer management
+- smart object editing
+- replace smart object content in a psd
+- manage layers
+- straighten a rotated image
+- image editing
+- read, add, modify, or delete layers in a psd document
+- photography
+- auto-crop an image to focus on the primary product
+- edit text layers
+- product cropping operations
+- create renditions from a psd or image
+- get the status of an async photoshop job
+- create an alpha mask for an image using adobe sensei ai
+- image straightening
+- document-level operations
+- auto-crop an image to the primary product
+- create an alpha mask for an image
 - edit text layers in a psd
 - design
-- create artboards in a psd document
-- edit text layers
-- product crop
-- document-level operations
-- create an alpha mask for an image
-- create rendition
-- create artboard
-- create an alpha mask for an image using adobe sensei ai
-- video
-- product cropping operations
-- rendition creation
-- image straightening
-- apply resize, flatten, or trim operations to a psd document
-- edit text content and styling in psd text layers
-- create renditions from a psd or image
-- automation
-- adobe
 - graphics
+- job status polling
+- remove background
+- replace smart object content in a psd document
+- automation
+- video
+- alpha mask creation
+- edit smart object
+- create artboards within a psd document
+- creative
+- create rendition
+- get the status of an asynchronous photoshop api job
+- apply resize, flatten, or trim operations to a psd
+- automatically straighten a rotated image
 - manage layers in a psd document
+- get job status
+- remove the background from an image
+- photoshop
+- adobe
+- remove the background from an image using adobe sensei ai
+- image processing
+- apply document operations
+- create mask
+- create renditions from a psd or image in jpeg, png, or tiff
+- edit text content and styling in psd text layers
+- create artboard
+- text layer editing
+- background removal operations
 slug: image-editing
 tags:
 - Adobe

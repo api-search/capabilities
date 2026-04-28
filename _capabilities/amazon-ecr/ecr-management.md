@@ -35,36 +35,36 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
-- delete repository
-- workflow capability for container registry management.
-- docker
-- amazon ecr
-- batch get image
-- deleteRepository
-- describe repositories
-- describeRepositories
-- createRepository
-- amazon ecr describe repositories
-- batchGetImage
-- oci
-- listImages
-- container registry management business domain for amazon ecr.
-- amazon ecr create repository
-- putImage
-- containers
-- amazon ecr put image
-- engineers managing amazon ecr resources on aws.
-- list images
-- container registry
-- amazon ecr list images
-- amazon ecr batch get image
-- create repository
 - ecr
+- delete repository
+- containers
+- amazon ecr list images
+- amazon ecr delete repository
+- list images
+- listImages
 - amazon web services
 - aws
+- amazon ecr
+- create repository
+- oci
+- putImage
+- deleteRepository
+- describe repositories
+- amazon ecr create repository
+- amazon ecr batch get image
+- createRepository
 - container images
-- amazon ecr delete repository
+- container registry
+- amazon ecr put image
+- container registry management business domain for amazon ecr.
 - put image
+- batch get image
+- workflow capability for container registry management.
+- batchGetImage
+- engineers managing amazon ecr resources on aws.
+- amazon ecr describe repositories
+- docker
+- describeRepositories
 slug: ecr-management
 tags:
 - Amazon ECR

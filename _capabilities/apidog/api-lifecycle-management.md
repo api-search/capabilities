@@ -19,34 +19,34 @@ provider_name: Apidog
 provider_slug: apidog
 search_terms:
 - import openapi spec
+- managing the complete lifecycle of api specifications from design to deployment.
+- apidog
+- api design
+- developer building and managing apis using apidog's design-first platform.
+- unified workflow for managing api specifications lifecycle.
+- design-first
+- api lifecycle
+- export api specifications to standard formats.
+- export openapi
+- import
 - import api specifications from various formats.
+- import an openapi/swagger specification into an apidog project for design-first development.
+- export
+- export openapi specification from apidog project.
 - api testing
 - API Developer
-- export openapi
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- platform
-- design-first
-- collaboration
-- import an openapi/swagger specification into an apidog project for design-first development.
 - import a postman collection into apidog for converting to openapi-based workflows.
-- documentation
-- mocking
-- import postman collection
-- api lifecycle
-- export
-- engineer automating api specification workflows via ci/cd integration.
-- export openapi specification from apidog project.
-- Platform Engineer
-- import
-- api design
-- unified workflow for managing api specifications lifecycle.
-- managing the complete lifecycle of api specifications from design to deployment.
-- import openapi specification into apidog project.
-- export api specifications to standard formats.
 - import openapi
-- apidog
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- Platform Engineer
+- collaboration
+- documentation
+- engineer automating api specification workflows via ci/cd integration.
+- import openapi specification into apidog project.
+- import postman collection
+- platform
+- mocking
 - export openapi spec
-- developer building and managing apis using apidog's design-first platform.
 slug: api-lifecycle-management
 tags:
 - Apidog

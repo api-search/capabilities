@@ -10,20 +10,20 @@ personas: []
 provider_name: Amazon Lex
 provider_slug: amazon-lex
 search_terms:
-- gets a list of available bots.
 - creates an amazon lex conversational bot.
-- unified workflow for amazon lex resource management
+- gets a list of available bots.
+- workflow
+- aws
+- Administrator
+- Developer
+- manages resources and configurations
 - bots create bot
 - bots list bots
-- workflow
-- amazon lex
-- aws
-- manages resources and configurations
-- Developer
-- bots describe bot
-- provides metadata information about a bot.
-- Administrator
 - integrates api into applications
+- amazon lex
+- provides metadata information about a bot.
+- bots describe bot
+- unified workflow for amazon lex resource management
 slug: amazon-lex-workflow
 tags:
 - Amazon Lex

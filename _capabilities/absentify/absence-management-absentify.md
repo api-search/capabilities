@@ -10,10 +10,10 @@ provider_name: Absentify
 provider_slug: absentify
 search_terms:
 - human resources
-- microsoft teams
 - hr
 - absence management
 - leave management
+- microsoft teams
 slug: absence-management-absentify
 tags: []
 tools: []

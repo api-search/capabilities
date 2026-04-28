@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- get query execution
-- sql
-- list tables in an athena database to understand available data.
-- named query management
-- list saved named queries available in an athena workgroup.
-- list databases in an athena data catalog to explore available schemas.
-- save a sql query as a named query for reuse in athena.
-- list athena workgroups to understand available query isolation environments.
 - start query execution
-- amazon athena
+- list data catalogs registered with athena to discover available data sources.
+- list query executions
+- list databases
+- check the status of a running or completed athena query execution.
+- list named queries
+- aws
+- save a sql query as a named query for reuse in athena.
+- named query management
 - create a named query
 - download the results of a completed athena sql query.
-- list data catalogs registered with athena to discover available data sources.
 - start a sql query execution
-- sql query management
-- create named query
-- check the status of a running or completed athena query execution.
-- list work groups
-- list query executions
-- serverless
-- list data catalogs
-- list databases
-- analytics
-- list named queries
 - list recent query executions in an athena workgroup.
-- run a sql query against s3 data using amazon athena for serverless analytics.
 - list table metadata
+- list saved named queries available in an athena workgroup.
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- sql query management
+- list databases in an athena data catalog to explore available schemas.
+- list athena workgroups to understand available query isolation environments.
+- amazon athena
+- analytics
+- serverless
 - get query results
-- aws
+- list tables in an athena database to understand available data.
+- sql
+- create named query
+- list data catalogs
+- list work groups
+- get query execution
 slug: sql-analytics
 tags:
 - Amazon Athena

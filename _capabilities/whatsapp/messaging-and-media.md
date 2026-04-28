@@ -47,40 +47,40 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- uploads media to whatsapp servers.
-- deletes a media file from whatsapp servers.
-- upload media files to whatsapp servers.
-- create qr code
-- upload media
-- creates a qr code that customers can scan to start a conversation.
-- send messages of all types to whatsapp users.
-- get qr code
-- whatsapp
-- updates a qr code.
-- individual qr code management.
-- deletes a qr code.
-- lists all qr codes for a phone number.
 - delete qr code
 - retrieves a temporary download url for media.
-- sends a message to a whatsapp user.
-- retrieves a temporary download url for a media file. url expires after 5 minutes.
-- send message
-- get media url
-- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
-- qr codes
-- deletes a media file.
-- media
 - qr codes for starting customer conversations.
 - messaging
-- uploads media to whatsapp servers. returns a media id for use when sending media messages.
-- customer engagement
-- update qr code
-- retrieve and delete media files.
-- retrieves a specific qr code.
+- creates a qr code that customers can scan to start a conversation.
 - updates the prefilled message for a qr code.
-- creates a qr code for starting conversations.
-- list qr codes
+- update qr code
+- deletes a media file from whatsapp servers.
+- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
+- send message
+- retrieves a temporary download url for a media file. url expires after 5 minutes.
+- whatsapp
+- retrieves a specific qr code.
+- upload media
+- updates a qr code.
+- get media url
+- deletes a qr code.
+- get qr code
+- lists all qr codes for a phone number.
+- create qr code
 - delete media
+- deletes a media file.
+- individual qr code management.
+- customer engagement
+- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- list qr codes
+- upload media files to whatsapp servers.
+- uploads media to whatsapp servers.
+- media
+- qr codes
+- send messages of all types to whatsapp users.
+- sends a message to a whatsapp user.
+- retrieve and delete media files.
+- creates a qr code for starting conversations.
 slug: messaging-and-media
 tags:
 - WhatsApp

@@ -47,71 +47,71 @@ personas: []
 provider_name: AWS CloudWatch
 provider_slug: cloudwatch
 search_terms:
-- add tags to a cloudwatch resource
+- retrieve metric data using math expressions
 - get a cloudwatch dashboard
-- list dashboards
+- cloudwatch dashboards
+- list available metrics
 - list alarms
-- list tags for resource
-- put metric data
-- delete one or more alarms
-- retrieve metric data with math expressions
-- cloudwatch
-- get metric data
-- create or update an alarm
-- delete an anomaly detector
+- set alarm state
+- describe alarm history
+- temporarily set the state of an alarm
+- delete dashboards
+- put metric stream
+- cloudwatch metrics operations
 - list cloudwatch dashboards
 - list available cloudwatch metrics
-- create or update a dashboard
-- create or update an anomaly detector
-- create or update a metric stream
-- put metric alarm
-- list anomaly detectors
-- publish metric data points to cloudwatch
-- delete anomaly detector
-- set alarm state
+- put metric data
 - disable alarm actions
-- describe alarms for a specific metric
-- cloudwatch metrics operations
-- create or update a metric alarm
-- metrics
-- publish metric data points
+- delete anomaly detector
+- list dashboards
+- create or update an alarm
 - describe alarms for metric
-- get dashboard
-- get metric statistics
+- observability
+- retrieve alarm state change history
+- enable alarm actions
 - put dashboard
-- alarms
-- put composite alarm
-- describe alarm history
-- cloudwatch dashboards
-- retrieve metric data
+- aws
+- cloudwatch alarms
+- create or update a metric alarm
+- describe alarms
+- publish metric data points to cloudwatch
+- delete alarms
 - list and describe cloudwatch alarms
+- describe anomaly detectors
+- retrieve metric data with math expressions
+- tag resource
+- put metric alarm
+- monitoring
+- list tags for a cloudwatch resource
+- get metric data
+- create or update a dashboard
+- add tags to a cloudwatch resource
+- disable actions for alarms
+- create or update a metric stream
+- metrics
+- list anomaly detectors
+- get metric statistics
+- create or update a cloudwatch dashboard
+- put anomaly detector
+- delete one or more alarms
+- cloudwatch
 - enable actions for alarms
-- put metric stream
 - delete cloudwatch dashboards
-- list metrics
+- list tags for resource
 - logs
 - dashboards
-- temporarily set the state of an alarm
-- describe alarms
-- observability
-- delete alarms
-- create or update a composite alarm
-- disable actions for alarms
-- describe anomaly detectors
+- delete an anomaly detector
+- put composite alarm
+- retrieve metric data
 - list metric streams
-- create or update a cloudwatch dashboard
-- enable alarm actions
+- describe alarms for a specific metric
 - get statistics for a specific metric
-- retrieve metric data using math expressions
-- list tags for a cloudwatch resource
-- cloudwatch alarms
-- aws
-- monitoring
-- put anomaly detector
-- list available metrics
-- retrieve alarm state change history
-- tag resource
-- delete dashboards
+- alarms
+- get dashboard
+- create or update an anomaly detector
+- publish metric data points
+- list metrics
+- create or update a composite alarm
 slug: monitoring-and-observability
 tags:
 - AWS

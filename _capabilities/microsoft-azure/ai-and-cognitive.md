@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cloud computing
-- cognitive list accounts
-- openai create transcription
-- chat completion operations
-- create text embeddings
-- generate images from text
-- create chat completion
-- openai create image
+- azure
+- openai create embedding
+- list model deployments
+- openai
+- list available openai models
+- model listing
 - infrastructure as a service
+- openai list models
+- cognitive list models
+- list openai models
+- create text embeddings
+- api management
+- create chat completion
+- list available ai models
+- cognitive services
+- list cognitive services accounts
+- create a chat completion using azure openai
+- ai
 - platform as a service
 - cognitive services accounts
-- openai create chat completion
-- enterprise
-- embedding operations
-- openai create embedding
-- openai list models
-- azure
-- list cognitive services accounts
-- openai create completion
-- cognitive list models
-- openai
-- ai
-- list available openai models
 - create a chat completion
-- generate speech from text
-- openai list deployments
-- openai create translation
-- cognitive services
-- list available ai models
-- transcribe audio to text
-- api management
-- t1
-- translate audio to english
-- list model deployments
-- list openai models
-- create embedding
-- cloud
 - openai create speech
-- model listing
-- list cognitive accounts
-- create a chat completion using azure openai
+- openai create transcription
+- cognitive list accounts
+- cloud
+- chat completion operations
+- openai create completion
+- cloud computing
+- embedding operations
+- openai create translation
+- create embedding
+- generate speech from text
 - create a text completion
+- generate images from text
+- enterprise
+- t1
+- openai create chat completion
+- transcribe audio to text
+- openai list deployments
+- list cognitive accounts
+- openai create image
+- translate audio to english
 slug: ai-and-cognitive
 tags:
 - Azure

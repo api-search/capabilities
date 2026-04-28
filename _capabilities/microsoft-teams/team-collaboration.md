@@ -43,53 +43,53 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- list channel messages
-- Team Lead
-- chat
-- send a message.
 - create an online meeting.
-- create call
-- list joined teams
-- list channels
-- list channels.
-- list channels in a team.
-- send channel message
-- collaboration
-- create a meeting.
-- microsoft teams
-- initiate a call.
-- list members.
-- list messages.
-- add a member to a team.
-- developers building teams integrations and bots.
-- team management.
-- list all teams the user has joined.
-- create a new team.
-- list all members of a team.
 - communication
-- meeting management.
-- create channel
-- team leads managing channels, members, and communication.
-- list team members
-- channel management.
-- it admins managing teams infrastructure and policies.
-- add team member
-- Developer
-- video conferencing
-- create team
-- productivity
-- create online meeting
-- microsoft 365
-- member management.
-- create a new channel.
-- list messages from a channel.
-- create a team.
-- IT Administrator
-- messaging.
-- list joined teams.
 - manage teams collaboration workflows.
+- initiate a call.
+- list messages from a channel.
+- list messages.
+- list channels.
+- it admins managing teams infrastructure and policies.
+- list team members
+- microsoft 365
+- list joined teams.
+- add team member
+- create a team.
+- create a meeting.
+- send a message.
+- create a new team.
+- list channel messages
+- messaging.
+- video conferencing
+- productivity
+- list channels
+- list members.
 - create a channel.
+- team leads managing channels, members, and communication.
+- list all teams the user has joined.
 - send a message to a channel.
+- collaboration
+- Developer
+- microsoft teams
+- create call
+- team management.
+- list channels in a team.
+- Team Lead
+- developers building teams integrations and bots.
+- add a member to a team.
+- list all members of a team.
+- create team
+- member management.
+- create channel
+- create a new channel.
+- channel management.
+- chat
+- list joined teams
+- IT Administrator
+- create online meeting
+- meeting management.
+- send channel message
 slug: team-collaboration
 tags:
 - Microsoft Teams

@@ -29,40 +29,40 @@ personas: []
 provider_name: Amazon Application Discovery Service
 provider_slug: amazon-application-discovery-service
 search_terms:
-- check status of export tasks
-- discovered configuration items
-- describe export tasks
-- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
-- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
-- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
-- amazon application discovery service
-- list server neighbors
-- check the status of discovery data export tasks to know when data is ready for analysis.
+- export discovered data to s3
+- asset discovery summary
 - list all discovery agents and their health status
+- describe export tasks
+- migration
+- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
+- list discovered servers, processes, and connections
+- discovery
+- find servers that communicate with a specific server to map application dependencies for migration grouping.
+- start data collection on specified agents to begin discovering on-premises servers and processes.
+- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
+- describe agents
+- check the status of discovery data export tasks to know when data is ready for analysis.
+- aws
+- create application groupings from discovered servers to organize migration waves.
+- infrastructure
+- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
+- get count of discovered servers, agents, and applications
+- list configurations
+- discovered configuration items
 - discovery agents
+- check status of export tasks
+- create application
+- get discovery summary
+- data export tasks
 - start data collection
+- amazon application discovery service
+- get detailed attributes for specific discovered configuration items to understand server specifications.
 - describe configurations
 - list all aws application discovery service agents and their health status. use this to verify agents are running before starting discovery.
-- get discovery summary
-- get detailed attributes for specific discovered configuration items to understand server specifications.
-- discovery
-- list discovered servers, processes, and connections
+- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
+- list server neighbors
 - start import task
-- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
-- data export tasks
-- migration
-- infrastructure
-- list configurations
 - start export task
-- start data collection on specified agents to begin discovering on-premises servers and processes.
-- describe agents
-- asset discovery summary
-- find servers that communicate with a specific server to map application dependencies for migration grouping.
-- get count of discovered servers, agents, and applications
-- aws
-- export discovered data to s3
-- create application groupings from discovered servers to organize migration waves.
-- create application
 slug: migration-discovery
 tags:
 - Amazon Application Discovery Service

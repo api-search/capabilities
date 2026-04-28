@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- get order
-- list file types
-- create basket
-- update basket
-- get basket
-- risk
-- compliance
-- download completed order output
-- retrieve a time series
-- get series
-- list vintages
-- insurance
-- kyc
-- climate risk
-- get order status and details
-- screening
-- retrieve multiple time series
-- list all data baskets
-- retrieve a single time series by mnemonic
 - check health
-- create order
-- create a new data basket
-- check data buffet api health
-- create a new data order
-- list vintages for a series
-- get basket details
-- list all orders
-- financial analytics
-- moody's
-- list supported output file types
-- list frequencies
-- list available data frequencies
-- forecasting
-- list baskets
-- analytics
-- economic data
-- delete basket
-- credit risk
+- get series
 - search series
-- get multi series
-- search for available series
-- delete a basket
-- download order
-- time series data
-- entity verification
+- list all data baskets
+- list baskets
 - list orders
+- get multi series
+- financial analytics
+- create basket
+- list all orders
+- delete a basket
+- list vintages for a series
+- check data buffet api health
+- list frequencies
+- download completed order output
+- climate risk
+- retrieve multiple time series
+- get basket
+- create order
+- compliance
+- update basket
+- create a new data order
+- create a new data basket
+- retrieve a time series
+- screening
+- search for available series
+- get order
+- list supported output file types
+- credit risk
+- time series data
+- list vintages
+- moody's
+- analytics
+- retrieve a single time series by mnemonic
+- delete basket
+- entity verification
+- kyc
 - update a basket
+- forecasting
+- risk
+- get basket details
+- insurance
+- download order
+- economic data
+- list file types
+- get order status and details
+- list available data frequencies
 slug: economic-data-analytics
 tags:
 - Moody's

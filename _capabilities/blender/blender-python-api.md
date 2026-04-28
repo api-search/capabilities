@@ -9,14 +9,14 @@ personas: []
 provider_name: Blender
 provider_slug: blender
 search_terms:
-- modeling
-- vfx
-- rendering
-- game development
-- 3d
 - open source
 - python
+- 3d
+- game development
+- modeling
+- rendering
 - animation
+- vfx
 slug: blender-python-api
 tags: []
 tools: []

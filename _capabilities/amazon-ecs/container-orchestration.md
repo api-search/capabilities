@@ -43,57 +43,57 @@ personas: []
 provider_name: Amazon ECS
 provider_slug: amazon-ecs
 search_terms:
-- docker
-- deregister a task definition revision.
-- amazon
-- describe one or more ecs services.
-- ecs cluster management.
-- list services in a cluster.
-- create a new ecs cluster.
-- create cluster
-- run a new task from a task definition.
-- register a new task definition.
-- run task
-- update service
-- list services in an ecs cluster.
-- describe clusters
-- deregister task definition
-- describe a task definition.
-- list tasks
+- describe services
 - list tasks in a cluster.
-- list services
-- run a new task.
-- update an ecs service configuration.
-- delete an ecs cluster.
-- create service
-- list all ecs clusters.
-- ecs task definition management.
-- list task definitions.
-- stop a running task.
 - containers
-- describe one or more ecs clusters.
-- stop task
-- describe one or more tasks.
+- deregister a task definition revision.
+- list task definition families or revisions.
+- run a new task.
+- deregister task definition
 - list all ecs clusters in the account.
+- create a new service.
+- delete an ecs service.
+- describe one or more tasks.
+- update service
+- ecs task execution.
+- amazon
+- register task definition
+- ecs task definition management.
+- list services in an ecs cluster.
+- aws
+- describe one or more ecs services.
+- create a new ecs service.
+- describe tasks
+- delete an ecs cluster.
+- execute command
+- execute a command in a running container.
+- list tasks
+- stop task
+- create a new ecs cluster.
+- list services in a cluster.
+- create cluster
+- stop a running task.
+- describe one or more ecs clusters.
+- describe clusters
+- delete cluster
+- list task definitions
+- run a new task from a task definition.
+- list task definitions.
+- update an ecs service configuration.
 - ecs
 - ecs service management.
-- create a new ecs service.
-- list task definition families or revisions.
-- delete cluster
-- delete an ecs service.
+- run task
+- register a new task definition.
+- describe a task definition.
 - list clusters
-- execute a command in a running container.
-- create a new service.
-- describe services
-- orchestration
+- docker
+- list services
 - describe task definition
-- ecs task execution.
-- list task definitions
-- aws
-- execute command
 - delete service
-- describe tasks
-- register task definition
+- create service
+- orchestration
+- list all ecs clusters.
+- ecs cluster management.
 slug: container-orchestration
 tags:
 - Amazon

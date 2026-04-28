@@ -11,24 +11,24 @@ provider_name: Amazon Lake Formation
 provider_slug: amazon-lake-formation
 search_terms:
 - workflow
-- access control
-- Administrator
-- amazon lake formation
-- resources describe resource
-- data lake
 - registers an amazon s3 path as a data lake location managed by lake formation.
+- amazon lake formation
 - retrieves the current data access role for the given resource registered in lake formation.
-- manages resources and configurations
+- data lake
+- aws
+- resources register resource
+- resources describe resource
+- data governance
 - Developer
-- resources list resources
-- lists the resources registered as managed by lake formation.
 - s3
 - analytics
-- data governance
-- resources register resource
-- aws
+- access control
+- lists the resources registered as managed by lake formation.
 - unified workflow for amazon lake formation resource management
+- resources list resources
+- manages resources and configurations
 - integrates api into applications
+- Administrator
 slug: amazon-lake-formation-workflow
 tags:
 - Amazon Lake Formation

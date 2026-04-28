@@ -12,14 +12,14 @@ provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
 - amazon cloudwatch
-- logs
-- cloudwatch
 - amazon web services
-- Operations Engineer
+- cloudwatch
+- observability
+- logs
 - aws
+- Operations Engineer
 - monitoring
 - metrics
-- observability
 slug: observability
 tags:
 - Amazon Web Services

@@ -54,66 +54,66 @@ personas: []
 provider_name: Temporal
 provider_slug: temporal
 search_terms:
-- region information
-- list users
-- create a new temporal cloud namespace
-- create a namespace
-- namespace management
-- create service account
-- create a new user
-- single namespace operations
-- list all namespaces
-- create an api key
-- delete a user
-- delete service account
-- get api key
-- delete an api key
-- check the status of an asynchronous operation
-- create user
-- delete namespace
-- list available regions
-- list service accounts
-- delete a namespace
-- get user
-- workflow infrastructure
-- create a service account for api access
-- get async operation
-- list namespaces
-- get api key details
-- delete api key
 - list all temporal cloud namespaces
-- list all service accounts
-- procode_api_composition
-- list all users
-- update namespace
-- list regions
-- list all users in the account
-- delete a service account
-- service account management
-- get namespace
-- create api key
-- get service account details
-- list all available temporal cloud regions
-- workflows
-- create a service account
-- list api keys
-- delete a temporal cloud namespace
-- list all api keys
-- user management
-- create namespace
-- update namespace configuration
-- api key management
-- temporal
-- delete user
-- get service account
-- list all api keys in the account
-- cloud operations
-- platform administration
-- create a user
-- get namespace details
-- get details for a specific namespace
 - get user details
+- check the status of an asynchronous operation
+- create a namespace
+- list all api keys in the account
+- create a user
+- list all api keys
+- create namespace
 - create a new api key for authentication
+- create service account
+- list all namespaces
+- get api key
+- get namespace details
+- create user
+- delete api key
+- cloud operations
+- get async operation
+- delete a temporal cloud namespace
+- create an api key
+- update namespace configuration
+- delete a user
+- delete an api key
+- api key management
+- workflows
+- single namespace operations
+- update namespace
+- list all users
+- service account management
+- get details for a specific namespace
+- list all users in the account
+- get api key details
+- region information
+- delete service account
+- namespace management
+- get namespace
+- list service accounts
+- create a new temporal cloud namespace
+- create a new user
+- list available regions
+- get user
+- delete namespace
+- delete user
+- list users
+- list regions
+- temporal
+- delete a namespace
+- list api keys
+- list all available temporal cloud regions
+- get service account details
+- platform administration
+- create a service account for api access
+- list namespaces
+- create api key
+- delete a service account
+- procode_api_composition
+- create a service account
+- workflow infrastructure
+- get service account
+- user management
+- list all service accounts
 slug: cloud-operations
 tags:
 - Temporal

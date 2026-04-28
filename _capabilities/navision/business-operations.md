@@ -59,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- sales orders
-- dynamics 365
-- create a new sales order
-- business management
-- inventory
-- create sales order
-- create a new customer
-- list accounts
-- erp
-- create item
-- create purchase order
-- list available companies
 - list companies
-- sales invoices
-- create a new vendor
-- list vendors
-- list employees
-- list items
+- create purchase order
 - microsoft
-- single customer
-- get a customer
-- list all employees
-- create a new purchase order
-- inventory items
-- list general ledger accounts
-- finance
+- general ledger accounts
+- dynamics nav
+- list inventory items
+- customer management
+- company information
+- list customers
+- sales invoices
 - purchase orders
 - general journals
-- list sales orders
-- create a sales order
-- navision
-- general ledger accounts
-- customer management
-- vendor management
-- sales
-- business central
-- list customers
-- list all purchase orders
-- create a customer
-- create a new inventory item
-- list all vendors
-- get customer
-- create vendor
-- list general journals
-- list all customers
-- purchasing
-- list all sales orders
-- dynamics nav
-- list sales invoices
 - list journals
-- list purchase orders
-- list all items
+- finance
+- create a sales order
+- create a new vendor
+- list vendors
+- create a new sales order
+- inventory
+- list employees
+- single customer
+- create vendor
+- navision
 - list purchase invoices
-- get a customer by id
+- list all items
+- list sales orders
+- list purchase orders
+- list all vendors
+- create a new purchase order
+- list general ledger accounts
+- vendor management
+- sales orders
+- business central
+- list all sales orders
+- business management
 - create customer
-- list inventory items
-- company information
+- create sales order
+- list accounts
+- create a customer
+- list all purchase orders
+- list all employees
+- list general journals
+- create a new customer
+- list available companies
+- create item
+- list all customers
+- sales
+- erp
+- inventory items
+- dynamics 365
+- list items
+- list sales invoices
+- get customer
+- create a new inventory item
+- purchasing
+- get a customer by id
+- get a customer
 slug: business-operations
 tags:
 - Business Central

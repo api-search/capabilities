@@ -35,46 +35,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- describe ca
-- amazon
-- issue a new x.509 certificate from a certificate authority
-- pki
-- certificate authority
-- list all certificate authorities
-- create certificate authority
-- describe certificate authority
-- certificate lifecycle management
-- list cas
-- create a new private certificate authority in the ca hierarchy
-- issues certificates for internal services and manages certificate lifecycle
-- certificates
-- create a new private certificate authority
-- private pki infrastructure management workflow
-- issue a new certificate
-- iot
-- get details about a specific certificate authority
-- get certificate authority details
-- tls
 - retrieve a certificate
-- individual certificate authority operations
-- Platform Engineer
-- create ca
-- security
-- retrieve an issued certificate by arn
-- Security Engineer
+- certificates
 - manages pki infrastructure, ca hierarchies, and certificate policies
 - certificate management
-- revoke certificate
-- individual certificate operations
-- certificate authority hierarchy management
-- x.509
-- list certificate authorities
-- revoke an issued certificate
 - list all private certificate authorities
-- aws
-- issue certificate
+- get certificate authority details
+- private pki infrastructure management workflow
+- list certificate authorities
+- amazon
 - revoke a certificate
+- issue a new certificate
 - get certificate
+- aws
+- issue a new x.509 certificate from a certificate authority
+- list cas
+- security
+- create certificate authority
+- retrieve an issued certificate by arn
+- certificate lifecycle management
+- get details about a specific certificate authority
+- revoke an issued certificate
+- list all certificate authorities
+- certificate authority hierarchy management
+- Security Engineer
+- create a new private certificate authority in the ca hierarchy
+- tls
+- Platform Engineer
+- describe ca
+- create a new private certificate authority
+- revoke certificate
+- iot
+- certificate authority
+- x.509
+- individual certificate authority operations
+- issues certificates for internal services and manages certificate lifecycle
+- create ca
+- individual certificate operations
+- describe certificate authority
+- pki
+- issue certificate
 slug: pki-management
 tags:
 - Amazon

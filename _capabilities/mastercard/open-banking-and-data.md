@@ -24,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- open banking account data
-- fraud detection
-- data analytics
-- digital identity
-- retrieve consumer accounts
-- open banking
-- credit analytics
-- small business credit analytics
 - get consumer accounts
-- get account transactions
-- get small business credit analytics
 - get accounts
-- fintech
 - financial services
 - get consumer credit analytics
-- get consumer credit analytics and spending insights
-- payments
-- credit cards
-- get small business analytics
-- retrieve consumer accounts via open banking
-- consumer credit analytics
+- open banking
 - get consumer analytics
+- small business credit analytics
+- fraud detection
+- fintech
+- retrieve consumer accounts
+- credit analytics
+- payments
+- get small business analytics
 - mastercard
+- open banking account data
+- consumer credit analytics
+- digital identity
+- get small business credit analytics
+- retrieve consumer accounts via open banking
+- credit cards
 - retrieve account transactions via open banking
+- data analytics
+- get consumer credit analytics and spending insights
+- get account transactions
 slug: open-banking-and-data
 tags:
 - Mastercard

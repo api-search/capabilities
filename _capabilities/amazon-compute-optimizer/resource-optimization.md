@@ -42,51 +42,51 @@ personas: []
 provider_name: Amazon Compute Optimizer
 provider_slug: amazon-compute-optimizer
 search_terms:
-- lambda function recommendations.
-- reviews recommendations to rightsize infrastructure and improve performance.
-- cost optimization
-- get rds recommendations
-- amazon
-- get summary
-- get rightsizing recommendations for ebs volumes.
-- ec2 instance rightsizing recommendations.
-- get rightsizing recommendations for amazon ecs services.
-- get rightsizing recommendations for amazon rds database instances and clusters.
-- get enrollment status
-- get enrollment status.
-- auto scaling group recommendations.
-- get rightsizing recommendations for ecs services.
-- check if the account is enrolled in amazon compute optimizer.
-- get rightsizing recommendations for amazon ec2 instances to reduce costs.
-- finops
-- get ec2 recommendations
-- resource recommendations
-- get ebs recommendations
-- get ecs recommendations
-- get rightsizing recommendations for amazon ebs volumes.
-- get optimization findings summary across all resource types.
-- Cloud Architect
-- analyzes cost savings opportunities across compute resources.
-- get rightsizing recommendations for lambda functions.
-- get lambda recommendations
-- enrollment status management.
-- optimization findings summary.
-- machine learning
-- ecs service recommendations.
-- get rightsizing recommendations for auto scaling groups.
-- cross-resource rightsizing recommendations for cost optimization.
-- rds database recommendations.
 - get asg recommendations
+- get rightsizing recommendations for ecs services.
 - ec2
-- get rightsizing recommendations for aws lambda functions.
-- ebs volume recommendations.
+- check if the account is enrolled in amazon compute optimizer.
+- ecs service recommendations.
 - get enrollment
+- get rightsizing recommendations for auto scaling groups.
+- get enrollment status.
+- get ebs recommendations
 - get rightsizing recommendations for rds databases.
-- get a summary of optimization findings across all supported resource types in the account.
-- aws
-- FinOps Engineer
 - get optimization summary
+- Cloud Architect
+- auto scaling group recommendations.
+- amazon
+- cross-resource rightsizing recommendations for cost optimization.
+- aws
+- get rightsizing recommendations for amazon ec2 instances to reduce costs.
+- reviews recommendations to rightsize infrastructure and improve performance.
+- analyzes cost savings opportunities across compute resources.
+- get ec2 recommendations
+- get rightsizing recommendations for amazon ecs services.
+- optimization findings summary.
+- get rightsizing recommendations for amazon ebs volumes.
+- get summary
+- machine learning
+- get a summary of optimization findings across all supported resource types in the account.
+- lambda function recommendations.
+- get ecs recommendations
+- rds database recommendations.
+- get rds recommendations
+- resource recommendations
+- get enrollment status
+- get lambda recommendations
+- ec2 instance rightsizing recommendations.
+- get optimization findings summary across all resource types.
+- enrollment status management.
+- get rightsizing recommendations for ebs volumes.
 - get rightsizing recommendations for ec2 instances.
+- finops
+- FinOps Engineer
+- cost optimization
+- ebs volume recommendations.
+- get rightsizing recommendations for aws lambda functions.
+- get rightsizing recommendations for lambda functions.
+- get rightsizing recommendations for amazon rds database instances and clusters.
 slug: resource-optimization
 tags:
 - Amazon

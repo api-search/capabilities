@@ -19,31 +19,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- registering and managing merchant identity and domains for apple pay
-- developer integrating apple pay into a web or mobile checkout experience
 - apple pay
-- Payment Integration Engineer
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- merchant domain management for apple pay
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- mobile payments
-- apple pay merchant validation and payment session
-- contactless payments
-- digital wallet
-- checkout
 - apple
-- validate apple pay merchant
-- validates merchant and obtains apple pay payment session
-- payments
-- register a domain for apple pay on the web
-- register domain
-- register apple pay domain
-- initiating and completing apple pay payment authorizations
+- engineer building payment processing infrastructure supporting multiple payment methods
 - registers a merchant domain to accept apple pay on the web payments
 - validate merchant
-- engineer building payment processing infrastructure supporting multiple payment methods
-- e-commerce
+- register domain
+- initiating and completing apple pay payment authorizations
+- register a domain for apple pay on the web
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
 - E Commerce Developer
+- mobile payments
+- validate apple pay merchant
+- validates merchant and obtains apple pay payment session
+- Payment Integration Engineer
+- checkout
+- payments
+- digital wallet
+- contactless payments
+- e-commerce
+- register apple pay domain
+- merchant domain management for apple pay
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- developer integrating apple pay into a web or mobile checkout experience
+- registering and managing merchant identity and domains for apple pay
+- apple pay merchant validation and payment session
 slug: payment-processing
 tags:
 - Apple Pay

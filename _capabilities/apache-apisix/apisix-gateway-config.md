@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- list consumers
-- update an existing apisix route.
-- route, upstream, consumer, and ssl management workflow.
-- list all gateway routes.
-- lua
-- create a backend upstream.
-- list api consumers.
-- kubernetes
-- API Gateway Administrator
-- list backend upstreams.
-- create a new apisix route for traffic routing.
-- traffic management
 - create route
-- create a new gateway route.
+- API Gateway Administrator
+- route, upstream, consumer, and ssl management workflow.
 - delete route
-- apache
-- list all apisix gateway routes.
-- update route
-- create consumer
 - api gateway
-- engineers deploying and managing api gateway infrastructure.
-- administrators configuring routes, consumers, and security policies.
-- create an api consumer.
-- Platform Engineer
-- configuration
-- list upstreams
-- list all backend upstream configurations.
-- authentication
-- create a new api consumer with authentication plugins.
-- cloud native
-- open source
 - delete an apisix route.
-- nginx
+- kubernetes
 - create upstream
-- list all api consumers and their plugin configs.
-- create a new backend upstream with load balancing config.
+- create a new gateway route.
+- list consumers
+- create an api consumer.
+- authentication
+- administrators configuring routes, consumers, and security policies.
+- create consumer
 - list routes
+- list all gateway routes.
+- update route
+- create a new backend upstream with load balancing config.
+- list all apisix gateway routes.
+- traffic management
+- engineers deploying and managing api gateway infrastructure.
+- list api consumers.
 - apache apisix
+- lua
+- create a new apisix route for traffic routing.
+- nginx
+- update an existing apisix route.
+- create a new api consumer with authentication plugins.
+- Platform Engineer
+- apache
+- list all backend upstream configurations.
+- list upstreams
+- create a backend upstream.
+- list backend upstreams.
+- open source
+- list all api consumers and their plugin configs.
+- configuration
+- cloud native
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

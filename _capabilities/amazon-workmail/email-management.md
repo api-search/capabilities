@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- handles day-to-day email user and group management.
-- list users
-- mobile device access control.
-- email
-- list all amazon workmail organizations in the account.
-- list all workmail organizations.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
 - mobile device access control and compliance
-- administration
-- business communication
-- list mobile device access rules.
-- enterprise
-- create user
-- exchange
-- manages workmail infrastructure, user provisioning, and security policies.
-- list groups
-- calendar
-- Email Operations
-- user provisioning and management.
-- list email groups.
-- create a new workmail user with mailbox.
-- list mobile device access rules
-- list organizations
-- list users in an organization.
-- group management.
-- enterprise email provisioning and management
-- workmail organization management.
-- list email distribution groups in an organization.
+- list all amazon workmail organizations in the account.
 - list mobile device access control rules.
-- list users in a workmail organization.
-- aws
-- IT Administrator
-- create a new email user.
+- create a new workmail user with mailbox.
+- create user
 - it administration of email infrastructure
+- Email Operations
+- email
+- exchange
+- aws
+- list email distribution groups in an organization.
+- administration
+- workmail organization management.
+- create a new email user.
+- calendar
+- list users in an organization.
+- list email groups.
+- mobile device access control.
+- manages workmail infrastructure, user provisioning, and security policies.
+- enterprise email provisioning and management
+- list users
+- group management.
+- list groups
+- list users in a workmail organization.
+- list organizations
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- list mobile device access rules
+- enterprise
+- handles day-to-day email user and group management.
+- list mobile device access rules.
+- business communication
+- user provisioning and management.
+- IT Administrator
+- list all workmail organizations.
 slug: email-management
 tags:
 - AWS

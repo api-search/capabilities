@@ -39,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- creates and manages automation flows
-- list all power automate environments
-- list flows
-- create a new automation flow
-- power platform
-- manage flows, environments, and connectors
-- create a flow
-- workflow
-- creating, running, and managing automation flows
-- low-code
-- list available connectors in an environment
 - microsoft
-- managing environments and available connectors
-- connector management
+- list available connectors in an environment
+- workflow
+- creates and manages automation flows
+- turn on flow
+- flow lifecycle management
+- create a new automation flow
+- list environments
+- update flow
+- create flow
+- microsoft power automate
+- stop/deactivate a flow
+- get flow details
+- power platform
+- manages environments, connectors, and permissions
+- list all power automate environments
+- manage flows, environments, and connectors
+- update a flow's properties
 - get details of a specific connector
 - Automation Engineer
-- turn off flow
-- manages environments, connectors, and permissions
-- list flows in an environment
-- update a flow's properties
-- delete flow
-- turn on flow
+- get flow
 - integration
-- flow lifecycle management
-- list environments
+- list flows
+- rpa
+- delete flow
 - get connector
-- microsoft power automate
-- update flow
-- business process
-- list connectors
-- start/activate a flow
-- update a flow
+- low-code
 - get details of a specific flow
 - delete a flow
-- get flow
-- Platform Administrator
-- rpa
+- start/activate a flow
 - flow management
-- get flow details
-- list all environments
-- stop/deactivate a flow
+- Platform Administrator
+- managing environments and available connectors
+- update a flow
+- connector management
+- turn off flow
+- list connectors
 - environment management
+- list all environments
+- creating, running, and managing automation flows
+- list flows in an environment
 - automation
-- create flow
+- business process
+- create a flow
 slug: flow-automation
 tags:
 - Microsoft Power Automate

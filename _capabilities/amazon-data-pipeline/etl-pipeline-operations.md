@@ -10,11 +10,11 @@ provider_name: Amazon Data Pipeline
 provider_slug: amazon-data-pipeline
 search_terms:
 - data pipeline
-- data processing
-- etl
-- aws
-- automation
 - workflows
+- aws
+- data processing
+- automation
+- etl
 slug: etl-pipeline-operations
 tags: []
 tools: []

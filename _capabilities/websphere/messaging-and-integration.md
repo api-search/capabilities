@@ -32,37 +32,37 @@ provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
 - create a new queue
-- ibm mq
+- list queue managers
 - get queue manager details
-- browse messages on a queue non-destructively
+- messaging
+- get queue
+- microservices
+- delete a queue
+- list available queue managers
+- send message
+- delete queue
+- get queue manager
+- list queues on a queue manager
+- queue management
+- queue manager operations
+- list queues
+- middleware
+- list channels
+- integration
+- enterprise java
 - send a message to a queue
+- application server
+- get queue details
+- list channels on a queue manager
+- ibm mq
+- browse messages on a queue
 - message operations
 - j2ee
-- list channels on a queue manager
-- list channels
-- list queues on a queue manager
-- channel management
-- middleware
-- browse messages on a queue
-- delete queue
-- integration
-- delete a queue
-- list queue managers
-- send message
-- queue management
-- enterprise java
-- cloud native
-- messaging
+- browse messages on a queue non-destructively
 - browse messages
-- queue manager operations
-- get queue manager
-- list queues
-- application server
-- list available queue managers
-- microservices
 - create queue
-- get queue details
-- get queue
+- cloud native
+- channel management
 slug: messaging-and-integration
 tags:
 - IBM MQ

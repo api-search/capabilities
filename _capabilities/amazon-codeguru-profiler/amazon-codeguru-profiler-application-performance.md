@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- developer persona.
-- get details about a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- amazon
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
 - devops
-- get aggregated profile data
-- get optimization recommendations for a profiling group
-- list profile times
-- list profile collection times for a profiling group
-- list profiling groups
-- create a new profiling group
-- post agent profile
-- DevOps Engineer
-- describe profiling group
-- get profile
-- list findings reports
-- Platform Engineer
-- devops engineer persona.
-- platform engineer persona.
-- submit profiling agent data
-- machine learning
-- profiling
-- Developer
-- list profiling groups in the account
-- create profiling group
 - list findings reports for a profiling group
-- application performance
-- aws
+- submit profiling agent data
 - get recommendations
+- DevOps Engineer
+- list profiling groups in the account
+- amazon
+- create profiling group
+- get optimization recommendations for a profiling group
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- aws
+- describe profiling group
+- list profile times
+- machine learning
+- list findings reports
+- get aggregated profile data
+- platform engineer persona.
+- post agent profile
+- Platform Engineer
+- list profile collection times for a profiling group
+- Developer
+- profiling
+- devops engineer persona.
+- get profile
+- list profiling groups
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- create a new profiling group
+- developer persona.
+- application performance
+- get details about a profiling group
 slug: amazon-codeguru-profiler-application-performance
 tags:
 - Amazon

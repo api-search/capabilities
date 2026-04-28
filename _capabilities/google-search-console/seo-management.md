@@ -51,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- query search analytics
-- webmaster
-- delete a previously submitted sitemap.
-- submit sitemap
-- inspect a url for index status and rich results.
-- delete sitemap
-- query search traffic data.
-- manage sitemaps.
-- get sitemap
 - add a site to search console.
-- list sitemaps for a site.
-- get details for a specific search console site.
-- remove a site from search console.
-- seo
-- manage search console sites.
-- delete site
-- delete a sitemap.
-- query search traffic data with filters and dimensions.
-- query search analytics data with filters.
-- inspect url
+- add site
 - submit a sitemap for crawling.
-- get details for a specific sitemap.
-- list sites
-- inspect urls for indexing status.
-- list all search console sites.
-- webmaster tools
-- search
-- list sitemaps submitted for a site.
-- get details for a specific site.
 - google
+- submit a sitemap.
+- webmaster tools
+- get details for a specific site.
+- inspect url
+- search
+- delete site
+- webmaster
+- inspect urls for indexing status.
+- list sites
+- list sitemaps submitted for a site.
+- get sitemap details.
+- remove a site from search console.
+- get details for a specific search console site.
+- list all search console sites for the authenticated user.
+- get details for a specific sitemap.
+- query search traffic data with filters and dimensions.
+- seo
 - inspect a url for index status, crawl info, mobile usability, and rich results.
+- list sitemaps for a site.
+- submit sitemap
+- list all search console sites.
+- search console
+- query search traffic data.
+- get sitemap
+- delete a previously submitted sitemap.
+- query search analytics
 - analytics
 - list sitemaps
+- manage search console sites.
+- delete a sitemap.
+- inspect a url for index status and rich results.
+- manage sitemaps.
 - get site
-- search console
-- submit a sitemap.
-- add site
-- list all search console sites for the authenticated user.
-- get sitemap details.
+- query search analytics data with filters.
+- delete sitemap
 slug: seo-management
 tags:
 - Google

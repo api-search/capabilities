@@ -10,19 +10,19 @@ provider_name: Apache Ranger
 provider_slug: apache-ranger
 search_terms:
 - engineer integrating ranger with hadoop services
-- hadoop
+- administrator managing access control policies
+- authorization
+- apache
+- access control
+- open source
+- policy management
+- officer reviewing audit logs for compliance reporting
+- end-to-end workflow for creating and managing security policies
+- workflow for reviewing access audit logs
 - audit logging and regulatory compliance
 - access control and policy enforcement
-- authorization
-- officer reviewing audit logs for compliance reporting
 - security
-- policy management
-- open source
-- administrator managing access control policies
-- apache
-- end-to-end workflow for creating and managing security policies
-- access control
-- workflow for reviewing access audit logs
+- hadoop
 slug: ranger-workflow
 tags: []
 tools: []

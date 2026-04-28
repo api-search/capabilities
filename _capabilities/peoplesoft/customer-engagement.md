@@ -49,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve available chatbot intents.
-- send a notification via email, text, or in-app channels.
-- erp
-- chatbot intents
-- chatbot intent fulfillments
-- list cases
-- peopletools platform services.
-- notification management
-- retrieve sales opportunities.
-- list notifications
-- financial management
-- create case
-- create a new support or service case.
-- fulfill intent
 - send notification
-- campus solutions.
-- individual customer details
-- retrieve support and service cases.
-- crm
-- retrieve details for a specific customer.
-- financial and supply chain management.
-- hcm
-- support and service cases
-- chatbot
-- case management
-- human capital management.
-- sales
-- list customers
-- supply chain management
-- sales opportunities
+- list notifications
+- create case
 - peoplesoft
-- customer engagement
-- get customer
-- enterprise software
-- list opportunities
-- retrieve notifications for the current user.
-- retrieve customer records.
 - process a chatbot intent fulfillment request.
-- list intents
-- customer records
+- notification management
+- peopletools platform services.
+- list customers
+- chatbot
+- retrieve available chatbot intents.
+- list cases
+- chatbot intents
 - campus solutions
+- send a notification via email, text, or in-app channels.
+- retrieve customer records.
+- campus solutions.
+- create a new support or service case.
+- human capital management.
+- sales opportunities
+- support and service cases
+- enterprise software
+- fulfill intent
+- retrieve details for a specific customer.
+- financial management
+- retrieve notifications for the current user.
+- customer records
+- list opportunities
+- supply chain management
+- customer engagement
+- chatbot intent fulfillments
+- retrieve sales opportunities.
+- case management
+- list intents
+- sales
+- crm
+- erp
+- hcm
+- retrieve support and service cases.
+- financial and supply chain management.
+- get customer
+- individual customer details
 slug: customer-engagement
 tags:
 - PeopleSoft

@@ -65,69 +65,69 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- list monitored entities matching a selector
-- update problem comment
+- get problem
+- list events matching filters
+- get a specific comment on a problem
+- delete problem comment
+- update a comment
+- close a problem with an optional message
+- delete a comment from a problem
+- cloud monitoring
+- list problems detected by davis ai
 - get event details
-- events
-- incident response
+- update problem comment
+- get details of a specific event
+- list entities matching a selector
+- get event
+- list monitored entities matching a selector
+- update an investigation comment
+- list events in the dynatrace environment
+- observability
 - manage investigation comments
+- get entity details
+- get full details of a specific problem including root cause analysis
+- get problem details including root cause
 - close an open problem with an optional closing message
-- create problem comment
-- dynatrace
+- list investigation comments on a problem
+- add an investigation comment to a problem
+- ai operations
+- problems
+- list comments on a problem
+- query and manage ai-detected problems
+- list problems
+- query affected entities
+- digital experience management
+- application security
+- get a comment
+- events
+- intelligence
+- incident response
+- get entity
+- delete a comment
+- application performance monitoring
+- list problems detected by davis ai in the dynatrace environment
+- get full problem details with root cause analysis
+- get problem comment
+- ingest event
+- close a problem
+- list events
+- analytics
+- close problem
+- get a specific event
+- ingest a custom event to annotate the timeline
+- add an investigation comment
+- get details of a specific monitored entity
+- sre
 - manage a specific comment
 - apm
-- intelligence
-- get full problem details with root cause analysis
-- delete a comment
-- get entity details for root cause investigation
-- get details of a specific monitored entity
-- get problem details including root cause
-- get problem
+- create problem comment
 - list problem comments
-- problems
-- get full details of a specific problem including root cause analysis
 - list entities
-- ai operations
-- update an investigation comment
-- ingest a custom event to annotate the timeline
-- list investigation comments on a problem
-- list events in the dynatrace environment
-- query events related to incidents
-- get problem comment
-- get a specific event
-- close a problem with an optional message
-- application performance monitoring
-- get a specific comment on a problem
-- digital experience management
-- get details of a specific event
-- ingest event
-- ingest custom events
-- application security
-- delete a comment from a problem
-- sre
-- update a comment
-- delete problem comment
-- list problems detected by davis ai in the dynatrace environment
-- list problems
-- close problem
-- list problems detected by davis ai
-- add an investigation comment to a problem
-- list events
-- observability
-- get a comment
-- list entities matching a selector
-- analytics
-- get entity details
-- list comments on a problem
-- get event
-- list events matching filters
-- cloud monitoring
-- query and manage ai-detected problems
 - automation
-- get entity
-- close a problem
-- add an investigation comment
-- query affected entities
+- dynatrace
+- ingest custom events
+- query events related to incidents
+- get entity details for root cause investigation
 slug: incident-response
 tags:
 - Dynatrace

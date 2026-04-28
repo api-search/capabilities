@@ -38,52 +38,52 @@ provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
 - graph database management, querying, and data streaming
-- neptune db cluster management
-- start load job
-- bulk loading
-- execute a sparql query against rdf graph
-- trains and deploys neptune ml graph neural network models
-- Graph Developer
-- graph analytics
-- neptune
-- execute an opencypher query
-- execute a gremlin graph traversal query
-- amazon neptune
-- execute gremlin query
-- execute a sparql query against rdf data
-- get graph change stream
-- execute sparql query
-- start a bulk data load from s3
 - get real-time property graph change stream records
-- Graph Database Administrator
-- start bulk data load
-- start a neptune bulk data load job from s3
-- sparql
-- graph analytics, vector search, and ml model training and inference
-- gremlin
-- list neptune clusters
-- property graph
-- execute graph queries
-- machine learning
-- graph change stream operations
-- execute an opencypher query against property graph
-- graph database
-- Data Scientist
+- neptune
 - get property graph change stream records
-- list all neptune db clusters in the account
-- list clusters
-- get propertygraph stream
-- data streaming
 - bulk data loading operations
-- ML Engineer
-- manages neptune clusters, instances, and infrastructure
-- list all neptune db clusters
-- performs graph analytics and builds ml models on graph data
-- database
-- aws
-- execute opencypher query
-- data management
+- bulk loading
+- neptune db cluster management
+- execute sparql query
 - rdf
+- graph change stream operations
+- execute a gremlin graph traversal query
+- aws
+- graph analytics, vector search, and ml model training and inference
+- Graph Developer
+- gremlin
+- execute gremlin query
+- execute an opencypher query
+- Graph Database Administrator
+- get propertygraph stream
+- start bulk data load
+- execute a sparql query against rdf data
+- trains and deploys neptune ml graph neural network models
+- machine learning
+- list all neptune db clusters
+- list all neptune db clusters in the account
+- data streaming
+- amazon neptune
+- performs graph analytics and builds ml models on graph data
+- start load job
+- get graph change stream
+- execute an opencypher query against property graph
+- database
+- start a bulk data load from s3
+- start a neptune bulk data load job from s3
+- ML Engineer
+- execute opencypher query
+- list clusters
+- execute a sparql query against rdf graph
+- data management
+- sparql
+- graph database
+- graph analytics
+- list neptune clusters
+- manages neptune clusters, instances, and infrastructure
+- execute graph queries
+- property graph
+- Data Scientist
 - writes gremlin, sparql, and opencypher queries against neptune
 slug: neptune-graph-management
 tags:
