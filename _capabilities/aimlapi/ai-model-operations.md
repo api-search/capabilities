@@ -27,40 +27,46 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- ai engineer evaluating and comparing models for ml pipelines
-- generate image
-- api gateway
-- developer integrating ai capabilities into applications via aimlapi
-- AI Engineer
-- list all models
-- api key management and model discovery
-- llm
-- create embeddings
-- ai models
-- speech
-- create chat completion
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- discover all 400+ available ai models on aimlapi platform
-- ai model inference across modalities
 - developer tools
-- generate embeddings
-- machine learning
-- generate vector embeddings for semantic search and rag applications
-- generate a chat response from any of 400+ ai language models via aimlapi
-- create image
-- video generation
-- create a chat completion
-- image generation
-- list available models
-- list models
-- Developer
 - generate an image
-- create embedding
-- embeddings
-- artificial intelligence
-- chat completions via 400+ llms
+- list models
+- generate vector embeddings for semantic search and rag applications
+- create chat completion
+- video generation
 - generate an image from a text prompt using aimlapi image generation models
+- ai model inference across modalities
+- artificial intelligence
+- create image
+- ai models
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- chat completions via 400+ llms
+- Developer
+- generate embeddings
+- create embedding
+- api gateway
+- api key management and model discovery
+- developer integrating ai capabilities into applications via aimlapi
+- llm
+- speech
+- list all models
+- image generation
+- generate a chat response from any of 400+ ai language models via aimlapi
+- AI Engineer
+- discover all 400+ available ai models on aimlapi platform
+- create embeddings
+- create a chat completion
+- machine learning
+- generate image
+- embeddings
+- ai engineer evaluating and comparing models for ml pipelines
+- list available models
 slug: ai-model-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AIMLAPI AI Model Operations\"\n  description: \"Unified workflow for accessing 400+ AI models via AIMLAPI gateway including chat completions, image generation, embeddings, and model discovery. Used by developers building AI-powered applications.\"\n  tags:\n    - Artificial Intelligence\n    - LLM\n    - Image Generation\n    - Embeddings\n    - Developer Tools\n    - API Gateway\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIMLAPI_API_KEY: AIMLAPI_API_KEY\n\ncapability:\n  consumes:\n    - import: aimlapi\n      location: ./shared/aimlapi-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aimlapi-ai-ops-api\n      description: \"Unified REST API for AIMLAPI AI model operations.\"\n      resources:\n        - path: /v1/chat/completions\n          name: chat-completions\n          description: \"Chat completions via 400+ LLMs\"\n          operations:\n\
+  \            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"aimlapi.create-chat-completion\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images/generations\n          name: image-generations\n          description: \"Image generation\"\n          operations:\n            - method: POST\n              name: create-image\n              description: \"Generate an image\"\n              call: \"aimlapi.create-image\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Generate embeddings\"\n          operations:\n            - method: POST\n              name: create-embedding\n              description: \"Create embeddings\"\n              call: \"aimlapi.create-embedding\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name: models\n          description: \"List available models\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List all models\"\n              call: \"aimlapi.list-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: aimlapi-ai-ops-mcp\n      transport: http\n      description: \"MCP server for AI-assisted access to AIMLAPI model gateway.\"\n      tools:\n        - name: create-chat-completion\n          description: \"Generate a chat response from any of 400+ AI language models via AIMLAPI\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"aimlapi.create-chat-completion\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: generate-image\n          description: \"Generate an image from a text prompt using AIMLAPI image generation models\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"aimlapi.create-image\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-embedding\n          description: \"Generate vector embeddings for semantic search and RAG applications\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aimlapi.create-embedding\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-models\n          description: \"Discover all 400+ available AI models on AIMLAPI platform\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aimlapi.list-models\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aimlapi/refs/heads/main/capabilities/ai-model-operations.yaml
 tags:
 - Artificial Intelligence
 - LLM

@@ -34,52 +34,60 @@ personas: []
 provider_name: APIs.guru
 provider_slug: apis-guru
 search_terms:
-- apis for a specific provider
-- services for a specific provider
-- retrieve the openapi definition for a specific service api version (for multi-service providers)
-- get directory-wide metrics
-- get api spec
-- api discovery
-- list all api providers
-- get service api definition
-- list providers
-- specific api version spec
-- list all api provider domain names available in the apis.guru directory
-- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
-- get provider services
-- community
-- get a specific api version definition
-- openapi
-- graphql
-- list api providers
-- apis.guru
-- API Developer
-- list all apis in the apis.guru directory
-- all apis in the directory
-- get provider apis
-- a developer building integrations who needs to discover and retrieve api specifications
-- directory metrics and statistics
-- api catalog
+- list all service names for a provider that has multiple services
+- retrieve the openapi definition for a specific api version from the directory
 - Platform Engineer
-- statistics and health metrics for the apis.guru directory
-- discover, browse, and retrieve api definitions from the apis.guru directory
+- get api spec
+- services for a specific provider
+- all apis in the directory
+- open source
+- apis.guru
+- specific api version spec
+- API Developer
+- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
+- retrieve the openapi definition for a specific service api version (for multi-service providers)
+- directory metrics and statistics
 - get all apis for a provider
 - a platform or devx engineer building api catalogs, portals, or governance tooling
-- retrieve the openapi definition for a specific api version from the directory
-- list apis
+- list providers
 - list all apis in the apis.guru directory with their openapi definition links and metadata
-- api providers in the directory
+- get provider apis
+- statistics and health metrics for the apis.guru directory
+- apis for a specific provider
 - api directory
-- open source
-- get directory metrics
-- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
-- get metrics
-- finding and retrieving api definitions from public directories
 - list service names for a provider
+- get directory metrics
+- list all apis in the apis.guru directory
+- finding and retrieving api definitions from public directories
+- get provider services
+- get directory-wide metrics
+- discover, browse, and retrieve api definitions from the apis.guru directory
+- a developer building integrations who needs to discover and retrieve api specifications
+- list all api provider domain names available in the apis.guru directory
+- list api providers
+- api catalog
+- list apis
+- openapi
+- get metrics
+- community
+- api providers in the directory
+- api discovery
 - get api definition
+- get a specific api version definition
+- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
+- get service api definition
+- graphql
+- list all api providers
 - list all apis
-- list all service names for a provider that has multiple services
 slug: api-discovery
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIs.guru API Discovery\"\n  description: \"Workflow capability for discovering, browsing, and retrieving API definitions from the APIs.guru directory. Enables developers and platform teams to programmatically find public APIs, retrieve their OpenAPI specifications, and explore the catalog by provider. The primary persona is an API developer or platform engineer building integrations or cataloging APIs.\"\n  tags:\n    - API Catalog\n    - API Directory\n    - API Discovery\n    - APIs.guru\n    - OpenAPI\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys: {}\n\ncapability:\n  consumes:\n    - import: apis-guru\n      location: ./shared/apis-guru-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-discovery-api\n      description: \"Unified REST API for API discovery and catalog browsing via APIs.guru.\"\n      resources:\n        - path: /v1/apis\n      \
+  \    name: apis\n          description: \"All APIs in the directory\"\n          operations:\n            - method: GET\n              name: list-apis\n              description: \"List all APIs in the APIs.guru directory\"\n              call: \"apis-guru.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/metrics\n          name: metrics\n          description: \"Directory metrics and statistics\"\n          operations:\n            - method: GET\n              name: get-metrics\n              description: \"Get directory-wide metrics\"\n              call: \"apis-guru.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers\n          name: providers\n          description: \"API providers in the directory\"\n          operations:\n            - method: GET\n              name: list-providers\n              description:\
+  \ \"List all API providers\"\n              call: \"apis-guru.list-providers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers/{provider}\n          name: provider-apis\n          description: \"APIs for a specific provider\"\n          operations:\n            - method: GET\n              name: get-provider-apis\n              description: \"Get all APIs for a provider\"\n              call: \"apis-guru.get-provider\"\n              with:\n                provider: \"rest.provider\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers/{provider}/services\n          name: provider-services\n          description: \"Services for a specific provider\"\n          operations:\n            - method: GET\n              name: get-provider-services\n              description: \"List service names for a provider\"\n              call:\
+  \ \"apis-guru.get-services\"\n              with:\n                provider: \"rest.provider\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/specs/{provider}/{api}\n          name: api-spec\n          description: \"Specific API version spec\"\n          operations:\n            - method: GET\n              name: get-api-spec\n              description: \"Get a specific API version definition\"\n              call: \"apis-guru.get-api\"\n              with:\n                provider: \"rest.provider\"\n                api: \"rest.api\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: api-discovery-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API discovery and catalog exploration.\"\n      tools:\n        - name: list-all-apis\n          description: \"List all APIs in the APIs.guru\
+  \ directory with their OpenAPI definition links and metadata\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"apis-guru.list-apis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-directory-metrics\n          description: \"Get metrics for the APIs.guru directory: total API count, endpoints, providers, and weekly additions\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"apis-guru.get-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-api-providers\n          description: \"List all API provider domain names available in the APIs.guru directory\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"apis-guru.list-providers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n     \
+  \   - name: get-provider-apis\n          description: \"Get all API definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"apis-guru.get-provider\"\n          with:\n            provider: \"tools.provider\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-provider-services\n          description: \"List all service names for a provider that has multiple services\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"apis-guru.get-services\"\n          with:\n            provider: \"tools.provider\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-api-definition\n          description: \"Retrieve the OpenAPI definition for a specific API version from the directory\"\n          hints:\n            readOnly:\
+  \ true\n            openWorld: true\n          call: \"apis-guru.get-api\"\n          with:\n            provider: \"tools.provider\"\n            api: \"tools.api\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-service-api-definition\n          description: \"Retrieve the OpenAPI definition for a specific service API version (for multi-service providers)\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"apis-guru.get-service-api\"\n          with:\n            provider: \"tools.provider\"\n            service: \"tools.service\"\n            api: \"tools.api\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apis-guru/refs/heads/main/capabilities/api-discovery.yaml
 tags:
 - API Catalog
 - API Directory

@@ -31,49 +31,56 @@ personas: []
 provider_name: Activepieces
 provider_slug: activepieces
 search_terms:
-- project management
-- build and monitor automation flows, manage connections, debug executions
-- workflow
-- Operations Engineer
-- create a new automation flow
-- list connections
-- ai agents
-- create flow
-- third-party app connections and piece management
-- list all automation flows in the activepieces project
-- list flow runs
-- app connection management
-- delete an automation flow
-- retrieve a specific automation flow by id
-- project, user, and organization administration
-- mcp
-- list projects
-- get flow run
-- activepieces
 - get details of a specific flow execution run
-- integration
-- get flow
-- list flows
-- delete flow
-- list execution history for automation flows
-- list all activepieces projects
-- builds custom integrations using the api and typescript pieces
-- monitors flow execution, manages connections, troubleshoots failures
-- automation flow management
 - creates automation workflows using the visual builder
-- Developer
-- execution monitoring
-- No Code Builder
-- list all app connections available in the project
-- open source
-- no-code
-- list flow execution runs
-- workflow automation and flow orchestration
-- list automation flows
 - automation
+- builds custom integrations using the api and typescript pieces
+- activepieces
+- create flow
+- project management
+- open source
+- list connections
+- retrieve a specific automation flow by id
+- list all app connections available in the project
+- build and monitor automation flows, manage connections, debug executions
+- app connection management
+- list all automation flows in the activepieces project
+- integration
+- list projects
+- project, user, and organization administration
+- Developer
+- automation flow management
+- get flow
+- list all activepieces projects
+- execution monitoring
+- create a new automation flow
+- workflow
 - list app connections
+- Operations Engineer
+- list flow runs
+- no-code
 - create a new automation flow in activepieces
+- list execution history for automation flows
+- get flow run
+- list automation flows
+- workflow automation and flow orchestration
+- delete flow
+- mcp
+- third-party app connections and piece management
+- No Code Builder
+- monitors flow execution, manages connections, troubleshoots failures
+- ai agents
+- list flows
+- list flow execution runs
+- delete an automation flow
 slug: workflow-automation
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Activepieces Workflow Automation\"\n  description: \"Unified workflow capability for building, managing, monitoring, and debugging automation flows. Used by developers and no-code builders to orchestrate integrations across 400+ app connections.\"\n  tags:\n    - Activepieces\n    - Automation\n    - No-Code\n    - Workflow\n    - Integration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVEPIECES_API_KEY: ACTIVEPIECES_API_KEY\n      ACTIVEPIECES_PROJECT_ID: ACTIVEPIECES_PROJECT_ID\n\ncapability:\n  consumes:\n    - import: activepieces\n      location: ./shared/activepieces.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-automation-api\n      description: \"Unified REST API for workflow automation with Activepieces.\"\n      resources:\n        - path: /v1/flows\n          name: flows\n          description: \"Automation flow management\"\
+  \n          operations:\n            - method: GET\n              name: list-flows\n              description: \"List automation flows\"\n              call: \"activepieces.list-flows\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-flow\n              description: \"Create a new automation flow\"\n              call: \"activepieces.create-flow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flow-runs\n          name: flow-runs\n          description: \"Execution monitoring\"\n          operations:\n            - method: GET\n              name: list-flow-runs\n              description: \"List flow execution runs\"\n              call: \"activepieces.list-flow-runs\"\n              with:\n                projectId: \"rest.projectId\"\n \
+  \             outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections\n          name: connections\n          description: \"App connection management\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List app connections\"\n              call: \"activepieces.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List projects\"\n              call: \"activepieces.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: workflow-automation-mcp\n      transport: http\n\
+  \      description: \"MCP server for AI-assisted workflow automation with Activepieces.\"\n      tools:\n        - name: list-flows\n          description: \"List all automation flows in the Activepieces project\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"activepieces.list-flows\"\n          with:\n            projectId: \"tools.projectId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-flow\n          description: \"Create a new automation flow in Activepieces\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"activepieces.create-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-flow\n          description: \"Retrieve a specific automation flow by ID\"\n          hints:\n            readOnly: true\n            openWorld: false\n\
+  \          call: \"activepieces.get-flow\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-flow\n          description: \"Delete an automation flow\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"activepieces.delete-flow\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-flow-runs\n          description: \"List execution history for automation flows\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"activepieces.list-flow-runs\"\n          with:\n            projectId: \"tools.projectId\"\n            status: \"tools.status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-flow-run\n   \
+  \       description: \"Get details of a specific flow execution run\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"activepieces.get-flow-run\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connections\n          description: \"List all app connections available in the project\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"activepieces.list-connections\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-projects\n          description: \"List all Activepieces projects\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"activepieces.list-projects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/activepieces/refs/heads/main/capabilities/workflow-automation.yaml
 tags:
 - Activepieces
 - Automation

@@ -65,70 +65,86 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- get problem
-- list events matching filters
-- get a specific comment on a problem
-- delete problem comment
-- update a comment
-- close a problem with an optional message
-- delete a comment from a problem
-- cloud monitoring
-- list problems detected by davis ai
-- get event details
-- update problem comment
-- get details of a specific event
-- list entities matching a selector
-- get event
-- list monitored entities matching a selector
-- update an investigation comment
-- list events in the dynatrace environment
-- observability
-- manage investigation comments
-- get entity details
-- get full details of a specific problem including root cause analysis
-- get problem details including root cause
-- close an open problem with an optional closing message
-- list investigation comments on a problem
-- add an investigation comment to a problem
-- ai operations
-- problems
-- list comments on a problem
-- query and manage ai-detected problems
-- list problems
-- query affected entities
-- digital experience management
-- application security
-- get a comment
-- events
-- intelligence
-- incident response
-- get entity
-- delete a comment
-- application performance monitoring
-- list problems detected by davis ai in the dynatrace environment
-- get full problem details with root cause analysis
-- get problem comment
-- ingest event
 - close a problem
-- list events
-- analytics
+- ai operations
+- automation
+- application security
+- events
+- list comments on a problem
+- list problem comments
+- ingest custom events
+- problems
+- get a comment
+- query affected entities
+- close a problem with an optional message
+- list investigation comments on a problem
+- get full problem details with root cause analysis
+- get problem details including root cause
+- update problem comment
+- list problems detected by davis ai in the dynatrace environment
+- get entity details for root cause investigation
+- get problem
+- observability
+- list problems
 - close problem
-- get a specific event
-- ingest a custom event to annotate the timeline
+- get full details of a specific problem including root cause analysis
+- analytics
+- get event
+- get details of a specific event
+- list problems detected by davis ai
+- cloud monitoring
+- sre
+- close an open problem with an optional closing message
+- query events related to incidents
+- list events in the dynatrace environment
+- get entity details
+- intelligence
+- query and manage ai-detected problems
+- create problem comment
+- list monitored entities matching a selector
+- ingest event
+- get problem comment
 - add an investigation comment
 - get details of a specific monitored entity
-- sre
-- manage a specific comment
-- apm
-- create problem comment
-- list problem comments
+- get a specific event
+- add an investigation comment to a problem
+- get event details
 - list entities
-- automation
+- list entities matching a selector
 - dynatrace
-- ingest custom events
-- query events related to incidents
-- get entity details for root cause investigation
+- manage a specific comment
+- update an investigation comment
+- incident response
+- delete problem comment
+- delete a comment from a problem
+- list events matching filters
+- apm
+- update a comment
+- delete a comment
+- manage investigation comments
+- digital experience management
+- get entity
+- application performance monitoring
+- get a specific comment on a problem
+- list events
+- ingest a custom event to annotate the timeline
 slug: incident-response
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Incident Response\"\n  description: \"Unified incident response workflow combining problems, events, and entity data for SREs investigating service degradations detected by Davis AI.\"\n  tags:\n    - Dynatrace\n    - Incident Response\n    - SRE\n    - Problems\n    - Events\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_API_TOKEN: DYNATRACE_API_TOKEN\n      DYNATRACE_ENVIRONMENT_ID: DYNATRACE_ENVIRONMENT_ID\n\ncapability:\n  consumes:\n    - import: problems-v2\n      location: ./shared/problems-v2.yaml\n    - import: events-v2\n      location: ./shared/events-v2.yaml\n    - import: entities-v2\n      location: ./shared/entities-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: \"Unified REST API for Dynatrace incident response workflows.\"\n      resources:\n        - path: /v1/problems\n\
+  \          name: problems\n          description: \"Query and manage AI-detected problems\"\n          operations:\n            - method: GET\n              name: list-problems\n              description: \"List problems detected by Davis AI\"\n              call: \"problems-v2.list-problems\"\n              with:\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                problemSelector: \"rest.problemSelector\"\n                entitySelector: \"rest.entitySelector\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n                sort: \"rest.sort\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/problems/{problemId}\n          name: problem-detail\n          description: \"Get problem details including root cause\"\n          operations:\n            - method: GET\n              name: get-problem\n\
+  \              description: \"Get full problem details with root cause analysis\"\n              call: \"problems-v2.get-problem\"\n              with:\n                problemId: \"rest.problemId\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/problems/{problemId}/close\n          name: problem-close\n          description: \"Close a problem\"\n          operations:\n            - method: POST\n              name: close-problem\n              description: \"Close a problem with an optional message\"\n              call: \"problems-v2.close-problem\"\n              with:\n                problemId: \"rest.problemId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/problems/{problemId}/comments\n          name: problem-comments\n          description: \"Manage investigation comments\"\n          operations:\n\
+  \            - method: GET\n              name: list-problem-comments\n              description: \"List comments on a problem\"\n              call: \"problems-v2.list-problem-comments\"\n              with:\n                problemId: \"rest.problemId\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-problem-comment\n              description: \"Add an investigation comment\"\n              call: \"problems-v2.create-problem-comment\"\n              with:\n                problemId: \"rest.problemId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/problems/{problemId}/comments/{commentId}\n          name: problem-comment-detail\n          description: \"Manage a specific comment\"\n          operations:\n     \
+  \       - method: GET\n              name: get-problem-comment\n              description: \"Get a comment\"\n              call: \"problems-v2.get-problem-comment\"\n              with:\n                problemId: \"rest.problemId\"\n                commentId: \"rest.commentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-problem-comment\n              description: \"Update a comment\"\n              call: \"problems-v2.update-problem-comment\"\n              with:\n                problemId: \"rest.problemId\"\n                commentId: \"rest.commentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-problem-comment\n              description: \"Delete a comment\"\n              call: \"problems-v2.delete-problem-comment\"\n              with:\n                problemId:\
+  \ \"rest.problemId\"\n                commentId: \"rest.commentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Query events related to incidents\"\n          operations:\n            - method: GET\n              name: list-events\n              description: \"List events matching filters\"\n              call: \"events-v2.list-events\"\n              with:\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n                eventSelector: \"rest.eventSelector\"\n                entitySelector: \"rest.entitySelector\"\n                eventType: \"rest.eventType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events/{eventId}\n          name: event-detail\n          description:\
+  \ \"Get event details\"\n          operations:\n            - method: GET\n              name: get-event\n              description: \"Get a specific event\"\n              call: \"events-v2.get-event\"\n              with:\n                eventId: \"rest.eventId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events/ingest\n          name: event-ingest\n          description: \"Ingest custom events\"\n          operations:\n            - method: POST\n              name: ingest-event\n              description: \"Ingest a custom event to annotate the timeline\"\n              call: \"events-v2.ingest-event\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/entities\n          name: entities\n          description: \"Query affected entities\"\n          operations:\n            - method: GET\n              name: list-entities\n            \
+  \  description: \"List entities matching a selector\"\n              call: \"entities-v2.list-entities\"\n              with:\n                entitySelector: \"rest.entitySelector\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                fields: \"rest.fields\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/entities/{entityId}\n          name: entity-detail\n          description: \"Get entity details\"\n          operations:\n            - method: GET\n              name: get-entity\n              description: \"Get entity details for root cause investigation\"\n              call: \"entities-v2.get-entity\"\n              with:\n                entityId: \"rest.entityId\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n       \
+  \           mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: incident-response-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Dynatrace incident response.\"\n      tools:\n        - name: list-problems\n          description: \"List problems detected by Davis AI in the Dynatrace environment\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"problems-v2.list-problems\"\n          with:\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n            problemSelector: \"tools.problemSelector\"\n            entitySelector: \"tools.entitySelector\"\n            from: \"tools.from\"\n            to: \"tools.to\"\n            sort: \"tools.sort\"\n            fields: \"tools.fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-problem\n          description: \"Get full details of a specific problem\
+  \ including root cause analysis\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"problems-v2.get-problem\"\n          with:\n            problemId: \"tools.problemId\"\n            fields: \"tools.fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: close-problem\n          description: \"Close an open problem with an optional closing message\"\n          hints:\n            readOnly: false\n            destructive: true\n            openWorld: true\n          call: \"problems-v2.close-problem\"\n          with:\n            problemId: \"tools.problemId\"\n            message: \"tools.message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-problem-comments\n          description: \"List investigation comments on a problem\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"\
+  problems-v2.list-problem-comments\"\n          with:\n            problemId: \"tools.problemId\"\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-problem-comment\n          description: \"Add an investigation comment to a problem\"\n          hints:\n            readOnly: false\n            openWorld: true\n          call: \"problems-v2.create-problem-comment\"\n          with:\n            problemId: \"tools.problemId\"\n            message: \"tools.message\"\n            context: \"tools.context\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-problem-comment\n          description: \"Get a specific comment on a problem\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"problems-v2.get-problem-comment\"\n          with:\n      \
+  \      problemId: \"tools.problemId\"\n            commentId: \"tools.commentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-problem-comment\n          description: \"Update an investigation comment\"\n          hints:\n            readOnly: false\n            idempotent: true\n            openWorld: true\n          call: \"problems-v2.update-problem-comment\"\n          with:\n            problemId: \"tools.problemId\"\n            commentId: \"tools.commentId\"\n            message: \"tools.message\"\n            context: \"tools.context\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-problem-comment\n          description: \"Delete a comment from a problem\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          call: \"problems-v2.delete-problem-comment\"\n\
+  \          with:\n            problemId: \"tools.problemId\"\n            commentId: \"tools.commentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-events\n          description: \"List events in the Dynatrace environment\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"events-v2.list-events\"\n          with:\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n            from: \"tools.from\"\n            to: \"tools.to\"\n            eventSelector: \"tools.eventSelector\"\n            entitySelector: \"tools.entitySelector\"\n            eventType: \"tools.eventType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-event\n          description: \"Get details of a specific event\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"\
+  events-v2.get-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ingest-event\n          description: \"Ingest a custom event to annotate the timeline\"\n          hints:\n            readOnly: false\n            openWorld: true\n          call: \"events-v2.ingest-event\"\n          with:\n            event_type: \"tools.event_type\"\n            title: \"tools.title\"\n            entity_selector: \"tools.entity_selector\"\n            start_time: \"tools.start_time\"\n            end_time: \"tools.end_time\"\n            properties: \"tools.properties\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-entities\n          description: \"List monitored entities matching a selector\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"entities-v2.list-entities\"\n    \
+  \      with:\n            entitySelector: \"tools.entitySelector\"\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n            fields: \"tools.fields\"\n            from: \"tools.from\"\n            to: \"tools.to\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-entity\n          description: \"Get details of a specific monitored entity\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"entities-v2.get-entity\"\n          with:\n            entityId: \"tools.entityId\"\n            fields: \"tools.fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/dynatrace/refs/heads/main/capabilities/incident-response.yaml
 tags:
 - Dynatrace
 - Incident Response

@@ -11,44 +11,49 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- list deployment groups
-- devops
-- list deployments for an application and deployment group
-- get deployment information for a target instance
-- DevOps Engineer
-- get deployment instance
-- blue/green deployment
-- Release Manager
-- amazon
-- coordinates application releases.
-- stop an in-progress deployment
-- create and monitor deployments
-- release management
-- list deployment groups for an application
-- aws
-- get details about a specific deployment
-- list deployment instances
-- create a new deployment
-- create a codedeploy application
-- manages deployment infrastructure.
 - create a deployment group for an application
-- list instances in a deployment
-- manage codedeploy applications
+- release management
+- list deployment groups
+- Release Manager
+- create deployment group
+- get details about a specific deployment
+- stop an in-progress deployment
+- list applications
+- amazon
+- manage deployment groups
+- get deployment information for a target instance
+- aws
 - deployment
-- automated application deployment to compute targets.
-- ci/cd
+- create and monitor deployments
+- create a new deployment
+- manage codedeploy applications
+- list instances in a deployment
+- devops
 - list codedeploy applications
-- create application
+- create deployment
+- create a codedeploy application
+- list deployments for an application and deployment group
+- stop deployment
+- get deployment instance
+- coordinates application releases.
+- get deployment
+- blue/green deployment
+- manages deployment infrastructure.
+- DevOps Engineer
+- list deployment instances
 - list deployments
 - application deployment to ec2, lambda, ecs, and on-premises servers.
-- create deployment
+- ci/cd
+- create application
+- automated application deployment to compute targets.
+- list deployment groups for an application
 - managing software release processes and rollbacks.
-- stop deployment
-- list applications
-- get deployment
-- create deployment group
-- manage deployment groups
 slug: amazon-codedeploy-deployment-automation
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeDeploy Deployment Automation\n  description: Unified workflow for DevOps teams to create deployment groups, deploy revisions to EC2, Lambda, and ECS targets, and monitor deployment status.\n  tags:\n  - Amazon\n  - AWS\n  - Deployment\n  - DevOps\n  - CI/CD\n  - Release Management\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codedeploy\n    location: ./shared/codedeploy.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codedeploy-deployment-api\n    description: Unified REST API for CodeDeploy deployment automation.\n    resources:\n    - path: /v1/applications\n      name: applications\n      description: Manage CodeDeploy applications\n    - path: /v1/deployments\n      name: deployments\n      description: Create\
+  \ and monitor deployments\n    - path: /v1/deployment-groups\n      name: deployment-groups\n      description: Manage deployment groups\n  - type: mcp\n    port: 9090\n    namespace: codedeploy-deployment-mcp\n    transport: http\n    description: MCP server for AI-assisted deployment management.\n    tools:\n    - name: list-applications\n      description: List CodeDeploy applications\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.listApplications\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-application\n      description: Create a CodeDeploy application\n      hints:\n        readOnly: false\n        openWorld: false\n      call: codedeploy.createApplication\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-deployment-groups\n      description: List deployment groups for an application\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.listDeploymentGroups\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-deployment\n      description: Create a new deployment\n      hints:\n        readOnly: false\n        openWorld: false\n      call: codedeploy.createDeployment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-deployment\n      description: Get details about a specific deployment\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.getDeployment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-deployments\n      description: List deployments for an application and deployment group\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.listDeployments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-deployment\n      description: Stop an in-progress deployment\n      hints:\n        readOnly: false\n        destructive: false\n\
+  \        openWorld: false\n      call: codedeploy.stopDeployment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-deployment-instance\n      description: Get deployment information for a target instance\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.getDeploymentInstance\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-deployment-instances\n      description: List instances in a deployment\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codedeploy.listDeploymentInstances\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-deployment-group\n      description: Create a deployment group for an application\n      hints:\n        readOnly: false\n        openWorld: false\n      call: codedeploy.createDeploymentGroup\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codedeploy/refs/heads/main/capabilities/amazon-codedeploy-deployment-automation.yaml
 tags:
 - Amazon
 - AWS

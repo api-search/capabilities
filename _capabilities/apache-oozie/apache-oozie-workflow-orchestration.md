@@ -39,67 +39,78 @@ personas: []
 provider_name: Apache Oozie
 provider_slug: apache-oozie
 search_terms:
+- operators monitoring and managing oozie job execution in production hadoop environments.
+- suspend a running oozie job, pausing execution until resumed.
 - suspend job
-- get oozie system configuration properties.
-- bulk action
-- job submission and bulk management.
-- resume a suspended oozie job.
-- get configuration
-- workflow
-- scheduling
-- rerun a completed or failed oozie workflow job, optionally skipping specific nodes.
-- get oozie system mode (normal, safemode, nowebservice).
-- get job information, definition, logs, or dag.
-- start job
-- kill multiple oozie jobs matching specified filter criteria.
-- system status and administration.
 - apache oozie
 - system configuration access.
+- get job information, definition, logs, or dag.
 - orchestration
-- resume job
-- bulk kill jobs
-- Data Engineer
-- apply a bulk action to multiple matching jobs.
-- engineers building and managing hadoop data processing pipelines using oozie workflows.
-- single job management.
-- get status
-- retrieve execution logs for a specific oozie job for debugging and monitoring.
-- suspend a running oozie job, pausing execution until resumed.
-- list jobs
 - java
-- submit a workflow, coordinator, or bundle job.
-- get apache oozie system configuration properties for troubleshooting and verification.
-- get job info
-- get system config
-- apply a lifecycle action to a job.
-- get system status
-- list oozie jobs with optional filtering by user, status, job type (wf/coordinator/bundle), and pagination.
-- apache
-- rerun job
-- workflow orchestration
-- pipeline management
-- start a submitted but not yet running oozie job.
-- scheduling and executing directed acyclic graphs of hadoop processing actions.
-- Hadoop Pipeline Operator
-- get job log
-- terminate an oozie job immediately.
-- open source
-- kill job
-- end-to-end workflow orchestration for hadoop data pipelines covering job submission, monitoring, and lifecycle management.
-- get job
-- get detailed information about a specific oozie job including status, actions, and timeline.
-- list jobs with filters and pagination.
-- get the current apache oozie system mode. returns normal, safemode, or nowebservice.
-- submit an oozie workflow job to execute a hadoop data pipeline. pass an xml configuration with oozie.wf.application.path pointing to the hdfs workflow directory.
-- building reliable data pipelines for batch processing of large datasets on hadoop.
-- submit job
-- big data
-- submit workflow job
-- data engineering
+- apply a bulk action to multiple matching jobs.
 - manage job
-- operators monitoring and managing oozie job execution in production hadoop environments.
+- get the current apache oozie system mode. returns normal, safemode, or nowebservice.
+- rerun a completed or failed oozie workflow job, optionally skipping specific nodes.
+- get oozie system mode (normal, safemode, nowebservice).
+- get job log
+- kill job
+- open source
+- get configuration
+- pipeline management
+- submit a workflow, coordinator, or bundle job.
+- terminate an oozie job immediately.
+- list jobs
+- resume job
+- start a submitted but not yet running oozie job.
+- get system status
+- job submission and bulk management.
+- get oozie system configuration properties.
+- resume a suspended oozie job.
+- get job
+- bulk kill jobs
+- submit job
+- bulk action
+- submit an oozie workflow job to execute a hadoop data pipeline. pass an xml configuration with oozie.wf.application.path pointing to the hdfs workflow directory.
+- get detailed information about a specific oozie job including status, actions, and timeline.
+- end-to-end workflow orchestration for hadoop data pipelines covering job submission, monitoring, and lifecycle management.
+- Data Engineer
+- Hadoop Pipeline Operator
+- engineers building and managing hadoop data processing pipelines using oozie workflows.
+- workflow
+- apache
+- data engineering
+- list oozie jobs with optional filtering by user, status, job type (wf/coordinator/bundle), and pagination.
+- retrieve execution logs for a specific oozie job for debugging and monitoring.
+- single job management.
+- start job
+- scheduling
+- list jobs with filters and pagination.
+- apply a lifecycle action to a job.
 - hadoop
+- get system config
+- kill multiple oozie jobs matching specified filter criteria.
+- rerun job
+- get apache oozie system configuration properties for troubleshooting and verification.
+- get status
+- big data
+- workflow orchestration
+- building reliable data pipelines for batch processing of large datasets on hadoop.
+- scheduling and executing directed acyclic graphs of hadoop processing actions.
+- get job info
+- system status and administration.
+- submit workflow job
 slug: apache-oozie-workflow-orchestration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Apache Oozie Workflow Orchestration\n  description: Workflow capability for orchestrating Hadoop data processing pipelines using Apache Oozie. Covers workflow, coordinator, and bundle job lifecycle management for data engineers and Hadoop pipeline operators running scheduled and event-driven data processing.\n  tags:\n    - Apache Oozie\n    - Hadoop\n    - Workflow Orchestration\n    - Data Engineering\n    - Pipeline Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OOZIE_URL: OOZIE_URL\n\ncapability:\n  consumes:\n    - import: oozie\n      location: ./shared/apache-oozie.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oozie-orchestration-api\n      description: Unified REST API for Apache Oozie Hadoop workflow orchestration.\n      resources:\n        - path: /v1/admin/status\n          name: admin-status\n          description: System status\
+  \ and administration.\n          operations:\n            - method: GET\n              name: get-status\n              description: Get Oozie system mode (NORMAL, SAFEMODE, NOWEBSERVICE).\n              call: \"oozie.get-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/admin/configuration\n          name: admin-config\n          description: System configuration access.\n          operations:\n            - method: GET\n              name: get-configuration\n              description: Get Oozie system configuration properties.\n              call: \"oozie.get-configuration\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/jobs\n          name: jobs\n          description: Job submission and bulk management.\n          operations:\n            - method: POST\n              name: submit-job\n              description: Submit a workflow,\
+  \ coordinator, or bundle job.\n              call: \"oozie.submit-job\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-jobs\n              description: List jobs with filters and pagination.\n              call: \"oozie.get-jobs\"\n              with:\n                filter: \"rest.filter\"\n                offset: \"rest.offset\"\n                len: \"rest.len\"\n                jobtype: \"rest.jobtype\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: bulk-action\n              description: Apply a bulk action to multiple matching jobs.\n              call: \"oozie.bulk-job-action\"\n              with:\n                action: \"rest.action\"\n                filter: \"rest.filter\"\n                jobtype: \"rest.jobtype\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n\n        - path: /v1/jobs/{jobId}\n          name: job-detail\n          description: Single job management.\n          operations:\n            - method: GET\n              name: get-job\n              description: Get job information, definition, logs, or DAG.\n              call: \"oozie.get-job-info\"\n              with:\n                job-id: \"rest.jobId\"\n                show: \"rest.show\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: manage-job\n              description: Apply a lifecycle action to a job.\n              call: \"oozie.manage-job\"\n              with:\n                job-id: \"rest.jobId\"\n                action: \"rest.action\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: oozie-orchestration-mcp\n  \
+  \    transport: http\n      description: MCP server for AI-assisted Apache Oozie Hadoop workflow orchestration.\n      tools:\n        - name: get-system-status\n          description: Get the current Apache Oozie system mode. Returns NORMAL, SAFEMODE, or NOWEBSERVICE.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"oozie.get-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-system-config\n          description: Get Apache Oozie system configuration properties for troubleshooting and verification.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"oozie.get-configuration\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: submit-workflow-job\n          description: Submit an Oozie workflow job to execute a Hadoop data pipeline. Pass an XML configuration with oozie.wf.application.path\
+  \ pointing to the HDFS workflow directory.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"oozie.submit-job\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-jobs\n          description: List Oozie jobs with optional filtering by user, status, job type (wf/coordinator/bundle), and pagination.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"oozie.get-jobs\"\n          with:\n            filter: \"tools.filter\"\n            jobtype: \"tools.jobtype\"\n            offset: \"tools.offset\"\n            len: \"tools.len\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-job-info\n          description: Get detailed information about a specific Oozie job including status, actions, and timeline.\n          hints:\n            readOnly: true\n            openWorld: false\n  \
+  \        call: \"oozie.get-job-info\"\n          with:\n            job-id: \"tools.jobId\"\n            show: \"tools.show\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-job-log\n          description: Retrieve execution logs for a specific Oozie job for debugging and monitoring.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"oozie.get-job-info\"\n          with:\n            job-id: \"tools.jobId\"\n            show: \"log\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-job\n          description: Start a submitted but not yet running Oozie job.\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"oozie.manage-job\"\n          with:\n            job-id: \"tools.jobId\"\n            action: \"start\"\n          outputParameters:\n \
+  \           - type: object\n              mapping: \"$.\"\n\n        - name: suspend-job\n          description: Suspend a running Oozie job, pausing execution until resumed.\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"oozie.manage-job\"\n          with:\n            job-id: \"tools.jobId\"\n            action: \"suspend\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: resume-job\n          description: Resume a suspended Oozie job.\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"oozie.manage-job\"\n          with:\n            job-id: \"tools.jobId\"\n            action: \"resume\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: kill-job\n          description: Terminate an Oozie job immediately.\n      \
+  \    hints:\n            readOnly: false\n            destructive: true\n            idempotent: false\n          call: \"oozie.manage-job\"\n          with:\n            job-id: \"tools.jobId\"\n            action: \"kill\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: rerun-job\n          description: Rerun a completed or failed Oozie workflow job, optionally skipping specific nodes.\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"oozie.manage-job\"\n          with:\n            job-id: \"tools.jobId\"\n            action: \"rerun\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: bulk-kill-jobs\n          description: Kill multiple Oozie jobs matching specified filter criteria.\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: false\n\
+  \          call: \"oozie.bulk-job-action\"\n          with:\n            action: \"kill\"\n            filter: \"tools.filter\"\n            jobtype: \"tools.jobtype\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-oozie/refs/heads/main/capabilities/apache-oozie-workflow-orchestration.yaml
 tags:
 - Apache Oozie
 - Hadoop

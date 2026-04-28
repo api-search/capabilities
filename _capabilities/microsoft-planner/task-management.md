@@ -63,65 +63,79 @@ personas: []
 provider_name: Microsoft Planner
 provider_slug: microsoft-planner
 search_terms:
-- update a bucket
-- delete bucket
-- project management
-- microsoft
-- list plan buckets
-- get plan details
-- create a new bucket
-- get plan details including category labels
-- create plan
-- list group plans
-- get bucket
-- manage a specific plan
-- delete a plan
-- microsoft 365
 - update bucket
-- get details of a specific task
-- get bucket details
-- create bucket
-- list all tasks in a plan
-- create task
-- get details of a specific bucket
-- productivity
-- manage a specific task
-- list plan tasks
-- update a plan
-- delete a bucket
-- delete plan
-- update task
-- create a new task in a plan
-- create a new bucket in a plan
-- get details of a specific plan
-- create a new plan
-- create a new task
-- collaboration
-- update plan details
-- get task details including checklist and references
-- list tasks in a specific bucket
-- update a task
-- list my tasks
-- task management
-- manage tasks
-- manage buckets
-- update task details
-- manage plans
-- get plan
-- update task details including checklist items
-- list bucket tasks
-- update plan
-- planner
-- delete a task
-- get task details
-- create a new planner plan
-- list all buckets in a plan
-- manage a specific bucket
-- get task
-- delete task
-- list tasks assigned to the current user
+- create plan
 - list plans for a group
+- delete a plan
+- update a task
+- update a bucket
+- microsoft 365
+- create a new planner plan
+- project management
+- delete a bucket
+- get plan details including category labels
+- create a new bucket in a plan
+- get bucket
+- task management
+- manage a specific plan
+- list plan tasks
+- update task
+- get task details including checklist and references
+- create a new plan
+- create a new task in a plan
+- get details of a specific plan
+- manage a specific bucket
+- list my tasks
+- list tasks assigned to the current user
+- list all tasks in a plan
+- update task details
+- manage tasks
+- get task
+- delete a task
+- manage buckets
+- list plan buckets
+- update plan details
+- create a new bucket
+- create task
+- update task details including checklist items
+- manage plans
+- get bucket details
+- get details of a specific task
+- update plan
+- update a plan
+- manage a specific task
+- planner
+- list all buckets in a plan
+- get plan details
+- collaboration
+- create bucket
+- list tasks in a specific bucket
+- productivity
+- list group plans
+- create a new task
+- get plan
+- microsoft
+- delete plan
+- get details of a specific bucket
+- delete task
+- list bucket tasks
+- get task details
+- delete bucket
 slug: task-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Planner Task Management\"\n  description: \"Manage plans, tasks, and buckets in Microsoft Planner for team collaboration and project management. Used by project managers and team leads.\"\n  tags:\n    - Microsoft\n    - Planner\n    - Task Management\n    - Collaboration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: planner\n      location: ./shared/planner.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: planner-task-api\n      description: \"Unified REST API for Microsoft Planner task management.\"\n      resources:\n        - path: /v1/plans\n          name: plans\n          description: \"Manage plans\"\n          operations:\n            - method: POST\n              name: create-plan\n              description: \"Create a new plan\"\n          \
+  \    call: \"planner.create-plan\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-group-plans\n              description: \"List plans for a group\"\n              call: \"planner.list-plan-tasks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/plans/{planId}\n          name: plan\n          description: \"Manage a specific plan\"\n          operations:\n            - method: GET\n              name: get-plan\n              description: \"Get plan details\"\n              call: \"planner.get-plan\"\n              with:\n                planId: \"rest.planId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-plan\n              description: \"Update a plan\"\n              call: \"planner.update-plan\"\n\
+  \              with:\n                planId: \"rest.planId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-plan\n              description: \"Delete a plan\"\n              call: \"planner.delete-plan\"\n              with:\n                planId: \"rest.planId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tasks\n          name: tasks\n          description: \"Manage tasks\"\n          operations:\n            - method: POST\n              name: create-task\n              description: \"Create a new task\"\n              call: \"planner.create-task\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tasks/{taskId}\n          name: task\n          description: \"Manage a specific task\"\n          operations:\n            - method:\
+  \ GET\n              name: get-task\n              description: \"Get task details\"\n              call: \"planner.get-task\"\n              with:\n                taskId: \"rest.taskId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-task\n              description: \"Update a task\"\n              call: \"planner.update-task\"\n              with:\n                taskId: \"rest.taskId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-task\n              description: \"Delete a task\"\n              call: \"planner.delete-task\"\n              with:\n                taskId: \"rest.taskId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets\n          name: buckets\n          description: \"\
+  Manage buckets\"\n          operations:\n            - method: POST\n              name: create-bucket\n              description: \"Create a new bucket\"\n              call: \"planner.create-bucket\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{bucketId}\n          name: bucket\n          description: \"Manage a specific bucket\"\n          operations:\n            - method: GET\n              name: get-bucket\n              description: \"Get bucket details\"\n              call: \"planner.get-bucket\"\n              with:\n                bucketId: \"rest.bucketId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-bucket\n              description: \"Update a bucket\"\n              call: \"planner.update-bucket\"\n              with:\n                bucketId: \"rest.bucketId\"\n           \
+  \   outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-bucket\n              description: \"Delete a bucket\"\n              call: \"planner.delete-bucket\"\n              with:\n                bucketId: \"rest.bucketId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: planner-task-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Microsoft Planner task management.\"\n      tools:\n        - name: create-plan\n          description: \"Create a new Planner plan\"\n          hints:\n            readOnly: false\n          call: \"planner.create-plan\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-plan\n          description: \"Get details of a specific plan\"\n          hints:\n            readOnly: true\n\
+  \          call: \"planner.get-plan\"\n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-plan\n          description: \"Update a plan\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"planner.update-plan\"\n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-plan\n          description: \"Delete a plan\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"planner.delete-plan\"\n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-plan-tasks\n          description: \"List all tasks in a plan\"\n          hints:\n            readOnly: true\n          call: \"planner.list-plan-tasks\"\
+  \n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-plan-buckets\n          description: \"List all buckets in a plan\"\n          hints:\n            readOnly: true\n          call: \"planner.list-plan-buckets\"\n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-plan-details\n          description: \"Get plan details including category labels\"\n          hints:\n            readOnly: true\n          call: \"planner.get-plan-details\"\n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-plan-details\n          description: \"Update plan details\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"planner.update-plan-details\"\
+  \n          with:\n            planId: \"tools.planId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-task\n          description: \"Create a new task in a plan\"\n          hints:\n            readOnly: false\n          call: \"planner.create-task\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-task\n          description: \"Get details of a specific task\"\n          hints:\n            readOnly: true\n          call: \"planner.get-task\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-task\n          description: \"Update a task\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"planner.update-task\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n        \
+  \    - type: object\n              mapping: \"$.\"\n        - name: delete-task\n          description: \"Delete a task\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"planner.delete-task\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-task-details\n          description: \"Get task details including checklist and references\"\n          hints:\n            readOnly: true\n          call: \"planner.get-task-details\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-task-details\n          description: \"Update task details including checklist items\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"planner.update-task-details\"\n          with:\n          \
+  \  taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-bucket\n          description: \"Create a new bucket in a plan\"\n          hints:\n            readOnly: false\n          call: \"planner.create-bucket\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-bucket\n          description: \"Get details of a specific bucket\"\n          hints:\n            readOnly: true\n          call: \"planner.get-bucket\"\n          with:\n            bucketId: \"tools.bucketId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-bucket\n          description: \"Update a bucket\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"planner.update-bucket\"\n          with:\n            bucketId: \"tools.bucketId\"\n          outputParameters:\n          \
+  \  - type: object\n              mapping: \"$.\"\n        - name: delete-bucket\n          description: \"Delete a bucket\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"planner.delete-bucket\"\n          with:\n            bucketId: \"tools.bucketId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-bucket-tasks\n          description: \"List tasks in a specific bucket\"\n          hints:\n            readOnly: true\n          call: \"planner.list-bucket-tasks\"\n          with:\n            bucketId: \"tools.bucketId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-my-tasks\n          description: \"List tasks assigned to the current user\"\n          hints:\n            readOnly: true\n          call: \"planner.list-my-tasks\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-planner/refs/heads/main/capabilities/task-management.yaml
 tags:
 - Microsoft
 - Planner

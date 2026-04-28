@@ -83,90 +83,104 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- individual pull request operations
-- create a release
-- pull request merge
-- getBranch
-- update a pull request
-- updatePullRequest
-- search repositories
-- repository management
-- create review
-- list pr files
-- list reviews
-- compareTwoCommits
-- update branch protection
-- repository listing and search
-- branch operations
-- merge a branch
-- listReviewsForPullRequest
-- create or update file contents
-- updateRepository
-- t1
-- get content
-- github
-- list commits
-- submit a review for a pull request
-- request reviewers
-- mergePullRequest
-- getRepositoryContent
-- list pull request files
-- get commit
-- createReviewForPullRequest
-- pull request management
-- create release
-- pull requests
-- createRelease
-- code review
-- source control
 - merge pull request
-- repositories
-- submit review
-- list repository tags
-- platform
-- create a review for a pull request
-- list pull requests
-- branches
-- software development
-- get branch
-- request reviewers for a pull request
-- repository content management
-- create pull request
-- list releases
-- searchRepositories
-- get repository
-- compare commits
-- code
-- getPullRequest
-- list tags
-- listPublicRepositories
-- listCommits
-- code review management
-- create or update file
-- getRepository
-- get a repository
-- get pull request
-- listReleases
-- merge branch
-- createOrUpdateFileContents
-- commit operations
-- release management
-- get repository content
-- listPullRequests
-- create a review
-- update pull request
-- update a repository
-- compare two commits
-- list reviews for a pull request
 - createPullRequest
-- get a commit
-- get a pull request
-- create a pull request
-- pipelines
-- merge a pull request
+- list commits
+- code review
+- createOrUpdateFileContents
 - list public repositories
+- repositories
+- request reviewers for a pull request
+- compare two commits
+- repository listing and search
+- list pull requests
+- searchRepositories
+- submit review
+- create review
+- source control
+- pull requests
+- t1
+- listPublicRepositories
+- branches
+- update a pull request
+- create or update file
+- request reviewers
+- get a repository
+- pull request management
+- repository management
+- listReleases
+- create release
+- get repository content
+- updatePullRequest
+- get content
+- updateRepository
+- submit a review for a pull request
+- getPullRequest
+- repository content management
+- update a repository
+- get branch
+- listReviewsForPullRequest
+- get commit
+- getRepositoryContent
+- get pull request
+- list releases
+- update branch protection
+- branch operations
+- individual pull request operations
+- get a commit
+- merge branch
+- list reviews
+- createReviewForPullRequest
+- create a release
+- search repositories
 - get a branch
+- get repository
+- merge a pull request
+- pull request merge
+- list reviews for a pull request
+- list pull request files
+- compareTwoCommits
+- release management
+- create or update file contents
+- list repository tags
+- get a pull request
+- code
+- getBranch
+- platform
+- create a review
+- software development
+- createRelease
+- github
+- commit operations
+- code review management
+- list tags
+- pipelines
+- compare commits
+- mergePullRequest
+- listCommits
+- getRepository
+- list pr files
+- create pull request
+- create a review for a pull request
+- create a pull request
+- update pull request
+- merge a branch
+- listPullRequests
 slug: source-control
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Source Control\"\n  description: \"Unified workflow for source code management combining repositories, branches, pull requests, and commits. Used by developers for day-to-day code collaboration, branch management, code review, and merging.\"\n  tags:\n    - GitHub\n    - Source Control\n    - Repositories\n    - Pull Requests\n    - Code Review\n    - Branches\n  personas:\n    - developers\n    - software engineers\n    - tech leads\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-repos\n      location: \"./shared/repos.yaml\"\n    - import: github-pull-requests\n      location: \"./shared/pull-requests.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: github-source-control-api\n      description: \"Unified REST API for source control workflows combining repos, branches,\
+  \ commits, and pull requests.\"\n      resources:\n        - path: /v1/repositories\n          name: repositories\n          description: \"Repository listing and search\"\n          operations:\n            - method: GET\n              name: listPublicRepositories\n              description: \"List public repositories\"\n              call: \"github-repos.listPublicRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: searchRepositories\n              description: \"Search repositories\"\n              call: \"github-repos.searchRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}\n          name: repository\n          description: \"Repository management\"\n          operations:\n            - method: GET\n              name: getRepository\n              description:\
+  \ \"Get a repository\"\n              call: \"github-repos.getRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: updateRepository\n              description: \"Update a repository\"\n              call: \"github-repos.updateRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/branches/{branch}\n          name: branch\n          description: \"Branch operations\"\n          operations:\n            - method: GET\n              name: getBranch\n              description: \"Get a branch\"\n              call: \"github-repos.getBranch\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/commits\n          name: commits\n          description: \"Commit operations\"\n          operations:\n\
+  \            - method: GET\n              name: listCommits\n              description: \"List commits\"\n              call: \"github-repos.listCommits\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/compare/{basehead}\n          name: compare\n          description: \"Compare commits\"\n          operations:\n            - method: GET\n              name: compareTwoCommits\n              description: \"Compare two commits\"\n              call: \"github-repos.compareTwoCommits\"\n              with:\n                basehead: \"rest.basehead\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/pulls\n          name: pull-requests\n          description: \"Pull request management\"\n          operations:\n            - method: GET\n              name: listPullRequests\n              description:\
+  \ \"List pull requests\"\n              call: \"github-pull-requests.listPullRequests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createPullRequest\n              description: \"Create a pull request\"\n              call: \"github-pull-requests.createPullRequest\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/pulls/{pull_number}\n          name: pull-request\n          description: \"Individual pull request operations\"\n          operations:\n            - method: GET\n              name: getPullRequest\n              description: \"Get a pull request\"\n              call: \"github-pull-requests.getPullRequest\"\n              with:\n                pull_number: \"rest.pull_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n            - method: PATCH\n              name: updatePullRequest\n              description: \"Update a pull request\"\n              call: \"github-pull-requests.updatePullRequest\"\n              with:\n                pull_number: \"rest.pull_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/pulls/{pull_number}/merge\n          name: merge\n          description: \"Pull request merge\"\n          operations:\n            - method: PUT\n              name: mergePullRequest\n              description: \"Merge a pull request\"\n              call: \"github-pull-requests.mergePullRequest\"\n              with:\n                pull_number: \"rest.pull_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/pulls/{pull_number}/reviews\n          name: reviews\n          description:\
+  \ \"Code review management\"\n          operations:\n            - method: GET\n              name: listReviewsForPullRequest\n              description: \"List reviews\"\n              call: \"github-pull-requests.listReviewsForPullRequest\"\n              with:\n                pull_number: \"rest.pull_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createReviewForPullRequest\n              description: \"Create a review\"\n              call: \"github-pull-requests.createReviewForPullRequest\"\n              with:\n                pull_number: \"rest.pull_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/releases\n          name: releases\n          description: \"Release management\"\n          operations:\n            - method: GET\n              name: listReleases\n\
+  \              description: \"List releases\"\n              call: \"github-repos.listReleases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createRelease\n              description: \"Create a release\"\n              call: \"github-repos.createRelease\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/contents/{path}\n          name: contents\n          description: \"Repository content management\"\n          operations:\n            - method: GET\n              name: getRepositoryContent\n              description: \"Get repository content\"\n              call: \"github-repos.getRepositoryContent\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n\
+  \              name: createOrUpdateFileContents\n              description: \"Create or update file contents\"\n              call: \"github-repos.createOrUpdateFileContents\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: github-source-control-mcp\n      transport: http\n      description: \"MCP server for AI-assisted source control workflows.\"\n      tools:\n        - name: get-repository\n          description: \"Get a repository\"\n          call: \"github-repos.getRepository\"\n          hints:\n            readOnly: true\n        - name: search-repositories\n          description: \"Search repositories\"\n          call: \"github-repos.searchRepositories\"\n          hints:\n            readOnly: true\n        - name: get-branch\n          description: \"Get a branch\"\n          call: \"github-repos.getBranch\"\n \
+  \         hints:\n            readOnly: true\n        - name: list-commits\n          description: \"List commits\"\n          call: \"github-repos.listCommits\"\n          hints:\n            readOnly: true\n        - name: get-commit\n          description: \"Get a commit\"\n          call: \"github-repos.getCommit\"\n          hints:\n            readOnly: true\n        - name: compare-commits\n          description: \"Compare two commits\"\n          call: \"github-repos.compareTwoCommits\"\n          hints:\n            readOnly: true\n        - name: get-content\n          description: \"Get repository content\"\n          call: \"github-repos.getRepositoryContent\"\n          hints:\n            readOnly: true\n        - name: create-or-update-file\n          description: \"Create or update file contents\"\n          call: \"github-repos.createOrUpdateFileContents\"\n          hints:\n            idempotent: true\n        - name: merge-branch\n          description: \"Merge a branch\"\
+  \n          call: \"github-repos.mergeBranch\"\n        - name: list-pull-requests\n          description: \"List pull requests\"\n          call: \"github-pull-requests.listPullRequests\"\n          hints:\n            readOnly: true\n        - name: create-pull-request\n          description: \"Create a pull request\"\n          call: \"github-pull-requests.createPullRequest\"\n        - name: get-pull-request\n          description: \"Get a pull request\"\n          call: \"github-pull-requests.getPullRequest\"\n          hints:\n            readOnly: true\n        - name: update-pull-request\n          description: \"Update a pull request\"\n          call: \"github-pull-requests.updatePullRequest\"\n          hints:\n            idempotent: true\n        - name: merge-pull-request\n          description: \"Merge a pull request\"\n          call: \"github-pull-requests.mergePullRequest\"\n        - name: list-reviews\n          description: \"List reviews for a pull request\"\n   \
+  \       call: \"github-pull-requests.listReviewsForPullRequest\"\n          hints:\n            readOnly: true\n        - name: create-review\n          description: \"Create a review for a pull request\"\n          call: \"github-pull-requests.createReviewForPullRequest\"\n        - name: submit-review\n          description: \"Submit a review for a pull request\"\n          call: \"github-pull-requests.submitReviewForPullRequest\"\n        - name: request-reviewers\n          description: \"Request reviewers for a pull request\"\n          call: \"github-pull-requests.requestReviewersForPullRequest\"\n        - name: list-pr-files\n          description: \"List pull request files\"\n          call: \"github-pull-requests.listPullRequestsFiles\"\n          hints:\n            readOnly: true\n        - name: list-releases\n          description: \"List releases\"\n          call: \"github-repos.listReleases\"\n          hints:\n            readOnly: true\n        - name: create-release\n\
+  \          description: \"Create a release\"\n          call: \"github-repos.createRelease\"\n        - name: list-tags\n          description: \"List repository tags\"\n          call: \"github-repos.listRepositoryTags\"\n          hints:\n            readOnly: true\n        - name: update-branch-protection\n          description: \"Update branch protection\"\n          call: \"github-repos.updateBranchProtection\"\n          hints:\n            idempotent: true\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/github/refs/heads/main/capabilities/source-control.yaml
 tags:
 - GitHub
 - Source Control

@@ -67,68 +67,82 @@ personas: []
 provider_name: Red Hat Satellite
 provider_slug: red-hat-satellite
 search_terms:
-- list all managed hosts.
-- execute a power action on a host (start, stop, reboot).
-- host management
-- list hosts
-- lifecycle management
-- show host
-- delete content view
-- subscription management
-- register a new host with satellite.
-- content management
-- create host
 - update content view
-- list content views in an organization.
-- list subscriptions
-- list all hosts registered with satellite.
-- create a lifecycle environment.
-- organization management.
-- update host
-- individual content view management.
-- create content view
-- delete a content view.
-- list organizations.
-- create a new lifecycle environment.
-- publish content view
-- content view management.
-- systems management
-- host power action
-- configuration management
-- subscription management.
-- promote content view version
-- register a new host.
-- list all content views.
-- delete a host.
-- lifecycle environment management.
-- update a content view.
-- show details for a specific organization.
-- get details for a specific host.
-- create a new content view.
-- host management endpoints.
-- patch management
-- list all organizations.
-- delete a host from satellite.
-- list subscriptions for an organization.
-- get content view details.
-- publish a new version of a content view.
-- individual host management.
-- update host attributes.
-- red hat satellite
-- list organizations
-- list lifecycle environments
-- delete host
-- show content view
-- list subscriptions.
-- get details for a content view.
-- promote a content view version to a lifecycle environment.
-- show organization
-- list lifecycle environments.
 - list content views
+- list all managed hosts.
+- patch management
+- register a new host.
 - create lifecycle environment
+- promote a content view version to a lifecycle environment.
+- host management
+- publish content view
+- show details for a specific organization.
+- list lifecycle environments
+- update host attributes.
+- update host
+- show content view
+- lifecycle environment management.
+- register a new host with satellite.
+- promote content view version
+- delete content view
+- get details for a content view.
+- list organizations
+- delete a host from satellite.
+- delete a host.
+- execute a power action on a host (start, stop, reboot).
 - get host details.
+- get content view details.
+- subscription management
+- subscription management.
+- content view management.
+- delete host
+- list organizations.
 - list lifecycle environments for an organization.
+- list hosts
+- publish a new version of a content view.
+- show host
+- get details for a specific host.
+- list subscriptions for an organization.
+- list all organizations.
+- show organization
+- red hat satellite
+- list all hosts registered with satellite.
+- host management endpoints.
+- update a content view.
+- delete a content view.
+- create a new content view.
+- list all content views.
+- create a lifecycle environment.
+- lifecycle management
+- list subscriptions
+- configuration management
+- host power action
+- list lifecycle environments.
+- create a new lifecycle environment.
+- create host
+- individual host management.
+- content management
+- create content view
+- organization management.
+- list content views in an organization.
+- individual content view management.
+- list subscriptions.
+- systems management
 slug: systems-lifecycle-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Satellite Systems Lifecycle Management\"\n  description: \"Unified workflow for managing the complete lifecycle of physical, virtual, and cloud hosts including provisioning, content management, patching, and subscription management. Used by system administrators and platform engineers.\"\n  tags:\n    - Red Hat Satellite\n    - Systems Management\n    - Lifecycle Management\n    - Host Management\n    - Content Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SATELLITE_USERNAME: SATELLITE_USERNAME\n      SATELLITE_PASSWORD: SATELLITE_PASSWORD\n\ncapability:\n  consumes:\n    - import: satellite-api\n      location: ./shared/satellite-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: satellite-lifecycle-api\n      description: \"Unified REST API for Red Hat Satellite systems lifecycle management.\"\n      resources:\n        - path:\
+  \ /v1/hosts\n          name: hosts\n          description: \"Host management endpoints.\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List all managed hosts.\"\n              call: \"satellite-api.list-hosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-host\n              description: \"Register a new host.\"\n              call: \"satellite-api.create-host\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts/{id}\n          name: host-details\n          description: \"Individual host management.\"\n          operations:\n            - method: GET\n              name: show-host\n              description: \"Get host details.\"\n              call: \"satellite-api.show-host\"\n              with:\n                id: \"rest.id\"\n   \
+  \           outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-host\n              description: \"Update host attributes.\"\n              call: \"satellite-api.update-host\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-host\n              description: \"Delete a host.\"\n              call: \"satellite-api.delete-host\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content-views\n          name: content-views\n          description: \"Content view management.\"\n          operations:\n            - method: GET\n              name: list-content-views\n              description: \"List all content views.\"\n\
+  \              call: \"satellite-api.list-content-views\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-content-view\n              description: \"Create a new content view.\"\n              call: \"satellite-api.create-content-view\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content-views/{id}\n          name: content-view-details\n          description: \"Individual content view management.\"\n          operations:\n            - method: GET\n              name: show-content-view\n              description: \"Get content view details.\"\n              call: \"satellite-api.show-content-view\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-content-view\n\
+  \              description: \"Update a content view.\"\n              call: \"satellite-api.update-content-view\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-content-view\n              description: \"Delete a content view.\"\n              call: \"satellite-api.delete-content-view\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lifecycle-environments\n          name: lifecycle-environments\n          description: \"Lifecycle environment management.\"\n          operations:\n            - method: GET\n              name: list-lifecycle-environments\n              description: \"List lifecycle environments.\"\n              call: \"satellite-api.list-lifecycle-environments\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lifecycle-environment\n              description: \"Create a lifecycle environment.\"\n              call: \"satellite-api.create-lifecycle-environment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Subscription management.\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List subscriptions.\"\n              call: \"satellite-api.list-subscriptions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Organization management.\"\n          operations:\n            - method: GET\n              name: list-organizations\n\
+  \              description: \"List organizations.\"\n              call: \"satellite-api.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: satellite-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Red Hat Satellite systems lifecycle management.\"\n      tools:\n        - name: list-hosts\n          description: \"List all hosts registered with Satellite.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"satellite-api.list-hosts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: show-host\n          description: \"Get details for a specific host.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"satellite-api.show-host\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: create-host\n          description: \"Register a new host with Satellite.\"\n          hints:\n            readOnly: false\n          call: \"satellite-api.create-host\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-host\n          description: \"Update host attributes.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"satellite-api.update-host\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-host\n          description: \"Delete a host from Satellite.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"satellite-api.delete-host\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n      \
+  \      - type: object\n              mapping: \"$.\"\n        - name: host-power-action\n          description: \"Execute a power action on a host (start, stop, reboot).\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"satellite-api.host-power-action\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-content-views\n          description: \"List content views in an organization.\"\n          hints:\n            readOnly: true\n          call: \"satellite-api.list-content-views\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-content-view\n          description: \"Create a new content view.\"\n          hints:\n            readOnly: false\n          call: \"satellite-api.create-content-view\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: show-content-view\n          description: \"Get details for a content view.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"satellite-api.show-content-view\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-content-view\n          description: \"Update a content view.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"satellite-api.update-content-view\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-content-view\n          description: \"Delete a content view.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"satellite-api.delete-content-view\"\n          with:\n       \
+  \     id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: publish-content-view\n          description: \"Publish a new version of a content view.\"\n          hints:\n            readOnly: false\n          call: \"satellite-api.publish-content-view\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: promote-content-view-version\n          description: \"Promote a content view version to a lifecycle environment.\"\n          hints:\n            readOnly: false\n          call: \"satellite-api.promote-content-view-version\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-subscriptions\n          description: \"List subscriptions for an organization.\"\n          hints:\n            readOnly: true\n          call:\
+  \ \"satellite-api.list-subscriptions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-lifecycle-environments\n          description: \"List lifecycle environments for an organization.\"\n          hints:\n            readOnly: true\n          call: \"satellite-api.list-lifecycle-environments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-lifecycle-environment\n          description: \"Create a new lifecycle environment.\"\n          hints:\n            readOnly: false\n          call: \"satellite-api.create-lifecycle-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-organizations\n          description: \"List all organizations.\"\n          hints:\n            readOnly: true\n          call: \"satellite-api.list-organizations\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: show-organization\n          description: \"Show details for a specific organization.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"satellite-api.show-organization\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/red-hat-satellite/refs/heads/main/capabilities/systems-lifecycle-management.yaml
 tags:
 - Red Hat Satellite
 - Systems Management

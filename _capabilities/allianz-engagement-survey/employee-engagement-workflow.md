@@ -39,55 +39,64 @@ personas: []
 provider_name: Allianz Engagement Survey
 provider_slug: allianz-engagement-survey
 search_terms:
-- analyzing survey results and generating engagement insights
-- create a new annual, pulse, onboarding, or exit engagement survey
-- creating and tracking improvement initiatives from survey findings
-- analyst who interprets engagement data and generates insights and recommendations
-- list action plans for a survey
-- get aggregated engagement scores, participation rates, and insights for a survey
-- add employees as survey participants
+- list engagement surveys
 - list survey participants
-- add participants
-- people manager who reviews team-level results and creates action plans
-- participant management for a survey
-- get survey analytics
-- People Analytics Analyst
-- create an action plan from survey insights
-- list improvement action plans created from survey findings
-- creating and managing employee engagement surveys
-- surveys
-- get engagement analytics for a survey
-- create an action plan to address employee engagement survey findings
-- human resources
-- action plan management
 - survey management for hr teams
 - list action plans
-- list participants
-- hr professional responsible for running engagement surveys and following up with business units
-- list participants and track who has responded to a survey
-- create a new engagement survey
-- add employees to a survey and send invitation emails
-- create survey
-- survey analytics and reporting
 - add survey participants
-- analytics
-- end-to-end workflow for hr teams running engagement surveys
+- list all allianz employee engagement surveys with status and type filtering
+- analyzing survey results and generating engagement insights
+- create survey
+- list participants
+- add participants
+- creating and tracking improvement initiatives from survey findings
+- insurance
+- list participants and response status
 - create engagement survey
 - enterprise
-- list surveys
-- HR Business Partner
-- list participants and response status
-- employee experience
+- create an action plan from survey insights
 - get analytics
-- insurance
-- get details and configuration of a specific engagement survey
-- list all engagement surveys
-- list engagement surveys
+- human resources
+- add employees as survey participants
+- participant management for a survey
+- analytics
+- surveys
+- action plan management
+- People Analytics Analyst
+- list participants and track who has responded to a survey
+- get engagement analytics for a survey
+- create a new engagement survey
+- end-to-end workflow for hr teams running engagement surveys
+- get survey analytics
 - get engagement survey
-- Team Manager
+- hr professional responsible for running engagement surveys and following up with business units
+- list improvement action plans created from survey findings
+- get details and configuration of a specific engagement survey
+- get aggregated engagement scores, participation rates, and insights for a survey
+- create an action plan to address employee engagement survey findings
+- HR Business Partner
+- create a new annual, pulse, onboarding, or exit engagement survey
+- add employees to a survey and send invitation emails
 - create action plan
-- list all allianz employee engagement surveys with status and type filtering
+- list surveys
+- Team Manager
+- survey analytics and reporting
+- analyst who interprets engagement data and generates insights and recommendations
+- employee experience
+- list action plans for a survey
+- creating and managing employee engagement surveys
+- list all engagement surveys
+- people manager who reviews team-level results and creates action plans
 slug: employee-engagement-workflow
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Allianz Employee Engagement Workflow\"\n  description: \"Workflow capability for HR teams running employee engagement surveys at Allianz, covering survey planning, participant management, results analysis, and action plan tracking.\"\n  tags:\n    - Human Resources\n    - Employee Experience\n    - Surveys\n    - Analytics\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALLIANZ_ENGAGEMENT_CLIENT_ID: ALLIANZ_ENGAGEMENT_CLIENT_ID\n      ALLIANZ_ENGAGEMENT_CLIENT_SECRET: ALLIANZ_ENGAGEMENT_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: allianz-engagement-survey\n      location: ./shared/engagement-survey.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: allianz-employee-engagement-api\n      description: \"Unified REST API for Allianz employee engagement survey workflows.\"\n      resources:\n        - path: /v1/surveys\n          name: surveys\n\
+  \          description: \"Survey management for HR teams\"\n          operations:\n            - method: GET\n              name: list-surveys\n              description: \"List all engagement surveys\"\n              call: \"allianz-engagement-survey.list-surveys\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-survey\n              description: \"Create a new engagement survey\"\n              call: \"allianz-engagement-survey.create-survey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/surveys/{survey_id}/participants\n          name: participants\n          description: \"Participant management for a survey\"\n          operations:\n            - method: GET\n              name: list-participants\n              description: \"List participants and response status\"\n              call: \"allianz-engagement-survey.list-participants\"\
+  \n              with:\n                survey_id: \"rest.survey_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-participants\n              description: \"Add employees as survey participants\"\n              call: \"allianz-engagement-survey.add-participants\"\n              with:\n                survey_id: \"rest.survey_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/surveys/{survey_id}/analytics\n          name: analytics\n          description: \"Survey analytics and reporting\"\n          operations:\n            - method: GET\n              name: get-analytics\n              description: \"Get engagement analytics for a survey\"\n              call: \"allianz-engagement-survey.get-survey-analytics\"\n              with:\n                survey_id: \"rest.survey_id\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/surveys/{survey_id}/action-plans\n          name: action-plans\n          description: \"Action plan management\"\n          operations:\n            - method: GET\n              name: list-action-plans\n              description: \"List action plans for a survey\"\n              call: \"allianz-engagement-survey.list-action-plans\"\n              with:\n                survey_id: \"rest.survey_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-action-plan\n              description: \"Create an action plan from survey insights\"\n              call: \"allianz-engagement-survey.create-action-plan\"\n              with:\n                survey_id: \"rest.survey_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n     \
+  \ port: 9090\n      namespace: allianz-employee-engagement-mcp\n      transport: http\n      description: \"MCP server for AI-assisted employee engagement survey workflows.\"\n      tools:\n        - name: list-engagement-surveys\n          description: \"List all Allianz employee engagement surveys with status and type filtering\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-engagement-survey.list-surveys\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-engagement-survey\n          description: \"Create a new annual, pulse, onboarding, or exit engagement survey\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-engagement-survey.create-survey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-engagement-survey\n          description: \"Get details\
+  \ and configuration of a specific engagement survey\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-engagement-survey.get-survey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-survey-participants\n          description: \"List participants and track who has responded to a survey\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-engagement-survey.list-participants\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: add-survey-participants\n          description: \"Add employees to a survey and send invitation emails\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-engagement-survey.add-participants\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        -\
+  \ name: get-survey-analytics\n          description: \"Get aggregated engagement scores, participation rates, and insights for a survey\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-engagement-survey.get-survey-analytics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-action-plans\n          description: \"List improvement action plans created from survey findings\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-engagement-survey.list-action-plans\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-action-plan\n          description: \"Create an action plan to address employee engagement survey findings\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-engagement-survey.create-action-plan\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/allianz-engagement-survey/refs/heads/main/capabilities/employee-engagement-workflow.yaml
 tags:
 - Human Resources
 - Employee Experience

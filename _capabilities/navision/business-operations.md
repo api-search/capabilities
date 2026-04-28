@@ -59,64 +59,77 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list companies
-- create purchase order
-- microsoft
-- general ledger accounts
-- dynamics nav
-- list inventory items
-- customer management
-- company information
-- list customers
-- sales invoices
-- purchase orders
-- general journals
-- list journals
-- finance
-- create a sales order
-- create a new vendor
-- list vendors
-- create a new sales order
-- inventory
-- list employees
-- single customer
-- create vendor
-- navision
-- list purchase invoices
-- list all items
-- list sales orders
-- list purchase orders
 - list all vendors
-- create a new purchase order
-- list general ledger accounts
-- vendor management
-- sales orders
-- business central
+- list inventory items
+- dynamics nav
 - list all sales orders
-- business management
+- sales invoices
+- create vendor
 - create customer
-- create sales order
-- list accounts
-- create a customer
-- list all purchase orders
-- list all employees
-- list general journals
-- create a new customer
+- sales orders
+- general ledger accounts
 - list available companies
-- create item
-- list all customers
-- sales
-- erp
-- inventory items
-- dynamics 365
-- list items
-- list sales invoices
-- get customer
-- create a new inventory item
-- purchasing
-- get a customer by id
+- create a new customer
+- create a customer
+- single customer
+- inventory
+- list purchase invoices
+- navision
+- create sales order
 - get a customer
+- list accounts
+- create a new purchase order
+- purchase orders
+- list sales invoices
+- business central
+- purchasing
+- list all employees
+- list journals
+- customer management
+- create a sales order
+- inventory items
+- list general ledger accounts
+- list employees
+- business management
+- list vendors
+- list sales orders
+- list general journals
+- get customer
+- list all items
+- finance
+- create purchase order
+- create item
+- list items
+- get a customer by id
+- create a new inventory item
+- create a new sales order
+- create a new vendor
+- list purchase orders
+- microsoft
+- list customers
+- vendor management
+- dynamics 365
+- erp
+- list all purchase orders
+- general journals
+- company information
+- sales
+- list all customers
+- list companies
 slug: business-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynamics NAV Business Operations\"\n  description: \"Unified workflow for day-to-day business operations in Dynamics 365 Business Central combining the Business Central API v2.0 for managing customers, vendors, items, orders, invoices, and financials. Used by accountants, sales teams, and operations managers.\"\n  tags:\n    - Business Central\n    - Dynamics 365\n    - ERP\n    - Finance\n    - Sales\n    - Purchasing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BC_OAUTH_TOKEN: BC_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: business-central-v2\n      location: ./shared/business-central-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: business-ops-api\n      description: \"Unified REST API for Business Central day-to-day business operations.\"\n      resources:\n        - path: /v1/companies\n          name: companies\n          description:\
+  \ \"Company information\"\n          operations:\n            - method: GET\n              name: list-companies\n              description: \"List available companies\"\n              call: \"business-central-v2.list-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers\n          name: customers\n          description: \"Customer management\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"List all customers\"\n              call: \"business-central-v2.list-customers\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: \"Create a customer\"\n              call: \"business-central-v2.create-customer\"\n              with:\n\
+  \                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers/{customer_id}\n          name: customer\n          description: \"Single customer\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Get a customer\"\n              call: \"business-central-v2.get-customer\"\n              with:\n                company_id: \"rest.company_id\"\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/vendors\n          name: vendors\n          description: \"Vendor management\"\n          operations:\n            - method: GET\n              name: list-vendors\n              description: \"List all vendors\"\n              call: \"business-central-v2.list-vendors\"\n              with:\n        \
+  \        company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/items\n          name: items\n          description: \"Inventory items\"\n          operations:\n            - method: GET\n              name: list-items\n              description: \"List all items\"\n              call: \"business-central-v2.list-items\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/sales-orders\n          name: sales-orders\n          description: \"Sales orders\"\n          operations:\n            - method: GET\n              name: list-sales-orders\n              description: \"List sales orders\"\n              call: \"business-central-v2.list-sales-orders\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-sales-order\n              description: \"Create a sales order\"\n              call: \"business-central-v2.create-sales-order\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase orders\"\n          operations:\n            - method: GET\n              name: list-purchase-orders\n              description: \"List purchase orders\"\n              call: \"business-central-v2.list-purchase-orders\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/accounts\n          name: accounts\n          description:\
+  \ \"General ledger accounts\"\n          operations:\n            - method: GET\n              name: list-accounts\n              description: \"List accounts\"\n              call: \"business-central-v2.list-accounts\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/journals\n          name: journals\n          description: \"General journals\"\n          operations:\n            - method: GET\n              name: list-journals\n              description: \"List journals\"\n              call: \"business-central-v2.list-journals\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/sales-invoices\n          name: sales-invoices\n          description: \"Sales invoices\"\n          operations:\n         \
+  \   - method: GET\n              name: list-sales-invoices\n              description: \"List sales invoices\"\n              call: \"business-central-v2.list-sales-invoices\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: business-ops-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Business Central business operations.\"\n      tools:\n        - name: list-companies\n          description: \"List available companies\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-companies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-customers\n          description: \"List all customers\"\n          hints:\n            readOnly: true\n            idempotent:\
+  \ true\n          call: \"business-central-v2.list-customers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-customer\n          description: \"Create a new customer\"\n          hints:\n            readOnly: false\n          call: \"business-central-v2.create-customer\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-customer\n          description: \"Get a customer by ID\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.get-customer\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-vendors\n          description: \"List all vendors\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-vendors\"\n          outputParameters:\n            - type: object\n       \
+  \       mapping: \"$.\"\n\n        - name: create-vendor\n          description: \"Create a new vendor\"\n          hints:\n            readOnly: false\n          call: \"business-central-v2.create-vendor\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-items\n          description: \"List inventory items\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-items\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-item\n          description: \"Create a new inventory item\"\n          hints:\n            readOnly: false\n          call: \"business-central-v2.create-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-sales-orders\n          description: \"List all sales orders\"\n          hints:\n            readOnly: true\n\
+  \            idempotent: true\n          call: \"business-central-v2.list-sales-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-sales-order\n          description: \"Create a new sales order\"\n          hints:\n            readOnly: false\n          call: \"business-central-v2.create-sales-order\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-purchase-orders\n          description: \"List all purchase orders\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-purchase-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-purchase-order\n          description: \"Create a new purchase order\"\n          hints:\n            readOnly: false\n          call: \"business-central-v2.create-purchase-order\"\n         \
+  \ outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-accounts\n          description: \"List general ledger accounts\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-journals\n          description: \"List general journals\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-journals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-sales-invoices\n          description: \"List sales invoices\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-sales-invoices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
+  \n\n        - name: list-purchase-invoices\n          description: \"List purchase invoices\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-purchase-invoices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-employees\n          description: \"List all employees\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"business-central-v2.list-employees\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/navision/refs/heads/main/capabilities/business-operations.yaml
 tags:
 - Business Central
 - Dynamics 365

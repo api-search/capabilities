@@ -9,23 +9,39 @@ personas: []
 provider_name: Amazon Web Services (AWS)
 provider_slug: amazon-web-services-aws
 search_terms:
-- analytics
-- platform as a service
-- computing
-- serverless
-- containers
 - devops
+- security
+- containers
+- cloud computing
+- computing
+- machine learning
+- infrastructure
+- analytics
 - artificial intelligence
-- iaas
+- serverless
 - networking
 - storage
-- infrastructure
-- cloud computing
-- databases
+- platform as a service
 - paas
-- security
-- machine learning
+- iaas
+- databases
 slug: amazon-web-services-aws-capability
+source_yaml: 'id: amazon-web-services-aws-capability
+
+  name: Amazon Web Services AWS Capability
+
+  description: Workflow-oriented capability for Amazon Web Services AWS
+
+  tags:
+
+  - AWS
+
+  consumes:
+
+  - ref: capabilities/shared/amazon-web-services-aws-shared.yaml
+
+  '
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-web-services-aws/refs/heads/main/capabilities/amazon-web-services-aws-capability.yaml
 tags: []
 tools: []
 ---

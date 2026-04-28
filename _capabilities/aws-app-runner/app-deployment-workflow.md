@@ -31,52 +31,60 @@ personas: []
 provider_name: AWS App Runner
 provider_slug: aws-app-runner
 search_terms:
-- containers
-- delete an app runner service and all its resources
+- deployment management
+- Platform Engineer
+- list all app runner services
+- serverless
 - list vpc connectors
 - list connections
-- list vpc connectors for private backend connectivity
-- list all app runner services and their status
-- microservices
-- network connectivity including custom domains and vpc access
-- update service
-- deploy a new containerized application
-- deploy a new containerized web application or api
-- aws
-- service lifecycle from creation to deletion
-- list all app runner services
-- start deployment
-- list auto-scaling configurations for capacity management
-- pause a service to save costs during idle periods
-- vpc connectivity management
-- update application configuration, image, or code source
-- resume a paused service to resume traffic handling
-- list github or bitbucket source code connections
-- pause service
-- auto-scaling and observability configuration
-- deployment
-- deploys and manages containerized web applications and apis
-- aws app runner
-- ci/cd
-- Platform Engineer
-- list auto-scaling configurations
-- describe service
-- get detailed status and configuration of an app runner service
-- Developer
-- deployment management
-- list auto scaling configurations
-- auto-scaling configuration
-- trigger a new deployment of the current image or code
-- manages app runner infrastructure, scaling, and vpc connectivity
-- resume service
-- list services
-- serverless
-- deploy, manage, and scale containerized applications with app runner
-- application service lifecycle
-- delete service
-- create service
 - trigger a new deployment
+- update application configuration, image, or code source
+- vpc connectivity management
+- deploy a new containerized web application or api
+- auto-scaling and observability configuration
+- list github or bitbucket source code connections
+- list auto-scaling configurations
+- aws
+- application service lifecycle
+- create service
+- list all app runner services and their status
+- deployment
+- start deployment
+- Developer
+- service lifecycle from creation to deletion
+- aws app runner
+- resume a paused service to resume traffic handling
+- containers
+- auto-scaling configuration
+- network connectivity including custom domains and vpc access
+- manages app runner infrastructure, scaling, and vpc connectivity
+- list services
+- resume service
+- pause a service to save costs during idle periods
+- list vpc connectors for private backend connectivity
+- delete service
+- get detailed status and configuration of an app runner service
+- describe service
+- trigger a new deployment of the current image or code
+- list auto scaling configurations
+- deploy a new containerized application
+- deploy, manage, and scale containerized applications with app runner
+- deploys and manages containerized web applications and apis
+- microservices
+- ci/cd
+- list auto-scaling configurations for capacity management
+- pause service
+- delete an app runner service and all its resources
+- update service
 slug: app-deployment-workflow
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS App Runner Application Deployment Workflow\"\n  description: \"Workflow for developers and platform engineers to deploy, manage, and monitor containerized web applications and APIs using AWS App Runner. Covers service lifecycle, deployments, auto-scaling, and VPC connectivity.\"\n  tags:\n    - AWS App Runner\n    - AWS\n    - Containers\n    - Deployment\n    - Serverless\n    - CI/CD\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: app-runner\n      location: ./shared/app-runner.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: app-runner-workflow-api\n      description: \"Unified REST API for AWS App Runner application deployment management.\"\n      resources:\n        - path: /v1/services\n\
+  \          name: services\n          description: \"Application service lifecycle\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List all App Runner services\"\n              call: \"app-runner.list-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service\n              description: \"Deploy a new containerized application\"\n              call: \"app-runner.create-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services/{serviceArn}/deployments\n          name: deployments\n          description: \"Deployment management\"\n          operations:\n            - method: POST\n              name: start-deployment\n              description: \"Trigger a new deployment\"\n              call: \"app-runner.start-deployment\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/auto-scaling-configurations\n          name: auto-scaling\n          description: \"Auto-scaling configuration\"\n          operations:\n            - method: GET\n              name: list-auto-scaling-configurations\n              description: \"List auto-scaling configurations\"\n              call: \"app-runner.list-auto-scaling-configurations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vpc-connectors\n          name: vpc-connectors\n          description: \"VPC connectivity management\"\n          operations:\n            - method: GET\n              name: list-vpc-connectors\n              description: \"List VPC connectors\"\n              call: \"app-runner.list-vpc-connectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n \
+  \   - type: mcp\n      port: 9090\n      namespace: app-runner-workflow-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AWS App Runner application deployment.\"\n      tools:\n        - name: list-services\n          description: \"List all App Runner services and their status\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"app-runner.list-services\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-service\n          description: \"Deploy a new containerized web application or API\"\n          hints:\n            readOnly: false\n          call: \"app-runner.create-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-service\n          description: \"Get detailed status and configuration of an App Runner service\"\n          hints:\n            readOnly: true\n          call: \"\
+  app-runner.describe-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-service\n          description: \"Update application configuration, image, or code source\"\n          hints:\n            readOnly: false\n          call: \"app-runner.update-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-service\n          description: \"Delete an App Runner service and all its resources\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"app-runner.delete-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-deployment\n          description: \"Trigger a new deployment of the current image or code\"\n          hints:\n            readOnly: false\n          call: \"app-runner.start-deployment\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: pause-service\n          description: \"Pause a service to save costs during idle periods\"\n          hints:\n            readOnly: false\n          call: \"app-runner.pause-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: resume-service\n          description: \"Resume a paused service to resume traffic handling\"\n          hints:\n            readOnly: false\n          call: \"app-runner.resume-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connections\n          description: \"List GitHub or Bitbucket source code connections\"\n          hints:\n            readOnly: true\n          call: \"app-runner.list-connections\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-auto-scaling-configurations\n          description:\
+  \ \"List auto-scaling configurations for capacity management\"\n          hints:\n            readOnly: true\n          call: \"app-runner.list-auto-scaling-configurations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-vpc-connectors\n          description: \"List VPC connectors for private backend connectivity\"\n          hints:\n            readOnly: true\n          call: \"app-runner.list-vpc-connectors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aws-app-runner/refs/heads/main/capabilities/app-deployment-workflow.yaml
 tags:
 - AWS App Runner
 - AWS

@@ -10,32 +10,36 @@ personas: []
 provider_name: Amazon KMS
 provider_slug: amazon-kms
 search_terms:
-- crypto generate data key
-- returns a unique symmetric data key for use outside of kms.
-- workflow
-- keys describe key
-- provides detailed information about a kms key.
-- unified workflow for amazon kms resource management
-- data protection
-- aws
 - keys create key
-- cryptography
-- crypto decrypt
-- amazon kms
-- encrypts plaintext of up to 4,096 bytes using a kms key.
-- crypto encrypt
-- decrypts ciphertext that was encrypted by a kms key.
-- encryption
-- gets a list of all kms keys in the caller's aws account and region.
-- Developer
-- creates a unique customer managed kms key in your aws account and region.
+- keys describe key
 - keys list keys
 - manages resources and configurations
+- aws
+- encryption
+- Developer
+- workflow
+- gets a list of all kms keys in the caller's aws account and region.
+- unified workflow for amazon kms resource management
+- encrypts plaintext of up to 4,096 bytes using a kms key.
 - key management
+- crypto decrypt
+- cryptography
+- returns a unique symmetric data key for use outside of kms.
+- security
+- decrypts ciphertext that was encrypted by a kms key.
+- provides detailed information about a kms key.
+- crypto generate data key
+- crypto encrypt
+- creates a unique customer managed kms key in your aws account and region.
+- amazon kms
+- data protection
 - integrates api into applications
 - Administrator
-- security
 slug: amazon-kms-workflow
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon KMS Workflow\n  description: Unified workflow capability for Amazon KMS combining resource management and operations.\n  tags:\n  - Amazon KMS\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kms\n    location: ./shared/kms.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kms-api\n    description: REST API for Amazon KMS workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kms-mcp\n    transport: http\n    description: MCP server for Amazon KMS.\n    tools:\n    - name: keys-create-key\n      description: Creates a unique customer managed KMS key in your AWS account and Region.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kms.createkey\n      outputParameters:\n      -\
+  \ type: object\n        mapping: $.\n    - name: keys-list-keys\n      description: Gets a list of all KMS keys in the caller's AWS account and Region.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kms.listkeys\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: keys-describe-key\n      description: Provides detailed information about a KMS key.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kms.describekey\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: crypto-encrypt\n      description: Encrypts plaintext of up to 4,096 bytes using a KMS key.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kms.encrypt\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: crypto-decrypt\n      description: Decrypts ciphertext that was encrypted by a KMS key.\n      hints:\n        readOnly: false\n        idempotent: false\n\
+  \      call: kms.decrypt\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: crypto-generate-data-key\n      description: Returns a unique symmetric data key for use outside of KMS.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kms.generatedatakey\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kms/refs/heads/main/capabilities/amazon-kms-workflow.yaml
 tags:
 - Amazon KMS
 - AWS

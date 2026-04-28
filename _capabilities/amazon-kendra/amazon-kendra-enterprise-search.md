@@ -34,49 +34,56 @@ personas: []
 provider_name: Amazon Kendra
 provider_slug: amazon-kendra
 search_terms:
-- add documents to an index
-- manages enterprise knowledge bases and search indexes
-- list search indexes
+- search index
+- amazon kendra
+- natural language
+- ai
 - connect data source
-- connect a data repository (s3, sharepoint, salesforce, etc.) to a kendra index
-- search
-- intelligent search and information retrieval
-- add documents to an amazon kendra search index
 - create a new search index
-- enterprise search
-- list data source connectors
-- configures and maintains data source connectors and index settings
-- intelligent search
-- search index management
+- manages enterprise knowledge bases and search indexes
+- search an index with natural language
+- add documents to an amazon kendra search index
+- data source connector management
+- add documents to an index
+- search
 - aws
-- list all amazon kendra search indexes
+- enterprise search
 - index documents
-- Knowledge Manager
-- integrates kendra search into applications and rag pipelines
-- list data sources
+- Developer
+- enterprise knowledge organization and discovery
+- create index
+- IT Administrator
+- intelligent search
+- list all search indexes
+- search index management
 - list indexes
+- list data source connectors
+- create a data source connector
+- list data sources
 - list all data source connectors for a kendra index
+- create search index
+- configures and maintains data source connectors and index settings
+- list all amazon kendra search indexes
+- integrates kendra search into applications and rag pipelines
 - create data source
 - machine learning
-- create search index
-- ai
-- search an index with natural language
-- search index
-- natural language
-- create index
-- create a data source connector
-- enterprise knowledge organization and discovery
-- Developer
 - unified workflow for search index management, data connectivity, and query operations
+- list search indexes
 - document management
+- Knowledge Manager
+- intelligent search and information retrieval
 - knowledge management
 - search an amazon kendra index using natural language query
-- list all search indexes
-- amazon kendra
-- IT Administrator
+- connect a data repository (s3, sharepoint, salesforce, etc.) to a kendra index
 - create a new amazon kendra enterprise search index
-- data source connector management
 slug: amazon-kendra-enterprise-search
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Kendra Enterprise Search\"\n  description: \"Unified workflow capability for Amazon Kendra enterprise search, combining index management, data source connectivity, document indexing, and intelligent query operations for knowledge management and RAG workflows.\"\n  tags:\n    - Amazon Kendra\n    - Enterprise Search\n    - Machine Learning\n    - AWS\n    - Knowledge Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: kendra\n      location: ./shared/kendra.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kendra-search-api\n      description: \"Unified REST API for Amazon Kendra enterprise search operations.\"\n      resources:\n        - path: /v1/indexes\n          name: indexes\n          description: \"\
+  Search index management\"\n          operations:\n            - method: POST\n              name: create-index\n              description: \"Create a new search index\"\n              call: \"kendra.create-index\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-indexes\n              description: \"List all search indexes\"\n              call: \"kendra.list-indexes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/indexes/{IndexId}/query\n          name: search\n          description: \"Intelligent search\"\n          operations:\n            - method: POST\n              name: search\n              description: \"Search an index with natural language\"\n              call: \"kendra.query\"\n              with:\n                IndexId: \"rest.IndexId\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/indexes/{IndexId}/data-sources\n          name: data-sources\n          description: \"Data source connector management\"\n          operations:\n            - method: POST\n              name: create-data-source\n              description: \"Create a data source connector\"\n              call: \"kendra.create-data-source\"\n              with:\n                IndexId: \"rest.IndexId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-data-sources\n              description: \"List data source connectors\"\n              call: \"kendra.list-data-sources\"\n              with:\n                IndexId: \"rest.IndexId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/indexes/{IndexId}/documents\n          name: documents\n          description: \"Document\
+  \ management\"\n          operations:\n            - method: POST\n              name: index-documents\n              description: \"Add documents to an index\"\n              call: \"kendra.batch-put-document\"\n              with:\n                IndexId: \"rest.IndexId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: kendra-search-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon Kendra search operations.\"\n      tools:\n        - name: create-search-index\n          description: \"Create a new Amazon Kendra enterprise search index\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"kendra.create-index\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-search-indexes\n          description: \"List all Amazon Kendra search indexes\"\n  \
+  \        hints:\n            readOnly: true\n            idempotent: true\n          call: \"kendra.list-indexes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-index\n          description: \"Search an Amazon Kendra index using natural language query\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"kendra.query\"\n          with:\n            IndexId: \"tools.IndexId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: connect-data-source\n          description: \"Connect a data repository (S3, SharePoint, Salesforce, etc.) to a Kendra index\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"kendra.create-data-source\"\n          with:\n            IndexId: \"tools.IndexId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ list-data-sources\n          description: \"List all data source connectors for a Kendra index\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"kendra.list-data-sources\"\n          with:\n            IndexId: \"tools.IndexId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: index-documents\n          description: \"Add documents to an Amazon Kendra search index\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"kendra.batch-put-document\"\n          with:\n            IndexId: \"tools.IndexId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kendra/refs/heads/main/capabilities/amazon-kendra-enterprise-search.yaml
 tags:
 - Amazon Kendra
 - Enterprise Search

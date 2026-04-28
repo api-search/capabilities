@@ -30,56 +30,66 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- list blobs
-- azure
-- list blobs in a container
 - list cryptographic keys
-- list certificates
-- list resource groups
-- subscription management
-- blob storage
-- get a secret value
-- list databases
 - keyvault get secret
-- infrastructure as a service
-- key vault secret management
-- api management
-- keyvault list keys
-- list subscriptions
-- arm list providers
-- resource manager
-- cosmos list containers
-- list subscription tags
-- cosmos list databases
-- blob get properties
-- list secrets
-- list containers in a database
-- list items in a container
-- cosmos db database management
-- download a blob
-- platform as a service
-- get blob properties
-- keyvault list secrets
-- cloud
-- cloud computing
-- list azure subscriptions
-- blob storage operations
-- keyvault list certificates
-- cosmos db
-- list resources in a subscription
-- enterprise
-- arm list tags
-- arm list resources
 - arm list subscriptions
-- cosmos list items
-- arm list resource groups
-- t1
-- blob list blobs
-- list resource providers
-- key vault
+- platform as a service
+- cosmos list databases
+- list blobs
+- blob get properties
 - list cosmos db databases
+- api management
+- keyvault list certificates
+- cosmos db database management
+- cosmos list items
+- enterprise
+- resource manager
+- blob storage operations
+- list databases
+- keyvault list secrets
+- subscription management
+- get a secret value
+- key vault secret management
+- arm list resources
+- azure
+- list resources in a subscription
+- cosmos db
+- list azure subscriptions
+- infrastructure as a service
+- list containers in a database
+- cosmos list containers
+- keyvault list keys
+- cloud computing
+- list resource groups
+- list secrets
+- blob storage
+- key vault
+- download a blob
 - blob download
+- list subscription tags
+- t1
+- arm list resource groups
+- blob list blobs
+- cloud
+- list resource providers
+- list subscriptions
+- list items in a container
+- list blobs in a container
+- arm list providers
+- get blob properties
+- arm list tags
+- list certificates
 slug: data-and-security
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Data and Security\"\n  description: \"Unified workflow for Azure data infrastructure and security combining Cosmos DB for NoSQL data, Blob Storage for object storage, Key Vault for secrets management, and Resource Manager for infrastructure governance. Used by cloud architects, data engineers, and security teams.\"\n  tags:\n    - Azure\n    - Cosmos DB\n    - Blob Storage\n    - Key Vault\n    - Resource Manager\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n      AZURE_COSMOS_KEY: AZURE_COSMOS_KEY\n      AZURE_STORAGE_KEY: AZURE_STORAGE_KEY\n      AZURE_KEY_VAULT_TOKEN: AZURE_KEY_VAULT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-cosmos\n      location: ./shared/cosmos-db.yaml\n    - import: azure-blob\n      location: ./shared/blob-storage.yaml\n    - import: azure-keyvault\n      location: ./shared/key-vault.yaml\n\
+  \    - import: azure-arm\n      location: ./shared/resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: azure-data-security-api\n      description: \"Unified REST API for Azure data and security operations.\"\n      resources:\n        - path: /v1/databases\n          name: databases\n          description: \"Cosmos DB database management\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List Cosmos DB databases\"\n              call: \"azure-cosmos.list-databases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blobs\n          name: blobs\n          description: \"Blob storage operations\"\n          operations:\n            - method: GET\n              name: list-blobs\n              description: \"List blobs in a container\"\n              call: \"azure-blob.list-blobs\"\n              with:\n            \
+  \    containerName: \"rest.containerName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets\n          name: secrets\n          description: \"Key Vault secret management\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List secrets\"\n              call: \"azure-keyvault.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Subscription management\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List subscriptions\"\n              call: \"azure-arm.list-subscriptions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace:\
+  \ azure-data-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure data and security operations.\"\n      tools:\n        - name: cosmos-list-databases\n          description: \"List Cosmos DB databases\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-cosmos.list-databases\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cosmos-list-containers\n          description: \"List containers in a database\"\n          hints:\n            readOnly: true\n          call: \"azure-cosmos.list-containers\"\n          with:\n            databaseId: \"tools.databaseId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cosmos-list-items\n          description: \"List items in a container\"\n          hints:\n            readOnly: true\n          call: \"azure-cosmos.list-items\"\n          with:\n  \
+  \          databaseId: \"tools.databaseId\"\n            containerId: \"tools.containerId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: blob-list-blobs\n          description: \"List blobs in a container\"\n          hints:\n            readOnly: true\n          call: \"azure-blob.list-blobs\"\n          with:\n            containerName: \"tools.containerName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: blob-download\n          description: \"Download a blob\"\n          hints:\n            readOnly: true\n          call: \"azure-blob.download-blob\"\n          with:\n            containerName: \"tools.containerName\"\n            blobName: \"tools.blobName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: blob-get-properties\n          description: \"Get blob properties\"\n          hints:\n            readOnly:\
+  \ true\n          call: \"azure-blob.get-blob-properties\"\n          with:\n            containerName: \"tools.containerName\"\n            blobName: \"tools.blobName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: keyvault-list-keys\n          description: \"List cryptographic keys\"\n          hints:\n            readOnly: true\n          call: \"azure-keyvault.list-keys\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: keyvault-list-secrets\n          description: \"List secrets\"\n          hints:\n            readOnly: true\n          call: \"azure-keyvault.list-secrets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: keyvault-get-secret\n          description: \"Get a secret value\"\n          hints:\n            readOnly: true\n          call: \"azure-keyvault.get-secret\"\n          with:\n            secretName:\
+  \ \"tools.secretName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: keyvault-list-certificates\n          description: \"List certificates\"\n          hints:\n            readOnly: true\n          call: \"azure-keyvault.list-certificates\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: arm-list-subscriptions\n          description: \"List Azure subscriptions\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-arm.list-subscriptions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: arm-list-resource-groups\n          description: \"List resource groups\"\n          hints:\n            readOnly: true\n          call: \"azure-arm.list-resource-groups\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: arm-list-resources\n          description: \"List resources in a subscription\"\n          hints:\n            readOnly: true\n          call: \"azure-arm.list-resources\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: arm-list-providers\n          description: \"List resource providers\"\n          hints:\n            readOnly: true\n          call: \"azure-arm.list-providers\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: arm-list-tags\n          description: \"List subscription tags\"\n          hints:\n            readOnly: true\n          call: \"azure-arm.list-tags\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n  \
+  \          - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure/refs/heads/main/capabilities/data-and-security.yaml
 tags:
 - Azure
 - Cosmos DB

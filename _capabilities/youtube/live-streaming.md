@@ -66,61 +66,73 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- create a new live broadcast
-- manage live broadcasts
-- list live chat messages
-- create a new live stream
-- broadcasting
-- create stream
-- delete broadcast
-- send a live chat message
-- manage live chat moderators
-- remove moderator
-- update live broadcast settings
-- list messages in live chat
-- google
-- list live video streams
-- create broadcast
-- delete stream
-- update stream
-- add a live chat moderator
-- transition broadcast
-- send chat message
-- list live chat moderators
-- add moderator
-- bind broadcast
-- remove a live chat moderator
-- social
-- manage live video streams
-- delete a broadcast
-- delete a live stream
-- update broadcast
-- video
-- youtube
-- create a new live video stream
-- update stream settings
-- live streaming
-- manage live chat messages
-- list moderators
-- list broadcasts
-- bind a broadcast to a video stream
-- transition broadcast status (testing, live, complete)
-- live chat
-- list live broadcasts
-- list streams
-- media
 - delete chat message
-- send a message to live chat
-- list live streams
-- videos
-- update broadcast settings
-- list chat messages
-- list youtube live broadcasts
-- create a new live broadcast event
-- delete a live chat message
-- delete a live broadcast
+- create a new live broadcast
+- list moderators
+- list live broadcasts
+- create a new live stream
 - streaming
+- manage live broadcasts
+- transition broadcast
+- list chat messages
+- create a new live broadcast event
+- update live broadcast settings
+- manage live chat messages
+- video
+- update broadcast
+- bind broadcast
+- list live chat moderators
+- social
+- list messages in live chat
+- delete a live broadcast
+- bind a broadcast to a video stream
+- create stream
+- remove moderator
+- send chat message
+- delete stream
+- send a live chat message
+- videos
+- transition broadcast status (testing, live, complete)
+- list streams
+- add moderator
+- list youtube live broadcasts
+- manage live chat moderators
+- delete broadcast
+- broadcasting
+- live streaming
+- manage live video streams
+- list live chat messages
+- youtube
+- create broadcast
+- google
+- media
+- update stream
+- delete a live stream
+- delete a live chat message
+- send a message to live chat
+- remove a live chat moderator
+- create a new live video stream
+- list live video streams
+- update broadcast settings
+- list live streams
+- add a live chat moderator
+- update stream settings
+- list broadcasts
+- live chat
+- delete a broadcast
 slug: live-streaming
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Live Streaming\"\n  description: \"Workflow for managing YouTube live events including scheduling broadcasts, linking streams, managing live chat, and moderating live interactions. Designed for live event producers, streaming teams, and broadcast operators.\"\n  tags:\n    - YouTube\n    - Live Streaming\n    - Broadcasting\n    - Live Chat\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-live\n      location: ./shared/live-streaming.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: live-streaming-api\n      description: \"Unified REST API for YouTube live streaming workflows.\"\n      resources:\n        - path: /v1/broadcasts\n          name: broadcasts\n          description: \"Manage live broadcasts\"\n          operations:\n            - method: GET\n\
+  \              name: list-broadcasts\n              description: \"List live broadcasts\"\n              call: \"youtube-live.list-live-broadcasts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-broadcast\n              description: \"Create a new live broadcast\"\n              call: \"youtube-live.insert-live-broadcast\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-broadcast\n              description: \"Update broadcast settings\"\n              call: \"youtube-live.update-live-broadcast\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-broadcast\n              description: \"Delete a broadcast\"\n              call: \"youtube-live.delete-live-broadcast\"\n \
+  \             outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/streams\n          name: streams\n          description: \"Manage live video streams\"\n          operations:\n            - method: GET\n              name: list-streams\n              description: \"List live streams\"\n              call: \"youtube-live.list-live-streams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-stream\n              description: \"Create a new live stream\"\n              call: \"youtube-live.insert-live-stream\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-stream\n              description: \"Update stream settings\"\n              call: \"youtube-live.update-live-stream\"\n              outputParameters:\n                -\
+  \ type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-stream\n              description: \"Delete a live stream\"\n              call: \"youtube-live.delete-live-stream\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/chat-messages\n          name: chat-messages\n          description: \"Manage live chat messages\"\n          operations:\n            - method: GET\n              name: list-chat-messages\n              description: \"List live chat messages\"\n              call: \"youtube-live.list-live-chat-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-chat-message\n              description: \"Send a live chat message\"\n              call: \"youtube-live.insert-live-chat-message\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-chat-message\n              description: \"Delete a live chat message\"\n              call: \"youtube-live.delete-live-chat-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/chat-moderators\n          name: chat-moderators\n          description: \"Manage live chat moderators\"\n          operations:\n            - method: GET\n              name: list-moderators\n              description: \"List live chat moderators\"\n              call: \"youtube-live.list-live-chat-moderators\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-moderator\n              description: \"Add a live chat moderator\"\n              call: \"youtube-live.insert-live-chat-moderator\"\n              outputParameters:\n                -\
+  \ type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: remove-moderator\n              description: \"Remove a live chat moderator\"\n              call: \"youtube-live.delete-live-chat-moderator\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: live-streaming-mcp\n      transport: http\n      description: \"MCP server for AI-assisted YouTube live streaming management.\"\n      tools:\n        - name: list-broadcasts\n          description: \"List YouTube live broadcasts\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-live.list-live-broadcasts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-broadcast\n          description: \"Create a new live broadcast event\"\n          hints:\n            readOnly: false\n     \
+  \       idempotent: false\n          call: \"youtube-live.insert-live-broadcast\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-broadcast\n          description: \"Update live broadcast settings\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-live.update-live-broadcast\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-broadcast\n          description: \"Delete a live broadcast\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-live.delete-live-broadcast\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: bind-broadcast\n          description: \"Bind a broadcast to a video stream\"\n          hints:\n            readOnly: false\n            idempotent: true\n    \
+  \      call: \"youtube-live.bind-live-broadcast\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transition-broadcast\n          description: \"Transition broadcast status (testing, live, complete)\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-live.transition-live-broadcast\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-streams\n          description: \"List live video streams\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-live.list-live-streams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-stream\n          description: \"Create a new live video stream\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-live.insert-live-stream\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-chat-messages\n          description: \"List messages in live chat\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-live.list-live-chat-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-chat-message\n          description: \"Send a message to live chat\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-live.insert-live-chat-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-chat-message\n          description: \"Delete a live chat message\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-live.delete-live-chat-message\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-moderators\n          description: \"List live chat moderators\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-live.list-live-chat-moderators\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-moderator\n          description: \"Add a live chat moderator\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-live.insert-live-chat-moderator\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-moderator\n          description: \"Remove a live chat moderator\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-live.delete-live-chat-moderator\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/youtube/refs/heads/main/capabilities/live-streaming.yaml
 tags:
 - YouTube
 - Live Streaming

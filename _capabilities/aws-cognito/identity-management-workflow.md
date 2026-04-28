@@ -40,55 +40,64 @@ personas: []
 provider_name: Amazon Cognito
 provider_slug: aws-cognito
 search_terms:
-- list all cognito user pools in the account
-- creating and configuring user pools with authentication flows and policies
-- identity
 - create user
 - get configuration details of a cognito user pool
-- oidc
-- list user groups
-- amazon cognito
-- create identity pool
-- get details of a specific user in a cognito user pool
-- configures cognito user pools and app clients for application authentication
-- list all user pools
-- list all federated identity pools
-- authentication
-- user account management
-- user management
-- oauth2
-- user group management
-- authorization
-- aws
-- list users in a user pool
-- identity provider
-- Identity Engineer
-- create a new cognito user pool for authentication
-- managing user accounts, groups, and access within user pools
-- create a new user account in a cognito user pool
-- list user groups in a cognito user pool
 - user pool lifecycle management
-- create a federated identity pool for credential vending
-- get user
-- list identity pools
+- list users in a cognito user pool
+- list all federated identity pools
+- describe identity pool
+- identity provider
+- create identity pool
+- get details of a federated identity pool
+- create a user in a user pool
+- user account management
+- amazon cognito
+- authentication
+- create a new cognito user pool for authentication
+- aws
+- oidc
+- creating and configuring user pools with authentication flows and policies
+- get details of a specific user in a cognito user pool
+- list all cognito user pools in the account
+- Application Developer
 - create user pool
+- list user groups
+- list groups
+- list all user pools
+- authorization
+- list user groups in a cognito user pool
+- list identity pools
+- create a new user pool
+- federated identity pool management
+- configures cognito user pools and app clients for application authentication
+- Identity Engineer
+- managing user accounts, groups, and access within user pools
+- user group management
 - list users
 - identity management
-- list groups
-- describe identity pool
-- managing federated identities and temporary aws credential vending
-- list users in a cognito user pool
-- federated identity pool management
-- get details of a federated identity pool
-- create a new user pool
-- manage cognito user pools, users, groups, and federated identity pools
-- Application Developer
-- manages cognito user pools, federation, and access control policies
-- describe user pool
-- create a federated identity pool
-- create a user in a user pool
+- user management
+- oauth2
+- create a federated identity pool for credential vending
+- identity
 - list user pools
+- manages cognito user pools, federation, and access control policies
+- create a new user account in a cognito user pool
+- get user
+- create a federated identity pool
+- describe user pool
+- list users in a user pool
+- managing federated identities and temporary aws credential vending
+- manage cognito user pools, users, groups, and federated identity pools
 slug: identity-management-workflow
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Cognito Identity Management Workflow\"\n  description: \"Unified workflow for identity and access management engineers to manage Cognito user pools, user accounts, groups, and federated identity pools. Combines the Identity Provider and Federated Identity APIs for complete user lifecycle and credential management.\"\n  tags:\n    - Amazon Cognito\n    - AWS\n    - Authentication\n    - Authorization\n    - Identity Management\n    - User Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cognito-idp\n      location: ./shared/cognito-identity-provider.yaml\n    - import: cognito-identity\n      location: ./shared/cognito-identity.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace:\
+  \ cognito-workflow-api\n      description: \"Unified REST API for Amazon Cognito identity management.\"\n      resources:\n        - path: /v1/user-pools\n          name: user-pools\n          description: \"User pool lifecycle management\"\n          operations:\n            - method: GET\n              name: list-user-pools\n              description: \"List all user pools\"\n              call: \"cognito-idp.list-user-pools\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user-pool\n              description: \"Create a new user pool\"\n              call: \"cognito-idp.create-user-pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/user-pools/{userPoolId}/users\n          name: users\n          description: \"User account management\"\n          operations:\n            - method: GET\n              name:\
+  \ list-users\n              description: \"List users in a user pool\"\n              call: \"cognito-idp.list-users\"\n              with:\n                user_pool_id: \"rest.userPoolId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a user in a user pool\"\n              call: \"cognito-idp.admin-create-user\"\n              with:\n                user_pool_id: \"rest.userPoolId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/user-pools/{userPoolId}/groups\n          name: groups\n          description: \"User group management\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List user groups\"\n              call: \"cognito-idp.list-groups\"\n              with:\n                user_pool_id: \"\
+  rest.userPoolId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/identity-pools\n          name: identity-pools\n          description: \"Federated identity pool management\"\n          operations:\n            - method: GET\n              name: list-identity-pools\n              description: \"List all federated identity pools\"\n              call: \"cognito-identity.list-identity-pools\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-identity-pool\n              description: \"Create a federated identity pool\"\n              call: \"cognito-identity.create-identity-pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: cognito-workflow-mcp\n      transport: http\n      description: \"MCP server for\
+  \ AI-assisted Amazon Cognito identity management.\"\n      tools:\n        - name: list-user-pools\n          description: \"List all Cognito user pools in the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cognito-idp.list-user-pools\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user-pool\n          description: \"Create a new Cognito user pool for authentication\"\n          hints:\n            readOnly: false\n          call: \"cognito-idp.create-user-pool\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-user-pool\n          description: \"Get configuration details of a Cognito user pool\"\n          hints:\n            readOnly: true\n          call: \"cognito-idp.describe-user-pool\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n\
+  \          description: \"List users in a Cognito user pool\"\n          hints:\n            readOnly: true\n          call: \"cognito-idp.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new user account in a Cognito user pool\"\n          hints:\n            readOnly: false\n          call: \"cognito-idp.admin-create-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get details of a specific user in a Cognito user pool\"\n          hints:\n            readOnly: true\n          call: \"cognito-idp.admin-get-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List user groups in a Cognito user pool\"\n          hints:\n            readOnly: true\n          call: \"cognito-idp.list-groups\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-identity-pools\n          description: \"List all federated identity pools\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cognito-identity.list-identity-pools\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-identity-pool\n          description: \"Create a federated identity pool for credential vending\"\n          hints:\n            readOnly: false\n          call: \"cognito-identity.create-identity-pool\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-identity-pool\n          description: \"Get details of a federated identity pool\"\n          hints:\n            readOnly: true\n          call: \"cognito-identity.describe-identity-pool\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aws-cognito/refs/heads/main/capabilities/identity-management-workflow.yaml
 tags:
 - Amazon Cognito
 - AWS

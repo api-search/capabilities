@@ -40,69 +40,77 @@ personas: []
 provider_name: Merge
 provider_slug: merge
 search_terms:
-- recruiting
-- create a new candidate in the ats.
-- create a time off request.
-- Recruiter
-- candidate sourcing, applications, interviews, and offers.
-- hris list companies
-- list employees from the connected hris.
-- list all candidates.
-- ats list offers
-- employee management, benefits, time off, and payroll.
-- ticket management and customer communication.
-- ats list applications
-- list all offers.
-- list all applications.
-- hris list employees
-- end-to-end talent management combining hris and ats.
-- create a new employee.
-- create an employee in the hris.
-- ats create candidate
-- manages employee records, time off, and hr processes.
-- manages candidate pipeline and hiring workflow.
-- crm, leads, opportunities, and engagements.
-- hris create time off
-- talent management
-- list time off requests.
-- list companies from the hris.
-- ats
-- list employees
-- list all applications from the ats.
-- hris create employee
-- time off management.
-- create a new candidate.
 - application tracking.
-- list jobs
-- ats list jobs
-- integrations
-- list time off
-- unified api
-- manages tickets and customer support issues.
-- list scheduled interviews.
-- manages leads, opportunities, and crm activities.
-- hris list time off
-- job postings.
-- ats list candidates
-- create candidate
-- file storage, sharing, and permissions.
-- list all open job postings.
-- list candidates
-- invoicing, payments, expenses, and financial reporting.
-- list candidates from the connected ats.
-- list all job postings.
-- ats list interviews
-- list applications
-- platform
-- candidate pipeline management.
-- hris
-- employee records.
+- ats list offers
+- list companies from the hris.
+- manages candidate pipeline and hiring workflow.
+- list time off requests.
+- employee management, benefits, time off, and payroll.
+- list all candidates.
+- list all applications.
 - list all employees.
-- merge
-- HR Manager
+- ats
+- list candidates
+- create a time off request.
+- list all offers.
+- unified api
+- list applications
 - manages invoices, payments, and financial reporting.
+- time off management.
+- list scheduled interviews.
+- HR Manager
+- list jobs
+- list all job postings.
+- ats list applications
+- end-to-end talent management combining hris and ats.
 - create employee
+- create an employee in the hris.
+- platform
+- ats list jobs
+- ats list candidates
+- file storage, sharing, and permissions.
+- list employees
+- hris list employees
+- ats create candidate
+- ats list interviews
+- Recruiter
+- merge
+- list time off
+- create a new candidate.
+- hris list time off
+- hris create time off
+- manages leads, opportunities, and crm activities.
+- list employees from the connected hris.
+- candidate sourcing, applications, interviews, and offers.
+- crm, leads, opportunities, and engagements.
+- candidate pipeline management.
+- job postings.
+- list all applications from the ats.
+- list candidates from the connected ats.
+- create a new employee.
+- create a new candidate in the ats.
+- recruiting
+- invoicing, payments, expenses, and financial reporting.
+- ticket management and customer communication.
+- integrations
+- employee records.
+- manages employee records, time off, and hr processes.
+- manages tickets and customer support issues.
+- list all open job postings.
+- create candidate
+- hris create employee
+- talent management
+- hris
+- hris list companies
 slug: talent-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Merge Talent Management\"\n  description: \"Unified workflow combining HRIS and ATS APIs for end-to-end talent management, from candidate sourcing through onboarding and employee lifecycle. Used by HR teams, recruiters, and people operations.\"\n  tags:\n    - Merge\n    - Talent Management\n    - HRIS\n    - ATS\n    - Recruiting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MERGE_API_KEY: MERGE_API_KEY\n      MERGE_ACCOUNT_TOKEN: MERGE_ACCOUNT_TOKEN\n\ncapability:\n  consumes:\n    - import: merge-hris\n      location: ./shared/merge-hris-api.yaml\n    - import: merge-ats\n      location: ./shared/merge-ats-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: merge-talent-api\n      description: \"Unified REST API for talent management across HRIS and ATS.\"\n      resources:\n        - path: /v1/candidates\n          name: candidates\n         \
+  \ description: \"Candidate pipeline management.\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List all candidates.\"\n              call: \"merge-ats.list-candidates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-candidate\n              description: \"Create a new candidate.\"\n              call: \"merge-ats.create-candidate\"\n              with:\n                model: \"rest.model\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications\n          name: applications\n          description: \"Application tracking.\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"List all applications.\"\n              call: \"merge-ats.list-applications\"\n            \
+  \  outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Job postings.\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List all job postings.\"\n              call: \"merge-ats.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees\n          name: employees\n          description: \"Employee records.\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"List all employees.\"\n              call: \"merge-hris.list-employees\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-employee\n              description: \"Create a new employee.\"\n              call: \"merge-hris.create-employee\"\
+  \n              with:\n                model: \"rest.model\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/time-off\n          name: time-off\n          description: \"Time off management.\"\n          operations:\n            - method: GET\n              name: list-time-off\n              description: \"List time off requests.\"\n              call: \"merge-hris.list-time-off\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: merge-talent-mcp\n      transport: http\n      description: \"MCP server for AI-assisted talent management.\"\n      tools:\n        - name: ats-list-candidates\n          description: \"List candidates from the connected ATS.\"\n          hints:\n            readOnly: true\n          call: \"merge-ats.list-candidates\"\n          outputParameters:\n            - type: object\n       \
+  \       mapping: \"$.\"\n        - name: ats-create-candidate\n          description: \"Create a new candidate in the ATS.\"\n          hints:\n            readOnly: false\n          call: \"merge-ats.create-candidate\"\n          with:\n            model: \"tools.model\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ats-list-applications\n          description: \"List all applications from the ATS.\"\n          hints:\n            readOnly: true\n          call: \"merge-ats.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ats-list-jobs\n          description: \"List all open job postings.\"\n          hints:\n            readOnly: true\n          call: \"merge-ats.list-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ats-list-interviews\n          description: \"List scheduled interviews.\"\
+  \n          hints:\n            readOnly: true\n          call: \"merge-ats.list-interviews\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ats-list-offers\n          description: \"List all offers.\"\n          hints:\n            readOnly: true\n          call: \"merge-ats.list-offers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hris-list-employees\n          description: \"List employees from the connected HRIS.\"\n          hints:\n            readOnly: true\n          call: \"merge-hris.list-employees\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hris-create-employee\n          description: \"Create an employee in the HRIS.\"\n          hints:\n            readOnly: false\n          call: \"merge-hris.create-employee\"\n          with:\n            model: \"tools.model\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: hris-list-companies\n          description: \"List companies from the HRIS.\"\n          hints:\n            readOnly: true\n          call: \"merge-hris.list-companies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hris-list-time-off\n          description: \"List time off requests.\"\n          hints:\n            readOnly: true\n          call: \"merge-hris.list-time-off\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hris-create-time-off\n          description: \"Create a time off request.\"\n          hints:\n            readOnly: false\n          call: \"merge-hris.create-time-off\"\n          with:\n            model: \"tools.model\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/merge/refs/heads/main/capabilities/talent-management.yaml
 tags:
 - Merge
 - Talent Management

@@ -43,56 +43,65 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- model details.
-- create a message batch.
-- delete a batch.
-- generative ai
-- messaging
-- retrieve message batch results
-- token counting.
-- chatbot
-- send a message to claude and receive a response.
-- get message batch status and details.
-- get batch
-- list available models.
-- get batch status.
-- get model
-- conversational ai
-- get model metadata.
-- list message batches
-- cancel an in-progress batch.
-- cancel message batch
-- anthropic
-- list available claude models.
-- count message tokens
-- create a message.
-- machine learning
-- create message batch
-- ai
-- count tokens
-- delete batch
-- get completed batch results.
-- create batch
-- create message
-- list models
-- list batches
-- delete a completed batch.
-- delete message batch
-- message operations.
-- retrieve message batch
-- model discovery.
-- claude
-- create a batch of message requests.
-- artificial intelligence
 - large language models
-- list all message batches.
-- natural language processing
-- count tokens in a message.
-- list message batches.
+- create a message.
 - batch management.
-- individual batch management.
+- ai
+- list models
+- token counting.
+- create batch
+- get model metadata.
+- get batch
+- model details.
+- list message batches.
+- get message batch status and details.
+- conversational ai
+- delete a completed batch.
+- artificial intelligence
+- delete a batch.
+- create message batch
+- delete message batch
+- chatbot
+- list batches
+- list available models.
+- cancel an in-progress batch.
+- list message batches
+- delete batch
+- list all message batches.
+- create a batch of message requests.
+- create message
+- natural language processing
+- count tokens
+- retrieve message batch results
+- claude
+- list available claude models.
+- message operations.
 - count message tokens.
+- messaging
+- retrieve message batch
+- create a message batch.
+- model discovery.
+- send a message to claude and receive a response.
+- generative ai
+- anthropic
+- individual batch management.
+- cancel message batch
+- machine learning
+- get model
+- get batch status.
+- count tokens in a message.
+- count message tokens
+- get completed batch results.
 slug: ai-messaging
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Claude AI Messaging\"\n  description: \"Unified workflow for AI-powered messaging, token counting, batch processing, and model discovery. Used by AI application developers and data scientists.\"\n  tags:\n    - Anthropic\n    - Claude\n    - AI\n    - Messaging\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ANTHROPIC_API_KEY: ANTHROPIC_API_KEY\n\ncapability:\n  consumes:\n    - import: claude-messages\n      location: ./shared/claude-messages.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ai-messaging-api\n      description: \"Unified REST API for Claude AI messaging.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Message operations.\"\n          operations:\n            - method: POST\n              name: create-message\n              description: \"Create a message.\"\n              call: \"\
+  claude-messages.create-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/token-counts\n          name: token-counts\n          description: \"Token counting.\"\n          operations:\n            - method: POST\n              name: count-tokens\n              description: \"Count message tokens.\"\n              call: \"claude-messages.count-message-tokens\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batches\n          name: batches\n          description: \"Batch management.\"\n          operations:\n            - method: GET\n              name: list-batches\n              description: \"List message batches.\"\n              call: \"claude-messages.list-message-batches\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-batch\n\
+  \              description: \"Create a message batch.\"\n              call: \"claude-messages.create-message-batch\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batches/{id}\n          name: batch-details\n          description: \"Individual batch management.\"\n          operations:\n            - method: GET\n              name: get-batch\n              description: \"Get batch status.\"\n              call: \"claude-messages.retrieve-message-batch\"\n              with:\n                message_batch_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-batch\n              description: \"Delete a batch.\"\n              call: \"claude-messages.delete-message-batch\"\n              with:\n                message_batch_id: \"rest.id\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name: models\n          description: \"Model discovery.\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List available models.\"\n              call: \"claude-messages.list-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models/{id}\n          name: model-details\n          description: \"Model details.\"\n          operations:\n            - method: GET\n              name: get-model\n              description: \"Get model metadata.\"\n              call: \"claude-messages.get-model\"\n              with:\n                model_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: ai-messaging-mcp\n      transport: http\n      description: \"\
+  MCP server for AI-assisted Claude messaging.\"\n      tools:\n        - name: create-message\n          description: \"Send a message to Claude and receive a response.\"\n          hints:\n            readOnly: false\n          call: \"claude-messages.create-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: count-message-tokens\n          description: \"Count tokens in a message.\"\n          hints:\n            readOnly: true\n          call: \"claude-messages.count-message-tokens\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-message-batch\n          description: \"Create a batch of message requests.\"\n          hints:\n            readOnly: false\n          call: \"claude-messages.create-message-batch\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-message-batches\n          description: \"\
+  List all message batches.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"claude-messages.list-message-batches\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: retrieve-message-batch\n          description: \"Get message batch status and details.\"\n          hints:\n            readOnly: true\n          call: \"claude-messages.retrieve-message-batch\"\n          with:\n            message_batch_id: \"tools.message_batch_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: retrieve-message-batch-results\n          description: \"Get completed batch results.\"\n          hints:\n            readOnly: true\n          call: \"claude-messages.retrieve-message-batch-results\"\n          with:\n            message_batch_id: \"tools.message_batch_id\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n        - name: cancel-message-batch\n          description: \"Cancel an in-progress batch.\"\n          hints:\n            readOnly: false\n          call: \"claude-messages.cancel-message-batch\"\n          with:\n            message_batch_id: \"tools.message_batch_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-message-batch\n          description: \"Delete a completed batch.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"claude-messages.delete-message-batch\"\n          with:\n            message_batch_id: \"tools.message_batch_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-models\n          description: \"List available Claude models.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"claude-messages.list-models\"\n\
+  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-model\n          description: \"Get model metadata.\"\n          hints:\n            readOnly: true\n          call: \"claude-messages.get-model\"\n          with:\n            model_id: \"tools.model_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/claude/refs/heads/main/capabilities/ai-messaging.yaml
 tags:
 - Anthropic
 - Claude

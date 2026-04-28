@@ -54,51 +54,63 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- get instance details
-- list instance console connections
-- list compute images
-- terminate instance
-- perform an action on an instance (start, stop, reset)
-- list available compute shapes
-- manage a specific image
-- manage compute images
+- delete a custom image
+- update image
 - list vnic attachments in a compartment
-- list images
-- list instances
-- launch a new compute instance
-- launch instance
 - create a custom image from an instance
-- infrastructure
-- get details of a specific image
+- list available compute shapes
+- list shapes
 - compute
-- oracle
-- manage compute instances
-- create a custom image
-- get image details
-- list volume attachments
-- terminate an instance
-- get instance
-- create image
-- update image details
-- list vnic attachments
-- instance action
-- delete image
-- get details of a specific instance
 - database
+- launch a new compute instance
+- list volume attachments in a compartment
+- instance action
+- list compute images
+- get details of a specific instance
+- enterprise
+- manage a specific image
+- get image details
+- get details of a specific image
+- terminate an instance
+- infrastructure
+- update image details
+- list compute instances in a compartment
+- oracle
+- list images
+- get instance details
+- create image
+- create a custom image
+- list instances
+- get image
+- launch instance
+- manage compute images
+- list volume attachments
+- manage compute instances
+- list vnic attachments
 - cloud
+- list instance console connections
+- delete image
+- perform an action on an instance (start, stop, reset)
+- list console connections
 - update instance details
 - saas
-- get image
-- update image
-- manage a specific compute instance
-- list console connections
-- list volume attachments in a compartment
-- list compute instances in a compartment
-- list shapes
-- enterprise
+- get instance
+- terminate instance
 - update instance
-- delete a custom image
+- manage a specific compute instance
 slug: cloud-compute
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle Cloud Compute Management\"\n  description: \"Manage Oracle Cloud Infrastructure compute resources including instances, images, shapes, and attachments. Used by cloud engineers and platform administrators.\"\n  tags:\n    - Oracle\n    - Cloud\n    - Compute\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OCI_API_KEY: OCI_API_KEY\n      OCI_TENANCY_OCID: OCI_TENANCY_OCID\n      OCI_USER_OCID: OCI_USER_OCID\n      OCI_FINGERPRINT: OCI_FINGERPRINT\n\ncapability:\n  consumes:\n    - import: oci-compute\n      location: ./shared/oci-compute.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oracle-compute-api\n      description: \"Unified REST API for Oracle Cloud compute resource management.\"\n      resources:\n        - path: /v1/instances\n          name: instances\n          description: \"Manage compute instances\"\n     \
+  \     operations:\n            - method: GET\n              name: list-instances\n              description: \"List compute instances in a compartment\"\n              call: \"oci-compute.list-instances\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: launch-instance\n              description: \"Launch a new compute instance\"\n              call: \"oci-compute.launch-instance\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/instances/{instanceId}\n          name: instance\n          description: \"Manage a specific compute instance\"\n          operations:\n            - method: GET\n              name: get-instance\n              description: \"Get instance details\"\
+  \n              call: \"oci-compute.get-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-instance\n              description: \"Update instance details\"\n              call: \"oci-compute.update-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: terminate-instance\n              description: \"Terminate an instance\"\n              call: \"oci-compute.terminate-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shapes\n          name: shapes\n          description: \"List available\
+  \ compute shapes\"\n          operations:\n            - method: GET\n              name: list-shapes\n              description: \"List available compute shapes\"\n              call: \"oci-compute.list-shapes\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Manage compute images\"\n          operations:\n            - method: GET\n              name: list-images\n              description: \"List compute images\"\n              call: \"oci-compute.list-images\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-image\n              description: \"Create a custom image\"\n              call: \"oci-compute.create-image\"\
+  \n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images/{imageId}\n          name: image\n          description: \"Manage a specific image\"\n          operations:\n            - method: GET\n              name: get-image\n              description: \"Get image details\"\n              call: \"oci-compute.get-image\"\n              with:\n                imageId: \"rest.imageId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-image\n              description: \"Update image details\"\n              call: \"oci-compute.update-image\"\n              with:\n                imageId: \"rest.imageId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n        \
+  \      name: delete-image\n              description: \"Delete a custom image\"\n              call: \"oci-compute.delete-image\"\n              with:\n                imageId: \"rest.imageId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: oracle-compute-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Oracle Cloud compute management.\"\n      tools:\n        - name: list-instances\n          description: \"List compute instances in a compartment\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"oci-compute.list-instances\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: launch-instance\n          description: \"Launch a new compute instance\"\n          hints:\n            readOnly:\
+  \ false\n          call: \"oci-compute.launch-instance\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-instance\n          description: \"Get details of a specific instance\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.get-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-instance\n          description: \"Update instance details\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"oci-compute.update-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: terminate-instance\n          description: \"Terminate an instance\"\n\
+  \          hints:\n            destructive: true\n            idempotent: true\n          call: \"oci-compute.terminate-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: instance-action\n          description: \"Perform an action on an instance (start, stop, reset)\"\n          hints:\n            readOnly: false\n          call: \"oci-compute.instance-action\"\n          with:\n            instanceId: \"tools.instanceId\"\n            action: \"tools.action\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-shapes\n          description: \"List available compute shapes\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.list-shapes\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n            \
+  \  mapping: \"$.\"\n        - name: list-images\n          description: \"List compute images\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.list-images\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-image\n          description: \"Create a custom image from an instance\"\n          hints:\n            readOnly: false\n          call: \"oci-compute.create-image\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-image\n          description: \"Get details of a specific image\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.get-image\"\n          with:\n            imageId: \"tools.imageId\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: update-image\n          description: \"Update image details\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"oci-compute.update-image\"\n          with:\n            imageId: \"tools.imageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-image\n          description: \"Delete a custom image\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"oci-compute.delete-image\"\n          with:\n            imageId: \"tools.imageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-vnic-attachments\n          description: \"List VNIC attachments in a compartment\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.list-vnic-attachments\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-volume-attachments\n          description: \"List volume attachments in a compartment\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.list-volume-attachments\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-console-connections\n          description: \"List instance console connections\"\n          hints:\n            readOnly: true\n          call: \"oci-compute.list-console-connections\"\n          with:\n            compartmentId: \"tools.compartmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/oracle/refs/heads/main/capabilities/cloud-compute.yaml
 tags:
 - Oracle
 - Cloud

@@ -50,37 +50,45 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- event-driven
-- amazon eventbridge pipes describepipe
-- amazon eventbridge pipes updatepipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- messaging
 - amazon eventbridge pipes listtagsforresource
-- UntagResource
 - DeletePipe
-- ListPipes
-- amazon eventbridge pipes createpipe
-- amazon web services
-- aws
-- TagResource
-- UpdatePipe
-- CreatePipe
-- operations teams managing amazon eventbridge pipes infrastructure
-- integration
-- amazon eventbridge pipes untagresource
+- amazon eventbridge pipes tagresource
+- serverless
 - amazon eventbridge pipes stoppipe
-- ListTagsForResource
-- developers building applications using amazon eventbridge pipes
-- amazon eventbridge pipes startpipe
 - DescribePipe
 - StopPipe
+- CreatePipe
+- amazon eventbridge pipes startpipe
 - StartPipe
-- serverless
-- amazon eventbridge pipes listpipes
-- amazon eventbridge pipes tagresource
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- aws
+- developers building applications using amazon eventbridge pipes
+- integration
+- TagResource
+- amazon eventbridge pipes describepipe
+- operations teams managing amazon eventbridge pipes infrastructure
 - point-to-point integration between event producers and consumers
+- ListTagsForResource
+- amazon web services
+- amazon eventbridge pipes untagresource
+- amazon eventbridge pipes createpipe
+- UntagResource
+- ListPipes
+- messaging
+- UpdatePipe
 - amazon eventbridge pipes deletepipe
+- amazon eventbridge pipes listpipes
+- event-driven
+- amazon eventbridge pipes updatepipe
 slug: amazon-eventbridge-pipes-capability
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon EventBridge Pipes Management\n  description: Unified capability for managing Amazon EventBridge Pipes resources. Combines Amazon EventBridge Pipes APIs for Integration Engineer workflows in Event Processing.\n  tags:\n  - Amazon Web Services\n  - Event-Driven\n  - Integration\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: eventbridge_pipes\n    location: ./shared/eventbridge-pipes.yaml\n  exposes:\n  - type: rest\n    port: 8192\n    namespace: amazon-eventbridge-pipes-workflow-api\n    description: Unified REST API for Amazon EventBridge Pipes management.\n    resources:\n    - path: /v1/DescribePipe\n      name: DescribePipe\n      description: Amazon EventBridge Pipes DescribePipe\n      operations:\n      - method: GET\n        name: DescribePipe\n        description: Amazon EventBridge Pipes\
+  \ DescribePipe\n        call: api.DescribePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreatePipe\n      name: CreatePipe\n      description: Amazon EventBridge Pipes CreatePipe\n      operations:\n      - method: POST\n        name: CreatePipe\n        description: Amazon EventBridge Pipes CreatePipe\n        call: api.CreatePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/UpdatePipe\n      name: UpdatePipe\n      description: Amazon EventBridge Pipes UpdatePipe\n      operations:\n      - method: POST\n        name: UpdatePipe\n        description: Amazon EventBridge Pipes UpdatePipe\n        call: api.UpdatePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/DeletePipe\n      name: DeletePipe\n      description: Amazon EventBridge Pipes DeletePipe\n      operations:\n      - method: POST\n        name: DeletePipe\n        description: Amazon EventBridge\
+  \ Pipes DeletePipe\n        call: api.DeletePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListPipes\n      name: ListPipes\n      description: Amazon EventBridge Pipes ListPipes\n      operations:\n      - method: GET\n        name: ListPipes\n        description: Amazon EventBridge Pipes ListPipes\n        call: api.ListPipes\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListTagsForResource\n      name: ListTagsForResource\n      description: Amazon EventBridge Pipes ListTagsForResource\n      operations:\n      - method: GET\n        name: ListTagsForResource\n        description: Amazon EventBridge Pipes ListTagsForResource\n        call: api.ListTagsForResource\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/TagResource\n      name: TagResource\n      description: Amazon EventBridge Pipes TagResource\n      operations:\n      - method: POST\n   \
+  \     name: TagResource\n        description: Amazon EventBridge Pipes TagResource\n        call: api.TagResource\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/StartPipe\n      name: StartPipe\n      description: Amazon EventBridge Pipes StartPipe\n      operations:\n      - method: POST\n        name: StartPipe\n        description: Amazon EventBridge Pipes StartPipe\n        call: api.StartPipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/StopPipe\n      name: StopPipe\n      description: Amazon EventBridge Pipes StopPipe\n      operations:\n      - method: POST\n        name: StopPipe\n        description: Amazon EventBridge Pipes StopPipe\n        call: api.StopPipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/UntagResource\n      name: UntagResource\n      description: Amazon EventBridge Pipes UntagResource\n      operations:\n      - method: POST\n\
+  \        name: UntagResource\n        description: Amazon EventBridge Pipes UntagResource\n        call: api.UntagResource\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9202\n    namespace: amazon-eventbridge-pipes-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon EventBridge Pipes management.\n    tools:\n    - name: DescribePipe\n      description: Amazon EventBridge Pipes DescribePipe\n      hints:\n        readOnly: true\n      call: api.DescribePipe\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: CreatePipe\n      description: Amazon EventBridge Pipes CreatePipe\n      hints:\n        readOnly: false\n      call: api.CreatePipe\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: UpdatePipe\n      description: Amazon EventBridge Pipes UpdatePipe\n      hints:\n        readOnly: false\n      call: api.UpdatePipe\n      outputParameters:\n   \
+  \   - type: object\n        mapping: $.\n    - name: DeletePipe\n      description: Amazon EventBridge Pipes DeletePipe\n      hints:\n        readOnly: false\n      call: api.DeletePipe\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ListPipes\n      description: Amazon EventBridge Pipes ListPipes\n      hints:\n        readOnly: true\n      call: api.ListPipes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ListTagsForResource\n      description: Amazon EventBridge Pipes ListTagsForResource\n      hints:\n        readOnly: true\n      call: api.ListTagsForResource\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: TagResource\n      description: Amazon EventBridge Pipes TagResource\n      hints:\n        readOnly: false\n      call: api.TagResource\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: StartPipe\n      description: Amazon EventBridge Pipes StartPipe\n\
+  \      hints:\n        readOnly: false\n      call: api.StartPipe\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: StopPipe\n      description: Amazon EventBridge Pipes StopPipe\n      hints:\n        readOnly: false\n      call: api.StopPipe\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: UntagResource\n      description: Amazon EventBridge Pipes UntagResource\n      hints:\n        readOnly: false\n      call: api.UntagResource\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-eventbridge-pipes/refs/heads/main/capabilities/amazon-eventbridge-pipes-capability.yaml
 tags:
 - Amazon Web Services
 - Event-Driven

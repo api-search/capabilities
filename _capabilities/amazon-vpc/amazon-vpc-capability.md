@@ -9,13 +9,29 @@ personas: []
 provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
+- security
+- private cloud
+- subnets
 - aws
 - networking
-- subnets
-- private cloud
 - vpc
-- security
 slug: amazon-vpc-capability
+source_yaml: 'id: amazon-vpc-capability
+
+  name: Amazon VPC Capability
+
+  description: Workflow-oriented capability for Amazon VPC
+
+  tags:
+
+  - AWS
+
+  consumes:
+
+  - ref: capabilities/shared/amazon-vpc-shared.yaml
+
+  '
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-vpc/refs/heads/main/capabilities/amazon-vpc-capability.yaml
 tags: []
 tools: []
 ---

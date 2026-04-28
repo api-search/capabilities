@@ -39,57 +39,68 @@ personas: []
 provider_name: Oracle Enterprise Manager
 provider_slug: oracle-enterprise-manager
 search_terms:
-- get details of a specific monitored target
-- list metric groups available for a target
-- get target properties
-- enterprise management
-- list targets
-- clear an incident marking it as resolved
-- create a new monitored target
-- get incident details
-- infrastructure incidents
-- suppress incident
-- get event
-- incident details
-- list blackouts (maintenance windows)
-- infrastructure management
-- create target
-- enterprise manager
-- delete a scheduled blackout
-- list monitored targets in enterprise manager
-- get incident
-- list global target properties
-- get metric time series
-- oracle
-- get metric time series data
-- get details of a specific incident
-- get target details
-- get configuration properties of a target
-- delete blackout
-- list blackouts
-- clear incident
-- create blackout
-- database management
-- create a monitored target
-- target details
 - list incidents in enterprise manager
+- get blackout
 - monitoring
-- suppress an incident from active views
-- list metric groups
+- get target details
 - list incidents
 - get metric time series data for performance analysis
-- monitored targets
-- get target
-- get blackout
-- get details of a specific blackout
-- cloud management
-- get details of a specific monitoring event
-- performance metrics
-- list monitored targets
-- list global target properties for classification
+- create target
+- get target properties
 - create a new blackout (maintenance window)
+- list metric groups available for a target
+- get metric time series
+- get configuration properties of a target
+- enterprise manager
+- get incident
+- create a monitored target
+- get details of a specific monitoring event
+- list monitored targets
+- oracle
+- delete blackout
+- get event
+- list global target properties for classification
+- incident details
+- list targets
 - maintenance windows
+- list monitored targets in enterprise manager
+- get details of a specific incident
+- create blackout
+- create a new monitored target
+- list global target properties
+- cloud management
+- list metric groups
+- enterprise management
+- get incident details
+- suppress incident
+- get target
+- get details of a specific blackout
+- suppress an incident from active views
+- list blackouts
+- target details
+- infrastructure management
+- monitored targets
+- infrastructure incidents
+- list blackouts (maintenance windows)
+- delete a scheduled blackout
+- performance metrics
+- clear incident
+- database management
+- clear an incident marking it as resolved
+- get details of a specific monitored target
+- get metric time series data
 slug: infrastructure-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle Enterprise Manager Infrastructure Management\"\n  description: \"Unified workflow for monitoring, incident response, and maintenance management across Oracle infrastructure using Enterprise Manager Cloud Control APIs. Designed for infrastructure administrators and operations teams.\"\n  tags:\n    - Oracle\n    - Enterprise Manager\n    - Infrastructure Management\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OEM_USERNAME: OEM_USERNAME\n      OEM_PASSWORD: OEM_PASSWORD\n\ncapability:\n  consumes:\n    - import: cloud-control\n      location: ./shared/cloud-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oem-infra-api\n      description: \"Unified REST API for Oracle Enterprise Manager infrastructure management.\"\n      resources:\n        - path: /v1/targets\n          name: targets\n          description: \"Monitored\
+  \ targets\"\n          operations:\n            - method: GET\n              name: list-targets\n              description: \"List monitored targets\"\n              call: \"cloud-control.list-targets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-target\n              description: \"Create a monitored target\"\n              call: \"cloud-control.create-target\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/targets/{targetId}\n          name: target-details\n          description: \"Target details\"\n          operations:\n            - method: GET\n              name: get-target\n              description: \"Get target details\"\n              call: \"cloud-control.get-target\"\n              with:\n                targetId: \"rest.targetId\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/incidents\n          name: incidents\n          description: \"Infrastructure incidents\"\n          operations:\n            - method: GET\n              name: list-incidents\n              description: \"List incidents\"\n              call: \"cloud-control.list-incidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/incidents/{incidentId}\n          name: incident-details\n          description: \"Incident details\"\n          operations:\n            - method: GET\n              name: get-incident\n              description: \"Get incident details\"\n              call: \"cloud-control.get-incident\"\n              with:\n                incidentId: \"rest.incidentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blackouts\n          name: blackouts\n          description: \"\
+  Maintenance windows\"\n          operations:\n            - method: GET\n              name: list-blackouts\n              description: \"List blackouts\"\n              call: \"cloud-control.list-blackouts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Performance metrics\"\n          operations:\n            - method: GET\n              name: get-metric-time-series\n              description: \"Get metric time series data\"\n              call: \"cloud-control.get-metric-time-series\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: oem-infra-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Oracle Enterprise Manager infrastructure management.\"\n      tools:\n        - name: list-targets\n          description: \"List monitored\
+  \ targets in Enterprise Manager\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloud-control.list-targets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-target\n          description: \"Get details of a specific monitored target\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-target\"\n          with:\n            targetId: \"tools.targetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-target\n          description: \"Create a new monitored target\"\n          hints:\n            readOnly: false\n          call: \"cloud-control.create-target\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-incidents\n          description: \"List incidents in Enterprise Manager\"\n          hints:\n            readOnly: true\n\
+  \            openWorld: true\n          call: \"cloud-control.list-incidents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-incident\n          description: \"Get details of a specific incident\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-incident\"\n          with:\n            incidentId: \"tools.incidentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: clear-incident\n          description: \"Clear an incident marking it as resolved\"\n          hints:\n            readOnly: false\n          call: \"cloud-control.clear-incident\"\n          with:\n            incidentId: \"tools.incidentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: suppress-incident\n          description: \"Suppress an incident from active views\"\n          hints:\n            readOnly: false\n\
+  \          call: \"cloud-control.suppress-incident\"\n          with:\n            incidentId: \"tools.incidentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-blackouts\n          description: \"List blackouts (maintenance windows)\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloud-control.list-blackouts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-blackout\n          description: \"Get details of a specific blackout\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-blackout\"\n          with:\n            blackoutId: \"tools.blackoutId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-blackout\n          description: \"Create a new blackout (maintenance window)\"\n          hints:\n            readOnly: false\n\
+  \          call: \"cloud-control.create-blackout\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-blackout\n          description: \"Delete a scheduled blackout\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloud-control.delete-blackout\"\n          with:\n            blackoutId: \"tools.blackoutId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metric-time-series\n          description: \"Get metric time series data for performance analysis\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-metric-time-series\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-metric-groups\n          description: \"List metric groups available for a target\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.list-metric-groups\"\
+  \n          with:\n            targetId: \"tools.targetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-event\n          description: \"Get details of a specific monitoring event\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-target-properties\n          description: \"Get configuration properties of a target\"\n          hints:\n            readOnly: true\n          call: \"cloud-control.get-target-properties\"\n          with:\n            targetId: \"tools.targetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-global-target-properties\n          description: \"List global target properties for classification\"\n          hints:\n            readOnly:\
+  \ true\n          call: \"cloud-control.list-global-target-properties\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/oracle-enterprise-manager/refs/heads/main/capabilities/infrastructure-management.yaml
 tags:
 - Oracle
 - Enterprise Manager

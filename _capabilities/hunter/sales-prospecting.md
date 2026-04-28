@@ -54,69 +54,81 @@ personas: []
 provider_name: Hunter
 provider_slug: hunter
 search_terms:
-- lead generation
-- update lead
-- sales intelligence
-- delete lead
-- discover companies matching criteria.
-- list leads lists
-- get combined person and company data.
-- list leads
-- count emails
-- get lead details.
-- enrich company data from domain.
-- list all leads.
-- sales prospecting
-- discover companies
-- email outreach
-- count emails for a domain.
-- create a lead.
-- create leads list
-- email
-- search for email addresses by domain.
-- email enrichment.
-- verify email deliverability.
-- enrich email
-- delete a lead.
 - list all email campaigns.
-- verify emails.
-- find email for a person.
-- prospecting
-- enrich personal data from email.
-- create a new lead list.
-- hunter
-- enrich personal data from email address.
-- individual lead management.
-- company discovery.
-- get account information and usage.
-- contact discovery
-- get lead
-- company enrichment.
-- discover companies.
-- create a new lead.
-- get leads list
-- get account
-- update a lead.
-- delete leads list
-- create lead
-- lead management.
-- domain search
-- find email
-- verify email
-- search for emails by domain.
-- enrich company
-- email verification
-- enrich combined
-- find the most likely email for a person at a company.
-- get lead list details.
-- list campaigns
-- update leads list
-- update a lead list.
+- email outreach
 - delete a lead list.
-- search emails by domain.
 - find email addresses.
+- discover companies
+- update a lead.
+- sales prospecting
+- lead generation
+- list leads
+- individual lead management.
+- get leads list
+- count emails for a domain.
+- enrich personal data from email.
+- get combined person and company data.
+- enrich personal data from email address.
+- find the most likely email for a person at a company.
+- verify email deliverability.
+- search for emails by domain.
+- create lead
+- enrich company
+- list leads lists
+- company enrichment.
+- create a new lead.
+- create a lead.
+- discover companies.
 - list all lead lists.
+- delete leads list
+- lead management.
+- verify email
+- get lead
+- search emails by domain.
+- discover companies matching criteria.
+- create a new lead list.
+- contact discovery
+- get account information and usage.
+- sales intelligence
+- hunter
+- delete lead
+- list all leads.
+- create leads list
+- find email
+- get lead list details.
+- enrich combined
+- list campaigns
+- email verification
+- update lead
+- domain search
+- search for email addresses by domain.
+- get account
+- get lead details.
+- verify emails.
+- delete a lead.
+- email
+- update leads list
+- find email for a person.
+- enrich email
+- company discovery.
+- count emails
+- email enrichment.
+- prospecting
+- enrich company data from domain.
+- update a lead list.
 slug: sales-prospecting
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hunter Sales Prospecting\"\n  description: \"Unified workflow for sales prospecting including email discovery, verification, enrichment, lead management, and outreach campaigns. Used by sales development representatives and marketing teams.\"\n  tags:\n    - Hunter\n    - Sales Prospecting\n    - Lead Generation\n    - Email Outreach\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUNTER_API_KEY: HUNTER_API_KEY\n\ncapability:\n  consumes:\n    - import: hunter\n      location: ./shared/hunter-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hunter-prospecting-api\n      description: \"Unified REST API for Hunter sales prospecting workflows.\"\n      resources:\n        - path: /v1/domain-search\n          name: domain-search\n          description: \"Search emails by domain.\"\n          operations:\n            - method: GET\n              name:\
+  \ domain-search\n              description: \"Search for emails by domain.\"\n              call: \"hunter.domain-search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-finder\n          name: email-finder\n          description: \"Find email addresses.\"\n          operations:\n            - method: GET\n              name: find-email\n              description: \"Find email for a person.\"\n              call: \"hunter.find-email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-verifier\n          name: email-verifier\n          description: \"Verify emails.\"\n          operations:\n            - method: GET\n              name: verify-email\n              description: \"Verify email deliverability.\"\n              call: \"hunter.verify-email\"\n              outputParameters:\n                - type: object\n             \
+  \     mapping: \"$.\"\n        - path: /v1/leads\n          name: leads\n          description: \"Lead management.\"\n          operations:\n            - method: GET\n              name: list-leads\n              description: \"List all leads.\"\n              call: \"hunter.list-leads\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lead\n              description: \"Create a lead.\"\n              call: \"hunter.create-lead\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/leads/{id}\n          name: lead-details\n          description: \"Individual lead management.\"\n          operations:\n            - method: GET\n              name: get-lead\n              description: \"Get lead details.\"\n              call: \"hunter.get-lead\"\n              with:\n                id: \"rest.id\"\n             \
+  \ outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-lead\n              description: \"Update a lead.\"\n              call: \"hunter.update-lead\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-lead\n              description: \"Delete a lead.\"\n              call: \"hunter.delete-lead\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/enrichment/email\n          name: email-enrichment\n          description: \"Email enrichment.\"\n          operations:\n            - method: GET\n              name: enrich-email\n              description: \"Enrich personal data from email.\"\n              call: \"hunter.enrich-email\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/enrichment/company\n          name: company-enrichment\n          description: \"Company enrichment.\"\n          operations:\n            - method: GET\n              name: enrich-company\n              description: \"Enrich company data from domain.\"\n              call: \"hunter.enrich-company\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/discover\n          name: discover\n          description: \"Company discovery.\"\n          operations:\n            - method: GET\n              name: discover-companies\n              description: \"Discover companies.\"\n              call: \"hunter.discover-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: hunter-prospecting-mcp\n \
+  \     transport: http\n      description: \"MCP server for AI-assisted Hunter sales prospecting.\"\n      tools:\n        - name: domain-search\n          description: \"Search for email addresses by domain.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hunter.domain-search\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: find-email\n          description: \"Find the most likely email for a person at a company.\"\n          hints:\n            readOnly: true\n          call: \"hunter.find-email\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: verify-email\n          description: \"Verify email deliverability.\"\n          hints:\n            readOnly: true\n          call: \"hunter.verify-email\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: count-emails\n        \
+  \  description: \"Count emails for a domain.\"\n          hints:\n            readOnly: true\n          call: \"hunter.count-emails\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account\n          description: \"Get account information and usage.\"\n          hints:\n            readOnly: true\n          call: \"hunter.get-account\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-leads\n          description: \"List all leads.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hunter.list-leads\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-lead\n          description: \"Create a new lead.\"\n          hints:\n            readOnly: false\n          call: \"hunter.create-lead\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: get-lead\n          description: \"Get lead details.\"\n          hints:\n            readOnly: true\n          call: \"hunter.get-lead\"\n          with:\n            id: \"tools.leadId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-lead\n          description: \"Update a lead.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"hunter.update-lead\"\n          with:\n            id: \"tools.leadId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-lead\n          description: \"Delete a lead.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"hunter.delete-lead\"\n          with:\n            id: \"tools.leadId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-leads-lists\n   \
+  \       description: \"List all lead lists.\"\n          hints:\n            readOnly: true\n          call: \"hunter.list-leads-lists\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-leads-list\n          description: \"Create a new lead list.\"\n          hints:\n            readOnly: false\n          call: \"hunter.create-leads-list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-leads-list\n          description: \"Get lead list details.\"\n          hints:\n            readOnly: true\n          call: \"hunter.get-leads-list\"\n          with:\n            id: \"tools.listId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-leads-list\n          description: \"Update a lead list.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"hunter.update-leads-list\"\
+  \n          with:\n            id: \"tools.listId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-leads-list\n          description: \"Delete a lead list.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"hunter.delete-leads-list\"\n          with:\n            id: \"tools.listId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: discover-companies\n          description: \"Discover companies matching criteria.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hunter.discover-companies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: enrich-email\n          description: \"Enrich personal data from email address.\"\n          hints:\n            readOnly: true\n          call: \"hunter.enrich-email\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: enrich-company\n          description: \"Enrich company data from domain.\"\n          hints:\n            readOnly: true\n          call: \"hunter.enrich-company\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: enrich-combined\n          description: \"Get combined person and company data.\"\n          hints:\n            readOnly: true\n          call: \"hunter.enrich-combined\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-campaigns\n          description: \"List all email campaigns.\"\n          hints:\n            readOnly: true\n          call: \"hunter.list-campaigns\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/hunter/refs/heads/main/capabilities/sales-prospecting.yaml
 tags:
 - Hunter
 - Sales Prospecting

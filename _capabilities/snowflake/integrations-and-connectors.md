@@ -36,39 +36,46 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- notification integration management
-- snowflake
-- create api integration
-- fetch catalog integration details
-- list catalog integrations
-- fetch notification integration
-- delete notification integration
-- data lakes
-- delete api integration
-- catalog integration management
-- create notification integration
-- create catalog integration
-- list api integrations
-- integrations
-- delete catalog integration
-- api integration management
 - delete a notification integration
-- list notification integrations
-- fetch catalog integration
-- create a notification integration
-- delete an api integration
-- create an api integration
+- create notification integration
 - database
-- fetch api integration details
-- fetch notification integration details
-- data warehousing
-- data sharing
-- fetch api integration
 - sql
+- data warehousing
+- fetch notification integration details
 - connectors
+- data lakes
+- fetch catalog integration
+- snowflake
+- fetch catalog integration details
+- catalog integration management
+- fetch api integration
+- create a notification integration
+- create catalog integration
+- fetch api integration details
+- delete api integration
+- create api integration
 - delete a catalog integration
+- list notification integrations
+- api integration management
+- create an api integration
+- fetch notification integration
+- notification integration management
+- delete notification integration
+- integrations
+- list catalog integrations
+- delete an api integration
+- delete catalog integration
+- list api integrations
+- data sharing
 - create a catalog integration
 slug: integrations-and-connectors
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Integrations and Connectors\"\n  description: \"Unified workflow for managing API integrations, catalog integrations, and notification integrations. Used by Platform Engineers and Data Architects to connect Snowflake with external services, catalogs, and notification systems.\"\n  tags:\n    - Snowflake\n    - Integrations\n    - Connectors\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-api-integration\n      location: ./shared/api-integration.yaml\n    - import: snowflake-catalog-integration\n      location: ./shared/catalog-integration.yaml\n    - import: snowflake-notification-integration\n      location: ./shared/notification-integration.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: snowflake-integrations-api\n\
+  \      description: \"Unified REST API for Snowflake integration management.\"\n      resources:\n        - path: /v1/api-integrations\n          name: api-integrations\n          description: \"API integration management\"\n          operations:\n            - method: GET\n              name: list-api-integrations\n              description: \"List API integrations\"\n              call: \"snowflake-api-integration.list-api-integrations\"\n            - method: POST\n              name: create-api-integration\n              description: \"Create an API integration\"\n              call: \"snowflake-api-integration.create-api-integration\"\n        - path: /v1/catalog-integrations\n          name: catalog-integrations\n          description: \"Catalog integration management\"\n          operations:\n            - method: GET\n              name: list-catalog-integrations\n              description: \"List catalog integrations\"\n              call: \"snowflake-catalog-integration.list-catalog-integrations\"\
+  \n            - method: POST\n              name: create-catalog-integration\n              description: \"Create a catalog integration\"\n              call: \"snowflake-catalog-integration.create-catalog-integration\"\n        - path: /v1/notification-integrations\n          name: notification-integrations\n          description: \"Notification integration management\"\n          operations:\n            - method: GET\n              name: list-notification-integrations\n              description: \"List notification integrations\"\n              call: \"snowflake-notification-integration.list-notification-integrations\"\n            - method: POST\n              name: create-notification-integration\n              description: \"Create a notification integration\"\n              call: \"snowflake-notification-integration.create-notification-integration\"\n\n    - type: mcp\n      port: 9085\n      namespace: snowflake-integrations-mcp\n      transport: http\n      description: \"MCP\
+  \ server for AI-assisted Snowflake integration management.\"\n      tools:\n        - name: list-api-integrations\n          description: \"List API integrations\"\n          hints:\n            readOnly: true\n          call: \"snowflake-api-integration.list-api-integrations\"\n        - name: create-api-integration\n          description: \"Create an API integration\"\n          hints:\n            readOnly: false\n          call: \"snowflake-api-integration.create-api-integration\"\n        - name: fetch-api-integration\n          description: \"Fetch API integration details\"\n          hints:\n            readOnly: true\n          call: \"snowflake-api-integration.fetch-api-integration\"\n        - name: delete-api-integration\n          description: \"Delete an API integration\"\n          hints:\n            destructive: true\n          call: \"snowflake-api-integration.delete-api-integration\"\n        - name: list-catalog-integrations\n          description: \"List catalog integrations\"\
+  \n          hints:\n            readOnly: true\n          call: \"snowflake-catalog-integration.list-catalog-integrations\"\n        - name: create-catalog-integration\n          description: \"Create a catalog integration\"\n          hints:\n            readOnly: false\n          call: \"snowflake-catalog-integration.create-catalog-integration\"\n        - name: fetch-catalog-integration\n          description: \"Fetch catalog integration details\"\n          hints:\n            readOnly: true\n          call: \"snowflake-catalog-integration.fetch-catalog-integration\"\n        - name: delete-catalog-integration\n          description: \"Delete a catalog integration\"\n          hints:\n            destructive: true\n          call: \"snowflake-catalog-integration.delete-catalog-integration\"\n        - name: list-notification-integrations\n          description: \"List notification integrations\"\n          hints:\n            readOnly: true\n          call: \"snowflake-notification-integration.list-notification-integrations\"\
+  \n        - name: create-notification-integration\n          description: \"Create a notification integration\"\n          hints:\n            readOnly: false\n          call: \"snowflake-notification-integration.create-notification-integration\"\n        - name: fetch-notification-integration\n          description: \"Fetch notification integration details\"\n          hints:\n            readOnly: true\n          call: \"snowflake-notification-integration.fetch-notification-integration\"\n        - name: delete-notification-integration\n          description: \"Delete a notification integration\"\n          hints:\n            destructive: true\n          call: \"snowflake-notification-integration.delete-notification-integration\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/capabilities/integrations-and-connectors.yaml
 tags:
 - Snowflake
 - Integrations

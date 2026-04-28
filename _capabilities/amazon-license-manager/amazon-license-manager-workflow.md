@@ -10,25 +10,28 @@ personas: []
 provider_name: Amazon License Manager
 provider_slug: amazon-license-manager
 search_terms:
-- license configurations create license configuratio
-- amazon license manager
-- creates a license configuration.
-- license configurations get license configuration
-- license management
+- manages resources and configurations
+- unified workflow for amazon license manager resource management
+- software licensing
+- compliance
 - workflow
 - aws
-- Administrator
-- software licensing
-- unified workflow for amazon license manager resource management
 - license configurations list license configurations
-- manages resources and configurations
-- compliance
-- integrates api into applications
-- lists the license configurations for your account.
+- creates a license configuration.
+- license management
+- license configurations get license configuration
 - cost management
-- Developer
 - gets detailed information about the specified license configuration.
+- amazon license manager
+- integrates api into applications
+- Developer
+- license configurations create license configuratio
+- Administrator
+- lists the license configurations for your account.
 slug: amazon-license-manager-workflow
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon License Manager Workflow\n  description: Unified workflow capability for Amazon License Manager combining resource management and operations.\n  tags:\n  - Amazon License Manager\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: license-manager\n    location: ./shared/license-manager.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: license-manager-api\n    description: REST API for Amazon License Manager workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: license-manager-mcp\n    transport: http\n    description: MCP server for Amazon License Manager.\n    tools:\n    - name: license-configurations-create-license-configuratio\n      description: Creates a license configuration.\n      hints:\n        readOnly:\
+  \ false\n        idempotent: false\n      call: license-manager.createlicenseconfiguration\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: license-configurations-list-license-configurations\n      description: Lists the license configurations for your account.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: license-manager.listlicenseconfigurations\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: license-configurations-get-license-configuration\n      description: Gets detailed information about the specified license configuration.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: license-manager.getlicenseconfiguration\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/capabilities/amazon-license-manager-workflow.yaml
 tags:
 - Amazon License Manager
 - AWS

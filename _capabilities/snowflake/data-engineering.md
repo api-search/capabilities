@@ -55,73 +55,83 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
+- submit a sql statement
+- create a pipe
+- list scheduled tasks
+- pipe management
+- execute a task immediately
+- suspend a running task
+- list data loading stages
+- database
+- sql
+- data warehousing
+- call procedure
+- resume task
+- create a stream
+- create pipe
+- create a scheduled task
+- etl
+- list data ingestion pipes
+- list stored procedures
+- task management
+- list udfs
+- submit a sql statement for execution
+- submit sql
+- execute a function
+- call a stored procedure
+- data lakes
+- data pipelines
+- create a stage
 - snowflake
+- create stage
+- get statement status
+- get a query result
+- list pipes
+- create stream
+- list files in a stage
+- cancel statement
+- cancel a running statement
+- create task
+- list streams
+- list stage files
+- data engineering
+- get query result
+- refresh a pipe
+- stream management
+- sql statement execution
+- create procedure
+- list procedures
+- suspend task
+- submit statement
+- create a cdc stream
+- list user defined functions
+- create function
+- get status of a submitted statement
+- list change data capture streams
+- list stages
+- create a pipe for continuous ingestion
+- resume a suspended task
+- refresh pipe
+- execute task
+- data sharing
+- stage management
+- create a function
+- list tasks
+- create a stored procedure
 - list functions
 - create a task
-- create stream
-- submit sql
-- create a pipe for continuous ingestion
-- call procedure
-- data lakes
-- create a function
-- list procedures
-- etl
-- stage management
-- refresh pipe
-- create function
-- cancel a running statement
-- create a stage
-- list data loading stages
-- get query result
-- list data ingestion pipes
-- create stage
-- create a stream
-- get status of a submitted statement
-- list pipes
-- list user defined functions
-- create task
-- create a cdc stream
-- list tasks
-- stream management
-- list files in a stage
-- create a stored procedure
-- submit a sql statement for execution
-- suspend a running task
-- call a stored procedure
-- list udfs
-- execute a task immediately
-- pipe management
-- execute task
-- list stored procedures
-- get statement status
-- resume task
-- data pipelines
-- suspend task
-- get a query result
 - execute function
-- database
-- create procedure
-- data warehousing
-- list stages
-- task management
-- data sharing
-- submit a sql statement
-- list streams
-- cancel statement
-- list scheduled tasks
-- create a scheduled task
-- create pipe
-- list change data capture streams
-- list stage files
-- execute a function
-- sql
-- sql statement execution
-- create a pipe
-- resume a suspended task
-- data engineering
-- submit statement
-- refresh a pipe
 slug: data-engineering
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Data Engineering\"\n  description: \"Unified workflow for building and managing data pipelines using SQL execution, tasks, streams, pipes, stages, and functions. Used by Data Engineers to orchestrate ETL/ELT workflows and continuous data ingestion.\"\n  tags:\n    - Snowflake\n    - Data Engineering\n    - ETL\n    - Data Pipelines\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-sql\n      location: ./shared/sqlapi.yaml\n    - import: snowflake-task\n      location: ./shared/task.yaml\n    - import: snowflake-stream\n      location: ./shared/stream.yaml\n    - import: snowflake-pipe\n      location: ./shared/pipe.yaml\n    - import: snowflake-stage\n      location: ./shared/stage.yaml\n    - import: snowflake-function\n\
+  \      location: ./shared/function.yaml\n    - import: snowflake-procedure\n      location: ./shared/procedure.yaml\n    - import: snowflake-udf\n      location: ./shared/user-defined-function.yaml\n    - import: snowflake-result\n      location: ./shared/result.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: snowflake-data-eng-api\n      description: \"Unified REST API for Snowflake data pipeline management.\"\n      resources:\n        - path: /v1/statements\n          name: statements\n          description: \"SQL statement execution\"\n          operations:\n            - method: POST\n              name: submit-statement\n              description: \"Submit a SQL statement\"\n              call: \"snowflake-sql.submit-statement\"\n        - path: /v1/tasks\n          name: tasks\n          description: \"Task management\"\n          operations:\n            - method: GET\n              name: list-tasks\n              description: \"List tasks\"\n         \
+  \     call: \"snowflake-task.list-tasks\"\n            - method: POST\n              name: create-task\n              description: \"Create a task\"\n              call: \"snowflake-task.create-task\"\n        - path: /v1/streams\n          name: streams\n          description: \"Stream management\"\n          operations:\n            - method: GET\n              name: list-streams\n              description: \"List streams\"\n              call: \"snowflake-stream.list-streams\"\n            - method: POST\n              name: create-stream\n              description: \"Create a stream\"\n              call: \"snowflake-stream.create-stream\"\n        - path: /v1/pipes\n          name: pipes\n          description: \"Pipe management\"\n          operations:\n            - method: GET\n              name: list-pipes\n              description: \"List pipes\"\n              call: \"snowflake-pipe.list-pipes\"\n            - method: POST\n              name: create-pipe\n              description:\
+  \ \"Create a pipe\"\n              call: \"snowflake-pipe.create-pipe\"\n        - path: /v1/stages\n          name: stages\n          description: \"Stage management\"\n          operations:\n            - method: GET\n              name: list-stages\n              description: \"List stages\"\n              call: \"snowflake-stage.list-stages\"\n            - method: POST\n              name: create-stage\n              description: \"Create a stage\"\n              call: \"snowflake-stage.create-stage\"\n\n    - type: mcp\n      port: 9081\n      namespace: snowflake-data-eng-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Snowflake data pipeline management.\"\n      tools:\n        - name: submit-sql\n          description: \"Submit a SQL statement for execution\"\n          hints:\n            readOnly: false\n          call: \"snowflake-sql.submit-statement\"\n        - name: get-statement-status\n          description: \"Get status of a submitted statement\"\
+  \n          hints:\n            readOnly: true\n          call: \"snowflake-sql.get-statement-status\"\n        - name: cancel-statement\n          description: \"Cancel a running statement\"\n          hints:\n            destructive: true\n          call: \"snowflake-sql.cancel-statement\"\n        - name: list-tasks\n          description: \"List scheduled tasks\"\n          hints:\n            readOnly: true\n          call: \"snowflake-task.list-tasks\"\n        - name: create-task\n          description: \"Create a scheduled task\"\n          hints:\n            readOnly: false\n          call: \"snowflake-task.create-task\"\n        - name: execute-task\n          description: \"Execute a task immediately\"\n          hints:\n            readOnly: false\n          call: \"snowflake-task.execute-task\"\n        - name: resume-task\n          description: \"Resume a suspended task\"\n          hints:\n            readOnly: false\n          call: \"snowflake-task.resume-task\"\n  \
+  \      - name: suspend-task\n          description: \"Suspend a running task\"\n          hints:\n            readOnly: false\n          call: \"snowflake-task.suspend-task\"\n        - name: list-streams\n          description: \"List change data capture streams\"\n          hints:\n            readOnly: true\n          call: \"snowflake-stream.list-streams\"\n        - name: create-stream\n          description: \"Create a CDC stream\"\n          hints:\n            readOnly: false\n          call: \"snowflake-stream.create-stream\"\n        - name: list-pipes\n          description: \"List data ingestion pipes\"\n          hints:\n            readOnly: true\n          call: \"snowflake-pipe.list-pipes\"\n        - name: create-pipe\n          description: \"Create a pipe for continuous ingestion\"\n          hints:\n            readOnly: false\n          call: \"snowflake-pipe.create-pipe\"\n        - name: refresh-pipe\n          description: \"Refresh a pipe\"\n          hints:\n\
+  \            readOnly: false\n          call: \"snowflake-pipe.refresh-pipe\"\n        - name: list-stages\n          description: \"List data loading stages\"\n          hints:\n            readOnly: true\n          call: \"snowflake-stage.list-stages\"\n        - name: create-stage\n          description: \"Create a stage\"\n          hints:\n            readOnly: false\n          call: \"snowflake-stage.create-stage\"\n        - name: list-stage-files\n          description: \"List files in a stage\"\n          hints:\n            readOnly: true\n          call: \"snowflake-stage.list-files\"\n        - name: list-functions\n          description: \"List functions\"\n          hints:\n            readOnly: true\n          call: \"snowflake-function.list-functions\"\n        - name: create-function\n          description: \"Create a function\"\n          hints:\n            readOnly: false\n          call: \"snowflake-function.create-function\"\n        - name: execute-function\n   \
+  \       description: \"Execute a function\"\n          hints:\n            readOnly: false\n          call: \"snowflake-function.execute-function\"\n        - name: list-procedures\n          description: \"List stored procedures\"\n          hints:\n            readOnly: true\n          call: \"snowflake-procedure.list-procedures\"\n        - name: create-procedure\n          description: \"Create a stored procedure\"\n          hints:\n            readOnly: false\n          call: \"snowflake-procedure.create-procedure\"\n        - name: call-procedure\n          description: \"Call a stored procedure\"\n          hints:\n            readOnly: false\n          call: \"snowflake-procedure.call-procedure\"\n        - name: list-udfs\n          description: \"List user defined functions\"\n          hints:\n            readOnly: true\n          call: \"snowflake-udf.list-udfs\"\n        - name: get-query-result\n          description: \"Get a query result\"\n          hints:\n          \
+  \  readOnly: true\n          call: \"snowflake-result.get-result\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/capabilities/data-engineering.yaml
 tags:
 - Snowflake
 - Data Engineering

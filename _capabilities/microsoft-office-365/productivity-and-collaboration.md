@@ -43,80 +43,95 @@ personas: []
 provider_name: Microsoft Office 365
 provider_slug: microsoft-office-365
 search_terms:
-- get a specific user.
-- microsoft
-- get the signed-in user profile.
-- create a new group.
-- list mail folders.
-- list mail folders
-- list calendar events.
-- create user
-- calendar management.
-- create a calendar event.
-- delete event
-- list messages.
-- decline a meeting invitation.
-- get a specific message.
-- accept event
-- create a group.
-- get calendar view for a date range.
-- get calendar view
-- list group members
-- get event
-- list users.
-- decline event
-- create a new user.
-- get message
-- delete message
-- add a member to a group.
-- delete a calendar event.
-- user management.
 - list mail messages.
-- remove group member
-- create a draft message.
-- create a user.
-- send mail.
-- get a specific event.
-- get a specific group.
-- productivity
-- create an event.
 - get signed in user
-- delete a message.
-- mail management.
-- delete group
-- list messages
-- list users in the organization.
-- update user properties.
-- get user
-- delete user
-- send an email message.
-- list users
-- group management.
-- list members of a group.
-- update user
-- remove a member from a group.
+- create user
 - list calendars.
-- cloud
-- list groups
-- send mail
-- create message
-- list calendars
-- collaboration
-- accept a meeting invitation.
-- delete a user.
-- update event
-- list events
-- add group member
-- list events.
-- enterprise
 - list groups.
-- delete a group.
+- send mail
+- decline a meeting invitation.
+- update user properties.
+- calendar management.
+- decline event
+- create a draft message.
+- list messages
 - get group
-- office 365
+- get a specific event.
+- get calendar view
+- list members of a group.
+- enterprise
+- get the signed-in user profile.
+- list calendar events.
+- send an email message.
+- list mail folders.
+- create a user.
+- get a specific message.
+- get a specific group.
+- list events.
+- list users in the organization.
+- update event
+- delete group
+- get event
+- update user
+- delete a user.
+- create a new group.
+- delete a message.
+- list groups
 - create event
-- create group
+- list mail folders
+- accept a meeting invitation.
+- get a specific user.
+- group management.
+- create message
+- delete user
+- list users.
+- create a calendar event.
+- list users
+- accept event
+- list calendars
+- get calendar view for a date range.
+- cloud
+- delete event
 - update a calendar event.
+- collaboration
+- list messages.
+- create group
+- productivity
+- create a new user.
+- create an event.
+- mail management.
+- list group members
+- microsoft
+- delete a calendar event.
+- get user
+- office 365
+- user management.
+- create a group.
+- delete a group.
+- add a member to a group.
+- get message
+- remove a member from a group.
+- add group member
+- send mail.
+- remove group member
+- list events
+- delete message
 slug: productivity-and-collaboration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Office 365 Productivity and Collaboration\"\n  description: \"Unified productivity workflow combining mail, calendar, user management, and group collaboration for enterprise users and IT administrators.\"\n  tags:\n    - Microsoft\n    - Office 365\n    - Productivity\n    - Collaboration\n    - Enterprise\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: productivity-api\n      description: \"Unified REST API for Microsoft 365 productivity and collaboration.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User management.\"\n          operations:\n            - method: GET\n              name: list-users\n        \
+  \      description: \"List users.\"\n              call: \"graph-api.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a user.\"\n              call: \"graph-api.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List groups.\"\n              call: \"graph-api.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a group.\"\n              call: \"graph-api.create-group\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: mail\n          description: \"Mail management.\"\n          operations:\n            - method: GET\n              name: list-messages\n              description: \"List messages.\"\n              call: \"graph-api.list-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-mail\n              description: \"Send mail.\"\n              call: \"graph-api.send-mail\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: calendar\n          description: \"Calendar management.\"\n          operations:\n            - method: GET\n              name: list-events\n              description: \"List events.\"\n              call: \"graph-api.list-events\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-event\n              description: \"Create an event.\"\n              call: \"graph-api.create-event\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: productivity-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Microsoft 365 productivity and collaboration.\"\n      tools:\n        - name: list-users\n          description: \"List users in the organization.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"graph-api.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new user.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.create-user\"\n       \
+  \   with:\n            displayName: \"tools.displayName\"\n            mailNickname: \"tools.mailNickname\"\n            userPrincipalName: \"tools.userPrincipalName\"\n            accountEnabled: \"tools.accountEnabled\"\n            passwordProfile: \"tools.passwordProfile\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get a specific user.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.get-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-user\n          description: \"Update user properties.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"graph-api.update-user\"\n          with:\n            userId: \"tools.userId\"\n            displayName: \"tools.displayName\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Delete a user.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"graph-api.delete-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-signed-in-user\n          description: \"Get the signed-in user profile.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.get-signed-in-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List groups.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"graph-api.list-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-group\n          description:\
+  \ \"Create a new group.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.create-group\"\n          with:\n            displayName: \"tools.displayName\"\n            mailEnabled: \"tools.mailEnabled\"\n            mailNickname: \"tools.mailNickname\"\n            securityEnabled: \"tools.securityEnabled\"\n            groupTypes: \"tools.groupTypes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-group\n          description: \"Get a specific group.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.get-group\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-group\n          description: \"Delete a group.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"graph-api.delete-group\"\n          with:\n      \
+  \      groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-group-members\n          description: \"List members of a group.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.list-group-members\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-group-member\n          description: \"Add a member to a group.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.add-group-member\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-group-member\n          description: \"Remove a member from a group.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"graph-api.remove-group-member\"\
+  \n          with:\n            groupId: \"tools.groupId\"\n            memberId: \"tools.memberId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-messages\n          description: \"List mail messages.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"graph-api.list-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-message\n          description: \"Create a draft message.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.create-message\"\n          with:\n            subject: \"tools.subject\"\n            body: \"tools.body\"\n            toRecipients: \"tools.toRecipients\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-message\n          description: \"Get a specific message.\"\n          hints:\n            readOnly:\
+  \ true\n          call: \"graph-api.get-message\"\n          with:\n            messageId: \"tools.messageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-message\n          description: \"Delete a message.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"graph-api.delete-message\"\n          with:\n            messageId: \"tools.messageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-mail\n          description: \"Send an email message.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.send-mail\"\n          with:\n            message: \"tools.message\"\n            saveToSentItems: \"tools.saveToSentItems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mail-folders\n          description: \"List mail folders.\"\n\
+  \          hints:\n            readOnly: true\n          call: \"graph-api.list-mail-folders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-events\n          description: \"List calendar events.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"graph-api.list-events\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-event\n          description: \"Create a calendar event.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.create-event\"\n          with:\n            subject: \"tools.subject\"\n            start: \"tools.start\"\n            end: \"tools.end\"\n            body: \"tools.body\"\n            attendees: \"tools.attendees\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-event\n          description: \"Get a specific\
+  \ event.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.get-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-event\n          description: \"Update a calendar event.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"graph-api.update-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-event\n          description: \"Delete a calendar event.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"graph-api.delete-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-calendars\n          description: \"\
+  List calendars.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.list-calendars\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-calendar-view\n          description: \"Get calendar view for a date range.\"\n          hints:\n            readOnly: true\n          call: \"graph-api.get-calendar-view\"\n          with:\n            startDateTime: \"tools.startDateTime\"\n            endDateTime: \"tools.endDateTime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: accept-event\n          description: \"Accept a meeting invitation.\"\n          hints:\n            readOnly: false\n          call: \"graph-api.accept-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: decline-event\n          description: \"Decline a meeting invitation.\"\
+  \n          hints:\n            readOnly: false\n          call: \"graph-api.decline-event\"\n          with:\n            eventId: \"tools.eventId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-office-365/refs/heads/main/capabilities/productivity-and-collaboration.yaml
 tags:
 - Microsoft
 - Office 365

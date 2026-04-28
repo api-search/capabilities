@@ -31,37 +31,45 @@ personas: []
 provider_name: Crystal Reports
 provider_slug: crystal-reports
 search_terms:
+- get grand totals
+- create instance
+- sap
+- list folder children
+- get rows
+- enterprise software
+- get report structure
+- create a transient report instance
+- business intelligence
+- reporting
 - export report to pdf, excel, csv, word, xml, or other format
+- get odata metadata
+- get edmx metadata describing the report data model
+- get report summary
+- browse repository
+- export report
+- push data to a transient report instance
 - list contents of a repository folder
 - report management
-- reporting
-- business intelligence
-- browse the bi platform report repository
-- get grand totals
-- get report structure
 - get report metadata with datasources, fields, parameters, and formulas
+- logon
 - get report grand totals and summaries
-- get report summary
-- sap
-- export report
-- browse repository
-- export
-- list folder children
-- push data to a transient report instance
-- post row
-- enterprise software
-- get odata metadata
+- authenticate to crystal reports server
 - get report data rows via odata with pagination and filtering
 - get report summary including name, author, and uris
-- create instance
-- get edmx metadata describing the report data model
-- authenticate to crystal reports server
-- logon
-- get rows
 - data analytics
+- browse the bi platform report repository
 - crystal reports
-- create a transient report instance
+- export
+- post row
 slug: report-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Crystal Reports Report Management\"\n  description: \"Unified workflow for managing Crystal Reports including authentication, repository browsing, report viewing, data access, and export. Used by report developers, BI analysts, and application developers.\"\n  tags:\n    - Crystal Reports\n    - Report Management\n    - Business Intelligence\n    - Export\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CR_USERNAME: CR_USERNAME\n      CR_PASSWORD: CR_PASSWORD\n\ncapability:\n  consumes:\n    - import: cr-reporting\n      location: ./shared/reporting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cr-management-api\n      description: \"Unified REST API for Crystal Reports management.\"\n      resources:\n        - path: /v1/auth\n          name: authentication\n          operations:\n            - method: POST\n              name: logon\n           \
+  \   call: \"cr-reporting.logon\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports\n          name: reports\n          operations:\n            - method: GET\n              name: browse-repository\n              call: \"cr-reporting.browse-repository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}\n          name: report\n          operations:\n            - method: GET\n              name: get-report-summary\n              call: \"cr-reporting.get-report-summary\"\n              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}/export\n          name: export\n          operations:\n            - method: GET\n              name: export-report\n              call: \"cr-reporting.export-report\"\n\
+  \              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}/rows\n          name: rows\n          operations:\n            - method: GET\n              name: get-rows\n              call: \"cr-reporting.get-rows\"\n              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: cr-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Crystal Reports management.\"\n      tools:\n        - name: logon\n          description: \"Authenticate to Crystal Reports server\"\n          hints: {readOnly: false}\n          call: \"cr-reporting.logon\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: browse-repository\n          description:\
+  \ \"Browse the BI platform report repository\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.browse-repository\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-folder-children\n          description: \"List contents of a repository folder\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.list-folder-children\"\n          with:\n            folderId: \"tools.folderId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-report-summary\n          description: \"Get report summary including name, author, and URIs\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.get-report-summary\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-report-structure\n\
+  \          description: \"Get report metadata with datasources, fields, parameters, and formulas\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.get-report-structure\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-instance\n          description: \"Create a transient report instance\"\n          hints: {readOnly: false}\n          call: \"cr-reporting.create-instance\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: export-report\n          description: \"Export report to PDF, Excel, CSV, Word, XML, or other format\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.export-report\"\n          with:\n            reportId: \"tools.reportId\"\n            mime_type: \"tools.mime_type\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-rows\n          description: \"Get report data rows via OData with pagination and filtering\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.get-rows\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: post-row\n          description: \"Push data to a transient report instance\"\n          hints: {readOnly: false}\n          call: \"cr-reporting.post-row\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-grand-totals\n          description: \"Get report grand totals and summaries\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.get-grand-totals\"\n          with:\n         \
+  \   reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-odata-metadata\n          description: \"Get EDMX metadata describing the report data model\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"cr-reporting.get-odata-metadata\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/crystal-reports/refs/heads/main/capabilities/report-management.yaml
 tags:
 - Crystal Reports
 - Report Management

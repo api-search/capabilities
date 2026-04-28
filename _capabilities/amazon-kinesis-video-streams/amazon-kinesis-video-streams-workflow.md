@@ -10,31 +10,35 @@ personas: []
 provider_name: Amazon Kinesis Video Streams
 provider_slug: amazon-kinesis-video-streams
 search_terms:
-- workflow
-- channels create signaling channel
-- unified workflow for amazon kinesis video streams resource management
+- streams list streams
 - returns an array of streaminfo objects.
-- channels describe signaling channel
-- channels list signaling channels
-- creates a new kinesis video stream.
-- aws
-- returns an array of channelinfo objects.
-- machine learning
-- streams create stream
-- streams describe stream
-- returns the most current information about the signaling channel.
 - creates a signaling channel.
+- iot
+- returns the most current information about the specified stream.
+- amazon kinesis video streams
+- manages resources and configurations
+- aws
+- returns the most current information about the signaling channel.
+- returns an array of channelinfo objects.
 - video streaming
 - Developer
-- iot
-- amazon kinesis video streams
-- streams list streams
+- creates a new kinesis video stream.
+- workflow
+- channels create signaling channel
+- streams describe stream
+- streams create stream
+- channels describe signaling channel
+- unified workflow for amazon kinesis video streams resource management
+- machine learning
+- channels list signaling channels
 - media
-- manages resources and configurations
 - integrates api into applications
 - Administrator
-- returns the most current information about the specified stream.
 slug: amazon-kinesis-video-streams-workflow
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Video Streams Workflow\n  description: Unified workflow capability for Amazon Kinesis Video Streams combining resource management and operations.\n  tags:\n  - Amazon Kinesis Video Streams\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kinesis-video-streams\n    location: ./shared/kinesis-video-streams.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kinesis-video-streams-api\n    description: REST API for Amazon Kinesis Video Streams workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kinesis-video-streams-mcp\n    transport: http\n    description: MCP server for Amazon Kinesis Video Streams.\n    tools:\n    - name: streams-create-stream\n      description: Creates a new Kinesis video stream.\n\
+  \      hints:\n        readOnly: false\n        idempotent: false\n      call: kinesis-video-streams.createstream\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: streams-list-streams\n      description: Returns an array of StreamInfo objects.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-video-streams.liststreams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: streams-describe-stream\n      description: Returns the most current information about the specified stream.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-video-streams.describestream\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: channels-create-signaling-channel\n      description: Creates a signaling channel.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kinesis-video-streams.createsignalingchannel\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: channels-list-signaling-channels\n      description: Returns an array of ChannelInfo objects.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-video-streams.listsignalingchannels\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: channels-describe-signaling-channel\n      description: Returns the most current information about the signaling channel.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-video-streams.describesignalingchannel\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kinesis-video-streams/refs/heads/main/capabilities/amazon-kinesis-video-streams-workflow.yaml
 tags:
 - Amazon Kinesis Video Streams
 - AWS

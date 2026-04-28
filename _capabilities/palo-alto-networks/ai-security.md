@@ -69,132 +69,157 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- submit sync scan
-- get red team target
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- sase admin
-- designs and implements network security architectures and policies.
-- delete red team target
-- designs sase and sd-wan network architectures for secure remote access.
-- get a specific red team scan target by id.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- get or delete a specific red team scan target.
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- manages multi-tenant security operations at scale for managed service providers.
-- mssp operator
-- threat hunter
-- network architect
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- get results of a previously submitted asynchronous ai security scan.
-- incident responder
-- network operations
-- start ai red team vulnerability scans.
-- start a new red team vulnerability scan against a target.
-- sase
-- prompt injection
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- soar
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- iam admin
-- submit an asynchronous ai security scan.
-- executes containment, eradication, and recovery actions during security incidents.
-- analyzes suspicious files and samples for malware characteristics.
-- manage enterprise browser policies, user sessions, and deployments.
-- list attack categories
-- get results of a red team vulnerability scan with optional filters.
-- manages logging infrastructure, integrations, and platform automation.
-- get ai profile
-- palo alto networks
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- list all available attack categories for red team scans.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- cybersecurity
-- vulnerability manager
-- create a new red team scan target for ai application vulnerability testing.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- malware researcher
-- manages enterprise browser policies and secure browsing configurations.
-- get red team scan status
-- get a specific ai security profile by name.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- get results of a red team vulnerability scan.
-- delete a specific red team scan target by id.
-- submit an asynchronous ai security scan of model inputs/outputs for threats.
-- list all ai security profiles with pagination.
-- manages service accounts, roles, and access policies for platform api access.
-- get a specific ai security profile.
-- cloud security engineer
-- firewall
-- data protection analyst
-- soc analyst
-- submit a synchronous ai security scan.
-- proactively searches for threats and iocs across telemetry data.
-- red team operator
-- digital experience monitoring, log management, and best practice assessment.
-- submit async scan
-- threat intelligence
-- secures ai applications with runtime scanning and vulnerability assessment.
-- subscription manager
-- ai runtime security scanning and automated red teaming for ai applications.
-- llm security
 - list all red team scan targets.
-- compliance officer
 - network security engineer
-- cloud security
-- data loss prevention, saas security monitoring, and identity security posture.
-- saas security admin
-- enterprise browser policy management and secure browsing.
-- firewall admin
-- tenant operator
-- threat intel analyst
-- cloud security posture management, compliance monitoring, and workload protection.
-- investigates dlp incidents and manages sensitive data protection policies.
-- get results of an asynchronous ai security scan.
-- compliance team
-- list all available attack categories for red team vulnerability scans.
-- submit a synchronous ai security scan of model inputs/outputs for threats like prompt injection, data leakage, and malicious content.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- ai red teaming
-- investigates security incidents, triages alerts, and coordinates response actions.
-- list ai security profiles.
-- ai security
-- submit an asynchronous scan of ai model inputs/outputs for threats.
-- list ai profiles
-- start red team scan
-- create red team target
-- conducts automated adversarial testing against ai systems and llm applications.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- get red team scan results
-- start a new red team vulnerability scan against a target ai application.
-- get async scan results
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- network security
-- ai security engineer
-- list all red team scan targets with optional type filter.
-- create a new red team scan target.
-- browser security admin
-- list available attack categories for red teaming.
-- get the results of a previously submitted asynchronous scan.
-- monitors network health, performance, and digital experience metrics.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- list red team targets
-- xdr
 - get results of a red team vulnerability scan with optional category and severity filters.
-- sd wan operator
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
 - submit a synchronous scan of ai model inputs/outputs for threats.
-- get the status of a red team vulnerability scan.
-- sre
-- platform engineer
-- enterprise it
-- manage ai red teaming scan targets.
-- identity and access management, tenant hierarchies, and subscription management.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- get red team target
+- start a new red team vulnerability scan against a target.
+- cloud security
+- list all available attack categories for red team vulnerability scans.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- sase
+- designs and implements network security architectures and policies.
+- get ai profile
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
 - manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- soc analyst
+- sre
+- network security
+- data loss prevention, saas security monitoring, and identity security posture.
+- list all available attack categories for red team scans.
+- manages enterprise browser policies and secure browsing configurations.
+- delete red team target
+- manages service accounts, roles, and access policies for platform api access.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- submit sync scan
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- cybersecurity
+- manages multi-tenant security operations at scale for managed service providers.
+- get results of a previously submitted asynchronous ai security scan.
+- conducts automated adversarial testing against ai systems and llm applications.
+- get or delete a specific red team scan target.
+- proactively searches for threats and iocs across telemetry data.
+- get a specific ai security profile by name.
+- list available attack categories for red teaming.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- list attack categories
+- get results of an asynchronous ai security scan.
+- sd wan operator
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- data protection analyst
+- analyzes suspicious files and samples for malware characteristics.
+- compliance officer
+- xdr
+- network architect
+- delete a specific red team scan target by id.
+- incident responder
+- list all red team scan targets with optional type filter.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- threat intel analyst
+- ai runtime security scanning and automated red teaming for ai applications.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- create a new red team scan target.
+- start a new red team vulnerability scan against a target ai application.
+- investigates dlp incidents and manages sensitive data protection policies.
+- list ai profiles
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- submit an asynchronous scan of ai model inputs/outputs for threats.
+- prompt injection
+- list red team targets
+- malware researcher
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- cloud security engineer
+- ai security
+- llm security
+- ai red teaming
+- secures ai applications with runtime scanning and vulnerability assessment.
+- cloud security posture management, compliance monitoring, and workload protection.
+- threat intelligence
+- start ai red team vulnerability scans.
+- iam admin
+- saas security admin
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- get a specific ai security profile.
+- submit a synchronous ai security scan of model inputs/outputs for threats like prompt injection, data leakage, and malicious content.
+- manage enterprise browser policies, user sessions, and deployments.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- list all ai security profiles with pagination.
+- tenant operator
+- enterprise it
+- monitors network health, performance, and digital experience metrics.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- submit a synchronous ai security scan.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- identity and access management, tenant hierarchies, and subscription management.
+- ai security engineer
+- palo alto networks
+- vulnerability manager
+- subscription manager
+- browser security admin
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- get red team scan status
+- get red team scan results
+- firewall admin
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- get a specific red team scan target by id.
+- network operations
+- designs sase and sd-wan network architectures for secure remote access.
+- submit an asynchronous ai security scan.
+- get the results of a previously submitted asynchronous scan.
+- list ai security profiles.
+- create a new red team scan target for ai application vulnerability testing.
+- digital experience monitoring, log management, and best practice assessment.
+- threat hunter
+- manage ai red teaming scan targets.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- create red team target
+- soar
+- sase admin
+- get results of a red team vulnerability scan.
+- submit async scan
+- red team operator
+- get results of a red team vulnerability scan with optional filters.
+- platform engineer
+- start red team scan
+- submit an asynchronous ai security scan of model inputs/outputs for threats.
+- manages logging infrastructure, integrations, and platform automation.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- get the status of a red team vulnerability scan.
+- firewall
+- executes containment, eradication, and recovery actions during security incidents.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- enterprise browser policy management and secure browsing.
+- get async scan results
+- compliance team
+- mssp operator
 slug: ai-security
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks AI Security\"\n  description: \"Unified AI security capability for scanning AI model inputs/outputs for threats and red-teaming AI applications for vulnerabilities across Prisma AIRS and AI Red Teaming APIs.\"\n  tags:\n    - Palo Alto Networks\n    - AI Security\n    - AI Red Teaming\n    - LLM Security\n    - Prompt Injection\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PRISMA_AIRS_TOKEN: PRISMA_AIRS_TOKEN\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: prisma-airs\n      location: ./shared/prisma-airs.yaml\n    - import: prisma-airs-red-teaming\n      location: ./shared/prisma-airs-red-teaming.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: ai-security-api\n      description: \"Unified REST API for AI security scanning and red teaming.\"\n      resources:\n\n        # -- AI Security\
+  \ Scanning (Prisma AIRS) --------------------------------\n        - path: /v1/ai-scans/sync\n          name: ai-scan-sync\n          description: \"Submit a synchronous AI security scan.\"\n          operations:\n            - method: POST\n              name: submit-sync-scan\n              description: \"Submit a synchronous scan of AI model inputs/outputs for threats.\"\n              inputParameters:\n                - name: ai_profile\n                  in: body\n                  type: string\n                  required: true\n                - name: contents\n                  in: body\n                  type: object\n                  required: true\n              call: \"prisma-airs.submit-scan-sync\"\n              with:\n                ai_profile: \"rest.ai_profile\"\n                contents: \"rest.contents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ai-scans/async\n          name: ai-scan-async\n\
+  \          description: \"Submit an asynchronous AI security scan.\"\n          operations:\n            - method: POST\n              name: submit-async-scan\n              description: \"Submit an asynchronous scan of AI model inputs/outputs for threats.\"\n              inputParameters:\n                - name: ai_profile\n                  in: body\n                  type: string\n                  required: true\n                - name: contents\n                  in: body\n                  type: object\n                  required: true\n              call: \"prisma-airs.submit-scan-async\"\n              with:\n                ai_profile: \"rest.ai_profile\"\n                contents: \"rest.contents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ai-scans/async/{scan_id}/results\n          name: ai-scan-async-results\n          description: \"Get results of an asynchronous AI security scan.\"\n       \
+  \   operations:\n            - method: GET\n              name: get-async-scan-results\n              description: \"Get the results of a previously submitted asynchronous scan.\"\n              inputParameters:\n                - name: scan_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-airs.get-async-scan-results\"\n              with:\n                scan_id: \"rest.scan_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -- AI Security Profiles (Prisma AIRS) --------------------------------\n        - path: /v1/ai-profiles\n          name: ai-profiles\n          description: \"List AI security profiles.\"\n          operations:\n            - method: GET\n              name: list-ai-profiles\n              description: \"List all AI security profiles with pagination.\"\n              inputParameters:\n                - name: offset\n   \
+  \               in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"prisma-airs.list-ai-profiles\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ai-profiles/{profile_name}\n          name: ai-profile\n          description: \"Get a specific AI security profile.\"\n          operations:\n            - method: GET\n              name: get-ai-profile\n              description: \"Get a specific AI security profile by name.\"\n              inputParameters:\n                - name: profile_name\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-airs.get-ai-profile\"\n \
+  \             with:\n                profile_name: \"rest.profile_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -- Red Team Targets (Prisma AIRS Red Teaming) ------------------------\n        - path: /v1/red-team-targets\n          name: red-team-targets\n          description: \"Manage AI red teaming scan targets.\"\n          operations:\n            - method: POST\n              name: create-red-team-target\n              description: \"Create a new red team scan target.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                - name: type\n                  in: body\n                  type: string\n                  required: true\n                - name: endpoint_url\n                  in: body\n                  type: string\n                  required: true\n                - name: description\n\
+  \                  in: body\n                  type: string\n                  required: false\n                - name: model\n                  in: body\n                  type: string\n                  required: false\n                - name: auth_config\n                  in: body\n                  type: object\n                  required: false\n                - name: system_prompt\n                  in: body\n                  type: string\n                  required: false\n              call: \"prisma-airs-red-teaming.create-scan-target\"\n              with:\n                name: \"rest.name\"\n                type: \"rest.type\"\n                endpoint_url: \"rest.endpoint_url\"\n                description: \"rest.description\"\n                model: \"rest.model\"\n                auth_config: \"rest.auth_config\"\n                system_prompt: \"rest.system_prompt\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
+  \            - method: GET\n              name: list-red-team-targets\n              description: \"List all red team scan targets.\"\n              inputParameters:\n                - name: type\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"prisma-airs-red-teaming.list-scan-targets\"\n              with:\n                type: \"rest.type\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/red-team-targets/{target_id}\n          name: red-team-target\n          description: \"Get or delete a specific red team scan\
+  \ target.\"\n          operations:\n            - method: GET\n              name: get-red-team-target\n              description: \"Get a specific red team scan target by ID.\"\n              inputParameters:\n                - name: target_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-airs-red-teaming.get-scan-target\"\n              with:\n                target_id: \"rest.target_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-red-team-target\n              description: \"Delete a specific red team scan target by ID.\"\n              inputParameters:\n                - name: target_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-airs-red-teaming.delete-scan-target\"\n              with:\n                target_id:\
+  \ \"rest.target_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -- Red Team Scans (Prisma AIRS Red Teaming) --------------------------\n        - path: /v1/red-team-scans\n          name: red-team-scans\n          description: \"Start AI red team vulnerability scans.\"\n          operations:\n            - method: POST\n              name: start-red-team-scan\n              description: \"Start a new red team vulnerability scan against a target.\"\n              inputParameters:\n                - name: target_id\n                  in: body\n                  type: string\n                  required: true\n                - name: attack_categories\n                  in: body\n                  type: object\n                  required: false\n                - name: custom_prompts\n                  in: body\n                  type: object\n                  required: false\n                - name: max_attacks_per_category\n\
+  \                  in: body\n                  type: integer\n                  required: false\n              call: \"prisma-airs-red-teaming.start-vulnerability-scan\"\n              with:\n                target_id: \"rest.target_id\"\n                attack_categories: \"rest.attack_categories\"\n                custom_prompts: \"rest.custom_prompts\"\n                max_attacks_per_category: \"rest.max_attacks_per_category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/red-team-scans/{scan_id}\n          name: red-team-scan-status\n          description: \"Get the status of a red team vulnerability scan.\"\n          operations:\n            - method: GET\n              name: get-red-team-scan-status\n              description: \"Get the status of a red team vulnerability scan.\"\n              inputParameters:\n                - name: scan_id\n                  in: path\n                  type: string\n\
+  \                  required: true\n              call: \"prisma-airs-red-teaming.get-scan-status\"\n              with:\n                scan_id: \"rest.scan_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/red-team-scans/{scan_id}/results\n          name: red-team-scan-results\n          description: \"Get results of a red team vulnerability scan.\"\n          operations:\n            - method: GET\n              name: get-red-team-scan-results\n              description: \"Get results of a red team vulnerability scan with optional filters.\"\n              inputParameters:\n                - name: scan_id\n                  in: path\n                  type: string\n                  required: true\n                - name: category\n                  in: query\n                  type: string\n                  required: false\n                - name: severity\n                  in: query\n                 \
+  \ type: string\n                  required: false\n              call: \"prisma-airs-red-teaming.get-scan-results\"\n              with:\n                scan_id: \"rest.scan_id\"\n                category: \"rest.category\"\n                severity: \"rest.severity\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -- Attack Categories (Prisma AIRS Red Teaming) -----------------------\n        - path: /v1/attack-categories\n          name: attack-categories\n          description: \"List available attack categories for red teaming.\"\n          operations:\n            - method: GET\n              name: list-attack-categories\n              description: \"List all available attack categories for red team scans.\"\n              call: \"prisma-airs-red-teaming.list-attack-categories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9098\n\
+  \      namespace: ai-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AI security scanning and red teaming.\"\n      tools:\n\n        # -- AI Scanning Tools -------------------------------------------------\n        - name: submit-sync-scan\n          description: \"Submit a synchronous AI security scan of model inputs/outputs for threats like prompt injection, data leakage, and malicious content.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: ai_profile\n              type: string\n              required: true\n            - name: contents\n              type: object\n              required: true\n          call: \"prisma-airs.submit-scan-sync\"\n          with:\n            ai_profile: \"tools.ai_profile\"\n            contents: \"tools.contents\"\n          outputParameters:\n            - type: object\n \
+  \             mapping: \"$.\"\n\n        - name: submit-async-scan\n          description: \"Submit an asynchronous AI security scan of model inputs/outputs for threats.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: ai_profile\n              type: string\n              required: true\n            - name: contents\n              type: object\n              required: true\n          call: \"prisma-airs.submit-scan-async\"\n          with:\n            ai_profile: \"tools.ai_profile\"\n            contents: \"tools.contents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-async-scan-results\n          description: \"Get results of a previously submitted asynchronous AI security scan.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent:\
+  \ true\n            openWorld: true\n          inputParameters:\n            - name: scan_id\n              type: string\n              required: true\n          call: \"prisma-airs.get-async-scan-results\"\n          with:\n            scan_id: \"tools.scan_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-ai-profiles\n          description: \"List all AI security profiles with pagination.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-airs.list-ai-profiles\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n\n        - name: get-ai-profile\n          description: \"Get a specific AI security profile by name.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: profile_name\n              type: string\n              required: true\n          call: \"prisma-airs.get-ai-profile\"\n          with:\n            profile_name: \"tools.profile_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # -- Red Teaming Tools -------------------------------------------------\n        - name: create-red-team-target\n          description: \"Create a new red team scan target for AI application vulnerability testing.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n      \
+  \      - name: name\n              type: string\n              required: true\n            - name: type\n              type: string\n              required: true\n            - name: endpoint_url\n              type: string\n              required: true\n            - name: description\n              type: string\n              required: false\n            - name: model\n              type: string\n              required: false\n            - name: auth_config\n              type: object\n              required: false\n            - name: system_prompt\n              type: string\n              required: false\n          call: \"prisma-airs-red-teaming.create-scan-target\"\n          with:\n            name: \"tools.name\"\n            type: \"tools.type\"\n            endpoint_url: \"tools.endpoint_url\"\n            description: \"tools.description\"\n            model: \"tools.model\"\n            auth_config: \"tools.auth_config\"\n            system_prompt: \"tools.system_prompt\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-red-team-targets\n          description: \"List all red team scan targets with optional type filter.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: type\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-airs-red-teaming.list-scan-targets\"\n          with:\n            type: \"tools.type\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-red-team-target\n          description: \"Get a specific red\
+  \ team scan target by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: target_id\n              type: string\n              required: true\n          call: \"prisma-airs-red-teaming.get-scan-target\"\n          with:\n            target_id: \"tools.target_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-red-team-target\n          description: \"Delete a specific red team scan target by ID.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: target_id\n              type: string\n              required: true\n          call: \"prisma-airs-red-teaming.delete-scan-target\"\n          with:\n            target_id: \"tools.target_id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: start-red-team-scan\n          description: \"Start a new red team vulnerability scan against a target AI application.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: target_id\n              type: string\n              required: true\n            - name: attack_categories\n              type: object\n              required: false\n            - name: custom_prompts\n              type: object\n              required: false\n            - name: max_attacks_per_category\n              type: integer\n              required: false\n          call: \"prisma-airs-red-teaming.start-vulnerability-scan\"\n          with:\n            target_id: \"tools.target_id\"\n            attack_categories: \"tools.attack_categories\"\n            custom_prompts: \"tools.custom_prompts\"\n\
+  \            max_attacks_per_category: \"tools.max_attacks_per_category\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-red-team-scan-status\n          description: \"Get the status of a red team vulnerability scan.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: scan_id\n              type: string\n              required: true\n          call: \"prisma-airs-red-teaming.get-scan-status\"\n          with:\n            scan_id: \"tools.scan_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-red-team-scan-results\n          description: \"Get results of a red team vulnerability scan with optional category and severity filters.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent:\
+  \ true\n            openWorld: true\n          inputParameters:\n            - name: scan_id\n              type: string\n              required: true\n            - name: category\n              type: string\n              required: false\n            - name: severity\n              type: string\n              required: false\n          call: \"prisma-airs-red-teaming.get-scan-results\"\n          with:\n            scan_id: \"tools.scan_id\"\n            category: \"tools.category\"\n            severity: \"tools.severity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-attack-categories\n          description: \"List all available attack categories for red team vulnerability scans.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          call: \"prisma-airs-red-teaming.list-attack-categories\"\n          outputParameters:\n   \
+  \         - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/ai-security.yaml
 tags:
 - Palo Alto Networks
 - AI Security

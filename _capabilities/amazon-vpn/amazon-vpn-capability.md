@@ -9,11 +9,27 @@ personas: []
 provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
-- aws
 - vpn
 - security
+- aws
 - networking
 slug: amazon-vpn-capability
+source_yaml: 'id: amazon-vpn-capability
+
+  name: Amazon VPN Capability
+
+  description: Workflow-oriented capability for Amazon VPN
+
+  tags:
+
+  - AWS
+
+  consumes:
+
+  - ref: capabilities/shared/amazon-vpn-shared.yaml
+
+  '
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-vpn/refs/heads/main/capabilities/amazon-vpn-capability.yaml
 tags: []
 tools: []
 ---

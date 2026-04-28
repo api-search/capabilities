@@ -20,37 +20,42 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- search for available flight offers.
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- complete flight shopping flow from search through price confirmation.
 - travel technology
-- search
-- amadeus
-- shopping
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- travel
+- search available flights by origin, destination, and date.
+- search flights
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
 - confirm price
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- pricing
-- flights
 - confirm pricing for a selected flight offer.
-- developer building online travel agency flight search and booking flows.
 - airlines
 - booking
-- confirm flight price
-- travel
-- developer building conversational travel assistants for flight search.
-- search available flights by origin, destination, and date.
-- confirm current price and availability.
+- search
 - OTA Developer
-- search flights advanced
-- gds
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- price confirmation and validation before booking.
-- hotels
-- search flights
-- Travel Chatbot Developer
-- flight offer discovery and comparison.
 - upsell, seat selection, and add-on services.
+- Travel Chatbot Developer
+- flights
+- gds
+- amadeus
+- search flights advanced
+- price confirmation and validation before booking.
+- developer building online travel agency flight search and booking flows.
+- search for available flight offers.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- confirm flight price
+- hotels
+- confirm current price and availability.
+- complete flight shopping flow from search through price confirmation.
+- developer building conversational travel assistants for flight search.
+- pricing
+- flight offer discovery and comparison.
+- shopping
 slug: flight-shopping
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Flight Shopping\n  description: >-\n    Unified workflow capability for complete flight shopping encompassing\n    search, pricing, upsell, and seat selection. Used by OTA developers,\n    airline retailing platforms, and travel chatbots to build end-to-end\n    flight shopping experiences.\n  tags:\n    - Amadeus\n    - Flights\n    - Shopping\n    - Search\n    - Pricing\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: flight-offers-search\n      location: ./shared/flight-offers-search.yaml\n    - import: flight-offers-price\n      location: ./shared/flight-offers-price.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flight-shopping-api\n      description: Unified REST API for flight search, pricing, and ancillary selection.\n      resources:\n\
+  \        - path: /v1/flights/search\n          name: flight-search\n          description: Search for available flight offers.\n          operations:\n            - method: GET\n              name: search-flights\n              description: Search available flights by origin, destination, and date.\n              call: \"flight-offers-search.get-flight-offers\"\n              with:\n                originLocationCode: \"rest.origin\"\n                destinationLocationCode: \"rest.destination\"\n                departureDate: \"rest.departureDate\"\n                adults: \"rest.adults\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flights/price\n          name: flight-price\n          description: Confirm pricing for a selected flight offer.\n          operations:\n            - method: POST\n              name: confirm-price\n              description: Confirm current price and availability.\n             \
+  \ call: \"flight-offers-price.confirm-flight-price\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: flight-shopping-mcp\n      transport: http\n      description: MCP server for AI-assisted flight shopping and booking preparation.\n      tools:\n        - name: search-flights\n          description: Search for available flights between two airports on a given date, with options for cabin class and passenger count.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flight-offers-search.get-flight-offers\"\n          with:\n            originLocationCode: \"tools.origin\"\n            destinationLocationCode: \"tools.destination\"\n            departureDate: \"tools.departureDate\"\n            adults: \"tools.adults\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-flights-advanced\n\
+  \          description: Advanced flight search with complex criteria using request body for multi-city and detailed filters.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flight-offers-search.search-flight-offers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: confirm-flight-price\n          description: Confirm the current price and availability of a selected flight offer before creating a booking.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flight-offers-price.confirm-flight-price\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amadeus-solutions/refs/heads/main/capabilities/flight-shopping.yaml
 tags:
 - Amadeus
 - Flights

@@ -14,36 +14,41 @@ personas: []
 provider_name: Amazon MSK
 provider_slug: amazon-msk
 search_terms:
-- media processing
-- batch associate scram secret
-- Broadcast Engineer
-- workflow
-- createcluster
-- broadcasting
-- batchdisassociatescramsecret
 - list scram secrets
-- engineer managing broadcast media workflows
-- Media Developer
-- batchassociatescramsecret
-- list clusters v2
-- aws media processing and delivery
-- aws
-- listconfigurations
-- create cluster v2
-- manage media processing jobs
-- listclusters
-- listclustersv2
-- list jobs
-- amazon msk media processing workflow
-- create cluster
-- createclusterv2
-- list configurations
-- listscramsecrets
-- list clusters
-- media
 - developer building media processing applications
+- amazon msk media processing workflow
+- Media Developer
+- listconfigurations
+- list clusters v2
+- create cluster v2
+- createclusterv2
+- batchdisassociatescramsecret
+- engineer managing broadcast media workflows
+- list configurations
+- listclustersv2
+- listclusters
+- list jobs
+- aws
+- listscramsecrets
 - batch disassociate scram secret
+- workflow
+- aws media processing and delivery
+- broadcasting
+- batchassociatescramsecret
+- Broadcast Engineer
+- manage media processing jobs
+- media processing
+- list clusters
+- createcluster
+- batch associate scram secret
+- media
+- create cluster
 slug: amazon-msk-media-workflow
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MSK Workflow\n  description: Workflow capability for Amazon MSK media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: msk\n    location: ./shared/msk.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: msk-workflow-api\n    description: Unified REST API for Amazon MSK workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: msk.list-jobs\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type:\
+  \ mcp\n    port: 9090\n    namespace: msk-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon MSK workflow management.\n    tools:\n    - name: list-scram-secrets\n      description: ListScramSecrets\n      hints:\n        readOnly: true\n        openWorld: true\n      call: msk.list-scram-secrets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-associate-scram-secret\n      description: BatchAssociateScramSecret\n      hints:\n        readOnly: false\n        openWorld: true\n      call: msk.batch-associate-scram-secret\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-disassociate-scram-secret\n      description: BatchDisassociateScramSecret\n      hints:\n        readOnly: false\n        openWorld: true\n      call: msk.batch-disassociate-scram-secret\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-clusters\n      description: ListClusters\n\
+  \      hints:\n        readOnly: true\n        openWorld: true\n      call: msk.list-clusters\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-cluster\n      description: CreateCluster\n      hints:\n        readOnly: false\n        openWorld: true\n      call: msk.create-cluster\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-clusters-v2\n      description: ListClustersV2\n      hints:\n        readOnly: true\n        openWorld: true\n      call: msk.list-clusters-v2\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-cluster-v2\n      description: CreateClusterV2\n      hints:\n        readOnly: false\n        openWorld: true\n      call: msk.create-cluster-v2\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-configurations\n      description: ListConfigurations\n      hints:\n        readOnly: true\n        openWorld: true\n      call:\
+  \ msk.list-configurations\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-msk/refs/heads/main/capabilities/amazon-msk-media-workflow.yaml
 tags:
 - AWS
 - Media

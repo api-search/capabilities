@@ -15,20 +15,23 @@ personas:
 provider_name: AgeChecker.Net
 provider_slug: agechecker-net
 search_terms:
-- end-to-end age verification workflow for e-commerce businesses selling age-restricted products.
-- tracking and auditing age verification session history.
-- e commerce developer
 - identity
-- e-commerce
+- developer integrating age verification into online checkout flows for age-restricted products.
+- regulatory compliance officer ensuring age verification requirements are met for restricted product sales.
 - age verification
+- compliance
+- e commerce developer
+- compliance officer
+- tracking and auditing age verification session history.
 - webhook-based real-time notifications for verification outcomes.
 - customer age verification for regulated product purchases.
-- compliance officer
-- developer integrating age verification into online checkout flows for age-restricted products.
-- compliance
-- regulatory compliance officer ensuring age verification requirements are met for restricted product sales.
+- e-commerce
 - regulatory
+- end-to-end age verification workflow for e-commerce businesses selling age-restricted products.
 slug: age-verification
+source_yaml: "name: Age Verification\ndescription: \"End-to-end age verification workflow for e-commerce businesses selling age-restricted products.\"\napisComposed:\n  - agechecker-net-age-verification-api\ntools:\n  - name: verify-customer-age\n    description: \"Verify a customer's age before allowing purchase of age-restricted products. Returns pass/fail and whether photo ID upload is required.\"\n    sharedTool: agechecker-net-age-verification-api/verify-age\n  - name: check-verification-status\n    description: \"Check the status of a pending age verification session to determine if the customer has completed photo ID upload.\"\n    sharedTool: agechecker-net-age-verification-api/get-verification-session\n  - name: list-recent-verifications\n    description: \"List recent verification sessions to audit age verification compliance for regulatory reporting.\"\n    sharedTool: agechecker-net-age-verification-api/list-verification-sessions\n  - name: setup-verification-webhook\n    description:\
+  \ \"Configure webhook notifications to receive real-time alerts when age verification completes or fails.\"\n    sharedTool: agechecker-net-age-verification-api/configure-webhook\npersonas:\n  - compliance-officer\n  - e-commerce-developer\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/agechecker-net/refs/heads/main/capabilities/age-verification.yaml
 tags: []
 tools: []
 ---

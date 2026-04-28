@@ -43,54 +43,62 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- create an online meeting.
+- meeting management.
+- member management.
+- it admins managing teams infrastructure and policies.
+- create a meeting.
+- microsoft 365
+- create a team.
+- send a message.
+- Team Lead
+- create call
+- list members.
+- video conferencing
+- list joined teams
 - communication
 - manage teams collaboration workflows.
 - initiate a call.
-- list messages from a channel.
-- list messages.
-- list channels.
-- it admins managing teams infrastructure and policies.
 - list team members
-- microsoft 365
-- list joined teams.
-- add team member
-- create a team.
-- create a meeting.
-- send a message.
-- create a new team.
-- list channel messages
-- messaging.
-- video conferencing
-- productivity
-- list channels
-- list members.
-- create a channel.
-- team leads managing channels, members, and communication.
-- list all teams the user has joined.
-- send a message to a channel.
-- collaboration
-- Developer
-- microsoft teams
-- create call
-- team management.
-- list channels in a team.
-- Team Lead
-- developers building teams integrations and bots.
-- add a member to a team.
-- list all members of a team.
 - create team
-- member management.
-- create channel
-- create a new channel.
+- list joined teams.
+- team management.
 - channel management.
-- chat
-- list joined teams
+- list channels
+- send a message to a channel.
+- add team member
+- Developer
+- developers building teams integrations and bots.
 - IT Administrator
+- create a channel.
+- create a new team.
+- list channels.
+- list messages from a channel.
 - create online meeting
-- meeting management.
+- microsoft teams
+- add a member to a team.
+- messaging.
 - send channel message
+- list all members of a team.
+- list channel messages
+- collaboration
+- list messages.
+- team leads managing channels, members, and communication.
+- productivity
+- create channel
+- list channels in a team.
+- list all teams the user has joined.
+- create a new channel.
+- create an online meeting.
+- chat
 slug: team-collaboration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Teams Collaboration\"\n  description: \"Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings, and calls. Used by IT administrators, team leads, and developers building Teams integrations.\"\n  tags:\n    - Microsoft Teams\n    - Collaboration\n    - Communication\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: teams-graph\n      location: ./shared/teams-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: team-collaboration-api\n      description: \"Unified REST API for Teams collaboration workflows.\"\n      resources:\n        - path: /v1/teams\n          name: teams\n          description: \"Team management.\"\n          operations:\n            - method: GET\n              name: list-joined-teams\n\
+  \              description: \"List joined teams.\"\n              call: \"teams-graph.list-joined-teams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-team\n              description: \"Create a team.\"\n              call: \"teams-graph.create-team\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/channels\n          name: channels\n          description: \"Channel management.\"\n          operations:\n            - method: GET\n              name: list-channels\n              description: \"List channels.\"\n              call: \"teams-graph.list-channels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-channel\n              description: \"Create a channel.\"\n              call: \"teams-graph.create-channel\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Messaging.\"\n          operations:\n            - method: GET\n              name: list-channel-messages\n              description: \"List messages.\"\n              call: \"teams-graph.list-channel-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-channel-message\n              description: \"Send a message.\"\n              call: \"teams-graph.send-channel-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/members\n          name: members\n          description: \"Member management.\"\n          operations:\n            - method: GET\n              name: list-team-members\n              description: \"List members.\"\
+  \n              call: \"teams-graph.list-team-members\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/meetings\n          name: meetings\n          description: \"Meeting management.\"\n          operations:\n            - method: POST\n              name: create-online-meeting\n              description: \"Create a meeting.\"\n              call: \"teams-graph.create-online-meeting\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: team-collaboration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Teams collaboration.\"\n      tools:\n        - name: list-joined-teams\n          description: \"List all teams the user has joined.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-joined-teams\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: create-team\n          description: \"Create a new team.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-team\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-channels\n          description: \"List channels in a team.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-channels\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-channel\n          description: \"Create a new channel.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-channel\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-channel-messages\n          description: \"List messages from a channel.\"\n          hints:\n         \
+  \   readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-channel-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-channel-message\n          description: \"Send a message to a channel.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.send-channel-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-team-members\n          description: \"List all members of a team.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-team-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-team-member\n          description: \"Add a member to a team.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.add-team-member\"\n          outputParameters:\n        \
+  \    - type: object\n              mapping: \"$.\"\n        - name: create-online-meeting\n          description: \"Create an online meeting.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-online-meeting\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-call\n          description: \"Initiate a call.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-call\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-teams/refs/heads/main/capabilities/team-collaboration.yaml
 tags:
 - Microsoft Teams
 - Collaboration

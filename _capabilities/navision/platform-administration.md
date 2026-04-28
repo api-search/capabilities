@@ -48,73 +48,87 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list companies
-- uninstall extension
-- microsoft
-- list scheduled background jobs
-- dynamics nav
-- get environment settings
 - install extension
-- update user properties
-- extension management
-- list installed apps
-- list environments
-- get a user by id
-- list features
-- restore environment
-- storage quotas
-- create environment
-- get environment
-- list installed apps in an environment
-- restore an environment from a point in time
-- finance
-- list business central users
-- administration
-- create a new environment
-- get environment storage usage
-- copy an environment
-- permission sets
-- inventory
-- list security groups
-- list scheduled jobs
-- create automation company
-- install an extension
-- list automation companies
-- delete a company
-- navision
-- company management
-- list rapidstart configuration packages
-- copy environment
-- business central
-- get environment details
-- delete environment
-- single environment
-- list extensions
-- get user
-- business management
-- get allowed quotas and limits
-- list users
-- update user
-- list permission sets
-- delete an environment
-- get allowed quotas
-- delete automation company
-- get scheduled upgrade information
-- create a new company
-- erp
-- get environment storage
-- get scheduled upgrade
-- dynamics 365
-- list all business central environments
+- list published extensions
 - uninstall an extension
+- delete automation company
+- automation
+- get environment
+- install an extension
+- list features
+- get environment settings
+- list permission sets
+- permission sets
+- list scheduled background jobs
+- create a new environment
+- dynamics nav
+- storage quotas
+- list security groups
+- get allowed quotas
+- list installed apps
+- get scheduled upgrade
+- restore an environment from a point in time
+- list all business central environments
+- get environment storage
 - environment management
 - list all environments
-- list published extensions
-- list configuration packages
-- automation
+- inventory
+- get environment details
+- navision
+- list rapidstart configuration packages
+- company management
+- list extensions
 - get quotas
+- copy environment
+- restore environment
+- business central
+- list installed apps in an environment
+- create automation company
+- update user properties
+- update user
+- business management
+- extension management
+- single environment
+- get allowed quotas and limits
+- list business central users
+- list scheduled jobs
+- finance
+- get scheduled upgrade information
+- list configuration packages
+- delete environment
+- list users
+- create environment
+- list automation companies
 - user management
+- create a new company
+- uninstall extension
+- delete a company
+- administration
+- microsoft
+- delete an environment
+- get environment storage usage
+- get user
+- dynamics 365
+- erp
+- copy an environment
+- list environments
+- get a user by id
+- list companies
 slug: platform-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynamics NAV Platform Administration\"\n  description: \"Unified workflow for administering Dynamics 365 Business Central combining the Administration Center API for environment management with the Automation API for company setup, extensions, users, and permissions. Used by platform administrators and IT teams.\"\n  tags:\n    - Business Central\n    - Dynamics 365\n    - Administration\n    - Automation\n    - Environment Management\n    - User Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BC_ADMIN_OAUTH_TOKEN: BC_ADMIN_OAUTH_TOKEN\n      BC_OAUTH_TOKEN: BC_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: admin-center\n      location: ./shared/admin-center.yaml\n    - import: automation\n      location: ./shared/automation.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: platform-admin-api\n      description: \"Unified REST API for\
+  \ Business Central platform administration.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"List all environments\"\n              call: \"admin-center.list-all-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/environments/{environmentName}\n          name: environment\n          description: \"Single environment\"\n          operations:\n            - method: GET\n              name: get-environment\n              description: \"Get environment details\"\n              call: \"admin-center.get-environment\"\n              with:\n                applicationFamily: \"rest.applicationFamily\"\n                environmentName: \"rest.environmentName\"\n              outputParameters:\n             \
+  \   - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: create-environment\n              description: \"Create a new environment\"\n              call: \"admin-center.create-environment\"\n              with:\n                applicationFamily: \"rest.applicationFamily\"\n                environmentName: \"rest.environmentName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-environment\n              description: \"Delete an environment\"\n              call: \"admin-center.delete-environment\"\n              with:\n                applicationFamily: \"rest.applicationFamily\"\n                environmentName: \"rest.environmentName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/companies\n          name: companies\n          description: \"Company management\"\
+  \n          operations:\n            - method: GET\n              name: list-companies\n              description: \"List automation companies\"\n              call: \"automation.list-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/extensions\n          name: extensions\n          description: \"Extension management\"\n          operations:\n            - method: GET\n              name: list-extensions\n              description: \"List extensions\"\n              call: \"automation.list-extensions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users\"\n              call: \"automation.list-users\"\n              outputParameters:\n   \
+  \             - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/permission-sets\n          name: permission-sets\n          description: \"Permission sets\"\n          operations:\n            - method: GET\n              name: list-permission-sets\n              description: \"List permission sets\"\n              call: \"automation.list-permission-sets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/quotas\n          name: quotas\n          description: \"Storage quotas\"\n          operations:\n            - method: GET\n              name: get-quotas\n              description: \"Get allowed quotas\"\n              call: \"admin-center.get-quotas\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: platform-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\
+  \ Business Central platform administration.\"\n      tools:\n        - name: list-all-environments\n          description: \"List all Business Central environments\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"admin-center.list-all-environments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-environment\n          description: \"Get environment details\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"admin-center.get-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-environment\n          description: \"Create a new environment\"\n          hints:\n            readOnly: false\n          call: \"admin-center.create-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-environment\n\
+  \          description: \"Delete an environment\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"admin-center.delete-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: copy-environment\n          description: \"Copy an environment\"\n          hints:\n            readOnly: false\n          call: \"admin-center.copy-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: restore-environment\n          description: \"Restore an environment from a point in time\"\n          hints:\n            readOnly: false\n          call: \"admin-center.restore-environment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-installed-apps\n          description: \"List installed apps in an environment\"\n          hints:\n            readOnly: true\n        \
+  \    idempotent: true\n          call: \"admin-center.list-installed-apps\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-environment-settings\n          description: \"Get environment settings\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"admin-center.get-environment-settings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-environment-storage\n          description: \"Get environment storage usage\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"admin-center.get-environment-storage\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-scheduled-upgrade\n          description: \"Get scheduled upgrade information\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call:\
+  \ \"admin-center.get-scheduled-upgrade\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-quotas\n          description: \"Get allowed quotas and limits\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"admin-center.get-quotas\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-companies\n          description: \"List automation companies\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-companies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-automation-company\n          description: \"Create a new company\"\n          hints:\n            readOnly: false\n          call: \"automation.create-automation-company\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n\n        - name: delete-automation-company\n          description: \"Delete a company\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"automation.delete-automation-company\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-extensions\n          description: \"List published extensions\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-extensions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: install-extension\n          description: \"Install an extension\"\n          hints:\n            readOnly: false\n          call: \"automation.install-extension\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: uninstall-extension\n          description: \"Uninstall an extension\"\n          hints:\n\
+  \            readOnly: false\n            destructive: true\n          call: \"automation.uninstall-extension\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-users\n          description: \"List Business Central users\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-user\n          description: \"Get a user by ID\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.get-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-user\n          description: \"Update user properties\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"automation.update-user\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: list-permission-sets\n          description: \"List permission sets\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-permission-sets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-features\n          description: \"List features\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-features\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-security-groups\n          description: \"List security groups\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-security-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-configuration-packages\n\
+  \          description: \"List RapidStart configuration packages\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-configuration-packages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-scheduled-jobs\n          description: \"List scheduled background jobs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"automation.list-scheduled-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/navision/refs/heads/main/capabilities/platform-administration.yaml
 tags:
 - Business Central
 - Dynamics 365

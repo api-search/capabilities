@@ -35,43 +35,50 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- get a payment by id
-- list all commerce payments
-- content
-- create subscription
-- marketing automation
-- individual subscription
-- marketing
-- create a commerce subscription
-- admin
-- commerce payments
-- search payments
-- create payment
-- list subscriptions
-- commerce subscriptions
-- get a subscription by id
-- search commerce subscriptions
-- list all commerce subscriptions
 - get payment
-- commerce
-- search commerce payments
-- operations
-- individual payment
-- list payments
-- create a commerce payment
-- email marketing
-- customer service
-- hubdb
-- update a commerce payment
-- search subscriptions
-- analytics
-- sales
-- crm
+- list all commerce payments
 - get subscription
-- hubspot
+- content
+- hubdb
 - cms
+- commerce
 - update payment
+- analytics
+- search payments
+- crm
+- list all commerce subscriptions
+- customer service
+- hubspot
+- get a payment by id
+- email marketing
+- search commerce subscriptions
+- get a subscription by id
+- admin
+- update a commerce payment
+- commerce payments
+- create a commerce payment
+- list subscriptions
+- marketing
+- commerce subscriptions
+- individual subscription
+- search commerce payments
+- marketing automation
+- create payment
+- search subscriptions
+- create subscription
+- list payments
+- sales
+- individual payment
+- operations
+- create a commerce subscription
 slug: commerce-admin
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Commerce Admin\"\n  description: \"Unified workflow for admins to manage commerce payments, subscriptions, HubDB data tables, CMS pages, and domains. Combines commerce operations with CMS data management for platform administration.\"\n  tags:\n    - HubSpot\n    - Commerce\n    - Admin\n    - CMS\n    - HubDB\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: commerce-payments\n      location: ./shared/commerce-payments.yaml\n    - import: commerce-subscriptions\n      location: ./shared/commerce-subscriptions.yaml\n    - import: cms-hubdb\n      location: ./shared/cms-hubdb-api.yaml\n    - import: cms-pages\n      location: ./shared/cms-pages-api.yaml\n    - import: domains\n      location: ./shared/domains-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace:\
+  \ commerce-admin-api\n      description: \"Unified REST API for commerce operations, data table management, and CMS administration.\"\n      resources:\n        - path: /v1/payments\n          name: payments\n          description: \"Commerce payments\"\n          operations:\n            - { method: GET, name: list-payments, description: \"List payments\", call: \"commerce-payments.list-payments\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-payment, description: \"Create payment\", call: \"commerce-payments.create-payment\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/payments/{commercePaymentId}\n          name: payment-by-id\n          description: \"Individual payment\"\n          operations:\n            - { method: GET, name: get-payment, description: \"Get payment\", call: \"commerce-payments.get-payment\", with: { commercePaymentId: \"rest.commercePaymentId\" }, outputParameters: [{ type:\
+  \ object, mapping: \"$.\" }] }\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Commerce subscriptions\"\n          operations:\n            - { method: GET, name: list-subscriptions, description: \"List subscriptions\", call: \"commerce-subscriptions.list-subscriptions\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/subscriptions/{subscriptionId}\n          name: subscription-by-id\n          description: \"Individual subscription\"\n          operations:\n            - { method: GET, name: get-subscription, description: \"Get subscription\", call: \"commerce-subscriptions.get-subscription\", with: { subscriptionId: \"rest.subscriptionId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n\n    - type: mcp\n      port: 9094\n      namespace: commerce-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted commerce administration, payment tracking, and data management.\"\n   \
+  \   tools:\n        - { name: list-payments, description: \"List all commerce payments\", hints: { readOnly: true, idempotent: true }, call: \"commerce-payments.list-payments\", with: { limit: \"tools.limit\", after: \"tools.after\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-payment, description: \"Get a payment by ID\", hints: { readOnly: true, idempotent: true }, call: \"commerce-payments.get-payment\", with: { commercePaymentId: \"tools.commercePaymentId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-payment, description: \"Create a commerce payment\", hints: { readOnly: false }, call: \"commerce-payments.create-payment\", with: { properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-payment, description: \"Update a commerce payment\", hints: { readOnly: false, idempotent: true }, call: \"commerce-payments.update-payment\", with: { commercePaymentId:\
+  \ \"tools.commercePaymentId\", properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-payments, description: \"Search commerce payments\", hints: { readOnly: true, idempotent: true }, call: \"commerce-payments.search-payments\", with: { filterGroups: \"tools.filterGroups\", query: \"tools.query\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-subscriptions, description: \"List all commerce subscriptions\", hints: { readOnly: true, idempotent: true }, call: \"commerce-subscriptions.list-subscriptions\", with: { limit: \"tools.limit\", after: \"tools.after\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-subscription, description: \"Get a subscription by ID\", hints: { readOnly: true, idempotent: true }, call: \"commerce-subscriptions.get-subscription\", with: { subscriptionId: \"tools.subscriptionId\" }, outputParameters: [{ type: object, mapping: \"$.\"\
+  \ }] }\n        - { name: create-subscription, description: \"Create a commerce subscription\", hints: { readOnly: false }, call: \"commerce-subscriptions.create-subscription\", with: { properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-subscriptions, description: \"Search commerce subscriptions\", hints: { readOnly: true, idempotent: true }, call: \"commerce-subscriptions.search-subscriptions\", with: { filterGroups: \"tools.filterGroups\", query: \"tools.query\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/hubspot/refs/heads/main/capabilities/commerce-admin.yaml
 tags:
 - HubSpot
 - Commerce

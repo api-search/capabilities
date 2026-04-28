@@ -33,43 +33,50 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- initiate authentication
-- get identity intelligence insights for a transaction
-- identity
-- initiate strong customer authentication
-- verify a consumer identity
-- financial services
-- open banking
-- create auth consent
+- create an authentication consent request
 - get transaction insights
-- authentication
-- get identity insights for a transaction
-- get account insights
-- verify a consumer identity using mastercard id
-- fraud detection
-- verify identity
+- kyc
+- create auth consent
+- get authentication consent status
 - get identity insights for an account
 - get account identity insights
-- submit trust verification
-- create authentication consent
-- create consent
-- verification
-- get consent status
-- identity insights for transactions
-- payments
-- mastercard
-- kyc
 - identity verification
-- get transaction identity insights
+- authentication
+- verify a consumer identity using mastercard id
+- verification
+- authentication consent management
+- create consent
+- initiate strong customer authentication
 - digital identity
-- get identity intelligence insights for an account
+- get identity intelligence insights for a transaction
+- payments
+- identity insights for transactions
+- get identity insights for a transaction
+- financial services
+- identity insights for accounts
+- initiate authentication
 - submit identity verification as a trust provider
 - credit cards
-- create an authentication consent request
-- get authentication consent status
-- identity insights for accounts
-- authentication consent management
+- create authentication consent
+- get transaction identity insights
+- get consent status
+- identity
+- fraud detection
+- verify identity
+- mastercard
+- submit trust verification
+- open banking
+- get account insights
+- get identity intelligence insights for an account
+- verify a consumer identity
 slug: identity-and-authentication
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Identity and Authentication\"\n  description: \"Unified workflow for identity managers and compliance teams to verify identities, manage authentication consent, and leverage identity intelligence for fraud prevention across Mastercard's identity services.\"\n  tags:\n    - Mastercard\n    - Identity\n    - Authentication\n    - Verification\n    - KYC\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: id-verification\n      location: ./shared/id-verification.yaml\n    - import: id-trust-providers\n      location: ./shared/id-for-trust-providers.yaml\n    - import: id-identity-providers\n      location: ./shared/id-for-identity-providers.yaml\n    - import: authentication-consent\n      location: ./shared/authentication-consent.yaml\n\
+  \    - import: authentication-facilitator\n      location: ./shared/authentication-facilitator.yaml\n    - import: identity-insights-accounts\n      location: ./shared/identity-insights-accounts.yaml\n    - import: identity-insights-transactions\n      location: ./shared/identity-insights-transactions.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: identity-auth-api\n      description: \"Unified REST API for Mastercard identity and authentication workflows.\"\n      resources:\n        - path: /v1/verifications\n          name: verifications\n          description: \"Identity verification\"\n          operations:\n            - method: POST\n              name: verify-identity\n              description: \"Verify a consumer identity\"\n              call: \"id-verification.verify-identity\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consents\n          name: consents\n          description:\
+  \ \"Authentication consent management\"\n          operations:\n            - method: POST\n              name: create-consent\n              description: \"Create authentication consent\"\n              call: \"authentication-consent.create-consent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/account-insights\n          name: account-insights\n          description: \"Identity insights for accounts\"\n          operations:\n            - method: POST\n              name: get-account-insights\n              description: \"Get identity insights for an account\"\n              call: \"identity-insights-accounts.get-account-insights\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transaction-insights\n          name: transaction-insights\n          description: \"Identity insights for transactions\"\n          operations:\n            - method:\
+  \ POST\n              name: get-transaction-insights\n              description: \"Get identity insights for a transaction\"\n              call: \"identity-insights-transactions.get-transaction-insights\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: identity-auth-mcp\n      transport: http\n      description: \"MCP server for AI-assisted identity verification and authentication.\"\n      tools:\n        - name: verify-identity\n          description: \"Verify a consumer identity using Mastercard ID\"\n          hints:\n            readOnly: true\n          call: \"id-verification.verify-identity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-auth-consent\n          description: \"Create an authentication consent request\"\n          hints:\n            readOnly: false\n          call: \"authentication-consent.create-consent\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-consent-status\n          description: \"Get authentication consent status\"\n          hints:\n            readOnly: true\n          call: \"authentication-consent.get-consent\"\n          with:\n            consent_id: \"tools.consent_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: initiate-authentication\n          description: \"Initiate strong customer authentication\"\n          hints:\n            readOnly: false\n          call: \"authentication-facilitator.initiate-authentication\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account-identity-insights\n          description: \"Get identity intelligence insights for an account\"\n          hints:\n            readOnly: true\n          call: \"identity-insights-accounts.get-account-insights\"\n  \
+  \        outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-transaction-identity-insights\n          description: \"Get identity intelligence insights for a transaction\"\n          hints:\n            readOnly: true\n          call: \"identity-insights-transactions.get-transaction-insights\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-trust-verification\n          description: \"Submit identity verification as a trust provider\"\n          hints:\n            readOnly: false\n          call: \"id-trust-providers.submit-verification\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/mastercard/refs/heads/main/capabilities/identity-and-authentication.yaml
 tags:
 - Mastercard
 - Identity

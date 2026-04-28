@@ -51,73 +51,85 @@ personas: []
 provider_name: Circana
 provider_slug: circana
 search_terms:
-- retail
-- create a data export job in csv, excel, json, or parquet format
-- point of sale
-- report management
-- list categories
-- business intelligence
-- cpg
-- Category Manager
-- manages product category performance, assortment, and shopper insights
-- retailer coverage data
-- get report
-- get report status and details
-- manages brand performance, market share, and competitive positioning
-- circana
 - point-of-sale data access
-- pos data, market share, and sales performance analytics
-- get detailed brand information including market presence
-- consumer insights
-- list reports
-- monitors retailer performance, distribution, and channel dynamics
-- data export
-- list brands within a specific product category
-- list retailers covered in circana measurement universe
-- consumer purchase behavior data
-- product category taxonomy
-- create export
-- get detailed information about a specific product category
-- retrieve aggregated consumer purchase data from panel surveys
-- consumer data
-- retrieve pos data by category and time period
-- create report
-- list brands
-- create a new report
-- list brands in a category
-- get market share
-- get consumer segments
-- list available analytics reports
-- check data export status and get download url
-- list all available product categories in circana taxonomy
-- consumer segmentation data
-- retrieve consumer purchase data
-- create a new analytics report for a category and time period
-- market share analytics
-- create a data export
-- unified market intelligence combining pos, share, consumer, and reporting data
-- get export
 - get pos data
 - retrieve market share data for brands in a product category
-- retrieve consumer segments
-- brand analytics
-- list retailers
-- analytics
 - market intelligence
-- retrieve market share data
-- retrieve point-of-sale data for a product category and time period
-- Brand Manager
-- get consumer purchases
+- market share analytics
 - market research
+- list brands
+- create a new report
 - list product categories
-- retrieve consumer segmentation data based on purchase behavior
-- get brand
+- create report
+- get report
+- cpg
+- list available analytics reports
+- unified market intelligence combining pos, share, consumer, and reporting data
+- monitors retailer performance, distribution, and channel dynamics
+- Brand Manager
+- data export
+- create a data export job in csv, excel, json, or parquet format
+- get report status and details
+- consumer insights
+- get consumer purchases
+- analytics
 - get category
-- report generation, management, and data export
-- categories, brands, and retailers
+- brand analytics
+- business intelligence
+- retailer coverage data
 - analyzes consumer behavior, market trends, and competitive dynamics
+- retrieve consumer segments
+- retrieve aggregated consumer purchase data from panel surveys
+- list categories
+- list retailers
+- list retailers covered in circana measurement universe
+- retrieve point-of-sale data for a product category and time period
+- consumer segmentation data
+- create a data export
+- create export
+- get brand
+- get export
+- get market share
+- check data export status and get download url
+- report generation, management, and data export
+- point of sale
+- list brands in a category
+- get consumer segments
+- retrieve consumer segmentation data based on purchase behavior
+- retail
 - consumer panel data, purchase behavior, and segmentation
+- list reports
+- pos data, market share, and sales performance analytics
+- report management
+- get detailed brand information including market presence
+- circana
+- product category taxonomy
+- get detailed information about a specific product category
+- categories, brands, and retailers
+- list all available product categories in circana taxonomy
+- create a new analytics report for a category and time period
+- manages product category performance, assortment, and shopper insights
+- Category Manager
+- consumer purchase behavior data
+- manages brand performance, market share, and competitive positioning
+- list brands within a specific product category
+- consumer data
+- retrieve consumer purchase data
+- retrieve pos data by category and time period
+- retrieve market share data
 slug: market-intelligence
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Circana Market Intelligence\"\n  description: \"Unified market intelligence workflow combining POS data, market share analytics, consumer panel insights, brand performance, and reporting capabilities for brand managers, category managers, and market researchers.\"\n  tags:\n    - Circana\n    - Market Intelligence\n    - Analytics\n    - Consumer Insights\n    - Retail\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CIRCANA_API_TOKEN: CIRCANA_API_TOKEN\n\ncapability:\n  consumes:\n    - import: liquid-data\n      location: ./shared/liquid-data.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-intelligence-api\n      description: \"Unified REST API for Circana market intelligence workflows.\"\n      resources:\n        - path: /v1/pos-data\n          name: pos-data\n          description: \"Point-of-sale data access\"\n          operations:\n  \
+  \          - method: GET\n              name: get-pos-data\n              description: \"Retrieve POS data by category and time period\"\n              call: \"liquid-data.get-pos-data\"\n              with:\n                category_id: \"rest.category_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/market-share\n          name: market-share\n          description: \"Market share analytics\"\n          operations:\n            - method: GET\n              name: get-market-share\n              description: \"Retrieve market share data\"\n              call: \"liquid-data.get-market-share\"\n              with:\n                category_id: \"rest.category_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/consumer-purchases\n          name: consumer-purchases\n          description: \"Consumer purchase behavior data\"\n          operations:\n            - method: GET\n              name: get-consumer-purchases\n              description: \"Retrieve consumer purchase data\"\n              call: \"liquid-data.get-consumer-purchases\"\n              with:\n                category_id: \"rest.category_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consumer-segments\n          name: consumer-segments\n          description: \"Consumer segmentation data\"\n          operations:\n            - method: GET\n              name: get-consumer-segments\n              description: \"Retrieve consumer segments\"\n              call: \"liquid-data.get-consumer-segments\"\n   \
+  \           with:\n                category_id: \"rest.category_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/categories\n          name: categories\n          description: \"Product category taxonomy\"\n          operations:\n            - method: GET\n              name: list-categories\n              description: \"List product categories\"\n              call: \"liquid-data.list-categories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/brands\n          name: brands\n          description: \"Brand analytics\"\n          operations:\n            - method: GET\n              name: list-brands\n              description: \"List brands in a category\"\n              call: \"liquid-data.list-brands\"\n              with:\n                category_id: \"rest.category_id\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/retailers\n          name: retailers\n          description: \"Retailer coverage data\"\n          operations:\n            - method: GET\n              name: list-retailers\n              description: \"List retailers\"\n              call: \"liquid-data.list-retailers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports\n          name: reports\n          description: \"Report management\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List reports\"\n              call: \"liquid-data.list-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-report\n              description: \"Create a new report\"\n              call: \"liquid-data.create-report\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/exports\n          name: exports\n          description: \"Data export\"\n          operations:\n            - method: POST\n              name: create-export\n              description: \"Create a data export\"\n              call: \"liquid-data.create-export\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: market-intelligence-mcp\n      transport: http\n      description: \"MCP server for AI-assisted market intelligence and consumer analytics.\"\n      tools:\n        - name: get-pos-data\n          description: \"Retrieve point-of-sale data for a product category and time period\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-pos-data\"\n          with:\n            category_id: \"tools.category_id\"\n            start_date: \"\
+  tools.start_date\"\n            end_date: \"tools.end_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-market-share\n          description: \"Retrieve market share data for brands in a product category\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-market-share\"\n          with:\n            category_id: \"tools.category_id\"\n            start_date: \"tools.start_date\"\n            end_date: \"tools.end_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-consumer-purchases\n          description: \"Retrieve aggregated consumer purchase data from panel surveys\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-consumer-purchases\"\n          with:\n            category_id: \"tools.category_id\"\n            start_date: \"tools.start_date\"\
+  \n            end_date: \"tools.end_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-consumer-segments\n          description: \"Retrieve consumer segmentation data based on purchase behavior\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-consumer-segments\"\n          with:\n            category_id: \"tools.category_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-categories\n          description: \"List all available product categories in Circana taxonomy\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.list-categories\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-category\n          description: \"Get detailed information about a specific product category\"\n      \
+  \    hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-category\"\n          with:\n            category_id: \"tools.category_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-brands\n          description: \"List brands within a specific product category\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.list-brands\"\n          with:\n            category_id: \"tools.category_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-brand\n          description: \"Get detailed brand information including market presence\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-brand\"\n          with:\n            brand_id: \"tools.brand_id\"\n          outputParameters:\n            - type: object\n       \
+  \       mapping: \"$.\"\n        - name: list-retailers\n          description: \"List retailers covered in Circana measurement universe\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.list-retailers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-reports\n          description: \"List available analytics reports\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.list-reports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-report\n          description: \"Create a new analytics report for a category and time period\"\n          hints:\n            readOnly: false\n          call: \"liquid-data.create-report\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-report\n          description:\
+  \ \"Get report status and details\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-report\"\n          with:\n            report_id: \"tools.report_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-export\n          description: \"Create a data export job in CSV, Excel, JSON, or Parquet format\"\n          hints:\n            readOnly: false\n          call: \"liquid-data.create-export\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-export\n          description: \"Check data export status and get download URL\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liquid-data.get-export\"\n          with:\n            export_id: \"tools.export_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/circana/refs/heads/main/capabilities/market-intelligence.yaml
 tags:
 - Circana
 - Market Intelligence

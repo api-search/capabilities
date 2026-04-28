@@ -11,27 +11,31 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: aws-step-functions
 search_terms:
-- get details about a state machine execution
-- create_state_machine
-- state machine
-- start_execution
-- list_state_machines
-- list executions for a state machine
 - create a new step functions state machine
-- list_executions
-- workflows
-- aws
-- delete_state_machine
-- stop a running state machine execution
-- delete a step functions state machine
-- list all step functions state machines
-- stop_execution
-- start an execution of a state machine
-- describe_execution
-- serverless
-- ipaas
 - orchestration
+- list all step functions state machines
+- serverless
+- stop a running state machine execution
+- describe_execution
+- start_execution
+- aws
+- list_state_machines
+- delete a step functions state machine
+- list executions for a state machine
+- workflows
+- create_state_machine
+- list_executions
+- start an execution of a state machine
+- delete_state_machine
+- ipaas
+- state machine
+- get details about a state machine execution
+- stop_execution
 slug: orchestration-workflow
+source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: AWS Step Functions Orchestration Workflow\n  description: Workflow capability for managing state machines and executions with AWS Step Functions.\n  tags:\n    - Orchestration\n    - Serverless\n    - Workflows\n    - State Machine\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: step-functions\n      location: ./shared/step-functions.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-api\n      resources:\n        - label: Create State Machine\n          method: POST\n          path: /state-machines\n        - label: List State Machines\n          method: GET\n          path: /state-machines\n        - label: Delete State Machine\n          method: DELETE\n          path: /state-machines/{arn}\n\
+  \        - label: Start Execution\n          method: POST\n          path: /executions\n        - label: Stop Execution\n          method: DELETE\n          path: /executions/{arn}\n        - label: Describe Execution\n          method: GET\n          path: /executions/{arn}\n        - label: List Executions\n          method: GET\n          path: /executions\n    - type: mcp\n      port: 9090\n      namespace: workflow-mcp\n      transport: http\n      tools:\n        - name: create_state_machine\n          description: Create a new Step Functions state machine\n        - name: list_state_machines\n          description: List all Step Functions state machines\n        - name: delete_state_machine\n          description: Delete a Step Functions state machine\n        - name: start_execution\n          description: Start an execution of a state machine\n        - name: stop_execution\n          description: Stop a running state machine execution\n        - name: describe_execution\n   \
+  \       description: Get details about a state machine execution\n        - name: list_executions\n          description: List executions for a state machine\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aws-step-functions/refs/heads/main/capabilities/orchestration-workflow.yaml
 tags:
 - Orchestration
 - Serverless

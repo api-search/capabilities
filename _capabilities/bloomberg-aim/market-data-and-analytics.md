@@ -35,48 +35,57 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- field list management
-- create universe
-- get reference data
-- data distributions
-- list field lists for data requests
-- data catalog browsing
-- list available data catalogs
-- list available bloomberg data catalogs
-- get historical data for securities
-- list completed data distributions
-- financial data
 - portfolio management
-- list security universes
-- create data request
+- list distributions
+- list available data catalogs
+- search available bloomberg data fields
 - trading
 - get reference data for securities via http api
-- reference data access
-- create a security universe for data requests
-- get historical end-of-day data
-- get reference data for securities
-- market data
-- get historical data
 - get catalog
-- bloomberg
-- historical data access
-- order management
-- search available bloomberg data fields
-- search for securities and instruments
-- list field lists
-- reference data
-- get data catalog details
-- security universe management
-- get intraday bar data
 - list universes
-- list distributions
-- search instruments
-- create a bloomberg data request
 - list catalogs
+- field list management
+- bloomberg
+- search instruments
+- list field lists for data requests
 - get intraday bars
-- financial analytics
+- create a bloomberg data request
+- search for securities and instruments
+- data catalog browsing
+- get reference data
+- list completed data distributions
 - search fields
+- order management
+- financial analytics
+- reference data access
+- get historical data
+- security universe management
+- create a security universe for data requests
+- historical data access
+- market data
+- reference data
+- get intraday bar data
+- list security universes
+- data distributions
+- get reference data for securities
+- get historical end-of-day data
+- get data catalog details
+- create data request
+- list available bloomberg data catalogs
+- get historical data for securities
+- list field lists
+- financial data
+- create universe
 slug: market-data-and-analytics
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data and Analytics\"\n  description: \"Workflow for accessing Bloomberg market data combining the Data License HAPI for bulk data with the HTTP API for real-time reference and historical data, used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Analytics\n    - Reference Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_HAPI_TOKEN: BLOOMBERG_HAPI_TOKEN\n      BLOOMBERG_HTTP_USERNAME: BLOOMBERG_HTTP_USERNAME\n      BLOOMBERG_HTTP_PASSWORD: BLOOMBERG_HTTP_PASSWORD\n\ncapability:\n  consumes:\n    - import: data-license\n      location: ./shared/data-license.yaml\n    - import: http-api\n      location: ./shared/http-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data and analytics.\"\
+  \n      resources:\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Data catalog browsing\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List available data catalogs\"\n              call: \"data-license.list-catalogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/universes\n          name: universes\n          description: \"Security universe management\"\n          operations:\n            - method: GET\n              name: list-universes\n              description: \"List security universes\"\n              call: \"data-license.list-universes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/field-lists\n          name: field-lists\n          description: \"Field list management\"\n          operations:\n            - method: GET\n   \
+  \           name: list-field-lists\n              description: \"List field lists\"\n              call: \"data-license.list-field-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reference-data\n          name: reference-data\n          description: \"Reference data access\"\n          operations:\n            - method: POST\n              name: get-reference-data\n              description: \"Get reference data for securities\"\n              call: \"http-api.get-reference-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/historical-data\n          name: historical-data\n          description: \"Historical data access\"\n          operations:\n            - method: POST\n              name: get-historical-data\n              description: \"Get historical end-of-day data\"\n              call: \"http-api.get-historical-data\"\n \
+  \             outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/distributions\n          name: distributions\n          description: \"Data distributions\"\n          operations:\n            - method: GET\n              name: list-distributions\n              description: \"List completed data distributions\"\n              call: \"data-license.list-distributions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: market-data-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Bloomberg market data access.\"\n      tools:\n        - name: list-catalogs\n          description: \"List available Bloomberg data catalogs\"\n          hints:\n            readOnly: true\n          call: \"data-license.list-catalogs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n    \
+  \    - name: get-catalog\n          description: \"Get data catalog details\"\n          hints:\n            readOnly: true\n          call: \"data-license.get-catalog\"\n          with:\n            catalogId: \"tools.catalogId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-universes\n          description: \"List security universes\"\n          hints:\n            readOnly: true\n          call: \"data-license.list-universes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-universe\n          description: \"Create a security universe for data requests\"\n          hints:\n            readOnly: false\n          call: \"data-license.create-universe\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-field-lists\n          description: \"List field lists for data requests\"\n          hints:\n      \
+  \      readOnly: true\n          call: \"data-license.list-field-lists\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-data-request\n          description: \"Create a Bloomberg data request\"\n          hints:\n            readOnly: false\n          call: \"data-license.create-request\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-distributions\n          description: \"List completed data distributions\"\n          hints:\n            readOnly: true\n          call: \"data-license.list-distributions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-reference-data\n          description: \"Get reference data for securities via HTTP API\"\n          hints:\n            readOnly: true\n          call: \"http-api.get-reference-data\"\n          outputParameters:\n            - type: object\n        \
+  \      mapping: \"$.\"\n        - name: get-historical-data\n          description: \"Get historical data for securities\"\n          hints:\n            readOnly: true\n          call: \"http-api.get-historical-data\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-intraday-bars\n          description: \"Get intraday bar data\"\n          hints:\n            readOnly: true\n          call: \"http-api.get-intraday-bars\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-fields\n          description: \"Search available Bloomberg data fields\"\n          hints:\n            readOnly: true\n          call: \"http-api.search-fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-instruments\n          description: \"Search for securities and instruments\"\n          hints:\n            readOnly: true\n\
+  \          call: \"http-api.search-instruments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/bloomberg-aim/refs/heads/main/capabilities/market-data-and-analytics.yaml
 tags:
 - Bloomberg
 - Market Data

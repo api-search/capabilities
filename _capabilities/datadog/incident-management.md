@@ -57,66 +57,75 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- delete incident
-- post an event
-- get an incident
-- get monitor status
-- mute a monitor
-- visualizations
-- datadog
-- list monitors to check alert status
-- get incident details
-- search events
-- getMonitor
-- get event
-- mute a monitor during incident response
-- unmute a monitor after incident resolution
-- create an incident
-- unmute monitor
-- createIncident
-- list monitors
-- muteMonitor
-- get incident
-- list incident teams
-- incidents
-- event correlation
-- createEvent
-- listIncidents
-- delete an incident
-- individual incident operations
-- events
-- updateIncident
-- create a new incident
-- get a monitor
-- post an event during incident
-- monitoring
-- list incidents
-- incident management
-- deleteIncident
-- individual monitor
-- mute monitor during incident
-- mute monitor
-- search events related to incident
-- list events
-- getIncident
-- monitor status
-- analytics
-- list events for correlation
-- monitors
-- update an incident
-- get a specific event
-- listMonitors
-- t1
-- dashboards
-- searchEvents
 - create incident
-- update an existing incident
-- platform
-- create event
-- get monitor
+- create a new incident
+- events
+- create an incident
+- list incident teams
+- individual incident operations
+- list incidents
+- list monitors to check alert status
+- updateIncident
+- searchEvents
+- monitoring
+- incident management
+- getIncident
+- search events
+- listIncidents
+- mute a monitor during incident response
+- unmute monitor
+- monitor status
+- individual monitor
+- createIncident
+- get incident
+- createEvent
+- muteMonitor
 - listEvents
+- analytics
+- get monitor
+- platform
+- get event
+- getMonitor
+- mute monitor
+- dashboards
+- create event
+- unmute a monitor after incident resolution
+- get a monitor
+- list events for correlation
+- get monitor status
+- get incident details
+- visualizations
+- get an incident
+- event correlation
+- post an event
+- post an event during incident
+- search events related to incident
 - update incident
+- t1
+- delete incident
+- mute monitor during incident
+- get a specific event
+- monitors
+- listMonitors
+- update an existing incident
+- datadog
+- update an incident
+- mute a monitor
+- delete an incident
+- incidents
+- list monitors
+- list events
+- deleteIncident
 slug: incident-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Incident Management\"\n  description: \"Unified workflow for incident management combining incidents, events, and monitors. Used by incident commanders and on-call engineers for creating incidents, correlating events, and managing monitor alerts during outages.\"\n  tags:\n    - Datadog\n    - Incident Management\n    - Incidents\n    - Events\n    - Monitors\n  personas:\n    - Incident Commander\n    - On-Call Engineer\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-incidents\n      location: \"./shared/incidents.yaml\"\n    - import: dd-events\n      location: \"./shared/events.yaml\"\n    - import: dd-monitors\n      location: \"./shared/monitors.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: dd-incident-mgmt-api\n  \
+  \    description: \"Unified REST API for incident management workflows combining incidents, events, and monitors.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management\"\n          operations:\n            - method: GET\n              name: listIncidents\n              description: \"List incidents\"\n              call: \"dd-incidents.listIncidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createIncident\n              description: \"Create an incident\"\n              call: \"dd-incidents.createIncident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/incidents/{incident_id}\n          name: incident\n          description: \"Individual incident operations\"\n          operations:\n            - method: GET\n              name: getIncident\n\
+  \              description: \"Get an incident\"\n              call: \"dd-incidents.getIncident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: updateIncident\n              description: \"Update an incident\"\n              call: \"dd-incidents.updateIncident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: deleteIncident\n              description: \"Delete an incident\"\n              call: \"dd-incidents.deleteIncident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Event correlation\"\n          operations:\n            - method: GET\n              name: listEvents\n              description: \"List events\"\n              call: \"dd-events.listEvents\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createEvent\n              description: \"Post an event\"\n              call: \"dd-events.createEvent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events/search\n          name: events-search\n          description: \"Search events\"\n          operations:\n            - method: POST\n              name: searchEvents\n              description: \"Search events\"\n              call: \"dd-events.searchEvents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors\n          name: monitors\n          description: \"Monitor status\"\n          operations:\n            - method: GET\n              name: listMonitors\n              description: \"List monitors\"\n              call: \"dd-monitors.listMonitors\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}\n          name: monitor\n          description: \"Individual monitor\"\n          operations:\n            - method: GET\n              name: getMonitor\n              description: \"Get a monitor\"\n              call: \"dd-monitors.getMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}/mute\n          name: monitor-mute\n          description: \"Mute monitor during incident\"\n          operations:\n            - method: POST\n              name: muteMonitor\n              description: \"Mute a monitor\"\n              call: \"dd-monitors.muteMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: dd-incident-mgmt-mcp\n      transport:\
+  \ http\n      description: \"MCP server for AI-assisted incident management workflows.\"\n      tools:\n        - name: list-incidents\n          description: \"List incidents\"\n          call: \"dd-incidents.listIncidents\"\n          hints:\n            readOnly: true\n        - name: get-incident\n          description: \"Get incident details\"\n          call: \"dd-incidents.getIncident\"\n          hints:\n            readOnly: true\n        - name: create-incident\n          description: \"Create a new incident\"\n          call: \"dd-incidents.createIncident\"\n        - name: update-incident\n          description: \"Update an existing incident\"\n          call: \"dd-incidents.updateIncident\"\n          hints:\n            idempotent: true\n        - name: delete-incident\n          description: \"Delete an incident\"\n          call: \"dd-incidents.deleteIncident\"\n          hints:\n            destructive: true\n        - name: list-incident-teams\n          description:\
+  \ \"List incident teams\"\n          call: \"dd-incidents.listIncidentTeams\"\n          hints:\n            readOnly: true\n        - name: list-events\n          description: \"List events for correlation\"\n          call: \"dd-events.listEvents\"\n          hints:\n            readOnly: true\n        - name: get-event\n          description: \"Get a specific event\"\n          call: \"dd-events.getEvent\"\n          hints:\n            readOnly: true\n        - name: create-event\n          description: \"Post an event during incident\"\n          call: \"dd-events.createEvent\"\n        - name: search-events\n          description: \"Search events related to incident\"\n          call: \"dd-events.searchEvents\"\n          hints:\n            readOnly: true\n        - name: list-monitors\n          description: \"List monitors to check alert status\"\n          call: \"dd-monitors.listMonitors\"\n          hints:\n            readOnly: true\n        - name: get-monitor\n         \
+  \ description: \"Get monitor status\"\n          call: \"dd-monitors.getMonitor\"\n          hints:\n            readOnly: true\n        - name: mute-monitor\n          description: \"Mute a monitor during incident response\"\n          call: \"dd-monitors.muteMonitor\"\n        - name: unmute-monitor\n          description: \"Unmute a monitor after incident resolution\"\n          call: \"dd-monitors.unmuteMonitor\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/datadog/refs/heads/main/capabilities/incident-management.yaml
 tags:
 - Datadog
 - Incident Management

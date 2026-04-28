@@ -34,47 +34,55 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- manage a payment account lifecycle
-- query payment account reference to link tokens to accounts
-- financial services
-- create fulfillment order
-- open banking
-- card issuance and management
-- manage payment account
-- validate account details
-- submit pan-related event for account level management
-- get payment account reference
-- card management
-- create a physical card fulfillment order
-- fraud detection
-- look up bin information for a card
-- automatic billing updates
-- request updated card credentials
-- manage account
-- retrieve account catalog data
-- payment account management
-- manage a payment account
-- issue card
 - bin lookup
 - get account catalog
-- issuers
-- get card details
-- validate account
-- account management
-- lookup bin
-- payments
-- look up bin information
-- request updated card credentials for card-on-file
-- mastercard
-- issue a new card
-- issue a new mastercard card
-- digital identity
 - list available mastercard bins
-- submit pan event
+- manage a payment account lifecycle
+- lookup bin
+- manage payment account
+- create a physical card fulfillment order
+- digital identity
+- issue card
+- payments
+- issue a new mastercard card
+- get payment account reference
+- submit pan-related event for account level management
+- look up bin information for a card
+- financial services
+- look up bin information
+- validate account details
+- manage a payment account
+- account management
+- manage account
 - credit cards
-- get billing updates
 - list bins
+- submit pan event
+- query payment account reference to link tokens to accounts
+- validate account
+- automatic billing updates
+- get billing updates
+- get card details
+- fraud detection
+- mastercard
+- card management
+- card issuance and management
+- issue a new card
+- create fulfillment order
+- request updated card credentials for card-on-file
+- open banking
+- payment account management
+- issuers
+- request updated card credentials
+- retrieve account catalog data
 slug: card-and-account-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Card and Account Management\"\n  description: \"Unified workflow for issuers and card managers to handle card issuance, fulfillment, BIN lookups, billing updates, payment account management, and account catalog services.\"\n  tags:\n    - Mastercard\n    - Card Management\n    - Account Management\n    - Issuers\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: card-issuance\n      location: ./shared/card-issuance.yaml\n    - import: traditional-fulfillment\n      location: ./shared/traditional-fulfillment.yaml\n    - import: bin-lookup\n      location: ./shared/bin-lookup.yaml\n    - import: automatic-billing-updater\n      location: ./shared/automatic-billing-updater.yaml\n    - import: payment-account-mgmt\n      location:\
+  \ ./shared/payment-account-management.yaml\n    - import: payment-account-ref\n      location: ./shared/payment-account-reference.yaml\n    - import: account-catalog\n      location: ./shared/account-catalog.yaml\n    - import: universal-spec\n      location: ./shared/universal-spec-submission.yaml\n    - import: account-validation\n      location: ./shared/account-validation.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: card-account-api\n      description: \"Unified REST API for card and account management.\"\n      resources:\n        - path: /v1/cards\n          name: cards\n          description: \"Card issuance and management\"\n          operations:\n            - method: POST\n              name: issue-card\n              description: \"Issue a new card\"\n              call: \"card-issuance.issue-card\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bins\n          name: bins\n\
+  \          description: \"BIN lookup\"\n          operations:\n            - method: POST\n              name: lookup-bin\n              description: \"Look up BIN information\"\n              call: \"bin-lookup.lookup-bin\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/billing-updates\n          name: billing-updates\n          description: \"Automatic billing updates\"\n          operations:\n            - method: POST\n              name: get-billing-updates\n              description: \"Request updated card credentials\"\n              call: \"automatic-billing-updater.get-updates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts\n          name: accounts\n          description: \"Payment account management\"\n          operations:\n            - method: POST\n              name: manage-account\n              description: \"Manage\
+  \ a payment account\"\n              call: \"payment-account-mgmt.manage-account\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9094\n      namespace: card-account-mcp\n      transport: http\n      description: \"MCP server for AI-assisted card and account management.\"\n      tools:\n        - name: issue-card\n          description: \"Issue a new Mastercard card\"\n          hints:\n            readOnly: false\n          call: \"card-issuance.issue-card\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-card-details\n          description: \"Get card details\"\n          hints:\n            readOnly: true\n          call: \"card-issuance.get-card\"\n          with:\n            card_id: \"tools.card_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-fulfillment-order\n     \
+  \     description: \"Create a physical card fulfillment order\"\n          hints:\n            readOnly: false\n          call: \"traditional-fulfillment.create-order\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-bin\n          description: \"Look up BIN information for a card\"\n          hints:\n            readOnly: true\n          call: \"bin-lookup.lookup-bin\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-bins\n          description: \"List available Mastercard BINs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"bin-lookup.list-bins\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-billing-updates\n          description: \"Request updated card credentials for card-on-file\"\n          hints:\n            readOnly: true\n          call: \"automatic-billing-updater.get-updates\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: manage-payment-account\n          description: \"Manage a payment account lifecycle\"\n          hints:\n            readOnly: false\n          call: \"payment-account-mgmt.manage-account\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-payment-account-reference\n          description: \"Query payment account reference to link tokens to accounts\"\n          hints:\n            readOnly: true\n          call: \"payment-account-ref.get-par\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: validate-account\n          description: \"Validate account details\"\n          hints:\n            readOnly: true\n          call: \"account-validation.validate-account\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account-catalog\n\
+  \          description: \"Retrieve account catalog data\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"account-catalog.get-catalog\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-pan-event\n          description: \"Submit PAN-related event for account level management\"\n          hints:\n            readOnly: false\n          call: \"universal-spec.submit-spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/mastercard/refs/heads/main/capabilities/card-and-account-management.yaml
 tags:
 - Mastercard
 - Card Management

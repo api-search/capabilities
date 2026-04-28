@@ -32,43 +32,50 @@ provider_name: Apache OFBiz
 provider_slug: apache-ofbiz
 search_terms:
 - get auth token
-- engineers integrating external systems with ofbiz via the rest api.
-- get token
-- list all ofbiz services exported via the rest plugin for discovery.
 - invoke service get
-- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
-- Integration Engineer
-- apache ofbiz
-- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
-- business applications
-- obtain jwt access tokens for api authentication.
-- invoke ofbiz service via post with json body.
-- list all exported ofbiz rest services.
-- authenticate and obtain jwt token.
-- authenticate to apache ofbiz and obtain a jwt access token for subsequent api calls.
-- invoke ofbiz service via get with query parameters.
-- ofbiz service discovery.
+- engineers integrating external systems with ofbiz via the rest api.
 - java
-- administrators who configure and manage ofbiz erp modules and business processes.
-- invoke ofbiz services by name.
+- get token
+- authenticate and obtain jwt token.
+- Integration Engineer
+- e-commerce
+- open source
 - supply chain
-- invoke service post
-- automated execution of ofbiz business logic services via rest api calls.
-- apache
-- end-to-end erp workflow covering authentication and ofbiz service invocation.
+- ERP Administrator
+- authenticate to apache ofbiz and obtain a jwt access token for subsequent api calls.
+- invoke ofbiz services by name.
+- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
 - refresh token
 - crm
-- erp
-- list services
-- open source
-- e-commerce
-- refresh an expired ofbiz jwt access token using a refresh token.
-- ERP Administrator
-- refresh an expired access token.
+- end-to-end erp workflow covering authentication and ofbiz service invocation.
 - refresh jwt access tokens.
-- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
+- apache
+- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
+- refresh an expired access token.
+- apache ofbiz
+- list services
+- automated execution of ofbiz business logic services via rest api calls.
+- ofbiz service discovery.
+- administrators who configure and manage ofbiz erp modules and business processes.
 - refresh auth token
+- business applications
+- invoke ofbiz service via post with json body.
+- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
+- list all exported ofbiz rest services.
+- invoke service post
+- refresh an expired ofbiz jwt access token using a refresh token.
+- list all ofbiz services exported via the rest plugin for discovery.
+- erp
+- obtain jwt access tokens for api authentication.
+- invoke ofbiz service via get with query parameters.
 slug: apache-ofbiz-erp-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Apache OFBiz ERP Operations\n  description: Workflow capability for ERP and business process automation using Apache OFBiz REST API. Covers authentication, service discovery, and invocation of OFBiz services for ERP, CRM, e-commerce, and supply chain operations. Intended for ERP administrators and integration engineers.\n  tags:\n    - Apache OFBiz\n    - ERP\n    - CRM\n    - E-Commerce\n    - Business Applications\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OFBIZ_USERNAME: OFBIZ_USERNAME\n      OFBIZ_PASSWORD: OFBIZ_PASSWORD\n      OFBIZ_TOKEN: OFBIZ_TOKEN\n\ncapability:\n  consumes:\n    - import: ofbiz\n      location: ./shared/apache-ofbiz.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ofbiz-erp-api\n      description: Unified REST API for Apache OFBiz ERP operations.\n      resources:\n        - path: /v1/auth/token\n          name: auth-token\n\
+  \          description: Obtain JWT access tokens for API authentication.\n          operations:\n            - method: POST\n              name: get-token\n              description: Authenticate and obtain JWT token.\n              call: \"ofbiz.get-token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/auth/refresh\n          name: auth-refresh\n          description: Refresh JWT access tokens.\n          operations:\n            - method: POST\n              name: refresh-token\n              description: Refresh an expired access token.\n              call: \"ofbiz.refresh-token\"\n              with:\n                refreshToken: \"rest.refresh_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/services\n          name: services\n          description: OFBiz service discovery.\n          operations:\n            - method: GET\n\
+  \              name: list-services\n              description: List all exported OFBiz REST services.\n              call: \"ofbiz.get-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/services/{serviceName}\n          name: service-invoke\n          description: Invoke OFBiz services by name.\n          operations:\n            - method: GET\n              name: invoke-service-get\n              description: Invoke OFBiz service via GET with query parameters.\n              call: \"ofbiz.invoke-service-get\"\n              with:\n                serviceName: \"rest.serviceName\"\n                inParams: \"rest.inParams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: invoke-service-post\n              description: Invoke OFBiz service via POST with JSON body.\n              call: \"ofbiz.invoke-service-post\"\
+  \n              with:\n                serviceName: \"rest.serviceName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: ofbiz-erp-mcp\n      transport: http\n      description: MCP server for AI-assisted Apache OFBiz ERP operations.\n      tools:\n        - name: get-auth-token\n          description: Authenticate to Apache OFBiz and obtain a JWT access token for subsequent API calls.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ofbiz.get-token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: refresh-auth-token\n          description: Refresh an expired OFBiz JWT access token using a refresh token.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ofbiz.refresh-token\"\n          with:\n            refreshToken: \"tools.refreshToken\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-services\n          description: List all OFBiz services exported via the REST plugin for discovery.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"ofbiz.get-services\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: invoke-service-get\n          description: Invoke an OFBiz REST service via GET method. Useful for read-only service calls like product lookups, order queries, and data retrieval.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ofbiz.invoke-service-get\"\n          with:\n            serviceName: \"tools.serviceName\"\n            inParams: \"tools.inParams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: invoke-service-post\n          description: Invoke\
+  \ an OFBiz REST service via POST method. Used for write operations like creating orders, updating inventory, and processing payments.\n          hints:\n            readOnly: false\n            openWorld: true\n          call: \"ofbiz.invoke-service-post\"\n          with:\n            serviceName: \"tools.serviceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-ofbiz/refs/heads/main/capabilities/apache-ofbiz-erp-operations.yaml
 tags:
 - Apache OFBiz
 - ERP

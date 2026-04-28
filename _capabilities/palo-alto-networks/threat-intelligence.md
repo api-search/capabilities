@@ -103,178 +103,219 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- sase admin
-- get details of a specific security advisory by id.
-- designs and implements network security architectures and policies.
-- download a sample file by hash.
-- threat vault api usage statistics.
-- designs sase and sd-wan network architectures for secure remote access.
-- get dns network stats
-- list all palo alto networks products affected by security advisories.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- list all products affected by security advisories.
-- list palo alto networks security advisories with optional filtering by severity and affected product.
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- get packet capture for a file hash.
-- get wildfire analysis reports.
-- get advisory by cve
-- manages multi-tenant security operations at scale for managed service providers.
-- get the verdict for a file hash.
-- mssp operator
-- search threat signatures
-- bulk lookup domains
-- threat hunter
-- network architect
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- download a malware sample file by hash from wildfire.
-- get the analysis report for a file hash.
-- incident responder
-- network operations
-- download packet captures from atp reports in threat vault.
-- get dns threat intelligence for multiple domains in bulk.
-- submit file for analysis
-- dns network statistics.
-- get analysis pcap
-- sase
-- get advanced threat prevention reports from threat vault.
-- malware analysis
-- submit a link for wildfire malware analysis.
-- get wildfire verdicts for multiple file hashes (max 500).
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- submit link for analysis
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- iam admin
-- soar
-- executes containment, eradication, and recovery actions during security incidents.
-- get a security advisory by cve identifier.
-- products affected by security advisories.
-- analyzes suspicious files and samples for malware characteristics.
-- manage enterprise browser policies, user sessions, and deployments.
-- manages logging infrastructure, integrations, and platform automation.
-- palo alto networks
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- get dns stats
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- download pcap
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- cybersecurity
-- vulnerability manager
-- get the wildfire verdict for a file hash.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- malware researcher
-- manages enterprise browser policies and secure browsing configurations.
-- get a security advisory by its cve identifier.
-- get threat intelligence for multiple domains.
-- download sample
-- lookup domain
-- get wildfire verdicts for file hashes.
-- get threat vault stats
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- manages service accounts, roles, and access policies for platform api access.
-- firewall
-- cloud security engineer
-- data protection analyst
-- list security advisories
-- get dns network statistics for a given time range.
-- soc analyst
-- proactively searches for threats and iocs across telemetry data.
-- palo alto networks security advisories.
-- red team operator
-- get wildfire verdicts for multiple file hashes.
-- get advisory
-- bulk query domain threat intelligence.
-- get atp reports
-- submit url
-- threat intelligence
-- get verdict
-- list security advisories with optional filtering by severity and affected product.
-- get the history of a specific threat signature by id and type from threat vault.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- digital experience monitoring, log management, and best practice assessment.
-- subscription manager
-- submit a url for wildfire analysis.
-- download a malware sample from wildfire.
-- query domain threat intelligence from dns security.
-- ai runtime security scanning and automated red teaming for ai applications.
-- get details of a specific palo alto networks security advisory by id.
-- get release notes
-- compliance officer
 - network security engineer
 - cloud security
-- data loss prevention, saas security monitoring, and identity security posture.
-- get release notes for threat content updates from threat vault.
-- advanced threat prevention reports.
-- saas security admin
-- enterprise browser policy management and secure browsing.
-- firewall admin
-- tenant operator
-- submit a url for wildfire malware analysis.
-- threat intel analyst
-- cloud security posture management, compliance monitoring, and workload protection.
-- submit a file for wildfire malware analysis.
-- get domain
-- investigates dlp incidents and manages sensitive data protection policies.
-- search threat signatures by type, id, sha256, name, cve, or date range.
-- content release notes for threat updates.
-- compliance team
-- get a specific security advisory by id.
-- search for threat signatures by type, id, sha256, name, cve, or date range in threat vault.
-- get dns threat intelligence for a specific domain.
-- get security advisory
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- download atp pcaps
-- investigates security incidents, triages alerts, and coordinates response actions.
-- get release notes for threat content updates.
-- list affected products
-- get verdicts for multiple file hashes (max 500).
-- get domain bulk
-- conducts automated adversarial testing against ai systems and llm applications.
-- get packet captures from wildfire analysis.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- vulnerability management
-- submit link
-- get analysis report
-- submit url for analysis
-- search for threats by type, id, sha256, name, cve, or date range.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- network security
-- ai security engineer
-- get atp report pcaps
-- browser security admin
-- get the wildfire analysis report for a file hash.
-- submit a file for wildfire analysis.
-- get threat vault usage statistics.
-- get a palo alto networks security advisory by its cve identifier.
-- submit a link for wildfire analysis.
-- monitors network health, performance, and digital experience metrics.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- get threats
-- get the history of a specific threat by id and type.
-- get threat vault api usage statistics.
-- submit file
-- xdr
-- get packet captures from atp reports.
-- get signature history for a specific threat.
-- get bulk verdicts
-- ioc research
-- get threat intelligence for a specific domain.
-- sd wan operator
-- list advisories
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- download atp pcap files.
-- sre
 - download a packet capture for a file hash from wildfire.
-- platform engineer
-- enterprise it
-- identity and access management, tenant hierarchies, and subscription management.
-- get advanced threat prevention reports.
-- get threat history
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- get the wildfire analysis report for a file hash.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- get the history of a specific threat signature by id and type from threat vault.
+- sase
+- designs and implements network security architectures and policies.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- get a security advisory by its cve identifier.
 - manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- get a specific security advisory by id.
+- download pcap
+- soc analyst
+- sre
+- network security
+- data loss prevention, saas security monitoring, and identity security posture.
+- get threat vault usage statistics.
+- get advisory
+- download packet captures from atp reports in threat vault.
+- bulk lookup domains
+- get security advisory
+- manages enterprise browser policies and secure browsing configurations.
+- get verdicts for multiple file hashes (max 500).
+- get a security advisory by cve identifier.
+- manages service accounts, roles, and access policies for platform api access.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- get packet capture for a file hash.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- cybersecurity
+- manages multi-tenant security operations at scale for managed service providers.
+- products affected by security advisories.
+- get wildfire analysis reports.
+- conducts automated adversarial testing against ai systems and llm applications.
+- proactively searches for threats and iocs across telemetry data.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- vulnerability management
+- get wildfire verdicts for multiple file hashes.
+- get details of a specific palo alto networks security advisory by id.
+- sd wan operator
+- get the history of a specific threat by id and type.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- data protection analyst
+- analyzes suspicious files and samples for malware characteristics.
+- submit a url for wildfire analysis.
+- compliance officer
+- xdr
+- network architect
+- incident responder
+- investigates security incidents, triages alerts, and coordinates response actions.
+- list security advisories with optional filtering by severity and affected product.
+- threat intel analyst
+- list palo alto networks security advisories with optional filtering by severity and affected product.
+- ai runtime security scanning and automated red teaming for ai applications.
+- list security advisories
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- get wildfire verdicts for multiple file hashes (max 500).
+- get atp reports
+- get threat intelligence for a specific domain.
+- investigates dlp incidents and manages sensitive data protection policies.
+- get threat intelligence for multiple domains.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- get advanced threat prevention reports.
+- malware researcher
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- threat vault api usage statistics.
+- content release notes for threat updates.
+- download a sample file by hash.
+- cloud security engineer
+- secures ai applications with runtime scanning and vulnerability assessment.
+- threat intelligence
+- cloud security posture management, compliance monitoring, and workload protection.
+- get dns threat intelligence for a specific domain.
+- get a palo alto networks security advisory by its cve identifier.
+- get atp report pcaps
+- palo alto networks security advisories.
+- list affected products
+- iam admin
+- get release notes
+- saas security admin
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- get analysis pcap
+- manage enterprise browser policies, user sessions, and deployments.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- submit file
+- submit url for analysis
+- get threat history
+- list all palo alto networks products affected by security advisories.
+- advanced threat prevention reports.
+- tenant operator
+- get verdict
+- get domain bulk
+- enterprise it
+- monitors network health, performance, and digital experience metrics.
+- search for threats by type, id, sha256, name, cve, or date range.
+- get analysis report
+- download atp pcap files.
+- lookup domain
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- get packet captures from atp reports.
+- search for threat signatures by type, id, sha256, name, cve, or date range in threat vault.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- identity and access management, tenant hierarchies, and subscription management.
+- get advanced threat prevention reports from threat vault.
+- ai security engineer
+- palo alto networks
+- bulk query domain threat intelligence.
+- download a malware sample file by hash from wildfire.
+- vulnerability manager
+- subscription manager
+- browser security admin
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- get packet captures from wildfire analysis.
+- get domain
+- get signature history for a specific threat.
+- download sample
+- submit a file for wildfire analysis.
+- list advisories
+- submit a url for wildfire malware analysis.
+- list all products affected by security advisories.
+- firewall admin
+- get details of a specific security advisory by id.
+- get dns network stats
+- get the verdict for a file hash.
+- get release notes for threat content updates.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- query domain threat intelligence from dns security.
+- network operations
+- designs sase and sd-wan network architectures for secure remote access.
+- submit a link for wildfire analysis.
+- submit url
+- submit link for analysis
+- get dns network statistics for a given time range.
+- download a malware sample from wildfire.
+- get threats
+- submit a file for wildfire malware analysis.
+- search threat signatures
+- get release notes for threat content updates from threat vault.
+- get the analysis report for a file hash.
+- digital experience monitoring, log management, and best practice assessment.
+- get the wildfire verdict for a file hash.
+- threat hunter
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- soar
+- search threat signatures by type, id, sha256, name, cve, or date range.
+- sase admin
+- get threat vault api usage statistics.
+- submit file for analysis
+- red team operator
+- ioc research
+- get advisory by cve
+- submit link
+- get bulk verdicts
+- get wildfire verdicts for file hashes.
+- get dns stats
+- platform engineer
+- manages logging infrastructure, integrations, and platform automation.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- firewall
+- executes containment, eradication, and recovery actions during security incidents.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- enterprise browser policy management and secure browsing.
+- dns network statistics.
+- get threat vault stats
+- submit a link for wildfire malware analysis.
+- get dns threat intelligence for multiple domains in bulk.
+- compliance team
+- malware analysis
+- download atp pcaps
+- mssp operator
 slug: threat-intelligence
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Threat Intelligence\"\n  description: \"Unified threat intelligence capability for researching IOCs, submitting malware samples, analyzing DNS threats, and tracking security advisories across Threat Vault, WildFire, DNS Security, and Security Advisories.\"\n  tags:\n    - Palo Alto Networks\n    - Threat Intelligence\n    - Malware Analysis\n    - IOC Research\n    - Vulnerability Management\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      THREAT_VAULT_API_KEY: THREAT_VAULT_API_KEY\n      WILDFIRE_API_KEY: WILDFIRE_API_KEY\n      DNS_SECURITY_API_KEY: DNS_SECURITY_API_KEY\n\ncapability:\n  consumes:\n    - import: threat-vault\n      location: ./shared/threat-vault.yaml\n    - import: wildfire\n      location: ./shared/wildfire.yaml\n    - import: dns-security\n      location: ./shared/dns-security.yaml\n    - import: security-advisory\n      location: ./shared/security-advisory.yaml\n\
+  \n  exposes:\n    - type: rest\n      port: 8081\n      namespace: threat-intel-api\n      description: \"Unified REST API for threat intelligence research.\"\n      resources:\n\n        # ── Threat Signatures (Threat Vault) ──────────────────────────────\n        - path: /v1/threats\n          name: threats\n          description: \"Search threat signatures by type, ID, SHA256, name, CVE, or date range.\"\n          operations:\n            - method: GET\n              name: get-threats\n              description: \"Search for threats by type, ID, SHA256, name, CVE, or date range.\"\n              inputParameters:\n                - name: type\n                  in: query\n                  type: string\n                  required: false\n                - name: id\n                  in: query\n                  type: string\n                  required: false\n                - name: sha256\n                  in: query\n                  type: string\n                  required: false\n\
+  \                - name: name\n                  in: query\n                  type: string\n                  required: false\n                - name: cve\n                  in: query\n                  type: string\n                  required: false\n                - name: from\n                  in: query\n                  type: string\n                  required: false\n                - name: to\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"threat-vault.get-threats\"\n              with:\n                type: \"rest.type\"\n                id: \"rest.id\"\n                sha256: \"rest.sha256\"\n                name: \"rest.name\"\n                cve: \"\
+  rest.cve\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/threats/{threat_id}/history\n          name: threat-history\n          description: \"Get signature history for a specific threat.\"\n          operations:\n            - method: GET\n              name: get-threat-history\n              description: \"Get the history of a specific threat by ID and type.\"\n              inputParameters:\n                - name: threat_id\n                  in: path\n                  type: string\n                  required: true\n                - name: type\n                  in: query\n                  type: string\n                  required: true\n                - name: offset\n                  in: query\n                  type: integer\n                  required:\
+  \ false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"threat-vault.get-threat-history\"\n              with:\n                id: \"rest.threat_id\"\n                type: \"rest.type\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Advanced Threat Prevention Reports ────────────────────────────\n        - path: /v1/atp-reports\n          name: atp-reports\n          description: \"Advanced Threat Prevention reports.\"\n          operations:\n            - method: GET\n              name: get-atp-reports\n              description: \"Get Advanced Threat Prevention reports.\"\n              inputParameters:\n                - name: sha256\n                  in: query\n                  type: string\n                  required: false\n  \
+  \              - name: id\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"threat-vault.get-atp-reports\"\n              with:\n                sha256: \"rest.sha256\"\n                id: \"rest.id\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/atp-reports/pcaps\n          name: atp-report-pcaps\n          description: \"Download ATP PCAP files.\"\n          operations:\n            - method: GET\n              name: get-atp-report-pcaps\n              description: \"Get packet captures from ATP reports.\"\n\
+  \              inputParameters:\n                - name: sha256\n                  in: query\n                  type: string\n                  required: true\n                - name: id\n                  in: query\n                  type: string\n                  required: false\n              call: \"threat-vault.get-atp-report-pcaps\"\n              with:\n                sha256: \"rest.sha256\"\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Content Release Notes ─────────────────────────────────────────\n        - path: /v1/release-notes\n          name: release-notes\n          description: \"Content release notes for threat updates.\"\n          operations:\n            - method: GET\n              name: get-release-notes\n              description: \"Get release notes for threat content updates.\"\n              inputParameters:\n                - name: type\n                \
+  \  in: query\n                  type: string\n                  required: true\n                - name: version\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"threat-vault.get-release-notes\"\n              with:\n                type: \"rest.type\"\n                version: \"rest.version\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Threat Vault API Stats ────────────────────────────────────────\n        - path: /v1/threat-vault-stats\n          name: threat-vault-stats\n          description: \"Threat Vault API\
+  \ usage statistics.\"\n          operations:\n            - method: GET\n              name: get-threat-vault-stats\n              description: \"Get Threat Vault usage statistics.\"\n              call: \"threat-vault.get-stats\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Sample Submission & Analysis (WildFire) ───────────────────────\n        - path: /v1/samples/files\n          name: submit-file\n          description: \"Submit a file for WildFire malware analysis.\"\n          operations:\n            - method: POST\n              name: submit-file\n              description: \"Submit a file for WildFire analysis.\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: file\n                  in: body\n                  type: string\n                  required: true\n              call:\
+  \ \"wildfire.submit-file\"\n              with:\n                apikey: \"rest.apikey\"\n                file: \"rest.file\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/samples/urls\n          name: submit-url\n          description: \"Submit a URL for WildFire malware analysis.\"\n          operations:\n            - method: POST\n              name: submit-url\n              description: \"Submit a URL for WildFire analysis.\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: url\n                  in: body\n                  type: string\n                  required: true\n              call: \"wildfire.submit-url\"\n              with:\n                apikey: \"rest.apikey\"\n                url: \"rest.url\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n\n        - path: /v1/samples/links\n          name: submit-link\n          description: \"Submit a link for WildFire malware analysis.\"\n          operations:\n            - method: POST\n              name: submit-link\n              description: \"Submit a link for WildFire analysis.\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: link\n                  in: body\n                  type: string\n                  required: true\n              call: \"wildfire.submit-link\"\n              with:\n                apikey: \"rest.apikey\"\n                link: \"rest.link\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Verdicts (WildFire) ───────────────────────────────────────────\n        - path: /v1/verdicts\n          name: verdicts\n        \
+  \  description: \"Get WildFire verdicts for file hashes.\"\n          operations:\n            - method: POST\n              name: get-verdict\n              description: \"Get the verdict for a file hash.\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: hash\n                  in: body\n                  type: string\n                  required: true\n              call: \"wildfire.get-verdict\"\n              with:\n                apikey: \"rest.apikey\"\n                hash: \"rest.hash\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/verdicts/bulk\n          name: bulk-verdicts\n          description: \"Get WildFire verdicts for multiple file hashes.\"\n          operations:\n            - method: POST\n              name: get-bulk-verdicts\n              description: \"\
+  Get verdicts for multiple file hashes (max 500).\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: hash\n                  in: body\n                  type: object\n                  required: true\n              call: \"wildfire.get-bulk-verdicts\"\n              with:\n                apikey: \"rest.apikey\"\n                hash: \"rest.hash\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Analysis Reports (WildFire) ───────────────────────────────────\n        - path: /v1/analysis-reports\n          name: analysis-reports\n          description: \"Get WildFire analysis reports.\"\n          operations:\n            - method: POST\n              name: get-analysis-report\n              description: \"Get the analysis report for a file hash.\"\n              inputParameters:\n      \
+  \          - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: hash\n                  in: body\n                  type: string\n                  required: true\n                - name: format\n                  in: body\n                  type: string\n                  required: false\n              call: \"wildfire.get-report\"\n              with:\n                apikey: \"rest.apikey\"\n                hash: \"rest.hash\"\n                format: \"rest.format\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analysis-reports/samples\n          name: analysis-report-samples\n          description: \"Download a malware sample from WildFire.\"\n          operations:\n            - method: POST\n              name: download-sample\n              description: \"Download a sample file by hash.\"\n              inputParameters:\n\
+  \                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: hash\n                  in: body\n                  type: string\n                  required: true\n              call: \"wildfire.get-sample\"\n              with:\n                apikey: \"rest.apikey\"\n                hash: \"rest.hash\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analysis-reports/pcaps\n          name: analysis-report-pcaps\n          description: \"Get packet captures from WildFire analysis.\"\n          operations:\n            - method: POST\n              name: get-analysis-pcap\n              description: \"Get packet capture for a file hash.\"\n              inputParameters:\n                - name: apikey\n                  in: body\n                  type: string\n                  required: true\n                - name: hash\n \
+  \                 in: body\n                  type: string\n                  required: true\n                - name: platform\n                  in: body\n                  type: string\n                  required: false\n              call: \"wildfire.get-pcap\"\n              with:\n                apikey: \"rest.apikey\"\n                hash: \"rest.hash\"\n                platform: \"rest.platform\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── DNS Threat Intelligence ───────────────────────────────────────\n        - path: /v1/domains\n          name: domains\n          description: \"Query domain threat intelligence from DNS Security.\"\n          operations:\n            - method: GET\n              name: get-domain\n              description: \"Get threat intelligence for a specific domain.\"\n              inputParameters:\n                - name: domain\n                  in: query\n                  type:\
+  \ string\n                  required: true\n                  description: \"The domain name to query.\"\n                - name: stime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: etime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n              call: \"dns-security.get-domain\"\n              with:\n                domain: \"rest.domain\"\n                stime: \"rest.stime\"\n                etime: \"rest.etime\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/domains/bulk\n          name: domains-bulk\n          description: \"Bulk query domain threat intelligence.\"\n          operations:\n            - method: GET\n              name: get-domain-bulk\n\
+  \              description: \"Get threat intelligence for multiple domains.\"\n              inputParameters:\n                - name: domains\n                  in: query\n                  type: string\n                  required: true\n                  description: \"Comma-separated list of domain names to query.\"\n                - name: stime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: etime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n              call: \"dns-security.get-domain-bulk\"\n              with:\n                domains: \"rest.domains\"\n                stime: \"rest.stime\"\n                etime: \"rest.etime\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n\n        # ── DNS Network Stats ─────────────────────────────────────────────\n        - path: /v1/dns-stats\n          name: dns-stats\n          description: \"DNS network statistics.\"\n          operations:\n            - method: GET\n              name: get-dns-stats\n              description: \"Get DNS network statistics for a given time range.\"\n              inputParameters:\n                - name: stime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the statistics range.\"\n                - name: etime\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the statistics range.\"\n              call: \"dns-security.get-network-stats\"\n              with:\n                stime: \"rest.stime\"\n                etime: \"rest.etime\"\n              outputParameters:\n                -\
+  \ type: object\n                  mapping: \"$.\"\n\n        # ── Security Advisories ───────────────────────────────────────────\n        - path: /v1/advisories\n          name: advisories\n          description: \"Palo Alto Networks security advisories.\"\n          operations:\n            - method: GET\n              name: list-advisories\n              description: \"List security advisories with optional filtering by severity and affected product.\"\n              inputParameters:\n                - name: severity\n                  in: query\n                  type: string\n                  required: false\n                - name: affected_product\n                  in: query\n                  type: string\n                  required: false\n                - name: sort\n                  in: query\n                  type: string\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required:\
+  \ false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n              call: \"security-advisory.list-advisories\"\n              with:\n                severity: \"rest.severity\"\n                affected_product: \"rest.affected_product\"\n                sort: \"rest.sort\"\n                limit: \"rest.limit\"\n                offset: \"rest.offset\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/advisories/{advisory_id}\n          name: advisory-detail\n          description: \"Get a specific security advisory by ID.\"\n          operations:\n            - method: GET\n              name: get-advisory\n              description: \"Get details of a specific security advisory by ID.\"\n              inputParameters:\n                - name: advisory_id\n                  in: path\n                  type: string\n              \
+  \    required: true\n              call: \"security-advisory.get-advisory\"\n              with:\n                advisory_id: \"rest.advisory_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/advisories/cve/{cve_id}\n          name: advisory-by-cve\n          description: \"Get a security advisory by CVE identifier.\"\n          operations:\n            - method: GET\n              name: get-advisory-by-cve\n              description: \"Get a security advisory by its CVE identifier.\"\n              inputParameters:\n                - name: cve_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"security-advisory.get-advisory-by-cve\"\n              with:\n                cve_id: \"rest.cve_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Affected Products ─────────────────────────────────────────────\n\
+  \        - path: /v1/affected-products\n          name: affected-products\n          description: \"Products affected by security advisories.\"\n          operations:\n            - method: GET\n              name: list-affected-products\n              description: \"List all products affected by security advisories.\"\n              call: \"security-advisory.list-affected-products\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: threat-intel-mcp\n      transport: http\n      description: \"MCP server for AI-assisted threat intelligence research.\"\n      tools:\n\n        # ── Threat Signature Research ─────────────────────────────────────\n        - name: search-threat-signatures\n          description: \"Search for threat signatures by type, ID, SHA256, name, CVE, or date range in Threat Vault.\"\n          hints:\n            readOnly: true\n            destructive: false\n  \
+  \          idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: type\n              type: string\n              required: false\n            - name: id\n              type: string\n              required: false\n            - name: sha256\n              type: string\n              required: false\n            - name: name\n              type: string\n              required: false\n            - name: cve\n              type: string\n              required: false\n            - name: from\n              type: string\n              required: false\n            - name: to\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"threat-vault.get-threats\"\n          with:\n            type: \"tools.type\"\n            id: \"tools.id\"\n            sha256:\
+  \ \"tools.sha256\"\n            name: \"tools.name\"\n            cve: \"tools.cve\"\n            from: \"tools.from\"\n            to: \"tools.to\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-threat-history\n          description: \"Get the history of a specific threat signature by ID and type from Threat Vault.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n            - name: type\n              type: string\n              required: true\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"threat-vault.get-threat-history\"\
+  \n          with:\n            id: \"tools.id\"\n            type: \"tools.type\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-atp-reports\n          description: \"Get Advanced Threat Prevention reports from Threat Vault.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: sha256\n              type: string\n              required: false\n            - name: id\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"threat-vault.get-atp-reports\"\n          with:\n            sha256: \"tools.sha256\"\n            id: \"\
+  tools.id\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: download-atp-pcaps\n          description: \"Download packet captures from ATP reports in Threat Vault.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: sha256\n              type: string\n              required: true\n            - name: id\n              type: string\n              required: false\n          call: \"threat-vault.get-atp-report-pcaps\"\n          with:\n            sha256: \"tools.sha256\"\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-release-notes\n          description: \"Get release notes for threat content updates from Threat Vault.\"\n         \
+  \ hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: type\n              type: string\n              required: true\n            - name: version\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"threat-vault.get-release-notes\"\n          with:\n            type: \"tools.type\"\n            version: \"tools.version\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-threat-vault-stats\n          description: \"Get Threat Vault API usage statistics.\"\n          hints:\n            readOnly: true\n            destructive: false\n   \
+  \         idempotent: true\n            openWorld: true\n          call: \"threat-vault.get-stats\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Malware Analysis (WildFire) ───────────────────────────────────\n        - name: submit-file-for-analysis\n          description: \"Submit a file for WildFire malware analysis.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: file\n              type: string\n              required: true\n          call: \"wildfire.submit-file\"\n          with:\n            apikey: \"tools.apikey\"\n            file: \"tools.file\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: submit-url-for-analysis\n          description:\
+  \ \"Submit a URL for WildFire malware analysis.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: url\n              type: string\n              required: true\n          call: \"wildfire.submit-url\"\n          with:\n            apikey: \"tools.apikey\"\n            url: \"tools.url\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: submit-link-for-analysis\n          description: \"Submit a link for WildFire malware analysis.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: link\n\
+  \              type: string\n              required: true\n          call: \"wildfire.submit-link\"\n          with:\n            apikey: \"tools.apikey\"\n            link: \"tools.link\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-verdict\n          description: \"Get the WildFire verdict for a file hash.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n          call: \"wildfire.get-verdict\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-bulk-verdicts\n          description: \"Get WildFire\
+  \ verdicts for multiple file hashes (max 500).\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: object\n              required: true\n          call: \"wildfire.get-bulk-verdicts\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-analysis-report\n          description: \"Get the WildFire analysis report for a file hash.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n\
+  \              type: string\n              required: true\n            - name: format\n              type: string\n              required: false\n          call: \"wildfire.get-report\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n            format: \"tools.format\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: download-sample\n          description: \"Download a malware sample file by hash from WildFire.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n          call: \"wildfire.get-sample\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: download-pcap\n          description: \"Download a packet capture for a file hash from WildFire.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n            - name: platform\n              type: string\n              required: false\n          call: \"wildfire.get-pcap\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n            platform: \"tools.platform\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── DNS Threat Intelligence ───────────────────────────────────────\n        - name: lookup-domain\n          description: \"Get\
+  \ DNS threat intelligence for a specific domain.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: domain\n              type: string\n              description: \"The domain name to query.\"\n              required: true\n            - name: stime\n              type: string\n              description: \"Start time for the query range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the query range.\"\n              required: false\n          call: \"dns-security.get-domain\"\n          with:\n            domain: \"tools.domain\"\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: bulk-lookup-domains\n          description: \"Get DNS threat intelligence\
+  \ for multiple domains in bulk.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: domains\n              type: string\n              description: \"Comma-separated list of domain names to query.\"\n              required: true\n            - name: stime\n              type: string\n              description: \"Start time for the query range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the query range.\"\n              required: false\n          call: \"dns-security.get-domain-bulk\"\n          with:\n            domains: \"tools.domains\"\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dns-network-stats\n          description: \"Get\
+  \ DNS network statistics for a given time range.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: stime\n              type: string\n              description: \"Start time for the statistics range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the statistics range.\"\n              required: false\n          call: \"dns-security.get-network-stats\"\n          with:\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Vulnerability Advisories ──────────────────────────────────────\n        - name: list-security-advisories\n          description: \"List Palo Alto Networks security advisories with optional filtering by severity and affected product.\"\
+  \n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: severity\n              type: string\n              required: false\n            - name: affected_product\n              type: string\n              required: false\n            - name: sort\n              type: string\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: offset\n              type: integer\n              required: false\n          call: \"security-advisory.list-advisories\"\n          with:\n            severity: \"tools.severity\"\n            affected_product: \"tools.affected_product\"\n            sort: \"tools.sort\"\n            limit: \"tools.limit\"\n            offset: \"tools.offset\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-security-advisory\n\
+  \          description: \"Get details of a specific Palo Alto Networks security advisory by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: advisory_id\n              type: string\n              required: true\n          call: \"security-advisory.get-advisory\"\n          with:\n            advisory_id: \"tools.advisory_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-advisory-by-cve\n          description: \"Get a Palo Alto Networks security advisory by its CVE identifier.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: cve_id\n              type: string\n              required: true\n          call: \"security-advisory.get-advisory-by-cve\"\
+  \n          with:\n            cve_id: \"tools.cve_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-affected-products\n          description: \"List all Palo Alto Networks products affected by security advisories.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters: []\n          call: \"security-advisory.list-affected-products\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/threat-intelligence.yaml
 tags:
 - Palo Alto Networks
 - Threat Intelligence

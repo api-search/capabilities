@@ -46,61 +46,72 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- create zone
-- boot a solaris zone.
-- zone state operations.
+- halt a zone immediately.
+- gracefully shutdown a zone.
+- get current zone state.
+- gracefully shutdown.
+- resource management
+- migrate zone
+- clone a solaris zone.
 - halt zone
-- reboot zone
-- individual zone operations.
-- containers
+- operating systems
+- uninstall zone
+- boot the zone.
+- install a solaris zone.
+- clone zone
+- migrate to another host.
+- rad
+- shutdown a zone.
+- boot zone
+- solaris
 - migrate a zone to another host.
 - get solaris zone details.
-- verify zone configuration integrity.
-- gracefully shutdown.
-- lifecycle management
-- install zone
-- get zone details.
-- install a solaris zone.
-- list zones
-- rad
-- list all solaris zones with status.
-- uninstall zone
-- reboot the zone.
-- zone inventory and creation.
-- virtualization
-- uninstall a solaris zone.
-- shutdown zone
-- oracle
 - kernel zones
-- clone zone
-- delete a zone.
-- boot the zone.
-- create a new solaris zone.
-- gracefully shutdown a zone.
-- clone a solaris zone.
-- halt a zone immediately.
-- list all zones.
-- delete zone
-- reboot a zone.
-- solaris
-- shutdown a zone.
 - get zone state
-- statsstore
-- migrate a zone.
-- boot zone
-- operating systems
+- reboot zone
+- oracle
+- list all solaris zones with status.
 - reboot a solaris zone.
-- delete a solaris zone.
-- get zone
-- migrate zone
-- get current zone state.
-- migrate to another host.
-- verify zone
-- resource management
-- create a new zone.
+- uninstall a solaris zone.
+- containers
+- zone state operations.
+- create zone
 - zones
+- create a new zone.
+- zone inventory and creation.
+- list all zones.
+- boot a solaris zone.
+- individual zone operations.
 - boot a zone.
+- list zones
+- install zone
+- lifecycle management
+- verify zone
+- virtualization
+- get zone details.
+- reboot a zone.
+- get zone
+- delete zone
+- reboot the zone.
+- shutdown zone
+- verify zone configuration integrity.
+- migrate a zone.
+- statsstore
+- delete a solaris zone.
+- create a new solaris zone.
+- delete a zone.
 slug: zone-lifecycle
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Solaris Zone Lifecycle Management\"\n  description: \"Unified zone lifecycle workflow combining zone creation, configuration, administration, monitoring, and migration. Used by system administrators and platform engineers to manage Solaris virtualization infrastructure.\"\n  tags:\n    - Solaris\n    - Zones\n    - Virtualization\n    - Lifecycle Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SOLARIS_AUTH_TOKEN: SOLARIS_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: zones-mgmt\n      location: ./shared/zones-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: solaris-lifecycle-api\n      description: \"Unified REST API for Solaris zone lifecycle management.\"\n      resources:\n        - path: /v1/zones\n          name: zones\n          description: \"Zone inventory and creation.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-zones\n              description: \"List all zones.\"\n              call: \"zones-mgmt.list-zone-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-zone\n              description: \"Create a new zone.\"\n              call: \"zones-mgmt.create-zone\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}\n          name: zone-detail\n          description: \"Individual zone operations.\"\n          operations:\n            - method: GET\n              name: get-zone\n              description: \"Get zone details.\"\n              call: \"zones-mgmt.get-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n       \
+  \       name: delete-zone\n              description: \"Delete a zone.\"\n              call: \"zones-mgmt.delete-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}/state\n          name: zone-state\n          description: \"Zone state operations.\"\n          operations:\n            - method: GET\n              name: get-zone-state\n              description: \"Get current zone state.\"\n              call: \"zones-mgmt.get-zone-state\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}/boot\n          name: zone-boot\n          description: \"Boot a zone.\"\n          operations:\n            - method: POST\n              name: boot-zone\n              description: \"Boot the\
+  \ zone.\"\n              call: \"zones-mgmt.boot-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}/shutdown\n          name: zone-shutdown\n          description: \"Shutdown a zone.\"\n          operations:\n            - method: POST\n              name: shutdown-zone\n              description: \"Gracefully shutdown.\"\n              call: \"zones-mgmt.shutdown-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}/reboot\n          name: zone-reboot\n          description: \"Reboot a zone.\"\n          operations:\n            - method: POST\n              name: reboot-zone\n              description: \"Reboot the zone.\"\n              call: \"zones-mgmt.reboot-zone\"\n\
+  \              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}/migrate\n          name: zone-migrate\n          description: \"Migrate a zone.\"\n          operations:\n            - method: POST\n              name: migrate-zone\n              description: \"Migrate to another host.\"\n              call: \"zones-mgmt.migrate-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: solaris-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Solaris zone lifecycle management.\"\n      tools:\n        - name: list-zones\n          description: \"List all Solaris zones with status.\"\n          hints:\n            readOnly: true\n            idempotent:\
+  \ true\n          call: \"zones-mgmt.list-zone-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-zone\n          description: \"Create a new Solaris zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.create-zone\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-zone\n          description: \"Get Solaris zone details.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"zones-mgmt.get-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-zone-state\n          description: \"Get current zone state.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"zones-mgmt.get-zone-state\"\n          with:\n            zoneName: \"tools.zoneName\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: boot-zone\n          description: \"Boot a Solaris zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.boot-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: halt-zone\n          description: \"Halt a zone immediately.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"zones-mgmt.halt-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: shutdown-zone\n          description: \"Gracefully shutdown a zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.shutdown-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: reboot-zone\n          description: \"Reboot a Solaris zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.reboot-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: install-zone\n          description: \"Install a Solaris zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.install-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: uninstall-zone\n          description: \"Uninstall a Solaris zone.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"zones-mgmt.uninstall-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n \
+  \           - type: object\n              mapping: \"$.\"\n        - name: clone-zone\n          description: \"Clone a Solaris zone.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.clone-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: migrate-zone\n          description: \"Migrate a zone to another host.\"\n          hints:\n            readOnly: false\n          call: \"zones-mgmt.migrate-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: verify-zone\n          description: \"Verify zone configuration integrity.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"zones-mgmt.verify-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: delete-zone\n          description: \"Delete a Solaris zone.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"zones-mgmt.delete-zone\"\n          with:\n            zoneName: \"tools.zoneName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/solaris-zones/refs/heads/main/capabilities/zone-lifecycle.yaml
 tags:
 - Solaris
 - Zones

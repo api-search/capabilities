@@ -34,63 +34,74 @@ personas: []
 provider_name: Veritas NetBackup
 provider_slug: veritas-netbackup
 search_terms:
-- suspend job
-- get try logs for a backup job.
-- list all netbackup clients.
-- list all backup jobs with optional filters.
-- delete a backup policy.
-- individual job operations.
-- list policies
-- list images
-- authenticate to netbackup and obtain a jwt token.
-- data protection
-- suspend a running backup job.
-- get file contents of a backup image.
-- resume job
-- get job file list
-- backup image catalog.
-- list clients
-- veritas
-- create a new backup policy.
-- list backup images in the catalog.
-- delete policy
-- list all backup policies.
-- backup
-- resume a suspended backup job.
-- restart job
-- get details for a specific backup image.
-- login
-- list jobs
-- get a specific backup policy.
-- expire image
-- create policy
-- get job details.
-- list all backup jobs.
+- get policy
 - list all clients.
-- cancel job
-- get job try logs
-- get image
-- recovery
+- suspend job
+- get file contents of a backup image.
+- get file list for a backup job.
+- create policy
+- create a new backup policy.
+- get details for a specific backup image.
+- suspend a running backup job.
 - get details for a specific client.
 - backup policy management.
-- get image contents
-- update a backup policy.
-- enterprise
-- backup job management.
-- restart a failed backup job.
-- get job
+- backup image catalog.
+- get try logs for a backup job.
 - get details for a specific backup job.
-- storage
-- netbackup client management.
-- get file list for a backup job.
-- update policy
-- get client
+- get a specific backup policy.
+- enterprise
+- get job try logs
 - expire a backup image.
-- get policy
+- list jobs
+- list policies
+- delete a backup policy.
+- resume job
+- get client
+- list images
+- netbackup client management.
+- individual job operations.
+- get job
+- expire image
+- list clients
+- get job file list
+- list backup images in the catalog.
+- update a backup policy.
+- get image
+- list all backup jobs with optional filters.
+- authenticate to netbackup and obtain a jwt token.
 - disaster recovery
+- get job details.
+- delete policy
+- storage
+- list all backup jobs.
+- login
+- restart a failed backup job.
+- list all netbackup clients.
+- cancel job
+- list all backup policies.
+- backup job management.
+- get image contents
+- resume a suspended backup job.
 - cancel a running backup job.
+- veritas
+- restart job
+- update policy
+- recovery
 - list backup images.
+- data protection
+- backup
 slug: backup-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Veritas NetBackup Backup Operations\"\n  description: \"Backup operations workflow for backup administrators to manage jobs, policies, clients, and catalog images across NetBackup environments.\"\n  tags:\n    - Veritas\n    - Backup\n    - Data Protection\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NETBACKUP_HOST: NETBACKUP_HOST\n      NETBACKUP_USERNAME: NETBACKUP_USERNAME\n      NETBACKUP_PASSWORD: NETBACKUP_PASSWORD\n\ncapability:\n  consumes:\n    - import: netbackup\n      location: ./shared/netbackup.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: backup-operations-api\n      description: \"Unified REST API for NetBackup backup operations.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: \"Backup job management.\"\n          operations:\n            - method: GET\n              name: list-jobs\n\
+  \              description: \"List all backup jobs.\"\n              call: \"netbackup.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobId}\n          name: job\n          description: \"Individual job operations.\"\n          operations:\n            - method: GET\n              name: get-job\n              description: \"Get job details.\"\n              call: \"netbackup.get-job\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Backup policy management.\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List all backup policies.\"\n              call: \"netbackup.list-policies\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-policy\n              description: \"Create a new backup policy.\"\n              call: \"netbackup.create-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clients\n          name: clients\n          description: \"NetBackup client management.\"\n          operations:\n            - method: GET\n              name: list-clients\n              description: \"List all clients.\"\n              call: \"netbackup.list-clients\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Backup image catalog.\"\n          operations:\n            - method: GET\n              name: list-images\n              description: \"List backup images.\"\n              call: \"netbackup.list-images\"\n     \
+  \         outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: backup-operations-mcp\n      transport: http\n      description: \"MCP server for AI-assisted NetBackup backup operations.\"\n      tools:\n        - name: login\n          description: \"Authenticate to NetBackup and obtain a JWT token.\"\n          hints:\n            readOnly: false\n          call: \"netbackup.login\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-jobs\n          description: \"List all backup jobs with optional filters.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.list-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job\n          description: \"Get details for a specific backup job.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-job\"\
+  \n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cancel-job\n          description: \"Cancel a running backup job.\"\n          hints:\n            destructive: true\n          call: \"netbackup.cancel-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: suspend-job\n          description: \"Suspend a running backup job.\"\n          hints:\n            readOnly: false\n          call: \"netbackup.suspend-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: resume-job\n          description: \"Resume a suspended backup job.\"\n          hints:\n            readOnly: false\n          call: \"netbackup.resume-job\"\n          with:\n            jobId: \"tools.jobId\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: restart-job\n          description: \"Restart a failed backup job.\"\n          hints:\n            readOnly: false\n          call: \"netbackup.restart-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job-file-list\n          description: \"Get file list for a backup job.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-job-file-list\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job-try-logs\n          description: \"Get try logs for a backup job.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-job-try-logs\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-policies\n          description: \"List all backup policies.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.list-policies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-policy\n          description: \"Get a specific backup policy.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-policy\"\n          with:\n            policyName: \"tools.policyName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-policy\n          description: \"Create a new backup policy.\"\n          hints:\n            readOnly: false\n          call: \"netbackup.create-policy\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-policy\n          description: \"Update a backup policy.\"\n\
+  \          hints:\n            readOnly: false\n            idempotent: true\n          call: \"netbackup.update-policy\"\n          with:\n            policyName: \"tools.policyName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-policy\n          description: \"Delete a backup policy.\"\n          hints:\n            destructive: true\n          call: \"netbackup.delete-policy\"\n          with:\n            policyName: \"tools.policyName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-clients\n          description: \"List all NetBackup clients.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.list-clients\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-client\n          description: \"Get details for a specific client.\"\n          hints:\n            readOnly: true\n\
+  \          call: \"netbackup.get-client\"\n          with:\n            hostId: \"tools.hostId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-images\n          description: \"List backup images in the catalog.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.list-images\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-image\n          description: \"Get details for a specific backup image.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-image\"\n          with:\n            backupId: \"tools.backupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: expire-image\n          description: \"Expire a backup image.\"\n          hints:\n            destructive: true\n          call: \"netbackup.expire-image\"\n          with:\n            backupId: \"\
+  tools.backupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-image-contents\n          description: \"Get file contents of a backup image.\"\n          hints:\n            readOnly: true\n          call: \"netbackup.get-image-contents\"\n          with:\n            backupId: \"tools.backupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/veritas-netbackup/refs/heads/main/capabilities/backup-operations.yaml
 tags:
 - Veritas
 - Backup

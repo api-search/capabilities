@@ -24,47 +24,53 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- get the exact date and time of the most recent sim swap for a phone number
-- check if an at&t subscriber's sim card has been swapped recently to detect fraud
-- mobile network-based authentication without otp
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- verify phone number
-- telecommunications
-- check sim swap
-- silently verify device phone number
-- silently verify that a mobile device is associated with a phone number using the at&t network
-- authentication
+- sim swap date retrieval
+- network-based fraud prevention and authentication using sim swap and number verification
+- 5g
+- network-based security signals for fraud detection and identity verification
 - edge computing
-- Security Developer
-- sim swap check
+- camara
+- mobile network-based authentication without otp
+- connectivity
+- silently verify device phone number
+- at&t
+- check if an at&t subscriber's sim card has been swapped recently to detect fraud
+- authentication
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- telecommunications
+- phone number verification via network
+- get date of most recent sim swap
 - mobile or web developer building connectivity-aware applications
 - sim swap get date
-- network-based fraud prevention and authentication using sim swap and number verification
-- at&t
-- 5g
-- check if a sim card has been swapped recently
-- connectivity
-- sim swap date retrieval
-- 5g network quality monitoring and on-demand qos enhancement
-- device status
 - fraud prevention
-- App Developer
+- 5g network quality monitoring and on-demand qos enhancement
 - retrieve sim swap date
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- network apis
-- camara
+- check if a sim card has been swapped recently
 - Identity Developer
+- Security Developer
+- get the exact date and time of the most recent sim swap for a phone number
+- check sim swap
 - developer implementing passwordless or frictionless mobile authentication
-- get date of most recent sim swap
-- IoT Engineer
-- network-based security signals for fraud detection and identity verification
 - sim swap fraud detection
-- phone number verification via network
-- number verify
-- sim swap
-- developer building fraud prevention and identity verification using network signals
 - security
+- App Developer
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- device status
+- developer building fraud prevention and identity verification using network signals
+- verify phone number
+- IoT Engineer
+- sim swap
+- network apis
+- sim swap check
+- silently verify that a mobile device is associated with a phone number using the at&t network
+- number verify
 slug: network-security
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T Network Security\"\n  description: \"Unified network-based security capability combining SIM Swap detection, Number Verification, and Mobility Threat Detection APIs. Used by developers building fraud prevention, authentication, and security monitoring applications leveraging AT&T network signals.\"\n  tags:\n    - AT&T\n    - Security\n    - Fraud Prevention\n    - Authentication\n    - CAMARA\n    - 5G\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_NETWORK_API_TOKEN: ATT_NETWORK_API_TOKEN\n\ncapability:\n  consumes:\n    - import: att-sim-swap\n      location: ./shared/sim-swap-api.yaml\n    - import: att-number-verification\n      location: ./shared/number-verification-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: att-network-security-api\n      description: \"Unified REST API for AT&T network-based security and fraud prevention.\"\
+  \n      resources:\n        - path: /v1/sim-swap/check\n          name: sim-swap\n          description: \"SIM swap fraud detection\"\n          operations:\n            - method: POST\n              name: check-sim-swap\n              description: \"Check if a SIM card has been swapped recently\"\n              call: \"att-sim-swap.check-sim-swap\"\n              with:\n                phoneNumber: \"rest.phoneNumber\"\n                maxAge: \"rest.maxAge\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sim-swap/date\n          name: sim-swap-date\n          description: \"SIM swap date retrieval\"\n          operations:\n            - method: POST\n              name: retrieve-sim-swap-date\n              description: \"Get date of most recent SIM swap\"\n              call: \"att-sim-swap.retrieve-sim-swap-date\"\n              with:\n                phoneNumber: \"rest.phoneNumber\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/number-verification/verify\n          name: number-verification\n          description: \"Phone number verification via network\"\n          operations:\n            - method: POST\n              name: verify-phone-number\n              description: \"Silently verify device phone number\"\n              call: \"att-number-verification.verify-phone-number\"\n              with:\n                phoneNumber: \"rest.phoneNumber\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: att-network-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AT&T network security and fraud prevention operations.\"\n      tools:\n        - name: sim-swap-check\n          description: \"Check if an AT&T subscriber's SIM card has been swapped recently to detect fraud\"\n          hints:\n\
+  \            readOnly: true\n            idempotent: true\n          call: \"att-sim-swap.check-sim-swap\"\n          with:\n            phoneNumber: \"tools.phoneNumber\"\n            maxAge: \"tools.maxAge\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: sim-swap-get-date\n          description: \"Get the exact date and time of the most recent SIM swap for a phone number\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"att-sim-swap.retrieve-sim-swap-date\"\n          with:\n            phoneNumber: \"tools.phoneNumber\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: number-verify\n          description: \"Silently verify that a mobile device is associated with a phone number using the AT&T network\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"att-number-verification.verify-phone-number\"\
+  \n          with:\n            phoneNumber: \"tools.phoneNumber\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/at-t-developer-hub/refs/heads/main/capabilities/network-security.yaml
 tags:
 - AT&T
 - Security

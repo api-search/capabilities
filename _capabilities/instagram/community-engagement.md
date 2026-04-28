@@ -54,57 +54,71 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- individual comment operations.
-- create comment reply
-- search hashtag
-- top media for a hashtag.
+- get hashtag top media
+- website embedding of instagram content.
+- hide comment
 - get replies to a comment.
-- get the most popular media tagged with a specific hashtag.
+- reply to a comment.
+- instagram
+- search hashtag
+- get media comments
+- get ig media objects where the user has been tagged by other users.
+- photos
+- content publishing and media management.
+- publishes and manages content across instagram accounts.
+- comments, mentions, and community interaction.
+- get the most recently published media tagged with a specific hashtag.
+- meta
+- media where user was tagged.
+- instagram direct messaging.
+- get comment replies
+- get comment
+- individual comment operations.
+- tracks content performance and audience insights.
+- comments on a media object.
+- recent media for a hashtag.
+- replies to a comment.
 - get hashtag recent media
 - embeds instagram content on websites and applications.
-- get media comments
-- get fields on an instagram comment.
-- delete a comment on your media.
-- insights and performance metrics.
-- photos
-- get hashtag top media
-- monitors mentions, comments, and brand sentiment on instagram.
-- get comments on an instagram media object.
-- search for hashtags.
-- get ig media objects where the user has been tagged by other users.
-- website embedding of instagram content.
-- get the most recently published media tagged with a specific hashtag.
-- reply to a comment.
-- create a comment on an instagram media object.
-- content publishing
-- recent media for a hashtag.
-- instagram direct messaging.
-- tracks content performance and audience insights.
-- publishes and manages content across instagram accounts.
-- content publishing and media management.
-- get comment
-- create comment
-- creates and publishes photos, videos, reels, and stories.
-- hide comment
-- comments
-- mentions
-- meta
 - community engagement
+- videos
 - delete comment
 - hide or unhide a comment on your media.
-- hashtags
-- replies to a comment.
-- comments, mentions, and community interaction.
 - get user tags
-- videos
-- instagram
-- social media
-- get comment replies
-- search for a hashtag by name and get its id.
+- insights and performance metrics.
 - manages instagram direct conversations for business inquiries.
-- comments on a media object.
-- media where user was tagged.
+- get comments on an instagram media object.
+- create comment reply
+- create comment
+- content publishing
+- search for a hashtag by name and get its id.
+- hashtags
+- comments
+- create a comment on an instagram media object.
+- social media
+- get fields on an instagram comment.
+- get the most popular media tagged with a specific hashtag.
+- monitors mentions, comments, and brand sentiment on instagram.
+- mentions
+- top media for a hashtag.
+- creates and publishes photos, videos, reels, and stories.
+- delete a comment on your media.
+- search for hashtags.
 slug: community-engagement
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Community Engagement\"\n  description: >-\n    Unified workflow for managing Instagram community interactions including\n    comment moderation, replies, hashtag discovery, and mention tracking. Used by\n    community managers and social media teams to engage with followers, moderate\n    comments, discover trending content via hashtags, and monitor brand mentions.\n  tags:\n    - Instagram\n    - Community Engagement\n    - Social Media\n    - Comments\n    - Hashtags\n    - Mentions\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: instagram-engagement-api\n      description: \"Unified REST API for Instagram community engagement workflows.\"\n\
+  \      resources:\n        - path: /v1/media/{media_id}/comments\n          name: media-comments\n          description: \"Comments on a media object.\"\n          operations:\n            - method: GET\n              name: get-media-comments\n              description: \"Get comments on an Instagram media object.\"\n              call: \"instagram-graph.get-media-comments\"\n              with:\n                media_id: \"rest.media_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment\n              description: \"Create a comment on an Instagram media object.\"\n              call: \"instagram-graph.create-comment\"\n              with:\n                media_id: \"rest.media_id\"\n                message: \"rest.message\"\n                access_token: \"rest.access_token\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/comments/{comment_id}\n          name: comment\n          description: \"Individual comment operations.\"\n          operations:\n            - method: GET\n              name: get-comment\n              description: \"Get fields on an Instagram comment.\"\n              call: \"instagram-graph.get-comment\"\n              with:\n                comment_id: \"rest.comment_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: hide-comment\n              description: \"Hide or unhide a comment on your media.\"\n              call: \"instagram-graph.hide-comment\"\n              with:\n                comment_id: \"rest.comment_id\"\n                hide: \"rest.hide\"\n      \
+  \          access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-comment\n              description: \"Delete a comment on your media.\"\n              call: \"instagram-graph.delete-comment\"\n              with:\n                comment_id: \"rest.comment_id\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/comments/{comment_id}/replies\n          name: comment-replies\n          description: \"Replies to a comment.\"\n          operations:\n            - method: GET\n              name: get-comment-replies\n              description: \"Get replies to a comment.\"\n              call: \"instagram-graph.get-comment-replies\"\n              with:\n                comment_id: \"rest.comment_id\"\n                fields: \"\
+  rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment-reply\n              description: \"Reply to a comment.\"\n              call: \"instagram-graph.create-comment-reply\"\n              with:\n                comment_id: \"rest.comment_id\"\n                message: \"rest.message\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/hashtags/search\n          name: hashtag-search\n          description: \"Search for hashtags.\"\n          operations:\n            - method: GET\n              name: search-hashtag\n              description: \"Search for a hashtag by name and get its ID.\"\n              call: \"instagram-graph.search-hashtag\"\n              with:\n                q: \"\
+  rest.q\"\n                user_id: \"rest.user_id\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/hashtags/{hashtag_id}/top-media\n          name: hashtag-top-media\n          description: \"Top media for a hashtag.\"\n          operations:\n            - method: GET\n              name: get-hashtag-top-media\n              description: \"Get the most popular media tagged with a specific hashtag.\"\n              call: \"instagram-graph.get-hashtag-top-media\"\n              with:\n                hashtag_id: \"rest.hashtag_id\"\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/hashtags/{hashtag_id}/recent-media\n          name: hashtag-recent-media\n\
+  \          description: \"Recent media for a hashtag.\"\n          operations:\n            - method: GET\n              name: get-hashtag-recent-media\n              description: \"Get the most recently published media tagged with a specific hashtag.\"\n              call: \"instagram-graph.get-hashtag-recent-media\"\n              with:\n                hashtag_id: \"rest.hashtag_id\"\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/tags\n          name: user-tags\n          description: \"Media where user was tagged.\"\n          operations:\n            - method: GET\n              name: get-user-tags\n              description: \"Get IG Media objects where the user has been tagged by other users.\"\n              call: \"instagram-graph.get-user-tags\"\n   \
+  \           with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: instagram-engagement-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Instagram community engagement.\"\n      tools:\n        - name: get-media-comments\n          description: \"Get comments on an Instagram media object.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-media-comments\"\n          with:\n            media_id: \"tools.media_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-comment\n          description: \"Create a comment\
+  \ on an Instagram media object.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"instagram-graph.create-comment\"\n          with:\n            media_id: \"tools.media_id\"\n            message: \"tools.message\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-comment\n          description: \"Get fields on an Instagram comment.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-comment\"\n          with:\n            comment_id: \"tools.comment_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: hide-comment\n          description: \"Hide or unhide a comment on your media.\"\n      \
+  \    hints:\n            readOnly: false\n            idempotent: true\n          call: \"instagram-graph.hide-comment\"\n          with:\n            comment_id: \"tools.comment_id\"\n            hide: \"tools.hide\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-comment\n          description: \"Delete a comment on your media.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"instagram-graph.delete-comment\"\n          with:\n            comment_id: \"tools.comment_id\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-comment-replies\n          description: \"Get replies to a comment.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"\
+  instagram-graph.get-comment-replies\"\n          with:\n            comment_id: \"tools.comment_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-comment-reply\n          description: \"Reply to a comment.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"instagram-graph.create-comment-reply\"\n          with:\n            comment_id: \"tools.comment_id\"\n            message: \"tools.message\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-hashtag\n          description: \"Search for a hashtag by name and get its ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.search-hashtag\"\
+  \n          with:\n            q: \"tools.q\"\n            user_id: \"tools.user_id\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-hashtag-top-media\n          description: \"Get the most popular media tagged with a specific hashtag.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-hashtag-top-media\"\n          with:\n            hashtag_id: \"tools.hashtag_id\"\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-hashtag-recent-media\n          description: \"Get the most recently published media tagged with a specific hashtag.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call:\
+  \ \"instagram-graph.get-hashtag-recent-media\"\n          with:\n            hashtag_id: \"tools.hashtag_id\"\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-user-tags\n          description: \"Get IG Media objects where the user has been tagged by other users.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-user-tags\"\n          with:\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/instagram/refs/heads/main/capabilities/community-engagement.yaml
 tags:
 - Instagram
 - Community Engagement

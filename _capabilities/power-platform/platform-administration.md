@@ -38,54 +38,64 @@ personas: []
 provider_name: Microsoft Power Platform APIs
 provider_slug: power-platform
 search_terms:
-- list flow runs for an environment
-- list tenant packages
-- list billing policies
-- microsoft
-- check the installation status of an application package
-- list environments
-- create billing policy
-- list all billing policies
-- application package management
-- get environment
-- list flow runs
-- power platform
-- get install status
-- administration
-- business applications
-- power pages
-- list application packages for an environment
-- get details for a specific billing policy
-- delete a power platform environment
-- billing policy management
-- get environment details
-- delete environment
-- single environment operations
-- create a billing policy
-- update billing policy
-- low-code
-- list application packages available in an environment
-- delete an environment
-- update an existing billing policy
 - get details for a specific power platform environment
-- install an application package in an environment
-- dataverse
-- list packages
 - install application package
-- list power automate flow runs by workflow id
-- get billing policy
-- list all power platform environments in the tenant
-- copilot studio
-- create a new billing policy linking azure subscription
-- no-code
+- list packages
+- billing policy management
+- get environment
 - list application packages
-- governance
+- check the installation status of an application package
+- create billing policy
+- get billing policy
+- create a billing policy
+- list all billing policies
+- update an existing billing policy
 - environment management
 - list all environments
-- list billing policies for the tenant
-- flow run monitoring
 - list installable application packages for the tenant
+- get environment details
+- get install status
+- flow run monitoring
+- power platform
+- install an application package in an environment
+- list billing policies for the tenant
+- list application packages for an environment
+- get details for a specific billing policy
+- list flow runs
+- no-code
+- list all power platform environments in the tenant
+- update billing policy
+- delete environment
+- low-code
+- business applications
+- power pages
+- delete a power platform environment
+- list tenant packages
+- application package management
+- administration
+- list billing policies
+- microsoft
+- list flow runs for an environment
+- delete an environment
+- list power automate flow runs by workflow id
+- copilot studio
+- create a new billing policy linking azure subscription
+- dataverse
+- list environments
+- list application packages available in an environment
+- single environment operations
+- governance
 slug: platform-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Power Platform Administration\"\n  description: \"Unified workflow for Power Platform administrators to manage environments, deploy applications, monitor flow runs, and govern licensing across the tenant.\"\n  tags:\n    - Microsoft\n    - Power Platform\n    - Administration\n    - Governance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_PLATFORM_BEARER_TOKEN: POWER_PLATFORM_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: power-platform-api\n      location: ./shared/power-platform-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: power-platform-admin-api\n      description: \"Unified REST API for Power Platform administration.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n          \
+  \    name: list-environments\n              description: \"List all environments\"\n              call: \"power-platform-api.list-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}\n          name: environment-detail\n          description: \"Single environment operations\"\n          operations:\n            - method: GET\n              name: get-environment\n              description: \"Get environment details\"\n              call: \"power-platform-api.get-environment\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-environment\n              description: \"Delete an environment\"\n              call: \"power-platform-api.delete-environment\"\n              with:\n                environmentId:\
+  \ \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}/packages\n          name: application-packages\n          description: \"Application package management\"\n          operations:\n            - method: GET\n              name: list-packages\n              description: \"List application packages for an environment\"\n              call: \"power-platform-api.get-environment-application-packages\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}/flow-runs\n          name: flow-runs\n          description: \"Flow run monitoring\"\n          operations:\n            - method: GET\n              name: list-flow-runs\n              description: \"List flow runs for an environment\"\n           \
+  \   call: \"power-platform-api.list-flow-runs\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/billing-policies\n          name: billing-policies\n          description: \"Billing policy management\"\n          operations:\n            - method: GET\n              name: list-billing-policies\n              description: \"List all billing policies\"\n              call: \"power-platform-api.list-billing-policies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-billing-policy\n              description: \"Create a billing policy\"\n              call: \"power-platform-api.create-billing-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n \
+  \     namespace: power-platform-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Power Platform administration.\"\n      tools:\n        - name: list-environments\n          description: \"List all Power Platform environments in the tenant\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"power-platform-api.list-environments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-environment\n          description: \"Get details for a specific Power Platform environment\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"power-platform-api.get-environment\"\n          with:\n            environmentId: \"tools.environmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-environment\n          description: \"Delete a Power Platform environment\"\n\
+  \          hints:\n            destructive: true\n            idempotent: true\n          call: \"power-platform-api.delete-environment\"\n          with:\n            environmentId: \"tools.environmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-application-packages\n          description: \"List application packages available in an environment\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.get-environment-application-packages\"\n          with:\n            environmentId: \"tools.environmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: install-application-package\n          description: \"Install an application package in an environment\"\n          hints:\n            readOnly: false\n          call: \"power-platform-api.install-application-package\"\n          with:\n            environmentId: \"tools.environmentId\"\
+  \n            applicationPackageId: \"tools.applicationPackageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-install-status\n          description: \"Check the installation status of an application package\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.get-install-status\"\n          with:\n            environmentId: \"tools.environmentId\"\n            operationId: \"tools.operationId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tenant-packages\n          description: \"List installable application packages for the tenant\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.get-tenant-application-packages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-flow-runs\n          description: \"List Power Automate flow runs by\
+  \ workflow ID\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.list-flow-runs\"\n          with:\n            environmentId: \"tools.environmentId\"\n            workflowId: \"tools.workflowId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-billing-policies\n          description: \"List billing policies for the tenant\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.list-billing-policies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-billing-policy\n          description: \"Create a new billing policy linking Azure subscription\"\n          hints:\n            readOnly: false\n          call: \"power-platform-api.create-billing-policy\"\n          with:\n            name: \"tools.name\"\n            billingInstrument: \"tools.billingInstrument\"\n          outputParameters:\n       \
+  \     - type: object\n              mapping: \"$.\"\n        - name: get-billing-policy\n          description: \"Get details for a specific billing policy\"\n          hints:\n            readOnly: true\n          call: \"power-platform-api.get-billing-policy\"\n          with:\n            billingPolicyId: \"tools.billingPolicyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-billing-policy\n          description: \"Update an existing billing policy\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"power-platform-api.update-billing-policy\"\n          with:\n            billingPolicyId: \"tools.billingPolicyId\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/power-platform/refs/heads/main/capabilities/platform-administration.yaml
 tags:
 - Microsoft
 - Power Platform

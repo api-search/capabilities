@@ -46,60 +46,72 @@ personas: []
 provider_name: Conductor
 provider_slug: conductor
 search_terms:
-- get workflow definition
-- create task definitions.
-- start a new workflow.
-- search for workflow executions.
-- resume workflow
-- update task execution status.
-- pause a running workflow.
+- delete workflow definition
 - list all task definitions.
+- automation
+- search workflows
+- orchestration
+- create a new workflow definition.
+- individual workflow execution.
+- create a workflow definition.
+- list workflow definitions
+- list event handlers
+- task management
+- state
+- create an event handler.
+- update task
+- get workflow execution
+- start a new workflow.
+- get a task definition.
+- individual workflow definition.
+- workflow execution management.
+- start a new workflow execution.
+- get task definition
+- update task execution status.
+- create workflow definition
+- workflow definition management.
+- terminate a running workflow.
+- poll for a task to execute.
+- pause workflow
+- create event handler
+- get a workflow definition by name.
+- get workflow definition
+- create task definitions
+- workflows
+- terminate workflow
+- task definition management.
+- list task definitions
+- delete a workflow execution.
+- resume a paused workflow.
+- create task definitions.
 - conductor
 - get workflow execution status.
-- create event handler
-- start workflow
-- get a workflow definition by name.
-- workflows
-- state
-- delete workflow execution
 - create new task definitions.
-- terminate workflow
-- pause workflow
-- get workflow execution
-- delete workflow definition
-- tasks
-- poll for task
 - delete a workflow definition.
-- update task
-- create workflow definition
-- list task definitions
-- get task definition
-- workflow definition management.
-- search workflows
-- list all event handlers.
-- start a new workflow execution.
-- workflow orchestration
-- list workflow definitions
-- task management
-- create a workflow definition.
+- search for workflow executions.
+- pause a running workflow.
 - get a workflow definition.
-- delete a workflow execution.
-- create a new workflow definition.
-- poll for a task to execute.
-- individual workflow definition.
-- task definition management.
-- individual workflow execution.
-- create task definitions
-- get a task definition.
-- create an event handler.
-- list event handlers
-- resume a paused workflow.
-- workflow execution management.
-- automation
-- orchestration
-- terminate a running workflow.
+- tasks
+- list all event handlers.
+- workflow orchestration
+- start workflow
+- poll for task
+- resume workflow
 - list all workflow definitions.
+- delete workflow execution
 slug: workflow-orchestration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Conductor Workflow Orchestration\"\n  description: \"Unified workflow for managing workflow definitions, task definitions, workflow executions, and event handlers. Used by backend developers and DevOps engineers.\"\n  tags:\n    - Conductor\n    - Workflow Orchestration\n    - Task Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONDUCTOR_API_TOKEN: CONDUCTOR_API_TOKEN\n\ncapability:\n  consumes:\n    - import: conductor\n      location: ./shared/conductor.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-orchestration-api\n      description: \"Unified REST API for Conductor workflow orchestration.\"\n      resources:\n        - path: /v1/workflow-definitions\n          name: workflow-definitions\n          description: \"Workflow definition management.\"\n          operations:\n            - method: GET\n       \
+  \       name: list-workflow-definitions\n              description: \"List all workflow definitions.\"\n              call: \"conductor.get-all-workflow-definitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workflow-definition\n              description: \"Create a workflow definition.\"\n              call: \"conductor.create-workflow-definition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflow-definitions/{id}\n          name: workflow-definition-details\n          description: \"Individual workflow definition.\"\n          operations:\n            - method: GET\n              name: get-workflow-definition\n              description: \"Get a workflow definition.\"\n              call: \"conductor.get-workflow-definition\"\n              with:\n                name: \"rest.id\"\n          \
+  \    outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-workflow-definition\n              description: \"Delete a workflow definition.\"\n              call: \"conductor.delete-workflow-definition\"\n              with:\n                name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/task-definitions\n          name: task-definitions\n          description: \"Task definition management.\"\n          operations:\n            - method: GET\n              name: list-task-definitions\n              description: \"List all task definitions.\"\n              call: \"conductor.get-all-task-definitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-task-definitions\n              description: \"Create task\
+  \ definitions.\"\n              call: \"conductor.create-task-definitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows\n          name: workflows\n          description: \"Workflow execution management.\"\n          operations:\n            - method: POST\n              name: start-workflow\n              description: \"Start a new workflow.\"\n              call: \"conductor.start-workflow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows/{id}\n          name: workflow-details\n          description: \"Individual workflow execution.\"\n          operations:\n            - method: GET\n              name: get-workflow-execution\n              description: \"Get workflow execution status.\"\n              call: \"conductor.get-workflow-execution\"\n              with:\n                workflowId: \"rest.id\"\n        \
+  \      outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-workflow-execution\n              description: \"Delete a workflow execution.\"\n              call: \"conductor.delete-workflow-execution\"\n              with:\n                workflowId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: workflow-orchestration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted workflow orchestration.\"\n      tools:\n        - name: list-workflow-definitions\n          description: \"List all workflow definitions.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"conductor.get-all-workflow-definitions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workflow-definition\n\
+  \          description: \"Get a workflow definition by name.\"\n          hints:\n            readOnly: true\n          call: \"conductor.get-workflow-definition\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-workflow-definition\n          description: \"Create a new workflow definition.\"\n          hints:\n            readOnly: false\n          call: \"conductor.create-workflow-definition\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-workflow-definition\n          description: \"Delete a workflow definition.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"conductor.delete-workflow-definition\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: list-task-definitions\n          description: \"List all task definitions.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"conductor.get-all-task-definitions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-task-definition\n          description: \"Get a task definition.\"\n          hints:\n            readOnly: true\n          call: \"conductor.get-task-definition\"\n          with:\n            taskType: \"tools.taskType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-task-definitions\n          description: \"Create new task definitions.\"\n          hints:\n            readOnly: false\n          call: \"conductor.create-task-definitions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-workflow\n          description: \"\
+  Start a new workflow execution.\"\n          hints:\n            readOnly: false\n          call: \"conductor.start-workflow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workflow-execution\n          description: \"Get workflow execution status.\"\n          hints:\n            readOnly: true\n          call: \"conductor.get-workflow-execution\"\n          with:\n            workflowId: \"tools.workflowId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: pause-workflow\n          description: \"Pause a running workflow.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"conductor.pause-workflow\"\n          with:\n            workflowId: \"tools.workflowId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: resume-workflow\n          description: \"Resume a paused\
+  \ workflow.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"conductor.resume-workflow\"\n          with:\n            workflowId: \"tools.workflowId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: terminate-workflow\n          description: \"Terminate a running workflow.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"conductor.terminate-workflow\"\n          with:\n            workflowId: \"tools.workflowId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-workflows\n          description: \"Search for workflow executions.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"conductor.search-workflows\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n \
+  \       - name: poll-for-task\n          description: \"Poll for a task to execute.\"\n          hints:\n            readOnly: true\n          call: \"conductor.poll-for-task\"\n          with:\n            taskType: \"tools.taskType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-task\n          description: \"Update task execution status.\"\n          hints:\n            readOnly: false\n          call: \"conductor.update-task\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-event-handlers\n          description: \"List all event handlers.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"conductor.get-all-event-handlers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-event-handler\n          description: \"Create an event handler.\"\n          hints:\n\
+  \            readOnly: false\n          call: \"conductor.create-event-handler\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/conductor/refs/heads/main/capabilities/workflow-orchestration.yaml
 tags:
 - Conductor
 - Workflow Orchestration

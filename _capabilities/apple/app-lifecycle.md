@@ -34,59 +34,68 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- list all beta testers.
+- app management.
 - get details of a specific app.
-- apple
-- build management.
-- list all beta groups.
+- create a new beta group.
+- list testers
+- create beta group
+- developer
 - app store
 - app management
-- beta group management.
-- create tester
-- modify build
-- get beta tester details.
-- mobile
-- read build
-- delete beta group
-- add a new beta tester.
-- developer
-- create beta group
-- update a beta group.
-- get beta group details.
-- ios
-- modify app
-- list beta groups
-- list testers
-- get build details.
-- app management.
-- read beta group
-- read beta tester
-- add a beta tester.
-- create a new beta group.
-- technology
-- modify beta group
-- update build information.
-- remove a beta tester.
-- list groups
-- list beta testers
-- list beta testers.
-- list builds
 - delete a beta group.
-- macos
-- list all apps.
-- list apps
-- list all apps in app store connect.
-- update app metadata.
-- beta tester management.
-- read app
 - list all builds.
-- list beta groups.
-- create group
-- delete beta tester
-- testflight
+- get beta tester details.
+- beta tester management.
+- list all beta testers.
+- add a beta tester.
+- read beta group
 - create beta tester
+- create tester
+- testflight
+- update build information.
+- list beta testers
+- read app
+- add a new beta tester.
+- list beta groups
+- list groups
+- remove a beta tester.
+- get beta group details.
+- beta group management.
 - create a beta group.
+- update app metadata.
+- modify app
+- get build details.
+- list beta testers.
+- technology
+- build management.
+- apple
+- modify build
+- delete beta group
+- list all apps.
+- list beta groups.
+- list all apps in app store connect.
+- create group
+- ios
+- update a beta group.
+- modify beta group
+- mobile
+- macos
+- list apps
+- list all beta groups.
+- delete beta tester
+- read beta tester
+- read build
+- list builds
 slug: app-lifecycle
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apple App Lifecycle\"\n  description: \"Unified workflow for managing the Apple app lifecycle including app metadata, builds, TestFlight beta testing, and beta group management. Used by app developers and release managers.\"\n  tags:\n    - Apple\n    - App Store\n    - TestFlight\n    - App Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPLE_ASC_TOKEN: APPLE_ASC_TOKEN\n\ncapability:\n  consumes:\n    - import: app-store-connect\n      location: ./shared/app-store-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apple-app-lifecycle-api\n      description: \"Unified REST API for Apple app lifecycle management.\"\n      resources:\n        - path: /v1/apps\n          name: apps\n          description: \"App management.\"\n          operations:\n            - method: GET\n              name: list-apps\n              description: \"\
+  List all apps.\"\n              call: \"app-store-connect.list-apps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/builds\n          name: builds\n          description: \"Build management.\"\n          operations:\n            - method: GET\n              name: list-builds\n              description: \"List all builds.\"\n              call: \"app-store-connect.list-builds\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/testers\n          name: testers\n          description: \"Beta tester management.\"\n          operations:\n            - method: GET\n              name: list-testers\n              description: \"List beta testers.\"\n              call: \"app-store-connect.list-beta-testers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n             \
+  \ name: create-tester\n              description: \"Add a beta tester.\"\n              call: \"app-store-connect.create-beta-tester\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Beta group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List beta groups.\"\n              call: \"app-store-connect.list-beta-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a beta group.\"\n              call: \"app-store-connect.create-beta-group\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apple-app-lifecycle-mcp\n      transport:\
+  \ http\n      description: \"MCP server for AI-assisted Apple app lifecycle management.\"\n      tools:\n        - name: list-apps\n          description: \"List all apps in App Store Connect.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"app-store-connect.list-apps\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-app\n          description: \"Get details of a specific app.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.read-app\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: modify-app\n          description: \"Update app metadata.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"app-store-connect.modify-app\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-builds\n          description: \"List all builds.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.list-builds\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-build\n          description: \"Get build details.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.read-build\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: modify-build\n          description: \"Update build information.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"app-store-connect.modify-build\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-beta-testers\n\
+  \          description: \"List all beta testers.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.list-beta-testers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-beta-tester\n          description: \"Add a new beta tester.\"\n          hints:\n            readOnly: false\n          call: \"app-store-connect.create-beta-tester\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-beta-tester\n          description: \"Get beta tester details.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.read-beta-tester\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-beta-tester\n          description: \"Remove a beta tester.\"\n          hints:\n            destructive: true\n            idempotent:\
+  \ true\n          call: \"app-store-connect.delete-beta-tester\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-beta-groups\n          description: \"List all beta groups.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.list-beta-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-beta-group\n          description: \"Create a new beta group.\"\n          hints:\n            readOnly: false\n          call: \"app-store-connect.create-beta-group\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-beta-group\n          description: \"Get beta group details.\"\n          hints:\n            readOnly: true\n          call: \"app-store-connect.read-beta-group\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: modify-beta-group\n          description: \"Update a beta group.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"app-store-connect.modify-beta-group\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-beta-group\n          description: \"Delete a beta group.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"app-store-connect.delete-beta-group\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apple/refs/heads/main/capabilities/app-lifecycle.yaml
 tags:
 - Apple
 - App Store

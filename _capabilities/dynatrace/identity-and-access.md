@@ -59,63 +59,76 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- get user details
-- application performance monitoring
-- identity
-- get group details
-- update a group's name and description
-- create user
-- get details of a specific group
-- manage account users
-- cloud monitoring
-- list environments
-- list permissions
-- delete a user
-- observability
+- permanently delete a group
 - ai operations
-- list all user groups in the account
-- list all users in the account
-- update a user's profile and group memberships
-- create a new user and send an invitation email
+- create user
+- automation
 - application security
-- digital experience management
+- get group details
+- query permissions
+- list all environments associated with the account
+- platform administration
 - iam
 - get details of a specific user
-- list all users in the dynatrace account
-- create a new user
-- delete group
-- intelligence
-- get user
-- update user profile and groups
-- delete user
-- manage user groups
-- create a new group
-- list users
-- list all permissions for the account
-- get, update, or delete a specific user
-- update user
-- get, update, or delete a specific group
-- permanently delete a group
-- list all environments associated with the account
-- list groups
-- list all permissions defined for the account
-- create a new user group
-- query permissions
-- list all groups
-- analytics
-- update group name and description
-- platform administration
 - access control
-- delete a group
 - get group
+- create a new user and send an invitation email
+- list all groups
 - update group
-- apm
+- list all permissions for the account
+- observability
+- create a new group
+- update user profile and groups
 - list all environments
+- get details of a specific group
+- list all permissions defined for the account
+- analytics
+- delete group
+- update user
+- delete a group
+- get, update, or delete a specific user
+- cloud monitoring
+- update a user's profile and group memberships
+- list groups
+- list permissions
+- manage user groups
+- intelligence
+- get user details
+- delete user
+- update a group's name and description
+- list users
+- manage account users
+- create a new user group
+- identity
+- create a new user
 - create group
-- permanently remove a user from the account
-- automation
 - dynatrace
+- get user
+- permanently remove a user from the account
+- apm
+- list all users in the account
+- get, update, or delete a specific group
+- update group name and description
+- list all users in the dynatrace account
+- delete a user
+- list all user groups in the account
+- list environments
+- application performance monitoring
+- digital experience management
 slug: identity-and-access
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Identity And Access\"\n  description: \"Identity and access management workflow for platform admins managing Dynatrace users, groups, permissions, and environments across the account.\"\n  tags:\n    - Dynatrace\n    - Identity\n    - Access Control\n    - Platform Administration\n    - IAM\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_OAUTH_TOKEN: DYNATRACE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: account-management\n      location: ./shared/account-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: identity-access-api\n      description: \"Unified REST API for Dynatrace identity and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"Manage account users\"\n          operations:\n            - method: GET\n              name: list-users\n   \
+  \           description: \"List all users in the account\"\n              call: \"account-management.list-users\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user\"\n              call: \"account-management.create-user\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user-detail\n          description: \"Get, update, or delete a specific user\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details\"\n              call:\
+  \ \"account-management.get-user\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-user\n              description: \"Update user profile and groups\"\n              call: \"account-management.update-user\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-user\n              description: \"Delete a user\"\n              call: \"account-management.delete-user\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                \
+  \  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Manage user groups\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List all groups\"\n              call: \"account-management.list-groups\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a new group\"\n              call: \"account-management.create-group\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups/{groupId}\n          name: group-detail\n          description:\
+  \ \"Get, update, or delete a specific group\"\n          operations:\n            - method: GET\n              name: get-group\n              description: \"Get group details\"\n              call: \"account-management.get-group\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-group\n              description: \"Update group name and description\"\n              call: \"account-management.update-group\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-group\n              description: \"Delete a group\"\n              call: \"account-management.delete-group\"\
+  \n              with:\n                accountUuid: \"rest.accountUuid\"\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/permissions\n          name: permissions\n          description: \"Query permissions\"\n          operations:\n            - method: GET\n              name: list-permissions\n              description: \"List all permissions for the account\"\n              call: \"account-management.list-permissions\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments\n          name: environments\n          description: \"List environments\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"List all environments\"\n              call: \"account-management.list-environments\"\
+  \n              with:\n                accountUuid: \"rest.accountUuid\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: identity-access-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Dynatrace identity and access management.\"\n      tools:\n        - name: list-users\n          description: \"List all users in the Dynatrace account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"account-management.list-users\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create\
+  \ a new user and send an invitation email\"\n          hints:\n            readOnly: false\n            openWorld: true\n          call: \"account-management.create-user\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get details of a specific user\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"account-management.get-user\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-user\n          description: \"Update a user's profile and group memberships\"\n          hints:\n            readOnly: false\n            idempotent: true\n            openWorld: true\n          call: \"account-management.update-user\"\n          with:\n\
+  \            accountUuid: \"tools.accountUuid\"\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Permanently remove a user from the account\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          call: \"account-management.delete-user\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List all user groups in the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"account-management.list-groups\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            nextPageKey: \"tools.nextPageKey\"\n           \
+  \ pageSize: \"tools.pageSize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-group\n          description: \"Create a new user group\"\n          hints:\n            readOnly: false\n            openWorld: true\n          call: \"account-management.create-group\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-group\n          description: \"Get details of a specific group\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"account-management.get-group\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-group\n          description: \"Update a group's name and description\"\n          hints:\n\
+  \            readOnly: false\n            idempotent: true\n            openWorld: true\n          call: \"account-management.update-group\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-group\n          description: \"Permanently delete a group\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          call: \"account-management.delete-group\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-permissions\n          description: \"List all permissions defined for the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call:\
+  \ \"account-management.list-permissions\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-environments\n          description: \"List all environments associated with the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"account-management.list-environments\"\n          with:\n            accountUuid: \"tools.accountUuid\"\n            nextPageKey: \"tools.nextPageKey\"\n            pageSize: \"tools.pageSize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/dynatrace/refs/heads/main/capabilities/identity-and-access.yaml
 tags:
 - Dynatrace
 - Identity

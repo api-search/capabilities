@@ -36,44 +36,52 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- list fixes
-- get overall health status
-- list known security vulnerabilities
 - vulnerability management
-- get server health
-- microservices
-- list managed servers
+- apply fix
+- get overall health status
 - list available fixes
+- health monitoring
+- get vulnerability
+- middleware
+- get vulnerability details
+- get server health
+- list known vulnerabilities
+- compliance reporting
+- get overall environment health
+- cloud native
+- initiate vulnerability resolution
+- list fixes
+- get overall health
+- j2ee
+- resolve vulnerability
+- enterprise java
+- list users
+- vulnerability tracking and remediation
 - security user management
 - list servers managed by websphere automation
-- health monitoring
-- initiate vulnerability resolution
 - apply a fix to managed servers
-- compliance
-- get individual server health
-- middleware
-- get overall health
-- get vulnerability
-- list security users
-- enterprise java
-- application server
-- list users
-- fix and patch management
-- ibm websphere
-- get overall environment health
-- list compliance reports
-- resolve vulnerability
-- apply fix
-- vulnerability tracking and remediation
-- cloud native
-- j2ee
-- list vulnerabilities
-- compliance reporting
-- get vulnerability details
-- list available security fixes
-- list known vulnerabilities
 - security
+- get individual server health
+- list vulnerabilities
+- fix and patch management
+- compliance
+- application server
+- list compliance reports
+- list security users
+- list known security vulnerabilities
+- microservices
+- list managed servers
+- ibm websphere
+- list available security fixes
 slug: security-and-compliance
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Security and Compliance\"\n  description: \"Workflow for security vulnerability management, automated patching, compliance reporting, and health monitoring across WebSphere environments for security engineers and compliance teams.\"\n  tags:\n    - IBM WebSphere\n    - Security\n    - Compliance\n    - Vulnerability Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_AUTOMATION_TOKEN: WEBSPHERE_AUTOMATION_TOKEN\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n\ncapability:\n  consumes:\n    - import: automation\n      location: ./shared/automation.yaml\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: security-compliance-api\n      description: \"Unified REST API for WebSphere security and compliance operations.\"\n   \
+  \   resources:\n        - path: /v1/vulnerabilities\n          name: vulnerabilities\n          description: \"Vulnerability tracking and remediation\"\n          operations:\n            - method: GET\n              name: list-vulnerabilities\n              description: \"List known vulnerabilities\"\n              call: \"automation.list-vulnerabilities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-vulnerability\n              description: \"Get vulnerability details\"\n              call: \"automation.get-vulnerability\"\n              with:\n                vulnerabilityId: \"rest.vulnerabilityId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fixes\n          name: fixes\n          description: \"Fix and patch management\"\n          operations:\n            - method: GET\n              name: list-fixes\n\
+  \              description: \"List available fixes\"\n              call: \"automation.list-fixes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/compliance\n          name: compliance\n          description: \"Compliance reporting\"\n          operations:\n            - method: GET\n              name: list-compliance-reports\n              description: \"List compliance reports\"\n              call: \"automation.list-compliance-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health\n          name: health\n          description: \"Health monitoring\"\n          operations:\n            - method: GET\n              name: get-overall-health\n              description: \"Get overall health status\"\n              call: \"automation.get-overall-health\"\n              outputParameters:\n                - type: object\n            \
+  \      mapping: \"$.\"\n        - path: /v1/security-users\n          name: security-users\n          description: \"Security user management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List security users\"\n              call: \"admin-rest.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: security-compliance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted WebSphere security and compliance.\"\n      tools:\n        - name: list-vulnerabilities\n          description: \"List known security vulnerabilities\"\n          hints:\n            readOnly: true\n          call: \"automation.list-vulnerabilities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-vulnerability\n          description: \"Get vulnerability details\"\
+  \n          hints:\n            readOnly: true\n          call: \"automation.get-vulnerability\"\n          with:\n            vulnerabilityId: \"tools.vulnerabilityId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: resolve-vulnerability\n          description: \"Initiate vulnerability resolution\"\n          hints:\n            readOnly: false\n          call: \"automation.resolve-vulnerability\"\n          with:\n            vulnerabilityId: \"tools.vulnerabilityId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-fixes\n          description: \"List available security fixes\"\n          hints:\n            readOnly: true\n          call: \"automation.list-fixes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: apply-fix\n          description: \"Apply a fix to managed servers\"\n          hints:\n          \
+  \  readOnly: false\n          call: \"automation.apply-fix\"\n          with:\n            fixId: \"tools.fixId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-overall-health\n          description: \"Get overall environment health\"\n          hints:\n            readOnly: true\n          call: \"automation.get-overall-health\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-server-health\n          description: \"Get individual server health\"\n          hints:\n            readOnly: true\n          call: \"automation.get-server-health\"\n          with:\n            serverId: \"tools.serverId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-compliance-reports\n          description: \"List compliance reports\"\n          hints:\n            readOnly: true\n          call: \"automation.list-compliance-reports\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-managed-servers\n          description: \"List servers managed by WebSphere Automation\"\n          hints:\n            readOnly: true\n          call: \"automation.list-managed-servers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/websphere/refs/heads/main/capabilities/security-and-compliance.yaml
 tags:
 - IBM WebSphere
 - Security

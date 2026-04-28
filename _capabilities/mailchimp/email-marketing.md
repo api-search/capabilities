@@ -61,82 +61,96 @@ provider_name: Mailchimp
 provider_slug: mailchimp
 search_terms:
 - transactional list templates
-- transactional email
-- send campaign
-- send a transactional email with a template.
-- marketing create campaign
+- get transactional account information.
 - marketing delete campaign
-- marketing automation
-- search transactional
-- specific campaign.
-- transactional get message info
-- get report
-- search sent messages.
-- transactional send template
-- get campaign report.
-- marketing send campaign
-- create campaign
-- delete a marketing campaign.
-- audience management.
-- send a campaign.
 - campaign reports.
-- list members
-- list reports
+- search sent messages.
 - list all marketing campaigns.
+- add member
+- marketing list members
+- specific campaign.
+- send campaign
+- transactional send template
+- get report
+- send a transactional email.
+- add a member.
+- newsletters
+- list reports.
+- send campaign.
+- marketing campaigns.
+- create a campaign.
+- list campaigns.
+- list members.
+- transactional get message info
+- list marketing automations.
+- get audience details.
+- search transactional
+- send a campaign.
+- audience management.
+- transactional get user info
+- delete a marketing campaign.
+- marketing get audience
+- delete campaign
+- list campaign reports.
+- marketing list templates
+- list audiences
+- search sent transactional messages.
+- email marketing
+- marketing get campaign
+- get campaign
+- transactional email
+- send transactional email.
+- list audiences.
+- marketing send campaign
+- mailchimp
+- specific campaign report.
 - marketing list campaigns
 - send a marketing campaign.
-- list audience members.
-- marketing list members
-- add a member.
-- list audiences.
-- add a member to an audience.
-- list audiences
-- marketing campaigns.
-- delete campaign
-- marketing get campaign
-- list email templates.
-- marketing get report
-- mailchimp
-- audience members.
-- list members.
-- list reports.
-- marketing list automations
-- create a campaign.
-- send a transactional email.
-- newsletters
-- get campaign
-- marketing get audience
-- send campaign.
-- email marketing
-- specific campaign report.
-- list campaigns.
-- send transactional email.
-- create a new marketing campaign.
-- list transactional email templates.
-- campaigns
-- marketing add member
-- get a specific marketing campaign.
-- transactional send message
-- search sent transactional messages.
-- add member
-- marketing list audiences
-- marketing list reports
-- delete a campaign.
-- get a specific campaign report.
+- list reports
 - list campaigns
+- get a specific marketing campaign.
+- add a member to an audience.
+- marketing list audiences
 - get campaign details.
-- list campaign reports.
+- audience members.
+- list transactional email templates.
 - list all audiences.
+- create campaign
+- list members
+- list audience members.
+- get a specific campaign report.
+- get campaign report.
+- create a new marketing campaign.
+- marketing get report
+- marketing add member
+- campaigns
+- marketing automation
 - send transactional
-- get audience details.
-- get details about a sent transactional message.
-- get transactional account information.
-- transactional get user info
-- transactional search messages
-- marketing list templates
+- transactional send message
+- send a transactional email with a template.
 - search transactional messages.
-- list marketing automations.
+- marketing list reports
+- marketing create campaign
+- get details about a sent transactional message.
+- list email templates.
+- transactional search messages
+- delete a campaign.
+- marketing list automations
 slug: email-marketing
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mailchimp Email Marketing\"\n  description: \"Unified workflow combining Mailchimp Marketing API for campaigns, audiences, and analytics with the Transactional API for personalized email delivery. Used by marketing teams and developers to manage the full email lifecycle.\"\n  tags:\n    - Mailchimp\n    - Email Marketing\n    - Transactional Email\n    - Marketing Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MAILCHIMP_API_KEY: MAILCHIMP_API_KEY\n      MANDRILL_API_KEY: MANDRILL_API_KEY\n\ncapability:\n  consumes:\n    - import: marketing\n      location: ./shared/marketing.yaml\n    - import: transactional\n      location: ./shared/transactional.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-marketing-api\n      description: \"Unified REST API for Mailchimp marketing campaigns and transactional email.\"\n      resources:\n     \
+  \   - path: /v1/campaigns\n          name: campaigns\n          description: \"Marketing campaigns.\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"List campaigns.\"\n              call: \"marketing.list-campaigns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: \"Create a campaign.\"\n              call: \"marketing.create-campaign\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns/{campaign_id}\n          name: campaign-detail\n          description: \"Specific campaign.\"\n          operations:\n            - method: GET\n              name: get-campaign\n              description: \"Get campaign details.\"\n              call: \"marketing.get-campaign\"\n              with:\n             \
+  \   campaign_id: \"rest.campaign_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-campaign\n              description: \"Delete a campaign.\"\n              call: \"marketing.delete-campaign\"\n              with:\n                campaign_id: \"rest.campaign_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns/{campaign_id}/send\n          name: send-campaign\n          description: \"Send a campaign.\"\n          operations:\n            - method: POST\n              name: send-campaign\n              description: \"Send campaign.\"\n              call: \"marketing.send-campaign\"\n              with:\n                campaign_id: \"rest.campaign_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audiences\n        \
+  \  name: audiences\n          description: \"Audience management.\"\n          operations:\n            - method: GET\n              name: list-audiences\n              description: \"List audiences.\"\n              call: \"marketing.list-audiences\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audiences/{list_id}/members\n          name: members\n          description: \"Audience members.\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List members.\"\n              call: \"marketing.list-members\"\n              with:\n                list_id: \"rest.list_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-member\n              description: \"Add a member.\"\n              call: \"marketing.add-member\"\n              with:\n           \
+  \     list_id: \"rest.list_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports\n          name: reports\n          description: \"Campaign reports.\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List reports.\"\n              call: \"marketing.list-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{campaign_id}\n          name: report-detail\n          description: \"Specific campaign report.\"\n          operations:\n            - method: GET\n              name: get-report\n              description: \"Get campaign report.\"\n              call: \"marketing.get-report\"\n              with:\n                campaign_id: \"rest.campaign_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n       \
+  \ - path: /v1/transactional/send\n          name: transactional-send\n          description: \"Send transactional email.\"\n          operations:\n            - method: POST\n              name: send-transactional\n              description: \"Send a transactional email.\"\n              call: \"transactional.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transactional/search\n          name: transactional-search\n          description: \"Search transactional messages.\"\n          operations:\n            - method: POST\n              name: search-transactional\n              description: \"Search sent messages.\"\n              call: \"transactional.search-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: email-marketing-mcp\n      transport: http\n      description: \"MCP server for\
+  \ AI-assisted email marketing and transactional email.\"\n      tools:\n        - name: marketing-list-campaigns\n          description: \"List all marketing campaigns.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"marketing.list-campaigns\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-get-campaign\n          description: \"Get a specific marketing campaign.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"marketing.get-campaign\"\n          with:\n            campaign_id: \"tools.campaign_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-create-campaign\n          description: \"Create a new marketing campaign.\"\n          hints:\n            readOnly: false\n          call: \"marketing.create-campaign\"\n          with:\n            type: \"tools.type\"\
+  \n            list_id: \"tools.list_id\"\n            subject_line: \"tools.subject_line\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-send-campaign\n          description: \"Send a marketing campaign.\"\n          hints:\n            readOnly: false\n          call: \"marketing.send-campaign\"\n          with:\n            campaign_id: \"tools.campaign_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-delete-campaign\n          description: \"Delete a marketing campaign.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"marketing.delete-campaign\"\n          with:\n            campaign_id: \"tools.campaign_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-list-audiences\n          description: \"List all audiences.\"\n          hints:\n\
+  \            readOnly: true\n            openWorld: true\n          call: \"marketing.list-audiences\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-get-audience\n          description: \"Get audience details.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"marketing.get-audience\"\n          with:\n            list_id: \"tools.list_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-list-members\n          description: \"List audience members.\"\n          hints:\n            readOnly: true\n          call: \"marketing.list-members\"\n          with:\n            list_id: \"tools.list_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-add-member\n          description: \"Add a member to an audience.\"\n          hints:\n            readOnly:\
+  \ false\n          call: \"marketing.add-member\"\n          with:\n            list_id: \"tools.list_id\"\n            email_address: \"tools.email_address\"\n            status: \"tools.status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-list-automations\n          description: \"List marketing automations.\"\n          hints:\n            readOnly: true\n          call: \"marketing.list-automations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-list-templates\n          description: \"List email templates.\"\n          hints:\n            readOnly: true\n          call: \"marketing.list-templates\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-list-reports\n          description: \"List campaign reports.\"\n          hints:\n            readOnly: true\n          call: \"marketing.list-reports\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: marketing-get-report\n          description: \"Get a specific campaign report.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"marketing.get-report\"\n          with:\n            campaign_id: \"tools.campaign_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-send-message\n          description: \"Send a transactional email.\"\n          hints:\n            readOnly: false\n          call: \"transactional.send-message\"\n          with:\n            from_email: \"tools.from_email\"\n            to_email: \"tools.to_email\"\n            subject: \"tools.subject\"\n            html: \"tools.html\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-send-template\n          description: \"Send a transactional\
+  \ email with a template.\"\n          hints:\n            readOnly: false\n          call: \"transactional.send-template-message\"\n          with:\n            template_name: \"tools.template_name\"\n            to_email: \"tools.to_email\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-search-messages\n          description: \"Search sent transactional messages.\"\n          hints:\n            readOnly: true\n          call: \"transactional.search-messages\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-get-message-info\n          description: \"Get details about a sent transactional message.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"transactional.get-message-info\"\n          with:\n            message_id: \"tools.message_id\"\n    \
+  \      outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-list-templates\n          description: \"List transactional email templates.\"\n          hints:\n            readOnly: true\n          call: \"transactional.list-templates\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: transactional-get-user-info\n          description: \"Get transactional account information.\"\n          hints:\n            readOnly: true\n          call: \"transactional.get-user-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/mailchimp/refs/heads/main/capabilities/email-marketing.yaml
 tags:
 - Mailchimp
 - Email Marketing

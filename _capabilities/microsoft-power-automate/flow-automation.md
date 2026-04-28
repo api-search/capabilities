@@ -39,51 +39,58 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- microsoft
-- list available connectors in an environment
-- workflow
-- creates and manages automation flows
-- turn on flow
-- flow lifecycle management
-- create a new automation flow
-- list environments
-- update flow
-- create flow
-- microsoft power automate
-- stop/deactivate a flow
-- get flow details
-- power platform
-- manages environments, connectors, and permissions
-- list all power automate environments
-- manage flows, environments, and connectors
-- update a flow's properties
-- get details of a specific connector
-- Automation Engineer
-- get flow
-- integration
-- list flows
-- rpa
-- delete flow
-- get connector
-- low-code
-- get details of a specific flow
 - delete a flow
-- start/activate a flow
-- flow management
-- Platform Administrator
-- managing environments and available connectors
-- update a flow
-- connector management
-- turn off flow
-- list connectors
-- environment management
-- list all environments
-- creating, running, and managing automation flows
-- list flows in an environment
+- update a flow's properties
 - automation
 - business process
+- Automation Engineer
+- create flow
+- list connectors
+- manage flows, environments, and connectors
+- managing environments and available connectors
+- environment management
+- list all environments
+- get connector
+- turn on flow
+- creates and manages automation flows
+- connector management
+- flow lifecycle management
+- flow management
+- start/activate a flow
+- stop/deactivate a flow
+- list available connectors in an environment
+- manages environments, connectors, and permissions
+- integration
+- rpa
+- creating, running, and managing automation flows
+- get flow
+- list flows in an environment
+- create a new automation flow
+- microsoft power automate
+- workflow
+- get flow details
+- update flow
+- low-code
+- delete flow
 - create a flow
+- list all power automate environments
+- turn off flow
+- microsoft
+- get details of a specific flow
+- Platform Administrator
+- list flows
+- get details of a specific connector
+- list environments
+- power platform
+- update a flow
 slug: flow-automation
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Power Automate Flow Automation\"\n  description: \"Workflow capability for managing Power Automate flows, environments, and connectors. Used by automation engineers and platform administrators.\"\n  tags:\n    - Microsoft Power Automate\n    - Automation\n    - Flow Management\n    - Low-Code\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_AUTOMATE_TOKEN: POWER_AUTOMATE_TOKEN\n\ncapability:\n  consumes:\n    - import: management-api\n      location: ./shared/management-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flow-automation-api\n      description: \"Unified REST API for Power Automate flow automation workflows.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n\
+  \              description: \"List all environments\"\n              call: \"management-api.list-environments\"\n        - path: /v1/flows\n          name: flows\n          description: \"Flow lifecycle management\"\n          operations:\n            - method: GET\n              name: list-flows\n              description: \"List flows\"\n              call: \"management-api.list-flows\"\n            - method: POST\n              name: create-flow\n              description: \"Create a flow\"\n              call: \"management-api.create-flow\"\n            - method: GET\n              name: get-flow\n              description: \"Get flow details\"\n              call: \"management-api.get-flow\"\n            - method: PATCH\n              name: update-flow\n              description: \"Update a flow\"\n              call: \"management-api.update-flow\"\n            - method: DELETE\n              name: delete-flow\n              description: \"Delete a flow\"\n              call: \"management-api.delete-flow\"\
+  \n        - path: /v1/connectors\n          name: connectors\n          description: \"Connector management\"\n          operations:\n            - method: GET\n              name: list-connectors\n              description: \"List connectors\"\n              call: \"management-api.list-connectors\"\n\n    - type: mcp\n      port: 9090\n      namespace: flow-automation-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Power Automate management.\"\n      tools:\n        - name: list-environments\n          description: \"List all Power Automate environments\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"management-api.list-environments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-flows\n          description: \"List flows in an environment\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"management-api.list-flows\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-flow\n          description: \"Create a new automation flow\"\n          hints:\n            readOnly: false\n          call: \"management-api.create-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-flow\n          description: \"Get details of a specific flow\"\n          hints:\n            readOnly: true\n          call: \"management-api.get-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-flow\n          description: \"Update a flow's properties\"\n          hints:\n            readOnly: false\n          call: \"management-api.update-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-flow\n          description: \"Delete a flow\"\n          hints:\n            destructive:\
+  \ true\n          call: \"management-api.delete-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turn-on-flow\n          description: \"Start/activate a flow\"\n          hints:\n            readOnly: false\n          call: \"management-api.turn-on-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turn-off-flow\n          description: \"Stop/deactivate a flow\"\n          hints:\n            readOnly: false\n          call: \"management-api.turn-off-flow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connectors\n          description: \"List available connectors in an environment\"\n          hints:\n            readOnly: true\n          call: \"management-api.list-connectors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-connector\n  \
+  \        description: \"Get details of a specific connector\"\n          hints:\n            readOnly: true\n          call: \"management-api.get-connector\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-automate/refs/heads/main/capabilities/flow-automation.yaml
 tags:
 - Microsoft Power Automate
 - Automation

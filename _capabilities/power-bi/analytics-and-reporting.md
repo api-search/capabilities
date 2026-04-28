@@ -47,68 +47,81 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
-- get gateway datasources
-- get dataset details
-- report management
-- get gateway
-- reporting
-- create a new dataset
-- business intelligence
-- list data gateways
-- get pages for a report
-- list dashboards
-- create a dataset
-- list gateways
-- get datasources for a dataset
-- get report
-- trigger a dataset refresh
-- export report
-- create a dashboard
-- get dashboard details
 - dashboard management
-- create a new workspace
-- list datasets
-- list reports
-- list all workspaces
-- get dataset
-- power bi
-- list all dashboards
+- list dashboards
+- get pages for a report
+- get gateway datasources
 - visualization
-- refresh dataset
+- power bi
+- get report
+- get refresh history
+- list all power bi reports
+- get dashboard
+- get datasources for a dataset
+- list workspace users
 - create dashboard
 - list all power bi datasets
-- create dataset
-- list workspaces
-- get workspace users
-- get gateway details
-- list all power bi reports
-- delete a dataset
-- gateway management
-- create a new dashboard
-- list workspace users
-- get refresh history
-- clone report
-- list all datasets
-- get tiles for a dashboard
-- delete dataset
-- create workspace
+- get dataset details
 - get report details by id
-- get dataset refresh history
-- analytics
-- get datasources
-- list all reports
-- clone a report
-- get dataset details by id
+- list all dashboards
+- list gateways
+- create a new dataset
 - get report pages
+- analytics
+- create a new workspace
+- get gateway
+- business intelligence
+- create a new dashboard
+- get dashboard details
+- delete dataset
+- reporting
 - individual dataset operations
+- workspace management
 - dashboards
 - get dashboard tiles
+- list all workspaces
 - data analysis
+- get dataset
 - export a report
+- refresh dataset
+- list data gateways
+- create workspace
+- list all datasets
+- export report
+- clone a report
+- create a dataset
+- list reports
+- create dataset
+- report management
+- get tiles for a dashboard
+- get gateway details
+- list all reports
+- get dataset details by id
+- list datasets
+- gateway management
+- get workspace users
+- get datasources
+- delete a dataset
 - dataset management
-- get dashboard
-- workspace management
+- create a dashboard
+- clone report
+- trigger a dataset refresh
+- get dataset refresh history
+- list workspaces
 slug: analytics-and-reporting
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Power BI Analytics and Reporting\"\n  description: \"Unified workflow for Power BI analytics operations including dataset management, report creation and distribution, dashboard monitoring, workspace administration, and gateway configuration. Used by BI analysts, report developers, and Power BI administrators.\"\n  tags:\n    - Power BI\n    - Analytics\n    - Business Intelligence\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_BI_ACCESS_TOKEN: POWER_BI_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: power-bi\n      location: ./shared/power-bi-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: power-bi-analytics-api\n      description: \"Unified REST API for Power BI analytics and reporting.\"\n      resources:\n        - path: /v1/datasets\n          name: datasets\n          description: \"Dataset management\"\n \
+  \         operations:\n            - method: GET\n              name: list-datasets\n              description: \"List all datasets\"\n              call: \"power-bi.get-datasets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dataset\n              description: \"Create a dataset\"\n              call: \"power-bi.create-dataset\"\n              with:\n                name: \"rest.name\"\n                tables: \"rest.tables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets/{datasetId}\n          name: dataset\n          description: \"Individual dataset operations\"\n          operations:\n            - method: GET\n              name: get-dataset\n              description: \"Get dataset details\"\n              call: \"power-bi.get-dataset\"\n              with:\n                datasetId: \"\
+  rest.datasetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-dataset\n              description: \"Delete a dataset\"\n              call: \"power-bi.delete-dataset\"\n              with:\n                datasetId: \"rest.datasetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports\n          name: reports\n          description: \"Report management\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List all reports\"\n              call: \"power-bi.get-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dashboards\n          name: dashboards\n          description: \"Dashboard management\"\n          operations:\n            - method: GET\n           \
+  \   name: list-dashboards\n              description: \"List all dashboards\"\n              call: \"power-bi.get-dashboards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dashboard\n              description: \"Create a dashboard\"\n              call: \"power-bi.create-dashboard\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Workspace management\"\n          operations:\n            - method: GET\n              name: list-workspaces\n              description: \"List workspaces\"\n              call: \"power-bi.get-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gateways\n          name: gateways\n          description: \"Gateway management\"\n          operations:\n\
+  \            - method: GET\n              name: list-gateways\n              description: \"List gateways\"\n              call: \"power-bi.get-gateways\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: power-bi-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Power BI analytics and reporting.\"\n      tools:\n        - name: list-datasets\n          description: \"List all Power BI datasets\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"power-bi.get-datasets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dataset\n          description: \"Get dataset details by ID\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-dataset\"\n          with:\n            datasetId: \"tools.datasetId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: create-dataset\n          description: \"Create a new dataset\"\n          hints:\n            readOnly: false\n          call: \"power-bi.create-dataset\"\n          with:\n            name: \"tools.name\"\n            tables: \"tools.tables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-dataset\n          description: \"Delete a dataset\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"power-bi.delete-dataset\"\n          with:\n            datasetId: \"tools.datasetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: refresh-dataset\n          description: \"Trigger a dataset refresh\"\n          hints:\n            readOnly: false\n          call: \"power-bi.refresh-dataset\"\n          with:\n            datasetId: \"tools.datasetId\"\n\
+  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-refresh-history\n          description: \"Get dataset refresh history\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-refresh-history\"\n          with:\n            datasetId: \"tools.datasetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-datasources\n          description: \"Get datasources for a dataset\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-datasources\"\n          with:\n            datasetId: \"tools.datasetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-reports\n          description: \"List all Power BI reports\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"power-bi.get-reports\"\n          outputParameters:\n          \
+  \  - type: object\n              mapping: \"$.\"\n        - name: get-report\n          description: \"Get report details by ID\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-report\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: clone-report\n          description: \"Clone a report\"\n          hints:\n            readOnly: false\n          call: \"power-bi.clone-report\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: export-report\n          description: \"Export a report\"\n          hints:\n            readOnly: true\n          call: \"power-bi.export-report\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ get-report-pages\n          description: \"Get pages for a report\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-pages\"\n          with:\n            reportId: \"tools.reportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-dashboards\n          description: \"List all dashboards\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"power-bi.get-dashboards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dashboard\n          description: \"Get dashboard details\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-dashboard\"\n          with:\n            dashboardId: \"tools.dashboardId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-dashboard\n          description: \"Create a new dashboard\"\
+  \n          hints:\n            readOnly: false\n          call: \"power-bi.create-dashboard\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dashboard-tiles\n          description: \"Get tiles for a dashboard\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-tiles\"\n          with:\n            dashboardId: \"tools.dashboardId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workspaces\n          description: \"List all workspaces\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"power-bi.get-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-workspace\n          description: \"Create a new workspace\"\n          hints:\n            readOnly: false\n          call: \"power-bi.create-group\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: get-workspace-users\n          description: \"List workspace users\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-group-users\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-gateways\n          description: \"List data gateways\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-gateways\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-gateway\n          description: \"Get gateway details\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-gateway\"\n          with:\n            gatewayId: \"tools.gatewayId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-gateway-datasources\n      \
+  \    description: \"Get gateway datasources\"\n          hints:\n            readOnly: true\n          call: \"power-bi.get-gateway-datasources\"\n          with:\n            gatewayId: \"tools.gatewayId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/power-bi/refs/heads/main/capabilities/analytics-and-reporting.yaml
 tags:
 - Power BI
 - Analytics

@@ -24,55 +24,64 @@ personas: []
 provider_name: Spot
 provider_slug: spot
 search_terms:
-- list ocean virtual node groups
 - elastigroup get costs
-- get elastigroup cost data
-- containers
-- get an aws elastigroup by id
-- ocean list clusters gke
-- elastigroup get logs
-- kubernetes
-- get an aws ocean cluster
-- list aks ocean clusters
-- list elastigroups
 - list azure elastigroups
-- elastigroup get status aws
-- ocean list clusters aks
-- elastigroup list gcp
-- scale down an aws elastigroup
-- list virtual node groups
-- ocean list clusters aws
-- compute
-- list gcp elastigroups
-- list aws ocean clusters
-- spot instances
-- list aws elastigroups
-- ocean kubernetes clusters
-- ocean list spark clusters
-- ocean list virtual node groups
-- elastigroup list groups aws
-- list gke ocean clusters
-- spot
-- get right-sizing suggestions for an ocean cluster
-- elastigroup scale down aws
-- elastigroup list azure
-- ocean get right sizing
-- list ocean spark clusters
-- ocean virtual node groups
+- elastigroup get logs
 - scale up an aws elastigroup
-- elastigroup get group aws
-- elastigroup compute groups
-- ocean get cluster aws
-- list all aws elastigroups
-- finops
-- get elastigroup instance status
-- get elastigroup activity logs
-- cost optimization
-- elastigroup scale up aws
+- compute
 - cloud infrastructure
-- autoscaling
+- list gke ocean clusters
+- ocean get cluster aws
+- ocean list virtual node groups
 - list ocean clusters
+- list virtual node groups
+- spot instances
+- autoscaling
+- ocean list spark clusters
+- spot
+- elastigroup scale down aws
+- cost optimization
+- scale down an aws elastigroup
+- get an aws ocean cluster
+- finops
+- ocean virtual node groups
+- list gcp elastigroups
+- elastigroup get group aws
+- list aws ocean clusters
+- elastigroup list gcp
+- get right-sizing suggestions for an ocean cluster
+- elastigroup get status aws
+- elastigroup list groups aws
+- containers
+- kubernetes
+- ocean list clusters aws
+- ocean list clusters aks
+- elastigroup scale up aws
+- get elastigroup instance status
+- ocean list clusters gke
+- elastigroup compute groups
+- elastigroup list azure
+- list aks ocean clusters
+- ocean kubernetes clusters
+- list ocean virtual node groups
+- get an aws elastigroup by id
+- ocean get right sizing
+- get elastigroup cost data
+- list aws elastigroups
+- list elastigroups
+- get elastigroup activity logs
+- list ocean spark clusters
+- list all aws elastigroups
 slug: compute-optimization
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Spot Compute Optimization\"\n  description: \"Unified workflow for managing cloud compute optimization across Elastigroup and Ocean, combining instance management, autoscaling, and Kubernetes infrastructure automation. Used by DevOps engineers and cloud infrastructure teams.\"\n  tags:\n    - Spot\n    - Compute\n    - Autoscaling\n    - Kubernetes\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPOT_API_TOKEN: SPOT_API_TOKEN\n\ncapability:\n  consumes:\n    - import: spot-elastigroup\n      location: ./shared/elastigroup.yaml\n    - import: spot-ocean\n      location: ./shared/ocean.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spot-compute-api\n      description: \"Unified REST API for Spot compute optimization.\"\n      resources:\n        - path: /v1/elastigroups\n          name: elastigroups\n          description: \"Elastigroup compute groups\"\
+  \n          operations:\n            - method: GET\n              name: list-elastigroups\n              description: \"List AWS Elastigroups\"\n              call: \"spot-elastigroup.list-elastigroups-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ocean-clusters\n          name: ocean-clusters\n          description: \"Ocean Kubernetes clusters\"\n          operations:\n            - method: GET\n              name: list-ocean-clusters\n              description: \"List AWS Ocean clusters\"\n              call: \"spot-ocean.list-ocean-clusters-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/virtual-node-groups\n          name: virtual-node-groups\n          description: \"Ocean virtual node groups\"\n          operations:\n            - method: GET\n              name: list-virtual-node-groups\n              description: \"List\
+  \ virtual node groups\"\n              call: \"spot-ocean.list-virtual-node-groups-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: spot-compute-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Spot compute optimization.\"\n      tools:\n        - name: elastigroup-list-groups-aws\n          description: \"List all AWS Elastigroups\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"spot-elastigroup.list-elastigroups-aws\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-get-group-aws\n          description: \"Get an AWS Elastigroup by ID\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.get-elastigroup-aws\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n          \
+  \  - type: object\n              mapping: \"$.\"\n        - name: elastigroup-get-status-aws\n          description: \"Get Elastigroup instance status\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.get-elastigroup-status-aws\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-get-costs\n          description: \"Get Elastigroup cost data\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.get-elastigroup-costs\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-get-logs\n          description: \"Get Elastigroup activity logs\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.get-elastigroup-logs\"\n          with:\n            groupId: \"tools.groupId\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-scale-up-aws\n          description: \"Scale up an AWS Elastigroup\"\n          hints:\n            readOnly: false\n          call: \"spot-elastigroup.scale-up-elastigroup-aws\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-scale-down-aws\n          description: \"Scale down an AWS Elastigroup\"\n          hints:\n            readOnly: false\n          call: \"spot-elastigroup.scale-down-elastigroup-aws\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-list-azure\n          description: \"List Azure Elastigroups\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.list-elastigroups-azure\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: elastigroup-list-gcp\n          description: \"List GCP Elastigroups\"\n          hints:\n            readOnly: true\n          call: \"spot-elastigroup.list-elastigroups-gcp\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-list-clusters-aws\n          description: \"List AWS Ocean clusters\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"spot-ocean.list-ocean-clusters-aws\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-get-cluster-aws\n          description: \"Get an AWS Ocean cluster\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.get-ocean-cluster-aws\"\n          with:\n            oceanId: \"tools.oceanId\"\n          outputParameters:\n            - type: object\n         \
+  \     mapping: \"$.\"\n        - name: ocean-get-right-sizing\n          description: \"Get right-sizing suggestions for an Ocean cluster\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.get-right-sizing-suggestions\"\n          with:\n            oceanId: \"tools.oceanId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-list-virtual-node-groups\n          description: \"List Ocean virtual node groups\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.list-virtual-node-groups-aws\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-list-clusters-aks\n          description: \"List AKS Ocean clusters\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.list-ocean-clusters-aks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-list-clusters-gke\n\
+  \          description: \"List GKE Ocean clusters\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.list-ocean-clusters-gke\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocean-list-spark-clusters\n          description: \"List Ocean Spark clusters\"\n          hints:\n            readOnly: true\n          call: \"spot-ocean.list-ocean-spark-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/spot/refs/heads/main/capabilities/compute-optimization.yaml
 tags:
 - Spot
 - Compute

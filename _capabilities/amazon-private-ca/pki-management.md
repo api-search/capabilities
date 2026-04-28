@@ -35,47 +35,55 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- retrieve a certificate
-- certificates
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- certificate management
-- list all private certificate authorities
-- get certificate authority details
-- private pki infrastructure management workflow
-- list certificate authorities
-- amazon
-- revoke a certificate
+- tls
 - issue a new certificate
-- get certificate
-- aws
-- issue a new x.509 certificate from a certificate authority
-- list cas
-- security
+- Platform Engineer
+- retrieve a certificate
+- certificate authority hierarchy management
 - create certificate authority
+- iot
+- amazon
+- individual certificate operations
+- get certificate
+- get details about a specific certificate authority
+- aws
+- individual certificate authority operations
+- certificates
+- create a new private certificate authority in the ca hierarchy
+- list cas
+- certificate authority
+- revoke certificate
+- issue a new x.509 certificate from a certificate authority
+- get certificate authority details
+- certificate management
+- describe ca
+- list certificate authorities
 - retrieve an issued certificate by arn
 - certificate lifecycle management
-- get details about a specific certificate authority
-- revoke an issued certificate
-- list all certificate authorities
-- certificate authority hierarchy management
-- Security Engineer
-- create a new private certificate authority in the ca hierarchy
-- tls
-- Platform Engineer
-- describe ca
-- create a new private certificate authority
-- revoke certificate
-- iot
-- certificate authority
-- x.509
-- individual certificate authority operations
-- issues certificates for internal services and manages certificate lifecycle
-- create ca
-- individual certificate operations
-- describe certificate authority
-- pki
 - issue certificate
+- Security Engineer
+- list all certificate authorities
+- create a new private certificate authority
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- describe certificate authority
+- security
+- x.509
+- create ca
+- private pki infrastructure management workflow
+- list all private certificate authorities
+- revoke a certificate
+- issues certificates for internal services and manages certificate lifecycle
+- revoke an issued certificate
+- pki
 slug: pki-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Private CA PKI Management\n  description: Workflow capability for managing private PKI infrastructure using Amazon Private CA. Combines certificate authority management, certificate issuance, revocation, and audit reporting for security engineers and platform teams.\n  tags:\n    - Amazon\n    - AWS\n    - PKI\n    - Certificate Authority\n    - Security\n    - X.509\n    - Certificates\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-private-ca\n      location: ./shared/amazon-private-ca.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pki-management-api\n      description: Unified REST API for Amazon Private CA PKI management workflows.\n      resources:\n        - path: /v1/certificate-authorities\n\
+  \          name: certificate-authorities\n          description: Certificate authority hierarchy management\n          operations:\n            - method: POST\n              name: create-ca\n              description: Create a new private certificate authority\n              call: \"amazon-private-ca.create-certificate-authority\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-cas\n              description: List all certificate authorities\n              call: \"amazon-private-ca.list-certificate-authorities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificate-authorities/{ca-id}\n          name: certificate-authority\n          description: Individual certificate authority operations\n          operations:\n            - method: GET\n              name: describe-ca\n              description: Get\
+  \ certificate authority details\n              call: \"amazon-private-ca.describe-certificate-authority\"\n              with:\n                ca_arn: \"rest.ca_arn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificates\n          name: certificates\n          description: Certificate lifecycle management\n          operations:\n            - method: POST\n              name: issue-certificate\n              description: Issue a new certificate\n              call: \"amazon-private-ca.issue-certificate\"\n              with:\n                ca_arn: \"rest.ca_arn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificates/{cert-id}\n          name: certificate\n          description: Individual certificate operations\n          operations:\n            - method: GET\n              name: get-certificate\n              description:\
+  \ Retrieve a certificate\n              call: \"amazon-private-ca.get-certificate\"\n              with:\n                ca_arn: \"rest.ca_arn\"\n                cert_arn: \"rest.cert_arn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: revoke-certificate\n              description: Revoke a certificate\n              call: \"amazon-private-ca.revoke-certificate\"\n              with:\n                ca_arn: \"rest.ca_arn\"\n                serial: \"rest.serial\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: pki-management-mcp\n      transport: http\n      description: MCP server for AI-assisted PKI management workflows with Amazon Private CA.\n      tools:\n        - name: create-certificate-authority\n          description: Create a new private certificate authority in the\
+  \ CA hierarchy\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"amazon-private-ca.create-certificate-authority\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-certificate-authorities\n          description: List all private certificate authorities\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amazon-private-ca.list-certificate-authorities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-certificate-authority\n          description: Get details about a specific certificate authority\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"amazon-private-ca.describe-certificate-authority\"\n          with:\n            ca_arn: \"tools.ca_arn\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n\n        - name: issue-certificate\n          description: Issue a new X.509 certificate from a certificate authority\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"amazon-private-ca.issue-certificate\"\n          with:\n            ca_arn: \"tools.ca_arn\"\n            csr: \"tools.csr\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-certificate\n          description: Retrieve an issued certificate by ARN\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"amazon-private-ca.get-certificate\"\n          with:\n            ca_arn: \"tools.ca_arn\"\n            cert_arn: \"tools.cert_arn\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: revoke-certificate\n          description: Revoke an issued certificate\n          hints:\n            readOnly: false\n       \
+  \     destructive: true\n          call: \"amazon-private-ca.revoke-certificate\"\n          with:\n            ca_arn: \"tools.ca_arn\"\n            serial: \"tools.serial\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-private-ca/refs/heads/main/capabilities/pki-management.yaml
 tags:
 - Amazon
 - AWS

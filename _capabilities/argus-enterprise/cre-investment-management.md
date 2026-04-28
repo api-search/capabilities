@@ -34,46 +34,53 @@ personas: []
 provider_name: ARGUS Enterprise
 provider_slug: argus-enterprise
 search_terms:
-- list all real estate portfolios
-- multi-asset portfolio analytics and reporting
-- list all commercial properties
-- investment management
-- property valuation and appraisal
-- list lease records with tenant and expiry information
-- oversees a portfolio of commercial real estate assets
-- list valuations
-- get property details and current metrics
 - portfolio management
-- get property cash flow projections
-- Asset Manager
-- Portfolio Manager
-- altus group
-- commercial property management
-- list portfolios
-- commercial real estate
-- cash flow modeling
-- list current and historical property valuations
-- get property
-- property valuations
+- get cash flow projections for a commercial property
+- get property details and current metrics
+- multi-asset portfolio analytics and reporting
 - argus enterprise
+- property valuation and appraisal
+- commercial real estate
+- lease management
+- commercial property investment and management
+- altus group
+- list properties
+- list real estate portfolios with aggregate performance metrics
+- get cashflows
+- list lease records with tenant and expiry information
+- list all leases
+- property valuations
+- Portfolio Manager
+- list all real estate portfolios
+- investment management
+- get property cash flow projections
+- get property cashflows
 - valuation
+- Asset Manager
+- list current and historical property valuations
+- manages individual commercial real estate assets
+- oversees a portfolio of commercial real estate assets
 - list property valuations
 - complete commercial real estate investment management workflow
-- list all leases
-- list real estate portfolios with aggregate performance metrics
-- list leases
-- list properties
-- get property cashflows
-- get cashflows
-- lease management
-- get detailed information about a commercial property including valuation and occupancy
-- manages individual commercial real estate assets
-- asset management
-- get cash flow projections for a commercial property
-- list commercial real estate properties with current status and metrics
-- commercial property investment and management
 - cash flow projections
+- cash flow modeling
+- get property
+- commercial property management
+- list valuations
+- list leases
+- list portfolios
+- list commercial real estate properties with current status and metrics
+- list all commercial properties
+- get detailed information about a commercial property including valuation and occupancy
+- asset management
 slug: cre-investment-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ARGUS Enterprise CRE Investment Management\"\n  description: \"Unified capability for commercial real estate investment management using ARGUS Enterprise. Combines property valuation, cash flow modeling, lease management, portfolio analytics, and reporting for Asset Managers and Portfolio Managers.\"\n  tags:\n    - ARGUS Enterprise\n    - Commercial Real Estate\n    - Investment Management\n    - Portfolio Management\n    - Valuation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARGUS_API_KEY: ARGUS_API_KEY\n      ARGUS_BASE_URL: ARGUS_BASE_URL\n\ncapability:\n  consumes:\n    - import: argusenterprise\n      location: ./shared/argus-enterprise-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: cre-investment-api\n      description: \"Unified REST API for commercial real estate investment management.\"\n      resources:\n        - path: /v1/properties\n\
+  \          name: properties\n          description: \"Commercial property management\"\n          operations:\n            - method: GET\n              name: list-properties\n              description: \"List all commercial properties\"\n              call: \"argusenterprise.list-properties\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-property\n              description: \"Get property details and current metrics\"\n              call: \"argusenterprise.get-property\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolios\n          name: portfolios\n          description: \"Portfolio management\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List all real estate portfolios\"\n  \
+  \            call: \"argusenterprise.list-portfolios\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/valuations\n          name: valuations\n          description: \"Property valuations\"\n          operations:\n            - method: GET\n              name: list-valuations\n              description: \"List property valuations\"\n              call: \"argusenterprise.list-valuations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/leases\n          name: leases\n          description: \"Lease management\"\n          operations:\n            - method: GET\n              name: list-leases\n              description: \"List all leases\"\n              call: \"argusenterprise.list-leases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/properties/{id}/cashflows\n      \
+  \    name: cashflows\n          description: \"Cash flow projections\"\n          operations:\n            - method: GET\n              name: get-cashflows\n              description: \"Get property cash flow projections\"\n              call: \"argusenterprise.get-cashflows\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: cre-investment-mcp\n      transport: http\n      description: \"MCP server for AI-assisted commercial real estate investment management.\"\n      tools:\n        - name: list-properties\n          description: \"List commercial real estate properties with current status and metrics\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"argusenterprise.list-properties\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ get-property\n          description: \"Get detailed information about a commercial property including valuation and occupancy\"\n          hints:\n            readOnly: true\n          call: \"argusenterprise.get-property\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-portfolios\n          description: \"List real estate portfolios with aggregate performance metrics\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"argusenterprise.list-portfolios\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-valuations\n          description: \"List current and historical property valuations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"argusenterprise.list-valuations\"\n          outputParameters:\n            - type: object\n   \
+  \           mapping: \"$.\"\n        - name: list-leases\n          description: \"List lease records with tenant and expiry information\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"argusenterprise.list-leases\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-property-cashflows\n          description: \"Get cash flow projections for a commercial property\"\n          hints:\n            readOnly: true\n          call: \"argusenterprise.get-cashflows\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/argus-enterprise/refs/heads/main/capabilities/cre-investment-management.yaml
 tags:
 - ARGUS Enterprise
 - Commercial Real Estate

@@ -78,77 +78,93 @@ personas: []
 provider_name: Citrix NetScaler
 provider_slug: citrix-netscaler
 search_terms:
-- single content switching virtual server
-- application delivery controller
-- delete a content switching virtual server
-- api gateway
+- get cs vserver
 - list cs vserver stats
-- unbind a service from a load balancing virtual server
-- get details of a specific content switching virtual server
-- get performance statistics for a specific lb virtual server
-- citrix
-- load balancing virtual servers
+- delete cs vserver
+- adc management
+- application security
+- bind a backend service to a load balancing virtual server
+- create a content switching virtual server
+- list lb vserver stats
+- create a load balancing virtual server
+- get a specific load balancing virtual server
+- single content switching virtual server
+- update a load balancing virtual server
+- bind a service to an lb virtual server
+- appliance configuration
+- network administration
+- service bindings for a load balancing virtual server
+- get service bindings for an lb virtual server
+- create cs vserver
 - bind service to lb vserver
-- content switching virtual servers
+- get lb vserver
 - update a content switching virtual server
+- get details of a specific load balancing virtual server
+- get statistics for an lb virtual server
+- content switching virtual servers
+- delete lb vserver
 - ssl offloading
+- citrix
+- list lb vservers
+- load balancing
+- update cs vserver
+- api gateway
+- list all load balancing virtual servers on the netscaler
+- create a new load balancing virtual server
+- update a load balancing virtual server configuration
+- get statistics for a specific content switching virtual server
 - statistics for a specific lb virtual server
+- list all load balancing virtual servers
+- get cs vserver stats
+- traffic management
+- list statistics for all cs virtual servers
+- get lb vserver service bindings
+- get ns config
+- save ns config
+- save the running netscaler configuration to persistent storage
+- web application firewall
+- list cs vservers
+- list all content switching virtual servers
+- unbind a service from a load balancing virtual server
+- list performance statistics for all lb virtual servers
+- load balancing virtual servers
+- update lb vserver
+- list statistics for all lb virtual servers
+- get a content switching virtual server
+- delete a content switching virtual server
 - netscaler
 - create lb vserver
-- get cs vserver
-- get lb vserver service bindings
-- network administration
-- get statistics for a specific content switching virtual server
-- adc management
-- content switching virtual server statistics
-- list statistics for all cs virtual servers
-- application security
-- appliance configuration
-- create a content switching virtual server
-- get lb vserver stats
-- load balancing
-- update a load balancing virtual server configuration
-- get service bindings for an lb virtual server
-- list statistics for all content switching virtual servers
-- bind a backend service to a load balancing virtual server
-- list all content switching virtual servers
-- traffic management
-- get statistics for an lb virtual server
-- get all service bindings for a load balancing virtual server
-- get details of a specific load balancing virtual server
-- bind a service to an lb virtual server
-- get lb vserver
-- delete lb vserver
-- create cs vserver
-- save ns config
-- list lb vservers
-- save running configuration to disk
-- save the running netscaler configuration to persistent storage
-- update lb vserver
 - get netscaler appliance configuration
-- list all load balancing virtual servers on the netscaler
-- get a content switching virtual server
-- get ns config
-- get netscaler configuration
-- list statistics for all lb virtual servers
-- service bindings for a load balancing virtual server
-- delete a load balancing virtual server
-- single load balancing virtual server
-- web application firewall
-- list all load balancing virtual servers
-- get a specific load balancing virtual server
-- update a load balancing virtual server
-- delete cs vserver
 - load balancing virtual server statistics
+- get lb vserver stats
+- content switching virtual server statistics
+- save running configuration to disk
+- delete a load balancing virtual server
 - unbind service from lb vserver
-- update cs vserver
-- create a load balancing virtual server
-- list lb vserver stats
-- list cs vservers
-- list performance statistics for all lb virtual servers
-- get cs vserver stats
-- create a new load balancing virtual server
+- get netscaler configuration
+- get details of a specific content switching virtual server
+- get all service bindings for a load balancing virtual server
+- application delivery controller
+- single load balancing virtual server
+- get performance statistics for a specific lb virtual server
+- list statistics for all content switching virtual servers
 slug: adc-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Citrix NetScaler ADC Management\"\n  description: \"Unified capability for managing Citrix NetScaler application delivery controllers, including load balancing, content switching, configuration management, and monitoring. Used by network administrators and platform engineers.\"\n  tags:\n    - Citrix\n    - NetScaler\n    - Load Balancing\n    - ADC Management\n    - Network Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NETSCALER_USERNAME: NETSCALER_USERNAME\n      NETSCALER_PASSWORD: NETSCALER_PASSWORD\n\ncapability:\n  consumes:\n    - import: nitro\n      location: ./shared/nitro.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adc-management-api\n      description: \"Unified REST API for Citrix NetScaler ADC management.\"\n      resources:\n        - path: /v1/lb-vservers\n          name: lb-vservers\n          description: \"Load\
+  \ balancing virtual servers\"\n          operations:\n            - method: GET\n              name: list-lb-vservers\n              description: \"List all load balancing virtual servers\"\n              call: \"nitro.list-lb-vservers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lb-vserver\n              description: \"Create a load balancing virtual server\"\n              call: \"nitro.create-lb-vserver\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lb-vservers/{name}\n          name: lb-vserver\n          description: \"Single load balancing virtual server\"\n          operations:\n            - method: GET\n              name: get-lb-vserver\n              description: \"Get a specific load balancing virtual server\"\n              call: \"nitro.get-lb-vserver\"\n              with:\n          \
+  \      name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-lb-vserver\n              description: \"Update a load balancing virtual server\"\n              call: \"nitro.update-lb-vserver\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-lb-vserver\n              description: \"Delete a load balancing virtual server\"\n              call: \"nitro.delete-lb-vserver\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lb-vservers/{name}/bindings\n          name: lb-vserver-bindings\n          description: \"Service bindings for a load balancing virtual server\"\n          operations:\n\
+  \            - method: GET\n              name: get-lb-vserver-service-bindings\n              description: \"Get service bindings for an LB virtual server\"\n              call: \"nitro.get-lb-vserver-service-bindings\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: bind-service-to-lb-vserver\n              description: \"Bind a service to an LB virtual server\"\n              call: \"nitro.bind-service-to-lb-vserver\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cs-vservers\n          name: cs-vservers\n          description: \"Content switching virtual servers\"\n          operations:\n            - method: GET\n              name: list-cs-vservers\n              description: \"List all content switching virtual servers\"\n              call: \"nitro.list-cs-vservers\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cs-vserver\n              description: \"Create a content switching virtual server\"\n              call: \"nitro.create-cs-vserver\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cs-vservers/{name}\n          name: cs-vserver\n          description: \"Single content switching virtual server\"\n          operations:\n            - method: GET\n              name: get-cs-vserver\n              description: \"Get a content switching virtual server\"\n              call: \"nitro.get-cs-vserver\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-cs-vserver\n              description: \"Update a content\
+  \ switching virtual server\"\n              call: \"nitro.update-cs-vserver\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-cs-vserver\n              description: \"Delete a content switching virtual server\"\n              call: \"nitro.delete-cs-vserver\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/config\n          name: config\n          description: \"Appliance configuration\"\n          operations:\n            - method: GET\n              name: get-ns-config\n              description: \"Get NetScaler configuration\"\n              call: \"nitro.get-ns-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method:\
+  \ POST\n              name: save-ns-config\n              description: \"Save running configuration to disk\"\n              call: \"nitro.save-ns-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stats/lb-vservers\n          name: lb-vserver-stats\n          description: \"Load balancing virtual server statistics\"\n          operations:\n            - method: GET\n              name: list-lb-vserver-stats\n              description: \"List statistics for all LB virtual servers\"\n              call: \"nitro.list-lb-vserver-stats\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stats/lb-vservers/{name}\n          name: lb-vserver-stats-detail\n          description: \"Statistics for a specific LB virtual server\"\n          operations:\n            - method: GET\n              name: get-lb-vserver-stats\n              description: \"\
+  Get statistics for an LB virtual server\"\n              call: \"nitro.get-lb-vserver-stats\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stats/cs-vservers\n          name: cs-vserver-stats\n          description: \"Content switching virtual server statistics\"\n          operations:\n            - method: GET\n              name: list-cs-vserver-stats\n              description: \"List statistics for all CS virtual servers\"\n              call: \"nitro.list-cs-vserver-stats\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: adc-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Citrix NetScaler ADC management.\"\n      tools:\n        - name: list-lb-vservers\n          description: \"List all load balancing virtual\
+  \ servers on the NetScaler\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.list-lb-vservers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-lb-vserver\n          description: \"Create a new load balancing virtual server\"\n          hints:\n            readOnly: false\n          call: \"nitro.create-lb-vserver\"\n          with:\n            vserver: \"tools.vserver\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-lb-vserver\n          description: \"Get details of a specific load balancing virtual server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-lb-vserver\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-lb-vserver\n          description:\
+  \ \"Update a load balancing virtual server configuration\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"nitro.update-lb-vserver\"\n          with:\n            name: \"tools.name\"\n            vserver: \"tools.vserver\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-lb-vserver\n          description: \"Delete a load balancing virtual server\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"nitro.delete-lb-vserver\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: bind-service-to-lb-vserver\n          description: \"Bind a backend service to a load balancing virtual server\"\n          hints:\n            readOnly: false\n          call: \"nitro.bind-service-to-lb-vserver\"\n          with:\n\
+  \            binding: \"tools.binding\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-lb-vserver-service-bindings\n          description: \"Get all service bindings for a load balancing virtual server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-lb-vserver-service-bindings\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: unbind-service-from-lb-vserver\n          description: \"Unbind a service from a load balancing virtual server\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"nitro.unbind-service-from-lb-vserver\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-cs-vservers\n          description:\
+  \ \"List all content switching virtual servers\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.list-cs-vservers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-cs-vserver\n          description: \"Create a content switching virtual server\"\n          hints:\n            readOnly: false\n          call: \"nitro.create-cs-vserver\"\n          with:\n            vserver: \"tools.vserver\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-cs-vserver\n          description: \"Get details of a specific content switching virtual server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-cs-vserver\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-cs-vserver\n\
+  \          description: \"Update a content switching virtual server\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"nitro.update-cs-vserver\"\n          with:\n            name: \"tools.name\"\n            vserver: \"tools.vserver\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-cs-vserver\n          description: \"Delete a content switching virtual server\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"nitro.delete-cs-vserver\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-ns-config\n          description: \"Get NetScaler appliance configuration\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-ns-config\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: save-ns-config\n          description: \"Save the running NetScaler configuration to persistent storage\"\n          hints:\n            readOnly: false\n          call: \"nitro.save-ns-config\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-lb-vserver-stats\n          description: \"List performance statistics for all LB virtual servers\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.list-lb-vserver-stats\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-lb-vserver-stats\n          description: \"Get performance statistics for a specific LB virtual server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-lb-vserver-stats\"\n          with:\n            name: \"tools.name\"\n     \
+  \     outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-cs-vserver-stats\n          description: \"List statistics for all content switching virtual servers\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.list-cs-vserver-stats\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-cs-vserver-stats\n          description: \"Get statistics for a specific content switching virtual server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"nitro.get-cs-vserver-stats\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/citrix-netscaler/refs/heads/main/capabilities/adc-management.yaml
 tags:
 - Citrix
 - NetScaler

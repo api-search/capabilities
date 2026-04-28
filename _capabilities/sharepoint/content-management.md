@@ -40,40 +40,49 @@ personas: []
 provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
-- create list
-- microsoft
-- download a file from sharepoint
-- get current user's sharepoint profile
-- get sharepoint site properties
-- search
-- list all sharepoint lists
-- get files in folder
-- intranet
-- content management
-- get web
-- delete list item
-- add an item to a sharepoint list
-- get list items
-- download file
 - get lists
-- update list item
-- update a sharepoint list item
-- sharepoint
-- get files
-- get items from a sharepoint list
-- list files in a sharepoint folder
-- collaboration
-- upload a file to sharepoint
 - enterprise content management
-- document management
-- get my user profile
-- create list item
+- list all sharepoint lists
+- get web
+- update a sharepoint list item
+- list files in a sharepoint folder
+- download a file from sharepoint
+- create list
+- update list item
+- delete list item
+- get items from a sharepoint list
 - create a new sharepoint list
-- search across all sharepoint content
+- search
 - search query
-- delete a sharepoint list item
 - upload file
+- get current user's sharepoint profile
+- get my user profile
+- upload a file to sharepoint
+- get sharepoint site properties
+- get list items
+- intranet
+- create list item
+- collaboration
+- sharepoint
+- delete a sharepoint list item
+- microsoft
+- document management
+- content management
+- add an item to a sharepoint list
+- download file
+- search across all sharepoint content
+- get files in folder
+- get files
 slug: content-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SharePoint Content Management\"\n  description: \"Unified workflow for managing SharePoint content including sites, lists, items, files, and search. Used by content managers, site admins, and collaboration teams.\"\n  tags:\n    - SharePoint\n    - Content Management\n    - Collaboration\n    - Document Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SHAREPOINT_ACCESS_TOKEN: SHAREPOINT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: sp-sites-lists\n      location: ./shared/sites-and-lists.yaml\n    - import: sp-files-search\n      location: ./shared/files-and-search.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sp-content-api\n      description: \"Unified REST API for SharePoint content management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          operations:\n            - method: GET\n          \
+  \    name: get-web\n              call: \"sp-sites-lists.get-web\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists\n          name: lists\n          operations:\n            - method: GET\n              name: get-lists\n              call: \"sp-sites-lists.get-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-list\n              call: \"sp-sites-lists.create-list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists/{title}/items\n          name: items\n          operations:\n            - method: GET\n              name: get-list-items\n              call: \"sp-sites-lists.get-list-items\"\n              with:\n                list_title: \"rest.title\"\n              outputParameters:\n                - type: object\n  \
+  \                mapping: \"$.\"\n            - method: POST\n              name: create-list-item\n              call: \"sp-sites-lists.create-list-item\"\n              with:\n                list_title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/files\n          name: files\n          operations:\n            - method: GET\n              name: get-files\n              call: \"sp-files-search.get-files-in-folder\"\n              with:\n                folder_url: \"rest.folder_url\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search\n          name: search\n          operations:\n            - method: GET\n              name: search\n              call: \"sp-files-search.search-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n\
+  \      namespace: sp-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SharePoint content management.\"\n      tools:\n        - name: get-web\n          description: \"Get SharePoint site properties\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-sites-lists.get-web\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-lists\n          description: \"List all SharePoint lists\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-sites-lists.get-lists\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-list\n          description: \"Create a new SharePoint list\"\n          hints: {readOnly: false, idempotent: false}\n          call: \"sp-sites-lists.create-list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-list-items\n\
+  \          description: \"Get items from a SharePoint list\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-sites-lists.get-list-items\"\n          with:\n            list_title: \"tools.list_title\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-list-item\n          description: \"Add an item to a SharePoint list\"\n          hints: {readOnly: false, idempotent: false}\n          call: \"sp-sites-lists.create-list-item\"\n          with:\n            list_title: \"tools.list_title\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-list-item\n          description: \"Update a SharePoint list item\"\n          hints: {readOnly: false, idempotent: true}\n          call: \"sp-sites-lists.update-list-item\"\n          with:\n            list_title: \"tools.list_title\"\n            item_id: \"tools.item_id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: delete-list-item\n          description: \"Delete a SharePoint list item\"\n          hints: {readOnly: false, destructive: true, idempotent: true}\n          call: \"sp-sites-lists.delete-list-item\"\n          with:\n            list_title: \"tools.list_title\"\n            item_id: \"tools.item_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-files-in-folder\n          description: \"List files in a SharePoint folder\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-files-search.get-files-in-folder\"\n          with:\n            folder_url: \"tools.folder_url\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: upload-file\n          description: \"Upload a file to SharePoint\"\n          hints: {readOnly: false, idempotent: false}\n          call: \"sp-files-search.upload-file\"\
+  \n          with:\n            folder_url: \"tools.folder_url\"\n            file_name: \"tools.file_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: download-file\n          description: \"Download a file from SharePoint\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-files-search.download-file\"\n          with:\n            file_url: \"tools.file_url\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-query\n          description: \"Search across all SharePoint content\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"sp-files-search.search-query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-my-user-profile\n          description: \"Get current user's SharePoint profile\"\n          hints: {readOnly: true, idempotent: true}\n          call: \"\
+  sp-files-search.get-my-user-profile\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/sharepoint/refs/heads/main/capabilities/content-management.yaml
 tags:
 - SharePoint
 - Content Management

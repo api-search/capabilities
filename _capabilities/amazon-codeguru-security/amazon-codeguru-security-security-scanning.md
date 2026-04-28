@@ -11,36 +11,41 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- devsecops
-- code analysis
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
+- get findings
+- developer tools
+- create a new security scan
+- get security metrics summary
+- get metrics summary
+- developer persona.
+- list findings across all scans in the account
 - unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
-- create scan
 - amazon
+- sast
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
+- aws
+- list findings by account
+- create scan
+- Developer
+- list scans
+- security engineer persona.
 - get security findings from a scan
 - get details about multiple findings
-- aws
-- get details about a security scan
-- sast
-- list scans
-- list findings across all scans in the account
-- developer tools
-- batch get findings
 - Security Engineer
-- create a new security scan
-- devsecops engineer persona.
-- get scan
-- security engineer persona.
-- get findings
-- Developer
-- get metrics summary
-- list security scans
 - DevSecOps Engineer
-- developer persona.
-- list findings by account
-- get security metrics summary
+- devsecops engineer persona.
 - security
+- code analysis
+- devsecops
+- get details about a security scan
+- list security scans
+- get scan
+- batch get findings
 slug: amazon-codeguru-security-security-scanning
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Security Application Security Scanning\n  description: Unified workflow for security and DevOps teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation using Amazon CodeGuru Security.\n  tags:\n  - Amazon\n  - AWS\n  - Security\n  - SAST\n  - Code Analysis\n  - DevSecOps\n  - Developer Tools\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codegurusecurity\n    location: ./shared/codegurusecurity.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codegurusecurity-security-scanning-api\n    description: Unified REST API for Application Security Scanning.\n    resources:\n    - path: /v1/createScan\n      name: create-scan\n      description: Create a new security\
+  \ scan\n    - path: /v1/getScan\n      name: get-scan\n      description: Get details about a security scan\n    - path: /v1/listScans\n      name: list-scans\n      description: List security scans\n    - path: /v1/getFindings\n      name: get-findings\n      description: Get security findings from a scan\n  - type: mcp\n    port: 9090\n    namespace: codegurusecurity-security-scanning-mcp\n    transport: http\n    description: MCP server for AI-assisted Application Security Scanning.\n    tools:\n    - name: create-scan\n      description: Create a new security scan\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codegurusecurity.createScan\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-scan\n      description: Get details about a security scan\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.getScan\n      outputParameters:\n      - type: object\n        mapping: $.\n    -\
+  \ name: list-scans\n      description: List security scans\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.listScans\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-findings\n      description: Get security findings from a scan\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.getFindings\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-get-findings\n      description: Get details about multiple findings\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.batchGetFindings\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-metrics-summary\n      description: Get security metrics summary\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.getMetricsSummary\n      outputParameters:\n      - type: object\n        mapping:\
+  \ $.\n    - name: list-findings-by-account\n      description: List findings across all scans in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.listFindingsByAccount\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codeguru-security/refs/heads/main/capabilities/amazon-codeguru-security-security-scanning.yaml
 tags:
 - Amazon
 - AWS

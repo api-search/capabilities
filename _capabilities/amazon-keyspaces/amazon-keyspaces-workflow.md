@@ -10,32 +10,36 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
+- returns information about the table.
+- database
+- tables create table
+- returns a list of keyspaces.
+- amazon keyspaces
+- tables list tables
+- returns the name and the amazon resource name (arn) of a keyspace.
+- manages resources and configurations
+- the createtable operation adds a new table to the specified keyspace.
+- aws
+- keyspaces get keyspace
+- creates a new keyspace.
+- managed database
+- Developer
+- keyspaces create keyspace
 - workflow
 - keyspaces list keyspaces
-- nosql
-- wide column
-- amazon keyspaces
-- keyspaces create keyspace
-- returns the name and the amazon resource name (arn) of a keyspace.
-- returns information about the table.
-- unified workflow for amazon keyspaces resource management
-- aws
-- Administrator
-- managed database
-- tables list tables
-- creates a new keyspace.
-- returns a list of keyspaces.
-- tables create table
-- database
-- the createtable operation adds a new table to the specified keyspace.
-- Developer
-- tables get table
-- cassandra
-- manages resources and configurations
-- integrates api into applications
-- keyspaces get keyspace
 - returns a list of tables for a specified keyspace.
+- wide column
+- tables get table
+- nosql
+- cassandra
+- integrates api into applications
+- unified workflow for amazon keyspaces resource management
+- Administrator
 slug: amazon-keyspaces-workflow
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Keyspaces Workflow\n  description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.\n  tags:\n  - Amazon Keyspaces\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: keyspaces\n    location: ./shared/keyspaces.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: keyspaces-api\n    description: REST API for Amazon Keyspaces workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: keyspaces-mcp\n    transport: http\n    description: MCP server for Amazon Keyspaces.\n    tools:\n    - name: keyspaces-create-keyspace\n      description: Creates a new keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createkeyspace\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: keyspaces-list-keyspaces\n      description: Returns a list of keyspaces.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.listkeyspaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: keyspaces-get-keyspace\n      description: Returns the name and the Amazon Resource Name (ARN) of a keyspace.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.getkeyspace\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-create-table\n      description: The CreateTable operation adds a new table to the specified keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createtable\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-list-tables\n      description: Returns a list of tables for a specified keyspace.\n      hints:\n\
+  \        readOnly: true\n        idempotent: true\n      call: keyspaces.listtables\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-get-table\n      description: Returns information about the table.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.gettable\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-keyspaces/refs/heads/main/capabilities/amazon-keyspaces-workflow.yaml
 tags:
 - Amazon Keyspaces
 - AWS

@@ -58,93 +58,110 @@ personas: []
 provider_name: Ambassador
 provider_slug: ambassador
 search_terms:
-- delete a route mapping.
-- list tls contexts
-- get host
-- create a new tlscontext for tls configuration.
-- list hosts
-- mocks
-- ambassador
-- api development
-- rate limiting configurations.
-- create a new route mapping for a backend service.
-- gateway readiness check.
-- retrieve a specific route mapping by name.
-- list all tlscontext resources.
-- delete rate limit
-- list all module resources for global gateway config.
-- create a new route mapping.
-- update tls context
-- list all ratelimit resources.
-- delete route
 - tls certificate contexts.
-- list all route mappings in a kubernetes namespace.
-- list all rate limits.
-- update an existing host resource.
-- create host
-- delete a ratelimit resource.
-- retrieve a specific tlscontext by name.
-- list mappings
-- retrieve diagnostic overview.
-- individual route mapping.
-- update host
-- update route
-- create a new ratelimit resource.
-- create a new host.
-- retrieve diagnostic overview of the ambassador gateway instance.
-- ingress
-- check gateway liveness.
-- retrieve a specific ratelimit by name.
-- check gateway readiness.
-- list all route mappings.
-- list modules
-- platform
-- check if the ambassador gateway is ready to serve traffic.
-- update an existing route mapping.
-- retrieve a specific host by name.
-- update mapping
-- create tls context
-- gateways
-- create a new host resource for tls termination.
-- get a specific route mapping.
-- check alive
-- get mapping
-- api route mappings.
-- list all host resources for tls and hostname routing.
-- list routes
-- get rate limit
-- delete mapping
-- gateway health and diagnostics.
-- check ready
 - delete a tlscontext resource.
-- update a module resource.
-- get diagnostics
-- list rate limits
-- update module
-- update rate limit
-- create route
-- mock servers
+- list all tlscontext resources.
+- create a new host resource for tls termination.
+- update an existing route mapping.
 - api gateway
-- get tls context
-- kubernetes
-- retrieve a specific module by name.
+- check ready
+- update route
+- individual route mapping.
+- check gateway liveness.
+- check if the ambassador gateway is ready to serve traffic.
+- update a module resource.
 - get route
-- create rate limit
-- tls hosts and hostname routing.
-- check if the ambassador gateway process is alive.
-- gateway liveness check.
-- list all tls contexts.
-- delete a host resource.
-- update a route mapping.
-- create mapping
-- delete tls context
-- testing
-- delete host
+- list all route mappings in a kubernetes namespace.
+- api development
+- get mapping
+- list modules
 - update an existing tlscontext.
-- list all hosts.
+- delete a route mapping.
+- update host
+- gateway health and diagnostics.
+- update module
+- list all host resources for tls and hostname routing.
+- retrieve a specific host by name.
+- api route mappings.
+- list all module resources for global gateway config.
+- list all route mappings.
+- create a new route mapping for a backend service.
+- create route
+- update tls context
+- rate limiting configurations.
+- list all ratelimit resources.
 - update an existing ratelimit.
+- create a new route mapping.
+- delete route
+- get rate limit
+- retrieve diagnostic overview.
+- list mappings
+- gateways
+- create a new host.
+- check gateway readiness.
+- retrieve a specific module by name.
+- mock servers
+- platform
+- list tls contexts
+- delete a host resource.
+- testing
+- mocks
+- check alive
+- kubernetes
+- update a route mapping.
+- create rate limit
+- update an existing host resource.
+- gateway liveness check.
 - get module
+- list all rate limits.
+- delete tls context
+- get host
+- delete mapping
+- get a specific route mapping.
+- delete rate limit
+- retrieve a specific ratelimit by name.
+- gateway readiness check.
+- check if the ambassador gateway process is alive.
+- get diagnostics
+- list all tls contexts.
+- get tls context
+- create a new ratelimit resource.
+- update mapping
+- update rate limit
+- delete host
+- retrieve a specific tlscontext by name.
+- create tls context
+- retrieve a specific route mapping by name.
+- list hosts
+- list routes
+- ambassador
+- create a new tlscontext for tls configuration.
+- retrieve diagnostic overview of the ambassador gateway instance.
+- tls hosts and hostname routing.
+- list all hosts.
+- create mapping
+- create host
+- list rate limits
+- ingress
+- delete a ratelimit resource.
 slug: gateway-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Ambassador Gateway Management\"\n  description: \"Unified gateway management workflow for platform engineers and DevOps teams to configure API routing, TLS termination, rate limiting, and health monitoring across Ambassador Edge Stack instances.\"\n  tags:\n    - Ambassador\n    - API Gateway\n    - Kubernetes\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMBASSADOR_API_TOKEN: AMBASSADOR_API_TOKEN\n\ncapability:\n  consumes:\n    - import: edge-stack\n      location: ./shared/edge-stack.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gateway-management-api\n      description: \"Unified REST API for managing Ambassador Edge Stack gateway resources.\"\n      resources:\n        - path: /v1/diagnostics\n          name: diagnostics\n          description: \"Gateway health and diagnostics.\"\n          operations:\n            - method: GET\n         \
+  \     name: get-diagnostics\n              description: \"Retrieve diagnostic overview.\"\n              call: \"edge-stack.get-diagnostics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health/ready\n          name: readiness\n          description: \"Gateway readiness check.\"\n          operations:\n            - method: GET\n              name: check-ready\n              description: \"Check gateway readiness.\"\n              call: \"edge-stack.check-ready\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health/alive\n          name: liveness\n          description: \"Gateway liveness check.\"\n          operations:\n            - method: GET\n              name: check-alive\n              description: \"Check gateway liveness.\"\n              call: \"edge-stack.check-alive\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/routes\n          name: routes\n          description: \"API route mappings.\"\n          operations:\n            - method: GET\n              name: list-routes\n              description: \"List all route mappings.\"\n              call: \"edge-stack.list-mappings\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-route\n              description: \"Create a new route mapping.\"\n              call: \"edge-stack.create-mapping\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/routes/{name}\n          name: route\n          description: \"Individual route mapping.\"\n          operations:\n            - method:\
+  \ GET\n              name: get-route\n              description: \"Get a specific route mapping.\"\n              call: \"edge-stack.get-mapping\"\n              with:\n                namespace: \"rest.namespace\"\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-route\n              description: \"Update a route mapping.\"\n              call: \"edge-stack.update-mapping\"\n              with:\n                namespace: \"rest.namespace\"\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-route\n              description: \"Delete a route mapping.\"\n              call: \"edge-stack.delete-mapping\"\n              with:\n                namespace: \"rest.namespace\"\n                name: \"rest.name\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts\n          name: hosts\n          description: \"TLS hosts and hostname routing.\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List all hosts.\"\n              call: \"edge-stack.list-hosts\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-host\n              description: \"Create a new host.\"\n              call: \"edge-stack.create-host\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tls-contexts\n          name: tls-contexts\n          description: \"TLS certificate contexts.\"\
+  \n          operations:\n            - method: GET\n              name: list-tls-contexts\n              description: \"List all TLS contexts.\"\n              call: \"edge-stack.list-tls-contexts\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/rate-limits\n          name: rate-limits\n          description: \"Rate limiting configurations.\"\n          operations:\n            - method: GET\n              name: list-rate-limits\n              description: \"List all rate limits.\"\n              call: \"edge-stack.list-rate-limits\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: gateway-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\
+  \ Ambassador Edge Stack gateway management.\"\n      tools:\n        - name: get-diagnostics\n          description: \"Retrieve diagnostic overview of the Ambassador gateway instance.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"edge-stack.get-diagnostics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: check-ready\n          description: \"Check if the Ambassador gateway is ready to serve traffic.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.check-ready\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: check-alive\n          description: \"Check if the Ambassador gateway process is alive.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.check-alive\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mappings\n\
+  \          description: \"List all route mappings in a Kubernetes namespace.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.list-mappings\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-mapping\n          description: \"Create a new route mapping for a backend service.\"\n          hints:\n            readOnly: false\n          call: \"edge-stack.create-mapping\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-mapping\n          description: \"Retrieve a specific route mapping by name.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.get-mapping\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n           \
+  \ - type: object\n              mapping: \"$.\"\n        - name: update-mapping\n          description: \"Update an existing route mapping.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"edge-stack.update-mapping\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-mapping\n          description: \"Delete a route mapping.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"edge-stack.delete-mapping\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-hosts\n          description: \"List all Host resources for TLS and hostname routing.\"\n          hints:\n            readOnly: true\n\
+  \          call: \"edge-stack.list-hosts\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-host\n          description: \"Create a new Host resource for TLS termination.\"\n          hints:\n            readOnly: false\n          call: \"edge-stack.create-host\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-host\n          description: \"Retrieve a specific Host by name.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.get-host\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-host\n          description: \"Update an existing Host resource.\"\n          hints:\n\
+  \            readOnly: false\n            idempotent: true\n          call: \"edge-stack.update-host\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-host\n          description: \"Delete a Host resource.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"edge-stack.delete-host\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tls-contexts\n          description: \"List all TLSContext resources.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.list-tls-contexts\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: create-tls-context\n          description: \"Create a new TLSContext for TLS configuration.\"\n          hints:\n            readOnly: false\n          call: \"edge-stack.create-tls-context\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-tls-context\n          description: \"Retrieve a specific TLSContext by name.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.get-tls-context\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-tls-context\n          description: \"Update an existing TLSContext.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"edge-stack.update-tls-context\"\n          with:\n            namespace:\
+  \ \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-tls-context\n          description: \"Delete a TLSContext resource.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"edge-stack.delete-tls-context\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-rate-limits\n          description: \"List all RateLimit resources.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.list-rate-limits\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-rate-limit\n          description: \"Create a new RateLimit resource.\"\n          hints:\n\
+  \            readOnly: false\n          call: \"edge-stack.create-rate-limit\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-rate-limit\n          description: \"Retrieve a specific RateLimit by name.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.get-rate-limit\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-rate-limit\n          description: \"Update an existing RateLimit.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"edge-stack.update-rate-limit\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n        - name: delete-rate-limit\n          description: \"Delete a RateLimit resource.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"edge-stack.delete-rate-limit\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-modules\n          description: \"List all Module resources for global gateway config.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.list-modules\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-module\n          description: \"Retrieve a specific Module by name.\"\n          hints:\n            readOnly: true\n          call: \"edge-stack.get-module\"\n          with:\n            namespace: \"tools.namespace\"\
+  \n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-module\n          description: \"Update a Module resource.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"edge-stack.update-module\"\n          with:\n            namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/ambassador/refs/heads/main/capabilities/gateway-management.yaml
 tags:
 - Ambassador
 - API Gateway

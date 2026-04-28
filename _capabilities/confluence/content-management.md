@@ -103,101 +103,124 @@ personas: []
 provider_name: Confluence
 provider_slug: confluence
 search_terms:
-- list all pages with optional filtering
-- create blog post
-- individual space operations
-- manage comments
-- get a specific confluence space by its id.
-- get all labels applied to a specific page.
-- individual page operations
-- create inline comment
-- list all blog posts
-- manage blog posts
-- list attachments for a page
-- delete a comment
-- create a footer comment on a page or blog post.
-- get a specific attachment by its id.
+- list all confluence pages with optional filtering by space, status, and title.
 - get a specific label by its id.
-- create a new blog post
-- documentation
-- delete comment
-- label information
-- update a page
-- knowledge base
-- get a comment by id
-- list page attachments
-- update page
-- update comment
-- pages within a space
-- get space
-- manage confluence pages
-- create a new confluence page in a space.
-- update a blog post
-- get a space by id
-- get a page by id
-- list footer comments
-- list all confluence spaces.
-- get label
-- manage attachments
-- list spaces
-- get an attachment by id
-- page label management
-- get attachment
-- get comment
-- get page labels
-- delete a blog post
-- delete a blog post by id.
-- create a new page
-- manage confluence spaces
-- update an existing blog post.
-- list pages
-- list child pages
-- create footer comment
-- page comment management
-- delete a page
-- get a specific comment by its id.
-- list inline comments on a specific page.
-- update a comment
-- create page
-- confluence
 - get a label by id
-- content management
-- get labels for a page
+- page comment management
+- create footer comment
+- individual blog post operations
+- list pages
+- update a blog post
+- list footer comments for a page
+- get a specific confluence space by its id.
+- get page
+- child page navigation
+- delete a page
+- delete a comment by id.
 - delete an attachment by id.
+- update a comment
+- get a space by id
+- delete a comment
+- update an existing blog post.
+- update an existing confluence page title and body.
+- get a specific confluence page by its id.
+- update blog post
+- manage confluence spaces
+- individual space operations
 - list footer comments on a specific page.
+- delete blog post
+- confluence
+- list pages in a space
+- list all blog posts
+- get comment
+- create blog post
+- list child pages of a specific page for navigating content hierarchies.
+- individual page operations
+- update an existing comment.
 - create an inline comment on a specific text selection in a page.
-- create a new confluence blog post.
+- get a comment by id
+- list pages in space
+- manage comments
+- create a footer comment on a page or blog post.
+- list all blog posts with optional space filtering.
+- get a specific blog post by its id.
+- create page
+- manage attachments
+- update comment
+- get a specific attachment by its id.
+- list all file attachments on a specific page.
+- list page attachments
+- list footer comments
+- delete a blog post
 - list all pages belonging to a specific space.
+- list all pages with optional filtering
+- create a new confluence blog post.
+- list all confluence spaces.
+- list inline comments
+- manage confluence pages
+- knowledge base
+- get all labels applied to a specific page.
+- delete comment
+- list blog posts
+- delete an attachment
+- get space
+- pages within a space
+- list child pages
+- list attachments for a page
+- get labels for a page
+- create inline comment
+- list spaces
+- wiki
+- create a new blog post
+- delete page
+- get attachment
 - delete attachment
+- documentation
 - get blog post
 - page attachment management
-- list inline comments
-- get a specific blog post by its id.
-- update an existing comment.
-- delete page
-- list pages in space
-- delete a confluence page by id.
-- list all file attachments on a specific page.
+- get page labels
+- page label management
+- manage blog posts
 - list all spaces
-- list footer comments for a page
-- list child pages of a specific page for navigating content hierarchies.
-- list all confluence pages with optional filtering by space, status, and title.
-- get page
+- get an attachment by id
+- create a new confluence page in a space.
+- update a page
+- delete a blog post by id.
+- list inline comments on a specific page.
+- delete a confluence page by id.
+- get a page by id
 - get a blog post by id
-- individual blog post operations
-- update blog post
-- child page navigation
-- list blog posts
-- wiki
-- update an existing confluence page title and body.
+- update page
+- get a specific comment by its id.
 - collaboration
-- list pages in a space
-- list all blog posts with optional space filtering.
-- delete a comment by id.
-- get a specific confluence page by its id.
-- delete blog post
-- delete an attachment
+- content management
+- label information
+- create a new page
+- get label
 slug: content-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Confluence Content Management\"\n  description: \"Unified workflow for managing Confluence content including pages, blog posts, comments, attachments, spaces, and labels. Used by content authors, knowledge managers, and platform administrators.\"\n  tags:\n    - Confluence\n    - Content Management\n    - Collaboration\n    - Wiki\n    - Knowledge Base\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONFLUENCE_API_TOKEN: CONFLUENCE_API_TOKEN\n      CONFLUENCE_EMAIL: CONFLUENCE_EMAIL\n\ncapability:\n  consumes:\n    - import: confluence-cloud-v2\n      location: ./shared/cloud-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: confluence-content-api\n      description: \"Unified REST API for Confluence content management workflows.\"\n      resources:\n        - path: /v1/pages\n          name: pages\n          description: \"Manage Confluence pages\"\
+  \n          operations:\n            - method: GET\n              name: list-pages\n              description: \"List all pages with optional filtering\"\n              call: \"confluence-cloud-v2.get-pages\"\n              with:\n                space-id: \"rest.space_id\"\n                status: \"rest.status\"\n                title: \"rest.title\"\n                cursor: \"rest.cursor\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-page\n              description: \"Create a new page\"\n              call: \"confluence-cloud-v2.create-page\"\n              with:\n                space_id: \"rest.space_id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}\n          name: page-by-id\n\
+  \          description: \"Individual page operations\"\n          operations:\n            - method: GET\n              name: get-page\n              description: \"Get a page by ID\"\n              call: \"confluence-cloud-v2.get-page-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-page\n              description: \"Update a page\"\n              call: \"confluence-cloud-v2.update-page\"\n              with:\n                id: \"rest.id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n                version: \"rest.version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-page\n              description: \"Delete a page\"\n              call: \"confluence-cloud-v2.delete-page\"\n\
+  \              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}/children\n          name: child-pages\n          description: \"Child page navigation\"\n          operations:\n            - method: GET\n              name: list-child-pages\n              description: \"List child pages\"\n              call: \"confluence-cloud-v2.get-child-pages\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}/labels\n          name: page-labels\n          description: \"Page label management\"\n          operations:\n            - method: GET\n              name: get-page-labels\n              description: \"Get labels for a page\"\n              call: \"confluence-cloud-v2.get-page-labels\"\n              with:\n                id: \"rest.id\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}/attachments\n          name: page-attachments\n          description: \"Page attachment management\"\n          operations:\n            - method: GET\n              name: list-page-attachments\n              description: \"List attachments for a page\"\n              call: \"confluence-cloud-v2.get-page-attachments\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}/comments\n          name: page-comments\n          description: \"Page comment management\"\n          operations:\n            - method: GET\n              name: list-footer-comments\n              description: \"List footer comments for a page\"\n              call: \"confluence-cloud-v2.get-footer-comments\"\n              with:\n                id: \"rest.id\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spaces\n          name: spaces\n          description: \"Manage Confluence spaces\"\n          operations:\n            - method: GET\n              name: list-spaces\n              description: \"List all spaces\"\n              call: \"confluence-cloud-v2.get-spaces\"\n              with:\n                cursor: \"rest.cursor\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spaces/{id}\n          name: space-by-id\n          description: \"Individual space operations\"\n          operations:\n            - method: GET\n              name: get-space\n              description: \"Get a space by ID\"\n              call: \"confluence-cloud-v2.get-space-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n       \
+  \         - type: object\n                  mapping: \"$.\"\n        - path: /v1/spaces/{id}/pages\n          name: space-pages\n          description: \"Pages within a space\"\n          operations:\n            - method: GET\n              name: list-pages-in-space\n              description: \"List pages in a space\"\n              call: \"confluence-cloud-v2.get-pages-in-space\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blog-posts\n          name: blog-posts\n          description: \"Manage blog posts\"\n          operations:\n            - method: GET\n              name: list-blog-posts\n              description: \"List all blog posts\"\n              call: \"confluence-cloud-v2.get-blog-posts\"\n              with:\n                space-id: \"rest.space_id\"\n                cursor: \"rest.cursor\"\n                limit: \"rest.limit\"\n       \
+  \       outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-blog-post\n              description: \"Create a new blog post\"\n              call: \"confluence-cloud-v2.create-blog-post\"\n              with:\n                space_id: \"rest.space_id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blog-posts/{id}\n          name: blog-post-by-id\n          description: \"Individual blog post operations\"\n          operations:\n            - method: GET\n              name: get-blog-post\n              description: \"Get a blog post by ID\"\n              call: \"confluence-cloud-v2.get-blog-post-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n            - method: PUT\n              name: update-blog-post\n              description: \"Update a blog post\"\n              call: \"confluence-cloud-v2.update-blog-post\"\n              with:\n                id: \"rest.id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n                version: \"rest.version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-blog-post\n              description: \"Delete a blog post\"\n              call: \"confluence-cloud-v2.delete-blog-post\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/comments/{id}\n          name: comments\n          description: \"Manage comments\"\n          operations:\n            - method: GET\n              name: get-comment\n              description:\
+  \ \"Get a comment by ID\"\n              call: \"confluence-cloud-v2.get-comment-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-comment\n              description: \"Update a comment\"\n              call: \"confluence-cloud-v2.update-comment\"\n              with:\n                id: \"rest.id\"\n                body: \"rest.body\"\n                version: \"rest.version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-comment\n              description: \"Delete a comment\"\n              call: \"confluence-cloud-v2.delete-comment\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/attachments/{id}\n\
+  \          name: attachments\n          description: \"Manage attachments\"\n          operations:\n            - method: GET\n              name: get-attachment\n              description: \"Get an attachment by ID\"\n              call: \"confluence-cloud-v2.get-attachment-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-attachment\n              description: \"Delete an attachment\"\n              call: \"confluence-cloud-v2.delete-attachment\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/labels/{id}\n          name: labels\n          description: \"Label information\"\n          operations:\n            - method: GET\n              name: get-label\n              description: \"Get a label\
+  \ by ID\"\n              call: \"confluence-cloud-v2.get-label-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: confluence-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Confluence content management.\"\n      tools:\n        - name: list-pages\n          description: \"List all Confluence pages with optional filtering by space, status, and title.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-pages\"\n          with:\n            space-id: \"tools.space_id\"\n            status: \"tools.status\"\n            title: \"tools.title\"\n            cursor: \"tools.cursor\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-page\n\
+  \          description: \"Create a new Confluence page in a space.\"\n          hints:\n            readOnly: false\n          call: \"confluence-cloud-v2.create-page\"\n          with:\n            space_id: \"tools.space_id\"\n            title: \"tools.title\"\n            body: \"tools.body\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-page\n          description: \"Get a specific Confluence page by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-page-by-id\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-page\n          description: \"Update an existing Confluence page title and body.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"confluence-cloud-v2.update-page\"\n          with:\n\
+  \            id: \"tools.id\"\n            title: \"tools.title\"\n            body: \"tools.body\"\n            version: \"tools.version\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-page\n          description: \"Delete a Confluence page by ID.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"confluence-cloud-v2.delete-page\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-child-pages\n          description: \"List child pages of a specific page for navigating content hierarchies.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-child-pages\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: get-page-labels\n          description: \"Get all labels applied to a specific page.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-page-labels\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-page-attachments\n          description: \"List all file attachments on a specific page.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-page-attachments\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-spaces\n          description: \"List all Confluence spaces.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-spaces\"\n          with:\n    \
+  \        cursor: \"tools.cursor\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-space\n          description: \"Get a specific Confluence space by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-space-by-id\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-pages-in-space\n          description: \"List all pages belonging to a specific space.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-pages-in-space\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-blog-posts\n          description: \"List all blog posts with optional space\
+  \ filtering.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-blog-posts\"\n          with:\n            space-id: \"tools.space_id\"\n            cursor: \"tools.cursor\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-blog-post\n          description: \"Create a new Confluence blog post.\"\n          hints:\n            readOnly: false\n          call: \"confluence-cloud-v2.create-blog-post\"\n          with:\n            space_id: \"tools.space_id\"\n            title: \"tools.title\"\n            body: \"tools.body\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-blog-post\n          description: \"Get a specific blog post by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-blog-post-by-id\"\
+  \n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-blog-post\n          description: \"Update an existing blog post.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"confluence-cloud-v2.update-blog-post\"\n          with:\n            id: \"tools.id\"\n            title: \"tools.title\"\n            body: \"tools.body\"\n            version: \"tools.version\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-blog-post\n          description: \"Delete a blog post by ID.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"confluence-cloud-v2.delete-blog-post\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n \
+  \       - name: get-comment\n          description: \"Get a specific comment by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-comment-by-id\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-footer-comment\n          description: \"Create a footer comment on a page or blog post.\"\n          hints:\n            readOnly: false\n          call: \"confluence-cloud-v2.create-footer-comment\"\n          with:\n            page_id: \"tools.page_id\"\n            body: \"tools.body\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-inline-comment\n          description: \"Create an inline comment on a specific text selection in a page.\"\n          hints:\n            readOnly: false\n          call: \"confluence-cloud-v2.create-inline-comment\"\
+  \n          with:\n            page_id: \"tools.page_id\"\n            body: \"tools.body\"\n            properties: \"tools.properties\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-comment\n          description: \"Update an existing comment.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"confluence-cloud-v2.update-comment\"\n          with:\n            id: \"tools.id\"\n            body: \"tools.body\"\n            version: \"tools.version\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-comment\n          description: \"Delete a comment by ID.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"confluence-cloud-v2.delete-comment\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: list-footer-comments\n          description: \"List footer comments on a specific page.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-footer-comments\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-inline-comments\n          description: \"List inline comments on a specific page.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-inline-comments\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-attachment\n          description: \"Get a specific attachment by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-attachment-by-id\"\
+  \n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-attachment\n          description: \"Delete an attachment by ID.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"confluence-cloud-v2.delete-attachment\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-label\n          description: \"Get a specific label by its ID.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"confluence-cloud-v2.get-label-by-id\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/confluence/refs/heads/main/capabilities/content-management.yaml
 tags:
 - Confluence
 - Content Management

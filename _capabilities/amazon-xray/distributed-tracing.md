@@ -31,43 +31,50 @@ personas: []
 provider_name: Amazon X-Ray
 provider_slug: amazon-xray
 search_terms:
-- trace filtering groups.
-- get all trace sampling rules to understand data collection configuration.
-- get the service map.
-- root cause analysis using distributed trace data
-- get service graph
-- application performance insights.
-- debugging
-- get insight summaries.
-- observability
-- retrieve complete trace documents for specific trace ids.
-- aws
-- get summaries of x-ray insights identifying anomalies and performance issues.
-- Site Reliability Engineer
 - get trace summaries for a time range.
-- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
-- service dependency visualization.
-- application tracing and service map visualization
-- get trace groups.
-- batch get traces
-- get trace summaries
-- get the service map showing inter-service dependencies and request flow.
-- monitors service health and performance using x-ray.
-- get summaries of distributed traces for a specified time range.
-- monitoring
-- get sampling rules
-- latency analysis and bottleneck identification
-- get insight summaries
-- Developer
-- get x-ray groups used to filter and organize traces.
-- get groups
-- trace sampling configuration.
 - application performance
-- get sampling rules.
+- get groups
+- monitoring
+- monitors service health and performance using x-ray.
+- get trace groups.
+- get the service map showing inter-service dependencies and request flow.
+- application tracing and service map visualization
 - trace data access and analysis.
-- distributed tracing
+- observability
+- get summaries of distributed traces for a specified time range.
+- get sampling rules
+- get trace summaries
 - analyzes traces to debug application issues.
+- aws
+- get insight summaries.
+- get sampling rules.
+- application performance insights.
+- service dependency visualization.
+- Developer
+- get the service map.
+- trace filtering groups.
+- batch get traces
+- get insight summaries
+- root cause analysis using distributed trace data
+- debugging
+- get service graph
+- Site Reliability Engineer
+- get summaries of x-ray insights identifying anomalies and performance issues.
+- trace sampling configuration.
+- get x-ray groups used to filter and organize traces.
+- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
+- distributed tracing
+- retrieve complete trace documents for specific trace ids.
+- latency analysis and bottleneck identification
+- get all trace sampling rules to understand data collection configuration.
 slug: distributed-tracing
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon X-Ray Distributed Tracing\"\n  description: >-\n    Unified workflow for developers and operations teams to analyze distributed\n    traces, visualize service maps, manage sampling rules, and investigate\n    application performance insights using Amazon X-Ray.\n  tags:\n    - AWS\n    - Distributed Tracing\n    - Observability\n    - Application Performance\n    - Debugging\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: xray\n      location: ./shared/xray.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributed-tracing-api\n      description: \"Unified REST API for Amazon X-Ray distributed tracing analysis.\"\n      resources:\n        - path: /v1/traces\n          name: traces\n\
+  \          description: \"Trace data access and analysis.\"\n          operations:\n            - method: GET\n              name: get-trace-summaries\n              description: \"Get trace summaries for a time range.\"\n              call: \"xray.get-trace-summaries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-map\n          name: service-map\n          description: \"Service dependency visualization.\"\n          operations:\n            - method: GET\n              name: get-service-graph\n              description: \"Get the service map.\"\n              call: \"xray.get-service-graph\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sampling-rules\n          name: sampling-rules\n          description: \"Trace sampling configuration.\"\n          operations:\n            - method: GET\n              name: get-sampling-rules\n\
+  \              description: \"Get sampling rules.\"\n              call: \"xray.get-sampling-rules\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Trace filtering groups.\"\n          operations:\n            - method: GET\n              name: get-groups\n              description: \"Get trace groups.\"\n              call: \"xray.get-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/insights\n          name: insights\n          description: \"Application performance insights.\"\n          operations:\n            - method: GET\n              name: get-insight-summaries\n              description: \"Get insight summaries.\"\n              call: \"xray.get-insight-summaries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n\
+  \    - type: mcp\n      port: 9090\n      namespace: distributed-tracing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon X-Ray distributed tracing analysis.\"\n      tools:\n        - name: get-trace-summaries\n          description: \"Get summaries of distributed traces for a specified time range.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"xray.get-trace-summaries\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: batch-get-traces\n          description: \"Retrieve complete trace documents for specific trace IDs.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"xray.batch-get-traces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-service-graph\n          description: \"Get the service map showing inter-service dependencies and request\
+  \ flow.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"xray.get-service-graph\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-sampling-rules\n          description: \"Get all trace sampling rules to understand data collection configuration.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"xray.get-sampling-rules\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-groups\n          description: \"Get X-Ray groups used to filter and organize traces.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"xray.get-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-insight-summaries\n          description: \"Get summaries of X-Ray insights identifying anomalies and performance\
+  \ issues.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"xray.get-insight-summaries\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-xray/refs/heads/main/capabilities/distributed-tracing.yaml
 tags:
 - AWS
 - Distributed Tracing

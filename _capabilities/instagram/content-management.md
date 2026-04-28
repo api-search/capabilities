@@ -51,57 +51,71 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- embeds instagram content on websites and applications.
-- get media objects within a carousel album.
-- get current content publishing usage and rate limit status.
-- individual media object operations.
-- delete an instagram media object.
-- insights and performance metrics.
-- get a collection of ig media objects published on the account.
-- user media collection and container creation.
-- publish media
-- photos
 - get container
-- content management
-- monitors mentions, comments, and brand sentiment on instagram.
 - website embedding of instagram content.
-- publishing
-- container status check.
-- publish a media container. step 2 of the publishing flow.
-- content publishing
-- get user stories
-- instagram direct messaging.
-- tracks content performance and audience insights.
-- carousel album children.
-- publishes and manages content across instagram accounts.
-- delete media
-- publish a media container.
-- user stories collection.
-- content publishing and media management.
 - get content publishing limit
-- get fields on an instagram media object.
-- creates and publishes photos, videos, reels, and stories.
-- create a media container for publishing content. step 1 of the publishing flow.
 - get media children
-- get a collection of story ig media objects on the account.
+- publish media
+- instagram
 - check the publishing status of a media container.
+- get current content publishing usage and rate limit status.
+- photos
+- content publishing and media management.
+- get a collection of story ig media objects on the account.
+- delete an instagram media object (post, story, reel, or carousel).
+- get fields on an instagram photo, video, story, reel, or album.
+- publishes and manages content across instagram accounts.
+- comments, mentions, and community interaction.
+- enable or disable comments on a media object.
 - meta
 - create a media container for publishing content.
-- content publishing rate limit.
-- media
-- get fields on an instagram photo, video, story, reel, or album.
-- get media
-- update media
-- comments, mentions, and community interaction.
-- videos
-- delete an instagram media object (post, story, reel, or carousel).
-- instagram
-- social media
-- enable or disable comments on a media object.
-- manages instagram direct conversations for business inquiries.
+- get fields on an instagram media object.
+- instagram direct messaging.
 - create media container
+- tracks content performance and audience insights.
+- update media
+- user stories collection.
+- videos
+- publish a media container.
+- embeds instagram content on websites and applications.
+- publishing
+- carousel album children.
+- insights and performance metrics.
+- get media
+- manages instagram direct conversations for business inquiries.
+- user media collection and container creation.
+- get user stories
+- content publishing rate limit.
+- container status check.
+- publish a media container. step 2 of the publishing flow.
+- create a media container for publishing content. step 1 of the publishing flow.
+- individual media object operations.
+- content publishing
+- social media
+- content management
+- delete media
+- get media objects within a carousel album.
+- monitors mentions, comments, and brand sentiment on instagram.
+- media
+- creates and publishes photos, videos, reels, and stories.
 - get user media
+- delete an instagram media object.
+- get a collection of ig media objects published on the account.
 slug: content-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Content Management\"\n  description: >-\n    Unified workflow for managing Instagram content including media browsing,\n    publishing (container creation and publish), stories, carousel albums, and\n    media updates. Used by social media managers and content creators to create,\n    review, update, and delete Instagram posts, reels, stories, and carousels.\n  tags:\n    - Instagram\n    - Content Management\n    - Social Media\n    - Publishing\n    - Media\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: instagram-content-api\n      description: \"Unified REST API for Instagram content management workflows.\"\n      resources:\n        - path:\
+  \ /v1/users/{user_id}/media\n          name: user-media\n          description: \"User media collection and container creation.\"\n          operations:\n            - method: GET\n              name: get-user-media\n              description: \"Get a collection of IG Media objects published on the account.\"\n              call: \"instagram-graph.get-user-media\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                limit: \"rest.limit\"\n                after: \"rest.after\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-media-container\n              description: \"Create a media container for publishing content.\"\n              call: \"instagram-graph.create-media-container\"\n              with:\n                user_id: \"rest.user_id\"\n              \
+  \  image_url: \"rest.image_url\"\n                video_url: \"rest.video_url\"\n                caption: \"rest.caption\"\n                media_type: \"rest.media_type\"\n                is_carousel_item: \"rest.is_carousel_item\"\n                location_id: \"rest.location_id\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/publish\n          name: publish-media\n          description: \"Publish a media container.\"\n          operations:\n            - method: POST\n              name: publish-media\n              description: \"Publish a media container. Step 2 of the publishing flow.\"\n              call: \"instagram-graph.publish-media\"\n              with:\n                user_id: \"rest.user_id\"\n                creation_id: \"rest.creation_id\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/stories\n          name: user-stories\n          description: \"User stories collection.\"\n          operations:\n            - method: GET\n              name: get-user-stories\n              description: \"Get a collection of story IG Media objects on the account.\"\n              call: \"instagram-graph.get-user-stories\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/publishing-limit\n          name: publishing-limit\n          description: \"Content publishing rate limit.\"\n          operations:\n            - method: GET\n              name: get-content-publishing-limit\n              description: \"Get current content publishing\
+  \ usage and rate limit status.\"\n              call: \"instagram-graph.get-content-publishing-limit\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/media/{media_id}\n          name: media\n          description: \"Individual media object operations.\"\n          operations:\n            - method: GET\n              name: get-media\n              description: \"Get fields on an Instagram media object.\"\n              call: \"instagram-graph.get-media\"\n              with:\n                media_id: \"rest.media_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\
+  \ update-media\n              description: \"Enable or disable comments on a media object.\"\n              call: \"instagram-graph.update-media\"\n              with:\n                media_id: \"rest.media_id\"\n                comment_enabled: \"rest.comment_enabled\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-media\n              description: \"Delete an Instagram media object.\"\n              call: \"instagram-graph.delete-media\"\n              with:\n                media_id: \"rest.media_id\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/media/{media_id}/children\n          name: media-children\n          description: \"Carousel album children.\"\n          operations:\n            -\
+  \ method: GET\n              name: get-media-children\n              description: \"Get media objects within a carousel album.\"\n              call: \"instagram-graph.get-media-children\"\n              with:\n                media_id: \"rest.media_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/containers/{container_id}\n          name: container\n          description: \"Container status check.\"\n          operations:\n            - method: GET\n              name: get-container\n              description: \"Check the publishing status of a media container.\"\n              call: \"instagram-graph.get-container\"\n              with:\n                container_id: \"rest.container_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: instagram-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Instagram content management.\"\n      tools:\n        - name: get-user-media\n          description: \"Get a collection of IG Media objects published on the account.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-user-media\"\n          with:\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            limit: \"tools.limit\"\n            after: \"tools.after\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-user-stories\n          description: \"Get a collection of story IG Media objects on the account.\"\n          hints:\n            readOnly: true\n           \
+  \ idempotent: true\n          call: \"instagram-graph.get-user-stories\"\n          with:\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-media\n          description: \"Get fields on an Instagram photo, video, story, reel, or album.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-media\"\n          with:\n            media_id: \"tools.media_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-media-children\n          description: \"Get media objects within a carousel album.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-media-children\"\
+  \n          with:\n            media_id: \"tools.media_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-media\n          description: \"Enable or disable comments on a media object.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"instagram-graph.update-media\"\n          with:\n            media_id: \"tools.media_id\"\n            comment_enabled: \"tools.comment_enabled\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-media\n          description: \"Delete an Instagram media object (post, story, reel, or carousel).\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"instagram-graph.delete-media\"\
+  \n          with:\n            media_id: \"tools.media_id\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-media-container\n          description: \"Create a media container for publishing content. Step 1 of the publishing flow.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"instagram-graph.create-media-container\"\n          with:\n            user_id: \"tools.user_id\"\n            image_url: \"tools.image_url\"\n            video_url: \"tools.video_url\"\n            caption: \"tools.caption\"\n            media_type: \"tools.media_type\"\n            is_carousel_item: \"tools.is_carousel_item\"\n            location_id: \"tools.location_id\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n   \
+  \     - name: publish-media\n          description: \"Publish a media container. Step 2 of the publishing flow.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"instagram-graph.publish-media\"\n          with:\n            user_id: \"tools.user_id\"\n            creation_id: \"tools.creation_id\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-content-publishing-limit\n          description: \"Get current content publishing usage and rate limit status.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-content-publishing-limit\"\n          with:\n            user_id: \"tools.user_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n\n        - name: get-container\n          description: \"Check the publishing status of a media container.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"instagram-graph.get-container\"\n          with:\n            container_id: \"tools.container_id\"\n            fields: \"tools.fields\"\n            access_token: \"tools.access_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/instagram/refs/heads/main/capabilities/content-management.yaml
 tags:
 - Instagram
 - Content Management

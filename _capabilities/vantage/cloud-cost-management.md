@@ -92,104 +92,126 @@ provider_name: Vantage
 provider_slug: vantage
 search_terms:
 - list business metrics
-- cloud infrastructure pricing.
-- list all cost providers.
-- list all financial commitment reports.
-- get cost report
-- create a new dashboard.
-- list all workspaces.
-- list all budget alerts.
-- list anomaly alerts
-- cost management
-- list workspaces
-- delete a cost report.
-- list all dashboards.
-- manage cloud provider integrations.
-- list all segments.
-- list cloud services.
-- get provider
-- cloud costs
-- list products
 - get pricing data filtered by product, provider, service, or region.
-- vantage
-- get pricing data for products.
-- get a specific cloud pricing provider.
-- list all managed cloud accounts.
-- list folders
-- update cost report
-- list all anomaly alerts.
-- list all cloud provider integrations.
-- list managed accounts
-- get a specific cloud service.
-- update a cost report.
-- get a specific cloud product with pricing details.
-- list all cost allocation segments.
-- create dashboard
-- list integrations
-- manage anomaly detection alerts.
-- list all folders.
-- list all resource reports.
-- retrieve cost data.
-- manage cost reports.
-- list all cost reports.
-- list cost reports
-- list financial commitment reports
-- list resource reports
-- cloud pricing services.
-- create a new anomaly alert.
-- get pricing product
-- list cloud products with pricing.
-- manage cost dashboards.
-- cloud infrastructure products.
-- manage a specific cost report.
-- cloud pricing
-- get a specific cost report.
-- list network flow reports
-- list recommendations
-- update an existing cost report.
-- create budget alert
-- delete cost report
-- list prices
-- list all network flow reports.
-- get costs
-- get a specific cloud provider.
-- list all teams.
-- finops
-- list pricing providers
-- list cloud services with pricing data.
-- cloud pricing providers.
-- list pricing services
-- cost optimization recommendations.
-- list cost providers
-- costs
-- create a new budget alert.
-- list all kubernetes efficiency reports.
-- list cost optimization recommendations.
-- list providers
-- list dashboards
-- budgets
-- manage budget alerts.
 - list all cloud pricing providers.
-- list segments
-- list teams
-- create a new cost report.
-- manage cost allocation segments.
-- list saved filters
-- create a new cost report with vql filter.
-- get a specific cost report by token.
-- get costs for a report or vql filter.
-- list all saved filters.
-- create cost report
-- list all business metrics.
-- list services
+- list dashboards
 - list budget alerts
-- get pricing provider
-- list kubernetes efficiency reports
-- create anomaly alert
-- list pricing products
-- get pricing service
+- create a new anomaly alert.
+- list cloud products with pricing.
+- list integrations
+- list all kubernetes efficiency reports.
+- cost management
+- manage a specific cost report.
+- list all dashboards.
+- manage anomaly detection alerts.
+- get a specific cost report.
+- list services
+- get a specific cloud service.
+- list prices
+- get pricing product
+- create a new cost report.
+- list all resource reports.
+- list workspaces
+- list financial commitment reports
+- list all cost reports.
+- cloud pricing services.
+- list teams
+- list all workspaces.
+- update a cost report.
+- list all network flow reports.
+- list all cloud provider integrations.
+- create dashboard
+- delete cost report
+- list all financial commitment reports.
+- manage cost dashboards.
+- finops
+- cloud infrastructure products.
+- list all saved filters.
+- list providers
+- list all business metrics.
+- list all managed cloud accounts.
+- get a specific cloud pricing provider.
+- create a new cost report with vql filter.
+- get cost report
 - list all integrations.
+- list all teams.
+- list network flow reports
+- list resource reports
+- retrieve cost data.
+- list all anomaly alerts.
+- list cost reports
+- cloud infrastructure pricing.
+- manage cost reports.
+- get a specific cost report by token.
+- vantage
+- create cost report
+- list pricing products
+- costs
+- list recommendations
+- update cost report
+- get pricing provider
+- get provider
+- list all segments.
+- cost optimization recommendations.
+- list products
+- get a specific cloud product with pricing details.
+- list anomaly alerts
+- get pricing data for products.
+- update an existing cost report.
+- list pricing services
+- list all cost providers.
+- list cost providers
+- cloud pricing
+- list cost optimization recommendations.
+- list all cost allocation segments.
+- cloud costs
+- cloud pricing providers.
+- create a new budget alert.
+- list saved filters
+- manage budget alerts.
+- delete a cost report.
+- manage cloud provider integrations.
+- create a new dashboard.
+- budgets
+- create budget alert
+- manage cost allocation segments.
+- list kubernetes efficiency reports
+- get costs for a report or vql filter.
+- list segments
+- list cloud services.
+- list folders
+- get a specific cloud provider.
+- list pricing providers
+- list all budget alerts.
+- list all folders.
+- list managed accounts
+- list cloud services with pricing data.
+- get costs
+- get pricing service
+- create anomaly alert
 slug: cloud-cost-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Vantage Cloud Cost Management\"\n  description: \"Unified workflow for cloud cost management combining cost reporting, alerting, optimization recommendations, and cloud pricing comparison. Used by FinOps teams and cloud engineers to monitor, optimize, and control cloud spending.\"\n  tags:\n    - Vantage\n    - FinOps\n    - Cloud Costs\n    - Cost Management\n    - Cloud Pricing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VANTAGE_API_TOKEN: VANTAGE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: vantage-cost-mgmt\n      location: ./shared/cost-management.yaml\n    - import: vantage-pricing\n      location: ./shared/cloud-pricing.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: vantage-finops-api\n      description: \"Unified REST API for cloud cost management, optimization, and pricing comparison.\"\n      resources:\n        - path: /v1/cost-reports\n\
+  \          name: cost-reports\n          description: \"Manage Cost Reports.\"\n          operations:\n            - method: GET\n              name: list-cost-reports\n              description: \"List all Cost Reports.\"\n              call: \"vantage-cost-mgmt.get-cost-reports\"\n              with:\n                page: \"rest.page\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cost-report\n              description: \"Create a new Cost Report.\"\n              call: \"vantage-cost-mgmt.create-cost-report\"\n              with:\n                title: \"rest.title\"\n                filter: \"rest.filter\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/cost-reports/{cost_report_token}\n          name: cost-report\n          description: \"Manage a specific Cost\
+  \ Report.\"\n          operations:\n            - method: GET\n              name: get-cost-report\n              description: \"Get a specific Cost Report.\"\n              call: \"vantage-cost-mgmt.get-cost-report\"\n              with:\n                cost_report_token: \"rest.cost_report_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-cost-report\n              description: \"Update a Cost Report.\"\n              call: \"vantage-cost-mgmt.update-cost-report\"\n              with:\n                cost_report_token: \"rest.cost_report_token\"\n                title: \"rest.title\"\n                filter: \"rest.filter\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-cost-report\n              description: \"Delete a Cost Report.\"\n              call: \"vantage-cost-mgmt.delete-cost-report\"\
+  \n              with:\n                cost_report_token: \"rest.cost_report_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/costs\n          name: costs\n          description: \"Retrieve cost data.\"\n          operations:\n            - method: GET\n              name: get-costs\n              description: \"Get costs for a report or VQL filter.\"\n              call: \"vantage-cost-mgmt.get-costs\"\n              with:\n                cost_report_token: \"rest.cost_report_token\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/dashboards\n          name: dashboards\n          description: \"Manage cost dashboards.\"\n          operations:\n            - method: GET\n              name: list-dashboards\n              description: \"List\
+  \ all Dashboards.\"\n              call: \"vantage-cost-mgmt.get-dashboards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dashboard\n              description: \"Create a new Dashboard.\"\n              call: \"vantage-cost-mgmt.create-dashboard\"\n              with:\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/budget-alerts\n          name: budget-alerts\n          description: \"Manage budget alerts.\"\n          operations:\n            - method: GET\n              name: list-budget-alerts\n              description: \"List all Budget Alerts.\"\n              call: \"vantage-cost-mgmt.get-budget-alerts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-budget-alert\n\
+  \              description: \"Create a new Budget Alert.\"\n              call: \"vantage-cost-mgmt.create-budget-alert\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/anomaly-alerts\n          name: anomaly-alerts\n          description: \"Manage anomaly detection alerts.\"\n          operations:\n            - method: GET\n              name: list-anomaly-alerts\n              description: \"List all Anomaly Alerts.\"\n              call: \"vantage-cost-mgmt.get-anomaly-alerts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-anomaly-alert\n              description: \"Create a new Anomaly Alert.\"\n              call: \"vantage-cost-mgmt.create-anomaly-alert\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/recommendations\n  \
+  \        name: recommendations\n          description: \"Cost optimization recommendations.\"\n          operations:\n            - method: GET\n              name: list-recommendations\n              description: \"List cost optimization recommendations.\"\n              call: \"vantage-cost-mgmt.get-recommendations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/segments\n          name: segments\n          description: \"Manage cost allocation segments.\"\n          operations:\n            - method: GET\n              name: list-segments\n              description: \"List all Segments.\"\n              call: \"vantage-cost-mgmt.get-segments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/integrations\n          name: integrations\n          description: \"Manage cloud provider integrations.\"\n          operations:\n            -\
+  \ method: GET\n              name: list-integrations\n              description: \"List all Integrations.\"\n              call: \"vantage-cost-mgmt.get-integrations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers\n          name: providers\n          description: \"Cloud pricing providers.\"\n          operations:\n            - method: GET\n              name: list-providers\n              description: \"List all cloud pricing providers.\"\n              call: \"vantage-pricing.get-providers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers/{provider_id}\n          name: provider\n          description: \"Get a specific cloud provider.\"\n          operations:\n            - method: GET\n              name: get-provider\n              description: \"Get a specific cloud provider.\"\n              call: \"vantage-pricing.get-provider\"\
+  \n              with:\n                provider_id: \"rest.provider_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/services\n          name: services\n          description: \"Cloud pricing services.\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List cloud services.\"\n              call: \"vantage-pricing.get-services\"\n              with:\n                provider_id: \"rest.provider_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/products\n          name: products\n          description: \"Cloud infrastructure products.\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List cloud products with pricing.\"\n              call: \"vantage-pricing.get-products\"\n              with:\n        \
+  \        provider_id: \"rest.provider_id\"\n                service_id: \"rest.service_id\"\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/prices\n          name: prices\n          description: \"Cloud infrastructure pricing.\"\n          operations:\n            - method: GET\n              name: list-prices\n              description: \"Get pricing data for products.\"\n              call: \"vantage-pricing.get-prices\"\n              with:\n                product_id: \"rest.product_id\"\n                provider_id: \"rest.provider_id\"\n                service_id: \"rest.service_id\"\n                region: \"rest.region\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: vantage-finops-mcp\n      transport: http\n      description: \"MCP server for AI-assisted cloud\
+  \ cost management and pricing comparison.\"\n      tools:\n        - name: list-cost-reports\n          description: \"List all Cost Reports.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-cost-reports\"\n          with:\n            page: \"tools.page\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-cost-report\n          description: \"Create a new Cost Report with VQL filter.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"vantage-cost-mgmt.create-cost-report\"\n          with:\n            title: \"tools.title\"\n            filter: \"tools.filter\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-cost-report\n          description: \"Get a specific Cost Report by token.\"\n          hints:\n       \
+  \     readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-cost-report\"\n          with:\n            cost_report_token: \"tools.cost_report_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-cost-report\n          description: \"Update an existing Cost Report.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"vantage-cost-mgmt.update-cost-report\"\n          with:\n            cost_report_token: \"tools.cost_report_token\"\n            title: \"tools.title\"\n            filter: \"tools.filter\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-cost-report\n          description: \"Delete a Cost Report.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"vantage-cost-mgmt.delete-cost-report\"\n  \
+  \        with:\n            cost_report_token: \"tools.cost_report_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-costs\n          description: \"Get costs for a report or VQL filter.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-costs\"\n          with:\n            cost_report_token: \"tools.cost_report_token\"\n            start_date: \"tools.start_date\"\n            end_date: \"tools.end_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-folders\n          description: \"List all Folders.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-folders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-dashboards\n          description: \"List all Dashboards.\"\
+  \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-dashboards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-saved-filters\n          description: \"List all Saved Filters.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-saved-filters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-teams\n          description: \"List all Teams.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-teams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-budget-alerts\n          description: \"List all Budget Alerts.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-budget-alerts\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-anomaly-alerts\n          description: \"List all Anomaly Alerts.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-anomaly-alerts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-recommendations\n          description: \"List cost optimization recommendations.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-recommendations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-segments\n          description: \"List all cost allocation Segments.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-segments\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n\n        - name: list-integrations\n          description: \"List all cloud provider Integrations.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-integrations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-workspaces\n          description: \"List all Workspaces.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-managed-accounts\n          description: \"List all managed cloud accounts.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-managed-accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        -\
+  \ name: list-cost-providers\n          description: \"List all cost providers.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-cost-providers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-business-metrics\n          description: \"List all Business Metrics.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-business-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-resource-reports\n          description: \"List all Resource Reports.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-resource-reports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-network-flow-reports\n          description:\
+  \ \"List all Network Flow Reports.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-network-flow-reports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-financial-commitment-reports\n          description: \"List all Financial Commitment Reports.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-financial-commitment-reports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-kubernetes-efficiency-reports\n          description: \"List all Kubernetes Efficiency Reports.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-cost-mgmt.get-kubernetes-efficiency-reports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-pricing-providers\n\
+  \          description: \"List all cloud pricing providers.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-providers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-pricing-provider\n          description: \"Get a specific cloud pricing provider.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-provider\"\n          with:\n            provider_id: \"tools.provider_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-pricing-services\n          description: \"List cloud services with pricing data.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-services\"\n          with:\n            provider_id: \"tools.provider_id\"\n          outputParameters:\n          \
+  \  - type: object\n              mapping: \"$.\"\n\n        - name: get-pricing-service\n          description: \"Get a specific cloud service.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-service\"\n          with:\n            service_id: \"tools.service_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-pricing-products\n          description: \"List cloud products with pricing.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-products\"\n          with:\n            provider_id: \"tools.provider_id\"\n            service_id: \"tools.service_id\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-pricing-product\n          description: \"Get a specific cloud product with pricing details.\"\n\
+  \          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-product\"\n          with:\n            product_id: \"tools.product_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-prices\n          description: \"Get pricing data filtered by product, provider, service, or region.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"vantage-pricing.get-prices\"\n          with:\n            product_id: \"tools.product_id\"\n            provider_id: \"tools.provider_id\"\n            service_id: \"tools.service_id\"\n            region: \"tools.region\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/vantage/refs/heads/main/capabilities/cloud-cost-management.yaml
 tags:
 - Vantage
 - FinOps

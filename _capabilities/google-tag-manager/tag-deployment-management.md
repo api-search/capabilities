@@ -39,64 +39,77 @@ personas: []
 provider_name: Google Tag Manager
 provider_slug: google-tag-manager
 search_terms:
-- update account
+- list workspaces
+- get container
+- create a new tag
 - get tag
 - publish a container version
-- tag management
-- delete a tag
-- marketing
-- container management
-- get account details
-- update account settings
-- list variables
-- create a tag
-- get container
-- delete variable
-- create a new container
-- list containers
-- create a new workspace
-- delete a workspace
-- list containers in an account
-- create tag
-- list tags in a workspace
-- delete trigger
-- list variables in a workspace
-- list triggers
-- list workspaces
-- list workspaces in a container
-- create variable
-- get tag details
-- create container
 - create trigger
-- delete a container
-- list container version headers
-- variable management
-- list accounts
-- get account
-- create a new variable
-- account management
-- conversion tracking
-- list tags
-- create workspace
-- list triggers in a workspace
-- google tag manager
-- analytics
-- list all gtm accounts
-- list all google tag manager accounts
-- create a new tag
-- delete tag
-- create a new trigger
-- delete a variable
+- delete a workspace
+- list tags in a workspace
 - list versions
-- tracking
-- publish version
+- container management
+- conversion tracking
 - delete a trigger
-- create a container
-- get container details
-- trigger management
-- delete workspace
+- create a new workspace
+- analytics
+- list accounts
+- create container
+- get tag details
+- create a new trigger
+- list variables in a workspace
+- list triggers in a workspace
+- list all gtm accounts
+- tag management
+- list workspaces in a container
+- create a new container
+- create a new variable
+- create variable
+- publish version
+- create a tag
+- delete trigger
+- list all google tag manager accounts
+- delete a variable
+- list triggers
+- account management
+- create workspace
+- get account details
+- delete a container
+- update account settings
+- update account
 - delete container
+- tracking
+- create a container
+- trigger management
+- list containers
+- get account
+- delete a tag
+- delete tag
+- delete variable
+- marketing
+- create tag
+- list variables
+- list tags
+- delete workspace
+- list container version headers
+- list containers in an account
+- google tag manager
+- variable management
+- get container details
 slug: tag-deployment-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Tag Manager Tag Deployment Management\"\n  description: \"Workflow for managing tag deployment lifecycle including accounts, containers, workspaces, tags, triggers, variables, and version publishing. Used by marketing technologists and web analytics engineers.\"\n  tags:\n    - Google Tag Manager\n    - Tag Management\n    - Marketing\n    - Analytics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: tag-manager\n      location: ./shared/tag-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gtm-deploy-api\n      description: \"Unified REST API for GTM tag deployment management.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n          description: \"Account management\"\n          operations:\n            - method: GET\n        \
+  \      name: list-accounts\n              description: \"List all GTM accounts\"\n              call: \"tag-manager.list-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/containers\n          name: containers\n          description: \"Container management\"\n          operations:\n            - method: GET\n              name: list-containers\n              description: \"List containers in an account\"\n              call: \"tag-manager.list-containers\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-container\n              description: \"Create a container\"\n              call: \"tag-manager.create-container\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/tags\n          name: tags\n          description: \"Tag management\"\n          operations:\n            - method: GET\n              name: list-tags\n              description: \"List tags in a workspace\"\n              call: \"tag-manager.list-tags\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-tag\n              description: \"Create a tag\"\n              call: \"tag-manager.create-tag\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/triggers\n          name: triggers\n          description: \"Trigger management\"\n          operations:\n            - method: GET\n              name: list-triggers\n              description:\
+  \ \"List triggers in a workspace\"\n              call: \"tag-manager.list-triggers\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/variables\n          name: variables\n          description: \"Variable management\"\n          operations:\n            - method: GET\n              name: list-variables\n              description: \"List variables in a workspace\"\n              call: \"tag-manager.list-variables\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: gtm-deploy-mcp\n      transport: http\n      description: \"MCP server for AI-assisted GTM tag deployment management.\"\n      tools:\n        - name: list-accounts\n          description: \"List all Google Tag Manager accounts\"\
+  \n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account\n          description: \"Get account details\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.get-account\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-account\n          description: \"Update account settings\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"tag-manager.update-account\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-containers\n          description: \"List containers in an account\"\n          hints:\n\
+  \            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-containers\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-container\n          description: \"Create a new container\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.create-container\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-container\n          description: \"Get container details\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.get-container\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-container\n          description:\
+  \ \"Delete a container\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tag-manager.delete-container\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workspaces\n          description: \"List workspaces in a container\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-workspaces\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-workspace\n          description: \"Create a new workspace\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.create-workspace\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: delete-workspace\n          description: \"Delete a workspace\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tag-manager.delete-workspace\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tags\n          description: \"List tags in a workspace\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-tags\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-tag\n          description: \"Create a new tag\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.create-tag\"\n          with:\n            parent: \"tools.parent\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-tag\n          description: \"Get tag details\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.get-tag\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-tag\n          description: \"Delete a tag\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tag-manager.delete-tag\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-triggers\n          description: \"List triggers in a workspace\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-triggers\"\n          with:\n\
+  \            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-trigger\n          description: \"Create a new trigger\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.create-trigger\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-trigger\n          description: \"Delete a trigger\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tag-manager.delete-trigger\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-variables\n          description: \"List variables in a workspace\"\n          hints:\n            readOnly: true\n            idempotent:\
+  \ true\n          call: \"tag-manager.list-variables\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-variable\n          description: \"Create a new variable\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.create-variable\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-variable\n          description: \"Delete a variable\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tag-manager.delete-variable\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-versions\n          description: \"List container version\
+  \ headers\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tag-manager.list-versions\"\n          with:\n            parent: \"tools.parent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: publish-version\n          description: \"Publish a container version\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tag-manager.publish-version\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/google-tag-manager/refs/heads/main/capabilities/tag-deployment-management.yaml
 tags:
 - Google Tag Manager
 - Tag Management

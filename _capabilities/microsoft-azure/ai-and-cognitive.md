@@ -28,49 +28,57 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- azure
-- openai create embedding
-- list model deployments
-- openai
-- list available openai models
-- model listing
-- infrastructure as a service
-- openai list models
-- cognitive list models
-- list openai models
-- create text embeddings
-- api management
-- create chat completion
-- list available ai models
-- cognitive services
-- list cognitive services accounts
-- create a chat completion using azure openai
-- ai
-- platform as a service
-- cognitive services accounts
-- create a chat completion
-- openai create speech
-- openai create transcription
 - cognitive list accounts
-- cloud
-- chat completion operations
-- openai create completion
-- cloud computing
-- embedding operations
-- openai create translation
-- create embedding
-- generate speech from text
-- create a text completion
+- openai create speech
+- cognitive services accounts
+- ai
+- list openai models
+- list model deployments
 - generate images from text
+- openai list models
+- list available openai models
+- openai create completion
+- model listing
+- openai create embedding
 - enterprise
-- t1
-- openai create chat completion
-- transcribe audio to text
-- openai list deployments
-- list cognitive accounts
+- openai
+- embedding operations
+- create chat completion
+- generate speech from text
+- cognitive services
+- create a chat completion using azure openai
 - openai create image
+- azure
+- openai create chat completion
+- openai create transcription
+- list cognitive services accounts
+- create embedding
+- infrastructure as a service
+- create a text completion
+- transcribe audio to text
+- cloud computing
+- openai list deployments
+- t1
+- cognitive list models
+- list cognitive accounts
+- cloud
+- list available ai models
+- chat completion operations
+- create a chat completion
+- create text embeddings
+- openai create translation
+- platform as a service
+- api management
 - translate audio to english
 slug: ai-and-cognitive
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure AI and Cognitive Services\"\n  description: \"Unified workflow for Azure AI capabilities combining OpenAI Service for generative AI and Cognitive Services for account and model management. Used by AI engineers, ML ops teams, and application developers building intelligent applications.\"\n  tags:\n    - Azure\n    - AI\n    - OpenAI\n    - Cognitive Services\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_OPENAI_API_KEY: AZURE_OPENAI_API_KEY\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-openai\n      location: ./shared/openai-service.yaml\n    - import: azure-cognitive\n      location: ./shared/cognitive-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-ai-api\n      description: \"Unified REST API for Azure AI services.\"\n      resources:\n        - path: /v1/chat/completions\n\
+  \          name: chat-completions\n          description: \"Chat completion operations\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"azure-openai.create-chat-completion\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Embedding operations\"\n          operations:\n            - method: POST\n              name: create-embedding\n              description: \"Create text embeddings\"\n              call: \"azure-openai.create-embedding\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name:\
+  \ models\n          description: \"Model listing\"\n          operations:\n            - method: GET\n              name: list-openai-models\n              description: \"List OpenAI models\"\n              call: \"azure-openai.list-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts\n          name: accounts\n          description: \"Cognitive Services accounts\"\n          operations:\n            - method: GET\n              name: list-cognitive-accounts\n              description: \"List Cognitive Services accounts\"\n              call: \"azure-cognitive.list-accounts\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: azure-ai-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure AI operations.\"\
+  \n      tools:\n        - name: openai-create-chat-completion\n          description: \"Create a chat completion using Azure OpenAI\"\n          hints:\n            readOnly: false\n          call: \"azure-openai.create-chat-completion\"\n          with:\n            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-completion\n          description: \"Create a text completion\"\n          hints:\n            readOnly: false\n          call: \"azure-openai.create-completion\"\n          with:\n            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-embedding\n          description: \"Create text embeddings\"\n          hints:\n            readOnly: true\n          call: \"azure-openai.create-embedding\"\n          with:\n            deployment-id: \"tools.deploymentId\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-image\n          description: \"Generate images from text\"\n          hints:\n            readOnly: false\n          call: \"azure-openai.create-image\"\n          with:\n            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-transcription\n          description: \"Transcribe audio to text\"\n          hints:\n            readOnly: true\n          call: \"azure-openai.create-transcription\"\n          with:\n            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-translation\n          description: \"Translate audio to English\"\n          hints:\n            readOnly: true\n          call: \"azure-openai.create-translation\"\n          with:\n\
+  \            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-create-speech\n          description: \"Generate speech from text\"\n          hints:\n            readOnly: false\n          call: \"azure-openai.create-speech\"\n          with:\n            deployment-id: \"tools.deploymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-list-models\n          description: \"List available OpenAI models\"\n          hints:\n            readOnly: true\n          call: \"azure-openai.list-models\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: openai-list-deployments\n          description: \"List model deployments\"\n          hints:\n            readOnly: true\n          call: \"azure-openai.list-deployments\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: cognitive-list-accounts\n          description: \"List Cognitive Services accounts\"\n          hints:\n            readOnly: true\n          call: \"azure-cognitive.list-accounts\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cognitive-list-models\n          description: \"List available AI models\"\n          hints:\n            readOnly: true\n          call: \"azure-cognitive.list-models\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure/refs/heads/main/capabilities/ai-and-cognitive.yaml
 tags:
 - Azure
 - AI

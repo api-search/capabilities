@@ -38,46 +38,54 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- communication
-- message management.
-- conversation management.
-- search messages
-- list custom emoji.
-- manage bookmarks
-- manage reminders
-- messaging
-- manage lists
-- team communication
-- search
-- post a message.
-- file management.
 - manage lists.
-- slack
-- manage channel bookmarks.
-- add reaction
-- productivity
-- post message
+- team communication
 - manage reminders.
-- bots
-- manage canvases.
-- post a message to a channel.
-- add pin
-- list emoji
-- search workspace.
-- collaboration
-- list files
-- list files.
-- search messages and files.
-- t1
-- manage canvases
-- list starred items.
-- list conversations
-- list stars
-- chat
 - add a reaction.
-- pin a message.
+- search messages
+- manage channel bookmarks.
+- file management.
+- list starred items.
+- conversation management.
+- manage lists
+- communication
+- list files
+- add pin
+- search
+- manage canvases.
+- message management.
+- post message
+- manage canvases
+- search messages and files.
+- slack
+- list conversations
 - list conversations.
+- list custom emoji.
+- bots
+- search workspace.
+- t1
+- post a message to a channel.
+- manage reminders
+- collaboration
+- list files.
+- messaging
+- list emoji
+- productivity
+- add reaction
+- manage bookmarks
+- list stars
+- post a message.
+- chat
+- pin a message.
 slug: messaging-communication
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Slack Messaging and Communication\"\n  description: \"Unified workflow for messaging and communication including posting messages, managing conversations, sharing files, reacting, searching, and organizing with pins and stars. Used by app developers building communication integrations.\"\n  tags:\n    - Slack\n    - Messaging\n    - Communication\n    - Chat\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\n\ncapability:\n  consumes:\n    - import: slack-chat\n      location: ./shared/chat.yaml\n    - import: slack-conversations\n      location: ./shared/conversations.yaml\n    - import: slack-files\n      location: ./shared/files.yaml\n    - import: slack-pins\n      location: ./shared/pins.yaml\n    - import: slack-reactions\n      location: ./shared/reactions.yaml\n    - import: slack-stars\n      location: ./shared/stars.yaml\n    - import:\
+  \ slack-search\n      location: ./shared/search.yaml\n    - import: slack-emoji\n      location: ./shared/emoji.yaml\n    - import: slack-bookmarks\n      location: ./shared/bookmarks.yaml\n    - import: slack-canvases\n      location: ./shared/canvases.yaml\n    - import: slack-lists\n      location: ./shared/lists.yaml\n    - import: slack-reminders\n      location: ./shared/reminders.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: messaging-api\n      description: \"Unified REST API for Slack messaging and communication.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Message management.\"\n          operations:\n            - method: POST\n              name: post-message\n              description: \"Post a message.\"\n              call: \"slack-chat.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/conversations\n          name:\
+  \ conversations\n          description: \"Conversation management.\"\n          operations:\n            - method: GET\n              name: list-conversations\n              description: \"List conversations.\"\n              call: \"slack-conversations.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/files\n          name: files\n          description: \"File management.\"\n          operations:\n            - method: GET\n              name: list-files\n              description: \"List files.\"\n              call: \"slack-files.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search\n          name: search\n          description: \"Search messages and files.\"\n          operations:\n            - method: GET\n              name: search\n              description: \"Search workspace.\"\n              call: \"slack-search.list\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: messaging-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Slack messaging.\"\n      tools:\n        - name: post-message\n          description: \"Post a message to a channel.\"\n          hints:\n            readOnly: false\n          call: \"slack-chat.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-conversations\n          description: \"List conversations.\"\n          hints:\n            readOnly: true\n          call: \"slack-conversations.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-files\n          description: \"List files.\"\n          hints:\n            readOnly: true\n          call: \"slack-files.list\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: add-pin\n          description: \"Pin a message.\"\n          hints:\n            readOnly: false\n          call: \"slack-pins.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-reaction\n          description: \"Add a reaction.\"\n          hints:\n            readOnly: false\n          call: \"slack-reactions.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-stars\n          description: \"List starred items.\"\n          hints:\n            readOnly: true\n          call: \"slack-stars.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-messages\n          description: \"Search messages and files.\"\n          hints:\n            readOnly: true\n          call: \"slack-search.list\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: list-emoji\n          description: \"List custom emoji.\"\n          hints:\n            readOnly: true\n          call: \"slack-emoji.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: manage-bookmarks\n          description: \"Manage channel bookmarks.\"\n          hints:\n            readOnly: false\n          call: \"slack-bookmarks.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: manage-canvases\n          description: \"Manage canvases.\"\n          hints:\n            readOnly: false\n          call: \"slack-canvases.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: manage-lists\n          description: \"Manage lists.\"\n          hints:\n            readOnly: false\n          call: \"slack-lists.list\"\n          outputParameters:\n      \
+  \      - type: object\n              mapping: \"$.\"\n        - name: manage-reminders\n          description: \"Manage reminders.\"\n          hints:\n            readOnly: false\n          call: \"slack-reminders.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/slack/refs/heads/main/capabilities/messaging-communication.yaml
 tags:
 - Slack
 - Messaging

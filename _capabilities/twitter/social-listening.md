@@ -82,112 +82,128 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- get current rules for the filtered search stream
-- streamPostsSearch
-- search posts from last 7 days
-- get post insights for the last 28 hours
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- searchPostsRecent
-- handles customer inquiries and issues via direct messages and replies.
-- builds and maintains communities through engagement and moderation.
-- microblogging
-- search full archive of posts
-- get all post counts
-- extracts insights from social data through search, streaming, and analytics.
-- get recent post counts
-- engagement specialist
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- retrieve the authenticated user's profile
-- get counts of posts matching a query from full archive
-- produces original posts, threads, and media content on x.
-- get users being followed
-- user relationships, direct messaging, spaces, and community interaction.
-- get posts mentioning a specific user
-- streaming
-- get users that a user is following
 - post creation, editing, media management, and content analytics.
-- data engineer
-- manages brand presence, campaigns, and content strategy.
-- search the full archive of posts
-- 10% sample stream
-- get historical post insights
-- streamPostsSample10
-- manage stream filter rules
-- real-time data
-- social listening
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- full firehose stream
-- ensures data handling meets regulatory and platform compliance requirements.
-- searchPostsAll
-- get 28-hour post insights
-- getFollowing
-- trends
-- get following
-- retrieve users by usernames
-- get current stream rules
-- platform operations
-- analytics
-- retrieve multiple users by their usernames
-- community manager
-- stream 10% sample of posts
-- get user followers
-- getSearchStreamRules
-- getUsersByUsernames
-- manages user relationships, follows, and interaction strategies.
-- social monitoring, search, trending topics, and sentiment analysis.
-- manage user relationships, direct messages, spaces, and community interactions.
-- streamPostsFirehose
-- get counts of posts matching a query from last 7 days
-- get counts from last 7 days
-- stream posts matching filtered stream rules in real-time
-- getPostsCountsRecent
-- x api
-- look up users by ids
-- add or delete stream rules
-- customer support
-- search all posts
-- getInsights28Hr
-- data analyst
-- compliance officer
-- retrieve users by ids
-- getUserTimeline
-- stream all public posts in real-time via the firehose
-- advertising
-- creates, schedules, and analyzes social media content across platforms.
-- getPostsCountsAll
-- get counts from full archive
-- get posts authored by a specific user
-- monitor conversations, search posts, analyze trends, and extract insights.
-- social media
-- conducts academic or market research using x data archives.
-- data compliance, deletion tracking, and regulatory event monitoring.
-- content
-- get followers
-- brand manager
-- search
-- stream a 10% sample of all public posts in real-time
-- add or delete rules for the filtered search stream
-- researcher
-- getUserMentions
-- monitors brand mentions, sentiment, and competitive landscape.
-- getUsersMe
-- search for posts from the last 7 days
-- get post insights for last 28 hours
-- stream posts matching filter rules
-- social media manager
-- addSearchStreamRules
-- search recent posts
-- retrieve multiple users by their ids
 - getFollowers
-- filtered search stream
+- get users that a user is following
 - content creator
-- get followers of a user
-- stream all public posts
-- marketing team
+- getUsersMe
 - getInsightsHistorical
+- content
+- look up users by ids
+- retrieve users by ids
+- stream a 10% sample of all public posts in real-time
+- social monitoring, search, trending topics, and sentiment analysis.
+- get post insights for last 28 hours
+- stream posts matching filtered stream rules in real-time
+- social media manager
+- researcher
+- monitors brand mentions, sentiment, and competitive landscape.
+- data analyst
+- data compliance, deletion tracking, and regulatory event monitoring.
+- add or delete stream rules
+- platform operations
+- manages brand presence, campaigns, and content strategy.
+- getInsights28Hr
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- get posts authored by a specific user
+- real-time data
+- getFollowing
+- search posts from last 7 days
+- retrieve multiple users by their ids
+- addSearchStreamRules
+- ensures data handling meets regulatory and platform compliance requirements.
+- getUsersByUsernames
+- full firehose stream
+- advertising
+- get current stream rules
+- streamPostsFirehose
+- search
+- filtered search stream
+- streamPostsSample10
+- get post insights for the last 28 hours
+- compliance officer
+- get recent post counts
+- search the full archive of posts
+- manage user relationships, direct messages, spaces, and community interactions.
 - getUsersByIds
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- search for posts from the last 7 days
+- manages user relationships, follows, and interaction strategies.
+- handles customer inquiries and issues via direct messages and replies.
+- community manager
+- retrieve multiple users by their usernames
+- get user followers
+- monitor conversations, search posts, analyze trends, and extract insights.
 - look up users by usernames
+- streaming
+- getSearchStreamRules
+- get all post counts
+- user relationships, direct messaging, spaces, and community interaction.
+- conducts academic or market research using x data archives.
+- get counts from full archive
+- analytics
+- marketing team
+- searchPostsRecent
+- get posts mentioning a specific user
+- retrieve users by usernames
+- get counts of posts matching a query from last 7 days
+- get 28-hour post insights
+- stream posts matching filter rules
+- search all posts
+- getUserTimeline
+- search full archive of posts
+- trends
+- produces original posts, threads, and media content on x.
+- x api
+- get following
+- microblogging
+- add or delete rules for the filtered search stream
+- manage stream filter rules
+- social listening
+- get historical post insights
+- get followers of a user
+- extracts insights from social data through search, streaming, and analytics.
+- get users being followed
+- stream 10% sample of posts
+- search recent posts
+- stream all public posts
+- getPostsCountsAll
+- brand manager
+- builds and maintains communities through engagement and moderation.
+- customer support
+- get current rules for the filtered search stream
+- 10% sample stream
+- searchPostsAll
+- stream all public posts in real-time via the firehose
+- engagement specialist
+- get counts of posts matching a query from full archive
+- streamPostsSearch
+- get counts from last 7 days
+- data engineer
+- retrieve the authenticated user's profile
+- getUserMentions
+- getPostsCountsRecent
+- social media
+- get followers
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- creates, schedules, and analyzes social media content across platforms.
 slug: social-listening
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Social Listening and Analytics\"\n  description: \"Unified workflow for monitoring conversations, searching posts, analyzing trends, and extracting insights from X data. Used by data analysts, brand managers, and researchers.\"\n  tags:\n    - X API\n    - Social Listening\n    - Analytics\n    - Search\n    - Trends\n  personas:\n    - data analysts\n    - brand managers\n    - researchers\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-posts\n      location: \"./shared/posts.yaml\"\n    - import: x-streaming\n      location: \"./shared/streaming.yaml\"\n    - import: x-users\n      location: \"./shared/users.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: x-listening-api\n      resources:\n        - path: /v1/listening/search/recent\n          name: search-recent\n\
+  \          description: \"Search recent posts\"\n          operations:\n            - method: POST\n              name: searchPostsRecent\n              description: \"Search posts from last 7 days\"\n              call: \"x-listening-api.searchPostsRecent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/search/all\n          name: search-all\n          description: \"Search all posts\"\n          operations:\n            - method: POST\n              name: searchPostsAll\n              description: \"Search full archive of posts\"\n              call: \"x-listening-api.searchPostsAll\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/counts/recent\n          name: counts-recent\n          description: \"Get recent post counts\"\n          operations:\n            - method: GET\n              name: getPostsCountsRecent\n \
+  \             description: \"Get counts from last 7 days\"\n              call: \"x-listening-api.getPostsCountsRecent\"\n              with:\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/counts/all\n          name: counts-all\n          description: \"Get all post counts\"\n          operations:\n            - method: GET\n              name: getPostsCountsAll\n              description: \"Get counts from full archive\"\n              call: \"x-listening-api.getPostsCountsAll\"\n              with:\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/insights/28hr\n          name: insights-28hr\n          description: \"Get 28-hour post insights\"\n          operations:\n            - method: GET\n              name: getInsights28Hr\n             \
+  \ description: \"Get post insights for last 28 hours\"\n              call: \"x-listening-api.getInsights28Hr\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/insights/historical\n          name: insights-historical\n          description: \"Get historical post insights\"\n          operations:\n            - method: GET\n              name: getInsightsHistorical\n              description: \"Get historical post insights\"\n              call: \"x-listening-api.getInsightsHistorical\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/streams/search\n          name: search-stream\n          description: \"Filtered search stream\"\n          operations:\n            - method: GET\n              name: streamPostsSearch\n              description: \"Stream posts matching filter rules\"\n              call: \"x-listening-api.streamPostsSearch\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/streams/search/rules\n          name: stream-rules\n          description: \"Manage stream filter rules\"\n          operations:\n            - method: POST\n              name: addSearchStreamRules\n              description: \"Add or delete stream rules\"\n              call: \"x-listening-api.addSearchStreamRules\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: getSearchStreamRules\n              description: \"Get current stream rules\"\n              call: \"x-listening-api.getSearchStreamRules\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/streams/firehose\n          name: firehose\n          description: \"Full firehose stream\"\n          operations:\n            -\
+  \ method: GET\n              name: streamPostsFirehose\n              description: \"Stream all public posts\"\n              call: \"x-listening-api.streamPostsFirehose\"\n              with:\n                partition: \"rest.partition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/streams/sample10\n          name: sample10\n          description: \"10% sample stream\"\n          operations:\n            - method: GET\n              name: streamPostsSample10\n              description: \"Stream 10% sample of posts\"\n              call: \"x-listening-api.streamPostsSample10\"\n              with:\n                partition: \"rest.partition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/users\n          name: users\n          description: \"Look up users by IDs\"\n          operations:\n            - method: GET\n\
+  \              name: getUsersByIds\n              description: \"Retrieve users by IDs\"\n              call: \"x-listening-api.getUsersByIds\"\n              with:\n                ids: \"rest.ids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/users/by\n          name: users-by-usernames\n          description: \"Look up users by usernames\"\n          operations:\n            - method: GET\n              name: getUsersByUsernames\n              description: \"Retrieve users by usernames\"\n              call: \"x-listening-api.getUsersByUsernames\"\n              with:\n                usernames: \"rest.usernames\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/users/{id}/followers\n          name: followers\n          description: \"Get followers\"\n          operations:\n            - method: GET\n              name:\
+  \ getFollowers\n              description: \"Get user followers\"\n              call: \"x-listening-api.getFollowers\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/listening/users/{id}/following\n          name: following\n          description: \"Get following\"\n          operations:\n            - method: GET\n              name: getFollowing\n              description: \"Get users being followed\"\n              call: \"x-listening-api.getFollowing\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: x-listening-mcp\n      transport: http\n      tools:\n        - name: searchPostsRecent\n          description: \"Search for posts from the last 7 days\"\n          hints:\n            readOnly: true\n\
+  \            idempotent: true\n          call: \"x-listening-mcp.searchPostsRecent\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: searchPostsAll\n          description: \"Search the full archive of posts\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.searchPostsAll\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getPostsCountsRecent\n          description: \"Get counts of posts matching a query from last 7 days\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getPostsCountsRecent\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getPostsCountsAll\n          description: \"Get counts of posts matching a query from full archive\"\n   \
+  \       hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getPostsCountsAll\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getInsights28Hr\n          description: \"Get post insights for the last 28 hours\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getInsights28Hr\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getInsightsHistorical\n          description: \"Get historical post insights\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getInsightsHistorical\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: streamPostsSearch\n          description: \"Stream posts matching filtered stream\
+  \ rules in real-time\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.streamPostsSearch\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: addSearchStreamRules\n          description: \"Add or delete rules for the filtered search stream\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-listening-mcp.addSearchStreamRules\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getSearchStreamRules\n          description: \"Get current rules for the filtered search stream\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getSearchStreamRules\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: streamPostsFirehose\n          description: \"Stream all public\
+  \ posts in real-time via the firehose\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.streamPostsFirehose\"\n          with:\n            partition: \"tools.partition\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: streamPostsSample10\n          description: \"Stream a 10% sample of all public posts in real-time\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.streamPostsSample10\"\n          with:\n            partition: \"tools.partition\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUsersByIds\n          description: \"Retrieve multiple users by their IDs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getUsersByIds\"\n          with:\n            ids: \"tools.ids\"\n    \
+  \      outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUsersByUsernames\n          description: \"Retrieve multiple users by their usernames\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getUsersByUsernames\"\n          with:\n            usernames: \"tools.usernames\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUsersMe\n          description: \"Retrieve the authenticated user's profile\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getUsersMe\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getFollowers\n          description: \"Get followers of a user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getFollowers\"\n      \
+  \    with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getFollowing\n          description: \"Get users that a user is following\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getFollowing\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUserTimeline\n          description: \"Get posts authored by a specific user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-listening-mcp.getUserTimeline\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUserMentions\n          description: \"Get posts mentioning a specific user\"\n          hints:\n            readOnly: true\n        \
+  \    idempotent: true\n          call: \"x-listening-mcp.getUserMentions\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/twitter/refs/heads/main/capabilities/social-listening.yaml
 tags:
 - X API
 - Social Listening

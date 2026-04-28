@@ -65,79 +65,90 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- recruiting
-- job posting, recruiting, and applicant tracking.
-- campaign management
-- ad account management.
-- get audience count by targeting criteria.
-- search ad targeting entities
-- employee development tracking and content access.
-- sales intelligence, lead management, and crm integration.
-- careers
-- create ad account
-- retrieve an ad account by id.
-- search for ad accounts.
-- retrieve a campaign by id.
-- retrieve dmp segments.
-- audience insights.
-- get dmp segments
-- delete a campaign group.
-- create a new ad creative.
-- marketing
-- forecast reach and impressions for media planning.
-- create dmp segment
-- business
-- stream user data to a dmp segment.
-- get ad account by id
-- get campaign by id
-- data portability and advertiser transparency for dma.
-- dmp segment management.
-- individual ad account operations.
-- stream company data to a dmp segment.
-- campaign group management.
-- campaign management.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- message archiving and regulatory communications governance.
-- forecast reach and impressions.
-- search for campaigns.
-- stream companies
-- create creative
-- search for campaign groups.
-- fetch audience insights by targeting criteria.
-- uses sales navigator for lead generation and crm sync.
-- advertising
-- archive a campaign.
-- search campaigns
-- retrieve available ad targeting facets.
-- professional networking
-- media planning
-- search campaign groups
-- tracks employee learning activity and completions.
-- update ad account
-- search for ad targeting entities.
-- integrates linkedin authentication and sharing into applications.
-- get audience insights
-- update an ad account.
-- posts jobs and manages candidates through ats integrations.
-- get audience count
-- create a new ad account.
 - create a new dmp segment.
-- stream users
-- archive campaign
-- ad targeting facets.
-- authentication, sharing, and verification for consumer apps.
-- get ad targeting facets
-- search ad accounts
-- forecast impressions
-- media plan forecasting.
-- creative management.
-- archives communications for regulatory compliance.
 - b2b advertising, audience targeting, and campaign analytics.
+- retrieve an ad account by id.
+- employee development tracking and content access.
+- archive campaign
+- retrieve available ad targeting facets.
+- stream users
+- retrieve dmp segments.
+- delete campaign group
+- get audience insights
+- create dmp segment
+- get ad account by id
+- advertising
+- get dmp segments
+- dmp segment management.
+- retrieve a campaign by id.
+- archive a campaign.
+- sales intelligence, lead management, and crm integration.
+- ad account management.
+- archives communications for regulatory compliance.
+- search campaign groups
+- uses sales navigator for lead generation and crm sync.
+- media plan forecasting.
+- get ad targeting facets
+- careers
+- forecast impressions
+- search for ad accounts.
+- update ad account
+- stream user data to a dmp segment.
+- search ad accounts
+- get campaign by id
+- integrates linkedin authentication and sharing into applications.
+- data portability and advertiser transparency for dma.
+- get audience count
+- update an ad account.
+- business
+- job posting, recruiting, and applicant tracking.
+- search campaigns
+- search for campaign groups.
+- create a new ad creative.
+- individual ad account operations.
+- campaign management.
+- delete a campaign group.
+- audience insights.
+- media planning
+- campaign management
+- create creative
+- ad targeting facets.
+- stream company data to a dmp segment.
+- creative management.
+- create a new ad account.
+- forecast reach and impressions for media planning.
+- tracks employee learning activity and completions.
+- campaign group management.
+- recruiting
+- message archiving and regulatory communications governance.
+- professional networking
+- search for campaigns.
+- fetch audience insights by targeting criteria.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- create ad account
+- stream companies
+- marketing
+- forecast reach and impressions.
+- posts jobs and manages candidates through ats integrations.
+- search ad targeting entities
 - social media
+- authentication, sharing, and verification for consumer apps.
+- search for ad targeting entities.
+- get audience count by targeting criteria.
 - linkedin
 - audience count estimation.
-- delete campaign group
 slug: campaign-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Campaign Management\"\n  description: \"Unified workflow for marketing managers to plan, build, and manage LinkedIn ad campaigns -- combining campaign management, audience targeting, audience insights, and media planning APIs.\"\n  tags:\n    - LinkedIn\n    - Campaign Management\n    - Advertising\n    - Media Planning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-campaigns\n      location: ./shared/marketing-campaigns.yaml\n    - import: marketing-audience\n      location: ./shared/marketing-audience.yaml\n    - import: marketing-audience-insights\n      location: ./shared/marketing-audience-insights.yaml\n    - import: marketing-media-planning\n      location: ./shared/marketing-media-planning.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace:\
+  \ campaign-management-api\n      description: \"Unified REST API for LinkedIn campaign management workflows.\"\n      resources:\n        - path: /v1/ad-accounts\n          name: ad-accounts\n          description: \"Ad account management.\"\n          operations:\n            - method: GET\n              name: search-ad-accounts\n              description: \"Search for ad accounts.\"\n              call: \"marketing-campaigns.search-ad-accounts\"\n            - method: POST\n              name: create-ad-account\n              description: \"Create a new ad account.\"\n              call: \"marketing-campaigns.create-ad-account\"\n        - path: /v1/ad-accounts/{SponsoredAccountId}\n          name: ad-account-by-id\n          description: \"Individual ad account operations.\"\n          operations:\n            - method: GET\n              name: get-ad-account-by-id\n              description: \"Retrieve an ad account by ID.\"\n              call: \"marketing-campaigns.get-ad-account-by-id\"\
+  \n            - method: POST\n              name: update-ad-account\n              description: \"Update an ad account.\"\n              call: \"marketing-campaigns.update-ad-account\"\n        - path: /v1/campaign-groups\n          name: campaign-groups\n          description: \"Campaign group management.\"\n          operations:\n            - method: GET\n              name: search-campaign-groups\n              description: \"Search for campaign groups.\"\n              call: \"marketing-campaigns.search-campaign-groups\"\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Campaign management.\"\n          operations:\n            - method: GET\n              name: search-campaigns\n              description: \"Search for campaigns.\"\n              call: \"marketing-campaigns.search-campaigns\"\n        - path: /v1/creatives\n          name: creatives\n          description: \"Creative management.\"\n          operations:\n            - method: POST\n\
+  \              name: create-creative\n              description: \"Create a new ad creative.\"\n              call: \"marketing-campaigns.create-creative\"\n        - path: /v1/audience-counts\n          name: audience-counts\n          description: \"Audience count estimation.\"\n          operations:\n            - method: GET\n              name: get-audience-count\n              description: \"Get audience count by targeting criteria.\"\n              call: \"marketing-campaigns.get-audience-count\"\n        - path: /v1/dmp-segments\n          name: dmp-segments\n          description: \"DMP segment management.\"\n          operations:\n            - method: GET\n              name: get-dmp-segments\n              description: \"Retrieve DMP segments.\"\n              call: \"marketing-audience.get-dmp-segments\"\n            - method: POST\n              name: create-dmp-segment\n              description: \"Create a new DMP segment.\"\n              call: \"marketing-audience.create-dmp-segment\"\
+  \n        - path: /v1/ad-targeting-facets\n          name: ad-targeting-facets\n          description: \"Ad targeting facets.\"\n          operations:\n            - method: GET\n              name: get-ad-targeting-facets\n              description: \"Retrieve available ad targeting facets.\"\n              call: \"marketing-audience-insights.get-ad-targeting-facets\"\n        - path: /v1/audience-insights\n          name: audience-insights\n          description: \"Audience insights.\"\n          operations:\n            - method: POST\n              name: get-audience-insights\n              description: \"Fetch audience insights by targeting criteria.\"\n              call: \"marketing-audience-insights.get-audience-insights\"\n        - path: /v1/media-plans\n          name: media-plans\n          description: \"Media plan forecasting.\"\n          operations:\n            - method: POST\n              name: forecast-impressions\n              description: \"Forecast reach and impressions.\"\
+  \n              call: \"marketing-media-planning.forecast-impressions\"\n\n    - type: mcp\n      port: 9090\n      namespace: campaign-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted LinkedIn campaign management.\"\n      tools:\n        - name: search-ad-accounts\n          description: \"Search for ad accounts.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.search-ad-accounts\"\n        - name: create-ad-account\n          description: \"Create a new ad account.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"marketing-campaigns.create-ad-account\"\n        - name: get-ad-account-by-id\n          description: \"Retrieve an ad account by ID.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.get-ad-account-by-id\"\n        - name: search-campaign-groups\n         \
+  \ description: \"Search for campaign groups.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.search-campaign-groups\"\n        - name: search-campaigns\n          description: \"Search for campaigns.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.search-campaigns\"\n        - name: get-campaign-by-id\n          description: \"Retrieve a campaign by ID.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.get-campaign-by-id\"\n        - name: archive-campaign\n          description: \"Archive a campaign.\"\n          hints: { readOnly: false, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.archive-campaign\"\n        - name: delete-campaign-group\n          description: \"Delete a campaign group.\"\n          hints: { readOnly: false, destructive: true, idempotent:\
+  \ true }\n          call: \"marketing-campaigns.delete-campaign-group\"\n        - name: create-creative\n          description: \"Create a new ad creative.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"marketing-campaigns.create-creative\"\n        - name: get-audience-count\n          description: \"Get audience count by targeting criteria.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-campaigns.get-audience-count\"\n        - name: get-dmp-segments\n          description: \"Retrieve DMP segments.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-audience.get-dmp-segments\"\n        - name: create-dmp-segment\n          description: \"Create a new DMP segment.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"marketing-audience.create-dmp-segment\"\n        - name: stream-companies\n\
+  \          description: \"Stream company data to a DMP segment.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"marketing-audience.stream-companies\"\n        - name: stream-users\n          description: \"Stream user data to a DMP segment.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"marketing-audience.stream-users\"\n        - name: get-ad-targeting-facets\n          description: \"Retrieve available ad targeting facets.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-audience-insights.get-ad-targeting-facets\"\n        - name: search-ad-targeting-entities\n          description: \"Search for ad targeting entities.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-audience-insights.search-ad-targeting-entities\"\n        - name: get-audience-insights\n          description:\
+  \ \"Fetch audience insights by targeting criteria.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-audience-insights.get-audience-insights\"\n        - name: forecast-impressions\n          description: \"Forecast reach and impressions for media planning.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-media-planning.forecast-impressions\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/linkedin/refs/heads/main/capabilities/campaign-management.yaml
 tags:
 - LinkedIn
 - Campaign Management

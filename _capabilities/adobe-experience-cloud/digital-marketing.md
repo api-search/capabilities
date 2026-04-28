@@ -37,66 +37,75 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
+- journey orchestration
+- Marketing Technologist
+- personalized offers.
+- list campaign messages in adobe journey optimizer.
+- digital analytics reporting and audience insights.
+- CDP Administrator
+- target list activities
 - list analytics segments.
+- list available metrics for an adobe analytics report suite.
+- target list audiences
+- list personalized offers in adobe journey optimizer.
+- unified customer profiles and data management.
+- digital marketing
+- profile management, audience segmentation, and data ingestion.
+- analytics list segments
+- ajo create offer
+- list target audiences.
+- analytics
+- run report
+- list activities
+- analytics, a/b testing, and journey orchestration for digital marketers.
 - analytics list metrics
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- run an adobe analytics report.
+- list audiences
+- create a new personalized offer in adobe journey optimizer.
+- multi-channel customer journey management.
+- a/b test and personalization activities.
+- list segments
+- Data Engineer
+- customer journeys.
+- list journey optimizer offers.
+- ajo list offers
+- list customer journeys in adobe journey optimizer.
+- target audiences.
+- audience segment management.
+- ajo list messages
+- personalization
+- Digital Marketer
+- a/b testing and content personalization.
+- analytics report execution.
+- marketing professional using analytics, personalization, and journey tools.
 - list targeting audiences in adobe target.
 - campaign management
-- run analytics report
-- target audiences.
-- list available metrics for an adobe analytics report suite.
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- audience segment management.
-- adobe experience cloud
-- analytics list segments
-- list customer journeys in adobe journey optimizer.
-- ajo create offer
-- a/b testing and content personalization.
-- create a new personalized offer in adobe journey optimizer.
-- unified customer profiles and data management.
-- multi-channel customer journey management.
-- ajo list journeys
-- list target activities.
-- Data Engineer
-- run an adobe analytics report with dimensions, metrics, and segments.
-- ajo list offers
-- list audiences
-- list campaign messages in adobe journey optimizer.
-- list segments
-- target list audiences
-- digital analytics reporting and audience insights.
-- technical marketer integrating experience cloud apis into marketing stack.
-- marketing professional using analytics, personalization, and journey tools.
-- run report
-- list journey optimizer offers.
-- list target audiences.
-- digital marketing
-- CDP Administrator
-- personalized offers.
-- target list offers
-- target list activities
 - customer experience
-- list personalized offers in adobe journey optimizer.
-- ajo list messages
-- profile management, audience segmentation, and data ingestion.
-- analytics report execution.
-- list journeys
+- target list offers
+- ajo list journeys
 - list journey optimizer journeys.
-- analytics
-- a/b test and personalization activities.
-- list activities
-- Digital Marketer
-- Marketing Technologist
-- administrator managing customer profiles, segments, and identity resolution.
-- list offers
-- run an adobe analytics report.
-- list a/b test and personalization activities in adobe target.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
 - list content offers in adobe target.
-- journey orchestration
-- personalization
-- customer journeys.
+- administrator managing customer profiles, segments, and identity resolution.
+- adobe experience cloud
+- list journeys
+- list target activities.
+- run an adobe analytics report with dimensions, metrics, and segments.
+- run analytics report
 - list audience segments in adobe analytics.
+- list a/b test and personalization activities in adobe target.
+- technical marketer integrating experience cloud apis into marketing stack.
+- list offers
 slug: digital-marketing
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Experience Cloud Digital Marketing\"\n  description: \"Unified workflow capability combining Adobe Analytics, Adobe Target, and Adobe Journey Optimizer for data-driven marketing campaigns, A/B testing, and personalized journey orchestration. Designed for digital marketers and marketing technologists.\"\n  tags:\n    - Adobe Experience Cloud\n    - Digital Marketing\n    - Analytics\n    - Personalization\n    - Journey Orchestration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ANALYTICS_ACCESS_TOKEN: ADOBE_ANALYTICS_ACCESS_TOKEN\n      ADOBE_TARGET_ACCESS_TOKEN: ADOBE_TARGET_ACCESS_TOKEN\n      ADOBE_AJO_ACCESS_TOKEN: ADOBE_AJO_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: analytics-api\n      location: ./shared/analytics-api.yaml\n    - import: target-api\n      location: ./shared/target-api.yaml\n    - import: journey-optimizer\n      location: ./shared/journey-optimizer-api.yaml\n\
+  \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: digital-marketing-api\n      description: \"Unified REST API for Adobe Experience Cloud digital marketing — analytics, personalization, journeys, and offers.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Analytics report execution.\"\n          operations:\n            - method: POST\n              name: run-report\n              description: \"Run an Adobe Analytics report.\"\n              call: \"analytics-api.run-report\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments\n          name: segments\n          description: \"Audience segment management.\"\n          operations:\n            - method: GET\n              name: list-segments\n              description: \"List analytics segments.\"\n              call: \"analytics-api.list-segments\"\n              outputParameters:\n      \
+  \          - type: object\n                  mapping: \"$.\"\n        - path: /v1/activities\n          name: activities\n          description: \"A/B test and personalization activities.\"\n          operations:\n            - method: GET\n              name: list-activities\n              description: \"List Target activities.\"\n              call: \"target-api.list-activities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audiences\n          name: audiences\n          description: \"Target audiences.\"\n          operations:\n            - method: GET\n              name: list-audiences\n              description: \"List Target audiences.\"\n              call: \"target-api.list-audiences\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/journeys\n          name: journeys\n          description: \"Customer journeys.\"\n          operations:\n\
+  \            - method: GET\n              name: list-journeys\n              description: \"List Journey Optimizer journeys.\"\n              call: \"journey-optimizer.list-journeys\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/offers\n          name: offers\n          description: \"Personalized offers.\"\n          operations:\n            - method: GET\n              name: list-offers\n              description: \"List Journey Optimizer offers.\"\n              call: \"journey-optimizer.list-offers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: digital-marketing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted digital marketing — analyze campaigns, test personalization, orchestrate journeys, and manage offers.\"\n      tools:\n        - name: run-analytics-report\n       \
+  \   description: \"Run an Adobe Analytics report with dimensions, metrics, and segments.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"analytics-api.run-report\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: analytics-list-segments\n          description: \"List audience segments in Adobe Analytics.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"analytics-api.list-segments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: analytics-list-metrics\n          description: \"List available metrics for an Adobe Analytics report suite.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"analytics-api.list-metrics\"\n          with:\n            rsid: \"tools.rsid\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: target-list-activities\n          description: \"List A/B test and personalization activities in Adobe Target.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"target-api.list-activities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: target-list-audiences\n          description: \"List targeting audiences in Adobe Target.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"target-api.list-audiences\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: target-list-offers\n          description: \"List content offers in Adobe Target.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"target-api.list-offers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ajo-list-journeys\n\
+  \          description: \"List customer journeys in Adobe Journey Optimizer.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"journey-optimizer.list-journeys\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ajo-list-offers\n          description: \"List personalized offers in Adobe Journey Optimizer.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"journey-optimizer.list-offers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ajo-create-offer\n          description: \"Create a new personalized offer in Adobe Journey Optimizer.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"journey-optimizer.create-offer\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n           \
+  \ - type: object\n              mapping: \"$.\"\n        - name: ajo-list-messages\n          description: \"List campaign messages in Adobe Journey Optimizer.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"journey-optimizer.list-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-experience-cloud/refs/heads/main/capabilities/digital-marketing.yaml
 tags:
 - Adobe Experience Cloud
 - Digital Marketing

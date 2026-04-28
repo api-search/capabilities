@@ -57,65 +57,76 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- list installed liberty features
-- get liberty server runtime information
-- get was config
-- stop a was server
+- list liberty collective members
+- get was server health status
+- list jmx mbeans via rest connector
+- list was servers
 - get liberty server configuration
 - application lifecycle management across was and liberty
-- liberty feature management
-- server configuration
 - list features
-- microservices
-- get liberty server info
-- get liberty health check results
-- list collective clusters
 - cluster management
-- was start server
-- server management
-- get liberty server information
-- list members
-- administration
-- list liberty collective members
-- list deployed applications on traditional websphere
-- list was servers in the cell
-- liberty get server info
-- get was health
-- list liberty collective clusters
-- get liberty health
-- middleware
-- list servers
-- list mbeans
-- enterprise java
-- list applications on traditional was
-- liberty list applications
-- application server
-- liberty
-- list applications on liberty
-- list was servers
-- was list servers
-- start a was server
-- was stop server
-- jmx mbean access
-- ibm websphere
-- list collective members
-- list was configuration resource types
-- list liberty applications
-- list clusters in liberty collective
-- get collective controller information
-- collective member management
-- list registered mbeans
-- j2ee
-- list jmx mbeans via rest connector
-- get controller info
-- get was server health status
-- list was clusters
-- was list applications
 - list deployed applications on liberty
-- get liberty config
+- start a was server
+- list clusters in liberty collective
+- collective member management
+- get was config
+- list liberty collective clusters
+- stop a was server
+- jmx mbean access
+- was list servers
+- liberty get server info
+- list mbeans
+- middleware
+- get collective controller information
+- get controller info
+- list collective members
+- list liberty applications
+- liberty
+- liberty feature management
+- list collective clusters
+- get liberty server information
+- liberty list applications
 - cloud native
+- j2ee
+- was stop server
+- list registered mbeans
+- enterprise java
+- get liberty health
+- list applications on traditional was
+- get liberty config
+- was list applications
+- server management
+- get liberty server runtime information
+- list members
+- list installed liberty features
+- list was configuration resource types
+- administration
 - list was applications
+- list deployed applications on traditional websphere
+- application server
+- was start server
+- get was health
+- get liberty server info
+- microservices
+- get liberty health check results
+- list servers
+- list was servers in the cell
+- ibm websphere
+- server configuration
+- list applications on liberty
+- list was clusters
 slug: server-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Server Administration\"\n  description: \"Unified workflow for administering WebSphere Application Server and Liberty environments, combining traditional admin, Liberty admin, collective controller, and JMX connector APIs for platform administrators.\"\n  tags:\n    - IBM WebSphere\n    - Administration\n    - Server Management\n    - Liberty\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n      LIBERTY_USERNAME: LIBERTY_USERNAME\n      LIBERTY_PASSWORD: LIBERTY_PASSWORD\n\ncapability:\n  consumes:\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n    - import: liberty-admin\n      location: ./shared/liberty-admin.yaml\n    - import: rest-connector\n      location: ./shared/rest-connector.yaml\n    - import: collective-controller\n      location: ./shared/collective-controller.yaml\n\
+  \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: server-admin-api\n      description: \"Unified REST API for WebSphere server administration.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n          description: \"Application lifecycle management across WAS and Liberty\"\n          operations:\n            - method: GET\n              name: list-was-applications\n              description: \"List applications on traditional WAS\"\n              call: \"admin-rest.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-liberty-applications\n              description: \"List applications on Liberty\"\n              call: \"liberty-admin.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/servers\n          name: servers\n        \
+  \  description: \"Server management\"\n          operations:\n            - method: GET\n              name: list-servers\n              description: \"List WAS servers\"\n              call: \"admin-rest.list-servers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-liberty-server-info\n              description: \"Get Liberty server information\"\n              call: \"liberty-admin.get-server-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters\n          name: clusters\n          description: \"Cluster management\"\n          operations:\n            - method: GET\n              name: list-was-clusters\n              description: \"List WAS clusters\"\n              call: \"admin-rest.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\
+  \n            - method: GET\n              name: list-collective-clusters\n              description: \"List Liberty collective clusters\"\n              call: \"collective-controller.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/members\n          name: members\n          description: \"Collective member management\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List collective members\"\n              call: \"collective-controller.list-members\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/configuration\n          name: configuration\n          description: \"Server configuration\"\n          operations:\n            - method: GET\n              name: get-was-config\n              description: \"List WAS configuration resource types\"\n              call:\
+  \ \"admin-rest.list-config-resources\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-liberty-config\n              description: \"Get Liberty server configuration\"\n              call: \"liberty-admin.get-server-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/mbeans\n          name: mbeans\n          description: \"JMX MBean access\"\n          operations:\n            - method: GET\n              name: list-mbeans\n              description: \"List registered MBeans\"\n              call: \"rest-connector.list-mbeans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/features\n          name: features\n          description: \"Liberty feature management\"\n          operations:\n            - method: GET\n              name: list-features\n\
+  \              description: \"List installed Liberty features\"\n              call: \"liberty-admin.list-features\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: server-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted WebSphere server administration.\"\n      tools:\n        - name: was-list-applications\n          description: \"List deployed applications on traditional WebSphere\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"admin-rest.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: liberty-list-applications\n          description: \"List deployed applications on Liberty\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"liberty-admin.list-applications\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: was-list-servers\n          description: \"List WAS servers in the cell\"\n          hints:\n            readOnly: true\n          call: \"admin-rest.list-servers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: liberty-get-server-info\n          description: \"Get Liberty server runtime information\"\n          hints:\n            readOnly: true\n          call: \"liberty-admin.get-server-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: was-start-server\n          description: \"Start a WAS server\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"admin-rest.start-server\"\n          with:\n            serverName: \"tools.serverName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: was-stop-server\n\
+  \          description: \"Stop a WAS server\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"admin-rest.stop-server\"\n          with:\n            serverName: \"tools.serverName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-collective-members\n          description: \"List Liberty collective members\"\n          hints:\n            readOnly: true\n          call: \"collective-controller.list-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-collective-clusters\n          description: \"List clusters in Liberty collective\"\n          hints:\n            readOnly: true\n          call: \"collective-controller.list-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-controller-info\n          description: \"Get collective controller information\"\
+  \n          hints:\n            readOnly: true\n          call: \"collective-controller.get-controller-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mbeans\n          description: \"List JMX MBeans via REST connector\"\n          hints:\n            readOnly: true\n          call: \"rest-connector.list-mbeans\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-features\n          description: \"List installed Liberty features\"\n          hints:\n            readOnly: true\n          call: \"liberty-admin.list-features\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-liberty-config\n          description: \"Get Liberty server configuration\"\n          hints:\n            readOnly: true\n          call: \"liberty-admin.get-server-config\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: get-was-health\n          description: \"Get WAS server health status\"\n          hints:\n            readOnly: true\n          call: \"admin-rest.get-health-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-liberty-health\n          description: \"Get Liberty health check results\"\n          hints:\n            readOnly: true\n          call: \"liberty-admin.get-health\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/websphere/refs/heads/main/capabilities/server-administration.yaml
 tags:
 - IBM WebSphere
 - Administration

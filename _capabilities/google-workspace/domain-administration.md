@@ -58,58 +58,70 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- list groups in the domain.
-- google workspace
-- create org unit
-- list organizational units.
-- create a new group.
-- make a user an admin.
 - create user
-- make user admin
-- sign out user
-- email
-- create a group.
-- get user details.
-- list org units
-- update a group.
-- create a new user.
-- domain administration
-- organizational unit management.
-- list users in the domain.
-- video conferencing
-- calendar
-- get group details.
-- productivity
-- patch user
-- delete group
-- get user
-- delete user
-- user account management.
-- update a user.
-- list users
-- group management.
-- create a new user in the domain.
-- update user
-- individual user management.
-- list groups
-- collaboration
-- delete a user.
-- individual group management.
-- group management
 - list groups.
-- delete a group.
-- get group
-- update group
-- undelete user
-- storage
-- list users in the google workspace domain.
-- patch user properties.
-- create group
-- create an organizational unit.
+- make a user an admin.
+- group management
 - sign out a user from all sessions.
-- user management
 - undelete a deleted user.
+- get group
+- video conferencing
+- update group
+- list users in the google workspace domain.
+- create a new user in the domain.
+- make user admin
+- google workspace
+- domain administration
+- delete group
+- individual group management.
+- user account management.
+- update user
+- delete a user.
+- list org units
+- create a new group.
+- patch user
+- list groups
+- create org unit
+- undelete user
+- group management.
+- list organizational units.
+- delete user
+- sign out user
+- list users
+- list users in the domain.
+- create an organizational unit.
+- storage
+- user management
+- update a user.
+- individual user management.
+- update a group.
+- list groups in the domain.
+- calendar
+- collaboration
+- create group
+- create a new user.
+- productivity
+- patch user properties.
+- email
+- get user
+- create a group.
+- organizational unit management.
+- delete a group.
+- get user details.
+- get group details.
 slug: domain-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Workspace Domain Administration\"\n  description: \"Unified workflow for managing Google Workspace domain resources including users, groups, and organizational units. Used by IT administrators and workspace domain managers.\"\n  tags:\n    - Google Workspace\n    - Domain Administration\n    - User Management\n    - Group Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_WORKSPACE_ACCESS_TOKEN: GOOGLE_WORKSPACE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: gws-admin\n      location: ./shared/admin-directory.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gws-domain-admin-api\n      description: \"Unified REST API for Google Workspace domain administration.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User account management.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-users\n              description: \"List users in the domain.\"\n              call: \"gws-admin.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user.\"\n              call: \"gws-admin.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{id}\n          name: user-details\n          description: \"Individual user management.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details.\"\n              call: \"gws-admin.get-user\"\n              with:\n                userKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name:\
+  \ update-user\n              description: \"Update a user.\"\n              call: \"gws-admin.update-user\"\n              with:\n                userKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-user\n              description: \"Delete a user.\"\n              call: \"gws-admin.delete-user\"\n              with:\n                userKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List groups.\"\n              call: \"gws-admin.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\
+  \ create-group\n              description: \"Create a group.\"\n              call: \"gws-admin.create-group\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups/{id}\n          name: group-details\n          description: \"Individual group management.\"\n          operations:\n            - method: GET\n              name: get-group\n              description: \"Get group details.\"\n              call: \"gws-admin.get-group\"\n              with:\n                groupKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-group\n              description: \"Update a group.\"\n              call: \"gws-admin.update-group\"\n              with:\n                groupKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            -\
+  \ method: DELETE\n              name: delete-group\n              description: \"Delete a group.\"\n              call: \"gws-admin.delete-group\"\n              with:\n                groupKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/org-units\n          name: org-units\n          description: \"Organizational unit management.\"\n          operations:\n            - method: GET\n              name: list-org-units\n              description: \"List organizational units.\"\n              call: \"gws-admin.list-org-units\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-org-unit\n              description: \"Create an organizational unit.\"\n              call: \"gws-admin.create-org-unit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
+  \n    - type: mcp\n      port: 9080\n      namespace: gws-domain-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Google Workspace domain administration.\"\n      tools:\n        - name: list-users\n          description: \"List users in the Google Workspace domain.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"gws-admin.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new user in the domain.\"\n          hints:\n            readOnly: false\n          call: \"gws-admin.create-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get user details.\"\n          hints:\n            readOnly: true\n          call: \"gws-admin.get-user\"\n          with:\n            userKey: \"tools.userKey\"\n        \
+  \  outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-user\n          description: \"Update a user.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gws-admin.update-user\"\n          with:\n            userKey: \"tools.userKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: patch-user\n          description: \"Patch user properties.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gws-admin.patch-user\"\n          with:\n            userKey: \"tools.userKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Delete a user.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"gws-admin.delete-user\"\n          with:\n            userKey: \"tools.userKey\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: make-user-admin\n          description: \"Make a user an admin.\"\n          hints:\n            readOnly: false\n          call: \"gws-admin.make-user-admin\"\n          with:\n            userKey: \"tools.userKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: undelete-user\n          description: \"Undelete a deleted user.\"\n          hints:\n            readOnly: false\n          call: \"gws-admin.undelete-user\"\n          with:\n            userKey: \"tools.userKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: sign-out-user\n          description: \"Sign out a user from all sessions.\"\n          hints:\n            readOnly: false\n          call: \"gws-admin.sign-out-user\"\n          with:\n            userKey: \"tools.userKey\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List groups in the domain.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"gws-admin.list-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-group\n          description: \"Create a new group.\"\n          hints:\n            readOnly: false\n          call: \"gws-admin.create-group\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-group\n          description: \"Get group details.\"\n          hints:\n            readOnly: true\n          call: \"gws-admin.get-group\"\n          with:\n            groupKey: \"tools.groupKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-group\n          description: \"Update a group.\"\n          hints:\n\
+  \            readOnly: false\n            idempotent: true\n          call: \"gws-admin.update-group\"\n          with:\n            groupKey: \"tools.groupKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-group\n          description: \"Delete a group.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"gws-admin.delete-group\"\n          with:\n            groupKey: \"tools.groupKey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-org-units\n          description: \"List organizational units.\"\n          hints:\n            readOnly: true\n          call: \"gws-admin.list-org-units\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-org-unit\n          description: \"Create an organizational unit.\"\n          hints:\n            readOnly: false\n\
+  \          call: \"gws-admin.create-org-unit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/google-workspace/refs/heads/main/capabilities/domain-administration.yaml
 tags:
 - Google Workspace
 - Domain Administration

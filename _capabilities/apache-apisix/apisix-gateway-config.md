@@ -35,45 +35,51 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- create route
-- API Gateway Administrator
-- route, upstream, consumer, and ssl management workflow.
-- delete route
-- api gateway
+- create a backend upstream.
+- update an existing apisix route.
 - delete an apisix route.
-- kubernetes
-- create upstream
+- create a new backend upstream with load balancing config.
+- Platform Engineer
 - create a new gateway route.
+- lua
+- list all apisix gateway routes.
+- API Gateway Administrator
+- open source
+- list all gateway routes.
+- nginx
+- authentication
+- apache apisix
+- route, upstream, consumer, and ssl management workflow.
 - list consumers
 - create an api consumer.
-- authentication
-- administrators configuring routes, consumers, and security policies.
-- create consumer
-- list routes
-- list all gateway routes.
-- update route
-- create a new backend upstream with load balancing config.
-- list all apisix gateway routes.
-- traffic management
-- engineers deploying and managing api gateway infrastructure.
 - list api consumers.
-- apache apisix
-- lua
-- create a new apisix route for traffic routing.
-- nginx
-- update an existing apisix route.
-- create a new api consumer with authentication plugins.
-- Platform Engineer
-- apache
-- list all backend upstream configurations.
-- list upstreams
-- create a backend upstream.
-- list backend upstreams.
-- open source
 - list all api consumers and their plugin configs.
-- configuration
 - cloud native
+- api gateway
+- list upstreams
+- create upstream
+- list all backend upstream configurations.
+- apache
+- traffic management
+- list routes
+- create route
+- update route
+- kubernetes
+- engineers deploying and managing api gateway infrastructure.
+- configuration
+- administrators configuring routes, consumers, and security policies.
+- create a new apisix route for traffic routing.
+- list backend upstreams.
+- create a new api consumer with authentication plugins.
+- delete route
+- create consumer
 slug: apisix-gateway-config
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache APISIX Gateway Configuration\n  description: Unified capability for configuring and managing Apache APISIX API\n    gateway resources including routes, upstreams, services, consumers, and SSL \n    certificates. Used by platform engineers and API gateway administrators.\n  tags:\n  - Apache APISIX\n  - API Gateway\n  - Configuration\n  - Cloud Native\n  - Traffic Management\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    APISIX_ADMIN_KEY: APISIX_ADMIN_KEY\ncapability:\n  consumes:\n  - import: apisix-admin\n    location: ./shared/apisix-admin.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: apisix-gateway-api\n    description: Unified REST API for APISIX gateway configuration.\n    resources:\n    - path: /v1/routes\n      name: routes\n      operations:\n      - method: GET\n        name: list-routes\n        description: List all gateway routes.\n        call: apisix-admin.list-routes\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-route\n        description: Create a new gateway route.\n        call: apisix-admin.create-route\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/upstreams\n      name: upstreams\n      operations:\n      - method: GET\n        name: list-upstreams\n        description: List backend upstreams.\n        call: apisix-admin.list-upstreams\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-upstream\n        description: Create a backend upstream.\n        call: apisix-admin.create-upstream\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/consumers\n      name: consumers\n      operations:\n      - method: GET\n        name: list-consumers\n        description: List API consumers.\n        call: apisix-admin.list-consumers\n \
+  \       outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-consumer\n        description: Create an API consumer.\n        call: apisix-admin.create-consumer\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: apisix-gateway-mcp\n    transport: http\n    description: MCP server for AI-assisted APISIX gateway configuration.\n    tools:\n    - name: list-routes\n      description: List all APISIX gateway routes.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: apisix-admin.list-routes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-route\n      description: Create a new APISIX route for traffic routing.\n      hints:\n        readOnly: false\n        openWorld: false\n      call: apisix-admin.create-route\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-route\n\
+  \      description: Update an existing APISIX route.\n      hints:\n        readOnly: false\n        idempotent: true\n      call: apisix-admin.update-route\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-route\n      description: Delete an APISIX route.\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: apisix-admin.delete-route\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-upstreams\n      description: List all backend upstream configurations.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: apisix-admin.list-upstreams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-upstream\n      description: Create a new backend upstream with load balancing config.\n      hints:\n        readOnly: false\n        openWorld: false\n\
+  \      call: apisix-admin.create-upstream\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-consumers\n      description: List all API consumers and their plugin configs.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: apisix-admin.list-consumers\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-consumer\n      description: Create a new API consumer with authentication plugins.\n      hints:\n        readOnly: false\n        openWorld: false\n      call: apisix-admin.create-consumer\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-apisix/refs/heads/main/capabilities/apisix-gateway-config.yaml
 tags:
 - Apache APISIX
 - API Gateway

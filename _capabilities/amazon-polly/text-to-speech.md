@@ -35,49 +35,57 @@ personas: []
 provider_name: Amazon Polly
 provider_slug: amazon-polly
 search_terms:
-- speech synthesis
-- neural engine
-- get the content of a pronunciation lexicon
-- generative ai
-- list and monitor asynchronous speech synthesis tasks
-- list lexicons
-- builds voice-enabled applications using polly speech synthesis
-- get lexicon
-- amazon
-- multi-channel text-to-speech synthesis workflow
-- aws
-- list pronunciation lexicons
-- list custom pronunciation lexicons for controlling how words are spoken
+- voice applications
 - tts
-- text-to-speech
-- custom pronunciation lexicons
-- list tasks
-- machine learning
-- ai
-- list available voices by language and engine
-- synthesize speech
-- voice
-- creates audio content from written text using polly
-- available synthesis voices
-- list available amazon polly voices filterable by language and engine type
+- list custom pronunciation lexicons for controlling how words are spoken
 - convert text to lifelike speech audio using amazon polly
-- list voices
-- create or update a custom pronunciation lexicon
+- ai
 - create lexicon
-- start an asynchronous speech synthesis task
+- list available voices by language and engine
+- list pronunciation lexicons
+- start synthesis task
+- start task
+- custom pronunciation lexicons
+- start an asynchronous synthesis task for long text with s3 output
+- amazon
+- get lexicon
+- multi-channel text-to-speech synthesis workflow
+- list synthesis tasks
+- speech synthesis
+- aws
 - speech synthesis from text
 - ssml
-- Application Developer
-- create or update a pronunciation lexicon
-- list synthesis tasks
-- start an asynchronous synthesis task for long text with s3 output
-- start synthesis task
 - convert text to speech audio
-- asynchronous synthesis tasks
-- start task
+- neural engine
+- list voices
+- list available amazon polly voices filterable by language and engine type
+- start an asynchronous speech synthesis task
+- list and monitor asynchronous speech synthesis tasks
+- get the content of a pronunciation lexicon
+- Application Developer
+- builds voice-enabled applications using polly speech synthesis
 - Content Creator
-- voice applications
+- creates audio content from written text using polly
+- asynchronous synthesis tasks
+- voice
+- text-to-speech
+- create or update a pronunciation lexicon
+- machine learning
+- generative ai
+- synthesize speech
+- create or update a custom pronunciation lexicon
+- available synthesis voices
+- list tasks
+- list lexicons
 slug: text-to-speech
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Polly Text-to-Speech\n  description: Workflow capability for converting text to lifelike speech using Amazon Polly. Combines speech synthesis, voice discovery, and lexicon management for developers building voice-enabled applications.\n  tags:\n    - Amazon\n    - AWS\n    - Text-To-Speech\n    - Speech Synthesis\n    - AI\n    - Voice Applications\n    - Machine Learning\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-polly\n      location: ./shared/amazon-polly.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: text-to-speech-api\n      description: Unified REST API for Amazon Polly text-to-speech workflows.\n      resources:\n        - path: /v1/speech\n          name: speech\n\
+  \          description: Speech synthesis from text\n          operations:\n            - method: POST\n              name: synthesize-speech\n              description: Convert text to speech audio\n              call: \"amazon-polly.synthesize-speech\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/voices\n          name: voices\n          description: Available synthesis voices\n          operations:\n            - method: GET\n              name: list-voices\n              description: List available voices by language and engine\n              call: \"amazon-polly.describe-voices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/lexicons\n          name: lexicons\n          description: Custom pronunciation lexicons\n          operations:\n            - method: GET\n              name: list-lexicons\n              description: List pronunciation\
+  \ lexicons\n              call: \"amazon-polly.list-lexicons\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: create-lexicon\n              description: Create or update a pronunciation lexicon\n              call: \"amazon-polly.put-lexicon\"\n              with:\n                LexiconName: \"rest.lexicon_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/tasks\n          name: tasks\n          description: Asynchronous synthesis tasks\n          operations:\n            - method: POST\n              name: start-task\n              description: Start an asynchronous speech synthesis task\n              call: \"amazon-polly.start-speech-synthesis-task\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-tasks\n\
+  \              description: List synthesis tasks\n              call: \"amazon-polly.list-speech-synthesis-tasks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: text-to-speech-mcp\n      transport: http\n      description: MCP server for AI-assisted text-to-speech workflows with Amazon Polly.\n      tools:\n        - name: synthesize-speech\n          description: Convert text to lifelike speech audio using Amazon Polly\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"amazon-polly.synthesize-speech\"\n          with:\n            text: \"tools.text\"\n            voice_id: \"tools.voice_id\"\n            output_format: \"tools.output_format\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-voices\n          description: List available Amazon Polly voices filterable by\
+  \ language and engine type\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amazon-polly.describe-voices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-lexicons\n          description: List custom pronunciation lexicons for controlling how words are spoken\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amazon-polly.list-lexicons\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-lexicon\n          description: Get the content of a pronunciation lexicon\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"amazon-polly.get-lexicon\"\n          with:\n            LexiconName: \"tools.lexicon_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-lexicon\n          description:\
+  \ Create or update a custom pronunciation lexicon\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"amazon-polly.put-lexicon\"\n          with:\n            LexiconName: \"tools.lexicon_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-synthesis-task\n          description: Start an asynchronous synthesis task for long text with S3 output\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"amazon-polly.start-speech-synthesis-task\"\n          with:\n            text: \"tools.text\"\n            voice_id: \"tools.voice_id\"\n            output_format: \"tools.output_format\"\n            bucket: \"tools.bucket\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-synthesis-tasks\n          description: List and monitor asynchronous speech synthesis tasks\n          hints:\n\
+  \            readOnly: true\n            openWorld: true\n          call: \"amazon-polly.list-speech-synthesis-tasks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-polly/refs/heads/main/capabilities/text-to-speech.yaml
 tags:
 - Amazon
 - AWS

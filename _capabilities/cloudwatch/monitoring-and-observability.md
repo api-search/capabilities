@@ -47,72 +47,85 @@ personas: []
 provider_name: AWS CloudWatch
 provider_slug: cloudwatch
 search_terms:
-- retrieve metric data using math expressions
-- get a cloudwatch dashboard
-- cloudwatch dashboards
-- list available metrics
-- list alarms
-- set alarm state
-- describe alarm history
-- temporarily set the state of an alarm
-- delete dashboards
-- put metric stream
-- cloudwatch metrics operations
-- list cloudwatch dashboards
-- list available cloudwatch metrics
-- put metric data
-- disable alarm actions
-- delete anomaly detector
-- list dashboards
-- create or update an alarm
-- describe alarms for metric
-- observability
-- retrieve alarm state change history
-- enable alarm actions
-- put dashboard
-- aws
 - cloudwatch alarms
-- create or update a metric alarm
-- describe alarms
-- publish metric data points to cloudwatch
-- delete alarms
-- list and describe cloudwatch alarms
-- describe anomaly detectors
-- retrieve metric data with math expressions
-- tag resource
-- put metric alarm
-- monitoring
-- list tags for a cloudwatch resource
-- get metric data
-- create or update a dashboard
-- add tags to a cloudwatch resource
-- disable actions for alarms
-- create or update a metric stream
-- metrics
-- list anomaly detectors
-- get metric statistics
-- create or update a cloudwatch dashboard
-- put anomaly detector
-- delete one or more alarms
-- cloudwatch
-- enable actions for alarms
 - delete cloudwatch dashboards
-- list tags for resource
-- logs
-- dashboards
+- describe anomaly detectors
 - delete an anomaly detector
-- put composite alarm
-- retrieve metric data
-- list metric streams
-- describe alarms for a specific metric
-- get statistics for a specific metric
-- alarms
-- get dashboard
+- list dashboards
+- monitoring
+- delete dashboards
+- delete alarms
 - create or update an anomaly detector
+- put composite alarm
+- list available metrics
+- describe alarms for a specific metric
+- create or update a dashboard
+- describe alarm history
+- get dashboard
+- add tags to a cloudwatch resource
+- observability
+- set alarm state
+- disable alarm actions
+- create or update a metric stream
+- list tags for resource
+- create or update a cloudwatch dashboard
+- retrieve metric data with math expressions
+- aws
+- list and describe cloudwatch alarms
+- list tags for a cloudwatch resource
+- publish metric data points to cloudwatch
+- describe alarms
+- retrieve alarm state change history
+- put metric stream
+- dashboards
+- put metric alarm
+- get statistics for a specific metric
+- cloudwatch metrics operations
 - publish metric data points
+- cloudwatch dashboards
+- list metric streams
 - list metrics
+- disable actions for alarms
+- put anomaly detector
+- delete anomaly detector
+- enable alarm actions
+- get a cloudwatch dashboard
+- list anomaly detectors
+- temporarily set the state of an alarm
+- put dashboard
+- retrieve metric data using math expressions
+- list alarms
+- list cloudwatch dashboards
+- cloudwatch
+- describe alarms for metric
 - create or update a composite alarm
+- tag resource
+- get metric statistics
+- metrics
+- get metric data
+- enable actions for alarms
+- alarms
+- create or update an alarm
+- list available cloudwatch metrics
+- delete one or more alarms
+- put metric data
+- logs
+- retrieve metric data
+- create or update a metric alarm
 slug: monitoring-and-observability
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS CloudWatch Monitoring and Observability\"\n  description: \"Monitor AWS resources with metrics, alarms, dashboards, anomaly detection, and metric streams. Used by DevOps engineers and SRE teams.\"\n  tags:\n    - AWS\n    - CloudWatch\n    - Monitoring\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cloudwatch\n      location: ./shared/cloudwatch.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloudwatch-monitoring-api\n      description: \"Unified REST API for CloudWatch monitoring and observability.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: \"CloudWatch metrics operations\"\n          operations:\n          \
+  \  - method: POST\n              name: put-metric-data\n              description: \"Publish metric data points\"\n              call: \"cloudwatch.put-metric-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-metrics\n              description: \"List available metrics\"\n              call: \"cloudwatch.list-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/data\n          name: metric-data\n          description: \"Retrieve metric data\"\n          operations:\n            - method: POST\n              name: get-metric-data\n              description: \"Retrieve metric data with math expressions\"\n              call: \"cloudwatch.get-metric-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/statistics\n\
+  \          name: metric-statistics\n          description: \"Get metric statistics\"\n          operations:\n            - method: POST\n              name: get-metric-statistics\n              description: \"Get statistics for a specific metric\"\n              call: \"cloudwatch.get-metric-statistics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alarms\n          name: alarms\n          description: \"CloudWatch alarms\"\n          operations:\n            - method: GET\n              name: describe-alarms\n              description: \"List alarms\"\n              call: \"cloudwatch.describe-alarms\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: put-metric-alarm\n              description: \"Create or update an alarm\"\n              call: \"cloudwatch.put-metric-alarm\"\n              outputParameters:\n \
+  \               - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-alarms\n              description: \"Delete alarms\"\n              call: \"cloudwatch.delete-alarms\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dashboards\n          name: dashboards\n          description: \"CloudWatch dashboards\"\n          operations:\n            - method: GET\n              name: list-dashboards\n              description: \"List dashboards\"\n              call: \"cloudwatch.list-dashboards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: put-dashboard\n              description: \"Create or update a dashboard\"\n              call: \"cloudwatch.put-dashboard\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n\
+  \    - type: mcp\n      port: 9090\n      namespace: cloudwatch-monitoring-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AWS CloudWatch monitoring.\"\n      tools:\n        - name: put-metric-data\n          description: \"Publish metric data points to CloudWatch\"\n          hints:\n            readOnly: false\n          call: \"cloudwatch.put-metric-data\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metric-data\n          description: \"Retrieve metric data using math expressions\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudwatch.get-metric-data\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metric-statistics\n          description: \"Get statistics for a specific metric\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudwatch.get-metric-statistics\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-metrics\n          description: \"List available CloudWatch metrics\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.list-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: put-metric-alarm\n          description: \"Create or update a metric alarm\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudwatch.put-metric-alarm\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: put-composite-alarm\n          description: \"Create or update a composite alarm\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudwatch.put-composite-alarm\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ describe-alarms\n          description: \"List and describe CloudWatch alarms\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.describe-alarms\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-alarms-for-metric\n          description: \"Describe alarms for a specific metric\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.describe-alarms-for-metric\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-alarm-history\n          description: \"Retrieve alarm state change history\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.describe-alarm-history\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-alarms\n          description: \"Delete one or more alarms\"\n          hints:\n            destructive: true\n    \
+  \        idempotent: true\n          call: \"cloudwatch.delete-alarms\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: set-alarm-state\n          description: \"Temporarily set the state of an alarm\"\n          hints:\n            readOnly: false\n          call: \"cloudwatch.set-alarm-state\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: enable-alarm-actions\n          description: \"Enable actions for alarms\"\n          hints:\n            readOnly: false\n          call: \"cloudwatch.enable-alarm-actions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: disable-alarm-actions\n          description: \"Disable actions for alarms\"\n          hints:\n            readOnly: false\n          call: \"cloudwatch.disable-alarm-actions\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n        - name: put-dashboard\n          description: \"Create or update a CloudWatch dashboard\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudwatch.put-dashboard\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dashboard\n          description: \"Get a CloudWatch dashboard\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.get-dashboard\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-dashboards\n          description: \"List CloudWatch dashboards\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.list-dashboards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-dashboards\n          description: \"Delete CloudWatch dashboards\"\n          hints:\n            destructive: true\n      \
+  \      idempotent: true\n          call: \"cloudwatch.delete-dashboards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: put-anomaly-detector\n          description: \"Create or update an anomaly detector\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudwatch.put-anomaly-detector\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-anomaly-detectors\n          description: \"List anomaly detectors\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.describe-anomaly-detectors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-anomaly-detector\n          description: \"Delete an anomaly detector\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudwatch.delete-anomaly-detector\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: put-metric-stream\n          description: \"Create or update a metric stream\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudwatch.put-metric-stream\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-metric-streams\n          description: \"List metric streams\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.list-metric-streams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: tag-resource\n          description: \"Add tags to a CloudWatch resource\"\n          hints:\n            readOnly: false\n          call: \"cloudwatch.tag-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tags-for-resource\n          description:\
+  \ \"List tags for a CloudWatch resource\"\n          hints:\n            readOnly: true\n          call: \"cloudwatch.list-tags-for-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudwatch/refs/heads/main/capabilities/monitoring-and-observability.yaml
 tags:
 - AWS
 - CloudWatch

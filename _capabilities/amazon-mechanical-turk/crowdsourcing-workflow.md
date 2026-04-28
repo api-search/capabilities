@@ -34,54 +34,63 @@ personas: []
 provider_name: Amazon Mechanical Turk
 provider_slug: amazon-mechanical-turk
 search_terms:
-- creating and managing hits for crowdsourced work.
-- list qualification types used to filter and target the right worker pool.
-- data scientist using mturk for data labeling, annotation, and validation tasks.
-- list qualification types
-- create a new human intelligence task for crowdsourced annotation, transcription, or research.
-- list assignments for hit
-- amazon
-- get the current prepaid balance in the mturk account.
-- list all active and reviewable hits in the requester account.
-- managing account balance and prepaid funds.
 - list all hits in the requester account.
-- Researcher
+- managing worker qualifications, blocks, bonuses, and notifications.
+- approve a completed worker assignment and release payment.
 - review and manage worker assignment submissions.
-- aws
-- labor
-- send notification messages to specific workers.
+- send bonus
 - human intelligence
-- crowdsourcing
+- list assignments
+- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- list hits
+- create a new hit for crowdsourced task execution.
 - create and manage human intelligence tasks.
-- get account balance
-- machine learning
-- tasks
-- send a bonus payment to a worker for exceptional task completion.
-- mechanical turk
-- account balance and status.
+- amazon
 - get detailed information about a specific hit including status and completion metrics.
+- Researcher
+- mechanical turk
+- aws
+- academic or market researcher coordinating human intelligence tasks for studies and surveys.
+- get account balance
+- send a bonus payment to a worker for exceptional task completion.
+- approve a completed assignment and release payment.
+- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
+- Data Scientist
+- managing account balance and prepaid funds.
+- crowdsourcing
+- get hit
+- labor
+- account balance and status.
+- list all worker assignments submitted for a specific hit for review.
+- list assignments for hit
 - reject assignment
 - get the current prepaid balance available in the mturk requester account.
-- list all worker assignments submitted for a specific hit for review.
-- list hits
 - approve assignment
-- managing worker qualifications, blocks, bonuses, and notifications.
-- create a new hit for crowdsourced task execution.
-- approve a completed assignment and release payment.
-- send a bonus payment to a worker.
-- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
-- get hit
-- academic or market researcher coordinating human intelligence tasks for studies and surveys.
-- list all assignments submitted for a hit.
-- approve a completed worker assignment and release payment.
-- list assignments
+- list qualification types used to filter and target the right worker pool.
+- list all active and reviewable hits in the requester account.
+- data scientist using mturk for data labeling, annotation, and validation tasks.
+- creating and managing hits for crowdsourced work.
+- get the current prepaid balance in the mturk account.
+- list qualification types
+- tasks
+- machine learning
 - create hit
+- list all assignments submitted for a hit.
 - notify workers
-- Data Scientist
-- manage worker bonuses and notifications.
-- send bonus
 - reject a completed worker assignment with feedback.
+- send notification messages to specific workers.
+- manage worker bonuses and notifications.
+- send a bonus payment to a worker.
 slug: crowdsourcing-workflow
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Mechanical Turk - Crowdsourcing Workflow\"\n  description: \"Workflow capability for data scientists and researchers to create HITs, manage worker assignments, approve work, and coordinate crowdsourced human intelligence tasks through Amazon Mechanical Turk.\"\n  tags:\n    - Amazon\n    - Mechanical Turk\n    - Crowdsourcing\n    - Human Intelligence\n    - Tasks\n    - Machine Learning\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: mturk-requester\n      location: ./shared/mturk-requester.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: mturk-crowdsourcing-api\n      description: \"Unified REST API for Amazon Mechanical Turk crowdsourcing workflows.\"\n      resources:\n        - path:\
+  \ /v1/hits\n          name: hits\n          description: \"Create and manage Human Intelligence Tasks.\"\n          operations:\n            - method: POST\n              name: create-hit\n              description: \"Create a new HIT for crowdsourced task execution.\"\n              call: \"mturk-requester.create-hit\"\n              with:\n                title: \"rest.title\"\n                description: \"rest.description\"\n                reward: \"rest.reward\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-hits\n              description: \"List all HITs in the requester account.\"\n              call: \"mturk-requester.list-hits\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assignments\n          name: assignments\n          description: \"Review and manage worker assignment submissions.\"\n    \
+  \      operations:\n            - method: GET\n              name: list-assignments\n              description: \"List all assignments submitted for a HIT.\"\n              call: \"mturk-requester.list-assignments-for-hit\"\n              with:\n                hitId: \"rest.hitId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: approve-assignment\n              description: \"Approve a completed assignment and release payment.\"\n              call: \"mturk-requester.approve-assignment\"\n              with:\n                assignmentId: \"rest.assignmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workers\n          name: workers\n          description: \"Manage worker bonuses and notifications.\"\n          operations:\n            - method: POST\n              name: send-bonus\n              description:\
+  \ \"Send a bonus payment to a worker.\"\n              call: \"mturk-requester.send-bonus\"\n              with:\n                workerId: \"rest.workerId\"\n                bonusAmount: \"rest.bonusAmount\"\n                assignmentId: \"rest.assignmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/account\n          name: account\n          description: \"Account balance and status.\"\n          operations:\n            - method: GET\n              name: get-account-balance\n              description: \"Get the current prepaid balance in the MTurk account.\"\n              call: \"mturk-requester.get-account-balance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: mturk-crowdsourcing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon Mechanical Turk crowdsourcing task\
+  \ management.\"\n      tools:\n        - name: create-hit\n          description: \"Create a new Human Intelligence Task for crowdsourced annotation, transcription, or research.\"\n          hints:\n            readOnly: false\n          call: \"mturk-requester.create-hit\"\n          with:\n            title: \"tools.title\"\n            description: \"tools.description\"\n            reward: \"tools.reward\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-hits\n          description: \"List all active and reviewable HITs in the requester account.\"\n          hints:\n            readOnly: true\n          call: \"mturk-requester.list-hits\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-hit\n          description: \"Get detailed information about a specific HIT including status and completion metrics.\"\n          hints:\n            readOnly: true\n          call:\
+  \ \"mturk-requester.get-hit\"\n          with:\n            hitId: \"tools.hitId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-assignments-for-hit\n          description: \"List all worker assignments submitted for a specific HIT for review.\"\n          hints:\n            readOnly: true\n          call: \"mturk-requester.list-assignments-for-hit\"\n          with:\n            hitId: \"tools.hitId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: approve-assignment\n          description: \"Approve a completed worker assignment and release payment.\"\n          hints:\n            readOnly: false\n          call: \"mturk-requester.approve-assignment\"\n          with:\n            assignmentId: \"tools.assignmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: reject-assignment\n          description: \"\
+  Reject a completed worker assignment with feedback.\"\n          hints:\n            readOnly: false\n          call: \"mturk-requester.reject-assignment\"\n          with:\n            assignmentId: \"tools.assignmentId\"\n            feedback: \"tools.feedback\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-bonus\n          description: \"Send a bonus payment to a worker for exceptional task completion.\"\n          hints:\n            readOnly: false\n          call: \"mturk-requester.send-bonus\"\n          with:\n            workerId: \"tools.workerId\"\n            bonusAmount: \"tools.bonusAmount\"\n            assignmentId: \"tools.assignmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: notify-workers\n          description: \"Send notification messages to specific workers.\"\n          hints:\n            readOnly: false\n          call: \"mturk-requester.notify-workers\"\
+  \n          with:\n            subject: \"tools.subject\"\n            messageText: \"tools.messageText\"\n            workerIds: \"tools.workerIds\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account-balance\n          description: \"Get the current prepaid balance available in the MTurk requester account.\"\n          hints:\n            readOnly: true\n          call: \"mturk-requester.get-account-balance\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-qualification-types\n          description: \"List qualification types used to filter and target the right worker pool.\"\n          hints:\n            readOnly: true\n          call: \"mturk-requester.list-qualification-types\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mechanical-turk/refs/heads/main/capabilities/crowdsourcing-workflow.yaml
 tags:
 - Amazon
 - Mechanical Turk

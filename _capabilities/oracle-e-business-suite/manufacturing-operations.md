@@ -28,53 +28,61 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- list inventory items.
 - get discrete job by id.
-- list discrete jobs.
-- on-hand quantity management.
-- bom management.
-- production
-- get onhand quantities
-- mfg get wip operations
-- mfg issue material
-- inv get inventory items
-- e-business suite
-- mfg create discrete job
 - manufacturing
-- mfg complete assembly
-- business applications
-- retrieve deliveries.
-- oracle
-- retrieve inventory items.
-- get bills of material
-- retrieve sales orders.
-- inv get sales orders
+- retrieve wip operations.
 - list on-hand quantities.
-- create a discrete job.
-- supply chain
-- discrete job management.
+- inv get deliveries
+- mfg complete assembly
 - get bom by id.
+- mfg get bill of material by id
+- supply chain
+- get bills of material
+- enterprise
 - inventory item management.
-- mfg get discrete job by id
+- retrieve sales orders.
+- issue material to a job.
+- retrieve deliveries.
+- e-business suite
+- get onhand quantities
+- list boms.
+- mfg get routings
+- get inventory items
+- oracle
+- bom management.
+- retrieve inventory items.
+- mfg issue material
 - retrieve on-hand quantities.
 - get discrete jobs
-- retrieve wip operations.
+- inv get inventory items
 - inv get onhand quantities
-- retrieve discrete jobs.
-- mfg get discrete jobs
-- get inventory items
-- mfg get routings
 - retrieve bills of material.
-- inv get deliveries
-- enterprise
-- erp
-- mfg get bill of material by id
-- complete an assembly.
-- issue material to a job.
-- retrieve routings.
+- mfg get discrete jobs
+- mfg get wip operations
+- list discrete jobs.
+- on-hand quantity management.
+- business applications
+- mfg get discrete job by id
+- retrieve discrete jobs.
 - mfg get bills of material
-- list boms.
+- complete an assembly.
+- discrete job management.
+- production
+- list inventory items.
+- erp
+- mfg create discrete job
+- retrieve routings.
+- create a discrete job.
+- inv get sales orders
 slug: manufacturing-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Manufacturing Operations\"\n  description: \"Manufacturing execution combining BOMs, routings, discrete jobs, WIP operations, and inventory management. Used by production managers and shop floor supervisors for manufacturing lifecycle.\"\n  tags:\n    - Oracle\n    - Manufacturing\n    - Supply Chain\n    - Production\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n\ncapability:\n  consumes:\n    - import: oracle-manufacturing\n      location: ./shared/manufacturing.yaml\n    - import: oracle-supply-chain\n      location: ./shared/supply-chain.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: manufacturing-operations-api\n      description: \"Unified REST API for Oracle EBS manufacturing operations.\"\n      resources:\n        - path: /v1/bills-of-material\n          name: bills-of-material\n          description:\
+  \ \"BOM management.\"\n          operations:\n            - method: GET\n              name: get-bills-of-material\n              description: \"List BOMs.\"\n              call: \"oracle-manufacturing.get-bills-of-material\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/discrete-jobs\n          name: discrete-jobs\n          description: \"Discrete job management.\"\n          operations:\n            - method: GET\n              name: get-discrete-jobs\n              description: \"List discrete jobs.\"\n              call: \"oracle-manufacturing.get-discrete-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory-items\n          name: inventory-items\n          description: \"Inventory item management.\"\n          operations:\n            - method: GET\n              name: get-inventory-items\n              description: \"List\
+  \ inventory items.\"\n              call: \"oracle-supply-chain.get-inventory-items\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/onhand-quantities\n          name: onhand-quantities\n          description: \"On-hand quantity management.\"\n          operations:\n            - method: GET\n              name: get-onhand-quantities\n              description: \"List on-hand quantities.\"\n              call: \"oracle-supply-chain.get-onhand-quantities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9082\n      namespace: manufacturing-operations-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Oracle EBS manufacturing operations.\"\n      tools:\n        - name: mfg-get-bills-of-material\n          description: \"Retrieve bills of material.\"\n          hints:\n            readOnly: true\n          \
+  \  openWorld: true\n          call: \"oracle-manufacturing.get-bills-of-material\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-get-bill-of-material-by-id\n          description: \"Get BOM by ID.\"\n          hints:\n            readOnly: true\n          call: \"oracle-manufacturing.get-bill-of-material-by-id\"\n          with:\n            billSequenceId: \"tools.bill_sequence_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-get-routings\n          description: \"Retrieve routings.\"\n          hints:\n            readOnly: true\n          call: \"oracle-manufacturing.get-routings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-get-discrete-jobs\n          description: \"Retrieve discrete jobs.\"\n          hints:\n            readOnly: true\n          call: \"oracle-manufacturing.get-discrete-jobs\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-create-discrete-job\n          description: \"Create a discrete job.\"\n          hints:\n            readOnly: false\n          call: \"oracle-manufacturing.create-discrete-job\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-get-discrete-job-by-id\n          description: \"Get discrete job by ID.\"\n          hints:\n            readOnly: true\n          call: \"oracle-manufacturing.get-discrete-job-by-id\"\n          with:\n            wipEntityId: \"tools.wip_entity_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-get-wip-operations\n          description: \"Retrieve WIP operations.\"\n          hints:\n            readOnly: true\n          call: \"oracle-manufacturing.get-wip-operations\"\n          outputParameters:\n            - type: object\n \
+  \             mapping: \"$.\"\n        - name: mfg-complete-assembly\n          description: \"Complete an assembly.\"\n          hints:\n            readOnly: false\n          call: \"oracle-manufacturing.complete-assembly\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mfg-issue-material\n          description: \"Issue material to a job.\"\n          hints:\n            readOnly: false\n          call: \"oracle-manufacturing.issue-material\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: inv-get-inventory-items\n          description: \"Retrieve inventory items.\"\n          hints:\n            readOnly: true\n          call: \"oracle-supply-chain.get-inventory-items\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: inv-get-onhand-quantities\n          description: \"Retrieve on-hand quantities.\"\n          hints:\n\
+  \            readOnly: true\n          call: \"oracle-supply-chain.get-onhand-quantities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: inv-get-sales-orders\n          description: \"Retrieve sales orders.\"\n          hints:\n            readOnly: true\n          call: \"oracle-supply-chain.get-sales-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: inv-get-deliveries\n          description: \"Retrieve deliveries.\"\n          hints:\n            readOnly: true\n          call: \"oracle-supply-chain.get-deliveries\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/oracle-e-business-suite/refs/heads/main/capabilities/manufacturing-operations.yaml
 tags:
 - Oracle
 - Manufacturing

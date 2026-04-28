@@ -55,62 +55,74 @@ personas: []
 provider_name: Aruba
 provider_slug: aruba
 search_terms:
-- list all access points with status
-- get access point
-- list all access points with status and statistics
-- client connectivity
-- list all configuration groups
-- list devices
-- switches
-- delete site
-- list sites
-- list gateways
-- get device details by serial number
-- wireless
-- list all sites
-- list all connected clients
-- device details
-- get site details by id
-- list clients
-- get group details by name
-- access point monitoring
-- site management
-- infrastructure
-- networking
-- remove device
-- remove a device from inventory
-- create site
-- list networks
-- list all gateways
-- sd-wan
-- delete group
-- delete a configuration group
-- gateway monitoring
-- aruba
-- monitoring
-- list all networks
-- configuration group management
-- cloud
-- list groups
-- associate devices to site
-- list all devices in the network inventory
-- get device
-- device inventory management
-- cloud management
-- create a new configuration group
-- get group
 - get site
-- network management
-- create a new site
-- list access points
-- create group
-- delete a site
-- list all devices in the aruba central device inventory
-- get access point details by serial number
-- associate devices to a site
-- security
 - network monitoring
+- list all configuration groups
+- monitoring
+- list all gateways
+- get access point details by serial number
+- gateway monitoring
+- delete a site
+- get group
+- client connectivity
+- list devices
+- network management
+- remove a device from inventory
+- associate devices to site
+- wireless
+- infrastructure
+- get access point
+- list gateways
+- get group details by name
+- list all devices in the network inventory
+- delete group
+- create a new configuration group
+- configuration group management
+- list all access points with status and statistics
+- list groups
+- list clients
+- cloud management
+- remove device
+- list all connected clients
+- associate devices to a site
+- get site details by id
+- list access points
+- switches
+- get device
+- device details
+- list all access points with status
+- list all devices in the aruba central device inventory
+- delete a configuration group
+- delete site
+- cloud
+- list networks
+- list sites
+- security
+- create site
+- get device details by serial number
+- create group
+- aruba
+- site management
+- access point monitoring
+- list all networks
+- device inventory management
+- networking
+- sd-wan
+- list all sites
+- create a new site
 slug: network-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Aruba Network Management\"\n  description: \"Unified network management workflow combining Aruba Central API for device inventory, configuration groups, sites, access points, clients, and gateway monitoring. Used by network administrators to manage campus and branch infrastructure.\"\n  tags:\n    - Aruba\n    - Network Management\n    - Cloud Management\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARUBA_CENTRAL_TOKEN: ARUBA_CENTRAL_TOKEN\n\ncapability:\n  consumes:\n    - import: aruba-central\n      location: ./shared/central.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aruba-network-mgmt-api\n      description: \"Unified REST API for Aruba network management operations.\"\n      resources:\n        - path: /v1/devices\n          name: devices\n          description: \"Device inventory management\"\n          operations:\n\
+  \            - method: GET\n              name: list-devices\n              description: \"List all devices in the network inventory\"\n              call: \"aruba-central.get-devices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/devices/{serial}\n          name: device-detail\n          description: \"Device details\"\n          operations:\n            - method: GET\n              name: get-device\n              description: \"Get device details by serial number\"\n              call: \"aruba-central.get-device-by-serial\"\n              with:\n                serial: \"rest.serial\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: remove-device\n              description: \"Remove a device from inventory\"\n              call: \"aruba-central.delete-device\"\n              with:\n                serial: \"\
+  rest.serial\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Configuration group management\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List all configuration groups\"\n              call: \"aruba-central.get-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a new configuration group\"\n              call: \"aruba-central.create-group\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sites\n          name: sites\n          description: \"Site management\"\n          operations:\n            - method: GET\n              name: list-sites\n              description:\
+  \ \"List all sites\"\n              call: \"aruba-central.get-sites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-site\n              description: \"Create a new site\"\n              call: \"aruba-central.create-site\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/access-points\n          name: access-points\n          description: \"Access point monitoring\"\n          operations:\n            - method: GET\n              name: list-access-points\n              description: \"List all access points with status\"\n              call: \"aruba-central.get-access-points\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clients\n          name: clients\n          description: \"Client connectivity\"\n          operations:\n         \
+  \   - method: GET\n              name: list-clients\n              description: \"List all connected clients\"\n              call: \"aruba-central.get-clients\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/networks\n          name: networks\n          description: \"Network monitoring\"\n          operations:\n            - method: GET\n              name: list-networks\n              description: \"List all networks\"\n              call: \"aruba-central.get-networks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gateways\n          name: gateways\n          description: \"Gateway monitoring\"\n          operations:\n            - method: GET\n              name: list-gateways\n              description: \"List all gateways\"\n              call: \"aruba-central.get-gateways\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: aruba-network-mgmt-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Aruba network management.\"\n      tools:\n        - name: list-devices\n          description: \"List all devices in the Aruba Central device inventory\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aruba-central.get-devices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-device\n          description: \"Get device details by serial number\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-device-by-serial\"\n          with:\n            serial: \"tools.serial\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-device\n          description: \"Remove a device from inventory\"\n          hints:\n\
+  \            destructive: true\n          call: \"aruba-central.delete-device\"\n          with:\n            serial: \"tools.serial\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List all configuration groups\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-group\n          description: \"Create a new configuration group\"\n          hints:\n            readOnly: false\n          call: \"aruba-central.create-group\"\n          with:\n            group: \"tools.group\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-group\n          description: \"Get group details by name\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-group-by-name\"\n \
+  \         with:\n            group_name: \"tools.group_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-group\n          description: \"Delete a configuration group\"\n          hints:\n            destructive: true\n          call: \"aruba-central.delete-group\"\n          with:\n            group_name: \"tools.group_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-sites\n          description: \"List all sites\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-sites\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-site\n          description: \"Create a new site\"\n          hints:\n            readOnly: false\n          call: \"aruba-central.create-site\"\n          with:\n            site_name: \"tools.site_name\"\n          outputParameters:\n    \
+  \        - type: object\n              mapping: \"$.\"\n        - name: get-site\n          description: \"Get site details by ID\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-site-by-id\"\n          with:\n            site_id: \"tools.site_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-site\n          description: \"Delete a site\"\n          hints:\n            destructive: true\n          call: \"aruba-central.delete-site\"\n          with:\n            site_id: \"tools.site_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: associate-devices-to-site\n          description: \"Associate devices to a site\"\n          hints:\n            readOnly: false\n          call: \"aruba-central.associate-devices-to-site\"\n          with:\n            site_id: \"tools.site_id\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: list-access-points\n          description: \"List all access points with status and statistics\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-access-points\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-access-point\n          description: \"Get access point details by serial number\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-access-point-by-serial\"\n          with:\n            serial: \"tools.serial\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-clients\n          description: \"List all connected clients\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-clients\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-networks\n          description:\
+  \ \"List all networks\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-networks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-gateways\n          description: \"List all gateways\"\n          hints:\n            readOnly: true\n          call: \"aruba-central.get-gateways\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aruba/refs/heads/main/capabilities/network-management.yaml
 tags:
 - Aruba
 - Network Management

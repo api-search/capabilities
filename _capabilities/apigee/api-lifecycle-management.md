@@ -24,47 +24,53 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- developer portal
-- manager packaging api products and managing developer relationships.
-- api gateway
-- API Governance Lead
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list environments
-- list api proxies
-- microservices
-- list all apis catalogued in apigee api hub for discovery and governance.
-- list developers.
-- architect overseeing api platform strategy and governance across the organization.
-- list all api proxies in an apigee organization.
-- api governance
-- api lifecycle
-- list api products.
-- api management
 - list all registered api developers in the organization.
-- api hub
-- Platform Architect
-- list proxies
-- API Product Manager
-- manage api developers.
-- list api proxies.
 - apigee
-- integrations
-- manage api proxies.
-- manage api products.
-- list developers
-- API Platform Engineer
-- monetization
-- google cloud
 - engineer managing api proxies, deployments, and policies in apigee.
-- analytics
-- list all environments (e.g., dev, staging, prod) in the organization.
-- enterprise
-- hybrid
-- list products
-- list hub apis
-- list api products
+- list all api proxies in an apigee organization.
+- list api proxies
+- list developers
 - list all api products packaged for developer consumption.
+- list api products.
+- list proxies
+- list developers.
+- list all environments (e.g., dev, staging, prod) in the organization.
+- manage api developers.
+- architect overseeing api platform strategy and governance across the organization.
+- enterprise
+- api lifecycle
+- hybrid
+- list hub apis
+- API Governance Lead
+- analytics
+- API Product Manager
+- google cloud
+- api gateway
+- manage api proxies.
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list products
+- Platform Architect
+- list all apis catalogued in apigee api hub for discovery and governance.
+- api hub
+- developer portal
+- list api proxies.
+- manager packaging api products and managing developer relationships.
+- integrations
+- API Platform Engineer
+- list environments
+- list api products
+- monetization
+- microservices
+- manage api products.
+- api management
+- api governance
 slug: api-lifecycle-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Lifecycle Management\"\n  description: \"Unified workflow for managing the full API lifecycle on Google Apigee - from API proxy creation and deployment to developer portal management, product packaging, and analytics.\"\n  tags:\n    - Apigee\n    - API Management\n    - API Lifecycle\n    - Google Cloud\n    - Developer Portal\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-management\n      location: ./shared/api-management.yaml\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigee-lifecycle-api\n      description: \"Unified REST API for Apigee API lifecycle management.\"\n      resources:\n        - path: /v1/proxies\n          name: api-proxies\n          description: \"Manage API proxies.\"\
+  \n          operations:\n            - method: GET\n              name: list-proxies\n              description: \"List API proxies.\"\n              call: \"api-management.listApiProxies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: api-products\n          description: \"Manage API products.\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List API products.\"\n              call: \"api-management.listApiProducts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/developers\n          name: developers\n          description: \"Manage API developers.\"\n          operations:\n            - method: GET\n              name: list-developers\n              description: \"List developers.\"\n              call: \"api-management.listDevelopers\"\n     \
+  \         outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apigee-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apigee API lifecycle management.\"\n      tools:\n        - name: list-api-proxies\n          description: \"List all API proxies in an Apigee organization.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-management.listApiProxies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-api-products\n          description: \"List all API products packaged for developer consumption.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-management.listApiProducts\"\n          outputParameters:\n            - type: object\n           \
+  \   mapping: \"$.\"\n        - name: list-developers\n          description: \"List all registered API developers in the organization.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-management.listDevelopers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-environments\n          description: \"List all environments (e.g., dev, staging, prod) in the organization.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-management.listEnvironments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-hub-apis\n          description: \"List all APIs catalogued in Apigee API Hub for discovery and governance.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent:\
+  \ true\n          call: \"api-hub.listApis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apigee/refs/heads/main/capabilities/api-lifecycle-management.yaml
 tags:
 - Apigee
 - API Management

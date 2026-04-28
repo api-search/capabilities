@@ -58,41 +58,51 @@ personas: []
 provider_name: Amazon EventBridge Scheduler
 provider_slug: amazon-eventbridge-scheduler
 search_terms:
-- ListScheduleGroups
-- operations teams managing amazon eventbridge scheduler infrastructure
-- CreateScheduleGroup
-- event-driven
 - amazon eventbridge scheduler createschedulegroup
-- amazon eventbridge scheduler getschedule
-- amazon eventbridge scheduler deleteschedule
-- cron
-- UntagResource
-- fully managed scheduling service for running tasks at scale
-- amazon eventbridge scheduler updateschedule
-- ListSchedules
-- developers building applications using amazon eventbridge scheduler
-- amazon web services
-- GetScheduleGroup
-- amazon eventbridge scheduler untagresource
-- UpdateSchedule
-- aws
-- TagResource
-- GetSchedule
 - amazon eventbridge scheduler deleteschedulegroup
+- operations teams managing amazon eventbridge scheduler infrastructure
+- fully managed scheduling service for running tasks at scale
+- serverless
+- amazon eventbridge scheduler deleteschedule
+- DeleteSchedule
+- CreateSchedule
+- cron
+- developers building applications using amazon eventbridge scheduler
+- amazon eventbridge scheduler untagresource
+- unified capability for managing amazon eventbridge scheduler resources. combines amazon eventbridge scheduler apis for devops engineer workflows in task scheduling.
+- aws
 - amazon eventbridge scheduler tagresource
-- amazon eventbridge scheduler listschedules
-- DeleteScheduleGroup
-- amazon eventbridge scheduler createschedule
+- ListScheduleGroups
+- TagResource
+- ListSchedules
 - ListTagsForResource
 - amazon eventbridge scheduler listschedulegroups
-- serverless
-- unified capability for managing amazon eventbridge scheduler resources. combines amazon eventbridge scheduler apis for devops engineer workflows in task scheduling.
-- DeleteSchedule
-- amazon eventbridge scheduler listtagsforresource
-- CreateSchedule
+- amazon web services
+- amazon eventbridge scheduler getschedule
+- amazon eventbridge scheduler listschedules
+- UntagResource
 - scheduling
+- DeleteScheduleGroup
+- amazon eventbridge scheduler listtagsforresource
+- amazon eventbridge scheduler updateschedule
+- CreateScheduleGroup
+- GetSchedule
+- UpdateSchedule
+- GetScheduleGroup
+- amazon eventbridge scheduler createschedule
+- event-driven
 - amazon eventbridge scheduler getschedulegroup
 slug: amazon-eventbridge-scheduler-capability
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon EventBridge Scheduler Management\n  description: Unified capability for managing Amazon EventBridge Scheduler resources. Combines Amazon EventBridge Scheduler APIs for DevOps Engineer workflows in Task Scheduling.\n  tags:\n  - Amazon Web Services\n  - Scheduling\n  - Serverless\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: eventbridge_scheduler\n    location: ./shared/eventbridge-scheduler.yaml\n  exposes:\n  - type: rest\n    port: 8194\n    namespace: amazon-eventbridge-scheduler-workflow-api\n    description: Unified REST API for Amazon EventBridge Scheduler management.\n    resources:\n    - path: /v1/GetSchedule\n      name: GetSchedule\n      description: Amazon EventBridge Scheduler GetSchedule\n      operations:\n      - method: GET\n        name: GetSchedule\n        description: Amazon\
+  \ EventBridge Scheduler GetSchedule\n        call: api.GetSchedule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateSchedule\n      name: CreateSchedule\n      description: Amazon EventBridge Scheduler CreateSchedule\n      operations:\n      - method: POST\n        name: CreateSchedule\n        description: Amazon EventBridge Scheduler CreateSchedule\n        call: api.CreateSchedule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/UpdateSchedule\n      name: UpdateSchedule\n      description: Amazon EventBridge Scheduler UpdateSchedule\n      operations:\n      - method: POST\n        name: UpdateSchedule\n        description: Amazon EventBridge Scheduler UpdateSchedule\n        call: api.UpdateSchedule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/DeleteSchedule\n      name: DeleteSchedule\n      description: Amazon EventBridge Scheduler DeleteSchedule\n\
+  \      operations:\n      - method: POST\n        name: DeleteSchedule\n        description: Amazon EventBridge Scheduler DeleteSchedule\n        call: api.DeleteSchedule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/GetScheduleGroup\n      name: GetScheduleGroup\n      description: Amazon EventBridge Scheduler GetScheduleGroup\n      operations:\n      - method: GET\n        name: GetScheduleGroup\n        description: Amazon EventBridge Scheduler GetScheduleGroup\n        call: api.GetScheduleGroup\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateScheduleGroup\n      name: CreateScheduleGroup\n      description: Amazon EventBridge Scheduler CreateScheduleGroup\n      operations:\n      - method: POST\n        name: CreateScheduleGroup\n        description: Amazon EventBridge Scheduler CreateScheduleGroup\n        call: api.CreateScheduleGroup\n        outputParameters:\n        - type: object\n\
+  \          mapping: $.\n    - path: /v1/DeleteScheduleGroup\n      name: DeleteScheduleGroup\n      description: Amazon EventBridge Scheduler DeleteScheduleGroup\n      operations:\n      - method: POST\n        name: DeleteScheduleGroup\n        description: Amazon EventBridge Scheduler DeleteScheduleGroup\n        call: api.DeleteScheduleGroup\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListScheduleGroups\n      name: ListScheduleGroups\n      description: Amazon EventBridge Scheduler ListScheduleGroups\n      operations:\n      - method: GET\n        name: ListScheduleGroups\n        description: Amazon EventBridge Scheduler ListScheduleGroups\n        call: api.ListScheduleGroups\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListSchedules\n      name: ListSchedules\n      description: Amazon EventBridge Scheduler ListSchedules\n      operations:\n      - method: GET\n        name: ListSchedules\n\
+  \        description: Amazon EventBridge Scheduler ListSchedules\n        call: api.ListSchedules\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListTagsForResource\n      name: ListTagsForResource\n      description: Amazon EventBridge Scheduler ListTagsForResource\n      operations:\n      - method: GET\n        name: ListTagsForResource\n        description: Amazon EventBridge Scheduler ListTagsForResource\n        call: api.ListTagsForResource\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/TagResource\n      name: TagResource\n      description: Amazon EventBridge Scheduler TagResource\n      operations:\n      - method: POST\n        name: TagResource\n        description: Amazon EventBridge Scheduler TagResource\n        call: api.TagResource\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/UntagResource\n      name: UntagResource\n      description: Amazon\
+  \ EventBridge Scheduler UntagResource\n      operations:\n      - method: POST\n        name: UntagResource\n        description: Amazon EventBridge Scheduler UntagResource\n        call: api.UntagResource\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9204\n    namespace: amazon-eventbridge-scheduler-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon EventBridge Scheduler management.\n    tools:\n    - name: GetSchedule\n      description: Amazon EventBridge Scheduler GetSchedule\n      hints:\n        readOnly: true\n      call: api.GetSchedule\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: CreateSchedule\n      description: Amazon EventBridge Scheduler CreateSchedule\n      hints:\n        readOnly: false\n      call: api.CreateSchedule\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: UpdateSchedule\n      description: Amazon EventBridge Scheduler\
+  \ UpdateSchedule\n      hints:\n        readOnly: false\n      call: api.UpdateSchedule\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: DeleteSchedule\n      description: Amazon EventBridge Scheduler DeleteSchedule\n      hints:\n        readOnly: false\n      call: api.DeleteSchedule\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: GetScheduleGroup\n      description: Amazon EventBridge Scheduler GetScheduleGroup\n      hints:\n        readOnly: true\n      call: api.GetScheduleGroup\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: CreateScheduleGroup\n      description: Amazon EventBridge Scheduler CreateScheduleGroup\n      hints:\n        readOnly: false\n      call: api.CreateScheduleGroup\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: DeleteScheduleGroup\n      description: Amazon EventBridge Scheduler DeleteScheduleGroup\n      hints:\n        readOnly:\
+  \ false\n      call: api.DeleteScheduleGroup\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ListScheduleGroups\n      description: Amazon EventBridge Scheduler ListScheduleGroups\n      hints:\n        readOnly: true\n      call: api.ListScheduleGroups\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ListSchedules\n      description: Amazon EventBridge Scheduler ListSchedules\n      hints:\n        readOnly: true\n      call: api.ListSchedules\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ListTagsForResource\n      description: Amazon EventBridge Scheduler ListTagsForResource\n      hints:\n        readOnly: true\n      call: api.ListTagsForResource\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: TagResource\n      description: Amazon EventBridge Scheduler TagResource\n      hints:\n        readOnly: false\n      call: api.TagResource\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: UntagResource\n      description: Amazon EventBridge Scheduler UntagResource\n      hints:\n        readOnly: false\n      call: api.UntagResource\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-eventbridge-scheduler/refs/heads/main/capabilities/amazon-eventbridge-scheduler-capability.yaml
 tags:
 - Amazon Web Services
 - Scheduling

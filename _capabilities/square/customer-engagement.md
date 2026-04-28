@@ -67,107 +67,124 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- retail
+- update customer
+- webhooks
+- create a booking.
+- get customer details.
+- gift cards
+- terminal
+- delete a customer profile.
+- create a new customer.
+- search loyalty accounts
+- create a digital gift card.
+- manage locations.
+- update team member
+- list locations
+- list customer profiles.
+- list bookings.
+- checkout
+- labor
+- get location details.
+- create a loyalty reward.
+- list gift cards.
+- accumulate loyalty points
+- search customers
+- manage gift cards.
+- get merchant details.
+- square
+- create team member
+- team management
+- create a location.
+- search for booking availability.
+- update a team member.
+- manage team members.
+- cancel booking
+- manage bookings.
+- team
+- refunds
+- list gift cards
+- cancel a booking.
+- update booking
+- locations
+- manage a specific booking.
+- catalog
+- invoicing
+- financial technology
+- subscriptions
+- delete customer
+- create a loyalty account.
+- list bookings
+- redeem a loyalty reward.
+- list all gift cards.
+- search loyalty accounts.
+- update a booking.
+- retrieve a booking.
+- list merchants
+- merchant information.
+- create gift card
+- get booking details.
+- create a team member.
+- create customer
+- customers
+- manage a specific customer.
+- update a customer profile.
+- list business locations.
 - add points to a loyalty account.
 - retrieve the loyalty program.
-- create loyalty account
-- list customers
-- update a booking.
-- list bookings.
-- manage loyalty programs.
-- square
-- create a loyalty account.
-- create a gift card.
 - loyalty
-- search loyalty accounts.
-- get merchant details.
-- list locations
-- redeem loyalty reward
-- create a digital gift card.
-- search team members
-- delete a customer.
-- get loyalty program
-- create team member
-- create a team member.
-- list gift cards.
-- create a booking.
-- locations
-- terminal
-- webhooks
-- update a customer profile.
-- update a customer.
-- cancel a booking.
-- delete a customer profile.
-- subscriptions
-- search loyalty accounts
-- refunds
-- manage customers.
-- list bookings
-- update booking
-- bookings
-- search for booking availability.
-- financial technology
-- payments
 - search availability
-- get a team member.
-- list merchants
-- update a team member.
-- merchants
-- list business locations.
-- create location
-- search team members.
-- get customer details.
-- list gift cards
-- create a location.
-- search customers
-- cancel booking
-- catalog
-- orders
-- manage bookings.
-- labor
-- manage gift cards.
-- inventory
-- create booking
-- create loyalty reward
-- update team member
+- get customer
+- create loyalty account
+- get loyalty program
 - get team member
 - search customer profiles.
-- manage a specific booking.
-- checkout
-- manage a specific customer.
-- get location
-- create a new customer profile.
-- customers
-- gift cards
-- redeem a loyalty reward.
-- update customer
-- list all gift cards.
-- accumulate loyalty points
-- point of sale
-- invoicing
-- create a new customer.
-- retrieve a booking.
-- get gift card
-- team management
-- create gift card
-- manage team members.
-- retrieve a gift card.
-- get details for a specific customer.
-- get location details.
-- get the loyalty program.
-- create customer
-- list customer profiles.
-- delete customer
+- manage customers.
+- retail
 - get booking
-- get booking details.
+- bookings
+- search team members.
+- redeem loyalty reward
+- delete a customer.
+- create loyalty reward
 - ecommerce
 - disputes
-- merchant information.
-- manage locations.
-- get customer
-- team
-- create a loyalty reward.
+- manage loyalty programs.
+- get the loyalty program.
+- inventory
+- payments
+- get details for a specific customer.
+- get a team member.
+- create location
+- update a customer.
+- retrieve a gift card.
+- point of sale
+- create a gift card.
+- get gift card
+- create booking
+- search team members
+- merchants
+- orders
+- list customers
+- get location
+- create a new customer profile.
 slug: customer-engagement
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Square Customer Engagement\"\n  description: \"Unified workflow for customer relationship management combining customers, loyalty programs, gift cards, bookings, team management, and location management. Used by business owners and customer success teams to build relationships and manage operations.\"\n  tags:\n    - Square\n    - Customers\n    - Loyalty\n    - Gift Cards\n    - Bookings\n    - Team Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SQUARE_ACCESS_TOKEN: SQUARE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: square\n      location: ./shared/square-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: square-engagement-api\n      description: \"Unified REST API for Square customer engagement, loyalty, bookings, and team management.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n         \
+  \ description: \"Manage customers.\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"List customer profiles.\"\n              call: \"square.list-customers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: \"Create a new customer.\"\n              call: \"square.create-customer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers/{customer_id}\n          name: customer\n          description: \"Manage a specific customer.\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Get customer details.\"\n              call: \"square.get-customer\"\n              with:\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-customer\n              description: \"Update a customer.\"\n              call: \"square.update-customer\"\n              with:\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-customer\n              description: \"Delete a customer.\"\n              call: \"square.delete-customer\"\n              with:\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/loyalty\n          name: loyalty\n          description: \"Manage loyalty programs.\"\n          operations:\n            - method: GET\n              name: get-loyalty-program\n              description: \"Get the loyalty program.\"\n \
+  \             call: \"square.get-loyalty-program\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/gift-cards\n          name: gift-cards\n          description: \"Manage gift cards.\"\n          operations:\n            - method: GET\n              name: list-gift-cards\n              description: \"List gift cards.\"\n              call: \"square.list-gift-cards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-gift-card\n              description: \"Create a gift card.\"\n              call: \"square.create-gift-card\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/bookings\n          name: bookings\n          description: \"Manage bookings.\"\n          operations:\n            - method: GET\n              name: list-bookings\n\
+  \              description: \"List bookings.\"\n              call: \"square.list-bookings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-booking\n              description: \"Create a booking.\"\n              call: \"square.create-booking\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/bookings/{booking_id}\n          name: booking\n          description: \"Manage a specific booking.\"\n          operations:\n            - method: GET\n              name: get-booking\n              description: \"Get booking details.\"\n              call: \"square.get-booking\"\n              with:\n                booking_id: \"rest.booking_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/team-members\n          name: team-members\n   \
+  \       description: \"Manage team members.\"\n          operations:\n            - method: POST\n              name: search-team-members\n              description: \"Search team members.\"\n              call: \"square.search-team-members\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/locations\n          name: locations\n          description: \"Manage locations.\"\n          operations:\n            - method: GET\n              name: list-locations\n              description: \"List business locations.\"\n              call: \"square.list-locations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/merchants\n          name: merchants\n          description: \"Merchant information.\"\n          operations:\n            - method: GET\n              name: list-merchants\n              description: \"Get merchant details.\"\n         \
+  \     call: \"square.list-merchants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: square-engagement-mcp\n      transport: http\n      description: \"MCP server for AI-assisted customer engagement, loyalty, and business management.\"\n      tools:\n        - name: list-customers\n          description: \"List customer profiles.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.list-customers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-customer\n          description: \"Create a new customer profile.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-customer\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-customers\n          description:\
+  \ \"Search customer profiles.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.search-customers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-customer\n          description: \"Get details for a specific customer.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-customer\"\n          with:\n            customer_id: \"tools.customer_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-customer\n          description: \"Update a customer profile.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"square.update-customer\"\n          with:\n            customer_id: \"tools.customer_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-customer\n\
+  \          description: \"Delete a customer profile.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"square.delete-customer\"\n          with:\n            customer_id: \"tools.customer_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-loyalty-program\n          description: \"Retrieve the loyalty program.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-loyalty-program\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-loyalty-accounts\n          description: \"Search loyalty accounts.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.search-loyalty-accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-loyalty-account\n\
+  \          description: \"Create a loyalty account.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-loyalty-account\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: accumulate-loyalty-points\n          description: \"Add points to a loyalty account.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.accumulate-loyalty-points\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-loyalty-reward\n          description: \"Create a loyalty reward.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-loyalty-reward\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: redeem-loyalty-reward\n          description: \"Redeem a loyalty reward.\"\
+  \n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.redeem-loyalty-reward\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-gift-cards\n          description: \"List all gift cards.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.list-gift-cards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-gift-card\n          description: \"Create a digital gift card.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-gift-card\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-gift-card\n          description: \"Retrieve a gift card.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-gift-card\"\
+  \n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-bookings\n          description: \"List bookings.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.list-bookings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-booking\n          description: \"Create a booking.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-booking\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-booking\n          description: \"Retrieve a booking.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-booking\"\n          with:\n            booking_id: \"tools.booking_id\"\n          outputParameters:\n      \
+  \      - type: object\n              mapping: \"$.\"\n\n        - name: update-booking\n          description: \"Update a booking.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"square.update-booking\"\n          with:\n            booking_id: \"tools.booking_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: cancel-booking\n          description: \"Cancel a booking.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"square.cancel-booking\"\n          with:\n            booking_id: \"tools.booking_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-availability\n          description: \"Search for booking availability.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.search-availability\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: search-team-members\n          description: \"Search team members.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.search-team-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-team-member\n          description: \"Create a team member.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-team-member\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-team-member\n          description: \"Get a team member.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-team-member\"\n          with:\n            team_member_id: \"tools.team_member_id\"\n          outputParameters:\n            - type: object\n          \
+  \    mapping: \"$.\"\n\n        - name: update-team-member\n          description: \"Update a team member.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"square.update-team-member\"\n          with:\n            team_member_id: \"tools.team_member_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-locations\n          description: \"List business locations.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.list-locations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-location\n          description: \"Create a location.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"square.create-location\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-location\n\
+  \          description: \"Get location details.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.get-location\"\n          with:\n            location_id: \"tools.location_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-merchants\n          description: \"Get merchant details.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"square.list-merchants\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/square/refs/heads/main/capabilities/customer-engagement.yaml
 tags:
 - Square
 - Customers

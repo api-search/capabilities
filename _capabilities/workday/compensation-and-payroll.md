@@ -25,52 +25,61 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- payroll get pay group details
-- list benefit plans
-- benefits
-- benefit plans
-- list compensation plans
-- compensation plans
-- request a one-time payment
-- payroll list pay slips
-- comp request change
-- payroll list pay groups
-- submit a compensation change request
 - comp request one time payment
-- benefits change
-- list compensation grades
-- benefits list elections
-- workday
-- pay groups
+- comp list grades
+- submit a benefits change request
+- comp list scorecards
 - enterprise software
-- payroll list inputs
-- benefits list dependents
-- financial management
-- payroll get pay group
-- benefits get eligible plans
-- compensation
+- list benefit plans
 - get pay group details
-- list benefit elections
+- payroll
+- benefits list elections
+- payroll get pay group details
+- workday
+- list compensation plans
+- get a pay group by id
+- comp list plans
+- list compensation grades
+- comp request change
+- benefits get eligible plans
+- benefits
+- benefits list plans
+- list all pay groups
+- benefit plans
+- payroll list pay slips
 - list all benefit plans
 - cloud computing
-- saas
-- comp list plans
-- payroll
-- list plans
 - list compensation scorecards
-- benefits list plans
-- hcm
-- list all pay groups
-- list dependents
-- list pay slips
-- submit a benefits change request
-- list pay groups
+- payroll list pay groups
+- request a one-time payment
+- pay groups
 - list payroll inputs
+- payroll get pay group
+- list benefit elections
+- benefits list dependents
+- payroll list inputs
+- list dependents
+- financial management
+- submit a compensation change request
+- compensation plans
 - get eligible benefit plans for a worker
-- comp list grades
-- comp list scorecards
-- get a pay group by id
+- benefits change
+- list plans
+- list pay groups
+- saas
+- list pay slips
+- hcm
+- compensation
 slug: compensation-and-payroll
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Compensation and Payroll\"\n  description: \"Unified compensation and payroll management combining Compensation, Payroll, and Benefits APIs for payroll administrators to manage pay plans, benefits enrollment, and payroll processing.\"\n  tags:\n    - Workday\n    - Compensation\n    - Payroll\n    - Benefits\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-compensation\n      location: ./shared/compensation.yaml\n    - import: workday-payroll\n      location: ./shared/payroll.yaml\n    - import: workday-benefits\n      location: ./shared/benefits.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: compensation-payroll-api\n      description: \"Unified REST API for compensation, payroll, and benefits.\"\n      resources:\n        - path: /v1/compensation-plans\n\
+  \          name: compensation-plans\n          description: \"Compensation plans\"\n          operations:\n            - method: GET\n              name: list-plans\n              description: \"List compensation plans\"\n              call: \"workday-compensation.get-compensation-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pay-groups\n          name: pay-groups\n          description: \"Pay groups\"\n          operations:\n            - method: GET\n              name: list-pay-groups\n              description: \"List pay groups\"\n              call: \"workday-payroll.get-pay-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benefit-plans\n          name: benefit-plans\n          description: \"Benefit plans\"\n          operations:\n            - method: GET\n              name: list-benefit-plans\n              description:\
+  \ \"List benefit plans\"\n              call: \"workday-benefits.get-benefit-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9082\n      namespace: compensation-payroll-mcp\n      transport: http\n      description: \"MCP server for AI-assisted compensation and payroll management.\"\n      tools:\n        - name: comp-list-plans\n          description: \"List compensation plans\"\n          hints:\n            readOnly: true\n          call: \"workday-compensation.get-compensation-plans\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: comp-request-change\n          description: \"Submit a compensation change request\"\n          hints:\n            readOnly: false\n          call: \"workday-compensation.request-compensation-change\"\n          with:\n            worker: \"tools.worker\"\n            proposedCompensation: \"tools.proposedCompensation\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: comp-list-scorecards\n          description: \"List compensation scorecards\"\n          hints:\n            readOnly: true\n          call: \"workday-compensation.get-compensation-scorecards\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: comp-list-grades\n          description: \"List compensation grades\"\n          hints:\n            readOnly: true\n          call: \"workday-compensation.get-compensation-grades\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: comp-request-one-time-payment\n          description: \"Request a one-time payment\"\n          hints:\n            readOnly: false\n          call: \"workday-compensation.request-one-time-payment\"\n          with:\n            worker: \"tools.worker\"\n            amount: \"tools.amount\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: payroll-list-pay-groups\n          description: \"List all pay groups\"\n          hints:\n            readOnly: true\n          call: \"workday-payroll.get-pay-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: payroll-get-pay-group\n          description: \"Get a pay group by ID\"\n          hints:\n            readOnly: true\n          call: \"workday-payroll.get-pay-group-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: payroll-get-pay-group-details\n          description: \"Get pay group details\"\n          hints:\n            readOnly: true\n          call: \"workday-payroll.get-pay-group-details\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\
+  \        - name: payroll-list-inputs\n          description: \"List payroll inputs\"\n          hints:\n            readOnly: true\n          call: \"workday-payroll.get-payroll-inputs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: payroll-list-pay-slips\n          description: \"List pay slips\"\n          hints:\n            readOnly: true\n          call: \"workday-payroll.get-pay-slips\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: benefits-list-elections\n          description: \"List benefit elections\"\n          hints:\n            readOnly: true\n          call: \"workday-benefits.get-benefit-elections\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: benefits-get-eligible-plans\n          description: \"Get eligible benefit plans for a worker\"\n          hints:\n            readOnly: true\n          call:\
+  \ \"workday-benefits.get-eligible-benefit-plans\"\n          with:\n            worker: \"tools.worker\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: benefits-list-dependents\n          description: \"List dependents\"\n          hints:\n            readOnly: true\n          call: \"workday-benefits.get-dependents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: benefits-change\n          description: \"Submit a benefits change request\"\n          hints:\n            readOnly: false\n          call: \"workday-benefits.change-benefits\"\n          with:\n            worker: \"tools.worker\"\n            benefitPlan: \"tools.benefitPlan\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: benefits-list-plans\n          description: \"List all benefit plans\"\n          hints:\n            readOnly: true\n          call:\
+  \ \"workday-benefits.get-benefit-plans\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/capabilities/compensation-and-payroll.yaml
 tags:
 - Workday
 - Compensation

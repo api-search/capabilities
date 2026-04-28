@@ -31,40 +31,49 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- start media session
-- send batch events to edge network
-- event forwarding rules
-- tag management
-- event forwarding
-- create a new event forwarding rule
-- list server-side event forwarding properties
-- server-side event forwarding properties
-- start a media tracking session
-- edge network data ingestion
-- create event forwarding property
-- create a new event forwarding property
-- list secrets for authenticating with forwarding destinations
-- adobe launch
-- list secrets
-- create event forwarding rule
-- create a secret for an event forwarding destination
-- marketing technology
-- send interactive event
 - send an interactive event to edge network
-- create secret
-- edge network
-- list event forwarding rules
-- secrets for event forwarding destinations
-- send an interactive event to adobe edge network
-- end a media tracking session
+- start media session
 - send batch events to adobe edge network
-- send batch events
-- list event forwarding rules for a property
+- adobe launch
+- secrets for event forwarding destinations
+- edge network data ingestion
+- end a media tracking session
+- create a new event forwarding rule
+- send batch events to edge network
+- create secret
+- tag management
+- send an interactive event to adobe edge network
 - list secrets for a property
-- end media session
-- list event forwarding properties
+- list secrets
+- create a secret for an event forwarding destination
+- list event forwarding rules
+- create a new event forwarding property
+- send interactive event
+- marketing technology
+- event forwarding rules
+- event forwarding
 - data collection
+- list secrets for authenticating with forwarding destinations
+- list event forwarding properties
+- edge network
+- create event forwarding property
+- start a media tracking session
+- list server-side event forwarding properties
+- create event forwarding rule
+- end media session
+- send batch events
+- server-side event forwarding properties
+- list event forwarding rules for a property
 slug: data-collection-pipeline
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Launch Data Collection Pipeline\"\n  description: \"Unified workflow for Adobe Experience Platform data collection. Combines Event Forwarding and Data Collection APIs for data engineers managing server-side event routing, Edge Network data ingestion, and media analytics tracking.\"\n  tags:\n    - Adobe Launch\n    - Data Collection\n    - Event Forwarding\n    - Edge Network\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ACCESS_TOKEN: ADOBE_ACCESS_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n      ADOBE_ORG_ID: ADOBE_ORG_ID\n\ncapability:\n  consumes:\n    - import: event-forwarding\n      location: ./shared/event-forwarding.yaml\n    - import: data-collection\n      location: ./shared/data-collection.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: data-collection-pipeline-api\n      description: \"Unified REST API for Adobe data collection\
+  \ pipeline management.\"\n      resources:\n        - path: /v1/event-forwarding-properties\n          name: event-forwarding-properties\n          description: \"Server-side event forwarding properties\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-properties\n              description: \"List event forwarding properties\"\n              call: \"event-forwarding.list-properties\"\n              with:\n                companyId: \"rest.companyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/event-forwarding-rules\n          name: event-forwarding-rules\n          description: \"Event forwarding rules\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-rules\n              description: \"List event forwarding rules\"\n              call: \"event-forwarding.list-rules\"\n              with:\n                propertyId: \"\
+  rest.propertyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets\n          name: secrets\n          description: \"Secrets for event forwarding destinations\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List secrets for a property\"\n              call: \"event-forwarding.list-secrets\"\n              with:\n                propertyId: \"rest.propertyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Edge Network data ingestion\"\n          operations:\n            - method: POST\n              name: send-interactive-event\n              description: \"Send an interactive event to Edge Network\"\n              call: \"data-collection.interact\"\n              with:\n                datastreamId: \"rest.datastreamId\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-batch-events\n              description: \"Send batch events to Edge Network\"\n              call: \"data-collection.collect\"\n              with:\n                datastreamId: \"rest.datastreamId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: data-collection-pipeline-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Adobe data collection pipeline management.\"\n      tools:\n        - name: list-event-forwarding-properties\n          description: \"List server-side event forwarding properties\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"event-forwarding.list-properties\"\n          with:\n            companyId: \"tools.companyId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: create-event-forwarding-property\n          description: \"Create a new event forwarding property\"\n          hints:\n            readOnly: false\n          call: \"event-forwarding.create-property\"\n          with:\n            companyId: \"tools.companyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-event-forwarding-rules\n          description: \"List event forwarding rules for a property\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"event-forwarding.list-rules\"\n          with:\n            propertyId: \"tools.propertyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-event-forwarding-rule\n          description: \"Create a new event forwarding rule\"\n          hints:\n            readOnly: false\n          call: \"event-forwarding.create-rule\"\
+  \n          with:\n            propertyId: \"tools.propertyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-secrets\n          description: \"List secrets for authenticating with forwarding destinations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"event-forwarding.list-secrets\"\n          with:\n            propertyId: \"tools.propertyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-secret\n          description: \"Create a secret for an event forwarding destination\"\n          hints:\n            readOnly: false\n          call: \"event-forwarding.create-secret\"\n          with:\n            propertyId: \"tools.propertyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-interactive-event\n          description: \"Send an interactive event\
+  \ to Adobe Edge Network\"\n          hints:\n            readOnly: false\n          call: \"data-collection.interact\"\n          with:\n            datastreamId: \"tools.datastreamId\"\n            event: \"tools.event\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-batch-events\n          description: \"Send batch events to Adobe Edge Network\"\n          hints:\n            readOnly: false\n          call: \"data-collection.collect\"\n          with:\n            datastreamId: \"tools.datastreamId\"\n            events: \"tools.events\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-media-session\n          description: \"Start a media tracking session\"\n          hints:\n            readOnly: false\n          call: \"data-collection.media-session-start\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ end-media-session\n          description: \"End a media tracking session\"\n          hints:\n            readOnly: false\n          call: \"data-collection.media-session-end\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-launch/refs/heads/main/capabilities/data-collection-pipeline.yaml
 tags:
 - Adobe Launch
 - Data Collection

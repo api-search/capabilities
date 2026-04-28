@@ -54,67 +54,80 @@ personas: []
 provider_name: Temporal
 provider_slug: temporal
 search_terms:
-- list all temporal cloud namespaces
-- get user details
-- check the status of an asynchronous operation
 - create a namespace
-- list all api keys in the account
-- create a user
-- list all api keys
-- create namespace
-- create a new api key for authentication
-- create service account
-- list all namespaces
-- get api key
-- get namespace details
 - create user
-- delete api key
-- cloud operations
-- get async operation
-- delete a temporal cloud namespace
-- create an api key
-- update namespace configuration
-- delete a user
-- delete an api key
-- api key management
-- workflows
-- single namespace operations
-- update namespace
-- list all users
-- service account management
-- get details for a specific namespace
-- list all users in the account
-- get api key details
-- region information
-- delete service account
-- namespace management
-- get namespace
-- list service accounts
+- list all temporal cloud namespaces
 - create a new temporal cloud namespace
-- create a new user
-- list available regions
-- get user
-- delete namespace
-- delete user
-- list users
-- list regions
-- temporal
-- delete a namespace
-- list api keys
-- list all available temporal cloud regions
-- get service account details
+- list all users
 - platform administration
-- create a service account for api access
-- list namespaces
-- create api key
-- delete a service account
-- procode_api_composition
+- delete namespace
 - create a service account
+- create an api key
+- get api key details
+- delete an api key
+- delete api key
+- update namespace configuration
+- namespace management
+- create api key
+- create a new api key for authentication
+- update namespace
+- cloud operations
+- procode_api_composition
+- delete a namespace
+- create service account
+- get api key
+- delete a service account
+- get service account details
+- get details for a specific namespace
 - workflow infrastructure
+- list available regions
 - get service account
+- get namespace details
+- workflows
+- create namespace
+- list regions
+- get user details
+- list namespaces
+- delete user
+- single namespace operations
+- list users
+- api key management
+- create a service account for api access
 - user management
+- create a user
+- temporal
+- get async operation
+- list all api keys in the account
+- region information
+- list api keys
+- create a new user
+- service account management
+- list all api keys
 - list all service accounts
+- delete a temporal cloud namespace
+- list all available temporal cloud regions
+- get user
+- list service accounts
+- list all users in the account
+- delete a user
+- check the status of an asynchronous operation
+- delete service account
+- list all namespaces
+- get namespace
 slug: cloud-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Temporal Cloud Operations\"\n  description: \"Unified workflow for platform administrators to manage Temporal Cloud infrastructure including namespaces, users, service accounts, API keys, and regions.\"\n  tags:\n    - Temporal\n    - Cloud Operations\n    - Platform Administration\n    - Workflow Infrastructure\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      TEMPORAL_API_KEY: TEMPORAL_API_KEY\n\ncapability:\n  consumes:\n    - import: cloud-ops\n      location: ./shared/cloud-ops.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloud-operations-api\n      description: \"Unified REST API for Temporal Cloud operations management.\"\n      resources:\n        - path: /v1/namespaces\n          name: namespaces\n          description: \"Namespace management\"\n          operations:\n            - method: GET\n              name: list-namespaces\n       \
+  \       description: \"List all namespaces\"\n              call: \"cloud-ops.list-namespaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-namespace\n              description: \"Create a namespace\"\n              call: \"cloud-ops.create-namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/namespaces/{namespace}\n          name: namespace-detail\n          description: \"Single namespace operations\"\n          operations:\n            - method: GET\n              name: get-namespace\n              description: \"Get namespace details\"\n              call: \"cloud-ops.get-namespace\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n             \
+  \ name: delete-namespace\n              description: \"Delete a namespace\"\n              call: \"cloud-ops.delete-namespace\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List all users\"\n              call: \"cloud-ops.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a user\"\n              call: \"cloud-ops.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-accounts\n          name: service-accounts\n       \
+  \   description: \"Service account management\"\n          operations:\n            - method: GET\n              name: list-service-accounts\n              description: \"List all service accounts\"\n              call: \"cloud-ops.list-service-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service-account\n              description: \"Create a service account\"\n              call: \"cloud-ops.create-service-account\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/api-keys\n          name: api-keys\n          description: \"API key management\"\n          operations:\n            - method: GET\n              name: list-api-keys\n              description: \"List all API keys\"\n              call: \"cloud-ops.list-api-keys\"\n              outputParameters:\n                - type: object\n   \
+  \               mapping: \"$.\"\n            - method: POST\n              name: create-api-key\n              description: \"Create an API key\"\n              call: \"cloud-ops.create-api-key\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/regions\n          name: regions\n          description: \"Region information\"\n          operations:\n            - method: GET\n              name: list-regions\n              description: \"List available regions\"\n              call: \"cloud-ops.list-regions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: cloud-operations-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Temporal Cloud operations management.\"\n      tools:\n        - name: list-namespaces\n          description: \"List all Temporal Cloud namespaces\"\n          hints:\n\
+  \            readOnly: true\n            openWorld: true\n          call: \"cloud-ops.list-namespaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-namespace\n          description: \"Create a new Temporal Cloud namespace\"\n          hints:\n            readOnly: false\n          call: \"cloud-ops.create-namespace\"\n          with:\n            spec: \"tools.spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-namespace\n          description: \"Get details for a specific namespace\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.get-namespace\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-namespace\n          description: \"Update namespace configuration\"\n          hints:\n            readOnly: false\n\
+  \            idempotent: true\n          call: \"cloud-ops.update-namespace\"\n          with:\n            namespace: \"tools.namespace\"\n            resourceVersion: \"tools.resourceVersion\"\n            spec: \"tools.spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-namespace\n          description: \"Delete a Temporal Cloud namespace\"\n          hints:\n            destructive: true\n          call: \"cloud-ops.delete-namespace\"\n          with:\n            namespace: \"tools.namespace\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List all users in the account\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new user\"\n  \
+  \        hints:\n            readOnly: false\n          call: \"cloud-ops.create-user\"\n          with:\n            spec: \"tools.spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get user details\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.get-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Delete a user\"\n          hints:\n            destructive: true\n          call: \"cloud-ops.delete-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-service-accounts\n          description: \"List all service accounts\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.list-service-accounts\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-service-account\n          description: \"Create a service account for API access\"\n          hints:\n            readOnly: false\n          call: \"cloud-ops.create-service-account\"\n          with:\n            spec: \"tools.spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-service-account\n          description: \"Get service account details\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.get-service-account\"\n          with:\n            serviceAccountId: \"tools.serviceAccountId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-service-account\n          description: \"Delete a service account\"\n          hints:\n            destructive: true\n          call: \"cloud-ops.delete-service-account\"\n          with:\n\
+  \            serviceAccountId: \"tools.serviceAccountId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-api-keys\n          description: \"List all API keys in the account\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.list-api-keys\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-api-key\n          description: \"Create a new API key for authentication\"\n          hints:\n            readOnly: false\n          call: \"cloud-ops.create-api-key\"\n          with:\n            spec: \"tools.spec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-api-key\n          description: \"Get API key details\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.get-api-key\"\n          with:\n            keyId: \"tools.keyId\"\n          outputParameters:\n \
+  \           - type: object\n              mapping: \"$.\"\n        - name: delete-api-key\n          description: \"Delete an API key\"\n          hints:\n            destructive: true\n          call: \"cloud-ops.delete-api-key\"\n          with:\n            keyId: \"tools.keyId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-regions\n          description: \"List all available Temporal Cloud regions\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.list-regions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-async-operation\n          description: \"Check the status of an asynchronous operation\"\n          hints:\n            readOnly: true\n          call: \"cloud-ops.get-async-operation\"\n          with:\n            asyncOperationId: \"tools.asyncOperationId\"\n          outputParameters:\n            - type: object\n        \
+  \      mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/temporal/refs/heads/main/capabilities/cloud-operations.yaml
 tags:
 - Temporal
 - Cloud Operations

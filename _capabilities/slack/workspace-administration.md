@@ -34,42 +34,48 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- get team info.
-- user group management.
-- team information.
-- test authentication.
-- get dnd status
-- messaging
 - team communication
-- list user groups
-- auth test
-- get workspace information.
-- list users.
-- slack
-- list workspace users.
-- user management.
-- administration
-- admin controls.
-- admin controls
-- productivity
-- bots
-- get team info
-- get team
-- list users
-- list groups
-- list user groups.
-- collaboration
-- migrate ids
-- get do not disturb status.
-- enterprise
+- team information.
 - access admin controls.
-- t1
-- list admin
-- list admin resources.
-- chat
-- user management
+- user group management.
+- get team info.
+- list workspace users.
+- get team
+- enterprise
+- get dnd status
+- get team info
+- test authentication.
 - migrate enterprise ids.
+- auth test
+- migrate ids
+- list groups
+- list user groups
+- slack
+- admin controls.
+- list users.
+- bots
+- list users
+- get workspace information.
+- t1
+- user management
+- get do not disturb status.
+- collaboration
+- messaging
+- productivity
+- administration
+- admin controls
+- list admin
+- user management.
+- list admin resources.
+- list user groups.
+- chat
 slug: workspace-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Slack Workspace Administration\"\n  description: \"Unified workflow for workspace administration including admin controls, team settings, user management, user groups, authentication, and enterprise migration. Used by workspace administrators and IT teams.\"\n  tags:\n    - Slack\n    - Administration\n    - User Management\n    - Enterprise\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\n\ncapability:\n  consumes:\n    - import: slack-admin\n      location: ./shared/admin.yaml\n    - import: slack-team\n      location: ./shared/team.yaml\n    - import: slack-users\n      location: ./shared/users.yaml\n    - import: slack-usergroups\n      location: ./shared/usergroups.yaml\n    - import: slack-migration\n      location: ./shared/migration.yaml\n    - import: slack-auth\n      location: ./shared/auth.yaml\n    - import: slack-oauth\n      location:\
+  \ ./shared/oauth.yaml\n    - import: slack-openid\n      location: ./shared/openid-connect.yaml\n    - import: slack-dnd\n      location: ./shared/dnd.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: workspace-admin-api\n      description: \"Unified REST API for workspace administration.\"\n      resources:\n        - path: /v1/admin\n          name: admin\n          description: \"Admin controls.\"\n          operations:\n            - method: GET\n              name: list-admin\n              description: \"List admin resources.\"\n              call: \"slack-admin.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users.\"\n              call: \"slack-users.list\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/user-groups\n          name: user-groups\n          description: \"User group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List user groups.\"\n              call: \"slack-usergroups.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/team\n          name: team\n          description: \"Team information.\"\n          operations:\n            - method: GET\n              name: get-team\n              description: \"Get team info.\"\n              call: \"slack-team.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: workspace-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted workspace administration.\"\n \
+  \     tools:\n        - name: admin-controls\n          description: \"Access admin controls.\"\n          hints:\n            readOnly: true\n          call: \"slack-admin.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-team-info\n          description: \"Get workspace information.\"\n          hints:\n            readOnly: true\n          call: \"slack-team.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List workspace users.\"\n          hints:\n            readOnly: true\n          call: \"slack-users.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-user-groups\n          description: \"List user groups.\"\n          hints:\n            readOnly: true\n          call: \"slack-usergroups.list\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: migrate-ids\n          description: \"Migrate enterprise IDs.\"\n          hints:\n            readOnly: true\n          call: \"slack-migration.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: auth-test\n          description: \"Test authentication.\"\n          hints:\n            readOnly: true\n          call: \"slack-auth.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dnd-status\n          description: \"Get Do Not Disturb status.\"\n          hints:\n            readOnly: true\n          call: \"slack-dnd.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/slack/refs/heads/main/capabilities/workspace-administration.yaml
 tags:
 - Slack
 - Administration

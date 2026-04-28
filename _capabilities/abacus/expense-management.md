@@ -38,47 +38,56 @@ personas: []
 provider_name: Abacus
 provider_slug: abacus
 search_terms:
-- finance team member responsible for expense approvals and reimbursements
-- organization employee submitting expense reports for reimbursement
-- suspend a member
-- list all members in the organization with pagination support
-- organization member management
 - accounting
-- reimbursement
-- expense management
-- members
-- update member
-- invite a new member to the organization
-- get member details
-- suspend member
-- list all organization members
-- organization member provisioning, role management, and access control
-- expense report management
-- individual expense report
-- get detailed information for a specific organization member
-- finance
-- get expense report details
-- list members
-- list expense reports with filters
-- list expenses
-- expense report submission, approval, and reimbursement workflows
-- abacus
-- get detailed information for a specific expense report including receipt url
-- get expense
 - individual member operations
-- invite member
-- update a member's role, department, or status within the organization
-- unified workflow for member management and expense tracking
-- invite a new member to the organization with email and role assignment
-- Finance Administrator
-- hr manager responsible for member provisioning and access management
-- member suspension
-- suspend an organization member to prevent expense submissions
-- list expense reports with filtering by status, member, or date range
-- get member
+- list expense reports with filters
+- get expense
+- individual expense report
+- invite a new member to the organization
 - update member role or department
+- abacus
+- member suspension
+- expense report management
 - HR Manager
+- hr manager responsible for member provisioning and access management
+- suspend an organization member to prevent expense submissions
+- list all members in the organization with pagination support
+- get detailed information for a specific organization member
+- invite member
+- suspend member
+- list expenses
+- organization employee submitting expense reports for reimbursement
+- finance team member responsible for expense approvals and reimbursements
+- list all organization members
+- invite a new member to the organization with email and role assignment
+- members
+- get member
+- finance
+- suspend a member
+- list expense reports with filtering by status, member, or date range
+- expense management
+- get detailed information for a specific expense report including receipt url
+- Finance Administrator
+- update a member's role, department, or status within the organization
+- update member
+- list members
+- get expense report details
+- get member details
+- reimbursement
+- expense report submission, approval, and reimbursement workflows
+- organization member provisioning, role management, and access control
+- unified workflow for member management and expense tracking
+- organization member management
 slug: expense-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abacus Expense Management\"\n  description: \"Unified workflow for managing employee expenses, reimbursements, and member provisioning. Enables finance teams and administrators to automate expense reporting, track spending by member or category, and manage organizational membership.\"\n  tags:\n    - Abacus\n    - Expense Management\n    - Finance\n    - Reimbursement\n    - Members\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ABACUS_CLIENT_ID: ABACUS_CLIENT_ID\n      ABACUS_CLIENT_SECRET: ABACUS_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: abacus-api\n      location: ./shared/abacus-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: expense-management-api\n      description: \"Unified REST API for Abacus expense management and member administration.\"\n      resources:\n        - path: /v1/members\n          name: members\n        \
+  \  description: \"Organization member management\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List all organization members\"\n              call: \"abacus-api.list-members\"\n              with:\n                page: \"rest.page\"\n                per_page: \"rest.per_page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: invite-member\n              description: \"Invite a new member to the organization\"\n              call: \"abacus-api.invite-member\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/members/{member_id}\n          name: member\n          description: \"Individual member operations\"\n          operations:\n            - method: GET\n              name: get-member\n              description: \"Get member details\"\n       \
+  \       call: \"abacus-api.get-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-member\n              description: \"Update member role or department\"\n              call: \"abacus-api.update-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/members/{member_id}/suspend\n          name: suspend-member\n          description: \"Member suspension\"\n          operations:\n            - method: POST\n              name: suspend-member\n              description: \"Suspend a member\"\n              call: \"abacus-api.suspend-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n\n        - path: /v1/expenses\n          name: expenses\n          description: \"Expense report management\"\n          operations:\n            - method: GET\n              name: list-expenses\n              description: \"List expense reports with filters\"\n              call: \"abacus-api.list-expenses\"\n              with:\n                status: \"rest.status\"\n                member_id: \"rest.member_id\"\n                from_date: \"rest.from_date\"\n                to_date: \"rest.to_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/expenses/{expense_id}\n          name: expense\n          description: \"Individual expense report\"\n          operations:\n            - method: GET\n              name: get-expense\n              description: \"Get expense report details\"\n              call: \"abacus-api.get-expense\"\n              with:\n                expense_id:\
+  \ \"rest.expense_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: expense-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted expense management and member administration.\"\n      tools:\n        - name: list-members\n          description: \"List all members in the organization with pagination support\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"abacus-api.list-members\"\n          with:\n            page: \"tools.page\"\n            per_page: \"tools.per_page\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: invite-member\n          description: \"Invite a new member to the organization with email and role assignment\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n \
+  \         call: \"abacus-api.invite-member\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-member\n          description: \"Get detailed information for a specific organization member\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"abacus-api.get-member\"\n          with:\n            member_id: \"tools.member_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-member\n          description: \"Update a member's role, department, or status within the organization\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"abacus-api.update-member\"\n          with:\n            member_id: \"tools.member_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: suspend-member\n          description:\
+  \ \"Suspend an organization member to prevent expense submissions\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"abacus-api.suspend-member\"\n          with:\n            member_id: \"tools.member_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-expenses\n          description: \"List expense reports with filtering by status, member, or date range\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"abacus-api.list-expenses\"\n          with:\n            status: \"tools.status\"\n            member_id: \"tools.member_id\"\n            from_date: \"tools.from_date\"\n            to_date: \"tools.to_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-expense\n          description: \"Get detailed information for a specific expense\
+  \ report including receipt URL\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"abacus-api.get-expense\"\n          with:\n            expense_id: \"tools.expense_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/abacus/refs/heads/main/capabilities/expense-management.yaml
 tags:
 - Abacus
 - Expense Management

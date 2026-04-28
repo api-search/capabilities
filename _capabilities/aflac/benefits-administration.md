@@ -40,43 +40,50 @@ personas:
 provider_name: aflac
 provider_slug: aflac
 search_terms:
-- benefits
-- enroll an employee in an aflac supplemental insurance product.
-- get enrollment
-- list claims
 - list enrollments
-- create enrollment
-- verify employee eligibility.
-- list claims.
-- verify eligibility
-- hr platform engineer
-- claims
-- submit claim
-- employee enrollment in supplemental insurance products.
-- submit a claim.
-- active supplemental insurance policy tracking.
-- aflac
-- list benefit enrollments.
-- specific enrollment operations.
-- create a new enrollment.
-- list aflac supplemental insurance benefit enrollments for a group or employee.
-- list aflac supplemental insurance claims.
-- enrollment
-- benefit enrollment management.
-- backend developer integrating aflac supplemental insurance enrollment into an hr or benefits administration platform.
 - claims management.
-- retrieve a specific aflac enrollment record.
-- real-time eligibility verification for supplemental insurance products.
+- list benefit enrollments.
 - submit an aflac supplemental insurance claim for a qualifying event.
-- hr or benefits team member managing employee enrollment, claims, and eligibility for supplemental insurance.
-- claim submission and tracking for qualifying health events.
-- eligibility verification.
+- retrieve an enrollment.
 - insurance
 - full supplemental insurance benefits lifecycle from enrollment through claims and eligibility verification.
-- retrieve an enrollment.
+- hr or benefits team member managing employee enrollment, claims, and eligibility for supplemental insurance.
+- specific enrollment operations.
+- aflac
+- verify eligibility
 - benefits administrator
+- submit claim
+- enrollment
+- claims
+- benefit enrollment management.
+- benefits
+- submit a claim.
+- list aflac supplemental insurance claims.
+- verify employee eligibility.
+- claim submission and tracking for qualifying health events.
+- real-time eligibility verification for supplemental insurance products.
+- backend developer integrating aflac supplemental insurance enrollment into an hr or benefits administration platform.
 - verify an employee's eligibility for an aflac supplemental insurance product.
+- list claims.
+- list claims
+- get enrollment
+- active supplemental insurance policy tracking.
+- create enrollment
+- eligibility verification.
+- retrieve a specific aflac enrollment record.
+- enroll an employee in an aflac supplemental insurance product.
+- list aflac supplemental insurance benefit enrollments for a group or employee.
+- hr platform engineer
+- create a new enrollment.
+- employee enrollment in supplemental insurance products.
 slug: benefits-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Aflac Benefits Administration\"\n  description: \"Unified workflow capability for Aflac supplemental insurance benefits administration covering enrollment, claims, eligibility, and policy management. Used by HR platform engineers and benefits administrators.\"\n  tags:\n    - Aflac\n    - Benefits\n    - Insurance\n    - Enrollment\n    - Claims\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AFLAC_CLIENT_ID: AFLAC_CLIENT_ID\n      AFLAC_CLIENT_SECRET: AFLAC_CLIENT_SECRET\n      AFLAC_ACCESS_TOKEN: AFLAC_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: aflac-enterprise-connect\n      location: ./shared/enterprise-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aflac-benefits-api\n      description: \"Unified REST API for Aflac supplemental insurance benefits administration.\"\n      resources:\n        - path: /v1/enrollments\n      \
+  \    name: enrollments\n          description: \"Benefit enrollment management.\"\n          operations:\n            - method: GET\n              name: list-enrollments\n              description: \"List benefit enrollments.\"\n              call: \"aflac-enterprise-connect.list-enrollments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-enrollment\n              description: \"Create a new enrollment.\"\n              call: \"aflac-enterprise-connect.create-enrollment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/enrollments/{enrollment_id}\n          name: enrollment-by-id\n          description: \"Specific enrollment operations.\"\n          operations:\n            - method: GET\n              name: get-enrollment\n              description: \"Retrieve an enrollment.\"\n              call: \"aflac-enterprise-connect.get-enrollment\"\
+  \n              with:\n                enrollment_id: \"rest.enrollment_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/claims\n          name: claims\n          description: \"Claims management.\"\n          operations:\n            - method: GET\n              name: list-claims\n              description: \"List claims.\"\n              call: \"aflac-enterprise-connect.list-claims\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: submit-claim\n              description: \"Submit a claim.\"\n              call: \"aflac-enterprise-connect.submit-claim\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/eligibility/verify\n          name: eligibility\n          description: \"Eligibility verification.\"\n          operations:\n            -\
+  \ method: POST\n              name: verify-eligibility\n              description: \"Verify employee eligibility.\"\n              call: \"aflac-enterprise-connect.verify-eligibility\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: aflac-benefits-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Aflac supplemental insurance benefits administration.\"\n      tools:\n        - name: list-enrollments\n          description: \"List Aflac supplemental insurance benefit enrollments for a group or employee.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"aflac-enterprise-connect.list-enrollments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-enrollment\n          description: \"Enroll an employee in an Aflac supplemental insurance product.\"\n \
+  \         hints:\n            readOnly: false\n            destructive: false\n          call: \"aflac-enterprise-connect.create-enrollment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-enrollment\n          description: \"Retrieve a specific Aflac enrollment record.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"aflac-enterprise-connect.get-enrollment\"\n          with:\n            enrollment_id: \"tools.enrollment_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-claims\n          description: \"List Aflac supplemental insurance claims.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"aflac-enterprise-connect.list-claims\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-claim\n          description:\
+  \ \"Submit an Aflac supplemental insurance claim for a qualifying event.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"aflac-enterprise-connect.submit-claim\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: verify-eligibility\n          description: \"Verify an employee's eligibility for an Aflac supplemental insurance product.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"aflac-enterprise-connect.verify-eligibility\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aflac/refs/heads/main/capabilities/benefits-administration.yaml
 tags:
 - Aflac
 - Benefits

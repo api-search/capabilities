@@ -35,52 +35,59 @@ personas: []
 provider_name: Amazon IAM
 provider_slug: amazon-iam
 search_terms:
-- create a new iam user
-- create a new iam role with a trust policy
-- create role
-- identity
-- creating and attaching permission policies
-- list access keys for an iam user
-- manage iam policies
-- create user
-- list all iam users
-- defining and enforcing what users and services can do
-- list policies
-- create a new iam policy with specified permissions
-- create a new iam role
-- authentication
-- attach a managed policy to an iam role
-- list roles
-- manages iam users, roles, and policies for aws account governance
-- authorization
-- manage iam roles
-- create a new iam policy
-- aws
 - list access keys
-- list all iam policies
-- iam
-- Security Engineer
-- create policy
-- attach user policy
-- create a new iam user with the specified username
-- attach a managed policy to an iam user
-- delete user
-- list users
-- list iam policies available for attachment
-- list all iam roles in the account
-- creating and managing aws user identities
-- reviews and audits iam configurations for security compliance
-- attach role policy
-- list all iam roles
-- access control
-- manage iam users
-- Cloud Administrator
 - policy management
-- access management
+- create user
+- manage iam users
+- create a new iam role with a trust policy
+- iam
+- create policy
+- list all iam roles in the account
+- access control
+- list all iam users
+- list access keys for an iam user
+- create a new iam user
+- reviews and audits iam configurations for security compliance
+- creating and attaching permission policies
+- list policies
+- aws
+- authentication
+- create a new iam user with the specified username
+- authorization
 - delete an iam user from the account
+- create a new iam policy with specified permissions
+- list all iam roles
+- creating and managing aws user identities
+- create a new iam policy
+- access management
+- delete user
+- list roles
+- defining and enforcing what users and services can do
+- list users
+- attach role policy
+- Security Engineer
 - list all iam users in the account
+- manage iam policies
+- attach a managed policy to an iam role
 - security
+- identity
+- Cloud Administrator
+- create role
+- attach user policy
+- list all iam policies
+- manage iam roles
+- attach a managed policy to an iam user
+- create a new iam role
+- manages iam users, roles, and policies for aws account governance
+- list iam policies available for attachment
 slug: iam-access-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IAM - Access Management\n  description: Unified capability for cloud administrators to manage IAM users, roles, groups, and policies for AWS account access control and security governance.\n  tags:\n    - AWS\n    - IAM\n    - Security\n    - Access Control\n    - Identity\n    - Policy Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iam\n      location: ./shared/iam.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iam-access-api\n      description: Unified REST API for IAM access management.\n      resources:\n        - path: /v1/users\n          name: users\n          description: Manage IAM users\n          operations:\n            - method: GET\n              name: list-users\n              description: List\
+  \ all IAM users\n              call: \"iam.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: Create a new IAM user\n              call: \"iam.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/roles\n          name: roles\n          description: Manage IAM roles\n          operations:\n            - method: GET\n              name: list-roles\n              description: List all IAM roles\n              call: \"iam.list-roles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-role\n              description: Create a new IAM role\n              call: \"iam.create-role\"\n              outputParameters:\n                - type: object\n             \
+  \     mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: Manage IAM policies\n          operations:\n            - method: GET\n              name: list-policies\n              description: List all IAM policies\n              call: \"iam.list-policies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-policy\n              description: Create a new IAM policy\n              call: \"iam.create-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: iam-access-mcp\n      transport: http\n      description: MCP server for AI-assisted IAM access management.\n      tools:\n        - name: list-users\n          description: List all IAM users in the account\n          hints:\n            readOnly: true\n            openWorld: true\n    \
+  \      call: \"iam.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: Create a new IAM user with the specified username\n          hints:\n            readOnly: false\n          call: \"iam.create-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: Delete an IAM user from the account\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"iam.delete-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-roles\n          description: List all IAM roles in the account\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iam.list-roles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-role\n\
+  \          description: Create a new IAM role with a trust policy\n          hints:\n            readOnly: false\n          call: \"iam.create-role\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-policies\n          description: List IAM policies available for attachment\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iam.list-policies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-policy\n          description: Create a new IAM policy with specified permissions\n          hints:\n            readOnly: false\n          call: \"iam.create-policy\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: attach-user-policy\n          description: Attach a managed policy to an IAM user\n          hints:\n            readOnly: false\n          call: \"iam.attach-user-policy\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: attach-role-policy\n          description: Attach a managed policy to an IAM role\n          hints:\n            readOnly: false\n          call: \"iam.attach-role-policy\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-access-keys\n          description: List access keys for an IAM user\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iam.list-access-keys\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iam/refs/heads/main/capabilities/iam-access-management.yaml
 tags:
 - AWS
 - IAM

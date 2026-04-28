@@ -104,130 +104,157 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- ai video generation
-- product crop
-- apply resize, flatten, or trim operations to a psd document
-- generate images
-- ai-powered generative fill
-- read, add, modify, or delete layers in a psd document
-- photoshop product crop
-- create renditions from a psd or image
-- get the status of an async photoshop job
-- fill a masked region of an image with ai-generated content using firefly
-- photoshop get job status
-- generate images similar to a reference image
-- create an alpha mask for an image
-- remove background
-- stock get categories
-- firefly get job status
-- license a vector or illustration for use in a project
-- get the status of an async firefly generation job
-- photoshop edit text layers
-- generate images from a text prompt using firefly
-- adobe
-- remove the background from an image using photoshop sensei ai
-- stock asset search
-- create artboards in a psd document
-- search stock files
-- license image
-- replace smart object content in a psd
-- manage layers
-- get the adobe stock content category tree
-- photoshop remove background
-- photoshop create rendition
-- psd text layer editing
-- psd layer management
-- edit text layers
-- stock search files
-- expand an image beyond its boundaries using firefly
-- smart object replacement
-- generate an ai object and composite it into a scene using firefly
-- expand image
-- generate images from a text prompt using adobe firefly
-- ai image generation from text prompts
-- search the adobe stock library
-- automatically straighten a rotated image
-- manage layers in a psd document
-- edit text layers in a psd document
-- apply document operations
-- create renditions from a psd or image in jpeg, png, or tiff
-- edit text content and styling in psd text layers
-- firefly generate composite
-- get firefly job status
-- firefly generation job status
-- generate and composite an ai object into a scene
-- straighten image
-- get metadata for a specific stock file
 - stock vector licensing
-- firefly generate similar images
+- ai-powered image expansion
+- image straightening
+- ai object compositing
+- create artboard
+- create an alpha mask for an image
+- generate images
+- background removal
+- expand an image beyond its boundaries using firefly
+- search the adobe stock library
+- generate an ai object and composite it into a scene using firefly
+- create mask
+- get the status of an async firefly generation job
+- photoshop operation job status
+- design
+- create artboards within a psd document
+- photoshop straighten image
+- creative
+- apply resize, flatten, or trim operations to a psd
+- fill image
+- replace smart object content in a psd document
+- expand image
+- auto-crop an image to the primary product
+- license a stock photo for use in a project
+- generate images similar to a reference image
+- generate images from a text prompt using firefly
+- photoshop create rendition
+- firefly generate video
+- ai-powered generative fill
 - photoshop apply document operations
+- alpha mask creation
+- manage layers
+- create rendition
+- adobe
+- fill a masked region of an image with ai-generated content using firefly
+- stock get categories
+- automatically straighten a rotated image
+- remove the background from an image using photoshop sensei ai
+- license vector
+- get detailed metadata for a specific stock file
+- get photoshop job status
+- stock image licensing
+- psd text layer editing
+- license a vector or illustration for use in a project
+- psd layer management
+- photoshop product crop
+- license a stock video clip for use in a project
+- generate video
+- create artboards in a psd document
+- firefly generate composite
+- smart object replacement
+- image editing
+- create renditions from a psd or image in jpeg, png, or tiff
+- stock search files
+- generate similar image variations
+- photoshop remove background
+- generate composite
+- stock assets
+- firefly generate images
+- firefly get job status
+- manage layers in a psd document
+- apply resize, flatten, or trim operations to a psd document
+- search the adobe stock library for photos, illustrations, vectors, and videos
+- license image
+- psd artboard creation
+- license video
+- ai image generation from text prompts
+- edit smart object
+- license a vector or illustration
+- photoshop edit text layers
+- product crop
+- expand an image beyond its boundaries using firefly generative ai
+- image rendition creation
+- graphics
+- create an alpha mask for an image using photoshop sensei ai
+- stock license video
+- remove background from an image using photoshop
+- edit text layers
+- read, add, modify, or delete layers in a psd document
+- edit text layers in a psd document
+- photoshop create mask
+- firefly generate similar images
+- photoshop create artboard
+- search stock files
+- firefly fill image
+- stock asset search
+- get the adobe stock content category tree
 - photoshop edit smart object
 - stock license image
-- generate similar images
-- stock file metadata
-- generate similar image variations
-- fill a masked region with ai-generated content
-- image straightening
-- ai-powered image expansion
-- search the adobe stock library for photos, illustrations, vectors, and videos
-- fill image
-- create an alpha mask for an image using photoshop sensei ai
-- video
-- edit smart object
-- photoshop create mask
-- license a stock video clip for use in a project
-- apply resize, flatten, or trim operations to a psd
-- psd artboard creation
-- get detailed metadata for a specific stock file
-- generate composite
-- photoshop straighten image
-- license video
-- license vector
-- creative production
-- image rendition creation
-- firefly fill image
-- get stock file metadata
-- generative ai
-- expand an image beyond its boundaries using firefly generative ai
-- image editing
-- stock image licensing
-- photography
-- auto-crop an image to focus on the primary product
-- license a vector or illustration
-- generate images similar to a reference image using firefly
-- get photoshop job status
+- remove background
+- get firefly job status
 - stock license vector
-- stock assets
-- photoshop operation job status
-- generate video
-- auto-crop an image to the primary product
-- photoshop manage layers
-- license a stock photo for use in a project
-- design
-- firefly generate video
-- graphics
-- remove background from an image using photoshop
-- firefly expand image
-- replace smart object content in a psd document
-- firefly generate images
-- photoshop create artboard
-- background removal
-- alpha mask creation
-- product cropping
-- create artboards within a psd document
-- creative
-- create rendition
-- stock get file metadata
-- ai object compositing
-- stock video licensing
+- photography
+- create renditions from a psd or image
 - psd document operations
 - license a stock video clip
-- create mask
+- photoshop manage layers
+- firefly generation job status
+- straighten image
+- creative production
+- get stock file metadata
+- stock video licensing
+- photoshop get job status
+- edit text content and styling in psd text layers
+- get metadata for a specific stock file
+- firefly expand image
+- stock get file metadata
+- generate similar images
+- video
+- generate and composite an ai object into a scene
+- fill a masked region with ai-generated content
+- generate images from a text prompt using adobe firefly
+- get the status of an async photoshop job
 - license a stock photo
-- stock license video
-- create artboard
+- generate images similar to a reference image using firefly
+- auto-crop an image to focus on the primary product
+- generative ai
+- replace smart object content in a psd
+- ai video generation
+- stock file metadata
 - generate a video from a text prompt using firefly
+- apply document operations
+- product cropping
 slug: creative-production
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Creative Production\"\n  description: \"End-to-end creative asset production workflow combining AI content generation (Firefly), image editing and manipulation (Photoshop), and stock asset sourcing and licensing (Stock). Used by creative directors, production designers, and marketing teams to find, generate, edit, and finalize visual assets.\"\n  tags:\n    - Adobe\n    - Creative Production\n    - Generative AI\n    - Image Editing\n    - Stock Assets\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_FIREFLY_TOKEN: ADOBE_FIREFLY_TOKEN\n      ADOBE_PHOTOSHOP_TOKEN: ADOBE_PHOTOSHOP_TOKEN\n      ADOBE_STOCK_TOKEN: ADOBE_STOCK_TOKEN\n      ADOBE_STOCK_API_KEY: ADOBE_STOCK_API_KEY\n\ncapability:\n  consumes:\n    - import: firefly\n      location: ./shared/firefly.yaml\n    - import: photoshop\n      location: ./shared/photoshop.yaml\n    - import: stock\n      location:\
+  \ ./shared/stock.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: creative-production-api\n      description: \"Unified REST API for end-to-end creative asset production combining AI generation, image editing, and stock sourcing.\"\n      resources:\n        # AI Generation\n        - path: /v1/generations\n          name: generations\n          description: \"AI image generation from text prompts\"\n          operations:\n            - method: POST\n              name: generate-images\n              description: \"Generate images from a text prompt using Firefly\"\n              call: \"firefly.generate-images-async\"\n              with:\n                prompt: \"rest.prompt\"\n                negative_prompt: \"rest.negative_prompt\"\n                content_class: \"rest.content_class\"\n                num_variations: \"rest.num_variations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path:\
+  \ /v1/generations/similar\n          name: similar-generations\n          description: \"Generate similar image variations\"\n          operations:\n            - method: POST\n              name: generate-similar-images\n              description: \"Generate images similar to a reference image\"\n              call: \"firefly.generate-similar-images-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n                num_variations: \"rest.num_variations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/expansions\n          name: expansions\n          description: \"AI-powered image expansion\"\n          operations:\n            - method: POST\n              name: expand-image\n              description: \"Expand an image beyond its boundaries using Firefly\"\n              call: \"firefly.expand-image-async\"\n              with:\n                prompt:\
+  \ \"rest.prompt\"\n                image: \"rest.image\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/fills\n          name: fills\n          description: \"AI-powered generative fill\"\n          operations:\n            - method: POST\n              name: fill-image\n              description: \"Fill a masked region with AI-generated content\"\n              call: \"firefly.fill-image-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n                mask: \"rest.mask\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/composites\n          name: composites\n          description: \"AI object compositing\"\n          operations:\n            - method: POST\n              name: generate-composite\n              description: \"Generate and composite an AI object into a scene\"\n\
+  \              call: \"firefly.generate-object-composite-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n                mask: \"rest.mask\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/videos\n          name: videos\n          description: \"AI video generation\"\n          operations:\n            - method: POST\n              name: generate-video\n              description: \"Generate a video from a text prompt using Firefly\"\n              call: \"firefly.generate-video-async\"\n              with:\n                prompt: \"rest.prompt\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # Image Editing\n        - path: /v1/cutouts\n          name: cutouts\n          description: \"Background removal\"\n          operations:\n            - method: POST\n              name: remove-background\n\
+  \              description: \"Remove background from an image using Photoshop\"\n              call: \"photoshop.remove-background\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/masks\n          name: masks\n          description: \"Alpha mask creation\"\n          operations:\n            - method: POST\n              name: create-mask\n              description: \"Create an alpha mask for an image\"\n              call: \"photoshop.create-mask\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/product-crops\n          name: product-crops\n          description: \"Product cropping\"\n          operations:\n            - method: POST\n  \
+  \            name: product-crop\n              description: \"Auto-crop an image to the primary product\"\n              call: \"photoshop.product-crop\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/renditions\n          name: renditions\n          description: \"Image rendition creation\"\n          operations:\n            - method: POST\n              name: create-rendition\n              description: \"Create renditions from a PSD or image\"\n              call: \"photoshop.create-rendition\"\n              with:\n                inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/layers\n          name: layers\n          description: \"PSD layer management\"\n         \
+  \ operations:\n            - method: POST\n              name: manage-layers\n              description: \"Manage layers in a PSD document\"\n              call: \"photoshop.manage-layers\"\n              with:\n                inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/text-edits\n          name: text-edits\n          description: \"PSD text layer editing\"\n          operations:\n            - method: POST\n              name: edit-text-layers\n              description: \"Edit text layers in a PSD document\"\n              call: \"photoshop.edit-text-layers\"\n              with:\n                inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping:\
+  \ \"$.\"\n\n        - path: /v1/smart-objects\n          name: smart-objects\n          description: \"Smart object replacement\"\n          operations:\n            - method: POST\n              name: edit-smart-object\n              description: \"Replace smart object content in a PSD\"\n              call: \"photoshop.edit-smart-object\"\n              with:\n                inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/document-operations\n          name: document-operations\n          description: \"PSD document operations\"\n          operations:\n            - method: POST\n              name: apply-document-operations\n              description: \"Apply resize, flatten, or trim operations to a PSD\"\n              call: \"photoshop.apply-document-operations\"\n              with:\n            \
+  \    inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/artboards\n          name: artboards\n          description: \"PSD artboard creation\"\n          operations:\n            - method: POST\n              name: create-artboard\n              description: \"Create artboards in a PSD document\"\n              call: \"photoshop.create-artboard\"\n              with:\n                inputs: \"rest.inputs\"\n                outputs: \"rest.outputs\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/straighten-jobs\n          name: straighten-jobs\n          description: \"Image straightening\"\n          operations:\n            - method: POST\n              name: straighten-image\n          \
+  \    description: \"Automatically straighten a rotated image\"\n              call: \"photoshop.straighten-image\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # Stock Assets\n        - path: /v1/stock-files\n          name: stock-files\n          description: \"Stock asset search\"\n          operations:\n            - method: GET\n              name: search-stock-files\n              description: \"Search the Adobe Stock library\"\n              call: \"stock.search-stock-files\"\n              with:\n                search_parameters[words]: \"rest.keywords\"\n                search_parameters[limit]: \"rest.limit\"\n                search_parameters[offset]: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stock-files/{content_id}\n\
+  \          name: stock-file-detail\n          description: \"Stock file metadata\"\n          operations:\n            - method: GET\n              name: get-stock-file-metadata\n              description: \"Get metadata for a specific stock file\"\n              call: \"stock.get-stock-file-metadata\"\n              with:\n                content_id: \"rest.content_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/licenses/images\n          name: license-images\n          description: \"Stock image licensing\"\n          operations:\n            - method: POST\n              name: license-image\n              description: \"License a stock photo\"\n              call: \"stock.license-image\"\n              with:\n                content_id: \"rest.content_id\"\n                license: \"rest.license\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n   \
+  \     - path: /v1/licenses/vectors\n          name: license-vectors\n          description: \"Stock vector licensing\"\n          operations:\n            - method: POST\n              name: license-vector\n              description: \"License a vector or illustration\"\n              call: \"stock.license-vector\"\n              with:\n                content_id: \"rest.content_id\"\n                license: \"rest.license\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/licenses/videos\n          name: license-videos\n          description: \"Stock video licensing\"\n          operations:\n            - method: POST\n              name: license-video\n              description: \"License a stock video clip\"\n              call: \"stock.license-video\"\n              with:\n                content_id: \"rest.content_id\"\n                license: \"rest.license\"\n              outputParameters:\n           \
+  \     - type: object\n                  mapping: \"$.\"\n\n        # Job Status (unified across Firefly and Photoshop)\n        - path: /v1/firefly-jobs/{jobId}\n          name: firefly-jobs\n          description: \"Firefly generation job status\"\n          operations:\n            - method: GET\n              name: get-firefly-job-status\n              description: \"Get the status of an async Firefly generation job\"\n              call: \"firefly.get-generation-status\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/photoshop-jobs/{jobId}\n          name: photoshop-jobs\n          description: \"Photoshop operation job status\"\n          operations:\n            - method: GET\n              name: get-photoshop-job-status\n              description: \"Get the status of an async Photoshop job\"\n              call: \"photoshop.get-job-status\"\n  \
+  \            with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: creative-production-mcp\n      transport: http\n      description: \"MCP server for AI-assisted creative asset production combining generation, editing, and stock sourcing.\"\n      tools:\n        # Firefly - AI Generation\n        - name: firefly-generate-images\n          description: \"Generate images from a text prompt using Adobe Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-images-async\"\n          with:\n            prompt: \"tools.prompt\"\n            negative_prompt: \"tools.negative_prompt\"\n            content_class: \"tools.content_class\"\n            num_variations: \"tools.num_variations\"\n          outputParameters:\n            - type: object\n  \
+  \            mapping: \"$.\"\n\n        - name: firefly-generate-similar-images\n          description: \"Generate images similar to a reference image using Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-similar-images-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n            num_variations: \"tools.num_variations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: firefly-expand-image\n          description: \"Expand an image beyond its boundaries using Firefly generative AI\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.expand-image-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n\n        - name: firefly-fill-image\n          description: \"Fill a masked region of an image with AI-generated content using Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.fill-image-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n            mask: \"tools.mask\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: firefly-generate-composite\n          description: \"Generate an AI object and composite it into a scene using Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-object-composite-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n            mask: \"tools.mask\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: firefly-generate-video\n          description: \"Generate a video from a text prompt using Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-video-async\"\n          with:\n            prompt: \"tools.prompt\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: firefly-get-job-status\n          description: \"Get the status of an async Firefly generation job\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"firefly.get-generation-status\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # Photoshop - Image Editing\n        - name: photoshop-remove-background\n          description:\
+  \ \"Remove the background from an image using Photoshop Sensei AI\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.remove-background\"\n          with:\n            input: \"tools.input\"\n            output: \"tools.output\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-create-mask\n          description: \"Create an alpha mask for an image using Photoshop Sensei AI\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.create-mask\"\n          with:\n            input: \"tools.input\"\n            output: \"tools.output\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-product-crop\n          description: \"Auto-crop an image to focus on the primary product\"\n          hints:\n\
+  \            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.product-crop\"\n          with:\n            input: \"tools.input\"\n            output: \"tools.output\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-straighten-image\n          description: \"Automatically straighten a rotated image\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.straighten-image\"\n          with:\n            input: \"tools.input\"\n            output: \"tools.output\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-edit-text-layers\n          description: \"Edit text content and styling in PSD text layers\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n\
+  \          call: \"photoshop.edit-text-layers\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n            options: \"tools.options\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-manage-layers\n          description: \"Read, add, modify, or delete layers in a PSD document\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.manage-layers\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n            options: \"tools.options\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-apply-document-operations\n          description: \"Apply resize, flatten, or trim operations to a PSD document\"\n          hints:\n            readOnly: false\n            destructive: false\n  \
+  \          idempotent: false\n          call: \"photoshop.apply-document-operations\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n            options: \"tools.options\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-create-rendition\n          description: \"Create renditions from a PSD or image in JPEG, PNG, or TIFF\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.create-rendition\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-edit-smart-object\n          description: \"Replace smart object content in a PSD document\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent:\
+  \ false\n          call: \"photoshop.edit-smart-object\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n            options: \"tools.options\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-create-artboard\n          description: \"Create artboards within a PSD document\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"photoshop.create-artboard\"\n          with:\n            inputs: \"tools.inputs\"\n            outputs: \"tools.outputs\"\n            options: \"tools.options\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: photoshop-get-job-status\n          description: \"Get the status of an async Photoshop job\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n     \
+  \     call: \"photoshop.get-job-status\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # Stock - Asset Sourcing\n        - name: stock-search-files\n          description: \"Search the Adobe Stock library for photos, illustrations, vectors, and videos\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"stock.search-stock-files\"\n          with:\n            search_parameters[words]: \"tools.keywords\"\n            search_parameters[limit]: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stock-get-file-metadata\n          description: \"Get detailed metadata for a specific stock file\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"stock.get-stock-file-metadata\"\
+  \n          with:\n            content_id: \"tools.content_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stock-license-image\n          description: \"License a stock photo for use in a project\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"stock.license-image\"\n          with:\n            content_id: \"tools.content_id\"\n            license: \"tools.license\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stock-license-vector\n          description: \"License a vector or illustration for use in a project\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"stock.license-vector\"\n          with:\n            content_id: \"tools.content_id\"\n            license: \"tools.license\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: stock-license-video\n          description: \"License a stock video clip for use in a project\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"stock.license-video\"\n          with:\n            content_id: \"tools.content_id\"\n            license: \"tools.license\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stock-get-categories\n          description: \"Get the Adobe Stock content category tree\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"stock.get-category-tree\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-creative-suite/refs/heads/main/capabilities/creative-production.yaml
 tags:
 - Adobe
 - Creative Production

@@ -43,58 +43,66 @@ personas: []
 provider_name: Bitbucket
 provider_slug: bitbucket
 search_terms:
-- delete repository
-- merge pullrequest
-- trigger pipeline
-- repository hosting
-- devops
-- create pullrequest
-- create a new git repository
-- list pull requests
-- list repositories
-- DevOps Engineer
-- stop a running pipeline
-- pull request management
-- create a new pull request
-- delete a repository
 - git
-- repository management
-- list repositories in a workspace
-- bitbucket
-- get pipeline execution details
-- create repository
-- pull requests
-- trigger a new ci/cd pipeline
-- get pullrequest
-- stop pipeline
-- managing git repositories, branches, and commits
-- continuous integration and deployment pipelines
-- code collaboration
-- list pullrequests
-- code review
-- get repository
-- pull request workflows and code reviews
-- atlassian
-- ci/cd
-- writes code, creates pull requests, and reviews code
-- ci/cd pipeline management
-- decline pullrequest
-- list ci/cd pipelines
-- manages ci/cd pipelines, deployments, and repository settings
-- list pull requests for a repository
-- get pipeline
-- Developer
-- version control
-- get pull request details
-- get repository details
-- create a pull request
-- create a repository
 - merge a pull request
 - list pipelines
-- decline a pull request
-- repository management, pull requests, code reviews, and ci/cd pipelines
+- stop pipeline
+- pull request workflows and code reviews
+- delete repository
+- atlassian
+- continuous integration and deployment pipelines
+- bitbucket
+- create a new git repository
 - trigger a pipeline
+- stop a running pipeline
+- create a repository
+- trigger a new ci/cd pipeline
+- code review
+- list ci/cd pipelines
+- get repository details
+- trigger pipeline
+- list pullrequests
+- list pull requests
+- get pipeline execution details
+- get pipeline
+- Developer
+- devops
+- decline a pull request
+- delete a repository
+- managing git repositories, branches, and commits
+- merge pullrequest
+- pull requests
+- create a pull request
+- get pullrequest
+- version control
+- list repositories
+- create repository
+- list repositories in a workspace
+- ci/cd pipeline management
+- create pullrequest
+- repository management, pull requests, code reviews, and ci/cd pipelines
+- DevOps Engineer
+- manages ci/cd pipelines, deployments, and repository settings
+- list pull requests for a repository
+- repository hosting
+- code collaboration
+- pull request management
+- create a new pull request
+- repository management
+- ci/cd
+- writes code, creates pull requests, and reviews code
+- get repository
+- get pull request details
+- decline pullrequest
 slug: code-collaboration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bitbucket Code Collaboration\"\n  description: \"Workflow capability for code collaboration using Bitbucket - managing repositories, pull requests, code reviews, and CI/CD pipelines. Used by developers and DevOps engineers.\"\n  tags:\n    - Bitbucket\n    - Code Collaboration\n    - CI/CD\n    - DevOps\n    - Pull Requests\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BITBUCKET_TOKEN: BITBUCKET_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-rest-api\n      location: ./shared/cloud-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: code-collaboration-api\n      description: \"Unified REST API for Bitbucket code collaboration workflows.\"\n      resources:\n        - path: /v1/repositories\n          name: repositories\n          description: \"Repository management\"\n          operations:\n            - method: GET\n              name:\
+  \ list-repositories\n              description: \"List repositories\"\n              call: \"cloud-rest-api.list-repositories\"\n            - method: POST\n              name: create-repository\n              description: \"Create a repository\"\n              call: \"cloud-rest-api.create-repository\"\n            - method: GET\n              name: get-repository\n              description: \"Get repository details\"\n              call: \"cloud-rest-api.get-repository\"\n        - path: /v1/pullrequests\n          name: pullrequests\n          description: \"Pull request management\"\n          operations:\n            - method: GET\n              name: list-pullrequests\n              description: \"List pull requests\"\n              call: \"cloud-rest-api.list-pullrequests\"\n            - method: POST\n              name: create-pullrequest\n              description: \"Create a pull request\"\n              call: \"cloud-rest-api.create-pullrequest\"\n            - method: POST\n\
+  \              name: merge-pullrequest\n              description: \"Merge a pull request\"\n              call: \"cloud-rest-api.merge-pullrequest\"\n        - path: /v1/pipelines\n          name: pipelines\n          description: \"CI/CD pipeline management\"\n          operations:\n            - method: GET\n              name: list-pipelines\n              description: \"List pipelines\"\n              call: \"cloud-rest-api.list-pipelines\"\n            - method: POST\n              name: trigger-pipeline\n              description: \"Trigger a pipeline\"\n              call: \"cloud-rest-api.trigger-pipeline\"\n\n    - type: mcp\n      port: 9090\n      namespace: code-collaboration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Bitbucket code collaboration.\"\n      tools:\n        - name: list-repositories\n          description: \"List repositories in a workspace\"\n          hints:\n            readOnly: true\n            openWorld: true\n       \
+  \   call: \"cloud-rest-api.list-repositories\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-repository\n          description: \"Get repository details\"\n          hints:\n            readOnly: true\n          call: \"cloud-rest-api.get-repository\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-repository\n          description: \"Create a new Git repository\"\n          hints:\n            readOnly: false\n          call: \"cloud-rest-api.create-repository\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-repository\n          description: \"Delete a repository\"\n          hints:\n            destructive: true\n          call: \"cloud-rest-api.delete-repository\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-pullrequests\n      \
+  \    description: \"List pull requests for a repository\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloud-rest-api.list-pullrequests\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-pullrequest\n          description: \"Create a new pull request\"\n          hints:\n            readOnly: false\n          call: \"cloud-rest-api.create-pullrequest\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-pullrequest\n          description: \"Get pull request details\"\n          hints:\n            readOnly: true\n          call: \"cloud-rest-api.get-pullrequest\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: merge-pullrequest\n          description: \"Merge a pull request\"\n          hints:\n            readOnly: false\n          call: \"cloud-rest-api.merge-pullrequest\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: decline-pullrequest\n          description: \"Decline a pull request\"\n          hints:\n            readOnly: false\n          call: \"cloud-rest-api.decline-pullrequest\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-pipelines\n          description: \"List CI/CD pipelines\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloud-rest-api.list-pipelines\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: trigger-pipeline\n          description: \"Trigger a new CI/CD pipeline\"\n          hints:\n            readOnly: false\n          call: \"cloud-rest-api.trigger-pipeline\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-pipeline\n          description: \"Get\
+  \ pipeline execution details\"\n          hints:\n            readOnly: true\n          call: \"cloud-rest-api.get-pipeline\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stop-pipeline\n          description: \"Stop a running pipeline\"\n          hints:\n            destructive: true\n          call: \"cloud-rest-api.stop-pipeline\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/bitbucket/refs/heads/main/capabilities/code-collaboration.yaml
 tags:
 - Bitbucket
 - Code Collaboration

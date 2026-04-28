@@ -30,44 +30,51 @@ personas: []
 provider_name: Amazon WorkSpaces
 provider_slug: amazon-workspaces
 search_terms:
-- terminate workspaces
-- desktop as a service
-- end user computing
-- list workspace images.
-- list virtual desktops.
-- describe workspaces
-- list directories.
-- virtual desktop
-- list registered directories for workspace deployment.
-- aws
-- administration
-- create workspaces
 - hardware bundle catalog.
-- cloud-based virtual desktop provisioning and management
+- list virtual desktops.
+- it administration of desktop resources
+- permanently terminate virtual desktop workspaces.
+- reboot workspaces
+- describe workspaces
+- virtual desktop
+- virtual desktop lifecycle management.
+- provision new virtual desktop workspaces for users.
+- describe workspace bundles
+- End User Computing Engineer
+- aws
+- list and describe all virtual desktop workspaces.
+- provision new virtual desktops.
+- reboot virtual desktop workspaces to resolve issues.
+- designs and operates virtual desktop infrastructure.
+- end user computing
+- IT Administrator
+- workspace image management.
 - describe workspace images
 - list available workspace images for provisioning.
 - remote work and desktop-as-a-service infrastructure
-- reboot virtual desktop workspaces to resolve issues.
-- list available hardware configuration bundles.
+- list registered directories for workspace deployment.
 - workflow for it administrators to provision and manage amazon workspaces virtual desktops including lifecycle, bundles, directories, and images.
-- permanently terminate virtual desktop workspaces.
-- list available bundles.
-- describe workspace bundles
-- workspace image management.
-- describe workspace directories
-- virtual desktop lifecycle management.
-- it administration of desktop resources
-- reboot workspaces
-- manages workspaces provisioning, lifecycle, and policy.
-- provision new virtual desktops.
-- designs and operates virtual desktop infrastructure.
+- list directories.
 - directory management.
-- list and describe all virtual desktop workspaces.
-- End User Computing Engineer
-- IT Administrator
+- manages workspaces provisioning, lifecycle, and policy.
+- create workspaces
+- administration
+- list available bundles.
+- list workspace images.
 - desktop
-- provision new virtual desktop workspaces for users.
+- cloud-based virtual desktop provisioning and management
+- terminate workspaces
+- list available hardware configuration bundles.
+- desktop as a service
+- describe workspace directories
 slug: virtual-desktop-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkSpaces Virtual Desktop Management\"\n  description: >-\n    Unified workflow for IT administrators and end user computing teams to\n    provision, manage, and maintain Amazon WorkSpaces virtual desktops at scale,\n    including workspace lifecycle, bundle management, directory integration,\n    and image management.\n  tags:\n    - AWS\n    - Virtual Desktop\n    - End User Computing\n    - Desktop as a Service\n    - Administration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: workspaces\n      location: ./shared/workspaces.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: virtual-desktop-management-api\n      description: \"Unified REST API for Amazon WorkSpaces virtual desktop\
+  \ management.\"\n      resources:\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Virtual desktop lifecycle management.\"\n          operations:\n            - method: GET\n              name: describe-workspaces\n              description: \"List virtual desktops.\"\n              call: \"workspaces.describe-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workspaces\n              description: \"Provision new virtual desktops.\"\n              call: \"workspaces.create-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bundles\n          name: bundles\n          description: \"Hardware bundle catalog.\"\n          operations:\n            - method: GET\n              name: describe-workspace-bundles\n              description: \"List available bundles.\"\
+  \n              call: \"workspaces.describe-workspace-bundles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/directories\n          name: directories\n          description: \"Directory management.\"\n          operations:\n            - method: GET\n              name: describe-workspace-directories\n              description: \"List directories.\"\n              call: \"workspaces.describe-workspace-directories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Workspace image management.\"\n          operations:\n            - method: GET\n              name: describe-workspace-images\n              description: \"List workspace images.\"\n              call: \"workspaces.describe-workspace-images\"\n              outputParameters:\n                - type: object\n                \
+  \  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: virtual-desktop-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon WorkSpaces virtual desktop management.\"\n      tools:\n        - name: describe-workspaces\n          description: \"List and describe all virtual desktop workspaces.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces.describe-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-workspaces\n          description: \"Provision new virtual desktop workspaces for users.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"workspaces.create-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: terminate-workspaces\n          description: \"Permanently\
+  \ terminate virtual desktop workspaces.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"workspaces.terminate-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: reboot-workspaces\n          description: \"Reboot virtual desktop workspaces to resolve issues.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"workspaces.reboot-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-workspace-bundles\n          description: \"List available hardware configuration bundles.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces.describe-workspace-bundles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n   \
+  \     - name: describe-workspace-directories\n          description: \"List registered directories for workspace deployment.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces.describe-workspace-directories\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-workspace-images\n          description: \"List available workspace images for provisioning.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces.describe-workspace-images\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/capabilities/virtual-desktop-management.yaml
 tags:
 - AWS
 - Virtual Desktop

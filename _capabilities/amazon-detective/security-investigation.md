@@ -54,70 +54,83 @@ personas: []
 provider_name: Amazon Detective
 provider_slug: amazon-detective
 search_terms:
-- indicators of compromise from an investigation
-- list all security investigations with filtering by severity, status, and state
-- multi-account security management via aws organizations integration
-- individual investigation management
-- start a new investigation on an iam user or role
-- get the organization behavior graph configuration including auto-enable settings
-- list member accounts contributing data to a behavior graph
-- data source package management
-- list graphs
-- list all amazon detective behavior graphs
-- behavior graph management for security investigation
-- delete members
-- update datasource packages
-- forensics
-- list investigations
-- aws
-- threat hunting
-- list members
-- create a new amazon detective behavior graph to begin security monitoring
-- security engineer managing the detective behavior graph, member accounts, and data sources
-- security
-- get results and status of an investigation
-- security investigation lifecycle management
-- get indicators of compromise from an investigation
-- invite aws accounts to contribute data to a behavior graph
-- list all investigations in a behavior graph
-- list indicators
-- end-to-end security investigation using machine learning and graph analysis
-- create a new behavior graph
-- Security Engineer
-- list member accounts contributing to the behavior graph
-- list data source packages and their ingest status in a behavior graph
-- archive a completed investigation or reactivate an archived one
-- list data source packages in the behavior graph
-- security operations center analyst using detective to investigate alerts and hunt threats
-- list organization admin accounts
-- SOC Analyst
-- get members
-- initiate a detective investigation on a suspicious iam user or role
-- update investigation state
-- get the results, severity, and status of a security investigation
-- get detailed membership information for specific accounts
-- start investigation
-- list detective administrator accounts in the organization
-- remove member accounts from the behavior graph
-- get indicators of compromise (ttps, flagged ips, impossible travel) from an investigation
-- soc
-- list all behavior graphs
-- create graph
-- security investigation
-- get investigation
-- enable additional data source packages like eks audit logs or ad audit logs
-- describe organization configuration
 - member account management for the behavior graph
-- investigation
-- managing the detective behavior graph and contributing member accounts
-- list datasource packages
-- remove member accounts from a behavior graph
+- security engineer managing the detective behavior graph, member accounts, and data sources
+- enable additional data source packages like eks audit logs or ad audit logs
+- SOC Analyst
+- multi-account security management via aws organizations integration
+- list all behavior graphs
+- individual investigation management
+- list data source packages and their ingest status in a behavior graph
+- list organization admin accounts
+- delete members
+- get indicators of compromise (ttps, flagged ips, impossible travel) from an investigation
+- aws
 - amazon detective
 - create members
-- end-to-end security investigation workflow for soc analysts
-- archive or reactivate an investigation
 - invite aws accounts to become member accounts
+- start investigation
+- create a new amazon detective behavior graph to begin security monitoring
+- get the organization behavior graph configuration including auto-enable settings
+- update investigation state
+- archive a completed investigation or reactivate an archived one
+- get indicators of compromise from an investigation
+- list detective administrator accounts in the organization
+- soc
+- list datasource packages
+- archive or reactivate an investigation
+- list data source packages in the behavior graph
+- behavior graph management for security investigation
+- start a new investigation on an iam user or role
+- list all amazon detective behavior graphs
+- security investigation
+- create a new behavior graph
+- get investigation
+- get detailed membership information for specific accounts
+- list indicators
+- list investigations
+- security investigation lifecycle management
+- invite aws accounts to contribute data to a behavior graph
+- list member accounts contributing to the behavior graph
+- end-to-end security investigation workflow for soc analysts
+- forensics
+- describe organization configuration
+- initiate a detective investigation on a suspicious iam user or role
+- Security Engineer
+- indicators of compromise from an investigation
+- list graphs
+- list all security investigations with filtering by severity, status, and state
+- end-to-end security investigation using machine learning and graph analysis
+- managing the detective behavior graph and contributing member accounts
+- remove member accounts from the behavior graph
+- list all investigations in a behavior graph
+- list member accounts contributing data to a behavior graph
+- list members
+- get the results, severity, and status of a security investigation
+- security
+- security operations center analyst using detective to investigate alerts and hunt threats
+- threat hunting
+- investigation
+- update datasource packages
+- get members
+- create graph
+- data source package management
+- get results and status of an investigation
+- remove member accounts from a behavior graph
 slug: security-investigation
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Detective Security Investigation\n  description: >-\n    Workflow capability for SOC analysts and security engineers to conduct end-to-end security\n    investigations using Amazon Detective. Combines behavior graph management, member account\n    administration, investigation lifecycle management, and indicator analysis into a unified\n    workflow for threat hunting and security forensics.\n  tags:\n    - Amazon Detective\n    - Security Investigation\n    - Forensics\n    - Threat Hunting\n    - SOC\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_SESSION_TOKEN: AWS_SESSION_TOKEN\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: detective\n      location: ./shared/detective-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n \
+  \     namespace: security-investigation-api\n      description: Unified REST API for Amazon Detective security investigation workflows.\n      resources:\n        - path: /v1/graphs\n          name: graphs\n          description: Behavior graph management for security investigation\n          operations:\n            - method: GET\n              name: list-graphs\n              description: List all behavior graphs\n              call: \"detective.list-graphs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-graph\n              description: Create a new behavior graph\n              call: \"detective.create-graph\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/graphs/{graphArn}/members\n          name: members\n          description: Member account management for the behavior graph\n          operations:\n\
+  \            - method: GET\n              name: list-members\n              description: List member accounts contributing to the behavior graph\n              call: \"detective.list-members\"\n              with:\n                GraphArn: \"rest.graphArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-members\n              description: Invite AWS accounts to become member accounts\n              call: \"detective.create-members\"\n              with:\n                GraphArn: \"rest.graphArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-members\n              description: Remove member accounts from the behavior graph\n              call: \"detective.delete-members\"\n              with:\n                GraphArn: \"rest.graphArn\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/investigations\n          name: investigations\n          description: Security investigation lifecycle management\n          operations:\n            - method: GET\n              name: list-investigations\n              description: List all investigations in a behavior graph\n              call: \"detective.list-investigations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: start-investigation\n              description: Start a new investigation on an IAM user or role\n              call: \"detective.start-investigation\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/investigations/{investigationId}\n          name: investigation\n          description: Individual investigation management\n          operations:\n    \
+  \        - method: GET\n              name: get-investigation\n              description: Get results and status of an investigation\n              call: \"detective.get-investigation\"\n              with:\n                InvestigationId: \"rest.investigationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-investigation-state\n              description: Archive or reactivate an investigation\n              call: \"detective.update-investigation-state\"\n              with:\n                InvestigationId: \"rest.investigationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/investigations/{investigationId}/indicators\n          name: indicators\n          description: Indicators of compromise from an investigation\n          operations:\n            - method: GET\n              name: list-indicators\n\
+  \              description: Get indicators of compromise from an investigation\n              call: \"detective.list-indicators\"\n              with:\n                InvestigationId: \"rest.investigationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/datasources\n          name: datasources\n          description: Data source package management\n          operations:\n            - method: GET\n              name: list-datasource-packages\n              description: List data source packages in the behavior graph\n              call: \"detective.list-datasource-packages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: security-investigation-mcp\n      transport: http\n      description: MCP server for AI-assisted security investigation and threat hunting with Amazon Detective.\n      tools:\n      \
+  \  - name: list-graphs\n          description: List all Amazon Detective behavior graphs\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"detective.list-graphs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-graph\n          description: Create a new Amazon Detective behavior graph to begin security monitoring\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"detective.create-graph\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-members\n          description: List member accounts contributing data to a behavior graph\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"detective.list-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-members\n         \
+  \ description: Get detailed membership information for specific accounts\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"detective.get-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-members\n          description: Invite AWS accounts to contribute data to a behavior graph\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"detective.create-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-members\n          description: Remove member accounts from a behavior graph\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"detective.delete-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-investigation\n          description: Initiate a Detective\
+  \ investigation on a suspicious IAM user or role\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"detective.start-investigation\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-investigation\n          description: Get the results, severity, and status of a security investigation\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"detective.get-investigation\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-investigations\n          description: List all security investigations with filtering by severity, status, and state\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"detective.list-investigations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-investigation-state\n\
+  \          description: Archive a completed investigation or reactivate an archived one\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"detective.update-investigation-state\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-indicators\n          description: Get indicators of compromise (TTPs, flagged IPs, impossible travel) from an investigation\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"detective.list-indicators\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-datasource-packages\n          description: List data source packages and their ingest status in a behavior graph\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"detective.list-datasource-packages\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: update-datasource-packages\n          description: Enable additional data source packages like EKS audit logs or AD audit logs\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"detective.update-datasource-packages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-organization-configuration\n          description: Get the organization behavior graph configuration including auto-enable settings\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"detective.describe-organization-configuration\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-organization-admin-accounts\n          description: List Detective administrator accounts in the organization\n          hints:\n            readOnly: true\n\
+  \            openWorld: true\n          call: \"detective.list-organization-admin-accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-detective/refs/heads/main/capabilities/security-investigation.yaml
 tags:
 - Amazon Detective
 - Security Investigation

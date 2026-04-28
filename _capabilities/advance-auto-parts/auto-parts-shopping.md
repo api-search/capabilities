@@ -22,44 +22,51 @@ personas: []
 provider_name: Advance Auto Parts
 provider_slug: advance-auto-parts
 search_terms:
-- retail
-- check if an automotive part is in stock at nearby advance auto parts stores.
-- do-it-yourself automotive enthusiast sourcing parts for self-repairs
-- advance auto parts
-- parts catalog
-- check inventory
-- parts catalog search.
-- diy customer
-- check part availability
-- search auto parts
-- professional mechanic using the api to source parts for repair jobs
-- search for automotive parts by keyword, part number, or vehicle year/make/model.
-- loyalty
-- get vehicle years
-- part details.
-- get full specifications, fitment notes, and pricing for a specific automotive part.
-- find advance auto parts store locations near a zip code or city.
 - fleet operations manager ordering parts for vehicle maintenance programs
-- store inventory.
-- find nearby stores
-- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
-- supply chain
-- get part
-- automotive
-- search for automotive parts.
-- get the range of supported vehicle model years for parts catalog lookups.
-- get available vehicle makes for a given model year for fitment-based part search.
-- get part details
-- lookup vehicle models
-- automotive technician
-- get available vehicle models for a year and make for fitment-based part search.
-- fleet manager
-- get automotive part details.
-- search parts
-- lookup vehicle makes
-- e-commerce
+- search auto parts
+- do-it-yourself automotive enthusiast sourcing parts for self-repairs
+- diy customer
 - check part inventory at stores.
+- get automotive part details.
+- advance auto parts
+- automotive technician
+- e-commerce
+- part details.
+- check part availability
+- supply chain
+- search parts
+- fleet manager
+- get available vehicle makes for a given model year for fitment-based part search.
+- get available vehicle models for a year and make for fitment-based part search.
+- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
+- search for automotive parts.
+- get part
+- find advance auto parts store locations near a zip code or city.
+- find nearby stores
+- loyalty
+- automotive
+- get the range of supported vehicle model years for parts catalog lookups.
+- search for automotive parts by keyword, part number, or vehicle year/make/model.
+- parts catalog search.
+- lookup vehicle models
+- check inventory
+- lookup vehicle makes
+- check if an automotive part is in stock at nearby advance auto parts stores.
+- get vehicle years
+- professional mechanic using the api to source parts for repair jobs
+- get full specifications, fitment notes, and pricing for a specific automotive part.
+- parts catalog
+- get part details
+- store inventory.
+- retail
 slug: auto-parts-shopping
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Advance Auto Parts Shopping\"\n  description: \"Unified workflow capability for automotive parts discovery, fitment lookup, inventory checking, ordering, and loyalty management. Designed for automotive technicians, fleet managers, and DIY customers.\"\n  tags:\n    - Advance Auto Parts\n    - Automotive\n    - E-Commerce\n    - Parts Catalog\n    - Loyalty\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AAP_API_KEY: AAP_API_KEY\n      AAP_OAUTH_TOKEN: AAP_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: aap-catalog\n      location: ./shared/catalog-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8090\n      namespace: aap-shopping-api\n      description: \"Unified REST API for Advance Auto Parts catalog search, inventory, ordering, and loyalty.\"\n      resources:\n        - path: /v1/parts\n          name: parts\n          description: \"Parts catalog search.\"\
+  \n          operations:\n            - method: GET\n              name: search-parts\n              description: \"Search for automotive parts.\"\n              call: \"aap-catalog.search-products\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/parts/{productId}\n          name: part\n          description: \"Part details.\"\n          operations:\n            - method: GET\n              name: get-part\n              description: \"Get automotive part details.\"\n              call: \"aap-catalog.get-product\"\n              with:\n                productId: \"rest.productId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory\n          name: inventory\n          description: \"Store inventory.\"\n          operations:\n            - method: GET\n              name: check-inventory\n              description: \"Check part inventory\
+  \ at stores.\"\n              call: \"aap-catalog.check-inventory\"\n              with:\n                productId: \"rest.productId\"\n                zip: \"rest.zip\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: aap-shopping-mcp\n      transport: http\n      description: \"MCP server for AI-assisted automotive parts shopping — find parts, check availability, and manage orders.\"\n      tools:\n        - name: search-auto-parts\n          description: \"Search for automotive parts by keyword, part number, or vehicle year/make/model.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.search-products\"\n          with:\n            q: \"tools.q\"\n            year: \"tools.year\"\n            makeId: \"tools.makeId\"\n            modelId: \"tools.modelId\"\n          outputParameters:\n            - type: object\n      \
+  \        mapping: \"$.\"\n        - name: get-part-details\n          description: \"Get full specifications, fitment notes, and pricing for a specific automotive part.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aap-catalog.get-product\"\n          with:\n            productId: \"tools.productId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: check-part-availability\n          description: \"Check if an automotive part is in stock at nearby Advance Auto Parts stores.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.check-inventory\"\n          with:\n            productId: \"tools.productId\"\n            zip: \"tools.zip\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: find-nearby-stores\n          description: \"Find Advance Auto Parts store locations near a\
+  \ ZIP code or city.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.get-stores\"\n          with:\n            zip: \"tools.zip\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-vehicle-makes\n          description: \"Get available vehicle makes for a given model year for fitment-based part search.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.list-vehicle-makes\"\n          with:\n            year: \"tools.year\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-vehicle-models\n          description: \"Get available vehicle models for a year and make for fitment-based part search.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.list-vehicle-models\"\n          with:\n            year:\
+  \ \"tools.year\"\n            makeId: \"tools.makeId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-vehicle-years\n          description: \"Get the range of supported vehicle model years for parts catalog lookups.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.list-vehicle-years\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/advance-auto-parts/refs/heads/main/capabilities/auto-parts-shopping.yaml
 tags:
 - Advance Auto Parts
 - Automotive

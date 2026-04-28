@@ -53,50 +53,58 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- snowflake
-- create role
-- create a user
-- list network policies
 - create user
-- grant management
-- grant privilege
-- data lakes
-- list managed accounts
-- delete a user
 - create network policy
-- revoke privilege
-- list roles
-- administration
-- list grants
-- create database role
-- fetch user details
-- list all users
-- fetch user
-- network policy management
-- create a role
-- create a new user
-- delete user
-- list users
-- list accounts
-- list database roles
-- database
-- create a network policy
-- account management
-- list all roles
-- role management
-- create a database role
-- grant a privilege to a role
-- data warehousing
-- data sharing
-- access control
-- create a new role
-- sql
 - revoke a privilege from a role
+- database
+- create a new role
+- data warehousing
+- list all users
+- sql
+- fetch user
+- access control
+- list grants to a role
+- role management
+- data lakes
+- grant privilege
+- snowflake
+- grant a privilege to a role
+- list network policies
+- list accounts
+- create a network policy
+- network policy management
+- create a database role
+- create database role
+- account management
+- create a role
+- list roles
+- delete user
+- list database roles
+- list users
+- list grants
 - user management
+- create a user
+- grant management
 - security
 - grant a privilege
-- list grants to a role
+- fetch user details
+- create a new user
+- revoke privilege
+- administration
+- create role
+- list managed accounts
+- data sharing
+- delete a user
+- list all roles
 slug: security-and-access
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Security and Access\"\n  description: \"Unified workflow for managing users, roles, grants, database roles, network policies, and account administration. Used by Platform Administrators and Security Engineers to govern access control and security posture.\"\n  tags:\n    - Snowflake\n    - Security\n    - Access Control\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-user\n      location: ./shared/user.yaml\n    - import: snowflake-role\n      location: ./shared/role.yaml\n    - import: snowflake-grant\n      location: ./shared/grant.yaml\n    - import: snowflake-database-role\n      location: ./shared/database-role.yaml\n    - import: snowflake-network-policy\n      location: ./shared/network-policy.yaml\n\
+  \    - import: snowflake-account\n      location: ./shared/account.yaml\n    - import: snowflake-managed-account\n      location: ./shared/managed-account.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: snowflake-security-api\n      description: \"Unified REST API for Snowflake security and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users\"\n              call: \"snowflake-user.list-users\"\n            - method: POST\n              name: create-user\n              description: \"Create a user\"\n              call: \"snowflake-user.create-user\"\n        - path: /v1/roles\n          name: roles\n          description: \"Role management\"\n          operations:\n            - method: GET\n              name: list-roles\n              description: \"List roles\"\
+  \n              call: \"snowflake-role.list-roles\"\n            - method: POST\n              name: create-role\n              description: \"Create a role\"\n              call: \"snowflake-role.create-role\"\n        - path: /v1/grants\n          name: grants\n          description: \"Grant management\"\n          operations:\n            - method: POST\n              name: grant-privilege\n              description: \"Grant a privilege\"\n              call: \"snowflake-grant.grant-privilege\"\n            - method: GET\n              name: list-grants\n              description: \"List grants\"\n              call: \"snowflake-grant.list-grants-to\"\n        - path: /v1/network-policies\n          name: network-policies\n          description: \"Network policy management\"\n          operations:\n            - method: GET\n              name: list-network-policies\n              description: \"List network policies\"\n              call: \"snowflake-network-policy.list-network-policies\"\
+  \n            - method: POST\n              name: create-network-policy\n              description: \"Create a network policy\"\n              call: \"snowflake-network-policy.create-network-policy\"\n        - path: /v1/accounts\n          name: accounts\n          description: \"Account management\"\n          operations:\n            - method: GET\n              name: list-accounts\n              description: \"List accounts\"\n              call: \"snowflake-account.list-accounts\"\n\n    - type: mcp\n      port: 9083\n      namespace: snowflake-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Snowflake security and access management.\"\n      tools:\n        - name: list-users\n          description: \"List all users\"\n          hints:\n            readOnly: true\n          call: \"snowflake-user.list-users\"\n        - name: create-user\n          description: \"Create a new user\"\n          hints:\n            readOnly: false\n          call:\
+  \ \"snowflake-user.create-user\"\n        - name: fetch-user\n          description: \"Fetch user details\"\n          hints:\n            readOnly: true\n          call: \"snowflake-user.fetch-user\"\n        - name: delete-user\n          description: \"Delete a user\"\n          hints:\n            destructive: true\n          call: \"snowflake-user.delete-user\"\n        - name: list-roles\n          description: \"List all roles\"\n          hints:\n            readOnly: true\n          call: \"snowflake-role.list-roles\"\n        - name: create-role\n          description: \"Create a new role\"\n          hints:\n            readOnly: false\n          call: \"snowflake-role.create-role\"\n        - name: grant-privilege\n          description: \"Grant a privilege to a role\"\n          hints:\n            readOnly: false\n          call: \"snowflake-grant.grant-privilege\"\n        - name: revoke-privilege\n          description: \"Revoke a privilege from a role\"\n          hints:\n\
+  \            readOnly: false\n          call: \"snowflake-grant.revoke-privilege\"\n        - name: list-grants\n          description: \"List grants to a role\"\n          hints:\n            readOnly: true\n          call: \"snowflake-grant.list-grants-to\"\n        - name: list-database-roles\n          description: \"List database roles\"\n          hints:\n            readOnly: true\n          call: \"snowflake-database-role.list-database-roles\"\n        - name: create-database-role\n          description: \"Create a database role\"\n          hints:\n            readOnly: false\n          call: \"snowflake-database-role.create-database-role\"\n        - name: list-network-policies\n          description: \"List network policies\"\n          hints:\n            readOnly: true\n          call: \"snowflake-network-policy.list-network-policies\"\n        - name: create-network-policy\n          description: \"Create a network policy\"\n          hints:\n            readOnly: false\n\
+  \          call: \"snowflake-network-policy.create-network-policy\"\n        - name: list-accounts\n          description: \"List accounts\"\n          hints:\n            readOnly: true\n          call: \"snowflake-account.list-accounts\"\n        - name: list-managed-accounts\n          description: \"List managed accounts\"\n          hints:\n            readOnly: true\n          call: \"snowflake-managed-account.list-managed-accounts\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/capabilities/security-and-access.yaml
 tags:
 - Snowflake
 - Security

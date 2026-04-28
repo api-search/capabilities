@@ -18,31 +18,36 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- jira issue management
-- list workflows
-- agile
-- software development
-- search issues
-- list dashboards
-- jira project management
-- list projects
-- list statuses
-- search jira issues using jql queries
-- productivity
-- list saved jira filters
-- list workflow statuses
 - list all projects
+- list dashboards
+- list saved jira filters
 - atlassian
-- list jira dashboards
-- list all jira projects
-- list filters
-- code
-- collaboration
 - jira
-- search issues using jql
+- list all jira projects
 - list jira workflows
+- list jira dashboards
+- code
 - platform
+- list projects
+- software development
+- list workflows
+- search issues
+- jira issue management
+- search issues using jql
+- collaboration
+- productivity
+- search jira issues using jql queries
+- agile
+- list workflow statuses
+- jira project management
+- list filters
+- list statuses
 slug: agile-development
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Agile Development\"\n  description: \"Agile software development workflow combining Jira Issue, Project, Filter, Search, Field, Workflow, and Dashboard APIs for software developers and scrum masters to plan, track, and deliver software.\"\n  tags:\n    - Agile\n    - Atlassian\n    - Jira\n    - Software Development\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: atlassian-agile-api\n      description: \"Unified REST API for Atlassian agile development operations.\"\n      resources:\n        - path: /v1/issues\n          name: issues\n          description: \"Jira issue management\"\n\
+  \          operations:\n            - method: GET\n              name: search-issues\n              description: \"Search issues using JQL\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects\n          name: projects\n          description: \"Jira project management\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List all projects\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: atlassian-agile-mcp\n      transport: http\n      description: \"MCP server for AI-assisted agile development with Jira.\"\n      tools:\n        - name: search-issues\n          description: \"Search Jira issues using JQL queries\"\n      \
+  \    hints:\n            readOnly: true\n            openWorld: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-projects\n          description: \"List all Jira projects\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-dashboards\n          description: \"List Jira dashboards\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-filters\n          description: \"List saved Jira filters\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: list-workflows\n          description: \"List Jira workflows\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-statuses\n          description: \"List workflow statuses\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-organizations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/atlassian/refs/heads/main/capabilities/agile-development.yaml
 tags:
 - Agile
 - Atlassian

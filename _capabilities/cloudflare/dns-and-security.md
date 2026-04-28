@@ -25,64 +25,74 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- get dns record details.
-- containers
-- dns list records
-- verify a turnstile token.
-- create a logpush job.
-- api gateway
-- logpush list dataset fields
-- object storage
-- turnstile create widget
 - logpush list jobs
-- create a dns record.
-- delete a logpush job.
-- delete a turnstile widget.
-- turnstile widget management.
-- real-time communication
-- list turnstile widgets
-- logpush get job
-- edge computing
-- observability
-- dns
-- list dns records.
-- list turnstile widgets.
-- list logpush jobs
-- cdn
-- create a turnstile widget.
-- security
 - turnstile verify token
-- dns get dnssec
-- delete a dns record.
-- edge
-- dns record management.
-- ddos protection
+- logpush get job
+- turnstile create widget
+- logpush list dataset fields
+- list logpush jobs
 - ai gateway
-- logpush create job
-- get logpush job details.
-- list dns records for a zone.
-- dns update record
-- cloud
-- list dns records
-- logpush delete job
-- web performance
 - dns batch records
 - get dnssec settings.
-- serverless
-- turnstile delete widget
-- turnstile list widgets
-- artificial intelligence
+- dns list records
+- list turnstile widgets
+- get dns record details.
+- list dns records.
 - cloudflare
-- platform
+- serverless
+- update a dns record.
+- edge computing
+- create a logpush job.
+- observability
+- list turnstile widgets.
+- logpush create job
 - dns get record
 - list dataset fields.
-- logpush job management.
-- update a dns record.
-- execute batch dns operations.
-- dns create record
 - list logpush jobs.
+- artificial intelligence
+- turnstile list widgets
+- platform
+- dns create record
+- dns record management.
+- web performance
+- api gateway
 - dns delete record
+- turnstile delete widget
+- containers
+- delete a dns record.
+- get logpush job details.
+- list dns records
+- dns get dnssec
+- logpush job management.
+- delete a turnstile widget.
+- object storage
+- create a dns record.
+- execute batch dns operations.
+- cdn
+- ddos protection
+- list dns records for a zone.
+- cloud
+- edge
+- security
+- dns update record
+- turnstile widget management.
+- real-time communication
+- delete a logpush job.
+- dns
+- create a turnstile widget.
+- verify a turnstile token.
+- logpush delete job
 slug: dns-and-security
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare DNS and Security\"\n  description: \"DNS management and web security combining DNS record management with Turnstile bot protection and Logpush observability. Used by site reliability engineers and security teams.\"\n  tags:\n    - Cloudflare\n    - DNS\n    - Security\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-dns\n      location: ./shared/dns.yaml\n    - import: cloudflare-turnstile\n      location: ./shared/turnstile.yaml\n    - import: cloudflare-logpush\n      location: ./shared/logpush.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: dns-security-api\n      description: \"Unified REST API for Cloudflare DNS and security services.\"\n      resources:\n        - path: /v1/dns-records\n          name: dns-records\n \
+  \         description: \"DNS record management.\"\n          operations:\n            - method: GET\n              name: list-dns-records\n              description: \"List DNS records.\"\n              call: \"cloudflare-dns.list-dns-records\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/turnstile-widgets\n          name: turnstile-widgets\n          description: \"Turnstile widget management.\"\n          operations:\n            - method: GET\n              name: list-turnstile-widgets\n              description: \"List Turnstile widgets.\"\n              call: \"cloudflare-turnstile.list-turnstile-widgets\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logpush-jobs\n          name: logpush-jobs\n     \
+  \     description: \"Logpush job management.\"\n          operations:\n            - method: GET\n              name: list-logpush-jobs\n              description: \"List Logpush jobs.\"\n              call: \"cloudflare-logpush.list-logpush-jobs\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9084\n      namespace: dns-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare DNS and security management.\"\n      tools:\n        - name: dns-list-records\n          description: \"List DNS records for a zone.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-dns.list-dns-records\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-create-record\n\
+  \          description: \"Create a DNS record.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-dns.create-dns-record\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-get-record\n          description: \"Get DNS record details.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-dns.get-dns-record\"\n          with:\n            zone_id: \"tools.zone_id\"\n            dns_record_id: \"tools.dns_record_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-update-record\n          description: \"Update a DNS record.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudflare-dns.update-dns-record\"\n          with:\n            zone_id: \"tools.zone_id\"\n            dns_record_id: \"tools.dns_record_id\"\n \
+  \         outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-delete-record\n          description: \"Delete a DNS record.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-dns.delete-dns-record\"\n          with:\n            zone_id: \"tools.zone_id\"\n            dns_record_id: \"tools.dns_record_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-batch-records\n          description: \"Execute batch DNS operations.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-dns.batch-dns-records\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-get-dnssec\n          description: \"Get DNSSEC settings.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-dns.get-dnssec\"\
+  \n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turnstile-list-widgets\n          description: \"List Turnstile widgets.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-turnstile.list-turnstile-widgets\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turnstile-create-widget\n          description: \"Create a Turnstile widget.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-turnstile.create-turnstile-widget\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turnstile-verify-token\n          description: \"Verify a Turnstile token.\"\n          hints:\n\
+  \            readOnly: true\n          call: \"cloudflare-turnstile.verify-turnstile-token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: turnstile-delete-widget\n          description: \"Delete a Turnstile widget.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-turnstile.delete-turnstile-widget\"\n          with:\n            account_id: \"tools.account_id\"\n            sitekey: \"tools.sitekey\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: logpush-list-jobs\n          description: \"List Logpush jobs.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-logpush.list-logpush-jobs\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: logpush-create-job\n\
+  \          description: \"Create a Logpush job.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-logpush.create-logpush-job\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: logpush-get-job\n          description: \"Get Logpush job details.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-logpush.get-logpush-job\"\n          with:\n            zone_id: \"tools.zone_id\"\n            job_id: \"tools.job_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: logpush-delete-job\n          description: \"Delete a Logpush job.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-logpush.delete-logpush-job\"\n          with:\n            zone_id: \"tools.zone_id\"\n            job_id: \"tools.job_id\"\n       \
+  \   outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: logpush-list-dataset-fields\n          description: \"List dataset fields.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-logpush.list-dataset-fields\"\n          with:\n            zone_id: \"tools.zone_id\"\n            dataset: \"tools.dataset\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudflare/refs/heads/main/capabilities/dns-and-security.yaml
 tags:
 - Cloudflare
 - DNS

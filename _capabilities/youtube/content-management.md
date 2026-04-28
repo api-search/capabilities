@@ -71,55 +71,67 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- delete playlist
-- list youtube videos matching criteria
-- playlists
-- delete caption
-- google
-- upload caption
-- update video metadata
-- list captions
-- upload a caption track
-- upload a new caption track
-- content management
-- list playlists
-- remove a video from a playlist
-- manage items within playlists
 - upload a new video to youtube
-- manage video captions
-- social
-- delete video
-- upload a new video
-- delete a video from youtube
-- delete a video
-- captions
-- create playlist
-- list caption tracks for a video
-- video
-- delete a caption track
 - delete a playlist
-- update video
-- upload video
-- remove playlist item
-- youtube
-- update caption
-- update playlist details
-- manage youtube videos
-- list playlist items
-- add playlist item
-- update playlist
-- list videos matching criteria
-- add a video to a playlist
-- list youtube playlists
-- list items in a playlist
-- media
-- update a caption track
-- videos
-- create a new playlist
-- manage youtube playlists
-- list videos
+- captions
+- upload a new video
+- create playlist
+- list captions
+- upload a new caption track
 - streaming
+- add playlist item
+- delete a caption track
+- update playlist details
+- list playlist items
+- video
+- upload caption
+- list videos
+- delete a video from youtube
+- social
+- remove playlist item
+- list youtube playlists
+- remove a video from a playlist
+- list youtube videos matching criteria
+- videos
+- list items in a playlist
+- update video metadata
+- delete a video
+- update caption
+- update a caption track
+- playlists
+- youtube
+- google
+- manage video captions
+- manage youtube videos
+- manage youtube playlists
+- add a video to a playlist
+- update video
+- create a new playlist
+- manage items within playlists
+- delete caption
+- list videos matching criteria
+- delete video
+- delete playlist
+- upload a caption track
+- content management
+- media
+- update playlist
+- upload video
+- list playlists
+- list caption tracks for a video
 slug: content-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Content Management\"\n  description: \"Unified workflow for managing YouTube video content lifecycle including uploading, updating, organizing into playlists, managing captions, and moderating comments. Designed for content creators, media teams, and platform administrators.\"\n  tags:\n    - YouTube\n    - Content Management\n    - Video\n    - Playlists\n    - Captions\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_API_KEY: YOUTUBE_API_KEY\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-data\n      location: ./shared/data-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: content-management-api\n      description: \"Unified REST API for YouTube content management workflows.\"\n      resources:\n        - path: /v1/videos\n          name: videos\n          description: \"Manage YouTube\
+  \ videos\"\n          operations:\n            - method: GET\n              name: list-videos\n              description: \"List videos matching criteria\"\n              call: \"youtube-data.list-videos\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: upload-video\n              description: \"Upload a new video\"\n              call: \"youtube-data.insert-video\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-video\n              description: \"Update video metadata\"\n              call: \"youtube-data.update-video\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-video\n              description: \"Delete a video\"\n              call: \"youtube-data.delete-video\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/playlists\n          name: playlists\n          description: \"Manage YouTube playlists\"\n          operations:\n            - method: GET\n              name: list-playlists\n              description: \"List playlists\"\n              call: \"youtube-data.list-playlists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-playlist\n              description: \"Create a new playlist\"\n              call: \"youtube-data.insert-playlist\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-playlist\n              description: \"Update playlist details\"\n              call: \"youtube-data.update-playlist\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-playlist\n              description: \"Delete a playlist\"\n              call: \"youtube-data.delete-playlist\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/playlist-items\n          name: playlist-items\n          description: \"Manage items within playlists\"\n          operations:\n            - method: GET\n              name: list-playlist-items\n              description: \"List items in a playlist\"\n              call: \"youtube-data.list-playlist-items\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-playlist-item\n              description: \"Add a video to a playlist\"\n              call: \"youtube-data.insert-playlist-item\"\n              outputParameters:\n                - type: object\n  \
+  \                mapping: \"$.\"\n            - method: DELETE\n              name: remove-playlist-item\n              description: \"Remove a video from a playlist\"\n              call: \"youtube-data.delete-playlist-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/captions\n          name: captions\n          description: \"Manage video captions\"\n          operations:\n            - method: GET\n              name: list-captions\n              description: \"List caption tracks for a video\"\n              call: \"youtube-data.list-captions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: upload-caption\n              description: \"Upload a caption track\"\n              call: \"youtube-data.insert-caption\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n            - method: PUT\n              name: update-caption\n              description: \"Update a caption track\"\n              call: \"youtube-data.update-caption\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-caption\n              description: \"Delete a caption track\"\n              call: \"youtube-data.delete-caption\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: content-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted YouTube content management.\"\n      tools:\n        - name: list-videos\n          description: \"List YouTube videos matching criteria\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-videos\"\n          outputParameters:\n        \
+  \    - type: object\n              mapping: \"$.\"\n        - name: upload-video\n          description: \"Upload a new video to YouTube\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-video\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-video\n          description: \"Update video metadata\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.update-video\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-video\n          description: \"Delete a video from YouTube\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-data.delete-video\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-playlists\n\
+  \          description: \"List YouTube playlists\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-playlists\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-playlist\n          description: \"Create a new playlist\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-playlist\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-playlist\n          description: \"Update playlist details\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.update-playlist\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-playlist\n          description: \"Delete a playlist\"\n          hints:\n            readOnly: false\n         \
+  \   destructive: true\n            idempotent: true\n          call: \"youtube-data.delete-playlist\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-playlist-items\n          description: \"List items in a playlist\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-playlist-items\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-playlist-item\n          description: \"Add a video to a playlist\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-playlist-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-playlist-item\n          description: \"Remove a video from a playlist\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent:\
+  \ true\n          call: \"youtube-data.delete-playlist-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-captions\n          description: \"List caption tracks for a video\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-captions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: upload-caption\n          description: \"Upload a new caption track\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-caption\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-caption\n          description: \"Update a caption track\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.update-caption\"\n          outputParameters:\n     \
+  \       - type: object\n              mapping: \"$.\"\n        - name: delete-caption\n          description: \"Delete a caption track\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-data.delete-caption\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/youtube/refs/heads/main/capabilities/content-management.yaml
 tags:
 - YouTube
 - Content Management

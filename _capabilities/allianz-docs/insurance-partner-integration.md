@@ -38,54 +38,63 @@ personas: []
 provider_name: Allianz
 provider_slug: allianz-docs
 search_terms:
-- partner integration
+- embedded insurance
+- email a quote to a customer for their review
+- submit a customer lead to the allianz sales team
 - Financial Institution Integration Team
+- get certificate of currency
+- get the detailed premium breakdown and rating factors for an insurance quote
+- insurance
+- get the current status and details of a quote
+- get quote rating factors
+- get quote summary
+- insurance policy completion resources
+- send quote email
+- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
+- get certificate
+- retrieve the status and summary of an existing insurance quote
+- insurance lead referral resources
+- complete an insurance policy application on behalf of a customer
 - create a self-service policy completion session for customer
-- submit lead referral
-- financial services
-- price estimation and quote generation for end customers
+- create assisted quote
 - insurance quoting and estimation resources
+- partner integration
 - insurance certificate retrieval resources
 - developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
-- get quote rating factors
-- email a quote to a customer for their review
-- insurance policy completion resources
-- submit lead
-- get certificate
-- embedded insurance product distribution through partner apis
-- quoting
-- create a staff-assisted insurance price estimate for home, landlord, or car insurance
-- send quote email
-- get the detailed premium breakdown and rating factors for an insurance quote
-- get the current status and details of a quote
-- create assisted quote
-- create self service policy
-- create self service quote
-- Partner Developer
-- retrieve a certificate of currency for a policy
-- insurance lead referral resources
-- complete a policy application via staff-assisted workflow
-- unified workflow for partners embedding allianz insurance into customer journeys
-- get the rating factors behind a quote premium
-- complete policy assisted
-- policy completion and certificate management
-- retrieve an insurance certificate of currency for a bound policy
-- email an insurance quote to a customer for asynchronous review
-- complete an insurance policy application on behalf of a customer
-- create a self-service quote session for a customer to complete via internet banking
-- create a staff-assisted insurance quote for a customer
-- individual quote detail and rating factor resources
-- submit a customer lead to the allianz sales team
+- financial services
 - submit a customer insurance lead to the allianz sales team for follow-up
-- retrieve the status and summary of an existing insurance quote
-- embedded insurance
-- get quote summary
-- insurance
-- get certificate of currency
-- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
-- asset management
 - australia
+- embedded insurance product distribution through partner apis
+- policy completion and certificate management
+- individual quote detail and rating factor resources
+- retrieve a certificate of currency for a policy
+- complete a policy application via staff-assisted workflow
+- create a self-service quote session for a customer to complete via internet banking
+- retrieve an insurance certificate of currency for a bound policy
+- quoting
+- unified workflow for partners embedding allianz insurance into customer journeys
+- submit lead referral
+- email an insurance quote to a customer for asynchronous review
+- create self service quote
+- price estimation and quote generation for end customers
+- create self service policy
+- get the rating factors behind a quote premium
+- Partner Developer
+- complete policy assisted
+- create a staff-assisted insurance price estimate for home, landlord, or car insurance
+- asset management
+- create a staff-assisted insurance quote for a customer
+- submit lead
 slug: insurance-partner-integration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Allianz Insurance Partner Integration\"\n  description: \"Workflow capability for financial institutions and retail partners embedding Allianz Australian insurance products into their customer journeys. Combines quoting, lead referral, policy completion, and certificate retrieval into a unified integration layer.\"\n  tags:\n    - Insurance\n    - Australia\n    - Partner Integration\n    - Embedded Insurance\n    - Quoting\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALLIANZ_CLIENT_ID: ALLIANZ_CLIENT_ID\n      ALLIANZ_CLIENT_SECRET: ALLIANZ_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: allianz-api-connect\n      location: ./shared/api-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: allianz-partner-integration-api\n      description: \"Unified REST API for Allianz insurance partner integration workflows.\"\n      resources:\n \
+  \       - path: /v1/quotes\n          name: quotes\n          description: \"Insurance quoting and estimation resources\"\n          operations:\n            - method: POST\n              name: create-assisted-quote\n              description: \"Create a staff-assisted insurance quote for a customer\"\n              call: \"allianz-api-connect.create-price-estimate-assisted\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: send-quote-email\n              description: \"Email a quote to a customer for their review\"\n              call: \"allianz-api-connect.send-price-estimate-email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/quotes/{estimate_id}\n          name: quote-detail\n          description: \"Individual quote detail and rating factor resources\"\n          operations:\n            - method: GET\n\
+  \              name: get-quote-summary\n              description: \"Get the current status and details of a quote\"\n              call: \"allianz-api-connect.get-price-estimate-summary\"\n              with:\n                estimate_id: \"rest.estimate_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: GET\n              name: get-quote-rating-factors\n              description: \"Get the rating factors behind a quote premium\"\n              call: \"allianz-api-connect.get-price-estimate-rating-factors\"\n              with:\n                estimate_id: \"rest.estimate_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/leads\n          name: leads\n          description: \"Insurance lead referral resources\"\n          operations:\n            - method: POST\n              name: submit-lead\n              description: \"Submit\
+  \ a customer lead to the Allianz sales team\"\n              call: \"allianz-api-connect.create-instant-lead-referral\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/policies\n          name: policies\n          description: \"Insurance policy completion resources\"\n          operations:\n            - method: POST\n              name: complete-policy-assisted\n              description: \"Complete a policy application via staff-assisted workflow\"\n              call: \"allianz-api-connect.get-policy-details-assisted\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificates/{policy_number}\n          name: certificates\n          description: \"Insurance certificate retrieval resources\"\n          operations:\n            - method: GET\n              name: get-certificate\n              description: \"Retrieve a Certificate of Currency\
+  \ for a policy\"\n              call: \"allianz-api-connect.get-certificate-of-currency\"\n              with:\n                policy_number: \"rest.policy_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: allianz-partner-integration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Allianz insurance partner integration workflows.\"\n      tools:\n        - name: create-assisted-quote\n          description: \"Create a staff-assisted insurance price estimate for home, landlord, or car insurance\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.create-price-estimate-assisted\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: send-quote-email\n          description: \"Email an insurance quote to a customer for asynchronous review\"\
+  \n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.send-price-estimate-email\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-self-service-quote\n          description: \"Create a self-service quote session for a customer to complete via internet banking\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.create-price-estimate-self-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-quote-summary\n          description: \"Retrieve the status and summary of an existing insurance quote\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-api-connect.get-price-estimate-summary\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n     \
+  \   - name: get-quote-rating-factors\n          description: \"Get the detailed premium breakdown and rating factors for an insurance quote\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-api-connect.get-price-estimate-rating-factors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: submit-lead-referral\n          description: \"Submit a customer insurance lead to the Allianz sales team for follow-up\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.create-instant-lead-referral\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: complete-policy-assisted\n          description: \"Complete an insurance policy application on behalf of a customer\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.get-policy-details-assisted\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-self-service-policy\n          description: \"Create a self-service policy completion session for customer\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"allianz-api-connect.create-policy-details-self-service\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-certificate-of-currency\n          description: \"Retrieve an insurance Certificate of Currency for a bound policy\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"allianz-api-connect.get-certificate-of-currency\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/allianz-docs/refs/heads/main/capabilities/insurance-partner-integration.yaml
 tags:
 - Insurance
 - Australia

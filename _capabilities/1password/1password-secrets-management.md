@@ -37,56 +37,65 @@ personas: []
 provider_name: 1Password
 provider_slug: 1password
 search_terms:
-- unified secrets management, security monitoring, and account provisioning
+- list vault items
+- retrieve sign-in attempt events for security monitoring.
+- delete an item from a 1password vault.
+- retrieve 1password audit events for compliance reporting.
+- account provisioning for 1password partners
+- create a new item in a vault.
+- get item
+- create a new item in a 1password vault.
+- manages secrets injection into applications and infrastructure using connect server
+- retrieve 1password sign-in attempt events for security monitoring.
+- Security Operations
+- list vaults
+- retrieve 1password item usage events for compliance auditing.
+- event streaming for sign-ins, item usage, and audit trails
+- get a specific item from a 1password vault.
+- provision a new 1password account for a partner customer.
+- retrieve item usage audit events.
+- list all api requests made to the 1password connect server.
+- get audit events
 - provision partner account
-- list all accessible vaults.
+- 1Password Partner
+- get item usage events
+- retrieve item usage events for compliance and auditing.
+- list all items in a vault.
+- vault and item crud operations via connect server
+- list api activity
 - devops
+- provisions and manages 1password accounts for partner customers
+- get sign in events
+- delete item
+- secrets
+- manage items within a vault.
+- manage partner billing accounts.
+- update item
+- create item
+- list items
+- create account
+- list all accessible vaults.
+- security
+- passwords
+- DevOps Engineer
+- manage 1password vaults.
+- list all 1password vaults accessible to the connect server.
+- unified secrets management, security monitoring, and account provisioning
+- password manager
+- retrieve sign-in audit events.
+- list all items stored in a specific 1password vault.
 - monitors sign-in events, item usage, and audit logs for security compliance
 - update an existing item in a 1password vault.
-- create a new item in a vault.
-- get item usage events
-- DevOps Engineer
-- secrets
-- provisions and manages 1password accounts for partner customers
-- manages secrets injection into applications and infrastructure using connect server
-- manage partner billing accounts.
-- list api activity
-- Security Operations
-- password manager
-- get audit events
-- list all 1password vaults accessible to the connect server.
-- retrieve 1password audit events for compliance reporting.
-- passwords
-- retrieve item usage events for compliance and auditing.
-- create a new item in a 1password vault.
-- delete an item from a 1password vault.
-- provision a new 1password account for a partner customer.
-- retrieve 1password item usage events for compliance auditing.
-- account provisioning for 1password partners
-- delete item
-- list all items stored in a specific 1password vault.
-- retrieve sign-in attempt events for security monitoring.
-- get a specific item from a 1password vault.
-- list vaults
-- retrieve 1password sign-in attempt events for security monitoring.
-- retrieve sign-in audit events.
-- list all items in a vault.
-- create item
-- vault and item crud operations via connect server
-- get sign in events
-- manage items within a vault.
-- list vault items
-- retrieve item usage audit events.
-- 1Password Partner
-- list items
-- manage 1password vaults.
-- list all api requests made to the 1password connect server.
-- event streaming for sign-ins, item usage, and audit trails
-- create account
-- security
-- update item
-- get item
 slug: 1password-secrets-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: 1Password Secrets Management\n  description: >-\n    Unified secrets management and security monitoring workflow for 1Password.\n    Combines the Connect Server API (vault and item management), Events API\n    (audit log and sign-in monitoring), and Partnership API (account provisioning)\n    into a single workflow for DevOps engineers, security operations teams, and\n    1Password partners.\n  tags:\n    - Security\n    - Passwords\n    - Secrets\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONNECT_TOKEN: CONNECT_TOKEN\n      EVENTS_TOKEN: EVENTS_TOKEN\n      PARTNERSHIP_TOKEN: PARTNERSHIP_TOKEN\n\ncapability:\n  consumes:\n    - import: 1password-connect\n      location: ./shared/1password-connect.yaml\n    - import: 1password-events\n      location: ./shared/1password-events.yaml\n    - import: 1password-partnership\n      location: ./shared/1password-partnership.yaml\n\
+  \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: 1password-secrets-api\n      description: \"Unified REST API for 1Password secrets management.\"\n      resources:\n        - path: /v1/vaults\n          name: vaults\n          description: \"Manage 1Password vaults.\"\n          operations:\n            - method: GET\n              name: list-vaults\n              description: \"List all accessible vaults.\"\n              call: \"1password-connect.get---vaults\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/vaults/{vaultId}/items\n          name: items\n          description: \"Manage items within a vault.\"\n          operations:\n            - method: GET\n              name: list-items\n              description: \"List all items in a vault.\"\n              call: \"1password-connect.get---vaults--vaultUuid--items\"\n              with:\n                vaultUuid: \"rest.vaultId\"\n     \
+  \         outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-item\n              description: \"Create a new item in a vault.\"\n              call: \"1password-connect.post---vaults--vaultUuid--items\"\n              with:\n                vaultUuid: \"rest.vaultId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/events/sign-ins\n          name: sign-in-events\n          description: \"Retrieve sign-in audit events.\"\n          operations:\n            - method: POST\n              name: get-sign-in-events\n              description: \"Retrieve sign-in attempt events for security monitoring.\"\n              call: \"1password-events.post--api-v1-signinattempts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/events/item-usage\n          name: item-usage-events\n\
+  \          description: \"Retrieve item usage audit events.\"\n          operations:\n            - method: POST\n              name: get-item-usage-events\n              description: \"Retrieve item usage events for compliance and auditing.\"\n              call: \"1password-events.post--api-v1-itemusages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/accounts\n          name: partner-accounts\n          description: \"Manage partner billing accounts.\"\n          operations:\n            - method: POST\n              name: create-account\n              description: \"Provision a new 1Password account for a partner customer.\"\n              call: \"1password-partnership.post---accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: 1password-secrets-mcp\n      transport: http\n      description: \"\
+  MCP server for AI-assisted 1Password secrets management and security monitoring.\"\n      tools:\n        - name: list-vaults\n          description: \"List all 1Password vaults accessible to the Connect Server.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-connect.get---vaults\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-vault-items\n          description: \"List all items stored in a specific 1Password vault.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-connect.get---vaults--vaultUuid--items\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-item\n          description: \"Get a specific item from a 1Password vault.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-connect.get---vaults--vaultUuid--items--itemUuid-\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-item\n          description: \"Create a new item in a 1Password vault.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"1password-connect.post---vaults--vaultUuid--items\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-item\n          description: \"Update an existing item in a 1Password vault.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"1password-connect.put---vaults--vaultUuid--items--itemUuid-\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-item\n          description: \"Delete an item from a 1Password vault.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent:\
+  \ true\n          call: \"1password-connect.delete---vaults--vaultUuid--items--itemUuid-\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-sign-in-events\n          description: \"Retrieve 1Password sign-in attempt events for security monitoring.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-events.post--api-v1-signinattempts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-item-usage-events\n          description: \"Retrieve 1Password item usage events for compliance auditing.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-events.post--api-v1-itemusages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-audit-events\n          description: \"Retrieve 1Password audit events for compliance\
+  \ reporting.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-events.post--api-v1-auditevents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-api-activity\n          description: \"List all API requests made to the 1Password Connect Server.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"1password-connect.get--v1-activity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: provision-partner-account\n          description: \"Provision a new 1Password account for a partner customer.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"1password-partnership.post---accounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/1password/refs/heads/main/capabilities/1password-secrets-management.yaml
 tags:
 - Security
 - Passwords

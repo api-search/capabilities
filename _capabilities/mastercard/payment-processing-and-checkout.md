@@ -41,44 +41,52 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- buy-now-pay-later installment plans
-- create an installment plan
-- financial services
-- create checkout session
-- process cloud transaction
-- open banking
-- retrieve payment transaction details
-- create installment plan
-- process a cloud commerce transaction
-- process payment
-- generate a merchant qr code for payment
-- fraud detection
-- create a new checkout session for a merchant
-- generate a merchant-presented qr code for payment
 - get payment
-- checkout session management
-- register contactless reader
+- buy-now-pay-later installment plans
+- create a unified checkout session supporting multiple payment methods
+- e-commerce
+- create checkout session
+- create a unified checkout session
+- process payment
+- payment processing
+- register a contactless reader device
 - qr code payment acceptance
+- process cloud transaction
+- digital identity
+- payments
+- register contactless reader
+- generate a merchant qr code for payment
+- unified checkout sessions
+- financial services
+- retrieve payment transaction details
+- create a buy-now-pay-later installment plan
+- checkout session management
+- process a cloud commerce transaction
+- process a payment through the mastercard gateway
+- create a new checkout session
+- checkout
+- credit cards
+- generate a merchant-presented qr code for payment
+- create an installment plan
+- create a new checkout session for a merchant
 - merchant
+- generate qr code
+- create installment plan
+- fraud detection
+- get payment details
+- mastercard
+- open banking
 - create unified session
 - process a payment through the gateway
-- get payment details
-- create a new checkout session
-- register a contactless reader device
-- checkout
-- create a unified checkout session supporting multiple payment methods
-- payments
-- mastercard
-- create a buy-now-pay-later installment plan
-- payment processing
-- digital identity
-- e-commerce
-- create a unified checkout session
-- credit cards
-- process a payment through the mastercard gateway
-- generate qr code
-- unified checkout sessions
 slug: payment-processing-and-checkout
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Payment Processing and Checkout\"\n  description: \"Unified workflow for merchants and payment processors to manage checkout experiences, process payments, and accept contactless transactions across Mastercard's payment gateway, checkout solutions, and commerce APIs.\"\n  tags:\n    - Mastercard\n    - Payment Processing\n    - Checkout\n    - E-Commerce\n    - Merchant\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: checkout-solutions\n      location: ./shared/checkout-solutions.yaml\n    - import: unified-checkout\n      location: ./shared/unified-checkout-solutions.yaml\n    - import: cloud-commerce\n      location: ./shared/cloud-commerce.yaml\n    - import: contactless-reader\n      location: ./shared/contactless-reader-sdk.yaml\n\
+  \    - import: gateway\n      location: ./shared/gateway.yaml\n    - import: merchant-qr\n      location: ./shared/merchant-presented-qr.yaml\n    - import: installments\n      location: ./shared/installments.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: payment-checkout-api\n      description: \"Unified REST API for Mastercard payment processing and checkout workflows.\"\n      resources:\n        - path: /v1/checkout-sessions\n          name: checkout-sessions\n          description: \"Checkout session management\"\n          operations:\n            - method: POST\n              name: create-checkout-session\n              description: \"Create a new checkout session\"\n              call: \"checkout-solutions.initiate-checkout\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/unified-sessions\n          name: unified-sessions\n          description: \"Unified checkout sessions\"\n  \
+  \        operations:\n            - method: POST\n              name: create-unified-session\n              description: \"Create a unified checkout session\"\n              call: \"unified-checkout.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description: \"Payment processing\"\n          operations:\n            - method: POST\n              name: process-payment\n              description: \"Process a payment through the gateway\"\n              call: \"gateway.process-payment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-payment\n              description: \"Get payment details\"\n              call: \"gateway.get-payment\"\n              with:\n                payment_id: \"rest.payment_id\"\n              outputParameters:\n            \
+  \    - type: object\n                  mapping: \"$.\"\n        - path: /v1/qr-payments\n          name: qr-payments\n          description: \"QR code payment acceptance\"\n          operations:\n            - method: POST\n              name: generate-qr-code\n              description: \"Generate a merchant QR code for payment\"\n              call: \"merchant-qr.generate-qr\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/installment-plans\n          name: installment-plans\n          description: \"Buy-now-pay-later installment plans\"\n          operations:\n            - method: POST\n              name: create-installment-plan\n              description: \"Create an installment plan\"\n              call: \"installments.create-plan\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: payment-checkout-mcp\n\
+  \      transport: http\n      description: \"MCP server for AI-assisted payment processing and checkout management.\"\n      tools:\n        - name: create-checkout-session\n          description: \"Create a new checkout session for a merchant\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"checkout-solutions.initiate-checkout\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-unified-session\n          description: \"Create a unified checkout session supporting multiple payment methods\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"unified-checkout.create-session\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: process-payment\n          description: \"Process a payment through the Mastercard gateway\"\n          hints:\n            readOnly: false\n            idempotent:\
+  \ false\n          call: \"gateway.process-payment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-payment-details\n          description: \"Retrieve payment transaction details\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"gateway.get-payment\"\n          with:\n            payment_id: \"tools.payment_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: generate-qr-code\n          description: \"Generate a merchant-presented QR code for payment\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"merchant-qr.generate-qr\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: process-cloud-transaction\n          description: \"Process a cloud commerce transaction\"\n          hints:\n            readOnly: false\n         \
+  \   idempotent: false\n          call: \"cloud-commerce.process-transaction\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: register-contactless-reader\n          description: \"Register a contactless reader device\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"contactless-reader.register-reader\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-installment-plan\n          description: \"Create a buy-now-pay-later installment plan\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"installments.create-plan\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/mastercard/refs/heads/main/capabilities/payment-processing-and-checkout.yaml
 tags:
 - Mastercard
 - Payment Processing

@@ -39,77 +39,90 @@ personas: []
 provider_name: Kong
 provider_slug: kong
 search_terms:
-- create route
-- delete a service.
+- list all tags and tagged entities.
+- list all api consumers.
+- delete upstream
 - list all routes.
-- delete route
-- upstream service management.
-- api gateway
+- list all services.
+- delete plugin
+- route management.
+- lua
+- open source
 - update a route.
-- get consumer
-- retrieve a specific service.
-- list plugins
-- retrieve a specific plugin configuration.
-- create a new service.
-- create upstream
-- get node status
-- plugin management.
+- list upstreams
+- list all enabled plugin names on the node.
+- nginx
+- get plugin
+- get service
+- delete a service.
+- retrieve gateway node info.
+- create service
+- list all upstream load balancers.
+- get node info
 - list consumers
 - list all plugins.
-- update service
-- get route
-- delete plugin
-- delete a route.
-- list all configured upstream services.
 - delete an upstream.
-- get service
+- plugin management.
+- list certificates
+- api gateway
+- list plugins
+- create a new upstream service.
+- api consumer management.
+- create a new route.
+- retrieve a specific service.
+- create a new route for a service.
 - create consumer
 - list routes
-- update route
-- retrieve kong gateway node status.
-- delete a consumer.
-- get node info
-- create a new route.
-- retrieve kong gateway node information.
-- list all tls certificates.
-- create plugin
-- create a new plugin configuration.
-- list all tags and tagged entities.
-- get plugin
-- lua
-- nginx
-- route management.
-- list all configured routes.
-- retrieve a specific route.
-- create a new upstream for load balancing.
-- create a new route for a service.
-- delete upstream
-- list tags
-- api consumer management.
-- update a service configuration.
-- list upstreams
-- list all upstream load balancers.
 - retrieve a specific consumer.
+- create route
 - list services
-- open source
-- list all enabled plugin names on the node.
-- list all api consumers.
-- list all consumers.
-- create a new api consumer.
-- list all services.
-- delete consumer
-- gateway node information.
-- list all configured plugins.
-- delete service
+- list all configured upstream services.
+- update route
+- create plugin
+- get node status
+- create a new service.
 - delete a plugin.
-- list enabled plugins
+- create upstream
+- list all consumers.
+- update a service configuration.
 - configuration
+- delete service
+- upstream service management.
+- create a new api consumer.
+- gateway node information.
+- get consumer
+- retrieve kong gateway node status.
+- retrieve kong gateway node information.
+- retrieve a specific route.
+- list all configured plugins.
+- delete consumer
+- delete a consumer.
 - kong
-- create service
-- retrieve gateway node info.
-- list certificates
-- create a new upstream service.
+- list enabled plugins
+- list all tls certificates.
+- list tags
+- delete route
+- create a new plugin configuration.
+- get route
+- retrieve a specific plugin configuration.
+- create a new upstream for load balancing.
+- delete a route.
+- update service
+- list all configured routes.
 slug: api-gateway-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Kong API Gateway Management\"\n  description: \"API gateway management workflow for platform engineers to configure services, routes, plugins, consumers, upstreams, and TLS certificates on Kong Gateway instances.\"\n  tags:\n    - Kong\n    - API Gateway\n    - Configuration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      KONG_ADMIN_URL: KONG_ADMIN_URL\n\ncapability:\n  consumes:\n    - import: kong-admin\n      location: ./shared/kong-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-gateway-management-api\n      description: \"Unified REST API for Kong Gateway management.\"\n      resources:\n        - path: /v1/info\n          name: info\n          description: \"Gateway node information.\"\n          operations:\n            - method: GET\n              name: get-node-info\n              description: \"Retrieve gateway node info.\"\n   \
+  \           call: \"kong-admin.get-node-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services\n          name: services\n          description: \"Upstream service management.\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List all services.\"\n              call: \"kong-admin.list-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service\n              description: \"Create a new service.\"\n              call: \"kong-admin.create-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/routes\n          name: routes\n          description: \"Route management.\"\n          operations:\n            - method: GET\n              name: list-routes\n  \
+  \            description: \"List all routes.\"\n              call: \"kong-admin.list-routes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-route\n              description: \"Create a new route.\"\n              call: \"kong-admin.create-route\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consumers\n          name: consumers\n          description: \"API consumer management.\"\n          operations:\n            - method: GET\n              name: list-consumers\n              description: \"List all consumers.\"\n              call: \"kong-admin.list-consumers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/plugins\n          name: plugins\n          description: \"Plugin management.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-plugins\n              description: \"List all plugins.\"\n              call: \"kong-admin.list-plugins\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: api-gateway-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Kong Gateway management.\"\n      tools:\n        - name: get-node-info\n          description: \"Retrieve Kong Gateway node information.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-node-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-node-status\n          description: \"Retrieve Kong Gateway node status.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-node-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n       \
+  \ - name: list-services\n          description: \"List all configured upstream services.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-services\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-service\n          description: \"Create a new upstream service.\"\n          hints:\n            readOnly: false\n          call: \"kong-admin.create-service\"\n          with:\n            name: \"tools.name\"\n            url: \"tools.url\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-service\n          description: \"Retrieve a specific service.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-service\"\n          with:\n            service_id_or_name: \"tools.service_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-service\n\
+  \          description: \"Update a service configuration.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"kong-admin.update-service\"\n          with:\n            service_id_or_name: \"tools.service_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-service\n          description: \"Delete a service.\"\n          hints:\n            destructive: true\n          call: \"kong-admin.delete-service\"\n          with:\n            service_id_or_name: \"tools.service_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-routes\n          description: \"List all configured routes.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-routes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-route\n          description:\
+  \ \"Create a new route for a service.\"\n          hints:\n            readOnly: false\n          call: \"kong-admin.create-route\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-route\n          description: \"Retrieve a specific route.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-route\"\n          with:\n            route_id_or_name: \"tools.route_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-route\n          description: \"Update a route.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"kong-admin.update-route\"\n          with:\n            route_id_or_name: \"tools.route_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-route\n          description: \"Delete a route.\"\n          hints:\n\
+  \            destructive: true\n          call: \"kong-admin.delete-route\"\n          with:\n            route_id_or_name: \"tools.route_id_or_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-consumers\n          description: \"List all API consumers.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-consumers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-consumer\n          description: \"Create a new API consumer.\"\n          hints:\n            readOnly: false\n          call: \"kong-admin.create-consumer\"\n          with:\n            username: \"tools.username\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-consumer\n          description: \"Retrieve a specific consumer.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-consumer\"\
+  \n          with:\n            consumer_id_or_username: \"tools.consumer_id_or_username\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-consumer\n          description: \"Delete a consumer.\"\n          hints:\n            destructive: true\n          call: \"kong-admin.delete-consumer\"\n          with:\n            consumer_id_or_username: \"tools.consumer_id_or_username\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-plugins\n          description: \"List all configured plugins.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-plugins\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-plugin\n          description: \"Create a new plugin configuration.\"\n          hints:\n            readOnly: false\n          call: \"kong-admin.create-plugin\"\n          with:\n\
+  \            name: \"tools.name\"\n            config: \"tools.config\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-plugin\n          description: \"Retrieve a specific plugin configuration.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.get-plugin\"\n          with:\n            plugin_id: \"tools.plugin_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-plugin\n          description: \"Delete a plugin.\"\n          hints:\n            destructive: true\n          call: \"kong-admin.delete-plugin\"\n          with:\n            plugin_id: \"tools.plugin_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-enabled-plugins\n          description: \"List all enabled plugin names on the node.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-enabled-plugins\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-upstreams\n          description: \"List all upstream load balancers.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-upstreams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-upstream\n          description: \"Create a new upstream for load balancing.\"\n          hints:\n            readOnly: false\n          call: \"kong-admin.create-upstream\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-upstream\n          description: \"Delete an upstream.\"\n          hints:\n            destructive: true\n          call: \"kong-admin.delete-upstream\"\n          with:\n            upstream_id_or_name: \"tools.upstream_id_or_name\"\n          outputParameters:\n         \
+  \   - type: object\n              mapping: \"$.\"\n        - name: list-certificates\n          description: \"List all TLS certificates.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-certificates\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tags\n          description: \"List all tags and tagged entities.\"\n          hints:\n            readOnly: true\n          call: \"kong-admin.list-tags\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/kong/refs/heads/main/capabilities/api-gateway-management.yaml
 tags:
 - Kong
 - API Gateway

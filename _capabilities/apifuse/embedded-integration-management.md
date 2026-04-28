@@ -30,39 +30,45 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- Integration Developer
 - browse all available embedded integrations, optionally filtered by category.
-- list workflows
-- product manager building native integrations into a saas product.
-- managing native integrations within saas products.
-- get analytics data.
-- list all pre-built connectors available for embedding into your saas product.
-- create workflow
-- marketplace
+- browse and manage integrations.
 - browse pre-built connectors.
-- integration platform
-- list all connectors.
-- create a new automation workflow connecting two or more integrated platforms.
+- list connectors
+- SaaS Product Manager
+- create workflow
+- integration analytics.
+- Integration Developer
+- get analytics
+- list all integration workflows configured in the embedded marketplace.
 - list integrations
 - apifuse
-- integrations
-- list all integration workflows configured in the embedded marketplace.
-- SaaS Product Manager
-- create a workflow.
-- browse and manage integrations.
-- workflow automation
-- developer implementing and automating embedded integration workflows.
-- saas
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- embedded integrations
-- ipaas
 - manage workflows.
-- list connectors
-- get analytics
-- list workflows.
+- integration platform
+- list all pre-built connectors available for embedding into your saas product.
+- create a workflow.
+- workflow automation
+- list workflows
+- create a new automation workflow connecting two or more integrated platforms.
+- managing native integrations within saas products.
+- developer implementing and automating embedded integration workflows.
 - list all integrations.
-- integration analytics.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- ipaas
+- integrations
+- marketplace
+- list all connectors.
+- saas
+- list workflows.
+- embedded integrations
+- product manager building native integrations into a saas product.
+- get analytics data.
 slug: embedded-integration-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apifuse Embedded Integration Management\"\n  description: \"Unified workflow for managing embedded integrations within SaaS products - browsing connectors, building workflows, monitoring usage analytics, and managing user connections.\"\n  tags:\n    - Apifuse\n    - Embedded Integrations\n    - Workflow Automation\n    - SaaS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIFUSE_API_KEY: APIFUSE_API_KEY\n\ncapability:\n  consumes:\n    - import: apifuse\n      location: ./shared/apifuse.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apifuse-integration-api\n      description: \"Unified REST API for managing Apifuse embedded integrations.\"\n      resources:\n        - path: /v1/integrations\n          name: integrations\n          description: \"Browse and manage integrations.\"\n          operations:\n            - method: GET\n              name:\
+  \ list-integrations\n              description: \"List all integrations.\"\n              call: \"apifuse.list-integrations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connectors\n          name: connectors\n          description: \"Browse pre-built connectors.\"\n          operations:\n            - method: GET\n              name: list-connectors\n              description: \"List all connectors.\"\n              call: \"apifuse.list-connectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows\n          name: workflows\n          description: \"Manage workflows.\"\n          operations:\n            - method: GET\n              name: list-workflows\n              description: \"List workflows.\"\n              call: \"apifuse.list-workflows\"\n              outputParameters:\n                - type: object\n               \
+  \   mapping: \"$.\"\n            - method: POST\n              name: create-workflow\n              description: \"Create a workflow.\"\n              call: \"apifuse.create-workflow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/analytics\n          name: analytics\n          description: \"Integration analytics.\"\n          operations:\n            - method: GET\n              name: get-analytics\n              description: \"Get analytics data.\"\n              call: \"apifuse.get-analytics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apifuse-integration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted embedded integration management.\"\n      tools:\n        - name: list-integrations\n          description: \"Browse all available embedded integrations, optionally filtered\
+  \ by category.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"apifuse.list-integrations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connectors\n          description: \"List all pre-built connectors available for embedding into your SaaS product.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"apifuse.list-connectors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workflows\n          description: \"List all integration workflows configured in the embedded marketplace.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"apifuse.list-workflows\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: create-workflow\n          description: \"Create a new automation workflow connecting two or more integrated platforms.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"apifuse.create-workflow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-analytics\n          description: \"Retrieve integration usage analytics including total tasks, active integrations, and active users.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"apifuse.get-analytics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apifuse/refs/heads/main/capabilities/embedded-integration-management.yaml
 tags:
 - Apifuse
 - Embedded Integrations

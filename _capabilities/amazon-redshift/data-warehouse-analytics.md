@@ -27,43 +27,50 @@ personas: []
 provider_name: Amazon Redshift
 provider_slug: amazon-redshift
 search_terms:
-- list schemas
-- table metadata
-- list databases
-- etl
-- get statement result
-- amazon
-- describe table
-- data warehouse
-- execute statement
-- data lake
-- list sql statement executions
-- execute multiple sql statements in a batch transaction
-- list sql statements
-- aws
 - list schemas in a database
-- describe statement
-- describe the columns of a table
-- retrieve results from a completed sql statement
-- machine learning
-- list tables in a schema
-- database metadata
-- execute a sql statement
-- execute a sql statement asynchronously against redshift
-- cloud
+- data lake
 - batch execute statement
-- analytics
+- list sql statements
+- retrieve results from a completed sql statement
+- sql
 - serverless
+- etl
+- cancel a running sql statement
+- execute multiple sql statements in a batch transaction
+- amazon
+- execute a sql statement asynchronously against redshift
+- list databases
+- describe the columns of a table
+- aws
+- execute a sql statement
+- analytics
+- get statement result
+- get details about a sql statement execution
 - cancel statement
 - list statements
-- cancel a running sql statement
-- sql
-- sql statement execution
-- big data
+- describe statement
+- data warehouse
 - list tables
+- describe table
+- table metadata
+- list sql statement executions
+- sql statement execution
+- cloud
+- database metadata
+- machine learning
+- execute statement
+- big data
+- list tables in a schema
 - list databases in a redshift cluster or workgroup
-- get details about a sql statement execution
+- list schemas
 slug: data-warehouse-analytics
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Redshift Data Warehouse Analytics\"\n  description: \"Data warehouse analytics workflow combining Redshift Data API for SQL execution, statement management, and database metadata exploration. Used by data analysts and engineers for ad-hoc queries, ETL processing, and serverless data warehouse operations.\"\n  tags:\n    - Amazon\n    - AWS\n    - Analytics\n    - Data Warehouse\n    - SQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: redshift-data\n      location: ./shared/redshift-data.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: redshift-analytics-api\n      description: \"Unified REST API for Amazon Redshift data warehouse analytics.\"\n      resources:\n        - path: /v1/statements\n\
+  \          name: statements\n          description: \"SQL statement execution\"\n          operations:\n            - method: POST\n              name: execute-statement\n              description: \"Execute a SQL statement\"\n              call: \"redshift-data.execute-statement\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-statements\n              description: \"List SQL statements\"\n              call: \"redshift-data.list-statements\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/databases\n          name: databases\n          description: \"Database metadata\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List databases\"\n              call: \"redshift-data.list-databases\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/tables\n          name: tables\n          description: \"Table metadata\"\n          operations:\n            - method: GET\n              name: list-tables\n              description: \"List tables in a schema\"\n              call: \"redshift-data.list-tables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: redshift-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon Redshift data warehouse analytics.\"\n      tools:\n        - name: execute-statement\n          description: \"Execute a SQL statement asynchronously against Redshift\"\n          hints:\n            readOnly: false\n          call: \"redshift-data.execute-statement\"\n          with:\n            sql: \"tools.sql\"\n            database: \"tools.database\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: batch-execute-statement\n          description: \"Execute multiple SQL statements in a batch transaction\"\n          hints:\n            readOnly: false\n          call: \"redshift-data.batch-execute-statement\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-statement\n          description: \"Get details about a SQL statement execution\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.describe-statement\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-statements\n          description: \"List SQL statement executions\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"redshift-data.list-statements\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cancel-statement\n          description:\
+  \ \"Cancel a running SQL statement\"\n          hints:\n            destructive: true\n          call: \"redshift-data.cancel-statement\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-statement-result\n          description: \"Retrieve results from a completed SQL statement\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.get-statement-result\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-databases\n          description: \"List databases in a Redshift cluster or workgroup\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.list-databases\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-schemas\n          description: \"List schemas in a database\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.list-schemas\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tables\n          description: \"List tables in a schema\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.list-tables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-table\n          description: \"Describe the columns of a table\"\n          hints:\n            readOnly: true\n          call: \"redshift-data.describe-table\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-redshift/refs/heads/main/capabilities/data-warehouse-analytics.yaml
 tags:
 - Amazon
 - AWS

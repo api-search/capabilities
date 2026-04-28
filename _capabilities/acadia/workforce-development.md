@@ -36,44 +36,51 @@ personas:
 provider_name: Acadia
 provider_slug: acadia
 search_terms:
-- create a new digital work instruction with title, category, and steps
-- list all job roles with training requirements and completion rates
-- list employees and their training status
-- manage digital work instructions
-- end-to-end employee training management from work instructions to skill validation
-- tracking and managing employee skills, roles, and career development
-- list employees with training completion percentages, filtered by role or department
+- manufacturing
+- connected worker
 - operations manager
 - create work instruction
-- connected worker
-- list roles
-- workforce development
-- manufacturing
-- acadia
-- list work instructions
-- list employees
+- list employees and their training status
 - get employee skills
+- list employees with training completion percentages, filtered by role or department
+- create a new digital work instruction with title, category, and steps
 - list job roles and training requirements
-- list all digital work instructions with status and category filtering
-- get skills matrix for a specific employee
-- training
-- training management
-- list quizzes
-- digital work instructions, employee skills, quizzes, and role management
 - list all digital work instructions
-- hr manager
-- list all active quizzes and assessments available in the platform
-- professional responsible for creating and assigning work instructions and quizzes
-- list all employees with training completion data
-- training coordinator
+- list work instructions
+- training
 - skills management
-- knowledge management
 - get employee skills matrix
-- hr professional managing employee training records, skills matrices, and role requirements
-- manager monitoring team skill gaps, compliance, and training completion rates
-- list all job roles with training requirements
 - get the complete skills matrix for an employee showing required and completed skills
+- end-to-end employee training management from work instructions to skill validation
+- get skills matrix for a specific employee
+- training coordinator
+- list all job roles with training requirements and completion rates
+- list employees
+- workforce development
+- list all employees with training completion data
+- acadia
+- list all active quizzes and assessments available in the platform
+- manage digital work instructions
+- list roles
+- manager monitoring team skill gaps, compliance, and training completion rates
+- digital work instructions, employee skills, quizzes, and role management
+- hr professional managing employee training records, skills matrices, and role requirements
+- hr manager
+- list all job roles with training requirements
+- list quizzes
+- professional responsible for creating and assigning work instructions and quizzes
+- list all digital work instructions with status and category filtering
+- knowledge management
+- training management
+- tracking and managing employee skills, roles, and career development
 slug: workforce-development
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Acadia Workforce Development\"\n  description: \"Unified workforce development workflow using Acadia's Connected Worker Platform for managing employee training, skills matrices, work instructions, and quizzes. Used by HR managers, training coordinators, and operations managers to track and improve frontline worker capabilities.\"\n  tags:\n    - Acadia\n    - Workforce Development\n    - Connected Worker\n    - Training Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACADIA_API_TOKEN: ACADIA_API_TOKEN\n\ncapability:\n  consumes:\n    - import: acadia\n      location: ./shared/acadia-platform.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workforce-development-api\n      description: \"Unified REST API for workforce development and training management.\"\n      resources:\n        - path: /v1/work-instructions\n          name: work-instructions\n\
+  \          description: \"Manage digital work instructions\"\n          operations:\n            - method: GET\n              name: list-work-instructions\n              description: \"List all digital work instructions\"\n              call: \"acadia.listWorkInstructions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees\n          name: employees\n          description: \"List employees and their training status\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"List all employees with training completion data\"\n              call: \"acadia.listEmployees\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees/{id}/skills\n          name: employee-skills\n          description: \"Get employee skills matrix\"\n          operations:\n            - method: GET\n  \
+  \            name: get-employee-skills\n              description: \"Get skills matrix for a specific employee\"\n              call: \"acadia.getEmployeeSkills\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/roles\n          name: roles\n          description: \"List job roles and training requirements\"\n          operations:\n            - method: GET\n              name: list-roles\n              description: \"List all job roles with training requirements\"\n              call: \"acadia.listRoles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: workforce-development-mcp\n      transport: http\n      description: \"MCP server for AI-assisted workforce development and training management.\"\n      tools:\n        - name: list-work-instructions\n    \
+  \      description: \"List all digital work instructions with status and category filtering\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"acadia.listWorkInstructions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-work-instruction\n          description: \"Create a new digital work instruction with title, category, and steps\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"acadia.createWorkInstruction\"\n          with:\n            title: \"tools.title\"\n            category: \"tools.category\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-employees\n          description: \"List employees with training completion percentages, filtered by role or department\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"acadia.listEmployees\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-employee-skills\n          description: \"Get the complete skills matrix for an employee showing required and completed skills\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"acadia.getEmployeeSkills\"\n          with:\n            id: \"tools.employee_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-quizzes\n          description: \"List all active quizzes and assessments available in the platform\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"acadia.listQuizzes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-roles\n          description: \"List all job roles with training requirements and completion rates\"\n          hints:\n            readOnly: true\n\
+  \            openWorld: false\n          call: \"acadia.listRoles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/acadia/refs/heads/main/capabilities/workforce-development.yaml
 tags:
 - Acadia
 - Workforce Development

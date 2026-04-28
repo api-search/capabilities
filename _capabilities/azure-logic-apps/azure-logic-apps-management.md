@@ -14,25 +14,29 @@ personas: []
 provider_name: Azure Logic Apps
 provider_slug: azure-logic-apps
 search_terms:
-- azure
+- list integrationaccount resources
 - list all resources
-- ipaas
-- list workflows
+- list workflow runs
 - list workflow triggers
 - workflows
-- azure resource management
-- list workflow runs
-- list
+- list workflows
 - resource management
-- cloud
-- list workflow resources
-- list workflowtrigger resources
-- integration
+- list
+- azure resource management
 - management
-- list integrationaccount resources
-- list workflowrun resources
+- azure
+- integration
+- list workflow resources
 - list integration accounts
+- list workflowtrigger resources
+- ipaas
+- cloud
+- list workflowrun resources
 slug: azure-logic-apps-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Logic Apps Management\"\n  description: \"Workflow capability for managing Azure Logic Apps resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-logic-apps\n      location: ./shared/azure-logic-apps.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: azure-logic-apps-management-api\n      description: \"Unified REST API for Azure Logic Apps management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description: \"List all resources\"\n      \
+  \        call: \"azure-logic-apps.list-workflows\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: azure-logic-apps-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Logic Apps management.\"\n      tools:\n        - name: list-workflows\n          description: \"List Workflow resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-logic-apps.list-workflows\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workflow-runs\n          description: \"List WorkflowRun resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-logic-apps.list-workflow-runs\"\
+  \n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workflow-triggers\n          description: \"List WorkflowTrigger resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-logic-apps.list-workflow-triggers\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-integration-accounts\n          description: \"List IntegrationAccount resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-logic-apps.list-integration-accounts\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/azure-logic-apps/refs/heads/main/capabilities/azure-logic-apps-management.yaml
 tags:
 - Azure
 - Cloud

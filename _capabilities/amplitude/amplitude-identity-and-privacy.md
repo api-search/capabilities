@@ -81,79 +81,91 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- identity
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- createScimUser
-- amplitude list scim users
-- amplitude get a scim group
-- amplitude create a scim user
-- createDeletionRequest
-- deleteScimUser
-- amplitude get a scim user
-- amplitude request user data deletion
-- dsar api createDsarRequest
-- getScimUser
-- runs experiments and feature flags
-- manages privacy and compliance
-- dsar api getDsarRequestStatus
-- scim api createScimUser
-- scim api getScimGroup
-- dsar api createDeletionRequest
-- ingests and exports event data
-- amplitude delete a scim user
-- scim api deleteScimGroup
-- listDeletionRequests
-- export raw event data and manage behavioral cohorts. for data analysts.
-- data governance
-- privacy
-- amplitude
-- scim api createScimGroup
-- amplitude update a scim user
-- deleteScimGroup
-- manage event schemas and chart annotations. for data governance teams.
-- listScimGroups
-- updateScimGroup
-- feature flags
-- analyzes data and manages cohorts
-- scim api replaceScimUser
-- identity management
-- privacy compliance
-- product analytics
-- unmapUser
-- amplitude replace a scim user
-- scim api listScimGroups
-- user mapping api mapUser
-- listScimUsers
-- amplitude get dsar request status
-- amplitude unmap user identities
-- analytics
-- amplitude update a scim group
-- scim api getScimUser
-- getDsarRequestStatus
-- dsar api listDeletionRequests
-- user mapping api unmapUser
-- createScimGroup
-- amplitude list scim groups
-- unified workflow for sending events and identifying users. for data engineers.
-- amplitude create a scim group
-- amplitude create a data subject access request
-- scim api deleteScimUser
-- scim api updateScimGroup
-- experimentation
-- amplitude delete a scim group
-- a/b testing
-- updateScimUser
-- scim api listScimUsers
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- scim api updateScimUser
-- amplitude list deletion requests
-- replaceScimUser
-- getScimGroup
-- user behavior
-- createDsarRequest
 - amplitude map user identities
+- getScimUser
+- scim api replaceScimUser
+- replaceScimUser
+- unmapUser
+- amplitude get dsar request status
+- amplitude delete a scim user
+- dsar api getDsarRequestStatus
+- amplitude
+- createScimGroup
+- manage event schemas and chart annotations. for data governance teams.
+- user behavior
+- dsar api listDeletionRequests
+- amplitude get a scim group
+- user mapping api mapUser
+- privacy compliance
+- ingests and exports event data
+- deleteScimUser
+- scim api deleteScimGroup
+- experimentation
+- amplitude update a scim group
+- listDeletionRequests
+- amplitude list deletion requests
+- scim api updateScimUser
+- export raw event data and manage behavioral cohorts. for data analysts.
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- listScimUsers
+- analyzes data and manages cohorts
+- analytics
+- createDsarRequest
+- scim api updateScimGroup
+- createScimUser
+- dsar api createDsarRequest
+- scim api createScimUser
+- feature flags
+- amplitude request user data deletion
+- amplitude update a scim user
+- runs experiments and feature flags
+- amplitude create a data subject access request
+- getScimGroup
+- amplitude create a scim group
+- manages privacy and compliance
+- user mapping api unmapUser
+- amplitude replace a scim user
+- data governance
+- amplitude list scim users
+- deleteScimGroup
+- updateScimUser
+- scim api getScimUser
+- product analytics
+- amplitude get a scim user
+- amplitude create a scim user
+- updateScimGroup
+- scim api createScimGroup
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- amplitude list scim groups
+- scim api getScimGroup
+- identity management
+- scim api deleteScimUser
+- listScimGroups
+- dsar api createDeletionRequest
+- identity
+- amplitude unmap user identities
+- unified workflow for sending events and identifying users. for data engineers.
+- a/b testing
 - mapUser
+- scim api listScimGroups
+- createDeletionRequest
+- getDsarRequestStatus
+- amplitude delete a scim group
+- privacy
+- scim api listScimUsers
 slug: amplitude-identity-and-privacy
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Identity and Privacy\n  description: SCIM provisioning and privacy compliance. For IT admins and compliance teams.\n  tags:\n  - Amplitude\n  - Identity\n  - Privacy\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: dsar-api\n    location: ./shared/dsar-api.yaml\n  - import: scim-api\n    location: ./shared/scim-api.yaml\n  - import: user-mapping-api\n    location: ./shared/user-mapping-api.yaml\n  exposes:\n  - type: rest\n    port: 8084\n    namespace: amplitude-identity-and-privacy-api\n    description: REST API for Amplitude Identity and Privacy\n    resources:\n    - path: /v1/data-access\n      name: data-access\n      operations:\n      - method: POST\n        name: createDsarRequest\n        description: Amplitude Create a Data Subject Access Request\n        call: dsar-api.createDsarRequest\n        with:\
+  \ {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/data-access\n      name: data-access\n      operations:\n      - method: GET\n        name: getDsarRequestStatus\n        description: Amplitude Get DSAR Request Status\n        call: dsar-api.getDsarRequestStatus\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/data-deletion\n      name: data-deletion\n      operations:\n      - method: GET\n        name: listDeletionRequests\n        description: Amplitude List Deletion Requests\n        call: dsar-api.listDeletionRequests\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/data-deletion\n      name: data-deletion\n      operations:\n      - method: POST\n        name: createDeletionRequest\n        description: Amplitude Request User Data Deletion\n        call: dsar-api.createDeletionRequest\n        with: {}\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: GET\n        name: listScimUsers\n        description: Amplitude List SCIM Users\n        call: scim-api.listScimUsers\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: POST\n        name: createScimUser\n        description: Amplitude Create a SCIM User\n        call: scim-api.createScimUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: GET\n        name: getScimUser\n        description: Amplitude Get a SCIM User\n        call: scim-api.getScimUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: PUT\n\
+  \        name: replaceScimUser\n        description: Amplitude Replace a SCIM User\n        call: scim-api.replaceScimUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: PATCH\n        name: updateScimUser\n        description: Amplitude Update a SCIM User\n        call: scim-api.updateScimUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      operations:\n      - method: DELETE\n        name: deleteScimUser\n        description: Amplitude Delete a SCIM User\n        call: scim-api.deleteScimUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/groups\n      name: groups\n      operations:\n      - method: GET\n        name: listScimGroups\n        description: Amplitude List SCIM Groups\n        call: scim-api.listScimGroups\n\
+  \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/groups\n      name: groups\n      operations:\n      - method: POST\n        name: createScimGroup\n        description: Amplitude Create a SCIM Group\n        call: scim-api.createScimGroup\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/groups\n      name: groups\n      operations:\n      - method: GET\n        name: getScimGroup\n        description: Amplitude Get a SCIM Group\n        call: scim-api.getScimGroup\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/groups\n      name: groups\n      operations:\n      - method: PATCH\n        name: updateScimGroup\n        description: Amplitude Update a SCIM Group\n        call: scim-api.updateScimGroup\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/groups\n\
+  \      name: groups\n      operations:\n      - method: DELETE\n        name: deleteScimGroup\n        description: Amplitude Delete a SCIM Group\n        call: scim-api.deleteScimGroup\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-mapping\n      name: user-mapping\n      operations:\n      - method: POST\n        name: mapUser\n        description: Amplitude Map User Identities\n        call: user-mapping-api.mapUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-mapping\n      name: user-mapping\n      operations:\n      - method: POST\n        name: unmapUser\n        description: Amplitude Unmap User Identities\n        call: user-mapping-api.unmapUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9094\n    namespace: amplitude-identity-and-privacy-mcp\n    transport: http\n   \
+  \ description: MCP for Amplitude Identity and Privacy\n    tools:\n    - name: dsar-api-createDsarRequest\n      description: Amplitude Create a Data Subject Access Request\n      hints:\n        readOnly: false\n      call: dsar-api.createDsarRequest\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: dsar-api-getDsarRequestStatus\n      description: Amplitude Get DSAR Request Status\n      hints:\n        readOnly: true\n      call: dsar-api.getDsarRequestStatus\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: dsar-api-listDeletionRequests\n      description: Amplitude List Deletion Requests\n      hints:\n        readOnly: true\n      call: dsar-api.listDeletionRequests\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: dsar-api-createDeletionRequest\n      description: Amplitude Request User Data Deletion\n      hints:\n        readOnly: false\n\
+  \      call: dsar-api.createDeletionRequest\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-listScimUsers\n      description: Amplitude List SCIM Users\n      hints:\n        readOnly: true\n      call: scim-api.listScimUsers\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-createScimUser\n      description: Amplitude Create a SCIM User\n      hints:\n        readOnly: false\n      call: scim-api.createScimUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-getScimUser\n      description: Amplitude Get a SCIM User\n      hints:\n        readOnly: true\n      call: scim-api.getScimUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-replaceScimUser\n      description: Amplitude Replace a SCIM User\n      hints:\n        readOnly: false\n      call: scim-api.replaceScimUser\n\
+  \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-updateScimUser\n      description: Amplitude Update a SCIM User\n      hints:\n        readOnly: false\n      call: scim-api.updateScimUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-deleteScimUser\n      description: Amplitude Delete a SCIM User\n      hints:\n        readOnly: false\n      call: scim-api.deleteScimUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-listScimGroups\n      description: Amplitude List SCIM Groups\n      hints:\n        readOnly: true\n      call: scim-api.listScimGroups\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-createScimGroup\n      description: Amplitude Create a SCIM Group\n      hints:\n        readOnly: false\n      call: scim-api.createScimGroup\n      with: {}\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-getScimGroup\n      description: Amplitude Get a SCIM Group\n      hints:\n        readOnly: true\n      call: scim-api.getScimGroup\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-updateScimGroup\n      description: Amplitude Update a SCIM Group\n      hints:\n        readOnly: false\n      call: scim-api.updateScimGroup\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: scim-api-deleteScimGroup\n      description: Amplitude Delete a SCIM Group\n      hints:\n        readOnly: false\n      call: scim-api.deleteScimGroup\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: user-mapping-api-mapUser\n      description: Amplitude Map User Identities\n      hints:\n        readOnly: false\n      call: user-mapping-api.mapUser\n      with: {}\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: user-mapping-api-unmapUser\n      description: Amplitude Unmap User Identities\n      hints:\n        readOnly: false\n      call: user-mapping-api.unmapUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amplitude/refs/heads/main/capabilities/amplitude-identity-and-privacy.yaml
 tags:
 - Amplitude
 - Identity

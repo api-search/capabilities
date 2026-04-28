@@ -41,48 +41,56 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get open liberty overall health status
-- get log config
-- get batch job instance details
-- get performance data
-- microservices
-- get liberty logging configuration
-- batch job monitoring
-- check if liberty server is alive
-- observability
-- get batch job
-- get open liberty overall health
-- get liveness
-- get liberty metrics
-- get was health
-- get liberty health
-- middleware
-- log management
-- get liberty admin metrics
-- check if liberty server is ready for traffic
-- health check endpoints
-- get recent liberty log messages
-- enterprise java
-- list batch job instances
-- metrics collection
-- list jakarta batch job instances
-- application server
-- monitoring
-- performance data
-- ibm websphere
-- get all metrics
-- metrics
-- get was performance monitoring data
-- get all open liberty metrics
-- get log messages
-- list batch jobs
-- j2ee
 - get was server health status
-- get was server health
+- get liberty metrics
+- get was performance monitoring data
+- monitoring
+- metrics collection
+- get all metrics
+- get open liberty overall health status
+- health check endpoints
+- get all open liberty metrics
 - get liberty log messages
-- get readiness
+- observability
+- get liberty admin metrics
+- middleware
+- get recent liberty log messages
+- get liveness
+- get open liberty overall health
+- batch job monitoring
+- list jakarta batch job instances
+- get batch job instance details
+- get was server health
+- get liberty logging configuration
 - cloud native
+- list batch job instances
+- get performance data
+- check if liberty server is ready for traffic
+- j2ee
+- check if liberty server is alive
+- enterprise java
+- get log messages
+- get liberty health
+- get readiness
+- list batch jobs
+- get log config
+- metrics
+- application server
+- performance data
+- get was health
+- log management
+- microservices
+- get batch job
+- ibm websphere
 slug: monitoring-and-observability
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Monitoring and Observability\"\n  description: \"Workflow for monitoring WebSphere environments combining health checks, metrics, performance data, logging, and batch job tracking from Open Liberty and traditional WAS APIs for operations teams.\"\n  tags:\n    - IBM WebSphere\n    - Monitoring\n    - Observability\n    - Metrics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n      LIBERTY_USERNAME: LIBERTY_USERNAME\n      LIBERTY_PASSWORD: LIBERTY_PASSWORD\n\ncapability:\n  consumes:\n    - import: open-liberty\n      location: ./shared/open-liberty.yaml\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n    - import: liberty-admin\n      location: ./shared/liberty-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: monitoring-api\n \
+  \     description: \"Unified REST API for WebSphere monitoring and observability.\"\n      resources:\n        - path: /v1/health\n          name: health\n          description: \"Health check endpoints\"\n          operations:\n            - method: GET\n              name: get-liberty-health\n              description: \"Get Open Liberty overall health\"\n              call: \"open-liberty.get-overall-health\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-was-health\n              description: \"Get WAS server health\"\n              call: \"admin-rest.get-health-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Metrics collection\"\n          operations:\n            - method: GET\n              name: get-all-metrics\n              description:\
+  \ \"Get all Open Liberty metrics\"\n              call: \"open-liberty.get-all-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-liberty-metrics\n              description: \"Get Liberty admin metrics\"\n              call: \"liberty-admin.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/performance\n          name: performance\n          description: \"Performance data\"\n          operations:\n            - method: GET\n              name: get-performance-data\n              description: \"Get WAS performance monitoring data\"\n              call: \"admin-rest.get-performance-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs\n          name: logs\n          description: \"Log management\"\n          operations:\n\
+  \            - method: GET\n              name: get-log-messages\n              description: \"Get Liberty log messages\"\n              call: \"liberty-admin.get-log-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batch-jobs\n          name: batch-jobs\n          description: \"Batch job monitoring\"\n          operations:\n            - method: GET\n              name: list-batch-jobs\n              description: \"List batch job instances\"\n              call: \"open-liberty.list-batch-job-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: monitoring-mcp\n      transport: http\n      description: \"MCP server for AI-assisted WebSphere monitoring.\"\n      tools:\n        - name: get-liberty-health\n          description: \"Get Open Liberty overall health status\"\n          hints:\n   \
+  \         readOnly: true\n          call: \"open-liberty.get-overall-health\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-readiness\n          description: \"Check if Liberty server is ready for traffic\"\n          hints:\n            readOnly: true\n          call: \"open-liberty.get-readiness\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-liveness\n          description: \"Check if Liberty server is alive\"\n          hints:\n            readOnly: true\n          call: \"open-liberty.get-liveness\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-was-health\n          description: \"Get WAS server health status\"\n          hints:\n            readOnly: true\n          call: \"admin-rest.get-health-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n \
+  \       - name: get-all-metrics\n          description: \"Get all Open Liberty metrics\"\n          hints:\n            readOnly: true\n          call: \"open-liberty.get-all-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-performance-data\n          description: \"Get WAS performance monitoring data\"\n          hints:\n            readOnly: true\n          call: \"admin-rest.get-performance-data\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-log-messages\n          description: \"Get recent Liberty log messages\"\n          hints:\n            readOnly: true\n          call: \"liberty-admin.get-log-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-log-config\n          description: \"Get Liberty logging configuration\"\n          hints:\n            readOnly: true\n          call: \"\
+  liberty-admin.get-log-config\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-batch-jobs\n          description: \"List Jakarta Batch job instances\"\n          hints:\n            readOnly: true\n          call: \"open-liberty.list-batch-job-instances\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-batch-job\n          description: \"Get batch job instance details\"\n          hints:\n            readOnly: true\n          call: \"open-liberty.get-batch-job-instance\"\n          with:\n            jobInstanceId: \"tools.jobInstanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/websphere/refs/heads/main/capabilities/monitoring-and-observability.yaml
 tags:
 - IBM WebSphere
 - Monitoring

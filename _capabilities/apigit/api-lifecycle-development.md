@@ -18,30 +18,34 @@ personas: []
 provider_name: APIGit
 provider_slug: apigit
 search_terms:
-- list all api git repositories in apigit.
-- list repositories
-- api design
-- engineer using mock servers for frontend/backend parallel development.
-- apigit
-- start mock server
-- api lifecycle
 - git
-- create repository
-- API Developer
-- start a dynamic mock server from an api definition for development testing.
-- create repository.
-- testing
 - documentation
 - create a new git-native api repository in apigit.
-- list api repositories
-- developer designing and building apis using git-native workflows.
-- list repositories.
+- API Developer
+- apigit
+- api lifecycle
 - Backend Engineer
-- governance
 - platform
-- create api repository
 - mocking
+- engineer using mock servers for frontend/backend parallel development.
+- testing
+- list api repositories
+- list all api git repositories in apigit.
+- list repositories.
+- start mock server
+- create repository.
+- developer designing and building apis using git-native workflows.
+- list repositories
+- create repository
+- api design
+- start a dynamic mock server from an api definition for development testing.
+- governance
+- create api repository
 slug: api-lifecycle-development
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIGit API Lifecycle Development\"\n  description: \"Workflow for Git-native API lifecycle development using APIGit - managing API repositories, designing APIs with visual tools, running mock servers for development, and executing automated tests.\"\n  tags:\n    - APIGit\n    - API Lifecycle\n    - Git\n    - Mocking\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIGIT_API_KEY: APIGIT_API_KEY\n\ncapability:\n  consumes:\n    - import: apigit\n      location: ./shared/apigit.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigit-lifecycle-api\n      description: \"Unified REST API for APIGit lifecycle management.\"\n      resources:\n        - path: /v1/repos\n          operations:\n            - method: GET\n              name: list-repositories\n              description: \"List repositories.\"\n              call: \"apigit.list-repositories\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-repository\n              description: \"Create repository.\"\n              call: \"apigit.create-repository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apigit-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API lifecycle development with APIGit.\"\n      tools:\n        - name: list-api-repositories\n          description: \"List all API Git repositories in APIGit.\"\n          hints: {readOnly: true, destructive: false, idempotent: true}\n          call: \"apigit.list-repositories\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-api-repository\n          description: \"Create a new Git-native API repository in APIGit.\"\
+  \n          hints: {readOnly: false, destructive: false, idempotent: false}\n          call: \"apigit.create-repository\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-mock-server\n          description: \"Start a dynamic mock server from an API definition for development testing.\"\n          hints: {readOnly: false, destructive: false, idempotent: false}\n          call: \"apigit.start-mock\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apigit/refs/heads/main/capabilities/api-lifecycle-development.yaml
 tags:
 - APIGit
 - API Lifecycle

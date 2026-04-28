@@ -38,68 +38,80 @@ personas: []
 provider_name: Canva
 provider_slug: canva
 search_terms:
-- asset management.
-- get users me
-- list brand templates.
-- get folder
-- list items in a folder.
-- create a comment on a design.
+- visual content
+- create autofill job
+- get brand template
+- automation
 - get asset
-- create design
+- print
+- create export job
+- create a design.
+- create autofill job.
 - get a folder by id.
-- design autofill.
+- get an asset by id.
+- canva
+- export a design to pdf, png, jpg, gif, pptx, or mp4.
+- get autofill job status.
+- get the autofill dataset for a brand template.
+- resize a design to different dimensions or preset types.
+- get resize job status.
+- graphics
+- export a design.
+- brand template access.
+- get export job status and download url.
+- get folder
+- create a comment on a design.
+- list items in a folder.
+- get users me
+- get a brand template by id.
+- delete asset
+- create a design from a brand template using autofill data.
+- list designs
+- delete an asset.
+- brand management
+- apps
+- list designs.
+- get export job
+- upload an asset to canva.
+- list folder items
+- design
+- create design
+- get the authenticated user profile.
+- create resize job
+- list canva designs accessible to the user.
+- upload asset
+- get resize job
+- get design
+- create a new canva design.
+- get a specific design by id.
+- design creation and management.
+- create comment
+- list brand templates
+- collaboration
+- list available brand templates.
 - marketing
+- templates
+- asset management.
 - get brand template dataset
 - get autofill job
-- brand management
-- design creation and management.
-- create autofill job.
-- create export job
-- get a specific design by id.
-- get an asset.
-- brand template access.
-- get autofill job status.
-- design
-- get resize job status.
-- get an asset by id.
-- create a design from a brand template using autofill data.
-- graphics
-- list canva designs accessible to the user.
-- get design
-- upload an asset to canva.
-- get resize job
+- list brand templates.
 - design exports.
-- create a new canva design.
-- create comment
-- get export job
-- get brand template
-- visual content
-- templates
-- list designs
+- get an asset.
+- design autofill.
 - content creation
-- canva
-- create a design.
-- delete an asset.
-- export a design.
-- resize a design to different dimensions or preset types.
-- collaboration
-- list brand templates
-- export a design to pdf, png, jpg, gif, pptx, or mp4.
-- get the autofill dataset for a brand template.
-- create autofill job
-- get the authenticated user profile.
-- print
-- delete asset
-- get export job status and download url.
-- list designs.
-- list folder items
-- apps
-- automation
-- list available brand templates.
-- upload asset
-- create resize job
-- get a brand template by id.
 slug: design-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Canva Design Management\"\n  description: \"Unified design management workflow combining design creation, asset management, brand templates, autofill, exports, and collaboration for marketing teams and content creators.\"\n  tags:\n    - Canva\n    - Design\n    - Marketing\n    - Brand Management\n    - Content Creation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CANVA_ACCESS_TOKEN: CANVA_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: connect-api\n      location: ./shared/connect-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: design-management-api\n      description: \"Unified REST API for Canva design management.\"\n      resources:\n        - path: /v1/designs\n          name: designs\n          description: \"Design creation and management.\"\n          operations:\n            - method: GET\n              name: list-designs\n\
+  \              description: \"List designs.\"\n              call: \"connect-api.list-designs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-design\n              description: \"Create a design.\"\n              call: \"connect-api.create-design\"\n              with:\n                design_type: \"rest.design_type\"\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Asset management.\"\n          operations:\n            - method: GET\n              name: get-asset\n              description: \"Get an asset.\"\n              call: \"connect-api.get-asset\"\n              with:\n                assetId: \"rest.assetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n            - method: DELETE\n              name: delete-asset\n              description: \"Delete an asset.\"\n              call: \"connect-api.delete-asset\"\n              with:\n                assetId: \"rest.assetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/exports\n          name: exports\n          description: \"Design exports.\"\n          operations:\n            - method: POST\n              name: create-export-job\n              description: \"Export a design.\"\n              call: \"connect-api.create-export-job\"\n              with:\n                design_id: \"rest.design_id\"\n                format: \"rest.format\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/brand-templates\n          name: brand-templates\n          description: \"Brand template access.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-brand-templates\n              description: \"List brand templates.\"\n              call: \"connect-api.list-brand-templates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/autofills\n          name: autofills\n          description: \"Design autofill.\"\n          operations:\n            - method: POST\n              name: create-autofill-job\n              description: \"Create autofill job.\"\n              call: \"connect-api.create-autofill-job\"\n              with:\n                brand_template_id: \"rest.brand_template_id\"\n                data: \"rest.data\"\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: design-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Canva design management, brand\
+  \ templates, and content creation.\"\n      tools:\n        - name: list-designs\n          description: \"List Canva designs accessible to the user.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"connect-api.list-designs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-design\n          description: \"Create a new Canva design.\"\n          hints:\n            readOnly: false\n          call: \"connect-api.create-design\"\n          with:\n            design_type: \"tools.design_type\"\n            title: \"tools.title\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-design\n          description: \"Get a specific design by ID.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-design\"\n          with:\n            designId: \"tools.designId\"\n          outputParameters:\n     \
+  \       - type: object\n              mapping: \"$.\"\n        - name: get-asset\n          description: \"Get an asset by ID.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-asset\"\n          with:\n            assetId: \"tools.assetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-asset\n          description: \"Delete an asset.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"connect-api.delete-asset\"\n          with:\n            assetId: \"tools.assetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: upload-asset\n          description: \"Upload an asset to Canva.\"\n          hints:\n            readOnly: false\n          call: \"connect-api.create-asset-upload-job\"\n          with:\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: get-folder\n          description: \"Get a folder by ID.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-folder\"\n          with:\n            folderId: \"tools.folderId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-folder-items\n          description: \"List items in a folder.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.list-folder-items\"\n          with:\n            folderId: \"tools.folderId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-export-job\n          description: \"Export a design to PDF, PNG, JPG, GIF, PPTX, or MP4.\"\n          hints:\n            readOnly: false\n          call: \"connect-api.create-export-job\"\n          with:\n            design_id: \"tools.design_id\"\n            format: \"tools.format\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: get-export-job\n          description: \"Get export job status and download URL.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-export-job\"\n          with:\n            exportId: \"tools.exportId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-comment\n          description: \"Create a comment on a design.\"\n          hints:\n            readOnly: false\n          call: \"connect-api.create-comment\"\n          with:\n            designId: \"tools.designId\"\n            message: \"tools.message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-users-me\n          description: \"Get the authenticated user profile.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-users-me\"\n          outputParameters:\n           \
+  \ - type: object\n              mapping: \"$.\"\n        - name: list-brand-templates\n          description: \"List available brand templates.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.list-brand-templates\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-brand-template\n          description: \"Get a brand template by ID.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-brand-template\"\n          with:\n            brandTemplateId: \"tools.brandTemplateId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-brand-template-dataset\n          description: \"Get the autofill dataset for a brand template.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-brand-template-dataset\"\n          with:\n            brandTemplateId: \"tools.brandTemplateId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: create-autofill-job\n          description: \"Create a design from a brand template using autofill data.\"\n          hints:\n            readOnly: false\n          call: \"connect-api.create-autofill-job\"\n          with:\n            brand_template_id: \"tools.brand_template_id\"\n            data: \"tools.data\"\n            title: \"tools.title\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-autofill-job\n          description: \"Get autofill job status.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-autofill-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-resize-job\n          description: \"Resize a design to different dimensions or preset types.\"\n          hints:\n            readOnly:\
+  \ false\n          call: \"connect-api.create-resize-job\"\n          with:\n            design_id: \"tools.design_id\"\n            resize_type: \"tools.resize_type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-resize-job\n          description: \"Get resize job status.\"\n          hints:\n            readOnly: true\n          call: \"connect-api.get-resize-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/canva/refs/heads/main/capabilities/design-management.yaml
 tags:
 - Canva
 - Design

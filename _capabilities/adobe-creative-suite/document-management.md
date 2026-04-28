@@ -59,62 +59,76 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- permanently delete an uploaded asset
-- asset upload and management for pdf operations
-- combine multiple pdfs into a single document
-- combine multiple pdfs into one
-- linearize a pdf for fast web viewing
-- auto-tag a pdf for accessibility compliance
-- get asset
 - ocr processing operations
-- compress a pdf to reduce its file size
-- generate a document by merging json data into a template
-- apply ocr to a scanned pdf to make text searchable
-- template-based document generation
-- auto tag pdf
-- combine pdfs
-- upload an asset for pdf operations
 - get the status of a pdf operation
-- photography
-- operation status polling
-- ocr pdf
-- create pdf
-- pdf
-- pdf export to other formats
-- accessibility
-- generate a document from a template and data
-- document conversion
-- compress pdf
-- pdf linearization for web optimization
-- design
-- get the status of a pdf services operation job
-- graphics
-- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
-- video
-- accessibility tagging operations
+- apply ocr to a scanned pdf to make text searchable
 - pdf creation from other formats
-- upload an asset for use in pdf operations
-- creative
-- get asset metadata and download uri
-- get operation status
-- ocr
-- get metadata and download uri for an uploaded asset
-- create a pdf from word, excel, powerpoint, or html
-- export pdf
 - individual asset operations
-- document management
-- adobe
+- get asset
+- permanently delete an uploaded asset
+- combine pdfs
+- pdf export to other formats
+- apply ocr to a scanned pdf
 - pdf compression operations
-- generate document
-- delete asset
+- pdf
+- upload an asset for pdf operations
+- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
+- get asset metadata and download uri
 - delete an uploaded asset
+- create pdf
+- combine multiple pdfs into one
+- ocr pdf
+- generate a document from a template and data
+- graphics
+- video
+- ocr
+- compress pdf
+- upload an asset for use in pdf operations
+- document conversion
+- asset upload and management for pdf operations
+- get operation status
+- delete asset
+- compress a pdf to reduce file size
 - pdf combination operations
 - linearize pdf
-- apply ocr to a scanned pdf
+- auto-tag a pdf for accessibility compliance
+- linearize a pdf for fast web viewing
 - export a pdf to word, excel, powerpoint, rtf, or text
+- design
+- creative
+- auto tag pdf
 - upload asset
-- compress a pdf to reduce file size
+- export pdf
+- create a pdf from word, excel, powerpoint, or html
+- combine multiple pdfs into a single document
+- accessibility
+- generate a document by merging json data into a template
+- photography
+- accessibility tagging operations
+- template-based document generation
+- generate document
+- get metadata and download uri for an uploaded asset
+- get the status of a pdf services operation job
+- document management
+- pdf linearization for web optimization
+- operation status polling
+- adobe
+- compress a pdf to reduce its file size
 slug: document-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Document Management\"\n  description: \"PDF document lifecycle management workflow using Adobe PDF Services for creating, converting, combining, compressing, OCR processing, accessibility tagging, and template-based document generation. Used by document workflow teams, compliance officers, and developers building document processing pipelines.\"\n  tags:\n    - Adobe\n    - PDF\n    - Document Management\n    - Document Conversion\n    - OCR\n    - Accessibility\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PDF_SERVICES_TOKEN: ADOBE_PDF_SERVICES_TOKEN\n\ncapability:\n  consumes:\n    - import: pdf-services\n      location: ./shared/pdf-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: document-management-api\n      description: \"Unified REST API for PDF document lifecycle management using Adobe PDF Services.\"\n      resources:\n\
+  \        - path: /v1/assets\n          name: assets\n          description: \"Asset upload and management for PDF operations\"\n          operations:\n            - method: POST\n              name: upload-asset\n              description: \"Upload an asset for PDF operations\"\n              call: \"pdf-services.upload-asset\"\n              with:\n                media_type: \"rest.media_type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/assets/{assetID}\n          name: asset-detail\n          description: \"Individual asset operations\"\n          operations:\n            - method: GET\n              name: get-asset\n              description: \"Get asset metadata and download URI\"\n              call: \"pdf-services.get-asset\"\n              with:\n                assetID: \"rest.assetID\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n           \
+  \ - method: DELETE\n              name: delete-asset\n              description: \"Delete an uploaded asset\"\n              call: \"pdf-services.delete-asset\"\n              with:\n                assetID: \"rest.assetID\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/pdfs\n          name: pdfs\n          description: \"PDF creation from other formats\"\n          operations:\n            - method: POST\n              name: create-pdf\n              description: \"Create a PDF from Word, Excel, PowerPoint, or HTML\"\n              call: \"pdf-services.create-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                document_language: \"rest.document_language\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/exports\n          name: exports\n          description: \"PDF export to other formats\"\n       \
+  \   operations:\n            - method: POST\n              name: export-pdf\n              description: \"Export a PDF to Word, Excel, PowerPoint, RTF, or text\"\n              call: \"pdf-services.export-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                target_format: \"rest.target_format\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/combinations\n          name: combinations\n          description: \"PDF combination operations\"\n          operations:\n            - method: POST\n              name: combine-pdfs\n              description: \"Combine multiple PDFs into one\"\n              call: \"pdf-services.combine-pdfs\"\n              with:\n                assets: \"rest.assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/compressions\n          name: compressions\n          description:\
+  \ \"PDF compression operations\"\n          operations:\n            - method: POST\n              name: compress-pdf\n              description: \"Compress a PDF to reduce file size\"\n              call: \"pdf-services.compress-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                compression_level: \"rest.compression_level\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/linearizations\n          name: linearizations\n          description: \"PDF linearization for web optimization\"\n          operations:\n            - method: POST\n              name: linearize-pdf\n              description: \"Linearize a PDF for fast web viewing\"\n              call: \"pdf-services.linearize-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ocr-jobs\n\
+  \          name: ocr-jobs\n          description: \"OCR processing operations\"\n          operations:\n            - method: POST\n              name: ocr-pdf\n              description: \"Apply OCR to a scanned PDF\"\n              call: \"pdf-services.ocr-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                ocr_lang: \"rest.ocr_lang\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/accessibility-tags\n          name: accessibility-tags\n          description: \"Accessibility tagging operations\"\n          operations:\n            - method: POST\n              name: auto-tag-pdf\n              description: \"Auto-tag a PDF for accessibility compliance\"\n              call: \"pdf-services.auto-tag-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                generate_report: \"rest.generate_report\"\n              outputParameters:\n             \
+  \   - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/document-generations\n          name: document-generations\n          description: \"Template-based document generation\"\n          operations:\n            - method: POST\n              name: generate-document\n              description: \"Generate a document from a template and data\"\n              call: \"pdf-services.generate-document\"\n              with:\n                asset_id: \"rest.asset_id\"\n                output_format: \"rest.output_format\"\n                json_data: \"rest.json_data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/operations/{jobId}\n          name: operations\n          description: \"Operation status polling\"\n          operations:\n            - method: GET\n              name: get-operation-status\n              description: \"Get the status of a PDF operation\"\n              call: \"pdf-services.get-operation-status\"\
+  \n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: document-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted PDF document management using Adobe PDF Services.\"\n      tools:\n        - name: upload-asset\n          description: \"Upload an asset for use in PDF operations\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.upload-asset\"\n          with:\n            media_type: \"tools.media_type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-asset\n          description: \"Get metadata and download URI for an uploaded asset\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n\
+  \          call: \"pdf-services.get-asset\"\n          with:\n            assetID: \"tools.assetID\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-asset\n          description: \"Permanently delete an uploaded asset\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"pdf-services.delete-asset\"\n          with:\n            assetID: \"tools.assetID\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-pdf\n          description: \"Create a PDF from Word, Excel, PowerPoint, or HTML\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.create-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n            document_language: \"tools.document_language\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: export-pdf\n          description: \"Export a PDF to Word, Excel, PowerPoint, RTF, or text\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.export-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n            target_format: \"tools.target_format\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: combine-pdfs\n          description: \"Combine multiple PDFs into a single document\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.combine-pdfs\"\n          with:\n            assets: \"tools.assets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: compress-pdf\n          description: \"Compress a PDF\
+  \ to reduce its file size\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.compress-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n            compression_level: \"tools.compression_level\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: linearize-pdf\n          description: \"Linearize a PDF for fast web viewing\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.linearize-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: ocr-pdf\n          description: \"Apply OCR to a scanned PDF to make text searchable\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent:\
+  \ false\n          call: \"pdf-services.ocr-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n            ocr_lang: \"tools.ocr_lang\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: auto-tag-pdf\n          description: \"Auto-tag a PDF for accessibility compliance (PDF/UA and WCAG)\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.auto-tag-pdf\"\n          with:\n            asset_id: \"tools.asset_id\"\n            generate_report: \"tools.generate_report\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-document\n          description: \"Generate a document by merging JSON data into a template\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"pdf-services.generate-document\"\
+  \n          with:\n            asset_id: \"tools.asset_id\"\n            output_format: \"tools.output_format\"\n            json_data: \"tools.json_data\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-operation-status\n          description: \"Get the status of a PDF Services operation job\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"pdf-services.get-operation-status\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-creative-suite/refs/heads/main/capabilities/document-management.yaml
 tags:
 - Adobe
 - PDF

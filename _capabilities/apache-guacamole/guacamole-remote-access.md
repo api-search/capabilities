@@ -27,47 +27,53 @@ personas: []
 provider_name: Apache Guacamole
 provider_slug: apache-guacamole
 search_terms:
-- rdp
-- create guacamole user
-- list all currently active remote desktop sessions
-- list all active remote desktop sessions
-- list connections
-- create a new user account in guacamole
-- ssh
-- list guacamole users
-- active session monitoring
-- security teams monitoring active sessions and auditing connection history
-- list all guacamole users
-- user account management
-- web gateway
-- apache guacamole
-- create a new remote desktop connection
-- security
-- it administration
-- list all guacamole user accounts
-- vpn alternative
-- list all configured remote desktop connections in guacamole
-- Security Team
-- create remote connection
-- remote desktop connection management via vnc, rdp, ssh protocols
-- manage remote desktop connections, users, and active sessions
-- list users
-- create a new remote desktop connection in guacamole
-- create connection
-- apache
-- administrators managing remote access infrastructure and user accounts
-- remote desktop connection management
-- remote access
-- open source
 - list active sessions
 - remote desktop
-- session monitoring, access control, and audit logging
-- IT Administrator
-- user and group account administration
-- vnc
+- list all guacamole user accounts
 - list remote connections
+- administrators managing remote access infrastructure and user accounts
+- open source
+- list connections
+- manage remote desktop connections, users, and active sessions
 - list all remote desktop connections
+- user account management
+- remote access
+- create a new user account in guacamole
+- it administration
+- apache guacamole
+- list guacamole users
+- rdp
+- remote desktop connection management via vnc, rdp, ssh protocols
+- IT Administrator
+- security teams monitoring active sessions and auditing connection history
+- Security Team
+- apache
+- list all currently active remote desktop sessions
+- vnc
+- web gateway
+- create remote connection
+- ssh
+- user and group account administration
+- remote desktop connection management
+- create guacamole user
+- list users
+- list all guacamole users
+- active session monitoring
+- list all active remote desktop sessions
+- create a new remote desktop connection
+- create connection
+- security
+- create a new remote desktop connection in guacamole
+- vpn alternative
+- session monitoring, access control, and audit logging
+- list all configured remote desktop connections in guacamole
 slug: guacamole-remote-access
+source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Guacamole Remote Access\"\n  description: \"Unified capability for managing Apache Guacamole remote desktop gateway — managing connections, users, groups, and monitoring active sessions. Designed for IT administrators and security teams managing remote access infrastructure.\"\n  tags:\n    - Apache Guacamole\n    - Remote Desktop\n    - Security\n    - IT Administration\n    - VPN Alternative\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      GUACAMOLE_URL: GUACAMOLE_URL\n      GUACAMOLE_TOKEN: GUACAMOLE_TOKEN\n      GUACAMOLE_DATA_SOURCE: GUACAMOLE_DATA_SOURCE\ncapability:\n  consumes:\n    - import: guacamole-rest\n      location: ./shared/guacamole-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: guacamole-access-api\n      description: \"Unified REST API for Apache Guacamole remote access management.\"\n      resources:\n        - path: /v1/connections\n\
+  \          name: connections\n          description: Remote desktop connection management\n          operations:\n            - method: GET\n              name: list-connections\n              description: List all remote desktop connections\n              call: \"guacamole-rest.list-connections\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: Create a new remote desktop connection\n              call: \"guacamole-rest.create-connection\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: User account management\n          operations:\n            - method: GET\n              name:\
+  \ list-users\n              description: List all Guacamole users\n              call: \"guacamole-rest.list-users\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions\n          name: sessions\n          description: Active session monitoring\n          operations:\n            - method: GET\n              name: list-active-sessions\n              description: List all active remote desktop sessions\n              call: \"guacamole-rest.list-active-connections\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: guacamole-access-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Guacamole remote access management.\"\n      tools:\n      \
+  \  - name: list-remote-connections\n          description: List all configured remote desktop connections in Guacamole\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"guacamole-rest.list-connections\"\n          with:\n            dataSource: \"tools.dataSource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-remote-connection\n          description: Create a new remote desktop connection in Guacamole\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"guacamole-rest.create-connection\"\n          with:\n            dataSource: \"tools.dataSource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-guacamole-users\n          description: List all Guacamole user accounts\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"guacamole-rest.list-users\"\
+  \n          with:\n            dataSource: \"tools.dataSource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-active-sessions\n          description: List all currently active remote desktop sessions\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"guacamole-rest.list-active-connections\"\n          with:\n            dataSource: \"tools.dataSource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-guacamole-user\n          description: Create a new user account in Guacamole\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"guacamole-rest.create-user\"\n          with:\n            dataSource: \"tools.dataSource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-guacamole/refs/heads/main/capabilities/guacamole-remote-access.yaml
 tags:
 - Apache Guacamole
 - Remote Desktop

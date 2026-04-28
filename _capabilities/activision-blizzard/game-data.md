@@ -26,43 +26,50 @@ personas: []
 provider_name: activision-blizzard
 provider_slug: activision-blizzard
 search_terms:
-- search hearthstone cards by class, set, mana cost, or other criteria
-- activision blizzard
-- battle.net
-- world of warcraft character data
-- get diablo profile
-- creates fan websites, discord bots, and companion apps using game data
-- Community Developer
-- get the list of world of warcraft realms
-- get wow character
-- diablo
-- analyzes game statistics, leaderboards, and player performance data
 - get a world of warcraft character profile including level, class, race, guild, and achievement points
-- static and dynamic game data apis for community development
-- get wow character achievements
-- get a diablo iii career profile for a battletag account
-- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
-- get wow realms
-- get diablo career profile
-- world of warcraft realms
-- get a specific hearthstone card by id or slug
-- video game data and player profiles across blizzard franchises
-- get the achievements completed by a world of warcraft character
-- search hearthstone cards
-- diablo iii profiles
-- Game Analyst
-- starcraft
-- get diablo iii career profile
-- get wow realm list
-- hearthstone
-- builds community tools, addons, and apps using battle.net game data
-- gaming
-- Fan App Builder
-- get hearthstone card
-- hearthstone card data
 - world of warcraft
+- diablo iii profiles
+- get wow realm list
+- search hearthstone cards by class, set, mana cost, or other criteria
+- get wow character
+- get wow realms
+- world of warcraft realms
+- activision blizzard
+- search hearthstone cards
+- get diablo iii career profile
+- builds community tools, addons, and apps using battle.net game data
+- get the achievements completed by a world of warcraft character
+- creates fan websites, discord bots, and companion apps using game data
+- video game data and player profiles across blizzard franchises
+- get diablo profile
+- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
+- battle.net
+- gaming
+- get a diablo iii career profile for a battletag account
+- get hearthstone card
+- starcraft
+- world of warcraft character data
+- get wow character achievements
+- static and dynamic game data apis for community development
 - get a wow character profile
+- get the list of world of warcraft realms
+- get diablo career profile
+- hearthstone
+- Game Analyst
+- analyzes game statistics, leaderboards, and player performance data
+- hearthstone card data
+- Fan App Builder
+- Community Developer
+- diablo
+- get a specific hearthstone card by id or slug
 slug: game-data
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Activision Blizzard Game Data\"\n  description: \"Unified game data workflow for accessing World of Warcraft characters, realms, guilds, items, Hearthstone cards, Diablo III profiles, and StarCraft II ladder data. Used by game developers, community app builders, and gaming analytics teams.\"\n  tags:\n    - Activision Blizzard\n    - Battle.net\n    - Gaming\n    - World of Warcraft\n    - Hearthstone\n    - Diablo\n    - StarCraft\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BATTLENET_CLIENT_ID: BATTLENET_CLIENT_ID\n      BATTLENET_CLIENT_SECRET: BATTLENET_CLIENT_SECRET\n      BATTLENET_ACCESS_TOKEN: BATTLENET_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: battle-net\n      location: ./shared/battle-net.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: game-data-api\n      description: \"Unified REST API for Activision Blizzard game data.\"\
+  \n      resources:\n        - path: /v1/wow/characters/{realmSlug}/{characterName}\n          name: wow-characters\n          description: \"World of Warcraft character data\"\n          operations:\n            - method: GET\n              name: get-wow-character\n              description: \"Get a WoW character profile\"\n              call: \"battle-net.get-character\"\n              with:\n                realmSlug: \"rest.realmSlug\"\n                characterName: \"rest.characterName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/wow/realms\n          name: wow-realms\n          description: \"World of Warcraft realms\"\n          operations:\n            - method: GET\n              name: get-wow-realms\n              description: \"Get WoW realm list\"\n              call: \"battle-net.get-realms-index\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\
+  \n        - path: /v1/hearthstone/cards\n          name: hearthstone-cards\n          description: \"Hearthstone card data\"\n          operations:\n            - method: GET\n              name: search-hearthstone-cards\n              description: \"Search Hearthstone cards\"\n              call: \"battle-net.search-cards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diablo/profiles/{battletag}\n          name: diablo-profiles\n          description: \"Diablo III profiles\"\n          operations:\n            - method: GET\n              name: get-diablo-profile\n              description: \"Get Diablo III career profile\"\n              call: \"battle-net.get-career-profile\"\n              with:\n                battletag: \"rest.battletag\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: game-data-mcp\n\
+  \      transport: http\n      description: \"MCP server for AI-assisted access to Activision Blizzard game data.\"\n      tools:\n        - name: get-wow-character\n          description: \"Get a World of Warcraft character profile including level, class, race, guild, and achievement points\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"battle-net.get-character\"\n          with:\n            realmSlug: \"tools.realmSlug\"\n            characterName: \"tools.characterName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-wow-character-achievements\n          description: \"Get the achievements completed by a World of Warcraft character\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"battle-net.get-character-achievements\"\n          with:\n            realmSlug: \"tools.realmSlug\"\n            characterName: \"tools.characterName\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-wow-realms\n          description: \"Get the list of World of Warcraft realms\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"battle-net.get-realms-index\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-hearthstone-cards\n          description: \"Search Hearthstone cards by class, set, mana cost, or other criteria\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"battle-net.search-cards\"\n          with:\n            class: \"tools.class\"\n            set: \"tools.set\"\n            manaCost: \"tools.manaCost\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-hearthstone-card\n          description: \"Get a specific Hearthstone card by ID or slug\"\n          hints:\n\
+  \            readOnly: true\n            openWorld: false\n          call: \"battle-net.get-card\"\n          with:\n            idOrSlug: \"tools.idOrSlug\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-diablo-career-profile\n          description: \"Get a Diablo III career profile for a BattleTag account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"battle-net.get-career-profile\"\n          with:\n            battletag: \"tools.battletag\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/activision-blizzard/refs/heads/main/capabilities/game-data.yaml
 tags:
 - Activision Blizzard
 - Battle.net

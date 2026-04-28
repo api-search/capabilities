@@ -75,82 +75,98 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- cloudformation stack operations
-- delete stack
-- cancel resource request
-- delete a stack
-- describe cloudformation stacks
-- list stack sets
-- create a cloudformation stack
-- detect drift
-- update resource
-- get resource
-- list all stacks
-- list stack exports
-- describe change set
-- cloud control
-- detect stack drift
-- cloudformation
-- stack events
-- execute a change set
-- list resources in a stack
-- update a resource
-- get status of a resource operation
-- cloud resources
-- create a change set
-- get a resource
-- get resource request status
-- update stack
-- validate a cloudformation template
-- aws
-- describe stacks
-- list stack resources
-- provisioning
-- validate a template
-- single stack operations
-- update a stack
-- list types
-- create a stack
-- delete a cloud resource via cloud control
-- stack management
-- infrastructure as code
-- stack drift detection
-- create resource
-- get the template for a stack
-- update a cloud resource via cloud control
-- list registry extension types
-- automation
+- describe a change set
 - delete a resource
+- change set operations
+- create stack
+- list stack resources
+- stack drift detection
+- automation
 - stack resources
+- stack management
+- cloudformation
+- list stack sets
+- iac
+- single resource operations
+- describe stacks
+- describe a stack
+- create a change set for a stack
+- validate template
+- list registry extension types
+- list types
+- detect stack drift
+- delete a stack
+- describe stack
+- detect drift
+- create resource
+- update resource
+- get the template for a stack
+- infrastructure as code
+- aws
+- list resources by type
+- delete a cloud resource via cloud control
+- execute change set
+- get status of a resource operation
+- create change set
+- delete resource
+- update a cloud resource via cloud control
+- list stacks
+- update a stack
+- cancel an in-progress resource operation
+- list resources
+- cloudformation stack operations
+- template validation
 - list exports
 - single change set
+- execute a change set
 - get template
-- create a cloud resource via cloud control
-- list stacks
-- describe a stack
-- cancel an in-progress resource operation
-- delete resource
-- execute change set
-- template validation
-- describe a change set
-- describe stack events
-- create change set
-- list resources by type
-- iac
-- validate template
-- single resource operations
-- list resources of a specified type
-- detect drift on a stack
-- create stack
-- describe stack
-- get stack events
-- create a cloud resource
-- change set operations
+- stack events
 - cloud control resource operations
-- list resources
+- list all stacks
+- describe cloudformation stacks
+- create a stack
+- list stack exports
+- provisioning
+- single stack operations
+- delete stack
+- get stack events
+- cloud control
+- create a change set
+- validate a template
+- create a cloud resource
+- get resource
+- validate a cloudformation template
+- update a resource
 - read a cloud resource via cloud control
-- create a change set for a stack
+- cancel resource request
+- create a cloud resource via cloud control
+- get resource request status
+- update stack
+- describe change set
+- detect drift on a stack
+- create a cloudformation stack
+- cloud resources
+- get a resource
+- describe stack events
+- list resources of a specified type
+- list resources in a stack
 slug: infrastructure-provisioning
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS Infrastructure Provisioning\"\n  description: \"Unified workflow for AWS infrastructure provisioning combining CloudFormation stack management with Cloud Control API resource operations. Used by cloud engineers and platform teams to define, deploy, and manage infrastructure as code.\"\n  tags:\n    - AWS\n    - CloudFormation\n    - Cloud Control\n    - Infrastructure As Code\n    - Provisioning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: cloudformation\n      location: ./shared/cloudformation.yaml\n    - import: cloud-control\n      location: ./shared/cloud-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: infra-provisioning-api\n      description: \"Unified REST API for AWS infrastructure provisioning combining\
+  \ CloudFormation and Cloud Control.\"\n      resources:\n        - path: /v1/stacks\n          name: stacks\n          description: \"CloudFormation stack operations\"\n          operations:\n            - method: GET\n              name: list-stacks\n              description: \"List all stacks\"\n              call: \"cloudformation.list-stacks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-stack\n              description: \"Create a stack\"\n              call: \"cloudformation.create-stack\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}\n          name: stack\n          description: \"Single stack operations\"\n          operations:\n            - method: GET\n              name: describe-stack\n              description: \"Describe a stack\"\n              call: \"cloudformation.describe-stacks\"\
+  \n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-stack\n              description: \"Update a stack\"\n              call: \"cloudformation.update-stack\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-stack\n              description: \"Delete a stack\"\n              call: \"cloudformation.delete-stack\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}/events\n          name: stack-events\n          description: \"Stack events\"\n          operations:\n            - method: GET\n\
+  \              name: describe-stack-events\n              description: \"Get stack events\"\n              call: \"cloudformation.describe-stack-events\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}/resources\n          name: stack-resources\n          description: \"Stack resources\"\n          operations:\n            - method: GET\n              name: list-stack-resources\n              description: \"List resources in a stack\"\n              call: \"cloudformation.list-stack-resources\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}/drift\n          name: stack-drift\n          description: \"Stack drift detection\"\n          operations:\n            - method:\
+  \ POST\n              name: detect-drift\n              description: \"Detect drift on a stack\"\n              call: \"cloudformation.detect-stack-drift\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/change-sets\n          name: change-sets\n          description: \"Change set operations\"\n          operations:\n            - method: POST\n              name: create-change-set\n              description: \"Create a change set\"\n              call: \"cloudformation.create-change-set\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/change-sets/{changeSetName}\n          name: change-set\n          description: \"Single change set\"\n          operations:\n            - method: GET\n              name: describe-change-set\n              description: \"Describe a change\
+  \ set\"\n              call: \"cloudformation.describe-change-set\"\n              with:\n                ChangeSetName: \"rest.changeSetName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/templates/validate\n          name: template-validation\n          description: \"Template validation\"\n          operations:\n            - method: POST\n              name: validate-template\n              description: \"Validate a template\"\n              call: \"cloudformation.validate-template\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/resources\n          name: resources\n          description: \"Cloud Control resource operations\"\n          operations:\n            - method: POST\n              name: create-resource\n              description: \"Create a cloud resource\"\n              call: \"cloud-control.create-resource\"\n      \
+  \        outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-resources\n              description: \"List resources by type\"\n              call: \"cloud-control.list-resources\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/resources/{typeName}/{identifier}\n          name: resource\n          description: \"Single resource operations\"\n          operations:\n            - method: GET\n              name: get-resource\n              description: \"Get a resource\"\n              call: \"cloud-control.get-resource\"\n              with:\n                TypeName: \"rest.typeName\"\n                Identifier: \"rest.identifier\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-resource\n              description: \"Update\
+  \ a resource\"\n              call: \"cloud-control.update-resource\"\n              with:\n                TypeName: \"rest.typeName\"\n                Identifier: \"rest.identifier\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-resource\n              description: \"Delete a resource\"\n              call: \"cloud-control.delete-resource\"\n              with:\n                TypeName: \"rest.typeName\"\n                Identifier: \"rest.identifier\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: infra-provisioning-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AWS infrastructure provisioning.\"\n      tools:\n        - name: create-stack\n          description: \"Create a CloudFormation stack\"\n          hints:\n            readOnly:\
+  \ false\n          call: \"cloudformation.create-stack\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-stacks\n          description: \"Describe CloudFormation stacks\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.describe-stacks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-stacks\n          description: \"List all stacks\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.list-stacks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-stack\n          description: \"Update a stack\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudformation.update-stack\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n\n        - name: delete-stack\n          description: \"Delete a stack\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"cloudformation.delete-stack\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-stack-events\n          description: \"Get stack events\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.describe-stack-events\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-stack-resources\n          description: \"List resources in a stack\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.list-stack-resources\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: detect-stack-drift\n\
+  \          description: \"Detect drift on a stack\"\n          hints:\n            readOnly: true\n          call: \"cloudformation.detect-stack-drift\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-change-set\n          description: \"Create a change set for a stack\"\n          hints:\n            readOnly: false\n          call: \"cloudformation.create-change-set\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-change-set\n          description: \"Describe a change set\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.describe-change-set\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: execute-change-set\n          description: \"Execute a change set\"\n          hints:\n            readOnly: false\n          call: \"cloudformation.execute-change-set\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: validate-template\n          description: \"Validate a CloudFormation template\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.validate-template\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-template\n          description: \"Get the template for a stack\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.get-template\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-exports\n          description: \"List stack exports\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.list-exports\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
+  \n\n        - name: list-stack-sets\n          description: \"List stack sets\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.list-stack-sets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-types\n          description: \"List registry extension types\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloudformation.list-types\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-resource\n          description: \"Create a cloud resource via Cloud Control\"\n          hints:\n            readOnly: false\n          call: \"cloud-control.create-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-resource\n          description: \"Read a cloud resource via Cloud Control\"\n          hints:\n\
+  \            readOnly: true\n            idempotent: true\n          call: \"cloud-control.get-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-resource\n          description: \"Update a cloud resource via Cloud Control\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloud-control.update-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-resource\n          description: \"Delete a cloud resource via Cloud Control\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"cloud-control.delete-resource\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-resources\n          description: \"List resources of a specified type\"\n          hints:\n            readOnly:\
+  \ true\n            idempotent: true\n          call: \"cloud-control.list-resources\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-resource-request-status\n          description: \"Get status of a resource operation\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloud-control.get-resource-request-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: cancel-resource-request\n          description: \"Cancel an in-progress resource operation\"\n          hints:\n            readOnly: false\n          call: \"cloud-control.cancel-resource-request\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudformation/refs/heads/main/capabilities/infrastructure-provisioning.yaml
 tags:
 - AWS
 - CloudFormation

@@ -32,40 +32,46 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get news
-- conversational query
-- content
-- get earnings call transcripts.
-- get streetaccount news.
-- signals
-- run nlp analysis on text.
-- search
-- financial data
-- global filings.
+- streetaccount news.
 - get regulatory filings.
 - run nlp
-- get signals.
-- search for answers.
-- get signals
+- get streetaccount news.
+- conversational query
+- content
+- natural language search.
+- financial
+- search
+- get global regulatory filings.
+- get material event signals.
+- factset
 - get filings
 - news
-- market data
-- research
-- investment analytics
-- nlp
-- material event signals.
-- get callstreet events
-- get news articles.
+- get signals
+- get signals.
+- run nlp analysis on text.
 - conversational ai query.
-- financial
-- natural language search.
-- get global regulatory filings.
+- nlp
 - portfolio analytics
-- factset
-- get material event signals.
+- get earnings call transcripts.
+- search for answers.
+- investment analytics
+- market data
+- get callstreet events
+- get news
+- get news articles.
 - search answers
-- streetaccount news.
+- material event signals.
+- signals
+- financial data
+- global filings.
+- research
 slug: content-intelligence
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Content and Intelligence\"\n  description: \"Unified workflow for content retrieval and intelligence including news, filings, earnings calls, NLP, signals, and conversational search. Used by content consumers and data scientists.\"\n  tags:\n    - FactSet\n    - Content\n    - NLP\n    - News\n    - Signals\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-callstreet\n      location: ./shared/documents-distributor-callstreet-events.yaml\n    - import: factset-streetaccount\n      location: ./shared/streetaccount-news.yaml\n    - import: factset-filings\n      location: ./shared/global-filings.yaml\n    - import: factset-signals\n      location: ./shared/signals.yaml\n    - import: factset-nlp\n      location: ./shared/natural-language-processing.yaml\n\
+  \    - import: factset-search\n      location: ./shared/search-answers.yaml\n    - import: factset-conv\n      location: ./shared/conversational-api-powered-by-mercury.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: content-intel-api\n      description: \"Unified REST API for content and intelligence.\"\n      resources:\n        - path: /v1/news\n          name: news\n          description: \"StreetAccount news.\"\n          operations:\n            - method: GET\n              name: get-news\n              description: \"Get news articles.\"\n              call: \"factset-streetaccount.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/filings\n          name: filings\n          description: \"Global filings.\"\n          operations:\n            - method: GET\n              name: get-filings\n              description: \"Get regulatory filings.\"\n              call: \"factset-filings.list\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/signals\n          name: signals\n          description: \"Material event signals.\"\n          operations:\n            - method: GET\n              name: get-signals\n              description: \"Get signals.\"\n              call: \"factset-signals.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search\n          name: search\n          description: \"Natural language search.\"\n          operations:\n            - method: GET\n              name: search\n              description: \"Search for answers.\"\n              call: \"factset-search.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9087\n      namespace: content-intel-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\
+  \ content intelligence.\"\n      tools:\n        - name: get-callstreet-events\n          description: \"Get earnings call transcripts.\"\n          hints:\n            readOnly: true\n          call: \"factset-callstreet.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-news\n          description: \"Get StreetAccount news.\"\n          hints:\n            readOnly: true\n          call: \"factset-streetaccount.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-filings\n          description: \"Get global regulatory filings.\"\n          hints:\n            readOnly: true\n          call: \"factset-filings.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-signals\n          description: \"Get material event signals.\"\n          hints:\n            readOnly: true\n          call: \"factset-signals.list\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: run-nlp\n          description: \"Run NLP analysis on text.\"\n          hints:\n            readOnly: true\n          call: \"factset-nlp.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-answers\n          description: \"Natural language search.\"\n          hints:\n            readOnly: true\n          call: \"factset-search.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: conversational-query\n          description: \"Conversational AI query.\"\n          hints:\n            readOnly: true\n          call: \"factset-conv.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/factset/refs/heads/main/capabilities/content-intelligence.yaml
 tags:
 - FactSet
 - Content

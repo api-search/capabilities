@@ -34,45 +34,52 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list tickets
-- list associations for a crm object
-- individual ticket
-- content
-- look up a contact for ticket context
-- service
-- create ticket
-- marketing automation
-- contact lookup
-- support tickets
-- conversations
-- archive ticket
-- marketing
 - associate a ticket with a contact or company
-- get a support ticket by id
-- search contacts to find the customer
+- list all support tickets
+- create association
 - update ticket
+- contact lookup
+- list associations for a crm object
+- support
+- service
+- content
+- create a new support ticket
 - tickets
-- update a support ticket
-- archive a support ticket
-- get ticket
-- search contacts
-- commerce
 - search tickets with filters
+- commerce
+- create ticket
+- conversations
+- analytics
+- crm
+- customer service
+- hubspot
+- email marketing
+- search contacts
+- search contacts to find the customer
+- list associations
+- get a support ticket by id
+- get ticket
+- list tickets
+- marketing
+- update a support ticket
+- individual ticket
+- marketing automation
+- look up a contact for ticket context
+- archive a support ticket
+- archive ticket
 - search tickets
+- support tickets
+- sales
 - operations
 - get contact
-- create a new support ticket
-- email marketing
-- customer service
-- support
-- list all support tickets
-- analytics
-- sales
-- crm
-- list associations
-- hubspot
-- create association
 slug: customer-service
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Customer Service\"\n  description: \"Unified workflow for service agents to manage support tickets, conversations, threads, messages, and CRM associations. Combines ticket management with conversation channels for complete customer service operations.\"\n  tags:\n    - HubSpot\n    - Service\n    - Support\n    - Tickets\n    - Conversations\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: crm-tickets\n      location: ./shared/crm-tickets.yaml\n    - import: conversations\n      location: ./shared/conversations-api.yaml\n    - import: crm-contacts\n      location: ./shared/crm-contacts.yaml\n    - import: crm-associations\n      location: ./shared/crm-associations.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: customer-service-api\n      description: \"Unified\
+  \ REST API for customer service ticket management, conversations, and contact resolution.\"\n      resources:\n        - path: /v1/tickets\n          name: tickets\n          description: \"Support tickets\"\n          operations:\n            - { method: GET, name: list-tickets, description: \"List tickets\", call: \"crm-tickets.list-tickets\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-ticket, description: \"Create ticket\", call: \"crm-tickets.create-ticket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/tickets/{ticketId}\n          name: ticket-by-id\n          description: \"Individual ticket\"\n          operations:\n            - { method: GET, name: get-ticket, description: \"Get ticket\", call: \"crm-tickets.get-ticket\", with: { ticketId: \"rest.ticketId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: PATCH, name: update-ticket, description: \"Update\
+  \ ticket\", call: \"crm-tickets.update-ticket\", with: { ticketId: \"rest.ticketId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/contacts/{contactId}\n          name: contact-by-id\n          description: \"Contact lookup\"\n          operations:\n            - { method: GET, name: get-contact, description: \"Get contact\", call: \"crm-contacts.get-contact\", with: { contactId: \"rest.contactId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n\n    - type: mcp\n      port: 9092\n      namespace: customer-service-mcp\n      transport: http\n      description: \"MCP server for AI-assisted customer service, ticket resolution, and conversation management.\"\n      tools:\n        - { name: list-tickets, description: \"List all support tickets\", hints: { readOnly: true, idempotent: true }, call: \"crm-tickets.list-tickets\", with: { limit: \"tools.limit\", after: \"tools.after\", properties: \"tools.properties\" }, outputParameters: [{ type:\
+  \ object, mapping: \"$.\" }] }\n        - { name: get-ticket, description: \"Get a support ticket by ID\", hints: { readOnly: true, idempotent: true }, call: \"crm-tickets.get-ticket\", with: { ticketId: \"tools.ticketId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-ticket, description: \"Create a new support ticket\", hints: { readOnly: false }, call: \"crm-tickets.create-ticket\", with: { properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-ticket, description: \"Update a support ticket\", hints: { readOnly: false, idempotent: true }, call: \"crm-tickets.update-ticket\", with: { ticketId: \"tools.ticketId\", properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: archive-ticket, description: \"Archive a support ticket\", hints: { readOnly: false, destructive: true, idempotent: true }, call: \"crm-tickets.archive-ticket\", with:\
+  \ { ticketId: \"tools.ticketId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-tickets, description: \"Search tickets with filters\", hints: { readOnly: true, idempotent: true }, call: \"crm-tickets.search-tickets\", with: { filterGroups: \"tools.filterGroups\", query: \"tools.query\", properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-contact, description: \"Look up a contact for ticket context\", hints: { readOnly: true, idempotent: true }, call: \"crm-contacts.get-contact\", with: { contactId: \"tools.contactId\", properties: \"tools.properties\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-contacts, description: \"Search contacts to find the customer\", hints: { readOnly: true, idempotent: true }, call: \"crm-contacts.search-contacts\", with: { filterGroups: \"tools.filterGroups\", query: \"tools.query\" }, outputParameters: [{ type: object,\
+  \ mapping: \"$.\" }] }\n        - { name: list-associations, description: \"List associations for a CRM object\", hints: { readOnly: true, idempotent: true }, call: \"crm-associations.list-associations\", with: { fromObjectType: \"tools.fromObjectType\", fromObjectId: \"tools.fromObjectId\", toObjectType: \"tools.toObjectType\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-association, description: \"Associate a ticket with a contact or company\", hints: { readOnly: false, idempotent: true }, call: \"crm-associations.create-association\", with: { fromObjectType: \"tools.fromObjectType\", fromObjectId: \"tools.fromObjectId\", toObjectType: \"tools.toObjectType\", to: \"tools.to\", types: \"tools.types\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/hubspot/refs/heads/main/capabilities/customer-service.yaml
 tags:
 - HubSpot
 - Service

@@ -38,61 +38,72 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- get worker
-- list all people
-- hcm list workers
-- list all currencies
-- list all locations
-- list supervisory organizations
-- get change history for a worker
-- person get home contact
-- hcm get worker inbox tasks
-- hcm list locations
-- staffing list positions
-- initiate a worker termination
-- person get work contact
-- list workers
-- worker management
+- list all job profiles
+- position management
 - country reference data
-- hcm get worker
+- enterprise software
+- list all people
+- list all positions
+- person data
 - list all countries
 - person list people
-- staffing list job profiles
-- get home contact information
-- get a worker by id
-- workday
-- list all positions
-- list people
-- human resources
-- worker detail
-- list all workers
-- get work contact information
-- list all workers with optional search and pagination
-- enterprise software
-- financial management
-- position management
-- list countries
-- hcm list organizations
-- list positions
-- create a job change request
-- cloud computing
-- saas
-- staffing terminate worker
-- person data
-- get a specific worker by id
-- list organizations
-- get inbox tasks for a worker
-- person get person
-- hcm get worker history
-- list all job profiles
 - common list currencies
-- workforce management
-- get a person by id
-- common list countries
-- hcm
-- staffing create job change
+- person get home contact
+- get a specific worker by id
 - supervisory organizations
+- list all currencies
+- workday
+- list all locations
+- staffing list positions
+- human resources
+- get a worker by id
+- list organizations
+- common list countries
+- hcm get worker inbox tasks
+- workforce management
+- worker detail
+- list supervisory organizations
+- worker management
+- person get person
+- staffing terminate worker
+- hcm list organizations
+- initiate a worker termination
+- get a person by id
+- cloud computing
+- list people
+- get change history for a worker
+- get worker
+- list all workers with optional search and pagination
+- hcm list workers
+- list positions
+- hcm get worker history
+- list all workers
+- get inbox tasks for a worker
+- list workers
+- get work contact information
+- financial management
+- list countries
+- get home contact information
+- staffing list job profiles
+- saas
+- staffing create job change
+- hcm
+- hcm list locations
+- create a job change request
+- person get work contact
+- hcm get worker
 slug: workforce-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Workforce Management\"\n  description: \"Unified workforce management combining HCM, Person, Staffing, and Common APIs for HR administrators to manage workers, organizations, positions, and reference data.\"\n  tags:\n    - Workday\n    - Workforce Management\n    - Human Resources\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-hcm\n      location: ./shared/hcm.yaml\n    - import: workday-person\n      location: ./shared/person.yaml\n    - import: workday-staffing\n      location: ./shared/staffing.yaml\n    - import: workday-common\n      location: ./shared/common.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workforce-management-api\n      description: \"Unified REST API for workforce management operations.\"\n      resources:\n        - path: /v1/workers\n\
+  \          name: workers\n          description: \"Worker management\"\n          operations:\n            - method: GET\n              name: list-workers\n              description: \"List all workers\"\n              call: \"workday-hcm.get-workers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workers/{id}\n          name: worker-detail\n          description: \"Worker detail\"\n          operations:\n            - method: GET\n              name: get-worker\n              description: \"Get a worker by ID\"\n              call: \"workday-hcm.get-worker-by-id\"\n              with:\n                ID: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/people\n          name: people\n          description: \"Person data\"\n          operations:\n            - method: GET\n              name: list-people\n              description:\
+  \ \"List all people\"\n              call: \"workday-person.get-people\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/positions\n          name: positions\n          description: \"Position management\"\n          operations:\n            - method: GET\n              name: list-positions\n              description: \"List all positions\"\n              call: \"workday-staffing.get-positions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Supervisory organizations\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List supervisory organizations\"\n              call: \"workday-hcm.get-supervisory-organizations\"\n              outputParameters:\n                - type: object\n                  mapping:\
+  \ \"$.\"\n        - path: /v1/countries\n          name: countries\n          description: \"Country reference data\"\n          operations:\n            - method: GET\n              name: list-countries\n              description: \"List all countries\"\n              call: \"workday-common.get-countries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: workforce-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted workforce management.\"\n      tools:\n        - name: hcm-list-workers\n          description: \"List all workers with optional search and pagination\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workday-hcm.get-workers\"\n          with:\n            limit: \"tools.limit\"\n            offset: \"tools.offset\"\n            search: \"tools.search\"\n          outputParameters:\n      \
+  \      - type: object\n              mapping: \"$.\"\n        - name: hcm-get-worker\n          description: \"Get a specific worker by ID\"\n          hints:\n            readOnly: true\n          call: \"workday-hcm.get-worker-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hcm-get-worker-history\n          description: \"Get change history for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-hcm.get-worker-history\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hcm-get-worker-inbox-tasks\n          description: \"Get inbox tasks for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-hcm.get-worker-inbox-tasks\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: hcm-list-organizations\n          description: \"List supervisory organizations\"\n          hints:\n            readOnly: true\n          call: \"workday-hcm.get-supervisory-organizations\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: hcm-list-locations\n          description: \"List all locations\"\n          hints:\n            readOnly: true\n          call: \"workday-hcm.get-locations\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: person-list-people\n          description: \"List all people\"\n          hints:\n            readOnly: true\n          call: \"workday-person.get-people\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n         \
+  \     mapping: \"$.\"\n        - name: person-get-person\n          description: \"Get a person by ID\"\n          hints:\n            readOnly: true\n          call: \"workday-person.get-person-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: person-get-home-contact\n          description: \"Get home contact information\"\n          hints:\n            readOnly: true\n          call: \"workday-person.get-home-contact-information\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: person-get-work-contact\n          description: \"Get work contact information\"\n          hints:\n            readOnly: true\n          call: \"workday-person.get-work-contact-information\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n   \
+  \           mapping: \"$.\"\n        - name: staffing-list-positions\n          description: \"List all positions\"\n          hints:\n            readOnly: true\n          call: \"workday-staffing.get-positions\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: staffing-list-job-profiles\n          description: \"List all job profiles\"\n          hints:\n            readOnly: true\n          call: \"workday-staffing.get-job-profiles\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: staffing-create-job-change\n          description: \"Create a job change request\"\n          hints:\n            readOnly: false\n          call: \"workday-staffing.create-job-change\"\n          with:\n            worker: \"tools.worker\"\n            proposedJob: \"tools.proposedJob\"\n \
+  \         outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: staffing-terminate-worker\n          description: \"Initiate a worker termination\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"workday-staffing.terminate-worker\"\n          with:\n            worker: \"tools.worker\"\n            terminationDate: \"tools.terminationDate\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: common-list-countries\n          description: \"List all countries\"\n          hints:\n            readOnly: true\n          call: \"workday-common.get-countries\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: common-list-currencies\n          description: \"List all currencies\"\n          hints:\n            readOnly: true\n          call: \"workday-common.get-currencies\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/capabilities/workforce-management.yaml
 tags:
 - Workday
 - Workforce Management

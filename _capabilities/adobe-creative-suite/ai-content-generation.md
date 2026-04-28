@@ -38,46 +38,56 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- ai video generation
-- generate and composite an ai object into a scene
-- similar image generation from reference
-- generative ai
-- generate images
-- expand an image beyond its boundaries
-- get the status of an async generation job
-- generate a short video clip from a text prompt
-- photography
-- generate similar images
+- ai object compositing
+- generate images from a text prompt
+- expand an image beyond its original boundaries using generative ai
+- text-to-image generation
 - generate images visually similar to a reference image
-- firefly
-- generative fill operations
+- graphics
+- video generation
+- generate images
+- generate similar images
+- generate a video from a text prompt
+- video
+- fill a masked region of an image with ai-generated content
+- generate and composite an ai object into a scene
 - fill a masked region with ai-generated content
-- generate images similar to a reference image
+- similar image generation from reference
+- generative image expansion
 - generate video
 - design
-- fill image
-- graphics
-- expand image
-- video
-- generative image expansion
-- fill a masked region of an image with ai-generated content
 - creative
-- video generation
+- expand an image beyond its boundaries
+- generative fill operations
+- fill image
+- expand image
 - image generation
-- ai object compositing
-- get job status
 - generate composite
-- generate an ai object and composite it into a scene image
-- expand an image beyond its original boundaries using generative ai
-- adobe
-- generate a video from a text prompt
-- text-to-image generation
-- content generation
-- generation job status
 - generate one or more images from a text prompt using adobe firefly
+- generate a short video clip from a text prompt
+- get the status of an async generation job
+- generate images similar to a reference image
+- content generation
+- generate an ai object and composite it into a scene image
+- photography
+- generative ai
 - get the status of an asynchronous firefly generation job
-- generate images from a text prompt
+- ai video generation
+- get job status
+- firefly
+- generation job status
+- adobe
 slug: ai-content-generation
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe AI Content Generation\"\n  description: \"AI-powered content generation workflow using Adobe Firefly for creating images, videos, and visual variations from text prompts. Used by content creators, marketers, and designers who need to rapidly produce visual assets using generative AI.\"\n  tags:\n    - Adobe\n    - Firefly\n    - Generative AI\n    - Content Generation\n    - Image Generation\n    - Video Generation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_FIREFLY_TOKEN: ADOBE_FIREFLY_TOKEN\n\ncapability:\n  consumes:\n    - import: firefly\n      location: ./shared/firefly.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: ai-content-generation-api\n      description: \"Unified REST API for AI-powered content generation using Adobe Firefly.\"\n      resources:\n        - path: /v1/generations\n          name: generations\n          description:\
+  \ \"Text-to-image generation\"\n          operations:\n            - method: POST\n              name: generate-images\n              description: \"Generate images from a text prompt\"\n              call: \"firefly.generate-images-async\"\n              with:\n                prompt: \"rest.prompt\"\n                negative_prompt: \"rest.negative_prompt\"\n                content_class: \"rest.content_class\"\n                num_variations: \"rest.num_variations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/generations/similar\n          name: similar-generations\n          description: \"Similar image generation from reference\"\n          operations:\n            - method: POST\n              name: generate-similar-images\n              description: \"Generate images similar to a reference image\"\n              call: \"firefly.generate-similar-images-async\"\n              with:\n                prompt:\
+  \ \"rest.prompt\"\n                image: \"rest.image\"\n                num_variations: \"rest.num_variations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/expansions\n          name: expansions\n          description: \"Generative image expansion\"\n          operations:\n            - method: POST\n              name: expand-image\n              description: \"Expand an image beyond its boundaries\"\n              call: \"firefly.expand-image-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/fills\n          name: fills\n          description: \"Generative fill operations\"\n          operations:\n            - method: POST\n              name: fill-image\n              description: \"Fill a masked region with AI-generated content\"\
+  \n              call: \"firefly.fill-image-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n                mask: \"rest.mask\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/composites\n          name: composites\n          description: \"AI object compositing\"\n          operations:\n            - method: POST\n              name: generate-composite\n              description: \"Generate and composite an AI object into a scene\"\n              call: \"firefly.generate-object-composite-async\"\n              with:\n                prompt: \"rest.prompt\"\n                image: \"rest.image\"\n                mask: \"rest.mask\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/videos\n          name: videos\n          description: \"AI video generation\"\n          operations:\n\
+  \            - method: POST\n              name: generate-video\n              description: \"Generate a video from a text prompt\"\n              call: \"firefly.generate-video-async\"\n              with:\n                prompt: \"rest.prompt\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/jobs/{jobId}\n          name: jobs\n          description: \"Generation job status\"\n          operations:\n            - method: GET\n              name: get-job-status\n              description: \"Get the status of an async generation job\"\n              call: \"firefly.get-generation-status\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: ai-content-generation-mcp\n      transport: http\n      description: \"MCP server for AI-assisted content generation\
+  \ using Adobe Firefly.\"\n      tools:\n        - name: generate-images\n          description: \"Generate one or more images from a text prompt using Adobe Firefly\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-images-async\"\n          with:\n            prompt: \"tools.prompt\"\n            negative_prompt: \"tools.negative_prompt\"\n            content_class: \"tools.content_class\"\n            num_variations: \"tools.num_variations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-similar-images\n          description: \"Generate images visually similar to a reference image\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-similar-images-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image:\
+  \ \"tools.image\"\n            num_variations: \"tools.num_variations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: expand-image\n          description: \"Expand an image beyond its original boundaries using generative AI\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.expand-image-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: fill-image\n          description: \"Fill a masked region of an image with AI-generated content\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.fill-image-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n          \
+  \  mask: \"tools.mask\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-composite\n          description: \"Generate an AI object and composite it into a scene image\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-object-composite-async\"\n          with:\n            prompt: \"tools.prompt\"\n            image: \"tools.image\"\n            mask: \"tools.mask\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-video\n          description: \"Generate a short video clip from a text prompt\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"firefly.generate-video-async\"\n          with:\n            prompt: \"tools.prompt\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n\n        - name: get-job-status\n          description: \"Get the status of an asynchronous Firefly generation job\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"firefly.get-generation-status\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-creative-suite/refs/heads/main/capabilities/ai-content-generation.yaml
 tags:
 - Adobe
 - Firefly

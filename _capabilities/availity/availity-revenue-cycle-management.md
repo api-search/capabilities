@@ -40,57 +40,65 @@ personas: []
 provider_name: availity
 provider_slug: availity
 search_terms:
-- list supported payers
-- submit prior authorization request
-- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
-- supported health plan payers
-- manages claim submission, status tracking, and patient billing
-- verify member insurance coverage and benefits
-- get claim detail
-- check prior auth required
-- prior authorization requests
-- submit a prior authorization request for a scheduled procedure
-- integrates availity apis into electronic health record and practice management systems
-- patient cost estimation and price transparency
-- list payers
-- eligibility
-- service review and authorization request management
-- availity
-- claim status inquiries
-- verify eligibility
 - check claim status
-- claims
-- search claims summary
-- list previous eligibility inquiries for audit and follow-up
-- Revenue Cycle Manager
-- unified workflow combining eligibility, claims, and authorization for rcm teams
+- submit a prior authorization request for a scheduled procedure
 - Billing Specialist
-- track the status of a submitted prior authorization request
-- determine if a payer requires prior authorization before service delivery
-- claim status tracking and attachment submission
-- submit prior authorization
-- search claims by service date or member id for revenue tracking
-- submit authorization
-- verify member eligibility
-- list claim statuses
+- service review and authorization request management
+- list claim status inquiries
+- supported health plan payers
+- verify member insurance coverage and benefits
+- list eligibility history
 - submit claim status inquiry
-- list eligibility inquiries
-- verify patient insurance eligibility and benefits before service delivery
+- verify eligibility
+- claims
+- track the status of a submitted prior authorization request
+- submit prior authorization
+- eligibility
+- verify member eligibility
+- integrates availity apis into electronic health record and practice management systems
 - find health plan payers available for transactions
+- availity
+- list previous eligibility inquiries for audit and follow-up
 - get detailed claim information including adjudication and payment amounts
 - track authorization status
-- check auth required
-- list eligibility history
-- real-time insurance coverage and benefits verification
+- Revenue Cycle Manager
+- revenue cycle
+- determine if a payer requires prior authorization before service delivery
+- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
 - submit a claim status inquiry to check adjudication status
 - healthcare
+- list eligibility inquiries
+- claim status tracking and attachment submission
 - member eligibility verification
-- lookup supported payers
+- manages claim submission, status tracking, and patient billing
+- check auth required
 - check if authorization is required
-- revenue cycle
-- list claim status inquiries
+- search claims summary
+- submit prior authorization request
+- submit authorization
+- verify patient insurance eligibility and benefits before service delivery
+- list claim statuses
+- lookup supported payers
 - list eligibilities
+- real-time insurance coverage and benefits verification
+- search claims by service date or member id for revenue tracking
+- list supported payers
+- claim status inquiries
+- get claim detail
+- patient cost estimation and price transparency
+- list payers
+- unified workflow combining eligibility, claims, and authorization for rcm teams
+- check prior auth required
+- prior authorization requests
 slug: availity-revenue-cycle-management
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Availity Healthcare Revenue Cycle Management\n  description: Unified workflow for revenue cycle management combining eligibility verification, claim status tracking, and prior authorization. Used by billing departments and revenue cycle teams to \n    streamline patient encounter workflows.\n  tags:\n  - Availity\n  - Revenue Cycle\n  - Healthcare\n  - Claims\n  - Eligibility\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AVAILITY_CLIENT_ID: AVAILITY_CLIENT_ID\n    AVAILITY_CLIENT_SECRET: AVAILITY_CLIENT_SECRET\ncapability:\n  consumes:\n  - import: availity-eligibility\n    location: ./shared/eligibility.yaml\n  - import: availity-claims\n    location: ./shared/claim-status.yaml\n  - import: availity-auth\n    location: ./shared/service-reviews.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: availity-rcm-api\n    description: Unified REST API for healthcare revenue cycle management.\n\
+  \    resources:\n    - path: /v1/eligibilities\n      name: eligibilities\n      description: Member eligibility verification\n      operations:\n      - method: POST\n        name: verify-eligibility\n        description: Verify member insurance coverage and benefits\n        call: availity-eligibility.check-eligibility\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-eligibilities\n        description: List eligibility inquiries\n        call: availity-eligibility.list-eligibilities\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/payers\n      name: payers\n      description: Supported health plan payers\n      operations:\n      - method: GET\n        name: list-payers\n        description: List supported payers\n        call: availity-eligibility.list-payers\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/claim-statuses\n      name:\
+  \ claim-statuses\n      description: Claim status inquiries\n      operations:\n      - method: POST\n        name: check-claim-status\n        description: Submit claim status inquiry\n        call: availity-claims.create-claim-status-inquiry\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-claim-statuses\n        description: List claim status inquiries\n        call: availity-claims.list-claim-status-inquiries\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/prior-authorizations\n      name: prior-authorizations\n      description: Prior authorization requests\n      operations:\n      - method: POST\n        name: check-auth-required\n        description: Check if authorization is required\n        call: availity-auth.check-is-auth-required\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: submit-authorization\n   \
+  \     description: Submit prior authorization request\n        call: availity-auth.create-service-review\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: availity-rcm-mcp\n    transport: http\n    description: MCP server for AI-assisted healthcare revenue cycle management.\n    tools:\n    - name: verify-member-eligibility\n      description: Verify patient insurance eligibility and benefits before service delivery\n      hints:\n        readOnly: false\n        openWorld: true\n      call: availity-eligibility.check-eligibility\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-eligibility-history\n      description: List previous eligibility inquiries for audit and follow-up\n      hints:\n        readOnly: true\n        openWorld: true\n      call: availity-eligibility.list-eligibilities\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-supported-payers\n\
+  \      description: Find health plan payers available for transactions\n      hints:\n        readOnly: true\n        openWorld: true\n      call: availity-eligibility.list-payers\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: submit-claim-status-inquiry\n      description: Submit a claim status inquiry to check adjudication status\n      hints:\n        readOnly: false\n        openWorld: true\n      call: availity-claims.create-claim-status-inquiry\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-claims-summary\n      description: Search claims by service date or member ID for revenue tracking\n      hints:\n        readOnly: true\n        openWorld: true\n      call: availity-claims.summary-search-claims\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-claim-detail\n      description: Get detailed claim information including adjudication and payment amounts\n      hints:\n  \
+  \      readOnly: true\n        openWorld: true\n      call: availity-claims.detail-search-claim\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: check-prior-auth-required\n      description: Determine if a payer requires prior authorization before service delivery\n      hints:\n        readOnly: true\n        openWorld: true\n      call: availity-auth.check-is-auth-required\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: submit-prior-authorization\n      description: Submit a prior authorization request for a scheduled procedure\n      hints:\n        readOnly: false\n        openWorld: true\n      call: availity-auth.create-service-review\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: track-authorization-status\n      description: Track the status of a submitted prior authorization request\n      hints:\n        readOnly: true\n        openWorld: true\n      call: availity-auth.get-service-review\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/availity/refs/heads/main/capabilities/availity-revenue-cycle-management.yaml
 tags:
 - Availity
 - Revenue Cycle

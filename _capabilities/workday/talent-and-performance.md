@@ -29,60 +29,70 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- recruiting
-- get a candidate by id
-- get talent profile for a worker
-- list all job applications
-- request feedback for a worker
-- list feedback badges
-- recruiting list requisitions
-- list all job postings
-- get goals for a worker
-- list job requisitions
-- recruiting list postings
-- list all prospects
-- talent management
-- job requisitions
-- candidates
-- performance give badge
-- performance list reviews
-- succession plans
-- list all candidates
-- workday
-- list reviews
-- list mentorships
-- talent get skills
 - list requisitions
 - recruiting get application
-- talent get profile
-- list performance reviews
 - enterprise software
+- recruiting list postings
+- list all prospects
 - recruiting list prospects
-- financial management
-- recruiting get requisition
-- talent list mentorships
-- get certifications for a worker
-- cloud computing
-- recruiting list candidates
-- saas
-- performance list badges
-- performance reviews
 - list candidates
-- get skills for a worker
-- talent list succession plans
-- list succession plans
-- list all job requisitions
-- talent get certifications
 - performance
-- performance get goals
-- hcm
-- give a feedback badge to a worker
-- performance request feedback
-- get a job application by id
-- get a job requisition by id
+- succession plans
+- list all job postings
+- get certifications for a worker
+- talent list succession plans
+- list all candidates
+- performance give badge
+- get goals for a worker
+- workday
+- recruiting list candidates
 - recruiting get candidate
+- get skills for a worker
+- job requisitions
+- list succession plans
+- talent get certifications
+- performance list reviews
+- performance reviews
+- talent get profile
+- list mentorships
+- list performance reviews
+- performance list badges
+- request feedback for a worker
+- get talent profile for a worker
+- give a feedback badge to a worker
+- cloud computing
+- recruiting get requisition
+- get a job requisition by id
+- get a candidate by id
+- candidates
+- talent get skills
 - recruiting list applications
+- recruiting
+- financial management
+- list reviews
+- list job requisitions
+- list feedback badges
+- saas
+- talent management
+- talent list mentorships
+- performance request feedback
+- hcm
+- performance get goals
+- list all job applications
+- recruiting list requisitions
+- get a job application by id
+- list all job requisitions
 slug: talent-and-performance
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Talent and Performance\"\n  description: \"Unified talent and performance management combining Recruiting, Talent, and Performance Management APIs for HR and talent leads to manage hiring pipelines, career development, and performance evaluations.\"\n  tags:\n    - Workday\n    - Talent Management\n    - Performance\n    - Recruiting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-recruiting\n      location: ./shared/recruiting.yaml\n    - import: workday-talent\n      location: ./shared/talent.yaml\n    - import: workday-performance\n      location: ./shared/performance-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: talent-performance-api\n      description: \"Unified REST API for talent and performance management.\"\n      resources:\n \
+  \       - path: /v1/job-requisitions\n          name: requisitions\n          description: \"Job requisitions\"\n          operations:\n            - method: GET\n              name: list-requisitions\n              description: \"List job requisitions\"\n              call: \"workday-recruiting.get-job-requisitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/candidates\n          name: candidates\n          description: \"Candidates\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List candidates\"\n              call: \"workday-recruiting.get-candidates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/performance-reviews\n          name: reviews\n          description: \"Performance reviews\"\n          operations:\n            - method: GET\n              name: list-reviews\n\
+  \              description: \"List performance reviews\"\n              call: \"workday-performance.get-performance-reviews\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/succession-plans\n          name: succession\n          description: \"Succession plans\"\n          operations:\n            - method: GET\n              name: list-succession-plans\n              description: \"List succession plans\"\n              call: \"workday-talent.get-succession-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: talent-performance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted talent and performance management.\"\n      tools:\n        - name: recruiting-list-requisitions\n          description: \"List all job requisitions\"\n          hints:\n            readOnly: true\n      \
+  \    call: \"workday-recruiting.get-job-requisitions\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-get-requisition\n          description: \"Get a job requisition by ID\"\n          hints:\n            readOnly: true\n          call: \"workday-recruiting.get-job-requisition-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-list-postings\n          description: \"List all job postings\"\n          hints:\n            readOnly: true\n          call: \"workday-recruiting.get-job-postings\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-list-candidates\n          description: \"List all candidates\"\n          hints:\n         \
+  \   readOnly: true\n          call: \"workday-recruiting.get-candidates\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-get-candidate\n          description: \"Get a candidate by ID\"\n          hints:\n            readOnly: true\n          call: \"workday-recruiting.get-candidate-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-list-applications\n          description: \"List all job applications\"\n          hints:\n            readOnly: true\n          call: \"workday-recruiting.get-job-applications\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-get-application\n          description: \"Get a job application by ID\"\n  \
+  \        hints:\n            readOnly: true\n          call: \"workday-recruiting.get-job-application-by-id\"\n          with:\n            ID: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: recruiting-list-prospects\n          description: \"List all prospects\"\n          hints:\n            readOnly: true\n          call: \"workday-recruiting.get-prospects\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: talent-get-profile\n          description: \"Get talent profile for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-talent.get-talent-profile\"\n          with:\n            worker: \"tools.worker\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: talent-list-mentorships\n          description: \"List mentorships\"\
+  \n          hints:\n            readOnly: true\n          call: \"workday-talent.get-mentorships\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: talent-get-skills\n          description: \"Get skills for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-talent.get-worker-skills\"\n          with:\n            worker: \"tools.worker\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: talent-get-certifications\n          description: \"Get certifications for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-talent.get-worker-certifications\"\n          with:\n            worker: \"tools.worker\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: talent-list-succession-plans\n          description: \"List succession plans\"\n          hints:\n            readOnly:\
+  \ true\n          call: \"workday-talent.get-succession-plans\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: performance-get-goals\n          description: \"Get goals for a worker\"\n          hints:\n            readOnly: true\n          call: \"workday-performance.get-worker-goals\"\n          with:\n            worker: \"tools.worker\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: performance-list-reviews\n          description: \"List performance reviews\"\n          hints:\n            readOnly: true\n          call: \"workday-performance.get-performance-reviews\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: performance-list-badges\n          description: \"List feedback badges\"\n          hints:\n            readOnly: true\n          call: \"workday-performance.get-feedback-badges\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: performance-give-badge\n          description: \"Give a feedback badge to a worker\"\n          hints:\n            readOnly: false\n          call: \"workday-performance.give-feedback-badge\"\n          with:\n            worker: \"tools.worker\"\n            badge: \"tools.badge\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: performance-request-feedback\n          description: \"Request feedback for a worker\"\n          hints:\n            readOnly: false\n          call: \"workday-performance.request-feedback\"\n          with:\n            worker: \"tools.worker\"\n            message: \"tools.message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/capabilities/talent-and-performance.yaml
 tags:
 - Workday
 - Talent Management

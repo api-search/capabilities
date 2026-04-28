@@ -23,36 +23,42 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- developer portal
-- delete catalog entity
-- list catalog locations
-- software catalog
-- delete an entity from the software catalog
-- register catalog location
-- register a new catalog location
-- software catalog entities
-- central inventory of all software components, apis, and resources
-- list all catalog entities
 - list all registered catalog locations
-- list locations
+- catalog locations
+- Platform Engineer
+- delete catalog entity
 - internal developer platform
 - get a specific catalog entity by kind, namespace, and name
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- backstage
-- get catalog entity
-- Platform Engineer
-- engineer building and maintaining the internal developer platform and backstage configuration
-- list catalog entities
-- Developer
-- list entities
-- catalog locations
 - open source
+- list catalog entities
+- backstage
+- register a new catalog location
 - scaffolding, documentation, and search to accelerate development
 - create location
+- Developer
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- software catalog
+- delete an entity from the software catalog
+- list locations
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
+- list all catalog entities
+- software catalog entities
+- developer portal
+- register catalog location
+- get catalog entity
+- engineer building and maintaining the internal developer platform and backstage configuration
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- list entities
+- list catalog locations
+- central inventory of all software components, apis, and resources
 slug: developer-portal
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Backstage Developer Portal\"\n  description: >-\n    Unified developer portal workflow combining the Backstage Software Catalog, Scaffolder,\n    TechDocs, Search, Auth, and Permissions APIs. Serves platform engineers and developers\n    managing internal developer platforms.\n  tags:\n    - Backstage\n    - Developer Portal\n    - Internal Developer Platform\n    - Software Catalog\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BACKSTAGE_TOKEN: BACKSTAGE_TOKEN\n\ncapability:\n  consumes:\n    - import: backstage-catalog\n      location: ./shared/catalog-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: backstage-portal-api\n      description: \"Unified REST API for Backstage developer portal management.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description: Software catalog entities\n          operations:\n\
+  \            - method: GET\n              name: list-entities\n              description: List all catalog entities\n              call: \"backstage-catalog.list-entities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/locations\n          name: locations\n          description: Catalog locations\n          operations:\n            - method: GET\n              name: list-locations\n              description: List catalog locations\n              call: \"backstage-catalog.list-locations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-location\n              description: Register a new catalog location\n              call: \"backstage-catalog.create-location\"\n              with:\n                location_type: \"rest.location_type\"\n                location_target: \"rest.location_target\"\n         \
+  \     outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: backstage-portal-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Backstage developer portal management.\"\n      tools:\n        - name: list-catalog-entities\n          description: List all entities in the Backstage software catalog including components, APIs, resources, systems, and users\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"backstage-catalog.list-entities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-catalog-entity\n          description: Get a specific catalog entity by kind, namespace, and name\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"backstage-catalog.get-entity-by-ref\"\n          with:\n            kind: \"tools.kind\"\n         \
+  \   namespace: \"tools.namespace\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: register-catalog-location\n          description: Register a new catalog location (GitHub repo URL, YAML file) to ingest entities\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"backstage-catalog.create-location\"\n          with:\n            location_type: \"tools.location_type\"\n            location_target: \"tools.location_target\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-catalog-locations\n          description: List all registered catalog locations\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"backstage-catalog.list-locations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-catalog-entity\n\
+  \          description: Delete an entity from the software catalog\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"backstage-catalog.delete-entity\"\n          with:\n            uid: \"tools.uid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/backstage/refs/heads/main/capabilities/developer-portal.yaml
 tags:
 - Backstage
 - Developer Portal

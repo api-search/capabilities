@@ -58,52 +58,62 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- update an existing comment
-- subscribe to a youtube channel
-- unsubscribe
-- post a new comment
-- google
-- update a comment
-- subscribe to a channel
+- update comment
+- manage individual comments
 - set moderation status on comments
-- moderation
-- subscriptions
-- list comments
+- streaming
+- list youtube channels
+- manage channel information
 - create a new comment thread
-- community
-- manage channel subscriptions
-- list subscriptions
+- unsubscribe
+- moderation
+- update channel
+- video
+- subscribe to channel
 - social
 - update comment thread
-- manage channel information
-- set moderation status
-- list channels
-- subscribe
-- video
-- unsubscribe from a channel
-- manage comment threads
-- list youtube channels
-- create comment
-- delete a comment
-- youtube
-- list comment threads
-- comments
-- unsubscribe from channel
-- manage individual comments
-- update channel settings
-- delete comment
-- unsubscribe from a youtube channel
-- update channel
-- media
 - list channel subscriptions
-- update a comment thread
-- videos
-- update comment
-- list comments on a video or channel
+- list channels
+- subscribe to a youtube channel
 - create comment thread
-- streaming
-- subscribe to channel
+- list comments on a video or channel
+- unsubscribe from a youtube channel
+- list comments
+- update a comment thread
+- subscribe to a channel
+- videos
+- post a new comment
+- delete comment
+- unsubscribe from channel
+- unsubscribe from a channel
+- update channel settings
+- youtube
+- update an existing comment
+- google
+- community
+- subscribe
+- create comment
+- manage comment threads
+- set moderation status
+- list comment threads
+- manage channel subscriptions
+- list subscriptions
+- comments
+- subscriptions
+- update a comment
+- delete a comment
+- media
 slug: community-engagement
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Community Engagement\"\n  description: \"Workflow for managing community interactions including comments, comment threads, subscriptions, and channel management. Designed for community managers, social media teams, and content moderators.\"\n  tags:\n    - YouTube\n    - Community\n    - Comments\n    - Subscriptions\n    - Moderation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_API_KEY: YOUTUBE_API_KEY\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-data\n      location: ./shared/data-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: community-engagement-api\n      description: \"Unified REST API for YouTube community engagement workflows.\"\n      resources:\n        - path: /v1/comments\n          name: comments\n          description: \"Manage individual comments\"\n       \
+  \   operations:\n            - method: GET\n              name: list-comments\n              description: \"List comments\"\n              call: \"youtube-data.list-comments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment\n              description: \"Post a new comment\"\n              call: \"youtube-data.insert-comment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-comment\n              description: \"Update a comment\"\n              call: \"youtube-data.update-comment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-comment\n              description: \"Delete a comment\"\n              call: \"youtube-data.delete-comment\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/comment-threads\n          name: comment-threads\n          description: \"Manage comment threads\"\n          operations:\n            - method: GET\n              name: list-comment-threads\n              description: \"List comment threads\"\n              call: \"youtube-data.list-comment-threads\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment-thread\n              description: \"Create a new comment thread\"\n              call: \"youtube-data.insert-comment-thread\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-comment-thread\n              description: \"Update a comment thread\"\n              call: \"youtube-data.update-comment-thread\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Manage channel subscriptions\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List subscriptions\"\n              call: \"youtube-data.list-subscriptions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: subscribe\n              description: \"Subscribe to a channel\"\n              call: \"youtube-data.insert-subscription\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: unsubscribe\n              description: \"Unsubscribe from a channel\"\n              call: \"youtube-data.delete-subscription\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/channels\n          name: channels\n          description: \"Manage channel information\"\n          operations:\n            - method: GET\n              name: list-channels\n              description: \"List channels\"\n              call: \"youtube-data.list-channels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-channel\n              description: \"Update channel settings\"\n              call: \"youtube-data.update-channel\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: community-engagement-mcp\n      transport: http\n      description: \"MCP server for AI-assisted YouTube community engagement.\"\n      tools:\n        - name: list-comments\n          description: \"List comments on a video or channel\"\n    \
+  \      hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-comments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-comment\n          description: \"Post a new comment\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-comment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-comment\n          description: \"Update an existing comment\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.update-comment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-comment\n          description: \"Delete a comment\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call:\
+  \ \"youtube-data.delete-comment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: set-moderation-status\n          description: \"Set moderation status on comments\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.set-comment-moderation-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-comment-threads\n          description: \"List comment threads\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-comment-threads\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-comment-thread\n          description: \"Create a new comment thread\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-comment-thread\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-subscriptions\n          description: \"List channel subscriptions\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-subscriptions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: subscribe-to-channel\n          description: \"Subscribe to a YouTube channel\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"youtube-data.insert-subscription\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: unsubscribe-from-channel\n          description: \"Unsubscribe from a YouTube channel\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"youtube-data.delete-subscription\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: list-channels\n          description: \"List YouTube channels\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"youtube-data.list-channels\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-channel\n          description: \"Update channel settings\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"youtube-data.update-channel\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/youtube/refs/heads/main/capabilities/community-engagement.yaml
 tags:
 - YouTube
 - Community

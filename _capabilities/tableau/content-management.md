@@ -43,52 +43,63 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- user operations
-- delete workbook
-- get details of a specific site
-- business intelligence
-- delete site
-- update site
-- list workbooks on a site
-- list sites
-- add a user to a site
-- delete a data source
-- update a site
-- content management
-- delete a workbook
-- get data source
-- list all sites
-- administration
-- workbook operations
-- site management
-- list data sources
-- sign out
-- get details of a specific data source
-- create site
-- get site details
-- tableau
-- get workbook
-- list users
-- single site operations
-- list data sources on a site
-- sign in to tableau server or cloud
-- analytics
-- update site configuration
-- list workbooks
-- sign out from tableau
-- sign in
-- data source operations
-- dashboards
 - get site
-- list users on a site
-- create a new site
-- add user
-- delete a site
-- data visualization
-- get details of a specific workbook
-- delete data source
+- update site configuration
 - list all sites on the server
+- get data source
+- list workbooks on a site
+- data visualization
+- delete a site
+- update site
+- delete workbook
+- analytics
+- get details of a specific workbook
+- delete a workbook
+- business intelligence
+- delete a data source
+- dashboards
+- workbook operations
+- sign in
+- get site details
+- list data sources on a site
+- data source operations
+- add a user to a site
+- list data sources
+- tableau
+- list users
+- sign out
+- single site operations
+- list users on a site
+- get details of a specific site
+- delete site
+- delete data source
+- list sites
+- add user
+- create site
+- administration
+- site management
+- get workbook
+- get details of a specific data source
+- list workbooks
+- content management
+- sign out from tableau
+- user operations
+- list all sites
+- create a new site
+- update a site
+- sign in to tableau server or cloud
 slug: content-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Tableau Content Management\"\n  description: \"Workflow for managing Tableau content including workbooks, data sources, views, sites, users, and permissions. Used by Tableau administrators and content managers.\"\n  tags:\n    - Tableau\n    - Content Management\n    - Analytics\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      TABLEAU_AUTH_TOKEN: TABLEAU_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: tableau-rest\n      location: ./shared/tableau-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: tableau-content-api\n      description: \"Unified REST API for Tableau content management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          description: \"Site management\"\n          operations:\n            - method: GET\n              name: list-sites\n              description: \"List all sites\"\
+  \n              call: \"tableau-rest.query-sites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-site\n              description: \"Create a new site\"\n              call: \"tableau-rest.create-site\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sites/{siteId}\n          name: site\n          description: \"Single site operations\"\n          operations:\n            - method: GET\n              name: get-site\n              description: \"Get site details\"\n              call: \"tableau-rest.query-site\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-site\n              description: \"Update a site\"\n              call: \"tableau-rest.update-site\"\
+  \n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-site\n              description: \"Delete a site\"\n              call: \"tableau-rest.delete-site\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workbooks\n          name: workbooks\n          description: \"Workbook operations\"\n          operations:\n            - method: GET\n              name: list-workbooks\n              description: \"List workbooks on a site\"\n              call: \"tableau-rest.query-workbooks\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/data-sources\n          name:\
+  \ data-sources\n          description: \"Data source operations\"\n          operations:\n            - method: GET\n              name: list-data-sources\n              description: \"List data sources on a site\"\n              call: \"tableau-rest.query-data-sources\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User operations\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users on a site\"\n              call: \"tableau-rest.get-users\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: tableau-content-mcp\n      transport: http\n      description: \"MCP server\
+  \ for AI-assisted Tableau content management.\"\n      tools:\n        - name: sign-in\n          description: \"Sign in to Tableau Server or Cloud\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tableau-rest.sign-in\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: sign-out\n          description: \"Sign out from Tableau\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"tableau-rest.sign-out\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-sites\n          description: \"List all sites on the server\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.query-sites\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-site\n          description: \"Create a\
+  \ new site\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tableau-rest.create-site\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-site\n          description: \"Get details of a specific site\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.query-site\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-site\n          description: \"Update site configuration\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"tableau-rest.update-site\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-site\n          description: \"Delete a site\"\n    \
+  \      hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tableau-rest.delete-site\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-workbooks\n          description: \"List workbooks on a site\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.query-workbooks\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workbook\n          description: \"Get details of a specific workbook\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.query-workbook\"\n          with:\n            siteId: \"tools.siteId\"\n            workbookId: \"tools.workbookId\"\n          outputParameters:\n   \
+  \         - type: object\n              mapping: \"$.\"\n        - name: delete-workbook\n          description: \"Delete a workbook\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tableau-rest.delete-workbook\"\n          with:\n            siteId: \"tools.siteId\"\n            workbookId: \"tools.workbookId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-data-sources\n          description: \"List data sources on a site\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.query-data-sources\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-data-source\n          description: \"Get details of a specific data source\"\n          hints:\n            readOnly: true\n        \
+  \    idempotent: true\n          call: \"tableau-rest.query-data-source\"\n          with:\n            siteId: \"tools.siteId\"\n            datasourceId: \"tools.datasourceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-data-source\n          description: \"Delete a data source\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tableau-rest.delete-data-source\"\n          with:\n            siteId: \"tools.siteId\"\n            datasourceId: \"tools.datasourceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List users on a site\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"tableau-rest.get-users\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n           \
+  \ - type: object\n              mapping: \"$.\"\n        - name: add-user\n          description: \"Add a user to a site\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"tableau-rest.add-user\"\n          with:\n            siteId: \"tools.siteId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/tableau/refs/heads/main/capabilities/content-management.yaml
 tags:
 - Tableau
 - Content Management

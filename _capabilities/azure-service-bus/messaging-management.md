@@ -27,34 +27,41 @@ personas: []
 provider_name: Azure Service Bus
 provider_slug: azure-service-bus
 search_terms:
+- service bus
+- cloud infrastructure
+- get details of a specific service bus namespace
+- delete namespace
+- create or update namespace
+- service bus namespaces
+- queues
+- pub/sub topics
+- enterprise
+- message queues
 - azure
 - list all namespaces
-- get namespace details
-- message queues
-- messaging
-- list topics
-- service bus namespaces
-- list azure service bus namespaces in a subscription
-- service bus
-- pub/sub
-- list queues
-- get namespace
-- create or update a service bus namespace
-- delete a service bus namespace
-- delete namespace
-- get details of a specific service bus namespace
-- pub/sub topics
-- cloud
-- queues
-- message broker
-- namespace details
-- create or update namespace
-- list namespaces
-- enterprise
 - list topics within a service bus namespace
+- list topics
+- get namespace details
+- list azure service bus namespaces in a subscription
+- pub/sub
+- message broker
+- list namespaces
+- create or update a service bus namespace
+- list queues
+- cloud
 - list queues within a service bus namespace
-- cloud infrastructure
+- messaging
+- namespace details
+- delete a service bus namespace
+- get namespace
 slug: messaging-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Service Bus Messaging Management\"\n  description: \"Unified workflow for managing Azure Service Bus messaging infrastructure including namespaces, queues, topics, and subscriptions. Designed for cloud architects and platform engineers managing enterprise messaging.\"\n  tags:\n    - Azure\n    - Service Bus\n    - Messaging\n    - Cloud Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_BEARER_TOKEN: AZURE_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: service-bus\n      location: ./shared/service-bus.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: messaging-api\n      description: \"Unified REST API for Azure Service Bus messaging management.\"\n      resources:\n        - path: /v1/namespaces\n          name: namespaces\n          description: \"Service Bus namespaces\"\n          operations:\n            - method:\
+  \ GET\n              name: list-namespaces\n              description: \"List all namespaces\"\n              call: \"service-bus.list-namespaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/namespaces/{namespaceName}\n          name: namespace-details\n          description: \"Namespace details\"\n          operations:\n            - method: GET\n              name: get-namespace\n              description: \"Get namespace details\"\n              call: \"service-bus.get-namespace\"\n              with:\n                namespaceName: \"rest.namespaceName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Message queues\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List queues\"\n              call: \"service-bus.list-queues\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/topics\n          name: topics\n          description: \"Pub/sub topics\"\n          operations:\n            - method: GET\n              name: list-topics\n              description: \"List topics\"\n              call: \"service-bus.list-topics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: messaging-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Service Bus messaging management.\"\n      tools:\n        - name: list-namespaces\n          description: \"List Azure Service Bus namespaces in a subscription\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"service-bus.list-namespaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n    \
+  \    - name: get-namespace\n          description: \"Get details of a specific Service Bus namespace\"\n          hints:\n            readOnly: true\n          call: \"service-bus.get-namespace\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            namespaceName: \"tools.namespaceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-or-update-namespace\n          description: \"Create or update a Service Bus namespace\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"service-bus.create-or-update-namespace\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            namespaceName: \"tools.namespaceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ delete-namespace\n          description: \"Delete a Service Bus namespace\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"service-bus.delete-namespace\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            namespaceName: \"tools.namespaceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-queues\n          description: \"List queues within a Service Bus namespace\"\n          hints:\n            readOnly: true\n          call: \"service-bus.list-queues\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            namespaceName: \"tools.namespaceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-topics\n          description: \"List\
+  \ topics within a Service Bus namespace\"\n          hints:\n            readOnly: true\n          call: \"service-bus.list-topics\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            namespaceName: \"tools.namespaceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/azure-service-bus/refs/heads/main/capabilities/messaging-management.yaml
 tags:
 - Azure
 - Service Bus

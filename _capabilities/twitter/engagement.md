@@ -65,92 +65,106 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- searchSpaces
-- direct messages
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- getSpacesPosts
-- handles customer inquiries and issues via direct messages and replies.
-- builds and maintains communities through engagement and moderation.
-- microblogging
-- get multiple spaces by ids
-- send a direct message to an existing conversation
-- unfollow a user
-- extracts insights from social data through search, streaming, and analytics.
-- getBlockedUsers
-- engagement specialist
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- getSpacesByIds
-- retrieve multiple spaces by their ids
-- produces original posts, threads, and media content on x.
-- user relationships, direct messaging, spaces, and community interaction.
-- createDirectMessagesByConversationId
-- createDirectMessagesByParticipantId
-- send a direct message to a user by participant id
-- streaming
-- post creation, editing, media management, and content analytics.
-- data engineer
-- get dm events for a specific conversation
-- manages brand presence, campaigns, and content strategy.
-- follow a user
-- get posts shared in a space
-- real-time data
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- block a user
-- ensures data handling meets regulatory and platform compliance requirements.
-- manage following
-- get recent dm events for the authenticated user
-- platform operations
-- community manager
-- createDirectMessagesConversation
-- manages user relationships, follows, and interaction strategies.
-- getDirectMessagesEvents
-- manage user relationships, direct messages, spaces, and community interactions.
-- social monitoring, search, trending topics, and sentiment analysis.
-- x api
-- unblock a user
-- community
-- customer support
-- send dm to a conversation
-- data analyst
-- compliance officer
-- search for spaces by keyword
-- getMutedUsers
-- advertising
-- creates, schedules, and analyzes social media content across platforms.
-- create dm conversations
-- getDirectMessagesEventsByConversationId
-- spaces
-- unmuteUser
-- monitor conversations, search posts, analyze trends, and extract insights.
-- social media
-- conducts academic or market research using x data archives.
-- data compliance, deletion tracking, and regulatory event monitoring.
-- get users blocked by the authenticated user
-- content
-- brand manager
-- create a new group dm conversation
-- manage mutes
-- unmute a user
-- researcher
-- monitors brand mentions, sentiment, and competitive landscape.
-- mute a user
-- manage blocks
-- muteUser
-- send a dm to an existing conversation
-- social media manager
-- get recent dm events
-- get dm events
-- blockUsers
-- content creator
-- get users muted by the authenticated user
-- engagement
 - search spaces
+- post creation, editing, media management, and content analytics.
+- content creator
+- get users blocked by the authenticated user
+- unmute a user
+- content
+- retrieve multiple spaces by their ids
 - unblockUsers
 - unfollowUser
+- social monitoring, search, trending topics, and sentiment analysis.
+- getDirectMessagesEvents
+- social media manager
+- researcher
+- get users muted by the authenticated user
+- monitors brand mentions, sentiment, and competitive landscape.
+- data analyst
+- spaces
+- create dm conversations
+- community
+- data compliance, deletion tracking, and regulatory event monitoring.
+- platform operations
+- manages brand presence, campaigns, and content strategy.
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- real-time data
+- manage mutes
+- getBlockedUsers
+- unblock a user
+- ensures data handling meets regulatory and platform compliance requirements.
+- getMutedUsers
+- advertising
+- createDirectMessagesByParticipantId
+- get dm events
+- compliance officer
+- mute a user
+- manage user relationships, direct messages, spaces, and community interactions.
+- getSpacesPosts
+- manage compliance jobs, data streams, and real-time compliance monitoring.
 - followUser
+- manages user relationships, follows, and interaction strategies.
+- handles customer inquiries and issues via direct messages and replies.
+- community manager
+- monitor conversations, search posts, analyze trends, and extract insights.
+- block a user
+- get dm events for a specific conversation
+- streaming
+- muteUser
+- user relationships, direct messaging, spaces, and community interaction.
+- get multiple spaces by ids
+- conducts academic or market research using x data archives.
+- get posts shared in a space
+- getSpacesByIds
 - marketing team
+- send a direct message to an existing conversation
+- send dm to a conversation
+- unmuteUser
+- produces original posts, threads, and media content on x.
+- get recent dm events for the authenticated user
+- x api
+- microblogging
+- send a direct message to a user by participant id
+- manage blocks
+- get recent dm events
+- unfollow a user
+- create a new group dm conversation
+- createDirectMessagesByConversationId
+- extracts insights from social data through search, streaming, and analytics.
+- getDirectMessagesEventsByConversationId
+- brand manager
+- builds and maintains communities through engagement and moderation.
 - retrieve spaces by ids
+- follow a user
+- customer support
+- blockUsers
+- direct messages
+- manage following
+- engagement specialist
+- engagement
+- data engineer
+- search for spaces by keyword
+- social media
+- searchSpaces
+- send a dm to an existing conversation
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- creates, schedules, and analyzes social media content across platforms.
+- createDirectMessagesConversation
 slug: engagement
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Engagement and Community Management\"\n  description: \"Unified workflow for managing user relationships, direct messages, spaces, and community interactions on X. Used by community managers, customer support teams, and engagement specialists.\"\n  tags:\n    - X API\n    - Engagement\n    - Community\n    - Direct Messages\n    - Spaces\n  personas:\n    - community managers\n    - customer support\n    - engagement specialists\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-users\n      location: \"./shared/users.yaml\"\n    - import: x-direct-messages\n      location: \"./shared/direct-messages.yaml\"\n    - import: x-spaces\n      location: \"./shared/spaces.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: x-engagement-api\n      resources:\n        - path: /v1/engagement/users/{id}/following\n\
+  \          name: following\n          description: \"Manage following\"\n          operations:\n            - method: POST\n              name: followUser\n              description: \"Follow a user\"\n              call: \"x-engagement-api.followUser\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/users/{source_user_id}/following/{target_user_id}\n          name: unfollow\n          description: \"Unfollow a user\"\n          operations:\n            - method: DELETE\n              name: unfollowUser\n              description: \"Unfollow a user\"\n              call: \"x-engagement-api.unfollowUser\"\n              with:\n                source_user_id: \"rest.source_user_id\"\n                target_user_id: \"rest.target_user_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\
+  \ /v1/engagement/users/{id}/blocking\n          name: blocking\n          description: \"Manage blocks\"\n          operations:\n            - method: POST\n              name: blockUsers\n              description: \"Block a user\"\n              call: \"x-engagement-api.blockUsers\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/users/{source_user_id}/blocking/{target_user_id}\n          name: unblock\n          description: \"Unblock a user\"\n          operations:\n            - method: DELETE\n              name: unblockUsers\n              description: \"Unblock a user\"\n              call: \"x-engagement-api.unblockUsers\"\n              with:\n                source_user_id: \"rest.source_user_id\"\n                target_user_id: \"rest.target_user_id\"\n              outputParameters:\n                - type: object\n                  mapping:\
+  \ \"$.\"\n        - path: /v1/engagement/users/{id}/muting\n          name: muting\n          description: \"Manage mutes\"\n          operations:\n            - method: POST\n              name: muteUser\n              description: \"Mute a user\"\n              call: \"x-engagement-api.muteUser\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/users/{source_user_id}/muting/{target_user_id}\n          name: unmute\n          description: \"Unmute a user\"\n          operations:\n            - method: DELETE\n              name: unmuteUser\n              description: \"Unmute a user\"\n              call: \"x-engagement-api.unmuteUser\"\n              with:\n                source_user_id: \"rest.source_user_id\"\n                target_user_id: \"rest.target_user_id\"\n              outputParameters:\n                - type: object\n               \
+  \   mapping: \"$.\"\n        - path: /v1/engagement/dm/conversations\n          name: dm-conversations\n          description: \"Create DM conversations\"\n          operations:\n            - method: POST\n              name: createDirectMessagesConversation\n              description: \"Create a new group DM conversation\"\n              call: \"x-engagement-api.createDirectMessagesConversation\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/dm/conversations/{dm_conversation_id}/messages\n          name: dm-by-conversation\n          description: \"Send DM to a conversation\"\n          operations:\n            - method: POST\n              name: createDirectMessagesByConversationId\n              description: \"Send a DM to an existing conversation\"\n              call: \"x-engagement-api.createDirectMessagesByConversationId\"\n              with:\n                dm_conversation_id: \"rest.dm_conversation_id\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/dm/events\n          name: dm-events\n          description: \"Get DM events\"\n          operations:\n            - method: GET\n              name: getDirectMessagesEvents\n              description: \"Get recent DM events\"\n              call: \"x-engagement-api.getDirectMessagesEvents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/spaces/search\n          name: spaces-search\n          description: \"Search Spaces\"\n          operations:\n            - method: GET\n              name: searchSpaces\n              description: \"Search for Spaces by keyword\"\n              call: \"x-engagement-api.searchSpaces\"\n              with:\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n        - path: /v1/engagement/spaces\n          name: spaces\n          description: \"Retrieve Spaces by IDs\"\n          operations:\n            - method: GET\n              name: getSpacesByIds\n              description: \"Get multiple Spaces by IDs\"\n              call: \"x-engagement-api.getSpacesByIds\"\n              with:\n                ids: \"rest.ids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9082\n      namespace: x-engagement-mcp\n      transport: http\n      tools:\n        - name: followUser\n          description: \"Follow a user\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.followUser\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: unfollowUser\n          description: \"Unfollow a user\"\n      \
+  \    hints:\n            readOnly: false\n            destructive: true\n          call: \"x-engagement-mcp.unfollowUser\"\n          with:\n            source_user_id: \"tools.source_user_id\"\n            target_user_id: \"tools.target_user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: blockUsers\n          description: \"Block a user\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.blockUsers\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: unblockUsers\n          description: \"Unblock a user\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"x-engagement-mcp.unblockUsers\"\n          with:\n            source_user_id: \"tools.source_user_id\"\n            target_user_id: \"tools.target_user_id\"\n    \
+  \      outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getBlockedUsers\n          description: \"Get users blocked by the authenticated user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.getBlockedUsers\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: muteUser\n          description: \"Mute a user\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.muteUser\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: unmuteUser\n          description: \"Unmute a user\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"x-engagement-mcp.unmuteUser\"\n          with:\n    \
+  \        source_user_id: \"tools.source_user_id\"\n            target_user_id: \"tools.target_user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getMutedUsers\n          description: \"Get users muted by the authenticated user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.getMutedUsers\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createDirectMessagesConversation\n          description: \"Create a new group DM conversation\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.createDirectMessagesConversation\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createDirectMessagesByParticipantId\n          description: \"Send a direct message\
+  \ to a user by participant ID\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.createDirectMessagesByParticipantId\"\n          with:\n            participant_id: \"tools.participant_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createDirectMessagesByConversationId\n          description: \"Send a direct message to an existing conversation\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-engagement-mcp.createDirectMessagesByConversationId\"\n          with:\n            dm_conversation_id: \"tools.dm_conversation_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getDirectMessagesEvents\n          description: \"Get recent DM events for the authenticated user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call:\
+  \ \"x-engagement-mcp.getDirectMessagesEvents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getDirectMessagesEventsByConversationId\n          description: \"Get DM events for a specific conversation\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.getDirectMessagesEventsByConversationId\"\n          with:\n            dm_conversation_id: \"tools.dm_conversation_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: searchSpaces\n          description: \"Search for Spaces by keyword\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.searchSpaces\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getSpacesByIds\n          description: \"Retrieve\
+  \ multiple Spaces by their IDs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.getSpacesByIds\"\n          with:\n            ids: \"tools.ids\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getSpacesPosts\n          description: \"Get posts shared in a Space\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-engagement-mcp.getSpacesPosts\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/twitter/refs/heads/main/capabilities/engagement.yaml
 tags:
 - X API
 - Engagement

@@ -41,43 +41,51 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- send notification
-- list notifications
-- peoplesoft
-- process a chatbot intent fulfillment request.
-- branding themes
-- notification management
-- peopletools platform services.
-- portal
-- notifications
-- list themes
-- chatbot
-- retrieve portal content items.
-- retrieve available chatbot intents.
-- chatbot intents
-- campus solutions
-- content management
-- send a notification via email, text, or in-app channels.
-- create content
-- communications
-- campus solutions.
 - human capital management.
+- create a new portal content item.
+- retrieve portal content items.
 - enterprise software
+- retrieve notifications for the current user.
+- create content
+- financial and supply chain management.
+- peoplesoft
+- portal
+- send a notification via email, text, or in-app channels.
+- list themes
+- chatbot intents
+- supply chain management
+- list intents
+- list content
+- crm
+- notification management
+- portal content items
+- chatbot
+- notifications
+- list notifications
+- communications
+- retrieve available branding themes.
 - fulfill intent
 - financial management
-- retrieve available branding themes.
-- list content
-- retrieve notifications for the current user.
-- supply chain management
+- process a chatbot intent fulfillment request.
+- peopletools platform services.
+- send notification
+- retrieve available chatbot intents.
 - chatbot intent fulfillments
-- list intents
-- crm
+- content management
 - erp
 - hcm
-- financial and supply chain management.
-- create a new portal content item.
-- portal content items
+- campus solutions.
+- campus solutions
+- branding themes
 slug: portal-and-communications
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Portal And Communications\"\n  description: \"Unified workflow for content managers combining portal content management, branding, chatbot integration, and notification services across PeopleSoft Interaction Hub, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - Portal\n    - Content Management\n    - Communications\n    - Notifications\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: interaction-hub\n      location: ./shared/interaction-hub.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: portal-api\n\
+  \      description: \"Unified REST API for PeopleSoft portal and communications workflows.\"\n      resources:\n        - path: /v1/content\n          name: content\n          description: \"Portal content items\"\n          operations:\n            - method: GET\n              name: list-content\n              description: \"Retrieve portal content items.\"\n              call: \"interaction-hub.list-content\"\n              with:\n                category: \"rest.category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-content\n              description: \"Create a new portal content item.\"\n              call: \"interaction-hub.create-content\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/themes\n          name: themes\n          description: \"Branding themes\"\n          operations:\n            -\
+  \ method: GET\n              name: list-themes\n              description: \"Retrieve available branding themes.\"\n              call: \"interaction-hub.list-themes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/notifications\n          name: notifications\n          description: \"Notification management\"\n          operations:\n            - method: GET\n              name: list-notifications\n              description: \"Retrieve notifications for the current user.\"\n              call: \"notification-framework.list-notifications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-notification\n              description: \"Send a notification via email, text, or in-app channels.\"\n              call: \"notification-framework.send-notification\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/intents\n          name: intents\n          description: \"Chatbot intents\"\n          operations:\n            - method: GET\n              name: list-intents\n              description: \"Retrieve available chatbot intents.\"\n              call: \"chatbot.list-intents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/intent-fulfillments\n          name: fulfillments\n          description: \"Chatbot intent fulfillments\"\n          operations:\n            - method: POST\n              name: fulfill-intent\n              description: \"Process a chatbot intent fulfillment request.\"\n              call: \"chatbot.fulfill-intent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9097\n      namespace: portal-mcp\n      transport: http\n      description: \"MCP server\
+  \ for AI-assisted PeopleSoft portal and communications workflows.\"\n      tools:\n        - name: list-content\n          description: \"Retrieve portal content items.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"interaction-hub.list-content\"\n          with:\n            category: \"tools.category\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-content\n          description: \"Create a new portal content item.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"interaction-hub.create-content\"\n          with:\n            title: \"tools.title\"\n            body: \"tools.body\"\n            category: \"tools.category\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-themes\n          description: \"Retrieve available branding themes.\"\
+  \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"interaction-hub.list-themes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-notifications\n          description: \"Retrieve notifications for the current user.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"notification-framework.list-notifications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-notification\n          description: \"Send a notification via email, text, or in-app channels.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"notification-framework.send-notification\"\n          with:\n            channel: \"tools.channel\"\n            recipients: \"tools.recipients\"\n            message: \"tools.message\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-intents\n          description: \"Retrieve available chatbot intents.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"chatbot.list-intents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: fulfill-intent\n          description: \"Process a chatbot intent fulfillment request.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"chatbot.fulfill-intent\"\n          with:\n            intent: \"tools.intent\"\n            parameters: \"tools.parameters\"\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/capabilities/portal-and-communications.yaml
 tags:
 - PeopleSoft
 - Portal

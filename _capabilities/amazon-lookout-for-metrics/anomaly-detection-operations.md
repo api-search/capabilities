@@ -55,71 +55,83 @@ personas: []
 provider_name: Amazon Lookout for Metrics
 provider_slug: amazon-lookout-for-metrics
 search_terms:
-- single anomaly detector
-- configuration and management of anomaly alert notifications
-- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
-- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
-- monitoring and assessment of metric data quality
 - deactivate anomaly detector
-- Operations Engineer
-- list all alerts
-- business intelligence
-- get detector details
-- list all metrics that contributed to an anomaly group
-- create an alert
-- get detector
-- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
-- anomaly detection
-- amazon
-- create anomaly detector
-- manage anomaly detectors
-- delete a detector
-- create detector
-- submit feedback
-- create a new anomaly detector for a set of business metrics
-- activate an anomaly detector to begin monitoring metrics
-- activate anomaly detector
-- single anomaly group
-- create an alert to receive notifications when anomalies are detected
-- create a new anomaly detector
-- aws
-- detection feedback
-- list all anomaly detectors
-- delete detector
-- list all configured anomaly detectors
-- list all configured anomaly alerts
-- get feedback
-- machine learning
-- operations
-- get anomaly group details
-- create alert
-- get anomaly feedback
-- ml-powered detection of anomalies in business and operational metrics
-- monitoring
-- update detector
-- list alerts
 - list summaries of detected anomaly groups for investigation
-- submit anomaly feedback
-- metrics
-- get anomaly
-- list anomaly detectors
-- stop an anomaly detector from monitoring metrics
-- update detector configuration
-- anomaly alerts
-- put feedback
-- retrieve previously submitted anomaly detection feedback
-- describe anomaly detector
-- get full details of a specific anomaly group including contributing metrics
+- configuration and management of anomaly alert notifications
+- list all metrics that contributed to an anomaly group
+- monitoring
+- create an alert
 - get anomaly group
-- submit feedback on anomaly detections to improve ml model accuracy
-- list anomalies
-- Data Scientist
-- anomaly group results
-- list anomaly group related metrics
-- list detectors
-- list anomaly group summaries
+- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
+- create a new anomaly detector for a set of business metrics
+- get detector details
+- create a new anomaly detector
+- update detector
+- list all anomaly detectors
+- submit feedback
+- amazon
+- submit anomaly feedback
+- ml-powered detection of anomalies in business and operational metrics
+- single anomaly group
+- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
+- get anomaly
+- monitoring and assessment of metric data quality
+- aws
+- anomaly detection
 - get configuration and status details of an anomaly detector
+- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
+- update detector configuration
+- business intelligence
+- list all alerts
+- activate anomaly detector
+- stop an anomaly detector from monitoring metrics
+- create detector
+- list detectors
+- list alerts
+- get anomaly group details
+- put feedback
+- Data Scientist
+- create alert
+- Operations Engineer
+- list anomaly group summaries
+- anomaly alerts
+- list anomaly detectors
+- single anomaly detector
+- detection feedback
+- list all configured anomaly alerts
+- anomaly group results
+- create anomaly detector
+- list anomalies
+- delete detector
+- manage anomaly detectors
+- metrics
+- delete a detector
+- list all configured anomaly detectors
+- machine learning
+- create an alert to receive notifications when anomalies are detected
+- activate an anomaly detector to begin monitoring metrics
+- list anomaly group related metrics
+- get feedback
+- retrieve previously submitted anomaly detection feedback
+- get anomaly feedback
+- get detector
+- describe anomaly detector
+- submit feedback on anomaly detections to improve ml model accuracy
+- operations
+- get full details of a specific anomaly group including contributing metrics
 slug: anomaly-detection-operations
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Lookout for Metrics - Anomaly Detection Operations\"\n  description: \"Workflow capability for data science and operations teams to manage anomaly detectors, monitor metric anomalies, configure alerts, and provide detection feedback using Amazon Lookout for Metrics.\"\n  tags:\n    - Amazon\n    - Anomaly Detection\n    - Machine Learning\n    - Metrics\n    - Monitoring\n    - Operations\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: lookout-for-metrics\n      location: ./shared/lookout-for-metrics.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: anomaly-detection-api\n      description: \"Unified REST API for Amazon Lookout for Metrics anomaly detection operations.\"\n      resources:\n\
+  \        - path: /v1/detectors\n          name: detectors\n          description: \"Manage anomaly detectors\"\n          operations:\n            - method: POST\n              name: create-detector\n              description: \"Create a new anomaly detector\"\n              call: \"lookout-for-metrics.create-anomaly-detector\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-detectors\n              description: \"List all anomaly detectors\"\n              call: \"lookout-for-metrics.list-anomaly-detectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/detectors/{id}\n          name: detector\n          description: \"Single anomaly detector\"\n          operations:\n            - method: GET\n              name: get-detector\n              description: \"Get detector details\"\n              call: \"lookout-for-metrics.describe-anomaly-detector\"\
+  \n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-detector\n              description: \"Update detector configuration\"\n              call: \"lookout-for-metrics.update-anomaly-detector\"\n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-detector\n              description: \"Delete a detector\"\n              call: \"lookout-for-metrics.delete-anomaly-detector\"\n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/anomalies\n          name: anomalies\n          description: \"Anomaly group results\"\n\
+  \          operations:\n            - method: GET\n              name: list-anomalies\n              description: \"List anomaly group summaries\"\n              call: \"lookout-for-metrics.list-anomaly-group-summaries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/anomalies/{id}\n          name: anomaly\n          description: \"Single anomaly group\"\n          operations:\n            - method: GET\n              name: get-anomaly\n              description: \"Get anomaly group details\"\n              call: \"lookout-for-metrics.get-anomaly-group\"\n              with:\n                AnomalyGroupId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alerts\n          name: alerts\n          description: \"Anomaly alerts\"\n          operations:\n            - method: POST\n              name: create-alert\n              description:\
+  \ \"Create an alert\"\n              call: \"lookout-for-metrics.create-alert\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-alerts\n              description: \"List all alerts\"\n              call: \"lookout-for-metrics.list-alerts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/feedback\n          name: feedback\n          description: \"Detection feedback\"\n          operations:\n            - method: POST\n              name: submit-feedback\n              description: \"Submit anomaly feedback\"\n              call: \"lookout-for-metrics.put-feedback\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-feedback\n              description: \"Get anomaly feedback\"\n              call: \"lookout-for-metrics.get-feedback\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: anomaly-detection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted anomaly detection and metrics monitoring with Amazon Lookout for Metrics.\"\n      tools:\n        - name: create-anomaly-detector\n          description: \"Create a new anomaly detector for a set of business metrics\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"lookout-for-metrics.create-anomaly-detector\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-anomaly-detectors\n          description: \"List all configured anomaly detectors\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.list-anomaly-detectors\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-anomaly-detector\n          description: \"Get configuration and status details of an anomaly detector\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.describe-anomaly-detector\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: activate-anomaly-detector\n          description: \"Activate an anomaly detector to begin monitoring metrics\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.activate-anomaly-detector\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: deactivate-anomaly-detector\n          description: \"Stop an anomaly detector from monitoring metrics\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.deactivate-anomaly-detector\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-anomaly-group-summaries\n          description: \"List summaries of detected anomaly groups for investigation\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.list-anomaly-group-summaries\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-anomaly-group\n\
+  \          description: \"Get full details of a specific anomaly group including contributing metrics\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.get-anomaly-group\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n            AnomalyGroupId: \"tools.AnomalyGroupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-anomaly-group-related-metrics\n          description: \"List all metrics that contributed to an anomaly group\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.list-anomaly-group-related-metrics\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n            AnomalyGroupId: \"tools.AnomalyGroupId\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: create-alert\n          description: \"Create an alert to receive notifications when anomalies are detected\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"lookout-for-metrics.create-alert\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-alerts\n          description: \"List all configured anomaly alerts\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.list-alerts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: put-feedback\n          description: \"Submit feedback on anomaly detections to improve ML model accuracy\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call:\
+  \ \"lookout-for-metrics.put-feedback\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-feedback\n          description: \"Retrieve previously submitted anomaly detection feedback\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"lookout-for-metrics.get-feedback\"\n          with:\n            AnomalyDetectorArn: \"tools.AnomalyDetectorArn\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-metrics/refs/heads/main/capabilities/anomaly-detection-operations.yaml
 tags:
 - Amazon
 - Anomaly Detection

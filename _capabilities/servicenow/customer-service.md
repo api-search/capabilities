@@ -52,71 +52,86 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- itsm
-- list service catalogs.
-- list available service catalogs.
-- retrieve a specific csm contact.
-- order a catalog item immediately.
-- create a csm contact.
-- create contact
-- submit cart as a service catalog request.
-- single contact operations.
-- enterprise platform
-- list catalog items.
-- list trouble tickets
-- add item to cart
-- list csm contacts with optional filtering.
-- retrieve shopping cart contents.
-- retrieve a specific trouble ticket.
-- list catalog items
-- list contacts
-- csm contact management.
-- create a new csm contact.
-- workflows
-- retrieve a specific service catalog.
-- empty cart
-- update trouble ticket
-- list csm contacts.
-- single catalog item.
-- shopping cart.
-- get catalog
-- retrieve a catalog category with subcategories.
-- create trouble ticket
-- get contact
-- servicenow
-- list catalog items with optional filtering.
-- remove all items from the shopping cart.
-- add a catalog item to the shopping cart.
-- workflow automation
-- it service management
-- empty the cart.
-- catalog item browsing.
-- customer service
-- get a specific contact.
-- self service
-- retrieve catalog item details with variables.
-- digital workflows
-- get catalog item
-- update an existing trouble ticket.
-- service catalog browsing.
 - get cart
-- get trouble ticket
-- order item now
-- list trouble tickets.
-- t1
-- processes
-- submit cart order
-- cloud services
-- get category
-- list catalogs
-- service catalog
-- create a trouble ticket.
 - automation
-- get catalog item details.
+- list csm contacts with optional filtering.
+- create a trouble ticket.
+- list trouble tickets
+- list catalog items with optional filtering.
+- cloud services
+- list csm contacts.
+- get catalog
 - trouble ticket operations.
+- list catalog items
+- retrieve catalog item details with variables.
+- servicenow
+- list catalogs
+- create a new csm contact.
+- create a csm contact.
+- submit cart as a service catalog request.
+- service catalog browsing.
+- order item now
+- get catalog item details.
 - get cart contents.
+- single contact operations.
+- add item to cart
 - contacts
+- create trouble ticket
+- list trouble tickets.
+- get category
+- retrieve shopping cart contents.
+- get a specific contact.
+- empty the cart.
+- get catalog item
+- it service management
+- customer service
+- enterprise platform
+- shopping cart.
+- order a catalog item immediately.
+- processes
+- digital workflows
+- retrieve a specific service catalog.
+- csm contact management.
+- create contact
+- list catalog items.
+- update an existing trouble ticket.
+- workflow automation
+- workflows
+- self service
+- list available service catalogs.
+- list contacts
+- submit cart order
+- t1
+- itsm
+- add a catalog item to the shopping cart.
+- single catalog item.
+- empty cart
+- service catalog
+- get trouble ticket
+- remove all items from the shopping cart.
+- catalog item browsing.
+- update trouble ticket
+- retrieve a specific csm contact.
+- retrieve a specific trouble ticket.
+- list service catalogs.
+- retrieve a catalog category with subcategories.
+- get contact
 slug: customer-service
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow Customer Service\"\n  description: \"Unified workflow for customer service operations combining contact management, service catalog browsing and ordering, and trouble ticket handling. Used by customer service agents and self-service portal integrations.\"\n  tags:\n    - ServiceNow\n    - Customer Service\n    - Service Catalog\n    - Contacts\n    - Self Service\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-contact\n      location: ./shared/contact.yaml\n    - import: servicenow-service-catalog\n      location: ./shared/service-catalog.yaml\n    - import: servicenow-trouble-ticket\n      location: ./shared/trouble-ticket.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n\
+  \      namespace: servicenow-customer-service-api\n      description: \"Unified REST API for ServiceNow customer service operations.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"CSM contact management.\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List CSM contacts.\"\n              call: \"servicenow-contact.list-contacts\"\n              with:\n                sysparm_query: \"rest.sysparm_query\"\n                sysparm_limit: \"rest.sysparm_limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n            - method: POST\n              name: create-contact\n              description: \"Create a CSM contact.\"\n              call: \"servicenow-contact.create-contact\"\n              with:\n                first_name: \"rest.first_name\"\n                last_name: \"rest.last_name\"\n            \
+  \    email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/contacts/{id}\n          name: contact-detail\n          description: \"Single contact operations.\"\n          operations:\n            - method: GET\n              name: get-contact\n              description: \"Get a specific contact.\"\n              call: \"servicenow-contact.get-contact\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Service catalog browsing.\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List service catalogs.\"\n              call: \"servicenow-service-catalog.list-catalogs\"\n              with:\n                sysparm_limit: \"rest.sysparm_limit\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/catalog-items\n          name: catalog-items\n          description: \"Catalog item browsing.\"\n          operations:\n            - method: GET\n              name: list-catalog-items\n              description: \"List catalog items.\"\n              call: \"servicenow-service-catalog.list-catalog-items\"\n              with:\n                sysparm_catalog: \"rest.sysparm_catalog\"\n                sysparm_category: \"rest.sysparm_category\"\n                sysparm_limit: \"rest.sysparm_limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/catalog-items/{sys_id}\n          name: catalog-item-detail\n          description: \"Single catalog item.\"\n          operations:\n            - method: GET\n              name: get-catalog-item\n              description: \"Get catalog item\
+  \ details.\"\n              call: \"servicenow-service-catalog.get-catalog-item\"\n              with:\n                sys_id: \"rest.sys_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/cart\n          name: cart\n          description: \"Shopping cart.\"\n          operations:\n            - method: GET\n              name: get-cart\n              description: \"Get cart contents.\"\n              call: \"servicenow-service-catalog.get-cart\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n            - method: DELETE\n              name: empty-cart\n              description: \"Empty the cart.\"\n              call: \"servicenow-service-catalog.empty-cart\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/trouble-tickets\n          name: trouble-tickets\n          description:\
+  \ \"Trouble ticket operations.\"\n          operations:\n            - method: GET\n              name: list-trouble-tickets\n              description: \"List trouble tickets.\"\n              call: \"servicenow-trouble-ticket.list-trouble-tickets\"\n              with:\n                limit: \"rest.limit\"\n                severity: \"rest.severity\"\n                status: \"rest.status\"\n                ticketType: \"rest.ticketType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-trouble-ticket\n              description: \"Create a trouble ticket.\"\n              call: \"servicenow-trouble-ticket.create-trouble-ticket\"\n              with:\n                name: \"rest.name\"\n                description: \"rest.description\"\n                severity: \"rest.severity\"\n                status: \"rest.status\"\n                ticketType: \"rest.ticketType\"\n       \
+  \       outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: servicenow-customer-service-mcp\n      transport: http\n      description: \"MCP server for AI-assisted ServiceNow customer service workflows.\"\n      tools:\n        - name: list-contacts\n          description: \"List CSM contacts with optional filtering.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"servicenow-contact.list-contacts\"\n          with:\n            sysparm_query: \"tools.sysparm_query\"\n            sysparm_limit: \"tools.sysparm_limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: create-contact\n          description: \"Create a new CSM contact.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"servicenow-contact.create-contact\"\
+  \n          with:\n            first_name: \"tools.first_name\"\n            last_name: \"tools.last_name\"\n            email: \"tools.email\"\n            phone: \"tools.phone\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: get-contact\n          description: \"Retrieve a specific CSM contact.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-contact.get-contact\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: list-catalogs\n          description: \"List available service catalogs.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"servicenow-service-catalog.list-catalogs\"\n          with:\n            sysparm_limit: \"tools.sysparm_limit\"\n          outputParameters:\n        \
+  \    - type: object\n              mapping: \"$.result\"\n        - name: get-catalog\n          description: \"Retrieve a specific service catalog.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-service-catalog.get-catalog\"\n          with:\n            sys_id: \"tools.sys_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: get-category\n          description: \"Retrieve a catalog category with subcategories.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-service-catalog.get-category\"\n          with:\n            sys_id: \"tools.sys_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: list-catalog-items\n          description: \"List catalog items with optional filtering.\"\n          hints:\n            readOnly: true\n            idempotent:\
+  \ true\n            openWorld: true\n          call: \"servicenow-service-catalog.list-catalog-items\"\n          with:\n            sysparm_catalog: \"tools.sysparm_catalog\"\n            sysparm_category: \"tools.sysparm_category\"\n            sysparm_limit: \"tools.sysparm_limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: get-catalog-item\n          description: \"Retrieve catalog item details with variables.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-service-catalog.get-catalog-item\"\n          with:\n            sys_id: \"tools.sys_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: add-item-to-cart\n          description: \"Add a catalog item to the shopping cart.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"servicenow-service-catalog.add-item-to-cart\"\
+  \n          with:\n            sys_id: \"tools.sys_id\"\n            quantity: \"tools.quantity\"\n            variables: \"tools.variables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: order-item-now\n          description: \"Order a catalog item immediately.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"servicenow-service-catalog.order-item-now\"\n          with:\n            sys_id: \"tools.sys_id\"\n            quantity: \"tools.quantity\"\n            variables: \"tools.variables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: get-cart\n          description: \"Retrieve shopping cart contents.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-service-catalog.get-cart\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.result\"\n        - name: empty-cart\n          description: \"Remove all items from the shopping cart.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"servicenow-service-catalog.empty-cart\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: submit-cart-order\n          description: \"Submit cart as a service catalog request.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"servicenow-service-catalog.submit-cart-order\"\n          outputParameters:\n            - type: object\n              mapping: \"$.result\"\n        - name: list-trouble-tickets\n          description: \"List trouble tickets.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"servicenow-trouble-ticket.list-trouble-tickets\"\n          with:\n            limit: \"tools.limit\"\
+  \n            severity: \"tools.severity\"\n            status: \"tools.status\"\n            ticketType: \"tools.ticketType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-trouble-ticket\n          description: \"Create a trouble ticket.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"servicenow-trouble-ticket.create-trouble-ticket\"\n          with:\n            name: \"tools.name\"\n            description: \"tools.description\"\n            severity: \"tools.severity\"\n            status: \"tools.status\"\n            ticketType: \"tools.ticketType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-trouble-ticket\n          description: \"Retrieve a specific trouble ticket.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"servicenow-trouble-ticket.get-trouble-ticket\"\
+  \n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-trouble-ticket\n          description: \"Update an existing trouble ticket.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"servicenow-trouble-ticket.update-trouble-ticket\"\n          with:\n            id: \"tools.id\"\n            name: \"tools.name\"\n            severity: \"tools.severity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/servicenow/refs/heads/main/capabilities/customer-service.yaml
 tags:
 - ServiceNow
 - Customer Service

@@ -56,62 +56,73 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
-- specific dispute operations.
-- get dispute details.
-- get promotional financing terms.
-- read a checkout session.
-- void an authorized affirm transaction before capture.
-- merchant engineer
-- refund a captured transaction.
-- authorize transaction
-- read an affirm checkout session by token.
-- list all affirm payment transactions for reconciliation.
-- buy now pay later
-- get details of a specific affirm payment dispute.
-- authorization, capture, void, and refund of payment transactions.
-- get promo messaging
-- authorize a transaction.
-- get affirm promotional financing terms and messaging for a purchase amount.
-- capture transaction
-- list transactions
+- list all affirm payment disputes for a merchant.
 - submit evidence to contest an affirm payment dispute.
-- void transaction
-- payment ops
-- read checkout
-- get dispute
-- store checkout
-- payment transaction management.
-- checkout session management.
 - refund a captured affirm transaction partially or fully.
-- merchant operations team member managing transaction reconciliation and dispute resolution.
+- authorization, capture, void, and refund of payment transactions.
+- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- handling of customer chargebacks and disputes.
+- buy now pay later
+- authorize transaction
 - capture a transaction.
 - list disputes
+- transactions
+- disputes
+- read an affirm checkout session by token.
+- authorize a transaction.
+- capture an authorized transaction.
+- list transactions
+- authorize an affirm transaction using a checkout token.
+- get affirm promotional financing terms and messaging for a purchase amount.
+- affirm
 - get promo
-- displaying financing terms and promotional messaging to customers.
-- create an affirm checkout session.
-- checkout
+- get promo messaging
+- promotional messaging.
+- list all affirm payment transactions for reconciliation.
 - payments
+- checkout session management.
+- retrieve or update a checkout session.
+- get promotional financing terms.
+- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
+- read a checkout session.
+- payment transaction management.
+- refund a transaction.
+- list all transactions.
+- displaying financing terms and promotional messaging to customers.
+- list all disputes.
+- capture transaction
+- read checkout
+- submit dispute evidence
+- get dispute details.
+- checkout
+- void transaction
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- store checkout
+- void an authorized affirm transaction before capture.
+- specific dispute operations.
+- refund a captured transaction.
+- create an affirm checkout session.
+- merchant engineer
 - refund transaction
 - initiation and management of customer financing sessions.
-- promotional messaging.
-- disputes
+- get details of a specific affirm payment dispute.
 - capture an authorized affirm transaction to collect funds.
-- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
-- capture an authorized transaction.
-- list all affirm payment disputes for a merchant.
-- handling of customer chargebacks and disputes.
-- submit dispute evidence
-- transactions
-- list all disputes.
+- get dispute
 - create an affirm bnpl checkout session for a customer purchase.
-- retrieve or update a checkout session.
-- list all transactions.
-- refund a transaction.
-- authorize an affirm transaction using a checkout token.
-- affirm
+- payment ops
 - dispute management.
 slug: payment-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Affirm Payment Management\"\n  description: \"Unified workflow capability for managing the full Affirm BNPL payment lifecycle — from initiating checkout sessions through transaction authorization, capture, refund, and dispute resolution. Used by merchant engineers and payment operations teams.\"\n  tags:\n    - Affirm\n    - Payments\n    - Buy Now Pay Later\n    - Checkout\n    - Transactions\n    - Disputes\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AFFIRM_PUBLIC_KEY: AFFIRM_PUBLIC_KEY\n      AFFIRM_PRIVATE_KEY: AFFIRM_PRIVATE_KEY\n\ncapability:\n  consumes:\n    - import: affirm-checkout\n      location: ./shared/checkout.yaml\n    - import: affirm-transactions\n      location: ./shared/transactions.yaml\n    - import: affirm-disputes\n      location: ./shared/disputes.yaml\n    - import: affirm-promos\n      location: ./shared/promos.yaml\n\n  exposes:\n    - type:\
+  \ rest\n      port: 8080\n      namespace: affirm-payment-api\n      description: \"Unified REST API for Affirm BNPL payment management.\"\n      resources:\n        - path: /v1/checkouts\n          name: checkouts\n          description: \"Checkout session management.\"\n          operations:\n            - method: POST\n              name: store-checkout\n              description: \"Create an Affirm checkout session.\"\n              call: \"affirm-checkout.store-checkout\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/checkouts/{token}\n          name: checkout-by-token\n          description: \"Retrieve or update a checkout session.\"\n          operations:\n            - method: GET\n              name: read-checkout\n              description: \"Read a checkout session.\"\n              call: \"affirm-checkout.read-checkout\"\n              with:\n                token: \"rest.token\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transactions\n          name: transactions\n          description: \"Payment transaction management.\"\n          operations:\n            - method: GET\n              name: list-transactions\n              description: \"List all transactions.\"\n              call: \"affirm-transactions.list-transactions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: authorize-transaction\n              description: \"Authorize a transaction.\"\n              call: \"affirm-transactions.authorize-transaction\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transactions/{id}/capture\n          name: transaction-capture\n          description: \"Capture an authorized transaction.\"\n          operations:\n            - method: POST\n       \
+  \       name: capture-transaction\n              description: \"Capture a transaction.\"\n              call: \"affirm-transactions.capture-transaction\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transactions/{id}/refund\n          name: transaction-refund\n          description: \"Refund a captured transaction.\"\n          operations:\n            - method: POST\n              name: refund-transaction\n              description: \"Refund a transaction.\"\n              call: \"affirm-transactions.refund-transaction\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/disputes\n          name: disputes\n          description: \"Dispute management.\"\n          operations:\n            - method: GET\n              name: list-disputes\n\
+  \              description: \"List all disputes.\"\n              call: \"affirm-disputes.list-disputes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/disputes/{dispute_id}\n          name: dispute-by-id\n          description: \"Specific dispute operations.\"\n          operations:\n            - method: GET\n              name: get-dispute\n              description: \"Get dispute details.\"\n              call: \"affirm-disputes.get-dispute\"\n              with:\n                dispute_id: \"rest.dispute_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/promos\n          name: promos\n          description: \"Promotional messaging.\"\n          operations:\n            - method: GET\n              name: get-promo\n              description: \"Get promotional financing terms.\"\n              call: \"affirm-promos.get-promo\"\n    \
+  \          with:\n                amount: \"rest.amount\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: affirm-payment-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Affirm BNPL payment management.\"\n      tools:\n        - name: store-checkout\n          description: \"Create an Affirm BNPL checkout session for a customer purchase.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"affirm-checkout.store-checkout\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-checkout\n          description: \"Read an Affirm checkout session by token.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"affirm-checkout.read-checkout\"\n          with:\n            token: \"tools.token\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-transactions\n          description: \"List all Affirm payment transactions for reconciliation.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"affirm-transactions.list-transactions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: authorize-transaction\n          description: \"Authorize an Affirm transaction using a checkout token.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"affirm-transactions.authorize-transaction\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: capture-transaction\n          description: \"Capture an authorized Affirm transaction to collect funds.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"affirm-transactions.capture-transaction\"\
+  \n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: refund-transaction\n          description: \"Refund a captured Affirm transaction partially or fully.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"affirm-transactions.refund-transaction\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: void-transaction\n          description: \"Void an authorized Affirm transaction before capture.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"affirm-transactions.void-transaction\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-disputes\n          description: \"List all Affirm payment disputes\
+  \ for a merchant.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"affirm-disputes.list-disputes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dispute\n          description: \"Get details of a specific Affirm payment dispute.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"affirm-disputes.get-dispute\"\n          with:\n            dispute_id: \"tools.dispute_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-dispute-evidence\n          description: \"Submit evidence to contest an Affirm payment dispute.\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"affirm-disputes.submit-dispute-evidence\"\n          with:\n            dispute_id: \"tools.dispute_id\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: get-promo-messaging\n          description: \"Get Affirm promotional financing terms and messaging for a purchase amount.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"affirm-promos.get-promo\"\n          with:\n            amount: \"tools.amount\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/affirm/refs/heads/main/capabilities/payment-management.yaml
 tags:
 - Affirm
 - Payments

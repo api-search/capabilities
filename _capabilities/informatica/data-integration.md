@@ -47,75 +47,88 @@ personas: []
 provider_name: Informatica
 provider_slug: informatica
 search_terms:
-- delete connection
-- informatica
-- job execution management.
-- list all data source connections.
-- update a mapping task.
-- create a new connection.
-- get connection details by id.
-- master data management
-- list connections
-- start job
-- update mapping task
-- etl
-- create a new schedule.
-- get mapping
-- start a job.
 - start a job for a task or taskflow.
-- get connection details.
-- list mappings
-- get mapping task
-- mapping task management.
-- data integration
-- stop a running job.
-- update connection
-- login
-- data governance
-- stop job
-- get mapping details by id.
-- create schedule
-- data mapping management.
-- get schedule
-- list all task schedules.
-- list all mapping tasks.
-- retrieve the activity log.
-- create a new data source connection.
-- delete a connection.
-- list all data mappings.
-- get schedule details by id.
-- enterprise software
-- list all mappings.
-- create connection
-- delete schedule
-- list mapping tasks
-- authenticate and obtain a session id.
-- list schedules
-- data quality
-- get connection
-- pipeline management
-- delete a mapping task.
 - update a connection.
-- get activity log
-- get mapping task details by id.
-- update an existing connection.
-- iics
-- individual connection management.
-- delete mapping task
-- b2b gateway
-- list all connections.
+- get mapping
+- data quality
+- enterprise software
 - cloud services
-- create mapping task
-- update a schedule.
-- create a new mapping task.
-- update schedule
-- address verification
-- data profiling
-- delete a schedule.
-- idmc
-- reference data management
 - data source connection management.
+- create a new data source connection.
+- update mapping task
+- get schedule
+- etl
+- list connections
+- pipeline management
+- b2b gateway
+- reference data management
+- idmc
+- get schedule details by id.
+- authenticate and obtain a session id.
+- update schedule
+- list all task schedules.
+- create a new mapping task.
+- data profiling
+- informatica
+- list mapping tasks
+- delete connection
+- list all connections.
+- get mapping task
+- delete mapping task
+- delete schedule
+- list all data source connections.
+- get connection details by id.
+- address verification
+- data governance
+- get connection details.
+- get mapping task details by id.
+- retrieve the activity log.
+- stop a running job.
+- list schedules
+- create a new schedule.
+- delete a mapping task.
+- start job
+- job execution management.
+- create schedule
+- delete a connection.
+- list all mapping tasks.
+- data mapping management.
+- update an existing connection.
+- mapping task management.
+- get activity log
+- stop job
+- get connection
+- update a mapping task.
+- update a schedule.
+- create connection
+- master data management
+- start a job.
+- data integration
+- update connection
+- delete a schedule.
+- iics
+- get mapping details by id.
+- create a new connection.
+- individual connection management.
+- list all data mappings.
+- create mapping task
+- list all mappings.
+- login
+- list mappings
 slug: data-integration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Informatica Data Integration\"\n  description: \"Unified workflow for managing data integration pipelines including connections, mappings, mapping tasks, job execution, scheduling, and activity monitoring. Used by data engineers and ETL developers.\"\n  tags:\n    - Informatica\n    - Data Integration\n    - ETL\n    - Pipeline Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INFORMATICA_USERNAME: INFORMATICA_USERNAME\n      INFORMATICA_PASSWORD: INFORMATICA_PASSWORD\n\ncapability:\n  consumes:\n    - import: informatica-platform\n      location: ./shared/platform-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: informatica-integration-api\n      description: \"Unified REST API for Informatica data integration management.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Data\
+  \ source connection management.\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List all connections.\"\n              call: \"informatica-platform.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: \"Create a new connection.\"\n              call: \"informatica-platform.create-connection\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections/{id}\n          name: connection-details\n          description: \"Individual connection management.\"\n          operations:\n            - method: GET\n              name: get-connection\n              description: \"Get connection details.\"\n              call: \"informatica-platform.get-connection\"\n              with:\n           \
+  \     connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-connection\n              description: \"Update a connection.\"\n              call: \"informatica-platform.update-connection\"\n              with:\n                connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-connection\n              description: \"Delete a connection.\"\n              call: \"informatica-platform.delete-connection\"\n              with:\n                connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/mappings\n          name: mappings\n          description: \"Data mapping management.\"\n          operations:\n            - method: GET\n          \
+  \    name: list-mappings\n              description: \"List all mappings.\"\n              call: \"informatica-platform.list-mappings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/mapping-tasks\n          name: mapping-tasks\n          description: \"Mapping task management.\"\n          operations:\n            - method: GET\n              name: list-mapping-tasks\n              description: \"List all mapping tasks.\"\n              call: \"informatica-platform.list-mapping-tasks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-mapping-task\n              description: \"Create a new mapping task.\"\n              call: \"informatica-platform.create-mapping-task\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name:\
+  \ jobs\n          description: \"Job execution management.\"\n          operations:\n            - method: POST\n              name: start-job\n              description: \"Start a job.\"\n              call: \"informatica-platform.start-job\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: informatica-integration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Informatica data integration management.\"\n      tools:\n        - name: login\n          description: \"Authenticate and obtain a session ID.\"\n          hints:\n            readOnly: false\n          call: \"informatica-platform.login\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connections\n          description: \"List all data source connections.\"\n          hints:\n            readOnly: true\n          call: \"informatica-platform.list-connections\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-connection\n          description: \"Get connection details by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"informatica-platform.get-connection\"\n          with:\n            connectionId: \"tools.connectionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-connection\n          description: \"Create a new data source connection.\"\n          hints:\n            readOnly: false\n          call: \"informatica-platform.create-connection\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-connection\n          description: \"Update an existing connection.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"informatica-platform.update-connection\"\n     \
+  \     with:\n            connectionId: \"tools.connectionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-connection\n          description: \"Delete a connection.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"informatica-platform.delete-connection\"\n          with:\n            connectionId: \"tools.connectionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mappings\n          description: \"List all data mappings.\"\n          hints:\n            readOnly: true\n          call: \"informatica-platform.list-mappings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-mapping\n          description: \"Get mapping details by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n        \
+  \  call: \"informatica-platform.get-mapping\"\n          with:\n            mappingId: \"tools.mappingId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mapping-tasks\n          description: \"List all mapping tasks.\"\n          hints:\n            readOnly: true\n          call: \"informatica-platform.list-mapping-tasks\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-mapping-task\n          description: \"Create a new mapping task.\"\n          hints:\n            readOnly: false\n          call: \"informatica-platform.create-mapping-task\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-mapping-task\n          description: \"Get mapping task details by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"informatica-platform.get-mapping-task\"\n  \
+  \        with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-mapping-task\n          description: \"Update a mapping task.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"informatica-platform.update-mapping-task\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-mapping-task\n          description: \"Delete a mapping task.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"informatica-platform.delete-mapping-task\"\n          with:\n            taskId: \"tools.taskId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-job\n          description: \"Start a job for a task or taskflow.\"\
+  \n          hints:\n            readOnly: false\n          call: \"informatica-platform.start-job\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stop-job\n          description: \"Stop a running job.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"informatica-platform.stop-job\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-activity-log\n          description: \"Retrieve the activity log.\"\n          hints:\n            readOnly: true\n          call: \"informatica-platform.get-activity-log\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-schedules\n          description: \"List all task schedules.\"\n          hints:\n            readOnly: true\n          call: \"informatica-platform.list-schedules\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: create-schedule\n          description: \"Create a new schedule.\"\n          hints:\n            readOnly: false\n          call: \"informatica-platform.create-schedule\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-schedule\n          description: \"Get schedule details by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"informatica-platform.get-schedule\"\n          with:\n            scheduleId: \"tools.scheduleId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-schedule\n          description: \"Update a schedule.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"informatica-platform.update-schedule\"\n          with:\n            scheduleId: \"tools.scheduleId\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: delete-schedule\n          description: \"Delete a schedule.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"informatica-platform.delete-schedule\"\n          with:\n            scheduleId: \"tools.scheduleId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/informatica/refs/heads/main/capabilities/data-integration.yaml
 tags:
 - Informatica
 - Data Integration

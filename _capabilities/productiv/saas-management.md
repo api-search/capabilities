@@ -70,68 +70,85 @@ personas: []
 provider_name: Productiv
 provider_slug: productiv
 search_terms:
-- list all provisioning workflows.
-- register a new application.
-- get app summaries
-- get signed upload urls.
-- get batch upload urls
-- get signed upload urls for batch file uploads.
-- get details of a specific provisioning workflow execution.
-- list provisioning workflows
-- publish provisioned users
-- remove provisioned users.
-- add provisioned users.
-- query all apps in portfolio.
-- fetch detailed app info.
-- obtain an oauth2 access token using client credentials.
-- get specific execution details.
-- get provisioning workflow execution
-- oauth2 token endpoint.
-- push usage events for an application.
-- get audit events
-- data export
-- provisioning
-- retrieve the list of users provisioned to an application.
-- manage provisioning workflows.
-- publish org chart
-- publish organizational chart data.
-- remove provisioned users from an application.
-- push usage events.
-- add provisioned users for an application.
-- setup application
-- batch file upload.
-- query provisioning executions.
-- publish usage events
-- register a new connected application.
-- query audit events.
-- get app details
-- publish spend data
-- retrieve provisioned users.
-- saas management
-- fetch audit events.
-- manage provisioned users.
-- delete provisioned users
-- fetch detailed information about a particular app.
-- fetch audit events for platform activities.
-- get access token
-- application portfolio
-- get execution details.
-- manage org chart data.
-- list execution summaries.
-- query all apps in your company portfolio.
-- fetch detailed app information.
-- productiv
-- query app portfolio.
-- list provisioning workflow execution summaries.
-- list provisioning execution summaries
 - obtain an oauth2 access token.
-- spend management
-- manage custom applications.
-- get provisioned users
-- push spend data.
-- usage analytics
+- application portfolio
+- fetch detailed app info.
+- productiv
+- get specific execution details.
+- list provisioning workflows
+- get execution details.
+- delete provisioned users
+- get signed upload urls for batch file uploads.
+- manage provisioning workflows.
+- get provisioning workflow execution
+- publish spend data
+- fetch audit events for platform activities.
 - push spend data for an application.
+- register a new application.
+- manage org chart data.
+- manage custom applications.
+- data export
+- query provisioning executions.
+- query all apps in portfolio.
+- list execution summaries.
+- publish org chart
+- get audit events
+- spend management
+- manage provisioned users.
+- push spend data.
+- batch file upload.
+- obtain an oauth2 access token using client credentials.
+- usage analytics
+- get app details
+- retrieve provisioned users.
+- get access token
+- remove provisioned users from an application.
+- add provisioned users.
+- query app portfolio.
+- saas management
+- publish usage events
+- add provisioned users for an application.
+- fetch detailed information about a particular app.
+- get batch upload urls
+- fetch detailed app information.
+- setup application
+- list all provisioning workflows.
+- fetch audit events.
+- get signed upload urls.
+- oauth2 token endpoint.
+- get app summaries
+- publish organizational chart data.
+- query audit events.
+- get provisioned users
+- provisioning
+- register a new connected application.
+- publish provisioned users
+- query all apps in your company portfolio.
+- get details of a specific provisioning workflow execution.
+- retrieve the list of users provisioned to an application.
+- remove provisioned users.
+- list provisioning execution summaries
+- list provisioning workflow execution summaries.
+- push usage events.
+- push usage events for an application.
 slug: saas-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Productiv SaaS Management\"\n  description: \"Unified workflow for managing SaaS applications, tracking usage and spend, provisioning users, and auditing platform activity using the Productiv Developer API.\"\n  tags:\n    - Productiv\n    - SaaS Management\n    - Usage Analytics\n    - Provisioning\n    - Data Export\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PRODUCTIV_CLIENT_ID: PRODUCTIV_CLIENT_ID\n      PRODUCTIV_CLIENT_SECRET: PRODUCTIV_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: productiv-developer\n      location: ./shared/developer-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: productiv-saas-api\n      description: \"Unified REST API for Productiv SaaS management, usage analytics, and provisioning workflows.\"\n      resources:\n        - path: /v1/token\n          name: authentication\n          description: \"OAuth2\
+  \ token endpoint.\"\n          operations:\n            - method: POST\n              name: get-access-token\n              description: \"Obtain an OAuth2 access token.\"\n              call: \"productiv-developer.get-access-token\"\n              with:\n                grant_type: \"rest.grant_type\"\n                client_id: \"rest.client_id\"\n                client_secret: \"rest.client_secret\"\n                scope: \"rest.scope\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications\n          name: applications\n          description: \"Manage custom applications.\"\n          operations:\n            - method: POST\n              name: setup-application\n              description: \"Register a new application.\"\n              call: \"productiv-developer.setup-application\"\n              with:\n                appName: \"rest.appName\"\n                appDescription: \"rest.appDescription\"\
+  \n                appCategory: \"rest.appCategory\"\n                appUrl: \"rest.appUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications/{appId}/usage-events\n          name: usage-events\n          description: \"Push usage events.\"\n          operations:\n            - method: POST\n              name: publish-usage-events\n              description: \"Push usage events for an application.\"\n              call: \"productiv-developer.publish-usage-events\"\n              with:\n                appId: \"rest.appId\"\n                events: \"rest.events\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications/{appId}/spend\n          name: spend-data\n          description: \"Push spend data.\"\n          operations:\n            - method: POST\n              name: publish-spend-data\n              description: \"\
+  Push spend data for an application.\"\n              call: \"productiv-developer.publish-spend-data\"\n              with:\n                appId: \"rest.appId\"\n                spendData: \"rest.spendData\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications/{appId}/users\n          name: provisioned-users\n          description: \"Manage provisioned users.\"\n          operations:\n            - method: POST\n              name: publish-provisioned-users\n              description: \"Add provisioned users.\"\n              call: \"productiv-developer.publish-provisioned-users\"\n              with:\n                appId: \"rest.appId\"\n                users: \"rest.users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-provisioned-users\n              description: \"Retrieve provisioned users.\"\
+  \n              call: \"productiv-developer.get-provisioned-users\"\n              with:\n                appId: \"rest.appId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-provisioned-users\n              description: \"Remove provisioned users.\"\n              call: \"productiv-developer.delete-provisioned-users\"\n              with:\n                appId: \"rest.appId\"\n                users: \"rest.users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/org-chart\n          name: org-chart\n          description: \"Manage org chart data.\"\n          operations:\n            - method: PUT\n              name: publish-org-chart\n              description: \"Publish organizational chart data.\"\n              call: \"productiv-developer.publish-org-chart\"\n              with:\n                users:\
+  \ \"rest.users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications/{appId}/upload\n          name: batch-upload\n          description: \"Batch file upload.\"\n          operations:\n            - method: GET\n              name: get-batch-upload-urls\n              description: \"Get signed upload URLs.\"\n              call: \"productiv-developer.get-batch-upload-urls\"\n              with:\n                appId: \"rest.appId\"\n                filenames: \"rest.filenames\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/app-summaries\n          name: app-summaries\n          description: \"Query app portfolio.\"\n          operations:\n            - method: GET\n              name: get-app-summaries\n              description: \"Query all apps in portfolio.\"\n              call: \"productiv-developer.get-app-summaries\"\n\
+  \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/app-details/{applicationId}\n          name: app-details\n          description: \"Fetch detailed app info.\"\n          operations:\n            - method: GET\n              name: get-app-details\n              description: \"Fetch detailed app information.\"\n              call: \"productiv-developer.get-app-details\"\n              with:\n                applicationId: \"rest.applicationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/provisioning-workflows\n          name: provisioning-workflows\n          description: \"Manage provisioning workflows.\"\n          operations:\n            - method: GET\n              name: list-provisioning-workflows\n              description: \"List all provisioning workflows.\"\n              call: \"productiv-developer.list-provisioning-workflows\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/provisioning-workflows/{workflowId}/executions\n          name: provisioning-executions\n          description: \"Query provisioning executions.\"\n          operations:\n            - method: GET\n              name: list-provisioning-execution-summaries\n              description: \"List execution summaries.\"\n              call: \"productiv-developer.list-provisioning-execution-summaries\"\n              with:\n                workflowId: \"rest.workflowId\"\n                startTime: \"rest.startTime\"\n                endTime: \"rest.endTime\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/provisioning-workflows/{workflowId}/executions/{executionId}\n          name: provisioning-execution-detail\n          description: \"Get execution details.\"\n          operations:\n            -\
+  \ method: GET\n              name: get-provisioning-workflow-execution\n              description: \"Get specific execution details.\"\n              call: \"productiv-developer.get-provisioning-workflow-execution\"\n              with:\n                workflowId: \"rest.workflowId\"\n                executionId: \"rest.executionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/audit-events\n          name: audit-events\n          description: \"Query audit events.\"\n          operations:\n            - method: GET\n              name: get-audit-events\n              description: \"Fetch audit events.\"\n              call: \"productiv-developer.get-audit-events\"\n              with:\n                startTime: \"rest.startTime\"\n                endTime: \"rest.endTime\"\n                nextPageToken: \"rest.nextPageToken\"\n              outputParameters:\n                - type: object\n              \
+  \    mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: productiv-saas-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SaaS management, usage analytics, and provisioning.\"\n      tools:\n        - name: get-access-token\n          description: \"Obtain an OAuth2 access token using client credentials.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"productiv-developer.get-access-token\"\n          with:\n            grant_type: \"tools.grant_type\"\n            client_id: \"tools.client_id\"\n            client_secret: \"tools.client_secret\"\n            scope: \"tools.scope\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: setup-application\n          description: \"Register a new connected application.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"productiv-developer.setup-application\"\
+  \n          with:\n            appName: \"tools.appName\"\n            appDescription: \"tools.appDescription\"\n            appCategory: \"tools.appCategory\"\n            appUrl: \"tools.appUrl\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: publish-usage-events\n          description: \"Push usage events for an application.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"productiv-developer.publish-usage-events\"\n          with:\n            appId: \"tools.appId\"\n            events: \"tools.events\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: publish-spend-data\n          description: \"Push spend data for an application.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"productiv-developer.publish-spend-data\"\n          with:\n            appId: \"tools.appId\"\
+  \n            spendData: \"tools.spendData\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: publish-provisioned-users\n          description: \"Add provisioned users for an application.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"productiv-developer.publish-provisioned-users\"\n          with:\n            appId: \"tools.appId\"\n            users: \"tools.users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-provisioned-users\n          description: \"Retrieve the list of users provisioned to an application.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.get-provisioned-users\"\n          with:\n            appId: \"tools.appId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-provisioned-users\n\
+  \          description: \"Remove provisioned users from an application.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"productiv-developer.delete-provisioned-users\"\n          with:\n            appId: \"tools.appId\"\n            users: \"tools.users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: publish-org-chart\n          description: \"Publish organizational chart data.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"productiv-developer.publish-org-chart\"\n          with:\n            users: \"tools.users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-batch-upload-urls\n          description: \"Get signed upload URLs for batch file uploads.\"\n          hints:\n            readOnly: true\n            openWorld: true\n     \
+  \     call: \"productiv-developer.get-batch-upload-urls\"\n          with:\n            appId: \"tools.appId\"\n            filenames: \"tools.filenames\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-app-summaries\n          description: \"Query all apps in your company portfolio.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.get-app-summaries\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-app-details\n          description: \"Fetch detailed information about a particular app.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.get-app-details\"\n          with:\n            applicationId: \"tools.applicationId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-provisioning-workflows\n\
+  \          description: \"List all provisioning workflows.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.list-provisioning-workflows\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-provisioning-execution-summaries\n          description: \"List provisioning workflow execution summaries.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.list-provisioning-execution-summaries\"\n          with:\n            workflowId: \"tools.workflowId\"\n            startTime: \"tools.startTime\"\n            endTime: \"tools.endTime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-provisioning-workflow-execution\n          description: \"Get details of a specific provisioning workflow execution.\"\n          hints:\n            readOnly: true\n\
+  \            openWorld: true\n          call: \"productiv-developer.get-provisioning-workflow-execution\"\n          with:\n            workflowId: \"tools.workflowId\"\n            executionId: \"tools.executionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-audit-events\n          description: \"Fetch audit events for platform activities.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"productiv-developer.get-audit-events\"\n          with:\n            startTime: \"tools.startTime\"\n            endTime: \"tools.endTime\"\n            nextPageToken: \"tools.nextPageToken\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/productiv/refs/heads/main/capabilities/saas-management.yaml
 tags:
 - Productiv
 - SaaS Management

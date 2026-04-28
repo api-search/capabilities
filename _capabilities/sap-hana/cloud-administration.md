@@ -39,54 +39,64 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- list alert events.
-- delete a service instance permanently.
-- delete an instance.
-- list triggered alert events for an instance.
-- update an instance.
-- provision a new sap hana cloud instance.
-- list instances
-- get database metrics.
 - in-memory
-- alert monitoring.
-- administration
-- instance lifecycle management.
-- retrieve database performance metrics.
-- list mappings
+- create instance
 - sap hana
-- get metering
-- performance metrics.
-- list all sap hana cloud service instances.
 - list alert rules for an instance.
+- database
+- monitoring
+- list instance mappings.
+- enterprise
+- list triggered alert events for an instance.
+- delete an instance.
+- get instance details.
+- provision a new instance.
+- list inventory
+- get details of a specific instance.
+- alert monitoring.
+- list mappings
+- get database metrics.
+- analytics
+- update instance configuration.
+- list alert rules
+- instance lifecycle management.
+- list all sap hana cloud instances.
+- create a new instance mapping.
+- list all sap hana cloud service instances.
+- update alert rules for an instance.
+- list alerts
+- delete a service instance permanently.
+- list instances
+- get metering
+- delete instance
+- retrieve database performance metrics.
+- get metrics
+- cloud
+- performance metrics.
+- update an instance.
+- retrieve consumption metering data.
+- provision a new sap hana cloud instance.
+- administration
 - get instance
 - create mapping
-- delete mapping
-- monitoring
-- list alerts
-- get details of a specific instance.
-- cloud
-- database
-- create a new instance mapping.
-- update instance configuration.
-- update alert rules
-- retrieve consumption metering data.
-- update alert rules for an instance.
-- delete an instance mapping.
-- get instance details.
-- analytics
-- create instance
-- list inventory
-- enterprise
-- delete instance
-- list all instances in the inventory.
-- individual instance operations.
-- provision a new instance.
-- get metrics
 - update instance
-- list all sap hana cloud instances.
-- list instance mappings.
-- list alert rules
+- delete an instance mapping.
+- delete mapping
+- list all instances in the inventory.
+- list alert events.
+- update alert rules
+- individual instance operations.
 slug: cloud-administration
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP HANA Cloud Administration\"\n  description: \"Unified workflow for SAP HANA Cloud database administration including instance lifecycle management, monitoring alerts, performance metrics, and metering. Used by database administrators and cloud platform engineers.\"\n  tags:\n    - SAP HANA\n    - Cloud\n    - Administration\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SAP_HANA_OAUTH_TOKEN: SAP_HANA_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: hana-cloud-rest\n      location: ./shared/hana-cloud-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hana-cloud-admin-api\n      description: \"Unified REST API for SAP HANA Cloud administration.\"\n      resources:\n        - path: /v1/instances\n          name: instances\n          description: \"Instance lifecycle management.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-instances\n              description: \"List all SAP HANA Cloud instances.\"\n              call: \"hana-cloud-rest.list-service-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-instance\n              description: \"Provision a new instance.\"\n              call: \"hana-cloud-rest.create-service-instance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/instances/{instanceId}\n          name: instance-details\n          description: \"Individual instance operations.\"\n          operations:\n            - method: GET\n              name: get-instance\n              description: \"Get instance details.\"\n              call: \"hana-cloud-rest.get-service-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-instance\n              description: \"Update an instance.\"\n              call: \"hana-cloud-rest.update-service-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-instance\n              description: \"Delete an instance.\"\n              call: \"hana-cloud-rest.delete-service-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alerts\n          name: alerts\n          description: \"Alert monitoring.\"\n          operations:\n            - method: GET\n              name: list-alerts\n              description: \"List alert events.\"\
+  \n              call: \"hana-cloud-rest.list-alert-events\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Performance metrics.\"\n          operations:\n            - method: GET\n              name: get-metrics\n              description: \"Get database metrics.\"\n              call: \"hana-cloud-rest.get-metric-values\"\n              with:\n                instanceId: \"rest.instanceId\"\n                metricName: \"rest.metricName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: hana-cloud-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SAP HANA Cloud database administration.\"\n      tools:\n        - name: list-instances\n          description:\
+  \ \"List all SAP HANA Cloud service instances.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hana-cloud-rest.list-service-instances\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-instance\n          description: \"Provision a new SAP HANA Cloud instance.\"\n          hints:\n            readOnly: false\n          call: \"hana-cloud-rest.create-service-instance\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-instance\n          description: \"Get details of a specific instance.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.get-service-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-instance\n          description: \"Update instance configuration.\"\
+  \n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"hana-cloud-rest.update-service-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-instance\n          description: \"Delete a service instance permanently.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"hana-cloud-rest.delete-service-instance\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-inventory\n          description: \"List all instances in the inventory.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.list-inventory-instances\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-alerts\n\
+  \          description: \"List triggered alert events for an instance.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.list-alert-events\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-alert-rules\n          description: \"List alert rules for an instance.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.list-alert-rules\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-alert-rules\n          description: \"Update alert rules for an instance.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"hana-cloud-rest.update-alert-rules\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n \
+  \           - type: object\n              mapping: \"$.\"\n        - name: get-metrics\n          description: \"Retrieve database performance metrics.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.get-metric-values\"\n          with:\n            instanceId: \"tools.instanceId\"\n            metricName: \"tools.metricName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metering\n          description: \"Retrieve consumption metering data.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.get-metering-values\"\n          with:\n            instanceId: \"tools.instanceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-mappings\n          description: \"List instance mappings.\"\n          hints:\n            readOnly: true\n          call: \"hana-cloud-rest.list-instance-mappings\"\n         \
+  \ outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-mapping\n          description: \"Create a new instance mapping.\"\n          hints:\n            readOnly: false\n          call: \"hana-cloud-rest.create-instance-mapping\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-mapping\n          description: \"Delete an instance mapping.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"hana-cloud-rest.delete-instance-mapping\"\n          with:\n            mappingId: \"tools.mappingId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/sap-hana/refs/heads/main/capabilities/cloud-administration.yaml
 tags:
 - SAP HANA
 - Cloud

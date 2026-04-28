@@ -47,59 +47,67 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- get the on-demand concurrency cap
-- individual monitor operations
-- get a monitor by id
-- set a new synthetics on-demand concurrency cap
-- qa
-- validate monitor
-- update a monitor
-- createMonitor
-- updateMonitor
-- deleteMonitor
-- datadog
-- mute synthetic alert monitors
-- mute a monitor
-- visualizations
-- getMonitor
-- create monitor
-- delete monitor
-- get concurrency cap
-- validateMonitor
-- unmute monitor
-- mute a synthetic test monitor
-- unmute a synthetic test monitor
-- list monitors
-- muteMonitor
-- validate synthetic monitor configurations
-- set concurrency cap
-- validate a monitor
-- GetOnDemandConcurrencyCap
-- update a synthetics alert monitor
-- monitor management for synthetic alerts
-- get a monitor
+- create a monitor
 - delete a monitor
 - monitoring
+- createMonitor
+- individual monitor operations
+- monitor management for synthetic alerts
+- update a monitor
+- validate synthetic monitor configurations
+- unmute monitor
+- qa
+- synthetics concurrency settings
+- get a monitor by id
+- deleteMonitor
 - get the synthetics on-demand concurrency cap
+- set a new synthetics on-demand concurrency cap
+- list monitors including synthetic alert monitors
 - update monitor
-- mute monitor
-- validate a synthetic monitor configuration
-- set the on-demand concurrency cap
+- muteMonitor
+- mute a synthetic test monitor
 - analytics
+- get monitor
+- platform
+- getMonitor
+- delete monitor
+- mute monitor
+- mute synthetic alert monitors
+- dashboards
+- get a monitor
+- GetOnDemandConcurrencyCap
+- visualizations
+- get concurrency cap
+- set the on-demand concurrency cap
+- validateMonitor
+- validate a synthetic monitor configuration
+- set concurrency cap
+- get the on-demand concurrency cap
+- SetOnDemandConcurrencyCap
+- create monitor
+- t1
 - monitors
+- synthetic testing
 - synthetics
 - listMonitors
-- t1
-- create a monitor
-- dashboards
+- datadog
+- mute a monitor
+- unmute a synthetic test monitor
 - create a synthetics alert monitor
-- platform
-- get monitor
-- synthetics concurrency settings
-- list monitors including synthetic alert monitors
-- SetOnDemandConcurrencyCap
-- synthetic testing
+- updateMonitor
+- update a synthetics alert monitor
+- validate monitor
+- list monitors
+- validate a monitor
 slug: synthetic-testing
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Synthetic Testing\"\n  description: \"Unified workflow for synthetic testing combining synthetics concurrency management and monitors. Used by QA engineers and SREs for managing synthetic test execution capacity and monitoring test results.\"\n  tags:\n    - Datadog\n    - Synthetic Testing\n    - Synthetics\n    - Monitors\n    - QA\n  personas:\n    - QA Engineer\n    - SRE\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-synthetics\n      location: \"./shared/synthetics.yaml\"\n    - import: dd-monitors\n      location: \"./shared/monitors.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: dd-synthetic-testing-api\n      description: \"Unified REST API for synthetic testing workflows combining synthetics and monitors.\"\n \
+  \     resources:\n        - path: /v1/synthetics/concurrency-cap\n          name: synthetics-concurrency-cap\n          description: \"Synthetics concurrency settings\"\n          operations:\n            - method: GET\n              name: GetOnDemandConcurrencyCap\n              description: \"Get the on-demand concurrency cap\"\n              call: \"dd-synthetics.GetOnDemandConcurrencyCap\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: SetOnDemandConcurrencyCap\n              description: \"Set the on-demand concurrency cap\"\n              call: \"dd-synthetics.SetOnDemandConcurrencyCap\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors\n          name: monitors\n          description: \"Monitor management for synthetic alerts\"\n          operations:\n            - method: GET\n              name: listMonitors\n\
+  \              description: \"List monitors\"\n              call: \"dd-monitors.listMonitors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createMonitor\n              description: \"Create a monitor\"\n              call: \"dd-monitors.createMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}\n          name: monitor\n          description: \"Individual monitor operations\"\n          operations:\n            - method: GET\n              name: getMonitor\n              description: \"Get a monitor\"\n              call: \"dd-monitors.getMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: updateMonitor\n              description: \"Update a monitor\"\n              call: \"dd-monitors.updateMonitor\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: deleteMonitor\n              description: \"Delete a monitor\"\n              call: \"dd-monitors.deleteMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}/mute\n          name: monitor-mute\n          description: \"Mute synthetic alert monitors\"\n          operations:\n            - method: POST\n              name: muteMonitor\n              description: \"Mute a monitor\"\n              call: \"dd-monitors.muteMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/validate\n          name: monitor-validate\n          description: \"Validate synthetic monitor configurations\"\n          operations:\n            - method: POST\n              name: validateMonitor\n\
+  \              description: \"Validate a monitor\"\n              call: \"dd-monitors.validateMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: dd-synthetic-testing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted synthetic testing workflows.\"\n      tools:\n        - name: get-concurrency-cap\n          description: \"Get the synthetics on-demand concurrency cap\"\n          call: \"dd-synthetics.GetOnDemandConcurrencyCap\"\n          hints:\n            readOnly: true\n        - name: set-concurrency-cap\n          description: \"Set a new synthetics on-demand concurrency cap\"\n          call: \"dd-synthetics.SetOnDemandConcurrencyCap\"\n        - name: list-monitors\n          description: \"List monitors including synthetic alert monitors\"\n          call: \"dd-monitors.listMonitors\"\n          hints:\n            readOnly: true\n       \
+  \ - name: get-monitor\n          description: \"Get a monitor by ID\"\n          call: \"dd-monitors.getMonitor\"\n          hints:\n            readOnly: true\n        - name: create-monitor\n          description: \"Create a synthetics alert monitor\"\n          call: \"dd-monitors.createMonitor\"\n        - name: update-monitor\n          description: \"Update a synthetics alert monitor\"\n          call: \"dd-monitors.updateMonitor\"\n          hints:\n            idempotent: true\n        - name: delete-monitor\n          description: \"Delete a monitor\"\n          call: \"dd-monitors.deleteMonitor\"\n          hints:\n            destructive: true\n        - name: mute-monitor\n          description: \"Mute a synthetic test monitor\"\n          call: \"dd-monitors.muteMonitor\"\n        - name: unmute-monitor\n          description: \"Unmute a synthetic test monitor\"\n          call: \"dd-monitors.unmuteMonitor\"\n        - name: validate-monitor\n          description: \"Validate\
+  \ a synthetic monitor configuration\"\n          call: \"dd-monitors.validateMonitor\"\n          hints:\n            readOnly: true\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/datadog/refs/heads/main/capabilities/synthetic-testing.yaml
 tags:
 - Datadog
 - Synthetic Testing

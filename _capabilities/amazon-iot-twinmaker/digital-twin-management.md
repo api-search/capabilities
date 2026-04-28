@@ -15,33 +15,38 @@ personas: []
 provider_name: Amazon IoT TwinMaker
 provider_slug: amazon-iot-twinmaker
 search_terms:
-- manages amazon iot twinmaker resources and operations
-- amazon iot twinmaker create scene
-- amazon iot twinmaker resources
-- amazon iot twinmaker create workspace
-- amazon iot twinmaker list components
-- industrial iot
-- aws
-- list components
-- Industrial Engineer
-- Solutions Architect
-- list scenes
-- list workspaces
 - amazon iot twinmaker update entity
-- 3d visualization
-- amazon iot twinmaker create entity
-- create digital twins of physical systems and environments.
-- create workspace
-- amazon iot twinmaker list workspaces
-- amazon iot twinmaker list entities
-- iot
-- list entities
 - create entity
+- amazon iot twinmaker list workspaces
+- amazon iot twinmaker create entity
+- iot
+- Industrial Engineer
 - update entity
-- digital twin
+- amazon iot twinmaker resources
+- 3d visualization
+- aws
+- amazon iot twinmaker create workspace
+- Solutions Architect
+- amazon iot twinmaker list entities
 - amazon iot twinmaker list scenes
+- amazon iot twinmaker list components
 - create scene
+- create workspace
+- manages amazon iot twinmaker resources and operations
+- create digital twins of physical systems and environments.
+- amazon iot twinmaker create scene
+- list entities
+- list scenes
+- digital twin
+- industrial iot
+- list components
+- list workspaces
 slug: digital-twin-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT TwinMaker - Digital Twin Management\n  description: Unified capability for Solutions Architect, Industrial Engineer to manage create digital twins of physical systems and environments operations.\n  tags:\n    - IoT\n    - AWS\n    - Digital Twin\n    - Industrial IoT\n    - 3D Visualization\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-twinmaker\n      location: ./shared/iot-twinmaker.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: digital-twin-management-api\n      description: Unified REST API for digital twin management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT TwinMaker resources\n          operations:\n            - method: GET\n        \
+  \      name: list-workspaces\n              description: List Workspaces\n              call: \"iot-twinmaker.list-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: digital-twin-management-mcp\n      transport: http\n      description: MCP server for AI-assisted digital twin management.\n      tools:\n        - name: list-workspaces\n          description: Amazon IoT TwinMaker List Workspaces\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-twinmaker.list-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-workspace\n          description: Amazon IoT TwinMaker Create Workspace\n          hints:\n            readOnly: false\n            \n          call: \"iot-twinmaker.create-workspace\"\n          outputParameters:\n            - type: object\n    \
+  \          mapping: \"$.\"\n\n        - name: list-scenes\n          description: Amazon IoT TwinMaker List Scenes\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-twinmaker.list-scenes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-scene\n          description: Amazon IoT TwinMaker Create Scene\n          hints:\n            readOnly: false\n            \n          call: \"iot-twinmaker.create-scene\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-entities\n          description: Amazon IoT TwinMaker List Entities\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-twinmaker.list-entities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-entity\n          description: Amazon IoT TwinMaker Create\
+  \ Entity\n          hints:\n            readOnly: false\n            \n          call: \"iot-twinmaker.create-entity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-components\n          description: Amazon IoT TwinMaker List Components\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-twinmaker.list-components\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-entity\n          description: Amazon IoT TwinMaker Update Entity\n          hints:\n            readOnly: false\n            \n          call: \"iot-twinmaker.update-entity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-twinmaker/refs/heads/main/capabilities/digital-twin-management.yaml
 tags:
 - IoT
 - AWS

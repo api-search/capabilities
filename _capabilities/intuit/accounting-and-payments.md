@@ -59,80 +59,95 @@ personas: []
 provider_name: Intuit
 provider_slug: intuit
 search_terms:
-- create invoice
-- record a new payment.
-- invoice lifecycle management.
-- retrieve a quickbooks item by id.
-- invoicing
-- update item
-- email an invoice to the customer.
 - accounting
-- create a new item.
-- create a new customer.
-- retrieve a quickbooks invoice by id.
-- financial services
-- payment management.
-- get invoice pdf.
-- retrieve a customer by id.
-- retrieve a quickbooks customer by id.
 - retrieve invoice as pdf.
-- create a new quickbooks invoice.
-- read invoice
-- void a quickbooks payment.
-- update an existing quickbooks payment.
-- retrieve a quickbooks payment by id.
-- tax preparation
-- read customer
-- taxes
-- single payment operations.
-- entity query endpoint.
-- single item operations.
-- read item
-- create payment
-- product and service catalog.
-- void an existing invoice.
-- void payment
-- update invoice
-- read payment
-- get invoice pdf
-- update a quickbooks customer record.
-- send invoice
-- void an invoice.
-- create customer
-- update an existing quickbooks item.
-- retrieve an item by id.
-- record a customer payment in quickbooks.
-- small business
-- retrieve a payment by id.
-- sales tax
-- query quickbooks entities.
-- tax
-- payments
-- create item
-- payroll
-- create a new invoice.
-- void a quickbooks invoice.
-- get pdf of a quickbooks invoice.
-- create a new customer in quickbooks.
-- query entities
-- custom fields
-- financial
-- time tracking
-- single customer operations.
-- customer management.
-- retrieve an invoice by id.
-- send a quickbooks invoice via email.
-- update an existing quickbooks invoice.
-- single invoice operations.
-- void invoice
-- update payment
-- project management
-- create a new product or service item.
-- send an invoice via email.
-- query quickbooks entities using sql-like syntax.
-- intuit
 - update customer
+- retrieve an invoice by id.
+- get invoice pdf.
+- create a new invoice.
+- get invoice pdf
+- record a new payment.
+- taxes
+- retrieve a quickbooks customer by id.
+- project management
+- query entities
+- payment management.
+- payroll
+- retrieve a quickbooks item by id.
+- create customer
+- invoice lifecycle management.
+- email an invoice to the customer.
+- read invoice
+- read item
+- financial
+- single invoice operations.
+- update payment
+- send invoice
+- retrieve a customer by id.
+- create a new item.
+- query quickbooks entities.
+- payments
+- small business
+- send an invoice via email.
+- create a new customer.
+- create invoice
+- read customer
+- retrieve a payment by id.
+- custom fields
+- sales tax
+- tax
+- time tracking
+- query quickbooks entities using sql-like syntax.
+- void an existing invoice.
+- financial services
+- update an existing quickbooks invoice.
+- update an existing quickbooks item.
+- update item
+- void invoice
+- update invoice
+- create a new quickbooks invoice.
+- create item
+- retrieve a quickbooks invoice by id.
+- retrieve an item by id.
+- void payment
+- void a quickbooks invoice.
+- create a new customer in quickbooks.
+- single payment operations.
+- product and service catalog.
+- invoicing
+- read payment
+- create payment
+- void an invoice.
+- entity query endpoint.
+- retrieve a quickbooks payment by id.
+- intuit
+- single item operations.
+- send a quickbooks invoice via email.
+- void a quickbooks payment.
+- update a quickbooks customer record.
+- customer management.
+- record a customer payment in quickbooks.
+- tax preparation
+- create a new product or service item.
+- update an existing quickbooks payment.
+- get pdf of a quickbooks invoice.
+- single customer operations.
 slug: accounting-and-payments
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Intuit Accounting and Payments\"\n  description: \"Unified workflow for small business accounting automation combining QuickBooks Online invoice, customer, item, and payment management. Used by accountants, bookkeepers, and business owners to automate financial workflows.\"\n  tags:\n    - Intuit\n    - Accounting\n    - Invoicing\n    - Payments\n    - Small Business\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INTUIT_OAUTH_ACCESS_TOKEN: INTUIT_OAUTH_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: quickbooks-accounting\n      location: ./shared/quickbooks-accounting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: intuit-accounting-api\n      description: \"Unified REST API for Intuit QuickBooks accounting and payment operations.\"\n      resources:\n        - path: /v1/invoices\n          name: invoices\n          description: \"Invoice\
+  \ lifecycle management.\"\n          operations:\n            - method: POST\n              name: create-invoice\n              description: \"Create a new invoice.\"\n              call: \"quickbooks-accounting.create-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}\n          name: invoice-detail\n          description: \"Single invoice operations.\"\n          operations:\n            - method: GET\n              name: read-invoice\n              description: \"Retrieve an invoice by ID.\"\n              call: \"quickbooks-accounting.read-invoice\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/send\n          name: invoice-send\n          description: \"Send an invoice via email.\"\n          operations:\n            - method:\
+  \ POST\n              name: send-invoice\n              description: \"Email an invoice to the customer.\"\n              call: \"quickbooks-accounting.send-invoice\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/void\n          name: invoice-void\n          description: \"Void an invoice.\"\n          operations:\n            - method: POST\n              name: void-invoice\n              description: \"Void an existing invoice.\"\n              call: \"quickbooks-accounting.void-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/pdf\n          name: invoice-pdf\n          description: \"Get invoice PDF.\"\n          operations:\n            - method: GET\n              name: get-invoice-pdf\n              description: \"Retrieve\
+  \ invoice as PDF.\"\n              call: \"quickbooks-accounting.get-invoice-pdf\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers\n          name: customers\n          description: \"Customer management.\"\n          operations:\n            - method: POST\n              name: create-customer\n              description: \"Create a new customer.\"\n              call: \"quickbooks-accounting.create-customer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers/{customerId}\n          name: customer-detail\n          description: \"Single customer operations.\"\n          operations:\n            - method: GET\n              name: read-customer\n              description: \"Retrieve a customer by ID.\"\n              call: \"quickbooks-accounting.read-customer\"\
+  \n              with:\n                customerId: \"rest.customerId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items\n          name: items\n          description: \"Product and service catalog.\"\n          operations:\n            - method: POST\n              name: create-item\n              description: \"Create a new item.\"\n              call: \"quickbooks-accounting.create-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items/{itemId}\n          name: item-detail\n          description: \"Single item operations.\"\n          operations:\n            - method: GET\n              name: read-item\n              description: \"Retrieve an item by ID.\"\n              call: \"quickbooks-accounting.read-item\"\n              with:\n                itemId: \"rest.itemId\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description: \"Payment management.\"\n          operations:\n            - method: POST\n              name: create-payment\n              description: \"Record a new payment.\"\n              call: \"quickbooks-accounting.create-payment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments/{paymentId}\n          name: payment-detail\n          description: \"Single payment operations.\"\n          operations:\n            - method: GET\n              name: read-payment\n              description: \"Retrieve a payment by ID.\"\n              call: \"quickbooks-accounting.read-payment\"\n              with:\n                paymentId: \"rest.paymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/query\n          name: query\n\
+  \          description: \"Entity query endpoint.\"\n          operations:\n            - method: GET\n              name: query-entities\n              description: \"Query QuickBooks entities.\"\n              call: \"quickbooks-accounting.query-entities\"\n              with:\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: intuit-accounting-mcp\n      transport: http\n      description: \"MCP server for AI-assisted QuickBooks accounting and payment management.\"\n      tools:\n        - name: create-invoice\n          description: \"Create a new QuickBooks invoice.\"\n          hints:\n            readOnly: false\n          call: \"quickbooks-accounting.create-invoice\"\n          with:\n            customer_ref: \"tools.customer_ref\"\n            line_items: \"tools.line_items\"\n          outputParameters:\n            - type: object\n \
+  \             mapping: \"$.\"\n        - name: read-invoice\n          description: \"Retrieve a QuickBooks invoice by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"quickbooks-accounting.read-invoice\"\n          with:\n            invoiceId: \"tools.invoiceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-invoice\n          description: \"Update an existing QuickBooks invoice.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"quickbooks-accounting.update-invoice\"\n          with:\n            invoice_id: \"tools.invoice_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-invoice\n          description: \"Send a QuickBooks invoice via email.\"\n          hints:\n            readOnly: false\n          call: \"quickbooks-accounting.send-invoice\"\
+  \n          with:\n            invoiceId: \"tools.invoiceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: void-invoice\n          description: \"Void a QuickBooks invoice.\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"quickbooks-accounting.void-invoice\"\n          with:\n            invoice_id: \"tools.invoice_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-invoice-pdf\n          description: \"Get PDF of a QuickBooks invoice.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"quickbooks-accounting.get-invoice-pdf\"\n          with:\n            invoiceId: \"tools.invoiceId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: query-entities\n          description:\
+  \ \"Query QuickBooks entities using SQL-like syntax.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"quickbooks-accounting.query-entities\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-customer\n          description: \"Create a new customer in QuickBooks.\"\n          hints:\n            readOnly: false\n          call: \"quickbooks-accounting.create-customer\"\n          with:\n            display_name: \"tools.display_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-customer\n          description: \"Retrieve a QuickBooks customer by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"quickbooks-accounting.read-customer\"\n          with:\n            customerId: \"tools.customerId\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-customer\n          description: \"Update a QuickBooks customer record.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"quickbooks-accounting.update-customer\"\n          with:\n            customer_id: \"tools.customer_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-item\n          description: \"Create a new product or service item.\"\n          hints:\n            readOnly: false\n          call: \"quickbooks-accounting.create-item\"\n          with:\n            name: \"tools.name\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-item\n          description: \"Retrieve a QuickBooks item by ID.\"\n          hints:\n\
+  \            readOnly: true\n            idempotent: true\n          call: \"quickbooks-accounting.read-item\"\n          with:\n            itemId: \"tools.itemId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-item\n          description: \"Update an existing QuickBooks item.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"quickbooks-accounting.update-item\"\n          with:\n            item_id: \"tools.item_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-payment\n          description: \"Record a customer payment in QuickBooks.\"\n          hints:\n            readOnly: false\n          call: \"quickbooks-accounting.create-payment\"\n          with:\n            customer_ref: \"tools.customer_ref\"\n            total_amount: \"tools.total_amount\"\n     \
+  \     outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: read-payment\n          description: \"Retrieve a QuickBooks payment by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"quickbooks-accounting.read-payment\"\n          with:\n            paymentId: \"tools.paymentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-payment\n          description: \"Update an existing QuickBooks payment.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"quickbooks-accounting.update-payment\"\n          with:\n            payment_id: \"tools.payment_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: void-payment\n          description: \"Void a QuickBooks payment.\"\n          hints:\n     \
+  \       readOnly: false\n            destructive: true\n          call: \"quickbooks-accounting.void-payment\"\n          with:\n            payment_id: \"tools.payment_id\"\n            sync_token: \"tools.sync_token\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/intuit/refs/heads/main/capabilities/accounting-and-payments.yaml
 tags:
 - Intuit
 - Accounting

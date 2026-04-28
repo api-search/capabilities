@@ -19,59 +19,67 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- stream create direct upload
-- stream create live input
-- containers
-- images list variants
-- api gateway
-- stream list videos
-- list videos.
-- object storage
-- list images.
-- stream delete video
-- real-time communication
-- list images
-- list live streaming inputs.
-- edge computing
-- dns
-- cdn
-- upload a video from url.
-- images create direct upload
-- upload an image.
-- get video details.
-- edge
-- images delete image
-- video management.
-- image management.
-- create a direct upload url.
-- ddos protection
-- images upload image
-- video
-- list all images.
+- stream get video
 - ai gateway
-- list image variants.
+- list videos.
+- images upload image
+- serverless
+- cloudflare
+- upload a video from url.
+- edge computing
+- stream list videos
+- create a live streaming input.
+- upload an image.
+- video
+- get video details.
+- create a direct upload url for images.
+- list videos
+- list all images.
+- platform
+- artificial intelligence
+- list images
+- stream list live inputs
+- images get image
+- web performance
+- api gateway
+- create a direct upload url.
+- delete a video.
+- containers
+- images delete image
+- get image details.
+- images create direct upload
+- object storage
+- ddos protection
+- cdn
+- list live streaming inputs.
+- delete an image.
 - cloud
+- edge
+- stream create direct upload
+- security
+- image management.
+- real-time communication
 - images list images
 - stream upload video
-- web performance
-- create a direct upload url for images.
-- delete a video.
-- serverless
-- media
-- images get image
-- artificial intelligence
-- stream get video
-- create a live streaming input.
-- cloudflare
-- platform
-- get image details.
-- delete an image.
-- list all videos.
+- stream delete video
+- dns
 - images
-- list videos
-- security
-- stream list live inputs
+- list all videos.
+- images list variants
+- media
+- list images.
+- list image variants.
+- video management.
+- stream create live input
 slug: media-and-content
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Media and Content\"\n  description: \"Media management combining Stream video platform and Images service for uploading, processing, and delivering video and image content at scale. Used by content creators and media engineers.\"\n  tags:\n    - Cloudflare\n    - Media\n    - Video\n    - Images\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-stream\n      location: ./shared/stream.yaml\n    - import: cloudflare-images\n      location: ./shared/images.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: media-content-api\n      description: \"Unified REST API for Cloudflare media and content services.\"\n      resources:\n        - path: /v1/videos\n          name: videos\n          description: \"Video management.\"\n          operations:\n      \
+  \      - method: GET\n              name: list-videos\n              description: \"List videos.\"\n              call: \"cloudflare-stream.list-videos\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Image management.\"\n          operations:\n            - method: GET\n              name: list-images\n              description: \"List images.\"\n              call: \"cloudflare-images.list-images\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: media-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare media management.\"\n      tools:\n        - name: stream-list-videos\n\
+  \          description: \"List all videos.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-stream.list-videos\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stream-upload-video\n          description: \"Upload a video from URL.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-stream.upload-video\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stream-get-video\n          description: \"Get video details.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-stream.get-video\"\n          with:\n            account_id: \"tools.account_id\"\n            video_id: \"tools.video_id\"\n          outputParameters:\n            - type: object\n\
+  \              mapping: \"$.\"\n        - name: stream-delete-video\n          description: \"Delete a video.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-stream.delete-video\"\n          with:\n            account_id: \"tools.account_id\"\n            video_id: \"tools.video_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stream-list-live-inputs\n          description: \"List live streaming inputs.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-stream.list-live-inputs\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stream-create-live-input\n          description: \"Create a live streaming input.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-stream.create-live-input\"\n       \
+  \   with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stream-create-direct-upload\n          description: \"Create a direct upload URL.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-stream.create-direct-upload\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-list-images\n          description: \"List all images.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-images.list-images\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-upload-image\n          description: \"Upload an image.\"\n          hints:\n            readOnly: false\n        \
+  \  call: \"cloudflare-images.upload-image\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-get-image\n          description: \"Get image details.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-images.get-image\"\n          with:\n            account_id: \"tools.account_id\"\n            image_id: \"tools.image_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-delete-image\n          description: \"Delete an image.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-images.delete-image\"\n          with:\n            account_id: \"tools.account_id\"\n            image_id: \"tools.image_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-list-variants\n\
+  \          description: \"List image variants.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-images.list-image-variants\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: images-create-direct-upload\n          description: \"Create a direct upload URL for images.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-images.create-image-direct-upload\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudflare/refs/heads/main/capabilities/media-and-content.yaml
 tags:
 - Cloudflare
 - Media

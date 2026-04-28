@@ -59,73 +59,86 @@ personas: []
 provider_name: Azure Active Directory
 provider_slug: azure-active-directory
 search_terms:
-- add a group member.
-- identity
-- list azure ad service principals.
-- single user operations.
-- microsoft
-- openid connect
-- register a new application in azure ad.
-- single sign-on
-- create user
-- list groups and roles a user belongs to.
-- group membership.
-- get a service principal by id.
-- delete an azure ad user account.
-- get azure ad group details.
-- create a group.
-- zero trust
-- list group members
-- authentication
-- get user details.
-- app registration management.
-- create a new azure ad group.
 - user lifecycle management.
-- create a new user.
-- get application
-- get azure ad user details by id or upn.
-- authorization
-- delete an azure ad group.
-- azure active directory
-- update azure ad user properties.
-- list members of an azure ad group.
-- list app registrations.
-- scim
-- get an application registration by id.
-- list directory users.
-- get group details.
-- list azure ad application registrations.
-- list group members.
-- service principal management.
-- delete group
-- update user properties.
-- get user
-- delete user
-- list users
-- group management.
-- oauth
-- update user
+- create user
+- register a new application in azure ad.
+- delete an azure ad user account.
 - list user memberships
-- create application
-- list groups
-- get service principal
-- delete a user.
+- azure active directory
 - saml
-- create a new azure ad user account.
-- add group member
-- list azure ad users with optional filtering.
-- list azure ad groups with optional filtering.
-- add a member to an azure ad group.
-- list service principals
-- list service principals.
-- access management
 - list groups.
+- update user properties.
+- get a service principal by id.
+- list azure ad application registrations.
+- list azure ad service principals.
+- list azure ad users with optional filtering.
+- list directory users.
 - get group
+- delete an azure ad group.
 - list applications
-- single group operations.
-- create group
+- list service principals.
+- oauth
+- create a new azure ad group.
+- update azure ad user properties.
+- get service principal
+- authentication
+- zero trust
+- list groups and roles a user belongs to.
+- delete group
 - microsoft entra
+- get azure ad group details.
+- update user
+- delete a user.
+- single sign-on
+- get application
+- add a group member.
+- list groups
+- authorization
+- group membership.
+- list azure ad groups with optional filtering.
+- list group members.
+- group management.
+- access management
+- list app registrations.
+- delete user
+- service principal management.
+- openid connect
+- list users
+- single user operations.
+- create a new azure ad user account.
+- scim
+- app registration management.
+- identity
+- create group
+- create a new user.
+- list group members
+- get an application registration by id.
+- add a member to an azure ad group.
+- microsoft
+- get user
+- list service principals
+- create a group.
+- get azure ad user details by id or upn.
+- create application
+- get user details.
+- get group details.
+- add group member
+- list members of an azure ad group.
+- single group operations.
 slug: identity-and-access
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure AD Identity and Access Management\"\n  description: \"Unified identity and access management workflow combining user lifecycle, group management, application registration, and service principal operations. Used by IT administrators and identity engineers to manage enterprise identity infrastructure.\"\n  tags:\n    - Microsoft Entra\n    - Identity\n    - Access Management\n    - Azure Active Directory\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_ACCESS_TOKEN: MICROSOFT_GRAPH_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-identity\n      location: ./shared/microsoft-graph-identity.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-ad-iam-api\n      description: \"Unified REST API for Azure AD identity and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description:\
+  \ \"User lifecycle management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List directory users.\"\n              call: \"graph-identity.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user.\"\n              call: \"graph-identity.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user-detail\n          description: \"Single user operations.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details.\"\n              call: \"graph-identity.get-user\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-user\n              description: \"Update user properties.\"\n              call: \"graph-identity.update-user\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-user\n              description: \"Delete a user.\"\n              call: \"graph-identity.delete-user\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List groups.\"\n              call: \"graph-identity.list-groups\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a group.\"\n              call: \"graph-identity.create-group\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups/{groupId}\n          name: group-detail\n          description: \"Single group operations.\"\n          operations:\n            - method: GET\n              name: get-group\n              description: \"Get group details.\"\n              call: \"graph-identity.get-group\"\n              with:\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups/{groupId}/members\n          name: group-members\n          description: \"Group membership.\"\n          operations:\n            - method: GET\n              name: list-group-members\n\
+  \              description: \"List group members.\"\n              call: \"graph-identity.list-group-members\"\n              with:\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-group-member\n              description: \"Add a group member.\"\n              call: \"graph-identity.add-group-member\"\n              with:\n                groupId: \"rest.groupId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications\n          name: applications\n          description: \"App registration management.\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"List app registrations.\"\n              call: \"graph-identity.list-applications\"\n              outputParameters:\n                - type: object\n\
+  \                  mapping: \"$.\"\n        - path: /v1/service-principals\n          name: service-principals\n          description: \"Service principal management.\"\n          operations:\n            - method: GET\n              name: list-service-principals\n              description: \"List service principals.\"\n              call: \"graph-identity.list-service-principals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: azure-ad-iam-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure AD identity and access management.\"\n      tools:\n        - name: list-users\n          description: \"List Azure AD users with optional filtering.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"graph-identity.list-users\"\n          outputParameters:\n            - type: object\n  \
+  \            mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new Azure AD user account.\"\n          hints:\n            readOnly: false\n          call: \"graph-identity.create-user\"\n          with:\n            display_name: \"tools.display_name\"\n            mail_nickname: \"tools.mail_nickname\"\n            user_principal_name: \"tools.user_principal_name\"\n            password: \"tools.password\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get Azure AD user details by ID or UPN.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.get-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-user\n          description: \"Update Azure AD user properties.\"\n          hints:\n  \
+  \          readOnly: false\n            idempotent: true\n          call: \"graph-identity.update-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Delete an Azure AD user account.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"graph-identity.delete-user\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-user-memberships\n          description: \"List groups and roles a user belongs to.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.list-user-member-of\"\n          with:\n            userId: \"tools.userId\"\n          outputParameters:\n            - type: object\n         \
+  \     mapping: \"$.\"\n        - name: list-groups\n          description: \"List Azure AD groups with optional filtering.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"graph-identity.list-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-group\n          description: \"Create a new Azure AD group.\"\n          hints:\n            readOnly: false\n          call: \"graph-identity.create-group\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-group\n          description: \"Get Azure AD group details.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.get-group\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
+  \ delete-group\n          description: \"Delete an Azure AD group.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"graph-identity.delete-group\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-group-members\n          description: \"List members of an Azure AD group.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.list-group-members\"\n          with:\n            groupId: \"tools.groupId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-group-member\n          description: \"Add a member to an Azure AD group.\"\n          hints:\n            readOnly: false\n          call: \"graph-identity.add-group-member\"\n          with:\n            groupId: \"tools.groupId\"\n\
+  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-applications\n          description: \"List Azure AD application registrations.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"graph-identity.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-application\n          description: \"Register a new application in Azure AD.\"\n          hints:\n            readOnly: false\n          call: \"graph-identity.create-application\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-application\n          description: \"Get an application registration by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.get-application\"\n          with:\n            applicationId:\
+  \ \"tools.applicationId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-service-principals\n          description: \"List Azure AD service principals.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"graph-identity.list-service-principals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-service-principal\n          description: \"Get a service principal by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"graph-identity.get-service-principal\"\n          with:\n            servicePrincipalId: \"tools.servicePrincipalId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/azure-active-directory/refs/heads/main/capabilities/identity-and-access.yaml
 tags:
 - Microsoft Entra
 - Identity

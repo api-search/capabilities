@@ -65,59 +65,69 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- recruiting
-- job posting, recruiting, and applicant tracking.
-- employee development tracking and content access.
-- get seatholders
-- sales intelligence, lead management, and crm integration.
-- careers
-- get customer ats integration details.
-- get exported candidates
-- retrieve candidate matches.
-- marketing
-- create or update a job posting.
-- get customer integrations
-- business
-- sync applications
-- delete synced candidates.
-- talent acquisition
-- check job posting task status.
-- data portability and advertiser transparency for dma.
-- get exported candidate profiles.
-- create resume upload url.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- message archiving and regulatory communications governance.
-- uses sales navigator for lead generation and crm sync.
 - retrieve recruiter seatholders.
-- update customer ats integrations.
-- create or update entity acl.
-- get job posting task status
-- create or update job posting
-- delete applications
-- get child application
-- tracks employee learning activity and completions.
-- professional networking
-- create resume upload url
-- integrates linkedin authentication and sharing into applications.
-- delete candidates
-- provision child application
-- update customer integrations
-- posts jobs and manages candidates through ats integrations.
-- get candidate matches
-- provision a child application.
-- job posting
-- sync candidates
-- authentication, sharing, and verification for consumer apps.
-- sync job applications.
-- archives communications for regulatory compliance.
-- b2b advertising, audience targeting, and campaign analytics.
-- upsert entity acl
-- social media
 - get child application credentials.
-- linkedin
+- b2b advertising, audience targeting, and campaign analytics.
+- get job posting task status
+- create or update entity acl.
+- employee development tracking and content access.
+- create or update a job posting.
+- get exported candidates
+- sync candidates
+- get seatholders
+- update customer integrations
+- get candidate matches
+- sales intelligence, lead management, and crm integration.
 - sync candidates to linkedin.
+- archives communications for regulatory compliance.
+- retrieve candidate matches.
+- uses sales navigator for lead generation and crm sync.
+- delete synced candidates.
+- careers
+- get child application
+- provision child application
+- integrates linkedin authentication and sharing into applications.
+- data portability and advertiser transparency for dma.
+- talent acquisition
+- job posting, recruiting, and applicant tracking.
 - delete synced applications.
+- get customer integrations
+- job posting
+- sync applications
+- provision a child application.
+- delete candidates
+- authentication, sharing, and verification for consumer apps.
+- upsert entity acl
+- tracks employee learning activity and completions.
+- get customer ats integration details.
+- recruiting
+- message archiving and regulatory communications governance.
+- professional networking
+- manages b2b ad campaigns and audience targeting on linkedin.
+- create or update job posting
+- check job posting task status.
+- marketing
+- delete applications
+- create resume upload url.
+- posts jobs and manages candidates through ats integrations.
+- create resume upload url
+- social media
+- business
+- linkedin
+- get exported candidate profiles.
+- sync job applications.
+- update customer ats integrations.
 slug: talent-acquisition
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Talent Acquisition\"\n  description: \"Unified workflow for recruiters to post jobs, sync candidates and applications via ATS, manage recruiter integrations, and provision partner applications -- combining job posting, RSC, and provisioning APIs.\"\n  tags:\n    - LinkedIn\n    - Talent Acquisition\n    - Recruiting\n    - Job Posting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: talent-job-posting\n      location: ./shared/talent-job-posting.yaml\n    - import: talent-rsc\n      location: ./shared/talent-recruiter-system-connect.yaml\n    - import: talent-learning-parent-app\n      location: ./shared/talent-learning-parent-application.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: talent-acquisition-api\n      description: \"Unified REST API for LinkedIn\
+  \ talent acquisition workflows.\"\n      resources:\n        - path: /v1/job-postings\n          name: job-postings\n          operations:\n            - method: POST\n              name: create-or-update-job-posting\n              description: \"Create or update a job posting.\"\n              call: \"talent-job-posting.create-or-update-job-posting\"\n        - path: /v1/job-posting-tasks\n          name: job-posting-tasks\n          operations:\n            - method: GET\n              name: get-job-posting-task-status\n              description: \"Check job posting task status.\"\n              call: \"talent-job-posting.get-job-posting-task-status\"\n        - path: /v1/ats-integrations\n          name: ats-integrations\n          operations:\n            - method: POST\n              name: update-customer-integrations\n              description: \"Update customer ATS integrations.\"\n              call: \"talent-job-posting.update-customer-integrations\"\n            - method: GET\n\
+  \              name: get-customer-integrations\n              description: \"Get customer ATS integration details.\"\n              call: \"talent-job-posting.get-customer-integrations\"\n        - path: /v1/candidates\n          name: candidates\n          operations:\n            - method: PUT\n              name: sync-candidates\n              description: \"Sync candidates to LinkedIn.\"\n              call: \"talent-rsc.sync-candidates\"\n            - method: GET\n              name: get-candidate-matches\n              description: \"Retrieve candidate matches.\"\n              call: \"talent-rsc.get-candidate-matches\"\n            - method: DELETE\n              name: delete-candidates\n              description: \"Delete synced candidates.\"\n              call: \"talent-rsc.delete-candidates\"\n        - path: /v1/applications\n          name: applications\n          operations:\n            - method: PUT\n              name: sync-applications\n              description: \"\
+  Sync job applications.\"\n              call: \"talent-rsc.sync-applications\"\n            - method: DELETE\n              name: delete-applications\n              description: \"Delete synced applications.\"\n              call: \"talent-rsc.delete-applications\"\n        - path: /v1/exported-candidates\n          name: exported-candidates\n          operations:\n            - method: GET\n              name: get-exported-candidates\n              description: \"Get exported candidate profiles.\"\n              call: \"talent-rsc.get-exported-candidates\"\n        - path: /v1/seatholders\n          name: seatholders\n          operations:\n            - method: GET\n              name: get-seatholders\n              description: \"Retrieve recruiter seatholders.\"\n              call: \"talent-rsc.get-seatholders\"\n        - path: /v1/provisioned-applications\n          name: provisioned-applications\n          operations:\n            - method: POST\n              name: provision-child-application\n\
+  \              description: \"Provision a child application.\"\n              call: \"talent-learning-parent-app.provision-child-application\"\n            - method: GET\n              name: get-child-application\n              description: \"Get child application credentials.\"\n              call: \"talent-learning-parent-app.get-child-application\"\n\n    - type: mcp\n      port: 9095\n      namespace: talent-acquisition-mcp\n      transport: http\n      description: \"MCP server for AI-assisted LinkedIn talent acquisition.\"\n      tools:\n        - name: create-or-update-job-posting\n          description: \"Create or update a job posting.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"talent-job-posting.create-or-update-job-posting\"\n        - name: get-job-posting-task-status\n          description: \"Check job posting task status.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"\
+  talent-job-posting.get-job-posting-task-status\"\n        - name: update-customer-integrations\n          description: \"Update customer ATS integrations.\"\n          hints: { readOnly: false, destructive: false, idempotent: true }\n          call: \"talent-job-posting.update-customer-integrations\"\n        - name: get-customer-integrations\n          description: \"Get customer ATS integration details.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"talent-job-posting.get-customer-integrations\"\n        - name: sync-candidates\n          description: \"Sync candidates to LinkedIn.\"\n          hints: { readOnly: false, destructive: false, idempotent: true }\n          call: \"talent-rsc.sync-candidates\"\n        - name: get-candidate-matches\n          description: \"Retrieve candidate matches.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"talent-rsc.get-candidate-matches\"\n        -\
+  \ name: delete-candidates\n          description: \"Delete synced candidates.\"\n          hints: { readOnly: false, destructive: true, idempotent: true }\n          call: \"talent-rsc.delete-candidates\"\n        - name: sync-applications\n          description: \"Sync job applications.\"\n          hints: { readOnly: false, destructive: false, idempotent: true }\n          call: \"talent-rsc.sync-applications\"\n        - name: delete-applications\n          description: \"Delete synced applications.\"\n          hints: { readOnly: false, destructive: true, idempotent: true }\n          call: \"talent-rsc.delete-applications\"\n        - name: create-resume-upload-url\n          description: \"Create resume upload URL.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"talent-rsc.create-resume-upload-url\"\n        - name: get-exported-candidates\n          description: \"Get exported candidate profiles.\"\n          hints: { readOnly: true,\
+  \ destructive: false, idempotent: true }\n          call: \"talent-rsc.get-exported-candidates\"\n        - name: get-seatholders\n          description: \"Retrieve recruiter seatholders.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"talent-rsc.get-seatholders\"\n        - name: upsert-entity-acl\n          description: \"Create or update entity ACL.\"\n          hints: { readOnly: false, destructive: false, idempotent: true }\n          call: \"talent-rsc.upsert-entity-acl\"\n        - name: provision-child-application\n          description: \"Provision a child application.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"talent-learning-parent-app.provision-child-application\"\n        - name: get-child-application\n          description: \"Get child application credentials.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"talent-learning-parent-app.get-child-application\"\
+  \n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/linkedin/refs/heads/main/capabilities/talent-acquisition.yaml
 tags:
 - LinkedIn
 - Talent Acquisition

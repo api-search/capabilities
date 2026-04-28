@@ -42,80 +42,94 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list worker scripts.
-- workers delete script
-- pull messages from a queue.
-- pages project management.
-- list worker deployments.
-- containers
-- create a worker deployment.
-- workers list secrets
-- api gateway
-- list message queues.
-- delete a queue.
-- object storage
-- pages create project
+- workers list scripts
+- workers list routes
+- pages deployment management.
+- queues pull messages
+- ai gateway
+- list queues.
 - create a pages project.
-- queues send message
-- list pages deployments
-- real-time communication
-- list workers
+- worker script management.
+- serverless
+- cloudflare
+- list durable objects in a namespace.
+- create a message queue.
+- list durable object namespaces
+- pages create project
 - edge computing
 - pages list deployments
-- list durable objects in a namespace.
-- dns
-- list worker scripts
-- list worker secrets.
-- cdn
-- list pages projects
-- workers upload script
-- queues list queues
-- list all workers.
-- durable objects list namespaces
-- list pages projects.
-- rollback a pages deployment.
-- edge
-- list queues
-- list all workers for an account.
-- delete a worker script.
-- get pages project details.
-- pages deployment management.
-- ddos protection
-- queue management.
-- list queues.
-- workers list scripts
-- workers list deployments
-- deployment
-- list durable object namespaces.
-- upload a worker script.
-- create a message queue.
-- queues delete queue
-- pages get project
-- workers create deployment
-- ai gateway
-- worker script management.
-- cloud
-- durable object namespace management.
-- list deployments
-- list durable object namespaces
-- workers list routes
-- web performance
-- pages list projects
-- serverless
-- list pages deployments.
-- list worker routes.
-- workers list workers
-- pages rollback deployment
-- artificial intelligence
-- cloudflare
-- platform
 - send a message to a queue.
-- queues create queue
-- queues pull messages
+- pull messages from a queue.
+- workers upload script
+- list message queues.
+- pages project management.
+- get pages project details.
+- queue management.
+- workers list workers
 - worker deployment management.
+- workers delete script
+- list pages projects.
+- list worker routes.
+- artificial intelligence
+- platform
+- deployment
+- list pages projects
+- durable object namespace management.
 - durable objects list objects
+- list worker deployments.
+- pages rollback deployment
+- web performance
+- api gateway
+- workers create deployment
+- workers list deployments
+- containers
+- upload a worker script.
+- pages list projects
+- list worker scripts.
+- rollback a pages deployment.
+- create a worker deployment.
+- object storage
+- list worker secrets.
+- queues send message
+- ddos protection
+- cdn
+- list queues
+- list workers
+- list all workers for an account.
+- cloud
+- queues create queue
+- edge
+- list durable object namespaces.
+- workers list secrets
 - security
+- real-time communication
+- queues list queues
+- list worker scripts
+- delete a worker script.
+- list deployments
+- durable objects list namespaces
+- dns
+- list all workers.
+- list pages deployments.
+- delete a queue.
+- queues delete queue
+- list pages deployments
+- pages get project
 slug: serverless-compute
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Serverless Compute\"\n  description: \"Deploy and manage serverless applications on Cloudflare's edge network combining Workers scripts, Pages deployments, Durable Objects for state, and Queues for async messaging. Used by developers and platform engineers building edge-first applications.\"\n  tags:\n    - Cloudflare\n    - Serverless\n    - Edge Computing\n    - Deployment\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-workers\n      location: ./shared/workers.yaml\n    - import: cloudflare-pages\n      location: ./shared/pages.yaml\n    - import: cloudflare-durable-objects\n      location: ./shared/durable-objects.yaml\n    - import: cloudflare-queues\n      location: ./shared/queues.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: serverless-compute-api\n\
+  \      description: \"Unified REST API for Cloudflare serverless compute management.\"\n      resources:\n        - path: /v1/workers\n          name: workers\n          description: \"Worker script management.\"\n          operations:\n            - method: GET\n              name: list-workers\n              description: \"List all Workers.\"\n              call: \"cloudflare-workers.list-workers\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/scripts\n          name: scripts\n          description: \"Worker script management.\"\n          operations:\n            - method: GET\n              name: list-worker-scripts\n              description: \"List Worker scripts.\"\n              call: \"cloudflare-workers.list-worker-scripts\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n     \
+  \           - type: object\n                  mapping: \"$.\"\n        - path: /v1/deployments\n          name: deployments\n          description: \"Worker deployment management.\"\n          operations:\n            - method: GET\n              name: list-deployments\n              description: \"List Worker deployments.\"\n              call: \"cloudflare-workers.list-deployments\"\n              with:\n                account_id: \"rest.account_id\"\n                script_name: \"rest.script_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages-projects\n          name: pages-projects\n          description: \"Pages project management.\"\n          operations:\n            - method: GET\n              name: list-pages-projects\n              description: \"List Pages projects.\"\n              call: \"cloudflare-pages.list-pages-projects\"\n              with:\n                account_id: \"rest.account_id\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages-deployments\n          name: pages-deployments\n          description: \"Pages deployment management.\"\n          operations:\n            - method: GET\n              name: list-pages-deployments\n              description: \"List Pages deployments.\"\n              call: \"cloudflare-pages.list-pages-deployments\"\n              with:\n                account_id: \"rest.account_id\"\n                project_name: \"rest.project_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/durable-object-namespaces\n          name: durable-object-namespaces\n          description: \"Durable Object namespace management.\"\n          operations:\n            - method: GET\n              name: list-durable-object-namespaces\n              description: \"List Durable Object namespaces.\"\n       \
+  \       call: \"cloudflare-durable-objects.list-durable-object-namespaces\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Queue management.\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List queues.\"\n              call: \"cloudflare-queues.list-queues\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: serverless-compute-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare serverless compute management.\"\n      tools:\n        - name: workers-list-workers\n          description: \"List all Workers for an account.\"\
+  \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-workers.list-workers\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-list-scripts\n          description: \"List Worker scripts.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-workers.list-worker-scripts\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-upload-script\n          description: \"Upload a Worker script.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"cloudflare-workers.upload-worker-script\"\n          with:\n            account_id: \"tools.account_id\"\n            script_name: \"tools.script_name\"\n          outputParameters:\n     \
+  \       - type: object\n              mapping: \"$.\"\n        - name: workers-delete-script\n          description: \"Delete a Worker script.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-workers.delete-worker-script\"\n          with:\n            account_id: \"tools.account_id\"\n            script_name: \"tools.script_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-list-deployments\n          description: \"List Worker deployments.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-workers.list-deployments\"\n          with:\n            account_id: \"tools.account_id\"\n            script_name: \"tools.script_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-create-deployment\n          description: \"Create a Worker deployment.\"\n          hints:\n\
+  \            readOnly: false\n          call: \"cloudflare-workers.create-deployment\"\n          with:\n            account_id: \"tools.account_id\"\n            script_name: \"tools.script_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-list-routes\n          description: \"List Worker routes.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-workers.list-routes\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: workers-list-secrets\n          description: \"List Worker secrets.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-workers.list-secrets\"\n          with:\n            account_id: \"tools.account_id\"\n            script_name: \"tools.script_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\
+  \        - name: pages-list-projects\n          description: \"List Pages projects.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-pages.list-pages-projects\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: pages-create-project\n          description: \"Create a Pages project.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-pages.create-pages-project\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: pages-get-project\n          description: \"Get Pages project details.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-pages.get-pages-project\"\n          with:\n            account_id: \"tools.account_id\"\n            project_name: \"\
+  tools.project_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: pages-list-deployments\n          description: \"List Pages deployments.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-pages.list-pages-deployments\"\n          with:\n            account_id: \"tools.account_id\"\n            project_name: \"tools.project_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: pages-rollback-deployment\n          description: \"Rollback a Pages deployment.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-pages.rollback-pages-deployment\"\n          with:\n            account_id: \"tools.account_id\"\n            project_name: \"tools.project_name\"\n            deployment_id: \"tools.deployment_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: durable-objects-list-namespaces\n\
+  \          description: \"List Durable Object namespaces.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-durable-objects.list-durable-object-namespaces\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: durable-objects-list-objects\n          description: \"List Durable Objects in a namespace.\"\n          hints:\n            readOnly: true\n          call: \"cloudflare-durable-objects.list-durable-objects\"\n          with:\n            account_id: \"tools.account_id\"\n            namespace_id: \"tools.namespace_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: queues-list-queues\n          description: \"List message queues.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-queues.list-queues\"\
+  \n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: queues-create-queue\n          description: \"Create a message queue.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-queues.create-queue\"\n          with:\n            account_id: \"tools.account_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: queues-send-message\n          description: \"Send a message to a queue.\"\n          hints:\n            readOnly: false\n          call: \"cloudflare-queues.send-message\"\n          with:\n            account_id: \"tools.account_id\"\n            queue_id: \"tools.queue_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: queues-pull-messages\n          description: \"Pull messages from a queue.\"\n          hints:\n           \
+  \ readOnly: true\n          call: \"cloudflare-queues.pull-messages\"\n          with:\n            account_id: \"tools.account_id\"\n            queue_id: \"tools.queue_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: queues-delete-queue\n          description: \"Delete a queue.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"cloudflare-queues.delete-queue\"\n          with:\n            account_id: \"tools.account_id\"\n            queue_id: \"tools.queue_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudflare/refs/heads/main/capabilities/serverless-compute.yaml
 tags:
 - Cloudflare
 - Serverless

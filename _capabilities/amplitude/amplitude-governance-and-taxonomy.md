@@ -116,105 +116,123 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude update a user property
-- updateAnnotation
-- taxonomy api listEventCategories
-- updateEventProperty
-- updateEventCategory
-- amplitude list all user properties
-- taxonomy api listUserProperties
-- taxonomy api updateEventType
-- runs experiments and feature flags
-- listEventProperties
-- manages privacy and compliance
-- taxonomy api getUserProperty
-- taxonomy api updateEventProperty
-- amplitude get an event category
-- export raw event data and manage behavioral cohorts. for data analysts.
-- listAnnotations
-- amplitude
-- getEventProperty
-- manage event schemas and chart annotations. for data governance teams.
-- taxonomy api listEventProperties
-- privacy compliance
-- taxonomy api createEventCategory
-- amplitude delete an annotation
-- amplitude create a user property
-- chart annotations api listAnnotations
-- amplitude get an event property
-- amplitude delete an event type
-- taxonomy api getEventType
-- amplitude get an event type
-- taxonomy api getEventProperty
-- amplitude get a user profile
-- amplitude create an event type
-- deleteEventCategory
-- getEventCategory
-- taxonomy api updateEventCategory
-- createAnnotation
-- taxonomy api listEventTypes
-- listUserProperties
-- taxonomy api deleteUserProperty
-- chart annotations api getAnnotation
-- amplitude delete a user property
 - amplitude delete an event property
-- amplitude create an event category
-- ingests and exports event data
-- taxonomy api getEventCategory
-- data governance
-- createEventProperty
-- analyzes data and manages cohorts
-- identity management
-- analytics
-- experimentation
-- amplitude create an event property
-- unified workflow for sending events and identifying users. for data engineers.
-- amplitude update an event category
-- a/b testing
-- manage and evaluate a/b experiments and feature flags. for product managers.
 - user behavior
-- taxonomy api updateUserProperty
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- updateEventType
-- amplitude list all event types
-- deleteEventType
-- amplitude list all event categories
-- taxonomy api deleteEventCategory
-- amplitude update an event property
-- amplitude get an annotation
-- taxonomy api deleteEventType
-- amplitude list all annotations
-- deleteAnnotation
-- chart annotations api deleteAnnotation
 - listEventCategories
-- feature flags
-- taxonomy api deleteEventProperty
-- amplitude get a user property
-- createEventCategory
-- createEventType
-- product analytics
-- amplitude delete an event category
-- user profile api getUserProfile
-- getUserProperty
-- createUserProperty
-- amplitude create an annotation
-- listEventTypes
-- getEventType
-- taxonomy api createUserProperty
-- amplitude list all event properties
-- updateUserProperty
-- chart annotations api createAnnotation
-- taxonomy api createEventType
-- deleteUserProperty
-- taxonomy
-- amplitude update an event type
-- getAnnotation
-- chart annotations api updateAnnotation
-- amplitude update an annotation
 - taxonomy api createEventProperty
+- amplitude update an annotation
+- amplitude list all user properties
+- amplitude update an event category
+- amplitude delete an event type
+- amplitude get an annotation
+- listUserProperties
+- createEventCategory
+- deleteEventType
+- createEventProperty
+- taxonomy api deleteEventCategory
+- data governance
+- taxonomy api updateEventCategory
+- amplitude list all event properties
+- amplitude create an annotation
+- product analytics
+- getEventProperty
+- a/b testing
+- taxonomy api deleteEventType
+- createEventType
+- amplitude update an event property
+- amplitude delete a user property
+- amplitude get an event category
+- taxonomy api createUserProperty
+- createAnnotation
+- amplitude list all annotations
+- ingests and exports event data
+- experimentation
+- getEventCategory
+- amplitude update a user property
+- export raw event data and manage behavioral cohorts. for data analysts.
+- taxonomy api listEventProperties
+- analyzes data and manages cohorts
+- amplitude list all event types
+- taxonomy api listEventTypes
+- taxonomy api createEventType
+- taxonomy api updateUserProperty
+- getEventType
+- manages privacy and compliance
+- amplitude get a user profile
+- amplitude get a user property
+- taxonomy api createEventCategory
 - getUserProfile
+- chart annotations api listAnnotations
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- identity management
+- taxonomy api getEventCategory
+- amplitude get an event type
+- unified workflow for sending events and identifying users. for data engineers.
+- chart annotations api getAnnotation
+- amplitude delete an annotation
+- amplitude update an event type
+- runs experiments and feature flags
+- amplitude list all event categories
+- manage event schemas and chart annotations. for data governance teams.
+- chart annotations api updateAnnotation
+- amplitude
+- privacy compliance
+- deleteEventCategory
+- taxonomy api getUserProperty
 - deleteEventProperty
+- analytics
+- deleteUserProperty
+- updateEventProperty
+- user profile api getUserProfile
+- updateEventCategory
+- amplitude create a user property
+- listEventTypes
+- taxonomy api listUserProperties
+- amplitude delete an event category
+- amplitude get an event property
+- getAnnotation
+- amplitude create an event category
+- listAnnotations
+- taxonomy api getEventType
+- listEventProperties
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- getUserProperty
+- taxonomy api updateEventProperty
+- feature flags
+- taxonomy api deleteUserProperty
+- deleteAnnotation
+- updateEventType
+- taxonomy api listEventCategories
+- chart annotations api deleteAnnotation
+- taxonomy api deleteEventProperty
+- taxonomy api getEventProperty
+- taxonomy api updateEventType
+- updateAnnotation
+- chart annotations api createAnnotation
+- amplitude create an event type
+- updateUserProperty
+- createUserProperty
+- amplitude create an event property
+- taxonomy
 slug: amplitude-governance-and-taxonomy
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Governance and Taxonomy\n  description: Manage event schemas and chart annotations. For data governance teams.\n  tags:\n  - Amplitude\n  - Taxonomy\n  - Data Governance\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: chart-annotations-api\n    location: ./shared/chart-annotations-api.yaml\n  - import: taxonomy-api\n    location: ./shared/taxonomy-api.yaml\n  - import: user-profile-api\n    location: ./shared/user-profile-api.yaml\n  exposes:\n  - type: rest\n    port: 8083\n    namespace: amplitude-governance-and-taxonomy-api\n    description: REST API for Amplitude Governance and Taxonomy\n    resources:\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: GET\n        name: listAnnotations\n        description: Amplitude List All Annotations\n        call: chart-annotations-api.listAnnotations\n\
+  \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: POST\n        name: createAnnotation\n        description: Amplitude Create an Annotation\n        call: chart-annotations-api.createAnnotation\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: GET\n        name: getAnnotation\n        description: Amplitude Get an Annotation\n        call: chart-annotations-api.getAnnotation\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: PUT\n        name: updateAnnotation\n        description: Amplitude Update an Annotation\n        call: chart-annotations-api.updateAnnotation\n        with: {}\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: DELETE\n        name: deleteAnnotation\n        description: Amplitude Delete an Annotation\n        call: chart-annotations-api.deleteAnnotation\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-categories\n      name: event-categories\n      operations:\n      - method: GET\n        name: listEventCategories\n        description: Amplitude List All Event Categories\n        call: taxonomy-api.listEventCategories\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-categories\n      name: event-categories\n      operations:\n      - method: POST\n        name: createEventCategory\n        description: Amplitude Create an Event Category\n        call: taxonomy-api.createEventCategory\n        with: {}\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n    - path: /v1/event-categories\n      name: event-categories\n      operations:\n      - method: GET\n        name: getEventCategory\n        description: Amplitude Get an Event Category\n        call: taxonomy-api.getEventCategory\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-categories\n      name: event-categories\n      operations:\n      - method: PUT\n        name: updateEventCategory\n        description: Amplitude Update an Event Category\n        call: taxonomy-api.updateEventCategory\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-categories\n      name: event-categories\n      operations:\n      - method: DELETE\n        name: deleteEventCategory\n        description: Amplitude Delete an Event Category\n        call: taxonomy-api.deleteEventCategory\n        with: {}\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n    - path: /v1/event-types\n      name: event-types\n      operations:\n      - method: GET\n        name: listEventTypes\n        description: Amplitude List All Event Types\n        call: taxonomy-api.listEventTypes\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-types\n      name: event-types\n      operations:\n      - method: POST\n        name: createEventType\n        description: Amplitude Create an Event Type\n        call: taxonomy-api.createEventType\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-types\n      name: event-types\n      operations:\n      - method: GET\n        name: getEventType\n        description: Amplitude Get an Event Type\n        call: taxonomy-api.getEventType\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-types\n\
+  \      name: event-types\n      operations:\n      - method: PUT\n        name: updateEventType\n        description: Amplitude Update an Event Type\n        call: taxonomy-api.updateEventType\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-types\n      name: event-types\n      operations:\n      - method: DELETE\n        name: deleteEventType\n        description: Amplitude Delete an Event Type\n        call: taxonomy-api.deleteEventType\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-properties\n      name: event-properties\n      operations:\n      - method: GET\n        name: listEventProperties\n        description: Amplitude List All Event Properties\n        call: taxonomy-api.listEventProperties\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-properties\n      name: event-properties\n\
+  \      operations:\n      - method: POST\n        name: createEventProperty\n        description: Amplitude Create an Event Property\n        call: taxonomy-api.createEventProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-properties\n      name: event-properties\n      operations:\n      - method: GET\n        name: getEventProperty\n        description: Amplitude Get an Event Property\n        call: taxonomy-api.getEventProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-properties\n      name: event-properties\n      operations:\n      - method: PUT\n        name: updateEventProperty\n        description: Amplitude Update an Event Property\n        call: taxonomy-api.updateEventProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/event-properties\n      name: event-properties\n\
+  \      operations:\n      - method: DELETE\n        name: deleteEventProperty\n        description: Amplitude Delete an Event Property\n        call: taxonomy-api.deleteEventProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-properties\n      name: user-properties\n      operations:\n      - method: GET\n        name: listUserProperties\n        description: Amplitude List All User Properties\n        call: taxonomy-api.listUserProperties\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-properties\n      name: user-properties\n      operations:\n      - method: POST\n        name: createUserProperty\n        description: Amplitude Create a User Property\n        call: taxonomy-api.createUserProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-properties\n      name: user-properties\n\
+  \      operations:\n      - method: GET\n        name: getUserProperty\n        description: Amplitude Get a User Property\n        call: taxonomy-api.getUserProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-properties\n      name: user-properties\n      operations:\n      - method: PUT\n        name: updateUserProperty\n        description: Amplitude Update a User Property\n        call: taxonomy-api.updateUserProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-properties\n      name: user-properties\n      operations:\n      - method: DELETE\n        name: deleteUserProperty\n        description: Amplitude Delete a User Property\n        call: taxonomy-api.deleteUserProperty\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/profiles\n      name: profiles\n      operations:\n      - method:\
+  \ GET\n        name: getUserProfile\n        description: Amplitude Get a User Profile\n        call: user-profile-api.getUserProfile\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9093\n    namespace: amplitude-governance-and-taxonomy-mcp\n    transport: http\n    description: MCP for Amplitude Governance and Taxonomy\n    tools:\n    - name: chart-annotations-api-listAnnotations\n      description: Amplitude List All Annotations\n      hints:\n        readOnly: true\n      call: chart-annotations-api.listAnnotations\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: chart-annotations-api-createAnnotation\n      description: Amplitude Create an Annotation\n      hints:\n        readOnly: false\n      call: chart-annotations-api.createAnnotation\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: chart-annotations-api-getAnnotation\n\
+  \      description: Amplitude Get an Annotation\n      hints:\n        readOnly: true\n      call: chart-annotations-api.getAnnotation\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: chart-annotations-api-updateAnnotation\n      description: Amplitude Update an Annotation\n      hints:\n        readOnly: false\n      call: chart-annotations-api.updateAnnotation\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: chart-annotations-api-deleteAnnotation\n      description: Amplitude Delete an Annotation\n      hints:\n        readOnly: false\n      call: chart-annotations-api.deleteAnnotation\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-listEventCategories\n      description: Amplitude List All Event Categories\n      hints:\n        readOnly: true\n      call: taxonomy-api.listEventCategories\n      with: {}\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: taxonomy-api-createEventCategory\n      description: Amplitude Create an Event Category\n      hints:\n        readOnly: false\n      call: taxonomy-api.createEventCategory\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-getEventCategory\n      description: Amplitude Get an Event Category\n      hints:\n        readOnly: true\n      call: taxonomy-api.getEventCategory\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-updateEventCategory\n      description: Amplitude Update an Event Category\n      hints:\n        readOnly: false\n      call: taxonomy-api.updateEventCategory\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-deleteEventCategory\n      description: Amplitude Delete an Event Category\n      hints:\n        readOnly: false\n      call: taxonomy-api.deleteEventCategory\n\
+  \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-listEventTypes\n      description: Amplitude List All Event Types\n      hints:\n        readOnly: true\n      call: taxonomy-api.listEventTypes\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-createEventType\n      description: Amplitude Create an Event Type\n      hints:\n        readOnly: false\n      call: taxonomy-api.createEventType\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-getEventType\n      description: Amplitude Get an Event Type\n      hints:\n        readOnly: true\n      call: taxonomy-api.getEventType\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-updateEventType\n      description: Amplitude Update an Event Type\n      hints:\n        readOnly: false\n      call: taxonomy-api.updateEventType\n\
+  \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-deleteEventType\n      description: Amplitude Delete an Event Type\n      hints:\n        readOnly: false\n      call: taxonomy-api.deleteEventType\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-listEventProperties\n      description: Amplitude List All Event Properties\n      hints:\n        readOnly: true\n      call: taxonomy-api.listEventProperties\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-createEventProperty\n      description: Amplitude Create an Event Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.createEventProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-getEventProperty\n      description: Amplitude Get an Event Property\n      hints:\n       \
+  \ readOnly: true\n      call: taxonomy-api.getEventProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-updateEventProperty\n      description: Amplitude Update an Event Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.updateEventProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-deleteEventProperty\n      description: Amplitude Delete an Event Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.deleteEventProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-listUserProperties\n      description: Amplitude List All User Properties\n      hints:\n        readOnly: true\n      call: taxonomy-api.listUserProperties\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-createUserProperty\n  \
+  \    description: Amplitude Create a User Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.createUserProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-getUserProperty\n      description: Amplitude Get a User Property\n      hints:\n        readOnly: true\n      call: taxonomy-api.getUserProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-updateUserProperty\n      description: Amplitude Update a User Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.updateUserProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: taxonomy-api-deleteUserProperty\n      description: Amplitude Delete a User Property\n      hints:\n        readOnly: false\n      call: taxonomy-api.deleteUserProperty\n      with: {}\n      outputParameters:\n      - type: object\n        mapping:\
+  \ $.\n    - name: user-profile-api-getUserProfile\n      description: Amplitude Get a User Profile\n      hints:\n        readOnly: true\n      call: user-profile-api.getUserProfile\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amplitude/refs/heads/main/capabilities/amplitude-governance-and-taxonomy.yaml
 tags:
 - Amplitude
 - Taxonomy

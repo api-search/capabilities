@@ -19,44 +19,49 @@ personas: []
 provider_name: Microsoft Power Apps
 provider_slug: microsoft-power-apps
 search_terms:
-- update account
-- microsoft
 - delete a contact
-- retrieve a single contact
-- create contact
-- delete account
-- list contacts
 - retrieve entity definitions
+- update contact
+- retrieve a single entity definition
+- retrieve a single contact
+- power apps
+- delete an account
+- enterprise
+- create a new contact
+- list accounts
+- retrieve multiple accounts
 - update an account
-- power platform
+- create an account
+- create contact
+- delete contact
+- account management
+- update a contact
+- delete account
+- no-code
+- list contacts
+- low-code
+- update account
+- create account
+- business applications
+- cloud
+- get account
+- list entities
 - data platform
 - create a new account
-- business applications
-- update a contact
-- delete an account
-- retrieve multiple accounts
-- power apps
-- delete contact
-- get contact
-- get entity
-- list accounts
-- get account
-- low-code
-- dataverse
-- cloud
-- account management
+- microsoft
 - saas
-- update contact
-- retrieve multiple contacts
 - retrieve a single account
-- create a new contact
-- retrieve a single entity definition
-- enterprise
-- no-code
-- create an account
-- list entities
-- create account
+- retrieve multiple contacts
+- dataverse
+- get entity
+- power platform
+- get contact
 slug: data-platform
+source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Microsoft Power Apps Data Platform\"\n  description: \"Unified data platform capability combining Dataverse account, contact, and entity management with OData query support. Used by Power Platform developers and CRM integration teams.\"\n  tags: [Microsoft, Power Apps, Dataverse, Data Platform]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      DATAVERSE_OAUTH_TOKEN: DATAVERSE_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: dataverse-web-api\n      location: ./shared/dataverse-web-api.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: data-platform-api\n      description: \"Unified REST API for Microsoft Power Apps data platform.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n          description: \"Account management\"\n          operations:\n            - { method: GET, name: list-accounts, description: \"List accounts\", call:\
+  \ \"dataverse-web-api.list-accounts\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-account, description: \"Create an account\", call: \"dataverse-web-api.create-account\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: data-platform-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Dataverse data operations.\"\n      tools:\n        - { name: list-accounts, description: \"Retrieve multiple accounts\", hints: { readOnly: true, openWorld: true }, call: \"dataverse-web-api.list-accounts\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-account, description: \"Retrieve a single account\", hints: { readOnly: true }, call: \"dataverse-web-api.get-account\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-account, description: \"Create a new account\", call: \"dataverse-web-api.create-account\"\
+  , outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-account, description: \"Update an account\", call: \"dataverse-web-api.update-account\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: delete-account, description: \"Delete an account\", hints: { destructive: true }, call: \"dataverse-web-api.delete-account\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-contacts, description: \"Retrieve multiple contacts\", hints: { readOnly: true, openWorld: true }, call: \"dataverse-web-api.list-contacts\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-contact, description: \"Retrieve a single contact\", hints: { readOnly: true }, call: \"dataverse-web-api.get-contact\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-contact, description: \"Create a new contact\", call: \"dataverse-web-api.create-contact\", outputParameters: [{ type: object,\
+  \ mapping: \"$.\" }] }\n        - { name: update-contact, description: \"Update a contact\", call: \"dataverse-web-api.update-contact\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: delete-contact, description: \"Delete a contact\", hints: { destructive: true }, call: \"dataverse-web-api.delete-contact\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-entities, description: \"Retrieve entity definitions\", hints: { readOnly: true }, call: \"dataverse-web-api.list-entities\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-entity, description: \"Retrieve a single entity definition\", hints: { readOnly: true }, call: \"dataverse-web-api.get-entity\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-apps/refs/heads/main/capabilities/data-platform.yaml
 tags:
 - Microsoft
 - Power Apps

@@ -96,98 +96,121 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- list calculated metrics.
-- list accessible report suites.
-- segment management.
-- delete segment
-- retrieve a specific segment by id.
-- list segments.
-- marketing
-- estimate repair scope.
-- list date ranges
-- list report suites.
-- delete a calculated metric.
-- single report suite.
-- update a segment.
-- list annotations
-- list analytics annotations.
-- create repair job
-- permanently delete a segment.
-- adobe
-- create a new calculated metric.
-- create a data repair job to delete or transform ingested data.
-- update a calculated metric.
-- web analytics
-- create a repair job.
-- run an adobe analytics report with metrics, dimensions, and date filters.
-- list metrics for a report suite.
-- list repair jobs
-- analytics reporting.
-- list saved date ranges.
-- retrieve a calculated metric by id.
-- data governance
-- run report
-- digital marketing
-- get report suite details.
-- get a segment.
-- update calculated metric
-- get segment
-- data repair jobs.
-- create annotation
-- list all dimensions available in a report suite.
-- list all metrics available in a report suite.
-- list recent data repair jobs for a report suite.
-- analytics
-- list calculated metrics
-- get calculated metric
-- create a calculated metric.
-- get details for a specific report suite.
-- list metrics
-- calculated metric management.
-- customer intelligence
-- create calculated metric
-- run an analytics report.
-- get report suite
-- delete a segment.
-- data repair cost estimation.
-- list report suites
-- list annotations.
-- report suite management.
-- annotation management.
-- get a calculated metric.
 - get repair job status.
-- list all tags used on analytics components.
-- create an annotation for a report suite date range.
-- update an existing segment.
+- get details for a specific report suite.
+- update a segment.
+- run an adobe analytics report with metrics, dimensions, and date filters.
+- digital marketing
+- list annotations
+- list segments.
+- list all metrics available in a report suite.
+- get repair job
+- run an analytics report.
+- list date ranges
+- data governance
+- list metrics
 - create a new analytics segment.
+- create a repair job.
+- create a data repair job to delete or transform ingested data.
+- data repair cost estimation.
+- update calculated metric
+- customer intelligence
+- delete segment
+- get report suite
+- list analytics annotations.
+- retrieve a specific segment by id.
+- single report suite.
 - single repair job.
 - get server call estimate
-- list tags
-- adobe analytics
-- analysis
-- list analytics segments.
-- create segment
-- estimate the scope and cost of a data repair job.
-- reporting
-- single calculated metric operations.
-- single segment operations.
-- business intelligence
+- adobe
+- calculated metric management.
 - segments
-- dimension discovery.
-- permanently delete a calculated metric.
-- list dimensions for a report suite.
-- delete calculated metric
-- list repair jobs.
-- list segments
-- get status of a specific data repair job.
-- update segment
-- list dimensions
-- metric discovery.
-- get repair job
+- retrieve a calculated metric by id.
+- create calculated metric
+- annotation management.
+- list repair jobs
+- list analytics segments.
+- report suite management.
+- list all dimensions available in a report suite.
 - calculated metrics
-- create an annotation.
+- list dimensions for a report suite.
+- list all tags used on analytics components.
+- create annotation
+- list saved date ranges.
+- update segment
+- estimate repair scope.
+- list calculated metrics
+- segment management.
+- create a new calculated metric.
+- get a segment.
+- delete a segment.
+- update a calculated metric.
+- delete a calculated metric.
+- create an annotation for a report suite date range.
+- dimension discovery.
+- create a calculated metric.
+- delete calculated metric
+- single segment operations.
+- get calculated metric
+- data repair jobs.
+- permanently delete a segment.
+- adobe analytics
+- list accessible report suites.
+- run report
+- analytics
+- web analytics
+- list metrics for a report suite.
+- update an existing segment.
+- reporting
 - create a segment.
+- create segment
+- list recent data repair jobs for a report suite.
+- permanently delete a calculated metric.
+- get segment
+- analytics reporting.
+- marketing
+- list report suites
+- list tags
+- list dimensions
+- estimate the scope and cost of a data repair job.
+- create repair job
+- analysis
+- list repair jobs.
+- get status of a specific data repair job.
+- create an annotation.
+- business intelligence
+- list segments
+- get a calculated metric.
+- get report suite details.
+- list annotations.
+- list report suites.
+- list calculated metrics.
+- metric discovery.
+- single calculated metric operations.
 slug: reporting-and-analysis
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Analytics Reporting And Analysis\"\n  description: \"Unified workflow for analytics reporting, component management, and data governance combining the Analytics 2.0 API for reports, segments, calculated metrics, and the Data Repair API for data quality management. Used by digital analysts, marketing analysts, and data governance teams.\"\n  tags:\n    - Adobe Analytics\n    - Reporting\n    - Analysis\n    - Segments\n    - Calculated Metrics\n    - Data Governance\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ANALYTICS_BEARER_TOKEN: ADOBE_ANALYTICS_BEARER_TOKEN\n      ADOBE_ANALYTICS_API_KEY: ADOBE_ANALYTICS_API_KEY\n      ADOBE_ANALYTICS_GLOBAL_COMPANY_ID: ADOBE_ANALYTICS_GLOBAL_COMPANY_ID\n\ncapability:\n  consumes:\n    - import: adobe-analytics\n      location: ./shared/analytics-api.yaml\n    - import: adobe-data-repair\n      location: ./shared/data-repair.yaml\n\
+  \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adobe-reporting-analysis-api\n      description: \"Unified REST API for Adobe Analytics reporting, component management, and data governance.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Analytics reporting.\"\n          operations:\n            - method: POST\n              name: run-report\n              description: \"Run an analytics report.\"\n              call: \"adobe-analytics.run-report\"\n              with:\n                rsid: \"rest.rsid\"\n                globalFilters: \"rest.globalFilters\"\n                metricContainer: \"rest.metricContainer\"\n                dimension: \"rest.dimension\"\n                settings: \"rest.settings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments\n          name: segments\n          description: \"Segment management.\"\n      \
+  \    operations:\n            - method: GET\n              name: list-segments\n              description: \"List segments.\"\n              call: \"adobe-analytics.list-segments\"\n              with:\n                limit: \"rest.limit\"\n                page: \"rest.page\"\n                includeType: \"rest.includeType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-segment\n              description: \"Create a segment.\"\n              call: \"adobe-analytics.create-segment\"\n              with:\n                name: \"rest.name\"\n                rsid: \"rest.rsid\"\n                definition: \"rest.definition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments/{segmentId}\n          name: segment-detail\n          description: \"Single segment operations.\"\n          operations:\n   \
+  \         - method: GET\n              name: get-segment\n              description: \"Get a segment.\"\n              call: \"adobe-analytics.get-segment\"\n              with:\n                segmentId: \"rest.segmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-segment\n              description: \"Update a segment.\"\n              call: \"adobe-analytics.update-segment\"\n              with:\n                segmentId: \"rest.segmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-segment\n              description: \"Delete a segment.\"\n              call: \"adobe-analytics.delete-segment\"\n              with:\n                segmentId: \"rest.segmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\
+  \n        - path: /v1/calculated-metrics\n          name: calculated-metrics\n          description: \"Calculated metric management.\"\n          operations:\n            - method: GET\n              name: list-calculated-metrics\n              description: \"List calculated metrics.\"\n              call: \"adobe-analytics.list-calculated-metrics\"\n              with:\n                limit: \"rest.limit\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-calculated-metric\n              description: \"Create a calculated metric.\"\n              call: \"adobe-analytics.create-calculated-metric\"\n              with:\n                name: \"rest.name\"\n                rsid: \"rest.rsid\"\n                definition: \"rest.definition\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n   \
+  \               mapping: \"$.\"\n        - path: /v1/calculated-metrics/{calculatedMetricId}\n          name: calculated-metric-detail\n          description: \"Single calculated metric operations.\"\n          operations:\n            - method: GET\n              name: get-calculated-metric\n              description: \"Get a calculated metric.\"\n              call: \"adobe-analytics.get-calculated-metric\"\n              with:\n                calculatedMetricId: \"rest.calculatedMetricId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-calculated-metric\n              description: \"Update a calculated metric.\"\n              call: \"adobe-analytics.update-calculated-metric\"\n              with:\n                calculatedMetricId: \"rest.calculatedMetricId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method:\
+  \ DELETE\n              name: delete-calculated-metric\n              description: \"Delete a calculated metric.\"\n              call: \"adobe-analytics.delete-calculated-metric\"\n              with:\n                calculatedMetricId: \"rest.calculatedMetricId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Metric discovery.\"\n          operations:\n            - method: GET\n              name: list-metrics\n              description: \"List metrics for a report suite.\"\n              call: \"adobe-analytics.list-metrics\"\n              with:\n                rsid: \"rest.rsid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dimensions\n          name: dimensions\n          description: \"Dimension discovery.\"\n          operations:\n            - method: GET\n           \
+  \   name: list-dimensions\n              description: \"List dimensions for a report suite.\"\n              call: \"adobe-analytics.list-dimensions\"\n              with:\n                rsid: \"rest.rsid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites\n          name: report-suites\n          description: \"Report suite management.\"\n          operations:\n            - method: GET\n              name: list-report-suites\n              description: \"List report suites.\"\n              call: \"adobe-analytics.list-report-suites\"\n              with:\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites/{rsid}\n          name: report-suite-detail\n          description: \"Single report suite.\"\n          operations:\n            - method: GET\n              name: get-report-suite\n\
+  \              description: \"Get report suite details.\"\n              call: \"adobe-analytics.get-report-suite\"\n              with:\n                rsid: \"rest.rsid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/annotations\n          name: annotations\n          description: \"Annotation management.\"\n          operations:\n            - method: GET\n              name: list-annotations\n              description: \"List annotations.\"\n              call: \"adobe-analytics.list-annotations\"\n              with:\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-annotation\n              description: \"Create an annotation.\"\n              call: \"adobe-analytics.create-annotation\"\n              with:\n                name: \"rest.name\"\n                dateRange:\
+  \ \"rest.dateRange\"\n                rsids: \"rest.rsids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites/{rsid}/server-call-estimate\n          name: server-call-estimate\n          description: \"Data repair cost estimation.\"\n          operations:\n            - method: GET\n              name: get-server-call-estimate\n              description: \"Estimate repair scope.\"\n              call: \"adobe-data-repair.get-server-call-estimate\"\n              with:\n                rsid: \"rest.rsid\"\n                dateRangeStart: \"rest.dateRangeStart\"\n                dateRangeEnd: \"rest.dateRangeEnd\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites/{rsid}/repair-jobs\n          name: repair-jobs\n          description: \"Data repair jobs.\"\n          operations:\n            - method: GET\n              name:\
+  \ list-repair-jobs\n              description: \"List repair jobs.\"\n              call: \"adobe-data-repair.list-repair-jobs\"\n              with:\n                rsid: \"rest.rsid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-repair-job\n              description: \"Create a repair job.\"\n              call: \"adobe-data-repair.create-repair-job\"\n              with:\n                rsid: \"rest.rsid\"\n                validationToken: \"rest.validationToken\"\n                variables: \"rest.variables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites/{rsid}/repair-jobs/{jobId}\n          name: repair-job-detail\n          description: \"Single repair job.\"\n          operations:\n            - method: GET\n              name: get-repair-job\n              description: \"Get repair\
+  \ job status.\"\n              call: \"adobe-data-repair.get-repair-job\"\n              with:\n                rsid: \"rest.rsid\"\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: adobe-reporting-analysis-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Adobe Analytics reporting, analysis, and data governance.\"\n      tools:\n        - name: run-report\n          description: \"Run an Adobe Analytics report with metrics, dimensions, and date filters.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.run-report\"\n          with:\n            rsid: \"tools.rsid\"\n            globalFilters: \"tools.globalFilters\"\n            metricContainer: \"tools.metricContainer\"\n            dimension: \"tools.dimension\"\n           \
+  \ settings: \"tools.settings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-segments\n          description: \"List analytics segments.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.list-segments\"\n          with:\n            limit: \"tools.limit\"\n            page: \"tools.page\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-segment\n          description: \"Create a new analytics segment.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"adobe-analytics.create-segment\"\n          with:\n            name: \"tools.name\"\n            description: \"tools.description\"\n            rsid: \"tools.rsid\"\n            definition: \"tools.definition\"\n          outputParameters:\n            - type: object\n      \
+  \        mapping: \"$.\"\n        - name: get-segment\n          description: \"Retrieve a specific segment by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-analytics.get-segment\"\n          with:\n            segmentId: \"tools.segmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-segment\n          description: \"Update an existing segment.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"adobe-analytics.update-segment\"\n          with:\n            segmentId: \"tools.segmentId\"\n            name: \"tools.name\"\n            definition: \"tools.definition\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-segment\n          description: \"Permanently delete a segment.\"\n          hints:\n            destructive: true\n            idempotent:\
+  \ true\n          call: \"adobe-analytics.delete-segment\"\n          with:\n            segmentId: \"tools.segmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-calculated-metrics\n          description: \"List calculated metrics.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.list-calculated-metrics\"\n          with:\n            limit: \"tools.limit\"\n            page: \"tools.page\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-calculated-metric\n          description: \"Create a new calculated metric.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"adobe-analytics.create-calculated-metric\"\n          with:\n            name: \"tools.name\"\n            rsid: \"tools.rsid\"\n            definition: \"tools.definition\"\
+  \n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-calculated-metric\n          description: \"Retrieve a calculated metric by ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-analytics.get-calculated-metric\"\n          with:\n            calculatedMetricId: \"tools.calculatedMetricId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-calculated-metric\n          description: \"Update a calculated metric.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"adobe-analytics.update-calculated-metric\"\n          with:\n            calculatedMetricId: \"tools.calculatedMetricId\"\n            name: \"tools.name\"\n            definition: \"tools.definition\"\n          outputParameters:\n            - type: object\n              mapping:\
+  \ \"$.\"\n        - name: delete-calculated-metric\n          description: \"Permanently delete a calculated metric.\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"adobe-analytics.delete-calculated-metric\"\n          with:\n            calculatedMetricId: \"tools.calculatedMetricId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-metrics\n          description: \"List all metrics available in a report suite.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-analytics.list-metrics\"\n          with:\n            rsid: \"tools.rsid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-dimensions\n          description: \"List all dimensions available in a report suite.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"\
+  adobe-analytics.list-dimensions\"\n          with:\n            rsid: \"tools.rsid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-report-suites\n          description: \"List accessible report suites.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.list-report-suites\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-report-suite\n          description: \"Get details for a specific report suite.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-analytics.get-report-suite\"\n          with:\n            rsid: \"tools.rsid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-annotations\n          description:\
+  \ \"List analytics annotations.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.list-annotations\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-annotation\n          description: \"Create an annotation for a report suite date range.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"adobe-analytics.create-annotation\"\n          with:\n            name: \"tools.name\"\n            dateRange: \"tools.dateRange\"\n            rsids: \"tools.rsids\"\n            color: \"tools.color\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-date-ranges\n          description: \"List saved date ranges.\"\n          hints:\n            readOnly: true\n            idempotent: true\n\
+  \            openWorld: true\n          call: \"adobe-analytics.list-date-ranges\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tags\n          description: \"List all tags used on analytics components.\"\n          hints:\n            readOnly: true\n            idempotent: true\n            openWorld: true\n          call: \"adobe-analytics.list-tags\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-server-call-estimate\n          description: \"Estimate the scope and cost of a data repair job.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-data-repair.get-server-call-estimate\"\n          with:\n            rsid: \"tools.rsid\"\n            dateRangeStart: \"tools.dateRangeStart\"\n            dateRangeEnd: \"tools.dateRangeEnd\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: list-repair-jobs\n          description: \"List recent data repair jobs for a report suite.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-data-repair.list-repair-jobs\"\n          with:\n            rsid: \"tools.rsid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-repair-job\n          description: \"Create a data repair job to delete or transform ingested data.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: false\n          call: \"adobe-data-repair.create-repair-job\"\n          with:\n            rsid: \"tools.rsid\"\n            validationToken: \"tools.validationToken\"\n            variables: \"tools.variables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-repair-job\n\
+  \          description: \"Get status of a specific data repair job.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"adobe-data-repair.get-repair-job\"\n          with:\n            rsid: \"tools.rsid\"\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-analytics/refs/heads/main/capabilities/reporting-and-analysis.yaml
 tags:
 - Adobe Analytics
 - Reporting

@@ -55,71 +55,83 @@ personas: []
 provider_name: Adobe Captivate
 provider_slug: adobe-captivate
 search_terms:
-- create bulk export job
-- learning management
-- create user
-- list all certifications.
-- skill tracking and management.
-- list all users in the account.
-- enroll a learner in a course, certification, or learning program.
-- developer integrating hris systems with adobe learning manager for user provisioning and data sync.
-- create a new user account.
-- L&D Administrator
-- learner and admin user management.
-- list enrollments
-- courses, learning programs, certifications, and job aids.
-- enroll learner
-- learning and development professional managing course catalogs, enrollments, and compliance tracking.
-- real-time webhook events for downstream integrations.
-- list badges and achievements available to learners.
-- single learning object details.
-- scorm
-- get detailed information about a specific learning object including instances, skills, and prerequisites.
-- learner enrollment management.
-- compliance
-- HR Integration Developer
-- list learning objects
-- create a new user account in adobe learning manager for a new learner or employee.
-- learning content catalog management.
-- certification and mandatory training compliance tracking.
-- bulk import/export job management.
-- list skills
-- education
-- training
-- list all available learning objects.
-- enroll a learner in a learning object.
 - certification program management.
-- create bulk job
-- list learner enrollments across all learning objects.
-- list certification programs for compliance and credential tracking.
-- list content catalogs organizing learning objects for targeted delivery.
-- elearning
-- list all enrollments.
-- retrieve account-level configuration and settings for adobe learning manager.
-- list users
-- list all catalogs.
-- get account
-- badge and achievement management.
-- list all badges.
-- unified workflow for managing learning objects, enrollments, users, and compliance.
-- xapi
-- get details of a specific learning object.
-- core lms functionality including course delivery, enrollment, and progress tracking.
+- list enrollments
+- learner enrollment management.
+- create user
+- education
 - create a bulk data import or export job.
-- authoring
-- get learning object
-- list badges
-- lms
-- create a bulk export job for learner transcripts or training reports.
-- learner progress, skill attainment, and completion reporting.
-- list learners, managers, authors, and admin users in adobe learning manager.
-- list certifications
-- list catalogs
+- list certification programs for compliance and credential tracking.
+- list all catalogs.
 - list all available courses, learning programs, certifications, and job aids in adobe learning manager.
+- list catalogs
+- list content catalogs organizing learning objects for targeted delivery.
+- certification and mandatory training compliance tracking.
+- training
+- list skills
+- authoring
+- bulk import/export job management.
+- list learners, managers, authors, and admin users in adobe learning manager.
+- L&D Administrator
+- core lms functionality including course delivery, enrollment, and progress tracking.
+- create bulk export job
+- elearning
+- get details of a specific learning object.
+- get learning object
+- retrieve account-level configuration and settings for adobe learning manager.
+- badge and achievement management.
+- learning management
+- HR Integration Developer
+- scorm
 - list all skills.
+- get detailed information about a specific learning object including instances, skills, and prerequisites.
+- list all users in the account.
+- learning and development professional managing course catalogs, enrollments, and compliance tracking.
+- developer integrating hris systems with adobe learning manager for user provisioning and data sync.
+- create a bulk export job for learner transcripts or training reports.
+- list learner enrollments across all learning objects.
+- courses, learning programs, certifications, and job aids.
+- learner progress, skill attainment, and completion reporting.
+- enroll a learner in a course, certification, or learning program.
+- learning content catalog management.
+- create a new user account.
 - adobe captivate
+- enroll a learner in a learning object.
+- list users
+- list all certifications.
+- list badges and achievements available to learners.
+- real-time webhook events for downstream integrations.
+- learner and admin user management.
+- enroll learner
+- list certifications
+- get account
+- compliance
+- create a new user account in adobe learning manager for a new learner or employee.
+- list learning objects
+- unified workflow for managing learning objects, enrollments, users, and compliance.
+- create bulk job
+- list all available learning objects.
 - list all skills defined in the account for skill gap analysis.
+- skill tracking and management.
+- list all enrollments.
+- single learning object details.
+- lms
+- list badges
+- list all badges.
+- xapi
 slug: learning-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Captivate Learning Management\"\n  description: \"Unified workflow capability for managing learning objects, enrollments, completions, and compliance tracking using Adobe Learning Manager APIs. Designed for L&D administrators and HR integration developers.\"\n  tags:\n    - Adobe Captivate\n    - Learning Management\n    - LMS\n    - Compliance\n    - Training\n    - Education\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_CAPTIVATE_ACCESS_TOKEN: ADOBE_CAPTIVATE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: captivate-prime\n      location: ./shared/captivate-prime-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: learning-management-api\n      description: \"Unified REST API for Adobe Learning Manager — learning objects, users, enrollments, skills, badges, and compliance.\"\n      resources:\n        - path: /v1/learning-objects\n\
+  \          name: learning-objects\n          description: \"Courses, learning programs, certifications, and job aids.\"\n          operations:\n            - method: GET\n              name: list-learning-objects\n              description: \"List all available learning objects.\"\n              call: \"captivate-prime.list-learning-objects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/learning-objects/{learningObjectId}\n          name: learning-object\n          description: \"Single learning object details.\"\n          operations:\n            - method: GET\n              name: get-learning-object\n              description: \"Get details of a specific learning object.\"\n              call: \"captivate-prime.get-learning-object\"\n              with:\n                learningObjectId: \"rest.learningObjectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"\
+  $.\"\n        - path: /v1/users\n          name: users\n          description: \"Learner and admin user management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List all users in the account.\"\n              call: \"captivate-prime.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user account.\"\n              call: \"captivate-prime.create-user\"\n              with:\n                name: \"rest.name\"\n                email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/enrollments\n          name: enrollments\n          description: \"Learner enrollment management.\"\n          operations:\n            - method: GET\n              name: list-enrollments\n    \
+  \          description: \"List all enrollments.\"\n              call: \"captivate-prime.list-enrollments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: enroll-learner\n              description: \"Enroll a learner in a learning object.\"\n              call: \"captivate-prime.create-enrollment\"\n              with:\n                learningObjectId: \"rest.learningObjectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/skills\n          name: skills\n          description: \"Skill tracking and management.\"\n          operations:\n            - method: GET\n              name: list-skills\n              description: \"List all skills.\"\n              call: \"captivate-prime.list-skills\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/badges\n\
+  \          name: badges\n          description: \"Badge and achievement management.\"\n          operations:\n            - method: GET\n              name: list-badges\n              description: \"List all badges.\"\n              call: \"captivate-prime.list-badges\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/certifications\n          name: certifications\n          description: \"Certification program management.\"\n          operations:\n            - method: GET\n              name: list-certifications\n              description: \"List all certifications.\"\n              call: \"captivate-prime.list-certifications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Learning content catalog management.\"\n          operations:\n            - method: GET\n              name:\
+  \ list-catalogs\n              description: \"List all catalogs.\"\n              call: \"captivate-prime.list-catalogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Bulk import/export job management.\"\n          operations:\n            - method: POST\n              name: create-bulk-job\n              description: \"Create a bulk data import or export job.\"\n              call: \"captivate-prime.create-job\"\n              with:\n                jobType: \"rest.jobType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: learning-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted learning management — discover courses, manage enrollments, track compliance, and analyze learner progress.\"\n      tools:\n        - name:\
+  \ list-learning-objects\n          description: \"List all available courses, learning programs, certifications, and job aids in Adobe Learning Manager.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-learning-objects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-learning-object\n          description: \"Get detailed information about a specific learning object including instances, skills, and prerequisites.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"captivate-prime.get-learning-object\"\n          with:\n            learningObjectId: \"tools.learningObjectId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List learners, managers, authors, and admin users in Adobe Learning Manager.\"\n          hints:\n   \
+  \         readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"Create a new user account in Adobe Learning Manager for a new learner or employee.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"captivate-prime.create-user\"\n          with:\n            name: \"tools.name\"\n            email: \"tools.email\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-enrollments\n          description: \"List learner enrollments across all learning objects.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-enrollments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n \
+  \       - name: enroll-learner\n          description: \"Enroll a learner in a course, certification, or learning program.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"captivate-prime.create-enrollment\"\n          with:\n            learningObjectId: \"tools.learningObjectId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-skills\n          description: \"List all skills defined in the account for skill gap analysis.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-skills\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-badges\n          description: \"List badges and achievements available to learners.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-badges\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-certifications\n          description: \"List certification programs for compliance and credential tracking.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-certifications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-catalogs\n          description: \"List content catalogs organizing learning objects for targeted delivery.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"captivate-prime.list-catalogs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-bulk-export-job\n          description: \"Create a bulk export job for learner transcripts or training reports.\"\n          hints:\n            readOnly: false\n            destructive: false\n\
+  \            idempotent: false\n          call: \"captivate-prime.create-job\"\n          with:\n            jobType: \"tools.jobType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account\n          description: \"Retrieve account-level configuration and settings for Adobe Learning Manager.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"captivate-prime.get-account\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe-captivate/refs/heads/main/capabilities/learning-management.yaml
 tags:
 - Adobe Captivate
 - Learning Management

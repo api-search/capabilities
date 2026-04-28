@@ -71,107 +71,122 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- getPostsByIds
-- marketing
-- get a list by its id
-- handles customer inquiries and issues via direct messages and replies.
-- get posts from a list's timeline
-- delete a post by its id
-- publishing
-- builds and maintains communities through engagement and moderation.
-- initializeMediaUpload
-- get post analytics
-- addListsMember
-- microblogging
-- getPostsAnalytics
-- posts
-- get the processing status of an uploaded media
-- create and retrieve posts
-- extracts insights from social data through search, streaming, and analytics.
-- createUsersBookmark
-- create a new list on x
-- engagement specialist
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- get analytics data for a specific post
-- createLists
-- produces original posts, threads, and media content on x.
-- finalize a chunked media upload
-- user relationships, direct messaging, spaces, and community interaction.
-- get bookmarked posts for the authenticated user
-- deleteUsersBookmark
-- streaming
-- create a new post
-- getMediaUploadStatus
-- finalize chunked upload
+- create a new post (tweet) on x
 - post creation, editing, media management, and content analytics.
-- data engineer
-- getListsPosts
-- manages brand presence, campaigns, and content strategy.
-- getUsersBookmarks
-- real-time data
-- upload media
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- upload media for posts
-- ensures data handling meets regulatory and platform compliance requirements.
-- initialize chunked upload
-- create a new list
-- manage list members
-- mediaUpload
-- platform operations
-- retrieve multiple posts by their ids
-- get posts from a list timeline
-- bookmark a post
-- finalizeMediaUpload
-- community manager
-- manages user relationships, follows, and interaction strategies.
-- social monitoring, search, trending topics, and sentiment analysis.
-- manage user relationships, direct messages, spaces, and community interactions.
-- create or update metadata (alt text) for uploaded media
-- append a chunk to an in-progress media upload
-- getListsById
-- x api
-- retrieve posts by ids
-- delete a post
-- get bookmarked posts
-- remove a bookmark
-- customer support
-- upload media for posts (simple upload for small files)
-- updateLists
-- data analyst
-- compliance officer
-- manage user bookmarks
-- advertising
-- creates, schedules, and analyzes social media content across platforms.
-- deletePostById
-- appendMediaUpload
-- initialize a chunked media upload
-- monitor conversations, search posts, analyze trends, and extract insights.
-- social media
-- conducts academic or market research using x data archives.
-- getListsMembers
-- data compliance, deletion tracking, and regulatory event monitoring.
+- content creator
 - content
-- update a list's name or description
-- brand manager
-- get the members of a list
+- create a new post
+- getUsersBookmarks
+- get list posts
+- social monitoring, search, trending topics, and sentiment analysis.
+- getPostsAnalytics
+- mediaUpload
+- social media manager
 - researcher
 - monitors brand mentions, sentiment, and competitive landscape.
-- get analytics for a post
+- get the members of a list
+- data analyst
+- finalize a chunked media upload
+- data compliance, deletion tracking, and regulatory event monitoring.
+- platform operations
+- update a list's name or description
+- manages brand presence, campaigns, and content strategy.
+- manages data pipelines, streaming ingestion, and compliance data flows.
 - deleteLists
-- delete a list
-- social media manager
-- create a new post (tweet) on x
+- posts
+- real-time data
+- manage user bookmarks
+- get bookmarked posts
+- upload media
+- ensures data handling meets regulatory and platform compliance requirements.
+- advertising
+- retrieve multiple posts by their ids
+- append a chunk to an in-progress media upload
+- finalize chunked upload
+- get analytics for a post
+- compliance officer
+- bookmark a post
+- manage user relationships, direct messages, spaces, and community interactions.
+- delete a post
+- getMediaUploadStatus
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- manages user relationships, follows, and interaction strategies.
+- handles customer inquiries and issues via direct messages and replies.
+- initialize chunked upload
+- upload media for posts
 - createPosts
-- manage a specific post
-- create lists
-- content creator
-- add a member to a list
+- get post analytics
+- community manager
+- delete a post by its id
+- create and retrieve posts
+- monitor conversations, search posts, analyze trends, and extract insights.
 - media
+- getPostsByIds
+- deleteUsersBookmark
+- deletePostById
+- streaming
+- user relationships, direct messaging, spaces, and community interaction.
+- manage a specific post
+- conducts academic or market research using x data archives.
 - marketing team
+- delete a list
+- getListsPosts
+- appendMediaUpload
+- publishing
+- manage list members
+- get posts from a list's timeline
+- creates, schedules, and analyzes social media content across platforms.
+- get bookmarked posts for the authenticated user
+- get analytics data for a specific post
+- produces original posts, threads, and media content on x.
+- remove a bookmark
+- x api
+- marketing
+- create lists
+- microblogging
+- retrieve posts by ids
+- get the processing status of an uploaded media
+- getListsMembers
+- updateLists
+- get posts from a list timeline
+- createUsersBookmark
+- extracts insights from social data through search, streaming, and analytics.
+- finalizeMediaUpload
+- getListsById
+- brand manager
+- initialize a chunked media upload
+- builds and maintains communities through engagement and moderation.
+- create a new list
+- get a list by its id
+- createLists
+- customer support
+- add a member to a list
+- create a new list on x
+- create or update metadata (alt text) for uploaded media
 - createMediaMetadata
-- get list posts
+- engagement specialist
+- addListsMember
+- data engineer
+- initializeMediaUpload
+- social media
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- upload media for posts (simple upload for small files)
 slug: content-publishing
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Content Publishing and Management\"\n  description: \"Unified workflow for creating, managing, and analyzing posts, media, bookmarks, and lists on X. Used by social media managers, content creators, and marketing teams.\"\n  tags:\n    - X API\n    - Content\n    - Publishing\n    - Posts\n    - Media\n    - Marketing\n  personas:\n    - social media managers\n    - content creators\n    - marketing teams\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-posts\n      location: \"./shared/posts.yaml\"\n    - import: x-media\n      location: \"./shared/media.yaml\"\n    - import: x-bookmarks\n      location: \"./shared/bookmarks.yaml\"\n    - import: x-lists\n      location: \"./shared/lists.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: x-content-api\n      resources:\n\
+  \        - path: /v1/content/posts\n          name: posts\n          description: \"Create and retrieve posts\"\n          operations:\n            - method: POST\n              name: createPosts\n              description: \"Create a new post\"\n              call: \"x-content-api.createPosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: getPostsByIds\n              description: \"Retrieve posts by IDs\"\n              call: \"x-content-api.getPostsByIds\"\n              with:\n                ids: \"rest.ids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/posts/{id}\n          name: post\n          description: \"Manage a specific post\"\n          operations:\n            - method: DELETE\n              name: deletePostById\n              description: \"Delete a post\"\n              call: \"x-content-api.deletePostById\"\
+  \n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/posts/{id}/analytics\n          name: post-analytics\n          description: \"Get post analytics\"\n          operations:\n            - method: GET\n              name: getPostsAnalytics\n              description: \"Get analytics for a post\"\n              call: \"x-content-api.getPostsAnalytics\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/media/upload\n          name: media-upload\n          description: \"Upload media\"\n          operations:\n            - method: POST\n              name: mediaUpload\n              description: \"Upload media for posts\"\n              call: \"x-content-api.mediaUpload\"\n              outputParameters:\n                - type:\
+  \ object\n                  mapping: \"$.\"\n        - path: /v1/content/media/upload/initialize\n          name: media-upload-init\n          description: \"Initialize chunked upload\"\n          operations:\n            - method: POST\n              name: initializeMediaUpload\n              description: \"Initialize a chunked media upload\"\n              call: \"x-content-api.initializeMediaUpload\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/media/upload/finalize\n          name: media-upload-finalize\n          description: \"Finalize chunked upload\"\n          operations:\n            - method: POST\n              name: finalizeMediaUpload\n              description: \"Finalize a chunked media upload\"\n              call: \"x-content-api.finalizeMediaUpload\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/users/{id}/bookmarks\n\
+  \          name: bookmarks\n          description: \"Manage user bookmarks\"\n          operations:\n            - method: POST\n              name: createUsersBookmark\n              description: \"Bookmark a post\"\n              call: \"x-content-api.createUsersBookmark\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: getUsersBookmarks\n              description: \"Get bookmarked posts\"\n              call: \"x-content-api.getUsersBookmarks\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/lists\n          name: lists\n          description: \"Create lists\"\n          operations:\n            - method: POST\n              name: createLists\n              description: \"Create a new list\"\n     \
+  \         call: \"x-content-api.createLists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/lists/{id}/members\n          name: list-members\n          description: \"Manage list members\"\n          operations:\n            - method: POST\n              name: addListsMember\n              description: \"Add a member to a list\"\n              call: \"x-content-api.addListsMember\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/lists/{id}/posts\n          name: list-posts\n          description: \"Get list posts\"\n          operations:\n            - method: GET\n              name: getListsPosts\n              description: \"Get posts from a list timeline\"\n              call: \"x-content-api.getListsPosts\"\n              with:\n                id: \"rest.id\"\n    \
+  \          outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: x-content-mcp\n      transport: http\n      tools:\n        - name: createPosts\n          description: \"Create a new post (tweet) on X\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.createPosts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getPostsByIds\n          description: \"Retrieve multiple posts by their IDs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getPostsByIds\"\n          with:\n            ids: \"tools.ids\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deletePostById\n          description: \"Delete a post by its ID\"\n          hints:\n            readOnly: false\n      \
+  \      destructive: true\n          call: \"x-content-mcp.deletePostById\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getPostsAnalytics\n          description: \"Get analytics data for a specific post\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getPostsAnalytics\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: mediaUpload\n          description: \"Upload media for posts (simple upload for small files)\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.mediaUpload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: initializeMediaUpload\n          description: \"Initialize a chunked media upload\"\
+  \n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.initializeMediaUpload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: appendMediaUpload\n          description: \"Append a chunk to an in-progress media upload\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"x-content-mcp.appendMediaUpload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: finalizeMediaUpload\n          description: \"Finalize a chunked media upload\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.finalizeMediaUpload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getMediaUploadStatus\n          description: \"Get the processing status of an uploaded media\"\n          hints:\n\
+  \            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getMediaUploadStatus\"\n          with:\n            media_id: \"tools.media_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createMediaMetadata\n          description: \"Create or update metadata (alt text) for uploaded media\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"x-content-mcp.createMediaMetadata\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createUsersBookmark\n          description: \"Bookmark a post\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.createUsersBookmark\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getUsersBookmarks\n          description:\
+  \ \"Get bookmarked posts for the authenticated user\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getUsersBookmarks\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deleteUsersBookmark\n          description: \"Remove a bookmark\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"x-content-mcp.deleteUsersBookmark\"\n          with:\n            id: \"tools.id\"\n            tweet_id: \"tools.tweet_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: createLists\n          description: \"Create a new list on X\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.createLists\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n        - name: getListsById\n          description: \"Get a list by its ID\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getListsById\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: updateLists\n          description: \"Update a list's name or description\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"x-content-mcp.updateLists\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: addListsMember\n          description: \"Add a member to a list\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"x-content-mcp.addListsMember\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type:\
+  \ object\n              mapping: \"$.\"\n        - name: getListsMembers\n          description: \"Get the members of a list\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getListsMembers\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: getListsPosts\n          description: \"Get posts from a list's timeline\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"x-content-mcp.getListsPosts\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deleteLists\n          description: \"Delete a list\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"x-content-mcp.deleteLists\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/twitter/refs/heads/main/capabilities/content-publishing.yaml
 tags:
 - X API
 - Content

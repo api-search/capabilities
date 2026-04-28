@@ -28,35 +28,41 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- service desk
-- itsm
-- query orion infrastructure data via swql
-- database monitoring
-- get incident details
-- it management
-- observability
-- infrastructure
-- get incident
-- list hardware assets
-- list changes
-- log management
-- solarwinds
-- list service desk incidents
-- change management
-- query infrastructure
-- create a new incident
-- list assets
-- list incidents
-- incident management
 - list change requests
-- list service requests
-- ip address management
-- asset management
-- create incident
-- service request management
-- application monitoring
+- query infrastructure
 - network monitoring
+- create incident
+- list hardware assets
+- create a new incident
+- list service desk incidents
+- list incidents
+- it management
+- incident management
+- observability
+- get incident
+- infrastructure
+- database monitoring
+- service desk
+- solarwinds
+- service request management
+- list service requests
+- list assets
+- get incident details
+- application monitoring
+- list changes
+- query orion infrastructure data via swql
+- log management
+- asset management
+- ip address management
+- change management
+- itsm
 slug: it-service-management
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SolarWinds IT Service Management\"\n  description: \"Workflow for IT service management combining Service Desk incident/change management with Orion infrastructure data for IT support and service delivery teams.\"\n  tags:\n    - SolarWinds\n    - ITSM\n    - Service Desk\n    - Incident Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWSD_API_TOKEN: SWSD_API_TOKEN\n      ORION_USERNAME: ORION_USERNAME\n      ORION_PASSWORD: ORION_PASSWORD\n\ncapability:\n  consumes:\n    - import: service-desk\n      location: ./shared/service-desk.yaml\n    - import: orion\n      location: ./shared/orion.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: itsm-api\n      description: \"Unified REST API for SolarWinds IT service management.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management\"\
+  \n          operations:\n            - method: GET\n              name: list-incidents\n              description: \"List incidents\"\n              call: \"service-desk.list-incidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-requests\n          name: service-requests\n          description: \"Service request management\"\n          operations:\n            - method: GET\n              name: list-service-requests\n              description: \"List service requests\"\n              call: \"service-desk.list-service-requests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/changes\n          name: changes\n          description: \"Change management\"\n          operations:\n            - method: GET\n              name: list-changes\n              description: \"List change requests\"\n              call: \"service-desk.list-changes\"\
+  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Asset management\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List hardware assets\"\n              call: \"service-desk.list-assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: itsm-mcp\n      transport: http\n      description: \"MCP server for AI-assisted IT service management.\"\n      tools:\n        - name: list-incidents\n          description: \"List service desk incidents\"\n          hints:\n            readOnly: true\n          call: \"service-desk.list-incidents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-incident\n          description: \"Get incident details\"\
+  \n          hints:\n            readOnly: true\n          call: \"service-desk.get-incident\"\n          with:\n            incidentId: \"tools.incidentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-incident\n          description: \"Create a new incident\"\n          hints:\n            readOnly: false\n          call: \"service-desk.create-incident\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-service-requests\n          description: \"List service requests\"\n          hints:\n            readOnly: true\n          call: \"service-desk.list-service-requests\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-changes\n          description: \"List change requests\"\n          hints:\n            readOnly: true\n          call: \"service-desk.list-changes\"\n          outputParameters:\n     \
+  \       - type: object\n              mapping: \"$.\"\n        - name: list-assets\n          description: \"List hardware assets\"\n          hints:\n            readOnly: true\n          call: \"service-desk.list-assets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: query-infrastructure\n          description: \"Query Orion infrastructure data via SWQL\"\n          hints:\n            readOnly: true\n          call: \"orion.query-swis\"\n          with:\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/solarwinds/refs/heads/main/capabilities/it-service-management.yaml
 tags:
 - SolarWinds
 - ITSM

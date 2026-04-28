@@ -27,54 +27,60 @@ personas: []
 provider_name: AT&T
 provider_slug: atandt
 search_terms:
-- network-based fraud detection and threat intelligence
-- wireline service ordering and qualification
-- att get inbound sms
-- fortune 100
-- sms inbound messages
-- sms delivery status
-- messaging
-- get token
-- telecommunications
-- get delivery status
-- att check sms delivery
-- developer implementing frictionless mobile authentication via at&t network
-- oauth and network-based authentication
-- developer building fraud prevention and identity verification using at&t network signals
-- wireless
-- Security Developer
-- sms outbound messaging
-- developer integrating at&t enterprise connectivity and ebonding apis
-- at&t
-- 5g
-- check delivery status of a sent at&t sms message
-- device status, roaming, and qos management
-- get inbound sms
-- App Developer
-- Enterprise Developer
+- send an sms message to one or more recipients via at&t network
+- wireline
 - broadband
-- network
-- att send sms
-- oauth
-- engineer integrating enterprise wireline services and ebonding systems
-- mobile or web developer building consumer applications on at&t apis
-- Identity Developer
-- oauth token management
-- mobile virtual network operator managing subscribers on at&t infrastructure
+- fortune 100
+- get token
 - retrieve inbound sms messages for an at&t registered endpoint
+- 5g
+- oauth token management
+- send sms message
+- enterprise
+- network-based fraud detection and threat intelligence
+- developer integrating at&t enterprise connectivity and ebonding apis
+- mobile or web developer building consumer applications on at&t apis
+- oauth
+- wireless
+- at&t
+- check delivery status of a sent at&t sms message
+- sms messaging and oauth authentication for consumer and business applications
+- telecommunications
+- sms delivery status
+- get sms delivery status
+- att send sms
+- sms inbound messages
+- device status, roaming, and qos management
+- mobile virtual network operator managing subscribers on at&t infrastructure
+- Identity Developer
+- Security Developer
+- network
+- get inbound sms messages
+- sms outbound messaging
+- att check sms delivery
+- engineer integrating enterprise wireline services and ebonding systems
+- wireline service ordering and qualification
 - sms and in-app messaging services
 - obtain oauth access token
-- enterprise
-- wireline
-- sms messaging and oauth authentication for consumer and business applications
-- sms
-- get sms delivery status
-- send sms message
-- send sms
+- att get inbound sms
 - camara network-based fraud prevention using sim swap and number verification
-- get inbound sms messages
-- send an sms message to one or more recipients via at&t network
+- messaging
+- send sms
+- App Developer
+- get delivery status
+- Enterprise Developer
+- sms
+- get inbound sms
+- oauth and network-based authentication
+- developer building fraud prevention and identity verification using at&t network signals
+- developer implementing frictionless mobile authentication via at&t network
 slug: wireless-messaging
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T Wireless Messaging\"\n  description: \"Workflow capability combining AT&T Wireless APIs for SMS messaging and OAuth authentication. Used by developers building consumer and business messaging applications on the AT&T network.\"\n  tags:\n    - AT&T\n    - SMS\n    - Messaging\n    - Wireless\n    - OAuth\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_ACCESS_TOKEN: ATT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: att-wireless-apis\n      location: ./shared/wireless-apis.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: att-wireless-messaging-api\n      description: \"Unified REST API for AT&T wireless SMS messaging.\"\n      resources:\n        - path: /v1/auth/token\n          name: auth-token\n          description: \"OAuth token management\"\n          operations:\n            - method: POST\n              name: get-token\n    \
+  \          description: \"Obtain OAuth access token\"\n              call: \"att-wireless-apis.get-access-token\"\n              with:\n                grant_type: \"rest.grant_type\"\n                client_id: \"rest.client_id\"\n                client_secret: \"rest.client_secret\"\n                scope: \"rest.scope\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sms/outbox\n          name: sms-outbox\n          description: \"SMS outbound messaging\"\n          operations:\n            - method: POST\n              name: send-sms\n              description: \"Send SMS message\"\n              call: \"att-wireless-apis.send-sms\"\n              with:\n                address: \"rest.address\"\n                message: \"rest.message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sms/outbox/{messageId}\n          name: sms-status\n \
+  \         description: \"SMS delivery status\"\n          operations:\n            - method: GET\n              name: get-delivery-status\n              description: \"Get SMS delivery status\"\n              call: \"att-wireless-apis.get-sms-delivery-status\"\n              with:\n                messageId: \"rest.messageId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sms/inbox/{registrationId}\n          name: sms-inbox\n          description: \"SMS inbound messages\"\n          operations:\n            - method: GET\n              name: get-inbound-sms\n              description: \"Get inbound SMS messages\"\n              call: \"att-wireless-apis.get-inbound-sms\"\n              with:\n                registrationId: \"rest.registrationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: att-wireless-messaging-mcp\n\
+  \      transport: http\n      description: \"MCP server for AI-assisted AT&T SMS messaging operations.\"\n      tools:\n        - name: att-send-sms\n          description: \"Send an SMS message to one or more recipients via AT&T network\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"att-wireless-apis.send-sms\"\n          with:\n            address: \"tools.address\"\n            message: \"tools.message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: att-check-sms-delivery\n          description: \"Check delivery status of a sent AT&T SMS message\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"att-wireless-apis.get-sms-delivery-status\"\n          with:\n            messageId: \"tools.messageId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: att-get-inbound-sms\n    \
+  \      description: \"Retrieve inbound SMS messages for an AT&T registered endpoint\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"att-wireless-apis.get-inbound-sms\"\n          with:\n            registrationId: \"tools.registrationId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/atandt/refs/heads/main/capabilities/wireless-messaging.yaml
 tags:
 - AT&T
 - SMS

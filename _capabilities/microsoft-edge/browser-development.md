@@ -31,65 +31,73 @@ personas: []
 provider_name: Microsoft Edge
 provider_slug: microsoft-edge
 search_terms:
-- chromium
-- check the status of a package upload
-- microsoft
-- get browser version
-- microsoft edge
-- create new browser target
-- open a new browser tab in microsoft edge
-- close a browser tab
-- list targets
-- develops web applications and uses devtools for debugging
-- unified browser development workflow combining debugging and extension management
-- browser debugging and inspection
-- get details of an extension product
-- develops and publishes browser extensions for microsoft edge
-- webview
-- debugging
-- get the full devtools protocol schema definition
-- open a new browser tab
-- list all debuggable targets
-- web development
-- debuggable browser targets
-- create target
-- create submission
-- list all extension products in the edge add-ons store
-- get microsoft edge browser version information
-- get submission status
-- check the status of an extension submission
-- edge
-- extension product detail
-- developer tools
-- QA Engineer
-- browser version
-- list extension products
-- browser
-- list extensions
-- progressive web apps
-- get protocol schema
-- submit an extension for review and publishing
-- activate target
-- get product
-- browser development
-- Extension Developer
-- upload package
 - get extension details
 - bring a browser tab to the foreground
-- extension products
 - upload a new extension package
-- get upload status
-- get browser version info
-- list all debuggable browser targets in microsoft edge
-- get extension
-- Web Developer
-- tests web applications and extensions using devtools automation
-- list products
-- extensions
-- close target
+- chromium
+- developer tools
 - automation
+- debuggable browser targets
+- webview
+- get submission status
+- create target
+- Web Developer
 - extension lifecycle from development to publication
+- web development
+- upload package
+- get extension
+- microsoft edge
+- get browser version
+- list extension products
+- list extensions
+- get microsoft edge browser version information
+- Extension Developer
+- get details of an extension product
+- get product
+- list targets
+- extension product detail
+- activate target
+- list products
+- unified browser development workflow combining debugging and extension management
+- tests web applications and extensions using devtools automation
+- debugging
+- develops and publishes browser extensions for microsoft edge
+- browser
+- open a new browser tab
+- extension products
+- browser debugging and inspection
+- get the full devtools protocol schema definition
+- list all debuggable browser targets in microsoft edge
+- develops web applications and uses devtools for debugging
+- list all extension products in the edge add-ons store
+- edge
+- extensions
+- browser version
+- browser development
+- open a new browser tab in microsoft edge
+- close target
+- submit an extension for review and publishing
+- create new browser target
+- check the status of an extension submission
+- check the status of a package upload
+- microsoft
+- progressive web apps
+- get protocol schema
+- list all debuggable targets
+- get browser version info
+- QA Engineer
+- close a browser tab
+- get upload status
+- create submission
 slug: browser-development
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Edge Browser Development\"\n  description: \"Unified workflow for Microsoft Edge browser development combining DevTools Protocol debugging with Add-ons extension lifecycle management. Used by extension developers, web developers, and QA engineers.\"\n  tags:\n    - Microsoft Edge\n    - Browser Development\n    - Extensions\n    - Debugging\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      EDGE_DEVTOOLS_HOST: EDGE_DEVTOOLS_HOST\n      EDGE_ADDONS_API_TOKEN: EDGE_ADDONS_API_TOKEN\n\ncapability:\n  consumes:\n    - import: devtools-api\n      location: ./shared/devtools-api.yaml\n    - import: addons-api\n      location: ./shared/addons-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: browser-development-api\n      description: \"Unified REST API for Microsoft Edge browser development workflows.\"\n      resources:\n     \
+  \   - path: /v1/targets\n          name: targets\n          description: \"Debuggable browser targets\"\n          operations:\n            - method: GET\n              name: list-targets\n              description: \"List all debuggable targets\"\n              call: \"devtools-api.list-targets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/targets/new\n          name: new-target\n          description: \"Create new browser target\"\n          operations:\n            - method: PUT\n              name: create-target\n              description: \"Open a new browser tab\"\n              call: \"devtools-api.create-target\"\n              with:\n                url: \"rest.url\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/version\n          name: version\n          description: \"Browser version\"\n          operations:\n            - method:\
+  \ GET\n              name: get-browser-version\n              description: \"Get browser version info\"\n              call: \"devtools-api.get-browser-version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extensions\n          name: extensions\n          description: \"Extension products\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List extension products\"\n              call: \"addons-api.list-products\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extensions/{productId}\n          name: extension-detail\n          description: \"Extension product detail\"\n          operations:\n            - method: GET\n              name: get-product\n              description: \"Get extension details\"\n              call: \"addons-api.get-product\"\n              with:\n \
+  \               productId: \"rest.productId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: browser-development-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Microsoft Edge browser development.\"\n      tools:\n        - name: list-targets\n          description: \"List all debuggable browser targets in Microsoft Edge\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"devtools-api.list-targets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-target\n          description: \"Open a new browser tab in Microsoft Edge\"\n          hints:\n            readOnly: false\n          call: \"devtools-api.create-target\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: activate-target\n          description:\
+  \ \"Bring a browser tab to the foreground\"\n          hints:\n            readOnly: false\n          call: \"devtools-api.activate-target\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: close-target\n          description: \"Close a browser tab\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"devtools-api.close-target\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-browser-version\n          description: \"Get Microsoft Edge browser version information\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"devtools-api.get-browser-version\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-protocol-schema\n          description: \"Get the full DevTools Protocol schema definition\"\n          hints:\n            readOnly:\
+  \ true\n            openWorld: true\n          call: \"devtools-api.get-protocol-schema\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-extensions\n          description: \"List all extension products in the Edge Add-ons store\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"addons-api.list-products\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-extension\n          description: \"Get details of an extension product\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"addons-api.get-product\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-submission\n          description: \"Submit an extension for review and publishing\"\n          hints:\n            readOnly: false\n          call: \"addons-api.create-submission\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-submission-status\n          description: \"Check the status of an extension submission\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"addons-api.get-submission\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: upload-package\n          description: \"Upload a new extension package\"\n          hints:\n            readOnly: false\n          call: \"addons-api.upload-package\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-upload-status\n          description: \"Check the status of a package upload\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"addons-api.get-upload-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-edge/refs/heads/main/capabilities/browser-development.yaml
 tags:
 - Microsoft Edge
 - Browser Development

@@ -28,41 +28,48 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- fundamentals report
-- reporting
-- overview report
-- estimates report
-- generate chart
-- generate fundamentals report.
-- entity report
-- financial data
-- generate a chart.
-- generate estimates report.
-- generate overview report.
-- list reports
-- capital structure report
-- generate vermilion report.
-- visualization
-- report generation.
-- market data
-- research
-- generate capital structure report.
-- build book
-- investment analytics
-- build a custom report book.
-- generate ownership report.
-- generate entity report.
-- ownership report
-- generate digital card
 - generate a digital card.
-- list available reports.
-- financial
-- portfolio analytics
-- factset
-- chart generation.
-- vermilion report
+- visualization
 - report builder
+- generate overview report.
+- list available reports.
+- ownership report
+- estimates report
+- build a custom report book.
+- generate vermilion report.
+- financial
+- vermilion report
+- build book
+- overview report
+- generate chart
+- capital structure report
+- factset
+- reporting
+- generate capital structure report.
+- generate fundamentals report.
+- generate entity report.
+- entity report
+- chart generation.
+- generate a chart.
+- portfolio analytics
+- generate estimates report.
+- list reports
+- investment analytics
+- market data
+- report generation.
+- fundamentals report
+- financial data
+- research
+- generate digital card
+- generate ownership report.
 slug: reporting
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Reporting\"\n  description: \"Unified workflow for generating reports including entity, fundamentals, estimates, capital structure, overview, ownership reports, charts, and digital cards. Used by report builders.\"\n  tags:\n    - FactSet\n    - Reporting\n    - Report Builder\n    - Visualization\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-ent-rb\n      location: ./shared/entity-report-builder.yaml\n    - import: factset-fund-rb\n      location: ./shared/fundamentals-report-builder.yaml\n    - import: factset-est-rb\n      location: ./shared/estimates-report-builder.yaml\n    - import: factset-cap-rb\n      location: ./shared/capital-structure-report-builder.yaml\n    - import: factset-ovw-rb\n      location: ./shared/overview-report-builder.yaml\n\
+  \    - import: factset-own-rb\n      location: ./shared/ownership-report-builder.yaml\n    - import: factset-charts\n      location: ./shared/chart-generation-service.yaml\n    - import: factset-cards\n      location: ./shared/digital-cards.yaml\n    - import: factset-bookbuilder\n      location: ./shared/bookbuilder.yaml\n    - import: factset-vermilion\n      location: ./shared/vermilion.yaml\n\n  exposes:\n    - type: rest\n      port: 8089\n      namespace: reporting-api\n      description: \"Unified REST API for reporting.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Report generation.\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List available reports.\"\n              call: \"factset-fund-rb.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/charts\n          name: charts\n     \
+  \     description: \"Chart generation.\"\n          operations:\n            - method: GET\n              name: generate-chart\n              description: \"Generate a chart.\"\n              call: \"factset-charts.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9089\n      namespace: reporting-mcp\n      transport: http\n      description: \"MCP server for AI-assisted reporting.\"\n      tools:\n        - name: entity-report\n          description: \"Generate entity report.\"\n          hints:\n            readOnly: true\n          call: \"factset-ent-rb.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: fundamentals-report\n          description: \"Generate fundamentals report.\"\n          hints:\n            readOnly: true\n          call: \"factset-fund-rb.list\"\n          outputParameters:\n            - type: object\n          \
+  \    mapping: \"$.\"\n        - name: estimates-report\n          description: \"Generate estimates report.\"\n          hints:\n            readOnly: true\n          call: \"factset-est-rb.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: capital-structure-report\n          description: \"Generate capital structure report.\"\n          hints:\n            readOnly: true\n          call: \"factset-cap-rb.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: overview-report\n          description: \"Generate overview report.\"\n          hints:\n            readOnly: true\n          call: \"factset-ovw-rb.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ownership-report\n          description: \"Generate ownership report.\"\n          hints:\n            readOnly: true\n          call: \"factset-own-rb.list\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: generate-chart\n          description: \"Generate a chart.\"\n          hints:\n            readOnly: true\n          call: \"factset-charts.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: generate-digital-card\n          description: \"Generate a digital card.\"\n          hints:\n            readOnly: true\n          call: \"factset-cards.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: build-book\n          description: \"Build a custom report book.\"\n          hints:\n            readOnly: true\n          call: \"factset-bookbuilder.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: vermilion-report\n          description: \"Generate Vermilion report.\"\n          hints:\n            readOnly:\
+  \ true\n          call: \"factset-vermilion.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/factset/refs/heads/main/capabilities/reporting.yaml
 tags:
 - FactSet
 - Reporting

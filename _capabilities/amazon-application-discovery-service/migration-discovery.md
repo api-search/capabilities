@@ -29,41 +29,50 @@ personas: []
 provider_name: Amazon Application Discovery Service
 provider_slug: amazon-application-discovery-service
 search_terms:
-- export discovered data to s3
-- asset discovery summary
-- list all discovery agents and their health status
 - describe export tasks
-- migration
-- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
-- list discovered servers, processes, and connections
-- discovery
-- find servers that communicate with a specific server to map application dependencies for migration grouping.
 - start data collection on specified agents to begin discovering on-premises servers and processes.
-- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
-- describe agents
-- check the status of discovery data export tasks to know when data is ready for analysis.
-- aws
-- create application groupings from discovered servers to organize migration waves.
-- infrastructure
-- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
-- get count of discovered servers, agents, and applications
-- list configurations
-- discovered configuration items
-- discovery agents
-- check status of export tasks
-- create application
-- get discovery summary
-- data export tasks
-- start data collection
-- amazon application discovery service
-- get detailed attributes for specific discovered configuration items to understand server specifications.
 - describe configurations
-- list all aws application discovery service agents and their health status. use this to verify agents are running before starting discovery.
-- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
-- list server neighbors
+- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
+- list configurations
 - start import task
+- get detailed attributes for specific discovered configuration items to understand server specifications.
+- infrastructure
+- aws
+- amazon application discovery service
+- get discovery summary
+- discovered configuration items
+- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
+- find servers that communicate with a specific server to map application dependencies for migration grouping.
+- check status of export tasks
+- list server neighbors
+- start data collection
+- export discovered data to s3
+- list all discovery agents and their health status
+- discovery
+- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
+- get count of discovered servers, agents, and applications
+- check the status of discovery data export tasks to know when data is ready for analysis.
+- list discovered servers, processes, and connections
+- data export tasks
+- asset discovery summary
+- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
+- create application groupings from discovered servers to organize migration waves.
+- describe agents
+- migration
+- create application
+- list all aws application discovery service agents and their health status. use this to verify agents are running before starting discovery.
+- discovery agents
 - start export task
 slug: migration-discovery
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Migration Discovery Workflow\n  description: Workflow capability for discovering on-premises infrastructure and preparing migration plans using AWS Application Discovery Service.\n  tags:\n    - Amazon Application Discovery Service\n    - Migration\n    - Discovery\n    - Infrastructure\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: ads\n    from: shared/application-discovery-service-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: migration-discovery-rest\n      resources:\n        - path: /v1/agents\n          name: agents\n          description: Discovery agents\n          operations:\n            - method: GET\n              name: describe-agents\n              description: List all discovery agents and their health status\n              call: \"ads.describe-agents\"\n              outputParameters:\n                - type: object\n      \
+  \            mapping: \"$.\"\n\n        - path: /v1/summary\n          name: discovery-summary\n          description: Asset discovery summary\n          operations:\n            - method: GET\n              name: get-discovery-summary\n              description: Get count of discovered servers, agents, and applications\n              call: \"ads.get-discovery-summary\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/configurations\n          name: configurations\n          description: Discovered configuration items\n          operations:\n            - method: POST\n              name: list-configurations\n              description: List discovered servers, processes, and connections\n              call: \"ads.list-configurations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/exports\n          name: exports\n          description: Data\
+  \ export tasks\n          operations:\n            - method: POST\n              name: start-export-task\n              description: Export discovered data to S3\n              call: \"ads.start-export-task\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: describe-export-tasks\n              description: Check status of export tasks\n              call: \"ads.describe-export-tasks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: migration-discovery-mcp\n      transport: http\n      tools:\n        - name: describe-agents\n          description: List all AWS Application Discovery Service agents and their health status. Use this to verify agents are running before starting discovery.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.describe-agents\"\
+  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-data-collection\n          description: Start data collection on specified agents to begin discovering on-premises servers and processes.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ads.start-data-collection\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-discovery-summary\n          description: Get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.get-discovery-summary\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-configurations\n          description: List discovered configuration items such as servers, processes, connections, and applications\
+  \ for migration planning.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.list-configurations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-configurations\n          description: Get detailed attributes for specific discovered configuration items to understand server specifications.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.describe-configurations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-server-neighbors\n          description: Find servers that communicate with a specific server to map application dependencies for migration grouping.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.list-server-neighbors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
+  \n\n        - name: create-application\n          description: Create application groupings from discovered servers to organize migration waves.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ads.create-application\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-export-task\n          description: Export all discovered server data to Amazon S3 for detailed migration analysis and reporting.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ads.start-export-task\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-export-tasks\n          description: Check the status of discovery data export tasks to know when data is ready for analysis.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ads.describe-export-tasks\"\n     \
+  \     outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-import-task\n          description: Import on-premises server inventory from a CSV file in Amazon S3 when agents cannot be installed.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"ads.start-import-task\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\npersonas:\n  - name: Migration Architect\n    description: Plans and executes large-scale on-premises to cloud migrations using discovery data.\n    tools:\n      - get-discovery-summary\n      - list-configurations\n      - describe-configurations\n      - list-server-neighbors\n      - create-application\n      - start-export-task\n      - describe-export-tasks\n\n  - name: Infrastructure Engineer\n    description: Manages discovery agents and data collection processes across on-premises infrastructure.\n    tools:\n      - describe-agents\n\
+  \      - start-data-collection\n      - list-configurations\n      - describe-configurations\n      - start-import-task\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-application-discovery-service/refs/heads/main/capabilities/migration-discovery.yaml
 tags:
 - Amazon Application Discovery Service
 - Migration

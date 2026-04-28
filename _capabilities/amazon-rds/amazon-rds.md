@@ -14,21 +14,24 @@ personas: []
 provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
-- amazon rds
-- aws
-- managed databases
-- database service
-- engineer managing amazon rds resources
 - aws cloud resource management
-- cloud operations
+- database service
 - list amazon rds resources
 - automation workflow for amazon rds
+- managed databases
+- cloud operations
+- cloud databases
+- aws
 - dbaas
+- amazon rds
+- engineer managing amazon rds resources
+- amazon rds resources
 - relational databases
 - list resources
-- cloud databases
-- amazon rds resources
 slug: amazon-rds
+source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Rds Operations\n  description: Workflow capability for Amazon Rds. Enables automation of Amazon Rds resources for cloud operations teams.\n  tags:\n  - Amazon Rds\n  - AWS\n  - Cloud Operations\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY: AWS_ACCESS_KEY\n    AWS_SECRET_KEY: AWS_SECRET_KEY\ncapability:\n  consumes:\n  - import: amazon-rds\n    location: ./shared/amazon-rds.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amazon-rds-api\n    description: Unified REST API for Amazon Rds operations.\n    resources:\n    - path: /v1/resources\n      name: resources\n      description: Amazon Rds resources\n      operations:\n      - method: GET\n        name: list-resources\n        description: List Amazon Rds resources\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amazon-rds-mcp\n\
+  \    transport: http\n    description: MCP server for AI-assisted Amazon Rds operations.\n    tools:\n    - name: list-amazon-rds-resources\n      description: List Amazon Rds resources\n      hints:\n        readOnly: true\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-rds/refs/heads/main/capabilities/amazon-rds.yaml
 tags:
 - Amazon Rds
 - AWS

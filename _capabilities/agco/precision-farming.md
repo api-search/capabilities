@@ -29,32 +29,37 @@ personas:
 provider_name: agco
 provider_slug: agco
 search_terms:
-- get machine location history.
-- list all agco agricultural machines connected to the account.
-- agricultural operation manager monitoring machine fleet location and performance.
-- machine telematics.
-- list machines
+- machine location history.
 - list all connected agco machines.
-- get machine telemetry
+- agco
 - precision farming
-- get real-time performance telemetry for an agco machine.
+- iot
+- get machine locations
+- agricultural machine inventory and fleet management.
+- agricultural operation manager monitoring machine fleet location and performance.
+- real-time engine, fuel, and operational telemetry monitoring.
+- get location history for an agco machine.
+- telematics
+- get machine telemetry.
+- list machines
+- farm manager
+- precision ag developer
+- agriculture
+- get machine telemetry
+- developer building farm management applications using agco machine telemetry data.
+- machine fleet management.
+- machine telematics.
+- get machine location history.
 - fleet monitoring and performance tracking for agco agricultural machines.
 - gps-based machine location and field work tracking.
-- developer building farm management applications using agco machine telemetry data.
-- telematics
-- farm manager
-- machine fleet management.
-- get machine telemetry.
-- iot
-- agricultural machine inventory and fleet management.
-- get location history for an agco machine.
-- precision ag developer
-- real-time engine, fuel, and operational telemetry monitoring.
-- machine location history.
-- agriculture
-- get machine locations
-- agco
+- list all agco agricultural machines connected to the account.
+- get real-time performance telemetry for an agco machine.
 slug: precision-farming
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AGCO Precision Farming\"\n  description: \"Unified workflow capability for AGCO precision farming — monitoring machine location, performance telemetry, and operating conditions across a connected fleet. Used by farm managers and precision agriculture software developers.\"\n  tags:\n    - AGCO\n    - Agriculture\n    - Precision Farming\n    - IoT\n    - Telematics\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AGCO_API_KEY: AGCO_API_KEY\n\ncapability:\n  consumes:\n    - import: agco-agcommand\n      location: ./shared/agcommand-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: agco-precision-api\n      description: \"Unified REST API for AGCO precision farming fleet monitoring.\"\n      resources:\n        - path: /v1/machines\n          name: machines\n          description: \"Machine fleet management.\"\n          operations:\n            - method:\
+  \ GET\n              name: list-machines\n              description: \"List all connected AGCO machines.\"\n              call: \"agco-agcommand.list-machines\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/machines/{machineId}/telemetry\n          name: machine-telemetry\n          description: \"Machine telematics.\"\n          operations:\n            - method: GET\n              name: get-machine-telemetry\n              description: \"Get machine telemetry.\"\n              call: \"agco-agcommand.get-machine-telemetry\"\n              with:\n                machineId: \"rest.machineId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/machines/{machineId}/locations\n          name: machine-locations\n          description: \"Machine location history.\"\n          operations:\n            - method: GET\n              name: get-machine-locations\n\
+  \              description: \"Get machine location history.\"\n              call: \"agco-agcommand.get-machine-locations\"\n              with:\n                machineId: \"rest.machineId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: agco-precision-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AGCO precision farming fleet monitoring.\"\n      tools:\n        - name: list-machines\n          description: \"List all AGCO agricultural machines connected to the account.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agco-agcommand.list-machines\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-machine-telemetry\n          description: \"Get real-time performance telemetry for an AGCO machine.\"\n          hints:\n            readOnly: true\n\
+  \            destructive: false\n          call: \"agco-agcommand.get-machine-telemetry\"\n          with:\n            machineId: \"tools.machineId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-machine-locations\n          description: \"Get location history for an AGCO machine.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agco-agcommand.get-machine-locations\"\n          with:\n            machineId: \"tools.machineId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/agco/refs/heads/main/capabilities/precision-farming.yaml
 tags:
 - AGCO
 - Agriculture

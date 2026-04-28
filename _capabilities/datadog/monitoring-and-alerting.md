@@ -58,68 +58,78 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- queryMetricsTimeseries
-- query timeseries data
-- get dashboard list items
-- query scalar metric data
-- individual monitor operations
-- active metrics
-- host coverage
-- validate monitor
-- unmute a monitor to resume notifications
-- update a monitor
-- get csm hosts and containers coverage
-- createMonitor
-- deleteMonitor
-- updateMonitor
-- mute a monitor
-- datadog
-- list active metrics
-- visualizations
-- getMonitor
-- submit metrics
-- create a new monitor
-- create monitor
-- delete monitor
-- unmute monitor
-- fetch dashboards in a dashboard list
-- GetCSMHostsAndContainersCoverageAnalysis
-- muteMonitor
-- list monitors
-- infrastructure
-- GetDashboardListItems
-- validate a monitor configuration
-- submitMetrics
-- get hosts coverage
+- query scalar
 - alerting
-- add dashboards to a dashboard list
-- get a monitor
+- create a monitor
 - monitoring
 - delete a monitor
-- listActiveMetrics
-- query scalar
+- createMonitor
 - add dashboard list items
-- metrics
-- update monitor
-- mute monitor
-- query timeseries metric data
-- analytics
-- dashboard list items
-- get dashboards in a list
-- listMonitors
-- t1
-- create a monitor
-- edit an existing monitor
-- dashboards
-- monitor management
-- platform
-- list all monitors
-- get monitor
-- get a monitor by id
-- query timeseries
+- unmute a monitor to resume notifications
 - mute a monitor to suppress notifications
+- individual monitor operations
+- submitMetrics
+- queryMetricsTimeseries
+- update a monitor
+- fetch dashboards in a dashboard list
+- unmute monitor
+- get hosts coverage
+- get a monitor by id
+- deleteMonitor
+- update monitor
+- infrastructure
+- muteMonitor
+- query timeseries data
+- analytics
+- get monitor
+- platform
+- getMonitor
+- delete monitor
+- mute monitor
+- dashboards
+- get a monitor
+- create a new monitor
+- validate monitor
+- validate a monitor configuration
+- visualizations
+- get csm hosts and containers coverage
+- query timeseries metric data
+- active metrics
+- add dashboards to a dashboard list
+- t1
+- monitor management
+- create monitor
+- query scalar metric data
+- get dashboards in a list
+- metrics
+- get dashboard list items
+- listMonitors
+- dashboard list items
+- edit an existing monitor
+- datadog
+- mute a monitor
+- host coverage
+- list active metrics
+- updateMonitor
+- query timeseries
 - submit metric data points
+- list all monitors
+- GetCSMHostsAndContainersCoverageAnalysis
+- listActiveMetrics
+- GetDashboardListItems
+- list monitors
+- submit metrics
 slug: monitoring-and-alerting
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Monitoring And Alerting\"\n  description: \"Unified workflow for infrastructure monitoring and alerting combining monitors, metrics, hosts, and dashboards. Used by SREs and DevOps engineers for setting up alerts, querying metrics, tracking host health, and organizing dashboards.\"\n  tags:\n    - Datadog\n    - Monitoring\n    - Alerting\n    - Metrics\n    - Dashboards\n    - Infrastructure\n  personas:\n    - SRE\n    - DevOps Engineer\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-monitors\n      location: \"./shared/monitors.yaml\"\n    - import: dd-metrics\n      location: \"./shared/metrics.yaml\"\n    - import: dd-hosts\n      location: \"./shared/hosts.yaml\"\n    - import: dd-dashboards\n      location: \"./shared/dashboards.yaml\"\n\n  exposes:\n\
+  \    - type: rest\n      port: 8080\n      namespace: dd-monitoring-alerting-api\n      description: \"Unified REST API for monitoring and alerting workflows combining monitors, metrics, hosts, and dashboards.\"\n      resources:\n        - path: /v1/monitors\n          name: monitors\n          description: \"Monitor management\"\n          operations:\n            - method: GET\n              name: listMonitors\n              description: \"List all monitors\"\n              call: \"dd-monitors.listMonitors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createMonitor\n              description: \"Create a monitor\"\n              call: \"dd-monitors.createMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}\n          name: monitor\n          description: \"Individual monitor operations\"\
+  \n          operations:\n            - method: GET\n              name: getMonitor\n              description: \"Get a monitor\"\n              call: \"dd-monitors.getMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: updateMonitor\n              description: \"Update a monitor\"\n              call: \"dd-monitors.updateMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: deleteMonitor\n              description: \"Delete a monitor\"\n              call: \"dd-monitors.deleteMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{monitor_id}/mute\n          name: monitor-mute\n          description: \"Mute a monitor\"\n          operations:\n            - method: POST\n              name: muteMonitor\n\
+  \              description: \"Mute a monitor\"\n              call: \"dd-monitors.muteMonitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Active metrics\"\n          operations:\n            - method: GET\n              name: listActiveMetrics\n              description: \"List active metrics\"\n              call: \"dd-metrics.listActiveMetrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/query/timeseries\n          name: metrics-timeseries\n          description: \"Query timeseries\"\n          operations:\n            - method: POST\n              name: queryMetricsTimeseries\n              description: \"Query timeseries data\"\n              call: \"dd-metrics.queryMetricsTimeseries\"\n              outputParameters:\n                - type: object\n          \
+  \        mapping: \"$.\"\n        - path: /v1/metrics/series\n          name: metrics-submit\n          description: \"Submit metrics\"\n          operations:\n            - method: POST\n              name: submitMetrics\n              description: \"Submit metrics\"\n              call: \"dd-metrics.submitMetrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts/coverage\n          name: hosts-coverage\n          description: \"Host coverage\"\n          operations:\n            - method: GET\n              name: GetCSMHostsAndContainersCoverageAnalysis\n              description: \"Get hosts coverage\"\n              call: \"dd-hosts.GetCSMHostsAndContainersCoverageAnalysis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dashboard-lists/{dashboard_list_id}/dashboards\n          name: dashboard-list-items\n          description: \"\
+  Dashboard list items\"\n          operations:\n            - method: GET\n              name: GetDashboardListItems\n              description: \"Get dashboards in a list\"\n              call: \"dd-dashboards.GetDashboardListItems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: dd-monitoring-alerting-mcp\n      transport: http\n      description: \"MCP server for AI-assisted monitoring and alerting workflows.\"\n      tools:\n        - name: list-monitors\n          description: \"List all monitors\"\n          call: \"dd-monitors.listMonitors\"\n          hints:\n            readOnly: true\n        - name: get-monitor\n          description: \"Get a monitor by ID\"\n          call: \"dd-monitors.getMonitor\"\n          hints:\n            readOnly: true\n        - name: create-monitor\n          description: \"Create a new monitor\"\n          call: \"dd-monitors.createMonitor\"\
+  \n        - name: update-monitor\n          description: \"Edit an existing monitor\"\n          call: \"dd-monitors.updateMonitor\"\n          hints:\n            idempotent: true\n        - name: delete-monitor\n          description: \"Delete a monitor\"\n          call: \"dd-monitors.deleteMonitor\"\n          hints:\n            destructive: true\n        - name: mute-monitor\n          description: \"Mute a monitor to suppress notifications\"\n          call: \"dd-monitors.muteMonitor\"\n        - name: unmute-monitor\n          description: \"Unmute a monitor to resume notifications\"\n          call: \"dd-monitors.unmuteMonitor\"\n        - name: validate-monitor\n          description: \"Validate a monitor configuration\"\n          call: \"dd-monitors.validateMonitor\"\n          hints:\n            readOnly: true\n        - name: submit-metrics\n          description: \"Submit metric data points\"\n          call: \"dd-metrics.submitMetrics\"\n        - name: query-timeseries\n\
+  \          description: \"Query timeseries metric data\"\n          call: \"dd-metrics.queryMetricsTimeseries\"\n          hints:\n            readOnly: true\n        - name: query-scalar\n          description: \"Query scalar metric data\"\n          call: \"dd-metrics.queryMetricsScalar\"\n          hints:\n            readOnly: true\n        - name: list-active-metrics\n          description: \"List active metrics\"\n          call: \"dd-metrics.listActiveMetrics\"\n          hints:\n            readOnly: true\n        - name: get-hosts-coverage\n          description: \"Get CSM hosts and containers coverage\"\n          call: \"dd-hosts.GetCSMHostsAndContainersCoverageAnalysis\"\n          hints:\n            readOnly: true\n        - name: get-dashboard-list-items\n          description: \"Fetch dashboards in a dashboard list\"\n          call: \"dd-dashboards.GetDashboardListItems\"\n          hints:\n            readOnly: true\n        - name: add-dashboard-list-items\n        \
+  \  description: \"Add dashboards to a dashboard list\"\n          call: \"dd-dashboards.CreateDashboardListItems\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/datadog/refs/heads/main/capabilities/monitoring-and-alerting.yaml
 tags:
 - Datadog
 - Monitoring
