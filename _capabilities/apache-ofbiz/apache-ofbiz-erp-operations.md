@@ -31,43 +31,43 @@ personas: []
 provider_name: Apache OFBiz
 provider_slug: apache-ofbiz
 search_terms:
+- invoke service post
+- supply chain
+- erp
+- ofbiz service discovery.
+- refresh token
 - invoke service get
-- get token
-- Integration Engineer
-- e-commerce
-- refresh jwt access tokens.
-- list all exported ofbiz rest services.
-- ERP Administrator
+- apache ofbiz
+- invoke ofbiz service via post with json body.
+- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
+- business applications
+- get auth token
 - end-to-end erp workflow covering authentication and ofbiz service invocation.
 - list services
-- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
-- refresh an expired access token.
-- administrators who configure and manage ofbiz erp modules and business processes.
-- business applications
-- engineers integrating external systems with ofbiz via the rest api.
-- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
-- list all ofbiz services exported via the rest plugin for discovery.
-- authenticate and obtain jwt token.
-- refresh token
-- authenticate to apache ofbiz and obtain a jwt access token for subsequent api calls.
 - apache
-- obtain jwt access tokens for api authentication.
-- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
-- java
-- open source
-- refresh an expired ofbiz jwt access token using a refresh token.
-- erp
-- automated execution of ofbiz business logic services via rest api calls.
-- ofbiz service discovery.
-- supply chain
-- apache ofbiz
-- get auth token
-- invoke service post
-- invoke ofbiz services by name.
 - crm
-- invoke ofbiz service via get with query parameters.
+- list all exported ofbiz rest services.
+- engineers integrating external systems with ofbiz via the rest api.
+- automated execution of ofbiz business logic services via rest api calls.
+- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
+- authenticate to apache ofbiz and obtain a jwt access token for subsequent api calls.
+- obtain jwt access tokens for api authentication.
 - refresh auth token
-- invoke ofbiz service via post with json body.
+- Integration Engineer
+- invoke ofbiz services by name.
+- open source
+- refresh jwt access tokens.
+- ERP Administrator
+- list all ofbiz services exported via the rest plugin for discovery.
+- administrators who configure and manage ofbiz erp modules and business processes.
+- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
+- get token
+- invoke ofbiz service via get with query parameters.
+- authenticate and obtain jwt token.
+- java
+- refresh an expired access token.
+- e-commerce
+- refresh an expired ofbiz jwt access token using a refresh token.
 slug: apache-ofbiz-erp-operations
 tags:
 - Apache OFBiz

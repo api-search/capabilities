@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
+- list shapes
 - manage compute images
-- launch a new compute instance
-- update image details
-- list images
-- database
-- create a custom image from an instance
-- update instance details
-- get image details
-- list available compute shapes
-- get details of a specific image
+- list instance console connections
 - get image
-- list volume attachments in a compartment
-- list console connections
-- update instance
-- enterprise
-- list compute instances in a compartment
-- create a custom image
-- manage compute instances
-- terminate an instance
+- list vnic attachments
+- manage a specific compute instance
 - saas
+- get details of a specific instance
 - oracle
+- terminate instance
+- list available compute shapes
+- create image
+- compute
+- list instances
+- manage compute instances
+- create a custom image from an instance
+- enterprise
+- perform an action on an instance (start, stop, reset)
+- get details of a specific image
+- update image
+- list console connections
+- launch instance
 - delete image
 - list volume attachments
-- list compute images
-- get instance details
-- instance action
-- list vnic attachments in a compartment
-- infrastructure
-- list shapes
-- get details of a specific instance
-- launch instance
-- get instance
-- create image
+- list volume attachments in a compartment
 - delete a custom image
-- manage a specific compute instance
+- get instance details
+- list compute instances in a compartment
+- terminate an instance
+- update image details
+- get instance
+- create a custom image
+- list images
+- update instance details
+- list compute images
+- infrastructure
+- launch a new compute instance
 - manage a specific image
-- list instance console connections
-- terminate instance
-- list vnic attachments
-- list instances
+- update instance
 - cloud
-- perform an action on an instance (start, stop, reset)
-- compute
-- update image
+- get image details
+- database
+- list vnic attachments in a compartment
+- instance action
 slug: cloud-compute
 tags:
 - Oracle

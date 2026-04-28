@@ -31,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- message publishing
-- email
-- create a platform application for mobile push
-- list topics
-- create platform application
+- get topic attributes
 - get attributes of an sns topic
-- get sms attributes
-- delete topic
-- list subscriptions for a specific topic
-- get subscription attributes
-- get attributes of a subscription
-- list subscriptions by topic
-- subscribe
-- unsubscribe
-- subscription management
+- amazon
+- list all sns topics
+- list all subscriptions
 - list tags for an sns resource
-- list tags
-- delete an sns topic
-- unsubscribe from a topic
-- add tags to an sns resource
-- publish batch
-- sms
+- email
+- message publishing
+- delete topic
+- set attributes on an sns topic
 - create topic
+- unsubscribe from a topic
+- list subscriptions for a specific topic
+- unsubscribe
+- publish
+- create platform application
+- pub/sub
+- list subscriptions
+- sms
+- topic management
+- list subscriptions by topic
 - create a subscription
 - notifications
-- publish a message to a topic
-- list subscriptions
-- check if a phone number has opted out of sms
+- delete an sns topic
 - create a new sns topic
+- subscription management
+- get attributes of a subscription
+- publish a message to a topic
+- create a platform application for mobile push
 - get sms messaging attributes
-- list all sns topics
-- create a subscription to a topic
-- topic management
-- push notifications
-- set attributes on an sns topic
-- get topic attributes
-- tag resource
 - publish up to 10 messages in a batch
-- messaging
-- aws
+- list topics
+- create a subscription to a topic
+- check if a phone number has opted out of sms
 - publish a message to a topic or endpoint
-- check phone opted out
-- pub/sub
+- messaging
+- get sms attributes
+- publish batch
+- push notifications
 - set topic attributes
-- publish
-- amazon
-- list all subscriptions
+- get subscription attributes
+- check phone opted out
+- add tags to an sns resource
+- list tags
+- aws
+- tag resource
+- subscribe
 slug: pub-sub-messaging
 tags:
 - Amazon

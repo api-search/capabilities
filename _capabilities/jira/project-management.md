@@ -54,58 +54,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- get statuses
-- single issue operations.
-- edit issue
-- perform a transition.
-- agile
-- get issue details.
-- search issues
-- project management.
-- transition an issue through its workflow.
-- jql issue search.
-- jira
-- get available workflow transitions.
-- get transitions
-- get all jira priorities.
-- get project details.
-- create a new jira issue.
-- get all jira issue types.
-- itsm
+- add a comment.
+- delete an issue.
+- issue comments.
 - get jira issue details.
+- search issues
+- itsm
+- get transitions
+- issue lifecycle management.
+- get comments on a jira issue.
+- get project details.
 - delete issue
-- get all jira issue statuses.
-- get comments
-- workflow transitions.
+- jql issue search.
+- get available transitions.
+- single project.
+- transition an issue through its workflow.
+- get issue types
+- create a new issue.
+- create a new jira issue.
+- project management
 - get jira project details.
+- workflow transitions.
+- get all jira issue types.
+- create issue
+- get project
+- get all jira issue statuses.
+- list all projects.
 - get priorities
 - list projects
-- add a comment to a jira issue.
 - issue tracking
-- create a new issue.
-- create issue
-- edit an issue.
-- issue comments.
-- add comment
-- delete an issue.
-- delete a jira issue.
-- get issue
-- get comments on a jira issue.
-- edit an existing jira issue.
-- get available transitions.
 - get issue comments.
-- issue lifecycle management.
-- search with jql.
-- get project
+- add comment
+- delete a jira issue.
 - service management
-- project management
-- get issue types
-- do transition
-- single project.
-- search jira issues using jql.
+- add a comment to a jira issue.
+- edit an existing jira issue.
+- single issue operations.
+- get issue
+- get statuses
 - list all jira projects.
-- add a comment.
-- list all projects.
+- search with jql.
+- edit issue
+- get issue details.
+- jira
+- get all jira priorities.
+- edit an issue.
+- project management.
+- do transition
+- get available workflow transitions.
+- search jira issues using jql.
+- perform a transition.
+- agile
+- get comments
 slug: project-management
 tags:
 - Jira

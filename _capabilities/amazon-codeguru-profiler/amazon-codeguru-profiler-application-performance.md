@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- profiling
-- create profiling group
-- Developer
-- post agent profile
-- describe profiling group
 - developer persona.
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- application performance
-- DevOps Engineer
-- list profiling groups in the account
-- get profile
-- platform engineer persona.
-- devops
-- Platform Engineer
-- list profiling groups
-- list profile times
-- list findings reports
-- get aggregated profile data
-- machine learning
-- list findings reports for a profiling group
 - get details about a profiling group
-- devops engineer persona.
-- aws
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- get optimization recommendations for a profiling group
-- submit profiling agent data
-- get recommendations
-- list profile collection times for a profiling group
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
 - amazon
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- devops
+- get aggregated profile data
+- get optimization recommendations for a profiling group
+- list profile times
+- list profile collection times for a profiling group
+- list profiling groups
 - create a new profiling group
+- post agent profile
+- DevOps Engineer
+- describe profiling group
+- get profile
+- list findings reports
+- Platform Engineer
+- devops engineer persona.
+- platform engineer persona.
+- submit profiling agent data
+- machine learning
+- profiling
+- Developer
+- list profiling groups in the account
+- create profiling group
+- list findings reports for a profiling group
+- application performance
+- aws
+- get recommendations
 slug: amazon-codeguru-profiler-application-performance
 tags:
 - Amazon

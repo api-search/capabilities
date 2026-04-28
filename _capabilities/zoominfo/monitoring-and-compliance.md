@@ -43,47 +43,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- validate a webhook target url.
-- zoominfo
-- marketing intelligence
-- list webhooks
-- available webhook subscription types.
-- compliance
-- get subscription types
 - get available webhook subscription types.
-- get api usage data.
-- company data
-- check compliance
-- contacts
-- sales intelligence
-- b2b
-- webhook subscription management.
-- check data compliance status for specified contacts.
-- list all configured webhook subscriptions.
-- delete a webhook subscription.
-- api usage tracking.
-- data
-- individual webhook management.
-- delete webhook
-- create a new webhook subscription.
-- validate a webhook target url is reachable.
-- check compliance status for specified contacts.
-- api usage
-- b2b data
-- webhooks
-- monitoring
-- list all webhook subscriptions.
-- webhook target url validation.
-- validate target url
-- create webhook
 - get api usage data and consumption metrics.
-- create a new webhook subscription for data change notifications.
-- update an existing webhook subscription.
-- lead generation
-- update webhook
-- contact database
-- data compliance operations.
+- list all webhook subscriptions.
+- zoominfo
+- compliance
+- create a new webhook subscription.
 - get usage
+- delete a webhook subscription.
+- available webhook subscription types.
+- delete webhook
+- update webhook
+- get api usage data.
+- check compliance
+- sales intelligence
+- check data compliance status for specified contacts.
+- validate a webhook target url is reachable.
+- company data
+- contact database
+- contacts
+- list webhooks
+- webhook subscription management.
+- update an existing webhook subscription.
+- individual webhook management.
+- data compliance operations.
+- webhook target url validation.
+- check compliance status for specified contacts.
+- api usage tracking.
+- create webhook
+- webhooks
+- api usage
+- list all configured webhook subscriptions.
+- validate target url
+- b2b
+- marketing intelligence
+- b2b data
+- validate a webhook target url.
+- monitoring
+- create a new webhook subscription for data change notifications.
+- lead generation
+- data
+- get subscription types
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

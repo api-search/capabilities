@@ -23,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
+- register a new catalog location
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- delete catalog entity
-- scaffolding, documentation, and search to accelerate development
-- engineer building and maintaining the internal developer platform and backstage configuration
 - get catalog entity
-- list catalog entities
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- Developer
-- create location
-- list all registered catalog locations
-- internal developer platform
-- software catalog entities
-- backstage
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- open source
-- list catalog locations
+- delete catalog entity
 - catalog locations
-- central inventory of all software components, apis, and resources
+- backstage
+- delete an entity from the software catalog
+- scaffolding, documentation, and search to accelerate development
 - list entities
+- list all catalog entities
+- engineer building and maintaining the internal developer platform and backstage configuration
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- Platform Engineer
+- central inventory of all software components, apis, and resources
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- list catalog entities
+- Developer
+- open source
 - developer portal
+- create location
+- software catalog entities
+- list locations
 - get a specific catalog entity by kind, namespace, and name
 - software catalog
+- list all registered catalog locations
+- internal developer platform
+- list catalog locations
 - register catalog location
-- list locations
-- register a new catalog location
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- list all catalog entities
-- delete an entity from the software catalog
-- Platform Engineer
 slug: developer-portal
 tags:
 - Backstage

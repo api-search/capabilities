@@ -67,106 +67,106 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- manage team members.
-- create a booking.
+- add points to a loyalty account.
+- accumulate loyalty points
+- cancel a booking.
+- create booking
+- merchants
+- update booking
+- manage loyalty programs.
 - update customer
-- get booking details.
-- invoicing
-- ecommerce
-- search team members.
+- delete a customer profile.
+- financial technology
+- get team member
+- update a team member.
+- search loyalty accounts.
+- list gift cards
+- create a new customer.
+- square
+- manage team members.
+- create a new customer profile.
+- search loyalty accounts
+- manage bookings.
+- create a loyalty reward.
 - retrieve a gift card.
 - get customer
-- inventory
-- get customer details.
+- list locations
+- webhooks
+- retail
+- get location
+- list gift cards.
+- create a gift card.
+- gift cards
+- orders
+- update a customer.
+- retrieve the loyalty program.
+- get a team member.
+- update a customer profile.
+- create loyalty reward
+- search for booking availability.
+- get loyalty program
 - list business locations.
 - manage a specific booking.
-- delete customer
-- refunds
-- manage loyalty programs.
-- list customer profiles.
-- get location
-- merchant information.
-- payments
-- update a booking.
-- search loyalty accounts
-- search customers
-- retrieve a booking.
-- square
-- get location details.
-- point of sale
-- create a loyalty reward.
-- get a team member.
-- loyalty
-- list customers
-- get merchant details.
-- create gift card
-- cancel booking
-- financial technology
-- create a team member.
-- update team member
-- retail
-- redeem a loyalty reward.
-- team
-- webhooks
-- accumulate loyalty points
-- terminal
-- manage a specific customer.
-- delete a customer.
-- get booking
-- search loyalty accounts.
-- retrieve the loyalty program.
-- bookings
-- create loyalty account
-- catalog
-- create booking
-- redeem loyalty reward
-- search availability
 - search team members
-- gift cards
-- create a location.
-- update a team member.
-- update a customer.
-- create team member
-- search for booking availability.
-- create location
+- terminal
+- delete customer
+- get location details.
+- team
 - checkout
-- list gift cards.
-- get gift card
-- get loyalty program
-- cancel a booking.
-- create a new customer profile.
-- labor
-- search customer profiles.
-- list bookings
-- manage locations.
-- list gift cards
-- list all gift cards.
-- create a digital gift card.
-- manage customers.
-- create customer
-- manage bookings.
-- customers
+- loyalty
 - team management
-- update booking
-- disputes
-- locations
-- get details for a specific customer.
-- merchants
-- create a gift card.
-- list merchants
-- add points to a loyalty account.
-- get team member
-- create loyalty reward
-- list locations
-- get the loyalty program.
+- delete a customer.
+- create team member
+- merchant information.
+- list bookings
 - subscriptions
-- update a customer profile.
 - manage gift cards.
+- manage customers.
+- search customers
+- update team member
+- disputes
+- create gift card
+- search team members.
+- customers
+- create a location.
+- get the loyalty program.
+- get booking details.
+- create a team member.
+- payments
+- refunds
+- manage locations.
+- create a booking.
+- search customer profiles.
+- locations
+- inventory
+- list customer profiles.
+- redeem loyalty reward
+- create loyalty account
+- redeem a loyalty reward.
+- search availability
+- manage a specific customer.
+- get gift card
+- labor
+- update a booking.
+- create a digital gift card.
+- list all gift cards.
+- point of sale
+- get details for a specific customer.
+- retrieve a booking.
+- cancel booking
+- list merchants
+- invoicing
+- ecommerce
+- get booking
+- catalog
+- list customers
 - create a loyalty account.
+- create location
+- get customer details.
+- get merchant details.
+- bookings
 - list bookings.
-- delete a customer profile.
-- create a new customer.
-- orders
+- create customer
 slug: customer-engagement
 tags:
 - Square

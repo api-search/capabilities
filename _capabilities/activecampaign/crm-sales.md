@@ -27,45 +27,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- list all accounts
-- list deals
-- email, sms, and multi-channel marketing automation
-- get deal
-- builds integrations, automation workflows, and uses the api directly
-- orchestrate contact journeys, campaigns, automations, and list management
-- create a new deal
-- manages email campaigns, automations, and contact segmentation
-- sales deal management
-- create a new company account in activecampaign crm
-- Sales Representative
-- email marketing
-- create a new account
-- Account Manager
-- Email Marketer
-- activecampaign
-- tracks deals, manages accounts, and uses crm features
-- marketing automation
-- customer experience
-- Revenue Operations
-- retrieve a specific deal by id
 - Marketing Manager
-- create a new sales deal in activecampaign crm
-- create deal
+- list accounts
+- list deals
+- accounts
 - cross-channel contact engagement and personalization
+- sales automation
+- create a new sales deal in activecampaign crm
+- manages email campaigns, automations, and contact segmentation
+- builds integrations, automation workflows, and uses the api directly
+- list all deals
+- deals
+- tracks deals, manages accounts, and uses crm features
+- list all company accounts in activecampaign crm
+- Revenue Operations
+- Growth Engineer
+- company account management
+- marketing automation
+- crm
+- email, sms, and multi-channel marketing automation
+- create a new account
 - manage sales pipeline, deals, accounts, and tasks
 - create account
-- Growth Engineer
-- list all sales deals in activecampaign crm
-- sales
-- sales automation
-- list all deals
-- crm
-- accounts
-- list all company accounts in activecampaign crm
-- deals
-- list accounts
 - crm, pipeline management, and revenue operations
-- company account management
+- sales
+- sales deal management
+- Account Manager
+- Email Marketer
+- orchestrate contact journeys, campaigns, automations, and list management
+- list all accounts
+- create a new deal
+- activecampaign
+- list all sales deals in activecampaign crm
+- customer experience
+- get deal
+- email marketing
+- Sales Representative
+- create deal
+- retrieve a specific deal by id
+- create a new company account in activecampaign crm
 slug: crm-sales
 tags:
 - ActiveCampaign

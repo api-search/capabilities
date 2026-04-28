@@ -10,13 +10,13 @@ personas: []
 provider_name: Amazon FreeRTOS
 provider_slug: amazon-freertos
 search_terms:
-- aws
 - microcontrollers
-- iot
-- embedded systems
 - rtos
+- embedded systems
 - ota updates
 - firmware
+- aws
+- iot
 slug: amazon-freertos-device-management
 tags:
 - IoT

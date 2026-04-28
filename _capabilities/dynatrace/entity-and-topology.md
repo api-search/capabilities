@@ -44,52 +44,52 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- get entity
-- ai operations
-- look up an entity by display name and type
-- cloud monitoring
-- automation
-- query entity types
-- get entity details with relationships
-- query metric data for entities
-- lookup entity
-- query metric data points for entities
-- list entity types
-- query metric data
-- look up an entity by its display name and type
-- application security
-- list events affecting entities
-- list monitored entities matching a selector expression
-- list events for entities
-- query metrics for entity performance
-- get entity type
-- analytics
-- apm
-- get a specific entity type definition
-- list all available entity types in the environment
-- observability
 - developer
-- get entity type definition
-- ingest a deployment or custom event for an entity
-- ingest deployment events
 - query monitored entities
-- intelligence
-- list entities
-- digital experience management
-- topology
-- entity management
-- look up entity by name
-- list entities matching a selector
-- application performance monitoring
-- query entity events
-- list all entity types
-- infrastructure
+- ingest deployment events
+- lookup entity
 - get entity details including topology relationships
-- list events
-- get the definition of a specific entity type
+- get a specific entity type definition
 - dynatrace
 - ingest a deployment or custom event
+- query metrics for entity performance
+- look up an entity by its display name and type
+- list all entity types
+- apm
+- list all available entity types in the environment
+- query metric data
+- intelligence
+- query metric data points for entities
+- get entity type
+- get entity type definition
+- look up an entity by display name and type
+- list entity types
+- list entities
+- ai operations
+- entity management
+- list events affecting entities
+- application performance monitoring
+- digital experience management
+- query entity types
 - ingest event
+- list events for entities
+- application security
+- list monitored entities matching a selector expression
+- ingest a deployment or custom event for an entity
+- list events
+- get the definition of a specific entity type
+- observability
+- infrastructure
+- list entities matching a selector
+- get entity details with relationships
+- analytics
+- look up entity by name
+- topology
+- query entity events
+- automation
+- get entity
+- cloud monitoring
+- query metric data for entities
 slug: entity-and-topology
 tags:
 - Dynatrace

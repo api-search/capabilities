@@ -49,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- create a new support or service case.
-- retrieve customer records.
-- list customers
-- sales opportunities
-- support and service cases
-- chatbot intents
-- retrieve notifications for the current user.
-- financial and supply chain management.
-- retrieve sales opportunities.
-- customer records
-- customer engagement
-- peoplesoft
-- create case
-- individual customer details
-- send a notification via email, text, or in-app channels.
-- fulfill intent
-- get customer
-- human capital management.
-- campus solutions
-- hcm
-- retrieve details for a specific customer.
-- campus solutions.
-- peopletools platform services.
 - retrieve available chatbot intents.
-- list intents
-- send notification
-- retrieve support and service cases.
+- send a notification via email, text, or in-app channels.
 - erp
-- process a chatbot intent fulfillment request.
-- enterprise software
-- case management
-- chatbot
-- list opportunities
-- supply chain management
-- sales
-- list cases
+- chatbot intents
 - chatbot intent fulfillments
-- crm
-- financial management
+- list cases
+- peopletools platform services.
 - notification management
+- retrieve sales opportunities.
 - list notifications
+- financial management
+- create case
+- create a new support or service case.
+- fulfill intent
+- send notification
+- campus solutions.
+- individual customer details
+- retrieve support and service cases.
+- crm
+- retrieve details for a specific customer.
+- financial and supply chain management.
+- hcm
+- support and service cases
+- chatbot
+- case management
+- human capital management.
+- sales
+- list customers
+- supply chain management
+- sales opportunities
+- peoplesoft
+- customer engagement
+- get customer
+- enterprise software
+- list opportunities
+- retrieve notifications for the current user.
+- retrieve customer records.
+- process a chatbot intent fulfillment request.
+- list intents
+- customer records
+- campus solutions
 slug: customer-engagement
 tags:
 - PeopleSoft

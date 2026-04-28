@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- list all beta testers.
-- update a beta group.
-- list apps
+- developer
+- get beta tester details.
+- add a new beta tester.
+- testflight
 - read build
 - list beta testers
-- testflight
-- create group
-- read beta group
-- technology
-- ios
-- list beta groups
-- app management
-- get details of a specific app.
-- list builds
-- delete beta group
-- modify build
-- apple
-- read beta tester
+- list beta groups.
 - update build information.
 - delete beta tester
-- create a new beta group.
-- list all apps.
-- read app
-- update app metadata.
-- modify beta group
-- beta tester management.
-- list all beta groups.
-- add a beta tester.
-- beta group management.
-- list beta testers.
-- add a new beta tester.
-- mobile
-- get beta tester details.
-- developer
-- macos
-- create beta group
-- build management.
-- create tester
-- modify app
-- get build details.
+- list builds
+- read beta group
 - get beta group details.
-- remove a beta tester.
-- list all apps in app store connect.
-- list beta groups.
-- create beta tester
-- list groups
-- delete a beta group.
 - list testers
+- technology
+- create tester
+- create beta group
+- list groups
+- ios
+- list all apps.
+- modify build
 - list all builds.
+- create group
+- list all apps in app store connect.
+- list all beta groups.
 - create a beta group.
+- list beta groups
+- remove a beta tester.
+- delete a beta group.
+- beta group management.
+- get details of a specific app.
+- list beta testers.
+- apple
+- update app metadata.
+- delete beta group
+- create beta tester
 - app store
+- macos
+- read app
+- beta tester management.
+- list apps
+- read beta tester
+- app management
+- modify app
 - app management.
+- get build details.
+- modify beta group
+- add a beta tester.
+- list all beta testers.
+- update a beta group.
+- build management.
+- create a new beta group.
+- mobile
 slug: app-lifecycle
 tags:
 - Apple

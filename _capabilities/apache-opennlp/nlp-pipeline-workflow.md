@@ -46,63 +46,63 @@ personas: []
 provider_name: Apache OpenNLP
 provider_slug: apache-opennlp
 search_terms:
-- list models
-- integrates opennlp into custom nlp pipelines and applications
-- apache opennlp
-- parse sentence
-- named entity recognition
-- identify noun phrases, verb phrases, and other chunks
-- categorize
-- sentence boundary detection
-- chunk text into phrases
-- list available models
-- natural language processing
-- tokenize
-- language detection
+- tag parts of speech
 - split text into sentences
 - parse
-- find named entities (persons, locations, organizations) in text
-- classify a document into predefined categories
-- part-of-speech tagging
-- Data Scientist
-- build a full parse tree for a sentence
 - parse sentence structure
-- assign pos tags to each token in tokenized text
-- information extraction
-- uses nlp pipeline for text analysis and feature extraction
-- find entities
-- uses opennlp apis to add language processing capabilities to applications
-- apache
-- phrase chunking
-- model management
-- java
-- open source
-- tokenization
-- tokenize text into words and punctuation
-- detect document language
-- NLP Engineer
-- text analysis
-- detect language
-- full syntactic parsing
-- document categorization
-- end-to-end nlp processing pipeline
-- categorize document
-- chunk
-- chunk phrases
-- tag parts of speech
-- Application Developer
-- text processing
-- tokenize text
-- machine learning
-- tag pos
-- split text into individual sentences
-- lemmatize
-- reduce tokens to their base/lemma forms
+- sentence boundary detection
 - list all available nlp models
+- tokenization
+- natural language processing
+- lemmatize
+- list models
+- information extraction
+- build a full parse tree for a sentence
+- identify noun phrases, verb phrases, and other chunks
+- NLP Engineer
+- categorize
 - detect the language of input text
 - detect sentences
-- nlp
+- chunk phrases
+- integrates opennlp into custom nlp pipelines and applications
+- apache
+- full syntactic parsing
+- find entities
+- find named entities (persons, locations, organizations) in text
+- part-of-speech tagging
+- detect language
+- categorize document
 - find named entities
+- tokenize text into words and punctuation
+- detect document language
+- end-to-end nlp processing pipeline
+- uses nlp pipeline for text analysis and feature extraction
+- assign pos tags to each token in tokenized text
+- tag pos
+- Application Developer
+- machine learning
+- chunk text into phrases
+- language detection
+- text processing
+- parse sentence
+- open source
+- classify a document into predefined categories
+- apache opennlp
+- Data Scientist
+- phrase chunking
+- document categorization
+- uses opennlp apis to add language processing capabilities to applications
+- chunk
+- list available models
+- split text into individual sentences
+- tokenize text
+- text analysis
+- java
+- model management
+- reduce tokens to their base/lemma forms
+- named entity recognition
+- nlp
+- tokenize
 slug: nlp-pipeline-workflow
 tags:
 - Apache OpenNLP

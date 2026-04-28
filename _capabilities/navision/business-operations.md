@@ -59,62 +59,62 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list sales invoices
-- business central
-- get a customer
-- list available companies
-- list all vendors
-- create purchase order
-- create customer
-- list purchase invoices
-- dynamics 365
-- list customers
-- customer management
-- finance
-- vendor management
-- sales invoices
-- list general journals
-- dynamics nav
-- list all customers
-- list items
-- list all employees
-- list sales orders
-- create vendor
-- list all items
-- list general ledger accounts
-- inventory
-- get customer
-- inventory items
-- create a sales order
-- list inventory items
-- business management
-- create a new vendor
-- purchase orders
-- list purchase orders
-- list all purchase orders
 - sales orders
-- navision
-- erp
-- get a customer by id
-- create a new purchase order
-- microsoft
-- create item
+- dynamics 365
 - create a new sales order
-- list employees
-- list all sales orders
-- purchasing
-- create a customer
-- list companies
-- sales
+- business management
+- inventory
 - create sales order
-- general ledger accounts
 - create a new customer
-- single customer
 - list accounts
+- erp
+- create item
+- create purchase order
+- list available companies
+- list companies
+- sales invoices
+- create a new vendor
 - list vendors
-- create a new inventory item
+- list employees
+- list items
+- microsoft
+- single customer
+- get a customer
+- list all employees
+- create a new purchase order
+- inventory items
+- list general ledger accounts
+- finance
+- purchase orders
 - general journals
+- list sales orders
+- create a sales order
+- navision
+- general ledger accounts
+- customer management
+- vendor management
+- sales
+- business central
+- list customers
+- list all purchase orders
+- create a customer
+- create a new inventory item
+- list all vendors
+- get customer
+- create vendor
+- list general journals
+- list all customers
+- purchasing
+- list all sales orders
+- dynamics nav
+- list sales invoices
 - list journals
+- list purchase orders
+- list all items
+- list purchase invoices
+- get a customer by id
+- create customer
+- list inventory items
 - company information
 slug: business-operations
 tags:

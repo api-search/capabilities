@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- archives communications for regulatory compliance.
-- retrieve ad analytics by various pivots.
-- get learning activity reports
-- careers
 - reporting
-- uses sales navigator for lead generation and crm sync.
-- retrieve learning activity reports.
-- tracks employee learning activity and completions.
-- professional networking
-- analytics
-- message archiving and regulatory communications governance.
-- social media
-- authentication, sharing, and verification for consumer apps.
 - b2b advertising, audience targeting, and campaign analytics.
-- linkedin
+- careers
 - retrieve ad analytics by various pivots and dimensions.
-- learning
-- employee development tracking and content access.
-- marketing
 - sales intelligence, lead management, and crm integration.
 - recruiting
-- business
-- job posting, recruiting, and applicant tracking.
 - get ad analytics
-- integrates linkedin authentication and sharing into applications.
-- posts jobs and manages candidates through ats integrations.
-- data portability and advertiser transparency for dma.
+- job posting, recruiting, and applicant tracking.
+- retrieve learning activity reports.
+- marketing
 - manages b2b ad campaigns and audience targeting on linkedin.
+- tracks employee learning activity and completions.
+- learning
+- uses sales navigator for lead generation and crm sync.
+- message archiving and regulatory communications governance.
 - retrieve learning activity reports aggregated by account, group, individual, or content.
+- analytics
+- business
+- authentication, sharing, and verification for consumer apps.
+- integrates linkedin authentication and sharing into applications.
+- get learning activity reports
+- retrieve ad analytics by various pivots.
+- posts jobs and manages candidates through ats integrations.
+- employee development tracking and content access.
+- data portability and advertiser transparency for dma.
+- social media
+- professional networking
+- linkedin
+- archives communications for regulatory compliance.
 slug: reporting-and-analytics
 tags:
 - LinkedIn

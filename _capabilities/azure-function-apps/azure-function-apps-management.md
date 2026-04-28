@@ -16,24 +16,24 @@ provider_name: Azure Function Apps
 provider_slug: azure-function-apps
 search_terms:
 - list function apps
-- faas
-- list functionapp resources
-- management
-- serverless
-- list functions
-- list deployment resources
-- azure resource management
-- list
-- list all resources
-- list deployments
-- azure
-- functions
-- resource management
-- list configurations
-- list function resources
-- cloud
-- compute
 - list configuration resources
+- functions
+- compute
+- faas
+- azure resource management
+- azure
+- resource management
+- list deployment resources
+- list deployments
+- list functions
+- list functionapp resources
+- list function resources
+- serverless
+- list
+- list configurations
+- cloud
+- management
+- list all resources
 slug: azure-function-apps-management
 tags:
 - Azure

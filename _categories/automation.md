@@ -13,7 +13,7 @@ description: 'Capabilities for orchestrating multi-step processes — runbooks, 
 
   '
 domain: operations
-implementation_count: 17
+implementation_count: 16
 implementations:
 - capability_name: Activepieces Workflow Automation
   capability_slug: workflow-automation
@@ -44,21 +44,6 @@ implementations:
   - Layer Management
   - Automation
   tool_count: 11
-- capability_name: Albato iPaaS Automation
-  capability_slug: ipaas-automation
-  capability_url: https://capabilities.apis.io/capabilities/albato/ipaas-automation/
-  consumed_api_count: 2
-  operation_count: 3
-  provider_name: Albato
-  provider_slug: albato
-  tags:
-  - Albato
-  - iPaaS
-  - No-Code Automation
-  - Workflow
-  - Embedded Integration
-  - SaaS
-  tool_count: 6
 - capability_name: Albato Workflow Automation
   capability_slug: workflow-automation
   capability_url: https://capabilities.apis.io/capabilities/albato-a-single-no-code-platform-for-all-automations/workflow-automation/
@@ -254,7 +239,7 @@ implementations:
   tool_count: 12
 layout: category
 name: Automation
-provider_count: 16
+provider_count: 15
 related:
 - ci-cd
 - data-engineering

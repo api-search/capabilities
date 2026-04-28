@@ -81,78 +81,78 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude create a scim group
-- amplitude get a scim group
 - scim api updateScimUser
-- listScimUsers
-- dsar api createDeletionRequest
-- user mapping api unmapUser
-- listScimGroups
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- listDeletionRequests
-- getDsarRequestStatus
-- createScimGroup
-- scim api replaceScimUser
-- amplitude request user data deletion
-- scim api listScimGroups
-- scim api getScimGroup
-- data governance
-- amplitude unmap user identities
-- unified workflow for sending events and identifying users. for data engineers.
-- createDsarRequest
-- analyzes data and manages cohorts
-- scim api deleteScimUser
-- amplitude update a scim group
-- amplitude update a scim user
-- amplitude create a data subject access request
-- replaceScimUser
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- dsar api createDsarRequest
-- amplitude
-- analytics
-- amplitude replace a scim user
-- updateScimGroup
-- manage event schemas and chart annotations. for data governance teams.
-- scim api updateScimGroup
-- ingests and exports event data
-- scim api createScimUser
-- amplitude delete a scim group
-- createScimUser
-- amplitude create a scim user
 - privacy
-- updateScimUser
-- experimentation
-- privacy compliance
+- scim api updateScimGroup
+- dsar api getDsarRequestStatus
+- scim api listScimGroups
+- dsar api createDsarRequest
+- user mapping api mapUser
+- createDsarRequest
+- scim api replaceScimUser
+- deleteScimGroup
+- dsar api createDeletionRequest
+- amplitude update a scim user
 - product analytics
-- amplitude get dsar request status
+- updateScimUser
+- amplitude map user identities
 - export raw event data and manage behavioral cohorts. for data analysts.
 - a/b testing
-- scim api createScimGroup
-- identity
-- amplitude list scim users
-- amplitude delete a scim user
-- getScimGroup
-- runs experiments and feature flags
-- deleteScimUser
-- amplitude list deletion requests
 - scim api getScimUser
-- dsar api listDeletionRequests
-- dsar api getDsarRequestStatus
-- identity management
-- amplitude get a scim user
-- mapUser
-- user behavior
-- getScimUser
-- amplitude list scim groups
-- user mapping api mapUser
+- listScimGroups
 - feature flags
+- identity
+- updateScimGroup
 - scim api deleteScimGroup
-- createDeletionRequest
+- listDeletionRequests
+- user behavior
+- amplitude list deletion requests
+- replaceScimUser
+- scim api getScimGroup
+- user mapping api unmapUser
+- amplitude update a scim group
+- amplitude delete a scim user
+- createScimUser
+- unified workflow for sending events and identifying users. for data engineers.
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- amplitude list scim groups
+- amplitude
+- deleteScimUser
+- createScimGroup
+- amplitude create a scim user
+- amplitude get a scim group
+- amplitude unmap user identities
+- scim api deleteScimUser
 - scim api listScimUsers
-- amplitude map user identities
-- manages privacy and compliance
+- scim api createScimUser
+- manage event schemas and chart annotations. for data governance teams.
+- amplitude request user data deletion
+- ingests and exports event data
+- getScimGroup
+- experimentation
+- amplitude list scim users
+- privacy compliance
+- getScimUser
+- amplitude get a scim user
+- amplitude get dsar request status
+- getDsarRequestStatus
+- amplitude delete a scim group
+- analytics
+- data governance
+- amplitude create a data subject access request
+- analyzes data and manages cohorts
+- scim api createScimGroup
+- identity management
+- mapUser
+- dsar api listDeletionRequests
+- listScimUsers
 - unmapUser
-- deleteScimGroup
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- createDeletionRequest
+- runs experiments and feature flags
+- amplitude create a scim group
+- amplitude replace a scim user
+- manages privacy and compliance
 slug: amplitude-identity-and-privacy
 tags:
 - Amplitude

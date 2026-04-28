@@ -58,67 +58,67 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- list all monitors
-- update a monitor
-- unmute a monitor to resume notifications
-- query timeseries
-- get dashboard list items
-- dashboards
-- list active metrics
-- create a new monitor
-- mute a monitor to suppress notifications
-- validate monitor
-- visualizations
-- delete monitor
-- active metrics
-- platform
-- query scalar
-- fetch dashboards in a dashboard list
 - submit metrics
-- host coverage
-- alerting
-- dashboard list items
-- mute monitor
-- analytics
-- get dashboards in a list
-- create monitor
-- get a monitor by id
-- GetDashboardListItems
-- query timeseries metric data
-- metrics
-- get csm hosts and containers coverage
-- query timeseries data
-- create a monitor
-- get hosts coverage
-- add dashboard list items
-- unmute monitor
-- datadog
-- monitoring
-- individual monitor operations
-- updateMonitor
-- submitMetrics
-- GetCSMHostsAndContainersCoverageAnalysis
 - edit an existing monitor
-- submit metric data points
-- add dashboards to a dashboard list
-- infrastructure
-- deleteMonitor
-- list monitors
-- delete a monitor
-- update monitor
-- query scalar metric data
-- t1
-- createMonitor
-- mute a monitor
-- listActiveMetrics
-- listMonitors
 - muteMonitor
-- get monitor
-- monitor management
-- get a monitor
-- getMonitor
-- validate a monitor configuration
 - queryMetricsTimeseries
+- get hosts coverage
+- validate a monitor configuration
+- query timeseries metric data
+- mute monitor
+- fetch dashboards in a dashboard list
+- create a monitor
+- get monitor
+- platform
+- unmute monitor
+- add dashboards to a dashboard list
+- validate monitor
+- get dashboard list items
+- delete monitor
+- metrics
+- delete a monitor
+- get a monitor by id
+- create monitor
+- query scalar
+- list all monitors
+- get dashboards in a list
+- getMonitor
+- updateMonitor
+- query timeseries
+- host coverage
+- listMonitors
+- create a new monitor
+- query scalar metric data
+- monitor management
+- alerting
+- get csm hosts and containers coverage
+- mute a monitor to suppress notifications
+- list active metrics
+- dashboards
+- list monitors
+- datadog
+- individual monitor operations
+- submit metric data points
+- t1
+- get a monitor
+- deleteMonitor
+- listActiveMetrics
+- add dashboard list items
+- visualizations
+- infrastructure
+- createMonitor
+- GetCSMHostsAndContainersCoverageAnalysis
+- active metrics
+- analytics
+- unmute a monitor to resume notifications
+- dashboard list items
+- update monitor
+- update a monitor
+- submitMetrics
+- GetDashboardListItems
+- mute a monitor
+- query timeseries data
+- monitoring
 slug: monitoring-and-alerting
 tags:
 - Datadog

@@ -50,36 +50,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- amazon eventbridge pipes untagresource
-- UntagResource
-- integration
-- amazon eventbridge pipes startpipe
-- amazon eventbridge pipes stoppipe
-- ListTagsForResource
-- amazon eventbridge pipes listtagsforresource
-- DeletePipe
-- amazon web services
 - amazon eventbridge pipes updatepipe
-- serverless
-- DescribePipe
-- amazon eventbridge pipes deletepipe
-- amazon eventbridge pipes tagresource
-- TagResource
-- UpdatePipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- operations teams managing amazon eventbridge pipes infrastructure
-- developers building applications using amazon eventbridge pipes
-- CreatePipe
-- StartPipe
-- ListPipes
-- event-driven
-- messaging
-- aws
-- amazon eventbridge pipes createpipe
 - point-to-point integration between event producers and consumers
 - amazon eventbridge pipes describepipe
-- amazon eventbridge pipes listpipes
+- StartPipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- UntagResource
+- operations teams managing amazon eventbridge pipes infrastructure
+- amazon eventbridge pipes listtagsforresource
+- amazon eventbridge pipes stoppipe
+- integration
 - StopPipe
+- ListTagsForResource
+- CreatePipe
+- amazon eventbridge pipes untagresource
+- amazon eventbridge pipes createpipe
+- ListPipes
+- messaging
+- event-driven
+- serverless
+- amazon eventbridge pipes startpipe
+- amazon eventbridge pipes tagresource
+- amazon eventbridge pipes deletepipe
+- DeletePipe
+- TagResource
+- developers building applications using amazon eventbridge pipes
+- amazon web services
+- aws
+- UpdatePipe
+- DescribePipe
+- amazon eventbridge pipes listpipes
 slug: amazon-eventbridge-pipes-capability
 tags:
 - Amazon Web Services

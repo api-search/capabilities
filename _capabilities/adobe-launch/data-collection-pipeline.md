@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list event forwarding rules for a property
-- list secrets for authenticating with forwarding destinations
 - data collection
-- create a secret for an event forwarding destination
-- list event forwarding rules
-- event forwarding
-- send an interactive event to adobe edge network
-- server-side event forwarding properties
-- list secrets for a property
 - send interactive event
-- end media session
-- adobe launch
-- list server-side event forwarding properties
-- list event forwarding properties
-- create a new event forwarding rule
-- edge network
-- start a media tracking session
-- send batch events to edge network
-- marketing technology
 - create a new event forwarding property
-- start media session
-- create secret
-- send batch events to adobe edge network
-- end a media tracking session
-- edge network data ingestion
-- send an interactive event to edge network
-- tag management
-- secrets for event forwarding destinations
-- create event forwarding property
+- event forwarding
+- create a new event forwarding rule
 - create event forwarding rule
-- list secrets
-- event forwarding rules
+- edge network
+- tag management
+- server-side event forwarding properties
+- list server-side event forwarding properties
+- create event forwarding property
+- start media session
+- marketing technology
+- create secret
+- secrets for event forwarding destinations
+- send an interactive event to adobe edge network
+- list event forwarding properties
 - send batch events
+- create a secret for an event forwarding destination
+- edge network data ingestion
+- list secrets for authenticating with forwarding destinations
+- send batch events to adobe edge network
+- send an interactive event to edge network
+- end a media tracking session
+- event forwarding rules
+- list secrets
+- list event forwarding rules for a property
+- list secrets for a property
+- list event forwarding rules
+- send batch events to edge network
+- adobe launch
+- end media session
+- start a media tracking session
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- credit cards
-- process a direct service transaction
-- get account info
-- create a disbursement
-- create a person-to-person transfer
-- create funding
-- get currency conversion rate
-- create a disbursement to send money to a recipient
-- digital identity
 - disbursements
-- p2p transfers
+- fraud detection
 - validate account details before transfer
-- create disbursement
-- open banking
+- process a direct service transaction
+- funding transactions
 - create a cross-border international payment
-- currency conversion rates
-- create a funding transaction
+- digital identity
+- open banking
 - create a person-to-person money transfer
-- get account information for a send recipient
 - get currency conversion rate for cross-border transactions
 - create cross border payment
-- money transfer
-- funding transactions
-- get conversion rate
-- verify account eligibility for mastercard send
-- mastercard
-- verify send account
-- fraud detection
-- create a funding transaction via mastercard send
-- cross-border
-- financial services
-- payments
-- cross-border payment processing
-- mastercard send
-- validate account
-- create p2p transfer
-- disbursement transactions
-- create a cross-border payment
 - process direct transaction
+- create p2p transfer
+- cross-border
+- create a funding transaction via mastercard send
+- create a cross-border payment
+- currency conversion rates
+- create a person-to-person transfer
+- get conversion rate
+- disbursement transactions
+- get currency conversion rate
+- financial services
+- create a disbursement
+- mastercard send
+- p2p transfers
+- create a funding transaction
+- payments
+- verify send account
+- validate account
+- credit cards
+- create funding
+- create disbursement
+- create a disbursement to send money to a recipient
+- cross-border payment processing
+- money transfer
+- get account information for a send recipient
+- mastercard
+- verify account eligibility for mastercard send
+- get account info
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

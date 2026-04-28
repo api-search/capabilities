@@ -60,48 +60,48 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- work item batch and creation
-- list work item fields
-- pipelines
-- query work items
-- list all pipelines in a project
-- query work items using wiql
-- work item field definitions
-- create a new pipeline
-- list all pipelines
-- wiql query execution
-- single pipeline run
-- get a pipeline run
-- pipeline runs
 - individual work item operations
-- azure devops
-- run pipeline
-- ci/cd
-- list fields
-- list runs for a pipeline
-- single pipeline
-- pipeline definitions
-- update a work item
-- get a work item by id
+- create work item
 - get details of a pipeline run
-- get work items batch
-- list all work item field definitions
 - devops
 - work items
-- update work item
-- trigger a pipeline run
-- create a new work item
-- get pipeline run
-- create work item
+- get a pipeline run
+- ci/cd
 - get a pipeline by id
+- list all pipelines in a project
+- create pipeline
+- list pipeline runs
+- get work items batch
+- update work item
+- run pipeline
+- azure devops
+- list all work item field definitions
 - azure
 - get pipeline
+- create a new work item
+- single pipeline run
+- query work items
 - project management
-- list pipeline runs
+- wiql query execution
+- get pipeline run
+- pipeline runs
+- work item batch and creation
+- get a work item by id
+- single pipeline
+- list all pipelines
+- trigger a pipeline run
+- work item field definitions
 - get work item
-- create pipeline
+- update a work item
+- list work item fields
 - list pipelines
+- create a new pipeline
+- pipelines
+- list fields
 - get multiple work items by ids
+- list runs for a pipeline
+- pipeline definitions
+- query work items using wiql
 slug: devops-project-management
 tags:
 - Azure DevOps

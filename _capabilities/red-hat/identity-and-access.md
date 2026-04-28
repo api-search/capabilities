@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- create client
+- list realms
+- specific realm.
+- list users.
+- list roles.
+- identity providers.
+- list users
+- create a new user in a realm.
+- list clients
+- red hat
+- keycloak realms.
+- list users in a realm.
+- realm users.
+- list groups.
+- create a user.
+- list identity providers.
+- kubernetes
+- identity
 - get user details.
+- realm roles.
+- create user
+- terminate a user session.
+- enterprise
+- list groups
 - get realm details.
-- linux
+- get user
 - access management
+- linux
 - list identity providers
+- list groups in a realm.
+- containers
+- list client applications in a realm.
+- list clients.
+- list roles
+- open source
+- register a new client application.
+- create client
+- list roles in a realm.
+- realm clients.
+- get realm configuration details.
+- list realm roles
+- get realm
+- hybrid cloud
+- delete user
+- cloud
+- realm groups.
+- delete session
 - list all realms.
 - keycloak
-- list groups in a realm.
-- delete session
-- hybrid cloud
-- identity providers.
-- red hat
-- list clients
-- terminate a user session.
-- list groups.
-- list roles in a realm.
-- register a new client application.
-- delete a user from a realm.
-- realm groups.
-- enterprise
-- list clients.
-- delete user
-- open source
 - list all keycloak realms.
-- list client applications in a realm.
 - list external identity providers.
-- list users.
-- list users in a realm.
-- get realm
-- identity
-- list users
-- keycloak realms.
-- create a user.
-- list realm roles
-- kubernetes
-- containers
-- get user
-- list identity providers.
-- get realm configuration details.
-- specific realm.
-- list groups
-- realm roles.
-- realm users.
-- list realms
-- create user
-- realm clients.
-- list roles
-- create a new user in a realm.
-- list roles.
-- cloud
+- delete a user from a realm.
 slug: identity-and-access
 tags:
 - Red Hat

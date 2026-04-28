@@ -19,31 +19,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- contactless payments
-- e-commerce
-- register a domain for apple pay on the web
-- registers a merchant domain to accept apple pay on the web payments
-- apple pay
-- mobile payments
-- register apple pay domain
-- apple
-- checkout
-- validate apple pay merchant
-- initiating and completing apple pay payment authorizations
-- digital wallet
-- Payment Integration Engineer
-- validate merchant
-- merchant domain management for apple pay
-- E Commerce Developer
-- developer integrating apple pay into a web or mobile checkout experience
-- register domain
-- apple pay merchant validation and payment session
 - registering and managing merchant identity and domains for apple pay
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- validates merchant and obtains apple pay payment session
-- engineer building payment processing infrastructure supporting multiple payment methods
-- payments
+- developer integrating apple pay into a web or mobile checkout experience
+- apple pay
+- Payment Integration Engineer
 - validates merchant identity with apple and returns a payment session object for completing checkout
+- merchant domain management for apple pay
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- mobile payments
+- apple pay merchant validation and payment session
+- contactless payments
+- digital wallet
+- checkout
+- apple
+- validate apple pay merchant
+- validates merchant and obtains apple pay payment session
+- payments
+- register a domain for apple pay on the web
+- register domain
+- register apple pay domain
+- initiating and completing apple pay payment authorizations
+- registers a merchant domain to accept apple pay on the web payments
+- validate merchant
+- engineer building payment processing infrastructure supporting multiple payment methods
+- e-commerce
+- E Commerce Developer
 slug: payment-processing
 tags:
 - Apple Pay

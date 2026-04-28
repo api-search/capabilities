@@ -9,13 +9,13 @@ personas: []
 provider_name: Bancomat
 provider_slug: bancomat
 search_terms:
-- financial services
 - debit cards
-- payments
-- banking
 - italy
+- banking
 - mobile payments
+- financial services
 - atm
+- payments
 slug: bancomat-payment-capability
 tags: []
 tools: []

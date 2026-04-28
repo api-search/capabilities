@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data warehousing
-- list available vantage systems for query execution.
-- list cross-system query summaries from querygrid.
-- Platform Administrator
-- Data Analyst
-- execute a sql query against teradata vantage.
-- create a new query session on a vantage system.
-- data management
-- get the status and results of a submitted query.
-- execute sql queries and analytics.
-- database
+- get query status
 - list querygrid queries
-- analytics
-- executes queries and analyzes data across vantage systems.
-- available systems.
-- execute a sql query.
-- health monitoring and issue detection.
-- list query systems
-- enterprise
-- list available vantage systems.
+- sql
+- execute sql queries and analytics.
+- query sessions.
 - administers querygrid systems, nodes, and software.
-- integrates applications with teradata via rest apis.
-- query
-- Data Engineer
-- Application Developer
+- execute a sql query against teradata vantage.
+- list available vantage systems.
+- create a new query session on a vantage system.
+- enterprise
+- execute query
+- execute a sql query.
+- available systems.
+- list cross-system query summaries from querygrid.
+- Data Analyst
 - manage querygrid data fabric infrastructure.
+- executes queries and analyzes data across vantage systems.
+- Data Engineer
+- sql queries.
+- manages data fabric infrastructure and cross-system connectivity.
+- query
+- teradata
+- Application Developer
 - machine learning
 - create a query session.
-- execute query
-- sql queries.
-- teradata
-- query sessions.
-- sql
-- get query status
-- manages data fabric infrastructure and cross-system connectivity.
-- sql query execution and session management.
+- list query systems
+- create session
+- analytics
+- list available vantage systems for query execution.
 - system and fabric configuration management.
 - cloud
-- create session
+- data warehousing
+- integrates applications with teradata via rest apis.
+- get the status and results of a submitted query.
+- health monitoring and issue detection.
+- database
+- data management
+- Platform Administrator
+- sql query execution and session management.
 slug: query-and-analytics
 tags:
 - Teradata

@@ -9,11 +9,11 @@ personas: []
 provider_name: Absentify
 provider_slug: absentify
 search_terms:
-- leave management
-- absence management
-- microsoft teams
 - human resources
+- microsoft teams
 - hr
+- absence management
+- leave management
 slug: absence-management-absentify
 tags: []
 tools: []

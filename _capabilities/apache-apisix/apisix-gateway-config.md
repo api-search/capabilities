@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- engineers deploying and managing api gateway infrastructure.
-- traffic management
-- create a new gateway route.
-- list api consumers.
-- delete an apisix route.
-- create route
-- list upstreams
+- list consumers
 - update an existing apisix route.
-- create an api consumer.
+- route, upstream, consumer, and ssl management workflow.
+- list all gateway routes.
+- lua
+- create a backend upstream.
+- list api consumers.
+- kubernetes
+- API Gateway Administrator
+- list backend upstreams.
+- create a new apisix route for traffic routing.
+- traffic management
+- create route
+- create a new gateway route.
+- delete route
+- apache
+- list all apisix gateway routes.
+- update route
+- create consumer
+- api gateway
+- engineers deploying and managing api gateway infrastructure.
 - administrators configuring routes, consumers, and security policies.
-- nginx
+- create an api consumer.
+- Platform Engineer
+- configuration
+- list upstreams
 - list all backend upstream configurations.
 - authentication
-- apache
-- create a new backend upstream with load balancing config.
-- cloud native
-- list all api consumers and their plugin configs.
-- api gateway
-- create consumer
-- open source
-- list all apisix gateway routes.
-- create upstream
-- configuration
-- create a new apisix route for traffic routing.
-- apache apisix
-- list routes
-- list consumers
-- route, upstream, consumer, and ssl management workflow.
-- kubernetes
-- create a backend upstream.
-- update route
-- lua
-- delete route
-- list all gateway routes.
 - create a new api consumer with authentication plugins.
-- list backend upstreams.
-- API Gateway Administrator
-- Platform Engineer
+- cloud native
+- open source
+- delete an apisix route.
+- nginx
+- create upstream
+- list all api consumers and their plugin configs.
+- create a new backend upstream with load balancing config.
+- list routes
+- apache apisix
 slug: apisix-gateway-config
 tags:
 - Apache APISIX

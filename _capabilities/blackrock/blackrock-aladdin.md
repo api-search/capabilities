@@ -10,11 +10,11 @@ provider_name: BlackRock
 provider_slug: blackrock
 search_terms:
 - risk analytics
+- fintech
+- finance
 - portfolio management
 - investment management
-- fintech
 - asset management
-- finance
 slug: blackrock-aladdin
 tags: []
 tools: []

@@ -11,13 +11,13 @@ provider_name: Amazon CloudFront
 provider_slug: amazon-cloudfront
 search_terms:
 - amazon cloudfront
-- cdn
-- aws
+- Platform Engineer
 - cloudfront
 - edge
-- content delivery
 - amazon web services
-- Platform Engineer
+- aws
+- content delivery
+- cdn
 slug: content-delivery
 tags:
 - Amazon Web Services

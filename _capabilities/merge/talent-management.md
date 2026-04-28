@@ -40,68 +40,68 @@ personas: []
 provider_name: Merge
 provider_slug: merge
 search_terms:
-- create a new candidate.
-- list candidates from the connected ats.
-- ats list applications
-- list all job postings.
-- unified api
-- create employee
-- hris
-- list scheduled interviews.
-- ats create candidate
-- ats list interviews
-- hris list companies
-- end-to-end talent management combining hris and ats.
-- crm, leads, opportunities, and engagements.
-- candidate pipeline management.
-- hris list employees
-- candidate sourcing, applications, interviews, and offers.
-- hris create employee
-- create a time off request.
-- HR Manager
-- list all candidates.
-- hris list time off
 - Recruiter
-- list time off
-- platform
-- manages tickets and customer support issues.
-- application tracking.
 - file storage, sharing, and permissions.
-- create candidate
-- employee records.
+- create a new candidate.
+- application tracking.
 - ats
-- list time off requests.
-- list all applications.
-- manages employee records, time off, and hr processes.
-- invoicing, payments, expenses, and financial reporting.
-- hris create time off
-- merge
-- recruiting
-- manages candidate pipeline and hiring workflow.
-- integrations
-- manages leads, opportunities, and crm activities.
-- list all open job postings.
-- employee management, benefits, time off, and payroll.
+- ats create candidate
+- crm, leads, opportunities, and engagements.
 - time off management.
-- ticket management and customer communication.
-- manages invoices, payments, and financial reporting.
-- talent management
-- job postings.
-- list employees
-- list all offers.
-- list applications
-- ats list candidates
+- employee management, benefits, time off, and payroll.
 - list all applications from the ats.
-- list candidates
-- list jobs
+- hris create time off
+- employee records.
 - ats list jobs
-- ats list offers
-- list all employees.
-- create an employee in the hris.
-- list companies from the hris.
-- list employees from the connected hris.
-- create a new candidate in the ats.
+- list all candidates.
+- platform
+- list employees
 - create a new employee.
+- list all offers.
+- end-to-end talent management combining hris and ats.
+- manages tickets and customer support issues.
+- manages invoices, payments, and financial reporting.
+- candidate sourcing, applications, interviews, and offers.
+- list all employees.
+- list all open job postings.
+- job postings.
+- ats list interviews
+- list jobs
+- recruiting
+- ticket management and customer communication.
+- invoicing, payments, expenses, and financial reporting.
+- merge
+- list applications
+- manages employee records, time off, and hr processes.
+- list candidates
+- talent management
+- create employee
+- list time off requests.
+- list candidates from the connected ats.
+- hris
+- integrations
+- create an employee in the hris.
+- hris list employees
+- list companies from the hris.
+- manages candidate pipeline and hiring workflow.
+- manages leads, opportunities, and crm activities.
+- hris create employee
+- create candidate
+- list all applications.
+- hris list companies
+- create a new candidate in the ats.
+- list employees from the connected hris.
+- create a time off request.
+- ats list candidates
+- hris list time off
+- unified api
+- list all job postings.
+- candidate pipeline management.
+- ats list applications
+- list scheduled interviews.
+- ats list offers
+- HR Manager
+- list time off
 slug: talent-management
 tags:
 - Merge

@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- keyvault list certificates
-- cosmos list databases
-- blob storage operations
-- list resource groups
-- resource manager
-- keyvault list secrets
-- blob get properties
 - arm list tags
+- arm list subscriptions
 - cloud computing
-- arm list providers
+- cosmos db
+- list resource providers
+- infrastructure as a service
+- platform as a service
+- keyvault get secret
+- cosmos list containers
+- keyvault list secrets
+- key vault
+- list blobs in a container
+- cosmos list items
+- list subscriptions
+- list cryptographic keys
+- enterprise
+- azure
+- download a blob
+- list blobs
 - list certificates
-- api management
-- list cosmos db databases
-- get blob properties
-- list items in a container
+- arm list providers
+- keyvault list certificates
+- arm list resource groups
+- list resources in a subscription
 - subscription management
+- blob get properties
+- get blob properties
+- list secrets
+- list containers in a database
+- blob storage operations
 - arm list resources
 - list subscription tags
-- keyvault list keys
-- enterprise
-- infrastructure as a service
-- cosmos list items
-- get a secret value
-- list cryptographic keys
-- arm list resource groups
-- blob download
-- cosmos db database management
-- key vault
-- platform as a service
-- list subscriptions
-- cosmos list containers
-- download a blob
-- key vault secret management
-- blob list blobs
-- blob storage
-- cosmos db
-- list resources in a subscription
-- list containers in a database
-- list azure subscriptions
-- azure
-- keyvault get secret
-- list blobs in a container
+- api management
 - t1
-- list secrets
-- arm list subscriptions
 - list databases
-- list resource providers
+- key vault secret management
+- get a secret value
+- cosmos db database management
+- list resource groups
+- blob storage
+- list cosmos db databases
+- list items in a container
 - cloud
-- list blobs
+- list azure subscriptions
+- resource manager
+- keyvault list keys
+- blob list blobs
+- cosmos list databases
+- blob download
 slug: data-and-security
 tags:
 - Azure

@@ -27,30 +27,30 @@ personas: []
 provider_name: Apache Kafka
 provider_slug: apache-kafka
 search_terms:
-- list topics
-- data engineering
-- create connector
-- event streaming
-- distributed systems
-- platform architecture
-- engineers who build data pipelines using kafka topics and connectors
+- produce message
+- architects who design and manage kafka cluster topology and connectivity
 - restart a failed kafka connect connector
-- produce a message to a kafka topic via the rest proxy
+- list all kafka connect connectors
 - restart connector
-- Platform Architect
 - apache kafka
-- open source
+- produce a message to a kafka topic via the rest proxy
+- data engineering
+- Platform Architect
+- get the status of a specific kafka connect connector
+- Data Engineer
+- get connector status
 - create a new kafka connect connector for data integration
 - list connectors
-- produce message
-- get the status of a specific kafka connect connector
+- list topics
 - list all kafka topics in the cluster
-- architects who design and manage kafka cluster topology and connectivity
-- Data Engineer
-- list all kafka connect connectors
+- open source
 - messaging
-- get connector status
 - pub-sub
+- create connector
+- distributed systems
+- platform architecture
+- event streaming
+- engineers who build data pipelines using kafka topics and connectors
 slug: event-streaming
 tags:
 - Apache Kafka

@@ -65,81 +65,81 @@ personas: []
 provider_name: Amazon API Gateway
 provider_slug: aws-api-gateway
 search_terms:
-- list all http and websocket apis
-- list http api routes
-- creating, versioning, deploying, and retiring apis
-- http api route management
-- list all api keys
-- list all usage plans
-- disconnect a websocket client from the api
-- list stages for a rest api
-- send websocket message
-- disconnect a websocket client
-- create route
-- api management
-- http and websocket api management
-- serverless
-- get websocket connection
-- deployment
-- list all rest apis
-- list rest api stages
-- get details of a specific rest api
-- create a new api key for access control
-- create a new rest api
-- deploy rest api
-- cloud
-- amazon api gateway
-- create a new api key
-- usage plan management
-- create a new rest api in api gateway
-- create api key
-- websocket
-- list deployment stages for a rest api
-- create http api
-- list all usage plans and their api key associations
-- managing api keys, usage plans, and authorization
-- rest api management
-- send a message to a connected websocket client
-- api gateway
-- get information about a connected websocket client
-- list routes
-- list routes for an http api
-- disconnect websocket client
-- rest api stages
-- get connection
-- rest api deployments
-- websocket connection management
-- list integrations
-- list deployments
-- list all routes for an http api
-- list all backend integrations for an http api
-- get websocket connection info
-- delete a rest api
-- deploy a rest api to a stage
-- Backend Developer
 - create a new http or websocket api
-- create a new route for an http api
-- list stages
-- unified workflow for creating, deploying, and managing rest and http apis
-- websocket api management and connection handling
-- get rest api
-- list rest apis
-- aws
-- create rest api
-- list deployments for a rest api
-- list rest api deployments
-- rest
-- list api keys
-- disconnect client
-- list http apis
-- list usage plans
-- list all rest apis in the aws account
-- manages api lifecycle, deployments, and governance across the organization
-- list all api keys in the account
-- api key management
-- creates and configures apis for application services
-- delete rest api
 - API Platform Engineer
+- Backend Developer
+- unified workflow for creating, deploying, and managing rest and http apis
+- create a new api key
+- rest api deployments
+- deployment
+- send websocket message
+- list rest api stages
+- rest api management
+- get information about a connected websocket client
+- managing api keys, usage plans, and authorization
+- list stages
+- create a new api key for access control
+- manages api lifecycle, deployments, and governance across the organization
+- delete rest api
+- list usage plans
+- list all backend integrations for an http api
+- creating, versioning, deploying, and retiring apis
+- create route
+- usage plan management
+- list all http and websocket apis
+- get websocket connection
+- deploy a rest api to a stage
+- rest api stages
+- get rest api
+- list all routes for an http api
+- create rest api
+- websocket connection management
+- get details of a specific rest api
+- api gateway
+- list all usage plans and their api key associations
+- list deployments
+- create a new rest api in api gateway
+- websocket
+- list integrations
+- list all usage plans
+- create http api
+- disconnect a websocket client
+- list http apis
+- list routes for an http api
+- list rest apis
+- api management
+- deploy rest api
+- http api route management
+- list deployments for a rest api
+- create api key
+- disconnect websocket client
+- list rest api deployments
+- create a new rest api
+- list api keys
+- list all rest apis
+- serverless
+- list deployment stages for a rest api
+- disconnect client
+- rest
+- list stages for a rest api
+- creates and configures apis for application services
+- list all api keys
+- http and websocket api management
+- delete a rest api
+- cloud
+- api key management
+- get websocket connection info
+- list all api keys in the account
+- amazon api gateway
+- list all rest apis in the aws account
+- websocket api management and connection handling
+- aws
+- create a new route for an http api
+- get connection
+- list routes
+- list http api routes
+- disconnect a websocket client from the api
+- send a message to a connected websocket client
 slug: api-management-workflow
 tags:
 - Amazon API Gateway

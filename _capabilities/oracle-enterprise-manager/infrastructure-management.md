@@ -39,56 +39,56 @@ personas: []
 provider_name: Oracle Enterprise Manager
 provider_slug: oracle-enterprise-manager
 search_terms:
-- get metric time series data
-- list blackouts (maintenance windows)
+- get metric time series data for performance analysis
+- list monitored targets
+- get details of a specific monitored target
+- list global target properties for classification
+- incident details
+- get target properties
+- create a new monitored target
 - delete a scheduled blackout
-- suppress an incident from active views
+- list incidents
+- enterprise management
+- oracle
+- target details
+- infrastructure incidents
+- clear an incident marking it as resolved
+- get blackout
 - maintenance windows
 - create target
-- cloud management
-- get event
-- get metric time series data for performance analysis
-- get details of a specific monitoring event
-- list monitored targets
-- enterprise manager
-- list blackouts
-- get details of a specific incident
-- infrastructure incidents
-- create blackout
-- list incidents
-- delete blackout
-- get target
-- clear an incident marking it as resolved
-- get target properties
-- get metric time series
-- get details of a specific monitored target
-- get configuration properties of a target
-- list targets
-- get target details
-- list metric groups
-- database management
-- enterprise management
-- suppress incident
-- oracle
-- get incident
-- create a new blackout (maintenance window)
-- monitored targets
-- list global target properties for classification
-- monitoring
-- get blackout
-- list monitored targets in enterprise manager
 - create a monitored target
-- incident details
-- create a new monitored target
-- get details of a specific blackout
-- list metric groups available for a target
+- delete blackout
+- create a new blackout (maintenance window)
 - list global target properties
+- list blackouts
 - clear incident
-- infrastructure management
-- get incident details
+- list metric groups available for a target
+- monitored targets
+- suppress incident
+- get details of a specific monitoring event
+- list blackouts (maintenance windows)
 - list incidents in enterprise manager
-- target details
+- get incident details
+- suppress an incident from active views
+- get configuration properties of a target
+- get details of a specific incident
+- get target details
+- infrastructure management
+- get details of a specific blackout
+- list targets
+- list metric groups
+- list monitored targets in enterprise manager
+- get metric time series
+- cloud management
+- database management
+- enterprise manager
+- get incident
+- get event
+- monitoring
+- get metric time series data
 - performance metrics
+- create blackout
+- get target
 slug: infrastructure-management
 tags:
 - Oracle

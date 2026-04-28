@@ -16,7 +16,7 @@ description: 'CMS, headless CMS, and digital asset management — content author
 
   '
 domain: content
-implementation_count: 12
+implementation_count: 13
 implementations:
 - capability_name: Adobe Premiere Creative Asset Management
   capability_slug: creative-asset-management
@@ -59,6 +59,20 @@ implementations:
   - Content Management
   - Publishing
   tool_count: 7
+- capability_name: HubSpot Commerce Admin
+  capability_slug: commerce-admin
+  capability_url: https://capabilities.apis.io/capabilities/hubspot/commerce-admin/
+  consumed_api_count: 5
+  operation_count: 5
+  provider_name: HubSpot
+  provider_slug: hubspot
+  tags:
+  - HubSpot
+  - Commerce
+  - Admin
+  - CMS
+  - HubDB
+  tool_count: 9
 - capability_name: HubSpot Content And Marketing
   capability_slug: content-and-marketing
   capability_url: https://capabilities.apis.io/capabilities/hubspot/content-and-marketing/

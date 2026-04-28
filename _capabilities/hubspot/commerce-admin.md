@@ -1,6 +1,6 @@
 ---
 categories:
-- payments
+- content-management
 consumed_apis:
 - commerce-payments
 - commerce-subscriptions
@@ -35,42 +35,42 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- get subscription
-- create a commerce payment
-- create a commerce subscription
-- hubspot
-- list all commerce subscriptions
-- individual subscription
-- update a commerce payment
-- hubdb
-- search commerce payments
-- email marketing
-- analytics
-- commerce payments
-- search payments
-- search commerce subscriptions
-- marketing automation
-- list all commerce payments
-- commerce
-- marketing
-- get a subscription by id
-- commerce subscriptions
-- get payment
-- list subscriptions
-- cms
-- admin
-- get a payment by id
-- list payments
-- sales
-- content
-- update payment
-- crm
-- individual payment
 - search subscriptions
-- customer service
+- get a subscription by id
+- individual payment
+- create a commerce subscription
+- list subscriptions
+- list payments
+- list all commerce payments
 - operations
+- individual subscription
+- hubspot
 - create payment
+- marketing automation
+- crm
+- search payments
+- list all commerce subscriptions
+- content
+- search commerce subscriptions
+- marketing
+- get payment
+- get subscription
+- search commerce payments
+- hubdb
+- sales
+- update a commerce payment
 - create subscription
+- cms
+- customer service
+- analytics
+- commerce
+- get a payment by id
+- admin
+- update payment
+- email marketing
+- commerce subscriptions
+- commerce payments
+- create a commerce payment
 slug: commerce-admin
 tags:
 - HubSpot

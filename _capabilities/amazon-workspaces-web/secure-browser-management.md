@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- create a portal.
-- network configuration management.
-- list user settings
-- list secure browser portals.
-- end user computing
-- virtual desktop
+- list all workspaces web secure browser portals.
 - secure browser
-- list network settings
-- list portals
 - list trust stores
+- browser policy management.
 - portal and resource provisioning
 - user settings management.
-- list browser settings.
-- list all workspaces web secure browser portals.
-- browser policy and access control enforcement
-- IT Administrator
-- configures browser policies and access controls.
-- list trust stores.
-- create a new secure browser portal.
-- list network settings for portal connectivity.
 - administration
-- list browser policy settings for portals.
-- portal management.
-- list user settings configurations for portals.
-- list user settings.
-- Security Engineer
-- trust store management.
-- manages workspaces web portals and configurations.
-- list browser settings
-- list ssl certificate trust stores.
-- zero trust
-- browser policy management.
-- aws
+- list browser settings.
 - workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- configures browser policies and access controls.
+- create a portal.
+- list portals
+- list network settings
+- trust store management.
+- list ssl certificate trust stores.
+- browser policy and access control enforcement
+- virtual desktop
+- list user settings.
+- network configuration management.
+- Security Engineer
 - secure remote browser access infrastructure
 - list network settings.
 - create portal
+- end user computing
+- list browser policy settings for portals.
+- zero trust
+- portal management.
+- list secure browser portals.
+- list network settings for portal connectivity.
+- list browser settings
+- create a new secure browser portal.
+- manages workspaces web portals and configurations.
+- IT Administrator
+- aws
+- list user settings
+- list trust stores.
+- list user settings configurations for portals.
 slug: secure-browser-management
 tags:
 - AWS

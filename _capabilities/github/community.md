@@ -56,76 +56,76 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- individual gist operations
-- update gist
-- get a user profile
-- list starred
 - listStarredGists
-- search users
-- follow user
-- updategist
-- listOrganizationMembers
-- organization members
-- star gist
-- create a gist comment
-- star repository
-- pipelines
-- get a user
-- team discussions
-- github
-- create discussion
-- starred gists
-- list followers of a user
-- user followers
-- user profile
-- follow a user
-- platform
-- get gist
-- list starred repositories
-- fork gist
-- create gist comment
 - list starred gists
-- getUser
-- star a repository
-- update a gist
-- list team discussions
-- listDiscussions
-- organization profile
-- list discussions
-- community
-- fork a gist
-- unfollow a user
-- organizations
-- list followers
-- gists
+- get a gist
 - discussions
 - list users
-- get an organization
-- create a team discussion
-- list organization members
-- code
-- list org members
-- listUsers
-- get user
-- users
-- getgist
-- get a team discussion
-- listFollowersOfUser
-- star a gist
-- get organization
-- t1
-- unfollow user
-- list public gists
-- getAnOrganization
-- get a gist
-- createDiscussion
-- source control
 - listPublicGists
+- list organization members
+- listFollowersOfUser
+- list public gists
+- createDiscussion
+- update gist
+- update a gist
+- follow user
+- create gist comment
+- unfollow a user
+- unfollow user
+- list discussions
+- star a repository
+- list followers of a user
+- create a gist comment
 - user listing
+- user profile
+- get a user profile
+- search users
+- platform
+- organization members
+- list team discussions
+- fork gist
 - list gist comments
+- get organization
+- fork a gist
+- get an organization
+- star a gist
+- get user
+- follow a user
+- list starred repositories
+- github
+- star gist
+- star repository
+- list followers
+- getUser
+- list starred
+- starred gists
 - software development
-- gist management
+- individual gist operations
+- get a team discussion
+- code
+- getAnOrganization
+- gists
 - get discussion
+- listDiscussions
+- t1
+- gist management
+- listUsers
+- getgist
+- create a team discussion
+- get gist
+- community
+- listOrganizationMembers
+- get a user
+- users
+- organizations
+- user followers
+- pipelines
+- team discussions
+- updategist
+- organization profile
+- source control
+- list org members
+- create discussion
 slug: community
 tags:
 - GitHub

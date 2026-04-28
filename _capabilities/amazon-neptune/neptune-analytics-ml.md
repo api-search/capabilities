@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- list ml jobs
-- manages neptune clusters, instances, and infrastructure
-- list neptune ml training jobs
-- list neptune analytics graphs for in-memory graph analysis
 - graph database management, querying, and data streaming
-- property graph
-- create ml inference endpoint
-- amazon neptune
-- neptune analytics graph management
-- neptune ml training job management
-- graph analytics, vector search, and ml model training and inference
-- list neptune analytics graphs
-- database
-- create a neptune ml inference endpoint for predictions
-- ML Engineer
-- Data Scientist
 - create analytics graph
-- graph database
+- neptune ml training job management
 - bulk loading
-- rdf
+- trains and deploys neptune ml graph neural network models
+- neptune
+- Graph Developer
 - graph analytics
+- amazon neptune
+- list neptune analytics graphs for in-memory graph analysis
+- neptune analytics graph management
+- Graph Database Administrator
 - list analytics graphs
 - sparql
-- neptune
-- list neptune ml graph neural network training jobs
-- gremlin
-- list ml training jobs
-- writes gremlin, sparql, and opencypher queries against neptune
-- performs graph analytics and builds ml models on graph data
-- data streaming
-- machine learning
-- trains and deploys neptune ml graph neural network models
-- aws
+- list neptune ml training jobs
 - create a neptune analytics graph for graph analytics workloads
-- Graph Database Administrator
-- Graph Developer
+- graph analytics, vector search, and ml model training and inference
+- gremlin
+- create a neptune ml inference endpoint for predictions
+- list ml training jobs
+- property graph
+- machine learning
+- graph database
+- Data Scientist
+- data streaming
+- create ml inference endpoint
+- list neptune ml graph neural network training jobs
+- ML Engineer
+- manages neptune clusters, instances, and infrastructure
+- list neptune analytics graphs
+- performs graph analytics and builds ml models on graph data
+- database
+- aws
+- rdf
+- writes gremlin, sparql, and opencypher queries against neptune
+- list ml jobs
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

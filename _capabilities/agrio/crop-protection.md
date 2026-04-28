@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- list all crop types supported by agrio's ai diagnosis service.
-- list all supported crop types.
-- diagnose
-- agrio
-- diagnose plant disease
-- agricultural consultants providing plant health recommendations
-- ai diagnosis
-- check remaining api credits for plant diagnosis requests.
-- check credit balance
-- list crops
-- disease and pest identification from plant images
-- account credit management.
-- supported crop types for diagnosis
-- Agronomist
-- supported crop catalog.
-- crop protection
-- crop advisory
-- get current credit balance.
-- plant disease
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- diagnose plant diseases and pests from an uploaded image.
-- ai
-- get credit
-- agriculture
-- Crop Advisor
-- field specialists diagnosing plant health issues in crops
-- plant health diagnosis.
 - pest detection
-- credit balance and api usage monitoring
-- list supported crops
+- list all crop types supported by agrio's ai diagnosis service.
+- field specialists diagnosing plant health issues in crops
+- get credit
 - ai-powered plant disease diagnosis and crop advisory
-- developers building crop advisory and farm management applications
+- disease and pest identification from plant images
+- crop protection
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
+- list crops
+- crop advisory
+- check credit balance
+- list all supported crop types.
+- diagnose plant diseases and pests from an uploaded image.
 - Precision Agriculture Developer
+- diagnose
+- supported crop types for diagnosis
+- ai diagnosis
+- ai
+- agriculture
+- agricultural consultants providing plant health recommendations
+- check remaining api credits for plant diagnosis requests.
+- credit balance and api usage monitoring
+- plant disease
+- Agronomist
+- agrio
+- account credit management.
+- supported crop catalog.
+- Crop Advisor
+- plant health diagnosis.
+- diagnose plant disease
+- get current credit balance.
+- list supported crops
+- developers building crop advisory and farm management applications
 slug: crop-protection
 tags:
 - Agrio

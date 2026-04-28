@@ -22,35 +22,35 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- compliance assessment management
 - list controls
-- list frameworks
-- list available frameworks
-- get assessment
-- create control
-- amazon audit manager
-- list assessment reports
-- compliance
-- list generated assessment reports for compliance documentation.
-- generate a compliance assessment report from collected evidence.
-- get audit manager account settings including default destinations and process owners.
-- create a new assessment
-- create a custom compliance control for use in frameworks and assessments.
-- create a new compliance assessment using a regulatory framework.
-- update settings
-- list compliance controls available for building assessments.
-- create assessment report
-- audit
-- get settings
 - list assessments
-- risk management
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- get complete details of a compliance assessment including control status.
+- get audit manager account settings including default destinations and process owners.
+- create assessment report
+- compliance
+- list available frameworks
 - list all assessments
 - create assessment
+- list frameworks
+- create a new assessment
 - update audit manager settings including sns notifications and default report destination.
 - list all compliance assessments to understand current audit coverage.
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- get complete details of a compliance assessment including control status.
+- update settings
+- create a custom compliance control for use in frameworks and assessments.
+- get settings
+- list assessment reports
+- amazon audit manager
+- audit
+- get assessment
+- generate a compliance assessment report from collected evidence.
+- list generated assessment reports for compliance documentation.
+- create control
+- risk management
+- compliance assessment management
+- list compliance controls available for building assessments.
 - aws
+- create a new compliance assessment using a regulatory framework.
 - compliance framework management
 slug: compliance-auditing
 tags:

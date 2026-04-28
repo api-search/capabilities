@@ -37,65 +37,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- list analytics segments.
 - run report
-- digital analytics reporting and audience insights.
-- run an adobe analytics report.
-- list segments
-- audience segment management.
-- target list audiences
-- ajo create offer
-- CDP Administrator
 - profile management, audience segmentation, and data ingestion.
-- list a/b test and personalization activities in adobe target.
-- list journeys
-- a/b test and personalization activities.
-- analytics report execution.
-- analytics
-- a/b testing and content personalization.
-- target list activities
-- unified customer profiles and data management.
+- list activities
 - list target activities.
 - ajo list journeys
-- marketing professional using analytics, personalization, and journey tools.
-- customer experience
-- list available metrics for an adobe analytics report suite.
-- analytics list segments
-- list journey optimizer offers.
-- customer journeys.
+- create a new personalized offer in adobe journey optimizer.
+- Marketing Technologist
+- list offers
 - technical marketer integrating experience cloud apis into marketing stack.
+- ajo list offers
+- journey orchestration
+- personalized offers.
+- CDP Administrator
 - target audiences.
+- audience segment management.
+- Digital Marketer
+- list audience segments in adobe analytics.
+- list audiences
+- list content offers in adobe target.
+- list journeys
+- unified customer profiles and data management.
+- run analytics report
+- target list offers
+- analytics list metrics
+- list available metrics for an adobe analytics report suite.
+- list journey optimizer offers.
+- target list audiences
+- target list activities
+- list customer journeys in adobe journey optimizer.
+- ajo list messages
+- list journey optimizer journeys.
+- Data Engineer
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- a/b testing and content personalization.
+- analytics list segments
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- marketing professional using analytics, personalization, and journey tools.
+- analytics report execution.
+- list a/b test and personalization activities in adobe target.
+- campaign management
+- list analytics segments.
+- a/b test and personalization activities.
+- personalization
+- analytics
+- customer journeys.
+- digital analytics reporting and audience insights.
+- customer experience
+- adobe experience cloud
+- list segments
+- ajo create offer
+- list campaign messages in adobe journey optimizer.
+- digital marketing
+- run an adobe analytics report.
+- run an adobe analytics report with dimensions, metrics, and segments.
+- list targeting audiences in adobe target.
+- administrator managing customer profiles, segments, and identity resolution.
 - list target audiences.
 - list personalized offers in adobe journey optimizer.
-- ajo list offers
-- ajo list messages
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- run an adobe analytics report with dimensions, metrics, and segments.
-- list customer journeys in adobe journey optimizer.
-- create a new personalized offer in adobe journey optimizer.
-- list activities
-- digital marketing
-- run analytics report
-- Digital Marketer
-- list targeting audiences in adobe target.
-- list offers
-- Data Engineer
-- campaign management
-- Marketing Technologist
-- analytics, a/b testing, and journey orchestration for digital marketers.
 - multi-channel customer journey management.
-- personalization
-- list audience segments in adobe analytics.
-- target list offers
-- personalized offers.
-- analytics list metrics
-- journey orchestration
-- list content offers in adobe target.
-- list audiences
-- list journey optimizer journeys.
-- adobe experience cloud
-- administrator managing customer profiles, segments, and identity resolution.
-- list campaign messages in adobe journey optimizer.
 slug: digital-marketing
 tags:
 - Adobe Experience Cloud

@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- calendar and scheduling
-- get upcoming meetings
-- whiteboard
-- conference room management
-- conferencing
-- web conferencing
 - list all user groups
-- unified workflow for managing conferencing sessions
-- generate a secure room access hash
-- login
-- list session recordings
-- list all registered users
-- Meeting Organizer
-- list public rooms
-- apache
-- create room
-- video conferencing
-- open source
-- collaboration
-- close a conference room
-- list all public conference rooms
-- list users
-- list recordings
-- get room hash
-- authenticate a user to openmeetings
-- close room
-- check health
 - apache openmeetings
-- manages users, groups, and system health
-- list rooms
-- list upcoming
-- get recordings by type
-- user management
-- list groups
-- create a new conference room
+- list users
+- list all registered users
 - get upcoming calendar meetings
 - System Administrator
-- create a new room
-- check system health status
+- list session recordings
+- create a new conference room
+- generate a secure room access hash
+- unified workflow for managing conferencing sessions
+- get upcoming meetings
 - session recordings
+- list public rooms
+- create a new room
+- collaboration
+- whiteboard
+- check health
+- check system health status
+- authenticate a user to openmeetings
+- list groups
+- list upcoming
+- web conferencing
+- apache
+- get recordings by type
+- list all public conference rooms
+- login
+- create room
+- list recordings
+- calendar and scheduling
+- video conferencing
+- open source
+- conferencing
+- Meeting Organizer
+- conference room management
+- user management
 - manages conference rooms, invites participants, and handles recordings
+- get room hash
+- manages users, groups, and system health
+- close a conference room
+- close room
+- list rooms
 slug: conferencing-workflow
 tags:
 - Apache OpenMeetings

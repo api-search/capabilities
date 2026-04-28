@@ -34,62 +34,62 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- validate iban
-- validate a vat number and retrieve associated company details
-- vat validation
-- security engineer
-- avatars
-- detection and blocking of fraudulent users, transactions, and bot activity
-- public holidays
-- finance
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- email validation
-- screenshots
-- product engineer
-- contacts
-- timezones
-- currencies
-- get live exchange rates
-- ip intelligence
-- validate an iban number
-- data engineer
-- exchange rates
-- developer building user onboarding and personalization features
-- engineer building data pipelines and enrichment workflows
-- currency conversion, vat compliance, and banking validation for financial applications
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- fraud analyst
-- validate a vat number and get company details
-- finance engineer
-- financial compliance
-- iban validation
-- image processing
-- abstract api
-- web scraping
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- validate an iban and get bank details
-- get vat rates
-- engineer building fraud detection and threat intelligence systems
-- validate a vat number
-- get current vat rates for a country
-- convert an amount from one currency to another using live rates
 - get live rates
-- convert currency
-- ip geolocation
-- validate an iban number and retrieve bank and account details
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- exchange rates, vat validation, and iban validation for financial compliance
-- company enrichment
+- security engineer
+- validate an iban number
+- public holidays
+- financial compliance
+- vat validation
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- convert currency amounts
+- product engineer
+- engineer building data pipelines and enrichment workflows
+- finance engineer
+- developer building user onboarding and personalization features
+- validate an iban and get bank details
+- convert an amount from one currency to another using live rates
+- web scraping
+- validate a vat number and get company details
 - compliance analyst
 - get the latest exchange rates for 80+ currencies
+- email validation
+- fraud analyst
+- avatars
+- get live exchange rates
+- retrieve current exchange rates
+- ip geolocation
+- validate a vat number
+- convert currency
+- finance
+- validate iban
+- timezones
+- contacts
+- validate vat
+- data engineer
+- iban validation
+- abstract api
+- image processing
+- phone validation
+- validate vat number
+- convert an amount from one currency to another
+- get current vat rates for a country
+- get vat rates
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- currency conversion, vat compliance, and banking validation for financial applications
+- validate a vat number and retrieve associated company details
+- validate an iban number and retrieve bank and account details
+- exchange rates
+- screenshots
+- company enrichment
+- detection and blocking of fraudulent users, transactions, and bot activity
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- ip intelligence
+- currencies
+- exchange rates, vat validation, and iban validation for financial compliance
+- automatic enrichment of user profiles with geographic, company, and temporal data
 - developer building payment, billing, and financial compliance systems
 - professional ensuring regulatory compliance for vat, banking, and financial reporting
-- validate vat number
-- convert currency amounts
-- validate vat
-- retrieve current exchange rates
-- convert an amount from one currency to another
-- phone validation
+- engineer building fraud detection and threat intelligence systems
 slug: financial-compliance
 tags:
 - Abstract Api

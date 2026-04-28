@@ -14,7 +14,7 @@ description: 'Card processing, ACH, wallets, subscription billing, invoicing, re
 
   '
 domain: commerce
-implementation_count: 16
+implementation_count: 13
 implementations:
 - capability_name: Adyen Online Payment Processing
   capability_slug: online-payment-processing
@@ -115,48 +115,6 @@ implementations:
   - Checkout
   - Mobile Payments
   tool_count: 2
-- capability_name: Bank of America CashPro Treasury Banking
-  capability_slug: treasury-banking
-  capability_url: https://capabilities.apis.io/capabilities/bank-of-america/treasury-banking/
-  consumed_api_count: 1
-  operation_count: 2
-  provider_name: Bank of America
-  provider_slug: bank-of-america
-  tags:
-  - Bank of America
-  - CashPro
-  - Treasury
-  - Payments
-  - Corporate Banking
-  tool_count: 6
-- capability_name: BNY Mellon Treasury Operations
-  capability_slug: treasury-operations
-  capability_url: https://capabilities.apis.io/capabilities/bank-of-new-york-mellon/treasury-operations/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: BNY Mellon
-  provider_slug: bank-of-new-york-mellon
-  tags:
-  - BNY Mellon
-  - Treasury
-  - Payments
-  - Institutional Banking
-  - Wire Transfers
-  tool_count: 6
-- capability_name: HubSpot Commerce Admin
-  capability_slug: commerce-admin
-  capability_url: https://capabilities.apis.io/capabilities/hubspot/commerce-admin/
-  consumed_api_count: 5
-  operation_count: 5
-  provider_name: HubSpot
-  provider_slug: hubspot
-  tags:
-  - HubSpot
-  - Commerce
-  - Admin
-  - CMS
-  - HubDB
-  tool_count: 9
 - capability_name: HubSpot Commerce Operations
   capability_slug: commerce-operations
   capability_url: https://capabilities.apis.io/capabilities/hubspot/commerce-operations/
@@ -241,7 +199,7 @@ implementations:
   tool_count: 21
 layout: category
 name: Payments & Billing
-provider_count: 15
+provider_count: 13
 related:
 - identity-access
 - compliance

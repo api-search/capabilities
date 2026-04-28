@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list databases in an athena data catalog to explore available schemas.
-- list work groups
 - get query execution
-- list data catalogs
-- list query executions
-- named query management
-- serverless
-- start query execution
-- analytics
-- check the status of a running or completed athena query execution.
-- download the results of a completed athena sql query.
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list data catalogs registered with athena to discover available data sources.
-- save a sql query as a named query for reuse in athena.
-- amazon athena
-- list recent query executions in an athena workgroup.
+- sql
 - list tables in an athena database to understand available data.
-- list named queries
-- create a named query
+- named query management
 - list saved named queries available in an athena workgroup.
-- create named query
+- list databases in an athena data catalog to explore available schemas.
+- save a sql query as a named query for reuse in athena.
 - list athena workgroups to understand available query isolation environments.
-- aws
+- start query execution
+- amazon athena
+- create a named query
+- download the results of a completed athena sql query.
+- list data catalogs registered with athena to discover available data sources.
+- start a sql query execution
+- sql query management
+- create named query
+- check the status of a running or completed athena query execution.
+- list work groups
+- list query executions
+- serverless
+- list data catalogs
+- list databases
+- analytics
+- list named queries
+- list recent query executions in an athena workgroup.
+- run a sql query against s3 data using amazon athena for serverless analytics.
 - list table metadata
 - get query results
-- sql query management
-- sql
-- list databases
-- start a sql query execution
+- aws
 slug: sql-analytics
 tags:
 - Amazon Athena

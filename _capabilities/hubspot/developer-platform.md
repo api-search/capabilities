@@ -18,25 +18,25 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- oauth
-- hubspot
-- automation
-- oauth token metadata
-- get access token metadata
-- email marketing
-- analytics
-- platform
-- marketing automation
-- commerce
 - developer
-- marketing
-- get token metadata
-- sales
-- content
-- crm
-- customer service
-- operations
+- oauth token metadata
+- platform
+- oauth
 - retrieve metadata for an oauth access token
+- operations
+- hubspot
+- marketing automation
+- crm
+- get token metadata
+- get access token metadata
+- content
+- marketing
+- sales
+- customer service
+- analytics
+- commerce
+- email marketing
+- automation
 slug: developer-platform
 tags:
 - HubSpot

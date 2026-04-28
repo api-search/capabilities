@@ -14,19 +14,19 @@ personas: []
 provider_name: Amazon Q
 provider_slug: amazon-q
 search_terms:
-- amazon q resources
-- aws cloud resource management
-- list amazon q resources
-- aws
-- amazon q
 - artificial intelligence
-- cloud operations
+- amazon q resources
 - assistant
-- generative ai
+- amazon q
 - automation workflow for amazon q
+- aws cloud resource management
 - enterprise
 - engineer managing amazon q resources
 - list resources
+- cloud operations
+- aws
+- list amazon q resources
+- generative ai
 slug: amazon-q
 tags:
 - Amazon Q

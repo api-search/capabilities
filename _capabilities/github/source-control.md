@@ -83,89 +83,89 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- create a review for a pull request
-- request reviewers
-- create or update file
-- create a pull request
-- getRepositoryContent
-- list public repositories
-- createOrUpdateFileContents
-- platform
-- get a repository
-- listCommits
-- submit review
-- pull request merge
-- listReleases
-- code
-- createPullRequest
-- compare two commits
-- update a repository
-- branch operations
-- list pull request files
-- list reviews
-- getPullRequest
-- create or update file contents
+- update branch protection
+- create a release
+- updateRepository
 - create release
-- list repository tags
+- pull requests
+- platform
+- create a pull request
+- code review management
+- get pull request
+- individual pull request operations
+- list reviews
+- repository content management
+- pull request management
+- listCommits
+- createReviewForPullRequest
+- get commit
+- getBranch
+- source control
+- update pull request
+- get a branch
+- update a repository
+- get repository content
+- compare commits
+- listPublicRepositories
+- createPullRequest
+- release management
 - updatePullRequest
-- listPullRequests
-- commit operations
-- list releases
-- list tags
-- update a pull request
-- merge a branch
-- code review
-- merge a pull request
+- get a commit
+- merge pull request
+- getPullRequest
+- compare two commits
+- compareTwoCommits
+- create a review for a pull request
+- github
+- createOrUpdateFileContents
+- get a pull request
+- code
+- get branch
+- list pr files
+- create pull request
+- pull request merge
 - list pull requests
+- create review
+- list reviews for a pull request
+- list tags
+- search repositories
+- repository listing and search
+- code review
 - createRelease
 - merge branch
-- get a commit
-- submit a review for a pull request
-- updateRepository
-- get pull request
-- createReviewForPullRequest
-- create review
-- compare commits
-- update branch protection
-- get a pull request
-- get commit
-- release management
-- repository listing and search
-- individual pull request operations
-- github
-- list reviews for a pull request
-- pull requests
-- listPublicRepositories
-- repository content management
-- list commits
-- code review management
-- get repository
-- create pull request
-- t1
-- getRepository
-- compareTwoCommits
-- get repository content
-- pull request management
-- software development
-- update pull request
-- get content
-- getBranch
-- list pr files
-- pipelines
-- get a branch
-- get branch
-- search repositories
 - request reviewers for a pull request
+- submit a review for a pull request
 - create a review
-- branches
-- merge pull request
-- repositories
-- repository management
-- mergePullRequest
-- searchRepositories
+- branch operations
+- listPullRequests
+- commit operations
+- list public repositories
 - listReviewsForPullRequest
-- create a release
-- source control
+- mergePullRequest
+- list releases
+- t1
+- request reviewers
+- listReleases
+- submit review
+- pipelines
+- update a pull request
+- merge a pull request
+- list repository tags
+- get repository
+- getRepositoryContent
+- create or update file
+- get content
+- repository management
+- repositories
+- software development
+- list pull request files
+- branches
+- create or update file contents
+- merge a branch
+- list commits
+- get a repository
+- searchRepositories
+- getRepository
 slug: source-control
 tags:
 - GitHub

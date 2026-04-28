@@ -9,13 +9,13 @@ personas: []
 provider_name: Apache HBase
 provider_slug: apache-hbase
 search_terms:
+- bigtable
+- wide column
 - database
 - hadoop
-- bigtable
-- nosql
-- wide column
 - apache
 - open source
+- nosql
 - big data
 slug: hbase-data-access
 tags: []

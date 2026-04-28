@@ -11,7 +11,7 @@ description: 'Capabilities for compliance posture — audit trails, policy enfor
 
   '
 domain: governance
-implementation_count: 15
+implementation_count: 16
 implementations:
 - capability_name: Adobe Captivate Learning Management
   capability_slug: learning-management
@@ -159,6 +159,21 @@ implementations:
   - Threat Detection
   - Compliance
   tool_count: 4
+- capability_name: BetterCloud SaaS Lifecycle Management
+  capability_slug: saas-lifecycle-management
+  capability_url: https://capabilities.apis.io/capabilities/bettercloud/saas-lifecycle-management/
+  consumed_api_count: 1
+  operation_count: 10
+  provider_name: BetterCloud
+  provider_slug: bettercloud
+  tags:
+  - BetterCloud
+  - Saas Management
+  - User Lifecycle
+  - Onboarding
+  - Offboarding
+  - Compliance
+  tool_count: 11
 - capability_name: Google Analytics Compliance and Privacy
   capability_slug: compliance
   capability_url: https://capabilities.apis.io/capabilities/google-analytics/compliance/
@@ -230,7 +245,7 @@ implementations:
   tool_count: 8
 layout: category
 name: Compliance
-provider_count: 15
+provider_count: 16
 related:
 - security
 - identity-access

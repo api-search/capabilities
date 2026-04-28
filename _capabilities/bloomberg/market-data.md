@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- execution management
-- historical data queries.
-- subscribe to interval-based real-time bars.
+- request intraday bars.
 - reference data queries.
 - search for fields.
-- intraday tick queries.
-- business intelligence
-- request reference data for securities and fields.
-- look up field metadata.
-- market data
-- bloomberg
-- look up metadata for bloomberg field mnemonics.
-- analytics
-- reference data request
-- subscribe market bar
-- enterprise
-- subscribe market vwap
-- request intraday bars.
-- subscribe to streaming real-time market data.
-- news
-- search the bloomberg api data dictionary for fields.
-- field search request
-- transaction cost analysis
-- request reference data.
-- intraday bar queries.
-- request intraday ohlc bars for a security.
-- intraday tick request
-- request intraday ticks.
-- subscribe market data
-- field discovery.
-- subscribe to custom vwap stream.
-- trading
-- historical data request
-- quantitative analysis
-- financial services
-- intraday bar request
 - request historical data.
+- intraday tick queries.
+- intraday bar queries.
+- request end-of-day historical data for securities.
+- subscribe to interval-based real-time bars.
+- field discovery.
+- subscribe to streaming real-time market data.
+- transaction cost analysis
+- bloomberg
+- subscribe market bar
+- request reference data for securities and fields.
+- enterprise
 - request raw intraday tick data for a security.
 - data license
+- reference data request
+- field search request
+- business intelligence
+- request reference data.
+- news
+- request intraday ohlc bars for a security.
+- look up metadata for bloomberg field mnemonics.
+- intraday tick request
+- subscribe market data
+- financial services
+- look up field metadata.
+- subscribe to custom vwap stream.
+- trading
+- intraday bar request
 - field info request
-- request end-of-day historical data for securities.
+- analytics
+- request intraday ticks.
+- search the bloomberg api data dictionary for fields.
+- market data
+- execution management
+- quantitative analysis
+- historical data request
+- historical data queries.
+- subscribe market vwap
 slug: market-data
 tags:
 - Bloomberg

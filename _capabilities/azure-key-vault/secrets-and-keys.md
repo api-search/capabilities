@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- get a certificate.
-- list cryptographic keys in the vault.
-- list keys.
-- list certificates.
-- decrypt data using a key.
-- create certificate
-- create a key.
-- cloud security
-- list certificates
-- verify a signature.
-- delete key
-- set a secret.
-- get a secret.
-- create a new cryptographic key.
-- individual key management.
-- get secret
-- delete secret
-- encrypt data using a key.
-- secrets management
-- individual secret management.
-- create a new certificate.
-- get certificate
-- security
-- create key
-- cryptography
-- list secrets.
 - sign
-- get key
-- get a secret value.
-- list certificates in the vault.
-- delete a certificate.
-- delete a secret.
-- get a key.
-- key vault
-- decrypt
-- delete certificate
-- key management
-- verify
-- certificates
-- set a secret value.
-- azure
-- set secret
-- list secrets
-- list secrets in the vault.
-- delete a key.
-- list keys
-- encrypt
+- verify a signature.
+- list certificates.
 - secret management.
+- cloud security
+- create certificate
+- list secrets in the vault.
+- set a secret value.
+- get a secret value.
+- list keys
 - certificate management.
+- delete a certificate.
+- get certificate
+- set a secret.
+- set secret
+- certificates
+- create a key.
+- key vault
+- get a secret.
+- key management
+- create key
+- list cryptographic keys in the vault.
+- azure
+- list certificates
+- create a new certificate.
+- delete secret
+- delete a secret.
+- encrypt data using a key.
+- individual key management.
+- get key
+- security
+- list secrets
+- list keys.
+- create a new cryptographic key.
+- list secrets.
+- individual secret management.
+- decrypt data using a key.
+- get a key.
+- decrypt
+- verify
+- list certificates in the vault.
+- delete certificate
+- encrypt
+- cryptography
 - key management.
 - get key details.
+- secrets management
 - sign a digest using a key.
+- get a certificate.
+- get secret
+- delete a key.
+- delete key
 slug: secrets-and-keys
 tags:
 - Azure

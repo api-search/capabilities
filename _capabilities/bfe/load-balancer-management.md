@@ -23,34 +23,34 @@ personas: []
 provider_name: BFE
 provider_slug: bfe
 search_terms:
+- list available bfe metric categories for targeted monitoring
+- retrieve available metric categories
+- get bfe runtime metrics and performance counters
+- hot reload bfe configuration
+- reload config
 - traffic management
 - get metric categories
-- management
-- reload config
-- hot reload bfe configuration
-- retrieve bfe load balancer runtime metrics and performance counters for monitoring
-- get bfe metrics
-- dynamic configuration management and reload
-- reload bfe config
 - get metrics
-- get available monitoring metric categories
-- load balancer
-- layer 7 load balancing and traffic routing
-- open source
-- retrieve available metric categories
-- configuration
-- networking
-- baidu
-- get bfe runtime metrics and performance counters
-- monitoring
-- bfe
-- get categories
 - trigger a hot reload of bfe routing and load balancing configuration without restart
+- bfe
+- get bfe metrics
 - engineer managing bfe load balancer deployments and configuration
-- metrics, logging, and distributed tracing
-- list available bfe metric categories for targeted monitoring
-- trigger hot reload of bfe routing rules and configuration
+- get available monitoring metric categories
+- baidu
+- load balancer
+- configuration
+- reload bfe config
+- dynamic configuration management and reload
+- open source
 - cncf
+- trigger hot reload of bfe routing rules and configuration
+- metrics, logging, and distributed tracing
+- retrieve bfe load balancer runtime metrics and performance counters for monitoring
+- management
+- monitoring
+- layer 7 load balancing and traffic routing
+- get categories
+- networking
 - retrieve bfe runtime monitoring metrics
 slug: load-balancer-management
 tags:

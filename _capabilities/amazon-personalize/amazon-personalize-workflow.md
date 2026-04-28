@@ -15,21 +15,21 @@ provider_name: Amazon Personalize
 provider_slug: amazon-personalize
 search_terms:
 - list and manage openapi.yml resources
-- machine learning
-- aws
+- list amazon personalize resources
 - personalization
+- ml
 - list openapi.yml
 - ai
-- amazon personalize
-- primary amazon personalize resources
-- Developer
 - customer experience
 - recommendations
-- ml
-- core api workflow
-- developer using amazon personalize apis
-- list amazon personalize resources
+- amazon personalize
 - list resources
+- developer using amazon personalize apis
+- machine learning
+- aws
+- core api workflow
+- Developer
+- primary amazon personalize resources
 slug: amazon-personalize-workflow
 tags:
 - Amazon Personalize

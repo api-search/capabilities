@@ -11,43 +11,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- blue/green deployment
-- create a new deployment
-- create deployment
-- list instances in a deployment
-- create deployment group
-- release management
+- create a deployment group for an application
 - get details about a specific deployment
-- get deployment
-- deployment
-- coordinates application releases.
-- stop an in-progress deployment
-- ci/cd
-- get deployment instance
-- DevOps Engineer
-- managing software release processes and rollbacks.
+- get deployment information for a target instance
 - list deployments for an application and deployment group
 - application deployment to ec2, lambda, ecs, and on-premises servers.
-- list deployment groups
-- manages deployment infrastructure.
-- list deployment instances
+- blue/green deployment
+- amazon
+- release management
 - devops
-- list deployments
-- automated application deployment to compute targets.
-- list deployment groups for an application
-- list applications
+- deployment
+- list deployment instances
+- ci/cd
 - manage deployment groups
 - list codedeploy applications
-- create application
+- list instances in a deployment
 - create and monitor deployments
-- get deployment information for a target instance
-- create a deployment group for an application
-- aws
-- Release Manager
+- list deployment groups for an application
 - stop deployment
-- create a codedeploy application
+- managing software release processes and rollbacks.
+- list applications
+- DevOps Engineer
+- coordinates application releases.
+- create a new deployment
+- list deployments
+- Release Manager
 - manage codedeploy applications
-- amazon
+- list deployment groups
+- automated application deployment to compute targets.
+- create deployment group
+- manages deployment infrastructure.
+- get deployment
+- get deployment instance
+- create deployment
+- stop an in-progress deployment
+- create a codedeploy application
+- aws
+- create application
 slug: amazon-codedeploy-deployment-automation
 tags:
 - Amazon

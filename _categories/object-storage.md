@@ -14,34 +14,8 @@ description: 'Buckets, blobs, key-addressable opaque object stores. Operations a
 
   '
 domain: infrastructure
-implementation_count: 9
+implementation_count: 7
 implementations:
-- capability_name: Amazon EBS Block Storage Management
-  capability_slug: ebs-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-ebs/ebs-management/
-  consumed_api_count: 1
-  operation_count: 7
-  provider_name: Amazon EBS
-  provider_slug: amazon-ebs
-  tags:
-  - Amazon EBS
-  - AWS
-  - Storage
-  - Block Storage
-  tool_count: 7
-- capability_name: Amazon EFS Elastic File System Management
-  capability_slug: efs-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-efs/efs-management/
-  consumed_api_count: 1
-  operation_count: 5
-  provider_name: Amazon EFS
-  provider_slug: amazon-efs
-  tags:
-  - Amazon EFS
-  - AWS
-  - Storage
-  - File System
-  tool_count: 5
 - capability_name: Amazon S3 Storage Management
   capability_slug: storage-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-s3/storage-management/
@@ -136,7 +110,7 @@ implementations:
   tool_count: 15
 layout: category
 name: Object Storage
-provider_count: 9
+provider_count: 7
 related:
 - data-engineering
 - document-processing

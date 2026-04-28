@@ -14,7 +14,7 @@ description: 'HRIS, payroll, time tracking, leave management, benefits administr
 
   '
 domain: hr
-implementation_count: 10
+implementation_count: 8
 implementations:
 - capability_name: Absence.io Absence Management
   capability_slug: absence-management
@@ -42,20 +42,6 @@ implementations:
   - Connected Worker
   - Training Management
   tool_count: 6
-- capability_name: Aflac Benefits Administration
-  capability_slug: benefits-administration
-  capability_url: https://capabilities.apis.io/capabilities/aflac/benefits-administration/
-  consumed_api_count: 1
-  operation_count: 6
-  provider_name: aflac
-  provider_slug: aflac
-  tags:
-  - Aflac
-  - Benefits
-  - Insurance
-  - Enrollment
-  - Claims
-  tool_count: 6
 - capability_name: Allianz Employee Engagement Workflow
   capability_slug: employee-engagement-workflow
   capability_url: https://capabilities.apis.io/capabilities/allianz-engagement-survey/employee-engagement-workflow/
@@ -69,21 +55,6 @@ implementations:
   - Surveys
   - Analytics
   tool_count: 8
-- capability_name: BetterCloud SaaS Lifecycle Management
-  capability_slug: saas-lifecycle-management
-  capability_url: https://capabilities.apis.io/capabilities/bettercloud/saas-lifecycle-management/
-  consumed_api_count: 1
-  operation_count: 10
-  provider_name: BetterCloud
-  provider_slug: bettercloud
-  tags:
-  - BetterCloud
-  - Saas Management
-  - User Lifecycle
-  - Onboarding
-  - Offboarding
-  - Compliance
-  tool_count: 11
 - capability_name: Oracle EBS Workforce Management
   capability_slug: workforce-management
   capability_url: https://capabilities.apis.io/capabilities/oracle-e-business-suite/workforce-management/
@@ -151,7 +122,7 @@ implementations:
   tool_count: 16
 layout: category
 name: Payroll & HR
-provider_count: 8
+provider_count: 6
 related:
 - recruiting-ats
 - identity-access

@@ -31,37 +31,37 @@ provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
 - list all connectors.
-- workflow automation
 - create a workflow.
-- list all pre-built connectors available for embedding into your saas product.
-- get analytics data.
-- create a new automation workflow connecting two or more integrated platforms.
 - manage workflows.
-- list workflows
-- integration analytics.
-- SaaS Product Manager
-- developer implementing and automating embedded integration workflows.
-- apifuse
-- create workflow
-- list connectors
-- integration platform
-- integrations
-- saas
-- embedded integrations
-- list integrations
-- get analytics
-- marketplace
-- browse pre-built connectors.
-- browse all available embedded integrations, optionally filtered by category.
 - list all integration workflows configured in the embedded marketplace.
-- managing native integrations within saas products.
-- product manager building native integrations into a saas product.
-- list all integrations.
-- Integration Developer
-- browse and manage integrations.
 - retrieve integration usage analytics including total tasks, active integrations, and active users.
-- list workflows.
+- marketplace
+- create a new automation workflow connecting two or more integrated platforms.
 - ipaas
+- apifuse
+- browse all available embedded integrations, optionally filtered by category.
+- Integration Developer
+- get analytics data.
+- product manager building native integrations into a saas product.
+- managing native integrations within saas products.
+- embedded integrations
+- create workflow
+- integration analytics.
+- workflow automation
+- list all integrations.
+- developer implementing and automating embedded integration workflows.
+- list integrations
+- list workflows
+- browse and manage integrations.
+- list connectors
+- integrations
+- SaaS Product Manager
+- list all pre-built connectors available for embedding into your saas product.
+- browse pre-built connectors.
+- get analytics
+- integration platform
+- saas
+- list workflows.
 slug: embedded-integration-management
 tags:
 - Apifuse

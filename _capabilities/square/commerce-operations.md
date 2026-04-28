@@ -63,102 +63,102 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- create a payment link.
-- create a checkout payment link.
-- search catalog objects.
-- invoicing
-- list payment disputes.
-- get details for a specific payment.
-- manage payments.
-- ecommerce
-- create a payment.
-- inventory
-- list invoices for a location.
-- commerce
-- create refund
-- manage catalog items.
-- refunds
-- complete payment
 - get payment details.
 - create or update a catalog object.
-- create a subscription.
-- payments
-- list refunds
-- complete a payment.
-- list invoices
-- search subscriptions
-- manage a specific order.
-- manage refunds.
-- list payments.
-- square
-- refund a payment.
-- point of sale
-- batch retrieve inventory counts
-- loyalty
-- financial technology
-- get dispute details.
-- get a single catalog object.
-- list refunds.
-- get dispute
-- apply inventory adjustments.
-- retail
-- accept a dispute.
-- get catalog object
-- get order
-- create invoice
-- accept dispute
-- get invoice
-- get payment
-- team
-- webhooks
-- search catalog objects
-- terminal
-- retrieve an order by id.
-- search orders
-- retrieve inventory counts.
-- manage invoices.
-- search all orders.
-- refund payment
-- list disputes
-- bookings
-- get order details.
-- catalog
-- manage payment links.
-- gift cards
-- list catalog
-- checkout
-- create an order.
-- get an invoice.
-- labor
-- list payment links.
-- search subscriptions.
-- cancel payment
-- create order
-- manage subscriptions.
-- cancel a payment.
-- create subscription
-- list payment refunds.
-- list catalog objects.
-- customers
-- batch change inventory
-- list invoices.
-- disputes
-- manage disputes.
-- list payments taken by the account.
-- locations
-- manage orders.
+- complete payment
 - merchants
-- create payment link
-- manage a specific payment.
-- create a new order.
-- subscriptions
-- list payments
-- orders
+- create invoice
+- refund payment
+- get dispute details.
+- search catalog objects
+- manage a specific order.
+- financial technology
+- create order
+- manage payment links.
 - create payment
-- list disputes.
+- get order details.
+- manage disputes.
+- manage subscriptions.
+- square
+- list payment refunds.
+- list disputes
+- list invoices
 - upsert catalog object
+- webhooks
+- create an order.
+- manage catalog items.
+- retail
+- list refunds.
+- accept dispute
+- list payments taken by the account.
+- gift cards
+- get dispute
+- orders
+- list invoices.
+- refund a payment.
+- list invoices for a location.
+- create a subscription.
+- search all orders.
+- get catalog object
+- list refunds
+- manage a specific payment.
+- terminal
+- team
+- checkout
+- create payment link
+- batch retrieve inventory counts
+- create a checkout payment link.
+- create a payment.
+- loyalty
+- cancel payment
+- create a payment link.
+- commerce
+- batch change inventory
+- subscriptions
+- list disputes.
+- create a new order.
+- search subscriptions
+- cancel a payment.
 - list payment links
+- disputes
+- manage payments.
+- customers
+- list payments.
+- create refund
+- accept a dispute.
+- manage refunds.
+- payments
 - create a draft invoice.
+- refunds
+- search catalog objects.
+- locations
+- list payment disputes.
+- get order
+- inventory
+- retrieve an order by id.
+- get details for a specific payment.
+- get invoice
+- labor
+- list payments
+- manage invoices.
+- point of sale
+- retrieve inventory counts.
+- get an invoice.
+- invoicing
+- get a single catalog object.
+- ecommerce
+- get payment
+- manage orders.
+- catalog
+- list catalog
+- list payment links.
+- list catalog objects.
+- create subscription
+- apply inventory adjustments.
+- search subscriptions.
+- complete a payment.
+- bookings
+- search orders
 slug: commerce-operations
 tags:
 - Square

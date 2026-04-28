@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- cloudflare
-- list all images.
-- dns
-- object storage
-- artificial intelligence
-- get image details.
-- stream get video
-- images delete image
-- delete an image.
-- web performance
-- serverless
-- list images
-- list image variants.
-- images create direct upload
-- upload a video from url.
-- image management.
-- get video details.
-- cdn
-- images list images
-- list images.
-- platform
-- list all videos.
-- security
-- video management.
-- images list variants
-- stream list live inputs
-- api gateway
-- stream upload video
-- images get image
-- media
-- ai gateway
-- ddos protection
-- create a direct upload url.
-- images upload image
-- images
-- list videos
-- list videos.
-- containers
-- edge
-- edge computing
-- real-time communication
-- stream create direct upload
+- stream create live input
 - delete a video.
-- create a direct upload url for images.
-- upload an image.
+- get image details.
+- list videos.
+- edge
+- images
+- platform
+- list all images.
+- images upload image
+- real-time communication
+- create a direct upload url.
+- edge computing
+- list images.
+- stream upload video
 - create a live streaming input.
-- video
-- stream list videos
+- images get image
+- upload an image.
+- api gateway
 - stream delete video
 - list live streaming inputs.
+- containers
+- video management.
+- stream create direct upload
+- list videos
+- stream list live inputs
+- create a direct upload url for images.
+- list images
+- security
+- web performance
+- images create direct upload
+- media
+- image management.
+- ai gateway
+- cdn
+- video
+- ddos protection
+- delete an image.
+- artificial intelligence
+- serverless
+- cloudflare
+- upload a video from url.
+- stream list videos
+- images delete image
+- list all videos.
 - cloud
-- stream create live input
+- dns
+- list image variants.
+- object storage
+- get video details.
+- images list images
+- images list variants
+- stream get video
 slug: media-and-content
 tags:
 - Cloudflare

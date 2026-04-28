@@ -11,23 +11,8 @@ description: 'Capabilities for fleets of connected devices — registration, con
 
   '
 domain: infrastructure
-implementation_count: 13
+implementation_count: 11
 implementations:
-- capability_name: ADT Home Security Management
-  capability_slug: home-security-management
-  capability_url: https://capabilities.apis.io/capabilities/adt/home-security-management/
-  consumed_api_count: 1
-  operation_count: 7
-  provider_name: ADT
-  provider_slug: adt
-  tags:
-  - ADT
-  - Home Security
-  - Smart Home
-  - IoT
-  - Monitoring
-  - Access Control
-  tool_count: 10
 - capability_name: AGCO Precision Farming
   capability_slug: precision-farming
   capability_url: https://capabilities.apis.io/capabilities/agco/precision-farming/
@@ -57,21 +42,6 @@ implementations:
   - Kubernetes
   - Device Management
   tool_count: 1
-- capability_name: AWS Device Farm Mobile and Browser Testing
-  capability_slug: mobile-browser-testing
-  capability_url: https://capabilities.apis.io/capabilities/amazon-device-farm/mobile-browser-testing/
-  consumed_api_count: 1
-  operation_count: 15
-  provider_name: Amazon Device Farm
-  provider_slug: amazon-device-farm
-  tags:
-  - Amazon Device Farm
-  - Mobile Testing
-  - Browser Testing
-  - Quality Assurance
-  - Test Automation
-  - AWS
-  tool_count: 18
 - capability_name: Amazon FreeRTOS Device Management
   capability_slug: amazon-freertos-device-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-freertos/amazon-freertos-device-management/
@@ -199,7 +169,7 @@ implementations:
   tool_count: 8
 layout: category
 name: IoT & Device Management
-provider_count: 13
+provider_count: 11
 related:
 - messaging
 - monitoring

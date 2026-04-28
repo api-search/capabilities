@@ -35,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- lists all message templates for a waba.
-- conversation analytics and reporting.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- list message templates
-- creates a new message template.
-- delete message template
-- update message template
+- get conversation analytics
 - reporting
-- template performance analytics.
-- analytics
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- get template analytics
-- create message template
-- marketing
 - updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- creates a new message template. templates must be approved by meta before use.
-- message template management.
-- message templates
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- creates a new message template.
+- update message template
+- create message template
+- get template analytics
+- delete message template
+- retrieves conversation analytics.
 - whatsapp
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 - updates an existing message template.
-- deletes a message template. deleting by name removes all language variants.
-- individual message template management.
+- marketing
+- list message templates
+- conversation analytics and reporting.
+- creates a new message template. templates must be approved by meta before use.
+- template performance analytics.
 - retrieves template analytics.
 - lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- message templates
+- lists all message templates for a waba.
+- analytics
 - deletes a message template.
-- retrieves conversation analytics.
-- get conversation analytics
+- message template management.
+- deletes a message template. deleting by name removes all language variants.
+- individual message template management.
 slug: templates-and-analytics
 tags:
 - WhatsApp

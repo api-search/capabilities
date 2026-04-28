@@ -35,41 +35,41 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- get alerts incidents
-- list alert incidents
+- analysis
+- incident response
+- devops
+- new relic
 - list alert incidents, optionally filtered to only open ones
-- list alert events filtered by product or entity type
-- get alerts conditions
-- incidents
-- list alert violations, optionally filtered to only open ones
-- get application
-- list applications for incident context
-- analytics
+- get alerts incidents
+- list alert events
+- list applications for context
 - apm
 - platform
-- get application details for incident investigation
-- get application details
-- incident response
-- observability
-- list alert conditions for a specific policy
-- new relic
 - performance
-- list alert conditions for a policy
-- analysis
-- sre
-- get alerts violations
-- list alert conditions
-- devops
-- monitoring
-- list alert events
-- list applications
-- get application details for incident context
-- get applications
-- infrastructure
+- list alert incidents
 - list alert violations
-- get alerts events
-- list applications for context
+- list alert events filtered by product or entity type
+- list alert conditions for a policy
+- get applications
+- list applications
+- get alerts violations
 - alerts
+- list alert conditions for a specific policy
+- list alert violations, optionally filtered to only open ones
+- get application details for incident context
+- sre
+- get alerts events
+- get application details for incident investigation
+- observability
+- list applications for incident context
+- get alerts conditions
+- incidents
+- analytics
+- infrastructure
+- get application details
+- monitoring
+- get application
+- list alert conditions
 slug: incident-response
 tags:
 - New Relic

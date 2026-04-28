@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- vpc endpoint consumer management
-- list connections
-- create endpoint service
-- list pending and active connections to endpoint services
-- manages vpc endpoint services and private connectivity architecture
-- private connectivity
-- create a vpc endpoint service
-- create a vpc endpoint
-- reject endpoint connections
-- accept connections
-- list endpoints
-- create a vpc endpoint service backed by a load balancer
-- consumes endpoint services and manages vpc endpoints for internal services
-- security
-- endpoint services
-- vpc
-- accept endpoint connections
-- list vpc endpoints in the account
-- Network Engineer
-- create endpoint
-- amazon
-- list endpoint connections
-- private vpc connectivity workflow
-- networking
 - create a private vpc endpoint for an aws service or endpoint service
-- list vpc endpoints
-- create vpc endpoint
-- zero trust
-- reject vpc endpoint connection requests
-- aws
-- vpc endpoint service provider management
-- list endpoint services
-- endpoint connection management
-- list available vpc endpoint services for private connectivity
-- accept pending vpc endpoint connection requests
+- amazon
+- create endpoint
+- accept connections
+- endpoint services
 - list vpc endpoint services
+- create a vpc endpoint
+- create a vpc endpoint service
+- list vpc endpoints
+- list endpoint connections
+- list endpoint services
+- manages vpc endpoint services and private connectivity architecture
+- create a vpc endpoint service backed by a load balancer
+- list pending and active connections to endpoint services
+- list available vpc endpoint services for private connectivity
+- private vpc connectivity workflow
+- reject endpoint connections
 - Platform Engineer
+- list connections
+- consumes endpoint services and manages vpc endpoints for internal services
+- vpc endpoint service provider management
+- security
+- list vpc endpoints in the account
+- endpoint connection management
+- zero trust
+- Network Engineer
+- private connectivity
+- create vpc endpoint
+- vpc
+- accept pending vpc endpoint connection requests
+- create endpoint service
+- aws
+- accept endpoint connections
+- list endpoints
+- networking
+- vpc endpoint consumer management
+- reject vpc endpoint connection requests
 slug: private-connectivity
 tags:
 - Amazon

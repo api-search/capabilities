@@ -27,50 +27,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve outbound edi transactions.
 - list trading partners.
-- integration
-- edi extract outbound transaction
-- invoke a rest method on a service.
-- login
-- isg logout
-- get trading partner by id.
-- e-business suite
-- edi get outbound transactions
-- soa gateway
-- edi get inbound transactions
-- business applications
-- edi get trading partners
-- outbound edi transactions.
-- get wadl for a rest service.
-- trading partner management.
-- retrieve trading partners.
-- isg initialize
-- get outbound transactions
-- isg get service wadl
-- retrieve inbound edi transactions.
-- get trading partners
-- enterprise
-- list inbound transactions.
-- import an inbound edi transaction.
-- isg invoke rest method
-- get inbound transactions
 - isg login
 - authenticate.
-- oracle
+- get outbound transactions
+- import an inbound edi transaction.
 - erp
-- edi get trading partner by id
-- authentication.
-- inbound edi transactions.
-- retrieve code conversion mappings.
-- edi
-- edi import inbound transaction
-- edi get code conversions
-- list outbound transactions.
-- authenticate and obtain session token.
-- initialize responsibility context.
-- extract an outbound edi transaction.
+- edi get inbound transactions
+- oracle
+- soa gateway
+- edi get trading partners
 - end the current session.
+- extract an outbound edi transaction.
+- isg invoke rest method
+- edi get trading partner by id
+- business applications
+- enterprise
+- edi
+- isg get service wadl
+- outbound edi transactions.
+- isg logout
+- authentication.
+- retrieve inbound edi transactions.
+- inbound edi transactions.
+- trading partner management.
+- integration
+- e-business suite
+- edi import inbound transaction
+- get inbound transactions
+- isg initialize
+- invoke a rest method on a service.
+- retrieve trading partners.
+- edi get outbound transactions
+- login
+- get trading partners
+- authenticate and obtain session token.
+- get wadl for a rest service.
+- initialize responsibility context.
+- edi get code conversions
+- list inbound transactions.
+- retrieve code conversion mappings.
+- list outbound transactions.
+- get trading partner by id.
+- retrieve outbound edi transactions.
+- edi extract outbound transaction
 slug: integration-and-edi
 tags:
 - Oracle

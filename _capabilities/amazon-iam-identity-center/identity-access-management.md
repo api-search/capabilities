@@ -28,46 +28,46 @@ personas: []
 provider_name: Amazon IAM Identity Center
 provider_slug: amazon-iam-identity-center
 search_terms:
-- manage workforce users
-- assign account access
-- create group
-- manage aws account access assignments
-- manages workforce identities and provisions access to aws accounts
-- create account assignment
-- list groups in the identity store
-- list users in the identity store
-- workforce identity
-- assigning aws account access to users and groups
-- authentication
-- single sign-on
-- list workforce users in the identity store
-- configures permission sets and account assignments
-- IT Administrator
-- create a permission set defining what access a user gets to an aws account
-- IAM Administrator
-- create a new workforce user in iam identity center
-- manage permission sets for aws account access
-- iam
-- list sso instances in the account
 - list users
-- managing workforce user and group identities
-- assign access to a user or group for an aws account
-- list user groups in the identity store
-- access control
-- manage user groups
-- remove account access
+- assigning aws account access to users and groups
+- configures permission sets and account assignments
 - list all permission sets
-- list permission sets
+- iam
+- access control
+- assign a permission set to a user or group for an aws account
+- IAM Administrator
+- manage permission sets for aws account access
+- list instances
+- create user
+- remove account access
+- list groups in the identity store
 - list permission sets for assigning aws account access
 - remove a user or group's access to an aws account
-- aws
 - list groups
-- assign a permission set to a user or group for an aws account
-- create user
+- create group
+- create account assignment
+- list user groups in the identity store
+- managing workforce user and group identities
+- authentication
+- assign access to a user or group for an aws account
+- workforce identity
 - create permission set
-- list instances
+- assign account access
+- manage workforce users
+- manage aws account access assignments
+- list workforce users in the identity store
+- single sign-on
+- list sso instances in the account
+- manages workforce identities and provisions access to aws accounts
 - identity management
+- list users in the identity store
 - create a new group for organizing users
+- IT Administrator
+- create a new workforce user in iam identity center
+- aws
+- create a permission set defining what access a user gets to an aws account
+- list permission sets
+- manage user groups
 slug: identity-access-management
 tags:
 - AWS

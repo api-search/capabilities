@@ -35,54 +35,54 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: airflow
 search_terms:
-- monitoring and operating running pipelines.
-- list all apache airflow dags.
-- get details of an apache airflow dag by id.
-- list connections
-- data engineering
-- airflow variables.
-- pause dag
-- list all connections.
-- Platform Admin
-- data pipeline
-- list dags
-- list task instances and their status for a dag run.
-- airflow
-- scheduling
-- get dag run status
-- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
-- defining, scheduling, and executing data workflows.
-- pause an airflow dag to prevent scheduled runs.
-- managing pipeline configuration and integrations.
-- apache airflow dag management.
-- list airflow variables for pipeline configuration.
-- apache
-- trigger and monitor dag runs.
-- builds and triggers data pipelines using airflow dags.
+- airflow connections.
+- get variable
 - get dag
-- open source
-- list variables
-- list dag runs.
-- trigger dag run
-- manages airflow connections, variables, pools, and infrastructure.
-- Data Engineer
+- monitoring and operating running pipelines.
+- Platform Admin
+- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
+- get details of an apache airflow dag by id.
+- builds and triggers data pipelines using airflow dags.
+- scheduling
+- trigger and monitor dag runs.
+- get dag run status
+- managing pipeline configuration and integrations.
+- data pipeline
+- pause dag
+- apache airflow dag management.
 - workflow orchestration
 - list task instances for a dag run.
-- get the current status of an airflow dag run.
-- etl
-- list airflow dag run history with optional state filtering.
-- get variable
-- dag
-- get a specific airflow variable by key.
-- airflow connections.
-- trigger a new dag run.
-- list all variables.
-- list airflow connections for external service integrations.
-- list all dags.
-- monitor task instances.
-- list task instances
+- list dag runs.
+- list all connections.
+- list airflow variables for pipeline configuration.
 - list dag runs
+- apache
+- list all variables.
+- list task instances and their status for a dag run.
+- pause an airflow dag to prevent scheduled runs.
+- get a specific airflow variable by key.
+- list task instances
+- data engineering
+- monitor task instances.
+- dag
+- list connections
+- trigger a new dag run.
+- Data Engineer
 - trigger an apache airflow dag run with optional configuration.
+- etl
+- list all apache airflow dags.
+- open source
+- airflow variables.
+- list dags
+- manages airflow connections, variables, pools, and infrastructure.
+- list all dags.
+- list airflow connections for external service integrations.
+- defining, scheduling, and executing data workflows.
+- list airflow dag run history with optional state filtering.
+- list variables
+- get the current status of an airflow dag run.
+- airflow
+- trigger dag run
 slug: workflow-orchestration
 tags:
 - Airflow

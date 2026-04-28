@@ -9,9 +9,9 @@ personas: []
 provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
-- aws
-- time series
 - database
+- time series
+- aws
 - iot
 slug: amazon-timestream-capability
 tags: []

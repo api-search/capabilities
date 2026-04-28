@@ -75,81 +75,81 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- describe stack
-- get status of a resource operation
-- validate template
-- update stack
-- list resources by type
-- execute a change set
-- cloudformation stack operations
-- automation
-- iac
+- create a cloudformation stack
+- delete stack
+- describe a change set
+- get the template for a stack
+- stack events
+- infrastructure as code
+- get stack events
+- execute change set
+- detect stack drift
+- cloudformation
+- update a stack
+- delete a resource
+- list stacks
+- create a cloud resource via cloud control
+- describe a stack
+- stack drift detection
+- template validation
+- update a resource
 - get resource
-- cloud control
-- create a change set for a stack
+- describe cloudformation stacks
+- list exports
+- describe stack events
+- delete a stack
+- create stack
+- describe change set
+- get resource request status
+- validate a template
+- list resources in a stack
+- list stack exports
 - create change set
 - single resource operations
-- delete a cloud resource via cloud control
-- list stack exports
-- single change set
-- get template
-- template validation
-- stack management
-- stack events
-- get resource request status
-- delete resource
-- cancel resource request
-- list types
-- delete a stack
-- validate a template
-- get stack events
-- stack drift detection
-- execute change set
-- list all stacks
-- validate a cloudformation template
-- list stacks
-- create a cloud resource
-- provisioning
-- list resources in a stack
-- change set operations
-- cloud control resource operations
-- create a change set
-- create resource
-- read a cloud resource via cloud control
-- cloud resources
-- describe a stack
-- describe stacks
-- update a stack
-- list resources of a specified type
-- infrastructure as code
-- list stack sets
-- create a cloud resource via cloud control
-- list registry extension types
-- delete a resource
-- cancel an in-progress resource operation
 - single stack operations
-- detect stack drift
-- detect drift
-- create stack
-- stack resources
-- describe stack events
-- describe change set
-- update a resource
-- list exports
-- detect drift on a stack
+- describe stack
+- single change set
 - list resources
-- get the template for a stack
-- list stack resources
 - update a cloud resource via cloud control
-- aws
-- describe a change set
-- get a resource
-- describe cloudformation stacks
-- create a stack
-- cloudformation
-- delete stack
-- create a cloudformation stack
+- detect drift
+- create resource
 - update resource
+- validate template
+- delete a cloud resource via cloud control
+- execute a change set
+- iac
+- delete resource
+- cloudformation stack operations
+- update stack
+- list resources by type
+- read a cloud resource via cloud control
+- list stack sets
+- list registry extension types
+- list all stacks
+- create a cloud resource
+- create a change set for a stack
+- list types
+- detect drift on a stack
+- cancel resource request
+- list stack resources
+- change set operations
+- list resources of a specified type
+- cloud resources
+- stack management
+- get status of a resource operation
+- get a resource
+- stack resources
+- cloud control
+- create a stack
+- create a change set
+- cloud control resource operations
+- validate a cloudformation template
+- get template
+- aws
+- cancel an in-progress resource operation
+- automation
+- describe stacks
+- provisioning
 slug: infrastructure-provisioning
 tags:
 - AWS

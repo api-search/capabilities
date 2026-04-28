@@ -14,17 +14,17 @@ personas: []
 provider_name: Amazon RoboMaker
 provider_slug: amazon-robomaker
 search_terms:
+- engineer managing amazon robomaker resources
+- aws cloud resource management
+- simulation
+- amazon robomaker resources
+- list resources
+- amazon robomaker
+- aws
+- cloud operations
 - list amazon robomaker resources
 - automation workflow for amazon robomaker
-- aws cloud resource management
-- engineer managing amazon robomaker resources
-- simulation
-- aws
 - robotics
-- cloud operations
-- amazon robomaker resources
-- amazon robomaker
-- list resources
 slug: amazon-robomaker
 tags:
 - Amazon Robomaker

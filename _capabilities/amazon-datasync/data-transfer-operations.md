@@ -10,11 +10,11 @@ provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
 - migration
+- hybrid cloud
+- storage
 - aws
 - automation
 - data transfer
-- storage
-- hybrid cloud
 slug: data-transfer-operations
 tags: []
 tools: []

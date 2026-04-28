@@ -10,24 +10,24 @@ personas: []
 provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
-- create a new axon context
-- event-driven
+- cqrs
+- create_application
 - list all registered axon applications
-- get_metrics
-- create_context
+- list_applications
+- create a new axon application registration
 - delete an axon application registration
 - list_contexts
-- messaging
-- event sourcing
-- create a new axon application registration
-- list_applications
-- create_application
+- get_metrics
+- create a new axon context
 - list all axon contexts
-- get axon server metrics and health information
-- delete_application
-- microservices
 - java
-- cqrs
+- get axon server metrics and health information
+- event sourcing
+- create_context
+- delete_application
+- messaging
+- event-driven
+- microservices
 slug: event-driven-workflow
 tags:
 - CQRS

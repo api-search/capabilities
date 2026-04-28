@@ -9,13 +9,13 @@ personas: []
 provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
-- quality assurance
-- behavior driven development
-- agile
 - gherkin
-- requirements
+- quality assurance
 - user stories
 - testing
+- behavior driven development
+- requirements
+- agile
 slug: requirements-management
 tags: []
 tools: []

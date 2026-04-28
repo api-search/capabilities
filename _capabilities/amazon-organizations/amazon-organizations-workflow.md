@@ -15,21 +15,21 @@ provider_name: Amazon Organizations
 provider_slug: amazon-organizations
 search_terms:
 - list and manage openapi.yml resources
-- account management
-- organizations
+- multi-account
 - governance
-- list amazon organizations resources
-- consolidated billing
-- aws
 - list openapi.yml
+- organizations
+- consolidated billing
+- list resources
+- primary amazon organizations resources
+- aws
+- core api workflow
 - Developer
-- policies
 - developer using amazon organizations apis
 - amazon organizations
-- core api workflow
-- primary amazon organizations resources
-- multi-account
-- list resources
+- account management
+- policies
+- list amazon organizations resources
 slug: amazon-organizations-workflow
 tags:
 - Amazon Organizations

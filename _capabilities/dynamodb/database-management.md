@@ -46,61 +46,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- get an item.
-- create table
-- query operations.
-- describe table
-- batch get item
-- update a table.
 - update an item.
-- delete item
-- batch write item
-- put or delete multiple items in batch.
-- list tables.
-- get items in a transaction.
-- list on-demand backups.
-- serverless
-- list dynamodb tables.
-- create backup
-- scan a table.
-- create or replace an item.
-- query items by primary key.
-- database
-- update table
-- managed service
-- query items.
-- individual table management.
-- describe a dynamodb table.
-- delete a dynamodb table.
-- database management
-- get multiple items from one or more tables.
-- delete an item.
-- nosql
-- write items in a transaction.
-- create a new dynamodb table.
-- delete table
-- scan
-- dynamodb
-- document store
-- table management.
-- list tables
-- create a table.
-- query
-- update item
-- transact get items
 - transact write items
-- describe a table.
-- aws
-- create an on-demand backup.
-- key-value
-- delete a table.
-- get an item by primary key.
-- get item
-- scan an entire table or index.
+- list tables
 - list backups
-- cloud
-- put item
+- put or delete multiple items in batch.
+- create backup
+- delete an item.
+- get an item.
+- batch get item
+- scan a table.
+- delete a table.
+- update table
+- query items by primary key.
+- describe table
 - item operations.
+- describe a table.
+- document store
+- query items.
+- scan an entire table or index.
+- update item
+- delete table
+- batch write item
+- get items in a transaction.
+- delete a dynamodb table.
+- update a table.
+- list on-demand backups.
+- table management.
+- put item
+- get an item by primary key.
+- query
+- create table
+- create an on-demand backup.
+- query operations.
+- delete item
+- managed service
+- key-value
+- nosql
+- serverless
+- transact get items
+- get multiple items from one or more tables.
+- list dynamodb tables.
+- get item
+- create a new dynamodb table.
+- describe a dynamodb table.
+- create a table.
+- database management
+- individual table management.
+- create or replace an item.
+- cloud
+- list tables.
+- database
+- scan
+- aws
+- write items in a transaction.
+- dynamodb
 slug: database-management
 tags:
 - AWS

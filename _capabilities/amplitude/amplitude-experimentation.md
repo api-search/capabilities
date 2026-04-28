@@ -68,66 +68,66 @@ provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
 - experiment evaluation api evaluateVariants
-- amplitude list all deployments
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- amplitude update a flag
-- experiment management api listVersions
-- updateFlag
-- data governance
-- getFlag
-- unified workflow for sending events and identifying users. for data engineers.
-- amplitude list flag and experiment versions
-- experiment evaluation api evaluateVariantsGet
-- amplitude get an experiment
-- experiment management api listDeployments
-- experiment management api getDeployment
-- createExperiment
-- analyzes data and manages cohorts
-- getFlags
 - amplitude evaluate variants for a user via get
-- amplitude list all experiments
-- getExperiment
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- amplitude
-- analytics
-- experiment management api listExperiments
-- experiment management api updateFlag
 - updateExperiment
-- listVersions
-- getDeployment
-- manage event schemas and chart annotations. for data governance teams.
-- createFlag
-- ingests and exports event data
-- experiment management api getFlag
-- experimentation
-- privacy compliance
-- product analytics
-- export raw event data and manage behavioral cohorts. for data analysts.
-- experiment evaluation api getFlags
-- experiment management api listFlags
-- experiment management api createExperiment
-- experiment management api getExperiment
-- amplitude get flag configurations
-- amplitude create an experiment
-- experiment management api createFlag
+- getFlag
+- createExperiment
+- getExperiment
 - experiment management api updateExperiment
-- listDeployments
-- runs experiments and feature flags
-- listExperiments
+- experiment management api listVersions
+- experiment management api updateFlag
+- product analytics
 - amplitude get a deployment
-- user behavior
-- evaluateVariantsGet
-- amplitude create a flag
-- amplitude evaluate variants for a user
+- export raw event data and manage behavioral cohorts. for data analysts.
 - a/b testing
+- amplitude get an experiment
+- experiment management api getDeployment
 - feature flags
-- evaluateVariants
+- user behavior
+- experiment management api createFlag
+- amplitude list all experiments
+- experiment management api getFlag
 - listFlags
+- amplitude create a flag
+- amplitude create an experiment
+- experiment management api listFlags
+- amplitude list all deployments
+- experiment management api listExperiments
+- unified workflow for sending events and identifying users. for data engineers.
 - amplitude get a flag
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- amplitude
+- evaluateVariants
+- createFlag
+- amplitude get flag configurations
+- manage event schemas and chart annotations. for data governance teams.
+- experiment evaluation api evaluateVariantsGet
 - amplitude update an experiment
-- manages privacy and compliance
-- identity management
+- experimentation
+- listVersions
 - amplitude list all flags
+- amplitude list flag and experiment versions
+- experiment evaluation api getFlags
+- ingests and exports event data
+- privacy compliance
+- experiment management api getExperiment
+- experiment management api listDeployments
+- experiment management api createExperiment
+- analytics
+- data governance
+- amplitude evaluate variants for a user
+- analyzes data and manages cohorts
+- updateFlag
+- getFlags
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- getDeployment
+- evaluateVariantsGet
+- amplitude update a flag
+- listExperiments
+- runs experiments and feature flags
+- listDeployments
+- identity management
+- manages privacy and compliance
 slug: amplitude-experimentation
 tags:
 - Amplitude

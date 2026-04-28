@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- list models
-- create embeddings
-- developer tools
-- artificial intelligence
-- generate an image
+- generate image
+- generate a chat response from any of 400+ ai language models via aimlapi
+- create chat completion
 - discover all 400+ available ai models on aimlapi platform
-- llm
+- create image
+- list models
+- ai models
+- embeddings
+- chat completions via 400+ llms
+- generate vector embeddings for semantic search and rag applications
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- AI Engineer
+- developer tools
+- list all models
+- api gateway
+- create a chat completion
+- ai engineer evaluating and comparing models for ml pipelines
+- machine learning
+- developer integrating ai capabilities into applications via aimlapi
+- Developer
+- video generation
+- create embeddings
+- ai model inference across modalities
+- generate embeddings
+- generate an image
+- generate an image from a text prompt using aimlapi image generation models
+- artificial intelligence
+- image generation
 - create embedding
 - list available models
-- Developer
-- create chat completion
-- ai models
-- chat completions via 400+ llms
-- AI Engineer
-- ai model inference across modalities
-- image generation
-- developer integrating ai capabilities into applications via aimlapi
-- list all models
-- generate image
-- api gateway
-- generate an image from a text prompt using aimlapi image generation models
-- create a chat completion
-- api key management and model discovery
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- generate a chat response from any of 400+ ai language models via aimlapi
-- machine learning
-- ai engineer evaluating and comparing models for ml pipelines
 - speech
-- generate embeddings
-- create image
-- generate vector embeddings for semantic search and rag applications
-- video generation
-- embeddings
+- api key management and model discovery
+- llm
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

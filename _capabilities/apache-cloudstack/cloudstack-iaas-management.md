@@ -10,11 +10,11 @@ provider_name: Apache CloudStack
 provider_slug: apache-cloudstack
 search_terms:
 - infrastructure
-- virtualization
-- apache
 - cloud
+- virtualization
 - iaas
 - open source
+- apache
 slug: cloudstack-iaas-management
 tags: []
 tools: []

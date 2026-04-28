@@ -55,70 +55,70 @@ personas: []
 provider_name: Amazon Lookout for Metrics
 provider_slug: amazon-lookout-for-metrics
 search_terms:
-- detection feedback
-- list anomaly group summaries
-- stop an anomaly detector from monitoring metrics
-- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
-- list all alerts
-- create detector
-- get anomaly group details
-- activate anomaly detector
-- list summaries of detected anomaly groups for investigation
-- create a new anomaly detector for a set of business metrics
-- list all anomaly detectors
-- business intelligence
-- update detector configuration
-- create anomaly detector
-- delete a detector
 - list all configured anomaly detectors
-- manage anomaly detectors
-- single anomaly group
-- anomaly group results
-- Data Scientist
-- get feedback
-- list anomalies
-- metrics
-- delete detector
-- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
-- create an alert to receive notifications when anomalies are detected
-- get configuration and status details of an anomaly detector
-- list anomaly detectors
-- activate an anomaly detector to begin monitoring metrics
-- monitoring and assessment of metric data quality
-- submit feedback on anomaly detections to improve ml model accuracy
-- anomaly alerts
-- list anomaly group related metrics
-- get anomaly
-- list detectors
-- retrieve previously submitted anomaly detection feedback
-- monitoring
-- submit feedback
-- get full details of a specific anomaly group including contributing metrics
-- get detector details
-- create alert
-- create a new anomaly detector
-- create an alert
-- configuration and management of anomaly alert notifications
-- anomaly detection
-- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
-- machine learning
-- list all configured anomaly alerts
-- describe anomaly detector
-- get anomaly feedback
-- aws
 - submit anomaly feedback
-- get anomaly group
-- single anomaly detector
-- update detector
-- list alerts
-- get detector
-- put feedback
-- Operations Engineer
-- operations
-- ml-powered detection of anomalies in business and operational metrics
 - amazon
-- list all metrics that contributed to an anomaly group
+- retrieve previously submitted anomaly detection feedback
+- list all configured anomaly alerts
+- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
+- stop an anomaly detector from monitoring metrics
+- create a new anomaly detector
+- submit feedback
 - deactivate anomaly detector
+- anomaly detection
+- activate an anomaly detector to begin monitoring metrics
+- activate anomaly detector
+- list all anomaly detectors
+- manage anomaly detectors
+- get detector
+- submit feedback on anomaly detections to improve ml model accuracy
+- ml-powered detection of anomalies in business and operational metrics
+- monitoring and assessment of metric data quality
+- list anomaly detectors
+- get full details of a specific anomaly group including contributing metrics
+- get anomaly feedback
+- get feedback
+- operations
+- single anomaly group
+- delete detector
+- describe anomaly detector
+- metrics
+- put feedback
+- update detector configuration
+- Operations Engineer
+- get configuration and status details of an anomaly detector
+- get anomaly
+- create an alert
+- business intelligence
+- create detector
+- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
+- delete a detector
+- create anomaly detector
+- create a new anomaly detector for a set of business metrics
+- single anomaly detector
+- anomaly group results
+- create an alert to receive notifications when anomalies are detected
+- list detectors
+- machine learning
+- list alerts
+- Data Scientist
+- get detector details
+- list anomaly group summaries
+- list all alerts
+- get anomaly group details
+- create alert
+- detection feedback
+- list anomalies
+- list anomaly group related metrics
+- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
+- list summaries of detected anomaly groups for investigation
+- get anomaly group
+- monitoring
+- anomaly alerts
+- list all metrics that contributed to an anomaly group
+- update detector
+- configuration and management of anomaly alert notifications
+- aws
 slug: anomaly-detection-operations
 tags:
 - Amazon

@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- list all active bankruptcy monitoring alerts
-- automated alerts for bankruptcy filings
-- Bankruptcy Attorney
-- file proof of claim
-- compliance
-- get case docket
-- attorney managing creditor representation in bankruptcy proceedings
-- business or individual owed money by a bankruptcy filer
 - bankruptcy case research, claims management, and automated monitoring
-- search bankruptcy cases
-- search for bankruptcy cases across all us bankruptcy court districts
-- file a proof of claim for a bankruptcy case
-- lender monitoring borrowers for bankruptcy filings
-- pacer
-- retrieve docket entries for a bankruptcy case
-- Creditor
-- bankruptcywatch
-- creditor
-- court data
-- get bankruptcy case
-- create a bankruptcy monitoring alert for a debtor or entity
-- bankruptcy
-- create bankruptcy monitor
-- list monitors
-- list claims register for a bankruptcy case
-- us bankruptcy court cases and proceedings
-- lending
 - legal
-- get detailed information about a specific bankruptcy case
-- Loan Officer
+- court data
+- lender monitoring borrowers for bankruptcy filings
 - list case claims
+- bankruptcy
+- compliance
+- Bankruptcy Attorney
+- create bankruptcy monitor
+- attorney managing creditor representation in bankruptcy proceedings
+- search bankruptcy cases
+- lending
+- list claims register for a bankruptcy case
+- business or individual owed money by a bankruptcy filer
+- automated alerts for bankruptcy filings
+- get case docket
+- pacer
+- search for bankruptcy cases across all us bankruptcy court districts
+- create a bankruptcy monitoring alert for a debtor or entity
+- Creditor
+- us bankruptcy court cases and proceedings
+- file proof of claim
+- list monitors
+- bankruptcywatch
+- retrieve docket entries for a bankruptcy case
+- creditor
+- file a proof of claim for a bankruptcy case
+- get detailed information about a specific bankruptcy case
+- get bankruptcy case
+- list all active bankruptcy monitoring alerts
+- Loan Officer
 slug: bankruptcy-monitoring
 tags:
 - BankruptcyWatch

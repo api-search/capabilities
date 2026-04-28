@@ -18,29 +18,29 @@ personas: []
 provider_name: APIs.io
 provider_slug: apis-io
 search_terms:
-- api discovery
-- apis.io
-- search apis
-- api indexing
-- search for apis in the directory and submit new apis for indexing
-- an api owner or provider submitting their api for discovery in the index
-- API Developer
-- api aggregation
-- a developer searching for apis to integrate into their applications
-- submitting new apis to the directory for indexing and discovery
-- submit a new api to the directory
-- api directory
-- search for apis by keyword or phrase
-- search and submit apis in the directory
-- API Producer
-- api search
-- api rating
 - apis.json
-- search engine
-- finding apis in the directory by keyword or topic
-- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
+- API Developer
+- api indexing
 - submit api
+- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
 - submit a new api to the apis.io index by providing a valid apis.json document. the api will be reviewed and added to the searchable directory.
+- search for apis in the directory and submit new apis for indexing
+- api rating
+- api directory
+- api search
+- search engine
+- a developer searching for apis to integrate into their applications
+- apis.io
+- api discovery
+- an api owner or provider submitting their api for discovery in the index
+- submit a new api to the directory
+- search and submit apis in the directory
+- api aggregation
+- search for apis by keyword or phrase
+- API Producer
+- finding apis in the directory by keyword or topic
+- submitting new apis to the directory for indexing and discovery
+- search apis
 slug: api-discovery-search
 tags:
 - API Discovery

@@ -14,7 +14,7 @@ description: 'Outbound and inbound transactional and marketing messaging across 
 
   '
 domain: communications
-implementation_count: 15
+implementation_count: 16
 implementations:
 - capability_name: AhaSend Email Operations
   capability_slug: email-operations
@@ -154,6 +154,19 @@ implementations:
   - WhatsApp
   - Messenger
   tool_count: 5
+- capability_name: HubSpot Marketing Automation
+  capability_slug: marketing-automation
+  capability_url: https://capabilities.apis.io/capabilities/hubspot/marketing-automation/
+  consumed_api_count: 2
+  operation_count: 0
+  provider_name: HubSpot
+  provider_slug: hubspot
+  tags:
+  - HubSpot
+  - Marketing
+  - Email
+  - Analytics
+  tool_count: 8
 - capability_name: Microsoft Outlook Email Productivity
   capability_slug: email-productivity
   capability_url: https://capabilities.apis.io/capabilities/microsoft-outlook/email-productivity/
@@ -225,7 +238,7 @@ implementations:
   tool_count: 9
 layout: category
 name: Messaging
-provider_count: 15
+provider_count: 16
 related:
 - collaboration
 - customer-engagement

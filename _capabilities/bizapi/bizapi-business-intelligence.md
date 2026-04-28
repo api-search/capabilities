@@ -19,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- naics
-- business intelligence
-- segments and scores prospects using naics, sic, and financial data
-- Sales Representative
-- company data
 - firmographic data
-- uses firmographic data to qualify leads and enrich crm account records
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- search companies
-- search business entities by name, address, phone, or url.
-- search for business entities and retrieve firmographic data.
-- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- test search returning fake data without consuming api credits.
-- Data Engineer
 - Marketing Analyst
+- search companies
+- segments and scores prospects using naics, sic, and financial data
+- search business entities by name, address, phone, or url.
+- business intelligence and crm enrichment workflow combining company search and test endpoints
 - integrates bizapi into data pipelines for crm and data warehouse enrichment
-- sales enablement
-- test company search returning fake firmographic data.
-- appending firmographic data to crm records for sales and marketing
-- crm
-- sic
-- crm enrichment
 - firmographic data retrieval and company lookup
+- company data
+- crm enrichment
+- crm
+- business intelligence
+- sic
+- uses firmographic data to qualify leads and enrich crm account records
+- Data Engineer
+- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
+- search for business entities and retrieve firmographic data.
+- test search returning fake data without consuming api credits.
+- naics
 - search companies test
+- appending firmographic data to crm records for sales and marketing
+- sales enablement
+- Sales Representative
+- test company search returning fake firmographic data.
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 slug: bizapi-business-intelligence
 tags:
 - Business Intelligence

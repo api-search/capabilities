@@ -19,49 +19,49 @@ personas: []
 provider_name: AT&T
 provider_slug: atandt
 search_terms:
-- fortune 100
 - retrieve the most recent sim swap date for an at&t phone number
-- developer building fraud prevention and identity verification using at&t network signals
-- mobile virtual network operator managing subscribers on at&t infrastructure
-- fraud prevention
-- check if a sim swap has occurred for an at&t phone number to detect fraud
-- network-based fraud detection and threat intelligence
-- sms messaging and oauth authentication for consumer and business applications
-- App Developer
-- silently verify that a device is using a specific at&t phone number without otp
-- camara network-based fraud prevention using sim swap and number verification
-- mobile or web developer building consumer applications on at&t apis
-- oauth and network-based authentication
-- at&t
-- Enterprise Developer
-- wireline
-- verify device phone number silently
-- Identity Developer
+- fortune 100
+- engineer integrating enterprise wireline services and ebonding systems
+- check sim swap
+- Security Developer
 - wireline service ordering and qualification
-- att retrieve sim swap date
-- wireless
-- security
-- 5g
+- developer integrating at&t enterprise connectivity and ebonding apis
+- at&t
+- sms messaging and oauth authentication for consumer and business applications
+- camara
+- Identity Developer
+- device status, roaming, and qos management
+- silently verify that a device is using a specific at&t phone number without otp
+- mobile or web developer building consumer applications on at&t apis
+- telecommunications
+- silent phone number verification
+- Enterprise Developer
+- developer building fraud prevention and identity verification using at&t network signals
 - enterprise
 - check if sim swap has occurred
-- camara
-- engineer integrating enterprise wireline services and ebonding systems
-- telecommunications
-- developer integrating at&t enterprise connectivity and ebonding apis
-- silent phone number verification
-- verify number
-- Security Developer
+- att retrieve sim swap date
+- check if a sim swap has occurred for an at&t phone number to detect fraud
+- mobile virtual network operator managing subscribers on at&t infrastructure
+- network-based fraud detection and threat intelligence
 - att check sim swap
-- check sim swap
-- number verification
+- verify number
+- 5g
+- security
+- fraud prevention
 - att verify phone number
-- device status, roaming, and qos management
-- developer implementing frictionless mobile authentication via at&t network
-- sim swap
+- verify device phone number silently
 - network
-- sms and in-app messaging services
+- developer implementing frictionless mobile authentication via at&t network
 - broadband
+- App Developer
+- camara network-based fraud prevention using sim swap and number verification
+- number verification
+- sim swap
+- oauth and network-based authentication
 - sim swap fraud detection
+- wireline
+- sms and in-app messaging services
+- wireless
 slug: network-security
 tags:
 - AT&T

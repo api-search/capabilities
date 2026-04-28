@@ -66,60 +66,60 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- broadcasting
-- update live broadcast settings
-- list chat messages
-- delete a live broadcast
-- manage live broadcasts
-- videos
-- list live video streams
-- create a new live stream
-- add moderator
-- list youtube live broadcasts
-- send a live chat message
-- remove a live chat moderator
-- create broadcast
-- create a new live video stream
-- transition broadcast status (testing, live, complete)
-- manage live chat moderators
-- live chat
-- update broadcast
-- bind a broadcast to a video stream
-- send a message to live chat
-- create stream
-- youtube
-- list live chat messages
-- list live chat moderators
-- manage live video streams
-- google
-- remove moderator
-- list messages in live chat
-- transition broadcast
-- delete a live stream
-- media
-- send chat message
-- streaming
+- add a live chat moderator
 - update stream settings
-- manage live chat messages
-- list moderators
-- list live broadcasts
-- update broadcast settings
-- delete a live chat message
 - list broadcasts
+- transition broadcast
+- remove moderator
+- create broadcast
+- streaming
+- send a live chat message
+- list streams
+- delete a live chat message
+- social
+- list live chat moderators
+- remove a live chat moderator
+- update broadcast
+- list live video streams
+- bind broadcast
+- create a new live broadcast
+- live chat
+- list youtube live broadcasts
+- list live streams
+- send chat message
+- create a new live video stream
+- manage live broadcasts
+- broadcasting
+- manage live chat messages
+- bind a broadcast to a video stream
+- create a new live stream
+- youtube
 - live streaming
+- list moderators
+- transition broadcast status (testing, live, complete)
+- videos
+- update stream
+- list live chat messages
+- delete a broadcast
+- create stream
+- list live broadcasts
 - delete stream
+- delete a live stream
+- list chat messages
 - delete chat message
 - create a new live broadcast event
-- update stream
-- delete a broadcast
-- create a new live broadcast
-- add a live chat moderator
+- media
+- send a message to live chat
 - video
-- bind broadcast
+- google
+- add moderator
+- delete a live broadcast
+- list messages in live chat
+- manage live video streams
 - delete broadcast
-- list streams
-- social
-- list live streams
+- update live broadcast settings
+- manage live chat moderators
+- update broadcast settings
 slug: live-streaming
 tags:
 - YouTube

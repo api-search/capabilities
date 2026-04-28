@@ -27,45 +27,45 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- repair job
 - cdc
-- list connections
-- get server info
-- data integration
-- create group
-- get job statistics
-- compliance
-- create a new comparison job
-- repair out-of-sync data identified by a comparison job
-- data synchronization
-- data quality
-- list compare groups
-- database
-- list replication process performance metrics
-- create job
-- create connection
-- get comparison job statistics
-- get veridata server information
-- enterprise
-- list comparison jobs
-- list veridata database connections
 - create a new veridata database connection
-- get details of out-of-sync data
-- replication process metrics
-- execute a comparison job
-- database connections for verification
-- get out of sync data
+- get comparison job statistics
+- get job statistics
 - data verification
-- comparison jobs
+- list compare groups
 - get goldengate process performance metrics for monitoring replication health
-- list jobs
-- run job
-- oracle goldengate
-- list groups
-- list compare groups for data verification
+- database connections for verification
+- compliance
 - compare groups
-- real-time replication
+- data integration
+- get details of out-of-sync data
+- data synchronization
 - create a new compare group
+- enterprise
+- list veridata database connections
+- list groups
+- list jobs
+- create connection
+- get server info
+- replication process metrics
+- create group
+- create a new comparison job
+- list comparison jobs
+- list connections
+- oracle goldengate
+- repair out-of-sync data identified by a comparison job
+- execute a comparison job
+- list replication process performance metrics
+- comparison jobs
+- real-time replication
+- list compare groups for data verification
+- run job
+- get out of sync data
+- repair job
+- create job
+- data quality
+- get veridata server information
+- database
 - list process metrics
 slug: data-verification
 tags:

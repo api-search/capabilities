@@ -11,15 +11,15 @@ personas: []
 provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
-- observability
-- aws
 - amazon cloudwatch
-- cloudwatch
 - logs
-- monitoring
-- Operations Engineer
-- metrics
+- cloudwatch
 - amazon web services
+- Operations Engineer
+- aws
+- monitoring
+- metrics
+- observability
 slug: observability
 tags:
 - Amazon Web Services

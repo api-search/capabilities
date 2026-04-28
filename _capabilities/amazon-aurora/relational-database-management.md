@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- create db cluster snapshot
-- create a snapshot of an aurora db cluster for backup or cloning.
 - list all db instances in aurora clusters.
-- modify the configuration of an existing aurora db cluster.
-- list all aurora db clusters to understand available databases and their status.
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- start a stopped aurora db cluster to resume database operations.
-- start db cluster
-- mysql
-- add a new read replica or writer instance to an aurora db cluster.
-- describe db instances
-- postgresql
-- list available aurora db cluster snapshots for backup management.
-- create a new aurora mysql or postgresql compatible db cluster.
-- describe db cluster snapshots
-- create db cluster
 - create db instance
+- list aurora db clusters
+- modify db cluster
+- start a stopped aurora db cluster to resume database operations.
+- modify the configuration of an existing aurora db cluster.
+- create db cluster
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- create a new aurora mysql or postgresql compatible db cluster.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- aurora db cluster management
+- describe db cluster snapshots
+- create db cluster snapshot
+- stop db cluster
+- relational database
+- describe db clusters
+- add a new read replica or writer instance to an aurora db cluster.
+- postgresql
+- list all aurora db clusters to understand available databases and their status.
+- mysql
+- describe db instances
+- create a new aurora db cluster
+- restore db cluster from snapshot
+- list available aurora db cluster snapshots for backup management.
+- stop an aurora db cluster to reduce costs when not in use.
+- start db cluster
 - aws
 - amazon aurora
-- aurora db cluster management
-- modify db cluster
-- describe db clusters
-- create a new aurora db cluster
-- stop an aurora db cluster to reduce costs when not in use.
-- stop db cluster
-- list aurora db clusters
-- relational database
-- restore db cluster from snapshot
 slug: relational-database-management
 tags:
 - Amazon Aurora

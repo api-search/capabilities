@@ -36,64 +36,64 @@ personas: []
 provider_name: AT&T
 provider_slug: at-and-t
 search_terms:
-- complete mvno subscriber lifecycle and number portability management
-- engineer integrating at&t network services with bss/oss systems via tm forum apis
 - in app get message
-- mobile virtual network operator services on at&t infrastructure
-- App Developer
-- inbox delta synchronization
-- get inbox changes since last synchronization for efficient message management
-- sms delivery tracking
-- at&t
-- send sms
-- sms notifications and in-app messaging for mobile apps and enterprise systems
-- Enterprise Developer
-- send message
-- mms
-- wireline
-- MVNO Operator
-- mobile network connectivity and subscriber management
-- get inbox changes since last sync
-- check the delivery status of a sent sms message
-- poll for inbound sms messages received on a registered short code
-- wireless
-- in app list messages
-- list user inbox messages
-- sms send message
-- enterprise
-- mobile
-- sms and mms messaging services for consumer and enterprise applications
-- list messages
-- sms get inbound messages
-- telecommunications
-- in app delete message
-- get inbound sms
-- list messages from a user's at&t inbox with pagination and unread filtering
-- sms
-- notifications
-- in-app user messaging inbox
-- check delivery status of a sent sms
-- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
-- send an mms or sms message on behalf of an authenticated at&t user
-- poll for inbound sms messages
-- in app sync inbox delta
-- mvno business operator managing at&t-powered mobile subscribers and services
-- get full details of a specific inbox message including content and metadata
 - sms check delivery status
-- sms short code messaging
-- messaging
-- send an sms short code message to up to 50 recipients
-- sms short code inbox
-- send mms or sms on behalf of user
-- Telecom Engineer
+- in app list messages
+- get inbound sms
+- sms delivery tracking
+- get inbox changes since last sync
 - get sms delivery status
-- speech
-- mobile or web application developer embedding messaging into consumer apps
+- sms short code inbox
+- poll for inbound sms messages
 - developer building enterprise notification, alerting, or communication systems
-- delete a message from the user's inbox permanently
-- broadband
-- in app send message
+- sms short code messaging
+- poll for inbound sms messages received on a registered short code
+- at&t
+- send an mms or sms message on behalf of an authenticated at&t user
+- sms notifications and in-app messaging for mobile apps and enterprise systems
+- send sms
+- mms
+- complete mvno subscriber lifecycle and number portability management
+- MVNO Operator
+- sms send message
+- telecommunications
+- enterprise
+- sms
+- sms get inbound messages
+- send an sms short code message to up to 50 recipients
+- Enterprise Developer
+- mobile network connectivity and subscriber management
+- mobile virtual network operator services on at&t infrastructure
+- list messages from a user's at&t inbox with pagination and unread filtering
+- check delivery status of a sent sms
+- wireline
+- notifications
+- send mms or sms on behalf of user
+- mobile or web application developer embedding messaging into consumer apps
+- in-app user messaging inbox
+- send message
 - get inbox delta
+- sms and mms messaging services for consumer and enterprise applications
+- messaging
+- broadband
+- inbox delta synchronization
+- App Developer
+- check the delivery status of a sent sms message
+- delete a message from the user's inbox permanently
+- list messages
+- speech
+- get inbox changes since last synchronization for efficient message management
+- in app sync inbox delta
+- list user inbox messages
+- mvno business operator managing at&t-powered mobile subscribers and services
+- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
+- in app send message
+- mobile
+- engineer integrating at&t network services with bss/oss systems via tm forum apis
+- Telecom Engineer
+- get full details of a specific inbox message including content and metadata
+- wireless
+- in app delete message
 slug: messaging
 tags:
 - AT&T

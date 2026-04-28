@@ -34,58 +34,58 @@ personas: []
 provider_name: Amazon GuardDuty
 provider_slug: amazon-guardduty
 search_terms:
-- list threat intelligence sets
-- threat findings from guardduty analysis
-- archive reviewed findings
-- create detector
-- get finding statistics and severity counts for security posture overview
-- amazon guardduty
-- list all guardduty detectors
-- security operations
-- enable guardduty for an account
-- create filter
-- threat intelligence feeds
-- compliance
-- archive threat findings that have been reviewed and resolved
-- Cloud Security Engineer
-- create a finding filter
-- list active threat findings detected by guardduty with severity filters
-- configures guardduty detectors and threat intelligence feeds
-- get findings statistics
-- list threat intelligence sets used for enhanced detection
-- get finding details
-- get the configuration and status of a guardduty detector
-- create trusted ip set
-- list members
 - archive findings
-- get detailed information about specific threat findings including full context
-- security
-- list threat intel sets
-- create finding filter
+- amazon guardduty
 - incident response
-- list threat findings
-- guardduty detector management
-- create a suppression filter to reduce noise from benign findings
-- monitors security alerts and manages threat response workflows
-- list all active guardduty detectors across the account
-- list member accounts monitored by this guardduty administrator account
-- list detectors
-- get detector status
-- Security Analyst
-- monitoring
+- get finding details
 - investigates and responds to threat findings from guardduty
 - list findings
+- compliance
 - anomaly detection
-- machine learning
-- aws
-- threat detection
-- list finding filters
-- SOC Engineer
-- list all finding suppression filters
-- list trusted ip address sets excluded from threat detection
-- list trusted ip sets
-- create a trusted ip set to exclude known safe ips from alerts
 - finding suppression filters
+- security operations
+- configures guardduty detectors and threat intelligence feeds
+- list finding filters
+- guardduty detector management
+- get detailed information about specific threat findings including full context
+- create a trusted ip set to exclude known safe ips from alerts
+- create a finding filter
+- create detector
+- list threat intel sets
+- list threat intelligence sets
+- Security Analyst
+- list all finding suppression filters
+- create finding filter
+- list all active guardduty detectors across the account
+- SOC Engineer
+- list all guardduty detectors
+- security
+- list detectors
+- create a suppression filter to reduce noise from benign findings
+- machine learning
+- threat intelligence feeds
+- get detector status
+- list threat intelligence sets used for enhanced detection
+- list members
+- get findings statistics
+- create filter
+- list active threat findings detected by guardduty with severity filters
+- monitors security alerts and manages threat response workflows
+- list trusted ip address sets excluded from threat detection
+- archive reviewed findings
+- list trusted ip sets
+- threat findings from guardduty analysis
+- threat detection
+- create trusted ip set
+- list threat findings
+- Cloud Security Engineer
+- aws
+- archive threat findings that have been reviewed and resolved
+- monitoring
+- list member accounts monitored by this guardduty administrator account
+- enable guardduty for an account
+- get the configuration and status of a guardduty detector
+- get finding statistics and severity counts for security posture overview
 slug: amazon-guardduty-threat-detection
 tags:
 - Amazon GuardDuty

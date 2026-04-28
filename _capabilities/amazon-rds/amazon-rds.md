@@ -15,19 +15,19 @@ provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
 - amazon rds
+- dbaas
+- aws cloud resource management
+- automation workflow for amazon rds
+- list resources
+- cloud databases
+- amazon rds resources
+- cloud operations
+- aws
+- engineer managing amazon rds resources
+- list amazon rds resources
+- relational databases
 - database service
 - managed databases
-- automation workflow for amazon rds
-- engineer managing amazon rds resources
-- aws cloud resource management
-- aws
-- list amazon rds resources
-- cloud operations
-- dbaas
-- amazon rds resources
-- cloud databases
-- relational databases
-- list resources
 slug: amazon-rds
 tags:
 - Amazon Rds

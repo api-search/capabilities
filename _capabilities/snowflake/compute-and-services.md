@@ -47,54 +47,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list virtual warehouses
+- data lakes
+- fetch warehouse details
+- sql
 - compute pool management
 - list monitoring alerts
-- data sharing
-- data warehousing
-- suspend a running service
-- suspend service
-- fetch warehouse details
-- warehouse management
-- list compute pools
-- fetch service status
-- list image repositories
-- create a warehouse
-- list services
-- execute an alert
-- data lakes
-- create image repository
-- container service management
-- database
-- delete warehouse
-- get service status
-- execute alert
-- create compute pool
-- create warehouse
-- fetch service logs
-- create a compute pool
-- containers
-- create service
-- resume service
-- create alert
-- fetch warehouse
-- resume a suspended service
-- create an alert
-- get service logs
 - create an image repository
-- infrastructure
-- list container services
 - create a service
-- delete a warehouse
-- list alerts
-- sql
-- list warehouses
-- alert management
-- snowflake
-- create a virtual warehouse
-- create a container service
 - compute
+- warehouse management
+- create compute pool
 - create a monitoring alert
+- execute an alert
+- list virtual warehouses
+- delete a warehouse
+- fetch service logs
+- list services
+- create an alert
+- create service
+- create warehouse
+- alert management
+- get service status
+- fetch warehouse
+- containers
+- create a container service
+- resume a suspended service
+- create image repository
+- execute alert
+- container service management
+- resume service
+- fetch service status
+- snowflake
+- list image repositories
+- list alerts
+- suspend service
+- suspend a running service
+- list container services
+- infrastructure
+- list compute pools
+- list warehouses
+- get service logs
+- create alert
+- data warehousing
+- database
+- create a warehouse
+- delete warehouse
+- data sharing
+- create a compute pool
+- create a virtual warehouse
 slug: compute-and-services
 tags:
 - Snowflake

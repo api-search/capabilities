@@ -51,54 +51,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- create a new script project
-- create a new, empty script project
-- create a new deployment
-- get version
-- google workspace
-- list processes
-- create deployment
-- deployments
-- automation
-- list versions of a script project
-- delete a deployment
-- apps script
-- script project management
-- scripting
-- get a specific deployment
-- get deployment
-- list deployments for a script project
-- create version
-- get a specific version
-- update deployment
-- create project
-- list versions
-- run a function in an apps script project
-- google
-- get a script project's metadata
-- create a new immutable version
-- list a specific script's executed processes
-- script project details and content
-- update project content
-- process monitoring
-- delete deployment
-- get the code content of a script project
 - deployment management
-- list deployments
-- create a deployment of an apps script project
-- script project content
-- get project metrics
-- get execution metrics for a script project
-- script project metrics
-- update a deployment
-- get project
-- list script processes
-- update the code content of a script project
-- list execution processes
-- get project content
-- list deployments of an apps script project
 - run script
+- create version
+- update the code content of a script project
+- create a new, empty script project
+- delete deployment
+- script project details and content
 - version management
+- deployments
+- apps script
+- create project
+- delete a deployment
+- create a new deployment
+- get a script project's metadata
+- get project content
+- list deployments
+- list processes
+- list execution processes
+- get project
+- get version
+- get project metrics
+- list a specific script's executed processes
+- run a function in an apps script project
+- google workspace
+- create a new script project
+- update deployment
+- script project management
+- get a specific version
+- get execution metrics for a script project
+- update a deployment
+- get deployment
+- list deployments of an apps script project
+- google
+- process monitoring
+- list deployments for a script project
+- script project metrics
+- get the code content of a script project
+- create deployment
+- update project content
+- script project content
+- list script processes
+- scripting
+- create a deployment of an apps script project
+- get a specific deployment
+- list versions of a script project
+- automation
+- list versions
+- create a new immutable version
 slug: workspace-automation
 tags:
 - Google

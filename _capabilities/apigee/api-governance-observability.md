@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- shadow apis discovered via apim.
-- list observed shadow apis.
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- api hub
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- api discovery
-- API Governance Lead
-- api management
+- API Platform Engineer
 - hybrid
-- list all apis in the apigee api hub catalog.
-- analytics
-- monetization
-- microservices
+- API Product Manager
+- list catalogued apis
+- API Governance Lead
+- manager packaging api products and managing developer relationships.
+- architect overseeing api platform strategy and governance across the organization.
+- list api specs
 - google cloud
+- list observed shadow apis.
 - enterprise
-- Platform Architect
-- api gateway
-- list observed apis
-- integrations
-- developer portal
+- list all catalogued apis.
 - engineer managing api proxies, deployments, and policies in apigee.
+- monetization
+- api gateway
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- Platform Architect
+- list observed apis
+- api hub
+- api governance
+- discover shadow apis
+- integrations
+- api management
+- api discovery
+- shadow apis discovered via apim.
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- developer portal
+- api catalog
+- microservices
 - apigee
 - api catalog from api hub.
-- architect overseeing api platform strategy and governance across the organization.
-- api governance
-- list api specifications tracked in the apigee registry.
-- manager packaging api products and managing developer relationships.
+- analytics
+- list all apis in the apigee api hub catalog.
 - list apis
-- API Product Manager
-- list api specs
-- discover shadow apis
-- list catalogued apis
-- api catalog
-- list all catalogued apis.
-- API Platform Engineer
+- list api specifications tracked in the apigee registry.
 slug: api-governance-observability
 tags:
 - Apigee

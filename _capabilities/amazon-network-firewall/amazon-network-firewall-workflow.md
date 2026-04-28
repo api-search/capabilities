@@ -15,19 +15,19 @@ provider_name: Amazon Network Firewall
 provider_slug: amazon-network-firewall
 search_terms:
 - list and manage openapi.yml resources
-- amazon network firewall
-- intrusion detection
-- list amazon network firewall resources
-- aws
+- developer using amazon network firewall apis
 - firewall
 - list openapi.yml
-- network security
-- developer using amazon network firewall apis
-- Developer
-- core api workflow
-- vpc
 - primary amazon network firewall resources
+- vpc
+- list amazon network firewall resources
 - list resources
+- network security
+- amazon network firewall
+- aws
+- core api workflow
+- Developer
+- intrusion detection
 slug: amazon-network-firewall-workflow
 tags:
 - Amazon Network Firewall

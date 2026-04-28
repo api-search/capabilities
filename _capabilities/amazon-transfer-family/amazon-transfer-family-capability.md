@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Transfer Family
 provider_slug: amazon-transfer-family
 search_terms:
+- sftp
+- aws
 - ftp
 - file transfer
-- aws
-- sftp
 slug: amazon-transfer-family-capability
 tags: []
 tools: []

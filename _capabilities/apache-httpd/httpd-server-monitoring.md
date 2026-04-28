@@ -10,11 +10,11 @@ provider_name: Apache HTTP Server
 provider_slug: apache-httpd
 search_terms:
 - proxy
-- reverse proxy
-- web server
-- apache
 - load balancer
+- reverse proxy
 - open source
+- apache
+- web server
 slug: httpd-server-monitoring
 tags: []
 tools: []

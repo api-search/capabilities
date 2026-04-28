@@ -15,8 +15,23 @@ description: 'Capabilities for runtime visibility — metrics, logs, traces, ale
 
   '
 domain: operations
-implementation_count: 27
+implementation_count: 28
 implementations:
+- capability_name: ADT Home Security Management
+  capability_slug: home-security-management
+  capability_url: https://capabilities.apis.io/capabilities/adt/home-security-management/
+  consumed_api_count: 1
+  operation_count: 7
+  provider_name: ADT
+  provider_slug: adt
+  tags:
+  - ADT
+  - Home Security
+  - Smart Home
+  - IoT
+  - Monitoring
+  - Access Control
+  tool_count: 10
 - capability_name: Air Quality Monitoring Workflow
   capability_slug: air-quality-monitoring
   capability_url: https://capabilities.apis.io/capabilities/air-quality-programmatic-apis/air-quality-monitoring/
@@ -394,7 +409,7 @@ implementations:
   tool_count: 10
 layout: category
 name: Monitoring & Observability
-provider_count: 25
+provider_count: 26
 related:
 - incident-management
 - analytics
