@@ -1,22 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - cvent
-description: A capability that walks GitHub, Datadog, and ServiceNow as systems-of-record and auto-publishes Backstage catalog entities so developers never enter catalog data manually.
+- cvent
+description: A capability that walks GitHub + Datadog + ServiceNow as systems-of-record and auto-publishes Backstage catalog entities so developers never enter catalog data manually (Mark's stated zero-manual-work principle).
 layout: capability
-name: Cvent Backstage Source-of-Record Auto-Catalog
+naftiko_layer: service-anchored
+naftiko_partner: Jeff Seifert
+name: Cvent Backstage Source Of Record Auto Catalog
 operations: []
 personas: []
 provider_name: Cvent
 provider_slug: cvent
 search_terms:
-  - backstage
-  - github
-  - datadog
-  - servicenow
-  - catalog automation
-naftiko_partner: Mark Avery
-naftiko_layer: service-anchored
+- capability
+- that
+- walks
+- github
+- datadog
 ---
 
-A capability that walks GitHub, Datadog, and ServiceNow as systems-of-record and auto-publishes Backstage catalog entities so developers never enter catalog data manually. His 2026-01-08 conversation IS this design — make it a runnable Naftiko capability.
+A capability that walks GitHub + Datadog + ServiceNow as systems-of-record and auto-publishes Backstage catalog entities so developers never enter catalog data manually (Mark's stated zero-manual-work principle). His 2026-01-08 conversation IS this design — make it a runnable Naftiko capability.

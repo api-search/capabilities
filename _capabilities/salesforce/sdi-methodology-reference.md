@@ -1,21 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - salesforce
+- salesforce
 description: A reference capability paired with framework-wiki/Spec-Driven-Integration.md as the methodology backbone of the pitch.
 layout: capability
-name: Salesforce SDI Methodology Reference
+naftiko_layer: proposed
+naftiko_partner: Kris Harrison
+name: Salesforce Sdi Methodology Reference
 operations: []
 personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-  - spec-driven integration
-  - methodology
-  - salesforce sample
-  - annotated
-naftiko_partner: Kris Harrison
-naftiko_layer: proposed
+- reference
+- capability
+- paired
+- with
+- framework
 ---
 
-A reference capability paired with framework-wiki/Spec-Driven-Integration.md as the methodology backbone of the pitch. Worth understanding better suggests he wants depth; this is the depth.
+A reference capability paired with framework-wiki/Spec-Driven-Integration.md as the methodology backbone of the pitch. "Worth understanding better" suggests he wants depth; this is the depth.

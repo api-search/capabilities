@@ -1,21 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - cvent
-description: A capability that ingests Azure DevOps build and release events and auto-fills Backstage entity TechDocs / CI annotations for the relevant service.
+- cvent
+description: A capability that ingests Azure DevOps build + release events and auto-fills Backstage entity TechDocs/CI annotations for the relevant service.
 layout: capability
-name: Cvent Azure DevOps Pipeline-to-Backstage Entity
+naftiko_layer: service-anchored
+naftiko_partner: Jeff Seifert
+name: Cvent Azure Devops Pipeline To Backstage Entity
 operations: []
 personas: []
 provider_name: Cvent
 provider_slug: cvent
 search_terms:
-  - azure devops
-  - backstage entity
-  - techdocs
-  - ci annotations
-naftiko_partner: Mark Avery
-naftiko_layer: service-anchored
+- capability
+- that
+- ingests
+- azure
+- devops
 ---
 
-A capability that ingests Azure DevOps build and release events and auto-fills Backstage entity TechDocs / CI annotations for the relevant service. His Backstage philosophy hangs on auto-catalog; Cvent runs Azure DevOps so the integration is concrete and demoable.
+A capability that ingests Azure DevOps build + release events and auto-fills Backstage entity TechDocs/CI annotations for the relevant service. His Backstage philosophy hangs on auto-catalog; Cvent runs Azure DevOps so the integration is concrete and demoable.

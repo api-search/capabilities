@@ -1,21 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - abn-amro
-description: "A reference capability tying open banking to Guide-Use-Cases #9 (Capability-first API reusability) as the thought-leadership angle."
+- abn-amro
+description: 'A reference capability tying open banking to Guide-Use-Cases #9 (Capability-first API reusability) as the thought-leadership angle.'
 layout: capability
-name: ABN AMRO API Reusability Open Banking Reference
+naftiko_layer: proposed
+naftiko_partner: ABN AMRO Bank
+name: ABN AMRO Bank Api Reusability Open Banking Reference
 operations: []
 personas: []
-provider_name: ABN AMRO
+provider_name: ABN AMRO Bank
 provider_slug: abn-amro
 search_terms:
-  - api reusability
-  - psd2
-  - open banking
-  - thought leadership
-naftiko_partner: ABN AMRO Bank
-naftiko_layer: proposed
+- reference
+- capability
+- tying
+- open
+- banking
 ---
 
 A reference capability tying open banking to Guide-Use-Cases #9 (Capability-first API reusability) as the thought-leadership angle. PSD2 / open banking IS API reusability under regulation.

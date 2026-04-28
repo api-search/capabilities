@@ -1,21 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - speakeasy
+- speakeasy
 description: A reference capability where the exposed REST adapter is wired through Speakeasy SDK generation — published as the joint reference architecture.
 layout: capability
-name: Speakeasy Spec-Driven SDK Reference Capability
+naftiko_layer: proposed
+naftiko_partner: Daniel Kovac
+name: Speakeasy Spec Driven Sdk Reference Capability
 operations: []
 personas: []
 provider_name: Speakeasy
 provider_slug: speakeasy
 search_terms:
-  - speakeasy sdk
-  - spec-driven
-  - reference architecture
-  - rest adapter
-naftiko_partner: Daniel Kovac
-naftiko_layer: proposed
+- reference
+- capability
+- where
+- exposed
+- rest
 ---
 
-A reference capability where the exposed REST adapter is wired through Speakeasy SDK generation — published as the joint reference architecture. His next-step is using them as a reference model; a built reference makes the model concrete.
+A reference capability where the exposed REST adapter is wired through Speakeasy SDK generation — published as the joint reference architecture. His next-step is "using them as a reference model"; a built reference makes the model concrete.

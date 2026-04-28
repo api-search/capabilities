@@ -1,21 +1,22 @@
 ---
 categories: []
 consumed_apis:
-  - abn-amro
+- abn-amro
 description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.
 layout: capability
-name: ABN AMRO GDPR Governance Capability
+naftiko_layer: proposed
+naftiko_partner: ABN AMRO Bank
+name: ABN AMRO Bank Gdpr Governance Capability
 operations: []
 personas: []
-provider_name: ABN AMRO
+provider_name: ABN AMRO Bank
 provider_slug: abn-amro
 search_terms:
-  - gdpr
-  - dutch banking
-  - data sensitivity
-  - network topology
-naftiko_partner: ABN AMRO Bank
-naftiko_layer: proposed
+- capability
+- with
+- compliance
+- frameworks
+- gdpr
 ---
 
-A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch. Heavily regulated EU banking; GDPR + governance differentiates vs generic API tooling.
+A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch. Heavily regulated EU banking; GDPR + governance differentiates vs. generic API tooling.
