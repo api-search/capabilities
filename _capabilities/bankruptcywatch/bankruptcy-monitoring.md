@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- Bankruptcy Attorney
-- create a bankruptcy monitoring alert for a debtor or entity
-- get bankruptcy case
-- list monitors
 - bankruptcy
-- attorney managing creditor representation in bankruptcy proceedings
-- creditor
 - Creditor
-- compliance
-- search for bankruptcy cases across all us bankruptcy court districts
-- us bankruptcy court cases and proceedings
-- list all active bankruptcy monitoring alerts
-- Loan Officer
-- retrieve docket entries for a bankruptcy case
+- attorney managing creditor representation in bankruptcy proceedings
 - court data
-- file proof of claim
-- lending
-- get detailed information about a specific bankruptcy case
-- bankruptcywatch
-- create bankruptcy monitor
-- search bankruptcy cases
-- business or individual owed money by a bankruptcy filer
-- pacer
-- automated alerts for bankruptcy filings
-- lender monitoring borrowers for bankruptcy filings
-- legal
-- get case docket
-- file a proof of claim for a bankruptcy case
-- bankruptcy case research, claims management, and automated monitoring
-- list case claims
+- us bankruptcy court cases and proceedings
 - list claims register for a bankruptcy case
+- legal
+- creditor
+- pacer
+- search bankruptcy cases
+- compliance
+- retrieve docket entries for a bankruptcy case
+- file proof of claim
+- get bankruptcy case
+- Bankruptcy Attorney
+- business or individual owed money by a bankruptcy filer
+- get detailed information about a specific bankruptcy case
+- search for bankruptcy cases across all us bankruptcy court districts
+- list case claims
+- bankruptcywatch
+- Loan Officer
+- automated alerts for bankruptcy filings
+- file a proof of claim for a bankruptcy case
+- lending
+- get case docket
+- list monitors
+- bankruptcy case research, claims management, and automated monitoring
+- lender monitoring borrowers for bankruptcy filings
+- create bankruptcy monitor
+- list all active bankruptcy monitoring alerts
+- create a bankruptcy monitoring alert for a debtor or entity
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

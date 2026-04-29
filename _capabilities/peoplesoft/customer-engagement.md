@@ -68,47 +68,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- send a notification via email, text, or in-app channels.
 - financial management
-- hcm
-- campus solutions.
-- customer engagement
-- case management
+- sales
+- create a new support or service case.
 - list opportunities
-- customer records
+- list intents
 - chatbot
-- human capital management.
-- process a chatbot intent fulfillment request.
-- fulfill intent
-- supply chain management
+- customer records
+- erp
+- campus solutions
+- retrieve support and service cases.
 - retrieve sales opportunities.
 - list customers
-- retrieve notifications for the current user.
-- list notifications
-- erp
+- sales opportunities
 - crm
-- financial and supply chain management.
+- enterprise software
+- send a notification via email, text, or in-app channels.
+- human capital management.
+- get customer
+- send notification
+- retrieve details for a specific customer.
+- supply chain management
+- fulfill intent
+- customer engagement
+- hcm
+- support and service cases
+- campus solutions.
+- retrieve notifications for the current user.
 - peoplesoft
-- chatbot intent fulfillments
 - individual customer details
 - retrieve available chatbot intents.
-- campus solutions
-- send notification
-- sales
-- enterprise software
-- retrieve support and service cases.
-- sales opportunities
+- case management
+- chatbot intents
+- list notifications
+- chatbot intent fulfillments
+- financial and supply chain management.
+- peopletools platform services.
+- notification management
+- list cases
 - retrieve customer records.
 - create case
-- notification management
-- peopletools platform services.
-- chatbot intents
-- retrieve details for a specific customer.
-- list cases
-- create a new support or service case.
-- list intents
-- get customer
-- support and service cases
+- process a chatbot intent fulfillment request.
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

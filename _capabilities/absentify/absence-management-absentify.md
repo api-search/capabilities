@@ -9,10 +9,10 @@ personas: []
 provider_name: Absentify
 provider_slug: absentify
 search_terms:
-- microsoft teams
 - absence management
-- leave management
+- microsoft teams
 - human resources
+- leave management
 - hr
 slug: absence-management-absentify
 source_filename: absence-management-absentify.yaml

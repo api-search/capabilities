@@ -26,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- create a new cloud map service within a namespace
 - devops practitioners automating service registration and health monitoring
-- Platform Engineer
-- list all instances registered with a specific cloud map service
-- devops
-- dynamic service registry and health-based routing
-- cloud map
-- service discovery
-- dns
-- list all cloud map service discovery namespaces
-- discover instances
-- manage service discovery namespaces
-- aws
-- dynamic microservice registration and discovery
-- DevOps Engineer
-- discover service instances
-- create service
-- create a service
-- list instances
-- list all namespaces
-- discover healthy service instances by namespace and service name
-- amazon web services
-- microservices
-- manage services
-- discover healthy instances
-- engineers managing service registries and microservice infrastructure
-- register instance
-- list services registered in cloud map
 - list services
+- discover instances
+- register instance
+- create a service
+- manage services
+- amazon web services
 - register an instance with a cloud map service
+- discover service instances
+- dns
+- service discovery
+- aws
+- microservices
+- list all instances registered with a specific cloud map service
+- dynamic microservice registration and discovery
+- list all cloud map service discovery namespaces
+- create service
+- manage service discovery namespaces
+- list all namespaces
+- create a new cloud map service within a namespace
+- dynamic service registry and health-based routing
+- devops
+- list instances
+- cloud map
 - list namespaces
+- discover healthy instances
+- discover healthy service instances by namespace and service name
+- list services registered in cloud map
+- Platform Engineer
+- engineers managing service registries and microservice infrastructure
+- DevOps Engineer
 slug: service-discovery
 source_filename: service-discovery.yaml
 source_heading: Capability Spec

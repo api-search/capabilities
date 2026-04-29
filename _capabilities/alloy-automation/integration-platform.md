@@ -9,12 +9,12 @@ personas: []
 provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
+- integrations
 - workflows
 - automation
-- integrations
-- unified api
 - ipaas
 - embedded integrations
+- unified api
 slug: integration-platform
 source_filename: integration-platform.yaml
 source_heading: Capability Spec

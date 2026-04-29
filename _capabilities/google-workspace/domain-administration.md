@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- user management
-- create org unit
-- list groups in the domain.
-- delete user
-- get user
-- user account management.
 - create a group.
-- patch user
-- undelete user
-- delete a user.
-- create an organizational unit.
-- update a group.
-- email
-- list users in the google workspace domain.
-- get user details.
-- get group details.
-- delete group
-- make user admin
-- storage
-- make a user an admin.
-- productivity
-- list groups
-- list org units
-- domain administration
-- list users in the domain.
 - update a user.
-- organizational unit management.
-- list users
-- google workspace
+- get group details.
+- storage
+- user management
+- update group
 - create user
-- get group
-- group management.
+- create a new user.
+- list groups
 - sign out user
+- delete a user.
+- organizational unit management.
+- group management.
+- create group
+- individual group management.
+- create org unit
+- collaboration
+- google workspace
+- delete a group.
+- make user admin
+- patch user properties.
+- get user details.
+- undelete user
+- email
 - calendar
+- sign out a user from all sessions.
+- create an organizational unit.
+- individual user management.
+- patch user
+- create a new group.
+- list users in the google workspace domain.
+- list users
+- domain administration
+- productivity
+- list groups in the domain.
+- video conferencing
+- get user
+- list org units
+- undelete a deleted user.
+- list users in the domain.
+- create a new user in the domain.
+- user account management.
+- delete user
+- get group
+- update a group.
+- list groups.
+- delete group
+- group management
+- make a user an admin.
 - list organizational units.
 - update user
-- create a new user.
-- list groups.
-- update group
-- individual group management.
-- delete a group.
-- sign out a user from all sessions.
-- create a new user in the domain.
-- video conferencing
-- create a new group.
-- individual user management.
-- patch user properties.
-- undelete a deleted user.
-- collaboration
-- group management
-- create group
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

@@ -110,53 +110,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- public course catalog accessible without authentication
 - query the general content catalog including videos, guides, interactive courses, and other content types.
 - query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- query learning paths
-- query programs
-- course catalog with titles, descriptions, authors, and metadata
-- courses
-- query course catalog
+- education
+- query the general content catalog
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
 - retrieve the full public course catalog
-- pluralsight
-- query the program catalog
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- query content tags and taxonomy data used to categorize and organize learning content.
-- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
-- query content tags and taxonomy data
-- query and manage content channels
+- skills assessment
+- query learning path catalog data
 - query content slugs
-- query the program catalog including structured learning programs and curriculum offerings.
+- learning
+- query programs
 - structured sequences of courses organized around skills and roles
+- query content catalog
+- hands-on labs and practical exercises
+- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
+- get public course catalog
+- channels
+- query labs
+- content tags and taxonomy for categorization
+- technology
+- course catalog with titles, descriptions, authors, and metadata
 - content channels for organizing and curating learning content
-- engineering metrics
 - video training
 - query lab catalog and activity data
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- content tags and taxonomy for categorization
-- skills assessment
-- structured learning programs and curriculum offerings
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- general content catalog including videos, guides, and interactive courses
-- content management
-- query labs
-- technology
-- get public course catalog
-- hands-on labs and practical exercises
+- query and manage content channels
+- query content tags and taxonomy data
 - learning content
-- channels
-- manage channels
-- learning paths
-- query the course catalog
 - query tags
-- learning
-- education
-- query content catalog
-- query learning path catalog data
-- query the general content catalog
+- query the program catalog including structured learning programs and curriculum offerings.
+- pluralsight
+- courses
+- query the program catalog
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- engineering metrics
+- content management
+- structured learning programs and curriculum offerings
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- learning paths
+- public course catalog accessible without authentication
 - resolve content slugs to internal identifiers
+- query the course catalog
+- query content tags and taxonomy data used to categorize and organize learning content.
+- general content catalog including videos, guides, and interactive courses
+- manage channels
+- query learning paths
+- query course catalog
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
 slug: learning-content-management
 source_filename: learning-content-management.yaml
 source_heading: Capability Spec

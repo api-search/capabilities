@@ -37,65 +37,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- administrator managing customer profiles, segments, and identity resolution.
-- campaign management
-- target audiences.
-- adobe experience cloud
-- list segments
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- personalized offers.
-- list available metrics for an adobe analytics report suite.
-- profile management, audience segmentation, and data ingestion.
-- Data Engineer
-- run an adobe analytics report.
-- list offers
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- list analytics segments.
-- list audience segments in adobe analytics.
-- personalization
-- target list offers
-- marketing professional using analytics, personalization, and journey tools.
-- run report
-- a/b test and personalization activities.
-- list target activities.
-- list journey optimizer offers.
-- list activities
-- run analytics report
-- list a/b test and personalization activities in adobe target.
-- Digital Marketer
-- digital analytics reporting and audience insights.
-- a/b testing and content personalization.
-- technical marketer integrating experience cloud apis into marketing stack.
-- analytics list metrics
-- analytics list segments
+- target list activities
+- target list audiences
+- multi-channel customer journey management.
+- ajo list offers
 - Marketing Technologist
 - run an adobe analytics report with dimensions, metrics, and segments.
-- journey orchestration
-- list journeys
-- target list audiences
-- list customer journeys in adobe journey optimizer.
-- list audiences
-- list journey optimizer journeys.
-- ajo list journeys
-- unified customer profiles and data management.
-- list personalized offers in adobe journey optimizer.
-- analytics
-- audience segment management.
-- list target audiences.
-- ajo create offer
-- list campaign messages in adobe journey optimizer.
-- target list activities
-- CDP Administrator
+- run analytics report
+- engineer managing data pipelines, schemas, and datasets in experience platform.
 - list content offers in adobe target.
-- ajo list messages
-- analytics report execution.
-- digital marketing
-- ajo list offers
-- multi-channel customer journey management.
 - create a new personalized offer in adobe journey optimizer.
-- customer experience
-- customer journeys.
+- list target audiences.
+- personalized offers.
+- analytics list segments
+- Data Engineer
+- journey orchestration
+- list available metrics for an adobe analytics report suite.
+- Digital Marketer
+- audience segment management.
+- digital marketing
+- target list offers
+- unified customer profiles and data management.
+- ajo list messages
+- list campaign messages in adobe journey optimizer.
+- list journey optimizer offers.
+- analytics report execution.
+- list personalized offers in adobe journey optimizer.
+- run an adobe analytics report.
+- list analytics segments.
+- list activities
 - list targeting audiences in adobe target.
+- analytics
+- technical marketer integrating experience cloud apis into marketing stack.
+- analytics list metrics
+- personalization
+- list audiences
+- list customer journeys in adobe journey optimizer.
+- list a/b test and personalization activities in adobe target.
+- administrator managing customer profiles, segments, and identity resolution.
+- customer journeys.
+- a/b test and personalization activities.
+- list offers
+- list journeys
+- marketing professional using analytics, personalization, and journey tools.
+- ajo create offer
+- profile management, audience segmentation, and data ingestion.
+- digital analytics reporting and audience insights.
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- a/b testing and content personalization.
+- target audiences.
+- list target activities.
+- list journey optimizer journeys.
+- CDP Administrator
+- list audience segments in adobe analytics.
+- ajo list journeys
+- campaign management
+- run report
+- adobe experience cloud
+- customer experience
+- list segments
 slug: digital-marketing
 source_filename: digital-marketing.yaml
 source_heading: Capability Spec

@@ -40,39 +40,39 @@ personas: []
 provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
-- upload file
-- sharepoint
-- microsoft
-- enterprise content management
-- upload a file to sharepoint
-- get files
-- search
-- get sharepoint site properties
-- get items from a sharepoint list
-- document management
-- add an item to a sharepoint list
-- delete a sharepoint list item
-- download a file from sharepoint
-- update list item
-- get list items
-- get my user profile
-- search across all sharepoint content
-- get current user's sharepoint profile
-- download file
-- list files in a sharepoint folder
-- update a sharepoint list item
-- content management
-- list all sharepoint lists
-- create a new sharepoint list
-- get web
-- create list item
-- delete list item
-- intranet
-- create list
-- get files in folder
 - get lists
+- delete list item
+- get files
+- create list
+- search
+- get list items
+- sharepoint
+- get items from a sharepoint list
 - collaboration
+- list files in a sharepoint folder
+- get sharepoint site properties
 - search query
+- download file
+- search across all sharepoint content
+- get files in folder
+- update list item
+- get web
+- add an item to a sharepoint list
+- get current user's sharepoint profile
+- enterprise content management
+- intranet
+- upload file
+- upload a file to sharepoint
+- content management
+- create a new sharepoint list
+- update a sharepoint list item
+- download a file from sharepoint
+- list all sharepoint lists
+- delete a sharepoint list item
+- document management
+- get my user profile
+- create list item
+- microsoft
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

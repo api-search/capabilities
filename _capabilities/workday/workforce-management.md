@@ -63,60 +63,60 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list all workers
-- hcm list organizations
-- list all workers with optional search and pagination
-- common list currencies
-- financial management
-- worker management
-- hcm
-- hcm get worker
-- get change history for a worker
-- person data
-- list all positions
-- staffing list positions
-- common list countries
-- list supervisory organizations
-- list all countries
-- country reference data
-- list all currencies
-- person list people
-- get a person by id
-- human resources
-- hcm get worker inbox tasks
-- supervisory organizations
 - list countries
-- person get person
-- staffing terminate worker
 - hcm list workers
-- staffing create job change
-- create a job change request
-- staffing list job profiles
-- hcm list locations
-- get a worker by id
-- enterprise software
-- hcm get worker history
-- list people
-- list all job profiles
-- worker detail
-- saas
-- position management
-- get home contact information
-- initiate a worker termination
-- workforce management
-- list organizations
-- cloud computing
-- list workers
-- get a specific worker by id
-- list positions
-- get inbox tasks for a worker
-- get work contact information
-- person get work contact
+- financial management
+- list all countries
 - list all people
-- person get home contact
-- get worker
-- list all locations
 - workday
+- staffing terminate worker
+- list all positions
+- supervisory organizations
+- position management
+- workforce management
+- person get home contact
+- hcm get worker inbox tasks
+- worker management
+- list organizations
+- list supervisory organizations
+- list all job profiles
+- saas
+- enterprise software
+- list all currencies
+- list all workers
+- get inbox tasks for a worker
+- person data
+- get worker
+- person list people
+- initiate a worker termination
+- get a person by id
+- list all locations
+- hcm list locations
+- worker detail
+- staffing list positions
+- list positions
+- get work contact information
+- get home contact information
+- hcm
+- country reference data
+- staffing list job profiles
+- common list currencies
+- get change history for a worker
+- person get work contact
+- get a worker by id
+- cloud computing
+- create a job change request
+- list all workers with optional search and pagination
+- hcm list organizations
+- list people
+- hcm get worker
+- list workers
+- common list countries
+- hcm get worker history
+- human resources
+- person get person
+- staffing create job change
+- get a specific worker by id
 slug: workforce-management
 source_filename: workforce-management.yaml
 source_heading: Capability Spec

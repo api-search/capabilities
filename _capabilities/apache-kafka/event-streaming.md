@@ -40,30 +40,30 @@ personas: []
 provider_name: Apache Kafka
 provider_slug: apache-kafka
 search_terms:
-- distributed systems
-- Data Engineer
-- messaging
-- list connectors
-- pub-sub
-- create a new kafka connect connector for data integration
-- open source
-- engineers who build data pipelines using kafka topics and connectors
+- get connector status
 - restart connector
-- Platform Architect
 - platform architecture
-- restart a failed kafka connect connector
+- produce message
 - list all kafka connect connectors
+- restart a failed kafka connect connector
+- engineers who build data pipelines using kafka topics and connectors
+- apache kafka
+- open source
+- Data Engineer
+- produce a message to a kafka topic via the rest proxy
+- Platform Architect
+- pub-sub
+- list connectors
 - get the status of a specific kafka connect connector
+- messaging
 - architects who design and manage kafka cluster topology and connectivity
 - list topics
 - event streaming
-- get connector status
 - list all kafka topics in the cluster
-- produce message
-- create connector
-- apache kafka
 - data engineering
-- produce a message to a kafka topic via the rest proxy
+- create a new kafka connect connector for data integration
+- distributed systems
+- create connector
 slug: event-streaming
 source_filename: event-streaming.yaml
 source_heading: Capability Spec

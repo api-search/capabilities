@@ -44,79 +44,79 @@ personas: []
 provider_name: Oracle Integration
 provider_slug: oracle-integration
 search_terms:
-- list all integrations.
-- list errors
-- b2b trading partner management and document exchange.
-- b2b
-- list all connections.
-- integration connections.
-- list all trading partners.
-- get connection
-- list all b2b trading partners.
-- get details of a specific connection.
-- get process instance details.
-- manages the oracle integration platform including monitoring, users, and configuration.
-- list all process definitions.
-- b2b integration
-- list dmn decision model spaces.
-- list packages
-- list integration monitoring instances.
-- list user tasks.
-- Integration Developer
-- automation
-- process automation
-- list connections
-- list spaces
-- api management
-- list errored integration instances.
-- ipaas
-- list integrations
-- unified management of integrations, connections, monitoring, b2b, processes, and tasks.
-- list tasks
-- manages b2b trading partners, agreements, and document exchange.
-- integration management
-- Platform Administrator
-- integration monitoring instances.
-- monitoring
-- list errored instances.
 - oracle integration
-- user tasks.
-- get task details.
-- process instances.
-- get details of a specific integration.
-- list instances
-- designs and manages business process definitions and decision models.
-- integration packages.
-- b2b trading partners.
-- list process instances.
-- list all oracle integration connections.
-- integration flows.
-- list monitoring errors
-- list all oracle integration flows.
-- list all integration packages.
-- builds and manages integration flows, connections, and adapters.
-- get integration
-- list all packages.
-- errored integration instances.
-- test a connection for connectivity.
-- list monitoring instances.
-- list trading partners
-- list analytics queries
-- cloud integration
-- list process definitions
-- list process instances
-- list process analytics queries.
-- integration flow design, deployment, and lifecycle management.
+- list all integrations.
+- integration connections.
+- list all process definitions.
+- list spaces
 - integration
+- list packages
+- list tasks
+- list trading partners
+- automation
+- monitoring
+- list analytics queries
+- list user tasks.
+- manages b2b trading partners, agreements, and document exchange.
+- list all oracle integration flows.
+- list integrations
+- Platform Administrator
+- list connections
+- b2b trading partners.
+- get process instance details.
+- list all connections.
+- get task details.
+- integration monitoring instances.
+- test a connection for connectivity.
+- list errored integration instances.
+- list all b2b trading partners.
+- ipaas
+- get details of a specific integration.
+- integration flows.
+- integration management
+- list dmn decision model spaces.
+- list all integration packages.
+- api management
+- list all trading partners.
+- user tasks.
+- process automation
 - get task
-- test connection
-- list dmn spaces
-- list workspace spaces.
+- list monitoring instances.
 - business process management with tasks and decision models.
-- enterprise integration
 - real-time monitoring of integration instances and error handling.
+- get details of a specific connection.
 - get process instance
+- designs and manages business process definitions and decision models.
+- b2b
+- b2b integration
+- errored integration instances.
+- builds and manages integration flows, connections, and adapters.
+- manages the oracle integration platform including monitoring, users, and configuration.
+- list integration monitoring instances.
+- cloud integration
+- list process instances
+- list workspace spaces.
+- list process analytics queries.
+- list instances
+- get integration
+- list dmn spaces
+- integration packages.
+- b2b trading partner management and document exchange.
+- get connection
+- list errors
+- Integration Developer
+- list all packages.
+- enterprise integration
 - list monitoring instances
+- integration flow design, deployment, and lifecycle management.
+- unified management of integrations, connections, monitoring, b2b, processes, and tasks.
+- process instances.
+- list process instances.
+- test connection
+- list monitoring errors
+- list all oracle integration connections.
+- list process definitions
+- list errored instances.
 slug: integration-management
 source_filename: integration-management.yaml
 source_heading: Capability Spec

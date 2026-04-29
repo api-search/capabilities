@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- search for available flight offers.
-- gds
-- developer building online travel agency flight search and booking flows.
-- search flights
-- hotels
-- search
-- Travel Chatbot Developer
-- pricing
-- complete flight shopping flow from search through price confirmation.
 - airlines
-- amadeus
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- booking
-- confirm pricing for a selected flight offer.
-- search flights advanced
-- confirm current price and availability.
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- shopping
-- developer building conversational travel assistants for flight search.
-- price confirmation and validation before booking.
-- OTA Developer
-- flight offer discovery and comparison.
-- search available flights by origin, destination, and date.
-- flights
+- search
 - travel
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- price confirmation and validation before booking.
+- gds
+- hotels
+- confirm current price and availability.
+- search available flights by origin, destination, and date.
+- pricing
+- search flights advanced
+- OTA Developer
 - upsell, seat selection, and add-on services.
-- confirm price
-- travel technology
+- Travel Chatbot Developer
+- search flights
 - confirm flight price
+- flight offer discovery and comparison.
+- shopping
 - confirm the current price and availability of a selected flight offer before creating a booking.
+- booking
+- amadeus
+- flights
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- developer building conversational travel assistants for flight search.
+- confirm pricing for a selected flight offer.
+- complete flight shopping flow from search through price confirmation.
+- developer building online travel agency flight search and booking flows.
+- search for available flight offers.
+- travel technology
+- confirm price
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

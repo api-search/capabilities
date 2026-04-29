@@ -11,42 +11,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- manages ci/cd workflows and project automation.
-- project and workflow management for development teams.
-- create a new project
-- list workflow runs
-- create a source repository
-- source control
-- list workflows for a project
-- devops
-- Developer
-- start workflow run
-- list spaces
-- create source repository
-- start a workflow run
-- manage projects
-- aws
-- list dev environments
-- amazon
-- manage ci/cd workflows
-- DevOps Engineer
-- create dev environment
-- collaboration
-- writes code and manages repos and dev environments.
-- list codecatalyst spaces
-- team collaboration on code and projects.
-- list projects
-- create a cloud dev environment
-- list workflows
-- create project
-- developer collaboration
-- ci/cd
-- developer tools
-- list source repositories
-- list projects in a space
-- project management
-- continuous integration and deployment workflows.
 - manage codecatalyst spaces
+- create a source repository
+- list source repositories
+- ci/cd
+- list spaces
+- project and workflow management for development teams.
+- collaboration
+- list projects
+- developer tools
+- list dev environments
+- list workflows
+- amazon
+- list workflow runs
+- create a new project
+- aws
+- team collaboration on code and projects.
+- create dev environment
+- Developer
+- create a cloud dev environment
+- list workflows for a project
+- writes code and manages repos and dev environments.
+- devops
+- list projects in a space
+- start a workflow run
+- project management
+- start workflow run
+- create project
+- manage projects
+- manages ci/cd workflows and project automation.
+- source control
+- list codecatalyst spaces
+- manage ci/cd workflows
+- create source repository
+- continuous integration and deployment workflows.
+- DevOps Engineer
+- developer collaboration
 slug: amazon-codecatalyst-developer-collaboration
 source_filename: amazon-codecatalyst-developer-collaboration.yaml
 source_heading: Capability Spec

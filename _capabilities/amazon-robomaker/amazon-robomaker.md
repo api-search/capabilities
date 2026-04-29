@@ -21,17 +21,17 @@ personas: []
 provider_name: Amazon RoboMaker
 provider_slug: amazon-robomaker
 search_terms:
-- aws cloud resource management
-- list amazon robomaker resources
+- amazon robomaker
 - list resources
+- engineer managing amazon robomaker resources
+- cloud operations
+- list amazon robomaker resources
+- aws
+- aws cloud resource management
+- robotics
 - amazon robomaker resources
 - simulation
 - automation workflow for amazon robomaker
-- amazon robomaker
-- cloud operations
-- engineer managing amazon robomaker resources
-- robotics
-- aws
 slug: amazon-robomaker
 source_filename: amazon-robomaker.yaml
 source_heading: Capability Spec

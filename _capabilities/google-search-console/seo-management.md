@@ -52,44 +52,44 @@ provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
 - add a site to search console.
-- inspect a url for index status and rich results.
-- delete site
-- query search traffic data with filters and dimensions.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- inspect urls for indexing status.
-- manage search console sites.
-- submit sitemap
-- webmaster
-- seo
 - search
 - get details for a specific search console site.
+- delete site
 - delete sitemap
 - list all search console sites for the authenticated user.
-- submit a sitemap.
-- search console
-- list all search console sites.
+- seo
 - list sites
-- query search analytics
-- manage sitemaps.
-- get site
-- query search analytics data with filters.
-- get details for a specific site.
-- add site
-- list sitemaps
-- google
-- get sitemap
 - submit a sitemap for crawling.
-- get sitemap details.
-- list sitemaps submitted for a site.
-- query search traffic data.
-- list sitemaps for a site.
-- analytics
-- remove a site from search console.
-- inspect url
+- get details for a specific site.
 - webmaster tools
-- get details for a specific sitemap.
-- delete a sitemap.
+- webmaster
+- inspect urls for indexing status.
+- list sitemaps
+- query search traffic data.
+- add site
 - delete a previously submitted sitemap.
+- list sitemaps for a site.
+- inspect url
+- manage sitemaps.
+- get sitemap
+- analytics
+- get site
+- manage search console sites.
+- submit sitemap
+- list sitemaps submitted for a site.
+- query search traffic data with filters and dimensions.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- get details for a specific sitemap.
+- inspect a url for index status and rich results.
+- submit a sitemap.
+- remove a site from search console.
+- google
+- search console
+- delete a sitemap.
+- get sitemap details.
+- query search analytics data with filters.
+- list all search console sites.
+- query search analytics
 slug: seo-management
 source_filename: seo-management.yaml
 source_heading: Capability Spec

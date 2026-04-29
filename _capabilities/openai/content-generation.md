@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- generate a conversational response using gpt models
-- get details of a specific model
-- translate audio to english text
+- large language models
+- models list
 - audio create speech
+- create a variation of an existing image
+- generate vector embeddings for text input
+- edit an existing image with a text prompt
+- generate a conversational response using gpt models
+- images edit
+- chat completion
+- ai
+- available models
+- images create variation
+- t1
+- create a chat completion
+- create image
+- transcribe audio to text using whisper
+- create chat completion
+- translate audio to english text
+- chat create completion
+- generate audio from text using tts models
 - audio create transcription
+- list models
+- create embeddings
 - image generation
+- create speech
+- get details of a specific model
+- generate an image from a text prompt using dall-e
+- embeddings create
+- generate speech
+- images create
 - openai
 - text to speech
-- generate an image from a text prompt using dall-e
-- create embeddings
-- images create
-- chat completion
-- large language models
-- images edit
-- models list
-- generate vector embeddings for text input
-- chat create completion
-- transcribe audio to text using whisper
-- ai
 - models get
-- images create variation
-- available models
-- generate audio from text using tts models
-- create speech
-- generate speech
-- t1
-- audio create translation
-- create chat completion
-- artificial intelligence
-- content generation
-- edit an existing image with a text prompt
-- list models
 - list all available openai models
+- artificial intelligence
 - generate an image
-- embeddings create
-- create a chat completion
-- text embeddings
-- create image
+- content generation
 - create embedding
-- create a variation of an existing image
+- audio create translation
+- text embeddings
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

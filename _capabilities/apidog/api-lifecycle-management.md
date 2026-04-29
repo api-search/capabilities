@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- engineer automating api specification workflows via ci/cd integration.
-- Platform Engineer
-- platform
-- unified workflow for managing api specifications lifecycle.
-- developer building and managing apis using apidog's design-first platform.
-- import a postman collection into apidog for converting to openapi-based workflows.
-- import
-- export api specifications to standard formats.
-- import an openapi/swagger specification into an apidog project for design-first development.
-- export openapi specification from apidog project.
-- import openapi spec
-- apidog
-- api lifecycle
-- api design
-- import postman collection
-- import openapi
-- documentation
-- api testing
-- export
 - export an openapi specification from an apidog project for sharing or ci/cd integration.
-- mocking
-- import openapi specification into apidog project.
-- API Developer
-- managing the complete lifecycle of api specifications from design to deployment.
-- export openapi spec
+- export api specifications to standard formats.
+- export
 - collaboration
-- import api specifications from various formats.
+- import openapi spec
 - design-first
+- import openapi specification into apidog project.
+- managing the complete lifecycle of api specifications from design to deployment.
+- import api specifications from various formats.
+- API Developer
+- import openapi
+- api testing
+- apidog
+- engineer automating api specification workflows via ci/cd integration.
+- unified workflow for managing api specifications lifecycle.
 - export openapi
+- Platform Engineer
+- export openapi spec
+- api design
+- import a postman collection into apidog for converting to openapi-based workflows.
+- platform
+- import postman collection
+- mocking
+- developer building and managing apis using apidog's design-first platform.
+- export openapi specification from apidog project.
+- api lifecycle
+- documentation
+- import an openapi/swagger specification into an apidog project for design-first development.
+- import
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

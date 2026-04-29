@@ -50,36 +50,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- DescribePipe
-- developers building applications using amazon eventbridge pipes
-- UpdatePipe
 - amazon eventbridge pipes updatepipe
-- messaging
-- serverless
-- amazon eventbridge pipes createpipe
-- amazon eventbridge pipes listtagsforresource
-- TagResource
+- amazon eventbridge pipes describepipe
 - UntagResource
-- StopPipe
-- aws
-- amazon eventbridge pipes tagresource
-- amazon eventbridge pipes untagresource
-- amazon eventbridge pipes deletepipe
-- StartPipe
-- DeletePipe
-- ListTagsForResource
-- event-driven
+- DescribePipe
+- UpdatePipe
 - amazon web services
+- ListPipes
+- amazon eventbridge pipes deletepipe
 - amazon eventbridge pipes listpipes
+- amazon eventbridge pipes createpipe
+- ListTagsForResource
+- developers building applications using amazon eventbridge pipes
+- StopPipe
+- serverless
+- amazon eventbridge pipes stoppipe
+- event-driven
+- TagResource
+- aws
+- amazon eventbridge pipes startpipe
 - CreatePipe
 - unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- ListPipes
-- integration
-- amazon eventbridge pipes stoppipe
-- amazon eventbridge pipes startpipe
-- operations teams managing amazon eventbridge pipes infrastructure
-- amazon eventbridge pipes describepipe
+- messaging
+- amazon eventbridge pipes untagresource
+- amazon eventbridge pipes listtagsforresource
+- amazon eventbridge pipes tagresource
+- StartPipe
 - point-to-point integration between event producers and consumers
+- operations teams managing amazon eventbridge pipes infrastructure
+- integration
+- DeletePipe
 slug: amazon-eventbridge-pipes-capability
 source_filename: amazon-eventbridge-pipes-capability.yaml
 source_heading: Capability Spec

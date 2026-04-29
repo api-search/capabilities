@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- browse available products and plans
-- list service subscriptions for a customer
-- customer management
-- handles customer inquiries and account management
-- retrieve billing invoices for a customer
-- create customer
-- create subscription
-- browse the service catalog and available plans
-- manages telco bss operations and system configuration
-- 5g
-- list customers
-- Billing Team
-- onboard a new customer
-- amdocs
-- list telecom customer accounts
-- oss
-- Customer Care Agent
-- telecom customer account management
-- customer subscription management
-- bss
-- add a service subscription
-- list invoices
-- add a service subscription to a customer account
-- unified bss workflow for customer onboarding, billing, and service management
-- manages invoicing, payments, and revenue assurance
 - onboard a new telecom customer
-- list subscriptions
-- saas
-- product and service catalog
-- mvno
-- billing
-- telecom
-- list subscriptions for a customer
-- BSS Operator
+- create customer
+- bss
+- telecom customer account management
+- unified bss workflow for customer onboarding, billing, and service management
 - customer billing invoices
-- list invoices for a customer
-- list products
+- customer management
+- browse available products and plans
+- add a service subscription
+- Customer Care Agent
 - list all customer accounts
+- 5g
+- saas
+- list customers
+- oss
+- list subscriptions for a customer
+- billing
+- onboard a new customer
+- Billing Team
+- list invoices for a customer
+- customer subscription management
+- telecom
+- browse the service catalog and available plans
+- product and service catalog
+- list telecom customer accounts
+- manages telco bss operations and system configuration
+- add a service subscription to a customer account
+- manages invoicing, payments, and revenue assurance
+- list subscriptions
+- create subscription
+- list products
+- retrieve billing invoices for a customer
+- handles customer inquiries and account management
+- BSS Operator
+- amdocs
+- mvno
+- list service subscriptions for a customer
+- list invoices
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

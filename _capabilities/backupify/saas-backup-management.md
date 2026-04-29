@@ -22,35 +22,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- list all backupify saas backup domains with customer ids and subscription information
-- customer backup seats
-- IT Administrator
-- msp
-- MSP Technician
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- saas backup
-- cloud backup
 - list backup seats
-- list seats for a customer
 - list domains
-- domain and seat management for backupify cloud-to-cloud backup
-- list seats
-- bulk license/unlicense/pause seats
-- managed service provider technician managing backup coverage across customer accounts
-- google workspace
 - saas backup domains
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- bulk change seat licenses
-- microsoft 365
-- backupify
-- data protection
-- list backup domains
-- bulk seat management
-- list all backup customer domains
+- google workspace
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- domain and seat management for backupify cloud-to-cloud backup
 - datto
+- customer backup seats
+- bulk license/unlicense/pause seats
+- bulk seat management
 - bulk seat change
+- list seats for a customer
+- bulk change seat licenses
+- IT Administrator
+- list backup domains
+- data protection
 - cloud-to-cloud backup and recovery for saas platforms
+- list seats
+- cloud backup
+- list all backupify saas backup domains with customer ids and subscription information
+- managed service provider technician managing backup coverage across customer accounts
+- msp
+- backupify
+- microsoft 365
+- list all backup customer domains
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
+- MSP Technician
+- saas backup
 slug: saas-backup-management
 source_filename: saas-backup-management.yaml
 source_heading: Capability Spec

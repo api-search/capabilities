@@ -24,35 +24,35 @@ provider_name: Apache Atlas
 provider_slug: apache-atlas
 search_terms:
 - search entities
-- list business glossaries for data governance.
-- Data Governance Team
 - get entity.
-- create metadata entities in atlas for data governance.
-- Data Engineer
-- get entity
-- data lineage
-- search atlas metadata entities by type and attributes.
-- compliance
-- apache atlas
-- teams responsible for data quality, compliance, and metadata policies.
-- full-text search across all atlas metadata.
-- metadata discovery, lineage tracking, and governance workflow.
-- open source
-- get an atlas entity by guid.
-- metadata
-- search entities.
 - create entities
-- metadata management
 - get lineage
-- get entity lineage.
 - apache
-- fulltext search
-- hadoop
-- engineers tracking data lineage and managing metadata for pipelines.
-- get data lineage graph for an atlas entity.
-- list glossaries
-- big data
 - data governance
+- metadata discovery, lineage tracking, and governance workflow.
+- get an atlas entity by guid.
+- get data lineage graph for an atlas entity.
+- engineers tracking data lineage and managing metadata for pipelines.
+- list glossaries
+- open source
+- Data Engineer
+- compliance
+- metadata management
+- teams responsible for data quality, compliance, and metadata policies.
+- search entities.
+- list business glossaries for data governance.
+- metadata
+- Data Governance Team
+- big data
+- create metadata entities in atlas for data governance.
+- search atlas metadata entities by type and attributes.
+- full-text search across all atlas metadata.
+- get entity
+- get entity lineage.
+- hadoop
+- data lineage
+- apache atlas
+- fulltext search
 slug: atlas-data-governance
 source_filename: atlas-data-governance.yaml
 source_heading: Capability Spec

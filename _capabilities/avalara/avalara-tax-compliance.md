@@ -40,59 +40,59 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- avalara
-- sales tax calculation, certificate management, and e-invoicing
-- real-time tax calculation across us and global jurisdictions
-- tax exemption certificates
-- validate address
-- submit einvoice
-- validate a postal address and determine the applicable tax jurisdiction
-- sales tax
-- list tax exemption certificates for exempt customers
-- oversees tax strategy, compliance automation, and cost optimization
-- submit e-invoice for compliance
-- calculate sales tax
-- e-invoicing
-- list mandates
-- taxes
-- integrates avalara apis into erp and billing systems
-- list certcapture customer accounts
 - e-invoice submission
-- list customers
-- list certificates
-- e-invoicing mandate requirements
-- create certificate
-- submit an e-invoice document for cross-border or domestic compliance
-- create exemption certificate
-- International Trade Manager
-- tax exemption certificate collection and validation
-- list submitted einvoices
-- hs code and tax code classification for products
-- validate postal address
-- manages sales tax compliance, exemption certificates, and returns filing
-- list tax transactions
-- exemptions
-- calculate sales tax, vat, or gst
-- list exemption certificates
-- calculate sales tax, vat, or gst for a transaction across all jurisdictions
-- list historical tax transactions for audit and reconciliation
-- address validation
-- list e-invoicing mandates by country
-- vat returns, 1099 filing, and lodging tax reporting
-- list submitted e-invoice documents and their status
-- Tax Manager
-- check einvoicing mandate
-- validate postal address and determine jurisdiction
-- manages cross-border compliance, tariff classification, and e-invoicing
-- Finance Director
-- tax compliance
-- tax calculations for transactions
-- list transactions
 - check e-invoicing mandate requirements for a country
-- create a new tax exemption certificate for a customer
-- calculate tax
+- list certcapture customer accounts
+- integrates avalara apis into erp and billing systems
+- calculate sales tax, vat, or gst
+- list tax transactions
+- validate address
+- address validation
+- manages sales tax compliance, exemption certificates, and returns filing
+- oversees tax strategy, compliance automation, and cost optimization
 - country-specific e-invoicing mandate compliance
+- real-time tax calculation across us and global jurisdictions
+- submit e-invoice for compliance
+- Finance Director
+- hs code and tax code classification for products
+- check einvoicing mandate
+- tax compliance
+- submit an e-invoice document for cross-border or domestic compliance
+- list customers
+- list e-invoicing mandates by country
+- create a new tax exemption certificate for a customer
+- vat returns, 1099 filing, and lodging tax reporting
+- list exemption certificates
+- list certificates
+- calculate tax
+- e-invoicing
+- calculate sales tax
+- list transactions
+- list historical tax transactions for audit and reconciliation
 - import duties, vat, and e-invoicing for international trade
+- list tax exemption certificates for exempt customers
+- avalara
+- list mandates
+- list submitted e-invoice documents and their status
+- list submitted einvoices
+- sales tax calculation, certificate management, and e-invoicing
+- e-invoicing mandate requirements
+- create exemption certificate
+- tax exemption certificate collection and validation
+- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- validate postal address and determine jurisdiction
+- validate a postal address and determine the applicable tax jurisdiction
+- exemptions
+- submit einvoice
+- International Trade Manager
+- Tax Manager
+- manages cross-border compliance, tariff classification, and e-invoicing
+- tax exemption certificates
+- sales tax
+- create certificate
+- validate postal address
+- taxes
+- tax calculations for transactions
 slug: avalara-tax-compliance
 source_filename: avalara-tax-compliance.yaml
 source_heading: Capability Spec

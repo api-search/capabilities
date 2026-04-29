@@ -9,13 +9,13 @@ personas: []
 provider_name: CloudBees
 provider_slug: cloudbees
 search_terms:
-- feature management
-- continuous integration
-- jenkins
-- software delivery
 - ci/cd
 - feature flags
+- continuous integration
+- feature management
+- jenkins
 - devops
+- software delivery
 - release orchestration
 - continuous delivery
 slug: feature-management

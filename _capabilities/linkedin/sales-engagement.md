@@ -39,49 +39,49 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- create sales analytics export job.
-- create crm data validation export job.
-- linkedin
-- get crm validation job status.
-- get crm data validation export job status.
-- authentication, sharing, and verification for consumer apps.
-- posts jobs and manages candidates through ats integrations.
-- get contracts
-- get sales access token
-- professional networking
-- uses sales navigator for lead generation and crm sync.
-- get sales access token.
-- employee development tracking and content access.
-- create new sales analytics export job.
-- message archiving and regulatory communications governance.
-- batch fetch profile associations from crm records.
-- sales navigator
-- tracks employee learning activity and completions.
-- data portability and advertiser transparency for dma.
-- integrates linkedin authentication and sharing into applications.
-- batch get profile associations
-- find all contracts where user has an active seat.
-- recruiting
 - sales
-- get export job
-- social media
-- fetch sales analytics export job by id.
-- sales intelligence, lead management, and crm integration.
+- create crm data validation export job.
 - batch fetch profile associations.
-- careers
-- retrieve sales access token.
-- fetch export job status.
-- job posting, recruiting, and applicant tracking.
-- b2b advertising, audience targeting, and campaign analytics.
+- message archiving and regulatory communications governance.
+- fetch sales analytics export job by id.
+- find all contracts where user has an active seat.
+- create export job
+- sales navigator
 - archives communications for regulatory compliance.
 - get crm validation job
-- crm integration
-- create crm validation job
-- create crm data validation job.
-- create export job
 - manages b2b ad campaigns and audience targeting on linkedin.
-- marketing
+- employee development tracking and content access.
+- social media
+- careers
+- professional networking
+- sales intelligence, lead management, and crm integration.
+- crm integration
+- get crm data validation export job status.
+- uses sales navigator for lead generation and crm sync.
+- fetch export job status.
 - business
+- tracks employee learning activity and completions.
+- job posting, recruiting, and applicant tracking.
+- get contracts
+- get export job
+- create sales analytics export job.
+- integrates linkedin authentication and sharing into applications.
+- marketing
+- linkedin
+- b2b advertising, audience targeting, and campaign analytics.
+- get sales access token
+- batch get profile associations
+- create crm data validation job.
+- get crm validation job status.
+- authentication, sharing, and verification for consumer apps.
+- data portability and advertiser transparency for dma.
+- get sales access token.
+- create new sales analytics export job.
+- retrieve sales access token.
+- recruiting
+- batch fetch profile associations from crm records.
+- create crm validation job
+- posts jobs and manages candidates through ats integrations.
 slug: sales-engagement
 source_filename: sales-engagement.yaml
 source_heading: Capability Spec

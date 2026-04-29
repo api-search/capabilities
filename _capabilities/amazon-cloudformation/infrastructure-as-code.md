@@ -10,14 +10,14 @@ personas: []
 provider_name: Amazon CloudFormation
 provider_slug: amazon-cloudformation
 search_terms:
-- cloudformation
-- DevOps Engineer
 - iac
-- infrastructure as code
 - amazon cloudformation
-- amazon web services
+- infrastructure as code
 - devops
 - aws
+- DevOps Engineer
+- cloudformation
+- amazon web services
 slug: infrastructure-as-code
 source_filename: infrastructure-as-code.yaml
 source_heading: Capability Spec

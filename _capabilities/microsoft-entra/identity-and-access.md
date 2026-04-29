@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- individual service principal management.
-- delete user
-- get application details.
-- get service principal details.
-- delete a user.
-- list all service principals.
-- identity
-- list group members
-- remove a member from a group.
 - list all groups.
-- list all application registrations.
-- access management
-- delete a group.
-- get user properties by id.
-- list groups and roles a user belongs to.
-- list user group memberships.
-- delete an application registration.
-- microsoft
-- group membership management.
-- delete a user from the directory.
-- list all applications.
-- get user details.
-- get group details.
-- delete group
-- add group member
 - azure ad
-- list service principals
-- delete an application.
-- application registration management.
-- delete application
-- security
-- create a new user.
-- update group
-- create a new service principal.
-- user group membership.
-- update user properties.
-- create a new group.
-- list applications
-- get application
-- user account management.
-- update application
-- create service principal
-- list all users in the directory.
-- get user
-- list all groups in the directory.
-- list all users in microsoft entra directory.
-- get service principal
-- list group members.
-- add a member to a group.
-- authentication
-- identity governance
-- create user
-- group management.
-- update user
-- directory management
-- microsoft entra
-- register a new application.
-- list user memberships
-- service principal management.
-- create application
-- update service principal.
-- individual user management.
-- delete service principal
-- update group properties.
-- list members of a group.
-- list groups
-- remove group member
-- list users
-- get group
-- update service principal properties.
-- delete a service principal.
-- zero trust
-- entra
-- create a new user in the directory.
-- individual application management.
-- individual group management.
-- update service principal
+- get group details.
 - update application properties.
-- network security
+- security
+- individual application management.
+- microsoft entra
+- get service principal details.
+- add group member
+- list all users in the directory.
+- update service principal
+- remove group member
+- register a new application.
+- group membership management.
+- delete application
+- list all service principals.
+- delete an application registration.
+- create service principal
+- update user
+- update group
+- delete a service principal.
+- list groups
+- group management.
+- get user properties by id.
+- list group members.
+- directory management
+- delete an application.
+- access management
+- get user details.
+- update service principal properties.
+- create a new group.
+- list groups and roles a user belongs to.
+- list users
+- list members of a group.
+- list service principals
+- get user
+- update application
+- create application
+- create a new user in the directory.
+- individual service principal management.
+- add a member to a group.
+- user group membership.
+- create user
+- create a new user.
+- create a new service principal.
+- delete a user.
+- list all groups in the directory.
+- identity governance
 - create group
+- entra
+- update group properties.
+- update user properties.
+- remove a member from a group.
+- list all users in microsoft entra directory.
+- individual user management.
+- zero trust
+- network security
+- get service principal
+- user account management.
+- delete user
+- list user group memberships.
+- get group
+- delete group
+- delete a user from the directory.
+- list all application registrations.
+- individual group management.
+- delete a group.
+- identity
+- list applications
+- list user memberships
+- get application details.
+- authentication
+- list group members
+- list all applications.
+- application registration management.
+- update service principal.
+- service principal management.
+- delete service principal
+- microsoft
+- get application
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

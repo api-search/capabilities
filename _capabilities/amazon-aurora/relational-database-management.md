@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- create db instance
-- modify db cluster
-- create a new aurora db cluster
-- create a new aurora mysql or postgresql compatible db cluster.
-- amazon aurora
-- aurora db cluster management
-- describe db cluster snapshots
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- stop an aurora db cluster to reduce costs when not in use.
-- create db cluster
-- relational database
-- add a new read replica or writer instance to an aurora db cluster.
-- aws
-- list aurora db clusters
-- list available aurora db cluster snapshots for backup management.
-- list all db instances in aurora clusters.
-- list all aurora db clusters to understand available databases and their status.
 - mysql
-- stop db cluster
-- create db cluster snapshot
-- modify the configuration of an existing aurora db cluster.
-- describe db instances
-- restore db cluster from snapshot
-- postgresql
-- describe db clusters
+- create db instance
 - start a stopped aurora db cluster to resume database operations.
-- create a snapshot of an aurora db cluster for backup or cloning.
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- stop db cluster
+- restore db cluster from snapshot
 - start db cluster
+- stop an aurora db cluster to reduce costs when not in use.
+- list all aurora db clusters to understand available databases and their status.
+- add a new read replica or writer instance to an aurora db cluster.
+- describe db cluster snapshots
+- create db cluster snapshot
+- create a snapshot of an aurora db cluster for backup or cloning.
+- aws
+- describe db clusters
+- list available aurora db cluster snapshots for backup management.
+- modify the configuration of an existing aurora db cluster.
+- modify db cluster
+- amazon aurora
+- postgresql
+- create db cluster
+- create a new aurora mysql or postgresql compatible db cluster.
+- relational database
+- list all db instances in aurora clusters.
+- describe db instances
+- list aurora db clusters
+- aurora db cluster management
+- create a new aurora db cluster
 slug: relational-database-management
 source_filename: relational-database-management.yaml
 source_heading: Capability Spec

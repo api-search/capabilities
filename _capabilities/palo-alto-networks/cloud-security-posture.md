@@ -167,170 +167,170 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- search config
-- get cspm alert
-- get fix suggestions
-- mssp
-- cloud security engineer
-- proactively searches for threats and iocs across telemetry data.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- threat hunter
-- tenant operator
-- get the status of a code security scan
-- delete a specific code security suppression by id
-- compliance
-- sre
-- retrieve a list of data security risks
-- investigates dlp incidents and manages sensitive data protection policies.
-- retrieve details for a specific data asset
-- conducts automated adversarial testing against ai systems and llm applications.
-- remove cloud account
-- retrieve a list of discovered data assets
-- search for cloud assets using rql queries
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- login
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- identity and access management, tenant hierarchies, and subscription management.
-- create suppression
-- list all code security repositories with pagination and filtering
-- search for cloud configuration data using rql queries
-- manage enterprise browser policies, user sessions, and deployments.
-- executes containment, eradication, and recovery actions during security incidents.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- firewall admin
-- list classifications
-- designs sase and sd-wan network architectures for secure remote access.
-- retrieve a list of all compliance reports
-- saas security admin
-- digital experience monitoring, log management, and best practice assessment.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- incident responder
-- create policy
-- browser security admin
-- cloud security posture management, compliance monitoring, and workload protection.
-- ai runtime security scanning and automated red teaming for ai applications.
-- retrieve a list of dspm policies
-- retrieve a list of all cspm policies
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- retrieve details for a specific cspm policy
-- delete suppression
-- get errors by branch
-- list data assets
-- dismiss one or more cspm alerts
-- get fix suggestions for pr
-- retrieve a list of all compliance standards
-- get code errors
-- get data asset
-- authenticate
-- data protection analyst
-- palo alto networks
-- vulnerability manager
-- get alert
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- list risks
-- subscription manager
-- sase admin
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- reopen cspm alerts
-- onboard a new cloud account
-- network security
-- remove a repository from code security scanning
-- get fix suggestions for a pull request
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- sase
-- list data stores
-- create a new code security suppression
-- retrieve a list of data classifications
-- network architect
-- analyzes suspicious files and samples for malware characteristics.
-- retrieve details for a specific cspm alert
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- manages multi-tenant security operations at scale for managed service providers.
-- list scan integrations
-- network security engineer
-- firewall
-- retrieve details for a specific data security risk
-- list repositories
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- platform engineer
-- soar
-- manages enterprise browser policies and secure browsing configurations.
-- xdr
-- cloud security
-- list reports
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- dismiss alerts
-- list all code security suppressions with pagination and filtering
-- cybersecurity
-- trigger scan
-- list compliance standards
-- create a new cspm security policy
-- malware researcher
-- designs and implements network security architectures and policies.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- retrieve a list of dspm data security alerts
-- get alerts
-- list suppressions
-- update risk status
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- data loss prevention, saas security monitoring, and identity security posture.
-- iam admin
-- get risk
-- add a new repository for code security scanning
-- threat intelligence
-- reopen one or more previously dismissed cspm alerts
-- update the status of a specific data security risk
-- enterprise it
-- get scan status
-- get data risk
-- list cloud accounts
-- cspm
-- add repository
-- monitors network health, performance, and digital experience metrics.
-- soc analyst
-- authenticate to prisma cloud and retrieve a jwt token
-- search asset
-- mssp operator
-- researches threat actors, malware campaigns, and vulnerability trends.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- manages logging infrastructure, integrations, and platform automation.
-- remove repository
-- enterprise browser policy management and secure browsing.
-- remove an onboarded cloud account
-- retrieve a list of all onboarded cloud accounts
-- list data risks
-- list policies
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- update policy
-- sd wan operator
-- manages service accounts, roles, and access policies for platform api access.
 - search assets
-- threat intel analyst
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- red team operator
-- get policy
-- dismiss cspm alerts
-- data security
-- retrieve a list of data stores
-- compliance officer
-- list all ci/cd scan integrations with pagination
+- retrieve a list of all compliance standards
+- executes containment, eradication, and recovery actions during security incidents.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- get alerts
+- retrieve a list of discovered data assets
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- retrieve a list of data classifications
+- retrieve details for a specific cspm alert
+- compliance
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- tenant operator
+- remove cloud account
+- get fix suggestions for pr
+- cloud security engineer
+- digital experience monitoring, log management, and best practice assessment.
+- remove repository
+- network security engineer
+- threat intelligence
 - list cspm alerts
-- compliance team
-- ai security engineer
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- reopen alerts
-- get code security errors for a specific repository branch
-- add cloud account
-- trigger a new code security scan for a repository
-- list data security alerts
-- update data risk status
-- retrieve a list of cspm alerts based on filters
-- update an existing cspm security policy
-- list dspm policies
+- malware researcher
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- dismiss cspm alerts
+- get data risk
 - network operations
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- trigger scan
+- create a new cspm security policy
+- mssp
+- onboard a new cloud account
+- delete suppression
+- retrieve details for a specific data security risk
+- ai runtime security scanning and automated red teaming for ai applications.
+- get fix suggestions for a pull request
+- cloud security posture management, compliance monitoring, and workload protection.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- threat intel analyst
+- list all ci/cd scan integrations with pagination
+- get policy
+- add a new repository for code security scanning
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- list reports
+- list dspm policies
+- list data security alerts
+- get code errors
+- dismiss alerts
+- create suppression
+- monitors network health, performance, and digital experience metrics.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- list suppressions
+- compliance officer
+- search for cloud configuration data using rql queries
+- get code security errors for a specific repository branch
+- update an existing cspm security policy
+- search config
+- firewall admin
+- list compliance standards
+- red team operator
+- conducts automated adversarial testing against ai systems and llm applications.
+- xdr
+- saas security admin
+- reopen alerts
+- platform engineer
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- manages logging infrastructure, integrations, and platform automation.
+- get data asset
+- list risks
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- retrieve a list of all onboarded cloud accounts
+- iam admin
+- incident responder
+- subscription manager
+- get fix suggestions
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- data security
+- get errors by branch
+- remove an onboarded cloud account
+- designs and implements network security architectures and policies.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- login
+- mssp operator
+- retrieve a list of dspm data security alerts
+- compliance team
+- manages service accounts, roles, and access policies for platform api access.
+- list data stores
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- identity and access management, tenant hierarchies, and subscription management.
+- dismiss one or more cspm alerts
+- analyzes suspicious files and samples for malware characteristics.
+- add repository
+- manages enterprise browser policies and secure browsing configurations.
+- soc analyst
+- delete a specific code security suppression by id
+- get cspm alert
+- vulnerability manager
+- list data risks
+- list all code security suppressions with pagination and filtering
+- designs sase and sd-wan network architectures for secure remote access.
+- enterprise browser policy management and secure browsing.
+- palo alto networks
+- sre
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- search for cloud assets using rql queries
+- network security
+- ai security engineer
+- threat hunter
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- enterprise it
+- add cloud account
+- soar
+- search asset
+- update policy
+- get risk
+- data protection analyst
+- manage enterprise browser policies, user sessions, and deployments.
+- create a new code security suppression
+- reopen cspm alerts
+- retrieve a list of data stores
+- investigates dlp incidents and manages sensitive data protection policies.
+- cybersecurity
+- network architect
+- list cloud accounts
+- data loss prevention, saas security monitoring, and identity security posture.
+- create policy
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- browser security admin
+- retrieve a list of dspm policies
+- sase
+- list data assets
+- get scan status
+- sd wan operator
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- firewall
+- manages multi-tenant security operations at scale for managed service providers.
+- cloud security
+- get alert
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- list all code security repositories with pagination and filtering
+- retrieve details for a specific data asset
+- trigger a new code security scan for a repository
+- researches threat actors, malware campaigns, and vulnerability trends.
+- update data risk status
+- reopen one or more previously dismissed cspm alerts
+- retrieve a list of all cspm policies
+- retrieve a list of data security risks
+- retrieve a list of all compliance reports
+- retrieve a list of cspm alerts based on filters
+- list scan integrations
+- list policies
+- sase admin
+- proactively searches for threats and iocs across telemetry data.
+- list classifications
+- retrieve details for a specific cspm policy
+- remove a repository from code security scanning
+- list repositories
+- update risk status
+- update the status of a specific data security risk
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- authenticate
+- cspm
+- get the status of a code security scan
+- authenticate to prisma cloud and retrieve a jwt token
 slug: cloud-security-posture
 source_filename: cloud-security-posture.yaml
 source_heading: Capability Spec

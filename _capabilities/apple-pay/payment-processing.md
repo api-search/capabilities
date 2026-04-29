@@ -26,31 +26,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- checkout
-- e-commerce
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- registering and managing merchant identity and domains for apple pay
-- E Commerce Developer
-- engineer building payment processing infrastructure supporting multiple payment methods
-- contactless payments
-- digital wallet
-- initiating and completing apple pay payment authorizations
-- register apple pay domain
-- mobile payments
-- apple pay merchant validation and payment session
 - validates merchant and obtains apple pay payment session
-- validate apple pay merchant
-- validate merchant
-- apple pay
-- merchant domain management for apple pay
+- payments
+- register a domain for apple pay on the web
+- mobile payments
+- digital wallet
+- checkout
 - Payment Integration Engineer
 - register domain
-- register a domain for apple pay on the web
-- registers a merchant domain to accept apple pay on the web payments
-- apple
-- developer integrating apple pay into a web or mobile checkout experience
+- validate apple pay merchant
+- validate merchant
 - end-to-end apple pay checkout integration with merchant validation and payment token handling
-- payments
+- registers a merchant domain to accept apple pay on the web payments
+- contactless payments
+- engineer building payment processing infrastructure supporting multiple payment methods
+- merchant domain management for apple pay
+- register apple pay domain
+- developer integrating apple pay into a web or mobile checkout experience
+- e-commerce
+- apple pay
+- apple
+- apple pay merchant validation and payment session
+- registering and managing merchant identity and domains for apple pay
+- E Commerce Developer
+- initiating and completing apple pay payment authorizations
+- validates merchant identity with apple and returns a payment session object for completing checkout
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

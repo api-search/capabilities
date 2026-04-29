@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- create consumer
-- create an api consumer.
-- apache apisix
-- create a new api consumer with authentication plugins.
-- lua
-- cloud native
-- Platform Engineer
-- list all api consumers and their plugin configs.
-- list consumers
 - create a new backend upstream with load balancing config.
-- engineers deploying and managing api gateway infrastructure.
-- list upstreams
-- open source
+- create a new gateway route.
+- list all gateway routes.
+- apache
+- list backend upstreams.
 - delete route
+- route, upstream, consumer, and ssl management workflow.
+- open source
+- configuration
+- list all apisix gateway routes.
 - api gateway
+- create an api consumer.
+- list upstreams
+- apache apisix
+- cloud native
+- update an existing apisix route.
+- list all api consumers and their plugin configs.
+- administrators configuring routes, consumers, and security policies.
+- list all backend upstream configurations.
+- Platform Engineer
 - list routes
 - authentication
-- delete an apisix route.
-- list api consumers.
-- route, upstream, consumer, and ssl management workflow.
-- list all gateway routes.
-- traffic management
-- create a backend upstream.
-- API Gateway Administrator
-- apache
-- create route
-- list all apisix gateway routes.
-- administrators configuring routes, consumers, and security policies.
-- update an existing apisix route.
-- create upstream
-- create a new gateway route.
-- configuration
-- list backend upstreams.
-- create a new apisix route for traffic routing.
-- kubernetes
-- nginx
-- list all backend upstream configurations.
+- engineers deploying and managing api gateway infrastructure.
 - update route
+- list api consumers.
+- kubernetes
+- lua
+- create upstream
+- API Gateway Administrator
+- create route
+- create a backend upstream.
+- create a new apisix route for traffic routing.
+- create a new api consumer with authentication plugins.
+- list consumers
+- delete an apisix route.
+- nginx
+- traffic management
+- create consumer
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

@@ -65,57 +65,57 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- add project webhook
-- test project webhook
-- set webhook custom header
-- integrations
-- individual webhook operations.
-- add or update a url variable for dynamic webhook url substitution.
-- code
-- send a test webhook payload of a specified trigger type.
-- set webhook url variable
-- delete a project webhook.
-- test webhook triggers.
-- source control
-- update project webhook
-- event driven
-- devops
-- platform
-- delete webhook custom header
-- delete webhook url variable
-- add a new webhook to a project.
-- url variable management for dynamic webhook url substitution.
-- webhook delivery event history.
-- gitlab
-- software development
-- list delivery events for a webhook from the past 7 days.
-- delete a url variable from a webhook.
-- delete a custom header from a webhook.
-- resend webhook event
 - send a test webhook payload of a specified trigger type to verify endpoint configuration.
-- delete project webhook
+- list project webhooks
+- get configuration details for a specific project webhook.
+- add a new webhook to a project.
+- webhook delivery event history.
+- url variable management for dynamic webhook url substitution.
 - set a custom header for a webhook.
+- list all webhooks configured for a project.
+- remove a custom http header from a webhook.
+- add or update a url variable for dynamic webhook url substitution.
+- resend webhook event
+- set webhook url variable
+- update project webhook
+- remove a webhook from a project.
+- gitlab
+- get details of a specific project webhook.
+- delete webhook url variable
+- custom http header management for webhook deliveries.
+- update a project webhook configuration.
+- add or update a custom http header sent with webhook deliveries.
+- list delivery events for a webhook from the past 7 days.
+- event driven
+- delete project webhook
+- resend a previously triggered webhook event to retry failed deliveries.
 - list all webhooks for a project.
+- individual webhook operations.
+- delete a project webhook.
+- resend a webhook event delivery.
 - set a url variable for a webhook.
 - create a new webhook for a project with configurable event triggers.
-- webhooks
-- list all webhooks configured for a project.
-- update the configuration of an existing project webhook.
-- remove a custom http header from a webhook.
-- get details of a specific project webhook.
-- custom http header management for webhook deliveries.
-- resend a previously triggered webhook event to retry failed deliveries.
-- list webhook events
-- resend a webhook event delivery.
-- remove a webhook from a project.
-- list project webhooks
-- get project webhook
-- update a project webhook configuration.
-- resend a previously triggered webhook event.
-- get configuration details for a specific project webhook.
-- add or update a custom http header sent with webhook deliveries.
-- remove a url variable from a webhook.
 - project webhook collection operations.
+- get project webhook
+- devops
+- delete a url variable from a webhook.
+- update the configuration of an existing project webhook.
+- platform
+- remove a url variable from a webhook.
+- send a test webhook payload of a specified trigger type.
+- code
+- integrations
+- list webhook events
+- software development
+- source control
+- webhooks
+- test project webhook
+- delete webhook custom header
+- set webhook custom header
+- test webhook triggers.
+- resend a previously triggered webhook event.
+- add project webhook
+- delete a custom header from a webhook.
 slug: webhook-management
 source_filename: webhook-management.yaml
 source_heading: Capability Spec

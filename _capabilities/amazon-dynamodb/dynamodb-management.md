@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- deleteTable
-- engineers managing amazon dynamodb resources on aws.
-- describe table
-- update table
-- delete table
-- getItem
-- amazon dynamodb delete an item from a table
-- update item
-- amazon dynamodb list dynamodb tables
-- serverless
+- amazon dynamodb
+- amazon dynamodb describe a dynamodb table
 - workflow capability for nosql database operations.
-- amazon dynamodb put an item into a table
-- get item
-- amazon dynamodb update a dynamodb table
-- updateTable
+- deleteTable
+- amazon dynamodb get an item from a table
+- listTables
+- amazon dynamodb query items in a table or index
+- nosql
 - amazon dynamodb create a dynamodb table
-- deleteItem
-- amazon dynamodb delete a dynamodb table
+- getItem
 - describeTable
 - query
+- serverless
+- amazon dynamodb update a dynamodb table
+- delete table
+- amazon dynamodb list dynamodb tables
+- aws
+- putItem
 - delete item
 - list tables
-- aws
 - create table
-- listTables
-- amazon dynamodb get an item from a table
-- nosql database operations business domain for amazon dynamodb.
-- nosql
-- key-value
-- putItem
-- amazon dynamodb update an item in a table
-- amazon dynamodb describe a dynamodb table
-- amazon dynamodb
-- amazon dynamodb query items in a table or index
-- updateItem
-- put item
 - createTable
+- get item
+- key-value
+- amazon dynamodb put an item into a table
+- amazon dynamodb delete an item from a table
+- update table
+- amazon dynamodb delete a dynamodb table
+- nosql database operations business domain for amazon dynamodb.
+- updateTable
 - database
+- engineers managing amazon dynamodb resources on aws.
 - document store
+- describe table
+- updateItem
+- deleteItem
+- update item
+- amazon dynamodb update an item in a table
+- put item
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

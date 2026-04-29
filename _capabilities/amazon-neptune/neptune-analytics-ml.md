@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- machine learning
-- list neptune ml training jobs
-- property graph
-- create a neptune analytics graph for graph analytics workloads
-- Graph Developer
-- neptune analytics graph management
-- graph analytics, vector search, and ml model training and inference
-- list neptune analytics graphs for in-memory graph analysis
-- rdf
-- graph database
-- trains and deploys neptune ml graph neural network models
-- create ml inference endpoint
-- list neptune ml graph neural network training jobs
-- manages neptune clusters, instances, and infrastructure
-- create a neptune ml inference endpoint for predictions
-- aws
-- neptune
-- performs graph analytics and builds ml models on graph data
-- gremlin
-- list ml training jobs
-- Data Scientist
-- writes gremlin, sparql, and opencypher queries against neptune
-- Graph Database Administrator
-- data streaming
-- amazon neptune
-- bulk loading
 - sparql
-- list ml jobs
-- graph analytics
-- create analytics graph
-- ML Engineer
+- Graph Database Administrator
+- list neptune ml graph neural network training jobs
+- list neptune analytics graphs for in-memory graph analysis
+- bulk loading
+- neptune
+- list ml training jobs
 - list neptune analytics graphs
-- neptune ml training job management
-- graph database management, querying, and data streaming
+- list neptune ml training jobs
+- Data Scientist
+- property graph
+- writes gremlin, sparql, and opencypher queries against neptune
+- create a neptune analytics graph for graph analytics workloads
+- list ml jobs
+- gremlin
+- rdf
+- aws
+- amazon neptune
+- graph analytics
 - list analytics graphs
+- graph analytics, vector search, and ml model training and inference
+- graph database management, querying, and data streaming
+- Graph Developer
+- data streaming
+- machine learning
+- graph database
+- neptune analytics graph management
 - database
+- create ml inference endpoint
+- ML Engineer
+- trains and deploys neptune ml graph neural network models
+- manages neptune clusters, instances, and infrastructure
+- performs graph analytics and builds ml models on graph data
+- create a neptune ml inference endpoint for predictions
+- neptune ml training job management
+- create analytics graph
 slug: neptune-analytics-ml
 source_filename: neptune-analytics-ml.yaml
 source_heading: Capability Spec

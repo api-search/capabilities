@@ -23,42 +23,42 @@ personas: []
 provider_name: Blissfully
 provider_slug: blissfully
 search_terms:
-- software catalog
-- saas discovery
-- software vendor catalog
+- list software vendors in the vendr catalog with their product portfolios and category information.
+- list vendors
+- IT Manager
+- portfolio visibility, spend optimization, and renewal management
+- procurement
+- search and browse software products in the vendr catalog
+- ai procurement
+- software purchasing, negotiation, and vendor management
+- get fair price benchmarks and negotiation guidance
 - get product
 - get fair price predictions and negotiation guidance for a software product. powered by vendr's database of real software purchases.
-- get detailed catalog attributes, features, and add-ons for a specific software product.
-- list vendors
-- create a webhook to receive notifications when vendr pricing or catalog data is updated.
-- search and browse software products in the vendr catalog. returns structured attributes, features, and available add-ons.
-- ai procurement
-- software procurement
-- spend optimization
-- IT Manager
-- analyzes saas spend, benchmarks costs, and identifies savings opportunities
-- AI Assistant
-- Procurement Manager
-- saas management
-- software product catalog search and browsing
-- search and browse software products in the vendr catalog
-- researches software options, benchmarks pricing, and negotiates with vendors
-- create webhook
-- provides ai-assisted procurement recommendations via mcp integration
-- list software vendors in the vendr catalog with their product portfolios and category information.
-- pricing intelligence
-- pricing intelligence and negotiation guidance
-- portfolio visibility, spend optimization, and renewal management
-- software purchasing, negotiation, and vendor management
-- list software vendors
+- saas catalog browsing, pricing benchmarks, and negotiation guidance
 - evaluates software capabilities and manages the saas portfolio
+- pricing intelligence
+- software catalog
+- Procurement Manager
+- list software vendors
+- AI Assistant
+- saas discovery
+- create webhook
 - Finance Analyst
 - vendor management
-- get fair price benchmarks and negotiation guidance
-- procurement
+- pricing intelligence and negotiation guidance
 - list products
+- create a webhook to receive notifications when vendr pricing or catalog data is updated.
+- software vendor catalog
+- software product catalog search and browsing
+- software procurement
+- analyzes saas spend, benchmarks costs, and identifies savings opportunities
+- get detailed catalog attributes, features, and add-ons for a specific software product.
+- provides ai-assisted procurement recommendations via mcp integration
+- researches software options, benchmarks pricing, and negotiates with vendors
+- spend optimization
+- search and browse software products in the vendr catalog. returns structured attributes, features, and available add-ons.
+- saas management
 - get pricing insights
-- saas catalog browsing, pricing benchmarks, and negotiation guidance
 slug: blissfully-saas-procurement
 source_filename: blissfully-saas-procurement.yaml
 source_heading: Capability Spec

@@ -35,42 +35,42 @@ provider_name: Amazon MediaConnect
 provider_slug: amazon-mediaconnect
 search_terms:
 - list flows
-- Broadcast Engineer
-- list all mediaconnect bridges
-- manage live video flows
-- media transport
-- list all mediaconnect flows for live video transport
-- list all mediaconnect gateways
-- media
-- list all flow entitlements
-- delete flow
-- live video transport workflow for broadcast engineers
-- list all bridges
-- manage bridges
-- manage individual flow
-- list all entitlements
-- live video transport and distribution
 - get details of a specific flow
-- list bridges
-- aws
-- delete a flow
-- stop flow
-- flows
-- broadcasting
-- manage entitlements
-- create a new flow
-- start flow
-- engineer managing live video workflows
-- get flow details
-- list all flows
-- list gateways
-- live video
-- describe flow
-- start a mediaconnect flow
-- create flow
-- list entitlements
-- create a new mediaconnect flow
+- manage bridges
 - stop a mediaconnect flow
+- list all mediaconnect bridges
+- live video transport workflow for broadcast engineers
+- manage entitlements
+- list bridges
+- engineer managing live video workflows
+- broadcasting
+- describe flow
+- start flow
+- list gateways
+- list entitlements
+- media transport
+- list all flows
+- list all bridges
+- aws
+- media
+- get flow details
+- Broadcast Engineer
+- stop flow
+- list all mediaconnect gateways
+- start a mediaconnect flow
+- live video
+- list all entitlements
+- manage live video flows
+- manage individual flow
+- list all mediaconnect flows for live video transport
+- flows
+- delete a flow
+- delete flow
+- create a new mediaconnect flow
+- create a new flow
+- create flow
+- list all flow entitlements
+- live video transport and distribution
 slug: amazon-mediaconnect-live-video-transport
 source_filename: amazon-mediaconnect-live-video-transport.yaml
 source_heading: Capability Spec

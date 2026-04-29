@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- workflow automation
-- list all integrations.
-- developer implementing and automating embedded integration workflows.
-- integrations
-- integration platform
-- integration analytics.
-- SaaS Product Manager
-- list connectors
-- manage workflows.
-- Integration Developer
-- create workflow
-- product manager building native integrations into a saas product.
-- ipaas
-- managing native integrations within saas products.
-- list integrations
-- list all connectors.
 - create a workflow.
-- browse and manage integrations.
-- browse pre-built connectors.
-- create a new automation workflow connecting two or more integrated platforms.
+- list all integrations.
 - get analytics
-- saas
-- list all integration workflows configured in the embedded marketplace.
-- marketplace
-- embedded integrations
-- get analytics data.
-- apifuse
-- list workflows.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- list integrations
+- SaaS Product Manager
+- create workflow
 - list workflows
-- browse all available embedded integrations, optionally filtered by category.
+- saas
+- ipaas
+- integration analytics.
+- list connectors
+- managing native integrations within saas products.
+- browse pre-built connectors.
+- get analytics data.
+- create a new automation workflow connecting two or more integrated platforms.
+- list workflows.
+- apifuse
 - list all pre-built connectors available for embedding into your saas product.
+- integration platform
+- manage workflows.
+- integrations
+- browse and manage integrations.
+- list all integration workflows configured in the embedded marketplace.
+- list all connectors.
+- Integration Developer
+- developer implementing and automating embedded integration workflows.
+- product manager building native integrations into a saas product.
+- embedded integrations
+- workflow automation
+- marketplace
+- browse all available embedded integrations, optionally filtered by category.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

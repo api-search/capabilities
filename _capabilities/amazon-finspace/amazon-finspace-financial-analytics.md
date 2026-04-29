@@ -9,15 +9,15 @@ personas: []
 provider_name: Amazon FinSpace
 provider_slug: amazon-finspace
 search_terms:
-- data management
-- kdb
-- market data
-- financial services
-- financial analytics
+- tick data
 - capital markets
 - data analytics
-- tick data
+- market data
+- kdb
+- data management
 - aws
+- financial services
+- financial analytics
 slug: amazon-finspace-financial-analytics
 source_filename: amazon-finspace-financial-analytics.yaml
 source_heading: Capability Spec

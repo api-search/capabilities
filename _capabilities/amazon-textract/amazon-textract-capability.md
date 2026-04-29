@@ -9,8 +9,8 @@ personas: []
 provider_name: Amazon Textract
 provider_slug: amazon-textract
 search_terms:
-- document processing
 - machine learning
+- document processing
 - ocr
 - aws
 slug: amazon-textract-capability

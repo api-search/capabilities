@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- IT Administrator
-- email
-- list all amazon workmail organizations in the account.
-- mobile device access control and compliance
-- list email distribution groups in an organization.
-- list mobile device access rules.
-- list groups
-- manages workmail infrastructure, user provisioning, and security policies.
-- handles day-to-day email user and group management.
-- enterprise email provisioning and management
-- administration
-- aws
-- list users in a workmail organization.
-- list mobile device access rules
-- list all workmail organizations.
-- list users
-- create user
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- create a new workmail user with mailbox.
-- group management.
-- calendar
-- create a new email user.
-- Email Operations
-- it administration of email infrastructure
-- enterprise
-- workmail organization management.
-- business communication
-- list organizations
-- list mobile device access control rules.
-- list email groups.
 - list users in an organization.
-- exchange
+- list users in a workmail organization.
+- handles day-to-day email user and group management.
 - user provisioning and management.
+- create user
+- list groups
+- group management.
+- list mobile device access rules
+- list email groups.
+- it administration of email infrastructure
+- exchange
+- list organizations
+- email
+- Email Operations
+- enterprise email provisioning and management
+- aws
+- calendar
 - mobile device access control.
+- administration
+- IT Administrator
+- create a new email user.
+- list mobile device access rules.
+- business communication
+- list all amazon workmail organizations in the account.
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- workmail organization management.
+- list users
+- list mobile device access control rules.
+- list all workmail organizations.
+- create a new workmail user with mailbox.
+- manages workmail infrastructure, user provisioning, and security policies.
+- enterprise
+- list email distribution groups in an organization.
+- mobile device access control and compliance
 slug: email-management
 source_filename: email-management.yaml
 source_heading: Capability Spec

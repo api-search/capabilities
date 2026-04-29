@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- download completed order output
-- create order
-- check data buffet api health
-- update basket
-- moody's
-- time series data
-- list vintages
-- list file types
-- compliance
-- list available data frequencies
-- list all data baskets
-- retrieve a time series
-- get basket details
-- climate risk
-- search series
-- list all orders
-- delete a basket
-- list frequencies
-- create a new data order
-- check health
-- create a new data basket
-- entity verification
-- economic data
-- credit risk
-- retrieve multiple time series
 - get series
-- search for available series
-- get multi series
-- get order
-- forecasting
 - list supported output file types
-- get basket
-- delete basket
-- list vintages for a series
-- get order status and details
-- risk
-- list orders
-- insurance
-- analytics
-- list baskets
-- create basket
-- update a basket
-- download order
-- retrieve a single time series by mnemonic
-- financial analytics
 - kyc
+- risk
+- delete basket
+- economic data
+- retrieve a single time series by mnemonic
+- list baskets
+- create order
+- list vintages
+- get basket details
+- update a basket
+- list all orders
+- compliance
+- update basket
+- list frequencies
+- entity verification
+- retrieve multiple time series
+- list all data baskets
+- credit risk
+- retrieve a time series
+- climate risk
 - screening
+- get multi series
+- analytics
+- moody's
+- list orders
+- create a new data basket
+- get basket
+- list file types
+- financial analytics
+- list vintages for a series
+- download completed order output
+- insurance
+- forecasting
+- create basket
+- search series
+- get order status and details
+- time series data
+- list available data frequencies
+- search for available series
+- get order
+- create a new data order
+- check data buffet api health
+- check health
+- delete a basket
+- download order
 slug: economic-data-analytics
 source_filename: economic-data-analytics.yaml
 source_heading: Capability Spec

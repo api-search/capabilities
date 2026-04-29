@@ -18,24 +18,24 @@ personas: []
 provider_name: Cisco
 provider_slug: cisco
 search_terms:
-- list organizations
-- cisco
-- list devices
-- list devices in network
 - unified network management combining meraki and other cisco apis
-- list meraki organizations
-- network organizations
-- list networks in organization
-- Network Admin
-- network administrators managing cisco infrastructure
-- networking
-- security
-- collaboration
-- enterprise
 - networks
+- list meraki organizations
+- sd-wan
+- networking
+- list devices
+- enterprise
+- list organizations
+- security
 - network management
 - list networks
-- sd-wan
+- network organizations
+- network administrators managing cisco infrastructure
+- cisco
+- collaboration
+- list networks in organization
+- Network Admin
+- list devices in network
 slug: network-management
 source_filename: network-management.yaml
 source_heading: Capability Spec

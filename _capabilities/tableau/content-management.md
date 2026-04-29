@@ -43,51 +43,51 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- data source operations
-- sign in
+- get workbook
+- tableau
 - site management
-- delete a site
+- single site operations
 - delete site
+- delete data source
 - create a new site
+- get details of a specific site
+- add a user to a site
+- list all sites
+- sign in
+- get site details
 - list workbooks on a site
+- list sites
 - data visualization
 - update site
-- add a user to a site
-- list data sources on a site
+- workbook operations
+- administration
+- delete workbook
 - list workbooks
 - sign in to tableau server or cloud
-- single site operations
-- list sites
-- list all sites on the server
-- administration
-- get site
-- list users on a site
-- list users
-- get data source
-- sign out from tableau
-- get details of a specific data source
-- content management
-- tableau
-- delete data source
-- update a site
-- business intelligence
-- update site configuration
-- list all sites
-- analytics
-- list data sources
-- delete a data source
-- add user
-- sign out
 - delete a workbook
-- delete workbook
-- workbook operations
-- get details of a specific site
 - dashboards
-- create site
+- get data source
+- list users
+- analytics
+- get site
 - user operations
+- list users on a site
+- content management
+- list data sources on a site
+- update site configuration
+- business intelligence
+- delete a data source
+- update a site
+- get details of a specific data source
+- list data sources
+- sign out from tableau
+- list all sites on the server
 - get details of a specific workbook
-- get site details
-- get workbook
+- create site
+- sign out
+- add user
+- data source operations
+- delete a site
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

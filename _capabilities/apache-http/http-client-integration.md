@@ -9,10 +9,10 @@ personas: []
 provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
-- http client
 - open source
-- java
 - sdk
+- http client
+- java
 - apache
 slug: http-client-integration
 source_filename: http-client-integration.yaml

@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- specific realm.
-- list users.
-- list roles in a realm.
-- delete user
-- get user
-- create a user.
-- list realm roles
-- containers
-- keycloak realms.
-- list clients
-- realm roles.
-- list roles.
-- list groups in a realm.
-- identity
-- get user details.
-- list client applications in a realm.
-- create client
-- realm users.
-- hybrid cloud
-- create a new user in a realm.
-- terminate a user session.
-- open source
-- list groups
-- list realms
-- get realm configuration details.
-- red hat
-- get realm details.
-- list users
-- identity providers.
+- list roles
+- get realm
 - create user
-- delete a user from a realm.
-- realm groups.
-- list users in a realm.
+- list groups
+- identity providers.
+- list clients
+- realm users.
+- list roles.
 - cloud
-- enterprise
+- list client applications in a realm.
+- open source
+- list all realms.
+- create a new user in a realm.
 - list all keycloak realms.
 - list identity providers
-- get realm
+- identity
+- delete a user from a realm.
+- hybrid cloud
 - access management
-- list groups.
-- list clients.
-- list external identity providers.
-- realm clients.
-- list roles
-- kubernetes
-- keycloak
-- list identity providers.
-- linux
+- get user details.
+- realm roles.
+- list realms
+- specific realm.
 - register a new client application.
+- keycloak
+- linux
+- list users.
+- get realm configuration details.
+- list users
+- red hat
+- list users in a realm.
 - delete session
-- list all realms.
+- list groups in a realm.
+- kubernetes
+- keycloak realms.
+- create a user.
+- realm clients.
+- list identity providers.
+- get user
+- realm groups.
+- enterprise
+- get realm details.
+- list external identity providers.
+- list roles in a realm.
+- delete user
+- terminate a user session.
+- containers
+- list groups.
+- list realm roles
+- list clients.
+- create client
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

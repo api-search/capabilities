@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- start a sql query execution
-- create named query
-- list data catalogs
-- serverless
+- list databases in an athena data catalog to explore available schemas.
+- start query execution
 - sql
+- list data catalogs
+- list athena workgroups to understand available query isolation environments.
+- list data catalogs registered with athena to discover available data sources.
+- serverless
+- check the status of a running or completed athena query execution.
+- aws
+- list named queries
+- list tables in an athena database to understand available data.
 - list query executions
+- list databases
 - download the results of a completed athena sql query.
 - save a sql query as a named query for reuse in athena.
-- aws
-- list databases
-- list work groups
-- list databases in an athena data catalog to explore available schemas.
-- list tables in an athena database to understand available data.
-- list table metadata
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list recent query executions in an athena workgroup.
-- create a named query
-- sql query management
-- list data catalogs registered with athena to discover available data sources.
 - analytics
-- get query results
-- list athena workgroups to understand available query isolation environments.
+- list work groups
+- sql query management
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- create named query
+- create a named query
+- list table metadata
 - get query execution
-- check the status of a running or completed athena query execution.
-- list named queries
-- amazon athena
+- get query results
+- list recent query executions in an athena workgroup.
+- start a sql query execution
 - list saved named queries available in an athena workgroup.
 - named query management
-- start query execution
+- amazon athena
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec

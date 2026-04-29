@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get batch job
-- middleware
-- get was server health
-- check if liberty server is alive
-- cloud native
-- get performance data
-- ibm websphere
-- get log config
-- get liveness
-- check if liberty server is ready for traffic
-- get all open liberty metrics
-- get all metrics
-- enterprise java
-- list batch job instances
-- metrics
-- get liberty log messages
-- j2ee
-- get liberty logging configuration
-- get readiness
-- monitoring
-- list jakarta batch job instances
-- get open liberty overall health status
-- get liberty metrics
-- metrics collection
-- performance data
-- observability
-- get open liberty overall health
 - get was health
-- get recent liberty log messages
-- microservices
-- get was performance monitoring data
-- get liberty health
-- get batch job instance details
 - get log messages
-- health check endpoints
-- get was server health status
-- batch job monitoring
 - get liberty admin metrics
-- list batch jobs
+- get was server health status
+- enterprise java
+- monitoring
+- check if liberty server is ready for traffic
+- get recent liberty log messages
+- metrics collection
+- batch job monitoring
+- get batch job
+- observability
+- cloud native
+- get liberty metrics
+- microservices
+- ibm websphere
+- get open liberty overall health
+- get liveness
+- get liberty health
+- get was server health
+- get batch job instance details
+- performance data
+- metrics
 - application server
+- get liberty log messages
+- get all open liberty metrics
+- middleware
+- get all metrics
+- list batch jobs
+- get liberty logging configuration
+- j2ee
+- list jakarta batch job instances
+- health check endpoints
+- list batch job instances
+- get readiness
+- check if liberty server is alive
+- get was performance monitoring data
+- get open liberty overall health status
 - log management
+- get performance data
+- get log config
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

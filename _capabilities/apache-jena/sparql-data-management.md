@@ -22,33 +22,33 @@ personas: []
 provider_name: Apache Jena
 provider_slug: apache-jena
 search_terms:
-- execute a sparql update to insert or delete rdf triples
-- sparql query
-- sparql update
-- java
-- Data Engineer
-- retrieve a named rdf graph from a dataset
-- owl
-- Knowledge Graph Architect
-- knowledge graph
-- rdf
-- architects who design rdf schemas and knowledge graph structures
-- open source
-- create a dataset
-- create dataset
-- engineers who manage and query rdf datasets with sparql
-- semantic web
-- execute a sparql select query to retrieve rdf data from a fuseki dataset
-- get graph
-- apache jena
-- list all datasets
-- ontology
 - sparql
-- list datasets
-- linked data
-- execute sparql query
-- list all rdf datasets available on the fuseki server
+- knowledge graph
+- execute a sparql update to insert or delete rdf triples
+- architects who design rdf schemas and knowledge graph structures
 - create a new rdf dataset on the fuseki server
+- retrieve a named rdf graph from a dataset
+- open source
+- Data Engineer
+- java
+- owl
+- rdf
+- engineers who manage and query rdf datasets with sparql
+- sparql update
+- create dataset
+- list all rdf datasets available on the fuseki server
+- get graph
+- semantic web
+- Knowledge Graph Architect
+- sparql query
+- list all datasets
+- list datasets
+- create a dataset
+- ontology
+- execute a sparql select query to retrieve rdf data from a fuseki dataset
+- execute sparql query
+- apache jena
+- linked data
 slug: sparql-data-management
 source_filename: sparql-data-management.yaml
 source_heading: Capability Spec

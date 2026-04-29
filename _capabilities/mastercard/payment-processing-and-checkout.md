@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
+- payments
 - get payment
-- checkout
-- e-commerce
-- digital identity
-- create unified session
-- process a payment through the gateway
-- generate a merchant-presented qr code for payment
-- create checkout session
-- create a new checkout session for a merchant
-- process payment
-- generate a merchant qr code for payment
-- register a contactless reader device
-- financial services
-- checkout session management
-- create a new checkout session
-- unified checkout sessions
-- create an installment plan
-- retrieve payment transaction details
 - open banking
+- create installment plan
+- unified checkout sessions
+- qr code payment acceptance
+- create a buy-now-pay-later installment plan
+- register a contactless reader device
+- checkout
+- process payment
+- create unified session
+- generate a merchant qr code for payment
+- checkout session management
+- create a new checkout session for a merchant
+- create a new checkout session
+- generate a merchant-presented qr code for payment
+- digital identity
+- retrieve payment transaction details
+- mastercard
+- register contactless reader
+- buy-now-pay-later installment plans
+- process a payment through the mastercard gateway
 - process cloud transaction
 - create a unified checkout session supporting multiple payment methods
-- qr code payment acceptance
-- buy-now-pay-later installment plans
-- get payment details
 - create a unified checkout session
-- merchant
-- fraud detection
-- credit cards
-- create installment plan
-- payment processing
-- register contactless reader
-- generate qr code
-- create a buy-now-pay-later installment plan
+- e-commerce
+- financial services
+- create an installment plan
+- get payment details
+- create checkout session
 - process a cloud commerce transaction
-- mastercard
-- process a payment through the mastercard gateway
-- payments
+- generate qr code
+- fraud detection
+- merchant
+- credit cards
+- process a payment through the gateway
+- payment processing
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

@@ -27,50 +27,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- get trading partner by id.
-- list outbound transactions.
-- retrieve trading partners.
-- list trading partners.
 - edi extract outbound transaction
+- list trading partners.
+- initialize responsibility context.
+- extract an outbound edi transaction.
 - edi
+- edi get trading partner by id
+- business applications
 - edi import inbound transaction
 - soa gateway
-- import an inbound edi transaction.
-- edi get inbound transactions
-- get inbound transactions
-- invoke a rest method on a service.
-- retrieve code conversion mappings.
+- outbound edi transactions.
 - authenticate.
-- inbound edi transactions.
-- get outbound transactions
-- isg login
-- business applications
-- trading partner management.
-- end the current session.
-- get wadl for a rest service.
-- erp
-- login
-- isg invoke rest method
-- isg get service wadl
+- list inbound transactions.
 - authenticate and obtain session token.
+- isg login
+- end the current session.
+- erp
+- edi get inbound transactions
+- invoke a rest method on a service.
 - retrieve outbound edi transactions.
-- e-business suite
-- authentication.
+- get outbound transactions
+- retrieve trading partners.
+- isg get service wadl
+- import an inbound edi transaction.
+- list outbound transactions.
+- isg logout
+- isg initialize
+- retrieve inbound edi transactions.
+- edi get trading partners
+- get inbound transactions
+- trading partner management.
+- isg invoke rest method
+- inbound edi transactions.
+- edi get code conversions
 - edi get outbound transactions
 - enterprise
-- outbound edi transactions.
-- isg logout
+- authentication.
+- get wadl for a rest service.
+- retrieve code conversion mappings.
+- e-business suite
 - oracle
-- edi get trading partners
 - integration
-- extract an outbound edi transaction.
+- get trading partner by id.
 - get trading partners
-- initialize responsibility context.
-- edi get trading partner by id
-- retrieve inbound edi transactions.
-- edi get code conversions
-- isg initialize
-- list inbound transactions.
+- login
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml
 source_heading: Capability Spec

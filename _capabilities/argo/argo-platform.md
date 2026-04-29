@@ -28,41 +28,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
-- trigger an argo cd application sync from git
-- container-native workflow execution
-- list all argo workflows in a namespace
-- manages kubernetes platform tools including argo workflows and argo cd
-- workflows create
-- complete argo project platform combining workflows and cd for devops teams
-- Platform Engineer
-- git-driven deployment and infrastructure management
-- list all workflows
-- applications sync
-- uses argo tools for ci/cd and gitops workflows
-- platform engineering
-- cncf
-- create workflow
-- open source
-- workflow management
-- sync an application from git
-- progressive delivery
-- workflows list
-- DevOps Engineer
-- submit a new workflow
-- container orchestration platform
-- gitops
-- submit a new argo workflow
-- gitops application management
-- sync application
-- argo
-- applications list
-- workflow engine
-- list workflows
-- kubernetes
 - ci/cd
-- list applications
+- cncf
+- gitops
+- gitops application management
+- applications sync
+- progressive delivery
+- sync application
+- workflow management
+- submit a new workflow
+- open source
 - list argo cd applications
+- create workflow
+- list applications
+- list workflows
+- platform engineering
+- uses argo tools for ci/cd and gitops workflows
+- sync an application from git
 - list all argo cd applications with sync and health status
+- container orchestration platform
+- list all argo workflows in a namespace
+- workflows create
+- manages kubernetes platform tools including argo workflows and argo cd
+- workflows list
+- trigger an argo cd application sync from git
+- kubernetes
+- applications list
+- argo
+- container-native workflow execution
+- submit a new argo workflow
+- workflow engine
+- list all workflows
+- Platform Engineer
+- DevOps Engineer
+- complete argo project platform combining workflows and cd for devops teams
+- git-driven deployment and infrastructure management
 slug: argo-platform
 source_filename: argo-platform.yaml
 source_heading: Capability Spec

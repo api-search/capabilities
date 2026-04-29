@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- b2b
-- delete webhook
-- webhook target url validation.
-- get subscription types
-- validate a webhook target url is reachable.
-- get api usage data and consumption metrics.
-- marketing intelligence
-- individual webhook management.
-- get usage
-- validate target url
-- list webhooks
-- contact database
 - webhook subscription management.
-- compliance
+- get api usage data and consumption metrics.
+- get subscription types
 - get api usage data.
-- list all webhook subscriptions.
-- check data compliance status for specified contacts.
-- lead generation
-- create a new webhook subscription for data change notifications.
-- validate a webhook target url.
-- data
-- sales intelligence
-- company data
-- api usage tracking.
-- available webhook subscription types.
-- api usage
 - monitoring
-- b2b data
-- update webhook
-- create webhook
-- delete a webhook subscription.
+- available webhook subscription types.
+- validate target url
+- api usage tracking.
+- get usage
 - get available webhook subscription types.
-- data compliance operations.
-- webhooks
-- check compliance
-- zoominfo
-- create a new webhook subscription.
-- list all configured webhook subscriptions.
-- check compliance status for specified contacts.
+- compliance
+- individual webhook management.
+- webhook target url validation.
 - contacts
+- validate a webhook target url.
+- lead generation
+- delete webhook
+- api usage
+- delete a webhook subscription.
+- check data compliance status for specified contacts.
 - update an existing webhook subscription.
+- b2b
+- b2b data
+- create webhook
+- data
+- contact database
+- marketing intelligence
+- create a new webhook subscription.
+- list all webhook subscriptions.
+- company data
+- create a new webhook subscription for data change notifications.
+- update webhook
+- data compliance operations.
+- check compliance
+- list all configured webhook subscriptions.
+- webhooks
+- zoominfo
+- list webhooks
+- validate a webhook target url is reachable.
+- check compliance status for specified contacts.
+- sales intelligence
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

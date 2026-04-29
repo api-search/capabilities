@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- issuers
-- manage a payment account
-- list available mastercard bins
-- request updated card credentials
-- digital identity
-- submit pan event
-- issue card
-- issue a new card
-- get billing updates
-- card management
-- automatic billing updates
-- issue a new mastercard card
-- get card details
-- query payment account reference to link tokens to accounts
-- submit pan-related event for account level management
-- request updated card credentials for card-on-file
-- financial services
-- manage payment account
-- look up bin information
-- retrieve account catalog data
-- open banking
-- get payment account reference
-- get account catalog
-- bin lookup
-- lookup bin
-- list bins
-- manage a payment account lifecycle
-- validate account
-- account management
-- fraud detection
-- payment account management
-- create a physical card fulfillment order
-- create fulfillment order
-- credit cards
-- validate account details
-- mastercard
-- card issuance and management
-- look up bin information for a card
 - payments
+- validate account
+- open banking
+- get account catalog
+- card management
+- manage a payment account
+- look up bin information for a card
+- issue card
+- payment account management
+- validate account details
+- manage payment account
+- get card details
+- get billing updates
+- card issuance and management
+- create fulfillment order
+- query payment account reference to link tokens to accounts
+- create a physical card fulfillment order
+- request updated card credentials for card-on-file
+- list bins
+- list available mastercard bins
+- get payment account reference
+- digital identity
+- request updated card credentials
+- look up bin information
+- mastercard
+- issue a new mastercard card
+- automatic billing updates
+- retrieve account catalog data
+- lookup bin
 - manage account
+- issuers
+- financial services
+- submit pan-related event for account level management
+- submit pan event
+- manage a payment account lifecycle
+- issue a new card
+- fraud detection
+- credit cards
+- bin lookup
+- account management
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

@@ -9,11 +9,11 @@ personas: []
 provider_name: Blobr
 provider_slug: blobr
 search_terms:
+- advertising
+- ppc
+- google ads
 - ai agents
 - marketing automation
-- google ads
-- ppc
-- advertising
 slug: blobr-google-ads-ai
 source_filename: blobr-google-ads-ai.yaml
 source_heading: Capability Spec

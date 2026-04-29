@@ -9,15 +9,15 @@ personas: []
 provider_name: Anchore
 provider_slug: anchore
 search_terms:
-- engineers who manage kubernetes clusters with admission control policies
-- sbom
-- compliance professionals who require sbom and policy audit trails
-- security professionals who review vulnerability reports and set policies
-- software supply chain
-- containers
 - vulnerability scanning
 - engineers who integrate security scanning into ci/cd pipelines
+- engineers who manage kubernetes clusters with admission control policies
+- compliance professionals who require sbom and policy audit trails
 - container security
+- containers
+- security professionals who review vulnerability reports and set policies
+- sbom
+- software supply chain
 slug: anchore-container-security
 source_filename: anchore-container-security.yaml
 source_heading: Capability Spec

@@ -46,59 +46,59 @@ personas: []
 provider_name: Microsoft Windows Server
 provider_slug: microsoft-windows-server
 search_terms:
-- create a web site
-- update application
-- update a web site
-- microsoft
-- create an application pool
 - windows server
-- create a new iis web site
-- operating system
-- delete an iis web site
-- web application management
-- create website
-- update an iis web site configuration
-- delete an application pool
-- list all web applications
-- delete a web site
 - application pool management
-- update website
-- create an iis application pool
-- delete website
-- list application pools
-- get application pool details
-- list all iis web sites on the server
-- get web site details
-- list all applications
-- update an application pool configuration
-- get application pool
-- delete a web application
-- single web site operations
-- list all iis application pools
-- update a web application
-- create application pool
-- delete application
-- update application pool
-- enterprise
-- create a new web application
 - get web application details
+- update an iis web site configuration
+- list all iis application pools
+- create application pool
+- get web site details
+- single web site operations
 - web site management
-- windows server 2025
-- list all web sites
-- iis
-- list websites
-- datacenter
-- get website
+- update a web application
 - list all application pools
-- create an application
+- update application pool
+- web server
+- list websites
+- create an application pool
+- delete an iis web site
+- delete an application pool
+- list applications
+- list all iis web sites on the server
+- datacenter
+- list application pools
 - get details for a specific web site
-- create application
+- create a new iis web site
+- get application pool details
+- update a web site
+- list all web sites
+- list all applications
+- iis
+- update website
+- operating system
+- web application management
+- create an iis application pool
+- delete application pool
+- create a new web application
+- update an application pool configuration
+- delete application
 - server management
 - infrastructure
-- web server
-- list applications
+- windows server 2025
+- create an application
+- enterprise
+- delete a web application
+- update application
+- get website
+- create application
+- create a web site
+- list all web applications
+- get application pool
+- delete website
+- create website
+- delete a web site
+- microsoft
 - get application
-- delete application pool
 slug: web-server-management
 source_filename: web-server-management.yaml
 source_heading: Capability Spec

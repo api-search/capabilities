@@ -22,18 +22,18 @@ provider_name: Amazon Q
 provider_slug: amazon-q
 search_terms:
 - amazon q resources
-- aws cloud resource management
-- engineer managing amazon q resources
-- list resources
-- enterprise
-- list amazon q resources
-- amazon q
 - automation workflow for amazon q
 - generative ai
+- amazon q
+- enterprise
+- list resources
 - artificial intelligence
 - cloud operations
 - aws
+- aws cloud resource management
+- list amazon q resources
 - assistant
+- engineer managing amazon q resources
 slug: amazon-q
 source_filename: amazon-q.yaml
 source_heading: Capability Spec

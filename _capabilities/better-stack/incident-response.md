@@ -80,74 +80,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- update monitor
-- list incidents with optional date and filter parameters
-- heartbeats
-- get monitor details
-- get monitor availability summary
-- get availability metrics for a monitor
-- create a manual incident
-- get details for a specific incident
-- acknowledge an active incident to indicate someone is working on it
-- managing team access and membership
-- acknowledge incident
-- list monitors
-- delete a monitor
-- acknowledge an incident
-- platform
-- create a new uptime monitor for a url or api
-- sre
-- list heartbeats
-- acknowledge an active incident
-- get incident
-- heartbeat monitor management
-- resolve incident
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- list all uptime monitors
-- update a monitor
-- sre engineer
-- create a new uptime monitor
-- communicating service health to customers and stakeholders
-- list all heartbeats
-- list incidents
-- single monitor operations
-- logs
-- get heartbeat availability
-- resolve an active incident once the issue is fixed
-- get availability for a heartbeat monitor
-- resolve an incident
-- incident response
-- engineer on-call rotation responsible for responding to incidents
-- monitor management for uptime checks
-- delete monitor
-- monitoring
-- list all incidents
-- get monitor availability
-- resolve an active incident
-- delete incident
-- observability
-- create a heartbeat monitor
-- get incident details
-- site reliability engineer managing infrastructure uptime and incident response
-- incident management
-- get details for a specific uptime monitor
-- list all heartbeat monitors for scheduled jobs
-- better stack
-- monitor availability metrics
-- create heartbeat
+- on-call
 - create incident
+- get availability for a heartbeat monitor
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- delete monitor
+- engineer on-call rotation responsible for responding to incidents
+- resolve an incident
+- managing team access and membership
+- monitoring
+- list all uptime monitors
+- get availability metrics for a monitor
+- resolve an active incident
+- list all uptime monitors to check what is being monitored
+- monitor management for uptime checks
+- logs
+- status
+- get monitor availability
+- sre engineer
+- heartbeat monitor management
+- create a manual incident
+- monitor availability metrics
+- site reliability engineer managing infrastructure uptime and incident response
+- uptime and availability monitoring for services and scheduled jobs
+- observability
+- delete a monitor
+- update a monitor
+- resolve incident
+- list incidents
+- acknowledge an active incident
+- uptime
+- get details for a specific incident
+- delete incident
+- sre
+- get incident
+- get incident details
+- create heartbeat
+- create a new uptime monitor
+- acknowledge an incident
+- communicating service health to customers and stakeholders
+- list incidents with optional date and filter parameters
+- list all heartbeat monitors for scheduled jobs
+- platform
+- update monitor
+- get monitor details
+- delete an incident
+- single monitor operations
+- on call engineer
+- heartbeats
+- create a heartbeat monitor
+- list monitors
+- acknowledge incident
+- create a new uptime monitor for a url or api
 - incidents
 - detection, acknowledgement, and resolution of service incidents
-- uptime
+- get heartbeat availability
+- get details for a specific uptime monitor
+- get monitor availability summary
+- list all incidents
+- list heartbeats
+- list all heartbeats
+- incident management
 - get monitor
-- create monitor
-- status
+- better stack
+- acknowledge an active incident to indicate someone is working on it
 - single incident operations
-- on call engineer
-- list all uptime monitors to check what is being monitored
-- on-call
-- delete an incident
-- uptime and availability monitoring for services and scheduled jobs
+- create monitor
+- resolve an active incident once the issue is fixed
+- incident response
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

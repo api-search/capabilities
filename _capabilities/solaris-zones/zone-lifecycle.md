@@ -46,60 +46,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- list all solaris zones with status.
-- lifecycle management
-- individual zone operations.
-- get zone
-- install a solaris zone.
-- resource management
-- statsstore
-- boot a solaris zone.
-- reboot the zone.
-- verify zone
-- boot a zone.
-- containers
-- list zones
-- rad
-- zones
-- verify zone configuration integrity.
+- solaris
 - zone state operations.
 - install zone
-- create a new zone.
-- reboot zone
-- reboot a solaris zone.
-- gracefully shutdown.
-- zone inventory and creation.
-- gracefully shutdown a zone.
-- solaris
-- migrate a zone.
+- resource management
 - virtualization
-- clone zone
-- boot zone
-- halt zone
-- uninstall a solaris zone.
-- migrate to another host.
-- uninstall zone
-- get zone state
-- operating systems
+- delete a zone.
 - list all zones.
-- get zone details.
-- shutdown zone
-- get current zone state.
-- reboot a zone.
-- oracle
-- create zone
-- shutdown a zone.
+- list all solaris zones with status.
 - create a new solaris zone.
-- delete zone
-- migrate a zone to another host.
-- migrate zone
-- boot the zone.
-- halt a zone immediately.
-- clone a solaris zone.
+- zones
+- shutdown zone
 - kernel zones
 - delete a solaris zone.
-- delete a zone.
+- install a solaris zone.
+- operating systems
+- uninstall a solaris zone.
+- rad
+- get zone details.
+- get zone state
 - get solaris zone details.
+- zone inventory and creation.
+- individual zone operations.
+- boot zone
+- halt a zone immediately.
+- clone a solaris zone.
+- migrate a zone to another host.
+- migrate a zone.
+- verify zone
+- halt zone
+- gracefully shutdown a zone.
+- statsstore
+- get zone
+- get current zone state.
+- migrate zone
+- uninstall zone
+- create zone
+- boot a solaris zone.
+- reboot a zone.
+- verify zone configuration integrity.
+- oracle
+- reboot a solaris zone.
+- shutdown a zone.
+- create a new zone.
+- gracefully shutdown.
+- list zones
+- reboot zone
+- boot a zone.
+- clone zone
+- lifecycle management
+- boot the zone.
+- migrate to another host.
+- containers
+- delete zone
+- reboot the zone.
 slug: zone-lifecycle
 source_filename: zone-lifecycle.yaml
 source_heading: Capability Spec

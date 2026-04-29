@@ -9,10 +9,10 @@ personas: []
 provider_name: BB&T Corp (Truist)
 provider_slug: bbandt-corp
 search_terms:
+- open banking
+- truist
 - bb&t
 - financial services
-- truist
-- open banking
 - banking
 slug: open-banking
 source_filename: open-banking.yaml

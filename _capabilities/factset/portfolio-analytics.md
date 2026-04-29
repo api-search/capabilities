@@ -41,38 +41,38 @@ provider_name: Factset
 provider_slug: factset
 search_terms:
 - pa engine resources.
-- list spar engine resources.
-- list portfolios.
-- list portfolios
-- list datastore
-- list pa engine
-- list portfolio metadata
-- portfolio analytics
-- list vault resources.
-- list metadata
-- list publisher
 - risk analysis
-- list spar
-- list spar engine
+- portfolio metadata.
 - performance attribution
 - list portfolio metadata.
 - list vault
-- spar engine resources.
-- list publisher resources.
-- analytics datastore.
-- portfolio metadata.
+- list pa
+- list publisher
 - list analytics datastore.
-- portfolio resources.
-- financial data
-- vault resources.
+- list portfolio metadata
+- spar engine resources.
+- analytics datastore.
+- list vault resources.
+- list spar engine resources.
 - factset
 - list pa engine resources.
 - financial
+- list metadata
+- list pa engine
+- list spar engine
+- portfolio resources.
+- list portfolios
 - market data
+- list datastore
+- list portfolios.
+- vault resources.
+- list publisher resources.
 - list analytics datastore
+- portfolio analytics
+- financial data
 - research
-- list pa
 - investment analytics
+- list spar
 slug: portfolio-analytics
 source_filename: portfolio-analytics.yaml
 source_heading: Capability Spec

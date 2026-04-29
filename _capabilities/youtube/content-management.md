@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- update caption
-- update playlist
-- list videos matching criteria
-- delete a video
-- youtube
-- delete a video from youtube
-- media
-- social
-- upload video
 - list items in a playlist
-- remove a video from a playlist
-- update video metadata
-- delete a playlist
-- update video
-- streaming
-- playlists
-- create a new playlist
-- manage youtube videos
-- manage items within playlists
-- list videos
-- list youtube videos matching criteria
-- upload a caption track
-- add playlist item
-- upload a new video to youtube
-- list playlists
-- create playlist
-- upload caption
-- manage video captions
-- google
-- content management
-- update a caption track
-- add a video to a playlist
-- update playlist details
-- captions
-- videos
-- delete playlist
-- upload a new video
-- manage youtube playlists
-- list caption tracks for a video
-- list captions
-- list playlist items
-- upload a new caption track
-- video
-- remove playlist item
+- update playlist
 - delete caption
-- list youtube playlists
 - delete a caption track
+- delete playlist
+- update playlist details
+- manage items within playlists
+- delete a video
+- update video metadata
+- upload a new caption track
+- list captions
+- add a video to a playlist
+- delete a playlist
+- youtube
+- streaming
+- upload caption
+- add playlist item
+- list videos
+- list videos matching criteria
+- upload a new video to youtube
+- media
+- playlists
 - delete video
+- video
+- list caption tracks for a video
+- captions
+- list youtube playlists
+- create a new playlist
+- manage video captions
+- update caption
+- delete a video from youtube
+- update video
+- list playlists
+- videos
+- manage youtube videos
+- content management
+- upload video
+- update a caption track
+- list youtube videos matching criteria
+- social
+- remove a video from a playlist
+- upload a new video
+- remove playlist item
+- upload a caption track
+- manage youtube playlists
+- create playlist
+- list playlist items
+- google
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

@@ -30,60 +30,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- get company details from domain or email
-- get current time and timezone information for any location
-- ip geolocation
-- ip intelligence
-- get current timezone
-- avatars
-- product engineer
-- exchange rates, vat validation, and iban validation for financial compliance
-- get timezone
-- engineer building fraud detection and threat intelligence systems
-- vat validation
-- detection and blocking of fraudulent users, transactions, and bot activity
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- exchange rates
-- security engineer
-- data enrichment
-- geolocate an ip address
-- finance engineer
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- image processing
-- web scraping
-- currencies
-- enrich company data from domain
-- iban validation
-- convert date/time from one timezone to another
-- developer building user onboarding and personalization features
-- phone validation
-- get current timezone for a location
-- retrieve timezone and current time for a location
-- convert time between zones
-- data engineer
-- screenshots
-- geolocate ip
-- compliance analyst
-- email validation
-- company enrichment
-- get location data for an ip address
 - retrieve company name, industry, headcount, logo, and location from a domain or email
-- geolocate an ip address to get country, city, timezone, and currency data
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- enrich company data
-- timezones
 - public holidays
+- screenshots
+- data enrichment
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
 - fraud analyst
-- currency conversion, vat compliance, and banking validation for financial applications
-- enrich company
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- engineer building data pipelines and enrichment workflows
 - developer building payment, billing, and financial compliance systems
+- finance engineer
+- get location data for an ip address
+- compliance analyst
+- security engineer
+- detection and blocking of fraudulent users, transactions, and bot activity
 - geolocate ip address
-- geolocation
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- abstract api
+- currencies
+- get current timezone
+- data engineer
+- iban validation
+- email validation
+- ip geolocation
+- geolocate an ip address
+- get company details from domain or email
+- geolocate ip
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
 - contacts
+- image processing
+- geolocate an ip address to get country, city, timezone, and currency data
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- phone validation
+- avatars
+- timezones
+- engineer building fraud detection and threat intelligence systems
+- company enrichment
+- developer building user onboarding and personalization features
+- get timezone
+- convert time between zones
+- get current timezone for a location
+- product engineer
+- geolocation
+- convert date/time from one timezone to another
+- enrich company
+- exchange rates, vat validation, and iban validation for financial compliance
+- web scraping
+- enrich company data from domain
+- enrich company data
+- vat validation
+- engineer building data pipelines and enrichment workflows
+- ip intelligence
+- get current time and timezone information for any location
+- retrieve timezone and current time for a location
+- exchange rates
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- currency conversion, vat compliance, and banking validation for financial applications
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- abstract api
 slug: data-enrichment
 source_filename: data-enrichment.yaml
 source_heading: Capability Spec

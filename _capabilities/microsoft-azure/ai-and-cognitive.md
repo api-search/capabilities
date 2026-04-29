@@ -28,46 +28,46 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- create a text completion
-- list model deployments
-- transcribe audio to text
-- openai
-- cognitive services accounts
-- platform as a service
-- list available ai models
 - openai create embedding
-- generate images from text
-- list available openai models
-- azure
-- openai create speech
-- infrastructure as a service
-- model listing
-- openai create chat completion
-- openai create transcription
-- cognitive list accounts
-- openai create translation
-- translate audio to english
-- list openai models
-- api management
-- list cognitive accounts
-- ai
-- create a chat completion using azure openai
-- chat completion operations
-- openai list deployments
-- generate speech from text
 - cognitive services
-- cloud
-- list cognitive services accounts
-- openai list models
-- enterprise
-- t1
-- create chat completion
-- openai create image
-- cloud computing
-- create a chat completion
-- openai create completion
+- create a text completion
+- list available ai models
+- transcribe audio to text
+- generate images from text
+- translate audio to english
 - embedding operations
+- cloud
+- openai create translation
+- platform as a service
+- openai create speech
+- ai
 - create text embeddings
+- t1
+- list available openai models
+- create a chat completion
+- chat completion operations
+- cognitive list accounts
+- create chat completion
+- api management
+- list model deployments
+- list cognitive services accounts
+- create a chat completion using azure openai
+- openai list deployments
+- openai create image
+- model listing
+- list cognitive accounts
+- openai create transcription
+- cloud computing
+- openai list models
+- openai create completion
+- cognitive services accounts
+- azure
+- openai
+- enterprise
+- generate speech from text
+- openai create chat completion
+- infrastructure as a service
+- list openai models
 - create embedding
 - cognitive list models
 slug: ai-and-cognitive

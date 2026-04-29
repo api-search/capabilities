@@ -110,72 +110,72 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- get status of a submitted statement
-- data lakes
-- cancel statement
-- list scheduled tasks
+- list files in a stage
 - snowflake
-- resume task
-- create stage
-- list streams
-- create a stream
-- create function
-- list pipes
-- refresh pipe
-- create a pipe
-- execute function
-- task management
-- list user defined functions
-- list data ingestion pipes
-- submit sql
-- sql statement execution
-- call procedure
+- resume a suspended task
+- refresh a pipe
+- list functions
+- list data loading stages
 - sql
-- suspend task
-- list procedures
-- execute a function
+- stage management
 - list tasks
 - create task
-- create procedure
-- list stage files
-- submit a sql statement for execution
+- resume task
+- execute a function
 - create a task
-- list data loading stages
-- submit statement
-- list change data capture streams
-- get query result
-- create pipe
-- list files in a stage
-- create a scheduled task
-- suspend a running task
-- list udfs
-- list functions
-- create a stored procedure
+- task management
+- create a cdc stream
+- list user defined functions
+- create a pipe
+- submit a sql statement for execution
+- list procedures
 - data pipelines
+- etl
+- create a scheduled task
+- submit a sql statement
+- data sharing
+- create a pipe for continuous ingestion
+- create pipe
+- suspend task
+- list udfs
+- create a function
+- list stored procedures
+- list scheduled tasks
+- get a query result
+- get status of a submitted statement
+- execute task
+- pipe management
+- suspend a running task
+- create stage
+- call procedure
+- create a stream
+- create procedure
+- get query result
+- submit sql
+- list streams
+- create a stage
+- sql statement execution
+- refresh pipe
+- get statement status
+- list stages
 - cancel a running statement
 - execute a task immediately
-- list stored procedures
-- pipe management
-- stage management
-- data sharing
+- cancel statement
+- create a stored procedure
 - call a stored procedure
-- create a cdc stream
-- get a query result
-- stream management
-- submit a sql statement
-- create a stage
-- execute task
-- create a function
-- resume a suspended task
-- create a pipe for continuous ingestion
-- refresh a pipe
-- list stages
-- data warehousing
-- get statement status
-- database
-- data engineering
 - create stream
-- etl
+- list pipes
+- create function
+- database
+- list change data capture streams
+- list data ingestion pipes
+- data engineering
+- submit statement
+- data lakes
+- data warehousing
+- execute function
+- stream management
+- list stage files
 slug: data-engineering
 source_filename: data-engineering.yaml
 source_heading: Capability Spec

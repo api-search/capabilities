@@ -23,26 +23,26 @@ personas: []
 provider_name: Google Docs
 provider_slug: google-docs
 search_terms:
-- document batch updates.
-- get document
-- apply batch updates to a document.
-- document management
-- automation
-- retrieve a google docs document by its id.
-- productivity
-- create a new document.
 - apply batch updates to insert, replace, or delete content in a document.
-- google workspace
-- documents
-- document creation.
-- get a document by id.
+- document batch updates.
 - create document
-- batch update document
-- word processing
-- create a new google docs document with a title.
-- google docs
-- document retrieval and updates.
+- automation
+- document creation.
 - collaboration
+- google workspace
+- get a document by id.
+- get document
+- retrieve a google docs document by its id.
+- apply batch updates to a document.
+- create a new google docs document with a title.
+- documents
+- productivity
+- batch update document
+- document retrieval and updates.
+- create a new document.
+- document management
+- word processing
+- google docs
 slug: document-management
 source_filename: document-management.yaml
 source_heading: Capability Spec

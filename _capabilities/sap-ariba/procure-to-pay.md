@@ -19,49 +19,49 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- list receipts for an order
-- b2b
+- create receipt
 - list purchase orders
-- update purchase order
-- list line items for an order
+- get purchase order details
+- procure-to-pay
+- procurement
+- approve an invoice for payment
+- get supplier
 - create a receipt
-- list receipts
-- contract management
-- create requisition
-- supplier management
-- create a requisition
-- create an invoice
+- reject invoice
+- get requisition
+- supply chain
 - get invoice details
-- approve invoice
+- supplier management
+- purchase order management
 - get requisition details
+- reject an invoice
+- create invoice
+- create purchase order
+- list line items for an order
+- cancel a purchase order
 - ariba
 - list requisitions
-- sap
-- sourcing
-- cancel a purchase order
-- reject an invoice
-- list suppliers
-- update a purchase order
-- list invoices
-- cancel purchase order
-- get purchase order
-- create a purchase order
-- get invoice
-- get purchase order details
-- purchase order management
-- procure-to-pay
-- get supplier profile
-- create purchase order
-- get supplier
-- create receipt
+- create a requisition
 - list line items
+- list receipts
+- update a purchase order
+- update purchase order
+- get supplier profile
+- b2b
+- approve invoice
+- list suppliers
+- list receipts for an order
+- contract management
 - spend analysis
-- create invoice
-- supply chain
-- procurement
-- reject invoice
-- approve an invoice for payment
-- get requisition
+- get purchase order
+- create an invoice
+- sourcing
+- create requisition
+- cancel purchase order
+- create a purchase order
+- sap
+- get invoice
+- list invoices
 slug: procure-to-pay
 source_filename: procure-to-pay.yaml
 source_heading: Capability Spec

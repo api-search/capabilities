@@ -19,43 +19,43 @@ personas: []
 provider_name: Microsoft Power Apps
 provider_slug: microsoft-power-apps
 search_terms:
-- microsoft
-- create contact
-- retrieve a single entity definition
-- delete contact
-- get entity
-- delete account
-- retrieve multiple contacts
-- data platform
-- update an account
-- create a new account
-- delete an account
-- update account
-- no-code
-- create a new contact
-- list entities
-- get contact
 - list accounts
-- create an account
-- retrieve entity definitions
-- low-code
-- update a contact
-- power apps
-- cloud
-- account management
-- enterprise
 - retrieve multiple accounts
-- saas
-- delete a contact
-- get account
+- low-code
+- no-code
+- business applications
+- cloud
+- delete an account
 - create account
+- delete contact
+- create an account
+- power platform
+- create contact
+- saas
+- retrieve a single contact
+- update a contact
+- get contact
+- list entities
+- create a new account
+- create a new contact
+- get account
 - retrieve a single account
 - dataverse
-- retrieve a single contact
-- power platform
+- retrieve multiple contacts
 - list contacts
-- business applications
+- data platform
+- delete a contact
+- get entity
+- retrieve entity definitions
+- power apps
+- enterprise
+- update an account
+- retrieve a single entity definition
+- account management
+- update account
+- delete account
 - update contact
+- microsoft
 slug: data-platform
 source_filename: data-platform.yaml
 source_heading: Capability Spec

@@ -35,58 +35,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- sim swap
-- edge computing
-- list active quality on demand sessions for the application
-- device check roaming
-- get qod session status
-- delete qod session
-- network apis
-- qod get session
-- list active qod sessions
+- check connectivity
+- developer building fraud prevention and identity verification using network signals
+- get the current status of a quality on demand session
+- device roaming status
 - at&t
-- check device connectivity and network connection type
-- quality on demand session management
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- list active quality on demand sessions for the application
+- list qod sessions
+- IoT Engineer
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- network apis
+- Identity Developer
+- Security Developer
 - 5g
 - device status
-- individual qod session
-- device roaming status
-- mobile or web developer building connectivity-aware applications
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- create qod session
-- check roaming
-- Security Developer
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- developer implementing passwordless or frictionless mobile authentication
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- device check connectivity
-- IoT Engineer
-- developer building fraud prevention and identity verification using network signals
-- telecommunications
-- qod terminate session
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- quality of service
-- check connectivity
-- check if device is roaming
-- mobile network-based authentication without otp
-- list qod sessions
-- network-based fraud prevention and authentication using sim swap and number verification
-- terminate qod session
+- edge computing
 - qod list sessions
-- get qod session
-- device connectivity status
-- camara
-- Identity Developer
-- connectivity
-- request enhanced qos for a device
-- check if an at&t subscriber device is roaming on a partner network and get location
-- 5g network quality monitoring and on-demand qos enhancement
-- terminate an active quality on demand session and restore normal network quality
+- qod terminate session
 - App Developer
+- terminate qod session
+- connectivity
+- list active qod sessions
+- individual qod session
+- check if device is roaming
+- camara
+- get qod session status
+- sim swap
+- device connectivity status
+- qod get session
+- quality of service
+- telecommunications
+- mobile network-based authentication without otp
+- create qod session
 - network-based security signals for fraud detection and identity verification
-- get the current status of a quality on demand session
+- check if an at&t subscriber device is roaming on a partner network and get location
+- request enhanced qos for a device
+- mobile or web developer building connectivity-aware applications
+- device check connectivity
+- 5g network quality monitoring and on-demand qos enhancement
+- delete qod session
 - network performance
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
 - qod create session
+- quality on demand session management
+- get qod session
+- network-based fraud prevention and authentication using sim swap and number verification
+- check roaming
+- developer implementing passwordless or frictionless mobile authentication
+- terminate an active quality on demand session and restore normal network quality
+- check device connectivity and network connection type
+- device check roaming
 slug: network-performance
 source_filename: network-performance.yaml
 source_heading: Capability Spec

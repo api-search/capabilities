@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- agricultural consultants providing plant health recommendations
-- disease and pest identification from plant images
-- ai-powered plant disease diagnosis and crop advisory
-- plant disease
-- plant health diagnosis.
-- supported crop types for diagnosis
-- diagnose plant disease
-- field specialists diagnosing plant health issues in crops
-- account credit management.
-- list all supported crop types.
-- list crops
-- check remaining api credits for plant diagnosis requests.
-- list all crop types supported by agrio's ai diagnosis service.
-- developers building crop advisory and farm management applications
-- ai
-- check credit balance
-- Precision Agriculture Developer
-- diagnose plant diseases and pests from an uploaded image.
-- list supported crops
-- crop protection
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- agrio
-- agriculture
 - crop advisory
-- pest detection
-- get credit
-- ai diagnosis
-- get current credit balance.
-- diagnose
+- plant health diagnosis.
+- list crops
+- agricultural consultants providing plant health recommendations
 - Crop Advisor
-- credit balance and api usage monitoring
-- Agronomist
+- disease and pest identification from plant images
+- crop protection
+- plant disease
+- ai
+- agrio
+- developers building crop advisory and farm management applications
+- supported crop types for diagnosis
+- ai-powered plant disease diagnosis and crop advisory
+- account credit management.
+- ai diagnosis
+- check credit balance
+- check remaining api credits for plant diagnosis requests.
 - supported crop catalog.
+- list all crop types supported by agrio's ai diagnosis service.
+- agriculture
+- diagnose plant disease
+- diagnose
+- credit balance and api usage monitoring
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
+- get current credit balance.
+- diagnose plant diseases and pests from an uploaded image.
+- list all supported crop types.
+- Agronomist
+- Precision Agriculture Developer
+- get credit
+- field specialists diagnosing plant health issues in crops
+- list supported crops
+- pest detection
 slug: crop-protection
 source_filename: crop-protection.yaml
 source_heading: Capability Spec

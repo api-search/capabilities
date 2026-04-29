@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- key management
+- delete key
+- secrets management
+- get certificate
+- certificates
+- get a certificate.
+- security
 - list secrets
+- decrypt
+- get a secret value.
 - encrypt
 - cryptography
-- delete certificate
-- get secret
-- cloud security
 - get a secret.
-- get key details.
-- azure
-- encrypt data using a key.
-- delete a secret.
-- create a new certificate.
-- list certificates
-- set secret
-- create certificate
-- secrets management
-- list secrets.
-- list keys.
-- list secrets in the vault.
-- get key
-- list certificates.
-- set a secret value.
-- get a certificate.
-- get certificate
-- create key
-- delete key
-- individual secret management.
-- list certificates in the vault.
-- verify
-- decrypt
-- list keys
-- verify a signature.
-- security
-- sign
-- secret management.
-- set a secret.
-- certificate management.
-- individual key management.
-- get a key.
-- key management.
-- get a secret value.
-- key vault
-- decrypt data using a key.
-- sign a digest using a key.
-- list cryptographic keys in the vault.
 - create a key.
-- delete a key.
-- create a new cryptographic key.
-- certificates
 - delete a certificate.
+- decrypt data using a key.
+- cloud security
+- encrypt data using a key.
+- key vault
+- get key details.
 - delete secret
+- sign
+- list certificates.
+- verify a signature.
+- sign a digest using a key.
+- list certificates in the vault.
+- individual key management.
+- list certificates
+- verify
+- list keys.
+- delete certificate
+- create key
+- set secret
+- get secret
+- key management
+- list cryptographic keys in the vault.
+- key management.
+- set a secret.
+- secret management.
+- azure
+- delete a secret.
+- list secrets.
+- list keys
+- delete a key.
+- individual secret management.
+- get key
+- certificate management.
+- create certificate
+- get a key.
+- create a new cryptographic key.
+- set a secret value.
+- create a new certificate.
+- list secrets in the vault.
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

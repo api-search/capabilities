@@ -11,13 +11,13 @@ provider_name: Amazon Cloud WAN
 provider_slug: amazon-cloud-wan
 search_terms:
 - cloud wan
-- amazon cloud wan
-- amazon web services
+- sd-wan
 - networking
 - wide area network
-- Network Engineer
+- amazon cloud wan
 - aws
-- sd-wan
+- Network Engineer
+- amazon web services
 slug: wan-management
 source_filename: wan-management.yaml
 source_heading: Capability Spec

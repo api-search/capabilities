@@ -37,50 +37,50 @@ personas: []
 provider_name: Amadeus Reservations
 provider_slug: amadeus-reservations
 search_terms:
-- ground transfer reservation operations.
-- get flight booking
-- create a confirmed hotel booking.
-- cancel flight booking
-- create flight booking
-- hotels
-- flight reservation operations.
-- create transfer booking
-- cancel transfer booking
-- create a confirmed flight booking.
-- Travel Booking Agent
-- airline reservation creation and management.
-- hotel reservation creation.
 - retrieve details of an existing flight reservation by order id.
-- create flight order
-- developer building ai-powered travel assistants that create bookings conversationally.
-- Travel Chatbot Developer
+- reservations
+- cancel flight order
+- travel
+- individual flight order management.
 - hotel reservation operations.
+- create a confirmed hotel booking.
+- airline reservation creation and management.
+- create flight order
+- create transfer order
+- flight reservation operations.
+- cancel transfer booking
+- cancel flight booking
+- developer building ai-powered travel assistants that create bookings conversationally.
+- get flight order
+- create transfer booking
+- retrieve a flight booking.
+- create flight booking
+- ground transfer reservation operations.
+- create a confirmed airline reservation from a priced flight offer.
+- Travel Chatbot Developer
+- cancel a transfer booking.
+- create hotel order
+- cancel an existing confirmed flight reservation.
+- cancel transfer order
+- create a confirmed transfer booking.
+- cancel an existing confirmed ground transfer reservation.
+- hotel reservation creation.
+- booking
+- amadeus
+- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
+- get flight booking
+- ground transportation booking and management.
 - create hotel booking
 - end-to-end travel booking combining flights, hotels, and transfers.
-- retrieve a flight booking.
-- cancel an existing confirmed flight reservation.
-- amadeus
-- booking
-- cancel transfer order
-- create hotel order
-- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
-- reservations
-- human or automated agent creating and managing travel reservations on behalf of travelers.
-- cancel a flight booking.
-- create transfer order
-- cancel an existing confirmed ground transfer reservation.
-- cancel flight order
-- cancel a transfer booking.
 - flights
-- travel
 - transfers
-- individual flight order management.
-- get flight order
+- cancel a flight booking.
 - create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
 - individual transfer management.
-- create a confirmed transfer booking.
-- ground transportation booking and management.
-- create a confirmed airline reservation from a priced flight offer.
+- Travel Booking Agent
+- human or automated agent creating and managing travel reservations on behalf of travelers.
+- create a confirmed flight booking.
+- hotels
 slug: travel-booking
 source_filename: travel-booking.yaml
 source_heading: Capability Spec

@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- machine learning
-- get recommendations
-- create a new profiling group
-- list profile times
-- profiling
-- get profile
+- list findings reports for a profiling group
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
 - list profiling groups in the account
+- submit profiling agent data
+- amazon
+- aws
+- developer persona.
+- get profile
+- get aggregated profile data
+- DevOps Engineer
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- Platform Engineer
+- Developer
+- create a new profiling group
+- create profiling group
+- devops
+- devops engineer persona.
+- list findings reports
+- machine learning
 - get optimization recommendations for a profiling group
 - list profile collection times for a profiling group
-- list findings reports for a profiling group
-- developer persona.
-- Platform Engineer
-- devops
+- list profile times
 - post agent profile
-- Developer
-- platform engineer persona.
-- submit profiling agent data
-- create profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- aws
-- application performance
-- amazon
-- DevOps Engineer
-- list findings reports
-- describe profiling group
-- get details about a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- devops engineer persona.
-- get aggregated profile data
 - list profiling groups
+- get details about a profiling group
+- describe profiling group
+- platform engineer persona.
+- application performance
+- profiling
+- get recommendations
 slug: amazon-codeguru-profiler-application-performance
 source_filename: amazon-codeguru-profiler-application-performance.yaml
 source_heading: Capability Spec

@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- delete beta group
-- list beta testers
-- get beta tester details.
-- update build information.
-- update app metadata.
-- mobile
-- list all apps.
-- developer
-- beta tester management.
-- update a beta group.
-- beta group management.
-- add a beta tester.
-- list beta groups
-- delete a beta group.
-- list beta groups.
+- add a new beta tester.
 - create a beta group.
-- get build details.
-- create tester
-- read beta tester
-- app management.
-- delete beta tester
+- get beta tester details.
+- list all builds.
+- update app metadata.
 - list groups
+- developer
+- list beta testers.
+- list testers
+- list all apps in app store connect.
+- create group
 - list apps
 - create beta tester
-- remove a beta tester.
-- read app
-- add a new beta tester.
-- modify app
-- modify build
-- read build
-- build management.
-- list builds
-- create beta group
-- modify beta group
-- app management
-- read beta group
-- technology
-- macos
-- list testers
-- create a new beta group.
-- list all builds.
-- list all apps in app store connect.
-- get details of a specific app.
 - list all beta groups.
-- get beta group details.
-- app store
+- modify app
+- create beta group
+- update build information.
 - testflight
-- list beta testers.
-- apple
-- list all beta testers.
+- read app
+- beta group management.
+- delete beta group
+- app store
+- read build
 - ios
-- create group
+- mobile
+- update a beta group.
+- list all beta testers.
+- app management.
+- remove a beta tester.
+- list beta groups
+- list all apps.
+- get beta group details.
+- create tester
+- modify build
+- list beta groups.
+- macos
+- delete a beta group.
+- list builds
+- add a beta tester.
+- create a new beta group.
+- get build details.
+- read beta group
+- delete beta tester
+- list beta testers
+- get details of a specific app.
+- apple
+- app management
+- read beta tester
+- build management.
+- technology
+- beta tester management.
+- modify beta group
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

@@ -22,18 +22,18 @@ provider_name: Amazon App Mesh
 provider_slug: amazon-app-mesh
 search_terms:
 - engineer managing microservices networking infrastructure.
-- manage amazon app mesh api resources.
 - service mesh
+- networking
 - engineer managing service deployments and traffic routing.
+- list resources
+- list amazon app mesh api resources.
 - amazon
 - aws
-- list resources
-- DevOps Engineer
 - Platform Engineer
-- microservices
-- networking
 - list resources.
-- list amazon app mesh api resources.
+- DevOps Engineer
+- microservices
+- manage amazon app mesh api resources.
 slug: app-mesh-management
 source_filename: app-mesh-management.yaml
 source_heading: Capability Spec

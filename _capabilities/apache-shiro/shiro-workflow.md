@@ -9,20 +9,20 @@ personas: []
 provider_name: Apache Shiro
 provider_slug: apache-shiro
 search_terms:
-- authorization
-- administrator managing users, roles, and permissions
-- password hashing and data encryption
-- identity verification and credential management
-- access control and permission enforcement
 - open source
-- cryptography
-- java
-- developer integrating shiro security into java applications
 - end-to-end user login, session, and logout workflow
-- security
-- apache
 - permission and role checking for protected resources
+- java
+- administrator managing users, roles, and permissions
+- apache
+- security
+- identity verification and credential management
 - authentication
+- cryptography
+- developer integrating shiro security into java applications
+- access control and permission enforcement
+- authorization
+- password hashing and data encryption
 slug: shiro-workflow
 source_filename: shiro-workflow.yaml
 source_heading: Capability Spec

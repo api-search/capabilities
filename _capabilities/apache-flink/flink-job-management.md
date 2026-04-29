@@ -27,43 +27,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- Platform Operator
-- stateful computing
-- operators managing the flink cluster and ensuring job reliability
-- job performance metrics
-- real-time analytics
-- engineers submitting and monitoring flink streaming and batch jobs
-- Data Engineer
-- shutdown cluster
-- get metrics for a flink job
-- batch processing
-- list taskmanagers
-- get flink job
-- list jobs
-- apache flink
-- list all taskmanagers in the flink cluster
 - list all flink streaming and batch jobs
+- list all flink jobs
+- apache
+- flink job management
+- taskmanager management
+- get metrics for a flink job
+- monitoring
+- get job metrics
+- job performance metrics
 - job submission, tracking, and lifecycle management
 - open source
-- get detailed status and information for a specific flink job
-- manage and monitor flink streaming and batch jobs
-- get performance metrics for a flink job
-- monitoring
-- shut down the flink cluster
-- flink job management
-- list flink jobs
-- apache
 - stream processing
-- get job metrics
-- list all flink jobs
+- shut down the flink cluster
+- Data Engineer
+- get performance metrics for a flink job
+- manage and monitor flink streaming and batch jobs
+- get flink job
+- stateful computing
+- list all taskmanagers in the flink cluster
+- big data
 - list all taskmanagers
 - get job
-- job management
+- list flink jobs
+- shutdown cluster
+- operators managing the flink cluster and ensuring job reliability
 - get details of a specific job
+- Platform Operator
 - metrics, checkpoints, and cluster health monitoring
-- big data
+- apache flink
+- list jobs
+- list taskmanagers
 - data engineering
-- taskmanager management
+- real-time analytics
+- get detailed status and information for a specific flink job
+- job management
+- engineers submitting and monitoring flink streaming and batch jobs
+- batch processing
 slug: flink-job-management
 source_filename: flink-job-management.yaml
 source_heading: Capability Spec

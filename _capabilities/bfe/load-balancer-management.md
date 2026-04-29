@@ -23,35 +23,35 @@ personas: []
 provider_name: BFE
 provider_slug: bfe
 search_terms:
-- get metric categories
-- hot reload bfe configuration
-- get bfe metrics
-- retrieve available metric categories
-- bfe
-- get categories
-- cncf
-- dynamic configuration management and reload
-- baidu
-- retrieve bfe runtime monitoring metrics
-- load balancer
-- get metrics
-- engineer managing bfe load balancer deployments and configuration
-- get bfe runtime metrics and performance counters
-- open source
-- reload bfe config
-- layer 7 load balancing and traffic routing
-- reload config
-- monitoring
-- traffic management
-- get available monitoring metric categories
-- trigger a hot reload of bfe routing and load balancing configuration without restart
-- metrics, logging, and distributed tracing
-- configuration
-- trigger hot reload of bfe routing rules and configuration
-- retrieve bfe load balancer runtime metrics and performance counters for monitoring
 - networking
-- management
+- get bfe metrics
+- monitoring
+- retrieve bfe load balancer runtime metrics and performance counters for monitoring
+- reload config
+- get metric categories
+- cncf
+- trigger a hot reload of bfe routing and load balancing configuration without restart
+- hot reload bfe configuration
+- metrics, logging, and distributed tracing
+- open source
+- configuration
+- layer 7 load balancing and traffic routing
+- retrieve available metric categories
+- load balancer
+- bfe
 - list available bfe metric categories for targeted monitoring
+- get categories
+- reload bfe config
+- baidu
+- get metrics
+- management
+- get available monitoring metric categories
+- get bfe runtime metrics and performance counters
+- retrieve bfe runtime monitoring metrics
+- dynamic configuration management and reload
+- traffic management
+- trigger hot reload of bfe routing rules and configuration
+- engineer managing bfe load balancer deployments and configuration
 slug: load-balancer-management
 source_filename: load-balancer-management.yaml
 source_heading: Capability Spec

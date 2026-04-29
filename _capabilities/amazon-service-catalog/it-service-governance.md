@@ -38,37 +38,37 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- provision an approved product
-- describe provisioned product
-- approved product catalog
-- list portfolios
+- it governance
+- list all it service portfolios
+- add a new product to the it service catalog
+- list all it service catalog portfolios
+- compliance
 - add a product to the catalog
 - create a new it service catalog portfolio
-- amazon service catalog
-- terminate provisioned product
-- compliance
-- service catalog
-- create an it service portfolio
-- create portfolio
-- search products
-- list all it service portfolios
-- cloud governance
-- aws
-- self-service provision an approved it product
-- list all it service catalog portfolios
-- it governance
-- self-service product provisioning
 - get details about an it service portfolio
+- self-service provision an approved it product
+- create portfolio
 - terminate and decommission a provisioned product
-- describe portfolio
-- it service portfolio management
+- aws
 - create product
-- add a new product to the it service catalog
 - provision product
-- check the status of a provisioned product
+- approved product catalog
 - browse approved products
-- browse and search approved it products
+- list portfolios
+- check the status of a provisioned product
+- service catalog
 - self-service
+- amazon service catalog
+- describe provisioned product
+- terminate provisioned product
+- create an it service portfolio
+- it service portfolio management
+- describe portfolio
+- cloud governance
+- self-service product provisioning
+- provision an approved product
+- search products
+- browse and search approved it products
 slug: it-service-governance
 source_filename: it-service-governance.yaml
 source_heading: Capability Spec

@@ -25,33 +25,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
+- conducts academic or policy research on police use of force patterns
 - journalism
-- Journalist
-- brutality
-- uses data for advocacy, public education, and political campaigns
 - get incidents v2
-- Researcher
-- civil rights
-- all incidents in csv format for data analysis.
-- export all incidents as csv for spreadsheet and data analysis.
 - retrieve all police brutality incidents in the v2 data format with improved schema consistency.
-- uses incident documentation for prosecution or civil litigation
-- list incidents
-- research workflow for journalists, prosecutors, and activists
+- export incidents csv
+- Journalist
 - investigates and reports on documented police brutality incidents
 - documented evidence of police brutality during 2020 protests
-- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
-- export incidents csv
-- get all incidents
-- public data
-- Activist
-- all documented police brutality incidents from 2020 protests.
-- Legal Professional
-- policing
 - list all documented police brutality incidents.
+- list incidents
+- brutality
+- all documented police brutality incidents from 2020 protests.
+- export all incidents as csv for spreadsheet and data analysis.
+- retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
+- research workflow for journalists, prosecutors, and activists
+- policing
+- uses data for advocacy, public education, and political campaigns
+- Activist
+- civil rights
+- Researcher
+- get all incidents
+- Legal Professional
+- all incidents in csv format for data analysis.
 - export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
+- uses incident documentation for prosecution or civil litigation
 - research
-- conducts academic or policy research on police use of force patterns
+- public data
 slug: 2020-police-brutality-incident-research
 source_filename: 2020-police-brutality-incident-research.yaml
 source_heading: Capability Spec

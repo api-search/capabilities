@@ -72,58 +72,58 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- user management
-- get details about a specific microsoft entra user by object id or userprincipalname
-- application registrations
-- list direct members of a microsoft entra group
-- get user
-- IT Administrator
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- registered and joined device management for compliant device access policies
-- periodic access reviews and identity risk remediation
-- signed-in user profile
 - get details about a specific microsoft entra application registration
+- registered and joined device management for compliant device access policies
+- user management
+- create user
+- list groups
+- signed-in user profile
+- conditional access policy automation for zero-trust enforcement
+- service principals
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- create group
+- list microsoft entra id groups — security groups and microsoft 365 groups
+- user lifecycle management
+- identity management
+- Security Analyst
+- microsoft entra
+- security professional monitoring identity risks, conditional access policies, and audit logs
+- list applications
+- individual group operations
+- application registration and service principal lifecycle for zero-trust app governance
+- periodic access reviews and identity risk remediation
+- Identity Engineer
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- individual user operations
+- application registrations
+- IT Administrator
+- get details about a specific microsoft entra user by object id or userprincipalname
+- list direct members of a microsoft entra group
+- create a new user account in microsoft entra id with required profile and password settings
+- group member management
+- directory services
+- zero trust
+- list users
+- authentication
+- unified user, group, and application management for microsoft entra id
+- enterprise it admin managing user accounts, groups, device policies, and access management
 - authorization
 - list group members
-- application registration and service principal lifecycle for zero-trust app governance
-- individual group operations
-- list service principals in the microsoft entra tenant
-- list groups
-- service principals
-- get me
-- enterprise it admin managing user accounts, groups, device policies, and access management
-- list service principals
-- authentication
-- Security Analyst
-- user lifecycle management
-- directory services
-- list users
-- get group
-- create user
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- get details about a specific microsoft entra group including type and membership settings
-- security professional monitoring identity risks, conditional access policies, and audit logs
-- zero trust
-- Identity Engineer
-- get the signed-in user's microsoft entra profile
-- individual user operations
 - group-based access control and app role assignment for resource permissions
-- conditional access policy automation for zero-trust enforcement
+- list service principals
+- get the signed-in user's microsoft entra profile
+- get user
 - list application registrations in the microsoft entra tenant
-- unified user, group, and application management for microsoft entra id
-- microsoft entra
-- list microsoft entra id groups — security groups and microsoft 365 groups
+- get user by id or upn
+- get details about a specific microsoft entra group including type and membership settings
 - get signed-in user profile
 - create, update, and deactivate user accounts throughout the employee/guest lifecycle
-- identity management
-- create a new user account in microsoft entra id with required profile and password settings
+- get group
+- list service principals in the microsoft entra tenant
 - active directory
-- group member management
-- get user by id or upn
-- list applications
-- get application
 - group management
-- create group
+- get me
+- get application
 slug: identity-management-operations
 source_filename: identity-management-operations.yaml
 source_heading: Capability Spec

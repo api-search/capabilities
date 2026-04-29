@@ -14,34 +14,34 @@ personas: []
 provider_name: Amazon MediaConvert
 provider_slug: amazon-mediaconvert
 search_terms:
-- listpresets
-- Broadcast Engineer
-- media
-- createjobtemplate
-- amazon mediaconvert media processing workflow
-- manage media processing jobs
-- list jobs
-- workflow
-- developer building media processing applications
 - Media Developer
-- aws
-- cancel job
-- create job template
-- list job templates
-- associatecertificate
-- aws media processing and delivery
+- associate certificate
 - getjob
 - broadcasting
-- associate certificate
-- listjobs
+- create job template
 - create job
-- engineer managing broadcast media workflows
+- cancel job
+- workflow
+- aws
+- media
 - listjobtemplates
-- createjob
-- list presets
-- get job
-- media processing
 - canceljob
+- list presets
+- Broadcast Engineer
+- developer building media processing applications
+- listjobs
+- listpresets
+- get job
+- list job templates
+- engineer managing broadcast media workflows
+- createjobtemplate
+- list jobs
+- manage media processing jobs
+- amazon mediaconvert media processing workflow
+- createjob
+- aws media processing and delivery
+- media processing
+- associatecertificate
 slug: amazon-mediaconvert-media-workflow
 source_filename: amazon-mediaconvert-media-workflow.yaml
 source_heading: Capability Spec

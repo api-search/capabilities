@@ -47,67 +47,67 @@ personas: []
 provider_name: Temenos Transact
 provider_slug: temenos-transact
 search_terms:
-- customer management
-- list loans
-- get account transactions
-- fund transfers
-- create fund transfer
-- validate an iban and resolve bank details
-- validate iban
-- list available currencies
-- list currencies
-- fintech
-- get customer accounts
-- create payment order
-- create customer
+- list payment orders
+- list debit and credit cards
+- payments
+- list accounts
 - get fund transfer status and details
-- get account balance information
-- list customers
-- temenos
-- list deposit arrangements
+- account details
+- create customer
+- get account details by id
+- list customer accounts
+- cancel a pending payment order
+- core banking
+- fintech
+- initiate a fund transfer between accounts
+- customer management
+- digital banking
+- submit a payment order
+- validate an iban and resolve bank details
+- get transaction history
+- banking
+- list loans
+- initiate a fund transfer
+- list customer accounts with optional filters
 - create a new customer
+- get account balance information
+- temenos
+- list deposits
+- list customers
+- validate iban
 - create beneficiary
 - transaction history
-- list beneficiaries
-- get account balances
-- get transaction history
-- create a payment order
-- initiate a fund transfer
-- financial services
-- list customer accounts
-- account details
-- payment operations
-- banking
-- list accounts for a customer
-- initiate a fund transfer between accounts
-- list accounts
-- get customer details
-- list debit and credit cards
-- account balances
-- get fund transfer
-- get transaction history for an account
-- register a new payment beneficiary
-- cancel payment order
-- list loan arrangements
-- list cards
-- account management
-- get account details
-- digital banking
-- enterprise
 - get account
-- cancel a pending payment order
-- list deposits
-- list customer accounts with optional filters
-- get account details by id
-- list payment beneficiaries
-- list banking products from the catalog
-- create a customer
-- core banking
-- list products
-- list payment orders
-- submit a payment order
 - get customer
-- payments
+- list deposit arrangements
+- get transaction history for an account
+- cancel payment order
+- list beneficiaries
+- list cards
+- get customer details
+- get account balances
+- create fund transfer
+- list products
+- financial services
+- get account transactions
+- list currencies
+- list payment beneficiaries
+- list available currencies
+- get account details
+- payment operations
+- list loan arrangements
+- register a new payment beneficiary
+- account balances
+- list banking products from the catalog
+- enterprise
+- list accounts for a customer
+- get customer accounts
+- fund transfers
+- get fund transfer
+- create a payment order
+- account management
+- create payment order
+- create a customer
 slug: digital-banking
 source_filename: digital-banking.yaml
 source_heading: Capability Spec

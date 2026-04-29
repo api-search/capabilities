@@ -11,13 +11,13 @@ provider_name: Amazon CloudFront
 provider_slug: amazon-cloudfront
 search_terms:
 - content delivery
-- amazon cloudfront
-- cdn
 - edge
-- Platform Engineer
-- amazon web services
-- cloudfront
+- amazon cloudfront
 - aws
+- Platform Engineer
+- cdn
+- cloudfront
+- amazon web services
 slug: content-delivery
 source_filename: content-delivery.yaml
 source_heading: Capability Spec

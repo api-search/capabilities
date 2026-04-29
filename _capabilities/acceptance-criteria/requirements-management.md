@@ -12,10 +12,10 @@ search_terms:
 - user stories
 - requirements
 - behavior driven development
-- agile
-- quality assurance
 - testing
+- quality assurance
 - gherkin
+- agile
 slug: requirements-management
 source_filename: requirements-management.yaml
 source_heading: Capability Spec

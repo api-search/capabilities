@@ -30,43 +30,43 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- issuing
-- manage balance accounts.
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- fintech
-- get balance account
-- issue card
-- retrieve details of an account holder.
-- create balance account
-- chargeback and dispute handling.
-- issue a virtual or physical payment card for an account holder.
-- create payment instrument
-- online and in-person payment acceptance.
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- create account holder
-- get balance and details of a balance account.
-- merchant account and balance platform configuration.
-- financial services
-- builds marketplace and fintech platforms using adyen balance platform.
-- marketplaces
-- manage account holders on the balance platform.
-- get account holder
-- create a payment instrument (card).
-- manages merchant accounts, terminals, and dispute responses.
-- create a balance account.
-- manage payment instruments including virtual and physical cards.
 - get balance account details.
-- create a new account holder on the adyen balance platform.
-- transfers
-- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
-- adyen
+- payments
+- get balance and details of a balance account.
 - marketplace and platform fund management.
+- retrieve details of an account holder.
+- fintech
+- issue card
+- builds marketplace and fintech platforms using adyen balance platform.
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- manage account holders on the balance platform.
+- get account holder details.
+- create payment instrument
+- issue a virtual or physical payment card for an account holder.
+- create account holder
+- issuing
+- chargeback and dispute handling.
+- get balance account
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- create balance account
+- manage payment instruments including virtual and physical cards.
+- create a payment instrument (card).
 - create a balance account for an account holder.
 - balance platform
+- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- merchant account and balance platform configuration.
 - builds payment integrations using adyen apis and sdks.
+- create a new account holder on the adyen balance platform.
+- financial services
+- create a balance account.
+- manages merchant accounts, terminals, and dispute responses.
+- marketplaces
+- online and in-person payment acceptance.
+- transfers
+- get account holder
+- manage balance accounts.
+- adyen
 - create an account holder.
-- get account holder details.
-- payments
 slug: balance-platform
 source_filename: balance-platform.yaml
 source_heading: Capability Spec

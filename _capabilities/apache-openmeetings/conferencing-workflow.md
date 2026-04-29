@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- apache openmeetings
+- calendar and scheduling
 - user management
-- manages conference rooms, invites participants, and handles recordings
-- whiteboard
-- unified workflow for managing conferencing sessions
-- list all user groups
-- session recordings
-- list recordings
-- conferencing
+- list all public conference rooms
+- apache
+- list groups
 - list all registered users
+- collaboration
 - close a conference room
+- generate a secure room access hash
+- list session recordings
+- get upcoming calendar meetings
+- open source
+- create a new conference room
+- list all user groups
+- unified workflow for managing conferencing sessions
+- manages users, groups, and system health
+- web conferencing
+- conference room management
+- get recordings by type
+- conferencing
+- create room
+- check health
 - Meeting Organizer
-- authenticate a user to openmeetings
-- get upcoming meetings
+- get room hash
+- close room
+- apache openmeetings
+- list public rooms
+- manages conference rooms, invites participants, and handles recordings
+- list users
 - check system health status
 - System Administrator
-- list groups
-- check health
-- open source
-- list rooms
-- list public rooms
-- get room hash
 - list upcoming
-- login
-- get recordings by type
-- list users
-- create room
-- generate a secure room access hash
-- create a new room
-- apache
-- manages users, groups, and system health
-- conference room management
-- list all public conference rooms
-- list session recordings
-- web conferencing
-- calendar and scheduling
-- get upcoming calendar meetings
-- close room
+- list recordings
 - video conferencing
-- create a new conference room
-- collaboration
+- session recordings
+- whiteboard
+- authenticate a user to openmeetings
+- get upcoming meetings
+- create a new room
+- list rooms
+- login
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

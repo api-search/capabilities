@@ -26,33 +26,33 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get etf profiles
-- get benchmark data.
-- get fund data.
-- portfolio analytics
-- get fund data
-- get etf data
-- get etf data.
-- get estimates
-- etf data.
-- get etf profiles and prices.
 - get benchmarks
-- get etf reference data.
-- get consensus estimates.
-- fund data.
-- financial data
 - funds
+- get etf reference data.
+- get estimates
+- get etf data
+- benchmarks
+- get etfs
+- get etf data.
+- get fund data.
+- get funds
 - factset
-- etf
 - financial
 - get mutual fund data.
+- get consensus estimates.
 - market data
-- get funds
-- benchmarks
-- benchmark data.
+- get benchmark data.
+- etf data.
+- get etf profiles and prices.
+- get etf profiles
+- get fund data
+- etf
+- portfolio analytics
+- fund data.
+- financial data
 - research
-- get etfs
 - investment analytics
+- benchmark data.
 slug: etf-fund-analysis
 source_filename: etf-fund-analysis.yaml
 source_heading: Capability Spec

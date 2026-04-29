@@ -27,37 +27,37 @@ personas: []
 provider_name: Adobe Premiere Pro
 provider_slug: adobe-premiere
 search_terms:
-- Video Producer
-- create library
-- video editing
-- media
-- list libraries
-- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
-- list all creative cloud libraries available for use in adobe premiere pro projects.
-- create a new creative cloud library.
-- premiere pro
-- video production
+- creative cloud libraries for shared production assets.
 - automation
+- premiere pro plugin and extension ecosystem.
+- video editing
+- list libraries
+- adobe premiere
+- list all creative cloud libraries.
+- asset management
+- add library element
 - video editor and producer using adobe premiere pro for content creation.
 - manager responsible for organizing shared brand assets in creative cloud.
-- create a new creative cloud library for organizing video production brand assets.
-- add library element
-- adobe premiere
-- asset management
-- Media Asset Manager
-- list elements in a library.
-- creative cloud libraries for shared production assets.
-- add a new design element to a creative cloud library for sharing with the premiere pro team.
-- list library elements
-- list all creative cloud libraries.
-- manage creative cloud libraries and assets for premiere pro video production.
-- elements within a creative cloud library.
-- list elements
 - add an element to a library.
-- creative cloud
-- adobe
+- add a new design element to a creative cloud library for sharing with the premiere pro team.
+- manage creative cloud libraries and assets for premiere pro video production.
+- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
 - add element
-- premiere pro plugin and extension ecosystem.
+- video production
+- media
+- create a new creative cloud library for organizing video production brand assets.
+- list library elements
+- Media Asset Manager
+- list elements
+- list all creative cloud libraries available for use in adobe premiere pro projects.
+- create library
+- create a new creative cloud library.
+- premiere pro
+- Video Producer
+- elements within a creative cloud library.
+- creative cloud
+- list elements in a library.
+- adobe
 slug: creative-asset-management
 source_filename: creative-asset-management.yaml
 source_heading: Capability Spec

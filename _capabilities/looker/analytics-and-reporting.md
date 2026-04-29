@@ -70,63 +70,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- list all users.
-- delete user
-- get user
-- create a user.
-- data analytics
-- get query
-- list looks
-- data visualization
-- create a dashboard.
-- query management.
-- get look
-- delete a user.
-- get user details.
-- search for looks by title.
-- list all saved looks.
-- individual look management.
-- update dashboard
+- update a look.
 - run look
-- delete look
-- run a saved query.
-- get look details.
-- search dashboards
 - update a user.
-- create a new dashboard.
-- list users
 - create user
+- list all saved looks.
+- create a new user.
+- delete a user.
+- delete look
+- delete a dashboard.
+- create a new dashboard.
+- list dashboards
+- run a saved query.
+- get look
+- get dashboard
+- update a dashboard.
+- data visualization
+- search looks
+- individual dashboard management.
+- bi platform
+- list all users.
+- data analytics
+- get user details.
+- get query
+- create dashboard
+- create a dashboard.
+- list looks
+- delete a look.
+- list all looks.
+- looker
+- query management.
+- search dashboards
+- dashboards
+- list users
+- analytics
+- list all dashboards.
+- user management.
+- individual query operations.
 - update look
 - create a query.
-- get dashboard details.
-- delete dashboard
-- search looks
-- get query details.
-- list all dashboards.
-- individual dashboard management.
-- update user
-- user management.
-- create a new user.
-- business intelligence
-- look management.
-- run query
-- individual query operations.
-- bi platform
-- analytics
-- looker
-- delete a dashboard.
-- create query
-- run a look and return results.
+- individual look management.
 - search for dashboards.
-- list dashboards
-- create dashboard
-- list all looks.
-- get dashboard
-- update a look.
-- dashboards
-- update a dashboard.
+- run a look and return results.
+- create query
+- business intelligence
+- create a user.
+- update dashboard
+- get query details.
+- get user
+- update user
+- delete user
+- get dashboard details.
+- get look details.
 - dashboard management.
-- delete a look.
+- look management.
+- delete dashboard
+- run query
+- search for looks by title.
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

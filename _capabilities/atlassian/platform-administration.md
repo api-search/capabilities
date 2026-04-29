@@ -36,38 +36,38 @@ provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
 - user management
-- code
-- list groups in an organization
-- platform
-- list events
-- identity
-- list policies
-- list organization policies
-- list organization users
-- list all atlassian organizations
-- productivity
 - list groups
-- list organization domains
 - list domains
-- administration
-- software development
-- list users
+- collaboration
+- list events
 - organization management
+- list organization domains
+- atlassian
+- list organization policies
+- list groups in an organization
+- list organization audit events
+- identity
+- list atlassian organizations
+- list organizations
+- get organization details
+- administration
+- domain management
+- policy management
+- list all atlassian organizations
+- list users
+- list audit events
+- productivity
+- platform
+- list policies
+- list organization users
+- code
+- software development
+- list organization groups
 - audit events
 - get organization
 - list domains in an organization
-- list atlassian organizations
-- list users in an organization
-- policy management
-- list organizations
-- list organization groups
-- list organization audit events
-- list audit events
-- domain management
-- collaboration
-- get organization details
-- atlassian
 - group management
+- list users in an organization
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

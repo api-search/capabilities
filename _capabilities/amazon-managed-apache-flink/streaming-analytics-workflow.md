@@ -18,29 +18,29 @@ personas: []
 provider_name: Amazon Managed Service for Apache Flink
 provider_slug: amazon-managed-apache-flink
 search_terms:
-- start a flink application to begin real-time stream processing
-- Data Engineer
-- create a streaming application
-- apache flink
-- create streaming application
-- real-time processing
-- stop a running flink streaming application
-- get application details
-- stop streaming application
-- aws
-- get configuration and status details of a flink application
-- list all flink streaming analytics applications
-- amazon
-- Analytics Engineer
-- streaming analytics
-- list streaming applications
 - flink streaming applications
+- list streaming applications
+- Analytics Engineer
+- create a streaming application
+- stop a running flink streaming application
+- Data Engineer
+- list applications
+- get application details
+- get configuration and status details of a flink application
+- amazon
+- aws
+- start streaming application
 - list all streaming applications
+- big data
+- list all flink streaming analytics applications
+- stop streaming application
+- streaming analytics
+- apache flink
+- start a flink application to begin real-time stream processing
+- real-time processing
+- create streaming application
 - create a new apache flink streaming analytics application on aws
 - create application
-- big data
-- list applications
-- start streaming application
 slug: streaming-analytics-workflow
 source_filename: streaming-analytics-workflow.yaml
 source_heading: Capability Spec

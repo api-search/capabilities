@@ -35,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- creates a new message template. templates must be approved by meta before use.
-- get conversation analytics
-- delete message template
+- individual message template management.
 - conversation analytics and reporting.
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- message templates
-- deletes a message template. deleting by name removes all language variants.
+- get conversation analytics
 - create message template
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- message template management.
-- reporting
-- template performance analytics.
 - get template analytics
-- deletes a message template.
-- list message templates
-- whatsapp
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- creates a new message template.
-- updates an existing message template.
 - lists all message templates for a waba.
+- deletes a message template.
 - retrieves conversation analytics.
+- list message templates
+- creates a new message template.
+- whatsapp
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
 - analytics
+- marketing
+- template performance analytics.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- reporting
+- updates an existing message template.
+- message template management.
+- creates a new message template. templates must be approved by meta before use.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- deletes a message template. deleting by name removes all language variants.
+- retrieves template analytics.
+- message templates
 - update message template
 - updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- individual message template management.
-- marketing
-- retrieves template analytics.
+- delete message template
 slug: templates-and-analytics
 source_filename: templates-and-analytics.yaml
 source_heading: Capability Spec

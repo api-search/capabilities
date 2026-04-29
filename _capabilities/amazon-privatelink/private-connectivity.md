@@ -41,43 +41,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
+- list available vpc endpoint services for private connectivity
+- list vpc endpoints
 - create endpoint
-- accept pending vpc endpoint connection requests
-- endpoint connection management
-- Platform Engineer
+- networking
+- security
+- list pending and active connections to endpoint services
 - private vpc connectivity workflow
-- vpc endpoint service provider management
-- list vpc endpoint services
-- reject vpc endpoint connection requests
-- private connectivity
+- manages vpc endpoint services and private connectivity architecture
+- list endpoints
+- endpoint connection management
 - list connections
-- list endpoint services
-- Network Engineer
-- aws
-- list vpc endpoints in the account
+- create a vpc endpoint
 - amazon
-- accept connections
 - create a vpc endpoint service
 - create a vpc endpoint service backed by a load balancer
-- consumes endpoint services and manages vpc endpoints for internal services
-- list endpoint connections
-- security
+- aws
+- list endpoint services
+- accept connections
+- private connectivity
+- accept pending vpc endpoint connection requests
+- list vpc endpoints in the account
 - zero trust
-- manages vpc endpoint services and private connectivity architecture
-- list available vpc endpoint services for private connectivity
-- list pending and active connections to endpoint services
 - vpc endpoint consumer management
-- list endpoints
-- endpoint services
-- vpc
+- reject vpc endpoint connection requests
 - accept endpoint connections
-- create a vpc endpoint
-- list vpc endpoints
-- create a private vpc endpoint for an aws service or endpoint service
-- reject endpoint connections
-- create vpc endpoint
+- vpc
 - create endpoint service
-- networking
+- vpc endpoint service provider management
+- reject endpoint connections
+- consumes endpoint services and manages vpc endpoints for internal services
+- create vpc endpoint
+- list vpc endpoint services
+- create a private vpc endpoint for an aws service or endpoint service
+- endpoint services
+- Platform Engineer
+- Network Engineer
+- list endpoint connections
 slug: private-connectivity
 source_filename: private-connectivity.yaml
 source_heading: Capability Spec

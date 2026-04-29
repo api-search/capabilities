@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- linkedin
-- authentication, sharing, and verification for consumer apps.
-- posts jobs and manages candidates through ats integrations.
-- professional networking
-- retrieve learning activity reports.
-- uses sales navigator for lead generation and crm sync.
-- reporting
-- employee development tracking and content access.
-- message archiving and regulatory communications governance.
-- tracks employee learning activity and completions.
-- retrieve ad analytics by various pivots.
 - get ad analytics
-- integrates linkedin authentication and sharing into applications.
-- data portability and advertiser transparency for dma.
-- get learning activity reports
-- retrieve ad analytics by various pivots and dimensions.
-- recruiting
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- social media
-- sales intelligence, lead management, and crm integration.
-- careers
-- analytics
-- job posting, recruiting, and applicant tracking.
-- b2b advertising, audience targeting, and campaign analytics.
-- archives communications for regulatory compliance.
+- message archiving and regulatory communications governance.
+- retrieve learning activity reports.
 - learning
+- archives communications for regulatory compliance.
 - manages b2b ad campaigns and audience targeting on linkedin.
-- marketing
+- employee development tracking and content access.
+- social media
+- careers
+- professional networking
+- sales intelligence, lead management, and crm integration.
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- retrieve ad analytics by various pivots.
+- uses sales navigator for lead generation and crm sync.
 - business
+- tracks employee learning activity and completions.
+- job posting, recruiting, and applicant tracking.
+- analytics
+- integrates linkedin authentication and sharing into applications.
+- marketing
+- get learning activity reports
+- linkedin
+- reporting
+- authentication, sharing, and verification for consumer apps.
+- data portability and advertiser transparency for dma.
+- recruiting
+- b2b advertising, audience targeting, and campaign analytics.
+- retrieve ad analytics by various pivots and dimensions.
+- posts jobs and manages candidates through ats integrations.
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- subscriptions
-- unsubscribe
-- list youtube channels
-- create comment
-- list channels
-- update comment thread
-- update channel
-- media
-- youtube
-- community
-- set moderation status on comments
-- social
-- list comment threads
-- manage comment threads
-- set moderation status
-- manage channel subscriptions
-- streaming
-- update a comment thread
-- subscribe
-- delete comment
-- create a new comment thread
-- unsubscribe from a channel
-- comments
-- subscribe to a channel
-- subscribe to a youtube channel
-- list comments on a video or channel
-- list comments
-- google
-- update channel settings
-- subscribe to channel
-- create comment thread
-- unsubscribe from channel
-- list subscriptions
-- update an existing comment
-- delete a comment
-- update comment
-- videos
-- update a comment
-- list channel subscriptions
-- manage channel information
-- video
 - unsubscribe from a youtube channel
+- unsubscribe from a channel
+- list comments
+- update comment
+- update a comment
+- list youtube channels
+- delete a comment
+- update channel settings
+- list comment threads
+- delete comment
+- subscribe to channel
+- youtube
+- update channel
+- streaming
+- create comment
+- comments
+- update comment thread
 - manage individual comments
 - post a new comment
+- subscribe to a youtube channel
+- manage channel subscriptions
+- create comment thread
 - moderation
+- media
+- create a new comment thread
+- community
+- list comments on a video or channel
+- video
+- update a comment thread
+- manage channel information
+- videos
+- set moderation status on comments
+- manage comment threads
+- list subscriptions
+- set moderation status
+- list channels
+- update an existing comment
+- social
+- unsubscribe
+- subscriptions
+- subscribe
+- google
+- subscribe to a channel
+- list channel subscriptions
+- unsubscribe from channel
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

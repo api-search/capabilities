@@ -57,94 +57,94 @@ personas: []
 provider_name: Microsoft Word
 provider_slug: microsoft-word
 search_terms:
-- delete a document from onedrive/sharepoint.
-- addin insert table
-- list all paragraphs in the document.
-- addin insert html
-- convert to another format.
-- list versions
-- automation
-- search for word documents in onedrive/sharepoint.
-- list permissions.
-- graph list versions
-- add a paragraph to a document server-side.
-- individual document operations.
-- graph list files
 - get the body content of an open word document.
-- list content controls in the document.
-- convert document
-- version history operations.
-- list tables in the document.
-- delete a document.
-- graph create folder
-- graph share document
-- get content
-- document format conversion.
-- list version history of a document.
-- insert html content into the document.
-- graph delete document
-- builds automated document generation and processing pipelines.
-- insert a new table into the document.
-- insert text into the document body.
-- Content Manager
-- paragraph operations.
-- productivity
-- create a sharing link for a document.
-- document search.
-- openxml add paragraph
-- documents
-- microsoft 365
-- word processing
-- search documents
-- addin list content controls
-- addin list comments
-- openxml convert document
-- collaboration
-- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
-- create a new word document.
-- comment operations.
-- list comments.
-- table operations.
-- document lifecycle operations.
-- permission and sharing operations.
-- Document Author
-- list sharing permissions on a document.
-- creates and edits word documents, manages formatting and content.
-- addin get body
-- get metadata for a word document stored in onedrive/sharepoint.
-- microsoft word
-- search for documents.
-- list comments in the document.
-- list tables.
-- create document
-- get document metadata.
-- manages document templates, reviews, and publishing workflows.
-- list paragraphs
-- openxml create document
-- list paragraphs.
-- search for text within the document.
-- get document body content.
 - get document
-- graph search documents
-- Automation Engineer
-- document management
-- delete document
-- list version history.
-- document content operations.
-- create a new word document server-side using open xml.
+- list versions
 - office
-- list tables
 - create a new folder in onedrive.
+- builds automated document generation and processing pipelines.
+- list paragraphs.
+- openxml create document
+- delete a document from onedrive/sharepoint.
+- Automation Engineer
+- productivity
+- list tables.
+- addin search text
+- document search.
+- table operations.
+- list sharing permissions on a document.
+- addin insert text
+- individual document operations.
+- Content Manager
+- list comments in the document.
 - list comments
 - addin list tables
+- search for text within the document.
+- collaboration
+- insert text into the document body.
+- version history operations.
+- permission and sharing operations.
+- get metadata for a word document stored in onedrive/sharepoint.
+- graph list versions
+- list content controls in the document.
 - list permissions
-- graph get document
-- graph list permissions
 - addin list paragraphs
-- addin insert text
-- addin search text
-- list files and folders in a onedrive directory.
+- get document metadata.
+- add a paragraph to a document server-side.
+- graph search documents
+- delete a document.
+- graph share document
+- list tables in the document.
+- get content
+- document management
+- graph create folder
+- document format conversion.
+- create document
+- automation
+- get document body content.
+- delete document
+- graph list files
+- list version history of a document.
 - convert a word document to pdf or other format.
+- graph get document
+- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
+- insert html content into the document.
+- Document Author
+- creates and edits word documents, manages formatting and content.
+- documents
+- search documents
+- openxml convert document
+- create a new word document server-side using open xml.
+- convert to another format.
+- list permissions.
+- insert a new table into the document.
+- search for documents.
+- graph list permissions
+- list comments.
+- document lifecycle operations.
+- list paragraphs
+- addin get body
+- convert document
+- addin list comments
+- list files and folders in a onedrive directory.
+- search for word documents in onedrive/sharepoint.
+- microsoft word
+- list tables
+- paragraph operations.
+- manages document templates, reviews, and publishing workflows.
+- comment operations.
+- graph delete document
+- addin insert table
+- document content operations.
+- addin insert html
+- list all paragraphs in the document.
+- create a sharing link for a document.
+- openxml add paragraph
+- microsoft 365
+- list version history.
+- word processing
+- addin list content controls
+- create a new word document.
 slug: document-management
 source_filename: document-management.yaml
 source_heading: Capability Spec

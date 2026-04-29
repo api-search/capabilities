@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- append values
+- create spreadsheet
+- automation
 - data management
 - update values
-- clear values from a range
 - read values from a range
-- create a new spreadsheet
-- copy sheet
+- get spreadsheet
+- get developer metadata by id
 - batch get values
-- read values from a spreadsheet range
-- create a new google sheets spreadsheet
+- google workspace
+- get developer metadata
+- search developer metadata
+- search developer metadata matching filters
+- clear values from a spreadsheet range
 - read values from multiple ranges at once
+- cell value read and write operations
+- apply batch updates to a spreadsheet
+- clear values from a range
+- write values to a range
+- append rows of data to a spreadsheet
+- get spreadsheet details by id
+- single spreadsheet operations
 - write values to multiple ranges at once
-- automation
-- clear values
-- productivity
-- batch update spreadsheet
 - batch clear values
 - append values to a range
-- write values to a range
-- apply batch updates to a spreadsheet
 - write values to a spreadsheet range
-- copy a sheet to another spreadsheet
-- cell value read and write operations
-- clear values from multiple ranges
-- get values
-- batch update values
-- get developer metadata by id
-- google workspace
-- search developer metadata matching filters
-- get spreadsheet details by id
-- search developer metadata
-- clear values from a spreadsheet range
-- single spreadsheet operations
-- google sheets
-- get developer metadata
-- spreadsheets
-- create spreadsheet
 - get spreadsheet details
-- append rows of data to a spreadsheet
+- google sheets
+- productivity
+- clear values
+- spreadsheets
+- read values from a spreadsheet range
+- clear values from multiple ranges
+- batch update values
+- get values
+- create a new spreadsheet
 - spreadsheet lifecycle operations
-- get spreadsheet
+- append values
+- batch update spreadsheet
+- copy sheet
+- copy a sheet to another spreadsheet
+- create a new google sheets spreadsheet
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

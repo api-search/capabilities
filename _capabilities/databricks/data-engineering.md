@@ -31,73 +31,73 @@ personas: []
 provider_name: Databricks
 provider_slug: databricks
 search_terms:
-- machine learning
-- delta sharing
-- terminate a running cluster.
-- get details of a specific run.
-- export a notebook or workspace object.
-- list job runs
-- list all databricks jobs.
-- start cluster
-- data governance
-- create a new job.
-- list workspace objects
-- get cluster details.
-- delete job
-- list jobs
-- list objects in a workspace directory.
-- clean rooms
-- export workspace object
-- cancel a running job.
-- lakehouse
-- vector search
-- sql
-- delete a workspace object.
-- get cluster
-- data
-- ai
-- workspace object management.
-- run job now
-- edit cluster configuration.
-- import workspace object
-- job orchestration.
-- list runs for a job.
-- databricks
-- edit cluster
-- list all jobs.
-- create cluster
-- model serving
-- list workspace objects.
-- delete workspace object
-- security
-- start a terminated cluster.
-- create job
-- get job run
-- delete a job.
-- list all databricks clusters.
-- cluster lifecycle management.
-- data analytics
-- mlflow
-- analytics
-- cloud computing
-- delta lake
-- unity catalog
-- list clusters
-- create a new cluster.
-- terminate cluster
-- get job
-- identity management
-- visualize
 - cancel job run
-- big data
-- list all clusters.
-- get job details.
-- apache spark
-- import a notebook or workspace object.
-- data engineering
-- trigger a job run immediately.
-- create a new spark cluster.
+- get details of a specific run.
+- sql
+- security
+- visualize
+- data governance
+- workspace object management.
+- list clusters
+- edit cluster configuration.
+- databricks
+- get cluster
+- cancel a running job.
+- delta lake
+- identity management
+- start cluster
+- mlflow
 - etl
+- list all clusters.
+- ai
+- create job
+- vector search
+- cluster lifecycle management.
+- import a notebook or workspace object.
+- trigger a job run immediately.
+- data analytics
+- create cluster
+- clean rooms
+- job orchestration.
+- export a notebook or workspace object.
+- delta sharing
+- create a new job.
+- big data
+- lakehouse
+- get job details.
+- list runs for a job.
+- list workspace objects.
+- edit cluster
+- get job
+- list all jobs.
+- create a new spark cluster.
+- analytics
+- data
+- apache spark
+- delete a job.
+- delete job
+- machine learning
+- model serving
+- cloud computing
+- get cluster details.
+- list job runs
+- delete a workspace object.
+- list jobs
+- export workspace object
+- start a terminated cluster.
+- list all databricks jobs.
+- create a new cluster.
+- data engineering
+- list workspace objects
+- terminate a running cluster.
+- import workspace object
+- run job now
+- unity catalog
+- get job run
+- list objects in a workspace directory.
+- delete workspace object
+- terminate cluster
+- list all databricks clusters.
 slug: data-engineering
 source_filename: data-engineering.yaml
 source_heading: Capability Spec

@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- machine learning
-- count message tokens
-- individual batch management.
-- create message batch
-- create a message.
-- delete batch
-- chatbot
-- messaging
-- cancel an in-progress batch.
-- batch management.
-- list available models.
-- count tokens
-- model details.
-- get message batch status and details.
-- large language models
-- model discovery.
-- get batch
-- get completed batch results.
-- create message
-- get model
-- count tokens in a message.
-- ai
-- list available claude models.
-- retrieve message batch results
-- cancel message batch
-- message operations.
-- token counting.
-- create batch
-- anthropic
-- count message tokens.
-- send a message to claude and receive a response.
-- retrieve message batch
-- delete message batch
-- generative ai
-- conversational ai
-- artificial intelligence
-- get batch status.
-- list batches
-- list message batches
-- create a batch of message requests.
-- delete a batch.
-- list models
-- natural language processing
-- list message batches.
-- delete a completed batch.
-- claude
-- get model metadata.
 - list all message batches.
+- individual batch management.
+- large language models
+- create batch
+- retrieve message batch
+- list message batches.
+- natural language processing
+- list available claude models.
+- generative ai
+- ai
+- chatbot
+- retrieve message batch results
+- anthropic
+- message operations.
+- cancel message batch
+- send a message to claude and receive a response.
+- delete message batch
+- get batch status.
+- claude
+- count message tokens
+- count tokens in a message.
+- count tokens
+- model discovery.
+- get model metadata.
+- create message
+- create a batch of message requests.
+- batch management.
+- list message batches
+- count message tokens.
+- messaging
+- list models
+- get message batch status and details.
+- list batches
+- list available models.
+- get model
+- create a message.
+- machine learning
+- cancel an in-progress batch.
+- conversational ai
+- create message batch
+- get completed batch results.
+- artificial intelligence
 - create a message batch.
+- delete a completed batch.
+- get batch
+- model details.
+- token counting.
+- delete a batch.
+- delete batch
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

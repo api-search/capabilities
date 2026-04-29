@@ -10,22 +10,22 @@ personas: []
 provider_name: Apptio
 provider_slug: apptio
 search_terms:
-- reviews technology investment performance and cost trends
-- planning and monitoring it budget spending
-- analyze technology costs
-- get financial reports
-- apptio
-- analyze technology spending and manage it budgets with apptio
-- it finance
-- generating financial and technology management reports
 - cost management
-- retrieves technology business management reports for executive review
-- manages technology cost allocations and budget planning
-- reviews it budget plans and tracks spending against targets
-- lists and analyzes technology cost allocations by department and category
+- it finance
 - technology business management
-- tracking and allocating technology costs by department
+- analyze technology costs
+- planning and monitoring it budget spending
+- lists and analyzes technology cost allocations by department and category
+- generating financial and technology management reports
+- analyze technology spending and manage it budgets with apptio
+- reviews it budget plans and tracks spending against targets
 - analytics
+- reviews technology investment performance and cost trends
+- get financial reports
+- manages technology cost allocations and budget planning
+- apptio
+- retrieves technology business management reports for executive review
+- tracking and allocating technology costs by department
 - review it budgets
 slug: it-cost-management
 source_filename: it-cost-management.yaml

@@ -33,42 +33,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- digital identity
-- verify a consumer identity
-- create authentication consent
-- identity
-- verification
-- create consent
-- get identity insights for a transaction
-- initiate authentication
-- identity insights for accounts
-- initiate strong customer authentication
-- financial services
 - get transaction insights
 - get authentication consent status
-- get transaction identity insights
-- get consent status
+- initiate authentication
+- get account identity insights
 - open banking
-- authentication
+- payments
+- kyc
 - get identity intelligence insights for an account
-- identity verification
 - submit identity verification as a trust provider
+- authentication consent management
+- get transaction identity insights
+- create an authentication consent request
+- verify a consumer identity
+- identity
 - get identity insights for an account
 - create auth consent
-- create an authentication consent request
-- authentication consent management
-- payments
+- digital identity
+- verification
+- get consent status
+- mastercard
+- credit cards
+- authentication
+- identity insights for transactions
+- financial services
+- submit trust verification
+- verify identity
+- get identity intelligence insights for a transaction
+- identity verification
+- initiate strong customer authentication
+- create consent
+- identity insights for accounts
 - fraud detection
 - get account insights
-- credit cards
-- verify identity
+- get identity insights for a transaction
 - verify a consumer identity using mastercard id
-- identity insights for transactions
-- kyc
-- mastercard
-- submit trust verification
-- get identity intelligence insights for a transaction
-- get account identity insights
+- create authentication consent
 slug: identity-and-authentication
 source_filename: identity-and-authentication.yaml
 source_heading: Capability Spec
