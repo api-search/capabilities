@@ -10,31 +10,31 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
-- keyspaces get keyspace
-- nosql
-- tables list tables
-- tables get table
-- workflow
-- keyspaces create keyspace
-- returns information about the table.
-- keyspaces list keyspaces
-- returns a list of tables for a specified keyspace.
-- database
-- cassandra
-- unified workflow for amazon keyspaces resource management
-- amazon keyspaces
-- creates a new keyspace.
-- tables create table
-- manages resources and configurations
+- managed database
+- aws
+- Administrator
 - integrates api into applications
 - wide column
-- returns a list of keyspaces.
-- aws
-- returns the name and the amazon resource name (arn) of a keyspace.
-- Developer
-- Administrator
-- managed database
+- keyspaces create keyspace
+- nosql
+- returns a list of tables for a specified keyspace.
+- creates a new keyspace.
+- tables get table
 - the createtable operation adds a new table to the specified keyspace.
+- tables create table
+- tables list tables
+- workflow
+- cassandra
+- Developer
+- database
+- keyspaces list keyspaces
+- keyspaces get keyspace
+- returns the name and the amazon resource name (arn) of a keyspace.
+- unified workflow for amazon keyspaces resource management
+- amazon keyspaces
+- manages resources and configurations
+- returns a list of keyspaces.
+- returns information about the table.
 slug: amazon-keyspaces-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Keyspaces Workflow\n  description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.\n  tags:\n  - Amazon Keyspaces\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: keyspaces\n    location: ./shared/keyspaces.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: keyspaces-api\n    description: REST API for Amazon Keyspaces workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: keyspaces-mcp\n    transport: http\n    description: MCP server for Amazon Keyspaces.\n    tools:\n    - name: keyspaces-create-keyspace\n      description: Creates a new keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createkeyspace\n      outputParameters:\n\
   \      - type: object\n        mapping: $.\n    - name: keyspaces-list-keyspaces\n      description: Returns a list of keyspaces.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.listkeyspaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: keyspaces-get-keyspace\n      description: Returns the name and the Amazon Resource Name (ARN) of a keyspace.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.getkeyspace\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-create-table\n      description: The CreateTable operation adds a new table to the specified keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createtable\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-list-tables\n      description: Returns a list of tables for a specified keyspace.\n      hints:\n\

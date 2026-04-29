@@ -9,12 +9,12 @@ personas: []
 provider_name: CloudZero
 provider_slug: cloudzero
 search_terms:
+- cost optimization
+- budgets
+- unit economics
 - telemetry
 - finops
-- unit economics
-- cost optimization
 - cloud cost management
-- budgets
 - cost allocation
 slug: cloud-cost-finops
 source_yaml: "# Naftiko capabilities profile for CloudZero.\n# Capabilities map FinOps verbs against the CloudZero V2 REST API: billing\n# queries, insights, budgets, allocation telemetry, unit metric telemetry,\n# and AnyCost ingestion.\nprovider: cloudzero\nname: CloudZero\ndescription: >-\n  Capabilities cover querying billing costs and dimensions, managing\n  insights and budgets, sending allocation and unit metric telemetry,\n  and ingesting cost data from any source via the AnyCost framework.\ncapabilities:\n  - id: cloudzero.billing.costs\n    name: Query billing costs\n    description: Return cost rows for a date range with selected dimensions and metrics.\n    api: cloudzero:billing\n    inputs:\n      - start_date\n      - end_date\n      - dimensions\n      - metrics\n      - filter\n      - page\n      - page_size\n    outputs:\n      - results\n      - total\n\n  - id: cloudzero.billing.dimensions\n    name: List billing dimensions\n    description: Return the set of dimensions\

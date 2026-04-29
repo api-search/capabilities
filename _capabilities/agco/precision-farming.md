@@ -29,30 +29,30 @@ personas:
 provider_name: agco
 provider_slug: agco
 search_terms:
-- get real-time performance telemetry for an agco machine.
 - machine fleet management.
-- developer building farm management applications using agco machine telemetry data.
-- iot
-- list machines
 - agricultural machine inventory and fleet management.
-- list all connected agco machines.
-- machine location history.
-- telematics
-- get machine locations
-- agco
-- gps-based machine location and field work tracking.
-- get machine location history.
-- list all agco agricultural machines connected to the account.
-- real-time engine, fuel, and operational telemetry monitoring.
 - get machine telemetry
-- agriculture
+- real-time engine, fuel, and operational telemetry monitoring.
+- list machines
+- list all agco agricultural machines connected to the account.
 - precision farming
-- precision ag developer
-- agricultural operation manager monitoring machine fleet location and performance.
 - machine telematics.
-- fleet monitoring and performance tracking for agco agricultural machines.
-- farm manager
+- agriculture
+- get real-time performance telemetry for an agco machine.
+- machine location history.
 - get location history for an agco machine.
+- precision ag developer
+- telematics
+- developer building farm management applications using agco machine telemetry data.
+- get machine locations
+- agricultural operation manager monitoring machine fleet location and performance.
+- farm manager
+- iot
+- gps-based machine location and field work tracking.
+- fleet monitoring and performance tracking for agco agricultural machines.
+- get machine location history.
+- list all connected agco machines.
+- agco
 - get machine telemetry.
 slug: precision-farming
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AGCO Precision Farming\"\n  description: \"Unified workflow capability for AGCO precision farming — monitoring machine location, performance telemetry, and operating conditions across a connected fleet. Used by farm managers and precision agriculture software developers.\"\n  tags:\n    - AGCO\n    - Agriculture\n    - Precision Farming\n    - IoT\n    - Telematics\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AGCO_API_KEY: AGCO_API_KEY\n\ncapability:\n  consumes:\n    - import: agco-agcommand\n      location: ./shared/agcommand-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: agco-precision-api\n      description: \"Unified REST API for AGCO precision farming fleet monitoring.\"\n      resources:\n        - path: /v1/machines\n          name: machines\n          description: \"Machine fleet management.\"\n          operations:\n            - method:\

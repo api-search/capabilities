@@ -28,40 +28,40 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- investment analytics
-- build a custom report book.
-- ownership report
 - generate vermilion report.
-- overview report
-- vermilion report
-- generate fundamentals report.
-- generate capital structure report.
-- financial
-- visualization
+- factset
 - generate entity report.
+- fundamentals report
+- generate digital card
+- list reports
+- list available reports.
 - estimates report
+- generate ownership report.
 - financial data
-- generate chart
-- report generation.
-- generate a digital card.
-- generate estimates report.
-- entity report
-- chart generation.
 - reporting
+- entity report
+- generate overview report.
 - report builder
+- generate capital structure report.
+- investment analytics
+- generate a digital card.
+- vermilion report
+- financial
 - portfolio analytics
 - build book
-- fundamentals report
-- factset
-- market data
-- capital structure report
-- list available reports.
-- generate overview report.
-- research
-- list reports
-- generate digital card
 - generate a chart.
-- generate ownership report.
+- overview report
+- capital structure report
+- chart generation.
+- generate estimates report.
+- market data
+- build a custom report book.
+- research
+- report generation.
+- generate fundamentals report.
+- ownership report
+- visualization
+- generate chart
 slug: reporting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Reporting\"\n  description: \"Unified workflow for generating reports including entity, fundamentals, estimates, capital structure, overview, ownership reports, charts, and digital cards. Used by report builders.\"\n  tags:\n    - FactSet\n    - Reporting\n    - Report Builder\n    - Visualization\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-ent-rb\n      location: ./shared/entity-report-builder.yaml\n    - import: factset-fund-rb\n      location: ./shared/fundamentals-report-builder.yaml\n    - import: factset-est-rb\n      location: ./shared/estimates-report-builder.yaml\n    - import: factset-cap-rb\n      location: ./shared/capital-structure-report-builder.yaml\n    - import: factset-ovw-rb\n      location: ./shared/overview-report-builder.yaml\n\
   \    - import: factset-own-rb\n      location: ./shared/ownership-report-builder.yaml\n    - import: factset-charts\n      location: ./shared/chart-generation-service.yaml\n    - import: factset-cards\n      location: ./shared/digital-cards.yaml\n    - import: factset-bookbuilder\n      location: ./shared/bookbuilder.yaml\n    - import: factset-vermilion\n      location: ./shared/vermilion.yaml\n\n  exposes:\n    - type: rest\n      port: 8089\n      namespace: reporting-api\n      description: \"Unified REST API for reporting.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Report generation.\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List available reports.\"\n              call: \"factset-fund-rb.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/charts\n          name: charts\n     \

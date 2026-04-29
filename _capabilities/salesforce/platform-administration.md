@@ -45,55 +45,55 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- metadata
-- full sobject metadata.
-- get ui-ready metadata about a salesforce object.
-- get lookup records
-- get picklist values for all picklist fields on an object for a given record type.
-- analytics
-- get ui-ready metadata for an object.
-- identity
-- get picklist values
-- platform administration
-- get org limits
-- list sobjects
-- commerce
-- search lookup field records for typeahead.
-- full describe sobject
-- get the authenticated user's profile information.
-- list api versions
-- get app switcher menu
-- enterprise
-- sobject type listing.
-- list available salesforce rest api versions.
-- get picklist values for all picklist fields on an object.
-- list all sobject types available in the salesforce org.
-- marketing
-- cloud
-- authenticated user information.
-- platform
-- get list views
-- picklist value retrieval.
-- ai
-- customer service
-- get current api limit usage and remaining quotas for the org.
-- get the app switcher menu items available to the current user.
-- crm
-- get current api limit usage and quotas.
-- sales
-- get full metadata for an sobject type.
-- salesforce
-- get user info
-- app switcher menu items.
-- salesforce api version information.
-- org api limits.
-- list all sobject types in the org.
-- get the app switcher menu items.
-- get object info
-- oauth
-- ui-ready object metadata.
-- get list views for a salesforce object.
 - get full metadata for a salesforce sobject type including all fields.
+- metadata
+- get app switcher menu
+- list all sobject types available in the salesforce org.
+- get the app switcher menu items.
+- get current api limit usage and remaining quotas for the org.
+- list sobjects
+- get lookup records
+- crm
+- commerce
+- analytics
+- get ui-ready metadata about a salesforce object.
+- sales
+- list api versions
+- get picklist values for all picklist fields on an object.
+- oauth
+- get full metadata for an sobject type.
+- search lookup field records for typeahead.
+- ai
+- get list views for a salesforce object.
+- salesforce
+- get the app switcher menu items available to the current user.
+- full describe sobject
+- picklist value retrieval.
+- customer service
+- list available salesforce rest api versions.
+- full sobject metadata.
+- authenticated user information.
+- cloud
+- get org limits
+- enterprise
+- get current api limit usage and quotas.
+- marketing
+- platform administration
+- sobject type listing.
+- org api limits.
+- get picklist values for all picklist fields on an object for a given record type.
+- get list views
+- get the authenticated user's profile information.
+- app switcher menu items.
+- get user info
+- get ui-ready metadata for an object.
+- get picklist values
+- get object info
+- identity
+- salesforce api version information.
+- platform
+- list all sobject types in the org.
+- ui-ready object metadata.
 slug: platform-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce Platform Administration\"\n  description: \"Unified capability for Salesforce platform administration workflows combining the platform API and UI API for identity management, OAuth administration, metadata exploration, and application configuration. Used by Salesforce admins and platform engineers.\"\n  tags:\n    - Salesforce\n    - Platform Administration\n    - Identity\n    - OAuth\n    - Metadata\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SALESFORCE_ACCESS_TOKEN: SALESFORCE_ACCESS_TOKEN\n      SALESFORCE_CLIENT_ID: SALESFORCE_CLIENT_ID\n      SALESFORCE_CLIENT_SECRET: SALESFORCE_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: salesforce-platform\n      location: ./shared/salesforce.yaml\n    - import: salesforce-rest\n      location: ./shared/rest-api.yaml\n    - import: salesforce-ui\n      location: ./shared/ui-api.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8082\n      namespace: platform-administration-api\n      description: \"Unified REST API for Salesforce platform administration.\"\n      resources:\n        - path: /v1/user-info\n          name: user-info\n          description: \"Authenticated user information.\"\n          operations:\n            - method: GET\n              name: get-user-info\n              description: \"Get the authenticated user's profile information.\"\n              call: \"salesforce-platform.get-user-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/api-versions\n          name: api-versions\n          description: \"Salesforce API version information.\"\n          operations:\n            - method: GET\n              name: list-api-versions\n              description: \"List available Salesforce REST API versions.\"\n              call: \"salesforce-rest.list-api-versions\"\n              outputParameters:\n\

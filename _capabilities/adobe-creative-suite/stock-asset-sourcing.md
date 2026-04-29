@@ -46,53 +46,53 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- get stock file metadata
-- stock file metadata
-- stock content search
-- get licensing statistics for the authenticated member
-- photography
-- license a stock video clip for use in a project
-- get metadata for a specific stock file
-- license image
-- search the adobe stock library
-- license a stock photo
-- content sourcing
-- license a stock photo for use in a project
-- get license history
 - get category tree
-- stock
-- licensing statistics
-- vector and illustration licensing
-- video
-- get the authenticated member profile
-- video licensing
-- licensing
-- get license stats
-- get license history for the member
-- design
-- get the authenticated adobe stock member profile and quota information
-- image licensing
-- license a stock video clip
-- get the hierarchical category tree for adobe stock content
-- get detailed metadata for a specific stock file by content id
-- adobe
-- search the adobe stock library for photos, illustrations, vectors, and videos
-- license vector
-- search stock files
-- search
-- member profile and quota
-- license a vector or illustration for use in a project
 - graphics
-- get the license history for the authenticated member
-- stock content categories
-- digital assets
-- license a vector or illustration
-- get the stock content category tree
-- creative
-- license history
-- get licensing statistics
-- license video
+- licensing
+- get license history for the member
 - get member profile
+- image licensing
+- get detailed metadata for a specific stock file by content id
+- stock file metadata
+- license history
+- get stock file metadata
+- vector and illustration licensing
+- creative
+- license a stock video clip
+- license vector
+- license a stock photo for use in a project
+- video
+- search
+- stock
+- photography
+- search the adobe stock library
+- design
+- get licensing statistics
+- license a stock video clip for use in a project
+- search stock files
+- get the stock content category tree
+- license a vector or illustration
+- get license stats
+- member profile and quota
+- get metadata for a specific stock file
+- get the license history for the authenticated member
+- license image
+- licensing statistics
+- digital assets
+- search the adobe stock library for photos, illustrations, vectors, and videos
+- license video
+- stock content search
+- adobe
+- get the authenticated adobe stock member profile and quota information
+- get the authenticated member profile
+- content sourcing
+- license a stock photo
+- get the hierarchical category tree for adobe stock content
+- get licensing statistics for the authenticated member
+- get license history
+- license a vector or illustration for use in a project
+- video licensing
+- stock content categories
 slug: stock-asset-sourcing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Stock Asset Sourcing\"\n  description: \"Stock asset discovery, licensing, and management workflow using the Adobe Stock API. Used by content curators, marketing teams, and creative directors to search for stock photos, illustrations, vectors, and videos, license them for projects, and manage licensing history and quotas.\"\n  tags:\n    - Adobe\n    - Stock\n    - Digital Assets\n    - Licensing\n    - Content Sourcing\n    - Search\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_STOCK_TOKEN: ADOBE_STOCK_TOKEN\n      ADOBE_STOCK_API_KEY: ADOBE_STOCK_API_KEY\n\ncapability:\n  consumes:\n    - import: stock\n      location: ./shared/stock.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: stock-asset-sourcing-api\n      description: \"Unified REST API for stock asset discovery, licensing, and management using Adobe Stock.\"\n      resources:\n\
   \        - path: /v1/stock-files\n          name: stock-files\n          description: \"Stock content search\"\n          operations:\n            - method: GET\n              name: search-stock-files\n              description: \"Search the Adobe Stock library\"\n              call: \"stock.search-stock-files\"\n              with:\n                search_parameters[words]: \"rest.keywords\"\n                search_parameters[limit]: \"rest.limit\"\n                search_parameters[offset]: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stock-files/{content_id}\n          name: stock-file-detail\n          description: \"Stock file metadata\"\n          operations:\n            - method: GET\n              name: get-stock-file-metadata\n              description: \"Get metadata for a specific stock file\"\n              call: \"stock.get-stock-file-metadata\"\n              with:\n           \

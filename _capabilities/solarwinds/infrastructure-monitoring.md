@@ -27,40 +27,40 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- ip address management
-- list pingdom checks
-- application monitoring
-- infrastructure monitoring
-- swql query execution
-- infrastructure
-- it management
-- uptime monitoring checks
-- create a monitored entity in orion
-- query orion
-- itsm
-- log management
-- solarwinds
-- get check details
-- create a new pingdom monitoring check
-- create check
-- get pingdom performance summary
-- create orion entity
-- check results
-- get pingdom check details
-- get pingdom check results
-- list checks
-- get check
-- execute a swql query against orion platform
-- uptime monitoring
-- observability
-- network monitoring
-- get check results
-- get summary average
-- query swis
-- get results
-- database monitoring
 - list pingdom uptime monitoring checks
+- create a new pingdom monitoring check
+- itsm
+- solarwinds
+- get results
+- get check results
 - execute a swql query
+- list checks
+- create orion entity
+- database monitoring
+- get pingdom check results
+- get check details
+- get check
+- log management
+- ip address management
+- infrastructure monitoring
+- observability
+- it management
+- get pingdom check details
+- swql query execution
+- get pingdom performance summary
+- network monitoring
+- execute a swql query against orion platform
+- infrastructure
+- check results
+- uptime monitoring
+- create check
+- get summary average
+- query orion
+- create a monitored entity in orion
+- uptime monitoring checks
+- list pingdom checks
+- query swis
+- application monitoring
 slug: infrastructure-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SolarWinds Infrastructure Monitoring\"\n  description: \"Workflow for monitoring network infrastructure and website uptime combining Orion Platform SWQL queries with Pingdom synthetic monitoring for network and IT operations teams.\"\n  tags:\n    - SolarWinds\n    - Infrastructure Monitoring\n    - Network Monitoring\n    - Uptime Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORION_USERNAME: ORION_USERNAME\n      ORION_PASSWORD: ORION_PASSWORD\n      PINGDOM_API_TOKEN: PINGDOM_API_TOKEN\n\ncapability:\n  consumes:\n    - import: orion\n      location: ./shared/orion.yaml\n    - import: pingdom\n      location: ./shared/pingdom.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: infra-monitoring-api\n      description: \"Unified REST API for SolarWinds infrastructure monitoring.\"\n      resources:\n        - path: /v1/query\n          name:\
   \ query\n          description: \"SWQL query execution\"\n          operations:\n            - method: GET\n              name: query-swis\n              description: \"Execute a SWQL query\"\n              call: \"orion.query-swis\"\n              with:\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/checks\n          name: checks\n          description: \"Uptime monitoring checks\"\n          operations:\n            - method: GET\n              name: list-checks\n              description: \"List Pingdom checks\"\n              call: \"pingdom.list-checks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-check\n              description: \"Get check details\"\n              call: \"pingdom.get-check\"\n              with:\n                checkId: \"rest.checkId\"\n    \

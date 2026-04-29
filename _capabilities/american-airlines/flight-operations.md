@@ -19,27 +19,27 @@ personas: []
 provider_name: American Airlines
 provider_slug: american-airlines
 search_terms:
-- get real-time status of an american airlines flight
-- booking
-- search flights
-- american airlines
-- search flight schedules
-- flight operations
-- uses flight data to assist customers with bookings
-- developer experience
-- real-time flight status
+- aviation
 - search american airlines flight schedules by origin, destination, and date
+- search flights
 - Travel Technology Developer
+- flight operations
+- travel
+- builds travel apps integrating american airlines flight data
+- developer experience
+- booking
 - airlines
 - flights
-- travel technology
-- builds travel apps integrating american airlines flight data
+- american airlines
 - flight search and schedules
-- travel
-- get flight status
 - Booking Agent
+- uses flight data to assist customers with bookings
 - travel app workflow for searching and tracking american airlines flights
-- aviation
+- get flight status
+- travel technology
+- get real-time status of an american airlines flight
+- search flight schedules
+- real-time flight status
 slug: flight-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: American Airlines Flight Operations\n  description: >-\n    Unified workflow for travel applications and agents accessing American Airlines\n    flight data, status, and booking capabilities. Serves travel technology teams\n    and booking platform developers.\n  tags:\n    - American Airlines\n    - Airlines\n    - Flight Operations\n    - Travel Technology\n    - Booking\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AA_API_KEY: AA_API_KEY\n\ncapability:\n  consumes:\n    - import: aa-runway\n      location: ./shared/runway-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aa-flight-ops-api\n      description: Unified REST API for American Airlines flight operations.\n      resources:\n        - path: /v1/flights\n          name: flights\n          description: Flight search and schedules\n          operations:\n            - method: GET\n      \
   \        name: search-flights\n              description: Search flight schedules\n              call: \"aa-runway.get-flights\"\n              with:\n                origin: \"rest.origin\"\n                destination: \"rest.destination\"\n                date: \"rest.date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flights/{flightId}/status\n          name: flight-status\n          description: Real-time flight status\n          operations:\n            - method: GET\n              name: get-flight-status\n              description: Get flight status\n              call: \"aa-runway.get-flight-status\"\n              with:\n                flightId: \"rest.flightId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: aa-flight-ops-mcp\n      transport: http\n      description: MCP server for AI-assisted\

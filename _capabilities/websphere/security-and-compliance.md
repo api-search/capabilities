@@ -36,43 +36,43 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- list security users
-- get vulnerability details
-- security user management
-- ibm websphere
-- health monitoring
-- enterprise java
-- apply a fix to managed servers
-- get individual server health
-- fix and patch management
-- get overall environment health
-- list vulnerabilities
-- vulnerability tracking and remediation
 - get server health
-- application server
-- get vulnerability
-- vulnerability management
-- apply fix
-- compliance
-- list known vulnerabilities
-- list available security fixes
-- list servers managed by websphere automation
-- cloud native
-- initiate vulnerability resolution
-- list known security vulnerabilities
+- security user management
 - security
-- get overall health
-- list available fixes
-- microservices
-- middleware
+- list known security vulnerabilities
 - list fixes
 - get overall health status
-- compliance reporting
+- vulnerability management
+- cloud native
 - resolve vulnerability
-- j2ee
+- get overall health
+- list known vulnerabilities
+- list vulnerabilities
+- apply a fix to managed servers
+- application server
+- get individual server health
+- enterprise java
+- fix and patch management
+- list available security fixes
+- compliance reporting
+- initiate vulnerability resolution
 - list managed servers
-- list users
+- apply fix
+- ibm websphere
+- list servers managed by websphere automation
+- microservices
+- vulnerability tracking and remediation
+- list available fixes
 - list compliance reports
+- health monitoring
+- list users
+- compliance
+- j2ee
+- middleware
+- get overall environment health
+- list security users
+- get vulnerability
+- get vulnerability details
 slug: security-and-compliance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Security and Compliance\"\n  description: \"Workflow for security vulnerability management, automated patching, compliance reporting, and health monitoring across WebSphere environments for security engineers and compliance teams.\"\n  tags:\n    - IBM WebSphere\n    - Security\n    - Compliance\n    - Vulnerability Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_AUTOMATION_TOKEN: WEBSPHERE_AUTOMATION_TOKEN\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n\ncapability:\n  consumes:\n    - import: automation\n      location: ./shared/automation.yaml\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: security-compliance-api\n      description: \"Unified REST API for WebSphere security and compliance operations.\"\n   \
   \   resources:\n        - path: /v1/vulnerabilities\n          name: vulnerabilities\n          description: \"Vulnerability tracking and remediation\"\n          operations:\n            - method: GET\n              name: list-vulnerabilities\n              description: \"List known vulnerabilities\"\n              call: \"automation.list-vulnerabilities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-vulnerability\n              description: \"Get vulnerability details\"\n              call: \"automation.get-vulnerability\"\n              with:\n                vulnerabilityId: \"rest.vulnerabilityId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fixes\n          name: fixes\n          description: \"Fix and patch management\"\n          operations:\n            - method: GET\n              name: list-fixes\n\

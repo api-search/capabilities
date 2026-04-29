@@ -35,47 +35,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- batch update values
-- clear values from multiple ranges
-- batch clear values
-- get values
-- google sheets
-- automation
-- create a new google sheets spreadsheet
-- create spreadsheet
-- search developer metadata
-- batch update spreadsheet
-- apply batch updates to a spreadsheet
 - batch get values
-- search developer metadata matching filters
-- clear values from a range
-- get spreadsheet
-- create a new spreadsheet
+- batch clear values
+- append values
+- search developer metadata
+- productivity
+- batch update values
 - write values to a spreadsheet range
-- clear values
-- google workspace
-- get developer metadata
-- append rows of data to a spreadsheet
-- read values from a spreadsheet range
-- get developer metadata by id
-- clear values from a spreadsheet range
-- spreadsheet lifecycle operations
+- get spreadsheet details
+- copy sheet
 - single spreadsheet operations
 - write values to a range
-- copy sheet
-- cell value read and write operations
-- productivity
-- get spreadsheet details by id
-- data management
-- append values to a range
-- read values from multiple ranges at once
-- get spreadsheet details
-- read values from a range
-- append values
 - spreadsheets
+- search developer metadata matching filters
 - copy a sheet to another spreadsheet
 - write values to multiple ranges at once
+- read values from multiple ranges at once
+- cell value read and write operations
+- append values to a range
+- get spreadsheet details by id
+- get values
+- spreadsheet lifecycle operations
+- create spreadsheet
+- batch update spreadsheet
+- google workspace
+- get developer metadata by id
+- clear values from multiple ranges
+- clear values
+- clear values from a range
+- apply batch updates to a spreadsheet
+- automation
+- read values from a range
+- get spreadsheet
+- clear values from a spreadsheet range
+- create a new google sheets spreadsheet
+- data management
+- read values from a spreadsheet range
 - update values
+- append rows of data to a spreadsheet
+- google sheets
+- get developer metadata
+- create a new spreadsheet
 slug: spreadsheet-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Sheets Spreadsheet Data Management\"\n  description: \"Workflow for managing spreadsheet data including creating spreadsheets, reading and writing cell values, batch operations, and metadata management. Used by data analysts, developers, and automation engineers.\"\n  tags:\n    - Google Sheets\n    - Spreadsheets\n    - Data Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: google-sheets\n      location: ./shared/google-sheets.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sheets-data-api\n      description: \"Unified REST API for Google Sheets data management.\"\n      resources:\n        - path: /v1/spreadsheets\n          name: spreadsheets\n          description: \"Spreadsheet lifecycle operations\"\n          operations:\n     \
   \       - method: POST\n              name: create-spreadsheet\n              description: \"Create a new spreadsheet\"\n              call: \"google-sheets.create-spreadsheet\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spreadsheets/{spreadsheetId}\n          name: spreadsheet\n          description: \"Single spreadsheet operations\"\n          operations:\n            - method: GET\n              name: get-spreadsheet\n              description: \"Get spreadsheet details\"\n              call: \"google-sheets.get-spreadsheet\"\n              with:\n                spreadsheetId: \"rest.spreadsheetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spreadsheets/{spreadsheetId}/values/{range}\n          name: values\n          description: \"Cell value read and write operations\"\n          operations:\n            - method: GET\n     \

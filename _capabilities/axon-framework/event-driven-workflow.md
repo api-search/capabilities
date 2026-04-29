@@ -10,24 +10,24 @@ personas: []
 provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
-- list all axon contexts
-- list all registered axon applications
-- cqrs
-- list_applications
-- create a new axon context
-- delete an axon application registration
-- create_context
-- microservices
-- delete_application
-- event-driven
 - create a new axon application registration
-- get axon server metrics and health information
+- microservices
 - event sourcing
-- create_application
-- messaging
-- list_contexts
-- get_metrics
+- delete an axon application registration
+- get axon server metrics and health information
+- list all axon contexts
 - java
+- messaging
+- cqrs
+- get_metrics
+- list_applications
+- delete_application
+- create_application
+- create_context
+- list all registered axon applications
+- list_contexts
+- event-driven
+- create a new axon context
 slug: event-driven-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Axon Framework Event-Driven Workflow\n  description: Workflow capability for managing Axon Server applications, contexts, and event streaming.\n  tags:\n    - CQRS\n    - Event Sourcing\n    - Event-Driven\n    - Microservices\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AXON_SERVER_URL: AXON_SERVER_URL\n      AXON_TOKEN: AXON_TOKEN\ncapability:\n  consumes:\n    - import: axon-server\n      location: ./shared/axon-server.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-api\n      resources:\n        - label: List Applications\n          method: GET\n          path: /applications\n        - label: Create Application\n          method: POST\n          path: /applications\n        - label: Delete Application\n          method: DELETE\n          path: /applications/{name}\n        - label: List Contexts\n          method: GET\n          path: /contexts\n\
   \        - label: Create Context\n          method: POST\n          path: /contexts\n        - label: Get Metrics\n          method: GET\n          path: /metrics\n    - type: mcp\n      port: 9090\n      namespace: workflow-mcp\n      transport: http\n      tools:\n        - name: list_applications\n          description: List all registered Axon applications\n        - name: create_application\n          description: Create a new Axon application registration\n        - name: delete_application\n          description: Delete an Axon application registration\n        - name: list_contexts\n          description: List all Axon contexts\n        - name: create_context\n          description: Create a new Axon context\n        - name: get_metrics\n          description: Get Axon Server metrics and health information\n"

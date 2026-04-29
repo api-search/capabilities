@@ -27,43 +27,43 @@ personas: []
 provider_name: Appmixer
 provider_slug: appmixer
 search_terms:
-- approves or completes a pending human-in-the-loop task in an automation flow
-- managing tasks requiring human review or approval
-- user management for embedded automation
-- creates a new automation flow in appmixer for embedding in a product
-- automation
-- agentic
-- list automation flows
-- developer embedding white-labeled automation into a product
-- saas
-- low-code
-- automation flow lifecycle
-- create automation flow
-- lists all automation workflows configured in appmixer
-- list pending tasks
-- provisioning and managing automation platform users
-- embedded ipaas
-- integrations
-- workflows
-- approve task
-- product user interacting with embedded automation workflows
-- create a new automation flow
-- lists human-in-the-loop tasks waiting for user review or approval
 - list automation users
-- lists users who have access to the embedded automation platform
-- list pending people tasks
-- list all automation flows
 - appmixer
-- list flows
-- creating, running, and managing automation flows
 - run automation flow
-- end-to-end workflow for embedding automation in saas products
+- approve task
 - create flow
+- integrations
+- developer embedding white-labeled automation into a product
+- lists all automation workflows configured in appmixer
+- user management for embedded automation
+- list all automation flows
 - persisting and retrieving workflow state and data
-- list tasks
+- automation flow lifecycle
 - human-in-the-loop tasks
+- create a new automation flow
+- create automation flow
 - starts/runs an automation flow to execute its workflow
+- lists human-in-the-loop tasks waiting for user review or approval
+- saas
+- end-to-end workflow for embedding automation in saas products
+- list flows
+- creates a new automation flow in appmixer for embedding in a product
+- approves or completes a pending human-in-the-loop task in an automation flow
 - list users
+- agentic
+- managing tasks requiring human review or approval
+- automation
+- embedded ipaas
+- product user interacting with embedded automation workflows
+- list pending tasks
+- list pending people tasks
+- provisioning and managing automation platform users
+- lists users who have access to the embedded automation platform
+- list automation flows
+- creating, running, and managing automation flows
+- workflows
+- list tasks
+- low-code
 slug: embedded-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Appmixer Embedded Automation\n  description: >-\n    Workflow capability for managing embedded automation within SaaS products using\n    Appmixer. Combines flow lifecycle management, user provisioning, data storage,\n    and human-in-the-loop task handling into a unified workflow for SaaS developers\n    embedding white-labeled automation into their products.\n  tags:\n    - Appmixer\n    - Automation\n    - Embedded iPaaS\n    - Workflows\n    - SaaS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPMIXER_API_TOKEN: APPMIXER_API_TOKEN\n\ncapability:\n  consumes:\n    - import: appmixer\n      location: ./shared/appmixer-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: embedded-automation-api\n      description: Unified REST API for Appmixer embedded automation management.\n      resources:\n        - path: /v1/flows\n          name: flows\n    \
   \      description: Automation flow lifecycle\n          operations:\n            - method: GET\n              name: list-flows\n              description: List all automation flows\n              call: \"appmixer.list-flows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-flow\n              description: Create a new automation flow\n              call: \"appmixer.create-flow\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users\n          name: users\n          description: User management for embedded automation\n          operations:\n            - method: GET\n              name: list-users\n              description: List automation users\n              call: \"appmixer.list-users\"\n              outputParameters:\n                - type:\

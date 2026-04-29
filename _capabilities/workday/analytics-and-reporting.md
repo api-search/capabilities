@@ -21,44 +21,44 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- prism create dataset
-- get a wql data source by id
-- raas get report
+- prism delete dataset
+- list all prism analytics datasets
+- wql execute query
 - delete a dataset
-- analytics
-- wql get data source
+- execute query
 - retrieve a custom workday report
+- analytics
+- financial management
+- business intelligence
+- prism list tables
+- prism get dataset
+- prism create data change task
+- create a data change task
+- get fields for a wql data source
+- reporting
+- hcm
+- list data change tasks
+- wql get data source
+- execute a wql query
+- enterprise software
+- prism list datasets
+- get a dataset by id
+- saas
 - list datasets
 - wql query endpoint
-- financial management
-- saas
-- prism get dataset
-- prism delete dataset
-- cloud computing
-- list available wql data sources
-- wql list data sources
-- get a dataset by id
-- wql execute query
-- execute a wql query against workday data
 - list all prism tables
-- list data change tasks
-- get fields for a wql data source
-- hcm
-- reporting
-- prism list datasets
-- execute query
-- create a data change task
-- prism analytics datasets
 - workday
-- prism create data change task
-- prism list data change tasks
+- cloud computing
 - create a new prism analytics dataset
+- wql list data sources
+- prism list data change tasks
+- list available wql data sources
+- prism analytics datasets
+- prism create dataset
+- execute a wql query against workday data
 - wql get data source fields
-- execute a wql query
-- prism list tables
-- list all prism analytics datasets
-- business intelligence
-- enterprise software
+- get a wql data source by id
+- raas get report
 slug: analytics-and-reporting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Analytics and Reporting\"\n  description: \"Unified analytics and reporting combining Prism Analytics, WQL, and Report-as-a-Service APIs for business analysts to query data, manage datasets, and access custom reports.\"\n  tags:\n    - Workday\n    - Analytics\n    - Reporting\n    - Business Intelligence\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-prism\n      location: ./shared/prism-analytics.yaml\n    - import: workday-wql\n      location: ./shared/wql.yaml\n    - import: workday-raas\n      location: ./shared/raas.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: analytics-reporting-api\n      description: \"Unified REST API for analytics and reporting.\"\n      resources:\n        - path: /v1/datasets\n          name: datasets\n          description:\
   \ \"Prism Analytics datasets\"\n          operations:\n            - method: GET\n              name: list-datasets\n              description: \"List datasets\"\n              call: \"workday-prism.get-datasets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/wql-query\n          name: wql\n          description: \"WQL query endpoint\"\n          operations:\n            - method: POST\n              name: execute-query\n              description: \"Execute a WQL query\"\n              call: \"workday-wql.execute-wql-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9085\n      namespace: analytics-reporting-mcp\n      transport: http\n      description: \"MCP server for AI-assisted analytics and reporting.\"\n      tools:\n        - name: prism-list-datasets\n          description: \"List all Prism Analytics datasets\"\n \

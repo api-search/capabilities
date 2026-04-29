@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- data portability and advertiser transparency for dma.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- posts jobs and manages candidates through ats integrations.
-- authentication, sharing, and verification for consumer apps.
-- professional networking
-- analytics
-- get learning activity reports
-- job posting, recruiting, and applicant tracking.
-- linkedin
-- social media
-- uses sales navigator for lead generation and crm sync.
-- get ad analytics
-- retrieve ad analytics by various pivots.
-- retrieve ad analytics by various pivots and dimensions.
-- tracks employee learning activity and completions.
-- integrates linkedin authentication and sharing into applications.
-- marketing
 - archives communications for regulatory compliance.
-- retrieve learning activity reports.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- reporting
-- employee development tracking and content access.
-- sales intelligence, lead management, and crm integration.
-- learning
+- authentication, sharing, and verification for consumer apps.
 - business
-- b2b advertising, audience targeting, and campaign analytics.
-- message archiving and regulatory communications governance.
-- careers
+- analytics
+- uses sales navigator for lead generation and crm sync.
+- job posting, recruiting, and applicant tracking.
+- retrieve learning activity reports.
+- employee development tracking and content access.
+- learning
 - recruiting
+- sales intelligence, lead management, and crm integration.
+- tracks employee learning activity and completions.
+- get ad analytics
+- reporting
+- retrieve ad analytics by various pivots.
+- careers
+- b2b advertising, audience targeting, and campaign analytics.
+- professional networking
+- message archiving and regulatory communications governance.
+- social media
+- linkedin
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- marketing
+- posts jobs and manages candidates through ats integrations.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- retrieve ad analytics by various pivots and dimensions.
+- get learning activity reports
+- integrates linkedin authentication and sharing into applications.
+- data portability and advertiser transparency for dma.
 slug: reporting-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Reporting And Analytics\"\n  description: \"Unified workflow for marketing analysts to access ad analytics, B2B metrics, learning activity reports, and performance data -- combining reporting/ROI and learning activity APIs.\"\n  tags:\n    - LinkedIn\n    - Reporting\n    - Analytics\n    - Learning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-reporting-roi\n      location: ./shared/marketing-reporting-roi.yaml\n    - import: learning-activity-reports\n      location: ./shared/learning-activity-reports.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: reporting-analytics-api\n      description: \"Unified REST API for LinkedIn reporting and analytics.\"\n      resources:\n        - path: /v1/ad-analytics\n          name: ad-analytics\n          operations:\n\
   \            - method: GET\n              name: get-ad-analytics\n              description: \"Retrieve ad analytics by various pivots.\"\n              call: \"marketing-reporting-roi.get-ad-analytics\"\n        - path: /v1/learning-activity-reports\n          name: learning-activity-reports\n          operations:\n            - method: GET\n              name: get-learning-activity-reports\n              description: \"Retrieve learning activity reports.\"\n              call: \"learning-activity-reports.get-learning-activity-reports\"\n\n    - type: mcp\n      port: 9093\n      namespace: reporting-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted LinkedIn reporting and analytics.\"\n      tools:\n        - name: get-ad-analytics\n          description: \"Retrieve ad analytics by various pivots and dimensions.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"marketing-reporting-roi.get-ad-analytics\"\n\

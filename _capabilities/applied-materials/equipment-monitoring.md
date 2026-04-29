@@ -10,26 +10,26 @@ personas: []
 provider_name: Applied Materials
 provider_slug: applied-materials
 search_terms:
-- schedules preventive maintenance for semiconductor manufacturing equipment
-- engineers overseeing semiconductor equipment operation and performance
+- technicians performing scheduled and emergency equipment maintenance
+- materials engineering
 - equipment
-- list fab equipment
-- monitor fab equipment status and manage maintenance schedules
-- applied materials
-- views maintenance history and upcoming scheduled maintenance for equipment
+- fab operations
+- schedules preventive maintenance for semiconductor manufacturing equipment
 - equipment monitoring
 - manufacturing
-- materials engineering
-- schedule preventive maintenance
-- fab operations
-- semiconductor
-- scheduling and recording equipment maintenance activities
-- check equipment status
-- lists all semiconductor manufacturing equipment in the fab
-- technicians performing scheduled and emergency equipment maintenance
-- checks the operational status of a specific piece of fab equipment
+- monitor fab equipment status and manage maintenance schedules
 - view maintenance history
+- applied materials
+- engineers overseeing semiconductor equipment operation and performance
+- check equipment status
+- list fab equipment
+- scheduling and recording equipment maintenance activities
+- lists all semiconductor manufacturing equipment in the fab
+- views maintenance history and upcoming scheduled maintenance for equipment
 - tracking and monitoring semiconductor manufacturing equipment
+- checks the operational status of a specific piece of fab equipment
+- schedule preventive maintenance
+- semiconductor
 slug: equipment-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Applied Materials Equipment Monitoring\n  description: >-\n    Workflow capability for monitoring and maintaining semiconductor manufacturing\n    equipment from Applied Materials. Supports fab operations teams tracking\n    equipment status and scheduling preventive maintenance.\n  tags:\n    - Applied Materials\n    - Semiconductor\n    - Manufacturing\n    - Equipment Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMAT_API_TOKEN: AMAT_API_TOKEN\n\ncapability:\n  consumes:\n    - import: amat\n      location: ./shared/applied-materials-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: equipment-monitoring-mcp\n      transport: http\n      description: MCP server for AI-assisted semiconductor equipment monitoring.\n      tools:\n        - name: list-fab-equipment\n          description: Lists all semiconductor manufacturing equipment in\
   \ the fab\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amat.list-equipment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: check-equipment-status\n          description: Checks the operational status of a specific piece of fab equipment\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amat.get-equipment\"\n          with:\n            equipmentId: \"tools.equipmentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: view-maintenance-history\n          description: Views maintenance history and upcoming scheduled maintenance for equipment\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amat.list-maintenance\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: schedule-preventive-maintenance\n\

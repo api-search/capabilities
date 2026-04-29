@@ -35,46 +35,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- list all certificate authorities
-- create a new private certificate authority
-- retrieve an issued certificate by arn
-- iot
-- certificate lifecycle management
-- certificate management
-- pki
-- describe certificate authority
-- certificate authority
-- certificates
-- individual certificate operations
-- issue a new x.509 certificate from a certificate authority
-- amazon
-- Platform Engineer
-- revoke certificate
 - create a new private certificate authority in the ca hierarchy
-- tls
-- retrieve a certificate
-- describe ca
-- Security Engineer
-- get certificate
-- create certificate authority
-- get details about a specific certificate authority
-- x.509
-- create ca
-- revoke an issued certificate
+- aws
+- security
+- amazon
+- list all private certificate authorities
+- list all certificate authorities
 - private pki infrastructure management workflow
-- issue certificate
+- individual certificate authority operations
+- issue a new certificate
 - get certificate authority details
 - revoke a certificate
-- issue a new certificate
-- list all private certificate authorities
-- security
-- individual certificate authority operations
 - list cas
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- aws
-- list certificate authorities
+- certificate lifecycle management
+- x.509
+- Platform Engineer
+- create certificate authority
+- Security Engineer
+- revoke an issued certificate
+- get details about a specific certificate authority
+- get certificate
+- create ca
+- certificates
+- retrieve a certificate
+- revoke certificate
+- tls
+- individual certificate operations
 - certificate authority hierarchy management
+- describe certificate authority
+- issue a new x.509 certificate from a certificate authority
+- describe ca
+- create a new private certificate authority
+- list certificate authorities
+- issue certificate
+- retrieve an issued certificate by arn
+- certificate management
+- certificate authority
+- iot
 - issues certificates for internal services and manages certificate lifecycle
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- pki
 slug: pki-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Private CA PKI Management\n  description: Workflow capability for managing private PKI infrastructure using Amazon Private CA. Combines certificate authority management, certificate issuance, revocation, and audit reporting for security engineers and platform teams.\n  tags:\n    - Amazon\n    - AWS\n    - PKI\n    - Certificate Authority\n    - Security\n    - X.509\n    - Certificates\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-private-ca\n      location: ./shared/amazon-private-ca.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pki-management-api\n      description: Unified REST API for Amazon Private CA PKI management workflows.\n      resources:\n        - path: /v1/certificate-authorities\n\
   \          name: certificate-authorities\n          description: Certificate authority hierarchy management\n          operations:\n            - method: POST\n              name: create-ca\n              description: Create a new private certificate authority\n              call: \"amazon-private-ca.create-certificate-authority\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-cas\n              description: List all certificate authorities\n              call: \"amazon-private-ca.list-certificate-authorities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificate-authorities/{ca-id}\n          name: certificate-authority\n          description: Individual certificate authority operations\n          operations:\n            - method: GET\n              name: describe-ca\n              description: Get\

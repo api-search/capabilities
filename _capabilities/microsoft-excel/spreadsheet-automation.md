@@ -34,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- list table rows
-- create a new worksheet in the workbook.
-- add a row to a table.
-- list all worksheets in the workbook.
 - cell range operations.
-- list all rows in an excel table.
-- automation
-- read cell values from a specified range.
-- spreadsheet automation
-- list charts
-- microsoft 365
-- microsoft excel
-- analysts working with excel workbooks for data processing.
-- add a new data row to an excel table.
-- business users automating excel-based reporting.
-- list all charts in a worksheet.
-- Data Analyst
+- create worksheet
+- list worksheets
 - manage table rows.
+- add table row
+- list all worksheets in the workbook.
+- automate excel workbook operations.
+- read cell values from a specified range.
+- spreadsheets
+- update range
+- list charts.
+- list all charts in a worksheet.
+- list rows in a table.
+- list charts
+- update cell values in a specified range.
+- microsoft excel
 - manage worksheets.
+- Business Analyst
 - create a new worksheet.
 - get range
-- list all worksheets.
-- get a cell range.
+- list all rows in an excel table.
 - data analysis
-- automate excel workbook operations.
-- add table row
-- list worksheets
-- update range
-- chart operations.
+- add a new data row to an excel table.
+- business users automating excel-based reporting.
+- automation
 - data management
-- list charts.
-- update cell values in a specified range.
+- spreadsheet automation
+- create a new worksheet in the workbook.
+- Data Analyst
 - microsoft
-- Business Analyst
-- spreadsheets
-- list rows in a table.
+- chart operations.
+- get a cell range.
+- analysts working with excel workbooks for data processing.
 - office
-- create worksheet
+- add a row to a table.
+- list table rows
+- list all worksheets.
+- microsoft 365
 slug: spreadsheet-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Excel Spreadsheet Automation\"\n  description: \"Workflow capability for automating Excel spreadsheet operations including worksheet management, data manipulation, table operations, and chart generation via Microsoft Graph.\"\n  tags:\n    - Microsoft Excel\n    - Spreadsheet Automation\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: excel-graph\n      location: ./shared/excel-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spreadsheet-automation-api\n      description: \"Unified REST API for Excel spreadsheet automation.\"\n      resources:\n        - path: /v1/worksheets\n          name: worksheets\n          description: \"Manage worksheets.\"\n          operations:\n            - method: GET\n              name: list-worksheets\n\
   \              description: \"List all worksheets.\"\n              call: \"excel-graph.list-worksheets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-worksheet\n              description: \"Create a new worksheet.\"\n              call: \"excel-graph.create-worksheet\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables/{table-id}/rows\n          name: table-rows\n          description: \"Manage table rows.\"\n          operations:\n            - method: GET\n              name: list-table-rows\n              description: \"List rows in a table.\"\n              call: \"excel-graph.list-table-rows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-table-row\n              description: \"Add a row to\

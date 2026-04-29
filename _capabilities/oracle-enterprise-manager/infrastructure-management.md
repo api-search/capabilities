@@ -39,56 +39,56 @@ personas: []
 provider_name: Oracle Enterprise Manager
 provider_slug: oracle-enterprise-manager
 search_terms:
-- clear incident
-- get details of a specific monitored target
-- incident details
-- infrastructure incidents
-- performance metrics
-- enterprise manager
+- monitoring
 - get target
-- get incident
-- create a new monitored target
-- list global target properties for classification
+- list metric groups available for a target
+- get target details
 - get configuration properties of a target
-- database management
+- incident details
+- list blackouts (maintenance windows)
 - oracle
-- infrastructure management
-- list monitored targets
+- clear an incident marking it as resolved
 - target details
-- get event
-- get metric time series data for performance analysis
-- list metric groups
-- suppress an incident from active views
-- delete blackout
-- cloud management
 - get metric time series data
+- get details of a specific monitoring event
+- create blackout
+- get incident
+- delete a scheduled blackout
+- monitored targets
+- list incidents in enterprise manager
+- list targets
+- performance metrics
+- create a monitored target
+- get event
+- get target properties
+- delete blackout
+- suppress an incident from active views
+- list metric groups
+- get incident details
+- enterprise management
+- create a new monitored target
+- get details of a specific blackout
+- cloud management
+- list monitored targets
+- create target
+- list monitored targets in enterprise manager
+- infrastructure incidents
+- clear incident
+- database management
+- list global target properties for classification
 - get blackout
 - maintenance windows
-- monitoring
-- list targets
-- get incident details
-- list incidents in enterprise manager
 - list incidents
-- list global target properties
-- get target details
+- enterprise manager
+- get details of a specific monitored target
 - create a new blackout (maintenance window)
-- list metric groups available for a target
-- enterprise management
+- get metric time series data for performance analysis
 - list blackouts
-- monitored targets
-- get target properties
-- create blackout
-- get metric time series
-- list monitored targets in enterprise manager
-- create target
-- create a monitored target
-- list blackouts (maintenance windows)
-- clear an incident marking it as resolved
-- suppress incident
-- delete a scheduled blackout
 - get details of a specific incident
-- get details of a specific monitoring event
-- get details of a specific blackout
+- suppress incident
+- get metric time series
+- infrastructure management
+- list global target properties
 slug: infrastructure-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle Enterprise Manager Infrastructure Management\"\n  description: \"Unified workflow for monitoring, incident response, and maintenance management across Oracle infrastructure using Enterprise Manager Cloud Control APIs. Designed for infrastructure administrators and operations teams.\"\n  tags:\n    - Oracle\n    - Enterprise Manager\n    - Infrastructure Management\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OEM_USERNAME: OEM_USERNAME\n      OEM_PASSWORD: OEM_PASSWORD\n\ncapability:\n  consumes:\n    - import: cloud-control\n      location: ./shared/cloud-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oem-infra-api\n      description: \"Unified REST API for Oracle Enterprise Manager infrastructure management.\"\n      resources:\n        - path: /v1/targets\n          name: targets\n          description: \"Monitored\
   \ targets\"\n          operations:\n            - method: GET\n              name: list-targets\n              description: \"List monitored targets\"\n              call: \"cloud-control.list-targets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-target\n              description: \"Create a monitored target\"\n              call: \"cloud-control.create-target\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/targets/{targetId}\n          name: target-details\n          description: \"Target details\"\n          operations:\n            - method: GET\n              name: get-target\n              description: \"Get target details\"\n              call: \"cloud-control.get-target\"\n              with:\n                targetId: \"rest.targetId\"\n              outputParameters:\n                - type: object\n\

@@ -87,75 +87,75 @@ personas: []
 provider_name: Google Campaign Manager
 provider_slug: google-campaign-manager
 search_terms:
-- get ad
-- run a report to generate results.
-- delete report
-- create a report.
-- update an existing campaign.
-- generate ad tags for placements.
-- get ad details.
-- update an existing placement.
-- update ad
-- ad management.
-- individual ad management.
-- create a placement.
-- analytics
-- create campaign
-- list reports.
-- get placement details by id.
-- run a report.
-- list campaigns
-- create a new ad.
-- create an ad.
-- delete a report.
-- run report
 - update a placement.
+- ad management.
+- run a report.
+- list reports.
+- list advertising campaigns.
+- create a new advertising campaign.
+- run a report to generate results.
+- analytics
+- list reports
+- delete a report.
+- get ad
+- report management.
+- create report
+- run report
+- get campaign
+- update ad
+- create a placement.
+- create a new ad.
+- get report
+- get report details.
+- list ads.
+- update an existing placement.
+- create an ad.
+- reporting
+- update a campaign.
+- update placement
 - create a new placement.
 - campaign management
-- report management.
-- update an ad.
-- placement management.
-- individual report management.
-- create a new report.
-- create placement
-- list ads
-- digital marketing
-- list placements
-- list placements.
-- get report
 - update a report.
-- report execution.
-- list ad placements.
-- get report details by id.
-- update report
-- campaign management.
-- update placement
-- advertising
-- update a campaign.
-- get ad details by id.
-- reporting
-- get report details.
-- get placement
-- update an existing report.
-- get placement details.
-- create a new advertising campaign.
-- placement tag generation.
-- update campaign
-- individual campaign management.
+- update an existing campaign.
 - list campaigns.
 - individual placement management.
-- create report
-- list advertising campaigns.
-- get campaign
+- list placements
+- update an existing report.
+- get placement
+- create a report.
+- get report details by id.
 - create ad
-- list reports
-- google
+- get placement details.
 - generate placement tags
-- get campaign details by id.
+- individual report management.
+- get ad details.
+- campaign management.
+- get ad details by id.
+- advertising
+- digital marketing
+- generate ad tags for placements.
+- delete report
+- individual campaign management.
+- list placements.
+- create placement
+- report execution.
+- list ads
+- individual ad management.
+- placement management.
+- update report
 - update an existing ad.
-- create a campaign.
 - get campaign details.
-- list ads.
+- list campaigns
+- list ad placements.
+- create a campaign.
+- get campaign details by id.
+- create campaign
+- placement tag generation.
+- create a new report.
+- google
+- get placement details by id.
+- update campaign
+- update an ad.
 slug: campaign-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Campaign Manager Campaign Management\"\n  description: \"Unified workflow for managing digital advertising campaigns, ads, placements, and performance reports. Used by ad operations specialists and digital marketers.\"\n  tags:\n    - Google\n    - Advertising\n    - Campaign Management\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH2_TOKEN: GOOGLE_OAUTH2_TOKEN\n\ncapability:\n  consumes:\n    - import: campaign-manager\n      location: ./shared/campaign-manager-360.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: campaign-management-api\n      description: \"Unified REST API for Google Campaign Manager 360 campaign management.\"\n      resources:\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Campaign management.\"\n          operations:\n            - method: GET\n          \
   \    name: list-campaigns\n              description: \"List campaigns.\"\n              call: \"campaign-manager.list-campaigns\"\n              with:\n                profileId: \"rest.profileId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: \"Create a campaign.\"\n              call: \"campaign-manager.create-campaign\"\n              with:\n                profileId: \"rest.profileId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns/{id}\n          name: campaign-details\n          description: \"Individual campaign management.\"\n          operations:\n            - method: GET\n              name: get-campaign\n              description: \"Get campaign details.\"\n              call: \"campaign-manager.get-campaign\"\n              with:\n             \

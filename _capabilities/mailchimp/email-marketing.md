@@ -60,82 +60,82 @@ personas: []
 provider_name: Mailchimp
 provider_slug: mailchimp
 search_terms:
-- get transactional account information.
-- get campaign report.
-- send transactional
-- create a new marketing campaign.
-- search sent transactional messages.
-- specific campaign.
-- send a marketing campaign.
-- marketing list reports
-- marketing list members
-- send a transactional email with a template.
-- newsletters
-- create campaign
-- list reports.
-- get audience details.
-- list transactional email templates.
-- list campaigns
-- send transactional email.
-- list all audiences.
-- search transactional messages.
-- transactional get message info
-- marketing list templates
-- add member
-- transactional list templates
-- marketing list audiences
-- list audience members.
-- send a transactional email.
-- audience members.
-- transactional send template
-- get report
-- campaigns
-- list campaign reports.
-- mailchimp
-- specific campaign report.
-- marketing list campaigns
-- campaign reports.
-- delete campaign
-- search sent messages.
+- transactional email
 - marketing get campaign
+- list reports.
+- marketing list reports
+- list campaign reports.
+- list reports
+- marketing list templates
+- get campaign report.
+- get audience details.
+- search transactional
+- list all marketing campaigns.
+- send campaign.
+- transactional send template
+- send transactional email.
+- list email templates.
+- transactional get user info
+- get campaign
+- list members.
+- get a specific campaign report.
+- get report
+- send a transactional email with a template.
+- get a specific marketing campaign.
+- list all audiences.
+- get transactional account information.
+- marketing create campaign
+- delete a campaign.
+- send a transactional email.
+- create a new marketing campaign.
+- list campaigns.
+- marketing campaigns.
+- list audiences.
+- search sent messages.
 - delete a marketing campaign.
 - send a campaign.
-- transactional email
-- list audiences.
-- send campaign
-- list members
-- list email templates.
-- transactional send message
-- transactional search messages
-- transactional get user info
-- marketing add member
-- marketing create campaign
-- marketing delete campaign
-- list audiences
-- send campaign.
-- list members.
-- email marketing
-- get a specific campaign report.
-- delete a campaign.
-- get details about a sent transactional message.
-- list campaigns.
-- add a member.
-- search transactional
-- audience management.
-- add a member to an audience.
-- marketing get audience
-- get campaign
-- marketing automation
-- list reports
-- get campaign details.
-- list all marketing campaigns.
-- marketing send campaign
 - marketing list automations
-- create a campaign.
-- get a specific marketing campaign.
-- marketing campaigns.
+- send campaign
+- send a marketing campaign.
+- email marketing
+- transactional search messages
+- campaigns
+- list transactional email templates.
+- specific campaign.
+- list members
+- marketing list members
+- specific campaign report.
+- marketing list campaigns
+- marketing list audiences
+- audience members.
+- marketing get audience
+- delete campaign
+- marketing add member
+- transactional send message
+- list audience members.
 - list marketing automations.
+- newsletters
+- add a member.
+- get campaign details.
+- list campaigns
+- add member
+- list audiences
+- campaign reports.
+- marketing delete campaign
+- create a campaign.
 - marketing get report
+- search transactional messages.
+- marketing send campaign
+- marketing automation
+- create campaign
+- mailchimp
+- search sent transactional messages.
+- get details about a sent transactional message.
+- transactional get message info
+- transactional list templates
+- add a member to an audience.
+- audience management.
+- send transactional
 slug: email-marketing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mailchimp Email Marketing\"\n  description: \"Unified workflow combining Mailchimp Marketing API for campaigns, audiences, and analytics with the Transactional API for personalized email delivery. Used by marketing teams and developers to manage the full email lifecycle.\"\n  tags:\n    - Mailchimp\n    - Email Marketing\n    - Transactional Email\n    - Marketing Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MAILCHIMP_API_KEY: MAILCHIMP_API_KEY\n      MANDRILL_API_KEY: MANDRILL_API_KEY\n\ncapability:\n  consumes:\n    - import: marketing\n      location: ./shared/marketing.yaml\n    - import: transactional\n      location: ./shared/transactional.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-marketing-api\n      description: \"Unified REST API for Mailchimp marketing campaigns and transactional email.\"\n      resources:\n     \
   \   - path: /v1/campaigns\n          name: campaigns\n          description: \"Marketing campaigns.\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"List campaigns.\"\n              call: \"marketing.list-campaigns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: \"Create a campaign.\"\n              call: \"marketing.create-campaign\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns/{campaign_id}\n          name: campaign-detail\n          description: \"Specific campaign.\"\n          operations:\n            - method: GET\n              name: get-campaign\n              description: \"Get campaign details.\"\n              call: \"marketing.get-campaign\"\n              with:\n             \

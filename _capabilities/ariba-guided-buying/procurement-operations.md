@@ -36,53 +36,53 @@ personas: []
 provider_name: Ariba Guided Buying
 provider_slug: ariba-guided-buying
 search_terms:
-- catalog item listing.
-- catalog shop items and facets.
-- catalog search typeahead.
-- count asset-based requisitions.
-- list asset requisitions
-- asset management
+- get total count of asset-based purchase requisitions in sap ariba.
+- get typeahead search suggestions from an sap ariba catalog.
+- batch asset assignment.
+- autocomplete
+- assign asset numbers to requisition line items.
+- assign asset numbers
+- supply chain
+- get shop
+- list catalog items with details from an sap ariba shop.
+- Procurement Administrator
+- list requisitions
+- tracking and assignment of asset numbers to purchased items.
+- ariba
+- get shop catalog
 - erp
 - update assets
-- assign asset numbers
-- get typeahead search suggestions from an sap ariba catalog.
-- list requisitions
-- asset-based purchase requisitions.
-- list items
-- count requisitions
-- supply chain
-- get catalog items and facets from sap business network.
-- assign asset numbers to requisition line items.
-- get total count of asset-based purchase requisitions in sap ariba.
-- assign unique asset numbers to line items on sap ariba purchase requisitions.
-- list purchase requisitions with asset items.
-- procurement
-- search catalog
-- administrator who manages asset assignments and procurement workflows.
-- get search suggestions from catalog.
-- list catalog items with details from an sap ariba shop.
+- count asset-based requisitions.
 - catalog
-- tracking and assignment of asset numbers to purchased items.
-- get shop catalog
-- requisitions
-- list catalog items from a shop.
-- employee who uses guided buying to search catalogs and create purchase requests.
-- get shop
-- sap
-- Procurement Administrator
-- shopping
-- Enterprise Buyer
-- list sap ariba purchase requisitions containing asset line items pending asset assignment.
-- batch asset assignment.
-- b2b
-- ariba
-- retrieve catalog items and facets from an sap ariba shop on sap business network.
+- catalog shop items and facets.
 - list catalog items
-- count asset requisitions
 - unified catalog shopping and asset management workflow
+- list sap ariba purchase requisitions containing asset line items pending asset assignment.
+- get search suggestions from catalog.
+- sap
+- list catalog items from a shop.
 - requisition count.
+- list items
+- asset-based purchase requisitions.
+- list purchase requisitions with asset items.
+- asset management
+- list asset requisitions
+- Enterprise Buyer
+- retrieve catalog items and facets from an sap ariba shop on sap business network.
+- search catalog
+- b2b
+- requisitions
+- procurement
+- employee who uses guided buying to search catalogs and create purchase requests.
+- administrator who manages asset assignments and procurement workflows.
+- catalog item listing.
+- count asset requisitions
+- assign unique asset numbers to line items on sap ariba purchase requisitions.
+- count requisitions
+- get catalog items and facets from sap business network.
 - management of supplier product catalogs on sap business network.
-- autocomplete
+- shopping
+- catalog search typeahead.
 slug: procurement-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Ariba Guided Buying - Procurement Operations\"\n  description: \"Unified procurement operations workflow combining catalog shopping and asset management for enterprise buyers and procurement administrators.\"\n  tags:\n    - Ariba\n    - Asset Management\n    - Catalog\n    - Procurement\n    - SAP\n    - Shopping\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARIBA_CATALOG_OAUTH_TOKEN: ARIBA_CATALOG_OAUTH_TOKEN\n      ARIBA_ASSET_OAUTH_TOKEN: ARIBA_ASSET_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: ariba-catalog-shop\n      location: ./shared/catalog-shop-api.yaml\n    - import: ariba-asset-mgmt\n      location: ./shared/asset-management-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ariba-procurement-api\n      description: \"Unified REST API for SAP Ariba Guided Buying procurement operations.\"\n      resources:\n        - path: /v1/shops/{shopId}\n\
   \          name: shop\n          description: \"Catalog shop items and facets.\"\n          operations:\n            - method: GET\n              name: get-shop\n              description: \"Get catalog items and facets from SAP Business Network.\"\n              call: \"ariba-catalog-shop.get-shop\"\n              with:\n                shopID: \"rest.shopId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shops/{shopId}/items\n          name: shop-items\n          description: \"Catalog item listing.\"\n          operations:\n            - method: GET\n              name: list-items\n              description: \"List catalog items from a shop.\"\n              call: \"ariba-catalog-shop.list-shop-items\"\n              with:\n                shopID: \"rest.shopId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shops/{shopId}/autocomplete\n\

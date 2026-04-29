@@ -19,29 +19,29 @@ personas: []
 provider_name: Amazon Managed Grafana
 provider_slug: amazon-managed-grafana
 search_terms:
-- create an api key for programmatic grafana workspace access
-- grafana
-- update workspace
-- get configuration and authentication details of a grafana workspace
-- create a workspace
-- amazon
-- Platform Engineer
-- visualization
-- list workspaces
 - monitoring
-- list all grafana workspaces for observability dashboards
-- create grafana workspace
-- observability
+- update workspace
+- grafana
 - create a new grafana workspace for observability dashboards
-- create workspace api key
-- grafana workspaces
-- create workspace
-- Operations Engineer
 - aws
-- dashboards
-- list grafana workspaces
+- amazon
+- list all grafana workspaces for observability dashboards
+- create workspace
+- create a workspace
+- get configuration and authentication details of a grafana workspace
 - update grafana workspace configuration, authentication, or data sources
+- Platform Engineer
+- list grafana workspaces
+- create an api key for programmatic grafana workspace access
+- Operations Engineer
+- create workspace api key
+- observability
 - get workspace details
+- grafana workspaces
+- dashboards
+- list workspaces
+- create grafana workspace
+- visualization
 slug: observability-dashboard-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Amazon Managed Grafana - Observability Dashboard Workflow\"\n  description: \"Workflow capability for platform and operations teams to create and manage Grafana workspaces, dashboards, and access controls for observability on Amazon Managed Grafana.\"\n  tags:\n    - Amazon\n    - Grafana\n    - Dashboards\n    - Monitoring\n    - Observability\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: managed-grafana\n      location: ./shared/managed-grafana.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: grafana-dashboard-api\n      description: \"Unified REST API for Grafana observability dashboard workflows.\"\n      resources:\n        - path: /v1/workspaces\n          name: workspaces\n          description:\
   \ \"Grafana workspaces\"\n          operations:\n            - method: GET\n              name: list-workspaces\n              description: \"List workspaces\"\n              call: \"managed-grafana.list-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workspace\n              description: \"Create a workspace\"\n              call: \"managed-grafana.create-workspace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: grafana-dashboard-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Grafana observability management.\"\n      tools:\n        - name: list-grafana-workspaces\n          description: \"List all Grafana workspaces for observability dashboards\"\n          hints:\n            readOnly: true\n            destructive: false\n     \

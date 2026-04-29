@@ -23,27 +23,27 @@ provider_name: APIGen
 provider_slug: apigen
 search_terms:
 - deploy
-- create project.
-- create documentation project
-- PHP Developer
-- apigen
-- create a new php api documentation project in apigen.
-- deploy documentation.
-- developer generating api documentation for php projects using apigen.
-- deploy an api documentation site for a project.
-- php
-- list projects.
-- code
-- list projects
-- documentation
-- writer managing and publishing api documentation sites.
-- api code generation
 - deploy documentation site
+- list projects.
+- apigen
+- developer generating api documentation for php projects using apigen.
+- php
+- PHP Developer
+- open source
+- api code generation
+- deploy documentation.
+- create project.
 - generation
+- deploy an api documentation site for a project.
 - Technical Writer
 - create project
-- open source
+- writer managing and publishing api documentation sites.
 - list all apigen documentation projects.
+- list projects
+- create documentation project
+- create a new php api documentation project in apigen.
+- code
+- documentation
 slug: api-documentation-generation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIGen Documentation Generation\"\n  description: \"Workflow for generating, publishing, and managing API documentation using APIGen - creating projects from PHP source code, configuring endpoints, and deploying documentation sites.\"\n  tags:\n    - APIGen\n    - Documentation\n    - PHP\n    - API Code Generation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIGEN_API_TOKEN: APIGEN_API_TOKEN\n\ncapability:\n  consumes:\n    - import: apigen\n      location: ./shared/apigen.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigen-docs-api\n      description: \"Unified REST API for APIGen documentation management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List projects.\"\n              call: \"apigen.list-projects\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: \"Create project.\"\n              call: \"apigen.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{projectId}/deploy\n          name: deploy\n          operations:\n            - method: POST\n              name: deploy\n              description: \"Deploy documentation.\"\n              call: \"apigen.deploy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apigen-docs-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API documentation generation.\"\n      tools:\n        - name: list-projects\n          description: \"List all APIGen documentation projects.\"\n     \

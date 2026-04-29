@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- create image
-- list vnic attachments in a compartment
-- get instance
-- terminate instance
-- list console connections
-- delete a custom image
-- get details of a specific instance
+- compute
+- create a custom image from an instance
 - list volume attachments
-- list instance console connections
-- infrastructure
+- terminate an instance
 - oracle
-- list shapes
-- update image details
-- manage compute instances
-- saas
-- manage compute images
-- list compute instances in a compartment
-- get image details
-- launch instance
-- get details of a specific image
-- update instance
-- database
-- cloud
 - list compute images
-- launch a new compute instance
-- create a custom image
+- update image
+- list vnic attachments in a compartment
+- manage a specific image
+- list instances
+- manage compute images
+- get image
+- create image
+- list images
+- saas
+- cloud
+- infrastructure
 - list available compute shapes
 - delete image
-- manage a specific compute instance
-- terminate an instance
-- get instance details
-- update image
-- update instance details
-- get image
-- list instances
-- manage a specific image
-- compute
-- perform an action on an instance (start, stop, reset)
-- create a custom image from an instance
-- instance action
-- list volume attachments in a compartment
-- list images
+- get details of a specific instance
+- launch instance
 - enterprise
+- list console connections
+- terminate instance
+- list volume attachments in a compartment
+- list compute instances in a compartment
+- perform an action on an instance (start, stop, reset)
+- instance action
+- database
+- manage a specific compute instance
+- create a custom image
+- list instance console connections
+- get instance
+- get details of a specific image
+- get image details
+- list shapes
+- launch a new compute instance
+- update instance details
 - list vnic attachments
+- delete a custom image
+- manage compute instances
+- update image details
+- get instance details
+- update instance
 slug: cloud-compute
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle Cloud Compute Management\"\n  description: \"Manage Oracle Cloud Infrastructure compute resources including instances, images, shapes, and attachments. Used by cloud engineers and platform administrators.\"\n  tags:\n    - Oracle\n    - Cloud\n    - Compute\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OCI_API_KEY: OCI_API_KEY\n      OCI_TENANCY_OCID: OCI_TENANCY_OCID\n      OCI_USER_OCID: OCI_USER_OCID\n      OCI_FINGERPRINT: OCI_FINGERPRINT\n\ncapability:\n  consumes:\n    - import: oci-compute\n      location: ./shared/oci-compute.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oracle-compute-api\n      description: \"Unified REST API for Oracle Cloud compute resource management.\"\n      resources:\n        - path: /v1/instances\n          name: instances\n          description: \"Manage compute instances\"\n     \
   \     operations:\n            - method: GET\n              name: list-instances\n              description: \"List compute instances in a compartment\"\n              call: \"oci-compute.list-instances\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: launch-instance\n              description: \"Launch a new compute instance\"\n              call: \"oci-compute.launch-instance\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/instances/{instanceId}\n          name: instance\n          description: \"Manage a specific compute instance\"\n          operations:\n            - method: GET\n              name: get-instance\n              description: \"Get instance details\"\

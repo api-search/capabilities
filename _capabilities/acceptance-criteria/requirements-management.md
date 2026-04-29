@@ -9,13 +9,13 @@ personas: []
 provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
-- behavior driven development
 - testing
-- quality assurance
-- gherkin
-- user stories
 - requirements
 - agile
+- gherkin
+- behavior driven development
+- quality assurance
+- user stories
 slug: requirements-management
 source_yaml: "apiVersion: naftiko.io/v1alpha1\nkind: WorkflowCapability\nmetadata:\n  name: requirements-management\n  version: 1.0.0\n  description: End-to-end requirements management workflow for defining acceptance criteria, automating BDD scenario generation, and validating stories through acceptance test execution\n  provider: Reference Implementation\n  tags:\n    - Acceptance Criteria\n    - Requirements\n    - BDD\n    - Agile\n    - Quality Assurance\nspec:\n  sharedCapabilities:\n    - acceptance-criteria-management\n  workflow:\n    name: Story to Verified Feature Workflow\n    description: Complete lifecycle from user story creation through acceptance criteria definition, BDD scenario authoring, test execution, and story sign-off\n    steps:\n      - id: create-story\n        name: Create User Story\n        description: Create a new user story with a title, description, and priority\n        operation: createUserStory\n      - id: define-criteria\n        name: Define Acceptance\
   \ Criteria\n        description: Add measurable acceptance criteria to the user story in Gherkin or plain-text format\n        operation: addAcceptanceCriterion\n        dependsOn: [create-story]\n      - id: create-scenarios\n        name: Create BDD Scenarios\n        description: Author Gherkin feature file scenarios linked to each acceptance criterion\n        operation: createScenario\n        dependsOn: [define-criteria]\n      - id: run-tests\n        name: Execute Acceptance Tests\n        description: Trigger a test run to execute all scenarios for the user story\n        operation: createTestRun\n        dependsOn: [create-scenarios]\n      - id: verify-results\n        name: Verify Test Results\n        description: Review test run results and update acceptance criterion status based on pass/fail\n        operation: listTestRuns\n        dependsOn: [run-tests]\n      - id: update-story\n        name: Update Story Status\n        description: Mark story as ready-for-review or\

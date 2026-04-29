@@ -39,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- integration
-- get connector
-- automation
 - list all power automate environments
-- list available connectors in an environment
-- low-code
-- business process
-- connector management
-- update flow
-- workflow
-- list all environments
-- get details of a specific flow
-- flow management
-- delete flow
-- delete a flow
-- list connectors
-- list flows in an environment
-- get flow
-- managing environments and available connectors
-- environment management
-- manages environments, connectors, and permissions
-- start/activate a flow
-- creates and manages automation flows
-- update a flow
-- create a new automation flow
-- get details of a specific connector
-- list flows
-- microsoft power automate
-- creating, running, and managing automation flows
 - manage flows, environments, and connectors
-- stop/deactivate a flow
-- turn off flow
-- flow lifecycle management
+- delete flow
+- get details of a specific flow
+- get details of a specific connector
 - create flow
-- power platform
-- microsoft
-- update a flow's properties
-- turn on flow
-- Platform Administrator
-- get flow details
-- rpa
-- Automation Engineer
 - list environments
+- update a flow's properties
+- update flow
+- get connector
+- start/activate a flow
+- flow lifecycle management
+- delete a flow
+- list flows in an environment
+- create a new automation flow
+- rpa
+- list available connectors in an environment
+- flow management
+- turn off flow
+- update a flow
+- environment management
+- get flow
+- connector management
+- list flows
+- Automation Engineer
+- get flow details
+- integration
+- Platform Administrator
+- automation
+- creates and manages automation flows
+- business process
+- workflow
+- microsoft power automate
+- list all environments
+- managing environments and available connectors
+- creating, running, and managing automation flows
+- microsoft
+- power platform
 - create a flow
+- list connectors
+- turn on flow
+- stop/deactivate a flow
+- low-code
+- manages environments, connectors, and permissions
 slug: flow-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Power Automate Flow Automation\"\n  description: \"Workflow capability for managing Power Automate flows, environments, and connectors. Used by automation engineers and platform administrators.\"\n  tags:\n    - Microsoft Power Automate\n    - Automation\n    - Flow Management\n    - Low-Code\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_AUTOMATE_TOKEN: POWER_AUTOMATE_TOKEN\n\ncapability:\n  consumes:\n    - import: management-api\n      location: ./shared/management-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flow-automation-api\n      description: \"Unified REST API for Power Automate flow automation workflows.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n\
   \              description: \"List all environments\"\n              call: \"management-api.list-environments\"\n        - path: /v1/flows\n          name: flows\n          description: \"Flow lifecycle management\"\n          operations:\n            - method: GET\n              name: list-flows\n              description: \"List flows\"\n              call: \"management-api.list-flows\"\n            - method: POST\n              name: create-flow\n              description: \"Create a flow\"\n              call: \"management-api.create-flow\"\n            - method: GET\n              name: get-flow\n              description: \"Get flow details\"\n              call: \"management-api.get-flow\"\n            - method: PATCH\n              name: update-flow\n              description: \"Update a flow\"\n              call: \"management-api.update-flow\"\n            - method: DELETE\n              name: delete-flow\n              description: \"Delete a flow\"\n              call: \"management-api.delete-flow\"\

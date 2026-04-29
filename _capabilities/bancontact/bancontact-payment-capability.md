@@ -9,11 +9,11 @@ personas: []
 provider_name: Bancontact
 provider_slug: bancontact
 search_terms:
-- belgium
-- debit cards
 - e-commerce
-- fintech
 - banking
+- debit cards
+- belgium
+- fintech
 - payments
 slug: bancontact-payment-capability
 source_yaml: "name: Bancontact Payment Capability\ndescription: >-\n  Naftiko capability for Bancontact Pro payment acceptance covering online checkout,\n  QR code payments, mobile app payments, and refund processing for Belgian merchants.\nversion: '1.0'\nprovider: bancontact\n\nworkflows:\n  - name: Online Checkout Payment\n    description: REST API flow for Bancontact payment acceptance in e-commerce checkout.\n    apis:\n      - bancontact:payconiq-acceptance-api\n    tools:\n      - name: CreatePayment\n        description: Create a Bancontact payment transaction.\n      - name: GetPaymentStatus\n        description: Retrieve current status of a Bancontact payment.\n      - name: CancelPayment\n        description: Cancel a pending payment transaction.\n    persona: Merchant Developer\n\n  - name: QR Code Payment\n    description: Generate and display a Bancontact QR code for in-store or invoice payment.\n    apis:\n      - bancontact:payconiq-acceptance-api\n    tools:\n      - name:\

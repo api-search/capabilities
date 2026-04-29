@@ -49,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- case management
-- erp
-- retrieve support and service cases.
-- chatbot intent fulfillments
-- financial management
-- peopletools platform services.
-- chatbot intents
-- list customers
-- retrieve details for a specific customer.
-- notification management
-- list cases
-- list intents
-- chatbot
-- create a new support or service case.
-- list opportunities
-- campus solutions
-- sales opportunities
-- send notification
-- customer records
-- hcm
-- customer engagement
-- process a chatbot intent fulfillment request.
-- create case
-- peoplesoft
-- get customer
-- retrieve sales opportunities.
-- retrieve available chatbot intents.
-- retrieve notifications for the current user.
-- send a notification via email, text, or in-app channels.
-- financial and supply chain management.
-- human capital management.
 - crm
+- chatbot
+- notification management
+- sales opportunities
 - sales
-- fulfill intent
-- supply chain management
-- list notifications
-- campus solutions.
-- support and service cases
-- retrieve customer records.
-- enterprise software
+- get customer
+- retrieve details for a specific customer.
+- create case
+- retrieve notifications for the current user.
+- financial management
 - individual customer details
+- retrieve customer records.
+- customer records
+- campus solutions.
+- list notifications
+- financial and supply chain management.
+- hcm
+- retrieve sales opportunities.
+- list opportunities
+- create a new support or service case.
+- fulfill intent
+- chatbot intent fulfillments
+- human capital management.
+- enterprise software
+- send a notification via email, text, or in-app channels.
+- peoplesoft
+- retrieve available chatbot intents.
+- chatbot intents
+- campus solutions
+- customer engagement
+- supply chain management
+- list cases
+- case management
+- retrieve support and service cases.
+- send notification
+- list customers
+- peopletools platform services.
+- process a chatbot intent fulfillment request.
+- erp
+- support and service cases
+- list intents
 slug: customer-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Customer Engagement\"\n  description: \"Unified workflow for CRM users combining customer management, case management, sales, chatbot integration, and notifications across PeopleSoft CRM, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - CRM\n    - Customer Engagement\n    - Case Management\n    - Sales\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: crm\n      location: ./shared/crm.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: customer-engagement-api\n      description: \"Unified REST API\
   \ for PeopleSoft customer engagement workflows.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n          description: \"Customer records\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"Retrieve customer records.\"\n              call: \"crm.list-customers\"\n              with:\n                search: \"rest.search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers/{customerId}\n          name: customer-detail\n          description: \"Individual customer details\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Retrieve details for a specific customer.\"\n              call: \"crm.get-customer\"\n              with:\n                customerId: \"rest.customerId\"\n              outputParameters:\n                - type: object\n        \

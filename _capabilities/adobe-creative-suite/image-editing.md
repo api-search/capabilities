@@ -55,60 +55,60 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- text layer editing
-- rendition creation
-- smart object editing
-- edit smart object
-- photography
-- alpha mask creation
-- auto-crop an image to the primary product
-- artboard creation
-- photoshop
-- edit text layers in a psd
-- automation
-- apply resize, flatten, or trim operations to a psd document
-- image straightening
-- apply resize, flatten, or trim operations to a psd
-- create renditions from a psd or image
-- create artboards in a psd document
-- apply document operations
-- edit text content and styling in psd text layers
-- video
-- straighten image
-- replace smart object content in a psd
-- document-level operations
-- create an alpha mask for an image
-- design
 - manage layers
-- remove the background from an image using adobe sensei ai
-- edit text layers
-- create artboards within a psd document
-- create mask
-- adobe
-- product crop
-- straighten a rotated image
-- auto-crop an image to focus on the primary product
-- create renditions from a psd or image in jpeg, png, or tiff
-- layer management
-- create artboard
-- manage layers in a psd document
-- remove the background from an image
-- graphics
-- image editing
-- creative
-- create an alpha mask for an image using adobe sensei ai
-- remove background
-- product cropping operations
-- automatically straighten a rotated image
-- read, add, modify, or delete layers in a psd document
-- replace smart object content in a psd document
-- get job status
+- apply document operations
+- photoshop
 - image processing
-- background removal operations
-- get the status of an async photoshop job
-- job status polling
-- get the status of an asynchronous photoshop api job
 - create rendition
+- remove the background from an image using adobe sensei ai
+- create renditions from a psd or image
+- graphics
+- read, add, modify, or delete layers in a psd document
+- get the status of an async photoshop job
+- creative
+- auto-crop an image to focus on the primary product
+- auto-crop an image to the primary product
+- get the status of an asynchronous photoshop api job
+- create renditions from a psd or image in jpeg, png, or tiff
+- replace smart object content in a psd
+- video
+- edit text content and styling in psd text layers
+- create artboard
+- document-level operations
+- artboard creation
+- photography
+- apply resize, flatten, or trim operations to a psd document
+- design
+- create an alpha mask for an image using adobe sensei ai
+- product crop
+- job status polling
+- straighten image
+- layer management
+- create mask
+- edit smart object
+- product cropping operations
+- automation
+- image straightening
+- straighten a rotated image
+- edit text layers in a psd
+- adobe
+- remove background
+- create artboards within a psd document
+- image editing
+- text layer editing
+- create an alpha mask for an image
+- rendition creation
+- background removal operations
+- edit text layers
+- manage layers in a psd document
+- smart object editing
+- create artboards in a psd document
+- get job status
+- replace smart object content in a psd document
+- apply resize, flatten, or trim operations to a psd
+- alpha mask creation
+- remove the background from an image
+- automatically straighten a rotated image
 slug: image-editing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Image Editing\"\n  description: \"Automated image editing and processing workflow using the Adobe Photoshop API for background removal, masking, layer management, rendition creation, document operations, and smart object editing. Used by production designers, e-commerce teams, and digital asset managers who need to automate image processing at scale.\"\n  tags:\n    - Adobe\n    - Photoshop\n    - Image Editing\n    - Image Processing\n    - Layer Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PHOTOSHOP_TOKEN: ADOBE_PHOTOSHOP_TOKEN\n\ncapability:\n  consumes:\n    - import: photoshop\n      location: ./shared/photoshop.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: image-editing-api\n      description: \"Unified REST API for automated image editing and processing using Adobe Photoshop.\"\n      resources:\n\
   \        - path: /v1/cutouts\n          name: cutouts\n          description: \"Background removal operations\"\n          operations:\n            - method: POST\n              name: remove-background\n              description: \"Remove the background from an image\"\n              call: \"photoshop.remove-background\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/masks\n          name: masks\n          description: \"Alpha mask creation\"\n          operations:\n            - method: POST\n              name: create-mask\n              description: \"Create an alpha mask for an image\"\n              call: \"photoshop.create-mask\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n           \

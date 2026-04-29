@@ -32,42 +32,42 @@ personas:
 provider_name: Alchemy
 provider_slug: alchemy
 search_terms:
-- sponsor user operation
-- ethereum
-- get a specific gas sponsorship policy.
-- list all gas manager sponsorship policies for the alchemy application.
-- web3 platform engineer
-- dapp developer
-- create a new gas sponsorship policy with spend limits and network settings.
-- list policies
-- create policy
-- wallet balance and asset portfolio management.
-- erc-20 token data and metadata.
-- gas manager
-- defi builder
-- builds evm wallet applications needing token balances and transaction history.
-- gas sponsorship for user operations.
-- combines token api and transfers api for wallet portfolio applications.
-- gas sponsorship policies.
-- list all gas sponsorship policies.
-- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
-- gas fee sponsorship and erc-4337 account abstraction.
-- blockchain
-- get policy
-- creates decentralized applications with gasless ux for end users.
-- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
-- on-chain asset transfer history.
 - account abstraction
-- create a new gas sponsorship policy.
-- manages gas sponsorship infrastructure and erc-4337 policies.
-- web3
-- develops defi applications requiring portfolio tracking and token data.
-- get details for a specific gas sponsorship policy by id.
 - individual gas policy.
-- cryptocurrency
+- ethereum
+- web3
+- gas manager
+- combines token api and transfers api for wallet portfolio applications.
+- defi builder
+- get policy
 - wallet developer
-- sponsor a user operation for gasless transactions.
+- sponsor user operation
+- gas fee sponsorship and erc-4337 account abstraction.
+- get details for a specific gas sponsorship policy by id.
+- create a new gas sponsorship policy.
+- cryptocurrency
+- web3 platform engineer
+- gas sponsorship policies.
+- create policy
+- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- develops defi applications requiring portfolio tracking and token data.
+- creates decentralized applications with gasless ux for end users.
+- create a new gas sponsorship policy with spend limits and network settings.
+- blockchain
+- wallet balance and asset portfolio management.
+- gas sponsorship for user operations.
 - alchemy
+- list policies
+- list all gas sponsorship policies.
+- erc-20 token data and metadata.
+- sponsor a user operation for gasless transactions.
+- on-chain asset transfer history.
+- dapp developer
+- builds evm wallet applications needing token balances and transaction history.
+- manages gas sponsorship infrastructure and erc-4337 policies.
+- list all gas manager sponsorship policies for the alchemy application.
+- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
+- get a specific gas sponsorship policy.
 slug: gasless-transaction-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Alchemy Gasless Transaction Management\"\n  description: >-\n    Capability for managing gasless transaction sponsorship using ERC-4337\n    Account Abstraction. Combines the Gas Manager API for policy creation and\n    management with paymaster sponsorship. Designed for dApp developers and\n    Web3 platform teams who want to abstract gas fees from end users.\n  tags:\n    - Alchemy\n    - Blockchain\n    - Gas Manager\n    - Account Abstraction\n    - Web3\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALCHEMY_BEARER_TOKEN: ALCHEMY_BEARER_TOKEN\n      ALCHEMY_API_KEY: ALCHEMY_API_KEY\n\ncapability:\n  consumes:\n    - import: gas-manager\n      location: ./shared/gas-manager-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: gasless-tx-api\n      description: \"Unified REST API for gasless transaction management.\"\n      resources:\n        - path:\
   \ /v1/policies\n          name: policies\n          description: \"Gas sponsorship policies.\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List all gas sponsorship policies.\"\n              call: \"gas-manager.list-policies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-policy\n              description: \"Create a new gas sponsorship policy.\"\n              call: \"gas-manager.create-policy\"\n              with:\n                name: \"rest.name\"\n                network: \"rest.network\"\n                maxSpendPerUser: \"rest.maxSpendPerUser\"\n                maxSpendTotal: \"rest.maxSpendTotal\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies/{policyId}\n          name: policy\n          description: \"Individual gas\

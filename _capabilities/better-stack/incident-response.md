@@ -73,74 +73,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- list all uptime monitors to check what is being monitored
-- delete an incident
-- acknowledge an active incident to indicate someone is working on it
-- incident management
-- incident response
-- get incident
-- heartbeats
-- get details for a specific incident
-- resolve an incident
-- uptime
-- update monitor
-- create a heartbeat monitor
-- single monitor operations
-- list monitors
-- acknowledge an active incident
-- resolve an active incident once the issue is fixed
+- logs
+- monitoring
+- engineer on-call rotation responsible for responding to incidents
+- list all heartbeats
+- list all heartbeat monitors for scheduled jobs
+- list incidents with optional date and filter parameters
+- monitor management for uptime checks
+- get monitor details
 - list all incidents
-- get availability for a heartbeat monitor
-- get monitor availability
-- incidents
-- better stack
-- managing team access and membership
-- delete monitor
-- site reliability engineer managing infrastructure uptime and incident response
-- on call engineer
-- acknowledge incident
+- single incident operations
+- single monitor operations
+- delete a monitor
+- incident response
 - update a monitor
+- delete incident
+- create monitor
+- resolve an incident
+- get availability metrics for a monitor
+- sre
+- get incident
+- create a heartbeat monitor
+- list heartbeats
+- delete an incident
+- create heartbeat
+- get monitor availability summary
+- incident management
+- acknowledge an active incident to indicate someone is working on it
+- site reliability engineer managing infrastructure uptime and incident response
+- uptime and availability monitoring for services and scheduled jobs
+- sre engineer
+- acknowledge incident
+- acknowledge an incident
+- resolve incident
+- get details for a specific incident
+- uptime
+- create a manual incident
+- incidents
+- update monitor
+- observability
 - monitor detection, incident acknowledgement, and resolution workflow for sre teams
 - heartbeat monitor management
-- engineer on-call rotation responsible for responding to incidents
-- communicating service health to customers and stakeholders
-- detection, acknowledgement, and resolution of service incidents
-- monitoring
-- create monitor
-- resolve an active incident
-- uptime and availability monitoring for services and scheduled jobs
-- platform
-- resolve incident
-- get incident details
-- list heartbeats
-- list all uptime monitors
-- logs
-- list incidents
-- list all heartbeat monitors for scheduled jobs
-- monitor availability metrics
-- delete incident
-- observability
-- sre
-- on-call
-- get availability metrics for a monitor
-- list all heartbeats
-- create heartbeat
-- get details for a specific uptime monitor
-- get monitor
-- create a manual incident
-- acknowledge an incident
-- monitor management for uptime checks
-- get monitor availability summary
-- single incident operations
-- sre engineer
 - create incident
-- get heartbeat availability
-- create a new uptime monitor
+- acknowledge an active incident
+- heartbeats
+- on-call
+- managing team access and membership
+- monitor availability metrics
+- resolve an active incident once the issue is fixed
+- list all uptime monitors
+- on call engineer
 - create a new uptime monitor for a url or api
-- delete a monitor
+- better stack
+- list monitors
+- list incidents
 - status
-- get monitor details
-- list incidents with optional date and filter parameters
+- get monitor availability
+- create a new uptime monitor
+- get monitor
+- detection, acknowledgement, and resolution of service incidents
+- platform
+- get details for a specific uptime monitor
+- get heartbeat availability
+- delete monitor
+- get availability for a heartbeat monitor
+- get incident details
+- communicating service health to customers and stakeholders
+- resolve an active incident
+- list all uptime monitors to check what is being monitored
 slug: incident-response
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Better Stack Incident Response\n  description: >-\n    Unified incident response workflow combining Better Stack uptime monitoring,\n    heartbeat monitoring, and incident management. Used by SRE teams and on-call\n    engineers to detect, acknowledge, and resolve infrastructure incidents.\n  tags:\n    - Better Stack\n    - Incident Response\n    - Monitoring\n    - On-Call\n    - Sre\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BETTER_STACK_API_TOKEN: BETTER_STACK_API_TOKEN\n\ncapability:\n  consumes:\n    - import: better-stack\n      location: ./shared/better-stack.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: better-stack-incident-response-api\n      description: Unified REST API for Better Stack incident response workflows.\n      resources:\n        - path: /v1/monitors\n          name: monitors\n          description: Monitor management for\
   \ uptime checks\n          operations:\n            - method: GET\n              name: list-monitors\n              description: List all uptime monitors\n              call: \"better-stack.list-monitors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-monitor\n              description: Create a new uptime monitor\n              call: \"better-stack.create-monitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{id}\n          name: monitor\n          description: Single monitor operations\n          operations:\n            - method: GET\n              name: get-monitor\n              description: Get monitor details\n              call: \"better-stack.get-monitor\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n         \

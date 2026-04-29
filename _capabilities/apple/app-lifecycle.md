@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- remove a beta tester.
-- update build information.
-- read beta tester
-- apple
-- list all apps in app store connect.
-- add a new beta tester.
-- app store
-- list all apps.
-- build management.
-- list testers
-- list beta testers.
-- add a beta tester.
-- app management.
-- list beta testers
-- create beta group
-- modify beta group
-- ios
-- delete a beta group.
-- get beta group details.
-- read beta group
-- list groups
-- list all builds.
-- list all beta groups.
-- create group
+- list apps
+- get beta tester details.
+- create beta tester
+- update a beta group.
 - app management
-- delete beta tester
-- technology
-- create a new beta group.
-- get build details.
-- get details of a specific app.
-- modify app
-- create a beta group.
-- list all beta testers.
+- beta group management.
+- modify build
 - delete beta group
-- update app metadata.
-- mobile
+- create beta group
+- update build information.
+- list all builds.
+- macos
+- delete beta tester
+- developer
+- modify beta group
+- list groups
+- app management.
 - create tester
 - list beta groups.
+- list all beta groups.
+- list all beta testers.
+- get build details.
 - read build
-- beta group management.
-- create beta tester
-- list apps
-- developer
-- get beta tester details.
-- macos
-- modify build
-- testflight
-- beta tester management.
-- read app
-- update a beta group.
-- list beta groups
+- create a beta group.
 - list builds
+- list beta groups
+- list testers
+- read beta tester
+- technology
+- apple
+- build management.
+- get beta group details.
+- remove a beta tester.
+- read app
+- list beta testers.
+- modify app
+- add a new beta tester.
+- delete a beta group.
+- list all apps in app store connect.
+- list beta testers
+- ios
+- beta tester management.
+- create group
+- get details of a specific app.
+- create a new beta group.
+- testflight
+- read beta group
+- mobile
+- add a beta tester.
+- list all apps.
+- update app metadata.
+- app store
 slug: app-lifecycle
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apple App Lifecycle\"\n  description: \"Unified workflow for managing the Apple app lifecycle including app metadata, builds, TestFlight beta testing, and beta group management. Used by app developers and release managers.\"\n  tags:\n    - Apple\n    - App Store\n    - TestFlight\n    - App Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPLE_ASC_TOKEN: APPLE_ASC_TOKEN\n\ncapability:\n  consumes:\n    - import: app-store-connect\n      location: ./shared/app-store-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apple-app-lifecycle-api\n      description: \"Unified REST API for Apple app lifecycle management.\"\n      resources:\n        - path: /v1/apps\n          name: apps\n          description: \"App management.\"\n          operations:\n            - method: GET\n              name: list-apps\n              description: \"\
   List all apps.\"\n              call: \"app-store-connect.list-apps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/builds\n          name: builds\n          description: \"Build management.\"\n          operations:\n            - method: GET\n              name: list-builds\n              description: \"List all builds.\"\n              call: \"app-store-connect.list-builds\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/testers\n          name: testers\n          description: \"Beta tester management.\"\n          operations:\n            - method: GET\n              name: list-testers\n              description: \"List beta testers.\"\n              call: \"app-store-connect.list-beta-testers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n             \

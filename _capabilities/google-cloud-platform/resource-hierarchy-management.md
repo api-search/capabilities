@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- platform as a service
-- create tag key
-- delete folder
-- delete project
-- governance
-- infrastructure
-- create folder
-- create a new google cloud project
-- organization operations
-- create a new tag key
-- resource management
 - search for organizations
-- list google cloud projects under a parent
-- cloud computing
-- single project operations
 - project management
-- delete a google cloud project
-- create a folder
-- list tag keys for resource tagging
-- get project details
+- delete a folder
+- search organizations
 - get organization
-- api management
-- create a project
+- delete project
+- get organization details
+- resource management
+- list folders under a parent
+- create tag key
+- get project
+- create a new tag key
+- create a new google cloud project
+- get folder details
+- delete a project
+- update a project
+- get project details
+- folder management
+- organization operations
+- delete a google cloud project
+- list google cloud projects under a parent
+- infrastructure
+- list tag keys
 - list folders
 - search projects
-- search organizations
-- list projects
-- delete a folder
-- get project
-- update a project
-- update project
-- google cloud
-- folder management
-- search for projects matching a query
-- get organization details
-- get folder details
-- list folders under a parent
-- list tag keys
 - create project
-- delete a project
+- single project operations
+- cloud computing
+- create a project
+- update project
+- list projects
+- governance
+- api management
+- create a folder
+- delete folder
+- platform as a service
+- google cloud
+- create folder
+- list tag keys for resource tagging
 - get folder
+- search for projects matching a query
 slug: resource-hierarchy-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Cloud Platform Resource Hierarchy Management\"\n  description: \"Workflow for managing the Google Cloud resource hierarchy including projects, folders, organizations, and tags. Used by cloud administrators and platform engineers.\"\n  tags:\n    - Google Cloud\n    - Resource Management\n    - Governance\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-resource-manager\n      location: ./shared/cloud-resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gcp-resource-api\n      description: \"Unified REST API for GCP resource hierarchy management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - method: GET\n      \
   \        name: list-projects\n              description: \"List projects\"\n              call: \"cloud-resource-manager.list-projects\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: \"Create a project\"\n              call: \"cloud-resource-manager.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{name}\n          name: project\n          description: \"Single project operations\"\n          operations:\n            - method: GET\n              name: get-project\n              description: \"Get project details\"\n              call: \"cloud-resource-manager.get-project\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type:\

@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- get user
-- sign out user
-- update a user.
-- make a user an admin.
-- individual user management.
-- delete user
-- email
-- collaboration
-- list users in the domain.
-- create user
-- create an organizational unit.
-- create a new user.
-- undelete a deleted user.
-- list users in the google workspace domain.
-- individual group management.
-- undelete user
-- user account management.
-- list groups
-- delete a user.
-- calendar
-- delete a group.
-- google workspace
-- sign out a user from all sessions.
-- create group
-- video conferencing
-- storage
-- get user details.
-- list groups in the domain.
-- get group details.
-- create a group.
-- list organizational units.
-- update user
-- patch user
-- delete group
-- user management
-- list org units
-- update a group.
-- patch user properties.
 - productivity
-- create a new user in the domain.
-- group management
-- domain administration
-- update group
-- make user admin
-- get group
-- create a new group.
-- create org unit
-- organizational unit management.
-- list groups.
-- list users
+- create a new user.
+- list organizational units.
+- undelete user
+- list org units
+- email
 - group management.
+- delete group
+- group management
+- get group
+- create an organizational unit.
+- get user
+- delete a group.
+- sign out a user from all sessions.
+- list groups
+- user management
+- update a group.
+- make a user an admin.
+- user account management.
+- list users in the domain.
+- google workspace
+- update user
+- domain administration
+- create user
+- delete a user.
+- create org unit
+- list groups.
+- individual user management.
+- create a new user in the domain.
+- get group details.
+- update group
+- list users
+- list users in the google workspace domain.
+- patch user properties.
+- undelete a deleted user.
+- calendar
+- list groups in the domain.
+- sign out user
+- organizational unit management.
+- patch user
+- individual group management.
+- get user details.
+- video conferencing
+- create a group.
+- create group
+- make user admin
+- delete user
+- update a user.
+- create a new group.
+- collaboration
+- storage
 slug: domain-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Workspace Domain Administration\"\n  description: \"Unified workflow for managing Google Workspace domain resources including users, groups, and organizational units. Used by IT administrators and workspace domain managers.\"\n  tags:\n    - Google Workspace\n    - Domain Administration\n    - User Management\n    - Group Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_WORKSPACE_ACCESS_TOKEN: GOOGLE_WORKSPACE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: gws-admin\n      location: ./shared/admin-directory.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gws-domain-admin-api\n      description: \"Unified REST API for Google Workspace domain administration.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User account management.\"\n          operations:\n            - method:\
   \ GET\n              name: list-users\n              description: \"List users in the domain.\"\n              call: \"gws-admin.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user.\"\n              call: \"gws-admin.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{id}\n          name: user-details\n          description: \"Individual user management.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details.\"\n              call: \"gws-admin.get-user\"\n              with:\n                userKey: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name:\

@@ -24,34 +24,34 @@ provider_name: Backstage
 provider_slug: backstage
 search_terms:
 - register a new catalog location (github repo url, yaml file) to ingest entities
-- software developer using backstage to discover services, bootstrap projects, and read documentation
 - list locations
-- register a new catalog location
-- get catalog entity
-- scaffolding, documentation, and search to accelerate development
-- engineer building and maintaining the internal developer platform and backstage configuration
-- Platform Engineer
-- list all registered catalog locations
-- list all catalog entities
-- list catalog entities
-- developer portal
-- backstage
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- internal developer platform
-- software catalog entities
-- catalog locations
-- list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- get a specific catalog entity by kind, namespace, and name
 - list entities
-- delete an entity from the software catalog
-- register catalog location
+- get a specific catalog entity by kind, namespace, and name
+- list all entities in the backstage software catalog including components, apis, resources, systems, and users
 - list catalog locations
-- delete catalog entity
-- Developer
-- central inventory of all software components, apis, and resources
+- internal developer platform
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
 - open source
+- Platform Engineer
+- developer portal
+- register catalog location
+- delete catalog entity
 - software catalog
+- central inventory of all software components, apis, and resources
+- list all registered catalog locations
+- software catalog entities
+- list all catalog entities
+- delete an entity from the software catalog
+- backstage
+- Developer
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- list catalog entities
 - create location
+- get catalog entity
+- engineer building and maintaining the internal developer platform and backstage configuration
+- register a new catalog location
+- scaffolding, documentation, and search to accelerate development
+- catalog locations
 slug: developer-portal
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Backstage Developer Portal\"\n  description: >-\n    Unified developer portal workflow combining the Backstage Software Catalog, Scaffolder,\n    TechDocs, Search, Auth, and Permissions APIs. Serves platform engineers and developers\n    managing internal developer platforms.\n  tags:\n    - Backstage\n    - Developer Portal\n    - Internal Developer Platform\n    - Software Catalog\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BACKSTAGE_TOKEN: BACKSTAGE_TOKEN\n\ncapability:\n  consumes:\n    - import: backstage-catalog\n      location: ./shared/catalog-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: backstage-portal-api\n      description: \"Unified REST API for Backstage developer portal management.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description: Software catalog entities\n          operations:\n\
   \            - method: GET\n              name: list-entities\n              description: List all catalog entities\n              call: \"backstage-catalog.list-entities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/locations\n          name: locations\n          description: Catalog locations\n          operations:\n            - method: GET\n              name: list-locations\n              description: List catalog locations\n              call: \"backstage-catalog.list-locations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-location\n              description: Register a new catalog location\n              call: \"backstage-catalog.create-location\"\n              with:\n                location_type: \"rest.location_type\"\n                location_target: \"rest.location_target\"\n         \

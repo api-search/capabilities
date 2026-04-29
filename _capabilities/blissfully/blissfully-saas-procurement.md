@@ -23,42 +23,42 @@ personas: []
 provider_name: Blissfully
 provider_slug: blissfully
 search_terms:
+- spend optimization
 - get fair price benchmarks and negotiation guidance
+- software vendor catalog
+- list vendors
+- portfolio visibility, spend optimization, and renewal management
+- get product
+- Finance Analyst
+- evaluates software capabilities and manages the saas portfolio
+- ai procurement
+- pricing intelligence
+- software catalog
+- analyzes saas spend, benchmarks costs, and identifies savings opportunities
+- IT Manager
+- software procurement
+- search and browse software products in the vendr catalog. returns structured attributes, features, and available add-ons.
+- Procurement Manager
+- get pricing insights
+- AI Assistant
+- list software vendors
+- researches software options, benchmarks pricing, and negotiates with vendors
+- create a webhook to receive notifications when vendr pricing or catalog data is updated.
+- software purchasing, negotiation, and vendor management
+- provides ai-assisted procurement recommendations via mcp integration
+- software product catalog search and browsing
+- create webhook
+- list software vendors in the vendr catalog with their product portfolios and category information.
+- search and browse software products in the vendr catalog
+- procurement
+- saas management
+- saas discovery
+- get detailed catalog attributes, features, and add-ons for a specific software product.
 - vendor management
 - get fair price predictions and negotiation guidance for a software product. powered by vendr's database of real software purchases.
-- get pricing insights
-- get detailed catalog attributes, features, and add-ons for a specific software product.
-- list software vendors in the vendr catalog with their product portfolios and category information.
-- Finance Analyst
-- saas management
-- evaluates software capabilities and manages the saas portfolio
-- search and browse software products in the vendr catalog
-- software purchasing, negotiation, and vendor management
 - list products
-- analyzes saas spend, benchmarks costs, and identifies savings opportunities
-- spend optimization
-- software vendor catalog
 - pricing intelligence and negotiation guidance
-- procurement
-- software procurement
 - saas catalog browsing, pricing benchmarks, and negotiation guidance
-- Procurement Manager
-- create webhook
-- provides ai-assisted procurement recommendations via mcp integration
-- portfolio visibility, spend optimization, and renewal management
-- list vendors
-- ai procurement
-- IT Manager
-- researches software options, benchmarks pricing, and negotiates with vendors
-- software product catalog search and browsing
-- AI Assistant
-- pricing intelligence
-- search and browse software products in the vendr catalog. returns structured attributes, features, and available add-ons.
-- get product
-- saas discovery
-- list software vendors
-- software catalog
-- create a webhook to receive notifications when vendr pricing or catalog data is updated.
 slug: blissfully-saas-procurement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Blissfully SaaS Procurement\n  description: >-\n    Workflow capability for SaaS procurement intelligence using Vendr's Catalog and Pricing APIs.\n    Enables procurement teams, finance, and IT to search software catalogs, benchmark pricing,\n    get negotiation guidance, and automate renewal monitoring. Formerly Blissfully, now Vendr.\n  tags:\n    - AI Procurement\n    - Pricing Intelligence\n    - Procurement\n    - SaaS Management\n    - Software Catalog\n    - Vendor Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      VENDR_API_KEY: VENDR_API_KEY\n\ncapability:\n  consumes:\n    - import: vendr\n      location: ./shared/vendr-catalog-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: blissfully-saas-procurement-api\n      description: Unified REST API for SaaS procurement intelligence powered by Vendr data.\n      resources:\n        - path:\
   \ /v1/products\n          name: products\n          description: Software product catalog search and browsing\n          operations:\n            - method: GET\n              name: list-products\n              description: Search and browse software products in the Vendr catalog\n              call: \"vendr.list-products\"\n              with:\n                category: \"rest.category\"\n                vendor_id: \"rest.vendor_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vendors\n          name: vendors\n          description: Software vendor catalog\n          operations:\n            - method: GET\n              name: list-vendors\n              description: List software vendors\n              call: \"vendr.list-vendors\"\n              with:\n                category: \"rest.category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

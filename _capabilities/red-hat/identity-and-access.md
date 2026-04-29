@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- get user
-- list realms
-- list roles
-- list groups in a realm.
-- identity providers.
-- kubernetes
-- identity
-- delete user
-- create user
-- list all realms.
-- list users.
-- red hat
-- linux
-- get realm details.
-- containers
-- delete a user from a realm.
-- realm roles.
-- list all keycloak realms.
-- list groups
-- list identity providers.
-- keycloak
-- list roles.
-- list client applications in a realm.
-- list external identity providers.
-- realm clients.
-- list realm roles
-- cloud
-- get user details.
-- access management
-- list clients
-- list roles in a realm.
 - terminate a user session.
-- register a new client application.
-- create a user.
-- get realm
-- delete session
-- realm groups.
-- realm users.
-- list identity providers
-- list users in a realm.
-- create client
-- get realm configuration details.
-- create a new user in a realm.
-- list clients.
 - keycloak realms.
-- hybrid cloud
+- red hat
+- create a new user in a realm.
+- list realms
+- create a user.
+- list users.
+- list users in a realm.
+- keycloak
+- delete a user from a realm.
+- get user
+- create client
+- list external identity providers.
 - open source
-- specific realm.
-- enterprise
+- list roles
+- delete session
+- get realm configuration details.
+- list clients.
+- list identity providers.
+- containers
+- list groups
+- create user
 - list groups.
+- realm clients.
+- access management
+- identity providers.
+- cloud
+- linux
 - list users
+- list roles.
+- register a new client application.
+- enterprise
+- kubernetes
+- realm users.
+- specific realm.
+- list roles in a realm.
+- realm roles.
+- get user details.
+- realm groups.
+- list realm roles
+- list identity providers
+- identity
+- hybrid cloud
+- delete user
+- list all realms.
+- list clients
+- get realm details.
+- list groups in a realm.
+- list all keycloak realms.
+- get realm
+- list client applications in a realm.
 slug: identity-and-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Identity and Access\"\n  description: \"Identity and access management workflow using Keycloak for managing realms, users, clients, roles, groups, and identity federation. Used by platform admins and security teams.\"\n  tags:\n    - Red Hat\n    - Keycloak\n    - Identity\n    - Access Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      KEYCLOAK_BEARER_TOKEN: KEYCLOAK_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: keycloak-admin\n      location: ./shared/keycloak-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: identity-and-access-api\n      description: \"Unified REST API for identity and access management.\"\n      resources:\n        - path: /v1/realms\n          name: realms\n          description: \"Keycloak realms.\"\n          operations:\n            - method: GET\n              name: list-realms\n             \
   \ description: \"List all realms.\"\n              call: \"keycloak-admin.list-realms\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}\n          name: realm-detail\n          description: \"Specific realm.\"\n          operations:\n            - method: GET\n              name: get-realm\n              description: \"Get realm details.\"\n              call: \"keycloak-admin.get-realm\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}/users\n          name: users\n          description: \"Realm users.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users.\"\n              call: \"keycloak-admin.list-users\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n\

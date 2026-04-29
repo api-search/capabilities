@@ -34,62 +34,62 @@ personas: []
 provider_name: Veritas NetBackup
 provider_slug: veritas-netbackup
 search_terms:
-- update a backup policy.
-- get job try logs
-- get details for a specific backup job.
 - get try logs for a backup job.
-- suspend a running backup job.
-- get job details.
-- veritas
-- update policy
-- get a specific backup policy.
-- list jobs
-- get image contents
-- list backup images in the catalog.
-- list images
-- cancel job
-- list policies
-- create policy
-- get file list for a backup job.
-- get details for a specific client.
-- backup
-- individual job operations.
-- netbackup client management.
-- get file contents of a backup image.
-- list all backup jobs with optional filters.
-- expire image
 - delete policy
-- get client
-- restart job
-- disaster recovery
-- backup policy management.
-- storage
-- resume job
-- list clients
-- login
-- get job
-- get policy
-- list all backup jobs.
-- list all backup policies.
-- expire a backup image.
-- recovery
-- resume a suspended backup job.
 - cancel a running backup job.
-- list all netbackup clients.
-- get image
+- restart a failed backup job.
+- delete a backup policy.
+- disaster recovery
+- get job file list
+- create a new backup policy.
+- get details for a specific client.
 - authenticate to netbackup and obtain a jwt token.
 - suspend job
-- delete a backup policy.
+- get policy
+- expire image
+- restart job
+- get job details.
+- update policy
+- individual job operations.
+- login
 - list backup images.
-- backup job management.
 - list all clients.
+- cancel job
+- get file list for a backup job.
+- resume job
+- get a specific backup policy.
+- expire a backup image.
+- create policy
+- suspend a running backup job.
+- update a backup policy.
+- get details for a specific backup job.
+- get image
+- list all backup jobs.
+- recovery
+- list images
+- veritas
+- backup
+- backup job management.
 - get details for a specific backup image.
-- restart a failed backup job.
-- get job file list
-- backup image catalog.
-- create a new backup policy.
+- list all backup policies.
+- resume a suspended backup job.
+- list policies
 - enterprise
+- list all netbackup clients.
 - data protection
+- get job try logs
+- backup policy management.
+- list jobs
+- backup image catalog.
+- netbackup client management.
+- get image contents
+- list clients
+- list backup images in the catalog.
+- storage
+- get job
+- get file contents of a backup image.
+- get client
+- list all backup jobs with optional filters.
 slug: backup-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Veritas NetBackup Backup Operations\"\n  description: \"Backup operations workflow for backup administrators to manage jobs, policies, clients, and catalog images across NetBackup environments.\"\n  tags:\n    - Veritas\n    - Backup\n    - Data Protection\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NETBACKUP_HOST: NETBACKUP_HOST\n      NETBACKUP_USERNAME: NETBACKUP_USERNAME\n      NETBACKUP_PASSWORD: NETBACKUP_PASSWORD\n\ncapability:\n  consumes:\n    - import: netbackup\n      location: ./shared/netbackup.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: backup-operations-api\n      description: \"Unified REST API for NetBackup backup operations.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: \"Backup job management.\"\n          operations:\n            - method: GET\n              name: list-jobs\n\
   \              description: \"List all backup jobs.\"\n              call: \"netbackup.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobId}\n          name: job\n          description: \"Individual job operations.\"\n          operations:\n            - method: GET\n              name: get-job\n              description: \"Get job details.\"\n              call: \"netbackup.get-job\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Backup policy management.\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List all backup policies.\"\n              call: \"netbackup.list-policies\"\n              outputParameters:\n                - type:\

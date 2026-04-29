@@ -10,22 +10,22 @@ personas: []
 provider_name: AppSumo
 provider_slug: appsumo
 search_terms:
+- activates an appsumo license for a newly onboarded customer
+- saas
 - software deals
-- saas partners
-- validate license
 - managing license activation and status for appsumo purchases
+- saas partners
+- appsumo
+- activate customer license
+- developer integrating appsumo licensing into their product
 - licensing
+- appsumo customer activating a purchased license
+- configuring and managing the appsumo marketplace partnership
+- validates and retrieves details for an appsumo license key
+- marketplace
+- validate license
 - check partner profile
 - checks the appsumo partner profile and integration configuration
-- configuring and managing the appsumo marketplace partnership
-- appsumo customer activating a purchased license
-- saas
-- activates an appsumo license for a newly onboarded customer
-- appsumo
-- marketplace
-- validates and retrieves details for an appsumo license key
-- developer integrating appsumo licensing into their product
-- activate customer license
 - validate and activate appsumo licenses for newly onboarded customers
 slug: license-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AppSumo License Management\n  description: >-\n    Workflow capability for managing AppSumo marketplace licenses within a SaaS partner\n    application. Enables validating purchases, activating licenses, and managing customer\n    access for products sold through the AppSumo marketplace.\n  tags:\n    - AppSumo\n    - Licensing\n    - Marketplace\n    - SaaS Partners\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPSUMO_API_KEY: APPSUMO_API_KEY\n\ncapability:\n  consumes:\n    - import: appsumo\n      location: ./shared/appsumo-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: license-management-mcp\n      transport: http\n      description: MCP server for AI-assisted AppSumo license management in SaaS products.\n      tools:\n        - name: validate-license\n          description: Validates and retrieves details for an AppSumo license key\n     \

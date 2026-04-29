@@ -57,64 +57,64 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get liberty config
-- was stop server
-- get liberty server configuration
-- list applications on liberty
-- ibm websphere
-- list features
-- list liberty collective members
-- list liberty applications
-- list was servers in the cell
-- list installed liberty features
-- get liberty server info
-- get collective controller information
-- enterprise java
-- list was clusters
-- list was configuration resource types
-- was start server
-- was list applications
-- list registered mbeans
-- stop a was server
-- get controller info
-- liberty get server info
-- liberty feature management
+- administration
 - list servers
-- jmx mbean access
 - get liberty server runtime information
-- collective member management
-- server management
+- list applications on traditional was
+- get liberty server info
+- jmx mbean access
+- stop a was server
+- list registered mbeans
+- liberty
+- cloud native
+- get liberty health check results
 - list was servers
-- list deployed applications on traditional websphere
-- get was health
-- start a was server
-- list mbeans
+- list collective members
 - application server
-- was list servers
-- get liberty server information
+- enterprise java
+- list was configuration resource types
+- list was servers in the cell
+- start a was server
+- list deployed applications on liberty
+- was stop server
+- server management
+- cluster management
+- list collective clusters
+- list deployed applications on traditional websphere
+- collective member management
+- application lifecycle management across was and liberty
+- list was clusters
+- ibm websphere
+- liberty list applications
+- list liberty collective members
+- list installed liberty features
+- microservices
+- get liberty config
+- liberty get server info
+- list was applications
+- get was config
+- list mbeans
 - list members
 - list clusters in liberty collective
-- cluster management
-- administration
-- application lifecycle management across was and liberty
-- cloud native
-- list collective members
-- list collective clusters
-- liberty list applications
-- get was config
-- list deployed applications on liberty
-- get was server health status
-- list applications on traditional was
-- server configuration
-- microservices
-- get liberty health
-- middleware
-- get liberty health check results
-- liberty
-- list liberty collective clusters
-- j2ee
+- get was health
 - list jmx mbeans via rest connector
-- list was applications
+- get liberty server information
+- liberty feature management
+- was list servers
+- get controller info
+- get was server health status
+- was list applications
+- list applications on liberty
+- get liberty health
+- get liberty server configuration
+- get collective controller information
+- j2ee
+- middleware
+- list features
+- list liberty collective clusters
+- was start server
+- list liberty applications
+- server configuration
 slug: server-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Server Administration\"\n  description: \"Unified workflow for administering WebSphere Application Server and Liberty environments, combining traditional admin, Liberty admin, collective controller, and JMX connector APIs for platform administrators.\"\n  tags:\n    - IBM WebSphere\n    - Administration\n    - Server Management\n    - Liberty\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n      LIBERTY_USERNAME: LIBERTY_USERNAME\n      LIBERTY_PASSWORD: LIBERTY_PASSWORD\n\ncapability:\n  consumes:\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n    - import: liberty-admin\n      location: ./shared/liberty-admin.yaml\n    - import: rest-connector\n      location: ./shared/rest-connector.yaml\n    - import: collective-controller\n      location: ./shared/collective-controller.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: server-admin-api\n      description: \"Unified REST API for WebSphere server administration.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n          description: \"Application lifecycle management across WAS and Liberty\"\n          operations:\n            - method: GET\n              name: list-was-applications\n              description: \"List applications on traditional WAS\"\n              call: \"admin-rest.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-liberty-applications\n              description: \"List applications on Liberty\"\n              call: \"liberty-admin.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/servers\n          name: servers\n        \

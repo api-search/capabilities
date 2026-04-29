@@ -37,67 +37,67 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- data protection
-- audit data access
-- ingesting events from servers, apps, and offline sources.
-- google analytics
-- builds automated reporting pipelines and dashboards from ga4 data.
-- analytics
-- submit a user data deletion request
-- sets up and maintains ga4 accounts, properties, and configurations.
-- segmenting and exporting user populations for analysis and activation.
-- submit a user data deletion request for gdpr/privacy compliance
-- search through account configuration changes
-- audit who accessed google analytics reporting data and when
-- backend engineer
-- measures campaign performance, segments audiences, and tracks conversions.
-- implements server-side event tracking and offline data collection.
-- connecting ga4 with advertising, app, and measurement platforms.
-- report on who accessed ga4 reporting data
-- run standard, realtime, pivot, and batch reports with data access auditing.
+- manages data privacy compliance including gdpr deletion requests.
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
 - analytics administrator
-- privacy officer
-- run access report
-- audits data access and monitors configuration changes.
-- audit all configuration changes to an account for compliance tracking
-- acknowledge terms of user data collection for a ga4 property
-- gdpr
-- setting up and maintaining ga4 account and property structure.
 - platform engineer
-- audit configuration changes
-- server-side event tracking with data stream and secret management.
-- integrates ga4 with other platforms and manages infrastructure.
-- extracts insights from ga4 data through reports and explorations.
-- machine learning
+- audits data access and monitors configuration changes.
+- acknowledge user data collection terms
+- querying and analyzing ga4 event data through various report types.
+- analytics
 - data protection engineer
+- server-side event tracking with data stream and secret management.
+- submit a user data deletion request for gdpr/privacy compliance
+- measures campaign performance, segments audiences, and tracks conversions.
+- connecting ga4 with advertising, app, and measurement platforms.
+- gdpr
+- implements privacy-compliant data handling and deletion workflows.
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- manage user data collection acknowledgement
+- upsert user deletion request
+- integrates ga4 with other platforms and manages infrastructure.
+- builds automated reporting pipelines and dashboards from ga4 data.
+- compliance team
+- audit data access
+- segmenting and exporting user populations for analysis and activation.
+- search change history events
+- sets up and maintains ga4 accounts, properties, and configurations.
+- web analytics
+- reporting
+- privacy
+- setting up and maintaining ga4 account and property structure.
+- user data deletion, access auditing, and data collection acknowledgement.
+- bi engineer
+- run access report
+- audit all configuration changes to an account for compliance tracking
+- managing data privacy, deletion, and access auditing.
+- marketing team
+- implements server-side event tracking and offline data collection.
+- marketing ops
+- manage user data deletion requests
+- machine learning
+- audit who accessed google analytics reporting data and when
+- attribution
+- connects advertising platforms and implements server-side tracking.
+- data protection
+- metrics
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
 - create, export, and query ga4 audience segments.
 - compliance
-- querying and analyzing ga4 event data through various report types.
-- reporting
-- web analytics
-- attribution
-- acknowledge user data collection
-- privacy
-- compliance team
-- marketing ops
-- manage user data collection acknowledgement
-- manages data privacy compliance including gdpr deletion requests.
-- managing data privacy, deletion, and access auditing.
-- upsert user deletion request
-- connects advertising platforms and implements server-side tracking.
-- search change history events
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- google
-- implements privacy-compliant data handling and deletion workflows.
-- data
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- backend engineer
+- submit a user data deletion request
+- report on who accessed ga4 reporting data
+- google analytics
+- audit configuration changes
 - data analyst
-- marketing team
-- bi engineer
-- metrics
-- acknowledge user data collection terms
-- user data deletion, access auditing, and data collection acknowledgement.
-- manage user data deletion requests
+- acknowledge user data collection
+- ingesting events from servers, apps, and offline sources.
+- data
+- acknowledge terms of user data collection for a ga4 property
+- search through account configuration changes
+- privacy officer
+- google
+- extracts insights from ga4 data through reports and explorations.
 slug: compliance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Analytics Compliance and Privacy\"\n  description: \"Unified workflow for managing data privacy and compliance across Google Analytics. Combines the User Deletion API for GDPR/privacy compliance with the Admin API for data access auditing and user data collection acknowledgement. Used by privacy officers, compliance teams, and data protection engineers.\"\n  tags:\n    - Google Analytics\n    - Compliance\n    - Privacy\n    - GDPR\n    - Data Protection\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ANALYTICS_ACCESS_TOKEN: GOOGLE_ANALYTICS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: ga-user-deletion-api\n      location: ./shared/user-deletion-api.yaml\n    - import: ga-admin-api\n      location: ./shared/admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: ga-compliance-api\n      description: \"Unified REST API for\
   \ Google Analytics compliance and privacy management.\"\n      resources:\n        - path: /v1/user-deletion-requests\n          name: user-deletion-requests\n          description: \"Manage user data deletion requests\"\n          operations:\n            - method: POST\n              name: upsert-user-deletion-request\n              description: \"Submit a user data deletion request\"\n              call: \"ga-user-deletion-api.upsert-user-deletion-request\"\n              with:\n                id_type: \"rest.id_type\"\n                user_id: \"rest.user_id\"\n                property_id: \"rest.property_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/access-reports\n          name: access-reports\n          description: \"Audit data access\"\n          operations:\n            - method: POST\n              name: run-access-report\n              description: \"Report on who accessed GA4 reporting data\"\

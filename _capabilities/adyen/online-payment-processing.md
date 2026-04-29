@@ -40,51 +40,51 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- e-commerce
-- authorise a payment via classic adyen payments api.
-- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
-- list available payment methods.
-- create an adyen checkout session for hosted payment flows.
+- merchant account and balance platform configuration.
 - chargeback and dispute handling.
-- authorise a payment.
-- payments
-- initiate and manage payments.
-- cancel an authorised payment.
-- cancel authorised payments.
-- list available payment methods for a shopper based on their context.
-- initiate a payment via adyen checkout api.
-- capture a previously authorised payment.
-- online and in-person payment acceptance.
-- authorise payment
-- capture payment
-- refund a completed payment using its psp reference.
-- create checkout session
-- capture an authorised payment.
-- capture authorised payments.
-- create a payment via checkout api.
-- cancel an authorised payment before capture.
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- list payment methods
 - 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- builds payment integrations using adyen apis and sdks.
-- fintech
-- checkout
-- authorise a payment via classic payments api.
-- marketplace and platform fund management.
-- manages merchant accounts, terminals, and dispute responses.
+- create a payment via checkout api.
+- create checkout sessions for hosted payment flows.
+- cancel payment
+- list available payment methods.
+- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- refund a completed payment using its psp reference.
+- capture a previously authorised payment.
 - get available payment methods for a shopper.
 - refund payment
-- refund completed payments.
-- refund a payment.
-- builds marketplace and fintech platforms using adyen balance platform.
-- online payments
-- create a checkout session.
-- create payment
 - financial services
-- cancel payment
+- authorise a payment via classic payments api.
+- cancel an authorised payment.
+- builds marketplace and fintech platforms using adyen balance platform.
+- capture authorised payments.
+- refund completed payments.
+- capture an authorised payment.
+- authorise a payment.
+- list payment methods
+- capture payment
+- fintech
+- create checkout session
+- marketplace and platform fund management.
+- authorise payment
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- manages merchant accounts, terminals, and dispute responses.
+- online payments
+- cancel authorised payments.
+- refund a payment.
+- create an adyen checkout session for hosted payment flows.
+- payments
+- create a checkout session.
+- builds payment integrations using adyen apis and sdks.
 - adyen
-- create checkout sessions for hosted payment flows.
-- merchant account and balance platform configuration.
+- authorise a payment via classic adyen payments api.
+- list available payment methods for a shopper based on their context.
+- initiate a payment via adyen checkout api.
+- online and in-person payment acceptance.
+- e-commerce
+- cancel an authorised payment before capture.
+- checkout
+- initiate and manage payments.
+- create payment
 slug: online-payment-processing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adyen Online Payment Processing\"\n  description: \"Unified capability for accepting and managing online payments. Combines the Checkout API and Payments API to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. Primary persona: Developer or Merchant Platform Engineer.\"\n  tags:\n    - Adyen\n    - Payments\n    - Checkout\n    - Online Payments\n    - E-Commerce\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADYEN_API_KEY: ADYEN_API_KEY\n\ncapability:\n  consumes:\n    - import: checkout\n      location: ./shared/checkout.yaml\n    - import: payments\n      location: ./shared/payments.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adyen-online-payments-api\n      description: \"Unified REST API for Adyen online payment processing workflows.\"\
   \n      resources:\n        - path: /v1/sessions\n          name: checkout-sessions\n          description: \"Create checkout sessions for hosted payment flows.\"\n          operations:\n            - method: POST\n              name: create-checkout-session\n              description: \"Create a checkout session.\"\n              call: \"checkout.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payment-methods\n          name: payment-methods\n          description: \"Get available payment methods for a shopper.\"\n          operations:\n            - method: POST\n              name: list-payment-methods\n              description: \"List available payment methods.\"\n              call: \"checkout.list-payment-methods\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description:\

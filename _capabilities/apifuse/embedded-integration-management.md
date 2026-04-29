@@ -31,37 +31,37 @@ provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
 - create a new automation workflow connecting two or more integrated platforms.
-- developer implementing and automating embedded integration workflows.
-- apifuse
-- create a workflow.
-- browse pre-built connectors.
-- browse all available embedded integrations, optionally filtered by category.
-- workflow automation
-- marketplace
-- list workflows.
-- saas
-- manage workflows.
-- integration platform
-- list workflows
-- product manager building native integrations into a saas product.
-- get analytics data.
-- list connectors
-- integrations
-- SaaS Product Manager
-- ipaas
-- browse and manage integrations.
-- Integration Developer
-- managing native integrations within saas products.
-- list all integration workflows configured in the embedded marketplace.
-- list all integrations.
-- integration analytics.
-- list all connectors.
-- create workflow
-- list all pre-built connectors available for embedding into your saas product.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- get analytics
-- list integrations
 - embedded integrations
+- list all pre-built connectors available for embedding into your saas product.
+- list all connectors.
+- SaaS Product Manager
+- Integration Developer
+- developer implementing and automating embedded integration workflows.
+- integration platform
+- integration analytics.
+- marketplace
+- integrations
+- list all integrations.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- ipaas
+- list all integration workflows configured in the embedded marketplace.
+- get analytics data.
+- managing native integrations within saas products.
+- create workflow
+- saas
+- create a workflow.
+- product manager building native integrations into a saas product.
+- workflow automation
+- browse and manage integrations.
+- manage workflows.
+- list integrations
+- browse pre-built connectors.
+- list workflows.
+- get analytics
+- browse all available embedded integrations, optionally filtered by category.
+- apifuse
+- list connectors
+- list workflows
 slug: embedded-integration-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apifuse Embedded Integration Management\"\n  description: \"Unified workflow for managing embedded integrations within SaaS products - browsing connectors, building workflows, monitoring usage analytics, and managing user connections.\"\n  tags:\n    - Apifuse\n    - Embedded Integrations\n    - Workflow Automation\n    - SaaS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIFUSE_API_KEY: APIFUSE_API_KEY\n\ncapability:\n  consumes:\n    - import: apifuse\n      location: ./shared/apifuse.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apifuse-integration-api\n      description: \"Unified REST API for managing Apifuse embedded integrations.\"\n      resources:\n        - path: /v1/integrations\n          name: integrations\n          description: \"Browse and manage integrations.\"\n          operations:\n            - method: GET\n              name:\
   \ list-integrations\n              description: \"List all integrations.\"\n              call: \"apifuse.list-integrations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connectors\n          name: connectors\n          description: \"Browse pre-built connectors.\"\n          operations:\n            - method: GET\n              name: list-connectors\n              description: \"List all connectors.\"\n              call: \"apifuse.list-connectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows\n          name: workflows\n          description: \"Manage workflows.\"\n          operations:\n            - method: GET\n              name: list-workflows\n              description: \"List workflows.\"\n              call: \"apifuse.list-workflows\"\n              outputParameters:\n                - type: object\n               \

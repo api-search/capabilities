@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
+- list supported crops
 - crop advisory
-- list all crop types supported by agrio's ai diagnosis service.
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- account credit management.
-- field specialists diagnosing plant health issues in crops
+- diagnose plant diseases and pests from an uploaded image.
+- check credit balance
+- pest detection
 - check remaining api credits for plant diagnosis requests.
-- diagnose plant disease
+- developers building crop advisory and farm management applications
+- account credit management.
+- Crop Advisor
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
+- agriculture
+- list all supported crop types.
+- ai
+- supported crop types for diagnosis
 - agrio
-- plant health diagnosis.
-- diagnose
+- disease and pest identification from plant images
+- diagnose plant disease
+- list all crop types supported by agrio's ai diagnosis service.
+- ai-powered plant disease diagnosis and crop advisory
 - get credit
+- crop protection
+- diagnose
+- plant disease
+- get current credit balance.
 - list crops
 - supported crop catalog.
-- Precision Agriculture Developer
-- agricultural consultants providing plant health recommendations
 - Agronomist
-- ai-powered plant disease diagnosis and crop advisory
-- plant disease
-- disease and pest identification from plant images
 - ai diagnosis
-- developers building crop advisory and farm management applications
-- diagnose plant diseases and pests from an uploaded image.
-- pest detection
-- agriculture
-- ai
-- list supported crops
-- list all supported crop types.
-- crop protection
-- supported crop types for diagnosis
-- check credit balance
-- Crop Advisor
+- agricultural consultants providing plant health recommendations
+- plant health diagnosis.
 - credit balance and api usage monitoring
-- get current credit balance.
+- Precision Agriculture Developer
+- field specialists diagnosing plant health issues in crops
 slug: crop-protection
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Agrio Crop Protection\n  description: >-\n    Unified crop protection capability combining Agrio's AI-powered plant disease\n    diagnosis, pest detection, and crop advisory services. Used by agronomists,\n    crop advisors, and precision agriculture platforms to identify plant health\n    issues and recommend treatments.\n  tags:\n    - Agrio\n    - Agriculture\n    - Plant Disease\n    - Crop Protection\n    - AI Diagnosis\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AGRIO_API_KEY: AGRIO_API_KEY\n\ncapability:\n  consumes:\n    - import: agrio\n      location: ./shared/agrio-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: crop-protection-api\n      description: Unified REST API for AI-powered crop protection and plant disease diagnosis.\n      resources:\n        - path: /v1/credit\n          name: credit\n          description: Account credit\
   \ management.\n          operations:\n            - method: GET\n              name: get-credit\n              description: Get current credit balance.\n              call: \"agrio.get-credit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/crops\n          name: crops\n          description: Supported crop catalog.\n          operations:\n            - method: GET\n              name: list-crops\n              description: List all supported crop types.\n              call: \"agrio.get-supported-crops\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diagnose\n          name: diagnose\n          description: Plant health diagnosis.\n          operations:\n            - method: POST\n              name: diagnose\n              description: Diagnose plant diseases and pests from an uploaded image.\n              call: \"agrio.diagnose-plant\"\

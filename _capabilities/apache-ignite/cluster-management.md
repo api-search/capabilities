@@ -22,33 +22,33 @@ personas: []
 provider_name: Apache Ignite
 provider_slug: apache-ignite
 search_terms:
-- execute sql queries on the distributed ignite cluster
-- get configuration
-- distributed database
-- engineers who deploy and maintain ignite clusters in production
-- Database Administrator
-- retrieve the current state and health of the apache ignite cluster
-- retrieve the current apache ignite cluster configuration
-- database administrators and platform engineers managing ignite clusters
-- in-memory database
-- Platform Engineer
-- sql
-- database administration
-- execute sql
 - get cluster configuration
-- dbas who manage ignite cluster health, configuration, and sql workloads
-- cluster management
-- caching
-- update apache ignite cluster configuration parameters
-- get cluster state
+- execute sql
+- execute sql queries on the distributed ignite cluster
+- Database Administrator
+- engineers who deploy and maintain ignite clusters in production
+- init cluster
 - initialize a new apache ignite cluster
+- open source
+- Platform Engineer
 - execute sql query
+- cluster management
+- sql
+- database administrators and platform engineers managing ignite clusters
+- dbas who manage ignite cluster health, configuration, and sql workloads
+- in-memory database
+- retrieve the current apache ignite cluster configuration
+- caching
+- distributed database
+- update apache ignite cluster configuration parameters
+- database administration
+- update configuration
+- retrieve the current state and health of the apache ignite cluster
+- get configuration
+- in-memory
+- get cluster state
 - compute grid
 - apache ignite
-- open source
-- in-memory
-- init cluster
-- update configuration
 slug: cluster-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Ignite Cluster Management\"\n  description: \"Workflow capability for database administrators and platform engineers to manage Apache Ignite clusters, execute SQL queries, and configure distributed nodes.\"\n  tags:\n    - Apache Ignite\n    - Cluster Management\n    - Database Administration\n    - In-Memory Database\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      IGNITE_BASIC_AUTH: IGNITE_BASIC_AUTH\n\ncapability:\n  consumes:\n    - import: ignite-rest-api\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ignite-cluster-management-api\n      description: \"Unified REST API for Apache Ignite cluster management.\"\n      resources:\n        - path: /v1/cluster\n          name: cluster\n          operations:\n            - method: GET\n              name: get-cluster-state\n              description: Get cluster\
   \ state\n              call: \"ignite-rest-api.get-cluster-state\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sql\n          name: sql\n          operations:\n            - method: POST\n              name: execute-sql\n              description: Execute SQL query\n              call: \"ignite-rest-api.execute-sql\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/configuration\n          name: configuration\n          operations:\n            - method: GET\n              name: get-configuration\n              description: Get cluster configuration\n              call: \"ignite-rest-api.get-configuration\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: ignite-cluster-management-mcp\n      transport: http\n      description: \"MCP server\

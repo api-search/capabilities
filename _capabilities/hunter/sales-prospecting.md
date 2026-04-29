@@ -54,68 +54,68 @@ personas: []
 provider_name: Hunter
 provider_slug: hunter
 search_terms:
-- update a lead.
-- find the most likely email for a person at a company.
-- delete a lead.
-- discover companies
-- create leads list
-- search for emails by domain.
-- company enrichment.
-- list all lead lists.
-- email
-- create lead
-- enrich email
-- list campaigns
-- company discovery.
-- lead generation
+- verify email
+- enrich personal data from email.
 - sales prospecting
-- search for email addresses by domain.
-- discover companies.
-- email enrichment.
-- enrich company data from domain.
-- enrich personal data from email address.
-- get lead details.
-- discover companies matching criteria.
-- get lead
-- list all leads.
-- list all email campaigns.
-- get account information and usage.
-- update lead
-- sales intelligence
-- find email for a person.
-- find email addresses.
+- find email
 - email verification
+- contact discovery
+- email
+- list leads lists
+- search emails by domain.
+- enrich personal data from email address.
+- get lead
+- find the most likely email for a person at a company.
+- get account
+- list all leads.
+- enrich company
+- discover companies
+- create a new lead.
+- get combined person and company data.
+- find email addresses.
+- delete lead
+- list all lead lists.
+- create lead
+- create a lead.
+- find email for a person.
+- sales intelligence
+- update a lead.
+- get lead details.
+- enrich email
+- company discovery.
+- domain search
+- update lead
+- enrich company data from domain.
 - create a new lead list.
+- delete a lead list.
+- verify emails.
+- individual lead management.
+- list leads
+- company enrichment.
+- get account information and usage.
+- list all email campaigns.
+- lead generation
+- email enrichment.
+- hunter
+- get lead list details.
 - delete leads list
+- count emails
+- update a lead list.
+- update leads list
+- delete a lead.
+- discover companies.
+- email outreach
+- discover companies matching criteria.
+- list campaigns
 - enrich combined
 - prospecting
-- list leads
-- search emails by domain.
-- verify email deliverability.
-- get lead list details.
-- create a new lead.
-- get account
-- get combined person and company data.
-- create a lead.
-- lead management.
-- delete a lead list.
-- individual lead management.
-- find email
-- delete lead
-- verify email
-- email outreach
-- update a lead list.
 - get leads list
-- count emails
-- enrich company
-- hunter
+- search for emails by domain.
 - count emails for a domain.
-- contact discovery
-- enrich personal data from email.
-- list leads lists
-- domain search
-- verify emails.
-- update leads list
+- create leads list
+- lead management.
+- verify email deliverability.
+- search for email addresses by domain.
 slug: sales-prospecting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hunter Sales Prospecting\"\n  description: \"Unified workflow for sales prospecting including email discovery, verification, enrichment, lead management, and outreach campaigns. Used by sales development representatives and marketing teams.\"\n  tags:\n    - Hunter\n    - Sales Prospecting\n    - Lead Generation\n    - Email Outreach\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUNTER_API_KEY: HUNTER_API_KEY\n\ncapability:\n  consumes:\n    - import: hunter\n      location: ./shared/hunter-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hunter-prospecting-api\n      description: \"Unified REST API for Hunter sales prospecting workflows.\"\n      resources:\n        - path: /v1/domain-search\n          name: domain-search\n          description: \"Search emails by domain.\"\n          operations:\n            - method: GET\n              name:\
   \ domain-search\n              description: \"Search for emails by domain.\"\n              call: \"hunter.domain-search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-finder\n          name: email-finder\n          description: \"Find email addresses.\"\n          operations:\n            - method: GET\n              name: find-email\n              description: \"Find email for a person.\"\n              call: \"hunter.find-email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-verifier\n          name: email-verifier\n          description: \"Verify emails.\"\n          operations:\n            - method: GET\n              name: verify-email\n              description: \"Verify email deliverability.\"\n              call: \"hunter.verify-email\"\n              outputParameters:\n                - type: object\n             \

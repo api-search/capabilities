@@ -39,42 +39,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve pending campus approval requests.
-- campus approval requests
-- retrieve details for a specific student.
-- erp
-- financial aid
-- financial management
-- peopletools platform services.
-- retrieve student records.
-- list financial aid awards
-- list pending approvals
-- retrieve financial aid award data.
-- admissions
-- class schedule and enrollment data
-- campus solutions
-- individual student details
-- retrieve class schedule and enrollment data.
-- financial aid awards
-- get student
-- retrieve admission applications.
-- higher education
-- individual approval operations
-- hcm
-- peoplesoft
-- financial and supply chain management.
-- process approval
-- human capital management.
-- crm
-- list admission applications
-- student records
-- supply chain management
-- campus solutions.
-- list students
 - list classes
-- enterprise software
+- crm
+- retrieve details for a specific student.
+- financial management
+- retrieve class schedule and enrollment data.
+- campus solutions.
+- retrieve pending campus approval requests.
+- higher education
+- retrieve financial aid award data.
 - approve, deny, or push back a campus approval request.
+- financial and supply chain management.
+- financial aid
+- erp
+- admissions
+- process approval
+- hcm
+- class schedule and enrollment data
 - admission applications
+- human capital management.
+- enterprise software
+- peoplesoft
+- campus solutions
+- list students
+- student records
+- list admission applications
+- supply chain management
+- list financial aid awards
+- individual approval operations
+- retrieve student records.
+- financial aid awards
+- retrieve admission applications.
+- individual student details
+- peopletools platform services.
+- campus approval requests
+- list pending approvals
+- get student
 slug: campus-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Campus Administration\"\n  description: \"Unified workflow for campus administrators combining student records, admissions, enrollment, financial aid, and approval workflows across PeopleSoft Campus Solutions and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Campus Solutions\n    - Higher Education\n    - Student Records\n    - Admissions\n    - Financial Aid\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: campus-solutions\n      location: ./shared/campus-solutions.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: campus-api\n      description: \"Unified REST API for PeopleSoft campus administration workflows.\"\
   \n      resources:\n        - path: /v1/students\n          name: students\n          description: \"Student records\"\n          operations:\n            - method: GET\n              name: list-students\n              description: \"Retrieve student records.\"\n              call: \"campus-solutions.list-students\"\n              with:\n                term: \"rest.term\"\n                program: \"rest.program\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/students/{studentId}\n          name: student-detail\n          description: \"Individual student details\"\n          operations:\n            - method: GET\n              name: get-student\n              description: \"Retrieve details for a specific student.\"\n              call: \"campus-solutions.get-student\"\n              with:\n                studentId: \"rest.studentId\"\n              outputParameters:\n                - type: object\n       \

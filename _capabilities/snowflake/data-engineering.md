@@ -56,71 +56,71 @@ provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
 - list scheduled tasks
-- resume a suspended task
-- list udfs
-- data lakes
-- suspend task
-- execute function
-- list user defined functions
-- suspend a running task
-- create pipe
-- list data ingestion pipes
-- data pipelines
-- list functions
-- create a stored procedure
-- resume task
-- list streams
-- execute task
-- create a task
-- refresh pipe
-- create a stream
-- get statement status
-- create a pipe for continuous ingestion
 - etl
-- list stage files
-- execute a function
-- create stream
-- stream management
-- refresh a pipe
-- get query result
-- list pipes
-- sql
-- task management
-- cancel a running statement
+- suspend task
+- create function
+- get statement status
+- cancel statement
+- list user defined functions
+- list udfs
+- data warehousing
 - submit a sql statement
+- list change data capture streams
+- task management
+- list data ingestion pipes
+- create a cdc stream
+- create a function
+- data lakes
+- data sharing
+- list data loading stages
+- stream management
+- create a pipe for continuous ingestion
+- pipe management
+- list pipes
+- list stages
+- submit statement
+- create stream
+- list streams
+- create stage
+- execute a task immediately
+- refresh pipe
 - call a stored procedure
-- database
+- create pipe
+- resume task
+- create a stored procedure
+- data pipelines
+- sql
+- list files in a stage
+- get query result
+- create task
+- get status of a submitted statement
+- refresh a pipe
+- execute function
+- call procedure
+- stage management
+- execute a function
+- list stored procedures
+- create procedure
+- create a stream
+- submit a sql statement for execution
+- data engineering
+- submit sql
 - snowflake
 - list procedures
-- submit sql
-- list stages
-- submit a sql statement for execution
-- execute a task immediately
-- list stored procedures
-- data warehousing
-- call procedure
-- create task
-- create a stage
-- stage management
-- create a function
-- create stage
-- list files in a stage
-- sql statement execution
-- list data loading stages
-- data sharing
-- create procedure
-- cancel statement
-- list tasks
 - create a pipe
+- execute task
 - get a query result
-- list change data capture streams
-- get status of a submitted statement
-- pipe management
-- create function
+- database
+- suspend a running task
+- create a stage
+- list functions
+- list tasks
+- create a task
+- cancel a running statement
+- list stage files
+- sql statement execution
 - create a scheduled task
-- submit statement
-- data engineering
-- create a cdc stream
+- resume a suspended task
 slug: data-engineering
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Data Engineering\"\n  description: \"Unified workflow for building and managing data pipelines using SQL execution, tasks, streams, pipes, stages, and functions. Used by Data Engineers to orchestrate ETL/ELT workflows and continuous data ingestion.\"\n  tags:\n    - Snowflake\n    - Data Engineering\n    - ETL\n    - Data Pipelines\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-sql\n      location: ./shared/sqlapi.yaml\n    - import: snowflake-task\n      location: ./shared/task.yaml\n    - import: snowflake-stream\n      location: ./shared/stream.yaml\n    - import: snowflake-pipe\n      location: ./shared/pipe.yaml\n    - import: snowflake-stage\n      location: ./shared/stage.yaml\n    - import: snowflake-function\n\
   \      location: ./shared/function.yaml\n    - import: snowflake-procedure\n      location: ./shared/procedure.yaml\n    - import: snowflake-udf\n      location: ./shared/user-defined-function.yaml\n    - import: snowflake-result\n      location: ./shared/result.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: snowflake-data-eng-api\n      description: \"Unified REST API for Snowflake data pipeline management.\"\n      resources:\n        - path: /v1/statements\n          name: statements\n          description: \"SQL statement execution\"\n          operations:\n            - method: POST\n              name: submit-statement\n              description: \"Submit a SQL statement\"\n              call: \"snowflake-sql.submit-statement\"\n        - path: /v1/tasks\n          name: tasks\n          description: \"Task management\"\n          operations:\n            - method: GET\n              name: list-tasks\n              description: \"List tasks\"\n         \

@@ -51,65 +51,65 @@ personas: []
 provider_name: Adobe Lightroom
 provider_slug: lightroom
 search_terms:
-- get catalog
-- get develop xmp
-- metadata
-- photo management
-- get a rendition.
-- delete an album.
-- asset renditions.
-- photography
-- edit image
-- add assets to an album.
-- list assets in a catalog.
-- get the user's catalog.
-- get a specific photo asset.
-- ai image editing
-- image editing.
-- cloud storage
-- list albums
-- photo assets.
-- get a rendered version of an asset.
-- apply lightroom presets to an image.
-- album assets.
-- ai auto straighten.
-- lightroom
-- photo albums.
 - get the lightroom catalog.
 - add assets to album
-- specific asset operations.
-- upload an original master file.
-- create or update album
-- adobe
-- list album assets
-- lightroom catalog.
-- apply ai auto straighten.
-- preset application.
-- list albums.
-- get album
+- metadata
 - edit an image.
-- apply auto tone.
-- delete album
-- apply programmatic edits to an image.
-- ai auto tone.
-- apply presets
-- list assets in an album.
-- upload master
-- get a specific album.
-- get rendition
-- image editing
-- list assets
-- get xmp develop settings.
+- get develop xmp
+- image editing.
+- add assets to an album.
 - apply ai auto tone adjustment.
+- album assets.
+- ai auto straighten.
 - auto tone
-- auto straighten
-- apply presets.
-- apply auto straighten.
+- get catalog
+- upload an original master file.
+- asset renditions.
+- list assets
+- lightroom
+- get asset details.
+- list albums
+- apply auto tone.
+- get rendition
+- list photo albums.
+- photography
 - get asset
 - list photo assets in a catalog.
-- list photo albums.
-- get asset details.
+- list albums.
+- get album
+- specific asset operations.
+- get a rendition.
+- apply presets.
+- create or update album
+- cloud storage
+- photo management
+- get xmp develop settings.
+- lightroom catalog.
 - create or update an album.
+- preset application.
+- apply ai auto straighten.
+- apply auto straighten.
+- ai image editing
+- get a specific album.
+- list assets in a catalog.
+- adobe
+- list album assets
+- get a rendered version of an asset.
+- get a specific photo asset.
+- get the user's catalog.
+- photo assets.
+- auto straighten
+- apply programmatic edits to an image.
+- image editing
+- list assets in an album.
+- edit image
+- upload master
+- apply lightroom presets to an image.
+- delete album
+- delete an album.
+- ai auto tone.
+- photo albums.
+- apply presets
 slug: photo-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Lightroom Photo Management\"\n  description: \"Unified workflow combining Lightroom cloud services for catalog, asset, and album management with Firefly Services AI-powered editing. Used by photographers and creative developers to manage and enhance photos programmatically.\"\n  tags:\n    - Adobe\n    - Lightroom\n    - Photography\n    - AI Image Editing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_OAUTH_TOKEN: ADOBE_OAUTH_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n\ncapability:\n  consumes:\n    - import: lightroom-services\n      location: ./shared/lightroom-services.yaml\n    - import: firefly-services\n      location: ./shared/firefly-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: photo-management-api\n      description: \"Unified REST API for Lightroom photo management and AI editing.\"\n      resources:\n        - path:\
   \ /v1/catalog\n          name: catalog\n          description: \"Lightroom catalog.\"\n          operations:\n            - method: GET\n              name: get-catalog\n              description: \"Get the user's catalog.\"\n              call: \"lightroom-services.get-catalog\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Photo assets.\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List assets in a catalog.\"\n              call: \"lightroom-services.list-assets\"\n              with:\n                catalog_id: \"rest.catalog_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets/{asset_id}\n          name: asset-detail\n          description: \"Specific asset operations.\"\n          operations:\n         \

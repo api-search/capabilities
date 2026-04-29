@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process a cloud commerce transaction
-- e-commerce
-- digital identity
-- merchant
 - checkout session management
-- create an installment plan
 - get payment
-- process payment
-- register a contactless reader device
-- generate qr code
-- payments
-- create a new checkout session
-- qr code payment acceptance
+- merchant
 - process cloud transaction
-- open banking
-- retrieve payment transaction details
-- generate a merchant qr code for payment
 - generate a merchant-presented qr code for payment
-- create checkout session
-- process a payment through the mastercard gateway
-- fraud detection
-- unified checkout sessions
 - get payment details
-- checkout
-- create a unified checkout session supporting multiple payment methods
-- credit cards
-- buy-now-pay-later installment plans
-- create a new checkout session for a merchant
-- create installment plan
-- payment processing
-- financial services
-- mastercard
+- process payment
+- fraud detection
 - create unified session
+- financial services
 - process a payment through the gateway
-- create a unified checkout session
-- create a buy-now-pay-later installment plan
 - register contactless reader
+- buy-now-pay-later installment plans
+- process a cloud commerce transaction
+- create a new checkout session
+- process a payment through the mastercard gateway
+- create a unified checkout session
+- create checkout session
+- create an installment plan
+- retrieve payment transaction details
+- create a buy-now-pay-later installment plan
+- generate a merchant qr code for payment
+- create installment plan
+- qr code payment acceptance
+- digital identity
+- payments
+- open banking
+- generate qr code
+- unified checkout sessions
+- create a unified checkout session supporting multiple payment methods
+- e-commerce
+- payment processing
+- checkout
+- register a contactless reader device
+- mastercard
+- credit cards
+- create a new checkout session for a merchant
 slug: payment-processing-and-checkout
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Payment Processing and Checkout\"\n  description: \"Unified workflow for merchants and payment processors to manage checkout experiences, process payments, and accept contactless transactions across Mastercard's payment gateway, checkout solutions, and commerce APIs.\"\n  tags:\n    - Mastercard\n    - Payment Processing\n    - Checkout\n    - E-Commerce\n    - Merchant\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: checkout-solutions\n      location: ./shared/checkout-solutions.yaml\n    - import: unified-checkout\n      location: ./shared/unified-checkout-solutions.yaml\n    - import: cloud-commerce\n      location: ./shared/cloud-commerce.yaml\n    - import: contactless-reader\n      location: ./shared/contactless-reader-sdk.yaml\n\
   \    - import: gateway\n      location: ./shared/gateway.yaml\n    - import: merchant-qr\n      location: ./shared/merchant-presented-qr.yaml\n    - import: installments\n      location: ./shared/installments.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: payment-checkout-api\n      description: \"Unified REST API for Mastercard payment processing and checkout workflows.\"\n      resources:\n        - path: /v1/checkout-sessions\n          name: checkout-sessions\n          description: \"Checkout session management\"\n          operations:\n            - method: POST\n              name: create-checkout-session\n              description: \"Create a new checkout session\"\n              call: \"checkout-solutions.initiate-checkout\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/unified-sessions\n          name: unified-sessions\n          description: \"Unified checkout sessions\"\n  \

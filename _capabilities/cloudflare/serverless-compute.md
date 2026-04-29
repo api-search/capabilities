@@ -42,79 +42,79 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- pages list projects
-- list durable object namespaces.
-- queues create queue
 - create a worker deployment.
-- create a pages project.
-- list queues.
-- durable object namespace management.
-- dns
-- list durable objects in a namespace.
-- workers list workers
-- list worker routes.
-- create a message queue.
-- list all workers.
-- list pages projects.
-- workers list deployments
-- pages create project
-- durable objects list namespaces
-- list all workers for an account.
-- list workers
-- list worker scripts
-- workers list scripts
-- list worker secrets.
-- worker script management.
-- pages list deployments
-- web performance
-- real-time communication
-- list message queues.
-- pull messages from a queue.
-- send a message to a queue.
 - artificial intelligence
-- rollback a pages deployment.
-- pages project management.
-- workers create deployment
-- workers list secrets
-- delete a queue.
+- security
+- list pages deployments
+- list worker scripts
+- list worker scripts.
+- pages create project
+- queues send message
+- real-time communication
+- dns
+- pages list deployments
 - edge
-- list worker deployments.
-- queues delete queue
-- cloudflare
-- workers list routes
-- cloud
-- platform
-- serverless
-- list deployments
-- api gateway
 - pages deployment management.
+- get pages project details.
+- list all workers for an account.
+- create a pages project.
+- create a message queue.
+- send a message to a queue.
+- web performance
+- queue management.
+- list worker deployments.
+- list queues.
+- deployment
+- workers list deployments
+- list pages projects.
+- list worker secrets.
+- api gateway
+- list message queues.
+- queues create queue
+- workers list secrets
+- containers
+- pages list projects
+- queues pull messages
+- list pages deployments.
+- list queues
 - upload a worker script.
+- pull messages from a queue.
+- delete a worker script.
+- object storage
+- list worker routes.
 - pages get project
 - durable objects list objects
-- ddos protection
-- delete a worker script.
-- containers
-- ai gateway
-- list worker scripts.
+- queues delete queue
 - cdn
-- list queues
-- workers delete script
-- security
-- object storage
-- queue management.
-- edge computing
-- get pages project details.
-- list pages deployments.
-- queues pull messages
-- deployment
-- workers upload script
+- list durable object namespaces.
+- list all workers.
+- workers list workers
+- cloud
 - queues list queues
-- worker deployment management.
+- worker script management.
+- workers list routes
+- workers upload script
+- workers delete script
+- list workers
+- delete a queue.
+- cloudflare
+- ai gateway
+- durable object namespace management.
 - pages rollback deployment
-- list pages projects
+- ddos protection
+- workers list scripts
+- rollback a pages deployment.
+- platform
+- workers create deployment
+- serverless
 - list durable object namespaces
-- list pages deployments
-- queues send message
+- list deployments
+- durable objects list namespaces
+- pages project management.
+- edge computing
+- worker deployment management.
+- list durable objects in a namespace.
+- list pages projects
 slug: serverless-compute
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Serverless Compute\"\n  description: \"Deploy and manage serverless applications on Cloudflare's edge network combining Workers scripts, Pages deployments, Durable Objects for state, and Queues for async messaging. Used by developers and platform engineers building edge-first applications.\"\n  tags:\n    - Cloudflare\n    - Serverless\n    - Edge Computing\n    - Deployment\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-workers\n      location: ./shared/workers.yaml\n    - import: cloudflare-pages\n      location: ./shared/pages.yaml\n    - import: cloudflare-durable-objects\n      location: ./shared/durable-objects.yaml\n    - import: cloudflare-queues\n      location: ./shared/queues.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: serverless-compute-api\n\
   \      description: \"Unified REST API for Cloudflare serverless compute management.\"\n      resources:\n        - path: /v1/workers\n          name: workers\n          description: \"Worker script management.\"\n          operations:\n            - method: GET\n              name: list-workers\n              description: \"List all Workers.\"\n              call: \"cloudflare-workers.list-workers\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/scripts\n          name: scripts\n          description: \"Worker script management.\"\n          operations:\n            - method: GET\n              name: list-worker-scripts\n              description: \"List Worker scripts.\"\n              call: \"cloudflare-workers.list-worker-scripts\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n     \

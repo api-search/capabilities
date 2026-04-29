@@ -83,89 +83,89 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- create or update file
-- t1
-- list releases
-- software development
-- get commit
-- request reviewers for a pull request
-- searchRepositories
-- createOrUpdateFileContents
-- update a pull request
-- pull request merge
-- get repository content
-- submit a review for a pull request
-- commit operations
-- getRepository
-- create a pull request
-- repositories
-- branch operations
-- source control
-- getRepositoryContent
-- compareTwoCommits
-- mergePullRequest
-- get a repository
-- update branch protection
-- createReviewForPullRequest
-- updateRepository
-- list commits
-- listPublicRepositories
-- list tags
-- compare commits
-- listPullRequests
-- pipelines
-- listReviewsForPullRequest
-- list pull requests
-- merge branch
-- createRelease
-- submit review
-- pull request management
-- get a branch
-- createPullRequest
-- code review
-- list reviews for a pull request
-- list pull request files
-- search repositories
-- updatePullRequest
-- branches
-- release management
-- listCommits
-- getPullRequest
-- get branch
-- create review
-- list repository tags
-- merge a branch
-- merge a pull request
-- create or update file contents
-- github
-- platform
-- update pull request
-- request reviewers
-- repository management
-- get pull request
-- create pull request
-- create a release
-- create a review for a pull request
 - individual pull request operations
-- get a pull request
-- list reviews
-- get a commit
-- list public repositories
-- list pr files
-- repository listing and search
-- code review management
-- compare two commits
-- pull requests
-- listReleases
-- code
-- update a repository
-- repository content management
-- create a review
-- getBranch
-- create release
+- branches
+- merge a pull request
+- get a branch
+- list reviews for a pull request
+- software development
+- create a release
 - merge pull request
+- request reviewers
+- pull request management
+- code review
+- pull request merge
+- list tags
+- createReviewForPullRequest
+- repository content management
 - get repository
+- create a review for a pull request
+- repository management
+- branch operations
+- listReleases
+- create a review
+- list commits
+- merge a branch
+- list reviews
+- update pull request
+- listReviewsForPullRequest
+- updatePullRequest
+- repositories
+- get a pull request
+- createPullRequest
+- search repositories
 - get content
+- createOrUpdateFileContents
+- list pull request files
+- getRepositoryContent
+- github
+- update a repository
+- getPullRequest
+- searchRepositories
+- code
+- repository listing and search
+- get pull request
+- updateRepository
+- list repository tags
+- getRepository
+- listPullRequests
+- get a repository
+- request reviewers for a pull request
+- pipelines
+- compare two commits
+- list pull requests
+- submit review
+- pull requests
+- platform
+- create pull request
+- get branch
+- merge branch
+- submit a review for a pull request
+- listPublicRepositories
+- get a commit
+- list pr files
+- get commit
+- create a pull request
+- create or update file
+- listCommits
+- list public repositories
+- create release
+- mergePullRequest
+- compareTwoCommits
+- t1
+- update a pull request
+- create review
+- update branch protection
+- list releases
+- code review management
+- commit operations
+- getBranch
+- source control
+- compare commits
+- release management
+- createRelease
+- get repository content
+- create or update file contents
 slug: source-control
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Source Control\"\n  description: \"Unified workflow for source code management combining repositories, branches, pull requests, and commits. Used by developers for day-to-day code collaboration, branch management, code review, and merging.\"\n  tags:\n    - GitHub\n    - Source Control\n    - Repositories\n    - Pull Requests\n    - Code Review\n    - Branches\n  personas:\n    - developers\n    - software engineers\n    - tech leads\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-repos\n      location: \"./shared/repos.yaml\"\n    - import: github-pull-requests\n      location: \"./shared/pull-requests.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: github-source-control-api\n      description: \"Unified REST API for source control workflows combining repos, branches,\
   \ commits, and pull requests.\"\n      resources:\n        - path: /v1/repositories\n          name: repositories\n          description: \"Repository listing and search\"\n          operations:\n            - method: GET\n              name: listPublicRepositories\n              description: \"List public repositories\"\n              call: \"github-repos.listPublicRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: searchRepositories\n              description: \"Search repositories\"\n              call: \"github-repos.searchRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}\n          name: repository\n          description: \"Repository management\"\n          operations:\n            - method: GET\n              name: getRepository\n              description:\

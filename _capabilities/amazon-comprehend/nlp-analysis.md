@@ -42,55 +42,55 @@ personas: []
 provider_name: Amazon Comprehend
 provider_slug: amazon-comprehend
 search_terms:
-- detect key phrases
-- detect sentiment in text.
-- detect sentiment in multiple documents.
-- detect language
-- language detection.
-- detect pii
-- text analysis
-- detect personally identifiable information (pii) entities in text using amazon comprehend.
-- natural language processing
-- batch sentiment analysis.
-- list available document classifiers.
-- uses comprehend for bulk text analysis, topic modeling, and custom model training.
-- extract key noun phrases from text using amazon comprehend.
-- integrates comprehend nlp apis into applications for real-time text analysis.
+- aws
 - amazon
-- detect entities in multiple text documents in one batch call.
-- sentiment analysis.
-- list custom document classifiers trained in amazon comprehend.
-- batch entity detection.
 - detect the dominant language of input text using amazon comprehend.
-- detect syntax
-- sentiment analysis
-- detect the dominant language of text.
-- Data Scientist
-- batch detect entities
-- custom text classification.
-- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
-- detect entities
-- nlp
-- detect entities in multiple documents.
-- pii detection.
-- key phrase extraction.
-- get properties and status of a specific document classifier.
+- language detection.
 - detect sentiment
-- detect named entities in text.
-- entity recognition
-- list classifiers
-- batch detect sentiment
 - analyze syntax and parts of speech in text using amazon comprehend.
 - detect sentiment in multiple text documents in one batch call.
-- aws
-- extract key phrases from text.
-- detect pii entities in text.
-- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
+- key phrase extraction.
+- detect language
+- batch detect sentiment
+- detect key phrases
+- sentiment analysis.
+- detect personally identifiable information (pii) entities in text using amazon comprehend.
+- extract key noun phrases from text using amazon comprehend.
 - end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
-- Application Developer
-- describe classifier
-- machine learning
+- sentiment analysis
+- detect the dominant language of text.
+- nlp
 - named entity recognition.
+- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
+- batch entity detection.
+- list classifiers
+- pii detection.
+- Application Developer
+- extract key phrases from text.
+- detect entities in multiple documents.
+- get properties and status of a specific document classifier.
+- list available document classifiers.
+- detect pii entities in text.
+- natural language processing
+- machine learning
+- entity recognition
+- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
+- detect sentiment in multiple documents.
+- uses comprehend for bulk text analysis, topic modeling, and custom model training.
+- batch detect entities
+- integrates comprehend nlp apis into applications for real-time text analysis.
+- Data Scientist
+- custom text classification.
+- detect entities in multiple text documents in one batch call.
+- batch sentiment analysis.
+- detect syntax
+- list custom document classifiers trained in amazon comprehend.
+- text analysis
+- detect sentiment in text.
+- detect named entities in text.
+- detect pii
+- describe classifier
+- detect entities
 slug: nlp-analysis
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Comprehend NLP Analysis\"\n  description: \"Workflow capability for natural language processing analysis including entity recognition, sentiment analysis, key phrase extraction, language detection, PII detection, and custom text classification. Used by data scientists and application developers to extract insights from unstructured text.\"\n  tags:\n    - Amazon\n    - AWS\n    - Natural Language Processing\n    - NLP\n    - Machine Learning\n    - Text Analysis\n    - Sentiment Analysis\n    - Entity Recognition\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: comprehend\n      location: ./shared/comprehend.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: nlp-analysis-api\n      description:\
   \ \"Unified REST API for Amazon Comprehend NLP analysis workflows.\"\n      resources:\n        - path: /v1/analyze/entities\n          name: entity-analysis\n          description: \"Named entity recognition.\"\n          operations:\n            - method: POST\n              name: detect-entities\n              description: \"Detect named entities in text.\"\n              call: \"comprehend.detect-entities\"\n              with:\n                text: \"rest.text\"\n                language_code: \"rest.language_code\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analyze/sentiment\n          name: sentiment-analysis\n          description: \"Sentiment analysis.\"\n          operations:\n            - method: POST\n              name: detect-sentiment\n              description: \"Detect sentiment in text.\"\n              call: \"comprehend.detect-sentiment\"\n              with:\n                text: \"\

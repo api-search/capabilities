@@ -43,42 +43,42 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- manage alert policies
+- configuration
+- alerting
+- list alert policies
+- update or delete an alert policy
+- monitoring
 - analytics
-- list alert violations
-- infrastructure
-- get alerts policies
-- get alerts conditions
+- list conditions for a policy
+- create alerts policy
 - list all alert policies
-- list alert events filtered by product or entity type
+- delete alerts policy
+- get alerts conditions
+- list alert conditions for a specific policy
+- new relic
+- delete an alert policy
+- observability
+- apm
+- update alerts policy
+- devops
+- infrastructure
 - platform administration
 - get alerts violations
-- update or delete an alert policy
-- list alert events
 - create a new alert policy
-- analysis
-- apm
-- get alerts events
-- new relic
-- configuration
-- performance
-- devops
-- monitoring
-- platform
-- create alerts policy
-- list alert policies
-- delete alerts policy
-- list alert conditions for a specific policy
 - list alert incidents
-- observability
-- delete an alert policy
-- policies
 - get alerts incidents
+- performance
+- get alerts policies
 - list alert conditions
-- alerting
-- update alerts policy
+- list alert events
+- platform
+- analysis
+- policies
+- manage alert policies
+- list alert events filtered by product or entity type
+- list alert violations
+- get alerts events
 - update an alert policy
-- list conditions for a policy
 slug: full-stack-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Alerting Configuration\"\n  description: \"Alert policy and condition management workflow for platform admins configuring and maintaining New Relic alerting rules, notification channels, and policy structures.\"\n  tags:\n    - New Relic\n    - Alerting\n    - Configuration\n    - Platform Administration\n    - Policies\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: alerting-config-api\n      description: \"Unified REST API for New Relic alert policy and condition management.\"\n      resources:\n        - path: /v1/policies\n          name: policies\n          description: \"Manage alert policies\"\n          operations:\n            - method: GET\n              name:\
   \ get-alerts-policies\n              description: \"List alert policies\"\n              call: \"rest-api.get-alerts-policies\"\n              with:\n                filter[name]: \"rest.filter_name\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-alerts-policy\n              description: \"Create a new alert policy\"\n              call: \"rest-api.create-alerts-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies/{policyId}\n          name: policy-detail\n          description: \"Update or delete an alert policy\"\n          operations:\n            - method: PUT\n              name: update-alerts-policy\n              description: \"Update an alert policy\"\n              call: \"rest-api.update-alerts-policy\"\n              with:\n                policy_id:\

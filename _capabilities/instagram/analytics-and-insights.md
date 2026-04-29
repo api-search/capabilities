@@ -35,45 +35,45 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- get user
-- get data about other instagram business or creator accounts.
-- monitors mentions, comments, and brand sentiment on instagram.
-- individual media detail for analytics.
-- analytics
-- get business discovery
-- get media insights
-- get user insights
-- manages instagram direct conversations for business inquiries.
-- insights
 - user profile data.
-- social media
-- get media
-- content publishing and media management.
-- publishes and manages content across instagram accounts.
-- website embedding of instagram content.
-- get social interaction metrics for a media object.
-- media-level analytics.
-- user media for analytics review.
-- insights and performance metrics.
-- competitor and business account research.
-- get fields on an instagram media object.
-- videos
-- comments, mentions, and community interaction.
-- get user media
-- reporting
-- photos
 - embeds instagram content on websites and applications.
-- meta
-- get fields and edges on an instagram business or creator account.
-- account-level analytics.
-- tracks content performance and audience insights.
+- website embedding of instagram content.
+- competitor and business account research.
+- content publishing and media management.
+- analytics
+- individual media detail for analytics.
+- get fields on an instagram media object.
+- photos
+- media-level analytics.
+- monitors mentions, comments, and brand sentiment on instagram.
 - get fields on an instagram photo, video, story, reel, or album.
-- instagram direct messaging.
-- content publishing
-- get social interaction metrics for the account.
-- creates and publishes photos, videos, reels, and stories.
 - get a collection of ig media objects published on the account.
+- get user
+- instagram direct messaging.
+- get user insights
+- get media insights
+- comments, mentions, and community interaction.
+- get fields and edges on an instagram business or creator account.
+- insights and performance metrics.
+- reporting
+- meta
 - instagram
+- creates and publishes photos, videos, reels, and stories.
+- get social interaction metrics for a media object.
+- manages instagram direct conversations for business inquiries.
+- get business discovery
+- tracks content performance and audience insights.
+- get data about other instagram business or creator accounts.
+- publishes and manages content across instagram accounts.
+- social media
+- user media for analytics review.
+- get social interaction metrics for the account.
+- get media
+- videos
+- content publishing
+- get user media
+- insights
+- account-level analytics.
 slug: analytics-and-insights
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Analytics And Insights\"\n  description: >-\n    Unified workflow for Instagram analytics and insights including account-level\n    metrics, media-level performance data, user profile analysis, and competitor\n    research via business discovery. Used by marketing analysts and social media\n    strategists to measure content performance, track audience growth, and\n    benchmark against competitors.\n  tags:\n    - Instagram\n    - Analytics\n    - Insights\n    - Social Media\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: instagram-analytics-api\n      description: \"Unified REST API for Instagram analytics and insights workflows.\"\
   \n      resources:\n        - path: /v1/users/{user_id}\n          name: user-profile\n          description: \"User profile data.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get fields and edges on an Instagram Business or Creator account.\"\n              call: \"instagram-graph.get-user\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/business-discovery\n          name: business-discovery\n          description: \"Competitor and business account research.\"\n          operations:\n            - method: GET\n              name: get-business-discovery\n              description: \"Get data about other Instagram Business or Creator accounts.\"\n              call: \"instagram-graph.get-business-discovery\"\

@@ -38,39 +38,39 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- detach volume
-- amazon ebs describe volumes
-- volumes
-- amazon ebs detach volume
-- deleteVolume
+- amazon ebs attach volume
 - create volume
-- attachVolume
-- block storage management business domain for amazon ebs.
-- describeVolumes
-- createVolume
+- aws
+- ebs
+- amazon ebs describe snapshots
+- deleteVolume
+- amazon ebs create snapshot
+- amazon ebs detach volume
 - createSnapshot
 - describeSnapshots
-- amazon ebs attach volume
-- describe volumes
-- amazon ebs delete volume
+- createVolume
+- detachVolume
+- block storage management business domain for amazon ebs.
+- describeVolumes
+- delete volume
+- describe snapshots
 - amazon web services
 - amazon ebs create volume
-- storage
-- engineers managing amazon ebs resources on aws.
-- amazon ebs
-- amazon ebs create snapshot
 - create snapshot
-- ebs
 - workflow capability for block storage management.
-- snapshots
-- detachVolume
-- amazon ebs describe snapshots
-- describe snapshots
-- ec2
-- aws
-- block storage
+- detach volume
 - attach volume
-- delete volume
+- amazon ebs delete volume
+- ec2
+- snapshots
+- block storage
+- describe volumes
+- amazon ebs describe volumes
+- attachVolume
+- engineers managing amazon ebs resources on aws.
+- volumes
+- storage
+- amazon ebs
 slug: ebs-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EBS Block Storage Management\"\n  description: \"Unified capability for managing EBS volumes, snapshots, and encryption for cloud storage administrators.\"\n  tags:\n    - Amazon EBS\n    - AWS\n    - Storage\n    - Block Storage\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ebs\n      location: ./shared/ebs.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: ebs-api\n      description: \"Unified REST API for Block Storage Management.\"\n      resources:\n        - path: /v1/resource\n          name: describeVolumes\n          description: \"Amazon EBS Describe Volumes\"\n          operations:\n            - method: GET\n              name: describeVolumes\n              description: \"Amazon EBS Describe Volumes\"\
   \n              call: \"ebs.describeVolumes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/resource\n          name: createVolume\n          description: \"Amazon EBS Create Volume\"\n          operations:\n            - method: POST\n              name: createVolume\n              description: \"Amazon EBS Create Volume\"\n              call: \"ebs.createVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DeleteVolume\n          name: deleteVolume\n          description: \"Amazon EBS Delete Volume\"\n          operations:\n            - method: POST\n              name: deleteVolume\n              description: \"Amazon EBS Delete Volume\"\n              call: \"ebs.deleteVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#AttachVolume\n          name: attachVolume\n\

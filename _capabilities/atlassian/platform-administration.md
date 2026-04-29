@@ -35,39 +35,39 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list organization domains
-- list atlassian organizations
-- list users in an organization
-- domain management
-- identity
-- collaboration
-- list all atlassian organizations
-- list policies
-- policy management
-- list audit events
-- list organizations
-- software development
-- list groups
-- list events
-- list domains
-- list domains in an organization
-- get organization
-- platform
-- list organization users
-- list organization groups
 - administration
-- atlassian
-- audit events
-- code
-- list groups in an organization
-- user management
-- organization management
+- list audit events
 - productivity
+- list organizations
+- list groups in an organization
+- list domains in an organization
+- organization management
+- get organization
 - group management
 - get organization details
-- list organization audit events
+- software development
+- audit events
+- list organization groups
+- list events
+- list groups
+- user management
 - list organization policies
+- list organization domains
 - list users
+- list policies
+- list domains
+- domain management
+- list all atlassian organizations
+- list users in an organization
+- policy management
+- list organization users
+- platform
+- identity
+- atlassian
+- code
+- list atlassian organizations
+- collaboration
+- list organization audit events
 slug: platform-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Platform Administration\"\n  description: \"Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.\"\n  tags:\n    - Administration\n    - Atlassian\n    - Identity\n    - Platform\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: atlassian-platform-admin-api\n      description: \"Unified REST API for Atlassian platform administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description:\
   \ \"Organization management\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List Atlassian organizations\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List organization users\"\n              call: \"atlassian-admin.list-users\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List\

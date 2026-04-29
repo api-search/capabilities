@@ -48,52 +48,52 @@ personas:
 provider_name: Agave
 provider_slug: agave
 search_terms:
-- create an invoice.
-- integration
-- ap invoices.
-- list vendors and subcontractors from a connected construction system.
-- employee timesheets.
-- budget line items.
-- create an ap invoice in a connected construction source system.
-- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
-- invoices
-- list vendors.
-- construction
-- list construction projects from any connected source system via agave.
-- list contracts.
-- budget, cost code, and cost tracking for construction jobs.
-- invoice processing and vendor payment management.
-- developer integrating a construction software platform with other systems via agave's unified api.
-- list timesheets
-- list budgets
-- list project budget line items from a connected construction system.
-- contractor admin
-- list employee records from a connected construction system.
-- list employees
-- list employee timesheets from a connected construction system.
-- employee and timesheet management.
-- construction software engineer
-- construction project tracking and management.
-- list accounts payable invoices from a connected construction system.
-- list projects
-- list vendors
-- construction project data.
-- prime contracts.
-- create invoice
-- list prime contracts from a connected construction system.
-- list budget items.
-- list construction projects.
-- list contracts
-- list timesheets.
 - vendor records.
-- agave
-- list invoices
-- employee records.
-- list employees.
-- construction company admin using connected tools to sync financial and project data between systems.
-- job costing
+- list budget items.
+- employee and timesheet management.
+- list employee records from a connected construction system.
+- construction project data.
+- list vendors
+- employee timesheets.
+- create invoice
+- list employees
+- developer integrating a construction software platform with other systems via agave's unified api.
 - list invoices.
+- list project budget line items from a connected construction system.
+- list accounts payable invoices from a connected construction system.
+- list budgets
+- ap invoices.
+- budget, cost code, and cost tracking for construction jobs.
+- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
+- list contracts
+- create an invoice.
+- agave
+- list timesheets
+- list timesheets.
+- list employees.
+- construction
+- construction software engineer
+- employee records.
+- integration
 - accounting
+- list construction projects from any connected source system via agave.
+- job costing
+- list construction projects.
+- construction project tracking and management.
+- prime contracts.
+- list projects
+- contractor admin
+- construction company admin using connected tools to sync financial and project data between systems.
+- list prime contracts from a connected construction system.
+- list employee timesheets from a connected construction system.
+- list vendors.
+- invoices
+- create an ap invoice in a connected construction source system.
+- budget line items.
+- list invoices
+- list contracts.
+- list vendors and subcontractors from a connected construction system.
+- invoice processing and vendor payment management.
 slug: construction-data-sync
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Agave Construction Data Sync\"\n  description: \"Unified workflow capability for syncing construction project data across connected source systems via the Agave unified API. Enables project management, job costing, AP automation, and timesheet sync for construction software integrations.\"\n  tags:\n    - Agave\n    - Construction\n    - Integration\n    - Job Costing\n    - Invoices\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AGAVE_API_KEY: AGAVE_API_KEY\n      AGAVE_SOURCE_SYSTEM_ID: AGAVE_SOURCE_SYSTEM_ID\n\ncapability:\n  consumes:\n    - import: agave-unified\n      location: ./shared/unified-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: agave-sync-api\n      description: \"Unified REST API for Agave construction data synchronization.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"\
   Construction project data.\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List construction projects.\"\n              call: \"agave-unified.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/budgets\n          name: budgets\n          description: \"Budget line items.\"\n          operations:\n            - method: GET\n              name: list-budgets\n              description: \"List budget items.\"\n              call: \"agave-unified.list-budgets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/contracts\n          name: contracts\n          description: \"Prime contracts.\"\n          operations:\n            - method: GET\n              name: list-contracts\n              description: \"List contracts.\"\n              call: \"agave-unified.list-contracts\"\

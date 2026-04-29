@@ -70,48 +70,48 @@ personas: []
 provider_name: Amazon Entity Resolution
 provider_slug: amazon-entity-resolution
 search_terms:
-- UntagResource
-- amazon entity resolution getschemamapping
-- amazon entity resolution getmatchingjob
-- machine learning service for matching and linking related records
-- amazon entity resolution deleteschemamapping
-- amazon entity resolution listschemamappings
-- ListMatchingJobs
-- CreateSchemaMapping
-- CreateMatchingWorkflow
-- amazon entity resolution listmatchingworkflows
-- ListTagsForResource
-- amazon entity resolution creatematchingworkflow
-- ListSchemaMappings
-- amazon entity resolution listmatchingjobs
-- amazon entity resolution untagresource
-- GetMatchingJob
-- DeleteSchemaMapping
-- amazon entity resolution updatematchingworkflow
-- amazon web services
-- amazon entity resolution deletematchingworkflow
-- GetSchemaMapping
-- GetMatchId
-- StartMatchingJob
-- amazon entity resolution tagresource
-- operations teams managing amazon entity resolution infrastructure
-- amazon entity resolution createschemamapping
-- amazon entity resolution getmatchingworkflow
-- TagResource
-- amazon entity resolution startmatchingjob
-- entity resolution
-- DeleteMatchingWorkflow
-- GetMatchingWorkflow
-- unified capability for managing amazon entity resolution resources. combines amazon entity resolution apis for data analyst workflows in data quality.
-- data integration
 - aws
 - amazon entity resolution listtagsforresource
-- amazon entity resolution getmatchid
+- amazon entity resolution createschemamapping
+- GetMatchingJob
+- CreateSchemaMapping
+- amazon entity resolution deleteschemamapping
+- CreateMatchingWorkflow
+- StartMatchingJob
+- amazon entity resolution updatematchingworkflow
+- GetMatchId
+- amazon entity resolution startmatchingjob
+- data integration
+- amazon entity resolution listmatchingjobs
 - data matching
-- UpdateMatchingWorkflow
-- ListMatchingWorkflows
+- amazon entity resolution creatematchingworkflow
+- amazon entity resolution tagresource
+- amazon entity resolution untagresource
+- amazon entity resolution deletematchingworkflow
+- amazon entity resolution getmatchid
+- amazon web services
+- amazon entity resolution listmatchingworkflows
+- machine learning service for matching and linking related records
+- UntagResource
+- amazon entity resolution getmatchingjob
+- amazon entity resolution getschemamapping
 - machine learning
+- amazon entity resolution getmatchingworkflow
+- DeleteSchemaMapping
+- operations teams managing amazon entity resolution infrastructure
+- ListSchemaMappings
+- amazon entity resolution listschemamappings
+- entity resolution
+- GetSchemaMapping
 - developers building applications using amazon entity resolution
+- ListTagsForResource
+- DeleteMatchingWorkflow
+- ListMatchingJobs
+- unified capability for managing amazon entity resolution resources. combines amazon entity resolution apis for data analyst workflows in data quality.
+- UpdateMatchingWorkflow
+- GetMatchingWorkflow
+- TagResource
+- ListMatchingWorkflows
 slug: amazon-entity-resolution-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Entity Resolution Management\n  description: Unified capability for managing Amazon Entity Resolution resources. Combines Amazon Entity Resolution APIs for Data Analyst workflows in Data Quality.\n  tags:\n  - Amazon Web Services\n  - Data Integration\n  - Machine Learning\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: entity_resolution\n    location: ./shared/entity-resolution.yaml\n  exposes:\n  - type: rest\n    port: 8190\n    namespace: amazon-entity-resolution-workflow-api\n    description: Unified REST API for Amazon Entity Resolution management.\n    resources:\n    - path: /v1/ListMatchingWorkflows\n      name: ListMatchingWorkflows\n      description: Amazon Entity Resolution ListMatchingWorkflows\n      operations:\n      - method: GET\n        name: ListMatchingWorkflows\n        description:\
   \ Amazon Entity Resolution ListMatchingWorkflows\n        call: api.ListMatchingWorkflows\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateMatchingWorkflow\n      name: CreateMatchingWorkflow\n      description: Amazon Entity Resolution CreateMatchingWorkflow\n      operations:\n      - method: POST\n        name: CreateMatchingWorkflow\n        description: Amazon Entity Resolution CreateMatchingWorkflow\n        call: api.CreateMatchingWorkflow\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListSchemaMappings\n      name: ListSchemaMappings\n      description: Amazon Entity Resolution ListSchemaMappings\n      operations:\n      - method: GET\n        name: ListSchemaMappings\n        description: Amazon Entity Resolution ListSchemaMappings\n        call: api.ListSchemaMappings\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateSchemaMapping\n    \

@@ -52,82 +52,82 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- ingesting events from servers, apps, and offline sources.
-- google analytics
-- builds automated reporting pipelines and dashboards from ga4 data.
-- list firebase links on a property
+- list firebase links
+- list measurement protocol secrets
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- analytics administrator
+- platform engineer
+- manages data privacy compliance including gdpr deletion requests.
+- audits data access and monitors configuration changes.
+- google ads
+- delete a google ads integration link
+- querying and analyzing ga4 event data through various report types.
 - analytics
 - get a specific measurement protocol secret
-- get a measurement protocol secret
-- create a measurement protocol secret for server-side tracking
-- sets up and maintains ga4 accounts, properties, and configurations.
-- list firebase links on a ga4 property
-- segmenting and exporting user populations for analysis and activation.
-- create a google ads integration link on a ga4 property
-- update a google ads link configuration
-- delete a google ads integration link
-- google
-- get details of a specific measurement protocol secret
-- create firebase link
-- list google ads links on a property
-- backend engineer
-- create a measurement protocol secret
-- list firebase links
-- manage measurement protocol secrets
-- google ads
-- measures campaign performance, segments audiences, and tracks conversions.
-- privacy officer
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- analytics administrator
-- implements server-side event tracking and offline data collection.
-- update a google ads link
-- audits data access and monitors configuration changes.
-- connecting ga4 with advertising, app, and measurement platforms.
-- manage google ads integration links
-- integrations
-- delete google ads link
-- create a firebase link
-- firebase
-- setting up and maintaining ga4 account and property structure.
-- create measurement protocol secret
-- user data deletion, access auditing, and data collection acknowledgement.
-- platform engineer
-- server-side event tracking with data stream and secret management.
-- integrates ga4 with other platforms and manages infrastructure.
-- extracts insights from ga4 data through reports and explorations.
-- data protection engineer
-- create, export, and query ga4 audience segments.
-- update google ads link
-- querying and analyzing ga4 event data through various report types.
-- reporting
-- web analytics
-- metrics
-- attribution
-- create google ads link
-- compliance team
-- list measurement protocol secrets
-- create a google ads link
-- marketing ops
-- manages data privacy compliance including gdpr deletion requests.
-- list google ads links on a ga4 property
-- managing data privacy, deletion, and access auditing.
-- delete a google ads link
-- linking
-- connects advertising platforms and implements server-side tracking.
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- get measurement protocol secret
-- list measurement protocol secrets for a data stream
-- implements privacy-compliant data handling and deletion workflows.
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- data analyst
-- marketing team
-- bi engineer
-- data
-- manage firebase integration links
-- list google ads links
 - create a firebase integration link on a ga4 property
-- manage a specific google ads link
+- list measurement protocol secrets for a data stream
+- server-side event tracking with data stream and secret management.
+- get measurement protocol secret
+- data protection engineer
+- create a measurement protocol secret
+- measures campaign performance, segments audiences, and tracks conversions.
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- implements privacy-compliant data handling and deletion workflows.
+- integrations
+- connecting ga4 with advertising, app, and measurement platforms.
+- create google ads link
+- list firebase links on a ga4 property
+- integrates ga4 with other platforms and manages infrastructure.
+- builds automated reporting pipelines and dashboards from ga4 data.
+- firebase
+- compliance team
+- get a measurement protocol secret
+- sets up and maintains ga4 accounts, properties, and configurations.
+- get details of a specific measurement protocol secret
+- segmenting and exporting user populations for analysis and activation.
+- web analytics
+- reporting
+- setting up and maintaining ga4 account and property structure.
+- user data deletion, access auditing, and data collection acknowledgement.
+- bi engineer
+- update a google ads link configuration
+- managing data privacy, deletion, and access auditing.
+- create a google ads integration link on a ga4 property
+- create a measurement protocol secret for server-side tracking
+- create a firebase link
+- marketing team
+- marketing ops
+- implements server-side event tracking and offline data collection.
+- list google ads links on a property
+- delete google ads link
 - machine learning
+- attribution
+- create a google ads link
+- connects advertising platforms and implements server-side tracking.
+- metrics
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- linking
+- manage measurement protocol secrets
+- create, export, and query ga4 audience segments.
+- backend engineer
+- delete a google ads link
+- manage a specific google ads link
+- list google ads links on a ga4 property
+- create firebase link
+- google analytics
+- list google ads links
+- data analyst
+- create measurement protocol secret
+- list firebase links on a property
+- ingesting events from servers, apps, and offline sources.
+- update a google ads link
+- manage google ads integration links
+- data
+- privacy officer
+- google
+- manage firebase integration links
+- extracts insights from ga4 data through reports and explorations.
+- update google ads link
 slug: integrations-and-linking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Analytics Integrations and Linking\"\n  description: \"Unified workflow for managing GA4 integration links with Firebase, Google Ads, and measurement protocol secrets. Used by platform engineers and marketing ops teams to connect GA4 with advertising and app platforms.\"\n  tags:\n    - Google Analytics\n    - Integrations\n    - Firebase\n    - Google Ads\n    - Linking\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ANALYTICS_ACCESS_TOKEN: GOOGLE_ANALYTICS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: ga-admin-api\n      location: ./shared/admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: ga-integrations-api\n      description: \"Unified REST API for Google Analytics integration management.\"\n      resources:\n        - path: /v1/firebase-links\n          name: firebase-links\n          description: \"Manage Firebase\
   \ integration links\"\n          operations:\n            - method: GET\n              name: list-firebase-links\n              description: \"List Firebase links on a property\"\n              call: \"ga-admin-api.list-firebase-links\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-firebase-link\n              description: \"Create a Firebase link\"\n              call: \"ga-admin-api.create-firebase-link\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/google-ads-links\n          name: google-ads-links\n          description: \"Manage Google Ads integration links\"\n          operations:\n            - method: GET\n              name: list-google-ads-links\n              description:\

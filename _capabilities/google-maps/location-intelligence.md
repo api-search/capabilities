@@ -36,43 +36,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- address to coordinate conversion and reverse geocoding
-- get directions
-- get a photo for a place by place id and photo reference
-- place details retrieval
-- geocoding
-- navigation
-- search places nearby
-- route computation between locations
-- get place autocomplete predictions as the user types
-- get detailed information about a place
-- maps
-- place autocomplete predictions
-- geocode an address or reverse geocode coordinates
-- google maps
-- search for places using a text query
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
-- search places text
-- environment
-- solar
-- directions
 - get detailed information about a place including address, rating, hours, and reviews
-- get place predictions for input text
-- get place photo
-- autocomplete places
-- get place details
-- geolocation
-- geocode
-- text-based place search
-- geocode an address to coordinates or reverse geocode coordinates to an address
 - location-based place search
-- get directions between two or more locations
-- search for places near a specific location with type filters
-- routing
+- get directions
+- place details retrieval
+- get place autocomplete predictions as the user types
+- navigation
+- get place predictions for input text
 - places
-- search for places using a natural language text query like 'pizza in new york'
-- location
+- search for places using a text query
+- geocoding
 - search for places near a location
+- solar
+- geocode
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- search places nearby
+- autocomplete places
+- google maps
+- geolocation
+- search for places using a natural language text query like 'pizza in new york'
+- get a photo for a place by place id and photo reference
+- routing
+- get detailed information about a place
+- environment
+- geocode an address or reverse geocode coordinates
+- route computation between locations
+- search for places near a specific location with type filters
+- directions
+- geocode an address to coordinates or reverse geocode coordinates to an address
+- location
+- place autocomplete predictions
+- get place photo
+- get directions between two or more locations
+- text-based place search
+- address to coordinate conversion and reverse geocoding
+- get place details
+- maps
+- search places text
 slug: location-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Maps Location Intelligence\"\n  description: \"Unified workflow combining Google Maps Directions, Geocoding, and Places APIs for location-aware applications. Enables developers to geocode addresses, compute routes, search for places, and retrieve place details in a single integration.\"\n  tags:\n    - Google Maps\n    - Location\n    - Geocoding\n    - Directions\n    - Places\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_MAPS_API_KEY: GOOGLE_MAPS_API_KEY\n\ncapability:\n  consumes:\n    - import: google-maps-directions\n      location: ./shared/directions.yaml\n    - import: google-maps-geocoding\n      location: ./shared/geocoding.yaml\n    - import: google-maps-places\n      location: ./shared/places.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: location-intelligence-api\n      description: \"Unified REST API for location intelligence\
   \ combining geocoding, directions, and places.\"\n      resources:\n        - path: /v1/geocode\n          name: geocoding\n          description: \"Address to coordinate conversion and reverse geocoding\"\n          operations:\n            - method: GET\n              name: geocode\n              description: \"Geocode an address or reverse geocode coordinates\"\n              call: \"google-maps-geocoding.geocode\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/directions\n          name: directions\n          description: \"Route computation between locations\"\n          operations:\n            - method: GET\n              name: get-directions\n              description: \"Get directions between two or more locations\"\n              call: \"google-maps-directions.get-directions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/places/{placeId}\n\

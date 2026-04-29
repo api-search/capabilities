@@ -19,49 +19,49 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- list receipts
-- update a purchase order
-- cancel a purchase order
-- create a receipt
 - contract management
-- supplier management
-- procure-to-pay
 - cancel purchase order
-- list line items
-- list receipts for an order
-- create a purchase order
-- get purchase order
-- get supplier
-- list requisitions
-- create receipt
-- supply chain
-- approve an invoice for payment
-- update purchase order
-- list line items for an order
-- get requisition
-- create a requisition
-- get invoice
-- get purchase order details
-- spend analysis
-- approve invoice
-- reject an invoice
 - list purchase orders
-- sourcing
-- procurement
-- get supplier profile
-- reject invoice
-- create invoice
-- get requisition details
-- sap
-- purchase order management
-- create requisition
-- create purchase order
+- get supplier
+- approve invoice
 - list suppliers
+- create invoice
+- supplier management
+- list receipts
+- update purchase order
+- get invoice
+- cancel a purchase order
 - get invoice details
-- list invoices
-- b2b
-- ariba
+- create a requisition
+- supply chain
+- list requisitions
 - create an invoice
+- ariba
+- procure-to-pay
+- create purchase order
+- create a purchase order
+- get purchase order details
+- get requisition
+- spend analysis
+- sap
+- reject invoice
+- sourcing
+- approve an invoice for payment
+- purchase order management
+- get purchase order
+- b2b
+- procurement
+- list line items
+- create receipt
+- get supplier profile
+- update a purchase order
+- create a receipt
+- list line items for an order
+- get requisition details
+- create requisition
+- reject an invoice
+- list invoices
+- list receipts for an order
 slug: procure-to-pay
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"SAP Ariba Procure-to-Pay\"\n  description: \"Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts. Used by procurement teams and AP automation workflows.\"\n  tags: [SAP, Ariba, Procurement, Procure-to-Pay]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      ARIBA_OAUTH_TOKEN: ARIBA_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: procurement\n      location: ./shared/procurement.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: procure-to-pay-api\n      description: \"Unified REST API for SAP Ariba procure-to-pay operations.\"\n      resources:\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase order management\"\n          operations:\n            - { method: GET, name: list-purchase-orders, description: \"List purchase orders\", call: \"procurement.list-purchase-orders\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: procure-to-pay-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SAP Ariba procure-to-pay operations.\"\n      tools:\n        - { name: list-purchase-orders, description: \"List purchase orders\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-purchase-orders\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-purchase-order, description: \"Get purchase order details\", hints: { readOnly: true }, call: \"procurement.get-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\"\

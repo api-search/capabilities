@@ -57,65 +57,65 @@ personas:
 provider_name: BetterCloud
 provider_slug: bettercloud
 search_terms:
-- it admin managing saas access and user lifecycle
-- get user
-- individual user operations
-- list users across all connected saas applications
-- list integrations
-- suspend a user
-- list all workflows
-- list all connected saas application integrations
-- automation
-- saas management
-- audit event log
-- update user attributes
-- create a group
-- workflow automation for it operations
 - list audit events
-- update user attributes like department or title
-- list workflows
-- onboarding
-- user lifecycle
-- list groups
-- trigger workflow execution
-- fully deprovision a user removing all saas application access
-- deprovision user
-- onboarding, management, and offboarding of users across saas
-- enterprise
-- list events
-- create group
-- suspend a departing or at-risk user across all saas apps
-- add group member
-- security engineer
-- automation workflow management
-- get user details
-- trigger a workflow for a set of users (e.g., offboarding)
-- workflows
-- offboarding
-- add a user to a group
-- user onboarding and offboarding across saas applications
-- compliance
+- security
+- list all users
+- list users across all connected saas applications
+- create a group
 - saas application connectivity
+- group management
+- run a workflow
+- fully deprovision a user removing all saas application access
+- get user
+- user lifecycle
+- user onboarding and offboarding across saas applications
+- update user attributes
+- list events
+- it admin managing saas access and user lifecycle
+- audit trails and policy enforcement
+- list all workflows
+- list groups
+- suspend a user
+- workflow automation for it operations
+- deprovision user
 - update user
-- suspend user
+- list all groups from connected directory services
+- it operations
+- trigger a workflow for a set of users (e.g., offboarding)
+- list audit events for compliance investigation
 - deprovision a user
+- list all connected saas application integrations
+- list all groups
+- list users
+- security team member managing compliance and access policies
+- enterprise
 - user discovery and management
 - run workflow
-- run a workflow
-- security team member managing compliance and access policies
-- it administrator
-- audit trails and policy enforcement
+- automation
+- suspend user
+- offboarding
+- automation workflow management
+- compliance
 - get full details for a specific user including saas access
-- security
-- list all groups
-- group management
-- it operations
+- individual user operations
+- add group member
+- list integrations
+- onboarding, management, and offboarding of users across saas
+- audit event log
+- onboarding
+- saas management
+- create group
+- trigger workflow execution
+- workflows
+- get user details
+- update user attributes like department or title
 - bettercloud
-- list all groups from connected directory services
-- list all users
-- list audit events for compliance investigation
-- list users
 - list all automation workflows
+- security engineer
+- list workflows
+- suspend a departing or at-risk user across all saas apps
+- it administrator
+- add a user to a group
 slug: saas-lifecycle-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: BetterCloud SaaS Lifecycle Management\n  description: >-\n    Unified SaaS user lifecycle management workflow combining user management,\n    group management, workflow automation, and audit logging. Used by IT\n    administrators and security teams to manage employee access throughout\n    the full SaaS application lifecycle from onboarding to offboarding.\n  tags:\n    - BetterCloud\n    - Saas Management\n    - User Lifecycle\n    - Onboarding\n    - Offboarding\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BETTERCLOUD_API_KEY: BETTERCLOUD_API_KEY\n\ncapability:\n  consumes:\n    - import: bettercloud\n      location: ./shared/bettercloud.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: bettercloud-lifecycle-api\n      description: Unified REST API for BetterCloud SaaS lifecycle management.\n      resources:\n        - path: /v1/users\n\
   \          name: users\n          description: User discovery and management\n          operations:\n            - method: GET\n              name: list-users\n              description: List all users\n              call: \"bettercloud.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{id}\n          name: user\n          description: Individual user operations\n          operations:\n            - method: GET\n              name: get-user\n              description: Get user details\n              call: \"bettercloud.get-user\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-user\n              description: Update user attributes\n              call: \"bettercloud.update-user\"\n              with:\n                id: \"rest.id\"\n  \

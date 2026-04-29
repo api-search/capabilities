@@ -27,53 +27,53 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- issue monitoring.
-- list all registered systems in querygrid.
-- teradata
-- executes queries and analyzes data across vantage systems.
-- analytics
-- list all bridges.
-- system and fabric configuration management.
-- manage querygrid data fabric infrastructure.
-- integrates applications with teradata via rest apis.
-- list all registered systems.
-- list all data fabric configurations.
-- list all bridges connecting systems.
-- sql
-- list all data centers.
-- data fabric
-- list connectors
 - configuration
-- bridge management.
-- execute sql queries and analytics.
-- manages data fabric infrastructure and cross-system connectivity.
-- list data centers
-- health monitoring and issue detection.
-- cloud
-- database
-- data warehousing
-- Data Analyst
-- run diagnostic check
 - administration
 - list bridges
-- sql query execution and session management.
+- health monitoring and issue detection.
+- executes queries and analyzes data across vantage systems.
+- run a diagnostic check on querygrid systems.
+- run diagnostic check
+- analytics
+- data warehousing
+- bridge management.
+- list all configured data centers.
+- list all bridges.
+- administers querygrid systems, nodes, and software.
+- list systems
+- list all current issues.
+- list data centers
+- execute sql queries and analytics.
+- manage querygrid data fabric infrastructure.
+- sql
+- issue monitoring.
+- list all bridges connecting systems.
+- list all data fabric configurations.
+- list all connectors for system integration.
+- list all registered systems in querygrid.
+- Application Developer
 - system management.
+- manages data fabric infrastructure and cross-system connectivity.
+- cloud
+- teradata
 - list fabrics
+- sql query execution and session management.
+- system and fabric configuration management.
+- data center management.
+- list all data centers.
+- enterprise
+- Platform Administrator
+- machine learning
+- integrates applications with teradata via rest apis.
+- database
+- data management
 - list all current issues in the querygrid environment.
 - Data Engineer
-- administers querygrid systems, nodes, and software.
-- data center management.
-- run a diagnostic check on querygrid systems.
-- list all current issues.
-- data management
+- Data Analyst
 - list issues
-- list all connectors for system integration.
-- Application Developer
-- list systems
-- Platform Administrator
-- enterprise
-- list all configured data centers.
-- machine learning
+- list connectors
+- data fabric
+- list all registered systems.
 slug: data-fabric-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Teradata Data Fabric Management\n  description: >-\n    Workflow capability for managing Teradata's data fabric infrastructure.\n    Combines QueryGrid Manager for fabric configuration with Query Service for\n    validating cross-system connectivity. Used by data engineers and platform\n    administrators.\n  tags:\n    - Teradata\n    - Data Fabric\n    - Configuration\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      QUERYGRID_USERNAME: QUERYGRID_USERNAME\n      QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n      VANTAGE_USERNAME: VANTAGE_USERNAME\n      VANTAGE_PASSWORD: VANTAGE_PASSWORD\n\ncapability:\n  consumes:\n    - import: querygrid-manager\n      location: ./shared/querygrid-manager.yaml\n    - import: query-service\n      location: ./shared/query-service.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: data-fabric-api\n      description:\
   \ \"Unified REST API for Teradata data fabric management.\"\n      resources:\n        - path: /v1/data-centers\n          name: data-centers\n          description: \"Data center management.\"\n          operations:\n            - method: GET\n              name: list-data-centers\n              description: \"List all data centers.\"\n              call: \"querygrid-manager.list-data-centers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/systems\n          name: systems\n          description: \"System management.\"\n          operations:\n            - method: GET\n              name: list-systems\n              description: \"List all registered systems.\"\n              call: \"querygrid-manager.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bridges\n          name: bridges\n          description: \"Bridge management.\"\

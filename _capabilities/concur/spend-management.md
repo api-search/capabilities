@@ -14,23 +14,23 @@ personas: []
 provider_name: SAP Concur
 provider_slug: concur
 search_terms:
-- sap concur
-- create expense report
-- sap
-- spend management
-- finance
 - expense management
-- invoice
-- unified spend management combining expense and invoice workflows
-- Finance Team
-- expense reports
-- list reports
+- spend management
 - list expense reports for a user
-- create a new expense report
-- list expense reports
-- finance and accounting staff managing expense and invoice processing
 - travel
+- create expense report
+- sap concur
+- finance and accounting staff managing expense and invoice processing
+- unified spend management combining expense and invoice workflows
+- list expense reports
+- list reports
 - Approver
+- sap
+- create a new expense report
+- Finance Team
+- finance
+- expense reports
+- invoice
 - managers approving expense reports and invoices
 slug: spend-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP Concur Spend Management\"\n  description: \"Unified spend management workflow combining expense, travel, and invoice APIs for finance teams managing employee spend.\"\n  tags:\n    - Expense Management\n    - SAP Concur\n    - Spend Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONCUR_ACCESS_TOKEN: CONCUR_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: concur-expense\n      location: ./shared/expense.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spend-management-api\n      description: \"Unified REST API for SAP Concur spend management.\"\n      resources:\n        - path: /v1/reports\n          name: expense-reports\n          description: \"Expense reports\"\n          operations:\n            - method: GET\n              name: list-reports\n              description: \"List expense reports\"\n              call: \"concur-expense.get-expense-reports\"\

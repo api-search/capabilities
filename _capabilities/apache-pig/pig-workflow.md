@@ -18,32 +18,32 @@ personas: []
 provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
-- submit job
-- kill a running pig job
-- list jobs
-- hadoop
 - etl
-- scripting
 - get execution logs for a pig job
-- runs ad-hoc data analysis jobs on hadoop clusters
-- list pig jobs
-- big data
-- apache pig
-- kill job
-- get job
-- Data Analyst
-- submit a pig latin script for execution
-- data analysis
-- open source
-- get job logs
-- validate a pig latin script for syntax errors
-- Data Engineer
-- builds etl pipelines using pig latin scripts
-- validate script
-- apache
 - submit pig script
-- get status and details of a pig job
+- kill a running pig job
+- get job logs
+- open source
+- kill job
+- big data
+- builds etl pipelines using pig latin scripts
+- list pig jobs
 - list all pig data processing jobs
+- apache pig
+- validate script
+- data analysis
+- apache
+- validate a pig latin script for syntax errors
+- submit job
+- list jobs
+- Data Engineer
+- Data Analyst
+- runs ad-hoc data analysis jobs on hadoop clusters
+- scripting
+- hadoop
+- get status and details of a pig job
+- submit a pig latin script for execution
+- get job
 slug: pig-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Pig Data Processing Workflow\"\n  description: \"Workflow for submitting, monitoring, and managing Pig Latin data analysis jobs on Hadoop clusters.\"\n  tags:\n    - Apache Pig\n    - Big Data\n    - Data Analysis\n    - Hadoop\n    - ETL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PIG_API_KEY: PIG_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: pig\n      baseUri: https://localhost:8080/pig\n      description: \"Apache Pig REST API\"\n      resources:\n        - name: jobs\n          path: /jobs\n          description: \"Pig job management\"\n          operations:\n            - name: listJobs\n              method: GET\n              description: \"List Pig jobs\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n            -\
   \ name: submitJob\n              method: POST\n              description: \"Submit a Pig script\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pig-api\n      description: \"Unified REST API for Pig data processing.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List Pig jobs\"\n              call: \"pig.listJobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: submit-job\n              description: \"Submit Pig script\"\n              call: \"pig.submitJob\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n\

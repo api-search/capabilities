@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list secrets for authenticating with forwarding destinations
-- list secrets for a property
-- list event forwarding properties
-- create event forwarding rule
-- edge network data ingestion
-- event forwarding
-- send an interactive event to adobe edge network
-- create event forwarding property
+- list server-side event forwarding properties
+- send an interactive event to edge network
+- create a new event forwarding rule
+- create secret
 - server-side event forwarding properties
-- list secrets
-- secrets for event forwarding destinations
-- edge network
+- tag management
+- start media session
+- list secrets for a property
+- end media session
+- marketing technology
+- send an interactive event to adobe edge network
+- send batch events to adobe edge network
+- end a media tracking session
+- list event forwarding properties
+- list event forwarding rules for a property
 - adobe launch
+- list secrets
+- data collection
+- send interactive event
+- create event forwarding property
+- create a secret for an event forwarding destination
+- edge network
+- edge network data ingestion
 - send batch events to edge network
 - send batch events
-- data collection
-- send batch events to adobe edge network
-- create a new event forwarding rule
-- send interactive event
-- tag management
-- create a secret for an event forwarding destination
-- create a new event forwarding property
-- list event forwarding rules
 - event forwarding rules
-- end a media tracking session
-- end media session
-- list event forwarding rules for a property
-- create secret
-- marketing technology
-- send an interactive event to edge network
-- start media session
-- list server-side event forwarding properties
+- event forwarding
+- list secrets for authenticating with forwarding destinations
+- list event forwarding rules
+- secrets for event forwarding destinations
 - start a media tracking session
+- create event forwarding rule
+- create a new event forwarding property
 slug: data-collection-pipeline
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Launch Data Collection Pipeline\"\n  description: \"Unified workflow for Adobe Experience Platform data collection. Combines Event Forwarding and Data Collection APIs for data engineers managing server-side event routing, Edge Network data ingestion, and media analytics tracking.\"\n  tags:\n    - Adobe Launch\n    - Data Collection\n    - Event Forwarding\n    - Edge Network\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ACCESS_TOKEN: ADOBE_ACCESS_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n      ADOBE_ORG_ID: ADOBE_ORG_ID\n\ncapability:\n  consumes:\n    - import: event-forwarding\n      location: ./shared/event-forwarding.yaml\n    - import: data-collection\n      location: ./shared/data-collection.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: data-collection-pipeline-api\n      description: \"Unified REST API for Adobe data collection\
   \ pipeline management.\"\n      resources:\n        - path: /v1/event-forwarding-properties\n          name: event-forwarding-properties\n          description: \"Server-side event forwarding properties\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-properties\n              description: \"List event forwarding properties\"\n              call: \"event-forwarding.list-properties\"\n              with:\n                companyId: \"rest.companyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/event-forwarding-rules\n          name: event-forwarding-rules\n          description: \"Event forwarding rules\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-rules\n              description: \"List event forwarding rules\"\n              call: \"event-forwarding.list-rules\"\n              with:\n                propertyId: \"\

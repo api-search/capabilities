@@ -38,53 +38,53 @@ personas: []
 provider_name: Allianz
 provider_slug: allianz-docs
 search_terms:
-- embedded insurance product distribution through partner apis
-- get quote rating factors
-- insurance
-- create a self-service policy completion session for customer
-- submit lead
-- insurance lead referral resources
-- complete an insurance policy application on behalf of a customer
-- asset management
-- retrieve an insurance certificate of currency for a bound policy
-- email an insurance quote to a customer for asynchronous review
-- get the detailed premium breakdown and rating factors for an insurance quote
-- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
-- individual quote detail and rating factor resources
+- quoting
+- partner integration
+- price estimation and quote generation for end customers
+- insurance quoting and estimation resources
 - submit lead referral
-- send quote email
-- create a self-service quote session for a customer to complete via internet banking
+- get quote summary
+- insurance certificate retrieval resources
+- create a self-service policy completion session for customer
 - create a staff-assisted insurance quote for a customer
+- submit a customer lead to the allianz sales team
+- create a self-service quote session for a customer to complete via internet banking
+- embedded insurance product distribution through partner apis
+- financial services
+- get the current status and details of a quote
+- retrieve the status and summary of an existing insurance quote
+- create a staff-assisted insurance price estimate for home, landlord, or car insurance
+- complete a policy application via staff-assisted workflow
+- unified workflow for partners embedding allianz insurance into customer journeys
+- Partner Developer
+- get certificate
+- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
+- create self service quote
+- submit lead
+- policy completion and certificate management
+- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
+- get the detailed premium breakdown and rating factors for an insurance quote
+- retrieve an insurance certificate of currency for a bound policy
+- create self service policy
+- complete policy assisted
+- complete an insurance policy application on behalf of a customer
+- get quote rating factors
+- email an insurance quote to a customer for asynchronous review
+- asset management
+- insurance lead referral resources
+- send quote email
+- get certificate of currency
 - email a quote to a customer for their review
 - create assisted quote
-- create a staff-assisted insurance price estimate for home, landlord, or car insurance
-- unified workflow for partners embedding allianz insurance into customer journeys
-- get certificate
-- get the current status and details of a quote
-- quoting
-- retrieve the status and summary of an existing insurance quote
-- complete policy assisted
-- get certificate of currency
-- create self service policy
-- submit a customer insurance lead to the allianz sales team for follow-up
-- embedded insurance
-- insurance quoting and estimation resources
-- Partner Developer
-- insurance policy completion resources
-- retrieve a certificate of currency for a policy
-- create self service quote
-- partner integration
 - get the rating factors behind a quote premium
-- financial services
-- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
 - australia
+- retrieve a certificate of currency for a policy
+- embedded insurance
+- submit a customer insurance lead to the allianz sales team for follow-up
+- insurance
 - Financial Institution Integration Team
-- submit a customer lead to the allianz sales team
-- price estimation and quote generation for end customers
-- policy completion and certificate management
-- insurance certificate retrieval resources
-- get quote summary
-- complete a policy application via staff-assisted workflow
+- insurance policy completion resources
+- individual quote detail and rating factor resources
 slug: insurance-partner-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Allianz Insurance Partner Integration\"\n  description: \"Workflow capability for financial institutions and retail partners embedding Allianz Australian insurance products into their customer journeys. Combines quoting, lead referral, policy completion, and certificate retrieval into a unified integration layer.\"\n  tags:\n    - Insurance\n    - Australia\n    - Partner Integration\n    - Embedded Insurance\n    - Quoting\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALLIANZ_CLIENT_ID: ALLIANZ_CLIENT_ID\n      ALLIANZ_CLIENT_SECRET: ALLIANZ_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: allianz-api-connect\n      location: ./shared/api-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: allianz-partner-integration-api\n      description: \"Unified REST API for Allianz insurance partner integration workflows.\"\n      resources:\n \
   \       - path: /v1/quotes\n          name: quotes\n          description: \"Insurance quoting and estimation resources\"\n          operations:\n            - method: POST\n              name: create-assisted-quote\n              description: \"Create a staff-assisted insurance quote for a customer\"\n              call: \"allianz-api-connect.create-price-estimate-assisted\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: send-quote-email\n              description: \"Email a quote to a customer for their review\"\n              call: \"allianz-api-connect.send-price-estimate-email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/quotes/{estimate_id}\n          name: quote-detail\n          description: \"Individual quote detail and rating factor resources\"\n          operations:\n            - method: GET\n\

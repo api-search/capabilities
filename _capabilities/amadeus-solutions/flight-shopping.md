@@ -21,35 +21,35 @@ provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
 - search flights advanced
-- complete flight shopping flow from search through price confirmation.
-- OTA Developer
-- booking
-- search flights
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- search for available flight offers.
-- pricing
-- confirm flight price
-- confirm price
-- airlines
-- flights
+- search available flights by origin, destination, and date.
+- price confirmation and validation before booking.
+- Travel Chatbot Developer
 - developer building online travel agency flight search and booking flows.
-- travel technology
-- confirm pricing for a selected flight offer.
-- upsell, seat selection, and add-on services.
+- search for available flight offers.
+- search flights
+- confirm flight price
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- travel
 - amadeus
 - search
-- search available flights by origin, destination, and date.
-- flight offer discovery and comparison.
-- Travel Chatbot Developer
-- travel
-- confirm current price and availability.
-- shopping
-- gds
-- price confirmation and validation before booking.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- upsell, seat selection, and add-on services.
+- complete flight shopping flow from search through price confirmation.
 - hotels
-- confirm the current price and availability of a selected flight offer before creating a booking.
+- booking
+- airlines
+- flights
+- flight offer discovery and comparison.
+- confirm pricing for a selected flight offer.
+- confirm price
 - developer building conversational travel assistants for flight search.
+- gds
+- confirm current price and availability.
+- pricing
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- OTA Developer
+- shopping
+- travel technology
 slug: flight-shopping
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Flight Shopping\n  description: >-\n    Unified workflow capability for complete flight shopping encompassing\n    search, pricing, upsell, and seat selection. Used by OTA developers,\n    airline retailing platforms, and travel chatbots to build end-to-end\n    flight shopping experiences.\n  tags:\n    - Amadeus\n    - Flights\n    - Shopping\n    - Search\n    - Pricing\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: flight-offers-search\n      location: ./shared/flight-offers-search.yaml\n    - import: flight-offers-price\n      location: ./shared/flight-offers-price.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flight-shopping-api\n      description: Unified REST API for flight search, pricing, and ancillary selection.\n      resources:\n\
   \        - path: /v1/flights/search\n          name: flight-search\n          description: Search for available flight offers.\n          operations:\n            - method: GET\n              name: search-flights\n              description: Search available flights by origin, destination, and date.\n              call: \"flight-offers-search.get-flight-offers\"\n              with:\n                originLocationCode: \"rest.origin\"\n                destinationLocationCode: \"rest.destination\"\n                departureDate: \"rest.departureDate\"\n                adults: \"rest.adults\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flights/price\n          name: flight-price\n          description: Confirm pricing for a selected flight offer.\n          operations:\n            - method: POST\n              name: confirm-price\n              description: Confirm current price and availability.\n             \

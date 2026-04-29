@@ -24,39 +24,39 @@ personas: []
 provider_name: Amadeus Traveler Media
 provider_slug: amadeus-traveler-media
 search_terms:
+- discover destinations with pois, hotel ratings, and recommendations.
+- individual point of interest details.
+- points of interest
+- points of interest discovery.
+- get attraction details
 - hotel sentiment ratings.
 - media
-- Destination Content Manager
-- get hotel ratings
-- content manager building rich destination guides with attractions and ratings.
 - get hotel sentiment ratings
-- get hotel sentiment ratings.
-- find attractions and points of interest near a location.
-- tourism
-- retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
-- points of interest
-- destination
-- individual point of interest details.
-- get poi
-- search attractions
+- retrieve detailed information about a specific tourist attraction or point of interest.
 - Travel App Developer
-- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
-- get attraction details
 - photos
-- amadeus
-- points of interest discovery.
-- destinations
+- tourism
+- search attractions
+- get details for a specific point of interest.
+- developer building destination discovery and travel planning applications.
 - travel
-- discovery
 - search pois
+- amadeus
+- get poi
+- hotels
+- destination
 - hotel ratings and traveler sentiment data.
 - content
-- get details for a specific point of interest.
-- discover destinations with pois, hotel ratings, and recommendations.
+- retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
+- content manager building rich destination guides with attractions and ratings.
+- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
+- destinations
+- get hotel sentiment ratings.
+- discovery
 - tourist attractions, pois, and destination information.
-- hotels
-- developer building destination discovery and travel planning applications.
-- retrieve detailed information about a specific tourist attraction or point of interest.
+- find attractions and points of interest near a location.
+- get hotel ratings
+- Destination Content Manager
 slug: destination-discovery
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Destination Discovery\n  description: >-\n    Workflow capability for discovering destinations and media content, combining\n    Points of Interest, Hotel Ratings, Travel Recommendations, and Location Score\n    APIs. Used by travel app developers, destination marketing organizations, and\n    travel content platforms building rich destination discovery experiences.\n  tags:\n    - Amadeus\n    - Destinations\n    - Discovery\n    - Hotels\n    - Media\n    - Points of Interest\n    - Tourism\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: points-of-interest\n      location: ./shared/points-of-interest.yaml\n    - import: hotel-ratings\n      location: ./shared/hotel-ratings.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: destination-discovery-api\n\
   \      description: Unified REST API for destination content and traveler media.\n      resources:\n        - path: /v1/destinations/pois\n          name: pois\n          description: Points of interest discovery.\n          operations:\n            - method: GET\n              name: search-pois\n              description: Find attractions and points of interest near a location.\n              call: \"points-of-interest.get-points-of-interest\"\n              with:\n                latitude: \"rest.latitude\"\n                longitude: \"rest.longitude\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/destinations/pois/{poiId}\n          name: poi\n          description: Individual point of interest details.\n          operations:\n            - method: GET\n              name: get-poi\n              description: Get details for a specific point of interest.\n              call: \"points-of-interest.get-poi-by-id\"\

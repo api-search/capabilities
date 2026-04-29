@@ -17,33 +17,33 @@ personas: []
 provider_name: Apache ORC
 provider_slug: apache-orc
 search_terms:
-- get file metadata
-- get column statistics
-- hadoop
-- merge multiple orc files into one
-- list files
-- manages orc file creation, conversion, and schema evolution
-- merge orc files
-- get column statistics from an orc file
-- big data
-- reads orc files and analyzes column statistics
-- get file schema
-- list orc files
-- columnar storage
-- file format
-- convert
-- Data Analyst
-- convert csv, json, or parquet to orc format
-- compression
-- list available orc files
-- get the schema of an orc file
 - convert to orc
-- apache orc
-- Data Engineer
-- apache
-- data processing
-- get metadata about an orc file
+- get column statistics
+- compression
+- list orc files
+- merge orc files
 - open source
+- big data
+- list files
+- merge multiple orc files into one
+- list available orc files
+- convert csv, json, or parquet to orc format
+- columnar storage
+- get file schema
+- get metadata about an orc file
+- manages orc file creation, conversion, and schema evolution
+- reads orc files and analyzes column statistics
+- apache
+- file format
+- Data Engineer
+- Data Analyst
+- data processing
+- convert
+- apache orc
+- hadoop
+- get file metadata
+- get the schema of an orc file
+- get column statistics from an orc file
 slug: orc-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache ORC File Processing Workflow\"\n  description: \"Workflow capability for reading, writing, converting, and analyzing Apache ORC columnar files.\"\n  tags:\n    - Apache ORC\n    - Big Data\n    - Columnar Storage\n    - Data Processing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      ORC_API_KEY: ORC_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: orc\n      baseUri: https://localhost:8080/orc\n      description: \"Apache ORC REST service\"\n      resources:\n        - name: files\n          path: /files\n          description: \"ORC file management\"\n          operations:\n            - name: listFiles\n              method: GET\n              description: \"List ORC files\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n       \
   \ - name: convert\n          path: /convert\n          description: \"File conversion\"\n          operations:\n            - name: convertToOrc\n              method: POST\n              description: \"Convert files to ORC format\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: orc-api\n      description: \"Unified REST API for ORC file operations.\"\n      resources:\n        - path: /v1/files\n          name: files\n          operations:\n            - method: GET\n              name: list-files\n              description: \"List ORC files\"\n              call: \"orc.listFiles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/convert\n          name: convert\n          operations:\n            - method: POST\n              name:\

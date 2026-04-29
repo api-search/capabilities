@@ -26,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- dynamic service registry and health-based routing
-- dns
-- discover service instances
-- register an instance with a cloud map service
-- manage services
-- list all cloud map service discovery namespaces
-- engineers managing service registries and microservice infrastructure
-- Platform Engineer
-- list services
-- list all instances registered with a specific cloud map service
-- cloud map
-- register instance
-- create a service
-- amazon web services
-- devops
-- DevOps Engineer
-- list services registered in cloud map
-- discover healthy instances
-- create service
-- list instances
-- service discovery
-- discover healthy service instances by namespace and service name
-- list all namespaces
-- manage service discovery namespaces
-- create a new cloud map service within a namespace
-- microservices
-- discover instances
 - aws
-- devops practitioners automating service registration and health monitoring
+- list services registered in cloud map
+- dynamic service registry and health-based routing
+- service discovery
 - list namespaces
+- discover healthy instances
+- DevOps Engineer
+- engineers managing service registries and microservice infrastructure
+- discover service instances
+- create service
+- dns
+- create a service
+- cloud map
+- list instances
+- Platform Engineer
+- list all instances registered with a specific cloud map service
+- manage services
+- list all namespaces
+- discover healthy service instances by namespace and service name
+- register instance
 - dynamic microservice registration and discovery
+- devops practitioners automating service registration and health monitoring
+- register an instance with a cloud map service
+- amazon web services
+- list services
+- microservices
+- manage service discovery namespaces
+- devops
+- create a new cloud map service within a namespace
+- list all cloud map service discovery namespaces
+- discover instances
 slug: service-discovery
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Cloud Map Service Discovery\"\n  description: \"Workflow for dynamically discovering and registering microservices using AWS Cloud Map, enabling DevOps and platform engineers to maintain service registries with health-based routing.\"\n  tags:\n    - Amazon Web Services\n    - Cloud Map\n    - Service Discovery\n    - Microservices\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cloudmap\n      location: ./shared/cloud-map.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: service-discovery-api\n      description: \"Unified REST API for AWS Cloud Map service discovery operations.\"\n      resources:\n        - path: /v1/namespaces\n          name: namespaces\n          description:\
   \ \"Manage service discovery namespaces\"\n          operations:\n            - method: GET\n              name: list-namespaces\n              description: \"List all namespaces\"\n              call: \"cloudmap.list-namespaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services\n          name: services\n          description: \"Manage services\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List services\"\n              call: \"cloudmap.list-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service\n              description: \"Create a service\"\n              call: \"cloudmap.create-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/discover\n\

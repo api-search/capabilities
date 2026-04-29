@@ -14,23 +14,23 @@ personas: []
 provider_name: Azure Container Instances
 provider_slug: azure-container-instances
 search_terms:
-- list containergroup resources
-- list container groups
+- resource management
+- list containers
+- microsoft
+- list container resources
+- cloud
+- list
 - list container group usages
 - serverless
-- resource management
-- list
-- azure
-- microsoft
-- list all resources
-- list container resources
-- azure resource management
-- container instances
-- list containers
-- list containergroupusage resources
-- containers
+- list container groups
 - management
-- cloud
+- containers
+- azure resource management
+- list all resources
+- list containergroup resources
+- azure
+- list containergroupusage resources
+- container instances
 slug: azure-container-instances-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Instances Management\"\n  description: \"Workflow capability for managing Azure Container Instances resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-container-instances\n      location: ./shared/azure-container-instances.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: azure-container-instances-management-api\n      description: \"Unified REST API for Azure Container Instances management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n   \
   \           description: \"List all resources\"\n              call: \"azure-container-instances.list-container-groups\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9094\n      namespace: azure-container-instances-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Container Instances management.\"\n      tools:\n        - name: list-container-groups\n          description: \"List ContainerGroup resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-container-instances.list-container-groups\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-containers\n          description: \"List Container resources\"\

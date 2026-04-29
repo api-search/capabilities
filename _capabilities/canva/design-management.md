@@ -38,67 +38,67 @@ personas: []
 provider_name: Canva
 provider_slug: canva
 search_terms:
-- design autofill.
-- delete an asset.
-- design creation and management.
-- get design
-- get resize job status.
-- create a new canva design.
-- create a comment on a design.
-- create comment
-- automation
-- collaboration
-- get the autofill dataset for a brand template.
-- get brand template
-- get export job
-- design exports.
-- list brand templates
-- list designs
-- create export job
-- get autofill job status.
-- get autofill job
-- list brand templates.
-- create autofill job
-- get a folder by id.
-- get a specific design by id.
-- design
-- list canva designs accessible to the user.
-- templates
-- create design
-- delete asset
-- marketing
-- get a brand template by id.
-- upload an asset to canva.
-- list folder items
-- brand management
-- visual content
-- list designs.
-- get the authenticated user profile.
-- list available brand templates.
-- create a design.
-- export a design.
-- get an asset.
-- get resize job
-- content creation
-- get brand template dataset
-- print
-- get an asset by id.
-- resize a design to different dimensions or preset types.
-- graphics
-- get export job status and download url.
-- create resize job
-- asset management.
-- brand template access.
-- upload asset
 - canva
-- create autofill job.
-- get users me
+- graphics
+- get the authenticated user profile.
+- create comment
 - apps
-- export a design to pdf, png, jpg, gif, pptx, or mp4.
+- get resize job
 - create a design from a brand template using autofill data.
+- content creation
+- create design
+- design creation and management.
+- get a folder by id.
+- create a comment on a design.
+- create export job
+- brand management
+- list brand templates.
+- get design
+- export a design.
+- get export job
+- create autofill job
+- get users me
+- create a new canva design.
+- get brand template dataset
+- get a brand template by id.
+- create a design.
+- list canva designs accessible to the user.
 - get asset
-- list items in a folder.
+- upload an asset to canva.
+- templates
+- design
+- get brand template
+- list designs
+- design autofill.
+- list folder items
+- get an asset.
+- upload asset
+- delete an asset.
+- marketing
+- automation
+- delete asset
+- print
 - get folder
+- get autofill job
+- resize a design to different dimensions or preset types.
+- visual content
+- export a design to pdf, png, jpg, gif, pptx, or mp4.
+- get a specific design by id.
+- get the autofill dataset for a brand template.
+- create autofill job.
+- create resize job
+- get export job status and download url.
+- list brand templates
+- get resize job status.
+- get an asset by id.
+- design exports.
+- list items in a folder.
+- list available brand templates.
+- collaboration
+- list designs.
+- brand template access.
+- get autofill job status.
+- asset management.
 slug: design-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Canva Design Management\"\n  description: \"Unified design management workflow combining design creation, asset management, brand templates, autofill, exports, and collaboration for marketing teams and content creators.\"\n  tags:\n    - Canva\n    - Design\n    - Marketing\n    - Brand Management\n    - Content Creation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CANVA_ACCESS_TOKEN: CANVA_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: connect-api\n      location: ./shared/connect-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: design-management-api\n      description: \"Unified REST API for Canva design management.\"\n      resources:\n        - path: /v1/designs\n          name: designs\n          description: \"Design creation and management.\"\n          operations:\n            - method: GET\n              name: list-designs\n\
   \              description: \"List designs.\"\n              call: \"connect-api.list-designs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-design\n              description: \"Create a design.\"\n              call: \"connect-api.create-design\"\n              with:\n                design_type: \"rest.design_type\"\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Asset management.\"\n          operations:\n            - method: GET\n              name: get-asset\n              description: \"Get an asset.\"\n              call: \"connect-api.get-asset\"\n              with:\n                assetId: \"rest.assetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"\

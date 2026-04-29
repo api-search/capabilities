@@ -19,38 +19,38 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- Tax Manager
-- calculate import duties
-- cross-border tax calculations
-- manages sales tax compliance, exemption certificates, and returns filing
-- real-time tax calculation across us and global jurisdictions
-- check e-invoicing compliance requirements for a destination country
-- avalara
+- list country e-invoicing mandates
+- vat returns, 1099 filing, and lodging tax reporting
 - integrates avalara apis into erp and billing systems
-- e-invoicing
-- calculate import duties, customs fees, and vat for cross-border shipments
-- hs code and tax code classification for products
-- check country einvoicing mandate
-- International Trade Manager
-- country-specific e-invoicing mandate compliance
-- sales tax calculation, certificate management, and e-invoicing
 - vat
+- e-invoicing
+- e-invoicing mandates by country
+- real-time tax calculation across us and global jurisdictions
+- Tax Manager
+- oversees tax strategy, compliance automation, and cost optimization
+- check country einvoicing mandate
+- avalara
+- cross-border
+- Finance Director
+- calculate import duties and vat for cross-border shipment
+- cross-border tax calculations
 - manages cross-border compliance, tariff classification, and e-invoicing
 - taxes
-- tax exemption certificate collection and validation
-- vat returns, 1099 filing, and lodging tax reporting
+- International Trade Manager
+- check e-invoicing compliance requirements for a destination country
+- sales tax calculation, certificate management, and e-invoicing
+- hs code and tax code classification for products
 - submit cross border einvoice
-- hs codes
-- import duties, vat, and e-invoicing for international trade
-- list mandates
-- list country e-invoicing mandates
-- e-invoicing mandates by country
-- Finance Director
-- tariff
-- cross-border
-- calculate import duties and vat for cross-border shipment
+- calculate import duties, customs fees, and vat for cross-border shipments
+- calculate import duties
 - submit a cross-border e-invoice for customs and vat compliance
-- oversees tax strategy, compliance automation, and cost optimization
+- list mandates
+- import duties, vat, and e-invoicing for international trade
+- manages sales tax compliance, exemption certificates, and returns filing
+- tax exemption certificate collection and validation
+- tariff
+- country-specific e-invoicing mandate compliance
+- hs codes
 slug: avalara-cross-border-compliance
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Avalara Cross-Border Trade Compliance\n  description: Workflow for cross-border trade combining tariff classification, VAT calculation, and e-invoicing mandates. Used by international trade teams and importers/exporters to automate customs\n    and tax compliance.\n  tags:\n  - Avalara\n  - Cross-Border\n  - Tariff\n  - HS Codes\n  - E-Invoicing\n  - VAT\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AVALARA_USERNAME: AVALARA_USERNAME\n    AVALARA_PASSWORD: AVALARA_PASSWORD\n    AVALARA_BEARER_TOKEN: AVALARA_BEARER_TOKEN\ncapability:\n  consumes:\n  - import: avatax\n    location: ./shared/avatax.yaml\n  - import: einvoicing\n    location: ./shared/einvoicing.yaml\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: avalara-crossborder-api\n    description: REST API for cross-border trade compliance.\n    resources:\n    - path: /v1/transactions\n      name: transactions\n      description:\
   \ Cross-border tax calculations\n      operations:\n      - method: POST\n        name: calculate-import-duties\n        description: Calculate import duties and VAT for cross-border shipment\n        call: avatax.create-transaction\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/einvoicing/mandates\n      name: mandates\n      description: E-invoicing mandates by country\n      operations:\n      - method: GET\n        name: list-mandates\n        description: List country e-invoicing mandates\n        call: einvoicing.list-mandates\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9091\n    namespace: avalara-crossborder-mcp\n    transport: http\n    description: MCP server for AI-assisted cross-border compliance.\n    tools:\n    - name: calculate-import-duties\n      description: Calculate import duties, customs fees, and VAT for cross-border shipments\n      hints:\n        readOnly: false\n\

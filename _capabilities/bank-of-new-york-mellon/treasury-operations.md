@@ -10,34 +10,34 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- get account balances
-- initiate payment
-- payments
-- Institutional Client
-- executive managing corporate liquidity and treasury operations
-- bny mellon
-- get current and available balances for a bny mellon account
-- get payment status
-- list transactions
-- list bny accounts
 - Treasury Analyst
-- institutional account management and cash positioning
-- list transactions for a bny mellon account
-- analyst executing treasury transactions and reporting
-- institutional banking
-- initiate funds transfer
-- internal funds transfers and liquidity management
+- list bny mellon treasury accounts for the authenticated client
+- get account balances
+- initiate a funds transfer between bny mellon accounts
+- list bny accounts
+- treasury
+- Institutional Client
+- institutional investor or fund manager using bny custody and treasury services
+- institutional treasury operations including accounts, payments, and funds transfers
 - wire transfers
 - banking
-- list bny mellon treasury accounts for the authenticated client
 - Corporate Treasurer
-- get the status and details of a bny mellon payment
+- institutional banking
+- analyst executing treasury transactions and reporting
+- list transactions
+- executive managing corporate liquidity and treasury operations
+- get payment status
+- initiate funds transfer
+- bny mellon
+- payments
+- initiate payment
 - wire, ach, swift, and chips payment execution
-- treasury
-- institutional investor or fund manager using bny custody and treasury services
+- get the status and details of a bny mellon payment
+- internal funds transfers and liquidity management
+- list transactions for a bny mellon account
+- get current and available balances for a bny mellon account
 - initiate a payment (wire, ach, swift, chips) through bny mellon
-- initiate a funds transfer between bny mellon accounts
-- institutional treasury operations including accounts, payments, and funds transfers
+- institutional account management and cash positioning
 - asset servicing
 slug: treasury-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"BNY Mellon Treasury Operations\"\n  description: >-\n    BNY Mellon treasury operations workflow for institutional clients covering account\n    management, balance reporting, payment initiation, funds transfers, and transaction\n    history. Integrates with TMS and ERP platforms for automated treasury operations.\n  tags:\n    - BNY Mellon\n    - Treasury\n    - Payments\n    - Institutional Banking\n    - Wire Transfers\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BNY_CLIENT_ID: BNY_CLIENT_ID\n      BNY_CLIENT_SECRET: BNY_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: bny-treasury\n      location: ./shared/treasury-services-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9080\n      namespace: bny-treasury-mcp\n      transport: http\n      description: \"MCP server for AI-assisted BNY Mellon treasury operations.\"\n      tools:\n        - name: list-bny-accounts\n\

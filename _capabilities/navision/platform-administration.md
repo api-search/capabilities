@@ -48,72 +48,72 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- get user
-- list users
-- copy an environment
-- storage quotas
-- erp
-- list features
-- get environment
-- automation
-- list all business central environments
-- business management
-- list security groups
-- list automation companies
-- permission sets
-- restore environment
-- install an extension
-- get allowed quotas
-- delete automation company
-- list all environments
-- list installed apps
-- delete a company
-- uninstall extension
-- list configuration packages
-- navision
-- get allowed quotas and limits
-- update user properties
-- create environment
-- get environment details
-- get quotas
-- create a new company
-- create automation company
-- list rapidstart configuration packages
-- list business central users
-- list companies
-- delete an environment
-- environment management
-- list installed apps in an environment
-- list permission sets
-- list scheduled background jobs
-- get environment storage usage
-- get scheduled upgrade
-- get environment settings
-- list published extensions
-- get a user by id
-- install extension
-- list extensions
-- administration
-- create a new environment
-- business central
-- update user
-- delete environment
-- user management
-- dynamics nav
-- single environment
-- get environment storage
-- uninstall an extension
-- company management
-- finance
-- inventory
-- get scheduled upgrade information
-- microsoft
-- copy environment
-- restore an environment from a point in time
-- list scheduled jobs
-- list environments
 - dynamics 365
+- administration
+- company management
+- get a user by id
+- delete automation company
+- single environment
+- dynamics nav
+- create a new environment
+- list automation companies
+- list scheduled jobs
+- business management
+- update user properties
+- delete a company
+- list published extensions
+- uninstall extension
+- list scheduled background jobs
+- create a new company
+- list environments
+- permission sets
+- create automation company
+- get user
+- list rapidstart configuration packages
+- get environment
+- install an extension
+- get environment storage
+- get scheduled upgrade information
+- create environment
+- navision
+- user management
+- delete environment
+- environment management
+- get environment details
 - extension management
+- inventory
+- update user
+- copy an environment
+- copy environment
+- list installed apps
+- get environment settings
+- get scheduled upgrade
+- storage quotas
+- list users
+- get allowed quotas
+- automation
+- business central
+- list companies
+- install extension
+- uninstall an extension
+- get quotas
+- list all environments
+- microsoft
+- get allowed quotas and limits
+- get environment storage usage
+- list business central users
+- list permission sets
+- restore an environment from a point in time
+- restore environment
+- list extensions
+- list features
+- finance
+- erp
+- list installed apps in an environment
+- delete an environment
+- list configuration packages
+- list all business central environments
+- list security groups
 slug: platform-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynamics NAV Platform Administration\"\n  description: \"Unified workflow for administering Dynamics 365 Business Central combining the Administration Center API for environment management with the Automation API for company setup, extensions, users, and permissions. Used by platform administrators and IT teams.\"\n  tags:\n    - Business Central\n    - Dynamics 365\n    - Administration\n    - Automation\n    - Environment Management\n    - User Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BC_ADMIN_OAUTH_TOKEN: BC_ADMIN_OAUTH_TOKEN\n      BC_OAUTH_TOKEN: BC_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: admin-center\n      location: ./shared/admin-center.yaml\n    - import: automation\n      location: ./shared/automation.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: platform-admin-api\n      description: \"Unified REST API for\
   \ Business Central platform administration.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"List all environments\"\n              call: \"admin-center.list-all-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/environments/{environmentName}\n          name: environment\n          description: \"Single environment\"\n          operations:\n            - method: GET\n              name: get-environment\n              description: \"Get environment details\"\n              call: \"admin-center.get-environment\"\n              with:\n                applicationFamily: \"rest.applicationFamily\"\n                environmentName: \"rest.environmentName\"\n              outputParameters:\n             \

@@ -30,45 +30,45 @@ personas: []
 provider_name: Akamai API Security
 provider_slug: akamai-api-security
 search_terms:
-- posture management
-- list all akamai api security configurations
-- api discovery
-- api inventory and discovery
-- create security configuration
-- create a new akamai api security configuration
-- list all api security configurations
-- API Security Analyst
-- list policies
-- threat protection
-- list configuration activations
-- monitors api discovery, threat detection, and posture findings
-- check activation status
-- list security policies within a configuration
-- api security
-- manages api security configurations and activations
-- get api discovery
+- list security configurations
+- create a new api security configuration
+- akamai
+- list security policies
 - security automation
-- list activations
-- discover apis
-- list and check status of security configuration activations
-- Security Engineer
-- api posture assessment and vulnerability management
+- get api discovery
+- list all api security configurations
+- api inventory and discovery
 - get api inventory including shadow and zombie api findings
 - cloud security
-- list security policies
-- create a new api security configuration
+- threat protection
+- monitors api discovery, threat detection, and posture findings
+- api posture assessment and vulnerability management
+- list configuration activations
+- list and check status of security configuration activations
+- Security Engineer
+- check activation status
+- api security
+- manage api security configurations and posture
+- API Security Analyst
+- real-time api threat detection and blocking
+- api security configuration management
+- security policy management
+- list policies
+- api discovery
+- posture management
 - create configuration
 - get api discovery results
-- manage api security configurations and posture
-- list security configurations
-- api security configuration management
-- configuration activations
-- akamai
-- runtime protection
-- list configurations
-- real-time api threat detection and blocking
-- security policy management
 - api security configuration and policy management
+- manages api security configurations and activations
+- list all akamai api security configurations
+- list configurations
+- runtime protection
+- create a new akamai api security configuration
+- list security policies within a configuration
+- configuration activations
+- create security configuration
+- discover apis
+- list activations
 slug: api-security-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Akamai API Security Management\"\n  description: \"Unified workflow for managing Akamai API Security configurations, policies, and threat protection. Covers security posture management, API discovery, and configuration activation for security teams.\"\n  tags:\n    - Akamai\n    - API Security\n    - Posture Management\n    - Runtime Protection\n    - Security Automation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AKAMAI_CLIENT_TOKEN: AKAMAI_CLIENT_TOKEN\n      AKAMAI_CLIENT_SECRET: AKAMAI_CLIENT_SECRET\n      AKAMAI_ACCESS_TOKEN: AKAMAI_ACCESS_TOKEN\n      AKAMAI_HOST: AKAMAI_HOST\n\ncapability:\n  consumes:\n    - import: akamai-api-security\n      location: ./shared/api-security.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-security-management-api\n      description: \"Unified REST API for Akamai API Security management workflows.\"\n \
   \     resources:\n        - path: /v1/configurations\n          name: configurations\n          description: \"API security configuration management\"\n          operations:\n            - method: GET\n              name: list-configurations\n              description: \"List all API security configurations\"\n              call: \"akamai-api-security.list-configs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-configuration\n              description: \"Create a new API security configuration\"\n              call: \"akamai-api-security.create-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Security policy management\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List\

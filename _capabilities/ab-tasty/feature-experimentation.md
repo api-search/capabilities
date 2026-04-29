@@ -26,42 +26,42 @@ personas: []
 provider_name: AB Tasty
 provider_slug: ab-tasty
 search_terms:
-- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
-- experimentation
-- evaluate visitor context and retrieve all matching campaign assignments
+- get flags
 - retrieve campaign assignments for a visitor based on context
+- get visitor campaigns
+- progressive feature releases and feature toggles
+- get assignment for a specific campaign by id
+- feature flags
+- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
+- get visitor flags
+- get campaign
+- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
+- get campaigns
+- backend or frontend developer implementing server-side experiments and feature flags
+- evaluate visitor context and retrieve all matching campaign assignments
+- feature flag evaluation operations
+- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- product manager monitoring experiment assignments and flag rollouts
 - manually activate a campaign variation for a visitor
 - activate experiment
-- ab tasty
-- a/b testing
-- get flags
-- get visitor flags
-- product manager monitoring experiment assignments and flag rollouts
-- feature flags
-- feature flag evaluation operations
-- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
-- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- quality assurance engineer using remote control api to test experiments
+- server side
+- Product Manager
 - aggregation
+- a/b testing
+- personalization
+- get visitor campaign
+- activate campaign
+- retrieve feature flag values and metadata for a visitor
+- Developer
+- conversion tracking and experiment measurement
+- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
+- manual campaign activation
+- experimentation
+- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
 - a/b testing, multivariate testing, and experiment management
 - retrieve a specific campaign assignment for a visitor
-- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
-- server side
-- progressive feature releases and feature toggles
-- retrieve feature flag values and metadata for a visitor
-- backend or frontend developer implementing server-side experiments and feature flags
-- get visitor campaigns
-- manual campaign activation
-- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
-- conversion tracking and experiment measurement
-- get campaigns
-- personalization
-- activate campaign
-- get campaign
-- Product Manager
-- Developer
-- get visitor campaign
-- quality assurance engineer using remote control api to test experiments
-- get assignment for a specific campaign by id
+- ab tasty
 slug: feature-experimentation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AB Tasty Feature Experimentation\"\n  description: \"Unified workflow for server-side feature experimentation, A/B testing, and feature flag management. Enables developers and product teams to evaluate campaigns, retrieve flag values, and track activations for controlled rollouts and experiments.\"\n  tags:\n    - AB Tasty\n    - Experimentation\n    - Feature Flags\n    - A/B Testing\n    - Server Side\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AB_TASTY_API_KEY: AB_TASTY_API_KEY\n\ncapability:\n  consumes:\n    - import: decision-api\n      location: ./shared/decision-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: feature-experimentation-api\n      description: \"Unified REST API for AB Tasty server-side feature experimentation and campaign management.\"\n      resources:\n        - path: /v1/campaigns\n          name: campaigns\n       \
   \   description: \"Retrieve campaign assignments for a visitor based on context\"\n          operations:\n            - method: POST\n              name: get-campaigns\n              description: \"Evaluate visitor context and retrieve all matching campaign assignments\"\n              call: \"decision-api.get-campaigns\"\n              with:\n                environmentId: \"rest.environmentId\"\n                mode: \"rest.mode\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/campaigns/{campaignId}\n          name: campaign\n          description: \"Retrieve a specific campaign assignment for a visitor\"\n          operations:\n            - method: POST\n              name: get-campaign\n              description: \"Get assignment for a specific campaign by ID\"\n              call: \"decision-api.get-campaign\"\n              with:\n                environmentId: \"rest.environmentId\"\n                campaignId:\

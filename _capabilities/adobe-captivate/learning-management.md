@@ -55,70 +55,70 @@ personas: []
 provider_name: Adobe Captivate
 provider_slug: adobe-captivate
 search_terms:
-- list all available learning objects.
-- create a new user account.
-- list certifications
-- list learners, managers, authors, and admin users in adobe learning manager.
-- list learning objects
-- adobe captivate
-- single learning object details.
-- unified workflow for managing learning objects, enrollments, users, and compliance.
-- learning management
-- courses, learning programs, certifications, and job aids.
 - list all skills defined in the account for skill gap analysis.
-- real-time webhook events for downstream integrations.
+- courses, learning programs, certifications, and job aids.
+- learning management
+- developer integrating hris systems with adobe learning manager for user provisioning and data sync.
 - retrieve account-level configuration and settings for adobe learning manager.
 - list all certifications.
-- create user
-- list all skills.
-- learning content catalog management.
-- education
-- get detailed information about a specific learning object including instances, skills, and prerequisites.
-- badge and achievement management.
-- learner enrollment management.
-- authoring
-- create a new user account in adobe learning manager for a new learner or employee.
-- list badges
-- list all enrollments.
-- lms
-- enroll learner
-- get details of a specific learning object.
-- L&D Administrator
-- create bulk job
-- list all users in the account.
-- learner progress, skill attainment, and completion reporting.
-- certification program management.
-- HR Integration Developer
-- list enrollments
-- list skills
-- list content catalogs organizing learning objects for targeted delivery.
-- get learning object
-- compliance
-- get account
-- learner and admin user management.
-- developer integrating hris systems with adobe learning manager for user provisioning and data sync.
-- core lms functionality including course delivery, enrollment, and progress tracking.
-- xapi
 - create bulk export job
-- training
-- create a bulk data import or export job.
-- skill tracking and management.
-- enroll a learner in a course, certification, or learning program.
-- list learner enrollments across all learning objects.
-- create a bulk export job for learner transcripts or training reports.
-- list all badges.
-- list all available courses, learning programs, certifications, and job aids in adobe learning manager.
-- elearning
-- list all catalogs.
-- learning and development professional managing course catalogs, enrollments, and compliance tracking.
-- list badges and achievements available to learners.
-- scorm
-- bulk import/export job management.
-- list certification programs for compliance and credential tracking.
-- enroll a learner in a learning object.
 - list catalogs
+- list certifications
+- elearning
+- HR Integration Developer
+- scorm
+- list content catalogs organizing learning objects for targeted delivery.
+- real-time webhook events for downstream integrations.
+- badge and achievement management.
+- list badges
+- list learner enrollments across all learning objects.
+- get account
 - certification and mandatory training compliance tracking.
+- education
+- learner and admin user management.
+- list all catalogs.
+- enroll a learner in a course, certification, or learning program.
+- xapi
+- list skills
+- get learning object
+- create a new user account in adobe learning manager for a new learner or employee.
+- learner enrollment management.
+- list learning objects
+- adobe captivate
+- create user
+- single learning object details.
+- list badges and achievements available to learners.
+- authoring
+- get details of a specific learning object.
+- skill tracking and management.
+- list learners, managers, authors, and admin users in adobe learning manager.
+- list all available learning objects.
+- bulk import/export job management.
 - list users
+- unified workflow for managing learning objects, enrollments, users, and compliance.
+- lms
+- list all badges.
+- core lms functionality including course delivery, enrollment, and progress tracking.
+- list all skills.
+- create a new user account.
+- compliance
+- enroll a learner in a learning object.
+- create a bulk export job for learner transcripts or training reports.
+- learner progress, skill attainment, and completion reporting.
+- list all enrollments.
+- certification program management.
+- create a bulk data import or export job.
+- list certification programs for compliance and credential tracking.
+- create bulk job
+- learning and development professional managing course catalogs, enrollments, and compliance tracking.
+- get detailed information about a specific learning object including instances, skills, and prerequisites.
+- training
+- list all available courses, learning programs, certifications, and job aids in adobe learning manager.
+- list all users in the account.
+- list enrollments
+- L&D Administrator
+- enroll learner
+- learning content catalog management.
 slug: learning-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Captivate Learning Management\"\n  description: \"Unified workflow capability for managing learning objects, enrollments, completions, and compliance tracking using Adobe Learning Manager APIs. Designed for L&D administrators and HR integration developers.\"\n  tags:\n    - Adobe Captivate\n    - Learning Management\n    - LMS\n    - Compliance\n    - Training\n    - Education\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_CAPTIVATE_ACCESS_TOKEN: ADOBE_CAPTIVATE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: captivate-prime\n      location: ./shared/captivate-prime-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: learning-management-api\n      description: \"Unified REST API for Adobe Learning Manager — learning objects, users, enrollments, skills, badges, and compliance.\"\n      resources:\n        - path: /v1/learning-objects\n\
   \          name: learning-objects\n          description: \"Courses, learning programs, certifications, and job aids.\"\n          operations:\n            - method: GET\n              name: list-learning-objects\n              description: \"List all available learning objects.\"\n              call: \"captivate-prime.list-learning-objects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/learning-objects/{learningObjectId}\n          name: learning-object\n          description: \"Single learning object details.\"\n          operations:\n            - method: GET\n              name: get-learning-object\n              description: \"Get details of a specific learning object.\"\n              call: \"captivate-prime.get-learning-object\"\n              with:\n                learningObjectId: \"rest.learningObjectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"\

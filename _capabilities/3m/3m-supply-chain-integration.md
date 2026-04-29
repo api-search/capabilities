@@ -35,45 +35,45 @@ personas: []
 provider_name: 3M
 provider_slug: 3m
 search_terms:
-- retrieve invoices for billing reconciliation.
 - track delivery status for partner orders.
-- list purchase orders with status information.
-- invoice retrieval and accounts payable reconciliation
-- list orders
-- retrieves invoices and reconciles billing with purchase orders
-- purchase order management.
-- tracks order status, monitors deliveries, and analyzes supply chain data
-- supply chain
-- Supply Chain Analyst
-- delivery tracking and logistics.
+- 3m product discovery and pricing
 - create order
-- track deliveries
-- retrieve 3m invoices for accounts payable reconciliation.
-- submit a new purchase order.
-- logistics
-- list products
-- list purchase orders placed with 3m with status and tracking.
-- list deliveries
-- get the partner-negotiated price for a specific 3m product.
-- invoice retrieval for billing reconciliation.
-- get negotiated price for a specific 3m product.
-- industrial
-- procurement
-- manufacturing
 - get product price
+- delivery tracking and logistics.
+- submit a new purchase order for 3m products.
+- 3m product catalog and partner pricing.
+- tracks order status, monitors deliveries, and analyzes supply chain data
+- industrial
+- supply chain
+- list 3m products available to the authenticated partner.
+- list orders
+- Supply Chain Analyst
 - Procurement Manager
 - list 3m products available to the authenticated partner with pricing.
-- searches products, compares pricing, and submits purchase orders
-- submit a new purchase order for 3m products.
-- delivery tracking and shipment status
-- 3m product discovery and pricing
-- Accounts Payable
-- 3m product catalog and partner pricing.
+- logistics
+- manufacturing
+- retrieves invoices and reconciles billing with purchase orders
+- list deliveries
+- list purchase orders placed with 3m with status and tracking.
+- track deliveries
 - track delivery status and estimated arrival for 3m orders.
-- end-to-end supply chain workflow for procurement and billing
+- Accounts Payable
+- searches products, compares pricing, and submits purchase orders
+- list purchase orders with status information.
+- retrieve invoices for billing reconciliation.
 - purchase order submission and tracking
+- get negotiated price for a specific 3m product.
+- submit a new purchase order.
+- invoice retrieval and accounts payable reconciliation
+- procurement
+- invoice retrieval for billing reconciliation.
+- get the partner-negotiated price for a specific 3m product.
+- purchase order management.
+- retrieve 3m invoices for accounts payable reconciliation.
+- delivery tracking and shipment status
+- list products
 - list invoices
-- list 3m products available to the authenticated partner.
+- end-to-end supply chain workflow for procurement and billing
 slug: 3m-supply-chain-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: 3M Supply Chain Integration\n  description: >-\n    End-to-end supply chain integration workflow for 3M partners and suppliers.\n    Combines product discovery, order management, delivery tracking, and invoice\n    reconciliation into a unified workflow for procurement managers, supply chain\n    analysts, and accounts payable teams.\n  tags:\n    - Manufacturing\n    - Supply Chain\n    - Procurement\n    - Logistics\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      THREEEM_BEARER_TOKEN: THREEEM_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: 3m-partner-supplier\n      location: ./shared/3m-partner-supplier-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: 3m-supply-chain-api\n      description: \"Unified REST API for 3M supply chain integration.\"\n      resources:\n        - path: /v1/products\n          name: products\n          description:\
   \ \"3M product catalog and partner pricing.\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List 3M products available to the authenticated partner.\"\n              call: \"3m-partner-supplier.list-products\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-product-price\n              description: \"Get negotiated price for a specific 3M product.\"\n              call: \"3m-partner-supplier.get-product-price\"\n              with:\n                productId: \"rest.productId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/orders\n          name: orders\n          description: \"Purchase order management.\"\n          operations:\n            - method: GET\n              name: list-orders\n              description: \"List purchase orders with\

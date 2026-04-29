@@ -26,27 +26,27 @@ personas: []
 provider_name: Docusign
 provider_slug: docusign
 search_terms:
-- create envelope
+- create and send an envelope
 - list envelopes in the docusign account
+- template management
+- create envelope
 - docusign
 - get envelope
-- list templates
-- retrieve envelope details
-- list available agreement templates
-- workflows
-- esignature
-- create and optionally send an agreement envelope
-- retrieve details of a specific envelope
-- create and send an envelope
-- list envelopes
-- envelope lifecycle management
-- documents
-- digital transaction management
-- agreements
 - contracts
-- individual envelope operations
-- template management
 - electronic signatures
+- individual envelope operations
+- list templates
+- list envelopes
+- digital transaction management
+- create and optionally send an agreement envelope
+- documents
+- retrieve details of a specific envelope
+- esignature
+- envelope lifecycle management
+- workflows
+- agreements
+- list available agreement templates
+- retrieve envelope details
 slug: agreement-workflows
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"DocuSign Agreement Workflows\"\n  description: \"Unified workflow for managing the full agreement lifecycle using DocuSign eSignature APIs, combining envelope management, document handling, templates, and signing workflows for business users and developers.\"\n  tags:\n    - DocuSign\n    - Agreements\n    - eSignature\n    - Workflows\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      DOCUSIGN_ACCESS_TOKEN: DOCUSIGN_ACCESS_TOKEN\n      DOCUSIGN_ACCOUNT_ID: DOCUSIGN_ACCOUNT_ID\n\ncapability:\n  consumes:\n    - import: esignature\n      location: ./shared/esignature.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: agreement-workflows-api\n      description: \"Unified REST API for DocuSign agreement workflows.\"\n      resources:\n        - path: /v1/envelopes\n          name: envelopes\n          description: \"Envelope lifecycle management\"\n        \
   \  operations:\n            - method: GET\n              name: list-envelopes\n              description: \"List envelopes\"\n              call: \"esignature.list-envelopes\"\n              with:\n                accountId: \"rest.accountId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-envelope\n              description: \"Create and send an envelope\"\n              call: \"esignature.create-envelope\"\n              with:\n                accountId: \"rest.accountId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/envelopes/{envelopeId}\n          name: envelope\n          description: \"Individual envelope operations\"\n          operations:\n            - method: GET\n              name: get-envelope\n              description: \"Retrieve envelope details\"\n              call: \"esignature.get-envelope\"\

@@ -9,12 +9,12 @@ personas: []
 provider_name: Allianz Trade
 provider_slug: allianz-trade-online
 search_terms:
-- e-commerce
 - credit insurance
-- surety
-- insurance
+- e-commerce
 - risk management
+- insurance
 - trade credit
+- surety
 slug: trade-credit-management
 source_yaml: "name: Trade Credit Management\ndescription: >-\n  Workflow capability composition for end-to-end trade credit insurance management\n  using the Allianz Trade APIs. Supports the complete credit risk lifecycle from\n  policy management through overdue reporting and claims declaration.\nversion: 1.0.0\ncapabilities:\n  - shared/payment-overdues.yaml\n  - shared/company-grade.yaml\n  - shared/claims.yaml\n  - shared/policy.yaml\nworkflows:\n  - id: credit-risk-monitoring\n    name: Credit Risk Monitoring\n    description: Monitor buyer creditworthiness and respond to payment defaults\n    steps:\n      - step: grade-buyer\n        capability: company-grade\n        operation: requestCompanyGrade\n        description: Request creditworthiness grade for a buyer\n      - step: poll-grade-job\n        capability: company-grade\n        operation: getJobStatus\n        description: Wait for grade assessment to complete\n      - step: report-overdue\n        capability: payment-overdues\n\
   \        operation: reportOverdue\n        description: Report payment default using OVD category code\n      - step: poll-overdue-job\n        capability: payment-overdues\n        operation: getJobStatus\n        description: Wait for overdue report to be processed\n  - id: claims-declaration\n    name: Claims Declaration\n    description: Declare an insurance claim after payment default\n    steps:\n      - step: verify-overdue\n        capability: payment-overdues\n        operation: getOverdue\n        description: Retrieve overdue record to reference in claim\n      - step: submit-claim\n        capability: claims\n        operation: submitClaim\n        description: Submit insurance claim referencing the overdue\n      - step: poll-claim-job\n        capability: claims\n        operation: getJobStatus\n        description: Wait for claim submission to be processed\n      - step: track-claim\n        capability: claims\n        operation: getClaim\n        description: Monitor claim\

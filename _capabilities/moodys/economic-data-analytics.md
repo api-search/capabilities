@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- list vintages for a series
-- insurance
-- get basket
-- entity verification
-- check data buffet api health
-- retrieve a single time series by mnemonic
-- analytics
-- list orders
+- download completed order output
 - get series
-- list supported output file types
-- financial analytics
-- search for available series
 - update basket
 - create order
-- retrieve a time series
-- climate risk
-- list vintages
-- moody's
-- list all data baskets
-- check health
+- economic data
+- analytics
+- update a basket
 - screening
+- time series data
+- list supported output file types
+- credit risk
+- create basket
+- retrieve a time series
+- get order status and details
+- forecasting
+- financial analytics
+- climate risk
+- list orders
+- risk
+- list file types
+- list vintages
+- download order
+- create a new data basket
+- retrieve a single time series by mnemonic
+- delete basket
 - create a new data order
-- list all orders
+- entity verification
+- list all data baskets
+- list frequencies
+- search for available series
+- compliance
+- get basket details
 - get multi series
 - get order
-- update a basket
-- get basket details
+- moody's
 - retrieve multiple time series
-- forecasting
-- list baskets
-- compliance
-- kyc
-- list available data frequencies
-- download order
+- list vintages for a series
 - search series
-- credit risk
-- time series data
-- list file types
-- create a new data basket
-- get order status and details
-- download completed order output
-- list frequencies
-- create basket
+- check data buffet api health
+- list available data frequencies
 - delete a basket
-- delete basket
-- economic data
-- risk
+- list all orders
+- insurance
+- kyc
+- list baskets
+- get basket
+- check health
 slug: economic-data-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Moody's Economic Data Analytics\"\n  description: \"Unified economic data analytics capability combining time series retrieval, basket management, order processing, and data search. Used by economists, risk analysts, and data scientists.\"\n  tags: [Moody's, Economic Data, Analytics, Forecasting]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      MOODYS_OAUTH_TOKEN: MOODYS_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: data-buffet\n      location: ./shared/data-buffet.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: economic-data-analytics-api\n      description: \"Unified REST API for Moody's economic data analytics.\"\n      resources:\n        - path: /v1/series\n          name: series\n          description: \"Time series data\"\n          operations:\n            - { method: GET, name: get-series, description: \"Retrieve a time series\", call: \"data-buffet.get-series\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: economic-data-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted economic data analytics.\"\n      tools:\n        - { name: get-series, description: \"Retrieve a single time series by mnemonic\", hints: { readOnly: true }, call: \"data-buffet.get-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-multi-series, description: \"Retrieve multiple time series\", hints: { readOnly: true }, call: \"data-buffet.get-multi-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-series, description: \"Search for available series\", hints: { readOnly: true, openWorld: true }, call: \"data-buffet.search-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-baskets, description: \"List all data baskets\", hints: { readOnly: true }, call: \"data-buffet.list-baskets\"\

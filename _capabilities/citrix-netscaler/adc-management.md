@@ -78,76 +78,76 @@ personas: []
 provider_name: Citrix NetScaler
 provider_slug: citrix-netscaler
 search_terms:
-- create a load balancing virtual server
-- create a new load balancing virtual server
-- get details of a specific load balancing virtual server
-- get service bindings for an lb virtual server
-- list lb vservers
-- delete a load balancing virtual server
-- update a content switching virtual server
-- delete cs vserver
-- get ns config
-- get statistics for an lb virtual server
-- load balancing virtual server statistics
-- get a specific load balancing virtual server
-- delete a content switching virtual server
-- application security
-- get a content switching virtual server
-- bind service to lb vserver
-- unbind service from lb vserver
-- network administration
-- single content switching virtual server
+- save running configuration to disk
 - statistics for a specific lb virtual server
-- service bindings for a load balancing virtual server
-- list lb vserver stats
-- list all load balancing virtual servers on the netscaler
-- delete lb vserver
-- adc management
-- update lb vserver
-- single load balancing virtual server
+- load balancing virtual servers
+- get all service bindings for a load balancing virtual server
+- get service bindings for an lb virtual server
+- list statistics for all cs virtual servers
+- single content switching virtual server
+- get cs vserver
+- save ns config
+- get lb vserver
+- list cs vservers
 - citrix
-- save the running netscaler configuration to persistent storage
-- get cs vserver stats
-- unbind a service from a load balancing virtual server
-- load balancing
-- create a content switching virtual server
-- list cs vserver stats
+- content switching virtual server statistics
+- netscaler
 - ssl offloading
 - get lb vserver service bindings
-- appliance configuration
-- list statistics for all cs virtual servers
-- list all load balancing virtual servers
-- content switching virtual servers
-- create lb vserver
-- list cs vservers
-- get cs vserver
-- update a load balancing virtual server configuration
-- api gateway
-- get netscaler configuration
-- get performance statistics for a specific lb virtual server
-- update a load balancing virtual server
-- create cs vserver
-- list performance statistics for all lb virtual servers
-- update cs vserver
-- get all service bindings for a load balancing virtual server
-- netscaler
-- application delivery controller
+- get cs vserver stats
 - traffic management
-- get lb vserver
-- get netscaler appliance configuration
-- web application firewall
-- list statistics for all lb virtual servers
-- load balancing virtual servers
-- save ns config
-- get details of a specific content switching virtual server
-- bind a backend service to a load balancing virtual server
-- list statistics for all content switching virtual servers
-- get lb vserver stats
-- bind a service to an lb virtual server
-- content switching virtual server statistics
-- save running configuration to disk
-- list all content switching virtual servers
+- bind service to lb vserver
+- list lb vservers
+- update a content switching virtual server
+- application security
+- get a specific load balancing virtual server
+- get netscaler configuration
+- get statistics for an lb virtual server
+- delete cs vserver
+- create a content switching virtual server
+- list performance statistics for all lb virtual servers
+- api gateway
 - get statistics for a specific content switching virtual server
+- unbind service from lb vserver
+- list all load balancing virtual servers on the netscaler
+- update cs vserver
+- list cs vserver stats
+- list all load balancing virtual servers
+- load balancing virtual server statistics
+- create cs vserver
+- get ns config
+- update lb vserver
+- bind a backend service to a load balancing virtual server
+- update a load balancing virtual server
+- list statistics for all lb virtual servers
+- single load balancing virtual server
+- delete lb vserver
+- get a content switching virtual server
+- load balancing
+- get lb vserver stats
+- list lb vserver stats
+- get details of a specific load balancing virtual server
+- content switching virtual servers
+- save the running netscaler configuration to persistent storage
+- get details of a specific content switching virtual server
+- get performance statistics for a specific lb virtual server
+- create a load balancing virtual server
+- delete a load balancing virtual server
+- bind a service to an lb virtual server
+- appliance configuration
+- create lb vserver
+- adc management
+- application delivery controller
+- list statistics for all content switching virtual servers
+- web application firewall
+- create a new load balancing virtual server
+- unbind a service from a load balancing virtual server
+- list all content switching virtual servers
+- service bindings for a load balancing virtual server
+- network administration
+- update a load balancing virtual server configuration
+- delete a content switching virtual server
+- get netscaler appliance configuration
 slug: adc-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Citrix NetScaler ADC Management\"\n  description: \"Unified capability for managing Citrix NetScaler application delivery controllers, including load balancing, content switching, configuration management, and monitoring. Used by network administrators and platform engineers.\"\n  tags:\n    - Citrix\n    - NetScaler\n    - Load Balancing\n    - ADC Management\n    - Network Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NETSCALER_USERNAME: NETSCALER_USERNAME\n      NETSCALER_PASSWORD: NETSCALER_PASSWORD\n\ncapability:\n  consumes:\n    - import: nitro\n      location: ./shared/nitro.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adc-management-api\n      description: \"Unified REST API for Citrix NetScaler ADC management.\"\n      resources:\n        - path: /v1/lb-vservers\n          name: lb-vservers\n          description: \"Load\
   \ balancing virtual servers\"\n          operations:\n            - method: GET\n              name: list-lb-vservers\n              description: \"List all load balancing virtual servers\"\n              call: \"nitro.list-lb-vservers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lb-vserver\n              description: \"Create a load balancing virtual server\"\n              call: \"nitro.create-lb-vserver\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lb-vservers/{name}\n          name: lb-vserver\n          description: \"Single load balancing virtual server\"\n          operations:\n            - method: GET\n              name: get-lb-vserver\n              description: \"Get a specific load balancing virtual server\"\n              call: \"nitro.get-lb-vserver\"\n              with:\n          \

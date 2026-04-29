@@ -34,52 +34,52 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- enrich a company with firmographic data including revenue and employee count
 - enrich technology
-- enrich orgchart
-- search news
-- company search
-- contact search
-- search scoops
-- search for recent news about target companies
-- contacts
-- search and discover companies
-- enrich a contact record with verified email, phone, and professional details
-- contact database
-- lead generation
-- sales prospecting
-- find companies showing buying intent signals in your category
-- search for contacts matching sales criteria
-- b2b data
-- get org chart to identify decision makers at target company
-- search zoominfo for companies by industry, revenue, employee count, and tech stack
-- business intelligence scoops
-- get intent data for a specific company
-- search companies
-- find companies showing buying intent
-- search intent
-- search and discover contacts
-- sales intelligence
-- marketing intelligence
-- search for companies matching ideal customer profile
-- enrich a company with firmographic data
-- search contacts
-- search for business scoops about companies
-- enrich contact
 - zoominfo
-- get technology stack details for a target company
-- search for business intelligence scoops about target companies
-- search zoominfo for contacts by job title, company, location, and industry
-- enrich contact records
-- enrich company records
-- intent data
+- sales prospecting
+- search for companies matching ideal customer profile
+- enrich a contact record with verified email, phone, and professional details
 - enrich intent
-- enrich company
-- b2b
-- buyer intent signals
-- data
+- get org chart to identify decision makers at target company
+- enrich company records
 - company data
+- search contacts
+- search and discover companies
+- buyer intent signals
+- marketing intelligence
+- company search
+- search news
+- contact search
+- enrich company
+- search zoominfo for contacts by job title, company, location, and industry
+- find companies showing buying intent
+- business intelligence scoops
+- search for business intelligence scoops about target companies
+- find companies showing buying intent signals in your category
 - enrich a contact with verified data
+- contacts
+- sales intelligence
+- search for recent news about target companies
+- search and discover contacts
+- search scoops
+- intent data
+- search companies
+- enrich contact records
+- get technology stack details for a target company
+- lead generation
+- search for business scoops about companies
+- search zoominfo for companies by industry, revenue, employee count, and tech stack
+- b2b
+- enrich orgchart
+- b2b data
+- contact database
+- search intent
+- enrich a company with firmographic data including revenue and employee count
+- data
+- search for contacts matching sales criteria
+- get intent data for a specific company
+- enrich a company with firmographic data
+- enrich contact
 slug: sales-prospecting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Sales Prospecting\"\n  description: \"Workflow for sales teams to find, qualify, and enrich prospect data. Combines contact search, company search, intent signals, and enrichment for targeted outreach.\"\n  tags:\n    - ZoomInfo\n    - Sales Prospecting\n    - Lead Generation\n    - Contact Search\n    - Company Search\n    - Intent Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo-api\n      location: ./shared/zoominfo-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sales-prospecting-api\n      description: \"Unified REST API for sales prospecting workflows.\"\n      resources:\n        - path: /v1/contacts/search\n          name: contact-search\n          description: \"Search and discover contacts\"\n\
   \          operations:\n            - method: POST\n              name: search-contacts\n              description: \"Search for contacts matching sales criteria\"\n              call: \"zoominfo-api.search-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/companies/search\n          name: company-search\n          description: \"Search and discover companies\"\n          operations:\n            - method: POST\n              name: search-companies\n              description: \"Search for companies matching ideal customer profile\"\n              call: \"zoominfo-api.search-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/contacts/enrich\n          name: contact-enrich\n          description: \"Enrich contact records\"\n          operations:\n            - method: POST\n              name: enrich-contact\n            \

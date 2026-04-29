@@ -65,81 +65,81 @@ personas: []
 provider_name: Amazon API Gateway
 provider_slug: aws-api-gateway
 search_terms:
-- get connection
-- websocket
-- get websocket connection
-- list api keys
-- disconnect a websocket client
-- create a new rest api in api gateway
-- list usage plans
-- create rest api
-- create a new http or websocket api
-- disconnect a websocket client from the api
-- api key management
-- deploy a rest api to a stage
-- list all http and websocket apis
+- list all rest apis
+- aws
 - list http apis
+- rest api management
+- disconnect client
+- list rest api stages
+- Backend Developer
+- amazon api gateway
+- delete rest api
+- creates and configures apis for application services
+- manages api lifecycle, deployments, and governance across the organization
+- websocket api management and connection handling
+- disconnect a websocket client
+- list all api keys in the account
+- create a new rest api
+- rest
+- list stages
+- list all usage plans
+- list all api keys
+- deployment
+- create http api
+- create a new http or websocket api
+- websocket connection management
+- list all usage plans and their api key associations
+- unified workflow for creating, deploying, and managing rest and http apis
+- api gateway
+- websocket
+- http and websocket api management
+- disconnect websocket client
+- list rest api deployments
+- rest api deployments
 - list all rest apis in the aws account
-- send websocket message
-- list all routes for an http api
-- rest api stages
-- managing api keys, usage plans, and authorization
-- create a new api key for access control
+- API Platform Engineer
 - create api key
 - list routes for an http api
-- list rest apis
-- http and websocket api management
-- list http api routes
-- delete rest api
-- get rest api
-- get information about a connected websocket client
-- Backend Developer
-- manages api lifecycle, deployments, and governance across the organization
-- api management
-- list all usage plans and their api key associations
-- cloud
-- list rest api stages
-- list stages
-- list deployments
-- list all usage plans
-- list rest api deployments
-- list all api keys in the account
-- http api route management
-- list all rest apis
-- disconnect websocket client
-- rest api deployments
-- create a new route for an http api
-- amazon api gateway
-- create a new api key
-- websocket connection management
-- websocket api management and connection handling
-- create http api
-- get details of a specific rest api
-- send a message to a connected websocket client
-- unified workflow for creating, deploying, and managing rest and http apis
-- create a new rest api
-- api gateway
-- disconnect client
-- creating, versioning, deploying, and retiring apis
-- serverless
-- create route
-- creates and configures apis for application services
-- API Platform Engineer
-- usage plan management
-- deploy rest api
-- list routes
-- rest api management
-- list deployment stages for a rest api
-- delete a rest api
-- get websocket connection info
-- list all backend integrations for an http api
-- rest
-- aws
-- deployment
 - list deployments for a rest api
-- list integrations
-- list all api keys
+- rest api stages
+- get details of a specific rest api
+- create a new api key for access control
+- get information about a connected websocket client
+- list routes
+- list all routes for an http api
+- get rest api
+- create a new route for an http api
+- cloud
+- delete a rest api
+- send a message to a connected websocket client
+- list http api routes
+- list api keys
+- get connection
 - list stages for a rest api
+- list usage plans
+- creating, versioning, deploying, and retiring apis
+- list all backend integrations for an http api
+- create a new rest api in api gateway
+- list integrations
+- deploy rest api
+- list rest apis
+- deploy a rest api to a stage
+- create a new api key
+- list deployment stages for a rest api
+- list all http and websocket apis
+- api management
+- create route
+- get websocket connection
+- usage plan management
+- send websocket message
+- managing api keys, usage plans, and authorization
+- api key management
+- serverless
+- list deployments
+- get websocket connection info
+- create rest api
+- disconnect a websocket client from the api
+- http api route management
 slug: api-management-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon API Gateway API Management Workflow\"\n  description: \"Unified workflow capability for API platform engineers and developers to create, configure, deploy, and monitor REST and HTTP APIs in Amazon API Gateway. Combines V1 REST APIs, V2 HTTP/WebSocket APIs, and the Management API for complete API lifecycle management including deployment orchestration and real-time WebSocket connection management.\"\n  tags:\n    - Amazon API Gateway\n    - AWS\n    - API Management\n    - REST\n    - WebSocket\n    - Deployment\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n      API_GATEWAY_ENDPOINT: API_GATEWAY_ENDPOINT\n\ncapability:\n  consumes:\n    - import: api-gateway-v1\n      location: ./shared/api-gateway-v1.yaml\n    - import: api-gateway-v2\n      location:\
   \ ./shared/api-gateway-v2.yaml\n    - import: api-gateway-mgmt\n      location: ./shared/api-gateway-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-gateway-workflow-api\n      description: \"Unified REST API for Amazon API Gateway lifecycle management.\"\n      resources:\n        - path: /v1/rest-apis\n          name: rest-apis\n          description: \"REST API management\"\n          operations:\n            - method: GET\n              name: list-rest-apis\n              description: \"List all REST APIs\"\n              call: \"api-gateway-v1.get-rest-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-rest-api\n              description: \"Create a new REST API\"\n              call: \"api-gateway-v1.create-rest-api\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

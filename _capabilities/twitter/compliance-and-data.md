@@ -46,71 +46,71 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- streamUsersCompliance
-- post compliance stream
-- stream post compliance events
-- extracts insights from social data through search, streaming, and analytics.
-- brand manager
-- manage user relationships, direct messages, spaces, and community interactions.
-- createComplianceJobs
-- produces original posts, threads, and media content on x.
-- compliance officer
-- data engineer
-- real-time data
-- social media
-- creates, schedules, and analyzes social media content across platforms.
-- create and list compliance jobs
-- social media manager
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- ensures data handling meets regulatory and platform compliance requirements.
-- microblogging
-- create a new compliance job
-- content creator
-- stream likes compliance events in real-time
-- engagement specialist
-- x api
 - get a compliance job by its id
-- social monitoring, search, trending topics, and sentiment analysis.
-- monitors brand mentions, sentiment, and competitive landscape.
-- stream user compliance events
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- monitor conversations, search posts, analyze trends, and extract insights.
-- streamPostsCompliance
-- likes compliance stream
-- advertising
-- get a specific compliance job
-- platform operations
-- compliance
-- handles customer inquiries and issues via direct messages and replies.
-- stream labels compliance events
 - stream post compliance events in real-time
-- streaming
-- streamLikesCompliance
-- get a compliance job by id
-- customer support
-- builds and maintains communities through engagement and moderation.
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- post creation, editing, media management, and content analytics.
-- user compliance stream
+- brand manager
 - community manager
-- data compliance, deletion tracking, and regulatory event monitoring.
-- data management
-- manages brand presence, campaigns, and content strategy.
-- stream labels compliance events in real-time
-- stream user compliance events in real-time
-- manages user relationships, follows, and interaction strategies.
-- content
-- list compliance jobs
-- user relationships, direct messaging, spaces, and community interaction.
+- ensures data handling meets regulatory and platform compliance requirements.
+- customer support
+- platform operations
+- creates, schedules, and analyzes social media content across platforms.
+- post compliance stream
 - streamLabelsCompliance
-- stream likes compliance events
+- streamPostsCompliance
+- monitors brand mentions, sentiment, and competitive landscape.
+- produces original posts, threads, and media content on x.
+- create and list compliance jobs
+- likes compliance stream
+- microblogging
+- stream post compliance events
+- content creator
+- builds and maintains communities through engagement and moderation.
+- user compliance stream
+- post creation, editing, media management, and content analytics.
+- stream labels compliance events
+- social media manager
+- streamLikesCompliance
+- manages brand presence, campaigns, and content strategy.
+- manages user relationships, follows, and interaction strategies.
+- stream likes compliance events in real-time
 - marketing team
-- data analyst
+- user relationships, direct messaging, spaces, and community interaction.
+- data engineer
+- social media
+- social monitoring, search, trending topics, and sentiment analysis.
+- content
+- streaming
+- streamUsersCompliance
+- stream user compliance events in real-time
 - getComplianceJobs
+- get a compliance job by id
+- advertising
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- compliance officer
+- list compliance jobs
+- data compliance, deletion tracking, and regulatory event monitoring.
+- real-time data
+- monitor conversations, search posts, analyze trends, and extract insights.
+- data management
 - researcher
-- conducts academic or market research using x data archives.
+- compliance
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- manage user relationships, direct messages, spaces, and community interactions.
+- extracts insights from social data through search, streaming, and analytics.
+- stream labels compliance events in real-time
+- createComplianceJobs
+- data analyst
+- handles customer inquiries and issues via direct messages and replies.
 - labels compliance stream
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- create a new compliance job
+- x api
+- stream likes compliance events
+- conducts academic or market research using x data archives.
 - getComplianceJobsById
+- get a specific compliance job
+- stream user compliance events
+- engagement specialist
 slug: compliance-and-data
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Compliance and Data Management\"\n  description: \"Unified workflow for managing compliance jobs, data streams, and real-time compliance monitoring on X. Used by compliance officers, data engineers, and platform operations.\"\n  tags:\n    - X API\n    - Compliance\n    - Data Management\n    - Streaming\n  personas:\n    - compliance officers\n    - data engineers\n    - platform operations\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-streaming\n      location: \"./shared/streaming.yaml\"\n    - import: x-posts\n      location: \"./shared/posts.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: x-compliance-api\n      resources:\n        - path: /v1/compliance/jobs\n          name: compliance-jobs\n          description: \"Create and list compliance jobs\"\n   \
   \       operations:\n            - method: POST\n              name: createComplianceJobs\n              description: \"Create a new compliance job\"\n              call: \"x-compliance-api.createComplianceJobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: getComplianceJobs\n              description: \"List compliance jobs\"\n              call: \"x-compliance-api.getComplianceJobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/compliance/jobs/{id}\n          name: compliance-job\n          description: \"Get a specific compliance job\"\n          operations:\n            - method: GET\n              name: getComplianceJobsById\n              description: \"Get a compliance job by ID\"\n              call: \"x-compliance-api.getComplianceJobsById\"\n              with:\n                id: \"rest.id\"\n    \

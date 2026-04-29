@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- update channel settings
-- manage channel information
-- create a new comment thread
-- update comment thread
-- unsubscribe from a channel
-- list comments
-- media
-- youtube
-- create comment
-- list youtube channels
-- unsubscribe from channel
-- update an existing comment
-- set moderation status on comments
-- update channel
-- subscribe to channel
-- video
-- update comment
 - subscriptions
-- subscribe to a channel
-- subscribe to a youtube channel
-- community
-- list subscriptions
-- list channel subscriptions
-- videos
-- list channels
-- delete comment
-- manage channel subscriptions
-- subscribe
-- update a comment
-- update a comment thread
-- post a new comment
-- create comment thread
-- manage individual comments
-- comments
 - list comment threads
-- streaming
-- manage comment threads
 - set moderation status
-- delete a comment
+- create comment
+- media
+- manage comment threads
 - social
-- google
+- list channel subscriptions
+- list subscriptions
+- manage individual comments
+- delete a comment
+- create comment thread
+- community
+- video
+- set moderation status on comments
 - moderation
-- unsubscribe
-- unsubscribe from a youtube channel
+- list comments
+- manage channel information
+- post a new comment
 - list comments on a video or channel
+- list channels
+- unsubscribe
+- delete comment
+- list youtube channels
+- update a comment
+- youtube
+- update channel settings
+- subscribe
+- streaming
+- update channel
+- comments
+- unsubscribe from channel
+- update a comment thread
+- videos
+- update comment
+- unsubscribe from a channel
+- subscribe to a youtube channel
+- update an existing comment
+- manage channel subscriptions
+- create a new comment thread
+- subscribe to a channel
+- update comment thread
+- subscribe to channel
+- unsubscribe from a youtube channel
+- google
 slug: community-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Community Engagement\"\n  description: \"Workflow for managing community interactions including comments, comment threads, subscriptions, and channel management. Designed for community managers, social media teams, and content moderators.\"\n  tags:\n    - YouTube\n    - Community\n    - Comments\n    - Subscriptions\n    - Moderation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_API_KEY: YOUTUBE_API_KEY\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-data\n      location: ./shared/data-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: community-engagement-api\n      description: \"Unified REST API for YouTube community engagement workflows.\"\n      resources:\n        - path: /v1/comments\n          name: comments\n          description: \"Manage individual comments\"\n       \
   \   operations:\n            - method: GET\n              name: list-comments\n              description: \"List comments\"\n              call: \"youtube-data.list-comments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment\n              description: \"Post a new comment\"\n              call: \"youtube-data.insert-comment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-comment\n              description: \"Update a comment\"\n              call: \"youtube-data.update-comment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-comment\n              description: \"Delete a comment\"\n              call: \"youtube-data.delete-comment\"\n              outputParameters:\n\

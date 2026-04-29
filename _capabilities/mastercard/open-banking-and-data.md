@@ -24,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- digital identity
-- retrieve consumer accounts
-- payments
-- get consumer credit analytics and spending insights
 - get accounts
-- credit analytics
-- open banking
-- get small business analytics
-- fraud detection
-- retrieve account transactions via open banking
-- open banking account data
-- small business credit analytics
-- fintech
-- get consumer accounts
-- credit cards
-- get consumer analytics
-- consumer credit analytics
-- get small business credit analytics
-- financial services
-- retrieve consumer accounts via open banking
-- mastercard
-- data analytics
 - get account transactions
+- credit analytics
+- retrieve account transactions via open banking
+- fraud detection
+- consumer credit analytics
 - get consumer credit analytics
+- get small business analytics
+- get small business credit analytics
+- open banking account data
+- financial services
+- data analytics
+- get consumer credit analytics and spending insights
+- fintech
+- get consumer analytics
+- get consumer accounts
+- retrieve consumer accounts
+- digital identity
+- retrieve consumer accounts via open banking
+- small business credit analytics
+- payments
+- open banking
+- credit cards
+- mastercard
 slug: open-banking-and-data
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Open Banking and Data Analytics\"\n  description: \"Unified workflow for fintech developers and data analysts to access open banking data, consumer-permissioned financial data, and credit analytics across Mastercard's data platform.\"\n  tags:\n    - Mastercard\n    - Open Banking\n    - Data Analytics\n    - Credit Analytics\n    - Fintech\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: open-banking\n      location: ./shared/open-banking-solutions.yaml\n    - import: consumer-credit-analytics\n      location: ./shared/consumer-credit-analytics.yaml\n    - import: small-biz-credit-analytics\n      location: ./shared/small-business-credit-analytics.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n      namespace:\
   \ open-banking-data-api\n      description: \"Unified REST API for open banking and data analytics.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n          description: \"Open banking account data\"\n          operations:\n            - method: GET\n              name: get-accounts\n              description: \"Retrieve consumer accounts\"\n              call: \"open-banking.get-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consumer-analytics\n          name: consumer-analytics\n          description: \"Consumer credit analytics\"\n          operations:\n            - method: POST\n              name: get-consumer-analytics\n              description: \"Get consumer credit analytics\"\n              call: \"consumer-credit-analytics.get-credit-analytics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

@@ -31,45 +31,45 @@ personas: []
 provider_name: Amazon Security Hub
 provider_slug: amazon-security-hub
 search_terms:
+- cspm
+- monitoring
+- aws
+- security
+- import security findings
+- security findings from across your aws environment
+- analysts who investigate security findings and track remediation workflows
+- list insights
+- centralized cloud security posture management including findings, compliance standards, controls, and insights
+- list and filter security findings
 - list security insights and trends
+- import custom security findings into amazon security hub
+- list standards
+- list compliance standards
+- list security controls and check their compliance status
+- list findings
+- security standards compliance monitoring and control management
+- list security controls
+- amazon security hub
+- security controls status and configuration
+- import findings
+- get security insights
+- list enabled compliance standards
+- Cloud Security Engineer
 - list security controls and their compliance status
 - import findings from custom security tools
-- get security insights
-- cspm
-- Cloud Security Engineer
-- SOC Analyst
-- engineers who configure security standards, manage controls, and remediate findings
-- list findings
-- security findings from across your aws environment
-- aggregated security insights across your environment
-- amazon security hub
-- list security controls and check their compliance status
-- list compliance standards
-- update findings
-- list and filter security findings
-- centralized cloud security posture management including findings, compliance standards, controls, and insights
-- compliance security standards monitoring
-- import findings
-- security controls status and configuration
-- monitoring
-- list enabled compliance standards like cis, pci dss, soc 2
-- import custom security findings into amazon security hub
-- update security findings notes and status
 - compliance
+- list enabled compliance standards like cis, pci dss, soc 2
+- compliance security standards monitoring
+- SOC Analyst
+- update findings
+- update security findings notes and status
 - list controls
-- analysts who investigate security findings and track remediation workflows
-- get and filter security findings from amazon security hub
-- list insights
-- list standards
-- security
-- get security findings
-- cloud security posture and finding management across aws accounts
-- aws
-- list security controls
 - get aggregated security insights and trend analysis
-- list enabled compliance standards
-- import security findings
-- security standards compliance monitoring and control management
+- get security findings
+- aggregated security insights across your environment
+- get and filter security findings from amazon security hub
+- engineers who configure security standards, manage controls, and remediate findings
+- cloud security posture and finding management across aws accounts
 slug: cloud-security-posture
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Security Hub Cloud Security Posture\"\n  description: \"Unified capability for cloud security posture management including findings aggregation, compliance standards monitoring, and security insights. Used by Cloud Security Engineers and SOC Analysts.\"\n  tags:\n    - Amazon Security Hub\n    - Security\n    - Compliance\n    - CSPM\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-security-hub\n      location: ./shared/amazon-security-hub.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloud-security-posture-api\n      description: \"Unified REST API for Amazon Security Hub cloud security posture management.\"\n      resources:\n        - path: /v1/findings\n      \
   \    name: findings\n          description: \"Security findings from across your AWS environment\"\n          operations:\n            - method: GET\n              name: list-findings\n              description: \"List and filter security findings\"\n              call: \"amazon-security-hub.get-findings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: import-findings\n              description: \"Import findings from custom security tools\"\n              call: \"amazon-security-hub.batch-import-findings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/standards\n          name: standards\n          description: \"Compliance security standards monitoring\"\n          operations:\n            - method: GET\n              name: list-standards\n              description: \"List enabled compliance standards\"\n    \

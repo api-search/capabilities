@@ -24,46 +24,46 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- api governance
-- list environments
+- api hub
+- Platform Architect
 - apigee
 - analytics
-- monetization
-- engineer managing api proxies, deployments, and policies in apigee.
-- api hub
-- list all api products packaged for developer consumption.
-- architect overseeing api platform strategy and governance across the organization.
-- API Governance Lead
-- list developers.
-- list all api proxies in an apigee organization.
-- list all registered api developers in the organization.
-- manager packaging api products and managing developer relationships.
-- list proxies
-- list hub apis
 - api lifecycle
-- list products
-- manage api products.
-- developer portal
+- list hub apis
+- architect overseeing api platform strategy and governance across the organization.
+- api governance
 - integrations
-- api management
-- hybrid
-- list developers
-- list all environments (e.g., dev, staging, prod) in the organization.
+- list environments
+- API Governance Lead
+- list all registered api developers in the organization.
+- developer portal
 - manage api proxies.
-- api gateway
-- list all apis catalogued in apigee api hub for discovery and governance.
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- Platform Architect
-- list api proxies.
-- manage api developers.
-- API Platform Engineer
-- google cloud
-- microservices
 - list api products.
-- API Product Manager
+- manage api developers.
+- api gateway
 - list api products
-- enterprise
+- API Platform Engineer
+- list developers
 - list api proxies
+- list all api proxies in an apigee organization.
+- microservices
+- list developers.
+- engineer managing api proxies, deployments, and policies in apigee.
+- list proxies
+- list all apis catalogued in apigee api hub for discovery and governance.
+- enterprise
+- list all api products packaged for developer consumption.
+- hybrid
+- list all environments (e.g., dev, staging, prod) in the organization.
+- manage api products.
+- api management
+- API Product Manager
+- google cloud
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- monetization
+- list products
+- manager packaging api products and managing developer relationships.
+- list api proxies.
 slug: api-lifecycle-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Lifecycle Management\"\n  description: \"Unified workflow for managing the full API lifecycle on Google Apigee - from API proxy creation and deployment to developer portal management, product packaging, and analytics.\"\n  tags:\n    - Apigee\n    - API Management\n    - API Lifecycle\n    - Google Cloud\n    - Developer Portal\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-management\n      location: ./shared/api-management.yaml\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigee-lifecycle-api\n      description: \"Unified REST API for Apigee API lifecycle management.\"\n      resources:\n        - path: /v1/proxies\n          name: api-proxies\n          description: \"Manage API proxies.\"\
   \n          operations:\n            - method: GET\n              name: list-proxies\n              description: \"List API proxies.\"\n              call: \"api-management.listApiProxies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: api-products\n          description: \"Manage API products.\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List API products.\"\n              call: \"api-management.listApiProducts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/developers\n          name: developers\n          description: \"Manage API developers.\"\n          operations:\n            - method: GET\n              name: list-developers\n              description: \"List developers.\"\n              call: \"api-management.listDevelopers\"\n     \

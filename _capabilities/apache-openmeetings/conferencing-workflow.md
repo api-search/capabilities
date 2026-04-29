@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- list session recordings
-- list all registered users
 - list all user groups
-- conferencing
-- list recordings
-- list all public conference rooms
-- calendar and scheduling
-- collaboration
-- list rooms
-- whiteboard
-- list groups
-- list public rooms
-- conference room management
+- get recordings by type
+- get upcoming calendar meetings
+- unified workflow for managing conferencing sessions
 - create room
-- close room
-- check health
-- video conferencing
-- create a new room
-- authenticate a user to openmeetings
+- whiteboard
+- list public rooms
+- manages conference rooms, invites participants, and handles recordings
+- conferencing
+- open source
 - login
 - check system health status
-- System Administrator
-- get upcoming meetings
-- Meeting Organizer
-- session recordings
-- close a conference room
-- open source
-- user management
-- unified workflow for managing conferencing sessions
-- get room hash
-- manages users, groups, and system health
-- list upcoming
-- manages conference rooms, invites participants, and handles recordings
-- apache
-- get recordings by type
-- create a new conference room
-- generate a secure room access hash
-- web conferencing
-- get upcoming calendar meetings
+- check health
+- create a new room
 - apache openmeetings
+- close room
+- list groups
+- user management
+- conference room management
+- generate a secure room access hash
+- get room hash
+- list recordings
+- System Administrator
+- list upcoming
+- create a new conference room
+- close a conference room
+- session recordings
 - list users
+- apache
+- list session recordings
+- manages users, groups, and system health
+- calendar and scheduling
+- video conferencing
+- get upcoming meetings
+- list all public conference rooms
+- authenticate a user to openmeetings
+- list rooms
+- collaboration
+- list all registered users
+- Meeting Organizer
+- web conferencing
 slug: conferencing-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache OpenMeetings Conferencing Workflow\"\n  description: \"Unified workflow capability for managing web conferencing sessions, users, rooms, recordings, and calendars in Apache OpenMeetings.\"\n  tags:\n    - Apache OpenMeetings\n    - Conferencing\n    - Collaboration\n    - Web Conferencing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENMEETINGS_API_KEY: OPENMEETINGS_API_KEY\n\ncapability:\n  consumes:\n    - import: openmeetings\n      location: ./shared/openmeetings-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: conferencing-api\n      description: \"Unified REST API for Apache OpenMeetings conferencing workflow.\"\n      resources:\n        - path: /v1/rooms\n          name: rooms\n          description: \"Conference room management\"\n          operations:\n            - method: GET\n              name: list-rooms\n         \
   \     description: \"List public rooms\"\n              call: \"openmeetings.getPublic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-room\n              description: \"Create a new room\"\n              call: \"openmeetings.add_2\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users\"\n              call: \"openmeetings.get_3\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/recordings\n          name: recordings\n          description: \"Session recordings\"\n          operations:\n            - method: GET\n              name: list-recordings\n\

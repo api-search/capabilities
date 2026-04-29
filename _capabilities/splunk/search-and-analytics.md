@@ -31,64 +31,64 @@ personas: []
 provider_name: Splunk
 provider_slug: splunk
 search_terms:
-- get index
-- export search results
-- get search events
-- create monitor input
-- create an http event collector token.
-- analytics
-- create a new spl search job.
-- list monitor inputs
-- search job management.
-- update index settings.
-- send an event.
-- create a search job.
-- create a new splunk index.
-- list current search jobs.
-- create http input token
-- siem
-- list indexes
-- get search job
-- list indexes.
-- splunk
-- list all splunk indexes.
-- create search job
-- list search jobs.
-- data ingestion
-- index management.
-- update index
-- delete an index.
-- control search job
-- create a file monitor data input.
 - monitoring
-- platform
-- create index
-- send a json event via http event collector.
-- list http event collector tokens.
-- delete search job
-- search
-- event ingestion via hec.
-- send event
-- data analysis
-- observability
-- get search job status and details.
-- control a search job (pause, unpause, finalize, cancel).
-- list http input tokens
-- security
-- get search results
+- index management.
 - list search jobs
+- security
+- analytics
+- list all splunk indexes.
+- create http input token
+- splunk
+- list file monitor data inputs.
+- logging
+- update index
+- export search results
+- event ingestion via hec.
+- update index settings.
+- list search jobs.
+- create a new splunk index.
+- delete an index.
+- list monitor inputs
+- send an event.
 - check ack status
-- get untransformed events from a search job.
-- export search results directly without creating a job.
+- search
+- search job management.
+- get search job status and details.
+- get results from a completed search job.
+- list indexes
+- create an index.
+- control search job
+- list http input tokens
+- create a search job.
+- delete a search job.
+- siem
+- check hec indexing acknowledgment status.
+- get index details and settings.
+- list indexes.
+- observability
+- control a search job (pause, unpause, finalize, cancel).
+- create monitor input
 - delete index
 - machine data
-- check hec indexing acknowledgment status.
-- get results from a completed search job.
-- logging
-- get index details and settings.
-- delete a search job.
-- create an index.
-- list file monitor data inputs.
+- create a new spl search job.
+- create search job
+- data analysis
+- data ingestion
+- get index
+- export search results directly without creating a job.
+- delete search job
+- create a file monitor data input.
+- send a json event via http event collector.
+- get search results
+- list current search jobs.
+- platform
+- create index
+- get search job
+- list http event collector tokens.
+- send event
+- get search events
+- create an http event collector token.
+- get untransformed events from a search job.
 slug: search-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Splunk Search and Analytics\"\n  description: \"Unified search and analytics workflow combining SPL search, index management, data inputs, and HTTP Event Collector for SOC analysts, IT operations, and data engineers.\"\n  tags:\n    - Splunk\n    - Search\n    - Analytics\n    - Monitoring\n    - Data Ingestion\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPLUNK_AUTH_TOKEN: SPLUNK_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: enterprise-rest\n      location: ./shared/enterprise-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: search-analytics-api\n      description: \"Unified REST API for Splunk search, indexing, and data ingestion.\"\n      resources:\n        - path: /v1/search-jobs\n          name: search-jobs\n          description: \"Search job management.\"\n          operations:\n            - method: GET\n              name: list-search-jobs\n\
   \              description: \"List search jobs.\"\n              call: \"enterprise-rest.list-search-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-search-job\n              description: \"Create a search job.\"\n              call: \"enterprise-rest.create-search-job\"\n              with:\n                search: \"rest.search\"\n                earliest_time: \"rest.earliest_time\"\n                latest_time: \"rest.latest_time\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/indexes\n          name: indexes\n          description: \"Index management.\"\n          operations:\n            - method: GET\n              name: list-indexes\n              description: \"List indexes.\"\n              call: \"enterprise-rest.list-indexes\"\n              outputParameters:\n                - type: object\n\

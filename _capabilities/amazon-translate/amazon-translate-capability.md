@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Translate
 provider_slug: amazon-translate
 search_terms:
-- nlp
-- language processing
 - aws
 - machine translation
-- translation
+- nlp
+- language processing
 - localization
+- translation
 slug: amazon-translate-capability
 source_yaml: 'id: amazon-translate-capability
 

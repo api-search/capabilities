@@ -10,9 +10,9 @@ provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
 - aws
-- access management
-- security
 - zero trust
+- security
+- access management
 slug: amazon-verified-access-capability
 source_yaml: 'id: amazon-verified-access-capability
 

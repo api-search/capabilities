@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon Lookout for Equipment
 provider_slug: amazon-lookout-for-equipment
 search_terms:
-- datasets create dataset
-- manages resources and configurations
-- amazon lookout for equipment
-- workflow
-- provides a json containing the overall information about a specific dataset.
-- lists all datasets currently available in your account.
-- unified workflow for amazon lookout for equipment resource management
 - datasets list datasets
-- integrates api into applications
-- equipment monitoring
-- datasets describe dataset
-- aws
-- Developer
-- predictive maintenance
-- Administrator
-- creates a container (dataset) for a collection of data being ingested for analysis.
-- machine learning
 - industrial iot
+- datasets create dataset
+- predictive maintenance
+- aws
+- amazon lookout for equipment
+- lists all datasets currently available in your account.
+- provides a json containing the overall information about a specific dataset.
+- manages resources and configurations
+- Administrator
+- machine learning
+- workflow
+- unified workflow for amazon lookout for equipment resource management
+- Developer
+- datasets describe dataset
+- integrates api into applications
+- creates a container (dataset) for a collection of data being ingested for analysis.
+- equipment monitoring
 slug: amazon-lookout-for-equipment-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lookout for Equipment Workflow\n  description: Unified workflow capability for Amazon Lookout for Equipment combining resource management and operations.\n  tags:\n  - Amazon Lookout for Equipment\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lookout-for-equipment\n    location: ./shared/lookout-for-equipment.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lookout-for-equipment-api\n    description: REST API for Amazon Lookout for Equipment workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lookout-for-equipment-mcp\n    transport: http\n    description: MCP server for Amazon Lookout for Equipment.\n    tools:\n    - name: datasets-create-dataset\n      description: Creates a container (dataset) for\
   \ a collection of data being ingested for analysis.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lookout-for-equipment.createdataset\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: datasets-list-datasets\n      description: Lists all datasets currently available in your account.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lookout-for-equipment.listdatasets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: datasets-describe-dataset\n      description: Provides a JSON containing the overall information about a specific dataset.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lookout-for-equipment.describedataset\n      outputParameters:\n      - type: object\n        mapping: $.\n"

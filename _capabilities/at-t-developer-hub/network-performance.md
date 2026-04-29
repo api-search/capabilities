@@ -35,58 +35,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- developer building fraud prevention and identity verification using network signals
-- terminate an active quality on demand session and restore normal network quality
+- App Developer
 - Identity Developer
 - list active qod sessions
-- list active quality on demand sessions for the application
-- camara
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- mobile or web developer building connectivity-aware applications
-- individual qod session
-- quality of service
-- quality on demand session management
-- check if device is roaming
-- list qod sessions
-- 5g network quality monitoring and on-demand qos enhancement
-- network-based fraud prevention and authentication using sim swap and number verification
-- device connectivity status
-- get qod session status
-- qod terminate session
-- sim swap
-- check device connectivity and network connection type
-- delete qod session
-- network apis
-- qod create session
-- network performance
-- device check connectivity
-- developer implementing passwordless or frictionless mobile authentication
-- check connectivity
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- check roaming
-- network-based security signals for fraud detection and identity verification
-- 5g
-- device status
 - telecommunications
-- request enhanced qos for a device
-- device check roaming
-- qod get session
-- App Developer
-- IoT Engineer
-- create qod session
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- check if an at&t subscriber device is roaming on a partner network and get location
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- get qod session
-- qod list sessions
-- edge computing
-- mobile network-based authentication without otp
-- terminate qod session
-- at&t
-- connectivity
+- check connectivity
 - device roaming status
-- get the current status of a quality on demand session
+- quality on demand session management
+- check roaming
+- network performance
+- device connectivity status
+- individual qod session
+- qod list sessions
+- 5g
+- list qod sessions
+- device check roaming
+- network-based fraud prevention and authentication using sim swap and number verification
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- mobile network-based authentication without otp
+- network apis
+- at&t
+- terminate qod session
+- device check connectivity
+- network-based security signals for fraud detection and identity verification
+- connectivity
+- quality of service
 - Security Developer
+- developer building fraud prevention and identity verification using network signals
+- device status
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- developer implementing passwordless or frictionless mobile authentication
+- qod create session
+- qod terminate session
+- request enhanced qos for a device
+- check device connectivity and network connection type
+- get the current status of a quality on demand session
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- qod get session
+- mobile or web developer building connectivity-aware applications
+- 5g network quality monitoring and on-demand qos enhancement
+- get qod session
+- terminate an active quality on demand session and restore normal network quality
+- IoT Engineer
+- check if device is roaming
+- create qod session
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- camara
+- list active quality on demand sessions for the application
+- check if an at&t subscriber device is roaming on a partner network and get location
+- edge computing
+- delete qod session
+- get qod session status
+- sim swap
 slug: network-performance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T Network Performance\"\n  description: \"Unified network performance capability combining Device Status, Network Insights, and Quality on Demand APIs. Used by developers building connectivity-aware applications, real-time streaming platforms, and IoT systems requiring AT&T 5G performance optimization.\"\n  tags:\n    - AT&T\n    - 5G\n    - Quality of Service\n    - Device Status\n    - Network Performance\n    - CAMARA\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_NETWORK_API_TOKEN: ATT_NETWORK_API_TOKEN\n\ncapability:\n  consumes:\n    - import: att-device-status\n      location: ./shared/device-status-api.yaml\n    - import: att-qod\n      location: ./shared/quality-on-demand-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: att-network-performance-api\n      description: \"Unified REST API for AT&T 5G network performance and device connectivity\
   \ management.\"\n      resources:\n        - path: /v1/devices/connectivity\n          name: device-connectivity\n          description: \"Device connectivity status\"\n          operations:\n            - method: POST\n              name: check-connectivity\n              description: \"Check device connectivity and network connection type\"\n              call: \"att-device-status.get-connectivity-status\"\n              with:\n                phoneNumber: \"rest.phoneNumber\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/devices/roaming\n          name: device-roaming\n          description: \"Device roaming status\"\n          operations:\n            - method: POST\n              name: check-roaming\n              description: \"Check if device is roaming\"\n              call: \"att-device-status.get-roaming-status\"\n              with:\n                phoneNumber: \"rest.phoneNumber\"\n              outputParameters:\n\

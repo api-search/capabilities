@@ -38,60 +38,60 @@ personas: []
 provider_name: AccuWeather
 provider_slug: accuweather
 search_terms:
-- get current weather
-- daily weather forecast
-- air quality data
-- get hourly air quality forecast
-- meteorology
-- weather
-- hourly weather forecast
-- get current weather conditions
-- aqi and pollutant measurement data
-- get hourly weather forecast
-- current and historical weather observation data
-- get current air quality index and pollutant data
-- search for weather locations
-- get hourly air quality
-- storm tracking
-- search for weather locations by partial name or query text
-- get current air quality
-- get detailed tracking data for a specific tropical storm
-- consumer weather app presenting conditions and forecasts
-- get current weather conditions for a location key
-- air quality
-- get minutecast precipitation forecast
-- location services
-- emergency response team tracking storms and severe weather
-- geographic location search and resolution
-- accuweather
-- current weather conditions for a location
 - software developer building weather-aware applications
-- get air quality
-- Mobile App
-- short and long-range weather prediction
-- search for weather locations by text query
-- search locations
-- get active storms
-- unified weather data workflow for location search, conditions, forecasts, air quality, and storm tracking
-- get all active global storms
-- iot system using weather data for device automation
-- storms
-- get daily forecast
-- get all currently active tropical storms globally
+- get accuweather minutecast minute-by-minute precipitation forecast
+- get current weather
+- air quality
+- current weather conditions for a location
 - get storm details
 - Emergency Management
+- current and historical weather observation data
 - active tropical storm tracking
-- get 1, 5, 7, 10, or 15 day weather forecast
-- IoT Platform
-- get hourly forecast
-- forecasts
-- get minutecast
-- Developer
-- get accuweather minutecast minute-by-minute precipitation forecast
+- storm tracking
+- location services
+- aqi and pollutant measurement data
+- emergency response team tracking storms and severe weather
 - get daily weather forecast
-- active and historical tropical cyclone monitoring
-- get hourly weather forecast for the next 12-120 hours
+- get hourly air quality
+- get detailed tracking data for a specific tropical storm
+- get hourly weather forecast
+- get all currently active tropical storms globally
+- get current weather conditions
+- get 1, 5, 7, 10, or 15 day weather forecast
+- consumer weather app presenting conditions and forecasts
+- air quality data
+- get daily forecast
+- daily weather forecast
+- Mobile App
+- get air quality
+- search locations
 - minute-by-minute precipitation forecast
+- get minutecast precipitation forecast
+- geographic location search and resolution
+- Developer
+- hourly weather forecast
+- get hourly air quality forecast
+- storms
+- unified weather data workflow for location search, conditions, forecasts, air quality, and storm tracking
+- iot system using weather data for device automation
+- active and historical tropical cyclone monitoring
+- weather
+- get minutecast
+- get active storms
+- get current air quality index and pollutant data
+- search for weather locations by partial name or query text
+- meteorology
+- get hourly weather forecast for the next 12-120 hours
+- IoT Platform
+- short and long-range weather prediction
+- accuweather
+- forecasts
+- search for weather locations
+- get current weather conditions for a location key
+- get all active global storms
+- get hourly forecast
+- get current air quality
+- search for weather locations by text query
 slug: weather-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AccuWeather Weather Intelligence\n  description: >-\n    Unified workflow combining AccuWeather's location, conditions, forecasts, air quality, and storm\n    tracking APIs into a single capability for weather-aware applications. Used by developers, IoT\n    platforms, travel apps, and emergency management systems.\n  tags:\n    - AccuWeather\n    - Weather\n    - Forecasts\n    - Air Quality\n    - Storm Tracking\n    - Location Services\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACCUWEATHER_API_KEY: ACCUWEATHER_API_KEY\n\ncapability:\n  consumes:\n    - import: accuweather\n      location: ./shared/accuweather-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: weather-intelligence-api\n      description: Unified REST API for AccuWeather weather intelligence workflows.\n      resources:\n        - path: /v1/locations\n          name: locations\n\
   \          description: Search for weather locations\n          operations:\n            - method: GET\n              name: search-locations\n              description: Search for weather locations by text query\n              call: \"accuweather.autocomplete-locations\"\n              with:\n                Query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/weather/current/{locationKey}\n          name: current-conditions\n          description: Current weather conditions for a location\n          operations:\n            - method: GET\n              name: get-current-weather\n              description: Get current weather conditions\n              call: \"accuweather.get-current-conditions\"\n              with:\n                locationKey: \"rest.locationKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/weather/forecast/hourly/{locationKey}\n\

@@ -46,60 +46,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- statsstore
-- reboot a zone.
-- gracefully shutdown.
-- migrate a zone.
-- get zone state
-- boot a zone.
-- list zones
-- zones
-- migrate a zone to another host.
-- reboot the zone.
-- solaris
-- list all zones.
-- create a new solaris zone.
-- zone inventory and creation.
-- lifecycle management
-- oracle
-- containers
-- clone a solaris zone.
 - get solaris zone details.
-- migrate to another host.
-- kernel zones
-- halt zone
-- shutdown a zone.
-- resource management
-- operating systems
-- delete zone
-- rad
+- zones
 - zone state operations.
-- boot a solaris zone.
-- gracefully shutdown a zone.
-- verify zone configuration integrity.
-- boot the zone.
 - uninstall zone
-- individual zone operations.
-- migrate zone
-- get zone
-- delete a zone.
+- delete zone
+- oracle
 - shutdown zone
-- boot zone
-- reboot zone
-- uninstall a solaris zone.
-- create a new zone.
-- halt a zone immediately.
-- clone zone
-- install zone
-- get zone details.
+- statsstore
+- individual zone operations.
+- lifecycle management
+- solaris
 - reboot a solaris zone.
-- install a solaris zone.
-- get current zone state.
+- resource management
+- clone a solaris zone.
 - delete a solaris zone.
-- list all solaris zones with status.
+- list zones
+- gracefully shutdown a zone.
+- reboot a zone.
+- rad
+- kernel zones
+- containers
 - verify zone
+- list all solaris zones with status.
+- zone inventory and creation.
+- boot a zone.
+- migrate to another host.
+- halt a zone immediately.
+- operating systems
+- delete a zone.
+- get zone details.
+- get zone
+- create a new solaris zone.
+- clone zone
 - create zone
+- reboot zone
+- create a new zone.
+- migrate zone
+- boot zone
+- gracefully shutdown.
 - virtualization
+- migrate a zone.
+- boot the zone.
+- get zone state
+- list all zones.
+- reboot the zone.
+- install zone
+- get current zone state.
+- boot a solaris zone.
+- install a solaris zone.
+- verify zone configuration integrity.
+- uninstall a solaris zone.
+- migrate a zone to another host.
+- shutdown a zone.
+- halt zone
 slug: zone-lifecycle
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Solaris Zone Lifecycle Management\"\n  description: \"Unified zone lifecycle workflow combining zone creation, configuration, administration, monitoring, and migration. Used by system administrators and platform engineers to manage Solaris virtualization infrastructure.\"\n  tags:\n    - Solaris\n    - Zones\n    - Virtualization\n    - Lifecycle Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SOLARIS_AUTH_TOKEN: SOLARIS_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: zones-mgmt\n      location: ./shared/zones-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: solaris-lifecycle-api\n      description: \"Unified REST API for Solaris zone lifecycle management.\"\n      resources:\n        - path: /v1/zones\n          name: zones\n          description: \"Zone inventory and creation.\"\n          operations:\n            - method:\
   \ GET\n              name: list-zones\n              description: \"List all zones.\"\n              call: \"zones-mgmt.list-zone-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-zone\n              description: \"Create a new zone.\"\n              call: \"zones-mgmt.create-zone\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/zones/{zoneName}\n          name: zone-detail\n          description: \"Individual zone operations.\"\n          operations:\n            - method: GET\n              name: get-zone\n              description: \"Get zone details.\"\n              call: \"zones-mgmt.get-zone\"\n              with:\n                zoneName: \"rest.zoneName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n       \

@@ -31,43 +31,43 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- data plane monitoring
-- list all connected data plane nodes
-- get pprof diagnostic data from mdcb
-- check mdcb health
-- import system configuration
+- administration
 - list organizations
+- update an organization
 - create admin user
-- list all organizations
-- list admin users
-- get dataplane
-- export system
-- api management
+- import system configuration
+- mdcb
+- list dataplanes
+- organization management
+- list all connected data planes
+- import system
+- delete an organization
+- open source
+- get diagnostics
 - create a new organization
+- create an admin user
+- api gateway
+- list all admin users
+- graphql
+- data plane monitoring
+- list admin users
+- list all organizations
+- get dataplane
+- get pprof diagnostic data from mdcb
+- list all tyk organizations
+- get details for a specific data plane
+- list all connected data plane nodes
+- tyk
+- admin user management
+- mdcb health
+- export system
 - platform
 - export system configuration
-- graphql
-- mdcb health
-- administration
-- api gateway
-- list all tyk organizations
-- delete an organization
-- delete organization
-- update an organization
-- get diagnostics
 - create organization
-- organization management
-- get details for a specific data plane
-- mdcb
-- admin user management
-- tyk
-- list all connected data planes
-- list all admin users
-- create an admin user
-- open source
+- api management
 - update organization
-- import system
-- list dataplanes
+- delete organization
+- check mdcb health
 slug: platform-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Tyk Platform Administration\"\n  description: \"Platform administration workflow combining Dashboard Admin and MDCB APIs for platform administrators to manage organizations, multi-data center deployments, and system diagnostics.\"\n  tags:\n    - Administration\n    - MDCB\n    - Platform\n    - Tyk\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      TYK_ADMIN_SECRET: TYK_ADMIN_SECRET\n      TYK_MDCB_API_KEY: TYK_MDCB_API_KEY\n\ncapability:\n  consumes:\n    - import: tyk-dashboard-admin\n      location: ./shared/dashboard-admin.yaml\n    - import: tyk-mdcb\n      location: ./shared/mdcb.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: tyk-platform-admin-api\n      description: \"Unified REST API for Tyk platform administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description: \"Organization management\"\
   \n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List all organizations\"\n              call: \"tyk-dashboard-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-organization\n              description: \"Create a new organization\"\n              call: \"tyk-dashboard-admin.create-organization\"\n              with:\n                org: \"rest.org\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/admin-users\n          name: admin-users\n          description: \"Admin user management\"\n          operations:\n            - method: GET\n              name: list-admin-users\n              description: \"List admin users\"\n              call: \"tyk-dashboard-admin.list-admin-users\"\n              outputParameters:\n\

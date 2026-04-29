@@ -37,49 +37,49 @@ personas: []
 provider_name: Amadeus Reservations
 provider_slug: amadeus-reservations
 search_terms:
-- create a confirmed transfer booking.
-- create transfer booking
-- Travel Booking Agent
-- booking
-- cancel flight order
-- cancel a transfer booking.
-- cancel transfer order
-- transfers
-- cancel transfer booking
-- retrieve details of an existing flight reservation by order id.
 - create hotel order
-- get flight order
-- individual transfer management.
-- end-to-end travel booking combining flights, hotels, and transfers.
-- flights
-- get flight booking
-- individual flight order management.
-- create transfer order
-- cancel flight booking
-- flight reservation operations.
-- create a confirmed airline reservation from a priced flight offer.
-- hotel reservation creation.
-- ground transportation booking and management.
-- retrieve a flight booking.
-- create a confirmed hotel booking.
-- create hotel booking
-- hotel reservation operations.
-- amadeus
-- cancel an existing confirmed ground transfer reservation.
 - airline reservation creation and management.
-- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
+- flight reservation operations.
+- create transfer order
 - Travel Chatbot Developer
-- travel
-- reservations
-- create flight booking
-- create flight order
-- ground transfer reservation operations.
-- human or automated agent creating and managing travel reservations on behalf of travelers.
-- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
-- developer building ai-powered travel assistants that create bookings conversationally.
-- hotels
-- cancel an existing confirmed flight reservation.
+- create hotel booking
 - cancel a flight booking.
+- cancel transfer order
+- create a confirmed airline reservation from a priced flight offer.
+- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
+- travel
+- amadeus
+- hotel reservation creation.
+- retrieve a flight booking.
+- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
+- hotels
+- Travel Booking Agent
+- create a confirmed hotel booking.
+- get flight booking
+- booking
+- ground transportation booking and management.
+- developer building ai-powered travel assistants that create bookings conversationally.
+- hotel reservation operations.
+- cancel an existing confirmed flight reservation.
+- flights
+- ground transfer reservation operations.
+- create flight booking
+- retrieve details of an existing flight reservation by order id.
+- reservations
+- create flight order
+- cancel transfer booking
+- human or automated agent creating and managing travel reservations on behalf of travelers.
+- end-to-end travel booking combining flights, hotels, and transfers.
+- individual flight order management.
+- transfers
+- create transfer booking
+- cancel flight order
+- cancel flight booking
+- individual transfer management.
+- get flight order
+- create a confirmed transfer booking.
+- cancel an existing confirmed ground transfer reservation.
+- cancel a transfer booking.
 - create a confirmed flight booking.
 slug: travel-booking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Travel Booking\n  description: >-\n    Unified workflow capability for complete travel booking encompassing flight\n    reservations, hotel bookings, and ground transfer arrangements. Used by\n    online travel agencies, travel chatbots, and corporate travel management\n    platforms to create end-to-end trip reservations.\n  tags:\n    - Amadeus\n    - Booking\n    - Flights\n    - Hotels\n    - Transfers\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_API_KEY: AMADEUS_API_KEY\n      AMADEUS_API_SECRET: AMADEUS_API_SECRET\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: hotel-booking\n      location: ./shared/hotel-booking.yaml\n    - import: flight-orders\n      location: ./shared/flight-orders.yaml\n    - import: transfer-booking\n      location: ./shared/transfer-booking.yaml\n\n  exposes:\n    - type:\

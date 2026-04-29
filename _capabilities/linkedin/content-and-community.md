@@ -63,64 +63,64 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- get share statistics
-- data portability and advertiser transparency for dma.
-- posts jobs and manages candidates through ats integrations.
+- fetch multiple posts.
+- archives communications for regulatory compliance.
+- retrieve social action notifications.
+- create a share with company mention.
 - create share
-- get organization by id
 - authentication, sharing, and verification for consumer apps.
-- professional networking
-- get follower statistics
-- get follower count
-- job posting, recruiting, and applicant tracking.
-- linkedin
-- social media
-- look up organization by id.
-- create creative
-- initialize image upload
-- retrieve follower statistics.
+- business
 - uses sales navigator for lead generation and crm sync.
-- initialize document upload.
+- job posting, recruiting, and applicant tracking.
+- initialize video upload.
+- create sponsored conversation
+- get organization by id
+- employee development tracking and content access.
+- get inmail content
+- initialize document upload
+- recruiting
+- retrieve follower statistics.
+- get posts
+- search for creatives.
+- sales intelligence, lead management, and crm integration.
+- create an ad creative.
+- look up organization by id.
+- tracks employee learning activity and completions.
+- content marketing
+- search creatives
+- careers
 - get notifications
-- create post
+- retrieve organization follower count.
+- get share statistics
+- b2b advertising, audience targeting, and campaign analytics.
+- professional networking
+- get sponsored conversations
+- social media
+- initialize image upload
+- initialize image upload.
+- linkedin
+- message archiving and regulatory communications governance.
+- initialize video upload
+- get follower count
+- create a post.
+- marketing
+- get page statistics
 - retrieve inmail content by id.
 - create inmail content.
-- search creatives
-- get inmail content
-- tracks employee learning activity and completions.
-- integrates linkedin authentication and sharing into applications.
-- marketing
 - community management
-- get sponsored conversations
-- archives communications for regulatory compliance.
-- fetch multiple posts.
-- get page statistics
-- initialize video upload.
+- create creative
+- initialize document upload.
+- posts jobs and manages candidates through ats integrations.
+- get follower statistics
 - manages b2b ad campaigns and audience targeting on linkedin.
-- get posts
-- retrieve organization follower count.
-- create a post.
-- employee development tracking and content access.
-- sales intelligence, lead management, and crm integration.
-- create a share with company mention.
-- content marketing
-- search for creatives.
-- initialize video upload
+- create post
 - retrieve share statistics.
-- retrieve page statistics.
-- retrieve social action notifications.
-- create an ad creative.
-- business
-- b2b advertising, audience targeting, and campaign analytics.
-- create a sponsored conversation.
-- get sponsored conversations.
-- initialize document upload
-- create sponsored conversation
-- message archiving and regulatory communications governance.
-- initialize image upload.
 - create inmail content
-- careers
-- recruiting
+- integrates linkedin authentication and sharing into applications.
+- data portability and advertiser transparency for dma.
+- get sponsored conversations.
+- retrieve page statistics.
+- create a sponsored conversation.
 slug: content-and-community
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Content And Community\"\n  description: \"Unified workflow for content marketers to create rich ad content, manage organization pages, track engagement, and monitor social actions -- combining content APIs and community management.\"\n  tags:\n    - LinkedIn\n    - Content Marketing\n    - Community Management\n    - Social Media\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-content\n      location: ./shared/marketing-content.yaml\n    - import: marketing-community\n      location: ./shared/marketing-community.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: content-community-api\n      description: \"Unified REST API for LinkedIn content creation and community management.\"\n      resources:\n        - path: /v1/posts\n          name: posts\n \
   \         operations:\n            - method: POST\n              name: create-post\n              description: \"Create a post.\"\n              call: \"marketing-content.create-post\"\n            - method: GET\n              name: get-posts\n              description: \"Fetch multiple posts.\"\n              call: \"marketing-content.get-posts\"\n        - path: /v1/shares\n          name: shares\n          operations:\n            - method: POST\n              name: create-share\n              description: \"Create a share with company mention.\"\n              call: \"marketing-community.create-share\"\n        - path: /v1/creatives\n          name: creatives\n          operations:\n            - method: POST\n              name: create-creative\n              description: \"Create an ad creative.\"\n              call: \"marketing-content.create-creative\"\n            - method: GET\n              name: search-creatives\n              description: \"Search for creatives.\"\n     \

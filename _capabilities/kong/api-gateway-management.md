@@ -39,76 +39,76 @@ personas: []
 provider_name: Kong
 provider_slug: kong
 search_terms:
-- list all tags and tagged entities.
-- update a service configuration.
-- route management.
-- delete a consumer.
-- create a new service.
-- list all configured upstream services.
-- delete an upstream.
-- get consumer
-- plugin management.
-- list all plugins.
-- lua
-- retrieve kong gateway node information.
-- list all upstream load balancers.
-- list all routes.
-- list all configured routes.
-- create a new api consumer.
-- delete a plugin.
-- list plugins
-- retrieve a specific consumer.
-- delete a route.
-- list tags
-- create a new plugin configuration.
-- list all enabled plugin names on the node.
-- retrieve gateway node info.
-- get route
-- create consumer
-- create plugin
-- list services
-- list all services.
-- list enabled plugins
-- update a route.
-- list all consumers.
-- delete consumer
 - configuration
-- list all tls certificates.
-- retrieve kong gateway node status.
-- delete upstream
-- retrieve a specific service.
-- create a new route.
-- get node info
-- gateway node information.
-- get plugin
-- api gateway
+- delete a consumer.
 - upstream service management.
-- get service
-- list consumers
-- api consumer management.
-- get node status
-- list all configured plugins.
-- create a new upstream for load balancing.
-- list certificates
-- create service
-- nginx
-- retrieve a specific plugin configuration.
-- list upstreams
-- create route
-- delete plugin
-- list all api consumers.
-- list routes
-- delete route
+- delete a route.
 - update service
-- retrieve a specific route.
-- create a new route for a service.
-- delete a service.
-- delete service
-- open source
+- list plugins
+- list all configured upstream services.
 - create upstream
-- update route
+- delete an upstream.
+- get node info
+- api consumer management.
+- retrieve a specific service.
+- create service
+- retrieve kong gateway node information.
+- retrieve a specific plugin configuration.
+- get route
+- list all enabled plugin names on the node.
+- delete plugin
+- retrieve a specific consumer.
+- delete a service.
+- update a service configuration.
+- open source
+- retrieve gateway node info.
+- api gateway
+- create a new route.
+- create a new service.
 - create a new upstream service.
+- delete route
+- route management.
+- list all consumers.
+- list all api consumers.
+- list enabled plugins
+- list services
+- list upstreams
+- delete upstream
+- list consumers
+- list tags
+- list routes
+- create plugin
+- get plugin
+- list all tls certificates.
+- list certificates
+- lua
+- update a route.
 - kong
+- create a new upstream for load balancing.
+- create a new route for a service.
+- gateway node information.
+- list all plugins.
+- list all configured plugins.
+- create a new plugin configuration.
+- list all configured routes.
+- delete consumer
+- get node status
+- get service
+- delete service
+- create consumer
+- list all tags and tagged entities.
+- list all services.
+- create route
+- create a new api consumer.
+- get consumer
+- delete a plugin.
+- list all routes.
+- nginx
+- retrieve kong gateway node status.
+- update route
+- plugin management.
+- list all upstream load balancers.
+- retrieve a specific route.
 slug: api-gateway-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Kong API Gateway Management\"\n  description: \"API gateway management workflow for platform engineers to configure services, routes, plugins, consumers, upstreams, and TLS certificates on Kong Gateway instances.\"\n  tags:\n    - Kong\n    - API Gateway\n    - Configuration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      KONG_ADMIN_URL: KONG_ADMIN_URL\n\ncapability:\n  consumes:\n    - import: kong-admin\n      location: ./shared/kong-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-gateway-management-api\n      description: \"Unified REST API for Kong Gateway management.\"\n      resources:\n        - path: /v1/info\n          name: info\n          description: \"Gateway node information.\"\n          operations:\n            - method: GET\n              name: get-node-info\n              description: \"Retrieve gateway node info.\"\n   \
   \           call: \"kong-admin.get-node-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services\n          name: services\n          description: \"Upstream service management.\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List all services.\"\n              call: \"kong-admin.list-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service\n              description: \"Create a new service.\"\n              call: \"kong-admin.create-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/routes\n          name: routes\n          description: \"Route management.\"\n          operations:\n            - method: GET\n              name: list-routes\n  \

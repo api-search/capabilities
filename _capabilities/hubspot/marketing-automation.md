@@ -12,34 +12,34 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- operations
-- hubspot send a transactional email
-- hubspot
-- analytics
-- email
-- deletesmtptoken
-- hubspot list all smtp tokens
-- hubspot create an smtp token
-- sendtransactionalemail
-- geteventtypes
-- commerce
-- hubspot get an smtp token by id
-- hubspot reset smtp token password
-- marketing
-- hubspot delete an smtp token
-- hubspot retrieve event instances
-- geteventinstances
-- customer service
-- email marketing
-- listsmtptokens
 - crm
+- commerce
+- analytics
 - sales
-- createsmtptoken
-- getsmtptokenbyid
-- content
-- marketing automation
-- resetsmtptokenpassword
+- email
+- hubspot retrieve event instances
+- hubspot delete an smtp token
+- geteventinstances
+- hubspot create an smtp token
+- operations
+- customer service
 - hubspot retrieve available event types
+- sendtransactionalemail
+- resetsmtptokenpassword
+- getsmtptokenbyid
+- hubspot reset smtp token password
+- content
+- email marketing
+- geteventtypes
+- hubspot
+- hubspot send a transactional email
+- marketing
+- hubspot get an smtp token by id
+- deletesmtptoken
+- createsmtptoken
+- listsmtptokens
+- marketing automation
+- hubspot list all smtp tokens
 slug: marketing-automation
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: HubSpot Marketing Automation\n  description: Marketing automation workflow combining email campaigns and analytics events.\n  tags:\n  - HubSpot\n  - Marketing\n  - Email\n  - Analytics\n  created: '2026-04-18'\n  modified: '2026-04-18'\nbinds:\n- namespace: env\n  keys:\n    HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\ncapability:\n  consumes:\n  - import: marketing-emal-api\n    location: ./shared/marketing-emal-api.yaml\n  - import: analytics-events-api\n    location: ./shared/analytics-events-api.yaml\n  exposes:\n  - type: mcp\n    port: 9092\n    namespace: marketing-automation-mcp\n    transport: http\n    description: MCP server for AI-assisted HubSpot Marketing Automation.\n    tools:\n    - name: listsmtptokens\n      description: HubSpot List All SMTP Tokens\n      hints:\n        readOnly: true\n      call: marketing-emal-api.listsmtptokens\n    - name: createsmtptoken\n      description: HubSpot Create an SMTP Token\n     \
   \ hints:\n        readOnly: false\n      call: marketing-emal-api.createsmtptoken\n    - name: getsmtptokenbyid\n      description: HubSpot Get an SMTP Token by ID\n      hints:\n        readOnly: true\n      call: marketing-emal-api.getsmtptokenbyid\n    - name: deletesmtptoken\n      description: HubSpot Delete an SMTP Token\n      hints:\n        destructive: true\n      call: marketing-emal-api.deletesmtptoken\n    - name: resetsmtptokenpassword\n      description: HubSpot Reset SMTP Token Password\n      hints:\n        readOnly: false\n      call: marketing-emal-api.resetsmtptokenpassword\n    - name: sendtransactionalemail\n      description: HubSpot Send a Transactional Email\n      hints:\n        readOnly: false\n      call: marketing-emal-api.sendtransactionalemail\n    - name: geteventinstances\n      description: HubSpot Retrieve Event Instances\n      hints:\n        readOnly: true\n      call: analytics-events-api.geteventinstances\n    - name: geteventtypes\n      description:\

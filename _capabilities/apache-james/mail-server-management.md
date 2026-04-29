@@ -30,28 +30,28 @@ personas: []
 provider_name: Apache James
 provider_slug: apache-james
 search_terms:
-- list all user accounts in the james mail server
-- jmap
-- email
-- create user
-- mail server management
-- administrators who manage james mail server domains, users, and queues
-- create a new mail user account
-- apache james
-- create domain
-- create a new email domain in the james server
-- list domains
-- email administration
-- Mail Administrator
-- imap
-- mail server
 - list asynchronous administrative tasks and their statuses
-- java
-- list tasks
-- list all email domains configured in the james server
+- email
 - open source
+- java
+- Mail Administrator
+- administrators who manage james mail server domains, users, and queues
+- apache james
+- create user
 - list users
+- imap
+- create a new mail user account
+- list domains
+- create domain
+- jmap
 - smtp
+- list all user accounts in the james mail server
+- email administration
+- list all email domains configured in the james server
+- mail server
+- list tasks
+- mail server management
+- create a new email domain in the james server
 slug: mail-server-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache James Mail Server Management\"\n  description: \"Workflow capability for mail server administrators to manage domains, users, mailboxes, and monitor tasks in Apache James.\"\n  tags:\n    - Apache James\n    - Email Administration\n    - Mail Server Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      JAMES_ADMIN_TOKEN: JAMES_ADMIN_TOKEN\n\ncapability:\n  consumes:\n    - import: james-webadmin\n      location: ./shared/webadmin-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: james-mail-management-api\n      description: \"Unified REST API for Apache James mail server management.\"\n      resources:\n        - path: /v1/domains\n          name: domains\n          operations:\n            - method: GET\n              name: list-domains\n              call: \"james-webadmin.list-domains\"\n              outputParameters:\n      \
   \          - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-domain\n              call: \"james-webadmin.create-domain\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          operations:\n            - method: GET\n              name: list-users\n              call: \"james-webadmin.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              call: \"james-webadmin.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tasks\n          name: tasks\n          operations:\n            - method: GET\n              name: list-tasks\n              call: \"james-webadmin.list-tasks\"\n              outputParameters:\n        \

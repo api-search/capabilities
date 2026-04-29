@@ -65,64 +65,64 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- flow engineering team management
 - skills assessment
-- list license users
-- list pending user invitations
-- retrieve repository data and metadata across connected source control systems.
-- team administration
-- list invitations
-- query and manage teams via graphql
-- query plan info
-- education
-- create invitation
-- platform administration
-- flow integration management and connection status
-- query and manage users via graphql
-- pluralsight
-- create a new user invitation
-- query and manage users including listing users, inviting members, editing user details, removing users, and canceling invitations.
-- licensing
 - courses
-- list pending user invitations. deprecated - migrate to graphql user management api.
-- connected repository data and metadata
-- user management including listing, inviting, editing, and removing users
-- list users in the plan
-- list teams in the plan
-- technology
-- list license teams
-- retrieve repository data and metadata
-- list flow integrations and check connection status with external tools and services.
-- plan user listing (legacy rest, deprecated)
-- manage teams
-- manage users
-- retrieve account and plan details
-- query and manage teams including creating teams, managing membership, assigning managers, and configuring team permissions.
-- retrieve account and plan details including subscription tier and configuration.
-- list users in the plan. deprecated - migrate to graphql user management api.
+- flow integration management and connection status
 - list flow users
-- update, merge, hide, or perform bulk operations on flow user accounts.
-- video training
+- flow engineering team management
+- licensing
 - user invitation management (legacy rest, deprecated)
+- list flow engineering teams
+- manage teams
+- retrieve repository data and metadata
+- query and manage users via graphql
+- query plan info
+- pluralsight
+- video training
 - account and plan details including subscription tier
-- user management
-- update flow users
-- list flow engineering teams and team membership data.
-- plan team listing (legacy rest, deprecated)
-- list flow workspace users
-- list teams in the plan. deprecated - migrate to graphql teams api.
 - team management including creating teams, managing membership, and permissions
 - learning
+- query and manage users including listing users, inviting members, editing user details, removing users, and canceling invitations.
 - send a new user invitation. deprecated - migrate to graphql user management api.
 - list flow teams
-- engineering metrics
-- update flow user accounts
-- list flow engineering teams
 - flow workspace user management
-- get repos
-- list integrations
-- list flow integrations and connection status
+- education
+- update, merge, hide, or perform bulk operations on flow user accounts.
+- plan user listing (legacy rest, deprecated)
+- list pending user invitations
+- list teams in the plan. deprecated - migrate to graphql teams api.
+- list flow integrations and check connection status with external tools and services.
+- retrieve repository data and metadata across connected source control systems.
+- engineering metrics
+- query and manage teams via graphql
+- user management
+- update flow user accounts
+- list users in the plan
+- query and manage teams including creating teams, managing membership, assigning managers, and configuring team permissions.
+- list flow engineering teams and team membership data.
+- create invitation
+- plan team listing (legacy rest, deprecated)
+- create a new user invitation
+- list license teams
+- list invitations
+- list pending user invitations. deprecated - migrate to graphql user management api.
+- list license users
+- manage users
+- list users in the plan. deprecated - migrate to graphql user management api.
+- retrieve account and plan details
+- platform administration
 - list flow users in the workspace.
+- technology
+- team administration
+- get repos
+- list flow integrations and connection status
+- list flow workspace users
+- update flow users
+- list integrations
+- retrieve account and plan details including subscription tier and configuration.
+- user management including listing, inviting, editing, and removing users
+- connected repository data and metadata
+- list teams in the plan
 slug: user-and-team-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight User And Team Administration\"\n  description: \"Unified workflow for platform administrators to manage users, teams, licensing, plan configuration, and Flow workspace settings. Combines user management, teams, licensing, plan info, Flow users, Flow teams, Flow integrations, and Flow repos APIs.\"\n  tags:\n    - Pluralsight\n    - User Management\n    - Team Administration\n    - Platform Administration\n    - Licensing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n      PLURALSIGHT_FLOW_BEARER_TOKEN: PLURALSIGHT_FLOW_BEARER_TOKEN\n      PLURALSIGHT_FLOW_WORKSPACE: PLURALSIGHT_FLOW_WORKSPACE\n\ncapability:\n  consumes:\n    - import: pluralsight-user-management\n      location: ./shared/user-management.yaml\n    - import: pluralsight-teams\n      location: ./shared/teams.yaml\n    - import: pluralsight-licensing-rest\n\
   \      location: ./shared/licensing-rest.yaml\n    - import: pluralsight-plan-info\n      location: ./shared/plan-info.yaml\n    - import: pluralsight-flow-users\n      location: ./shared/flow-users.yaml\n    - import: pluralsight-flow-teams\n      location: ./shared/flow-teams.yaml\n    - import: pluralsight-flow-integrations\n      location: ./shared/flow-integrations.yaml\n    - import: pluralsight-flow-repos\n      location: ./shared/flow-repos.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: user-team-admin-api\n      description: \"Unified REST API for Pluralsight user and team administration across Skills and Flow platforms.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User management including listing, inviting, editing, and removing users\"\n          operations:\n            - method: POST\n              name: manage-users\n              description: \"Query and manage users via GraphQL\"\n           \

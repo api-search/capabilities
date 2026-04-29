@@ -10,8 +10,8 @@ provider_name: BB&T Corp (Truist)
 provider_slug: bbandt-corp
 search_terms:
 - financial services
-- bb&t
 - banking
+- bb&t
 - truist
 - open banking
 slug: open-banking

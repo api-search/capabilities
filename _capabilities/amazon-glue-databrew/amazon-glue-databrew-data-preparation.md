@@ -39,52 +39,52 @@ personas: []
 provider_name: Amazon Glue DataBrew
 provider_slug: amazon-glue-databrew
 search_terms:
-- start a job execution
-- publish a recipe version for production use
-- manage collaborative databrew projects
-- amazon glue databrew
-- list jobs
-- analytics
-- execute a databrew transformation or profiling job
-- list recipes
-- manage datasets for transformation
-- list datasets
-- create a new recipe
-- create a new dataset
-- list all databrew transformation and profiling jobs
 - etl
-- create recipe job
-- prepares and cleans data for business analytics
+- publish recipe
+- aws
 - list all data transformation recipes
-- list all collaborative databrew projects
+- create recipe
+- analytics
+- get details about a specific dataset
+- start a job execution
+- manage and run databrew jobs
+- list all projects
+- create a new dataset from s3, database, or other sources
+- execute a databrew transformation or profiling job
+- manage datasets for transformation
+- data preparation
+- list all recipes
+- list all databrew datasets available for preparation
+- create recipe job
+- data analytics
+- list job runs
 - list all runs for a specific job
 - create a new databrew project for collaborative data preparation
-- Data Scientist
+- start job run
 - manage data transformation recipes
-- list all databrew datasets available for preparation
-- manage and run databrew jobs
+- list all collaborative databrew projects
+- create dataset
+- list datasets
+- list all databrew datasets
+- machine learning
+- prepares and cleans data for business analytics
+- create project
+- create a new recipe
+- list all databrew transformation and profiling jobs
+- Data Scientist
+- list jobs
+- create a new dataset
 - Data Analyst
 - list projects
-- create a new dataset from s3, database, or other sources
-- create recipe
-- create a new recipe with transformation steps
-- start job run
-- publish recipe
 - list all databrew jobs
-- create a job to apply a recipe to a dataset
-- list all databrew datasets
-- aws
-- create dataset
-- data preparation
-- prepares datasets for machine learning model training
-- data analytics
-- create project
-- list all projects
 - describe dataset
-- list all recipes
-- get details about a specific dataset
-- machine learning
-- list job runs
+- create a new recipe with transformation steps
+- manage collaborative databrew projects
+- publish a recipe version for production use
+- list recipes
+- create a job to apply a recipe to a dataset
+- prepares datasets for machine learning model training
+- amazon glue databrew
 slug: amazon-glue-databrew-data-preparation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Glue DataBrew Data Preparation\n  description: >-\n    Workflow capability for data analysts and data scientists preparing data\n    using Amazon Glue DataBrew. Covers dataset management, recipe creation,\n    job execution, and profiling for analytics and machine learning workflows.\n  tags:\n    - Amazon Glue DataBrew\n    - Data Preparation\n    - ETL\n    - Analytics\n    - Machine Learning\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-glue-databrew\n      location: ./shared/amazon-glue-databrew.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: glue-databrew-data-prep-api\n      description: Unified REST API for Amazon Glue DataBrew data preparation workflows.\n \
   \     resources:\n        - path: /v1/datasets\n          name: datasets\n          description: Manage datasets for transformation\n          operations:\n            - method: GET\n              name: list-datasets\n              description: List all DataBrew datasets\n              call: amazon-glue-databrew.ListDatasets\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dataset\n              description: Create a new dataset\n              call: amazon-glue-databrew.CreateDataset\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/recipes\n          name: recipes\n          description: Manage data transformation recipes\n          operations:\n            - method: GET\n              name: list-recipes\n              description: List all recipes\n              call: amazon-glue-databrew.ListRecipes\n      \

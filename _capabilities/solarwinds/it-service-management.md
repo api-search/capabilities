@@ -28,34 +28,34 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- ip address management
-- application monitoring
-- incident management
-- asset management
-- service desk
-- get incident
-- infrastructure
-- it management
-- list service requests
-- list hardware assets
-- list service desk incidents
-- log management
+- itsm
 - solarwinds
+- create a new incident
+- service desk
+- list assets
+- get incident
+- application monitoring
+- database monitoring
+- incident management
 - query infrastructure
-- list change requests
-- get incident details
-- list incidents
-- service request management
+- log management
+- ip address management
 - observability
 - change management
-- create a new incident
-- query orion infrastructure data via swql
-- network monitoring
-- list changes
-- list assets
+- it management
+- service request management
 - create incident
-- itsm
-- database monitoring
+- infrastructure
+- network monitoring
+- list service requests
+- list changes
+- asset management
+- list hardware assets
+- list change requests
+- list incidents
+- get incident details
+- list service desk incidents
+- query orion infrastructure data via swql
 slug: it-service-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SolarWinds IT Service Management\"\n  description: \"Workflow for IT service management combining Service Desk incident/change management with Orion infrastructure data for IT support and service delivery teams.\"\n  tags:\n    - SolarWinds\n    - ITSM\n    - Service Desk\n    - Incident Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWSD_API_TOKEN: SWSD_API_TOKEN\n      ORION_USERNAME: ORION_USERNAME\n      ORION_PASSWORD: ORION_PASSWORD\n\ncapability:\n  consumes:\n    - import: service-desk\n      location: ./shared/service-desk.yaml\n    - import: orion\n      location: ./shared/orion.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: itsm-api\n      description: \"Unified REST API for SolarWinds IT service management.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management\"\
   \n          operations:\n            - method: GET\n              name: list-incidents\n              description: \"List incidents\"\n              call: \"service-desk.list-incidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-requests\n          name: service-requests\n          description: \"Service request management\"\n          operations:\n            - method: GET\n              name: list-service-requests\n              description: \"List service requests\"\n              call: \"service-desk.list-service-requests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/changes\n          name: changes\n          description: \"Change management\"\n          operations:\n            - method: GET\n              name: list-changes\n              description: \"List change requests\"\n              call: \"service-desk.list-changes\"\

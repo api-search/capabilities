@@ -55,61 +55,61 @@ personas: []
 provider_name: Aruba
 provider_slug: aruba
 search_terms:
-- device details
-- access point monitoring
-- get device
-- networking
-- create a new site
-- delete site
-- client connectivity
-- list all gateways
-- list access points
-- infrastructure
-- device inventory management
-- list gateways
-- delete a site
-- wireless
-- get access point
-- list all connected clients
-- get site
-- list groups
-- get device details by serial number
-- cloud management
-- create group
-- list all networks
-- get site details by id
-- sd-wan
-- get group details by name
-- cloud
 - monitoring
-- list all devices in the network inventory
-- remove device
-- list all configuration groups
-- list clients
-- delete a configuration group
-- switches
-- list sites
-- list all devices in the aruba central device inventory
-- site management
-- remove a device from inventory
-- associate devices to a site
-- delete group
-- get access point details by serial number
-- network monitoring
-- list devices
-- create a new configuration group
+- sd-wan
 - security
-- associate devices to site
 - list networks
-- gateway monitoring
-- create site
-- get group
-- list all access points with status and statistics
-- configuration group management
-- list all access points with status
 - aruba
 - network management
+- get device
+- gateway monitoring
+- list access points
+- associate devices to site
+- client connectivity
+- create a new configuration group
+- list all networks
+- delete group
+- create site
+- get device details by serial number
+- get group
+- remove device
+- list all access points with status
+- networking
+- list groups
+- get group details by name
+- list gateways
+- infrastructure
+- create a new site
+- list all connected clients
+- associate devices to a site
+- get site
+- list all configuration groups
+- delete site
+- list all access points with status and statistics
+- network monitoring
+- cloud
+- cloud management
+- configuration group management
+- delete a configuration group
+- device inventory management
+- remove a device from inventory
+- get access point
+- access point monitoring
+- switches
+- get site details by id
 - list all sites
+- site management
+- wireless
+- delete a site
+- list all gateways
+- create group
+- get access point details by serial number
+- list clients
+- list all devices in the aruba central device inventory
+- list devices
+- list all devices in the network inventory
+- device details
+- list sites
 slug: network-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Aruba Network Management\"\n  description: \"Unified network management workflow combining Aruba Central API for device inventory, configuration groups, sites, access points, clients, and gateway monitoring. Used by network administrators to manage campus and branch infrastructure.\"\n  tags:\n    - Aruba\n    - Network Management\n    - Cloud Management\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARUBA_CENTRAL_TOKEN: ARUBA_CENTRAL_TOKEN\n\ncapability:\n  consumes:\n    - import: aruba-central\n      location: ./shared/central.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aruba-network-mgmt-api\n      description: \"Unified REST API for Aruba network management operations.\"\n      resources:\n        - path: /v1/devices\n          name: devices\n          description: \"Device inventory management\"\n          operations:\n\
   \            - method: GET\n              name: list-devices\n              description: \"List all devices in the network inventory\"\n              call: \"aruba-central.get-devices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/devices/{serial}\n          name: device-detail\n          description: \"Device details\"\n          operations:\n            - method: GET\n              name: get-device\n              description: \"Get device details by serial number\"\n              call: \"aruba-central.get-device-by-serial\"\n              with:\n                serial: \"rest.serial\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: remove-device\n              description: \"Remove a device from inventory\"\n              call: \"aruba-central.delete-device\"\n              with:\n                serial: \"\

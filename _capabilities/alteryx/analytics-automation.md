@@ -39,70 +39,70 @@ personas: []
 provider_name: Alteryx
 provider_slug: alteryx
 search_terms:
-- download workflow
-- get user
-- create a new credential
-- delete collection
 - individual workflow operations
-- workflow management
-- create a new collection
-- list all workflows
-- analytics
-- create credential
-- delete user
-- automation
-- list all workflows on the alteryx server
-- update workflow metadata
-- schedule management
-- download a workflow package
-- create user
-- get workflow
-- update workflow
-- deactivate user
-- get workflow jobs
-- delete a user
-- list workflows
-- list credentials
-- etl
-- list all schedules
-- get analytic app questions for a workflow
-- list all collections
-- get details of a specific workflow
-- create a new user
-- delete a collection
-- list all stored credentials
-- delete a workflow
-- get workflow questions
-- get execution jobs for a workflow
-- delete a workflow schedule
-- get user details
-- get workflow details
-- upload a new workflow
-- create a new workflow schedule
-- deactivate a user account
-- create and execute a workflow job
-- create job
-- list schedules
-- upload a new workflow package
-- list all workflow schedules
-- machine learning
-- data science
-- user management
-- predictive analytics
 - alteryx
-- delete schedule
-- list all users on the server
-- create schedule
-- data preparation
-- create collection
+- etl
 - create a new schedule
-- collection management
-- list collections
-- delete workflow
+- delete schedule
+- create credential
 - list all users
+- delete a workflow
+- analytics
+- get execution jobs for a workflow
+- upload a new workflow package
+- list workflows
+- schedule management
+- list credentials
+- update workflow
+- list all workflow schedules
+- create job
+- get user
+- get details of a specific workflow
+- list all workflows on the alteryx server
+- download workflow
+- data preparation
+- create schedule
+- list all workflows
+- workflow management
+- delete a user
+- create a new credential
+- get workflow details
+- user management
+- delete a workflow schedule
+- list all users on the server
+- list collections
+- create and execute a workflow job
+- upload a new workflow
+- create user
+- delete a collection
+- create collection
+- data science
+- predictive analytics
 - upload workflow
-- data engineering
+- create a new collection
+- delete collection
+- get workflow questions
 - list users
+- data engineering
+- machine learning
+- update workflow metadata
+- automation
+- delete workflow
+- list schedules
+- create a new user
+- create a new workflow schedule
+- collection management
+- download a workflow package
+- list all collections
+- deactivate user
+- list all schedules
+- get user details
+- delete user
+- deactivate a user account
+- get workflow
+- list all stored credentials
+- get workflow jobs
+- get analytic app questions for a workflow
 slug: analytics-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Alteryx Analytics Automation\"\n  description: \"Analytics automation workflow combining Alteryx Server V3 API for workflow management, job execution, scheduling, user administration, credential management, and collection organization. Used by data analysts and server administrators to automate analytics pipelines.\"\n  tags:\n    - Alteryx\n    - Analytics\n    - Automation\n    - Data Engineering\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALTERYX_SERVER_URL: ALTERYX_SERVER_URL\n      ALTERYX_CLIENT_ID: ALTERYX_CLIENT_ID\n      ALTERYX_CLIENT_SECRET: ALTERYX_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: alteryx-server\n      location: ./shared/server-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: alteryx-automation-api\n      description: \"Unified REST API for Alteryx analytics automation.\"\n      resources:\n        - path: /v1/workflows\n\
   \          name: workflows\n          description: \"Workflow management\"\n          operations:\n            - method: GET\n              name: list-workflows\n              description: \"List all workflows\"\n              call: \"alteryx-server.get-workflows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: upload-workflow\n              description: \"Upload a new workflow\"\n              call: \"alteryx-server.upload-workflow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows/{workflowId}\n          name: workflow-detail\n          description: \"Individual workflow operations\"\n          operations:\n            - method: GET\n              name: get-workflow\n              description: \"Get workflow details\"\n              call: \"alteryx-server.get-workflow\"\n              with:\n          \

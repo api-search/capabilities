@@ -47,56 +47,56 @@ personas: []
 provider_name: Amazon Well-Architected Tool
 provider_slug: amazon-well-architected-tool
 search_terms:
-- generate a consolidated architectural review report across workloads.
-- Governance Team
-- list all workloads under architectural review in the aws account.
-- list available aws and custom lenses for architectural reviews.
-- unified workflow for cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate reports.
-- regulatory and organizational policy adherence
-- create a milestone to capture review state.
-- workloads
-- get consolidated report
-- create a new workload for architectural review.
-- list available lenses.
-- cloud workload design and best practices
-- architectural review answers.
-- well-architected
-- list architectural review answers for a workload and lens.
-- workload review milestones.
-- lens catalog for architectural reviews.
-- get consolidated architectural review report.
-- list workloads
-- get details and metadata for a specific workload.
-- workload profiles.
 - list lens reviews
-- list lenses
-- create milestone
-- best practices
-- architecture
-- list answers
-- save a milestone snapshot of the current workload review state.
-- get workload details.
-- create a new workload to begin an architectural review.
-- list lens reviews for a workload.
-- compliance
-- create workload
-- consolidated governance reports.
-- oversight and compliance of cloud architecture decisions
-- lens reviews for workloads.
-- get workload
-- list workload profiles used to customize reviews.
-- manage workloads under architectural review.
-- list answers for a workload lens review.
-- list all workloads in the account.
-- list profiles
 - oversees architectural compliance and risk across the cloud portfolio.
 - aws
+- architectural review answers.
+- list architectural review answers for a workload and lens.
+- get consolidated architectural review report.
 - designs and reviews cloud workload architectures against aws best practices.
-- list lens reviews for a specific workload.
-- cloud governance
-- Cloud Architect
-- list profiles.
+- best practices
+- list lenses
 - single workload management.
+- list lens reviews for a workload.
+- Cloud Architect
+- cloud governance
+- create milestone
+- create a milestone to capture review state.
+- consolidated governance reports.
+- get workload
+- save a milestone snapshot of the current workload review state.
+- workloads
+- architecture
+- generate a consolidated architectural review report across workloads.
+- get details and metadata for a specific workload.
+- create workload
+- list lens reviews for a specific workload.
+- create a new workload for architectural review.
+- lens reviews for workloads.
+- cloud workload design and best practices
+- oversight and compliance of cloud architecture decisions
+- get consolidated report
+- Governance Team
+- list answers for a workload lens review.
+- lens catalog for architectural reviews.
+- list available aws and custom lenses for architectural reviews.
+- manage workloads under architectural review.
+- list available lenses.
+- workload review milestones.
+- list answers
+- compliance
+- create a new workload to begin an architectural review.
+- get workload details.
+- workload profiles.
+- list all workloads in the account.
+- list workloads
+- well-architected
+- regulatory and organizational policy adherence
+- list profiles
+- list profiles.
+- unified workflow for cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate reports.
+- list workload profiles used to customize reviews.
+- list all workloads under architectural review in the aws account.
 slug: architecture-governance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Well-Architected Tool Architecture Governance\"\n  description: >-\n    Unified workflow for architecture governance using the AWS Well-Architected Tool.\n    Enables cloud architects and governance teams to manage workloads, run lens reviews,\n    track answers, create milestones, and generate consolidated reports across the\n    organization's cloud portfolio.\n  tags:\n    - Architecture\n    - AWS\n    - Cloud Governance\n    - Well-Architected\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: well-architected-tool\n      location: ./shared/well-architected-tool.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: architecture-governance-api\n      description: \"Unified\
   \ REST API for AWS Well-Architected Tool architecture governance workflows.\"\n      resources:\n        - path: /v1/workloads\n          name: workloads\n          description: \"Manage workloads under architectural review.\"\n          operations:\n            - method: GET\n              name: list-workloads\n              description: \"List all workloads in the account.\"\n              call: \"well-architected-tool.list-workloads\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workload\n              description: \"Create a new workload for architectural review.\"\n              call: \"well-architected-tool.create-workload\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workloads/{id}\n          name: workload-detail\n          description: \"Single workload management.\"\n          operations:\n\

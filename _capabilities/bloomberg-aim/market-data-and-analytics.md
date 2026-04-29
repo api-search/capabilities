@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- get catalog
 - list available bloomberg data catalogs
 - search available bloomberg data fields
-- financial analytics
-- get historical end-of-day data
-- list field lists
-- security universe management
-- get reference data for securities
-- order management
-- get intraday bar data
-- get historical data for securities
-- create data request
-- reference data access
-- portfolio management
-- search fields
-- get historical data
-- financial data
-- list completed data distributions
-- search for securities and instruments
-- bloomberg
-- historical data access
 - data catalog browsing
-- list universes
-- get reference data for securities via http api
-- get intraday bars
-- create a security universe for data requests
-- search instruments
-- get data catalog details
-- reference data
-- get reference data
-- market data
-- trading
-- list available data catalogs
+- list completed data distributions
+- order management
 - field list management
-- create universe
-- create a bloomberg data request
+- get reference data for securities
 - list catalogs
-- list distributions
-- data distributions
+- reference data access
+- get intraday bars
+- get reference data for securities via http api
+- trading
+- get historical data for securities
+- search for securities and instruments
+- get catalog
+- financial data
+- search fields
+- list field lists
 - list security universes
+- financial analytics
+- get reference data
+- create a bloomberg data request
+- security universe management
+- create a security universe for data requests
+- data distributions
+- get intraday bar data
+- get data catalog details
+- create data request
+- bloomberg
+- list available data catalogs
+- list distributions
 - list field lists for data requests
+- get historical end-of-day data
+- search instruments
+- market data
+- portfolio management
+- list universes
+- get historical data
+- create universe
+- historical data access
+- reference data
 slug: market-data-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data and Analytics\"\n  description: \"Workflow for accessing Bloomberg market data combining the Data License HAPI for bulk data with the HTTP API for real-time reference and historical data, used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Analytics\n    - Reference Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_HAPI_TOKEN: BLOOMBERG_HAPI_TOKEN\n      BLOOMBERG_HTTP_USERNAME: BLOOMBERG_HTTP_USERNAME\n      BLOOMBERG_HTTP_PASSWORD: BLOOMBERG_HTTP_PASSWORD\n\ncapability:\n  consumes:\n    - import: data-license\n      location: ./shared/data-license.yaml\n    - import: http-api\n      location: ./shared/http-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data and analytics.\"\
   \n      resources:\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Data catalog browsing\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List available data catalogs\"\n              call: \"data-license.list-catalogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/universes\n          name: universes\n          description: \"Security universe management\"\n          operations:\n            - method: GET\n              name: list-universes\n              description: \"List security universes\"\n              call: \"data-license.list-universes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/field-lists\n          name: field-lists\n          description: \"Field list management\"\n          operations:\n            - method: GET\n   \

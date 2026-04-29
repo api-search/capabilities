@@ -56,85 +56,85 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- ci/cd
-- t1
-- listEnvironments
-- list runners
-- getWorkflow
-- list artifacts
-- list releases
-- software development
-- listRepositoryWorkflows
-- secret management
-- dispatch workflow
-- devops
-- download artifact
-- list repository secrets
-- getWorkflowRun
 - get a job
-- list self-hosted runners
-- get repository
-- listWorkflowRunsForRepository
-- source control
-- listJobsForWorkflowRun
-- get a repository
-- dispatch a workflow
-- list secrets
-- artifact management
-- pipelines
-- list workflows
-- workflow run management
-- get a workflow run
-- list jobs for a workflow run
-- deployment management
-- create or update secret
-- workflows
-- workflow listing and dispatch
-- cancel a workflow run
-- deployments
-- re-run failed jobs
-- listDeployments
-- trigger a workflow dispatch event
-- download an artifact
-- list environments
-- createWorkflowDispatchEvent
-- list repository workflows
-- trigger workflow runs
-- list github actions caches
-- cancelWorkflowRun
-- list variables
-- get workflow
-- download job logs
-- disable workflow
-- listArtifactsForRepository
-- rerun failed jobs
 - enable workflow
-- create or update a secret
-- listRepositorySecrets
-- environment management
-- github
-- platform
-- list deployments
-- get a workflow
-- actions
-- create a release
+- list environments
+- software development
+- deployment management
+- secret management
 - workflow run jobs
-- individual workflow operations
-- list jobs
-- disable a workflow
-- list repository variables
-- list caches
-- get run
-- list workflow runs
-- get job
-- code
-- enable a workflow
-- individual run operations
-- cancel run
-- list runs
-- rerun workflow
-- create release
+- create a release
+- re-run failed jobs
+- environment management
 - re-run a workflow
+- list secrets
+- cancel a workflow run
+- trigger a workflow dispatch event
+- get run
+- list caches
+- list jobs
+- get repository
+- artifact management
+- download job logs
+- cancelWorkflowRun
+- get a workflow run
+- list workflows
+- download artifact
+- list runners
+- list artifacts
+- list variables
+- listEnvironments
+- workflow run management
+- listDeployments
+- ci/cd
+- getWorkflow
+- dispatch workflow
+- list workflow runs
+- get a workflow
+- listJobsForWorkflowRun
+- devops
+- listWorkflowRunsForRepository
+- list repository secrets
+- create or update secret
+- disable a workflow
+- rerun failed jobs
+- github
+- code
+- list self-hosted runners
+- workflow listing and dispatch
+- actions
+- list repository workflows
+- download an artifact
+- get a repository
+- getWorkflowRun
+- create or update a secret
+- pipelines
+- individual run operations
+- platform
+- trigger workflow runs
+- get workflow
+- list github actions caches
+- individual workflow operations
+- enable a workflow
+- dispatch a workflow
+- create release
+- list repository variables
+- listArtifactsForRepository
+- listRepositorySecrets
+- createWorkflowDispatchEvent
+- listRepositoryWorkflows
+- rerun workflow
+- t1
+- deployments
+- cancel run
+- list releases
+- list runs
+- workflows
+- source control
+- list deployments
+- disable workflow
+- get job
+- list jobs for a workflow run
 slug: ci-cd
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub CI/CD\"\n  description: \"Unified workflow for continuous integration and deployment combining GitHub Actions workflows, runs, jobs, artifacts, and repository management. Used by DevOps engineers for pipeline management, build monitoring, and deployment automation.\"\n  tags:\n    - GitHub\n    - CI/CD\n    - Actions\n    - Workflows\n    - DevOps\n    - Deployments\n  personas:\n    - devops engineers\n    - release managers\n    - platform engineers\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-actions\n      location: \"./shared/actions.yaml\"\n    - import: github-repos\n      location: \"./shared/repos.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: github-ci-cd-api\n      description: \"Unified REST API for CI/CD workflows combining Actions and repository management.\"\
   \n      resources:\n        - path: /v1/repositories/{owner}/{repo}/workflows\n          name: workflows\n          description: \"Workflow listing and dispatch\"\n          operations:\n            - method: GET\n              name: listRepositoryWorkflows\n              description: \"List workflows\"\n              call: \"github-actions.listRepositoryWorkflows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/workflows/{workflow_id}\n          name: workflow\n          description: \"Individual workflow operations\"\n          operations:\n            - method: GET\n              name: getWorkflow\n              description: \"Get a workflow\"\n              call: \"github-actions.getWorkflow\"\n              with:\n                workflow_id: \"rest.workflow_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/workflows/{workflow_id}/dispatches\n\

@@ -9,10 +9,10 @@ personas: []
 provider_name: Blobr
 provider_slug: blobr
 search_terms:
-- ai agents
-- advertising
 - ppc
 - google ads
+- ai agents
+- advertising
 - marketing automation
 slug: blobr-google-ads-ai
 source_yaml: "name: Blobr Google Ads AI Platform Capability\ndescription: >-\n  Naftiko capability definition for Blobr's AI-powered Google Ads management platform,\n  providing campaign analysis, AI recommendations, and automated optimization via\n  50+ specialized AI agents.\nversion: 1.0.0\ncapabilities:\n  - name: connectAccount\n    description: Connect a Google Ads account to Blobr for AI analysis and management\n    method: POST\n    path: /accounts/connect\n    body:\n      googleAdsCustomerId: string\n  - name: listAccounts\n    description: List all Google Ads accounts connected to Blobr\n    method: GET\n    path: /accounts\n  - name: listCampaigns\n    description: List campaigns for a connected Google Ads account with performance metrics\n    method: GET\n    path: /accounts/{accountId}/campaigns\n  - name: listRecommendations\n    description: List AI-generated recommendations pending review\n    method: GET\n    path: /accounts/{accountId}/recommendations\n    parameters:\n\

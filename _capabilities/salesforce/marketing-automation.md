@@ -75,80 +75,80 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- triggered email send operations.
-- get data extension rows
-- create sms send
-- journey entry event operations.
 - delete a content asset.
-- get rows from a marketing cloud data extension.
-- delete one or more contacts.
-- create asset
-- analytics
-- create a new content asset in content builder.
-- fire a journey entry event to enroll a contact in a journey.
-- get a marketing cloud contact by contact key.
-- list marketing cloud journey builder journeys.
-- get detailed information about a marketing cloud journey.
-- update a content builder asset.
-- commerce
-- list journeys
-- fire journey event
-- list marketing cloud content builder assets.
-- get journey
-- message delivery status.
-- delete contacts
-- create and initiate a triggered email send.
-- insert or upsert rows into a marketing cloud data extension.
-- get the delivery status of a triggered email send.
-- enterprise
-- get a content builder asset by id.
-- get a content asset by id.
-- get message status
-- fire a journey entry event to enroll a contact.
-- delete asset
-- marketing
-- cloud
-- marketing cloud
-- get a journey by id.
-- platform
-- sms send operations.
-- create a content asset.
-- individual journey operations.
-- marketing cloud contact management.
-- list contacts
-- get contact
-- data extension row operations.
-- ai
-- individual contact operations.
-- customer service
-- email marketing
-- create and initiate an sms send to one or more recipients.
-- crm
-- list contacts in the marketing cloud account.
-- get the delivery status of an email message.
-- contact deletion operations.
-- individual asset operations.
 - create email send
-- list assets
-- create and initiate a triggered email send to one or more recipients.
-- delete a content builder asset.
-- salesforce
-- update a content asset.
-- journeys
-- delete one or more contacts from marketing cloud.
-- get a contact by contact key.
+- sms send operations.
+- get a content asset by id.
+- get a marketing cloud contact by contact key.
+- get detailed information about a marketing cloud journey.
+- commerce
+- analytics
+- get message status
+- individual journey operations.
+- crm
+- create sms send
+- get the delivery status of a triggered email send.
 - sales
-- journey builder journey management.
-- marketing automation
 - content builder asset management.
-- create and initiate an sms send.
+- get a content builder asset by id.
+- marketing cloud contact management.
+- list assets
+- data extension row operations.
+- create a content asset.
+- insert or upsert rows into a marketing cloud data extension.
+- journeys
+- get journey
+- triggered email send operations.
+- delete one or more contacts from marketing cloud.
+- ai
+- salesforce
+- contact deletion operations.
+- create asset
+- get a journey by id.
+- customer service
+- message delivery status.
+- list marketing cloud content builder assets.
 - get asset
-- update asset
-- insert or upsert rows into a data extension.
-- insert data extension rows
-- list marketing cloud journeys.
+- fire journey event
+- marketing cloud
 - get rows from a data extension.
+- journey entry event operations.
 - list content assets.
+- get a contact by contact key.
+- email marketing
+- fire a journey entry event to enroll a contact.
+- list marketing cloud journey builder journeys.
+- list journeys
+- get contact
+- cloud
+- list contacts
+- create and initiate an sms send to one or more recipients.
+- enterprise
+- marketing
+- delete asset
+- list contacts in the marketing cloud account.
+- update asset
+- create a new content asset in content builder.
+- list marketing cloud journeys.
+- create and initiate a triggered email send to one or more recipients.
+- create and initiate an sms send.
+- fire a journey entry event to enroll a contact in a journey.
+- platform
+- insert or upsert rows into a data extension.
+- create and initiate a triggered email send.
+- get rows from a marketing cloud data extension.
+- delete a content builder asset.
+- delete contacts
+- delete one or more contacts.
+- individual contact operations.
+- marketing automation
+- get data extension rows
+- insert data extension rows
+- get the delivery status of an email message.
+- journey builder journey management.
+- individual asset operations.
+- update a content asset.
+- update a content builder asset.
 slug: marketing-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce Marketing Automation\"\n  description: \"Unified capability for marketing automation workflows combining the Marketing Cloud REST API for contact management, journey orchestration, email and SMS messaging, data extensions, and content asset management. Used by marketing teams and marketing ops to manage campaigns and subscriber engagement.\"\n  tags:\n    - Salesforce\n    - Marketing Cloud\n    - Marketing Automation\n    - Email Marketing\n    - Journeys\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SALESFORCE_MC_CLIENT_ID: SALESFORCE_MC_CLIENT_ID\n      SALESFORCE_MC_CLIENT_SECRET: SALESFORCE_MC_CLIENT_SECRET\n      SALESFORCE_MC_ACCESS_TOKEN: SALESFORCE_MC_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: salesforce-mc\n      location: ./shared/marketing-cloud.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: marketing-automation-api\n\
   \      description: \"Unified REST API for Salesforce marketing automation workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"Marketing Cloud contact management.\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List contacts in the Marketing Cloud account.\"\n              call: \"salesforce-mc.list-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/contacts/{contactKey}\n          name: contact\n          description: \"Individual contact operations.\"\n          operations:\n            - method: GET\n              name: get-contact\n              description: \"Get a contact by contact key.\"\n              call: \"salesforce-mc.get-contact\"\n              with:\n                contactKey: \"rest.contactKey\"\n              outputParameters:\n                - type: object\n\

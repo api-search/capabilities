@@ -36,50 +36,50 @@ provider_name: Amazon IAM
 provider_slug: amazon-iam
 search_terms:
 - manage iam users
-- attach a managed policy to an iam user
-- list roles
-- list all iam users
-- attach role policy
 - create role
-- identity
-- delete user
-- create a new iam role with a trust policy
-- authorization
-- create user
-- attach a managed policy to an iam role
-- list policies
-- create policy
+- aws
+- access control
+- security
 - list all iam users in the account
-- policy management
-- creating and attaching permission policies
-- creating and managing aws user identities
-- create a new iam user
-- list all iam roles in the account
 - Cloud Administrator
+- list all iam users
+- attach a managed policy to an iam role
 - attach user policy
+- authorization
+- create a new iam user
+- list all iam roles
+- list roles
+- list access keys for an iam user
+- Security Engineer
+- creating and attaching permission policies
 - manage iam roles
+- attach a managed policy to an iam user
+- creating and managing aws user identities
+- create policy
+- create user
+- authentication
+- create a new iam role
+- create a new iam policy with specified permissions
+- access management
+- create a new iam policy
+- list users
+- create a new iam user with the specified username
+- list policies
+- list all iam policies
+- list access keys
 - reviews and audits iam configurations for security compliance
+- list all iam roles in the account
+- policy management
+- create a new iam role with a trust policy
+- manages iam users, roles, and policies for aws account governance
+- identity
+- manage iam policies
+- attach role policy
+- delete user
+- list iam policies available for attachment
 - defining and enforcing what users and services can do
 - iam
-- Security Engineer
-- manages iam users, roles, and policies for aws account governance
-- access management
-- create a new iam role
-- authentication
-- manage iam policies
-- create a new iam policy with specified permissions
-- security
-- list iam policies available for attachment
-- list access keys
-- list all iam policies
-- aws
-- create a new iam user with the specified username
-- list all iam roles
 - delete an iam user from the account
-- create a new iam policy
-- access control
-- list access keys for an iam user
-- list users
 slug: iam-access-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IAM - Access Management\n  description: Unified capability for cloud administrators to manage IAM users, roles, groups, and policies for AWS account access control and security governance.\n  tags:\n    - AWS\n    - IAM\n    - Security\n    - Access Control\n    - Identity\n    - Policy Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iam\n      location: ./shared/iam.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iam-access-api\n      description: Unified REST API for IAM access management.\n      resources:\n        - path: /v1/users\n          name: users\n          description: Manage IAM users\n          operations:\n            - method: GET\n              name: list-users\n              description: List\
   \ all IAM users\n              call: \"iam.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: Create a new IAM user\n              call: \"iam.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/roles\n          name: roles\n          description: Manage IAM roles\n          operations:\n            - method: GET\n              name: list-roles\n              description: List all IAM roles\n              call: \"iam.list-roles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-role\n              description: Create a new IAM role\n              call: \"iam.create-role\"\n              outputParameters:\n                - type: object\n             \

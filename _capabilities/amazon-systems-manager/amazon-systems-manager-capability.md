@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Systems Manager
 provider_slug: amazon-systems-manager
 search_terms:
-- aws
-- operations
 - management
 - automation
+- aws
+- operations
 slug: amazon-systems-manager-capability
 source_yaml: 'id: amazon-systems-manager-capability
 

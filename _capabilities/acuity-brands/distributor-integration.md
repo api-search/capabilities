@@ -23,42 +23,42 @@ personas: []
 provider_name: acuity-brands
 provider_slug: acuity-brands
 search_terms:
-- acuity brands
 - b2b distributor ordering, inventory management, and shipment tracking
-- list orders
-- product catalog search
-- order status and tracking
-- distributor
-- track shipment
-- product inventory availability
-- search product catalog
-- check inventory
-- E Commerce Developer
-- list inventory with optional filters
-- electrical distributors who carry acuity brands products and need real-time inventory and order data
+- order management
+- get full order status and details including estimated and actual ship dates
 - list recent orders filtered by status or date range
-- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
-- search products
-- get product inventory
-- commercial, industrial, and residential lighting products and controls
+- get detailed inventory including warehouse locations and estimated ship dates for a specific product
+- order status and tracking
+- get product
 - list inventory
 - get full product details including specifications, certifications, list price, and data sheet
-- get shipment records for an order including carrier name and pro number for freight tracking
-- Electrical Distributor
-- inventory
-- search the acuity brands product catalog by keyword, brand, or product category
-- get detailed inventory including warehouse locations and estimated ship dates for a specific product
-- list catalog
-- get full order status and details including estimated and actual ship dates
-- ERP Integration Developer
-- b2b
-- lighting
-- track order
-- get product
-- developers building e-commerce sites that display acuity brands product data, pricing, and availability
-- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
-- order management
+- product inventory availability
+- list inventory with optional filters
+- E Commerce Developer
+- list orders
 - check inventory availability for an acuity brands product by product number or brand
+- lighting
+- search the acuity brands product catalog by keyword, brand, or product category
+- inventory
+- Electrical Distributor
+- ERP Integration Developer
+- acuity brands
+- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
+- distributor
+- check inventory
+- search product catalog
+- product catalog search
+- track shipment
+- b2b
+- get product inventory
+- search products
+- list catalog
+- developers building e-commerce sites that display acuity brands product data, pricing, and availability
+- get shipment records for an order including carrier name and pro number for freight tracking
+- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
+- commercial, industrial, and residential lighting products and controls
+- electrical distributors who carry acuity brands products and need real-time inventory and order data
+- track order
 slug: distributor-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Acuity Brands Distributor Integration\"\n  description: \"Workflow for distributor integration with Acuity Brands covering inventory lookup, order status tracking, product catalog search, and shipment tracking. Used by electrical distributors integrating Acuity Brands data into ERP and e-commerce systems.\"\n  tags:\n    - Acuity Brands\n    - Lighting\n    - B2B\n    - Distributor\n    - Inventory\n    - Order Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACUITY_BRANDS_USER_ID: ACUITY_BRANDS_USER_ID\n      ACUITY_BRANDS_API_KEY: ACUITY_BRANDS_API_KEY\n\ncapability:\n  consumes:\n    - import: acuity-brands\n      location: ./shared/acuity-brands.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributor-integration-api\n      description: \"Unified REST API for Acuity Brands distributor integration.\"\n      resources:\n        - path:\
   \ /v1/inventory\n          name: inventory\n          description: \"Product inventory availability\"\n          operations:\n            - method: GET\n              name: list-inventory\n              description: \"List inventory with optional filters\"\n              call: \"acuity-brands.list-inventory\"\n              with:\n                productNumber: \"rest.productNumber\"\n                brand: \"rest.brand\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/orders\n          name: orders\n          description: \"Order status and tracking\"\n          operations:\n            - method: GET\n              name: list-orders\n              description: \"List orders\"\n              call: \"acuity-brands.list-orders\"\n              with:\n                status: \"rest.status\"\n                fromDate: \"rest.fromDate\"\n              outputParameters:\n                - type: object\n                \

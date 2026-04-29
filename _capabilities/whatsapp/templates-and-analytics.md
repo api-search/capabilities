@@ -35,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- creates a new message template. templates must be approved by meta before use.
-- retrieves conversation analytics.
-- delete message template
-- get template analytics
-- analytics
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- retrieves template analytics.
-- template performance analytics.
-- list message templates
-- update message template
-- marketing
-- message templates
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- whatsapp
-- creates a new message template.
-- message template management.
-- reporting
-- individual message template management.
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- get conversation analytics
-- deletes a message template.
-- lists all message templates for a waba.
 - conversation analytics and reporting.
 - deletes a message template. deleting by name removes all language variants.
+- whatsapp
+- message template management.
+- list message templates
+- analytics
 - create message template
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- get template analytics
+- individual message template management.
 - updates an existing message template.
+- delete message template
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- get conversation analytics
+- update message template
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- template performance analytics.
+- reporting
+- message templates
+- marketing
+- retrieves conversation analytics.
+- retrieves template analytics.
+- creates a new message template.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- deletes a message template.
+- creates a new message template. templates must be approved by meta before use.
+- lists all message templates for a waba.
 slug: templates-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WhatsApp Templates And Analytics\"\n  description: \"Unified workflow for managing message templates and analyzing conversation and template performance. Combines Business Management API template CRUD and analytics capabilities used by marketing teams, content managers, and business analysts.\"\n  tags:\n    - WhatsApp\n    - Message Templates\n    - Analytics\n    - Marketing\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: whatsapp-business-mgmt\n      location: ./shared/business-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: whatsapp-templates-api\n      description: \"Unified REST API for WhatsApp message template management and analytics.\"\n      resources:\n        - path: /v1/message-templates\n          name: message-templates\n\
   \          description: \"Message template management.\"\n          operations:\n            - method: GET\n              name: list-message-templates\n              description: \"Lists all message templates for a WABA.\"\n              call: \"whatsapp-business-mgmt.list-message-templates\"\n              with:\n                waba_id: \"rest.waba_id\"\n                fields: \"rest.fields\"\n                limit: \"rest.limit\"\n                after: \"rest.after\"\n                before: \"rest.before\"\n                name: \"rest.name\"\n                language: \"rest.language\"\n                status: \"rest.status\"\n                category: \"rest.category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-message-template\n              description: \"Creates a new message template.\"\n              call: \"whatsapp-business-mgmt.create-message-template\"\n   \

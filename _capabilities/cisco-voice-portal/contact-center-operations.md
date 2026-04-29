@@ -45,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- list active sessions
-- list managed devices
-- list applications
-- list call detail records
-- application management
-- check cvp call server health status
-- list vxml applications
-- individual call details
-- get details of a specific active call
-- system health
-- list active vxml sessions
-- list call detail records from the reporting server
-- voice
-- vxml
-- list all active calls on the cvp call server
-- list dialed number patterns
-- cisco
-- ivr
-- list managed cvp devices
-- vxml session monitoring
-- list deployed applications
-- list sessions
-- get call details
-- get health
-- list configured dialed number patterns
-- telephony
 - list active calls
 - get call server health
-- active call management
-- call detail records
-- list devices
+- cisco
 - list cdrs
-- contact center
-- real-time statistics
+- list call detail records from the reporting server
+- list active vxml sessions
+- vxml session monitoring
+- check cvp call server health status
 - device management
-- get statistics
-- list deployed cvp applications
-- voice portal
-- get real-time call statistics
-- list deployed vxml applications
+- get call details
+- list managed devices
 - get call
+- voice portal
+- list dialed number patterns
+- list all active calls on the cvp call server
+- system health
+- list vxml applications
+- get details of a specific active call
+- telephony
+- list deployed cvp applications
+- ivr
+- real-time statistics
+- list deployed vxml applications
+- call detail records
+- get health
+- get real-time call statistics
+- list applications
+- list sessions
+- vxml
+- list call detail records
+- individual call details
+- contact center
+- list configured dialed number patterns
+- application management
+- list managed cvp devices
+- list devices
+- voice
+- list active sessions
+- active call management
+- get statistics
+- list deployed applications
 slug: contact-center-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cisco Voice Portal Contact Center Operations\"\n  description: \"Unified workflow for contact center operations combining call control, reporting, administration, and VXML services. Used by contact center administrators and operations teams for monitoring, managing, and optimizing voice self-service applications.\"\n  tags:\n    - Cisco\n    - Contact Center\n    - Voice Portal\n    - IVR\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      CVP_USERNAME: CVP_USERNAME\n      CVP_PASSWORD: CVP_PASSWORD\n      CVP_ADMIN_USERNAME: CVP_ADMIN_USERNAME\n      CVP_ADMIN_PASSWORD: CVP_ADMIN_PASSWORD\n\ncapability:\n  consumes:\n    - import: call-control\n      location: ./shared/call-control.yaml\n    - import: reporting\n      location: ./shared/reporting.yaml\n    - import: administration\n      location: ./shared/administration.yaml\n    - import: vxml-services\n      location: ./shared/vxml-services.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: contact-center-api\n      description: \"Unified REST API for Cisco Voice Portal contact center operations.\"\n      resources:\n        - path: /v1/calls\n          name: calls\n          description: \"Active call management\"\n          operations:\n            - method: GET\n              name: list-active-calls\n              description: \"List active calls\"\n              call: \"call-control.list-active-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/calls/{callGuid}\n          name: call\n          description: \"Individual call details\"\n          operations:\n            - method: GET\n              name: get-call\n              description: \"Get call details\"\n              call: \"call-control.get-call\"\n              with:\n                callGuid: \"rest.callGuid\"\n              outputParameters:\n                - type:\

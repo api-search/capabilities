@@ -9,13 +9,13 @@ personas: []
 provider_name: Clearstream
 provider_slug: clearstream
 search_terms:
-- custody
-- securities
 - financial services
 - iso 15022
-- iso 20022
 - capital markets
+- securities
+- iso 20022
 - post-trade infrastructure
+- custody
 - settlement
 - swift
 - collateral management

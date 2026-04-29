@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- user settings management.
-- zero trust
-- network configuration management.
-- trust store management.
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- create a portal.
-- list network settings.
-- browser policy and access control enforcement
-- IT Administrator
-- Security Engineer
-- list user settings configurations for portals.
-- manages workspaces web portals and configurations.
-- list network settings
-- secure remote browser access infrastructure
-- configures browser policies and access controls.
-- secure browser
 - administration
-- list browser policy settings for portals.
-- list ssl certificate trust stores.
-- list trust stores
-- create portal
-- list portals
-- create a new secure browser portal.
-- list user settings
-- list browser settings.
-- list network settings for portal connectivity.
-- list all workspaces web secure browser portals.
-- portal management.
-- browser policy management.
-- list browser settings
-- portal and resource provisioning
 - aws
-- list secure browser portals.
-- list trust stores.
-- end user computing
+- zero trust
+- browser policy management.
+- portal management.
 - list user settings.
+- create a portal.
+- list browser settings.
+- list all workspaces web secure browser portals.
+- list user settings configurations for portals.
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- list portals
+- list secure browser portals.
+- list browser settings
+- configures browser policies and access controls.
+- end user computing
+- secure remote browser access infrastructure
+- list network settings.
+- secure browser
+- Security Engineer
+- create portal
+- list ssl certificate trust stores.
+- list trust stores.
+- list network settings
+- network configuration management.
+- portal and resource provisioning
+- IT Administrator
 - virtual desktop
+- list network settings for portal connectivity.
+- trust store management.
+- browser policy and access control enforcement
+- list user settings
+- list browser policy settings for portals.
+- manages workspaces web portals and configurations.
+- create a new secure browser portal.
+- list trust stores
+- user settings management.
 slug: secure-browser-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkSpaces Web Secure Browser Management\"\n  description: >-\n    Unified workflow for IT administrators to manage Amazon WorkSpaces Web\n    portals, user settings, browser policies, network configurations, and\n    trust stores for enterprise secure browser deployments.\n  tags:\n    - AWS\n    - Secure Browser\n    - End User Computing\n    - Administration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: workspaces-web\n      location: ./shared/workspaces-web.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secure-browser-management-api\n      description: \"Unified REST API for Amazon WorkSpaces Web secure browser management.\"\n      resources:\n        - path: /v1/portals\n   \
   \       name: portals\n          description: \"Portal management.\"\n          operations:\n            - method: GET\n              name: list-portals\n              description: \"List secure browser portals.\"\n              call: \"workspaces-web.list-portals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-portal\n              description: \"Create a portal.\"\n              call: \"workspaces-web.create-portal\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/user-settings\n          name: user-settings\n          description: \"User settings management.\"\n          operations:\n            - method: GET\n              name: list-user-settings\n              description: \"List user settings.\"\n              call: \"workspaces-web.list-user-settings\"\n              outputParameters:\n           \

@@ -27,37 +27,37 @@ personas: []
 provider_name: Adobe Premiere Pro
 provider_slug: adobe-premiere
 search_terms:
-- Video Producer
-- media
-- adobe premiere
-- video production
-- create library
-- asset management
-- premiere pro
-- automation
-- create a new creative cloud library.
-- add element
-- creative cloud libraries for shared production assets.
-- elements within a creative cloud library.
-- video editor and producer using adobe premiere pro for content creation.
-- list elements in a library.
-- list libraries
-- list all creative cloud libraries available for use in adobe premiere pro projects.
-- manage creative cloud libraries and assets for premiere pro video production.
-- adobe
-- manager responsible for organizing shared brand assets in creative cloud.
-- premiere pro plugin and extension ecosystem.
-- add library element
-- list elements
-- create a new creative cloud library for organizing video production brand assets.
-- add an element to a library.
-- add a new design element to a creative cloud library for sharing with the premiere pro team.
-- creative cloud
-- list all creative cloud libraries.
-- list library elements
-- video editing
-- Media Asset Manager
 - list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
+- video editor and producer using adobe premiere pro for content creation.
+- media
+- list all creative cloud libraries.
+- add library element
+- list library elements
+- list libraries
+- adobe premiere
+- add element
+- video production
+- list all creative cloud libraries available for use in adobe premiere pro projects.
+- list elements in a library.
+- premiere pro
+- create a new creative cloud library for organizing video production brand assets.
+- list elements
+- manager responsible for organizing shared brand assets in creative cloud.
+- create library
+- automation
+- creative cloud libraries for shared production assets.
+- manage creative cloud libraries and assets for premiere pro video production.
+- asset management
+- Video Producer
+- adobe
+- Media Asset Manager
+- creative cloud
+- elements within a creative cloud library.
+- create a new creative cloud library.
+- add an element to a library.
+- premiere pro plugin and extension ecosystem.
+- add a new design element to a creative cloud library for sharing with the premiere pro team.
+- video editing
 slug: creative-asset-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Premiere Creative Asset Management\"\n  description: \"Workflow capability for managing shared Creative Cloud Libraries and design assets for use in Adobe Premiere Pro video editing projects. Designed for video production teams and media asset managers.\"\n  tags:\n    - Adobe Premiere\n    - Creative Cloud\n    - Asset Management\n    - Video Production\n    - Media\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_CC_ACCESS_TOKEN: ADOBE_CC_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: cc-libraries\n      location: ./shared/creative-cloud-libraries-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: creative-asset-management-api\n      description: \"Unified REST API for Creative Cloud Libraries asset management in Adobe Premiere Pro workflows.\"\n      resources:\n        - path: /v1/libraries\n          name: libraries\n     \
   \     description: \"Creative Cloud Libraries for shared production assets.\"\n          operations:\n            - method: GET\n              name: list-libraries\n              description: \"List all Creative Cloud Libraries.\"\n              call: \"cc-libraries.list-libraries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-library\n              description: \"Create a new Creative Cloud Library.\"\n              call: \"cc-libraries.create-library\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/libraries/{libraryId}/elements\n          name: library-elements\n          description: \"Elements within a Creative Cloud Library.\"\n          operations:\n            - method: GET\n              name: list-elements\n              description: \"\

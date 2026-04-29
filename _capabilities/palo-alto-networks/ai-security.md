@@ -69,131 +69,131 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- create a new red team scan target.
-- list attack categories
-- red team operator
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- analyzes suspicious files and samples for malware characteristics.
-- get results of a red team vulnerability scan.
-- network security
-- mssp operator
-- identity and access management, tenant hierarchies, and subscription management.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
 - saas security admin
-- submit an asynchronous ai security scan of model inputs/outputs for threats.
-- manages multi-tenant security operations at scale for managed service providers.
-- manages logging infrastructure, integrations, and platform automation.
-- list ai profiles
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- malware researcher
-- sre
-- get the results of a previously submitted asynchronous scan.
-- create red team target
-- data protection analyst
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- manage enterprise browser policies, user sessions, and deployments.
-- ai security engineer
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- threat intelligence
-- get or delete a specific red team scan target.
-- xdr
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- firewall
-- list all red team scan targets.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- get red team scan status
-- iam admin
-- compliance officer
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- get results of a red team vulnerability scan with optional category and severity filters.
-- submit a synchronous ai security scan of model inputs/outputs for threats like prompt injection, data leakage, and malicious content.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- create a new red team scan target for ai application vulnerability testing.
-- enterprise it
-- manage ai red teaming scan targets.
-- delete a specific red team scan target by id.
-- cloud security
-- cloud security posture management, compliance monitoring, and workload protection.
-- soar
-- get results of an asynchronous ai security scan.
-- ai red teaming
-- get red team scan results
-- get async scan results
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- subscription manager
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- submit a synchronous scan of ai model inputs/outputs for threats.
-- designs and implements network security architectures and policies.
-- submit async scan
-- list available attack categories for red teaming.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- sase
-- get the status of a red team vulnerability scan.
-- incident responder
-- sd wan operator
-- researches threat actors, malware campaigns, and vulnerability trends.
-- start a new red team vulnerability scan against a target ai application.
-- data loss prevention, saas security monitoring, and identity security posture.
-- ai runtime security scanning and automated red teaming for ai applications.
-- monitors network health, performance, and digital experience metrics.
-- start red team scan
-- list all ai security profiles with pagination.
-- submit an asynchronous ai security scan.
-- ai security
-- get results of a red team vulnerability scan with optional filters.
-- investigates dlp incidents and manages sensitive data protection policies.
-- sase admin
-- submit an asynchronous scan of ai model inputs/outputs for threats.
-- threat intel analyst
-- tenant operator
-- network security engineer
-- executes containment, eradication, and recovery actions during security incidents.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- manages enterprise browser policies and secure browsing configurations.
-- cloud security engineer
-- get results of a previously submitted asynchronous ai security scan.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- list all available attack categories for red team vulnerability scans.
-- list ai security profiles.
-- firewall admin
-- get ai profile
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- network operations
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- get red team target
-- enterprise browser policy management and secure browsing.
-- prompt injection
-- list red team targets
-- proactively searches for threats and iocs across telemetry data.
-- manages service accounts, roles, and access policies for platform api access.
-- conducts automated adversarial testing against ai systems and llm applications.
-- llm security
-- browser security admin
-- designs sase and sd-wan network architectures for secure remote access.
-- list all red team scan targets with optional type filter.
-- list all available attack categories for red team scans.
-- get a specific ai security profile by name.
-- platform engineer
-- get a specific ai security profile.
-- palo alto networks
-- delete red team target
-- submit sync scan
-- start ai red team vulnerability scans.
-- threat hunter
-- digital experience monitoring, log management, and best practice assessment.
-- compliance team
-- get a specific red team scan target by id.
-- soc analyst
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- submit a synchronous ai security scan.
-- start a new red team vulnerability scan against a target.
 - network architect
+- get the status of a red team vulnerability scan.
+- subscription manager
+- get results of a red team vulnerability scan with optional category and severity filters.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- submit a synchronous ai security scan of model inputs/outputs for threats like prompt injection, data leakage, and malicious content.
+- network security
+- submit a synchronous scan of ai model inputs/outputs for threats.
+- tenant operator
+- sre
+- compliance team
+- create red team target
+- get red team scan status
+- submit an asynchronous ai security scan of model inputs/outputs for threats.
+- threat intelligence
+- list attack categories
+- submit an asynchronous scan of ai model inputs/outputs for threats.
+- soc analyst
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- start ai red team vulnerability scans.
+- monitors network health, performance, and digital experience metrics.
+- conducts automated adversarial testing against ai systems and llm applications.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- mssp operator
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- enterprise it
+- get or delete a specific red team scan target.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- palo alto networks
+- list all red team scan targets.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- get results of a previously submitted asynchronous ai security scan.
+- submit async scan
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- get a specific ai security profile.
+- sd wan operator
+- proactively searches for threats and iocs across telemetry data.
+- list ai security profiles.
+- get red team target
+- investigates security incidents, triages alerts, and coordinates response actions.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- network operations
+- get red team scan results
+- manages multi-tenant security operations at scale for managed service providers.
+- cybersecurity
+- list all available attack categories for red team vulnerability scans.
+- create a new red team scan target for ai application vulnerability testing.
+- ai security
+- manages service accounts, roles, and access policies for platform api access.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- delete a specific red team scan target by id.
+- network security engineer
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- list ai profiles
+- prompt injection
+- sase
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- start a new red team vulnerability scan against a target.
+- manages enterprise browser policies and secure browsing configurations.
+- get a specific red team scan target by id.
+- incident responder
+- firewall
+- start red team scan
+- threat intel analyst
+- platform engineer
+- data protection analyst
+- investigates dlp incidents and manages sensitive data protection policies.
+- cloud security posture management, compliance monitoring, and workload protection.
+- start a new red team vulnerability scan against a target ai application.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- cloud security
+- list all ai security profiles with pagination.
+- submit sync scan
+- create a new red team scan target.
+- ai runtime security scanning and automated red teaming for ai applications.
+- executes containment, eradication, and recovery actions during security incidents.
+- get the results of a previously submitted asynchronous scan.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- firewall admin
+- browser security admin
+- data loss prevention, saas security monitoring, and identity security posture.
+- digital experience monitoring, log management, and best practice assessment.
+- iam admin
+- designs and implements network security architectures and policies.
+- get ai profile
+- llm security
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- designs sase and sd-wan network architectures for secure remote access.
+- enterprise browser policy management and secure browsing.
+- xdr
+- get results of an asynchronous ai security scan.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- get async scan results
+- manage ai red teaming scan targets.
+- list available attack categories for red teaming.
+- malware researcher
+- threat hunter
+- ai security engineer
+- manages logging infrastructure, integrations, and platform automation.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- get a specific ai security profile by name.
+- list all red team scan targets with optional type filter.
+- ai red teaming
+- submit a synchronous ai security scan.
+- list all available attack categories for red team scans.
 - vulnerability manager
+- compliance officer
+- get results of a red team vulnerability scan.
+- red team operator
+- list red team targets
+- sase admin
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- cloud security engineer
+- delete red team target
+- analyzes suspicious files and samples for malware characteristics.
+- manage enterprise browser policies, user sessions, and deployments.
+- submit an asynchronous ai security scan.
+- soar
+- get results of a red team vulnerability scan with optional filters.
+- identity and access management, tenant hierarchies, and subscription management.
 slug: ai-security
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks AI Security\"\n  description: \"Unified AI security capability for scanning AI model inputs/outputs for threats and red-teaming AI applications for vulnerabilities across Prisma AIRS and AI Red Teaming APIs.\"\n  tags:\n    - Palo Alto Networks\n    - AI Security\n    - AI Red Teaming\n    - LLM Security\n    - Prompt Injection\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PRISMA_AIRS_TOKEN: PRISMA_AIRS_TOKEN\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: prisma-airs\n      location: ./shared/prisma-airs.yaml\n    - import: prisma-airs-red-teaming\n      location: ./shared/prisma-airs-red-teaming.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: ai-security-api\n      description: \"Unified REST API for AI security scanning and red teaming.\"\n      resources:\n\n        # -- AI Security\
   \ Scanning (Prisma AIRS) --------------------------------\n        - path: /v1/ai-scans/sync\n          name: ai-scan-sync\n          description: \"Submit a synchronous AI security scan.\"\n          operations:\n            - method: POST\n              name: submit-sync-scan\n              description: \"Submit a synchronous scan of AI model inputs/outputs for threats.\"\n              inputParameters:\n                - name: ai_profile\n                  in: body\n                  type: string\n                  required: true\n                - name: contents\n                  in: body\n                  type: object\n                  required: true\n              call: \"prisma-airs.submit-scan-sync\"\n              with:\n                ai_profile: \"rest.ai_profile\"\n                contents: \"rest.contents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ai-scans/async\n          name: ai-scan-async\n\

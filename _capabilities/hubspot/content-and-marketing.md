@@ -48,59 +48,59 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list all blog authors
-- operations
-- hubspot
-- create a new blog post
 - list all blog posts in hubspot
-- get a blog author by id
-- get blog author
-- event type definitions
-- analytics
-- push a draft blog post to live
-- schedule blog post
-- update blog post
-- get a blog post
+- retrieve analytics events
+- list blog posts
+- crm
 - commerce
-- list event types
-- push blog post live
-- archive a blog post
+- analytics
+- sales
+- get blog post
+- update a blog post
+- list all blog authors
+- get blog author
+- list all blog posts
+- update an existing blog post
+- create a new blog post
+- get event types
+- analytics events
+- get a specific blog post by id
 - create blog post
 - list events
-- update an existing blog post
-- clone an existing blog post
-- list all blog posts
-- marketing
-- analytics events
-- get blog post
+- archive a blog post
+- operations
 - blog
+- customer service
+- create a blog post
+- list available analytics event types
+- clone blog post
+- push a draft blog post to live
+- content
+- email marketing
+- archive blog post
+- list event types
+- create a new blog author
+- cms
+- get revision history for a blog post
+- hubspot
+- marketing
 - blog author management
+- get analytics events
+- create blog author
+- schedule a blog post for publication
+- push blog post live
+- schedule blog post
+- get a blog author by id
+- event type definitions
+- clone an existing blog post
 - get blog post revisions
 - individual blog post
-- archive blog post
-- schedule a blog post for publication
-- create blog author
-- cms
-- list blog authors
-- create a blog post
-- customer service
-- retrieve analytics events
-- list available analytics event types
-- get revision history for a blog post
-- email marketing
-- crm
-- sales
-- retrieve analytics event data for crm objects
-- get analytics events
-- create a new blog author
-- list available event types
-- clone blog post
-- get a specific blog post by id
-- update a blog post
-- content
+- get a blog post
 - marketing automation
-- list blog posts
-- get event types
+- update blog post
+- retrieve analytics event data for crm objects
+- list available event types
+- list blog authors
 - blog post management
 slug: content-and-marketing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Content And Marketing\"\n  description: \"Unified workflow for marketing managers to manage blog content, authors, landing pages, site pages, domains, analytics events, and transactional email. Combines CMS and marketing APIs into a single content operations interface.\"\n  tags:\n    - HubSpot\n    - Marketing\n    - Content\n    - CMS\n    - Blog\n    - Analytics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: blog-posts\n      location: ./shared/blog-posts.yaml\n    - import: blog-authors\n      location: ./shared/blog-authors.yaml\n    - import: analytics-events\n      location: ./shared/analytics-events.yaml\n    - import: cms-pages\n      location: ./shared/cms-pages-api.yaml\n    - import: domains\n      location: ./shared/domains-api.yaml\n    - import: marketing-email\n  \

@@ -15,27 +15,27 @@ personas: []
 provider_name: Apache Flume
 provider_slug: apache-flume
 search_terms:
-- get all metrics for apache flume agent components (sources, channels, sinks)
-- apache flume
+- monitoring
 - etl
+- log aggregation
+- get flume agent metrics
+- open source
+- get agent metrics
+- monitor flume agent metrics for log collection pipelines
+- flume agent component metrics
 - operators monitoring flume agent health and throughput
 - engineers configuring and monitoring flume log collection pipelines
-- data collection
-- get all component metrics for a flume agent
-- flume agent component metrics
-- data engineering
-- monitoring
-- log aggregation
 - Platform Operator
-- get agent metrics
+- data collection
 - streaming
-- Data Engineer
-- get flume agent metrics
-- collecting, aggregating, and moving log and event data
-- apache
-- open source
-- monitor flume agent metrics for log collection pipelines
+- data engineering
 - agent component metrics and health monitoring
+- apache
+- get all component metrics for a flume agent
+- collecting, aggregating, and moving log and event data
+- Data Engineer
+- apache flume
+- get all metrics for apache flume agent components (sources, channels, sinks)
 slug: flume-log-collection
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Flume Log Collection\"\n  description: \"Capability for monitoring Apache Flume log collection agents — tracking source throughput, channel fill levels, and sink drain rates. Designed for data engineers and platform operators managing log aggregation pipelines.\"\n  tags:\n    - Apache Flume\n    - Log Aggregation\n    - Data Collection\n    - Monitoring\n    - Data Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      FLUME_AGENT_URL: FLUME_AGENT_URL\ncapability:\n  consumes:\n    - import: flume-monitoring\n      location: ./shared/flume-monitoring.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flume-collection-api\n      description: \"Unified REST API for Apache Flume log collection monitoring.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: Flume agent component metrics\n          operations:\n\
   \            - method: GET\n              name: get-agent-metrics\n              description: Get all component metrics for a Flume agent\n              call: \"flume-monitoring.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: flume-collection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Flume log collection monitoring.\"\n      tools:\n        - name: get-flume-agent-metrics\n          description: Get all metrics for Apache Flume agent components (sources, channels, sinks)\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flume-monitoring.get-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"

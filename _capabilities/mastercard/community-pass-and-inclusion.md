@@ -19,27 +19,27 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process a community pass payment
-- digital identity
-- process payment
-- payments
-- process community payment
-- open banking
-- create digital identity
 - create a digital identity in the community pass ecosystem
-- financial inclusion
-- verify a digital identity
-- community pass
-- fraud detection
-- process a payment in the community pass ecosystem
-- credit cards
-- create identity
-- community pass payments
-- create a digital identity
-- financial services
-- mastercard
-- digital identity management
+- process community payment
 - verify digital identity
+- create a digital identity
+- community pass payments
+- process payment
+- fraud detection
+- community pass
+- digital identity management
+- financial inclusion
+- financial services
+- create digital identity
+- process a payment in the community pass ecosystem
+- create identity
+- digital identity
+- payments
+- open banking
+- process a community pass payment
+- verify a digital identity
+- credit cards
+- mastercard
 slug: community-pass-and-inclusion
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Community Pass and Financial Inclusion\"\n  description: \"Unified workflow for development organizations and financial inclusion teams to manage digital identities, process payments, and deliver services through the Community Pass ecosystem in underserved communities.\"\n  tags:\n    - Mastercard\n    - Community Pass\n    - Financial Inclusion\n    - Digital Identity\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: community-pass-identity\n      location: ./shared/community-pass-identity.yaml\n    - import: community-pass-payments\n      location: ./shared/community-pass-payments.yaml\n\n  exposes:\n    - type: rest\n      port: 8089\n      namespace: community-pass-api\n      description: \"Unified REST API for Community\
   \ Pass and financial inclusion.\"\n      resources:\n        - path: /v1/identities\n          name: identities\n          description: \"Digital identity management\"\n          operations:\n            - method: POST\n              name: create-identity\n              description: \"Create a digital identity\"\n              call: \"community-pass-identity.create-identity\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description: \"Community Pass payments\"\n          operations:\n            - method: POST\n              name: process-payment\n              description: \"Process a Community Pass payment\"\n              call: \"community-pass-payments.process-payment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9099\n      namespace: community-pass-mcp\n      transport: http\n\

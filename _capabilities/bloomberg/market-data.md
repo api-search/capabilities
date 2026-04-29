@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- business intelligence
-- field discovery.
-- request reference data.
-- request historical data.
-- analytics
-- reference data queries.
-- intraday bar request
-- subscribe market vwap
-- request raw intraday tick data for a security.
 - search for fields.
-- reference data request
-- news
-- request intraday bars.
-- data license
-- transaction cost analysis
-- historical data request
-- intraday bar queries.
-- bloomberg
-- intraday tick queries.
-- intraday tick request
-- field search request
-- historical data queries.
-- subscribe to streaming real-time market data.
-- subscribe to custom vwap stream.
-- request intraday ohlc bars for a security.
-- subscribe to interval-based real-time bars.
-- subscribe market data
 - search the bloomberg api data dictionary for fields.
+- analytics
+- intraday bar request
+- look up field metadata.
+- historical data request
+- request reference data for securities and fields.
+- trading
+- business intelligence
+- request intraday ticks.
+- intraday tick request
+- intraday tick queries.
+- subscribe to custom vwap stream.
+- request reference data.
+- financial services
+- request intraday ohlc bars for a security.
+- subscribe market data
+- request historical data.
+- news
+- quantitative analysis
+- field search request
+- data license
+- execution management
+- subscribe market bar
+- request raw intraday tick data for a security.
+- bloomberg
+- request end-of-day historical data for securities.
+- transaction cost analysis
+- reference data queries.
+- subscribe market vwap
+- enterprise
+- field discovery.
 - market data
 - field info request
-- financial services
-- trading
+- intraday bar queries.
+- reference data request
+- request intraday bars.
+- subscribe to interval-based real-time bars.
 - look up metadata for bloomberg field mnemonics.
-- look up field metadata.
-- quantitative analysis
-- request end-of-day historical data for securities.
-- request intraday ticks.
-- enterprise
-- subscribe market bar
-- execution management
-- request reference data for securities and fields.
+- subscribe to streaming real-time market data.
+- historical data queries.
 slug: market-data
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data\"\n  description: \"Unified workflow for accessing Bloomberg reference data, historical data, intraday analytics, and field discovery. Used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Services\n    - Quantitative Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_SESSION_TOKEN: BLOOMBERG_SESSION_TOKEN\n\ncapability:\n  consumes:\n    - import: blpapi\n      location: ./shared/blpapi-core.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data access.\"\n      resources:\n        - path: /v1/reference-data\n          name: reference-data\n          description: \"Reference data queries.\"\n          operations:\n            - method: POST\n              name: reference-data-request\n\
   \              description: \"Request reference data.\"\n              call: \"blpapi.reference-data-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/historical-data\n          name: historical-data\n          description: \"Historical data queries.\"\n          operations:\n            - method: POST\n              name: historical-data-request\n              description: \"Request historical data.\"\n              call: \"blpapi.historical-data-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/intraday-bars\n          name: intraday-bars\n          description: \"Intraday bar queries.\"\n          operations:\n            - method: POST\n              name: intraday-bar-request\n              description: \"Request intraday bars.\"\n              call: \"blpapi.intraday-bar-request\"\n              outputParameters:\n     \

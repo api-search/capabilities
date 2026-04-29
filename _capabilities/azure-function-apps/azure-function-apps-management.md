@@ -15,25 +15,25 @@ personas: []
 provider_name: Azure Function Apps
 provider_slug: azure-function-apps
 search_terms:
-- list functions
-- azure
-- list all resources
-- list functionapp resources
-- list function resources
-- resource management
-- functions
-- list deployment resources
-- cloud
-- list deployments
-- faas
-- serverless
-- list configuration resources
-- azure resource management
-- management
-- list
 - compute
-- list configurations
+- list
+- faas
+- azure resource management
+- azure
+- list functionapp resources
+- resource management
 - list function apps
+- functions
+- list function resources
+- cloud
+- list all resources
+- list configurations
+- list functions
+- serverless
+- management
+- list deployments
+- list deployment resources
+- list configuration resources
 slug: azure-function-apps-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Function Apps Management\"\n  description: \"Workflow capability for managing Azure Function Apps resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-function-apps\n      location: ./shared/azure-function-apps.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: azure-function-apps-management-api\n      description: \"Unified REST API for Azure Function Apps management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description: \"List all resources\"\
   \n              call: \"azure-function-apps.list-function-apps\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9094\n      namespace: azure-function-apps-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Function Apps management.\"\n      tools:\n        - name: list-function-apps\n          description: \"List FunctionApp resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-function-apps.list-function-apps\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-functions\n          description: \"List Function resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n \
