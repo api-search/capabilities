@@ -38,49 +38,49 @@ personas: []
 provider_name: Apple Keynote
 provider_slug: apple-keynote
 search_terms:
-- individual creating presentations for training, education, or personal use
-- marketing team member creating brand presentations, pitch decks, and sales materials
-- add slide to presentation
-- slides
-- presentation lifecycle management
-- presentation export to different formats
-- presentations
-- lists all slides in a keynote presentation with their titles and layouts
-- exports a keynote presentation to pdf format with optional presenter notes
-- automation
-- creates a new keynote presentation with a specified title and optional theme
 - Marketing Professional
-- keynote
-- list slides
-- list presentation slides
-- creating, organizing, and managing keynote presentation documents
+- marketing team member creating brand presentations, pitch decks, and sales materials
 - list keynote presentations
-- end-to-end keynote presentation creation and management via icloud
+- export keynote to pdf
+- individual creating presentations for training, education, or personal use
+- Content Creator
 - iwork
-- themes, layouts, and visual styling of presentations
-- list all keynote presentations in icloud
+- export presentation
+- creating, organizing, and managing keynote presentation documents
+- list presentations
+- presentation lifecycle management
+- exports a keynote presentation to pdf format with optional presenter notes
+- keynote
+- creates a new keynote presentation with a specified title and optional theme
 - list available keynote themes
 - create keynote presentation
+- lists all available keynote themes and templates for new presentations
+- create presentation
+- design
+- themes, layouts, and visual styling of presentations
+- automation
+- add slide to presentation
+- apple
+- list keynote themes
+- end-to-end keynote presentation creation and management via icloud
+- slide management within presentations
+- productivity
+- adds a new slide to a keynote presentation at a specified position with a chosen layout
+- converting and sharing presentations in different formats
+- list themes
+- lists all slides in a keynote presentation with their titles and layouts
+- presentations
+- list slides in a presentation
+- create a new presentation with title and theme
+- list presentation slides
+- export a presentation to pdf, pptx, or images
+- list all keynote presentations in icloud
+- list slides
+- presentation export to different formats
 - icloud
 - available themes and templates
-- create a new presentation with title and theme
-- slide management within presentations
-- export keynote to pdf
-- list keynote themes
+- slides
 - lists all keynote presentations stored in the user's icloud account
-- converting and sharing presentations in different formats
-- productivity
-- list themes
-- design
-- list presentations
-- adds a new slide to a keynote presentation at a specified position with a chosen layout
-- export a presentation to pdf, pptx, or images
-- Content Creator
-- export presentation
-- create presentation
-- lists all available keynote themes and templates for new presentations
-- apple
-- list slides in a presentation
 slug: presentation-automation
 source_filename: presentation-automation.yaml
 source_heading: Capability Spec

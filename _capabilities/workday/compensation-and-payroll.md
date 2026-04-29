@@ -44,51 +44,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- request a one-time payment
-- benefits list elections
-- get a pay group by id
-- payroll get pay group
-- payroll list pay groups
-- payroll
-- payroll list pay slips
-- list all benefit plans
-- list benefit plans
-- cloud computing
-- compensation plans
-- enterprise software
-- submit a compensation change request
-- list compensation plans
-- comp list scorecards
-- benefits change
-- list pay groups
 - comp list plans
-- list compensation grades
-- comp request one time payment
-- benefits list dependents
-- list dependents
-- list all pay groups
-- benefits list plans
-- comp list grades
-- list benefit elections
-- get pay group details
-- benefit plans
-- get eligible benefit plans for a worker
-- benefits
-- payroll get pay group details
-- list pay slips
-- hcm
-- financial management
+- list all benefit plans
 - list compensation scorecards
+- list compensation grades
+- workday
+- submit a compensation change request
+- payroll list pay slips
+- cloud computing
+- comp list scorecards
+- list all pay groups
+- comp request change
+- enterprise software
+- payroll list pay groups
+- get a pay group by id
+- payroll list inputs
+- benefit plans
+- saas
+- request a one-time payment
+- hcm
+- benefits
+- list benefit plans
+- list compensation plans
+- compensation
 - list payroll inputs
 - benefits get eligible plans
+- benefits list elections
+- benefits list dependents
+- benefits change
 - pay groups
-- list plans
-- payroll list inputs
-- saas
-- workday
+- financial management
+- list pay groups
+- list benefit elections
+- payroll
+- payroll get pay group details
+- list pay slips
+- compensation plans
+- payroll get pay group
 - submit a benefits change request
-- comp request change
-- compensation
+- get pay group details
+- list dependents
+- comp request one time payment
+- benefits list plans
+- get eligible benefit plans for a worker
+- list plans
+- comp list grades
 slug: compensation-and-payroll
 source_filename: compensation-and-payroll.yaml
 source_heading: Capability Spec

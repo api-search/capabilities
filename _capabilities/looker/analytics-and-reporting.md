@@ -70,63 +70,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- search looks
-- get user
-- business intelligence
-- get dashboard
-- dashboards
-- update dashboard
-- delete dashboard
-- look management.
-- create query
-- run a look and return results.
-- individual query operations.
-- create a new user.
-- get user details.
-- delete a look.
-- update user
-- get dashboard details.
-- list dashboards
-- list all users.
-- analytics
-- list all looks.
-- query management.
-- get look
-- data visualization
-- list users
-- get query
-- list all dashboards.
-- looker
-- update look
 - list looks
+- update dashboard
+- create a new user.
 - bi platform
-- create a new dashboard.
-- delete user
-- create dashboard
-- dashboard management.
-- create user
-- user management.
-- list all saved looks.
-- run query
-- update a look.
-- create a query.
-- get query details.
 - get look details.
-- update a user.
-- individual dashboard management.
-- delete a user.
-- delete a dashboard.
-- search for dashboards.
-- create a dashboard.
-- run look
-- search for looks by title.
-- search dashboards
-- delete look
+- looker
 - create a user.
-- individual look management.
+- run a look and return results.
+- query management.
+- list users
+- search for dashboards.
+- delete a look.
+- create query
+- data visualization
+- get user
+- get look
 - update a dashboard.
-- data analytics
+- update a user.
+- delete dashboard
+- search dashboards
+- delete user
+- delete look
+- get query details.
+- business intelligence
+- search looks
+- list all looks.
 - run a saved query.
+- run query
+- individual look management.
+- individual query operations.
+- analytics
+- create a query.
+- get user details.
+- list all users.
+- dashboard management.
+- update a look.
+- create user
+- list all dashboards.
+- get query
+- individual dashboard management.
+- create a new dashboard.
+- search for looks by title.
+- run look
+- delete a user.
+- user management.
+- get dashboard details.
+- look management.
+- create dashboard
+- dashboards
+- create a dashboard.
+- get dashboard
+- data analytics
+- update look
+- list dashboards
+- list all saved looks.
+- update user
+- delete a dashboard.
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

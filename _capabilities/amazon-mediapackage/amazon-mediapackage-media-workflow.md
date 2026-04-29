@@ -14,34 +14,34 @@ personas: []
 provider_name: Amazon MediaPackage
 provider_slug: amazon-mediapackage
 search_terms:
-- broadcasting
-- Media Developer
-- engineer managing broadcast media workflows
-- createharvestjob
-- create origin endpoint
-- workflow
-- createoriginendpoint
-- listoriginendpoints
-- list origin endpoints
-- configurelogs
-- aws media processing and delivery
-- list channels
-- aws
-- create harvest job
-- manage media processing jobs
-- media
-- amazon mediapackage media processing workflow
-- list jobs
-- list harvest jobs
-- media processing
 - listchannels
-- developer building media processing applications
+- create harvest job
+- list jobs
+- listoriginendpoints
+- workflow
 - describechannel
+- createoriginendpoint
+- list origin endpoints
+- aws
+- media processing
+- developer building media processing applications
 - create channel
+- Media Developer
+- createharvestjob
+- amazon mediapackage media processing workflow
+- configurelogs
+- media
+- aws media processing and delivery
 - configure logs
+- list channels
 - createchannel
+- create origin endpoint
 - describe channel
+- manage media processing jobs
+- broadcasting
 - Broadcast Engineer
+- list harvest jobs
+- engineer managing broadcast media workflows
 - listharvestjobs
 slug: amazon-mediapackage-media-workflow
 source_filename: amazon-mediapackage-media-workflow.yaml

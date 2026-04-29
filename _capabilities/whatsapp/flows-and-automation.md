@@ -60,54 +60,54 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- deletes a draft flow.
-- lists all flows for a whatsapp business account.
-- list flows
-- lists webhook subscriptions.
-- lists all flows for a waba.
-- deprecate flow
-- individual flow management.
-- webhook subscription management.
-- subscribe app
-- automation
-- upload flow json
-- flows
-- unsubscribe app
-- publishes a draft flow.
-- lists all apps subscribed to webhook events for a waba.
-- creates a new interactive flow. supports appointment booking, surveys, lead capture, and other guided experiences.
-- get flow assets
-- retrieves flow assets.
-- retrieves details about a specific flow including status, categories, and validation errors.
-- updates a draft flow. only draft flows can be updated; published flows must be cloned.
-- list subscribed apps
-- creates a new flow.
-- retrieves the flow json assets including download urls.
-- delete flow
 - unsubscribes the current app from webhook events.
-- conversational design
-- create flow
-- updates a draft flow.
-- uploads flow json definition.
+- delete flow
+- list subscribed apps
+- lists webhook subscriptions.
 - update flow
-- deletes a draft flow. only draft flows can be deleted; published flows must be deprecated.
-- retrieves details about a flow.
+- lists all flows for a whatsapp business account.
+- deprecates a published flow. deprecated flows remain in history but cannot be sent to customers.
+- retrieves details about a specific flow including status, categories, and validation errors.
 - subscribes app to webhooks.
-- webhooks
-- publish a flow.
+- deletes a draft flow.
+- updates a draft flow. only draft flows can be updated; published flows must be cloned.
 - unsubscribes app from webhooks.
+- webhooks
+- publishes a draft flow, making it available for use in messages. requires valid flow json with no errors.
+- creates a new flow.
+- deprecates a published flow.
+- updates a draft flow.
 - flow management.
+- flow json assets.
+- create flow
+- uploads flow json definition.
+- lists all apps subscribed to webhook events for a waba.
+- retrieves flow assets.
+- subscribes the current app to receive webhook events for a waba.
+- conversational design
+- subscribe app
+- uploads or replaces the flow json definition file. the file is validated on upload.
+- automation
+- interactive experiences
+- upload flow json
+- lists all flows for a waba.
+- publish flow
+- creates a new interactive flow. supports appointment booking, surveys, lead capture, and other guided experiences.
+- flows
+- webhook subscription management.
 - get flow
 - whatsapp
-- deprecates a published flow. deprecated flows remain in history but cannot be sent to customers.
-- deprecates a published flow.
-- interactive experiences
-- publish flow
+- list flows
 - deprecate a flow.
-- subscribes the current app to receive webhook events for a waba.
-- flow json assets.
-- uploads or replaces the flow json definition file. the file is validated on upload.
-- publishes a draft flow, making it available for use in messages. requires valid flow json with no errors.
+- deprecate flow
+- get flow assets
+- publishes a draft flow.
+- deletes a draft flow. only draft flows can be deleted; published flows must be deprecated.
+- retrieves details about a flow.
+- publish a flow.
+- unsubscribe app
+- individual flow management.
+- retrieves the flow json assets including download urls.
 slug: flows-and-automation
 source_filename: flows-and-automation.yaml
 source_heading: Capability Spec

@@ -30,35 +30,35 @@ personas: []
 provider_name: Azure Container Apps
 provider_slug: azure-container-apps
 search_terms:
-- kubernetes
-- list all container apps
-- list container apps
-- managed environment management
-- list all managed environments
-- serverless compute and job execution
-- create or update an azure container app
-- microservices
-- list environments
-- create container app
-- container app management
 - DevOps Engineer
-- serverless
-- devops
-- container app deployment and management
 - dapr
-- deploys and manages containerized application workloads
+- list all managed container app environments
 - containers
-- manages the container infrastructure and environments
 - list jobs
-- Platform Engineer
-- delete an azure container app
 - delete container app
 - list all azure container apps in a subscription
+- serverless
+- kubernetes
 - azure
-- list all container app jobs
-- manage containerized applications, environments, and jobs
+- list all container apps
+- container app management
 - container app job management
-- list all managed container app environments
+- microservices
+- list environments
+- container app deployment and management
+- manages the container infrastructure and environments
+- managed environment management
+- devops
+- Platform Engineer
+- list all container app jobs
+- deploys and manages containerized application workloads
+- serverless compute and job execution
+- list container apps
+- create container app
+- list all managed environments
+- delete an azure container app
+- manage containerized applications, environments, and jobs
+- create or update an azure container app
 slug: container-apps-management
 source_filename: container-apps-management.yaml
 source_heading: Capability Spec

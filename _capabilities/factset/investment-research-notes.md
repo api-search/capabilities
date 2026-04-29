@@ -26,32 +26,32 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get irn config
-- list irn contacts
-- investment analytics
 - research notes
-- list irn notes.
-- irn note management.
-- list irn contacts.
-- list irn meetings
-- list contacts
-- list irn symbols
-- list irn notes
-- irn meeting management.
-- list irn meetings.
-- portfolio analytics
 - crm
-- financial
+- list irn notes.
+- list irn meetings.
+- irn meeting management.
+- list irn contacts
 - market data
-- get irn configuration.
-- list notes
-- research
+- list contacts
 - factset
-- irn contact management.
-- list meetings
-- list irn custom symbols.
+- portfolio analytics
+- list irn contacts.
+- list notes
+- list irn symbols
+- irn note management.
+- list irn meetings
 - irn
+- list meetings
+- financial
 - financial data
+- irn contact management.
+- get irn configuration.
+- research
+- list irn notes
+- investment analytics
+- list irn custom symbols.
+- get irn config
 slug: investment-research-notes
 source_filename: investment-research-notes.yaml
 source_heading: Capability Spec

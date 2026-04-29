@@ -34,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- list rows in a table.
-- business users automating excel-based reporting.
-- create a new worksheet.
-- update range
-- analysts working with excel workbooks for data processing.
-- list all worksheets.
-- read cell values from a specified range.
-- list charts
-- add a row to a table.
-- automation
-- Data Analyst
-- Business Analyst
-- manage worksheets.
-- create a new worksheet in the workbook.
-- add a new data row to an excel table.
-- microsoft
-- get a cell range.
-- microsoft 365
-- data management
-- microsoft excel
-- list charts.
-- cell range operations.
-- list all worksheets in the workbook.
-- spreadsheet automation
-- update cell values in a specified range.
-- list all charts in a worksheet.
-- data analysis
-- office
-- create worksheet
-- list all rows in an excel table.
-- get range
-- list worksheets
 - add table row
-- manage table rows.
-- list table rows
-- spreadsheets
-- automate excel workbook operations.
+- update range
+- add a row to a table.
+- cell range operations.
+- spreadsheet automation
+- list all rows in an excel table.
+- analysts working with excel workbooks for data processing.
+- list all charts in a worksheet.
+- manage worksheets.
+- add a new data row to an excel table.
 - chart operations.
+- Business Analyst
+- create a new worksheet in the workbook.
+- create worksheet
+- get range
+- list charts.
+- data management
+- create a new worksheet.
+- automation
+- list worksheets
+- data analysis
+- manage table rows.
+- spreadsheets
+- office
+- automate excel workbook operations.
+- business users automating excel-based reporting.
+- update cell values in a specified range.
+- list all worksheets in the workbook.
+- list table rows
+- Data Analyst
+- microsoft excel
+- get a cell range.
+- list all worksheets.
+- microsoft
+- list charts
+- microsoft 365
+- read cell values from a specified range.
+- list rows in a table.
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

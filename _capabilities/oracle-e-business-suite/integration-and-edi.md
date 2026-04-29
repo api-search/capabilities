@@ -27,50 +27,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- isg invoke rest method
-- extract an outbound edi transaction.
-- authentication.
-- soa gateway
-- initialize responsibility context.
-- retrieve inbound edi transactions.
-- isg logout
-- list trading partners.
-- isg initialize
-- get inbound transactions
-- oracle
-- inbound edi transactions.
-- end the current session.
-- edi get trading partner by id
-- list outbound transactions.
-- retrieve outbound edi transactions.
-- erp
-- isg get service wadl
-- edi
 - authenticate and obtain session token.
-- business applications
-- enterprise
-- retrieve code conversion mappings.
-- get trading partners
-- integration
-- invoke a rest method on a service.
-- edi get trading partners
-- get trading partner by id.
+- edi get inbound transactions
+- e-business suite
+- soa gateway
+- edi extract outbound transaction
 - isg login
+- inbound edi transactions.
 - get wadl for a rest service.
-- edi get outbound transactions
+- login
+- authentication.
+- retrieve inbound edi transactions.
+- get trading partners
+- isg invoke rest method
 - list inbound transactions.
 - import an inbound edi transaction.
-- e-business suite
-- login
-- edi import inbound transaction
+- edi get trading partner by id
+- enterprise
+- integration
+- get trading partner by id.
+- isg initialize
+- trading partner management.
+- initialize responsibility context.
+- invoke a rest method on a service.
+- erp
 - edi get code conversions
 - retrieve trading partners.
-- edi get inbound transactions
-- trading partner management.
-- authenticate.
-- edi extract outbound transaction
-- get outbound transactions
 - outbound edi transactions.
+- get inbound transactions
+- extract an outbound edi transaction.
+- edi
+- oracle
+- get outbound transactions
+- edi get outbound transactions
+- isg logout
+- authenticate.
+- edi import inbound transaction
+- isg get service wadl
+- retrieve code conversion mappings.
+- business applications
+- list trading partners.
+- retrieve outbound edi transactions.
+- list outbound transactions.
+- edi get trading partners
+- end the current session.
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml
 source_heading: Capability Spec

@@ -68,49 +68,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- list benefit enrollments
-- get job details
 - candidate applications
+- job posting details
+- list payroll runs
+- campus solutions.
+- retrieve employee records with optional department and status filters.
+- list employees
+- retrieve details for a specific employee.
+- hr approval requests
+- enterprise software
+- crm
+- individual approval operations
 - search available job postings.
 - human capital management.
-- payroll
-- job postings
-- enterprise software
-- retrieve payroll run history and status.
-- recruiting
-- talent management
-- campus solutions
-- list payroll runs
-- retrieve employee records with optional department and status filters.
-- erp
-- search jobs
-- crm
-- financial and supply chain management.
-- campus solutions.
-- process approval
 - human resources
-- retrieve details for a specific job posting.
-- hr approval requests
-- submit a candidate application for a job posting.
-- supply chain management
-- list pending approvals
-- payroll run history and status
 - hcm
-- retrieve pending hr approval requests.
-- peopletools platform services.
-- retrieve details for a specific employee.
-- financial management
-- retrieve benefit enrollment records.
-- peoplesoft
-- get employee
-- job posting details
-- submit application
-- list employees
+- process approval
 - employee records
-- approve, deny, or push back an hr approval request.
+- retrieve benefit enrollment records.
+- recruiting
+- retrieve payroll run history and status.
+- erp
 - benefit enrollment records
+- get job details
+- financial management
+- retrieve details for a specific job posting.
+- financial and supply chain management.
+- list pending approvals
+- supply chain management
+- submit a candidate application for a job posting.
+- retrieve pending hr approval requests.
+- payroll
 - individual employee details
-- individual approval operations
+- campus solutions
+- payroll run history and status
+- peopletools platform services.
+- talent management
+- approve, deny, or push back an hr approval request.
+- list benefit enrollments
+- job postings
+- peoplesoft
+- submit application
+- get employee
+- search jobs
 slug: human-resources
 source_filename: human-resources.yaml
 source_heading: Capability Spec

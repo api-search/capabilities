@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- create a new beta group.
-- list all builds.
-- list all beta groups.
-- list beta testers
-- list all apps.
-- apple
 - update a beta group.
-- read beta tester
-- ios
-- get build details.
-- beta group management.
-- read app
-- beta tester management.
-- list all apps in app store connect.
+- list apps
+- testflight
 - read build
-- remove a beta tester.
-- build management.
-- list beta testers.
+- technology
+- list all builds.
 - macos
 - delete beta group
-- modify app
-- update build information.
-- add a new beta tester.
-- read beta group
-- app management
-- modify beta group
-- testflight
-- list all beta testers.
-- list groups
-- create beta tester
-- technology
 - modify build
-- delete beta tester
-- get beta tester details.
-- create tester
-- list apps
-- get beta group details.
-- create group
-- create a beta group.
-- update app metadata.
-- list beta groups
-- create beta group
-- list testers
-- list builds
-- mobile
-- delete a beta group.
-- developer
-- app management.
+- list beta testers.
 - get details of a specific app.
-- app store
-- add a beta tester.
+- beta tester management.
+- list all beta testers.
 - list beta groups.
+- get beta tester details.
+- list all apps.
+- remove a beta tester.
+- app management.
+- list testers
+- add a new beta tester.
+- create tester
+- list all beta groups.
+- delete beta tester
+- update build information.
+- get beta group details.
+- list beta groups
+- delete a beta group.
+- beta group management.
+- create beta tester
+- app management
+- apple
+- modify beta group
+- list all apps in app store connect.
+- list beta testers
+- add a beta tester.
+- create a new beta group.
+- get build details.
+- read beta tester
+- create beta group
+- read app
+- mobile
+- read beta group
+- create group
+- list groups
+- update app metadata.
+- ios
+- create a beta group.
+- developer
+- list builds
+- app store
+- build management.
+- modify app
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

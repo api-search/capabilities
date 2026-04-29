@@ -10,11 +10,11 @@ provider_name: Cloudability
 provider_slug: cloudability
 search_terms:
 - cloud cost management
-- multi-cloud
 - finops
-- reporting
 - recommendations
+- multi-cloud
 - cost optimization
+- reporting
 slug: cloud-cost-finops
 source_filename: cloud-cost-finops.yaml
 source_heading: Capability Spec

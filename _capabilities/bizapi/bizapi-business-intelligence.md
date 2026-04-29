@@ -19,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- crm enrichment
+- search for business entities and retrieve firmographic data.
 - uses firmographic data to qualify leads and enrich crm account records
-- business intelligence
-- sales enablement
-- appending firmographic data to crm records for sales and marketing
 - Marketing Analyst
+- sales enablement
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- Data Engineer
-- Sales Representative
-- naics
-- sic
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- firmographic data
-- search companies
-- test search returning fake data without consuming api credits.
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
 - crm
 - firmographic data retrieval and company lookup
-- company data
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- segments and scores prospects using naics, sic, and financial data
+- firmographic data
+- search companies
+- business intelligence
 - search companies test
-- search for business entities and retrieve firmographic data.
+- sic
+- Sales Representative
+- Data Engineer
 - test company search returning fake firmographic data.
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 - search business entities by name, address, phone, or url.
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- appending firmographic data to crm records for sales and marketing
+- company data
+- naics
+- crm enrichment
+- business intelligence and crm enrichment workflow combining company search and test endpoints
+- segments and scores prospects using naics, sic, and financial data
+- test search returning fake data without consuming api credits.
 slug: bizapi-business-intelligence
 source_filename: bizapi-business-intelligence.yaml
 source_heading: Capability Spec

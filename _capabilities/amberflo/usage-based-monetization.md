@@ -43,53 +43,53 @@ personas: []
 provider_name: Amberflo
 provider_slug: amberflo
 search_terms:
-- metering
-- create a new customer account
-- create a new meter definition to track usage events
-- monetization
+- finops
+- ingest meter events to track usage
 - list customers
-- end-to-end workflow combining metering and billing apis
-- ai and cloud cost governance
 - manages pricing models and billing configuration
-- list all meter definitions for usage tracking
-- ingest usage events for metering
-- query aggregated usage data for a meter
-- Finance Team
-- list invoices
-- amberflo
-- customer billing and subscription management
-- ingest events
-- retrieve customer invoices
-- manage meter definitions for tracking usage
-- create a prepaid credit order for a customer
-- ingest meter events
-- list all meter definitions
-- usage-based billing
-- create a new meter definition
-- create customer
-- Product Manager
-- usage event tracking and aggregation
-- manage prepaid credit orders
+- query aggregated usage data
 - billing
 - list meter definitions
-- manage customer accounts
-- integrates metering sdk and ingests usage events
-- list invoices for a specific customer
-- query usage
-- list all customers
-- API Developer
-- create prepaid order
-- list invoices for a customer
+- metering
+- list all meter definitions
 - list all customer accounts in amberflo
-- finops
-- create meter definition
-- monitors revenue, invoices, and billing analytics
-- create a prepaid order for a customer
+- list all meter definitions for usage tracking
+- query aggregated usage data for a meter
+- API Developer
 - ai cost management
+- amberflo
+- ingest usage events for metering
+- retrieve customer invoices
+- create meter definition
+- integrates metering sdk and ingests usage events
+- monitors revenue, invoices, and billing analytics
+- create a prepaid credit order for a customer
+- create a prepaid order for a customer
+- manage meter definitions for tracking usage
+- list invoices
+- list all customers
+- ai and cloud cost governance
+- end-to-end workflow combining metering and billing apis
+- query usage
+- list invoices for a specific customer
+- create prepaid order
+- manage customer accounts
+- create a new meter definition
+- create customer
 - query usage data
+- monetization
+- create a new customer account
+- ingest meter events
+- manage prepaid credit orders
 - create a new customer account in amberflo
-- query aggregated usage data
-- ingest meter events to track usage
+- Product Manager
+- customer billing and subscription management
+- list invoices for a customer
+- Finance Team
+- usage event tracking and aggregation
+- create a new meter definition to track usage events
+- ingest events
+- usage-based billing
 slug: usage-based-monetization
 source_filename: usage-based-monetization.yaml
 source_heading: Capability Spec

@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- amdocs
-- list subscriptions
-- customer subscription management
-- list customers
-- retrieve billing invoices for a customer
-- 5g
-- list telecom customer accounts
-- list invoices
-- oss
-- product and service catalog
-- browse the service catalog and available plans
-- unified bss workflow for customer onboarding, billing, and service management
-- manages invoicing, payments, and revenue assurance
-- mvno
-- bss
-- add a service subscription to a customer account
-- browse available products and plans
-- create customer
-- list all customer accounts
-- telecom customer account management
-- billing
-- create subscription
-- manages telco bss operations and system configuration
-- telecom
-- customer billing invoices
 - list service subscriptions for a customer
+- retrieve billing invoices for a customer
+- list telecom customer accounts
+- onboard a new customer
+- bss
+- billing
+- list customers
+- customer subscription management
+- telecom customer account management
+- handles customer inquiries and account management
+- product and service catalog
+- amdocs
+- onboard a new telecom customer
+- unified bss workflow for customer onboarding, billing, and service management
+- customer billing invoices
+- list all customer accounts
+- Billing Team
+- add a service subscription
+- saas
+- oss
 - customer management
 - BSS Operator
-- handles customer inquiries and account management
-- add a service subscription
-- onboard a new customer
-- Billing Team
-- onboard a new telecom customer
-- saas
-- list subscriptions for a customer
+- list invoices
+- telecom
+- 5g
+- list subscriptions
+- browse available products and plans
+- browse the service catalog and available plans
 - list products
+- manages telco bss operations and system configuration
+- list subscriptions for a customer
+- create customer
+- mvno
+- add a service subscription to a customer account
+- create subscription
 - list invoices for a customer
 - Customer Care Agent
+- manages invoicing, payments, and revenue assurance
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

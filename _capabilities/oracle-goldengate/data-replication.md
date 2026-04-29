@@ -57,72 +57,72 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- distribution path management
-- list credential domains
-- service health
-- list all data streams
-- list credential store domains
-- core get extract
-- individual extract operations
-- list extracts
-- core issue replicat command
-- list all replicat processes
-- execute a ggsci-style goldengate command
-- execute command
-- core list extracts
-- core create extract
-- create extract
-- data integration
-- delete extract
-- get service health
-- list all big data replicat processes
-- get a big data replicat process
-- create a new extract process
-- list all extract processes from the core goldengate deployment
-- list data distribution paths
-- issue a command (start, stop, kill) to an extract
-- list data target types
-- bigdata get replicat
-- create a new data stream for downstream distribution
-- create a new replicat process
-- real-time replication
-- list available big data target types
-- available big data target types
-- data replication
-- get data stream
-- big data replicat processes
-- core issue extract command
-- cdc
-- bigdata list replicats
-- core get replicat
-- list replicats
-- get extract
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- core list replicats
-- extract process management across core and big data deployments
-- delete an extract process
-- data synchronization
-- get service health details
-- create data stream
-- replicat process management
-- get details of a specific replicat process
-- get configuration of a specific data stream
-- issue a command to a replicat process
-- credential store management
-- list distribution paths
-- list all configured data streams
 - core create replicat
-- oracle goldengate
-- get details of a specific extract process
-- list data streams
-- database
-- data stream management
-- list all extract processes
-- get performance metrics for all running processes
-- get a specific extract process
+- get data stream
 - list process metrics
-- list big data replicats
+- delete an extract process
+- list data streams
+- delete extract
+- core issue extract command
+- get details of a specific extract process
+- cdc
+- replicat process management
+- real-time replication
+- oracle goldengate
+- create data stream
+- list distribution paths
+- core get extract
+- core issue replicat command
+- list all big data replicat processes
 - enterprise
+- data stream management
+- core get replicat
+- list data target types
+- get service health details
+- list all extract processes from the core goldengate deployment
+- issue a command (start, stop, kill) to an extract
+- list credential domains
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- core list extracts
+- list credential store domains
+- list extracts
+- data replication
+- list replicats
+- service health
+- credential store management
+- create extract
+- bigdata list replicats
+- create a new extract process
+- get details of a specific replicat process
+- data synchronization
+- list all extract processes
+- list big data replicats
+- core list replicats
+- distribution path management
+- get a big data replicat process
+- create a new data stream for downstream distribution
+- list available big data target types
+- list all replicat processes
+- data integration
+- big data replicat processes
+- list data distribution paths
+- execute a ggsci-style goldengate command
+- available big data target types
+- list all configured data streams
+- create a new replicat process
+- extract process management across core and big data deployments
+- get extract
+- get performance metrics for all running processes
+- list all data streams
+- bigdata get replicat
+- issue a command to a replicat process
+- get service health
+- get configuration of a specific data stream
+- core create extract
+- execute command
+- get a specific extract process
+- database
+- individual extract operations
 slug: data-replication
 source_filename: data-replication.yaml
 source_heading: Capability Spec

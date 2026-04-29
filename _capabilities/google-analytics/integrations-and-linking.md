@@ -52,82 +52,82 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- connects advertising platforms and implements server-side tracking.
-- create a measurement protocol secret for server-side tracking
-- delete a google ads integration link
-- analytics administrator
-- marketing ops
-- compliance team
-- list firebase links
-- manages data privacy compliance including gdpr deletion requests.
-- managing data privacy, deletion, and access auditing.
-- list google ads links on a ga4 property
-- integrations
-- create a google ads link
-- reporting
-- create a firebase link
-- list google ads links
-- delete a google ads link
-- marketing team
-- ingesting events from servers, apps, and offline sources.
 - segmenting and exporting user populations for analysis and activation.
-- user data deletion, access auditing, and data collection acknowledgement.
-- create a measurement protocol secret
-- linking
-- get a measurement protocol secret
-- data protection engineer
-- get a specific measurement protocol secret
-- connecting ga4 with advertising, app, and measurement platforms.
-- get details of a specific measurement protocol secret
-- create measurement protocol secret
-- audits data access and monitors configuration changes.
-- builds automated reporting pipelines and dashboards from ga4 data.
-- metrics
-- analytics
-- google analytics
-- server-side event tracking with data stream and secret management.
-- implements privacy-compliant data handling and deletion workflows.
-- list measurement protocol secrets for a data stream
-- manage firebase integration links
-- manage measurement protocol secrets
 - backend engineer
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- measures campaign performance, segments audiences, and tracks conversions.
-- update a google ads link configuration
-- create a google ads integration link on a ga4 property
-- web analytics
-- create google ads link
-- run standard, realtime, pivot, and batch reports with data access auditing.
 - google
-- attribution
-- manage a specific google ads link
-- delete google ads link
-- sets up and maintains ga4 accounts, properties, and configurations.
-- update a google ads link
-- update google ads link
-- implements server-side event tracking and offline data collection.
-- list firebase links on a property
-- list google ads links on a property
-- google ads
-- firebase
-- list measurement protocol secrets
-- get measurement protocol secret
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- integrates ga4 with other platforms and manages infrastructure.
-- data analyst
 - privacy officer
-- extracts insights from ga4 data through reports and explorations.
-- machine learning
-- manage google ads integration links
-- platform engineer
-- list firebase links on a ga4 property
-- create, export, and query ga4 audience segments.
-- querying and analyzing ga4 event data through various report types.
-- data
+- attribution
 - create firebase link
+- create a measurement protocol secret for server-side tracking
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- manages data privacy compliance including gdpr deletion requests.
+- manage measurement protocol secrets
+- google analytics
+- list firebase links on a property
+- list google ads links on a ga4 property
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- marketing ops
+- integrations
+- list firebase links on a ga4 property
+- update a google ads link
+- user data deletion, access auditing, and data collection acknowledgement.
+- sets up and maintains ga4 accounts, properties, and configurations.
+- google ads
+- reporting
+- machine learning
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- delete google ads link
+- data analyst
+- create google ads link
+- querying and analyzing ga4 event data through various report types.
+- linking
+- implements privacy-compliant data handling and deletion workflows.
 - setting up and maintaining ga4 account and property structure.
-- bi engineer
+- list google ads links on a property
+- create a measurement protocol secret
+- list measurement protocol secrets for a data stream
+- manage google ads integration links
+- data protection engineer
+- connects advertising platforms and implements server-side tracking.
+- implements server-side event tracking and offline data collection.
+- create a firebase link
+- ingesting events from servers, apps, and offline sources.
+- managing data privacy, deletion, and access auditing.
+- list google ads links
 - create a firebase integration link on a ga4 property
+- analytics
+- analytics administrator
+- create, export, and query ga4 audience segments.
+- extracts insights from ga4 data through reports and explorations.
+- builds automated reporting pipelines and dashboards from ga4 data.
+- update google ads link
+- manage firebase integration links
+- connecting ga4 with advertising, app, and measurement platforms.
+- create a google ads link
+- create measurement protocol secret
+- bi engineer
+- compliance team
+- marketing team
+- get a specific measurement protocol secret
+- update a google ads link configuration
+- data
+- measures campaign performance, segments audiences, and tracks conversions.
+- delete a google ads link
+- get a measurement protocol secret
+- audits data access and monitors configuration changes.
+- metrics
+- get details of a specific measurement protocol secret
+- server-side event tracking with data stream and secret management.
+- web analytics
+- integrates ga4 with other platforms and manages infrastructure.
+- list measurement protocol secrets
+- list firebase links
+- firebase
+- delete a google ads integration link
+- platform engineer
+- create a google ads integration link on a ga4 property
+- get measurement protocol secret
+- manage a specific google ads link
 slug: integrations-and-linking
 source_filename: integrations-and-linking.yaml
 source_heading: Capability Spec

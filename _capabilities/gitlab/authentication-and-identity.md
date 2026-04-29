@@ -42,38 +42,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- exchange token
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- code
-- oauth token exchange and creation.
-- get information about the current oauth access token including scopes and expiration.
-- authenticated user profile information.
-- token introspection and validation.
 - get information about the current access token.
-- get profile information about the currently authenticated user.
-- exchange an authorization code, device code, or refresh token for an access token.
-- authorize device
-- device authorization grant flow for input-constrained devices.
-- initiate the device authorization grant flow.
-- revoke an existing oauth access or refresh token.
-- get profile information about the authenticated user.
-- token revocation.
-- authentication
 - initiate the device authorization grant flow for input-constrained devices.
-- identity
-- oauth
-- platform
-- revoke token
-- revoke an oauth access or refresh token.
-- tokens
-- gitlab
-- authorize oauth
-- source control
+- token introspection and validation.
+- token revocation.
+- get profile information about the currently authenticated user.
+- get profile information about the authenticated user.
 - get token info
-- software development
-- oauth 2.0 authorization code flow initiation.
-- get user info
 - initiate the oauth 2.0 authorization code flow.
+- identity
+- tokens
+- device authorization grant flow for input-constrained devices.
+- exchange an authorization code, device code, or refresh token for an access token.
+- authorize oauth
+- gitlab
+- revoke an existing oauth access or refresh token.
+- oauth 2.0 authorization code flow initiation.
+- oauth token exchange and creation.
+- initiate the device authorization grant flow.
+- platform
+- source control
+- oauth
+- authentication
+- code
+- revoke token
+- software development
+- authorize device
+- revoke an oauth access or refresh token.
+- authenticated user profile information.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get information about the current oauth access token including scopes and expiration.
+- get user info
+- exchange token
 slug: authentication-and-identity
 source_filename: authentication-and-identity.yaml
 source_heading: Capability Spec

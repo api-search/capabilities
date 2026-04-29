@@ -31,42 +31,42 @@ personas: []
 provider_name: Azure Kubernetes Service
 provider_slug: azure-kubernetes-service
 search_terms:
-- delete cluster
-- get details of an aks cluster
-- kubernetes
-- cluster lifecycle operations
-- list all aks managed clusters in a subscription
-- get agent pool details
-- stop a running aks cluster
-- create or update a cluster
 - list agent pools in a cluster
+- stop cluster
+- get cluster details
+- containers
 - list all managed clusters
 - single cluster operations
-- create or update an aks managed cluster
-- create or update cluster
-- get agent pool
-- list clusters
-- delete a cluster
-- devops
 - start a stopped aks cluster
-- get cluster
-- create or update agent pool
-- delete an agent pool from a cluster
-- get cluster details
-- delete agent pool
-- create or update an agent pool
+- list all aks managed clusters in a subscription
 - agent pool operations
-- stop cluster
-- start cluster
-- cloud
-- containers
-- cluster management
-- delete an aks managed cluster
-- get the upgrade profile for a cluster
-- azure
+- kubernetes
+- create or update an aks managed cluster
 - list agent pools
+- cluster lifecycle operations
+- azure
+- get details of an aks cluster
+- get the upgrade profile for a cluster
+- delete agent pool
 - orchestration
+- get agent pool details
+- delete an aks managed cluster
+- start cluster
+- get cluster
 - get upgrade profile
+- delete a cluster
+- stop a running aks cluster
+- create or update cluster
+- cluster management
+- devops
+- list clusters
+- delete an agent pool from a cluster
+- cloud
+- create or update agent pool
+- create or update an agent pool
+- create or update a cluster
+- get agent pool
+- delete cluster
 slug: cluster-management
 source_filename: cluster-management.yaml
 source_heading: Capability Spec

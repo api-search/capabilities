@@ -11,9 +11,9 @@ provider_slug: blobr
 search_terms:
 - advertising
 - marketing automation
-- ppc
-- google ads
 - ai agents
+- google ads
+- ppc
 slug: blobr-google-ads-ai
 source_filename: blobr-google-ads-ai.yaml
 source_heading: Capability Spec

@@ -20,22 +20,22 @@ provider_slug: cisco
 search_terms:
 - Network Admin
 - network administrators managing cisco infrastructure
-- security
-- list devices
-- list networks
-- network organizations
 - cisco
-- collaboration
-- sd-wan
-- networks
 - list meraki organizations
-- list organizations
-- network management
-- list devices in network
-- unified network management combining meraki and other cisco apis
-- networking
-- list networks in organization
+- collaboration
 - enterprise
+- unified network management combining meraki and other cisco apis
+- list networks in organization
+- list devices
+- network organizations
+- sd-wan
+- security
+- list organizations
+- list devices in network
+- networks
+- list networks
+- network management
+- networking
 slug: network-management
 source_filename: network-management.yaml
 source_heading: Capability Spec

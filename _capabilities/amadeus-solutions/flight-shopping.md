@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- booking
 - search available flights by origin, destination, and date.
+- flights
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- booking
+- search flights advanced
+- confirm flight price
+- price confirmation and validation before booking.
+- airlines
+- search flights
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- OTA Developer
+- confirm price
+- Travel Chatbot Developer
+- flight offer discovery and comparison.
 - travel technology
 - developer building online travel agency flight search and booking flows.
-- confirm price
-- search flights advanced
-- upsell, seat selection, and add-on services.
-- travel
-- confirm current price and availability.
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- search for available flight offers.
-- hotels
-- Travel Chatbot Developer
-- pricing
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- confirm flight price
-- OTA Developer
-- search flights
-- airlines
-- developer building conversational travel assistants for flight search.
-- price confirmation and validation before booking.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- complete flight shopping flow from search through price confirmation.
-- flight offer discovery and comparison.
-- shopping
-- flights
-- amadeus
 - search
+- travel
+- search for available flight offers.
+- developer building conversational travel assistants for flight search.
 - confirm pricing for a selected flight offer.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- upsell, seat selection, and add-on services.
+- confirm current price and availability.
+- pricing
+- shopping
 - gds
+- hotels
+- complete flight shopping flow from search through price confirmation.
+- amadeus
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

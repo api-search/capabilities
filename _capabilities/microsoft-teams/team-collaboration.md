@@ -43,53 +43,53 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- video conferencing
-- Team Lead
-- team management.
-- send a message to a channel.
-- create an online meeting.
-- developers building teams integrations and bots.
-- list channel messages
-- communication
-- create a meeting.
-- create online meeting
-- create a channel.
-- add a member to a team.
-- messaging.
-- create a team.
-- send a message.
-- list channels
-- meeting management.
-- microsoft 365
-- Developer
-- channel management.
-- create call
-- list messages from a channel.
-- list members.
-- microsoft teams
-- list team members
 - list joined teams.
-- list joined teams
-- IT Administrator
-- list channels.
-- team leads managing channels, members, and communication.
-- list all teams the user has joined.
-- create a new channel.
+- chat
 - member management.
-- list all members of a team.
-- add team member
-- productivity
-- initiate a call.
-- send channel message
+- Developer
+- developers building teams integrations and bots.
 - list channels in a team.
+- meeting management.
+- create a new channel.
+- create online meeting
+- initiate a call.
+- add a member to a team.
+- send a message to a channel.
+- communication
+- channel management.
+- create a channel.
+- list all teams the user has joined.
+- list messages from a channel.
+- list all members of a team.
+- list messages.
+- team management.
+- IT Administrator
+- messaging.
 - collaboration
 - create channel
-- it admins managing teams infrastructure and policies.
-- create team
-- manage teams collaboration workflows.
-- chat
+- send channel message
+- send a message.
+- create a meeting.
 - create a new team.
-- list messages.
+- productivity
+- list team members
+- create team
+- list members.
+- add team member
+- microsoft teams
+- create a team.
+- Team Lead
+- list joined teams
+- list channels
+- manage teams collaboration workflows.
+- video conferencing
+- create call
+- microsoft 365
+- list channel messages
+- list channels.
+- create an online meeting.
+- it admins managing teams infrastructure and policies.
+- team leads managing channels, members, and communication.
 slug: team-collaboration
 source_filename: team-collaboration.yaml
 source_heading: Capability Spec

@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- create a new gateway route.
-- kubernetes
-- API Gateway Administrator
-- list routes
-- engineers deploying and managing api gateway infrastructure.
-- list api consumers.
-- create consumer
-- create an api consumer.
-- list consumers
-- cloud native
-- list all gateway routes.
-- delete route
-- nginx
-- create route
-- list backend upstreams.
-- update route
-- list all apisix gateway routes.
-- authentication
-- apache
-- lua
-- delete an apisix route.
-- list all api consumers and their plugin configs.
 - update an existing apisix route.
-- create a new backend upstream with load balancing config.
-- apache apisix
-- create a new api consumer with authentication plugins.
-- traffic management
-- list upstreams
-- route, upstream, consumer, and ssl management workflow.
-- Platform Engineer
-- create upstream
-- configuration
-- list all backend upstream configurations.
-- create a new apisix route for traffic routing.
-- administrators configuring routes, consumers, and security policies.
+- create an api consumer.
 - api gateway
+- cloud native
+- configuration
+- route, upstream, consumer, and ssl management workflow.
+- kubernetes
+- list upstreams
+- create a new gateway route.
+- apache
 - create a backend upstream.
+- apache apisix
+- create a new backend upstream with load balancing config.
+- list all apisix gateway routes.
+- create upstream
+- list all api consumers and their plugin configs.
+- create a new apisix route for traffic routing.
+- update route
 - open source
+- traffic management
+- delete route
+- list routes
+- create consumer
+- list consumers
+- delete an apisix route.
+- create route
+- administrators configuring routes, consumers, and security policies.
+- Platform Engineer
+- list all gateway routes.
+- list api consumers.
+- list all backend upstream configurations.
+- nginx
+- authentication
+- engineers deploying and managing api gateway infrastructure.
+- list backend upstreams.
+- create a new api consumer with authentication plugins.
+- lua
+- API Gateway Administrator
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

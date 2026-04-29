@@ -53,62 +53,62 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- linkedin
-- authentication, sharing, and verification for consumer apps.
-- opt in a member for compliance monitoring.
-- data portability and advertiser transparency for dma.
-- get organization by id for data portability.
-- b2b advertising, audience targeting, and campaign analytics.
-- job posting, recruiting, and applicant tracking.
-- careers
-- get dma lead gen responses
-- professional networking
-- get page content analytics for data portability.
-- retrieve compliance events for a regulated member.
-- tracks employee learning activity and completions.
-- sales intelligence, lead management, and crm integration.
-- get compliance events
-- compliance
-- opt out a member from compliance monitoring.
-- check member compliance monitoring status.
-- get organization acls
-- recruiting
-- get comments for data portability.
-- get business manager relationships
+- message archiving and regulatory communications governance.
 - check member status
-- posts jobs and manages candidates through ats integrations.
-- get dma events
-- get page content analytics
-- archives communications for regulatory compliance.
-- get dma comments
-- get advertiser transparency data for a sponsored account.
-- get business manager account relationships.
-- batch get organizations for data portability.
+- compliance
+- opt in a member for compliance monitoring.
+- get business manager relationships
 - employee development tracking and content access.
+- social media
 - regulatory
-- get events for data portability.
-- retrieve compliance events.
+- opt out member
+- sales intelligence, lead management, and crm integration.
+- get dma reactions
+- opt in member
+- check member compliance monitoring status.
+- get page content analytics
+- integrates linkedin authentication and sharing into applications.
+- get organization acls
+- get comments for data portability.
+- get compliance events
+- get dma events
+- tracks employee learning activity and completions.
+- archives communications for regulatory compliance.
+- data portability
+- manages b2b ad campaigns and audience targeting on linkedin.
+- careers
+- get organization by id for data portability.
+- get organization acls for data portability.
+- get lead gen responses for data portability.
 - get posts for data portability.
 - get reactions for data portability.
-- data portability
-- marketing
-- integrates linkedin authentication and sharing into applications.
-- business
-- opt in member
-- get dma reactions
-- get dma posts
-- get advertiser transparency data.
-- opt out member
-- message archiving and regulatory communications governance.
-- social media
-- batch get organizations
-- get organization
-- get organization by id.
-- get lead gen responses for data portability.
+- get page content analytics for data portability.
 - uses sales navigator for lead generation and crm sync.
+- recruiting
+- get organization by id.
+- get dma lead gen responses
+- posts jobs and manages candidates through ats integrations.
+- b2b advertising, audience targeting, and campaign analytics.
 - get advertiser transparency
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get organization acls for data portability.
+- business
+- marketing
+- batch get organizations for data portability.
+- retrieve compliance events.
+- get dma posts
+- get events for data portability.
+- opt out a member from compliance monitoring.
+- job posting, recruiting, and applicant tracking.
+- retrieve compliance events for a regulated member.
+- data portability and advertiser transparency for dma.
+- get advertiser transparency data.
+- get advertiser transparency data for a sponsored account.
+- batch get organizations
+- professional networking
+- get business manager account relationships.
+- get organization
+- get dma comments
+- linkedin
+- authentication, sharing, and verification for consumer apps.
 slug: compliance-and-regulatory
 source_filename: compliance-and-regulatory.yaml
 source_heading: Capability Spec

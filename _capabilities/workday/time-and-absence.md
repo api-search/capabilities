@@ -20,40 +20,40 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- time entries
-- submit a time-off request
-- get eligible absence types for a worker
-- absence get eligible types
-- cloud computing
-- list time entries
-- enterprise software
-- list time clock events
 - time request entry
-- list balances
-- absence get balances
-- time list timesheets
-- submit a time entry request
-- time create clock event
-- list leaves of absence
-- absence request leave
-- time-off balances
-- list time-off entries
-- absence management
-- hcm
-- time tracking
-- financial management
-- absence request time off
-- list timesheets
 - absence list leaves
-- get time-off balances for a worker
-- absence list time off entries
-- saas
-- workday
-- create a time clock event
-- time list entries
 - submit a leave of absence request
-- list time-off balances
+- list time clock events
+- workday
+- cloud computing
+- absence management
+- absence get balances
+- absence request time off
+- enterprise software
 - time list clock events
+- get time-off balances for a worker
+- submit a time entry request
+- create a time clock event
+- saas
+- hcm
+- time entries
+- list timesheets
+- list time entries
+- get eligible absence types for a worker
+- list time-off entries
+- financial management
+- list balances
+- time-off balances
+- absence get eligible types
+- absence request leave
+- submit a time-off request
+- time tracking
+- time list timesheets
+- time create clock event
+- list time-off balances
+- list leaves of absence
+- absence list time off entries
+- time list entries
 slug: time-and-absence
 source_filename: time-and-absence.yaml
 source_heading: Capability Spec

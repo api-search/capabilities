@@ -9,21 +9,21 @@ personas: []
 provider_name: BigCommerce
 provider_slug: bigcommerce
 search_terms:
-- e-commerce
-- payment method configuration and transaction processing
-- developer building bigcommerce store integrations and customizations
-- payments
-- catalog
-- manage product catalog including products, categories, and brands
-- shipping zone, method, and carrier configuration
-- online store owner managing catalog, orders, and customers via api
-- retail
-- saas
-- orders
-- checkout
 - shopping cart and checkout flow management
+- online store owner managing catalog, orders, and customers via api
+- manage product catalog including products, categories, and brands
 - customer account and address book management
+- payment method configuration and transaction processing
+- payments
+- saas
+- shipping zone, method, and carrier configuration
 - order lifecycle management from placement to fulfillment
+- catalog
+- orders
+- e-commerce
+- developer building bigcommerce store integrations and customizations
+- retail
+- checkout
 - product catalog management including products, variants, and categories
 slug: catalog-management
 source_filename: catalog-management.yaml

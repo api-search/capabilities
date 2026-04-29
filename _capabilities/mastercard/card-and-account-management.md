@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- validate account details
-- submit pan-related event for account level management
-- get payment account reference
-- lookup bin
-- account management
 - card issuance and management
+- lookup bin
+- get card details
+- credit cards
+- manage a payment account lifecycle
+- query payment account reference to link tokens to accounts
+- card management
+- get payment account reference
+- create a physical card fulfillment order
+- manage payment account
+- create fulfillment order
+- submit pan event
+- get account catalog
+- request updated card credentials for card-on-file
+- validate account details
+- account management
+- list bins
+- bin lookup
+- financial services
+- issue card
+- look up bin information
+- manage account
+- manage a payment account
+- issuers
+- payment account management
 - fraud detection
-- issue a new card
+- retrieve account catalog data
 - mastercard
 - automatic billing updates
-- request updated card credentials for card-on-file
-- credit cards
-- bin lookup
-- look up bin information
-- submit pan event
-- digital identity
-- issue card
-- financial services
-- manage a payment account
-- payment account management
-- request updated card credentials
-- manage a payment account lifecycle
-- issuers
-- get billing updates
-- list bins
-- create a physical card fulfillment order
-- create fulfillment order
-- validate account
 - open banking
+- issue a new card
+- validate account
+- digital identity
 - payments
-- manage payment account
-- query payment account reference to link tokens to accounts
-- manage account
 - list available mastercard bins
-- get account catalog
-- card management
 - look up bin information for a card
+- submit pan-related event for account level management
+- get billing updates
+- request updated card credentials
 - issue a new mastercard card
-- retrieve account catalog data
-- get card details
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

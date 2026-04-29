@@ -68,47 +68,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- list customers
-- retrieve sales opportunities.
-- human capital management.
-- notification management
-- get customer
-- create a new support or service case.
 - sales
-- retrieve support and service cases.
-- enterprise software
-- support and service cases
-- list opportunities
-- campus solutions
-- case management
-- customer records
-- list intents
-- retrieve available chatbot intents.
-- retrieve customer records.
-- erp
-- retrieve notifications for the current user.
-- crm
-- chatbot intents
-- financial and supply chain management.
-- campus solutions.
-- customer engagement
-- chatbot
 - list cases
-- process a chatbot intent fulfillment request.
-- supply chain management
-- hcm
-- financial management
-- peopletools platform services.
-- send notification
-- list notifications
-- peoplesoft
-- chatbot intent fulfillments
-- sales opportunities
-- retrieve details for a specific customer.
+- retrieve support and service cases.
 - fulfill intent
+- list customers
+- retrieve details for a specific customer.
+- chatbot intents
+- chatbot intent fulfillments
 - create case
-- individual customer details
+- notification management
+- campus solutions.
+- case management
+- enterprise software
+- crm
+- list notifications
 - send a notification via email, text, or in-app channels.
+- list opportunities
+- human capital management.
+- hcm
+- customer engagement
+- erp
+- list intents
+- retrieve sales opportunities.
+- create a new support or service case.
+- financial management
+- financial and supply chain management.
+- individual customer details
+- chatbot
+- retrieve available chatbot intents.
+- supply chain management
+- support and service cases
+- process a chatbot intent fulfillment request.
+- retrieve customer records.
+- retrieve notifications for the current user.
+- sales opportunities
+- campus solutions
+- peopletools platform services.
+- peoplesoft
+- get customer
+- send notification
+- customer records
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

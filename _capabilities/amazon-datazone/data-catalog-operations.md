@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon DataZone
 provider_slug: amazon-datazone
 search_terms:
-- data sharing
-- analytics
-- data catalog
-- data governance
 - data management
 - aws
+- data sharing
+- data catalog
+- analytics
+- data governance
 slug: data-catalog-operations
 source_filename: data-catalog-operations.yaml
 source_heading: Capability Spec

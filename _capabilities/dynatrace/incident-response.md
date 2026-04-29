@@ -65,69 +65,69 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- manage investigation comments
-- problems
-- list problems detected by davis ai in the dynatrace environment
-- application performance monitoring
-- query affected entities
-- ingest a custom event to annotate the timeline
-- list monitored entities matching a selector
-- update an investigation comment
-- automation
-- get entity details for root cause investigation
-- add an investigation comment
-- close an open problem with an optional closing message
-- list investigation comments on a problem
-- list events in the dynatrace environment
-- analytics
-- get problem
-- intelligence
-- ai operations
-- get a specific event
-- application security
 - close problem
-- list events matching filters
-- ingest custom events
-- create problem comment
+- application performance monitoring
+- add an investigation comment
 - manage a specific comment
-- ingest event
-- incident response
-- update a comment
-- list problems detected by davis ai
-- delete problem comment
-- sre
-- list problem comments
-- get entity details
-- list comments on a problem
-- get a specific comment on a problem
-- list entities
-- list problems
-- get full details of a specific problem including root cause analysis
-- apm
-- get problem details including root cause
-- get event
-- list entities matching a selector
-- get a comment
-- list events
-- delete a comment from a problem
-- events
+- list investigation comments on a problem
+- get problem
+- query affected entities
 - digital experience management
-- dynatrace
-- update problem comment
+- incident response
+- list comments on a problem
+- update a comment
+- get entity details
+- get a specific event
+- list problems detected by davis ai
+- get entity details for root cause investigation
+- list problems detected by davis ai in the dynatrace environment
+- ingest a custom event to annotate the timeline
+- get details of a specific event
+- get full details of a specific problem including root cause analysis
+- ingest custom events
 - get event details
 - close a problem with an optional message
+- list events
+- get a comment
+- observability
+- analytics
+- events
+- list monitored entities matching a selector
+- intelligence
+- list events matching filters
+- apm
+- list problem comments
+- automation
+- ai operations
+- application security
+- get event
+- get a specific comment on a problem
+- list entities matching a selector
+- get problem comment
+- sre
+- delete a comment from a problem
+- list events in the dynatrace environment
+- get entity
+- create problem comment
+- list entities
+- delete a comment
+- get problem details including root cause
+- close a problem
+- query and manage ai-detected problems
+- get full problem details with root cause analysis
+- dynatrace
+- query events related to incidents
+- manage investigation comments
+- list problems
+- update an investigation comment
+- problems
+- delete problem comment
 - get details of a specific monitored entity
 - cloud monitoring
-- close a problem
-- get problem comment
-- delete a comment
-- get entity
-- observability
-- query events related to incidents
-- get details of a specific event
-- query and manage ai-detected problems
+- ingest event
 - add an investigation comment to a problem
-- get full problem details with root cause analysis
+- update problem comment
+- close an open problem with an optional closing message
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

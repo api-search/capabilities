@@ -9,12 +9,12 @@ personas: []
 provider_name: Apache Helix
 provider_slug: apache-helix
 search_terms:
-- replication
-- apache
-- distributed systems
 - partitioning
+- apache
 - cluster management
+- distributed systems
 - open source
+- replication
 slug: helix-cluster-management
 source_filename: helix-cluster-management.yaml
 source_heading: Capability Spec

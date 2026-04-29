@@ -45,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- list all active calls on the cvp call server
-- real-time statistics
-- application management
-- list active calls
-- individual call details
-- list managed devices
-- list applications
-- get statistics
-- system health
-- list call detail records
-- list sessions
-- ivr
-- active call management
-- list cdrs
-- get call server health
-- voice
-- get call details
-- list call detail records from the reporting server
-- list deployed vxml applications
-- list active vxml sessions
-- device management
-- vxml
-- cisco
 - voice portal
-- list managed cvp devices
-- contact center
 - get details of a specific active call
-- check cvp call server health status
-- list dialed number patterns
-- list configured dialed number patterns
-- get health
-- get call
-- list devices
-- list active sessions
-- list deployed cvp applications
-- vxml session monitoring
+- list managed devices
 - get real-time call statistics
-- call detail records
+- list deployed vxml applications
+- list active calls
+- ivr
+- list deployed cvp applications
+- system health
+- get statistics
+- vxml
 - list vxml applications
-- telephony
+- individual call details
+- list call detail records from the reporting server
+- list configured dialed number patterns
+- active call management
+- check cvp call server health status
+- call detail records
+- get call details
+- list dialed number patterns
+- list active vxml sessions
+- contact center
+- get health
+- real-time statistics
+- list applications
+- get call
 - list deployed applications
+- list managed cvp devices
+- voice
+- get call server health
+- device management
+- cisco
+- list cdrs
+- application management
+- list active sessions
+- list sessions
+- list devices
+- telephony
+- list all active calls on the cvp call server
+- list call detail records
+- vxml session monitoring
 slug: contact-center-operations
 source_filename: contact-center-operations.yaml
 source_heading: Capability Spec

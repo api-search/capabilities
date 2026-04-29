@@ -35,51 +35,51 @@ personas: []
 provider_name: Amazon IAM
 provider_slug: amazon-iam
 search_terms:
-- list all iam roles in the account
-- reviews and audits iam configurations for security compliance
-- security
-- iam
-- list roles
-- create a new iam role with a trust policy
-- attach a managed policy to an iam role
-- create a new iam policy
-- create role
-- attach a managed policy to an iam user
-- list access keys for an iam user
-- authorization
-- delete an iam user from the account
-- create a new iam policy with specified permissions
-- attach user policy
-- list iam policies available for attachment
-- list all iam roles
-- authentication
-- list users
-- list all iam users in the account
-- aws
-- Security Engineer
-- list all iam users
-- defining and enforcing what users and services can do
-- identity
-- policy management
-- delete user
-- create user
-- create a new iam role
-- manage iam users
-- manages iam users, roles, and policies for aws account governance
-- Cloud Administrator
-- list policies
-- create policy
-- manage iam policies
-- list all iam policies
-- access management
 - create a new iam user with the specified username
 - create a new iam user
-- manage iam roles
+- list users
+- create a new iam role with a trust policy
+- create policy
+- list iam policies available for attachment
 - access control
-- creating and attaching permission policies
-- creating and managing aws user identities
+- list all iam roles in the account
 - list access keys
+- iam
+- create a new iam policy
+- create role
+- delete user
+- aws
+- policy management
+- identity
+- manage iam policies
+- defining and enforcing what users and services can do
+- creating and managing aws user identities
+- creating and attaching permission policies
+- Cloud Administrator
 - attach role policy
+- list roles
+- manage iam users
+- create a new iam role
+- create user
+- list policies
+- delete an iam user from the account
+- manages iam users, roles, and policies for aws account governance
+- Security Engineer
+- list all iam policies
+- reviews and audits iam configurations for security compliance
+- list all iam users
+- access management
+- attach a managed policy to an iam role
+- attach user policy
+- list access keys for an iam user
+- authorization
+- authentication
+- list all iam users in the account
+- manage iam roles
+- list all iam roles
+- security
+- create a new iam policy with specified permissions
+- attach a managed policy to an iam user
 slug: iam-access-management
 source_filename: iam-access-management.yaml
 source_heading: Capability Spec

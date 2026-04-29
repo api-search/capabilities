@@ -31,42 +31,42 @@ personas: []
 provider_name: Argo Workflows
 provider_slug: argo-workflows
 search_terms:
-- kubernetes
-- submit a new argo workflow to a kubernetes namespace
-- reusable workflow templates
-- container orchestration platform
-- scheduled cron workflows
-- list all workflows in a namespace
-- list cron workflows
-- runs ml training, data processing, and etl workflows on kubernetes
-- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
-- Data Engineer
-- list historical archived workflow executions
-- data processing
-- list all cron workflows
-- submit a new workflow
-- list all argo workflows in a kubernetes namespace with status
-- list workflow templates
 - list archived workflow runs
-- create workflow
 - list workflows
-- containers
-- list all workflow templates
-- data engineering
-- workflow engine
-- cncf
-- Platform Engineer
-- list scheduled cron workflows in a namespace
-- workflow execution history
-- manages argo workflows platform, templates, and scheduling
-- machine learning
-- container-native workflow execution and lifecycle management
-- list archived workflows
 - argo workflows
-- workflow lifecycle management
-- list reusable workflow templates in a namespace
-- parallel data transformation, ml training, and etl
+- list scheduled cron workflows in a namespace
+- data processing
+- data engineering
+- containers
+- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
+- container-native workflow execution and lifecycle management
+- manages argo workflows platform, templates, and scheduling
+- list all cron workflows
+- kubernetes
+- machine learning
+- list historical archived workflow executions
+- submit a new argo workflow to a kubernetes namespace
+- scheduled cron workflows
+- runs ml training, data processing, and etl workflows on kubernetes
+- reusable workflow templates
 - open source
+- Data Engineer
+- create workflow
+- submit a new workflow
+- parallel data transformation, ml training, and etl
+- workflow execution history
+- container orchestration platform
+- list archived workflows
+- workflow engine
+- Platform Engineer
+- cncf
+- list all workflow templates
+- list reusable workflow templates in a namespace
+- workflow lifecycle management
+- list workflow templates
+- list all workflows in a namespace
+- list all argo workflows in a kubernetes namespace with status
+- list cron workflows
 slug: workflow-orchestration
 source_filename: workflow-orchestration.yaml
 source_heading: Capability Spec

@@ -30,72 +30,72 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- create a kv namespace.
-- cdn
-- object storage
-- security
-- r2 list buckets
-- create a hyperdrive configuration.
-- list hyperdrive configurations.
-- kv delete value
-- list d1 databases.
-- list buckets
-- list objects in an r2 bucket.
-- hyperdrive create config
-- real-time communication
-- create a d1 database.
-- hyperdrive configuration management.
-- kv read value
-- d1 query database
-- d1 delete database
-- list r2 storage buckets.
-- d1 create database
-- serverless
-- delete a kv value.
-- execute sql query on a d1 database.
-- r2 create bucket
-- delete an r2 bucket.
-- list keys in a kv namespace.
-- r2 get bucket
-- kv list namespaces
-- kv create namespace
-- web performance
-- hyperdrive delete config
-- r2 bucket management.
-- edge
-- cloudflare
-- cloud
-- r2 delete bucket
-- containers
-- ai gateway
-- platform
-- storage
-- list databases
-- d1 database management.
-- d1 list databases
-- list r2 buckets.
-- kv list keys
-- list kv namespaces.
-- get r2 bucket details.
-- r2 list objects
 - kv write value
-- dns
-- edge computing
-- database
-- data
-- create an r2 bucket.
-- write a kv value.
-- hyperdrive list configs
-- delete a hyperdrive configuration.
-- ddos protection
-- list hyperdrive configs.
-- read a kv value.
-- list kv namespaces
 - api gateway
+- object storage
+- hyperdrive create config
+- r2 delete bucket
+- list d1 databases.
+- r2 create bucket
+- real-time communication
+- d1 database management.
+- delete a kv value.
+- containers
+- cdn
+- web performance
+- serverless
+- edge
+- r2 get bucket
+- dns
+- delete an r2 bucket.
+- kv delete value
+- d1 list databases
+- list kv namespaces.
+- edge computing
+- execute sql query on a d1 database.
+- list hyperdrive configurations.
+- list r2 storage buckets.
+- data
+- list databases
 - delete a d1 database.
-- list hyperdrive configs
+- list hyperdrive configs.
+- kv read value
+- list objects in an r2 bucket.
+- create a d1 database.
+- d1 delete database
+- kv list keys
+- ddos protection
+- list r2 buckets.
+- hyperdrive list configs
+- ai gateway
+- storage
+- cloudflare
+- get r2 bucket details.
+- hyperdrive configuration management.
+- d1 create database
+- kv list namespaces
+- create a kv namespace.
+- kv create namespace
+- create a hyperdrive configuration.
+- hyperdrive delete config
 - artificial intelligence
+- platform
+- read a kv value.
+- delete a hyperdrive configuration.
+- list hyperdrive configs
+- cloud
+- list kv namespaces
+- d1 query database
+- write a kv value.
+- create an r2 bucket.
+- list buckets
+- security
+- r2 bucket management.
+- list keys in a kv namespace.
+- r2 list buckets
+- r2 list objects
 - kv namespace management.
+- database
 slug: data-and-storage
 source_filename: data-and-storage.yaml
 source_heading: Capability Spec

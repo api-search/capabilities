@@ -34,60 +34,60 @@ personas: []
 provider_name: Apache CouchDB
 provider_slug: apache-couchdb
 search_terms:
-- couchdb
-- replication and offline-first data sync via the couch replication protocol
-- mango
 - get database
-- delete document
-- create a query index for faster mango queries
-- get changes
-- get couchdb server version and status
-- manages couchdb cluster configuration, authentication, and performance
-- changes feed
-- list documents
-- Data Engineer
-- storing and retrieving json documents with mvcc
-- replication
-- list all databases in couchdb
-- get info about a database
-- manages data pipelines, replication, and changes feed integrations with couchdb
-- document operations
-- database changes feed for event-driven architectures
-- rest
-- query documents
-- apache
-- get the changes feed to track database updates
 - Developer
-- document store
-- list all databases
-- builds applications using couchdb as the document store via the http api or sdk
 - get a document by id
-- get changes feed
-- nosql
-- create index
-- open source
-- delete a document
-- database operations
-- replicate
-- replicate data between couchdb instances
-- json
-- mango selectors, mapreduce views, and full-text search
-- query documents with a mango selector
-- list databases
-- create a new database
-- create or update a document
-- get current authentication session info
-- full document lifecycle management with mango queries, changes feed, and replication
-- get server info
-- database
-- get document
-- create a new couchdb database
-- get session
-- start replication
-- save document
+- list documents
+- changes feed
 - create database
+- list all databases
+- replication
+- manages couchdb cluster configuration, authentication, and performance
 - list documents in a database
+- create or update a document
+- json
+- apache
+- get info about a database
+- create index
+- storing and retrieving json documents with mvcc
+- mango
+- create a new database
+- nosql
+- list databases
+- get session
+- replication and offline-first data sync via the couch replication protocol
+- open source
+- get couchdb server version and status
+- delete document
+- Data Engineer
+- get changes
+- query documents with a mango selector
+- manages data pipelines, replication, and changes feed integrations with couchdb
+- database operations
+- list all databases in couchdb
+- create a new couchdb database
+- get the changes feed to track database updates
+- replicate data between couchdb instances
+- delete a document
+- builds applications using couchdb as the document store via the http api or sdk
+- query documents
+- replicate
+- database changes feed for event-driven architectures
+- save document
+- couchdb
+- document operations
+- start replication
+- document store
+- get current authentication session info
+- get document
+- full document lifecycle management with mango queries, changes feed, and replication
 - query documents with mango
+- get server info
+- create a query index for faster mango queries
+- mango selectors, mapreduce views, and full-text search
+- rest
+- database
+- get changes feed
 slug: couchdb-document-management
 source_filename: couchdb-document-management.yaml
 source_heading: Capability Spec

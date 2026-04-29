@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- update caption
-- manage items within playlists
-- upload video
-- list captions
-- upload a new caption track
-- update playlist details
-- delete video
-- manage youtube playlists
-- delete a video from youtube
-- list videos
-- list items in a playlist
-- captions
-- manage youtube videos
-- list caption tracks for a video
-- list videos matching criteria
-- upload a new video to youtube
-- remove playlist item
-- add playlist item
-- social
-- videos
-- update video
-- update playlist
-- delete caption
-- streaming
-- update video metadata
-- content management
-- delete playlist
-- upload a caption track
-- list youtube videos matching criteria
-- youtube
-- media
-- upload a new video
-- remove a video from a playlist
-- google
-- add a video to a playlist
-- create playlist
-- upload caption
-- list playlists
-- playlists
-- video
-- list playlist items
-- update a caption track
 - manage video captions
-- delete a playlist
-- delete a caption track
-- create a new playlist
+- google
+- delete playlist
+- video
+- youtube
+- delete video
+- list playlist items
+- videos
+- delete a video from youtube
+- content management
+- upload video
+- list playlists
+- update video metadata
+- update caption
+- playlists
+- upload a caption track
+- upload a new video to youtube
+- manage youtube videos
 - list youtube playlists
+- update playlist details
+- list youtube videos matching criteria
+- delete a caption track
+- streaming
+- list videos matching criteria
+- upload caption
+- list items in a playlist
+- add a video to a playlist
+- list videos
+- remove playlist item
+- upload a new video
+- captions
+- upload a new caption track
+- delete a playlist
+- remove a video from a playlist
+- media
+- update playlist
+- manage youtube playlists
+- manage items within playlists
+- delete caption
+- create a new playlist
 - delete a video
+- update a caption track
+- list captions
+- social
+- add playlist item
+- create playlist
+- update video
+- list caption tracks for a video
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

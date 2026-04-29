@@ -18,31 +18,31 @@ personas: []
 provider_name: Ballerina
 provider_slug: ballerina
 search_terms:
-- integrations
-- developer building integration services using the ballerina language
-- get ballerina package
-- orchestrations
-- get details about a specific ballerina package including versions and documentation
-- get details about a specific version of a ballerina package
-- package discovery and search
-- package details
-- search for ballerina packages
-- get package
-- search packages
-- package discovery and retrieval from ballerina central
-- engineer building enterprise integrations using ballerina language packages
-- search for ballerina packages in the central registry by name, keyword, or organization
+- programming language
 - get package details
+- search packages
+- integrations
+- engineer building enterprise integrations using ballerina language packages
+- search ballerina packages
+- package registry
 - ballerina
 - integration
-- package registry
-- programming language
-- get ballerina package version
-- discovery and retrieval of ballerina language packages
-- Integration Engineer
-- search ballerina packages
-- open source
+- developer building integration services using the ballerina language
+- package discovery and search
+- get details about a specific version of a ballerina package
 - Ballerina Developer
+- orchestrations
+- open source
+- search for ballerina packages
+- get ballerina package version
+- package details
+- package discovery and retrieval from ballerina central
+- get package
+- search for ballerina packages in the central registry by name, keyword, or organization
+- Integration Engineer
+- get ballerina package
+- get details about a specific ballerina package including versions and documentation
+- discovery and retrieval of ballerina language packages
 slug: package-registry
 source_filename: package-registry.yaml
 source_heading: Capability Spec

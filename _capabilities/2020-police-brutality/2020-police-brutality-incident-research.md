@@ -25,33 +25,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
-- public data
-- export incidents csv
-- all incidents in csv format for data analysis.
-- Journalist
-- Activist
-- Researcher
-- uses incident documentation for prosecution or civil litigation
-- brutality
-- documented evidence of police brutality during 2020 protests
-- Legal Professional
-- get incidents v2
-- policing
-- list all documented police brutality incidents.
-- conducts academic or policy research on police use of force patterns
-- export all incidents as csv for spreadsheet and data analysis.
-- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
-- all documented police brutality incidents from 2020 protests.
-- civil rights
-- research
-- get all incidents
-- research workflow for journalists, prosecutors, and activists
 - export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
-- investigates and reports on documented police brutality incidents
-- journalism
+- export incidents csv
+- uses incident documentation for prosecution or civil litigation
+- list all documented police brutality incidents.
+- research workflow for journalists, prosecutors, and activists
 - uses data for advocacy, public education, and political campaigns
+- all documented police brutality incidents from 2020 protests.
+- export all incidents as csv for spreadsheet and data analysis.
+- civil rights
 - retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
+- policing
+- documented evidence of police brutality during 2020 protests
 - list incidents
+- get incidents v2
+- Activist
+- investigates and reports on documented police brutality incidents
+- brutality
+- get all incidents
+- public data
+- all incidents in csv format for data analysis.
+- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
+- journalism
+- Journalist
+- research
+- Legal Professional
+- Researcher
+- conducts academic or policy research on police use of force patterns
 slug: 2020-police-brutality-incident-research
 source_filename: 2020-police-brutality-incident-research.yaml
 source_heading: Capability Spec

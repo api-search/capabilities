@@ -57,61 +57,61 @@ personas: []
 provider_name: ACORD
 provider_slug: acord
 search_terms:
-- registry of all insurance parties including insureds, agents, and carriers
-- apply endorsements or amendments to an acord policy
+- Reinsurer
+- retrieve full acord policy details including coverages and insured party
+- intermediary managing client policies, claims submissions, and party records
+- create party
+- insurance policy lifecycle management
+- list insurance claims with acord ngds filtering by policy, status, and loss date range
+- submit a first notice of loss
+- insurance party registry
+- create policy
+- unified acord ngds workflow for policy, claims, party, and underwriting
+- submit an application for underwriting review
 - endorse or amend a policy
 - underwriting
-- get claim details and payment history
-- list claims
-- first notice of loss, reserves, and payment tracking for insurance claims
-- Insurance Carrier
-- list insurance policies using acord ngds standards with filtering by number, line of business, and status
-- insurance party registry
-- list insurance claims with acord ngds filtering by policy, status, and loss date range
-- primary insurer managing policy issuance, claims, and underwriting
-- reinsurance company accessing cedant data for risk assessment and settlement
-- issue a new acord-compliant insurance policy
-- unified acord ngds workflow for policy, claims, party, and underwriting
-- retrieve full acord claim details including reserves and payment history
-- list policies with filtering
-- issue a new insurance policy
-- submit a first notice of loss (fnol) using acord ngds claims transaction model
-- risk assessment and policy issuance decision workflows
-- update policy
 - get claim
-- policy administration
-- Reinsurer
-- claims
-- list claims with filtering
-- register a new party
-- submit underwriting
-- list parties
-- list policies
-- create policy
-- get policy
-- submit claim
-- Broker
-- list insurance parties (insureds, agents, brokers, carriers) from acord registry
-- intermediary managing client policies, claims submissions, and party records
-- submit an application for underwriting review
-- claims intake and inquiry
-- retrieve full acord policy details including coverages and insured party
-- underwriting application submission
-- policy
-- full lifecycle management of insurance policies from issuance to expiration
-- insurance policy lifecycle management
-- register a new insurance party in the acord ngds party registry
-- submit a first notice of loss
-- individual policy operations
-- get full policy details
-- insurance
-- standards
-- list registered parties
 - acord
-- individual claim operations
+- list insurance policies using acord ngds standards with filtering by number, line of business, and status
+- register a new insurance party in the acord ngds party registry
+- retrieve full acord claim details including reserves and payment history
+- standards
+- get full policy details
+- get policy
+- list registered parties
+- register a new party
+- list parties
+- first notice of loss, reserves, and payment tracking for insurance claims
 - submit an insurance application for underwriting review using acord ngds
+- policy administration
+- policy
+- claims
+- list policies
+- primary insurer managing policy issuance, claims, and underwriting
+- individual policy operations
+- full lifecycle management of insurance policies from issuance to expiration
+- list claims
+- submit claim
+- registry of all insurance parties including insureds, agents, and carriers
+- submit underwriting
+- individual claim operations
+- reinsurance company accessing cedant data for risk assessment and settlement
+- Broker
+- insurance
+- submit a first notice of loss (fnol) using acord ngds claims transaction model
+- list policies with filtering
+- get claim details and payment history
+- issue a new acord-compliant insurance policy
+- list insurance parties (insureds, agents, brokers, carriers) from acord registry
+- Insurance Carrier
 - claims management
-- create party
+- underwriting application submission
+- claims intake and inquiry
+- update policy
+- list claims with filtering
+- apply endorsements or amendments to an acord policy
+- issue a new insurance policy
+- risk assessment and policy issuance decision workflows
 slug: insurance-data-exchange
 source_filename: insurance-data-exchange.yaml
 source_heading: Capability Spec

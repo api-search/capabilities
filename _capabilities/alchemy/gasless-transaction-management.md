@@ -32,42 +32,42 @@ personas:
 provider_name: Alchemy
 provider_slug: alchemy
 search_terms:
+- gas sponsorship for user operations.
+- get a specific gas sponsorship policy.
+- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- creates decentralized applications with gasless ux for end users.
+- ethereum
+- list all gas sponsorship policies.
+- manages gas sponsorship infrastructure and erc-4337 policies.
+- create policy
 - sponsor user operation
 - get details for a specific gas sponsorship policy by id.
-- ethereum
-- create a new gas sponsorship policy with spend limits and network settings.
-- gas sponsorship for user operations.
-- defi builder
-- cryptocurrency
 - builds evm wallet applications needing token balances and transaction history.
 - alchemy
-- develops defi applications requiring portfolio tracking and token data.
-- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
-- list all gas sponsorship policies.
-- account abstraction
+- get policy
 - gas sponsorship policies.
 - individual gas policy.
-- sponsor a user operation for gasless transactions.
-- create a new gas sponsorship policy.
-- web3
-- get a specific gas sponsorship policy.
-- manages gas sponsorship infrastructure and erc-4337 policies.
-- list policies
-- create policy
-- get policy
+- list all gas manager sponsorship policies for the alchemy application.
+- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
+- dapp developer
+- erc-20 token data and metadata.
 - combines token api and transfers api for wallet portfolio applications.
 - wallet balance and asset portfolio management.
-- gas manager
-- wallet developer
-- list all gas manager sponsorship policies for the alchemy application.
-- dapp developer
+- web3
+- list policies
 - on-chain asset transfer history.
-- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
-- web3 platform engineer
-- erc-20 token data and metadata.
-- creates decentralized applications with gasless ux for end users.
+- sponsor a user operation for gasless transactions.
+- create a new gas sponsorship policy with spend limits and network settings.
 - gas fee sponsorship and erc-4337 account abstraction.
+- create a new gas sponsorship policy.
+- defi builder
+- develops defi applications requiring portfolio tracking and token data.
+- cryptocurrency
+- gas manager
+- account abstraction
 - blockchain
+- wallet developer
+- web3 platform engineer
 slug: gasless-transaction-management
 source_filename: gasless-transaction-management.yaml
 source_heading: Capability Spec

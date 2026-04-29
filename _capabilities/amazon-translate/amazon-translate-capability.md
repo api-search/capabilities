@@ -10,11 +10,11 @@ provider_name: Amazon Translate
 provider_slug: amazon-translate
 search_terms:
 - machine translation
-- translation
-- localization
 - nlp
+- translation
 - aws
 - language processing
+- localization
 slug: amazon-translate-capability
 source_filename: amazon-translate-capability.yaml
 source_heading: Capability Spec

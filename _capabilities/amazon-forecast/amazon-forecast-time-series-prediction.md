@@ -10,11 +10,11 @@ provider_name: Amazon Forecast
 provider_slug: amazon-forecast
 search_terms:
 - predictive analytics
-- machine learning
-- forecasting
 - aws
-- demand planning
+- forecasting
 - time series
+- demand planning
+- machine learning
 slug: amazon-forecast-time-series-prediction
 source_filename: amazon-forecast-time-series-prediction.yaml
 source_heading: Capability Spec

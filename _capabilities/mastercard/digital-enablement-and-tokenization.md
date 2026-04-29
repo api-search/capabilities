@@ -31,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- push provision to wallet
-- enroll issuer click to pay
-- fraud detection
-- push provision a token to a digital wallet
-- push provisioning to wallets
-- check if a card is eligible for digitization
-- mastercard
-- submit bulk tokenization
-- submit a bulk tokenization request for a card portfolio
-- click to pay
-- credit cards
 - token lifecycle management
-- submit bulk tokenization request
-- digital identity
-- pre-digitization eligibility
-- push provision
-- financial services
-- tokenize card
-- check digitization eligibility
-- suspend an active token
+- credit cards
 - register token requestor
-- get token details
-- tokenize a payment card via mdes
-- bulk tokenization operations
+- enroll issuer click to pay
+- pre-digitization eligibility
 - check card eligibility for digitization
-- mdes
-- open banking
-- payments
+- push provision a token to a digital wallet
+- tokenize card
+- delete token
+- submit bulk tokenization request
+- get token details
+- bulk tokenization operations
+- submit bulk tokenization
+- push provision to wallet
+- enroll an issuer in click to pay
+- tokenization
+- check if a card is eligible for digitization
+- financial services
+- digital payments
+- submit a bulk tokenization request for a card portfolio
 - tokenize a payment card
+- push provision a token to a wallet
+- click to pay
+- push provisioning to wallets
+- fraud detection
+- mastercard
+- tokenize a payment card via mdes
+- suspend an active token
+- push provision
+- open banking
+- digital identity
+- payments
+- check digitization eligibility
+- register a new token requestor
+- mdes
 - delete a token
 - suspend token
-- push provision a token to a wallet
-- register a new token requestor
-- enroll an issuer in click to pay
-- digital payments
-- tokenization
-- delete token
 slug: digital-enablement-and-tokenization
 source_filename: digital-enablement-and-tokenization.yaml
 source_heading: Capability Spec

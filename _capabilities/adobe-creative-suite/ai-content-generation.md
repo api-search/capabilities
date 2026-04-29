@@ -38,45 +38,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- generate images visually similar to a reference image
-- fill a masked region of an image with ai-generated content
-- expand an image beyond its boundaries
-- generate a short video clip from a text prompt
-- generate video
-- generate images from a text prompt
-- generate similar images
-- expand image
-- image generation
-- content generation
-- generate images similar to a reference image
-- generate a video from a text prompt
-- text-to-image generation
-- creative
-- generation job status
-- fill a masked region with ai-generated content
-- generate and composite an ai object into a scene
-- get the status of an asynchronous firefly generation job
-- generate composite
-- get the status of an async generation job
-- similar image generation from reference
 - generative ai
-- generative fill operations
-- ai video generation
+- get the status of an asynchronous firefly generation job
+- fill a masked region with ai-generated content
 - generative image expansion
-- adobe
-- video generation
-- fill image
-- generate images
-- design
 - video
-- photography
-- get job status
-- generate one or more images from a text prompt using adobe firefly
+- adobe
+- expand image
+- fill a masked region of an image with ai-generated content
 - expand an image beyond its original boundaries using generative ai
-- graphics
+- generate one or more images from a text prompt using adobe firefly
+- generate similar images
+- generative fill operations
+- fill image
+- generation job status
+- image generation
+- similar image generation from reference
+- expand an image beyond its boundaries
+- photography
+- generate a short video clip from a text prompt
 - generate an ai object and composite it into a scene image
+- design
+- get the status of an async generation job
 - ai object compositing
+- generate images
+- generate images from a text prompt
+- generate video
+- generate images visually similar to a reference image
+- content generation
 - firefly
+- graphics
+- generate images similar to a reference image
+- generate composite
+- creative
+- ai video generation
+- generate a video from a text prompt
+- video generation
+- text-to-image generation
+- generate and composite an ai object into a scene
+- get job status
 slug: ai-content-generation
 source_filename: ai-content-generation.yaml
 source_heading: Capability Spec

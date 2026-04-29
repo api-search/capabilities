@@ -75,80 +75,80 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- delete a content builder asset.
-- individual contact operations.
-- journey entry event operations.
-- list marketing cloud content builder assets.
-- get a content builder asset by id.
-- list assets
-- triggered email send operations.
-- create and initiate a triggered email send to one or more recipients.
-- update a content builder asset.
 - sales
-- create and initiate an sms send.
-- list journeys
-- data extension row operations.
-- individual asset operations.
-- get message status
-- content builder asset management.
-- list contacts
-- journey builder journey management.
-- fire a journey entry event to enroll a contact in a journey.
-- get a content asset by id.
-- create a new content asset in content builder.
-- journeys
-- delete contacts
 - get rows from a data extension.
-- analytics
-- message delivery status.
-- get a journey by id.
-- list content assets.
-- create email send
-- create asset
-- sms send operations.
-- get rows from a marketing cloud data extension.
-- salesforce
-- crm
-- contact deletion operations.
-- insert or upsert rows into a data extension.
-- create sms send
-- fire a journey entry event to enroll a contact.
-- ai
-- cloud
-- delete a content asset.
-- platform
-- marketing cloud contact management.
-- get the delivery status of an email message.
-- list marketing cloud journeys.
-- get data extension rows
-- create a content asset.
-- get contact
-- email marketing
-- get asset
-- list contacts in the marketing cloud account.
-- update asset
-- insert data extension rows
-- update a content asset.
-- get a marketing cloud contact by contact key.
-- marketing automation
-- delete asset
 - get a contact by contact key.
-- customer service
+- individual contact operations.
+- individual journey operations.
+- list journeys
+- get a marketing cloud contact by contact key.
+- list marketing cloud content builder assets.
+- ai
+- get journey
+- marketing cloud
+- get the delivery status of a triggered email send.
+- list contacts in the marketing cloud account.
+- fire journey event
+- insert data extension rows
 - create and initiate a triggered email send.
+- crm
+- get a journey by id.
+- create email send
+- enterprise
+- delete asset
+- get message status
+- marketing automation
+- fire a journey entry event to enroll a contact in a journey.
+- delete one or more contacts from marketing cloud.
+- create and initiate an sms send to one or more recipients.
+- create and initiate an sms send.
+- journeys
+- email marketing
+- list contacts
+- get data extension rows
+- insert or upsert rows into a data extension.
+- message delivery status.
+- individual asset operations.
+- commerce
+- analytics
+- data extension row operations.
+- salesforce
+- get the delivery status of an email message.
+- update a content builder asset.
+- customer service
+- get contact
+- create sms send
+- journey entry event operations.
+- content builder asset management.
 - list marketing cloud journey builder journeys.
+- insert or upsert rows into a marketing cloud data extension.
+- list assets
+- get asset
+- get detailed information about a marketing cloud journey.
 - marketing
 - delete one or more contacts.
-- individual journey operations.
-- create and initiate an sms send to one or more recipients.
-- insert or upsert rows into a marketing cloud data extension.
-- fire journey event
-- get the delivery status of a triggered email send.
-- marketing cloud
-- commerce
-- get detailed information about a marketing cloud journey.
-- delete one or more contacts from marketing cloud.
-- get journey
-- enterprise
+- marketing cloud contact management.
+- delete a content asset.
+- create a new content asset in content builder.
+- get a content asset by id.
+- triggered email send operations.
+- update asset
+- delete contacts
+- fire a journey entry event to enroll a contact.
+- sms send operations.
+- create a content asset.
+- platform
+- contact deletion operations.
+- list content assets.
+- get a content builder asset by id.
+- get rows from a marketing cloud data extension.
+- cloud
+- journey builder journey management.
+- list marketing cloud journeys.
+- update a content asset.
+- create and initiate a triggered email send to one or more recipients.
+- delete a content builder asset.
+- create asset
 slug: marketing-automation
 source_filename: marketing-automation.yaml
 source_heading: Capability Spec

@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- delete certificate
-- create a new cryptographic key.
-- security
-- get secret
-- list secrets.
-- encrypt
-- get key details.
-- key management
-- key management.
-- verify a signature.
-- list secrets
-- decrypt
-- list keys
-- get a key.
-- delete a secret.
-- list cryptographic keys in the vault.
-- sign a digest using a key.
-- create certificate
-- list secrets in the vault.
-- create a new certificate.
-- cryptography
-- key vault
-- list certificates in the vault.
-- set a secret value.
-- get certificate
+- create a key.
 - set a secret.
-- certificate management.
-- secret management.
-- set secret
-- get key
-- get a secret.
-- list keys.
-- individual key management.
-- delete secret
 - decrypt data using a key.
-- delete a certificate.
+- cryptography
+- get a secret.
+- key management.
+- list keys.
+- get key
+- get secret
+- encrypt data using a key.
+- verify a signature.
+- verify
 - get a certificate.
-- delete a key.
+- delete a certificate.
+- individual secret management.
+- list secrets
 - list certificates
+- certificate management.
+- azure
+- delete secret
+- decrypt
+- list secrets.
+- get certificate
+- get key details.
+- list cryptographic keys in the vault.
+- key management
+- sign a digest using a key.
+- list certificates in the vault.
+- create a new certificate.
+- create certificate
+- delete key
+- list secrets in the vault.
+- list certificates.
+- key vault
+- secret management.
+- list keys
+- get a secret value.
+- create a new cryptographic key.
+- delete a secret.
+- sign
+- certificates
+- set secret
 - cloud security
 - create key
-- sign
+- delete certificate
+- set a secret value.
+- security
+- encrypt
+- get a key.
+- delete a key.
 - secrets management
-- azure
-- create a key.
-- individual secret management.
-- encrypt data using a key.
-- list certificates.
-- verify
-- delete key
-- certificates
-- get a secret value.
+- individual key management.
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

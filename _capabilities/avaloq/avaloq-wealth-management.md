@@ -9,21 +9,21 @@ personas: []
 provider_name: Avaloq
 provider_slug: avaloq
 search_terms:
+- financial services
+- payment processing for domestic and international transfers.
+- digital banking
+- maintains client relationships and coordinates banking services.
+- core banking operations including accounts, transactions, and customer management.
+- end-to-end workflow for client account management, transactions, and payment processing.
+- handles back-office operations, payments, and settlements.
+- manages client portfolios and investment strategies.
 - investment portfolio and asset management.
 - order management and trade execution.
-- manages client portfolios and investment strategies.
-- fintech
-- maintains client relationships and coordinates banking services.
-- digital banking
-- wealth management
 - banking
-- end-to-end workflow for client account management, transactions, and payment processing.
-- payment processing for domestic and international transfers.
-- core banking operations including accounts, transactions, and customer management.
-- financial services
 - payments
 - regulatory compliance, aml, and risk management.
-- handles back-office operations, payments, and settlements.
+- fintech
+- wealth management
 slug: avaloq-wealth-management
 source_filename: avaloq-wealth-management.yaml
 source_heading: Capability Spec

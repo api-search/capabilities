@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- generate images from text
-- embedding operations
-- list openai models
-- cognitive list accounts
-- t1
-- cognitive list models
-- chat completion operations
-- openai create completion
-- openai list models
+- openai list deployments
+- openai create transcription
+- ai
 - create a text completion
 - cloud computing
-- infrastructure as a service
-- openai create image
-- create text embeddings
+- openai create completion
+- list cognitive services accounts
+- transcribe audio to text
+- translate audio to english
 - list available ai models
-- openai create embedding
+- openai create image
+- create a chat completion
+- openai list models
+- openai
+- chat completion operations
+- generate images from text
+- azure
+- enterprise
+- list openai models
 - api management
+- create chat completion
+- model listing
+- openai create speech
 - cognitive services accounts
+- create text embeddings
 - list cognitive accounts
-- openai list deployments
+- t1
+- list model deployments
+- openai create chat completion
+- embedding operations
+- openai create translation
+- list available openai models
+- infrastructure as a service
+- create a chat completion using azure openai
+- cognitive list models
+- platform as a service
+- create embedding
 - cognitive services
 - generate speech from text
-- ai
 - cloud
-- openai create chat completion
-- create chat completion
-- openai create translation
-- transcribe audio to text
-- openai create speech
-- translate audio to english
-- openai
-- platform as a service
-- create a chat completion
-- openai create transcription
-- azure
-- list cognitive services accounts
-- model listing
-- create a chat completion using azure openai
-- list model deployments
-- list available openai models
-- create embedding
-- enterprise
+- openai create embedding
+- cognitive list accounts
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

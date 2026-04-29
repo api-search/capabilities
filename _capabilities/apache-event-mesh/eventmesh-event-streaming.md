@@ -33,40 +33,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- publish events
-- manage topics, subscriptions, and publish cloudevents
-- create eventmesh topic
-- subscribe a consumer to an eventmesh topic
-- publish cloud event
-- event-driven
-- topic management and event publishing via cloudevents
-- list all eventmesh topics
-- application developers building event-driven services on eventmesh
-- apache
-- cloudevents
-- create topic
 - Developer
-- list all topics registered in eventmesh
-- subscribe to topic
-- serverless
-- engineers managing the eventmesh cluster and messaging infrastructure
+- platform engineering
+- list topics
+- application developers building event-driven services on eventmesh
 - publish a cloudevent to an eventmesh topic
 - messaging
-- pub-sub, request-reply, and broadcast messaging patterns
-- manage event subscriptions
-- list topics
-- create subscription
-- publish event
+- cloudevents
+- topic management and event publishing via cloudevents
+- manage topics, subscriptions, and publish cloudevents
+- serverless
+- apache
+- subscribe to topic
 - pub-sub
-- apache eventmesh
-- platform engineering
-- Platform Engineer
-- publish a cloudevent
-- manage eventmesh topics
 - list eventmesh topics
-- subscribe to eventmesh topics
-- create a new eventmesh topic
+- manage event subscriptions
+- manage eventmesh topics
 - open source
+- list all eventmesh topics
+- publish a cloudevent
+- list all topics registered in eventmesh
+- publish event
+- create a new eventmesh topic
+- subscribe to eventmesh topics
+- subscribe a consumer to an eventmesh topic
+- Platform Engineer
+- pub-sub, request-reply, and broadcast messaging patterns
+- publish cloud event
+- publish events
+- create eventmesh topic
+- create topic
+- create subscription
+- event-driven
+- apache eventmesh
+- engineers managing the eventmesh cluster and messaging infrastructure
 slug: eventmesh-event-streaming
 source_filename: eventmesh-event-streaming.yaml
 source_heading: Capability Spec

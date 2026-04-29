@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- get user
-- kubernetes
-- list roles
-- list clients
-- identity providers.
-- list users in a realm.
-- get user details.
-- specific realm.
-- list groups.
-- register a new client application.
-- realm groups.
-- list external identity providers.
-- keycloak
-- list all keycloak realms.
-- delete session
-- red hat
-- list users
-- delete a user from a realm.
-- identity
-- terminate a user session.
 - realm users.
-- delete user
-- create user
-- open source
-- create a new user in a realm.
-- cloud
-- containers
-- list roles.
-- list groups
-- list identity providers
-- access management
-- get realm configuration details.
-- list clients.
-- get realm details.
-- list client applications in a realm.
-- realm clients.
-- keycloak realms.
-- list all realms.
-- create client
-- linux
-- get realm
-- list realms
-- list roles in a realm.
-- list realm roles
-- list groups in a realm.
-- list identity providers.
 - create a user.
-- hybrid cloud
-- realm roles.
-- enterprise
+- create a new user in a realm.
+- list users
+- list all realms.
+- list identity providers.
+- containers
+- list groups in a realm.
+- red hat
+- list all keycloak realms.
+- keycloak realms.
+- get user
 - list users.
+- kubernetes
+- list realm roles
+- delete user
+- delete session
+- enterprise
+- identity
+- list users in a realm.
+- list external identity providers.
+- identity providers.
+- list client applications in a realm.
+- get realm configuration details.
+- open source
+- list roles
+- get user details.
+- register a new client application.
+- hybrid cloud
+- list clients
+- create client
+- specific realm.
+- create user
+- get realm details.
+- get realm
+- delete a user from a realm.
+- list roles.
+- list realms
+- access management
+- linux
+- list identity providers
+- realm roles.
+- terminate a user session.
+- list groups
+- cloud
+- realm groups.
+- list roles in a realm.
+- list groups.
+- keycloak
+- realm clients.
+- list clients.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

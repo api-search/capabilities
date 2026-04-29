@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- list connections
-- get veridata server information
-- get comparison job statistics
 - compliance
-- data integration
-- database connections for verification
-- create a new comparison job
-- list comparison jobs
-- get goldengate process performance metrics for monitoring replication health
-- replication process metrics
-- list compare groups
-- compare groups
-- real-time replication
-- create job
-- create connection
 - list compare groups for data verification
-- cdc
-- get job statistics
-- list groups
-- list jobs
-- enterprise
-- get details of out-of-sync data
-- get out of sync data
-- list veridata database connections
-- comparison jobs
-- data synchronization
-- execute a comparison job
-- run job
-- create a new compare group
-- get server info
-- create group
-- oracle goldengate
-- database
-- repair out-of-sync data identified by a comparison job
-- create a new veridata database connection
-- data quality
 - list process metrics
+- list connections
+- list compare groups
+- comparison jobs
+- get comparison job statistics
 - repair job
+- cdc
+- list jobs
+- real-time replication
+- oracle goldengate
+- compare groups
+- get job statistics
+- create job
+- replication process metrics
+- enterprise
+- execute a comparison job
+- data quality
 - list replication process performance metrics
+- get veridata server information
+- create connection
+- list comparison jobs
+- data synchronization
+- create a new compare group
+- database connections for verification
+- run job
+- create a new veridata database connection
+- repair out-of-sync data identified by a comparison job
+- data integration
+- create a new comparison job
+- get details of out-of-sync data
+- list veridata database connections
 - data verification
+- create group
+- list groups
+- get goldengate process performance metrics for monitoring replication health
+- get server info
+- get out of sync data
+- database
 slug: data-verification
 source_filename: data-verification.yaml
 source_heading: Capability Spec

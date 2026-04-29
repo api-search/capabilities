@@ -28,41 +28,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
-- trigger an argo cd application sync from git
+- list argo cd applications
+- DevOps Engineer
+- platform engineering
+- workflow management
+- list workflows
+- applications sync
+- list all argo workflows in a namespace
+- list all argo cd applications with sync and health status
 - kubernetes
-- container orchestration platform
 - workflows list
 - container-native workflow execution
-- progressive delivery
-- workflow management
-- list all argo cd applications with sync and health status
-- applications list
-- applications sync
-- list applications
-- submit a new argo workflow
-- gitops application management
-- gitops
-- DevOps Engineer
-- submit a new workflow
-- workflows create
-- list all workflows
-- argo
-- create workflow
-- list workflows
-- list all argo workflows in a namespace
 - uses argo tools for ci/cd and gitops workflows
-- manages kubernetes platform tools including argo workflows and argo cd
-- list argo cd applications
-- sync an application from git
-- platform engineering
-- Platform Engineer
-- cncf
-- workflow engine
-- git-driven deployment and infrastructure management
-- ci/cd
-- complete argo project platform combining workflows and cd for devops teams
-- sync application
 - open source
+- workflows create
+- ci/cd
+- create workflow
+- submit a new workflow
+- list all workflows
+- list applications
+- container orchestration platform
+- trigger an argo cd application sync from git
+- workflow engine
+- Platform Engineer
+- applications list
+- cncf
+- gitops application management
+- sync application
+- manages kubernetes platform tools including argo workflows and argo cd
+- submit a new argo workflow
+- progressive delivery
+- argo
+- git-driven deployment and infrastructure management
+- gitops
+- sync an application from git
+- complete argo project platform combining workflows and cd for devops teams
 slug: argo-platform
 source_filename: argo-platform.yaml
 source_heading: Capability Spec

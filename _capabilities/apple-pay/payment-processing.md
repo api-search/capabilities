@@ -26,31 +26,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- mobile payments
-- validates merchant and obtains apple pay payment session
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- merchant domain management for apple pay
-- apple pay merchant validation and payment session
-- validate merchant
-- E Commerce Developer
-- registering and managing merchant identity and domains for apple pay
 - Payment Integration Engineer
 - apple pay
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- apple pay merchant validation and payment session
+- merchant domain management for apple pay
 - engineer building payment processing infrastructure supporting multiple payment methods
-- developer integrating apple pay into a web or mobile checkout experience
-- digital wallet
-- checkout
-- register domain
-- register apple pay domain
 - initiating and completing apple pay payment authorizations
+- register apple pay domain
+- developer integrating apple pay into a web or mobile checkout experience
+- registers a merchant domain to accept apple pay on the web payments
+- E Commerce Developer
+- e-commerce
+- validate merchant
+- checkout
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- register a domain for apple pay on the web
+- validate apple pay merchant
+- digital wallet
+- apple
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- registering and managing merchant identity and domains for apple pay
 - contactless payments
 - payments
-- e-commerce
-- register a domain for apple pay on the web
-- registers a merchant domain to accept apple pay on the web payments
-- validate apple pay merchant
-- apple
+- register domain
+- validates merchant and obtains apple pay payment session
+- mobile payments
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

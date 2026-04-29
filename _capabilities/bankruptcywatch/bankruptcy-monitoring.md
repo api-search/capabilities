@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- creditor
-- file a proof of claim for a bankruptcy case
-- Creditor
-- list monitors
 - compliance
-- bankruptcywatch
-- Bankruptcy Attorney
-- create a bankruptcy monitoring alert for a debtor or entity
-- list claims register for a bankruptcy case
-- court data
-- file proof of claim
-- list all active bankruptcy monitoring alerts
-- legal
-- search bankruptcy cases
-- create bankruptcy monitor
-- list case claims
-- lending
-- automated alerts for bankruptcy filings
-- bankruptcy
-- Loan Officer
 - business or individual owed money by a bankruptcy filer
-- us bankruptcy court cases and proceedings
-- attorney managing creditor representation in bankruptcy proceedings
-- get case docket
-- lender monitoring borrowers for bankruptcy filings
-- get detailed information about a specific bankruptcy case
-- retrieve docket entries for a bankruptcy case
-- pacer
-- search for bankruptcy cases across all us bankruptcy court districts
 - bankruptcy case research, claims management, and automated monitoring
+- attorney managing creditor representation in bankruptcy proceedings
+- list case claims
+- create bankruptcy monitor
+- file a proof of claim for a bankruptcy case
+- lending
+- bankruptcy
+- list monitors
+- list claims register for a bankruptcy case
 - get bankruptcy case
+- list all active bankruptcy monitoring alerts
+- lender monitoring borrowers for bankruptcy filings
+- court data
+- automated alerts for bankruptcy filings
+- retrieve docket entries for a bankruptcy case
+- us bankruptcy court cases and proceedings
+- bankruptcywatch
+- legal
+- search for bankruptcy cases across all us bankruptcy court districts
+- file proof of claim
+- Loan Officer
+- search bankruptcy cases
+- get case docket
+- get detailed information about a specific bankruptcy case
+- pacer
+- Bankruptcy Attorney
+- Creditor
+- create a bankruptcy monitoring alert for a debtor or entity
+- creditor
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

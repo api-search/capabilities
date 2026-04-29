@@ -76,112 +76,112 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- authenticated app
-- set membership
-- t1
-- delete org package
-- code
-- create webhook
-- individual installation
-- get an app by slug
-- delete a team
-- pipelines
-- organization webhooks
-- create installation token
-- unsuspend an app installation
-- remove member
-- list teams
-- update team
-- create an organization repository
-- team management
-- list packages
-- list team repositories
-- getTeamByName
-- get webhook config
-- list organization members
-- list installations
-- list organization package versions
-- listOrganizationMembers
-- list org packages
-- organization packages
-- list members
-- listTeams
-- get org package
-- update app webhook configuration
-- get an organization package
-- platform administration
-- list repositories
-- list installation repos
-- list app installations
-- list org package versions
-- delete team
-- create an installation access token
-- list org repos
-- get an app installation
-- updateAnOrganization
-- software development
-- get organization
-- get team
-- update a team
-- create a team
-- get a team
-- listOrganizationRepositories
-- get an organization
-- get the authenticated app
-- teams
-- suspend installation
-- remove an organization member
-- listPackagesForAnOrganization
-- list organization packages
-- packages
-- create an access token
-- unsuspend installation
-- getAnInstallationForTheAuthenticatedApp
-- set organization membership
-- platform
-- suspend an app installation
-- organization repositories
-- installation access tokens
-- add team member
-- list organization webhooks
-- create an organization webhook
-- listOrganizationWebhooks
-- get authenticated app
-- create team
-- list organization repositories
-- list webhooks
-- app installations
-- getAnOrganization
-- delete an organization package
-- get installation
-- organization management
-- delete an installation
-- createTeam
-- member management
-- organizations
-- deleteTeam
-- createAnInstallationAccessTokenForAnApp
-- create org repo
-- individual team operations
-- add or update team repository permissions
-- get an installation
-- deleteAnInstallationForTheAuthenticatedApp
-- list team members
 - add or update team membership
+- list webhooks
+- create installation token
+- teams
+- get authenticated app
 - add team repo
-- update organization
-- list team repos
-- get app webhook configuration
-- listInstallationsForTheAuthenticatedApp
-- updateTeam
-- source control
-- getTheAuthenticatedApp
-- github
+- get an app by slug
+- add or update team repository permissions
+- get webhook config
+- list members
+- update app webhook configuration
+- get team
 - get app
+- individual installation
+- list team members
+- add team member
+- organization repositories
+- deleteTeam
+- listOrganizationWebhooks
+- organizations
+- software development
+- unsuspend an app installation
+- list org packages
+- suspend an app installation
+- installation access tokens
 - update an organization
-- list repositories accessible to the installation
-- update webhook config
+- individual team operations
+- delete a team
+- set membership
+- list organization members
+- get app webhook configuration
+- list org repos
+- t1
+- listInstallationsForTheAuthenticatedApp
+- listPackagesForAnOrganization
+- get an organization
+- update organization
+- list teams
+- create an installation access token
+- suspend installation
+- platform
+- platform administration
+- organization management
+- code
+- getAnOrganization
+- list team repositories
+- deleteAnInstallationForTheAuthenticatedApp
+- list team repos
+- delete team
+- update team
+- get a team
 - apps
+- list repositories accessible to the installation
+- get org package
+- updateAnOrganization
+- authenticated app
+- organization webhooks
+- getAnInstallationForTheAuthenticatedApp
+- delete an installation
+- pipelines
+- create a team
+- list installation repos
+- list repositories
+- remove an organization member
+- get installation
+- create an organization webhook
+- list organization packages
+- app installations
+- update webhook config
+- getTheAuthenticatedApp
+- create webhook
+- get organization
+- unsuspend installation
+- delete an organization package
+- get an app installation
+- organization packages
+- list app installations
+- delete org package
+- updateTeam
+- packages
+- github
+- remove member
+- get an installation
+- create an access token
+- create an organization repository
+- createAnInstallationAccessTokenForAnApp
+- team management
+- listOrganizationRepositories
+- listTeams
+- get the authenticated app
+- list packages
+- create team
+- list org package versions
+- list organization repositories
+- list organization package versions
+- list organization webhooks
+- set organization membership
+- update a team
+- get an organization package
+- source control
+- create org repo
+- createTeam
+- listOrganizationMembers
+- member management
+- getTeamByName
+- list installations
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

@@ -38,48 +38,48 @@ personas: []
 provider_name: Activepieces
 provider_slug: activepieces
 search_terms:
-- list flows
-- project management
-- automation flow management
+- list flow execution runs
 - list connections
-- monitors flow execution, manages connections, troubleshoots failures
-- get flow run
-- workflow
-- automation
-- project, user, and organization administration
-- activepieces
-- delete an automation flow
-- list all activepieces projects
-- mcp
-- create a new automation flow in activepieces
-- create a new automation flow
-- list flow runs
 - delete flow
 - Developer
-- No Code Builder
-- create flow
-- retrieve a specific automation flow by id
-- creates automation workflows using the visual builder
-- list projects
-- app connection management
-- get details of a specific flow execution run
+- create a new automation flow
 - workflow automation and flow orchestration
-- Operations Engineer
-- builds custom integrations using the api and typescript pieces
-- integration
-- get flow
-- third-party app connections and piece management
-- build and monitor automation flows, manage connections, debug executions
+- automation flow management
+- list all activepieces projects
+- list flow runs
+- workflow
+- activepieces
 - list execution history for automation flows
+- mcp
+- project management
 - no-code
-- list flow execution runs
-- execution monitoring
-- list all app connections available in the project
 - list automation flows
+- get flow run
+- integration
+- retrieve a specific automation flow by id
+- list all app connections available in the project
+- create flow
 - list all automation flows in the activepieces project
-- ai agents
+- delete an automation flow
+- third-party app connections and piece management
 - open source
+- build and monitor automation flows, manage connections, debug executions
+- create a new automation flow in activepieces
+- automation
+- monitors flow execution, manages connections, troubleshoots failures
+- get details of a specific flow execution run
+- builds custom integrations using the api and typescript pieces
+- get flow
+- list flows
+- Operations Engineer
+- No Code Builder
+- app connection management
+- execution monitoring
+- project, user, and organization administration
+- creates automation workflows using the visual builder
+- ai agents
 - list app connections
+- list projects
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

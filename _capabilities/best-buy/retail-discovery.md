@@ -40,56 +40,56 @@ personas: []
 provider_name: Best Buy
 provider_slug: best-buy
 search_terms:
-- get store details including hours and services
-- search and browse the best buy product catalog
-- find best buy stores near a location
-- get products frequently viewed alongside this sku
-- consumer electronics
-- find best buy stores near a location using postal code or gps coordinates
-- find best buy stores with proximity search
-- get also-viewed product recommendations
-- get most viewed products
-- get a specific best buy product by sku
-- search and filter best buy products with keyword search and attribute filtering
-- products
-- get trending best buy products
-- get also bought
-- list stores
-- get detailed product information by sku
-- get a specific best buy store
-- get hours, services, and contact information for a specific best buy store
-- search the best buy product catalog by keyword, price range, or product attributes
-- Developer
-- get also viewed
-- search products
-- product search, store lookup, and recommendations
-- product search, filtering, and attribute retrieval
 - get product
-- get also-bought product recommendations
-- get detailed product information for a specific best buy sku including price, availability, and specs
-- authorized best buy commerce partner building shopping experiences
-- retail
-- get trending
+- Developer
+- search and filter best buy products with keyword search and attribute filtering
+- get store details including hours and services
 - best buy
-- get top trending products by view velocity
-- get trending products
-- get also viewed products
-- e-commerce
-- find stores
-- developer building retail integrations and shopping applications
-- get products frequently viewed alongside a specific sku for cross-sell discovery
-- get the most viewed best buy products in the last 48 hours
-- store location, hours, and services
-- get products frequently purchased with this sku
-- get also bought products
-- recommendations
+- get also viewed
+- authorized best buy commerce partner building shopping experiences
 - get store
-- Partner
-- get the top trending best buy products by category or across the entire catalog
-- behavioral recommendations and trending data
-- get products frequently purchased together with a specific sku for bundle recommendations
-- list products
+- get top trending products by view velocity
+- find stores
+- list stores
+- get also-viewed product recommendations
+- consumer electronics
+- find best buy stores near a location
+- search the best buy product catalog by keyword, price range, or product attributes
+- product search, filtering, and attribute retrieval
+- search and browse the best buy product catalog
 - stores
+- get most viewed products
+- get trending products
+- search products
+- get also viewed products
+- get the top trending best buy products by category or across the entire catalog
+- find best buy stores with proximity search
+- get hours, services, and contact information for a specific best buy store
+- e-commerce
+- get products frequently viewed alongside this sku
+- get the most viewed best buy products in the last 48 hours
+- get products frequently viewed alongside a specific sku for cross-sell discovery
+- products
+- developer building retail integrations and shopping applications
+- get also bought
+- Partner
+- recommendations
+- list products
+- get detailed product information for a specific best buy sku including price, availability, and specs
+- get trending best buy products
+- get products frequently purchased with this sku
+- get detailed product information by sku
+- get a specific best buy product by sku
+- behavioral recommendations and trending data
+- find best buy stores near a location using postal code or gps coordinates
+- get trending
+- product search, store lookup, and recommendations
+- store location, hours, and services
+- get a specific best buy store
+- get products frequently purchased together with a specific sku for bundle recommendations
+- retail
+- get also-bought product recommendations
+- get also bought products
 slug: retail-discovery
 source_filename: retail-discovery.yaml
 source_heading: Capability Spec

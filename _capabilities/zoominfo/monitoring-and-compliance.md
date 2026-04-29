@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- contacts
-- validate a webhook target url.
-- get api usage data and consumption metrics.
-- update an existing webhook subscription.
-- data compliance operations.
-- b2b
-- webhook subscription management.
-- create webhook
-- webhook target url validation.
-- individual webhook management.
-- compliance
-- get subscription types
-- delete webhook
-- api usage tracking.
-- create a new webhook subscription.
-- monitoring
-- get usage
 - lead generation
-- list all configured webhook subscriptions.
-- validate target url
-- check compliance
-- zoominfo
+- compliance
+- data compliance operations.
+- list webhooks
+- delete a webhook subscription.
+- api usage tracking.
+- get api usage data and consumption metrics.
+- check compliance status for specified contacts.
 - list all webhook subscriptions.
-- contact database
+- monitoring
+- create a new webhook subscription.
+- available webhook subscription types.
+- zoominfo
+- webhooks
+- contacts
+- update webhook
+- marketing intelligence
+- data
+- validate target url
+- validate a webhook target url.
+- individual webhook management.
+- webhook target url validation.
+- validate a webhook target url is reachable.
+- webhook subscription management.
+- create a new webhook subscription for data change notifications.
 - check data compliance status for specified contacts.
 - sales intelligence
-- company data
-- marketing intelligence
-- webhooks
-- get api usage data.
-- create a new webhook subscription for data change notifications.
-- update webhook
-- b2b data
-- check compliance status for specified contacts.
-- validate a webhook target url is reachable.
+- get usage
 - api usage
-- data
-- delete a webhook subscription.
+- company data
+- b2b
+- create webhook
+- delete webhook
+- b2b data
+- check compliance
+- get api usage data.
+- list all configured webhook subscriptions.
+- contact database
 - get available webhook subscription types.
-- available webhook subscription types.
-- list webhooks
+- get subscription types
+- update an existing webhook subscription.
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

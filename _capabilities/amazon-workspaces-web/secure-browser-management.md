@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- administration
+- list portals
+- create portal
+- browser policy and access control enforcement
+- secure remote browser access infrastructure
+- list network settings
+- user settings management.
+- list secure browser portals.
+- aws
+- list trust stores.
+- list ssl certificate trust stores.
+- create a portal.
 - configures browser policies and access controls.
-- virtual desktop
+- manages workspaces web portals and configurations.
+- zero trust
+- IT Administrator
+- list trust stores
+- portal management.
+- list user settings configurations for portals.
+- portal and resource provisioning
+- administration
+- network configuration management.
+- Security Engineer
+- list user settings.
 - list user settings
 - browser policy management.
-- list network settings.
-- list trust stores.
-- secure remote browser access infrastructure
-- list all workspaces web secure browser portals.
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
 - list browser settings
-- network configuration management.
-- list user settings configurations for portals.
-- secure browser
-- list ssl certificate trust stores.
-- aws
-- list network settings for portal connectivity.
-- Security Engineer
 - list browser policy settings for portals.
-- manages workspaces web portals and configurations.
-- portal and resource provisioning
-- list portals
-- create a new secure browser portal.
-- list secure browser portals.
-- end user computing
-- list browser settings.
-- IT Administrator
-- user settings management.
-- browser policy and access control enforcement
-- list network settings
+- list network settings.
 - trust store management.
-- create a portal.
-- list trust stores
-- create portal
-- portal management.
-- zero trust
-- list user settings.
+- list browser settings.
+- create a new secure browser portal.
+- virtual desktop
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- list network settings for portal connectivity.
+- end user computing
+- secure browser
+- list all workspaces web secure browser portals.
 slug: secure-browser-management
 source_filename: secure-browser-management.yaml
 source_heading: Capability Spec

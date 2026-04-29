@@ -11,48 +11,48 @@ personas: []
 provider_name: Amazon CodeBuild
 provider_slug: amazon-codebuild
 search_terms:
-- list all codebuild projects
-- get details about specific codebuild projects
-- build project management and build execution workflows.
-- access build and test reports
-- build
-- delete a codebuild project
-- start a new build for a codebuild project
-- delete project
-- runs and monitors builds for their projects.
-- update project
-- stop a running codebuild build
-- get details about specific builds
-- list builds for a specific codebuild project
-- list builds for project
-- get projects
-- manages build infrastructure and pipelines.
-- stop build
-- automated compilation, testing, and artifact production.
-- Developer
-- DevOps Engineer
-- aws
-- create project
-- devops
-- build automation
-- list projects
-- continuous integration and delivery pipeline management.
-- create a new codebuild build project
-- start build
 - get builds
-- manage codebuild build projects
-- list report groups
-- list codebuild test and coverage reports
-- ci/cd
-- start and monitor builds
-- list all builds or builds for a specific project
-- testing
-- list codebuild report groups
-- amazon
+- DevOps Engineer
+- Developer
+- list all codebuild projects
+- build
 - update an existing codebuild project configuration
-- list builds
-- continuous integration
+- build automation
+- update project
+- delete a codebuild project
+- runs and monitors builds for their projects.
+- create project
+- build project management and build execution workflows.
+- continuous integration and delivery pipeline management.
+- amazon
+- aws
+- start and monitor builds
+- create a new codebuild build project
+- get details about specific builds
+- stop a running codebuild build
+- ci/cd
+- list builds for project
+- manages build infrastructure and pipelines.
+- testing
+- list codebuild test and coverage reports
+- list all builds or builds for a specific project
+- list report groups
+- get projects
+- manage codebuild build projects
 - list reports
+- devops
+- start build
+- automated compilation, testing, and artifact production.
+- list builds for a specific codebuild project
+- stop build
+- continuous integration
+- delete project
+- access build and test reports
+- list builds
+- get details about specific codebuild projects
+- list projects
+- start a new build for a codebuild project
+- list codebuild report groups
 slug: amazon-codebuild-cicd
 source_filename: amazon-codebuild-cicd.yaml
 source_heading: Capability Spec

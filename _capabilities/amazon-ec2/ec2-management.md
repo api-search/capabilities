@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- rebootInstances
-- deregisterImage
-- cloud compute management business domain for amazon ec2.
-- amazon ec2 deregister an ami
-- amazon ec2 describe ec2 instances
 - compute
-- amazon ec2 launch ec2 instances
-- amazon ec2 terminate instances
-- amazon ec2 start stopped instances
-- describeInstanceStatus
-- infrastructure
-- amazon ec2
-- startInstances
-- amazon ec2 create an ami from an instance
-- cloud computing
-- start instances
 - terminate instances
-- iaas
-- stop instances
-- virtual machines
-- describe images
-- stopInstances
 - describeImages
-- engineers managing amazon ec2 resources on aws.
-- workflow capability for cloud compute management.
-- run instances
-- aws
-- runInstances
-- amazon ec2 describe instance status
-- amazon ec2 describe amis
-- createImage
-- terminateInstances
-- deregister image
-- amazon ec2 reboot instances
-- reboot instances
-- describe instance status
+- cloud computing
+- describe images
 - describe instances
-- create image
+- start instances
+- aws
+- amazon ec2 describe ec2 instances
+- engineers managing amazon ec2 resources on aws.
+- amazon ec2 describe instance status
+- amazon ec2 deregister an ami
 - describeInstances
 - amazon ec2 stop running instances
+- startInstances
+- terminateInstances
+- amazon ec2 start stopped instances
+- rebootInstances
+- describe instance status
+- createImage
+- stopInstances
+- iaas
+- workflow capability for cloud compute management.
+- cloud compute management business domain for amazon ec2.
+- create image
+- amazon ec2 describe amis
+- deregister image
+- amazon ec2 reboot instances
+- amazon ec2
+- run instances
+- stop instances
+- deregisterImage
+- reboot instances
+- virtual machines
+- runInstances
+- infrastructure
+- describeInstanceStatus
+- amazon ec2 terminate instances
+- amazon ec2 launch ec2 instances
+- amazon ec2 create an ami from an instance
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

@@ -11,26 +11,26 @@ personas: []
 provider_name: Apptainer
 provider_slug: apptainer
 search_terms:
-- pull images and run reproducible scientific computing workloads
-- researcher running reproducible computational experiments in containers
-- starting and monitoring container instances for scientific computation
-- lists apptainer container images optimized for hpc workloads
-- pulls a container image for hpc workloads from docker or oci registry
 - system administrator managing container infrastructure on hpc clusters
-- managing container images for hpc workloads
-- containers
-- pull hpc image
-- research
 - run scientific workload
 - hpc
-- scientific computing
+- monitors currently running apptainer container instances
+- researcher running reproducible computational experiments in containers
+- containers
+- starting and monitoring container instances for scientific computation
+- starts an apptainer container instance to run a scientific computing workload
+- pull images and run reproducible scientific computing workloads
+- apptainer
+- open source
+- managing container images for hpc workloads
+- pulls a container image for hpc workloads from docker or oci registry
+- pull hpc image
+- linux foundation
 - list hpc images
 - monitor running instances
-- linux foundation
-- starts an apptainer container instance to run a scientific computing workload
-- apptainer
-- monitors currently running apptainer container instances
-- open source
+- scientific computing
+- research
+- lists apptainer container images optimized for hpc workloads
 slug: hpc-container-management
 source_filename: hpc-container-management.yaml
 source_heading: Capability Spec

@@ -47,40 +47,40 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- retrieves a temporary download url for a media file. url expires after 5 minutes.
-- qr codes
-- deletes a media file from whatsapp servers.
-- delete qr code
-- delete media
-- send message
-- upload media
-- creates a qr code for starting conversations.
-- get qr code
-- lists all qr codes for a phone number.
-- retrieve and delete media files.
-- creates a qr code that customers can scan to start a conversation.
 - deletes a media file.
-- upload media files to whatsapp servers.
-- deletes a qr code.
-- create qr code
-- list qr codes
-- updates the prefilled message for a qr code.
-- qr codes for starting customer conversations.
-- media
-- customer engagement
-- messaging
-- uploads media to whatsapp servers.
-- retrieves a specific qr code.
 - individual qr code management.
-- retrieves a temporary download url for media.
-- send messages of all types to whatsapp users.
-- whatsapp
+- send message
+- messaging
+- qr codes for starting customer conversations.
+- updates the prefilled message for a qr code.
+- get qr code
+- retrieves a specific qr code.
+- list qr codes
 - get media url
-- sends a message to a whatsapp user.
-- update qr code
-- uploads media to whatsapp servers. returns a media id for use when sending media messages.
 - sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
+- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- deletes a qr code.
+- retrieve and delete media files.
+- lists all qr codes for a phone number.
+- customer engagement
+- creates a qr code that customers can scan to start a conversation.
+- delete qr code
+- sends a message to a whatsapp user.
+- qr codes
+- retrieves a temporary download url for a media file. url expires after 5 minutes.
+- uploads media to whatsapp servers.
+- delete media
+- whatsapp
+- media
+- creates a qr code for starting conversations.
+- deletes a media file from whatsapp servers.
+- send messages of all types to whatsapp users.
+- update qr code
+- upload media files to whatsapp servers.
 - updates a qr code.
+- retrieves a temporary download url for media.
+- create qr code
+- upload media
 slug: messaging-and-media
 source_filename: messaging-and-media.yaml
 source_heading: Capability Spec

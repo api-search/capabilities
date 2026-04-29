@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- create application
-- delete a group.
-- security
-- delete an application registration.
-- update user
-- azure ad
-- delete group
-- microsoft
-- update service principal properties.
-- create a new group.
-- user group membership.
-- list users
-- delete user
-- list members of a group.
-- list all users in microsoft entra directory.
-- create a new user in the directory.
-- list all applications.
-- list all groups.
-- update service principal
-- individual group management.
-- delete a user.
-- individual service principal management.
-- list user group memberships.
-- update application properties.
-- add group member
-- get user
-- individual application management.
-- get group details.
-- list applications
-- list user memberships
-- remove group member
-- list group members.
-- user account management.
-- get service principal
-- delete a user from the directory.
 - individual user management.
-- get application details.
-- group management.
-- delete a service principal.
-- list all application registrations.
-- zero trust
-- update user properties.
-- list groups and roles a user belongs to.
-- get user details.
-- remove a member from a group.
-- add a member to a group.
-- service principal management.
-- get service principal details.
-- identity governance
-- application registration management.
-- get user properties by id.
-- identity
-- microsoft entra
-- list groups
-- get group
-- list group members
-- list all groups in the directory.
-- delete application
-- update service principal.
-- create group
-- update group properties.
-- list all users in the directory.
-- group membership management.
-- list all service principals.
-- get application
 - create a new user.
-- entra
-- directory management
+- update service principal.
+- list all applications.
+- update application
+- delete a user from the directory.
+- get group
+- list group members.
+- group management.
+- list user group memberships.
+- get user details.
+- list all service principals.
+- delete a service principal.
+- delete a group.
+- list all groups in the directory.
+- create a new group.
+- access management
+- list group members
 - delete an application.
 - authentication
-- update application
-- register a new application.
-- create user
-- delete service principal
-- access management
-- create service principal
+- microsoft
 - create a new service principal.
-- list service principals
-- network security
+- delete group
+- get application details.
+- delete an application registration.
+- update service principal properties.
+- list all users in microsoft entra directory.
+- get user properties by id.
+- delete user
+- azure ad
+- list all application registrations.
+- user group membership.
+- create service principal
+- update user properties.
 - update group
+- create user
+- list applications
+- delete a user.
+- create group
+- list groups
+- security
+- update user
+- add a member to a group.
+- update group properties.
+- create a new user in the directory.
+- get service principal
+- register a new application.
+- microsoft entra
+- individual service principal management.
+- list members of a group.
+- get user
+- group membership management.
+- identity
+- list all users in the directory.
+- network security
+- get group details.
+- update application properties.
+- zero trust
+- delete service principal
+- service principal management.
+- list groups and roles a user belongs to.
+- list service principals
+- remove group member
+- update service principal
+- individual group management.
+- remove a member from a group.
+- user account management.
+- list users
+- list all groups.
+- add group member
+- create application
+- delete application
+- directory management
+- individual application management.
+- get application
+- identity governance
+- list user memberships
+- application registration management.
+- entra
+- get service principal details.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

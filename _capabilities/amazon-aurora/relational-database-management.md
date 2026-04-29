@@ -19,32 +19,32 @@ provider_slug: amazon-aurora
 search_terms:
 - start db cluster
 - stop an aurora db cluster to reduce costs when not in use.
+- add a new read replica or writer instance to an aurora db cluster.
+- amazon aurora
+- relational database
+- start a stopped aurora db cluster to resume database operations.
+- aws
+- modify db cluster
 - restore an aurora db cluster from a snapshot for disaster recovery.
+- describe db clusters
+- create a new aurora db cluster
+- list all aurora db clusters to understand available databases and their status.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- restore db cluster from snapshot
+- create db cluster
+- list all db instances in aurora clusters.
+- create db cluster snapshot
+- describe db cluster snapshots
+- modify the configuration of an existing aurora db cluster.
 - stop db cluster
 - aurora db cluster management
-- list available aurora db cluster snapshots for backup management.
-- add a new read replica or writer instance to an aurora db cluster.
-- modify db cluster
-- create a new aurora mysql or postgresql compatible db cluster.
-- modify the configuration of an existing aurora db cluster.
-- aws
-- create db cluster
 - mysql
-- start a stopped aurora db cluster to resume database operations.
-- restore db cluster from snapshot
-- describe db cluster snapshots
-- describe db clusters
-- list all db instances in aurora clusters.
-- relational database
-- describe db instances
-- postgresql
-- create db cluster snapshot
-- create a new aurora db cluster
-- create a snapshot of an aurora db cluster for backup or cloning.
-- create db instance
 - list aurora db clusters
-- amazon aurora
-- list all aurora db clusters to understand available databases and their status.
+- describe db instances
+- create a new aurora mysql or postgresql compatible db cluster.
+- list available aurora db cluster snapshots for backup management.
+- postgresql
+- create db instance
 slug: relational-database-management
 source_filename: relational-database-management.yaml
 source_heading: Capability Spec

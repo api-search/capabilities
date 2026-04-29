@@ -28,59 +28,59 @@ personas: []
 provider_name: Bandwidth
 provider_slug: bandwidth
 search_terms:
-- list toll free verifications
-- send mfa code sms
-- register an endpoint for e911 emergency calling
+- list messages sent or received on the account
+- send an sms or mms message
+- Application Developer
 - send message
-- submit a toll-free number for verification
-- mfa
-- list e911 endpoints
-- send an mfa verification code via sms
-- search, order, and manage telephone numbers
-- create e911 endpoint
-- order phone numbers
-- administrator managing bandwidth account, numbers, and compliance
+- messaging
+- verify mfa
 - send sms message
-- search available phone numbers
-- submit toll free verification
-- voice
-- create call
+- communications
+- order phone numbers
 - list emergency calling (e911) endpoints for the account
+- engineer designing and operating telephony and messaging infrastructure
+- voice call management
+- sms/mms messaging
+- initiate an outbound voice call through bandwidth
+- send mfa code sms
+- search for available phone numbers to order
+- outbound and inbound voice call management and recording
+- multi-factor authentication via voice or sms
+- list e911 endpoints
+- get call status
+- create e911 endpoint
+- sms
+- verify mfa code
+- verify an mfa code
+- send an sms or mms message via bandwidth messaging
+- register an endpoint for e911 emergency calling
+- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
+- developer building communication-enabled web or mobile applications
+- search, order, and manage telephone numbers
 - sms and mms message delivery and media management
 - Platform Administrator
-- send an sms or mms message via bandwidth messaging
-- messaging
-- bandwidth
-- voice call management
-- cpaas
-- list messages
-- initiate an outbound voice call through bandwidth
-- list toll-free number verification requests
-- place an order for phone numbers
-- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
-- verify a multi-factor authentication code
-- e911 endpoint registration and management
-- sms
-- sms/mms messaging
-- get call status
-- list messages sent or received on the account
-- outbound and inbound voice call management and recording
-- send an sms or mms message
-- create voice call
 - multi-factor authentication
-- initiate an outbound voice call
-- retrieve the status and details of a voice call
-- verify an mfa code
-- Communications Engineer
-- multi-factor authentication via voice or sms
-- Application Developer
-- search for available phone numbers to order
-- engineer designing and operating telephony and messaging infrastructure
+- list toll-free number verification requests
+- voice
+- send an mfa verification code via sms
+- search available phone numbers
+- submit a toll-free number for verification
+- list toll free verifications
+- verify a multi-factor authentication code
+- administrator managing bandwidth account, numbers, and compliance
+- submit toll free verification
 - telephony
-- verify mfa
-- verify mfa code
-- communications
-- developer building communication-enabled web or mobile applications
+- create call
+- e911 endpoint registration and management
+- create voice call
+- initiate an outbound voice call
+- list messages
+- cpaas
+- place an order for phone numbers
+- bandwidth
+- retrieve the status and details of a voice call
+- Communications Engineer
+- mfa
 slug: communications-platform
 source_filename: communications-platform.yaml
 source_heading: Capability Spec

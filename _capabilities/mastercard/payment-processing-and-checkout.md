@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- buy-now-pay-later installment plans
-- fraud detection
-- create a unified checkout session
-- mastercard
-- process a cloud commerce transaction
+- register contactless reader
 - credit cards
-- retrieve payment transaction details
-- checkout session management
-- create unified session
-- unified checkout sessions
-- digital identity
-- create installment plan
-- create an installment plan
-- create a new checkout session for a merchant
-- financial services
-- process payment
-- payment processing
-- generate a merchant-presented qr code for payment
-- get payment
-- create a new checkout session
+- create checkout session
+- create a unified checkout session
+- create a buy-now-pay-later installment plan
 - process a payment through the mastercard gateway
 - process a payment through the gateway
-- create a buy-now-pay-later installment plan
-- qr code payment acceptance
-- create checkout session
-- checkout
-- create a unified checkout session supporting multiple payment methods
-- merchant
-- process cloud transaction
-- generate qr code
-- open banking
-- generate a merchant qr code for payment
-- payments
+- payment processing
+- unified checkout sessions
+- get payment
+- create an installment plan
+- create installment plan
 - e-commerce
-- register a contactless reader device
-- register contactless reader
+- checkout
+- merchant
+- qr code payment acceptance
+- checkout session management
+- process a cloud commerce transaction
+- generate a merchant qr code for payment
+- financial services
+- create a unified checkout session supporting multiple payment methods
+- generate a merchant-presented qr code for payment
+- generate qr code
+- retrieve payment transaction details
+- fraud detection
+- create a new checkout session for a merchant
 - get payment details
+- mastercard
+- process cloud transaction
+- open banking
+- digital identity
+- buy-now-pay-later installment plans
+- payments
+- create a new checkout session
+- register a contactless reader device
+- create unified session
+- process payment
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

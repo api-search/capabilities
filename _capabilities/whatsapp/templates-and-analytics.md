@@ -36,32 +36,32 @@ provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
 - creates a new message template.
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- reporting
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- message templates
-- creates a new message template. templates must be approved by meta before use.
-- analytics
+- get conversation analytics
 - deletes a message template. deleting by name removes all language variants.
-- individual message template management.
-- retrieves conversation analytics.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- delete message template
 - update message template
-- conversation analytics and reporting.
 - message template management.
+- reporting
+- list message templates
+- individual message template management.
+- delete message template
+- retrieves conversation analytics.
+- analytics
+- message templates
+- template performance analytics.
+- marketing
+- updates an existing message template.
+- whatsapp
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
 - retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
 - lists all message templates for a waba.
-- whatsapp
-- deletes a message template.
-- marketing
-- retrieves template analytics.
-- create message template
-- get conversation analytics
-- updates an existing message template.
+- conversation analytics and reporting.
+- creates a new message template. templates must be approved by meta before use.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 - get template analytics
-- list message templates
-- template performance analytics.
+- create message template
+- retrieves template analytics.
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- deletes a message template.
 slug: templates-and-analytics
 source_filename: templates-and-analytics.yaml
 source_heading: Capability Spec

@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
-- subnets
-- security
-- private cloud
 - aws
+- security
 - vpc
+- subnets
+- private cloud
 - networking
 slug: amazon-vpc-capability
 source_filename: amazon-vpc-capability.yaml

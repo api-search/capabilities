@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- administration
+- exchange
+- list users
+- handles day-to-day email user and group management.
+- list all workmail organizations.
+- list organizations
+- workmail organization management.
+- enterprise email provisioning and management
+- list email distribution groups in an organization.
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- list users in a workmail organization.
 - email
+- create a new workmail user with mailbox.
+- enterprise
+- aws
+- list all amazon workmail organizations in the account.
+- group management.
+- mobile device access control and compliance
+- business communication
+- IT Administrator
+- it administration of email infrastructure
+- create user
+- administration
+- Email Operations
+- manages workmail infrastructure, user provisioning, and security policies.
+- mobile device access control.
+- user provisioning and management.
+- list mobile device access control rules.
 - calendar
 - create a new email user.
-- create a new workmail user with mailbox.
-- list email distribution groups in an organization.
-- list mobile device access rules
-- list mobile device access rules.
-- list users in a workmail organization.
-- workmail organization management.
-- handles day-to-day email user and group management.
-- exchange
-- it administration of email infrastructure
-- list users
-- mobile device access control and compliance
-- aws
-- list mobile device access control rules.
-- enterprise email provisioning and management
-- list all workmail organizations.
-- create user
-- manages workmail infrastructure, user provisioning, and security policies.
 - list groups
-- IT Administrator
 - list users in an organization.
-- list organizations
-- list all amazon workmail organizations in the account.
-- mobile device access control.
-- Email Operations
-- business communication
-- group management.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- list mobile device access rules
 - list email groups.
-- user provisioning and management.
-- enterprise
+- list mobile device access rules.
 slug: email-management
 source_filename: email-management.yaml
 source_heading: Capability Spec

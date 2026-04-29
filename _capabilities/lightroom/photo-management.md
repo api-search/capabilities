@@ -58,65 +58,65 @@ personas: []
 provider_name: Adobe Lightroom
 provider_slug: lightroom
 search_terms:
-- lightroom
-- get a rendition.
-- apply presets
-- list assets in a catalog.
-- list assets
-- image editing
 - album assets.
-- get the user's catalog.
-- photo assets.
-- image editing.
-- get develop xmp
-- auto straighten
-- list album assets
-- apply ai auto tone adjustment.
-- get rendition
-- create or update album
-- preset application.
-- apply ai auto straighten.
-- ai auto straighten.
-- get album
-- photo albums.
-- create or update an album.
-- specific asset operations.
-- list assets in an album.
-- apply lightroom presets to an image.
-- photo management
-- ai auto tone.
-- apply presets.
-- edit image
-- list photo assets in a catalog.
-- cloud storage
-- upload master
-- metadata
-- apply auto tone.
-- apply auto straighten.
-- adobe
-- asset renditions.
-- add assets to an album.
-- auto tone
-- get asset details.
-- get asset
-- lightroom catalog.
-- list photo albums.
-- get catalog
-- list albums
 - ai image editing
-- get a specific photo asset.
-- delete album
-- get a specific album.
-- photography
-- edit an image.
-- get a rendered version of an asset.
-- apply programmatic edits to an image.
-- upload an original master file.
-- list albums.
-- get xmp develop settings.
-- get the lightroom catalog.
+- list albums
+- lightroom catalog.
+- adobe
+- auto tone
+- list photo albums.
+- apply presets
 - delete an album.
+- specific asset operations.
+- get a rendered version of an asset.
+- upload master
+- cloud storage
+- preset application.
+- upload an original master file.
+- get the user's catalog.
+- ai auto tone.
+- get xmp develop settings.
+- list assets in a catalog.
+- photo assets.
+- list albums.
+- create or update album
 - add assets to album
+- asset renditions.
+- apply ai auto straighten.
+- get develop xmp
+- apply ai auto tone adjustment.
+- edit image
+- apply lightroom presets to an image.
+- metadata
+- photography
+- apply programmatic edits to an image.
+- lightroom
+- delete album
+- get album
+- apply auto straighten.
+- create or update an album.
+- photo albums.
+- list assets in an album.
+- list assets
+- get asset
+- get a specific photo asset.
+- auto straighten
+- apply presets.
+- image editing.
+- edit an image.
+- list photo assets in a catalog.
+- get a rendition.
+- image editing
+- photo management
+- get rendition
+- apply auto tone.
+- get asset details.
+- ai auto straighten.
+- get a specific album.
+- get the lightroom catalog.
+- get catalog
+- add assets to an album.
+- list album assets
 slug: photo-management
 source_filename: photo-management.yaml
 source_heading: Capability Spec

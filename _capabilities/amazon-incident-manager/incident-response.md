@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- incident management
+- create incident
+- get incident
 - create a new incident response plan with escalation contacts
+- get details of a specific incident
+- manage incident response plans
+- incident management
+- list timeline events
+- operations
+- aws
+- list all response plans
+- automated incident response plans and escalation
+- list active incidents
+- monitors system reliability and coordinates incident resolution
+- start a new incident and trigger response plan
+- Site Reliability Engineer
+- create response plan
+- list response plans
+- list incidents
+- automation
+- update incident
+- list timeline events for an incident
+- devops
+- create a new incident
+- Operations Engineer
 - creating, tracking, and resolving operational incidents
 - manages incident response plans and responds to operational incidents
-- list active incidents
-- get incident
-- manage active incidents
-- manage incident response plans
-- automation
-- get details of a specific incident
-- list timeline events for an incident
-- list all response plans
 - update the summary or status of an active incident
-- update incident
 - list active and recent incidents
-- aws
-- devops
-- monitors system reliability and coordinates incident resolution
+- manage active incidents
 - list all incident response plans
-- Operations Engineer
-- create a new incident
-- create response plan
-- create incident
-- operations
-- list timeline events
-- list response plans
-- Site Reliability Engineer
-- automated incident response plans and escalation
-- list incidents
-- start a new incident and trigger response plan
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

@@ -33,42 +33,42 @@ personas: []
 provider_name: AB Tasty
 provider_slug: ab-tasty
 search_terms:
-- evaluate visitor context and retrieve all matching campaign assignments
-- get flags
-- personalization
-- manual campaign activation
-- manually activate a campaign variation for a visitor
-- retrieve feature flag values and metadata for a visitor
-- conversion tracking and experiment measurement
-- product manager monitoring experiment assignments and flag rollouts
-- retrieve a specific campaign assignment for a visitor
-- feature flags
-- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
-- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
-- a/b testing
+- get campaign
+- ab tasty
 - Developer
-- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- progressive feature releases and feature toggles
+- experimentation
+- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
+- get visitor campaigns
+- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
+- manually activate a campaign variation for a visitor
+- evaluate visitor context and retrieve all matching campaign assignments
+- a/b testing, multivariate testing, and experiment management
+- activate experiment
 - get visitor flags
 - feature flag evaluation operations
-- experimentation
-- Product Manager
-- activate campaign
-- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
+- server side
+- personalization
+- get visitor campaign
+- backend or frontend developer implementing server-side experiments and feature flags
+- feature flags
+- a/b testing
+- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- get flags
+- retrieve feature flag values and metadata for a visitor
 - aggregation
 - retrieve campaign assignments for a visitor based on context
-- activate experiment
-- backend or frontend developer implementing server-side experiments and feature flags
-- progressive feature releases and feature toggles
-- get campaigns
-- server side
-- ab tasty
-- get visitor campaign
-- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
-- get campaign
-- quality assurance engineer using remote control api to test experiments
-- a/b testing, multivariate testing, and experiment management
-- get visitor campaigns
+- activate campaign
+- conversion tracking and experiment measurement
+- retrieve a specific campaign assignment for a visitor
+- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
 - get assignment for a specific campaign by id
+- manual campaign activation
+- product manager monitoring experiment assignments and flag rollouts
+- Product Manager
+- quality assurance engineer using remote control api to test experiments
+- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
+- get campaigns
 slug: feature-experimentation
 source_filename: feature-experimentation.yaml
 source_heading: Capability Spec

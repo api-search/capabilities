@@ -10,12 +10,12 @@ provider_name: CloudZero
 provider_slug: cloudzero
 search_terms:
 - cloud cost management
-- budgets
+- unit economics
 - finops
 - telemetry
-- cost allocation
-- unit economics
+- budgets
 - cost optimization
+- cost allocation
 slug: cloud-cost-finops
 source_filename: cloud-cost-finops.yaml
 source_heading: Capability Spec

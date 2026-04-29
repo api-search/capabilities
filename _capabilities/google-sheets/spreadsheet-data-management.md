@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- clear values from a range
-- get values
-- clear values from multiple ranges
-- write values to multiple ranges at once
-- create a new google sheets spreadsheet
-- google sheets
-- automation
-- create a new spreadsheet
-- spreadsheet lifecycle operations
-- append rows of data to a spreadsheet
-- single spreadsheet operations
-- update values
+- search developer metadata matching filters
 - apply batch updates to a spreadsheet
-- read values from a spreadsheet range
-- create spreadsheet
-- batch update values
-- data management
-- read values from multiple ranges at once
-- batch clear values
 - get spreadsheet details
-- copy a sheet to another spreadsheet
-- get spreadsheet
-- get developer metadata
-- write values to a spreadsheet range
-- cell value read and write operations
+- batch get values
+- read values from a spreadsheet range
+- spreadsheet lifecycle operations
+- get developer metadata by id
 - google workspace
-- write values to a range
 - read values from a range
 - batch update spreadsheet
-- copy sheet
-- append values
-- search developer metadata matching filters
-- productivity
 - get spreadsheet details by id
+- write values to a spreadsheet range
+- clear values from multiple ranges
+- batch clear values
+- single spreadsheet operations
+- copy sheet
+- write values to a range
+- cell value read and write operations
+- write values to multiple ranges at once
 - clear values
-- spreadsheets
-- append values to a range
-- get developer metadata by id
-- batch get values
-- search developer metadata
 - clear values from a spreadsheet range
+- append values to a range
+- data management
+- automation
+- google sheets
+- get spreadsheet
+- batch update values
+- get developer metadata
+- get values
+- spreadsheets
+- copy a sheet to another spreadsheet
+- productivity
+- append rows of data to a spreadsheet
+- read values from multiple ranges at once
+- update values
+- search developer metadata
+- clear values from a range
+- append values
+- create spreadsheet
+- create a new spreadsheet
+- create a new google sheets spreadsheet
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

@@ -47,76 +47,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- datasets
-- get the first rows of a dataset split for preview.
-- search dataset rows
-- get model information
-- get rows from a dataset
-- get space
-- list and search spaces
-- list and search models
-- filter dataset
-- check if a dataset is valid and available on the hub.
-- get dataset splits
-- list and search ml models on the hugging face hub.
-- get model
-- get dataset parquet
-- get detailed information about a specific space.
-- preview dataset rows
-- get model revision
-- list spaces
-- create repositories
-- get parquet file urls for a dataset.
-- create repo
-- search rows
-- whoami
-- get rows from a dataset split with pagination.
-- get croissant metadata
-- get authenticated user info
-- search dataset
-- list all available dataset tags grouped by type.
-- list all available model tags grouped by type.
-- data management
-- get statistical information about a dataset split.
-- list and search spaces on the hub.
-- get model information at a specific revision or branch.
-- hugging face
-- get dataset size
-- get model details
-- get croissant metadata for a dataset.
-- filter dataset rows using a condition.
-- delete repo
-- get dataset rows
-- update repo settings
-- list models
-- list model tags
-- list datasets
-- get dataset details
-- get dataset statistics
-- delete a repository from the hub.
-- list dataset tags
-- get dataset
-- manage spaces on the hub
-- get detailed information about a specific model.
-- get the list of splits for a dataset.
-- search for rows matching a query in a dataset.
-- get rows
 - hub
-- search rows in a dataset
-- create a new model, dataset, or space repository on the hub.
-- manage datasets on the hub
-- update settings for a repository.
-- get information about the authenticated user.
-- create a new repository
+- get model revision
 - list and search datasets on the hub.
-- get size information for a dataset.
-- get dataset information
-- list and search datasets
-- manage models on the hub
-- get detailed information about a specific dataset.
 - user information
+- get size information for a dataset.
+- get dataset details
+- get dataset rows
+- get detailed information about a specific model.
+- search for rows matching a query in a dataset.
+- get dataset parquet
+- get statistical information about a dataset split.
+- list and search datasets
+- get parquet file urls for a dataset.
+- get authenticated user info
+- create repositories
+- whoami
+- delete repo
+- get the first rows of a dataset split for preview.
+- get dataset information
+- hugging face
+- get croissant metadata for a dataset.
+- get model information
+- create repo
+- list dataset tags
+- list models
+- get dataset splits
+- get croissant metadata
+- get model details
+- manage spaces on the hub
+- create a new repository
+- get model information at a specific revision or branch.
+- update repo settings
+- list and search ml models on the hugging face hub.
+- get information about the authenticated user.
 - check dataset validity
+- data management
+- create a new model, dataset, or space repository on the hub.
+- list all available dataset tags grouped by type.
+- list and search models
+- search rows in a dataset
+- get detailed information about a specific space.
+- update settings for a repository.
+- get dataset
+- get model
+- search rows
+- list and search spaces on the hub.
+- get space
+- preview dataset rows
+- list model tags
+- delete a repository from the hub.
+- manage models on the hub
+- list and search spaces
+- manage datasets on the hub
+- list datasets
+- list spaces
+- get rows from a dataset split with pagination.
+- filter dataset
+- get rows
+- search dataset rows
+- check if a dataset is valid and available on the hub.
+- filter dataset rows using a condition.
+- get the list of splits for a dataset.
+- get rows from a dataset
+- datasets
+- get detailed information about a specific dataset.
+- get dataset size
+- list all available model tags grouped by type.
+- get dataset statistics
 - models
+- search dataset
 slug: hub-and-data-management
 source_filename: hub-and-data-management.yaml
 source_heading: Capability Spec

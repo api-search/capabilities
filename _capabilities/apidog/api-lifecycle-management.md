@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- import an openapi/swagger specification into an apidog project for design-first development.
-- export openapi
-- developer building and managing apis using apidog's design-first platform.
-- export openapi spec
-- import a postman collection into apidog for converting to openapi-based workflows.
-- api testing
-- mocking
-- import openapi spec
 - export api specifications to standard formats.
-- import
 - import api specifications from various formats.
-- api design
-- engineer automating api specification workflows via ci/cd integration.
-- export
-- managing the complete lifecycle of api specifications from design to deployment.
-- import openapi
-- api lifecycle
-- import postman collection
-- platform
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- export openapi specification from apidog project.
 - API Developer
-- Platform Engineer
 - documentation
+- export openapi spec
+- export
+- import openapi
+- managing the complete lifecycle of api specifications from design to deployment.
+- import openapi spec
+- api design
 - collaboration
 - apidog
-- import openapi specification into apidog project.
-- unified workflow for managing api specifications lifecycle.
+- developer building and managing apis using apidog's design-first platform.
 - design-first
+- import
+- export openapi
+- api lifecycle
+- export openapi specification from apidog project.
+- Platform Engineer
+- mocking
+- platform
+- import a postman collection into apidog for converting to openapi-based workflows.
+- import openapi specification into apidog project.
+- api testing
+- import an openapi/swagger specification into an apidog project for design-first development.
+- engineer automating api specification workflows via ci/cd integration.
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- import postman collection
+- unified workflow for managing api specifications lifecycle.
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

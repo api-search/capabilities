@@ -21,25 +21,25 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-dev-ops
 search_terms:
-- list
-- project management
-- list project resources
-- list all resources
-- list repositorys
 - resource management
-- list repository resources
-- list pipelines
-- devops
-- list projects
-- cloud
-- list organizations
-- azure resource management
-- list pipeline resources
-- version control
-- ci/cd
-- azure
 - list organization resources
+- list organizations
+- list all resources
+- list pipelines
+- list repository resources
+- project management
+- azure
+- list project resources
+- ci/cd
+- list repositorys
+- list
+- devops
+- cloud
+- version control
+- list projects
+- azure resource management
 - management
+- list pipeline resources
 slug: azure-dev-ops-management
 source_filename: azure-dev-ops-management.yaml
 source_heading: Capability Spec

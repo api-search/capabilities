@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- list available models
-- generate vector embeddings for semantic search and rag applications
-- generate an image from a text prompt using aimlapi image generation models
-- embeddings
-- list all models
-- developer integrating ai capabilities into applications via aimlapi
-- generate a chat response from any of 400+ ai language models via aimlapi
-- image generation
-- generate embeddings
-- artificial intelligence
 - api gateway
-- discover all 400+ available ai models on aimlapi platform
+- llm
 - Developer
-- ai engineer evaluating and comparing models for ml pipelines
-- chat completions via 400+ llms
-- api key management and model discovery
-- ai models
-- list models
-- video generation
-- create chat completion
-- generate image
-- developer tools
-- generate an image
-- ai model inference across modalities
 - access 400+ ai models for chat, image generation, embeddings, and model discovery
-- create embeddings
+- embeddings
 - create a chat completion
+- ai model inference across modalities
 - machine learning
 - speech
-- AI Engineer
+- generate vector embeddings for semantic search and rag applications
+- create chat completion
+- list models
+- ai engineer evaluating and comparing models for ml pipelines
+- developer integrating ai capabilities into applications via aimlapi
+- chat completions via 400+ llms
+- image generation
+- generate a chat response from any of 400+ ai language models via aimlapi
+- list all models
 - create image
+- generate embeddings
+- discover all 400+ available ai models on aimlapi platform
 - create embedding
-- llm
+- ai models
+- create embeddings
+- AI Engineer
+- artificial intelligence
+- developer tools
+- list available models
+- generate an image from a text prompt using aimlapi image generation models
+- video generation
+- generate an image
+- generate image
+- api key management and model discovery
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

@@ -29,64 +29,64 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- object storage
-- ai gateway management.
-- cdn
-- chat completions.
-- generate text embeddings.
-- security
-- ai execute model
-- real-time communication
-- create a vectorize index.
-- gateway list logs
-- vectorize index management.
-- text embeddings.
-- delete an ai gateway.
-- create a chat completion.
-- vectorize list indexes
-- vector database
-- run an ai model.
-- serverless
 - ai create text completion
-- get ai gateway details.
-- list ai gateway logs.
-- insert vectors into an index.
+- api gateway
+- object storage
+- perform similarity query.
+- real-time communication
+- generate text embeddings.
+- containers
+- create an ai response.
+- create a vectorize index.
+- cdn
+- text embeddings.
+- gateway get gateway
+- serverless
 - web performance
+- machine learning
+- insert vectors into an index.
+- edge
+- chat completions.
+- gateway create gateway
+- dns
+- create a text completion.
+- list ai gateway logs.
+- edge computing
+- create chat completion
+- ai gateway management.
 - ai create embeddings
 - gateway list gateways
-- vectorize create index
-- edge
-- cloudflare
-- create an ai gateway.
 - list ai gateways
-- ai create chat completion
-- gateway delete gateway
-- perform similarity query.
-- cloud
-- create chat completion
-- create an ai response.
-- containers
-- ai gateway
-- ai create response
-- platform
-- create a text completion.
-- vectorize query vectors
-- list vectorize indexes
-- create embeddings
 - delete a vectorize index.
-- gateway create gateway
-- list ai gateways.
-- dns
-- edge computing
-- list vectorize indexes.
-- machine learning
-- gateway get gateway
-- vectorize insert vectors
-- vectorize delete index
-- ddos protection
+- ai execute model
+- create an ai gateway.
+- create a chat completion.
 - list ai gateway instances.
-- api gateway
+- ddos protection
+- ai gateway
+- vector database
+- cloudflare
+- list ai gateways.
+- gateway delete gateway
+- vectorize insert vectors
+- create embeddings
+- vectorize create index
+- platform
 - artificial intelligence
+- list vectorize indexes.
+- get ai gateway details.
+- vectorize delete index
+- vectorize list indexes
+- delete an ai gateway.
+- cloud
+- list vectorize indexes
+- gateway list logs
+- vectorize query vectors
+- ai create response
+- run an ai model.
+- security
+- ai create chat completion
+- vectorize index management.
 slug: ai-and-ml
 source_filename: ai-and-ml.yaml
 source_heading: Capability Spec

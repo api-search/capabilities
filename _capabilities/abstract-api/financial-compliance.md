@@ -34,62 +34,62 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- finance
-- ip intelligence
-- validate a vat number and retrieve associated company details
-- get vat rates
-- contacts
-- image processing
-- exchange rates, vat validation, and iban validation for financial compliance
-- iban validation
-- exchange rates
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- currencies
-- validate iban
-- developer building user onboarding and personalization features
-- convert currency amounts
-- email validation
-- data engineer
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- get live rates
-- validate a vat number
-- fraud analyst
-- currency conversion, vat compliance, and banking validation for financial applications
-- public holidays
-- compliance analyst
-- convert an amount from one currency to another
-- validate vat
-- ip geolocation
-- convert an amount from one currency to another using live rates
-- validate an iban and get bank details
-- validate vat number
-- product engineer
-- get current vat rates for a country
-- web scraping
-- engineer building data pipelines and enrichment workflows
-- validate a vat number and get company details
-- phone validation
-- avatars
-- get the latest exchange rates for 80+ currencies
-- retrieve current exchange rates
-- convert currency
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- company enrichment
 - abstract api
 - detection and blocking of fraudulent users, transactions, and bot activity
-- engineer building fraud detection and threat intelligence systems
-- timezones
-- vat validation
-- developer building payment, billing, and financial compliance systems
-- screenshots
+- currency conversion, vat compliance, and banking validation for financial applications
+- iban validation
+- exchange rates
+- avatars
+- image processing
+- ip geolocation
+- finance
+- engineer building data pipelines and enrichment workflows
+- get current vat rates for a country
+- developer building user onboarding and personalization features
 - get live exchange rates
-- security engineer
-- finance engineer
-- financial compliance
-- company enrichment
-- validate an iban number
+- engineer building fraud detection and threat intelligence systems
+- data engineer
+- validate a vat number and get company details
+- contacts
+- get vat rates
+- ip intelligence
+- validate an iban and get bank details
+- retrieve current exchange rates
+- product engineer
+- validate vat
+- convert an amount from one currency to another using live rates
+- email validation
+- web scraping
+- vat validation
+- public holidays
+- convert an amount from one currency to another
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
 - validate an iban number and retrieve bank and account details
+- screenshots
+- compliance analyst
+- finance engineer
 - automatic enrichment of user profiles with geographic, company, and temporal data
+- validate a vat number
+- convert currency
+- fraud analyst
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- currencies
+- financial compliance
+- get live rates
+- get the latest exchange rates for 80+ currencies
+- developer building payment, billing, and financial compliance systems
+- security engineer
+- exchange rates, vat validation, and iban validation for financial compliance
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- validate a vat number and retrieve associated company details
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- phone validation
+- validate vat number
+- validate an iban number
+- validate iban
+- timezones
+- convert currency amounts
 slug: financial-compliance
 source_filename: financial-compliance.yaml
 source_heading: Capability Spec

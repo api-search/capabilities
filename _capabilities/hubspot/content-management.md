@@ -16,143 +16,143 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- batchupdateblogauthors
-- createblogauthor
-- hubspot get extraction task status
-- hubspot retrieve a blog author
-- listhubdbtables
-- hubspot archive a blog author
-- hubspot create multiple blog authors
-- listsitepages
-- batchreadblogposts
-- hubspot restore a previous version
-- hubspot archive multiple blog posts
-- hubspot set new primary language
+- cms
+- sales
+- createblogpost
 - attachblogposttolanguagegroup
-- hubspot publish hubdb table draft
-- createsitepage
-- hubspot download a source code file
-- hubspot delete a landing page
-- hubspot create a new source code file
-- hubspot schedule a blog post
-- gethubdbtable
-- updateblogauthor
-- email marketing
-- hubspot publish a site page
-- hubspot create multiple blog posts
-- hubspot create a blog post
-- hubspot update a blog post
 - archiveblogpost
-- getsourcecodemetadata
-- hubspot archive multiple blog authors
-- addhubdbtablerow
-- hubspot push draft to live
-- hubspot update a hubdb table
-- hubspot add a row to a hubdb table
-- cloneblogpost
+- batchreadblogposts
+- getblogpostrevisions
+- hubspot update a blog post
+- getsitepage
 - hubspot delete a hubdb table
-- hubspot list all blog posts
-- listblogposts
-- hubspot retrieve file or folder metadata
+- operations
+- gethubdbtable
+- getblogauthorbyid
+- batchupdateblogposts
+- batchupdateblogauthors
+- extractzipfileasync
 - getdomainbyid
-- gethubdbtablerow
-- updatesitepage
-- getextractiontaskstatus
-- getblogpostbyid
-- hubspot list landing pages
-- deletehubdbtable
-- getlandingpage
-- upsertsourcecodefile
-- hubspot get a domain by id
-- listlandingpages
-- hubspot create or update a source code file
-- hubspot update multiple blog authors
-- attachblogauthortolanguagegroup
-- pushblogpostdraftlive
-- hubspot list hubdb tables
+- publishsitepage
+- createsourcecodefile
+- hubspot get revision history
+- hubspot push draft to live
+- content
+- hubspot create multiple blog posts
+- hubspot reset draft to live version
+- detachblogauthorfromlanguagegroup
 - listdomains
+- hubspot update a hubdb table
+- createlandingpage
 - batchreadblogauthors
-- hubspot create a hubdb table
+- hubspot update a blog author
+- hubspot list landing pages
+- addhubdbtablerow
+- hubspot delete a site page
+- hubspot set new primary language
+- scheduleblogpost
+- createsitepage
+- detachblogpostfromlanguagegroup
+- hubspot
+- listblogauthors
+- updatehubdbtable
+- hubspot schedule a blog post
+- hubspot create a site page
+- getextractiontaskstatus
+- hubspot list hubdb tables
+- listblogposts
+- hubspot get a landing page
+- hubspot validate a source code file
+- hubspot create a blog author
+- attachblogauthortolanguagegroup
+- marketing automation
+- hubspot get extraction task status
+- archiveblogauthor
+- hubspot update multiple blog posts
+- hubspot get a hubdb table
+- listsitepages
+- hubspot read multiple blog posts
+- downloadsourcecodefile
+- hubspot create language variation
+- hubspot clone a blog post
+- hubspot create a new source code file
+- batchcreateblogposts
+- hubspot retrieve file or folder metadata
+- createhubdbtable
+- hubspot list hubdb table rows
+- hubspot list site pages
+- hubspot retrieve a blog post
+- listhubdbtablerows
+- listlandingpages
+- listhubdbtables
 - setblogpostlanguageprimary
+- hubspot read multiple blog authors
+- hubspot detach post from language group
+- hubspot add a row to a hubdb table
 - createblogpostlanguagevariation
 - updateblogpost
-- hubspot clone a blog post
-- publishhubdbtabledraft
-- hubspot read multiple blog posts
-- cms
-- hubspot get a hubdb table
-- sales
-- detachblogpostfromlanguagegroup
-- hubspot update a blog author
-- hubspot delete a site page
-- validatesourcecodefile
-- hubspot list all blog authors
-- hubspot retrieve a blog post
-- content
-- hubspot update a hubdb table row
-- getblogauthorbyid
-- publishsitepage
-- hubspot detach author from language group
-- extractzipfileasync
-- batchcreateblogauthors
-- crm
-- deletelandingpage
-- hubspot read multiple blog authors
-- batchcreateblogposts
-- marketing
-- hubspot delete a source code file
-- hubspot create language variation
-- hubspot list site pages
-- hubspot reset draft to live version
-- hubspot create a blog author
-- hubspot get a hubdb table row
-- commerce
+- getblogpostbyid
+- hubspot create or update a source code file
 - deletehubdbtablerow
-- hubspot list all domains
-- scheduleblogpost
-- hubspot create a site page
-- batcharchiveblogauthors
-- setnewblogauthorlanguageprimary
-- deletesitepage
-- batcharchiveblogposts
-- hubspot detach post from language group
+- hubspot archive multiple blog posts
 - hubspot extract a zip archive
-- archiveblogauthor
-- hubspot
-- blogs
-- createblogpost
-- hubspot update a site page
-- analytics
-- hubspot create a landing page
-- detachblogauthorfromlanguagegroup
-- listhubdbtablerows
-- deletesourcecodefile
-- createblogauthorlanguagevariation
-- hubspot delete a hubdb table row
-- getblogpostrevisions
-- hubspot get a site page
-- batchupdateblogposts
-- hubspot get revision history
-- hubspot attach author to language group
-- updatehubdbtablerow
-- operations
-- restoreblogpostrevision
-- updatehubdbtable
-- hubspot update multiple blog posts
-- downloadsourcecodefile
-- hubspot get a landing page
-- createsourcecodefile
-- customer service
-- createlandingpage
+- hubspot restore a previous version
+- createblogauthor
 - hubspot attach post to language group
-- marketing automation
-- getsitepage
+- hubspot create a blog post
+- hubspot update multiple blog authors
+- hubspot retrieve a blog author
+- crm
+- hubspot create a landing page
+- gethubdbtablerow
+- updatehubdbtablerow
+- hubspot publish hubdb table draft
+- hubspot update a site page
+- upsertsourcecodefile
+- marketing
+- restoreblogpostrevision
+- batcharchiveblogauthors
+- getsourcecodemetadata
 - hubspot archive a blog post
-- hubspot validate a source code file
-- hubspot list hubdb table rows
-- listblogauthors
+- deletelandingpage
+- hubspot get a site page
+- getlandingpage
+- hubspot download a source code file
+- updateblogauthor
+- updatesitepage
+- hubspot update a hubdb table row
+- hubspot delete a source code file
+- deletesitepage
+- deletehubdbtable
+- hubspot create a hubdb table
+- hubspot list all blog posts
+- pushblogpostdraftlive
+- hubspot list all domains
+- validatesourcecodefile
+- hubspot archive a blog author
+- batchcreateblogauthors
+- createblogauthorlanguagevariation
+- hubspot create multiple blog authors
+- email marketing
+- hubspot detach author from language group
+- setnewblogauthorlanguageprimary
+- commerce
+- analytics
+- customer service
 - resetblogpostdraft
-- createhubdbtable
+- blogs
+- hubspot delete a hubdb table row
+- hubspot get a domain by id
+- batcharchiveblogposts
+- deletesourcecodefile
+- cloneblogpost
+- hubspot list all blog authors
+- hubspot delete a landing page
+- hubspot archive multiple blog authors
+- hubspot get a hubdb table row
+- publishhubdbtabledraft
+- hubspot attach author to language group
+- hubspot publish a site page
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

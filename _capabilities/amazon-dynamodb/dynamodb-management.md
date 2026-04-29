@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb list dynamodb tables
-- deleteItem
-- amazon dynamodb
-- getItem
+- update table
 - amazon dynamodb create a dynamodb table
-- deleteTable
-- listTables
-- amazon dynamodb describe a dynamodb table
-- amazon dynamodb update an item in a table
-- describeTable
-- describe table
-- list tables
-- update item
-- delete table
 - amazon dynamodb delete a dynamodb table
-- updateTable
-- delete item
-- amazon dynamodb get an item from a table
-- putItem
+- deleteItem
 - query
+- getItem
 - engineers managing amazon dynamodb resources on aws.
-- aws
-- get item
-- document store
+- listTables
+- amazon dynamodb list dynamodb tables
+- amazon dynamodb put an item into a table
 - serverless
-- key-value
+- describeTable
+- nosql database operations business domain for amazon dynamodb.
+- aws
+- amazon dynamodb update an item in a table
+- amazon dynamodb delete an item from a table
 - nosql
+- delete table
 - createTable
 - put item
+- list tables
+- delete item
 - amazon dynamodb query items in a table or index
-- nosql database operations business domain for amazon dynamodb.
+- amazon dynamodb get an item from a table
+- get item
 - create table
-- update table
-- workflow capability for nosql database operations.
-- database
+- document store
 - amazon dynamodb update a dynamodb table
-- amazon dynamodb put an item into a table
+- key-value
 - updateItem
-- amazon dynamodb delete an item from a table
+- workflow capability for nosql database operations.
+- putItem
+- update item
+- amazon dynamodb describe a dynamodb table
+- amazon dynamodb
+- describe table
+- deleteTable
+- updateTable
+- database
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

@@ -10,11 +10,11 @@ provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
 - dicom
-- machine learning
 - aws
-- hipaa
 - medical imaging
 - healthcare
+- hipaa
+- machine learning
 slug: amazon-healthimaging-medical-imaging-operations
 source_filename: amazon-healthimaging-medical-imaging-operations.yaml
 source_heading: Capability Spec

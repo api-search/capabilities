@@ -123,75 +123,75 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- delete database
-- fetch a database
-- delete a database
-- table management
-- dynamic table management
-- schema management
-- create a new schema
-- create a database
-- create a new table
-- sql
-- create a view
-- single database operations
-- create a schema
-- list views
-- delete schema
-- resume a dynamic table
-- create a dynamic table
-- fetch schema
-- create a table
-- resume dynamic table
-- list event tables
-- create an external volume
-- data lakes
-- list tables
-- list iceberg tables
-- delete table
-- list schemas in a database
-- suspend dynamic table
-- view management
-- create event table
-- list views in a schema
-- clone database
 - fetch schema details
-- data management
-- data warehousing
-- list all databases
-- suspend a dynamic table
-- iceberg table management
-- list schemas
-- data sharing
-- list tables in a schema
+- database management
+- snowflake
+- create a schema
+- create a new view
 - fetch table
-- create an event table
+- iceberg table management
+- fetch a database
+- table management
 - create an iceberg table
-- restore a dropped database
+- create database
+- view management
+- data engineering
+- list all databases
+- create view
 - list dynamic tables
-- fetch database details by name
-- clone a database
-- create table
+- clone database
+- data sharing
+- data warehousing
+- dynamic table management
+- list views in a schema
+- fetch database
+- schema management
+- create a view
+- list event tables
+- list tables in a schema
+- delete a schema
+- sql
+- list schemas in a database
+- create a new database
+- create a new schema
 - list databases
 - create dynamic table
-- create a new database
-- delete a table
-- data engineering
-- fetch table details
-- create a new view
-- create iceberg table
-- undrop database
-- database
+- clone a database
 - list all accessible databases
-- delete a schema
-- list external volumes
-- create view
-- snowflake
+- undrop database
+- delete table
+- suspend dynamic table
+- list tables
+- list schemas
+- single database operations
+- create iceberg table
+- create event table
+- list views
+- list iceberg tables
+- data management
+- create a table
+- resume a dynamic table
 - create schema
-- create database
+- restore a dropped database
+- delete a database
+- create table
+- create an external volume
+- delete database
+- create a database
+- list external volumes
+- create an event table
+- delete a table
+- fetch table details
+- fetch database details by name
+- suspend a dynamic table
+- data lakes
+- resume dynamic table
+- create a new table
+- create a dynamic table
+- delete schema
+- database
 - create external volume
-- fetch database
-- database management
+- fetch schema
 slug: data-management
 source_filename: data-management.yaml
 source_heading: Capability Spec

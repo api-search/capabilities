@@ -43,46 +43,46 @@ personas: []
 provider_name: Amazon Proton
 provider_slug: amazon-proton
 search_terms:
-- create service template
-- deploy a new application service from a service template
-- list environment templates
-- service template catalog for developers
-- create a service template
-- create service
-- create environment
-- list environments
-- list deployed environments
-- deploys services using self-service templates provided by platform engineers
-- list all deployed environments
-- infrastructure as code
-- list all deployed services
-- aws
-- serverless
-- devops
-- list services
-- deploy a new environment from a standardized template
-- create a new standardized environment template for developers
-- list service templates available for developer self-service
 - self-service
-- deployed service management
-- list environment templates for standardized infrastructure
-- environment template management for platform engineers
-- create an environment template
+- Application Developer
 - platform engineering
 - create an environment from a template
-- Platform Engineer
-- create environment template
-- ci/cd
-- create a new service template for standardized application deployments
-- deployed environment management
-- list service templates
-- list deployed services
-- platform engineering template and deployment workflow
-- amazon
-- Application Developer
 - templates
+- list all deployed environments
+- serverless
+- list deployed services
+- amazon
+- environment template management for platform engineers
+- create environment template
+- aws
+- infrastructure as code
+- deployed service management
+- create a new standardized environment template for developers
+- deploys services using self-service templates provided by platform engineers
+- ci/cd
+- create service
+- list environments
+- list services
+- deploy a new application service from a service template
+- list all deployed services
+- deploy a new environment from a standardized template
+- devops
+- platform engineering template and deployment workflow
+- Platform Engineer
+- deployed environment management
+- list environment templates for standardized infrastructure
+- list environment templates
+- service template catalog for developers
+- create service template
 - creates and manages environment and service templates for standardized deployments
+- create a new service template for standardized application deployments
+- list service templates available for developer self-service
+- list deployed environments
+- list service templates
+- create environment
+- create an environment template
 - create a service from a template
+- create a service template
 slug: platform-engineering
 source_filename: platform-engineering.yaml
 source_heading: Capability Spec

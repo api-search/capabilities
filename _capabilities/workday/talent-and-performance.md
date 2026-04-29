@@ -42,59 +42,59 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- candidates
-- talent list succession plans
-- get skills for a worker
-- list requisitions
-- list reviews
-- list all prospects
-- list all job postings
-- list all job requisitions
-- list all job applications
-- recruiting get candidate
-- list mentorships
-- recruiting list candidates
-- cloud computing
-- enterprise software
-- recruiting
-- performance list reviews
-- get a job application by id
-- talent management
-- recruiting get requisition
-- performance list badges
-- performance reviews
-- succession plans
-- get certifications for a worker
-- list candidates
-- recruiting get application
-- talent get certifications
-- give a feedback badge to a worker
-- get goals for a worker
-- list performance reviews
-- talent get skills
-- list feedback badges
+- performance get goals
 - performance request feedback
-- get talent profile for a worker
+- candidates
+- recruiting list applications
+- performance give badge
+- workday
+- cloud computing
+- list feedback badges
 - recruiting list requisitions
+- list reviews
+- get a job application by id
+- recruiting get application
+- give a feedback badge to a worker
+- request feedback for a worker
+- enterprise software
+- talent get skills
+- list all prospects
+- recruiting list candidates
+- list requisitions
+- recruiting get candidate
+- talent get profile
+- hcm
+- job requisitions
+- saas
+- get certifications for a worker
+- talent list succession plans
+- list job requisitions
+- list performance reviews
+- performance reviews
+- recruiting
+- list candidates
+- performance list reviews
+- list all job requisitions
+- financial management
+- list all job applications
+- list succession plans
+- talent list mentorships
+- recruiting get requisition
+- list all candidates
 - performance
 - get a candidate by id
-- list succession plans
+- succession plans
+- talent get certifications
+- get skills for a worker
 - recruiting list prospects
-- hcm
-- get a job requisition by id
-- financial management
-- talent list mentorships
-- list all candidates
-- list job requisitions
-- performance give badge
-- request feedback for a worker
-- talent get profile
-- recruiting list applications
-- saas
-- workday
-- performance get goals
+- list mentorships
+- list all job postings
+- talent management
+- performance list badges
 - recruiting list postings
-- job requisitions
+- get a job requisition by id
+- get talent profile for a worker
+- get goals for a worker
 slug: talent-and-performance
 source_filename: talent-and-performance.yaml
 source_heading: Capability Spec

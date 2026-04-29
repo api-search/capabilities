@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
+- message archiving and regulatory communications governance.
+- employee development tracking and content access.
+- social media
+- sales intelligence, lead management, and crm integration.
+- reporting
+- integrates linkedin authentication and sharing into applications.
+- tracks employee learning activity and completions.
+- archives communications for regulatory compliance.
+- careers
+- manages b2b ad campaigns and audience targeting on linkedin.
+- retrieve ad analytics by various pivots.
+- get ad analytics
+- get learning activity reports
+- uses sales navigator for lead generation and crm sync.
+- analytics
+- recruiting
+- posts jobs and manages candidates through ats integrations.
+- b2b advertising, audience targeting, and campaign analytics.
+- learning
+- business
+- marketing
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- retrieve ad analytics by various pivots and dimensions.
+- job posting, recruiting, and applicant tracking.
+- data portability and advertiser transparency for dma.
+- retrieve learning activity reports.
+- professional networking
 - linkedin
 - authentication, sharing, and verification for consumer apps.
-- reporting
-- data portability and advertiser transparency for dma.
-- b2b advertising, audience targeting, and campaign analytics.
-- job posting, recruiting, and applicant tracking.
-- careers
-- professional networking
-- tracks employee learning activity and completions.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- sales intelligence, lead management, and crm integration.
-- recruiting
-- analytics
-- posts jobs and manages candidates through ats integrations.
-- archives communications for regulatory compliance.
-- retrieve learning activity reports.
-- retrieve ad analytics by various pivots.
-- employee development tracking and content access.
-- learning
-- marketing
-- integrates linkedin authentication and sharing into applications.
-- business
-- social media
-- message archiving and regulatory communications governance.
-- get learning activity reports
-- get ad analytics
-- retrieve ad analytics by various pivots and dimensions.
-- uses sales navigator for lead generation and crm sync.
-- manages b2b ad campaigns and audience targeting on linkedin.
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

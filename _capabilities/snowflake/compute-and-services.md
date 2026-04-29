@@ -78,54 +78,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- fetch warehouse details
-- execute alert
-- fetch service status
-- create a virtual warehouse
-- list compute pools
-- list container services
-- sql
-- delete warehouse
-- compute
-- container service management
-- list image repositories
-- infrastructure
-- create a monitoring alert
-- compute pool management
-- create a compute pool
-- list alerts
-- create service
-- warehouse management
-- data lakes
-- list warehouses
-- create a warehouse
-- list virtual warehouses
-- fetch service logs
-- create an image repository
-- suspend service
-- data warehousing
-- list services
-- data sharing
-- create an alert
-- delete a warehouse
-- containers
-- fetch warehouse
-- get service status
-- create compute pool
-- resume service
-- list monitoring alerts
 - execute an alert
-- alert management
-- suspend a running service
-- database
-- resume a suspended service
+- suspend service
 - snowflake
-- create image repository
-- create warehouse
+- fetch service logs
+- compute
+- create a compute pool
+- data sharing
+- data warehousing
+- containers
+- compute pool management
+- create a monitoring alert
+- database
+- fetch warehouse details
+- resume service
+- list compute pools
+- suspend a running service
 - create a service
-- create a container service
-- get service logs
 - create alert
+- alert management
+- container service management
+- sql
+- create a virtual warehouse
+- resume a suspended service
+- list alerts
+- create compute pool
+- fetch service status
+- get service status
+- list image repositories
+- create service
+- list services
+- warehouse management
+- execute alert
+- list virtual warehouses
+- list monitoring alerts
+- delete warehouse
+- create a container service
+- list warehouses
+- create warehouse
+- infrastructure
+- create an alert
+- create a warehouse
+- list container services
+- data lakes
+- create an image repository
+- get service logs
+- fetch warehouse
+- create image repository
+- delete a warehouse
 slug: compute-and-services
 source_filename: compute-and-services.yaml
 source_heading: Capability Spec

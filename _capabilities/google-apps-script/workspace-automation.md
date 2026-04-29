@@ -51,54 +51,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- script project details and content
-- get the code content of a script project
-- create deployment
-- run script
-- get a specific deployment
-- get project
-- list processes
-- delete deployment
-- create a deployment of an apps script project
-- list a specific script's executed processes
-- automation
-- deployment management
-- delete a deployment
-- get deployment
-- get a script project's metadata
-- update the code content of a script project
-- script project metrics
-- deployments
-- list script processes
-- list versions
-- version management
-- script project management
-- list deployments
-- list deployments for a script project
-- update deployment
-- create project
-- create a new immutable version
-- get execution metrics for a script project
-- apps script
+- run a function in an apps script project
 - google
-- list versions of a script project
-- list execution processes
-- google workspace
-- process monitoring
+- delete deployment
+- get deployment
+- list a specific script's executed processes
+- script project details and content
+- script project management
 - update project content
-- get a specific version
-- create a new deployment
-- get version
-- create version
+- deployment management
+- list deployments for a script project
+- create project
+- get a script project's metadata
+- google workspace
+- create a new immutable version
 - update a deployment
 - get project content
-- run a function in an apps script project
-- list deployments of an apps script project
+- list processes
+- list versions of a script project
+- create deployment
+- get project
 - scripting
-- script project content
+- get a specific version
+- automation
+- create version
+- version management
 - create a new script project
 - get project metrics
+- get execution metrics for a script project
+- create a new deployment
+- create a deployment of an apps script project
+- script project metrics
+- script project content
+- update deployment
 - create a new, empty script project
+- list execution processes
+- get version
+- run script
+- update the code content of a script project
+- apps script
+- process monitoring
+- get a specific deployment
+- get the code content of a script project
+- list versions
+- delete a deployment
+- list script processes
+- list deployments of an apps script project
+- list deployments
+- deployments
 slug: workspace-automation
 source_filename: workspace-automation.yaml
 source_heading: Capability Spec
