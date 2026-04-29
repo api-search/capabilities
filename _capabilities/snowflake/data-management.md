@@ -74,75 +74,75 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- suspend dynamic table
-- delete database
-- fetch database details by name
-- suspend a dynamic table
-- delete a schema
-- create dynamic table
-- snowflake
-- database management
-- create table
 - restore a dropped database
-- create a database
-- single database operations
-- fetch schema details
 - undrop database
-- create an iceberg table
-- list external volumes
-- sql
 - list schemas in a database
-- data lakes
-- resume a dynamic table
-- data management
-- view management
-- create a new database
-- create iceberg table
-- list event tables
-- create view
-- clone a database
-- create database
-- list tables
-- list all databases
-- table management
-- dynamic table management
-- list all accessible databases
 - create a new table
-- delete table
-- create a new view
-- clone database
-- resume dynamic table
-- create external volume
-- list schemas
-- delete schema
-- list views in a schema
-- create event table
-- data warehousing
-- list dynamic tables
-- create schema
+- delete database
+- data lakes
 - list views
-- data sharing
-- create a view
+- create a dynamic table
 - list iceberg tables
 - list databases
-- create a new schema
-- iceberg table management
-- fetch table
-- list tables in a schema
-- database
-- fetch schema
+- create an iceberg table
 - create an external volume
-- fetch a database
-- delete a database
-- delete a table
-- create a table
-- fetch table details
-- create a dynamic table
+- iceberg table management
+- delete a schema
+- fetch table
 - schema management
-- create an event table
+- clone database
+- create a new view
+- database management
+- delete schema
+- create table
+- view management
+- list views in a schema
+- create a table
+- delete table
+- suspend dynamic table
+- sql
+- dynamic table management
+- table management
+- suspend a dynamic table
+- list schemas
+- create iceberg table
+- list tables in a schema
+- create a view
+- create database
 - data engineering
+- create view
+- list all accessible databases
+- delete a table
+- snowflake
+- list event tables
+- create an event table
+- database
 - fetch database
+- data warehousing
+- clone a database
+- fetch database details by name
+- list tables
+- fetch table details
+- resume a dynamic table
+- create event table
+- fetch schema
+- create dynamic table
+- single database operations
+- create external volume
+- create a new database
+- list external volumes
+- data sharing
+- create schema
+- list all databases
+- resume dynamic table
+- data management
+- fetch schema details
+- list dynamic tables
+- create a database
 - create a schema
+- fetch a database
+- create a new schema
+- delete a database
 slug: data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Data Management\"\n  description: \"Unified workflow for managing databases, schemas, tables, views, dynamic tables, iceberg tables, and event tables. Used by Data Engineers and Database Administrators to create, organize, and maintain data structures.\"\n  tags:\n    - Snowflake\n    - Data Management\n    - Data Engineering\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-database\n      location: ./shared/database.yaml\n    - import: snowflake-schema\n      location: ./shared/schema.yaml\n    - import: snowflake-table\n      location: ./shared/table.yaml\n    - import: snowflake-view\n      location: ./shared/view.yaml\n    - import: snowflake-dynamic-table\n      location: ./shared/dynamic-table.yaml\n    - import: snowflake-iceberg-table\n\
   \      location: ./shared/iceberg-table.yaml\n    - import: snowflake-event-table\n      location: ./shared/event-table.yaml\n    - import: snowflake-external-volume\n      location: ./shared/external-volume.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: snowflake-data-mgmt-api\n      description: \"Unified REST API for Snowflake data structure management.\"\n      resources:\n        - path: /v1/databases\n          name: databases\n          description: \"Database management\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List all databases\"\n              call: \"snowflake-database.list-databases\"\n            - method: POST\n              name: create-database\n              description: \"Create a database\"\n              call: \"snowflake-database.create-database\"\n        - path: /v1/databases/{name}\n          name: database\n          description: \"Single database operations\"\

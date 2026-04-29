@@ -25,51 +25,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- submit a compensation change request
-- benefit plans
-- payroll get pay group
-- comp list plans
-- compensation
-- comp request change
-- payroll list inputs
-- list compensation scorecards
-- list pay groups
-- list benefit elections
-- list pay slips
-- comp list grades
-- submit a benefits change request
-- compensation plans
-- list plans
-- pay groups
-- get eligible benefit plans for a worker
-- benefits get eligible plans
-- benefits change
-- benefits list dependents
-- list compensation grades
-- benefits
-- list all benefit plans
-- benefits list plans
-- financial management
-- payroll get pay group details
-- benefits list elections
-- saas
-- list payroll inputs
-- workday
-- list compensation plans
-- payroll list pay slips
 - get a pay group by id
+- list compensation plans
+- payroll
+- compensation
+- request a one-time payment
+- comp request one time payment
+- pay groups
+- payroll get pay group
+- benefits get eligible plans
+- payroll list pay slips
+- list plans
+- financial management
+- saas
+- list pay slips
+- get eligible benefit plans for a worker
+- list compensation scorecards
+- payroll list inputs
+- list benefit elections
 - cloud computing
 - list dependents
-- comp list scorecards
-- list benefit plans
-- enterprise software
+- list pay groups
+- benefit plans
+- benefits list dependents
+- submit a compensation change request
+- compensation plans
+- payroll get pay group details
 - hcm
-- request a one-time payment
+- benefits list elections
+- list benefit plans
+- comp list scorecards
 - get pay group details
-- payroll list pay groups
-- comp request one time payment
+- submit a benefits change request
+- workday
 - list all pay groups
-- payroll
+- benefits list plans
+- comp list grades
+- benefits change
+- list compensation grades
+- list payroll inputs
+- payroll list pay groups
+- benefits
+- comp list plans
+- list all benefit plans
+- comp request change
+- enterprise software
 slug: compensation-and-payroll
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Compensation and Payroll\"\n  description: \"Unified compensation and payroll management combining Compensation, Payroll, and Benefits APIs for payroll administrators to manage pay plans, benefits enrollment, and payroll processing.\"\n  tags:\n    - Workday\n    - Compensation\n    - Payroll\n    - Benefits\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-compensation\n      location: ./shared/compensation.yaml\n    - import: workday-payroll\n      location: ./shared/payroll.yaml\n    - import: workday-benefits\n      location: ./shared/benefits.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: compensation-payroll-api\n      description: \"Unified REST API for compensation, payroll, and benefits.\"\n      resources:\n        - path: /v1/compensation-plans\n\
   \          name: compensation-plans\n          description: \"Compensation plans\"\n          operations:\n            - method: GET\n              name: list-plans\n              description: \"List compensation plans\"\n              call: \"workday-compensation.get-compensation-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pay-groups\n          name: pay-groups\n          description: \"Pay groups\"\n          operations:\n            - method: GET\n              name: list-pay-groups\n              description: \"List pay groups\"\n              call: \"workday-payroll.get-pay-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benefit-plans\n          name: benefit-plans\n          description: \"Benefit plans\"\n          operations:\n            - method: GET\n              name: list-benefit-plans\n              description:\

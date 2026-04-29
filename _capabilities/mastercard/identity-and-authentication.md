@@ -33,42 +33,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- identity
-- get identity insights for a transaction
-- fraud detection
-- verification
-- submit identity verification as a trust provider
-- verify identity
 - verify a consumer identity
-- verify a consumer identity using mastercard id
-- create an authentication consent request
-- mastercard
-- get account identity insights
-- kyc
-- get transaction identity insights
-- create authentication consent
-- payments
-- initiate strong customer authentication
-- credit cards
-- initiate authentication
-- authentication consent management
-- create auth consent
-- identity insights for transactions
-- identity insights for accounts
-- get identity intelligence insights for a transaction
-- get consent status
-- get authentication consent status
-- open banking
-- get identity insights for an account
-- get account insights
-- authentication
-- identity verification
-- get identity intelligence insights for an account
-- submit trust verification
-- create consent
-- get transaction insights
 - digital identity
+- get account insights
+- create an authentication consent request
+- get account identity insights
+- payments
+- identity
+- identity insights for accounts
+- get consent status
+- get identity intelligence insights for a transaction
+- get identity intelligence insights for an account
+- open banking
+- create auth consent
+- get identity insights for a transaction
+- get identity insights for an account
+- create consent
+- fraud detection
+- identity insights for transactions
+- get transaction identity insights
+- get transaction insights
+- initiate authentication
+- verify identity
+- credit cards
+- identity verification
+- authentication consent management
+- kyc
+- create authentication consent
+- submit trust verification
+- verify a consumer identity using mastercard id
+- get authentication consent status
+- verification
 - financial services
+- mastercard
+- submit identity verification as a trust provider
+- initiate strong customer authentication
+- authentication
 slug: identity-and-authentication
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Identity and Authentication\"\n  description: \"Unified workflow for identity managers and compliance teams to verify identities, manage authentication consent, and leverage identity intelligence for fraud prevention across Mastercard's identity services.\"\n  tags:\n    - Mastercard\n    - Identity\n    - Authentication\n    - Verification\n    - KYC\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: id-verification\n      location: ./shared/id-verification.yaml\n    - import: id-trust-providers\n      location: ./shared/id-for-trust-providers.yaml\n    - import: id-identity-providers\n      location: ./shared/id-for-identity-providers.yaml\n    - import: authentication-consent\n      location: ./shared/authentication-consent.yaml\n\
   \    - import: authentication-facilitator\n      location: ./shared/authentication-facilitator.yaml\n    - import: identity-insights-accounts\n      location: ./shared/identity-insights-accounts.yaml\n    - import: identity-insights-transactions\n      location: ./shared/identity-insights-transactions.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: identity-auth-api\n      description: \"Unified REST API for Mastercard identity and authentication workflows.\"\n      resources:\n        - path: /v1/verifications\n          name: verifications\n          description: \"Identity verification\"\n          operations:\n            - method: POST\n              name: verify-identity\n              description: \"Verify a consumer identity\"\n              call: \"id-verification.verify-identity\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consents\n          name: consents\n          description:\

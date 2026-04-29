@@ -48,66 +48,66 @@ provider_name: Temenos Transact
 provider_slug: temenos-transact
 search_terms:
 - get transaction history for an account
-- account management
-- list currencies
-- account details
-- digital banking
-- get customer accounts
-- list available currencies
 - customer management
-- create a customer
-- list customer accounts with optional filters
-- initiate a fund transfer between accounts
-- list cards
-- list payment orders
-- submit a payment order
-- fintech
-- get account details by id
-- payments
-- list beneficiaries
-- get account balances
-- create fund transfer
-- create payment order
-- list loan arrangements
-- cancel a pending payment order
-- fund transfers
-- cancel payment order
-- get account transactions
-- temenos
-- validate iban
-- core banking
-- list accounts
-- list accounts for a customer
-- get fund transfer status and details
-- list payment beneficiaries
-- get account details
-- list banking products from the catalog
-- account balances
-- banking
-- create beneficiary
-- validate an iban and resolve bank details
-- list products
-- create a payment order
-- get fund transfer
-- enterprise
-- list customer accounts
-- transaction history
-- get account balance information
-- create customer
-- list loans
-- list deposits
-- get customer details
 - list debit and credit cards
-- get account
-- get transaction history
-- register a new payment beneficiary
-- initiate a fund transfer
-- list deposit arrangements
-- get customer
+- core banking
+- list payment beneficiaries
+- account balances
+- validate an iban and resolve bank details
 - payment operations
-- financial services
+- get account balances
+- validate iban
+- get fund transfer status and details
+- list customer accounts
+- account management
+- payments
+- list banking products from the catalog
+- list available currencies
+- get transaction history
+- get customer accounts
+- list payment orders
+- list customer accounts with optional filters
+- initiate a fund transfer
+- get account balance information
+- transaction history
 - list customers
+- cancel a pending payment order
+- account details
+- get account details by id
+- register a new payment beneficiary
+- list deposits
+- list products
+- digital banking
+- list cards
+- create a customer
+- fund transfers
+- fintech
+- banking
+- get account
+- temenos
+- get customer details
+- get customer
+- get account details
+- list accounts for a customer
+- get fund transfer
+- list deposit arrangements
+- create beneficiary
+- initiate a fund transfer between accounts
+- create fund transfer
+- list loan arrangements
+- financial services
+- list loans
 - create a new customer
+- list accounts
+- create a payment order
+- list currencies
+- create payment order
+- get account transactions
+- cancel payment order
+- list beneficiaries
+- enterprise
+- create customer
+- submit a payment order
 slug: digital-banking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Temenos Digital Banking\"\n  description: \"Unified digital banking capability combining account management, customer operations, payment processing, deposits, loans, and reference data for retail and corporate banking applications. Used by digital banking developers and fintech integration teams.\"\n  tags:\n    - Temenos\n    - Digital Banking\n    - Core Banking\n    - Payments\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      TEMENOS_BEARER_TOKEN: TEMENOS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: core-banking\n      location: ./shared/core-banking.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: digital-banking-api\n      description: \"Unified REST API for digital banking operations.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n          description: \"Account management\"\n          operations:\n    \
   \        - method: GET\n              name: list-accounts\n              description: \"List customer accounts\"\n              call: \"core-banking.list-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts/{accountId}\n          name: account-details\n          description: \"Account details\"\n          operations:\n            - method: GET\n              name: get-account\n              description: \"Get account details\"\n              call: \"core-banking.get-account\"\n              with:\n                accountId: \"rest.accountId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts/{accountId}/balances\n          name: account-balances\n          description: \"Account balances\"\n          operations:\n            - method: GET\n              name: get-account-balances\n              description: \"Get account\

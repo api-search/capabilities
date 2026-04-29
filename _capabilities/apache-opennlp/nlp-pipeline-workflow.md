@@ -46,63 +46,63 @@ personas: []
 provider_name: Apache OpenNLP
 provider_slug: apache-opennlp
 search_terms:
-- phrase chunking
-- end-to-end nlp processing pipeline
-- full syntactic parsing
-- categorize document
-- chunk phrases
-- tag parts of speech
-- chunk text into phrases
-- machine learning
-- nlp
-- part-of-speech tagging
-- information extraction
+- build a full parse tree for a sentence
+- parse sentence
 - list models
+- detect language
+- list all available nlp models
+- text analysis
+- list available models
+- parse
+- reduce tokens to their base/lemma forms
+- integrates opennlp into custom nlp pipelines and applications
+- split text into individual sentences
+- categorize document
+- natural language processing
+- text processing
+- detect document language
+- chunk text into phrases
+- named entity recognition
+- parse sentence structure
+- part-of-speech tagging
+- uses opennlp apis to add language processing capabilities to applications
+- lemmatize
+- full syntactic parsing
+- identify noun phrases, verb phrases, and other chunks
+- information extraction
+- tokenize text into words and punctuation
+- classify a document into predefined categories
+- language detection
+- tokenization
+- uses nlp pipeline for text analysis and feature extraction
+- sentence boundary detection
+- categorize
+- Data Scientist
+- NLP Engineer
 - apache opennlp
-- find entities
+- document categorization
+- nlp
 - detect sentences
+- tag pos
+- chunk
+- find entities
 - find named entities
 - find named entities (persons, locations, organizations) in text
-- uses nlp pipeline for text analysis and feature extraction
-- parse
-- natural language processing
-- document categorization
-- lemmatize
-- categorize
-- build a full parse tree for a sentence
-- tokenize text
-- tag pos
-- tokenization
-- parse sentence
-- text processing
-- list available models
-- apache
-- text analysis
-- detect language
-- detect the language of input text
-- split text into individual sentences
-- identify noun phrases, verb phrases, and other chunks
-- sentence boundary detection
-- parse sentence structure
-- tokenize text into words and punctuation
-- assign pos tags to each token in tokenized text
-- NLP Engineer
-- named entity recognition
-- Application Developer
-- Data Scientist
-- java
-- integrates opennlp into custom nlp pipelines and applications
-- uses opennlp apis to add language processing capabilities to applications
-- tokenize
-- model management
-- list all available nlp models
-- chunk
-- language detection
 - split text into sentences
-- detect document language
-- classify a document into predefined categories
-- reduce tokens to their base/lemma forms
+- detect the language of input text
+- java
+- assign pos tags to each token in tokenized text
+- tokenize
+- end-to-end nlp processing pipeline
+- apache
+- phrase chunking
+- tokenize text
+- Application Developer
 - open source
+- tag parts of speech
+- model management
+- chunk phrases
+- machine learning
 slug: nlp-pipeline-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache OpenNLP NLP Pipeline Workflow\"\n  description: \"End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging, NER, chunking, and parsing for comprehensive text analysis.\"\n  tags:\n    - Apache OpenNLP\n    - Natural Language Processing\n    - Text Analysis\n    - Information Extraction\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENNLP_API_KEY: OPENNLP_API_KEY\n\ncapability:\n  consumes:\n    - import: opennlp\n      location: ./shared/opennlp-tools.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: nlp-pipeline-api\n      description: \"Unified REST API for NLP text processing pipeline.\"\n      resources:\n        - path: /v1/language\n          name: language-detection\n          description: \"Language detection\"\n          operations:\n            - method: POST\n              name:\
   \ detect-language\n              description: \"Detect document language\"\n              call: \"opennlp.detectLanguage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sentences\n          name: sentence-detection\n          description: \"Sentence boundary detection\"\n          operations:\n            - method: POST\n              name: detect-sentences\n              description: \"Split text into sentences\"\n              call: \"opennlp.detectSentences\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tokens\n          name: tokenization\n          description: \"Tokenization\"\n          operations:\n            - method: POST\n              name: tokenize\n              description: \"Tokenize text\"\n              call: \"opennlp.tokenize\"\n              outputParameters:\n                - type: object\n                  mapping:\

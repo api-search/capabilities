@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- compliance
-- file proof of claim
-- bankruptcywatch
-- search bankruptcy cases
-- lending
-- get bankruptcy case
-- court data
-- legal
-- Bankruptcy Attorney
-- search for bankruptcy cases across all us bankruptcy court districts
-- lender monitoring borrowers for bankruptcy filings
-- create a bankruptcy monitoring alert for a debtor or entity
-- file a proof of claim for a bankruptcy case
-- list claims register for a bankruptcy case
-- creditor
-- get case docket
-- create bankruptcy monitor
-- business or individual owed money by a bankruptcy filer
+- bankruptcy case research, claims management, and automated monitoring
 - retrieve docket entries for a bankruptcy case
-- us bankruptcy court cases and proceedings
-- list case claims
-- list all active bankruptcy monitoring alerts
-- pacer
-- bankruptcy
-- automated alerts for bankruptcy filings
-- Creditor
+- Bankruptcy Attorney
+- bankruptcywatch
 - get detailed information about a specific bankruptcy case
+- create a bankruptcy monitoring alert for a debtor or entity
+- list monitors
+- create bankruptcy monitor
+- creditor
+- search for bankruptcy cases across all us bankruptcy court districts
+- bankruptcy
+- search bankruptcy cases
+- court data
+- business or individual owed money by a bankruptcy filer
+- file proof of claim
+- us bankruptcy court cases and proceedings
 - Loan Officer
 - attorney managing creditor representation in bankruptcy proceedings
-- bankruptcy case research, claims management, and automated monitoring
-- list monitors
+- get bankruptcy case
+- list all active bankruptcy monitoring alerts
+- compliance
+- pacer
+- legal
+- list case claims
+- file a proof of claim for a bankruptcy case
+- lender monitoring borrowers for bankruptcy filings
+- automated alerts for bankruptcy filings
+- get case docket
+- lending
+- list claims register for a bankruptcy case
+- Creditor
 slug: bankruptcy-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"BankruptcyWatch Bankruptcy Monitoring\"\n  description: >-\n    BankruptcyWatch bankruptcy monitoring and case management workflow for creditors,\n    lenders, and legal teams. Covers case search, docket retrieval, claims management,\n    Proof of Claim filing, and automated bankruptcy monitoring alerts.\n  tags:\n    - BankruptcyWatch\n    - Bankruptcy\n    - PACER\n    - Creditor\n    - Legal\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BANKRUPTCYWATCH_API_KEY: BANKRUPTCYWATCH_API_KEY\n\ncapability:\n  consumes:\n    - import: bankruptcywatch-pacer\n      location: ./shared/pacer-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9080\n      namespace: bankruptcywatch-mcp\n      transport: http\n      description: \"MCP server for AI-assisted bankruptcy monitoring and case research.\"\n      tools:\n        - name: search-bankruptcy-cases\n          description: Search\
   \ for bankruptcy cases across all US bankruptcy court districts\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"bankruptcywatch-pacer.searchCases\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-bankruptcy-case\n          description: Get detailed information about a specific bankruptcy case\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bankruptcywatch-pacer.getCase\"\n          with:\n            caseId: \"tools.caseId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-case-docket\n          description: Retrieve docket entries for a bankruptcy case\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bankruptcywatch-pacer.getCaseDocket\"\n          with:\n            caseId: \"tools.caseId\"\n          outputParameters:\n       \

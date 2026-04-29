@@ -9,13 +9,13 @@ personas: []
 provider_name: Airwallex
 provider_slug: airwallex
 search_terms:
-- payments
-- embedded finance
-- multi-currency
-- cross-border payments
+- foreign exchange
 - global
 - fintech
-- foreign exchange
+- payments
+- multi-currency
+- cross-border payments
+- embedded finance
 slug: payments-management
 source_yaml: "name: payments-management\ndescription: Workflow capability for managing end-to-end payment acceptance, global account operations, cross-border payouts, and foreign exchange using the Airwallex API.\nversion: \"1.0\"\nprovider: Airwallex\nimports:\n  - shared/airwallex-api.yaml\ntools:\n  - name: create_payment_intent\n    description: Create a new Airwallex payment intent to begin a checkout session.\n    operation: createPaymentIntent\n    inputs:\n      - name: amount\n        type: number\n        required: true\n        description: Payment amount in the specified currency.\n      - name: currency\n        type: string\n        required: true\n        description: ISO 4217 currency code (e.g., USD, AUD, GBP).\n      - name: merchant_order_id\n        type: string\n        required: false\n        description: Merchant's own order identifier for reconciliation.\n      - name: customer_id\n        type: string\n        required: false\n        description: Airwallex customer\
   \ ID if the payer is a known customer.\n    outputs:\n      - name: id\n        type: string\n        description: Payment intent ID.\n      - name: client_secret\n        type: string\n        description: Client secret for frontend SDK initialization.\n      - name: status\n        type: string\n        description: Payment intent status.\n\n  - name: confirm_payment_intent\n    description: Confirm a payment intent to trigger payment processing.\n    operation: confirmPaymentIntent\n    inputs:\n      - name: id\n        type: string\n        required: true\n        description: The payment intent ID to confirm.\n      - name: payment_method\n        type: object\n        required: true\n        description: Payment method details (card, bank transfer, etc.).\n    outputs:\n      - name: status\n        type: string\n        description: Updated payment intent status.\n      - name: captured_amount\n        type: number\n        description: Amount captured after confirmation.\n\n \

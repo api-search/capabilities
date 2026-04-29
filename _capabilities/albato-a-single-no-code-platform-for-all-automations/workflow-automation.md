@@ -24,42 +24,42 @@ personas: []
 provider_name: Albato A Single No Code Platform For All Automations
 provider_slug: albato-a-single-no-code-platform-for-all-automations
 search_terms:
-- list apps
-- ipaas
-- workflow automation
-- list execution history for an albato automation, showing successes, errors, and step completion counts.
-- automation workflows
-- list albato apps
-- embedded ipaas
-- monitors automation health, execution rates, and error rates. reviews workflow performance and ensures business processes run reliably.
-- browse available apps
-- get details for a specific albato automation workflow by id.
-- no-code automation
-- list connections
-- app connections
-- build and manage no-code automation workflows across 1,000+ apps
-- browse 1,000+ available app integrations in albato. search by name or filter by category.
-- embedded integration
-- no-code
-- list albato connections
-- Operations Manager
-- list albato automations
 - connect apps and manage webhooks
-- integrations
-- webhooks
-- list automations
-- list all automation workflows
-- list all app connections
+- build and manage no-code automation workflows across 1,000+ apps
+- workflow automation
+- monitors automation health, execution rates, and error rates. reviews workflow performance and ensures business processes run reliably.
 - list albato executions
-- list all albato automation workflows including their status, trigger counts, and success/error rates.
-- list all app connections configured in the albato account.
-- albato
-- create and manage automation workflows
-- app integration
-- get albato automation
-- creates and manages no-code automation workflows in albato, connecting apps and configuring triggers, actions, and conditions to automate business processes.
-- Automation Builder
+- Operations Manager
+- app connections
+- automation workflows
+- list connections
 - available app integrations
+- webhooks
+- embedded ipaas
+- integrations
+- browse 1,000+ available app integrations in albato. search by name or filter by category.
+- albato
+- get albato automation
+- browse available apps
+- list execution history for an albato automation, showing successes, errors, and step completion counts.
+- ipaas
+- list albato automations
+- list all app connections configured in the albato account.
+- Automation Builder
+- get details for a specific albato automation workflow by id.
+- creates and manages no-code automation workflows in albato, connecting apps and configuring triggers, actions, and conditions to automate business processes.
+- list automations
+- create and manage automation workflows
+- list albato apps
+- list all albato automation workflows including their status, trigger counts, and success/error rates.
+- no-code
+- embedded integration
+- list apps
+- no-code automation
+- list all app connections
+- app integration
+- list albato connections
+- list all automation workflows
 slug: workflow-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Albato Workflow Automation\n  description: >-\n    Workflow capability for building and managing no-code automation workflows\n    in Albato. Combines automation management and app connection APIs to enable\n    operations teams to create, monitor, and control multi-step automations\n    across 1,000+ integrated apps.\n  tags:\n    - Albato\n    - Workflow Automation\n    - No-Code\n    - iPaaS\n    - App Integration\n    - Embedded Integration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALBATO_API_KEY: ALBATO_API_KEY\n\ncapability:\n  consumes:\n    - import: albato-automations\n      location: ./shared/automations-api.yaml\n    - import: albato-connections\n      location: ./shared/connections-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: albato-workflow-api\n      description: Unified REST API for Albato workflow automation management.\n\
   \      resources:\n        - path: /v1/automations\n          name: automations\n          description: Automation workflows\n          operations:\n            - method: GET\n              name: list-automations\n              description: List all automation workflows\n              call: \"albato-automations.list-automations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections\n          name: connections\n          description: App connections\n          operations:\n            - method: GET\n              name: list-connections\n              description: List all app connections\n              call: \"albato-connections.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/apps\n          name: apps\n          description: Available app integrations\n          operations:\n            - method: GET\n             \

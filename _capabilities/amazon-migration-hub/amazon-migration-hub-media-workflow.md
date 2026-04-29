@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Migration Hub
 provider_slug: amazon-migration-hub
 search_terms:
-- associatediscoveredresource
-- aws media processing and delivery
-- Media Developer
-- create progress update stream
-- describe migration task
-- amazon migration hub media processing workflow
-- deleteprogressupdatestream
 - media
-- createprogressupdatestream
-- describeapplicationstate
+- deleteprogressupdatestream
 - Broadcast Engineer
-- list jobs
-- workflow
-- disassociate discovered resource
-- manage media processing jobs
-- associate created artifact
-- describemigrationtask
-- aws
-- associate discovered resource
-- engineer managing broadcast media workflows
-- developer building media processing applications
 - disassociate created artifact
-- delete progress update stream
-- disassociatediscoveredresource
+- amazon migration hub media processing workflow
+- engineer managing broadcast media workflows
+- list jobs
+- developer building media processing applications
+- disassociate discovered resource
 - describe application state
-- associatecreatedartifact
+- disassociatediscoveredresource
+- workflow
 - broadcasting
-- media processing
+- createprogressupdatestream
+- describe migration task
+- associatecreatedartifact
+- manage media processing jobs
+- Media Developer
+- delete progress update stream
+- describeapplicationstate
+- create progress update stream
+- associate created artifact
 - disassociatecreatedartifact
+- associatediscoveredresource
+- media processing
+- aws media processing and delivery
+- aws
+- describemigrationtask
+- associate discovered resource
 slug: amazon-migration-hub-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Migration Hub Workflow\n  description: Workflow capability for Amazon Migration Hub media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: migration_hub\n    location: ./shared/migration-hub.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: migration-hub-workflow-api\n    description: Unified REST API for Amazon Migration Hub workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: migration_hub.list-jobs\n        outputParameters:\n\
   \        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: migration-hub-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon Migration Hub workflow management.\n    tools:\n    - name: associate-created-artifact\n      description: AssociateCreatedArtifact\n      hints:\n        readOnly: false\n        openWorld: true\n      call: migration_hub.associate-created-artifact\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: associate-discovered-resource\n      description: AssociateDiscoveredResource\n      hints:\n        readOnly: false\n        openWorld: true\n      call: migration_hub.associate-discovered-resource\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-progress-update-stream\n      description: CreateProgressUpdateStream\n      hints:\n        readOnly: false\n        openWorld: true\n      call: migration_hub.create-progress-update-stream\n\

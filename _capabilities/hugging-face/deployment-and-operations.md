@@ -60,59 +60,59 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- scale an endpoint to zero replicas.
-- hugging face
-- create a new dedicated inference endpoint.
-- pause a running endpoint to stop billing.
-- tgi metrics
-- get information about the deployed model and tgi server.
-- get logs for an endpoint.
-- get endpoint logs
-- resume endpoint
-- mlops
-- delete a dedicated inference endpoint.
-- resume an endpoint
-- deployment
-- get endpoint
-- resume a paused endpoint.
-- pause an endpoint
-- cloud providers
-- scale to zero
-- resume a paused endpoint
 - create endpoint
-- get info
-- get prometheus metrics from the tgi server.
 - operations
-- get endpoint metrics
-- check tgi server health
-- list available cloud providers
-- individual endpoint operations
-- get endpoint details
-- list all dedicated inference endpoints for a namespace.
-- check if the tgi server is healthy and responding.
-- list providers
-- get tgi server info
-- list all endpoints
-- tgi server info
-- infrastructure
-- update endpoint
-- tgi health check
-- health check
-- delete an endpoint
+- resume a paused endpoint
+- scale an endpoint to zero replicas.
 - get logs
-- get details of a specific endpoint.
-- get metrics for an endpoint.
-- delete endpoint
-- tgi server health
-- update an existing endpoint configuration.
-- list available cloud providers and hardware options.
-- manage inference endpoints
-- update endpoint configuration
-- get metrics
-- list endpoints
-- pause a running endpoint
+- cloud providers
+- get endpoint metrics
 - pause endpoint
 - create a new endpoint
+- list all endpoints
+- tgi server health
+- infrastructure
+- get metrics
+- get metrics for an endpoint.
+- health check
+- update an existing endpoint configuration.
+- list available cloud providers
+- get details of a specific endpoint.
+- resume endpoint
+- delete endpoint
+- update endpoint configuration
+- scale to zero
+- hugging face
+- mlops
+- get endpoint logs
+- list all dedicated inference endpoints for a namespace.
+- individual endpoint operations
+- pause a running endpoint to stop billing.
+- get logs for an endpoint.
+- create a new dedicated inference endpoint.
+- get information about the deployed model and tgi server.
+- manage inference endpoints
+- list available cloud providers and hardware options.
+- resume an endpoint
+- list providers
+- delete a dedicated inference endpoint.
+- tgi health check
+- get endpoint details
+- tgi server info
+- check if the tgi server is healthy and responding.
+- pause a running endpoint
+- get endpoint
+- get tgi server info
+- get info
+- pause an endpoint
+- delete an endpoint
+- resume a paused endpoint.
+- deployment
+- update endpoint
+- list endpoints
+- check tgi server health
+- get prometheus metrics from the tgi server.
+- tgi metrics
 slug: deployment-and-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hugging Face Deployment and Operations\"\n  description: \"Unified workflow for deploying, scaling, and operating ML model inference endpoints on dedicated infrastructure. Combines Inference Endpoints management with TGI server monitoring. Used by ML platform engineers and DevOps teams.\"\n  tags:\n    - Hugging Face\n    - Deployment\n    - Operations\n    - Infrastructure\n    - MLOps\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HF_API_TOKEN: HF_API_TOKEN\n\ncapability:\n  consumes:\n    - import: hf-endpoints\n      location: ./shared/inference-endpoints.yaml\n    - import: hf-tgi\n      location: ./shared/text-generation-inference.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: hf-deployment-api\n      description: \"Unified REST API for ML deployment and operations management.\"\n      resources:\n        - path: /v1/endpoints/{namespace}\n\
   \          name: endpoints\n          description: \"Manage inference endpoints\"\n          operations:\n            - method: GET\n              name: list-endpoints\n              description: \"List all endpoints\"\n              call: \"hf-endpoints.list-endpoints\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-endpoint\n              description: \"Create a new endpoint\"\n              call: \"hf-endpoints.create-endpoint\"\n              with:\n                namespace: \"rest.namespace\"\n                name: \"rest.name\"\n                model: \"rest.model\"\n                provider: \"rest.provider\"\n                region: \"rest.region\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/endpoints/{namespace}/{endpoint_name}\n\

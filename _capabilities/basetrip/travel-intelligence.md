@@ -9,20 +9,20 @@ personas: []
 provider_name: Basetrip
 provider_slug: basetrip
 search_terms:
-- Travel Content Publisher
 - travel planning, booking, and destination information
-- individual or business planning international travel
-- cities
-- travel
-- visa
-- safety
-- embed country, city, safety, cost, visa, and health data into travel platforms
-- developer building travel booking or trip planning apps
-- content creator embedding destination guides with live data
-- Travel App Developer
+- travel safety ratings and advisories
 - Trip Planner
 - countries
-- travel safety ratings and advisories
+- Travel App Developer
+- travel
+- Travel Content Publisher
+- developer building travel booking or trip planning apps
+- visa
+- individual or business planning international travel
+- safety
+- content creator embedding destination guides with live data
+- embed country, city, safety, cost, visa, and health data into travel platforms
+- cities
 - health
 slug: travel-intelligence
 source_yaml: "name: Travel Intelligence\ndescription: >-\n  Workflow capability for embedding travel intelligence data into travel apps,\n  booking platforms, and trip planning tools using the Basetrip API.\nversion: \"1.0\"\napis:\n  - basetrip:basetrip-api\npersonas:\n  - Travel App Developer\n  - Trip Planner\n  - Travel Content Publisher\ntools:\n  - name: get_country_info\n    description: Retrieve comprehensive country information including capital, currency, languages, and timezone.\n    operation: getCountry\n    api: basetrip:basetrip-api\n  - name: list_cities\n    description: List all cities for a given country to present destination options.\n    operation: listCitiesByCountry\n    api: basetrip:basetrip-api\n  - name: get_travel_phrases\n    description: Fetch travel phrases for a destination country to help travelers communicate.\n    operation: listPhrasesByCountry\n    api: basetrip:basetrip-api\n  - name: check_safety\n    description: Get current safety ratings and advisories\

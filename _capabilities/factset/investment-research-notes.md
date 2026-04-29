@@ -26,32 +26,32 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
-- list irn symbols
-- irn note management.
-- list irn contacts.
-- list notes
-- list irn meetings
-- irn meeting management.
-- irn contact management.
-- list irn notes.
-- list irn custom symbols.
-- research notes
-- list contacts
-- irn
-- get irn configuration.
-- factset
-- financial
-- financial data
 - investment analytics
-- get irn config
-- crm
-- market data
-- list irn notes
-- list irn meetings.
-- portfolio analytics
+- list irn contacts.
+- get irn configuration.
+- list notes
+- financial
+- list irn notes.
+- irn note management.
 - list meetings
 - list irn contacts
+- research notes
+- list irn symbols
+- irn contact management.
+- get irn config
+- list irn meetings
+- financial data
+- list contacts
+- portfolio analytics
+- list irn custom symbols.
+- list irn meetings.
+- crm
+- factset
+- list irn notes
+- market data
+- research
+- irn meeting management.
+- irn
 slug: investment-research-notes
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Investment Research Notes\"\n  description: \"Unified workflow for managing internal research notes including configuration, contacts, custom symbols, meetings, and notes. Used by research analysts and relationship managers.\"\n  tags:\n    - FactSet\n    - IRN\n    - Research Notes\n    - CRM\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-irn-config\n      location: ./shared/irn-configuration.yaml\n    - import: factset-irn-contacts\n      location: ./shared/irn-contacts.yaml\n    - import: factset-irn-symbols\n      location: ./shared/irn-custom-symbols.yaml\n    - import: factset-irn-meetings\n      location: ./shared/irn-meetings.yaml\n    - import: factset-irn-notes\n      location: ./shared/irn-notes.yaml\n\n  exposes:\n    - type: rest\n\
   \      port: 8086\n      namespace: irn-api\n      description: \"Unified REST API for investment research notes.\"\n      resources:\n        - path: /v1/irn-contacts\n          name: irn-contacts\n          description: \"IRN contact management.\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List IRN contacts.\"\n              call: \"factset-irn-contacts.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/irn-meetings\n          name: irn-meetings\n          description: \"IRN meeting management.\"\n          operations:\n            - method: GET\n              name: list-meetings\n              description: \"List IRN meetings.\"\n              call: \"factset-irn-meetings.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/irn-notes\n          name: irn-notes\n\

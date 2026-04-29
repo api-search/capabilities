@@ -28,46 +28,46 @@ personas: []
 provider_name: Amazon IAM Identity Center
 provider_slug: amazon-iam-identity-center
 search_terms:
-- list instances
-- single sign-on
-- list all permission sets
-- manage user groups
-- assign account access
+- create a new group for organizing users
 - configures permission sets and account assignments
 - list user groups in the identity store
-- managing workforce user and group identities
-- IAM Administrator
-- list groups
-- manage workforce users
-- create a new group for organizing users
-- iam
-- assign access to a user or group for an aws account
-- list users in the identity store
-- remove a user or group's access to an aws account
-- manage aws account access assignments
-- workforce identity
-- list permission sets
-- create group
+- assign account access
 - create account assignment
-- assigning aws account access to users and groups
-- aws
-- list users
-- create permission set
+- single sign-on
 - create user
 - list permission sets for assigning aws account access
-- IT Administrator
-- list sso instances in the account
-- manage permission sets for aws account access
-- list workforce users in the identity store
-- manages workforce identities and provisions access to aws accounts
-- create a new workforce user in iam identity center
-- authentication
-- access control
-- create a permission set defining what access a user gets to an aws account
+- managing workforce user and group identities
+- list users in the identity store
+- list groups
 - assign a permission set to a user or group for an aws account
-- remove account access
+- manage workforce users
+- IAM Administrator
+- create group
+- IT Administrator
+- iam
+- list workforce users in the identity store
+- list permission sets
+- manages workforce identities and provisions access to aws accounts
+- manage user groups
+- authentication
 - identity management
+- create a permission set defining what access a user gets to an aws account
+- manage aws account access assignments
+- assigning aws account access to users and groups
+- remove account access
+- create a new workforce user in iam identity center
+- list instances
+- manage permission sets for aws account access
+- remove a user or group's access to an aws account
+- aws
+- workforce identity
+- list all permission sets
 - list groups in the identity store
+- create permission set
+- assign access to a user or group for an aws account
+- access control
+- list sso instances in the account
+- list users
 slug: identity-access-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IAM Identity Center - Identity and Access Management\n  description: Unified capability for IT administrators to manage workforce identities, provision access to AWS accounts, and configure SSO for enterprise applications.\n  tags:\n    - AWS\n    - IAM\n    - Identity Management\n    - Single Sign-On\n    - Access Control\n    - Workforce Identity\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: sso-admin\n      location: ./shared/sso-admin.yaml\n    - import: identitystore\n      location: ./shared/identitystore.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: identity-access-api\n      description: Unified REST API for identity and access management.\n      resources:\n        - path: /v1/users\n          name: users\n  \
   \        description: Manage workforce users\n          operations:\n            - method: GET\n              name: list-users\n              description: List users in the identity store\n              call: \"identitystore.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: Manage user groups\n          operations:\n            - method: GET\n              name: list-groups\n              description: List groups in the identity store\n              call: \"identitystore.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/permission-sets\n          name: permission-sets\n          description: Manage permission sets for AWS account access\n          operations:\n            - method: GET\n              name: list-permission-sets\n              description: List all permission\

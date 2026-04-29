@@ -17,32 +17,32 @@ personas: []
 provider_name: Apache ORC
 provider_slug: apache-orc
 search_terms:
-- get column statistics
-- big data
-- Data Analyst
 - get file metadata
-- get file schema
-- get metadata about an orc file
-- apache orc
+- get column statistics
 - hadoop
-- Data Engineer
-- convert
-- columnar storage
-- reads orc files and analyzes column statistics
-- merge orc files
-- compression
-- get column statistics from an orc file
-- apache
-- get the schema of an orc file
-- convert csv, json, or parquet to orc format
-- convert to orc
-- list available orc files
 - merge multiple orc files into one
-- file format
-- data processing
-- manages orc file creation, conversion, and schema evolution
 - list files
+- manages orc file creation, conversion, and schema evolution
+- merge orc files
+- get column statistics from an orc file
+- big data
+- reads orc files and analyzes column statistics
+- get file schema
 - list orc files
+- columnar storage
+- file format
+- convert
+- Data Analyst
+- convert csv, json, or parquet to orc format
+- compression
+- list available orc files
+- get the schema of an orc file
+- convert to orc
+- apache orc
+- Data Engineer
+- apache
+- data processing
+- get metadata about an orc file
 - open source
 slug: orc-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache ORC File Processing Workflow\"\n  description: \"Workflow capability for reading, writing, converting, and analyzing Apache ORC columnar files.\"\n  tags:\n    - Apache ORC\n    - Big Data\n    - Columnar Storage\n    - Data Processing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      ORC_API_KEY: ORC_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: orc\n      baseUri: https://localhost:8080/orc\n      description: \"Apache ORC REST service\"\n      resources:\n        - name: files\n          path: /files\n          description: \"ORC file management\"\n          operations:\n            - name: listFiles\n              method: GET\n              description: \"List ORC files\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n       \

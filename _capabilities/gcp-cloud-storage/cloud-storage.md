@@ -55,53 +55,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
+- set bucket iam policy
+- bucket iam management.
+- list storage buckets in a project.
+- create a new storage bucket.
+- archival
+- update object
+- get bucket details.
 - delete a bucket.
-- delete bucket
+- list objects
+- cloud storage
+- individual object management.
+- set iam policy.
+- update object metadata.
+- create bucket
+- create a bucket.
+- get bucket iam policy.
+- object management.
 - backup
+- get iam policy.
+- delete object
+- blob storage
+- file storage
+- compose multiple objects into one.
+- update bucket
+- set bucket iam policy.
+- list objects.
+- list objects in a bucket.
+- storage
+- individual bucket management.
+- update a bucket.
+- list buckets
+- compose objects
+- get object
+- copy an object to another location.
+- delete a storage bucket.
+- get object metadata.
+- delete an object.
+- list buckets.
+- google cloud
+- object storage
+- copy object
+- data management
+- delete bucket
+- bucket management.
 - data
 - get bucket iam policy
-- set bucket iam policy
-- google cloud
-- list buckets.
-- copy object
-- storage
-- create a bucket.
-- create bucket
-- archival
-- update bucket
-- delete object
-- copy an object to another location.
-- get object
-- set bucket iam policy.
-- delete a storage bucket.
-- cloud storage
-- compose objects
-- individual object management.
-- list storage buckets in a project.
-- blob storage
-- data management
-- delete an object.
-- get object metadata.
-- update object metadata.
-- list objects
-- individual bucket management.
-- compose multiple objects into one.
-- list objects in a bucket.
-- list objects.
-- get bucket iam policy.
 - get bucket
-- list buckets
-- set iam policy.
-- get iam policy.
-- object storage
-- get bucket details.
-- object management.
-- update a bucket.
-- update object
-- file storage
-- create a new storage bucket.
-- bucket iam management.
-- bucket management.
 slug: cloud-storage
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Cloud Storage Management\"\n  description: \"Unified workflow for managing cloud storage buckets, objects, access controls, and IAM policies. Used by cloud engineers and data platform teams.\"\n  tags:\n    - Google Cloud\n    - Cloud Storage\n    - Object Storage\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GCP_OAUTH2_TOKEN: GCP_OAUTH2_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-storage\n      location: ./shared/cloud-storage-json.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloud-storage-api\n      description: \"Unified REST API for Google Cloud Storage management.\"\n      resources:\n        - path: /v1/buckets\n          name: buckets\n          description: \"Bucket management.\"\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List\
   \ buckets.\"\n              call: \"cloud-storage.list-buckets\"\n              with:\n                project: \"rest.project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-bucket\n              description: \"Create a bucket.\"\n              call: \"cloud-storage.create-bucket\"\n              with:\n                project: \"rest.project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{id}\n          name: bucket-details\n          description: \"Individual bucket management.\"\n          operations:\n            - method: GET\n              name: get-bucket\n              description: \"Get bucket details.\"\n              call: \"cloud-storage.get-bucket\"\n              with:\n                bucket: \"rest.id\"\n              outputParameters:\n                - type: object\n         \

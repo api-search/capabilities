@@ -14,22 +14,22 @@ personas: []
 provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
-- automation workflow for amazon ses
-- list resources
-- aws
-- aws cloud resource management
-- notifications
-- smtp
-- transactional email
-- email deliverability
-- engineer managing amazon ses resources
-- cloud operations
-- amazon ses
-- email
-- list amazon ses resources
-- email service
-- marketing email
 - amazon ses resources
+- aws cloud resource management
+- email service
+- automation workflow for amazon ses
+- cloud operations
+- aws
+- marketing email
+- email
+- list resources
+- engineer managing amazon ses resources
+- amazon ses
+- transactional email
+- notifications
+- list amazon ses resources
+- email deliverability
+- smtp
 slug: amazon-ses
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Ses Operations\n  description: Workflow capability for Amazon Ses. Enables automation of Amazon Ses resources for cloud operations teams.\n  tags:\n  - Amazon Ses\n  - AWS\n  - Cloud Operations\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY: AWS_ACCESS_KEY\n    AWS_SECRET_KEY: AWS_SECRET_KEY\ncapability:\n  consumes:\n  - import: amazon-ses\n    location: ./shared/amazon-ses.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amazon-ses-api\n    description: Unified REST API for Amazon Ses operations.\n    resources:\n    - path: /v1/resources\n      name: resources\n      description: Amazon Ses resources\n      operations:\n      - method: GET\n        name: list-resources\n        description: List Amazon Ses resources\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amazon-ses-mcp\n\
   \    transport: http\n    description: MCP server for AI-assisted Amazon Ses operations.\n    tools:\n    - name: list-amazon-ses-resources\n      description: List Amazon Ses resources\n      hints:\n        readOnly: true\n      outputParameters:\n      - type: object\n        mapping: $.\n"

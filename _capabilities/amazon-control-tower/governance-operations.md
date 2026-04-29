@@ -9,13 +9,13 @@ personas: []
 provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
-- compliance
-- aws
-- controls
-- governance
-- security
-- multi-account
 - landing zone
+- multi-account
+- security
+- controls
+- aws
+- compliance
+- governance
 slug: governance-operations
 source_yaml: "id: https://api-evangelist.github.io/amazon-control-tower/capabilities/governance-operations.yaml\nname: Cloud Governance Operations\ndescription: Workflow-oriented Naftiko capability for cloud governance and compliance operations using AWS Control Tower, covering landing zone management, control enforcement, and baseline registration across multi-account AWS environments.\nversion: 1.0.0-alpha1\nspecificationVersion: 1.0.0-alpha1\n\ntags:\n  - Governance\n  - Compliance\n  - Landing Zone\n  - Multi-Account\n  - Controls\n  - Baselines\n\nimports:\n  - url: capabilities/shared/control-tower.yaml\n    as: controlTower\n\npersonas:\n  - name: Cloud Administrator\n    description: Cloud platform administrator responsible for governing multi-account AWS environments using Control Tower\n  - name: Security Engineer\n    description: Security engineer responsible for enabling and managing compliance controls across organizational units\n  - name: Platform Engineer\n    description:\
   \ Platform engineer automating account provisioning and baseline registration\n\nworkflows:\n  - name: Landing Zone Setup\n    description: Provision a new AWS Control Tower landing zone for multi-account governance\n    steps:\n      - step: createLandingZone\n        capability: controlTower\n        description: Create the landing zone with governance manifest\n      - step: getLandingZoneOperation\n        capability: controlTower\n        description: Poll operation status until complete\n      - step: listLandingZones\n        capability: controlTower\n        description: Confirm landing zone is active\n    persona: Cloud Administrator\n\n  - name: Control Enablement\n    description: Enable compliance controls on organizational units\n    steps:\n      - step: listBaselines\n        capability: controlTower\n        description: Review available controls in the library\n      - step: enableControl\n        capability: controlTower\n        description: Enable a control on the target\

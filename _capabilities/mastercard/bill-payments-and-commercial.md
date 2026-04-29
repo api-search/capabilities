@@ -30,39 +30,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- validate a bill payment
-- bill payment validation
-- fraud detection
-- mastercard
-- retrieve commercial event notifications
-- get biller details
-- create a virtual card for commercial payments
-- payments
-- business spending controls
-- search for billers
-- create a spending control rule
-- credit cards
-- create a virtual card
-- list spending controls
 - virtual card management
-- bill payments
-- validate a bill payment before processing
-- create virtual card
-- search billers
-- financial services
-- validate bill payment
-- commercial
-- get commercial notifications
-- search for billers in the rpps network
-- open banking
-- treasury
-- business payments
-- create spending control
-- create a business spending control rule
+- list spending controls
 - biller management
-- list business spending control rules
 - digital identity
+- list business spending control rules
+- payments
+- open banking
+- search billers
 - validate payment
+- commercial
+- create spending control
+- retrieve commercial event notifications
+- business spending controls
+- create virtual card
+- fraud detection
+- validate a bill payment before processing
+- create a business spending control rule
+- create a virtual card for commercial payments
+- credit cards
+- bill payment validation
+- business payments
+- treasury
+- validate a bill payment
+- get commercial notifications
+- financial services
+- get biller details
+- mastercard
+- bill payments
+- validate bill payment
+- search for billers in the rpps network
+- create a spending control rule
+- search for billers
+- create a virtual card
 slug: bill-payments-and-commercial
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Bill Payments and Commercial\"\n  description: \"Unified workflow for treasury teams and accounts payable to manage bill payments, business payment controls, virtual cards, commercial event notifications, and installment plans.\"\n  tags:\n    - Mastercard\n    - Bill Payments\n    - Commercial\n    - Treasury\n    - Business Payments\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: bill-pay\n      location: ./shared/bill-pay.yaml\n    - import: bill-payment-validator\n      location: ./shared/bill-payment-validator.yaml\n    - import: business-payment-controls\n      location: ./shared/business-payment-controls.yaml\n    - import: in-control-commercial\n      location: ./shared/in-control-commercial.yaml\n    - import:\
   \ commercial-notifications\n      location: ./shared/commercial-event-notifications.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: bill-commercial-api\n      description: \"Unified REST API for bill payments and commercial payment workflows.\"\n      resources:\n        - path: /v1/billers\n          name: billers\n          description: \"Biller management\"\n          operations:\n            - method: POST\n              name: search-billers\n              description: \"Search for billers\"\n              call: \"bill-pay.search-billers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payment-validations\n          name: payment-validations\n          description: \"Bill payment validation\"\n          operations:\n            - method: POST\n              name: validate-payment\n              description: \"Validate a bill payment\"\n              call: \"bill-payment-validator.validate-payment\"\

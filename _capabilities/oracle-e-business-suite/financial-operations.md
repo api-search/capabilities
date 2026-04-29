@@ -32,60 +32,60 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- ar invoice management.
-- create a purchase order.
-- ap get invoice by id
-- get ar invoices
-- retrieve bank accounts.
-- ap get payments
-- retrieve fixed assets.
-- create an ar invoice.
-- po get purchase order by id
-- retrieve suppliers.
-- ap create invoice
-- get ap invoice by id.
-- retrieve receipts.
-- list purchase orders.
-- business applications
-- ar get receipts
-- retrieve payments.
-- get purchase order by id.
-- get purchase orders
-- create a journal entry.
-- retrieve purchase orders.
-- gl get journals
 - get ap invoices
-- list suppliers.
-- retrieve requisitions.
-- ce get bank accounts
-- list ar invoices.
-- create an ap invoice.
-- e-business suite
-- get suppliers
-- purchase order management.
-- retrieve general ledger journal entries.
-- retrieve ap invoices.
-- po create purchase order
-- journal entry management.
 - list journal entries.
-- po get requisitions
-- ar create invoice
-- enterprise
 - gl create journal
-- ap invoice management.
-- erp
-- po get purchase orders
-- oracle
-- fa get assets
-- ap get invoices
+- list ar invoices.
+- retrieve general ledger journal entries.
 - ar get invoices
-- get journals
-- financials
-- supplier management.
-- list ap invoices.
-- po get suppliers
+- erp
+- retrieve fixed assets.
+- ap create invoice
+- fa get assets
+- po create purchase order
+- oracle
+- purchase order management.
+- retrieve ap invoices.
+- retrieve payments.
 - retrieve ar invoices.
+- ar create invoice
+- create a journal entry.
+- ap invoice management.
+- po get suppliers
+- ap get invoice by id
+- journal entry management.
+- list suppliers.
+- ce get bank accounts
+- get purchase order by id.
+- ar invoice management.
+- gl get journals
+- po get purchase order by id
+- get ap invoice by id.
 - procurement
+- create an ap invoice.
+- retrieve suppliers.
+- get journals
+- retrieve receipts.
+- financials
+- get ar invoices
+- po get purchase orders
+- get suppliers
+- retrieve requisitions.
+- create an ar invoice.
+- supplier management.
+- e-business suite
+- po get requisitions
+- ap get payments
+- business applications
+- list ap invoices.
+- get purchase orders
+- retrieve bank accounts.
+- create a purchase order.
+- list purchase orders.
+- enterprise
+- ar get receipts
+- retrieve purchase orders.
+- ap get invoices
 slug: financial-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Financial Operations\"\n  description: \"End-to-end financial operations combining General Ledger, AP/AR, procurement, and cash management. Used by finance teams and controllers for the procure-to-pay and order-to-cash cycles.\"\n  tags:\n    - Oracle\n    - Financials\n    - Procurement\n    - ERP\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n\ncapability:\n  consumes:\n    - import: oracle-financial-services\n      location: ./shared/financial-services.yaml\n    - import: oracle-supply-chain\n      location: ./shared/supply-chain.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: financial-operations-api\n      description: \"Unified REST API for Oracle EBS financial operations.\"\n      resources:\n        - path: /v1/journals\n          name: journals\n          description: \"Journal entry management.\"\
   \n          operations:\n            - method: GET\n              name: get-journals\n              description: \"List journal entries.\"\n              call: \"oracle-financial-services.get-journals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ap-invoices\n          name: ap-invoices\n          description: \"AP invoice management.\"\n          operations:\n            - method: GET\n              name: get-ap-invoices\n              description: \"List AP invoices.\"\n              call: \"oracle-financial-services.get-ap-invoices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ar-invoices\n          name: ar-invoices\n          description: \"AR invoice management.\"\n          operations:\n            - method: GET\n              name: get-ar-invoices\n              description: \"List AR invoices.\"\n              call: \"oracle-financial-services.get-ar-invoices\"\

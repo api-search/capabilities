@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
-- aws
-- hybrid cloud
-- automation
 - migration
-- storage
+- aws
+- automation
+- hybrid cloud
 - data transfer
+- storage
 slug: data-transfer-operations
 source_yaml: "id: https://api-evangelist.github.io/amazon-datasync/capabilities/data-transfer-operations.yaml\nname: Data Transfer Operations\ndescription: Workflow-oriented Naftiko capability for automated data transfer operations using Amazon DataSync, covering on-premises to cloud migration, cross-cloud transfer, and ongoing synchronization workflows.\nversion: 1.0.0-alpha1\nspecificationVersion: 1.0.0-alpha1\n\ntags:\n  - Data Transfer\n  - Migration\n  - Storage\n  - Automation\n  - Hybrid Cloud\n\nimports:\n  - url: capabilities/shared/datasync.yaml\n    as: datasync\n\npersonas:\n  - name: Storage Administrator\n    description: Administrator responsible for managing data movement between on-premises and cloud storage\n  - name: Cloud Migration Engineer\n    description: Engineer executing data migrations from on-premises systems to AWS cloud storage\n  - name: Data Platform Engineer\n    description: Engineer maintaining ongoing data synchronization between storage systems\n\nworkflows:\n\
   \  - name: Migrate Data to S3\n    description: Transfer data from an on-premises NFS/SMB share to Amazon S3\n    steps:\n      - step: createAgent\n        capability: datasync\n        description: Activate a DataSync agent on the on-premises network\n      - step: createLocationNfs\n        capability: datasync\n        description: Create the source NFS location pointing to on-premises data\n      - step: createLocationS3\n        capability: datasync\n        description: Create the destination S3 location\n      - step: createTask\n        capability: datasync\n        description: Create a transfer task linking source and destination\n      - step: startTaskExecution\n        capability: datasync\n        description: Start the data transfer\n      - step: describeTaskExecution\n        capability: datasync\n        description: Monitor transfer progress until completion\n    persona: Cloud Migration Engineer\n\n  - name: Monitor Ongoing Synchronization\n    description: Monitor\

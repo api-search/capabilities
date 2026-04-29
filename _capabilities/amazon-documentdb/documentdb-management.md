@@ -30,33 +30,33 @@ personas: []
 provider_name: Amazon DocumentDB
 provider_slug: amazon-documentdb
 search_terms:
-- delete db cluster
-- describeDBClusters
-- create db cluster
-- amazon documentdb describe db clusters
-- amazon documentdb create db instance
+- amazon documentdb
+- documentdb
+- describe db instances
 - amazon documentdb describe db instances
+- amazon documentdb describe db clusters
+- create db cluster
+- nosql
+- create db instance
+- describeDBInstances
+- describeDBClusters
+- describe db clusters
+- amazon documentdb create db cluster
+- createDBInstance
+- delete db cluster
+- amazon web services
+- database
+- mongodb
+- createDBCluster
 - engineers managing amazon documentdb resources on aws.
 - database administration business domain for amazon documentdb.
-- amazon documentdb create db cluster
-- amazon documentdb
-- describeDBInstances
-- describe db clusters
-- nosql
-- amazon web services
-- describe db instances
-- database
-- documentdb
-- aws
-- amazon documentdb delete db cluster
-- managed database
-- mongodb
-- create db instance
-- deleteDBCluster
-- createDBCluster
-- document database
 - workflow capability for database administration.
-- createDBInstance
+- document database
+- amazon documentdb delete db cluster
+- aws
+- deleteDBCluster
+- amazon documentdb create db instance
+- managed database
 slug: documentdb-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DocumentDB Document Database Management\"\n  description: \"Unified capability for managing DocumentDB clusters, instances, and snapshots for DevOps and database administrators.\"\n  tags:\n    - Amazon DocumentDB\n    - AWS\n    - Database\n    - NoSQL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: documentdb\n      location: ./shared/documentdb.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: documentdb-api\n      description: \"Unified REST API for Document Database Management.\"\n      resources:\n        - path: /v1/resource\n          name: describeDBClusters\n          description: \"Amazon DocumentDB Describe DB Clusters\"\n          operations:\n            - method: GET\n              name: describeDBClusters\n\
   \              description: \"Amazon DocumentDB Describe DB Clusters\"\n              call: \"documentdb.describeDBClusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/resource\n          name: createDBCluster\n          description: \"Amazon DocumentDB Create DB Cluster\"\n          operations:\n            - method: POST\n              name: createDBCluster\n              description: \"Amazon DocumentDB Create DB Cluster\"\n              call: \"documentdb.createDBCluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DeleteDBCluster\n          name: deleteDBCluster\n          description: \"Amazon DocumentDB Delete DB Cluster\"\n          operations:\n            - method: POST\n              name: deleteDBCluster\n              description: \"Amazon DocumentDB Delete DB Cluster\"\n              call: \"documentdb.deleteDBCluster\"\

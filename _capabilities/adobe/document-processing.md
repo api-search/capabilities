@@ -39,73 +39,73 @@ personas: []
 provider_name: Adobe
 provider_slug: adobe
 search_terms:
-- protect pdf
-- pdf content extraction
-- pdf
-- reorder pages
-- analytics
-- linearize pdf
-- export pdf to docx, pptx, xlsx, or images
-- documents
-- compress pdf
-- apply ocr to make scanned pdfs searchable
-- e-commerce
-- job status
-- delete an uploaded asset
-- optimize pdf for fast web viewing
-- upload a document for processing
-- get asset download uri
-- upload and manage document assets
-- create pdf
-- export pdf
-- creative cloud
-- marketing
-- rotate pages
-- check the status of an asynchronous pdf operation
-- reorder pages within a pdf
 - generate document
-- adobe
-- get pdf metadata and document properties
-- get pdf properties
-- combine pdf
-- delete pages
-- rotate pages in a pdf
-- auto-tag pdf for accessibility compliance
-- e-signatures
-- remove password protection from a pdf
-- create pdf from supported formats
-- generate documents from templates with dynamic data
-- split a pdf into multiple documents
-- auto tag pdf
-- experience cloud
-- get asset
-- ocr pdf
-- automation
-- insert pages
-- combine multiple pdfs into a single document
-- document services
-- digital asset management
-- work management
-- upload asset
-- export pdf to other formats
-- extract structured content from pdf
-- delete specific pages from a pdf
-- remove protection
-- delete asset
-- extract pdf
-- replace pages
-- create a pdf from supported file formats
-- pdf export operations
-- compress a pdf to reduce file size
-- generative ai
-- insert pages from one pdf into another
-- replace pages in a pdf with pages from another
-- get job status
-- pdf conversion operations
-- delete an asset
-- split pdf
+- job status
 - add password protection to a pdf
+- extract pdf
+- e-commerce
+- rotate pages
+- get asset download uri
+- remove password protection from a pdf
+- analytics
+- rotate pages in a pdf
+- automation
+- ocr pdf
+- compress pdf
+- replace pages
+- export pdf to other formats
+- generative ai
+- delete pages
+- reorder pages
+- delete an asset
+- insert pages from one pdf into another
+- remove protection
+- export pdf to docx, pptx, xlsx, or images
+- linearize pdf
+- extract structured content from pdf
+- auto-tag pdf for accessibility compliance
+- delete specific pages from a pdf
+- digital asset management
+- delete asset
+- marketing
+- pdf export operations
+- create a pdf from supported file formats
+- protect pdf
+- combine multiple pdfs into a single document
+- adobe
+- generate documents from templates with dynamic data
+- delete an uploaded asset
+- get pdf properties
+- replace pages in a pdf with pages from another
+- upload a document for processing
+- check the status of an asynchronous pdf operation
+- apply ocr to make scanned pdfs searchable
+- experience cloud
+- upload and manage document assets
+- optimize pdf for fast web viewing
+- create pdf
+- combine pdf
+- e-signatures
+- compress a pdf to reduce file size
+- pdf
+- pdf conversion operations
+- creative cloud
+- work management
+- documents
+- pdf content extraction
+- upload asset
+- create pdf from supported formats
+- split a pdf into multiple documents
 - extract text, tables, and figures from a pdf
+- auto tag pdf
+- get job status
+- get asset
+- split pdf
+- reorder pages within a pdf
+- get pdf metadata and document properties
+- document services
+- export pdf
+- insert pages
 slug: document-processing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Document Processing\"\n  description: \"Process PDF documents at scale including creation, conversion, extraction, manipulation, and accessibility tagging. Used by document automation engineers and content teams.\"\n  tags:\n    - Adobe\n    - Documents\n    - PDF\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_CLIENT_ID: ADOBE_CLIENT_ID\n      ADOBE_CLIENT_SECRET: ADOBE_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: pdf-services\n      location: ./shared/pdf-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adobe-document-api\n      description: \"Unified REST API for Adobe document processing workflows.\"\n      resources:\n        - path: /v1/assets\n          name: assets\n          description: \"Upload and manage document assets\"\n          operations:\n            - method: POST\n              name:\
   \ upload-asset\n              description: \"Upload a document for processing\"\n              call: \"pdf-services.upload-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-asset\n              description: \"Get asset download URI\"\n              call: \"pdf-services.get-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-asset\n              description: \"Delete an asset\"\n              call: \"pdf-services.delete-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/convert\n          name: conversion\n          description: \"PDF conversion operations\"\n          operations:\n            - method: POST\n              name: create-pdf\n              description: \"Create PDF from supported\

@@ -66,45 +66,45 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- amazon eventbridge create archive
-- ListArchives
-- PutRule
-- PutEvents
-- DescribeRule
-- amazon eventbridge list targets by rule
+- serverless event bus for connecting applications with real-time data
+- integration
 - event-driven
-- DeleteRule
-- amazon eventbridge list rules
+- amazon eventbridge list archives
 - PutTargets
+- events
+- amazon eventbridge create event bus
+- RemoveTargets
+- ListRules
+- amazon eventbridge list rules
+- PutRule
+- ListEventBuses
+- amazon eventbridge list event buses
+- ListTargetsByRule
+- event bus
+- amazon eventbridge put rule
+- amazon eventbridge describe event bus
+- amazon web services
+- amazon eventbridge remove targets
 - CreateArchive
 - CreateEventBus
-- event bus
-- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
+- ListArchives
 - serverless
-- events
-- amazon eventbridge delete event bus
-- amazon web services
-- operations teams managing amazon eventbridge infrastructure
-- amazon eventbridge remove targets
-- serverless event bus for connecting applications with real-time data
-- aws
-- integration
-- amazon eventbridge create event bus
-- amazon eventbridge list archives
-- ListTargetsByRule
-- amazon eventbridge list event buses
-- amazon eventbridge delete rule
-- amazon eventbridge put targets
-- amazon eventbridge put events
-- developers building applications using amazon eventbridge
-- DeleteEventBus
+- amazon eventbridge list targets by rule
 - amazon eventbridge describe rule
-- RemoveTargets
-- ListEventBuses
-- ListRules
-- amazon eventbridge put rule
+- developers building applications using amazon eventbridge
+- amazon eventbridge delete event bus
+- amazon eventbridge create archive
+- operations teams managing amazon eventbridge infrastructure
+- amazon eventbridge put targets
+- DeleteEventBus
+- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
+- PutEvents
+- aws
 - DescribeEventBus
-- amazon eventbridge describe event bus
+- DescribeRule
+- DeleteRule
+- amazon eventbridge delete rule
+- amazon eventbridge put events
 slug: amazon-eventbridge-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon EventBridge Management\n  description: Unified capability for managing Amazon EventBridge resources. Combines Amazon EventBridge APIs for Integration Engineer workflows in Event-Driven Architecture.\n  tags:\n  - Amazon Web Services\n  - Event Bus\n  - Serverless\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: eventbridge\n    location: ./shared/eventbridge.yaml\n  exposes:\n  - type: rest\n    port: 8196\n    namespace: amazon-eventbridge-workflow-api\n    description: Unified REST API for Amazon EventBridge management.\n    resources:\n    - path: /v1/PutEvents\n      name: PutEvents\n      description: Amazon EventBridge Put Events\n      operations:\n      - method: POST\n        name: PutEvents\n        description: Amazon EventBridge Put Events\n        call: api.PutEvents\n        outputParameters:\n\
   \        - type: object\n          mapping: $.\n    - path: /v1/PutRule\n      name: PutRule\n      description: Amazon EventBridge Put Rule\n      operations:\n      - method: POST\n        name: PutRule\n        description: Amazon EventBridge Put Rule\n        call: api.PutRule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/DescribeRule\n      name: DescribeRule\n      description: Amazon EventBridge Describe Rule\n      operations:\n      - method: POST\n        name: DescribeRule\n        description: Amazon EventBridge Describe Rule\n        call: api.DescribeRule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListRules\n      name: ListRules\n      description: Amazon EventBridge List Rules\n      operations:\n      - method: POST\n        name: ListRules\n        description: Amazon EventBridge List Rules\n        call: api.ListRules\n        outputParameters:\n        - type: object\n     \

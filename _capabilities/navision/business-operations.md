@@ -59,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list all employees
-- inventory
-- dynamics nav
-- create vendor
 - customer management
-- create a customer
+- vendor management
+- purchase orders
+- erp
+- create vendor
+- business management
+- list all items
+- list items
 - create a new purchase order
-- create a new sales order
+- list customers
+- navision
+- list all purchase orders
+- list sales orders
+- list companies
+- get a customer
+- list employees
+- sales invoices
+- list sales invoices
 - list all vendors
-- create a sales order
+- list purchase orders
 - list available companies
-- get a customer by id
+- create a customer
+- list all customers
+- single customer
+- general journals
+- business central
+- list purchase invoices
+- get customer
+- create a new sales order
+- list vendors
+- create a new inventory item
+- dynamics nav
+- sales
+- create sales order
+- list journals
+- create a new vendor
+- list all sales orders
 - finance
 - purchasing
-- create purchase order
-- purchase orders
-- list sales orders
-- get a customer
-- general journals
-- list employees
-- sales
-- list inventory items
-- list sales invoices
-- general ledger accounts
-- vendor management
-- inventory items
-- sales orders
-- list journals
-- microsoft
-- business central
-- single customer
-- list accounts
-- create item
-- navision
-- list companies
-- dynamics 365
-- list items
-- sales invoices
-- list general journals
-- list vendors
-- list all items
-- create a new vendor
-- create customer
-- erp
-- list all purchase orders
-- list general ledger accounts
-- list purchase invoices
-- business management
-- list all sales orders
-- create a new inventory item
-- list purchase orders
-- get customer
-- create sales order
-- list all customers
-- company information
-- list customers
+- inventory
+- create a sales order
 - create a new customer
+- list accounts
+- create purchase order
+- create item
+- general ledger accounts
+- list general ledger accounts
+- get a customer by id
+- list inventory items
+- list all employees
+- sales orders
+- microsoft
+- list general journals
+- company information
+- inventory items
+- dynamics 365
+- create customer
 slug: business-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynamics NAV Business Operations\"\n  description: \"Unified workflow for day-to-day business operations in Dynamics 365 Business Central combining the Business Central API v2.0 for managing customers, vendors, items, orders, invoices, and financials. Used by accountants, sales teams, and operations managers.\"\n  tags:\n    - Business Central\n    - Dynamics 365\n    - ERP\n    - Finance\n    - Sales\n    - Purchasing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BC_OAUTH_TOKEN: BC_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: business-central-v2\n      location: ./shared/business-central-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: business-ops-api\n      description: \"Unified REST API for Business Central day-to-day business operations.\"\n      resources:\n        - path: /v1/companies\n          name: companies\n          description:\
   \ \"Company information\"\n          operations:\n            - method: GET\n              name: list-companies\n              description: \"List available companies\"\n              call: \"business-central-v2.list-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers\n          name: customers\n          description: \"Customer management\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"List all customers\"\n              call: \"business-central-v2.list-customers\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: \"Create a customer\"\n              call: \"business-central-v2.create-customer\"\n              with:\n\

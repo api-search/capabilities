@@ -49,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- human capital management.
-- supply chain management
-- sales opportunities
-- chatbot
-- peoplesoft
-- retrieve support and service cases.
-- retrieve sales opportunities.
-- list opportunities
 - case management
-- list cases
-- chatbot intent fulfillments
-- retrieve details for a specific customer.
-- customer records
-- sales
-- individual customer details
-- send notification
-- financial management
-- list intents
-- retrieve notifications for the current user.
-- crm
-- retrieve available chatbot intents.
-- support and service cases
-- process a chatbot intent fulfillment request.
-- campus solutions
-- financial and supply chain management.
-- campus solutions.
-- chatbot intents
-- send a notification via email, text, or in-app channels.
-- create case
 - erp
-- create a new support or service case.
+- retrieve support and service cases.
+- chatbot intent fulfillments
+- financial management
+- peopletools platform services.
+- chatbot intents
+- list customers
+- retrieve details for a specific customer.
 - notification management
-- enterprise software
-- retrieve customer records.
+- list cases
+- list intents
+- chatbot
+- create a new support or service case.
+- list opportunities
+- campus solutions
+- sales opportunities
+- send notification
+- customer records
 - hcm
 - customer engagement
+- process a chatbot intent fulfillment request.
+- create case
+- peoplesoft
 - get customer
+- retrieve sales opportunities.
+- retrieve available chatbot intents.
+- retrieve notifications for the current user.
+- send a notification via email, text, or in-app channels.
+- financial and supply chain management.
+- human capital management.
+- crm
+- sales
 - fulfill intent
-- list customers
+- supply chain management
 - list notifications
+- campus solutions.
+- support and service cases
+- retrieve customer records.
+- enterprise software
+- individual customer details
 slug: customer-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Customer Engagement\"\n  description: \"Unified workflow for CRM users combining customer management, case management, sales, chatbot integration, and notifications across PeopleSoft CRM, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - CRM\n    - Customer Engagement\n    - Case Management\n    - Sales\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: crm\n      location: ./shared/crm.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: customer-engagement-api\n      description: \"Unified REST API\
   \ for PeopleSoft customer engagement workflows.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n          description: \"Customer records\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"Retrieve customer records.\"\n              call: \"crm.list-customers\"\n              with:\n                search: \"rest.search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers/{customerId}\n          name: customer-detail\n          description: \"Individual customer details\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Retrieve details for a specific customer.\"\n              call: \"crm.get-customer\"\n              with:\n                customerId: \"rest.customerId\"\n              outputParameters:\n                - type: object\n        \

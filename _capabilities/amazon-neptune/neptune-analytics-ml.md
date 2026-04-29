@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
+- Graph Developer
+- create a neptune ml inference endpoint for predictions
+- list neptune analytics graphs
+- graph analytics, vector search, and ml model training and inference
+- ML Engineer
+- list neptune analytics graphs for in-memory graph analysis
 - graph database
+- list ml training jobs
+- data streaming
+- gremlin
+- list neptune ml training jobs
+- Graph Database Administrator
+- property graph
+- neptune ml training job management
+- neptune analytics graph management
+- create analytics graph
+- performs graph analytics and builds ml models on graph data
+- rdf
+- create a neptune analytics graph for graph analytics workloads
+- database
+- manages neptune clusters, instances, and infrastructure
+- Data Scientist
 - trains and deploys neptune ml graph neural network models
 - writes gremlin, sparql, and opencypher queries against neptune
-- performs graph analytics and builds ml models on graph data
-- create a neptune ml inference endpoint for predictions
-- neptune analytics graph management
-- machine learning
-- graph database management, querying, and data streaming
-- create analytics graph
-- list neptune ml graph neural network training jobs
-- sparql
-- gremlin
-- bulk loading
-- neptune ml training job management
-- neptune
-- database
-- graph analytics
-- rdf
-- aws
-- graph analytics, vector search, and ml model training and inference
-- create a neptune analytics graph for graph analytics workloads
-- property graph
-- list analytics graphs
-- ML Engineer
-- create ml inference endpoint
-- manages neptune clusters, instances, and infrastructure
-- Graph Developer
-- amazon neptune
-- Graph Database Administrator
-- Data Scientist
 - list ml jobs
-- list neptune analytics graphs for in-memory graph analysis
-- list neptune analytics graphs
-- data streaming
-- list ml training jobs
-- list neptune ml training jobs
+- bulk loading
+- list neptune ml graph neural network training jobs
+- list analytics graphs
+- sparql
+- graph database management, querying, and data streaming
+- graph analytics
+- aws
+- amazon neptune
+- neptune
+- create ml inference endpoint
+- machine learning
 slug: neptune-analytics-ml
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Neptune Analytics and Machine Learning\n  description: Workflow capability for Neptune Analytics graph analysis, vector search, and Neptune ML graph neural network model training and inference. Used by data scientists and ML engineers.\n  tags:\n  - Amazon Neptune\n  - AWS\n  - Graph Analytics\n  - Machine Learning\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_SIGV4_AUTH: AWS_SIGV4_AUTH\ncapability:\n  consumes:\n  - import: analytics\n    location: ./shared/analytics.yaml\n  - import: ml\n    location: ./shared/ml.yaml\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: neptune-analytics-api\n    description: Unified REST API for Neptune Analytics and ML.\n    resources:\n    - path: /v1/graphs\n      name: analytics-graphs\n      description: Neptune Analytics graph management\n      operations:\n      - method: GET\n        name: list-analytics-graphs\n        description:\
   \ List Neptune Analytics graphs\n        call: analytics.listGraphs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ml/jobs\n      name: ml-jobs\n      description: Neptune ML training job management\n      operations:\n      - method: GET\n        name: list-ml-jobs\n        description: List Neptune ML training jobs\n        call: ml.listMLJobs\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9091\n    namespace: neptune-analytics-mcp\n    transport: http\n    description: MCP server for AI-assisted Neptune Analytics and ML operations.\n    tools:\n    - name: list-analytics-graphs\n      description: List Neptune Analytics graphs for in-memory graph analysis\n      hints:\n        readOnly: true\n      call: analytics.listGraphs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-analytics-graph\n      description: Create a Neptune Analytics graph for graph\

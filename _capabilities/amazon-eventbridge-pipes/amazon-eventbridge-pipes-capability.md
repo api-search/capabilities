@@ -50,36 +50,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- DescribePipe
 - amazon eventbridge pipes deletepipe
 - amazon eventbridge pipes stoppipe
-- developers building applications using amazon eventbridge pipes
-- point-to-point integration between event producers and consumers
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- messaging
-- operations teams managing amazon eventbridge pipes infrastructure
-- event-driven
-- amazon eventbridge pipes listpipes
-- amazon eventbridge pipes tagresource
-- amazon eventbridge pipes untagresource
-- amazon eventbridge pipes listtagsforresource
-- serverless
-- UntagResource
-- DeletePipe
-- amazon web services
-- amazon eventbridge pipes startpipe
-- aws
 - integration
-- amazon eventbridge pipes createpipe
-- ListPipes
-- ListTagsForResource
-- amazon eventbridge pipes describepipe
-- UpdatePipe
-- StartPipe
-- CreatePipe
+- DescribePipe
+- point-to-point integration between event producers and consumers
+- event-driven
 - amazon eventbridge pipes updatepipe
+- ListTagsForResource
+- amazon eventbridge pipes tagresource
+- amazon eventbridge pipes createpipe
+- UpdatePipe
+- operations teams managing amazon eventbridge pipes infrastructure
+- ListPipes
+- amazon eventbridge pipes listtagsforresource
+- DeletePipe
+- amazon eventbridge pipes untagresource
+- amazon web services
+- StartPipe
 - StopPipe
+- serverless
+- amazon eventbridge pipes listpipes
 - TagResource
+- messaging
+- amazon eventbridge pipes startpipe
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- CreatePipe
+- amazon eventbridge pipes describepipe
+- aws
+- developers building applications using amazon eventbridge pipes
+- UntagResource
 slug: amazon-eventbridge-pipes-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon EventBridge Pipes Management\n  description: Unified capability for managing Amazon EventBridge Pipes resources. Combines Amazon EventBridge Pipes APIs for Integration Engineer workflows in Event Processing.\n  tags:\n  - Amazon Web Services\n  - Event-Driven\n  - Integration\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: eventbridge_pipes\n    location: ./shared/eventbridge-pipes.yaml\n  exposes:\n  - type: rest\n    port: 8192\n    namespace: amazon-eventbridge-pipes-workflow-api\n    description: Unified REST API for Amazon EventBridge Pipes management.\n    resources:\n    - path: /v1/DescribePipe\n      name: DescribePipe\n      description: Amazon EventBridge Pipes DescribePipe\n      operations:\n      - method: GET\n        name: DescribePipe\n        description: Amazon EventBridge Pipes\
   \ DescribePipe\n        call: api.DescribePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreatePipe\n      name: CreatePipe\n      description: Amazon EventBridge Pipes CreatePipe\n      operations:\n      - method: POST\n        name: CreatePipe\n        description: Amazon EventBridge Pipes CreatePipe\n        call: api.CreatePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/UpdatePipe\n      name: UpdatePipe\n      description: Amazon EventBridge Pipes UpdatePipe\n      operations:\n      - method: POST\n        name: UpdatePipe\n        description: Amazon EventBridge Pipes UpdatePipe\n        call: api.UpdatePipe\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/DeletePipe\n      name: DeletePipe\n      description: Amazon EventBridge Pipes DeletePipe\n      operations:\n      - method: POST\n        name: DeletePipe\n        description: Amazon EventBridge\

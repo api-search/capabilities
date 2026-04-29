@@ -50,52 +50,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- list analytics reports
-- list pivot grids
-- human capital management.
-- forecast data and projections
-- supply chain management
-- peoplesoft
-- search content
-- retrieve budget definitions and data.
-- analytics
-- execute query
-- query
-- retrieve forecast data and projections.
-- dashboards
-- budget definitions and data
-- retrieve available peoplesoft query definitions.
-- retrieve available pivot grid definitions.
-- performance analytics reports
-- trigger a search index build or incremental update.
-- get pivot grid data
-- search
-- pivot grid definitions
-- full-text search results
-- financial management
-- crm
-- campus solutions
-- trigger index build
-- execute a peoplesoft query by name.
-- financial and supply chain management.
-- campus solutions.
-- query execution
-- retrieve data for a specific pivot grid with optional filters.
-- erp
-- retrieve performance analytics reports.
-- retrieve data for a specific pivot grid.
-- enterprise software
-- hcm
-- pivot grid data
-- execute a full-text search across peoplesoft indexed content.
-- reporting
-- peoplesoft query definitions
-- list budgets
-- list queries
 - execute a peoplesoft query by name and retrieve results.
+- analytics
+- erp
+- financial management
+- peopletools platform services.
+- search content
+- get pivot grid data
+- retrieve available pivot grid definitions.
+- retrieve performance analytics reports.
+- trigger a search index build or incremental update.
+- query execution
+- list budgets
 - list forecasts
+- campus solutions
+- peoplesoft query definitions
+- retrieve data for a specific pivot grid.
+- retrieve available peoplesoft query definitions.
 - search index operations
+- pivot grid definitions
+- list pivot grids
+- execute a full-text search across peoplesoft indexed content.
+- budget definitions and data
+- query
+- retrieve data for a specific pivot grid with optional filters.
+- hcm
+- trigger index build
+- full-text search results
+- reporting
+- peoplesoft
+- search
+- execute query
+- list analytics reports
+- financial and supply chain management.
+- retrieve forecast data and projections.
+- human capital management.
+- crm
+- retrieve budget definitions and data.
+- list queries
+- performance analytics reports
+- supply chain management
+- campus solutions.
+- forecast data and projections
+- execute a peoplesoft query by name.
+- pivot grid data
+- dashboards
+- enterprise software
 slug: reporting-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Reporting And Analytics\"\n  description: \"Unified workflow for analysts combining query execution, pivot grid dashboards, full-text search, and performance analytics across PeopleSoft Query, Pivot Grid, Search Framework, and EPM APIs.\"\n  tags:\n    - PeopleSoft\n    - Reporting\n    - Analytics\n    - Dashboards\n    - Query\n    - Search\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: query\n      location: ./shared/query.yaml\n    - import: pivot-grid\n      location: ./shared/pivot-grid.yaml\n    - import: search-framework\n      location: ./shared/search-framework.yaml\n    - import: epm\n      location: ./shared/enterprise-performance-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n      namespace: reporting-api\n\
   \      description: \"Unified REST API for PeopleSoft reporting and analytics workflows.\"\n      resources:\n        - path: /v1/queries\n          name: queries\n          description: \"PeopleSoft Query definitions\"\n          operations:\n            - method: GET\n              name: list-queries\n              description: \"Retrieve available PeopleSoft Query definitions.\"\n              call: \"query.list-queries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries/{queryName}\n          name: query-execution\n          description: \"Query execution\"\n          operations:\n            - method: GET\n              name: execute-query\n              description: \"Execute a PeopleSoft Query by name.\"\n              call: \"query.execute-query\"\n              with:\n                queryName: \"rest.queryName\"\n                isConnectedQuery: \"rest.isConnectedQuery\"\n                maxRows:\

@@ -10,23 +10,23 @@ personas: []
 provider_name: Amazon Kinesis Data Firehose
 provider_slug: amazon-kinesis-firehose
 search_terms:
-- amazon kinesis data firehose
+- manages resources and configurations
+- workflow
 - delivery streams create delivery stream
+- integrates api into applications
 - describes the specified delivery stream.
-- creates a kinesis data firehose delivery stream.
+- lists your delivery streams in alphabetical order of their names.
+- delivery streams describe delivery stream
+- data delivery
+- delivery streams list delivery streams
+- analytics
 - aws
 - unified workflow for amazon kinesis data firehose resource management
-- integrates api into applications
-- manages resources and configurations
-- delivery streams list delivery streams
-- workflow
+- creates a kinesis data firehose delivery stream.
 - Developer
-- delivery streams describe delivery stream
-- lists your delivery streams in alphabetical order of their names.
-- analytics
-- streaming
 - Administrator
-- data delivery
+- amazon kinesis data firehose
+- streaming
 slug: amazon-kinesis-firehose-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Data Firehose Workflow\n  description: Unified workflow capability for Amazon Kinesis Data Firehose combining resource management and operations.\n  tags:\n  - Amazon Kinesis Data Firehose\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kinesis-firehose\n    location: ./shared/kinesis-firehose.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kinesis-firehose-api\n    description: REST API for Amazon Kinesis Data Firehose workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kinesis-firehose-mcp\n    transport: http\n    description: MCP server for Amazon Kinesis Data Firehose.\n    tools:\n    - name: delivery-streams-create-delivery-stream\n      description: Creates a Kinesis Data Firehose delivery\
   \ stream.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kinesis-firehose.createdeliverystream\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delivery-streams-list-delivery-streams\n      description: Lists your delivery streams in alphabetical order of their names.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-firehose.listdeliverystreams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delivery-streams-describe-delivery-stream\n      description: Describes the specified delivery stream.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-firehose.describedeliverystream\n      outputParameters:\n      - type: object\n        mapping: $.\n"

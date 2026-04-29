@@ -14,7 +14,7 @@ description: 'Card processing, ACH, wallets, subscription billing, invoicing, re
 
   '
 domain: commerce
-implementation_count: 13
+implementation_count: 12
 implementations:
 - capability_name: Adyen Online Payment Processing
   capability_slug: online-payment-processing
@@ -169,21 +169,6 @@ implementations:
   - Cost Optimization
   - Billing
   tool_count: 15
-- capability_name: Square Commerce Operations
-  capability_slug: commerce-operations
-  capability_url: https://capabilities.apis.io/capabilities/square/commerce-operations/
-  consumed_api_count: 1
-  operation_count: 13
-  provider_name: Square
-  provider_slug: square
-  tags:
-  - Square
-  - Commerce
-  - Payments
-  - Orders
-  - Catalog
-  - Inventory
-  tool_count: 26
 - capability_name: Temenos Digital Banking
   capability_slug: digital-banking
   capability_url: https://capabilities.apis.io/capabilities/temenos-transact/digital-banking/
@@ -199,7 +184,7 @@ implementations:
   tool_count: 21
 layout: category
 name: Payments & Billing
-provider_count: 13
+provider_count: 12
 related:
 - identity-access
 - compliance

@@ -31,42 +31,42 @@ personas: []
 provider_name: Amazon X-Ray
 provider_slug: amazon-xray
 search_terms:
-- monitoring
-- get trace summaries for a time range.
-- application tracing and service map visualization
-- get all trace sampling rules to understand data collection configuration.
-- get sampling rules.
-- retrieve complete trace documents for specific trace ids.
-- observability
-- debugging
-- monitors service health and performance using x-ray.
-- get insight summaries.
-- analyzes traces to debug application issues.
-- get groups
-- get x-ray groups used to filter and organize traces.
-- latency analysis and bottleneck identification
-- get summaries of distributed traces for a specified time range.
-- Developer
-- get sampling rules
 - get service graph
 - service dependency visualization.
-- trace filtering groups.
-- trace sampling configuration.
-- root cause analysis using distributed trace data
-- aws
-- get the service map showing inter-service dependencies and request flow.
-- get trace summaries
-- Site Reliability Engineer
 - get insight summaries
-- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
-- get the service map.
-- get summaries of x-ray insights identifying anomalies and performance issues.
-- trace data access and analysis.
-- application performance
+- get the service map showing inter-service dependencies and request flow.
 - distributed tracing
+- get trace summaries for a time range.
+- application performance
+- get insight summaries.
+- retrieve complete trace documents for specific trace ids.
+- trace filtering groups.
+- debugging
+- get groups
+- get summaries of x-ray insights identifying anomalies and performance issues.
+- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
+- root cause analysis using distributed trace data
+- get trace summaries
+- latency analysis and bottleneck identification
+- monitoring
 - application performance insights.
+- get the service map.
+- Site Reliability Engineer
+- get all trace sampling rules to understand data collection configuration.
+- observability
 - batch get traces
 - get trace groups.
+- get sampling rules
+- get sampling rules.
+- application tracing and service map visualization
+- aws
+- trace data access and analysis.
+- trace sampling configuration.
+- Developer
+- analyzes traces to debug application issues.
+- get summaries of distributed traces for a specified time range.
+- get x-ray groups used to filter and organize traces.
+- monitors service health and performance using x-ray.
 slug: distributed-tracing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon X-Ray Distributed Tracing\"\n  description: >-\n    Unified workflow for developers and operations teams to analyze distributed\n    traces, visualize service maps, manage sampling rules, and investigate\n    application performance insights using Amazon X-Ray.\n  tags:\n    - AWS\n    - Distributed Tracing\n    - Observability\n    - Application Performance\n    - Debugging\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: xray\n      location: ./shared/xray.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributed-tracing-api\n      description: \"Unified REST API for Amazon X-Ray distributed tracing analysis.\"\n      resources:\n        - path: /v1/traces\n          name: traces\n\
   \          description: \"Trace data access and analysis.\"\n          operations:\n            - method: GET\n              name: get-trace-summaries\n              description: \"Get trace summaries for a time range.\"\n              call: \"xray.get-trace-summaries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-map\n          name: service-map\n          description: \"Service dependency visualization.\"\n          operations:\n            - method: GET\n              name: get-service-graph\n              description: \"Get the service map.\"\n              call: \"xray.get-service-graph\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sampling-rules\n          name: sampling-rules\n          description: \"Trace sampling configuration.\"\n          operations:\n            - method: GET\n              name: get-sampling-rules\n\

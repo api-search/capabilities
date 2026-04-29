@@ -31,64 +31,64 @@ personas: []
 provider_name: Splunk
 provider_slug: splunk
 search_terms:
-- monitoring
-- delete a search job.
-- list current search jobs.
-- siem
-- control a search job (pause, unpause, finalize, cancel).
-- machine data
-- analytics
-- create a search job.
-- create a file monitor data input.
-- security
-- observability
-- create index
-- update index settings.
-- delete search job
-- create an http event collector token.
-- list all splunk indexes.
-- list indexes
-- create a new splunk index.
-- delete index
-- platform
-- send a json event via http event collector.
+- get index
 - export search results
-- list indexes.
-- update index
-- list http event collector tokens.
-- check hec indexing acknowledgment status.
-- logging
-- get results from a completed search job.
 - get search events
-- create search job
-- get search job status and details.
-- search
-- search job management.
-- create http input token
-- check ack status
-- list monitor inputs
-- send event
 - create monitor input
-- send an event.
-- data ingestion
+- create an http event collector token.
+- analytics
 - create a new spl search job.
-- data analysis
-- list file monitor data inputs.
+- list monitor inputs
+- search job management.
+- update index settings.
+- send an event.
+- create a search job.
+- create a new splunk index.
+- list current search jobs.
+- create http input token
+- siem
+- list indexes
+- get search job
+- list indexes.
+- splunk
+- list all splunk indexes.
+- create search job
+- list search jobs.
+- data ingestion
+- index management.
+- update index
+- delete an index.
 - control search job
+- create a file monitor data input.
+- monitoring
+- platform
+- create index
+- send a json event via http event collector.
+- list http event collector tokens.
+- delete search job
+- search
+- event ingestion via hec.
+- send event
+- data analysis
+- observability
+- get search job status and details.
+- control a search job (pause, unpause, finalize, cancel).
+- list http input tokens
+- security
 - get search results
 - list search jobs
+- check ack status
 - get untransformed events from a search job.
-- event ingestion via hec.
-- splunk
-- get index details and settings.
-- list http input tokens
-- index management.
-- get search job
-- get index
-- delete an index.
-- create an index.
-- list search jobs.
 - export search results directly without creating a job.
+- delete index
+- machine data
+- check hec indexing acknowledgment status.
+- get results from a completed search job.
+- logging
+- get index details and settings.
+- delete a search job.
+- create an index.
+- list file monitor data inputs.
 slug: search-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Splunk Search and Analytics\"\n  description: \"Unified search and analytics workflow combining SPL search, index management, data inputs, and HTTP Event Collector for SOC analysts, IT operations, and data engineers.\"\n  tags:\n    - Splunk\n    - Search\n    - Analytics\n    - Monitoring\n    - Data Ingestion\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPLUNK_AUTH_TOKEN: SPLUNK_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: enterprise-rest\n      location: ./shared/enterprise-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: search-analytics-api\n      description: \"Unified REST API for Splunk search, indexing, and data ingestion.\"\n      resources:\n        - path: /v1/search-jobs\n          name: search-jobs\n          description: \"Search job management.\"\n          operations:\n            - method: GET\n              name: list-search-jobs\n\
   \              description: \"List search jobs.\"\n              call: \"enterprise-rest.list-search-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-search-job\n              description: \"Create a search job.\"\n              call: \"enterprise-rest.create-search-job\"\n              with:\n                search: \"rest.search\"\n                earliest_time: \"rest.earliest_time\"\n                latest_time: \"rest.latest_time\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/indexes\n          name: indexes\n          description: \"Index management.\"\n          operations:\n            - method: GET\n              name: list-indexes\n              description: \"List indexes.\"\n              call: \"enterprise-rest.list-indexes\"\n              outputParameters:\n                - type: object\n\

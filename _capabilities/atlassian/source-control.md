@@ -22,28 +22,28 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- collaboration
-- list teams
-- software development
-- platform
-- list workspaces
-- list teams in a workspace
-- code
-- list bitbucket workspaces
-- list pull requests
-- list snippets
 - list repositories in a workspace
 - list code snippets
+- collaboration
+- software development
 - list pull requests for a repository
-- list repositories
-- atlassian
-- repository management
-- pull request management
-- list bitbucket repositories in a workspace
-- source control
-- workspace management
-- productivity
+- list bitbucket workspaces
+- list pull requests
+- list teams in a workspace
+- list workspaces
+- list teams
 - bitbucket
+- platform
+- pull request management
+- atlassian
+- code
+- workspace management
+- list bitbucket repositories in a workspace
+- productivity
+- list snippets
+- source control
+- repository management
+- list repositories
 slug: source-control
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Source Control\"\n  description: \"Source control workflow combining Bitbucket Repositories, Pull Requests, Workspaces, Snippets, and Teams APIs for developers to manage code, reviews, and collaboration.\"\n  tags:\n    - Atlassian\n    - Bitbucket\n    - Source Control\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: atlassian-source-control-api\n      description: \"Unified REST API for Bitbucket source control operations.\"\n      resources:\n        - path: /v1/repositories\n          name: repositories\n          description: \"Repository management\"\n          operations:\n            - method: GET\n              name:\
   \ list-repositories\n              description: \"List repositories in a workspace\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pull-requests\n          name: pull-requests\n          description: \"Pull request management\"\n          operations:\n            - method: GET\n              name: list-pull-requests\n              description: \"List pull requests\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Workspace management\"\n          operations:\n            - method: GET\n              name: list-workspaces\n              description: \"List workspaces\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n\

@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Monitron
 provider_slug: amazon-monitron
 search_terms:
-- amazon monitron delete project
-- aws media processing and delivery
-- amazon monitron update project
-- create project
-- Media Developer
-- amazon monitron list project admin users
 - media
 - Broadcast Engineer
-- list jobs
-- workflow
-- amazon monitron get project
-- manage media processing jobs
-- amazon monitron get project admin user
-- aws
 - engineer managing broadcast media workflows
 - developer building media processing applications
-- amazon monitron list projects
-- associate project admin user
-- list project admin users
-- amazon monitron associate project admin user
-- get project admin user
-- list projects
+- list jobs
 - delete project
-- amazon monitron media processing workflow
+- get project admin user
+- amazon monitron get project
+- workflow
 - broadcasting
-- amazon monitron create project
-- media processing
-- update project
+- manage media processing jobs
+- Media Developer
+- amazon monitron delete project
+- amazon monitron list projects
+- list projects
 - get project
+- update project
+- associate project admin user
+- amazon monitron media processing workflow
+- media processing
+- aws media processing and delivery
+- amazon monitron get project admin user
+- aws
+- amazon monitron create project
+- create project
+- list project admin users
+- amazon monitron list project admin users
+- amazon monitron update project
+- amazon monitron associate project admin user
 slug: amazon-monitron-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Monitron Workflow\n  description: Workflow capability for Amazon Monitron media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: monitron\n    location: ./shared/monitron.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: monitron-workflow-api\n    description: Unified REST API for Amazon Monitron workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: monitron.list-jobs\n        outputParameters:\n        - type: object\n\
   \          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: monitron-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon Monitron workflow management.\n    tools:\n    - name: list-projects\n      description: Amazon Monitron List Projects\n      hints:\n        readOnly: true\n        openWorld: true\n      call: monitron.list-projects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-project\n      description: Amazon Monitron Create Project\n      hints:\n        readOnly: false\n        openWorld: true\n      call: monitron.create-project\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-project\n      description: Amazon Monitron Get Project\n      hints:\n        readOnly: true\n        openWorld: true\n      call: monitron.get-project\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-project\n      description: Amazon Monitron\

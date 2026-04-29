@@ -41,42 +41,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- human capital management.
-- supply chain management
-- content management
-- chatbot
-- peoplesoft
-- chatbot intent fulfillments
-- branding themes
-- portal
-- retrieve available branding themes.
-- communications
-- send notification
-- financial management
-- list intents
-- create content
-- portal content items
-- list themes
-- retrieve notifications for the current user.
-- retrieve available chatbot intents.
-- crm
-- process a chatbot intent fulfillment request.
-- campus solutions
-- create a new portal content item.
-- financial and supply chain management.
-- campus solutions.
-- send a notification via email, text, or in-app channels.
-- chatbot intents
-- notifications
-- erp
-- notification management
-- list content
-- enterprise software
-- hcm
-- fulfill intent
 - retrieve portal content items.
+- erp
+- chatbot intent fulfillments
+- financial management
+- peopletools platform services.
+- chatbot intents
+- notification management
+- portal content items
+- create content
+- list intents
+- portal
+- chatbot
+- create a new portal content item.
+- notifications
+- campus solutions
+- send notification
+- list content
+- hcm
+- process a chatbot intent fulfillment request.
+- peoplesoft
+- retrieve notifications for the current user.
+- send a notification via email, text, or in-app channels.
+- retrieve available chatbot intents.
+- financial and supply chain management.
+- human capital management.
+- crm
+- fulfill intent
+- supply chain management
 - list notifications
+- campus solutions.
+- branding themes
+- communications
+- retrieve available branding themes.
+- content management
+- enterprise software
+- list themes
 slug: portal-and-communications
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Portal And Communications\"\n  description: \"Unified workflow for content managers combining portal content management, branding, chatbot integration, and notification services across PeopleSoft Interaction Hub, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - Portal\n    - Content Management\n    - Communications\n    - Notifications\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: interaction-hub\n      location: ./shared/interaction-hub.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: portal-api\n\
   \      description: \"Unified REST API for PeopleSoft portal and communications workflows.\"\n      resources:\n        - path: /v1/content\n          name: content\n          description: \"Portal content items\"\n          operations:\n            - method: GET\n              name: list-content\n              description: \"Retrieve portal content items.\"\n              call: \"interaction-hub.list-content\"\n              with:\n                category: \"rest.category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-content\n              description: \"Create a new portal content item.\"\n              call: \"interaction-hub.create-content\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/themes\n          name: themes\n          description: \"Branding themes\"\n          operations:\n            -\

@@ -9,13 +9,13 @@ personas: []
 provider_name: CloudZero
 provider_slug: cloudzero
 search_terms:
-- cost allocation
 - telemetry
-- cloud cost management
 - finops
-- budgets
 - unit economics
 - cost optimization
+- cloud cost management
+- budgets
+- cost allocation
 slug: cloud-cost-finops
 source_yaml: "# Naftiko capabilities profile for CloudZero.\n# Capabilities map FinOps verbs against the CloudZero V2 REST API: billing\n# queries, insights, budgets, allocation telemetry, unit metric telemetry,\n# and AnyCost ingestion.\nprovider: cloudzero\nname: CloudZero\ndescription: >-\n  Capabilities cover querying billing costs and dimensions, managing\n  insights and budgets, sending allocation and unit metric telemetry,\n  and ingesting cost data from any source via the AnyCost framework.\ncapabilities:\n  - id: cloudzero.billing.costs\n    name: Query billing costs\n    description: Return cost rows for a date range with selected dimensions and metrics.\n    api: cloudzero:billing\n    inputs:\n      - start_date\n      - end_date\n      - dimensions\n      - metrics\n      - filter\n      - page\n      - page_size\n    outputs:\n      - results\n      - total\n\n  - id: cloudzero.billing.dimensions\n    name: List billing dimensions\n    description: Return the set of dimensions\
   \ available for billing queries.\n    api: cloudzero:billing\n    outputs:\n      - dimensions\n\n  - id: cloudzero.insights.list\n    name: List insights\n    description: Return cost insights and recommendations.\n    api: cloudzero:insights\n    inputs:\n      - page\n      - page_size\n      - status\n      - severity\n    outputs:\n      - items\n      - total\n\n  - id: cloudzero.insights.create\n    name: Create insight\n    description: Record a new actionable cost insight.\n    api: cloudzero:insights\n    inputs:\n      - title\n      - description\n      - severity\n      - estimated_savings\n      - assigned_to\n    outputs:\n      - insight_id\n      - status\n\n  - id: cloudzero.insights.update\n    name: Update insight\n    description: Update status, owner, or savings estimate of an existing insight.\n    api: cloudzero:insights\n    inputs:\n      - insight_id\n      - status\n      - assigned_to\n      - notes\n    outputs:\n      - status\n\n  - id: cloudzero.insights.delete\n\

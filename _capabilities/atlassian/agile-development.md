@@ -18,30 +18,30 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- collaboration
-- search issues
-- list all jira projects
 - jira
-- search issues using jql
-- jira project management
-- list statuses
-- software development
-- list all projects
-- jira issue management
-- platform
-- code
-- list filters
 - list dashboards
-- list workflows
-- atlassian
-- list jira dashboards
-- search jira issues using jql queries
-- list saved jira filters
-- agile
-- list projects
-- productivity
 - list workflow statuses
+- collaboration
+- search jira issues using jql queries
+- agile
+- search issues
+- software development
+- list workflows
+- list jira dashboards
 - list jira workflows
+- platform
+- jira issue management
+- search issues using jql
+- list filters
+- atlassian
+- code
+- list projects
+- jira project management
+- list all jira projects
+- list statuses
+- productivity
+- list saved jira filters
+- list all projects
 slug: agile-development
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Agile Development\"\n  description: \"Agile software development workflow combining Jira Issue, Project, Filter, Search, Field, Workflow, and Dashboard APIs for software developers and scrum masters to plan, track, and deliver software.\"\n  tags:\n    - Agile\n    - Atlassian\n    - Jira\n    - Software Development\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: atlassian-agile-api\n      description: \"Unified REST API for Atlassian agile development operations.\"\n      resources:\n        - path: /v1/issues\n          name: issues\n          description: \"Jira issue management\"\n\
   \          operations:\n            - method: GET\n              name: search-issues\n              description: \"Search issues using JQL\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects\n          name: projects\n          description: \"Jira project management\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List all projects\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: atlassian-agile-mcp\n      transport: http\n      description: \"MCP server for AI-assisted agile development with Jira.\"\n      tools:\n        - name: search-issues\n          description: \"Search Jira issues using JQL queries\"\n      \

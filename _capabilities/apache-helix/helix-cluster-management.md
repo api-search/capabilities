@@ -9,11 +9,11 @@ personas: []
 provider_name: Apache Helix
 provider_slug: apache-helix
 search_terms:
-- replication
 - apache
+- cluster management
+- replication
 - partitioning
 - distributed systems
-- cluster management
 - open source
 slug: helix-cluster-management
 source_yaml: "name: Apache Helix Cluster Management\ndescription: Workflow capability for managing distributed cluster resources and partition state in Apache Helix\npersona: Platform Engineer\nworkflow:\n  - step: list-clusters\n    name: List Clusters\n    description: Discover all Helix clusters under management\n    capability: helix-rest\n    operation: listClusters\n    server:\n      rest: http://localhost:9100\n      mcp: http://localhost:9090\n\n  - step: get-cluster\n    name: Get Cluster\n    description: Inspect configuration and live instances of a cluster\n    capability: helix-rest\n    operation: getCluster\n    server:\n      rest: http://localhost:9100\n      mcp: http://localhost:9090\n\n  - step: list-resources\n    name: List Resources\n    description: List all managed resources in the cluster\n    capability: helix-rest\n    operation: listResources\n    server:\n      rest: http://localhost:9100\n      mcp: http://localhost:9090\n\n  - step: get-external-view\n  \

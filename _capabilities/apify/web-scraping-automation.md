@@ -23,39 +23,39 @@ personas: []
 provider_name: Apify
 provider_slug: apify
 search_terms:
-- retrieve scraped data.
-- abort a running apify actor.
-- web scraping
-- Web Scraping Engineer
-- get scraped data
-- monitor actor runs.
-- get dataset items
-- AI Developer
-- check the status of an apify actor run.
-- crawling
-- list all available apify actors for web scraping and automation.
-- engineer extracting structured data from websites for analytics pipelines.
-- developer using web scraping to collect training data or rag document sources.
 - data aggregation
+- abort actor run
+- engineer building and running production web scrapers on apify.
+- engineer extracting structured data from websites for analytics pipelines.
+- browse and run actors.
+- Web Scraping Engineer
+- browser automation
 - list actors.
-- Data Engineer
-- get run status.
+- monitor actor runs.
+- automation
+- run actor
+- get scraped data
+- retrieve scraped data.
+- data extraction
+- crawling
+- list actors
+- get run
+- actors
+- web automation
+- AI Developer
 - run an apify actor with custom input to scrape a website or automate a task.
 - get run status
-- get dataset items.
+- abort a running apify actor.
+- check the status of an apify actor run.
 - apify
-- actors
-- automation
-- get run
-- engineer building and running production web scrapers on apify.
-- web automation
+- list all available apify actors for web scraping and automation.
 - retrieve structured scraped data from an apify dataset.
-- run actor
-- list actors
-- data extraction
-- browser automation
-- abort actor run
-- browse and run actors.
+- Data Engineer
+- get run status.
+- web scraping
+- developer using web scraping to collect training data or rag document sources.
+- get dataset items.
+- get dataset items
 slug: web-scraping-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apify Web Scraping and Automation\"\n  description: \"Unified workflow for running web scraping actors, monitoring execution, and retrieving structured data from the Apify platform.\"\n  tags:\n    - Apify\n    - Web Scraping\n    - Automation\n    - Data Extraction\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIFY_TOKEN: APIFY_TOKEN\n\ncapability:\n  consumes:\n    - import: apify\n      location: ./shared/apify.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apify-scraping-api\n      description: \"Unified REST API for Apify web scraping and automation.\"\n      resources:\n        - path: /v1/actors\n          name: actors\n          description: \"Browse and run Actors.\"\n          operations:\n            - method: GET\n              name: list-actors\n              description: \"List Actors.\"\n              call: \"apify.list-actors\"\n\
   \              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/runs/{runId}\n          name: runs\n          description: \"Monitor Actor runs.\"\n          operations:\n            - method: GET\n              name: get-run\n              description: \"Get run status.\"\n              call: \"apify.get-run\"\n              with:\n                runId: \"rest.runId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets/{datasetId}/items\n          name: dataset-items\n          description: \"Retrieve scraped data.\"\n          operations:\n            - method: GET\n              name: get-dataset-items\n              description: \"Get dataset items.\"\n              call: \"apify.get-dataset-items\"\n              with:\n                datasetId: \"rest.datasetId\"\n              outputParameters:\n                - type: object\n                \

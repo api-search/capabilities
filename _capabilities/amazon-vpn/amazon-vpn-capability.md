@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
-- vpn
 - aws
 - networking
 - security
+- vpn
 slug: amazon-vpn-capability
 source_yaml: 'id: amazon-vpn-capability
 

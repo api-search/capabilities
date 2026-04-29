@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaPackage
 provider_slug: amazon-mediapackage
 search_terms:
-- amazon mediapackage media processing workflow
-- aws media processing and delivery
-- Media Developer
-- configure logs
 - media
+- createoriginendpoint
 - Broadcast Engineer
-- create harvest job
-- list jobs
-- configurelogs
-- workflow
-- createharvestjob
-- describechannel
-- listoriginendpoints
-- listharvestjobs
-- manage media processing jobs
-- aws
-- create origin endpoint
 - engineer managing broadcast media workflows
 - developer building media processing applications
-- list harvest jobs
-- createoriginendpoint
+- list jobs
 - createchannel
-- listchannels
-- create channel
-- list origin endpoints
+- configurelogs
+- workflow
 - broadcasting
-- media processing
+- configure logs
+- create origin endpoint
+- manage media processing jobs
+- create channel
+- Media Developer
 - list channels
+- describechannel
+- listharvestjobs
+- createharvestjob
 - describe channel
+- list harvest jobs
+- amazon mediapackage media processing workflow
+- listoriginendpoints
+- media processing
+- aws media processing and delivery
+- aws
+- listchannels
+- create harvest job
+- list origin endpoints
 slug: amazon-mediapackage-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaPackage Workflow\n  description: Workflow capability for Amazon MediaPackage media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: mediapackage\n    location: ./shared/mediapackage.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: mediapackage-workflow-api\n    description: Unified REST API for Amazon MediaPackage workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: mediapackage.list-jobs\n        outputParameters:\n\
   \        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: mediapackage-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon MediaPackage workflow management.\n    tools:\n    - name: configure-logs\n      description: ConfigureLogs\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediapackage.configure-logs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-channels\n      description: ListChannels\n      hints:\n        readOnly: true\n        openWorld: true\n      call: mediapackage.list-channels\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-channel\n      description: CreateChannel\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediapackage.create-channel\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-harvest-jobs\n      description: ListHarvestJobs\n\

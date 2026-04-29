@@ -27,45 +27,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- activecampaign
-- list all deals
-- accounts
-- create a new deal
-- marketing automation
-- list deals
-- create a new company account in activecampaign crm
-- create a new sales deal in activecampaign crm
-- list all accounts
-- sales deal management
-- Marketing Manager
-- customer experience
-- cross-channel contact engagement and personalization
-- get deal
-- Sales Representative
-- Revenue Operations
-- create account
+- Growth Engineer
+- create a new account
 - list all company accounts in activecampaign crm
-- email, sms, and multi-channel marketing automation
-- sales
-- manages email campaigns, automations, and contact segmentation
-- sales automation
-- retrieve a specific deal by id
+- list all sales deals in activecampaign crm
 - orchestrate contact journeys, campaigns, automations, and list management
-- manage sales pipeline, deals, accounts, and tasks
+- create a new deal
+- list all accounts
+- create a new company account in activecampaign crm
+- list all deals
+- crm, pipeline management, and revenue operations
+- get deal
+- deals
+- email, sms, and multi-channel marketing automation
+- cross-channel contact engagement and personalization
+- tracks deals, manages accounts, and uses crm features
+- accounts
+- manages email campaigns, automations, and contact segmentation
+- Sales Representative
+- Marketing Manager
+- retrieve a specific deal by id
+- create a new sales deal in activecampaign crm
+- activecampaign
+- email marketing
+- list deals
+- crm
+- sales
+- customer experience
+- Revenue Operations
+- Account Manager
+- builds integrations, automation workflows, and uses the api directly
 - company account management
 - create deal
-- list all sales deals in activecampaign crm
 - list accounts
-- deals
-- crm
-- Account Manager
-- crm, pipeline management, and revenue operations
-- create a new account
-- email marketing
-- Growth Engineer
+- create account
+- manage sales pipeline, deals, accounts, and tasks
+- marketing automation
 - Email Marketer
-- builds integrations, automation workflows, and uses the api directly
-- tracks deals, manages accounts, and uses crm features
+- sales automation
+- sales deal management
 slug: crm-sales
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ActiveCampaign CRM and Sales\"\n  description: \"Workflow capability for CRM and sales pipeline management including deals, accounts, tasks, and pipeline stages. Used by sales teams and revenue operations to track and advance deals.\"\n  tags:\n    - ActiveCampaign\n    - CRM\n    - Sales\n    - Deals\n    - Accounts\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVECAMPAIGN_API_TOKEN: ACTIVECAMPAIGN_API_TOKEN\n      ACTIVECAMPAIGN_API_URL: ACTIVECAMPAIGN_API_URL\n\ncapability:\n  consumes:\n    - import: activecampaign-v3\n      location: ./shared/activecampaign-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: crm-sales-api\n      description: \"Unified REST API for CRM and sales pipeline workflows.\"\n      resources:\n        - path: /v1/deals\n          name: deals\n          description: \"Sales deal management\"\n          operations:\n\
   \            - method: GET\n              name: list-deals\n              description: \"List all deals\"\n              call: \"activecampaign-v3.list-deals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-deal\n              description: \"Create a new deal\"\n              call: \"activecampaign-v3.create-deal\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts\n          name: accounts\n          description: \"Company account management\"\n          operations:\n            - method: GET\n              name: list-accounts\n              description: \"List all accounts\"\n              call: \"activecampaign-v3.list-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-account\n     \

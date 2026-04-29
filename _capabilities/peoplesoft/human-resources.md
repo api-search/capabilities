@@ -49,49 +49,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- submit a candidate application for a job posting.
-- human capital management.
-- job postings
-- supply chain management
-- get job details
-- peoplesoft
-- individual approval operations
-- employee records
-- talent management
-- submit application
-- individual employee details
 - payroll run history and status
+- retrieve details for a specific job posting.
+- hr approval requests
+- search available job postings.
+- payroll
+- erp
+- talent management
+- human resources
+- approve, deny, or push back an hr approval request.
+- list benefit enrollments
+- benefit enrollment records
+- financial management
+- peopletools platform services.
+- retrieve details for a specific employee.
+- list pending approvals
+- get employee
+- list payroll runs
+- list employees
+- campus solutions
 - job posting details
+- retrieve employee records with optional department and status filters.
+- employee records
+- hcm
+- individual approval operations
+- peoplesoft
+- submit application
+- get job details
+- financial and supply chain management.
+- process approval
+- human capital management.
+- retrieve payroll run history and status.
+- crm
+- job postings
+- individual employee details
 - retrieve benefit enrollment records.
+- supply chain management
+- campus solutions.
 - retrieve pending hr approval requests.
 - search jobs
-- list employees
-- list payroll runs
-- retrieve employee records with optional department and status filters.
-- retrieve details for a specific job posting.
+- submit a candidate application for a job posting.
 - candidate applications
-- financial management
-- benefit enrollment records
-- hr approval requests
-- crm
-- recruiting
-- search available job postings.
-- campus solutions
-- retrieve payroll run history and status.
-- get employee
-- financial and supply chain management.
-- campus solutions.
-- list pending approvals
-- erp
-- hcm
-- process approval
 - enterprise software
-- approve, deny, or push back an hr approval request.
-- retrieve details for a specific employee.
-- human resources
-- list benefit enrollments
-- payroll
+- recruiting
 slug: human-resources
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Human Resources\"\n  description: \"Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Human Resources\n    - HCM\n    - Recruiting\n    - Talent Management\n    - Payroll\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: hcm\n      location: ./shared/hcm.yaml\n    - import: recruiting\n      location: ./shared/recruiting-talent-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hr-api\n      description: \"Unified REST API\
   \ for PeopleSoft human resources workflows.\"\n      resources:\n        - path: /v1/employees\n          name: employees\n          description: \"Employee records\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"Retrieve employee records with optional department and status filters.\"\n              call: \"hcm.list-employees\"\n              with:\n                department: \"rest.department\"\n                status: \"rest.status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees/{employeeId}\n          name: employee-detail\n          description: \"Individual employee details\"\n          operations:\n            - method: GET\n              name: get-employee\n              description: \"Retrieve details for a specific employee.\"\n              call: \"hcm.get-employee\"\n              with:\n                employeeId: \"rest.employeeId\"\

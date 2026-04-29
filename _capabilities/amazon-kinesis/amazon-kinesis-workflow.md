@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Kinesis
 provider_slug: amazon-kinesis
 search_terms:
-- big data
-- streams create stream
+- amazon kinesis
+- streams list streams
 - analytics
-- streaming
-- integrates api into applications
 - workflow
 - streams describe stream summary
-- real-time
-- Developer
-- creates a kinesis data stream.
-- aws
 - provides a summarized description of the specified kinesis data stream.
+- creates a kinesis data stream.
+- streams create stream
+- big data
+- real-time
+- streaming
 - manages resources and configurations
-- lists your kinesis data streams.
-- unified workflow for amazon kinesis resource management
-- amazon kinesis
+- integrates api into applications
 - data processing
-- streams list streams
+- lists your kinesis data streams.
+- aws
+- Developer
 - Administrator
+- unified workflow for amazon kinesis resource management
 slug: amazon-kinesis-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Workflow\n  description: Unified workflow capability for Amazon Kinesis combining resource management and operations.\n  tags:\n  - Amazon Kinesis\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kinesis\n    location: ./shared/kinesis.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kinesis-api\n    description: REST API for Amazon Kinesis workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kinesis-mcp\n    transport: http\n    description: MCP server for Amazon Kinesis.\n    tools:\n    - name: streams-create-stream\n      description: Creates a Kinesis data stream.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kinesis.createstream\n      outputParameters:\n \
   \     - type: object\n        mapping: $.\n    - name: streams-list-streams\n      description: Lists your Kinesis data streams.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis.liststreams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: streams-describe-stream-summary\n      description: Provides a summarized description of the specified Kinesis data stream.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis.describestreamsummary\n      outputParameters:\n      - type: object\n        mapping: $.\n"

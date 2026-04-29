@@ -35,49 +35,49 @@ personas: []
 provider_name: Amazon Security Lake
 provider_slug: amazon-security-lake
 search_terms:
-- threat detection
-- siem
 - create subscriber
-- security leaders who consume security data for threat intelligence and compliance reporting
-- list all log sources configured in security lake
-- add custom log source
-- create a new security data lake
-- list subscribers
-- security data centralization and threat analysis
-- data subscriber access management
-- security
-- data lake infrastructure management and subscriber access control
-- list all configured log sources
-- Security Data Engineer
-- create a new subscriber for data access
-- list all amazon security lake data lake configurations
-- enable a native aws log source in security lake
-- ocsf
-- list log sources
-- add a custom third-party log source to security lake
-- security log source management
-- get subscriber
-- create a new amazon security lake data lake
-- list data lakes
-- amazon security lake
-- aws
-- delete a security lake subscriber
-- engineers who configure and manage security data lakes, log sources, and subscriber access
-- list all data lake subscribers
-- create a subscriber for security lake data access
-- get data lake source status across accounts and regions
-- delete subscriber
-- create data lake
-- CISO
-- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
-- add a native aws log source
 - data lake
-- list all security lake data subscribers
-- get details about a specific security lake subscriber
-- list all security data lake configurations
-- security data lake lifecycle management
-- get data lake sources
+- create a new subscriber for data access
+- threat detection
+- list log sources
+- delete a security lake subscriber
+- data lake infrastructure management and subscriber access control
+- list data lakes
+- add a native aws log source
+- get data lake source status across accounts and regions
+- siem
 - add aws log source
+- list all security data lake configurations
+- list subscribers
+- create a subscriber for security lake data access
+- security leaders who consume security data for threat intelligence and compliance reporting
+- create a new security data lake
+- delete subscriber
+- get data lake sources
+- security data lake lifecycle management
+- amazon security lake
+- data subscriber access management
+- get details about a specific security lake subscriber
+- add a custom third-party log source to security lake
+- ocsf
+- security log source management
+- list all amazon security lake data lake configurations
+- list all log sources configured in security lake
+- get subscriber
+- CISO
+- security data centralization and threat analysis
+- Security Data Engineer
+- security
+- enable a native aws log source in security lake
+- create a new amazon security lake data lake
+- list all security lake data subscribers
+- engineers who configure and manage security data lakes, log sources, and subscriber access
+- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
+- aws
+- add custom log source
+- list all configured log sources
+- create data lake
+- list all data lake subscribers
 slug: security-data-lake
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Security Lake Security Data Lake\"\n  description: \"Unified capability for managing a centralized security data lake including data lake configuration, log source ingestion, and subscriber access management. Used by Security Data Engineers and CISO teams.\"\n  tags:\n    - Amazon Security Lake\n    - Security\n    - Data Lake\n    - SIEM\n    - OCSF\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-security-lake\n      location: ./shared/amazon-security-lake.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: security-data-lake-api\n      description: \"Unified REST API for Amazon Security Lake security data lake management.\"\n      resources:\n        - path: /v1/data-lakes\n   \
   \       name: data-lakes\n          description: \"Security data lake lifecycle management\"\n          operations:\n            - method: GET\n              name: list-data-lakes\n              description: \"List all security data lake configurations\"\n              call: \"amazon-security-lake.list-data-lakes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-data-lake\n              description: \"Create a new security data lake\"\n              call: \"amazon-security-lake.create-data-lake\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/log-sources\n          name: log-sources\n          description: \"Security log source management\"\n          operations:\n            - method: GET\n              name: list-log-sources\n              description: \"List all configured log sources\"\n              call:\

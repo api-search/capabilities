@@ -43,53 +43,53 @@ personas: []
 provider_name: Amberflo
 provider_slug: amberflo
 search_terms:
-- monetization
-- ai and cloud cost governance
-- manages pricing models and billing configuration
-- ingest usage events for metering
-- manage prepaid credit orders
-- Finance Team
-- list all meter definitions
-- end-to-end workflow combining metering and billing apis
 - ingest events
-- list invoices
-- list all meter definitions for usage tracking
-- create meter definition
-- manage meter definitions for tracking usage
-- create a new customer account in amberflo
-- finops
-- metering
-- usage event tracking and aggregation
-- create a new customer account
-- ingest meter events
-- ingest meter events to track usage
-- create a new meter definition to track usage events
-- list invoices for a customer
-- query usage
-- billing
-- query aggregated usage data for a meter
-- manage customer accounts
 - query usage data
-- usage-based billing
-- monitors revenue, invoices, and billing analytics
-- amberflo
-- query aggregated usage data
-- Product Manager
+- query usage
 - list invoices for a specific customer
-- create a prepaid credit order for a customer
-- list meter definitions
-- create customer
-- create a new meter definition
-- customer billing and subscription management
-- create a prepaid order for a customer
-- retrieve customer invoices
-- create prepaid order
-- API Developer
-- integrates metering sdk and ingests usage events
-- list all customer accounts in amberflo
 - ai cost management
-- list all customers
+- list all meter definitions for usage tracking
+- API Developer
+- Finance Team
+- monetization
+- manages pricing models and billing configuration
+- usage-based billing
+- metering
+- query aggregated usage data for a meter
+- create prepaid order
+- list all meter definitions
+- manage prepaid credit orders
+- create a prepaid order for a customer
+- monitors revenue, invoices, and billing analytics
 - list customers
+- usage event tracking and aggregation
+- list invoices for a customer
+- end-to-end workflow combining metering and billing apis
+- finops
+- ingest meter events
+- retrieve customer invoices
+- customer billing and subscription management
+- list all customer accounts in amberflo
+- billing
+- amberflo
+- list all customers
+- create a new customer account in amberflo
+- list meter definitions
+- create a prepaid credit order for a customer
+- create a new meter definition
+- integrates metering sdk and ingests usage events
+- query aggregated usage data
+- ai and cloud cost governance
+- manage customer accounts
+- create a new customer account
+- create customer
+- create a new meter definition to track usage events
+- ingest meter events to track usage
+- create meter definition
+- list invoices
+- Product Manager
+- ingest usage events for metering
+- manage meter definitions for tracking usage
 slug: usage-based-monetization
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amberflo Usage-Based Monetization\n  description: >-\n    Unified workflow for API monetization teams combining metering and billing APIs.\n    Enables end-to-end usage tracking, customer management, and billing automation\n    for product and finance teams.\n  tags:\n    - Amberflo\n    - Usage-Based Billing\n    - Metering\n    - Monetization\n    - FinOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMBERFLO_API_KEY: AMBERFLO_API_KEY\n\ncapability:\n  consumes:\n    - import: amberflo-metering\n      location: ./shared/metering-api.yaml\n    - import: amberflo-billing\n      location: ./shared/billing-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: amberflo-monetization-api\n      description: Unified REST API for usage-based monetization workflows.\n      resources:\n        - path: /v1/meter-definitions\n          name: meter-definitions\n\
   \          description: Manage meter definitions for tracking usage\n          operations:\n            - method: GET\n              name: list-meter-definitions\n              description: List all meter definitions\n              call: \"amberflo-metering.list-meter-definitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-meter-definition\n              description: Create a new meter definition\n              call: \"amberflo-metering.create-meter-definition\"\n              with:\n                meterApiName: \"rest.meterApiName\"\n                displayName: \"rest.displayName\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: Ingest meter events\n          operations:\n            - method: POST\n        \

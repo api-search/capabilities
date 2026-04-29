@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon HealthLake
 provider_slug: amazon-healthlake
 search_terms:
-- aws
-- cloud computing
 - health data
 - fhir
+- aws
 - healthcare
+- cloud computing
 - hipaa
 slug: amazon-healthlake-health-data-operations
 source_yaml: "name: Amazon HealthLake Health Data Operations\nversion: 1.0.0-alpha1\ndescription: Workflow capability for managing FHIR health data including datastores, import and export jobs.\npersona:\n  - Healthcare Developer\n  - FHIR Data Engineer\n  - HIPAA Compliance Officer\napis:\n  - Amazon HealthLake\ntools:\n  - name: create_fhir_datastore\n    description: Create a new FHIR datastore for health data storage\n    operationId: CreateFHIRDatastore\n    method: POST\n    path: /datastore\n  - name: list_fhir_datastores\n    description: List all FHIR datastores in the account\n    operationId: ListFHIRDatastores\n    method: GET\n    path: /datastore\n  - name: describe_fhir_datastore\n    description: Get details of a specific FHIR datastore\n    operationId: DescribeFHIRDatastore\n    method: GET\n    path: /datastore/{DatastoreId}\n  - name: delete_fhir_datastore\n    description: Delete a FHIR datastore\n    operationId: DeleteFHIRDatastore\n    method: DELETE\n    path: /datastore/{DatastoreId}\n\

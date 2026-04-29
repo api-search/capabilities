@@ -35,48 +35,48 @@ personas: []
 provider_name: Amazon Polly
 provider_slug: amazon-polly
 search_terms:
-- convert text to lifelike speech audio using amazon polly
-- list tasks
-- list available amazon polly voices filterable by language and engine type
-- asynchronous synthesis tasks
-- start task
-- machine learning
-- create lexicon
-- multi-channel text-to-speech synthesis workflow
-- ssml
-- get lexicon
-- available synthesis voices
-- get the content of a pronunciation lexicon
-- builds voice-enabled applications using polly speech synthesis
-- list synthesis tasks
-- create or update a custom pronunciation lexicon
-- speech synthesis from text
-- list lexicons
-- list pronunciation lexicons
-- amazon
-- list custom pronunciation lexicons for controlling how words are spoken
-- aws
-- creates audio content from written text using polly
-- voice
-- start an asynchronous speech synthesis task
 - text-to-speech
-- synthesize speech
-- ai
-- list voices
-- start synthesis task
-- tts
-- create or update a pronunciation lexicon
-- convert text to speech audio
-- Application Developer
+- create lexicon
 - voice applications
-- list available voices by language and engine
-- start an asynchronous synthesis task for long text with s3 output
+- creates audio content from written text using polly
+- list voices
+- list lexicons
+- tts
+- ssml
+- start synthesis task
 - generative ai
-- neural engine
+- list custom pronunciation lexicons for controlling how words are spoken
+- voice
+- list available voices by language and engine
+- speech synthesis from text
+- create or update a custom pronunciation lexicon
+- builds voice-enabled applications using polly speech synthesis
+- available synthesis voices
+- amazon
+- list pronunciation lexicons
+- asynchronous synthesis tasks
+- start an asynchronous synthesis task for long text with s3 output
 - Content Creator
+- multi-channel text-to-speech synthesis workflow
+- get lexicon
+- start task
 - custom pronunciation lexicons
+- neural engine
+- create or update a pronunciation lexicon
+- convert text to lifelike speech audio using amazon polly
 - list and monitor asynchronous speech synthesis tasks
+- ai
 - speech synthesis
+- get the content of a pronunciation lexicon
+- list available amazon polly voices filterable by language and engine type
+- start an asynchronous speech synthesis task
+- list tasks
+- aws
+- Application Developer
+- convert text to speech audio
+- list synthesis tasks
+- synthesize speech
+- machine learning
 slug: text-to-speech
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Polly Text-to-Speech\n  description: Workflow capability for converting text to lifelike speech using Amazon Polly. Combines speech synthesis, voice discovery, and lexicon management for developers building voice-enabled applications.\n  tags:\n    - Amazon\n    - AWS\n    - Text-To-Speech\n    - Speech Synthesis\n    - AI\n    - Voice Applications\n    - Machine Learning\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-polly\n      location: ./shared/amazon-polly.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: text-to-speech-api\n      description: Unified REST API for Amazon Polly text-to-speech workflows.\n      resources:\n        - path: /v1/speech\n          name: speech\n\
   \          description: Speech synthesis from text\n          operations:\n            - method: POST\n              name: synthesize-speech\n              description: Convert text to speech audio\n              call: \"amazon-polly.synthesize-speech\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/voices\n          name: voices\n          description: Available synthesis voices\n          operations:\n            - method: GET\n              name: list-voices\n              description: List available voices by language and engine\n              call: \"amazon-polly.describe-voices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/lexicons\n          name: lexicons\n          description: Custom pronunciation lexicons\n          operations:\n            - method: GET\n              name: list-lexicons\n              description: List pronunciation\

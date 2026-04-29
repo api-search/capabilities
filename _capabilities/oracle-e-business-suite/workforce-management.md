@@ -23,40 +23,40 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- get organizations
-- retrieve payroll runs.
-- get employee by id
-- retrieve assignments.
-- workforce management
-- get payroll runs
-- organization management.
-- list employees.
-- retrieve benefit enrollments.
-- list organizations.
-- retrieve organizations.
-- business applications
-- retrieve payroll definitions.
-- payroll management.
-- retrieve positions.
-- update employee record.
-- e-business suite
+- payroll
+- get employees
+- get employee by id.
+- erp
+- human resources
 - get positions
+- oracle
+- list payrolls.
+- payroll management.
+- workforce management
 - get assignments
 - get benefit enrollments
 - enterprise
-- create employee
-- get employee by id.
-- erp
-- oracle
-- list payrolls.
-- get employees
-- get payrolls
-- create an employee record.
-- update employee
-- human resources
-- employee management.
+- organization management.
+- retrieve payroll definitions.
 - retrieve employees.
-- payroll
+- retrieve assignments.
+- get organizations
+- update employee record.
+- retrieve benefit enrollments.
+- retrieve positions.
+- get employee by id
+- e-business suite
+- business applications
+- create an employee record.
+- get payroll runs
+- list organizations.
+- retrieve organizations.
+- list employees.
+- create employee
+- employee management.
+- update employee
+- get payrolls
+- retrieve payroll runs.
 slug: workforce-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Workforce Management\"\n  description: \"Human capital management combining HR, payroll, benefits, and organizational management. Used by HR administrators and payroll managers for employee lifecycle operations.\"\n  tags:\n    - Oracle\n    - Human Resources\n    - Workforce Management\n    - Payroll\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n\ncapability:\n  consumes:\n    - import: oracle-human-resources\n      location: ./shared/human-resources.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: workforce-management-api\n      description: \"Unified REST API for Oracle EBS workforce management.\"\n      resources:\n        - path: /v1/employees\n          name: employees\n          description: \"Employee management.\"\n          operations:\n            - method: GET\n              name: get-employees\n\
   \              description: \"List employees.\"\n              call: \"oracle-human-resources.get-employees\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Organization management.\"\n          operations:\n            - method: GET\n              name: get-organizations\n              description: \"List organizations.\"\n              call: \"oracle-human-resources.get-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payrolls\n          name: payrolls\n          description: \"Payroll management.\"\n          operations:\n            - method: GET\n              name: get-payrolls\n              description: \"List payrolls.\"\n              call: \"oracle-human-resources.get-payrolls\"\n              outputParameters:\n                - type: object\n \

@@ -26,27 +26,27 @@ provider_slug: pluralsight
 search_terms:
 - role iq
 - skill iq
-- practice exams
-- learning
-- query skills assessment
 - query skill assessments, skill iq scores, assessment catalogs, and competency measurements.
-- manage role iq
+- query practice exam attempt data and results
+- query skills assessment
 - education
 - query practice exam attempt data including scores and results.
-- query practice exam attempt data and results
-- engineering metrics
-- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
-- query skill assessments and skill iq scores
-- skills assessment
 - query and manage role iq assessments and role associations
-- skill iq assessments, scores, and competency measurements
-- query practice exams
-- courses
-- practice exam attempts, scores, and results
 - pluralsight
+- courses
+- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
+- query practice exams
 - technology
 - role iq assessments, role catalogs, and skill assignments
 - video training
+- skill iq assessments, scores, and competency measurements
+- query skill assessments and skill iq scores
+- learning
+- engineering metrics
+- practice exam attempts, scores, and results
+- skills assessment
+- practice exams
+- manage role iq
 slug: skills-assessment
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Skills Assessment\"\n  description: \"Unified workflow for L&D managers and developers to assess skills through Skill IQ, Role IQ, and practice exams. Combines skills assessment, role IQ, and practice exams APIs for comprehensive competency measurement.\"\n  tags:\n    - Pluralsight\n    - Skills Assessment\n    - Skill IQ\n    - Role IQ\n    - Practice Exams\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: pluralsight-skills-assessment\n      location: ./shared/skills-assessment.yaml\n    - import: pluralsight-role-iq\n      location: ./shared/role-iq.yaml\n    - import: pluralsight-practice-exams\n      location: ./shared/practice-exams.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: skills-assessment-api\n      description: \"Unified REST API\
   \ for Pluralsight skills assessment including Skill IQ, Role IQ, and practice exams.\"\n      resources:\n        - path: /v1/skills-assessments\n          name: skills-assessments\n          description: \"Skill IQ assessments, scores, and competency measurements\"\n          operations:\n            - method: POST\n              name: query-skills-assessment\n              description: \"Query skill assessments and Skill IQ scores\"\n              call: \"pluralsight-skills-assessment.query-skills-assessment\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/role-iq\n          name: role-iq\n          description: \"Role IQ assessments, role catalogs, and skill assignments\"\n          operations:\n            - method: POST\n              name: manage-role-iq\n\

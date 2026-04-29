@@ -30,43 +30,43 @@ personas: []
 provider_name: Amazon WorkSpaces
 provider_slug: amazon-workspaces
 search_terms:
-- list workspace images.
-- virtual desktop
-- permanently terminate virtual desktop workspaces.
-- hardware bundle catalog.
-- it administration of desktop resources
-- end user computing
-- directory management.
-- desktop as a service
-- reboot workspaces
-- manages workspaces provisioning, lifecycle, and policy.
-- create workspaces
-- list available bundles.
-- list available hardware configuration bundles.
+- describe workspace images
+- describe workspaces
 - list registered directories for workspace deployment.
-- list directories.
-- list virtual desktops.
-- aws
-- designs and operates virtual desktop infrastructure.
+- workflow for it administrators to provision and manage amazon workspaces virtual desktops including lifecycle, bundles, directories, and images.
+- it administration of desktop resources
+- list available bundles.
+- workspace image management.
 - virtual desktop lifecycle management.
 - describe workspace bundles
-- IT Administrator
-- describe workspaces
 - remote work and desktop-as-a-service infrastructure
-- End User Computing Engineer
-- list and describe all virtual desktop workspaces.
-- provision new virtual desktops.
-- workspace image management.
-- describe workspace images
-- reboot virtual desktop workspaces to resolve issues.
-- desktop
-- cloud-based virtual desktop provisioning and management
-- list available workspace images for provisioning.
-- terminate workspaces
-- describe workspace directories
+- permanently terminate virtual desktop workspaces.
+- list workspace images.
+- IT Administrator
+- reboot workspaces
+- list available hardware configuration bundles.
+- directory management.
+- list virtual desktops.
 - provision new virtual desktop workspaces for users.
 - administration
-- workflow for it administrators to provision and manage amazon workspaces virtual desktops including lifecycle, bundles, directories, and images.
+- desktop
+- desktop as a service
+- cloud-based virtual desktop provisioning and management
+- list available workspace images for provisioning.
+- provision new virtual desktops.
+- designs and operates virtual desktop infrastructure.
+- list directories.
+- list and describe all virtual desktop workspaces.
+- describe workspace directories
+- aws
+- hardware bundle catalog.
+- end user computing
+- reboot virtual desktop workspaces to resolve issues.
+- End User Computing Engineer
+- terminate workspaces
+- manages workspaces provisioning, lifecycle, and policy.
+- create workspaces
+- virtual desktop
 slug: virtual-desktop-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkSpaces Virtual Desktop Management\"\n  description: >-\n    Unified workflow for IT administrators and end user computing teams to\n    provision, manage, and maintain Amazon WorkSpaces virtual desktops at scale,\n    including workspace lifecycle, bundle management, directory integration,\n    and image management.\n  tags:\n    - AWS\n    - Virtual Desktop\n    - End User Computing\n    - Desktop as a Service\n    - Administration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: workspaces\n      location: ./shared/workspaces.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: virtual-desktop-management-api\n      description: \"Unified REST API for Amazon WorkSpaces virtual desktop\
   \ management.\"\n      resources:\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Virtual desktop lifecycle management.\"\n          operations:\n            - method: GET\n              name: describe-workspaces\n              description: \"List virtual desktops.\"\n              call: \"workspaces.describe-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workspaces\n              description: \"Provision new virtual desktops.\"\n              call: \"workspaces.create-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bundles\n          name: bundles\n          description: \"Hardware bundle catalog.\"\n          operations:\n            - method: GET\n              name: describe-workspace-bundles\n              description: \"List available bundles.\"\

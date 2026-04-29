@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
+- create a chat completion
+- model listing
 - create chat completion
-- openai create speech
-- cognitive list accounts
-- openai create completion
-- create a text completion
-- translate audio to english
-- openai create translation
-- list cognitive services accounts
-- list available openai models
-- openai
-- cloud
-- openai create transcription
-- openai create chat completion
-- list cognitive accounts
-- api management
+- platform as a service
 - embedding operations
-- cognitive services accounts
-- chat completion operations
-- openai create image
-- list model deployments
-- infrastructure as a service
+- openai create transcription
 - azure
-- cognitive services
+- t1
+- openai create translation
+- infrastructure as a service
+- openai create embedding
+- openai create chat completion
 - list available ai models
 - transcribe audio to text
-- generate speech from text
-- ai
-- platform as a service
-- create text embeddings
-- model listing
-- generate images from text
-- create a chat completion using azure openai
-- enterprise
-- create a chat completion
+- translate audio to english
+- cognitive services accounts
 - cloud computing
-- list openai models
-- openai create embedding
-- t1
-- create embedding
-- openai list deployments
+- list cognitive accounts
+- chat completion operations
+- cognitive list accounts
 - openai list models
+- cloud
+- openai create completion
+- create embedding
+- api management
+- create a chat completion using azure openai
+- openai create speech
+- list openai models
+- list available openai models
+- list model deployments
+- generate speech from text
 - cognitive list models
+- list cognitive services accounts
+- openai create image
+- ai
+- cognitive services
+- generate images from text
+- create a text completion
+- create text embeddings
+- openai list deployments
+- openai
+- enterprise
 slug: ai-and-cognitive
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure AI and Cognitive Services\"\n  description: \"Unified workflow for Azure AI capabilities combining OpenAI Service for generative AI and Cognitive Services for account and model management. Used by AI engineers, ML ops teams, and application developers building intelligent applications.\"\n  tags:\n    - Azure\n    - AI\n    - OpenAI\n    - Cognitive Services\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_OPENAI_API_KEY: AZURE_OPENAI_API_KEY\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-openai\n      location: ./shared/openai-service.yaml\n    - import: azure-cognitive\n      location: ./shared/cognitive-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-ai-api\n      description: \"Unified REST API for Azure AI services.\"\n      resources:\n        - path: /v1/chat/completions\n\
   \          name: chat-completions\n          description: \"Chat completion operations\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"azure-openai.create-chat-completion\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Embedding operations\"\n          operations:\n            - method: POST\n              name: create-embedding\n              description: \"Create text embeddings\"\n              call: \"azure-openai.create-embedding\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name:\

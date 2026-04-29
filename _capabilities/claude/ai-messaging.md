@@ -44,54 +44,54 @@ provider_name: Claude
 provider_slug: claude
 search_terms:
 - create batch
-- get model
-- anthropic
-- chatbot
-- messaging
-- count message tokens
-- get batch status.
-- retrieve message batch results
-- machine learning
-- list batches
-- retrieve message batch
-- list models
 - list message batches.
-- create message
-- list all message batches.
-- claude
-- individual batch management.
-- cancel an in-progress batch.
-- natural language processing
-- list available models.
-- message operations.
 - batch management.
-- get model metadata.
-- token counting.
-- count message tokens.
-- delete message batch
-- list available claude models.
-- ai
-- delete a batch.
-- list message batches
-- artificial intelligence
-- count tokens in a message.
-- cancel message batch
-- count tokens
-- delete batch
-- create a message batch.
-- create message batch
-- send a message to claude and receive a response.
-- conversational ai
-- create a message.
+- list models
 - create a batch of message requests.
-- generative ai
+- list available models.
+- list message batches
+- create message
+- delete a batch.
 - delete a completed batch.
-- large language models
-- get message batch status and details.
-- get batch
+- count tokens
+- message operations.
+- list available claude models.
+- natural language processing
 - model discovery.
-- get completed batch results.
+- generative ai
+- token counting.
+- cancel an in-progress batch.
+- claude
+- get model
+- create a message.
+- list batches
 - model details.
+- count tokens in a message.
+- artificial intelligence
+- retrieve message batch
+- chatbot
+- delete batch
+- get completed batch results.
+- conversational ai
+- large language models
+- ai
+- send a message to claude and receive a response.
+- retrieve message batch results
+- cancel message batch
+- get model metadata.
+- individual batch management.
+- anthropic
+- get batch
+- create a message batch.
+- count message tokens
+- create message batch
+- list all message batches.
+- count message tokens.
+- get batch status.
+- messaging
+- get message batch status and details.
+- machine learning
+- delete message batch
 slug: ai-messaging
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Claude AI Messaging\"\n  description: \"Unified workflow for AI-powered messaging, token counting, batch processing, and model discovery. Used by AI application developers and data scientists.\"\n  tags:\n    - Anthropic\n    - Claude\n    - AI\n    - Messaging\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ANTHROPIC_API_KEY: ANTHROPIC_API_KEY\n\ncapability:\n  consumes:\n    - import: claude-messages\n      location: ./shared/claude-messages.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ai-messaging-api\n      description: \"Unified REST API for Claude AI messaging.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Message operations.\"\n          operations:\n            - method: POST\n              name: create-message\n              description: \"Create a message.\"\n              call: \"\
   claude-messages.create-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/token-counts\n          name: token-counts\n          description: \"Token counting.\"\n          operations:\n            - method: POST\n              name: count-tokens\n              description: \"Count message tokens.\"\n              call: \"claude-messages.count-message-tokens\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batches\n          name: batches\n          description: \"Batch management.\"\n          operations:\n            - method: GET\n              name: list-batches\n              description: \"List message batches.\"\n              call: \"claude-messages.list-message-batches\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-batch\n\

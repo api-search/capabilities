@@ -26,33 +26,33 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
-- get terms and conditions.
-- fixed income terms and conditions.
-- get evaluated prices
-- bond analytics
-- get s&p global evaluated prices.
+- investment analytics
+- credit analysis
+- get evaluated prices.
+- fixed income calculations.
 - optimize fixed income portfolio.
-- optimize fi portfolio
-- factset
+- get fixed income terms and conditions.
 - financial
-- fixed income
-- run fixed income calculation.
+- run fi calculation
+- get s&p global evaluated prices.
+- get evaluated prices
 - batch fi analytics
 - financial data
-- investment analytics
-- get evaluated prices.
-- get terms conditions
-- market data
-- run fi calculation
-- fixed income calculations.
-- credit analysis
 - batch fixed income analytics.
-- s&p global evaluated prices.
+- get terms and conditions.
+- get terms
 - portfolio analytics
 - get fi calculations.
-- get terms
-- get fixed income terms and conditions.
+- s&p global evaluated prices.
+- fixed income terms and conditions.
+- fixed income
+- factset
+- market data
+- research
+- run fixed income calculation.
+- optimize fi portfolio
+- bond analytics
+- get terms conditions
 - get fi calc
 slug: fixed-income
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Fixed Income\"\n  description: \"Unified workflow for fixed income analytics including terms and conditions, evaluated prices, analytics calculations, and optimization. Used by fixed income analysts.\"\n  tags:\n    - FactSet\n    - Fixed Income\n    - Bond Analytics\n    - Credit Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-terms\n      location: ./shared/terms-and-conditions.yaml\n    - import: factset-sp-fi\n      location: ./shared/s-p-global-fixed-income-evaluated-prices-and-analytics.yaml\n    - import: factset-fi-calc\n      location: ./shared/fixed-income-calculation.yaml\n    - import: factset-fi-batch\n      location: ./shared/fixed-income-analytics-batcher.yaml\n    - import: factset-axioma-fi\n      location: ./shared/axioma-fixed-income-optimizer.yaml\n\

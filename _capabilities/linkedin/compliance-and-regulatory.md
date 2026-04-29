@@ -53,62 +53,62 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- get events for data portability.
-- archives communications for regulatory compliance.
-- compliance
-- integrates linkedin authentication and sharing into applications.
-- opt in member
-- social media
-- get business manager account relationships.
-- opt out a member from compliance monitoring.
-- get page content analytics for data portability.
-- get dma comments
-- get advertiser transparency
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get dma events
-- retrieve compliance events for a regulated member.
-- marketing
-- professional networking
-- b2b advertising, audience targeting, and campaign analytics.
-- job posting, recruiting, and applicant tracking.
-- get reactions for data portability.
-- get compliance events
-- regulatory
-- get posts for data portability.
-- get dma lead gen responses
-- get organization acls for data portability.
-- check member status
-- opt in a member for compliance monitoring.
-- recruiting
-- get business manager relationships
-- employee development tracking and content access.
-- get organization
-- get organization by id.
-- business
-- get organization by id for data portability.
-- get advertiser transparency data for a sponsored account.
-- batch get organizations
-- get advertiser transparency data.
-- get comments for data portability.
-- batch get organizations for data portability.
-- linkedin
-- get dma posts
-- opt out member
-- get lead gen responses for data portability.
-- posts jobs and manages candidates through ats integrations.
-- get dma reactions
-- uses sales navigator for lead generation and crm sync.
-- sales intelligence, lead management, and crm integration.
-- data portability and advertiser transparency for dma.
-- get organization acls
-- careers
-- data portability
-- check member compliance monitoring status.
-- tracks employee learning activity and completions.
-- authentication, sharing, and verification for consumer apps.
-- get page content analytics
 - retrieve compliance events.
+- data portability and advertiser transparency for dma.
+- get advertiser transparency data.
+- posts jobs and manages candidates through ats integrations.
+- get dma lead gen responses
+- authentication, sharing, and verification for consumer apps.
+- professional networking
+- get lead gen responses for data portability.
+- data portability
+- get events for data portability.
+- job posting, recruiting, and applicant tracking.
+- opt in a member for compliance monitoring.
+- linkedin
+- social media
+- uses sales navigator for lead generation and crm sync.
+- get organization acls for data portability.
+- batch get organizations
+- get advertiser transparency
+- opt out a member from compliance monitoring.
+- get organization acls
+- opt in member
+- tracks employee learning activity and completions.
+- integrates linkedin authentication and sharing into applications.
+- marketing
+- batch get organizations for data portability.
+- get organization
 - message archiving and regulatory communications governance.
+- get dma events
+- get dma posts
+- archives communications for regulatory compliance.
+- get dma comments
+- get page content analytics
+- get compliance events
+- manages b2b ad campaigns and audience targeting on linkedin.
+- compliance
+- get page content analytics for data portability.
+- get comments for data portability.
+- check member status
+- get organization by id for data portability.
+- retrieve compliance events for a regulated member.
+- employee development tracking and content access.
+- sales intelligence, lead management, and crm integration.
+- get posts for data portability.
+- get dma reactions
+- get business manager account relationships.
+- regulatory
+- get business manager relationships
+- business
+- get organization by id.
+- b2b advertising, audience targeting, and campaign analytics.
+- opt out member
+- check member compliance monitoring status.
+- get advertiser transparency data for a sponsored account.
+- get reactions for data portability.
+- careers
+- recruiting
 slug: compliance-and-regulatory
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Compliance And Regulatory\"\n  description: \"Unified workflow for compliance officers to monitor regulated communications, export data for portability compliance, and access ads transparency data -- combining compliance events, data portability, and ads transparency APIs.\"\n  tags:\n    - LinkedIn\n    - Compliance\n    - Regulatory\n    - Data Portability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: compliance-events\n      location: ./shared/compliance-events.yaml\n    - import: data-portability\n      location: ./shared/data-portability.yaml\n    - import: ads-transparency\n      location: ./shared/ads-transparency.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n      namespace: compliance-regulatory-api\n      description: \"Unified REST API for LinkedIn compliance\
   \ and regulatory workflows.\"\n      resources:\n        - path: /v1/compliance-authorizations\n          name: compliance-authorizations\n          operations:\n            - method: POST\n              name: opt-in-member\n              description: \"Opt in a member for compliance monitoring.\"\n              call: \"compliance-events.opt-in-member\"\n            - method: GET\n              name: check-member-status\n              description: \"Check member compliance monitoring status.\"\n              call: \"compliance-events.check-member-status\"\n        - path: /v1/compliance-events\n          name: compliance-events\n          operations:\n            - method: GET\n              name: get-compliance-events\n              description: \"Retrieve compliance events.\"\n              call: \"compliance-events.get-compliance-events\"\n        - path: /v1/dma-organizations\n          name: dma-organizations\n          operations:\n            - method: GET\n              name: batch-get-organizations\n\

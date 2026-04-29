@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- compliance
-- create job
-- list replication process performance metrics
-- list veridata database connections
-- create a new compare group
-- run job
-- repair job
-- cdc
-- list groups
-- data synchronization
-- list comparison jobs
-- list compare groups
-- get out of sync data
-- list jobs
-- list connections
-- repair out-of-sync data identified by a comparison job
-- get veridata server information
-- data verification
-- get goldengate process performance metrics for monitoring replication health
-- oracle goldengate
-- get details of out-of-sync data
-- list compare groups for data verification
-- create group
-- data integration
-- compare groups
-- database
 - create a new veridata database connection
-- execute a comparison job
-- list process metrics
-- get server info
-- database connections for verification
-- create a new comparison job
-- replication process metrics
-- enterprise
 - data quality
+- list jobs
+- list process metrics
+- create a new compare group
+- replication process metrics
 - create connection
-- comparison jobs
-- get job statistics
+- get veridata server information
+- list compare groups for data verification
+- list replication process performance metrics
+- list compare groups
+- list connections
+- create a new comparison job
+- list groups
+- enterprise
+- create group
+- data synchronization
+- compare groups
+- get details of out-of-sync data
+- database
+- list veridata database connections
+- create job
+- data verification
+- repair job
+- compliance
 - real-time replication
 - get comparison job statistics
+- get out of sync data
+- get job statistics
+- oracle goldengate
+- get server info
+- database connections for verification
+- cdc
+- comparison jobs
+- data integration
+- repair out-of-sync data identified by a comparison job
+- get goldengate process performance metrics for monitoring replication health
+- execute a comparison job
+- run job
+- list comparison jobs
 slug: data-verification
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Data Verification\"\n  description: \"Unified workflow for verifying data consistency between source and target databases. Combines Veridata for data comparison and repair with core GoldenGate monitoring for data quality engineers and DBAs ensuring replication integrity.\"\n  tags:\n    - Oracle GoldenGate\n    - Data Verification\n    - Data Quality\n    - Compliance\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VERIDATA_USERNAME: VERIDATA_USERNAME\n      VERIDATA_PASSWORD: VERIDATA_PASSWORD\n      OGG_USERNAME: OGG_USERNAME\n      OGG_PASSWORD: OGG_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-veridata\n      location: ./shared/goldengate-veridata.yaml\n    - import: goldengate-rest\n      location: ./shared/goldengate-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: data-verification-api\n      description:\
   \ \"Unified REST API for Oracle GoldenGate data verification workflows.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Database connections for verification\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List Veridata database connections\"\n              call: \"goldengate-veridata.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Compare groups\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List compare groups\"\n              call: \"goldengate-veridata.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Comparison\

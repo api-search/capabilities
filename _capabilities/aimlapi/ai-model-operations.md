@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- create chat completion
-- generate a chat response from any of 400+ ai language models via aimlapi
-- speech
-- developer tools
+- create image
 - ai engineer evaluating and comparing models for ml pipelines
-- chat completions via 400+ llms
-- generate an image from a text prompt using aimlapi image generation models
-- machine learning
-- api key management and model discovery
-- AI Engineer
+- create a chat completion
+- create chat completion
+- create embeddings
 - list models
+- list all models
 - discover all 400+ available ai models on aimlapi platform
-- generate vector embeddings for semantic search and rag applications
-- embeddings
-- Developer
-- video generation
-- image generation
-- generate an image
-- developer integrating ai capabilities into applications via aimlapi
 - generate embeddings
 - list available models
+- api key management and model discovery
+- video generation
+- speech
+- embeddings
+- chat completions via 400+ llms
 - artificial intelligence
-- list all models
-- api gateway
-- create a chat completion
-- llm
-- create image
-- generate image
-- ai models
 - create embedding
-- create embeddings
+- generate vector embeddings for semantic search and rag applications
+- AI Engineer
+- api gateway
+- image generation
 - ai model inference across modalities
+- generate an image
+- developer tools
+- generate an image from a text prompt using aimlapi image generation models
+- ai models
+- developer integrating ai capabilities into applications via aimlapi
+- generate a chat response from any of 400+ ai language models via aimlapi
+- llm
 - access 400+ ai models for chat, image generation, embeddings, and model discovery
+- generate image
+- Developer
+- machine learning
 slug: ai-model-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AIMLAPI AI Model Operations\"\n  description: \"Unified workflow for accessing 400+ AI models via AIMLAPI gateway including chat completions, image generation, embeddings, and model discovery. Used by developers building AI-powered applications.\"\n  tags:\n    - Artificial Intelligence\n    - LLM\n    - Image Generation\n    - Embeddings\n    - Developer Tools\n    - API Gateway\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIMLAPI_API_KEY: AIMLAPI_API_KEY\n\ncapability:\n  consumes:\n    - import: aimlapi\n      location: ./shared/aimlapi-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aimlapi-ai-ops-api\n      description: \"Unified REST API for AIMLAPI AI model operations.\"\n      resources:\n        - path: /v1/chat/completions\n          name: chat-completions\n          description: \"Chat completions via 400+ LLMs\"\n          operations:\n\
   \            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"aimlapi.create-chat-completion\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images/generations\n          name: image-generations\n          description: \"Image generation\"\n          operations:\n            - method: POST\n              name: create-image\n              description: \"Generate an image\"\n              call: \"aimlapi.create-image\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Generate embeddings\"\n          operations:\n            - method: POST\n              name: create-embedding\n              description: \"Create embeddings\"\n              call: \"aimlapi.create-embedding\"\n              outputParameters:\n\

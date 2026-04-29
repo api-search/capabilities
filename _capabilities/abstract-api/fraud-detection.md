@@ -31,60 +31,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- check email reputation
-- finance engineer
-- check email address risk and reputation
-- fraud detection
-- check email risk
-- fraud analyst
-- exchange rates, vat validation, and iban validation for financial compliance
 - iban validation
-- abstract api
-- web scraping
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- developer building user onboarding and personalization features
-- email validation
-- check phone risk
-- security
-- company enrichment
-- compliance analyst
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- engineer building data pipelines and enrichment workflows
-- avatars
-- ip geolocation
-- developer building payment, billing, and financial compliance systems
-- contacts
-- screenshots
-- exchange rates
-- public holidays
-- check phone intelligence
-- phone intelligence
-- currencies
-- security engineer
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- check phone number risk and validity
-- data engineer
-- phone validation
-- timezones
 - ip intelligence
-- engineer building fraud detection and threat intelligence systems
-- currency conversion, vat compliance, and banking validation for financial applications
-- check email reputation and risk score
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- product engineer
-- image processing
-- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
-- detection and blocking of fraudulent users, transactions, and bot activity
-- email reputation
-- validate phone number and retrieve carrier, line type, voip status, and risk score
-- check ip intelligence
-- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- timezones
 - check phone intelligence and risk score
-- vat validation
-- check ip address risk signals
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- screenshots
+- public holidays
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
+- contacts
+- data engineer
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- phone intelligence
+- finance engineer
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- check phone risk
+- engineer building data pipelines and enrichment workflows
+- phone validation
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- developer building payment, billing, and financial compliance systems
+- validate phone number and retrieve carrier, line type, voip status, and risk score
+- developer building user onboarding and personalization features
+- email reputation
+- abstract api
+- fraud detection
 - check ip risk
+- security engineer
+- engineer building fraud detection and threat intelligence systems
+- product engineer
+- avatars
+- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- currencies
+- exchange rates, vat validation, and iban validation for financial compliance
+- fraud analyst
 - check ip intelligence and security flags
+- currency conversion, vat compliance, and banking validation for financial applications
+- vat validation
+- compliance analyst
+- ip geolocation
+- check email address risk and reputation
+- check ip address risk signals
+- check email risk
+- check phone number risk and validity
+- security
+- check email reputation and risk score
+- check email reputation
+- detection and blocking of fraudulent users, transactions, and bot activity
+- company enrichment
+- web scraping
+- email validation
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- exchange rates
+- image processing
+- check ip intelligence
+- check phone intelligence
 slug: fraud-detection
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abstract API Fraud Detection\"\n  description: \"Unified fraud detection and risk assessment workflow combining email reputation, phone intelligence, and IP intelligence APIs. Used by security engineers, fraud analysts, and compliance teams to detect and block fraudulent users at signup or transaction time.\"\n  tags:\n    - Abstract Api\n    - Fraud Detection\n    - Security\n    - Email Reputation\n    - Phone Intelligence\n    - Ip Intelligence\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      EMAIL_REPUTATION_API_KEY: EMAIL_REPUTATION_API_KEY\n      PHONE_INTELLIGENCE_API_KEY: PHONE_INTELLIGENCE_API_KEY\n      IP_INTELLIGENCE_API_KEY: IP_INTELLIGENCE_API_KEY\n\ncapability:\n  consumes:\n    - import: email-reputation\n      location: ./shared/email-reputation.yaml\n    - import: phone-intelligence\n      location: ./shared/phone-intelligence.yaml\n    - import: ip-intelligence\n\
   \      location: ./shared/ip-intelligence.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: fraud-detection-api\n      description: \"Unified REST API for fraud detection and risk assessment.\"\n      resources:\n        - path: /v1/email-risk\n          name: email-risk\n          description: \"Check email address risk and reputation\"\n          operations:\n            - method: GET\n              name: check-email-risk\n              description: \"Check email reputation and risk score\"\n              call: \"email-reputation.getEmailReputation\"\n              with:\n                email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/phone-risk\n          name: phone-risk\n          description: \"Check phone number risk and validity\"\n          operations:\n            - method: GET\n              name: check-phone-risk\n              description: \"Check phone intelligence\

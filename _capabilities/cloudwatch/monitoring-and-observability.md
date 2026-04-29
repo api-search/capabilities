@@ -47,71 +47,71 @@ personas: []
 provider_name: AWS CloudWatch
 provider_slug: cloudwatch
 search_terms:
-- monitoring
-- list metric streams
-- list and describe cloudwatch alarms
-- get dashboard
-- delete an anomaly detector
-- list cloudwatch dashboards
-- list alarms
-- retrieve metric data
-- logs
-- observability
-- delete dashboards
 - delete cloudwatch dashboards
-- create or update a metric alarm
-- cloudwatch
-- publish metric data points to cloudwatch
-- list anomaly detectors
-- put metric alarm
-- retrieve alarm state change history
-- get a cloudwatch dashboard
-- list tags for resource
-- describe alarm history
-- set alarm state
+- logs
 - create or update a metric stream
-- create or update an alarm
-- dashboards
-- delete alarms
-- put metric data
-- create or update a dashboard
-- put metric stream
-- cloudwatch metrics operations
-- get metric statistics
-- publish metric data points
 - list dashboards
-- tag resource
-- aws
-- disable alarm actions
-- retrieve metric data with math expressions
-- describe alarms for a specific metric
-- enable actions for alarms
-- enable alarm actions
+- set alarm state
+- create or update a composite alarm
 - delete anomaly detector
-- put anomaly detector
-- put dashboard
-- metrics
-- describe anomaly detectors
+- list tags for a cloudwatch resource
+- create or update a cloudwatch dashboard
+- describe alarms for a specific metric
+- list tags for resource
+- delete one or more alarms
+- get a cloudwatch dashboard
+- get dashboard
+- list metric streams
 - temporarily set the state of an alarm
+- delete an anomaly detector
+- create or update an anomaly detector
+- disable alarm actions
+- retrieve alarm state change history
+- put anomaly detector
+- cloudwatch dashboards
+- monitoring
+- publish metric data points
 - list metrics
+- get statistics for a specific metric
+- delete alarms
+- put dashboard
+- describe alarms
+- retrieve metric data using math expressions
+- list available cloudwatch metrics
+- put metric data
+- list alarms
+- get metric statistics
+- list and describe cloudwatch alarms
+- delete dashboards
+- list cloudwatch dashboards
+- publish metric data points to cloudwatch
+- describe anomaly detectors
+- put metric alarm
+- retrieve metric data with math expressions
+- retrieve metric data
+- create or update a dashboard
+- observability
+- enable actions for alarms
+- put composite alarm
+- cloudwatch metrics operations
+- create or update an alarm
+- cloudwatch alarms
+- describe alarms for metric
+- enable alarm actions
+- tag resource
+- alarms
 - add tags to a cloudwatch resource
 - list available metrics
-- get metric data
-- retrieve metric data using math expressions
-- describe alarms for metric
-- cloudwatch dashboards
-- create or update a composite alarm
+- create or update a metric alarm
+- aws
 - disable actions for alarms
-- create or update a cloudwatch dashboard
-- list tags for a cloudwatch resource
-- alarms
-- get statistics for a specific metric
-- describe alarms
-- delete one or more alarms
-- put composite alarm
-- create or update an anomaly detector
-- cloudwatch alarms
-- list available cloudwatch metrics
+- get metric data
+- dashboards
+- put metric stream
+- describe alarm history
+- metrics
+- cloudwatch
+- list anomaly detectors
 slug: monitoring-and-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS CloudWatch Monitoring and Observability\"\n  description: \"Monitor AWS resources with metrics, alarms, dashboards, anomaly detection, and metric streams. Used by DevOps engineers and SRE teams.\"\n  tags:\n    - AWS\n    - CloudWatch\n    - Monitoring\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cloudwatch\n      location: ./shared/cloudwatch.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloudwatch-monitoring-api\n      description: \"Unified REST API for CloudWatch monitoring and observability.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: \"CloudWatch metrics operations\"\n          operations:\n          \
   \  - method: POST\n              name: put-metric-data\n              description: \"Publish metric data points\"\n              call: \"cloudwatch.put-metric-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-metrics\n              description: \"List available metrics\"\n              call: \"cloudwatch.list-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/data\n          name: metric-data\n          description: \"Retrieve metric data\"\n          operations:\n            - method: POST\n              name: get-metric-data\n              description: \"Retrieve metric data with math expressions\"\n              call: \"cloudwatch.get-metric-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/statistics\n\

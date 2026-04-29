@@ -39,55 +39,55 @@ personas: []
 provider_name: Amazon Config
 provider_slug: amazon-config
 search_terms:
-- compliance
-- creates and manages config rules to enforce security policies.
-- list config rules
-- check resource compliance
-- Security Engineer
-- compliance summary by resource type.
-- security
-- remediation
-- list discovered aws resources of a given type.
-- get the current configuration of one or more aws resources.
-- create or update a config rule.
-- get configuration history for a resource.
-- get a summary of compliant vs noncompliant resources by resource type.
-- configuration management
-- create config rule
-- delete config rule
-- list all aws config rules.
-- audits resource compliance, reviews configuration history, and ensures governance standards.
-- Compliance Officer
-- delete an aws config compliance rule.
-- get current config
-- start automated remediation for noncompliant resources.
-- resource compliance monitoring, configuration history, and automated remediation.
-- amazon
-- aws
-- get resource history
-- governance
-- get compliance summary
-- start remediation execution for noncompliant resources.
-- manage config compliance rules.
-- get compliance status for aws resources.
-- remediation configuration and execution.
-- check compliance status across all resources for a specific config rule.
-- check resource compliance status.
-- get the configuration history for a specific aws resource.
-- check compliance status of a specific aws resource against config rules.
-- list all discovered aws resources of a given type in config inventory.
-- check rule compliance
-- list resources
 - get resource compliance
-- get config history
-- create or update an aws config compliance rule.
-- list all aws config compliance rules in the account.
-- discovered resource inventory.
+- get the current configuration of one or more aws resources.
 - resource configuration history.
+- remediation
+- manage config compliance rules.
+- delete an aws config compliance rule.
+- start remediation execution for noncompliant resources.
+- governance
+- list resources
+- audits resource compliance, reviews configuration history, and ensures governance standards.
+- resource compliance monitoring, configuration history, and automated remediation.
+- get compliance status for aws resources.
+- check rule compliance
+- get current config
+- create config rule
+- amazon
+- delete config rule
 - start remediation
-- put config rule
+- create or update a config rule.
+- check resource compliance
+- get compliance summary
 - get compliance summary across resource types.
+- check compliance status across all resources for a specific config rule.
+- Security Engineer
+- check compliance status of a specific aws resource against config rules.
+- get a summary of compliant vs noncompliant resources by resource type.
+- remediation configuration and execution.
+- compliance summary by resource type.
+- list all aws config compliance rules in the account.
+- list all discovered aws resources of a given type in config inventory.
+- list all aws config rules.
 - auditing
+- compliance
+- get configuration history for a resource.
+- creates and manages config rules to enforce security policies.
+- check resource compliance status.
+- get resource history
+- create or update an aws config compliance rule.
+- security
+- start automated remediation for noncompliant resources.
+- discovered resource inventory.
+- aws
+- put config rule
+- get config history
+- Compliance Officer
+- configuration management
+- get the configuration history for a specific aws resource.
+- list discovered aws resources of a given type.
+- list config rules
 slug: compliance-governance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Config Compliance and Governance\"\n  description: \"Workflow capability for AWS resource configuration tracking, compliance evaluation, configuration history auditing, and automated remediation using Amazon Config. Used by security engineers and compliance officers to enforce governance policies and audit configuration changes across AWS infrastructure.\"\n  tags:\n    - Amazon\n    - AWS\n    - Compliance\n    - Configuration Management\n    - Governance\n    - Security\n    - Auditing\n    - Remediation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: config\n      location: ./shared/config.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: compliance-governance-api\n      description:\
   \ \"Unified REST API for Amazon Config compliance monitoring and governance.\"\n      resources:\n        - path: /v1/config-rules\n          name: config-rules\n          description: \"Manage Config compliance rules.\"\n          operations:\n            - method: GET\n              name: list-config-rules\n              description: \"List all AWS Config rules.\"\n              call: \"config.describe-config-rules\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: PUT\n              name: put-config-rule\n              description: \"Create or update a Config rule.\"\n              call: \"config.put-config-rule\"\n              with:\n                config_rule: \"rest.config_rule\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/compliance/resources\n          name: resource-compliance\n          description: \"Check resource compliance\

@@ -34,45 +34,45 @@ personas: []
 provider_name: ARGUS Enterprise
 provider_slug: argus-enterprise
 search_terms:
-- complete commercial real estate investment management workflow
-- property valuations
+- Portfolio Manager
+- get property details and current metrics
+- get detailed information about a commercial property including valuation and occupancy
+- asset management
+- list all leases
+- argus enterprise
+- get cashflows
+- Asset Manager
+- property valuation and appraisal
+- altus group
+- list portfolios
+- commercial real estate
+- get property cashflows
+- list leases
 - oversees a portfolio of commercial real estate assets
 - cash flow modeling
-- get cashflows
-- commercial property investment and management
-- list portfolios
-- valuation
-- portfolio management
-- get detailed information about a commercial property including valuation and occupancy
 - multi-asset portfolio analytics and reporting
-- argus enterprise
-- Asset Manager
-- get cash flow projections for a commercial property
-- commercial real estate
-- list current and historical property valuations
-- Portfolio Manager
-- manages individual commercial real estate assets
-- list leases
-- investment management
 - list real estate portfolios with aggregate performance metrics
-- list commercial real estate properties with current status and metrics
-- property valuation and appraisal
-- get property
+- list all commercial properties
+- valuation
 - commercial property management
-- list lease records with tenant and expiry information
+- get property cash flow projections
+- portfolio management
+- get property
+- list valuations
+- list current and historical property valuations
+- get cash flow projections for a commercial property
+- complete commercial real estate investment management workflow
+- manages individual commercial real estate assets
 - list all real estate portfolios
 - cash flow projections
-- get property details and current metrics
-- get property cashflows
-- lease management
-- list properties
+- list lease records with tenant and expiry information
+- list commercial real estate properties with current status and metrics
+- commercial property investment and management
 - list property valuations
-- get property cash flow projections
-- list all leases
-- altus group
-- list valuations
-- asset management
-- list all commercial properties
+- investment management
+- property valuations
+- list properties
+- lease management
 slug: cre-investment-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ARGUS Enterprise CRE Investment Management\"\n  description: \"Unified capability for commercial real estate investment management using ARGUS Enterprise. Combines property valuation, cash flow modeling, lease management, portfolio analytics, and reporting for Asset Managers and Portfolio Managers.\"\n  tags:\n    - ARGUS Enterprise\n    - Commercial Real Estate\n    - Investment Management\n    - Portfolio Management\n    - Valuation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARGUS_API_KEY: ARGUS_API_KEY\n      ARGUS_BASE_URL: ARGUS_BASE_URL\n\ncapability:\n  consumes:\n    - import: argusenterprise\n      location: ./shared/argus-enterprise-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: cre-investment-api\n      description: \"Unified REST API for commercial real estate investment management.\"\n      resources:\n        - path: /v1/properties\n\
   \          name: properties\n          description: \"Commercial property management\"\n          operations:\n            - method: GET\n              name: list-properties\n              description: \"List all commercial properties\"\n              call: \"argusenterprise.list-properties\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-property\n              description: \"Get property details and current metrics\"\n              call: \"argusenterprise.get-property\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolios\n          name: portfolios\n          description: \"Portfolio management\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List all real estate portfolios\"\n  \

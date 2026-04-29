@@ -45,59 +45,59 @@ personas: []
 provider_name: Acronis
 provider_slug: acronis
 search_terms:
-- monitoring
-- account management
-- list tasks
-- list backup tasks
-- backup
-- get agent
-- backup task monitoring
-- get usage metrics for a tenant
-- tenant hierarchy management
-- list hardware nodes managed by acronis for a tenant
-- managed service provider admin managing multiple customer tenants, licensing, and usage
-- list users in an acronis tenant
-- search tenants and users
-- tenant usage monitoring
-- acronis
-- protection policy creation and application
-- backup agent deployment and management across endpoints
-- endpoint management
-- create tenant
 - list tenants
-- get current usage metrics for an acronis tenant across all services
-- get details about a specific acronis tenant
-- list acronis protection agents registered for a tenant
-- list agents
-- list hardware nodes
-- cybersecurity
-- list acronis backup tasks with filtering by state, result, policy, and resource
-- get tenant usages
-- backup and recovery task execution tracking
-- search
-- individual tenant operations
-- multi-tier tenant hierarchy and licensing management
-- get details about a specific acronis backup agent including online status
-- get details about a specific acronis backup task
-- protection agent management
 - unified tenant, agent, and task management for msps and it admins
-- security professional monitoring edr events and threat response
-- list users in a tenant
-- cross-tenant search
-- data protection
-- IT Administrator
-- MSP Administrator
-- tenant user management
-- msp
-- search acronis platform for tenants and users by name or email
-- enterprise it admin managing backup agents, policies, and task monitoring
-- get task
-- Security Analyst
-- get tenant
-- list acronis tenant hierarchy - companies, partners, and customer accounts
+- backup and recovery task execution tracking
 - list tenant users
+- create tenant
+- list users in a tenant
+- managed service provider admin managing multiple customer tenants, licensing, and usage
+- account management
 - list agents for a tenant
+- get tenant usages
 - get tenant details
+- protection policy creation and application
+- get tenant
+- endpoint management
+- get details about a specific acronis tenant
+- backup
+- cybersecurity
+- security professional monitoring edr events and threat response
+- list agents
+- get details about a specific acronis backup agent including online status
+- list backup tasks
+- list hardware nodes managed by acronis for a tenant
+- IT Administrator
+- individual tenant operations
+- get usage metrics for a tenant
+- cross-tenant search
+- get agent
+- tenant usage monitoring
+- monitoring
+- list acronis backup tasks with filtering by state, result, policy, and resource
+- get task
+- multi-tier tenant hierarchy and licensing management
+- protection agent management
+- list users in an acronis tenant
+- search acronis platform for tenants and users by name or email
+- tenant user management
+- search
+- MSP Administrator
+- enterprise it admin managing backup agents, policies, and task monitoring
+- tenant hierarchy management
+- get details about a specific acronis backup task
+- list acronis tenant hierarchy - companies, partners, and customer accounts
+- msp
+- acronis
+- list acronis protection agents registered for a tenant
+- list hardware nodes
+- backup agent deployment and management across endpoints
+- backup task monitoring
+- list tasks
+- get current usage metrics for an acronis tenant across all services
+- Security Analyst
+- data protection
+- search tenants and users
 slug: cyber-protection-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Acronis Cyber Protection Operations\n  description: >-\n    Unified workflow for managing Acronis Cyber Protect Cloud operations including tenant administration,\n    agent monitoring, backup task tracking, and usage reporting. Used by MSPs, IT administrators, and\n    security teams to automate Acronis cyber protection platform management.\n  tags:\n    - Acronis\n    - Account Management\n    - Backup\n    - Cybersecurity\n    - Monitoring\n    - MSP\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACRONIS_ACCESS_TOKEN: ACRONIS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: acronis-account\n      location: ./shared/acronis-account-management.yaml\n    - import: acronis-agents\n      location: ./shared/acronis-agent-management.yaml\n    - import: acronis-tasks\n      location: ./shared/acronis-task-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n    \
   \  namespace: acronis-cyber-protection-api\n      description: Unified REST API for Acronis Cyber Protect Cloud platform management.\n      resources:\n        - path: /v1/tenants\n          name: tenants\n          description: Tenant hierarchy management\n          operations:\n            - method: GET\n              name: list-tenants\n              description: List tenants\n              call: \"acronis-account.list-tenants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-tenant\n              description: Create tenant\n              call: \"acronis-account.create-tenant\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tenants/{tenant_id}\n          name: tenant\n          description: Individual tenant operations\n          operations:\n            - method: GET\n              name: get-tenant\n  \

@@ -15,21 +15,21 @@ provider_name: Amazon App Runner
 provider_slug: amazon-app-runner
 search_terms:
 - manage amazon app runner api resources.
-- list resources
-- aws
-- engineer automating deployments using app runner api.
-- ci/cd
-- containers
-- managed service
-- deployment
-- serverless
-- developer deploying web apis and services on app runner.
-- DevOps Engineer
 - list resources.
-- list amazon app runner api resources.
-- web applications
-- Backend Developer
+- developer deploying web apis and services on app runner.
+- ci/cd
+- serverless
+- DevOps Engineer
 - amazon
+- managed service
+- web applications
+- engineer automating deployments using app runner api.
+- aws
+- deployment
+- list amazon app runner api resources.
+- list resources
+- containers
+- Backend Developer
 slug: app-runner-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: App Runner Management\n  description: Workflow for managing Amazon App Runner API resources.\n  tags:\n  - Amazon\n  - AWS\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: amazon-app-runner\n    location: ./shared/amazon-app-runner.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: app-runner-management-api\n    resources:\n    - path: /v1/resources\n      name: resources\n      operations:\n      - method: GET\n        name: list-resources\n        description: List resources.\n        call: amazon-app-runner.list-resources\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: app-runner-management-mcp\n    transport: http\n    tools:\n    - name:\
   \ list-resources\n      description: List Amazon App Runner API resources.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: amazon-app-runner.list-resources\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"

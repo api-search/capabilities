@@ -63,64 +63,64 @@ personas: []
 provider_name: Microsoft Planner
 provider_slug: microsoft-planner
 search_terms:
-- collaboration
 - create a new task in a plan
-- list all buckets in a plan
-- manage tasks
-- delete bucket
-- create a new bucket in a plan
-- planner
-- list group plans
-- get plan details
-- get task details
-- delete task
-- get bucket details
+- update task
 - list all tasks in a plan
-- get details of a specific bucket
-- create bucket
-- update bucket
-- get plan
-- get plan details including category labels
-- create plan
-- delete a task
-- delete plan
-- update a plan
-- delete a plan
-- create a new task
-- manage plans
-- create task
-- task management
-- get task details including checklist and references
-- get details of a specific plan
-- microsoft
-- list tasks assigned to the current user
 - update plan
-- update task details
-- update a bucket
+- manage a specific bucket
+- create plan
+- get plan
+- list tasks in a specific bucket
+- delete task
+- collaboration
+- list all buckets in a plan
+- get details of a specific task
+- delete a plan
 - create a new bucket
+- list plans for a group
+- manage plans
+- manage a specific task
+- create bucket
+- get details of a specific bucket
 - manage a specific plan
 - microsoft 365
-- list plan tasks
 - manage buckets
-- update task details including checklist items
-- update a task
-- get bucket
-- get task
-- get details of a specific task
-- create a new plan
-- manage a specific bucket
-- create a new planner plan
+- update a bucket
+- get plan details including category labels
 - list bucket tasks
+- task management
 - delete a bucket
-- productivity
-- update task
-- list plan buckets
-- manage a specific task
-- list my tasks
 - project management
+- update bucket
+- update task details
+- update a plan
+- get task
+- manage tasks
+- get plan details
+- list my tasks
+- list tasks assigned to the current user
+- create a new plan
+- create task
+- update a task
+- create a new planner plan
+- get bucket details
 - update plan details
-- list plans for a group
-- list tasks in a specific bucket
+- productivity
+- create a new bucket in a plan
+- create a new task
+- list group plans
+- list plan buckets
+- microsoft
+- delete plan
+- delete bucket
+- get task details
+- delete a task
+- get details of a specific plan
+- get task details including checklist and references
+- update task details including checklist items
+- planner
+- get bucket
+- list plan tasks
 slug: task-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Planner Task Management\"\n  description: \"Manage plans, tasks, and buckets in Microsoft Planner for team collaboration and project management. Used by project managers and team leads.\"\n  tags:\n    - Microsoft\n    - Planner\n    - Task Management\n    - Collaboration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: planner\n      location: ./shared/planner.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: planner-task-api\n      description: \"Unified REST API for Microsoft Planner task management.\"\n      resources:\n        - path: /v1/plans\n          name: plans\n          description: \"Manage plans\"\n          operations:\n            - method: POST\n              name: create-plan\n              description: \"Create a new plan\"\n          \
   \    call: \"planner.create-plan\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-group-plans\n              description: \"List plans for a group\"\n              call: \"planner.list-plan-tasks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/plans/{planId}\n          name: plan\n          description: \"Manage a specific plan\"\n          operations:\n            - method: GET\n              name: get-plan\n              description: \"Get plan details\"\n              call: \"planner.get-plan\"\n              with:\n                planId: \"rest.planId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-plan\n              description: \"Update a plan\"\n              call: \"planner.update-plan\"\n\

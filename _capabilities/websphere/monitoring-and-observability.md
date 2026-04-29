@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- monitoring
-- get liberty log messages
-- get readiness
-- ibm websphere
-- check if liberty server is ready for traffic
-- get recent liberty log messages
-- get performance data
-- middleware
-- observability
-- get log messages
-- metrics collection
 - get liberty metrics
-- list batch jobs
-- list batch job instances
-- application server
-- j2ee
-- get batch job
-- list jakarta batch job instances
-- performance data
-- check if liberty server is alive
-- get liberty logging configuration
-- get batch job instance details
-- get liveness
-- get was health
-- metrics
-- get was server health
-- microservices
-- get was server health status
-- log management
-- get liberty admin metrics
 - get log config
-- enterprise java
+- get recent liberty log messages
+- ibm websphere
 - get open liberty overall health
-- get liberty health
-- health check endpoints
-- get all open liberty metrics
 - get open liberty overall health status
+- performance data
+- enterprise java
+- get batch job instance details
+- get liberty admin metrics
 - get all metrics
+- list jakarta batch job instances
+- check if liberty server is ready for traffic
+- get was server health
+- log management
+- get all open liberty metrics
+- metrics collection
+- get performance data
 - batch job monitoring
+- get was health
+- get readiness
+- get liveness
+- get liberty log messages
+- health check endpoints
+- application server
+- get liberty logging configuration
+- monitoring
+- get batch job
+- get log messages
 - get was performance monitoring data
+- check if liberty server is alive
+- list batch job instances
 - cloud native
+- observability
+- get was server health status
+- microservices
+- get liberty health
+- middleware
+- j2ee
+- metrics
+- list batch jobs
 slug: monitoring-and-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Monitoring and Observability\"\n  description: \"Workflow for monitoring WebSphere environments combining health checks, metrics, performance data, logging, and batch job tracking from Open Liberty and traditional WAS APIs for operations teams.\"\n  tags:\n    - IBM WebSphere\n    - Monitoring\n    - Observability\n    - Metrics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n      LIBERTY_USERNAME: LIBERTY_USERNAME\n      LIBERTY_PASSWORD: LIBERTY_PASSWORD\n\ncapability:\n  consumes:\n    - import: open-liberty\n      location: ./shared/open-liberty.yaml\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n    - import: liberty-admin\n      location: ./shared/liberty-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: monitoring-api\n \
   \     description: \"Unified REST API for WebSphere monitoring and observability.\"\n      resources:\n        - path: /v1/health\n          name: health\n          description: \"Health check endpoints\"\n          operations:\n            - method: GET\n              name: get-liberty-health\n              description: \"Get Open Liberty overall health\"\n              call: \"open-liberty.get-overall-health\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-was-health\n              description: \"Get WAS server health\"\n              call: \"admin-rest.get-health-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Metrics collection\"\n          operations:\n            - method: GET\n              name: get-all-metrics\n              description:\

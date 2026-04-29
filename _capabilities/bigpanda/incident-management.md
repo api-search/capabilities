@@ -11,13 +11,13 @@ provider_slug: bigpanda
 search_terms:
 - monitoring
 - platform
-- ingest change events to correlate with alert spikes
-- triage, acknowledge, and resolve correlated incidents
+- site reliability engineer managing incidents and alert correlation
 - ai-powered correlation of alerts into actionable incidents
+- ingest change events to correlate with alert spikes
+- full incident lifecycle from alert ingestion to resolution
 - incidents
 - it operations manager overseeing incident response
-- full incident lifecycle from alert ingestion to resolution
-- site reliability engineer managing incidents and alert correlation
+- triage, acknowledge, and resolve correlated incidents
 - schedule maintenance windows to suppress expected alerts
 slug: incident-management
 source_yaml: "name: Incident Management\ndescription: >-\n  Workflow capability for managing IT incidents using BigPanda AIOps,\n  including alert ingestion, incident triage, environment management,\n  and maintenance scheduling.\nversion: v1\n\nimports:\n  - shared/bigpanda.yaml\n\ntools:\n  - name: send-alert\n    import: bigpanda.send-alert\n    description: >-\n      Ingest a monitoring alert from any source into BigPanda for AI-powered\n      correlation and incident creation.\n    inputSchema:\n      type: object\n      required:\n        - app_key\n        - status\n        - host\n      properties:\n        app_key:\n          type: string\n          description: BigPanda application key for routing\n        status:\n          type: string\n          description: Alert status (critical, warning, ok, acknowledged)\n        host:\n          type: string\n          description: Hostname associated with the alert\n        check:\n          type: string\n          description: Check or\

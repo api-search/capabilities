@@ -48,50 +48,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- list analytics reports
-- accounting
-- human capital management.
-- supply chain management
-- forecast data and projections
-- peoplesoft
-- individual approval operations
-- retrieve budget definitions and data.
-- list expense reports
-- retrieve pending finance approval requests.
 - accounts payable vouchers
-- retrieve expense reports.
-- retrieve forecast data and projections.
-- finance
-- forecasting
-- retrieve accounts receivable items.
-- budget definitions and data
-- performance analytics reports
-- list journal entries
-- financial management
-- retrieve accounts payable vouchers.
-- approve, deny, or push back a finance approval request.
-- crm
-- retrieve general ledger journal entries.
-- finance approval requests
-- campus solutions
 - list ar items
-- financial and supply chain management.
-- campus solutions.
-- list pending approvals
-- list vouchers
+- retrieve general ledger journal entries.
 - erp
-- expense reports
-- retrieve performance analytics reports.
-- enterprise software
-- process approval
-- hcm
-- general ledger journal entries
-- accounts receivable items
-- list budgets
-- general ledger
-- list forecasts
 - budgeting
+- retrieve pending finance approval requests.
+- financial management
+- accounts receivable items
+- peopletools platform services.
+- list pending approvals
+- retrieve performance analytics reports.
+- retrieve accounts receivable items.
+- expense reports
+- approve, deny, or push back a finance approval request.
+- list budgets
+- list forecasts
+- campus solutions
+- budget definitions and data
+- forecasting
+- hcm
+- individual approval operations
+- general ledger journal entries
+- peoplesoft
+- finance approval requests
+- list analytics reports
+- retrieve accounts payable vouchers.
+- retrieve forecast data and projections.
+- retrieve expense reports.
+- process approval
+- human capital management.
+- financial and supply chain management.
+- crm
+- retrieve budget definitions and data.
+- list journal entries
+- finance
+- performance analytics reports
+- supply chain management
+- campus solutions.
+- forecast data and projections
+- general ledger
+- list vouchers
+- list expense reports
+- enterprise software
+- accounting
 slug: finance-and-accounting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Finance And Accounting\"\n  description: \"Unified workflow for finance controllers combining general ledger, accounts payable, accounts receivable, expenses, budgeting, forecasting, analytics, and approval workflows across PeopleSoft Financials, EPM, and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Finance\n    - Accounting\n    - General Ledger\n    - Budgeting\n    - Forecasting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: financials\n      location: ./shared/financials.yaml\n    - import: epm\n      location: ./shared/enterprise-performance-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace:\
   \ finance-api\n      description: \"Unified REST API for PeopleSoft finance and accounting workflows.\"\n      resources:\n        - path: /v1/journal-entries\n          name: journal-entries\n          description: \"General ledger journal entries\"\n          operations:\n            - method: GET\n              name: list-journal-entries\n              description: \"Retrieve general ledger journal entries.\"\n              call: \"financials.list-journal-entries\"\n              with:\n                businessUnit: \"rest.businessUnit\"\n                fromDate: \"rest.fromDate\"\n                toDate: \"rest.toDate\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vouchers\n          name: vouchers\n          description: \"Accounts payable vouchers\"\n          operations:\n            - method: GET\n              name: list-vouchers\n              description: \"Retrieve accounts payable vouchers.\"\n  \

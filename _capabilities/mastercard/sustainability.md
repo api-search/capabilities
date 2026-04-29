@@ -24,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a donation to environmental causes
-- fraud detection
-- mastercard
-- calculate carbon footprint
-- environmental impact scoring
-- environmental cause donations
-- carbon footprint calculations
-- environmental impact
-- donate to environment
-- payments
-- create a donation to support environmental causes
-- credit cards
-- create environmental donation
-- open banking
-- sustainability
-- esg
-- carbon footprint
-- get the environmental impact score for a transaction using the aland index
 - calculate the carbon footprint of payment transactions
-- get impact score
-- calculate carbon footprint from transactions
-- get environmental impact score
 - digital identity
+- calculate carbon footprint
+- esg
+- create a donation to environmental causes
+- payments
+- create environmental donation
+- sustainability
+- open banking
+- get the environmental impact score for a transaction using the aland index
+- calculate carbon footprint from transactions
+- get impact score
+- create a donation to support environmental causes
+- fraud detection
+- environmental cause donations
+- get environmental impact score
+- donate to environment
+- environmental impact
+- carbon footprint calculations
+- credit cards
+- environmental impact scoring
+- carbon footprint
 - financial services
+- mastercard
 slug: sustainability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Sustainability\"\n  description: \"Unified workflow for ESG and sustainability teams to calculate carbon footprints, measure environmental impact, and enable cardholders to support environmental causes through their spending data.\"\n  tags:\n    - Mastercard\n    - Sustainability\n    - Carbon Footprint\n    - ESG\n    - Environmental Impact\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: carbon-calculator\n      location: ./shared/carbon-calculator.yaml\n    - import: doconomy-aland\n      location: ./shared/doconomy-aland-index.yaml\n    - import: donate\n      location: ./shared/donate.yaml\n\n  exposes:\n    - type: rest\n      port: 8090\n      namespace: sustainability-api\n      description: \"Unified REST API for\
   \ sustainability and environmental impact.\"\n      resources:\n        - path: /v1/carbon-footprint\n          name: carbon-footprint\n          description: \"Carbon footprint calculations\"\n          operations:\n            - method: POST\n              name: calculate-carbon-footprint\n              description: \"Calculate carbon footprint from transactions\"\n              call: \"carbon-calculator.calculate-footprint\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environmental-impact\n          name: environmental-impact\n          description: \"Environmental impact scoring\"\n          operations:\n            - method: POST\n              name: get-impact-score\n              description: \"Get environmental impact score\"\n              call: \"doconomy-aland.get-impact-score\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environmental-donations\n\

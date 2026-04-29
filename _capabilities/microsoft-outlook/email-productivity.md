@@ -79,82 +79,82 @@ personas: []
 provider_name: Microsoft Outlook
 provider_slug: microsoft-outlook
 search_terms:
-- list mail folders
-- send a new email message directly
-- office 365
-- get a mail folder
-- get a specific mail folder
-- list email messages in the outlook mailbox
-- delete folder
-- update message
-- reply to a message
-- forward a message
-- list mail folders in the mailbox
-- reply all to message
-- calendar
-- reply to message
-- add attachment
-- create a draft email message
-- add an attachment to a message
-- add an attachment
-- single mail folder
-- messages in a folder
-- contacts
-- list messages
-- graph api
-- message attachments
-- forward message
-- mail folders
-- copy message
-- microsoft
-- send a new email message
-- list folders
-- get folder
-- update a mail folder
-- update an email message
-- list messages in a specific mail folder
-- get attachment
-- outlook
-- create a new mail folder
-- create draft
-- forward
-- reply to an email message
-- create a mail folder
-- update folder
-- get message
-- send mail
-- send an existing draft message
-- update a message
-- enterprise
-- delete a mail folder
-- single email message
-- copy a message to a different folder
-- list attachments
-- delete an attachment from a message
-- list folder messages
-- get a specific message
-- get a specific email message by id
-- list attachments for a message
-- productivity
-- list email messages
 - email messages
-- send a draft message
+- update a message
+- send a new email message
 - send draft
-- reply
-- email
-- send a new email directly
-- delete an email message
-- create folder
-- reply all to an email message
-- forward an email message to recipients
-- create a draft message
-- delete message
+- get a mail folder
+- graph api
+- update a mail folder
+- reply to message
+- delete folder
 - move message
-- delete a message
-- get a specific attachment from a message
-- delete attachment
-- move a message to a different folder
+- create a new mail folder
+- list email messages
+- contacts
+- email
+- create folder
+- copy message
+- list email messages in the outlook mailbox
+- list messages
+- forward
+- reply
+- update an email message
+- outlook
 - list messages in a folder
+- create a draft message
+- get a specific email message by id
+- create draft
+- send mail
+- get message
+- calendar
+- enterprise
+- messages in a folder
+- send an existing draft message
+- send a draft message
+- send a new email message directly
+- add attachment
+- delete attachment
+- single email message
+- update message
+- create a mail folder
+- get a specific message
+- single mail folder
+- add an attachment to a message
+- list folders
+- delete a message
+- reply all to an email message
+- get a specific attachment from a message
+- forward message
+- forward an email message to recipients
+- list messages in a specific mail folder
+- list attachments for a message
+- update folder
+- delete an email message
+- copy a message to a different folder
+- get a specific mail folder
+- list folder messages
+- mail folders
+- get attachment
+- reply all to message
+- delete an attachment from a message
+- productivity
+- message attachments
+- move a message to a different folder
+- office 365
+- send a new email directly
+- reply to a message
+- microsoft
+- add an attachment
+- create a draft email message
+- list mail folders in the mailbox
+- reply to an email message
+- delete a mail folder
+- list mail folders
+- forward a message
+- get folder
+- list attachments
+- delete message
 slug: email-productivity
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Outlook Email Productivity\"\n  description: \"Unified capability for Microsoft Outlook email productivity combining mail operations, folder management, and attachment handling via Microsoft Graph. Used by productivity teams, IT administrators, and automation engineers.\"\n  tags:\n    - Microsoft\n    - Outlook\n    - Email\n    - Productivity\n    - Graph API\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-mail\n      location: ./shared/graph-mail.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-productivity-api\n      description: \"Unified REST API for Microsoft Outlook email productivity.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Email messages\"\n          operations:\n       \
   \     - method: GET\n              name: list-messages\n              description: \"List email messages\"\n              call: \"graph-mail.list-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-draft\n              description: \"Create a draft message\"\n              call: \"graph-mail.create-draft-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages/{id}\n          name: message\n          description: \"Single email message\"\n          operations:\n            - method: GET\n              name: get-message\n              description: \"Get a specific message\"\n              call: \"graph-mail.get-message\"\n              with:\n                message-id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n          \

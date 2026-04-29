@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Core
 provider_slug: amazon-iot-core
 search_terms:
-- IoT Developer
-- amazon iot core resources
+- iot
 - get thing
-- list rules
-- message routing
-- amazon iot core create topic rule
-- mqtt
-- create thing
-- attach policy
-- list things
+- amazon iot core list rules
+- create policy
 - amazon iot core list things
+- create thing
+- Solutions Architect
+- amazon iot core resources
+- amazon iot core create thing
 - create topic rule
 - amazon iot core create policy
+- list things
+- attach policy
+- mqtt
+- amazon iot core delete thing
+- IoT Developer
 - manages amazon iot core resources and operations
-- Solutions Architect
+- managed cloud service for iot device connectivity and message routing.
+- amazon iot core create topic rule
+- amazon iot core get thing
 - aws
 - device management
-- create policy
 - amazon iot core attach policy
-- amazon iot core delete thing
-- amazon iot core list rules
-- amazon iot core get thing
-- managed cloud service for iot device connectivity and message routing.
-- amazon iot core create thing
+- list rules
+- message routing
 - delete thing
-- iot
 slug: iot-device-connectivity
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Core - Iot Device Connectivity\n  description: Unified capability for IoT Developer, Solutions Architect to manage managed cloud service for iot device connectivity and message routing operations.\n  tags:\n    - IoT\n    - AWS\n    - Device Management\n    - MQTT\n    - Message Routing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-core\n      location: ./shared/iot-core.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iot-device-connectivity-api\n      description: Unified REST API for iot device connectivity.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT Core resources\n          operations:\n            - method: GET\n              name: list-things\n\
   \              description: List Things\n              call: \"iot-core.list-things\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: iot-device-connectivity-mcp\n      transport: http\n      description: MCP server for AI-assisted iot device connectivity.\n      tools:\n        - name: list-things\n          description: Amazon IoT Core List Things\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-core.list-things\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-thing\n          description: Amazon IoT Core Create Thing\n          hints:\n            readOnly: false\n            \n          call: \"iot-core.create-thing\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-thing\n          description: Amazon\

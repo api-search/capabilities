@@ -30,60 +30,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- geolocate ip
-- finance engineer
-- get timezone
-- geolocation
-- fraud analyst
-- exchange rates, vat validation, and iban validation for financial compliance
 - iban validation
-- web scraping
-- abstract api
+- ip intelligence
+- timezones
+- convert time between zones
+- screenshots
+- public holidays
 - ip geolocation, company enrichment, and timezone data for user profile enrichment
-- developer building user onboarding and personalization features
+- get location data for an ip address
+- contacts
+- data engineer
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- finance engineer
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- enrich company data from domain
+- engineer building data pipelines and enrichment workflows
+- phone validation
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- developer building payment, billing, and financial compliance systems
 - geolocate an ip address
-- email validation
+- developer building user onboarding and personalization features
+- get current time and timezone information for any location
+- abstract api
+- retrieve company name, industry, headcount, logo, and location from a domain or email
+- enrich company data
+- security engineer
+- engineer building fraud detection and threat intelligence systems
+- product engineer
+- avatars
+- get current timezone
+- get timezone
+- currencies
+- exchange rates, vat validation, and iban validation for financial compliance
+- fraud analyst
+- vat validation
+- currency conversion, vat compliance, and banking validation for financial applications
+- geolocate ip
+- compliance analyst
+- ip geolocation
+- data enrichment
+- retrieve timezone and current time for a location
+- get company details from domain or email
+- geolocation
+- detection and blocking of fraudulent users, transactions, and bot activity
 - convert date/time from one timezone to another
 - company enrichment
-- compliance analyst
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- engineer building data pipelines and enrichment workflows
-- data enrichment
-- avatars
+- web scraping
 - enrich company
-- ip geolocation
-- developer building payment, billing, and financial compliance systems
-- contacts
-- screenshots
-- exchange rates
-- public holidays
-- currencies
-- security engineer
-- get current timezone
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- data engineer
-- timezones
-- phone validation
-- engineer building fraud detection and threat intelligence systems
-- ip intelligence
-- currency conversion, vat compliance, and banking validation for financial applications
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- retrieve company name, industry, headcount, logo, and location from a domain or email
-- retrieve timezone and current time for a location
-- convert time between zones
-- product engineer
-- get current timezone for a location
-- image processing
-- get current time and timezone information for any location
-- detection and blocking of fraudulent users, transactions, and bot activity
-- geolocate ip address
-- geolocate an ip address to get country, city, timezone, and currency data
-- get company details from domain or email
-- enrich company data from domain
-- vat validation
-- get location data for an ip address
+- email validation
 - email reputation, phone intelligence, and ip intelligence for fraud prevention
-- enrich company data
+- exchange rates
+- image processing
+- geolocate an ip address to get country, city, timezone, and currency data
+- get current timezone for a location
+- geolocate ip address
 slug: data-enrichment
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abstract API Data Enrichment\"\n  description: \"Unified data enrichment workflow combining IP geolocation, company enrichment, and timezone APIs. Used by product teams and data engineers to automatically enrich user profiles, personalize experiences, and localize content at signup or session start.\"\n  tags:\n    - Abstract Api\n    - Data Enrichment\n    - Geolocation\n    - Company Enrichment\n    - Timezones\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      IP_GEOLOCATION_API_KEY: IP_GEOLOCATION_API_KEY\n      COMPANY_ENRICHMENT_API_KEY: COMPANY_ENRICHMENT_API_KEY\n      TIMEZONES_API_KEY: TIMEZONES_API_KEY\n\ncapability:\n  consumes:\n    - import: ip-geolocation\n      location: ./shared/ip-geolocation.yaml\n    - import: company-enrichment\n      location: ./shared/company-enrichment.yaml\n    - import: timezones\n      location: ./shared/timezones.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8081\n      namespace: data-enrichment-api\n      description: \"Unified REST API for user and session data enrichment.\"\n      resources:\n        - path: /v1/ip-location\n          name: ip-location\n          description: \"Geolocate an IP address\"\n          operations:\n            - method: GET\n              name: geolocate-ip\n              description: \"Get location data for an IP address\"\n              call: \"ip-geolocation.getIPGeolocation\"\n              with:\n                ip_address: \"rest.ip_address\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/company\n          name: company\n          description: \"Enrich company data from domain\"\n          operations:\n            - method: GET\n              name: enrich-company\n              description: \"Get company details from domain or email\"\n              call: \"company-enrichment.getCompanyEnrichment\"\

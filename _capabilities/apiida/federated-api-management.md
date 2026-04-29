@@ -20,33 +20,33 @@ personas: []
 provider_name: APIIDA
 provider_slug: apiida
 search_terms:
-- federated
-- list all broadcom layer7 gateways registered in the gateway manager.
-- apiida
-- validate api specification
-- deploy api to gateways
-- get gateway metrics
 - gateway
-- validate an openapi proxy specification before deployment.
-- layer7
-- api management
-- Enterprise Architect
-- federated api management
-- API Platform Engineer
-- list gateways
-- list managed apis
-- list all managed apis.
-- list all apis managed across the apiida federated control plane.
-- get monitoring and performance metrics for a specific gateway.
 - governance
-- api gateway
-- list apis
-- enterprise
-- architect overseeing multi-gateway api strategy and governance.
-- engineer managing apis across multiple gateways using apiida's federated control plane.
+- get gateway metrics
+- list gateways
+- get monitoring and performance metrics for a specific gateway.
 - list managed gateways
-- deploy a validated api to one or more gateway environments.
+- deploy api to gateways
+- architect overseeing multi-gateway api strategy and governance.
+- layer7
+- apiida
+- federated
+- list all managed apis.
+- Enterprise Architect
+- api management
+- list apis
+- federated api management
 - list all managed gateways.
+- list all apis managed across the apiida federated control plane.
+- api gateway
+- validate an openapi proxy specification before deployment.
+- list all broadcom layer7 gateways registered in the gateway manager.
+- list managed apis
+- validate api specification
+- API Platform Engineer
+- engineer managing apis across multiple gateways using apiida's federated control plane.
+- deploy a validated api to one or more gateway environments.
+- enterprise
 slug: federated-api-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIIDA Federated API Management\"\n  description: \"Unified workflow for federated API management across multiple API gateways using APIIDA - validating specs, deploying APIs, monitoring gateways, and managing API lifecycle from a central control plane.\"\n  tags:\n    - APIIDA\n    - API Management\n    - Federated\n    - Gateway\n    - Enterprise\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIIDA_API_KEY: APIIDA_API_KEY\n\ncapability:\n  consumes:\n    - import: apiida-control-plane\n      location: ./shared/api-control-plane.yaml\n    - import: apiida-gateway-manager\n      location: ./shared/api-gateway-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apiida-federated-api\n      description: \"Unified REST API for APIIDA federated API management.\"\n      resources:\n        - path: /v1/apis\n          operations:\n            - method:\
   \ GET\n              name: list-apis\n              description: \"List all managed APIs.\"\n              call: \"apiida-control-plane.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gateways\n          operations:\n            - method: GET\n              name: list-gateways\n              description: \"List all managed gateways.\"\n              call: \"apiida-gateway-manager.list-gateways\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apiida-federated-mcp\n      transport: http\n      description: \"MCP server for AI-assisted APIIDA federated API management.\"\n      tools:\n        - name: list-managed-apis\n          description: \"List all APIs managed across the APIIDA federated control plane.\"\n          hints: {readOnly: true, destructive: false, idempotent: true}\n          call: \"\

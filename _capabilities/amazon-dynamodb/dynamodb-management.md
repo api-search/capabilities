@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- createTable
-- amazon dynamodb list dynamodb tables
-- workflow capability for nosql database operations.
-- create table
-- amazon dynamodb update a dynamodb table
-- updateTable
-- amazon dynamodb put an item into a table
-- amazon dynamodb query items in a table or index
-- get item
-- query
-- getItem
-- amazon dynamodb delete a dynamodb table
-- update item
-- amazon dynamodb get an item from a table
-- amazon dynamodb create a dynamodb table
-- listTables
-- key-value
-- amazon dynamodb update an item in a table
-- amazon dynamodb delete an item from a table
-- serverless
+- amazon dynamodb describe a dynamodb table
 - update table
-- describe table
-- list tables
-- delete table
-- nosql
-- database
+- amazon dynamodb query items in a table or index
+- amazon dynamodb
 - nosql database operations business domain for amazon dynamodb.
 - updateItem
-- aws
-- putItem
 - deleteItem
-- amazon dynamodb
-- put item
-- describeTable
-- engineers managing amazon dynamodb resources on aws.
-- document store
-- amazon dynamodb describe a dynamodb table
-- delete item
+- nosql
+- create table
 - deleteTable
+- delete table
+- createTable
+- putItem
+- amazon dynamodb get an item from a table
+- amazon dynamodb delete a dynamodb table
+- describe table
+- database
+- amazon dynamodb put an item into a table
+- amazon dynamodb list dynamodb tables
+- serverless
+- document store
+- query
+- update item
+- list tables
+- updateTable
+- amazon dynamodb update a dynamodb table
+- describeTable
+- put item
+- amazon dynamodb create a dynamodb table
+- getItem
+- get item
+- delete item
+- key-value
+- engineers managing amazon dynamodb resources on aws.
+- aws
+- amazon dynamodb update an item in a table
+- amazon dynamodb delete an item from a table
+- listTables
+- workflow capability for nosql database operations.
 slug: dynamodb-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DynamoDB NoSQL Database Operations\"\n  description: \"Unified capability for managing DynamoDB tables, items, queries, and transactions for application developers and data engineers.\"\n  tags:\n    - Amazon DynamoDB\n    - AWS\n    - Database\n    - NoSQL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: dynamodb\n      location: ./shared/dynamodb.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: dynamodb-api\n      description: \"Unified REST API for NoSQL Database Operations.\"\n      resources:\n        - path: /v1/resource\n          name: createTable\n          description: \"Amazon DynamoDB Create a DynamoDB Table\"\n          operations:\n            - method: POST\n              name: createTable\n        \
   \      description: \"Amazon DynamoDB Create a DynamoDB Table\"\n              call: \"dynamodb.createTable\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DescribeTable\n          name: describeTable\n          description: \"Amazon DynamoDB Describe a DynamoDB Table\"\n          operations:\n            - method: POST\n              name: describeTable\n              description: \"Amazon DynamoDB Describe a DynamoDB Table\"\n              call: \"dynamodb.describeTable\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#ListTables\n          name: listTables\n          description: \"Amazon DynamoDB List DynamoDB Tables\"\n          operations:\n            - method: POST\n              name: listTables\n              description: \"Amazon DynamoDB List DynamoDB Tables\"\n              call: \"dynamodb.listTables\"\n              outputParameters:\n\

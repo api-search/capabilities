@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- manages workmail infrastructure, user provisioning, and security policies.
-- calendar
-- list organizations
-- group management.
-- list mobile device access rules
-- list groups
-- it administration of email infrastructure
-- list users in an organization.
-- list mobile device access rules.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- create a new email user.
-- user provisioning and management.
 - create a new workmail user with mailbox.
 - list mobile device access control rules.
-- list users in a workmail organization.
-- mobile device access control and compliance
-- handles day-to-day email user and group management.
-- aws
-- list users
-- create user
-- business communication
-- mobile device access control.
-- list email groups.
-- IT Administrator
-- exchange
-- enterprise
-- list all amazon workmail organizations in the account.
-- enterprise email provisioning and management
 - list email distribution groups in an organization.
-- list all workmail organizations.
-- Email Operations
 - email
+- create user
+- manages workmail infrastructure, user provisioning, and security policies.
+- list email groups.
+- user provisioning and management.
+- business communication
+- list organizations
+- it administration of email infrastructure
+- exchange
+- list groups
+- list all workmail organizations.
+- calendar
+- IT Administrator
+- mobile device access control.
+- list all amazon workmail organizations in the account.
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- list mobile device access rules
+- enterprise email provisioning and management
+- Email Operations
 - administration
+- mobile device access control and compliance
+- list users in an organization.
 - workmail organization management.
+- handles day-to-day email user and group management.
+- list mobile device access rules.
+- aws
+- list users in a workmail organization.
+- create a new email user.
+- enterprise
+- list users
+- group management.
 slug: email-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkMail Email Management\"\n  description: >-\n    Unified workflow for IT administrators and email operations teams to manage\n    Amazon WorkMail organizations, users, groups, and mobile device access.\n    Enables programmatic provisioning, deprovisioning, and governance of\n    enterprise email infrastructure.\n  tags:\n    - AWS\n    - Email\n    - Calendar\n    - Business Communication\n    - Administration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: workmail\n      location: ./shared/workmail.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-management-api\n      description: \"Unified REST API for Amazon WorkMail email infrastructure management.\"\n      resources:\n\
   \        - path: /v1/organizations\n          name: organizations\n          description: \"WorkMail organization management.\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List all WorkMail organizations.\"\n              call: \"workmail.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User provisioning and management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users in an organization.\"\n              call: \"workmail.list-users\"\n              with:\n                OrganizationId: \"rest.organization_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description:\

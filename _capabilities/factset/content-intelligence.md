@@ -32,39 +32,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
-- natural language search.
-- get callstreet events
-- run nlp analysis on text.
-- nlp
 - search for answers.
-- get global regulatory filings.
-- streetaccount news.
-- signals
-- get streetaccount news.
-- get filings
-- content
-- get news articles.
-- get earnings call transcripts.
-- search
-- factset
-- financial
-- financial data
-- get news
-- get regulatory filings.
 - investment analytics
-- market data
-- search answers
+- get earnings call transcripts.
+- get global regulatory filings.
+- run nlp
+- get filings
+- signals
 - get signals
-- news
-- conversational ai query.
-- conversational query
+- streetaccount news.
+- financial
+- get news articles.
 - get signals.
 - get material event signals.
-- portfolio analytics
-- material event signals.
-- run nlp
+- conversational query
+- run nlp analysis on text.
+- news
 - global filings.
+- search answers
+- financial data
+- nlp
+- search
+- natural language search.
+- portfolio analytics
+- get callstreet events
+- get regulatory filings.
+- material event signals.
+- get streetaccount news.
+- factset
+- market data
+- get news
+- research
+- content
+- conversational ai query.
 slug: content-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Content and Intelligence\"\n  description: \"Unified workflow for content retrieval and intelligence including news, filings, earnings calls, NLP, signals, and conversational search. Used by content consumers and data scientists.\"\n  tags:\n    - FactSet\n    - Content\n    - NLP\n    - News\n    - Signals\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-callstreet\n      location: ./shared/documents-distributor-callstreet-events.yaml\n    - import: factset-streetaccount\n      location: ./shared/streetaccount-news.yaml\n    - import: factset-filings\n      location: ./shared/global-filings.yaml\n    - import: factset-signals\n      location: ./shared/signals.yaml\n    - import: factset-nlp\n      location: ./shared/natural-language-processing.yaml\n\
   \    - import: factset-search\n      location: ./shared/search-answers.yaml\n    - import: factset-conv\n      location: ./shared/conversational-api-powered-by-mercury.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: content-intel-api\n      description: \"Unified REST API for content and intelligence.\"\n      resources:\n        - path: /v1/news\n          name: news\n          description: \"StreetAccount news.\"\n          operations:\n            - method: GET\n              name: get-news\n              description: \"Get news articles.\"\n              call: \"factset-streetaccount.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/filings\n          name: filings\n          description: \"Global filings.\"\n          operations:\n            - method: GET\n              name: get-filings\n              description: \"Get regulatory filings.\"\n              call: \"factset-filings.list\"\

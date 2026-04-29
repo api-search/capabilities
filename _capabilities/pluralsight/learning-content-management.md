@@ -55,53 +55,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- retrieve the full public course catalog
-- query the program catalog
-- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- channels
-- content management
-- course catalog with titles, descriptions, authors, and metadata
-- manage channels
+- query tags
+- content tags and taxonomy for categorization
+- content channels for organizing and curating learning content
+- query and manage content channels
+- query course catalog
+- learning paths
+- query programs
 - query the general content catalog
-- query content tags and taxonomy data
-- query content catalog
-- learning
-- hands-on labs and practical exercises
-- structured learning programs and curriculum offerings
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
 - query content tags and taxonomy data used to categorize and organize learning content.
+- education
+- query the course catalog
+- manage channels
+- pluralsight
+- courses
+- structured learning programs and curriculum offerings
+- hands-on labs and practical exercises
+- query lab catalog and activity data
+- general content catalog including videos, guides, and interactive courses
+- query content catalog
+- technology
 - query learning paths
+- public course catalog accessible without authentication
+- course catalog with titles, descriptions, authors, and metadata
+- query the program catalog
+- video training
+- query content slugs
+- query the general content catalog including videos, guides, interactive courses, and other content types.
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- retrieve the full public course catalog
+- query content tags and taxonomy data
+- query labs
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- channels
+- query learning path catalog data
+- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
+- learning content
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- learning
 - query the program catalog including structured learning programs and curriculum offerings.
 - resolve content slugs to internal identifiers
-- general content catalog including videos, guides, and interactive courses
-- query the course catalog
-- education
-- learning content
-- query tags
-- learning paths
-- query course catalog
-- query labs
-- engineering metrics
-- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- public course catalog accessible without authentication
 - structured sequences of courses organized around skills and roles
+- engineering metrics
 - skills assessment
-- query and manage content channels
+- content management
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
 - get public course catalog
-- content tags and taxonomy for categorization
-- query lab catalog and activity data
-- query learning path catalog data
-- courses
-- query the general content catalog including videos, guides, interactive courses, and other content types.
-- content channels for organizing and curating learning content
-- pluralsight
-- technology
-- query content slugs
-- query programs
-- video training
 slug: learning-content-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Learning Content Management\"\n  description: \"Unified workflow for L&D managers and content administrators to browse, organize, and manage learning content across courses, channels, learning paths, programs, labs, and tags. Combines content catalog, course catalog, public catalog, channels, learning paths, programs, labs, content slugs, and tags APIs.\"\n  tags:\n    - Pluralsight\n    - Learning Content\n    - Content Management\n    - Courses\n    - Channels\n    - Learning Paths\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: pluralsight-content-catalog\n      location: ./shared/content-catalog.yaml\n    - import: pluralsight-content-slug\n      location: ./shared/content-slug.yaml\n    - import: pluralsight-course-catalog\n      location: ./shared/course-catalog.yaml\n\
   \    - import: pluralsight-public-course-catalog\n      location: ./shared/public-course-catalog-rest.yaml\n    - import: pluralsight-channels\n      location: ./shared/channels.yaml\n    - import: pluralsight-learning-paths\n      location: ./shared/learning-paths.yaml\n    - import: pluralsight-programs\n      location: ./shared/programs.yaml\n    - import: pluralsight-labs\n      location: ./shared/labs.yaml\n    - import: pluralsight-tags\n      location: ./shared/tags.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: learning-content-api\n      description: \"Unified REST API for browsing and managing Pluralsight learning content across all content types.\"\n      resources:\n        - path: /v1/content-catalog\n          name: content-catalog\n          description: \"General content catalog including videos, guides, and interactive courses\"\n          operations:\n            - method: POST\n              name: query-content-catalog\n              description:\

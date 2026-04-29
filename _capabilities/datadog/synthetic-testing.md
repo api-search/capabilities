@@ -47,58 +47,58 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- synthetics concurrency settings
+- list monitors including synthetic alert monitors
+- mute monitor
+- synthetics
+- set a new synthetics on-demand concurrency cap
+- validate synthetic monitor configurations
+- t1
+- get a monitor
+- analytics
+- set the on-demand concurrency cap
+- synthetic testing
+- update monitor
+- mute a monitor
+- getMonitor
+- unmute monitor
+- list monitors
+- set concurrency cap
+- updateMonitor
+- get concurrency cap
+- mute a synthetic test monitor
+- delete monitor
+- muteMonitor
+- validate a synthetic monitor configuration
+- update a monitor
 - get the synthetics on-demand concurrency cap
 - monitoring
-- updateMonitor
 - create monitor
-- visualizations
-- mute monitor
-- delete monitor
-- analytics
-- datadog
-- get the on-demand concurrency cap
-- validate a monitor
-- set concurrency cap
-- mute synthetic alert monitors
-- t1
+- GetOnDemandConcurrencyCap
 - platform
-- create a synthetics alert monitor
-- update a synthetics alert monitor
-- set a new synthetics on-demand concurrency cap
-- dashboards
-- synthetics
-- validate synthetic monitor configurations
-- muteMonitor
-- unmute monitor
-- set the on-demand concurrency cap
-- getMonitor
+- validate a monitor
+- monitors
+- monitor management for synthetic alerts
 - deleteMonitor
-- synthetic testing
-- validate monitor
-- delete a monitor
-- SetOnDemandConcurrencyCap
-- mute a synthetic test monitor
+- synthetics concurrency settings
 - unmute a synthetic test monitor
+- get a monitor by id
+- get the on-demand concurrency cap
+- create a monitor
+- create a synthetics alert monitor
+- createMonitor
+- update a synthetics alert monitor
+- mute synthetic alert monitors
+- get monitor
+- qa
+- visualizations
+- listMonitors
 - validateMonitor
 - individual monitor operations
-- listMonitors
-- get concurrency cap
-- list monitors including synthetic alert monitors
-- monitors
-- qa
-- get a monitor
-- update a monitor
-- get a monitor by id
-- monitor management for synthetic alerts
-- get monitor
-- update monitor
-- GetOnDemandConcurrencyCap
-- create a monitor
-- validate a synthetic monitor configuration
-- mute a monitor
-- createMonitor
-- list monitors
+- validate monitor
+- dashboards
+- delete a monitor
+- SetOnDemandConcurrencyCap
+- datadog
 slug: synthetic-testing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Synthetic Testing\"\n  description: \"Unified workflow for synthetic testing combining synthetics concurrency management and monitors. Used by QA engineers and SREs for managing synthetic test execution capacity and monitoring test results.\"\n  tags:\n    - Datadog\n    - Synthetic Testing\n    - Synthetics\n    - Monitors\n    - QA\n  personas:\n    - QA Engineer\n    - SRE\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-synthetics\n      location: \"./shared/synthetics.yaml\"\n    - import: dd-monitors\n      location: \"./shared/monitors.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: dd-synthetic-testing-api\n      description: \"Unified REST API for synthetic testing workflows combining synthetics and monitors.\"\n \
   \     resources:\n        - path: /v1/synthetics/concurrency-cap\n          name: synthetics-concurrency-cap\n          description: \"Synthetics concurrency settings\"\n          operations:\n            - method: GET\n              name: GetOnDemandConcurrencyCap\n              description: \"Get the on-demand concurrency cap\"\n              call: \"dd-synthetics.GetOnDemandConcurrencyCap\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: SetOnDemandConcurrencyCap\n              description: \"Set the on-demand concurrency cap\"\n              call: \"dd-synthetics.SetOnDemandConcurrencyCap\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors\n          name: monitors\n          description: \"Monitor management for synthetic alerts\"\n          operations:\n            - method: GET\n              name: listMonitors\n\

@@ -11,31 +11,31 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
-- functions list functions
-- lists event source mappings.
-- functions create function
-- event-driven
+- returns details about an event source mapping.
 - unified workflow for amazon lambda resource management
-- integrates api into applications
+- event-driven
+- functions list functions
+- functions get function
 - workflow
-- event source mappings list event source mappings
-- compute
-- serverless
-- creates a lambda function.
-- Developer
-- event source mappings create event source mapping
-- aws
-- event source mappings get event source mapping
-- functions
-- amazon lambda
-- faas
-- manages resources and configurations
-- returns information about the function or function version.
 - creates a mapping between an event source and an aws lambda function.
 - returns a list of lambda functions, with the version-specific configuration of each.
-- returns details about an event source mapping.
+- functions
+- event source mappings create event source mapping
+- faas
+- serverless
+- event source mappings get event source mapping
+- amazon lambda
+- functions create function
+- returns information about the function or function version.
+- manages resources and configurations
+- integrates api into applications
+- compute
+- event source mappings list event source mappings
+- aws
+- Developer
 - Administrator
-- functions get function
+- lists event source mappings.
+- creates a lambda function.
 slug: amazon-lambda-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lambda Workflow\n  description: Unified workflow capability for Amazon Lambda combining resource management and operations.\n  tags:\n  - Amazon Lambda\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lambda\n    location: ./shared/lambda.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lambda-api\n    description: REST API for Amazon Lambda workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lambda-mcp\n    transport: http\n    description: MCP server for Amazon Lambda.\n    tools:\n    - name: functions-create-function\n      description: Creates a Lambda function.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lambda.createfunction\n      outputParameters:\n      - type:\
   \ object\n        mapping: $.\n    - name: functions-list-functions\n      description: Returns a list of Lambda functions, with the version-specific configuration of each.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.listfunctions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: functions-get-function\n      description: Returns information about the function or function version.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.getfunction\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: event-source-mappings-create-event-source-mapping\n      description: Creates a mapping between an event source and an AWS Lambda function.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lambda.createeventsourcemapping\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: event-source-mappings-list-event-source-mappings\n\

@@ -35,43 +35,43 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- get intraday tick data for a security
-- get teams
-- get orders from blotter
-- get fills
-- bloomberg
-- route management
-- create a new trading order
-- get routes
-- get security reference data for trading
-- execution management
-- portfolio management
-- get routes from the emsx blotter
-- trading
 - get available broker strategies
-- get order and route fills
-- get orders from the emsx blotter
-- get reference data
-- get broker strategies
-- fill tracking
+- get fills
 - delete order
-- modify an existing order
-- modify order
-- get routes from blotter
-- route order
-- get intraday ticks
-- cancel/delete an order
-- financial data
-- market data for trading decisions
-- get order fills
-- market data
-- get security reference data
-- order management
-- create a trading order
-- create order
 - get orders
-- route an order to a broker
+- get intraday ticks
+- get routes from the emsx blotter
+- create order
+- modify an existing order
+- get routes
+- get broker strategies
+- market data for trading decisions
+- route order
+- get order fills
 - get emsx teams
+- create a trading order
+- create a new trading order
+- portfolio management
+- modify order
+- get teams
+- get order and route fills
+- financial data
+- fill tracking
+- get orders from the emsx blotter
+- route management
+- get intraday tick data for a security
+- bloomberg
+- route an order to a broker
+- get routes from blotter
+- get orders from blotter
+- get security reference data for trading
+- get reference data
+- market data
+- trading
+- get security reference data
+- cancel/delete an order
+- order management
+- execution management
 slug: trading-and-execution
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Trading and Execution\"\n  description: \"Workflow for automated trading combining EMSX order/route management with HTTP API market data for traders and algorithmic trading teams.\"\n  tags:\n    - Bloomberg\n    - Trading\n    - Execution Management\n    - Order Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_EMSX_TOKEN: BLOOMBERG_EMSX_TOKEN\n      BLOOMBERG_HTTP_USERNAME: BLOOMBERG_HTTP_USERNAME\n      BLOOMBERG_HTTP_PASSWORD: BLOOMBERG_HTTP_PASSWORD\n\ncapability:\n  consumes:\n    - import: emsx\n      location: ./shared/emsx.yaml\n    - import: http-api\n      location: ./shared/http-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: trading-api\n      description: \"Unified REST API for Bloomberg trading and execution.\"\n      resources:\n        - path: /v1/orders\n          name: orders\n          description:\
   \ \"Order management\"\n          operations:\n            - method: POST\n              name: create-order\n              description: \"Create a trading order\"\n              call: \"emsx.create-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: get-orders\n              description: \"Get orders from blotter\"\n              call: \"emsx.get-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/routes\n          name: routes\n          description: \"Route management\"\n          operations:\n            - method: POST\n              name: route-order\n              description: \"Route an order to a broker\"\n              call: \"emsx.route-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: get-routes\n\

@@ -23,39 +23,39 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- papertrail list saved searches
-- list papertrail system groups
-- loggly search events
-- loggly
-- observability
-- itsm
-- ip address management
-- get loggly account information
-- papertrail log search
 - loggly search
-- papertrail
-- network monitoring
-- loggly get events
-- papertrail list systems
-- infrastructure
-- list log-sending systems
-- log management
-- loggly get account info
-- database monitoring
-- search loggly log events
-- loggly log search
-- list papertrail log-sending systems
-- papertrail system management
-- search papertrail log events
-- list systems
-- it management
+- ip address management
 - application monitoring
-- list papertrail saved searches
-- papertrail search
+- list papertrail log-sending systems
+- papertrail list systems
+- list papertrail system groups
+- loggly get account info
+- get loggly account information
+- infrastructure
+- it management
+- loggly get events
+- papertrail log search
+- search papertrail log events
+- loggly search events
+- log management
 - solarwinds
+- papertrail system management
+- loggly log search
+- papertrail list saved searches
 - papertrail search events
+- list papertrail saved searches
+- observability
+- list log-sending systems
+- network monitoring
+- papertrail
+- papertrail search
 - retrieve loggly search results by rsid
+- loggly
+- search loggly log events
+- list systems
 - papertrail list groups
+- itsm
+- database monitoring
 slug: log-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SolarWinds Log Management\"\n  description: \"Workflow for centralized log management combining Loggly cloud log aggregation with Papertrail log search and system management for DevOps and operations teams.\"\n  tags:\n    - SolarWinds\n    - Log Management\n    - Loggly\n    - Papertrail\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LOGGLY_API_TOKEN: LOGGLY_API_TOKEN\n      PAPERTRAIL_API_TOKEN: PAPERTRAIL_API_TOKEN\n\ncapability:\n  consumes:\n    - import: loggly\n      location: ./shared/loggly.yaml\n    - import: papertrail\n      location: ./shared/papertrail.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: log-management-api\n      description: \"Unified REST API for SolarWinds log management.\"\n      resources:\n        - path: /v1/loggly-search\n          name: loggly-search\n          description: \"Loggly log search\"\n          operations:\n\
   \            - method: GET\n              name: loggly-search-events\n              description: \"Search Loggly log events\"\n              call: \"loggly.search-events\"\n              with:\n                q: \"rest.q\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/papertrail-search\n          name: papertrail-search\n          description: \"Papertrail log search\"\n          operations:\n            - method: GET\n              name: papertrail-search-events\n              description: \"Search Papertrail log events\"\n              call: \"papertrail.search-events\"\n              with:\n                q: \"rest.q\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/systems\n          name: systems\n          description: \"Papertrail system management\"\n          operations:\n            - method: GET\n              name: list-systems\n\

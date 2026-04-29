@@ -46,59 +46,59 @@ personas: []
 provider_name: Conductor
 provider_slug: conductor
 search_terms:
-- get a task definition.
-- orchestration
-- create a new workflow definition.
-- resume a paused workflow.
-- start a new workflow.
-- pause workflow
-- list task definitions
-- tasks
-- create a workflow definition.
-- create new task definitions.
-- list workflow definitions
-- delete a workflow definition.
 - poll for a task to execute.
-- poll for task
-- create task definitions
-- terminate workflow
-- task definition management.
-- terminate a running workflow.
-- get a workflow definition by name.
-- get workflow definition
-- task management
-- workflow orchestration
-- list all task definitions.
-- delete workflow definition
-- update task execution status.
-- list all workflow definitions.
-- create workflow definition
-- workflows
-- start a new workflow execution.
-- automation
-- create event handler
-- workflow definition management.
-- get workflow execution
-- start workflow
-- state
-- create task definitions.
-- get a workflow definition.
-- delete workflow execution
-- individual workflow definition.
-- search workflows
-- workflow execution management.
-- list all event handlers.
-- conductor
 - update task
-- pause a running workflow.
-- get workflow execution status.
+- get a workflow definition.
+- create workflow definition
+- create a workflow definition.
+- automation
+- list all event handlers.
+- task definition management.
+- delete a workflow definition.
+- list all workflow definitions.
+- get a workflow definition by name.
 - create an event handler.
-- individual workflow execution.
-- list event handlers
-- delete a workflow execution.
+- start a new workflow.
+- delete workflow execution
+- conductor
+- terminate a running workflow.
+- tasks
+- get workflow execution status.
+- get workflow execution
 - search for workflow executions.
+- list event handlers
+- state
+- start workflow
+- poll for task
+- update task execution status.
+- task management
+- orchestration
+- workflow orchestration
+- create a new workflow definition.
+- create event handler
+- terminate workflow
+- pause workflow
+- search workflows
+- individual workflow execution.
+- workflow definition management.
+- delete a workflow execution.
+- start a new workflow execution.
+- create new task definitions.
+- pause a running workflow.
+- workflows
+- individual workflow definition.
+- list task definitions
+- get a task definition.
+- create task definitions
 - resume workflow
+- get workflow definition
 - get task definition
+- workflow execution management.
+- list all task definitions.
+- resume a paused workflow.
+- list workflow definitions
+- delete workflow definition
+- create task definitions.
 slug: workflow-orchestration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Conductor Workflow Orchestration\"\n  description: \"Unified workflow for managing workflow definitions, task definitions, workflow executions, and event handlers. Used by backend developers and DevOps engineers.\"\n  tags:\n    - Conductor\n    - Workflow Orchestration\n    - Task Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONDUCTOR_API_TOKEN: CONDUCTOR_API_TOKEN\n\ncapability:\n  consumes:\n    - import: conductor\n      location: ./shared/conductor.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-orchestration-api\n      description: \"Unified REST API for Conductor workflow orchestration.\"\n      resources:\n        - path: /v1/workflow-definitions\n          name: workflow-definitions\n          description: \"Workflow definition management.\"\n          operations:\n            - method: GET\n       \
   \       name: list-workflow-definitions\n              description: \"List all workflow definitions.\"\n              call: \"conductor.get-all-workflow-definitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workflow-definition\n              description: \"Create a workflow definition.\"\n              call: \"conductor.create-workflow-definition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflow-definitions/{id}\n          name: workflow-definition-details\n          description: \"Individual workflow definition.\"\n          operations:\n            - method: GET\n              name: get-workflow-definition\n              description: \"Get a workflow definition.\"\n              call: \"conductor.get-workflow-definition\"\n              with:\n                name: \"rest.id\"\n          \

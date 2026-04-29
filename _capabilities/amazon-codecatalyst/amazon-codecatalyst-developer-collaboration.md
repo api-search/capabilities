@@ -11,42 +11,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- collaboration
-- list codecatalyst spaces
-- developer tools
-- create project
-- project and workflow management for development teams.
-- create source repository
-- manage ci/cd workflows
-- create dev environment
-- Developer
-- developer collaboration
-- manage codecatalyst spaces
-- DevOps Engineer
-- writes code and manages repos and dev environments.
-- list source repositories
-- amazon
-- devops
-- list workflows
-- continuous integration and deployment workflows.
-- aws
-- manages ci/cd workflows and project automation.
-- create a new project
-- list spaces
-- list projects in a space
-- source control
-- create a source repository
 - ci/cd
-- start a workflow run
-- list projects
-- list workflow runs
-- list workflows for a project
-- create a cloud dev environment
-- project management
-- list dev environments
-- manage projects
 - start workflow run
+- create source repository
+- collaboration
+- start a workflow run
+- list spaces
+- continuous integration and deployment workflows.
+- create a cloud dev environment
+- list workflows
 - team collaboration on code and projects.
+- amazon
+- writes code and manages repos and dev environments.
+- project management
+- list workflow runs
+- devops
+- manages ci/cd workflows and project automation.
+- manage projects
+- create dev environment
+- create a source repository
+- DevOps Engineer
+- list projects
+- manage ci/cd workflows
+- list source repositories
+- list dev environments
+- developer tools
+- create a new project
+- list projects in a space
+- list workflows for a project
+- developer collaboration
+- list codecatalyst spaces
+- project and workflow management for development teams.
+- aws
+- Developer
+- create project
+- source control
+- manage codecatalyst spaces
 slug: amazon-codecatalyst-developer-collaboration
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeCatalyst Developer Collaboration\n  description: Unified workflow for development teams to collaborate on projects, manage spaces, workflows, and source repositories using Amazon CodeCatalyst.\n  tags:\n  - Amazon\n  - AWS\n  - Developer Collaboration\n  - CI/CD\n  - Project Management\n  - DevOps\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    CODECATALYST_TOKEN: CODECATALYST_TOKEN\ncapability:\n  consumes:\n  - import: codecatalyst\n    location: ./shared/codecatalyst.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codecatalyst-collab-api\n    description: Unified REST API for CodeCatalyst collaboration.\n    resources:\n    - path: /v1/spaces\n      name: spaces\n      description: Manage CodeCatalyst spaces\n    - path: /v1/projects\n      name: projects\n      description: Manage projects\n    - path: /v1/workflows\n      name: workflows\n      description: Manage\
   \ CI/CD workflows\n  - type: mcp\n    port: 9090\n    namespace: codecatalyst-collab-mcp\n    transport: http\n    description: MCP server for AI-assisted development collaboration.\n    tools:\n    - name: list-spaces\n      description: List CodeCatalyst spaces\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codecatalyst.listSpaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-projects\n      description: List projects in a space\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codecatalyst.listProjects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-project\n      description: Create a new project\n      hints:\n        readOnly: false\n        openWorld: false\n      call: codecatalyst.createProject\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-workflows\n      description: List workflows for a project\n     \

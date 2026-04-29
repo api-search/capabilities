@@ -35,53 +35,53 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: airflow
 search_terms:
-- get variable
-- list all apache airflow dags.
-- data pipeline
-- airflow
-- list dag runs
-- trigger dag run
-- pause dag
-- list task instances for a dag run.
-- Platform Admin
-- list airflow dag run history with optional state filtering.
-- get details of an apache airflow dag by id.
-- defining, scheduling, and executing data workflows.
-- apache airflow dag management.
-- scheduling
-- list all variables.
-- trigger and monitor dag runs.
-- trigger a new dag run.
-- list connections
-- get the current status of an airflow dag run.
-- dag
-- list airflow connections for external service integrations.
-- list task instances
-- Data Engineer
-- monitoring and operating running pipelines.
-- workflow orchestration
-- pause an airflow dag to prevent scheduled runs.
-- list dag runs.
-- list all dags.
-- builds and triggers data pipelines using airflow dags.
-- apache
-- open source
-- trigger an apache airflow dag run with optional configuration.
-- monitor task instances.
-- etl
-- list variables
-- get dag
-- list airflow variables for pipeline configuration.
-- list task instances and their status for a dag run.
-- manages airflow connections, variables, pools, and infrastructure.
-- managing pipeline configuration and integrations.
-- get a specific airflow variable by key.
-- airflow variables.
-- data engineering
-- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
-- airflow connections.
-- list all connections.
 - list dags
+- list task instances
+- get the current status of an airflow dag run.
+- manages airflow connections, variables, pools, and infrastructure.
+- airflow variables.
+- list airflow variables for pipeline configuration.
+- dag
+- list task instances and their status for a dag run.
+- pause an airflow dag to prevent scheduled runs.
+- list variables
+- managing pipeline configuration and integrations.
+- airflow connections.
+- list all dags.
+- get a specific airflow variable by key.
+- list connections
+- Platform Admin
+- etl
+- list dag runs
+- list all variables.
+- list all apache airflow dags.
+- scheduling
+- apache airflow dag management.
+- workflow orchestration
+- list airflow connections for external service integrations.
+- builds and triggers data pipelines using airflow dags.
+- list dag runs.
+- monitor task instances.
+- airflow
+- get details of an apache airflow dag by id.
+- trigger an apache airflow dag run with optional configuration.
+- trigger a new dag run.
+- list airflow dag run history with optional state filtering.
+- pause dag
+- monitoring and operating running pipelines.
+- get dag
+- list all connections.
+- Data Engineer
+- trigger and monitor dag runs.
+- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
+- apache
+- data pipeline
+- list task instances for a dag run.
+- get variable
+- trigger dag run
+- open source
+- defining, scheduling, and executing data workflows.
+- data engineering
 - get dag run status
 slug: workflow-orchestration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Airflow Workflow Orchestration\"\n  description: \"Unified workflow capability for managing Apache Airflow pipelines — DAGs, DAG runs, task monitoring, variables, and connections. Used by data engineers and platform teams for orchestrating data pipelines.\"\n  tags:\n    - Airflow\n    - Workflow Orchestration\n    - Data Pipeline\n    - ETL\n    - Data Engineering\n    - Apache\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRFLOW_BASE_URL: AIRFLOW_BASE_URL\n      AIRFLOW_USERNAME: AIRFLOW_USERNAME\n      AIRFLOW_PASSWORD: AIRFLOW_PASSWORD\n\ncapability:\n  consumes:\n    - import: airflow\n      location: ./shared/airflow-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airflow-orchestration-api\n      description: \"Unified REST API for Airflow workflow orchestration.\"\n      resources:\n        - path: /v1/dags\n          name: dags\n\

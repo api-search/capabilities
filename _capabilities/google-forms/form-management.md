@@ -38,51 +38,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- delete a watch
-- batch update form
-- update form publish settings
-- extend a watch's expiration by seven days
-- get form details
-- forms
-- watch notification operations
-- delete watch
-- Data Analyst
 - analyzes form responses and collects data
-- google forms
-- create watch
 - creating and managing forms for data collection
-- form crud operations
-- set publish settings
-- get response
-- get form
-- form response operations
-- google
-- responses
-- list form responses
-- list watches
-- Form Administrator
-- create a notification watch
-- get a single form response by id
 - renew watch
-- list all responses for a form
+- form crud operations
+- list all active watches for a form
 - managing surveys, questions, and notification watches
 - create a new google form with a title
-- create a new form
-- google workspace
-- create form
-- creates and manages forms, monitors responses
-- create forms, collect responses, monitor changes
-- list all active watches for a form
-- get a single response
-- surveys
-- questionnaires
+- get form
+- responses
 - get a google form's structure and settings
-- notifications
+- set publish settings
+- google forms
+- form response operations
+- questionnaires
+- list watches
 - apply batch updates to a form (add/remove/modify items)
-- list responses
-- delete a watch to stop notifications
-- set up a pub/sub watch for form changes or new responses
+- creates and manages forms, monitors responses
+- update form publish settings
 - data collection
+- create a notification watch
+- google workspace
+- batch update form
+- list responses
+- notifications
+- set up a pub/sub watch for form changes or new responses
+- watch notification operations
+- list form responses
+- Data Analyst
+- get a single response
+- delete a watch
+- extend a watch's expiration by seven days
+- create forms, collect responses, monitor changes
+- create form
+- get a single form response by id
+- create watch
+- forms
+- surveys
+- get form details
+- get response
+- delete a watch to stop notifications
+- create a new form
+- delete watch
+- Form Administrator
+- list all responses for a form
+- google
 slug: form-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Forms Form Management\"\n  description: \"Workflow capability for managing Google Forms - creating forms, collecting responses, and monitoring changes via watches. Used by form administrators and data analysts.\"\n  tags:\n    - Google Forms\n    - Surveys\n    - Data Collection\n    - Notifications\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_FORMS_API_KEY: GOOGLE_FORMS_API_KEY\n\ncapability:\n  consumes:\n    - import: forms-api\n      location: ./shared/forms-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: form-management-api\n      description: \"Unified REST API for Google Forms management workflows.\"\n      resources:\n        - path: /v1/forms\n          name: forms\n          description: \"Form CRUD operations\"\n          operations:\n            - method: POST\n              name: create-form\n              description:\
   \ \"Create a new form\"\n              call: \"forms-api.create-form\"\n            - method: GET\n              name: get-form\n              description: \"Get form details\"\n              call: \"forms-api.get-form\"\n        - path: /v1/responses\n          name: responses\n          description: \"Form response operations\"\n          operations:\n            - method: GET\n              name: list-responses\n              description: \"List form responses\"\n              call: \"forms-api.list-responses\"\n            - method: GET\n              name: get-response\n              description: \"Get a single response\"\n              call: \"forms-api.get-response\"\n        - path: /v1/watches\n          name: watches\n          description: \"Watch notification operations\"\n          operations:\n            - method: POST\n              name: create-watch\n              description: \"Create a notification watch\"\n              call: \"forms-api.create-watch\"\n          \

@@ -14,32 +14,32 @@ personas: []
 provider_name: Amazon Interactive Video Service
 provider_slug: amazon-interactive-video-service
 search_terms:
-- video
-- amazon interactive video service get channel
-- amazon interactive video service list channels
-- amazon interactive video service list stream keys
-- list stream keys
-- amazon interactive video service create channel
 - media
-- get channel
+- list recordings
+- delete channel
 - stop stream
 - manages amazon interactive video service resources and operations
-- real-time
-- delete channel
-- create stream key
-- managed live streaming with low latency for interactive applications.
-- Developer
-- Media Engineer
-- list recordings
-- amazon interactive video service list recordings
-- aws
-- amazon interactive video service stop stream
-- amazon interactive video service delete channel
-- amazon interactive video service resources
 - amazon interactive video service create stream key
+- amazon interactive video service delete channel
+- video
+- amazon interactive video service resources
+- list stream keys
+- create stream key
+- amazon interactive video service list recordings
+- amazon interactive video service list channels
+- managed live streaming with low latency for interactive applications.
+- amazon interactive video service create channel
 - create channel
-- live streaming
 - list channels
+- amazon interactive video service get channel
+- Media Engineer
+- real-time
+- amazon interactive video service stop stream
+- get channel
+- amazon interactive video service list stream keys
+- aws
+- live streaming
+- Developer
 slug: live-streaming-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon Interactive Video Service - Live Streaming Management\n  description: Unified capability for Developer, Media Engineer to manage managed live streaming with low latency for interactive applications operations.\n  tags:\n    - Live Streaming\n    - Video\n    - AWS\n    - Media\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: ivs\n      location: ./shared/ivs.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: live-streaming-management-api\n      description: Unified REST API for live streaming management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon Interactive Video Service resources\n          operations:\n            - method: GET\n              name: list-channels\n\
   \              description: List Channels\n              call: \"ivs.list-channels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: live-streaming-management-mcp\n      transport: http\n      description: MCP server for AI-assisted live streaming management.\n      tools:\n        - name: list-channels\n          description: Amazon Interactive Video Service List Channels\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ivs.list-channels\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-channel\n          description: Amazon Interactive Video Service Create Channel\n          hints:\n            readOnly: false\n            \n          call: \"ivs.create-channel\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-channel\n\

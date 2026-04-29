@@ -11,25 +11,25 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: aws-step-functions
 search_terms:
-- stop_execution
-- list_state_machines
-- ipaas
-- orchestration
 - stop a running state machine execution
-- create a new step functions state machine
-- serverless
+- list_executions
+- stop_execution
+- delete a step functions state machine
+- orchestration
 - describe_execution
-- state machine
-- start_execution
-- list executions for a state machine
-- aws
-- workflows
-- delete_state_machine
 - list all step functions state machines
 - create_state_machine
+- workflows
+- serverless
+- start_execution
+- ipaas
 - start an execution of a state machine
-- list_executions
-- delete a step functions state machine
+- list_state_machines
+- create a new step functions state machine
+- list executions for a state machine
+- delete_state_machine
+- aws
+- state machine
 - get details about a state machine execution
 slug: orchestration-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: AWS Step Functions Orchestration Workflow\n  description: Workflow capability for managing state machines and executions with AWS Step Functions.\n  tags:\n    - Orchestration\n    - Serverless\n    - Workflows\n    - State Machine\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: step-functions\n      location: ./shared/step-functions.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-api\n      resources:\n        - label: Create State Machine\n          method: POST\n          path: /state-machines\n        - label: List State Machines\n          method: GET\n          path: /state-machines\n        - label: Delete State Machine\n          method: DELETE\n          path: /state-machines/{arn}\n\

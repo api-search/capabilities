@@ -31,37 +31,37 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- compliance
-- add a new product to the it service catalog
-- list portfolios
-- check the status of a provisioned product
-- list all it service catalog portfolios
-- terminate and decommission a provisioned product
+- amazon service catalog
+- get details about an it service portfolio
+- it governance
 - it service portfolio management
-- add a product to the catalog
-- search products
+- list portfolios
+- approved product catalog
+- add a new product to the it service catalog
+- create portfolio
+- self-service
+- self-service provision an approved it product
+- list all it service catalog portfolios
+- service catalog
 - create a new it service catalog portfolio
 - browse approved products
-- amazon service catalog
-- approved product catalog
-- create portfolio
+- describe portfolio
+- list all it service portfolios
+- describe provisioned product
+- check the status of a provisioned product
+- create product
+- compliance
+- search products
+- add a product to the catalog
+- provision an approved product
+- browse and search approved it products
+- self-service product provisioning
+- terminate provisioned product
 - provision product
 - aws
-- it governance
-- browse and search approved it products
+- terminate and decommission a provisioned product
 - create an it service portfolio
-- terminate provisioned product
-- self-service product provisioning
-- self-service
-- get details about an it service portfolio
-- self-service provision an approved it product
-- service catalog
-- provision an approved product
-- describe provisioned product
-- list all it service portfolios
 - cloud governance
-- create product
-- describe portfolio
 slug: it-service-governance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Service Catalog IT Service Governance\"\n  description: \"Unified capability for IT service governance including portfolio management, product catalog curation, and self-service product provisioning. Used by IT Administrators and End Users.\"\n  tags:\n    - Amazon Service Catalog\n    - IT Governance\n    - Cloud Governance\n    - Self-Service\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-service-catalog\n      location: ./shared/amazon-service-catalog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: it-service-governance-api\n      description: \"Unified REST API for Amazon Service Catalog IT service governance.\"\n      resources:\n        - path: /v1/portfolios\n\
   \          name: portfolios\n          description: \"IT service portfolio management\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List all IT service portfolios\"\n              call: \"amazon-service-catalog.list-portfolios\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-portfolio\n              description: \"Create an IT service portfolio\"\n              call: \"amazon-service-catalog.create-portfolio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: products\n          description: \"Approved product catalog\"\n          operations:\n            - method: GET\n              name: search-products\n              description: \"Browse approved products\"\n              call: \"amazon-service-catalog.search-products\"\

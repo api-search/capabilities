@@ -9,15 +9,15 @@ personas: []
 provider_name: CloudBees
 provider_slug: cloudbees
 search_terms:
-- devops
-- release orchestration
 - ci/cd
-- continuous integration
-- feature flags
 - continuous delivery
 - jenkins
+- release orchestration
+- continuous integration
 - software delivery
+- feature flags
 - feature management
+- devops
 slug: feature-management
 source_yaml: "# Naftiko capabilities profile for CloudBees Feature Management.\n# Maps verbs against the CloudBees Feature Management REST API\n# (formerly Rollout) for applications, environments, feature flags,\n# target groups, experiments, audit log, and users.\nprovider: cloudbees\nname: CloudBees Feature Management\ndescription: >-\n  Capabilities cover managing applications and environments, defining and\n  toggling feature flags, configuring target groups and experiments, and\n  reading audit history. Authentication is via bearer token; the API\n  enforces one request per second per IP.\ncapabilities:\n  - id: cloudbees.fm.applications.list\n    name: List applications\n    description: Return all applications visible to the calling token.\n    api: cloudbees:feature-management\n    outputs:\n      - items\n\n  - id: cloudbees.fm.environments.list\n    name: List environments\n    description: Return all environments under a specific application.\n    api: cloudbees:feature-management\n\
   \    inputs:\n      - application_id\n    outputs:\n      - items\n\n  - id: cloudbees.fm.environments.create\n    name: Create environment\n    description: Add a new environment to an application, optionally returning the SDK key.\n    api: cloudbees:feature-management\n    inputs:\n      - application_id\n      - name\n      - description\n    outputs:\n      - environment_key\n      - status\n\n  - id: cloudbees.fm.environments.update\n    name: Update environment\n    description: Modify an existing environment's properties.\n    api: cloudbees:feature-management\n    inputs:\n      - application_id\n      - environment_key\n      - name\n      - description\n    outputs:\n      - status\n\n  - id: cloudbees.fm.environments.delete\n    name: Delete environment\n    description: Remove an environment from an application.\n    api: cloudbees:feature-management\n    inputs:\n      - application_id\n      - environment_key\n    outputs:\n      - status\n\n  - id: cloudbees.fm.flags.list\n\

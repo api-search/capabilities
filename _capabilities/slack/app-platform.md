@@ -31,44 +31,44 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- collaboration
-- list apps
-- open a modal view.
-- get bot info
-- messaging
-- connect to real-time messaging.
-- slack
-- open dialog
-- chat
-- t1
-- platform
-- open a dialog.
-- list apps.
-- team communication
-- manage ai assistant threads.
 - app development
-- rtm connect
-- manage workflows
-- get bot information.
-- manage calls
-- list workflows
-- test api connectivity.
+- list apps.
 - complete function
-- open a view.
-- open view
+- workflow management.
+- list installed apps.
+- t1
 - automation
-- bots
-- view management.
+- get bot information.
+- collaboration
+- list workflows.
+- app management.
+- rtm connect
+- connect to real-time messaging.
+- manage workflows.
+- team communication
+- chat
+- list workflows
 - api test
+- open view
+- test api connectivity.
+- manage calls
 - manage voice/video calls.
 - complete a workflow function.
-- list installed apps.
-- list workflows.
-- productivity
-- manage workflows.
+- view management.
+- open a modal view.
+- platform
+- open dialog
 - manage assistant
-- app management.
-- workflow management.
+- get bot info
+- slack
+- open a view.
+- productivity
+- list apps
+- open a dialog.
+- manage ai assistant threads.
+- manage workflows
+- bots
+- messaging
 slug: app-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Slack App Platform\"\n  description: \"Unified workflow for building Slack apps including app management, interactive views, dialogs, bots, workflow functions, calls, and real-time messaging. Used by platform developers building Slack integrations.\"\n  tags:\n    - Slack\n    - App Development\n    - Platform\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\n\ncapability:\n  consumes:\n    - import: slack-apps\n      location: ./shared/apps.yaml\n    - import: slack-views\n      location: ./shared/views.yaml\n    - import: slack-dialog\n      location: ./shared/dialog.yaml\n    - import: slack-bots\n      location: ./shared/bots.yaml\n    - import: slack-functions\n      location: ./shared/functions.yaml\n    - import: slack-workflows\n      location: ./shared/workflows.yaml\n    - import: slack-calls\n      location: ./shared/calls.yaml\n\
   \    - import: slack-rtm\n      location: ./shared/rtm.yaml\n    - import: slack-assistant\n      location: ./shared/assistant.yaml\n    - import: slack-tests\n      location: ./shared/test-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: app-platform-api\n      description: \"Unified REST API for Slack app platform.\"\n      resources:\n        - path: /v1/apps\n          name: apps\n          description: \"App management.\"\n          operations:\n            - method: GET\n              name: list-apps\n              description: \"List apps.\"\n              call: \"slack-apps.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/views\n          name: views\n          description: \"View management.\"\n          operations:\n            - method: POST\n              name: open-view\n              description: \"Open a view.\"\n              call: \"slack-views.list\"\n          \

@@ -9,17 +9,17 @@ personas: []
 provider_name: Bindbee
 provider_slug: bindbee
 search_terms:
-- unified access to employee data from hris platforms
-- people operations engineer integrating hr systems into internal tooling
-- developer building hr workflow automations using unified hr data
-- employee time-off, tenure, and workforce data
-- workforce
-- ats
-- department hierarchy and org structure normalization
-- access unified hr and recruiting data from connected hris and ats systems
-- hr integration
 - unified access to recruiting data from ats platforms
+- people operations engineer integrating hr systems into internal tooling
+- unified access to employee data from hris platforms
+- access unified hr and recruiting data from connected hris and ats systems
+- ats
+- employee time-off, tenure, and workforce data
 - hris
+- workforce
+- department hierarchy and org structure normalization
+- developer building hr workflow automations using unified hr data
+- hr integration
 slug: hr-integration
 source_yaml: "name: HR Integration\ndescription: >-\n  Workflow capability for accessing unified HR data from HRIS and ATS systems\n  through Bindbee, including employee records, departments, time-off, job\n  postings, and candidates.\nversion: v1\n\nimports:\n  - shared/bindbee.yaml\n\ntools:\n  - name: list-employees\n    import: bindbee.list-employees\n    description: List all employees from the connected HRIS system with pagination.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the specific HRIS integration\n        page_size:\n          type: integer\n          description: Number of results per page\n        cursor:\n          type: string\n          description: Pagination cursor from previous response\n  - name: get-employee\n    import: bindbee.get-employee\n    description: Get a specific employee's full record by ID.\n    inputSchema:\n\
   \      type: object\n      required:\n        - connector_token\n        - id\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n        id:\n          type: string\n          description: Employee ID\n  - name: list-departments\n    import: bindbee.list-departments\n    description: List all organizational departments from the connected HRIS.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n  - name: list-time-off\n    import: bindbee.list-time-off\n    description: List time-off requests with optional employee filtering.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n \

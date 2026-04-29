@@ -28,32 +28,32 @@ provider_name: Azure Service Bus
 provider_slug: azure-service-bus
 search_terms:
 - delete a service bus namespace
-- list all namespaces
-- messaging
-- pub/sub
-- get namespace details
-- get details of a specific service bus namespace
-- cloud
-- list topics
-- list azure service bus namespaces in a subscription
-- create or update namespace
-- list topics within a service bus namespace
-- cloud infrastructure
-- azure
-- namespace details
-- get namespace
 - message broker
-- create or update a service bus namespace
-- list queues
-- enterprise
-- queues
-- service bus namespaces
-- pub/sub topics
-- delete namespace
-- list namespaces
-- list queues within a service bus namespace
+- azure
+- get namespace
 - service bus
+- pub/sub
+- cloud infrastructure
 - message queues
+- enterprise
+- get namespace details
+- create or update namespace
+- cloud
+- list topics within a service bus namespace
+- service bus namespaces
+- namespace details
+- delete namespace
+- list all namespaces
+- pub/sub topics
+- list queues within a service bus namespace
+- list queues
+- list azure service bus namespaces in a subscription
+- queues
+- create or update a service bus namespace
+- list topics
+- get details of a specific service bus namespace
+- messaging
+- list namespaces
 slug: messaging-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Service Bus Messaging Management\"\n  description: \"Unified workflow for managing Azure Service Bus messaging infrastructure including namespaces, queues, topics, and subscriptions. Designed for cloud architects and platform engineers managing enterprise messaging.\"\n  tags:\n    - Azure\n    - Service Bus\n    - Messaging\n    - Cloud Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_BEARER_TOKEN: AZURE_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: service-bus\n      location: ./shared/service-bus.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: messaging-api\n      description: \"Unified REST API for Azure Service Bus messaging management.\"\n      resources:\n        - path: /v1/namespaces\n          name: namespaces\n          description: \"Service Bus namespaces\"\n          operations:\n            - method:\
   \ GET\n              name: list-namespaces\n              description: \"List all namespaces\"\n              call: \"service-bus.list-namespaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/namespaces/{namespaceName}\n          name: namespace-details\n          description: \"Namespace details\"\n          operations:\n            - method: GET\n              name: get-namespace\n              description: \"Get namespace details\"\n              call: \"service-bus.get-namespace\"\n              with:\n                namespaceName: \"rest.namespaceName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Message queues\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List queues\"\n              call: \"service-bus.list-queues\"\

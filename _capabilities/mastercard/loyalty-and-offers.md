@@ -36,53 +36,53 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
+- benefit eligibility checks
+- digital identity
+- loyalty promotions
 - list promotions
-- pay with rewards
+- payments
+- list experiences
+- submit a loyalty insurance claim
+- check benefit eligibility
+- open banking
+- get merchant offer content
+- create donation
+- get merchant offer content and promotional materials
 - fraud detection
-- enroll in promotion
-- get loyalty user details
+- check eligibility
+- priceless
+- priceless experiences
+- loyalty
+- apply loyalty rewards as payment
+- list priceless experiences
+- create a charitable donation
+- get personalized merchant offers for a cardholder
+- pay with rewards
+- rewards
+- list available priceless experiences
+- credit cards
+- get points balance
+- offers
+- activate offer
+- submit insurance claim
 - personalized offers
 - list available loyalty promotions
-- submit a loyalty insurance claim
-- activate an offer for a cardholder
-- create a charitable donation
+- financial services
 - mastercard
 - get personalized offers
-- list available priceless experiences
-- priceless
-- payments
-- credit cards
-- apply loyalty rewards as payment
-- get merchant offer content and promotional materials
 - enroll a cardholder in a loyalty promotion
-- loyalty
-- get personalized offers for a cardholder
+- enroll in promotion
 - create a loyalty program user
-- priceless experiences
-- check benefit eligibility
-- get loyalty points balance
-- get merchant offer content
-- list priceless experiences
-- check cardholder benefit eligibility
-- benefit eligibility checks
-- allocate a benefit to a cardholder
-- open banking
-- allocate benefit
-- get points balance
-- check cardholder benefit eligibility by pan
-- get loyalty user
-- activate offer
 - create loyalty user
-- submit insurance claim
-- offers
-- create donation
-- get personalized merchant offers for a cardholder
-- rewards
-- list experiences
-- digital identity
-- financial services
-- loyalty promotions
-- check eligibility
+- allocate benefit
+- get loyalty user details
+- check cardholder benefit eligibility
+- allocate a benefit to a cardholder
+- get loyalty points balance
+- get loyalty user
+- get personalized offers for a cardholder
+- check cardholder benefit eligibility by pan
+- activate an offer for a cardholder
 slug: loyalty-and-offers
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Loyalty and Offers\"\n  description: \"Unified workflow for loyalty managers and marketing teams to manage loyalty programs, personalized offers, rewards, benefits, and the Priceless experiences platform.\"\n  tags:\n    - Mastercard\n    - Loyalty\n    - Offers\n    - Rewards\n    - Priceless\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: loyalty-promotions\n      location: ./shared/loyalty-promotions.yaml\n    - import: loyalty-user-mgmt\n      location: ./shared/loyalty-user-management.yaml\n    - import: loyalty-insurance\n      location: ./shared/loyalty-insurance.yaml\n    - import: personalized-offers\n      location: ./shared/personalized-offers.yaml\n    - import: offers-merchant-content\n      location: ./shared/offers-merchant-content.yaml\n\
   \    - import: priceless-platform\n      location: ./shared/priceless-platform.yaml\n    - import: benefit-eligibility\n      location: ./shared/benefit-eligibility.yaml\n    - import: benefit-allocation\n      location: ./shared/benefit-allocation.yaml\n    - import: pay-with-rewards\n      location: ./shared/pay-with-rewards.yaml\n    - import: donate\n      location: ./shared/donate.yaml\n    - import: points-activity\n      location: ./shared/points-activity.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: loyalty-offers-api\n      description: \"Unified REST API for Mastercard loyalty and offers workflows.\"\n      resources:\n        - path: /v1/promotions\n          name: promotions\n          description: \"Loyalty promotions\"\n          operations:\n            - method: GET\n              name: list-promotions\n              description: \"List available loyalty promotions\"\n              call: \"loyalty-promotions.list-promotions\"\n              outputParameters:\n\

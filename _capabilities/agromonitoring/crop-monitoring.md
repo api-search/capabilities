@@ -9,11 +9,11 @@ personas: []
 provider_name: Agromonitoring
 provider_slug: agromonitoring
 search_terms:
-- precision agriculture
+- remote sensing
 - weather
 - vegetation indices
+- precision agriculture
 - agriculture
-- remote sensing
 - satellite imagery
 slug: crop-monitoring
 source_yaml: "name: Crop Monitoring\ndescription: Workflow-oriented capability composition for monitoring crop health, vegetation indices, and environmental conditions using Agromonitoring satellite and sensor data.\nversion: \"1.0\"\ntags:\n  - Agriculture\n  - Crop Monitoring\n  - Satellite Imagery\n  - Remote Sensing\n\ntools:\n  - name: register_field\n    description: Register a new agricultural field polygon using GeoJSON coordinates\n    capability: agromonitoring-api.createPolygon\n    inputs:\n      - name: name\n        type: string\n        description: Human-readable name for the field\n      - name: geo_json\n        type: object\n        description: GeoJSON geometry defining the field boundary\n    outputs:\n      - name: polygon_id\n        type: string\n        description: Unique identifier for the registered polygon\n\n  - name: list_fields\n    description: List all registered field polygons for the account\n    capability: agromonitoring-api.listPolygons\n    outputs:\n\

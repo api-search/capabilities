@@ -50,47 +50,47 @@ personas: []
 provider_name: Amazon EC2 Auto Scaling
 provider_slug: amazon-ec2-auto-scaling
 search_terms:
-- GET_AttachLoadBalancerTargetGroups
 - GET_AttachTrafficSources
-- GET_AttachLoadBalancers
-- auto scaling
-- POST_BatchDeleteScheduledAction
-- amazon ec2 auto scaling post_ batch delete scheduled action
+- amazon ec2 auto scaling get_ batch delete scheduled action
+- POST_AttachLoadBalancers
+- amazon ec2 auto scaling post_ attach instances
 - post_ attach load balancers
-- post_ attach load balancer target groups
 - get_ attach instances
 - get_ attach load balancers
-- amazon ec2 auto scaling get_ attach load balancer target groups
-- post_ batch delete scheduled action
-- ec2
-- compute
-- get_ batch delete scheduled action
-- amazon ec2 auto scaling post_ attach load balancers
-- amazon ec2 auto scaling post_ attach traffic sources
-- POST_AttachLoadBalancers
-- amazon ec2 auto scaling get_ attach load balancers
-- high availability
-- amazon web services
-- scaling
-- get_ attach load balancer target groups
-- workflow for auto scaling management.
-- amazon ec2 auto scaling post_ attach instances
-- aws
-- POST_AttachInstances
-- POST_AttachLoadBalancerTargetGroups
-- get_ attach traffic sources
-- amazon ec2 auto scaling get_ batch delete scheduled action
-- POST_AttachTrafficSources
-- post_ attach instances
-- amazon ec2 auto scaling
-- amazon ec2 auto scaling get_ attach traffic sources
-- amazon ec2 auto scaling post_ attach load balancer target groups
-- GET_BatchDeleteScheduledAction
-- auto scaling management business domain.
 - GET_AttachInstances
-- engineers managing ec2 auto scaling fleets.
-- amazon ec2 auto scaling get_ attach instances
+- get_ batch delete scheduled action
+- post_ batch delete scheduled action
+- amazon ec2 auto scaling get_ attach load balancers
+- amazon ec2 auto scaling post_ attach load balancer target groups
 - post_ attach traffic sources
+- GET_BatchDeleteScheduledAction
+- get_ attach load balancer target groups
+- GET_AttachLoadBalancerTargetGroups
+- scaling
+- POST_AttachLoadBalancerTargetGroups
+- amazon ec2 auto scaling post_ attach load balancers
+- post_ attach instances
+- post_ attach load balancer target groups
+- workflow for auto scaling management.
+- auto scaling
+- amazon web services
+- get_ attach traffic sources
+- amazon ec2 auto scaling get_ attach load balancer target groups
+- auto scaling management business domain.
+- high availability
+- amazon ec2 auto scaling get_ attach traffic sources
+- POST_BatchDeleteScheduledAction
+- amazon ec2 auto scaling post_ attach traffic sources
+- engineers managing ec2 auto scaling fleets.
+- POST_AttachTrafficSources
+- GET_AttachLoadBalancers
+- amazon ec2 auto scaling
+- amazon ec2 auto scaling post_ batch delete scheduled action
+- POST_AttachInstances
+- compute
+- amazon ec2 auto scaling get_ attach instances
+- aws
+- ec2
 slug: ec2-auto-scaling-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EC2 Auto Scaling Auto Scaling Group Management\"\n  description: \"Unified capability for managing EC2 Auto Scaling groups, scaling policies, and lifecycle hooks for cloud operations engineers.\"\n  tags:\n    - Amazon EC2 Auto Scaling\n    - AWS\n    - Compute\n    - Auto Scaling\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ec2-auto-scaling\n      location: ./shared/ec2-auto-scaling.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: ec2-auto-scaling-api\n      description: \"Unified REST API for Auto Scaling Group Management.\"\n      resources:\n        - path: /v1/resource\n          name: GET_AttachInstances\n          description: \"Amazon EC2 Auto Scaling GET_ Attach Instances\"\n          operations:\n   \
   \         - method: GET\n              name: GET_AttachInstances\n              description: \"Amazon EC2 Auto Scaling GET_ Attach Instances\"\n              call: \"ec2-auto-scaling.GET_AttachInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/resource\n          name: POST_AttachInstances\n          description: \"Amazon EC2 Auto Scaling POST_ Attach Instances\"\n          operations:\n            - method: POST\n              name: POST_AttachInstances\n              description: \"Amazon EC2 Auto Scaling POST_ Attach Instances\"\n              call: \"ec2-auto-scaling.POST_AttachInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/resource\n          name: GET_AttachLoadBalancerTargetGroups\n          description: \"Amazon EC2 Auto Scaling GET_ Attach Load Balancer Target Groups\"\n          operations:\n            - method:\

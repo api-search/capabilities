@@ -11,48 +11,48 @@ personas: []
 provider_name: Amazon CodeBuild
 provider_slug: amazon-codebuild
 search_terms:
-- build project management and build execution workflows.
-- build automation
-- create project
-- access build and test reports
-- stop build
-- list codebuild test and coverage reports
-- runs and monitors builds for their projects.
-- create a new codebuild build project
+- ci/cd
+- build
+- manages build infrastructure and pipelines.
 - get projects
+- delete project
+- start build
+- access build and test reports
+- testing
+- list all codebuild projects
+- continuous integration
+- get details about specific builds
+- update an existing codebuild project configuration
+- amazon
+- list report groups
+- list codebuild test and coverage reports
+- manage codebuild build projects
+- build project management and build execution workflows.
+- automated compilation, testing, and artifact production.
+- devops
+- DevOps Engineer
+- start and monitor builds
+- list all builds or builds for a specific project
+- list projects
+- list builds for a specific codebuild project
+- list codebuild report groups
+- continuous integration and delivery pipeline management.
+- stop build
+- delete a codebuild project
+- create a new codebuild build project
+- get builds
+- update project
+- stop a running codebuild build
+- aws
+- list reports
+- Developer
+- build automation
+- get details about specific codebuild projects
+- create project
 - list builds
 - list builds for project
-- Developer
-- get details about specific codebuild projects
-- DevOps Engineer
-- manage codebuild build projects
-- list codebuild report groups
-- testing
-- list report groups
-- amazon
-- start build
-- devops
-- delete a codebuild project
-- aws
-- start and monitor builds
-- list builds for a specific codebuild project
-- get builds
-- get details about specific builds
-- continuous integration and delivery pipeline management.
-- list all builds or builds for a specific project
-- stop a running codebuild build
-- ci/cd
-- continuous integration
-- list projects
-- delete project
-- manages build infrastructure and pipelines.
+- runs and monitors builds for their projects.
 - start a new build for a codebuild project
-- build
-- list all codebuild projects
-- automated compilation, testing, and artifact production.
-- list reports
-- update an existing codebuild project configuration
-- update project
 slug: amazon-codebuild-cicd
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeBuild CI/CD\n  description: Unified workflow for DevOps teams to manage build projects, run builds, monitor build status, and integrate with CI/CD pipelines using Amazon CodeBuild.\n  tags:\n  - Amazon\n  - AWS\n  - CI/CD\n  - Build Automation\n  - DevOps\n  - Continuous Integration\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codebuild\n    location: ./shared/codebuild.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codebuild-cicd-api\n    description: Unified REST API for CodeBuild CI/CD operations.\n    resources:\n    - path: /v1/projects\n      name: projects\n      description: Manage CodeBuild build projects\n    - path: /v1/builds\n      name: builds\n      description: Start and monitor builds\n    - path:\
   \ /v1/reports\n      name: reports\n      description: Access build and test reports\n  - type: mcp\n    port: 9090\n    namespace: codebuild-cicd-mcp\n    transport: http\n    description: MCP server for AI-assisted build management.\n    tools:\n    - name: list-projects\n      description: List all CodeBuild projects\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codebuild.listProjects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-projects\n      description: Get details about specific CodeBuild projects\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codebuild.batchGetProjects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-project\n      description: Create a new CodeBuild build project\n      hints:\n        readOnly: false\n        openWorld: false\n      call: codebuild.createProject\n      outputParameters:\n      - type: object\n        mapping:\

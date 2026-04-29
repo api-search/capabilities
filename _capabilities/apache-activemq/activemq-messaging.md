@@ -23,34 +23,34 @@ personas: []
 provider_name: Apache ActiveMQ
 provider_slug: apache-activemq
 search_terms:
-- jms
-- monitoring
-- apache activemq
-- messaging
-- monitor broker jmx attributes.
-- developers integrating applications with activemq for asynchronous messaging.
-- produce and consume messages.
-- send a message to an activemq queue or topic.
-- mqtt
-- send message
-- send a message to a queue or topic.
-- receive a message from an activemq queue or topic.
-- Platform Operator
-- operators monitoring and managing activemq broker health and performance.
-- stomp
-- read a jmx mbean attribute from the activemq broker for monitoring.
-- receive a message from a queue or topic.
-- apache
 - message broker
-- read broker metric
-- unified messaging and monitoring capability for activemq.
-- Application Developer
-- java
-- broker management
+- operators monitoring and managing activemq broker health and performance.
+- apache activemq
+- send message
 - receive message
-- read a broker jmx mbean attribute.
+- monitor broker jmx attributes.
+- read broker metric
+- monitoring
+- broker management
 - amqp
+- Platform Operator
+- jms
+- receive a message from a queue or topic.
+- messaging
 - open source
+- unified messaging and monitoring capability for activemq.
+- mqtt
+- java
+- read a broker jmx mbean attribute.
+- apache
+- Application Developer
+- stomp
+- developers integrating applications with activemq for asynchronous messaging.
+- receive a message from an activemq queue or topic.
+- send a message to an activemq queue or topic.
+- read a jmx mbean attribute from the activemq broker for monitoring.
+- send a message to a queue or topic.
+- produce and consume messages.
 slug: activemq-messaging
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache ActiveMQ Messaging Workflow\n  description: Unified capability for Apache ActiveMQ messaging operations and \n    broker management. Used by application developers and platform operators to \n    send/receive messages and monitor broker health.\n  tags:\n  - Apache ActiveMQ\n  - Messaging\n  - Broker Management\n  - JMS\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    ACTIVEMQ_USERNAME: ACTIVEMQ_USERNAME\n    ACTIVEMQ_PASSWORD: ACTIVEMQ_PASSWORD\ncapability:\n  consumes:\n  - import: activemq-rest\n    location: ./shared/activemq-rest.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: activemq-messaging-api\n    description: Unified REST API for ActiveMQ messaging and management.\n    resources:\n    - path: /v1/messages\n      name: messages\n      description: Produce and consume messages.\n      operations:\n      - method: POST\n        name: send-message\n        description:\
   \ Send a message to a queue or topic.\n        call: activemq-rest.send-message\n        with:\n          destination: rest.destination\n          type: rest.type\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: receive-message\n        description: Receive a message from a queue or topic.\n        call: activemq-rest.receive-message\n        with:\n          destination: rest.destination\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/management/mbeans/{mbean}\n      name: management\n      description: Monitor broker JMX attributes.\n      operations:\n      - method: GET\n        name: read-broker-metric\n        description: Read a broker JMX MBean attribute.\n        call: activemq-rest.read-mbean\n        with:\n          mbean: rest.mbean\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: activemq-messaging-mcp\n\

@@ -15,7 +15,7 @@ description: 'Marketing automation, lifecycle campaigns, audience segmentation, 
 
   '
 domain: marketing
-implementation_count: 7
+implementation_count: 6
 implementations:
 - capability_name: ActiveCampaign Marketing Automation
   capability_slug: marketing-automation
@@ -103,24 +103,9 @@ implementations:
   - Email Marketing
   - Journeys
   tool_count: 16
-- capability_name: Square Customer Engagement
-  capability_slug: customer-engagement
-  capability_url: https://capabilities.apis.io/capabilities/square/customer-engagement/
-  consumed_api_count: 1
-  operation_count: 14
-  provider_name: Square
-  provider_slug: square
-  tags:
-  - Square
-  - Customers
-  - Loyalty
-  - Gift Cards
-  - Bookings
-  - Team Management
-  tool_count: 29
 layout: category
 name: Customer Engagement
-provider_count: 7
+provider_count: 6
 related:
 - messaging
 - crm-sales

@@ -43,64 +43,64 @@ personas: []
 provider_name: Amazon Glue
 provider_slug: amazon-glue
 search_terms:
-- list all data source connections
-- create job
-- list all catalog databases
-- data pipeline
-- create a new etl workflow
-- list crawlers
-- list ml transforms
-- list etl jobs
-- Data Analyst
-- etl job lifecycle management
-- list tables in a data catalog database
-- analytics
-- create a connection to a data source
-- job execution runs
-- start crawler
-- create crawler
-- list all crawlers
-- list all amazon glue etl jobs with status and configuration
-- list all data catalog crawlers
-- list jobs
-- list connections
-- builds and manages etl pipelines and data catalog resources
-- serverless
-- data catalog crawlers
-- Data Engineer
-- list all etl workflow orchestrations
-- uses glue to access and prepare data for analytics
-- list tables
-- check the status of an etl job run
-- create a new etl workflow with triggers and jobs
-- data integration
-- list workflows
-- list all glue ml transforms
-- aws
-- data catalog databases
-- run a crawler to populate the data catalog
-- list all databases in the glue data catalog
-- start a job run
-- create a new crawler
-- list databases
-- create a crawler to discover and catalog data sources
-- etl
-- create etl job
-- create connection
 - etl workflow orchestration
+- list databases
+- list jobs
 - list all workflows
-- amazon glue
-- create a new etl job
-- list data quality results
-- execute an etl job run
-- get job run status
-- list all etl jobs
-- start job run
-- create a new amazon glue etl job
-- data engineering
-- list data quality evaluation results
+- create connection
+- analytics
+- start crawler
 - data catalog
+- run a crawler to populate the data catalog
+- list connections
+- list all etl workflow orchestrations
+- create crawler
+- list workflows
+- create a new amazon glue etl job
+- etl
+- create a new etl job
+- create a new etl workflow with triggers and jobs
+- data engineering
+- list tables in a data catalog database
+- execute an etl job run
+- start a job run
+- serverless
+- list all data catalog crawlers
+- data catalog databases
+- create job
+- list all crawlers
+- create a new etl workflow
+- Data Analyst
+- list tables
+- builds and manages etl pipelines and data catalog resources
+- list data quality evaluation results
+- list all catalog databases
+- create a new crawler
+- create etl job
+- create a connection to a data source
+- list all databases in the glue data catalog
+- uses glue to access and prepare data for analytics
+- etl job lifecycle management
+- data catalog crawlers
+- start job run
+- list all glue ml transforms
+- Data Engineer
+- list all etl jobs
+- list etl jobs
+- list ml transforms
 - create workflow
+- data pipeline
+- list all amazon glue etl jobs with status and configuration
+- get job run status
+- data integration
+- aws
+- create a crawler to discover and catalog data sources
+- list all data source connections
+- job execution runs
+- list data quality results
+- check the status of an etl job run
+- amazon glue
+- list crawlers
 slug: amazon-glue-data-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Glue Data Integration\n  description: >-\n    Workflow capability for data engineers building ETL pipelines with Amazon Glue.\n    Covers job management, crawler configuration, data catalog operations, workflow\n    orchestration, and data quality for serverless data integration.\n  tags:\n    - Amazon Glue\n    - ETL\n    - Data Integration\n    - Data Catalog\n    - Data Engineering\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-glue\n      location: ./shared/amazon-glue.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: glue-data-integration-api\n      description: Unified REST API for Amazon Glue data integration operations.\n      resources:\n        - path: /v1/jobs\n\
   \          name: jobs\n          description: ETL job lifecycle management\n          operations:\n            - method: GET\n              name: list-jobs\n              description: List all ETL jobs\n              call: amazon-glue.GetJobs\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-job\n              description: Create a new ETL job\n              call: amazon-glue.CreateJob\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobName}/runs\n          name: job-runs\n          description: Job execution runs\n          operations:\n            - method: POST\n              name: start-job-run\n              description: Start a job run\n              call: amazon-glue.StartJobRun\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/crawlers\n\

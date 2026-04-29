@@ -44,64 +44,64 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- oci goldengate deployment lifecycle management
-- list deployment backups
-- oci
-- create a new connection for a source or target system
-- create backup
-- create a deployment backup
-- list work requests
-- platform administration
-- cdc
-- create deployment
-- stop deployment
-- list deployments
-- unpublish a stream analytics pipeline
-- data synchronization
-- start deployment
-- get details of a specific oci deployment
-- check status of an asynchronous operation
-- list connections
-- connection management
-- data replication pipelines
-- oracle goldengate
-- list oci goldengate deployments
 - get deployment
-- start a stopped pipeline
-- list data replication pipelines
-- list asynchronous work requests
-- data integration
-- database
-- stream analytics pipeline management
-- async operation tracking
-- cloud management
 - deployment backup management
-- unpublish stream pipeline
-- individual deployment operations
-- create a new oci deployment
-- list ggsa stream analytics pipelines
-- upgrade an oci deployment to a newer version
-- create a new oci goldengate deployment
 - list oci goldengate deployments in a compartment
-- restore deployment
-- enterprise
+- upgrade an oci deployment to a newer version
+- list pipelines
 - create connection
-- upgrade deployment
-- publish a stream analytics pipeline to the spark runtime
-- list database and service connections
-- stop a running oci deployment
-- create pipeline
 - start pipeline
+- publish a stream analytics pipeline to the spark runtime
+- individual deployment operations
+- create a deployment backup
+- list deployment backups
+- data replication pipelines
+- platform administration
+- list connections
+- create a new oci goldengate deployment
+- list database and service connections
+- start a stopped oci deployment
+- async operation tracking
+- create a new data replication pipeline
+- restore a deployment from a backup
+- enterprise
+- cloud management
+- list oci goldengate deployments
+- upgrade deployment
+- restore deployment
 - publish stream pipeline
 - list stream pipelines
-- get deployment details
-- list pipelines
-- start a stopped oci deployment
-- restore a deployment from a backup
-- create a new data replication pipeline
+- data synchronization
+- database
+- check status of an asynchronous operation
+- stream analytics pipeline management
+- list asynchronous work requests
 - get work request
+- list deployments
+- connection management
+- oci goldengate deployment lifecycle management
+- unpublish a stream analytics pipeline
+- create a new connection for a source or target system
+- start deployment
 - real-time replication
+- create a new oci deployment
+- list data replication pipelines
+- get deployment details
+- stop deployment
 - list backups
+- oracle goldengate
+- create deployment
+- get details of a specific oci deployment
+- cdc
+- create pipeline
+- create backup
+- start a stopped pipeline
+- data integration
+- list work requests
+- unpublish stream pipeline
+- stop a running oci deployment
+- list ggsa stream analytics pipelines
+- oci
 slug: cloud-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Cloud Management\"\n  description: \"Unified workflow for managing Oracle GoldenGate cloud deployments in OCI. Combines the OCI Cloud Service API with Stream Analytics for cloud platform administrators managing deployment lifecycle, connections, pipelines, backups, and stream analytics in Oracle Cloud.\"\n  tags:\n    - Oracle GoldenGate\n    - OCI\n    - Cloud Management\n    - Platform Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OCI_API_KEY: OCI_API_KEY\n      GGSA_USERNAME: GGSA_USERNAME\n      GGSA_PASSWORD: GGSA_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-cloud\n      location: ./shared/goldengate-cloud-service.yaml\n    - import: goldengate-stream-analytics\n      location: ./shared/goldengate-stream-analytics.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: cloud-management-api\n      description:\
   \ \"Unified REST API for Oracle GoldenGate cloud deployment management.\"\n      resources:\n        - path: /v1/deployments\n          name: deployments\n          description: \"OCI GoldenGate deployment lifecycle management\"\n          operations:\n            - method: GET\n              name: list-deployments\n              description: \"List OCI GoldenGate deployments\"\n              call: \"goldengate-cloud.list-deployments\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-deployment\n              description: \"Create a new OCI deployment\"\n              call: \"goldengate-cloud.create-deployment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/deployments/{deploymentId}\n          name: deployment-detail\n          description:\

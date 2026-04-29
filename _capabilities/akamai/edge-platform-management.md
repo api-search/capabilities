@@ -23,32 +23,32 @@ personas: []
 provider_name: Akamai
 provider_slug: akamai
 search_terms:
-- network lists and access control for ip and geographic filtering
-- security
-- edgeworkers serverless execution and edgekv storage at the edge
-- platform
-- cloud
-- edge computing
 - list all akamai edgeworker serverless functions
-- list edgeworker identifiers
-- DevOps Engineer
-- manage akamai edge platform including edgeworkers and network lists
-- networks
-- akamai
-- automates akamai configuration deployment via ci/cd pipelines
-- list network lists
-- network list management
-- create edgeworker
 - list all akamai network lists for ip and geographic access control
-- list edgeworkers
-- Platform Engineer
-- edgeworker serverless function management
-- create a new akamai edgeworker serverless function
+- manage akamai edge platform including edgeworkers and network lists
 - network security
-- cdn
+- create a new akamai edgeworker serverless function
+- Platform Engineer
+- network list management
+- list edgeworker identifiers
 - manages akamai property configurations and edge deployments
-- content delivery property management and configuration
+- network lists and access control for ip and geographic filtering
+- edgeworkers serverless execution and edgekv storage at the edge
+- cloud
+- platform
 - platform management
+- create edgeworker
+- DevOps Engineer
+- list network lists
+- edgeworker serverless function management
+- cdn
+- security
+- akamai
+- list edgeworkers
+- content delivery property management and configuration
+- automates akamai configuration deployment via ci/cd pipelines
+- edge computing
+- networks
 slug: edge-platform-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Akamai Edge Platform Management\"\n  description: \"Unified workflow for managing Akamai edge platform resources including EdgeWorkers serverless functions, network lists, and property configurations. For platform engineers and DevOps teams managing Akamai delivery configurations.\"\n  tags:\n    - Akamai\n    - CDN\n    - Edge Computing\n    - Platform Management\n    - Network Security\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AKAMAI_CLIENT_TOKEN: AKAMAI_CLIENT_TOKEN\n      AKAMAI_CLIENT_SECRET: AKAMAI_CLIENT_SECRET\n      AKAMAI_ACCESS_TOKEN: AKAMAI_ACCESS_TOKEN\n      AKAMAI_EDGEGRID_HOST: AKAMAI_EDGEGRID_HOST\ncapability:\n  consumes:\n    - import: akamai-edgeworkers\n      location: ./shared/edgeworkers.yaml\n    - import: akamai-network-lists\n      location: ./shared/network-lists.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: edge-platform-management-api\n\
   \      description: \"Unified REST API for Akamai edge platform management.\"\n      resources:\n        - path: /v1/edgeworkers\n          name: edgeworkers\n          description: \"EdgeWorker serverless function management\"\n          operations:\n            - method: GET\n              name: list-edgeworkers\n              description: \"List EdgeWorker identifiers\"\n              call: \"akamai-edgeworkers.list-edgeworkers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-edgeworker\n              description: \"Create EdgeWorker\"\n              call: \"akamai-edgeworkers.create-edgeworker\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/network-lists\n          name: network-lists\n          description: \"Network list management\"\n          operations:\n            - method: GET\n              name:\

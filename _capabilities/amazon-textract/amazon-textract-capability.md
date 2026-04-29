@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Textract
 provider_slug: amazon-textract
 search_terms:
-- ocr
-- machine learning
 - aws
+- ocr
 - document processing
+- machine learning
 slug: amazon-textract-capability
 source_yaml: 'id: amazon-textract-capability
 

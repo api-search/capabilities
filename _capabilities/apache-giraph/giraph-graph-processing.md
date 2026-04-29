@@ -19,31 +19,31 @@ personas: []
 provider_name: Apache Giraph
 provider_slug: apache-giraph
 search_terms:
-- monitoring
-- bsp
-- big data
 - engineers running large-scale graph algorithms with giraph on hadoop
-- get giraph job
-- get yarn cluster metrics
-- giraph graph processing jobs
-- list all giraph graph processing jobs running on yarn
+- get cluster metrics
+- list all giraph graph processing jobs
 - cluster capacity metrics
 - list jobs
-- monitor giraph graph processing jobs on hadoop yarn
-- hadoop
-- get yarn cluster capacity metrics for running giraph jobs
-- Data Engineer
-- retired
-- graph processing
-- apache giraph
-- apache
 - job status tracking and cluster capacity monitoring
-- list giraph jobs
-- get detailed status of a specific giraph job
 - get metrics
-- list all giraph graph processing jobs
+- apache giraph
+- hadoop
+- list all giraph graph processing jobs running on yarn
+- graph processing
+- retired
+- giraph graph processing jobs
+- list giraph jobs
+- big data
+- monitoring
+- get giraph job
+- get yarn cluster capacity metrics for running giraph jobs
 - iterative bsp graph algorithm execution at scale
-- get cluster metrics
+- monitor giraph graph processing jobs on hadoop yarn
+- get detailed status of a specific giraph job
+- get yarn cluster metrics
+- bsp
+- Data Engineer
+- apache
 - open source
 slug: giraph-graph-processing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Giraph Graph Processing\"\n  description: \"Capability for monitoring Apache Giraph graph processing jobs on Hadoop YARN — tracking job status, completion progress, and cluster capacity. Designed for data engineers running large-scale graph algorithms. Note - Apache Giraph has been retired.\"\n  tags:\n    - Apache Giraph\n    - Graph Processing\n    - Big Data\n    - Hadoop\n    - Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      YARN_RESOURCEMANAGER_URL: YARN_RESOURCEMANAGER_URL\ncapability:\n  consumes:\n    - import: giraph-job\n      location: ./shared/giraph-job.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: giraph-processing-api\n      description: \"REST API for Apache Giraph graph processing job monitoring.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: Giraph graph processing jobs\n \

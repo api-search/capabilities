@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- nginx
-- lua
-- list all backend upstream configurations.
-- list all apisix gateway routes.
-- API Gateway Administrator
-- create consumer
-- list api consumers.
-- create route
-- apache apisix
-- list consumers
-- delete an apisix route.
-- configuration
-- create a new backend upstream with load balancing config.
-- list backend upstreams.
-- route, upstream, consumer, and ssl management workflow.
-- list all gateway routes.
-- traffic management
-- engineers deploying and managing api gateway infrastructure.
-- apache
-- create a new gateway route.
-- list routes
-- create upstream
-- administrators configuring routes, consumers, and security policies.
-- list upstreams
-- api gateway
-- update an existing apisix route.
-- update route
-- create a new apisix route for traffic routing.
-- create a backend upstream.
-- Platform Engineer
-- kubernetes
-- authentication
-- list all api consumers and their plugin configs.
-- create a new api consumer with authentication plugins.
 - create an api consumer.
+- kubernetes
+- lua
+- list all api consumers and their plugin configs.
+- create a new backend upstream with load balancing config.
+- create a new api consumer with authentication plugins.
+- administrators configuring routes, consumers, and security policies.
+- create consumer
+- Platform Engineer
+- engineers deploying and managing api gateway infrastructure.
+- list all backend upstream configurations.
+- create a new apisix route for traffic routing.
+- configuration
+- list backend upstreams.
+- list all gateway routes.
+- API Gateway Administrator
+- api gateway
+- list all apisix gateway routes.
+- list consumers
 - cloud native
+- update an existing apisix route.
+- apache apisix
+- create a backend upstream.
+- nginx
+- list upstreams
+- traffic management
+- create a new gateway route.
+- create route
+- delete an apisix route.
+- list routes
 - delete route
+- list api consumers.
+- route, upstream, consumer, and ssl management workflow.
+- apache
 - open source
+- create upstream
+- update route
+- authentication
 slug: apisix-gateway-config
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache APISIX Gateway Configuration\n  description: Unified capability for configuring and managing Apache APISIX API\n    gateway resources including routes, upstreams, services, consumers, and SSL \n    certificates. Used by platform engineers and API gateway administrators.\n  tags:\n  - Apache APISIX\n  - API Gateway\n  - Configuration\n  - Cloud Native\n  - Traffic Management\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    APISIX_ADMIN_KEY: APISIX_ADMIN_KEY\ncapability:\n  consumes:\n  - import: apisix-admin\n    location: ./shared/apisix-admin.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: apisix-gateway-api\n    description: Unified REST API for APISIX gateway configuration.\n    resources:\n    - path: /v1/routes\n      name: routes\n      operations:\n      - method: GET\n        name: list-routes\n        description: List all gateway routes.\n        call: apisix-admin.list-routes\n\
   \        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-route\n        description: Create a new gateway route.\n        call: apisix-admin.create-route\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/upstreams\n      name: upstreams\n      operations:\n      - method: GET\n        name: list-upstreams\n        description: List backend upstreams.\n        call: apisix-admin.list-upstreams\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-upstream\n        description: Create a backend upstream.\n        call: apisix-admin.create-upstream\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/consumers\n      name: consumers\n      operations:\n      - method: GET\n        name: list-consumers\n        description: List API consumers.\n        call: apisix-admin.list-consumers\n \

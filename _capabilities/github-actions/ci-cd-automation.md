@@ -75,89 +75,89 @@ personas: []
 provider_name: GitHub Actions
 provider_slug: github-actions
 search_terms:
-- list repository workflows
-- get a workflow run
-- get a specific workflow by id or filename
-- delete a workflow artifact
-- list secrets
-- disable a workflow
+- ci/cd
+- delete run
+- re-run only the failed jobs from a workflow run
+- repository variables
+- list runners
+- list artifacts
+- jobs for a workflow run
+- repository secrets
 - get a specific workflow
+- delete runner
+- delete a repository secret
+- devops
+- get a specific workflow by id or filename
+- dispatch
+- single workflow
+- self-hosted runners
+- list repository secrets
+- list self-hosted runners
+- trigger a workflow dispatch
+- cancel
+- single artifact
+- automation
+- list secrets
+- action caches
+- rerun
+- list workflows
+- get a workflow run
+- cancel a running workflow
+- get a specific self-hosted runner
+- list jobs for a workflow run
+- workflow runs
+- create or update secret
+- get runner
+- workflows
+- cancel a workflow run
+- delete secret
+- list repository secrets (names only, not values)
+- trigger a workflow dispatch event
+- delete variable
+- list repository workflows
+- trigger workflow
+- get details of a specific workflow run
+- delete artifact
+- list variables
+- single workflow run
+- get workflow
+- remove a self-hosted runner from a repository
 - disable workflow
+- rerun failed jobs
+- trigger a workflow
+- enable workflow
+- github
+- create variable
+- get a specific job from a workflow run
 - actions
+- create or update a repository secret
+- get an artifact
 - delete a specific cache entry
+- list actions caches for a repository
+- list jobs
+- list workflow runs for a repository
+- delete cache
+- disable a workflow
+- list repository variables
+- list caches
+- get run
+- workflow artifacts
+- delete a workflow artifact
+- get artifact
+- list workflow runs
+- delete a workflow run
+- create a repository variable
+- get job
 - list self-hosted runners for a repository
 - delete a repository variable
-- delete a workflow run
-- single workflow
-- list actions caches for a repository
-- create or update secret
-- get run
-- repository secrets
-- create a repository variable
-- ci/cd
-- list jobs for a workflow run
-- get details of a specific workflow run
-- trigger a workflow dispatch
-- dispatch
-- github
-- rerun failed jobs
-- self-hosted runners
-- get a specific job from a workflow run
-- get details of a specific artifact
+- enable a workflow
 - cancel run
-- delete an artifact
-- list runners
-- single artifact
-- list repository secrets (names only, not values)
-- list workflows
-- workflows
-- automation
-- get job
-- list workflow artifacts for a repository
-- cancel a running workflow
-- cancel
-- get workflow
-- action caches
-- delete cache
-- trigger workflow
-- delete artifact
-- delete run
-- list repository variables
-- trigger a workflow
-- single workflow run
-- remove a self-hosted runner from a repository
-- trigger a workflow dispatch event
-- list self-hosted runners
-- devops
-- get an artifact
-- cancel a workflow run
-- get artifact
-- get runner
-- repository variables
-- rerun
-- list caches
-- delete secret
-- list workflow runs
-- re-run only the failed jobs from a workflow run
-- workflow runs
-- delete a repository secret
-- re-run a workflow
-- list workflow runs for a repository
-- jobs for a workflow run
-- list jobs
-- create variable
-- list repository secrets
+- get details of a specific artifact
 - list runs
 - rerun workflow
-- create or update a repository secret
-- list variables
-- list artifacts
-- enable workflow
-- delete variable
-- workflow artifacts
-- get a specific self-hosted runner
-- delete runner
-- enable a workflow
+- list workflow artifacts for a repository
+- delete an artifact
+- re-run a workflow
 slug: ci-cd-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Actions CI/CD Automation\"\n  description: \"Unified capability for GitHub Actions CI/CD automation combining workflow management, run monitoring, artifact handling, secrets/variables management, and runner administration. Used by DevOps engineers, platform teams, and release managers.\"\n  tags:\n    - GitHub\n    - Actions\n    - CI/CD\n    - Automation\n    - DevOps\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: actions\n      location: ./shared/actions.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ci-cd-automation-api\n      description: \"Unified REST API for GitHub Actions CI/CD automation.\"\n      resources:\n        - path: /v1/workflows\n          name: workflows\n          description: \"Workflows\"\n          operations:\n            - method: GET\n         \
   \     name: list-workflows\n              description: \"List repository workflows\"\n              call: \"actions.list-repo-workflows\"\n              with:\n                owner: \"rest.owner\"\n                repo: \"rest.repo\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows/{workflow_id}\n          name: workflow\n          description: \"Single workflow\"\n          operations:\n            - method: GET\n              name: get-workflow\n              description: \"Get a specific workflow\"\n              call: \"actions.get-workflow\"\n              with:\n                owner: \"rest.owner\"\n                repo: \"rest.repo\"\n                workflow_id: \"rest.workflow_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows/{workflow_id}/dispatch\n          name: workflow-dispatch\n          description: \"\

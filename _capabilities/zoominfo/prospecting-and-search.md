@@ -54,53 +54,53 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- search zoominfo scoops for buying signals like funding, expansion, and leadership changes.
-- get available revenue range lookup values.
-- lead generation
-- search for contacts matching prospecting criteria.
-- search for buying signals and scoops.
-- get available industry code lookup values.
-- get management levels
-- data
-- reference data for job functions.
-- get departments
-- search intent
-- marketing intelligence
-- get job functions
-- search companies
-- contacts
-- search for companies matching prospecting criteria.
-- search zoominfo news for recent company events and announcements.
-- prospecting
-- get industries
-- get available job function lookup values for filtering contact searches.
 - reference data for contact departments.
-- get available job function lookup values.
-- get available management level lookup values.
-- get available intent topic lookup values.
-- reference data for management levels.
-- contact database
-- get available department lookup values.
-- search contacts
-- b2b
-- reference data for industry codes.
-- get revenue ranges
-- b2b data
-- sales intelligence
-- reference data for intent topics.
 - search news
-- company data
-- reference data for revenue ranges.
-- search for company news articles.
-- zoominfo
-- search for buyer intent signals.
+- search scoops
+- contacts
+- search for contacts matching prospecting criteria.
+- search zoominfo news for recent company events and announcements.
+- get available management level lookup values.
+- contact database
+- lead generation
+- search zoominfo contacts by criteria such as job title, company, location, and more.
+- b2b data
+- search companies
+- search intent
+- get available department lookup values.
+- reference data for management levels.
+- get available revenue range lookup values.
+- sales intelligence
+- get available industry code lookup values for filtering searches.
+- search for buying signals and scoops.
+- reference data for intent topics.
+- marketing intelligence
+- prospecting
 - get available department lookup values for filtering contact searches.
 - search zoominfo companies by criteria such as industry, revenue, employee count, and more.
-- get intent topics
-- get available industry code lookup values for filtering searches.
-- search zoominfo contacts by criteria such as job title, company, location, and more.
+- search contacts
+- search for companies matching prospecting criteria.
+- search for buyer intent signals.
+- get available job function lookup values.
+- zoominfo
+- get job functions
+- search for company news articles.
+- reference data for industry codes.
+- get departments
 - search zoominfo intent data to identify companies actively researching topics.
-- search scoops
+- get management levels
+- search zoominfo scoops for buying signals like funding, expansion, and leadership changes.
+- reference data for job functions.
+- get intent topics
+- get available intent topic lookup values.
+- get available job function lookup values for filtering contact searches.
+- get revenue ranges
+- reference data for revenue ranges.
+- b2b
+- get industries
+- data
+- company data
+- get available industry code lookup values.
 slug: prospecting-and-search
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Prospecting And Search\"\n  description: \"Unified capability for B2B prospecting workflows combining contact search, company search, intent signals, news, and scoops. Used by sales development reps and account executives to identify and prioritize target accounts and contacts.\"\n  tags:\n    - ZoomInfo\n    - Prospecting\n    - Sales Intelligence\n    - B2B Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo\n      location: ./shared/zoominfo.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: prospecting-and-search-api\n      description: \"Unified REST API for B2B prospecting and search workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"Search for\
   \ contacts matching prospecting criteria.\"\n          operations:\n            - method: POST\n              name: search-contacts\n              description: \"Search ZoomInfo contacts by criteria such as job title, company, location, and more.\"\n              call: \"zoominfo.search-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/companies\n          name: companies\n          description: \"Search for companies matching prospecting criteria.\"\n          operations:\n            - method: POST\n              name: search-companies\n              description: \"Search ZoomInfo companies by criteria such as industry, revenue, employee count, and more.\"\n              call: \"zoominfo.search-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/scoops\n          name: scoops\n          description: \"Search for buying signals\

@@ -47,67 +47,67 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
+- get datasources for a dataset
+- get report pages
+- individual dataset operations
+- get dashboard tiles
+- list dashboards
+- delete a dataset
+- get dataset refresh history
+- get dataset
+- create a new workspace
+- delete dataset
+- analytics
+- trigger a dataset refresh
 - list all power bi reports
+- list all datasets
+- gateway management
+- get report details by id
+- list data gateways
 - list all reports
+- list gateways
+- list datasets
 - list workspace users
-- get gateway
+- create a new dataset
+- clone a report
 - get gateway details
-- get dashboard details
+- get dashboard
+- get tiles for a dashboard
+- visualization
+- clone report
+- list workspaces
 - list all power bi datasets
 - create a dataset
-- get dashboard
-- power bi
-- analytics
-- get workspace users
-- individual dataset operations
-- get dataset
-- create a dashboard
-- gateway management
-- create a new dashboard
-- create workspace
-- dashboard management
-- get dataset refresh history
-- list workspaces
-- create dashboard
-- get report
-- dashboards
-- visualization
 - get datasources
-- get tiles for a dashboard
-- refresh dataset
+- get report
 - get pages for a report
-- get dashboard tiles
-- clone a report
-- get datasources for a dataset
-- list dashboards
-- list gateways
+- get gateway
+- create a new dashboard
 - export report
-- get dataset details
-- get refresh history
-- get dataset details by id
-- data analysis
-- create dataset
-- report management
-- delete dataset
-- list all datasets
-- trigger a dataset refresh
-- get report pages
-- clone report
-- workspace management
-- export a report
-- create a new workspace
-- business intelligence
-- delete a dataset
-- reporting
-- list all workspaces
 - get gateway datasources
-- create a new dataset
+- dashboard management
+- report management
+- power bi
+- reporting
+- workspace management
+- data analysis
+- create dashboard
+- get workspace users
 - dataset management
-- get report details by id
-- list all dashboards
+- list all workspaces
+- export a report
+- get dashboard details
+- create workspace
+- get refresh history
+- refresh dataset
+- create a dashboard
+- create dataset
 - list reports
-- list data gateways
-- list datasets
+- list all dashboards
+- dashboards
+- business intelligence
+- get dataset details by id
+- get dataset details
 slug: analytics-and-reporting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Power BI Analytics and Reporting\"\n  description: \"Unified workflow for Power BI analytics operations including dataset management, report creation and distribution, dashboard monitoring, workspace administration, and gateway configuration. Used by BI analysts, report developers, and Power BI administrators.\"\n  tags:\n    - Power BI\n    - Analytics\n    - Business Intelligence\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_BI_ACCESS_TOKEN: POWER_BI_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: power-bi\n      location: ./shared/power-bi-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: power-bi-analytics-api\n      description: \"Unified REST API for Power BI analytics and reporting.\"\n      resources:\n        - path: /v1/datasets\n          name: datasets\n          description: \"Dataset management\"\n \
   \         operations:\n            - method: GET\n              name: list-datasets\n              description: \"List all datasets\"\n              call: \"power-bi.get-datasets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dataset\n              description: \"Create a dataset\"\n              call: \"power-bi.create-dataset\"\n              with:\n                name: \"rest.name\"\n                tables: \"rest.tables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets/{datasetId}\n          name: dataset\n          description: \"Individual dataset operations\"\n          operations:\n            - method: GET\n              name: get-dataset\n              description: \"Get dataset details\"\n              call: \"power-bi.get-dataset\"\n              with:\n                datasetId: \"\

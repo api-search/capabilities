@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- delete an application registration.
-- get application
-- remove a member from a group.
-- register a new application.
-- entra
-- list all groups.
-- update user properties.
-- update user
-- delete a user from the directory.
-- get service principal
-- list users
-- create user
-- list service principals
-- azure ad
-- get user
-- service principal management.
-- authentication
-- update group properties.
-- get group details.
-- network security
-- delete a service principal.
-- add a member to a group.
-- group management.
-- list groups
+- update service principal properties.
 - list applications
+- update application properties.
+- application registration management.
+- zero trust
+- delete an application registration.
+- list all groups.
+- user group membership.
+- delete an application.
+- individual service principal management.
+- delete a user from the directory.
+- network security
+- list all applications.
+- access management
+- entra
+- security
+- list group members.
+- list groups and roles a user belongs to.
+- remove a member from a group.
+- get user properties by id.
+- authentication
+- list all groups in the directory.
+- identity
+- create user
+- directory management
+- list all application registrations.
+- individual group management.
+- get application
+- group membership management.
+- get service principal details.
+- delete service principal
+- create group
+- remove group member
+- get group details.
+- create application
+- list user memberships
+- list all users in microsoft entra directory.
+- update group
+- create a new service principal.
+- get user
+- update service principal
+- individual user management.
+- create service principal
+- get service principal
+- azure ad
+- create a new user in the directory.
 - create a new user.
+- service principal management.
+- list service principals
+- delete a service principal.
+- user account management.
+- list groups
+- delete a user.
+- list all users in the directory.
+- add a member to a group.
+- add group member
+- update user properties.
+- list members of a group.
 - get application details.
 - delete application
+- register a new application.
 - microsoft
-- list all users in the directory.
-- delete a user.
-- list groups and roles a user belongs to.
-- access management
-- individual user management.
-- list all users in microsoft entra directory.
-- update application properties.
-- individual service principal management.
-- user account management.
-- update service principal
-- user group membership.
 - list all service principals.
-- microsoft entra
-- group membership management.
-- directory management
-- update service principal.
-- create service principal
-- update application
-- update service principal properties.
-- list user memberships
-- security
-- individual group management.
-- get user details.
-- list all groups in the directory.
-- delete user
-- list all application registrations.
-- delete group
-- remove group member
-- delete service principal
-- application registration management.
-- individual application management.
-- create application
-- identity
-- identity governance
-- list all applications.
-- update group
-- create a new group.
-- delete a group.
-- get group
-- list group members
-- list group members.
-- create group
-- create a new service principal.
-- zero trust
-- add group member
 - list user group memberships.
-- list members of a group.
-- get user properties by id.
-- delete an application.
-- create a new user in the directory.
-- get service principal details.
+- list group members
+- delete user
+- update application
+- microsoft entra
+- delete a group.
+- get user details.
+- individual application management.
+- update service principal.
+- update user
+- delete group
+- identity governance
+- get group
+- create a new group.
+- update group properties.
+- list users
+- group management.
 slug: identity-and-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Entra Identity and Access Management\"\n  description: \"Unified workflow for managing identity and access including users, groups, applications, and service principals in Microsoft Entra ID. Used by IT administrators and identity engineers.\"\n  tags:\n    - Microsoft Entra\n    - Identity\n    - Access Management\n    - Directory Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_ENTRA_ACCESS_TOKEN: MICROSOFT_ENTRA_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: entra-graph\n      location: ./shared/graph-identity.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: entra-iam-api\n      description: \"Unified REST API for Microsoft Entra identity and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User account management.\"\n          operations:\n  \
   \          - method: GET\n              name: list-users\n              description: \"List all users in the directory.\"\n              call: \"entra-graph.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user.\"\n              call: \"entra-graph.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{id}\n          name: user-details\n          description: \"Individual user management.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details.\"\n              call: \"entra-graph.get-user\"\n              with:\n                user-id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method:\

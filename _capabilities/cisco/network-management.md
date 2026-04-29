@@ -18,24 +18,24 @@ personas: []
 provider_name: Cisco
 provider_slug: cisco
 search_terms:
-- collaboration
-- list meraki organizations
-- network administrators managing cisco infrastructure
-- cisco
-- networks
-- network management
-- list networks in organization
-- sd-wan
+- list devices
 - networking
-- list organizations
-- network organizations
-- list devices in network
 - security
 - Network Admin
+- list organizations
 - list networks
+- list networks in organization
+- list devices in network
+- network organizations
 - unified network management combining meraki and other cisco apis
-- list devices
+- cisco
+- networks
 - enterprise
+- list meraki organizations
+- collaboration
+- network administrators managing cisco infrastructure
+- network management
+- sd-wan
 slug: network-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cisco Network Management\"\n  description: \"Unified network management workflow combining Meraki, Catalyst Center, and SD-WAN APIs for network administrators.\"\n  tags:\n    - Cisco\n    - Network Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MERAKI_API_KEY: MERAKI_API_KEY\n\ncapability:\n  consumes:\n    - import: meraki\n      location: ./shared/meraki.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: network-management-api\n      description: \"Unified REST API for Cisco network management.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description: \"Network organizations\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List organizations\"\n              call: \"meraki.list-organizations\"\n        - path: /v1/networks\n\
   \          name: networks\n          description: \"Networks\"\n          operations:\n            - method: GET\n              name: list-networks\n              description: \"List networks\"\n              call: \"meraki.list-networks\"\n\n    - type: mcp\n      port: 9090\n      namespace: network-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted network management.\"\n      tools:\n        - name: list-organizations\n          description: \"List Meraki organizations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"meraki.list-organizations\"\n        - name: list-networks\n          description: \"List networks in organization\"\n          hints:\n            readOnly: true\n          call: \"meraki.list-networks\"\n        - name: list-devices\n          description: \"List devices in network\"\n          hints:\n            readOnly: true\n          call: \"meraki.list-devices\"\n"

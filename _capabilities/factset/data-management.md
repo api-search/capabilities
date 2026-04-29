@@ -27,36 +27,36 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
-- get streaming
-- get direct streaming data.
-- get exchange datafeed model.
-- list datafeeds
-- get prog env
-- standard datafeed.
-- list datafeeds.
-- list databases.
-- data management
-- factset
-- financial
-- get standard datafeed
-- financial data
 - investment analytics
-- market data
+- list datafeeds.
 - list databases
-- etl
-- list ofdb databases.
-- get content feeds dictionary.
-- list ofdb
-- get content feeds
 - get programmatic environment.
-- portfolio analytics
-- datafeed
-- get exchange datafeed snapshot.
-- get xdf snapshot
-- ofdb database management.
-- get xdf model
 - get standard datafeed.
+- list ofdb
+- etl
+- financial
+- get direct streaming data.
+- datafeed
+- get standard datafeed
+- get content feeds
+- ofdb database management.
+- get xdf snapshot
+- list ofdb databases.
+- financial data
+- get xdf model
+- get content feeds dictionary.
+- get prog env
+- list databases.
+- portfolio analytics
+- get streaming
+- factset
+- market data
+- get exchange datafeed snapshot.
+- standard datafeed.
+- get exchange datafeed model.
+- research
+- data management
+- list datafeeds
 slug: data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Data Management\"\n  description: \"Unified workflow for data management including custom databases, standard datafeeds, exchange datafeeds, content feeds, and programmatic environments. Used by data engineers.\"\n  tags:\n    - FactSet\n    - Data Management\n    - Datafeed\n    - ETL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-ofdb\n      location: ./shared/ofdb.yaml\n    - import: factset-sdf\n      location: ./shared/standard-datafeed.yaml\n    - import: factset-cfd\n      location: ./shared/content-feeds-data-dictionary.yaml\n    - import: factset-xdf-model\n      location: ./shared/exchange-datafeed-data-model.yaml\n    - import: factset-xdf-entire\n      location: ./shared/exchange-datafeed-snapshot-api-entire-exchange.yaml\n   \
   \ - import: factset-xdf-symbol\n      location: ./shared/exchange-datafeed-snapshot-api-symbol-list.yaml\n    - import: factset-dst\n      location: ./shared/direct-streaming-of-transaction-messages.yaml\n    - import: factset-prog\n      location: ./shared/programmatic-environment.yaml\n    - import: factset-prb\n      location: ./shared/portfolio-reporting-batcher.yaml\n\n  exposes:\n    - type: rest\n      port: 8090\n      namespace: data-management-api\n      description: \"Unified REST API for data management.\"\n      resources:\n        - path: /v1/databases\n          name: databases\n          description: \"OFDB database management.\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List databases.\"\n              call: \"factset-ofdb.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datafeeds\n          name: datafeeds\n         \

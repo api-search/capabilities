@@ -35,49 +35,49 @@ personas: []
 provider_name: 42Crunch
 provider_slug: 42crunch
 search_terms:
-- list scans
-- DevSecOps Engineer
-- get the current status of a specific api conformance scan
-- security
-- service health check
-- run api scan
-- get the current status of a specific api conformance scan job (started, active, succeeded, failed, unknown)
-- retrieve execution logs from an api conformance scan job to diagnose failures or review results
-- security professionals managing api conformance testing, reviewing scan results, and ensuring apis meet security standards before and after deployment.
-- cancel api scan
-- check the health status of the 42crunch scan manager service to verify availability
-- platform
-- cancel and remove a specific api conformance scan job
-- Security Team
-- managing containerized workloads for api scan execution
-- get scan logs
-- start a new 42crunch api conformance scan job on kubernetes using a scan token from the 42crunch platform
-- list all api conformance scan jobs including their current status (started, active, succeeded, failed)
-- conformance scanning
-- check or remove a specific scan job
-- check health
-- openapi
-- retrieve execution logs from an api conformance scan
-- validating api runtime behavior against openapi contract specifications
-- run scan
-- cancel scan
-- scanning
-- workflow for devsecops engineers running automated api conformance scans on kubernetes with ci/cd pipeline integration.
-- get scan status
-- check scanner health
-- engineers embedding api security scanning into ci/cd pipelines and automating conformance testing as part of the development workflow.
-- access scan execution logs
-- kubernetes
-- ci/cd
-- start a new api conformance scan job on kubernetes
-- manage api conformance scan jobs
-- devsecops
-- check the scan manager service health
-- list all active and completed api conformance scans
-- list api scans
 - cancel and remove a specific api conformance scan job from the kubernetes cluster
-- ensuring apis are secure and compliant with security standards
+- ci/cd
+- run api scan
+- kubernetes
+- conformance scanning
+- get the current status of a specific api conformance scan job (started, active, succeeded, failed, unknown)
+- cancel api scan
+- security professionals managing api conformance testing, reviewing scan results, and ensuring apis meet security standards before and after deployment.
+- retrieve execution logs from an api conformance scan job to diagnose failures or review results
+- list all api conformance scan jobs including their current status (started, active, succeeded, failed)
+- list scans
+- access scan execution logs
+- check the health status of the 42crunch scan manager service to verify availability
+- get scan status
+- Security Team
+- workflow for devsecops engineers running automated api conformance scans on kubernetes with ci/cd pipeline integration.
 - api security
+- check health
+- service health check
+- check the scan manager service health
+- cancel scan
+- get the current status of a specific api conformance scan
+- platform
+- ensuring apis are secure and compliant with security standards
+- validating api runtime behavior against openapi contract specifications
+- get scan logs
+- start a new api conformance scan job on kubernetes
+- DevSecOps Engineer
+- manage api conformance scan jobs
+- check scanner health
+- openapi
+- cancel and remove a specific api conformance scan job
+- list api scans
+- check or remove a specific scan job
+- security
+- managing containerized workloads for api scan execution
+- start a new 42crunch api conformance scan job on kubernetes using a scan token from the 42crunch platform
+- run scan
+- devsecops
+- list all active and completed api conformance scans
+- engineers embedding api security scanning into ci/cd pipelines and automating conformance testing as part of the development workflow.
+- scanning
+- retrieve execution logs from an api conformance scan
 slug: api-security-scanning
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"42Crunch API Security Scanning\"\n  description: >-\n    Workflow capability for DevSecOps engineers and security teams running automated\n    API conformance scans on Kubernetes. Combines scan job management and log\n    retrieval into a unified interface for CI/CD pipeline integration, on-premises\n    security testing, and runtime compliance validation.\n  tags:\n    - API Security\n    - Conformance Scanning\n    - Kubernetes\n    - DevSecOps\n    - CI/CD\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      SCAN_MANAGER_URL: SCAN_MANAGER_URL\n\ncapability:\n  consumes:\n    - import: scand-manager\n      location: ./shared/scand-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-security-scanning-api\n      description: \"Unified REST API for 42Crunch API security scanning workflows.\"\n      resources:\n        - path: /v1/scans\n         \
   \ name: scans\n          description: \"Manage API conformance scan jobs\"\n          operations:\n            - method: GET\n              name: list-scans\n              description: \"List all active and completed API conformance scans\"\n              call: \"scand-manager.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: run-scan\n              description: \"Start a new API conformance scan job on Kubernetes\"\n              call: \"scand-manager.create-job\"\n              with:\n                token: \"rest.token\"\n                name: \"rest.name\"\n                expirationTime: \"rest.expirationTime\"\n                platformService: \"rest.platformService\"\n                scandImage: \"rest.scandImage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/scans/{name}\n          name: scan\n\

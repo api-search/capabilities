@@ -18,22 +18,22 @@ personas: []
 provider_name: Amazon Augmented AI
 provider_slug: amazon-augmented-ai
 search_terms:
-- human in the loop
-- aws
-- start human loop
-- list human review loops
-- get the current status and output of a specific human review loop.
-- human review loop management
+- list all human review loops to track review progress and status.
+- stop an in-progress human review loop when review is no longer needed.
+- amazon augmented ai
 - start a human review loop
 - initiate human review of an ml prediction by starting a new human loop.
-- machine learning
-- amazon augmented ai
-- stop an in-progress human review loop when review is no longer needed.
-- list human loops
-- stop human loop
-- describe human loop
 - ai review
-- list all human review loops to track review progress and status.
+- describe human loop
+- stop human loop
+- human in the loop
+- aws
+- list human loops
+- get the current status and output of a specific human review loop.
+- human review loop management
+- start human loop
+- machine learning
+- list human review loops
 slug: human-review-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Human Review Workflow\n  description: Workflow capability for managing human-in-the-loop review of machine learning predictions using Amazon Augmented AI.\n  tags:\n    - Amazon Augmented AI\n    - Human In The Loop\n    - Machine Learning\n    - AI Review\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: a2i\n    from: shared/a2i-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: human-review-rest\n      resources:\n        - path: /v1/human-loops\n          name: human-loops\n          description: Human review loop management\n          operations:\n            - method: POST\n              name: start-human-loop\n              description: Start a human review loop\n              call: \"a2i.start-human-loop\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n       \
   \       name: list-human-loops\n              description: List human review loops\n              call: \"a2i.list-human-loops\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: human-review-mcp\n      transport: http\n      tools:\n        - name: start-human-loop\n          description: Initiate human review of an ML prediction by starting a new human loop.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"a2i.start-human-loop\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-human-loops\n          description: List all human review loops to track review progress and status.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"a2i.list-human-loops\"\n          outputParameters:\n            - type: object\n              mapping: \"\

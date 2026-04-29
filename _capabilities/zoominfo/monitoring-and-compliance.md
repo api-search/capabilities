@@ -43,46 +43,46 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- monitoring
-- delete a webhook subscription.
-- compliance
 - get available webhook subscription types.
-- lead generation
-- api usage tracking.
-- data
-- list all configured webhook subscriptions.
-- marketing intelligence
-- contacts
-- validate a webhook target url.
-- validate target url
-- get api usage data and consumption metrics.
-- available webhook subscription types.
-- update webhook
-- get usage
 - api usage
-- webhook subscription management.
+- list all configured webhook subscriptions.
+- delete a webhook subscription.
+- validate a webhook target url is reachable.
+- contacts
 - contact database
 - individual webhook management.
-- b2b
-- create a new webhook subscription for data change notifications.
+- lead generation
 - data compliance operations.
-- get subscription types
-- webhooks
+- available webhook subscription types.
+- validate a webhook target url.
 - b2b data
-- webhook target url validation.
-- check data compliance status for specified contacts.
+- webhooks
 - sales intelligence
-- check compliance
-- check compliance status for specified contacts.
-- company data
+- marketing intelligence
+- check data compliance status for specified contacts.
 - create a new webhook subscription.
-- list webhooks
+- monitoring
 - zoominfo
+- compliance
+- validate target url
 - create webhook
-- validate a webhook target url is reachable.
+- get usage
+- check compliance
+- webhook target url validation.
 - get api usage data.
+- get api usage data and consumption metrics.
+- webhook subscription management.
 - list all webhook subscriptions.
+- b2b
+- get subscription types
+- data
+- update webhook
+- list webhooks
+- company data
 - update an existing webhook subscription.
+- create a new webhook subscription for data change notifications.
+- api usage tracking.
+- check compliance status for specified contacts.
 - delete webhook
 slug: monitoring-and-compliance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Monitoring And Compliance\"\n  description: \"Unified capability for monitoring and compliance workflows combining webhook management, API usage tracking, and compliance operations. Used by platform admins and data governance teams to manage data monitoring, ensure compliance, and track API consumption.\"\n  tags:\n    - ZoomInfo\n    - Monitoring\n    - Compliance\n    - Webhooks\n    - API Usage\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo\n      location: ./shared/zoominfo.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: monitoring-and-compliance-api\n      description: \"Unified REST API for monitoring and compliance workflows.\"\n      resources:\n        - path: /v1/webhooks\n          name: webhooks\n\

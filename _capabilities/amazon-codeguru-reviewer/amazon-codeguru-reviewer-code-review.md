@@ -11,36 +11,36 @@ provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
 - list repositories associated with codeguru reviewer
-- developer tools
-- create a code review
-- Security Engineer
-- machine learning
+- describe repository association
+- get details about a code review
+- create code review
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
 - submit feedback on a code review recommendation
 - list recommendations
 - devops engineer persona.
-- security
-- list code reviews for a repository
-- get details about a repository association
-- developer persona.
-- list code reviews
-- code review
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
-- Developer
-- DevOps Engineer
-- associate a repository for code review
-- get details about a code review
-- describe repository association
-- describe code review
 - amazon
-- devops
-- aws
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- get details about a repository association
 - list recommendations from a code review
-- list repository associations
-- associate repository
-- security engineer persona.
-- create code review
+- developer persona.
+- Security Engineer
 - put recommendation feedback
+- devops
+- describe code review
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- DevOps Engineer
+- list code reviews for a repository
+- security engineer persona.
+- associate a repository for code review
+- developer tools
+- associate repository
+- code review
+- security
+- list repository associations
+- aws
+- Developer
+- create a code review
+- list code reviews
+- machine learning
 slug: amazon-codeguru-reviewer-code-review
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Reviewer Automated Code Review\n  description: Unified workflow for DevOps teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics using Amazon CodeGuru Reviewer.\n  tags:\n  - Amazon\n  - AWS\n  - Code Review\n  - Security\n  - DevOps\n  - Machine Learning\n  - Developer Tools\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codegurureviewer\n    location: ./shared/codegurureviewer.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codegurureviewer-code-review-api\n    description: Unified REST API for Automated Code Review.\n    resources:\n    - path: /v1/listRepositoryAssociations\n      name: list-repository-associations\n      description: List\
   \ repositories associated with CodeGuru Reviewer\n    - path: /v1/associateRepository\n      name: associate-repository\n      description: Associate a repository for code review\n    - path: /v1/describeRepositoryAssociation\n      name: describe-repository-association\n      description: Get details about a repository association\n    - path: /v1/listCodeReviews\n      name: list-code-reviews\n      description: List code reviews for a repository\n  - type: mcp\n    port: 9090\n    namespace: codegurureviewer-code-review-mcp\n    transport: http\n    description: MCP server for AI-assisted Automated Code Review.\n    tools:\n    - name: list-repository-associations\n      description: List repositories associated with CodeGuru Reviewer\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurureviewer.listRepositoryAssociations\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: associate-repository\n      description: Associate\

@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- account management
-- issue a new mastercard card
-- fraud detection
-- get account catalog
-- request updated card credentials
-- card management
-- issue card
-- issue a new card
-- mastercard
-- get payment account reference
-- submit pan-related event for account level management
-- create a physical card fulfillment order
-- bin lookup
-- request updated card credentials for card-on-file
-- payments
-- manage a payment account lifecycle
-- credit cards
-- query payment account reference to link tokens to accounts
-- get billing updates
-- validate account details
-- financial services
-- look up bin information for a card
-- payment account management
-- validate account
-- manage payment account
-- retrieve account catalog data
-- look up bin information
-- submit pan event
-- open banking
-- create fulfillment order
-- card issuance and management
-- lookup bin
-- issuers
-- list bins
-- manage a payment account
-- get card details
-- list available mastercard bins
-- automatic billing updates
 - digital identity
+- payment account management
+- bin lookup
+- request updated card credentials
+- validate account
+- account management
+- payments
+- issue card
+- validate account details
+- open banking
+- get billing updates
+- list available mastercard bins
+- lookup bin
+- manage payment account
+- issue a new mastercard card
+- get account catalog
+- fraud detection
+- retrieve account catalog data
+- manage a payment account lifecycle
 - manage account
+- card issuance and management
+- look up bin information for a card
+- issue a new card
+- query payment account reference to link tokens to accounts
+- list bins
+- get card details
+- issuers
+- submit pan-related event for account level management
+- credit cards
+- create fulfillment order
+- get payment account reference
+- look up bin information
+- financial services
+- automatic billing updates
+- mastercard
+- request updated card credentials for card-on-file
+- submit pan event
+- card management
+- create a physical card fulfillment order
+- manage a payment account
 slug: card-and-account-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Card and Account Management\"\n  description: \"Unified workflow for issuers and card managers to handle card issuance, fulfillment, BIN lookups, billing updates, payment account management, and account catalog services.\"\n  tags:\n    - Mastercard\n    - Card Management\n    - Account Management\n    - Issuers\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: card-issuance\n      location: ./shared/card-issuance.yaml\n    - import: traditional-fulfillment\n      location: ./shared/traditional-fulfillment.yaml\n    - import: bin-lookup\n      location: ./shared/bin-lookup.yaml\n    - import: automatic-billing-updater\n      location: ./shared/automatic-billing-updater.yaml\n    - import: payment-account-mgmt\n      location:\
   \ ./shared/payment-account-management.yaml\n    - import: payment-account-ref\n      location: ./shared/payment-account-reference.yaml\n    - import: account-catalog\n      location: ./shared/account-catalog.yaml\n    - import: universal-spec\n      location: ./shared/universal-spec-submission.yaml\n    - import: account-validation\n      location: ./shared/account-validation.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: card-account-api\n      description: \"Unified REST API for card and account management.\"\n      resources:\n        - path: /v1/cards\n          name: cards\n          description: \"Card issuance and management\"\n          operations:\n            - method: POST\n              name: issue-card\n              description: \"Issue a new card\"\n              call: \"card-issuance.issue-card\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bins\n          name: bins\n\

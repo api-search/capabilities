@@ -35,38 +35,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- identity
-- token introspection and validation.
-- get user info
-- get profile information about the authenticated user.
-- software development
-- exchange token
-- platform
-- code
-- get information about the current oauth access token including scopes and expiration.
-- oauth token exchange and creation.
-- initiate the device authorization grant flow.
-- initiate the device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
 - authorize device
-- device authorization grant flow for input-constrained devices.
-- authorize oauth
+- token revocation.
+- authenticated user profile information.
+- tokens
+- get profile information about the authenticated user.
+- oauth token exchange and creation.
+- initiate the oauth 2.0 authorization code flow.
+- identity
+- oauth 2.0 authorization code flow initiation.
+- software development
+- gitlab
+- initiate the device authorization grant flow.
+- exchange an authorization code, device code, or refresh token for an access token.
+- platform
 - revoke token
+- get information about the current access token.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get profile information about the currently authenticated user.
+- code
+- token introspection and validation.
+- revoke an oauth access or refresh token.
+- device authorization grant flow for input-constrained devices.
+- get user info
 - revoke an existing oauth access or refresh token.
 - get token info
-- source control
-- exchange an authorization code, device code, or refresh token for an access token.
-- revoke an oauth access or refresh token.
-- get profile information about the currently authenticated user.
-- authentication
-- authenticated user profile information.
-- get information about the current access token.
-- oauth 2.0 authorization code flow initiation.
-- tokens
-- token revocation.
-- gitlab
+- exchange token
+- initiate the device authorization grant flow for input-constrained devices.
 - oauth
+- get information about the current oauth access token including scopes and expiration.
+- source control
+- authorize oauth
+- authentication
 slug: authentication-and-identity
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitLab Authentication And Identity\"\n  description: \"Unified capability for GitLab OAuth 2.0 authentication flows and user identity. Enables developers and platform administrators to manage OAuth application authorization, token lifecycle, and authenticated user profile retrieval.\"\n  tags:\n    - Gitlab\n    - Authentication\n    - OAuth\n    - Identity\n    - Tokens\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITLAB_OAUTH_TOKEN: GITLAB_OAUTH_TOKEN\n      GITLAB_CLIENT_ID: GITLAB_CLIENT_ID\n      GITLAB_CLIENT_SECRET: GITLAB_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: gitlab-oauth2\n      location: ./shared/gitlab-oauth2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gitlab-auth-api\n      description: \"Unified REST API for GitLab OAuth 2.0 authentication and identity management.\"\n      resources:\n        - path: /v1/authorizations\n\
   \          name: authorizations\n          description: \"OAuth 2.0 authorization code flow initiation.\"\n          operations:\n            - method: GET\n              name: authorize-oauth\n              description: \"Initiate the OAuth 2.0 authorization code flow.\"\n              call: \"gitlab-oauth2.authorize-oauth\"\n              with:\n                client_id: \"rest.client_id\"\n                redirect_uri: \"rest.redirect_uri\"\n                response_type: \"rest.response_type\"\n                state: \"rest.state\"\n                scope: \"rest.scope\"\n                code_challenge: \"rest.code_challenge\"\n                code_challenge_method: \"rest.code_challenge_method\"\n                root_namespace_id: \"rest.root_namespace_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/device-authorizations\n          name: device-authorizations\n          description: \"Device authorization\

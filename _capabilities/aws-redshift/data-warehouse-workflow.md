@@ -12,27 +12,27 @@ personas: []
 provider_name: AWS Redshift
 provider_slug: aws-redshift
 search_terms:
-- list recent sql statement executions
-- list all redshift clusters in the account
-- big data
+- execute a sql statement against a redshift cluster
+- create a new amazon redshift cluster
+- analytics
+- delete a redshift cluster
+- get the result of a sql statement execution
 - list_sql_statements
+- sql
+- delete_cluster
+- list all redshift clusters in the account
+- list_clusters
+- list recent sql statement executions
+- big data
+- cloud database
+- cancel a running sql statement
 - create_snapshot
 - create_cluster
-- analytics
-- list_clusters
-- cloud database
-- sql
+- cancel_sql_statement
+- execute_sql
 - get_sql_result
 - data warehouse
-- cancel a running sql statement
-- delete a redshift cluster
-- cancel_sql_statement
-- create a new amazon redshift cluster
 - create a snapshot of a redshift cluster
-- get the result of a sql statement execution
-- delete_cluster
-- execute a sql statement against a redshift cluster
-- execute_sql
 slug: data-warehouse-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon Redshift Data Warehouse Workflow\n  description: Workflow capability for managing Amazon Redshift clusters and executing SQL queries for data analytics.\n  tags:\n    - Analytics\n    - Data Warehouse\n    - SQL\n    - Cloud Database\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: redshift\n      location: ./shared/redshift.yaml\n    - import: redshift-data\n      location: ./shared/redshift-data.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-api\n      resources:\n        - label: Create Cluster\n          method: POST\n          path: /clusters\n        - label: List Clusters\n          method: GET\n          path: /clusters\n        - label: Delete Cluster\n          method: DELETE\n\
   \          path: /clusters/{id}\n        - label: Create Snapshot\n          method: POST\n          path: /snapshots\n        - label: Execute SQL\n          method: POST\n          path: /sql/execute\n        - label: Get SQL Result\n          method: GET\n          path: /sql/results/{id}\n        - label: List SQL Statements\n          method: GET\n          path: /sql/statements\n        - label: Cancel SQL Statement\n          method: DELETE\n          path: /sql/statements/{id}\n    - type: mcp\n      port: 9090\n      namespace: workflow-mcp\n      transport: http\n      tools:\n        - name: create_cluster\n          description: Create a new Amazon Redshift cluster\n        - name: list_clusters\n          description: List all Redshift clusters in the account\n        - name: delete_cluster\n          description: Delete a Redshift cluster\n        - name: create_snapshot\n          description: Create a snapshot of a Redshift cluster\n        - name: execute_sql\n       \

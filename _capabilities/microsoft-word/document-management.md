@@ -57,94 +57,94 @@ personas: []
 provider_name: Microsoft Word
 provider_slug: microsoft-word
 search_terms:
-- addin search text
-- list sharing permissions on a document.
-- addin insert table
-- insert html content into the document.
-- documents
-- create document
-- creates and edits word documents, manages formatting and content.
-- search for documents.
-- convert to another format.
-- convert document
-- version history operations.
-- graph list files
-- Content Manager
-- list content controls in the document.
-- manages document templates, reviews, and publishing workflows.
-- graph list permissions
-- openxml convert document
-- graph share document
-- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
-- get metadata for a word document stored in onedrive/sharepoint.
+- list versions
+- insert text into the document body.
 - list version history.
-- graph search documents
-- addin list tables
-- addin get body
-- list tables in the document.
-- word processing
+- addin insert table
 - collaboration
-- document content operations.
-- comment operations.
-- list files and folders in a onedrive directory.
-- get document metadata.
-- list tables.
-- list comments in the document.
-- list comments
-- list permissions.
-- list paragraphs
-- convert a word document to pdf or other format.
-- office
-- list version history of a document.
-- delete a document from onedrive/sharepoint.
-- microsoft word
-- get document
-- addin insert html
-- graph get document
-- list permissions
-- automation
-- create a new folder in onedrive.
-- microsoft 365
-- create a new word document.
-- openxml create document
-- Automation Engineer
-- permission and sharing operations.
-- search for text within the document.
-- create a sharing link for a document.
-- delete a document.
-- delete document
-- graph delete document
-- create a new word document server-side using open xml.
-- add a paragraph to a document server-side.
-- search documents
-- addin list content controls
-- document management
-- get content
-- individual document operations.
 - table operations.
-- search for word documents in onedrive/sharepoint.
-- openxml add paragraph
-- list comments.
-- addin list paragraphs
-- graph create folder
+- graph get document
+- insert a new table into the document.
+- openxml convert document
+- addin search text
+- search for text within the document.
+- graph search documents
+- permission and sharing operations.
+- comment operations.
+- get document
 - addin insert text
 - Document Author
-- insert a new table into the document.
-- insert text into the document body.
-- graph list versions
-- list paragraphs.
-- addin list comments
-- list versions
-- get the body content of an open word document.
-- list tables
-- builds automated document generation and processing pipelines.
-- document lifecycle operations.
+- graph create folder
+- list paragraphs
+- create a new folder in onedrive.
+- create a new word document server-side using open xml.
+- office
 - document search.
-- document format conversion.
+- addin list comments
+- graph share document
+- list comments
 - get document body content.
-- productivity
-- paragraph operations.
+- delete a document.
+- individual document operations.
+- automation
+- addin list tables
+- addin get body
+- list comments.
+- insert html content into the document.
+- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
+- graph list permissions
+- microsoft word
+- list tables in the document.
+- graph list versions
+- get document metadata.
+- list permissions
+- graph list files
+- Automation Engineer
+- search for documents.
+- create document
+- document content operations.
+- document format conversion.
+- builds automated document generation and processing pipelines.
+- microsoft 365
+- document management
+- search documents
+- delete a document from onedrive/sharepoint.
+- list content controls in the document.
+- openxml create document
+- search for word documents in onedrive/sharepoint.
+- list tables
+- convert document
+- creates and edits word documents, manages formatting and content.
+- openxml add paragraph
+- list permissions.
+- version history operations.
+- graph delete document
+- list sharing permissions on a document.
+- documents
+- Content Manager
+- document lifecycle operations.
+- addin insert html
+- addin list paragraphs
+- get the body content of an open word document.
+- delete document
+- convert a word document to pdf or other format.
+- list files and folders in a onedrive directory.
+- get metadata for a word document stored in onedrive/sharepoint.
+- create a new word document.
+- manages document templates, reviews, and publishing workflows.
+- create a sharing link for a document.
+- addin list content controls
 - list all paragraphs in the document.
+- list version history of a document.
+- paragraph operations.
+- list tables.
+- list comments in the document.
+- productivity
+- convert to another format.
+- word processing
+- get content
+- add a paragraph to a document server-side.
+- list paragraphs.
 slug: document-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Word Document Management\"\n  description: \"Unified workflow for Word document creation, editing, collaboration, conversion, and lifecycle management. Combines Microsoft Graph for cloud storage and sharing, JavaScript API for content manipulation, and Open XML SDK for server-side processing. Used by document authors, content managers, and automation engineers.\"\n  tags:\n    - Microsoft Word\n    - Document Management\n    - Collaboration\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n      OFFICE_ADDIN_TOKEN: OFFICE_ADDIN_TOKEN\n      OPENXML_API_KEY: OPENXML_API_KEY\n\ncapability:\n  consumes:\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n    - import: javascript-api\n      location: ./shared/javascript-api.yaml\n    - import: open-xml-sdk\n      location: ./shared/open-xml-sdk.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: word-document-mgmt-api\n      description: \"Unified REST API for Microsoft Word document management across cloud, add-in, and server-side processing.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          description: \"Document lifecycle operations.\"\n          operations:\n            - method: POST\n              name: create-document\n              description: \"Create a new Word document.\"\n              call: \"open-xml-sdk.create-document\"\n              with:\n                filename: \"rest.filename\"\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{document-id}\n          name: document-detail\n          description: \"Individual document operations.\"\n          operations:\n            - method: GET\n              name: get-document\n              description:\

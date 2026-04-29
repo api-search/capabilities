@@ -10,26 +10,26 @@ personas: []
 provider_name: Appwrite
 provider_slug: appwrite
 search_terms:
-- applications
-- lists all registered users in the appwrite project backend
-- developer tools
-- configure and manage a mobile app backend with appwrite
-- administrator managing appwrite project users and configuration
-- database and file storage management
-- developer building ios, android, or web apps with appwrite
+- list databases
+- user authentication and account management
 - provision user
+- cloud function deployment and execution
+- administrator managing appwrite project users and configuration
+- lists all registered users in the appwrite project backend
+- developer building ios, android, or web apps with appwrite
 - backends
 - appwrite
 - creates a new user account in the appwrite backend for a mobile app
-- list databases
-- lists appwrite databases available in the backend project
-- lists file storage buckets configured in the appwrite backend
-- list storage buckets
-- list project users
-- cloud function deployment and execution
-- user authentication and account management
-- mobile
 - backend-as-a-service
+- developer tools
+- mobile
+- applications
+- list project users
+- configure and manage a mobile app backend with appwrite
+- lists file storage buckets configured in the appwrite backend
+- lists appwrite databases available in the backend project
+- database and file storage management
+- list storage buckets
 - open source
 slug: mobile-backend
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Appwrite Mobile Backend\n  description: >-\n    Workflow capability for building mobile and web application backends using Appwrite.\n    Provides AI-assisted management of users, databases, file storage, and backend\n    configuration for developers building with Appwrite as their Backend-as-a-Service.\n  tags:\n    - Appwrite\n    - Mobile\n    - Backend-as-a-Service\n    - Open Source\n    - Developer Tools\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPWRITE_PROJECT_ID: APPWRITE_PROJECT_ID\n      APPWRITE_API_KEY: APPWRITE_API_KEY\n\ncapability:\n  consumes:\n    - import: appwrite\n      location: ./shared/appwrite-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: mobile-backend-mcp\n      transport: http\n      description: MCP server for AI-assisted mobile and web backend management with Appwrite.\n      tools:\n        - name: list-project-users\n\

@@ -55,59 +55,59 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- video
-- background removal operations
-- layer management
-- auto-crop an image to the primary product
-- document-level operations
-- apply resize, flatten, or trim operations to a psd
-- artboard creation
+- text layer editing
+- rendition creation
+- smart object editing
 - edit smart object
-- manage layers
+- photography
+- alpha mask creation
+- auto-crop an image to the primary product
+- artboard creation
+- photoshop
+- edit text layers in a psd
+- automation
+- apply resize, flatten, or trim operations to a psd document
+- image straightening
+- apply resize, flatten, or trim operations to a psd
+- create renditions from a psd or image
+- create artboards in a psd document
+- apply document operations
+- edit text content and styling in psd text layers
+- video
+- straighten image
+- replace smart object content in a psd
+- document-level operations
+- create an alpha mask for an image
 - design
+- manage layers
+- remove the background from an image using adobe sensei ai
+- edit text layers
 - create artboards within a psd document
+- create mask
+- adobe
+- product crop
+- straighten a rotated image
+- auto-crop an image to focus on the primary product
+- create renditions from a psd or image in jpeg, png, or tiff
+- layer management
+- create artboard
+- manage layers in a psd document
 - remove the background from an image
 - graphics
-- photography
-- get the status of an asynchronous photoshop api job
-- replace smart object content in a psd
-- create an alpha mask for an image
-- adobe
-- remove background
-- create renditions from a psd or image
-- creative
-- automatically straighten a rotated image
-- smart object editing
-- image straightening
-- create mask
-- replace smart object content in a psd document
-- photoshop
-- edit text content and styling in psd text layers
-- automation
-- create artboard
-- job status polling
-- rendition creation
-- alpha mask creation
-- get the status of an async photoshop job
-- image processing
 - image editing
-- auto-crop an image to focus on the primary product
-- edit text layers
-- manage layers in a psd document
+- creative
 - create an alpha mask for an image using adobe sensei ai
-- create artboards in a psd document
-- straighten a rotated image
-- straighten image
-- read, add, modify, or delete layers in a psd document
+- remove background
 - product cropping operations
-- apply document operations
-- apply resize, flatten, or trim operations to a psd document
-- edit text layers in a psd
-- text layer editing
-- remove the background from an image using adobe sensei ai
+- automatically straighten a rotated image
+- read, add, modify, or delete layers in a psd document
+- replace smart object content in a psd document
 - get job status
-- product crop
-- create renditions from a psd or image in jpeg, png, or tiff
+- image processing
+- background removal operations
+- get the status of an async photoshop job
+- job status polling
+- get the status of an asynchronous photoshop api job
 - create rendition
 slug: image-editing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Image Editing\"\n  description: \"Automated image editing and processing workflow using the Adobe Photoshop API for background removal, masking, layer management, rendition creation, document operations, and smart object editing. Used by production designers, e-commerce teams, and digital asset managers who need to automate image processing at scale.\"\n  tags:\n    - Adobe\n    - Photoshop\n    - Image Editing\n    - Image Processing\n    - Layer Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PHOTOSHOP_TOKEN: ADOBE_PHOTOSHOP_TOKEN\n\ncapability:\n  consumes:\n    - import: photoshop\n      location: ./shared/photoshop.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: image-editing-api\n      description: \"Unified REST API for automated image editing and processing using Adobe Photoshop.\"\n      resources:\n\

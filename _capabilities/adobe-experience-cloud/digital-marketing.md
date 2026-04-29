@@ -37,65 +37,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- marketing professional using analytics, personalization, and journey tools.
-- adobe experience cloud
-- audience segment management.
-- analytics
-- personalization
-- list activities
-- customer experience
-- personalized offers.
-- CDP Administrator
-- list journeys
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- run an adobe analytics report with dimensions, metrics, and segments.
-- target list activities
-- ajo create offer
-- profile management, audience segmentation, and data ingestion.
-- Data Engineer
-- digital analytics reporting and audience insights.
-- a/b test and personalization activities.
-- list campaign messages in adobe journey optimizer.
-- list content offers in adobe target.
-- analytics report execution.
-- list customer journeys in adobe journey optimizer.
-- ajo list journeys
-- ajo list messages
-- administrator managing customer profiles, segments, and identity resolution.
-- journey orchestration
-- run an adobe analytics report.
-- list segments
-- target list offers
-- list targeting audiences in adobe target.
-- a/b testing and content personalization.
-- unified customer profiles and data management.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- list audience segments in adobe analytics.
-- target audiences.
-- list analytics segments.
 - list target activities.
-- create a new personalized offer in adobe journey optimizer.
-- Digital Marketer
-- analytics list metrics
-- technical marketer integrating experience cloud apis into marketing stack.
-- Marketing Technologist
-- list a/b test and personalization activities in adobe target.
-- target list audiences
-- list journey optimizer offers.
-- ajo list offers
-- run report
 - customer journeys.
-- list personalized offers in adobe journey optimizer.
-- list audiences
-- list target audiences.
-- list journey optimizer journeys.
+- list audience segments in adobe analytics.
+- Marketing Technologist
+- analytics list segments
+- run an adobe analytics report with dimensions, metrics, and segments.
+- analytics
+- a/b test and personalization activities.
+- create a new personalized offer in adobe journey optimizer.
+- list journey optimizer offers.
+- list a/b test and personalization activities in adobe target.
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- run report
+- profile management, audience segmentation, and data ingestion.
 - list offers
 - campaign management
+- run an adobe analytics report.
+- list journeys
 - list available metrics for an adobe analytics report suite.
-- multi-channel customer journey management.
-- run analytics report
 - digital marketing
-- analytics list segments
+- analytics report execution.
+- Digital Marketer
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- technical marketer integrating experience cloud apis into marketing stack.
+- target list activities
+- list customer journeys in adobe journey optimizer.
+- run analytics report
+- analytics list metrics
+- unified customer profiles and data management.
+- target list audiences
+- personalized offers.
+- list content offers in adobe target.
+- list segments
+- list target audiences.
+- ajo create offer
+- CDP Administrator
+- a/b testing and content personalization.
+- list audiences
+- list personalized offers in adobe journey optimizer.
+- list activities
+- ajo list journeys
+- list targeting audiences in adobe target.
+- digital analytics reporting and audience insights.
+- multi-channel customer journey management.
+- Data Engineer
+- customer experience
+- journey orchestration
+- personalization
+- marketing professional using analytics, personalization, and journey tools.
+- ajo list offers
+- audience segment management.
+- ajo list messages
+- list campaign messages in adobe journey optimizer.
+- list analytics segments.
+- target audiences.
+- list journey optimizer journeys.
+- administrator managing customer profiles, segments, and identity resolution.
+- target list offers
+- adobe experience cloud
 slug: digital-marketing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Experience Cloud Digital Marketing\"\n  description: \"Unified workflow capability combining Adobe Analytics, Adobe Target, and Adobe Journey Optimizer for data-driven marketing campaigns, A/B testing, and personalized journey orchestration. Designed for digital marketers and marketing technologists.\"\n  tags:\n    - Adobe Experience Cloud\n    - Digital Marketing\n    - Analytics\n    - Personalization\n    - Journey Orchestration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ANALYTICS_ACCESS_TOKEN: ADOBE_ANALYTICS_ACCESS_TOKEN\n      ADOBE_TARGET_ACCESS_TOKEN: ADOBE_TARGET_ACCESS_TOKEN\n      ADOBE_AJO_ACCESS_TOKEN: ADOBE_AJO_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: analytics-api\n      location: ./shared/analytics-api.yaml\n    - import: target-api\n      location: ./shared/target-api.yaml\n    - import: journey-optimizer\n      location: ./shared/journey-optimizer-api.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: digital-marketing-api\n      description: \"Unified REST API for Adobe Experience Cloud digital marketing — analytics, personalization, journeys, and offers.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Analytics report execution.\"\n          operations:\n            - method: POST\n              name: run-report\n              description: \"Run an Adobe Analytics report.\"\n              call: \"analytics-api.run-report\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments\n          name: segments\n          description: \"Audience segment management.\"\n          operations:\n            - method: GET\n              name: list-segments\n              description: \"List analytics segments.\"\n              call: \"analytics-api.list-segments\"\n              outputParameters:\n      \

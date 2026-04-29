@@ -38,60 +38,60 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- get work contact information
-- get inbox tasks for a worker
-- get a worker by id
-- list positions
-- initiate a worker termination
-- list organizations
 - hcm list organizations
-- workforce management
-- list countries
-- common list countries
-- person list people
-- get a specific worker by id
-- person get home contact
-- list supervisory organizations
-- person data
-- staffing terminate worker
-- hcm list workers
-- worker detail
-- list workers
-- staffing create job change
-- supervisory organizations
-- hcm get worker
-- list all people
-- list all countries
-- hcm get worker inbox tasks
+- staffing list job profiles
 - list all locations
+- list all positions
+- staffing create job change
+- hcm list locations
+- human resources
+- worker detail
+- person list people
 - list all currencies
-- list all job profiles
+- list all people
 - financial management
+- list all workers
+- get worker
+- saas
+- list workers
 - person get person
+- list organizations
+- hcm get worker
+- list supervisory organizations
 - worker management
 - get change history for a worker
-- saas
-- country reference data
-- position management
-- workday
-- list people
 - create a job change request
-- hcm list locations
-- common list currencies
-- person get work contact
-- hcm get worker history
+- staffing terminate worker
 - cloud computing
-- staffing list job profiles
-- list all positions
-- enterprise software
-- hcm
-- list all workers
-- list all workers with optional search and pagination
-- staffing list positions
+- hcm get worker history
+- get a worker by id
 - get home contact information
-- human resources
+- position management
+- list people
+- get inbox tasks for a worker
+- person get work contact
+- common list countries
+- get a specific worker by id
+- hcm
+- country reference data
+- hcm list workers
+- workday
+- get work contact information
 - get a person by id
-- get worker
+- person get home contact
+- list positions
+- person data
+- list all job profiles
+- list countries
+- supervisory organizations
+- list all workers with optional search and pagination
+- common list currencies
+- staffing list positions
+- list all countries
+- hcm get worker inbox tasks
+- initiate a worker termination
+- enterprise software
+- workforce management
 slug: workforce-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Workforce Management\"\n  description: \"Unified workforce management combining HCM, Person, Staffing, and Common APIs for HR administrators to manage workers, organizations, positions, and reference data.\"\n  tags:\n    - Workday\n    - Workforce Management\n    - Human Resources\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-hcm\n      location: ./shared/hcm.yaml\n    - import: workday-person\n      location: ./shared/person.yaml\n    - import: workday-staffing\n      location: ./shared/staffing.yaml\n    - import: workday-common\n      location: ./shared/common.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workforce-management-api\n      description: \"Unified REST API for workforce management operations.\"\n      resources:\n        - path: /v1/workers\n\
   \          name: workers\n          description: \"Worker management\"\n          operations:\n            - method: GET\n              name: list-workers\n              description: \"List all workers\"\n              call: \"workday-hcm.get-workers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workers/{id}\n          name: worker-detail\n          description: \"Worker detail\"\n          operations:\n            - method: GET\n              name: get-worker\n              description: \"Get a worker by ID\"\n              call: \"workday-hcm.get-worker-by-id\"\n              with:\n                ID: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/people\n          name: people\n          description: \"Person data\"\n          operations:\n            - method: GET\n              name: list-people\n              description:\

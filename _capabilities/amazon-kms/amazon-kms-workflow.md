@@ -10,30 +10,30 @@ personas: []
 provider_name: Amazon KMS
 provider_slug: amazon-kms
 search_terms:
-- encryption
-- encrypts plaintext of up to 4,096 bytes using a kms key.
-- keys describe key
-- decrypts ciphertext that was encrypted by a kms key.
-- security
-- amazon kms
-- unified workflow for amazon kms resource management
-- creates a unique customer managed kms key in your aws account and region.
-- integrates api into applications
-- workflow
-- crypto encrypt
-- key management
-- Developer
-- returns a unique symmetric data key for use outside of kms.
-- crypto generate data key
-- aws
 - data protection
 - keys list keys
+- returns a unique symmetric data key for use outside of kms.
+- encryption
+- crypto encrypt
+- keys describe key
 - provides detailed information about a kms key.
-- gets a list of all kms keys in the caller's aws account and region.
-- manages resources and configurations
-- cryptography
+- workflow
+- key management
+- amazon kms
 - crypto decrypt
+- unified workflow for amazon kms resource management
+- gets a list of all kms keys in the caller's aws account and region.
+- encrypts plaintext of up to 4,096 bytes using a kms key.
+- decrypts ciphertext that was encrypted by a kms key.
+- manages resources and configurations
+- integrates api into applications
+- security
+- aws
+- Developer
+- cryptography
+- crypto generate data key
 - Administrator
+- creates a unique customer managed kms key in your aws account and region.
 - keys create key
 slug: amazon-kms-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon KMS Workflow\n  description: Unified workflow capability for Amazon KMS combining resource management and operations.\n  tags:\n  - Amazon KMS\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kms\n    location: ./shared/kms.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kms-api\n    description: REST API for Amazon KMS workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kms-mcp\n    transport: http\n    description: MCP server for Amazon KMS.\n    tools:\n    - name: keys-create-key\n      description: Creates a unique customer managed KMS key in your AWS account and Region.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kms.createkey\n      outputParameters:\n      -\

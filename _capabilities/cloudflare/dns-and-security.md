@@ -25,63 +25,63 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- dns record management.
-- list dns records.
-- dns delete record
-- delete a dns record.
-- dns get dnssec
-- update a dns record.
-- real-time communication
 - dns update record
-- turnstile create widget
-- edge
-- security
-- list logpush jobs
-- observability
-- dns batch records
-- logpush get job
-- logpush create job
-- get logpush job details.
-- platform
-- cloud
-- edge computing
-- containers
-- dns
-- ai gateway
-- turnstile list widgets
-- serverless
-- cloudflare
-- list logpush jobs.
-- delete a logpush job.
 - turnstile verify token
-- logpush job management.
-- logpush delete job
 - dns list records
-- ddos protection
+- get logpush job details.
 - turnstile delete widget
-- create a dns record.
-- artificial intelligence
-- create a turnstile widget.
-- list turnstile widgets
-- delete a turnstile widget.
+- dns
 - execute batch dns operations.
-- api gateway
-- verify a turnstile token.
-- dns get record
-- turnstile widget management.
-- create a logpush job.
+- dns batch records
+- logpush job management.
+- list logpush jobs
 - get dnssec settings.
-- list dataset fields.
-- object storage
+- turnstile list widgets
+- logpush delete job
+- delete a turnstile widget.
+- containers
 - web performance
+- dns delete record
+- dns get dnssec
+- delete a dns record.
 - logpush list jobs
-- logpush list dataset fields
+- turnstile create widget
+- real-time communication
 - list dns records for a zone.
-- list turnstile widgets.
-- cdn
-- list dns records
-- dns create record
 - get dns record details.
+- logpush list dataset fields
+- artificial intelligence
+- edge
+- dns get record
+- list turnstile widgets
+- list dns records
+- delete a logpush job.
+- cloudflare
+- logpush get job
+- cloud
+- create a turnstile widget.
+- platform
+- logpush create job
+- serverless
+- verify a turnstile token.
+- dns record management.
+- dns create record
+- list dataset fields.
+- api gateway
+- observability
+- ddos protection
+- update a dns record.
+- list dns records.
+- create a dns record.
+- ai gateway
+- cdn
+- security
+- object storage
+- edge computing
+- create a logpush job.
+- list turnstile widgets.
+- turnstile widget management.
+- list logpush jobs.
 slug: dns-and-security
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare DNS and Security\"\n  description: \"DNS management and web security combining DNS record management with Turnstile bot protection and Logpush observability. Used by site reliability engineers and security teams.\"\n  tags:\n    - Cloudflare\n    - DNS\n    - Security\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-dns\n      location: ./shared/dns.yaml\n    - import: cloudflare-turnstile\n      location: ./shared/turnstile.yaml\n    - import: cloudflare-logpush\n      location: ./shared/logpush.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: dns-security-api\n      description: \"Unified REST API for Cloudflare DNS and security services.\"\n      resources:\n        - path: /v1/dns-records\n          name: dns-records\n \
   \         description: \"DNS record management.\"\n          operations:\n            - method: GET\n              name: list-dns-records\n              description: \"List DNS records.\"\n              call: \"cloudflare-dns.list-dns-records\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/turnstile-widgets\n          name: turnstile-widgets\n          description: \"Turnstile widget management.\"\n          operations:\n            - method: GET\n              name: list-turnstile-widgets\n              description: \"List Turnstile widgets.\"\n              call: \"cloudflare-turnstile.list-turnstile-widgets\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logpush-jobs\n          name: logpush-jobs\n     \

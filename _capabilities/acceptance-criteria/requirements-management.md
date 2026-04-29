@@ -9,12 +9,12 @@ personas: []
 provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
-- user stories
 - behavior driven development
-- quality assurance
 - testing
-- requirements
+- quality assurance
 - gherkin
+- user stories
+- requirements
 - agile
 slug: requirements-management
 source_yaml: "apiVersion: naftiko.io/v1alpha1\nkind: WorkflowCapability\nmetadata:\n  name: requirements-management\n  version: 1.0.0\n  description: End-to-end requirements management workflow for defining acceptance criteria, automating BDD scenario generation, and validating stories through acceptance test execution\n  provider: Reference Implementation\n  tags:\n    - Acceptance Criteria\n    - Requirements\n    - BDD\n    - Agile\n    - Quality Assurance\nspec:\n  sharedCapabilities:\n    - acceptance-criteria-management\n  workflow:\n    name: Story to Verified Feature Workflow\n    description: Complete lifecycle from user story creation through acceptance criteria definition, BDD scenario authoring, test execution, and story sign-off\n    steps:\n      - id: create-story\n        name: Create User Story\n        description: Create a new user story with a title, description, and priority\n        operation: createUserStory\n      - id: define-criteria\n        name: Define Acceptance\

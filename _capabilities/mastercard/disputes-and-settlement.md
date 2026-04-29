@@ -29,38 +29,38 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- look up transaction details to aid dispute resolution
-- fraud detection
+- authorize transaction
+- create a retrieval request
+- authorize a transaction through core processing
+- digital identity
+- chargebacks
+- create retrieval request
+- settlement
+- payments
+- create a retrieval request in mastercom
+- get chargebacks
 - look up transaction details for dispute resolution
+- open banking
+- create retrieval
+- mastercom
+- lookup transaction clarity
+- look up transaction details to aid dispute resolution
+- lookup transaction for dispute
+- fraud detection
+- retrieval request management
+- create a chargeback in mastercom
+- disputes
+- credit cards
+- create a chargeback
+- get settlement rate
+- create chargeback
+- financial services
+- mastercard
+- retrieve chargebacks
+- get currency conversion rate for settlement
+- retrieve chargebacks from mastercom
 - transaction clarity for dispute resolution
 - chargeback management
-- disputes
-- mastercard
-- create a retrieval request in mastercom
-- payments
-- retrieval request management
-- credit cards
-- chargebacks
-- get settlement rate
-- create retrieval request
-- create a retrieval request
-- get chargebacks
-- retrieve chargebacks from mastercom
-- financial services
-- settlement
-- mastercom
-- create chargeback
-- open banking
-- create a chargeback in mastercom
-- lookup transaction clarity
-- retrieve chargebacks
-- lookup transaction for dispute
-- authorize transaction
-- authorize a transaction through core processing
-- get currency conversion rate for settlement
-- create a chargeback
-- digital identity
-- create retrieval
 slug: disputes-and-settlement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Disputes and Settlement\"\n  description: \"Unified workflow for dispute managers and back-office teams to manage chargebacks, retrieval requests, transaction processing, and settlement through Mastercom and processing APIs.\"\n  tags:\n    - Mastercard\n    - Disputes\n    - Chargebacks\n    - Settlement\n    - Mastercom\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: mastercom\n      location: ./shared/mastercom.yaml\n    - import: processing-core\n      location: ./shared/processing-core.yaml\n    - import: ethoca-consumer-clarity\n      location: ./shared/ethoca-consumer-clarity.yaml\n    - import: currency-conversion\n      location: ./shared/currency-conversion.yaml\n\n  exposes:\n    - type: rest\n      port: 8092\n\
   \      namespace: disputes-settlement-api\n      description: \"Unified REST API for dispute management and settlement.\"\n      resources:\n        - path: /v1/chargebacks\n          name: chargebacks\n          description: \"Chargeback management\"\n          operations:\n            - method: POST\n              name: create-chargeback\n              description: \"Create a chargeback\"\n              call: \"mastercom.create-chargeback\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-chargebacks\n              description: \"Retrieve chargebacks\"\n              call: \"mastercom.get-chargebacks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/retrievals\n          name: retrievals\n          description: \"Retrieval request management\"\n          operations:\n            - method: POST\n              name:\

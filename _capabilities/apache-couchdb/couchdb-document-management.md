@@ -34,60 +34,60 @@ personas: []
 provider_name: Apache CouchDB
 provider_slug: apache-couchdb
 search_terms:
-- create or update a document
-- get session
-- manages couchdb cluster configuration, authentication, and performance
 - get current authentication session info
-- rest
-- builds applications using couchdb as the document store via the http api or sdk
-- mango
-- json
-- create index
-- replicate data between couchdb instances
-- create a new couchdb database
-- query documents
-- full document lifecycle management with mango queries, changes feed, and replication
-- query documents with a mango selector
-- replication
-- replicate
-- get changes feed
-- create a new database
-- query documents with mango
-- Developer
-- Data Engineer
-- save document
-- get a document by id
-- create database
-- list all databases
-- nosql
-- database operations
-- get couchdb server version and status
-- database
-- get document
-- database changes feed for event-driven architectures
-- couchdb
-- create a query index for faster mango queries
-- get server info
-- apache
-- document operations
 - list databases
-- get info about a database
+- get couchdb server version and status
+- get a document by id
+- create a new couchdb database
+- nosql
 - manages data pipelines, replication, and changes feed integrations with couchdb
-- list all databases in couchdb
-- get changes
-- delete a document
-- get the changes feed to track database updates
-- get database
-- storing and retrieving json documents with mvcc
-- changes feed
-- mango selectors, mapreduce views, and full-text search
-- document store
-- list documents
-- replication and offline-first data sync via the couch replication protocol
 - delete document
-- list documents in a database
+- get info about a database
+- save document
+- get session
+- replicate data between couchdb instances
+- list all databases in couchdb
+- couchdb
+- get changes
+- get changes feed
+- document operations
+- replicate
+- create or update a document
+- get database
+- json
+- create database
 - start replication
+- database
+- mango
+- create index
+- document store
+- get document
+- full document lifecycle management with mango queries, changes feed, and replication
+- storing and retrieving json documents with mvcc
+- mango selectors, mapreduce views, and full-text search
 - open source
+- query documents
+- changes feed
+- query documents with mango
+- database changes feed for event-driven architectures
+- get server info
+- create a new database
+- query documents with a mango selector
+- get the changes feed to track database updates
+- Data Engineer
+- builds applications using couchdb as the document store via the http api or sdk
+- list all databases
+- apache
+- replication
+- list documents
+- list documents in a database
+- create a query index for faster mango queries
+- manages couchdb cluster configuration, authentication, and performance
+- Developer
+- replication and offline-first data sync via the couch replication protocol
+- rest
+- delete a document
+- database operations
 slug: couchdb-document-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache CouchDB Document Management\n  description: Workflow capability for managing CouchDB documents, databases, and queries. Combines document CRUD, Mango queries, changes feed, and replication for developers and data engineers.\n  tags:\n  - Apache\n  - CouchDB\n  - Database\n  - Document Store\n  - Mango\n  - NoSQL\n  - Replication\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    COUCHDB_USER: COUCHDB_USER\n    COUCHDB_PASSWORD: COUCHDB_PASSWORD\ncapability:\n  consumes:\n  - import: couchdb\n    location: ./shared/couchdb-http-api.yaml\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: couchdb-document-management-api\n    description: Unified REST API for CouchDB document and database management.\n    resources:\n    - path: /v1/databases\n      name: databases\n      description: Database operations\n      operations:\n      - method: GET\n        name: list-databases\n        description:\
   \ List all databases\n        call: couchdb.get-all-dbs\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PUT\n        name: create-database\n        description: Create a new database\n        call: couchdb.create-database\n        with:\n          db: rest.db\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/databases/{db}/documents\n      name: documents\n      description: Document operations\n      operations:\n      - method: GET\n        name: list-documents\n        description: List documents in a database\n        call: couchdb.get-all-docs\n        with:\n          db: rest.db\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: query-documents\n        description: Query documents with Mango\n        call: couchdb.find-documents\n        with:\n          db: rest.db\n          selector: rest.selector\n        outputParameters:\n       \

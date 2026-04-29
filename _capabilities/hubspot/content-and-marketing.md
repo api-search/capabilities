@@ -48,60 +48,60 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- get a specific blog post by id
-- get blog author
-- cms
-- list events
-- get event types
-- push blog post live
-- analytics
-- list blog posts
-- get blog post revisions
-- marketing automation
-- schedule a blog post for publication
-- list available analytics event types
-- blog author management
-- get a blog post
-- blog
-- event type definitions
-- archive a blog post
-- marketing
-- get a blog author by id
-- list event types
-- create a blog post
-- list available event types
-- update an existing blog post
-- customer service
-- sales
-- content
-- list all blog posts
-- list blog authors
-- update blog post
-- individual blog post
-- get revision history for a blog post
-- blog post management
-- analytics events
+- list all blog authors
 - operations
-- push a draft blog post to live
-- create a new blog post
-- get blog post
-- create a new blog author
-- create blog post
-- crm
-- schedule blog post
-- list all blog posts in hubspot
 - hubspot
-- create blog author
-- clone blog post
-- email marketing
+- create a new blog post
+- list all blog posts in hubspot
+- get a blog author by id
+- get blog author
+- event type definitions
+- analytics
+- push a draft blog post to live
+- schedule blog post
+- update blog post
+- get a blog post
 - commerce
-- update a blog post
+- list event types
+- push blog post live
+- archive a blog post
+- create blog post
+- list events
+- update an existing blog post
+- clone an existing blog post
+- list all blog posts
+- marketing
+- analytics events
+- get blog post
+- blog
+- blog author management
+- get blog post revisions
+- individual blog post
+- archive blog post
+- schedule a blog post for publication
+- create blog author
+- cms
+- list blog authors
+- create a blog post
+- customer service
+- retrieve analytics events
+- list available analytics event types
+- get revision history for a blog post
+- email marketing
+- crm
+- sales
 - retrieve analytics event data for crm objects
 - get analytics events
-- clone an existing blog post
-- archive blog post
-- list all blog authors
-- retrieve analytics events
+- create a new blog author
+- list available event types
+- clone blog post
+- get a specific blog post by id
+- update a blog post
+- content
+- marketing automation
+- list blog posts
+- get event types
+- blog post management
 slug: content-and-marketing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Content And Marketing\"\n  description: \"Unified workflow for marketing managers to manage blog content, authors, landing pages, site pages, domains, analytics events, and transactional email. Combines CMS and marketing APIs into a single content operations interface.\"\n  tags:\n    - HubSpot\n    - Marketing\n    - Content\n    - CMS\n    - Blog\n    - Analytics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: blog-posts\n      location: ./shared/blog-posts.yaml\n    - import: blog-authors\n      location: ./shared/blog-authors.yaml\n    - import: analytics-events\n      location: ./shared/analytics-events.yaml\n    - import: cms-pages\n      location: ./shared/cms-pages-api.yaml\n    - import: domains\n      location: ./shared/domains-api.yaml\n    - import: marketing-email\n  \
   \    location: ./shared/marketing-emal-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: content-marketing-api\n      description: \"Unified REST API for content creation, publishing, and marketing analytics.\"\n      resources:\n        - path: /v1/blog-posts\n          name: blog-posts\n          description: \"Blog post management\"\n          operations:\n            - method: GET\n              name: list-blog-posts\n              description: \"List all blog posts\"\n              call: \"blog-posts.list-blog-posts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-blog-post\n              description: \"Create a blog post\"\n              call: \"blog-posts.create-blog-post\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blog-posts/{objectId}\n          name: blog-post-by-id\n\

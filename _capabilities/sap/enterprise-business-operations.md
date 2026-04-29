@@ -89,120 +89,120 @@ personas: []
 provider_name: SAP
 provider_slug: sap
 search_terms:
-- b1 create order
-- ai list deployments
-- list business partner addresses from s/4hana
-- list ai deployments
-- s4hana list roles
-- ai scenario management
-- get b1 business partner
-- list ai model deployments from sap ai core
-- create an ai model deployment in sap ai core
-- create a business partner in s/4hana cloud
-- ai delete execution
-- get a specific business partner from s/4hana cloud
-- ai get execution
-- list business partners from sap business one
-- get a specific business partner from sap business one
-- list financial journal entries from sap business one
-- ai list executions
-- s4hana list addresses
-- list business partner tax numbers from s/4hana cloud
-- ai create artifact
-- ai
-- s4hana list business partners
-- list business partner roles from s/4hana cloud
-- b1 update business partner
-- ai execution management
-- b1 list items
-- b1 get business partner
-- create an ai configuration in sap ai core
-- ai deployment management
-- b1 list invoices
-- create s4hana business partner
 - create an invoice in business one
-- ai create deployment
-- create a sales order in business one
-- list orders
-- create execution
-- b1 list business partners
-- list business partner bank accounts from s/4hana cloud
-- ai list scenarios
-- list business partner addresses from s/4hana cloud
-- list items from business one
-- list ai executions
-- data management
-- ai list artifacts
-- list ai scenarios from sap ai core
-- create an ai deployment
-- register a new ai artifact in sap ai core
-- list ai scenarios from ai core
-- list b1 business partners
-- trigger an ai training execution in sap ai core
-- list items
-- enterprise
 - sales order management
-- list addresses
-- business operations
-- item master data
-- ai create execution
-- list business partners from s/4hana cloud
-- list business partner master records from s/4hana cloud
-- s4hana list tax numbers
-- ai create configuration
-- list invoices from business one
-- create an accounts receivable invoice in sap business one
-- invoice management
-- list ai configurations from sap ai core
-- list invoices
-- business applications
-- s4hana create business partner
-- list item master data from sap business one
-- btp
-- list journal entries
-- list executions
-- list s4hana business partners
-- s4hana list bank accounts
-- list ai training executions from sap ai core
-- stop a running ai execution
-- list sales orders from sap business one
-- s/4hana business partner addresses
-- sap
-- list sales orders from business one
-- create a financial journal entry in sap business one
-- update b1 business partner
-- list scenarios
-- update a business partner in s/4hana cloud
-- s/4hana cloud business partner master data
-- create an ai execution
-- update a business partner in sap business one
-- create a business partner in sap business one
-- b1 create business partner
-- financial journal entries
+- business one business partner management
+- list orders
+- ai execution management
+- list accounts receivable invoices from sap business one
+- b1 get business partner
 - b1 create invoice
-- create invoice
-- create a journal entry in business one
-- business one business partner detail
-- create b1 business partner
-- create journal entry
-- s4hana update business partner
-- create deployment
-- list deployments
-- cloud
+- ai create configuration
+- create s4hana business partner
+- list sales orders from business one
+- list ai executions
+- s4hana list tax numbers
 - create a sales order in sap business one
 - get details of a specific ai execution
-- b1 list journal entries
-- b1 create journal entry
-- integration
-- business one business partner management
-- list ai artifacts (models, datasets) from sap ai core
-- ai list configurations
-- erp
-- b1 list orders
+- trigger an ai training execution in sap ai core
+- ai list executions
+- ai
+- list ai deployments
+- create an accounts receivable invoice in sap business one
+- list item master data from sap business one
+- create b1 business partner
+- create invoice
+- list b1 business partners
+- list invoices from business one
+- list business partner tax numbers from s/4hana cloud
+- data management
+- list invoices
+- business one business partner detail
+- update a business partner in s/4hana cloud
+- s/4hana business partner addresses
+- list ai configurations from sap ai core
+- get a specific business partner from sap business one
+- list executions
+- list business partners from sap business one
+- get a specific business partner from s/4hana cloud
+- list items from business one
+- list ai scenarios from sap ai core
+- list ai scenarios from ai core
 - create order
+- ai create deployment
+- update b1 business partner
+- ai scenario management
+- create journal entry
+- create a financial journal entry in sap business one
+- list sales orders from sap business one
+- ai delete execution
+- list business partners from s/4hana cloud
+- s4hana list bank accounts
+- ai list deployments
+- create a business partner in sap business one
+- s4hana update business partner
+- create a sales order in business one
+- b1 create order
+- create execution
+- list business partner roles from s/4hana cloud
+- list ai training executions from sap ai core
+- b1 list journal entries
+- ai list scenarios
+- list business partner addresses from s/4hana
+- list financial journal entries from sap business one
+- business operations
+- update a business partner in sap business one
+- b1 list orders
+- get b1 business partner
+- list addresses
+- create an ai execution
+- create a journal entry in business one
+- list business partner bank accounts from s/4hana cloud
+- s4hana list roles
+- ai get execution
+- invoice management
+- cloud
+- list ai model deployments from sap ai core
+- b1 update business partner
+- b1 list items
+- list deployments
+- list business partner master records from s/4hana cloud
 - list journal entries from business one
+- create an ai deployment
+- ai list artifacts
+- financial journal entries
+- create deployment
+- s4hana list business partners
 - s4hana get business partner
-- list accounts receivable invoices from sap business one
+- b1 create business partner
+- ai create execution
+- business applications
+- list scenarios
+- b1 create journal entry
+- btp
+- integration
+- s4hana create business partner
+- erp
+- s/4hana cloud business partner master data
+- list business partner addresses from s/4hana cloud
+- list items
+- ai create artifact
+- create an ai model deployment in sap ai core
+- b1 list business partners
+- list ai artifacts (models, datasets) from sap ai core
+- item master data
+- ai list configurations
+- create an ai configuration in sap ai core
+- list journal entries
+- sap
+- register a new ai artifact in sap ai core
+- list s4hana business partners
+- stop a running ai execution
+- ai deployment management
+- create a business partner in s/4hana cloud
+- b1 list invoices
+- s4hana list addresses
+- enterprise
 slug: enterprise-business-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP Enterprise Business Operations\"\n  description: \"Unified workflow combining SAP Business One, S/4HANA Cloud Business Partner, and AI Core APIs for managing business partners, orders, financials, and AI-driven automation across SAP ERP systems.\"\n  tags:\n    - SAP\n    - Enterprise\n    - ERP\n    - AI\n    - Business Operations\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SAP_AI_CORE_OAUTH_TOKEN: SAP_AI_CORE_OAUTH_TOKEN\n      SAP_B1_USERNAME: SAP_B1_USERNAME\n      SAP_B1_PASSWORD: SAP_B1_PASSWORD\n      SAP_B1_COMPANY_DB: SAP_B1_COMPANY_DB\n      SAP_S4HANA_USERNAME: SAP_S4HANA_USERNAME\n      SAP_S4HANA_PASSWORD: SAP_S4HANA_PASSWORD\n\ncapability:\n  consumes:\n    - import: sap-ai-core\n      location: ./shared/ai-core.yaml\n    - import: sap-business-one\n      location: ./shared/business-one.yaml\n    - import: sap-s4hana-bp\n      location: ./shared/s4hana-business-partner.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sap-enterprise-ops-api\n      description: \"Unified REST API for SAP enterprise business operations spanning ERP, master data, and AI workflows.\"\n      resources:\n        - path: /v1/business-partners\n          name: b1-business-partners\n          description: \"Business One business partner management\"\n          operations:\n            - method: GET\n              name: list-b1-business-partners\n              description: \"List business partners from SAP Business One\"\n              call: \"sap-business-one.list-business-partners\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-b1-business-partner\n              description: \"Create a business partner in SAP Business One\"\n              call: \"sap-business-one.create-business-partner\"\n              outputParameters:\n                - type: object\n\

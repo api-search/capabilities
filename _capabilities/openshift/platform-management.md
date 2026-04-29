@@ -15,37 +15,37 @@ personas: []
 provider_name: OpenShift
 provider_slug: openshift
 search_terms:
-- get project details
-- list persistent volumes
-- list deployments
-- list openshift projects
-- list installed operators
-- list image streams
-- list images
-- platform
-- list builds
-- containers
-- get pod details
-- get pod
-- list operators
-- list pods
-- list storage
-- devops
-- list nodes
-- paas
-- list services
-- list routes
-- enterprise
-- kubernetes
-- list cluster nodes
 - ci/cd
-- list projects
-- list config maps
-- openshift
+- list installed operators
+- list persistent volumes
+- kubernetes
+- list image streams
+- paas
+- containers
+- list openshift projects
+- list pods
+- list services
+- list operators
 - list configmaps
 - project management
+- devops
+- get project details
+- list config maps
+- platform
+- get pod
+- list deployments
+- list storage
+- list cluster nodes
+- list projects
+- get pod details
 - cloud native
+- openshift
 - get project
+- list routes
+- list builds
+- list images
+- enterprise
+- list nodes
 slug: platform-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"OpenShift Platform Management\"\n  description: \"Unified platform management capability for OpenShift clusters including projects, builds, deployments, routes, and monitoring. Used by platform engineers and cluster administrators.\"\n  tags: [OpenShift, Kubernetes, Platform, DevOps]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      OPENSHIFT_TOKEN: OPENSHIFT_TOKEN\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: platform-management-api\n      description: \"Unified REST API for OpenShift platform management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - { method: GET, name: list-projects, description: \"List projects\", call: \"rest-api.list-projects\", outputParameters:\
   \ [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: platform-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted OpenShift platform management.\"\n      tools:\n        - { name: list-projects, description: \"List OpenShift projects\", hints: { readOnly: true, openWorld: true }, call: \"rest-api.list-projects\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-project, description: \"Get project details\", hints: { readOnly: true }, call: \"rest-api.get-project\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-builds, description: \"List builds\", hints: { readOnly: true }, call: \"rest-api.list-builds\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-routes, description: \"List routes\", hints: { readOnly: true }, call: \"rest-api.list-routes\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name:\
