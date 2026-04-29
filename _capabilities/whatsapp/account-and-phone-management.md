@@ -75,69 +75,69 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- register phone number
-- register phone numbers.
-- list phone numbers
-- deregister phone number
+- assign user
+- phone numbers
 - assigns a user with specific tasks to a waba.
 - verify code
-- phone numbers
-- updates the whatsapp business profile.
-- whatsapp business profile management.
-- product catalogs
-- retrieves information about a whatsapp business account.
-- assigns a user to a waba.
-- get business profile
-- user assignments for a waba.
-- update business profile
-- disconnect product catalog
-- remove assigned user
-- sets or updates the two-step verification pin.
-- disconnects a product catalog.
-- whatsapp
-- two-step verification pin management.
-- registers a phone number for cloud api.
-- whatsapp business account information.
-- retrieves the whatsapp business profile for a phone number.
-- deregister phone numbers.
-- individual phone number information.
-- lists assigned users.
-- retrieves information about a registered phone number.
-- lists all users assigned to a waba.
-- verify phone numbers.
-- set two step verification
-- sets or updates the two-step verification pin for a phone number.
-- connects a product catalog to a waba.
-- updates the whatsapp business profile for a phone number.
-- deregisters a phone number.
+- request verification codes for registration.
+- removes a user from a waba.
 - deregisters a phone number from the cloud api.
+- deregister phone number
+- get business profile
+- get business account
+- retrieves information about a whatsapp business account.
+- sets or updates the two-step verification pin for a phone number.
+- remove assigned user
+- whatsapp business account information.
+- individual phone number information.
+- user assignments for a waba.
+- get phone number
+- assigns a user to a waba.
+- connects a product catalog to a waba.
+- business profile
+- list product catalogs
+- requests a verification code via sms or voice call for phone registration.
+- product catalog management.
+- disconnect product catalog
+- set two step verification
 - connects a product catalog.
-- disconnects a product catalog from a waba.
-- account management
 - retrieves the whatsapp business profile.
-- lists product catalogs.
-- removes an assigned user.
-- verifies a phone number.
+- product catalogs
+- deregister phone numbers.
+- registers a phone number for use with the cloud api.
+- update business profile
+- request verification code
+- lists assigned users.
+- registration
+- phone numbers associated with a waba.
+- disconnects a product catalog from a waba.
 - lists product catalogs connected to a waba.
+- updates the whatsapp business profile.
+- retrieves information about a registered phone number.
+- list assigned users
+- verify phone numbers.
+- retrieves the whatsapp business profile for a phone number.
+- requests a verification code.
+- lists all users assigned to a waba.
+- disconnects a product catalog.
+- register phone number
+- removes an assigned user.
 - verifies a phone number using a verification code.
 - user management
-- request verification code
-- requests a verification code.
-- business profile
+- sets or updates the two-step verification pin.
+- lists product catalogs.
+- updates the whatsapp business profile for a phone number.
+- two-step verification pin management.
 - connect product catalog
-- list product catalogs
+- verifies a phone number.
+- whatsapp
+- whatsapp business profile management.
+- registers a phone number for cloud api.
 - lists all phone numbers associated with a waba.
-- get phone number
-- removes a user from a waba.
-- registration
-- get business account
-- list assigned users
-- requests a verification code via sms or voice call for phone registration.
-- registers a phone number for use with the cloud api.
-- product catalog management.
-- request verification codes for registration.
-- phone numbers associated with a waba.
-- assign user
+- deregisters a phone number.
+- list phone numbers
+- account management
+- register phone numbers.
 slug: account-and-phone-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WhatsApp Account And Phone Management\"\n  description: \"Unified workflow for managing WhatsApp Business Accounts, phone numbers, business profiles, user assignments, product catalogs, and phone registration. Combines Business Management API and Cloud API capabilities used by platform administrators and business operations teams.\"\n  tags:\n    - WhatsApp\n    - Account Management\n    - Phone Numbers\n    - Business Profile\n    - Registration\n    - User Management\n    - Product Catalogs\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: whatsapp-business-mgmt\n      location: ./shared/business-management.yaml\n    - import: whatsapp-cloud\n      location: ./shared/cloud-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: whatsapp-account-api\n      description:\
   \ \"Unified REST API for WhatsApp account management, phone numbers, profiles, users, catalogs, and registration.\"\n      resources:\n        - path: /v1/business-accounts/{waba_id}\n          name: business-accounts\n          description: \"WhatsApp Business Account information.\"\n          operations:\n            - method: GET\n              name: get-business-account\n              description: \"Retrieves information about a WhatsApp Business Account.\"\n              call: \"whatsapp-business-mgmt.get-whatsapp-business-account\"\n              with:\n                waba_id: \"rest.waba_id\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/phone-numbers\n          name: waba-phone-numbers\n          description: \"Phone numbers associated with a WABA.\"\n          operations:\n            - method: GET\n              name: list-phone-numbers\n              description:\

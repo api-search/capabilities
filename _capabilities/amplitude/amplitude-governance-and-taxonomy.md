@@ -116,104 +116,104 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude delete an event property
-- user behavior
-- listEventCategories
-- taxonomy api createEventProperty
-- amplitude update an annotation
-- amplitude list all user properties
-- amplitude update an event category
-- amplitude delete an event type
-- amplitude get an annotation
-- listUserProperties
-- createEventCategory
-- deleteEventType
-- createEventProperty
 - taxonomy api deleteEventCategory
-- data governance
+- updateAnnotation
+- taxonomy api deleteUserProperty
+- manage event schemas and chart annotations. for data governance teams.
+- listAnnotations
+- taxonomy
+- getUserProperty
+- taxonomy api updateEventType
+- taxonomy api deleteEventProperty
+- a/b testing
+- deleteEventType
+- deleteEventCategory
+- updateUserProperty
+- taxonomy api getEventType
+- updateEventCategory
+- amplitude
+- taxonomy api listEventCategories
+- taxonomy api createUserProperty
 - taxonomy api updateEventCategory
+- amplitude delete an event category
+- taxonomy api getEventProperty
+- taxonomy api listEventTypes
+- analyzes data and manages cohorts
+- taxonomy api listEventProperties
+- amplitude get an event property
+- updateEventProperty
 - amplitude list all event properties
 - amplitude create an annotation
-- product analytics
-- getEventProperty
-- a/b testing
-- taxonomy api deleteEventType
-- createEventType
-- amplitude update an event property
-- amplitude delete a user property
-- amplitude get an event category
-- taxonomy api createUserProperty
 - createAnnotation
-- amplitude list all annotations
-- ingests and exports event data
-- experimentation
-- getEventCategory
-- amplitude update a user property
-- export raw event data and manage behavioral cohorts. for data analysts.
-- taxonomy api listEventProperties
-- analyzes data and manages cohorts
-- amplitude list all event types
-- taxonomy api listEventTypes
-- taxonomy api createEventType
-- taxonomy api updateUserProperty
-- getEventType
-- manages privacy and compliance
-- amplitude get a user profile
-- amplitude get a user property
-- taxonomy api createEventCategory
-- getUserProfile
-- chart annotations api listAnnotations
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- identity management
-- taxonomy api getEventCategory
-- amplitude get an event type
-- unified workflow for sending events and identifying users. for data engineers.
+- amplitude update an event property
 - chart annotations api getAnnotation
-- amplitude delete an annotation
-- amplitude update an event type
-- runs experiments and feature flags
-- amplitude list all event categories
-- manage event schemas and chart annotations. for data governance teams.
-- chart annotations api updateAnnotation
-- amplitude
-- privacy compliance
-- deleteEventCategory
-- taxonomy api getUserProperty
-- deleteEventProperty
-- analytics
 - deleteUserProperty
-- updateEventProperty
-- user profile api getUserProfile
-- updateEventCategory
-- amplitude create a user property
-- listEventTypes
-- taxonomy api listUserProperties
-- amplitude delete an event category
-- amplitude get an event property
-- getAnnotation
-- amplitude create an event category
-- listAnnotations
-- taxonomy api getEventType
-- listEventProperties
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- getUserProperty
-- taxonomy api updateEventProperty
-- feature flags
-- taxonomy api deleteUserProperty
-- deleteAnnotation
-- updateEventType
-- taxonomy api listEventCategories
-- chart annotations api deleteAnnotation
-- taxonomy api deleteEventProperty
-- taxonomy api getEventProperty
-- taxonomy api updateEventType
-- updateAnnotation
+- createEventProperty
 - chart annotations api createAnnotation
-- amplitude create an event type
-- updateUserProperty
+- taxonomy api deleteEventType
+- amplitude update an event category
+- taxonomy api updateUserProperty
 - createUserProperty
+- product analytics
+- createEventCategory
+- deleteAnnotation
+- taxonomy api getEventCategory
+- amplitude delete a user property
+- listEventTypes
+- getUserProfile
+- taxonomy api getUserProperty
+- amplitude get an event category
+- user profile api getUserProfile
+- runs experiments and feature flags
+- chart annotations api listAnnotations
+- amplitude list all event types
+- listEventCategories
+- amplitude update an event type
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- taxonomy api listUserProperties
+- updateEventType
+- amplitude update a user property
+- createEventType
+- taxonomy api createEventCategory
+- user behavior
+- amplitude create an event type
+- amplitude create a user property
+- analytics
+- amplitude get an annotation
+- ingests and exports event data
+- unified workflow for sending events and identifying users. for data engineers.
+- taxonomy api createEventProperty
+- privacy compliance
+- feature flags
+- chart annotations api updateAnnotation
+- amplitude delete an event property
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- taxonomy api updateEventProperty
+- listEventProperties
+- getEventCategory
+- data governance
+- amplitude get an event type
+- amplitude list all event categories
+- listUserProperties
+- amplitude create an event category
 - amplitude create an event property
-- taxonomy
+- chart annotations api deleteAnnotation
+- getEventType
+- identity management
+- amplitude list all annotations
+- deleteEventProperty
+- experimentation
+- getEventProperty
+- amplitude delete an event type
+- export raw event data and manage behavioral cohorts. for data analysts.
+- amplitude list all user properties
+- manages privacy and compliance
+- amplitude delete an annotation
+- taxonomy api createEventType
+- getAnnotation
+- amplitude get a user profile
+- amplitude update an annotation
+- amplitude get a user property
 slug: amplitude-governance-and-taxonomy
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Governance and Taxonomy\n  description: Manage event schemas and chart annotations. For data governance teams.\n  tags:\n  - Amplitude\n  - Taxonomy\n  - Data Governance\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: chart-annotations-api\n    location: ./shared/chart-annotations-api.yaml\n  - import: taxonomy-api\n    location: ./shared/taxonomy-api.yaml\n  - import: user-profile-api\n    location: ./shared/user-profile-api.yaml\n  exposes:\n  - type: rest\n    port: 8083\n    namespace: amplitude-governance-and-taxonomy-api\n    description: REST API for Amplitude Governance and Taxonomy\n    resources:\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: GET\n        name: listAnnotations\n        description: Amplitude List All Annotations\n        call: chart-annotations-api.listAnnotations\n\
   \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: POST\n        name: createAnnotation\n        description: Amplitude Create an Annotation\n        call: chart-annotations-api.createAnnotation\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: GET\n        name: getAnnotation\n        description: Amplitude Get an Annotation\n        call: chart-annotations-api.getAnnotation\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/annotations\n      name: annotations\n      operations:\n      - method: PUT\n        name: updateAnnotation\n        description: Amplitude Update an Annotation\n        call: chart-annotations-api.updateAnnotation\n        with: {}\n        outputParameters:\n\

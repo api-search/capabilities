@@ -30,28 +30,28 @@ personas: []
 provider_name: Amazon ElastiCache
 provider_slug: amazon-elasticache
 search_terms:
-- caching
-- operations teams managing amazon elasticache infrastructure
-- database
-- elasticache
-- redis
-- describeCacheClusters
 - memcached
-- amazon elasticache describe cache clusters
-- amazon elasticache create cache cluster
+- database
 - in-memory caching service supporting redis and memcached
-- aws
-- unified capability for managing amazon elasticache resources. combines amazon elasticache apis for backend developer workflows in data caching.
-- deleteCacheCluster
-- amazon elasticache delete cache cluster
-- amazon web services
-- createReplicationGroup
-- amazon elasticache describe replication groups
+- caching
 - createCacheCluster
-- amazon elasticache create replication group
-- describeReplicationGroups
+- elasticache
+- amazon elasticache describe cache clusters
+- aws
+- amazon elasticache describe replication groups
+- deleteCacheCluster
 - developers building applications using amazon elasticache
+- amazon elasticache create cache cluster
+- amazon elasticache create replication group
+- describeCacheClusters
 - in-memory
+- unified capability for managing amazon elasticache resources. combines amazon elasticache apis for backend developer workflows in data caching.
+- redis
+- describeReplicationGroups
+- amazon web services
+- amazon elasticache delete cache cluster
+- createReplicationGroup
+- operations teams managing amazon elasticache infrastructure
 slug: amazon-elasticache-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon ElastiCache Management\n  description: Unified capability for managing Amazon ElastiCache resources. Combines Amazon ElastiCache APIs for Backend Developer workflows in Data Caching.\n  tags:\n  - Amazon Web Services\n  - Caching\n  - Database\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: elasticache\n    location: ./shared/elasticache.yaml\n  exposes:\n  - type: rest\n    port: 8186\n    namespace: amazon-elasticache-workflow-api\n    description: Unified REST API for Amazon ElastiCache management.\n    resources:\n    - path: /v1/describeCacheClusters\n      name: describeCacheClusters\n      description: Amazon ElastiCache Describe Cache Clusters\n      operations:\n      - method: GET\n        name: describeCacheClusters\n        description: Amazon ElastiCache Describe Cache Clusters\n   \
   \     call: api.describeCacheClusters\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/createCacheCluster\n      name: createCacheCluster\n      description: Amazon ElastiCache Create Cache Cluster\n      operations:\n      - method: POST\n        name: createCacheCluster\n        description: Amazon ElastiCache Create Cache Cluster\n        call: api.createCacheCluster\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/deleteCacheCluster\n      name: deleteCacheCluster\n      description: Amazon ElastiCache Delete Cache Cluster\n      operations:\n      - method: POST\n        name: deleteCacheCluster\n        description: Amazon ElastiCache Delete Cache Cluster\n        call: api.deleteCacheCluster\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/createReplicationGroup\n      name: createReplicationGroup\n      description: Amazon ElastiCache Create Replication\

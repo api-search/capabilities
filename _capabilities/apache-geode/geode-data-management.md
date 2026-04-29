@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- in-memory data grid
-- in-memory
-- list all regions in the apache geode data grid
-- caching
-- Platform Engineer
+- list all server-side functions available in the cluster
+- list available functions
 - get region keys
-- list geode functions
-- open source
-- engineers managing the geode cluster infrastructure
+- high-performance in-memory data caching and distribution
+- data management
+- caching
 - region crud operations, oql queries, and function execution
 - list geode regions
 - geode region management
+- data grid
+- distributed systems
+- engineers managing the geode cluster infrastructure
+- list all regions in the apache geode data grid
 - developers using geode as a fast data store for applications
-- high-performance in-memory data caching and distribution
-- Application Developer
+- apache geode
+- in-memory data grid
+- list geode functions
 - execute query
+- in-memory
+- list functions
 - apache
 - list regions
-- data grid
-- server-side function execution
-- get all keys stored in a geode region
 - execute an oql query against geode regions
-- manage in-memory data with regions, queries, and functions
-- list all geode regions
+- server-side function execution
 - platform engineering
-- list available functions
-- distributed systems
+- manage in-memory data with regions, queries, and functions
 - execute oql query
+- list all geode regions
+- Application Developer
+- Platform Engineer
+- get all keys stored in a geode region
+- open source
 - oql query execution
 - execute an oql query
-- data management
-- list all server-side functions available in the cluster
-- apache geode
-- list functions
 slug: geode-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Geode Data Management\"\n  description: \"Unified capability for managing data in Apache Geode in-memory data grid — accessing regions, executing OQL queries, and running server-side functions. Designed for application developers and platform engineers working with high-performance in-memory data.\"\n  tags:\n    - Apache Geode\n    - In-Memory Data Grid\n    - Caching\n    - Data Management\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      GEODE_REST_URL: GEODE_REST_URL\ncapability:\n  consumes:\n    - import: geode-rest\n      location: ./shared/geode-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: geode-management-api\n      description: \"Unified REST API for Apache Geode data management.\"\n      resources:\n        - path: /v1/regions\n          name: regions\n          description: Geode region management\n   \
   \       operations:\n            - method: GET\n              name: list-regions\n              description: List all Geode regions\n              call: \"geode-rest.list-regions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: OQL query execution\n          operations:\n            - method: GET\n              name: execute-query\n              description: Execute an OQL query\n              call: \"geode-rest.execute-adhoc-query\"\n              with:\n                q: \"rest.q\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/functions\n          name: functions\n          description: Server-side function execution\n          operations:\n            - method: GET\n              name: list-functions\n              description: List available functions\n              call: \"geode-rest.list-functions\"\

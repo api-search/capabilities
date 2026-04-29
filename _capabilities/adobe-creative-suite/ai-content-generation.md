@@ -38,45 +38,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- ai object compositing
-- generate images from a text prompt
-- expand an image beyond its original boundaries using generative ai
-- text-to-image generation
-- generate images visually similar to a reference image
-- graphics
-- video generation
-- generate images
-- generate similar images
-- generate a video from a text prompt
-- video
-- fill a masked region of an image with ai-generated content
-- generate and composite an ai object into a scene
-- fill a masked region with ai-generated content
-- similar image generation from reference
-- generative image expansion
-- generate video
-- design
-- creative
 - expand an image beyond its boundaries
-- generative fill operations
-- fill image
-- expand image
-- image generation
-- generate composite
-- generate one or more images from a text prompt using adobe firefly
-- generate a short video clip from a text prompt
-- get the status of an async generation job
-- generate images similar to a reference image
-- content generation
-- generate an ai object and composite it into a scene image
-- photography
-- generative ai
-- get the status of an asynchronous firefly generation job
-- ai video generation
-- get job status
-- firefly
 - generation job status
+- expand image
+- graphics
+- content generation
+- generate similar images
+- video
+- generate a video from a text prompt
+- fill image
+- get job status
+- generate images visually similar to a reference image
+- generate an ai object and composite it into a scene image
+- generate and composite an ai object into a scene
+- ai video generation
+- fill a masked region with ai-generated content
+- generate images
+- expand an image beyond its original boundaries using generative ai
+- photography
+- creative
+- generative ai
+- video generation
+- generate one or more images from a text prompt using adobe firefly
+- fill a masked region of an image with ai-generated content
+- get the status of an asynchronous firefly generation job
+- get the status of an async generation job
+- firefly
+- ai object compositing
+- generate video
+- generate images from a text prompt
+- image generation
+- similar image generation from reference
+- design
+- generative fill operations
+- generate composite
 - adobe
+- generate a short video clip from a text prompt
+- generative image expansion
+- text-to-image generation
+- generate images similar to a reference image
 slug: ai-content-generation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe AI Content Generation\"\n  description: \"AI-powered content generation workflow using Adobe Firefly for creating images, videos, and visual variations from text prompts. Used by content creators, marketers, and designers who need to rapidly produce visual assets using generative AI.\"\n  tags:\n    - Adobe\n    - Firefly\n    - Generative AI\n    - Content Generation\n    - Image Generation\n    - Video Generation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_FIREFLY_TOKEN: ADOBE_FIREFLY_TOKEN\n\ncapability:\n  consumes:\n    - import: firefly\n      location: ./shared/firefly.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: ai-content-generation-api\n      description: \"Unified REST API for AI-powered content generation using Adobe Firefly.\"\n      resources:\n        - path: /v1/generations\n          name: generations\n          description:\
   \ \"Text-to-image generation\"\n          operations:\n            - method: POST\n              name: generate-images\n              description: \"Generate images from a text prompt\"\n              call: \"firefly.generate-images-async\"\n              with:\n                prompt: \"rest.prompt\"\n                negative_prompt: \"rest.negative_prompt\"\n                content_class: \"rest.content_class\"\n                num_variations: \"rest.num_variations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/generations/similar\n          name: similar-generations\n          description: \"Similar image generation from reference\"\n          operations:\n            - method: POST\n              name: generate-similar-images\n              description: \"Generate images similar to a reference image\"\n              call: \"firefly.generate-similar-images-async\"\n              with:\n                prompt:\

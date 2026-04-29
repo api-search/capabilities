@@ -40,68 +40,68 @@ personas: []
 provider_name: Merge
 provider_slug: merge
 search_terms:
-- application tracking.
-- ats list offers
-- list companies from the hris.
-- manages candidate pipeline and hiring workflow.
-- list time off requests.
-- employee management, benefits, time off, and payroll.
-- list all candidates.
-- list all applications.
-- list all employees.
-- ats
-- list candidates
-- create a time off request.
-- list all offers.
-- unified api
-- list applications
-- manages invoices, payments, and financial reporting.
-- time off management.
-- list scheduled interviews.
-- HR Manager
-- list jobs
-- list all job postings.
-- ats list applications
-- end-to-end talent management combining hris and ats.
-- create employee
-- create an employee in the hris.
-- platform
-- ats list jobs
-- ats list candidates
 - file storage, sharing, and permissions.
-- list employees
-- hris list employees
-- ats create candidate
-- ats list interviews
-- Recruiter
-- merge
-- list time off
-- create a new candidate.
-- hris list time off
-- hris create time off
-- manages leads, opportunities, and crm activities.
-- list employees from the connected hris.
-- candidate sourcing, applications, interviews, and offers.
-- crm, leads, opportunities, and engagements.
-- candidate pipeline management.
+- create employee
+- manages candidate pipeline and hiring workflow.
+- ats list candidates
+- list all open job postings.
+- list scheduled interviews.
+- list all offers.
+- list applications
+- create candidate
+- manages employee records, time off, and hr processes.
 - job postings.
-- list all applications from the ats.
 - list candidates from the connected ats.
-- create a new employee.
+- ats create candidate
+- time off management.
+- list all applications from the ats.
+- ats list offers
+- HR Manager
+- manages tickets and customer support issues.
+- list jobs
+- hris list companies
 - create a new candidate in the ats.
-- recruiting
+- integrations
+- talent management
+- list companies from the hris.
+- list time off requests.
+- create a new employee.
+- create an employee in the hris.
+- unified api
+- Recruiter
+- end-to-end talent management combining hris and ats.
+- candidate sourcing, applications, interviews, and offers.
+- platform
+- hris list employees
+- ats list jobs
+- list all employees.
+- list all candidates.
+- list all job postings.
 - invoicing, payments, expenses, and financial reporting.
 - ticket management and customer communication.
-- integrations
-- employee records.
-- manages employee records, time off, and hr processes.
-- manages tickets and customer support issues.
-- list all open job postings.
-- create candidate
+- application tracking.
 - hris create employee
-- talent management
+- recruiting
+- list time off
+- crm, leads, opportunities, and engagements.
+- list candidates
 - hris
-- hris list companies
+- candidate pipeline management.
+- ats list interviews
+- employee management, benefits, time off, and payroll.
+- list employees from the connected hris.
+- ats
+- create a new candidate.
+- hris list time off
+- employee records.
+- list all applications.
+- ats list applications
+- create a time off request.
+- manages leads, opportunities, and crm activities.
+- list employees
+- hris create time off
+- merge
+- manages invoices, payments, and financial reporting.
 slug: talent-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Merge Talent Management\"\n  description: \"Unified workflow combining HRIS and ATS APIs for end-to-end talent management, from candidate sourcing through onboarding and employee lifecycle. Used by HR teams, recruiters, and people operations.\"\n  tags:\n    - Merge\n    - Talent Management\n    - HRIS\n    - ATS\n    - Recruiting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MERGE_API_KEY: MERGE_API_KEY\n      MERGE_ACCOUNT_TOKEN: MERGE_ACCOUNT_TOKEN\n\ncapability:\n  consumes:\n    - import: merge-hris\n      location: ./shared/merge-hris-api.yaml\n    - import: merge-ats\n      location: ./shared/merge-ats-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: merge-talent-api\n      description: \"Unified REST API for talent management across HRIS and ATS.\"\n      resources:\n        - path: /v1/candidates\n          name: candidates\n         \
   \ description: \"Candidate pipeline management.\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List all candidates.\"\n              call: \"merge-ats.list-candidates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-candidate\n              description: \"Create a new candidate.\"\n              call: \"merge-ats.create-candidate\"\n              with:\n                model: \"rest.model\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications\n          name: applications\n          description: \"Application tracking.\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"List all applications.\"\n              call: \"merge-ats.list-applications\"\n            \

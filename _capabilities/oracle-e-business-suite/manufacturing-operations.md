@@ -28,52 +28,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- get discrete job by id.
-- manufacturing
-- retrieve wip operations.
-- list on-hand quantities.
-- inv get deliveries
-- mfg complete assembly
-- get bom by id.
-- mfg get bill of material by id
-- supply chain
-- get bills of material
-- enterprise
-- inventory item management.
-- retrieve sales orders.
 - issue material to a job.
-- retrieve deliveries.
-- e-business suite
-- get onhand quantities
-- list boms.
-- mfg get routings
+- mfg get bills of material
+- erp
+- inv get deliveries
+- create a discrete job.
+- list on-hand quantities.
+- mfg get bill of material by id
+- retrieve wip operations.
+- mfg get wip operations
+- inv get sales orders
+- mfg complete assembly
+- get discrete job by id.
 - get inventory items
+- inv get onhand quantities
+- list inventory items.
+- get bom by id.
+- retrieve routings.
+- discrete job management.
+- retrieve discrete jobs.
+- mfg get routings
+- mfg issue material
+- retrieve deliveries.
 - oracle
+- list discrete jobs.
+- e-business suite
+- inventory item management.
+- retrieve on-hand quantities.
+- business applications
+- retrieve sales orders.
+- mfg get discrete job by id
+- get onhand quantities
 - bom management.
 - retrieve inventory items.
-- mfg issue material
-- retrieve on-hand quantities.
-- get discrete jobs
-- inv get inventory items
-- inv get onhand quantities
 - retrieve bills of material.
-- mfg get discrete jobs
-- mfg get wip operations
-- list discrete jobs.
-- on-hand quantity management.
-- business applications
-- mfg get discrete job by id
-- retrieve discrete jobs.
-- mfg get bills of material
-- complete an assembly.
-- discrete job management.
+- list boms.
 - production
-- list inventory items.
-- erp
+- manufacturing
+- mfg get discrete jobs
+- inv get inventory items
+- enterprise
+- get bills of material
+- supply chain
+- get discrete jobs
+- complete an assembly.
+- on-hand quantity management.
 - mfg create discrete job
-- retrieve routings.
-- create a discrete job.
-- inv get sales orders
 slug: manufacturing-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Manufacturing Operations\"\n  description: \"Manufacturing execution combining BOMs, routings, discrete jobs, WIP operations, and inventory management. Used by production managers and shop floor supervisors for manufacturing lifecycle.\"\n  tags:\n    - Oracle\n    - Manufacturing\n    - Supply Chain\n    - Production\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n\ncapability:\n  consumes:\n    - import: oracle-manufacturing\n      location: ./shared/manufacturing.yaml\n    - import: oracle-supply-chain\n      location: ./shared/supply-chain.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: manufacturing-operations-api\n      description: \"Unified REST API for Oracle EBS manufacturing operations.\"\n      resources:\n        - path: /v1/bills-of-material\n          name: bills-of-material\n          description:\
   \ \"BOM management.\"\n          operations:\n            - method: GET\n              name: get-bills-of-material\n              description: \"List BOMs.\"\n              call: \"oracle-manufacturing.get-bills-of-material\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/discrete-jobs\n          name: discrete-jobs\n          description: \"Discrete job management.\"\n          operations:\n            - method: GET\n              name: get-discrete-jobs\n              description: \"List discrete jobs.\"\n              call: \"oracle-manufacturing.get-discrete-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory-items\n          name: inventory-items\n          description: \"Inventory item management.\"\n          operations:\n            - method: GET\n              name: get-inventory-items\n              description: \"List\

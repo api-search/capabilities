@@ -29,51 +29,51 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- list all advertising campaigns.
-- manage advertising campaigns and performance.
-- plans and executes advertising campaigns.
-- handles customer inquiries via messaging channels.
-- campaign management and audience targeting.
-- performance insights.
-- manage content across facebook, instagram, and threads.
 - Conversational Commerce
-- facebook
-- Ad Operations
-- customer messaging across messenger and whatsapp.
-- advertising
-- create a campaign.
 - manages day-to-day ad campaign optimization.
-- list custom audiences for targeting.
-- get advertising insights.
-- create custom audience
-- social networking
-- audience management.
-- creates and publishes visual and text content.
-- publishing and managing content across platforms.
-- list audiences
-- direct messaging and customer communication.
-- get insights
-- list custom audiences
-- Marketing Manager
-- manages content and engagement across meta platforms.
-- performance tracking and insights.
+- manage advertising campaigns and performance.
 - campaign management.
-- Customer Support
+- marketing
+- publishing and managing content across platforms.
+- performance tracking and insights.
+- customer messaging across messenger and whatsapp.
+- messaging
 - get advertising performance insights.
-- list campaigns
-- Social Media Manager
+- advertising
+- performance insights.
 - Content Creator
+- get ad insights
+- create custom audience
+- handles customer inquiries via messaging channels.
+- get insights
+- audience management.
+- Customer Support
+- list custom audiences
+- facebook
+- create a campaign.
+- plans and executes advertising campaigns.
+- creates and publishes visual and text content.
+- list advertising campaigns.
+- list all advertising campaigns.
+- list campaigns
+- Ad Operations
+- Social Media Manager
+- campaign management and audience targeting.
+- campaigns
+- list custom audiences.
+- social networking
+- content publishing
+- Marketing Manager
+- list audiences
 - create a new custom audience.
 - create campaign
-- content publishing
-- list custom audiences.
-- messaging
-- marketing
-- campaigns
-- create a new advertising campaign.
+- manages content and engagement across meta platforms.
+- direct messaging and customer communication.
+- manage content across facebook, instagram, and threads.
 - social media
-- get ad insights
-- list advertising campaigns.
+- list custom audiences for targeting.
+- create a new advertising campaign.
+- get advertising insights.
 slug: advertising-and-marketing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Facebook Advertising and Marketing\n  description: >-\n    Workflow capability for managing advertising campaigns across Facebook and\n    Instagram. Combines Marketing API for campaign management with Graph API for\n    content insights and Instagram API for visual ad performance. Used by\n    marketing managers and ad operations teams.\n  tags:\n    - Facebook\n    - Advertising\n    - Marketing\n    - Campaigns\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACEBOOK_MARKETING_TOKEN: FACEBOOK_MARKETING_TOKEN\n      FACEBOOK_ACCESS_TOKEN: FACEBOOK_ACCESS_TOKEN\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-api\n      location: ./shared/marketing-api.yaml\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n    - import: instagram-api\n      location: ./shared/instagram-api.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8081\n      namespace: advertising-api\n      description: \"Unified REST API for Facebook advertising and marketing.\"\n      resources:\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Campaign management.\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"List advertising campaigns.\"\n              call: \"marketing-api.list-campaigns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: \"Create a campaign.\"\n              call: \"marketing-api.create-campaign\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/insights\n          name: insights\n          description: \"Performance insights.\"\n          operations:\n            - method: GET\n      \

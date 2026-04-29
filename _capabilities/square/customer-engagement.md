@@ -67,106 +67,106 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- update customer
-- webhooks
-- create a booking.
-- get customer details.
-- gift cards
-- terminal
-- delete a customer profile.
-- create a new customer.
-- search loyalty accounts
-- create a digital gift card.
-- manage locations.
-- update team member
-- list locations
-- list customer profiles.
-- list bookings.
-- checkout
-- labor
-- get location details.
-- create a loyalty reward.
-- list gift cards.
-- accumulate loyalty points
-- search customers
-- manage gift cards.
-- get merchant details.
-- square
-- create team member
-- team management
-- create a location.
-- search for booking availability.
-- update a team member.
-- manage team members.
-- cancel booking
-- manage bookings.
-- team
-- refunds
-- list gift cards
-- cancel a booking.
-- update booking
-- locations
-- manage a specific booking.
-- catalog
-- invoicing
-- financial technology
-- subscriptions
-- delete customer
-- create a loyalty account.
-- list bookings
-- redeem a loyalty reward.
-- list all gift cards.
-- search loyalty accounts.
-- update a booking.
-- retrieve a booking.
 - list merchants
-- merchant information.
+- search loyalty accounts
 - create gift card
-- get booking details.
-- create a team member.
-- create customer
-- customers
-- manage a specific customer.
-- update a customer profile.
-- list business locations.
-- add points to a loyalty account.
-- retrieve the loyalty program.
-- loyalty
-- search availability
-- get customer
-- create loyalty account
-- get loyalty program
-- get team member
-- search customer profiles.
-- manage customers.
-- retail
-- get booking
-- bookings
-- search team members.
-- redeem loyalty reward
-- delete a customer.
-- create loyalty reward
-- ecommerce
-- disputes
-- manage loyalty programs.
-- get the loyalty program.
-- inventory
-- payments
-- get details for a specific customer.
-- get a team member.
-- create location
-- update a customer.
-- retrieve a gift card.
-- point of sale
-- create a gift card.
-- get gift card
-- create booking
-- search team members
-- merchants
-- orders
-- list customers
-- get location
+- create team member
+- merchant information.
+- update team member
+- manage bookings.
 - create a new customer profile.
+- labor
+- search team members
+- create a loyalty reward.
+- create booking
+- create customer
+- cancel a booking.
+- accumulate loyalty points
+- get merchant details.
+- gift cards
+- create a new customer.
+- delete customer
+- search loyalty accounts.
+- manage team members.
+- add points to a loyalty account.
+- checkout
+- orders
+- list bookings
+- search team members.
+- get team member
+- list customer profiles.
+- manage a specific booking.
+- square
+- manage gift cards.
+- update booking
+- create loyalty account
+- get the loyalty program.
+- webhooks
+- get gift card
+- get details for a specific customer.
+- manage a specific customer.
+- create a gift card.
+- update a customer profile.
+- create a digital gift card.
+- get booking details.
+- create location
+- get location
+- create a loyalty account.
+- retail
+- delete a customer profile.
+- search availability
+- update a booking.
+- update a customer.
+- invoicing
+- list gift cards
+- redeem a loyalty reward.
+- list bookings.
+- subscriptions
+- redeem loyalty reward
+- get a team member.
+- list gift cards.
+- ecommerce
+- financial technology
+- catalog
+- manage customers.
+- retrieve a booking.
+- disputes
+- create a booking.
+- retrieve a gift card.
+- delete a customer.
+- merchants
+- get customer
+- inventory
+- get customer details.
+- list business locations.
+- list customers
+- payments
+- loyalty
+- retrieve the loyalty program.
+- search customers
+- search customer profiles.
+- get booking
+- manage loyalty programs.
+- terminal
+- update a team member.
+- get location details.
+- list locations
+- create a team member.
+- create a location.
+- locations
+- customers
+- point of sale
+- manage locations.
+- search for booking availability.
+- refunds
+- bookings
+- list all gift cards.
+- team
+- get loyalty program
+- cancel booking
+- team management
+- create loyalty reward
+- update customer
 slug: customer-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Square Customer Engagement\"\n  description: \"Unified workflow for customer relationship management combining customers, loyalty programs, gift cards, bookings, team management, and location management. Used by business owners and customer success teams to build relationships and manage operations.\"\n  tags:\n    - Square\n    - Customers\n    - Loyalty\n    - Gift Cards\n    - Bookings\n    - Team Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SQUARE_ACCESS_TOKEN: SQUARE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: square\n      location: ./shared/square-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: square-engagement-api\n      description: \"Unified REST API for Square customer engagement, loyalty, bookings, and team management.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n         \
   \ description: \"Manage customers.\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"List customer profiles.\"\n              call: \"square.list-customers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: \"Create a new customer.\"\n              call: \"square.create-customer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers/{customer_id}\n          name: customer\n          description: \"Manage a specific customer.\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Get customer details.\"\n              call: \"square.get-customer\"\n              with:\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n\

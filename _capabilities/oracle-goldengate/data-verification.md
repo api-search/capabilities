@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- data quality
-- get job statistics
-- database
-- execute a comparison job
-- list comparison jobs
-- oracle goldengate
-- create a new veridata database connection
 - list connections
-- list process metrics
-- get veridata server information
-- real-time replication
-- list compare groups
-- enterprise
-- list jobs
-- list veridata database connections
-- data synchronization
-- compare groups
-- list replication process performance metrics
-- create a new comparison job
-- list groups
-- repair out-of-sync data identified by a comparison job
-- data verification
-- get out of sync data
-- get comparison job statistics
-- get details of out-of-sync data
-- run job
-- comparison jobs
-- list compare groups for data verification
-- create connection
-- get server info
-- create group
-- compliance
-- database connections for verification
-- data integration
 - replication process metrics
+- list groups
+- get out of sync data
+- list compare groups
+- list comparison jobs
+- repair out-of-sync data identified by a comparison job
+- create a new comparison job
+- real-time replication
+- list veridata database connections
+- list jobs
+- list compare groups for data verification
+- compliance
+- execute a comparison job
+- data integration
+- get server info
+- cdc
+- oracle goldengate
+- data quality
+- run job
+- database connections for verification
+- compare groups
+- get comparison job statistics
+- data synchronization
+- create a new veridata database connection
+- create group
 - repair job
+- list replication process performance metrics
+- create connection
+- data verification
 - get goldengate process performance metrics for monitoring replication health
+- get veridata server information
 - create job
 - create a new compare group
-- cdc
+- get job statistics
+- enterprise
+- comparison jobs
+- list process metrics
+- get details of out-of-sync data
+- database
 slug: data-verification
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Data Verification\"\n  description: \"Unified workflow for verifying data consistency between source and target databases. Combines Veridata for data comparison and repair with core GoldenGate monitoring for data quality engineers and DBAs ensuring replication integrity.\"\n  tags:\n    - Oracle GoldenGate\n    - Data Verification\n    - Data Quality\n    - Compliance\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VERIDATA_USERNAME: VERIDATA_USERNAME\n      VERIDATA_PASSWORD: VERIDATA_PASSWORD\n      OGG_USERNAME: OGG_USERNAME\n      OGG_PASSWORD: OGG_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-veridata\n      location: ./shared/goldengate-veridata.yaml\n    - import: goldengate-rest\n      location: ./shared/goldengate-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: data-verification-api\n      description:\
   \ \"Unified REST API for Oracle GoldenGate data verification workflows.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Database connections for verification\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List Veridata database connections\"\n              call: \"goldengate-veridata.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Compare groups\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List compare groups\"\n              call: \"goldengate-veridata.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Comparison\

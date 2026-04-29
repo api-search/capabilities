@@ -9,16 +9,16 @@ personas: []
 provider_name: BigPanda
 provider_slug: bigpanda
 search_terms:
-- triage, acknowledge, and resolve correlated incidents
-- it operations manager overseeing incident response
-- ai-powered correlation of alerts into actionable incidents
-- monitoring
-- schedule maintenance windows to suppress expected alerts
-- full incident lifecycle from alert ingestion to resolution
-- platform
-- site reliability engineer managing incidents and alert correlation
-- ingest change events to correlate with alert spikes
 - incidents
+- full incident lifecycle from alert ingestion to resolution
+- monitoring
+- it operations manager overseeing incident response
+- schedule maintenance windows to suppress expected alerts
+- site reliability engineer managing incidents and alert correlation
+- triage, acknowledge, and resolve correlated incidents
+- ai-powered correlation of alerts into actionable incidents
+- ingest change events to correlate with alert spikes
+- platform
 slug: incident-management
 source_yaml: "name: Incident Management\ndescription: >-\n  Workflow capability for managing IT incidents using BigPanda AIOps,\n  including alert ingestion, incident triage, environment management,\n  and maintenance scheduling.\nversion: v1\n\nimports:\n  - shared/bigpanda.yaml\n\ntools:\n  - name: send-alert\n    import: bigpanda.send-alert\n    description: >-\n      Ingest a monitoring alert from any source into BigPanda for AI-powered\n      correlation and incident creation.\n    inputSchema:\n      type: object\n      required:\n        - app_key\n        - status\n        - host\n      properties:\n        app_key:\n          type: string\n          description: BigPanda application key for routing\n        status:\n          type: string\n          description: Alert status (critical, warning, ok, acknowledged)\n        host:\n          type: string\n          description: Hostname associated with the alert\n        check:\n          type: string\n          description: Check or\
   \ metric name\n        description:\n          type: string\n          description: Human-readable alert description\n  - name: list-environments\n    import: bigpanda.list-environments\n    description: List all BigPanda environments for incident grouping.\n  - name: create-environment\n    import: bigpanda.create-environment\n    description: Create a new environment to group related incidents.\n    inputSchema:\n      type: object\n      required:\n        - name\n        - condition\n      properties:\n        name:\n          type: string\n          description: Environment name\n        condition:\n          type: string\n          description: Filter condition for grouping incidents\n  - name: list-incidents\n    import: bigpanda.list-incidents\n    description: List active and resolved incidents for an environment.\n    inputSchema:\n      type: object\n      required:\n        - environment_id\n      properties:\n        environment_id:\n          type: string\n          description:\

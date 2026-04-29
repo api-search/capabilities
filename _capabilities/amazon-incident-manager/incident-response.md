@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- manages incident response plans and responds to operational incidents
+- incident management
+- list timeline events for an incident
+- create a new incident response plan with escalation contacts
+- create response plan
 - automation
+- start a new incident and trigger response plan
+- monitors system reliability and coordinates incident resolution
 - list all incident response plans
+- devops
+- manage active incidents
+- operations
+- manages incident response plans and responds to operational incidents
+- aws
+- Site Reliability Engineer
+- update the summary or status of an active incident
+- list incidents
+- get incident
 - create incident
+- Operations Engineer
+- list active and recent incidents
+- creating, tracking, and resolving operational incidents
 - create a new incident
 - list timeline events
-- list incidents
-- list all response plans
-- incident management
-- create a new incident response plan with escalation contacts
-- creating, tracking, and resolving operational incidents
-- get incident
-- aws
-- automated incident response plans and escalation
-- manage active incidents
-- list active and recent incidents
-- update the summary or status of an active incident
-- devops
-- get details of a specific incident
-- list response plans
-- Operations Engineer
-- list timeline events for an incident
-- monitors system reliability and coordinates incident resolution
-- update incident
-- create response plan
-- Site Reliability Engineer
-- manage incident response plans
-- start a new incident and trigger response plan
 - list active incidents
-- operations
+- list all response plans
+- update incident
+- manage incident response plans
+- list response plans
+- automated incident response plans and escalation
+- get details of a specific incident
 slug: incident-response
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon Incident Manager - Incident Response\n  description: Unified capability for operations teams to manage incident response plans, respond to active incidents, update timelines, and coordinate responders.\n  tags:\n    - AWS\n    - Incident Management\n    - DevOps\n    - Operations\n    - Automation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: ssm-incidents\n      location: ./shared/ssm-incidents.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: Unified REST API for incident response management.\n      resources:\n        - path: /v1/response-plans\n          name: response-plans\n          description: Manage incident response plans\n          operations:\n            - method: GET\n\
   \              name: list-response-plans\n              description: List all response plans\n              call: \"ssm-incidents.list-response-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/incidents\n          name: incidents\n          description: Manage active incidents\n          operations:\n            - method: GET\n              name: list-incidents\n              description: List active incidents\n              call: \"ssm-incidents.list-incident-records\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-incident\n              description: Create a new incident\n              call: \"ssm-incidents.create-incident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: incident-response-mcp\n\

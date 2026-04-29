@@ -29,41 +29,41 @@ personas:
 provider_name: Alchemy
 provider_slug: alchemy
 search_terms:
-- query historical asset transfers for a wallet address.
 - get erc-20 token balances for a wallet address.
-- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
-- manages gas sponsorship infrastructure and erc-4337 policies.
-- blockchain
-- web3 platform engineer
+- combines token api and transfers api for wallet portfolio applications.
 - dapp developer
-- account abstraction
 - develops defi applications requiring portfolio tracking and token data.
-- wallet developer
-- portfolio
-- ethereum
-- get metadata (name, symbol, decimals, logo) for an erc-20 token contract.
-- query historical on-chain asset transfers for a wallet by address, block range, and category.
-- get erc-20 token balances for a wallet address across evm networks.
-- gas fee sponsorship and erc-4337 account abstraction.
-- get token balances
-- historical on-chain asset transfers.
-- erc-20 token metadata.
-- erc-20 token data and metadata.
-- creates decentralized applications with gasless ux for end users.
 - erc-20 token balances for a wallet.
+- on-chain asset transfer history.
+- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- gas fee sponsorship and erc-4337 account abstraction.
+- ethereum
+- wallet developer
+- query historical on-chain asset transfers for a wallet by address, block range, and category.
+- historical on-chain asset transfers.
+- account abstraction
+- erc-20 token metadata.
+- creates decentralized applications with gasless ux for end users.
+- web3 platform engineer
 - get asset transfers
-- alchemy
-- get token metadata
+- defi builder
+- get metadata (name, symbol, decimals, logo) for an erc-20 token contract.
+- erc-20 token data and metadata.
+- web3
+- manages gas sponsorship infrastructure and erc-4337 policies.
+- get erc-20 token balances for a wallet address across evm networks.
+- get token balances
+- builds evm wallet applications needing token balances and transaction history.
+- cryptocurrency
 - tokens
 - transfers
-- builds evm wallet applications needing token balances and transaction history.
-- combines token api and transfers api for wallet portfolio applications.
-- defi builder
-- get metadata for an erc-20 token contract.
-- cryptocurrency
-- web3
+- query historical asset transfers for a wallet address.
 - wallet balance and asset portfolio management.
-- on-chain asset transfer history.
+- alchemy
+- portfolio
+- get token metadata
+- blockchain
+- get metadata for an erc-20 token contract.
 slug: web3-wallet-portfolio
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Alchemy Web3 Wallet Portfolio\"\n  description: >-\n    Unified capability for building Web3 wallet and portfolio applications.\n    Combines the Token API for balance and metadata queries with the Transfers\n    API for transaction history. Designed for wallet developers, DeFi app\n    builders, and portfolio tracker teams who need comprehensive on-chain\n    data for any EVM-compatible wallet address.\n  tags:\n    - Alchemy\n    - Blockchain\n    - Portfolio\n    - Tokens\n    - Transfers\n    - Web3\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALCHEMY_API_KEY: ALCHEMY_API_KEY\n\ncapability:\n  consumes:\n    - import: token-api\n      location: ./shared/token-api.yaml\n    - import: transfers-api\n      location: ./shared/transfers-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: wallet-portfolio-api\n      description: \"Unified REST API\
   \ for Web3 wallet portfolio data.\"\n      resources:\n        - path: /v1/token-balances\n          name: token-balances\n          description: \"ERC-20 token balances for a wallet.\"\n          operations:\n            - method: POST\n              name: get-token-balances\n              description: \"Get ERC-20 token balances for a wallet address.\"\n              call: \"token-api.get-token-balances\"\n              with:\n                params: \"rest.params\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/token-metadata\n          name: token-metadata\n          description: \"ERC-20 token metadata.\"\n          operations:\n            - method: POST\n              name: get-token-metadata\n              description: \"Get metadata for an ERC-20 token contract.\"\n              call: \"token-api.get-token-metadata\"\n              with:\n                params: \"rest.params\"\n              outputParameters:\n\

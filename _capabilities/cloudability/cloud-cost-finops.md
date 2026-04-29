@@ -9,11 +9,11 @@ personas: []
 provider_name: Cloudability
 provider_slug: cloudability
 search_terms:
-- reporting
-- finops
-- cloud cost management
 - multi-cloud
+- cloud cost management
 - cost optimization
+- finops
+- reporting
 - recommendations
 slug: cloud-cost-finops
 source_yaml: "# Naftiko capabilities profile for Cloudability (Apptio / IBM).\n# Capabilities map FinOps verbs against the Cloudability v3 REST API:\n# reporting, business mappings, rightsizing, anomalies, vendor onboarding,\n# views, and budgets.\nprovider: cloudability\nname: Cloudability\ndescription: >-\n  Capabilities cover building cost-and-usage reports, managing business\n  mapping allocation rules, surfacing rightsizing recommendations, querying\n  cost anomalies, onboarding cloud vendor credentials, and managing views\n  and budgets across AWS, Azure, GCP and other cloud accounts.\ncapabilities:\n  - id: cloudability.reporting.run\n    name: Run cost report\n    description: Build and execute a cost-and-usage query for a date range.\n    api: cloudability:api-v3\n    inputs:\n      - metrics\n      - dimensions\n      - filters\n      - start_date\n      - end_date\n      - sort\n    outputs:\n      - results\n      - row_count\n\n  - id: cloudability.reporting.dimensions\n   \

@@ -59,72 +59,72 @@ personas: []
 provider_name: Azure Active Directory
 provider_slug: azure-active-directory
 search_terms:
-- user lifecycle management.
-- create user
-- register a new application in azure ad.
-- delete an azure ad user account.
-- list user memberships
-- azure active directory
-- saml
-- list groups.
+- delete an azure ad group.
 - update user properties.
+- single sign-on
+- get user
+- list groups
+- list applications
+- list user memberships
+- get service principal
+- zero trust
+- saml
+- create application
+- group management.
+- azure active directory
+- list groups and roles a user belongs to.
+- service principal management.
+- get group details.
+- single group operations.
+- access management
+- list group members.
+- list members of an azure ad group.
+- list azure ad service principals.
 - get a service principal by id.
 - list azure ad application registrations.
-- list azure ad service principals.
-- list azure ad users with optional filtering.
-- list directory users.
 - get group
-- delete an azure ad group.
-- list applications
-- list service principals.
-- oauth
-- create a new azure ad group.
-- update azure ad user properties.
-- get service principal
-- authentication
-- zero trust
-- list groups and roles a user belongs to.
-- delete group
-- microsoft entra
-- get azure ad group details.
-- update user
-- delete a user.
-- single sign-on
-- get application
-- add a group member.
-- list groups
 - authorization
-- group membership.
-- list azure ad groups with optional filtering.
-- list group members.
-- group management.
-- access management
-- list app registrations.
-- delete user
-- service principal management.
-- openid connect
-- list users
+- microsoft
 - single user operations.
+- list group members
+- list service principals.
+- get application
+- delete a user.
+- add group member
+- list azure ad users with optional filtering.
 - create a new azure ad user account.
-- scim
+- list service principals
+- create user
+- create group
+- list app registrations.
+- get an application registration by id.
+- update azure ad user properties.
+- register a new application in azure ad.
+- get azure ad user details by id or upn.
+- create a group.
+- get user details.
+- openid connect
+- list azure ad groups with optional filtering.
+- authentication
+- list groups.
+- list users
+- delete group
+- group membership.
+- delete an azure ad user account.
+- user lifecycle management.
+- list directory users.
+- delete user
+- microsoft entra
+- add a group member.
 - app registration management.
 - identity
-- create group
+- create a new azure ad group.
+- update user
+- get azure ad group details.
 - create a new user.
-- list group members
-- get an application registration by id.
 - add a member to an azure ad group.
-- microsoft
-- get user
-- list service principals
-- create a group.
-- get azure ad user details by id or upn.
-- create application
-- get user details.
-- get group details.
-- add group member
-- list members of an azure ad group.
-- single group operations.
+- scim
+- oauth
 slug: identity-and-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure AD Identity and Access Management\"\n  description: \"Unified identity and access management workflow combining user lifecycle, group management, application registration, and service principal operations. Used by IT administrators and identity engineers to manage enterprise identity infrastructure.\"\n  tags:\n    - Microsoft Entra\n    - Identity\n    - Access Management\n    - Azure Active Directory\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_ACCESS_TOKEN: MICROSOFT_GRAPH_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-identity\n      location: ./shared/microsoft-graph-identity.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-ad-iam-api\n      description: \"Unified REST API for Azure AD identity and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description:\
   \ \"User lifecycle management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List directory users.\"\n              call: \"graph-identity.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user.\"\n              call: \"graph-identity.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user-detail\n          description: \"Single user operations.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details.\"\n              call: \"graph-identity.get-user\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type:\

@@ -15,27 +15,27 @@ provider_name: Microsoft Azure
 provider_slug: azure
 search_terms:
 - resource management
-- management
-- list resource resources
 - infrastructure
-- list providers
-- azure resource management
-- azure
-- list subscription resources
-- list resources
-- cloud computing
-- list resource groups
 - storage
-- list provider resources
+- list resource resources
 - cloud
-- list all resources
+- azure resource management
 - list subscriptions
-- machine learning
-- list
-- list resourcegroup resources
-- networking
-- platform as a service
+- list providers
+- list resources
 - databases
+- list
+- machine learning
+- cloud computing
+- list resourcegroup resources
+- management
+- list all resources
+- networking
+- list provider resources
+- list resource groups
+- azure
+- platform as a service
+- list subscription resources
 slug: azure-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Azure Management\"\n  description: \"Workflow capability for managing Microsoft Azure resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure\n      location: ./shared/azure.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: azure-management-api\n      description: \"Unified REST API for Microsoft Azure management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description: \"List all resources\"\n              call: \"azure.list-subscriptions\"\
   \n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9094\n      namespace: azure-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Microsoft Azure management.\"\n      tools:\n        - name: list-subscriptions\n          description: \"List Subscription resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure.list-subscriptions\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-resource-groups\n          description: \"List ResourceGroup resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure.list-resource-groups\"\n          with:\n            subscriptionId:\

@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cognitive list accounts
-- openai create speech
-- cognitive services accounts
-- ai
-- list openai models
-- list model deployments
-- generate images from text
-- openai list models
-- list available openai models
-- openai create completion
-- model listing
-- openai create embedding
-- enterprise
-- openai
-- embedding operations
-- create chat completion
-- generate speech from text
-- cognitive services
-- create a chat completion using azure openai
-- openai create image
-- azure
-- openai create chat completion
-- openai create transcription
 - list cognitive services accounts
-- create embedding
-- infrastructure as a service
-- create a text completion
-- transcribe audio to text
-- cloud computing
-- openai list deployments
-- t1
-- cognitive list models
-- list cognitive accounts
-- cloud
-- list available ai models
-- chat completion operations
-- create a chat completion
-- create text embeddings
-- openai create translation
-- platform as a service
+- create a chat completion using azure openai
 - api management
+- cognitive services accounts
+- generate images from text
+- list available ai models
+- cognitive list models
+- cloud
+- transcribe audio to text
+- openai create transcription
+- openai create embedding
+- create text embeddings
+- create chat completion
+- create a chat completion
+- embedding operations
+- openai create chat completion
+- openai create translation
+- infrastructure as a service
+- model listing
+- create a text completion
+- list available openai models
+- list openai models
+- openai create completion
+- cloud computing
+- openai create image
+- openai create speech
+- chat completion operations
+- cognitive list accounts
+- create embedding
+- list model deployments
+- openai
+- openai list deployments
+- enterprise
+- cognitive services
+- list cognitive accounts
+- azure
+- ai
+- platform as a service
+- t1
+- openai list models
 - translate audio to english
+- generate speech from text
 slug: ai-and-cognitive
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure AI and Cognitive Services\"\n  description: \"Unified workflow for Azure AI capabilities combining OpenAI Service for generative AI and Cognitive Services for account and model management. Used by AI engineers, ML ops teams, and application developers building intelligent applications.\"\n  tags:\n    - Azure\n    - AI\n    - OpenAI\n    - Cognitive Services\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_OPENAI_API_KEY: AZURE_OPENAI_API_KEY\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-openai\n      location: ./shared/openai-service.yaml\n    - import: azure-cognitive\n      location: ./shared/cognitive-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-ai-api\n      description: \"Unified REST API for Azure AI services.\"\n      resources:\n        - path: /v1/chat/completions\n\
   \          name: chat-completions\n          description: \"Chat completion operations\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"azure-openai.create-chat-completion\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Embedding operations\"\n          operations:\n            - method: POST\n              name: create-embedding\n              description: \"Create text embeddings\"\n              call: \"azure-openai.create-embedding\"\n              with:\n                deployment-id: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name:\

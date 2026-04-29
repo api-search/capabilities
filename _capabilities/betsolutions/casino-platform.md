@@ -30,46 +30,46 @@ personas: []
 provider_name: BetSolutions
 provider_slug: betsolutions
 search_terms:
-- player information
-- get player profile and account information
-- get the complete list of available betsolutions casino games with rtp and product metadata
-- betsolutions
-- table games
-- betting
-- get player wallet balance
-- wallet
-- deposit funds to player wallet
-- slots
-- list casino games
-- withdraw funds from a player's casino wallet
-- casino game catalog
-- withdraw funds from a casino player's wallet account
-- gambling
-- Platform Developer
-- deposit funds
-- player fund deposits, withdrawals, and balance operations
 - withdraw funds from player wallet
-- retrieve current wallet balance for a player
-- wallet management, game catalog, and player operations for casino operators
-- get the complete casino game catalog
-- list games
-- gaming
-- sports betting
-- get profile and account information for a casino player
-- casinos
-- get player profile
-- get the current wallet balance for a casino player
-- deposit funds to a casino player's wallet account for game play
-- casino
-- online casino operator integrating betsolutions into their gaming platform
-- available casino games and product metadata
+- withdraw funds from a casino player's wallet account
 - deposit funds to a player's casino wallet
 - withdraw funds
-- get player balance
-- get player
-- developer building casino platform features using the betsolutions api
-- player profile and account information
+- slots
+- get player profile and account information
+- player information
+- get profile and account information for a casino player
 - Casino Operator
+- get the complete casino game catalog
+- sports betting
+- casino game catalog
+- deposit funds to a casino player's wallet account for game play
+- developer building casino platform features using the betsolutions api
+- betting
+- list games
+- wallet management, game catalog, and player operations for casino operators
+- get the complete list of available betsolutions casino games with rtp and product metadata
+- get player profile
+- online casino operator integrating betsolutions into their gaming platform
+- get player wallet balance
+- withdraw funds from a player's casino wallet
+- get player balance
+- casinos
+- casino
+- wallet
+- available casino games and product metadata
+- betsolutions
+- player profile and account information
+- get player
+- deposit funds
+- gaming
+- deposit funds to player wallet
+- player fund deposits, withdrawals, and balance operations
+- retrieve current wallet balance for a player
+- list casino games
+- get the current wallet balance for a casino player
+- gambling
+- Platform Developer
+- table games
 slug: casino-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"BetSolutions Casino Platform\"\n  description: >-\n    Unified casino platform workflow combining wallet management, player profile,\n    and game catalog operations. Designed for casino operators and developers\n    integrating BetSolutions into their gaming platforms. Provides complete\n    coverage of player wallet operations (transfer and seamless modes), game\n    discovery, and player data retrieval in a single workflow.\n  tags:\n    - BetSolutions\n    - Casino\n    - Gaming\n    - Wallet\n    - Slots\n    - Table Games\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BETSOLUTIONS_MERCHANT_ID: BETSOLUTIONS_MERCHANT_ID\n      BETSOLUTIONS_SECRET_KEY: BETSOLUTIONS_SECRET_KEY\n\ncapability:\n  consumes:\n    - import: betsolutions-wallet\n      location: ./shared/wallet-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: casino-platform-api\n  \
   \    description: \"Unified REST API for BetSolutions casino platform operations.\"\n      resources:\n        - path: /v1/wallet/balance\n          name: balance\n          description: \"Get player wallet balance\"\n          operations:\n            - method: POST\n              name: get-player-balance\n              description: \"Retrieve current wallet balance for a player\"\n              call: \"betsolutions-wallet.get-balance\"\n              with:\n                merchantId: \"rest.merchantId\"\n                playerId: \"rest.playerId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/wallet/deposit\n          name: deposit\n          description: \"Deposit funds to player wallet\"\n          operations:\n            - method: POST\n              name: deposit-funds\n              description: \"Deposit funds to a player's casino wallet\"\n              call: \"betsolutions-wallet.deposit-funds\"\n  \

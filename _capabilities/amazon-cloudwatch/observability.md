@@ -11,15 +11,15 @@ personas: []
 provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
-- cloudwatch
 - observability
-- metrics
-- Operations Engineer
-- aws
+- monitoring
 - amazon cloudwatch
 - amazon web services
-- monitoring
+- Operations Engineer
+- aws
 - logs
+- metrics
+- cloudwatch
 slug: observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon CloudWatch Observability and Monitoring\"\n  description: \"Workflow for observability and monitoring using Amazon CloudWatch for Operations Engineer personas.\"\n  tags:\n    - Amazon Web Services\n    - Amazon CloudWatch\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cloudwatch\n      location: ./shared/cloudwatch.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloudwatch-workflow-api\n      description: \"Unified REST API for Amazon CloudWatch observability and monitoring.\"\n      resources: []\n\n    - type: mcp\n      port: 9090\n      namespace: cloudwatch-workflow-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon CloudWatch observability and\
   \ monitoring.\"\n      tools: []\n"

@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- stream get video
-- ai gateway
-- list videos.
-- images upload image
-- serverless
-- cloudflare
-- upload a video from url.
-- edge computing
-- stream list videos
-- create a live streaming input.
-- upload an image.
-- video
-- get video details.
-- create a direct upload url for images.
-- list videos
-- list all images.
-- platform
-- artificial intelligence
-- list images
-- stream list live inputs
 - images get image
-- web performance
-- api gateway
-- create a direct upload url.
-- delete a video.
-- containers
-- images delete image
-- get image details.
-- images create direct upload
-- object storage
 - ddos protection
-- cdn
-- list live streaming inputs.
-- delete an image.
-- cloud
-- edge
-- stream create direct upload
-- security
-- image management.
-- real-time communication
-- images list images
-- stream upload video
-- stream delete video
-- dns
-- images
 - list all videos.
-- images list variants
-- media
-- list images.
+- list all images.
+- cdn
+- ai gateway
+- cloud
+- video
+- web performance
+- stream list videos
+- get image details.
+- stream create direct upload
+- image management.
+- create a direct upload url for images.
 - list image variants.
-- video management.
+- media
+- list videos.
+- create a live streaming input.
+- real-time communication
+- serverless
+- stream get video
+- list live streaming inputs.
+- images delete image
+- containers
+- edge computing
+- object storage
+- list images
+- get video details.
+- images create direct upload
+- images upload image
+- delete an image.
+- platform
 - stream create live input
+- upload an image.
+- stream list live inputs
+- security
+- list images.
+- video management.
+- delete a video.
+- cloudflare
+- list videos
+- create a direct upload url.
+- images list variants
+- api gateway
+- artificial intelligence
+- upload a video from url.
+- stream delete video
+- stream upload video
+- images list images
+- images
+- dns
+- edge
 slug: media-and-content
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Media and Content\"\n  description: \"Media management combining Stream video platform and Images service for uploading, processing, and delivering video and image content at scale. Used by content creators and media engineers.\"\n  tags:\n    - Cloudflare\n    - Media\n    - Video\n    - Images\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-stream\n      location: ./shared/stream.yaml\n    - import: cloudflare-images\n      location: ./shared/images.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: media-content-api\n      description: \"Unified REST API for Cloudflare media and content services.\"\n      resources:\n        - path: /v1/videos\n          name: videos\n          description: \"Video management.\"\n          operations:\n      \
   \      - method: GET\n              name: list-videos\n              description: \"List videos.\"\n              call: \"cloudflare-stream.list-videos\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Image management.\"\n          operations:\n            - method: GET\n              name: list-images\n              description: \"List images.\"\n              call: \"cloudflare-images.list-images\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: media-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare media management.\"\n      tools:\n        - name: stream-list-videos\n\

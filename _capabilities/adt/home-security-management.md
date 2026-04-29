@@ -39,55 +39,55 @@ personas: []
 provider_name: ADT
 provider_slug: adt
 search_terms:
-- security events.
-- list devices in a system.
-- property manager
-- automation
-- smart home
-- monitoring
-- business security administrator managing multi-site deployments
-- access control
-- iot
-- list video clips
-- access code management.
-- arm stay
-- homeowner
-- list devices
-- arm system
-- list all security systems.
-- unified workflow for managing adt smart home security
-- list all access codes configured for an adt security system.
-- adt
 - list access codes.
-- residential customer managing their home security system
-- get system status
-- create temporary access code
-- list all adt security systems associated with the account.
-- list security events.
-- home security
-- manager overseeing multiple residential properties
-- arm away
-- disarm system
 - list systems
-- list access codes
-- arm a security system.
-- get security events
-- disarm an adt security system.
-- list recorded video clips from an adt camera.
-- security
+- automation
 - create an access code.
-- list all security devices (sensors, cameras, locks) in an adt system.
-- check the current arming status of an adt security system.
-- create a temporary access code for contractors or guests with optional expiry time.
-- list security systems
-- arm an adt security system in away mode (all zones active).
-- arm an adt security system in stay mode (perimeter zones only).
-- security system management.
-- security devices.
 - create access code
-- retrieve recent security events, alarm history, and activity log.
-- disarm a security system.
+- arm an adt security system in stay mode (perimeter zones only).
 - list events
+- arm system
+- create a temporary access code for contractors or guests with optional expiry time.
+- adt
+- access control
+- arm stay
+- check the current arming status of an adt security system.
+- disarm an adt security system.
+- disarm a security system.
+- get security events
+- smart home
+- access code management.
+- list all security devices (sensors, cameras, locks) in an adt system.
+- security system management.
+- list devices
+- business security administrator managing multi-site deployments
+- retrieve recent security events, alarm history, and activity log.
+- list all adt security systems associated with the account.
+- arm an adt security system in away mode (all zones active).
+- property manager
+- iot
+- list access codes
+- list security systems
+- homeowner
+- residential customer managing their home security system
+- security
+- disarm system
+- home security
+- get system status
+- manager overseeing multiple residential properties
+- list video clips
+- monitoring
+- list security events.
+- unified workflow for managing adt smart home security
+- list all security systems.
+- list devices in a system.
+- arm away
+- list all access codes configured for an adt security system.
+- list recorded video clips from an adt camera.
+- security devices.
+- arm a security system.
+- security events.
+- create temporary access code
 slug: home-security-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ADT Home Security Management\"\n  description: \"Unified workflow capability for managing ADT smart home security systems, monitoring alarm events, controlling devices, managing access codes, and retrieving video clips. Designed for homeowners, property managers, and smart home integration developers.\"\n  tags:\n    - ADT\n    - Home Security\n    - Smart Home\n    - IoT\n    - Monitoring\n    - Access Control\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADT_ACCESS_TOKEN: ADT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: adt-platform\n      location: ./shared/platform-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: home-security-api\n      description: \"Unified REST API for ADT smart home security management — systems, devices, events, access codes, and video.\"\n      resources:\n        - path: /v1/systems\n          name: systems\n\
   \          description: \"Security system management.\"\n          operations:\n            - method: GET\n              name: list-systems\n              description: \"List all security systems.\"\n              call: \"adt-platform.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/systems/{systemId}/arm\n          name: arm-system\n          description: \"Arm a security system.\"\n          operations:\n            - method: POST\n              name: arm-system\n              description: \"Arm a security system.\"\n              call: \"adt-platform.arm-system\"\n              with:\n                systemId: \"rest.systemId\"\n                mode: \"rest.mode\"\n                accessCode: \"rest.accessCode\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/systems/{systemId}/disarm\n          name: disarm-system\n        \

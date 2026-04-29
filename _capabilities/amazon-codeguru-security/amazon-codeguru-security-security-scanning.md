@@ -11,35 +11,35 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- get findings
-- developer tools
-- create a new security scan
-- get security metrics summary
-- get metrics summary
-- developer persona.
-- list findings across all scans in the account
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
-- amazon
+- get scan
 - sast
+- developer tools
+- list security scans
+- list findings across all scans in the account
+- DevSecOps Engineer
+- create a new security scan
+- devsecops
+- get details about multiple findings
 - unified workflow for security and devops teams to create security scans, retrieve findings, track vu
 - aws
-- list findings by account
-- create scan
 - Developer
-- list scans
-- security engineer persona.
-- get security findings from a scan
-- get details about multiple findings
-- Security Engineer
-- DevSecOps Engineer
+- developer persona.
 - devsecops engineer persona.
-- security
-- code analysis
-- devsecops
-- get details about a security scan
-- list security scans
-- get scan
+- get security metrics summary
+- get findings
 - batch get findings
+- Security Engineer
+- security engineer persona.
+- list scans
+- amazon
+- get details about a security scan
+- security
+- create scan
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
+- get metrics summary
+- code analysis
+- list findings by account
+- get security findings from a scan
 slug: amazon-codeguru-security-security-scanning
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Security Application Security Scanning\n  description: Unified workflow for security and DevOps teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation using Amazon CodeGuru Security.\n  tags:\n  - Amazon\n  - AWS\n  - Security\n  - SAST\n  - Code Analysis\n  - DevSecOps\n  - Developer Tools\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codegurusecurity\n    location: ./shared/codegurusecurity.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codegurusecurity-security-scanning-api\n    description: Unified REST API for Application Security Scanning.\n    resources:\n    - path: /v1/createScan\n      name: create-scan\n      description: Create a new security\
   \ scan\n    - path: /v1/getScan\n      name: get-scan\n      description: Get details about a security scan\n    - path: /v1/listScans\n      name: list-scans\n      description: List security scans\n    - path: /v1/getFindings\n      name: get-findings\n      description: Get security findings from a scan\n  - type: mcp\n    port: 9090\n    namespace: codegurusecurity-security-scanning-mcp\n    transport: http\n    description: MCP server for AI-assisted Application Security Scanning.\n    tools:\n    - name: create-scan\n      description: Create a new security scan\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codegurusecurity.createScan\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-scan\n      description: Get details about a security scan\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codegurusecurity.getScan\n      outputParameters:\n      - type: object\n        mapping: $.\n    -\

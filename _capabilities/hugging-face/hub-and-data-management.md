@@ -47,76 +47,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- list all available model tags grouped by type.
-- list and search spaces
-- get parquet file urls for a dataset.
-- get rows
-- update settings for a repository.
-- get the first rows of a dataset split for preview.
-- list and search datasets on the hub.
-- manage datasets on the hub
-- search dataset rows
-- manage spaces on the hub
-- create a new model, dataset, or space repository on the hub.
-- list models
-- list and search models
-- preview dataset rows
-- delete a repository from the hub.
-- get size information for a dataset.
-- get croissant metadata
-- list and search spaces on the hub.
 - update repo settings
-- get dataset rows
-- get model revision
-- get information about the authenticated user.
-- get dataset details
-- search rows
-- search rows in a dataset
-- get rows from a dataset
-- get model information
-- datasets
-- hub
-- whoami
-- get dataset statistics
-- get authenticated user info
-- check dataset validity
-- search dataset
-- create repo
-- create a new repository
-- list dataset tags
-- user information
-- delete repo
-- get dataset
-- get croissant metadata for a dataset.
-- get detailed information about a specific model.
-- list and search ml models on the hugging face hub.
-- manage models on the hub
-- get model information at a specific revision or branch.
-- list all available dataset tags grouped by type.
-- check if a dataset is valid and available on the hub.
-- search for rows matching a query in a dataset.
-- get space
-- get model details
-- create repositories
 - get dataset splits
-- hugging face
-- get dataset information
-- get statistical information about a dataset split.
-- list datasets
-- get dataset parquet
-- models
+- search rows in a dataset
+- search for rows matching a query in a dataset.
 - data management
+- create repositories
+- get croissant metadata for a dataset.
+- get model revision
+- manage datasets on the hub
+- get dataset
+- get detailed information about a specific dataset.
+- search dataset rows
+- preview dataset rows
+- list and search spaces
+- get dataset size
+- get dataset details
+- list model tags
+- get model details
+- user information
+- whoami
+- list datasets
+- list and search ml models on the hugging face hub.
+- check dataset validity
+- get model information
+- create repo
+- list and search spaces on the hub.
+- get detailed information about a specific space.
+- get rows
+- get the list of splits for a dataset.
+- filter dataset
+- list and search models
+- models
+- get parquet file urls for a dataset.
+- get space
+- hugging face
+- get rows from a dataset split with pagination.
+- list dataset tags
+- get croissant metadata
+- list and search datasets on the hub.
+- get rows from a dataset
+- create a new repository
+- get size information for a dataset.
+- list models
+- list and search datasets
+- datasets
+- get the first rows of a dataset split for preview.
+- get detailed information about a specific model.
+- get information about the authenticated user.
+- get dataset information
+- get authenticated user info
+- filter dataset rows using a condition.
+- delete repo
+- get statistical information about a dataset split.
+- check if a dataset is valid and available on the hub.
+- create a new model, dataset, or space repository on the hub.
+- search dataset
+- get dataset statistics
+- list all available dataset tags grouped by type.
 - get model
 - list spaces
-- get dataset size
-- filter dataset rows using a condition.
-- filter dataset
-- get the list of splits for a dataset.
-- list and search datasets
-- get detailed information about a specific dataset.
-- get rows from a dataset split with pagination.
-- list model tags
-- get detailed information about a specific space.
+- delete a repository from the hub.
+- manage models on the hub
+- update settings for a repository.
+- manage spaces on the hub
+- get model information at a specific revision or branch.
+- list all available model tags grouped by type.
+- get dataset rows
+- hub
+- get dataset parquet
+- search rows
 slug: hub-and-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hugging Face Hub and Data Management\"\n  description: \"Unified workflow for managing models, datasets, and spaces on the Hugging Face Hub, and exploring dataset contents via the Dataset Viewer. Used by ML engineers, data scientists, and platform administrators for model discovery, dataset curation, and repository management.\"\n  tags:\n    - Hugging Face\n    - Hub\n    - Models\n    - Datasets\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HF_API_TOKEN: HF_API_TOKEN\n\ncapability:\n  consumes:\n    - import: hf-hub\n      location: ./shared/hub.yaml\n    - import: hf-dataset-viewer\n      location: ./shared/dataset-viewer.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: hf-hub-data-api\n      description: \"Unified REST API for Hugging Face Hub resource management and dataset exploration.\"\n      resources:\n        - path:\
   \ /v1/models\n          name: models\n          description: \"Manage models on the Hub\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List and search models\"\n              call: \"hf-hub.list-models\"\n              with:\n                search: \"rest.search\"\n                author: \"rest.author\"\n                filter: \"rest.filter\"\n                sort: \"rest.sort\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models/{repo_id}\n          name: model-details\n          description: \"Get model details\"\n          operations:\n            - method: GET\n              name: get-model\n              description: \"Get model information\"\n              call: \"hf-hub.get-model\"\n              with:\n                repo_id: \"rest.repo_id\"\n              outputParameters:\n                -\

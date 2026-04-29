@@ -38,61 +38,61 @@ personas: []
 provider_name: Figma
 provider_slug: figma
 search_terms:
-- get component
-- list published components for a team.
-- design systems
-- list team projects.
-- prototypes
-- files
-- render and export images from a figma file.
-- render images from a file.
-- team component access.
-- list version history of a figma file.
-- components
 - get file
-- prototyping
-- ui/ux
-- get specific nodes from a figma file by ids.
-- get download links for images used as fills in a file.
-- list published styles for a team.
-- get information about the authenticated user.
-- graphics
-- design file access.
-- get image fills
-- figma
-- list components in a figma file.
-- get team component sets
-- get file nodes
-- image rendering.
-- project file access.
-- get project files
-- get file versions
-- get a specific component by key.
-- component access.
-- get me
-- list comments on a figma file.
-- list published component sets for a team.
-- get images
+- get component
 - team project access.
+- get a figma file.
+- graphics
+- asset export
+- post comment
+- get comments
+- get a figma file document tree.
+- design file access.
 - list projects for a team.
+- post a comment on a figma file.
+- list team projects.
+- get download links for images used as fills in a file.
+- prototyping
+- get file versions
+- get me
+- list team components.
+- files
+- project file access.
+- ui/ux
+- list published styles for a team.
 - interfaces
 - get team components
-- design
-- post comment
-- asset export
-- get a component by key.
+- get specific nodes from a file.
+- get images
+- get file nodes
+- get team component sets
 - get file components
-- get comments
-- get team projects
+- get team styles
+- collaboration
+- team component access.
+- prototypes
+- design systems
+- get specific nodes from a figma file by ids.
+- get information about the authenticated user.
+- list version history of a figma file.
+- get a specific component by key.
+- list comments on a figma file.
+- render and export images from a figma file.
 - file node access.
 - list files in a project.
-- collaboration
-- post a comment on a figma file.
-- get specific nodes from a file.
-- list team components.
-- get team styles
-- get a figma file.
-- get a figma file document tree.
+- list published component sets for a team.
+- component access.
+- get image fills
+- figma
+- render images from a file.
+- design
+- image rendering.
+- get project files
+- list published components for a team.
+- list components in a figma file.
+- components
+- get team projects
+- get a component by key.
 slug: design-system-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Figma Design System Management\"\n  description: \"Unified workflow for managing design files, components, styles, projects, comments, and asset export. Combines the Figma REST API endpoints into a cohesive design system management experience. Used by design system engineers, developers, and design ops teams.\"\n  tags:\n    - Figma\n    - Design Systems\n    - Components\n    - Files\n    - Asset Export\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FIGMA_ACCESS_TOKEN: FIGMA_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: figma-rest\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: figma-design-api\n      description: \"Unified REST API for Figma design system management.\"\n      resources:\n        - path: /v1/files/{file_key}\n          name: files\n          description: \"Design file access.\"\n      \
   \    operations:\n            - method: GET\n              name: get-file\n              description: \"Get a Figma file.\"\n              call: \"figma-rest.get-file\"\n              with:\n                file_key: \"rest.file_key\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/files/{file_key}/nodes\n          name: file-nodes\n          description: \"File node access.\"\n          operations:\n            - method: GET\n              name: get-file-nodes\n              description: \"Get specific nodes from a file.\"\n              call: \"figma-rest.get-file-nodes\"\n              with:\n                file_key: \"rest.file_key\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images/{file_key}\n          name: images\n          description: \"Image rendering.\"\n          operations:\n            - method: GET\n              name: get-images\n\

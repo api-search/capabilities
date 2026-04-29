@@ -49,47 +49,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- campus solutions
-- human capital management.
-- case management
-- support and service cases
-- enterprise software
-- retrieve notifications for the current user.
-- financial and supply chain management.
-- peoplesoft
-- send a notification via email, text, or in-app channels.
-- supply chain management
-- chatbot intents
-- retrieve details for a specific customer.
-- list intents
-- crm
-- notification management
-- customer records
-- chatbot
-- list notifications
-- get customer
+- campus solutions.
+- erp
 - individual customer details
-- fulfill intent
-- sales opportunities
-- retrieve customer records.
-- list opportunities
-- financial management
-- process a chatbot intent fulfillment request.
-- retrieve support and service cases.
-- create a new support or service case.
-- list customers
-- create case
-- peopletools platform services.
-- retrieve available chatbot intents.
+- retrieve details for a specific customer.
 - chatbot intent fulfillments
 - send notification
-- list cases
-- erp
-- campus solutions.
-- hcm
-- customer engagement
-- sales
+- peoplesoft
 - retrieve sales opportunities.
+- retrieve support and service cases.
+- send a notification via email, text, or in-app channels.
+- process a chatbot intent fulfillment request.
+- financial management
+- list opportunities
+- fulfill intent
+- chatbot intents
+- crm
+- customer engagement
+- create case
+- supply chain management
+- sales opportunities
+- peopletools platform services.
+- customer records
+- support and service cases
+- enterprise software
+- sales
+- list cases
+- list intents
+- human capital management.
+- retrieve available chatbot intents.
+- notification management
+- get customer
+- financial and supply chain management.
+- retrieve customer records.
+- campus solutions
+- create a new support or service case.
+- list customers
+- chatbot
+- list notifications
+- hcm
+- retrieve notifications for the current user.
+- case management
 slug: customer-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Customer Engagement\"\n  description: \"Unified workflow for CRM users combining customer management, case management, sales, chatbot integration, and notifications across PeopleSoft CRM, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - CRM\n    - Customer Engagement\n    - Case Management\n    - Sales\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: crm\n      location: ./shared/crm.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: customer-engagement-api\n      description: \"Unified REST API\
   \ for PeopleSoft customer engagement workflows.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n          description: \"Customer records\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"Retrieve customer records.\"\n              call: \"crm.list-customers\"\n              with:\n                search: \"rest.search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers/{customerId}\n          name: customer-detail\n          description: \"Individual customer details\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Retrieve details for a specific customer.\"\n              call: \"crm.get-customer\"\n              with:\n                customerId: \"rest.customerId\"\n              outputParameters:\n                - type: object\n        \

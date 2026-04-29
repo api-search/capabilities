@@ -42,62 +42,62 @@ personas: []
 provider_name: Cisco Nexus Dashboard
 provider_slug: cisco-nexus
 search_terms:
-- create a vlan
-- nexus
-- get switch virtual interface configuration
-- list all physical interfaces
-- get bgp config
-- static route management
-- data center
-- cisco
-- vlan management
-- list all physical ethernet interfaces on the switch
-- get static route
-- sdn
-- network management
-- system information
 - infrastructure
-- network automation
-- configure interface
-- create or modify a switch virtual interface for layer 3 routing
-- list all ipv4 static routes across all vrfs
-- get configuration and operational state of a physical interface
-- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
 - configure svi
-- interface management
-- create vlan
-- single vlan operations
-- list routes
-- get a specific static route by vrf and prefix
-- get nexus switch system information including hostname, serial, and nx-os version
-- list all vlans
-- list all static routes
-- apply system-level configuration changes
-- configure system
 - switches
-- list interfaces
-- delete a vlan bridge domain from the switch
-- list static routes
-- list all vlan bridge domains on the switch
+- list all ipv4 static routes across all vrfs
+- list all physical interfaces
 - configure static route
-- get interface
-- get svi
-- get vlan bridge domain details
-- get vlan details
-- get system information
-- single interface operations
-- list vlans
-- get vlan
-- create or modify ipv4 static routes
-- create or modify a vlan bridge domain
-- configure features
-- delete a vlan
-- networking
-- delete vlan
-- get the full bgp configuration tree
+- list all vlan bridge domains on the switch
+- configure interface
+- network management
+- list routes
+- list interfaces
+- get static route
+- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
 - get interface details
-- get system info
 - configure a physical ethernet interface (admin state, speed, vlan, etc.)
+- get svi
+- configure system
+- system information
+- list static routes
+- get system information
+- delete vlan
+- get configuration and operational state of a physical interface
+- get interface
+- single interface operations
+- delete a vlan
+- list all vlans
+- data center
+- get vlan bridge domain details
+- list all physical ethernet interfaces on the switch
+- configure features
+- create or modify ipv4 static routes
+- list all static routes
+- interface management
+- network automation
+- get vlan details
+- get system info
+- sdn
+- get the full bgp configuration tree
+- apply system-level configuration changes
+- networking
+- get nexus switch system information including hostname, serial, and nx-os version
+- get vlan
+- get switch virtual interface configuration
+- nexus
+- get a specific static route by vrf and prefix
+- delete a vlan bridge domain from the switch
+- create or modify a vlan bridge domain
+- get bgp config
+- vlan management
+- create vlan
+- cisco
+- create or modify a switch virtual interface for layer 3 routing
+- single vlan operations
+- list vlans
+- create a vlan
+- static route management
 slug: switch-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cisco Nexus Switch Management\"\n  description: \"Unified workflow for network administrators to configure and monitor Cisco Nexus switches including interfaces, VLANs, routing, and system features via the NX-API REST DME object model.\"\n  tags:\n    - Cisco\n    - Nexus\n    - Network Management\n    - Data Center\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEXUS_USERNAME: NEXUS_USERNAME\n      NEXUS_PASSWORD: NEXUS_PASSWORD\n\ncapability:\n  consumes:\n    - import: nxapi-rest\n      location: ./shared/nxapi-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: switch-management-api\n      description: \"Unified REST API for Cisco Nexus switch management.\"\n      resources:\n        - path: /v1/system\n          name: system\n          description: \"System information\"\n          operations:\n            - method: GET\n              name: get-system-info\n\
   \              description: \"Get system information\"\n              call: \"nxapi-rest.get-system-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/interfaces\n          name: interfaces\n          description: \"Interface management\"\n          operations:\n            - method: GET\n              name: list-interfaces\n              description: \"List all physical interfaces\"\n              call: \"nxapi-rest.list-physical-interfaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/interfaces/{interfaceId}\n          name: interface-detail\n          description: \"Single interface operations\"\n          operations:\n            - method: GET\n              name: get-interface\n              description: \"Get interface details\"\n              call: \"nxapi-rest.get-physical-interface\"\n              with:\n                interfaceId:\

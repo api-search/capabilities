@@ -34,51 +34,51 @@ personas: []
 provider_name: Amazon Ground Station
 provider_slug: amazon-ground-station
 search_terms:
-- cancel satellite contact
-- schedule a new satellite contact window at an aws ground station
-- amazon ground station
-- create a new mission profile
-- list available ground stations
-- list configs
-- list all satellite contacts
 - list all satellites that can be tracked through aws ground station
-- create a new mission profile defining satellite operations parameters
-- list all mission profiles
-- Mission Control Engineer
-- iot
-- describe contact
-- list ground station locations
-- aws
-- list all configured satellite mission profiles
-- Satellite Operator
-- space technology
-- list ground stations
 - list satellite contacts
-- create mission profile
-- list satellites
-- data processing
-- mission control
-- cancel a previously scheduled satellite contact
-- get detailed information about a specific satellite contact
-- satellite tracking information
+- list ground stations
 - satellite communications
-- create dataflow endpoint group
-- list contacts
-- satellite operations
-- list all scheduled and historical satellite contacts with status and timing
-- list all available aws ground station antenna locations worldwide
-- list trackable satellites
-- schedules and manages satellite contacts and data downlinks
-- configures mission profiles and dataflow infrastructure
-- ground station locations
-- create a dataflow endpoint group for satellite data delivery
 - schedule a satellite contact
+- list contacts
+- mission control
+- schedule a new satellite contact window at an aws ground station
+- get detailed information about a specific satellite contact
+- describe contact
+- list all available aws ground station antenna locations worldwide
+- aws
+- cancel satellite contact
+- create a dataflow endpoint group for satellite data delivery
+- space technology
+- schedules and manages satellite contacts and data downlinks
+- list all configured satellite mission profiles
+- list available ground stations
+- list all mission profiles
 - reserve satellite contact
-- list mission profiles
-- satellite mission profiles
+- satellite operations
+- create dataflow endpoint group
+- list ground station locations
+- iot
+- configures mission profiles and dataflow infrastructure
+- Satellite Operator
+- satellite tracking information
+- list satellites
+- list all satellite contacts
+- amazon ground station
+- data processing
+- create a new mission profile
+- list trackable satellites
 - reserve contact
-- satellite contact scheduling
+- cancel a previously scheduled satellite contact
 - list all dataflow endpoint and antenna configurations
+- satellite mission profiles
+- list mission profiles
+- list all scheduled and historical satellite contacts with status and timing
+- create a new mission profile defining satellite operations parameters
+- Mission Control Engineer
+- satellite contact scheduling
+- list configs
+- ground station locations
+- create mission profile
 slug: amazon-ground-station-satellite-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Ground Station Satellite Operations\n  description: >-\n    Workflow capability for satellite operators and mission control teams using\n    Amazon Ground Station. Covers contact scheduling, mission profile management,\n    satellite tracking, and dataflow configuration for satellite operations.\n  tags:\n    - Amazon Ground Station\n    - Satellite Operations\n    - Mission Control\n    - Space Technology\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-ground-station\n      location: ./shared/amazon-ground-station.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: ground-station-ops-api\n      description: Unified REST API for Amazon Ground Station satellite operations.\n\
   \      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: Satellite contact scheduling\n          operations:\n            - method: GET\n              name: list-contacts\n              description: List all satellite contacts\n              call: amazon-ground-station.ListContacts\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: reserve-contact\n              description: Schedule a satellite contact\n              call: amazon-ground-station.ReserveContact\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/satellites\n          name: satellites\n          description: Satellite tracking information\n          operations:\n            - method: GET\n              name: list-satellites\n              description: List trackable satellites\n              call: amazon-ground-station.ListSatellites\n\

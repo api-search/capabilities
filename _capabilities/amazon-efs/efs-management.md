@@ -30,33 +30,33 @@ personas: []
 provider_name: Amazon EFS
 provider_slug: amazon-efs
 search_terms:
-- amazon efs create file system
-- amazon efs describe mount targets
-- file system management business domain for amazon efs.
-- serverless
-- createMountTarget
-- create file system
-- nfs
 - engineers managing amazon efs resources on aws.
-- aws
-- describe file systems
-- describe mount targets
-- amazon efs create mount target
-- amazon efs delete file system
-- file system
-- amazon efs
-- delete file system
-- amazon web services
-- amazon efs describe file systems
 - storage
-- deleteFileSystem
-- workflow capability for file system management.
+- elastic file system
+- amazon efs describe mount targets
+- createMountTarget
+- amazon efs create file system
+- nfs
+- amazon efs
+- amazon efs create mount target
 - create mount target
 - describeFileSystems
-- file storage
-- elastic file system
+- file system
+- aws
+- serverless
+- describe mount targets
+- describe file systems
+- deleteFileSystem
+- workflow capability for file system management.
 - createFileSystem
+- create file system
+- amazon efs delete file system
+- amazon efs describe file systems
+- file system management business domain for amazon efs.
+- amazon web services
 - efs
+- file storage
+- delete file system
 - describeMountTargets
 slug: efs-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EFS Elastic File System Management\"\n  description: \"Unified capability for managing EFS file systems, mount targets, and access points for storage administrators.\"\n  tags:\n    - Amazon EFS\n    - AWS\n    - Storage\n    - File System\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: efs\n      location: ./shared/efs.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: efs-api\n      description: \"Unified REST API for Elastic File System Management.\"\n      resources:\n        - path: /v1/2015-02-01/file-systems\n          name: describeFileSystems\n          description: \"Amazon EFS Describe File Systems\"\n          operations:\n            - method: GET\n              name: describeFileSystems\n             \

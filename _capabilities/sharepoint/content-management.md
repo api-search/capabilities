@@ -40,39 +40,39 @@ personas: []
 provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
-- get lists
-- enterprise content management
-- list all sharepoint lists
-- get web
-- update a sharepoint list item
-- list files in a sharepoint folder
-- download a file from sharepoint
 - create list
-- update list item
-- delete list item
-- get items from a sharepoint list
-- create a new sharepoint list
-- search
-- search query
-- upload file
-- get current user's sharepoint profile
+- update a sharepoint list item
 - get my user profile
-- upload a file to sharepoint
-- get sharepoint site properties
-- get list items
-- intranet
-- create list item
-- collaboration
 - sharepoint
 - delete a sharepoint list item
-- microsoft
-- document management
-- content management
+- upload file
+- search
+- create list item
 - add an item to a sharepoint list
-- download file
+- list files in a sharepoint folder
+- list all sharepoint lists
+- get sharepoint site properties
+- get lists
+- download a file from sharepoint
+- microsoft
+- get list items
+- get current user's sharepoint profile
+- get web
+- create a new sharepoint list
+- collaboration
+- intranet
+- enterprise content management
+- get items from a sharepoint list
 - search across all sharepoint content
 - get files in folder
+- delete list item
+- document management
+- upload a file to sharepoint
 - get files
+- update list item
+- search query
+- download file
+- content management
 slug: content-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SharePoint Content Management\"\n  description: \"Unified workflow for managing SharePoint content including sites, lists, items, files, and search. Used by content managers, site admins, and collaboration teams.\"\n  tags:\n    - SharePoint\n    - Content Management\n    - Collaboration\n    - Document Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SHAREPOINT_ACCESS_TOKEN: SHAREPOINT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: sp-sites-lists\n      location: ./shared/sites-and-lists.yaml\n    - import: sp-files-search\n      location: ./shared/files-and-search.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sp-content-api\n      description: \"Unified REST API for SharePoint content management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          operations:\n            - method: GET\n          \
   \    name: get-web\n              call: \"sp-sites-lists.get-web\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists\n          name: lists\n          operations:\n            - method: GET\n              name: get-lists\n              call: \"sp-sites-lists.get-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-list\n              call: \"sp-sites-lists.create-list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists/{title}/items\n          name: items\n          operations:\n            - method: GET\n              name: get-list-items\n              call: \"sp-sites-lists.get-list-items\"\n              with:\n                list_title: \"rest.title\"\n              outputParameters:\n                - type: object\n  \

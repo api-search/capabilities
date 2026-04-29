@@ -67,67 +67,67 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- evaluateVariantsGet
-- experiment management api getExperiment
-- createExperiment
-- manage event schemas and chart annotations. for data governance teams.
-- experiment management api updateFlag
-- amplitude
-- amplitude create a flag
 - experiment evaluation api getFlags
-- user behavior
-- amplitude list all deployments
-- privacy compliance
-- getExperiment
-- ingests and exports event data
-- amplitude list all experiments
-- listVersions
-- experimentation
-- amplitude get a flag
-- amplitude get an experiment
-- amplitude list all flags
-- experiment evaluation api evaluateVariantsGet
-- experiment management api listExperiments
-- listDeployments
-- getFlags
-- export raw event data and manage behavioral cohorts. for data analysts.
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- listExperiments
 - analyzes data and manages cohorts
-- getFlag
-- amplitude get a deployment
-- experiment management api listDeployments
-- amplitude list flag and experiment versions
-- analytics
-- amplitude evaluate variants for a user
-- feature flags
-- experiment evaluation api evaluateVariants
-- manages privacy and compliance
+- listDeployments
 - updateExperiment
-- experiment management api listFlags
-- data governance
-- experiment management api createExperiment
-- evaluateVariants
-- listFlags
-- amplitude update a flag
-- product analytics
-- experiment management api listVersions
-- experiment management api getDeployment
-- identity management
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- amplitude get flag configurations
+- amplitude get a deployment
 - experiment management api createFlag
+- experiment management api getExperiment
+- getExperiment
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- experiment evaluation api evaluateVariants
+- amplitude update a flag
+- updateFlag
+- amplitude list all flags
+- listFlags
+- runs experiments and feature flags
+- manage event schemas and chart annotations. for data governance teams.
+- amplitude get flag configurations
+- amplitude get an experiment
+- experiment management api listVersions
+- data governance
+- experiment management api listExperiments
+- experiment management api listDeployments
+- getDeployment
+- getFlag
+- identity management
+- amplitude get a flag
+- experiment management api listFlags
+- experimentation
 - amplitude update an experiment
-- unified workflow for sending events and identifying users. for data engineers.
+- listVersions
 - a/b testing
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- export raw event data and manage behavioral cohorts. for data analysts.
+- getFlags
+- manages privacy and compliance
+- experiment evaluation api evaluateVariantsGet
+- evaluateVariants
+- createFlag
+- amplitude
+- amplitude evaluate variants for a user via get
+- listExperiments
+- evaluateVariantsGet
+- createExperiment
 - amplitude create an experiment
 - experiment management api getFlag
-- createFlag
-- amplitude evaluate variants for a user via get
 - experiment management api updateExperiment
-- getDeployment
-- updateFlag
-- runs experiments and feature flags
+- amplitude list flag and experiment versions
+- experiment management api getDeployment
+- product analytics
+- user behavior
+- analytics
+- amplitude create a flag
+- amplitude list all deployments
+- amplitude list all experiments
+- ingests and exports event data
+- experiment management api createExperiment
+- unified workflow for sending events and identifying users. for data engineers.
+- experiment management api updateFlag
+- privacy compliance
+- feature flags
+- amplitude evaluate variants for a user
 slug: amplitude-experimentation
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Experimentation\n  description: Manage and evaluate A/B experiments and feature flags. For product managers.\n  tags:\n  - Amplitude\n  - Experimentation\n  - Feature Flags\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: experiment-evaluation-api\n    location: ./shared/experiment-evaluation-api.yaml\n  - import: experiment-management-api\n    location: ./shared/experiment-management-api.yaml\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: amplitude-experimentation-api\n    description: REST API for Amplitude Experimentation\n    resources:\n    - path: /v1/evaluation\n      name: evaluation\n      operations:\n      - method: GET\n        name: evaluateVariantsGet\n        description: Amplitude Evaluate Variants for a User via GET\n        call: experiment-evaluation-api.evaluateVariantsGet\n  \
   \      with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/evaluation\n      name: evaluation\n      operations:\n      - method: POST\n        name: evaluateVariants\n        description: Amplitude Evaluate Variants for a User\n        call: experiment-evaluation-api.evaluateVariants\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/flags\n      name: flags\n      operations:\n      - method: GET\n        name: getFlags\n        description: Amplitude Get Flag Configurations\n        call: experiment-evaluation-api.getFlags\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/flags\n      name: flags\n      operations:\n      - method: GET\n        name: listFlags\n        description: Amplitude List All Flags\n        call: experiment-management-api.listFlags\n        with: {}\n        outputParameters:\n        - type: object\n\

@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- upload a new video to youtube
-- delete a playlist
-- captions
-- upload a new video
-- create playlist
-- list captions
-- upload a new caption track
-- streaming
-- add playlist item
-- delete a caption track
 - update playlist details
-- list playlist items
-- video
-- upload caption
-- list videos
-- delete a video from youtube
-- social
-- remove playlist item
-- list youtube playlists
-- remove a video from a playlist
-- list youtube videos matching criteria
 - videos
+- list captions
 - list items in a playlist
-- update video metadata
-- delete a video
-- update caption
-- update a caption track
-- playlists
-- youtube
-- google
-- manage video captions
-- manage youtube videos
-- manage youtube playlists
-- add a video to a playlist
-- update video
-- create a new playlist
+- delete a video from youtube
+- captions
 - manage items within playlists
-- delete caption
-- list videos matching criteria
-- delete video
-- delete playlist
-- upload a caption track
-- content management
+- add a video to a playlist
+- video
+- manage youtube videos
+- delete a video
+- delete a caption track
+- upload a new video to youtube
+- google
+- remove a video from a playlist
+- list playlist items
+- playlists
+- manage youtube playlists
+- update caption
+- social
 - media
 - update playlist
 - upload video
-- list playlists
+- list youtube playlists
+- update video
 - list caption tracks for a video
+- upload a caption track
+- create playlist
+- remove playlist item
+- streaming
+- upload a new video
+- delete video
+- upload a new caption track
+- update a caption track
+- update video metadata
+- create a new playlist
+- list youtube videos matching criteria
+- list videos matching criteria
+- upload caption
+- list videos
+- delete a playlist
+- delete playlist
+- delete caption
+- youtube
+- add playlist item
+- manage video captions
+- list playlists
+- content management
 slug: content-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Content Management\"\n  description: \"Unified workflow for managing YouTube video content lifecycle including uploading, updating, organizing into playlists, managing captions, and moderating comments. Designed for content creators, media teams, and platform administrators.\"\n  tags:\n    - YouTube\n    - Content Management\n    - Video\n    - Playlists\n    - Captions\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_API_KEY: YOUTUBE_API_KEY\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-data\n      location: ./shared/data-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: content-management-api\n      description: \"Unified REST API for YouTube content management workflows.\"\n      resources:\n        - path: /v1/videos\n          name: videos\n          description: \"Manage YouTube\
   \ videos\"\n          operations:\n            - method: GET\n              name: list-videos\n              description: \"List videos matching criteria\"\n              call: \"youtube-data.list-videos\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: upload-video\n              description: \"Upload a new video\"\n              call: \"youtube-data.insert-video\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-video\n              description: \"Update video metadata\"\n              call: \"youtube-data.update-video\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-video\n              description: \"Delete a video\"\n              call: \"youtube-data.delete-video\"\n\

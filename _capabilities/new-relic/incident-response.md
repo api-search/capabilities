@@ -35,41 +35,41 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- list applications for context
-- get application details
-- monitoring
-- analysis
-- list applications for incident context
-- performance
-- get alerts violations
-- get alerts incidents
-- list applications
-- observability
-- list alert incidents
-- list alert incidents, optionally filtered to only open ones
 - infrastructure
-- get alerts conditions
-- list alert violations
-- analytics
-- get application details for incident investigation
-- platform
 - get alerts events
+- list alert incidents
+- apm
 - list alert conditions
-- get application
-- sre
-- get applications
+- get alerts conditions
+- list applications
+- analysis
+- list alert incidents, optionally filtered to only open ones
 - devops
-- get application details for incident context
+- get alerts violations
+- get application details for incident investigation
+- new relic
+- list alert events filtered by product or entity type
+- list applications for context
+- get application
+- platform
+- get alerts incidents
 - list alert conditions for a specific policy
+- list applications for incident context
+- incident response
 - alerts
 - list alert events
-- incident response
-- list alert violations, optionally filtered to only open ones
-- apm
-- new relic
+- get application details
+- observability
 - incidents
-- list alert events filtered by product or entity type
+- list alert violations, optionally filtered to only open ones
+- analytics
+- monitoring
+- performance
 - list alert conditions for a policy
+- get application details for incident context
+- sre
+- get applications
+- list alert violations
 slug: incident-response
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Incident Response\"\n  description: \"Incident response workflow combining alerts, incidents, violations, and events for SREs investigating and resolving production issues detected by New Relic.\"\n  tags:\n    - New Relic\n    - Incident Response\n    - SRE\n    - Alerts\n    - Incidents\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: \"Unified REST API for New Relic incident response workflows.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"List alert incidents\"\n          operations:\n            - method: GET\n              name: get-alerts-incidents\n              description:\
   \ \"List alert incidents\"\n              call: \"rest-api.get-alerts-incidents\"\n              with:\n                only_open: \"rest.only_open\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/violations\n          name: violations\n          description: \"List alert violations\"\n          operations:\n            - method: GET\n              name: get-alerts-violations\n              description: \"List alert violations\"\n              call: \"rest-api.get-alerts-violations\"\n              with:\n                only_open: \"rest.only_open\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alert-events\n          name: alert-events\n          description: \"List alert events\"\n          operations:\n            - method: GET\n              name: get-alerts-events\n\

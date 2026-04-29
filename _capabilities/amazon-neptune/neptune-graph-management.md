@@ -37,54 +37,54 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- Graph Developer
-- database
-- data streaming
-- writes gremlin, sparql, and opencypher queries against neptune
-- start bulk data load
-- neptune
-- execute an opencypher query
-- start load job
-- list all neptune db clusters
-- amazon neptune
-- get graph change stream
-- aws
-- graph change stream operations
-- performs graph analytics and builds ml models on graph data
-- execute graph queries
-- start a neptune bulk data load job from s3
-- execute a sparql query against rdf data
-- graph analytics
-- graph analytics, vector search, and ml model training and inference
-- bulk data loading operations
-- graph database management, querying, and data streaming
-- graph database
-- sparql
-- Graph Database Administrator
-- get property graph change stream records
-- Data Scientist
-- rdf
-- trains and deploys neptune ml graph neural network models
-- get real-time property graph change stream records
-- bulk loading
-- manages neptune clusters, instances, and infrastructure
-- execute gremlin query
-- get propertygraph stream
-- execute opencypher query
-- execute an opencypher query against property graph
-- neptune db cluster management
-- start a bulk data load from s3
-- property graph
-- machine learning
-- data management
-- list clusters
-- list all neptune db clusters in the account
-- ML Engineer
-- gremlin
 - execute sparql query
-- list neptune clusters
+- graph change stream operations
+- execute a sparql query against rdf data
+- neptune db cluster management
+- Data Scientist
+- Graph Database Administrator
+- data management
+- gremlin
+- execute an opencypher query
+- list all neptune db clusters in the account
+- execute gremlin query
+- start load job
+- execute opencypher query
+- ML Engineer
+- start a bulk data load from s3
+- get property graph change stream records
+- manages neptune clusters, instances, and infrastructure
+- list clusters
+- get propertygraph stream
+- aws
+- graph analytics, vector search, and ml model training and inference
+- graph database
+- get real-time property graph change stream records
+- get graph change stream
+- amazon neptune
+- list all neptune db clusters
 - execute a gremlin graph traversal query
+- writes gremlin, sparql, and opencypher queries against neptune
+- machine learning
+- start bulk data load
+- bulk data loading operations
+- execute graph queries
+- list neptune clusters
+- execute an opencypher query against property graph
+- data streaming
+- graph database management, querying, and data streaming
+- graph analytics
+- neptune
+- sparql
+- bulk loading
+- start a neptune bulk data load job from s3
+- Graph Developer
+- trains and deploys neptune ml graph neural network models
 - execute a sparql query against rdf graph
+- database
+- property graph
+- rdf
+- performs graph analytics and builds ml models on graph data
 slug: neptune-graph-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Neptune Graph Data Management\n  description: Workflow capability for managing Neptune graph databases, executing queries across Gremlin, SPARQL, and openCypher, and monitoring data streams. Used by graph database administrators \n    and developers.\n  tags:\n  - Amazon Neptune\n  - AWS\n  - Graph Database\n  - Data Management\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_SIGV4_AUTH: AWS_SIGV4_AUTH\ncapability:\n  consumes:\n  - import: management\n    location: ./shared/management.yaml\n  - import: data\n    location: ./shared/data.yaml\n  - import: loader\n    location: ./shared/loader.yaml\n  - import: streams\n    location: ./shared/streams.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: neptune-graph-management-api\n    description: Unified REST API for Neptune graph database management.\n    resources:\n    - path: /v1/clusters\n      name: clusters\n     \
   \ description: Neptune DB cluster management\n      operations:\n      - method: GET\n        name: list-clusters\n        description: List all Neptune DB clusters\n        call: management.describeDBClusters\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/queries\n      name: queries\n      description: Execute graph queries\n      operations:\n      - method: POST\n        name: execute-gremlin-query\n        description: Execute a Gremlin graph traversal query\n        call: data.executeGremlinQuery\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: execute-sparql-query\n        description: Execute a SPARQL query against RDF graph\n        call: data.executeSparqlQuery\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: execute-opencypher-query\n        description: Execute an openCypher query\n        call: data.executeOpenCypherQuery\n\

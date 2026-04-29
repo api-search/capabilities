@@ -50,61 +50,61 @@ personas: []
 provider_name: ACORD
 provider_slug: acord
 search_terms:
-- risk assessment and policy issuance decision workflows
-- insurance party registry
-- list insurance claims with acord ngds filtering by policy, status, and loss date range
-- Reinsurer
-- get claim details and payment history
-- register a new insurance party in the acord ngds party registry
-- Broker
-- full lifecycle management of insurance policies from issuance to expiration
-- submit underwriting
-- claims intake and inquiry
-- create policy
-- list insurance policies using acord ngds standards with filtering by number, line of business, and status
-- insurance
-- policy
-- claims management
-- apply endorsements or amendments to an acord policy
-- Insurance Carrier
-- retrieve full acord policy details including coverages and insured party
-- submit a first notice of loss (fnol) using acord ngds claims transaction model
-- list policies
-- submit claim
-- intermediary managing client policies, claims submissions, and party records
-- claims
-- submit a first notice of loss
-- unified acord ngds workflow for policy, claims, party, and underwriting
-- standards
-- endorse or amend a policy
-- list claims with filtering
-- individual policy operations
-- issue a new acord-compliant insurance policy
-- submit an insurance application for underwriting review using acord ngds
-- individual claim operations
-- register a new party
-- retrieve full acord claim details including reserves and payment history
-- list registered parties
-- first notice of loss, reserves, and payment tracking for insurance claims
-- underwriting application submission
-- insurance policy lifecycle management
-- list claims
-- list parties
-- get claim
-- policy administration
-- get full policy details
-- primary insurer managing policy issuance, claims, and underwriting
-- submit an application for underwriting review
-- update policy
-- registry of all insurance parties including insureds, agents, and carriers
-- issue a new insurance policy
 - create party
-- get policy
-- reinsurance company accessing cedant data for risk assessment and settlement
+- individual policy operations
+- individual claim operations
+- list insurance claims with acord ngds filtering by policy, status, and loss date range
 - list policies with filtering
-- underwriting
+- create policy
+- submit a first notice of loss
+- list policies
+- Broker
+- insurance
+- Insurance Carrier
+- registry of all insurance parties including insureds, agents, and carriers
+- update policy
+- claims management
+- submit claim
+- register a new party
+- issue a new acord-compliant insurance policy
+- list parties
+- full lifecycle management of insurance policies from issuance to expiration
+- primary insurer managing policy issuance, claims, and underwriting
+- get full policy details
+- endorse or amend a policy
+- apply endorsements or amendments to an acord policy
+- risk assessment and policy issuance decision workflows
+- get claim
+- list claims with filtering
+- submit a first notice of loss (fnol) using acord ngds claims transaction model
+- claims
+- submit an insurance application for underwriting review using acord ngds
+- get claim details and payment history
 - list insurance parties (insureds, agents, brokers, carriers) from acord registry
+- list registered parties
+- underwriting application submission
+- get policy
+- policy administration
 - acord
+- submit underwriting
+- list insurance policies using acord ngds standards with filtering by number, line of business, and status
+- policy
+- reinsurance company accessing cedant data for risk assessment and settlement
+- insurance party registry
+- insurance policy lifecycle management
+- first notice of loss, reserves, and payment tracking for insurance claims
+- submit an application for underwriting review
+- retrieve full acord claim details including reserves and payment history
+- claims intake and inquiry
+- Reinsurer
+- issue a new insurance policy
+- unified acord ngds workflow for policy, claims, party, and underwriting
+- list claims
+- underwriting
+- retrieve full acord policy details including coverages and insured party
+- standards
+- intermediary managing client policies, claims submissions, and party records
+- register a new insurance party in the acord ngds party registry
 slug: insurance-data-exchange
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: ACORD Insurance Data Exchange\n  description: >-\n    Unified insurance data exchange workflow for policy administration, claims management, party registry,\n    and underwriting using ACORD Next-Generation Digital Standards (NGDS). Used by insurance carriers,\n    brokers, and reinsurers to automate policy lifecycle, claims processing, and underwriting workflows.\n  tags:\n    - ACORD\n    - Claims Management\n    - Insurance\n    - Policy Administration\n    - Standards\n    - Underwriting\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACORD_BEARER_TOKEN: ACORD_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: acord-ngds\n      location: ./shared/acord-ngds.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: acord-insurance-api\n      description: Unified REST API for ACORD-compliant insurance data exchange.\n      resources:\n        - path: /v1/policies\n\
   \          name: policies\n          description: Insurance policy lifecycle management\n          operations:\n            - method: GET\n              name: list-policies\n              description: List policies with filtering\n              call: \"acord-ngds.list-policies\"\n              with:\n                policyNumber: \"rest.policyNumber\"\n                lineOfBusiness: \"rest.lineOfBusiness\"\n                status: \"rest.status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-policy\n              description: Issue a new insurance policy\n              call: \"acord-ngds.create-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies/{policyId}\n          name: policy\n          description: Individual policy operations\n          operations:\n            - method: GET\n        \

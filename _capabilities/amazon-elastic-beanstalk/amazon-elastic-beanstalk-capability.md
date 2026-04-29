@@ -30,28 +30,28 @@ personas: []
 provider_name: Amazon Elastic Beanstalk
 provider_slug: amazon-elastic-beanstalk
 search_terms:
-- describeApplications
-- amazon elastic beanstalk create environment
-- createEnvironment
-- platform-as-a-service for deploying and managing web applications
-- unified capability for managing amazon elastic beanstalk resources. combines amazon elastic beanstalk apis for application developer workflows in application deployment.
-- aws
-- auto scaling
-- deployment
+- developers building applications using amazon elastic beanstalk
 - web applications
-- paas
-- amazon web services
-- amazon elastic beanstalk create application
-- updateEnvironment
+- platform-as-a-service for deploying and managing web applications
+- createEnvironment
+- elastic beanstalk
+- aws
+- deployment
+- amazon elastic beanstalk create environment
+- amazon elastic beanstalk update environment
+- operations teams managing amazon elastic beanstalk infrastructure
 - amazon elastic beanstalk describe environments
 - amazon elastic beanstalk describe applications
-- operations teams managing amazon elastic beanstalk infrastructure
-- developers building applications using amazon elastic beanstalk
-- amazon elastic beanstalk update environment
-- elastic beanstalk
+- describeApplications
+- unified capability for managing amazon elastic beanstalk resources. combines amazon elastic beanstalk apis for application developer workflows in application deployment.
+- auto scaling
+- amazon web services
+- amazon elastic beanstalk create application
+- paas
+- updateEnvironment
 - platform as a service
-- describeEnvironments
 - createApplication
+- describeEnvironments
 slug: amazon-elastic-beanstalk-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Elastic Beanstalk Management\n  description: Unified capability for managing Amazon Elastic Beanstalk resources. Combines Amazon Elastic Beanstalk APIs for Application Developer workflows in Application Deployment.\n  tags:\n  - Amazon Web Services\n  - Platform As A Service\n  - Deployment\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: elastic_beanstalk\n    location: ./shared/elastic-beanstalk.yaml\n  exposes:\n  - type: rest\n    port: 8180\n    namespace: amazon-elastic-beanstalk-workflow-api\n    description: Unified REST API for Amazon Elastic Beanstalk management.\n    resources:\n    - path: /v1/describeApplications\n      name: describeApplications\n      description: Amazon Elastic Beanstalk Describe Applications\n      operations:\n      - method: GET\n        name: describeApplications\n\
   \        description: Amazon Elastic Beanstalk Describe Applications\n        call: api.describeApplications\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/createApplication\n      name: createApplication\n      description: Amazon Elastic Beanstalk Create Application\n      operations:\n      - method: POST\n        name: createApplication\n        description: Amazon Elastic Beanstalk Create Application\n        call: api.createApplication\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/createEnvironment\n      name: createEnvironment\n      description: Amazon Elastic Beanstalk Create Environment\n      operations:\n      - method: POST\n        name: createEnvironment\n        description: Amazon Elastic Beanstalk Create Environment\n        call: api.createEnvironment\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/describeEnvironments\n      name: describeEnvironments\n\

@@ -51,72 +51,72 @@ personas: []
 provider_name: Circana
 provider_slug: circana
 search_terms:
+- get detailed information about a specific product category
+- list categories
+- retrieve market share data for brands in a product category
+- list brands within a specific product category
+- list retailers
+- cpg
+- list brands
+- product category taxonomy
+- list brands in a category
+- create a new analytics report for a category and time period
+- brand analytics
+- get brand
+- consumer data
+- list reports
+- list retailers covered in circana measurement universe
+- create a data export
+- report management
+- get market share
+- retrieve consumer segmentation data based on purchase behavior
+- retailer coverage data
+- categories, brands, and retailers
+- pos data, market share, and sales performance analytics
+- create a data export job in csv, excel, json, or parquet format
+- retrieve pos data by category and time period
+- report generation, management, and data export
+- consumer panel data, purchase behavior, and segmentation
+- consumer insights
+- point of sale
+- get consumer segments
+- create a new report
+- check data export status and get download url
+- retrieve market share data
+- create export
+- business intelligence
+- market research
+- circana
+- list all available product categories in circana taxonomy
+- get category
+- retrieve consumer purchase data
+- market intelligence
+- retrieve consumer segments
+- market share analytics
+- list product categories
+- retrieve point-of-sale data for a product category and time period
+- manages brand performance, market share, and competitive positioning
+- get detailed brand information including market presence
+- data export
+- consumer segmentation data
+- get consumer purchases
+- list available analytics reports
+- Brand Manager
+- manages product category performance, assortment, and shopper insights
+- analyzes consumer behavior, market trends, and competitive dynamics
+- analytics
+- Category Manager
+- create report
+- unified market intelligence combining pos, share, consumer, and reporting data
+- retail
+- get report
+- get export
+- retrieve aggregated consumer purchase data from panel surveys
 - point-of-sale data access
 - get pos data
-- retrieve market share data for brands in a product category
-- market intelligence
-- market share analytics
-- market research
-- list brands
-- create a new report
-- list product categories
-- create report
-- get report
-- cpg
-- list available analytics reports
-- unified market intelligence combining pos, share, consumer, and reporting data
-- monitors retailer performance, distribution, and channel dynamics
-- Brand Manager
-- data export
-- create a data export job in csv, excel, json, or parquet format
-- get report status and details
-- consumer insights
-- get consumer purchases
-- analytics
-- get category
-- brand analytics
-- business intelligence
-- retailer coverage data
-- analyzes consumer behavior, market trends, and competitive dynamics
-- retrieve consumer segments
-- retrieve aggregated consumer purchase data from panel surveys
-- list categories
-- list retailers
-- list retailers covered in circana measurement universe
-- retrieve point-of-sale data for a product category and time period
-- consumer segmentation data
-- create a data export
-- create export
-- get brand
-- get export
-- get market share
-- check data export status and get download url
-- report generation, management, and data export
-- point of sale
-- list brands in a category
-- get consumer segments
-- retrieve consumer segmentation data based on purchase behavior
-- retail
-- consumer panel data, purchase behavior, and segmentation
-- list reports
-- pos data, market share, and sales performance analytics
-- report management
-- get detailed brand information including market presence
-- circana
-- product category taxonomy
-- get detailed information about a specific product category
-- categories, brands, and retailers
-- list all available product categories in circana taxonomy
-- create a new analytics report for a category and time period
-- manages product category performance, assortment, and shopper insights
-- Category Manager
 - consumer purchase behavior data
-- manages brand performance, market share, and competitive positioning
-- list brands within a specific product category
-- consumer data
-- retrieve consumer purchase data
-- retrieve pos data by category and time period
-- retrieve market share data
+- get report status and details
+- monitors retailer performance, distribution, and channel dynamics
 slug: market-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Circana Market Intelligence\"\n  description: \"Unified market intelligence workflow combining POS data, market share analytics, consumer panel insights, brand performance, and reporting capabilities for brand managers, category managers, and market researchers.\"\n  tags:\n    - Circana\n    - Market Intelligence\n    - Analytics\n    - Consumer Insights\n    - Retail\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CIRCANA_API_TOKEN: CIRCANA_API_TOKEN\n\ncapability:\n  consumes:\n    - import: liquid-data\n      location: ./shared/liquid-data.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-intelligence-api\n      description: \"Unified REST API for Circana market intelligence workflows.\"\n      resources:\n        - path: /v1/pos-data\n          name: pos-data\n          description: \"Point-of-sale data access\"\n          operations:\n  \
   \          - method: GET\n              name: get-pos-data\n              description: \"Retrieve POS data by category and time period\"\n              call: \"liquid-data.get-pos-data\"\n              with:\n                category_id: \"rest.category_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/market-share\n          name: market-share\n          description: \"Market share analytics\"\n          operations:\n            - method: GET\n              name: get-market-share\n              description: \"Retrieve market share data\"\n              call: \"liquid-data.get-market-share\"\n              with:\n                category_id: \"rest.category_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n\

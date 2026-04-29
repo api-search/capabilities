@@ -66,60 +66,60 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
+- broadcasting
+- videos
+- delete broadcast
+- send a message to live chat
+- list messages in live chat
+- bind broadcast
+- update broadcast settings
+- update live broadcast settings
+- video
+- list live streams
+- google
+- transition broadcast
+- remove a live chat moderator
+- delete a broadcast
+- create a new live stream
+- list live video streams
+- social
+- media
 - delete chat message
 - create a new live broadcast
-- list moderators
-- list live broadcasts
-- create a new live stream
-- streaming
-- manage live broadcasts
-- transition broadcast
-- list chat messages
-- create a new live broadcast event
-- update live broadcast settings
-- manage live chat messages
-- video
-- update broadcast
-- bind broadcast
-- list live chat moderators
-- social
-- list messages in live chat
-- delete a live broadcast
-- bind a broadcast to a video stream
-- create stream
-- remove moderator
 - send chat message
-- delete stream
+- update stream
 - send a live chat message
-- videos
+- list moderators
+- manage live chat moderators
+- update broadcast
+- create stream
+- manage live broadcasts
+- list live broadcasts
+- create broadcast
+- streaming
+- add a live chat moderator
+- manage live video streams
+- delete stream
+- list live chat moderators
+- remove moderator
+- update stream settings
+- delete a live chat message
+- manage live chat messages
+- create a new live video stream
+- bind a broadcast to a video stream
+- delete a live stream
+- live streaming
+- add moderator
+- list chat messages
+- youtube
 - transition broadcast status (testing, live, complete)
 - list streams
-- add moderator
-- list youtube live broadcasts
-- manage live chat moderators
-- delete broadcast
-- broadcasting
-- live streaming
-- manage live video streams
+- delete a live broadcast
 - list live chat messages
-- youtube
-- create broadcast
-- google
-- media
-- update stream
-- delete a live stream
-- delete a live chat message
-- send a message to live chat
-- remove a live chat moderator
-- create a new live video stream
-- list live video streams
-- update broadcast settings
-- list live streams
-- add a live chat moderator
-- update stream settings
+- create a new live broadcast event
 - list broadcasts
 - live chat
-- delete a broadcast
+- list youtube live broadcasts
 slug: live-streaming
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Live Streaming\"\n  description: \"Workflow for managing YouTube live events including scheduling broadcasts, linking streams, managing live chat, and moderating live interactions. Designed for live event producers, streaming teams, and broadcast operators.\"\n  tags:\n    - YouTube\n    - Live Streaming\n    - Broadcasting\n    - Live Chat\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-live\n      location: ./shared/live-streaming.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: live-streaming-api\n      description: \"Unified REST API for YouTube live streaming workflows.\"\n      resources:\n        - path: /v1/broadcasts\n          name: broadcasts\n          description: \"Manage live broadcasts\"\n          operations:\n            - method: GET\n\
   \              name: list-broadcasts\n              description: \"List live broadcasts\"\n              call: \"youtube-live.list-live-broadcasts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-broadcast\n              description: \"Create a new live broadcast\"\n              call: \"youtube-live.insert-live-broadcast\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-broadcast\n              description: \"Update broadcast settings\"\n              call: \"youtube-live.update-live-broadcast\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-broadcast\n              description: \"Delete a broadcast\"\n              call: \"youtube-live.delete-live-broadcast\"\n \

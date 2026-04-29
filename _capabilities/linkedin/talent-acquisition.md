@@ -65,58 +65,58 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- retrieve recruiter seatholders.
-- get child application credentials.
-- b2b advertising, audience targeting, and campaign analytics.
-- get job posting task status
-- create or update entity acl.
-- employee development tracking and content access.
-- create or update a job posting.
-- get exported candidates
-- sync candidates
-- get seatholders
+- update customer ats integrations.
 - update customer integrations
-- get candidate matches
-- sales intelligence, lead management, and crm integration.
-- sync candidates to linkedin.
-- archives communications for regulatory compliance.
-- retrieve candidate matches.
-- uses sales navigator for lead generation and crm sync.
-- delete synced candidates.
-- careers
-- get child application
-- provision child application
-- integrates linkedin authentication and sharing into applications.
-- data portability and advertiser transparency for dma.
-- talent acquisition
-- job posting, recruiting, and applicant tracking.
-- delete synced applications.
-- get customer integrations
-- job posting
-- sync applications
-- provision a child application.
-- delete candidates
 - authentication, sharing, and verification for consumer apps.
-- upsert entity acl
-- tracks employee learning activity and completions.
-- get customer ats integration details.
-- recruiting
-- message archiving and regulatory communications governance.
-- professional networking
-- manages b2b ad campaigns and audience targeting on linkedin.
-- create or update job posting
-- check job posting task status.
 - marketing
-- delete applications
-- create resume upload url.
-- posts jobs and manages candidates through ats integrations.
-- create resume upload url
-- social media
+- integrates linkedin authentication and sharing into applications.
+- create or update a job posting.
 - business
+- careers
+- get customer integrations
 - linkedin
+- create or update entity acl.
+- message archiving and regulatory communications governance.
+- get exported candidates
+- employee development tracking and content access.
+- delete synced candidates.
+- uses sales navigator for lead generation and crm sync.
+- archives communications for regulatory compliance.
+- job posting, recruiting, and applicant tracking.
+- posts jobs and manages candidates through ats integrations.
+- get child application
+- manages b2b ad campaigns and audience targeting on linkedin.
+- get candidate matches
+- get child application credentials.
+- tracks employee learning activity and completions.
+- job posting
+- delete candidates
+- create resume upload url.
+- sync applications
+- delete synced applications.
 - get exported candidate profiles.
 - sync job applications.
-- update customer ats integrations.
+- talent acquisition
+- sync candidates
+- delete applications
+- provision a child application.
+- b2b advertising, audience targeting, and campaign analytics.
+- get job posting task status
+- retrieve recruiter seatholders.
+- recruiting
+- data portability and advertiser transparency for dma.
+- provision child application
+- get customer ats integration details.
+- upsert entity acl
+- professional networking
+- sync candidates to linkedin.
+- get seatholders
+- social media
+- create or update job posting
+- retrieve candidate matches.
+- check job posting task status.
+- create resume upload url
+- sales intelligence, lead management, and crm integration.
 slug: talent-acquisition
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Talent Acquisition\"\n  description: \"Unified workflow for recruiters to post jobs, sync candidates and applications via ATS, manage recruiter integrations, and provision partner applications -- combining job posting, RSC, and provisioning APIs.\"\n  tags:\n    - LinkedIn\n    - Talent Acquisition\n    - Recruiting\n    - Job Posting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: talent-job-posting\n      location: ./shared/talent-job-posting.yaml\n    - import: talent-rsc\n      location: ./shared/talent-recruiter-system-connect.yaml\n    - import: talent-learning-parent-app\n      location: ./shared/talent-learning-parent-application.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: talent-acquisition-api\n      description: \"Unified REST API for LinkedIn\
   \ talent acquisition workflows.\"\n      resources:\n        - path: /v1/job-postings\n          name: job-postings\n          operations:\n            - method: POST\n              name: create-or-update-job-posting\n              description: \"Create or update a job posting.\"\n              call: \"talent-job-posting.create-or-update-job-posting\"\n        - path: /v1/job-posting-tasks\n          name: job-posting-tasks\n          operations:\n            - method: GET\n              name: get-job-posting-task-status\n              description: \"Check job posting task status.\"\n              call: \"talent-job-posting.get-job-posting-task-status\"\n        - path: /v1/ats-integrations\n          name: ats-integrations\n          operations:\n            - method: POST\n              name: update-customer-integrations\n              description: \"Update customer ATS integrations.\"\n              call: \"talent-job-posting.update-customer-integrations\"\n            - method: GET\n\

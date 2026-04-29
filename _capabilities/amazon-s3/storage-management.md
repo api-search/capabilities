@@ -77,90 +77,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- get table
-- list s3 access points
-- get an access point
-- single batch operations job
-- single object
-- list batch operations jobs
-- upload an object
-- get configuration of an s3 access point
-- get versioning configuration for an s3 bucket
-- get an object
-- storage lens configurations
-- list storage lens configs
-- delete an object from s3
-- delete bucket
-- create an s3 bucket
-- s3
-- create a batch operations job
-- list storage lens
-- scalable storage
+- upload an object to s3
+- archive
+- create a new s3 bucket
+- delete multiple objects from an s3 bucket
+- get public access block
+- delete an s3 bucket
+- delete objects
+- list jobs
+- list all s3 buckets owned by the account
+- object storage
+- tables in a table bucket
 - list s3 table buckets
 - s3 batch operations jobs
-- delete an s3 bucket
-- list namespaces in a table bucket
-- get details of a batch operations job
-- get table bucket
-- cloud storage
-- list objects
-- describe batch job
-- get bucket encryption
-- amazon
-- s3 buckets
-- get bucket versioning
-- list objects in a bucket
-- list storage lens configurations
-- aws
-- get details of an s3 table bucket
-- tables in a table bucket
-- get public access block
-- list tables
-- upload an object to s3
-- get details of a table
-- list s3 batch operations jobs
-- list all s3 buckets
-- delete multiple objects from an s3 bucket
-- describe job
-- delete objects
-- get bucket lifecycle
-- list jobs
-- get lifecycle configuration for an s3 bucket
-- archive
-- get access point
-- data storage
-- check if a bucket exists
-- list s3 storage lens configurations
-- delete an object
-- get encryption configuration for an s3 bucket
-- list namespaces
-- object storage
-- list access points
-- list buckets
-- put object
-- create job
-- backup
-- copy object
-- copy an object within s3
-- list table buckets
-- s3 table buckets
-- get object
-- get public access block settings for the account
-- list objects in an s3 bucket
-- single s3 bucket
-- list all s3 buckets owned by the account
-- delete object
-- list s3 access points for the account
-- objects in a bucket
-- list batch jobs
-- head bucket
-- list tables in a namespace
-- create bucket
-- single access point
-- storage management
-- create a new s3 bucket
 - s3 access points
+- get table
+- list s3 access points for the account
+- delete bucket
+- get access point
+- create a batch operations job
+- single access point
+- data storage
+- list batch jobs
+- get encryption configuration for an s3 bucket
+- get details of an s3 table bucket
+- storage management
+- list objects in an s3 bucket
+- single object
+- get public access block settings for the account
+- get bucket versioning
+- list buckets
+- amazon
+- check if a bucket exists
+- list tables
+- list s3 storage lens configurations
+- create job
+- list table buckets
+- list storage lens configs
+- scalable storage
+- get versioning configuration for an s3 bucket
+- get an access point
+- backup
+- list objects in a bucket
+- upload an object
+- list objects
+- create bucket
+- get lifecycle configuration for an s3 bucket
+- list access points
 - retrieve an object from s3
+- s3 buckets
+- list s3 batch operations jobs
+- single batch operations job
+- get table bucket
+- create an s3 bucket
+- get bucket encryption
+- get details of a table
+- s3
+- s3 table buckets
+- list batch operations jobs
+- describe batch job
+- list s3 access points
+- get an object
+- get bucket lifecycle
+- single s3 bucket
+- get configuration of an s3 access point
+- list namespaces in a table bucket
+- cloud storage
+- storage lens configurations
+- delete an object
+- aws
+- get object
+- put object
+- list storage lens configurations
+- list all s3 buckets
+- objects in a bucket
+- list tables in a namespace
+- copy object
+- list storage lens
+- head bucket
+- delete an object from s3
+- copy an object within s3
+- delete object
+- describe job
+- list namespaces
+- get details of a batch operations job
 slug: storage-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon S3 Storage Management\"\n  description: \"Unified capability for Amazon S3 storage management combining object storage operations, account-level controls, and tabular data management. Used by cloud engineers, data engineers, and platform teams.\"\n  tags:\n    - Amazon\n    - AWS\n    - S3\n    - Storage Management\n    - Cloud Storage\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: s3-rest\n      location: ./shared/s3-rest.yaml\n    - import: s3-control\n      location: ./shared/s3-control.yaml\n    - import: s3-tables\n      location: ./shared/s3-tables.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: storage-management-api\n      description: \"Unified REST API for Amazon S3 storage management.\"\n      resources:\n\
   \        - path: /v1/buckets\n          name: buckets\n          description: \"S3 buckets\"\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List all S3 buckets\"\n              call: \"s3-rest.list-buckets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-bucket\n              description: \"Create an S3 bucket\"\n              call: \"s3-rest.create-bucket\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{bucket}\n          name: bucket\n          description: \"Single S3 bucket\"\n          operations:\n            - method: HEAD\n              name: head-bucket\n              description: \"Check if a bucket exists\"\n              call: \"s3-rest.head-bucket\"\n              with:\n                Bucket: \"rest.bucket\"\n      \

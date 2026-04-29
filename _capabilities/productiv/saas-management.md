@@ -70,67 +70,67 @@ personas: []
 provider_name: Productiv
 provider_slug: productiv
 search_terms:
-- obtain an oauth2 access token.
-- application portfolio
-- fetch detailed app info.
-- productiv
-- get specific execution details.
-- list provisioning workflows
 - get execution details.
-- delete provisioned users
-- get signed upload urls for batch file uploads.
-- manage provisioning workflows.
-- get provisioning workflow execution
-- publish spend data
-- fetch audit events for platform activities.
-- push spend data for an application.
-- register a new application.
-- manage org chart data.
-- manage custom applications.
-- data export
+- get provisioned users
+- batch file upload.
+- productiv
+- list provisioning workflows
+- obtain an oauth2 access token.
 - query provisioning executions.
 - query all apps in portfolio.
-- list execution summaries.
-- publish org chart
-- get audit events
-- spend management
-- manage provisioned users.
-- push spend data.
-- batch file upload.
-- obtain an oauth2 access token using client credentials.
 - usage analytics
-- get app details
-- retrieve provisioned users.
-- get access token
-- remove provisioned users from an application.
-- add provisioned users.
-- query app portfolio.
-- saas management
-- publish usage events
-- add provisioned users for an application.
-- fetch detailed information about a particular app.
-- get batch upload urls
-- fetch detailed app information.
-- setup application
-- list all provisioning workflows.
-- fetch audit events.
-- get signed upload urls.
-- oauth2 token endpoint.
-- get app summaries
-- publish organizational chart data.
-- query audit events.
-- get provisioned users
-- provisioning
-- register a new connected application.
-- publish provisioned users
-- query all apps in your company portfolio.
-- get details of a specific provisioning workflow execution.
-- retrieve the list of users provisioned to an application.
 - remove provisioned users.
-- list provisioning execution summaries
+- query all apps in your company portfolio.
+- register a new connected application.
+- get provisioning workflow execution
+- push spend data.
 - list provisioning workflow execution summaries.
+- fetch detailed app information.
+- publish spend data
+- register a new application.
+- remove provisioned users from an application.
+- get specific execution details.
+- query app portfolio.
+- push spend data for an application.
+- publish org chart
+- retrieve the list of users provisioned to an application.
+- fetch audit events for platform activities.
+- delete provisioned users
+- obtain an oauth2 access token using client credentials.
+- get access token
+- provisioning
+- retrieve provisioned users.
+- list provisioning execution summaries
+- list all provisioning workflows.
+- get signed upload urls.
+- manage provisioning workflows.
+- query audit events.
+- manage provisioned users.
+- list execution summaries.
+- fetch detailed information about a particular app.
+- setup application
+- application portfolio
+- data export
 - push usage events.
+- publish organizational chart data.
+- spend management
+- get batch upload urls
 - push usage events for an application.
+- get signed upload urls for batch file uploads.
+- manage org chart data.
+- publish usage events
+- fetch detailed app info.
+- get audit events
+- fetch audit events.
+- add provisioned users.
+- get app summaries
+- saas management
+- add provisioned users for an application.
+- get details of a specific provisioning workflow execution.
+- publish provisioned users
+- get app details
+- manage custom applications.
+- oauth2 token endpoint.
 slug: saas-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Productiv SaaS Management\"\n  description: \"Unified workflow for managing SaaS applications, tracking usage and spend, provisioning users, and auditing platform activity using the Productiv Developer API.\"\n  tags:\n    - Productiv\n    - SaaS Management\n    - Usage Analytics\n    - Provisioning\n    - Data Export\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PRODUCTIV_CLIENT_ID: PRODUCTIV_CLIENT_ID\n      PRODUCTIV_CLIENT_SECRET: PRODUCTIV_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: productiv-developer\n      location: ./shared/developer-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: productiv-saas-api\n      description: \"Unified REST API for Productiv SaaS management, usage analytics, and provisioning workflows.\"\n      resources:\n        - path: /v1/token\n          name: authentication\n          description: \"OAuth2\
   \ token endpoint.\"\n          operations:\n            - method: POST\n              name: get-access-token\n              description: \"Obtain an OAuth2 access token.\"\n              call: \"productiv-developer.get-access-token\"\n              with:\n                grant_type: \"rest.grant_type\"\n                client_id: \"rest.client_id\"\n                client_secret: \"rest.client_secret\"\n                scope: \"rest.scope\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/applications\n          name: applications\n          description: \"Manage custom applications.\"\n          operations:\n            - method: POST\n              name: setup-application\n              description: \"Register a new application.\"\n              call: \"productiv-developer.setup-application\"\n              with:\n                appName: \"rest.appName\"\n                appDescription: \"rest.appDescription\"\

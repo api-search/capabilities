@@ -53,58 +53,58 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- service principals
-- create user
-- create, update, and deactivate user accounts throughout the employee/guest lifecycle
-- enterprise it admin managing user accounts, groups, device policies, and access management
-- security professional monitoring identity risks, conditional access policies, and audit logs
-- get details about a specific microsoft entra user by object id or userprincipalname
-- group-based access control and app role assignment for resource permissions
-- group management
-- get details about a specific microsoft entra application registration
-- get the signed-in user's microsoft entra profile
-- list direct members of a microsoft entra group
-- get group
-- active directory
-- list applications
-- application registration and service principal lifecycle for zero-trust app governance
-- list application registrations in the microsoft entra tenant
-- authentication
-- zero trust
-- microsoft entra
-- list service principals in the microsoft entra tenant
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- get me
-- list microsoft entra id groups — security groups and microsoft 365 groups
-- unified user, group, and application management for microsoft entra id
-- get application
-- conditional access policy automation for zero-trust enforcement
-- individual group operations
-- list groups
-- authorization
 - IT Administrator
-- periodic access reviews and identity risk remediation
-- get signed-in user profile
-- registered and joined device management for compliant device access policies
-- Identity Engineer
-- directory services
-- Security Analyst
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- list users
-- user lifecycle management
-- identity management
-- get user by id or upn
-- user management
-- application registrations
-- signed-in user profile
-- create group
-- list group members
-- get details about a specific microsoft entra group including type and membership settings
-- create a new user account in microsoft entra id with required profile and password settings
 - get user
-- list service principals
+- signed-in user profile
+- get details about a specific microsoft entra application registration
+- Identity Engineer
+- list groups
+- list applications
+- group-based access control and app role assignment for resource permissions
+- directory services
+- active directory
 - group member management
+- list microsoft entra id groups — security groups and microsoft 365 groups
+- zero trust
+- get the signed-in user's microsoft entra profile
+- registered and joined device management for compliant device access policies
+- conditional access policy automation for zero-trust enforcement
+- get me
+- enterprise it admin managing user accounts, groups, device policies, and access management
 - individual user operations
+- get user by id or upn
+- periodic access reviews and identity risk remediation
+- identity management
+- list application registrations in the microsoft entra tenant
+- application registration and service principal lifecycle for zero-trust app governance
+- authorization
+- get group
+- unified user, group, and application management for microsoft entra id
+- get signed-in user profile
+- list group members
+- get application
+- application registrations
+- group management
+- create a new user account in microsoft entra id with required profile and password settings
+- create, update, and deactivate user accounts throughout the employee/guest lifecycle
+- list service principals in the microsoft entra tenant
+- user lifecycle management
+- list direct members of a microsoft entra group
+- list service principals
+- create user
+- create group
+- service principals
+- get details about a specific microsoft entra user by object id or userprincipalname
+- authentication
+- Security Analyst
+- list users
+- get details about a specific microsoft entra group including type and membership settings
+- user management
+- individual group operations
+- microsoft entra
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- security professional monitoring identity risks, conditional access policies, and audit logs
 slug: identity-management-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Microsoft Active Directory Identity Management Operations\n  description: >-\n    Unified workflow for managing Microsoft Entra ID (Active Directory) identity and access\n    operations including user lifecycle management, group management, and application\n    registration. Used by IT administrators, identity engineers, and security teams to\n    automate identity governance and access management.\n  tags:\n    - Active Directory\n    - Identity Management\n    - Microsoft Entra\n    - User Management\n    - Zero Trust\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AD_ACCESS_TOKEN: AD_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: active-directory-users\n      location: ./shared/active-directory-users.yaml\n    - import: active-directory-groups\n      location: ./shared/active-directory-groups.yaml\n    - import: active-directory-applications\n      location: ./shared/active-directory-applications.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: active-directory-identity-api\n      description: Unified REST API for Microsoft Active Directory identity management operations.\n      resources:\n        - path: /v1/users\n          name: users\n          description: User lifecycle management\n          operations:\n            - method: GET\n              name: list-users\n              description: List users\n              call: \"active-directory-users.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: Create user\n              call: \"active-directory-users.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user\n          description: Individual user operations\n          operations:\n          \

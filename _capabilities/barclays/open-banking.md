@@ -9,13 +9,13 @@ personas: []
 provider_name: Barclays
 provider_slug: barclays
 search_terms:
-- psd2
-- open banking
-- finance
 - uk banking
+- open banking
+- payments
+- finance
+- psd2
 - banking
 - credit cards
-- payments
 slug: open-banking
 source_yaml: "name: Barclays Open Banking\ndescription: >-\n  Naftiko capability for Barclays Open Banking APIs covering account information,\n  payment initiation, confirmation of funds, and event notifications compliant with\n  UK Open Banking and EU PSD2 standards.\nversion: '1.0'\nprovider: Barclays\ncategory: Open Banking\ntags:\n  - Open Banking\n  - PSD2\n  - Banking\n  - Payments\n  - Account Information\nhumanURL: https://developer.barclays.com/\nactions:\n  - name: Get Account Information\n    description: Retrieve account balance, details, and metadata for an authorized customer account.\n    inputs:\n      - name: accountId\n        type: string\n        required: true\n      - name: accessToken\n        type: string\n        required: true\n    outputs:\n      - name: account\n        type: Account\n  - name: Get Transactions\n    description: Retrieve transaction history for a customer account within a date range.\n    inputs:\n      - name: accountId\n        type: string\n\
   \        required: true\n      - name: fromDate\n        type: string\n        format: date\n        required: false\n      - name: toDate\n        type: string\n        format: date\n        required: false\n      - name: accessToken\n        type: string\n        required: true\n    outputs:\n      - name: transactions\n        type: array\n        items: Transaction\n  - name: Initiate Payment\n    description: Initiate a payment from a customer's Barclays account via Open Banking.\n    inputs:\n      - name: paymentRequest\n        type: PaymentRequest\n        required: true\n      - name: accessToken\n        type: string\n        required: true\n    outputs:\n      - name: paymentConsent\n        type: PaymentConsent\n  - name: Confirm Funds\n    description: Check whether a customer account has sufficient funds for a given payment amount.\n    inputs:\n      - name: accountId\n        type: string\n        required: true\n      - name: amount\n        type: number\n        required:\

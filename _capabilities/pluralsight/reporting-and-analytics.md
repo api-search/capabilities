@@ -38,42 +38,42 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- track user course progress and completion status
-- video training
-- education
-- track user progress across all content types
-- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
-- learning progress
-- user course progress including completion status and viewing history
-- query course progress
-- engineering metrics
-- pluralsight
-- download a course completion report as csv
-- retrieve daily course engagement metrics
-- user progress across all content types including videos, guides, paths, and projects
-- courses
-- retrieve daily course engagement metrics and usage statistics.
-- analytics
-- user reports as csv downloads (legacy rest, deprecated)
-- download a user report as csv
-- download a course usage report as csv. deprecated - migrate to graphql.
-- reporting
-- download course usage report
 - download user report
-- track user course progress including completion status and viewing history for video courses.
-- technology
-- daily course engagement metrics and usage statistics
-- learning
-- course completion reports as csv downloads (legacy rest, deprecated)
-- query course daily usage
 - download a course usage report as csv
-- download a user report as csv. deprecated - migrate to graphql.
-- query content progress
-- skills assessment
-- download a course completion report as csv. deprecated - migrate to graphql.
-- course completion
-- course usage reports as csv downloads (legacy rest, deprecated)
 - download course completion report
+- learning
+- download a user report as csv
+- engineering metrics
+- user progress across all content types including videos, guides, paths, and projects
+- pluralsight
+- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
+- course usage reports as csv downloads (legacy rest, deprecated)
+- download a course usage report as csv. deprecated - migrate to graphql.
+- track user course progress including completion status and viewing history for video courses.
+- courses
+- learning progress
+- technology
+- course completion
+- video training
+- daily course engagement metrics and usage statistics
+- download a course completion report as csv
+- track user progress across all content types
+- query course daily usage
+- download a user report as csv. deprecated - migrate to graphql.
+- user course progress including completion status and viewing history
+- reporting
+- course completion reports as csv downloads (legacy rest, deprecated)
+- query course progress
+- download a course completion report as csv. deprecated - migrate to graphql.
+- track user course progress and completion status
+- user reports as csv downloads (legacy rest, deprecated)
+- retrieve daily course engagement metrics
+- education
+- download course usage report
+- analytics
+- retrieve daily course engagement metrics and usage statistics.
+- skills assessment
+- query content progress
 slug: reporting-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Reporting And Analytics\"\n  description: \"Unified workflow for L&D managers to track learning progress, course completions, daily usage patterns, and generate reports. Combines content progress, course progress, course daily usage, and reports REST APIs.\"\n  tags:\n    - Pluralsight\n    - Reporting\n    - Analytics\n    - Learning Progress\n    - Course Completion\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: pluralsight-content-progress\n      location: ./shared/content-progress.yaml\n    - import: pluralsight-course-progress\n      location: ./shared/course-progress.yaml\n    - import: pluralsight-course-daily-usage\n      location: ./shared/course-daily-usage.yaml\n    - import: pluralsight-reports-rest\n      location: ./shared/reports-rest.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8084\n      namespace: reporting-analytics-api\n      description: \"Unified REST API for Pluralsight reporting and analytics including learning progress, course completions, usage, and legacy reports.\"\n      resources:\n        - path: /v1/content-progress\n          name: content-progress\n          description: \"User progress across all content types including videos, guides, paths, and projects\"\n          operations:\n            - method: POST\n              name: query-content-progress\n              description: \"Track user progress across all content types\"\n              call: \"pluralsight-content-progress.query-content-progress\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/course-progress\n          name:\

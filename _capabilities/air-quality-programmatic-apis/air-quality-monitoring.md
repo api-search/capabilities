@@ -23,33 +23,33 @@ personas: []
 provider_name: Air Quality Programmatic APIs
 provider_slug: air-quality-programmatic-apis
 search_terms:
-- researcher or analyst studying air quality trends and patterns
-- air quality by coordinates
-- get real-time air quality index (aqi) and pollutant data for a city
-- monitoring
-- air quality by city name
-- get current aqi for a city
-- search stations by keyword
 - Environmental Analyst
-- get aqi for coordinates
-- iot
+- search air quality stations
+- open data
+- app developer integrating air quality data into mobile or web applications
+- air quality
 - get real-time aqi for a geographic location using latitude and longitude
+- get aqi for coordinates
+- get current aqi for a city
+- epa
+- air quality by coordinates
+- search stations
+- get aqi by coordinates
+- get real-time air quality index (aqi) and pollutant data for a city
+- get aqi by city
 - query real-time aqi and search monitoring stations
 - public health
 - government data
-- search for air quality monitoring stations by city or station name
+- search stations by keyword
 - Developer
-- open data
-- air quality
-- epa
-- app developer integrating air quality data into mobile or web applications
-- search air quality stations
-- environment
-- search stations
-- get aqi by coordinates
-- get aqi by city
-- real-time data
+- researcher or analyst studying air quality trends and patterns
+- iot
 - search monitoring stations
+- search for air quality monitoring stations by city or station name
+- monitoring
+- environment
+- real-time data
+- air quality by city name
 slug: air-quality-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Air Quality Monitoring Workflow\"\n  description: \"Unified workflow for querying real-time air quality data, monitoring station health, and spatial air quality analysis. Used by environmental monitoring applications and public health systems.\"\n  tags:\n    - Air Quality\n    - Environment\n    - Public Health\n    - Open Data\n    - Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AQICN_API_TOKEN: AQICN_API_TOKEN\n\ncapability:\n  consumes:\n    - import: aqicn\n      location: ./shared/aqicn-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: air-quality-monitoring-api\n      description: \"Unified REST API for air quality data retrieval and monitoring.\"\n      resources:\n        - path: /v1/air-quality/city/{city}\n          name: aqi-by-city\n          description: \"Air quality by city name\"\n          operations:\n            -\
   \ method: GET\n              name: get-aqi-by-city\n              description: \"Get current AQI for a city\"\n              call: \"aqicn.get-aqi-by-city\"\n              with:\n                city: \"rest.city\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/air-quality/coordinates\n          name: aqi-by-coordinates\n          description: \"Air quality by coordinates\"\n          operations:\n            - method: GET\n              name: get-aqi-by-coordinates\n              description: \"Get AQI for coordinates\"\n              call: \"aqicn.get-aqi-by-coordinates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stations/search\n          name: station-search\n          description: \"Search monitoring stations\"\n          operations:\n            - method: GET\n              name: search-stations\n              description: \"Search\

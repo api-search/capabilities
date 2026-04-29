@@ -25,63 +25,63 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- logpush list jobs
-- turnstile verify token
-- logpush get job
-- turnstile create widget
-- logpush list dataset fields
-- list logpush jobs
-- ai gateway
-- dns batch records
-- get dnssec settings.
-- dns list records
-- list turnstile widgets
-- get dns record details.
-- list dns records.
-- cloudflare
-- serverless
-- update a dns record.
-- edge computing
-- create a logpush job.
-- observability
-- list turnstile widgets.
-- logpush create job
-- dns get record
-- list dataset fields.
-- list logpush jobs.
-- artificial intelligence
-- turnstile list widgets
-- platform
-- dns create record
-- dns record management.
-- web performance
-- api gateway
-- dns delete record
-- turnstile delete widget
-- containers
-- delete a dns record.
-- get logpush job details.
-- list dns records
-- dns get dnssec
-- logpush job management.
-- delete a turnstile widget.
-- object storage
-- create a dns record.
-- execute batch dns operations.
-- cdn
 - ddos protection
-- list dns records for a zone.
-- cloud
-- edge
-- security
-- dns update record
+- get dns record details.
+- get dnssec settings.
+- cdn
+- list turnstile widgets
+- turnstile list widgets
+- list logpush jobs
+- create a dns record.
+- turnstile create widget
 - turnstile widget management.
+- ai gateway
+- cloud
+- dns create record
+- dns delete record
+- web performance
+- create a logpush job.
+- dns record management.
+- list dataset fields.
+- dns get record
+- get logpush job details.
+- dns get dnssec
 - real-time communication
-- delete a logpush job.
-- dns
-- create a turnstile widget.
-- verify a turnstile token.
+- serverless
+- list logpush jobs.
+- edge computing
+- containers
+- object storage
+- platform
+- delete a turnstile widget.
+- logpush list jobs
+- logpush create job
+- delete a dns record.
+- list turnstile widgets.
+- turnstile verify token
+- security
+- dns list records
+- list dns records
 - logpush delete job
+- cloudflare
+- logpush get job
+- observability
+- api gateway
+- verify a turnstile token.
+- artificial intelligence
+- delete a logpush job.
+- logpush job management.
+- logpush list dataset fields
+- list dns records.
+- update a dns record.
+- dns batch records
+- dns update record
+- create a turnstile widget.
+- execute batch dns operations.
+- turnstile delete widget
+- list dns records for a zone.
+- dns
+- edge
 slug: dns-and-security
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare DNS and Security\"\n  description: \"DNS management and web security combining DNS record management with Turnstile bot protection and Logpush observability. Used by site reliability engineers and security teams.\"\n  tags:\n    - Cloudflare\n    - DNS\n    - Security\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-dns\n      location: ./shared/dns.yaml\n    - import: cloudflare-turnstile\n      location: ./shared/turnstile.yaml\n    - import: cloudflare-logpush\n      location: ./shared/logpush.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: dns-security-api\n      description: \"Unified REST API for Cloudflare DNS and security services.\"\n      resources:\n        - path: /v1/dns-records\n          name: dns-records\n \
   \         description: \"DNS record management.\"\n          operations:\n            - method: GET\n              name: list-dns-records\n              description: \"List DNS records.\"\n              call: \"cloudflare-dns.list-dns-records\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/turnstile-widgets\n          name: turnstile-widgets\n          description: \"Turnstile widget management.\"\n          operations:\n            - method: GET\n              name: list-turnstile-widgets\n              description: \"List Turnstile widgets.\"\n              call: \"cloudflare-turnstile.list-turnstile-widgets\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logpush-jobs\n          name: logpush-jobs\n     \

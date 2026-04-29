@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon Data Pipeline
 provider_slug: amazon-data-pipeline
 search_terms:
-- automation
-- workflows
-- aws
-- data pipeline
 - etl
+- automation
+- aws
+- workflows
+- data pipeline
 - data processing
 slug: etl-pipeline-operations
 source_yaml: "id: https://api-evangelist.github.io/amazon-data-pipeline/capabilities/etl-pipeline-operations.yaml\nname: ETL Pipeline Operations\ndescription: Workflow-oriented Naftiko capability for ETL data processing operations using AWS Data Pipeline, covering pipeline creation, definition, activation, and monitoring workflows.\nversion: 1.0.0-alpha1\nspecificationVersion: 1.0.0-alpha1\n\ntags:\n  - ETL\n  - Data Processing\n  - Data Pipeline\n  - Automation\n  - Analytics\n\nimports:\n  - url: capabilities/shared/data-pipeline.yaml\n    as: dataPipeline\n\npersonas:\n  - name: Data Engineer\n    description: Engineer building and maintaining data processing pipelines for ETL workflows\n  - name: Data Analyst\n    description: Analyst using pipelines to prepare data for analysis and reporting\n  - name: Platform Engineer\n    description: Engineer automating data movement between AWS storage and compute services\n\nworkflows:\n  - name: Create and Activate Pipeline\n    description:\

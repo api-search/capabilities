@@ -17,28 +17,28 @@ personas: []
 provider_name: Amazon Aurora DSQL
 provider_slug: amazon-aurora-dsql
 search_terms:
-- update cluster
-- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
-- serverless
-- create multi region clusters
 - delete an aurora dsql cluster when it is no longer needed.
-- get the current status and configuration of an aurora dsql cluster.
-- get cluster
-- create a new aurora dsql cluster for distributed sql workloads.
-- create linked aurora dsql clusters across multiple aws regions for global distribution.
-- aws
-- postgresql
-- list all aurora dsql clusters to understand available databases.
-- amazon aurora dsql
-- list all clusters
-- distributed sql cluster management
-- create a new cluster
-- update the configuration of an aurora dsql cluster.
-- distributed sql
-- list clusters
-- get cluster endpoint
-- create cluster
 - delete cluster
+- amazon aurora dsql
+- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
+- get the current status and configuration of an aurora dsql cluster.
+- list clusters
+- aws
+- serverless
+- get cluster endpoint
+- distributed sql cluster management
+- distributed sql
+- update the configuration of an aurora dsql cluster.
+- list all clusters
+- create cluster
+- create a new aurora dsql cluster for distributed sql workloads.
+- update cluster
+- create linked aurora dsql clusters across multiple aws regions for global distribution.
+- create multi region clusters
+- create a new cluster
+- list all aurora dsql clusters to understand available databases.
+- get cluster
+- postgresql
 slug: distributed-sql-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Distributed SQL Management Workflow\n  description: Workflow capability for creating and managing distributed SQL clusters with Amazon Aurora DSQL including multi-region configurations.\n  tags:\n    - Amazon Aurora DSQL\n    - Distributed SQL\n    - PostgreSQL\n    - Serverless\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: dsql\n    from: shared/aurora-dsql-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributed-sql-rest\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: Distributed SQL cluster management\n          operations:\n            - method: POST\n              name: create-cluster\n              description: Create a new cluster\n              call: \"dsql.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n       \
   \     - method: GET\n              name: list-clusters\n              description: List all clusters\n              call: \"dsql.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: distributed-sql-mcp\n      transport: http\n      tools:\n        - name: list-clusters\n          description: List all Aurora DSQL clusters to understand available databases.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"dsql.list-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-cluster\n          description: Create a new Aurora DSQL cluster for distributed SQL workloads.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"dsql.create-cluster\"\n          outputParameters:\n            - type: object\n              mapping:\

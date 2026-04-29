@@ -20,40 +20,40 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- container registry
-- get cluster admin credentials
-- aks get agent pool
-- get repository attributes
-- get agent pool details
-- list aks clusters
-- enterprise
-- acr list repositories
-- aks get admin credentials
-- aks get cluster
-- aks cluster management
-- aks list clusters
-- list tags for a repository
-- get aks cluster details
-- azure
-- infrastructure as a service
-- container repositories
-- containers
-- aks list agent pools
-- cloud computing
-- kubernetes
-- list container repositories
-- list aks managed clusters
 - acr get repository
-- list manifests for a repository
-- acr list manifests
-- t1
+- api management
+- get agent pool details
 - cloud
+- container registry
+- list clusters
 - list repositories
 - acr list tags
+- aks get agent pool
+- acr list manifests
 - list cluster agent pools
-- list clusters
+- containers
+- infrastructure as a service
+- list tags for a repository
+- aks get admin credentials
+- aks get cluster
+- list container repositories
+- cloud computing
+- list aks clusters
+- aks list agent pools
+- kubernetes
+- get cluster admin credentials
+- aks list clusters
+- container repositories
+- get aks cluster details
+- enterprise
+- azure
+- get repository attributes
 - platform as a service
-- api management
+- t1
+- acr list repositories
+- list manifests for a repository
+- aks cluster management
+- list aks managed clusters
 slug: container-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Platform\"\n  description: \"Unified workflow for Azure container infrastructure combining AKS cluster management and Container Registry operations. Used by platform engineers, DevOps teams, and SREs managing containerized workloads.\"\n  tags:\n    - Azure\n    - Kubernetes\n    - Containers\n    - Container Registry\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n      AZURE_ACR_TOKEN: AZURE_ACR_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-aks\n      location: ./shared/kubernetes-service.yaml\n    - import: azure-acr\n      location: ./shared/container-registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: azure-container-api\n      description: \"Unified REST API for Azure container platform.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n  \
   \        description: \"AKS cluster management\"\n          operations:\n            - method: GET\n              name: list-clusters\n              description: \"List AKS clusters\"\n              call: \"azure-aks.list-clusters\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories\n          name: repositories\n          description: \"Container repositories\"\n          operations:\n            - method: GET\n              name: list-repositories\n              description: \"List container repositories\"\n              call: \"azure-acr.list-repositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: azure-container-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure container platform\

@@ -26,42 +26,42 @@ personas: []
 provider_name: activision-blizzard
 provider_slug: activision-blizzard
 search_terms:
-- get a world of warcraft character profile including level, class, race, guild, and achievement points
-- world of warcraft
-- diablo iii profiles
-- get wow realm list
-- search hearthstone cards by class, set, mana cost, or other criteria
-- get wow character
 - get wow realms
-- world of warcraft realms
-- activision blizzard
-- search hearthstone cards
-- get diablo iii career profile
-- builds community tools, addons, and apps using battle.net game data
-- get the achievements completed by a world of warcraft character
-- creates fan websites, discord bots, and companion apps using game data
-- video game data and player profiles across blizzard franchises
-- get diablo profile
-- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
-- battle.net
-- gaming
-- get a diablo iii career profile for a battletag account
-- get hearthstone card
-- starcraft
-- world of warcraft character data
-- get wow character achievements
 - static and dynamic game data apis for community development
 - get a wow character profile
+- get a diablo iii career profile for a battletag account
+- get diablo iii career profile
+- search hearthstone cards
+- world of warcraft realms
+- starcraft
+- search hearthstone cards by class, set, mana cost, or other criteria
+- hearthstone
+- hearthstone card data
+- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
+- Fan App Builder
+- battle.net
+- activision blizzard
+- diablo iii profiles
+- diablo
+- get a world of warcraft character profile including level, class, race, guild, and achievement points
+- Community Developer
+- world of warcraft character data
+- get wow character
+- analyzes game statistics, leaderboards, and player performance data
 - get the list of world of warcraft realms
 - get diablo career profile
-- hearthstone
+- get hearthstone card
+- get wow realm list
 - Game Analyst
-- analyzes game statistics, leaderboards, and player performance data
-- hearthstone card data
-- Fan App Builder
-- Community Developer
-- diablo
 - get a specific hearthstone card by id or slug
+- gaming
+- get wow character achievements
+- get diablo profile
+- get the achievements completed by a world of warcraft character
+- video game data and player profiles across blizzard franchises
+- world of warcraft
+- builds community tools, addons, and apps using battle.net game data
+- creates fan websites, discord bots, and companion apps using game data
 slug: game-data
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Activision Blizzard Game Data\"\n  description: \"Unified game data workflow for accessing World of Warcraft characters, realms, guilds, items, Hearthstone cards, Diablo III profiles, and StarCraft II ladder data. Used by game developers, community app builders, and gaming analytics teams.\"\n  tags:\n    - Activision Blizzard\n    - Battle.net\n    - Gaming\n    - World of Warcraft\n    - Hearthstone\n    - Diablo\n    - StarCraft\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BATTLENET_CLIENT_ID: BATTLENET_CLIENT_ID\n      BATTLENET_CLIENT_SECRET: BATTLENET_CLIENT_SECRET\n      BATTLENET_ACCESS_TOKEN: BATTLENET_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: battle-net\n      location: ./shared/battle-net.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: game-data-api\n      description: \"Unified REST API for Activision Blizzard game data.\"\
   \n      resources:\n        - path: /v1/wow/characters/{realmSlug}/{characterName}\n          name: wow-characters\n          description: \"World of Warcraft character data\"\n          operations:\n            - method: GET\n              name: get-wow-character\n              description: \"Get a WoW character profile\"\n              call: \"battle-net.get-character\"\n              with:\n                realmSlug: \"rest.realmSlug\"\n                characterName: \"rest.characterName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/wow/realms\n          name: wow-realms\n          description: \"World of Warcraft realms\"\n          operations:\n            - method: GET\n              name: get-wow-realms\n              description: \"Get WoW realm list\"\n              call: \"battle-net.get-realms-index\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\

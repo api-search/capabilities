@@ -22,33 +22,33 @@ personas: []
 provider_name: Apache Jena
 provider_slug: apache-jena
 search_terms:
-- sparql update
-- execute a sparql select query to retrieve rdf data from a fuseki dataset
-- java
-- knowledge graph
-- open source
-- create a new rdf dataset on the fuseki server
-- retrieve a named rdf graph from a dataset
-- sparql query
-- get graph
-- Knowledge Graph Architect
-- engineers who manage and query rdf datasets with sparql
-- sparql
-- architects who design rdf schemas and knowledge graph structures
-- apache jena
-- Data Engineer
-- owl
-- rdf
-- list all rdf datasets available on the fuseki server
 - execute a sparql update to insert or delete rdf triples
-- list all datasets
-- create a dataset
-- create dataset
-- list datasets
-- linked data
-- ontology
 - execute sparql query
+- create dataset
+- architects who design rdf schemas and knowledge graph structures
+- get graph
+- execute a sparql select query to retrieve rdf data from a fuseki dataset
+- list datasets
+- sparql query
+- create a dataset
+- engineers who manage and query rdf datasets with sparql
+- apache jena
+- retrieve a named rdf graph from a dataset
+- ontology
+- owl
 - semantic web
+- knowledge graph
+- list all rdf datasets available on the fuseki server
+- Data Engineer
+- list all datasets
+- sparql
+- sparql update
+- create a new rdf dataset on the fuseki server
+- java
+- linked data
+- open source
+- Knowledge Graph Architect
+- rdf
 slug: sparql-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Jena SPARQL Data Management\"\n  description: \"Workflow capability for data engineers and knowledge graph architects to query, update, and manage RDF datasets using Apache Jena Fuseki.\"\n  tags:\n    - Apache Jena\n    - Knowledge Graph\n    - Linked Data\n    - RDF\n    - SPARQL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      FUSEKI_PASSWORD: FUSEKI_PASSWORD\n\ncapability:\n  consumes:\n    - import: jena-fuseki\n      location: ./shared/fuseki-sparql-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: jena-sparql-management-api\n      description: \"Unified REST API for Apache Jena SPARQL data management.\"\n      resources:\n        - path: /v1/sparql\n          name: sparql\n          operations:\n            - method: GET\n              name: sparql-query\n              description: Execute SPARQL query\n              call: \"jena-fuseki.sparql-query-get\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets\n          name: datasets\n          operations:\n            - method: GET\n              name: list-datasets\n              description: List all datasets\n              call: \"jena-fuseki.list-datasets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dataset\n              description: Create a dataset\n              call: \"jena-fuseki.create-dataset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: jena-sparql-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SPARQL knowledge graph management.\"\n      tools:\n        - name: sparql-query\n          description: Execute a SPARQL SELECT query to retrieve\

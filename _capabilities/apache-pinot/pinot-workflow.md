@@ -18,39 +18,39 @@ personas: []
 provider_name: Apache Pinot
 provider_slug: apache-pinot
 search_terms:
-- get table
-- queries pinot for real-time analytics and dashboards
-- list all registered schemas
-- get a specific schema definition
-- olap
-- sql
-- execute a sql query against pinot tables
-- Platform Engineer
-- database
-- open source
-- query
-- get cluster info
-- execute sql query
-- Data Analyst
-- list all segments for a table
-- get pinot cluster status and information
-- manages pinot cluster, tables, and schemas
-- create a new pinot table
-- distributed databases
-- analytics
-- query sql
-- list segments
-- real-time
-- apache
-- list tables
-- list all tables in the pinot cluster
-- real-time olap
-- low latency
-- apache pinot
 - create table
 - get the configuration of a specific table
-- list schemas
+- list all segments for a table
+- manages pinot cluster, tables, and schemas
+- get cluster info
 - get schema
+- low latency
+- queries pinot for real-time analytics and dashboards
+- execute sql query
+- execute a sql query against pinot tables
+- list all registered schemas
+- list segments
+- Data Analyst
+- get a specific schema definition
+- create a new pinot table
+- real-time olap
+- query
+- query sql
+- get pinot cluster status and information
+- sql
+- list schemas
+- list all tables in the pinot cluster
+- get table
+- apache
+- olap
+- list tables
+- real-time
+- analytics
+- Platform Engineer
+- distributed databases
+- open source
+- apache pinot
+- database
 slug: pinot-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Pinot Analytics Workflow\"\n  description: \"Workflow for executing real-time OLAP queries, managing schemas and tables, and monitoring the Pinot cluster.\"\n  tags:\n    - Apache Pinot\n    - Analytics\n    - Real-Time OLAP\n    - SQL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PINOT_AUTH_TOKEN: PINOT_AUTH_TOKEN\ncapability:\n  consumes:\n    - type: http\n      namespace: pinot\n      baseUri: https://localhost:9000\n      description: \"Apache Pinot REST API\"\n      resources:\n        - name: queries\n          path: /query/sql\n          description: \"SQL query execution\"\n          operations:\n            - name: querySql\n              method: POST\n              description: \"Execute SQL query\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"\
   $.\"\n        - name: tables\n          path: /tables\n          description: \"Table management\"\n          operations:\n            - name: listTables\n              method: GET\n              description: \"List all tables\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pinot-api\n      description: \"Unified REST API for Pinot analytics.\"\n      resources:\n        - path: /v1/query\n          name: queries\n          operations:\n            - method: POST\n              name: query\n              description: \"Execute SQL query\"\n              call: \"pinot.querySql\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables\n          name: tables\n          operations:\n            - method: GET\n              name: list-tables\n\

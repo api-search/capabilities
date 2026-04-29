@@ -14,100 +14,100 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- content
-- getactorbyid
-- hubspot delete a feature flag
-- hubspot list conversation threads
-- oauth
-- listactors
-- getthreadbyid
-- integration
-- hubspot retrieve a thread
-- hubspot
-- hubspot list portal flag states
-- getrefreshtokenmetadata
-- revokerefreshtoken
-- batchupsertportalflagstates
-- hubspot retrieve a message
-- hubspot list actors
-- hubspot retrieve function by type
-- getactiondefinitionbyid
-- completecallback
-- listchannels
-- hubspot update an action definition
-- setportalflagstate
-- operations
-- listportalflagstates
-- listactionfunctions
-- getactionfunctionbytype
-- archivethread
-- updatethread
-- listactiondefinitions
-- hubspot delete a specific function
-- hubspot list thread messages
-- getapplicationfeatureflag
-- getportalflagstate
-- hubspot list definition revisions
-- crm
-- hubspot send a message
-- hubspot retrieve a portal flag state
-- getactionfunctionbyid
-- listthreads
-- hubspot list action definitions
-- getinboxbyid
-- hubspot list action functions
-- listthreadmessages
-- hubspot batch create or update portal flag states
-- hubspot retrieve a feature flag configuration
-- hubspot set a portal flag state
-- sales
-- deleteportalflagstate
-- automation
-- updateactiondefinitionbyid
-- hubspot create or refresh an access token
-- hubspot create or update a function
-- getmessagebyid
-- batchdeleteportalflagstates
-- analytics
-- hubspot complete a single callback
-- hubspot revoke a refresh token
-- archiveactiondefinitionbyid
-- listinboxes
-- customer service
-- email marketing
-- deleteactionfunctionbyid
-- getaccesstokenmetadata
-- hubspot retrieve refresh token metadata
-- hubspot retrieve an action definition
-- createorrefreshaccesstoken
-- marketing
-- hubspot list all inboxes
-- hubspot update a thread
-- marketing automation
-- listactiondefinitionrevisions
-- deleteactionfunctionbytype
-- hubspot archive a thread
-- hubspot delete a function by type
-- hubspot list channels
-- hubspot retrieve an inbox
-- commerce
-- hubspot batch delete portal flag states
-- sendmessage
-- hubspot retrieve an actor
-- hubspot delete a portal flag state
-- batchcompletecallbacks
-- hubspot archive an action definition
-- createactiondefinition
-- hubspot complete multiple callbacks
-- hubspot retrieve a specific revision
-- hubspot retrieve a specific function
-- getactiondefinitionrevisionbyid
-- deleteapplicationfeatureflag
-- upsertactionfunction
 - hubspot create an action definition
-- upsertapplicationfeatureflag
+- hubspot retrieve a feature flag configuration
+- listactiondefinitions
+- content
+- hubspot retrieve a message
+- completecallback
+- hubspot create or refresh an access token
+- batchdeleteportalflagstates
+- revokerefreshtoken
+- hubspot batch create or update portal flag states
+- crm
+- deleteportalflagstate
+- marketing automation
+- hubspot retrieve an inbox
+- hubspot retrieve a specific function
+- hubspot revoke a refresh token
+- hubspot update an action definition
+- getthreadbyid
+- updateactiondefinitionbyid
+- batchcompletecallbacks
+- hubspot retrieve a portal flag state
+- getactiondefinitionbyid
+- deleteactionfunctionbytype
+- hubspot retrieve an action definition
+- hubspot retrieve a specific revision
+- hubspot list thread messages
+- hubspot complete multiple callbacks
 - hubspot retrieve access token metadata
+- sendmessage
+- operations
+- integration
+- hubspot delete a specific function
+- listthreads
+- hubspot retrieve an actor
+- hubspot list action definitions
+- getaccesstokenmetadata
+- getportalflagstate
+- hubspot list actors
+- getactorbyid
+- hubspot retrieve a thread
+- hubspot batch delete portal flag states
+- sales
+- deleteapplicationfeatureflag
+- hubspot set a portal flag state
+- hubspot list conversation threads
+- listportalflagstates
+- hubspot delete a function by type
+- listactionfunctions
+- deleteactionfunctionbyid
+- getactiondefinitionrevisionbyid
+- hubspot list all inboxes
+- oauth
+- setportalflagstate
+- hubspot update a thread
+- hubspot archive a thread
+- getapplicationfeatureflag
+- upsertactionfunction
+- getrefreshtokenmetadata
+- createorrefreshaccesstoken
+- archivethread
+- hubspot list channels
+- hubspot complete a single callback
+- getactionfunctionbyid
+- hubspot archive an action definition
+- email marketing
+- getinboxbyid
+- hubspot retrieve function by type
+- hubspot send a message
+- getactionfunctionbytype
+- analytics
+- hubspot create or update a function
+- createactiondefinition
+- hubspot list action functions
 - hubspot create or update a feature flag
+- hubspot delete a feature flag
+- automation
+- listthreadmessages
+- getmessagebyid
+- marketing
+- listactors
+- listactiondefinitionrevisions
+- hubspot delete a portal flag state
+- updatethread
+- hubspot retrieve refresh token metadata
+- batchupsertportalflagstates
+- commerce
+- customer service
+- listchannels
+- hubspot
+- archiveactiondefinitionbyid
+- hubspot list portal flag states
+- hubspot list definition revisions
+- upsertapplicationfeatureflag
+- listinboxes
 slug: automation-and-integration
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: HubSpot Automation and Integration\n  description: Workflow automation and integration management combining custom workflow actions, OAuth, feature flags, and conversations.\n  tags:\n  - HubSpot\n  - Automation\n  - Integration\n  - OAuth\n  created: '2026-04-18'\n  modified: '2026-04-18'\nbinds:\n- namespace: env\n  keys:\n    HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\ncapability:\n  consumes:\n  - import: custom-workflow-actions-api\n    location: ./shared/custom-workflow-actions-api.yaml\n  - import: oauth-api\n    location: ./shared/oauth-api.yaml\n  - import: crm-feature-flags-api\n    location: ./shared/crm-feature-flags-api.yaml\n  - import: conversations-api\n    location: ./shared/conversations-api.yaml\n  exposes:\n  - type: mcp\n    port: 9095\n    namespace: automation-and-integration-mcp\n    transport: http\n    description: MCP server for AI-assisted HubSpot Automation and Integration.\n    tools:\n    - name: completecallback\n\
   \      description: HubSpot Complete a Single Callback\n      hints:\n        readOnly: false\n      call: custom-workflow-actions-api.completecallback\n    - name: batchcompletecallbacks\n      description: HubSpot Complete Multiple Callbacks\n      hints:\n        readOnly: false\n      call: custom-workflow-actions-api.batchcompletecallbacks\n    - name: listactiondefinitions\n      description: HubSpot List Action Definitions\n      hints:\n        readOnly: true\n      call: custom-workflow-actions-api.listactiondefinitions\n    - name: createactiondefinition\n      description: HubSpot Create an Action Definition\n      hints:\n        readOnly: false\n      call: custom-workflow-actions-api.createactiondefinition\n    - name: getactiondefinitionbyid\n      description: HubSpot Retrieve an Action Definition\n      hints:\n        readOnly: true\n      call: custom-workflow-actions-api.getactiondefinitionbyid\n    - name: updateactiondefinitionbyid\n      description: HubSpot Update\

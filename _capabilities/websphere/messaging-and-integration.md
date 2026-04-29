@@ -31,38 +31,38 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- message operations
-- list queues on a queue manager
-- queue manager operations
-- get queue details
-- browse messages
-- middleware
-- browse messages on a queue non-destructively
-- integration
-- list channels
-- cloud native
-- queue management
-- j2ee
-- get queue manager details
-- channel management
-- list available queue managers
-- list queue managers
-- get queue manager
-- enterprise java
-- create a new queue
-- list queues
 - delete queue
-- delete a queue
-- messaging
-- send message
-- list channels on a queue manager
-- application server
-- send a message to a queue
-- browse messages on a queue
+- browse messages
 - ibm mq
+- messaging
+- j2ee
+- integration
+- browse messages on a queue non-destructively
+- send a message to a queue
+- list channels
+- message operations
+- get queue manager
 - microservices
-- create queue
+- browse messages on a queue
 - get queue
+- get queue details
+- delete a queue
+- create queue
+- list queues
+- application server
+- enterprise java
+- list queue managers
+- list channels on a queue manager
+- queue manager operations
+- cloud native
+- list available queue managers
+- get queue manager details
+- middleware
+- list queues on a queue manager
+- queue management
+- create a new queue
+- channel management
+- send message
 slug: messaging-and-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Messaging and Integration\"\n  description: \"Workflow for managing IBM MQ messaging infrastructure including queue management, message operations, channels, and topics for integration architects and middleware administrators.\"\n  tags:\n    - IBM MQ\n    - Messaging\n    - Integration\n    - Queue Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MQ_USERNAME: MQ_USERNAME\n      MQ_PASSWORD: MQ_PASSWORD\n\ncapability:\n  consumes:\n    - import: mq-rest\n      location: ./shared/mq-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: messaging-api\n      description: \"Unified REST API for IBM MQ messaging operations.\"\n      resources:\n        - path: /v1/queue-managers\n          name: queue-managers\n          description: \"Queue manager operations\"\n          operations:\n            - method: GET\n              name: list-queue-managers\n\
   \              description: \"List queue managers\"\n              call: \"mq-rest.list-queue-managers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-queue-manager\n              description: \"Get queue manager details\"\n              call: \"mq-rest.get-queue-manager\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Queue management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List queues\"\n              call: \"mq-rest.list-queues\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n\

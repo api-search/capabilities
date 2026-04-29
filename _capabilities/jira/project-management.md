@@ -54,58 +54,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- edit an issue.
-- single project.
-- create issue
-- create a new jira issue.
-- get issue comments.
-- issue tracking
-- project management
-- jira
-- workflow transitions.
-- list all jira projects.
-- get statuses
-- get issue details.
-- jql issue search.
-- get jira issue details.
-- add a comment to a jira issue.
-- get available workflow transitions.
-- issue comments.
-- get issue types
 - project management.
+- list all projects.
+- get project details.
+- perform a transition.
+- get issue comments.
+- create a new jira issue.
+- get available workflow transitions.
+- get comments
 - list projects
-- edit an existing jira issue.
+- list all jira projects.
 - get issue
+- do transition
+- delete issue
+- issue comments.
+- service management
+- single project.
+- get issue details.
+- create a new issue.
+- get jira project details.
+- delete an issue.
+- workflow transitions.
+- edit an existing jira issue.
+- transition an issue through its workflow.
+- search issues
+- search jira issues using jql.
 - get comments on a jira issue.
 - get all jira issue types.
-- get jira project details.
-- get all jira issue statuses.
-- issue lifecycle management.
-- create a new issue.
-- search issues
-- service management
-- transition an issue through its workflow.
-- edit issue
-- add comment
-- list all projects.
-- get project
-- itsm
-- search with jql.
-- get comments
-- get transitions
-- get available transitions.
 - single issue operations.
-- do transition
-- delete an issue.
-- delete issue
 - agile
-- perform a transition.
-- search jira issues using jql.
+- get statuses
+- get available transitions.
+- search with jql.
 - delete a jira issue.
-- get priorities
-- get all jira priorities.
-- get project details.
+- issue lifecycle management.
+- itsm
+- add comment
+- create issue
+- project management
 - add a comment.
+- get project
+- get issue types
+- get priorities
+- edit an issue.
+- edit issue
+- get transitions
+- get jira issue details.
+- get all jira priorities.
+- issue tracking
+- add a comment to a jira issue.
+- jql issue search.
+- get all jira issue statuses.
+- jira
 slug: project-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Jira Project Management\"\n  description: \"Unified project management workflow combining issue tracking, workflow transitions, JQL search, and project management. Used by project managers, developers, and team leads to manage agile software delivery.\"\n  tags:\n    - Jira\n    - Project Management\n    - Issue Tracking\n    - Agile\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      JIRA_API_TOKEN: JIRA_API_TOKEN\n      JIRA_EMAIL: JIRA_EMAIL\n\ncapability:\n  consumes:\n    - import: jira-cloud\n      location: ./shared/jira-cloud-platform.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: jira-pm-api\n      description: \"Unified REST API for Jira project management workflows.\"\n      resources:\n        - path: /v1/issues\n          name: issues\n          description: \"Issue lifecycle management.\"\n          operations:\n            - method: POST\n\
   \              name: create-issue\n              description: \"Create a new issue.\"\n              call: \"jira-cloud.create-issue\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/issues/{issueIdOrKey}\n          name: issue-detail\n          description: \"Single issue operations.\"\n          operations:\n            - method: GET\n              name: get-issue\n              description: \"Get issue details.\"\n              call: \"jira-cloud.get-issue\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: edit-issue\n              description: \"Edit an issue.\"\n              call: \"jira-cloud.edit-issue\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n\

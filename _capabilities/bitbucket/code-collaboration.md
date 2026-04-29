@@ -43,57 +43,57 @@ personas: []
 provider_name: Bitbucket
 provider_slug: bitbucket
 search_terms:
-- git
-- merge a pull request
-- list pipelines
+- list pull requests for a repository
+- get repository
+- pull requests
+- create pullrequest
+- code collaboration
 - stop pipeline
-- pull request workflows and code reviews
-- delete repository
-- atlassian
-- continuous integration and deployment pipelines
-- bitbucket
-- create a new git repository
-- trigger a pipeline
-- stop a running pipeline
+- ci/cd pipeline management
 - create a repository
+- devops
+- trigger a pipeline
+- get pipeline execution details
+- create repository
+- get repository details
+- get pipeline
+- pull request workflows and code reviews
+- DevOps Engineer
+- git
+- get pullrequest
+- writes code, creates pull requests, and reviews code
 - trigger a new ci/cd pipeline
+- create a new pull request
+- continuous integration and deployment pipelines
+- create a new git repository
+- managing git repositories, branches, and commits
+- list repositories
+- delete a repository
+- merge pullrequest
+- Developer
 - code review
 - list ci/cd pipelines
-- get repository details
-- trigger pipeline
-- list pullrequests
-- list pull requests
-- get pipeline execution details
-- get pipeline
-- Developer
-- devops
-- decline a pull request
-- delete a repository
-- managing git repositories, branches, and commits
-- merge pullrequest
-- pull requests
-- create a pull request
-- get pullrequest
-- version control
-- list repositories
-- create repository
-- list repositories in a workspace
-- ci/cd pipeline management
-- create pullrequest
-- repository management, pull requests, code reviews, and ci/cd pipelines
-- DevOps Engineer
-- manages ci/cd pipelines, deployments, and repository settings
-- list pull requests for a repository
 - repository hosting
-- code collaboration
-- pull request management
-- create a new pull request
-- repository management
-- ci/cd
-- writes code, creates pull requests, and reviews code
-- get repository
+- decline a pull request
+- stop a running pipeline
 - get pull request details
+- pull request management
+- atlassian
+- create a pull request
+- list repositories in a workspace
+- merge a pull request
+- ci/cd
+- list pipelines
+- repository management, pull requests, code reviews, and ci/cd pipelines
+- trigger pipeline
+- manages ci/cd pipelines, deployments, and repository settings
+- list pull requests
+- version control
+- delete repository
+- bitbucket
+- list pullrequests
 - decline pullrequest
+- repository management
 slug: code-collaboration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bitbucket Code Collaboration\"\n  description: \"Workflow capability for code collaboration using Bitbucket - managing repositories, pull requests, code reviews, and CI/CD pipelines. Used by developers and DevOps engineers.\"\n  tags:\n    - Bitbucket\n    - Code Collaboration\n    - CI/CD\n    - DevOps\n    - Pull Requests\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BITBUCKET_TOKEN: BITBUCKET_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-rest-api\n      location: ./shared/cloud-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: code-collaboration-api\n      description: \"Unified REST API for Bitbucket code collaboration workflows.\"\n      resources:\n        - path: /v1/repositories\n          name: repositories\n          description: \"Repository management\"\n          operations:\n            - method: GET\n              name:\
   \ list-repositories\n              description: \"List repositories\"\n              call: \"cloud-rest-api.list-repositories\"\n            - method: POST\n              name: create-repository\n              description: \"Create a repository\"\n              call: \"cloud-rest-api.create-repository\"\n            - method: GET\n              name: get-repository\n              description: \"Get repository details\"\n              call: \"cloud-rest-api.get-repository\"\n        - path: /v1/pullrequests\n          name: pullrequests\n          description: \"Pull request management\"\n          operations:\n            - method: GET\n              name: list-pullrequests\n              description: \"List pull requests\"\n              call: \"cloud-rest-api.list-pullrequests\"\n            - method: POST\n              name: create-pullrequest\n              description: \"Create a pull request\"\n              call: \"cloud-rest-api.create-pullrequest\"\n            - method: POST\n\

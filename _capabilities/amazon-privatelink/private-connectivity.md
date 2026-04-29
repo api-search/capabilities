@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- list endpoint connections
-- accept pending vpc endpoint connection requests
-- accept endpoint connections
-- Platform Engineer
-- consumes endpoint services and manages vpc endpoints for internal services
 - list connections
-- Network Engineer
-- create endpoint
-- list vpc endpoints in the account
-- list available vpc endpoint services for private connectivity
-- create endpoint service
-- list endpoint services
-- amazon
-- reject vpc endpoint connection requests
-- create a private vpc endpoint for an aws service or endpoint service
-- create vpc endpoint
-- aws
-- zero trust
-- list vpc endpoint services
-- vpc endpoint service provider management
-- endpoint services
-- endpoint connection management
-- vpc
-- create a vpc endpoint
-- list vpc endpoints
-- vpc endpoint consumer management
-- private connectivity
 - create a vpc endpoint service
+- list vpc endpoint services
+- reject vpc endpoint connection requests
+- create endpoint
+- Network Engineer
+- zero trust
+- private vpc connectivity workflow
+- private connectivity
+- vpc
+- accept endpoint connections
+- list pending and active connections to endpoint services
+- consumes endpoint services and manages vpc endpoints for internal services
+- aws
+- list available vpc endpoint services for private connectivity
 - reject endpoint connections
+- create a vpc endpoint
+- vpc endpoint consumer management
+- list vpc endpoints in the account
+- amazon
+- create a private vpc endpoint for an aws service or endpoint service
 - security
 - accept connections
-- list endpoints
-- list pending and active connections to endpoint services
+- create vpc endpoint
+- endpoint connection management
 - networking
+- list vpc endpoints
+- Platform Engineer
+- vpc endpoint service provider management
+- endpoint services
 - create a vpc endpoint service backed by a load balancer
-- private vpc connectivity workflow
+- list endpoints
+- list endpoint connections
+- create endpoint service
 - manages vpc endpoint services and private connectivity architecture
+- list endpoint services
+- accept pending vpc endpoint connection requests
 slug: private-connectivity
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon PrivateLink Private Connectivity\n  description: Workflow capability for establishing and managing private connectivity between VPCs and AWS services using Amazon PrivateLink. Covers endpoint service creation, VPC endpoint management, and connection lifecycle for network engineers and platform teams.\n  tags:\n    - Amazon\n    - AWS\n    - Networking\n    - Private Connectivity\n    - VPC\n    - Security\n    - Zero Trust\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-privatelink\n      location: ./shared/amazon-privatelink.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: private-connectivity-api\n      description: Unified REST API for Amazon PrivateLink private connectivity workflows.\n\
   \      resources:\n        - path: /v1/endpoint-services\n          name: endpoint-services\n          description: VPC endpoint service provider management\n          operations:\n            - method: GET\n              name: list-endpoint-services\n              description: List VPC endpoint services\n              call: \"amazon-privatelink.describe-endpoint-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-endpoint-service\n              description: Create a VPC endpoint service\n              call: \"amazon-privatelink.create-endpoint-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/endpoints\n          name: endpoints\n          description: VPC endpoint consumer management\n          operations:\n            - method: GET\n              name: list-endpoints\n              description:\

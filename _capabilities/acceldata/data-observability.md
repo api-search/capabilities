@@ -10,12 +10,12 @@ provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
 - observability
-- data quality
+- ai agents
 - intelligence
 - data management
-- data pipeline
 - data observability
-- ai agents
+- data pipeline
+- data quality
 slug: data-observability
 source_yaml: "apiVersion: naftiko.io/v1alpha1\nkind: WorkflowCapability\nmetadata:\n  name: data-observability\n  version: 1.0.0\n  description: End-to-end data observability workflow for monitoring data quality, tracing lineage, and managing pipeline health across cloud and hybrid environments\n  provider: Acceldata\n  tags:\n    - Data Observability\n    - Data Quality\n    - Pipeline Monitoring\n    - Data Lineage\n    - Alerts\nspec:\n  sharedCapabilities:\n    - acceldata-adoc-api\n  workflow:\n    name: Data Quality Incident Response\n    description: Detect data quality alerts, trace root cause through lineage, and remediate with updated quality rules\n    steps:\n      - id: monitor-alerts\n        name: Monitor Active Alerts\n        description: Continuously poll for open data quality and pipeline alerts\n        operation: listAlerts\n        parameters:\n          status: OPEN\n          severity: [\"HIGH\", \"CRITICAL\"]\n      - id: investigate-dataset\n        name: Investigate\
   \ Affected Dataset\n        description: Retrieve dataset profile and quality score for affected data asset\n        operation: listDatasets\n        dependsOn: [monitor-alerts]\n      - id: trace-lineage\n        name: Trace Data Lineage\n        description: Get upstream lineage to identify root cause data source\n        operation: getDatasetLineage\n        dependsOn: [investigate-dataset]\n      - id: check-pipeline\n        name: Check Pipeline Jobs\n        description: Review recent pipeline job executions for failures or anomalies\n        operation: listPipelineJobs\n        dependsOn: [trace-lineage]\n      - id: create-rule\n        name: Create Remediation Rule\n        description: Create or update data quality rule to prevent recurrence\n        operation: createDataQualityRule\n        dependsOn: [check-pipeline]\n      - id: acknowledge-alert\n        name: Acknowledge Alert\n        description: Acknowledge alert after root cause is identified and rule is created\n  \

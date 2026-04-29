@@ -10,9 +10,9 @@ provider_name: Amazon Systems Manager
 provider_slug: amazon-systems-manager
 search_terms:
 - aws
-- operations
-- automation
 - management
+- automation
+- operations
 slug: amazon-systems-manager-capability
 source_yaml: 'id: amazon-systems-manager-capability
 

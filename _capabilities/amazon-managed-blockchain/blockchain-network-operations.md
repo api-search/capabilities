@@ -34,38 +34,38 @@ personas: []
 provider_name: Amazon Managed Blockchain
 provider_slug: amazon-managed-blockchain
 search_terms:
-- network members
-- list nodes
-- blockchain
-- invite an aws account to join a blockchain network as a member
-- create a new hyperledger fabric or ethereum blockchain network
-- amazon
-- ethereum
-- list all members of a blockchain network
-- list peer nodes
-- create a peer node to participate in a blockchain network
-- create a peer node
-- aws
-- invite network member
-- hyperledger fabric
-- create peer node
-- create network
-- list all peer nodes in a blockchain network
-- list blockchain networks
-- Blockchain Architect
-- create a member
-- list network members
-- create a blockchain network
-- list all amazon managed blockchain networks
-- list networks
-- blockchain networks
-- create member
-- list members
-- distributed ledger
-- peer nodes
 - create blockchain network
-- Blockchain Developer
+- distributed ledger
+- network members
+- create network
+- create a blockchain network
+- Blockchain Architect
+- list network members
+- create a member
+- ethereum
+- list peer nodes
+- create a new hyperledger fabric or ethereum blockchain network
+- list all members of a blockchain network
+- create a peer node to participate in a blockchain network
+- list networks
+- aws
 - create node
+- invite network member
+- invite an aws account to join a blockchain network as a member
+- Blockchain Developer
+- list nodes
+- list all amazon managed blockchain networks
+- create a peer node
+- list blockchain networks
+- amazon
+- create peer node
+- blockchain networks
+- hyperledger fabric
+- peer nodes
+- blockchain
+- list members
+- list all peer nodes in a blockchain network
+- create member
 slug: blockchain-network-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Managed Blockchain - Network Operations\"\n  description: \"Workflow capability for blockchain architects and developers to create and manage Hyperledger Fabric and Ethereum networks, members, peer nodes, and proposals on Amazon Managed Blockchain.\"\n  tags:\n    - Amazon\n    - Blockchain\n    - Hyperledger Fabric\n    - Ethereum\n    - Distributed Ledger\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: managed-blockchain\n      location: ./shared/managed-blockchain.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: blockchain-api\n      description: \"Unified REST API for Amazon Managed Blockchain operations.\"\n      resources:\n        - path: /v1/networks\n          name: networks\n\
   \          description: \"Blockchain networks\"\n          operations:\n            - method: GET\n              name: list-networks\n              description: \"List blockchain networks\"\n              call: \"managed-blockchain.list-networks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-network\n              description: \"Create a blockchain network\"\n              call: \"managed-blockchain.create-network\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/networks/{id}/members\n          name: members\n          description: \"Network members\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List members\"\n              call: \"managed-blockchain.list-members\"\n              with:\n                networkId: \"rest.id\"\n        \

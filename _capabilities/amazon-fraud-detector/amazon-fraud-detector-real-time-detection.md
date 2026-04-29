@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Fraud Detector
 provider_slug: amazon-fraud-detector
 search_terms:
-- financial services
-- security
-- fraud detection
 - real-time
 - machine learning
+- fraud detection
+- financial services
 - aws
+- security
 - financial security
 slug: amazon-fraud-detector-real-time-detection
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Fraud Detector Real-Time Detection\n  description: Orchestrate ML models and business rules for real-time transaction fraud scoring and decision-making.\n  tags:\n  - Fraud Detection\n  - Machine Learning\n  - Real-Time\n  - Financial Security\n  - AWS\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - namespace: frauddetector\n    ref: capabilities/shared/fraud-detector.yaml\n  exposes:\n  - type: rest\n    port: 8080\n  - type: mcp\n    port: 9090\n  tools:\n  - name: putDetector\n    description: Create or update a fraud detector\n    inputSchema:\n      type: object\n      properties:\n        detectorId:\n          type: string\n        eventTypeName:\n          type: string\n        description:\n          type: string\n      required:\n      - detectorId\n      - eventTypeName\n  - name: getDetectors\n\

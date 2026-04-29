@@ -50,47 +50,47 @@ personas: []
 provider_name: Amazon EC2 Image Builder
 provider_slug: amazon-ec2-image-builder
 search_terms:
-- automation
-- CreateImageRecipe
 - engineers managing amazon ec2 image builder resources.
-- CreateContainerRecipe
-- create component
-- amazon ec2 image builder create container recipe
-- image building
-- delete container recipe
-- image pipeline management business domain.
-- cancel image creation
-- aws
-- create image pipeline
-- ec2
-- container images
-- DeleteComponent
-- create image
-- workflow capability for image pipeline management.
-- amazon ec2 image builder delete component
-- amazon ec2 image builder create distribution configuration
-- create container recipe
-- create distribution configuration
-- CreateImage
-- create infrastructure configuration
-- CancelImageCreation
-- delete component
-- virtual machine images
-- amazon web services
-- amazon ec2 image builder cancel image creation
-- DeleteContainerRecipe
 - CreateComponent
-- CreateImagePipeline
-- amazon ec2 image builder create image recipe
-- amazon ec2 image builder create component
-- amazon ec2 image builder create image pipeline
 - amazon ec2 image builder
-- create image recipe
+- CancelImageCreation
+- amazon ec2 image builder create distribution configuration
+- automation
 - amazon ec2 image builder create image
+- create distribution configuration
+- delete component
+- amazon ec2 image builder cancel image creation
+- amazon ec2 image builder delete component
+- CreateContainerRecipe
+- container images
 - CreateInfrastructureConfiguration
-- CreateDistributionConfiguration
+- CreateImagePipeline
+- create image pipeline
+- workflow capability for image pipeline management.
+- aws
+- image building
+- amazon ec2 image builder create container recipe
 - amazon ec2 image builder delete container recipe
+- create component
+- image pipeline management business domain.
+- create infrastructure configuration
+- ec2
+- amazon ec2 image builder create component
+- DeleteComponent
+- cancel image creation
+- CreateImage
 - amazon ec2 image builder create infrastructure configuration
+- delete container recipe
+- create image
+- CreateDistributionConfiguration
+- amazon ec2 image builder create image pipeline
+- amazon ec2 image builder create image recipe
+- create image recipe
+- amazon web services
+- create container recipe
+- virtual machine images
+- CreateImageRecipe
+- DeleteContainerRecipe
 slug: ec2-image-builder-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EC2 Image Builder Image Pipeline Management\"\n  description: \"Unified capability for managing EC2 Image Builder pipelines, recipes, and components for DevOps engineers.\"\n  tags:\n    - Amazon EC2 Image Builder\n    - AWS\n    - EC2\n    - Image Building\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ec2-image-builder\n      location: ./shared/ec2-image-builder.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: ec2-image-builder-api\n      description: \"Unified REST API for Image Pipeline Management.\"\n      resources:\n        - path: /v1/CancelImageCreation\n          name: CancelImageCreation\n          description: \"Amazon EC2 Image Builder Cancel Image Creation\"\n          operations:\n            - method:\
   \ PUT\n              name: CancelImageCreation\n              description: \"Amazon EC2 Image Builder Cancel Image Creation\"\n              call: \"ec2-image-builder.CancelImageCreation\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/CreateComponent\n          name: CreateComponent\n          description: \"Amazon EC2 Image Builder Create Component\"\n          operations:\n            - method: PUT\n              name: CreateComponent\n              description: \"Amazon EC2 Image Builder Create Component\"\n              call: \"ec2-image-builder.CreateComponent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/CreateContainerRecipe\n          name: CreateContainerRecipe\n          description: \"Amazon EC2 Image Builder Create Container Recipe\"\n          operations:\n            - method: PUT\n              name: CreateContainerRecipe\n\

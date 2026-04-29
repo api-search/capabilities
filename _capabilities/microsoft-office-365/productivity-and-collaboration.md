@@ -43,79 +43,79 @@ personas: []
 provider_name: Microsoft Office 365
 provider_slug: microsoft-office-365
 search_terms:
-- list mail messages.
-- get signed in user
-- create user
-- list calendars.
-- list groups.
-- send mail
-- decline a meeting invitation.
-- update user properties.
-- calendar management.
-- decline event
-- create a draft message.
-- list messages
-- get group
-- get a specific event.
-- get calendar view
-- list members of a group.
-- enterprise
-- get the signed-in user profile.
-- list calendar events.
-- send an email message.
-- list mail folders.
-- create a user.
-- get a specific message.
-- get a specific group.
-- list events.
-- list users in the organization.
-- update event
-- delete group
-- get event
-- update user
-- delete a user.
-- create a new group.
-- delete a message.
-- list groups
-- create event
-- list mail folders
-- accept a meeting invitation.
-- get a specific user.
-- group management.
-- create message
-- delete user
-- list users.
-- create a calendar event.
-- list users
 - accept event
-- list calendars
+- create event
+- update user properties.
 - get calendar view for a date range.
-- cloud
-- delete event
-- update a calendar event.
-- collaboration
-- list messages.
-- create group
-- productivity
-- create a new user.
-- create an event.
-- mail management.
-- list group members
-- microsoft
-- delete a calendar event.
 - get user
-- office 365
-- user management.
-- create a group.
-- delete a group.
-- add a member to a group.
-- get message
-- remove a member from a group.
-- add group member
-- send mail.
-- remove group member
+- list groups
+- send mail
+- list messages.
+- calendar management.
+- mail management.
+- get calendar view
+- list users.
+- list calendars
+- cloud
 - list events
+- remove group member
+- send an email message.
+- get signed in user
+- delete event
+- create a draft message.
+- get event
+- remove a member from a group.
+- delete a message.
+- group management.
+- create an event.
+- list mail folders.
+- create a calendar event.
+- user management.
+- get a specific group.
+- office 365
+- update event
 - delete message
+- get group
+- decline a meeting invitation.
+- list events.
+- microsoft
+- accept a meeting invitation.
+- create a user.
+- list group members
+- productivity
+- delete a user.
+- list calendars.
+- list calendar events.
+- add group member
+- collaboration
+- create message
+- create user
+- create group
+- create a new group.
+- add a member to a group.
+- decline event
+- get a specific user.
+- list members of a group.
+- list mail messages.
+- create a group.
+- send mail.
+- delete a calendar event.
+- list mail folders
+- get a specific event.
+- list groups.
+- list users
+- list messages
+- delete group
+- delete a group.
+- enterprise
+- delete user
+- get the signed-in user profile.
+- get message
+- update user
+- create a new user.
+- update a calendar event.
+- get a specific message.
+- list users in the organization.
 slug: productivity-and-collaboration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Office 365 Productivity and Collaboration\"\n  description: \"Unified productivity workflow combining mail, calendar, user management, and group collaboration for enterprise users and IT administrators.\"\n  tags:\n    - Microsoft\n    - Office 365\n    - Productivity\n    - Collaboration\n    - Enterprise\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: productivity-api\n      description: \"Unified REST API for Microsoft 365 productivity and collaboration.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"User management.\"\n          operations:\n            - method: GET\n              name: list-users\n        \
   \      description: \"List users.\"\n              call: \"graph-api.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a user.\"\n              call: \"graph-api.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List groups.\"\n              call: \"graph-api.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a group.\"\n              call: \"graph-api.create-group\"\n              outputParameters:\n\

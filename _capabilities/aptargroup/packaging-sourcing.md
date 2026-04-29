@@ -11,23 +11,23 @@ personas: []
 provider_name: AptarGroup
 provider_slug: aptargroup
 search_terms:
+- sustainability
 - manufacturing
-- get packaging specs
+- find sustainable packaging
+- packaging
+- gets detailed specifications for a specific aptargroup packaging product
 - product development
 - finds sustainable dispensing and packaging solutions from aptargroup
-- gets detailed specifications for a specific aptargroup packaging product
-- find sustainable packaging
-- manages packaging supplier relationships and sample requests
-- packaging
+- submits a sample request for aptargroup packaging evaluation
+- browse and sample sustainable packaging solutions from aptargroup
+- requesting and tracking product samples for evaluation
 - dispensing
 - consumer goods
-- aptargroup
 - browsing dispensing and packaging product options
-- sustainability
-- requesting and tracking product samples for evaluation
-- browse and sample sustainable packaging solutions from aptargroup
+- get packaging specs
+- aptargroup
 - order packaging samples
-- submits a sample request for aptargroup packaging evaluation
+- manages packaging supplier relationships and sample requests
 - evaluates and sources packaging solutions for consumer products
 slug: packaging-sourcing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AptarGroup Packaging Sourcing\n  description: >-\n    Workflow capability for sourcing dispensing and packaging solutions from\n    AptarGroup. Supports product development teams browsing sustainable packaging\n    options and requesting samples for beauty, pharmaceutical, and food products.\n  tags:\n    - AptarGroup\n    - Packaging\n    - Product Development\n    - Sustainability\n    - Manufacturing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APTAR_API_TOKEN: APTAR_API_TOKEN\n\ncapability:\n  consumes:\n    - import: aptar\n      location: ./shared/aptargroup-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: packaging-sourcing-mcp\n      transport: http\n      description: MCP server for AI-assisted packaging sourcing from AptarGroup.\n      tools:\n        - name: find-sustainable-packaging\n          description: Finds sustainable dispensing\

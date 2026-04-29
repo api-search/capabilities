@@ -51,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- get site
-- delete a previously submitted sitemap.
-- submit a sitemap for crawling.
-- add a site to search console.
-- search console
-- search
-- query search analytics
-- query search traffic data.
-- analytics
-- list all search console sites for the authenticated user.
-- get details for a specific search console site.
-- manage search console sites.
-- list sitemaps submitted for a site.
-- delete a sitemap.
-- list sitemaps for a site.
-- inspect url
-- query search analytics data with filters.
-- webmaster
-- inspect urls for indexing status.
-- webmaster tools
-- remove a site from search console.
-- seo
-- delete site
-- google
-- get details for a specific site.
-- get details for a specific sitemap.
 - list sites
 - list sitemaps
-- inspect a url for index status and rich results.
+- list all search console sites for the authenticated user.
+- manage search console sites.
+- google
+- get site
+- query search analytics
 - submit sitemap
-- submit a sitemap.
-- query search traffic data with filters and dimensions.
-- list all search console sites.
-- add site
-- get sitemap details.
+- search
+- submit a sitemap for crawling.
+- webmaster tools
+- query search traffic data.
+- get details for a specific sitemap.
+- seo
 - inspect a url for index status, crawl info, mobile usability, and rich results.
-- delete sitemap
+- webmaster
+- submit a sitemap.
+- query search analytics data with filters.
+- add site
+- list sitemaps for a site.
+- inspect a url for index status and rich results.
 - manage sitemaps.
+- get details for a specific site.
+- inspect url
+- get sitemap details.
+- query search traffic data with filters and dimensions.
+- get details for a specific search console site.
+- inspect urls for indexing status.
+- analytics
+- remove a site from search console.
+- list sitemaps submitted for a site.
+- list all search console sites.
 - get sitemap
+- delete site
+- delete sitemap
+- search console
+- add a site to search console.
+- delete a sitemap.
+- delete a previously submitted sitemap.
 slug: seo-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Search Console SEO Management\"\n  description: \"Unified SEO management workflow combining search analytics, sitemap management, URL inspection, and site management for SEO specialists and webmasters.\"\n  tags:\n    - Google\n    - Search Console\n    - SEO\n    - Analytics\n    - Webmaster\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: search-console\n      location: ./shared/search-console.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: seo-management-api\n      description: \"Unified REST API for SEO management combining search analytics, sitemaps, URL inspection, and site management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          description: \"Manage Search Console sites.\"\n          operations:\n            - method: GET\n\
   \              name: list-sites\n              description: \"List all Search Console sites.\"\n              call: \"search-console.list-sites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-site\n              description: \"Get details for a specific site.\"\n              call: \"search-console.get-site\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: add-site\n              description: \"Add a site to Search Console.\"\n              call: \"search-console.add-site\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-site\n              description:\

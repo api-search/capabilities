@@ -18,36 +18,36 @@ personas: []
 provider_name: Apache Ozone
 provider_slug: apache-ozone
 search_terms:
-- list objects
-- uses s3-compatible api for application storage
-- head object
-- create a new storage bucket
-- open source
-- manages data lake storage with ozone
-- list all buckets
-- apache ozone
 - list objects in a bucket
-- get object
-- download an object from a bucket
-- Application Developer
-- cloud native
-- Data Engineer
-- apache
-- delete object
-- object storage
-- list all object storage buckets
-- hadoop
-- list buckets
-- s3 compatible
+- delete an empty bucket
+- list objects
 - create bucket
-- put object
+- apache ozone
+- manages data lake storage with ozone
 - get metadata for an object
 - delete an object from a bucket
+- uses s3-compatible api for application storage
+- list all buckets
 - distributed storage
+- get object
+- list all object storage buckets
+- put object
+- object storage
+- hadoop
+- download an object from a bucket
+- list buckets
+- Data Engineer
 - s3-compatible
-- delete an empty bucket
-- upload an object to a bucket
+- s3 compatible
+- apache
+- cloud native
+- create a new storage bucket
 - delete bucket
+- Application Developer
+- upload an object to a bucket
+- delete object
+- head object
+- open source
 slug: ozone-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Ozone Object Storage Workflow\"\n  description: \"Workflow capability for managing object storage using Apache Ozone's S3-compatible API.\"\n  tags:\n    - Apache Ozone\n    - Object Storage\n    - Distributed Storage\n    - S3 Compatible\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      OZONE_ACCESS_KEY: OZONE_ACCESS_KEY\n      OZONE_SECRET_KEY: OZONE_SECRET_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: ozone\n      baseUri: https://localhost:9878\n      description: \"Apache Ozone S3-Compatible API\"\n      authentication:\n        type: apikey\n        key: Authorization\n        value: \"{{OZONE_ACCESS_KEY}}\"\n        placement: header\n      resources:\n        - name: buckets\n          path: /\n          description: \"Bucket management\"\n          operations:\n            - name: listBuckets\n              method: GET\n              description:\
   \ \"List all buckets\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n        - name: objects\n          path: /{bucket}\n          description: \"Object management\"\n          operations:\n            - name: listObjects\n              method: GET\n              description: \"List objects in bucket\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ozone-api\n      description: \"Unified REST API for Ozone object storage.\"\n      resources:\n        - path: /v1/buckets\n          name: buckets\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List all buckets\"\n              call: \"ozone.listBuckets\"\n              outputParameters:\n\

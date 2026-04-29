@@ -112,151 +112,151 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- list all subscriptions for a tenant service group.
-- network security engineer
-- cloud security
-- list all sase service accounts with optional filtering by tsg.
-- delete an access policy by id.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- list all access policies with optional filtering.
-- sase
-- designs and implements network security architectures and policies.
-- get details of a specific access policy.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- get entitlements for a specific subscription.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- allocate licenses from a subscription.
-- update an existing service account.
-- soc analyst
-- delete service account
-- delete an access policy.
-- sre
-- list tenant service groups
-- network security
-- update an existing tenant service group.
-- data loss prevention, saas security monitoring, and identity security posture.
-- get service account
-- list child tenant service groups for a given parent.
-- list all tenant service groups with optional filtering.
-- get, update, or delete a specific access policy.
-- get details of a specific subscription.
-- list child tenant service groups
-- list roles
-- manage sase access policies.
-- manages enterprise browser policies and secure browsing configurations.
-- revoke a specific key for a service account.
-- manages service accounts, roles, and access policies for platform api access.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- list subscriptions
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- manages multi-tenant security operations at scale for managed service providers.
-- list service accounts
-- conducts automated adversarial testing against ai systems and llm applications.
-- proactively searches for threats and iocs across telemetry data.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- list all service accounts with optional filtering.
-- list all available sase roles.
-- sd wan operator
-- get subscription entitlements
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- list all available roles.
-- update service account
-- data protection analyst
-- analyzes suspicious files and samples for malware characteristics.
-- compliance officer
-- xdr
-- network architect
-- incident responder
-- generate service account credentials
-- manage sase service accounts.
-- allocate licenses from a subscription to tenant service groups.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- threat intel analyst
-- ai runtime security scanning and automated red teaming for ai applications.
-- list child tenant service groups.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- get details of a specific service account by id.
-- investigates dlp incidents and manages sensitive data protection policies.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- update tenant service group
-- subscriptions
-- malware researcher
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- cloud security engineer
-- get tenant service group
-- get, update, or delete a specific tenant service group.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- allocate licenses
-- cloud security posture management, compliance monitoring, and workload protection.
-- threat intelligence
-- create a new sase service account.
-- iam admin
-- saas security admin
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- manage enterprise browser policies, user sessions, and deployments.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- create service account
-- update access policy
-- delete tenant service group
-- get details of a specific tenant service group.
-- tenant operator
-- enterprise it
-- monitors network health, performance, and digital experience metrics.
-- get, update, or delete a specific service account.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- create a new service account.
-- create a new access policy.
-- tenancy
-- get access policy
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- create a new tenant service group.
-- identity and access management, tenant hierarchies, and subscription management.
-- ai security engineer
-- palo alto networks
-- vulnerability manager
-- subscription manager
-- browser security admin
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- get details of a specific service account.
-- cloud identity engine
-- update an existing access policy.
-- get subscription
-- firewall admin
-- delete a service account.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- get details of a specific access policy by id.
-- generate credentials for a service account.
-- revoke service account key
-- network operations
-- designs sase and sd-wan network architectures for secure remote access.
-- manage sase tenant service groups.
 - digital experience monitoring, log management, and best practice assessment.
-- threat hunter
+- get, update, or delete a specific service account.
 - research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- delete access policy
-- soar
-- access management
-- create access policy
-- delete a service account by id.
-- sase admin
-- red team operator
-- list available sase roles.
-- platform engineer
-- identity
-- delete a tenant service group.
-- manages logging infrastructure, integrations, and platform automation.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- firewall
+- cloud security
+- get details of a specific access policy.
+- threat intel analyst
+- delete a service account.
+- monitors network health, performance, and digital experience metrics.
+- get details of a specific subscription.
+- update service account
 - executes containment, eradication, and recovery actions during security incidents.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- create tenant service group
+- list subscriptions
+- update an existing access policy.
+- update an existing tenant service group.
+- delete a service account by id.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- allocate licenses
+- proactively searches for threats and iocs across telemetry data.
+- palo alto networks
+- compliance team
+- soar
+- list available sase roles.
+- threat intelligence
+- mssp operator
+- identity
+- manage sase tenant service groups.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- create access policy
+- list all available sase roles.
+- conducts automated adversarial testing against ai systems and llm applications.
+- manages logging infrastructure, integrations, and platform automation.
+- delete tenant service group
+- platform engineer
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- analyzes suspicious files and samples for malware characteristics.
+- delete an access policy.
+- cloud security posture management, compliance monitoring, and workload protection.
+- get entitlements for a specific subscription.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- list child tenant service groups for a given parent.
+- tenancy
+- compliance officer
+- list all subscriptions for a tenant service group.
+- delete an access policy by id.
+- ai security engineer
+- list sase subscriptions.
+- designs sase and sd-wan network architectures for secure remote access.
+- delete access policy
+- list service accounts
+- network operations
+- incident responder
+- xdr
+- create a new tenant service group.
+- allocate licenses from a subscription.
+- get details of a specific access policy by id.
+- cloud identity engine
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- get subscription
+- tenant operator
+- update tenant service group
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- red team operator
+- get, update, or delete a specific access policy.
+- revoke service account key
+- designs and implements network security architectures and policies.
+- list all sase service accounts with optional filtering by tsg.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- manage sase service accounts.
+- create a new sase service account.
+- update access policy
+- iam admin
+- ai runtime security scanning and automated red teaming for ai applications.
+- subscriptions
+- create service account
+- get access policy
+- delete a tenant service group.
+- list all available roles.
+- access management
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- generate credentials for a service account.
+- sase
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- network security
 - enterprise browser policy management and secure browsing.
 - list access policies
-- compliance team
-- list sase subscriptions.
-- mssp operator
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- manages service accounts, roles, and access policies for platform api access.
+- get details of a specific service account by id.
+- identity and access management, tenant hierarchies, and subscription management.
+- data loss prevention, saas security monitoring, and identity security posture.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- delete service account
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- saas security admin
+- create a new access policy.
+- allocate licenses from a subscription to tenant service groups.
+- create tenant service group
+- cloud security engineer
+- subscription manager
+- cybersecurity
+- list child tenant service groups
+- investigates security incidents, triages alerts, and coordinates response actions.
+- manage sase access policies.
+- get details of a specific tenant service group.
+- list tenant service groups
+- malware researcher
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- list child tenant service groups.
+- manages multi-tenant security operations at scale for managed service providers.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- revoke a specific key for a service account.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- firewall
+- browser security admin
+- soc analyst
+- network security engineer
+- manages enterprise browser policies and secure browsing configurations.
+- get subscription entitlements
+- sd wan operator
+- get tenant service group
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- enterprise it
+- network architect
+- get, update, or delete a specific tenant service group.
+- vulnerability manager
+- create a new service account.
+- manage enterprise browser policies, user sessions, and deployments.
+- list all service accounts with optional filtering.
+- threat hunter
+- list all tenant service groups with optional filtering.
+- list roles
+- get details of a specific service account.
+- investigates dlp incidents and manages sensitive data protection policies.
+- firewall admin
+- list all access policies with optional filtering.
+- sase admin
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- generate service account credentials
+- update an existing service account.
+- data protection analyst
+- sre
+- get service account
 slug: identity-and-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Identity and Access Management\"\n  description: \"Unified identity and access management capability for managing service accounts, access policies, roles, tenant service groups, and subscriptions across SASE IAM, Tenancy, and Subscription APIs.\"\n  tags:\n    - Palo Alto Networks\n    - Identity\n    - Access Management\n    - Tenancy\n    - Subscriptions\n    - Cloud Identity Engine\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: sase-iam\n      location: ./shared/sase-iam.yaml\n    - import: sase-tenancy\n      location: ./shared/sase-tenancy.yaml\n    - import: sase-subscription\n      location: ./shared/sase-subscription.yaml\n    - import: cloud-identity-engine\n      location: ./shared/cloud-identity-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n\
   \      namespace: identity-access-api\n      description: \"Unified REST API for identity, access, tenancy, and subscription management.\"\n      resources:\n\n        # ── Service Accounts (SASE IAM) ──────────────────────────────────\n        - path: /v1/service-accounts\n          name: service-accounts\n          description: \"Manage SASE service accounts.\"\n          operations:\n            - method: GET\n              name: list-service-accounts\n              description: \"List all service accounts with optional filtering.\"\n              inputParameters:\n                - name: tsg_id\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"sase-iam.list-service-accounts\"\
@@ -291,10 +291,7 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks 
   \ false\n            openWorld: true\n          inputParameters:\n            - name: display_name\n              type: string\n              required: true\n            - name: parent_id\n              type: string\n              required: true\n            - name: description\n              type: string\n              required: false\n            - name: support_account_id\n              type: string\n              required: false\n            - name: vertical\n              type: string\n              required: false\n            - name: region\n              type: string\n              required: false\n          call: \"sase-tenancy.create-tenant-service-group\"\n          with:\n            display_name: \"tools.display_name\"\n            parent_id: \"tools.parent_id\"\n            description: \"tools.description\"\n            support_account_id: \"tools.support_account_id\"\n            vertical: \"tools.vertical\"\n            region: \"tools.region\"\n          outputParameters:\n\
   \            - type: object\n              mapping: \"$.\"\n\n        - name: get-tenant-service-group\n          description: \"Get details of a specific tenant service group.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: tsg_id\n              type: string\n              required: true\n          call: \"sase-tenancy.get-tenant-service-group\"\n          with:\n            tsg_id: \"tools.tsg_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-tenant-service-group\n          description: \"Update an existing tenant service group.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: tsg_id\n              type: string\n              required: true\n\
   \            - name: display_name\n              type: string\n              required: false\n            - name: description\n              type: string\n              required: false\n            - name: vertical\n              type: string\n              required: false\n          call: \"sase-tenancy.update-tenant-service-group\"\n          with:\n            tsg_id: \"tools.tsg_id\"\n            display_name: \"tools.display_name\"\n            description: \"tools.description\"\n            vertical: \"tools.vertical\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-tenant-service-group\n          description: \"Delete a tenant service group.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: tsg_id\n              type: string\n              required: true\n          call: \"sase-tenancy.delete-tenant-service-group\"\
-  \n          with:\n            tsg_id: \"tools.tsg_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-child-tenant-service-groups\n          description: \"List child tenant service groups for a given parent.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: tsg_id\n              type: string\n              required: true\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"sase-tenancy.list-child-tenant-service-groups\"\n          with:\n            tsg_id: \"tools.tsg_id\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        # ──\
-  \ Subscriptions ────────────────────────────────────────────────\n        - name: list-subscriptions\n          description: \"List all subscriptions for a tenant service group.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: tsg_id\n              type: string\n              required: true\n            - name: product\n              type: string\n              required: false\n            - name: status\n              type: string\n              required: false\n          call: \"sase-subscription.list-subscriptions\"\n          with:\n            tsg_id: \"tools.tsg_id\"\n            product: \"tools.product\"\n            status: \"tools.status\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-subscription\n          description: \"Get details of a specific subscription.\"\n          hints:\n\
-  \            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: subscription_id\n              type: string\n              required: true\n          call: \"sase-subscription.get-subscription\"\n          with:\n            subscription_id: \"tools.subscription_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-subscription-entitlements\n          description: \"Get entitlements for a specific subscription.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: subscription_id\n              type: string\n              required: true\n          call: \"sase-subscription.get-subscription-entitlements\"\n          with:\n            subscription_id: \"tools.subscription_id\"\n          outputParameters:\n\
-  \            - type: array\n              mapping: \"$.\"\n\n        - name: allocate-licenses\n          description: \"Allocate licenses from a subscription to tenant service groups.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: subscription_id\n              type: string\n              required: true\n            - name: allocations\n              type: object\n              required: true\n          call: \"sase-subscription.allocate-licenses\"\n          with:\n            subscription_id: \"tools.subscription_id\"\n            allocations: \"tools.allocations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+  \n          with:\n            tsg_id: \"tools.tsg_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-child-tenant-service-groups\n          description: \"List child tenant service groups for a given parent.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: tru\n\n# --- truncated at 32 KB (35 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/identity-and-access.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/identity-and-access.yaml
 tags:
 - Palo Alto Networks

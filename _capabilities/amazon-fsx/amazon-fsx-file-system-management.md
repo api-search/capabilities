@@ -9,15 +9,15 @@ personas: []
 provider_name: Amazon FSx
 provider_slug: amazon-fsx
 search_terms:
+- storage
 - lustre
-- netapp
+- windows
 - aws
 - openzfs
-- file systems
-- storage
-- windows
-- high performance computing
 - netapp ontap
+- high performance computing
+- file systems
+- netapp
 slug: amazon-fsx-file-system-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon FSx File System Management\n  description: Manage fully managed Amazon FSx file systems including Lustre, Windows File Server, NetApp ONTAP, and OpenZFS.\n  tags:\n  - Storage\n  - File Systems\n  - High Performance Computing\n  - NetApp ONTAP\n  - Lustre\n  - AWS\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - namespace: fsx\n    ref: capabilities/shared/fsx.yaml\n  exposes:\n  - type: rest\n    port: 8080\n  - type: mcp\n    port: 9090\n  tools:\n  - name: createFileSystem\n    description: Create an Amazon FSx file system\n    inputSchema:\n      type: object\n      properties:\n        FileSystemType:\n          type: string\n        StorageCapacity:\n          type: integer\n        SubnetIds:\n          type: array\n        StorageType:\n          type: string\n        KmsKeyId:\n      \
   \    type: string\n        Tags:\n          type: array\n      required:\n      - FileSystemType\n      - StorageCapacity\n      - SubnetIds\n  - name: describeFileSystems\n    description: Describe file systems\n    inputSchema:\n      type: object\n      properties:\n        FileSystemIds:\n          type: array\n        MaxResults:\n          type: integer\n        NextToken:\n          type: string\n  - name: updateFileSystem\n    description: Update a file system configuration\n    inputSchema:\n      type: object\n      properties:\n        FileSystemId:\n          type: string\n        StorageCapacity:\n          type: integer\n      required:\n      - FileSystemId\n  - name: deleteFileSystem\n    description: Delete an Amazon FSx file system\n    inputSchema:\n      type: object\n      properties:\n        FileSystemId:\n          type: string\n        FinalBackup:\n          type: object\n      required:\n      - FileSystemId\n  - name: createBackup\n    description: Create a\

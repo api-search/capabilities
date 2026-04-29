@@ -37,49 +37,49 @@ personas: []
 provider_name: AeroDataBox
 provider_slug: aerodatabox
 search_terms:
-- find nearby airports.
-- get all departures and arrivals at an airport for a time window.
-- get aircraft
-- delay statistics, route performance, and trend analysis.
-- track a flight by number.
-- airport information, runway data, and location search.
-- analyzes aviation performance, delay patterns, and route statistics using historical data.
-- search airports
-- travel
 - get aircraft data.
-- flight tracking
-- aerodatabox
-- track a flight in real-time by flight number or callsign.
-- airport operations
-- look up an aircraft.
-- get airport departures arrivals
-- get airport
+- find nearby airports.
+- integrates flight data into travel booking and notification systems.
+- get aircraft
 - flights
 - get fleet for an airline.
-- get airport information.
-- retrieve airport details.
-- get fids for an airport.
-- aerospace
-- get details for an airport by iata or icao code.
-- aviation
+- travel
+- analyzes aviation performance, delay patterns, and route statistics using historical data.
 - airport data
-- get flight status data.
-- real-time and historical flight tracking, status monitoring, and fids data.
-- get airport departures and arrivals.
-- find airports near a geographic location.
-- get flight status
-- integrates flight data into travel booking and notification systems.
-- get all aircraft in an airline's fleet.
-- search airports near location
-- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
 - flight data
-- get airport fids
-- get airline fleet
-- get airline fleet.
-- builds flight tracking, travel, and aviation applications using aerodatabox apis.
+- search airports near location
 - look up aircraft details by tail number or icao24 hex code.
+- aerodatabox
+- get fids for an airport.
+- real-time and historical flight tracking, status monitoring, and fids data.
+- track a flight by number.
+- builds flight tracking, travel, and aviation applications using aerodatabox apis.
+- search airports
+- get airline fleet
+- flight tracking
+- get airport departures and arrivals.
+- get airport fids
+- retrieve airport details.
+- get airport
+- airport operations
 - search airports by location.
+- get all aircraft in an airline's fleet.
+- aerospace
+- track a flight in real-time by flight number or callsign.
+- get all departures and arrivals at an airport for a time window.
+- delay statistics, route performance, and trend analysis.
+- airport information, runway data, and location search.
+- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
+- get airport departures arrivals
+- look up an aircraft.
+- get flight status
+- get details for an airport by iata or icao code.
+- find airports near a geographic location.
+- get flight status data.
 - aircraft registrations, fleet composition, and aircraft imagery.
+- get airport information.
+- get airline fleet.
+- aviation
 slug: flight-tracking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AeroDataBox Flight Tracking\"\n  description: \"Unified capability for real-time aviation intelligence combining flight status, aircraft data, and airport information. Enables developers and travel platforms to build comprehensive flight tracking, airport operations monitoring, and aircraft research applications. Primary persona: Developer or Travel Platform Engineer.\"\n  tags:\n    - AeroDataBox\n    - Aviation\n    - Flight Tracking\n    - Travel\n    - Airport Operations\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AERODATABOX_API_KEY: AERODATABOX_API_KEY\n\ncapability:\n  consumes:\n    - import: flight\n      location: ./shared/flight.yaml\n    - import: aircraft\n      location: ./shared/aircraft.yaml\n    - import: airport\n      location: ./shared/airport.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aerodatabox-flight-tracking-api\n \
   \     description: \"Unified REST API for AeroDataBox aviation data.\"\n      resources:\n        - path: /v1/flights/{searchBy}/{searchParam}\n          name: flight-status\n          description: \"Get flight status data.\"\n          operations:\n            - method: GET\n              name: get-flight-status\n              description: \"Track a flight by number.\"\n              call: \"flight.get-flight-status\"\n              with:\n                searchBy: \"rest.searchBy\"\n                searchParam: \"rest.searchParam\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/airports/{codeType}/{code}/flights\n          name: airport-fids\n          description: \"Get FIDS for an airport.\"\n          operations:\n            - method: GET\n              name: get-airport-fids\n              description: \"Get airport departures and arrivals.\"\n              call: \"flight.get-airport-fids\"\n             \

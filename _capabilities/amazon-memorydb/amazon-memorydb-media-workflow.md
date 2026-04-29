@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MemoryDB
 provider_slug: amazon-memorydb
 search_terms:
-- developer building media processing applications
-- Media Developer
-- amazon memorydb createacl
-- update cluster
+- broadcasting
+- amazon memorydb describeacls
+- delete acl
 - amazon memorydb updatecluster
+- amazon memorydb describeclusters
 - engineer managing broadcast media workflows
 - list jobs
-- amazon memorydb createcluster
-- aws
-- update acl
-- describe clusters
-- amazon memorydb describeclusters
-- create acl
-- workflow
-- amazon memorydb deletecluster
 - aws media processing and delivery
-- broadcasting
-- Broadcast Engineer
-- manage media processing jobs
-- describe ac ls
-- media processing
-- amazon memorydb describeacls
-- amazon memorydb updateacl
-- delete acl
 - media
-- create cluster
-- amazon memorydb media processing workflow
-- delete cluster
+- developer building media processing applications
+- aws
+- media processing
+- amazon memorydb deletecluster
+- amazon memorydb createacl
+- Broadcast Engineer
+- workflow
+- describe clusters
 - amazon memorydb deleteacl
+- amazon memorydb createcluster
+- create cluster
+- update acl
+- Media Developer
+- create acl
+- update cluster
+- amazon memorydb media processing workflow
+- manage media processing jobs
+- delete cluster
+- describe ac ls
+- amazon memorydb updateacl
 slug: amazon-memorydb-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MemoryDB Workflow\n  description: Workflow capability for Amazon MemoryDB media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: memorydb\n    location: ./shared/memorydb.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: memorydb-workflow-api\n    description: Unified REST API for Amazon MemoryDB workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: memorydb.list-jobs\n        outputParameters:\n        - type: object\n\
   \          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: memorydb-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon MemoryDB workflow management.\n    tools:\n    - name: describe-ac-ls\n      description: Amazon MemoryDB DescribeACLs\n      hints:\n        readOnly: true\n        openWorld: true\n      call: memorydb.describe-ac-ls\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-acl\n      description: Amazon MemoryDB CreateACL\n      hints:\n        readOnly: false\n        openWorld: true\n      call: memorydb.create-acl\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-acl\n      description: Amazon MemoryDB UpdateACL\n      hints:\n        readOnly: false\n        openWorld: true\n      call: memorydb.update-acl\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-acl\n      description: Amazon MemoryDB DeleteACL\n      hints:\n\

@@ -19,85 +19,85 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- network security engineer
+- digital experience monitoring, log management, and best practice assessment.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
 - cloud security
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- sase
-- designs and implements network security architectures and policies.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- soc analyst
-- sre
-- network security
-- data loss prevention, saas security monitoring, and identity security posture.
-- manages enterprise browser policies and secure browsing configurations.
-- manages service accounts, roles, and access policies for platform api access.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- manages multi-tenant security operations at scale for managed service providers.
-- conducts automated adversarial testing against ai systems and llm applications.
-- proactively searches for threats and iocs across telemetry data.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- sd wan operator
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- data protection analyst
-- analyzes suspicious files and samples for malware characteristics.
-- compliance officer
-- xdr
-- security rules
-- network architect
-- incident responder
-- investigates security incidents, triages alerts, and coordinates response actions.
 - threat intel analyst
-- ai runtime security scanning and automated red teaming for ai applications.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- investigates dlp incidents and manages sensitive data protection policies.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- malware researcher
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- cloud security engineer
-- secures ai applications with runtime scanning and vulnerability assessment.
-- cloud security posture management, compliance monitoring, and workload protection.
+- monitors network health, performance, and digital experience metrics.
+- executes containment, eradication, and recovery actions during security incidents.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- proactively searches for threats and iocs across telemetry data.
+- palo alto networks
+- compliance team
+- soar
 - threat intelligence
-- iam admin
-- saas security admin
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- manage enterprise browser policies, user sessions, and deployments.
+- mssp operator
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- configuration
+- conducts automated adversarial testing against ai systems and llm applications.
+- manages logging infrastructure, integrations, and platform automation.
+- security rules
+- platform engineer
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- analyzes suspicious files and samples for malware characteristics.
+- cloud security posture management, compliance monitoring, and workload protection.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- compliance officer
+- ai security engineer
+- designs sase and sd-wan network architectures for secure remote access.
+- network operations
+- incident responder
+- xdr
 - manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
 - tenant operator
-- enterprise it
-- monitors network health, performance, and digital experience metrics.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- identity and access management, tenant hierarchies, and subscription management.
-- ai security engineer
-- palo alto networks
-- vulnerability manager
-- subscription manager
-- browser security admin
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- firewall admin
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- network operations
-- designs sase and sd-wan network architectures for secure remote access.
-- digital experience monitoring, log management, and best practice assessment.
-- threat hunter
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- soar
-- sase admin
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
 - red team operator
-- configuration
-- platform engineer
-- manages logging infrastructure, integrations, and platform automation.
+- designs and implements network security architectures and policies.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- iam admin
+- ai runtime security scanning and automated red teaming for ai applications.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- sase
+- manages multi-tenant hierarchies and service group configurations for mssps.
 - manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- firewall
-- executes containment, eradication, and recovery actions during security incidents.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- network security
 - enterprise browser policy management and secure browsing.
-- compliance team
-- mssp operator
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- manages service accounts, roles, and access policies for platform api access.
+- identity and access management, tenant hierarchies, and subscription management.
+- data loss prevention, saas security monitoring, and identity security posture.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- saas security admin
+- cloud security engineer
+- subscription manager
+- cybersecurity
+- investigates security incidents, triages alerts, and coordinates response actions.
+- malware researcher
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- manages multi-tenant security operations at scale for managed service providers.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- firewall
+- browser security admin
+- soc analyst
+- network security engineer
+- manages enterprise browser policies and secure browsing configurations.
+- sd wan operator
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- enterprise it
+- network architect
+- vulnerability manager
+- manage enterprise browser policies, user sessions, and deployments.
+- threat hunter
+- investigates dlp incidents and manages sensitive data protection policies.
+- firewall admin
+- sase admin
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- data protection analyst
+- sre
 slug: network-security-config
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Network Security Configuration\"\n  description: \"Unified network security configuration capability for managing firewall objects, security rules, NAT rules, and cloud NGFW rule stacks across PAN-OS, Strata Cloud Manager, and Cloud NGFW.\"\n  tags:\n    - Palo Alto Networks\n    - Network Security\n    - Firewall\n    - Security Rules\n    - Configuration\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PAN_OS_API_KEY: PAN_OS_API_KEY\n      PAN_OS_FIREWALL: PAN_OS_FIREWALL\n      STRATA_CLOUD_MANAGER_TOKEN: STRATA_CLOUD_MANAGER_TOKEN\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: pan-os\n      location: ./shared/pan-os.yaml\n    - import: strata-cloud-manager\n      location: ./shared/strata-cloud-manager.yaml\n    - import: cloud-ngfw\n      location: ./shared/cloud-ngfw.yaml\n\
   \n  serves:\n    rest:\n      port: 8083\n      resources:\n\n        # ---------------------------------------------------------------\n        # Address Objects\n        # ---------------------------------------------------------------\n\n        # PAN-OS Addresses\n        - path: /v1/panos-addresses\n          operations:\n            - method: GET\n              operationId: list-panos-addresses\n              description: \"List PAN-OS address objects.\"\n              call: pan-os.list-addresses\n              hints:\n                - \"list firewall address objects\"\n                - \"show PAN-OS addresses\"\n              inputParameters:\n                - name: location\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Configuration location (e.g., vsys, panorama).\"\n                - name: vsys\n                  in: query\n                  type: string\n                  required: false\n\
@@ -132,15 +132,8 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks 
   \ Cloud Manager address object.\"\n          call: strata-cloud-manager.get-address\n          hints:\n            - \"get SCM address\"\n            - \"fetch cloud manager address\"\n\n        - name: scm-update-address\n          description: \"Update a Strata Cloud Manager address object.\"\n          call: strata-cloud-manager.update-address\n          hints:\n            - \"update SCM address\"\n            - \"modify cloud manager address\"\n\n        - name: scm-delete-address\n          description: \"Delete a Strata Cloud Manager address object.\"\n          call: strata-cloud-manager.delete-address\n          hints:\n            - \"delete SCM address\"\n            - \"remove cloud manager address\"\n\n        - name: scm-list-address-groups\n          description: \"List Strata Cloud Manager address groups.\"\n          call: strata-cloud-manager.list-address-groups\n          hints:\n            - \"list SCM address groups\"\n            - \"show cloud manager address groups\"\
   \n\n        - name: scm-create-address-group\n          description: \"Create a Strata Cloud Manager address group.\"\n          call: strata-cloud-manager.create-address-group\n          hints:\n            - \"create SCM address group\"\n            - \"add cloud manager address group\"\n\n        - name: scm-get-address-group\n          description: \"Get a specific Strata Cloud Manager address group.\"\n          call: strata-cloud-manager.get-address-group\n          hints:\n            - \"get SCM address group\"\n            - \"fetch cloud manager address group\"\n\n        - name: scm-update-address-group\n          description: \"Update a Strata Cloud Manager address group.\"\n          call: strata-cloud-manager.update-address-group\n          hints:\n            - \"update SCM address group\"\n            - \"modify cloud manager address group\"\n\n        - name: scm-delete-address-group\n          description: \"Delete a Strata Cloud Manager address group.\"\n          call:\
   \ strata-cloud-manager.delete-address-group\n          hints:\n            - \"delete SCM address group\"\n            - \"remove cloud manager address group\"\n\n        - name: scm-list-services\n          description: \"List Strata Cloud Manager service objects.\"\n          call: strata-cloud-manager.list-services\n          hints:\n            - \"list SCM services\"\n            - \"show cloud manager service objects\"\n\n        - name: scm-create-service\n          description: \"Create a Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.create-service\n          hints:\n            - \"create SCM service\"\n            - \"add cloud manager service object\"\n\n        - name: scm-get-service\n          description: \"Get a specific Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.get-service\n          hints:\n            - \"get SCM service\"\n            - \"fetch cloud manager service\"\n\n        - name: scm-update-service\n\
-  \          description: \"Update a Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.update-service\n          hints:\n            - \"update SCM service\"\n            - \"modify cloud manager service\"\n\n        - name: scm-delete-service\n          description: \"Delete a Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.delete-service\n          hints:\n            - \"delete SCM service\"\n            - \"remove cloud manager service\"\n\n        # ---------------------------------------------------------------\n        # SCM Rule Tools\n        # ---------------------------------------------------------------\n        - name: scm-list-security-rules\n          description: \"List Strata Cloud Manager security rules.\"\n          call: strata-cloud-manager.list-security-rules\n          hints:\n            - \"list SCM security rules\"\n            - \"show cloud manager security policies\"\n\n        - name: scm-create-security-rule\n\
-  \          description: \"Create a Strata Cloud Manager security rule.\"\n          call: strata-cloud-manager.create-security-rule\n          hints:\n            - \"create SCM security rule\"\n            - \"add cloud manager security policy\"\n\n        - name: scm-get-security-rule\n          description: \"Get a specific Strata Cloud Manager security rule.\"\n          call: strata-cloud-manager.get-security-rule\n          hints:\n            - \"get SCM security rule\"\n            - \"fetch cloud manager security rule\"\n\n        - name: scm-update-security-rule\n          description: \"Update a Strata Cloud Manager security rule.\"\n          call: strata-cloud-manager.update-security-rule\n          hints:\n            - \"update SCM security rule\"\n            - \"modify cloud manager security policy\"\n\n        - name: scm-delete-security-rule\n          description: \"Delete a Strata Cloud Manager security rule.\"\n          call: strata-cloud-manager.delete-security-rule\n\
-  \          hints:\n            - \"delete SCM security rule\"\n            - \"remove cloud manager security policy\"\n\n        - name: scm-list-nat-rules\n          description: \"List Strata Cloud Manager NAT rules.\"\n          call: strata-cloud-manager.list-nat-rules\n          hints:\n            - \"list SCM NAT rules\"\n            - \"show cloud manager NAT policies\"\n\n        - name: scm-create-nat-rule\n          description: \"Create a Strata Cloud Manager NAT rule.\"\n          call: strata-cloud-manager.create-nat-rule\n          hints:\n            - \"create SCM NAT rule\"\n            - \"add cloud manager NAT policy\"\n\n        # ---------------------------------------------------------------\n        # SCM Config Tools\n        # ---------------------------------------------------------------\n        - name: scm-push-candidate-config\n          description: \"Push the candidate configuration in Strata Cloud Manager.\"\n          call: strata-cloud-manager.push-candidate-config\n\
-  \          hints:\n            - \"push SCM configuration\"\n            - \"deploy cloud manager config\"\n            - \"commit SCM changes\"\n\n        - name: scm-get-job\n          description: \"Get the status of a Strata Cloud Manager configuration job.\"\n          call: strata-cloud-manager.get-job\n          hints:\n            - \"get SCM job status\"\n            - \"check config push status\"\n\n        # ---------------------------------------------------------------\n        # Cloud NGFW Tools\n        # ---------------------------------------------------------------\n        - name: ngfw-list-rule-stacks\n          description: \"List Cloud NGFW rule stacks.\"\n          call: cloud-ngfw.list-rule-stacks\n          hints:\n            - \"list cloud NGFW rule stacks\"\n            - \"show rule stacks\"\n\n        - name: ngfw-create-rule-stack\n          description: \"Create a Cloud NGFW rule stack.\"\n          call: cloud-ngfw.create-rule-stack\n          hints:\n\
-  \            - \"create cloud NGFW rule stack\"\n            - \"add rule stack\"\n\n        - name: ngfw-get-rule-stack\n          description: \"Get a specific Cloud NGFW rule stack.\"\n          call: cloud-ngfw.get-rule-stack\n          hints:\n            - \"get cloud NGFW rule stack\"\n            - \"fetch rule stack details\"\n\n        - name: ngfw-update-rule-stack\n          description: \"Update a Cloud NGFW rule stack.\"\n          call: cloud-ngfw.update-rule-stack\n          hints:\n            - \"update cloud NGFW rule stack\"\n            - \"modify rule stack\"\n\n        - name: ngfw-delete-rule-stack\n          description: \"Delete a Cloud NGFW rule stack.\"\n          call: cloud-ngfw.delete-rule-stack\n          hints:\n            - \"delete cloud NGFW rule stack\"\n            - \"remove rule stack\"\n\n        - name: ngfw-commit-rule-stack\n          description: \"Commit a Cloud NGFW rule stack.\"\n          call: cloud-ngfw.commit-rule-stack\n          hints:\n\
-  \            - \"commit cloud NGFW rule stack\"\n            - \"deploy rule stack changes\"\n\n        - name: ngfw-list-security-rules\n          description: \"List Cloud NGFW security rules in a rule stack.\"\n          call: cloud-ngfw.list-security-rules\n          hints:\n            - \"list cloud NGFW security rules\"\n            - \"show cloud firewall rules\"\n\n        - name: ngfw-create-security-rule\n          description: \"Create a Cloud NGFW security rule in a rule stack.\"\n          call: cloud-ngfw.create-security-rule\n          hints:\n            - \"create cloud NGFW security rule\"\n            - \"add cloud firewall rule\"\n\n        - name: ngfw-get-security-rule\n          description: \"Get a specific Cloud NGFW security rule by priority.\"\n          call: cloud-ngfw.get-security-rule\n          hints:\n            - \"get cloud NGFW security rule\"\n            - \"fetch cloud firewall rule\"\n\n        - name: ngfw-update-security-rule\n          description:\
-  \ \"Update a Cloud NGFW security rule.\"\n          call: cloud-ngfw.update-security-rule\n          hints:\n            - \"update cloud NGFW security rule\"\n            - \"modify cloud firewall rule\"\n\n        - name: ngfw-delete-security-rule\n          description: \"Delete a Cloud NGFW security rule.\"\n          call: cloud-ngfw.delete-security-rule\n          hints:\n            - \"delete cloud NGFW security rule\"\n            - \"remove cloud firewall rule\"\n\n        - name: ngfw-list-fqdn-lists\n          description: \"List Cloud NGFW FQDN lists in a rule stack.\"\n          call: cloud-ngfw.list-fqdn-lists\n          hints:\n            - \"list cloud NGFW FQDN lists\"\n            - \"show FQDN lists\"\n\n        - name: ngfw-create-fqdn-list\n          description: \"Create a Cloud NGFW FQDN list in a rule stack.\"\n          call: cloud-ngfw.create-fqdn-list\n          hints:\n            - \"create cloud NGFW FQDN list\"\n            - \"add FQDN list\"\n\n     \
-  \   - name: ngfw-list-prefix-lists\n          description: \"List Cloud NGFW prefix lists in a rule stack.\"\n          call: cloud-ngfw.list-prefix-lists\n          hints:\n            - \"list cloud NGFW prefix lists\"\n            - \"show prefix lists\"\n\n        - name: ngfw-create-prefix-list\n          description: \"Create a Cloud NGFW prefix list in a rule stack.\"\n          call: cloud-ngfw.create-prefix-list\n          hints:\n            - \"create cloud NGFW prefix list\"\n            - \"add prefix list\"\n\n        - name: ngfw-list-firewalls\n          description: \"List Cloud NGFW firewalls.\"\n          call: cloud-ngfw.list-firewalls\n          hints:\n            - \"list cloud NGFW firewalls\"\n            - \"show cloud firewalls\"\n\n        - name: ngfw-create-firewall\n          description: \"Create a Cloud NGFW firewall.\"\n          call: cloud-ngfw.create-firewall\n          hints:\n            - \"create cloud NGFW firewall\"\n            - \"add cloud\
-  \ firewall\"\n\n        - name: ngfw-get-firewall\n          description: \"Get a specific Cloud NGFW firewall.\"\n          call: cloud-ngfw.get-firewall\n          hints:\n            - \"get cloud NGFW firewall\"\n            - \"fetch cloud firewall details\"\n\n        - name: ngfw-update-firewall\n          description: \"Update a Cloud NGFW firewall.\"\n          call: cloud-ngfw.update-firewall\n          hints:\n            - \"update cloud NGFW firewall\"\n            - \"modify cloud firewall\"\n\n        - name: ngfw-delete-firewall\n          description: \"Delete a Cloud NGFW firewall.\"\n          call: cloud-ngfw.delete-firewall\n          hints:\n            - \"delete cloud NGFW firewall\"\n            - \"remove cloud firewall\"\n"
+  \          description: \"Update a Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.update-service\n          hints:\n            - \"update SCM service\"\n            - \"modify cloud manager service\"\n\n        - name: scm-delete-service\n          description: \"Delete a Strata Cloud Manager service object.\"\n          call: strata-cloud-manager.delete-service\n          hints:\n            - \"delete SCM service\"\n            - \"remove cloud manager service\"\n\n        # ---------------------------------------------------------------\n        # SCM Rule Tools\n        # ---------------------------------------------------------------\n        - name: scm-list-security-rules\n          description: \"List Strata Cloud Manager security rules.\"\n          call: strata-cloud-manager.list-security-rules\n          hints:\n            - \"list SCM security rules\"\n            - \"show cloud manager security policies\"\n\n        - name: scm-create-secur\n\
+  \n# --- truncated at 32 KB (39 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/network-security-config.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/network-security-config.yaml
 tags:
 - Palo Alto Networks

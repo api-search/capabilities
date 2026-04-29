@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Trusted Advisor
 provider_slug: amazon-trusted-advisor
 search_terms:
-- best practices
-- security
-- cloud optimization
 - aws
+- security
+- best practices
+- cloud optimization
 slug: amazon-trusted-advisor-capability
 source_yaml: 'id: amazon-trusted-advisor-capability
 

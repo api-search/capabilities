@@ -46,61 +46,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- describe a dynamodb table.
-- list tables.
-- put or delete multiple items in batch.
-- get items in a transaction.
-- list backups
-- database
-- delete table
-- write items in a transaction.
-- list dynamodb tables.
-- delete a table.
-- get item
-- serverless
-- create or replace an item.
-- query
-- create a table.
-- create backup
-- query operations.
+- create table
+- document store
+- batch write item
 - managed service
-- dynamodb
-- transact get items
-- aws
-- describe a table.
-- key-value
 - item operations.
 - update an item.
-- list on-demand backups.
-- query items by primary key.
-- batch get item
-- create an on-demand backup.
-- individual table management.
-- put item
-- delete a dynamodb table.
-- table management.
-- document store
-- get an item.
-- create a new dynamodb table.
-- list tables
-- describe table
-- get an item by primary key.
-- update item
-- scan an entire table or index.
-- update table
-- update a table.
-- query items.
-- batch write item
-- cloud
-- get multiple items from one or more tables.
-- transact write items
-- scan
-- nosql
 - scan a table.
+- get an item by primary key.
+- cloud
+- list dynamodb tables.
 - delete an item.
-- create table
-- database management
+- update a table.
+- get item
+- create a table.
+- transact write items
+- query items.
+- delete a dynamodb table.
 - delete item
+- aws
+- serverless
+- update item
+- transact get items
+- delete a table.
+- query items by primary key.
+- nosql
+- table management.
+- describe a dynamodb table.
+- scan an entire table or index.
+- query operations.
+- describe table
+- query
+- scan
+- get multiple items from one or more tables.
+- create backup
+- put item
+- describe a table.
+- key-value
+- create a new dynamodb table.
+- list tables.
+- get items in a transaction.
+- create or replace an item.
+- list tables
+- individual table management.
+- get an item.
+- database management
+- create an on-demand backup.
+- list backups
+- dynamodb
+- delete table
+- put or delete multiple items in batch.
+- list on-demand backups.
+- batch get item
+- database
+- write items in a transaction.
+- update table
 slug: database-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DynamoDB Database Management\"\n  description: \"Unified workflow for managing DynamoDB tables, items, queries, batch operations, transactions, and backups. Used by backend developers and data engineers.\"\n  tags:\n    - AWS\n    - DynamoDB\n    - NoSQL\n    - Database Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: dynamodb\n      location: ./shared/dynamodb.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: dynamodb-management-api\n      description: \"Unified REST API for DynamoDB database management.\"\n      resources:\n        - path: /v1/tables\n          name: tables\n          description: \"Table management.\"\n          operations:\n            - method: GET\n              name: list-tables\n\
   \              description: \"List tables.\"\n              call: \"dynamodb.list-tables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-table\n              description: \"Create a table.\"\n              call: \"dynamodb.create-table\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables/{id}\n          name: table-details\n          description: \"Individual table management.\"\n          operations:\n            - method: GET\n              name: describe-table\n              description: \"Describe a table.\"\n              call: \"dynamodb.describe-table\"\n              with:\n                tableName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-table\n              description:\

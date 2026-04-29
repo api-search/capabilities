@@ -39,50 +39,50 @@ personas: []
 provider_name: Amazon Secrets Manager
 provider_slug: amazon-secrets-manager
 search_terms:
-- get secret value
-- rotation
-- retrieve the current value of a secret
-- list all secrets stored in amazon secrets manager
-- generate a cryptographically secure random password
 - get metadata and configuration details of a secret
-- secure storage and access control for sensitive credentials and configuration
-- engineers who manage application infrastructure and configure secrets rotation and access policies
-- rotate secret
-- retrieve the plaintext value of a secret
-- amazon secrets manager
-- describe secret
-- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
-- aws
-- random password generation
-- secret value retrieval and update
-- create secret
-- developers who integrate applications with secrets manager to retrieve credentials at runtime
-- Application Developer
-- devops
-- credentials
-- list secrets
 - secrets
-- restore secret
-- delete secret
+- retrieve the current value of a secret
 - create and store a new secret
-- schedule a secret for deletion
-- list all managed secrets
-- configuration
-- secret lifecycle management
-- put secret value
-- update the value stored in a secret
-- security
-- DevOps Engineer
-- lifecycle management of secrets including rotation, versioning, and audit
-- individual secret management
-- get random password
-- cancel scheduled deletion and restore a secret
-- get metadata for a secret
-- secret rotation management
+- secure storage and access control for sensitive credentials and configuration
 - trigger automatic rotation for a secret
-- create a new secret in amazon secrets manager
+- devops
+- lifecycle management of secrets including rotation, versioning, and audit
 - update the value of a secret
+- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
+- put secret value
+- DevOps Engineer
 - trigger rotation for a secret
+- get metadata for a secret
+- aws
+- list all managed secrets
+- create secret
+- individual secret management
+- create a new secret in amazon secrets manager
+- secret rotation management
+- secret value retrieval and update
+- get random password
+- security
+- describe secret
+- secret lifecycle management
+- retrieve the plaintext value of a secret
+- restore secret
+- amazon secrets manager
+- list all secrets stored in amazon secrets manager
+- developers who integrate applications with secrets manager to retrieve credentials at runtime
+- rotation
+- list secrets
+- engineers who manage application infrastructure and configure secrets rotation and access policies
+- Application Developer
+- delete secret
+- credentials
+- schedule a secret for deletion
+- rotate secret
+- random password generation
+- cancel scheduled deletion and restore a secret
+- configuration
+- get secret value
+- generate a cryptographically secure random password
+- update the value stored in a secret
 slug: secrets-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Secrets Manager Secrets Management\"\n  description: \"Unified capability for managing application secrets lifecycle including creation, retrieval, rotation, and deletion. Used by DevOps Engineers and Application Developers.\"\n  tags:\n    - Amazon Secrets Manager\n    - Security\n    - Secrets\n    - DevOps\n    - Credentials\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-secrets-manager\n      location: ./shared/amazon-secrets-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secrets-management-api\n      description: \"Unified REST API for Amazon Secrets Manager secrets lifecycle management.\"\n      resources:\n        - path: /v1/secrets\n          name: secrets\n\
   \          description: \"Secret lifecycle management\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List all managed secrets\"\n              call: \"amazon-secrets-manager.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-secret\n              description: \"Create and store a new secret\"\n              call: \"amazon-secrets-manager.create-secret\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{name}\n          name: secret\n          description: \"Individual secret management\"\n          operations:\n            - method: GET\n              name: describe-secret\n              description: \"Get metadata for a secret\"\n              call: \"amazon-secrets-manager.describe-secret\"\n              outputParameters:\n\

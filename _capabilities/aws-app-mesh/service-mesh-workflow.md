@@ -34,42 +34,42 @@ personas: []
 provider_name: AWS App Mesh
 provider_slug: aws-app-mesh
 search_terms:
-- virtual router management
-- list virtual services in a mesh
-- list virtual nodes in a mesh
-- Platform Engineer
-- create a new service mesh
+- list virtual routers in a mesh
+- list virtual nodes
+- managing gateway routing for external traffic ingress
+- virtual node management
+- list virtual routers and their routing rules
+- list meshes
+- envoy
+- aws
+- service mesh
 - list virtual gateways
 - list virtual gateways in a mesh
-- list all app mesh service meshes in the aws account
-- managing gateway routing for external traffic ingress
-- creating and configuring service meshes and their components
-- create mesh
-- deprecated
-- aws
-- aws app mesh
-- list meshes
-- configuring routing rules for service-to-service communication
+- list virtual services
 - list all service meshes
-- list virtual routers
-- service mesh
-- manage app mesh service meshes, virtual nodes, services, routers, and gateways
-- list virtual nodes
-- create a new app mesh service mesh
-- list virtual gateways for ingress traffic management
-- virtual node management
-- list virtual routers in a mesh
-- envoy
+- list virtual nodes in a service mesh
+- list virtual nodes in a mesh
+- microservices
+- configuring routing rules for service-to-service communication
 - service mesh lifecycle management
 - virtual service management
-- virtual gateway management
-- list virtual nodes in a service mesh
-- manages service mesh infrastructure and inter-service communication
 - list virtual services in a service mesh
-- microservices
-- list virtual routers and their routing rules
+- manage app mesh service meshes, virtual nodes, services, routers, and gateways
+- creating and configuring service meshes and their components
+- list virtual routers
+- aws app mesh
+- create a new service mesh
+- list virtual gateways for ingress traffic management
 - networking
-- list virtual services
+- virtual gateway management
+- create mesh
+- Platform Engineer
+- virtual router management
+- list all app mesh service meshes in the aws account
+- manages service mesh infrastructure and inter-service communication
+- deprecated
+- list virtual services in a mesh
+- create a new app mesh service mesh
 slug: service-mesh-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS App Mesh Service Mesh Workflow\"\n  description: \"Workflow capability for platform engineers to manage App Mesh service meshes, virtual nodes, virtual services, and traffic routing. Note: AWS App Mesh is deprecated; Amazon ECS Service Connect is the recommended replacement for new deployments.\"\n  tags:\n    - AWS App Mesh\n    - AWS\n    - Service Mesh\n    - Microservices\n    - Networking\n    - Deprecated\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: app-mesh\n      location: ./shared/app-mesh.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: app-mesh-workflow-api\n      description: \"Unified REST API for AWS App Mesh service mesh management.\"\n      resources:\n        - path:\
   \ /v1/meshes\n          name: meshes\n          description: \"Service mesh lifecycle management\"\n          operations:\n            - method: GET\n              name: list-meshes\n              description: \"List all service meshes\"\n              call: \"app-mesh.list-meshes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-mesh\n              description: \"Create a new service mesh\"\n              call: \"app-mesh.create-mesh\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/meshes/{meshName}/virtual-nodes\n          name: virtual-nodes\n          description: \"Virtual node management\"\n          operations:\n            - method: GET\n              name: list-virtual-nodes\n              description: \"List virtual nodes in a mesh\"\n              call: \"app-mesh.list-virtual-nodes\"\n         \

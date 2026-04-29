@@ -47,48 +47,48 @@ personas: []
 provider_name: Amazon Clean Rooms
 provider_slug: amazon-clean-rooms
 search_terms:
-- create a new collaboration
-- list all clean rooms collaborations the caller participates in
-- list all collaborations
-- list all clean rooms memberships in the caller's account
-- manage configured tables
-- create a configured table from an aws glue table with defined analysis rules for collaboration use
-- clean rooms
-- join a clean rooms collaboration as a member
-- Data Analyst
-- start protected query
-- Marketing Analyst
-- aws
-- analytics
-- list memberships
-- create a new secure data collaboration workspace in aws clean rooms
-- create configured table
-- manage clean rooms collaboration workspaces
-- create a configured table
-- create collaboration
-- list configured tables
-- amazon web services
-- privacy-preserving multi-party data analytics
-- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
-- analysts running collaborative queries across partner datasets without data exposure
-- get details of a specific clean rooms collaboration by id
 - end-to-end workflow for creating and operating secure multi-party data clean rooms
-- create membership
-- run a protected query
-- execute and list protected queries
-- get collaboration
-- data collaboration
-- manage collaboration memberships
-- list protected queries
-- list configured tables available for use in collaborations
-- marketing teams measuring campaign effectiveness across publisher and advertiser data
 - marketing
-- get or delete a specific collaboration
-- list all protected queries run within a collaboration membership
-- join a collaboration
-- list collaborations
-- privacy
+- create a new collaboration
+- list configured tables available for use in collaborations
+- list memberships
+- list all collaborations
+- manage configured tables
+- create membership
+- aws
+- Data Analyst
+- privacy-preserving multi-party data analytics
+- start protected query
 - get collaboration details
+- marketing teams measuring campaign effectiveness across publisher and advertiser data
+- run a protected query
+- create a configured table from an aws glue table with defined analysis rules for collaboration use
+- execute and list protected queries
+- clean rooms
+- create a configured table
+- list all clean rooms memberships in the caller's account
+- get collaboration
+- create collaboration
+- create configured table
+- list configured tables
+- list all clean rooms collaborations the caller participates in
+- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
+- manage collaboration memberships
+- data collaboration
+- manage clean rooms collaboration workspaces
+- privacy
+- Marketing Analyst
+- analytics
+- analysts running collaborative queries across partner datasets without data exposure
+- join a clean rooms collaboration as a member
+- list all protected queries run within a collaboration membership
+- amazon web services
+- get details of a specific clean rooms collaboration by id
+- list protected queries
+- get or delete a specific collaboration
+- join a collaboration
+- create a new secure data collaboration workspace in aws clean rooms
+- list collaborations
 slug: secure-data-collaboration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Clean Rooms Secure Data Collaboration\"\n  description: \"Workflow for establishing and operating secure multi-party data clean rooms on AWS, enabling data analysts and marketing teams to run collaborative analytics without sharing raw data.\"\n  tags:\n    - Amazon Web Services\n    - Clean Rooms\n    - Data Collaboration\n    - Privacy\n    - Analytics\n    - Marketing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cleanrooms\n      location: ./shared/clean-rooms.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secure-collaboration-api\n      description: \"Unified REST API for secure multi-party data collaboration using AWS Clean Rooms.\"\n      resources:\n        - path: /v1/collaborations\n\
   \          name: collaborations\n          description: \"Manage Clean Rooms collaboration workspaces\"\n          operations:\n            - method: GET\n              name: list-collaborations\n              description: \"List all collaborations\"\n              call: \"cleanrooms.list-collaborations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-collaboration\n              description: \"Create a new collaboration\"\n              call: \"cleanrooms.create-collaboration\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/collaborations/{collaborationId}\n          name: collaboration\n          description: \"Get or delete a specific collaboration\"\n          operations:\n            - method: GET\n              name: get-collaboration\n              description: \"Get collaboration details\"\n    \

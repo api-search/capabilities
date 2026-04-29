@@ -24,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- calculate carbon footprint from transactions
-- environmental impact scoring
-- calculate the carbon footprint of payment transactions
+- create a donation to environmental causes
+- carbon footprint calculations
+- fraud detection
+- get environmental impact score
 - calculate carbon footprint
-- sustainability
-- environmental impact
+- financial services
 - get the environmental impact score for a transaction using the aland index
 - digital identity
-- payments
-- carbon footprint calculations
-- carbon footprint
-- financial services
-- get impact score
-- create a donation to support environmental causes
 - donate to environment
-- credit cards
-- get environmental impact score
-- environmental cause donations
-- fraud detection
-- esg
-- mastercard
-- open banking
 - create environmental donation
-- create a donation to environmental causes
+- sustainability
+- environmental impact scoring
+- environmental cause donations
+- mastercard
+- esg
+- calculate carbon footprint from transactions
+- open banking
+- payments
+- get impact score
+- calculate the carbon footprint of payment transactions
+- environmental impact
+- create a donation to support environmental causes
+- credit cards
+- carbon footprint
 slug: sustainability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Sustainability\"\n  description: \"Unified workflow for ESG and sustainability teams to calculate carbon footprints, measure environmental impact, and enable cardholders to support environmental causes through their spending data.\"\n  tags:\n    - Mastercard\n    - Sustainability\n    - Carbon Footprint\n    - ESG\n    - Environmental Impact\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: carbon-calculator\n      location: ./shared/carbon-calculator.yaml\n    - import: doconomy-aland\n      location: ./shared/doconomy-aland-index.yaml\n    - import: donate\n      location: ./shared/donate.yaml\n\n  exposes:\n    - type: rest\n      port: 8090\n      namespace: sustainability-api\n      description: \"Unified REST API for\
   \ sustainability and environmental impact.\"\n      resources:\n        - path: /v1/carbon-footprint\n          name: carbon-footprint\n          description: \"Carbon footprint calculations\"\n          operations:\n            - method: POST\n              name: calculate-carbon-footprint\n              description: \"Calculate carbon footprint from transactions\"\n              call: \"carbon-calculator.calculate-footprint\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environmental-impact\n          name: environmental-impact\n          description: \"Environmental impact scoring\"\n          operations:\n            - method: POST\n              name: get-impact-score\n              description: \"Get environmental impact score\"\n              call: \"doconomy-aland.get-impact-score\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environmental-donations\n\

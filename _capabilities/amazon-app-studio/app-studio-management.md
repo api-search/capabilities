@@ -14,24 +14,24 @@ personas: []
 provider_name: Amazon App Studio
 provider_slug: amazon-app-studio
 search_terms:
-- amazon
-- manage app studio low-code applications.
 - IT Administrator
-- it admin managing app studio deployments and access.
-- generative ai
-- internal tools
-- aws
-- list app studio apps
-- app studio
 - get app studio app
-- Business Developer
-- no-code
-- get details for a specific app studio application by id.
-- list apps
-- list all amazon app studio applications in the account.
-- list applications.
+- manage app studio low-code applications.
 - low-code
+- Business Developer
+- generative ai
+- amazon
+- it admin managing app studio deployments and access.
+- no-code
+- aws
 - business user building internal tools with app studio.
+- list applications.
+- app studio
+- list apps
+- list app studio apps
+- internal tools
+- list all amazon app studio applications in the account.
+- get details for a specific app studio application by id.
 slug: app-studio-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon App Studio Application Management\n  description: Workflow for managing App Studio low-code applications.\n  tags:\n  - Amazon\n  - App Studio\n  - AWS\n  - Low-Code\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: amazon-app-studio\n    location: ./shared/amazon-app-studio.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: app-studio-management-api\n    resources:\n    - path: /v1/apps\n      name: apps\n      operations:\n      - method: GET\n        name: list-apps\n        description: List applications.\n        call: amazon-app-studio.list-apps\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: app-studio-management-mcp\n    transport:\
   \ http\n    tools:\n    - name: list-app-studio-apps\n      description: List all Amazon App Studio applications in the account.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: amazon-app-studio.list-apps\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-app-studio-app\n      description: Get details for a specific App Studio application by ID.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: amazon-app-studio.get-app\n      with:\n        appId: tools.appId\n      outputParameters:\n      - type: object\n        mapping: $.\n"

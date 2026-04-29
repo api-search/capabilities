@@ -39,63 +39,63 @@ personas: []
 provider_name: Google Tag Manager
 provider_slug: google-tag-manager
 search_terms:
-- list workspaces
-- get container
-- create a new tag
-- get tag
-- publish a container version
-- create trigger
-- delete a workspace
-- list tags in a workspace
-- list versions
-- container management
-- conversion tracking
-- delete a trigger
-- create a new workspace
-- analytics
-- list accounts
-- create container
-- get tag details
-- create a new trigger
-- list variables in a workspace
 - list triggers in a workspace
+- create variable
+- create container
+- get tag
+- marketing
+- get container
+- create a new variable
+- trigger management
+- create tag
+- list variables in a workspace
+- create a tag
+- list workspaces
+- delete tag
+- create a container
+- create a new tag
+- list tags in a workspace
+- list container version headers
+- publish version
+- conversion tracking
+- list tags
+- delete variable
+- get account details
 - list all gtm accounts
+- delete a container
+- delete a tag
+- update account
+- list accounts
+- publish a container version
 - tag management
+- delete trigger
+- get account
+- create a new workspace
+- google tag manager
+- get container details
+- delete a variable
+- create a new trigger
+- delete container
+- delete a trigger
+- delete workspace
+- create trigger
+- container management
+- tracking
+- create workspace
+- list triggers
+- analytics
 - list workspaces in a container
 - create a new container
-- create a new variable
-- create variable
-- publish version
-- create a tag
-- delete trigger
-- list all google tag manager accounts
-- delete a variable
-- list triggers
-- account management
-- create workspace
-- get account details
-- delete a container
-- update account settings
-- update account
-- delete container
-- tracking
-- create a container
-- trigger management
-- list containers
-- get account
-- delete a tag
-- delete tag
-- delete variable
-- marketing
-- create tag
-- list variables
-- list tags
-- delete workspace
-- list container version headers
-- list containers in an account
-- google tag manager
+- list versions
 - variable management
-- get container details
+- list all google tag manager accounts
+- update account settings
+- get tag details
+- list containers
+- list containers in an account
+- list variables
+- account management
+- delete a workspace
 slug: tag-deployment-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Tag Manager Tag Deployment Management\"\n  description: \"Workflow for managing tag deployment lifecycle including accounts, containers, workspaces, tags, triggers, variables, and version publishing. Used by marketing technologists and web analytics engineers.\"\n  tags:\n    - Google Tag Manager\n    - Tag Management\n    - Marketing\n    - Analytics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: tag-manager\n      location: ./shared/tag-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gtm-deploy-api\n      description: \"Unified REST API for GTM tag deployment management.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n          description: \"Account management\"\n          operations:\n            - method: GET\n        \
   \      name: list-accounts\n              description: \"List all GTM accounts\"\n              call: \"tag-manager.list-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/containers\n          name: containers\n          description: \"Container management\"\n          operations:\n            - method: GET\n              name: list-containers\n              description: \"List containers in an account\"\n              call: \"tag-manager.list-containers\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-container\n              description: \"Create a container\"\n              call: \"tag-manager.create-container\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n\

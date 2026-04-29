@@ -28,51 +28,51 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- whatsapp template management.
-- list messenger conversations
-- manage advertising campaigns and performance.
-- plans and executes advertising campaigns.
-- handles customer inquiries via messaging channels.
-- campaign management and audience targeting.
-- whatsapp messaging.
-- manage content across facebook, instagram, and threads.
+- send a message via whatsapp business.
 - Conversational Commerce
-- send whatsapp message
-- facebook
-- Ad Operations
-- customer messaging across messenger and whatsapp.
-- advertising
 - manages day-to-day ad campaign optimization.
-- conversation management.
+- manage advertising campaigns and performance.
+- publishing and managing content across platforms.
+- performance tracking and insights.
+- customer messaging across messenger and whatsapp.
+- messaging
+- Content Creator
+- advertising
+- handles customer inquiries via messaging channels.
+- list messenger conversations
+- send a messenger message.
+- Customer Support
 - list whatsapp message templates.
-- whatsapp
+- create a whatsapp message template.
+- whatsapp messaging.
+- facebook
+- messenger
+- send messenger message
+- plans and executes advertising campaigns.
+- creates and publishes visual and text content.
+- send a message via facebook messenger.
+- messenger messaging.
+- Ad Operations
+- Social Media Manager
+- campaign management and audience targeting.
 - social networking
 - list templates
-- creates and publishes visual and text content.
-- publishing and managing content across platforms.
-- direct messaging and customer communication.
-- send a whatsapp message.
+- content publishing
+- create whatsapp template
+- whatsapp template management.
 - list conversations
 - Marketing Manager
-- manages content and engagement across meta platforms.
-- create whatsapp template
-- performance tracking and insights.
 - customer communication
-- messenger messaging.
-- Customer Support
-- send messenger message
-- send a messenger message.
-- Social Media Manager
-- Content Creator
-- messaging
-- list messenger conversations.
-- content publishing
-- create a whatsapp message template.
 - list whatsapp templates
-- messenger
+- send a whatsapp message.
+- manages content and engagement across meta platforms.
+- direct messaging and customer communication.
+- manage content across facebook, instagram, and threads.
 - social media
-- send a message via facebook messenger.
-- send a message via whatsapp business.
+- conversation management.
+- whatsapp
+- send whatsapp message
+- list messenger conversations.
 slug: messaging-and-communication
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Facebook Messaging and Communication\n  description: >-\n    Workflow capability for customer messaging across Messenger and WhatsApp.\n    Combines Messenger Platform API for Facebook/Instagram messaging with\n    WhatsApp Business API for business communication. Used by customer support\n    teams and conversational commerce platforms.\n  tags:\n    - Facebook\n    - Messaging\n    - Customer Communication\n    - WhatsApp\n    - Messenger\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MESSENGER_PAGE_TOKEN: MESSENGER_PAGE_TOKEN\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: messenger-api\n      location: ./shared/messenger-api.yaml\n    - import: whatsapp-api\n      location: ./shared/whatsapp-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: messaging-api\n      description: \"Unified REST API for cross-platform\
   \ messaging.\"\n      resources:\n        - path: /v1/messenger-messages\n          name: messenger-messages\n          description: \"Messenger messaging.\"\n          operations:\n            - method: POST\n              name: send-messenger-message\n              description: \"Send a Messenger message.\"\n              call: \"messenger-api.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/whatsapp-messages\n          name: whatsapp-messages\n          description: \"WhatsApp messaging.\"\n          operations:\n            - method: POST\n              name: send-whatsapp-message\n              description: \"Send a WhatsApp message.\"\n              call: \"whatsapp-api.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/conversations\n          name: conversations\n          description: \"Conversation management.\"\

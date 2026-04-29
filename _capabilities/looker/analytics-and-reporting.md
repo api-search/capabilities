@@ -63,63 +63,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- search for dashboards.
-- create user
-- get dashboard details.
-- list dashboards
-- run look
-- bi platform
-- list looks
-- get query
-- run query
-- dashboard management.
-- update a dashboard.
-- list all saved looks.
 - data visualization
-- get dashboard
-- list all looks.
-- delete a look.
-- create a new dashboard.
-- create dashboard
-- create a dashboard.
-- create a user.
-- run a look and return results.
-- look management.
-- analytics
-- delete look
-- update user
-- create a query.
-- business intelligence
-- delete a user.
-- dashboards
-- delete dashboard
-- individual dashboard management.
+- list all saved looks.
+- search looks
 - search for looks by title.
-- list all dashboards.
-- individual query operations.
-- get look
+- get user
+- bi platform
+- get dashboard details.
 - looker
+- create a new dashboard.
+- create a dashboard.
+- list dashboards
+- update a look.
+- create dashboard
+- list all dashboards.
+- user management.
+- individual look management.
+- delete look
+- run look
+- delete a look.
+- run a look and return results.
+- create a user.
 - query management.
 - list all users.
-- get look details.
-- delete user
-- list users
-- individual look management.
-- update look
-- search looks
-- update a user.
-- update dashboard
-- run a saved query.
-- create a new user.
-- data analytics
-- update a look.
-- get user
+- dashboard management.
+- delete a user.
+- business intelligence
 - search dashboards
-- create query
-- user management.
+- update a dashboard.
+- dashboards
+- create user
+- data analytics
+- get dashboard
+- update look
 - delete a dashboard.
+- create query
+- search for dashboards.
+- individual dashboard management.
+- delete dashboard
 - get user details.
+- create a query.
+- individual query operations.
+- list users
+- analytics
+- run a saved query.
+- run query
+- look management.
+- delete user
+- list looks
+- get look
+- get query
+- update dashboard
+- update user
 - get query details.
+- create a new user.
+- get look details.
+- update a user.
+- list all looks.
 slug: analytics-and-reporting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Looker Analytics and Reporting\"\n  description: \"Unified workflow for business intelligence analytics including dashboards, looks, queries, and user management. Used by data analysts and BI administrators.\"\n  tags:\n    - Looker\n    - Business Intelligence\n    - Analytics\n    - Dashboards\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LOOKER_CLIENT_ID: LOOKER_CLIENT_ID\n      LOOKER_CLIENT_SECRET: LOOKER_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: looker\n      location: ./shared/looker-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: looker-analytics-api\n      description: \"Unified REST API for Looker analytics and reporting.\"\n      resources:\n        - path: /v1/looks\n          name: looks\n          description: \"Look management.\"\n          operations:\n            - method: GET\n              name: list-looks\n \
   \             description: \"List all looks.\"\n              call: \"looker.list-looks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/looks/{id}\n          name: look-details\n          description: \"Individual look management.\"\n          operations:\n            - method: GET\n              name: get-look\n              description: \"Get look details.\"\n              call: \"looker.get-look\"\n              with:\n                look_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-look\n              description: \"Update a look.\"\n              call: \"looker.update-look\"\n              with:\n                look_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name:\

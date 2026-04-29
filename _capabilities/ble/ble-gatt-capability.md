@@ -10,11 +10,11 @@ provider_name: BLE
 provider_slug: ble
 search_terms:
 - ble
-- wireless
 - embedded
+- iot
+- wireless
 - protocols
 - standards
-- iot
 - bluetooth
 slug: ble-gatt-capability
 source_yaml: "name: Bluetooth Low Energy (BLE) GATT Capability\ndescription: >-\n  Naftiko capability definition for Bluetooth Low Energy GATT interactions,\n  documenting service discovery, characteristic read/write/notify, and\n  advertising data interpretation.\nversion: 1.0.0\nspecification:\n  name: Bluetooth Core Specification\n  version: \"6.0\"\n  url: https://www.bluetooth.com/specifications/specs/core60/\n  governance: https://www.bluetooth.com/about-us/membership/\n  conformance: https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/\ncapabilities:\n  - name: discoverServices\n    description: Discover all GATT services exposed by a connected BLE peripheral\n    layer: GATT\n    operation: Service Discovery\n    reference: \"Bluetooth Core Spec Vol 3, Part G, Section 4.4\"\n  - name: discoverCharacteristics\n    description: Discover characteristics within a specific GATT service\n    layer: GATT\n    operation: Characteristic Discovery\n  - name: readCharacteristic\n\

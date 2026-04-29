@@ -34,47 +34,47 @@ personas: []
 provider_name: Amazon Mainframe Modernization
 provider_slug: amazon-mainframe-modernization
 search_terms:
-- start batch job
-- Platform Engineer
-- get application details
-- list all runtime environments available for deployment
 - list modernization applications
-- workflow for managing mainframe application modernization, environments, and batch jobs
-- creation and management of modernized mainframe applications
-- list applications
-- amazon
-- get details and status of a modernization application
-- batch job executions
-- create a modernization application
-- list runtime environments
-- create modernization application
-- Mainframe Developer
-- aws
-- list all mainframe applications being modernized
-- list batch job executions
-- cobol
-- batch processing
-- manages runtime environments and deployment infrastructure for modernized mainframe applications
-- develops and deploys modernized cobol/mainframe applications and manages batch job execution
-- create runtime environment
-- runtime environments
-- create a new mainframe modernization application on aws
-- execution of batch jobs migrated from mainframe
-- modernization
-- batch jobs
-- list batch jobs
-- create environment
-- create a runtime environment
-- start a batch job execution for a modernized mainframe application
-- list batch job execution history for an application
-- environment provisioning for running modernized applications
-- start a batch job
-- mainframe
 - modernization applications
-- migration
-- create application
-- list environments
+- manages runtime environments and deployment infrastructure for modernized mainframe applications
+- creation and management of modernized mainframe applications
+- batch jobs
+- list applications
+- batch job executions
+- list all mainframe applications being modernized
+- cobol
+- start a batch job
+- list batch job execution history for an application
 - create a runtime environment for modernized mainframe applications
+- Mainframe Developer
+- batch processing
+- mainframe
+- execution of batch jobs migrated from mainframe
+- create environment
+- workflow for managing mainframe application modernization, environments, and batch jobs
+- aws
+- start batch job
+- get details and status of a modernization application
+- runtime environments
+- list all runtime environments available for deployment
+- amazon
+- create a modernization application
+- create a runtime environment
+- list batch job executions
+- list runtime environments
+- get application details
+- list environments
+- create modernization application
+- Platform Engineer
+- modernization
+- create application
+- start a batch job execution for a modernized mainframe application
+- migration
+- develops and deploys modernized cobol/mainframe applications and manages batch job execution
+- create a new mainframe modernization application on aws
+- create runtime environment
+- environment provisioning for running modernized applications
+- list batch jobs
 slug: modernization-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Mainframe Modernization - Migration Workflow\"\n  description: \"Workflow capability for platform and migration teams to manage mainframe application modernization, including application lifecycle management, environment configuration, and batch job execution on AWS.\"\n  tags:\n    - Amazon\n    - Mainframe\n    - Migration\n    - Modernization\n    - COBOL\n    - Batch Jobs\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: mainframe-modernization\n      location: ./shared/mainframe-modernization.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: modernization-api\n      description: \"Unified REST API for mainframe modernization workflows.\"\n      resources:\n        - path: /v1/applications\n\
   \          name: applications\n          description: \"Modernization applications\"\n          operations:\n            - method: POST\n              name: create-application\n              description: \"Create a modernization application\"\n              call: \"mainframe-modernization.create-application\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-applications\n              description: \"List modernization applications\"\n              call: \"mainframe-modernization.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments\n          name: environments\n          description: \"Runtime environments\"\n          operations:\n            - method: POST\n              name: create-environment\n              description: \"Create a runtime environment\"\n              call: \"mainframe-modernization.create-environment\"\

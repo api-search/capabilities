@@ -27,40 +27,40 @@ personas: []
 provider_name: Android
 provider_slug: android
 search_terms:
-- reviews
-- sdk
-- ai
-- mobile development
-- google play
-- get a specific user review with comments
-- check subscription purchase validity and expiry
-- list app reviews
-- tv
 - get product purchase status
-- list voided purchases
-- list subscription products
-- automotive
-- list cancelled, refunded, or charged-back purchases
-- app reviews
-- get review
 - get purchase subscription
-- list user reviews from google play store
-- google
-- get purchase product
-- list subscriptions
-- list reviews
-- check in-app product purchase and consumption status
-- machine learning
-- list all subscription products for an app
+- sdk
+- tv
 - monetization
-- in-app product purchases
-- android
-- subscriptions
-- subscription products
+- app reviews
 - create subscription
-- voided purchases
+- google
+- list subscription products
+- list user reviews from google play store
+- subscriptions
+- list app reviews
+- android
+- list reviews
+- list subscriptions
 - wearables
+- get purchase product
+- list cancelled, refunded, or charged-back purchases
+- google play
+- list all subscription products for an app
+- machine learning
+- reviews
+- get review
+- in-app product purchases
+- mobile development
+- check in-app product purchase and consumption status
 - create a new subscription product
+- voided purchases
+- ai
+- subscription products
+- get a specific user review with comments
+- list voided purchases
+- automotive
+- check subscription purchase validity and expiry
 slug: app-monetization
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Android App Monetization and Reviews\"\n  description: \"Unified workflow for managing Android app monetization through in-app purchases, subscriptions, reviews, and order management using the Google Play Developer API. Designed for app developers and product managers managing app revenue and user feedback.\"\n  tags:\n    - Android\n    - Google Play\n    - Monetization\n    - Subscriptions\n    - Reviews\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_PLAY_OAUTH_TOKEN: GOOGLE_PLAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: google-play\n      location: ./shared/google-play-developer.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: monetization-api\n      description: \"Unified REST API for Android app monetization and review management.\"\n      resources:\n        - path: /v1/purchases/{packageName}/products/{productId}\n       \
   \   name: product-purchases\n          description: \"In-app product purchases\"\n          operations:\n            - method: GET\n              name: get-purchase-product\n              description: \"Get product purchase status\"\n              call: \"google-play.get-purchase-product\"\n              with:\n                packageName: \"rest.packageName\"\n                productId: \"rest.productId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions/{packageName}\n          name: subscriptions\n          description: \"Subscription products\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List subscription products\"\n              call: \"google-play.list-subscriptions\"\n              with:\n                packageName: \"rest.packageName\"\n              outputParameters:\n                - type: object\n                \

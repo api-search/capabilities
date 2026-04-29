@@ -35,43 +35,43 @@ personas: []
 provider_name: Perforce
 provider_slug: perforce
 search_terms:
-- update a review description or author
-- get version
-- list comments on reviews and changelists
-- create a new code review from a changelist
-- add a comment to a review or changelist
-- list activity entries
-- get details of a specific code review
 - get review details
-- review details
-- perforce
-- transition review state
-- delete a swarm project
-- code review
-- list activity
-- get details of a specific swarm project
-- list activity stream entries
-- delete project
-- list code reviews in helix swarm
-- list projects
-- list code reviews
-- devops
-- list comments
-- activity stream
-- create a new code review
-- update review
 - create review
-- transition a review to a new state (approve, reject, etc.)
-- get review
-- get project
+- get details of a specific code review
+- list activity stream entries
+- add a comment to a review or changelist
+- list projects
 - code reviews
+- transition a review to a new state (approve, reject, etc.)
+- get swarm server version information
+- perforce
+- devops
+- review comments
+- list comments
+- update review
+- list swarm projects
+- list reviews
+- get details of a specific swarm project
+- code review
+- list code reviews in helix swarm
+- list activity entries
+- review details
 - collaboration
 - create comment
-- get swarm server version information
-- list reviews
-- review comments
-- list swarm projects
+- get version
+- get review
+- delete a swarm project
 - swarm projects
+- delete project
+- list comments on reviews and changelists
+- activity stream
+- get project
+- list activity
+- create a new code review from a changelist
+- transition review state
+- list code reviews
+- update a review description or author
+- create a new code review
 slug: code-review-collaboration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Perforce Code Review and Collaboration\"\n  description: \"Unified workflow for code review, commenting, and project management using Helix Swarm. Designed for development teams managing code review workflows integrated with Helix Core version control.\"\n  tags:\n    - Perforce\n    - Code Review\n    - Collaboration\n    - DevOps\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWARM_USERNAME: SWARM_USERNAME\n      SWARM_PASSWORD: SWARM_PASSWORD\n\ncapability:\n  consumes:\n    - import: helix-swarm\n      location: ./shared/helix-swarm.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: code-review-api\n      description: \"Unified REST API for Perforce code review and collaboration.\"\n      resources:\n        - path: /v1/reviews\n          name: reviews\n          description: \"Code reviews\"\n          operations:\n            - method: GET\n   \
   \           name: list-reviews\n              description: \"List code reviews\"\n              call: \"helix-swarm.list-reviews\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-review\n              description: \"Create a new code review\"\n              call: \"helix-swarm.create-review\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reviews/{id}\n          name: review-details\n          description: \"Review details\"\n          operations:\n            - method: GET\n              name: get-review\n              description: \"Get review details\"\n              call: \"helix-swarm.get-review\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/comments\n          name: comments\n\

@@ -39,58 +39,58 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- list automations
-- contact list management
-- orchestrate contact journeys, campaigns, automations, and list management
-- Growth Engineer
-- Email Marketer
-- Sales Representative
-- list all marketing automations in activecampaign
-- cross-channel contact engagement and personalization
-- create list
-- contact lifecycle management
-- create a new contact
-- Revenue Operations
-- create a new contact in activecampaign
-- create a new contact list
-- contacts
-- Account Manager
-- list all email campaigns in activecampaign
-- contact tag management
-- list all automations
-- email, sms, and multi-channel marketing automation
-- marketing automation workflows
-- crm
-- sync a contact's data to activecampaign, creating or updating as needed
-- list all contact tags in activecampaign
-- email marketing
-- create a new contact tag in activecampaign
-- manage sales pipeline, deals, accounts, and tasks
-- tracks deals, manages accounts, and uses crm features
-- list lists
-- create contact
-- Marketing Manager
-- manages email campaigns, automations, and contact segmentation
-- list all contact lists
-- list contacts
-- list all campaigns
-- list and search activecampaign contacts by email, name, or other criteria
-- list campaigns
-- customer experience
-- list contact lists
-- email campaign management
-- sales automation
-- campaigns
-- create tag
-- crm, pipeline management, and revenue operations
-- marketing automation
-- list and search contacts
-- list tags
-- sync contact
-- list all contact lists in activecampaign
-- activecampaign
 - builds integrations, automation workflows, and uses the api directly
+- create list
+- list all contact tags in activecampaign
+- list lists
+- create a new contact
+- contact lifecycle management
+- tracks deals, manages accounts, and uses crm features
+- list all contact lists
+- list all marketing automations in activecampaign
+- list contact lists
+- email, sms, and multi-channel marketing automation
+- create tag
+- list all contact lists in activecampaign
+- list all automations
+- list contacts
+- sales automation
+- Email Marketer
+- email marketing
+- list tags
+- activecampaign
+- manage sales pipeline, deals, accounts, and tasks
+- sync a contact's data to activecampaign, creating or updating as needed
+- create contact
+- create a new contact in activecampaign
+- crm
+- marketing automation
+- Growth Engineer
+- Account Manager
+- list campaigns
+- contacts
+- marketing automation workflows
+- campaigns
 - list all tags
+- contact tag management
+- list and search activecampaign contacts by email, name, or other criteria
+- list all email campaigns in activecampaign
+- email campaign management
+- list all campaigns
+- Marketing Manager
+- contact list management
+- crm, pipeline management, and revenue operations
+- list automations
+- orchestrate contact journeys, campaigns, automations, and list management
+- sync contact
+- list and search contacts
+- create a new contact list
+- create a new contact tag in activecampaign
+- Sales Representative
+- manages email campaigns, automations, and contact segmentation
+- cross-channel contact engagement and personalization
+- Revenue Operations
+- customer experience
 slug: marketing-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ActiveCampaign Marketing Automation\"\n  description: \"Unified workflow capability for marketing automation, contact management, campaign execution, and list segmentation. Used by marketing teams and growth engineers to orchestrate multi-channel customer journeys.\"\n  tags:\n    - ActiveCampaign\n    - Marketing Automation\n    - Email Marketing\n    - Contacts\n    - Campaigns\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVECAMPAIGN_API_TOKEN: ACTIVECAMPAIGN_API_TOKEN\n      ACTIVECAMPAIGN_API_URL: ACTIVECAMPAIGN_API_URL\n\ncapability:\n  consumes:\n    - import: activecampaign-v3\n      location: ./shared/activecampaign-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: marketing-automation-api\n      description: \"Unified REST API for marketing automation workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n\
   \          description: \"Contact lifecycle management\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List and search contacts\"\n              call: \"activecampaign-v3.list-contacts\"\n              with:\n                email: \"rest.email\"\n                limit: \"rest.limit\"\n                offset: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-contact\n              description: \"Create a new contact\"\n              call: \"activecampaign-v3.create-contact\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Email campaign management\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"\

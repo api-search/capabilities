@@ -37,53 +37,53 @@ personas: []
 provider_name: Azure Log Analytics
 provider_slug: azure-log-analytics
 search_terms:
+- logging
+- log analytics
 - manage saved kql queries.
-- create or update a log analytics workspace.
-- get workspace
-- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
-- send custom log data.
-- list all workspaces.
-- monitoring
-- SOC Analyst
-- delete a log analytics workspace.
-- list all tables.
-- create saved search
-- execute kql queries against workspaces.
 - create or update a saved search in a workspace.
-- list saved searches.
-- get a workspace.
-- administrators managing workspaces, tables, and data collection configurations.
-- analytics
-- kql
-- azure
-- list all log analytics workspaces in a subscription.
+- create saved search
 - list workspace tables.
-- execute a kql query.
-- upload custom log entries.
-- execute query
+- send custom log data to a workspace via data collection rule.
+- get a workspace.
+- kql-based data exploration and saved query management.
+- list saved searches.
+- cloud
+- security event analysis and custom security log ingestion.
+- DevOps Engineer
+- list workspaces
+- list saved searches
+- kql
+- engineers monitoring infrastructure and application health through log queries.
 - upload logs
 - security analysts investigating incidents and threats through log data.
-- security event analysis and custom security log ingestion.
-- log analytics
-- list saved searches in a workspace.
-- list saved searches
-- list all tables in a log analytics workspace.
-- get workspace details.
-- create workspace
+- administrators managing workspaces, tables, and data collection configurations.
+- execute a kql query.
+- execute kql queries against workspaces.
+- manage log analytics workspaces.
+- delete a log analytics workspace.
+- list all tables.
+- execute query
+- upload custom log entries.
+- delete workspace
 - list tables
 - execute a kql query against a log analytics workspace.
-- send custom log data to a workspace via data collection rule.
-- cloud
-- get details of a specific log analytics workspace.
-- engineers monitoring infrastructure and application health through log queries.
-- DevOps Engineer
-- logging
-- manage log analytics workspaces.
-- delete workspace
+- create workspace
+- monitoring
+- list all tables in a log analytics workspace.
+- analytics
+- create or update a log analytics workspace.
 - Platform Administrator
-- kql-based data exploration and saved query management.
+- list all workspaces.
+- list all log analytics workspaces in a subscription.
+- get details of a specific log analytics workspace.
+- get workspace
 - infrastructure and application monitoring through log analysis.
-- list workspaces
+- azure
+- list saved searches in a workspace.
+- SOC Analyst
+- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
+- send custom log data.
+- get workspace details.
 slug: log-monitoring-and-analysis
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Log Analytics Log Monitoring and Analysis\"\n  description: >-\n    Unified workflow for log monitoring and analysis combining the Query API for\n    KQL-based data exploration, the Management API for workspace and saved search\n    administration, and the Ingestion API for custom log data collection. Used by\n    DevOps engineers, SOC analysts, and platform administrators.\n  tags:\n    - Azure\n    - Log Analytics\n    - Monitoring\n    - Analytics\n    - KQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_LOG_ANALYTICS_BEARER_TOKEN: AZURE_LOG_ANALYTICS_BEARER_TOKEN\n      AZURE_MANAGEMENT_BEARER_TOKEN: AZURE_MANAGEMENT_BEARER_TOKEN\n      AZURE_INGESTION_BEARER_TOKEN: AZURE_INGESTION_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: log-analytics-query\n      location: ./shared/query-api.yaml\n    - import: log-analytics-management\n      location: ./shared/management-api.yaml\n\
   \    - import: log-analytics-ingestion\n      location: ./shared/ingestion-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: log-monitoring-api\n      description: \"Unified REST API for Azure Log Analytics monitoring and analysis.\"\n      resources:\n        - path: /v1/queries\n          name: queries\n          description: \"Execute KQL queries against workspaces.\"\n          operations:\n            - method: POST\n              name: execute-query\n              description: \"Execute a KQL query.\"\n              call: \"log-analytics-query.post-query\"\n              with:\n                workspaceId: \"rest.workspaceId\"\n                query: \"rest.query\"\n                timespan: \"rest.timespan\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Manage Log Analytics workspaces.\"\n          operations:\n  \

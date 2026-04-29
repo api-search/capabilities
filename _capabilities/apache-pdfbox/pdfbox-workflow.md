@@ -18,36 +18,36 @@ personas: []
 provider_name: Apache PDFBox
 provider_slug: apache-pdfbox
 search_terms:
-- split document
-- merge documents
-- text extraction
-- java
-- Document Manager
 - get metadata
-- open source
-- pdf
-- digital signatures
+- Document Manager
 - extract text from pdf
-- integrates pdf processing into applications
-- list pages
-- get form fields
-- apply a digital signature to a pdf document
-- create document
-- extract text
-- create pdf document
-- Application Developer
 - list pages and their dimensions in a pdf
-- apache
-- apache pdfbox
-- split a pdf document at specified page boundaries
-- document processing
+- create pdf document
+- list pages
+- merge documents
 - merge multiple pdf documents into one
-- extract text content from a pdf document
-- get pdf document metadata (title, author, dates)
-- create a new pdf document
-- sign document
-- creates and manages pdf documents with metadata and signatures
+- get form fields
+- extract text
+- integrates pdf processing into applications
+- split document
 - get interactive form fields from a pdf document
+- document processing
+- create document
+- apache pdfbox
+- pdf
+- apply a digital signature to a pdf document
+- extract text content from a pdf document
+- apache
+- text extraction
+- split a pdf document at specified page boundaries
+- create a new pdf document
+- get pdf document metadata (title, author, dates)
+- sign document
+- Application Developer
+- creates and manages pdf documents with metadata and signatures
+- java
+- digital signatures
+- open source
 slug: pdfbox-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache PDFBox Document Processing Workflow\"\n  description: \"Workflow for creating, manipulating, extracting text from, and digitally signing PDF documents using Apache PDFBox.\"\n  tags:\n    - Apache PDFBox\n    - PDF\n    - Document Processing\n    - Digital Signatures\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PDFBOX_API_KEY: PDFBOX_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: pdfbox\n      baseUri: https://localhost:8080/pdfbox\n      description: \"Apache PDFBox REST API\"\n      resources:\n        - name: documents\n          path: /documents\n          description: \"Document operations\"\n          operations:\n            - name: createDocument\n              method: POST\n              description: \"Create a PDF document\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n        \
   \          type: object\n                  value: \"$.\"\n            - name: extractText\n              method: GET\n              description: \"Extract text from PDF\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pdfbox-api\n      description: \"Unified REST API for PDF document processing.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          operations:\n            - method: POST\n              name: create-document\n              description: \"Create PDF document\"\n              call: \"pdfbox.createDocument\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{documentId}/text\n          name: text-extraction\n          operations:\n            - method: GET\n              name:\

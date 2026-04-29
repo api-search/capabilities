@@ -35,48 +35,48 @@ personas: []
 provider_name: Indeed
 provider_slug: indeed
 search_terms:
-- hiring
-- get job posting details.
-- list job postings for an employer.
-- list job postings.
-- job posting management.
-- list candidates
-- update disposition
-- expire job posting
-- register employer for candidate sync.
-- job search
-- create job posting
-- list jobs
-- expire a job posting.
-- jobs
-- careers
-- employment
-- list candidates for an employer.
-- get employer
-- talent acquisition
-- create a job posting.
-- get employer details.
-- register candidate sync
-- indeed
-- get candidate
-- update employer
-- create an employer entity.
-- update candidate disposition status.
-- get job posting
-- update job posting
 - create a job posting on indeed.
-- individual employer management.
-- list employer jobs
-- get candidate details.
-- recruiting
-- update employer details.
-- candidate management.
+- list candidates for an employer.
+- expire job posting
 - job postings
-- create employer
-- create job
+- update job posting
+- create job posting
+- list job postings for an employer.
+- employment
 - employer management.
+- indeed
+- careers
+- update employer details.
+- list jobs
+- get candidate details.
+- register candidate sync
+- expire a job posting.
+- create a job posting.
+- update employer
+- job search
 - update a job posting.
+- get employer details.
+- individual employer management.
+- get candidate
+- job posting management.
+- talent acquisition
+- list employer jobs
+- get job posting details.
+- jobs
+- recruiting
+- create job
+- get employer
+- list candidates
+- create employer
+- list job postings.
+- hiring
+- update disposition
+- candidate management.
+- register employer for candidate sync.
+- get job posting
+- create an employer entity.
 - create an employer entity on indeed.
+- update candidate disposition status.
 slug: talent-acquisition
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Indeed Talent Acquisition\"\n  description: \"Unified workflow for managing the hiring pipeline including employer setup, job posting, candidate retrieval, and disposition tracking. Used by ATS partners and hiring platform developers.\"\n  tags:\n    - Indeed\n    - Talent Acquisition\n    - Hiring\n    - Job Postings\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INDEED_ACCESS_TOKEN: INDEED_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: indeed\n      location: ./shared/employer-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: indeed-talent-api\n      description: \"Unified REST API for Indeed talent acquisition workflows.\"\n      resources:\n        - path: /v1/employers\n          name: employers\n          description: \"Employer management.\"\n          operations:\n            - method: POST\n              name: create-employer\n\
   \              description: \"Create an employer entity.\"\n              call: \"indeed.create-employer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employers/{id}\n          name: employer-details\n          description: \"Individual employer management.\"\n          operations:\n            - method: GET\n              name: get-employer\n              description: \"Get employer details.\"\n              call: \"indeed.get-employer\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-employer\n              description: \"Update employer details.\"\n              call: \"indeed.update-employer\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping:\

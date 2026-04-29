@@ -23,29 +23,29 @@ personas: []
 provider_name: Apache Kylin
 provider_slug: apache-kylin
 search_terms:
-- olap
+- execute a sql query on apache kylin to retrieve olap analytics results
+- cancel job
+- list projects
+- big data
+- big data analytics
+- list jobs
+- execute sql query
+- Data Analyst
+- BI Engineer
+- cube
+- business intelligence
+- list models
+- execute query
 - apache kylin
 - sql
-- list models
-- open source
-- cancel a running kylin cube build job
-- cube
-- Data Analyst
-- execute sql query
-- list cube build jobs and their statuses
-- list jobs
-- big data analytics
+- olap
+- engineers who build and manage kylin cubes for bi tool consumption
 - analytics
 - list data models in a kylin project
-- list projects
-- business intelligence
-- engineers who build and manage kylin cubes for bi tool consumption
-- BI Engineer
-- execute query
+- list cube build jobs and their statuses
 - list all kylin projects and their configurations
-- cancel job
-- execute a sql query on apache kylin to retrieve olap analytics results
-- big data
+- cancel a running kylin cube build job
+- open source
 - analysts who execute olap sql queries over large hadoop datasets
 slug: olap-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Kylin OLAP Analytics\"\n  description: \"Workflow capability for data analysts and BI engineers to execute OLAP queries, manage projects, and monitor cube build jobs in Apache Kylin.\"\n  tags:\n    - Apache Kylin\n    - Big Data Analytics\n    - Business Intelligence\n    - OLAP\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      KYLIN_PASSWORD: KYLIN_PASSWORD\n\ncapability:\n  consumes:\n    - import: kylin-rest-api\n      location: ./shared/kylin-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kylin-olap-analytics-api\n      description: \"Unified REST API for Apache Kylin OLAP analytics.\"\n      resources:\n        - path: /v1/query\n          name: query\n          operations:\n            - method: POST\n              name: execute-query\n              call: \"kylin-rest-api.execute-query\"\n              outputParameters:\n     \

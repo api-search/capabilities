@@ -41,53 +41,53 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- insert multiple records into an import set staging table.
-- automation
+- configuration management
+- download the binary file content of an attachment.
+- download attachment file
 - list attachments
-- delete an attachment.
-- insert a single record into an import set staging table.
-- get attachment
-- cmdb
-- get attachment metadata.
-- delete attachment
-- list file attachment metadata.
-- cloud services
+- import set operations.
+- automation
+- digital workflows
 - get metadata for a specific attachment.
-- etl
-- servicenow
-- upload attachment binary
-- single ci operations.
-- attachments
-- insert import set record
-- insert multiple import set records
-- retrieve full details of a configuration item.
-- cmdb configuration item operations.
-- it service management
+- cmdb
+- workflows
+- single attachment operations.
+- insert multiple records into an import set staging table.
 - list configuration items by cmdb class.
+- cloud services
+- bulk import operations.
+- it service management
+- servicenow
+- delete an attachment and its file content.
+- data integration
+- insert multiple records into a staging table.
+- get attachment
+- list cmdb instances
+- list file attachment metadata.
+- get cmdb instance
+- single ci operations.
+- list cis by class.
+- insert import set record
+- etl
+- itsm
+- file attachment operations.
+- retrieve full details of a configuration item.
+- get a specific ci.
+- workflow automation
+- cmdb configuration item operations.
 - list attachments.
+- delete an attachment.
+- upload attachment binary
+- insert a record into a staging table.
+- attachments
+- insert a single record into an import set staging table.
+- get attachment metadata.
+- t1
 - enterprise platform
 - processes
-- digital workflows
-- workflows
-- workflow automation
+- delete attachment
 - upload a file as a binary stream attached to a record.
-- insert multiple records into a staging table.
-- list cis by class.
-- t1
-- download attachment file
-- get a specific ci.
-- import set operations.
-- delete an attachment and its file content.
-- get cmdb instance
-- single attachment operations.
-- download the binary file content of an attachment.
-- data integration
-- configuration management
-- file attachment operations.
-- insert a record into a staging table.
-- list cmdb instances
-- bulk import operations.
-- itsm
+- insert multiple import set records
 slug: data-integration-and-configuration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow Data Integration And Configuration\"\n  description: \"Unified workflow for data integration and configuration management combining import sets for ETL, CMDB for configuration items, and attachment management. Used by integration engineers and CMDB administrators.\"\n  tags:\n    - ServiceNow\n    - Data Integration\n    - CMDB\n    - ETL\n    - Attachments\n    - Configuration Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-import-set\n      location: ./shared/import-set.yaml\n    - import: servicenow-cmdb-instance\n      location: ./shared/cmdb-instance.yaml\n    - import: servicenow-attachment\n      location: ./shared/attachment.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8082\n      namespace: servicenow-data-integration-api\n      description: \"Unified REST API for ServiceNow data integration and configuration management.\"\n      resources:\n        - path: /v1/import-sets/{stagingTableName}\n          name: import-sets\n          description: \"Import set operations.\"\n          operations:\n            - method: POST\n              name: insert-import-set-record\n              description: \"Insert a record into a staging table.\"\n              call: \"servicenow-import-set.insert-import-set-record\"\n              with:\n                stagingTableName: \"rest.stagingTableName\"\n                record_data: \"rest.body\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/import-sets/{stagingTableName}/bulk\n          name: import-sets-bulk\n          description: \"Bulk import operations.\"\n          operations:\n            - method: POST\n     \

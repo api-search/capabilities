@@ -30,72 +30,72 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- ai gateway
-- database
-- delete an r2 bucket.
-- hyperdrive delete config
-- d1 database management.
 - kv namespace management.
-- cloudflare
-- list d1 databases.
-- list hyperdrive configs
-- serverless
-- edge computing
-- kv create namespace
-- list r2 storage buckets.
-- read a kv value.
+- list hyperdrive configurations.
+- ddos protection
+- storage
 - r2 get bucket
-- get r2 bucket details.
-- create a d1 database.
-- r2 create bucket
-- list databases
-- create an r2 bucket.
-- d1 list databases
 - list objects in an r2 bucket.
-- kv list namespaces
-- platform
-- artificial intelligence
-- r2 bucket management.
+- r2 delete bucket
+- kv delete value
+- cdn
+- d1 delete database
+- ai gateway
+- delete an r2 bucket.
+- list r2 storage buckets.
+- r2 create bucket
+- kv create namespace
+- kv write value
+- cloud
+- web performance
+- d1 database management.
+- list r2 buckets.
 - d1 create database
 - d1 query database
-- hyperdrive list configs
-- r2 list objects
-- execute sql query on a d1 database.
-- list keys in a kv namespace.
-- kv read value
-- hyperdrive create config
-- delete a hyperdrive configuration.
-- api gateway
-- web performance
-- containers
-- list kv namespaces
-- d1 delete database
-- delete a kv value.
-- object storage
-- list r2 buckets.
-- storage
-- ddos protection
-- cdn
-- create a kv namespace.
-- r2 delete bucket
-- cloud
-- kv write value
-- edge
-- list buckets
-- security
 - real-time communication
-- r2 list buckets
-- data
-- list kv namespaces.
-- kv list keys
-- hyperdrive configuration management.
-- write a kv value.
-- delete a d1 database.
-- kv delete value
-- list hyperdrive configurations.
-- create a hyperdrive configuration.
-- dns
+- serverless
+- r2 bucket management.
 - list hyperdrive configs.
+- delete a kv value.
+- edge computing
+- containers
+- delete a d1 database.
+- object storage
+- create an r2 bucket.
+- r2 list buckets
+- create a kv namespace.
+- platform
+- edge
+- list kv namespaces
+- kv read value
+- hyperdrive list configs
+- list kv namespaces.
+- list buckets
+- list hyperdrive configs
+- read a kv value.
+- hyperdrive create config
+- write a kv value.
+- security
+- cloudflare
+- data
+- hyperdrive configuration management.
+- create a d1 database.
+- list keys in a kv namespace.
+- create a hyperdrive configuration.
+- api gateway
+- execute sql query on a d1 database.
+- artificial intelligence
+- list d1 databases.
+- delete a hyperdrive configuration.
+- hyperdrive delete config
+- get r2 bucket details.
+- r2 list objects
+- database
+- list databases
+- d1 list databases
+- kv list namespaces
+- dns
+- kv list keys
 slug: data-and-storage
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Data and Storage\"\n  description: \"Unified data and storage management combining R2 object storage, D1 serverless SQL, KV key-value store, and Hyperdrive database acceleration. Used by developers building data-driven applications on Cloudflare's edge.\"\n  tags:\n    - Cloudflare\n    - Storage\n    - Database\n    - Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-r2\n      location: ./shared/r2.yaml\n    - import: cloudflare-d1\n      location: ./shared/d1.yaml\n    - import: cloudflare-kv\n      location: ./shared/kv.yaml\n    - import: cloudflare-hyperdrive\n      location: ./shared/hyperdrive.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: data-storage-api\n      description: \"Unified REST API for Cloudflare data and storage services.\"\
   \n      resources:\n        - path: /v1/buckets\n          name: buckets\n          description: \"R2 bucket management.\"\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List R2 buckets.\"\n              call: \"cloudflare-r2.list-r2-buckets\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/databases\n          name: databases\n          description: \"D1 database management.\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List D1 databases.\"\n              call: \"cloudflare-d1.list-databases\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/kv-namespaces\n          name:\

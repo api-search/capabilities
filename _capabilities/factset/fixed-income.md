@@ -26,34 +26,34 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- fixed income
-- batch fi analytics
-- get evaluated prices
-- financial
-- run fi calculation
-- factset
-- get evaluated prices.
-- get fi calculations.
-- run fixed income calculation.
-- fixed income calculations.
-- get fixed income terms and conditions.
-- portfolio analytics
-- optimize fi portfolio
 - bond analytics
-- credit analysis
-- get terms conditions
-- get s&p global evaluated prices.
-- investment analytics
-- fixed income terms and conditions.
-- market data
-- batch fixed income analytics.
-- optimize fixed income portfolio.
-- get fi calc
+- get evaluated prices
 - financial data
+- get s&p global evaluated prices.
+- get terms conditions
 - s&p global evaluated prices.
-- get terms
+- run fixed income calculation.
+- batch fi analytics
+- fixed income calculations.
+- financial
+- fixed income terms and conditions.
+- factset
+- get fixed income terms and conditions.
+- market data
+- fixed income
+- get evaluated prices.
 - get terms and conditions.
 - research
+- optimize fixed income portfolio.
+- batch fixed income analytics.
+- run fi calculation
+- get terms
+- credit analysis
+- get fi calc
+- optimize fi portfolio
+- portfolio analytics
+- investment analytics
+- get fi calculations.
 slug: fixed-income
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Fixed Income\"\n  description: \"Unified workflow for fixed income analytics including terms and conditions, evaluated prices, analytics calculations, and optimization. Used by fixed income analysts.\"\n  tags:\n    - FactSet\n    - Fixed Income\n    - Bond Analytics\n    - Credit Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-terms\n      location: ./shared/terms-and-conditions.yaml\n    - import: factset-sp-fi\n      location: ./shared/s-p-global-fixed-income-evaluated-prices-and-analytics.yaml\n    - import: factset-fi-calc\n      location: ./shared/fixed-income-calculation.yaml\n    - import: factset-fi-batch\n      location: ./shared/fixed-income-analytics-batcher.yaml\n    - import: factset-axioma-fi\n      location: ./shared/axioma-fixed-income-optimizer.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8084\n      namespace: fixed-income-api\n      description: \"Unified REST API for fixed income analytics.\"\n      resources:\n        - path: /v1/terms-conditions\n          name: terms-conditions\n          description: \"Fixed income terms and conditions.\"\n          operations:\n            - method: GET\n              name: get-terms\n              description: \"Get terms and conditions.\"\n              call: \"factset-terms.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/evaluated-prices\n          name: evaluated-prices\n          description: \"S&P Global evaluated prices.\"\n          operations:\n            - method: GET\n              name: get-evaluated-prices\n              description: \"Get evaluated prices.\"\n              call: \"factset-sp-fi.list\"\n              outputParameters:\n                - type: object\n                  mapping:\

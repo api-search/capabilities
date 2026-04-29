@@ -35,47 +35,47 @@ personas: []
 provider_name: Alaska Airlines
 provider_slug: alaska-air
 search_terms:
-- travel operations
-- real-time flight status, schedules, and airport data
-- get real-time status for a specific flight
-- list flights
-- flight tracking and cargo management for travel operations
-- cargo rate estimation
-- get cargo rate
-- Travel Agent
-- travel
-- get alaska flight status
-- list cargo shipments
-- airlines
-- track cargo shipment
-- book a new cargo shipment
-- get cargo rate estimate
-- mileage plan member management and partner miles
 - book a new alaska air cargo shipment to 115+ destinations worldwide
-- cargo professional booking and tracking alaska air cargo shipments across 115+ domestic and international destinations.
-- aviation
-- cargo
-- get rate estimate for alaska air cargo shipment based on origin, destination, weight, and number of pieces.
-- loyalty
-- list alaska flights
-- travel professional monitoring alaska airlines flight status and delays for customer itinerary management.
-- get real-time status for a specific alaska airlines flight including departure/arrival times, gate, and delay information.
-- get flight status
-- Corporate Travel Manager
-- corporate travel manager tracking employee flights on alaska airlines and managing cargo logistics.
-- book cargo shipment
-- track alaska air cargo shipment by air waybill number with event history
-- alaska airlines
-- real-time flight status
-- list alaska airlines flights by route and date
-- cargo shipment booking and listing
-- track cargo shipment by awb number
-- cargo shipment tracking
 - cargo booking, tracking, and rate management
-- flight status and scheduling
+- airlines
+- book a new cargo shipment
+- track cargo shipment
 - list alaska airlines flights for a specific route and date with real-time status, delays, and gate assignments.
-- flight status
+- track alaska air cargo shipment by air waybill number with event history
+- cargo professional booking and tracking alaska air cargo shipments across 115+ domestic and international destinations.
+- travel operations
+- cargo rate estimation
+- get rate estimate for alaska air cargo shipment based on origin, destination, weight, and number of pieces.
+- alaska airlines
+- travel
+- real-time flight status, schedules, and airport data
+- cargo shipment tracking
+- list cargo shipments
+- book cargo shipment
+- get cargo rate
+- list flights
+- get real-time status for a specific alaska airlines flight including departure/arrival times, gate, and delay information.
+- get alaska flight status
+- Corporate Travel Manager
+- track cargo shipment by awb number
+- cargo
+- corporate travel manager tracking employee flights on alaska airlines and managing cargo logistics.
 - Freight Forwarder
+- flight status and scheduling
+- list alaska flights
+- Travel Agent
+- real-time flight status
+- cargo shipment booking and listing
+- get flight status
+- get cargo rate estimate
+- list alaska airlines flights by route and date
+- flight tracking and cargo management for travel operations
+- flight status
+- mileage plan member management and partner miles
+- travel professional monitoring alaska airlines flight status and delays for customer itinerary management.
+- loyalty
+- get real-time status for a specific flight
+- aviation
 slug: travel-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Alaska Airlines Travel Operations\n  description: >-\n    Workflow capability combining Alaska Airlines Flight Status and Cargo APIs\n    for travel operations management. Enables travel agents, corporate travel\n    managers, and freight forwarders to track flights, monitor cargo shipments,\n    and get rate estimates in a unified interface.\n  tags:\n    - Alaska Airlines\n    - Travel Operations\n    - Aviation\n    - Cargo\n    - Flight Status\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALASKA_API_KEY: ALASKA_API_KEY\n      ALASKA_CARGO_API_KEY: ALASKA_CARGO_API_KEY\n\ncapability:\n  consumes:\n    - import: alaska-flight-status\n      location: ./shared/flight-status-api.yaml\n    - import: alaska-cargo\n      location: ./shared/cargo-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: alaska-travel-ops-api\n      description: Unified REST API\
   \ for Alaska Airlines travel operations.\n      resources:\n        - path: /v1/flights\n          name: flights\n          description: Flight status and scheduling\n          operations:\n            - method: GET\n              name: list-flights\n              description: List Alaska Airlines flights by route and date\n              call: \"alaska-flight-status.list-flights\"\n              with:\n                originAirport: \"rest.originAirport\"\n                destinationAirport: \"rest.destinationAirport\"\n                flightDate: \"rest.flightDate\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flights/{flightNumber}/status\n          name: flight-status\n          description: Real-time flight status\n          operations:\n            - method: GET\n              name: get-flight-status\n              description: Get real-time status for a specific flight\n              call: \"alaska-flight-status.get-flight-status\"\

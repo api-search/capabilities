@@ -28,59 +28,59 @@ personas: []
 provider_name: Bandwidth
 provider_slug: bandwidth
 search_terms:
-- voice call management
-- create e911 endpoint
-- initiate an outbound voice call through bandwidth
-- send an mfa verification code via sms
-- verify mfa code
-- multi-factor authentication via voice or sms
-- e911 endpoint registration and management
-- send mfa code sms
-- initiate an outbound voice call
-- send sms message
-- send an sms or mms message
-- create call
-- list messages
-- verify a multi-factor authentication code
-- list messages sent or received on the account
-- administrator managing bandwidth account, numbers, and compliance
-- list emergency calling (e911) endpoints for the account
-- telephony
-- sms/mms messaging
-- submit a toll-free number for verification
-- outbound and inbound voice call management and recording
-- developer building communication-enabled web or mobile applications
-- search, order, and manage telephone numbers
-- list toll free verifications
-- list e911 endpoints
-- engineer designing and operating telephony and messaging infrastructure
-- Application Developer
-- mfa
-- place an order for phone numbers
-- send an sms or mms message via bandwidth messaging
-- communications
-- sms and mms message delivery and media management
-- retrieve the status and details of a voice call
-- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
-- Communications Engineer
-- order phone numbers
-- cpaas
-- create voice call
 - verify mfa
-- verify an mfa code
-- voice
-- messaging
-- send message
-- list toll-free number verification requests
-- bandwidth
-- sms
-- Platform Administrator
-- search for available phone numbers to order
-- register an endpoint for e911 emergency calling
-- get call status
-- search available phone numbers
-- multi-factor authentication
 - submit toll free verification
+- create voice call
+- initiate an outbound voice call
+- telephony
+- send sms message
+- create e911 endpoint
+- verify a multi-factor authentication code
+- search for available phone numbers to order
+- list toll-free number verification requests
+- messaging
+- send an mfa verification code via sms
+- developer building communication-enabled web or mobile applications
+- send an sms or mms message
+- multi-factor authentication
+- administrator managing bandwidth account, numbers, and compliance
+- verify an mfa code
+- create call
+- initiate an outbound voice call through bandwidth
+- search available phone numbers
+- register an endpoint for e911 emergency calling
+- verify mfa code
+- get call status
+- outbound and inbound voice call management and recording
+- engineer designing and operating telephony and messaging infrastructure
+- list emergency calling (e911) endpoints for the account
+- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
+- list toll free verifications
+- multi-factor authentication via voice or sms
+- retrieve the status and details of a voice call
+- sms/mms messaging
+- bandwidth
+- place an order for phone numbers
+- list e911 endpoints
+- submit a toll-free number for verification
+- search, order, and manage telephone numbers
+- cpaas
+- sms
+- mfa
+- list messages
+- e911 endpoint registration and management
+- Platform Administrator
+- communications
+- list messages sent or received on the account
+- voice call management
+- Application Developer
+- sms and mms message delivery and media management
+- order phone numbers
+- send mfa code sms
+- Communications Engineer
+- send an sms or mms message via bandwidth messaging
+- send message
+- voice
 slug: communications-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bandwidth Communications Platform\"\n  description: >-\n    Unified communications platform workflow covering voice calls, messaging (SMS/MMS),\n    multi-factor authentication, phone number management, emergency calling (E911),\n    and toll-free verification. Serves developers building communication-enabled applications.\n  tags:\n    - Bandwidth\n    - Voice\n    - Messaging\n    - Communications\n    - Telephony\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BANDWIDTH_ACCOUNT_ID: BANDWIDTH_ACCOUNT_ID\n      BANDWIDTH_API_TOKEN: BANDWIDTH_API_TOKEN\n      BANDWIDTH_API_SECRET: BANDWIDTH_API_SECRET\n\ncapability:\n  consumes:\n    - import: bandwidth-voice\n      location: ./shared/voice-api.yaml\n    - import: bandwidth-messaging\n      location: ./shared/messaging-api.yaml\n    - import: bandwidth-mfa\n      location: ./shared/mfa-api.yaml\n    - import: bandwidth-phone-numbers\n\
   \      location: ./shared/phone-numbers-api.yaml\n    - import: bandwidth-emergency\n      location: ./shared/emergency-api.yaml\n    - import: bandwidth-toll-free\n      location: ./shared/toll-free-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: bandwidth-platform-api\n      description: \"Unified REST API for Bandwidth communications platform.\"\n      resources:\n        - path: /v1/calls\n          name: calls\n          description: Voice call management\n          operations:\n            - method: POST\n              name: create-call\n              description: Initiate an outbound voice call\n              call: \"bandwidth-voice.createCall\"\n              with:\n                accountId: \"rest.accountId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: SMS/MMS messaging\n          operations:\n            - method:\

@@ -37,58 +37,58 @@ personas: []
 provider_name: Amazon
 provider_slug: amazon
 search_terms:
-- amazon pay checkout sessions.
-- get amazon marketplace orders with filters by marketplace and date range.
-- Merchant
-- search amazon product catalog.
-- campaign management and performance reporting
-- advertising request report
-- checkout session and payment processing
-- selling partner search catalog
-- e-commerce
-- create a new amazon pay checkout session for payment processing.
-- create checkout session
-- search the amazon product catalog by keywords.
-- create a payment charge via amazon pay.
-- create refund
-- alexa
-- advertising
-- payment refund processing.
 - pay create refund
-- marketplace order management.
-- amazon
-- request an advertising performance report.
-- advertising campaign management.
-- manages product listings, orders, and inventory on amazon marketplace.
-- search catalog
-- advertising create campaign
-- product listings, catalog, and order management
-- payments
+- e-commerce
 - get marketplace orders.
-- creates and optimizes amazon advertising campaigns.
+- create or update a product listing on amazon.
+- Merchant
+- search catalog
 - process a payment refund.
-- advertising list campaigns
-- pay create checkout session
-- get orders
-- Advertiser
 - list amazon advertising campaigns across all campaign types.
-- process a refund for an amazon pay charge.
-- create a checkout session.
-- list campaigns
-- create a new amazon advertising campaign.
-- product catalog search.
-- create campaign
-- marketplace
-- voice
-- Amazon Seller
+- alexa
+- search amazon product catalog.
+- advertising
 - selling partner put listing
 - unified workflow for amazon sellers, advertisers, and merchants covering marketplace listings, orders, advertising campaigns, and payment processing.
-- create or update a product listing on amazon.
-- create an advertising campaign.
-- pay create charge
 - processes payments and refunds via amazon pay.
+- marketplace
+- create an advertising campaign.
+- amazon pay checkout sessions.
+- advertising list campaigns
+- create refund
+- manages product listings, orders, and inventory on amazon marketplace.
+- get orders
+- get amazon marketplace orders with filters by marketplace and date range.
+- Advertiser
+- pay create charge
+- create a new amazon advertising campaign.
 - selling partner get orders
+- product catalog search.
+- product listings, catalog, and order management
+- advertising campaign management.
+- marketplace order management.
 - list advertising campaigns.
+- amazon
+- list campaigns
+- payment refund processing.
+- checkout session and payment processing
+- create a payment charge via amazon pay.
+- create a new amazon pay checkout session for payment processing.
+- pay create checkout session
+- campaign management and performance reporting
+- advertising create campaign
+- creates and optimizes amazon advertising campaigns.
+- create campaign
+- search the amazon product catalog by keywords.
+- advertising request report
+- payments
+- process a refund for an amazon pay charge.
+- selling partner search catalog
+- request an advertising performance report.
+- Amazon Seller
+- create checkout session
+- voice
+- create a checkout session.
 slug: amazon-seller-and-commerce
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Seller and Commerce Workflow\"\n  description: >-\n    Unified workflow for Amazon sellers, advertisers, and merchants to manage\n    marketplace listings and orders, run advertising campaigns, and process\n    payments using Amazon Selling Partner API, Amazon Advertising API, and\n    Amazon Pay API.\n  tags:\n    - Amazon\n    - E-Commerce\n    - Marketplace\n    - Advertising\n    - Payments\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      SP_API_ACCESS_TOKEN: SP_API_ACCESS_TOKEN\n      SP_API_REGION: SP_API_REGION\n      AMAZON_ADS_ACCESS_TOKEN: AMAZON_ADS_ACCESS_TOKEN\n      AMAZON_ADS_CLIENT_ID: AMAZON_ADS_CLIENT_ID\n      AMAZON_PAY_PUBLIC_KEY_ID: AMAZON_PAY_PUBLIC_KEY_ID\n      AMAZON_PAY_PRIVATE_KEY: AMAZON_PAY_PRIVATE_KEY\n      AMAZON_PAY_MERCHANT_ID: AMAZON_PAY_MERCHANT_ID\n\ncapability:\n  consumes:\n    - import: selling-partner\n      location: ./shared/selling-partner-api.yaml\n\
   \    - import: advertising\n      location: ./shared/advertising-api.yaml\n    - import: pay\n      location: ./shared/pay-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: amazon-commerce-api\n      description: \"Unified REST API for Amazon seller, advertising, and payment operations.\"\n      resources:\n        - path: /v1/orders\n          name: orders\n          description: \"Marketplace order management.\"\n          operations:\n            - method: GET\n              name: get-orders\n              description: \"Get marketplace orders.\"\n              call: \"selling-partner.get-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/catalog\n          name: catalog\n          description: \"Product catalog search.\"\n          operations:\n            - method: GET\n              name: search-catalog\n              description: \"Search Amazon product catalog.\"\n        \

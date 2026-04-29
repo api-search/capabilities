@@ -42,46 +42,46 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- create folder
-- search projects
-- organization operations
-- create a project
-- delete a folder
 - resource management
-- list tag keys for resource tagging
-- project management
-- search for projects matching a query
-- get project details
-- api management
-- folder management
-- list folders under a parent
 - infrastructure
+- update project
+- api management
+- create a new google cloud project
+- create a project
+- google cloud
+- list projects
+- delete a folder
+- get folder details
+- create a folder
+- search for projects matching a query
+- delete folder
+- list tag keys for resource tagging
+- delete a google cloud project
 - search organizations
+- create folder
+- list google cloud projects under a parent
+- folder management
+- search projects
+- get organization details
+- list folders under a parent
+- list tag keys
+- get organization
+- delete a project
+- search for organizations
+- cloud computing
+- get project details
 - delete project
 - get folder
-- create a new google cloud project
-- get folder details
-- create project
-- list projects
-- google cloud
-- create a folder
-- get organization details
-- delete a project
-- delete folder
-- update project
-- cloud computing
-- list folders
+- organization operations
+- project management
 - get project
-- create tag key
-- get organization
 - create a new tag key
-- list tag keys
-- search for organizations
-- list google cloud projects under a parent
-- delete a google cloud project
-- platform as a service
 - governance
+- create project
 - single project operations
+- list folders
+- platform as a service
+- create tag key
 - update a project
 slug: resource-hierarchy-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Cloud Platform Resource Hierarchy Management\"\n  description: \"Workflow for managing the Google Cloud resource hierarchy including projects, folders, organizations, and tags. Used by cloud administrators and platform engineers.\"\n  tags:\n    - Google Cloud\n    - Resource Management\n    - Governance\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-resource-manager\n      location: ./shared/cloud-resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gcp-resource-api\n      description: \"Unified REST API for GCP resource hierarchy management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - method: GET\n      \

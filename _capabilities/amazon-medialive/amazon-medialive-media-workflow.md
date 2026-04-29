@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaLive
 provider_slug: amazon-medialive
 search_terms:
-- accept input device transfer
-- developer building media processing applications
-- Media Developer
-- describe schedule
-- batch update schedule
-- batchdelete
-- engineer managing broadcast media workflows
-- acceptinputdevicetransfer
-- amazon medialive media processing workflow
-- list jobs
-- describeschedule
-- aws
-- workflow
-- cancel input device transfer
-- aws media processing and delivery
 - broadcasting
+- accept input device transfer
 - batchstart
-- batch delete
-- Broadcast Engineer
-- media
-- manage media processing jobs
-- cancelinputdevicetransfer
-- media processing
-- batchstop
 - batch start
-- batch stop
-- delete schedule
+- batchstop
+- batchdelete
 - batchupdateschedule
+- cancel input device transfer
+- batch update schedule
+- engineer managing broadcast media workflows
+- list jobs
+- aws media processing and delivery
+- media
+- developer building media processing applications
+- aws
+- media processing
+- acceptinputdevicetransfer
+- Broadcast Engineer
+- batch delete
+- workflow
+- cancelinputdevicetransfer
+- describe schedule
+- delete schedule
+- describeschedule
+- Media Developer
+- amazon medialive media processing workflow
+- batch stop
 - deleteschedule
+- manage media processing jobs
 slug: amazon-medialive-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaLive Workflow\n  description: Workflow capability for Amazon MediaLive media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: medialive\n    location: ./shared/medialive.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: medialive-workflow-api\n    description: Unified REST API for Amazon MediaLive workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: medialive.list-jobs\n        outputParameters:\n        - type:\
   \ object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: medialive-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon MediaLive workflow management.\n    tools:\n    - name: accept-input-device-transfer\n      description: AcceptInputDeviceTransfer\n      hints:\n        readOnly: false\n        openWorld: true\n      call: medialive.accept-input-device-transfer\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-delete\n      description: BatchDelete\n      hints:\n        readOnly: false\n        openWorld: true\n      call: medialive.batch-delete\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-start\n      description: BatchStart\n      hints:\n        readOnly: false\n        openWorld: true\n      call: medialive.batch-start\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-stop\n      description: BatchStop\n     \

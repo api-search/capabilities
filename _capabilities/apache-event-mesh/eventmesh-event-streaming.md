@@ -26,40 +26,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- subscribe to topic
-- Platform Engineer
-- manage event subscriptions
-- apache eventmesh
-- topic management and event publishing via cloudevents
-- serverless
-- manage topics, subscriptions, and publish cloudevents
-- open source
+- list all topics registered in eventmesh
 - publish cloud event
-- create eventmesh topic
-- publish a cloudevent to an eventmesh topic
-- create topic
-- list all eventmesh topics
-- pub-sub, request-reply, and broadcast messaging patterns
-- manage eventmesh topics
-- publish a cloudevent
-- publish events
-- Developer
 - list topics
-- create a new eventmesh topic
-- apache
-- list eventmesh topics
+- pub-sub
+- list all eventmesh topics
+- subscribe to topic
+- create subscription
 - cloudevents
+- messaging
+- manage event subscriptions
+- publish events
 - subscribe to eventmesh topics
+- publish a cloudevent to an eventmesh topic
+- manage topics, subscriptions, and publish cloudevents
+- event-driven
+- serverless
+- Developer
+- pub-sub, request-reply, and broadcast messaging patterns
 - engineers managing the eventmesh cluster and messaging infrastructure
+- manage eventmesh topics
+- list eventmesh topics
+- create eventmesh topic
+- topic management and event publishing via cloudevents
 - application developers building event-driven services on eventmesh
+- publish event
+- apache
+- publish a cloudevent
+- create a new eventmesh topic
 - platform engineering
 - subscribe a consumer to an eventmesh topic
-- list all topics registered in eventmesh
-- messaging
-- publish event
-- create subscription
-- pub-sub
-- event-driven
+- Platform Engineer
+- create topic
+- open source
+- apache eventmesh
 slug: eventmesh-event-streaming
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache EventMesh Event Streaming\"\n  description: \"Unified capability for event-driven architectures using Apache EventMesh — managing topics, subscriptions, and publishing CloudEvents. Designed for platform engineers and developers building distributed event streaming pipelines.\"\n  tags:\n    - Apache EventMesh\n    - Event-Driven\n    - CloudEvents\n    - Messaging\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      EVENTMESH_BASE_URL: EVENTMESH_BASE_URL\ncapability:\n  consumes:\n    - import: eventmesh-admin\n      location: ./shared/eventmesh-admin.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: eventmesh-streaming-api\n      description: \"Unified REST API for Apache EventMesh event streaming.\"\n      resources:\n        - path: /v1/topics\n          name: topics\n          description: Manage EventMesh topics\n        \
   \  operations:\n            - method: GET\n              name: list-topics\n              description: List all EventMesh topics\n              call: \"eventmesh-admin.list-topics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: create-topic\n              description: Create a new EventMesh topic\n              call: \"eventmesh-admin.create-topic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: Manage event subscriptions\n          operations:\n            - method: POST\n              name: create-subscription\n              description: Subscribe to EventMesh topics\n              call: \"eventmesh-admin.create-subscription\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n\

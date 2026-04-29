@@ -9,22 +9,22 @@ personas: []
 provider_name: BigCommerce
 provider_slug: bigcommerce
 search_terms:
+- e-commerce
+- product catalog management including products, variants, and categories
+- manage product catalog including products, categories, and brands
+- retail
+- customer account and address book management
+- checkout
+- payments
+- developer building bigcommerce store integrations and customizations
 - online store owner managing catalog, orders, and customers via api
+- shopping cart and checkout flow management
 - orders
 - order lifecycle management from placement to fulfillment
 - catalog
-- saas
-- shopping cart and checkout flow management
-- manage product catalog including products, categories, and brands
-- developer building bigcommerce store integrations and customizations
-- shipping zone, method, and carrier configuration
-- e-commerce
-- checkout
-- payments
-- customer account and address book management
 - payment method configuration and transaction processing
-- product catalog management including products, variants, and categories
-- retail
+- shipping zone, method, and carrier configuration
+- saas
 slug: catalog-management
 source_yaml: "name: Catalog Management\ndescription: >-\n  Workflow capability for managing BigCommerce product catalogs including\n  products, variants, categories, and brands.\nversion: v1\n\nimports:\n  - shared/bigcommerce.yaml\n\ntools:\n  - name: list-products\n    import: bigcommerce.list-products\n    description: List all products in the BigCommerce catalog with filtering options.\n    inputSchema:\n      type: object\n      properties:\n        limit:\n          type: integer\n          description: Number of products per page\n        page:\n          type: integer\n          description: Page number for pagination\n        keyword:\n          type: string\n          description: Filter products by keyword\n  - name: get-product\n    import: bigcommerce.get-product\n    description: Get a single product by its ID including all variants and images.\n    inputSchema:\n      type: object\n      required:\n        - product_id\n      properties:\n        product_id:\n          type:\
   \ integer\n          description: The product ID to retrieve\n  - name: create-product\n    import: bigcommerce.create-product\n    description: Create a new product in the BigCommerce catalog.\n    inputSchema:\n      type: object\n      required:\n        - name\n        - price\n        - type\n        - weight\n      properties:\n        name:\n          type: string\n          description: Product name\n        price:\n          type: number\n          description: Product price\n        type:\n          type: string\n          description: Product type (physical or digital)\n        sku:\n          type: string\n          description: Stock keeping unit\n  - name: update-product\n    import: bigcommerce.update-product\n    description: Update an existing product's details, price, or inventory.\n    inputSchema:\n      type: object\n      required:\n        - product_id\n      properties:\n        product_id:\n          type: integer\n          description: The product ID to update\n\

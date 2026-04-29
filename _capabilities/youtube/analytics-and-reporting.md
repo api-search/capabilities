@@ -64,64 +64,64 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- list report types
-- remove an item from an analytics group
-- create a new bulk reporting job
-- list reporting jobs
-- list group items
-- add group item
-- list youtube analytics groups
-- delete reporting job
-- streaming
-- query analytics
-- delete job
-- manage bulk reporting jobs
-- query real-time analytics reports
-- get bulk report
-- delete analytics group
-- list generated reports for a job
-- create reporting job
-- update group
-- list jobs
-- update analytics group
-- video
-- manage analytics groups
-- analytics
-- delete group
-- manage items within analytics groups
-- list items in an analytics group
-- get metadata for a specific bulk report
-- social
-- list bulk reports
-- create a reporting job
-- reporting
-- delete a bulk reporting job
-- create an analytics group
-- list groups
-- videos
-- query youtube analytics data with dimensions and metrics
-- delete a reporting job
-- add an item to a group
 - query youtube analytics data
-- create analytics group
-- list analytics groups
-- access generated bulk reports
-- list bulk reporting jobs
-- add an item to an analytics group
-- youtube
-- google
-- media
-- list generated bulk reports for a job
-- metrics
-- create group
+- videos
+- delete analytics group
+- get metadata for a specific bulk report
+- manage analytics groups
+- list groups
 - list available report types
+- list items in an analytics group
+- video
+- manage bulk reporting jobs
+- list bulk reports
+- create a new bulk reporting job
 - remove an item from a group
-- remove group item
-- update an analytics group
-- available report types
-- create job
+- google
 - create an analytics group for organizing data
+- create analytics group
+- social
+- list jobs
+- get bulk report
+- media
+- remove an item from an analytics group
+- list reporting jobs
+- add an item to a group
+- available report types
+- access generated bulk reports
+- add an item to an analytics group
+- manage items within analytics groups
+- list generated bulk reports for a job
+- create an analytics group
+- list youtube analytics groups
+- streaming
+- update group
+- query real-time analytics reports
+- delete a bulk reporting job
+- create group
+- metrics
+- reporting
+- update an analytics group
+- remove group item
+- delete job
+- list generated reports for a job
+- list report types
+- update analytics group
+- create a reporting job
+- query youtube analytics data with dimensions and metrics
+- query analytics
+- create job
+- delete group
+- list group items
+- analytics
+- list bulk reporting jobs
+- create reporting job
+- delete a reporting job
+- youtube
+- add group item
+- list analytics groups
 - delete an analytics group
+- delete reporting job
 slug: analytics-and-reporting
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"YouTube Analytics And Reporting\"\n  description: \"Workflow combining YouTube Analytics and Reporting APIs for comprehensive channel performance monitoring, custom report generation, and bulk data export. Designed for data analysts, marketing teams, and content strategists.\"\n  tags:\n    - YouTube\n    - Analytics\n    - Reporting\n    - Metrics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      YOUTUBE_OAUTH_TOKEN: YOUTUBE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: youtube-analytics\n      location: ./shared/analytics.yaml\n    - import: youtube-reporting\n      location: ./shared/reporting.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: analytics-reporting-api\n      description: \"Unified REST API for YouTube analytics and reporting workflows.\"\n      resources:\n        - path: /v1/reports\n          name: analytics-reports\n      \
   \    description: \"Query real-time analytics reports\"\n          operations:\n            - method: GET\n              name: query-analytics\n              description: \"Query YouTube Analytics data\"\n              call: \"youtube-analytics.query-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: analytics-groups\n          description: \"Manage analytics groups\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List analytics groups\"\n              call: \"youtube-analytics.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create an analytics group\"\n              call: \"youtube-analytics.insert-group\"\n              outputParameters:\n                - type:\

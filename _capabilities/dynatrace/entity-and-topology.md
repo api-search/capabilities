@@ -44,52 +44,52 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- ai operations
-- automation
-- list all entity types
-- application security
-- get entity type
-- developer
-- list monitored entities matching a selector expression
-- query entity events
-- list events for entities
-- get a specific entity type definition
-- observability
-- ingest deployment events
 - infrastructure
-- analytics
-- get entity details including topology relationships
-- cloud monitoring
-- query metric data points for entities
-- list entity types
-- query metric data for entities
-- look up an entity by its display name and type
-- query metric data
-- query monitored entities
-- look up entity by name
-- query metrics for entity performance
-- intelligence
-- lookup entity
-- query entity types
-- topology
-- ingest event
-- ingest a deployment or custom event for an entity
-- get the definition of a specific entity type
-- ingest a deployment or custom event
-- list events affecting entities
-- list all available entity types in the environment
-- list entities
-- list entities matching a selector
-- dynatrace
-- get entity
 - apm
-- get entity details with relationships
-- digital experience management
-- entity management
-- get entity type definition
-- application performance monitoring
-- look up an entity by display name and type
+- intelligence
+- automation
+- list events affecting entities
+- ai operations
+- ingest a deployment or custom event
+- get entity type
 - list events
+- topology
+- developer
+- query metric data
+- query metric data for entities
+- digital experience management
+- list entities matching a selector
+- list entities
+- list events for entities
+- lookup entity
+- query monitored entities
+- list entity types
+- look up entity by name
+- ingest deployment events
+- ingest event
+- look up an entity by its display name and type
+- entity management
+- list all available entity types in the environment
+- application security
+- list monitored entities matching a selector expression
+- ingest a deployment or custom event for an entity
+- query metric data points for entities
+- query entity types
+- dynatrace
+- list all entity types
+- observability
+- get entity
+- get entity type definition
+- analytics
+- application performance monitoring
+- cloud monitoring
+- query entity events
+- get entity details including topology relationships
+- look up an entity by display name and type
+- get the definition of a specific entity type
+- get entity details with relationships
+- query metrics for entity performance
+- get a specific entity type definition
 slug: entity-and-topology
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Entity And Topology\"\n  description: \"Entity discovery and topology mapping workflow combining entities, metrics, and events for developers understanding service dependencies and infrastructure layout.\"\n  tags:\n    - Dynatrace\n    - Entity Management\n    - Topology\n    - Developer\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_API_TOKEN: DYNATRACE_API_TOKEN\n      DYNATRACE_ENVIRONMENT_ID: DYNATRACE_ENVIRONMENT_ID\n\ncapability:\n  consumes:\n    - import: entities-v2\n      location: ./shared/entities-v2.yaml\n    - import: metrics-v2\n      location: ./shared/metrics-v2.yaml\n    - import: events-v2\n      location: ./shared/events-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: entity-topology-api\n      description: \"Unified REST API for Dynatrace entity discovery and topology mapping.\"\n \
   \     resources:\n        - path: /v1/entities\n          name: entities\n          description: \"Query monitored entities\"\n          operations:\n            - method: GET\n              name: list-entities\n              description: \"List entities matching a selector\"\n              call: \"entities-v2.list-entities\"\n              with:\n                entitySelector: \"rest.entitySelector\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                fields: \"rest.fields\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/entities/{entityId}\n          name: entity-detail\n          description: \"Get entity details with relationships\"\n          operations:\n            - method: GET\n              name: get-entity\n              description: \"\

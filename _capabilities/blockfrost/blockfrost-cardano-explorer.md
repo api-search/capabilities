@@ -30,44 +30,44 @@ personas: []
 provider_name: Blockfrost
 provider_slug: blockfrost
 search_terms:
-- analyzes on-chain data including blocks, transactions, and account activity
-- nft
-- get the current cardano epoch information including start time, end time, and protocol parameters.
-- get the latest cardano block
-- get asset
-- NFT Creator
-- blockchain
+- get a specific cardano block by hash or block number.
+- submit a signed cardano transaction (cbor encoded) to the blockchain network.
 - DeFi User
+- builds decentralized applications on cardano using blockchain data and transaction submission
+- NFT Creator
+- get the current cardano epoch information including start time, end time, and protocol parameters.
+- get latest epoch
 - cardano blockchain exploration for developers, dapp builders, and analysts
-- core blockchain data and transaction management
-- get transaction
+- get information about a cardano address including ada balance, utxos, and native asset holdings.
+- Blockchain Analyst
+- submit transaction
+- nft
 - get cardano stake account information including rewards, delegation, and pool information.
-- dapps
-- get address
+- get transaction by hash
+- dApp Developer
+- mints and manages cardano native assets and nft collections
+- web3
 - get block
 - interacts with cardano defi protocols and monitors address and account activity
-- submit transaction
-- mints and manages cardano native assets and nft collections
-- get transaction by hash
-- get stake account information
-- decentralized identity, assets, and governance
-- get latest epoch
-- get details of a specific cardano transaction by its hash, including inputs, outputs, and metadata.
-- builds decentralized applications on cardano using blockchain data and transaction submission
-- get address information
-- get information about a cardano native asset including policy, name, supply, and on-chain metadata.
-- get a specific cardano block by hash or block number.
-- get latest block
-- dApp Developer
-- submit a signed cardano transaction (cbor encoded) to the blockchain network.
-- get account
-- get information about a cardano address including ada balance, utxos, and native asset holdings.
-- cryptocurrency
-- web3
+- get address
 - get native asset information
-- cardano
-- Blockchain Analyst
+- core blockchain data and transaction management
+- get the latest cardano block
+- get account
 - get the latest block on the cardano mainnet blockchain with slot, epoch, and transaction count information.
+- cryptocurrency
+- get details of a specific cardano transaction by its hash, including inputs, outputs, and metadata.
+- decentralized identity, assets, and governance
+- analyzes on-chain data including blocks, transactions, and account activity
+- cardano
+- get information about a cardano native asset including policy, name, supply, and on-chain metadata.
+- get transaction
+- get latest block
+- dapps
+- get stake account information
+- blockchain
+- get asset
+- get address information
 slug: blockfrost-cardano-explorer
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Blockfrost Cardano Explorer\n  description: >-\n    Workflow capability for Cardano blockchain exploration and dApp integration using the Blockfrost API.\n    Enables developers, analysts, and dApp builders to query blocks, transactions, accounts,\n    addresses, native assets, and epochs on the Cardano mainnet.\n  tags:\n    - Blockchain\n    - Cardano\n    - Cryptocurrency\n    - DApps\n    - NFT\n    - Web3\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOCKFROST_PROJECT_ID: BLOCKFROST_PROJECT_ID\n\ncapability:\n  consumes:\n    - import: blockfrost\n      location: ./shared/blockfrost-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: blockfrost-cardano-explorer-api\n      description: Unified REST API for Cardano blockchain exploration.\n      resources:\n        - path: /v1/blocks/latest\n          name: latest-block\n          operations:\n\
   \            - method: GET\n              name: get-latest-block\n              description: Get the latest Cardano block\n              call: \"blockfrost.get-latest-block\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transactions/{hash}\n          name: transactions\n          operations:\n            - method: GET\n              name: get-transaction\n              description: Get transaction by hash\n              call: \"blockfrost.get-transaction\"\n              with:\n                hash: \"rest.hash\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts/{stake_address}\n          name: accounts\n          operations:\n            - method: GET\n              name: get-account\n              description: Get stake account information\n              call: \"blockfrost.get-account\"\n              with:\n                stake_address:\

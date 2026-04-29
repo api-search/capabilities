@@ -63,102 +63,102 @@ personas: []
 provider_name: Square
 provider_slug: square
 search_terms:
-- create payment link
-- create order
-- webhooks
-- list invoices.
-- upsert catalog object
-- cancel a payment.
-- list catalog
-- retrieve inventory counts.
-- manage refunds.
-- create refund
-- gift cards
-- terminal
-- create a subscription.
-- create invoice
-- list refunds.
-- list payments.
-- refund a payment.
-- checkout
-- labor
-- create or update a catalog object.
-- list payment disputes.
-- create payment
-- complete a payment.
-- manage a specific order.
-- get payment
-- get order details.
-- square
-- apply inventory adjustments.
-- list refunds
-- get invoice
-- batch change inventory
-- get details for a specific payment.
-- cancel payment
-- create a new order.
-- retrieve an order by id.
-- get order
-- team
-- refunds
-- search subscriptions.
-- create a payment link.
-- accept dispute
-- manage a specific payment.
-- locations
-- catalog
-- invoicing
-- search catalog objects
-- complete payment
-- financial technology
-- subscriptions
-- manage payments.
-- list payments
-- manage payment links.
-- search orders
-- search all orders.
-- manage subscriptions.
-- list catalog objects.
-- customers
-- create an order.
-- manage invoices.
-- loyalty
-- get a single catalog object.
-- get catalog object
-- manage orders.
-- create a draft invoice.
 - list invoices
-- create subscription
-- list payment refunds.
-- get dispute
-- search subscriptions
-- retail
-- bookings
-- get an invoice.
 - get payment details.
-- manage catalog items.
+- create a subscription.
+- get catalog object
+- list catalog
+- manage a specific order.
+- list payments.
+- accept dispute
+- labor
+- retrieve inventory counts.
+- get order details.
+- search catalog objects
+- batch change inventory
+- manage a specific payment.
+- apply inventory adjustments.
+- gift cards
+- list catalog objects.
+- list invoices for a location.
+- checkout
+- list invoices.
+- orders
+- retrieve an order by id.
+- complete a payment.
+- manage orders.
+- search orders
+- search subscriptions
+- square
+- list payments taken by the account.
+- list payment disputes.
+- get invoice
+- refund payment
+- manage payments.
+- upsert catalog object
+- webhooks
+- search all orders.
+- search subscriptions.
+- complete payment
+- manage payment links.
+- retail
+- list refunds
+- create a new order.
+- get order
+- create a checkout payment link.
+- search catalog objects.
+- invoicing
+- create subscription
+- list disputes.
+- subscriptions
+- accept a dispute.
 - list disputes
 - ecommerce
+- financial technology
+- catalog
+- get details for a specific payment.
 - disputes
-- accept a dispute.
-- list disputes.
-- list payment links
-- commerce
-- batch retrieve inventory counts
-- inventory
-- create a payment.
-- payments
-- list payment links.
-- point of sale
-- list payments taken by the account.
-- get dispute details.
+- list payments
+- get a single catalog object.
 - manage disputes.
-- list invoices for a location.
 - merchants
-- orders
-- refund payment
-- search catalog objects.
-- create a checkout payment link.
+- list refunds.
+- create an order.
+- get dispute details.
+- inventory
+- payments
+- loyalty
+- get dispute
+- create payment
+- create a payment link.
+- list payment links
+- create order
+- create a draft invoice.
+- cancel a payment.
+- terminal
+- create refund
+- locations
+- create invoice
+- create or update a catalog object.
+- customers
+- point of sale
+- refund a payment.
+- refunds
+- manage catalog items.
+- manage refunds.
+- commerce
+- cancel payment
+- bookings
+- team
+- batch retrieve inventory counts
+- get payment
+- create a payment.
+- manage subscriptions.
+- get an invoice.
+- manage invoices.
+- list payment refunds.
+- create payment link
+- list payment links.
 slug: commerce-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Square Commerce Operations\"\n  description: \"Unified workflow for commerce operations combining payments, orders, catalog, inventory, checkout, invoicing, subscriptions, and refunds. Used by commerce developers and business operators to manage the full sales lifecycle.\"\n  tags:\n    - Square\n    - Commerce\n    - Payments\n    - Orders\n    - Catalog\n    - Inventory\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SQUARE_ACCESS_TOKEN: SQUARE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: square\n      location: ./shared/square-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: square-commerce-api\n      description: \"Unified REST API for Square commerce operations.\"\n      resources:\n        - path: /v1/payments\n          name: payments\n          description: \"Manage payments.\"\n          operations:\n            - method: GET\n\
   \              name: list-payments\n              description: \"List payments.\"\n              call: \"square.list-payments\"\n              with:\n                begin_time: \"rest.begin_time\"\n                end_time: \"rest.end_time\"\n                location_id: \"rest.location_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-payment\n              description: \"Create a payment.\"\n              call: \"square.create-payment\"\n              with:\n                source_id: \"rest.source_id\"\n                idempotency_key: \"rest.idempotency_key\"\n                amount_money: \"rest.amount_money\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/payments/{payment_id}\n          name: payment\n          description: \"Manage a specific payment.\"\n          operations:\n            - method:\

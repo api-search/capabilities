@@ -26,38 +26,38 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- trading
-- get events
-- list support issues.
-- refresh ib office data.
-- get marketplace
-- get private markets
-- event calendar.
-- refresh ib office
 - get security models
-- get partner docs
-- manage users
-- financial
-- get event calendar.
-- list events.
-- get security models.
-- factset
-- list trading resources.
-- manage user provisioning.
-- portfolio analytics
-- get partner documents.
-- get open marketplace.
-- trading operations.
-- investment analytics
-- market data
-- administration
-- get private markets data.
+- refresh ib office
 - financial data
-- list issues
-- research
-- operations
-- list trading
+- get private markets
 - list events
+- list trading
+- operations
+- list trading resources.
+- trading
+- financial
+- list support issues.
+- get events
+- factset
+- list events.
+- market data
+- get marketplace
+- get partner docs
+- research
+- trading operations.
+- get event calendar.
+- administration
+- get open marketplace.
+- manage users
+- manage user provisioning.
+- refresh ib office data.
+- get partner documents.
+- portfolio analytics
+- investment analytics
+- get security models.
+- list issues
+- event calendar.
+- get private markets data.
 slug: trading-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Trading and Operations\"\n  description: \"Unified workflow for trading and operations including order management, private markets, event calendars, security modeling, and user provisioning. Used by operations teams.\"\n  tags:\n    - FactSet\n    - Trading\n    - Operations\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-trading\n      location: ./shared/trading.yaml\n    - import: factset-private\n      location: ./shared/private-markets.yaml\n    - import: factset-events\n      location: ./shared/event-calendar.yaml\n    - import: factset-sec-model\n      location: ./shared/security-modeling.yaml\n    - import: factset-issues\n      location: ./shared/issue-tracker.yaml\n    - import: factset-scim\n      location: ./shared/procure-to-pay-api-scim.yaml\n\
   \    - import: factset-ib\n      location: ./shared/investment-banking-office-refresh.yaml\n    - import: factset-marketplace\n      location: ./shared/open-marketplace.yaml\n    - import: factset-partners\n      location: ./shared/open-partners-documents.yaml\n\n  exposes:\n    - type: rest\n      port: 8091\n      namespace: trading-ops-api\n      description: \"Unified REST API for trading and operations.\"\n      resources:\n        - path: /v1/trading\n          name: trading\n          description: \"Trading operations.\"\n          operations:\n            - method: GET\n              name: list-trading\n              description: \"List trading resources.\"\n              call: \"factset-trading.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Event calendar.\"\n          operations:\n            - method: GET\n              name: list-events\n\

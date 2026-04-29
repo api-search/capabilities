@@ -103,177 +103,177 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- network security engineer
+- digital experience monitoring, log management, and best practice assessment.
+- get dns network statistics for a given time range.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- submit a file for wildfire malware analysis.
 - cloud security
-- download a packet capture for a file hash from wildfire.
-- get the wildfire analysis report for a file hash.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- get the history of a specific threat signature by id and type from threat vault.
-- sase
-- designs and implements network security architectures and policies.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- get a security advisory by its cve identifier.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- get a specific security advisory by id.
 - download pcap
-- soc analyst
-- sre
-- network security
-- data loss prevention, saas security monitoring, and identity security posture.
-- get threat vault usage statistics.
-- get advisory
-- download packet captures from atp reports in threat vault.
-- bulk lookup domains
-- get security advisory
-- manages enterprise browser policies and secure browsing configurations.
-- get verdicts for multiple file hashes (max 500).
-- get a security advisory by cve identifier.
-- manages service accounts, roles, and access policies for platform api access.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- get packet capture for a file hash.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- manages multi-tenant security operations at scale for managed service providers.
-- products affected by security advisories.
-- get wildfire analysis reports.
-- conducts automated adversarial testing against ai systems and llm applications.
-- proactively searches for threats and iocs across telemetry data.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- vulnerability management
-- get wildfire verdicts for multiple file hashes.
-- get details of a specific palo alto networks security advisory by id.
-- sd wan operator
-- get the history of a specific threat by id and type.
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- data protection analyst
-- analyzes suspicious files and samples for malware characteristics.
-- submit a url for wildfire analysis.
-- compliance officer
-- xdr
-- network architect
-- incident responder
-- investigates security incidents, triages alerts, and coordinates response actions.
-- list security advisories with optional filtering by severity and affected product.
-- threat intel analyst
-- list palo alto networks security advisories with optional filtering by severity and affected product.
-- ai runtime security scanning and automated red teaming for ai applications.
-- list security advisories
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- get wildfire verdicts for multiple file hashes (max 500).
+- get the history of a specific threat signature by id and type from threat vault.
 - get atp reports
-- get threat intelligence for a specific domain.
-- investigates dlp incidents and manages sensitive data protection policies.
-- get threat intelligence for multiple domains.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- get advanced threat prevention reports.
-- malware researcher
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- threat intel analyst
+- get the verdict for a file hash.
+- query domain threat intelligence from dns security.
+- get threat vault stats
+- monitors network health, performance, and digital experience metrics.
+- get release notes
+- executes containment, eradication, and recovery actions during security incidents.
+- submit link for analysis
+- get a palo alto networks security advisory by its cve identifier.
+- get threat history
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- get wildfire analysis reports.
+- get dns stats
+- download atp pcaps
+- get the wildfire verdict for a file hash.
+- proactively searches for threats and iocs across telemetry data.
+- palo alto networks
+- compliance team
+- soar
+- get domain bulk
+- get advisory by cve
+- get dns threat intelligence for a specific domain.
+- threat intelligence
+- get advanced threat prevention reports from threat vault.
+- mssp operator
+- ioc research
+- get release notes for threat content updates from threat vault.
+- submit a file for wildfire analysis.
+- search threat signatures by type, id, sha256, name, cve, or date range.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- submit a link for wildfire analysis.
+- manages logging infrastructure, integrations, and platform automation.
+- conducts automated adversarial testing against ai systems and llm applications.
+- list all products affected by security advisories.
+- get release notes for threat content updates.
+- platform engineer
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- get details of a specific security advisory by id.
+- analyzes suspicious files and samples for malware characteristics.
+- cloud security posture management, compliance monitoring, and workload protection.
+- get bulk verdicts
+- submit file
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- dns network statistics.
 - threat vault api usage statistics.
 - content release notes for threat updates.
-- download a sample file by hash.
-- cloud security engineer
-- secures ai applications with runtime scanning and vulnerability assessment.
-- threat intelligence
-- cloud security posture management, compliance monitoring, and workload protection.
-- get dns threat intelligence for a specific domain.
-- get a palo alto networks security advisory by its cve identifier.
-- get atp report pcaps
-- palo alto networks security advisories.
-- list affected products
-- iam admin
-- get release notes
-- saas security admin
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- get analysis pcap
-- manage enterprise browser policies, user sessions, and deployments.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- submit file
-- submit url for analysis
-- get threat history
-- list all palo alto networks products affected by security advisories.
-- advanced threat prevention reports.
-- tenant operator
-- get verdict
-- get domain bulk
-- enterprise it
-- monitors network health, performance, and digital experience metrics.
+- get wildfire verdicts for multiple file hashes.
+- download packet captures from atp reports in threat vault.
+- get threat intelligence for a specific domain.
 - search for threats by type, id, sha256, name, cve, or date range.
-- get analysis report
-- download atp pcap files.
-- lookup domain
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- get packet captures from atp reports.
-- search for threat signatures by type, id, sha256, name, cve, or date range in threat vault.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- identity and access management, tenant hierarchies, and subscription management.
-- get advanced threat prevention reports from threat vault.
+- compliance officer
+- list affected products
 - ai security engineer
-- palo alto networks
-- bulk query domain threat intelligence.
-- download a malware sample file by hash from wildfire.
-- vulnerability manager
-- subscription manager
-- browser security admin
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- get packet captures from wildfire analysis.
-- get domain
-- get signature history for a specific threat.
-- download sample
-- submit a file for wildfire analysis.
-- list advisories
-- submit a url for wildfire malware analysis.
-- list all products affected by security advisories.
-- firewall admin
-- get details of a specific security advisory by id.
-- get dns network stats
-- get the verdict for a file hash.
-- get release notes for threat content updates.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- query domain threat intelligence from dns security.
-- network operations
+- get advanced threat prevention reports.
 - designs sase and sd-wan network architectures for secure remote access.
-- submit a link for wildfire analysis.
-- submit url
-- submit link for analysis
-- get dns network statistics for a given time range.
-- download a malware sample from wildfire.
-- get threats
-- submit a file for wildfire malware analysis.
-- search threat signatures
-- get release notes for threat content updates from threat vault.
-- get the analysis report for a file hash.
-- digital experience monitoring, log management, and best practice assessment.
-- get the wildfire verdict for a file hash.
-- threat hunter
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- soar
-- search threat signatures by type, id, sha256, name, cve, or date range.
-- sase admin
-- get threat vault api usage statistics.
-- submit file for analysis
-- red team operator
-- ioc research
-- get advisory by cve
-- submit link
-- get bulk verdicts
-- get wildfire verdicts for file hashes.
-- get dns stats
-- platform engineer
-- manages logging infrastructure, integrations, and platform automation.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- firewall
-- executes containment, eradication, and recovery actions during security incidents.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- enterprise browser policy management and secure browsing.
-- dns network statistics.
-- get threat vault stats
-- submit a link for wildfire malware analysis.
-- get dns threat intelligence for multiple domains in bulk.
-- compliance team
 - malware analysis
-- download atp pcaps
-- mssp operator
+- submit a link for wildfire malware analysis.
+- network operations
+- incident responder
+- xdr
+- download a sample file by hash.
+- palo alto networks security advisories.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- submit url for analysis
+- get a specific security advisory by id.
+- tenant operator
+- get a security advisory by cve identifier.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- get threat vault api usage statistics.
+- red team operator
+- search threat signatures
+- list security advisories
+- get domain
+- advanced threat prevention reports.
+- designs and implements network security architectures and policies.
+- get dns threat intelligence for multiple domains in bulk.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- get threats
+- get packet captures from atp reports.
+- get analysis report
+- get verdict
+- get advisory
+- iam admin
+- ai runtime security scanning and automated red teaming for ai applications.
+- submit a url for wildfire malware analysis.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- get threat intelligence for multiple domains.
+- sase
+- download atp pcap files.
+- get a security advisory by its cve identifier.
+- products affected by security advisories.
+- bulk query domain threat intelligence.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- get packet captures from wildfire analysis.
+- network security
+- enterprise browser policy management and secure browsing.
+- submit file for analysis
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- manages service accounts, roles, and access policies for platform api access.
+- identity and access management, tenant hierarchies, and subscription management.
+- bulk lookup domains
+- data loss prevention, saas security monitoring, and identity security posture.
+- list security advisories with optional filtering by severity and affected product.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- saas security admin
+- download a packet capture for a file hash from wildfire.
+- search for threat signatures by type, id, sha256, name, cve, or date range in threat vault.
+- cloud security engineer
+- subscription manager
+- get atp report pcaps
+- list all palo alto networks products affected by security advisories.
+- cybersecurity
+- get the wildfire analysis report for a file hash.
+- get signature history for a specific threat.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- get analysis pcap
+- malware researcher
+- submit url
+- get security advisory
+- get threat vault usage statistics.
+- get dns network stats
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- manages multi-tenant security operations at scale for managed service providers.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- firewall
+- browser security admin
+- submit link
+- soc analyst
+- network security engineer
+- get details of a specific palo alto networks security advisory by id.
+- manages enterprise browser policies and secure browsing configurations.
+- list palo alto networks security advisories with optional filtering by severity and affected product.
+- sd wan operator
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- enterprise it
+- network architect
+- get wildfire verdicts for multiple file hashes (max 500).
+- lookup domain
+- vulnerability manager
+- download a malware sample file by hash from wildfire.
+- vulnerability management
+- get verdicts for multiple file hashes (max 500).
+- manage enterprise browser policies, user sessions, and deployments.
+- threat hunter
+- download a malware sample from wildfire.
+- list advisories
+- investigates dlp incidents and manages sensitive data protection policies.
+- firewall admin
+- get wildfire verdicts for file hashes.
+- sase admin
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- download sample
+- get packet capture for a file hash.
+- submit a url for wildfire analysis.
+- data protection analyst
+- get the history of a specific threat by id and type.
+- sre
+- get the analysis report for a file hash.
 slug: threat-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Threat Intelligence\"\n  description: \"Unified threat intelligence capability for researching IOCs, submitting malware samples, analyzing DNS threats, and tracking security advisories across Threat Vault, WildFire, DNS Security, and Security Advisories.\"\n  tags:\n    - Palo Alto Networks\n    - Threat Intelligence\n    - Malware Analysis\n    - IOC Research\n    - Vulnerability Management\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      THREAT_VAULT_API_KEY: THREAT_VAULT_API_KEY\n      WILDFIRE_API_KEY: WILDFIRE_API_KEY\n      DNS_SECURITY_API_KEY: DNS_SECURITY_API_KEY\n\ncapability:\n  consumes:\n    - import: threat-vault\n      location: ./shared/threat-vault.yaml\n    - import: wildfire\n      location: ./shared/wildfire.yaml\n    - import: dns-security\n      location: ./shared/dns-security.yaml\n    - import: security-advisory\n      location: ./shared/security-advisory.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8081\n      namespace: threat-intel-api\n      description: \"Unified REST API for threat intelligence research.\"\n      resources:\n\n        # ── Threat Signatures (Threat Vault) ──────────────────────────────\n        - path: /v1/threats\n          name: threats\n          description: \"Search threat signatures by type, ID, SHA256, name, CVE, or date range.\"\n          operations:\n            - method: GET\n              name: get-threats\n              description: \"Search for threats by type, ID, SHA256, name, CVE, or date range.\"\n              inputParameters:\n                - name: type\n                  in: query\n                  type: string\n                  required: false\n                - name: id\n                  in: query\n                  type: string\n                  required: false\n                - name: sha256\n                  in: query\n                  type: string\n                  required: false\n\
@@ -308,13 +308,7 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks 
   \              type: string\n              required: true\n          call: \"wildfire.submit-link\"\n          with:\n            apikey: \"tools.apikey\"\n            link: \"tools.link\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-verdict\n          description: \"Get the WildFire verdict for a file hash.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n          call: \"wildfire.get-verdict\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-bulk-verdicts\n          description: \"Get WildFire\
   \ verdicts for multiple file hashes (max 500).\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: object\n              required: true\n          call: \"wildfire.get-bulk-verdicts\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-analysis-report\n          description: \"Get the WildFire analysis report for a file hash.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n\
   \              type: string\n              required: true\n            - name: format\n              type: string\n              required: false\n          call: \"wildfire.get-report\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n            format: \"tools.format\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: download-sample\n          description: \"Download a malware sample file by hash from WildFire.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n          call: \"wildfire.get-sample\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: download-pcap\n          description: \"Download a packet capture for a file hash from WildFire.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: apikey\n              type: string\n              required: true\n            - name: hash\n              type: string\n              required: true\n            - name: platform\n              type: string\n              required: false\n          call: \"wildfire.get-pcap\"\n          with:\n            apikey: \"tools.apikey\"\n            hash: \"tools.hash\"\n            platform: \"tools.platform\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── DNS Threat Intelligence ───────────────────────────────────────\n        - name: lookup-domain\n          description: \"Get\
-  \ DNS threat intelligence for a specific domain.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: domain\n              type: string\n              description: \"The domain name to query.\"\n              required: true\n            - name: stime\n              type: string\n              description: \"Start time for the query range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the query range.\"\n              required: false\n          call: \"dns-security.get-domain\"\n          with:\n            domain: \"tools.domain\"\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: bulk-lookup-domains\n          description: \"Get DNS threat intelligence\
-  \ for multiple domains in bulk.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: domains\n              type: string\n              description: \"Comma-separated list of domain names to query.\"\n              required: true\n            - name: stime\n              type: string\n              description: \"Start time for the query range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the query range.\"\n              required: false\n          call: \"dns-security.get-domain-bulk\"\n          with:\n            domains: \"tools.domains\"\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dns-network-stats\n          description: \"Get\
-  \ DNS network statistics for a given time range.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: stime\n              type: string\n              description: \"Start time for the statistics range.\"\n              required: false\n            - name: etime\n              type: string\n              description: \"End time for the statistics range.\"\n              required: false\n          call: \"dns-security.get-network-stats\"\n          with:\n            stime: \"tools.stime\"\n            etime: \"tools.etime\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Vulnerability Advisories ──────────────────────────────────────\n        - name: list-security-advisories\n          description: \"List Palo Alto Networks security advisories with optional filtering by severity and affected product.\"\
-  \n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: severity\n              type: string\n              required: false\n            - name: affected_product\n              type: string\n              required: false\n            - name: sort\n              type: string\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: offset\n              type: integer\n              required: false\n          call: \"security-advisory.list-advisories\"\n          with:\n            severity: \"tools.severity\"\n            affected_product: \"tools.affected_product\"\n            sort: \"tools.sort\"\n            limit: \"tools.limit\"\n            offset: \"tools.offset\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-security-advisory\n\
-  \          description: \"Get details of a specific Palo Alto Networks security advisory by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: advisory_id\n              type: string\n              required: true\n          call: \"security-advisory.get-advisory\"\n          with:\n            advisory_id: \"tools.advisory_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-advisory-by-cve\n          description: \"Get a Palo Alto Networks security advisory by its CVE identifier.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: cve_id\n              type: string\n              required: true\n          call: \"security-advisory.get-advisory-by-cve\"\
-  \n          with:\n            cve_id: \"tools.cve_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-affected-products\n          description: \"List all Palo Alto Networks products affected by security advisories.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters: []\n          call: \"security-advisory.list-affected-products\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n"
+  \            - type: object\n              mapping: \"$.\"\n\n        - name: download-pcap\n          descri\n\n# --- truncated at 32 KB (38 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/threat-intelligence.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/threat-intelligence.yaml
 tags:
 - Palo Alto Networks

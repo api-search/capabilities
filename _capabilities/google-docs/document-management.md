@@ -23,26 +23,26 @@ personas: []
 provider_name: Google Docs
 provider_slug: google-docs
 search_terms:
-- automation
-- document retrieval and updates.
-- word processing
+- apply batch updates to insert, replace, or delete content in a document.
 - google docs
-- get document
+- automation
 - google workspace
-- create a new document.
-- create document
-- document batch updates.
-- batch update document
+- word processing
 - get a document by id.
+- apply batch updates to a document.
+- document retrieval and updates.
+- create document
+- create a new document.
+- productivity
+- collaboration
 - create a new google docs document with a title.
 - retrieve a google docs document by its id.
-- apply batch updates to insert, replace, or delete content in a document.
-- collaboration
-- productivity
-- document management
-- apply batch updates to a document.
+- batch update document
 - documents
+- document management
 - document creation.
+- get document
+- document batch updates.
 slug: document-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Docs Document Management\"\n  description: \"Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting, and template automation. Used by developers automating document workflows.\"\n  tags:\n    - Google Docs\n    - Document Management\n    - Google Workspace\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: docs-api\n      location: ./shared/docs-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: docs-management-api\n      description: \"Unified REST API for Google Docs document management.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          description: \"Document creation.\"\n          operations:\n            - method: POST\n              name: create-document\n\
   \              description: \"Create a new document.\"\n              call: \"docs-api.create-document\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{id}\n          name: document-details\n          description: \"Document retrieval and updates.\"\n          operations:\n            - method: GET\n              name: get-document\n              description: \"Get a document by ID.\"\n              call: \"docs-api.get-document\"\n              with:\n                documentId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{id}/batch-update\n          name: document-updates\n          description: \"Document batch updates.\"\n          operations:\n            - method: POST\n              name: batch-update-document\n              description: \"Apply batch updates to a document.\"\n              call: \"\

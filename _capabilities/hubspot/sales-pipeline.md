@@ -68,77 +68,77 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list email engagements
-- list meetings
-- list meeting engagements
-- individual contact
-- task engagements
-- update contact
-- content
-- individual deal
-- create call
-- update deal
-- list crm lists for segmentation
-- search crm objects
-- create company
-- list calls
-- get company
-- create a new deal
-- create a new contact
-- commerce
-- contact management
-- create a note engagement
-- create a task engagement
-- analytics
-- company management
-- crm
-- log a meeting engagement
-- create deal
-- customer service
-- hubspot
-- get deal
-- create email engagement
-- search deals with filters
-- email marketing
-- get a company by id
-- list note engagements
-- search any crm object type
-- pipeline
-- list call engagements
-- create meeting
-- list all companies
-- search contacts with filters
-- create contact
-- list deals
 - call engagements
-- get a contact by id
-- search contacts
-- list all deals
-- update a contact
-- log an email engagement
-- create task
-- list contacts
-- list task engagements
-- get a deal by id
-- create a new company
-- list crm lists
-- update a deal
-- engagements
-- search companies with filters
-- search deals
-- log a call engagement
-- marketing
-- marketing automation
-- list notes
-- deal management
-- search companies
-- create note
 - list all crm contacts
+- create meeting
+- get a deal by id
+- create a new contact
+- company management
+- create email engagement
 - list tasks
-- sales
+- create a new company
+- list meeting engagements
+- marketing
+- update a contact
+- list meetings
+- individual deal
+- list note engagements
+- list deals
+- engagements
 - operations
-- list companies
+- get a company by id
+- list crm lists
+- create a new deal
+- get a contact by id
+- list email engagements
+- list contacts
+- content
+- get deal
+- log a call engagement
+- list notes
+- list call engagements
+- create call
+- search crm objects
+- log an email engagement
+- email marketing
+- search deals with filters
+- list crm lists for segmentation
+- create contact
+- update contact
+- log a meeting engagement
+- create a task engagement
+- crm
+- update deal
+- search contacts with filters
+- list task engagements
+- marketing automation
+- deal management
 - get contact
+- search companies with filters
+- commerce
+- individual contact
+- list all companies
+- task engagements
+- customer service
+- pipeline
+- sales
+- update a deal
+- create task
+- get company
+- search any crm object type
+- create deal
+- hubspot
+- create note
+- list calls
+- analytics
+- create company
+- list companies
+- search companies
+- search deals
+- list all deals
+- create a note engagement
+- contact management
+- search contacts
 slug: sales-pipeline
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Sales Pipeline\"\n  description: \"Unified workflow for sales reps to manage contacts, companies, deals, engagement activities (calls, emails, meetings, notes, tasks), lists, and CRM search. Combines core CRM and engagement APIs for end-to-end sales operations.\"\n  tags:\n    - HubSpot\n    - Sales\n    - CRM\n    - Pipeline\n    - Engagements\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: crm-contacts\n      location: ./shared/crm-contacts.yaml\n    - import: crm-companies\n      location: ./shared/crm-companies.yaml\n    - import: crm-deals\n      location: ./shared/crm-deals.yaml\n    - import: crm-lists\n      location: ./shared/crm-lists.yaml\n    - import: crm-search\n      location: ./shared/crm-search.yaml\n    - import: engagement-calls\n      location: ./shared/engagement-calls.yaml\n\
   \    - import: engagement-emails\n      location: ./shared/engagement-emails.yaml\n    - import: engagement-meetings\n      location: ./shared/engagement-meetings.yaml\n    - import: engagement-notes\n      location: ./shared/engagement-notes.yaml\n    - import: engagement-tasks\n      location: ./shared/engagement-tasks.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: sales-pipeline-api\n      description: \"Unified REST API for sales pipeline management, contact outreach, and deal tracking.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"Contact management\"\n          operations:\n            - { method: GET, name: list-contacts, description: \"List contacts\", call: \"crm-contacts.list-contacts\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-contact, description: \"Create contact\", call: \"crm-contacts.create-contact\", outputParameters: [{ type: object,\

@@ -51,56 +51,56 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- get container
-- website embedding of instagram content.
-- get content publishing limit
-- get media children
-- publish media
-- instagram
-- check the publishing status of a media container.
-- get current content publishing usage and rate limit status.
-- photos
-- content publishing and media management.
-- get a collection of story ig media objects on the account.
-- delete an instagram media object (post, story, reel, or carousel).
-- get fields on an instagram photo, video, story, reel, or album.
-- publishes and manages content across instagram accounts.
-- comments, mentions, and community interaction.
-- enable or disable comments on a media object.
-- meta
-- create a media container for publishing content.
-- get fields on an instagram media object.
-- instagram direct messaging.
-- create media container
-- tracks content performance and audience insights.
-- update media
-- user stories collection.
-- videos
-- publish a media container.
-- embeds instagram content on websites and applications.
-- publishing
-- carousel album children.
-- insights and performance metrics.
-- get media
-- manages instagram direct conversations for business inquiries.
-- user media collection and container creation.
-- get user stories
-- content publishing rate limit.
-- container status check.
-- publish a media container. step 2 of the publishing flow.
-- create a media container for publishing content. step 1 of the publishing flow.
-- individual media object operations.
-- content publishing
-- social media
-- content management
-- delete media
-- get media objects within a carousel album.
-- monitors mentions, comments, and brand sentiment on instagram.
-- media
 - creates and publishes photos, videos, reels, and stories.
+- videos
+- publish media
+- get media objects within a carousel album.
+- content publishing rate limit.
+- embeds instagram content on websites and applications.
+- get fields on an instagram media object.
+- get container
+- monitors mentions, comments, and brand sentiment on instagram.
 - get user media
+- check the publishing status of a media container.
+- publishes and manages content across instagram accounts.
+- user media collection and container creation.
+- media
+- update media
+- meta
+- get a collection of story ig media objects on the account.
+- individual media object operations.
+- get media children
+- publishing
+- user stories collection.
+- get content publishing limit
+- create media container
+- publish a media container.
 - delete an instagram media object.
+- content publishing and media management.
+- get current content publishing usage and rate limit status.
+- get user stories
+- container status check.
+- delete media
+- get fields on an instagram photo, video, story, reel, or album.
+- content publishing
+- manages instagram direct conversations for business inquiries.
+- tracks content performance and audience insights.
+- delete an instagram media object (post, story, reel, or carousel).
+- create a media container for publishing content.
 - get a collection of ig media objects published on the account.
+- website embedding of instagram content.
+- instagram direct messaging.
+- create a media container for publishing content. step 1 of the publishing flow.
+- social media
+- insights and performance metrics.
+- enable or disable comments on a media object.
+- publish a media container. step 2 of the publishing flow.
+- comments, mentions, and community interaction.
+- carousel album children.
+- photos
+- instagram
+- content management
+- get media
 slug: content-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Content Management\"\n  description: >-\n    Unified workflow for managing Instagram content including media browsing,\n    publishing (container creation and publish), stories, carousel albums, and\n    media updates. Used by social media managers and content creators to create,\n    review, update, and delete Instagram posts, reels, stories, and carousels.\n  tags:\n    - Instagram\n    - Content Management\n    - Social Media\n    - Publishing\n    - Media\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: instagram-content-api\n      description: \"Unified REST API for Instagram content management workflows.\"\n      resources:\n        - path:\
   \ /v1/users/{user_id}/media\n          name: user-media\n          description: \"User media collection and container creation.\"\n          operations:\n            - method: GET\n              name: get-user-media\n              description: \"Get a collection of IG Media objects published on the account.\"\n              call: \"instagram-graph.get-user-media\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                limit: \"rest.limit\"\n                after: \"rest.after\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-media-container\n              description: \"Create a media container for publishing content.\"\n              call: \"instagram-graph.create-media-container\"\n              with:\n                user_id: \"rest.user_id\"\n              \

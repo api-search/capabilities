@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- import postman collection
-- Platform Engineer
-- import a postman collection into apidog for converting to openapi-based workflows.
-- documentation
-- API Developer
-- api lifecycle
-- unified workflow for managing api specifications lifecycle.
-- platform
+- import an openapi/swagger specification into an apidog project for design-first development.
+- import openapi specification into apidog project.
+- developer building and managing apis using apidog's design-first platform.
+- import openapi spec
+- export
+- design-first
+- api testing
+- export api specifications to standard formats.
+- api design
 - mocking
 - import
-- export openapi
-- export api specifications to standard formats.
-- import openapi specification into apidog project.
-- import api specifications from various formats.
-- import an openapi/swagger specification into an apidog project for design-first development.
-- managing the complete lifecycle of api specifications from design to deployment.
-- import openapi
-- export openapi specification from apidog project.
-- design-first
-- export openapi spec
+- platform
+- unified workflow for managing api specifications lifecycle.
+- documentation
 - collaboration
-- api design
-- apidog
-- import openapi spec
-- api testing
-- developer building and managing apis using apidog's design-first platform.
-- engineer automating api specification workflows via ci/cd integration.
+- import a postman collection into apidog for converting to openapi-based workflows.
+- export openapi spec
+- API Developer
+- import openapi
 - export an openapi specification from an apidog project for sharing or ci/cd integration.
-- export
+- import api specifications from various formats.
+- export openapi
+- api lifecycle
+- Platform Engineer
+- managing the complete lifecycle of api specifications from design to deployment.
+- engineer automating api specification workflows via ci/cd integration.
+- import postman collection
+- export openapi specification from apidog project.
+- apidog
 slug: api-lifecycle-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apidog API Lifecycle Management\"\n  description: \"Unified workflow for managing API specifications lifecycle with Apidog - importing from various sources, exporting to standard formats, and maintaining API definitions programmatically.\"\n  tags:\n    - Apidog\n    - API Lifecycle\n    - API Design\n    - Import\n    - Export\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIDOG_BEARER_TOKEN: APIDOG_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: apidog\n      location: ./shared/apidog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apidog-lifecycle-api\n      description: \"Unified REST API for Apidog API lifecycle management.\"\n      resources:\n        - path: /v1/specs/import\n          name: spec-import\n          description: \"Import API specifications from various formats.\"\n          operations:\n            - method: POST\n  \
   \            name: import-openapi\n              description: \"Import OpenAPI specification into Apidog project.\"\n              call: \"apidog.import-openapi\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/specs/export\n          name: spec-export\n          description: \"Export API specifications to standard formats.\"\n          operations:\n            - method: POST\n              name: export-openapi\n              description: \"Export OpenAPI specification from Apidog project.\"\n              call: \"apidog.export-openapi\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apidog-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\

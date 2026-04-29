@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- describe db clusters
-- start a stopped aurora db cluster to resume database operations.
-- list all db instances in aurora clusters.
-- mysql
-- add a new read replica or writer instance to an aurora db cluster.
-- create db cluster snapshot
-- list all aurora db clusters to understand available databases and their status.
-- aws
-- postgresql
-- create a new aurora mysql or postgresql compatible db cluster.
-- stop db cluster
-- list aurora db clusters
-- create db cluster
-- describe db instances
-- create db instance
-- describe db cluster snapshots
 - amazon aurora
-- stop an aurora db cluster to reduce costs when not in use.
-- list available aurora db cluster snapshots for backup management.
-- create a new aurora db cluster
-- aurora db cluster management
-- modify db cluster
+- mysql
 - start db cluster
+- aurora db cluster management
+- list aurora db clusters
+- list available aurora db cluster snapshots for backup management.
+- add a new read replica or writer instance to an aurora db cluster.
+- aws
 - restore db cluster from snapshot
+- create db cluster snapshot
+- create db cluster
+- stop db cluster
+- stop an aurora db cluster to reduce costs when not in use.
+- describe db instances
+- start a stopped aurora db cluster to resume database operations.
+- create a new aurora db cluster
+- list all db instances in aurora clusters.
+- describe db cluster snapshots
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- relational database
+- create db instance
+- list all aurora db clusters to understand available databases and their status.
+- create a new aurora mysql or postgresql compatible db cluster.
+- describe db clusters
 - modify the configuration of an existing aurora db cluster.
 - create a snapshot of an aurora db cluster for backup or cloning.
-- relational database
+- modify db cluster
+- postgresql
 slug: relational-database-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Relational Database Management Workflow\n  description: Workflow capability for managing Amazon Aurora relational database clusters including creation, scaling, snapshots, and global database configurations.\n  tags:\n    - Amazon Aurora\n    - MySQL\n    - PostgreSQL\n    - Relational Database\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: aurora\n    from: shared/aurora-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: relational-db-rest\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: Aurora DB cluster management\n          operations:\n            - method: POST\n              name: create-db-cluster\n              description: Create a new Aurora DB cluster\n              call: \"aurora.create-db-cluster\"\n              outputParameters:\n                - type: object\n                  mapping:\
   \ \"$.\"\n            - method: GET\n              name: describe-db-clusters\n              description: List Aurora DB clusters\n              call: \"aurora.describe-db-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: relational-db-mcp\n      transport: http\n      tools:\n        - name: describe-db-clusters\n          description: List all Aurora DB clusters to understand available databases and their status.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aurora.describe-db-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-db-cluster\n          description: Create a new Aurora MySQL or PostgreSQL compatible DB cluster.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"aurora.create-db-cluster\"\n    \

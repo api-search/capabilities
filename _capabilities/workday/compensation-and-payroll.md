@@ -25,51 +25,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- comp request one time payment
-- comp list grades
-- submit a benefits change request
-- comp list scorecards
-- enterprise software
-- list benefit plans
-- get pay group details
-- payroll
-- benefits list elections
-- payroll get pay group details
-- workday
-- list compensation plans
-- get a pay group by id
-- comp list plans
-- list compensation grades
-- comp request change
-- benefits get eligible plans
-- benefits
-- benefits list plans
-- list all pay groups
-- benefit plans
-- payroll list pay slips
-- list all benefit plans
-- cloud computing
-- list compensation scorecards
-- payroll list pay groups
-- request a one-time payment
-- pay groups
-- list payroll inputs
-- payroll get pay group
-- list benefit elections
-- benefits list dependents
-- payroll list inputs
-- list dependents
-- financial management
-- submit a compensation change request
-- compensation plans
-- get eligible benefit plans for a worker
 - benefits change
-- list plans
-- list pay groups
-- saas
-- list pay slips
-- hcm
+- submit a benefits change request
+- list benefit elections
+- submit a compensation change request
+- list dependents
+- workday
+- comp request change
+- list payroll inputs
+- benefits
+- benefit plans
+- request a one-time payment
+- payroll
+- payroll list pay slips
+- list all pay groups
+- financial management
+- get a pay group by id
+- list compensation plans
 - compensation
+- benefits list plans
+- payroll list pay groups
+- compensation plans
+- list compensation grades
+- list all benefit plans
+- comp list grades
+- saas
+- payroll get pay group details
+- cloud computing
+- list pay groups
+- list pay slips
+- benefits list elections
+- enterprise software
+- payroll get pay group
+- get pay group details
+- benefits list dependents
+- list plans
+- list benefit plans
+- get eligible benefit plans for a worker
+- comp list plans
+- list compensation scorecards
+- benefits get eligible plans
+- payroll list inputs
+- hcm
+- comp list scorecards
+- pay groups
+- comp request one time payment
 slug: compensation-and-payroll
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Compensation and Payroll\"\n  description: \"Unified compensation and payroll management combining Compensation, Payroll, and Benefits APIs for payroll administrators to manage pay plans, benefits enrollment, and payroll processing.\"\n  tags:\n    - Workday\n    - Compensation\n    - Payroll\n    - Benefits\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-compensation\n      location: ./shared/compensation.yaml\n    - import: workday-payroll\n      location: ./shared/payroll.yaml\n    - import: workday-benefits\n      location: ./shared/benefits.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: compensation-payroll-api\n      description: \"Unified REST API for compensation, payroll, and benefits.\"\n      resources:\n        - path: /v1/compensation-plans\n\
   \          name: compensation-plans\n          description: \"Compensation plans\"\n          operations:\n            - method: GET\n              name: list-plans\n              description: \"List compensation plans\"\n              call: \"workday-compensation.get-compensation-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pay-groups\n          name: pay-groups\n          description: \"Pay groups\"\n          operations:\n            - method: GET\n              name: list-pay-groups\n              description: \"List pay groups\"\n              call: \"workday-payroll.get-pay-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benefit-plans\n          name: benefit-plans\n          description: \"Benefit plans\"\n          operations:\n            - method: GET\n              name: list-benefit-plans\n              description:\

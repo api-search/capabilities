@@ -31,42 +31,42 @@ personas: []
 provider_name: Argo Workflows
 provider_slug: argo-workflows
 search_terms:
-- Platform Engineer
-- workflow lifecycle management
-- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
-- list archived workflow runs
-- open source
-- manages argo workflows platform, templates, and scheduling
-- list scheduled cron workflows in a namespace
-- create workflow
-- reusable workflow templates
-- scheduled cron workflows
-- list all workflow templates
 - list all workflows in a namespace
-- workflow engine
-- container orchestration platform
-- list archived workflows
-- list cron workflows
-- data processing
-- workflow execution history
-- containers
-- Data Engineer
-- list workflows
-- data engineering
-- kubernetes
-- cncf
-- argo workflows
-- list historical archived workflow executions
-- submit a new workflow
-- list all cron workflows
-- machine learning
-- list workflow templates
-- list all argo workflows in a kubernetes namespace with status
 - container-native workflow execution and lifecycle management
-- runs ml training, data processing, and etl workflows on kubernetes
+- data engineering
+- manages argo workflows platform, templates, and scheduling
+- list all cron workflows
+- create workflow
 - list reusable workflow templates in a namespace
-- parallel data transformation, ml training, and etl
+- runs ml training, data processing, and etl workflows on kubernetes
+- cncf
+- scheduled cron workflows
+- list workflow templates
+- workflow execution history
+- container orchestration platform
+- containers
 - submit a new argo workflow to a kubernetes namespace
+- list all argo workflows in a kubernetes namespace with status
+- machine learning
+- argo workflows
+- reusable workflow templates
+- kubernetes
+- Data Engineer
+- list cron workflows
+- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
+- list historical archived workflow executions
+- list archived workflows
+- workflow lifecycle management
+- data processing
+- list workflows
+- parallel data transformation, ml training, and etl
+- Platform Engineer
+- list archived workflow runs
+- submit a new workflow
+- list scheduled cron workflows in a namespace
+- open source
+- workflow engine
+- list all workflow templates
 slug: workflow-orchestration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Argo Workflows Orchestration\"\n  description: \"Unified capability for container-native workflow orchestration on Kubernetes using Argo Workflows. Combines workflow lifecycle management, template reuse, cron scheduling, and workflow history for Data Engineers and Platform Engineers.\"\n  tags:\n    - Argo Workflows\n    - Kubernetes\n    - Workflow Engine\n    - CNCF\n    - Data Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARGO_TOKEN: ARGO_TOKEN\n      ARGO_SERVER: ARGO_SERVER\n\ncapability:\n  consumes:\n    - import: argoworkflows\n      location: ./shared/argo-workflows-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: workflow-orchestration-api\n      description: \"Unified REST API for Kubernetes workflow orchestration.\"\n      resources:\n        - path: /v1/workflows/{namespace}\n          name: workflows\n          description:\
   \ \"Workflow lifecycle management\"\n          operations:\n            - method: GET\n              name: list-workflows\n              description: \"List all workflows in a namespace\"\n              call: \"argoworkflows.list-workflows\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workflow\n              description: \"Submit a new workflow\"\n              call: \"argoworkflows.create-workflow\"\n              with:\n                namespace: \"rest.namespace\"\n                workflow: \"rest.workflow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflow-templates/{namespace}\n          name: workflow-templates\n          description: \"Reusable workflow templates\"\n          operations:\n            - method: GET\n       \

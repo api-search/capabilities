@@ -14,27 +14,27 @@ personas: []
 provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
-- list pipelines
-- sql
 - resource management
-- management
-- etl
-- list workspace resources
-- list pipeline resources
-- list sqlpool resources
-- list sql pools
-- azure resource management
-- analytics
-- azure
-- apache spark
-- list big data pools
-- list bigdatapool resources
 - data warehouse
-- cloud
-- list all resources
-- list
+- list bigdatapool resources
 - big data
+- cloud
+- azure resource management
 - list workspaces
+- list sqlpool resources
+- apache spark
+- list sql pools
+- list
+- management
+- list workspace resources
+- etl
+- list big data pools
+- sql
+- list all resources
+- list pipeline resources
+- analytics
+- list pipelines
+- azure
 slug: azure-synapse-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Synapse Analytics Management\"\n  description: \"Workflow capability for managing Azure Synapse Analytics resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-synapse\n      location: ./shared/azure-synapse.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: azure-synapse-management-api\n      description: \"Unified REST API for Azure Synapse Analytics management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description: \"List all resources\"\
   \n              call: \"azure-synapse.list-workspaces\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: azure-synapse-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Synapse Analytics management.\"\n      tools:\n        - name: list-workspaces\n          description: \"List Workspace resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-synapse.list-workspaces\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-sql-pools\n          description: \"List SqlPool resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-synapse.list-sql-pools\"\

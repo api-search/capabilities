@@ -46,59 +46,59 @@ personas: []
 provider_name: Microsoft Windows Server
 provider_slug: microsoft-windows-server
 search_terms:
-- list all application pools
-- list all applications
 - update application
-- create application pool
-- create website
-- operating system
-- delete a web application
-- create a new iis web site
-- list websites
-- create a new web application
-- get application pool details
-- enterprise
-- list applications
-- delete a web site
 - infrastructure
-- get application pool
-- list all web applications
-- create an application pool
-- get web application details
-- get website
-- get application
-- update a web site
-- delete application pool
-- update an iis web site configuration
-- windows server 2025
-- list application pools
-- delete application
-- list all iis application pools
-- delete an application pool
-- update application pool
-- web site management
-- web application management
-- get details for a specific web site
-- update website
-- delete website
-- windows server
-- update a web application
-- create an iis application pool
-- list all web sites
-- web server
-- list all iis web sites on the server
-- delete an iis web site
-- server management
-- single web site operations
-- microsoft
 - create a web site
-- get web site details
-- create an application
+- single web site operations
+- operating system
+- windows server 2025
+- get website
+- list applications
+- get details for a specific web site
+- list all iis application pools
+- web site management
+- server management
+- create an application pool
+- update website
+- list all applications
 - application pool management
-- datacenter
-- update an application pool configuration
+- delete an iis web site
+- delete a web site
+- create a new iis web site
+- update an iis web site configuration
+- create a new web application
+- delete website
+- create an iis application pool
+- microsoft
+- list all application pools
+- get application
+- update application pool
+- web server
+- create website
+- update a web site
+- get web application details
+- delete application pool
+- create application pool
+- list all web sites
+- update a web application
+- delete application
+- create an application
+- delete a web application
+- list all web applications
+- list application pools
+- get web site details
+- windows server
+- web application management
+- get application pool
+- enterprise
 - create application
+- get application pool details
+- datacenter
 - iis
+- delete an application pool
+- list websites
+- list all iis web sites on the server
+- update an application pool configuration
 slug: web-server-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Windows Server Web Management\"\n  description: \"Unified workflow for IT administrators to manage IIS web sites, applications, and application pools for enterprise web hosting on Windows Server.\"\n  tags:\n    - Microsoft\n    - Windows Server\n    - IIS\n    - Web Server\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      IIS_ACCESS_TOKEN: IIS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: iis-administration\n      location: ./shared/iis-administration.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: web-server-api\n      description: \"Unified REST API for IIS web server management.\"\n      resources:\n        - path: /v1/websites\n          name: websites\n          description: \"Web site management\"\n          operations:\n            - method: GET\n              name: list-websites\n              description: \"List all web sites\"\n \
   \             call: \"iis-administration.list-websites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-website\n              description: \"Create a web site\"\n              call: \"iis-administration.create-website\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/websites/{id}\n          name: website-detail\n          description: \"Single web site operations\"\n          operations:\n            - method: GET\n              name: get-website\n              description: \"Get web site details\"\n              call: \"iis-administration.get-website\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-website\n              description: \"Update\

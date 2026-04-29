@@ -47,74 +47,74 @@ personas: []
 provider_name: Informatica
 provider_slug: informatica
 search_terms:
-- start a job for a task or taskflow.
-- update a connection.
-- get mapping
-- data quality
-- enterprise software
-- cloud services
-- data source connection management.
-- create a new data source connection.
-- update mapping task
-- get schedule
-- etl
 - list connections
-- pipeline management
 - b2b gateway
-- reference data management
-- idmc
-- get schedule details by id.
-- authenticate and obtain a session id.
-- update schedule
-- list all task schedules.
-- create a new mapping task.
-- data profiling
-- informatica
-- list mapping tasks
-- delete connection
-- list all connections.
-- get mapping task
-- delete mapping task
-- delete schedule
-- list all data source connections.
-- get connection details by id.
-- address verification
-- data governance
-- get connection details.
-- get mapping task details by id.
-- retrieve the activity log.
-- stop a running job.
-- list schedules
-- create a new schedule.
-- delete a mapping task.
-- start job
-- job execution management.
-- create schedule
-- delete a connection.
-- list all mapping tasks.
-- data mapping management.
-- update an existing connection.
-- mapping task management.
-- get activity log
-- stop job
-- get connection
-- update a mapping task.
-- update a schedule.
-- create connection
-- master data management
-- start a job.
-- data integration
-- update connection
 - delete a schedule.
-- iics
+- start job
+- get connection
+- idmc
+- pipeline management
+- stop a running job.
+- get activity log
+- update an existing connection.
+- delete a connection.
 - get mapping details by id.
-- create a new connection.
-- individual connection management.
-- list all data mappings.
+- data governance
+- cloud services
+- authenticate and obtain a session id.
+- get schedule details by id.
+- create a new schedule.
+- data mapping management.
 - create mapping task
+- get mapping task details by id.
+- delete a mapping task.
+- update a schedule.
+- iics
+- data integration
 - list all mappings.
+- job execution management.
+- list all connections.
+- get schedule
+- get mapping
+- stop job
+- data profiling
+- delete connection
+- data quality
+- create a new data source connection.
+- delete mapping task
+- list mapping tasks
+- mapping task management.
+- create a new connection.
+- start a job for a task or taskflow.
+- update a mapping task.
+- list all data source connections.
+- enterprise software
+- reference data management
+- delete schedule
+- create connection
+- etl
+- individual connection management.
+- update connection
+- list all mapping tasks.
+- update a connection.
+- create a new mapping task.
+- start a job.
 - login
+- list all data mappings.
+- get mapping task
+- get connection details.
+- address verification
+- get connection details by id.
 - list mappings
+- master data management
+- retrieve the activity log.
+- create schedule
+- data source connection management.
+- informatica
+- list schedules
+- update schedule
+- update mapping task
+- list all task schedules.
 slug: data-integration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Informatica Data Integration\"\n  description: \"Unified workflow for managing data integration pipelines including connections, mappings, mapping tasks, job execution, scheduling, and activity monitoring. Used by data engineers and ETL developers.\"\n  tags:\n    - Informatica\n    - Data Integration\n    - ETL\n    - Pipeline Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INFORMATICA_USERNAME: INFORMATICA_USERNAME\n      INFORMATICA_PASSWORD: INFORMATICA_PASSWORD\n\ncapability:\n  consumes:\n    - import: informatica-platform\n      location: ./shared/platform-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: informatica-integration-api\n      description: \"Unified REST API for Informatica data integration management.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Data\
   \ source connection management.\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List all connections.\"\n              call: \"informatica-platform.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: \"Create a new connection.\"\n              call: \"informatica-platform.create-connection\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections/{id}\n          name: connection-details\n          description: \"Individual connection management.\"\n          operations:\n            - method: GET\n              name: get-connection\n              description: \"Get connection details.\"\n              call: \"informatica-platform.get-connection\"\n              with:\n           \

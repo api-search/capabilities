@@ -11,12 +11,12 @@ provider_name: Amazon CloudFormation
 provider_slug: amazon-cloudformation
 search_terms:
 - DevOps Engineer
-- devops
-- aws
-- amazon web services
 - cloudformation
 - infrastructure as code
 - iac
+- amazon web services
+- aws
+- devops
 - amazon cloudformation
 slug: infrastructure-as-code
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon CloudFormation Infrastructure as Code Deployment\"\n  description: \"Workflow for infrastructure as code deployment using Amazon CloudFormation for DevOps Engineer personas.\"\n  tags:\n    - Amazon Web Services\n    - Amazon CloudFormation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cloudformation\n      location: ./shared/cloudformation.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloudformation-workflow-api\n      description: \"Unified REST API for Amazon CloudFormation infrastructure as code deployment.\"\n      resources: []\n\n    - type: mcp\n      port: 9090\n      namespace: cloudformation-workflow-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\

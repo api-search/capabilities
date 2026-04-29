@@ -24,54 +24,54 @@ personas: []
 provider_name: Spot
 provider_slug: spot
 search_terms:
-- elastigroup get costs
-- list azure elastigroups
-- elastigroup get logs
-- scale up an aws elastigroup
-- compute
-- cloud infrastructure
-- list gke ocean clusters
-- ocean get cluster aws
-- ocean list virtual node groups
-- list ocean clusters
-- list virtual node groups
-- spot instances
-- autoscaling
+- get elastigroup activity logs
+- get right-sizing suggestions for an ocean cluster
+- ocean list clusters aks
 - ocean list spark clusters
-- spot
-- elastigroup scale down aws
 - cost optimization
-- scale down an aws elastigroup
-- get an aws ocean cluster
-- finops
+- elastigroup get status aws
+- list ocean virtual node groups
+- ocean get right sizing
+- list azure elastigroups
+- elastigroup list groups aws
+- ocean list clusters aws
+- list aks ocean clusters
+- spot instances
+- list virtual node groups
+- list gke ocean clusters
+- containers
+- list ocean spark clusters
+- get elastigroup cost data
+- scale up an aws elastigroup
+- ocean get cluster aws
+- get an aws elastigroup by id
+- get elastigroup instance status
+- compute
+- elastigroup list gcp
+- elastigroup compute groups
 - ocean virtual node groups
+- list aws elastigroups
+- get an aws ocean cluster
+- kubernetes
+- list elastigroups
+- list all aws elastigroups
+- ocean list clusters gke
+- ocean list virtual node groups
+- elastigroup list azure
+- elastigroup scale up aws
+- elastigroup get costs
+- ocean kubernetes clusters
+- elastigroup get logs
+- spot
 - list gcp elastigroups
+- scale down an aws elastigroup
+- cloud infrastructure
+- list ocean clusters
+- elastigroup scale down aws
+- finops
 - elastigroup get group aws
 - list aws ocean clusters
-- elastigroup list gcp
-- get right-sizing suggestions for an ocean cluster
-- elastigroup get status aws
-- elastigroup list groups aws
-- containers
-- kubernetes
-- ocean list clusters aws
-- ocean list clusters aks
-- elastigroup scale up aws
-- get elastigroup instance status
-- ocean list clusters gke
-- elastigroup compute groups
-- elastigroup list azure
-- list aks ocean clusters
-- ocean kubernetes clusters
-- list ocean virtual node groups
-- get an aws elastigroup by id
-- ocean get right sizing
-- get elastigroup cost data
-- list aws elastigroups
-- list elastigroups
-- get elastigroup activity logs
-- list ocean spark clusters
-- list all aws elastigroups
+- autoscaling
 slug: compute-optimization
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Spot Compute Optimization\"\n  description: \"Unified workflow for managing cloud compute optimization across Elastigroup and Ocean, combining instance management, autoscaling, and Kubernetes infrastructure automation. Used by DevOps engineers and cloud infrastructure teams.\"\n  tags:\n    - Spot\n    - Compute\n    - Autoscaling\n    - Kubernetes\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPOT_API_TOKEN: SPOT_API_TOKEN\n\ncapability:\n  consumes:\n    - import: spot-elastigroup\n      location: ./shared/elastigroup.yaml\n    - import: spot-ocean\n      location: ./shared/ocean.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spot-compute-api\n      description: \"Unified REST API for Spot compute optimization.\"\n      resources:\n        - path: /v1/elastigroups\n          name: elastigroups\n          description: \"Elastigroup compute groups\"\
   \n          operations:\n            - method: GET\n              name: list-elastigroups\n              description: \"List AWS Elastigroups\"\n              call: \"spot-elastigroup.list-elastigroups-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ocean-clusters\n          name: ocean-clusters\n          description: \"Ocean Kubernetes clusters\"\n          operations:\n            - method: GET\n              name: list-ocean-clusters\n              description: \"List AWS Ocean clusters\"\n              call: \"spot-ocean.list-ocean-clusters-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/virtual-node-groups\n          name: virtual-node-groups\n          description: \"Ocean virtual node groups\"\n          operations:\n            - method: GET\n              name: list-virtual-node-groups\n              description: \"List\

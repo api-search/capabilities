@@ -27,26 +27,26 @@ personas: []
 provider_name: Google Marketing Platform Admin
 provider_slug: google-marketing-platform
 search_terms:
-- delete an analytics account link.
-- list analytics account links.
-- google marketing platform
-- list analytics account links for an organization.
-- platform administration
-- organization management
-- list organizations
-- individual analytics link management.
-- analytics
-- analytics account link management.
-- create an analytics account link.
 - set analytics property service level (standard or 360).
-- delete analytics link
-- create analytics link
-- list google marketing platform organizations.
-- list marketing platform organizations.
-- list analytics links
-- set property service level
+- list analytics account links.
 - marketing
+- list analytics links
+- list google marketing platform organizations.
+- platform administration
 - organization management.
+- delete analytics link
+- list analytics account links for an organization.
+- analytics account link management.
+- google marketing platform
+- set property service level
+- create analytics link
+- analytics
+- individual analytics link management.
+- list marketing platform organizations.
+- list organizations
+- organization management
+- create an analytics account link.
+- delete an analytics account link.
 slug: marketing-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Marketing Platform Analytics Administration\"\n  description: \"Unified workflow for managing Google Marketing Platform organizations and their Analytics account integrations including service level configuration. Used by marketing platform administrators and analytics managers.\"\n  tags:\n    - Google Marketing Platform\n    - Analytics\n    - Platform Administration\n    - Organization Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GMP_ACCESS_TOKEN: GMP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: gmp-admin\n      location: ./shared/admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gmp-analytics-admin-api\n      description: \"Unified REST API for Google Marketing Platform analytics administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description: \"\
   Organization management.\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List Marketing Platform organizations.\"\n              call: \"gmp-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations/{id}/analytics-links\n          name: analytics-links\n          description: \"Analytics account link management.\"\n          operations:\n            - method: GET\n              name: list-analytics-links\n              description: \"List analytics account links.\"\n              call: \"gmp-admin.list-analytics-links\"\n              with:\n                parent: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-analytics-link\n              description: \"Create an analytics account link.\"\n\

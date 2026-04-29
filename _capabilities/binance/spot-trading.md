@@ -9,22 +9,22 @@ personas: []
 provider_name: Binance
 provider_slug: binance
 search_terms:
-- trade usd-m and coin-m perpetual futures contracts
 - cryptocurrency trader executing spot orders on binance
 - trade on margin with borrowed assets
-- cryptocurrency
+- api key management, account balances, and commission rates
 - trading
+- trade usd-m and coin-m perpetual futures contracts
+- developer building algorithmic trading strategies on binance
+- cryptocurrency
 - place and manage spot orders and retrieve market data on binance
 - blockchain
-- finance
-- developer building algorithmic trading strategies on binance
-- api key management, account balances, and commission rates
-- exchange
-- deposits, withdrawals, and asset management
 - buy and sell cryptocurrency spot pairs on the binance exchange
-- market data
 - defi
+- finance
+- deposits, withdrawals, and asset management
+- exchange
 - real-time and historical price, depth, and trade data
+- market data
 slug: spot-trading
 source_yaml: "name: Spot Trading\ndescription: >-\n  Workflow capability for executing spot cryptocurrency trades on Binance,\n  including market data retrieval, order placement and management, and\n  account balance monitoring.\nversion: v1\n\nimports:\n  - shared/binance.yaml\n\ntools:\n  - name: get-ticker\n    import: binance.get-ticker\n    description: Get the current price for a cryptocurrency trading pair.\n    inputSchema:\n      type: object\n      required:\n        - symbol\n      properties:\n        symbol:\n          type: string\n          description: Trading pair symbol (e.g. BTCUSDT)\n  - name: get-order-book\n    import: binance.get-order-book\n    description: Get order book depth showing bids and asks for a trading pair.\n    inputSchema:\n      type: object\n      required:\n        - symbol\n      properties:\n        symbol:\n          type: string\n          description: Trading pair symbol\n        limit:\n          type: integer\n          description: Depth limit\
   \ (5, 10, 20, 50, 100, 500, 1000)\n  - name: get-klines\n    import: binance.get-klines\n    description: Get candlestick (OHLCV) chart data for a trading pair.\n    inputSchema:\n      type: object\n      required:\n        - symbol\n        - interval\n      properties:\n        symbol:\n          type: string\n          description: Trading pair symbol\n        interval:\n          type: string\n          description: Candlestick interval (1m, 5m, 15m, 1h, 4h, 1d)\n        limit:\n          type: integer\n          description: Number of candles to return\n  - name: get-account\n    import: binance.get-account\n    description: Get account balances for all assets and trading commissions.\n  - name: create-order\n    import: binance.create-order\n    description: Place a new spot buy or sell order on Binance.\n    inputSchema:\n      type: object\n      required:\n        - symbol\n        - side\n        - type\n        - quantity\n      properties:\n        symbol:\n          type:\

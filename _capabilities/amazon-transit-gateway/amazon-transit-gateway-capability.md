@@ -10,11 +10,11 @@ provider_name: Amazon Transit Gateway
 provider_slug: amazon-transit-gateway
 search_terms:
 - transit gateway
-- network hub
-- aws
-- networking
-- cloud networking
 - vpc
+- networking
+- aws
+- network hub
+- cloud networking
 slug: amazon-transit-gateway-capability
 source_yaml: 'id: amazon-transit-gateway-capability
 

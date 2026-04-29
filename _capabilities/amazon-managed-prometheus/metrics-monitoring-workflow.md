@@ -23,33 +23,33 @@ personas: []
 provider_name: Amazon Managed Service for Prometheus
 provider_slug: amazon-managed-prometheus
 search_terms:
-- list workspaces
-- create alert manager
-- alerting
-- create a new prometheus workspace for storing container metrics
-- configure alert manager
-- SRE
-- monitoring
-- create prometheus workspace
-- describe prometheus workspace
-- list rule groups
-- list all prometheus workspaces
-- alert manager configuration
-- amazon
-- create a workspace
-- observability
-- configure alert manager for prometheus alerting notifications
-- create prometheus recording and alerting rules namespace
-- aws
-- list all prometheus rule group namespaces
-- prometheus workspaces
-- create recording rules
-- containers
 - prometheus
-- create workspace
-- DevOps Engineer
+- configure alert manager for prometheus alerting notifications
+- create recording rules
 - get workspace details and prometheus remote write endpoint url
+- alert manager configuration
+- create prometheus recording and alerting rules namespace
+- configure alert manager
+- list all prometheus workspaces
 - list prometheus workspaces
+- create prometheus workspace
+- DevOps Engineer
+- list workspaces
+- SRE
+- list all prometheus rule group namespaces
+- aws
+- describe prometheus workspace
+- containers
+- create a new prometheus workspace for storing container metrics
+- amazon
+- create alert manager
+- observability
+- create workspace
+- monitoring
+- prometheus workspaces
+- create a workspace
+- alerting
+- list rule groups
 slug: metrics-monitoring-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Amazon Managed Service for Prometheus - Metrics Monitoring Workflow\"\n  description: \"Workflow capability for DevOps and SRE teams to manage Prometheus workspaces, configure alerting, and define recording rules for container metrics monitoring.\"\n  tags:\n    - Amazon\n    - Prometheus\n    - Monitoring\n    - Observability\n    - Containers\n    - Alerting\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: managed-prometheus\n      location: ./shared/managed-prometheus.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: prometheus-monitoring-api\n      description: \"Unified REST API for Prometheus metrics monitoring workflows.\"\n      resources:\n        - path: /v1/workspaces\n          name: workspaces\n\
   \          description: \"Prometheus workspaces\"\n          operations:\n            - method: GET\n              name: list-workspaces\n              description: \"List workspaces\"\n              call: \"managed-prometheus.list-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workspace\n              description: \"Create a workspace\"\n              call: \"managed-prometheus.create-workspace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces/{id}/alert-manager\n          name: alert-manager\n          description: \"Alert manager configuration\"\n          operations:\n            - method: POST\n              name: create-alert-manager\n              description: \"Create alert manager\"\n              call: \"managed-prometheus.create-alert-manager-definition\"\n              outputParameters:\n\

@@ -64,65 +64,65 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- getEventSegmentation
-- manage event schemas and chart annotations. for data governance teams.
-- exportEvents
-- amplitude
-- user behavior
-- amplitude list all cohorts
-- requestCohortExport
-- behavioral cohorts api downloadCohortExport
-- privacy compliance
-- ingests and exports event data
-- searchUsers
-- experimentation
-- behavioral cohorts api requestCohortExport
-- dashboard rest api getRevenueLTV
-- amplitude get event segmentation
-- amplitude get cohort export status
-- amplitude get retention analysis
-- amplitude get revenue ltv data
-- downloadCohortExport
-- data export
-- export raw event data and manage behavioral cohorts. for data analysts.
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- getRevenueLTV
-- dashboard rest api getFunnelAnalysis
 - analyzes data and manages cohorts
-- analytics
-- behavioral cohorts api listCohorts
-- export api exportEvents
-- feature flags
-- amplitude search users
-- uploadCohort
-- dashboard rest api searchUsers
-- manages privacy and compliance
-- amplitude export raw event data
-- data governance
-- dashboard rest api getEventSegmentation
-- dashboard rest api getUserActivity
-- amplitude list event types
-- product analytics
-- getRetentionAnalysis
-- dashboard rest api getRetentionAnalysis
-- amplitude request a cohort export
-- identity management
+- getEventSegmentation
 - manage and evaluate a/b experiments and feature flags. for product managers.
+- export api exportEvents
 - listEventTypes
-- getCohortExportStatus
-- amplitude get user activity
-- amplitude upload a cohort
-- dashboard rest api listEventTypes
-- unified workflow for sending events and identifying users. for data engineers.
-- a/b testing
-- behavioral cohorts api getCohortExportStatus
-- getUserActivity
+- amplitude get event segmentation
+- runs experiments and feature flags
+- dashboard rest api getUserActivity
 - getFunnelAnalysis
+- manage event schemas and chart annotations. for data governance teams.
+- data governance
+- amplitude request a cohort export
+- amplitude export raw event data
+- behavioral cohorts api requestCohortExport
 - listCohorts
-- amplitude download cohort export file
 - amplitude get funnel analysis
 - behavioral cohorts api uploadCohort
-- runs experiments and feature flags
+- dashboard rest api getRetentionAnalysis
+- dashboard rest api searchUsers
+- identity management
+- searchUsers
+- amplitude upload a cohort
+- amplitude get retention analysis
+- experimentation
+- behavioral cohorts api downloadCohortExport
+- amplitude get cohort export status
+- uploadCohort
+- a/b testing
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- export raw event data and manage behavioral cohorts. for data analysts.
+- downloadCohortExport
+- behavioral cohorts api listCohorts
+- dashboard rest api listEventTypes
+- manages privacy and compliance
+- amplitude list all cohorts
+- amplitude list event types
+- amplitude
+- data export
+- dashboard rest api getRevenueLTV
+- requestCohortExport
+- product analytics
+- user behavior
+- analytics
+- amplitude get revenue ltv data
+- amplitude get user activity
+- exportEvents
+- ingests and exports event data
+- amplitude search users
+- getRevenueLTV
+- amplitude download cohort export file
+- getRetentionAnalysis
+- getUserActivity
+- dashboard rest api getEventSegmentation
+- getCohortExportStatus
+- unified workflow for sending events and identifying users. for data engineers.
+- feature flags
+- behavioral cohorts api getCohortExportStatus
+- dashboard rest api getFunnelAnalysis
+- privacy compliance
 slug: amplitude-data-export-and-cohorts
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Data Export and Cohorts\n  description: Export raw event data and manage behavioral cohorts. For data analysts.\n  tags:\n  - Amplitude\n  - Analytics\n  - Data Export\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: behavioral-cohorts-api\n    location: ./shared/behavioral-cohorts-api.yaml\n  - import: dashboard-rest-api\n    location: ./shared/dashboard-rest-api.yaml\n  - import: export-api\n    location: ./shared/export-api.yaml\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: amplitude-data-export-and-cohorts-api\n    description: REST API for Amplitude Data Export and Cohorts\n    resources:\n    - path: /v1/cohorts\n      name: cohorts\n      operations:\n      - method: GET\n        name: listCohorts\n        description: Amplitude List All Cohorts\n        call: behavioral-cohorts-api.listCohorts\n\
   \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cohorts\n      name: cohorts\n      operations:\n      - method: GET\n        name: requestCohortExport\n        description: Amplitude Request a Cohort Export\n        call: behavioral-cohorts-api.requestCohortExport\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cohorts\n      name: cohorts\n      operations:\n      - method: GET\n        name: getCohortExportStatus\n        description: Amplitude Get Cohort Export Status\n        call: behavioral-cohorts-api.getCohortExportStatus\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cohorts\n      name: cohorts\n      operations:\n      - method: GET\n        name: downloadCohortExport\n        description: Amplitude Download Cohort Export File\n        call: behavioral-cohorts-api.downloadCohortExport\n      \

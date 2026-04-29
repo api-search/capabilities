@@ -20,35 +20,35 @@ personas: []
 provider_name: Amadeus
 provider_slug: amadeus
 search_terms:
-- destinations
-- points of interest, tours, activities, and destination data.
-- Travel Developer
-- search available flights.
-- transfer search, booking, and management.
-- travel
-- search flights
-- flight search, pricing, booking, and order management.
-- airlines
-- booking
-- flights
-- amadeus
-- hotel search.
-- search available hotels.
-- OTA Booking Team
-- aviation
-- transfers
-- hotel search, availability, and booking.
-- market insights
-- end-to-end trip booking combining flight search, hotel search, and transfer booking.
 - tourism
 - search for available hotel rooms and rates for specific hotel properties.
-- developer building travel search and booking applications using amadeus apis.
+- amadeus
+- airlines
 - hotels
-- flight search.
 - search hotels
+- flights
 - hospitality
+- search available hotels.
+- market insights
+- travel
 - online travel agency team managing flight, hotel, and transfer bookings.
+- developer building travel search and booking applications using amadeus apis.
+- flight search, pricing, booking, and order management.
+- OTA Booking Team
+- hotel search.
+- transfers
 - search for available flights between two cities on a given date.
+- booking
+- destinations
+- search flights
+- search available flights.
+- transfer search, booking, and management.
+- flight search.
+- hotel search, availability, and booking.
+- Travel Developer
+- end-to-end trip booking combining flight search, hotel search, and transfer booking.
+- aviation
+- points of interest, tours, activities, and destination data.
 slug: travel-booking
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amadeus Full Travel Booking\n  description: End-to-end travel booking workflow combining flight search, pricing, booking, hotel search, hotel booking, and transfer search for complete trip planning and reservation.\n  tags:\n  - Amadeus\n  - Flights\n  - Hotels\n  - Transfers\n  - Booking\n  - Travel\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMADEUS_API_KEY: AMADEUS_API_KEY\n    AMADEUS_API_SECRET: AMADEUS_API_SECRET\n    AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\ncapability:\n  consumes:\n  - import: flight-offers-search\n    location: ./shared/flight-offers-search.yaml\n  - import: hotel-search\n    location: ./shared/hotel-search.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amadeus-travel-booking-api\n    description: Unified travel booking REST API.\n    resources:\n    - path: /v1/flights/offers\n      name: flight-offers\n      description: Flight search.\n   \
   \   operations:\n      - method: GET\n        name: search-flights\n        description: Search available flights.\n        call: flight-offers-search.search-flight-offers\n        with:\n          originLocationCode: rest.originLocationCode\n          destinationLocationCode: rest.destinationLocationCode\n          departureDate: rest.departureDate\n          adults: rest.adults\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/hotels/offers\n      name: hotel-offers\n      description: Hotel search.\n      operations:\n      - method: GET\n        name: search-hotels\n        description: Search available hotels.\n        call: hotel-search.search-hotel-offers\n        with:\n          hotelIds: rest.hotelIds\n          checkInDate: rest.checkInDate\n          checkOutDate: rest.checkOutDate\n          adults: rest.adults\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amadeus-travel-booking-mcp\n\

@@ -82,79 +82,79 @@ personas: []
 provider_name: F5 Networks
 provider_slug: f5-networks
 search_terms:
-- application delivery
-- list virtual servers
-- remove a pool member
-- automation
-- list nodes
-- delete pool member
-- create a new virtual server
-- list http profiles
-- get details of a pool member
-- get details of a specific node
-- list all nodes
-- delete pool
-- edge computing
-- multi-cloud
-- f5
-- manage a specific virtual server
-- network management
-- delete node
-- add pool member
+- list http traffic profiles
+- waf
 - manage a specific node
+- automation
+- delete virtual server
+- update pool member
+- update pool
+- create virtual server
+- list all pools
+- list all virtual servers
+- list all server pools
+- network management
+- create a new pool
+- list pool members
+- delete a node
+- list pools
+- update node
+- get details of a specific node
+- update a virtual server
+- update a pool member
+- delete node
+- application delivery
+- load balancing
+- get details of a pool member
+- list virtual servers
+- list tcp profiles
+- manage pool members
+- create node
+- list all virtual servers on the big-ip
+- list members of a pool
+- edge computing
+- create a new virtual server
+- get pool details
+- add a pool member
+- list nodes
+- list all backend nodes
+- manage virtual servers that direct client traffic
+- update a pool
+- list tcp traffic profiles
+- update virtual server
+- remove a pool member
+- create a node
+- list client ssl profiles
+- delete a pool
+- add a member to a pool
+- list all nodes
+- get virtual server details
+- manage a specific virtual server
+- get details of a specific virtual server
+- manage a specific pool
+- delete a virtual server
+- kubernetes
+- security
+- manage backend nodes
+- get pool
+- get node details
+- manage server pools
+- delete pool
+- get node
+- get details of a specific pool
+- get virtual server
+- delete pool member
+- multi-cloud
+- api gateway
 - nginx
 - create a new backend node
-- waf
-- manage a specific pool
-- get node
-- get pool member
-- list tcp profiles
-- list all virtual servers on the big-ip
-- manage pool members
-- list client ssl profiles
-- update a pool
-- list http traffic profiles
-- update a virtual server
-- load balancing
 - create pool
-- list tcp traffic profiles
-- api gateway
-- delete a node
-- manage virtual servers that direct client traffic
-- list pools
-- list all pools
-- get details of a specific virtual server
-- list all server pools
-- list members of a pool
-- delete virtual server
-- get details of a specific pool
-- kubernetes
-- add a member to a pool
-- update a pool member
-- get virtual server details
-- update virtual server
-- update pool
-- get pool
-- list all backend nodes
-- delete a pool
-- update pool member
-- add a pool member
-- delete a virtual server
-- get pool details
-- update node
-- list pool members
 - view traffic profiles
-- create virtual server
-- get node details
-- manage backend nodes
-- security
-- get virtual server
-- list all virtual servers
-- create a node
-- manage server pools
+- get pool member
+- f5
 - update a node
-- create a new pool
-- create node
+- list http profiles
+- add pool member
 slug: application-delivery
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"F5 Application Delivery\"\n  description: \"Unified workflow for managing application delivery infrastructure including virtual servers, server pools, backend nodes, and traffic profiles on F5 BIG-IP. Used by network administrators and DevOps engineers for load balancing configuration and application traffic management.\"\n  tags:\n    - F5\n    - Application Delivery\n    - Load Balancing\n    - Network Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BIGIP_USERNAME: BIGIP_USERNAME\n      BIGIP_PASSWORD: BIGIP_PASSWORD\n\ncapability:\n  consumes:\n    - import: bigip-icontrol\n      location: ./shared/bigip-icontrol-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: f5-application-delivery-api\n      description: \"Unified REST API for F5 BIG-IP application delivery management.\"\n      resources:\n        - path: /v1/virtual-servers\n\
   \          name: virtual-servers\n          description: \"Manage virtual servers that direct client traffic\"\n          operations:\n            - method: GET\n              name: list-virtual-servers\n              description: \"List all virtual servers\"\n              call: \"bigip-icontrol.list-virtual-servers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-virtual-server\n              description: \"Create a new virtual server\"\n              call: \"bigip-icontrol.create-virtual-server\"\n              with:\n                name: \"rest.name\"\n                destination: \"rest.destination\"\n                pool: \"rest.pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/virtual-servers/{virtualName}\n          name: virtual-server\n          description: \"Manage a specific virtual server\"\

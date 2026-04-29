@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- onboard a new customer
-- product and service catalog
-- billing
-- telecom
-- Billing Team
-- browse the service catalog and available plans
-- add a service subscription to a customer account
-- 5g
 - list subscriptions for a customer
-- telecom customer account management
-- manages telco bss operations and system configuration
-- create customer
-- customer subscription management
-- Customer Care Agent
 - list invoices for a customer
-- BSS Operator
-- manages invoicing, payments, and revenue assurance
-- customer management
-- amdocs
 - list products
-- mvno
-- list telecom customer accounts
-- handles customer inquiries and account management
-- list all customer accounts
-- customer billing invoices
-- list service subscriptions for a customer
-- retrieve billing invoices for a customer
+- Customer Care Agent
 - oss
-- add a service subscription
+- handles customer inquiries and account management
+- add a service subscription to a customer account
+- billing
 - list invoices
-- browse available products and plans
-- onboard a new telecom customer
-- list subscriptions
-- saas
-- list customers
-- create subscription
-- unified bss workflow for customer onboarding, billing, and service management
+- product and service catalog
+- mvno
 - bss
+- customer management
+- browse available products and plans
+- telecom customer account management
+- customer billing invoices
+- list all customer accounts
+- create subscription
+- retrieve billing invoices for a customer
+- telecom
+- list subscriptions
+- create customer
+- saas
+- 5g
+- browse the service catalog and available plans
+- manages telco bss operations and system configuration
+- list telecom customer accounts
+- list service subscriptions for a customer
+- customer subscription management
+- onboard a new customer
+- amdocs
+- list customers
+- Billing Team
+- onboard a new telecom customer
+- manages invoicing, payments, and revenue assurance
+- unified bss workflow for customer onboarding, billing, and service management
+- BSS Operator
+- add a service subscription
 slug: telco-customer-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amdocs Telco Customer Management\n  description: >-\n    Unified workflow for telecom operators managing customer accounts, subscriptions,\n    billing, and service catalog via Amdocs connectX BSS API. Supports BSS operators,\n    customer care agents, and billing teams.\n  tags:\n    - Amdocs\n    - Telecom\n    - BSS\n    - Customer Management\n    - Billing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMDOCS_CLIENT_ID: AMDOCS_CLIENT_ID\n      AMDOCS_CLIENT_SECRET: AMDOCS_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: amdocs-connectx\n      location: ./shared/connectx-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: amdocs-telco-crm-api\n      description: Unified REST API for telco customer management workflows.\n      resources:\n        - path: /v1/customers\n          name: customers\n          description: Telecom customer account\
   \ management\n          operations:\n            - method: GET\n              name: list-customers\n              description: List all customer accounts\n              call: \"amdocs-connectx.list-customers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: Onboard a new customer\n              call: \"amdocs-connectx.create-customer\"\n              with:\n                firstName: \"rest.firstName\"\n                lastName: \"rest.lastName\"\n                email: \"rest.email\"\n                customerType: \"rest.customerType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: Customer subscription management\n          operations:\n            - method: GET\n              name: list-subscriptions\n\

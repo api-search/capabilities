@@ -35,43 +35,43 @@ personas: []
 provider_name: AhaSend
 provider_slug: ahasend
 search_terms:
-- developer tools
-- get deliverability stats
-- list webhooks
-- list configured sending domains and their dns verification status
-- webhooks
-- webhook and route configuration for email events
-- send a transactional email message via ahasend
-- email delivery statistics
-- deliverability
-- send emails, manage domains, configure webhooks, and monitor delivery statistics
-- list messages
-- get transactional email deliverability statistics and metrics
-- configuring and validating sending domains
-- list suppressed email addresses (bounces, complaints, unsubscribes)
 - managing email suppression lists
-- list email messages
-- manage sending domains
-- Developer
-- list domains
-- list suppressions
-- list suppressed addresses
-- list sent email messages with delivery status
-- smtp
-- transactional email
-- sending and tracking transactional emails
-- list configured webhooks for email event notifications
-- send email
-- send a transactional email
-- manage event webhooks
-- manage email suppressions
-- DevOps Engineer
-- send message
-- application developer integrating transactional email into their application
-- email
-- send and retrieve transactional email messages
 - infrastructure engineer monitoring email delivery health and managing domains
+- email delivery statistics
+- list sent email messages with delivery status
+- developer tools
+- smtp
+- webhook and route configuration for email events
+- email
+- manage email suppressions
+- get transactional email deliverability statistics and metrics
+- list configured webhooks for email event notifications
+- list suppressions
+- send a transactional email message via ahasend
+- DevOps Engineer
+- list email messages
+- send emails, manage domains, configure webhooks, and monitor delivery statistics
+- list domains
+- sending and tracking transactional emails
+- list suppressed addresses
+- Developer
+- deliverability
+- list configured sending domains and their dns verification status
+- get deliverability stats
+- transactional email
+- webhooks
 - get deliverability statistics
+- manage event webhooks
+- list suppressed email addresses (bounces, complaints, unsubscribes)
+- send email
+- configuring and validating sending domains
+- list messages
+- manage sending domains
+- list webhooks
+- application developer integrating transactional email into their application
+- send and retrieve transactional email messages
+- send a transactional email
+- send message
 slug: email-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AhaSend Email Operations\"\n  description: \"Unified workflow for sending transactional emails, managing domains, configuring webhooks, and monitoring delivery statistics. Used by developers integrating email notifications into applications.\"\n  tags:\n    - Email\n    - Transactional Email\n    - Developer Tools\n    - Webhooks\n    - Deliverability\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AHASEND_API_KEY: AHASEND_API_KEY\n      AHASEND_ACCOUNT_ID: AHASEND_ACCOUNT_ID\n\ncapability:\n  consumes:\n    - import: ahasend\n      location: ./shared/ahasend-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ahasend-email-ops-api\n      description: \"Unified REST API for AhaSend email operations.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Send and retrieve transactional email messages\"\n\
   \          operations:\n            - method: GET\n              name: list-messages\n              description: \"List email messages\"\n              call: \"ahasend.list-messages\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-message\n              description: \"Send a transactional email\"\n              call: \"ahasend.send-message\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/domains\n          name: domains\n          description: \"Manage sending domains\"\n          operations:\n            - method: GET\n              name: list-domains\n              description: \"List domains\"\n              call: \"ahasend.list-domains\"\n              with:\n      \

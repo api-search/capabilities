@@ -9,10 +9,10 @@ personas: []
 provider_name: Baxter International
 provider_slug: baxter-international
 search_terms:
-- healthcare
-- infusion pumps
 - connected health
 - medical devices
+- infusion pumps
+- healthcare
 - patient monitoring
 slug: medical-device-connectivity
 source_yaml: "capability:\n  name: Baxter DeviceBridge Medical Device Connectivity\n  description: >-\n    Baxter's DeviceBridge platform capabilities for connecting medical devices\n    to hospital IT systems, EMRs, and clinical data repositories using\n    HL7 FHIR and proprietary connectivity standards.\n  categories:\n    - name: Device Data Transfer\n      description: Secure transfer of clinical data from Baxter medical devices to hospital systems.\n      operations:\n        - name: Get Device Data\n          description: Retrieve latest clinical readings from a connected Baxter device.\n        - name: Stream Device Observations\n          description: Subscribe to real-time data stream from a medical device.\n        - name: Get Device Status\n          description: Retrieve operational status and alarm state of a connected device.\n    - name: Infusion Pump Integration\n      description: Infusion therapy data integration for smart pump documentation.\n      operations:\n     \

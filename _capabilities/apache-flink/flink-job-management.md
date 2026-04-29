@@ -27,43 +27,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- stateful computing
+- stream processing
+- get job
+- data engineering
+- batch processing
+- Platform Operator
+- big data
+- list all flink streaming and batch jobs
+- manage and monitor flink streaming and batch jobs
+- operators managing the flink cluster and ensuring job reliability
+- get detailed status and information for a specific flink job
+- real-time analytics
+- list jobs
+- shut down the flink cluster
+- shutdown cluster
 - list all flink jobs
 - list all taskmanagers
+- job performance metrics
+- get performance metrics for a flink job
+- flink job management
+- metrics, checkpoints, and cluster health monitoring
+- get metrics for a flink job
+- stateful computing
+- Data Engineer
+- get details of a specific job
+- apache flink
+- job submission, tracking, and lifecycle management
+- job management
 - list all taskmanagers in the flink cluster
+- apache
 - monitoring
+- list taskmanagers
+- get job metrics
+- list flink jobs
+- get flink job
+- engineers submitting and monitoring flink streaming and batch jobs
 - open source
 - taskmanager management
-- manage and monitor flink streaming and batch jobs
-- list jobs
-- get flink job
-- shut down the flink cluster
-- get details of a specific job
-- real-time analytics
-- batch processing
-- get job
-- operators managing the flink cluster and ensuring job reliability
-- get performance metrics for a flink job
-- list taskmanagers
-- shutdown cluster
-- Data Engineer
-- apache
-- data engineering
-- get metrics for a flink job
-- stream processing
-- list flink jobs
-- metrics, checkpoints, and cluster health monitoring
-- engineers submitting and monitoring flink streaming and batch jobs
-- get job metrics
-- job management
-- big data
-- job performance metrics
-- flink job management
-- job submission, tracking, and lifecycle management
-- get detailed status and information for a specific flink job
-- list all flink streaming and batch jobs
-- Platform Operator
-- apache flink
 slug: flink-job-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Flink Job Management\"\n  description: \"Unified capability for managing and monitoring Apache Flink streaming and batch jobs — submitting, tracking, monitoring metrics, and managing the cluster. Designed for data engineers and platform operators.\"\n  tags:\n    - Apache Flink\n    - Stream Processing\n    - Job Management\n    - Data Engineering\n    - Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      FLINK_JOBMANAGER_URL: FLINK_JOBMANAGER_URL\ncapability:\n  consumes:\n    - import: flink-rest\n      location: ./shared/flink-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flink-management-api\n      description: \"Unified REST API for Apache Flink job management.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: Flink job management\n          operations:\n            - method: GET\n      \
   \        name: list-jobs\n              description: List all Flink jobs\n              call: \"flink-rest.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-job\n              description: Get details of a specific job\n              call: \"flink-rest.get-job\"\n              with:\n                jobid: \"rest.jobid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/taskmanagers\n          name: taskmanagers\n          description: TaskManager management\n          operations:\n            - method: GET\n              name: list-taskmanagers\n              description: List all TaskManagers\n              call: \"flink-rest.list-taskmanagers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobid}/metrics\n          name:\

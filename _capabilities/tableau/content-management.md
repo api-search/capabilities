@@ -43,51 +43,51 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- get site
-- update site configuration
-- list all sites on the server
-- get data source
-- list workbooks on a site
-- data visualization
-- delete a site
-- update site
-- delete workbook
-- analytics
-- get details of a specific workbook
-- delete a workbook
-- business intelligence
-- delete a data source
-- dashboards
-- workbook operations
-- sign in
-- get site details
-- list data sources on a site
-- data source operations
-- add a user to a site
-- list data sources
-- tableau
-- list users
-- sign out
-- single site operations
-- list users on a site
-- get details of a specific site
-- delete site
-- delete data source
 - list sites
-- add user
+- data visualization
+- get details of a specific site
 - create site
-- administration
-- site management
-- get workbook
-- get details of a specific data source
-- list workbooks
-- content management
-- sign out from tableau
+- list data sources on a site
 - user operations
-- list all sites
-- create a new site
-- update a site
+- get site
+- single site operations
+- get workbook
+- list data sources
+- sign out from tableau
+- delete a data source
+- delete data source
+- delete a workbook
+- content management
+- sign in
+- get details of a specific workbook
 - sign in to tableau server or cloud
+- add user
+- business intelligence
+- data source operations
+- delete workbook
+- list workbooks on a site
+- workbook operations
+- dashboards
+- get details of a specific data source
+- get site details
+- sign out
+- administration
+- update a site
+- update site
+- list users
+- analytics
+- get data source
+- update site configuration
+- delete site
+- add a user to a site
+- tableau
+- list all sites on the server
+- site management
+- create a new site
+- list all sites
+- list workbooks
+- list users on a site
+- delete a site
 slug: content-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Tableau Content Management\"\n  description: \"Workflow for managing Tableau content including workbooks, data sources, views, sites, users, and permissions. Used by Tableau administrators and content managers.\"\n  tags:\n    - Tableau\n    - Content Management\n    - Analytics\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      TABLEAU_AUTH_TOKEN: TABLEAU_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: tableau-rest\n      location: ./shared/tableau-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: tableau-content-api\n      description: \"Unified REST API for Tableau content management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          description: \"Site management\"\n          operations:\n            - method: GET\n              name: list-sites\n              description: \"List all sites\"\
   \n              call: \"tableau-rest.query-sites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-site\n              description: \"Create a new site\"\n              call: \"tableau-rest.create-site\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sites/{siteId}\n          name: site\n          description: \"Single site operations\"\n          operations:\n            - method: GET\n              name: get-site\n              description: \"Get site details\"\n              call: \"tableau-rest.query-site\"\n              with:\n                siteId: \"rest.siteId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-site\n              description: \"Update a site\"\n              call: \"tableau-rest.update-site\"\

@@ -31,48 +31,48 @@ personas: []
 provider_name: Activepieces
 provider_slug: activepieces
 search_terms:
-- get details of a specific flow execution run
-- creates automation workflows using the visual builder
-- automation
-- builds custom integrations using the api and typescript pieces
-- activepieces
-- create flow
-- project management
-- open source
 - list connections
+- third-party app connections and piece management
+- ai agents
+- automation
+- list flow execution runs
+- builds custom integrations using the api and typescript pieces
+- list projects
+- list all activepieces projects
+- create flow
 - retrieve a specific automation flow by id
-- list all app connections available in the project
-- build and monitor automation flows, manage connections, debug executions
-- app connection management
 - list all automation flows in the activepieces project
 - integration
-- list projects
-- project, user, and organization administration
-- Developer
-- automation flow management
-- get flow
-- list all activepieces projects
-- execution monitoring
 - create a new automation flow
-- workflow
-- list app connections
-- Operations Engineer
-- list flow runs
-- no-code
-- create a new automation flow in activepieces
-- list execution history for automation flows
-- get flow run
-- list automation flows
-- workflow automation and flow orchestration
-- delete flow
-- mcp
-- third-party app connections and piece management
 - No Code Builder
+- workflow automation and flow orchestration
+- list app connections
+- Developer
 - monitors flow execution, manages connections, troubleshoots failures
-- ai agents
-- list flows
-- list flow execution runs
+- list flow runs
+- get flow
+- activepieces
+- creates automation workflows using the visual builder
+- build and monitor automation flows, manage connections, debug executions
+- workflow
+- no-code
+- Operations Engineer
+- list automation flows
+- app connection management
+- project management
+- get details of a specific flow execution run
+- execution monitoring
+- list execution history for automation flows
+- project, user, and organization administration
+- get flow run
+- list all app connections available in the project
+- delete flow
+- open source
+- create a new automation flow in activepieces
+- mcp
+- automation flow management
 - delete an automation flow
+- list flows
 slug: workflow-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Activepieces Workflow Automation\"\n  description: \"Unified workflow capability for building, managing, monitoring, and debugging automation flows. Used by developers and no-code builders to orchestrate integrations across 400+ app connections.\"\n  tags:\n    - Activepieces\n    - Automation\n    - No-Code\n    - Workflow\n    - Integration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVEPIECES_API_KEY: ACTIVEPIECES_API_KEY\n      ACTIVEPIECES_PROJECT_ID: ACTIVEPIECES_PROJECT_ID\n\ncapability:\n  consumes:\n    - import: activepieces\n      location: ./shared/activepieces.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-automation-api\n      description: \"Unified REST API for workflow automation with Activepieces.\"\n      resources:\n        - path: /v1/flows\n          name: flows\n          description: \"Automation flow management\"\
   \n          operations:\n            - method: GET\n              name: list-flows\n              description: \"List automation flows\"\n              call: \"activepieces.list-flows\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-flow\n              description: \"Create a new automation flow\"\n              call: \"activepieces.create-flow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/flow-runs\n          name: flow-runs\n          description: \"Execution monitoring\"\n          operations:\n            - method: GET\n              name: list-flow-runs\n              description: \"List flow execution runs\"\n              call: \"activepieces.list-flow-runs\"\n              with:\n                projectId: \"rest.projectId\"\n \

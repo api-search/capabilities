@@ -67,67 +67,67 @@ personas: []
 provider_name: Red Hat Satellite
 provider_slug: red-hat-satellite
 search_terms:
-- update content view
-- list content views
-- list all managed hosts.
-- patch management
-- register a new host.
-- create lifecycle environment
-- promote a content view version to a lifecycle environment.
-- host management
-- publish content view
-- show details for a specific organization.
-- list lifecycle environments
-- update host attributes.
-- update host
-- show content view
-- lifecycle environment management.
-- register a new host with satellite.
-- promote content view version
-- delete content view
 - get details for a content view.
-- list organizations
-- delete a host from satellite.
-- delete a host.
-- execute a power action on a host (start, stop, reboot).
-- get host details.
-- get content view details.
-- subscription management
-- subscription management.
-- content view management.
-- delete host
-- list organizations.
-- list lifecycle environments for an organization.
-- list hosts
-- publish a new version of a content view.
-- show host
-- get details for a specific host.
-- list subscriptions for an organization.
-- list all organizations.
-- show organization
-- red hat satellite
-- list all hosts registered with satellite.
-- host management endpoints.
-- update a content view.
-- delete a content view.
-- create a new content view.
-- list all content views.
-- create a lifecycle environment.
-- lifecycle management
-- list subscriptions
-- configuration management
-- host power action
 - list lifecycle environments.
-- create a new lifecycle environment.
-- create host
-- individual host management.
-- content management
-- create content view
+- configuration management
+- show host
+- create a lifecycle environment.
+- lifecycle environment management.
+- update content view
 - organization management.
-- list content views in an organization.
+- host power action
+- list lifecycle environments for an organization.
+- list all content views.
 - individual content view management.
-- list subscriptions.
+- show details for a specific organization.
+- delete host
+- list lifecycle environments
+- content view management.
+- get host details.
+- list organizations.
+- subscription management
+- show organization
+- patch management
+- list all managed hosts.
+- update host
+- list subscriptions
+- delete a host from satellite.
+- show content view
+- list all organizations.
+- individual host management.
+- list subscriptions for an organization.
+- list content views in an organization.
+- publish content view
+- create a new lifecycle environment.
+- list hosts
+- update a content view.
+- publish a new version of a content view.
+- create host
+- host management endpoints.
+- get details for a specific host.
+- promote a content view version to a lifecycle environment.
+- list all hosts registered with satellite.
+- execute a power action on a host (start, stop, reboot).
+- promote content view version
+- delete a host.
+- create content view
+- lifecycle management
+- red hat satellite
+- register a new host.
+- update host attributes.
+- list content views
+- get content view details.
+- host management
+- delete content view
+- delete a content view.
+- list organizations
 - systems management
+- list subscriptions.
+- create a new content view.
+- create lifecycle environment
+- register a new host with satellite.
+- subscription management.
+- content management
 slug: systems-lifecycle-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Satellite Systems Lifecycle Management\"\n  description: \"Unified workflow for managing the complete lifecycle of physical, virtual, and cloud hosts including provisioning, content management, patching, and subscription management. Used by system administrators and platform engineers.\"\n  tags:\n    - Red Hat Satellite\n    - Systems Management\n    - Lifecycle Management\n    - Host Management\n    - Content Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SATELLITE_USERNAME: SATELLITE_USERNAME\n      SATELLITE_PASSWORD: SATELLITE_PASSWORD\n\ncapability:\n  consumes:\n    - import: satellite-api\n      location: ./shared/satellite-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: satellite-lifecycle-api\n      description: \"Unified REST API for Red Hat Satellite systems lifecycle management.\"\n      resources:\n        - path:\
   \ /v1/hosts\n          name: hosts\n          description: \"Host management endpoints.\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List all managed hosts.\"\n              call: \"satellite-api.list-hosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-host\n              description: \"Register a new host.\"\n              call: \"satellite-api.create-host\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts/{id}\n          name: host-details\n          description: \"Individual host management.\"\n          operations:\n            - method: GET\n              name: show-host\n              description: \"Get host details.\"\n              call: \"satellite-api.show-host\"\n              with:\n                id: \"rest.id\"\n   \

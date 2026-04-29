@@ -27,43 +27,43 @@ personas: []
 provider_name: Allianz Technology Standards
 provider_slug: allianz-technology-standards
 search_terms:
-- guidelines
-- get standard definition
-- checking and enforcing compliance with api design standards
-- check an openapi specification for compliance with allianz technology standards and get violations
-- get the full rules and definition of a specific allianz technology standard
-- enterprise architecture
-- team responsible for enforcing allianz api and technology standards across engineering teams
 - check compliance
-- API Developer
-- pagination guidelines
-- Platform Governance Team
-- list all allianz technology standards categorized by api-design, backend, architecture, security, and testing
-- get pagination standard
-- compliance checking
-- 'get allianz rest api pagination standard: pagesize, page, totalrequired parameters and response headers'
 - best practices
-- check api compliance
-- software development
-- architect responsible for allianz technology standards governance and enforcement
-- list technology standards
-- get standard
-- openapi
-- get webhook standard
-- api design
-- compliance
-- list standards
-- get technology standard
-- technology standards
+- Platform Governance Team
+- get standard definition
 - 'get allianz webhook implementation standard: technical/functional types, https, ip whitelisting requirements'
-- standards catalog
 - Enterprise Architect
 - get pagination guidelines
+- compliance checking
+- get the full rules and definition of a specific allianz technology standard
+- api design
 - individual standard detail
+- openapi
+- 'get allianz rest api pagination standard: pagesize, page, totalrequired parameters and response headers'
+- compliance
+- enterprise architecture
+- get webhook standard
+- get pagination standard
+- check api compliance
 - query standards and check api compliance for architects and developers
+- architect responsible for allianz technology standards governance and enforcement
+- get standard
+- list all allianz technology standards categorized by api-design, backend, architecture, security, and testing
 - developer building apis on the allianz platform who needs to comply with technology standards
+- technology standards
+- list technology standards
+- API Developer
+- check an openapi specification for compliance with allianz technology standards and get violations
+- team responsible for enforcing allianz api and technology standards across engineering teams
 - governance
+- software development
+- guidelines
 - defining and maintaining allianz technology standards
+- list standards
+- pagination guidelines
+- standards catalog
+- get technology standard
+- checking and enforcing compliance with api design standards
 slug: standards-compliance-workflow
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Allianz Standards Compliance Workflow\"\n  description: \"Workflow capability for architects and developers querying Allianz technology standards and checking API compliance against documented guidelines.\"\n  tags:\n    - Technology Standards\n    - API Design\n    - Compliance\n    - Enterprise Architecture\n    - Governance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALLIANZ_STANDARDS_CLIENT_ID: ALLIANZ_STANDARDS_CLIENT_ID\n      ALLIANZ_STANDARDS_CLIENT_SECRET: ALLIANZ_STANDARDS_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: allianz-technology-standards\n      location: ./shared/standards-compliance.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: allianz-standards-compliance-api\n      description: \"Unified REST API for Allianz technology standards compliance workflows.\"\n      resources:\n        - path: /v1/standards\n        \
   \  name: standards\n          description: \"Standards catalog\"\n          operations:\n            - method: GET\n              name: list-standards\n              description: \"List technology standards\"\n              call: \"allianz-technology-standards.list-standards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/standards/{standard_id}\n          name: standard-detail\n          description: \"Individual standard detail\"\n          operations:\n            - method: GET\n              name: get-standard\n              description: \"Get standard definition\"\n              call: \"allianz-technology-standards.get-standard\"\n              with:\n                standard_id: \"rest.standard_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/compliance/check\n          name: compliance\n          description: \"Compliance checking\"\

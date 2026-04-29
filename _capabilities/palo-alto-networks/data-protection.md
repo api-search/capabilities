@@ -137,188 +137,188 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- network security engineer
-- get email incident
-- cloud security
-- get dlp snippets
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- onboard a new saas application in sspm.
-- sase
-- designs and implements network security architectures and policies.
-- update a specific saas security incident.
-- manage dlp incidents.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- get recipients for a specific email dlp incident.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- onboard app
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- access email incident recipients.
+- digital experience monitoring, log management, and best practice assessment.
+- update a dlp incident.
+- retrieve a specific data pattern by id.
 - update posture check status
-- soc analyst
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- cloud security
+- threat intel analyst
+- list available applications in the sspm catalog.
+- monitors network health, performance, and digital experience metrics.
+- executes containment, eradication, and recovery actions during security incidents.
+- update the status of an sspm posture check.
+- remove an onboarded saas application.
+- list email dlp incidents with optional filters.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- retrieve a list of monitored saas assets.
+- proactively searches for threats and iocs across telemetry data.
+- list users across saas applications.
+- manage dlp incidents.
+- palo alto networks
 - retrieve a list of users across saas applications.
-- sre
-- network security
-- get log forwarding configuration settings.
-- data loss prevention, saas security monitoring, and identity security posture.
-- retrieve a specific dlp data pattern by id.
+- compliance team
+- manage sspm jira integrations.
+- list data patterns
+- get a specific saas asset.
 - retrieve a specific email dlp incident by id.
+- soar
+- retrieve activity log for a specific user.
+- get log forwarding settings
+- threat intelligence
+- identity security posture
+- mssp operator
+- list saas assets
+- get attachments for a specific email dlp incident.
+- get saas asset
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- list jira integrations
+- conducts automated adversarial testing against ai systems and llm applications.
+- manages logging infrastructure, integrations, and platform automation.
+- list all jira integrations.
 - manage saas security incidents.
+- list dlp incidents with optional filters for severity and status.
+- platform engineer
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- analyzes suspicious files and samples for malware characteristics.
+- cloud security posture management, compliance monitoring, and workload protection.
+- retrieve a specific dlp data pattern by id.
+- manage sspm posture checks.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- data protection analyst
+- list posture checks
+- update a dlp incident status or assignee.
+- list saas users
+- update a specific saas security incident.
+- get email recipients
+- list saas applications
+- get recipients for a specific email dlp incident.
+- list all onboarded saas applications.
+- compliance officer
+- get data pattern
+- ai security engineer
+- designs sase and sd-wan network architectures for secure remote access.
+- update email verdict
+- network operations
+- incident responder
+- get a specific sspm posture check by id.
+- xdr
+- list saas incidents
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- get a dlp summary report for a given time range.
+- get email incident
+- list monitored saas assets.
+- tenant operator
+- list email dlp incidents.
+- list dlp data patterns.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- get log forwarding configuration settings.
+- get a specific data pattern.
+- get or update a specific dlp incident.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- list all sspm jira integrations.
+- red team operator
+- list saas security incidents with optional filters.
+- designs and implements network security architectures and policies.
+- get dlp snippets
+- update the verdict for an email dlp incident.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- saas security
+- iam admin
+- update saas incident
+- list connected saas applications.
+- retrieve a list of saas security incidents.
+- list posture checks with optional filters.
+- ai runtime security scanning and automated red teaming for ai applications.
+- list onboarded apps
+- list email incidents
+- get a specific email dlp incident.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- sase
+- sre
+- remove app
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- list all onboarded saas applications in sspm.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- network security
+- browse the sspm application catalog.
+- get saas incident
+- list sspm posture checks with optional filters.
+- update the status of a posture check.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- enterprise browser policy management and secure browsing.
+- manages service accounts, roles, and access policies for platform api access.
+- get a specific posture check by id.
+- identity and access management, tenant hierarchies, and subscription management.
+- list dlp incidents with optional filters.
+- update posture check status.
+- get dlp incident
+- onboard a new saas application.
+- data loss prevention, saas security monitoring, and identity security posture.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- firewall policy management, network objects, and cloud-native firewall configuration.
 - access dlp report summaries.
+- saas security admin
+- retrieve a specific dlp incident by id.
+- cloud security engineer
+- subscription manager
+- cybersecurity
+- onboard a new saas application in sspm.
+- get user activity log.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- get a specific posture check.
+- list dlp incidents
+- malware researcher
+- data protection
+- get dlp report summary
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- get or update a specific saas security incident.
+- get email attachments
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manages multi-tenant security operations at scale for managed service providers.
+- dlp
+- list available dlp data patterns.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- browser security admin
+- firewall
+- soc analyst
+- network security engineer
+- manages enterprise browser policies and secure browsing configurations.
+- sd wan operator
 - create a new jira integration for sspm.
 - access email incident attachments.
-- manages enterprise browser policies and secure browsing configurations.
-- retrieve a specific data pattern by id.
-- get a specific sspm posture check by id.
-- manages service accounts, roles, and access policies for platform api access.
-- list users across saas applications.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- create jira integration
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- manages multi-tenant security operations at scale for managed service providers.
-- list posture checks with optional filters.
-- data protection
-- conducts automated adversarial testing against ai systems and llm applications.
-- proactively searches for threats and iocs across telemetry data.
-- list all sspm jira integrations.
-- dlp
-- get saas incident
-- list available dlp data patterns.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- update posture check status.
-- sd wan operator
-- get saas asset
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- list monitored saas assets.
-- list sspm posture checks with optional filters.
-- list all onboarded saas applications.
-- retrieve a list of monitored saas assets.
-- data protection analyst
-- analyzes suspicious files and samples for malware characteristics.
-- compliance officer
-- onboard a new saas application.
-- xdr
-- network architect
-- incident responder
-- get email attachments
-- investigates security incidents, triages alerts, and coordinates response actions.
-- remove an onboarded sspm application.
-- threat intel analyst
-- list dlp incidents with optional filters.
-- ai runtime security scanning and automated red teaming for ai applications.
-- remove an onboarded saas application from sspm.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- get user activity log.
-- investigates dlp incidents and manages sensitive data protection policies.
-- list onboarded apps
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- list jira integrations
-- malware researcher
-- list email dlp incidents with optional filters.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- cloud security engineer
-- get data snippets for a specific dlp incident.
-- list saas applications
-- list saas users
-- secures ai applications with runtime scanning and vulnerability assessment.
-- cloud security posture management, compliance monitoring, and workload protection.
-- list email incidents
-- threat intelligence
-- update the verdict for an email dlp incident.
-- iam admin
-- saas security admin
 - manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- manage enterprise browser policies, user sessions, and deployments.
-- manage email incident verdicts.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- update email verdict
-- remove an onboarded saas application.
-- update a dlp incident status or assignee.
-- get attachments for a specific email dlp incident.
-- retrieve a list of saas security incidents.
-- retrieve a list of connected saas applications.
-- get a specific posture check.
-- list posture checks
-- update dlp incident
-- tenant operator
-- update saas incident
-- get a specific email dlp incident.
-- get a dlp summary report for a given time range.
-- retrieve details for a specific saas security incident.
-- enterprise it
-- monitors network health, performance, and digital experience metrics.
-- list email dlp incidents.
-- get dlp report summary
-- list dlp incidents
-- list all onboarded saas applications in sspm.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
 - create a new jira integration.
-- retrieve a specific dlp incident by id.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- identity and access management, tenant hierarchies, and subscription management.
-- ai security engineer
-- update a dlp incident.
-- palo alto networks
-- vulnerability manager
-- subscription manager
-- browser security admin
-- manage onboarded sspm applications.
-- get dlp incident
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- get a specific saas asset.
-- get or update a specific dlp incident.
-- list available applications in the catalog.
-- list saas security incidents with optional filters.
-- retrieve activity log for a specific user.
-- manage sspm posture checks.
-- retrieve log forwarding configuration settings.
-- get or update a specific saas security incident.
-- retrieve details for a specific saas asset.
-- browse the sspm application catalog.
-- firewall admin
-- get email recipients
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- access dlp incident data snippets.
+- enterprise it
 - get posture check
-- network operations
-- get log forwarding settings
-- designs sase and sd-wan network architectures for secure remote access.
-- list saas assets
-- list available applications in the sspm catalog.
-- saas security
-- list saas incidents
-- identity security posture
-- list connected saas applications.
-- get user activities
-- remove app
-- digital experience monitoring, log management, and best practice assessment.
-- list available data patterns.
-- access email incident recipients.
-- threat hunter
-- list dlp incidents with optional filters for severity and status.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- soar
-- sase admin
-- list dlp data patterns.
-- get a specific data pattern.
-- update the status of an sspm posture check.
-- red team operator
-- manage sspm jira integrations.
+- list available applications in the catalog.
+- network architect
+- remove an onboarded sspm application.
+- manage onboarded sspm applications.
+- create jira integration
+- vulnerability manager
 - sspm
-- get a specific posture check by id.
+- manage enterprise browser policies, user sessions, and deployments.
+- threat hunter
+- get user activities
+- manage email incident verdicts.
 - list app catalog
-- platform engineer
-- get data pattern
-- list data patterns
-- list all jira integrations.
-- manages logging infrastructure, integrations, and platform automation.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- firewall
-- executes containment, eradication, and recovery actions during security incidents.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- enterprise browser policy management and secure browsing.
-- update the status of a posture check.
-- compliance team
-- mssp operator
+- investigates dlp incidents and manages sensitive data protection policies.
+- update dlp incident
+- firewall admin
+- onboard app
+- sase admin
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- get data snippets for a specific dlp incident.
+- access dlp incident data snippets.
+- retrieve a list of connected saas applications.
+- list available data patterns.
+- retrieve details for a specific saas security incident.
+- remove an onboarded saas application from sspm.
+- retrieve log forwarding configuration settings.
+- retrieve details for a specific saas asset.
 slug: data-protection
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Data Protection\"\n  description: \"Unified data protection capability for managing DLP incidents, email DLP events, SaaS security incidents and assets, and SaaS security posture checks across Enterprise DLP, Email DLP, SaaS Security, and SSPM APIs.\"\n  tags:\n    - Palo Alto Networks\n    - Data Protection\n    - DLP\n    - SaaS Security\n    - SSPM\n    - Identity Security Posture\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PALO_ALTO_DLP_TOKEN: PALO_ALTO_DLP_TOKEN\n      SAAS_SECURITY_TOKEN: SAAS_SECURITY_TOKEN\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: dlp\n      location: ./shared/dlp.yaml\n    - import: email-dlp\n      location: ./shared/email-dlp.yaml\n    - import: saas-security\n      location: ./shared/saas-security.yaml\n    - import: sspm\n      location: ./shared/sspm.yaml\n    - import:\
   \ identity-security-posture\n      location: ./shared/identity-security-posture.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: data-protection-api\n      description: \"Unified REST API for data protection workflows across Enterprise DLP, Email DLP, SaaS Security, and SSPM.\"\n      resources:\n\n        # -------------------------------------------------------\n        # DLP Incidents\n        # -------------------------------------------------------\n        - path: /v1/dlp-incidents\n          name: dlp-incidents\n          description: \"Manage DLP incidents.\"\n          operations:\n            - method: GET\n              name: list-dlp-incidents\n              description: \"List DLP incidents with optional filters.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n               \
@@ -354,32 +354,7 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks 
   \    # =============================================================\n    - type: mcp\n      port: 9095\n      namespace: data-protection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted data protection across Enterprise DLP, Email DLP, SaaS Security, and SSPM.\"\n      tools:\n\n        # ---------------------------------------------------------\n        # DLP\n        # ---------------------------------------------------------\n        - name: list-dlp-incidents\n          description: \"List DLP incidents with optional filters for severity and status.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of\
   \ results to return.\"\n              required: false\n            - name: severity\n              type: string\n              description: \"Filter by severity level.\"\n              required: false\n            - name: status\n              type: string\n              description: \"Filter by incident status.\"\n              required: false\n          call: \"dlp-api.list-incidents\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            severity: \"tools.severity\"\n            status: \"tools.status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dlp-incident\n          description: \"Retrieve a specific DLP incident by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description:\
   \ \"The DLP incident ID.\"\n              required: true\n          call: \"dlp-api.get-incident\"\n          with:\n            incident_id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-dlp-incident\n          description: \"Update a DLP incident status or assignee.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The DLP incident ID to update.\"\n              required: true\n            - name: status\n              type: string\n              description: \"New status for the incident.\"\n              required: false\n            - name: assignee\n              type: string\n              description: \"New assignee for the incident.\"\n              required: false\n          call: \"\
-  dlp-api.update-incident\"\n          with:\n            incident_id: \"tools.incident_id\"\n            status: \"tools.status\"\n            assignee: \"tools.assignee\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dlp-snippets\n          description: \"Get data snippets for a specific DLP incident.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The DLP incident ID.\"\n              required: true\n          call: \"dlp-api.get-incident-snippets\"\n          with:\n            incident_id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-data-patterns\n          description: \"List available DLP data patterns.\"\n          hints:\n\
-  \            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of results to return.\"\n              required: false\n          call: \"dlp-api.list-data-patterns\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-data-pattern\n          description: \"Retrieve a specific DLP data pattern by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: pattern_id\n              type: string\n\
-  \              description: \"The data pattern ID.\"\n              required: true\n          call: \"dlp-api.get-data-pattern\"\n          with:\n            id: \"tools.pattern_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dlp-report-summary\n          description: \"Get a DLP summary report for a given time range.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: start_date\n              type: string\n              description: \"Start date for the report period.\"\n              required: false\n            - name: end_date\n              type: string\n              description: \"End date for the report period.\"\n              required: false\n          call: \"dlp-api.get-report-summary\"\n          with:\n            start_date: \"tools.start_date\"\n            end_date:\
-  \ \"tools.end_date\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ---------------------------------------------------------\n        # Email DLP\n        # ---------------------------------------------------------\n        - name: list-email-incidents\n          description: \"List email DLP incidents with optional filters.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of results to return.\"\n              required: false\n            - name: status\n              type: string\n              description: \"Filter by incident status.\"\n              required: false\n    \
-  \        - name: severity\n              type: string\n              description: \"Filter by severity level.\"\n              required: false\n          call: \"email-dlp-api.list-email-incidents\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            status: \"tools.status\"\n            severity: \"tools.severity\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-email-incident\n          description: \"Retrieve a specific email DLP incident by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The email incident ID.\"\n              required: true\n          call: \"email-dlp-api.get-email-incident\"\n          with:\n            id: \"tools.incident_id\"\n       \
-  \   outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-email-verdict\n          description: \"Update the verdict for an email DLP incident.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The email incident ID.\"\n              required: true\n            - name: verdict\n              type: string\n              description: \"The verdict to set.\"\n              required: true\n            - name: reason\n              type: string\n              description: \"Reason for the verdict.\"\n              required: false\n          call: \"email-dlp-api.update-email-incident-verdict\"\n          with:\n            id: \"tools.incident_id\"\n            verdict: \"tools.verdict\"\n            reason: \"tools.reason\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: get-email-attachments\n          description: \"Get attachments for a specific email DLP incident.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The email incident ID.\"\n              required: true\n          call: \"email-dlp-api.get-email-incident-attachments\"\n          with:\n            id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-email-recipients\n          description: \"Get recipients for a specific email DLP incident.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name:\
-  \ incident_id\n              type: string\n              description: \"The email incident ID.\"\n              required: true\n          call: \"email-dlp-api.get-email-incident-recipients\"\n          with:\n            id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ---------------------------------------------------------\n        # SaaS Security\n        # ---------------------------------------------------------\n        - name: list-saas-incidents\n          description: \"Retrieve a list of SaaS security incidents.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description:\
-  \ \"Maximum number of results to return.\"\n              required: false\n            - name: status\n              type: string\n              description: \"Filter by incident status.\"\n              required: false\n            - name: severity\n              type: string\n              description: \"Filter by severity level.\"\n              required: false\n            - name: app_id\n              type: string\n              description: \"Filter by application ID.\"\n              required: false\n            - name: start_date\n              type: string\n              description: \"Start date for filtering.\"\n              required: false\n            - name: end_date\n              type: string\n              description: \"End date for filtering.\"\n              required: false\n          call: \"saas-security.list-incidents\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            status: \"tools.status\"\n            severity:\
-  \ \"tools.severity\"\n            app_id: \"tools.app_id\"\n            start_date: \"tools.start_date\"\n            end_date: \"tools.end_date\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-saas-incident\n          description: \"Retrieve details for a specific SaaS security incident.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The SaaS security incident ID.\"\n              required: true\n          call: \"saas-security.get-incident\"\n          with:\n            id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-saas-incident\n          description: \"Update a specific SaaS security incident.\"\n          hints:\n    \
-  \        readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The SaaS security incident ID.\"\n              required: true\n            - name: status\n              type: string\n              description: \"New status for the incident.\"\n              required: false\n            - name: assignee_id\n              type: string\n              description: \"New assignee ID for the incident.\"\n              required: false\n            - name: note\n              type: string\n              description: \"Note to add to the incident.\"\n              required: false\n          call: \"saas-security.update-incident\"\n          with:\n            id: \"tools.incident_id\"\n            status: \"tools.status\"\n            assignee_id: \"tools.assignee_id\"\n            note: \"tools.note\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: list-saas-assets\n          description: \"Retrieve a list of monitored SaaS assets.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: app_id\n              type: string\n              description: \"Filter by application ID.\"\n              required: false\n            - name: type\n              type: string\n              description: \"Filter by asset type.\"\n              required: false\n            - name: exposure\n              type: string\n              description: \"Filter by exposure level.\"\n              required: false\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number\
-  \ of results to return.\"\n              required: false\n          call: \"saas-security.list-assets\"\n          with:\n            app_id: \"tools.app_id\"\n            type: \"tools.type\"\n            exposure: \"tools.exposure\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-saas-asset\n          description: \"Retrieve details for a specific SaaS asset.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: asset_id\n              type: string\n              description: \"The SaaS asset ID.\"\n              required: true\n          call: \"saas-security.get-asset\"\n          with:\n            id: \"tools.asset_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n    \
-  \    - name: list-saas-applications\n          description: \"Retrieve a list of connected SaaS applications.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          call: \"saas-security.list-applications\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: list-saas-users\n          description: \"Retrieve a list of users across SaaS applications.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: app_id\n              type: string\n              description: \"Filter by application ID.\"\n              required: false\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type:\
-  \ integer\n              description: \"Maximum number of results to return.\"\n              required: false\n          call: \"saas-security.list-users\"\n          with:\n            app_id: \"tools.app_id\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-user-activities\n          description: \"Retrieve activity log for a specific user.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: user_id\n              type: string\n              description: \"The user ID.\"\n              required: true\n            - name: start_date\n              type: string\n              description: \"Start date for filtering activities.\"\n              required: false\n            - name: end_date\n              type: string\n \
-  \             description: \"End date for filtering activities.\"\n              required: false\n            - name: app_id\n              type: string\n              description: \"Filter by application ID.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of results to return.\"\n              required: false\n          call: \"saas-security.get-user-activities\"\n          with:\n            id: \"tools.user_id\"\n            start_date: \"tools.start_date\"\n            end_date: \"tools.end_date\"\n            app_id: \"tools.app_id\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-log-forwarding-settings\n          description: \"Retrieve log forwarding configuration settings.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld:\
-  \ true\n          call: \"saas-security.get-log-forwarding-settings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ---------------------------------------------------------\n        # SSPM\n        # ---------------------------------------------------------\n        - name: list-onboarded-apps\n          description: \"List all onboarded SaaS applications in SSPM.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: status\n              type: string\n              description: \"Filter by onboarding status.\"\n              required: false\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of results to return.\"\
-  \n              required: false\n          call: \"sspm.list-onboarded-apps\"\n          with:\n            status: \"tools.status\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: onboard-app\n          description: \"Onboard a new SaaS application in SSPM.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: app_type\n              type: string\n              description: \"Type of the application to onboard.\"\n              required: true\n            - name: display_name\n              type: string\n              description: \"Display name for the application.\"\n              required: true\n            - name: credentials\n              type: object\n              description: \"Credentials for the application.\"\
-  \n              required: true\n          call: \"sspm.onboard-app\"\n          with:\n            app_type: \"tools.app_type\"\n            display_name: \"tools.display_name\"\n            credentials: \"tools.credentials\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: remove-app\n          description: \"Remove an onboarded SaaS application from SSPM.\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: app_id\n              type: string\n              description: \"The application ID to remove.\"\n              required: true\n          call: \"sspm.remove-app\"\n          with:\n            app_id: \"tools.app_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-posture-checks\n          description: \"List SSPM posture checks\
-  \ with optional filters.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: app_id\n              type: string\n              description: \"Filter by application ID.\"\n              required: false\n            - name: check_type\n              type: string\n              description: \"Filter by check type.\"\n              required: false\n            - name: severity\n              type: string\n              description: \"Filter by severity level.\"\n              required: false\n            - name: status\n              type: string\n              description: \"Filter by check status.\"\n              required: false\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"\
-  Maximum number of results to return.\"\n              required: false\n          call: \"sspm.list-posture-checks\"\n          with:\n            app_id: \"tools.app_id\"\n            check_type: \"tools.check_type\"\n            severity: \"tools.severity\"\n            status: \"tools.status\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-posture-check\n          description: \"Get a specific SSPM posture check by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: check_id\n              type: string\n              description: \"The posture check ID.\"\n              required: true\n          call: \"sspm.get-posture-check\"\n          with:\n            check_id: \"tools.check_id\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: update-posture-check-status\n          description: \"Update the status of an SSPM posture check.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: check_id\n              type: string\n              description: \"The posture check ID.\"\n              required: true\n            - name: status\n              type: string\n              description: \"New status for the posture check.\"\n              required: true\n            - name: justification\n              type: string\n              description: \"Justification for the status change.\"\n              required: true\n          call: \"sspm.update-posture-check-status\"\n          with:\n            check_id: \"tools.check_id\"\n            status: \"tools.status\"\n            justification: \"tools.justification\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-app-catalog\n          description: \"List available applications in the SSPM catalog.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: category\n              type: string\n              description: \"Filter by application category.\"\n              required: false\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of results to return.\"\n              required: false\n          call: \"sspm.list-app-catalog\"\n          with:\n            category: \"tools.category\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n   \
-  \       outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-jira-integrations\n          description: \"List all SSPM Jira integrations.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          call: \"sspm.list-jira-integrations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-jira-integration\n          description: \"Create a new Jira integration for SSPM.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: name\n              type: string\n              description: \"Name of the Jira integration.\"\n              required: true\n            - name: jira_url\n              type: string\n              description: \"URL of the Jira instance.\"\
-  \n              required: true\n            - name: project_key\n              type: string\n              description: \"Jira project key.\"\n              required: true\n            - name: api_token\n              type: string\n              description: \"Jira API token for authentication.\"\n              required: true\n            - name: email\n              type: string\n              description: \"Email associated with the Jira account.\"\n              required: true\n            - name: issue_type\n              type: string\n              description: \"Default issue type for created tickets.\"\n              required: true\n            - name: severity_mapping\n              type: object\n              description: \"Mapping of severity levels to Jira priorities.\"\n              required: true\n          call: \"sspm.create-jira-integration\"\n          with:\n            name: \"tools.name\"\n            jira_url: \"tools.jira_url\"\n            project_key: \"tools.project_key\"\
-  \n            api_token: \"tools.api_token\"\n            email: \"tools.email\"\n            issue_type: \"tools.issue_type\"\n            severity_mapping: \"tools.severity_mapping\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+  dlp-api.update-incident\"\n          with:\n            i\n\n# --- truncated at 32 KB (55 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/data-protection.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/data-protection.yaml
 tags:
 - Palo Alto Networks

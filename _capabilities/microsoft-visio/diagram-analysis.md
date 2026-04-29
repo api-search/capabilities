@@ -22,32 +22,32 @@ personas: []
 provider_name: Microsoft Visio
 provider_slug: microsoft-visio
 search_terms:
-- list shapes
-- list all pages in a visio diagram.
-- it architects analyzing network and system diagrams.
-- business process
-- microsoft 365
-- microsoft visio
-- visualization
-- flowcharts
 - diagram analysis
-- list shapes on a page.
-- get shape
-- list all pages.
-- diagram page operations.
-- list pages
-- list data items attached to a shape.
-- diagramming
-- shape data operations.
-- Business Analyst
-- list data items for a shape.
-- business analysts reviewing process flow diagrams.
-- list shape data items
-- analyze visio diagrams programmatically.
-- IT Architect
-- list all shapes on a diagram page.
 - get details of a specific shape.
+- list all pages in a visio diagram.
+- IT Architect
+- flowcharts
+- shape data operations.
+- diagramming
+- analyze visio diagrams programmatically.
+- list pages
+- list data items for a shape.
+- microsoft visio
 - shape operations.
+- list shapes
+- list shape data items
+- visualization
+- it architects analyzing network and system diagrams.
+- microsoft 365
+- business process
+- get shape
+- Business Analyst
+- list data items attached to a shape.
+- business analysts reviewing process flow diagrams.
+- list all pages.
+- list all shapes on a diagram page.
+- diagram page operations.
+- list shapes on a page.
 slug: diagram-analysis
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Visio Diagram Analysis\"\n  description: \"Workflow capability for analyzing Visio diagrams including reading pages, shapes, data items, comments, and hyperlinks. Used by business analysts and IT architects to programmatically inspect diagram content.\"\n  tags:\n    - Microsoft Visio\n    - Diagram Analysis\n    - Visualization\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: visio-graph\n      location: ./shared/visio-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: diagram-analysis-api\n      description: \"Unified REST API for Visio diagram analysis.\"\n      resources:\n        - path: /v1/pages\n          name: pages\n          description: \"Diagram page operations.\"\n          operations:\n            - method: GET\n              name:\
   \ list-pages\n              description: \"List all pages.\"\n              call: \"visio-graph.list-pages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shapes\n          name: shapes\n          description: \"Shape operations.\"\n          operations:\n            - method: GET\n              name: list-shapes\n              description: \"List shapes on a page.\"\n              call: \"visio-graph.list-shapes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shape-data\n          name: shape-data\n          description: \"Shape data operations.\"\n          operations:\n            - method: GET\n              name: list-shape-data-items\n              description: \"List data items for a shape.\"\n              call: \"visio-graph.list-shape-data-items\"\n              outputParameters:\n                - type: object\n               \

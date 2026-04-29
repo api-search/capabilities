@@ -46,59 +46,59 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- halt a zone immediately.
-- gracefully shutdown a zone.
-- get current zone state.
-- gracefully shutdown.
 - resource management
-- migrate zone
-- clone a solaris zone.
-- halt zone
-- operating systems
-- uninstall zone
-- boot the zone.
-- install a solaris zone.
-- clone zone
-- migrate to another host.
-- rad
-- shutdown a zone.
-- boot zone
-- solaris
-- migrate a zone to another host.
-- get solaris zone details.
-- kernel zones
-- get zone state
-- reboot zone
-- oracle
-- list all solaris zones with status.
-- reboot a solaris zone.
-- uninstall a solaris zone.
-- containers
-- zone state operations.
-- create zone
-- zones
-- create a new zone.
-- zone inventory and creation.
-- list all zones.
-- boot a solaris zone.
-- individual zone operations.
-- boot a zone.
-- list zones
-- install zone
-- lifecycle management
-- verify zone
-- virtualization
-- get zone details.
-- reboot a zone.
 - get zone
-- delete zone
+- zones
+- create zone
+- reboot a solaris zone.
+- get solaris zone details.
+- migrate to another host.
+- boot zone
+- migrate zone
 - reboot the zone.
-- shutdown zone
-- verify zone configuration integrity.
-- migrate a zone.
-- statsstore
-- delete a solaris zone.
+- delete zone
+- boot the zone.
+- list all solaris zones with status.
+- uninstall a solaris zone.
+- zone inventory and creation.
+- operating systems
+- containers
+- gracefully shutdown.
 - create a new solaris zone.
+- list zones
+- get zone details.
+- virtualization
+- shutdown zone
+- oracle
+- create a new zone.
+- solaris
+- clone a solaris zone.
+- migrate a zone to another host.
+- list all zones.
+- halt a zone immediately.
+- install a solaris zone.
+- reboot a zone.
+- verify zone
+- boot a zone.
+- migrate a zone.
+- verify zone configuration integrity.
+- reboot zone
+- kernel zones
+- lifecycle management
+- get zone state
+- boot a solaris zone.
+- gracefully shutdown a zone.
+- delete a solaris zone.
+- rad
+- statsstore
+- clone zone
+- shutdown a zone.
+- individual zone operations.
+- install zone
+- uninstall zone
+- zone state operations.
+- halt zone
+- get current zone state.
 - delete a zone.
 slug: zone-lifecycle
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Solaris Zone Lifecycle Management\"\n  description: \"Unified zone lifecycle workflow combining zone creation, configuration, administration, monitoring, and migration. Used by system administrators and platform engineers to manage Solaris virtualization infrastructure.\"\n  tags:\n    - Solaris\n    - Zones\n    - Virtualization\n    - Lifecycle Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SOLARIS_AUTH_TOKEN: SOLARIS_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: zones-mgmt\n      location: ./shared/zones-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: solaris-lifecycle-api\n      description: \"Unified REST API for Solaris zone lifecycle management.\"\n      resources:\n        - path: /v1/zones\n          name: zones\n          description: \"Zone inventory and creation.\"\n          operations:\n            - method:\

@@ -9,21 +9,21 @@ personas: []
 provider_name: Apache POI
 provider_slug: apache-poi
 search_terms:
-- workflow for extracting data from excel, word, and powerpoint files
-- engineer extracting and transforming data from office files
-- powerpoint
-- apache
-- creation, manipulation, and conversion of office documents
-- extracting structured data from office file formats
+- java developer building office document generation features
 - end-to-end workflow for creating and manipulating office documents
+- workflow for extracting data from excel, word, and powerpoint files
+- extracting structured data from office file formats
+- creation, manipulation, and conversion of office documents
 - java
-- document processing
+- powerpoint
 - word
 - open source
-- developer generating automated excel or word reports
-- java developer building office document generation features
-- microsoft office
 - excel
+- document processing
+- microsoft office
+- developer generating automated excel or word reports
+- engineer extracting and transforming data from office files
+- apache
 slug: poi-workflow
 source_yaml: "name: Apache POI Document Processing Workflow\ndescription: Workflow capability for creating and manipulating Microsoft Office documents using Apache POI.\nversion: 1.0.0-alpha1\napis:\n  - name: Apache POI API\n    url: https://raw.githubusercontent.com/api-evangelist/apache-poi/refs/heads/main/apis.yml\nshared:\n  - url: capabilities/shared/poi-api.yaml\nworkflow:\n  name: poi-workflow\n  description: Process and transform Microsoft Office documents using Apache POI.\n  steps:\n    - name: create-workbook\n      description: Create a new Excel workbook\n      api: Apache POI API\n      operation: createWorkbook\n    - name: get-cells\n      description: Extract cell data from a workbook sheet\n      api: Apache POI API\n      operation: getCells\n    - name: create-document\n      description: Create a Word document\n      api: Apache POI API\n      operation: createDocument\n    - name: create-presentation\n      description: Create a PowerPoint presentation\n      api:\
   \ Apache POI API\n      operation: createPresentation\n    - name: convert-document\n      description: Convert between Office formats\n      api: Apache POI API\n      operation: convertDocument\nexposes:\n  - type: rest\n    port: 8080\n    paths:\n      - /workbooks\n      - /workbooks/{workbookId}\n      - /workbooks/{workbookId}/sheets\n      - /documents\n      - /documents/{documentId}\n      - /presentations\n      - /presentations/{presentationId}\n      - /convert\n  - type: mcp\n    port: 9090\n    tools:\n      - name: list-workbooks\n        description: List Excel workbooks\n        operation: listWorkbooks\n      - name: create-workbook\n        description: Create an Excel workbook\n        operation: createWorkbook\n      - name: get-cells\n        description: Get cell data from a sheet\n        operation: getCells\n      - name: create-document\n        description: Create a Word document\n        operation: createDocument\n      - name: get-document\n        description:\

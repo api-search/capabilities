@@ -75,81 +75,81 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- describe a change set
-- delete a resource
-- change set operations
-- create stack
-- list stack resources
-- stack drift detection
-- automation
-- stack resources
-- stack management
-- cloudformation
-- list stack sets
-- iac
-- single resource operations
-- describe stacks
-- describe a stack
-- create a change set for a stack
-- validate template
-- list registry extension types
-- list types
-- detect stack drift
-- delete a stack
-- describe stack
 - detect drift
-- create resource
-- update resource
 - get the template for a stack
-- infrastructure as code
-- aws
-- list resources by type
-- delete a cloud resource via cloud control
-- execute change set
-- get status of a resource operation
-- create change set
-- delete resource
-- update a cloud resource via cloud control
-- list stacks
-- update a stack
-- cancel an in-progress resource operation
-- list resources
-- cloudformation stack operations
-- template validation
-- list exports
-- single change set
-- execute a change set
-- get template
-- stack events
-- cloud control resource operations
-- list all stacks
-- describe cloudformation stacks
-- create a stack
-- list stack exports
-- provisioning
-- single stack operations
-- delete stack
-- get stack events
-- cloud control
 - create a change set
-- validate a template
-- create a cloud resource
-- get resource
-- validate a cloudformation template
-- update a resource
-- read a cloud resource via cloud control
-- cancel resource request
-- create a cloud resource via cloud control
-- get resource request status
-- update stack
-- describe change set
-- detect drift on a stack
-- create a cloudformation stack
-- cloud resources
-- get a resource
+- iac
+- list registry extension types
+- automation
+- create stack
+- describe a stack
+- validate template
+- cloud control resource operations
+- list stack resources
+- change set operations
+- stack management
 - describe stack events
+- delete a cloud resource via cloud control
+- cancel resource request
+- get resource
+- get stack events
+- create a cloud resource via cloud control
+- cancel an in-progress resource operation
+- detect stack drift
+- stack resources
+- get status of a resource operation
+- cloudformation stack operations
+- cloud control
+- create change set
+- aws
+- delete a stack
+- delete stack
+- list resources by type
+- update a resource
+- create a cloudformation stack
+- describe stack
+- list exports
+- create a stack
+- list resources
+- list stack sets
+- provisioning
+- update a cloud resource via cloud control
+- cloud resources
+- single change set
+- create resource
+- cloudformation
+- describe change set
+- template validation
+- infrastructure as code
+- list all stacks
+- list stacks
+- get template
+- single stack operations
+- read a cloud resource via cloud control
+- detect drift on a stack
+- update resource
 - list resources of a specified type
+- update a stack
 - list resources in a stack
+- execute a change set
+- update stack
+- create a cloud resource
+- describe stacks
+- delete resource
+- create a change set for a stack
+- describe cloudformation stacks
+- list types
+- describe a change set
+- validate a template
+- validate a cloudformation template
+- get resource request status
+- execute change set
+- list stack exports
+- stack events
+- single resource operations
+- stack drift detection
+- delete a resource
+- get a resource
 slug: infrastructure-provisioning
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS Infrastructure Provisioning\"\n  description: \"Unified workflow for AWS infrastructure provisioning combining CloudFormation stack management with Cloud Control API resource operations. Used by cloud engineers and platform teams to define, deploy, and manage infrastructure as code.\"\n  tags:\n    - AWS\n    - CloudFormation\n    - Cloud Control\n    - Infrastructure As Code\n    - Provisioning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: cloudformation\n      location: ./shared/cloudformation.yaml\n    - import: cloud-control\n      location: ./shared/cloud-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: infra-provisioning-api\n      description: \"Unified REST API for AWS infrastructure provisioning combining\
   \ CloudFormation and Cloud Control.\"\n      resources:\n        - path: /v1/stacks\n          name: stacks\n          description: \"CloudFormation stack operations\"\n          operations:\n            - method: GET\n              name: list-stacks\n              description: \"List all stacks\"\n              call: \"cloudformation.list-stacks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-stack\n              description: \"Create a stack\"\n              call: \"cloudformation.create-stack\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}\n          name: stack\n          description: \"Single stack operations\"\n          operations:\n            - method: GET\n              name: describe-stack\n              description: \"Describe a stack\"\n              call: \"cloudformation.describe-stacks\"\

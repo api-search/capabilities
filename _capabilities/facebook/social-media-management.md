@@ -33,56 +33,56 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- publish instagram media
-- manage advertising campaigns and performance.
-- get posts from a facebook user's feed.
-- plans and executes advertising campaigns.
-- handles customer inquiries via messaging channels.
-- campaign management and audience targeting.
-- list instagram media.
-- manage content across facebook, instagram, and threads.
-- create and publish instagram content.
+- create a new facebook post.
+- get threads insights
 - Conversational Commerce
+- manages day-to-day ad campaign optimization.
+- manage advertising campaigns and performance.
+- list posts
+- publishing and managing content across platforms.
+- create threads post
+- create instagram media
+- performance tracking and insights.
+- customer messaging across messenger and whatsapp.
+- messaging
+- Content Creator
+- get posts from a facebook user's feed.
+- advertising
+- create a threads post.
+- handles customer inquiries via messaging channels.
+- Customer Support
+- get threads performance insights.
 - facebook
+- publishing
+- plans and executes advertising campaigns.
+- instagram content management.
+- publish instagram media
+- list instagram media.
+- create a new threads post.
+- creates and publishes visual and text content.
+- Ad Operations
+- get posts from a user's feed.
+- create and publish instagram content.
+- Social Media Manager
+- campaign management and audience targeting.
+- social networking
+- content publishing
+- Marketing Manager
+- create post
 - facebook post management.
 - get instagram insights
-- Ad Operations
-- customer messaging across messenger and whatsapp.
-- advertising
-- manages day-to-day ad campaign optimization.
-- create a threads post.
-- social networking
-- create a new facebook post.
-- get threads performance insights.
-- creates and publishes visual and text content.
-- publishing and managing content across platforms.
-- list instagram media
-- create threads post
-- get instagram performance insights.
-- direct messaging and customer communication.
-- publish instagram media.
-- publishing
-- Marketing Manager
-- manages content and engagement across meta platforms.
-- performance tracking and insights.
 - threads content management.
-- create facebook post
-- Customer Support
-- create post
-- get posts from a user's feed.
-- Social Media Manager
-- Content Creator
-- instagram content management.
-- list posts
-- content publishing
-- messaging
-- create a new threads post.
-- create instagram media
+- list instagram media
 - list instagram media for an account.
+- manages content and engagement across meta platforms.
+- direct messaging and customer communication.
+- manage content across facebook, instagram, and threads.
 - social media
-- content management
-- get threads insights
+- get instagram performance insights.
 - get facebook feed
+- publish instagram media.
+- content management
+- create facebook post
 slug: social-media-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Facebook Social Media Management\n  description: >-\n    Workflow capability for managing content across Facebook, Instagram, and\n    Threads. Combines Graph API for Facebook posts, Instagram API for visual\n    content, and Threads API for text-based publishing. Used by social media\n    managers and content creators.\n  tags:\n    - Facebook\n    - Social Media\n    - Content Management\n    - Publishing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACEBOOK_ACCESS_TOKEN: FACEBOOK_ACCESS_TOKEN\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n      THREADS_ACCESS_TOKEN: THREADS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n    - import: instagram-api\n      location: ./shared/instagram-api.yaml\n    - import: threads-api\n      location: ./shared/threads-api.yaml\n\n  exposes:\n    - type: rest\n      port:\
   \ 8080\n      namespace: social-media-api\n      description: \"Unified REST API for social media management across Meta platforms.\"\n      resources:\n        - path: /v1/posts\n          name: posts\n          description: \"Facebook post management.\"\n          operations:\n            - method: GET\n              name: list-posts\n              description: \"Get posts from a user's feed.\"\n              call: \"graph-api.get-user-feed\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-post\n              description: \"Create a new Facebook post.\"\n              call: \"graph-api.create-post\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/instagram-media\n          name: instagram-media\n          description: \"Instagram content management.\"\n          operations:\n            - method: GET\n   \

@@ -26,41 +26,41 @@ personas: []
 provider_name: Akka
 provider_slug: akka
 search_terms:
-- akka cluster membership and node lifecycle management
-- Platform Engineer
-- cluster management
-- SRE
-- java
-- join a cluster member
-- join member
-- join cluster member
-- frameworks
-- health monitoring
-- list all current members of the akka cluster
-- reactive
-- add a new node to the akka cluster
-- monitor and manage akka cluster health and membership
-- actor model
-- akka
-- check ready
-- check alive
-- cluster member management
-- check if akka cluster nodes are ready to serve traffic
-- scala
-- liveness and readiness health check monitoring
-- monitors cluster health and responds to incidents
-- node liveness check
-- manages akka cluster deployments and configurations
-- cluster health checks
-- distributed systems
-- list members
 - check liveness and readiness of akka cluster nodes
-- list cluster members
-- check cluster health
-- check cluster readiness
-- microservices
 - node readiness check
+- cluster management
+- join cluster member
+- list all current members of the akka cluster
+- node liveness check
 - operations
+- monitor and manage akka cluster health and membership
+- check if akka cluster nodes are ready to serve traffic
+- actor model
+- cluster health checks
+- check ready
+- akka
+- SRE
+- check cluster readiness
+- distributed systems
+- join a cluster member
+- list cluster members
+- manages akka cluster deployments and configurations
+- microservices
+- add a new node to the akka cluster
+- health monitoring
+- monitors cluster health and responds to incidents
+- join member
+- akka cluster membership and node lifecycle management
+- check alive
+- reactive
+- scala
+- frameworks
+- Platform Engineer
+- list members
+- java
+- cluster member management
+- liveness and readiness health check monitoring
+- check cluster health
 slug: cluster-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Akka Cluster Operations\"\n  description: \"Workflow for monitoring and managing Akka cluster operations including health checks, member management, and cluster bootstrap. For platform engineers and SREs operating distributed Akka systems.\"\n  tags:\n    - Akka\n    - Cluster Management\n    - Distributed Systems\n    - Operations\n    - Health Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AKKA_MANAGEMENT_HOST: AKKA_MANAGEMENT_HOST\n      AKKA_MANAGEMENT_PORT: AKKA_MANAGEMENT_PORT\ncapability:\n  consumes:\n    - import: akka-management\n      location: ./shared/akka-management.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cluster-operations-api\n      description: \"Unified REST API for Akka cluster operations.\"\n      resources:\n        - path: /v1/health\n          name: health\n          description: \"Cluster health checks\"\n     \
   \     operations:\n            - method: GET\n              name: check-alive\n              description: \"Node liveness check\"\n              call: \"akka-management.check-alive\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: check-ready\n              description: \"Node readiness check\"\n              call: \"akka-management.check-ready\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cluster/members\n          name: cluster-members\n          description: \"Cluster member management\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List cluster members\"\n              call: \"akka-management.list-cluster-members\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n\

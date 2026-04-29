@@ -11,26 +11,26 @@ personas: []
 provider_name: Apptainer
 provider_slug: apptainer
 search_terms:
-- run scientific workload
+- starts an apptainer container instance to run a scientific computing workload
 - pull hpc image
-- hpc
-- open source
-- monitor running instances
-- linux foundation
-- pulls a container image for hpc workloads from docker or oci registry
-- system administrator managing container infrastructure on hpc clusters
-- pull images and run reproducible scientific computing workloads
-- researcher running reproducible computational experiments in containers
-- scientific computing
-- containers
+- apptainer
 - list hpc images
 - starting and monitoring container instances for scientific computation
+- researcher running reproducible computational experiments in containers
+- pulls a container image for hpc workloads from docker or oci registry
+- system administrator managing container infrastructure on hpc clusters
+- linux foundation
 - managing container images for hpc workloads
-- apptainer
-- starts an apptainer container instance to run a scientific computing workload
+- containers
+- monitors currently running apptainer container instances
+- run scientific workload
 - research
 - lists apptainer container images optimized for hpc workloads
-- monitors currently running apptainer container instances
+- monitor running instances
+- pull images and run reproducible scientific computing workloads
+- scientific computing
+- hpc
+- open source
 slug: hpc-container-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Apptainer HPC Container Management\n  description: >-\n    Workflow capability for managing HPC containers using Apptainer for scientific\n    computing and research workloads. Supports researchers pulling container images\n    and running reproducible computational experiments.\n  tags:\n    - Apptainer\n    - HPC\n    - Scientific Computing\n    - Containers\n    - Research\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPTAINER_API_TOKEN: APPTAINER_API_TOKEN\n\ncapability:\n  consumes:\n    - import: apptainer\n      location: ./shared/apptainer-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: hpc-containers-mcp\n      transport: http\n      description: MCP server for AI-assisted HPC container management with Apptainer.\n      tools:\n        - name: list-hpc-images\n          description: Lists Apptainer container images optimized for HPC workloads\n\
   \          hints:\n            readOnly: true\n            idempotent: true\n          call: \"apptainer.list-images\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: pull-hpc-image\n          description: Pulls a container image for HPC workloads from Docker or OCI registry\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"apptainer.pull-image\"\n          with:\n            source: \"tools.source\"\n            name: \"tools.name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: run-scientific-workload\n          description: Starts an Apptainer container instance to run a scientific computing workload\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"apptainer.start-instance\"\n          with:\n            imageId: \"tools.imageId\"\n            name: \"tools.name\"\n    \

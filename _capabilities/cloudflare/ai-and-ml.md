@@ -29,64 +29,64 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- create a chat completion.
-- list vectorize indexes.
-- list ai gateway logs.
-- ai execute model
-- insert vectors into an index.
-- ai gateway
-- gateway create gateway
-- text embeddings.
-- serverless
-- cloudflare
-- generate text embeddings.
-- vector database
-- edge computing
-- vectorize delete index
-- ai create chat completion
-- create an ai gateway.
-- get ai gateway details.
-- create chat completion
-- gateway list gateways
-- vectorize query vectors
-- platform
-- artificial intelligence
-- ai gateway management.
-- create a text completion.
-- gateway get gateway
-- gateway list logs
-- vectorize insert vectors
-- ai create embeddings
-- delete a vectorize index.
-- web performance
-- create a vectorize index.
-- api gateway
-- chat completions.
-- list ai gateway instances.
-- containers
-- list ai gateways
-- create an ai response.
-- vectorize list indexes
-- run an ai model.
-- list ai gateways.
-- object storage
 - ddos protection
-- cdn
-- ai create response
-- list vectorize indexes
-- cloud
-- edge
-- security
+- ai execute model
+- get ai gateway details.
 - ai create text completion
-- create embeddings
-- delete an ai gateway.
+- cdn
+- generate text embeddings.
+- create a vectorize index.
+- list vectorize indexes
+- list ai gateway logs.
+- list ai gateway instances.
+- vectorize query vectors
+- ai gateway
+- cloud
+- gateway get gateway
+- delete a vectorize index.
+- create a text completion.
+- web performance
+- vectorize delete index
+- create an ai response.
 - vectorize create index
-- machine learning
-- real-time communication
 - gateway delete gateway
-- vectorize index management.
-- dns
 - perform similarity query.
+- create chat completion
+- ai create response
+- real-time communication
+- edge computing
+- serverless
+- vectorize insert vectors
+- containers
+- object storage
+- list vectorize indexes.
+- run an ai model.
+- create an ai gateway.
+- delete an ai gateway.
+- platform
+- gateway list logs
+- gateway create gateway
+- machine learning
+- list ai gateways.
+- vectorize list indexes
+- ai create embeddings
+- gateway list gateways
+- ai gateway management.
+- security
+- ai create chat completion
+- cloudflare
+- vector database
+- vectorize index management.
+- text embeddings.
+- api gateway
+- create a chat completion.
+- artificial intelligence
+- insert vectors into an index.
+- chat completions.
+- create embeddings
+- list ai gateways
+- dns
+- edge
 slug: ai-and-ml
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare AI and ML\"\n  description: \"AI and machine learning capabilities combining Workers AI model inference, AI Gateway for observability and control, and Vectorize for vector search. Used by AI/ML engineers building intelligent applications at the edge.\"\n  tags:\n    - Cloudflare\n    - Artificial Intelligence\n    - Machine Learning\n    - Vector Database\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-workers-ai\n      location: ./shared/workers-ai.yaml\n    - import: cloudflare-ai-gateway\n      location: ./shared/ai-gateway.yaml\n    - import: cloudflare-vectorize\n      location: ./shared/vectorize.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: ai-ml-api\n      description: \"Unified REST API for Cloudflare AI and ML services.\"\n      resources:\n\
   \        - path: /v1/chat-completions\n          name: chat-completions\n          description: \"Chat completions.\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion.\"\n              call: \"cloudflare-workers-ai.create-chat-completion\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Text embeddings.\"\n          operations:\n            - method: POST\n              name: create-embeddings\n              description: \"Generate text embeddings.\"\n              call: \"cloudflare-workers-ai.create-embeddings\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\

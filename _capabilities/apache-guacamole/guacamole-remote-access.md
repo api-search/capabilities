@@ -27,46 +27,46 @@ personas: []
 provider_name: Apache Guacamole
 provider_slug: apache-guacamole
 search_terms:
-- list active sessions
-- remote desktop
-- list all guacamole user accounts
-- list remote connections
-- administrators managing remote access infrastructure and user accounts
-- open source
 - list connections
-- manage remote desktop connections, users, and active sessions
-- list all remote desktop connections
-- user account management
-- remote access
-- create a new user account in guacamole
-- it administration
-- apache guacamole
-- list guacamole users
-- rdp
-- remote desktop connection management via vnc, rdp, ssh protocols
 - IT Administrator
-- security teams monitoring active sessions and auditing connection history
-- Security Team
-- apache
 - list all currently active remote desktop sessions
-- vnc
-- web gateway
+- list guacamole users
+- manage remote desktop connections, users, and active sessions
 - create remote connection
-- ssh
+- list all guacamole user accounts
 - user and group account administration
-- remote desktop connection management
-- create guacamole user
-- list users
-- list all guacamole users
 - active session monitoring
-- list all active remote desktop sessions
+- apache guacamole
+- remote desktop
+- vpn alternative
+- user account management
+- remote desktop connection management via vnc, rdp, ssh protocols
+- list all configured remote desktop connections in guacamole
+- security teams monitoring active sessions and auditing connection history
+- remote desktop connection management
+- administrators managing remote access infrastructure and user accounts
+- list all guacamole users
+- security
+- web gateway
 - create a new remote desktop connection
 - create connection
-- security
-- create a new remote desktop connection in guacamole
-- vpn alternative
+- create a new user account in guacamole
+- apache
 - session monitoring, access control, and audit logging
-- list all configured remote desktop connections in guacamole
+- create guacamole user
+- list all remote desktop connections
+- list users
+- vnc
+- ssh
+- list all active remote desktop sessions
+- it administration
+- list remote connections
+- rdp
+- Security Team
+- open source
+- remote access
+- list active sessions
+- create a new remote desktop connection in guacamole
 slug: guacamole-remote-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Guacamole Remote Access\"\n  description: \"Unified capability for managing Apache Guacamole remote desktop gateway — managing connections, users, groups, and monitoring active sessions. Designed for IT administrators and security teams managing remote access infrastructure.\"\n  tags:\n    - Apache Guacamole\n    - Remote Desktop\n    - Security\n    - IT Administration\n    - VPN Alternative\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      GUACAMOLE_URL: GUACAMOLE_URL\n      GUACAMOLE_TOKEN: GUACAMOLE_TOKEN\n      GUACAMOLE_DATA_SOURCE: GUACAMOLE_DATA_SOURCE\ncapability:\n  consumes:\n    - import: guacamole-rest\n      location: ./shared/guacamole-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: guacamole-access-api\n      description: \"Unified REST API for Apache Guacamole remote access management.\"\n      resources:\n        - path: /v1/connections\n\
   \          name: connections\n          description: Remote desktop connection management\n          operations:\n            - method: GET\n              name: list-connections\n              description: List all remote desktop connections\n              call: \"guacamole-rest.list-connections\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: Create a new remote desktop connection\n              call: \"guacamole-rest.create-connection\"\n              with:\n                dataSource: \"rest.dataSource\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: User account management\n          operations:\n            - method: GET\n              name:\

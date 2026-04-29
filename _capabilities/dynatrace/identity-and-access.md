@@ -59,62 +59,62 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- permanently delete a group
-- ai operations
-- create user
+- create a new user
+- delete a user
+- create a new group
+- apm
+- intelligence
+- get, update, or delete a specific user
+- get user
 - automation
-- application security
-- get group details
+- list groups
 - query permissions
-- list all environments associated with the account
-- platform administration
-- iam
-- get details of a specific user
-- access control
-- get group
 - create a new user and send an invitation email
+- iam
+- ai operations
+- platform administration
+- list all user groups in the account
+- list all users in the account
+- get details of a specific group
+- permanently delete a group
+- update group name and description
+- list all permissions for the account
+- list all users in the dynatrace account
+- list permissions
+- access control
+- get details of a specific user
+- update a user's profile and group memberships
+- get, update, or delete a specific group
+- digital experience management
+- get group
+- permanently remove a user from the account
+- get user details
+- list all environments associated with the account
+- create a new user group
+- manage user groups
 - list all groups
 - update group
-- list all permissions for the account
-- observability
-- create a new group
+- create user
+- application security
+- create group
 - update user profile and groups
+- dynatrace
+- get group details
 - list all environments
-- get details of a specific group
-- list all permissions defined for the account
-- analytics
-- delete group
-- update user
-- delete a group
-- get, update, or delete a specific user
-- cloud monitoring
-- update a user's profile and group memberships
-- list groups
-- list permissions
-- manage user groups
-- intelligence
-- get user details
-- delete user
+- observability
 - update a group's name and description
 - list users
-- manage account users
-- create a new user group
-- identity
-- create a new user
-- create group
-- dynatrace
-- get user
-- permanently remove a user from the account
-- apm
-- list all users in the account
-- get, update, or delete a specific group
-- update group name and description
-- list all users in the dynatrace account
-- delete a user
-- list all user groups in the account
+- delete group
 - list environments
+- analytics
+- manage account users
+- delete user
 - application performance monitoring
-- digital experience management
+- cloud monitoring
+- identity
+- update user
+- list all permissions defined for the account
+- delete a group
 slug: identity-and-access
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Identity And Access\"\n  description: \"Identity and access management workflow for platform admins managing Dynatrace users, groups, permissions, and environments across the account.\"\n  tags:\n    - Dynatrace\n    - Identity\n    - Access Control\n    - Platform Administration\n    - IAM\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_OAUTH_TOKEN: DYNATRACE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: account-management\n      location: ./shared/account-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: identity-access-api\n      description: \"Unified REST API for Dynatrace identity and access management.\"\n      resources:\n        - path: /v1/users\n          name: users\n          description: \"Manage account users\"\n          operations:\n            - method: GET\n              name: list-users\n   \
   \           description: \"List all users in the account\"\n              call: \"account-management.list-users\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user\"\n              call: \"account-management.create-user\"\n              with:\n                accountUuid: \"rest.accountUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user-detail\n          description: \"Get, update, or delete a specific user\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get user details\"\n              call:\

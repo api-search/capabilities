@@ -15,33 +15,33 @@ personas: []
 provider_name: Amazon IoT Device Defender
 provider_slug: amazon-iot-device-defender
 search_terms:
-- amazon iot device defender list violations
-- amazon iot device defender list audit findings
-- vulnerability management
-- amazon iot device defender list audit tasks
-- IoT Developer
 - start audit
-- describe security profile
-- list audit findings
-- iot
-- amazon iot device defender list detect mitigations
-- aws
-- amazon iot device defender start audit
-- amazon iot device defender create security profile
-- security service for iot fleet auditing and anomaly detection.
-- amazon iot device defender list security profiles
-- list detect mitigations
-- manages amazon iot device defender resources and operations
+- IoT Developer
 - list security profiles
-- list audit tasks
-- Security Engineer
-- create security profile
-- security
-- compliance
-- device management
-- amazon iot device defender resources
+- amazon iot device defender start audit
+- list detect mitigations
 - amazon iot device defender describe security profile
+- amazon iot device defender list detect mitigations
 - list violations
+- compliance
+- aws
+- amazon iot device defender list violations
+- Security Engineer
+- iot
+- list audit tasks
+- vulnerability management
+- security
+- amazon iot device defender list audit findings
+- device management
+- security service for iot fleet auditing and anomaly detection.
+- amazon iot device defender create security profile
+- manages amazon iot device defender resources and operations
+- describe security profile
+- amazon iot device defender resources
+- amazon iot device defender list security profiles
+- list audit findings
+- create security profile
+- amazon iot device defender list audit tasks
 slug: iot-security-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Device Defender - Iot Security Monitoring\n  description: Unified capability for Security Engineer, IoT Developer to manage security service for iot fleet auditing and anomaly detection operations.\n  tags:\n    - IoT\n    - AWS\n    - Security\n    - Device Management\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-device-defender\n      location: ./shared/iot-device-defender.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iot-security-monitoring-api\n      description: Unified REST API for iot security monitoring.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT Device Defender resources\n          operations:\n            - method: GET\n\
   \              name: list-security-profiles\n              description: List Security Profiles\n              call: \"iot-device-defender.list-security-profiles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: iot-security-monitoring-mcp\n      transport: http\n      description: MCP server for AI-assisted iot security monitoring.\n      tools:\n        - name: list-security-profiles\n          description: Amazon IoT Device Defender List Security Profiles\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-device-defender.list-security-profiles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-security-profile\n          description: Amazon IoT Device Defender Create Security Profile\n          hints:\n            readOnly: false\n            \n          call: \"iot-device-defender.create-security-profile\"\

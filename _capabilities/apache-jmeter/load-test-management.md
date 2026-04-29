@@ -22,29 +22,29 @@ personas: []
 provider_name: Apache JMeter
 provider_slug: apache-jmeter
 search_terms:
-- engineers who analyze performance test results and tune systems
-- start test
-- java
-- get test results
-- open source
-- performance engineering
-- apache jmeter
-- qa automation
-- get test status
-- start an apache jmeter load test with a specified test plan
-- Performance Engineer
-- retrieve performance test results including response times and throughput
-- stress testing
-- stop the currently running jmeter load test
-- api testing
 - get results
-- qa engineers who run and monitor jmeter load tests
 - get status
-- QA Engineer
-- load testing
-- stop load test
 - performance testing
+- get test status
+- api testing
 - get current status and metrics of a running jmeter test
+- get test results
+- Performance Engineer
+- stress testing
+- apache jmeter
+- start test
+- start an apache jmeter load test with a specified test plan
+- stop load test
+- retrieve performance test results including response times and throughput
+- engineers who analyze performance test results and tune systems
+- stop the currently running jmeter load test
+- QA Engineer
+- performance engineering
+- qa automation
+- qa engineers who run and monitor jmeter load tests
+- java
+- open source
+- load testing
 - start load test
 slug: load-test-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache JMeter Load Test Management\"\n  description: \"Workflow capability for QA engineers and performance engineers to manage and monitor Apache JMeter load tests via the REST API.\"\n  tags:\n    - Apache JMeter\n    - Load Testing\n    - Performance Engineering\n    - QA Automation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      JMETER_API_URL: JMETER_API_URL\n\ncapability:\n  consumes:\n    - import: jmeter-rest-api\n      location: ./shared/jmeter-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: jmeter-load-test-api\n      description: \"Unified REST API for Apache JMeter load test management.\"\n      resources:\n        - path: /v1/tests/run\n          name: test-run\n          operations:\n            - method: POST\n              name: start-test\n              call: \"jmeter-rest-api.start-test\"\n              outputParameters:\n\

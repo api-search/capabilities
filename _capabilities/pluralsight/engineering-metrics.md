@@ -40,42 +40,42 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- pull request data, comments, and events across repositories
-- video training
-- flow
-- commit data and aggregated metrics across repositories
-- education
-- engineering metrics
-- pluralsight
-- retrieve collaboration metrics for engineering teams
-- courses
-- dora
-- retrieve dora engineering metrics
-- retrieve commit data and aggregated commit metrics across repositories.
-- pull request and collaboration metrics for engineering teams
 - get collaboration metrics
-- retrieve ticket data including comments, events, and project associations from connected project management tools.
+- pull request data, comments, and events across repositories
+- retrieve commit data and aggregated commit metrics across repositories.
+- retrieve pull request data and events
+- learning
+- retrieve pull request data, comments, and events across repositories.
+- retrieve code-level engineering metrics and developer productivity data with date range filtering.
+- pull request and collaboration metrics for engineering teams
+- engineering metrics
 - retrieve dora engineering metrics including deployment frequency, lead time for changes, change failure rate, and time to restore service.
+- pluralsight
+- retrieve pull request and collaboration metrics for engineering teams with date range filtering.
+- courses
+- get dora metrics
 - dora engineering metrics including deployment frequency and lead time
+- retrieve collaboration metrics for engineering teams
+- ticket data from connected project management tools
+- technology
+- video training
+- developer productivity
+- flow
+- dora
+- retrieve code-level engineering metrics
+- collaboration
 - get tickets
 - get pull requests
+- retrieve ticket data including comments, events, and project associations from connected project management tools.
+- commit data and aggregated metrics across repositories
+- retrieve dora engineering metrics
+- education
 - get coding metrics
-- get dora metrics
-- retrieve pull request data and events
-- code-level engineering metrics and developer productivity data
-- retrieve code-level engineering metrics and developer productivity data with date range filtering.
-- technology
-- retrieve pull request data, comments, and events across repositories.
-- retrieve code-level engineering metrics
-- learning
-- retrieve ticket data and events
-- collaboration
-- retrieve pull request and collaboration metrics for engineering teams with date range filtering.
-- skills assessment
-- developer productivity
-- ticket data from connected project management tools
 - retrieve commit data and metrics
+- code-level engineering metrics and developer productivity data
 - get commits
+- retrieve ticket data and events
+- skills assessment
 slug: engineering-metrics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Engineering Metrics\"\n  description: \"Unified workflow for engineering managers to track developer productivity, code quality, collaboration, and delivery performance through Flow metrics. Combines coding metrics, collaboration metrics, DORA metrics, commits, pull requests, and tickets APIs.\"\n  tags:\n    - Pluralsight\n    - Flow\n    - Engineering Metrics\n    - Developer Productivity\n    - DORA\n    - Collaboration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_FLOW_BEARER_TOKEN: PLURALSIGHT_FLOW_BEARER_TOKEN\n      PLURALSIGHT_FLOW_WORKSPACE: PLURALSIGHT_FLOW_WORKSPACE\n\ncapability:\n  consumes:\n    - import: pluralsight-flow-coding-metrics\n      location: ./shared/flow-coding-metrics.yaml\n    - import: pluralsight-flow-collaboration-metrics\n      location: ./shared/flow-collaboration-metrics.yaml\n    - import: pluralsight-flow-dora-metrics\n\
   \      location: ./shared/flow-dora-metrics.yaml\n    - import: pluralsight-flow-commits\n      location: ./shared/flow-commits.yaml\n    - import: pluralsight-flow-pull-requests\n      location: ./shared/flow-pull-requests.yaml\n    - import: pluralsight-flow-tickets\n      location: ./shared/flow-tickets.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: engineering-metrics-api\n      description: \"Unified REST API for Pluralsight Flow engineering metrics including coding, collaboration, DORA, commits, pull requests, and tickets.\"\n      resources:\n        - path: /v1/coding-metrics\n          name: coding-metrics\n          description: \"Code-level engineering metrics and developer productivity data\"\n          operations:\n            - method: GET\n              name: get-coding-metrics\n              description: \"Retrieve code-level engineering metrics\"\n              call: \"pluralsight-flow-coding-metrics.get-coding-metrics\"\n              with:\n\

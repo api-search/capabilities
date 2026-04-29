@@ -53,50 +53,50 @@ provider_name: New Relic
 provider_slug: new-relic
 search_terms:
 - update application
-- developer
-- get application details
-- monitoring
-- send events
-- analysis
-- performance
-- list hosts for an application
-- send custom events
-- list applications
-- send custom events for application tracking
-- observability
-- get application metrics data
-- infrastructure
-- deployments
-- analytics
-- platform
-- get application hosts
-- get application
-- update application settings
-- list key transactions
-- get applications
-- devops
-- create deployment
-- list application metrics
-- query metric data
-- query metric data points for an application
-- application monitoring
 - get or update an application
-- list deployment records for an application
-- get key transactions
+- infrastructure
 - list application hosts
-- get deployments
-- list available metric names for an application
-- record a new deployment
-- manage deployments
-- list deployments for an application
-- list available metric names
-- query metric data for an application
 - apm
 - get application metrics
-- record a new deployment for an application
-- new relic
+- list deployment records for an application
+- manage deployments
+- analysis
+- list applications
 - list all monitored applications
+- get application hosts
+- get key transactions
+- record a new deployment for an application
+- devops
+- list key transactions
+- developer
+- list available metric names
+- send custom events for application tracking
+- query metric data
+- send custom events
+- new relic
+- list deployments for an application
+- create deployment
+- update application settings
+- query metric data for an application
+- send events
+- get application
+- platform
+- get deployments
 - get details of a specific application
+- get application metrics data
+- list available metric names for an application
+- record a new deployment
+- list hosts for an application
+- get application details
+- deployments
+- observability
+- monitoring
+- performance
+- analytics
+- list application metrics
+- query metric data points for an application
+- get applications
+- application monitoring
 slug: application-monitoring
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Application Monitoring\"\n  description: \"Application performance monitoring workflow combining application metrics, deployments, hosts, and custom events for developers tracking application health and release impact.\"\n  tags:\n    - New Relic\n    - Application Monitoring\n    - Developer\n    - APM\n    - Deployments\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n      NEW_RELIC_INSERT_KEY: NEW_RELIC_INSERT_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n    - import: event-api\n      location: ./shared/event-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: application-monitoring-api\n      description: \"Unified REST API for New Relic application performance monitoring.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n\
   \          description: \"List applications\"\n          operations:\n            - method: GET\n              name: get-applications\n              description: \"List all monitored applications\"\n              call: \"rest-api.get-applications\"\n              with:\n                filter[name]: \"rest.filter_name\"\n                filter[host]: \"rest.filter_host\"\n                filter[language]: \"rest.filter_language\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/{id}\n          name: application-detail\n          description: \"Get or update an application\"\n          operations:\n            - method: GET\n              name: get-application\n              description: \"Get application details\"\n              call: \"rest-api.get-application\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n               \

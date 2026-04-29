@@ -141,138 +141,138 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- list bulk query jobs.
-- get detailed information about a bulk api 2.0 query job.
-- individual ingest job operations.
-- delete ingest job
-- sobject collections bulk crud.
-- delete an sobject record.
-- delete an ingest job.
-- get a salesforce sobject record by id.
-- full sobject type metadata.
-- get lookup records
-- full describe sobject
-- enterprise
-- sobjects
-- get list views for a salesforce object.
-- get successful results
-- get failed records.
-- update ingest job
-- failed ingest results.
-- get successfully processed records from a bulk ingest job.
-- search lookup field records for typeahead suggestions.
-- get ui-ready metadata about a salesforce object including fields, types, and permissions.
-- get query job info
-- get query job results
-- execute a sosl search across multiple salesforce objects.
-- execute a sosl search across multiple objects.
-- get full metadata for an sobject type including all fields.
-- list sobjects
-- update fields on a salesforce sobject record.
-- execute a soql query against salesforce data.
-- list all sobject types available in the salesforce org.
-- individual query job operations.
-- list views for objects.
+- collections delete
+- create query job
+- get picklist values
 - org api limits.
-- get recently viewed records for the current user.
-- successful ingest results.
+- create ingest job
+- list bulk api 2.0 ingest jobs in the org.
+- delete an sobject record.
+- get failed records.
+- create up to 200 records in a single call.
+- get next query page
+- bulk operations
+- get ingest job info
+- list bulk query jobs.
 - create a new bulk api 2.0 query job for extracting large data volumes.
-- collections create
+- delete a query job.
+- crm
+- query result pagination.
+- execute a soql queryall including deleted records.
+- collections update
+- get query job results
+- execute query
+- get basic metadata for an sobject type.
+- get detailed information about a query job.
+- get successful results
+- failed ingest results.
+- get object metadata including fields, types, and permissions.
+- delete a salesforce sobject record.
+- execute query all
+- update up to 200 records in a single call.
+- get the next page of soql query results.
+- execute a batch of independent requests.
+- soql query execution.
+- update record
+- get detailed information about an ingest job.
+- update ingest job
+- delete ingest job
+- execute a soql query.
+- delete up to 200 records in a single call.
+- get full metadata for a salesforce sobject type including all fields.
+- sosl search execution.
+- create a new bulk api 2.0 ingest job for bulk data operations.
+- execute a composite request with dependent subrequests.
+- delete query job
+- individual query job operations.
+- search lookup field records for typeahead suggestions.
+- recently viewed records.
+- successful ingest results.
 - get successfully processed records.
 - list bulk ingest jobs.
-- describe sobject
-- get recently viewed
-- get next query page
-- list bulk api 2.0 ingest jobs in the org.
-- execute batch
-- execute a soql queryall including deleted and archived records.
-- get the next page of soql query results.
-- salesforce
-- get current api limit usage and remaining quotas for the salesforce org.
-- create up to 200 records in a single call.
-- get org limits
-- get an sobject record by id.
-- get picklist values
-- collections delete
-- get object info
-- crm
-- get current api limit usage and quotas.
-- execute query
-- get ingest job info
-- get list views
-- get object metadata including fields, types, and permissions.
-- get results from a completed bulk query job.
-- delete up to 200 records in a single call.
-- query job results.
-- query result pagination.
-- get detailed information about an ingest job.
-- execute search
-- get detailed information about a bulk api 2.0 ingest job.
-- get full metadata for a salesforce sobject type including all fields.
-- sales
-- update an sobject record.
-- collections update
-- delete a salesforce sobject record.
-- individual record crud operations.
-- delete query job
-- get detailed information about a query job.
-- execute a soql queryall including deleted records.
-- get failed records from a bulk ingest job.
-- update up to 200 records in a single call.
 - create a new sobject record in salesforce.
-- sobject type listing and metadata.
-- get basic metadata for an sobject type.
-- get query job results.
-- get picklist values for all picklist fields on an object for a given record type.
-- get basic metadata for a salesforce sobject type.
-- bulk operations
-- update up to 200 sobject records in a single api call.
-- analytics
-- platform
-- create query job
-- customer service
-- soql query execution.
-- create a new bulk api 2.0 ingest job for bulk data operations.
-- create a new bulk query job.
-- update or close an ingest job.
-- bulk api 2.0 ingest job management.
 - bulk api 2.0 query job management.
-- sobject type metadata and record creation.
-- marketing
-- data management
-- create a new bulk ingest job.
-- delete a bulk api 2.0 ingest job.
-- create a new sobject record.
-- update or close a bulk api 2.0 ingest job.
-- get list views for an object.
-- ai
-- execute query all
-- get failed results
-- delete up to 200 sobject records in a single api call.
-- list bulk api 2.0 query jobs in the org.
-- object metadata from ui api.
-- create up to 200 sobject records in a single api call.
-- get record
-- get recently viewed records.
-- commerce
-- composite request operations.
-- execute a batch of independent requests.
-- create ingest job
-- list all sobject types available in the org.
-- execute a soql query.
+- bulk api 2.0 ingest job management.
+- get list views
+- execute a sosl search across multiple objects.
 - list ingest jobs
-- recently viewed records.
-- list query jobs
-- sosl search execution.
-- cloud
-- execute a composite request with dependent subrequests.
-- get the next page of query results.
-- create record
-- delete record
-- delete a query job.
-- execute a batch of independent rest api requests.
-- update record
+- platform
+- sobject collections bulk crud.
+- individual ingest job operations.
+- get a salesforce sobject record by id.
+- execute batch
+- sales
+- get an sobject record by id.
+- create a new bulk ingest job.
 - execute composite
+- create a new bulk query job.
+- full sobject type metadata.
+- full describe sobject
+- create record
+- data management
+- get results from a completed bulk query job.
+- sobject type listing and metadata.
+- update or close a bulk api 2.0 ingest job.
+- cloud
+- get failed results
+- execute a sosl search across multiple salesforce objects.
+- delete a bulk api 2.0 ingest job.
+- execute a soql queryall including deleted and archived records.
+- execute a batch of independent rest api requests.
+- get current api limit usage and remaining quotas for the salesforce org.
+- get query job results.
+- update an sobject record.
+- list bulk api 2.0 query jobs in the org.
+- get object info
+- get current api limit usage and quotas.
+- get list views for an object.
+- get lookup records
+- delete an ingest job.
+- get detailed information about a bulk api 2.0 query job.
+- collections create
+- analytics
+- enterprise
+- individual record crud operations.
+- get picklist values for all picklist fields on an object for a given record type.
+- sobject type metadata and record creation.
+- create a new sobject record.
+- execute a soql query against salesforce data.
+- update fields on a salesforce sobject record.
+- get failed records from a bulk ingest job.
+- get recently viewed records for the current user.
+- describe sobject
+- get recently viewed records.
+- get basic metadata for a salesforce sobject type.
+- get ui-ready metadata about a salesforce object including fields, types, and permissions.
+- get detailed information about a bulk api 2.0 ingest job.
+- get successfully processed records from a bulk ingest job.
+- marketing
+- get recently viewed
+- update or close an ingest job.
+- update up to 200 sobject records in a single api call.
+- execute search
+- delete up to 200 sobject records in a single api call.
+- list all sobject types available in the org.
+- get record
+- create up to 200 sobject records in a single api call.
+- list views for objects.
+- composite request operations.
+- delete record
+- get org limits
+- commerce
+- customer service
+- list query jobs
+- sobjects
+- get list views for a salesforce object.
+- get full metadata for an sobject type including all fields.
+- query job results.
+- salesforce
+- list all sobject types available in the salesforce org.
+- get the next page of query results.
+- list sobjects
+- ai
+- get query job info
+- object metadata from ui api.
 slug: crm-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce CRM Data Management\"\n  description: \"Unified capability for CRM data management workflows combining the REST API, Bulk API 2.0, and UI API. Used by Salesforce admins, developers, and data teams to manage SObject records, run queries, perform bulk data operations, and build dynamic UIs.\"\n  tags:\n    - Salesforce\n    - CRM\n    - Data Management\n    - SObjects\n    - Bulk Operations\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SALESFORCE_ACCESS_TOKEN: SALESFORCE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: salesforce-rest\n      location: ./shared/rest-api.yaml\n    - import: salesforce-bulk\n      location: ./shared/bulk-api.yaml\n    - import: salesforce-ui\n      location: ./shared/ui-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: crm-data-management-api\n      description: \"Unified REST API for Salesforce CRM\
   \ data management.\"\n      resources:\n        - path: /v1/sobjects\n          name: sobjects\n          description: \"SObject type listing and metadata.\"\n          operations:\n            - method: GET\n              name: list-sobjects\n              description: \"List all SObject types available in the org.\"\n              call: \"salesforce-rest.list-sobjects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sobjects/{sobjectType}\n          name: sobject-type\n          description: \"SObject type metadata and record creation.\"\n          operations:\n            - method: GET\n              name: describe-sobject\n              description: \"Get basic metadata for an SObject type.\"\n              call: \"salesforce-rest.describe-sobject\"\n              with:\n                sobjectType: \"rest.sobjectType\"\n              outputParameters:\n                - type: object\n                  mapping:\

@@ -167,170 +167,170 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- network security engineer
-- list all code security suppressions with pagination and filtering
+- digital experience monitoring, log management, and best practice assessment.
+- list data stores
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
 - cloud security
-- remove cloud account
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- sase
-- reopen alerts
-- designs and implements network security architectures and policies.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- retrieve a list of cspm alerts based on filters
-- list policies
-- list dspm policies
-- authenticate
-- soc analyst
-- sre
-- network security
-- retrieve a list of discovered data assets
-- data loss prevention, saas security monitoring, and identity security posture.
-- get fix suggestions for a pull request
-- list cloud accounts
-- retrieve a list of dspm data security alerts
-- list reports
-- retrieve a list of data security risks
-- manages enterprise browser policies and secure browsing configurations.
-- update risk status
-- get data risk
-- manages service accounts, roles, and access policies for platform api access.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- compliance
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- cybersecurity
-- manages multi-tenant security operations at scale for managed service providers.
-- get policy
-- dismiss one or more cspm alerts
-- trigger a new code security scan for a repository
-- get cspm alert
-- conducts automated adversarial testing against ai systems and llm applications.
-- proactively searches for threats and iocs across telemetry data.
-- dismiss cspm alerts
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- cspm
-- retrieve a list of all compliance reports
-- reopen one or more previously dismissed cspm alerts
-- remove an onboarded cloud account
-- sd wan operator
-- retrieve details for a specific data security risk
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- add cloud account
-- retrieve details for a specific cspm policy
-- data protection analyst
-- analyzes suspicious files and samples for malware characteristics.
-- compliance officer
-- xdr
-- get scan status
-- network architect
-- incident responder
-- list compliance standards
-- delete suppression
-- get errors by branch
-- list suppressions
-- get code security errors for a specific repository branch
-- investigates security incidents, triages alerts, and coordinates response actions.
-- get data asset
 - threat intel analyst
-- ai runtime security scanning and automated red teaming for ai applications.
-- list all ci/cd scan integrations with pagination
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- monitors network health, performance, and digital experience metrics.
+- update policy
+- create a new code security suppression
+- authenticate to prisma cloud and retrieve a jwt token
 - get alerts
+- add repository
+- executes containment, eradication, and recovery actions during security incidents.
+- compliance
+- retrieve a list of cspm alerts based on filters
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- list compliance standards
+- list cloud accounts
+- retrieve a list of all onboarded cloud accounts
+- get code errors
 - create a new cspm security policy
-- investigates dlp incidents and manages sensitive data protection policies.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- proactively searches for threats and iocs across telemetry data.
+- get policy
+- palo alto networks
+- compliance team
+- remove an onboarded cloud account
+- retrieve a list of data stores
+- soar
+- login
+- retrieve a list of discovered data assets
+- threat intelligence
+- list data assets
+- mssp operator
+- search config
+- cspm
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- create suppression
+- get fix suggestions
+- retrieve details for a specific data asset
+- conducts automated adversarial testing against ai systems and llm applications.
+- manages logging infrastructure, integrations, and platform automation.
+- platform engineer
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- retrieve details for a specific cspm policy
+- analyzes suspicious files and samples for malware characteristics.
+- cloud security posture management, compliance monitoring, and workload protection.
+- list suppressions
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- trigger a new code security scan for a repository
+- data protection analyst
+- get data risk
+- dismiss alerts
+- retrieve details for a specific data security risk
+- compliance officer
+- retrieve a list of all compliance standards
+- update risk status
+- retrieve a list of all compliance reports
+- delete a specific code security suppression by id
+- update the status of a specific data security risk
+- ai security engineer
+- get code security errors for a specific repository branch
+- designs sase and sd-wan network architectures for secure remote access.
+- list dspm policies
+- network operations
+- incident responder
+- add a new repository for code security scanning
+- xdr
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- list all ci/cd scan integrations with pagination
+- add cloud account
+- retrieve a list of dspm policies
+- tenant operator
+- dismiss cspm alerts
+- get errors by branch
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- get risk
+- red team operator
+- trigger scan
+- designs and implements network security architectures and policies.
+- delete suppression
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- dismiss one or more cspm alerts
+- create policy
+- search for cloud configuration data using rql queries
+- iam admin
+- ai runtime security scanning and automated red teaming for ai applications.
+- list reports
+- authenticate
+- search asset
+- get fix suggestions for pr
 - retrieve a list of data classifications
-- retrieve details for a specific cspm alert
-- data security
-- list scan integrations
-- list data risks
+- list repositories
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- sase
+- get the status of a code security scan
+- remove cloud account
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- mssp
+- enterprise browser policy management and secure browsing.
+- onboard a new cloud account
+- network security
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- reopen alerts
+- manages service accounts, roles, and access policies for platform api access.
+- identity and access management, tenant hierarchies, and subscription management.
+- list data security alerts
+- list risks
+- data loss prevention, saas security monitoring, and identity security posture.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- saas security admin
+- retrieve a list of dspm data security alerts
+- cloud security engineer
+- subscription manager
+- cybersecurity
+- update an existing cspm security policy
+- retrieve a list of all cspm policies
+- search assets
+- investigates security incidents, triages alerts, and coordinates response actions.
+- search for cloud assets using rql queries
 - malware researcher
+- get scan status
+- reopen one or more previously dismissed cspm alerts
 - list all code security repositories with pagination and filtering
 - manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- cloud security engineer
-- secures ai applications with runtime scanning and vulnerability assessment.
-- cloud security posture management, compliance monitoring, and workload protection.
-- retrieve details for a specific data asset
-- threat intelligence
-- retrieve a list of dspm policies
-- iam admin
-- create policy
-- list classifications
-- update an existing cspm security policy
-- retrieve a list of all compliance standards
-- saas security admin
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- manage enterprise browser policies, user sessions, and deployments.
-- add a new repository for code security scanning
-- create suppression
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- create a new code security suppression
-- remove repository
-- get code errors
-- tenant operator
-- authenticate to prisma cloud and retrieve a jwt token
-- get fix suggestions
-- search assets
-- list data assets
-- enterprise it
-- monitors network health, performance, and digital experience metrics.
-- dismiss alerts
-- get the status of a code security scan
-- add repository
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- list repositories
-- retrieve a list of data stores
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- update policy
-- identity and access management, tenant hierarchies, and subscription management.
-- ai security engineer
-- mssp
-- palo alto networks
-- vulnerability manager
-- subscription manager
-- browser security admin
-- trigger scan
-- login
-- list risks
-- get fix suggestions for pr
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- retrieve a list of all cspm policies
-- retrieve a list of all onboarded cloud accounts
-- firewall admin
-- onboard a new cloud account
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- search for cloud configuration data using rql queries
-- list data stores
-- network operations
-- designs sase and sd-wan network architectures for secure remote access.
-- list data security alerts
-- search for cloud assets using rql queries
-- list cspm alerts
-- get alert
-- search asset
-- digital experience monitoring, log management, and best practice assessment.
-- threat hunter
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- soar
-- sase admin
-- update the status of a specific data security risk
-- delete a specific code security suppression by id
-- red team operator
-- search config
-- update data risk status
-- platform engineer
-- manages logging infrastructure, integrations, and platform automation.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- get risk
-- firewall
-- executes containment, eradication, and recovery actions during security incidents.
 - incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- enterprise browser policy management and secure browsing.
+- manages multi-tenant security operations at scale for managed service providers.
+- get alert
+- remove repository
+- researches threat actors, malware campaigns, and vulnerability trends.
+- update data risk status
+- list scan integrations
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- list policies
+- data security
+- list cspm alerts
 - reopen cspm alerts
+- soc analyst
+- network security engineer
+- browser security admin
+- manages enterprise browser policies and secure browsing configurations.
+- firewall
+- get data asset
+- sd wan operator
+- list classifications
+- get cspm alert
+- get fix suggestions for a pull request
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- enterprise it
+- network architect
 - remove a repository from code security scanning
-- compliance team
-- mssp operator
+- vulnerability manager
+- manage enterprise browser policies, user sessions, and deployments.
+- retrieve details for a specific cspm alert
+- threat hunter
+- list data risks
+- retrieve a list of data security risks
+- investigates dlp incidents and manages sensitive data protection policies.
+- firewall admin
+- sase admin
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- list all code security suppressions with pagination and filtering
+- sre
 slug: cloud-security-posture
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Cloud Security Posture\"\n  description: \"Unified cloud security posture capability for managing alerts, policies, compliance, code security scanning, and data security posture across Prisma Cloud CSPM, Code Security, and DSPM.\"\n  tags:\n    - Palo Alto Networks\n    - Cloud Security\n    - CSPM\n    - Compliance\n    - Data Security\n    - MSSP\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PRISMA_CLOUD_USERNAME: PRISMA_CLOUD_USERNAME\n      PRISMA_CLOUD_PASSWORD: PRISMA_CLOUD_PASSWORD\n      PRISMA_CLOUD_JWT_TOKEN: PRISMA_CLOUD_JWT_TOKEN\n      PRISMA_CLOUD_TOKEN: PRISMA_CLOUD_TOKEN\n\ncapability:\n  consumes:\n    - import: prisma-cloud-cspm\n      location: ./shared/prisma-cloud-cspm.yaml\n    - import: prisma-cloud-code-security\n      location: ./shared/prisma-cloud-code-security.yaml\n    - import: prisma-cloud-dspm\n      location: ./shared/prisma-cloud-dspm.yaml\n\
   \    - import: prisma-cloud-mssp\n      location: ./shared/prisma-cloud-mssp.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: rest-cloud-security-posture\n      resources:\n\n        # ── Authentication ──────────────────────────────────────────────\n        - path: /v1/auth/login\n          operations:\n            - method: POST\n              name: login\n              call: \"prisma-cloud-cspm.login\"\n              with:\n                username: \"rest.username\"\n                password: \"rest.password\"\n                customer_name: \"rest.customer_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # ── Alerts & Incidents ──────────────────────────────────────────\n        - path: /v1/alerts\n          operations:\n            - method: GET\n              name: get-alerts\n              call: \"prisma-cloud-cspm.get-alerts\"\n              with:\n                timeType: \"rest.timeType\"\
@@ -365,27 +365,7 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks 
   \  - type: array\n              mapping: \"$.\"\n\n        # ── Cloud Accounts ──────────────────────────────────────────────\n        - name: list-cloud-accounts\n          description: \"Retrieve a list of all onboarded cloud accounts\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          call: \"prisma-cloud-cspm.list-cloud-accounts\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: add-cloud-account\n          description: \"Onboard a new cloud account\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: cloudType\n              type: string\n              required: true\n            - name: account_id\n              type: string\n              required: true\n            - name: name\n           \
   \   type: string\n              required: true\n            - name: enabled\n              type: boolean\n              required: false\n            - name: group_ids\n              type: object\n              required: false\n          call: \"prisma-cloud-cspm.add-cloud-account\"\n          with:\n            cloudType: \"tools.cloudType\"\n            account_id: \"tools.account_id\"\n            name: \"tools.name\"\n            enabled: \"tools.enabled\"\n            group_ids: \"tools.group_ids\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: remove-cloud-account\n          description: \"Remove an onboarded cloud account\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: cloudType\n              type: string\n              required: true\n            - name: id\n              type: string\n\
   \              required: true\n          call: \"prisma-cloud-cspm.remove-cloud-account\"\n          with:\n            cloudType: \"tools.cloudType\"\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Asset Search ────────────────────────────────────────────────\n        - name: search-assets\n          description: \"Search for cloud assets using RQL queries\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: query\n              type: string\n              required: true\n            - name: time_range\n              type: object\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: with_resource_json\n              type: boolean\n              required: false\n          call: \"prisma-cloud-cspm.search-asset\"\
-  \n          with:\n            query: \"tools.query\"\n            time_range: \"tools.time_range\"\n            limit: \"tools.limit\"\n            with_resource_json: \"tools.with_resource_json\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-config\n          description: \"Search for cloud configuration data using RQL queries\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: query\n              type: string\n              required: true\n            - name: time_range\n              type: object\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: with_resource_json\n              type: boolean\n              required: false\n          call: \"prisma-cloud-cspm.search-config\"\n          with:\n\
-  \            query: \"tools.query\"\n            time_range: \"tools.time_range\"\n            limit: \"tools.limit\"\n            with_resource_json: \"tools.with_resource_json\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Compliance ──────────────────────────────────────────────────\n        - name: list-compliance-standards\n          description: \"Retrieve a list of all compliance standards\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          call: \"prisma-cloud-cspm.list-compliance-standards\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: list-reports\n          description: \"Retrieve a list of all compliance reports\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n         \
-  \ call: \"prisma-cloud-cspm.list-reports\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        # ── Code Security ───────────────────────────────────────────────\n        - name: list-repositories\n          description: \"List all code security repositories with pagination and filtering\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: search\n              type: string\n              required: false\n            - name: sourceType\n              type: string\n              required: false\n          call: \"prisma-cloud-code-security.list-repositories\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\
-  \n            search: \"tools.search\"\n            sourceType: \"tools.sourceType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: add-repository\n          description: \"Add a new repository for code security scanning\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n            - name: sourceType\n              type: string\n              required: true\n            - name: owner\n              type: string\n              required: true\n            - name: name\n              type: string\n              required: true\n            - name: defaultBranch\n              type: string\n              required: true\n          call: \"prisma-cloud-code-security.add-repository\"\n          with:\n            id: \"tools.id\"\n    \
-  \        sourceType: \"tools.sourceType\"\n            owner: \"tools.owner\"\n            name: \"tools.name\"\n            defaultBranch: \"tools.defaultBranch\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: remove-repository\n          description: \"Remove a repository from code security scanning\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n            - name: sourceType\n              type: string\n              required: true\n          call: \"prisma-cloud-code-security.remove-repository\"\n          with:\n            id: \"tools.id\"\n            sourceType: \"tools.sourceType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-scan-integrations\n       \
-  \   description: \"List all CI/CD scan integrations with pagination\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-cloud-code-security.list-scan-integrations\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: trigger-scan\n          description: \"Trigger a new code security scan for a repository\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: repositoryId\n              type: string\n\
-  \              required: true\n            - name: branch\n              type: string\n              required: true\n            - name: scanTypes\n              type: object\n              required: true\n          call: \"prisma-cloud-code-security.trigger-scan\"\n          with:\n            repositoryId: \"tools.repositoryId\"\n            branch: \"tools.branch\"\n            scanTypes: \"tools.scanTypes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-scan-status\n          description: \"Get the status of a code security scan\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: scan_id\n              type: string\n              required: true\n          call: \"prisma-cloud-code-security.get-scan-status\"\n          with:\n            scan_id: \"tools.scan_id\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: list-suppressions\n          description: \"List all code security suppressions with pagination and filtering\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: policyId\n              type: string\n              required: false\n            - name: suppressionType\n              type: string\n              required: false\n          call: \"prisma-cloud-code-security.list-suppressions\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            policyId: \"tools.policyId\"\n            suppressionType: \"tools.suppressionType\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: create-suppression\n          description: \"Create a new code security suppression\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: policyId\n              type: string\n              required: true\n            - name: suppressionType\n              type: string\n              required: true\n            - name: justification\n              type: string\n              required: true\n            - name: expirationDate\n              type: string\n              required: false\n            - name: resources\n              type: object\n              required: false\n          call: \"prisma-cloud-code-security.create-suppression\"\n          with:\n            policyId: \"tools.policyId\"\n            suppressionType: \"tools.suppressionType\"\n            justification:\
-  \ \"tools.justification\"\n            expirationDate: \"tools.expirationDate\"\n            resources: \"tools.resources\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-suppression\n          description: \"Delete a specific code security suppression by ID\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: suppression_id\n              type: string\n              required: true\n          call: \"prisma-cloud-code-security.delete-suppression\"\n          with:\n            suppression_id: \"tools.suppression_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-code-errors\n          description: \"Get code security errors for a specific repository branch\"\n          hints:\n            readOnly: true\n            destructive:\
-  \ false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: repositoryId\n              type: string\n              required: true\n            - name: branch\n              type: string\n              required: true\n            - name: severity\n              type: string\n              required: false\n            - name: errorType\n              type: string\n              required: false\n            - name: status\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-cloud-code-security.get-errors-by-branch\"\n          with:\n            repositoryId: \"tools.repositoryId\"\n            branch: \"tools.branch\"\n            severity: \"tools.severity\"\n            errorType: \"tools.errorType\"\n            status: \"tools.status\"\
-  \n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-fix-suggestions\n          description: \"Get fix suggestions for a pull request\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: repositoryId\n              type: string\n              required: true\n            - name: branch\n              type: string\n              required: true\n            - name: filePath\n              type: string\n              required: false\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-cloud-code-security.get-fix-suggestions-for-pr\"\n          with:\n            repositoryId: \"tools.repositoryId\"\
-  \n            branch: \"tools.branch\"\n            filePath: \"tools.filePath\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # ── Data Security Posture ───────────────────────────────────────\n        - name: list-data-assets\n          description: \"Retrieve a list of discovered data assets\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: dataStoreId\n              type: string\n              required: false\n            - name: classificationLabel\n              type: string\n              required: false\n            - name: sensitivityLevel\n   \
-  \           type: string\n              required: false\n            - name: search\n              type: string\n              required: false\n            - name: sortBy\n              type: string\n              required: false\n            - name: sortOrder\n              type: string\n              required: false\n          call: \"prisma-cloud-dspm.list-data-assets\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            dataStoreId: \"tools.dataStoreId\"\n            classificationLabel: \"tools.classificationLabel\"\n            sensitivityLevel: \"tools.sensitivityLevel\"\n            search: \"tools.search\"\n            sortBy: \"tools.sortBy\"\n            sortOrder: \"tools.sortOrder\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-data-asset\n          description: \"Retrieve details for a specific data asset\"\n          hints:\n            readOnly: true\n   \
-  \         destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n          call: \"prisma-cloud-dspm.get-data-asset\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-data-risks\n          description: \"Retrieve a list of data security risks\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: riskLevel\n              type: string\n              required: false\n            - name: status\n              type: string\n              required:\
-  \ false\n            - name: cloudProvider\n              type: string\n              required: false\n            - name: search\n              type: string\n              required: false\n            - name: sortBy\n              type: string\n              required: false\n            - name: sortOrder\n              type: string\n              required: false\n          call: \"prisma-cloud-dspm.list-risks\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            riskLevel: \"tools.riskLevel\"\n            status: \"tools.status\"\n            cloudProvider: \"tools.cloudProvider\"\n            search: \"tools.search\"\n            sortBy: \"tools.sortBy\"\n            sortOrder: \"tools.sortOrder\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: get-data-risk\n          description: \"Retrieve details for a specific data security risk\"\n          hints:\n            readOnly:\
-  \ true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n          call: \"prisma-cloud-dspm.get-risk\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-data-risk-status\n          description: \"Update the status of a specific data security risk\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: id\n              type: string\n              required: true\n            - name: status\n              type: string\n              required: true\n            - name: comment\n              type: string\n              required: false\n          call: \"prisma-cloud-dspm.update-risk-status\"\n     \
-  \     with:\n            id: \"tools.id\"\n            status: \"tools.status\"\n            comment: \"tools.comment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-data-stores\n          description: \"Retrieve a list of data stores\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: cloudProvider\n              type: string\n              required: false\n            - name: region\n              type: string\n              required: false\n            - name: serviceType\n              type: string\n              required: false\n            - name: riskLevel\n              type: string\n              required:\
-  \ false\n            - name: hasSensitiveData\n              type: boolean\n              required: false\n            - name: search\n              type: string\n              required: false\n            - name: sortBy\n              type: string\n              required: false\n            - name: sortOrder\n              type: string\n              required: false\n          call: \"prisma-cloud-dspm.list-data-stores\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            cloudProvider: \"tools.cloudProvider\"\n            region: \"tools.region\"\n            serviceType: \"tools.serviceType\"\n            riskLevel: \"tools.riskLevel\"\n            hasSensitiveData: \"tools.hasSensitiveData\"\n            search: \"tools.search\"\n            sortBy: \"tools.sortBy\"\n            sortOrder: \"tools.sortOrder\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n\n        - name: list-classifications\n\
-  \          description: \"Retrieve a list of data classifications\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n            - name: category\n              type: string\n              required: false\n            - name: isBuiltIn\n              type: boolean\n              required: false\n            - name: search\n              type: string\n              required: false\n          call: \"prisma-cloud-dspm.list-classifications\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            category: \"tools.category\"\n            isBuiltIn: \"tools.isBuiltIn\"\n            search: \"tools.search\"\n          outputParameters:\n            - type:\
-  \ array\n              mapping: \"$.\"\n"
+  \n          wi\n\n# --- truncated at 32 KB (50 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/cloud-security-posture.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/cloud-security-posture.yaml
 tags:
 - Palo Alto Networks

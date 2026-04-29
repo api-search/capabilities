@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- application performance
-- get optimization recommendations for a profiling group
-- list findings reports for a profiling group
-- Platform Engineer
-- developer persona.
-- get profile
-- describe profiling group
-- get recommendations
-- list profile collection times for a profiling group
-- amazon
+- list profiling groups
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
 - submit profiling agent data
+- create a new profiling group
+- list profile collection times for a profiling group
+- devops
+- create profiling group
+- DevOps Engineer
+- post agent profile
+- get profile
+- aws
+- application performance
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- get recommendations
+- get optimization recommendations for a profiling group
+- Developer
+- developer persona.
+- list profiling groups in the account
+- machine learning
+- list profile times
+- amazon
+- describe profiling group
+- list findings reports
+- list findings reports for a profiling group
+- get aggregated profile data
+- Platform Engineer
 - platform engineer persona.
 - devops engineer persona.
-- aws
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- get aggregated profile data
-- create profiling group
-- profiling
-- Developer
-- devops
-- list profiling groups in the account
-- post agent profile
-- list profiling groups
-- list findings reports
-- list profile times
-- DevOps Engineer
-- create a new profiling group
-- machine learning
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
 - get details about a profiling group
+- profiling
 slug: amazon-codeguru-profiler-application-performance
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Profiler Application Performance Profiling\n  description: Unified workflow for DevOps teams to manage profiling groups, retrieve CPU and heap profile data, and act on performance recommendations for production applications.\n  tags:\n  - Amazon\n  - AWS\n  - Application Performance\n  - Profiling\n  - DevOps\n  - Machine Learning\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codeguruprofiler\n    location: ./shared/codeguruprofiler.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codeguruprofiler-application-performance-api\n    description: Unified REST API for Application Performance Profiling.\n    resources:\n    - path: /v1/listProfilingGroups\n      name: list-profiling-groups\n      description: List\
   \ profiling groups in the account\n    - path: /v1/createProfilingGroup\n      name: create-profiling-group\n      description: Create a new profiling group\n    - path: /v1/describeProfilingGroup\n      name: describe-profiling-group\n      description: Get details about a profiling group\n    - path: /v1/getRecommendations\n      name: get-recommendations\n      description: Get optimization recommendations for a profiling group\n  - type: mcp\n    port: 9090\n    namespace: codeguruprofiler-application-performance-mcp\n    transport: http\n    description: MCP server for AI-assisted Application Performance Profiling.\n    tools:\n    - name: list-profiling-groups\n      description: List profiling groups in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeguruprofiler.listProfilingGroups\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-profiling-group\n      description: Create a new profiling group\n\

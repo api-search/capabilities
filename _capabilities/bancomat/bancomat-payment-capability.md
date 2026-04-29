@@ -9,12 +9,12 @@ personas: []
 provider_name: Bancomat
 provider_slug: bancomat
 search_terms:
-- financial services
 - atm
-- debit cards
-- banking
+- financial services
 - payments
 - mobile payments
+- debit cards
+- banking
 - italy
 slug: bancomat-payment-capability
 source_yaml: "name: BANCOMAT Payment Capability\ndescription: >-\n  Naftiko capability for BANCOMAT Pay payment acceptance covering online checkout via QR code\n  and P2P transfers for Italian consumers and merchants.\nversion: '1.0'\nprovider: bancomat\n\nworkflows:\n  - name: Online Payment Acceptance\n    description: Merchant-initiated BANCOMAT Pay payment via QR code for e-commerce.\n    apis:\n      - bancomat:bancomat-pay\n    tools:\n      - name: CreatePayment\n        description: Initiate a BANCOMAT Pay payment transaction for a merchant.\n      - name: GenerateQRCode\n        description: Generate a QR code for customer to scan and pay.\n      - name: GetPaymentStatus\n        description: Check the current status of a payment transaction.\n      - name: RefundPayment\n        description: Process a refund for a completed BANCOMAT Pay transaction.\n    persona: PSP Developer\n\n  - name: P2P Transfer\n    description: Consumer-to-consumer bank account transfer via BANCOMAT Pay\

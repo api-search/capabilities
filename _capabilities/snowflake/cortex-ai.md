@@ -38,46 +38,46 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- semantic search
-- run llm inference completion
-- database
-- sql
-- ai
-- data warehousing
-- llm complete
-- generate query suggestions
-- ask a question about your data using natural language
-- list models
-- cortex
-- available models
-- run llm completion
-- send feedback on an analyst response
-- data lakes
-- snowflake
-- list notebooks
-- natural language data analytics
-- complete
-- send analyst feedback
-- llm inference
-- query a search service
-- query a cortex search service
-- ask a question about your data
-- create a notebook
-- send analyst message
-- list cortex search services
 - execute notebook
-- create notebook
-- list available llm models
-- ask analyst
-- list search services
-- machine learning
+- complete
+- snowflake
+- ask a question about your data
+- query a search service
 - list llm models
-- generate verified query suggestions
-- list available cortex llm models
-- execute a notebook
+- data lakes
+- database
+- ask analyst
+- create a notebook
+- list search services
+- cortex
+- semantic search
+- list available llm models
 - query search
-- data sharing
+- run llm completion
 - notebook management
+- generate query suggestions
+- list available cortex llm models
+- query a cortex search service
+- run llm inference completion
+- natural language data analytics
+- list notebooks
+- machine learning
+- send feedback on an analyst response
+- execute a notebook
+- list models
+- llm inference
+- data warehousing
+- ask a question about your data using natural language
+- sql
+- available models
+- create notebook
+- generate verified query suggestions
+- llm complete
+- list cortex search services
+- ai
+- send analyst message
+- data sharing
+- send analyst feedback
 slug: cortex-ai
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Cortex AI\"\n  description: \"Unified workflow for AI and ML capabilities including LLM inference, natural language analytics, semantic search, and notebook-based development. Used by Data Scientists and ML Engineers for AI-powered data exploration and model deployment.\"\n  tags:\n    - Snowflake\n    - Cortex\n    - AI\n    - Machine Learning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-cortex-analyst\n      location: ./shared/cortex-analyst.yaml\n    - import: snowflake-cortex-inference\n      location: ./shared/cortex-inference.yaml\n    - import: snowflake-cortex-search\n      location: ./shared/cortex-search-service.yaml\n    - import: snowflake-notebook\n      location: ./shared/notebook.yaml\n\n  exposes:\n  \
   \  - type: rest\n      port: 8082\n      namespace: snowflake-cortex-api\n      description: \"Unified REST API for Snowflake Cortex AI capabilities.\"\n      resources:\n        - path: /v1/analyst/messages\n          name: analyst-messages\n          description: \"Natural language data analytics\"\n          operations:\n            - method: POST\n              name: send-analyst-message\n              description: \"Ask a question about your data\"\n              call: \"snowflake-cortex-analyst.send-message\"\n        - path: /v1/inference/complete\n          name: inference\n          description: \"LLM inference\"\n          operations:\n            - method: POST\n              name: complete\n              description: \"Run LLM completion\"\n              call: \"snowflake-cortex-inference.complete\"\n        - path: /v1/inference/models\n          name: models\n          description: \"Available models\"\n          operations:\n            - method: GET\n              name:\

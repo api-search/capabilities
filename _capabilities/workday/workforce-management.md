@@ -38,59 +38,59 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list all job profiles
-- position management
-- country reference data
-- enterprise software
-- list all people
-- list all positions
-- person data
-- list all countries
-- person list people
-- common list currencies
-- person get home contact
-- get a specific worker by id
-- supervisory organizations
-- list all currencies
-- workday
-- list all locations
-- staffing list positions
-- human resources
-- get a worker by id
-- list organizations
 - common list countries
-- hcm get worker inbox tasks
-- workforce management
-- worker detail
-- list supervisory organizations
-- worker management
-- person get person
 - staffing terminate worker
-- hcm list organizations
-- initiate a worker termination
-- get a person by id
-- cloud computing
-- list people
-- get change history for a worker
-- get worker
+- person get home contact
+- person get person
 - list all workers with optional search and pagination
-- hcm list workers
-- list positions
-- hcm get worker history
-- list all workers
-- get inbox tasks for a worker
-- list workers
-- get work contact information
+- workday
+- get a person by id
+- workforce management
+- list all job profiles
+- list all locations
+- list all people
+- list people
+- get a specific worker by id
+- worker detail
+- hcm get worker inbox tasks
 - financial management
+- list positions
+- staffing list job profiles
+- get worker
 - list countries
 - get home contact information
-- staffing list job profiles
-- saas
-- staffing create job change
-- hcm
-- hcm list locations
-- create a job change request
 - person get work contact
+- get work contact information
+- human resources
+- initiate a worker termination
+- hcm get worker history
+- list all workers
+- get a worker by id
+- get change history for a worker
+- hcm list organizations
+- saas
+- staffing list positions
+- position management
+- cloud computing
+- list supervisory organizations
+- list all positions
+- enterprise software
+- person list people
+- list all countries
+- staffing create job change
+- worker management
+- common list currencies
+- list workers
+- country reference data
+- list organizations
+- hcm list workers
+- hcm list locations
+- person data
+- create a job change request
+- get inbox tasks for a worker
+- hcm
+- supervisory organizations
+- list all currencies
 - hcm get worker
 slug: workforce-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Workforce Management\"\n  description: \"Unified workforce management combining HCM, Person, Staffing, and Common APIs for HR administrators to manage workers, organizations, positions, and reference data.\"\n  tags:\n    - Workday\n    - Workforce Management\n    - Human Resources\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-hcm\n      location: ./shared/hcm.yaml\n    - import: workday-person\n      location: ./shared/person.yaml\n    - import: workday-staffing\n      location: ./shared/staffing.yaml\n    - import: workday-common\n      location: ./shared/common.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workforce-management-api\n      description: \"Unified REST API for workforce management operations.\"\n      resources:\n        - path: /v1/workers\n\

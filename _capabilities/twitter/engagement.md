@@ -65,91 +65,91 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- search spaces
-- post creation, editing, media management, and content analytics.
-- content creator
-- get users blocked by the authenticated user
-- unmute a user
-- content
-- retrieve multiple spaces by their ids
-- unblockUsers
-- unfollowUser
-- social monitoring, search, trending topics, and sentiment analysis.
-- getDirectMessagesEvents
-- social media manager
-- researcher
-- get users muted by the authenticated user
-- monitors brand mentions, sentiment, and competitive landscape.
-- data analyst
-- spaces
-- create dm conversations
-- community
-- data compliance, deletion tracking, and regulatory event monitoring.
-- platform operations
-- manages brand presence, campaigns, and content strategy.
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- real-time data
-- manage mutes
-- getBlockedUsers
-- unblock a user
-- ensures data handling meets regulatory and platform compliance requirements.
-- getMutedUsers
-- advertising
-- createDirectMessagesByParticipantId
-- get dm events
-- compliance officer
-- mute a user
-- manage user relationships, direct messages, spaces, and community interactions.
-- getSpacesPosts
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- followUser
-- manages user relationships, follows, and interaction strategies.
-- handles customer inquiries and issues via direct messages and replies.
-- community manager
-- monitor conversations, search posts, analyze trends, and extract insights.
-- block a user
-- get dm events for a specific conversation
-- streaming
-- muteUser
-- user relationships, direct messaging, spaces, and community interaction.
-- get multiple spaces by ids
-- conducts academic or market research using x data archives.
-- get posts shared in a space
-- getSpacesByIds
-- marketing team
-- send a direct message to an existing conversation
-- send dm to a conversation
-- unmuteUser
-- produces original posts, threads, and media content on x.
-- get recent dm events for the authenticated user
-- x api
-- microblogging
-- send a direct message to a user by participant id
-- manage blocks
-- get recent dm events
-- unfollow a user
-- create a new group dm conversation
 - createDirectMessagesByConversationId
+- retrieve spaces by ids
+- post creation, editing, media management, and content analytics.
+- create a new group dm conversation
+- social media manager
+- platform operations
+- block a user
+- direct messages
+- content
+- researcher
+- manage mutes
+- manage following
+- unfollowUser
+- monitor conversations, search posts, analyze trends, and extract insights.
+- follow a user
+- community manager
+- mute a user
+- getDirectMessagesEvents
+- conducts academic or market research using x data archives.
+- social media
+- produces original posts, threads, and media content on x.
+- getBlockedUsers
+- unfollow a user
+- blockUsers
+- unmute a user
+- ensures data handling meets regulatory and platform compliance requirements.
+- advertising
+- compliance officer
+- get posts shared in a space
+- create dm conversations
+- creates, schedules, and analyzes social media content across platforms.
+- getSpacesPosts
+- engagement
+- data analyst
+- user relationships, direct messaging, spaces, and community interaction.
+- get users muted by the authenticated user
+- muteUser
+- manage blocks
+- content creator
+- social monitoring, search, trending topics, and sentiment analysis.
+- real-time data
 - extracts insights from social data through search, streaming, and analytics.
 - getDirectMessagesEventsByConversationId
-- brand manager
-- builds and maintains communities through engagement and moderation.
-- retrieve spaces by ids
-- follow a user
-- customer support
-- blockUsers
-- direct messages
-- manage following
+- unblockUsers
+- community
 - engagement specialist
-- engagement
-- data engineer
-- search for spaces by keyword
-- social media
 - searchSpaces
-- send a dm to an existing conversation
+- handles customer inquiries and issues via direct messages and replies.
+- data compliance, deletion tracking, and regulatory event monitoring.
+- send dm to a conversation
+- manages brand presence, campaigns, and content strategy.
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- get multiple spaces by ids
+- get users blocked by the authenticated user
+- marketing team
+- get dm events
+- get recent dm events for the authenticated user
+- customer support
+- streaming
+- search for spaces by keyword
+- search spaces
 - create, manage, and analyze posts, media, bookmarks, and lists.
-- creates, schedules, and analyzes social media content across platforms.
+- builds and maintains communities through engagement and moderation.
+- get recent dm events
+- followUser
+- x api
+- getSpacesByIds
+- getMutedUsers
+- get dm events for a specific conversation
+- send a direct message to an existing conversation
+- send a direct message to a user by participant id
+- manages user relationships, follows, and interaction strategies.
+- manage user relationships, direct messages, spaces, and community interactions.
+- data engineer
+- microblogging
+- retrieve multiple spaces by their ids
+- monitors brand mentions, sentiment, and competitive landscape.
+- createDirectMessagesByParticipantId
+- unblock a user
+- spaces
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- send a dm to an existing conversation
 - createDirectMessagesConversation
+- brand manager
+- unmuteUser
 slug: engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Engagement and Community Management\"\n  description: \"Unified workflow for managing user relationships, direct messages, spaces, and community interactions on X. Used by community managers, customer support teams, and engagement specialists.\"\n  tags:\n    - X API\n    - Engagement\n    - Community\n    - Direct Messages\n    - Spaces\n  personas:\n    - community managers\n    - customer support\n    - engagement specialists\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-users\n      location: \"./shared/users.yaml\"\n    - import: x-direct-messages\n      location: \"./shared/direct-messages.yaml\"\n    - import: x-spaces\n      location: \"./shared/spaces.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: x-engagement-api\n      resources:\n        - path: /v1/engagement/users/{id}/following\n\
   \          name: following\n          description: \"Manage following\"\n          operations:\n            - method: POST\n              name: followUser\n              description: \"Follow a user\"\n              call: \"x-engagement-api.followUser\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/engagement/users/{source_user_id}/following/{target_user_id}\n          name: unfollow\n          description: \"Unfollow a user\"\n          operations:\n            - method: DELETE\n              name: unfollowUser\n              description: \"Unfollow a user\"\n              call: \"x-engagement-api.unfollowUser\"\n              with:\n                source_user_id: \"rest.source_user_id\"\n                target_user_id: \"rest.target_user_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

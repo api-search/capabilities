@@ -70,49 +70,49 @@ personas: []
 provider_name: Amazon Elastic Transcoder
 provider_slug: amazon-elastic-transcoder
 search_terms:
-- UpdatePipelineStatus
-- amazon elastic transcoder deletepipeline
-- amazon elastic transcoder createpipeline
-- CreatePreset
-- CancelJob
-- video
-- TestRole
-- CreatePipeline
-- aws
-- amazon elastic transcoder createpreset
-- operations teams managing amazon elastic transcoder infrastructure
-- transcoding
-- DeletePipeline
-- amazon elastic transcoder updatepipelinenotifications
-- CreateJob
-- amazon elastic transcoder createjob
-- ListPresets
-- amazon elastic transcoder updatepipelinestatus
 - UpdatePipeline
-- amazon web services
-- ReadJob
-- amazon elastic transcoder listpipelines
-- amazon elastic transcoder readjob
+- amazon elastic transcoder deletepipeline
 - amazon elastic transcoder deletepreset
-- amazon elastic transcoder testrole
-- media transcoding service for converting media files to various formats
+- operations teams managing amazon elastic transcoder infrastructure
+- amazon elastic transcoder readpreset
+- amazon elastic transcoder createpreset
+- transcoding
 - UpdatePipelineNotifications
 - developers building applications using amazon elastic transcoder
-- ReadPreset
+- video
 - DeletePreset
-- amazon elastic transcoder readpreset
-- ListJobsByStatus
-- amazon elastic transcoder canceljob
-- ListPipelines
-- ReadPipeline
+- amazon elastic transcoder updatepipelinenotifications
+- media
 - amazon elastic transcoder readpipeline
 - amazon elastic transcoder listpresets
-- amazon elastic transcoder listjobsbypipeline
-- media
-- amazon elastic transcoder updatepipeline
-- amazon elastic transcoder listjobsbystatus
-- unified capability for managing amazon elastic transcoder resources. combines amazon elastic transcoder apis for media engineer workflows in media processing.
+- ReadPreset
 - ListJobsByPipeline
+- CancelJob
+- amazon elastic transcoder canceljob
+- UpdatePipelineStatus
+- amazon elastic transcoder createjob
+- CreateJob
+- amazon elastic transcoder listjobsbypipeline
+- amazon elastic transcoder updatepipelinestatus
+- aws
+- CreatePipeline
+- ListJobsByStatus
+- ListPipelines
+- unified capability for managing amazon elastic transcoder resources. combines amazon elastic transcoder apis for media engineer workflows in media processing.
+- amazon elastic transcoder testrole
+- amazon elastic transcoder readjob
+- amazon elastic transcoder listpipelines
+- amazon elastic transcoder listjobsbystatus
+- TestRole
+- ListPresets
+- CreatePreset
+- media transcoding service for converting media files to various formats
+- amazon web services
+- amazon elastic transcoder createpipeline
+- ReadPipeline
+- DeletePipeline
+- amazon elastic transcoder updatepipeline
+- ReadJob
 slug: amazon-elastic-transcoder-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Elastic Transcoder Management\n  description: Unified capability for managing Amazon Elastic Transcoder resources. Combines Amazon Elastic Transcoder APIs for Media Engineer workflows in Media Processing.\n  tags:\n  - Amazon Web Services\n  - Media\n  - Transcoding\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: elastic_transcoder\n    location: ./shared/elastic-transcoder.yaml\n  exposes:\n  - type: rest\n    port: 8184\n    namespace: amazon-elastic-transcoder-workflow-api\n    description: Unified REST API for Amazon Elastic Transcoder management.\n    resources:\n    - path: /v1/ReadJob\n      name: ReadJob\n      description: Amazon Elastic Transcoder ReadJob\n      operations:\n      - method: GET\n        name: ReadJob\n        description: Amazon Elastic Transcoder ReadJob\n        call:\
   \ api.ReadJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CancelJob\n      name: CancelJob\n      description: Amazon Elastic Transcoder CancelJob\n      operations:\n      - method: POST\n        name: CancelJob\n        description: Amazon Elastic Transcoder CancelJob\n        call: api.CancelJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateJob\n      name: CreateJob\n      description: Amazon Elastic Transcoder CreateJob\n      operations:\n      - method: POST\n        name: CreateJob\n        description: Amazon Elastic Transcoder CreateJob\n        call: api.CreateJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListPipelines\n      name: ListPipelines\n      description: Amazon Elastic Transcoder ListPipelines\n      operations:\n      - method: GET\n        name: ListPipelines\n        description: Amazon Elastic Transcoder ListPipelines\n\

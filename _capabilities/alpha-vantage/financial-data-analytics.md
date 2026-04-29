@@ -10,10 +10,10 @@ provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
 - financial
-- economic data
+- stocks
 - technical indicators
 - sentiment analysis
-- stocks
+- economic data
 - market data
 slug: financial-data-analytics
 source_yaml: "name: Financial Data Analytics\ndescription: >-\n  Workflow capability composition for financial data research and analytics using\n  the Alpha Vantage API. Supports equity analysis, technical trading signals,\n  macro economic research, and news sentiment monitoring.\nversion: 1.0.0\ncapabilities:\n  - shared/market-data.yaml\nworkflows:\n  - id: equity-research\n    name: Equity Research\n    description: Comprehensive equity research workflow combining price, fundamentals, and sentiment\n    steps:\n      - step: get-price-history\n        operation: TIME_SERIES_DAILY\n        description: Retrieve daily price history for the stock\n      - step: get-company-overview\n        operation: OVERVIEW\n        description: Get fundamental financial metrics and business description\n      - step: get-news-sentiment\n        operation: NEWS_SENTIMENT\n        description: Analyze recent news sentiment for the stock\n  - id: technical-analysis\n    name: Technical Analysis\n    description:\

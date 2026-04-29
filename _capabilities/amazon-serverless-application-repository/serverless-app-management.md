@@ -35,48 +35,48 @@ personas: []
 provider_name: Amazon Serverless Application Repository
 provider_slug: amazon-serverless-application-repository
 search_terms:
-- create application version
+- publish a new serverless application
 - update application
 - get the sharing policy for a published application
-- Platform Engineer
+- application repository
+- browse the serverless application repository catalog
+- developers who publish and share sam-based serverless applications
+- list applications
+- deploy a serverless application
+- deploy
+- get details and metadata for a serverless application
+- update metadata for a published serverless application
+- devops
+- application deployment pipeline management via cloudformation
+- create version
+- application version management
+- list all published versions of an application
+- lambda
+- serverless application catalog management
+- application deployment via cloudformation
+- aws
+- serverless
+- list application versions
+- create application version
+- sam
+- get application
+- browse the serverless application catalog
+- aws lambda-based application development, packaging, and distribution
+- engineers who discover and deploy pre-built serverless applications from the repository
+- get application policy
+- individual application management
 - get application details
 - Serverless Developer
-- serverless
-- individual application management
-- get application policy
-- list versions
-- list applications
-- amazon serverless application repository
-- engineers who discover and deploy pre-built serverless applications from the repository
-- application version management
-- aws
-- sam
-- create version
-- serverless application catalog management
-- publish application
-- application deployment via cloudformation
-- browse the serverless application catalog
-- lambda
-- get application
-- publish a new application version
-- application deployment pipeline management via cloudformation
-- developers who publish and share sam-based serverless applications
-- publish a new serverless application
-- devops
-- publish a new serverless application to the sar
 - publish a new version of an existing application
-- deploy a serverless application to your aws account
-- list application versions
 - deploy application
-- list all published versions of an application
-- browse the serverless application repository catalog
-- application repository
-- get details and metadata for a serverless application
-- deploy a serverless application
-- update metadata for a published serverless application
+- Platform Engineer
+- amazon serverless application repository
+- list versions
+- deploy a serverless application to your aws account
 - end-to-end serverless application lifecycle management including publishing, versioning, and deployment
-- deploy
-- aws lambda-based application development, packaging, and distribution
+- publish a new application version
+- publish a new serverless application to the sar
+- publish application
 slug: serverless-app-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SAR Serverless App Management\"\n  description: \"Unified capability for publishing, discovering, and deploying serverless applications via the AWS Serverless Application Repository. Used by Serverless Developers and Platform Engineers.\"\n  tags:\n    - Amazon Serverless Application Repository\n    - Serverless\n    - Lambda\n    - SAM\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-serverless-application-repository\n      location: ./shared/amazon-serverless-application-repository.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: serverless-app-management-api\n      description: \"Unified REST API for Amazon SAR serverless application lifecycle management.\"\n  \
   \    resources:\n        - path: /v1/applications\n          name: applications\n          description: \"Serverless application catalog management\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"Browse the serverless application catalog\"\n              call: \"amazon-serverless-application-repository.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: publish-application\n              description: \"Publish a new serverless application\"\n              call: \"amazon-serverless-application-repository.create-application\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/{applicationId}\n          name: application\n          description: \"Individual application management\"\n          operations:\n            - method:\

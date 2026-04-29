@@ -14,25 +14,25 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-dev-ops
 search_terms:
-- list pipelines
 - resource management
-- project management
+- list organization resources
+- list projects
+- cloud
+- azure resource management
+- devops
+- list repositorys
+- list
 - list project resources
 - management
-- list organization resources
-- list pipeline resources
-- list organizations
-- azure resource management
-- azure
-- list projects
-- devops
-- list repository resources
-- version control
-- cloud
 - list all resources
-- list
+- project management
+- list pipeline resources
+- list pipelines
+- list organizations
 - ci/cd
-- list repositorys
+- list repository resources
+- azure
+- version control
 slug: azure-dev-ops-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure DevOps Management\"\n  description: \"Workflow capability for managing Azure DevOps resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-dev-ops\n      location: ./shared/azure-dev-ops.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: azure-dev-ops-management-api\n      description: \"Unified REST API for Azure DevOps management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description: \"List all resources\"\n              call: \"azure-dev-ops.list-pipelines\"\
   \n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: azure-dev-ops-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure DevOps management.\"\n      tools:\n        - name: list-pipelines\n          description: \"List Pipeline resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-dev-ops.list-pipelines\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-projects\n          description: \"List Project resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-dev-ops.list-projects\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\

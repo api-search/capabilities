@@ -27,49 +27,49 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- audience segments.
+- CDP Administrator
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- list audience segments
+- administrator managing customer profiles, segments, and identity resolution.
+- list all datasets.
 - data sets.
 - journey orchestration
-- Marketing Technologist
+- data management
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- technical marketer integrating experience cloud apis into marketing stack.
 - digital analytics reporting and audience insights.
+- list audience segments.
+- digital marketing
+- personalization
+- adobe experience platform
+- list all datasets ingested into adobe experience platform.
 - get profile
-- CDP Administrator
+- list datasets
+- Digital Marketer
+- profile management, audience segmentation, and data ingestion.
+- marketing professional using analytics, personalization, and journey tools.
+- list segments
+- Marketing Technologist
+- audience segmentation
+- a/b testing and content personalization.
+- unified customer profiles.
+- Data Engineer
+- campaign management
+- audience segments.
 - unified customer profiles and data management.
 - get customer profile
-- profile management, audience segmentation, and data ingestion.
-- digital marketing
-- customer data platform
-- real-time profiles
-- create a new audience segment using pql expression in adobe experience platform.
-- analytics
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
 - multi-channel customer journey management.
-- create audience segment
-- list segments
+- analytics
 - create a new audience segment.
-- Data Engineer
-- list audience segments.
-- create segment
-- a/b testing and content personalization.
-- Digital Marketer
-- personalization
-- marketing professional using analytics, personalization, and journey tools.
-- campaign management
-- unified customer profiles.
-- adobe experience platform
-- list audience segment definitions in adobe experience platform.
-- customer experience
-- list datasets
-- administrator managing customer profiles, segments, and identity resolution.
-- audience segmentation
-- list all datasets.
-- data management
-- retrieve a unified real-time customer profile from adobe experience platform by identity.
-- list audience segments
+- create audience segment
+- customer data platform
 - get a unified customer profile.
-- technical marketer integrating experience cloud apis into marketing stack.
-- list all datasets ingested into adobe experience platform.
+- create a new audience segment using pql expression in adobe experience platform.
+- real-time profiles
+- list audience segment definitions in adobe experience platform.
+- retrieve a unified real-time customer profile from adobe experience platform by identity.
+- customer experience
+- create segment
 slug: customer-data-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Experience Cloud Customer Data Platform\"\n  description: \"Unified workflow for managing real-time customer profiles, audience segmentation, and data ingestion using Adobe Experience Platform. Designed for data engineers and customer data platform administrators.\"\n  tags:\n    - Adobe Experience Platform\n    - Customer Data Platform\n    - Real-Time Profiles\n    - Data Management\n    - Audience Segmentation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PLATFORM_ACCESS_TOKEN: ADOBE_PLATFORM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: experience-platform\n      location: ./shared/experience-platform-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: customer-data-platform-api\n      description: \"Unified REST API for Adobe Experience Platform — profiles, datasets, and audience segments.\"\n      resources:\n        -\
   \ path: /v1/profiles\n          name: profiles\n          description: \"Unified customer profiles.\"\n          operations:\n            - method: GET\n              name: get-profile\n              description: \"Get a unified customer profile.\"\n              call: \"experience-platform.get-profile\"\n              with:\n                entityId: \"rest.entityId\"\n                entityIdNS: \"rest.entityIdNS\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets\n          name: datasets\n          description: \"Data sets.\"\n          operations:\n            - method: GET\n              name: list-datasets\n              description: \"List all datasets.\"\n              call: \"experience-platform.list-datasets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments\n          name: segments\n          description: \"Audience\

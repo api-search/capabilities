@@ -12,59 +12,59 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- hubspot create a commerce payment
-- listcommercepayments
-- hubspot list subscriptions
 - batchreadsubscriptions
-- hubspot create a batch of commerce payments
-- batchupdatesubscriptions
-- deletesubscription
+- hubspot search commerce payments
+- hubspot get a subscription
+- batchupdatecommercepayments
 - hubspot create a subscription
+- batchcreatecommercepayments
+- marketing
+- createsubscription
+- deletesubscription
+- archivecommercepaymentbyid
+- batchreadcommercepayments
+- batcharchivecommercepayments
+- operations
+- subscriptions
+- searchsubscriptions
 - getsubscription
 - content
-- hubspot list commerce payments
-- hubspot get a subscription
-- searchsubscriptions
-- batcharchivecommercepayments
-- updatecommercepaymentbyid
-- batchcreatecommercepayments
-- hubspot update a subscription
-- createsubscription
-- hubspot update a commerce payment
-- hubspot batch read subscriptions
-- commerce
-- analytics
-- payments
-- archivecommercepaymentbyid
 - searchcommercepayments
-- batchcreatesubscriptions
-- crm
-- customer service
-- hubspot
-- createcommercepayment
-- hubspot update a batch of commerce payments
-- email marketing
-- listsubscriptions
-- hubspot archive a commerce payment
-- updatesubscription
-- hubspot archive a subscription
-- hubspot search commerce payments
-- listsubscriptionassociations
-- hubspot read a batch of commerce payments
-- getcommercepaymentbyid
-- hubspot batch create subscriptions
-- batchupdatecommercepayments
-- hubspot list subscription associations
 - hubspot search subscriptions
-- hubspot batch update subscriptions
-- marketing
+- email marketing
+- listcommercepayments
+- listsubscriptions
+- updatesubscription
+- crm
 - marketing automation
-- hubspot archive a batch of commerce payments
-- hubspot retrieve a commerce payment
-- batchreadcommercepayments
-- subscriptions
+- createcommercepayment
+- hubspot batch read subscriptions
+- getcommercepaymentbyid
+- commerce
+- hubspot list subscriptions
+- hubspot update a commerce payment
+- batchcreatesubscriptions
+- listsubscriptionassociations
+- customer service
 - sales
-- operations
+- hubspot batch update subscriptions
+- hubspot create a commerce payment
+- hubspot archive a subscription
+- hubspot archive a batch of commerce payments
+- hubspot list commerce payments
+- hubspot
+- hubspot archive a commerce payment
+- hubspot read a batch of commerce payments
+- hubspot update a batch of commerce payments
+- hubspot list subscription associations
+- analytics
+- updatecommercepaymentbyid
+- hubspot update a subscription
+- hubspot batch create subscriptions
+- hubspot create a batch of commerce payments
+- payments
+- batchupdatesubscriptions
+- hubspot retrieve a commerce payment
 slug: commerce-operations
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: HubSpot Commerce Operations\n  description: Commerce workflow for managing payments and subscriptions.\n  tags:\n  - HubSpot\n  - Commerce\n  - Payments\n  - Subscriptions\n  created: '2026-04-18'\n  modified: '2026-04-18'\nbinds:\n- namespace: env\n  keys:\n    HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\ncapability:\n  consumes:\n  - import: commerce-payments-api\n    location: ./shared/commerce-payments-api.yaml\n  - import: commerce-subscriptions-api\n    location: ./shared/commerce-subscriptions-api.yaml\n  exposes:\n  - type: mcp\n    port: 9094\n    namespace: commerce-operations-mcp\n    transport: http\n    description: MCP server for AI-assisted HubSpot Commerce Operations.\n    tools:\n    - name: batchreadcommercepayments\n      description: HubSpot Read a Batch of Commerce Payments\n      hints:\n        readOnly: false\n      call: commerce-payments-api.batchreadcommercepayments\n    - name: batcharchivecommercepayments\n\
   \      description: HubSpot Archive a Batch of Commerce Payments\n      hints:\n        readOnly: false\n      call: commerce-payments-api.batcharchivecommercepayments\n    - name: batchcreatecommercepayments\n      description: HubSpot Create a Batch of Commerce Payments\n      hints:\n        readOnly: false\n      call: commerce-payments-api.batchcreatecommercepayments\n    - name: batchupdatecommercepayments\n      description: HubSpot Update a Batch of Commerce Payments\n      hints:\n        readOnly: false\n      call: commerce-payments-api.batchupdatecommercepayments\n    - name: listcommercepayments\n      description: HubSpot List Commerce Payments\n      hints:\n        readOnly: true\n      call: commerce-payments-api.listcommercepayments\n    - name: createcommercepayment\n      description: HubSpot Create a Commerce Payment\n      hints:\n        readOnly: false\n      call: commerce-payments-api.createcommercepayment\n    - name: getcommercepaymentbyid\n      description:\

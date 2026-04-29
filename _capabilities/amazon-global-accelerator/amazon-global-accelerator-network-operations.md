@@ -38,51 +38,51 @@ personas: []
 provider_name: Amazon Global Accelerator
 provider_slug: amazon-global-accelerator
 search_terms:
-- manages application infrastructure and availability
 - describe accelerator
-- update accelerator
-- performance
-- Network Engineer
 - global
-- get accelerator details and status
-- create an endpoint group
+- cdn
 - create a new global accelerator with static anycast ip addresses
-- list endpoint groups
-- get detailed status and configuration of a specific accelerator
-- create listener
-- update endpoint group
-- aws
-- create a new accelerator with static ips
-- list accelerators
-- create a listener for an accelerator specifying ports and protocol
-- manage global accelerator accelerators
-- load balancing
-- configures and optimizes global network traffic routing
-- amazon global accelerator
-- list all accelerators
-- delete an accelerator
-- update listener
-- create an endpoint group to route traffic to specific aws resources
-- create a new listener
 - update listener configuration including ports and protocol
 - create accelerator
-- manage listeners for accelerators
-- cdn
+- Network Engineer
+- traffic routing
 - update accelerator configuration and settings
+- manage endpoint groups for traffic routing
+- list listeners
 - DevOps Engineer
 - manage a specific accelerator
-- list all listeners configured for an accelerator
-- create endpoint group
-- list all global accelerator accelerators and their static ip addresses
-- delete accelerator
+- delete an accelerator
 - availability
-- list listeners
+- update listener
+- create listener
+- load balancing
+- list all accelerators
 - update endpoint group traffic settings and weights
+- aws
+- get detailed status and configuration of a specific accelerator
+- update accelerator
+- list all global accelerator accelerators and their static ip addresses
+- manage listeners for accelerators
+- manages application infrastructure and availability
+- create a listener for an accelerator specifying ports and protocol
+- create an endpoint group
+- list all listeners configured for an accelerator
+- manage global accelerator accelerators
+- configures and optimizes global network traffic routing
 - list all endpoint groups for a listener
-- networking
+- create endpoint group
+- create a new accelerator with static ips
 - list all listeners
-- manage endpoint groups for traffic routing
-- traffic routing
+- create an endpoint group to route traffic to specific aws resources
+- networking
+- performance
+- get accelerator details and status
+- amazon global accelerator
+- create a new listener
+- update endpoint group
+- list endpoint groups
+- delete accelerator
+- list accelerators
 slug: amazon-global-accelerator-network-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Global Accelerator Network Operations\n  description: >-\n    Workflow capability for network engineers and DevOps teams managing Amazon Global\n    Accelerator infrastructure. Covers accelerator lifecycle, listener configuration,\n    endpoint group management, and traffic routing optimization.\n  tags:\n    - Amazon Global Accelerator\n    - Networking\n    - Performance\n    - Traffic Routing\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-global-accelerator\n      location: ./shared/amazon-global-accelerator.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: global-accelerator-ops-api\n      description: Unified REST API for Amazon Global Accelerator network operations.\n\
   \      resources:\n        - path: /v1/accelerators\n          name: accelerators\n          description: Manage Global Accelerator accelerators\n          operations:\n            - method: GET\n              name: list-accelerators\n              description: List all accelerators\n              call: amazon-global-accelerator.ListAccelerators\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-accelerator\n              description: Create a new accelerator with static IPs\n              call: amazon-global-accelerator.CreateAccelerator\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accelerators/{acceleratorArn}\n          name: accelerator-detail\n          description: Manage a specific accelerator\n          operations:\n            - method: GET\n              name: describe-accelerator\n              description:\

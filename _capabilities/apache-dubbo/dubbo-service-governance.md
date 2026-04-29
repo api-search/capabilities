@@ -30,49 +30,49 @@ personas: []
 provider_name: Apache Dubbo
 provider_slug: apache-dubbo
 search_terms:
-- Platform Engineer
-- SRE
-- java
-- engineers managing the dubbo cluster infrastructure and governance policies
-- open source
-- create traffic rule
-- manage dubbo services
-- list all services registered in the dubbo cluster
-- list condition routing rules
-- list applications
-- list condition routes
-- cluster monitoring metrics
-- get dubbo cluster health metrics
-- apache dubbo
-- get health and performance metrics for the dubbo cluster
-- list all registered dubbo services
-- service mesh
 - list all applications registered in the dubbo cluster
-- cluster metrics, flow metrics, and observability
-- get cluster metrics
-- traffic management
-- apache
-- list services
-- discovery, registration, and lifecycle of dubbo services and applications
-- rpc
-- list dubbo services
-- create a new condition routing rule
-- manage dubbo applications
-- manage traffic routing rules
-- list traffic rules
-- platform engineering
-- routing rules, load balancing, gray releases, and traffic shaping
-- go
-- create condition route
-- list dubbo applications
-- create a new condition routing rule for traffic management
-- list all condition routing rules in the cluster
-- service discovery
 - sres monitoring cluster health and responding to service incidents
+- apache dubbo
+- list applications
+- manage dubbo applications
+- list all condition routing rules in the cluster
+- list dubbo services
 - manage services, applications, traffic rules, and cluster monitoring
-- service governance
-- microservices
 - list all registered dubbo applications
+- service discovery
+- create traffic rule
+- SRE
+- list dubbo applications
+- cluster monitoring metrics
+- service mesh
+- list traffic rules
+- service governance
+- routing rules, load balancing, gray releases, and traffic shaping
+- get cluster metrics
+- microservices
+- list all services registered in the dubbo cluster
+- cluster metrics, flow metrics, and observability
+- list condition routing rules
+- create a new condition routing rule for traffic management
+- engineers managing the dubbo cluster infrastructure and governance policies
+- discovery, registration, and lifecycle of dubbo services and applications
+- get dubbo cluster health metrics
+- create a new condition routing rule
+- list all registered dubbo services
+- apache
+- platform engineering
+- go
+- manage traffic routing rules
+- rpc
+- Platform Engineer
+- list condition routes
+- java
+- get health and performance metrics for the dubbo cluster
+- traffic management
+- open source
+- list services
+- create condition route
+- manage dubbo services
 slug: dubbo-service-governance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Dubbo Service Governance\"\n  description: \"Unified capability for governing Apache Dubbo microservices — managing services, applications, traffic rules, routing policies, and monitoring cluster health. Designed for platform engineers and SREs managing Dubbo clusters.\"\n  tags:\n    - Apache Dubbo\n    - Service Governance\n    - Microservices\n    - Traffic Management\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      DUBBO_ADMIN_BASE_URL: DUBBO_ADMIN_BASE_URL\n\ncapability:\n  consumes:\n    - import: dubbo-admin\n      location: ./shared/dubbo-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: dubbo-governance-api\n      description: \"Unified REST API for Apache Dubbo service governance.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n          description: Manage Dubbo applications\n\
   \          operations:\n            - method: GET\n              name: list-applications\n              description: List all registered Dubbo applications\n              call: \"dubbo-admin.list-applications\"\n              with:\n                env: \"rest.env\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/services\n          name: services\n          description: Manage Dubbo services\n          operations:\n            - method: GET\n              name: list-services\n              description: List all registered Dubbo services\n              call: \"dubbo-admin.list-services\"\n              with:\n                env: \"rest.env\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/traffic-rules\n          name: traffic-rules\n          description: Manage traffic routing rules\n          operations:\n            - method: GET\n \

@@ -31,49 +31,49 @@ personas: []
 provider_name: Apple Keynote
 provider_slug: apple-keynote
 search_terms:
-- slides
-- list available keynote themes
+- presentation lifecycle management
 - automation
-- list slides
-- lists all available keynote themes and templates for new presentations
-- export a presentation to pdf, pptx, or images
-- end-to-end keynote presentation creation and management via icloud
-- create presentation
-- creating, organizing, and managing keynote presentation documents
+- list available keynote themes
 - slide management within presentations
+- slides
+- creating, organizing, and managing keynote presentation documents
+- lists all available keynote themes and templates for new presentations
+- available themes and templates
+- apple
+- create a new presentation with title and theme
+- iwork
+- export a presentation to pdf, pptx, or images
+- Content Creator
+- export presentation
+- list slides in a presentation
+- icloud
+- exports a keynote presentation to pdf format with optional presenter notes
+- converting and sharing presentations in different formats
 - lists all slides in a keynote presentation with their titles and layouts
-- lists all keynote presentations stored in the user's icloud account
+- list slides
+- individual creating presentations for training, education, or personal use
+- add slide to presentation
+- export keynote to pdf
+- presentations
 - list keynote themes
 - creates a new keynote presentation with a specified title and optional theme
-- list themes
-- adds a new slide to a keynote presentation at a specified position with a chosen layout
-- export keynote to pdf
-- export presentation
-- themes, layouts, and visual styling of presentations
-- icloud
-- available themes and templates
-- exports a keynote presentation to pdf format with optional presenter notes
-- keynote
-- converting and sharing presentations in different formats
-- list presentation slides
-- design
-- list all keynote presentations in icloud
-- create keynote presentation
-- presentations
-- individual creating presentations for training, education, or personal use
-- marketing team member creating brand presentations, pitch decks, and sales materials
-- apple
-- Content Creator
-- create a new presentation with title and theme
-- list keynote presentations
 - productivity
-- iwork
+- list presentation slides
+- list keynote presentations
+- themes, layouts, and visual styling of presentations
+- create presentation
+- list all keynote presentations in icloud
+- list themes
+- marketing team member creating brand presentations, pitch decks, and sales materials
+- keynote
 - list presentations
-- list slides in a presentation
-- add slide to presentation
-- Marketing Professional
+- create keynote presentation
+- design
+- end-to-end keynote presentation creation and management via icloud
+- adds a new slide to a keynote presentation at a specified position with a chosen layout
 - presentation export to different formats
-- presentation lifecycle management
+- lists all keynote presentations stored in the user's icloud account
+- Marketing Professional
 slug: presentation-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Apple Keynote Presentation Automation\n  description: >-\n    Workflow capability for automating Keynote presentation creation and management\n    via iCloud. Combines presentation lifecycle management, slide operations, theme\n    selection, and multi-format export into a unified workflow for content creators,\n    marketing teams, and business presenters.\n  tags:\n    - Apple\n    - Keynote\n    - Presentations\n    - Automation\n    - Productivity\n    - iCloud\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ICLOUD_AUTH_TOKEN: ICLOUD_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: keynote-icloud\n      location: ./shared/apple-keynote-icloud.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: keynote-automation-api\n      description: Unified REST API for Keynote presentation automation.\n      resources:\n        - path: /v1/presentations\n   \
   \       name: presentations\n          description: Presentation lifecycle management\n          operations:\n            - method: GET\n              name: list-presentations\n              description: List all Keynote presentations in iCloud\n              call: \"keynote-icloud.list-presentations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-presentation\n              description: Create a new presentation with title and theme\n              call: \"keynote-icloud.create-presentation\"\n              with:\n                title: \"rest.title\"\n                theme: \"rest.theme\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/slides\n          name: slides\n          description: Slide management within presentations\n          operations:\n            - method: GET\n              name: list-slides\n\

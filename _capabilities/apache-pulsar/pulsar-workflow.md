@@ -9,19 +9,19 @@ personas: []
 provider_name: Apache Pulsar
 provider_slug: apache-pulsar
 search_terms:
-- messaging
+- end-to-end workflow for producing and consuming pulsar messages
 - engineer managing pulsar clusters and multi-tenancy
 - multi-tenant
-- developer producing and consuming messages with pulsar
-- apache
-- workflow for managing pulsar cluster resources
+- pub-sub
 - engineer building real-time streaming pipelines with pulsar
 - streaming
-- end-to-end workflow for producing and consuming pulsar messages
+- workflow for managing pulsar cluster resources
+- developer producing and consuming messages with pulsar
 - real-time message delivery between producers and consumers
-- processing message streams with pulsar functions
 - open source
-- pub-sub
+- processing message streams with pulsar functions
+- apache
+- messaging
 - cloud native
 slug: pulsar-workflow
 source_yaml: "name: Apache Pulsar Messaging Workflow\ndescription: Workflow capability for managing topics, subscriptions, and message streaming with Apache Pulsar.\nversion: 1.0.0-alpha1\napis:\n  - name: Apache Pulsar Admin REST API\n    url: https://raw.githubusercontent.com/api-evangelist/apache-pulsar/refs/heads/main/apis.yml\nshared:\n  - url: capabilities/shared/pulsar-api.yaml\nworkflow:\n  name: pulsar-workflow\n  description: Manage Pulsar tenants, namespaces, topics, and message producers/consumers.\n  steps:\n    - name: create-tenant\n      description: Create a new Pulsar tenant\n      api: Apache Pulsar Admin REST API\n      operation: createTenant\n    - name: create-namespace\n      description: Create a namespace within a tenant\n      api: Apache Pulsar Admin REST API\n      operation: createNamespace\n    - name: create-topic\n      description: Create a Pulsar topic\n      api: Apache Pulsar Admin REST API\n      operation: createTopic\n    - name: get-topic-stats\n\

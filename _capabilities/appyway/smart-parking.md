@@ -10,26 +10,26 @@ personas: []
 provider_name: AppyWay
 provider_slug: appyway
 search_terms:
-- traffic
-- urban mobility
-- find available parking
-- location data for parking bays with restrictions and charging
-- smart cities
 - parking
-- finds available parking and avoids congestion zones
-- find and route to available parking using real-time appyway data
-- checks real-time traffic congestion and flow data for route planning
-- lists kerbside parking locations with restrictions and ev charging availability
-- appyway
-- real-time data on parking space availability
-- traffic management
-- ev charging
-- real-time and historical traffic flow data
-- manages fleet routing and parking compliance using kerbside data
-- smart parking
-- list kerbside locations
 - uses traffic and parking data for urban mobility planning
+- real-time and historical traffic flow data
+- checks real-time traffic congestion and flow data for route planning
+- smart parking
+- ev charging
+- lists kerbside parking locations with restrictions and ev charging availability
+- real-time data on parking space availability
+- find and route to available parking using real-time appyway data
+- appyway
+- location data for parking bays with restrictions and charging
 - check traffic congestion
+- manages fleet routing and parking compliance using kerbside data
+- find available parking
+- smart cities
+- finds available parking and avoids congestion zones
+- list kerbside locations
+- urban mobility
+- traffic
+- traffic management
 - finds available parking spaces near a location using appyway real-time data
 slug: smart-parking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AppyWay Smart Parking\n  description: >-\n    Workflow capability for smart parking and urban mobility management using\n    AppyWay. Provides real-time parking availability and traffic data for\n    cities, fleet operators, and mobility app developers.\n  tags:\n    - AppyWay\n    - Smart Parking\n    - Urban Mobility\n    - Smart Cities\n    - Traffic Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPYWAY_API_KEY: APPYWAY_API_KEY\n\ncapability:\n  consumes:\n    - import: appyway\n      location: ./shared/appyway-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9090\n      namespace: smart-parking-mcp\n      transport: http\n      description: MCP server for AI-assisted smart parking and mobility management with AppyWay.\n      tools:\n        - name: find-available-parking\n          description: Finds available parking spaces near a location using AppyWay\

@@ -59,79 +59,79 @@ personas: []
 provider_name: Intuit
 provider_slug: intuit
 search_terms:
-- accounting
+- send an invoice via email.
 - retrieve invoice as pdf.
-- update customer
-- retrieve an invoice by id.
-- get invoice pdf.
-- create a new invoice.
-- get invoice pdf
+- create a new product or service item.
+- void a quickbooks payment.
+- single payment operations.
+- tax preparation
+- retrieve a quickbooks invoice by id.
+- invoicing
+- create item
+- void invoice
 - record a new payment.
-- taxes
-- retrieve a quickbooks customer by id.
-- project management
-- query entities
-- payment management.
+- accounting
+- update an existing quickbooks item.
 - payroll
-- retrieve a quickbooks item by id.
-- create customer
-- invoice lifecycle management.
-- email an invoice to the customer.
-- read invoice
-- read item
+- intuit
+- sales tax
+- financial services
+- create a new customer in quickbooks.
+- create invoice
+- record a customer payment in quickbooks.
 - financial
-- single invoice operations.
+- query quickbooks entities using sql-like syntax.
+- update item
 - update payment
-- send invoice
 - retrieve a customer by id.
+- retrieve a quickbooks item by id.
+- retrieve a quickbooks payment by id.
 - create a new item.
+- single customer operations.
+- small business
+- create customer
+- custom fields
+- retrieve a payment by id.
+- single item operations.
+- query entities
+- void a quickbooks invoice.
+- create a new quickbooks invoice.
+- read payment
+- update invoice
+- send a quickbooks invoice via email.
+- update a quickbooks customer record.
+- send invoice
+- get invoice pdf
+- customer management.
+- read invoice
+- email an invoice to the customer.
+- void an existing invoice.
+- entity query endpoint.
+- tax
+- create a new customer.
+- single invoice operations.
+- product and service catalog.
+- read customer
+- retrieve an item by id.
+- project management
+- void payment
+- update an existing quickbooks payment.
+- void an invoice.
+- create a new invoice.
+- update an existing quickbooks invoice.
+- invoice lifecycle management.
+- retrieve an invoice by id.
+- read item
 - query quickbooks entities.
 - payments
-- small business
-- send an invoice via email.
-- create a new customer.
-- create invoice
-- read customer
-- retrieve a payment by id.
-- custom fields
-- sales tax
-- tax
+- retrieve a quickbooks customer by id.
+- taxes
+- get invoice pdf.
 - time tracking
-- query quickbooks entities using sql-like syntax.
-- void an existing invoice.
-- financial services
-- update an existing quickbooks invoice.
-- update an existing quickbooks item.
-- update item
-- void invoice
-- update invoice
-- create a new quickbooks invoice.
-- create item
-- retrieve a quickbooks invoice by id.
-- retrieve an item by id.
-- void payment
-- void a quickbooks invoice.
-- create a new customer in quickbooks.
-- single payment operations.
-- product and service catalog.
-- invoicing
-- read payment
-- create payment
-- void an invoice.
-- entity query endpoint.
-- retrieve a quickbooks payment by id.
-- intuit
-- single item operations.
-- send a quickbooks invoice via email.
-- void a quickbooks payment.
-- update a quickbooks customer record.
-- customer management.
-- record a customer payment in quickbooks.
-- tax preparation
-- create a new product or service item.
-- update an existing quickbooks payment.
 - get pdf of a quickbooks invoice.
-- single customer operations.
+- update customer
+- create payment
+- payment management.
 slug: accounting-and-payments
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Intuit Accounting and Payments\"\n  description: \"Unified workflow for small business accounting automation combining QuickBooks Online invoice, customer, item, and payment management. Used by accountants, bookkeepers, and business owners to automate financial workflows.\"\n  tags:\n    - Intuit\n    - Accounting\n    - Invoicing\n    - Payments\n    - Small Business\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INTUIT_OAUTH_ACCESS_TOKEN: INTUIT_OAUTH_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: quickbooks-accounting\n      location: ./shared/quickbooks-accounting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: intuit-accounting-api\n      description: \"Unified REST API for Intuit QuickBooks accounting and payment operations.\"\n      resources:\n        - path: /v1/invoices\n          name: invoices\n          description: \"Invoice\
   \ lifecycle management.\"\n          operations:\n            - method: POST\n              name: create-invoice\n              description: \"Create a new invoice.\"\n              call: \"quickbooks-accounting.create-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}\n          name: invoice-detail\n          description: \"Single invoice operations.\"\n          operations:\n            - method: GET\n              name: read-invoice\n              description: \"Retrieve an invoice by ID.\"\n              call: \"quickbooks-accounting.read-invoice\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/send\n          name: invoice-send\n          description: \"Send an invoice via email.\"\n          operations:\n            - method:\

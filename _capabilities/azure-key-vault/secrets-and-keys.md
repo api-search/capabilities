@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- list secrets in the vault.
-- get a certificate.
-- list certificates in the vault.
-- cloud security
-- delete a key.
-- delete a secret.
-- certificate management.
-- get secret
-- create a new certificate.
-- sign
-- set a secret.
-- create a new cryptographic key.
-- get certificate
-- list secrets.
-- encrypt
-- set a secret value.
-- decrypt
-- certificates
-- delete certificate
-- secrets management
-- get a key.
-- azure
-- sign a digest using a key.
-- delete key
-- secret management.
-- key management.
-- list certificates
-- list cryptographic keys in the vault.
-- list secrets
-- delete secret
-- key vault
-- encrypt data using a key.
-- verify
-- list keys.
-- list keys
-- create key
-- delete a certificate.
-- get a secret.
 - list certificates.
-- key management
-- cryptography
-- create certificate
-- security
-- set secret
-- decrypt data using a key.
-- individual secret management.
-- verify a signature.
-- get a secret value.
-- get key details.
-- create a key.
+- key vault
 - individual key management.
+- decrypt
+- get secret
+- secret management.
+- set a secret value.
+- delete a certificate.
+- get a secret value.
+- cloud security
+- set a secret.
+- list keys.
+- verify
+- get a secret.
+- create a new cryptographic key.
 - get key
+- create a key.
+- get a key.
+- sign a digest using a key.
+- list secrets in the vault.
+- create certificate
+- create a new certificate.
+- certificates
+- get key details.
+- encrypt data using a key.
+- list keys
+- list cryptographic keys in the vault.
+- set secret
+- delete certificate
+- certificate management.
+- security
+- delete a secret.
+- encrypt
+- list secrets
+- list certificates
+- get certificate
+- cryptography
+- key management.
+- delete key
+- individual secret management.
+- list secrets.
+- delete a key.
+- get a certificate.
+- delete secret
+- key management
+- secrets management
+- create key
+- azure
+- list certificates in the vault.
+- decrypt data using a key.
+- verify a signature.
+- sign
 slug: secrets-and-keys
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Key Vault Secrets and Keys\"\n  description: \"Unified workflow for managing cryptographic keys, secrets, and certificates with encryption, signing, and certificate lifecycle operations. Used by security engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Key Vault\n    - Security\n    - Secrets Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_KEY_VAULT_TOKEN: AZURE_KEY_VAULT_TOKEN\n\ncapability:\n  consumes:\n    - import: key-vault\n      location: ./shared/key-vault-data-plane.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secrets-and-keys-api\n      description: \"Unified REST API for Azure Key Vault secrets, keys, and certificates.\"\n      resources:\n        - path: /v1/keys\n          name: keys\n          description: \"Key management.\"\n          operations:\n            - method: GET\n              name: list-keys\n\
   \              description: \"List keys.\"\n              call: \"key-vault.list-keys\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-key\n              description: \"Create a key.\"\n              call: \"key-vault.create-key\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/keys/{id}\n          name: key-details\n          description: \"Individual key management.\"\n          operations:\n            - method: GET\n              name: get-key\n              description: \"Get a key.\"\n              call: \"key-vault.get-key\"\n              with:\n                key-name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-key\n              description: \"Delete a key.\"\n          \

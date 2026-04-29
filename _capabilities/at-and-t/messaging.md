@@ -36,64 +36,64 @@ personas: []
 provider_name: AT&T
 provider_slug: at-and-t
 search_terms:
-- mobile virtual network operator services on at&t infrastructure
-- wireline
-- broadband
-- sms delivery tracking
-- get inbox changes since last synchronization for efficient message management
-- get full details of a specific inbox message including content and metadata
-- send an sms short code message to up to 50 recipients
-- in app sync inbox delta
-- mms
-- delete a message from the user's inbox permanently
-- mobile or web application developer embedding messaging into consumer apps
-- in app delete message
-- poll for inbound sms messages
-- list messages
-- sms send message
-- poll for inbound sms messages received on a registered short code
-- engineer integrating at&t network services with bss/oss systems via tm forum apis
-- enterprise
-- MVNO Operator
 - get inbox changes since last sync
 - in app list messages
-- wireless
-- at&t
-- sms check delivery status
-- in app get message
-- telecommunications
-- in app send message
-- complete mvno subscriber lifecycle and number portability management
-- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
-- get sms delivery status
-- get inbox delta
-- send an mms or sms message on behalf of an authenticated at&t user
-- notifications
-- sms notifications and in-app messaging for mobile apps and enterprise systems
-- in-app user messaging inbox
 - developer building enterprise notification, alerting, or communication systems
+- mms
+- sms short code inbox
+- sms send message
+- check the delivery status of a sent sms message
+- engineer integrating at&t network services with bss/oss systems via tm forum apis
+- in app send message
+- list messages from a user's at&t inbox with pagination and unread filtering
+- list user inbox messages
+- sms notifications and in-app messaging for mobile apps and enterprise systems
+- in app sync inbox delta
+- at&t
+- messaging
+- Enterprise Developer
+- sms check delivery status
+- get sms delivery status
+- complete mvno subscriber lifecycle and number portability management
+- broadband
+- sms and mms messaging services for consumer and enterprise applications
+- send an mms or sms message on behalf of an authenticated at&t user
+- MVNO Operator
+- delete a message from the user's inbox permanently
+- sms short code messaging
+- mobile or web application developer embedding messaging into consumer apps
+- sms get inbound messages
+- mvno business operator managing at&t-powered mobile subscribers and services
+- wireline
 - mobile network connectivity and subscriber management
 - speech
-- send mms or sms on behalf of user
-- list user inbox messages
-- sms short code inbox
-- mvno business operator managing at&t-powered mobile subscribers and services
-- messaging
-- send sms
-- send message
-- inbox delta synchronization
-- check delivery status of a sent sms
-- App Developer
-- Enterprise Developer
-- sms
-- get inbound sms
+- mobile virtual network operator services on at&t infrastructure
 - mobile
-- check the delivery status of a sent sms message
+- send an sms short code message to up to 50 recipients
+- get inbox delta
+- send mms or sms on behalf of user
+- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
+- App Developer
+- send sms
+- sms
+- telecommunications
+- inbox delta synchronization
+- list messages
+- get full details of a specific inbox message including content and metadata
+- in app get message
+- poll for inbound sms messages received on a registered short code
+- in app delete message
 - Telecom Engineer
-- sms get inbound messages
-- sms and mms messaging services for consumer and enterprise applications
-- sms short code messaging
-- list messages from a user's at&t inbox with pagination and unread filtering
+- enterprise
+- wireless
+- notifications
+- in-app user messaging inbox
+- sms delivery tracking
+- get inbox changes since last synchronization for efficient message management
+- poll for inbound sms messages
+- get inbound sms
+- send message
+- check delivery status of a sent sms
 slug: messaging
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T Messaging\"\n  description: \"Unified messaging capability combining AT&T SMS API and In-App Messaging API for customer notifications, two-way messaging, and inbox management. Used by developers building mobile apps and enterprise notification systems.\"\n  tags:\n    - AT&T\n    - SMS\n    - MMS\n    - Messaging\n    - Notifications\n    - Mobile\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_SMS_ACCESS_TOKEN: ATT_SMS_ACCESS_TOKEN\n      ATT_IAM_ACCESS_TOKEN: ATT_IAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: att-sms\n      location: ./shared/sms-api.yaml\n    - import: att-iam\n      location: ./shared/in-app-messaging-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: att-messaging-api\n      description: \"Unified REST API for AT&T SMS and in-app messaging operations.\"\n      resources:\n        - path: /v1/sms/messages\n\
   \          name: sms-outbox\n          description: \"SMS short code messaging\"\n          operations:\n            - method: POST\n              name: send-sms\n              description: \"Send an SMS short code message to up to 50 recipients\"\n              call: \"att-sms.send-sms\"\n              with:\n                address: \"rest.address\"\n                message: \"rest.message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sms/messages/{messageId}/status\n          name: sms-delivery-status\n          description: \"SMS delivery tracking\"\n          operations:\n            - method: GET\n              name: get-sms-delivery-status\n              description: \"Check delivery status of a sent SMS\"\n              call: \"att-sms.get-sms-delivery-status\"\n              with:\n                messageId: \"rest.messageId\"\n              outputParameters:\n                - type: object\n        \

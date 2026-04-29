@@ -36,40 +36,40 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- order fulfillment records
-- list requisitions
-- process approval
-- human capital management.
+- list pending approvals
+- campus solutions.
+- retrieve pending supply chain approval requests.
+- erp
+- list orders
 - list inventory items
-- retrieve purchase orders.
-- enterprise software
-- procurement requisitions
-- supply chain
-- retrieve order fulfillment records.
-- financial and supply chain management.
-- supply chain approval requests
 - peoplesoft
 - individual approval operations
-- supply chain management
-- inventory
-- purchase orders
-- crm
-- inventory items and stock levels
-- financial management
-- order fulfillment
 - retrieve procurement requisitions.
-- list purchase orders
-- list pending approvals
-- peopletools platform services.
-- list orders
-- retrieve pending supply chain approval requests.
-- approve, deny, or push back a supply chain approval request.
-- erp
-- hcm
-- retrieve inventory items and stock levels.
-- campus solutions.
+- financial management
+- purchase orders
+- process approval
+- inventory items and stock levels
+- order fulfillment
+- retrieve order fulfillment records.
+- crm
+- supply chain management
 - procurement
+- peopletools platform services.
+- enterprise software
+- supply chain approval requests
+- approve, deny, or push back a supply chain approval request.
+- human capital management.
+- financial and supply chain management.
 - campus solutions
+- inventory
+- supply chain
+- list requisitions
+- order fulfillment records
+- hcm
+- retrieve purchase orders.
+- procurement requisitions
+- retrieve inventory items and stock levels.
+- list purchase orders
 slug: supply-chain-and-procurement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Supply Chain And Procurement\"\n  description: \"Unified workflow for supply chain managers combining procurement, inventory, order fulfillment, and approval workflows across PeopleSoft Supply Chain Management and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Supply Chain\n    - Procurement\n    - Inventory\n    - Order Fulfillment\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: scm\n      location: ./shared/supply-chain-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: supply-chain-api\n      description: \"Unified REST API for PeopleSoft supply chain and procurement workflows.\"\n      resources:\n\
   \        - path: /v1/requisitions\n          name: requisitions\n          description: \"Procurement requisitions\"\n          operations:\n            - method: GET\n              name: list-requisitions\n              description: \"Retrieve procurement requisitions.\"\n              call: \"scm.list-requisitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase orders\"\n          operations:\n            - method: GET\n              name: list-purchase-orders\n              description: \"Retrieve purchase orders.\"\n              call: \"scm.list-purchase-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory-items\n          name: inventory-items\n          description: \"Inventory items and stock levels\"\n          operations:\n          \

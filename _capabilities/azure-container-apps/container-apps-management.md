@@ -23,35 +23,35 @@ personas: []
 provider_name: Azure Container Apps
 provider_slug: azure-container-apps
 search_terms:
-- deploys and manages containerized application workloads
-- delete container app
-- container app management
-- Platform Engineer
-- serverless
-- list all managed environments
-- manage containerized applications, environments, and jobs
-- list jobs
-- list all container app jobs
-- delete an azure container app
 - manages the container infrastructure and environments
+- list container apps
+- list all managed container app environments
+- devops
+- dapr
+- DevOps Engineer
 - serverless compute and job execution
+- list jobs
+- list all azure container apps in a subscription
+- container app job management
+- serverless
+- list all container apps
+- containers
+- microservices
+- container app management
+- list all container app jobs
+- container app deployment and management
+- create container app
+- kubernetes
+- list all managed environments
+- delete an azure container app
+- list environments
+- delete container app
+- managed environment management
+- Platform Engineer
+- manage containerized applications, environments, and jobs
+- deploys and manages containerized application workloads
 - azure
 - create or update an azure container app
-- list all container apps
-- devops
-- list all azure container apps in a subscription
-- containers
-- create container app
-- list all managed container app environments
-- dapr
-- kubernetes
-- list container apps
-- DevOps Engineer
-- list environments
-- container app deployment and management
-- microservices
-- managed environment management
-- container app job management
 slug: container-apps-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Apps Management\"\n  description: \"Workflow capability for managing containerized applications, environments, and jobs in Azure Container Apps. Used by platform engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Containers\n    - Microservices\n    - Serverless\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-container-apps\n      location: ./shared/azure-container-apps.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: container-apps-management-api\n      description: \"Unified REST API for Azure Container Apps management.\"\n      resources:\n        - path: /v1/container-apps\n          name: container-apps\n          description: \"Container app management\"\n          operations:\n\
   \            - method: GET\n              name: list-container-apps\n              description: \"List all container apps\"\n              call: \"azure-container-apps.list-container-apps\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments\n          name: environments\n          description: \"Managed environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"List all managed environments\"\n              call: \"azure-container-apps.list-environments\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Container app job management\"\n         \

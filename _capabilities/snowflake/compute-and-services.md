@@ -47,54 +47,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list compute pools
-- execute alert
-- list container services
-- create a monitoring alert
-- list virtual warehouses
-- compute
-- delete a warehouse
-- database
-- sql
-- create an alert
-- data warehousing
-- alert management
-- fetch service status
-- create a virtual warehouse
-- create a warehouse
-- list monitoring alerts
-- create a container service
-- data lakes
-- fetch service logs
-- create compute pool
-- list image repositories
-- snowflake
-- warehouse management
-- execute an alert
-- suspend service
+- resume service
 - infrastructure
-- create service
+- snowflake
+- database
+- warehouse management
+- resume a suspended service
+- data lakes
+- execute an alert
+- fetch service status
+- fetch service logs
+- execute alert
+- create a warehouse
+- create an image repository
 - create a service
+- list compute pools
+- delete a warehouse
+- suspend a running service
 - fetch warehouse details
 - container service management
-- list alerts
 - containers
-- create alert
-- list services
-- get service logs
-- fetch warehouse
-- resume service
+- create compute pool
+- list monitoring alerts
+- list alerts
 - compute pool management
-- delete warehouse
-- create an image repository
-- get service status
-- resume a suspended service
-- create image repository
-- create warehouse
+- fetch warehouse
+- compute
+- create an alert
 - list warehouses
-- suspend a running service
-- data sharing
+- suspend service
+- data warehousing
+- get service status
+- sql
+- delete warehouse
+- create a virtual warehouse
 - create a compute pool
+- create image repository
+- list image repositories
+- list container services
+- get service logs
+- create a container service
+- create alert
+- create a monitoring alert
+- create warehouse
+- list services
+- list virtual warehouses
+- data sharing
+- create service
+- alert management
 slug: compute-and-services
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Compute and Services\"\n  description: \"Unified workflow for managing warehouses, compute pools, Snowpark Container Services, image repositories, and monitoring alerts. Used by Platform Engineers and DevOps teams to provision and operate compute infrastructure.\"\n  tags:\n    - Snowflake\n    - Compute\n    - Containers\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-warehouse\n      location: ./shared/warehouse.yaml\n    - import: snowflake-compute-pool\n      location: ./shared/compute-pool.yaml\n    - import: snowflake-service\n      location: ./shared/service.yaml\n    - import: snowflake-image-repository\n      location: ./shared/image-repository.yaml\n    - import: snowflake-alert\n      location:\
   \ ./shared/alert.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: snowflake-compute-api\n      description: \"Unified REST API for Snowflake compute and services management.\"\n      resources:\n        - path: /v1/warehouses\n          name: warehouses\n          description: \"Warehouse management\"\n          operations:\n            - method: GET\n              name: list-warehouses\n              description: \"List warehouses\"\n              call: \"snowflake-warehouse.list-warehouses\"\n            - method: POST\n              name: create-warehouse\n              description: \"Create a warehouse\"\n              call: \"snowflake-warehouse.create-warehouse\"\n        - path: /v1/compute-pools\n          name: compute-pools\n          description: \"Compute pool management\"\n          operations:\n            - method: GET\n              name: list-compute-pools\n              description: \"List compute pools\"\n              call: \"snowflake-compute-pool.list-compute-pools\"\
