@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- list items in a playlist
-- update playlist
-- delete caption
-- delete a caption track
-- delete playlist
-- update playlist details
+- update caption
 - manage items within playlists
-- delete a video
-- update video metadata
-- upload a new caption track
+- upload video
 - list captions
-- add a video to a playlist
-- delete a playlist
-- youtube
-- streaming
-- upload caption
-- add playlist item
+- upload a new caption track
+- update playlist details
+- delete video
+- manage youtube playlists
+- delete a video from youtube
 - list videos
+- list items in a playlist
+- captions
+- manage youtube videos
+- list caption tracks for a video
 - list videos matching criteria
 - upload a new video to youtube
-- media
-- playlists
-- delete video
-- video
-- list caption tracks for a video
-- captions
-- list youtube playlists
-- create a new playlist
-- manage video captions
-- update caption
-- delete a video from youtube
-- update video
-- list playlists
-- videos
-- manage youtube videos
-- content management
-- upload video
-- update a caption track
-- list youtube videos matching criteria
-- social
-- remove a video from a playlist
-- upload a new video
 - remove playlist item
+- add playlist item
+- social
+- videos
+- update video
+- update playlist
+- delete caption
+- streaming
+- update video metadata
+- content management
+- delete playlist
 - upload a caption track
-- manage youtube playlists
-- create playlist
-- list playlist items
+- list youtube videos matching criteria
+- youtube
+- media
+- upload a new video
+- remove a video from a playlist
 - google
+- add a video to a playlist
+- create playlist
+- upload caption
+- list playlists
+- playlists
+- video
+- list playlist items
+- update a caption track
+- manage video captions
+- delete a playlist
+- delete a caption track
+- create a new playlist
+- list youtube playlists
+- delete a video
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

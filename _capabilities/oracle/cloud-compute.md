@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- list vnic attachments
-- list images
-- list instance console connections
-- cloud
-- delete a custom image
-- list vnic attachments in a compartment
-- get instance details
-- list compute instances in a compartment
 - launch a new compute instance
-- list available compute shapes
-- saas
-- create image
-- instance action
-- get image details
-- launch instance
-- update image details
-- delete image
-- manage a specific compute instance
-- create a custom image
-- list compute images
 - get instance
-- get details of a specific image
-- update instance details
-- update image
-- list shapes
-- perform an action on an instance (start, stop, reset)
-- oracle
-- terminate an instance
-- get details of a specific instance
-- list instances
-- infrastructure
-- list console connections
-- create a custom image from an instance
-- database
-- get image
-- enterprise
-- compute
-- list volume attachments in a compartment
-- manage compute instances
-- list volume attachments
+- list compute instances in a compartment
 - manage a specific image
 - manage compute images
+- compute
+- manage a specific compute instance
+- infrastructure
+- list console connections
+- list instances
+- list available compute shapes
+- get image
+- list vnic attachments
+- oracle
+- delete a custom image
+- get details of a specific instance
+- perform an action on an instance (start, stop, reset)
+- get instance details
+- list volume attachments
+- update instance details
+- update image
+- create a custom image from an instance
+- launch instance
+- list compute images
+- list images
+- cloud
+- get details of a specific image
 - terminate instance
+- get image details
+- list shapes
 - update instance
+- list vnic attachments in a compartment
+- update image details
+- instance action
+- terminate an instance
+- create a custom image
+- database
+- list instance console connections
+- saas
+- delete image
+- list volume attachments in a compartment
+- create image
+- manage compute instances
+- enterprise
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

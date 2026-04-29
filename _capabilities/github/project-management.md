@@ -64,81 +64,81 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- getAnIssue
-- github
+- create an issue comment
 - create a label
-- search
-- listProjectColumns
-- issues
-- create a milestone
-- update a project
-- create a project card
-- createLabel
-- pipelines
-- update issue
-- software development
-- lock issue
-- list timeline events for an issue
+- getProject
+- project column management
+- project management
+- issue and pr search
+- get issue
+- get an issue
 - list milestones
-- updateProject
+- search issues and pull requests
+- get project
+- t1
+- update a project
+- projects
+- createLabel
+- code
+- create a column
+- lock issue
+- create a project card
+- createAnIssue
+- issue management
+- listMilestones
+- list columns
+- updateAnIssue
+- update project
+- list project cards
+- move card
+- lock an issue
+- pipelines
+- createMilestone
+- searchIssuesAndPullRequests
 - project operations
 - individual issue operations
-- createMilestone
-- create an issue
-- create issue
-- create milestone
-- search issues
-- milestones
-- add assignees
-- list columns
-- t1
-- searchIssuesAndPullRequests
-- listRepositoryIssues
 - get a project
-- create an issue comment
-- source control
-- move a project card
-- search issues and pull requests
-- list timeline events
-- issue and pr search
-- add labels
-- listLabelsForRepository
-- create label
-- move card
-- list project cards
-- create column
-- project column management
-- list repository issues
-- get issue
 - list issue comments
-- milestone management
-- list project columns
-- platform
-- list cards
-- project management
-- update an issue
-- search labels
-- update project
-- code
-- projects
-- createProjectColumn
-- create a project column
-- lock an issue
-- updateAnIssue
-- list labels
-- createAnIssue
-- add assignees to an issue
-- create a column
-- add labels to an issue
-- getProject
-- label management
-- listMilestones
-- create issue comment
-- get an issue
 - create card
 - list issues
-- get project
-- issue management
+- add labels
+- create column
+- create a milestone
+- listLabelsForRepository
+- create issue comment
+- add labels to an issue
+- create issue
+- listProjectColumns
+- add assignees to an issue
+- move a project card
+- create a project column
+- platform
+- update issue
+- list labels
+- create label
+- list cards
+- list timeline events
+- getAnIssue
+- list repository issues
+- milestones
+- issues
+- list timeline events for an issue
+- update an issue
+- source control
+- github
+- updateProject
+- list project columns
+- software development
+- createProjectColumn
+- listRepositoryIssues
+- create an issue
+- search issues
+- label management
+- milestone management
+- search labels
+- create milestone
+- search
+- add assignees
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

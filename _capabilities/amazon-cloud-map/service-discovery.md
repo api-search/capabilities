@@ -26,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- devops practitioners automating service registration and health monitoring
-- list services
-- discover instances
-- register instance
-- create a service
-- manage services
 - amazon web services
+- cloud map
+- create service
+- list instances
+- devops practitioners automating service registration and health monitoring
+- microservices
+- discover healthy service instances by namespace and service name
+- manage service discovery namespaces
+- list all cloud map service discovery namespaces
+- DevOps Engineer
+- aws
+- devops
+- list services
+- manage services
+- list all instances registered with a specific cloud map service
+- register instance
+- dynamic microservice registration and discovery
+- list namespaces
+- list services registered in cloud map
+- engineers managing service registries and microservice infrastructure
+- service discovery
+- discover instances
+- Platform Engineer
+- dns
+- dynamic service registry and health-based routing
+- list all namespaces
 - register an instance with a cloud map service
 - discover service instances
-- dns
-- service discovery
-- aws
-- microservices
-- list all instances registered with a specific cloud map service
-- dynamic microservice registration and discovery
-- list all cloud map service discovery namespaces
-- create service
-- manage service discovery namespaces
-- list all namespaces
-- create a new cloud map service within a namespace
-- dynamic service registry and health-based routing
-- devops
-- list instances
-- cloud map
-- list namespaces
 - discover healthy instances
-- discover healthy service instances by namespace and service name
-- list services registered in cloud map
-- Platform Engineer
-- engineers managing service registries and microservice infrastructure
-- DevOps Engineer
+- create a service
+- create a new cloud map service within a namespace
 slug: service-discovery
 source_filename: service-discovery.yaml
 source_heading: Capability Spec

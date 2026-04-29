@@ -35,36 +35,36 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
-- batch get image
+- container registry management business domain for amazon ecr.
+- batchGetImage
+- create repository
 - delete repository
-- put image
-- list images
-- deleteRepository
-- amazon ecr list images
+- container registry
 - workflow capability for container registry management.
 - amazon web services
-- describe repositories
-- docker
-- createRepository
-- oci
-- amazon ecr create repository
-- create repository
-- aws
-- container registry management business domain for amazon ecr.
-- container images
-- amazon ecr delete repository
-- container registry
-- putImage
-- engineers managing amazon ecr resources on aws.
-- amazon ecr
-- amazon ecr describe repositories
 - ecr
-- amazon ecr put image
-- describeRepositories
+- docker
+- oci
+- describe repositories
+- put image
 - listImages
-- batchGetImage
-- amazon ecr batch get image
+- batch get image
+- putImage
+- amazon ecr put image
+- amazon ecr delete repository
+- aws
+- amazon ecr list images
+- describeRepositories
+- engineers managing amazon ecr resources on aws.
+- list images
 - containers
+- deleteRepository
+- amazon ecr batch get image
+- container images
+- amazon ecr describe repositories
+- createRepository
+- amazon ecr
+- amazon ecr create repository
 slug: ecr-management
 source_filename: ecr-management.yaml
 source_heading: Capability Spec

@@ -81,78 +81,78 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- getScimUser
-- amplitude get dsar request status
-- scim api deleteScimGroup
-- amplitude get a scim user
-- runs experiments and feature flags
-- data governance
-- amplitude replace a scim user
-- export raw event data and manage behavioral cohorts. for data analysts.
-- updateScimUser
-- unmapUser
-- identity management
-- amplitude create a data subject access request
-- listScimGroups
-- amplitude update a scim group
-- scim api getScimUser
-- identity
-- amplitude delete a scim user
-- replaceScimUser
-- amplitude get a scim group
-- ingests and exports event data
-- dsar api getDsarRequestStatus
-- manage event schemas and chart annotations. for data governance teams.
-- user mapping api mapUser
-- scim api updateScimUser
-- a/b testing
-- createDeletionRequest
-- updateScimGroup
-- createDsarRequest
-- listScimUsers
-- amplitude list scim groups
-- scim api deleteScimUser
-- listDeletionRequests
-- product analytics
-- amplitude create a scim user
-- createScimUser
-- amplitude update a scim user
-- scim api listScimUsers
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- scim api createScimGroup
-- getScimGroup
-- amplitude map user identities
-- user mapping api unmapUser
-- dsar api createDeletionRequest
-- dsar api listDeletionRequests
 - user behavior
+- mapUser
+- scim api listScimGroups
+- getScimGroup
+- dsar api getDsarRequestStatus
+- scim api createScimGroup
 - unified workflow for sending events and identifying users. for data engineers.
-- amplitude unmap user identities
-- amplitude
+- feature flags
+- unmapUser
+- scim api listScimUsers
+- user mapping api mapUser
+- amplitude list scim users
+- amplitude get dsar request status
+- createDeletionRequest
+- manages privacy and compliance
+- createScimUser
 - analytics
 - amplitude request user data deletion
-- experimentation
-- deleteScimUser
-- scim api listScimGroups
-- scim api updateScimGroup
-- scim api createScimUser
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- amplitude list scim users
-- scim api replaceScimUser
-- scim api getScimGroup
-- analyzes data and manages cohorts
-- deleteScimGroup
-- amplitude delete a scim group
-- amplitude create a scim group
-- createScimGroup
-- dsar api createDsarRequest
-- feature flags
-- getDsarRequestStatus
-- privacy compliance
-- privacy
+- scim api getScimUser
 - amplitude list deletion requests
-- mapUser
-- manages privacy and compliance
+- updateScimGroup
+- manage event schemas and chart annotations. for data governance teams.
+- a/b testing
+- scim api deleteScimUser
+- analyzes data and manages cohorts
+- scim api getScimGroup
+- getScimUser
+- amplitude create a scim group
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- experimentation
+- listScimUsers
+- privacy
+- identity
+- createDsarRequest
+- updateScimUser
+- getDsarRequestStatus
+- listDeletionRequests
+- deleteScimUser
+- createScimGroup
+- amplitude get a scim group
+- amplitude map user identities
+- amplitude unmap user identities
+- amplitude get a scim user
+- user mapping api unmapUser
+- amplitude create a data subject access request
+- amplitude
+- amplitude list scim groups
+- amplitude delete a scim user
+- export raw event data and manage behavioral cohorts. for data analysts.
+- runs experiments and feature flags
+- identity management
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- scim api createScimUser
+- ingests and exports event data
+- amplitude delete a scim group
+- amplitude update a scim user
+- replaceScimUser
+- amplitude create a scim user
+- dsar api createDsarRequest
+- product analytics
+- scim api updateScimGroup
+- amplitude update a scim group
+- listScimGroups
+- amplitude replace a scim user
+- scim api updateScimUser
+- scim api replaceScimUser
+- dsar api listDeletionRequests
+- scim api deleteScimGroup
+- privacy compliance
+- data governance
+- dsar api createDeletionRequest
+- deleteScimGroup
 slug: amplitude-identity-and-privacy
 source_filename: amplitude-identity-and-privacy.yaml
 source_heading: Capability Spec

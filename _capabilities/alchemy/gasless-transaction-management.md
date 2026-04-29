@@ -32,42 +32,42 @@ personas:
 provider_name: Alchemy
 provider_slug: alchemy
 search_terms:
-- create policy
-- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- sponsor user operation
 - get details for a specific gas sponsorship policy by id.
-- dapp developer
-- gas fee sponsorship and erc-4337 account abstraction.
-- blockchain
+- ethereum
+- create a new gas sponsorship policy with spend limits and network settings.
+- gas sponsorship for user operations.
+- defi builder
+- cryptocurrency
 - builds evm wallet applications needing token balances and transaction history.
-- manages gas sponsorship infrastructure and erc-4337 policies.
-- account abstraction
-- wallet balance and asset portfolio management.
-- creates decentralized applications with gasless ux for end users.
-- web3
-- list all gas manager sponsorship policies for the alchemy application.
-- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
 - alchemy
-- gas manager
+- develops defi applications requiring portfolio tracking and token data.
+- manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- list all gas sponsorship policies.
+- account abstraction
+- gas sponsorship policies.
+- individual gas policy.
 - sponsor a user operation for gasless transactions.
 - create a new gas sponsorship policy.
-- individual gas policy.
-- create a new gas sponsorship policy with spend limits and network settings.
-- develops defi applications requiring portfolio tracking and token data.
-- defi builder
-- gas sponsorship for user operations.
-- combines token api and transfers api for wallet portfolio applications.
-- web3 platform engineer
-- list policies
-- wallet developer
-- erc-20 token data and metadata.
-- gas sponsorship policies.
-- list all gas sponsorship policies.
-- get policy
-- sponsor user operation
-- on-chain asset transfer history.
+- web3
 - get a specific gas sponsorship policy.
-- cryptocurrency
-- ethereum
+- manages gas sponsorship infrastructure and erc-4337 policies.
+- list policies
+- create policy
+- get policy
+- combines token api and transfers api for wallet portfolio applications.
+- wallet balance and asset portfolio management.
+- gas manager
+- wallet developer
+- list all gas manager sponsorship policies for the alchemy application.
+- dapp developer
+- on-chain asset transfer history.
+- submit a user operation for erc-4337 gas sponsorship, enabling gasless transactions.
+- web3 platform engineer
+- erc-20 token data and metadata.
+- creates decentralized applications with gasless ux for end users.
+- gas fee sponsorship and erc-4337 account abstraction.
+- blockchain
 slug: gasless-transaction-management
 source_filename: gasless-transaction-management.yaml
 source_heading: Capability Spec

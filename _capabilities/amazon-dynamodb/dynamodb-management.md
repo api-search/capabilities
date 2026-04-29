@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb
-- amazon dynamodb describe a dynamodb table
-- workflow capability for nosql database operations.
-- deleteTable
-- amazon dynamodb get an item from a table
-- listTables
-- amazon dynamodb query items in a table or index
-- nosql
-- amazon dynamodb create a dynamodb table
-- getItem
-- describeTable
-- query
-- serverless
-- amazon dynamodb update a dynamodb table
-- delete table
 - amazon dynamodb list dynamodb tables
-- aws
-- putItem
-- delete item
-- list tables
-- create table
-- createTable
-- get item
-- key-value
-- amazon dynamodb put an item into a table
-- amazon dynamodb delete an item from a table
-- update table
-- amazon dynamodb delete a dynamodb table
-- nosql database operations business domain for amazon dynamodb.
-- updateTable
-- database
-- engineers managing amazon dynamodb resources on aws.
-- document store
-- describe table
-- updateItem
 - deleteItem
-- update item
+- amazon dynamodb
+- getItem
+- amazon dynamodb create a dynamodb table
+- deleteTable
+- listTables
+- amazon dynamodb describe a dynamodb table
 - amazon dynamodb update an item in a table
+- describeTable
+- describe table
+- list tables
+- update item
+- delete table
+- amazon dynamodb delete a dynamodb table
+- updateTable
+- delete item
+- amazon dynamodb get an item from a table
+- putItem
+- query
+- engineers managing amazon dynamodb resources on aws.
+- aws
+- get item
+- document store
+- serverless
+- key-value
+- nosql
+- createTable
 - put item
+- amazon dynamodb query items in a table or index
+- nosql database operations business domain for amazon dynamodb.
+- create table
+- update table
+- workflow capability for nosql database operations.
+- database
+- amazon dynamodb update a dynamodb table
+- amazon dynamodb put an item into a table
+- updateItem
+- amazon dynamodb delete an item from a table
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

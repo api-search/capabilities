@@ -47,48 +47,48 @@ personas: []
 provider_name: Amazon Clean Rooms
 provider_slug: amazon-clean-rooms
 search_terms:
-- list collaborations
-- Marketing Analyst
-- join a collaboration
-- list configured tables available for use in collaborations
-- list memberships
-- start protected query
 - list all collaborations
-- marketing teams measuring campaign effectiveness across publisher and advertiser data
-- get details of a specific clean rooms collaboration by id
-- amazon web services
-- list protected queries
-- manage clean rooms collaboration workspaces
 - list configured tables
-- create a new collaboration
-- data collaboration
-- create collaboration
-- privacy-preserving multi-party data analytics
+- create membership
+- manage clean rooms collaboration workspaces
+- list configured tables available for use in collaborations
+- create a new secure data collaboration workspace in aws clean rooms
+- amazon web services
 - create a configured table from an aws glue table with defined analysis rules for collaboration use
-- analysts running collaborative queries across partner datasets without data exposure
-- clean rooms
-- aws
-- Data Analyst
-- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
-- run a protected query
 - join a clean rooms collaboration as a member
 - end-to-end workflow for creating and operating secure multi-party data clean rooms
-- manage collaboration memberships
+- Data Analyst
+- create a new collaboration
+- Marketing Analyst
+- list all protected queries run within a collaboration membership
+- manage configured tables
 - analytics
-- marketing
 - get collaboration details
-- create membership
-- create configured table
-- execute and list protected queries
+- marketing teams measuring campaign effectiveness across publisher and advertiser data
+- get or delete a specific collaboration
+- analysts running collaborative queries across partner datasets without data exposure
+- list memberships
+- join a collaboration
+- aws
+- privacy-preserving multi-party data analytics
+- privacy
+- run a protected query
 - create a configured table
 - get collaboration
-- list all clean rooms collaborations the caller participates in
-- manage configured tables
-- get or delete a specific collaboration
-- create a new secure data collaboration workspace in aws clean rooms
-- privacy
+- start protected query
+- clean rooms
 - list all clean rooms memberships in the caller's account
-- list all protected queries run within a collaboration membership
+- manage collaboration memberships
+- data collaboration
+- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
+- list all clean rooms collaborations the caller participates in
+- create collaboration
+- marketing
+- get details of a specific clean rooms collaboration by id
+- create configured table
+- execute and list protected queries
+- list protected queries
+- list collaborations
 slug: secure-data-collaboration
 source_filename: secure-data-collaboration.yaml
 source_heading: Capability Spec

@@ -21,24 +21,24 @@ personas: []
 provider_name: Azure Logic Apps
 provider_slug: azure-logic-apps
 search_terms:
-- list workflow resources
-- list workflowtrigger resources
-- azure
-- list workflows
-- azure resource management
-- workflows
 - resource management
-- management
-- list all resources
-- list integrationaccount resources
+- list workflows
+- list
 - list workflow runs
+- cloud
+- list integration accounts
+- list workflow resources
+- azure
 - ipaas
 - list workflow triggers
-- integration
+- management
+- list workflowtrigger resources
+- list integrationaccount resources
+- list all resources
 - list workflowrun resources
-- list integration accounts
-- cloud
-- list
+- azure resource management
+- integration
+- workflows
 slug: azure-logic-apps-management
 source_filename: azure-logic-apps-management.yaml
 source_heading: Capability Spec

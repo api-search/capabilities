@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- sparql
-- Graph Database Administrator
 - list neptune ml graph neural network training jobs
-- list neptune analytics graphs for in-memory graph analysis
-- bulk loading
-- neptune
-- list ml training jobs
-- list neptune analytics graphs
-- list neptune ml training jobs
-- Data Scientist
-- property graph
-- writes gremlin, sparql, and opencypher queries against neptune
-- create a neptune analytics graph for graph analytics workloads
-- list ml jobs
-- gremlin
-- rdf
-- aws
-- amazon neptune
-- graph analytics
-- list analytics graphs
-- graph analytics, vector search, and ml model training and inference
-- graph database management, querying, and data streaming
-- Graph Developer
-- data streaming
-- machine learning
-- graph database
-- neptune analytics graph management
-- database
-- create ml inference endpoint
-- ML Engineer
-- trains and deploys neptune ml graph neural network models
-- manages neptune clusters, instances, and infrastructure
-- performs graph analytics and builds ml models on graph data
 - create a neptune ml inference endpoint for predictions
-- neptune ml training job management
+- create a neptune analytics graph for graph analytics workloads
+- Data Scientist
+- graph analytics, vector search, and ml model training and inference
+- sparql
+- create ml inference endpoint
+- Graph Developer
+- neptune analytics graph management
+- graph database
+- aws
+- list neptune ml training jobs
+- amazon neptune
+- ML Engineer
+- rdf
+- graph database management, querying, and data streaming
+- Graph Database Administrator
+- list neptune analytics graphs for in-memory graph analysis
 - create analytics graph
+- list ml training jobs
+- graph analytics
+- property graph
+- data streaming
+- gremlin
+- performs graph analytics and builds ml models on graph data
+- bulk loading
+- list ml jobs
+- manages neptune clusters, instances, and infrastructure
+- list neptune analytics graphs
+- database
+- machine learning
+- neptune
+- trains and deploys neptune ml graph neural network models
+- writes gremlin, sparql, and opencypher queries against neptune
+- neptune ml training job management
+- list analytics graphs
 slug: neptune-analytics-ml
 source_filename: neptune-analytics-ml.yaml
 source_heading: Capability Spec

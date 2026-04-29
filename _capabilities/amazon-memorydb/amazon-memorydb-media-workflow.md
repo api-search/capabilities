@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MemoryDB
 provider_slug: amazon-memorydb
 search_terms:
-- amazon memorydb describeclusters
-- describe ac ls
-- amazon memorydb deletecluster
-- Media Developer
-- amazon memorydb deleteacl
+- delete cluster
 - amazon memorydb createacl
 - broadcasting
-- amazon memorydb createcluster
-- amazon memorydb media processing workflow
 - update acl
-- workflow
-- create cluster
-- aws
-- media
-- amazon memorydb describeacls
-- delete cluster
-- Broadcast Engineer
-- developer building media processing applications
-- amazon memorydb updateacl
-- create acl
-- update cluster
+- Media Developer
 - engineer managing broadcast media workflows
-- describe clusters
-- delete acl
-- amazon memorydb updatecluster
-- list jobs
-- manage media processing jobs
+- create cluster
+- amazon memorydb describeacls
+- workflow
+- amazon memorydb deletecluster
 - aws media processing and delivery
+- describe ac ls
+- aws
+- amazon memorydb describeclusters
+- amazon memorydb updatecluster
+- update cluster
+- manage media processing jobs
+- media
+- amazon memorydb media processing workflow
+- list jobs
+- delete acl
+- create acl
 - media processing
+- amazon memorydb deleteacl
+- developer building media processing applications
+- describe clusters
+- Broadcast Engineer
+- amazon memorydb updateacl
+- amazon memorydb createcluster
 slug: amazon-memorydb-media-workflow
 source_filename: amazon-memorydb-media-workflow.yaml
 source_heading: Capability Spec

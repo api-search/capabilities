@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
-- healthcare
+- life sciences
 - genomics
 - aws
-- bioinformatics
-- life sciences
+- healthcare
 - cloud computing
+- bioinformatics
 slug: amazon-healthomics-genomics-operations
 source_filename: amazon-healthomics-genomics-operations.yaml
 source_heading: Capability Spec

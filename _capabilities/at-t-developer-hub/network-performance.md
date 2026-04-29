@@ -36,57 +36,57 @@ provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
 - check connectivity
-- developer building fraud prevention and identity verification using network signals
-- get the current status of a quality on demand session
-- device roaming status
-- at&t
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- list active quality on demand sessions for the application
-- list qod sessions
-- IoT Engineer
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- network apis
-- Identity Developer
-- Security Developer
 - 5g
-- device status
-- edge computing
-- qod list sessions
-- qod terminate session
-- App Developer
-- terminate qod session
-- connectivity
-- list active qod sessions
-- individual qod session
-- check if device is roaming
-- camara
 - get qod session status
-- sim swap
-- device connectivity status
-- qod get session
-- quality of service
-- telecommunications
-- mobile network-based authentication without otp
-- create qod session
-- network-based security signals for fraud detection and identity verification
-- check if an at&t subscriber device is roaming on a partner network and get location
-- request enhanced qos for a device
-- mobile or web developer building connectivity-aware applications
-- device check connectivity
-- 5g network quality monitoring and on-demand qos enhancement
+- check if device is roaming
 - delete qod session
-- network performance
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- qod create session
+- create qod session
+- qod terminate session
+- qod list sessions
+- network-based security signals for fraud detection and identity verification
+- qod get session
+- get the current status of a quality on demand session
+- list qod sessions
+- terminate qod session
+- mobile network-based authentication without otp
 - quality on demand session management
-- get qod session
-- network-based fraud prevention and authentication using sim swap and number verification
-- check roaming
-- developer implementing passwordless or frictionless mobile authentication
-- terminate an active quality on demand session and restore normal network quality
-- check device connectivity and network connection type
 - device check roaming
+- network performance
+- telecommunications
+- 5g network quality monitoring and on-demand qos enhancement
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- terminate an active quality on demand session and restore normal network quality
+- get qod session
+- sim swap
+- check roaming
+- qod create session
+- network-based fraud prevention and authentication using sim swap and number verification
+- device status
+- list active qod sessions
+- mobile or web developer building connectivity-aware applications
+- IoT Engineer
+- quality of service
+- device connectivity status
+- list active quality on demand sessions for the application
+- Identity Developer
+- App Developer
+- device roaming status
+- device check connectivity
+- edge computing
+- at&t
+- camara
+- individual qod session
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- developer implementing passwordless or frictionless mobile authentication
+- request enhanced qos for a device
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- check device connectivity and network connection type
+- Security Developer
+- check if an at&t subscriber device is roaming on a partner network and get location
+- connectivity
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- developer building fraud prevention and identity verification using network signals
+- network apis
 slug: network-performance
 source_filename: network-performance.yaml
 source_heading: Capability Spec

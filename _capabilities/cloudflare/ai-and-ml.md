@@ -29,64 +29,64 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- cloudflare
-- ai execute model
-- vectorize list indexes
-- ai gateway
-- delete a vectorize index.
-- security
-- create an ai gateway.
-- vectorize query vectors
-- vector database
-- vectorize delete index
-- gateway create gateway
-- create a vectorize index.
-- cloud
-- chat completions.
-- gateway list gateways
-- create a chat completion.
-- generate text embeddings.
-- api gateway
-- list vectorize indexes.
-- list ai gateway instances.
-- dns
-- edge computing
-- real-time communication
-- serverless
-- perform similarity query.
-- text embeddings.
-- ai gateway management.
-- create chat completion
-- cdn
-- gateway delete gateway
-- gateway list logs
-- ai create chat completion
-- gateway get gateway
-- delete an ai gateway.
-- list ai gateway logs.
-- create embeddings
-- platform
-- list ai gateways
-- web performance
-- machine learning
 - object storage
-- ddos protection
-- run an ai model.
-- ai create embeddings
-- get ai gateway details.
-- edge
-- ai create text completion
-- artificial intelligence
-- vectorize insert vectors
+- ai gateway management.
+- cdn
+- chat completions.
+- generate text embeddings.
+- security
+- ai execute model
+- real-time communication
+- create a vectorize index.
+- gateway list logs
 - vectorize index management.
+- text embeddings.
+- delete an ai gateway.
+- create a chat completion.
+- vectorize list indexes
+- vector database
+- run an ai model.
+- serverless
+- ai create text completion
+- get ai gateway details.
+- list ai gateway logs.
+- insert vectors into an index.
+- web performance
+- ai create embeddings
+- gateway list gateways
+- vectorize create index
+- edge
+- cloudflare
+- create an ai gateway.
+- list ai gateways
+- ai create chat completion
+- gateway delete gateway
+- perform similarity query.
+- cloud
+- create chat completion
 - create an ai response.
 - containers
-- list vectorize indexes
-- create a text completion.
-- vectorize create index
-- insert vectors into an index.
-- list ai gateways.
+- ai gateway
 - ai create response
+- platform
+- create a text completion.
+- vectorize query vectors
+- list vectorize indexes
+- create embeddings
+- delete a vectorize index.
+- gateway create gateway
+- list ai gateways.
+- dns
+- edge computing
+- list vectorize indexes.
+- machine learning
+- gateway get gateway
+- vectorize insert vectors
+- vectorize delete index
+- ddos protection
+- list ai gateway instances.
+- api gateway
+- artificial intelligence
 slug: ai-and-ml
 source_filename: ai-and-ml.yaml
 source_heading: Capability Spec

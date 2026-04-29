@@ -59,62 +59,62 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- list all users in the account
-- create a new user
-- delete a user
-- get, update, or delete a specific group
-- query permissions
-- update group
-- create user
-- list groups
-- automation
-- cloud monitoring
-- get user details
-- create group
-- dynatrace
-- list all environments
-- permanently remove a user from the account
-- list all permissions for the account
-- identity
-- list all environments associated with the account
-- get details of a specific user
-- manage account users
-- permanently delete a group
-- update group name and description
-- list environments
-- create a new group
-- observability
-- iam
-- list permissions
-- get, update, or delete a specific user
-- create a new user and send an invitation email
-- update a user's profile and group memberships
-- list users
-- analytics
-- delete a group
-- manage user groups
-- list all users in the dynatrace account
-- create a new user group
-- application security
-- ai operations
 - get details of a specific group
+- get user
+- list all users in the dynatrace account
+- iam
+- application performance monitoring
+- permanently remove a user from the account
+- list all groups
+- list all user groups in the account
+- delete a group
+- list all environments associated with the account
+- list all permissions for the account
+- automation
+- update user
+- query permissions
+- list all users in the account
+- get user details
+- update user profile and groups
+- update a user's profile and group memberships
+- create a new user group
+- analytics
+- delete group
+- update a group's name and description
+- list environments
+- intelligence
+- list all environments
+- ai operations
+- application security
+- manage account users
+- get, update, or delete a specific group
+- create a new group
+- list users
 - get group details
 - platform administration
-- access control
-- get user
-- intelligence
-- list all permissions defined for the account
-- update a group's name and description
-- digital experience management
+- identity
+- get, update, or delete a specific user
 - delete user
-- list all groups
-- application performance monitoring
-- apm
+- permanently delete a group
+- create user
+- list groups
 - get group
-- update user profile and groups
-- delete group
-- update user
-- list all user groups in the account
+- apm
+- list all permissions defined for the account
+- manage user groups
+- delete a user
+- digital experience management
+- dynatrace
+- get details of a specific user
+- create group
+- cloud monitoring
+- list permissions
+- create a new user and send an invitation email
+- access control
+- create a new user
+- observability
+- update group
+- update group name and description
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

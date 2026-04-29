@@ -11,21 +11,21 @@ personas: []
 provider_name: Oracle Cloud Infrastructure
 provider_slug: oracle-cloud
 search_terms:
-- security and compliance
-- manages databases and data pipelines
-- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
-- workflow for managing databases, data storage, and data processing across oci. used by data engineers and dbas.
-- manages oci infrastructure resources
-- workflow for managing identity, access control, and monitoring across oci. used by security engineers.
-- enterprise cloud
-- oracle
 - infrastructure as a service
-- unified workflow for managing compute instances, networking, and storage resources across oci. used by cloud administrators and devops engineers.
-- oracle cloud
-- builds cloud-native applications
-- manages security and compliance
 - platform as a service
+- unified workflow for managing compute instances, networking, and storage resources across oci. used by cloud administrators and devops engineers.
 - cloud computing
+- enterprise cloud
+- workflow for managing identity, access control, and monitoring across oci. used by security engineers.
+- security and compliance
+- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
+- oracle
+- manages databases and data pipelines
+- oracle cloud
+- workflow for managing databases, data storage, and data processing across oci. used by data engineers and dbas.
+- manages security and compliance
+- builds cloud-native applications
+- manages oci infrastructure resources
 slug: security-and-compliance
 source_filename: security-and-compliance.yaml
 source_heading: Capability Spec

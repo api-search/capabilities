@@ -18,30 +18,30 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list statuses
-- list jira workflows
-- search issues using jql
-- list projects
-- collaboration
-- list dashboards
 - atlassian
 - list filters
-- search issues
-- list workflows
-- jira
+- list statuses
+- code
 - list all projects
-- jira issue management
+- jira
 - list all jira projects
+- search issues using jql
+- list dashboards
+- jira project management
 - search jira issues using jql queries
+- list saved jira filters
+- list projects
+- list workflows
+- platform
+- list jira workflows
+- agile
 - list workflow statuses
 - productivity
-- platform
-- agile
-- jira project management
-- code
-- list jira dashboards
+- collaboration
 - software development
-- list saved jira filters
+- search issues
+- list jira dashboards
+- jira issue management
 slug: agile-development
 source_filename: agile-development.yaml
 source_heading: Capability Spec

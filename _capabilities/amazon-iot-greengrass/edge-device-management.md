@@ -15,34 +15,34 @@ personas: []
 provider_name: Amazon IoT Greengrass
 provider_slug: amazon-iot-greengrass
 search_terms:
-- amazon iot greengrass get core device
-- amazon iot greengrass create deployment
-- iot
-- amazon iot greengrass list core devices
-- amazon iot greengrass describe component
-- amazon iot greengrass list deployments
-- edge computing
-- aws
-- IoT Developer
-- lambda
-- amazon iot greengrass list component versions
+- Edge Computing Engineer
+- amazon iot greengrass resources
+- create deployment
 - describe component
 - list component versions
-- manages amazon iot greengrass resources and operations
-- Edge Computing Engineer
-- create component version
-- get core device
-- amazon iot greengrass list components
-- machine learning
+- IoT Developer
+- amazon iot greengrass list deployments
 - amazon iot greengrass create component version
-- extend aws compute and services to edge devices.
-- create deployment
-- real-time processing
-- list components
-- amazon iot greengrass resources
-- device management
-- list deployments
 - list core devices
+- create component version
+- amazon iot greengrass get core device
+- get core device
+- list deployments
+- aws
+- lambda
+- amazon iot greengrass list component versions
+- device management
+- extend aws compute and services to edge devices.
+- amazon iot greengrass list core devices
+- real-time processing
+- amazon iot greengrass list components
+- amazon iot greengrass describe component
+- manages amazon iot greengrass resources and operations
+- edge computing
+- list components
+- machine learning
+- amazon iot greengrass create deployment
+- iot
 slug: edge-device-management
 source_filename: edge-device-management.yaml
 source_heading: Capability Spec

@@ -123,75 +123,75 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list schemas in a database
-- create a schema
-- snowflake
-- schema management
-- create schema
-- fetch table
-- sql
-- database management
-- data management
-- create a view
-- delete schema
 - delete database
-- iceberg table management
-- create a new schema
-- create a table
-- delete a database
-- create a new table
-- create an event table
-- create event table
-- list external volumes
-- undrop database
-- data sharing
-- list all databases
-- fetch database details by name
-- create a new view
-- list views
-- single database operations
-- list all accessible databases
-- fetch table details
-- delete table
-- suspend dynamic table
-- list tables
-- create table
-- restore a dropped database
-- list databases
-- create database
 - fetch a database
+- delete a database
 - table management
-- delete a schema
-- fetch schema details
-- resume dynamic table
-- create an external volume
-- fetch schema
+- dynamic table management
+- schema management
+- create a new schema
 - create a database
-- list dynamic tables
-- create a new database
-- list schemas
-- create iceberg table
-- create dynamic table
+- create a new table
+- sql
+- create a view
+- single database operations
+- create a schema
+- list views
+- delete schema
 - resume a dynamic table
-- list tables in a schema
-- list iceberg tables
-- database
-- view management
-- create view
 - create a dynamic table
-- fetch database
-- data engineering
+- fetch schema
+- create a table
+- resume dynamic table
+- list event tables
+- create an external volume
+- data lakes
+- list tables
+- list iceberg tables
+- delete table
+- list schemas in a database
+- suspend dynamic table
+- view management
+- create event table
 - list views in a schema
 - clone database
-- delete a table
-- create an iceberg table
-- data lakes
+- fetch schema details
+- data management
 - data warehousing
-- clone a database
-- create external volume
+- list all databases
 - suspend a dynamic table
-- dynamic table management
-- list event tables
+- iceberg table management
+- list schemas
+- data sharing
+- list tables in a schema
+- fetch table
+- create an event table
+- create an iceberg table
+- restore a dropped database
+- list dynamic tables
+- fetch database details by name
+- clone a database
+- create table
+- list databases
+- create dynamic table
+- create a new database
+- delete a table
+- data engineering
+- fetch table details
+- create a new view
+- create iceberg table
+- undrop database
+- database
+- list all accessible databases
+- delete a schema
+- list external volumes
+- create view
+- snowflake
+- create schema
+- create database
+- create external volume
+- fetch database
+- database management
 slug: data-management
 source_filename: data-management.yaml
 source_heading: Capability Spec

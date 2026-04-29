@@ -10,14 +10,14 @@ personas: []
 provider_name: Amazon CloudShell
 provider_slug: amazon-cloudshell
 search_terms:
-- Cloud Administrator
-- browser-based
-- terminal
-- aws
 - cloudshell
+- Cloud Administrator
 - amazon cloudshell
-- cli
+- browser-based
+- aws
 - amazon web services
+- terminal
+- cli
 slug: shell-environment
 source_filename: shell-environment.yaml
 source_heading: Capability Spec

@@ -18,36 +18,36 @@ personas: []
 provider_name: Apache PDFBox
 provider_slug: apache-pdfbox
 search_terms:
-- list pages and their dimensions in a pdf
-- merge documents
-- create document
-- apache
-- get interactive form fields from a pdf document
-- text extraction
-- merge multiple pdf documents into one
-- open source
 - list pages
-- java
-- split document
-- Document Manager
-- get form fields
-- create pdf document
-- extract text
-- extract text from pdf
+- get interactive form fields from a pdf document
+- create a new pdf document
+- merge documents
 - document processing
-- Application Developer
-- apply a digital signature to a pdf document
-- split a pdf document at specified page boundaries
+- extract text
 - apache pdfbox
 - sign document
-- get metadata
-- pdf
-- create a new pdf document
+- create pdf document
 - integrates pdf processing into applications
+- apache
+- create document
+- text extraction
 - extract text content from a pdf document
+- get metadata
+- extract text from pdf
+- get form fields
 - digital signatures
+- pdf
+- split a pdf document at specified page boundaries
+- Document Manager
+- apply a digital signature to a pdf document
+- merge multiple pdf documents into one
+- Application Developer
 - creates and manages pdf documents with metadata and signatures
 - get pdf document metadata (title, author, dates)
+- split document
+- java
+- open source
+- list pages and their dimensions in a pdf
 slug: pdfbox-workflow
 source_filename: pdfbox-workflow.yaml
 source_heading: Capability Spec

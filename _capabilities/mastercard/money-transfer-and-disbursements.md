@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- payments
-- validate account
-- open banking
-- create a cross-border payment
-- process direct transaction
-- create a cross-border international payment
-- disbursements
-- mastercard send
-- money transfer
-- validate account details before transfer
-- create p2p transfer
-- verify send account
 - cross-border
-- get account info
-- currency conversion rates
-- create a person-to-person money transfer
-- create cross border payment
-- create a disbursement to send money to a recipient
-- create a disbursement
-- digital identity
-- disbursement transactions
-- mastercard
-- cross-border payment processing
-- get account information for a send recipient
-- financial services
 - get conversion rate
-- get currency conversion rate for cross-border transactions
-- p2p transfers
-- create a funding transaction via mastercard send
-- create funding
-- process a direct service transaction
 - fraud detection
-- create a funding transaction
-- verify account eligibility for mastercard send
-- create disbursement
-- create a person-to-person transfer
-- credit cards
-- get currency conversion rate
+- currency conversion rates
+- mastercard
 - funding transactions
+- create a disbursement to send money to a recipient
+- credit cards
+- money transfer
+- p2p transfers
+- validate account details before transfer
+- create a cross-border international payment
+- create p2p transfer
+- disbursements
+- cross-border payment processing
+- digital identity
+- create a person-to-person money transfer
+- get currency conversion rate
+- financial services
+- disbursement transactions
+- create funding
+- create a funding transaction via mastercard send
+- create a disbursement
+- process a direct service transaction
+- get currency conversion rate for cross-border transactions
+- validate account
+- create a cross-border payment
+- get account info
+- open banking
+- get account information for a send recipient
+- payments
+- verify account eligibility for mastercard send
+- create cross border payment
+- create a funding transaction
+- create a person-to-person transfer
+- process direct transaction
+- create disbursement
+- verify send account
+- mastercard send
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

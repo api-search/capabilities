@@ -83,89 +83,89 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- getRepository
-- getBranch
-- getRepositoryContent
-- get commit
-- merge a branch
-- create a release
-- list pull request files
-- platform
-- listReleases
-- pull requests
-- list repository tags
-- list reviews for a pull request
-- createReviewForPullRequest
-- list public repositories
-- search repositories
-- get a repository
-- merge pull request
-- pipelines
-- get pull request
-- get branch
-- updatePullRequest
-- compareTwoCommits
-- create a review
-- get content
-- update a pull request
-- create a pull request
 - pull request management
-- createPullRequest
-- github
-- list reviews
-- request reviewers for a pull request
-- listCommits
-- submit a review for a pull request
-- branches
+- search repositories
+- listPublicRepositories
+- t1
+- code
+- getRepositoryContent
+- list pull request files
+- listPullRequests
+- pipelines
+- createReviewForPullRequest
+- create a release
+- get a repository
+- createOrUpdateFileContents
+- list reviews for a pull request
+- get commit
+- listReviewsForPullRequest
+- list pr files
+- update a pull request
 - individual pull request operations
 - get a branch
-- pull request merge
-- release management
-- submit review
-- createRelease
-- createOrUpdateFileContents
-- merge a pull request
-- create release
-- create pull request
-- create or update file
-- branch operations
-- commit operations
-- software development
-- list pr files
-- repository listing and search
-- get a pull request
-- repository management
-- getPullRequest
-- create a review for a pull request
-- compare commits
-- list releases
-- list tags
-- update pull request
-- update branch protection
-- update a repository
+- merge pull request
 - get a commit
+- release management
+- compare commits
+- get content
+- compareTwoCommits
+- branches
+- createRelease
+- list public repositories
+- update a repository
+- merge a pull request
+- submit review
+- createPullRequest
 - request reviewers
-- get repository
-- t1
-- merge branch
-- code review management
-- create review
-- code review
-- get repository content
-- listPublicRepositories
-- updateRepository
-- repositories
-- code
-- repository content management
-- list pull requests
-- list commits
-- source control
 - create or update file contents
+- updatePullRequest
+- create review
+- submit a review for a pull request
+- code review
+- list pull requests
+- create or update file
+- software development
+- getRepository
+- updateRepository
+- get a pull request
+- repository listing and search
+- merge a branch
+- list reviews
+- pull requests
+- commit operations
+- request reviewers for a pull request
+- listReleases
+- create pull request
+- update branch protection
+- platform
+- get repository content
+- getPullRequest
+- get repository
+- list releases
+- getBranch
 - mergePullRequest
+- pull request merge
+- create release
+- list commits
+- create a review
+- branch operations
+- code review management
+- merge branch
 - searchRepositories
+- list tags
+- repository content management
+- repositories
 - compare two commits
-- listReviewsForPullRequest
-- listPullRequests
+- list repository tags
+- repository management
+- create a review for a pull request
+- update pull request
+- get pull request
+- source control
+- get branch
+- create a pull request
+- github
+- listCommits
 slug: source-control
 source_filename: source-control.yaml
 source_heading: Capability Spec

@@ -35,48 +35,48 @@ personas: []
 provider_name: albertsons
 provider_slug: albertsons
 search_terms:
-- albertsons
-- list performance metrics
-- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
-- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
-- list all advertising campaigns with status and budget details.
-- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
-- digital advertising within retail environments, leveraging shopper purchase data for targeting.
-- advertising campaign management.
-- get campaign details by identifier.
-- retrieve near-real-time performance metrics.
-- consumer goods
-- retail media
-- audience targeting segments.
-- create campaign
-- list audience segments for campaign targeting.
-- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
-- pharmacy
-- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
-- list audience targeting segments available on albertsons media collective based on shopper purchase behavior.
-- custom performance report generation.
-- analytics
-- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
-- list audiences
-- performance analytics
-- Brand Manager
-- campaign detail retrieval.
 - grocery
-- generate a custom performance report.
-- list campaigns
-- create a new advertising campaign.
-- retail
-- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
-- advertising
-- audience targeting
-- campaign performance metrics.
-- campaigns
-- food
-- get campaign
-- generate report
-- get detailed information about a specific advertising campaign by its identifier.
-- campaign creation, management, and performance optimization for brands.
+- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
+- custom performance report generation.
 - Media Planner
+- list audience segments for campaign targeting.
+- performance analytics
+- advertising campaign management.
+- list audience targeting segments available on albertsons media collective based on shopper purchase behavior.
+- list audiences
+- consumer goods
+- create campaign
+- audience targeting
+- list all advertising campaigns with status and budget details.
+- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
+- digital advertising within retail environments, leveraging shopper purchase data for targeting.
+- generate a custom performance report.
+- analytics
+- get campaign details by identifier.
+- albertsons
+- campaign performance metrics.
+- retail media
+- retrieve near-real-time performance metrics.
+- campaign creation, management, and performance optimization for brands.
+- retail
+- audience targeting segments.
+- Brand Manager
+- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
+- food
+- pharmacy
+- generate report
+- advertising
+- get detailed information about a specific advertising campaign by its identifier.
+- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
+- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
+- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
+- get campaign
+- create a new advertising campaign.
+- list campaigns
+- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
+- campaign detail retrieval.
+- list performance metrics
+- campaigns
 slug: retail-media-advertising
 source_filename: retail-media-advertising.yaml
 source_heading: Capability Spec

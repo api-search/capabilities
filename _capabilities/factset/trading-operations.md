@@ -27,37 +27,37 @@ provider_name: Factset
 provider_slug: factset
 search_terms:
 - trading
-- event calendar.
-- manage users
-- list events
-- manage user provisioning.
-- refresh ib office data.
-- get security models.
-- get partner docs
-- get security models
-- get events
-- list events.
-- trading operations.
-- get event calendar.
 - administration
-- factset
-- financial
-- list trading
-- operations
-- get open marketplace.
-- list support issues.
-- market data
 - investment analytics
+- list trading resources.
+- manage users
+- manage user provisioning.
 - get partner documents.
+- trading operations.
+- get security models.
+- list events.
 - get private markets
 - get private markets data.
-- portfolio analytics
+- list trading
+- get event calendar.
+- refresh ib office data.
+- list support issues.
 - list issues
-- get marketplace
-- financial data
+- portfolio analytics
+- financial
+- get security models
+- market data
+- get events
+- event calendar.
 - research
+- operations
+- factset
+- list events
+- get marketplace
+- get open marketplace.
 - refresh ib office
-- list trading resources.
+- financial data
+- get partner docs
 slug: trading-operations
 source_filename: trading-operations.yaml
 source_heading: Capability Spec

@@ -10,14 +10,14 @@ provider_name: Amazon FinSpace
 provider_slug: amazon-finspace
 search_terms:
 - tick data
+- financial analytics
 - capital markets
-- data analytics
-- market data
+- aws
 - kdb
 - data management
-- aws
 - financial services
-- financial analytics
+- data analytics
+- market data
 slug: amazon-finspace-financial-analytics
 source_filename: amazon-finspace-financial-analytics.yaml
 source_heading: Capability Spec

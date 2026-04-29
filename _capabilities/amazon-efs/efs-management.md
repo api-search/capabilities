@@ -30,34 +30,34 @@ personas: []
 provider_name: Amazon EFS
 provider_slug: amazon-efs
 search_terms:
-- storage
-- amazon efs create mount target
-- create file system
-- deleteFileSystem
-- nfs
-- createMountTarget
-- amazon web services
-- amazon efs
-- amazon efs describe mount targets
-- workflow capability for file system management.
-- serverless
-- file system management business domain for amazon efs.
-- aws
-- delete file system
-- amazon efs create file system
-- engineers managing amazon efs resources on aws.
 - efs
-- describe file systems
-- describe mount targets
-- amazon efs delete file system
-- elastic file system
-- file storage
 - describeFileSystems
-- describeMountTargets
-- createFileSystem
-- file system
 - create mount target
+- file system
+- createFileSystem
+- deleteFileSystem
+- amazon web services
+- elastic file system
+- file system management business domain for amazon efs.
+- engineers managing amazon efs resources on aws.
+- amazon efs describe mount targets
+- aws
+- amazon efs delete file system
+- nfs
+- serverless
+- describe file systems
+- create file system
 - amazon efs describe file systems
+- describe mount targets
+- storage
+- describeMountTargets
+- workflow capability for file system management.
+- amazon efs create file system
+- amazon efs create mount target
+- file storage
+- delete file system
+- amazon efs
+- createMountTarget
 slug: efs-management
 source_filename: efs-management.yaml
 source_heading: Capability Spec

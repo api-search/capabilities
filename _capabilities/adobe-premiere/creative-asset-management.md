@@ -27,37 +27,37 @@ personas: []
 provider_name: Adobe Premiere Pro
 provider_slug: adobe-premiere
 search_terms:
-- creative cloud libraries for shared production assets.
-- automation
-- premiere pro plugin and extension ecosystem.
-- video editing
-- list libraries
-- adobe premiere
-- list all creative cloud libraries.
-- asset management
-- add library element
-- video editor and producer using adobe premiere pro for content creation.
-- manager responsible for organizing shared brand assets in creative cloud.
-- add an element to a library.
-- add a new design element to a creative cloud library for sharing with the premiere pro team.
 - manage creative cloud libraries and assets for premiere pro video production.
-- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
-- add element
-- video production
-- media
-- create a new creative cloud library for organizing video production brand assets.
-- list library elements
-- Media Asset Manager
-- list elements
-- list all creative cloud libraries available for use in adobe premiere pro projects.
+- add a new design element to a creative cloud library for sharing with the premiere pro team.
+- video editor and producer using adobe premiere pro for content creation.
 - create library
-- create a new creative cloud library.
+- automation
+- creative cloud libraries for shared production assets.
+- list design elements (colors, graphics, fonts, patterns, videos) within a creative cloud library.
+- manager responsible for organizing shared brand assets in creative cloud.
+- list all creative cloud libraries.
+- list library elements
+- list elements
+- add an element to a library.
+- create a new creative cloud library for organizing video production brand assets.
+- media
+- list all creative cloud libraries available for use in adobe premiere pro projects.
 - premiere pro
-- Video Producer
-- elements within a creative cloud library.
-- creative cloud
-- list elements in a library.
+- adobe premiere
+- Media Asset Manager
 - adobe
+- add library element
+- creative cloud
+- video production
+- create a new creative cloud library.
+- video editing
+- add element
+- list libraries
+- Video Producer
+- list elements in a library.
+- premiere pro plugin and extension ecosystem.
+- elements within a creative cloud library.
+- asset management
 slug: creative-asset-management
 source_filename: creative-asset-management.yaml
 source_heading: Capability Spec

@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- create a reusable pipeline function for use in pipeline resolvers.
-- list functions
-- list reusable pipeline functions available for composing complex resolvers.
-- amazon appsync
-- upload a new graphql schema definition to an appsync api.
-- list graphql apis
 - list all data sources connected to a graphql api.
-- serverless
-- aws
-- graphql
+- amazon appsync
 - list resolvers
-- api management
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- graphql schema management
-- start schema creation
-- create data source
 - create graphql api
+- list functions
+- upload a new graphql schema definition to an appsync api.
 - graphql api management
-- create a graphql api
-- get graphql api
-- create a resolver that maps a graphql field to a data source operation.
-- list all appsync graphql apis to understand available apis and their configurations.
-- create resolver
-- get complete details of a graphql api including authentication configuration and endpoints.
-- create function
 - create a new graphql api with the specified authentication type and configuration.
+- start schema creation
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- create a reusable pipeline function for use in pipeline resolvers.
+- create resolver
 - list data sources
+- aws
 - list all graphql apis
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- get graphql api
+- serverless
+- api management
 - upload a new graphql schema
+- list reusable pipeline functions available for composing complex resolvers.
+- create data source
+- list all appsync graphql apis to understand available apis and their configurations.
+- list graphql apis
+- graphql schema management
+- get complete details of a graphql api including authentication configuration and endpoints.
+- graphql
+- create a graphql api
+- create a resolver that maps a graphql field to a data source operation.
+- create function
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
 slug: graphql-api-management
 source_filename: graphql-api-management.yaml
 source_heading: Capability Spec

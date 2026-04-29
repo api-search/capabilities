@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list databases in an athena data catalog to explore available schemas.
-- start query execution
 - sql
-- list data catalogs
+- list databases in an athena data catalog to explore available schemas.
+- create a named query
+- start a sql query execution
 - list athena workgroups to understand available query isolation environments.
 - list data catalogs registered with athena to discover available data sources.
-- serverless
-- check the status of a running or completed athena query execution.
-- aws
-- list named queries
-- list tables in an athena database to understand available data.
-- list query executions
-- list databases
-- download the results of a completed athena sql query.
-- save a sql query as a named query for reuse in athena.
 - analytics
-- list work groups
-- sql query management
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- create named query
-- create a named query
-- list table metadata
-- get query execution
-- get query results
-- list recent query executions in an athena workgroup.
-- start a sql query execution
-- list saved named queries available in an athena workgroup.
-- named query management
 - amazon athena
+- aws
+- serverless
+- list work groups
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- start query execution
+- get query results
+- get query execution
+- list data catalogs
+- list databases
+- sql query management
+- check the status of a running or completed athena query execution.
+- named query management
+- list named queries
+- download the results of a completed athena sql query.
+- list recent query executions in an athena workgroup.
+- list tables in an athena database to understand available data.
+- list table metadata
+- save a sql query as a named query for reuse in athena.
+- create named query
+- list query executions
+- list saved named queries available in an athena workgroup.
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec

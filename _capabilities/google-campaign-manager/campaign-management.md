@@ -87,75 +87,75 @@ personas: []
 provider_name: Google Campaign Manager
 provider_slug: google-campaign-manager
 search_terms:
-- get campaign details by id.
-- update an existing ad.
-- update an existing report.
-- update campaign
-- individual ad management.
 - generate placement tags
-- list reports.
-- create a new report.
-- ad management.
-- get placement
-- create a new ad.
-- individual placement management.
-- update a placement.
-- report execution.
-- list ads.
-- get ad
-- update ad
-- list campaigns.
-- get ad details by id.
-- generate ad tags for placements.
-- run report
-- campaign management.
-- create ad
-- list ad placements.
-- placement tag generation.
-- list ads
-- digital marketing
-- get placement details.
-- list placements.
-- get report
-- update placement
-- create campaign
-- create a new placement.
-- run a report to generate results.
-- analytics
-- reporting
-- update an ad.
-- create a placement.
-- update report
-- delete a report.
-- create a report.
-- individual report management.
 - update an existing campaign.
-- list placements
+- get ad
+- reporting
+- ad management.
+- campaign management
+- get ad details by id.
+- run report
+- get placement details by id.
+- create an ad.
+- run a report to generate results.
+- update a placement.
+- individual ad management.
+- individual placement management.
 - update an existing placement.
+- update an ad.
+- placement management.
+- create a placement.
+- list ads
+- create report
+- report management.
+- update report
+- get report
+- create campaign
+- analytics
+- get campaign details.
+- campaign management.
+- list ad placements.
+- create a new placement.
+- digital marketing
+- create a report.
+- get placement
+- get ad details.
+- list reports.
+- get report details by id.
+- delete a report.
+- run a report.
+- placement tag generation.
+- get placement details.
+- get report details.
+- list placements.
+- google
+- create placement
+- individual campaign management.
+- list advertising campaigns.
+- create a new report.
+- individual report management.
+- update an existing report.
+- generate ad tags for placements.
+- get campaign details by id.
+- update a campaign.
+- update ad
+- create a new ad.
+- update a report.
+- advertising
+- list campaigns.
+- list placements
+- delete report
+- get campaign
+- list ads.
+- report execution.
 - list campaigns
 - create a new advertising campaign.
 - create a campaign.
-- individual campaign management.
-- create placement
-- advertising
-- get ad details.
-- create an ad.
-- run a report.
-- create report
-- get placement details by id.
-- list advertising campaigns.
-- placement management.
-- report management.
-- google
-- get report details by id.
-- campaign management
-- get campaign
-- update a report.
+- update campaign
+- update an existing ad.
+- create ad
+- update placement
 - list reports
-- get report details.
-- delete report
-- update a campaign.
-- get campaign details.
 slug: campaign-management
 source_filename: campaign-management.yaml
 source_heading: Capability Spec

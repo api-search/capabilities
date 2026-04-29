@@ -44,52 +44,52 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- query metric data for entities
-- get entity type
-- look up an entity by its display name and type
+- query entity types
+- application performance monitoring
+- query entity events
 - query metric data points for entities
+- get entity type
+- infrastructure
 - get the definition of a specific entity type
-- topology
-- developer
-- query metric data
-- automation
-- cloud monitoring
-- query metrics for entity performance
-- list events for entities
-- dynatrace
-- list events
 - get entity details including topology relationships
+- query metric data for entities
+- look up an entity by its display name and type
+- automation
 - entity management
-- ingest deployment events
-- ingest a deployment or custom event for an entity
-- query monitored entities
-- list monitored entities matching a selector expression
-- list all entity types
-- observability
 - ingest a deployment or custom event
-- look up entity by name
+- ingest a deployment or custom event for an entity
+- analytics
+- intelligence
+- ai operations
+- application security
+- get entity type definition
+- list entity types
+- ingest event
+- list events affecting entities
+- ingest deployment events
+- query monitored entities
 - list entities
 - look up an entity by display name and type
-- ingest event
 - list all available entity types in the environment
-- analytics
-- get entity type definition
-- lookup entity
-- application security
-- ai operations
-- list events affecting entities
-- get entity
-- infrastructure
-- get a specific entity type definition
-- intelligence
-- digital experience management
-- list entity types
-- query entity types
-- list entities matching a selector
-- query entity events
+- list all entity types
+- list events for entities
 - apm
-- application performance monitoring
+- list entities matching a selector
+- look up entity by name
+- lookup entity
+- list events
+- digital experience management
+- get a specific entity type definition
+- query metrics for entity performance
+- dynatrace
+- list monitored entities matching a selector expression
+- cloud monitoring
+- topology
+- query metric data
 - get entity details with relationships
+- get entity
+- developer
+- observability
 slug: entity-and-topology
 source_filename: entity-and-topology.yaml
 source_heading: Capability Spec

@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get was health
+- get was server health
+- get open liberty overall health status
 - get log messages
-- get liberty admin metrics
-- get was server health status
-- enterprise java
-- monitoring
-- check if liberty server is ready for traffic
-- get recent liberty log messages
-- metrics collection
 - batch job monitoring
+- get liberty metrics
+- get batch job instance details
+- cloud native
+- get liberty admin metrics
+- get performance data
+- get was health
+- health check endpoints
+- metrics
+- list batch jobs
+- get all open liberty metrics
+- get was server health status
+- microservices
+- monitoring
+- get all metrics
+- ibm websphere
+- get recent liberty log messages
+- get liveness
+- middleware
+- get liberty health
+- application server
+- log management
+- j2ee
+- check if liberty server is ready for traffic
+- get log config
+- get open liberty overall health
+- get liberty log messages
+- enterprise java
+- get liberty logging configuration
+- performance data
+- get was performance monitoring data
+- get readiness
 - get batch job
 - observability
-- cloud native
-- get liberty metrics
-- microservices
-- ibm websphere
-- get open liberty overall health
-- get liveness
-- get liberty health
-- get was server health
-- get batch job instance details
-- performance data
-- metrics
-- application server
-- get liberty log messages
-- get all open liberty metrics
-- middleware
-- get all metrics
-- list batch jobs
-- get liberty logging configuration
-- j2ee
-- list jakarta batch job instances
-- health check endpoints
-- list batch job instances
-- get readiness
 - check if liberty server is alive
-- get was performance monitoring data
-- get open liberty overall health status
-- log management
-- get performance data
-- get log config
+- list jakarta batch job instances
+- metrics collection
+- list batch job instances
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

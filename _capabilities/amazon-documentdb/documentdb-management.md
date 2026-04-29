@@ -30,33 +30,33 @@ personas: []
 provider_name: Amazon DocumentDB
 provider_slug: amazon-documentdb
 search_terms:
-- create db instance
-- documentdb
-- managed database
-- amazon web services
-- amazon documentdb describe db instances
-- nosql
-- amazon documentdb create db instance
-- describeDBInstances
-- amazon documentdb create db cluster
-- delete db cluster
-- engineers managing amazon documentdb resources on aws.
-- aws
-- document database
-- describeDBClusters
-- createDBCluster
-- amazon documentdb
-- amazon documentdb delete db cluster
-- deleteDBCluster
-- describe db clusters
 - amazon documentdb describe db clusters
-- workflow capability for database administration.
+- amazon documentdb describe db instances
+- amazon web services
+- aws
 - create db cluster
 - database administration business domain for amazon documentdb.
-- database
-- mongodb
-- describe db instances
 - createDBInstance
+- amazon documentdb delete db cluster
+- amazon documentdb create db cluster
+- describeDBClusters
+- nosql
+- managed database
+- mongodb
+- amazon documentdb
+- delete db cluster
+- createDBCluster
+- describe db clusters
+- engineers managing amazon documentdb resources on aws.
+- documentdb
+- describe db instances
+- database
+- workflow capability for database administration.
+- document database
+- create db instance
+- amazon documentdb create db instance
+- deleteDBCluster
+- describeDBInstances
 slug: documentdb-management
 source_filename: documentdb-management.yaml
 source_heading: Capability Spec

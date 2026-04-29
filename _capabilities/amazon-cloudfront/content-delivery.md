@@ -10,14 +10,14 @@ personas: []
 provider_name: Amazon CloudFront
 provider_slug: amazon-cloudfront
 search_terms:
-- content delivery
+- cdn
 - edge
 - amazon cloudfront
+- content delivery
 - aws
-- Platform Engineer
-- cdn
-- cloudfront
 - amazon web services
+- cloudfront
+- Platform Engineer
 slug: content-delivery
 source_filename: content-delivery.yaml
 source_heading: Capability Spec

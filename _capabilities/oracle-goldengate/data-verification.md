@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- list process metrics
-- get details of out-of-sync data
-- get goldengate process performance metrics for monitoring replication health
-- list groups
-- get comparison job statistics
-- list compare groups for data verification
-- replication process metrics
-- create group
-- list compare groups
-- data integration
-- cdc
 - list connections
-- compliance
-- repair job
-- create a new comparison job
-- create job
-- repair out-of-sync data identified by a comparison job
-- get out of sync data
-- data quality
-- comparison jobs
-- create a new veridata database connection
-- get server info
-- oracle goldengate
-- compare groups
-- execute a comparison job
-- data verification
-- get job statistics
-- data synchronization
-- create connection
-- list replication process performance metrics
-- create a new compare group
-- list veridata database connections
-- real-time replication
-- list jobs
-- run job
-- database
-- enterprise
 - get veridata server information
-- list comparison jobs
+- get comparison job statistics
+- compliance
+- data integration
 - database connections for verification
+- create a new comparison job
+- list comparison jobs
+- get goldengate process performance metrics for monitoring replication health
+- replication process metrics
+- list compare groups
+- compare groups
+- real-time replication
+- create job
+- create connection
+- list compare groups for data verification
+- cdc
+- get job statistics
+- list groups
+- list jobs
+- enterprise
+- get details of out-of-sync data
+- get out of sync data
+- list veridata database connections
+- comparison jobs
+- data synchronization
+- execute a comparison job
+- run job
+- create a new compare group
+- get server info
+- create group
+- oracle goldengate
+- database
+- repair out-of-sync data identified by a comparison job
+- create a new veridata database connection
+- data quality
+- list process metrics
+- repair job
+- list replication process performance metrics
+- data verification
 slug: data-verification
 source_filename: data-verification.yaml
 source_heading: Capability Spec

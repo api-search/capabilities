@@ -33,35 +33,35 @@ personas: []
 provider_name: Amadeus
 provider_slug: amadeus
 search_terms:
-- airlines
-- travel
-- hotel search, availability, and booking.
-- aviation
-- flight search, pricing, booking, and order management.
-- OTA Booking Team
-- hospitality
-- search hotels
-- search for available flights between two cities on a given date.
-- points of interest, tours, activities, and destination data.
-- end-to-end trip booking combining flight search, hotel search, and transfer booking.
-- search flights
-- flight search.
-- search available hotels.
-- developer building travel search and booking applications using amadeus apis.
 - booking
-- amadeus
-- market insights
-- Travel Developer
-- search for available hotel rooms and rates for specific hotel properties.
-- tourism
-- flights
-- transfers
-- destinations
-- hotel search.
-- search available flights.
-- online travel agency team managing flight, hotel, and transfer bookings.
-- hotels
+- flight search, pricing, booking, and order management.
+- flight search.
 - transfer search, booking, and management.
+- hospitality
+- search for available flights between two cities on a given date.
+- search hotels
+- OTA Booking Team
+- market insights
+- destinations
+- search available flights.
+- Travel Developer
+- hotels
+- hotel search, availability, and booking.
+- points of interest, tours, activities, and destination data.
+- search for available hotel rooms and rates for specific hotel properties.
+- online travel agency team managing flight, hotel, and transfer bookings.
+- search flights
+- airlines
+- developer building travel search and booking applications using amadeus apis.
+- hotel search.
+- tourism
+- search available hotels.
+- flights
+- aviation
+- end-to-end trip booking combining flight search, hotel search, and transfer booking.
+- transfers
+- amadeus
+- travel
 slug: travel-booking
 source_filename: travel-booking.yaml
 source_heading: Capability Spec

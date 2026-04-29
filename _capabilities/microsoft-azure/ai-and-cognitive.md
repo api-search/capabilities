@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- openai create embedding
-- cognitive services
-- create a text completion
-- list available ai models
-- transcribe audio to text
 - generate images from text
-- translate audio to english
 - embedding operations
-- cloud
-- openai create translation
-- platform as a service
-- openai create speech
-- ai
-- create text embeddings
-- t1
-- list available openai models
-- create a chat completion
-- chat completion operations
-- cognitive list accounts
-- create chat completion
-- api management
-- list model deployments
-- list cognitive services accounts
-- create a chat completion using azure openai
-- openai list deployments
-- openai create image
-- model listing
-- list cognitive accounts
-- openai create transcription
-- cloud computing
-- openai list models
-- openai create completion
-- cognitive services accounts
-- azure
-- openai
-- enterprise
-- generate speech from text
-- openai create chat completion
-- infrastructure as a service
 - list openai models
-- create embedding
+- cognitive list accounts
+- t1
 - cognitive list models
+- chat completion operations
+- openai create completion
+- openai list models
+- create a text completion
+- cloud computing
+- infrastructure as a service
+- openai create image
+- create text embeddings
+- list available ai models
+- openai create embedding
+- api management
+- cognitive services accounts
+- list cognitive accounts
+- openai list deployments
+- cognitive services
+- generate speech from text
+- ai
+- cloud
+- openai create chat completion
+- create chat completion
+- openai create translation
+- transcribe audio to text
+- openai create speech
+- translate audio to english
+- openai
+- platform as a service
+- create a chat completion
+- openai create transcription
+- azure
+- list cognitive services accounts
+- model listing
+- create a chat completion using azure openai
+- list model deployments
+- list available openai models
+- create embedding
+- enterprise
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

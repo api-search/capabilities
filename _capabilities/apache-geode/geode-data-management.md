@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- execute oql query
-- list functions
-- manage in-memory data with regions, queries, and functions
-- apache
-- list all server-side functions available in the cluster
-- distributed systems
-- data management
-- apache geode
-- list regions
-- execute an oql query against geode regions
-- list all geode regions
-- list available functions
-- open source
-- get all keys stored in a geode region
-- platform engineering
-- server-side function execution
-- developers using geode as a fast data store for applications
-- engineers managing the geode cluster infrastructure
-- list geode regions
-- Application Developer
-- high-performance in-memory data caching and distribution
-- caching
 - oql query execution
-- geode region management
-- get region keys
-- data grid
-- execute an oql query
-- list all regions in the apache geode data grid
-- in-memory data grid
-- in-memory
+- caching
 - list geode functions
-- Platform Engineer
+- list geode regions
+- list functions
+- distributed systems
+- server-side function execution
+- execute an oql query
 - execute query
+- apache
+- data management
+- in-memory data grid
 - region crud operations, oql queries, and function execution
+- in-memory
+- list available functions
+- list all regions in the apache geode data grid
+- list all server-side functions available in the cluster
+- open source
+- engineers managing the geode cluster infrastructure
+- get all keys stored in a geode region
+- list regions
+- manage in-memory data with regions, queries, and functions
+- list all geode regions
+- platform engineering
+- execute oql query
+- Platform Engineer
+- get region keys
+- apache geode
+- high-performance in-memory data caching and distribution
+- execute an oql query against geode regions
+- Application Developer
+- developers using geode as a fast data store for applications
+- geode region management
+- data grid
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

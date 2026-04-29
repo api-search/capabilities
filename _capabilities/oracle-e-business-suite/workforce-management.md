@@ -23,40 +23,40 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve payroll runs.
-- retrieve positions.
-- get benefit enrollments
-- get assignments
-- create employee
 - employee management.
-- get employees
-- business applications
-- get positions
-- retrieve employees.
-- workforce management
 - list payrolls.
-- create an employee record.
-- erp
-- get employee by id
-- list organizations.
-- get payrolls
-- update employee record.
-- retrieve benefit enrollments.
-- human resources
-- get organizations
-- payroll
-- get employee by id.
-- organization management.
-- payroll management.
-- retrieve payroll definitions.
-- enterprise
-- list employees.
-- retrieve assignments.
-- get payroll runs
 - retrieve organizations.
-- e-business suite
+- payroll
+- payroll management.
+- get payrolls
+- retrieve assignments.
+- retrieve benefit enrollments.
+- create an employee record.
+- retrieve payroll definitions.
+- get payroll runs
+- retrieve positions.
+- update employee record.
 - oracle
+- get assignments
+- organization management.
+- erp
+- retrieve employees.
+- human resources
+- business applications
+- get organizations
+- list organizations.
 - update employee
+- get employee by id
+- create employee
+- retrieve payroll runs.
+- e-business suite
+- workforce management
+- get benefit enrollments
+- list employees.
+- get employees
+- get positions
+- get employee by id.
+- enterprise
 slug: workforce-management
 source_filename: workforce-management.yaml
 source_heading: Capability Spec

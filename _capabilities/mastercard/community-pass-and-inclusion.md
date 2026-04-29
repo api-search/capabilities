@@ -19,27 +19,27 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
+- fraud detection
 - digital identity management
-- payments
+- mastercard
+- credit cards
 - create identity
+- create a digital identity
 - process a community pass payment
-- create a digital identity in the community pass ecosystem
-- open banking
-- community pass payments
-- process payment
-- process a payment in the community pass ecosystem
-- create digital identity
 - financial inclusion
 - digital identity
-- mastercard
+- create a digital identity in the community pass ecosystem
 - financial services
-- community pass
-- process community payment
-- create a digital identity
+- process payment
 - verify digital identity
-- fraud detection
+- community pass
+- community pass payments
+- process community payment
+- open banking
+- create digital identity
 - verify a digital identity
-- credit cards
+- payments
+- process a payment in the community pass ecosystem
 slug: community-pass-and-inclusion
 source_filename: community-pass-and-inclusion.yaml
 source_heading: Capability Spec

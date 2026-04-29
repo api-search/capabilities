@@ -77,94 +77,94 @@ personas: []
 provider_name: Amazon GameLift
 provider_slug: amazon-gamelift
 search_terms:
-- list all amazon gamelift game server fleets with their status and configuration
-- create or update a fleet scaling policy
-- get fleet attributes
-- manage game server fleets
-- fleet aliases for traffic routing
-- describe fleet utilization
-- manages fleet infrastructure, scaling, and deployment pipelines
-- search for active game sessions with available player slots
-- view logged events for a fleet during a specified time period
-- aws
-- list all game server builds uploaded to gamelift
-- list aliases
-- describe fleet attributes
-- manage player slots in game sessions
-- multiplayer
-- submit a matchmaking request
-- describe game sessions
-- flexmatch
-- get active server process, game session, and player statistics for a fleet
-- list fleets
-- search game sessions
-- fleet auto-scaling policies
-- develops and tests multiplayer game server integration with gamelift
-- get or update a specific fleet
 - delete a fleet
-- list all fleet aliases defined in the region
-- describe fleet capacity
-- manage game sessions
-- create a new game server fleet
-- request optimal game session placement
-- game servers
-- matchmaking
-- create player session
-- create a new game server build
-- get metadata on specific game sessions
-- reserve a player slot in a game session
-- list all game server builds
-- place game sessions using queue optimization
-- start matchmaking
-- create a new game server fleet with specified configuration
-- list all fleet aliases
-- list all game server fleets
-- game session and player session lifecycle
-- game server build and script management
-- reserve a player slot in an existing game session
-- monitors live game sessions, manages player capacity, and handles incidents
-- create game session
-- Game Operations Team
-- create or update a fleet auto-scaling policy
-- put scaling policy
-- start placement
-- describe fleet
-- describe fleet events
+- player matchmaking operations
 - search for active game sessions
 - fleetiq
-- get current auto-scaling policies for a fleet
-- manually adjust fleet capacity settings
-- create a fleet alias
-- start a new game session on a specific fleet
-- describe matchmaking
-- create a fleet alias for traffic routing and fleet transitions
-- start a new game session
+- manages fleet infrastructure, scaling, and deployment pipelines
+- manage game sessions
+- list all amazon gamelift game server fleets with their status and configuration
+- describe game sessions
+- describe fleet attributes
+- fleet auto-scaling policies
+- create a new game server build resource
+- DevOps Engineer
 - get detailed attributes and configuration of a game server fleet
 - get the status of a matchmaking request
-- player matchmaking operations
-- amazon gamelift
-- request optimal placement for a new game session across available fleets
-- get matchmaking ticket status
-- cost-optimized spot instance game hosting
-- create build
-- gaming
-- describe scaling policies
+- matchmaking
+- put scaling policy
 - get current capacity settings and utilization for a fleet
-- start game session placement
-- unified workflow for game infrastructure management
-- update fleet capacity
-- submit a matchmaking request to find other players and start a game
-- create fleet
-- list builds
-- game server builds
-- cloud computing
-- create a new game server build resource
-- creating, configuring, and scaling game server fleets
-- create alias
+- develops and tests multiplayer game server integration with gamelift
+- submit a matchmaking request
 - delete fleet
+- list all fleet aliases defined in the region
+- multiplayer
+- create fleet
+- reserve a player slot in a game session
+- start matchmaking
+- game server build and script management
+- create player session
+- get or update a specific fleet
+- cost-optimized spot instance game hosting
+- start game session placement
+- cloud computing
+- describe fleet
+- get matchmaking ticket status
+- create build
+- search game sessions
+- monitors live game sessions, manages player capacity, and handles incidents
+- describe fleet events
+- get metadata on specific game sessions
+- flexmatch
 - player matchmaking and flexmatch configuration
-- DevOps Engineer
+- create or update a fleet scaling policy
+- get current auto-scaling policies for a fleet
+- request optimal game session placement
+- reserve a player slot in an existing game session
+- create a fleet alias
+- unified workflow for game infrastructure management
+- create a new game server fleet with specified configuration
+- get active server process, game session, and player statistics for a fleet
+- aws
+- search for active game sessions with available player slots
+- place game sessions using queue optimization
+- start a new game session on a specific fleet
+- amazon gamelift
+- create a new game server fleet
 - Game Developer
+- create or update a fleet auto-scaling policy
+- manually adjust fleet capacity settings
+- game server builds
+- start a new game session
+- get fleet attributes
+- create a new game server build
+- describe scaling policies
+- create game session
+- Game Operations Team
+- creating, configuring, and scaling game server fleets
+- fleet aliases for traffic routing
+- list all fleet aliases
+- game servers
+- create alias
+- describe fleet utilization
+- list all game server fleets
+- manage player slots in game sessions
+- list fleets
+- manage game server fleets
+- list aliases
+- describe fleet capacity
+- create a fleet alias for traffic routing and fleet transitions
+- update fleet capacity
+- request optimal placement for a new game session across available fleets
+- view logged events for a fleet during a specified time period
+- game session and player session lifecycle
+- describe matchmaking
+- submit a matchmaking request to find other players and start a game
+- start placement
+- gaming
+- list builds
+- list all game server builds
+- list all game server builds uploaded to gamelift
 slug: amazon-gamelift-game-operations
 source_filename: amazon-gamelift-game-operations.yaml
 source_heading: Capability Spec

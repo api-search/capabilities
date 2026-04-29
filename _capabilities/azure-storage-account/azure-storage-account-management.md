@@ -14,26 +14,26 @@ personas: []
 provider_name: Azure Storage Account
 provider_slug: azure-storage-account
 search_terms:
-- storage
-- resource management
-- list queues
-- cloud
-- list queue resources
-- azure resource management
-- list storageaccount resources
-- list blob containers
-- list blobcontainer resources
-- list fileshare resources
-- list all resources
-- file storage
-- list file shares
-- management
 - list
+- list blob containers
+- list all resources
+- list queue resources
+- resource management
+- microsoft
 - list storage accounts
 - blob storage
-- azure
 - cloud storage
-- microsoft
+- cloud
+- list queues
+- list file shares
+- storage
+- azure resource management
+- list blobcontainer resources
+- file storage
+- azure
+- list storageaccount resources
+- management
+- list fileshare resources
 slug: azure-storage-account-management
 source_filename: azure-storage-account-management.yaml
 source_heading: Capability Spec

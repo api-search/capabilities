@@ -31,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- payments
-- push provision
-- open banking
 - push provision to wallet
-- suspend an active token
-- pre-digitization eligibility
-- register token requestor
-- push provision a token to a digital wallet
-- click to pay
-- mdes
-- check card eligibility for digitization
-- submit bulk tokenization
-- register a new token requestor
-- submit bulk tokenization request
-- check if a card is eligible for digitization
-- tokenize a payment card via mdes
-- digital identity
-- tokenize a payment card
-- mastercard
-- digital payments
-- push provision a token to a wallet
-- enroll an issuer in click to pay
-- suspend token
-- financial services
-- get token details
 - enroll issuer click to pay
-- delete a token
-- delete token
-- bulk tokenization operations
-- token lifecycle management
 - fraud detection
-- tokenization
-- submit a bulk tokenization request for a card portfolio
-- credit cards
+- push provision a token to a digital wallet
 - push provisioning to wallets
-- check digitization eligibility
+- check if a card is eligible for digitization
+- mastercard
+- submit bulk tokenization
+- submit a bulk tokenization request for a card portfolio
+- click to pay
+- credit cards
+- token lifecycle management
+- submit bulk tokenization request
+- digital identity
+- pre-digitization eligibility
+- push provision
+- financial services
 - tokenize card
+- check digitization eligibility
+- suspend an active token
+- register token requestor
+- get token details
+- tokenize a payment card via mdes
+- bulk tokenization operations
+- check card eligibility for digitization
+- mdes
+- open banking
+- payments
+- tokenize a payment card
+- delete a token
+- suspend token
+- push provision a token to a wallet
+- register a new token requestor
+- enroll an issuer in click to pay
+- digital payments
+- tokenization
+- delete token
 slug: digital-enablement-and-tokenization
 source_filename: digital-enablement-and-tokenization.yaml
 source_heading: Capability Spec

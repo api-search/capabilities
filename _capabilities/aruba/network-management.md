@@ -55,61 +55,61 @@ personas: []
 provider_name: Aruba
 provider_slug: aruba
 search_terms:
-- client connectivity
-- network monitoring
-- list access points
-- networking
-- site management
-- associate devices to a site
-- delete site
-- list groups
-- security
-- list all access points with status and statistics
-- create a new site
-- monitoring
-- create group
-- list all sites
-- list clients
-- list networks
-- delete a configuration group
-- device inventory management
-- cloud
-- get group details by name
-- remove device
-- list sites
-- list gateways
-- list all devices in the network inventory
-- list all connected clients
 - create a new configuration group
-- network management
-- access point monitoring
-- list all devices in the aruba central device inventory
-- list devices
-- get access point
-- remove a device from inventory
-- list all access points with status
-- get site details by id
-- list all configuration groups
-- get site
-- get access point details by serial number
-- device details
-- configuration group management
-- get device details by serial number
-- wireless
-- switches
-- infrastructure
-- sd-wan
-- list all networks
-- cloud management
+- list access points
 - list all gateways
+- security
+- list clients
+- remove a device from inventory
+- device details
+- aruba
+- get device
+- network monitoring
+- client connectivity
+- list networks
+- list all networks
+- associate devices to site
+- list all configuration groups
+- cloud management
+- infrastructure
+- networking
+- list all sites
+- switches
+- monitoring
+- delete group
+- get group details by name
+- list all access points with status and statistics
+- device inventory management
+- gateway monitoring
+- wireless
+- access point monitoring
+- list sites
+- get site details by id
+- cloud
+- list all devices in the aruba central device inventory
+- list groups
 - create site
 - get group
-- aruba
-- gateway monitoring
-- delete group
-- associate devices to site
-- get device
+- list gateways
+- site management
+- configuration group management
+- remove device
+- create a new site
+- delete a configuration group
 - delete a site
+- associate devices to a site
+- get site
+- create group
+- list devices
+- delete site
+- get access point details by serial number
+- network management
+- get device details by serial number
+- list all access points with status
+- list all connected clients
+- list all devices in the network inventory
+- get access point
+- sd-wan
 slug: network-management
 source_filename: network-management.yaml
 source_heading: Capability Spec

@@ -33,40 +33,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- publish cloud event
-- create topic
+- publish events
+- manage topics, subscriptions, and publish cloudevents
+- create eventmesh topic
 - subscribe a consumer to an eventmesh topic
+- publish cloud event
+- event-driven
+- topic management and event publishing via cloudevents
+- list all eventmesh topics
 - application developers building event-driven services on eventmesh
 - apache
-- publish a cloudevent
-- manage topics, subscriptions, and publish cloudevents
-- engineers managing the eventmesh cluster and messaging infrastructure
-- manage event subscriptions
 - cloudevents
-- open source
-- topic management and event publishing via cloudevents
-- publish a cloudevent to an eventmesh topic
+- create topic
+- Developer
 - list all topics registered in eventmesh
-- platform engineering
 - subscribe to topic
 - serverless
-- publish event
-- event-driven
-- pub-sub
-- Developer
-- subscribe to eventmesh topics
+- engineers managing the eventmesh cluster and messaging infrastructure
+- publish a cloudevent to an eventmesh topic
 - messaging
+- pub-sub, request-reply, and broadcast messaging patterns
+- manage event subscriptions
 - list topics
 - create subscription
-- list eventmesh topics
-- manage eventmesh topics
-- pub-sub, request-reply, and broadcast messaging patterns
-- list all eventmesh topics
-- create a new eventmesh topic
+- publish event
+- pub-sub
 - apache eventmesh
-- create eventmesh topic
-- publish events
+- platform engineering
 - Platform Engineer
+- publish a cloudevent
+- manage eventmesh topics
+- list eventmesh topics
+- subscribe to eventmesh topics
+- create a new eventmesh topic
+- open source
 slug: eventmesh-event-streaming
 source_filename: eventmesh-event-streaming.yaml
 source_heading: Capability Spec

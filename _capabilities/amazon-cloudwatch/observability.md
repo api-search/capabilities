@@ -11,15 +11,15 @@ personas: []
 provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
-- logs
 - metrics
 - cloudwatch
-- observability
 - monitoring
+- logs
 - Operations Engineer
 - amazon cloudwatch
 - aws
 - amazon web services
+- observability
 slug: observability
 source_filename: observability.yaml
 source_heading: Capability Spec

@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- create a security universe for data requests
 - trading
-- search instruments
-- list field lists for data requests
-- get reference data for securities
-- get intraday bar data
-- get intraday bars
-- portfolio management
-- get catalog
-- list distributions
-- create universe
-- get reference data
-- reference data
-- search available bloomberg data fields
 - list security universes
-- get data catalog details
-- field list management
-- list universes
-- get historical data for securities
-- get historical data
-- order management
-- search fields
-- reference data access
-- data catalog browsing
-- bloomberg
-- market data
-- list field lists
-- list catalogs
-- create data request
-- financial analytics
-- get historical end-of-day data
-- historical data access
-- security universe management
-- list available bloomberg data catalogs
-- create a bloomberg data request
-- data distributions
+- list distributions
 - list completed data distributions
+- create universe
+- data catalog browsing
+- list catalogs
+- reference data
 - search for securities and instruments
-- list available data catalogs
+- get data catalog details
 - get reference data for securities via http api
+- list available data catalogs
+- create a bloomberg data request
+- get reference data
+- search available bloomberg data fields
+- get historical end-of-day data
+- search instruments
+- list available bloomberg data catalogs
+- security universe management
+- financial analytics
+- reference data access
+- field list management
+- create a security universe for data requests
+- list field lists for data requests
+- portfolio management
+- get intraday bar data
+- get historical data
+- data distributions
+- market data
+- search fields
+- create data request
+- bloomberg
+- historical data access
+- get reference data for securities
+- get catalog
+- get intraday bars
 - financial data
+- list universes
+- order management
+- get historical data for securities
+- list field lists
 slug: market-data-and-analytics
 source_filename: market-data-and-analytics.yaml
 source_heading: Capability Spec

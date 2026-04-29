@@ -12,34 +12,34 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- hubspot retrieve event instances
-- sales
-- commerce
-- content
 - resetsmtptokenpassword
-- hubspot list all smtp tokens
 - email
-- geteventinstances
-- crm
-- hubspot
-- hubspot retrieve available event types
-- geteventtypes
-- operations
-- customer service
-- hubspot create an smtp token
-- hubspot reset smtp token password
-- analytics
-- marketing
-- createsmtptoken
-- marketing automation
-- sendtransactionalemail
-- hubspot send a transactional email
-- getsmtptokenbyid
-- email marketing
-- deletesmtptoken
-- hubspot get an smtp token by id
-- listsmtptokens
 - hubspot delete an smtp token
+- getsmtptokenbyid
+- hubspot create an smtp token
+- deletesmtptoken
+- sales
+- createsmtptoken
+- content
+- hubspot
+- analytics
+- hubspot retrieve available event types
+- hubspot reset smtp token password
+- crm
+- hubspot get an smtp token by id
+- geteventtypes
+- hubspot list all smtp tokens
+- hubspot send a transactional email
+- operations
+- hubspot retrieve event instances
+- email marketing
+- marketing
+- customer service
+- marketing automation
+- geteventinstances
+- listsmtptokens
+- sendtransactionalemail
+- commerce
 slug: marketing-automation
 source_filename: marketing-automation.yaml
 source_heading: Capability Spec

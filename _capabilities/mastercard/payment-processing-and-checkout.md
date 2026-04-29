@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- payments
-- get payment
-- open banking
-- create installment plan
-- unified checkout sessions
-- qr code payment acceptance
-- create a buy-now-pay-later installment plan
-- register a contactless reader device
-- checkout
-- process payment
-- create unified session
-- generate a merchant qr code for payment
-- checkout session management
-- create a new checkout session for a merchant
-- create a new checkout session
-- generate a merchant-presented qr code for payment
-- digital identity
-- retrieve payment transaction details
-- mastercard
-- register contactless reader
 - buy-now-pay-later installment plans
-- process a payment through the mastercard gateway
-- process cloud transaction
-- create a unified checkout session supporting multiple payment methods
-- create a unified checkout session
-- e-commerce
-- financial services
-- create an installment plan
-- get payment details
-- create checkout session
-- process a cloud commerce transaction
-- generate qr code
 - fraud detection
-- merchant
+- create a unified checkout session
+- mastercard
+- process a cloud commerce transaction
 - credit cards
-- process a payment through the gateway
+- retrieve payment transaction details
+- checkout session management
+- create unified session
+- unified checkout sessions
+- digital identity
+- create installment plan
+- create an installment plan
+- create a new checkout session for a merchant
+- financial services
+- process payment
 - payment processing
+- generate a merchant-presented qr code for payment
+- get payment
+- create a new checkout session
+- process a payment through the mastercard gateway
+- process a payment through the gateway
+- create a buy-now-pay-later installment plan
+- qr code payment acceptance
+- create checkout session
+- checkout
+- create a unified checkout session supporting multiple payment methods
+- merchant
+- process cloud transaction
+- generate qr code
+- open banking
+- generate a merchant qr code for payment
+- payments
+- e-commerce
+- register a contactless reader device
+- register contactless reader
+- get payment details
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

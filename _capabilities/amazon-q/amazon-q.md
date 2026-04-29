@@ -21,19 +21,19 @@ personas: []
 provider_name: Amazon Q
 provider_slug: amazon-q
 search_terms:
-- amazon q resources
-- automation workflow for amazon q
 - generative ai
-- amazon q
-- enterprise
-- list resources
-- artificial intelligence
+- engineer managing amazon q resources
+- assistant
+- amazon q resources
+- list amazon q resources
+- aws cloud resource management
 - cloud operations
 - aws
-- aws cloud resource management
-- list amazon q resources
-- assistant
-- engineer managing amazon q resources
+- automation workflow for amazon q
+- amazon q
+- list resources
+- artificial intelligence
+- enterprise
 slug: amazon-q
 source_filename: amazon-q.yaml
 source_heading: Capability Spec

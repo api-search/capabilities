@@ -22,30 +22,30 @@ personas: []
 provider_name: Apache Knox
 provider_slug: apache-knox
 search_terms:
-- admins who configure knox topologies for hadoop cluster access
-- security
 - list all knox gateway topologies and their service urls
 - delete a knox gateway topology
-- create or update a knox gateway topology
-- open source
-- sso
-- api gateway
-- gateway management
-- get apache knox gateway version information
-- get topology
 - apache knox
-- engineers who configure authentication and authorization for knox
-- get the configuration details of a specific knox topology
-- Hadoop Administrator
-- authentication
-- get knox version
-- delete topology
-- list topologies
-- create topology
-- hadoop
-- hadoop administration
-- Security Engineer
+- security
+- get topology
+- get apache knox gateway version information
 - security engineering
+- delete topology
+- authentication
+- engineers who configure authentication and authorization for knox
+- Security Engineer
+- create or update a knox gateway topology
+- hadoop
+- sso
+- gateway management
+- get the configuration details of a specific knox topology
+- get knox version
+- create topology
+- hadoop administration
+- Hadoop Administrator
+- admins who configure knox topologies for hadoop cluster access
+- api gateway
+- open source
+- list topologies
 slug: gateway-management
 source_filename: gateway-management.yaml
 source_heading: Capability Spec

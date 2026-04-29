@@ -22,34 +22,34 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- list backup seats
-- list domains
-- saas backup domains
-- google workspace
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- domain and seat management for backupify cloud-to-cloud backup
-- datto
-- customer backup seats
-- bulk license/unlicense/pause seats
-- bulk seat management
-- bulk seat change
-- list seats for a customer
-- bulk change seat licenses
-- IT Administrator
-- list backup domains
-- data protection
-- cloud-to-cloud backup and recovery for saas platforms
-- list seats
-- cloud backup
-- list all backupify saas backup domains with customer ids and subscription information
-- managed service provider technician managing backup coverage across customer accounts
-- msp
-- backupify
-- microsoft 365
-- list all backup customer domains
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
 - MSP Technician
+- bulk seat management
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
+- msp
+- list all backup customer domains
+- domain and seat management for backupify cloud-to-cloud backup
+- managed service provider technician managing backup coverage across customer accounts
+- data protection
+- bulk change seat licenses
+- list domains
+- list seats
+- cloud-to-cloud backup and recovery for saas platforms
+- cloud backup
+- microsoft 365
+- bulk license/unlicense/pause seats
+- customer backup seats
+- bulk seat change
+- google workspace
+- list seats for a customer
+- backupify
+- IT Administrator
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- datto
+- list backup domains
+- list backup seats
+- saas backup domains
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- list all backupify saas backup domains with customer ids and subscription information
 - saas backup
 slug: saas-backup-management
 source_filename: saas-backup-management.yaml

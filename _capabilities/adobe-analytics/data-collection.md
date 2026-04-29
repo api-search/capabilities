@@ -36,42 +36,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- web analytics
-- bulk data insertion
-- report suite discovery for data collection targeting.
-- server side
-- report suite details.
-- customer intelligence
-- validate events
-- data collection
-- list report suites to identify collection targets.
-- validate a batch events file without ingesting data.
-- digital marketing
-- list available dimensions to validate event data mapping.
-- list dimensions to validate event data mapping.
-- validate event files.
-- adobe analytics
-- list dimensions
-- get details for a report suite to verify collection configuration.
-- analytics
-- marketing
-- list metrics
-- list report suites to identify data collection targets.
-- business intelligence
 - list available metrics to validate event data mapping.
-- dimension discovery for event mapping.
-- upload events
-- list metrics to validate event data mapping.
-- events
-- list report suites
+- list dimensions to validate event data mapping.
+- business intelligence
 - upload a gzip-compressed csv file of batched analytics event data.
-- get report suite
-- adobe
-- upload a batch events file.
-- batch event upload.
-- get report suite details.
-- validate a batch events file without ingesting.
 - metric discovery for event mapping.
+- customer intelligence
+- list available dimensions to validate event data mapping.
+- list metrics to validate event data mapping.
+- validate event files.
+- get report suite
+- data collection
+- analytics
+- upload a batch events file.
+- digital marketing
+- bulk data insertion
+- report suite details.
+- validate events
+- web analytics
+- get details for a report suite to verify collection configuration.
+- batch event upload.
+- validate a batch events file without ingesting data.
+- validate a batch events file without ingesting.
+- list report suites
+- list report suites to identify data collection targets.
+- adobe
+- dimension discovery for event mapping.
+- list metrics
+- report suite discovery for data collection targeting.
+- list dimensions
+- server side
+- get report suite details.
+- events
+- marketing
+- adobe analytics
+- upload events
+- list report suites to identify collection targets.
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

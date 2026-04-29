@@ -77,90 +77,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- get an object
+- get details of a batch operations job
+- list storage lens configurations
+- delete multiple objects from an s3 bucket
+- list tables in a namespace
 - get bucket versioning
-- delete bucket
-- get table bucket
-- describe job
+- head bucket
+- list objects in a bucket
+- get lifecycle configuration for an s3 bucket
+- get object
+- single access point
+- get versioning configuration for an s3 bucket
+- list namespaces
+- list objects
+- describe batch job
+- amazon
+- list s3 storage lens configurations
+- get access point
+- list access points
+- get table
+- list buckets
 - list table buckets
-- aws
-- list s3 batch operations jobs
-- single s3 bucket
-- list all s3 buckets owned by the account
-- tables in a table bucket
-- get public access block settings for the account
+- get table bucket
+- list s3 access points for the account
+- objects in a bucket
 - copy an object within s3
 - list batch jobs
-- delete an object from s3
-- delete an object
-- objects in a bucket
-- upload an object
-- list objects
-- list batch operations jobs
-- list namespaces in a table bucket
-- get lifecycle configuration for an s3 bucket
-- get encryption configuration for an s3 bucket
-- list access points
-- list s3 table buckets
-- put object
-- delete multiple objects from an s3 bucket
-- get public access block
-- get an access point
-- create job
-- get object
-- list s3 access points for the account
-- s3 buckets
-- get access point
-- get details of an s3 table bucket
-- s3 batch operations jobs
-- list buckets
-- create an s3 bucket
-- list all s3 buckets
-- list jobs
-- list storage lens
-- get configuration of an s3 access point
-- backup
-- storage management
-- check if a bucket exists
-- single batch operations job
-- upload an object to s3
-- delete object
-- data storage
-- retrieve an object from s3
-- create a batch operations job
-- get details of a batch operations job
-- single access point
 - s3 table buckets
-- create a new s3 bucket
-- storage lens configurations
-- get versioning configuration for an s3 bucket
-- list objects in an s3 bucket
-- s3
-- list tables in a namespace
-- list storage lens configs
-- get details of a table
-- create bucket
-- cloud storage
 - archive
-- delete an s3 bucket
-- get bucket encryption
-- delete objects
-- head bucket
-- s3 access points
-- get table
-- amazon
-- list tables
-- single object
-- list s3 access points
-- describe batch job
-- list objects in a bucket
-- get bucket lifecycle
-- list storage lens configurations
-- object storage
-- list s3 storage lens configurations
-- list namespaces
+- s3 buckets
+- get configuration of an s3 access point
+- get an access point
+- data storage
+- create job
+- get details of a table
 - copy object
+- get details of an s3 table bucket
+- storage management
+- list storage lens
+- create a new s3 bucket
+- delete object
+- get encryption configuration for an s3 bucket
+- s3 access points
+- single batch operations job
+- check if a bucket exists
+- create an s3 bucket
 - scalable storage
+- storage lens configurations
+- describe job
+- get bucket encryption
+- get public access block settings for the account
+- aws
+- s3
+- cloud storage
+- single s3 bucket
+- single object
+- list batch operations jobs
+- upload an object
+- upload an object to s3
+- list objects in an s3 bucket
+- create a batch operations job
+- get bucket lifecycle
+- tables in a table bucket
+- list namespaces in a table bucket
+- object storage
+- list storage lens configs
+- backup
+- delete an object
+- list s3 table buckets
+- list tables
+- put object
+- delete an object from s3
+- list all s3 buckets owned by the account
+- get public access block
+- delete an s3 bucket
+- list s3 batch operations jobs
+- list jobs
+- get an object
+- create bucket
+- list all s3 buckets
+- delete objects
+- list s3 access points
+- delete bucket
+- retrieve an object from s3
+- s3 batch operations jobs
 slug: storage-management
 source_filename: storage-management.yaml
 source_heading: Capability Spec

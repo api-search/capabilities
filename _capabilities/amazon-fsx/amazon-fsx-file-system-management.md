@@ -9,15 +9,15 @@ personas: []
 provider_name: Amazon FSx
 provider_slug: amazon-fsx
 search_terms:
-- storage
-- high performance computing
-- lustre
 - file systems
-- aws
-- netapp ontap
+- lustre
 - openzfs
+- high performance computing
 - netapp
+- netapp ontap
+- storage
 - windows
+- aws
 slug: amazon-fsx-file-system-management
 source_filename: amazon-fsx-file-system-management.yaml
 source_heading: Capability Spec

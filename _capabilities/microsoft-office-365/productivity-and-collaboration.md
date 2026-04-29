@@ -43,79 +43,79 @@ personas: []
 provider_name: Microsoft Office 365
 provider_slug: microsoft-office-365
 search_terms:
-- create a group.
-- add a member to a group.
-- delete message
 - list mail messages.
-- create a draft message.
-- create user
-- list groups
+- create message
+- delete a message.
+- get user
+- update a calendar event.
+- delete a group.
+- list calendar events.
+- update user properties.
 - create a new user.
+- remove a member from a group.
+- list events.
+- add a member to a group.
+- update user
+- list users.
+- list groups.
+- create a draft message.
+- delete a calendar event.
+- get calendar view for a date range.
 - get signed in user
-- list calendars
+- create a group.
+- send mail.
+- delete message
+- microsoft
+- list users in the organization.
+- get a specific group.
+- delete group
+- get calendar view
+- create a new group.
+- list mail folders
+- decline event
+- get message
+- list users
+- create an event.
+- remove group member
+- create a calendar event.
+- update event
+- delete user
+- list members of a group.
+- create user
+- list messages
+- delete event
+- decline a meeting invitation.
+- cloud
+- office 365
+- list groups
+- get a specific event.
+- get group
+- accept event
+- user management.
+- list group members
+- get event
+- list calendars.
+- productivity
+- get a specific user.
+- list events
+- accept a meeting invitation.
 - delete a user.
-- group management.
+- list mail folders.
+- list calendars
 - create group
 - collaboration
-- list calendars.
-- list events
-- cloud
-- list users in the organization.
-- delete a group.
-- calendar management.
-- list mail folders.
 - mail management.
-- update event
-- get message
-- office 365
-- list messages.
-- create event
-- list events.
-- update user properties.
-- add group member
-- remove a member from a group.
-- get calendar view for a date range.
-- list messages
-- remove group member
-- create a new group.
-- create message
-- list users.
-- accept a meeting invitation.
-- list users
-- send mail
 - get the signed-in user profile.
-- user management.
-- create a calendar event.
-- delete event
-- productivity
-- list members of a group.
-- get a specific user.
-- list group members
-- list mail folders
-- update a calendar event.
-- create an event.
-- create a user.
-- get user
-- get a specific event.
-- enterprise
-- send mail.
-- get calendar view
-- delete user
-- list calendar events.
-- decline a meeting invitation.
-- decline event
-- get event
-- get group
-- delete a message.
-- list groups.
-- delete group
-- send an email message.
-- accept event
-- update user
-- delete a calendar event.
-- get a specific group.
-- microsoft
 - get a specific message.
+- group management.
+- send mail
+- create a user.
+- calendar management.
+- send an email message.
+- create event
+- add group member
+- enterprise
+- list messages.
 slug: productivity-and-collaboration
 source_filename: productivity-and-collaboration.yaml
 source_heading: Capability Spec

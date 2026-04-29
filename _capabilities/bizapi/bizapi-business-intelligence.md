@@ -19,30 +19,30 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
+- crm enrichment
+- uses firmographic data to qualify leads and enrich crm account records
+- business intelligence
+- sales enablement
+- appending firmographic data to crm records for sales and marketing
 - Marketing Analyst
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- search for business entities and retrieve firmographic data.
-- search companies test
 - Data Engineer
-- crm enrichment
-- firmographic data retrieval and company lookup
-- sales enablement
-- test search returning fake data without consuming api credits.
-- crm
-- test company search returning fake firmographic data.
 - Sales Representative
-- uses firmographic data to qualify leads and enrich crm account records
 - naics
-- search companies
-- firmographic data
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- business intelligence
-- company data
-- appending firmographic data to crm records for sales and marketing
 - sic
 - business intelligence and crm enrichment workflow combining company search and test endpoints
+- firmographic data
+- search companies
+- test search returning fake data without consuming api credits.
+- crm
+- firmographic data retrieval and company lookup
+- company data
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
 - segments and scores prospects using naics, sic, and financial data
+- search companies test
+- search for business entities and retrieve firmographic data.
+- test company search returning fake firmographic data.
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 - search business entities by name, address, phone, or url.
 slug: bizapi-business-intelligence
 source_filename: bizapi-business-intelligence.yaml

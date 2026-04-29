@@ -26,42 +26,42 @@ personas: []
 provider_name: activision-blizzard
 provider_slug: activision-blizzard
 search_terms:
-- get wow character
-- get the achievements completed by a world of warcraft character
-- get a wow character profile
-- builds community tools, addons, and apps using battle.net game data
-- hearthstone card data
-- search hearthstone cards by class, set, mana cost, or other criteria
-- get hearthstone card
-- diablo iii profiles
-- get a diablo iii career profile for a battletag account
 - battle.net
-- get the list of world of warcraft realms
-- world of warcraft character data
-- Game Analyst
-- Community Developer
-- activision blizzard
-- get wow realms
-- Fan App Builder
-- get a specific hearthstone card by id or slug
-- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
-- video game data and player profiles across blizzard franchises
-- hearthstone
-- get a world of warcraft character profile including level, class, race, guild, and achievement points
-- get wow character achievements
-- search hearthstone cards
-- get diablo iii career profile
-- gaming
-- starcraft
-- diablo
-- get diablo career profile
 - get diablo profile
+- hearthstone card data
+- get a diablo iii career profile for a battletag account
+- video game data and player profiles across blizzard franchises
+- starcraft
+- get wow character achievements
+- activision blizzard
 - creates fan websites, discord bots, and companion apps using game data
-- world of warcraft
+- builds community tools, addons, and apps using battle.net game data
+- get hearthstone card
+- get wow character
+- diablo iii profiles
+- get a world of warcraft character profile including level, class, race, guild, and achievement points
+- get diablo iii career profile
+- world of warcraft character data
+- search hearthstone cards
 - static and dynamic game data apis for community development
+- diablo
+- get the achievements completed by a world of warcraft character
+- get the list of world of warcraft realms
 - world of warcraft realms
+- get diablo career profile
+- Fan App Builder
+- world of warcraft
+- Community Developer
+- get wow realms
+- access wow characters/realms, hearthstone cards, diablo iii profiles, and starcraft ii ladder data
 - analyzes game statistics, leaderboards, and player performance data
 - get wow realm list
+- get a wow character profile
+- hearthstone
+- gaming
+- Game Analyst
+- get a specific hearthstone card by id or slug
+- search hearthstone cards by class, set, mana cost, or other criteria
 slug: game-data
 source_filename: game-data.yaml
 source_heading: Capability Spec

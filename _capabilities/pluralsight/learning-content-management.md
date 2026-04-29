@@ -110,53 +110,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- query the general content catalog including videos, guides, interactive courses, and other content types.
-- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- education
-- query the general content catalog
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- retrieve the full public course catalog
-- skills assessment
-- query learning path catalog data
-- query content slugs
-- learning
-- query programs
-- structured sequences of courses organized around skills and roles
-- query content catalog
-- hands-on labs and practical exercises
-- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- get public course catalog
-- channels
-- query labs
-- content tags and taxonomy for categorization
-- technology
-- course catalog with titles, descriptions, authors, and metadata
-- content channels for organizing and curating learning content
-- video training
-- query lab catalog and activity data
-- query and manage content channels
-- query content tags and taxonomy data
 - learning content
-- query tags
-- query the program catalog including structured learning programs and curriculum offerings.
-- pluralsight
-- courses
 - query the program catalog
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- engineering metrics
-- content management
-- structured learning programs and curriculum offerings
+- query labs
+- query content catalog
+- content channels for organizing and curating learning content
+- content tags and taxonomy for categorization
+- structured sequences of courses organized around skills and roles
 - query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- learning paths
-- public course catalog accessible without authentication
+- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
+- structured learning programs and curriculum offerings
 - resolve content slugs to internal identifiers
-- query the course catalog
-- query content tags and taxonomy data used to categorize and organize learning content.
-- general content catalog including videos, guides, and interactive courses
-- manage channels
-- query learning paths
-- query course catalog
+- query content slugs
+- skills assessment
+- query and manage content channels
+- query the program catalog including structured learning programs and curriculum offerings.
+- video training
+- education
 - retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- content management
+- courses
+- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
+- query lab catalog and activity data
+- public course catalog accessible without authentication
+- manage channels
+- query tags
+- query the general content catalog including videos, guides, interactive courses, and other content types.
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- query the general content catalog
+- query the course catalog
+- technology
+- channels
+- query learning paths
+- learning
+- query course catalog
+- query programs
+- query content tags and taxonomy data
+- engineering metrics
+- retrieve the full public course catalog
+- get public course catalog
+- query learning path catalog data
+- pluralsight
+- learning paths
+- course catalog with titles, descriptions, authors, and metadata
+- query content tags and taxonomy data used to categorize and organize learning content.
+- hands-on labs and practical exercises
+- general content catalog including videos, guides, and interactive courses
 slug: learning-content-management
 source_filename: learning-content-management.yaml
 source_heading: Capability Spec

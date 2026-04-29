@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- webhook subscription management.
-- get api usage data and consumption metrics.
-- get subscription types
-- get api usage data.
-- monitoring
-- available webhook subscription types.
-- validate target url
-- api usage tracking.
-- get usage
-- get available webhook subscription types.
-- compliance
-- individual webhook management.
-- webhook target url validation.
 - contacts
 - validate a webhook target url.
-- lead generation
-- delete webhook
-- api usage
-- delete a webhook subscription.
-- check data compliance status for specified contacts.
+- get api usage data and consumption metrics.
 - update an existing webhook subscription.
+- data compliance operations.
 - b2b
-- b2b data
+- webhook subscription management.
 - create webhook
-- data
-- contact database
-- marketing intelligence
+- webhook target url validation.
+- individual webhook management.
+- compliance
+- get subscription types
+- delete webhook
+- api usage tracking.
 - create a new webhook subscription.
+- monitoring
+- get usage
+- lead generation
+- list all configured webhook subscriptions.
+- validate target url
+- check compliance
+- zoominfo
 - list all webhook subscriptions.
+- contact database
+- check data compliance status for specified contacts.
+- sales intelligence
 - company data
+- marketing intelligence
+- webhooks
+- get api usage data.
 - create a new webhook subscription for data change notifications.
 - update webhook
-- data compliance operations.
-- check compliance
-- list all configured webhook subscriptions.
-- webhooks
-- zoominfo
-- list webhooks
-- validate a webhook target url is reachable.
+- b2b data
 - check compliance status for specified contacts.
-- sales intelligence
+- validate a webhook target url is reachable.
+- api usage
+- data
+- delete a webhook subscription.
+- get available webhook subscription types.
+- available webhook subscription types.
+- list webhooks
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

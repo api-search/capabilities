@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- unsubscribe from a youtube channel
-- unsubscribe from a channel
-- list comments
-- update comment
-- update a comment
-- list youtube channels
-- delete a comment
 - update channel settings
-- list comment threads
-- delete comment
-- subscribe to channel
-- youtube
-- update channel
-- streaming
-- create comment
-- comments
-- update comment thread
-- manage individual comments
-- post a new comment
-- subscribe to a youtube channel
-- manage channel subscriptions
-- create comment thread
-- moderation
-- media
-- create a new comment thread
-- community
-- list comments on a video or channel
-- video
-- update a comment thread
-- manage channel information
-- videos
-- set moderation status on comments
-- manage comment threads
-- list subscriptions
-- set moderation status
-- list channels
-- update an existing comment
-- social
-- unsubscribe
-- subscriptions
-- subscribe
-- google
-- subscribe to a channel
 - list channel subscriptions
+- list subscriptions
+- moderation
+- update a comment thread
+- list comments on a video or channel
+- set moderation status
+- subscribe to a youtube channel
+- create comment
+- social
+- videos
+- manage channel subscriptions
+- set moderation status on comments
+- create a new comment thread
+- list channels
+- unsubscribe
+- streaming
+- update a comment
+- youtube
+- subscribe to a channel
+- subscribe
+- media
+- list comments
+- unsubscribe from a channel
+- google
+- update comment
+- unsubscribe from a youtube channel
 - unsubscribe from channel
+- post a new comment
+- update comment thread
+- list youtube channels
+- list comment threads
+- manage comment threads
+- update an existing comment
+- comments
+- subscribe to channel
+- video
+- create comment thread
+- update channel
+- manage individual comments
+- delete a comment
+- subscriptions
+- manage channel information
+- community
+- delete comment
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

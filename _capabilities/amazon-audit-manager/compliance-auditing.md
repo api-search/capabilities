@@ -23,35 +23,35 @@ provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
 - list controls
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- create control
-- list assessments
+- create assessment
+- list compliance controls available for building assessments.
 - create a new assessment
-- create a new compliance assessment using a regulatory framework.
-- get assessment
-- get complete details of a compliance assessment including control status.
 - compliance
+- update settings
+- list all assessments
+- compliance framework management
+- list available frameworks
+- get audit manager account settings including default destinations and process owners.
+- get settings
+- get complete details of a compliance assessment including control status.
+- aws
+- update audit manager settings including sns notifications and default report destination.
+- create control
+- compliance assessment management
+- create assessment report
+- list all compliance assessments to understand current audit coverage.
+- list assessment reports
+- get assessment
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- list assessments
+- amazon audit manager
 - generate a compliance assessment report from collected evidence.
 - audit
-- create assessment
-- aws
-- list all compliance assessments to understand current audit coverage.
-- list generated assessment reports for compliance documentation.
-- list assessment reports
-- list all assessments
-- compliance assessment management
-- list available frameworks
-- update settings
 - risk management
-- get audit manager account settings including default destinations and process owners.
-- create assessment report
-- list compliance controls available for building assessments.
-- get settings
 - create a custom compliance control for use in frameworks and assessments.
-- compliance framework management
-- amazon audit manager
-- update audit manager settings including sns notifications and default report destination.
+- list generated assessment reports for compliance documentation.
 - list frameworks
+- create a new compliance assessment using a regulatory framework.
 slug: compliance-auditing
 source_filename: compliance-auditing.yaml
 source_heading: Capability Spec

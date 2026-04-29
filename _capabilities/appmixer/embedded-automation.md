@@ -35,42 +35,42 @@ provider_name: Appmixer
 provider_slug: appmixer
 search_terms:
 - list automation users
-- managing tasks requiring human review or approval
 - list flows
-- provisioning and managing automation platform users
-- product user interacting with embedded automation workflows
-- automation
-- list tasks
-- agentic
-- end-to-end workflow for embedding automation in saas products
-- low-code
-- lists users who have access to the embedded automation platform
-- list pending people tasks
-- creating, running, and managing automation flows
-- lists all automation workflows configured in appmixer
-- saas
-- list all automation flows
-- automation flow lifecycle
-- starts/runs an automation flow to execute its workflow
-- list users
-- persisting and retrieving workflow state and data
-- lists human-in-the-loop tasks waiting for user review or approval
-- create automation flow
-- list automation flows
-- list pending tasks
-- human-in-the-loop tasks
-- create a new automation flow
 - integrations
+- persisting and retrieving workflow state and data
+- user management for embedded automation
+- agentic
+- starts/runs an automation flow to execute its workflow
+- automation
+- creating, running, and managing automation flows
+- list pending people tasks
+- approve task
+- approves or completes a pending human-in-the-loop task in an automation flow
+- product user interacting with embedded automation workflows
+- embedded ipaas
+- create a new automation flow
+- human-in-the-loop tasks
+- managing tasks requiring human review or approval
+- list tasks
+- list users
+- workflows
+- lists all automation workflows configured in appmixer
+- create flow
+- list pending tasks
+- end-to-end workflow for embedding automation in saas products
+- run automation flow
+- automation flow lifecycle
+- list all automation flows
+- developer embedding white-labeled automation into a product
 - creates a new automation flow in appmixer for embedding in a product
 - appmixer
-- user management for embedded automation
-- workflows
-- run automation flow
-- approve task
-- embedded ipaas
-- approves or completes a pending human-in-the-loop task in an automation flow
-- create flow
-- developer embedding white-labeled automation into a product
+- lists human-in-the-loop tasks waiting for user review or approval
+- low-code
+- create automation flow
+- saas
+- lists users who have access to the embedded automation platform
+- list automation flows
+- provisioning and managing automation platform users
 slug: embedded-automation
 source_filename: embedded-automation.yaml
 source_heading: Capability Spec

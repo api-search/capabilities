@@ -39,49 +39,49 @@ provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
 - notifications
-- create a new form
-- forms
-- create watch
-- get a single form response by id
-- responses
-- get form details
-- google forms
-- create form
-- questionnaires
-- renew watch
-- google workspace
-- delete a watch to stop notifications
-- managing surveys, questions, and notification watches
-- delete watch
-- list all active watches for a form
-- list all responses for a form
-- data collection
-- list form responses
-- get a single response
-- create a notification watch
-- Data Analyst
-- form crud operations
-- delete a watch
-- set publish settings
-- get form
-- create forms, collect responses, monitor changes
-- surveys
 - list responses
 - batch update form
-- set up a pub/sub watch for form changes or new responses
-- creating and managing forms for data collection
-- get a google form's structure and settings
-- creates and manages forms, monitors responses
+- create watch
+- delete a watch
+- questionnaires
+- delete watch
+- create form
+- Data Analyst
+- google forms
+- renew watch
+- create a new google form with a title
+- data collection
+- get response
+- form crud operations
+- managing surveys, questions, and notification watches
+- get form details
+- get a single response
+- delete a watch to stop notifications
+- apply batch updates to a form (add/remove/modify items)
 - watch notification operations
 - update form publish settings
-- analyzes form responses and collects data
-- Form Administrator
-- create a new google form with a title
-- get response
-- form response operations
+- list all active watches for a form
+- set up a pub/sub watch for form changes or new responses
+- list all responses for a form
 - extend a watch's expiration by seven days
 - google
-- apply batch updates to a form (add/remove/modify items)
+- surveys
+- google workspace
+- set publish settings
+- analyzes form responses and collects data
+- creates and manages forms, monitors responses
+- form response operations
+- create forms, collect responses, monitor changes
+- creating and managing forms for data collection
+- Form Administrator
+- get form
+- list form responses
+- get a google form's structure and settings
+- forms
+- create a new form
+- create a notification watch
+- get a single form response by id
+- responses
 - list watches
 slug: form-management
 source_filename: form-management.yaml

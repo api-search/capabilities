@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- product manager building native integrations into a saas product.
+- apifuse
+- integrations
+- integration analytics.
 - create a workflow.
+- browse and manage integrations.
 - list all integrations.
-- get analytics
+- Integration Developer
+- get analytics data.
+- integration platform
+- list workflows.
+- developer implementing and automating embedded integration workflows.
 - list integrations
-- SaaS Product Manager
+- list all connectors.
 - create workflow
 - list workflows
-- saas
-- ipaas
-- integration analytics.
 - list connectors
 - managing native integrations within saas products.
-- browse pre-built connectors.
-- get analytics data.
-- create a new automation workflow connecting two or more integrated platforms.
-- list workflows.
-- apifuse
-- list all pre-built connectors available for embedding into your saas product.
-- integration platform
 - manage workflows.
-- integrations
-- browse and manage integrations.
-- list all integration workflows configured in the embedded marketplace.
-- list all connectors.
-- Integration Developer
-- developer implementing and automating embedded integration workflows.
-- product manager building native integrations into a saas product.
-- embedded integrations
+- browse pre-built connectors.
+- ipaas
+- get analytics
+- SaaS Product Manager
 - workflow automation
-- marketplace
+- list all integration workflows configured in the embedded marketplace.
+- saas
+- create a new automation workflow connecting two or more integrated platforms.
+- list all pre-built connectors available for embedding into your saas product.
 - browse all available embedded integrations, optionally filtered by category.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- marketplace
+- embedded integrations
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

@@ -34,44 +34,44 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- financial management
-- execute a wql query against workday data
-- wql list data sources
-- raas get report
-- workday
+- delete a dataset
+- business intelligence
+- reporting
+- get fields for a wql data source
+- prism get dataset
+- prism list tables
+- wql get data source
 - retrieve a custom workday report
 - create a new prism analytics dataset
-- list available wql data sources
-- list data change tasks
-- list all prism tables
-- saas
-- enterprise software
-- wql execute query
-- create a data change task
-- wql get data source fields
-- get fields for a wql data source
-- list all prism analytics datasets
-- prism create data change task
-- delete a dataset
-- analytics
-- hcm
-- reporting
-- wql get data source
-- cloud computing
-- business intelligence
+- wql list data sources
+- execute a wql query against workday data
 - prism delete dataset
-- get a dataset by id
-- prism list data change tasks
-- wql query endpoint
-- prism create dataset
+- cloud computing
+- enterprise software
 - prism list datasets
-- prism list tables
-- prism get dataset
-- list datasets
-- get a wql data source by id
-- execute a wql query
-- prism analytics datasets
+- list all prism tables
+- wql query endpoint
 - execute query
+- analytics
+- get a dataset by id
+- prism create dataset
+- list data change tasks
+- wql execute query
+- prism analytics datasets
+- wql get data source fields
+- list datasets
+- execute a wql query
+- list all prism analytics datasets
+- hcm
+- financial management
+- create a data change task
+- raas get report
+- list available wql data sources
+- saas
+- workday
+- get a wql data source by id
+- prism create data change task
+- prism list data change tasks
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

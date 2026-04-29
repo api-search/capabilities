@@ -50,36 +50,36 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- amazon eventbridge pipes updatepipe
-- amazon eventbridge pipes describepipe
-- UntagResource
+- amazon eventbridge pipes startpipe
 - DescribePipe
+- ListPipes
+- developers building applications using amazon eventbridge pipes
+- amazon eventbridge pipes stoppipe
+- operations teams managing amazon eventbridge pipes infrastructure
+- CreatePipe
 - UpdatePipe
 - amazon web services
-- ListPipes
-- amazon eventbridge pipes deletepipe
-- amazon eventbridge pipes listpipes
-- amazon eventbridge pipes createpipe
-- ListTagsForResource
-- developers building applications using amazon eventbridge pipes
-- StopPipe
-- serverless
-- amazon eventbridge pipes stoppipe
-- event-driven
 - TagResource
-- aws
-- amazon eventbridge pipes startpipe
-- CreatePipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- messaging
 - amazon eventbridge pipes untagresource
-- amazon eventbridge pipes listtagsforresource
-- amazon eventbridge pipes tagresource
+- StopPipe
+- event-driven
+- aws
+- serverless
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
 - StartPipe
 - point-to-point integration between event producers and consumers
-- operations teams managing amazon eventbridge pipes infrastructure
-- integration
+- amazon eventbridge pipes describepipe
+- amazon eventbridge pipes listpipes
+- messaging
+- ListTagsForResource
+- amazon eventbridge pipes deletepipe
+- amazon eventbridge pipes createpipe
+- amazon eventbridge pipes listtagsforresource
 - DeletePipe
+- integration
+- amazon eventbridge pipes tagresource
+- UntagResource
+- amazon eventbridge pipes updatepipe
 slug: amazon-eventbridge-pipes-capability
 source_filename: amazon-eventbridge-pipes-capability.yaml
 source_heading: Capability Spec

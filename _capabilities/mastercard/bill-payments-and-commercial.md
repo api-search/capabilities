@@ -37,39 +37,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- treasury
-- payments
-- open banking
-- create virtual card
-- business spending controls
-- get commercial notifications
-- virtual card management
-- validate a bill payment before processing
-- list spending controls
+- search for billers in the rpps network
+- validate payment
+- create a business spending control rule
+- create a virtual card for commercial payments
+- fraud detection
+- create spending control
 - search billers
+- mastercard
+- get biller details
+- credit cards
+- treasury
+- business spending controls
+- create virtual card
+- create a virtual card
+- digital identity
+- financial services
+- virtual card management
+- get commercial notifications
+- list spending controls
+- validate a bill payment
+- business payments
+- bill payment validation
+- bill payments
+- open banking
+- payments
+- retrieve commercial event notifications
+- biller management
+- commercial
+- list business spending control rules
 - search for billers
 - create a spending control rule
 - validate bill payment
-- bill payments
-- digital identity
-- business payments
-- list business spending control rules
-- create a virtual card for commercial payments
-- create a virtual card
-- create a business spending control rule
-- mastercard
-- biller management
-- validate a bill payment
-- get biller details
-- create spending control
-- financial services
-- retrieve commercial event notifications
-- fraud detection
-- search for billers in the rpps network
-- validate payment
-- credit cards
-- commercial
-- bill payment validation
+- validate a bill payment before processing
 slug: bill-payments-and-commercial
 source_filename: bill-payments-and-commercial.yaml
 source_heading: Capability Spec

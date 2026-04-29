@@ -55,64 +55,64 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list cloud providers
-- openshift
-- get container repository details.
-- delete an openshift cluster.
-- get vulnerability scan results.
-- create a container repository.
-- list clusters
-- get details of a specific cluster.
+- delete cluster
+- list subscriptions
+- kubernetes
+- create a new openshift cluster.
+- create cluster
+- get cluster details.
+- quay
 - list machine pools.
+- create repository
+- list addons
+- get container repository details.
+- openshift versions.
+- create a new cluster.
+- list tags for a container image.
+- list image tags.
+- delete an openshift cluster.
+- list cluster subscriptions.
+- list all managed openshift clusters.
+- container image repositories.
+- list versions
 - list openshift versions.
+- red hat
+- list clusters
+- list machine pools
+- list available openshift versions.
+- list cloud providers
 - get cluster
-- cloud
+- specific cluster operations.
+- list repositories
 - list container repositories.
 - image vulnerability scanning.
-- open source
-- get repository
-- create a new container repository.
-- list image tags.
 - get manifest security
-- list addons
-- get vulnerability scan results for a container image.
-- platform engineering
-- create repository
-- hybrid cloud
-- list machine pools
-- list versions
-- create cluster
-- specific cluster operations.
-- list available cluster add-ons.
-- openshift clusters.
-- delete cluster
-- openshift versions.
-- list cloud providers.
-- list cluster subscriptions.
-- linux
-- list machine pools for a cluster.
-- list tags for a container image.
-- red hat
-- list subscriptions
-- list all managed openshift clusters.
 - list available cloud providers.
-- kubernetes
-- get cluster details.
-- list available openshift versions.
-- enterprise
-- delete a cluster.
-- create a new cluster.
-- container image repositories.
-- quay
-- available cloud providers.
-- list repository tags
-- list repositories
-- image tags.
-- list all managed clusters.
+- list available cluster add-ons.
+- open source
+- openshift clusters.
+- cloud
 - containers
-- create a new openshift cluster.
-- list container image repositories.
+- list repository tags
+- enterprise
+- get vulnerability scan results for a container image.
+- available cloud providers.
+- platform engineering
 - cluster machine pools.
+- linux
+- image tags.
+- create a new container repository.
+- delete a cluster.
+- get repository
+- list all managed clusters.
+- openshift
+- create a container repository.
+- list container image repositories.
+- hybrid cloud
+- list cloud providers.
+- get vulnerability scan results.
+- list machine pools for a cluster.
+- get details of a specific cluster.
 slug: platform-management
 source_filename: platform-management.yaml
 source_heading: Capability Spec

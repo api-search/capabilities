@@ -10,11 +10,11 @@ provider_name: Bloom Credit
 provider_slug: bloom-credit
 search_terms:
 - credit bureau
-- fintech
-- lending
-- credit reports
-- credit scores
 - personal finance
+- fintech
+- credit scores
+- credit reports
+- lending
 slug: bloom-credit-credit-intelligence
 source_filename: bloom-credit-credit-intelligence.yaml
 source_heading: Capability Spec

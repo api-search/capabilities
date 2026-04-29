@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- start instances
-- engineers managing amazon ec2 resources on aws.
-- cloud compute management business domain for amazon ec2.
-- terminate instances
-- amazon ec2 describe instance status
-- describe instance status
 - rebootInstances
-- describeInstances
-- amazon ec2 launch ec2 instances
-- workflow capability for cloud compute management.
-- virtual machines
-- amazon ec2 terminate instances
-- describe images
-- amazon ec2 create an ami from an instance
 - deregisterImage
-- stop instances
-- run instances
-- createImage
-- create image
-- aws
-- amazon ec2 describe amis
+- cloud compute management business domain for amazon ec2.
 - amazon ec2 deregister an ami
-- stopInstances
-- amazon ec2 start stopped instances
-- reboot instances
-- deregister image
-- terminateInstances
-- startInstances
-- iaas
-- amazon ec2 stop running instances
-- cloud computing
-- infrastructure
 - amazon ec2 describe ec2 instances
-- runInstances
 - compute
-- amazon ec2 reboot instances
-- amazon ec2
-- describe instances
-- describeImages
+- amazon ec2 launch ec2 instances
+- amazon ec2 terminate instances
+- amazon ec2 start stopped instances
 - describeInstanceStatus
+- infrastructure
+- amazon ec2
+- startInstances
+- amazon ec2 create an ami from an instance
+- cloud computing
+- start instances
+- terminate instances
+- iaas
+- stop instances
+- virtual machines
+- describe images
+- stopInstances
+- describeImages
+- engineers managing amazon ec2 resources on aws.
+- workflow capability for cloud compute management.
+- run instances
+- aws
+- runInstances
+- amazon ec2 describe instance status
+- amazon ec2 describe amis
+- createImage
+- terminateInstances
+- deregister image
+- amazon ec2 reboot instances
+- reboot instances
+- describe instance status
+- describe instances
+- create image
+- describeInstances
+- amazon ec2 stop running instances
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

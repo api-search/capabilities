@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Transit Gateway
 provider_slug: amazon-transit-gateway
 search_terms:
-- cloud networking
+- transit gateway
 - networking
-- network hub
 - aws
 - vpc
-- transit gateway
+- cloud networking
+- network hub
 slug: amazon-transit-gateway-capability
 source_filename: amazon-transit-gateway-capability.yaml
 source_heading: Capability Spec

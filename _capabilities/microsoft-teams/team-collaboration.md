@@ -43,53 +43,53 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- manage teams collaboration workflows.
-- it admins managing teams infrastructure and policies.
-- collaboration
-- list channels.
-- list members.
-- list joined teams
-- create call
-- create channel
-- list channel messages
-- channel management.
-- list all members of a team.
-- create a meeting.
-- chat
-- send channel message
-- create team
-- list messages.
-- meeting management.
-- team leads managing channels, members, and communication.
-- member management.
-- IT Administrator
-- initiate a call.
-- team management.
-- list all teams the user has joined.
-- send a message.
-- list channels in a team.
-- Team Lead
-- Developer
-- create a channel.
-- add team member
-- developers building teams integrations and bots.
-- messaging.
-- productivity
-- list team members
-- microsoft teams
-- send a message to a channel.
-- add a member to a team.
-- list joined teams.
-- create a new team.
 - video conferencing
-- list channels
-- communication
-- microsoft 365
-- create a new channel.
-- create a team.
-- list messages from a channel.
+- Team Lead
+- team management.
+- send a message to a channel.
 - create an online meeting.
+- developers building teams integrations and bots.
+- list channel messages
+- communication
+- create a meeting.
 - create online meeting
+- create a channel.
+- add a member to a team.
+- messaging.
+- create a team.
+- send a message.
+- list channels
+- meeting management.
+- microsoft 365
+- Developer
+- channel management.
+- create call
+- list messages from a channel.
+- list members.
+- microsoft teams
+- list team members
+- list joined teams.
+- list joined teams
+- IT Administrator
+- list channels.
+- team leads managing channels, members, and communication.
+- list all teams the user has joined.
+- create a new channel.
+- member management.
+- list all members of a team.
+- add team member
+- productivity
+- initiate a call.
+- send channel message
+- list channels in a team.
+- collaboration
+- create channel
+- it admins managing teams infrastructure and policies.
+- create team
+- manage teams collaboration workflows.
+- chat
+- create a new team.
+- list messages.
 slug: team-collaboration
 source_filename: team-collaboration.yaml
 source_heading: Capability Spec

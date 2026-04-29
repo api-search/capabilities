@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- bankruptcy
-- Creditor
-- attorney managing creditor representation in bankruptcy proceedings
-- court data
-- us bankruptcy court cases and proceedings
-- list claims register for a bankruptcy case
-- legal
 - creditor
-- pacer
-- search bankruptcy cases
-- compliance
-- retrieve docket entries for a bankruptcy case
-- file proof of claim
-- get bankruptcy case
-- Bankruptcy Attorney
-- business or individual owed money by a bankruptcy filer
-- get detailed information about a specific bankruptcy case
-- search for bankruptcy cases across all us bankruptcy court districts
-- list case claims
-- bankruptcywatch
-- Loan Officer
-- automated alerts for bankruptcy filings
 - file a proof of claim for a bankruptcy case
-- lending
-- get case docket
+- Creditor
 - list monitors
-- bankruptcy case research, claims management, and automated monitoring
-- lender monitoring borrowers for bankruptcy filings
-- create bankruptcy monitor
-- list all active bankruptcy monitoring alerts
+- compliance
+- bankruptcywatch
+- Bankruptcy Attorney
 - create a bankruptcy monitoring alert for a debtor or entity
+- list claims register for a bankruptcy case
+- court data
+- file proof of claim
+- list all active bankruptcy monitoring alerts
+- legal
+- search bankruptcy cases
+- create bankruptcy monitor
+- list case claims
+- lending
+- automated alerts for bankruptcy filings
+- bankruptcy
+- Loan Officer
+- business or individual owed money by a bankruptcy filer
+- us bankruptcy court cases and proceedings
+- attorney managing creditor representation in bankruptcy proceedings
+- get case docket
+- lender monitoring borrowers for bankruptcy filings
+- get detailed information about a specific bankruptcy case
+- retrieve docket entries for a bankruptcy case
+- pacer
+- search for bankruptcy cases across all us bankruptcy court districts
+- bankruptcy case research, claims management, and automated monitoring
+- get bankruptcy case
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

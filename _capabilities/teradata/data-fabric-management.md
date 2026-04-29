@@ -27,53 +27,53 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- manage querygrid data fabric infrastructure.
-- list fabrics
-- sql
-- data center management.
-- system management.
-- list all data fabric configurations.
-- teradata
-- integrates applications with teradata via rest apis.
-- data management
-- run diagnostic check
-- list all connectors for system integration.
 - list systems
-- cloud
-- Platform Administrator
-- system and fabric configuration management.
-- configuration
-- list bridges
 - list all current issues.
-- Data Engineer
-- executes queries and analyzes data across vantage systems.
-- data fabric
 - health monitoring and issue detection.
-- Data Analyst
-- Application Developer
 - administration
-- list all registered systems.
-- list connectors
-- list all configured data centers.
-- sql query execution and session management.
-- list all data centers.
-- list all bridges.
-- analytics
-- list data centers
-- machine learning
-- run a diagnostic check on querygrid systems.
-- manages data fabric infrastructure and cross-system connectivity.
-- list all current issues in the querygrid environment.
-- administers querygrid systems, nodes, and software.
-- execute sql queries and analytics.
-- database
-- enterprise
-- list all registered systems in querygrid.
+- executes queries and analyzes data across vantage systems.
+- integrates applications with teradata via rest apis.
+- sql
 - list all bridges connecting systems.
+- teradata
+- list data centers
+- run a diagnostic check on querygrid systems.
+- sql query execution and session management.
+- data center management.
+- Data Analyst
+- manages data fabric infrastructure and cross-system connectivity.
+- execute sql queries and analytics.
+- Data Engineer
+- analytics
+- list all connectors for system integration.
+- list all data fabric configurations.
+- list all data centers.
 - bridge management.
 - list issues
+- run diagnostic check
+- data management
 - data warehousing
+- Platform Administrator
+- list all registered systems.
+- list connectors
+- cloud
+- list all bridges.
 - issue monitoring.
+- list all current issues in the querygrid environment.
+- list bridges
+- list all configured data centers.
+- system and fabric configuration management.
+- configuration
+- data fabric
+- manage querygrid data fabric infrastructure.
+- database
+- machine learning
+- system management.
+- list all registered systems in querygrid.
+- Application Developer
+- administers querygrid systems, nodes, and software.
+- list fabrics
+- enterprise
 slug: data-fabric-management
 source_filename: data-fabric-management.yaml
 source_heading: Capability Spec

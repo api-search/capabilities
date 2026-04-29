@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- create a group.
-- update a user.
-- get group details.
-- storage
-- user management
-- update group
-- create user
-- create a new user.
-- list groups
-- sign out user
-- delete a user.
-- organizational unit management.
-- group management.
-- create group
-- individual group management.
-- create org unit
-- collaboration
-- google workspace
-- delete a group.
-- make user admin
-- patch user properties.
-- get user details.
-- undelete user
-- email
-- calendar
-- sign out a user from all sessions.
-- create an organizational unit.
-- individual user management.
-- patch user
-- create a new group.
-- list users in the google workspace domain.
-- list users
-- domain administration
-- productivity
-- list groups in the domain.
 - video conferencing
 - get user
-- list org units
-- undelete a deleted user.
-- list users in the domain.
-- create a new user in the domain.
-- user account management.
-- delete user
-- get group
+- delete a group.
+- email
+- calendar
 - update a group.
-- list groups.
-- delete group
-- group management
-- make a user an admin.
-- list organizational units.
+- create a new user.
+- get user details.
+- get group details.
 - update user
+- create a new user in the domain.
+- list groups.
+- list groups in the domain.
+- create a group.
+- delete group
+- create a new group.
+- list users
+- list organizational units.
+- make user admin
+- user management
+- undelete user
+- delete user
+- create org unit
+- group management
+- user account management.
+- make a user an admin.
+- create user
+- sign out user
+- google workspace
+- list groups
+- get group
+- create an organizational unit.
+- storage
+- productivity
+- update a user.
+- individual user management.
+- individual group management.
+- delete a user.
+- create group
+- patch user properties.
+- undelete a deleted user.
+- collaboration
+- group management.
+- patch user
+- list org units
+- list users in the google workspace domain.
+- sign out a user from all sessions.
+- list users in the domain.
+- organizational unit management.
+- update group
+- domain administration
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

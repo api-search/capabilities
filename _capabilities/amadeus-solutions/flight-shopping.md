@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- airlines
-- search
-- travel
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- price confirmation and validation before booking.
-- gds
-- hotels
-- confirm current price and availability.
+- booking
 - search available flights by origin, destination, and date.
-- pricing
+- travel technology
+- developer building online travel agency flight search and booking flows.
+- confirm price
 - search flights advanced
-- OTA Developer
 - upsell, seat selection, and add-on services.
+- travel
+- confirm current price and availability.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- search for available flight offers.
+- hotels
 - Travel Chatbot Developer
-- search flights
+- pricing
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
 - confirm flight price
+- OTA Developer
+- search flights
+- airlines
+- developer building conversational travel assistants for flight search.
+- price confirmation and validation before booking.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- complete flight shopping flow from search through price confirmation.
 - flight offer discovery and comparison.
 - shopping
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- booking
-- amadeus
 - flights
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- developer building conversational travel assistants for flight search.
+- amadeus
+- search
 - confirm pricing for a selected flight offer.
-- complete flight shopping flow from search through price confirmation.
-- developer building online travel agency flight search and booking flows.
-- search for available flight offers.
-- travel technology
-- confirm price
+- gds
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- keyvault list secrets
-- keyvault list certificates
-- list resources in a subscription
-- list resource providers
-- blob storage operations
-- keyvault get secret
-- list secrets
-- arm list tags
-- get blob properties
-- platform as a service
-- arm list subscriptions
-- cloud
-- cosmos db database management
+- list cosmos db databases
 - subscription management
-- resource manager
-- key vault
+- list subscriptions
 - t1
 - arm list resources
-- list subscription tags
-- blob get properties
-- key vault secret management
-- api management
-- list containers in a database
-- cosmos list containers
-- list databases
-- cosmos list items
-- list certificates
-- list resource groups
-- arm list resource groups
-- keyvault list keys
-- list blobs in a container
-- blob download
-- list azure subscriptions
+- list blobs
+- get blob properties
+- list secrets
+- cloud computing
 - list items in a container
+- keyvault list secrets
+- resource manager
+- infrastructure as a service
+- key vault
+- arm list tags
 - blob list blobs
-- list subscriptions
+- blob storage
+- api management
+- keyvault list keys
+- cosmos list items
+- list resource providers
+- keyvault list certificates
+- get a secret value
+- cloud
+- cosmos list containers
+- list azure subscriptions
+- cosmos db database management
+- list cryptographic keys
+- arm list subscriptions
+- arm list providers
+- list resources in a subscription
+- list subscription tags
+- list databases
+- list blobs in a container
+- platform as a service
+- list certificates
+- list containers in a database
+- list resource groups
+- blob download
+- azure
 - cosmos db
 - cosmos list databases
-- cloud computing
-- list cosmos db databases
-- get a secret value
-- list blobs
-- arm list providers
-- blob storage
-- enterprise
-- azure
-- infrastructure as a service
-- list cryptographic keys
+- key vault secret management
+- blob storage operations
+- blob get properties
 - download a blob
+- arm list resource groups
+- keyvault get secret
+- enterprise
 slug: data-and-security
 source_filename: data-and-security.yaml
 source_heading: Capability Spec

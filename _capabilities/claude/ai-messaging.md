@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- list all message batches.
-- individual batch management.
-- large language models
-- create batch
-- retrieve message batch
-- list message batches.
-- natural language processing
-- list available claude models.
-- generative ai
-- ai
-- chatbot
-- retrieve message batch results
-- anthropic
-- message operations.
-- cancel message batch
-- send a message to claude and receive a response.
+- create message
 - delete message batch
-- get batch status.
-- claude
-- count message tokens
+- create a message batch.
+- send a message to claude and receive a response.
+- list available models.
 - count tokens in a message.
 - count tokens
-- model discovery.
-- get model metadata.
-- create message
-- create a batch of message requests.
-- batch management.
-- list message batches
-- count message tokens.
-- messaging
-- list models
-- get message batch status and details.
-- list batches
-- list available models.
+- retrieve message batch
+- cancel message batch
 - get model
-- create a message.
-- machine learning
+- get batch status.
+- get batch
+- claude
 - cancel an in-progress batch.
-- conversational ai
+- list batches
+- create a batch of message requests.
+- list message batches
+- list all message batches.
+- create batch
+- anthropic
+- model discovery.
+- model details.
+- get message batch status and details.
+- delete batch
+- token counting.
+- create a message.
+- generative ai
+- messaging
+- get model metadata.
+- ai
+- count message tokens.
+- chatbot
+- list models
+- delete a completed batch.
+- list available claude models.
+- delete a batch.
 - create message batch
 - get completed batch results.
+- batch management.
+- list message batches.
+- machine learning
+- conversational ai
+- retrieve message batch results
+- message operations.
+- count message tokens
+- large language models
 - artificial intelligence
-- create a message batch.
-- delete a completed batch.
-- get batch
-- model details.
-- token counting.
-- delete a batch.
-- delete batch
+- individual batch management.
+- natural language processing
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

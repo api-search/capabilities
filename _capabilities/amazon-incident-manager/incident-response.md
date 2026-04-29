@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- create incident
-- get details of a specific incident
-- automation
-- list response plans
-- manages incident response plans and responds to operational incidents
-- list all incident response plans
-- manage incident response plans
-- create a new incident response plan with escalation contacts
-- update incident
-- manage active incidents
-- list active and recent incidents
-- creating, tracking, and resolving operational incidents
-- automated incident response plans and escalation
-- aws
-- list all response plans
-- list timeline events for an incident
-- list timeline events
-- list incidents
-- Site Reliability Engineer
-- operations
-- get incident
-- update the summary or status of an active incident
-- devops
-- Operations Engineer
-- monitors system reliability and coordinates incident resolution
-- create a new incident
-- start a new incident and trigger response plan
 - incident management
-- create response plan
+- create a new incident response plan with escalation contacts
+- creating, tracking, and resolving operational incidents
+- manages incident response plans and responds to operational incidents
 - list active incidents
+- get incident
+- manage active incidents
+- manage incident response plans
+- automation
+- get details of a specific incident
+- list timeline events for an incident
+- list all response plans
+- update the summary or status of an active incident
+- update incident
+- list active and recent incidents
+- aws
+- devops
+- monitors system reliability and coordinates incident resolution
+- list all incident response plans
+- Operations Engineer
+- create a new incident
+- create response plan
+- create incident
+- operations
+- list timeline events
+- list response plans
+- Site Reliability Engineer
+- automated incident response plans and escalation
+- list incidents
+- start a new incident and trigger response plan
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

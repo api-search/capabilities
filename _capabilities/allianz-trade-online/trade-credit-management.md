@@ -9,12 +9,12 @@ personas: []
 provider_name: Allianz Trade
 provider_slug: allianz-trade-online
 search_terms:
-- risk management
-- credit insurance
 - e-commerce
-- trade credit
+- credit insurance
 - insurance
 - surety
+- trade credit
+- risk management
 slug: trade-credit-management
 source_filename: trade-credit-management.yaml
 source_heading: Capability Spec

@@ -12,9 +12,9 @@ search_terms:
 - data processing
 - etl
 - data pipeline
-- workflows
-- automation
 - aws
+- automation
+- workflows
 slug: etl-pipeline-operations
 source_filename: etl-pipeline-operations.yaml
 source_heading: Capability Spec

@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- browser policy and access control enforcement
-- trust store management.
+- administration
+- configures browser policies and access controls.
 - virtual desktop
+- list user settings
 - browser policy management.
-- list network settings
-- list secure browser portals.
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- list network settings.
+- list trust stores.
 - secure remote browser access infrastructure
-- portal management.
-- create portal
-- list browser settings.
-- portal and resource provisioning
+- list all workspaces web secure browser portals.
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- list browser settings
+- network configuration management.
+- list user settings configurations for portals.
+- secure browser
+- list ssl certificate trust stores.
+- aws
+- list network settings for portal connectivity.
+- Security Engineer
 - list browser policy settings for portals.
 - manages workspaces web portals and configurations.
-- create a portal.
+- portal and resource provisioning
 - list portals
-- aws
-- list trust stores.
-- IT Administrator
-- administration
 - create a new secure browser portal.
-- user settings management.
-- zero trust
-- list all workspaces web secure browser portals.
+- list secure browser portals.
 - end user computing
+- list browser settings.
+- IT Administrator
+- user settings management.
+- browser policy and access control enforcement
+- list network settings
+- trust store management.
+- create a portal.
 - list trust stores
-- list user settings
-- secure browser
-- list browser settings
-- list network settings for portal connectivity.
-- list user settings configurations for portals.
-- configures browser policies and access controls.
-- Security Engineer
+- create portal
+- portal management.
+- zero trust
 - list user settings.
-- list ssl certificate trust stores.
-- network configuration management.
-- list network settings.
 slug: secure-browser-management
 source_filename: secure-browser-management.yaml
 source_heading: Capability Spec

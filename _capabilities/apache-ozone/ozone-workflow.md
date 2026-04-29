@@ -18,36 +18,36 @@ personas: []
 provider_name: Apache Ozone
 provider_slug: apache-ozone
 search_terms:
-- manages data lake storage with ozone
-- download an object from a bucket
-- apache
-- put object
-- list all object storage buckets
-- delete bucket
-- delete an object from a bucket
-- uses s3-compatible api for application storage
-- open source
-- Data Engineer
-- get metadata for an object
-- s3-compatible
-- apache ozone
-- cloud native
-- get object
-- Application Developer
-- delete an empty bucket
-- distributed storage
-- create a new storage bucket
-- head object
-- s3 compatible
-- list objects in a bucket
 - object storage
 - list buckets
+- apache ozone
+- cloud native
+- Data Engineer
+- put object
+- delete an object from a bucket
+- s3 compatible
+- list objects in a bucket
+- apache
+- get object
+- manages data lake storage with ozone
 - hadoop
-- list objects
+- list all object storage buckets
+- distributed storage
+- s3-compatible
 - upload an object to a bucket
 - create bucket
-- delete object
 - list all buckets
+- delete bucket
+- download an object from a bucket
+- list objects
+- create a new storage bucket
+- delete an empty bucket
+- get metadata for an object
+- delete object
+- Application Developer
+- uses s3-compatible api for application storage
+- head object
+- open source
 slug: ozone-workflow
 source_filename: ozone-workflow.yaml
 source_heading: Capability Spec

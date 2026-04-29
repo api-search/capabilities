@@ -17,33 +17,33 @@ personas: []
 provider_name: Apache ORC
 provider_slug: apache-orc
 search_terms:
-- columnar storage
-- manages orc file creation, conversion, and schema evolution
-- get column statistics
-- get the schema of an orc file
 - compression
-- apache
-- list available orc files
-- open source
-- Data Engineer
 - get column statistics from an orc file
-- convert csv, json, or parquet to orc format
-- get file schema
-- Data Analyst
-- big data
-- data processing
-- reads orc files and analyzes column statistics
-- get file metadata
-- merge orc files
-- file format
-- merge multiple orc files into one
-- convert to orc
-- apache orc
-- hadoop
-- convert
 - list files
-- get metadata about an orc file
+- Data Analyst
 - list orc files
+- Data Engineer
+- file format
+- data processing
+- convert csv, json, or parquet to orc format
+- apache
+- reads orc files and analyzes column statistics
+- get metadata about an orc file
+- get column statistics
+- columnar storage
+- list available orc files
+- hadoop
+- convert to orc
+- get the schema of an orc file
+- manages orc file creation, conversion, and schema evolution
+- big data
+- convert
+- merge orc files
+- apache orc
+- get file metadata
+- merge multiple orc files into one
+- get file schema
+- open source
 slug: orc-workflow
 source_filename: orc-workflow.yaml
 source_heading: Capability Spec

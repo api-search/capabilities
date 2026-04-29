@@ -61,41 +61,41 @@ provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
 - notifications
-- financial management
-- create a new portal content item.
-- list content
-- branding themes
-- list intents
-- chatbot
-- erp
-- portal
-- create content
-- campus solutions
-- enterprise software
-- crm
-- send a notification via email, text, or in-app channels.
 - human capital management.
-- send notification
-- portal content items
-- list themes
-- supply chain management
-- fulfill intent
-- hcm
-- campus solutions.
-- retrieve notifications for the current user.
-- peoplesoft
-- retrieve available chatbot intents.
-- content management
-- list notifications
-- chatbot intents
-- communications
-- retrieve available branding themes.
-- chatbot intent fulfillments
-- retrieve portal content items.
-- financial and supply chain management.
-- peopletools platform services.
 - notification management
+- retrieve portal content items.
+- enterprise software
+- campus solutions
+- content management
+- list intents
+- retrieve available chatbot intents.
+- erp
+- retrieve notifications for the current user.
+- crm
+- portal content items
+- chatbot intents
+- financial and supply chain management.
+- campus solutions.
+- chatbot
 - process a chatbot intent fulfillment request.
+- retrieve available branding themes.
+- supply chain management
+- create a new portal content item.
+- list themes
+- peopletools platform services.
+- financial management
+- send notification
+- list notifications
+- hcm
+- peoplesoft
+- create content
+- portal
+- chatbot intent fulfillments
+- branding themes
+- list content
+- fulfill intent
+- communications
+- send a notification via email, text, or in-app channels.
 slug: portal-and-communications
 source_filename: portal-and-communications.yaml
 source_heading: Capability Spec

@@ -42,48 +42,48 @@ personas: []
 provider_name: Amazon Serverless Application Repository
 provider_slug: amazon-serverless-application-repository
 search_terms:
-- aws lambda-based application development, packaging, and distribution
-- publish application
-- browse the serverless application repository catalog
-- publish a new serverless application to the sar
-- Serverless Developer
-- publish a new version of an existing application
-- list application versions
-- list all published versions of an application
-- publish a new serverless application
-- list applications
-- get the sharing policy for a published application
-- get application policy
-- individual application management
-- get application details
-- deploy a serverless application to your aws account
-- serverless
-- list versions
-- deploy application
-- aws
-- lambda
-- deploy
-- serverless application catalog management
-- publish a new application version
-- update metadata for a published serverless application
-- application deployment pipeline management via cloudformation
-- devops
-- application version management
-- amazon serverless application repository
-- get details and metadata for a serverless application
-- create application version
-- sam
-- create version
-- browse the serverless application catalog
-- application deployment via cloudformation
-- end-to-end serverless application lifecycle management including publishing, versioning, and deployment
-- update application
-- application repository
-- developers who publish and share sam-based serverless applications
 - engineers who discover and deploy pre-built serverless applications from the repository
-- Platform Engineer
-- deploy a serverless application
+- serverless application catalog management
 - get application
+- amazon serverless application repository
+- list applications
+- publish a new version of an existing application
+- aws lambda-based application development, packaging, and distribution
+- create application version
+- publish application
+- deploy a serverless application to your aws account
+- update metadata for a published serverless application
+- application deployment via cloudformation
+- browse the serverless application catalog
+- list versions
+- individual application management
+- list application versions
+- get application details
+- update application
+- deploy application
+- serverless
+- lambda
+- devops
+- get the sharing policy for a published application
+- developers who publish and share sam-based serverless applications
+- aws
+- publish a new application version
+- get details and metadata for a serverless application
+- browse the serverless application repository catalog
+- end-to-end serverless application lifecycle management including publishing, versioning, and deployment
+- create version
+- sam
+- publish a new serverless application to the sar
+- publish a new serverless application
+- Platform Engineer
+- deploy
+- deploy a serverless application
+- Serverless Developer
+- get application policy
+- application deployment pipeline management via cloudformation
+- application version management
+- application repository
+- list all published versions of an application
 slug: serverless-app-management
 source_filename: serverless-app-management.yaml
 source_heading: Capability Spec

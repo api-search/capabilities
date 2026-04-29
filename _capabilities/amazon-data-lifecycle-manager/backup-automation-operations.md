@@ -9,13 +9,13 @@ personas: []
 provider_name: Amazon Data Lifecycle Manager
 provider_slug: amazon-data-lifecycle-manager
 search_terms:
-- storage
-- compliance
-- ebs snapshots
-- lifecycle management
-- automation
 - backup
+- lifecycle management
+- ebs snapshots
+- storage
 - aws
+- automation
+- compliance
 slug: backup-automation-operations
 source_filename: backup-automation-operations.yaml
 source_heading: Capability Spec

@@ -29,51 +29,51 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- Social Media Manager
-- create a new custom audience.
-- Content Creator
 - Customer Support
-- customer messaging across messenger and whatsapp.
-- manage content across facebook, instagram, and threads.
-- list all advertising campaigns.
-- manages content and engagement across meta platforms.
-- list custom audiences.
-- get insights
-- audience management.
-- creates and publishes visual and text content.
-- direct messaging and customer communication.
-- campaign management.
-- get advertising insights.
-- social media
-- social networking
+- publishing and managing content across platforms.
 - performance insights.
-- manage advertising campaigns and performance.
-- manages day-to-day ad campaign optimization.
-- handles customer inquiries via messaging channels.
-- create campaign
-- create custom audience
-- Conversational Commerce
-- marketing
-- messaging
-- list audiences
-- facebook
-- content publishing
-- list campaigns
-- create a new advertising campaign.
-- create a campaign.
-- advertising
-- Ad Operations
-- campaign management and audience targeting.
-- list advertising campaigns.
-- get ad insights
-- list custom audiences for targeting.
-- campaigns
-- get advertising performance insights.
-- Marketing Manager
 - plans and executes advertising campaigns.
 - performance tracking and insights.
+- direct messaging and customer communication.
+- manage advertising campaigns and performance.
+- list audiences
+- customer messaging across messenger and whatsapp.
+- get advertising insights.
+- facebook
+- create campaign
+- campaign management.
+- manages content and engagement across meta platforms.
+- create a new custom audience.
+- messaging
+- get insights
+- list advertising campaigns.
+- Social Media Manager
 - list custom audiences
-- publishing and managing content across platforms.
+- manages day-to-day ad campaign optimization.
+- content publishing
+- marketing
+- advertising
+- list custom audiences.
+- create custom audience
+- campaign management and audience targeting.
+- social media
+- handles customer inquiries via messaging channels.
+- get advertising performance insights.
+- create a new advertising campaign.
+- get ad insights
+- list campaigns
+- list custom audiences for targeting.
+- manage content across facebook, instagram, and threads.
+- create a campaign.
+- Content Creator
+- Marketing Manager
+- Ad Operations
+- list all advertising campaigns.
+- Conversational Commerce
+- social networking
+- campaigns
+- creates and publishes visual and text content.
+- audience management.
 slug: advertising-and-marketing
 source_filename: advertising-and-marketing.yaml
 source_heading: Capability Spec

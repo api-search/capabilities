@@ -70,67 +70,67 @@ personas: []
 provider_name: Productiv
 provider_slug: productiv
 search_terms:
-- batch file upload.
-- manage provisioned users.
 - obtain an oauth2 access token using client credentials.
 - get batch upload urls
+- manage custom applications.
+- push usage events for an application.
+- saas management
+- retrieve provisioned users.
 - productiv
-- push spend data.
-- list provisioning workflow execution summaries.
-- delete provisioned users
+- setup application
 - list provisioning workflows
-- query all apps in portfolio.
-- fetch audit events.
-- publish usage events
+- list execution summaries.
+- fetch audit events for platform activities.
+- fetch detailed app info.
+- provisioning
 - remove provisioned users from an application.
 - manage provisioning workflows.
-- remove provisioned users.
-- obtain an oauth2 access token.
-- add provisioned users for an application.
-- oauth2 token endpoint.
-- list provisioning execution summaries
-- query all apps in your company portfolio.
-- get details of a specific provisioning workflow execution.
-- list execution summaries.
-- query audit events.
-- get provisioned users
-- query provisioning executions.
-- usage analytics
-- fetch detailed app information.
-- get app summaries
-- get provisioning workflow execution
-- add provisioned users.
-- get app details
-- query app portfolio.
-- spend management
-- push usage events.
-- push spend data for an application.
-- manage custom applications.
-- application portfolio
-- push usage events for an application.
-- fetch audit events for platform activities.
-- publish provisioned users
-- provisioning
-- publish spend data
-- get specific execution details.
-- register a new application.
-- publish org chart
-- fetch detailed app info.
-- setup application
-- retrieve provisioned users.
-- register a new connected application.
-- get access token
-- publish organizational chart data.
-- get signed upload urls for batch file uploads.
-- get audit events
-- get execution details.
-- get signed upload urls.
 - manage org chart data.
 - list all provisioning workflows.
+- get provisioned users
+- list provisioning execution summaries
 - retrieve the list of users provisioned to an application.
-- fetch detailed information about a particular app.
+- add provisioned users.
+- fetch detailed app information.
+- spend management
+- push spend data for an application.
+- publish spend data
+- get access token
+- register a new application.
+- get specific execution details.
+- push spend data.
+- get signed upload urls for batch file uploads.
+- publish usage events
+- remove provisioned users.
+- usage analytics
+- get provisioning workflow execution
+- query provisioning executions.
+- get details of a specific provisioning workflow execution.
+- delete provisioned users
 - data export
-- saas management
+- publish provisioned users
+- get app details
+- batch file upload.
+- obtain an oauth2 access token.
+- list provisioning workflow execution summaries.
+- application portfolio
+- query app portfolio.
+- push usage events.
+- query all apps in your company portfolio.
+- publish organizational chart data.
+- register a new connected application.
+- query audit events.
+- add provisioned users for an application.
+- publish org chart
+- query all apps in portfolio.
+- get audit events
+- oauth2 token endpoint.
+- get signed upload urls.
+- get app summaries
+- manage provisioned users.
+- get execution details.
+- fetch detailed information about a particular app.
+- fetch audit events.
 slug: saas-management
 source_filename: saas-management.yaml
 source_heading: Capability Spec

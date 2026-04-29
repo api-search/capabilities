@@ -80,74 +80,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- on-call
-- create incident
+- update monitor
+- incident management
+- create a new uptime monitor
+- site reliability engineer managing infrastructure uptime and incident response
+- heartbeat monitor management
+- resolve incident
+- acknowledge an active incident to indicate someone is working on it
+- get incident
+- better stack
+- delete incident
+- list all heartbeat monitors for scheduled jobs
+- acknowledge an incident
 - get availability for a heartbeat monitor
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- delete monitor
-- engineer on-call rotation responsible for responding to incidents
+- detection, acknowledgement, and resolution of service incidents
+- list monitors
+- create heartbeat
+- single incident operations
+- delete an incident
+- incidents
+- list heartbeats
+- get details for a specific uptime monitor
 - resolve an incident
-- managing team access and membership
+- update a monitor
+- communicating service health to customers and stakeholders
 - monitoring
 - list all uptime monitors
-- get availability metrics for a monitor
-- resolve an active incident
-- list all uptime monitors to check what is being monitored
-- monitor management for uptime checks
-- logs
-- status
-- get monitor availability
-- sre engineer
-- heartbeat monitor management
-- create a manual incident
-- monitor availability metrics
-- site reliability engineer managing infrastructure uptime and incident response
-- uptime and availability monitoring for services and scheduled jobs
-- observability
-- delete a monitor
-- update a monitor
-- resolve incident
-- list incidents
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
 - acknowledge an active incident
-- uptime
-- get details for a specific incident
-- delete incident
-- sre
-- get incident
-- get incident details
-- create heartbeat
-- create a new uptime monitor
-- acknowledge an incident
-- communicating service health to customers and stakeholders
-- list incidents with optional date and filter parameters
-- list all heartbeat monitors for scheduled jobs
-- platform
-- update monitor
-- get monitor details
-- delete an incident
-- single monitor operations
-- on call engineer
-- heartbeats
-- create a heartbeat monitor
-- list monitors
-- acknowledge incident
+- delete monitor
+- get monitor availability
 - create a new uptime monitor for a url or api
-- incidents
-- detection, acknowledgement, and resolution of service incidents
+- resolve an active incident
+- engineer on-call rotation responsible for responding to incidents
+- list incidents with optional date and filter parameters
+- get monitor details
+- create a manual incident
 - get heartbeat availability
-- get details for a specific uptime monitor
-- get monitor availability summary
-- list all incidents
-- list heartbeats
-- list all heartbeats
-- incident management
-- get monitor
-- better stack
-- acknowledge an active incident to indicate someone is working on it
-- single incident operations
-- create monitor
-- resolve an active incident once the issue is fixed
+- status
+- monitor management for uptime checks
 - incident response
+- get incident details
+- get details for a specific incident
+- sre
+- single monitor operations
+- get monitor
+- logs
+- uptime
+- on-call
+- list all uptime monitors to check what is being monitored
+- create incident
+- platform
+- create monitor
+- on call engineer
+- create a heartbeat monitor
+- heartbeats
+- delete a monitor
+- uptime and availability monitoring for services and scheduled jobs
+- monitor availability metrics
+- resolve an active incident once the issue is fixed
+- list all heartbeats
+- managing team access and membership
+- list all incidents
+- get monitor availability summary
+- acknowledge incident
+- observability
+- list incidents
+- sre engineer
+- get availability metrics for a monitor
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

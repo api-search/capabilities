@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- mysql
-- create db instance
-- start a stopped aurora db cluster to resume database operations.
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- stop db cluster
-- restore db cluster from snapshot
 - start db cluster
 - stop an aurora db cluster to reduce costs when not in use.
-- list all aurora db clusters to understand available databases and their status.
-- add a new read replica or writer instance to an aurora db cluster.
-- describe db cluster snapshots
-- create db cluster snapshot
-- create a snapshot of an aurora db cluster for backup or cloning.
-- aws
-- describe db clusters
-- list available aurora db cluster snapshots for backup management.
-- modify the configuration of an existing aurora db cluster.
-- modify db cluster
-- amazon aurora
-- postgresql
-- create db cluster
-- create a new aurora mysql or postgresql compatible db cluster.
-- relational database
-- list all db instances in aurora clusters.
-- describe db instances
-- list aurora db clusters
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- stop db cluster
 - aurora db cluster management
+- list available aurora db cluster snapshots for backup management.
+- add a new read replica or writer instance to an aurora db cluster.
+- modify db cluster
+- create a new aurora mysql or postgresql compatible db cluster.
+- modify the configuration of an existing aurora db cluster.
+- aws
+- create db cluster
+- mysql
+- start a stopped aurora db cluster to resume database operations.
+- restore db cluster from snapshot
+- describe db cluster snapshots
+- describe db clusters
+- list all db instances in aurora clusters.
+- relational database
+- describe db instances
+- postgresql
+- create db cluster snapshot
 - create a new aurora db cluster
+- create a snapshot of an aurora db cluster for backup or cloning.
+- create db instance
+- list aurora db clusters
+- amazon aurora
+- list all aurora db clusters to understand available databases and their status.
 slug: relational-database-management
 source_filename: relational-database-management.yaml
 source_heading: Capability Spec

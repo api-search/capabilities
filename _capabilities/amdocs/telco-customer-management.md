@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- onboard a new telecom customer
-- create customer
-- bss
-- telecom customer account management
-- unified bss workflow for customer onboarding, billing, and service management
-- customer billing invoices
-- customer management
-- browse available products and plans
-- add a service subscription
-- Customer Care Agent
-- list all customer accounts
-- 5g
-- saas
+- amdocs
+- list subscriptions
+- customer subscription management
 - list customers
+- retrieve billing invoices for a customer
+- 5g
+- list telecom customer accounts
+- list invoices
 - oss
-- list subscriptions for a customer
+- product and service catalog
+- browse the service catalog and available plans
+- unified bss workflow for customer onboarding, billing, and service management
+- manages invoicing, payments, and revenue assurance
+- mvno
+- bss
+- add a service subscription to a customer account
+- browse available products and plans
+- create customer
+- list all customer accounts
+- telecom customer account management
 - billing
+- create subscription
+- manages telco bss operations and system configuration
+- telecom
+- customer billing invoices
+- list service subscriptions for a customer
+- customer management
+- BSS Operator
+- handles customer inquiries and account management
+- add a service subscription
 - onboard a new customer
 - Billing Team
-- list invoices for a customer
-- customer subscription management
-- telecom
-- browse the service catalog and available plans
-- product and service catalog
-- list telecom customer accounts
-- manages telco bss operations and system configuration
-- add a service subscription to a customer account
-- manages invoicing, payments, and revenue assurance
-- list subscriptions
-- create subscription
+- onboard a new telecom customer
+- saas
+- list subscriptions for a customer
 - list products
-- retrieve billing invoices for a customer
-- handles customer inquiries and account management
-- BSS Operator
-- amdocs
-- mvno
-- list service subscriptions for a customer
-- list invoices
+- list invoices for a customer
+- Customer Care Agent
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

@@ -32,52 +32,52 @@ provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
 - notifications
-- get topic attributes
-- pub/sub
-- list tags for an sns resource
-- add tags to an sns resource
+- subscription management
+- list subscriptions
+- publish a message to a topic
+- create platform application
+- list all sns topics
+- create a platform application for mobile push
+- get attributes of a subscription
+- email
+- set topic attributes
+- set attributes on an sns topic
+- message publishing
+- unsubscribe from a topic
+- get subscription attributes
+- unsubscribe
+- list subscriptions for a specific topic
 - create topic
-- publish up to 10 messages in a batch
+- publish batch
+- aws
+- check phone opted out
+- list tags
+- get sms messaging attributes
+- subscribe
+- messaging
+- get attributes of an sns topic
+- create a subscription
+- get sms attributes
+- check if a phone number has opted out of sms
+- publish a message to a topic or endpoint
+- list topics
+- sms
 - tag resource
-- delete an sns topic
+- create a subscription to a topic
+- topic management
 - push notifications
 - list subscriptions by topic
-- list tags
-- sms
-- subscription management
-- list all sns topics
-- get subscription attributes
-- get sms messaging attributes
-- get attributes of a subscription
-- amazon
-- email
-- aws
-- get attributes of an sns topic
-- publish a message to a topic or endpoint
-- message publishing
-- publish a message to a topic
-- set attributes on an sns topic
-- publish batch
-- topic management
-- messaging
-- check phone opted out
-- get sms attributes
-- list subscriptions
-- list topics
-- list all subscriptions
-- list subscriptions for a specific topic
-- create a subscription
-- set topic attributes
-- create a platform application for mobile push
-- unsubscribe
-- subscribe
-- create a new sns topic
+- publish up to 10 messages in a batch
+- get topic attributes
+- add tags to an sns resource
+- list tags for an sns resource
 - delete topic
-- create a subscription to a topic
+- pub/sub
+- create a new sns topic
 - publish
-- create platform application
-- unsubscribe from a topic
-- check if a phone number has opted out of sms
+- amazon
+- list all subscriptions
+- delete an sns topic
 slug: pub-sub-messaging
 source_filename: pub-sub-messaging.yaml
 source_heading: Capability Spec

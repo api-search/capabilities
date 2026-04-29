@@ -32,44 +32,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- linux foundation
-- pipeline td
-- technical director building and maintaining vfx production pipeline tools
-- rendering
-- opencue
-- visual effects
-- list all render host machines
-- list shows
-- render wrangler
-- open source
-- vfx pipeline
-- list render hosts
-- list and manage render hosts
-- film
-- get detailed status and frame counts for a specific render job
-- render farm
-- list all render host machines and their current utilization
-- list and manage render jobs
-- monitoring and management of distributed render farm resources and jobs
-- animation
-- get render job
-- get job
-- list all active shows (productions) in the render farm
-- production staff responsible for monitoring and managing render farm operations
-- academy software foundation
-- list and manage render shows (productions)
-- list render jobs for a specific show with optional state filtering
-- color management
 - list hosts
-- list jobs
-- list render jobs
-- get details for a specific render job
-- get or kill a specific render job
-- monitor and manage render jobs, hosts, and shows using opencue
-- list all active shows in the render farm
-- vfx
+- list and manage render hosts
 - list render jobs for a show
+- production staff responsible for monitoring and managing render farm operations
+- rendering
+- get or kill a specific render job
+- list shows
+- list all render host machines
+- render wrangler
+- get detailed status and frame counts for a specific render job
+- list render jobs
+- visual effects
+- list all active shows in the render farm
+- get details for a specific render job
+- opencue
+- list render hosts
+- list render jobs for a specific show with optional state filtering
+- technical director building and maintaining vfx production pipeline tools
+- list and manage render jobs
+- animation
+- list all render host machines and their current utilization
+- color management
+- pipeline td
+- vfx
+- film
+- academy software foundation
+- list jobs
+- list all active shows (productions) in the render farm
+- get render job
+- monitoring and management of distributed render farm resources and jobs
+- vfx pipeline
+- get job
+- linux foundation
 - standards
+- render farm
+- list and manage render shows (productions)
+- open source
+- monitor and manage render jobs, hosts, and shows using opencue
 slug: render-farm-management
 source_filename: render-farm-management.yaml
 source_heading: Capability Spec

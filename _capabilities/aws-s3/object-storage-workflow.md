@@ -11,27 +11,27 @@ personas: []
 provider_name: Amazon S3 API
 provider_slug: aws-s3
 search_terms:
-- upload_object
-- storage
-- delete an s3 bucket
-- data management
-- list_objects
-- create_bucket
-- copy_object
-- create a new s3 bucket
-- aws
-- list objects in an s3 bucket
 - get_object
-- copy an object within or between s3 buckets
 - object storage
-- delete_object
+- copy an object within or between s3 buckets
 - delete an object from s3
-- list_buckets
-- download an object from s3
-- cloud storage
+- data management
+- upload_object
+- aws
+- delete an s3 bucket
 - delete_bucket
+- cloud storage
+- list_objects
 - upload an object to s3
+- storage
+- list objects in an s3 bucket
+- delete_object
+- create_bucket
+- download an object from s3
+- create a new s3 bucket
+- copy_object
 - list all s3 buckets in the account
+- list_buckets
 slug: object-storage-workflow
 source_filename: object-storage-workflow.yaml
 source_heading: Capability Spec

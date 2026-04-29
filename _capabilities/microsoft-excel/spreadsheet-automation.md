@@ -34,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- add a row to a table.
-- list all worksheets.
-- list all rows in an excel table.
-- manage worksheets.
-- automation
-- microsoft excel
-- add table row
-- data management
-- list charts.
-- list table rows
-- create a new worksheet in the workbook.
-- create a new worksheet.
-- analysts working with excel workbooks for data processing.
-- business users automating excel-based reporting.
-- manage table rows.
-- data analysis
-- chart operations.
-- automate excel workbook operations.
-- Data Analyst
 - list rows in a table.
-- office
-- list worksheets
-- get range
-- read cell values from a specified range.
-- Business Analyst
-- spreadsheets
-- list charts
-- update cell values in a specified range.
-- add a new data row to an excel table.
-- get a cell range.
-- list all worksheets in the workbook.
-- microsoft 365
-- spreadsheet automation
+- business users automating excel-based reporting.
+- create a new worksheet.
 - update range
-- create worksheet
-- cell range operations.
-- list all charts in a worksheet.
+- analysts working with excel workbooks for data processing.
+- list all worksheets.
+- read cell values from a specified range.
+- list charts
+- add a row to a table.
+- automation
+- Data Analyst
+- Business Analyst
+- manage worksheets.
+- create a new worksheet in the workbook.
+- add a new data row to an excel table.
 - microsoft
+- get a cell range.
+- microsoft 365
+- data management
+- microsoft excel
+- list charts.
+- cell range operations.
+- list all worksheets in the workbook.
+- spreadsheet automation
+- update cell values in a specified range.
+- list all charts in a worksheet.
+- data analysis
+- office
+- create worksheet
+- list all rows in an excel table.
+- get range
+- list worksheets
+- add table row
+- manage table rows.
+- list table rows
+- spreadsheets
+- automate excel workbook operations.
+- chart operations.
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

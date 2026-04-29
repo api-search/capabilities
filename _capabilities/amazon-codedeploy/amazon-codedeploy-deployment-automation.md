@@ -11,43 +11,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- ci/cd
-- get deployment
-- manage codedeploy applications
-- list codedeploy applications
-- create a new deployment
-- create a deployment group for an application
-- Release Manager
-- get deployment instance
-- deployment
-- release management
-- list applications
-- coordinates application releases.
-- amazon
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- aws
-- list deployments for an application and deployment group
-- list instances in a deployment
-- list deployment groups
-- list deployment groups for an application
-- stop an in-progress deployment
-- automated application deployment to compute targets.
-- stop deployment
-- blue/green deployment
-- manages deployment infrastructure.
-- create a codedeploy application
-- devops
-- create and monitor deployments
-- managing software release processes and rollbacks.
-- create deployment
-- manage deployment groups
-- get deployment information for a target instance
 - create application
+- create deployment
+- create and monitor deployments
+- manages deployment infrastructure.
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- create a deployment group for an application
+- list deployment groups for an application
+- list applications
+- deployment
+- list codedeploy applications
 - create deployment group
-- list deployment instances
+- get deployment information for a target instance
+- create a codedeploy application
+- get deployment
+- get deployment instance
+- stop deployment
+- stop an in-progress deployment
 - list deployments
 - DevOps Engineer
+- aws
+- devops
+- Release Manager
+- coordinates application releases.
 - get details about a specific deployment
+- blue/green deployment
+- manage deployment groups
+- list instances in a deployment
+- create a new deployment
+- managing software release processes and rollbacks.
+- manage codedeploy applications
+- list deployment groups
+- list deployment instances
+- automated application deployment to compute targets.
+- ci/cd
+- list deployments for an application and deployment group
+- amazon
+- release management
 slug: amazon-codedeploy-deployment-automation
 source_filename: amazon-codedeploy-deployment-automation.yaml
 source_heading: Capability Spec

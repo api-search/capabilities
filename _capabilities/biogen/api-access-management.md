@@ -9,15 +9,15 @@ personas: []
 provider_name: Biogen
 provider_slug: biogen
 search_terms:
-- api key lifecycle and access management
-- developer integrating with biogen pharmaceutical services apis
-- healthcare
-- discover and manage access to biogen pharmaceutical apis
-- discovery of available biogen api services
-- neurology
-- biotechnology
 - life sciences
+- api key lifecycle and access management
+- neurology
+- healthcare
 - pharmaceuticals
+- discovery of available biogen api services
+- developer integrating with biogen pharmaceutical services apis
+- biotechnology
+- discover and manage access to biogen pharmaceutical apis
 slug: api-access-management
 source_filename: api-access-management.yaml
 source_heading: Capability Spec

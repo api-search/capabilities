@@ -10,10 +10,10 @@ provider_name: Arlula
 provider_slug: arlula
 search_terms:
 - geospatial
-- earth observation
-- remote sensing
 - satellites
 - imagery
+- earth observation
+- remote sensing
 slug: satellite-imagery-operations
 source_filename: satellite-imagery-operations.yaml
 source_heading: Capability Spec

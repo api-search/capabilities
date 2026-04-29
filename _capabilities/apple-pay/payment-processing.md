@@ -26,31 +26,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- validates merchant and obtains apple pay payment session
-- payments
-- register a domain for apple pay on the web
 - mobile payments
+- validates merchant and obtains apple pay payment session
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- merchant domain management for apple pay
+- apple pay merchant validation and payment session
+- validate merchant
+- E Commerce Developer
+- registering and managing merchant identity and domains for apple pay
+- Payment Integration Engineer
+- apple pay
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- engineer building payment processing infrastructure supporting multiple payment methods
+- developer integrating apple pay into a web or mobile checkout experience
 - digital wallet
 - checkout
-- Payment Integration Engineer
 - register domain
-- validate apple pay merchant
-- validate merchant
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- registers a merchant domain to accept apple pay on the web payments
-- contactless payments
-- engineer building payment processing infrastructure supporting multiple payment methods
-- merchant domain management for apple pay
 - register apple pay domain
-- developer integrating apple pay into a web or mobile checkout experience
-- e-commerce
-- apple pay
-- apple
-- apple pay merchant validation and payment session
-- registering and managing merchant identity and domains for apple pay
-- E Commerce Developer
 - initiating and completing apple pay payment authorizations
-- validates merchant identity with apple and returns a payment session object for completing checkout
+- contactless payments
+- payments
+- e-commerce
+- register a domain for apple pay on the web
+- registers a merchant domain to accept apple pay on the web payments
+- validate apple pay merchant
+- apple
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

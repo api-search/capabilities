@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- delete key
-- secrets management
-- get certificate
-- certificates
-- get a certificate.
+- delete certificate
+- create a new cryptographic key.
 - security
+- get secret
+- list secrets.
+- encrypt
+- get key details.
+- key management
+- key management.
+- verify a signature.
 - list secrets
 - decrypt
-- get a secret value.
-- encrypt
-- cryptography
-- get a secret.
-- create a key.
-- delete a certificate.
-- decrypt data using a key.
-- cloud security
-- encrypt data using a key.
-- key vault
-- get key details.
-- delete secret
-- sign
-- list certificates.
-- verify a signature.
-- sign a digest using a key.
-- list certificates in the vault.
-- individual key management.
-- list certificates
-- verify
-- list keys.
-- delete certificate
-- create key
-- set secret
-- get secret
-- key management
-- list cryptographic keys in the vault.
-- key management.
-- set a secret.
-- secret management.
-- azure
-- delete a secret.
-- list secrets.
 - list keys
-- delete a key.
-- individual secret management.
-- get key
-- certificate management.
-- create certificate
 - get a key.
-- create a new cryptographic key.
-- set a secret value.
-- create a new certificate.
+- delete a secret.
+- list cryptographic keys in the vault.
+- sign a digest using a key.
+- create certificate
 - list secrets in the vault.
+- create a new certificate.
+- cryptography
+- key vault
+- list certificates in the vault.
+- set a secret value.
+- get certificate
+- set a secret.
+- certificate management.
+- secret management.
+- set secret
+- get key
+- get a secret.
+- list keys.
+- individual key management.
+- delete secret
+- decrypt data using a key.
+- delete a certificate.
+- get a certificate.
+- delete a key.
+- list certificates
+- cloud security
+- create key
+- sign
+- secrets management
+- azure
+- create a key.
+- individual secret management.
+- encrypt data using a key.
+- list certificates.
+- verify
+- delete key
+- certificates
+- get a secret value.
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

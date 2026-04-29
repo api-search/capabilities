@@ -20,23 +20,23 @@ provider_slug: hubspot
 search_terms:
 - oauth token metadata
 - sales
-- commerce
-- developer
 - automation
-- oauth
 - content
-- crm
-- get access token metadata
 - hubspot
-- retrieve metadata for an oauth access token
-- operations
-- customer service
 - analytics
-- marketing
+- retrieve metadata for an oauth access token
+- get access token metadata
+- crm
+- oauth
 - platform
-- marketing automation
 - get token metadata
+- operations
 - email marketing
+- marketing
+- customer service
+- marketing automation
+- developer
+- commerce
 slug: developer-platform
 source_filename: developer-platform.yaml
 source_heading: Capability Spec

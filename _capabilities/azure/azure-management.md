@@ -14,28 +14,28 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: azure
 search_terms:
-- storage
+- list resource resources
+- list subscriptions
+- list
+- list all resources
+- infrastructure
 - networking
+- cloud computing
 - resource management
 - databases
-- platform as a service
-- cloud
-- list providers
-- azure resource management
-- list resources
-- list resource resources
-- list resource groups
-- list subscription resources
-- list all resources
-- list subscriptions
-- list provider resources
 - list resourcegroup resources
+- list subscription resources
+- list resources
+- cloud
+- storage
+- azure resource management
+- platform as a service
+- list resource groups
+- list provider resources
+- list providers
 - machine learning
-- management
-- cloud computing
-- list
-- infrastructure
 - azure
+- management
 slug: azure-management
 source_filename: azure-management.yaml
 source_heading: Capability Spec

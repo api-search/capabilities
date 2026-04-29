@@ -9,22 +9,22 @@ personas: []
 provider_name: Amazon Web Services (AWS)
 provider_slug: amazon-web-services-aws
 search_terms:
-- storage
-- networking
-- paas
+- iaas
 - platform as a service
-- analytics
 - security
-- artificial intelligence
-- serverless
+- analytics
 - containers
 - databases
-- devops
-- iaas
-- computing
 - machine learning
-- cloud computing
+- computing
+- storage
 - infrastructure
+- serverless
+- devops
+- networking
+- artificial intelligence
+- cloud computing
+- paas
 slug: amazon-web-services-aws-capability
 source_filename: amazon-web-services-aws-capability.yaml
 source_heading: Capability Spec

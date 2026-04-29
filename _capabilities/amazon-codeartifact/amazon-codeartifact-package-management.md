@@ -10,60 +10,60 @@ personas: []
 provider_name: Amazon CodeArtifact
 provider_slug: amazon-codeartifact
 search_terms:
-- list repositories in a domain
-- get details about a codeartifact domain
-- copy package versions
-- publish a new package version to a repository
-- manage packages and package versions
-- delete specific package versions from a repository
-- list packages
-- list domains
-- get authorization token
 - publish package version
-- publishes and consumes packages from codeartifact repositories.
-- connect a repository to a public package registry like npmjs or pypi
-- describe repository
-- governance and security of external package dependencies and internal packages.
-- package management
-- manage codeartifact domains
-- describe package
-- get authorization tokens for package managers
-- get details about a package in a repository
-- create repository
-- delete package versions
-- amazon
-- copy package versions between repositories in the same domain
-- aws
-- list packages in a repository
-- create a new codeartifact domain
-- get the package-format-specific endpoint url for a repository
-- generate a temporary authorization token for accessing codeartifact repositories
-- npm
-- DevOps Engineer
-- manage codeartifact repositories
-- storage and retrieval of software artifacts and their metadata.
-- devops
-- nuget
-- unified workflow for managing artifact repositories, packages, and software supply chain governance.
-- Software Developer
-- managing software package lifecycle including publishing, versioning, and deprecation.
-- create a new codeartifact repository within a domain
-- list versions of a package in a repository
-- associate external connection
-- list package versions
-- artifact repository
-- sets up domains, repositories, and governance controls across teams.
-- create domain
-- get details about a codeartifact repository
-- describe domain
-- list repositories
 - maven
-- Platform Engineer
-- pypi
-- get repository endpoint
+- list versions of a package in a repository
+- create repository
+- create domain
+- generate a temporary authorization token for accessing codeartifact repositories
+- describe package
+- delete package versions
+- copy package versions between repositories in the same domain
+- list domains
+- connect a repository to a public package registry like npmjs or pypi
+- manage packages and package versions
+- manage codeartifact domains
+- associate external connection
+- nuget
+- get authorization token
+- get authorization tokens for package managers
+- describe repository
+- DevOps Engineer
+- aws
+- devops
+- storage and retrieval of software artifacts and their metadata.
+- list repositories
+- managing software package lifecycle including publishing, versioning, and deprecation.
 - list all codeartifact domains in the account
+- get the package-format-specific endpoint url for a repository
+- copy package versions
+- npm
+- unified workflow for managing artifact repositories, packages, and software supply chain governance.
+- pypi
+- manage codeartifact repositories
+- list repositories in a domain
+- package management
+- list packages
+- list package versions
+- create a new codeartifact domain
+- Software Developer
+- describe domain
+- publish a new package version to a repository
+- artifact repository
+- Platform Engineer
+- get details about a codeartifact repository
 - manages repository infrastructure, external connections, and domain policies.
+- list packages in a repository
+- create a new codeartifact repository within a domain
+- get details about a codeartifact domain
+- governance and security of external package dependencies and internal packages.
+- amazon
+- get details about a package in a repository
+- get repository endpoint
+- publishes and consumes packages from codeartifact repositories.
+- sets up domains, repositories, and governance controls across teams.
 - software supply chain
+- delete specific package versions from a repository
 slug: amazon-codeartifact-package-management
 source_filename: amazon-codeartifact-package-management.yaml
 source_heading: Capability Spec

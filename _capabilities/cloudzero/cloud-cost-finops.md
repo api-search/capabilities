@@ -9,13 +9,13 @@ personas: []
 provider_name: CloudZero
 provider_slug: cloudzero
 search_terms:
-- cost optimization
-- unit economics
+- cloud cost management
+- budgets
+- finops
 - telemetry
 - cost allocation
-- cloud cost management
-- finops
-- budgets
+- unit economics
+- cost optimization
 slug: cloud-cost-finops
 source_filename: cloud-cost-finops.yaml
 source_heading: Capability Spec

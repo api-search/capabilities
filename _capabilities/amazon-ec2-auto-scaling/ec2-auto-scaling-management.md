@@ -50,47 +50,47 @@ personas: []
 provider_name: Amazon EC2 Auto Scaling
 provider_slug: amazon-ec2-auto-scaling
 search_terms:
+- post_ attach traffic sources
+- get_ attach load balancers
+- get_ batch delete scheduled action
 - amazon ec2 auto scaling get_ attach instances
-- GET_AttachTrafficSources
-- POST_AttachTrafficSources
+- amazon ec2 auto scaling post_ attach load balancer target groups
+- post_ attach instances
+- compute
+- amazon web services
 - get_ attach traffic sources
-- auto scaling management business domain.
-- amazon ec2 auto scaling post_ attach instances
+- POST_AttachLoadBalancers
+- ec2
+- POST_AttachTrafficSources
+- get_ attach load balancer target groups
+- amazon ec2 auto scaling get_ batch delete scheduled action
+- amazon ec2 auto scaling post_ attach traffic sources
+- amazon ec2 auto scaling post_ attach load balancers
+- amazon ec2 auto scaling
+- engineers managing ec2 auto scaling fleets.
+- aws
+- post_ attach load balancers
+- GET_AttachTrafficSources
+- high availability
+- POST_AttachLoadBalancerTargetGroups
+- amazon ec2 auto scaling get_ attach traffic sources
 - GET_AttachLoadBalancers
 - get_ attach instances
-- ec2
-- amazon ec2 auto scaling get_ batch delete scheduled action
-- amazon ec2 auto scaling post_ attach load balancer target groups
-- POST_AttachLoadBalancers
-- GET_AttachInstances
-- get_ attach load balancer target groups
-- post_ attach load balancers
-- amazon web services
-- POST_BatchDeleteScheduledAction
-- post_ attach instances
-- post_ attach load balancer target groups
-- POST_AttachLoadBalancerTargetGroups
-- get_ batch delete scheduled action
-- aws
+- GET_AttachLoadBalancerTargetGroups
+- amazon ec2 auto scaling post_ attach instances
+- amazon ec2 auto scaling get_ attach load balancer target groups
 - POST_AttachInstances
 - GET_BatchDeleteScheduledAction
-- amazon ec2 auto scaling post_ attach traffic sources
-- scaling
-- amazon ec2 auto scaling get_ attach traffic sources
-- amazon ec2 auto scaling get_ attach load balancer target groups
-- high availability
-- post_ batch delete scheduled action
-- auto scaling
-- amazon ec2 auto scaling post_ attach load balancers
 - amazon ec2 auto scaling post_ batch delete scheduled action
-- get_ attach load balancers
-- post_ attach traffic sources
-- compute
-- workflow for auto scaling management.
-- engineers managing ec2 auto scaling fleets.
-- amazon ec2 auto scaling
+- scaling
 - amazon ec2 auto scaling get_ attach load balancers
-- GET_AttachLoadBalancerTargetGroups
+- auto scaling management business domain.
+- post_ attach load balancer target groups
+- auto scaling
+- POST_BatchDeleteScheduledAction
+- GET_AttachInstances
+- post_ batch delete scheduled action
+- workflow for auto scaling management.
 slug: ec2-auto-scaling-management
 source_filename: ec2-auto-scaling-management.yaml
 source_heading: Capability Spec

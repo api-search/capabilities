@@ -10,35 +10,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- treasury
-- payments
-- institutional account management and cash positioning
-- institutional banking
-- get payment status
-- Treasury Analyst
-- wire, ach, swift, and chips payment execution
-- banking
-- wire transfers
-- get current and available balances for a bny mellon account
-- list bny accounts
-- list transactions for a bny mellon account
-- initiate payment
-- analyst executing treasury transactions and reporting
-- bny mellon
-- get the status and details of a bny mellon payment
-- Institutional Client
-- internal funds transfers and liquidity management
-- list transactions
-- list bny mellon treasury accounts for the authenticated client
-- institutional investor or fund manager using bny custody and treasury services
-- executive managing corporate liquidity and treasury operations
-- get account balances
-- asset servicing
 - initiate a payment (wire, ach, swift, chips) through bny mellon
 - Corporate Treasurer
-- initiate funds transfer
-- initiate a funds transfer between bny mellon accounts
+- get current and available balances for a bny mellon account
+- list bny mellon treasury accounts for the authenticated client
+- asset servicing
+- treasury
+- executive managing corporate liquidity and treasury operations
+- institutional account management and cash positioning
+- banking
+- get payment status
+- Treasury Analyst
+- institutional investor or fund manager using bny custody and treasury services
+- list transactions for a bny mellon account
+- list bny accounts
 - institutional treasury operations including accounts, payments, and funds transfers
+- analyst executing treasury transactions and reporting
+- wire, ach, swift, and chips payment execution
+- bny mellon
+- institutional banking
+- list transactions
+- initiate payment
+- payments
+- Institutional Client
+- initiate funds transfer
+- wire transfers
+- internal funds transfers and liquidity management
+- initiate a funds transfer between bny mellon accounts
+- get the status and details of a bny mellon payment
+- get account balances
 slug: treasury-operations
 source_filename: treasury-operations.yaml
 source_heading: Capability Spec

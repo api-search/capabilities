@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- edge network data ingestion
-- server-side event forwarding properties
-- create secret
-- list event forwarding properties
-- send interactive event
-- list secrets
-- edge network
-- create a secret for an event forwarding destination
-- create event forwarding rule
-- create a new event forwarding property
-- end a media tracking session
-- secrets for event forwarding destinations
-- data collection
-- list event forwarding rules
-- send batch events
-- send batch events to edge network
-- end media session
-- list secrets for a property
-- list secrets for authenticating with forwarding destinations
-- list server-side event forwarding properties
-- send batch events to adobe edge network
 - create event forwarding property
-- start a media tracking session
-- list event forwarding rules for a property
-- tag management
-- send an interactive event to edge network
 - adobe launch
+- send batch events
+- create secret
+- send batch events to edge network
 - start media session
-- marketing technology
-- create a new event forwarding rule
-- send an interactive event to adobe edge network
 - event forwarding
+- list secrets for a property
+- list secrets
+- data collection
+- create event forwarding rule
+- start a media tracking session
+- edge network
+- list event forwarding properties
+- edge network data ingestion
+- list secrets for authenticating with forwarding destinations
+- server-side event forwarding properties
+- list event forwarding rules for a property
+- create a secret for an event forwarding destination
+- list event forwarding rules
+- end a media tracking session
+- marketing technology
+- end media session
+- send an interactive event to adobe edge network
+- send interactive event
+- create a new event forwarding rule
+- create a new event forwarding property
+- send batch events to adobe edge network
 - event forwarding rules
+- list server-side event forwarding properties
+- send an interactive event to edge network
+- tag management
+- secrets for event forwarding destinations
 slug: data-collection-pipeline
 source_filename: data-collection-pipeline.yaml
 source_heading: Capability Spec

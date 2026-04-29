@@ -67,50 +67,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- financial management
-- list expense reports
-- budget definitions and data
 - finance
-- accounting
-- list ar items
-- list forecasts
-- individual approval operations
-- retrieve pending finance approval requests.
-- list journal entries
-- forecast data and projections
+- general ledger journal entries
+- finance approval requests
+- list expense reports
+- human capital management.
+- forecasting
 - retrieve budget definitions and data.
+- enterprise software
+- retrieve accounts payable vouchers.
+- list analytics reports
+- expense reports
+- list ar items
+- campus solutions
+- budget definitions and data
+- erp
+- crm
+- retrieve pending finance approval requests.
+- financial and supply chain management.
+- campus solutions.
+- process approval
+- accounting
+- forecast data and projections
+- general ledger
+- supply chain management
+- list pending approvals
+- accounts receivable items
+- accounts payable vouchers
+- hcm
+- financial management
+- peopletools platform services.
+- retrieve general ledger journal entries.
+- list budgets
+- peoplesoft
+- retrieve performance analytics reports.
 - performance analytics reports
 - retrieve accounts receivable items.
-- finance approval requests
-- campus solutions
-- erp
-- enterprise software
-- crm
-- general ledger
-- retrieve forecast data and projections.
-- human capital management.
-- process approval
-- accounts receivable items
-- supply chain management
-- retrieve general ledger journal entries.
 - retrieve expense reports.
-- approve, deny, or push back a finance approval request.
-- hcm
-- campus solutions.
-- budgeting
-- peoplesoft
-- retrieve accounts payable vouchers.
-- forecasting
-- expense reports
-- retrieve performance analytics reports.
-- list analytics reports
-- financial and supply chain management.
-- list pending approvals
-- peopletools platform services.
-- general ledger journal entries
-- accounts payable vouchers
-- list budgets
+- list journal entries
 - list vouchers
+- retrieve forecast data and projections.
+- budgeting
+- approve, deny, or push back a finance approval request.
+- list forecasts
+- individual approval operations
 slug: finance-and-accounting
 source_filename: finance-and-accounting.yaml
 source_heading: Capability Spec

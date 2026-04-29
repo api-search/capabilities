@@ -96,49 +96,49 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list roles
-- list grants
-- list accounts
-- create a new user
-- snowflake
-- delete a user
-- user management
-- create user
-- security
-- sql
-- revoke privilege
-- create a new role
-- create database role
-- fetch user
-- data sharing
-- list all users
-- revoke a privilege from a role
-- role management
-- create a user
-- list all roles
 - administration
-- fetch user details
-- network policy management
-- grant management
-- create a database role
-- list users
-- list database roles
-- create a network policy
-- grant a privilege to a role
-- create a role
-- access control
-- list managed accounts
-- create network policy
-- database
-- delete user
-- list grants to a role
-- list network policies
-- data lakes
-- data warehousing
-- create role
-- grant a privilege
-- grant privilege
+- security
+- list roles
 - account management
+- sql
+- create role
+- list grants to a role
+- create a user
+- data lakes
+- create a network policy
+- fetch user
+- list database roles
+- list users
+- grant a privilege
+- create a new role
+- data warehousing
+- create database role
+- user management
+- create a database role
+- delete user
+- data sharing
+- create user
+- list all roles
+- create a role
+- list network policies
+- delete a user
+- list all users
+- create network policy
+- list managed accounts
+- database
+- grant a privilege to a role
+- list grants
+- access control
+- create a new user
+- fetch user details
+- role management
+- snowflake
+- grant privilege
+- revoke a privilege from a role
+- list accounts
+- revoke privilege
+- grant management
+- network policy management
 slug: security-and-access
 source_filename: security-and-access.yaml
 source_heading: Capability Spec

@@ -9,12 +9,12 @@ personas: []
 provider_name: Apache HTTP Server
 provider_slug: apache-httpd
 search_terms:
-- open source
-- web server
-- apache
-- proxy
 - load balancer
+- web server
 - reverse proxy
+- proxy
+- apache
+- open source
 slug: httpd-server-monitoring
 source_filename: httpd-server-monitoring.yaml
 source_heading: Capability Spec
