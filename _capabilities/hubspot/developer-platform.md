@@ -18,24 +18,24 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- automation
-- marketing
-- developer
-- operations
 - retrieve metadata for an oauth access token
-- content
-- email marketing
-- get access token metadata
-- crm
-- platform
+- developer
+- analytics
 - marketing automation
-- commerce
+- platform
+- marketing
 - customer service
 - sales
+- content
+- operations
+- get token metadata
+- crm
+- automation
 - oauth token metadata
 - hubspot
-- get token metadata
-- analytics
+- email marketing
+- get access token metadata
+- commerce
 - oauth
 slug: developer-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Developer Platform\"\n  description: \"Unified workflow for developers to manage custom workflow actions, feature flags, CMS source code, and OAuth authentication. Combines automation, deployment, and auth APIs for HubSpot platform development.\"\n  tags:\n    - HubSpot\n    - Developer\n    - Platform\n    - Automation\n    - OAuth\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n      HUBSPOT_API_KEY: HUBSPOT_API_KEY\n\ncapability:\n  consumes:\n    - import: custom-workflow-actions\n      location: ./shared/custom-workflow-actions-api.yaml\n    - import: feature-flags\n      location: ./shared/crm-feature-flags-api.yaml\n    - import: source-code\n      location: ./shared/source-code-api.yaml\n    - import: oauth\n      location: ./shared/oauth-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace:\

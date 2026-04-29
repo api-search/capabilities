@@ -76,112 +76,112 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- get an app installation
-- create an organization webhook
-- deleteTeam
-- apps
-- create team
-- unsuspend installation
-- member management
-- listOrganizationRepositories
-- authenticated app
-- get org package
-- list org repos
-- list team repositories
-- getAnOrganization
-- app installations
-- organization packages
-- individual team operations
-- delete a team
-- get a team
-- get team
-- organization webhooks
-- get an app by slug
-- teams
-- list app installations
-- list installations
-- list webhooks
-- list installation repos
-- get an installation
-- software development
-- t1
-- createAnInstallationAccessTokenForAnApp
-- delete team
 - list org package versions
-- github
-- suspend installation
-- get app
-- platform administration
-- code
-- update team
-- source control
-- create a team
-- pipelines
-- get organization
-- platform
-- createTeam
-- getAnInstallationForTheAuthenticatedApp
-- listOrganizationMembers
-- list team repos
-- listOrganizationWebhooks
-- add or update team repository permissions
-- add team member
-- get installation
-- get the authenticated app
-- remove member
-- delete org package
-- list teams
-- organizations
-- installation access tokens
-- create org repo
-- list organization packages
-- updateTeam
-- get app webhook configuration
-- list organization repositories
-- list organization webhooks
-- delete an organization package
-- updateAnOrganization
-- get webhook config
-- list org packages
-- update a team
-- add or update team membership
-- list repositories
-- set organization membership
-- create webhook
-- list organization members
-- create an access token
-- update an organization
-- update webhook config
-- organization repositories
-- create installation token
-- list team members
-- get an organization package
-- get an organization
-- listPackagesForAnOrganization
-- create an organization repository
-- listTeams
-- remove an organization member
 - suspend an app installation
-- getTeamByName
-- delete an installation
-- set membership
-- packages
-- unsuspend an app installation
-- update organization
-- listInstallationsForTheAuthenticatedApp
-- individual installation
-- add team repo
-- update app webhook configuration
-- get authenticated app
-- list organization package versions
-- deleteAnInstallationForTheAuthenticatedApp
-- list members
-- list repositories accessible to the installation
-- organization management
-- team management
+- list org repos
 - list packages
-- create an installation access token
+- platform administration
+- get an app by slug
+- createAnInstallationAccessTokenForAnApp
+- update organization
+- get org package
+- listOrganizationWebhooks
+- list members
+- apps
+- get an organization package
+- create org repo
+- list team repositories
+- list organization members
+- installation access tokens
+- list team repos
+- source control
+- create an organization webhook
+- get app
+- unsuspend an app installation
+- list organization package versions
+- pipelines
+- add team repo
+- list webhooks
+- create an organization repository
+- team management
+- create an access token
+- github
+- list teams
+- get team
+- individual installation
+- set membership
+- create a team
+- delete org package
+- updateTeam
+- listOrganizationRepositories
+- get app webhook configuration
+- platform
+- code
+- remove member
+- list installations
+- organization packages
+- app installations
+- list repositories accessible to the installation
+- get the authenticated app
+- get organization
+- getAnInstallationForTheAuthenticatedApp
+- organization management
+- deleteTeam
+- update team
+- get an installation
+- list app installations
+- create webhook
 - getTheAuthenticatedApp
+- listTeams
+- teams
+- updateAnOrganization
+- create team
+- individual team operations
+- create an installation access token
+- software development
+- create installation token
+- organizations
+- list organization webhooks
+- get webhook config
+- member management
+- update webhook config
+- get authenticated app
+- unsuspend installation
+- createTeam
+- delete an installation
+- getTeamByName
+- list repositories
+- deleteAnInstallationForTheAuthenticatedApp
+- organization repositories
+- list organization repositories
+- suspend installation
+- update an organization
+- list organization packages
+- organization webhooks
+- t1
+- delete an organization package
+- add team member
+- delete a team
+- list team members
+- listInstallationsForTheAuthenticatedApp
+- list org packages
+- authenticated app
+- delete team
+- remove an organization member
+- listPackagesForAnOrganization
+- set organization membership
+- get an organization
+- get an app installation
+- listOrganizationMembers
+- packages
+- get a team
+- list installation repos
+- add or update team membership
+- update a team
+- get installation
+- getAnOrganization
+- add or update team repository permissions
+- update app webhook configuration
 slug: platform-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Platform Administration\"\n  description: \"Unified workflow for platform administration combining GitHub Apps, organizations, teams, and packages. Used by platform administrators for managing app integrations, organization governance, team access control, and package registry operations.\"\n  tags:\n    - GitHub\n    - Platform Administration\n    - Apps\n    - Organizations\n    - Teams\n    - Packages\n  personas:\n    - platform administrators\n    - IT administrators\n    - github org owners\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-apps\n      location: \"./shared/apps.yaml\"\n    - import: github-orgs\n      location: \"./shared/orgs.yaml\"\n    - import: github-packages\n      location: \"./shared/packages.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace:\
   \ github-platform-admin-api\n      description: \"Unified REST API for platform administration combining apps, organizations, teams, and packages.\"\n      resources:\n        - path: /v1/app\n          name: app\n          description: \"Authenticated app\"\n          operations:\n            - method: GET\n              name: getTheAuthenticatedApp\n              description: \"Get the authenticated app\"\n              call: \"github-apps.getTheAuthenticatedApp\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/app/installations\n          name: installations\n          description: \"App installations\"\n          operations:\n            - method: GET\n              name: listInstallationsForTheAuthenticatedApp\n              description: \"List installations\"\n              call: \"github-apps.listInstallationsForTheAuthenticatedApp\"\n              outputParameters:\n                - type: object\n       \

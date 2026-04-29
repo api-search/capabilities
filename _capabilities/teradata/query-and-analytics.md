@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- available systems.
-- list query systems
-- list cross-system query summaries from querygrid.
-- get the status and results of a submitted query.
-- database
-- system and fabric configuration management.
-- data management
-- create session
 - integrates applications with teradata via rest apis.
-- sql query execution and session management.
-- cloud
 - create a query session.
-- execute sql queries and analytics.
-- Data Analyst
-- get query status
-- sql queries.
-- executes queries and analyzes data across vantage systems.
-- machine learning
-- execute a sql query against teradata vantage.
-- execute query
-- execute a sql query.
-- list querygrid queries
-- Data Engineer
-- query
-- data warehousing
-- sql
-- teradata
-- analytics
-- Platform Administrator
-- list available vantage systems.
-- Application Developer
-- enterprise
-- manages data fabric infrastructure and cross-system connectivity.
-- query sessions.
-- health monitoring and issue detection.
-- manage querygrid data fabric infrastructure.
-- administers querygrid systems, nodes, and software.
 - create a new query session on a vantage system.
+- Data Analyst
+- analytics
+- machine learning
+- health monitoring and issue detection.
+- manages data fabric infrastructure and cross-system connectivity.
+- available systems.
+- sql queries.
+- execute query
+- query
+- get query status
+- sql
+- cloud
+- list cross-system query summaries from querygrid.
+- data management
+- Data Engineer
+- list query systems
+- data warehousing
+- database
+- query sessions.
+- system and fabric configuration management.
+- sql query execution and session management.
+- Platform Administrator
+- get the status and results of a submitted query.
+- enterprise
+- list querygrid queries
+- create session
+- manage querygrid data fabric infrastructure.
+- Application Developer
+- execute sql queries and analytics.
+- execute a sql query.
+- administers querygrid systems, nodes, and software.
+- executes queries and analyzes data across vantage systems.
+- list available vantage systems.
 - list available vantage systems for query execution.
+- execute a sql query against teradata vantage.
+- teradata
 slug: query-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Teradata Query and Analytics\n  description: >-\n    Workflow capability for executing SQL queries and analytics against Teradata\n    Vantage systems. Combines Query Service for SQL execution with QueryGrid for\n    cross-system query monitoring. Used by data analysts and application\n    developers.\n  tags:\n    - Teradata\n    - Query\n    - Analytics\n    - SQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VANTAGE_USERNAME: VANTAGE_USERNAME\n      VANTAGE_PASSWORD: VANTAGE_PASSWORD\n      QUERYGRID_USERNAME: QUERYGRID_USERNAME\n      QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n\ncapability:\n  consumes:\n    - import: query-service\n      location: ./shared/query-service.yaml\n    - import: querygrid-manager\n      location: ./shared/querygrid-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: query-analytics-api\n      description: \"Unified\
   \ REST API for Teradata query and analytics.\"\n      resources:\n        - path: /v1/systems\n          name: systems\n          description: \"Available systems.\"\n          operations:\n            - method: GET\n              name: list-query-systems\n              description: \"List available Vantage systems.\"\n              call: \"query-service.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions\n          name: sessions\n          description: \"Query sessions.\"\n          operations:\n            - method: POST\n              name: create-session\n              description: \"Create a query session.\"\n              call: \"query-service.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: \"SQL queries.\"\n          operations:\n           \

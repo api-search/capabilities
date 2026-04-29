@@ -19,34 +19,34 @@ provider_name: Apidog
 provider_slug: apidog
 search_terms:
 - import an openapi/swagger specification into an apidog project for design-first development.
-- import openapi specification into apidog project.
+- collaboration
+- export api specifications to standard formats.
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- unified workflow for managing api specifications lifecycle.
 - developer building and managing apis using apidog's design-first platform.
+- documentation
+- platform
+- import openapi
+- api design
+- export openapi
+- design-first
 - import openapi spec
 - export
-- design-first
-- api testing
-- export api specifications to standard formats.
-- api design
 - mocking
-- import
-- platform
-- unified workflow for managing api specifications lifecycle.
-- documentation
-- collaboration
 - import a postman collection into apidog for converting to openapi-based workflows.
-- export openapi spec
-- API Developer
-- import openapi
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- import api specifications from various formats.
-- export openapi
-- api lifecycle
-- Platform Engineer
-- managing the complete lifecycle of api specifications from design to deployment.
-- engineer automating api specification workflows via ci/cd integration.
-- import postman collection
-- export openapi specification from apidog project.
+- import openapi specification into apidog project.
+- api testing
+- import
 - apidog
+- import api specifications from various formats.
+- Platform Engineer
+- import postman collection
+- engineer automating api specification workflows via ci/cd integration.
+- managing the complete lifecycle of api specifications from design to deployment.
+- export openapi specification from apidog project.
+- API Developer
+- export openapi spec
+- api lifecycle
 slug: api-lifecycle-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apidog API Lifecycle Management\"\n  description: \"Unified workflow for managing API specifications lifecycle with Apidog - importing from various sources, exporting to standard formats, and maintaining API definitions programmatically.\"\n  tags:\n    - Apidog\n    - API Lifecycle\n    - API Design\n    - Import\n    - Export\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIDOG_BEARER_TOKEN: APIDOG_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: apidog\n      location: ./shared/apidog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apidog-lifecycle-api\n      description: \"Unified REST API for Apidog API lifecycle management.\"\n      resources:\n        - path: /v1/specs/import\n          name: spec-import\n          description: \"Import API specifications from various formats.\"\n          operations:\n            - method: POST\n  \
   \            name: import-openapi\n              description: \"Import OpenAPI specification into Apidog project.\"\n              call: \"apidog.import-openapi\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/specs/export\n          name: spec-export\n          description: \"Export API specifications to standard formats.\"\n          operations:\n            - method: POST\n              name: export-openapi\n              description: \"Export OpenAPI specification from Apidog project.\"\n              call: \"apidog.export-openapi\"\n              with:\n                projectId: \"rest.projectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apidog-lifecycle-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\

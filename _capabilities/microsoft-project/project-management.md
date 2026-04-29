@@ -46,75 +46,75 @@ personas: []
 provider_name: Microsoft Project
 provider_slug: microsoft-project
 search_terms:
-- resource management
-- check out project
-- get details of a specific project by id
+- task management for a project
+- list all timesheet periods
 - list tasks
+- list all enterprise custom field definitions
+- get project details
+- check out a project for editing
 - manages enterprise resource pools, capacity planning, and assignment optimization.
-- list phases
-- list enterprise calendars
-- list projects
+- create project
+- delete a project
+- publish a project draft to make changes visible
+- timesheet management and approval
+- create a new project with name and description
+- microsoft project
+- timesheet management
+- list all resource assignments in a project
+- custom fields, lookup tables, and event handlers
+- list all microsoft project online projects
+- project lifecycle management
 - list all projects
-- timesheets
-- create a new project
-- list calendars
-- enterprise resource management
-- budgeting
-- list all assignments in a project
-- list all enterprise calendars
-- PMO
+- check out project
 - list custom fields
+- unified project management workflow for managing projects, tasks, resources, assignments, timesheets, and workflows.
+- Project Manager
+- program management office managing portfolios, governance workflows, and enterprise configurations.
+- create a new task in a project draft
+- scheduling
+- list enterprise resources
+- task creation, dependencies, and scheduling
+- create draft task
+- list phases
+- list all workflow stages
+- list enterprise calendars
+- plans, executes, and tracks projects with task scheduling, resource assignments, and progress reporting.
+- enterprise resources and task assignments
+- list stages
+- task management
+- publish project
+- microsoft
+- gantt charts
+- enterprise resource management
+- assignment management for a project
+- project creation, checkout, publishing, and workflow governance
+- list all enterprise calendars
+- single project operations
+- list calendars
+- list all workflow phases
+- create a new enterprise resource
+- PMO
+- create a new project
+- list all tasks in a project
+- list all assignments in a project
+- get details of a specific project by id
+- get task
+- delete a project by id
+- list resources
 - list assignments
 - get a specific task from a project
-- create a new enterprise resource
-- publish a project draft to make changes visible
-- get task
-- Project Manager
-- timesheet management
-- project creation, checkout, publishing, and workflow governance
-- microsoft
-- list resources
-- list all tasks in a project
-- delete a project by id
-- microsoft project
-- create enterprise resource
-- list all timesheet periods
-- list all resource assignments in a project
-- list all workflow phases
-- delete a project
-- publish project
-- plans, executes, and tracks projects with task scheduling, resource assignments, and progress reporting.
-- program management office managing portfolios, governance workflows, and enterprise configurations.
-- gantt charts
-- calendar management
-- project lifecycle management
-- list all enterprise resources across projects
-- assignment management for a project
-- enterprise resources and task assignments
-- task management
-- get project details
-- list timesheet periods
+- list projects
 - delete project
-- task management for a project
-- list enterprise resources
-- list all microsoft project online projects
-- list all enterprise custom field definitions
-- timesheet management and approval
+- resource management
+- create enterprise resource
 - project management
-- scheduling
-- get project
-- check out a project for editing
-- unified project management workflow for managing projects, tasks, resources, assignments, timesheets, and workflows.
-- task creation, dependencies, and scheduling
-- custom fields, lookup tables, and event handlers
+- list all enterprise resources across projects
+- list timesheet periods
+- timesheets
+- calendar management
+- budgeting
 - portfolio management
-- create a new project with name and description
-- create project
-- create a new task in a project draft
-- list all workflow stages
-- single project operations
-- list stages
-- create draft task
+- get project
 slug: project-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Project Management\"\n  description: \"Unified project management workflow combining the Microsoft Project Online REST API for managing projects, tasks, resources, assignments, timesheets, and workflows. Used by project managers, resource managers, and PMO teams.\"\n  tags:\n    - Microsoft Project\n    - Project Management\n    - Resource Management\n    - Task Management\n    - Timesheets\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SHAREPOINT_ACCESS_TOKEN: SHAREPOINT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: project-rest\n      location: ./shared/project-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: project-management-api\n      description: \"Unified REST API for Microsoft Project management workflows.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project\
   \ lifecycle management\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List all projects\"\n              call: \"project-rest.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: \"Create a new project\"\n              call: \"project-rest.create-project\"\n              with:\n                name: \"rest.name\"\n                description: \"rest.description\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{projectId}\n          name: project-detail\n          description: \"Single project operations\"\n          operations:\n            - method: GET\n              name: get-project\n              description: \"Get project details\"\n              call: \"project-rest.get-project\"\

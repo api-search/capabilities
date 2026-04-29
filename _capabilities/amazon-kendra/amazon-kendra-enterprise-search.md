@@ -34,48 +34,48 @@ personas: []
 provider_name: Amazon Kendra
 provider_slug: amazon-kendra
 search_terms:
-- natural language
-- IT Administrator
-- intelligent search
-- connect data source
-- enterprise search
-- enterprise knowledge organization and discovery
-- add documents to an amazon kendra search index
 - unified workflow for search index management, data connectivity, and query operations
-- knowledge management
-- search index
-- list all amazon kendra search indexes
-- search
-- configures and maintains data source connectors and index settings
-- create index
-- list data sources
-- integrates kendra search into applications and rag pipelines
-- create data source
-- aws
-- index documents
-- intelligent search and information retrieval
-- search an index with natural language
-- Developer
-- manages enterprise knowledge bases and search indexes
-- machine learning
-- create a data source connector
-- add documents to an index
-- connect a data repository (s3, sharepoint, salesforce, etc.) to a kendra index
+- enterprise search
+- amazon kendra
 - data source connector management
-- create a new search index
-- list all search indexes
-- search an amazon kendra index using natural language query
-- search index management
-- Knowledge Manager
+- machine learning
 - list data source connectors
-- document management
 - create search index
+- list all data source connectors for a kendra index
+- create index
+- list indexes
+- intelligent search and information retrieval
+- search index
+- document management
+- knowledge management
+- Developer
+- connect a data repository (s3, sharepoint, salesforce, etc.) to a kendra index
+- index documents
+- search index management
+- search
+- add documents to an index
+- aws
+- integrates kendra search into applications and rag pipelines
+- intelligent search
 - list search indexes
 - ai
-- list indexes
+- IT Administrator
+- create a new search index
+- search an index with natural language
+- search an amazon kendra index using natural language query
+- natural language
+- list data sources
+- list all amazon kendra search indexes
+- enterprise knowledge organization and discovery
+- manages enterprise knowledge bases and search indexes
+- connect data source
+- Knowledge Manager
+- add documents to an amazon kendra search index
+- configures and maintains data source connectors and index settings
+- list all search indexes
+- create a data source connector
 - create a new amazon kendra enterprise search index
-- amazon kendra
-- list all data source connectors for a kendra index
+- create data source
 slug: amazon-kendra-enterprise-search
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Kendra Enterprise Search\"\n  description: \"Unified workflow capability for Amazon Kendra enterprise search, combining index management, data source connectivity, document indexing, and intelligent query operations for knowledge management and RAG workflows.\"\n  tags:\n    - Amazon Kendra\n    - Enterprise Search\n    - Machine Learning\n    - AWS\n    - Knowledge Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: kendra\n      location: ./shared/kendra.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kendra-search-api\n      description: \"Unified REST API for Amazon Kendra enterprise search operations.\"\n      resources:\n        - path: /v1/indexes\n          name: indexes\n          description: \"\
   Search index management\"\n          operations:\n            - method: POST\n              name: create-index\n              description: \"Create a new search index\"\n              call: \"kendra.create-index\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-indexes\n              description: \"List all search indexes\"\n              call: \"kendra.list-indexes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/indexes/{IndexId}/query\n          name: search\n          description: \"Intelligent search\"\n          operations:\n            - method: POST\n              name: search\n              description: \"Search an index with natural language\"\n              call: \"kendra.query\"\n              with:\n                IndexId: \"rest.IndexId\"\n              outputParameters:\n                - type:\

@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- search fields
-- get historical data
-- reference data
-- search instruments
-- financial data
-- create a security universe for data requests
-- create universe
-- get historical end-of-day data
-- list field lists
-- financial analytics
-- search available bloomberg data fields
-- trading
-- reference data access
-- get historical data for securities
-- order management
-- list catalogs
-- list field lists for data requests
-- market data
-- get reference data
-- data distributions
-- list distributions
-- create a bloomberg data request
-- get data catalog details
-- create data request
-- search for securities and instruments
-- bloomberg
-- list completed data distributions
-- historical data access
-- get intraday bar data
-- get reference data for securities
-- get catalog
 - field list management
 - list available bloomberg data catalogs
-- security universe management
-- portfolio management
-- get reference data for securities via http api
-- data catalog browsing
+- bloomberg
+- get historical data for securities
+- get historical end-of-day data
 - list available data catalogs
+- get intraday bar data
+- list distributions
+- search instruments
+- historical data access
+- get reference data for securities
+- trading
+- get reference data
+- data catalog browsing
+- search fields
+- search for securities and instruments
+- create universe
+- list field lists
+- financial data
 - get intraday bars
+- create data request
+- create a security universe for data requests
+- market data
+- data distributions
+- get catalog
+- create a bloomberg data request
+- list field lists for data requests
+- reference data access
+- security universe management
+- get historical data
 - list security universes
+- get data catalog details
+- search available bloomberg data fields
+- order management
+- get reference data for securities via http api
+- list completed data distributions
+- list catalogs
+- reference data
 - list universes
+- financial analytics
+- portfolio management
 slug: market-data-and-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data and Analytics\"\n  description: \"Workflow for accessing Bloomberg market data combining the Data License HAPI for bulk data with the HTTP API for real-time reference and historical data, used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Analytics\n    - Reference Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_HAPI_TOKEN: BLOOMBERG_HAPI_TOKEN\n      BLOOMBERG_HTTP_USERNAME: BLOOMBERG_HTTP_USERNAME\n      BLOOMBERG_HTTP_PASSWORD: BLOOMBERG_HTTP_PASSWORD\n\ncapability:\n  consumes:\n    - import: data-license\n      location: ./shared/data-license.yaml\n    - import: http-api\n      location: ./shared/http-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data and analytics.\"\
   \n      resources:\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Data catalog browsing\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List available data catalogs\"\n              call: \"data-license.list-catalogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/universes\n          name: universes\n          description: \"Security universe management\"\n          operations:\n            - method: GET\n              name: list-universes\n              description: \"List security universes\"\n              call: \"data-license.list-universes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/field-lists\n          name: field-lists\n          description: \"Field list management\"\n          operations:\n            - method: GET\n   \

@@ -18,43 +18,43 @@ personas: []
 provider_name: SAP S/4HANA
 provider_slug: sap-s4hana
 search_terms:
-- retrieve items for a sales order
-- list sales order partners
-- list sales order pricing
-- list sales order texts
-- erp
-- retrieve text records for a sales order
-- delete sales order
-- cloud
-- retrieve partners for a sales order
-- create a new sales order
-- list sales orders
-- update a sales order header
-- sap
-- list sales order items
-- finance
-- plant maintenance
-- s/4hana
-- human resources
-- enterprise resource planning
-- order-to-cash
-- procurement
-- sales order management
-- create sales order
 - retrieve a single sales order by key
-- delete a sales order
-- sales
-- business applications
-- create a sales order
-- logistics
-- create sales order item
-- get sales order
-- manufacturing
-- create a new sales order item
-- inventory
+- plant maintenance
 - retrieve a list of sales orders
-- retrieve header pricing elements
+- list sales order texts
+- enterprise resource planning
+- create a new sales order
+- create a sales order
+- create sales order item
+- list sales order partners
+- cloud
+- finance
+- business applications
+- order-to-cash
+- list sales orders
+- sales
+- retrieve partners for a sales order
+- retrieve text records for a sales order
+- s/4hana
+- delete sales order
+- sap
+- get sales order
+- create a new sales order item
+- update a sales order header
+- list sales order items
+- sales order management
 - update sales order
+- delete a sales order
+- erp
+- retrieve items for a sales order
+- logistics
+- list sales order pricing
+- manufacturing
+- human resources
+- create sales order
+- inventory
+- retrieve header pricing elements
+- procurement
 slug: order-to-cash
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP S/4HANA Order-to-Cash\"\n  description: \"Unified order-to-cash capability combining sales order management with items, partners, pricing, schedule lines, and text records. Used by sales operations and order management teams.\"\n  tags:\n    - SAP\n    - S/4HANA\n    - Sales\n    - Order-to-Cash\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SAP_USERNAME: SAP_USERNAME\n      SAP_PASSWORD: SAP_PASSWORD\n\ncapability:\n  consumes:\n    - import: sales-order\n      location: ./shared/sales-order.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: order-to-cash-api\n      description: \"Unified REST API for SAP S/4HANA order-to-cash operations.\"\n      resources:\n        - path: /v1/sales-orders\n          name: sales-orders\n          description: \"Sales order management\"\n          operations:\n            - method: GET\n              name: list-sales-orders\n\
   \              description: \"List sales orders\"\n              call: \"sales-order.list-sales-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-sales-order\n              description: \"Create a sales order\"\n              call: \"sales-order.create-sales-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: order-to-cash-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SAP S/4HANA order-to-cash operations.\"\n      tools:\n        - name: list-sales-orders\n          description: \"Retrieve a list of sales orders\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"sales-order.list-sales-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        -\

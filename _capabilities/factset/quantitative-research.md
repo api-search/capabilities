@@ -29,35 +29,35 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- run quant engine
-- financial data
-- list formulas
-- execute formula queries.
-- factor library data.
-- list factor library resources.
-- quant engine computations.
-- quantitative research
-- run formula
-- financial
-- factset
-- market data
-- list quant engine resources.
 - research
+- run universal screening.
+- list quant
+- run quant engine computations.
 - list screening resources.
-- factor analysis
-- run screen
 - list screens
 - screening
-- universal screening.
-- run quant engine computations.
+- factor analysis
 - list factors
-- get factors
-- formula-based data retrieval.
-- portfolio analytics
+- execute formula queries.
+- list quant engine resources.
+- factset
+- universal screening.
+- financial
+- financial data
 - investment analytics
-- run universal screening.
+- list formulas
+- quant engine computations.
+- market data
+- run formula
+- list factor library resources.
+- get factors
+- factor library data.
 - get factor library data.
-- list quant
+- formula-based data retrieval.
+- run quant engine
+- run screen
+- portfolio analytics
+- quantitative research
 slug: quantitative-research
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Quantitative Research\"\n  description: \"Unified workflow for quantitative research including formula-based data retrieval, screening, factor analysis, and quant engine computations. Used by quantitative analysts.\"\n  tags:\n    - FactSet\n    - Quantitative Research\n    - Factor Analysis\n    - Screening\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-formula\n      location: ./shared/formula.yaml\n    - import: factset-quant\n      location: ./shared/quant-engine.yaml\n    - import: factset-qfl\n      location: ./shared/quant-factor-library.yaml\n    - import: factset-screening\n      location: ./shared/universal-screening.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: quant-research-api\n      description: \"\
   Unified REST API for quantitative research.\"\n      resources:\n        - path: /v1/formulas\n          name: formulas\n          description: \"Formula-based data retrieval.\"\n          operations:\n            - method: GET\n              name: list-formulas\n              description: \"Execute formula queries.\"\n              call: \"factset-formula.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/quant-engine\n          name: quant-engine\n          description: \"Quant engine computations.\"\n          operations:\n            - method: GET\n              name: list-quant\n              description: \"List quant engine resources.\"\n              call: \"factset-quant.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/factors\n          name: factors\n          description: \"Factor library data.\"\n          operations:\n\

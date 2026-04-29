@@ -58,56 +58,56 @@ personas: []
 provider_name: Salesforce Marketing Cloud
 provider_slug: salesforce-marketing-cloud
 search_terms:
+- get a contact
+- create a new customer journey
+- publish a journey
+- publish a journey to activate customer entry
+- personalization
+- get contact
+- marketing automation
+- single contact operations
+- list all journeys
 - journey management
 - delete a contact from marketing cloud
-- publish a journey
-- single contact operations
-- automation
-- email
-- marketing
-- list all contact attribute set definitions
-- retrieve a journey by id
-- update a contact
-- get a journey
-- retrieve a contact by contact key
-- delete a journey
-- single journey operations
-- update a journey
-- delete journey
-- create one or more contacts
-- contact search
-- digital marketing
-- get a contact
-- personalization
-- search contacts by criteria
-- email marketing
-- journey publishing
-- customer journey
-- create a journey
-- delete contact
-- publish journey
-- create one or more contacts in marketing cloud
-- update contact
-- create a new customer journey
-- marketing automation
-- create journey
-- get contact
-- publish a journey to activate customer entry
-- create contacts
-- salesforce
-- list customer journeys with filtering and pagination
-- list journeys
-- update an existing contact's attributes
-- get journey
-- search for contacts using filter criteria
-- delete a contact
 - attribute set definitions
-- list all journeys
+- delete contact
+- digital marketing
+- list journeys
+- get journey
+- contact management
+- journey publishing
+- marketing
+- update an existing contact's attributes
+- contact search
+- update journey
+- search contacts by criteria
+- delete a journey
+- list customer journeys with filtering and pagination
+- get a journey
+- search for contacts using filter criteria
+- retrieve a journey by id
+- search contacts
+- update contact
+- update a contact
+- automation
+- salesforce
+- create a journey
+- delete a contact
+- customer journey
+- single journey operations
+- email marketing
 - list attribute sets
 - update an existing journey specification
-- update journey
-- contact management
-- search contacts
+- create journey
+- retrieve a contact by contact key
+- list all contact attribute set definitions
+- create contacts
+- email
+- update a journey
+- create one or more contacts
+- publish journey
+- create one or more contacts in marketing cloud
+- delete journey
 slug: marketing-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce Marketing Cloud Automation\"\n  description: \"Unified workflow for digital marketers to manage contacts, orchestrate customer journeys, and automate multi-channel campaigns across email, SMS, and push channels.\"\n  tags:\n    - Salesforce\n    - Marketing Automation\n    - Customer Journey\n    - Email Marketing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      SFMC_ACCESS_TOKEN: SFMC_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-cloud-rest\n      location: ./shared/marketing-cloud-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: marketing-automation-api\n      description: \"Unified REST API for marketing automation workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"Contact management\"\n          operations:\n            - method: POST\n              name:\
   \ create-contacts\n              description: \"Create one or more contacts\"\n              call: \"marketing-cloud-rest.create-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/contacts/search\n          name: contact-search\n          description: \"Contact search\"\n          operations:\n            - method: POST\n              name: search-contacts\n              description: \"Search contacts by criteria\"\n              call: \"marketing-cloud-rest.search-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/contacts/{contactKey}\n          name: contact-detail\n          description: \"Single contact operations\"\n          operations:\n            - method: GET\n              name: get-contact\n              description: \"Get a contact\"\n              call: \"marketing-cloud-rest.get-contact\"\n              with:\n\

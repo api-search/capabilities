@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
-- life sciences
-- bioinformatics
-- cloud computing
 - genomics
 - aws
+- cloud computing
+- bioinformatics
+- life sciences
 - healthcare
 slug: amazon-healthomics-genomics-operations
 source_yaml: "name: Amazon HealthOmics Genomics Operations\nversion: 1.0.0-alpha1\ndescription: Workflow capability for managing omics data including annotation stores, variant stores, workflows, and analysis runs.\npersona:\n  - Bioinformatics Scientist\n  - Genomics Data Engineer\n  - Life Sciences Developer\napis:\n  - Amazon HealthOmics\ntools:\n  - name: create_annotation_store\n    description: Create a new annotation store for genomic annotations\n    operationId: CreateAnnotationStore\n    method: POST\n    path: /annotationStore\n  - name: list_annotation_stores\n    description: List all annotation stores in the account\n    operationId: ListAnnotationStores\n    method: POST\n    path: /annotationStores\n  - name: create_variant_store\n    description: Create a new variant store for genomic variants\n    operationId: CreateVariantStore\n    method: POST\n    path: /variantStore\n  - name: list_variant_stores\n    description: List all variant stores in the account\n    operationId:\

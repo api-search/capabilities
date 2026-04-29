@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- create a variation of an existing image
-- transcribe audio to text using whisper
-- create speech
-- models list
 - list all available openai models
-- images edit
-- generate an image
-- content generation
-- audio create speech
-- get details of a specific model
-- chat completion
-- chat create completion
-- large language models
 - create chat completion
-- create a chat completion
-- generate a conversational response using gpt models
-- images create
-- edit an existing image with a text prompt
-- audio create translation
-- list models
-- generate audio from text using tts models
-- embeddings create
 - text embeddings
-- available models
-- create image
-- create embedding
-- openai
-- image generation
-- translate audio to english text
-- models get
-- generate an image from a text prompt using dall-e
-- generate speech
-- artificial intelligence
-- audio create transcription
-- ai
-- t1
-- create embeddings
+- images edit
 - generate vector embeddings for text input
+- available models
+- create a variation of an existing image
+- audio create speech
+- embeddings create
+- models list
+- list models
+- openai
+- create speech
+- generate audio from text using tts models
+- image generation
+- generate an image
+- generate a conversational response using gpt models
+- transcribe audio to text using whisper
 - images create variation
+- edit an existing image with a text prompt
+- ai
 - text to speech
+- artificial intelligence
+- get details of a specific model
+- create a chat completion
+- chat completion
+- content generation
+- models get
+- chat create completion
+- create image
+- generate an image from a text prompt using dall-e
+- audio create translation
+- large language models
+- audio create transcription
+- t1
+- create embedding
+- create embeddings
+- translate audio to english text
+- images create
+- generate speech
 slug: content-generation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"OpenAI Content Generation\"\n  description: \"Unified content generation combining Chat, Images, Audio, and Embeddings APIs for developers to generate text, images, speech, and vector representations.\"\n  tags:\n    - OpenAI\n    - Content Generation\n    - AI\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENAI_API_KEY: OPENAI_API_KEY\n\ncapability:\n  consumes:\n    - import: openai-chat\n      location: ./shared/chat.yaml\n    - import: openai-images\n      location: ./shared/images.yaml\n    - import: openai-audio\n      location: ./shared/audio.yaml\n    - import: openai-embeddings\n      location: ./shared/embeddings.yaml\n    - import: openai-models\n      location: ./shared/models.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: content-generation-api\n      description: \"Unified REST API for AI content generation.\"\n      resources:\n \
   \       - path: /v1/chat/completions\n          name: chat\n          description: \"Chat completion\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion\"\n              call: \"openai-chat.create-chat-completion\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images/generations\n          name: images\n          description: \"Image generation\"\n          operations:\n            - method: POST\n              name: create-image\n              description: \"Generate an image\"\n              call: \"openai-images.create-image\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audio/speech\n          name: speech\n          description: \"Text to speech\"\n          operations:\n            - method: POST\n              name: create-speech\n\

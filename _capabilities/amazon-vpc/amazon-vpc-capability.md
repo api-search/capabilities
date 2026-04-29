@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
-- vpc
-- networking
 - aws
 - subnets
-- security
 - private cloud
+- security
+- vpc
+- networking
 slug: amazon-vpc-capability
 source_yaml: 'id: amazon-vpc-capability
 

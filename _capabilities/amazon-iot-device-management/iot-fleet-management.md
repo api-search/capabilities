@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Device Management
 provider_slug: amazon-iot-device-management
 search_terms:
-- create thing group
-- list thing groups
-- ota updates
+- Operations Engineer
+- list job executions
+- create job
+- amazon iot device management add thing to group
 - add thing to group
 - list jobs
+- ota updates
+- list thing groups
+- amazon iot device management list things in group
 - list things in group
-- onboard, organize, and manage iot devices at scale.
-- aws
-- amazon iot device management create job
-- IoT Engineer
-- amazon iot device management add thing to group
-- iot
 - amazon iot device management create thing group
-- Operations Engineer
+- aws
+- amazon iot device management describe job
+- onboard, organize, and manage iot devices at scale.
 - device management
+- amazon iot device management list thing groups
+- create thing group
+- amazon iot device management create job
+- amazon iot device management list job executions
+- IoT Engineer
+- manages amazon iot device management resources and operations
+- amazon iot device management list jobs
+- describe job
 - fleet management
 - amazon iot device management resources
-- create job
-- manages amazon iot device management resources and operations
-- amazon iot device management describe job
-- amazon iot device management list job executions
-- describe job
-- amazon iot device management list things in group
-- amazon iot device management list jobs
-- amazon iot device management list thing groups
-- list job executions
+- iot
 slug: iot-fleet-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Device Management - Iot Fleet Management\n  description: Unified capability for IoT Engineer, Operations Engineer to manage onboard, organize, and manage iot devices at scale operations.\n  tags:\n    - IoT\n    - AWS\n    - Device Management\n    - Fleet Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-device-management\n      location: ./shared/iot-device-management.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iot-fleet-management-api\n      description: Unified REST API for iot fleet management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT Device Management resources\n          operations:\n            - method: GET\n              name:\
   \ list-thing-groups\n              description: List Thing Groups\n              call: \"iot-device-management.list-thing-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: iot-fleet-management-mcp\n      transport: http\n      description: MCP server for AI-assisted iot fleet management.\n      tools:\n        - name: list-thing-groups\n          description: Amazon IoT Device Management List Thing Groups\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-device-management.list-thing-groups\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-thing-group\n          description: Amazon IoT Device Management Create Thing Group\n          hints:\n            readOnly: false\n            \n          call: \"iot-device-management.create-thing-group\"\n          outputParameters:\n\

@@ -34,44 +34,44 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- associate a ticket with a contact or company
-- service
-- support
+- conversations
+- search tickets with filters
 - get a support ticket by id
-- marketing
+- analytics
+- get contact
+- get ticket
+- update ticket
+- marketing automation
+- associate a ticket with a contact or company
 - list associations for a crm object
 - create association
-- operations
-- conversations
-- create a new support ticket
-- list tickets
-- content
-- create ticket
-- email marketing
-- update a support ticket
-- crm
-- archive ticket
-- marketing automation
-- get contact
-- commerce
+- marketing
 - customer service
-- tickets
-- archive a support ticket
 - sales
-- search tickets
-- support tickets
-- contact lookup
-- get ticket
+- content
+- archive ticket
+- support
+- tickets
+- update a support ticket
+- create a new support ticket
+- operations
+- search contacts
+- list associations
+- archive a support ticket
+- crm
+- create ticket
+- search contacts to find the customer
 - hubspot
-- analytics
+- email marketing
+- search tickets
+- commerce
+- list tickets
+- support tickets
+- list all support tickets
+- contact lookup
+- service
 - individual ticket
 - look up a contact for ticket context
-- list all support tickets
-- update ticket
-- search tickets with filters
-- list associations
-- search contacts to find the customer
-- search contacts
 slug: customer-service
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Customer Service\"\n  description: \"Unified workflow for service agents to manage support tickets, conversations, threads, messages, and CRM associations. Combines ticket management with conversation channels for complete customer service operations.\"\n  tags:\n    - HubSpot\n    - Service\n    - Support\n    - Tickets\n    - Conversations\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: crm-tickets\n      location: ./shared/crm-tickets.yaml\n    - import: conversations\n      location: ./shared/conversations-api.yaml\n    - import: crm-contacts\n      location: ./shared/crm-contacts.yaml\n    - import: crm-associations\n      location: ./shared/crm-associations.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: customer-service-api\n      description: \"Unified\
   \ REST API for customer service ticket management, conversations, and contact resolution.\"\n      resources:\n        - path: /v1/tickets\n          name: tickets\n          description: \"Support tickets\"\n          operations:\n            - { method: GET, name: list-tickets, description: \"List tickets\", call: \"crm-tickets.list-tickets\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-ticket, description: \"Create ticket\", call: \"crm-tickets.create-ticket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/tickets/{ticketId}\n          name: ticket-by-id\n          description: \"Individual ticket\"\n          operations:\n            - { method: GET, name: get-ticket, description: \"Get ticket\", call: \"crm-tickets.get-ticket\", with: { ticketId: \"rest.ticketId\" }, outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: PATCH, name: update-ticket, description: \"Update\

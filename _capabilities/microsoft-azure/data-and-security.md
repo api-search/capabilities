@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- key vault
+- arm list resources
 - cosmos db database management
+- list secrets
+- subscription management
+- arm list subscriptions
+- list subscriptions
+- list blobs
+- arm list resource groups
+- list containers in a database
+- list resource groups
+- cosmos db
+- keyvault list certificates
+- cloud
+- cosmos list containers
+- blob storage
+- keyvault get secret
 - list resources in a subscription
 - api management
+- list blobs in a container
+- infrastructure as a service
+- arm list providers
+- list cryptographic keys
+- resource manager
+- azure
+- arm list tags
+- blob download
+- blob storage operations
+- keyvault list keys
+- list subscription tags
+- platform as a service
+- list databases
+- list azure subscriptions
+- list cosmos db databases
+- get a secret value
 - list items in a container
 - get blob properties
-- download a blob
-- cloud
-- keyvault list secrets
-- keyvault list certificates
-- arm list subscriptions
-- subscription management
-- list subscription tags
-- list resource providers
-- blob list blobs
-- list subscriptions
-- cosmos list containers
-- arm list resources
-- list cosmos db databases
-- list containers in a database
-- cosmos list databases
-- cosmos list items
-- get a secret value
-- list cryptographic keys
-- list blobs
-- infrastructure as a service
-- list azure subscriptions
-- list blobs in a container
-- cosmos db
-- cloud computing
-- arm list resource groups
-- keyvault list keys
-- blob download
-- list secrets
-- list certificates
-- blob storage
-- blob get properties
-- key vault secret management
-- blob storage operations
-- list resource groups
 - enterprise
-- arm list providers
-- arm list tags
-- azure
-- keyvault get secret
-- resource manager
-- platform as a service
+- cosmos list databases
+- blob get properties
+- list resource providers
+- cloud computing
+- cosmos list items
+- keyvault list secrets
+- download a blob
+- blob list blobs
+- key vault
 - t1
-- list databases
+- key vault secret management
+- list certificates
 slug: data-and-security
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Data and Security\"\n  description: \"Unified workflow for Azure data infrastructure and security combining Cosmos DB for NoSQL data, Blob Storage for object storage, Key Vault for secrets management, and Resource Manager for infrastructure governance. Used by cloud architects, data engineers, and security teams.\"\n  tags:\n    - Azure\n    - Cosmos DB\n    - Blob Storage\n    - Key Vault\n    - Resource Manager\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n      AZURE_COSMOS_KEY: AZURE_COSMOS_KEY\n      AZURE_STORAGE_KEY: AZURE_STORAGE_KEY\n      AZURE_KEY_VAULT_TOKEN: AZURE_KEY_VAULT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-cosmos\n      location: ./shared/cosmos-db.yaml\n    - import: azure-blob\n      location: ./shared/blob-storage.yaml\n    - import: azure-keyvault\n      location: ./shared/key-vault.yaml\n\
   \    - import: azure-arm\n      location: ./shared/resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: azure-data-security-api\n      description: \"Unified REST API for Azure data and security operations.\"\n      resources:\n        - path: /v1/databases\n          name: databases\n          description: \"Cosmos DB database management\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List Cosmos DB databases\"\n              call: \"azure-cosmos.list-databases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blobs\n          name: blobs\n          description: \"Blob storage operations\"\n          operations:\n            - method: GET\n              name: list-blobs\n              description: \"List blobs in a container\"\n              call: \"azure-blob.list-blobs\"\n              with:\n            \

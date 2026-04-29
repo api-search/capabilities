@@ -30,31 +30,31 @@ personas: []
 provider_name: Google Slides
 provider_slug: google-slides
 search_terms:
-- slides
-- access individual pages and thumbnails.
-- google
-- google workspace
-- get a specific page from a presentation.
-- get a thumbnail image of a presentation page.
-- get presentation
-- get page thumbnail
-- content creation
-- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
-- apply batch updates.
-- presentations
-- productivity
 - collaboration
+- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
+- access individual pages and thumbnails.
 - create presentation
-- create a new blank google slides presentation.
-- batch update presentation
-- create and manage presentations.
-- get page
-- batch update
-- get a page thumbnail.
-- get a presentation by id.
 - get a presentation by id with all slides, masters, and layouts.
+- create and manage presentations.
+- google
+- get page
 - get a specific page.
+- content creation
+- batch update presentation
 - create a new presentation.
+- get a specific page from a presentation.
+- slides
+- get a presentation by id.
+- presentations
+- create a new blank google slides presentation.
+- google workspace
+- get page thumbnail
+- get a page thumbnail.
+- get presentation
+- apply batch updates.
+- get a thumbnail image of a presentation page.
+- batch update
+- productivity
 slug: presentation-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Slides Presentation Management\"\n  description: \"Unified presentation management workflow for creating, reading, editing, and generating thumbnails of Google Slides presentations for content creators and automation engineers.\"\n  tags:\n    - Google\n    - Slides\n    - Presentations\n    - Content Creation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: slides-api\n      location: ./shared/slides-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: presentation-api\n      description: \"Unified REST API for Google Slides presentation management.\"\n      resources:\n        - path: /v1/presentations\n          name: presentations\n          description: \"Create and manage presentations.\"\n          operations:\n            - method: POST\n              name:\
   \ create-presentation\n              description: \"Create a new presentation.\"\n              call: \"slides-api.create-presentation\"\n              with:\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-presentation\n              description: \"Get a presentation by ID.\"\n              call: \"slides-api.get-presentation\"\n              with:\n                presentationId: \"rest.presentationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: batch-update\n              description: \"Apply batch updates.\"\n              call: \"slides-api.batch-update-presentation\"\n              with:\n                presentationId: \"rest.presentationId\"\n                requests: \"rest.requests\"\n              outputParameters:\n              \

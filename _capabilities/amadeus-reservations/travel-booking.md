@@ -37,50 +37,50 @@ personas: []
 provider_name: Amadeus Reservations
 provider_slug: amadeus-reservations
 search_terms:
-- human or automated agent creating and managing travel reservations on behalf of travelers.
-- cancel a transfer booking.
-- create hotel booking
-- cancel a flight booking.
-- amadeus
-- cancel flight booking
-- developer building ai-powered travel assistants that create bookings conversationally.
-- hotels
-- ground transfer reservation operations.
-- flights
-- create a confirmed transfer booking.
-- get flight booking
 - create a confirmed airline reservation from a priced flight offer.
-- reservations
-- travel
-- hotel reservation operations.
-- end-to-end travel booking combining flights, hotels, and transfers.
-- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
-- Travel Booking Agent
-- ground transportation booking and management.
-- flight reservation operations.
-- cancel flight order
-- cancel transfer booking
-- cancel transfer order
-- hotel reservation creation.
-- create transfer order
-- create a confirmed hotel booking.
-- transfers
-- create flight order
-- create transfer booking
-- booking
-- individual transfer management.
-- create a confirmed flight booking.
-- get flight order
-- individual flight order management.
-- cancel an existing confirmed flight reservation.
-- retrieve details of an existing flight reservation by order id.
+- flights
 - create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
-- retrieve a flight booking.
-- create flight booking
+- amadeus
 - create hotel order
-- cancel an existing confirmed ground transfer reservation.
+- transfers
+- Travel Booking Agent
+- create flight booking
+- retrieve a flight booking.
+- end-to-end travel booking combining flights, hotels, and transfers.
+- create transfer order
 - airline reservation creation and management.
+- hotel reservation operations.
+- cancel transfer booking
+- create flight order
+- retrieve details of an existing flight reservation by order id.
+- hotels
+- create hotel booking
+- travel
+- cancel flight order
+- get flight booking
+- get flight order
+- create transfer booking
+- flight reservation operations.
+- cancel a flight booking.
+- create a confirmed transfer booking.
+- booking
+- create a confirmed hotel booking.
+- developer building ai-powered travel assistants that create bookings conversationally.
+- cancel an existing confirmed ground transfer reservation.
+- cancel a transfer booking.
+- individual flight order management.
+- ground transportation booking and management.
+- hotel reservation creation.
+- individual transfer management.
+- cancel an existing confirmed flight reservation.
+- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
+- cancel transfer order
 - Travel Chatbot Developer
+- human or automated agent creating and managing travel reservations on behalf of travelers.
+- cancel flight booking
+- reservations
+- create a confirmed flight booking.
+- ground transfer reservation operations.
 slug: travel-booking
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Travel Booking\n  description: >-\n    Unified workflow capability for complete travel booking encompassing flight\n    reservations, hotel bookings, and ground transfer arrangements. Used by\n    online travel agencies, travel chatbots, and corporate travel management\n    platforms to create end-to-end trip reservations.\n  tags:\n    - Amadeus\n    - Booking\n    - Flights\n    - Hotels\n    - Transfers\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_API_KEY: AMADEUS_API_KEY\n      AMADEUS_API_SECRET: AMADEUS_API_SECRET\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: hotel-booking\n      location: ./shared/hotel-booking.yaml\n    - import: flight-orders\n      location: ./shared/flight-orders.yaml\n    - import: transfer-booking\n      location: ./shared/transfer-booking.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8080\n      namespace: travel-booking-api\n      description: Unified REST API for multi-modal travel booking.\n      resources:\n        - path: /v1/bookings/flights\n          name: flight-bookings\n          description: Flight reservation operations.\n          operations:\n            - method: POST\n              name: create-flight-order\n              description: Create a confirmed flight booking.\n              call: \"flight-orders.create-flight-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings/flights/{orderId}\n          name: flight-order\n          description: Individual flight order management.\n          operations:\n            - method: GET\n              name: get-flight-order\n              description: Retrieve a flight booking.\n              call: \"flight-orders.get-flight-order\"\n              with:\n                orderId: \"rest.orderId\"\n        \

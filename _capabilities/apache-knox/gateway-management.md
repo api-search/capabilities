@@ -22,29 +22,29 @@ personas: []
 provider_name: Apache Knox
 provider_slug: apache-knox
 search_terms:
+- get the configuration details of a specific knox topology
+- hadoop administration
 - get topology
 - create topology
-- delete a knox gateway topology
+- get knox version
+- Security Engineer
+- security
+- gateway management
 - apache knox
 - create or update a knox gateway topology
-- get knox version
-- get apache knox gateway version information
-- Hadoop Administrator
-- admins who configure knox topologies for hadoop cluster access
-- security engineering
-- get the configuration details of a specific knox topology
-- list topologies
-- sso
 - hadoop
-- Security Engineer
 - list all knox gateway topologies and their service urls
-- security
-- hadoop administration
-- gateway management
-- authentication
-- api gateway
-- delete topology
 - open source
+- list topologies
+- security engineering
+- admins who configure knox topologies for hadoop cluster access
+- api gateway
+- delete a knox gateway topology
+- authentication
+- sso
+- delete topology
+- Hadoop Administrator
+- get apache knox gateway version information
 - engineers who configure authentication and authorization for knox
 slug: gateway-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Knox Gateway Management\"\n  description: \"Workflow capability for Hadoop administrators and security engineers to manage Knox gateway topologies, service descriptors, and provider configurations.\"\n  tags:\n    - Apache Knox\n    - Gateway Management\n    - Hadoop Administration\n    - Security Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      KNOX_ADMIN_PASSWORD: KNOX_ADMIN_PASSWORD\n\ncapability:\n  consumes:\n    - import: knox-admin\n      location: ./shared/knox-admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: knox-gateway-management-api\n      description: \"Unified REST API for Apache Knox gateway management.\"\n      resources:\n        - path: /v1/topologies\n          name: topologies\n          operations:\n            - method: GET\n              name: list-topologies\n              call: \"knox-admin.list-topologies\"\

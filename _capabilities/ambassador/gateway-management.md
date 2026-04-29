@@ -58,92 +58,92 @@ personas: []
 provider_name: Ambassador
 provider_slug: ambassador
 search_terms:
-- list all hosts.
-- testing
-- create mapping
-- update tls context
-- delete host
-- update an existing host resource.
-- rate limiting configurations.
-- list all ratelimit resources.
-- check if the ambassador gateway is ready to serve traffic.
-- get mapping
-- get rate limit
-- create host
-- gateway liveness check.
-- create route
-- tls certificate contexts.
-- create a new host resource for tls termination.
-- retrieve a specific route mapping by name.
-- list all module resources for global gateway config.
-- delete a host resource.
-- list tls contexts
-- list routes
-- list all route mappings in a kubernetes namespace.
-- retrieve a specific module by name.
-- check ready
+- api development
 - update host
-- retrieve diagnostic overview.
+- list all tls contexts.
+- get module
+- retrieve a specific route mapping by name.
 - list all rate limits.
+- get diagnostics
+- update an existing host resource.
+- delete tls context
+- gateway liveness check.
+- delete host
+- kubernetes
+- mocks
+- delete a ratelimit resource.
+- check gateway readiness.
+- create mapping
+- tls hosts and hostname routing.
+- create a new route mapping for a backend service.
+- create a new ratelimit resource.
 - get host
 - platform
-- create rate limit
-- individual route mapping.
-- list hosts
-- check if the ambassador gateway process is alive.
-- list mappings
-- create a new route mapping.
-- list rate limits
-- create a new ratelimit resource.
-- update an existing tlscontext.
-- mocks
-- update rate limit
-- delete a tlscontext resource.
-- retrieve a specific host by name.
-- list modules
-- create tls context
-- retrieve diagnostic overview of the ambassador gateway instance.
-- update route
-- list all route mappings.
-- get tls context
-- delete rate limit
-- gateway health and diagnostics.
-- ingress
-- check gateway liveness.
-- check gateway readiness.
-- delete a ratelimit resource.
-- api gateway
-- list all tlscontext resources.
-- update an existing ratelimit.
-- list all tls contexts.
-- create a new host.
-- mock servers
-- gateways
-- delete mapping
-- tls hosts and hostname routing.
-- api route mappings.
-- delete a route mapping.
-- update an existing route mapping.
-- delete tls context
-- retrieve a specific tlscontext by name.
-- get diagnostics
-- delete route
-- retrieve a specific ratelimit by name.
-- get module
-- update module
-- get route
-- kubernetes
 - gateway readiness check.
-- check alive
-- update a route mapping.
-- api development
-- create a new tlscontext for tls configuration.
+- retrieve a specific tlscontext by name.
+- update an existing ratelimit.
 - ambassador
-- list all host resources for tls and hostname routing.
-- create a new route mapping for a backend service.
-- update a module resource.
-- get a specific route mapping.
+- update rate limit
+- update tls context
+- list modules
+- list routes
+- check gateway liveness.
+- update an existing tlscontext.
+- retrieve a specific ratelimit by name.
 - update mapping
+- check alive
+- create host
+- list all ratelimit resources.
+- get tls context
+- list all route mappings.
+- ingress
+- delete route
+- gateways
+- check if the ambassador gateway is ready to serve traffic.
+- update a route mapping.
+- list all module resources for global gateway config.
+- create a new route mapping.
+- create route
+- list mappings
+- mock servers
+- retrieve diagnostic overview.
+- update module
+- create a new tlscontext for tls configuration.
+- testing
+- get rate limit
+- list all hosts.
+- gateway health and diagnostics.
+- api route mappings.
+- list hosts
+- tls certificate contexts.
+- list all tlscontext resources.
+- delete mapping
+- list rate limits
+- delete a tlscontext resource.
+- individual route mapping.
+- check if the ambassador gateway process is alive.
+- update route
+- create a new host.
+- retrieve a specific module by name.
+- delete a host resource.
+- retrieve diagnostic overview of the ambassador gateway instance.
+- get a specific route mapping.
+- get route
+- list all route mappings in a kubernetes namespace.
+- create a new host resource for tls termination.
+- retrieve a specific host by name.
+- create tls context
+- update an existing route mapping.
+- delete a route mapping.
+- rate limiting configurations.
+- update a module resource.
+- get mapping
+- api gateway
+- list all host resources for tls and hostname routing.
+- create rate limit
+- list tls contexts
+- check ready
+- delete rate limit
 slug: gateway-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Ambassador Gateway Management\"\n  description: \"Unified gateway management workflow for platform engineers and DevOps teams to configure API routing, TLS termination, rate limiting, and health monitoring across Ambassador Edge Stack instances.\"\n  tags:\n    - Ambassador\n    - API Gateway\n    - Kubernetes\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMBASSADOR_API_TOKEN: AMBASSADOR_API_TOKEN\n\ncapability:\n  consumes:\n    - import: edge-stack\n      location: ./shared/edge-stack.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gateway-management-api\n      description: \"Unified REST API for managing Ambassador Edge Stack gateway resources.\"\n      resources:\n        - path: /v1/diagnostics\n          name: diagnostics\n          description: \"Gateway health and diagnostics.\"\n          operations:\n            - method: GET\n         \
   \     name: get-diagnostics\n              description: \"Retrieve diagnostic overview.\"\n              call: \"edge-stack.get-diagnostics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health/ready\n          name: readiness\n          description: \"Gateway readiness check.\"\n          operations:\n            - method: GET\n              name: check-ready\n              description: \"Check gateway readiness.\"\n              call: \"edge-stack.check-ready\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health/alive\n          name: liveness\n          description: \"Gateway liveness check.\"\n          operations:\n            - method: GET\n              name: check-alive\n              description: \"Check gateway liveness.\"\n              call: \"edge-stack.check-alive\"\n              outputParameters:\n                - type:\

@@ -57,65 +57,65 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- incident management
-- get a specific event
-- create event
-- list monitors
-- individual incident operations
-- muteMonitor
-- delete incident
-- getIncident
-- monitors
-- list events
-- list monitors to check alert status
-- updateIncident
-- get event
-- mute a monitor
-- get incident details
-- visualizations
-- individual monitor
-- monitor status
-- create an incident
-- search events related to incident
 - createEvent
-- datadog
-- get monitor status
-- unmute monitor
-- search events
-- createIncident
-- platform
-- listIncidents
-- list incidents
-- events
-- post an event
-- listMonitors
-- deleteIncident
-- listEvents
-- get incident
-- update an existing incident
-- dashboards
-- getMonitor
-- event correlation
-- get a monitor
-- create incident
-- list incident teams
-- list events for correlation
-- post an event during incident
-- get monitor
-- searchEvents
-- create a new incident
-- incidents
 - monitoring
-- analytics
-- mute a monitor during incident response
-- delete an incident
-- update an incident
-- mute monitor during incident
-- update incident
-- get an incident
+- visualizations
+- list events
+- getIncident
+- createIncident
+- search events
+- incidents
 - mute monitor
+- analytics
+- datadog
+- individual incident operations
+- post an event during incident
+- post an event
+- get monitor status
 - t1
+- platform
+- monitor status
+- list events for correlation
+- create a new incident
+- create event
+- dashboards
+- incident management
+- events
+- listIncidents
+- event correlation
+- individual monitor
+- get an incident
+- delete an incident
+- muteMonitor
+- getMonitor
+- mute monitor during incident
+- unmute monitor
+- get incident
+- update an incident
+- create incident
+- list incidents
+- deleteIncident
+- searchEvents
+- listEvents
+- create an incident
+- listMonitors
+- list monitors to check alert status
+- get event
+- monitors
+- list incident teams
+- update an existing incident
+- get a monitor
+- get a specific event
+- get monitor
 - unmute a monitor after incident resolution
+- search events related to incident
+- mute a monitor during incident response
+- updateIncident
+- get incident details
+- mute a monitor
+- delete incident
+- update incident
+- list monitors
 slug: incident-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Incident Management\"\n  description: \"Unified workflow for incident management combining incidents, events, and monitors. Used by incident commanders and on-call engineers for creating incidents, correlating events, and managing monitor alerts during outages.\"\n  tags:\n    - Datadog\n    - Incident Management\n    - Incidents\n    - Events\n    - Monitors\n  personas:\n    - Incident Commander\n    - On-Call Engineer\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-incidents\n      location: \"./shared/incidents.yaml\"\n    - import: dd-events\n      location: \"./shared/events.yaml\"\n    - import: dd-monitors\n      location: \"./shared/monitors.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: dd-incident-mgmt-api\n  \
   \    description: \"Unified REST API for incident management workflows combining incidents, events, and monitors.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management\"\n          operations:\n            - method: GET\n              name: listIncidents\n              description: \"List incidents\"\n              call: \"dd-incidents.listIncidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createIncident\n              description: \"Create an incident\"\n              call: \"dd-incidents.createIncident\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/incidents/{incident_id}\n          name: incident\n          description: \"Individual incident operations\"\n          operations:\n            - method: GET\n              name: getIncident\n\

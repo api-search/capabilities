@@ -11,42 +11,42 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
-- blue/green deployment
-- create a deployment group for an application
+- create application
 - coordinates application releases.
-- list applications
-- devops
-- get deployment information for a target instance
-- create a new deployment
-- create deployment group
-- create and monitor deployments
-- DevOps Engineer
-- get deployment
-- create a codedeploy application
-- list deployment groups
-- release management
-- manage codedeploy applications
-- aws
-- list codedeploy applications
-- deployment
-- create deployment
-- Release Manager
-- stop deployment
-- managing software release processes and rollbacks.
-- automated application deployment to compute targets.
-- manages deployment infrastructure.
-- manage deployment groups
-- amazon
+- list deployment groups for an application
 - get details about a specific deployment
+- create a deployment group for an application
+- application deployment to ec2, lambda, ecs, and on-premises servers.
+- list applications
+- create a codedeploy application
+- create deployment
 - list deployments
+- stop deployment
+- get deployment instance
+- get deployment information for a target instance
+- create deployment group
+- deployment
+- DevOps Engineer
+- create a new deployment
+- get deployment
+- list instances in a deployment
+- managing software release processes and rollbacks.
+- manages deployment infrastructure.
+- blue/green deployment
+- amazon
+- devops
+- Release Manager
+- aws
 - stop an in-progress deployment
 - list deployment instances
-- list instances in a deployment
-- application deployment to ec2, lambda, ecs, and on-premises servers.
-- get deployment instance
+- list codedeploy applications
+- release management
+- automated application deployment to compute targets.
+- manage deployment groups
+- create and monitor deployments
 - ci/cd
-- create application
-- list deployment groups for an application
+- manage codedeploy applications
+- list deployment groups
 - list deployments for an application and deployment group
 slug: amazon-codedeploy-deployment-automation
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeDeploy Deployment Automation\n  description: Unified workflow for DevOps teams to create deployment groups, deploy revisions to EC2, Lambda, and ECS targets, and monitor deployment status.\n  tags:\n  - Amazon\n  - AWS\n  - Deployment\n  - DevOps\n  - CI/CD\n  - Release Management\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codedeploy\n    location: ./shared/codedeploy.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codedeploy-deployment-api\n    description: Unified REST API for CodeDeploy deployment automation.\n    resources:\n    - path: /v1/applications\n      name: applications\n      description: Manage CodeDeploy applications\n    - path: /v1/deployments\n      name: deployments\n      description: Create\

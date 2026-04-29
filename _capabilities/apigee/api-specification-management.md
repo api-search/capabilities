@@ -24,50 +24,50 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
-- api management
-- google cloud
-- list hub apis
-- list openapi and other specs attached to an api version in the hub.
-- apigee
-- lint an api spec for compliance and quality violations — returns issues with severity and location.
-- API Governance Lead
 - monetization
-- list api specs
-- list all apis in the api hub catalog.
-- api hub
-- manager packaging api products and managing developer relationships.
-- list hub specs
-- list specs for an api version.
-- openapi
 - developer portal
-- list apis in the registry.
-- Platform Architect
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- microservices
-- apis tracked in the apigee registry.
-- get api spec contents
-- architect overseeing api platform strategy and governance across the organization.
-- api specifications
-- list api versions
-- list registry apis
-- engineer managing api proxies, deployments, and policies in apigee.
 - retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
-- list spec artifacts in the apigee registry for a specific api version.
-- list versions of a specific api in the hub catalog.
-- api gateway
-- apis catalogued in api hub.
-- list registry specs
+- list api specs
+- list registry apis
+- google cloud
+- API Governance Lead
 - analytics
-- lint api spec
-- enterprise
-- hybrid
-- list all apis catalogued in apigee api hub — the primary api inventory for governance.
-- API Platform Engineer
-- specs for a given api version in hub.
-- integrations
 - api governance
+- list all apis in the api hub catalog.
+- list hub specs
+- apis catalogued in api hub.
+- Platform Architect
+- get api spec contents
+- lint api spec
+- architect overseeing api platform strategy and governance across the organization.
+- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
+- manager packaging api products and managing developer relationships.
+- list spec artifacts in the apigee registry for a specific api version.
 - API Product Manager
+- api hub
+- list versions of a specific api in the hub catalog.
+- api management
+- openapi
+- list specs for an api version.
+- list registry specs
+- specs for a given api version in hub.
+- lint an api spec for compliance and quality violations — returns issues with severity and location.
+- api specifications
+- API Platform Engineer
+- microservices
+- integrations
+- list api versions
+- api gateway
+- list hub apis
+- list all apis catalogued in apigee api hub — the primary api inventory for governance.
+- enterprise
+- apigee
+- list apis in the registry.
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- engineer managing api proxies, deployments, and policies in apigee.
+- list openapi and other specs attached to an api version in the hub.
+- hybrid
+- apis tracked in the apigee registry.
 slug: api-specification-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Specification Management\"\n  description: \"Unified workflow for managing API specifications on Apigee — browsing the API Hub catalog, retrieving spec contents, linting for compliance, and cross-referencing with Registry artifacts. Provides API product managers and governance teams a single surface to inspect, validate, and govern the specifications that define your API contracts.\"\n  tags:\n    - Apigee\n    - API Specifications\n    - API Governance\n    - OpenAPI\n    - Google Cloud\n  created: \"2026-04-20\"\n  modified: \"2026-04-20\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n    - import: registry\n      location: ./shared/registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: apigee-specs-api\n      description: \"Unified REST API for Apigee API\
   \ specification management.\"\n      resources:\n        - path: /v1/hub/apis\n          name: hub-apis\n          description: \"APIs catalogued in API Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-apis\n              description: \"List all APIs in the API Hub catalog.\"\n              call: \"api-hub.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hub/specs\n          name: hub-specs\n          description: \"Specs for a given API version in Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-specs\n              description: \"List specs for an API version.\"\n              call: \"api-hub.listApiSpecs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/registry/apis\n          name: registry-apis\n          description: \"APIs tracked in the Apigee Registry.\"\

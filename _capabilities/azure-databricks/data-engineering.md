@@ -31,71 +31,71 @@ personas: []
 provider_name: Azure Databricks
 provider_slug: azure-databricks
 search_terms:
-- export workspace object
-- list job runs
-- get job
-- list workspace objects in a directory
-- delete cluster
-- data engineering
-- import workspace object
-- trigger a one-time job run
-- big data
-- export a notebook or file from the workspace
-- terminate a running cluster
-- manage databricks clusters
-- create a new databricks cluster
-- delete a job
-- update job
-- databricks
-- list jobs
-- list all databricks clusters
-- get status of a workspace object
-- delete workspace object
-- list clusters
 - get details of a specific job run
-- get workspace object status
-- apache spark
-- start a terminated cluster
-- permanently delete a cluster
 - manage databricks jobs
-- restart a running cluster
-- list workspace objects
-- list all databricks jobs
-- edit cluster configuration
-- get job run output
-- machine learning
-- start cluster
-- list spark versions
-- get job run
-- cancel a running job
-- delete job
-- restart cluster
-- list available spark runtime versions
-- create a directory in the workspace
-- list all clusters
-- create cluster
-- create workspace directory
-- terminate cluster
-- list available node types
-- create job
-- cancel job run
 - import a notebook or file into the workspace
-- get job details
-- analytics
-- create a new job
-- run job now
-- create a new databricks job
-- edit cluster
-- azure
-- create a new cluster
-- list all jobs
-- get details of a specific cluster
-- get the output of a completed job run
-- manage workspace objects
-- partially update job settings
-- delete a workspace object
-- list node types
 - get cluster
+- create job
+- start a terminated cluster
+- get job details
+- big data
+- delete a job
+- create a new databricks cluster
+- start cluster
+- list workspace objects in a directory
+- get job run
+- terminate cluster
+- create a new job
+- delete cluster
+- create a directory in the workspace
+- delete job
+- analytics
+- machine learning
+- cancel a running job
+- list job runs
+- terminate a running cluster
+- apache spark
+- list clusters
+- list jobs
+- permanently delete a cluster
+- get status of a workspace object
+- create a new databricks job
+- get job run output
+- get the output of a completed job run
+- list all databricks jobs
+- get details of a specific cluster
+- list spark versions
+- list workspace objects
+- delete workspace object
+- list node types
+- create workspace directory
+- list all jobs
+- list all clusters
+- restart cluster
+- azure
+- restart a running cluster
+- partially update job settings
+- edit cluster
+- manage workspace objects
+- list all databricks clusters
+- run job now
+- databricks
+- get job
+- manage databricks clusters
+- list available spark runtime versions
+- export workspace object
+- create a new cluster
+- list available node types
+- edit cluster configuration
+- update job
+- export a notebook or file from the workspace
+- trigger a one-time job run
+- delete a workspace object
+- get workspace object status
+- data engineering
+- cancel job run
+- import workspace object
+- create cluster
 slug: data-engineering
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Databricks Data Engineering\"\n  description: \"Manage Azure Databricks clusters, jobs, and workspace objects for data engineering workflows. Used by data engineers and platform administrators.\"\n  tags:\n    - Azure\n    - Databricks\n    - Data Engineering\n    - Apache Spark\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATABRICKS_TOKEN: DATABRICKS_TOKEN\n      DATABRICKS_HOST: DATABRICKS_HOST\n\ncapability:\n  consumes:\n    - import: databricks\n      location: ./shared/databricks.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: databricks-engineering-api\n      description: \"Unified REST API for Azure Databricks data engineering.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: \"Manage Databricks clusters\"\n          operations:\n            - method: GET\n              name: list-clusters\n\
   \              description: \"List all clusters\"\n              call: \"databricks.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cluster\n              description: \"Create a new cluster\"\n              call: \"databricks.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Manage Databricks jobs\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List all jobs\"\n              call: \"databricks.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-job\n              description: \"Create a new job\"\n              call: \"databricks.create-job\"\n  \

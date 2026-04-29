@@ -34,58 +34,58 @@ personas: []
 provider_name: Amazon GuardDuty
 provider_slug: amazon-guardduty
 search_terms:
-- get finding details
-- threat intelligence feeds
+- monitoring
+- compliance
+- threat detection
+- threat findings from guardduty analysis
+- list all active guardduty detectors across the account
+- incident response
 - list all finding suppression filters
-- anomaly detection
-- create trusted ip set
+- machine learning
+- security
 - create a trusted ip set to exclude known safe ips from alerts
+- list finding filters
+- archive reviewed findings
+- enable guardduty for an account
+- security operations
+- list threat intel sets
+- get detailed information about specific threat findings including full context
+- create filter
+- list members
+- list all guardduty detectors
+- list findings
+- monitors security alerts and manages threat response workflows
+- archive findings
+- list detectors
+- get detector status
+- create a finding filter
+- get findings statistics
+- aws
+- create a suppression filter to reduce noise from benign findings
+- list trusted ip address sets excluded from threat detection
+- guardduty detector management
+- create detector
 - list threat findings
 - finding suppression filters
 - amazon guardduty
-- get finding statistics and severity counts for security posture overview
-- list member accounts monitored by this guardduty administrator account
-- get findings statistics
-- list trusted ip sets
-- guardduty detector management
-- create finding filter
-- monitors security alerts and manages threat response workflows
-- security operations
-- list all active guardduty detectors across the account
-- archive threat findings that have been reviewed and resolved
-- create detector
-- archive findings
-- SOC Engineer
-- compliance
-- aws
-- list all guardduty detectors
-- Cloud Security Engineer
 - investigates and responds to threat findings from guardduty
-- create a suppression filter to reduce noise from benign findings
-- configures guardduty detectors and threat intelligence feeds
-- machine learning
-- create filter
+- list member accounts monitored by this guardduty administrator account
+- list trusted ip sets
+- Cloud Security Engineer
+- get finding statistics and severity counts for security posture overview
+- threat intelligence feeds
 - list threat intelligence sets
-- list active threat findings detected by guardduty with severity filters
-- list trusted ip address sets excluded from threat detection
-- get detector status
-- security
-- incident response
-- list threat intelligence sets used for enhanced detection
-- enable guardduty for an account
 - Security Analyst
-- threat findings from guardduty analysis
-- get detailed information about specific threat findings including full context
+- create finding filter
 - get the configuration and status of a guardduty detector
-- monitoring
-- list detectors
-- list findings
-- list threat intel sets
-- list members
-- create a finding filter
-- threat detection
-- list finding filters
-- archive reviewed findings
+- list threat intelligence sets used for enhanced detection
+- configures guardduty detectors and threat intelligence feeds
+- archive threat findings that have been reviewed and resolved
+- SOC Engineer
+- anomaly detection
+- list active threat findings detected by guardduty with severity filters
+- create trusted ip set
+- get finding details
 slug: amazon-guardduty-threat-detection
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon GuardDuty Threat Detection\n  description: >-\n    Workflow capability for security teams using Amazon GuardDuty for AWS threat\n    detection and response. Covers finding management, detector configuration,\n    threat intelligence integration, and automated response workflows.\n  tags:\n    - Amazon GuardDuty\n    - Threat Detection\n    - Security Operations\n    - Incident Response\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-guardduty\n      location: ./shared/amazon-guardduty.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: guardduty-threat-detection-api\n      description: Unified REST API for Amazon GuardDuty threat detection operations.\n      resources:\n\
   \        - path: /v1/detectors\n          name: detectors\n          description: GuardDuty detector management\n          operations:\n            - method: GET\n              name: list-detectors\n              description: List all GuardDuty detectors\n              call: amazon-guardduty.ListDetectors\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-detector\n              description: Enable GuardDuty for an account\n              call: amazon-guardduty.CreateDetector\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/findings\n          name: findings\n          description: Threat findings from GuardDuty analysis\n          operations:\n            - method: GET\n              name: list-findings\n              description: List threat findings\n              call: amazon-guardduty.ListFindings\n        \

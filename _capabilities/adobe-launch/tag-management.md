@@ -51,58 +51,58 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list data elements
-- list extensions installed on a property
-- list tag properties for a company
-- install extension
-- company management
-- extension management
-- list extensions
-- build a library for deployment
-- create a new library
-- create a new data element
-- list rules
-- search
-- rule management
-- list rules configured for a property
-- marketing technology
-- browse available extension packages in the marketplace
-- library and build management
-- list libraries for a property
-- list data elements for a property
-- create a new tag property
-- create a new rule
-- data element management
-- data collection
-- event forwarding
-- environment management
-- create library
-- tag management
-- create build
 - get details of a specific property
-- get property
-- list all companies
-- list properties
-- extension package marketplace
-- tag property management
-- create a new tag rule
-- adobe launch
-- extensions
-- list rules for a property
-- list environments
-- list environments for a property
-- create property
-- list all companies you have access to
-- create rule
-- list extension packages
-- install an extension on a property
-- list libraries
-- list companies
-- list properties for a company
-- search across all tag management resources
-- edge network
+- list extensions
+- list rules
+- browse available extension packages in the marketplace
 - list available extension packages
+- extension package marketplace
+- library and build management
+- list tag properties for a company
 - create data element
+- tag property management
+- list rules configured for a property
+- list libraries
+- list data elements for a property
+- edge network
+- create a new rule
+- tag management
+- create rule
+- list libraries for a property
+- data element management
+- list extension packages
+- create property
+- environment management
+- search across all tag management resources
+- event forwarding
+- extension management
+- create a new library
+- list rules for a property
+- list data elements
+- search
+- list all companies you have access to
+- install extension
+- create a new tag property
+- build a library for deployment
+- create build
+- rule management
+- list properties for a company
+- list all companies
+- get property
+- list companies
+- adobe launch
+- marketing technology
+- create a new tag rule
+- list environments for a property
+- create library
+- company management
+- list environments
+- extensions
+- list extensions installed on a property
+- list properties
+- data collection
+- install an extension on a property
+- create a new data element
 slug: tag-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Launch Tag Management\"\n  description: \"Unified workflow for managing Adobe Experience Platform Tags. Combines the Reactor API and Extension API for marketing technologists and web developers managing tag properties, rules, data elements, extensions, and library builds.\"\n  tags:\n    - Adobe Launch\n    - Tag Management\n    - Marketing Technology\n    - Extensions\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ACCESS_TOKEN: ADOBE_ACCESS_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n      ADOBE_ORG_ID: ADOBE_ORG_ID\n\ncapability:\n  consumes:\n    - import: reactor\n      location: ./shared/reactor.yaml\n    - import: extension\n      location: ./shared/extension.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: tag-management-api\n      description: \"Unified REST API for Adobe Launch tag management.\"\n      resources:\n        - path:\
   \ /v1/companies\n          name: companies\n          description: \"Company management\"\n          operations:\n            - method: GET\n              name: list-companies\n              description: \"List all companies\"\n              call: \"reactor.list-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/properties\n          name: properties\n          description: \"Tag property management\"\n          operations:\n            - method: GET\n              name: list-properties\n              description: \"List properties for a company\"\n              call: \"reactor.list-properties\"\n              with:\n                companyId: \"rest.companyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-property\n              description: \"Create a new tag property\"\n              call: \"\

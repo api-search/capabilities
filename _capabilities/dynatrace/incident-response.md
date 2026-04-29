@@ -65,69 +65,69 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- get a specific event
-- get details of a specific event
-- get details of a specific monitored entity
-- apm
-- intelligence
-- automation
-- get problem details including root cause
-- create problem comment
-- ingest a custom event to annotate the timeline
-- ai operations
-- get problem
+- application performance monitoring
 - list events
-- get event
-- get a comment
-- query affected entities
-- update a comment
-- list problems detected by davis ai in the dynatrace environment
-- get full problem details with root cause analysis
-- problems
-- get event details
-- list comments on a problem
-- list monitored entities matching a selector
-- ingest custom events
-- add an investigation comment
-- digital experience management
-- list entities matching a selector
-- list events in the dynatrace environment
-- list problem comments
-- list problems
-- list entities
-- list events matching filters
-- ingest event
-- events
-- manage investigation comments
-- get problem comment
-- query events related to incidents
-- close an open problem with an optional closing message
-- application security
-- get full details of a specific problem including root cause analysis
+- close a problem with an optional message
 - incident response
-- update an investigation comment
+- add an investigation comment
+- ingest a custom event to annotate the timeline
+- list entities matching a selector
 - delete a comment from a problem
+- analytics
+- sre
+- cloud monitoring
+- ingest event
+- apm
+- observability
 - dynatrace
 - close problem
-- manage a specific comment
-- delete problem comment
-- delete a comment
+- list problems
 - add an investigation comment to a problem
+- manage investigation comments
+- update a comment
+- close an open problem with an optional closing message
+- delete problem comment
+- get full problem details with root cause analysis
+- list events matching filters
 - query and manage ai-detected problems
-- observability
-- get entity details for root cause investigation
-- get entity
-- analytics
-- get entity details
+- delete a comment
+- list entities
+- list problem comments
+- events
+- digital experience management
 - get a specific comment on a problem
+- get entity details for root cause investigation
+- get problem
 - update problem comment
-- close a problem with an optional message
-- application performance monitoring
+- get a comment
+- query affected entities
+- get details of a specific monitored entity
 - list investigation comments on a problem
-- cloud monitoring
+- list events in the dynatrace environment
 - list problems detected by davis ai
-- sre
+- get full details of a specific problem including root cause analysis
 - close a problem
+- automation
+- ai operations
+- manage a specific comment
+- list problems detected by davis ai in the dynatrace environment
+- get event
+- intelligence
+- list monitored entities matching a selector
+- get event details
+- get entity
+- application security
+- get problem details including root cause
+- list comments on a problem
+- create problem comment
+- get problem comment
+- ingest custom events
+- query events related to incidents
+- problems
+- update an investigation comment
+- get details of a specific event
+- get entity details
+- get a specific event
 slug: incident-response
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Incident Response\"\n  description: \"Unified incident response workflow combining problems, events, and entity data for SREs investigating service degradations detected by Davis AI.\"\n  tags:\n    - Dynatrace\n    - Incident Response\n    - SRE\n    - Problems\n    - Events\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_API_TOKEN: DYNATRACE_API_TOKEN\n      DYNATRACE_ENVIRONMENT_ID: DYNATRACE_ENVIRONMENT_ID\n\ncapability:\n  consumes:\n    - import: problems-v2\n      location: ./shared/problems-v2.yaml\n    - import: events-v2\n      location: ./shared/events-v2.yaml\n    - import: entities-v2\n      location: ./shared/entities-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: \"Unified REST API for Dynatrace incident response workflows.\"\n      resources:\n        - path: /v1/problems\n\
   \          name: problems\n          description: \"Query and manage AI-detected problems\"\n          operations:\n            - method: GET\n              name: list-problems\n              description: \"List problems detected by Davis AI\"\n              call: \"problems-v2.list-problems\"\n              with:\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                problemSelector: \"rest.problemSelector\"\n                entitySelector: \"rest.entitySelector\"\n                from: \"rest.from\"\n                to: \"rest.to\"\n                sort: \"rest.sort\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/problems/{problemId}\n          name: problem-detail\n          description: \"Get problem details including root cause\"\n          operations:\n            - method: GET\n              name: get-problem\n\

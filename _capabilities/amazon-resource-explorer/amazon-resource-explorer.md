@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
-- discovery
-- resource management
-- automation workflow for amazon resource explorer
 - amazon resource explorer resources
-- aws cloud resource management
-- inventory
-- amazon resource explorer
-- aws
-- list amazon resource explorer resources
 - list resources
-- cloud operations
+- aws
+- aws cloud resource management
+- discovery
+- amazon resource explorer
+- resource management
 - engineer managing amazon resource explorer resources
+- cloud operations
+- automation workflow for amazon resource explorer
+- list amazon resource explorer resources
+- inventory
 - operations
 slug: amazon-resource-explorer
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Resource Explorer Operations\n  description: Workflow capability for Amazon Resource Explorer. Enables automation of Amazon Resource Explorer resources for cloud operations teams.\n  tags:\n  - Amazon Resource Explorer\n  - AWS\n  - Cloud Operations\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY: AWS_ACCESS_KEY\n    AWS_SECRET_KEY: AWS_SECRET_KEY\ncapability:\n  consumes:\n  - import: amazon-resource-explorer\n    location: ./shared/amazon-resource-explorer.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amazon-resource-explorer-api\n    description: Unified REST API for Amazon Resource Explorer operations.\n    resources:\n    - path: /v1/resources\n      name: resources\n      description: Amazon Resource Explorer resources\n      operations:\n      - method: GET\n        name: list-resources\n        description: List Amazon Resource Explorer resources\n\

@@ -23,48 +23,48 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list products
-- api management
-- list developer apps
-- list apps for a developer.
-- google cloud
-- list all apps registered by a developer, including their api product subscriptions.
-- apigee
-- API Governance Lead
-- monetization
-- apps registered by a developer.
-- list all registered developers.
-- api hub
-- manager packaging api products and managing developer relationships.
-- developer portal
-- list api products
-- Platform Architect
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list all api products.
-- get developer app
-- microservices
 - get details for a specific developer including their registered apps.
-- api products available for subscription.
-- get details for a specific api product including its quota limits and proxy bindings.
-- architect overseeing api platform strategy and governance across the organization.
+- monetization
+- developer portal
+- API Governance Lead
+- google cloud
 - registered api developers.
-- list all api products available in the developer portal for subscription.
-- engineer managing api proxies, deployments, and policies in apigee.
-- list all developers registered in the apigee organization.
-- api gateway
 - analytics
-- app management
-- enterprise
-- get details for a specific developer app including its credentials and product subscriptions.
-- hybrid
-- API Platform Engineer
-- list developers
-- get api product
-- integrations
-- get developer
 - api governance
+- Platform Architect
 - api monetization
+- architect overseeing api platform strategy and governance across the organization.
+- manager packaging api products and managing developer relationships.
+- list apps for a developer.
+- list all registered developers.
 - API Product Manager
+- api hub
+- api management
+- list all developers registered in the apigee organization.
+- get details for a specific api product including its quota limits and proxy bindings.
+- API Platform Engineer
+- list all api products available in the developer portal for subscription.
+- list developers
+- apps registered by a developer.
+- list all api products.
+- microservices
+- list api products
+- list all apps registered by a developer, including their api product subscriptions.
+- integrations
+- get developer app
+- api gateway
+- list developer apps
+- enterprise
+- app management
+- apigee
+- get developer
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- get details for a specific developer app including its credentials and product subscriptions.
+- engineer managing api proxies, deployments, and policies in apigee.
+- hybrid
+- api products available for subscription.
+- get api product
+- list products
 slug: developer-portal-app-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee Developer Portal and App Management\"\n  description: \"Unified workflow for managing the Apigee developer ecosystem — developers, applications, API product subscriptions, and key management. Provides platform operations teams and API monetization owners a governed surface for onboarding developers, approving apps, and managing API access across products and environments.\"\n  tags:\n    - Apigee\n    - Developer Portal\n    - App Management\n    - API Monetization\n    - Google Cloud\n  created: \"2026-04-20\"\n  modified: \"2026-04-20\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-management\n      location: ./shared/api-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: apigee-devportal-api\n      description: \"Unified REST API for Apigee developer portal and app management.\"\n      resources:\n\
   \        - path: /v1/developers\n          name: developers\n          description: \"Registered API developers.\"\n          operations:\n            - method: GET\n              name: list-developers\n              description: \"List all registered developers.\"\n              call: \"api-management.listDevelopers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/developer-apps\n          name: developer-apps\n          description: \"Apps registered by a developer.\"\n          operations:\n            - method: GET\n              name: list-developer-apps\n              description: \"List apps for a developer.\"\n              call: \"api-management.listDeveloperApps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: api-products\n          description: \"API products available for subscription.\"\n          operations:\n\

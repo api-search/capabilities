@@ -49,84 +49,84 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- generate text with a specific model
-- generate images via multi-provider api.
-- run inference on any model
-- classify image
-- inference
-- detect objects in images.
-- convert text to speech via multi-provider api.
-- answer question
-- providers chat completion
-- list models available across all inference providers.
-- transcribe audio via multi-provider api.
-- answer questions based on provided context.
-- generate text using the tgi native endpoint.
-- text completions
-- text embeddings
-- tgi server info
-- create text completion via multi-provider api.
-- create chat completion via openai-compatible multi-provider api.
-- classify text into categories
-- providers text completion
-- run inference on any hugging face model by model id.
-- generate images from text
-- tgi generate
-- create text completion via providers
-- providers create embeddings
-- summarize text
-- translate text between languages
-- create chat completion via providers
-- text classification
 - hugging face
-- tgi chat completions
-- generate text using a language model via the inference api.
-- classify text into predefined categories.
-- tgi tokenize
-- run inference on a model via the inference api
-- compute similarity between sentences.
-- generate image
-- tokenize input text and return token ids.
-- translate
-- text translation
-- summarize
-- providers transcribe
-- text completion
-- classify text
-- generate text using the inference api
-- generate images from text prompts.
-- text summarization
-- create text embeddings via multi-provider api.
-- text generation
-- generate text
-- compute similarity
-- machine learning
-- zero shot classify
-- create chat completions using tgi openai-compatible messages api.
-- providers generate image
-- classify text without predefined training labels.
-- classify images into categories.
-- image generation
-- transcribe audio to text using automatic speech recognition.
-- translate text between languages.
-- fill in masked tokens in text.
-- list provider models
-- chat completion
-- transcribe speech
-- extract features
-- extract feature vectors from text for embeddings.
-- fill mask
-- create text embeddings
-- get tgi server information and deployed model details.
-- providers text to speech
 - detect objects
-- translate text
-- openai-compatible chat completions
-- run inference
+- tgi generate
+- fill in masked tokens in text.
+- providers create embeddings
+- text completions
+- tgi chat completions
+- compute similarity between sentences.
+- create chat completion via providers
+- list provider models
+- image generation
+- create text embeddings via multi-provider api.
+- detect objects in images.
+- providers chat completion
+- convert text to speech via multi-provider api.
+- fill mask
 - ai
+- providers transcribe
+- text generation
+- create text embeddings
+- openai-compatible chat completions
+- generate text using the tgi native endpoint.
+- chat completion
+- classify text into predefined categories.
+- generate text
+- run inference on any model
+- summarize
+- text embeddings
+- machine learning
+- translate text between languages.
+- classify text
+- providers text completion
+- create text completion via multi-provider api.
+- answer question
+- providers text to speech
+- generate images from text
+- text completion
+- text summarization
+- answer questions based on provided context.
+- transcribe speech
+- generate image
+- create chat completion via openai-compatible multi-provider api.
+- translate text
+- text classification
+- classify text into categories
+- run inference on a model via the inference api
+- transcribe audio via multi-provider api.
+- extract feature vectors from text for embeddings.
+- zero shot classify
+- summarize text
+- providers generate image
+- translate
+- tgi server info
+- extract features
+- get tgi server information and deployed model details.
+- generate text using the inference api
 - create embeddings
-- summarize text content.
+- translate text between languages
+- tgi tokenize
+- compute similarity
+- generate images from text prompts.
+- list models available across all inference providers.
+- tokenize input text and return token ids.
+- transcribe audio to text using automatic speech recognition.
+- inference
+- classify images into categories.
 - summarize text content
+- generate text with a specific model
+- generate text using a language model via the inference api.
+- run inference
+- classify text without predefined training labels.
+- run inference on any hugging face model by model id.
+- summarize text content.
+- text translation
+- create text completion via providers
+- generate images via multi-provider api.
+- create chat completions using tgi openai-compatible messages api.
+- classify image
 slug: model-inference
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hugging Face Model Inference\"\n  description: \"Unified workflow for running AI/ML inference across Hugging Face APIs, combining the Inference API, Inference Providers, and Text Generation Inference for NLP, vision, audio, and multimodal tasks. Used by ML engineers and AI application developers.\"\n  tags:\n    - Hugging Face\n    - Machine Learning\n    - Inference\n    - AI\n    - Text Generation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HF_API_TOKEN: HF_API_TOKEN\n\ncapability:\n  consumes:\n    - import: hf-inference\n      location: ./shared/inference.yaml\n    - import: hf-providers\n      location: ./shared/inference-providers.yaml\n    - import: hf-tgi\n      location: ./shared/text-generation-inference.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hf-model-inference-api\n      description: \"Unified REST API for running ML inference\
   \ across Hugging Face services.\"\n      resources:\n        - path: /v1/inference/{model_id}\n          name: inference\n          description: \"Run inference on any model\"\n          operations:\n            - method: POST\n              name: run-inference\n              description: \"Run inference on a model via the Inference API\"\n              call: \"hf-inference.run-inference\"\n              with:\n                model_id: \"rest.model_id\"\n                inputs: \"rest.inputs\"\n                parameters: \"rest.parameters\"\n                options: \"rest.options\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/text-generation/{model_id}\n          name: text-generation\n          description: \"Generate text with a specific model\"\n          operations:\n            - method: POST\n              name: text-generation\n              description: \"Generate text using the Inference API\"\n   \

@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- get details of a specific app.
-- list testers
-- update app metadata.
-- list all apps in app store connect.
-- list groups
-- list all apps.
-- create tester
-- apple
-- read beta tester
-- create beta group
-- developer
-- list beta groups
-- list all builds.
-- list beta testers
-- read app
-- modify app
-- app management.
 - testflight
-- list builds
-- add a beta tester.
-- list all beta groups.
-- technology
-- delete beta tester
-- delete beta group
-- ios
-- get beta tester details.
-- delete a beta group.
-- get beta group details.
-- beta group management.
-- create a beta group.
-- get build details.
-- macos
-- app store
-- list beta testers.
-- beta tester management.
-- update build information.
-- add a new beta tester.
-- create group
-- update a beta group.
-- read beta group
-- mobile
-- list all beta testers.
-- build management.
-- create a new beta group.
-- modify beta group
-- app management
-- create beta tester
-- list beta groups.
 - list apps
-- remove a beta tester.
+- update build information.
+- list beta groups.
+- list beta testers.
+- read app
+- developer
+- add a new beta tester.
+- list groups
+- create a new beta group.
+- delete beta group
+- create tester
 - modify build
+- delete a beta group.
+- ios
+- list all builds.
+- modify beta group
+- app store
+- list builds
+- get beta group details.
+- create beta tester
+- macos
+- beta group management.
+- get build details.
+- add a beta tester.
+- build management.
+- create group
+- create a beta group.
+- read beta group
+- remove a beta tester.
+- list all beta testers.
+- apple
 - read build
+- list beta groups
+- modify app
+- update a beta group.
+- get details of a specific app.
+- delete beta tester
+- list all apps.
+- list beta testers
+- get beta tester details.
+- update app metadata.
+- app management
+- list all beta groups.
+- beta tester management.
+- create beta group
+- technology
+- list testers
+- read beta tester
+- app management.
+- mobile
+- list all apps in app store connect.
 slug: app-lifecycle
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apple App Lifecycle\"\n  description: \"Unified workflow for managing the Apple app lifecycle including app metadata, builds, TestFlight beta testing, and beta group management. Used by app developers and release managers.\"\n  tags:\n    - Apple\n    - App Store\n    - TestFlight\n    - App Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPLE_ASC_TOKEN: APPLE_ASC_TOKEN\n\ncapability:\n  consumes:\n    - import: app-store-connect\n      location: ./shared/app-store-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apple-app-lifecycle-api\n      description: \"Unified REST API for Apple app lifecycle management.\"\n      resources:\n        - path: /v1/apps\n          name: apps\n          description: \"App management.\"\n          operations:\n            - method: GET\n              name: list-apps\n              description: \"\
   List all apps.\"\n              call: \"app-store-connect.list-apps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/builds\n          name: builds\n          description: \"Build management.\"\n          operations:\n            - method: GET\n              name: list-builds\n              description: \"List all builds.\"\n              call: \"app-store-connect.list-builds\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/testers\n          name: testers\n          description: \"Beta tester management.\"\n          operations:\n            - method: GET\n              name: list-testers\n              description: \"List beta testers.\"\n              call: \"app-store-connect.list-beta-testers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n             \

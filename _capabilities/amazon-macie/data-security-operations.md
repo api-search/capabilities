@@ -39,50 +39,50 @@ personas: []
 provider_name: Amazon Macie
 provider_slug: amazon-macie
 search_terms:
-- get finding details
-- manages macie configuration, discovery jobs, and investigates sensitive data findings
-- describe buckets
-- data discovery jobs
-- automated discovery and classification of sensitive data in s3
-- list all discovery jobs
-- data security
-- list jobs
-- workflow for discovering sensitive data, investigating findings, and managing data security posture
-- list identifiers
-- create a job to discover sensitive data in s3 buckets
-- sensitive data
 - compliance
 - create a custom pattern to detect organization-specific sensitive data types
-- aws
-- get bucket security posture
-- get findings
+- managing and investigating sensitive data findings
+- create job
+- data discovery jobs
+- reviews sensitive data findings to ensure data governance and regulatory compliance
 - create a data discovery job
+- list all sensitive data findings detected by macie
 - Security Engineer
 - machine learning
-- amazon
-- list all sensitive data findings detected by macie
-- sensitive data findings
-- s3
-- get detailed information about specific sensitive data findings
-- reviews sensitive data findings to ensure data governance and regulatory compliance
-- list all custom sensitive data identifiers
-- create discovery job
-- list sensitive data findings
-- create job
-- privacy
-- monitored s3 buckets
-- list all sensitive data discovery jobs
-- list discovery jobs
-- get security details and sensitive data statistics for monitored s3 buckets
-- get bucket security details
-- list findings
-- managing and investigating sensitive data findings
-- custom patterns for identifying organization-specific sensitive data
+- workflow for discovering sensitive data, investigating findings, and managing data security posture
+- describe buckets
 - custom data identifiers
-- create identifier
-- list custom identifiers
-- create custom data identifier
+- sensitive data
+- privacy
+- list identifiers
+- list jobs
 - Compliance Officer
+- get findings
+- list findings
+- list all discovery jobs
+- list sensitive data findings
+- create custom data identifier
+- list all custom sensitive data identifiers
+- amazon
+- get bucket security posture
+- list all sensitive data discovery jobs
+- aws
+- s3
+- monitored s3 buckets
+- create identifier
+- sensitive data findings
+- create discovery job
+- get security details and sensitive data statistics for monitored s3 buckets
+- list custom identifiers
+- automated discovery and classification of sensitive data in s3
+- custom patterns for identifying organization-specific sensitive data
+- get bucket security details
+- create a job to discover sensitive data in s3 buckets
+- list discovery jobs
+- get detailed information about specific sensitive data findings
+- manages macie configuration, discovery jobs, and investigates sensitive data findings
+- data security
+- get finding details
 slug: data-security-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Macie - Data Security Operations\"\n  description: \"Workflow capability for security and compliance teams to discover sensitive data, investigate findings, and manage data security posture in Amazon S3 using Amazon Macie.\"\n  tags:\n    - Amazon\n    - Data Security\n    - Sensitive Data\n    - Privacy\n    - Compliance\n    - S3\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: macie\n      location: ./shared/macie.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: data-security-api\n      description: \"Unified REST API for Amazon Macie data security operations.\"\n      resources:\n        - path: /v1/findings\n          name: findings\n          description: \"Sensitive data findings\"\
   \n          operations:\n            - method: GET\n              name: list-findings\n              description: \"List sensitive data findings\"\n              call: \"macie.list-findings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: get-findings\n              description: \"Get finding details\"\n              call: \"macie.get-findings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Data discovery jobs\"\n          operations:\n            - method: POST\n              name: create-job\n              description: \"Create a data discovery job\"\n              call: \"macie.create-classification-job\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-jobs\n\

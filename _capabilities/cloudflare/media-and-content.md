@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- images get image
-- ddos protection
-- list all videos.
-- list all images.
-- cdn
-- ai gateway
-- cloud
+- images
 - video
-- web performance
+- delete an image.
+- list videos.
 - stream list videos
 - get image details.
-- stream create direct upload
-- image management.
-- create a direct upload url for images.
-- list image variants.
-- media
-- list videos.
-- create a live streaming input.
-- real-time communication
-- serverless
-- stream get video
-- list live streaming inputs.
-- images delete image
-- containers
-- edge computing
-- object storage
-- list images
-- get video details.
-- images create direct upload
-- images upload image
-- delete an image.
-- platform
 - stream create live input
-- upload an image.
-- stream list live inputs
-- security
-- list images.
-- video management.
-- delete a video.
-- cloudflare
-- list videos
+- images upload image
+- images delete image
+- media
+- list image variants.
 - create a direct upload url.
 - images list variants
-- api gateway
-- artificial intelligence
-- upload a video from url.
-- stream delete video
-- stream upload video
-- images list images
-- images
-- dns
+- stream list live inputs
 - edge
+- security
+- list images
+- platform
+- cloud
+- edge computing
+- containers
+- dns
+- stream delete video
+- ai gateway
+- serverless
+- cloudflare
+- upload an image.
+- get video details.
+- images get image
+- delete a video.
+- images create direct upload
+- ddos protection
+- images list images
+- list images.
+- artificial intelligence
+- stream create direct upload
+- api gateway
+- upload a video from url.
+- video management.
+- create a direct upload url for images.
+- list all videos.
+- object storage
+- web performance
+- image management.
+- stream get video
+- list all images.
+- list live streaming inputs.
+- create a live streaming input.
+- stream upload video
+- cdn
+- list videos
+- real-time communication
 slug: media-and-content
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare Media and Content\"\n  description: \"Media management combining Stream video platform and Images service for uploading, processing, and delivering video and image content at scale. Used by content creators and media engineers.\"\n  tags:\n    - Cloudflare\n    - Media\n    - Video\n    - Images\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-stream\n      location: ./shared/stream.yaml\n    - import: cloudflare-images\n      location: ./shared/images.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: media-content-api\n      description: \"Unified REST API for Cloudflare media and content services.\"\n      resources:\n        - path: /v1/videos\n          name: videos\n          description: \"Video management.\"\n          operations:\n      \
   \      - method: GET\n              name: list-videos\n              description: \"List videos.\"\n              call: \"cloudflare-stream.list-videos\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/images\n          name: images\n          description: \"Image management.\"\n          operations:\n            - method: GET\n              name: list-images\n              description: \"List images.\"\n              call: \"cloudflare-images.list-images\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: media-content-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare media management.\"\n      tools:\n        - name: stream-list-videos\n\

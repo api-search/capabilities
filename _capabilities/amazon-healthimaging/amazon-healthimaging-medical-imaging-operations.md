@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
-- dicom
-- machine learning
-- medical imaging
 - aws
+- medical imaging
+- machine learning
 - healthcare
+- dicom
 - hipaa
 slug: amazon-healthimaging-medical-imaging-operations
 source_yaml: "name: Amazon HealthImaging Medical Imaging Operations\nversion: 1.0.0-alpha1\ndescription: Workflow capability for managing HIPAA-eligible medical imaging data including datastores, image sets, and DICOM import jobs.\npersona:\n  - Healthcare Developer\n  - Medical Imaging Engineer\n  - HIPAA Compliance Officer\napis:\n  - Amazon HealthImaging\ntools:\n  - name: list_datastores\n    description: List all HealthImaging datastores in the account\n    operationId: ListDatastores\n    method: GET\n    path: /datastore\n  - name: create_datastore\n    description: Create a new datastore for storing medical imaging data\n    operationId: CreateDatastore\n    method: POST\n    path: /datastore\n  - name: get_datastore\n    description: Get details of a specific datastore\n    operationId: GetDatastore\n    method: GET\n    path: /datastore/{datastoreId}\n  - name: delete_datastore\n    description: Delete a datastore and all its contents\n    operationId: DeleteDatastore\n    method:\

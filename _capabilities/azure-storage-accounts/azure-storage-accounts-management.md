@@ -14,26 +14,26 @@ personas: []
 provider_name: Azure Storage Accounts
 provider_slug: azure-storage-accounts
 search_terms:
-- resource management
+- list
 - storage
-- list blob containers
+- table storage
+- list storage accounts
 - cloud
-- azure resource management
-- queue storage
+- list queue resources
+- list blob containers
+- list fileshare resources
 - cloud storage
+- blob storage
+- list all resources
+- azure resource management
+- azure
 - list storageaccount resources
 - list blobcontainer resources
-- table storage
-- list
-- list storage accounts
-- list queues
-- management
-- list all resources
-- blob storage
-- list queue resources
-- azure
-- list fileshare resources
+- queue storage
 - list file shares
+- list queues
+- resource management
+- management
 - file storage
 slug: azure-storage-accounts-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Storage Accounts Management\"\n  description: \"Workflow capability for managing Azure Storage Accounts resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-storage-accounts\n      location: ./shared/azure-storage-accounts.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: azure-storage-accounts-management-api\n      description: \"Unified REST API for Azure Storage Accounts management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n              description:\

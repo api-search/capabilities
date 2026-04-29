@@ -31,42 +31,42 @@ personas: []
 provider_name: Azure Kubernetes Service
 provider_slug: azure-kubernetes-service
 search_terms:
-- single cluster operations
-- create or update agent pool
-- cluster management
-- get agent pool
-- get cluster
-- get agent pool details
-- start a stopped aks cluster
-- list all managed clusters
-- cloud
-- devops
-- list agent pools in a cluster
-- list agent pools
-- stop cluster
-- cluster lifecycle operations
-- create or update an agent pool
-- list clusters
-- create or update an aks managed cluster
-- containers
-- delete a cluster
-- get upgrade profile
-- stop a running aks cluster
-- start cluster
-- kubernetes
-- orchestration
-- get the upgrade profile for a cluster
-- get cluster details
-- agent pool operations
-- delete agent pool
-- delete an aks managed cluster
-- delete an agent pool from a cluster
-- list all aks managed clusters in a subscription
-- azure
-- create or update cluster
-- create or update a cluster
 - get details of an aks cluster
+- get cluster
+- orchestration
+- get cluster details
+- get agent pool details
+- create or update agent pool
 - delete cluster
+- delete an aks managed cluster
+- create or update cluster
+- delete agent pool
+- agent pool operations
+- list clusters
+- single cluster operations
+- stop cluster
+- cloud
+- containers
+- create or update an agent pool
+- get upgrade profile
+- create or update a cluster
+- delete a cluster
+- devops
+- azure
+- get agent pool
+- list agent pools in a cluster
+- stop a running aks cluster
+- get the upgrade profile for a cluster
+- cluster management
+- kubernetes
+- list agent pools
+- cluster lifecycle operations
+- list all managed clusters
+- delete an agent pool from a cluster
+- start a stopped aks cluster
+- list all aks managed clusters in a subscription
+- create or update an aks managed cluster
+- start cluster
 slug: cluster-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Kubernetes Service Cluster Management\"\n  description: \"Workflow for managing AKS clusters and agent pools including lifecycle operations, upgrades, scaling, and credentials. Used by DevOps engineers and platform administrators.\"\n  tags:\n    - Azure\n    - Kubernetes\n    - Cluster Management\n    - DevOps\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_BEARER_TOKEN: AZURE_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: aks-rest\n      location: ./shared/aks-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aks-cluster-api\n      description: \"Unified REST API for AKS cluster management.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: \"Cluster lifecycle operations\"\n          operations:\n            - method: GET\n              name: list-clusters\n              description:\
   \ \"List all managed clusters\"\n              call: \"aks-rest.list-clusters\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters/{resourceName}\n          name: cluster\n          description: \"Single cluster operations\"\n          operations:\n            - method: GET\n              name: get-cluster\n              description: \"Get cluster details\"\n              call: \"aks-rest.get-cluster\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n                resourceGroupName: \"rest.resourceGroupName\"\n                resourceName: \"rest.resourceName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: create-or-update-cluster\n              description: \"Create or update a cluster\"\n         \

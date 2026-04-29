@@ -23,39 +23,39 @@ provider_name: Actor Model
 provider_slug: actor-model
 search_terms:
 - spawn actor
-- list all cluster nodes with their status, roles, and actor counts
-- monitors actor system health, throughput, and failure recovery
-- cluster management
-- spawn a new actor
-- distributed cluster management, sharding, and fault tolerance
-- supervision
-- list supervisors
-- get actor system health including throughput, error rate, and dead letter count
-- get system health
-- Distributed Systems Developer
-- actor model
+- concurrency
 - inspect mailbox
 - list all actors in the system filtered by status
-- get details of a specific actor including mailbox size and restart count
+- concurrent computation using actors, message passing, and isolation
+- builds and operates distributed platforms using actor model frameworks like akka or orleans
+- send message
 - send a typed message to an actor's mailbox for asynchronous processing
+- Distributed Systems Developer
+- get details of a specific actor including mailbox size and restart count
+- distributed cluster management, sharding, and fault tolerance
+- designs concurrent, fault-tolerant systems using actor model patterns
+- list supervisors with their strategies and child actor counts
+- actor lifecycle management
+- spawn a new actor
 - system health status
-- distributed systems
-- get health
+- get system health
+- get actor system health including throughput, error rate, and dead letter count
 - list cluster members
 - Site Reliability Engineer
-- designs concurrent, fault-tolerant systems using actor model patterns
-- list all active actors
+- list supervisors
+- actor model
+- list all cluster nodes with their status, roles, and actor counts
 - list actors
-- builds and operates distributed platforms using actor model frameworks like akka or orleans
-- concurrency
-- concurrent computation using actors, message passing, and isolation
+- cluster management
 - Platform Engineer
-- list supervisors with their strategies and child actor counts
-- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
-- actor lifecycle management
-- get actor
-- send message
 - inspect pending messages in an actor's mailbox for debugging
+- get health
+- monitors actor system health, throughput, and failure recovery
+- supervision
+- distributed systems
+- manage actor lifecycle, message passing, supervision hierarchies, and cluster operations
+- list all active actors
+- get actor
 slug: actor-system-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Actor System Management\"\n  description: \"Workflow for managing actor lifecycle, message passing, supervision hierarchies, and cluster operations in distributed actor model systems. Used by platform engineers and distributed systems developers.\"\n  tags:\n    - Actor Model\n    - Concurrency\n    - Distributed Systems\n    - Supervision\n    - Cluster Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTOR_SYSTEM_API_TOKEN: ACTOR_SYSTEM_API_TOKEN\n\ncapability:\n  consumes:\n    - import: actor-model\n      location: ./shared/actor-model.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: actor-system-api\n      description: \"Unified REST API for actor system management.\"\n      resources:\n        - path: /v1/actors\n          name: actors\n          description: \"Actor lifecycle management\"\n          operations:\n            - method:\
   \ GET\n              name: list-actors\n              description: \"List all active actors\"\n              call: \"actor-model.list-actors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: spawn-actor\n              description: \"Spawn a new actor\"\n              call: \"actor-model.spawn-actor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health\n          name: health\n          description: \"System health status\"\n          operations:\n            - method: GET\n              name: get-health\n              description: \"Get system health\"\n              call: \"actor-model.get-health\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: actor-system-mcp\n      transport: http\n      description: \"\

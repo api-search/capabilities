@@ -54,68 +54,68 @@ personas: []
 provider_name: Amazon DevOps Guru
 provider_slug: amazon-devops-guru
 search_terms:
-- get cost estimation
-- get the resource collection devops guru monitors
-- anomaly detection
-- site reliability engineering
-- list notification channels
-- resource coverage configuration
-- operational intelligence
-- sre using devops guru to maintain service level objectives and reduce mttr
-- remediation recommendations
-- machine learning powered operational insights
-- get the current health of the account including counts of open proactive and reactive insights
-- amazon devops guru
-- get details about a specific insight
-- list events
-- devops
-- list proactive and reactive insights
-- list insights
-- update resource collection
-- DevOps Engineer
-- account-level operational health
-- describe anomaly
-- get actionable recommendations to resolve a specific insight
+- configuring resource coverage and notification channels
 - describe insight
-- aws
+- list events
+- get resource collection
+- update resource collection
+- list events during an insight's time range
+- list anomalies
+- list machine learning powered operational insights by status (ongoing, closed) and type (proactive, reactive)
+- get the current health of the account including counts of open proactive and reactive insights
+- search for insights with custom filters on severity, status, and service collection
+- list insights
+- sre using devops guru to maintain service level objectives and reduce mttr
+- check the integration status with opscenter, cloudwatch logs, and other aws services
+- list recommendations
 - list anomalies associated with an insight
-- alert notification configuration
-- add notification channel
-- add an sns notification channel
-- anomalies linked to an insight
+- amazon devops guru
+- search insights
+- describe anomaly
+- ml-powered detection and analysis of operational anomalies
+- get details about a specific insight
+- machine learning
+- get detailed information about a specific anomaly
+- search insights with filters
+- resource coverage configuration
+- list proactive and reactive insights
+- describe account health
+- list notification channels
+- account-level operational health
+- get an overview of open and closed insights for a specified time period
+- get actionable recommendations to resolve a specific insight
+- get the collection of aws resources that devops guru is currently monitoring
 - get the estimated monthly cost for devops guru monitoring your resources
+- add or remove cloudformation stacks from the devops guru monitoring scope
+- site reliability engineering
+- get cost estimation
+- DevOps Engineer
+- get the resource collection devops guru monitors
+- update which resources devops guru monitors
+- devops
+- aws
+- add notification channel
+- get detailed information about a specific insight including its severity and resource details
+- operational intelligence
+- alert notification configuration
+- end-to-end operational intelligence workflow for devops engineers and sres
 - Site Reliability Engineer
 - describe service integration
-- configuring resource coverage and notification channels
-- update which resources devops guru monitors
-- get an overview of open and closed insights for a specified time period
-- search for insights with custom filters on severity, status, and service collection
-- search insights with filters
-- list anomalies associated with a specific insight to understand the root cause
-- list anomalies for insight
 - devops engineer using ml insights to proactively identify and resolve operational issues
-- machine learning
-- describe account health
-- ml-powered detection and analysis of operational anomalies
-- events correlated with insights
-- list cloudwatch events correlated with an insight during its time window
-- list machine learning powered operational insights by status (ongoing, closed) and type (proactive, reactive)
-- list sns notification channels configured for devops guru alerts
-- get resource collection
-- list recommendations
 - get account health with open insight counts
-- get detailed information about a specific insight including its severity and resource details
-- add or remove cloudformation stacks from the devops guru monitoring scope
-- get detailed information about a specific anomaly
-- search insights
-- get the collection of aws resources that devops guru is currently monitoring
-- list events during an insight's time range
-- get remediation recommendations for an insight
-- check the integration status with opscenter, cloudwatch logs, and other aws services
-- end-to-end operational intelligence workflow for devops engineers and sres
+- list anomalies associated with a specific insight to understand the root cause
 - describe account overview
-- list anomalies
+- remediation recommendations
 - individual insight details
+- anomaly detection
+- add an sns notification channel
+- list anomalies for insight
+- events correlated with insights
+- list sns notification channels configured for devops guru alerts
+- machine learning powered operational insights
+- list cloudwatch events correlated with an insight during its time window
+- get remediation recommendations for an insight
+- anomalies linked to an insight
 slug: operational-intelligence
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon DevOps Guru Operational Intelligence\n  description: >-\n    Workflow capability for DevOps engineers and SREs to monitor application health,\n    investigate anomalies, follow remediation recommendations, and configure\n    operational intelligence coverage using Amazon DevOps Guru's machine learning\n    powered insights.\n  tags:\n    - Amazon DevOps Guru\n    - Operational Intelligence\n    - Anomaly Detection\n    - Site Reliability Engineering\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: devops-guru\n      location: ./shared/devops-guru-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: operational-intelligence-api\n      description: Unified REST API for Amazon DevOps\
   \ Guru operational intelligence workflows.\n      resources:\n        - path: /v1/account/health\n          name: account-health\n          description: Account-level operational health\n          operations:\n            - method: GET\n              name: describe-account-health\n              description: Get account health with open insight counts\n              call: \"devops-guru.describe-account-health\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/insights\n          name: insights\n          description: Machine learning powered operational insights\n          operations:\n            - method: GET\n              name: list-insights\n              description: List proactive and reactive insights\n              call: \"devops-guru.list-insights\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: search-insights\n\

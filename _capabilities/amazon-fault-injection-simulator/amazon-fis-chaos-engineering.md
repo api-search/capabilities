@@ -54,60 +54,60 @@ personas: []
 provider_name: Amazon Fault Injection Simulator
 provider_slug: amazon-fault-injection-simulator
 search_terms:
-- execute a fault injection experiment from a template
-- manage specific experiment
-- design a new fault injection scenario with targets, actions, and stop conditions
-- get safety lever
-- deliberate fault injection to test system resilience
-- monitoring system behavior during controlled experiments
-- list all fault injection experiment templates
+- resilience testing
 - create template
-- list experiments
-- devops
+- sre
+- manage experiment templates
+- list all experiments and their current status
+- engineers designing and running chaos experiments to improve system reliability
+- modify targets, actions, or stop conditions of an experiment template
+- update safety lever state
+- aws fis
+- list actions
+- resilience
+- update template
+- validating application behavior under failure conditions
+- get template
 - check the status of a safety lever for experiment control
-- chaos engineering
 - manage experiments
-- delete experiment template
-- DevOps Engineer
-- get experiment
+- Resilience Engineer
+- deliberate fault injection to test system resilience
+- list experiments
 - create experiment template
+- DevOps Engineer
+- delete experiment template
+- get action
+- get experiment
+- SRE
+- update experiment template
+- get safety lever
+- devops
+- manage specific template
+- start experiment
+- manage specific experiment
+- aws
+- design a new fault injection scenario with targets, actions, and stop conditions
+- list templates
+- engage or disengage a safety lever to allow or block experiments
 - fault injection
 - get details and parameters for a specific fis action
-- SRE
-- sres using fis to validate service resilience targets
-- stop experiment
-- aws
+- list all fault injection experiment templates
 - abort a running fault injection experiment
-- update template
-- manage specific template
-- get template
-- full chaos engineering lifecycle
+- chaos engineering
 - delete template
-- get experiment template
-- engineers integrating fis into ci/cd for automated resilience testing
-- aws fis
 - discover all available fault injection action types
-- engage or disengage a safety lever to allow or block experiments
-- list templates
-- monitor the status and progress of a fault injection experiment
-- list actions
-- resilience testing
-- engineers designing and running chaos experiments to improve system reliability
-- list all experiments and their current status
-- modify targets, actions, or stop conditions of an experiment template
-- list experiment templates
+- monitoring system behavior during controlled experiments
 - get the configuration of an experiment template
-- resilience
-- update safety lever state
-- remove an experiment template
-- start experiment
-- update experiment template
-- Resilience Engineer
-- get action
-- manage experiment templates
-- validating application behavior under failure conditions
-- sre
+- stop experiment
+- get experiment template
+- full chaos engineering lifecycle
+- list experiment templates
+- monitor the status and progress of a fault injection experiment
+- engineers integrating fis into ci/cd for automated resilience testing
 - safety lever control
+- execute a fault injection experiment from a template
+- sres using fis to validate service resilience targets
+- remove an experiment template
 slug: amazon-fis-chaos-engineering
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: AWS FIS Chaos Engineering\n  description: Workflow capability for executing chaos engineering experiments using AWS FIS. Enables resilience engineers and SREs to design, execute, and monitor fault injection experiments across \n    AWS infrastructure.\n  tags:\n  - AWS FIS\n  - Chaos Engineering\n  - Resilience\n  - SRE\n  - DevOps\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: fis\n    location: ./shared/fis.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: fis-chaos-api\n    description: Unified REST API for AWS FIS chaos engineering workflows.\n    resources:\n    - path: /v1/experiment-templates\n      name: experiment-templates\n      description: Manage experiment templates\n      operations:\n      - method: GET\n     \
   \   name: list-experiment-templates\n        description: List templates\n        call: fis.list-experiment-templates\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-experiment-template\n        description: Create template\n        call: fis.create-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiment-templates/{id}\n      name: experiment-template\n      description: Manage specific template\n      operations:\n      - method: GET\n        name: get-experiment-template\n        description: Get template\n        call: fis.get-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-experiment-template\n        description: Update template\n        call: fis.update-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method:\

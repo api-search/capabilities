@@ -23,36 +23,36 @@ personas: []
 provider_name: Apache Atlas
 provider_slug: apache-atlas
 search_terms:
+- compliance
+- data lineage
+- get entity.
+- engineers tracking data lineage and managing metadata for pipelines.
+- big data
+- metadata
+- metadata discovery, lineage tracking, and governance workflow.
+- hadoop
+- search entities.
+- apache atlas
+- Data Engineer
+- data governance
+- create entities
+- apache
+- fulltext search
+- get entity
+- list glossaries
+- teams responsible for data quality, compliance, and metadata policies.
+- Data Governance Team
 - search atlas metadata entities by type and attributes.
 - get lineage
-- big data
 - create metadata entities in atlas for data governance.
-- data governance
-- search entities.
-- teams responsible for data quality, compliance, and metadata policies.
-- list glossaries
-- compliance
-- metadata discovery, lineage tracking, and governance workflow.
-- create entities
-- full-text search across all atlas metadata.
-- get entity lineage.
-- hadoop
-- get an atlas entity by guid.
-- data lineage
-- Data Engineer
-- search entities
-- metadata management
 - get data lineage graph for an atlas entity.
-- get entity.
-- fulltext search
-- engineers tracking data lineage and managing metadata for pipelines.
-- Data Governance Team
-- apache
 - list business glossaries for data governance.
-- get entity
-- metadata
+- metadata management
+- search entities
+- get entity lineage.
+- full-text search across all atlas metadata.
+- get an atlas entity by guid.
 - open source
-- apache atlas
 slug: atlas-data-governance
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache Atlas Data Governance\n  description: Unified capability for Apache Atlas data governance workflows \n    including metadata discovery, lineage tracking, entity management, and \n    glossary management. Used by data governance teams and data engineers.\n  tags:\n  - Apache Atlas\n  - Data Governance\n  - Metadata Management\n  - Data Lineage\n  - Compliance\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    ATLAS_USERNAME: ATLAS_USERNAME\n    ATLAS_PASSWORD: ATLAS_PASSWORD\ncapability:\n  consumes:\n  - import: atlas-rest\n    location: ./shared/atlas-rest.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: atlas-governance-api\n    description: Unified REST API for Atlas data governance.\n    resources:\n    - path: /v1/entities/{guid}\n      name: entities\n      operations:\n      - method: GET\n        name: get-entity\n        description: Get entity.\n        call: atlas-rest.get-entity\n\
   \        with:\n          guid: rest.guid\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/search\n      name: search\n      operations:\n      - method: GET\n        name: search-entities\n        description: Search entities.\n        call: atlas-rest.basic-search\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/lineage/{guid}\n      name: lineage\n      operations:\n      - method: GET\n        name: get-lineage\n        description: Get entity lineage.\n        call: atlas-rest.get-lineage\n        with:\n          guid: rest.guid\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: atlas-governance-mcp\n    transport: http\n    description: MCP server for AI-assisted data governance with Apache Atlas.\n    tools:\n    - name: get-entity\n      description: Get an Atlas entity by GUID.\n      hints:\n        readOnly: true\n      call:\

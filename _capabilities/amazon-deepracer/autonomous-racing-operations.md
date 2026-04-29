@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon DeepRacer
 provider_slug: amazon-deepracer
 search_terms:
+- autonomous vehicles
+- aws
+- reinforcement learning
 - robotics
 - machine learning
-- aws
-- autonomous vehicles
-- reinforcement learning
 slug: autonomous-racing-operations
 source_yaml: "id: https://api-evangelist.github.io/amazon-deepracer/capabilities/autonomous-racing-operations.yaml\nname: Autonomous Racing Operations\ndescription: Workflow-oriented Naftiko capability for autonomous racing management using Amazon DeepRacer, covering model deployment, leaderboard participation, vehicle configuration, and competitive racing for ML practitioners and racing enthusiasts.\nversion: 1.0.0-alpha1\nspecificationVersion: 1.0.0-alpha1\n\ntags:\n  - Machine Learning\n  - Reinforcement Learning\n  - Autonomous Racing\n  - Robotics\n  - AWS\n\nimports:\n  - url: capabilities/shared/deepracer.yaml\n    as: deepracer\n\npersonas:\n  - name: ML Practitioner\n    description: Developer training and iterating on reinforcement learning models for autonomous racing\n  - name: Race Participant\n    description: Competitor submitting models to DeepRacer leaderboards and virtual racing events\n  - name: Event Organizer\n    description: Administrator managing DeepRacer racing\
   \ events, leaderboards, and participant access\n\nworkflows:\n  - name: Evaluate Model Performance\n    description: Review trained reinforcement learning models and their performance metrics before leaderboard submission\n    steps:\n      - step: listModels\n        capability: deepracer\n        description: List all available trained models\n      - step: getModel\n        capability: deepracer\n        description: Inspect model details and training status\n      - step: listTracks\n        capability: deepracer\n        description: Review available tracks for evaluation\n    persona: ML Practitioner\n\n  - name: Participate in Leaderboard\n    description: Find an active leaderboard, review current rankings, and monitor submission performance\n    steps:\n      - step: listLeaderboards\n        capability: deepracer\n        description: List available leaderboards and their submission deadlines\n      - step: getLeaderboard\n        capability: deepracer\n        description: Review\

@@ -14,34 +14,34 @@ personas: []
 provider_name: Amazon MediaConvert
 provider_slug: amazon-mediaconvert
 search_terms:
-- broadcasting
-- get job
-- listjobtemplates
-- cancel job
-- createjobtemplate
-- listjobs
-- getjob
-- engineer managing broadcast media workflows
-- list jobs
 - aws media processing and delivery
-- media
-- create job template
-- listpresets
-- developer building media processing applications
-- aws
-- media processing
-- createjob
-- canceljob
-- Broadcast Engineer
-- amazon mediaconvert media processing workflow
-- workflow
-- list presets
-- Media Developer
 - create job
+- Media Developer
 - list job templates
-- associatecertificate
-- associate certificate
+- media
+- createjob
+- Broadcast Engineer
+- list jobs
+- workflow
+- listjobtemplates
 - manage media processing jobs
+- associate certificate
+- list presets
+- aws
+- amazon mediaconvert media processing workflow
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- listjobs
+- canceljob
+- create job template
+- associatecertificate
+- get job
+- getjob
+- createjobtemplate
+- listpresets
+- broadcasting
+- media processing
+- cancel job
 slug: amazon-mediaconvert-media-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaConvert Workflow\n  description: Workflow capability for Amazon MediaConvert media processing operations for broadcast engineers and media developers.\n  tags:\n  - AWS\n  - Media\n  - Broadcasting\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: mediaconvert\n    location: ./shared/mediaconvert.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: mediaconvert-workflow-api\n    description: Unified REST API for Amazon MediaConvert workflow management.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Manage media processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List jobs\n        call: mediaconvert.list-jobs\n        outputParameters:\n\
   \        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: mediaconvert-workflow-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon MediaConvert workflow management.\n    tools:\n    - name: associate-certificate\n      description: AssociateCertificate\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediaconvert.associate-certificate\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-job\n      description: GetJob\n      hints:\n        readOnly: true\n        openWorld: true\n      call: mediaconvert.get-job\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: cancel-job\n      description: CancelJob\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediaconvert.cancel-job\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-jobs\n      description: ListJobs\n      hints:\n \

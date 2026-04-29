@@ -55,64 +55,64 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- available cloud providers.
 - get details of a specific cluster.
-- get repository
-- specific cluster operations.
-- list available cloud providers.
 - get cluster
-- delete an openshift cluster.
-- red hat
-- cloud
-- hybrid cloud
-- linux
-- create a container repository.
-- cluster machine pools.
 - list machine pools.
-- create repository
-- openshift
-- openshift clusters.
-- list addons
-- list machine pools for a cluster.
-- container image repositories.
-- list all managed clusters.
-- list clusters
-- get cluster details.
 - openshift versions.
-- list repositories
-- delete a cluster.
-- list machine pools
-- list all managed openshift clusters.
-- list subscriptions
-- containers
-- image tags.
-- get container repository details.
-- get vulnerability scan results.
-- list container repositories.
-- list openshift versions.
-- list cloud providers
-- image vulnerability scanning.
-- list repository tags
-- list cluster subscriptions.
+- get repository
 - list tags for a container image.
-- create a new container repository.
-- kubernetes
-- create a new openshift cluster.
-- quay
-- create cluster
+- list openshift versions.
 - get vulnerability scan results for a container image.
-- platform engineering
-- list available cluster add-ons.
-- enterprise
-- list container image repositories.
-- list cloud providers.
-- list versions
-- open source
-- create a new cluster.
+- container image repositories.
+- list all managed openshift clusters.
 - delete cluster
-- list available openshift versions.
+- list repository tags
+- list subscriptions
 - get manifest security
+- linux
+- list versions
+- cloud
+- list clusters
+- get vulnerability scan results.
+- create repository
+- containers
+- list addons
+- list container image repositories.
+- hybrid cloud
+- create a new container repository.
+- create a new openshift cluster.
+- list machine pools
+- list available cluster add-ons.
+- list available openshift versions.
+- image tags.
+- list repositories
+- image vulnerability scanning.
+- list all managed clusters.
+- get cluster details.
+- list cloud providers
+- red hat
+- list cloud providers.
+- available cloud providers.
+- enterprise
+- platform engineering
+- list container repositories.
+- list machine pools for a cluster.
+- cluster machine pools.
+- kubernetes
+- list cluster subscriptions.
+- quay
+- openshift
 - list image tags.
+- specific cluster operations.
+- delete a cluster.
+- list available cloud providers.
+- delete an openshift cluster.
+- get container repository details.
+- openshift clusters.
+- create a container repository.
+- create a new cluster.
+- create cluster
+- open source
 slug: platform-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Platform Management\"\n  description: \"Unified workflow for managing OpenShift clusters and Quay container registries. Used by platform engineers and DevOps teams to provision clusters, manage machine pools, and maintain container image repositories.\"\n  tags:\n    - Red Hat\n    - OpenShift\n    - Quay\n    - Platform Engineering\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      RED_HAT_BEARER_TOKEN: RED_HAT_BEARER_TOKEN\n      QUAY_BEARER_TOKEN: QUAY_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: openshift-cluster-manager\n      location: ./shared/openshift-cluster-manager.yaml\n    - import: quay\n      location: ./shared/quay.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: platform-management-api\n      description: \"Unified REST API for OpenShift cluster and Quay registry management.\"\n      resources:\n        - path: /v1/clusters\n\
   \          name: clusters\n          description: \"OpenShift clusters.\"\n          operations:\n            - method: GET\n              name: list-clusters\n              description: \"List all managed clusters.\"\n              call: \"openshift-cluster-manager.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cluster\n              description: \"Create a new cluster.\"\n              call: \"openshift-cluster-manager.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters/{cluster_id}\n          name: cluster-detail\n          description: \"Specific cluster operations.\"\n          operations:\n            - method: GET\n              name: get-cluster\n              description: \"Get cluster details.\"\n              call: \"openshift-cluster-manager.get-cluster\"\n\

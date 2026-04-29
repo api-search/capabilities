@@ -14,22 +14,22 @@ personas: []
 provider_name: Azure Container Instances
 provider_slug: azure-container-instances
 search_terms:
-- resource management
-- list
-- list containergroup resources
-- microsoft
-- list container groups
-- list containergroupusage resources
-- management
+- azure resource management
+- cloud
 - azure
 - list container resources
-- cloud
-- list containers
-- azure resource management
+- list
+- list containergroupusage resources
 - container instances
+- resource management
+- list container groups
 - containers
+- management
+- list containergroup resources
 - serverless
 - list container group usages
+- list containers
+- microsoft
 - list all resources
 slug: azure-container-instances-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Instances Management\"\n  description: \"Workflow capability for managing Azure Container Instances resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-container-instances\n      location: ./shared/azure-container-instances.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: azure-container-instances-management-api\n      description: \"Unified REST API for Azure Container Instances management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n   \

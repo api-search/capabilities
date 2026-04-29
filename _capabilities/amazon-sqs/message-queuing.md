@@ -28,56 +28,56 @@ provider_name: Amazon SQS
 provider_slug: amazon-sqs
 search_terms:
 - delete queue
-- delete a message from a queue
 - get attributes for a queue
-- add permission
-- cloud
-- create a new sqs queue
-- set attributes for a queue
-- send message batch
-- tag queue
-- delete message batch
 - messaging
-- list queue tags
-- send a message to a queue
-- list dead-letter queue source queues
-- purge queue
-- get the url of a queue by name
-- set queue attributes
-- message operations
-- aws
-- delete up to 10 messages in a batch
-- receive messages from a queue
-- list queues that feed a dead-letter queue
-- delete message
-- list dead letter source queues
-- list tags for a queue
-- receive message
-- dead-letter queue management
-- get queue attributes
-- distributed systems
-- microservices
-- get queue url
-- remove a permission from a queue
-- start moving messages from a dead-letter queue
-- amazon
-- create queue
-- list queues
-- list dlq sources
-- create a new standard or fifo queue
+- create a new sqs queue
 - send up to 10 messages in a batch
-- delete an sqs queue
-- list all sqs queues
-- change the visibility timeout of a message
-- change message visibility
-- start message move task
-- add a permission to a queue
-- remove permission
-- delete all messages in a queue
-- queue management
-- add tags to a queue
-- queue
+- dead-letter queue management
+- list queues that feed a dead-letter queue
+- set queue attributes
 - send message
+- delete up to 10 messages in a batch
+- send a message to a queue
+- cloud
+- delete a message from a queue
+- send message batch
+- create queue
+- amazon
+- get queue attributes
+- delete all messages in a queue
+- aws
+- delete message batch
+- add tags to a queue
+- set attributes for a queue
+- microservices
+- create a new standard or fifo queue
+- purge queue
+- list tags for a queue
+- remove permission
+- list all sqs queues
+- queue
+- delete an sqs queue
+- list queues
+- queue management
+- change the visibility timeout of a message
+- add permission
+- receive messages from a queue
+- receive message
+- add a permission to a queue
+- list dlq sources
+- list dead letter source queues
+- list dead-letter queue source queues
+- start message move task
+- get queue url
+- distributed systems
+- message operations
+- get the url of a queue by name
+- start moving messages from a dead-letter queue
+- delete message
+- tag queue
+- remove a permission from a queue
+- change message visibility
+- list queue tags
 slug: message-queuing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SQS Message Queuing\"\n  description: \"Message queuing workflow for managing SQS queues, sending and receiving messages, batch operations, dead-letter queue management, and access control. Used by developers and DevOps engineers for microservices decoupling and asynchronous processing.\"\n  tags:\n    - Amazon\n    - AWS\n    - Messaging\n    - Queue\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-sqs\n      location: ./shared/sqs.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sqs-queuing-api\n      description: \"Unified REST API for Amazon SQS message queuing operations.\"\n      resources:\n        - path: /v1/queues\n          name: queues\n          description: \"Queue\
   \ management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List all SQS queues\"\n              call: \"amazon-sqs.list-queues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-queue\n              description: \"Create a new SQS queue\"\n              call: \"amazon-sqs.create-queue\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Message operations\"\n          operations:\n            - method: POST\n              name: send-message\n              description: \"Send a message to a queue\"\n              call: \"amazon-sqs.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dead-letter-queues\n\

@@ -43,47 +43,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get api usage data and consumption metrics.
-- check compliance
-- list all webhook subscriptions.
-- get subscription types
-- marketing intelligence
-- list all configured webhook subscriptions.
-- zoominfo
-- check data compliance status for specified contacts.
-- company data
-- available webhook subscription types.
+- monitoring
+- delete a webhook subscription.
 - compliance
-- check compliance status for specified contacts.
-- create webhook
-- contact database
 - get available webhook subscription types.
 - lead generation
-- create a new webhook subscription.
-- get api usage data.
-- get usage
-- b2b
-- delete webhook
-- create a new webhook subscription for data change notifications.
-- webhooks
-- contacts
-- validate a webhook target url is reachable.
-- update webhook
-- webhook target url validation.
-- validate a webhook target url.
-- b2b data
-- data
-- monitoring
-- validate target url
-- list webhooks
-- update an existing webhook subscription.
-- individual webhook management.
-- data compliance operations.
-- webhook subscription management.
 - api usage tracking.
-- delete a webhook subscription.
+- data
+- list all configured webhook subscriptions.
+- marketing intelligence
+- contacts
+- validate a webhook target url.
+- validate target url
+- get api usage data and consumption metrics.
+- available webhook subscription types.
+- update webhook
+- get usage
 - api usage
+- webhook subscription management.
+- contact database
+- individual webhook management.
+- b2b
+- create a new webhook subscription for data change notifications.
+- data compliance operations.
+- get subscription types
+- webhooks
+- b2b data
+- webhook target url validation.
+- check data compliance status for specified contacts.
 - sales intelligence
+- check compliance
+- check compliance status for specified contacts.
+- company data
+- create a new webhook subscription.
+- list webhooks
+- zoominfo
+- create webhook
+- validate a webhook target url is reachable.
+- get api usage data.
+- list all webhook subscriptions.
+- update an existing webhook subscription.
+- delete webhook
 slug: monitoring-and-compliance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Monitoring And Compliance\"\n  description: \"Unified capability for monitoring and compliance workflows combining webhook management, API usage tracking, and compliance operations. Used by platform admins and data governance teams to manage data monitoring, ensure compliance, and track API consumption.\"\n  tags:\n    - ZoomInfo\n    - Monitoring\n    - Compliance\n    - Webhooks\n    - API Usage\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo\n      location: ./shared/zoominfo.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: monitoring-and-compliance-api\n      description: \"Unified REST API for monitoring and compliance workflows.\"\n      resources:\n        - path: /v1/webhooks\n          name: webhooks\n\
   \          description: \"Webhook subscription management.\"\n          operations:\n            - method: POST\n              name: create-webhook\n              description: \"Create a new webhook subscription.\"\n              call: \"zoominfo.create-webhook\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-webhooks\n              description: \"List all webhook subscriptions.\"\n              call: \"zoominfo.list-webhooks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/webhooks/{webhookId}\n          name: webhook-management\n          description: \"Individual webhook management.\"\n          operations:\n            - method: PUT\n              name: update-webhook\n              description: \"Update an existing webhook subscription.\"\n              call: \"zoominfo.update-webhook\"\n              with:\n\

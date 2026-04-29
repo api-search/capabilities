@@ -31,43 +31,43 @@ personas: []
 provider_name: Apache OFBiz
 provider_slug: apache-ofbiz
 search_terms:
-- refresh jwt access tokens.
-- e-commerce
-- erp
+- list all exported ofbiz rest services.
+- get auth token
 - list all ofbiz services exported via the rest plugin for discovery.
-- authenticate and obtain jwt token.
-- refresh an expired access token.
-- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
 - ERP Administrator
-- get token
+- invoke service post
+- e-commerce
+- obtain jwt access tokens for api authentication.
 - ofbiz service discovery.
+- invoke ofbiz service via post with json body.
+- business applications
 - engineers integrating external systems with ofbiz via the rest api.
 - invoke service get
-- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
-- invoke ofbiz services by name.
-- list all exported ofbiz rest services.
-- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
+- invoke ofbiz service via get with query parameters.
+- invoke an ofbiz rest service via post method. used for write operations like creating orders, updating inventory, and processing payments.
+- Integration Engineer
+- automated execution of ofbiz business logic services via rest api calls.
+- refresh an expired ofbiz jwt access token using a refresh token.
+- apache ofbiz
 - crm
 - authenticate to apache ofbiz and obtain a jwt access token for subsequent api calls.
-- apache ofbiz
-- business applications
-- automated execution of ofbiz business logic services via rest api calls.
-- invoke service post
 - apache
-- invoke ofbiz service via get with query parameters.
-- Integration Engineer
-- invoke ofbiz service via post with json body.
-- get auth token
-- refresh token
-- java
-- supply chain
-- refresh an expired ofbiz jwt access token using a refresh token.
-- open source
+- invoke ofbiz services by name.
 - list services
-- obtain jwt access tokens for api authentication.
-- end-to-end erp workflow covering authentication and ofbiz service invocation.
-- refresh auth token
 - administrators who configure and manage ofbiz erp modules and business processes.
+- refresh token
+- invoke an ofbiz rest service via get method. useful for read-only service calls like product lookups, order queries, and data retrieval.
+- end-to-end erp workflow covering authentication and ofbiz service invocation.
+- integrated management of core business processes including finance, hr, supply chain, and manufacturing.
+- refresh an expired access token.
+- refresh auth token
+- erp
+- java
+- authenticate and obtain jwt token.
+- refresh jwt access tokens.
+- supply chain
+- get token
+- open source
 slug: apache-ofbiz-erp-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Apache OFBiz ERP Operations\n  description: Workflow capability for ERP and business process automation using Apache OFBiz REST API. Covers authentication, service discovery, and invocation of OFBiz services for ERP, CRM, e-commerce, and supply chain operations. Intended for ERP administrators and integration engineers.\n  tags:\n    - Apache OFBiz\n    - ERP\n    - CRM\n    - E-Commerce\n    - Business Applications\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OFBIZ_USERNAME: OFBIZ_USERNAME\n      OFBIZ_PASSWORD: OFBIZ_PASSWORD\n      OFBIZ_TOKEN: OFBIZ_TOKEN\n\ncapability:\n  consumes:\n    - import: ofbiz\n      location: ./shared/apache-ofbiz.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ofbiz-erp-api\n      description: Unified REST API for Apache OFBiz ERP operations.\n      resources:\n        - path: /v1/auth/token\n          name: auth-token\n\
   \          description: Obtain JWT access tokens for API authentication.\n          operations:\n            - method: POST\n              name: get-token\n              description: Authenticate and obtain JWT token.\n              call: \"ofbiz.get-token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/auth/refresh\n          name: auth-refresh\n          description: Refresh JWT access tokens.\n          operations:\n            - method: POST\n              name: refresh-token\n              description: Refresh an expired access token.\n              call: \"ofbiz.refresh-token\"\n              with:\n                refreshToken: \"rest.refresh_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/services\n          name: services\n          description: OFBiz service discovery.\n          operations:\n            - method: GET\n\

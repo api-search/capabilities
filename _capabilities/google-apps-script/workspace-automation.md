@@ -51,54 +51,54 @@ personas: []
 provider_name: Google Apps Script
 provider_slug: google-apps-script
 search_terms:
-- process monitoring
 - list execution processes
-- list a specific script's executed processes
-- automation
-- script project metrics
-- get project content
-- delete a deployment
-- list processes
-- google
-- google workspace
-- list script processes
-- update the code content of a script project
 - create version
-- create a new deployment
-- run a function in an apps script project
-- get a script project's metadata
-- get deployment
-- create a new, empty script project
-- run script
-- get execution metrics for a script project
-- apps script
-- deployment management
-- get the code content of a script project
-- create deployment
-- list versions of a script project
-- script project management
-- update a deployment
-- list deployments for a script project
-- get version
-- version management
-- list deployments of an apps script project
-- create a deployment of an apps script project
-- create a new script project
-- list deployments
-- get project metrics
-- get a specific deployment
-- script project content
-- deployments
-- get project
-- update project content
-- delete deployment
-- get a specific version
-- update deployment
 - create project
+- script project metrics
+- run a function in an apps script project
+- list a specific script's executed processes
+- update the code content of a script project
+- create deployment
+- list deployments
+- delete deployment
 - list versions
-- scripting
-- create a new immutable version
 - script project details and content
+- apps script
+- update a deployment
+- google
+- create a new immutable version
+- create a new deployment
+- get deployment
+- get a specific version
+- script project content
+- run script
+- script project management
+- list script processes
+- update deployment
+- google workspace
+- update project content
+- list deployments of an apps script project
+- delete a deployment
+- version management
+- list processes
+- deployments
+- automation
+- get project content
+- get a script project's metadata
+- scripting
+- deployment management
+- get version
+- list versions of a script project
+- get the code content of a script project
+- get a specific deployment
+- process monitoring
+- create a new script project
+- get execution metrics for a script project
+- create a new, empty script project
+- list deployments for a script project
+- create a deployment of an apps script project
+- get project metrics
+- get project
 slug: workspace-automation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Workspace Automation\"\n  description: \"Workflow capability for managing Google Apps Script projects, deployments, versions, and script execution. Enables developers and IT admins to automate Google Workspace workflows, manage script lifecycle, and monitor execution health.\"\n  tags:\n    - Google\n    - Apps Script\n    - Automation\n    - Google Workspace\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: google-apps-script\n      location: ./shared/apps-script.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workspace-automation-api\n      description: \"Unified REST API for Google Workspace automation via Apps Script project management, deployment, and execution.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description:\
   \ \"Script project management\"\n          operations:\n            - method: POST\n              name: create-project\n              description: \"Create a new script project\"\n              call: \"google-apps-script.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{scriptId}\n          name: project-detail\n          description: \"Script project details and content\"\n          operations:\n            - method: GET\n              name: get-project\n              description: \"Get a script project's metadata\"\n              call: \"google-apps-script.get-project\"\n              with:\n                scriptId: \"rest.scriptId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{scriptId}/content\n          name: project-content\n          description: \"Script project content\"\n          operations:\n\

@@ -81,84 +81,84 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- service desk
+- update an existing record in a servicenow table.
 - list tasks for a change request.
-- create an emergency change.
-- get a normal change request.
-- cloud services
-- create a record in any table.
-- create a normal change request.
-- create a new normal change request.
-- update a normal change request.
-- compute aggregate statistics.
-- create a trouble ticket.
-- get trouble ticket
-- retrieve a specific trouble ticket.
-- update normal change
-- update record
-- update a record.
-- t1
-- get normal change
-- list emergency change requests.
-- update trouble ticket
-- create a trouble ticket (case, incident, or service problem case).
-- create change task
-- it service management
-- compute aggregate statistics on any servicenow table.
-- retrieve a single record by table name and sys_id.
-- emergency change operations.
-- retrieve a specific normal change request.
+- get aggregate stats
 - list records
-- delete a record.
-- change management
-- standard change operations.
-- list trouble tickets.
-- itsm
-- workflow automation
+- create a trouble ticket (case, incident, or service problem case).
 - create an emergency change for urgent situations.
-- update a trouble ticket.
-- list trouble tickets with filtering by severity, status, and type.
-- single normal change operations.
-- list trouble tickets
-- normal change request management.
-- update an existing trouble ticket.
-- list standard change requests.
-- list records from any servicenow table with query filtering.
-- single trouble ticket operations.
-- digital workflows
-- create record
+- get a single record.
+- update normal change
+- create a standard change from a template.
+- list records from any servicenow table.
+- retrieve a single record by table name and sys_id.
+- compute aggregate statistics on any servicenow table.
+- create a normal change request.
 - list emergency changes
+- digital workflows
+- list trouble tickets with filtering by severity, status, and type.
+- create normal change
+- list standard change requests.
+- it service management
+- list normal change requests.
+- single record operations.
+- servicenow
+- itsm
+- list normal changes
+- get trouble ticket
+- single trouble ticket operations.
 - list change tasks
 - workflows
-- list normal changes
-- update an existing record in a servicenow table.
-- generic table record operations for any servicenow table.
-- create a new record in any servicenow table.
-- servicenow
-- list standard changes.
-- aggregate statistics on table data.
-- create trouble ticket
-- list records from any servicenow table.
-- list normal change requests.
-- list standard changes
-- incident management
-- create a task for a change request.
-- create emergency change
 - automation
-- permanently delete a record from a servicenow table.
-- create normal change
-- trouble ticket operations.
-- get aggregate stats
-- get a single record.
-- get record
-- delete record
-- create standard change
-- single record operations.
-- create a standard change from a template.
-- list emergency changes.
-- get a trouble ticket.
+- create a task for a change request.
+- create record
+- list records from any servicenow table with query filtering.
 - enterprise platform
+- delete record
+- get a normal change request.
+- workflow automation
+- change management
+- normal change request management.
+- create standard change
+- update a normal change request.
+- get a trouble ticket.
+- update record
+- get normal change
+- get record
+- update a record.
+- create a trouble ticket.
+- aggregate statistics on table data.
+- retrieve a specific normal change request.
+- retrieve a specific trouble ticket.
+- update trouble ticket
+- trouble ticket operations.
+- list emergency change requests.
+- generic table record operations for any servicenow table.
+- standard change operations.
+- list trouble tickets.
+- create an emergency change.
+- permanently delete a record from a servicenow table.
+- list emergency changes.
+- t1
+- list standard changes.
+- delete a record.
+- list trouble tickets
+- compute aggregate statistics.
+- create trouble ticket
 - processes
+- emergency change operations.
+- list standard changes
+- cloud services
+- incident management
+- create a new normal change request.
+- create a record in any table.
+- create change task
+- create emergency change
+- single normal change operations.
+- create a new record in any servicenow table.
+- update an existing trouble ticket.
+- service desk
+- update a trouble ticket.
 slug: itsm-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow ITSM Operations\"\n  description: \"Unified workflow for IT Service Management operations combining table records, aggregate analytics, change management, and trouble tickets. Used by ITSM administrators and service desk agents to manage incidents, changes, and operational reporting.\"\n  tags:\n    - ServiceNow\n    - ITSM\n    - Change Management\n    - Incident Management\n    - Service Desk\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-table\n      location: ./shared/table.yaml\n    - import: servicenow-aggregate\n      location: ./shared/aggregate.yaml\n    - import: servicenow-change-management\n      location: ./shared/change-management.yaml\n    - import: servicenow-trouble-ticket\n\
   \      location: ./shared/trouble-ticket.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: servicenow-itsm-operations-api\n      description: \"Unified REST API for ServiceNow ITSM operations including records, changes, and trouble tickets.\"\n      resources:\n        - path: /v1/records/{tableName}\n          name: table-records\n          description: \"Generic table record operations for any ServiceNow table.\"\n          operations:\n            - method: GET\n              name: list-records\n              description: \"List records from any ServiceNow table.\"\n              call: \"servicenow-table.list-records\"\n              with:\n                tableName: \"rest.tableName\"\n                sysparm_query: \"rest.sysparm_query\"\n                sysparm_fields: \"rest.sysparm_fields\"\n                sysparm_limit: \"rest.sysparm_limit\"\n                sysparm_offset: \"rest.sysparm_offset\"\n              outputParameters:\n                - type:\

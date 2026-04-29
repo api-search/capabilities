@@ -32,44 +32,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- get detailed status and frame counts for a specific render job
-- get job
-- list and manage render hosts
-- list render jobs for a show
 - render farm
-- get details for a specific render job
+- standards
+- list and manage render jobs
 - list all active shows in the render farm
-- visual effects
+- get detailed status and frame counts for a specific render job
 - list and manage render shows (productions)
-- vfx pipeline
-- list shows
-- list all render host machines and their current utilization
+- get details for a specific render job
+- list render jobs for a specific show with optional state filtering
+- list all active shows (productions) in the render farm
+- technical director building and maintaining vfx production pipeline tools
 - linux foundation
 - list jobs
+- list all render host machines and their current utilization
+- rendering
+- vfx pipeline
+- pipeline td
 - color management
-- opencue
+- get or kill a specific render job
+- animation
+- film
+- list and manage render hosts
+- list hosts
+- monitor and manage render jobs, hosts, and shows using opencue
+- render wrangler
+- get render job
 - academy software foundation
 - list render hosts
-- render wrangler
-- monitor and manage render jobs, hosts, and shows using opencue
-- animation
-- rendering
-- film
-- list hosts
-- list and manage render jobs
-- production staff responsible for monitoring and managing render farm operations
-- technical director building and maintaining vfx production pipeline tools
-- list all render host machines
-- list render jobs for a specific show with optional state filtering
-- get render job
-- list all active shows (productions) in the render farm
-- monitoring and management of distributed render farm resources and jobs
-- pipeline td
-- list render jobs
-- get or kill a specific render job
-- open source
-- standards
+- visual effects
 - vfx
+- list render jobs
+- get job
+- monitoring and management of distributed render farm resources and jobs
+- production staff responsible for monitoring and managing render farm operations
+- opencue
+- list shows
+- list all render host machines
+- list render jobs for a show
+- open source
 slug: render-farm-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Academy Software Foundation Render Farm Management\"\n  description: \"Render farm management workflow using OpenCue for monitoring and managing render jobs, layers, frames, and hosts in a VFX production pipeline. Used by render wranglers and pipeline TDs to monitor and troubleshoot render farm operations.\"\n  tags:\n    - Academy Software Foundation\n    - Render Farm\n    - Opencue\n    - Vfx Pipeline\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENCUE_HOST: OPENCUE_HOST\n\ncapability:\n  consumes:\n    - import: opencue\n      location: ./shared/opencue.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: render-farm-api\n      description: \"Unified REST API for VFX render farm management.\"\n      resources:\n        - path: /v1/shows\n          name: shows\n          description: \"List and manage render shows (productions)\"\n          operations:\n\
   \            - method: GET\n              name: list-shows\n              description: \"List all active shows in the render farm\"\n              call: \"opencue.listShows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"List and manage render jobs\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List render jobs for a show\"\n              call: \"opencue.listJobs\"\n              with:\n                show_id: \"rest.show_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{job_id}\n          name: job\n          description: \"Get or kill a specific render job\"\n          operations:\n            - method: GET\n              name: get-job\n              description: \"Get details for a specific render job\"\n     \

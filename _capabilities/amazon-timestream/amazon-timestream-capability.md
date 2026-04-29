@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
+- time series
 - aws
 - iot
 - database
-- time series
 slug: amazon-timestream-capability
 source_yaml: 'id: amazon-timestream-capability
 

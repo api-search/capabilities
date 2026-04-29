@@ -25,39 +25,39 @@ personas: []
 provider_name: Amazon Application Migration Service
 provider_slug: amazon-application-migration-service
 search_terms:
-- finalize the cutover to disconnect replication and complete the migration.
-- launch test instances for source servers
-- list applications
-- track migration progress at the wave level for large-scale migrations.
-- cloud migration
-- describe source servers
-- list waves
-- amazon application migration service
-- terminate test instances
-- finalize cutover
-- aws
-- source servers to migrate
-- monitor all migration jobs to track progress and identify any failures.
-- execute the production cutover to migrate source servers to aws with minimal downtime.
-- start test
-- describe jobs
-- launch test instances to validate migration without impacting production source servers.
-- monitor all migration jobs
-- get launch configuration
-- get replication configuration
-- start cutover
 - review migration application groupings to track which servers belong to each application.
-- list all source servers with lifecycle state
-- cutover migration operations
+- cloud migration
+- monitor all migration jobs to track progress and identify any failures.
+- list applications
 - start production cutover to aws
-- test migration operations
-- list all source servers and their current migration lifecycle state to understand readiness.
-- review replication settings for a source server to ensure correct staging area configuration.
-- migration jobs
-- migration
-- review launch settings for a source server to verify target instance type and licensing.
-- terminate test instances after validation to avoid unnecessary costs.
+- launch test instances for source servers
+- describe jobs
+- get replication configuration
 - lift and shift
+- list all source servers and their current migration lifecycle state to understand readiness.
+- list all source servers with lifecycle state
+- monitor all migration jobs
+- aws
+- execute the production cutover to migrate source servers to aws with minimal downtime.
+- finalize cutover
+- start test
+- describe source servers
+- terminate test instances after validation to avoid unnecessary costs.
+- start cutover
+- finalize the cutover to disconnect replication and complete the migration.
+- migration jobs
+- get launch configuration
+- review launch settings for a source server to verify target instance type and licensing.
+- terminate test instances
+- source servers to migrate
+- amazon application migration service
+- list waves
+- cutover migration operations
+- migration
+- track migration progress at the wave level for large-scale migrations.
+- review replication settings for a source server to ensure correct staging area configuration.
+- launch test instances to validate migration without impacting production source servers.
+- test migration operations
 slug: lift-and-shift-migration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Lift And Shift Migration Workflow\n  description: Workflow capability for executing lift-and-shift migrations from on-premises to AWS using Application Migration Service.\n  tags:\n    - Amazon Application Migration Service\n    - Migration\n    - Lift And Shift\n    - AWS\n    - Cloud Migration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: mgn\n    from: shared/application-migration-service-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: lift-shift-rest\n      resources:\n        - path: /v1/source-servers\n          name: source-servers\n          description: Source servers to migrate\n          operations:\n            - method: GET\n              name: describe-source-servers\n              description: List all source servers with lifecycle state\n              call: \"mgn.describe-source-servers\"\n              outputParameters:\n             \
   \   - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/test\n          name: test-migration\n          description: Test migration operations\n          operations:\n            - method: POST\n              name: start-test\n              description: Launch test instances for source servers\n              call: \"mgn.start-test\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/cutover\n          name: cutover\n          description: Cutover migration operations\n          operations:\n            - method: POST\n              name: start-cutover\n              description: Start production cutover to AWS\n              call: \"mgn.start-cutover\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/jobs\n          name: jobs\n          description: Migration jobs\n          operations:\n            - method: GET\n     \

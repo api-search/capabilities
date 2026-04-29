@@ -29,59 +29,59 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list mentorships
+- list requisitions
+- list succession plans
+- list all job postings
 - recruiting list requisitions
 - list all prospects
-- talent list mentorships
-- workday
-- get talent profile for a worker
-- get a job requisition by id
-- recruiting get requisition
-- list all job applications
-- performance list badges
-- performance reviews
-- job requisitions
-- get goals for a worker
-- recruiting list postings
-- financial management
-- list reviews
-- talent management
-- get a candidate by id
-- recruiting list prospects
-- list all candidates
-- request feedback for a worker
-- performance get goals
-- recruiting list applications
-- saas
-- talent get certifications
-- recruiting get candidate
-- get skills for a worker
-- get a job application by id
-- cloud computing
-- candidates
-- list succession plans
-- enterprise software
-- talent list succession plans
-- talent get profile
-- recruiting get application
-- list feedback badges
-- performance request feedback
-- recruiting
-- recruiting list candidates
-- give a feedback badge to a worker
-- performance
-- list performance reviews
-- list candidates
 - list job requisitions
-- list all job postings
-- list requisitions
-- get certifications for a worker
-- performance list reviews
-- list all job requisitions
-- performance give badge
-- hcm
+- get a job requisition by id
+- talent management
+- list mentorships
+- performance
+- request feedback for a worker
+- get a candidate by id
+- talent get profile
+- candidates
 - succession plans
 - talent get skills
+- recruiting get requisition
+- financial management
+- list performance reviews
+- recruiting list applications
+- list all candidates
+- get certifications for a worker
+- get a job application by id
+- list feedback badges
+- list reviews
+- recruiting list prospects
+- recruiting
+- performance reviews
+- recruiting list postings
+- list all job applications
+- talent get certifications
+- saas
+- workday
+- talent list succession plans
+- performance get goals
+- talent list mentorships
+- recruiting get application
+- get goals for a worker
+- get skills for a worker
+- performance list badges
+- list all job requisitions
+- cloud computing
+- enterprise software
+- get talent profile for a worker
+- hcm
+- performance list reviews
+- performance request feedback
+- give a feedback badge to a worker
+- list candidates
+- performance give badge
+- recruiting get candidate
+- recruiting list candidates
+- job requisitions
 slug: talent-and-performance
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Talent and Performance\"\n  description: \"Unified talent and performance management combining Recruiting, Talent, and Performance Management APIs for HR and talent leads to manage hiring pipelines, career development, and performance evaluations.\"\n  tags:\n    - Workday\n    - Talent Management\n    - Performance\n    - Recruiting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-recruiting\n      location: ./shared/recruiting.yaml\n    - import: workday-talent\n      location: ./shared/talent.yaml\n    - import: workday-performance\n      location: ./shared/performance-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: talent-performance-api\n      description: \"Unified REST API for talent and performance management.\"\n      resources:\n \
   \       - path: /v1/job-requisitions\n          name: requisitions\n          description: \"Job requisitions\"\n          operations:\n            - method: GET\n              name: list-requisitions\n              description: \"List job requisitions\"\n              call: \"workday-recruiting.get-job-requisitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/candidates\n          name: candidates\n          description: \"Candidates\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List candidates\"\n              call: \"workday-recruiting.get-candidates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/performance-reviews\n          name: reviews\n          description: \"Performance reviews\"\n          operations:\n            - method: GET\n              name: list-reviews\n\

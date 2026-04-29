@@ -36,56 +36,56 @@ personas: []
 provider_name: Salesforce Automation
 provider_slug: salesforce-automation
 search_terms:
-- describe salesforce sobjects
-- bulk data operations.
-- automation
-- create ingest job
-- create a new record.
-- list all bulk ingest jobs.
-- manages salesforce configuration, data, and automation.
-- cloud
-- execute a sosl search.
-- describe all available sobjects.
-- integration
-- query salesforce data
-- execute search
-- real-time event streaming and change data capture.
-- flows, process automation, and approval management.
-- create bulk ingest job
-- crud operations and data queries.
-- crud, queries, search, and bulk data operations.
-- list ingest jobs
-- crm
-- data operations
-- list bulk ingest jobs
-- execute a sosl search across salesforce.
-- manages sales processes, reports, and pipeline.
-- create salesforce record
-- submit a record for approval in salesforce.
-- create a bulk data ingest job for large datasets.
-- execute query
-- search salesforce data
-- Integration Developer
-- describe all available sobjects in the salesforce org.
-- salesforce
-- sales
-- bulk data loading and external system integration.
-- create bulk query job
-- record crud operations.
-- sobject metadata and describe.
-- builds integrations between salesforce and external systems.
-- describe all
-- sosl search.
-- enterprise
-- soql query execution.
-- create a new bulk ingest job.
-- create a new record in salesforce.
-- Salesforce Admin
-- submit salesforce approval
-- execute a soql query against salesforce data.
 - execute a soql query.
+- create bulk query job
+- create a new record in salesforce.
+- data operations
+- soql query execution.
+- describe all
+- query salesforce data
 - create a bulk query job for large result sets.
+- real-time event streaming and change data capture.
+- search salesforce data
+- execute search
+- execute a sosl search.
+- execute query
+- list ingest jobs
+- Integration Developer
+- describe all available sobjects.
+- cloud
+- sosl search.
+- manages salesforce configuration, data, and automation.
+- record crud operations.
+- create a bulk data ingest job for large datasets.
+- sales
+- execute a soql query against salesforce data.
+- manages sales processes, reports, and pipeline.
+- crud, queries, search, and bulk data operations.
+- crud operations and data queries.
+- describe all available sobjects in the salesforce org.
+- list all bulk ingest jobs.
+- list bulk ingest jobs
+- submit a record for approval in salesforce.
+- integration
+- create salesforce record
+- builds integrations between salesforce and external systems.
+- bulk data operations.
+- sobject metadata and describe.
+- crm
+- automation
+- salesforce
+- create ingest job
+- create a new bulk ingest job.
+- flows, process automation, and approval management.
+- submit salesforce approval
+- enterprise
+- execute a sosl search across salesforce.
+- create bulk ingest job
+- bulk data loading and external system integration.
 - create record
+- create a new record.
+- describe salesforce sobjects
+- Salesforce Admin
 slug: data-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce Data Operations\"\n  description: \"Unified workflow combining the Salesforce REST API and Bulk API for comprehensive data operations including CRUD, queries, search, and bulk data loading. Used by Salesforce admins and integration developers.\"\n  tags:\n    - Salesforce\n    - Data Operations\n    - CRM\n    - Integration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SALESFORCE_ACCESS_TOKEN: SALESFORCE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: salesforce-rest\n      location: ./shared/salesforce-rest-api.yaml\n    - import: salesforce-bulk\n      location: ./shared/salesforce-bulk-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: salesforce-data-api\n      description: \"Unified REST API for Salesforce data operations.\"\n      resources:\n        - path: /v1/sobjects\n          name: sobjects\n          description: \"\
   SObject metadata and describe.\"\n          operations:\n            - method: GET\n              name: describe-all\n              description: \"Describe all available SObjects.\"\n              call: \"salesforce-rest.describe-global\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/records\n          name: records\n          description: \"Record CRUD operations.\"\n          operations:\n            - method: POST\n              name: create-record\n              description: \"Create a new record.\"\n              call: \"salesforce-rest.create-record\"\n              with:\n                sObjectName: \"rest.sObjectName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/query\n          name: query\n          description: \"SOQL query execution.\"\n          operations:\n            - method: GET\n              name: execute-query\n  \

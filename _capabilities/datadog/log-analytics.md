@@ -44,51 +44,51 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- get a specific event
-- log analytics
-- listLogIndexes
-- create event
-- post an event to correlate with log data
-- aggregateLogs
-- get a specific log index configuration
-- search log events
-- getLogIndex
-- list events
-- aggregate log data
-- search
-- get log index
-- get event
-- visualizations
-- submitLogs
-- individual log index
 - createEvent
-- datadog
-- send log entries
-- log indexes
-- search events
-- platform
-- search log events with query language
-- events
-- post an event
-- listEvents
-- aggregate logs
-- dashboards
-- submit logs
-- event correlation
-- logs
-- list log indexes
-- get a log index
-- searchEvents
-- list events for correlation with logs
-- search events alongside log analysis
 - monitoring
-- analytics
-- list configured log indexes
-- compute aggregations over log events
 - send log entries to datadog
+- submitLogs
+- visualizations
+- list events
+- search events
+- aggregateLogs
+- aggregate log data
+- analytics
+- log indexes
+- datadog
+- logs
+- post an event
 - t1
+- getLogIndex
+- platform
+- search events alongside log analysis
+- get log index
+- list events for correlation with logs
+- create event
+- dashboards
+- event correlation
+- events
 - searchLogs
+- send log entries
+- get a log index
+- list configured log indexes
+- submit logs
+- search
+- list log indexes
+- searchEvents
+- listEvents
+- get a specific log index configuration
+- log analytics
 - search logs
+- get event
+- search log events
+- aggregate logs
+- search log events with query language
+- individual log index
+- post an event to correlate with log data
+- compute aggregations over log events
+- listLogIndexes
+- get a specific event
 slug: log-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Log Analytics\"\n  description: \"Unified workflow for log analytics combining logs and events. Used by platform engineers and developers for submitting, searching, and aggregating logs alongside event correlation.\"\n  tags:\n    - Datadog\n    - Log Analytics\n    - Logs\n    - Events\n    - Search\n  personas:\n    - Platform Engineer\n    - Developer\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-logs\n      location: \"./shared/logs.yaml\"\n    - import: dd-events\n      location: \"./shared/events.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: dd-log-analytics-api\n      description: \"Unified REST API for log analytics workflows combining logs and events.\"\n      resources:\n        - path: /v1/logs\n          name:\
   \ logs\n          description: \"Submit logs\"\n          operations:\n            - method: POST\n              name: submitLogs\n              description: \"Send log entries\"\n              call: \"dd-logs.submitLogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/search\n          name: logs-search\n          description: \"Search logs\"\n          operations:\n            - method: POST\n              name: searchLogs\n              description: \"Search log events\"\n              call: \"dd-logs.searchLogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/aggregate\n          name: logs-aggregate\n          description: \"Aggregate logs\"\n          operations:\n            - method: POST\n              name: aggregateLogs\n              description: \"Aggregate log data\"\n              call: \"dd-logs.aggregateLogs\"\n \

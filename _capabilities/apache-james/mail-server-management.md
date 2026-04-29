@@ -30,27 +30,27 @@ personas: []
 provider_name: Apache James
 provider_slug: apache-james
 search_terms:
-- smtp
-- create domain
 - list tasks
-- email
-- create a new mail user account
-- create a new email domain in the james server
-- list domains
+- Mail Administrator
+- apache james
+- mail server management
+- imap
+- jmap
+- create domain
 - administrators who manage james mail server domains, users, and queues
+- mail server
+- email administration
 - list all user accounts in the james mail server
 - list all email domains configured in the james server
-- mail server
-- list asynchronous administrative tasks and their statuses
-- mail server management
-- create user
-- Mail Administrator
-- jmap
 - list users
-- email administration
-- imap
+- list asynchronous administrative tasks and their statuses
+- create user
+- create a new email domain in the james server
 - java
-- apache james
+- smtp
+- email
+- list domains
+- create a new mail user account
 - open source
 slug: mail-server-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache James Mail Server Management\"\n  description: \"Workflow capability for mail server administrators to manage domains, users, mailboxes, and monitor tasks in Apache James.\"\n  tags:\n    - Apache James\n    - Email Administration\n    - Mail Server Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      JAMES_ADMIN_TOKEN: JAMES_ADMIN_TOKEN\n\ncapability:\n  consumes:\n    - import: james-webadmin\n      location: ./shared/webadmin-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: james-mail-management-api\n      description: \"Unified REST API for Apache James mail server management.\"\n      resources:\n        - path: /v1/domains\n          name: domains\n          operations:\n            - method: GET\n              name: list-domains\n              call: \"james-webadmin.list-domains\"\n              outputParameters:\n      \

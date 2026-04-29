@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- amazon audit manager
-- risk management
-- list frameworks
-- list all assessments
-- create a new compliance assessment using a regulatory framework.
-- create a custom compliance control for use in frameworks and assessments.
-- create assessment report
-- create assessment
-- get audit manager account settings including default destinations and process owners.
-- update settings
-- create control
-- update audit manager settings including sns notifications and default report destination.
-- compliance assessment management
-- compliance
-- get settings
-- aws
-- list controls
-- compliance framework management
-- get complete details of a compliance assessment including control status.
-- list generated assessment reports for compliance documentation.
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- create a new assessment
-- audit
-- list assessments
-- list compliance controls available for building assessments.
 - list assessment reports
+- compliance
+- create control
+- list assessments
+- create a new compliance assessment using a regulatory framework.
+- compliance assessment management
+- get settings
 - generate a compliance assessment report from collected evidence.
-- get assessment
-- list available frameworks
+- create assessment report
+- create a new assessment
+- get complete details of a compliance assessment including control status.
+- get audit manager account settings including default destinations and process owners.
+- list compliance controls available for building assessments.
+- list frameworks
+- compliance framework management
+- risk management
 - list all compliance assessments to understand current audit coverage.
+- list controls
+- update audit manager settings including sns notifications and default report destination.
+- aws
+- list generated assessment reports for compliance documentation.
+- audit
+- list all assessments
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- amazon audit manager
+- create a custom compliance control for use in frameworks and assessments.
+- update settings
+- list available frameworks
+- get assessment
+- create assessment
 slug: compliance-auditing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Compliance Auditing Workflow\n  description: Workflow capability for conducting continuous compliance auditing with Amazon Audit Manager including assessment creation, evidence collection, and report generation.\n  tags:\n    - Amazon Audit Manager\n    - Compliance\n    - Audit\n    - Risk Management\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: auditmanager\n    from: shared/audit-manager-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: compliance-auditing-rest\n      resources:\n        - path: /v1/assessments\n          name: assessments\n          description: Compliance assessment management\n          operations:\n            - method: GET\n              name: list-assessments\n              description: List all assessments\n              call: \"auditmanager.list-assessments\"\n              outputParameters:\n                - type:\
   \ object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-assessment\n              description: Create a new assessment\n              call: \"auditmanager.create-assessment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/frameworks\n          name: frameworks\n          description: Compliance framework management\n          operations:\n            - method: GET\n              name: list-frameworks\n              description: List available frameworks\n              call: \"auditmanager.list-frameworks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: compliance-auditing-mcp\n      transport: http\n      tools:\n        - name: list-assessments\n          description: List all compliance assessments to understand current audit coverage.\n          hints:\n    \

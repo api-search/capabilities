@@ -43,45 +43,45 @@ personas: []
 provider_name: Amazon Proton
 provider_slug: amazon-proton
 search_terms:
-- deploys services using self-service templates provided by platform engineers
-- list all deployed environments
-- devops
-- deployed service management
-- self-service
-- create a new service template for standardized application deployments
-- list environment templates for standardized infrastructure
+- create an environment from a template
 - create environment
-- aws
-- create a new standardized environment template for developers
-- serverless
-- list deployed services
-- create service template
 - list service templates available for developer self-service
-- service template catalog for developers
+- list environment templates
+- creates and manages environment and service templates for standardized deployments
 - deploy a new environment from a standardized template
-- infrastructure as code
-- amazon
-- create environment template
+- list all deployed environments
+- list environment templates for standardized infrastructure
 - create a service from a template
-- list all deployed services
 - deploy a new application service from a service template
 - deployed environment management
-- platform engineering
-- create a service template
-- list service templates
 - environment template management for platform engineers
-- list environments
-- Platform Engineer
+- create service template
+- list service templates
+- serverless
+- platform engineering template and deployment workflow
+- templates
+- service template catalog for developers
+- amazon
+- devops
+- aws
+- deploys services using self-service templates provided by platform engineers
+- list services
+- create a new service template for standardized application deployments
+- create a new standardized environment template for developers
+- platform engineering
+- create environment template
 - Application Developer
+- list deployed services
+- self-service
+- Platform Engineer
 - ci/cd
 - create an environment template
+- list environments
+- infrastructure as code
+- create a service template
 - list deployed environments
-- platform engineering template and deployment workflow
-- create an environment from a template
-- list environment templates
-- templates
-- creates and manages environment and service templates for standardized deployments
-- list services
+- deployed service management
+- list all deployed services
 - create service
 slug: platform-engineering
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Proton Platform Engineering\n  description: Workflow capability for platform engineering teams using Amazon Proton to publish standardized templates and automate infrastructure provisioning for development teams. Covers template management, environment deployment, and service lifecycle management.\n  tags:\n    - Amazon\n    - AWS\n    - DevOps\n    - Platform Engineering\n    - Infrastructure as Code\n    - Self-Service\n    - Templates\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-proton\n      location: ./shared/amazon-proton.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: platform-engineering-api\n      description: Unified REST API for Amazon Proton platform engineering workflows.\n\

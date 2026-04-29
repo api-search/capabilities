@@ -40,50 +40,50 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get industry classifications.
-- financial data
-- get esg
-- fundamentals
+- concord
+- research
+- entity data.
+- id lookup
+- translate between identifier types.
+- concordance lookup
+- get esg scores.
+- get rbics
 - get entity reference data.
+- entity concordance.
 - get fundamentals
-- get people data.
-- get ownership data.
-- get fundamental financial data.
-- get people profiles.
-- concordance lookup.
+- get people
+- get geographic revenue.
+- get esg
+- fundamental data.
+- concordance entity lookup.
+- get georev
+- factset
 - financial
 - esg data.
-- factset
-- entity data
-- symbology translate
-- market data
-- research
-- fundamental data.
-- get esg scores.
-- get classifications
-- get esg data.
-- people data.
-- concordance lookup
-- get ownership
-- look up security identifiers.
-- entity data.
-- company research
-- get georev
-- translate between identifier types.
-- get rbics
-- get entities
-- get people
-- id lookup
-- get fundamentals.
-- get entity
-- portfolio analytics
-- entity concordance.
-- get geographic revenue.
-- investment analytics
+- financial data
 - get rbics classifications.
+- get fundamentals.
+- get fundamental financial data.
+- fundamentals
+- look up security identifiers.
+- get entities
+- investment analytics
+- market data
+- get industry classifications.
+- entity data
+- get entity
+- get people data.
+- get esg data.
+- get ownership
+- symbology translate
+- people data.
+- portfolio analytics
+- concordance lookup.
 - get entity data.
-- concord
-- concordance entity lookup.
+- company research
+- get classifications
+- get ownership data.
+- get people profiles.
 slug: company-research
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Company Research\"\n  description: \"Unified workflow for company research including entity data, fundamentals, people, concordance, symbology, classifications, ESG, and ownership. Used by research analysts.\"\n  tags:\n    - FactSet\n    - Company Research\n    - Entity Data\n    - Fundamentals\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-entity\n      location: ./shared/entity.yaml\n    - import: factset-fundamentals\n      location: ./shared/fundamentals.yaml\n    - import: factset-people\n      location: ./shared/people.yaml\n    - import: factset-concordance\n      location: ./shared/concordance.yaml\n    - import: factset-symbology\n      location: ./shared/symbology.yaml\n    - import: factset-classifications\n      location: ./shared/classifications.yaml\n\
   \    - import: factset-rbics\n      location: ./shared/rbics.yaml\n    - import: factset-esg\n      location: ./shared/esg.yaml\n    - import: factset-ownership\n      location: ./shared/ownership.yaml\n    - import: factset-georev\n      location: ./shared/georev.yaml\n    - import: factset-id-lookup\n      location: ./shared/id-lookup.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: company-research-api\n      description: \"Unified REST API for company research.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description: \"Entity data.\"\n          operations:\n            - method: GET\n              name: get-entities\n              description: \"Get entity data.\"\n              call: \"factset-entity.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fundamentals\n          name: fundamentals\n          description: \"Fundamental data.\"\n\

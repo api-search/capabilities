@@ -46,53 +46,53 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- graphics
-- video
-- license image
-- search
-- licensing statistics
-- get the authenticated adobe stock member profile and quota information
-- member profile and quota
-- stock
-- license a stock photo for use in a project
-- get licensing statistics for the authenticated member
-- get the stock content category tree
-- stock content categories
-- license a stock video clip
-- stock content search
-- stock file metadata
-- get the hierarchical category tree for adobe stock content
-- photography
-- get the authenticated member profile
-- licensing
-- get license history
-- get member profile
-- license a stock photo
-- get licensing statistics
-- creative
-- vector and illustration licensing
-- get license history for the member
-- image licensing
-- content sourcing
-- license video
-- get detailed metadata for a specific stock file by content id
 - get stock file metadata
-- digital assets
-- license history
+- video
+- get license history
 - get license stats
+- get the authenticated adobe stock member profile and quota information
+- get metadata for a specific stock file
 - design
-- video licensing
-- get the license history for the authenticated member
-- adobe
-- get category tree
-- license a vector or illustration
-- license vector
+- license history
+- license a stock video clip
 - search the adobe stock library for photos, illustrations, vectors, and videos
 - license a stock video clip for use in a project
+- get licensing statistics for the authenticated member
+- license image
+- graphics
+- photography
+- licensing statistics
+- get category tree
+- image licensing
+- license a stock photo
+- digital assets
+- video licensing
 - search stock files
+- get license history for the member
+- license vector
+- adobe
+- stock
+- get the authenticated member profile
+- creative
+- search
+- get the license history for the authenticated member
+- stock content categories
+- vector and illustration licensing
+- license video
+- stock file metadata
+- member profile and quota
 - search the adobe stock library
-- get metadata for a specific stock file
+- get licensing statistics
 - license a vector or illustration for use in a project
+- licensing
+- get detailed metadata for a specific stock file by content id
+- content sourcing
+- get the hierarchical category tree for adobe stock content
+- license a stock photo for use in a project
+- stock content search
+- get member profile
+- license a vector or illustration
+- get the stock content category tree
 slug: stock-asset-sourcing
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Stock Asset Sourcing\"\n  description: \"Stock asset discovery, licensing, and management workflow using the Adobe Stock API. Used by content curators, marketing teams, and creative directors to search for stock photos, illustrations, vectors, and videos, license them for projects, and manage licensing history and quotas.\"\n  tags:\n    - Adobe\n    - Stock\n    - Digital Assets\n    - Licensing\n    - Content Sourcing\n    - Search\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_STOCK_TOKEN: ADOBE_STOCK_TOKEN\n      ADOBE_STOCK_API_KEY: ADOBE_STOCK_API_KEY\n\ncapability:\n  consumes:\n    - import: stock\n      location: ./shared/stock.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: stock-asset-sourcing-api\n      description: \"Unified REST API for stock asset discovery, licensing, and management using Adobe Stock.\"\n      resources:\n\
   \        - path: /v1/stock-files\n          name: stock-files\n          description: \"Stock content search\"\n          operations:\n            - method: GET\n              name: search-stock-files\n              description: \"Search the Adobe Stock library\"\n              call: \"stock.search-stock-files\"\n              with:\n                search_parameters[words]: \"rest.keywords\"\n                search_parameters[limit]: \"rest.limit\"\n                search_parameters[offset]: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stock-files/{content_id}\n          name: stock-file-detail\n          description: \"Stock file metadata\"\n          operations:\n            - method: GET\n              name: get-stock-file-metadata\n              description: \"Get metadata for a specific stock file\"\n              call: \"stock.get-stock-file-metadata\"\n              with:\n           \

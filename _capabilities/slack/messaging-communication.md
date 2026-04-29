@@ -38,45 +38,45 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- list files.
-- manage canvases.
-- manage lists.
-- manage lists
-- list custom emoji.
-- list emoji
-- pin a message.
-- manage canvases
-- search
-- messaging
-- file management.
-- post message
-- search messages
-- list stars
-- chat
-- search messages and files.
-- post a message to a channel.
-- list starred items.
-- bots
-- post a message.
-- productivity
-- manage channel bookmarks.
 - collaboration
-- add a reaction.
-- message management.
-- list files
-- manage reminders
-- list conversations
-- communication
-- manage bookmarks
-- list conversations.
-- add reaction
+- manage canvases.
+- pin a message.
+- messaging
 - conversation management.
 - slack
-- add pin
-- t1
-- manage reminders.
+- chat
+- post message
+- manage canvases
+- search messages and files.
+- list files.
+- manage lists.
+- list conversations
+- manage bookmarks
 - team communication
+- post a message to a channel.
+- list stars
+- communication
+- add a reaction.
+- manage reminders
 - search workspace.
+- search
+- search messages
+- list custom emoji.
+- add reaction
+- bots
+- add pin
+- post a message.
+- manage reminders.
+- manage lists
+- list starred items.
+- manage channel bookmarks.
+- productivity
+- file management.
+- message management.
+- list emoji
+- list files
+- list conversations.
+- t1
 slug: messaging-communication
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Slack Messaging and Communication\"\n  description: \"Unified workflow for messaging and communication including posting messages, managing conversations, sharing files, reacting, searching, and organizing with pins and stars. Used by app developers building communication integrations.\"\n  tags:\n    - Slack\n    - Messaging\n    - Communication\n    - Chat\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\n\ncapability:\n  consumes:\n    - import: slack-chat\n      location: ./shared/chat.yaml\n    - import: slack-conversations\n      location: ./shared/conversations.yaml\n    - import: slack-files\n      location: ./shared/files.yaml\n    - import: slack-pins\n      location: ./shared/pins.yaml\n    - import: slack-reactions\n      location: ./shared/reactions.yaml\n    - import: slack-stars\n      location: ./shared/stars.yaml\n    - import:\
   \ slack-search\n      location: ./shared/search.yaml\n    - import: slack-emoji\n      location: ./shared/emoji.yaml\n    - import: slack-bookmarks\n      location: ./shared/bookmarks.yaml\n    - import: slack-canvases\n      location: ./shared/canvases.yaml\n    - import: slack-lists\n      location: ./shared/lists.yaml\n    - import: slack-reminders\n      location: ./shared/reminders.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: messaging-api\n      description: \"Unified REST API for Slack messaging and communication.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Message management.\"\n          operations:\n            - method: POST\n              name: post-message\n              description: \"Post a message.\"\n              call: \"slack-chat.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/conversations\n          name:\

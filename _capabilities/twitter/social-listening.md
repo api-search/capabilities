@@ -82,110 +82,110 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- retrieve multiple users by their usernames
-- get historical post insights
-- post creation, editing, media management, and content analytics.
-- social media manager
-- look up users by ids
-- manage stream filter rules
-- platform operations
-- get posts mentioning a specific user
-- 10% sample stream
-- content
-- researcher
-- get counts of posts matching a query from last 7 days
-- searchPostsRecent
-- get followers of a user
-- monitor conversations, search posts, analyze trends, and extract insights.
-- community manager
-- get 28-hour post insights
-- full firehose stream
-- stream posts matching filter rules
-- stream a 10% sample of all public posts in real-time
-- conducts academic or market research using x data archives.
-- search recent posts
-- social media
-- produces original posts, threads, and media content on x.
-- stream all public posts
-- get following
-- getInsightsHistorical
-- ensures data handling meets regulatory and platform compliance requirements.
-- advertising
-- get current stream rules
-- getFollowers
-- compliance officer
-- creates, schedules, and analyzes social media content across platforms.
-- streamPostsSearch
-- getPostsCountsRecent
-- stream posts matching filtered stream rules in real-time
-- retrieve users by ids
-- get posts authored by a specific user
-- data analyst
-- stream all public posts in real-time via the firehose
-- user relationships, direct messaging, spaces, and community interaction.
-- getInsights28Hr
-- get all post counts
-- content creator
-- social monitoring, search, trending topics, and sentiment analysis.
-- real-time data
-- extracts insights from social data through search, streaming, and analytics.
-- get current rules for the filtered search stream
-- engagement specialist
-- search all posts
-- handles customer inquiries and issues via direct messages and replies.
-- data compliance, deletion tracking, and regulatory event monitoring.
-- stream 10% sample of posts
-- search for posts from the last 7 days
-- getUsersByUsernames
-- manages brand presence, campaigns, and content strategy.
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- search
-- getUserTimeline
-- addSearchStreamRules
-- getPostsCountsAll
-- get followers
-- getFollowing
-- marketing team
-- getSearchStreamRules
-- customer support
-- streaming
-- retrieve multiple users by their ids
-- get post insights for the last 28 hours
-- add or delete stream rules
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- analytics
-- filtered search stream
-- get counts from last 7 days
-- builds and maintains communities through engagement and moderation.
-- get counts of posts matching a query from full archive
-- x api
-- get counts from full archive
-- streamPostsSample10
-- search the full archive of posts
-- search posts from last 7 days
-- getUsersMe
-- get post insights for last 28 hours
-- add or delete rules for the filtered search stream
-- manages user relationships, follows, and interaction strategies.
-- search full archive of posts
-- manage user relationships, direct messages, spaces, and community interactions.
-- data engineer
-- streamPostsFirehose
-- microblogging
-- social listening
-- monitors brand mentions, sentiment, and competitive landscape.
-- retrieve users by usernames
-- get users being followed
-- get users that a user is following
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- getUsersByIds
-- get user followers
-- retrieve the authenticated user's profile
-- get recent post counts
 - searchPostsAll
+- manage user relationships, direct messages, spaces, and community interactions.
+- creates, schedules, and analyzes social media content across platforms.
+- analytics
+- getPostsCountsAll
+- marketing team
+- stream all public posts in real-time via the firehose
 - brand manager
-- trends
+- customer support
+- search recent posts
+- user relationships, direct messaging, spaces, and community interaction.
+- ensures data handling meets regulatory and platform compliance requirements.
+- get user followers
+- real-time data
+- get users that a user is following
+- get counts of posts matching a query from full archive
+- search for posts from the last 7 days
+- data engineer
+- getSearchStreamRules
+- look up users by ids
+- addSearchStreamRules
+- get post insights for last 28 hours
+- searchPostsRecent
+- get current rules for the filtered search stream
+- get posts authored by a specific user
 - look up users by usernames
+- retrieve multiple users by their usernames
+- streamPostsFirehose
+- trends
+- manages brand presence, campaigns, and content strategy.
+- data analyst
+- x api
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- getInsightsHistorical
+- filtered search stream
+- compliance officer
+- getUserTimeline
+- conducts academic or market research using x data archives.
+- get followers of a user
+- stream posts matching filtered stream rules in real-time
+- getFollowing
+- getUsersMe
+- full firehose stream
+- social media manager
+- add or delete stream rules
+- retrieve users by ids
+- get counts from full archive
+- stream all public posts
+- monitor conversations, search posts, analyze trends, and extract insights.
+- get users being followed
+- search all posts
+- stream 10% sample of posts
+- content creator
+- platform operations
+- post creation, editing, media management, and content analytics.
+- get followers
+- retrieve users by usernames
+- streamPostsSearch
+- engagement specialist
+- streaming
+- stream a 10% sample of all public posts in real-time
+- get counts from last 7 days
+- retrieve multiple users by their ids
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- search full archive of posts
+- getFollowers
+- get historical post insights
+- get recent post counts
+- monitors brand mentions, sentiment, and competitive landscape.
+- get following
+- get counts of posts matching a query from last 7 days
+- social listening
+- get post insights for the last 28 hours
+- stream posts matching filter rules
+- getUsersByIds
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- builds and maintains communities through engagement and moderation.
+- retrieve the authenticated user's profile
+- get posts mentioning a specific user
+- streamPostsSample10
+- getPostsCountsRecent
+- microblogging
+- social monitoring, search, trending topics, and sentiment analysis.
+- get current stream rules
+- social media
+- manage stream filter rules
+- get 28-hour post insights
+- content
+- search posts from last 7 days
+- handles customer inquiries and issues via direct messages and replies.
+- search
+- manages user relationships, follows, and interaction strategies.
+- community manager
+- getInsights28Hr
+- researcher
+- extracts insights from social data through search, streaming, and analytics.
+- add or delete rules for the filtered search stream
+- getUsersByUsernames
+- get all post counts
+- produces original posts, threads, and media content on x.
+- data compliance, deletion tracking, and regulatory event monitoring.
+- 10% sample stream
+- advertising
+- search the full archive of posts
 - getUserMentions
 slug: social-listening
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Social Listening and Analytics\"\n  description: \"Unified workflow for monitoring conversations, searching posts, analyzing trends, and extracting insights from X data. Used by data analysts, brand managers, and researchers.\"\n  tags:\n    - X API\n    - Social Listening\n    - Analytics\n    - Search\n    - Trends\n  personas:\n    - data analysts\n    - brand managers\n    - researchers\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-posts\n      location: \"./shared/posts.yaml\"\n    - import: x-streaming\n      location: \"./shared/streaming.yaml\"\n    - import: x-users\n      location: \"./shared/users.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: x-listening-api\n      resources:\n        - path: /v1/listening/search/recent\n          name: search-recent\n\

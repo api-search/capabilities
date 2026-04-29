@@ -14,34 +14,34 @@ personas: []
 provider_name: nOps
 provider_slug: nops
 search_terms:
-- get map project
-- enable a scheduler
-- get utilization summary
-- nops
-- get map migration project details
 - get scheduler workload summary
-- optimization
-- list map resources
-- get scheduler workload recommendations
-- list resources in a map project
-- get workload recommendations
-- disable scheduler
-- enable scheduler
-- create a scheduler
 - list map projects
-- list map products
-- map migration projects
-- create scheduler
-- list map migration projects
-- costs
-- list products in a map project
-- finops
-- cloud costs
-- get utilization recommendations
-- trigger scheduler
 - manually trigger a scheduler
+- map migration projects
+- get map migration project details
+- enable scheduler
+- get map project
+- finops
+- create a scheduler
+- costs
+- list map products
+- enable a scheduler
+- get utilization recommendations
+- list map migration projects
+- disable scheduler
+- optimization
+- get scheduler workload recommendations
+- nops
+- get workload recommendations
+- get utilization summary
+- trigger scheduler
+- cloud costs
 - disable a scheduler
+- list products in a map project
+- list map resources
+- create scheduler
 - get workload summary
+- list resources in a map project
 slug: cloud-cost-optimization
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"nOps Cloud Cost Optimization\"\n  description: \"Unified cloud cost optimization capability combining MAP migration tracking, scheduler automation, and cost recommendations. Used by FinOps teams and cloud operations engineers.\"\n  tags: [nOps, FinOps, Cloud Costs, Optimization]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      NOPS_API_KEY: NOPS_API_KEY\ncapability:\n  consumes:\n    - import: nops\n      location: ./shared/nops.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloud-cost-optimization-api\n      description: \"Unified REST API for nOps cloud cost optimization.\"\n      resources:\n        - path: /v1/map-projects\n          name: map-projects\n          description: \"MAP migration projects\"\n          operations:\n            - { method: GET, name: list-map-projects, description: \"List MAP migration projects\", call: \"nops.list-map-projects\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: cloud-cost-optimization-mcp\n      transport: http\n      description: \"MCP server for AI-assisted cloud cost optimization.\"\n      tools:\n        - { name: list-map-projects, description: \"List MAP migration projects\", hints: { readOnly: true }, call: \"nops.list-map-projects\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-map-project, description: \"Get MAP migration project details\", hints: { readOnly: true }, call: \"nops.get-map-project\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-map-products, description: \"List products in a MAP project\", hints: { readOnly: true }, call: \"nops.list-map-products\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-map-resources, description: \"List resources in a MAP project\", hints: { readOnly: true }, call: \"nops.list-map-resources\"\

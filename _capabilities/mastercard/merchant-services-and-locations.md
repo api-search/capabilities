@@ -30,39 +30,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- atm location search
-- fraud detection
-- merchant location search
-- list atm countries
-- track
-- merchant
-- search merchant locations
-- submit acquirer transaction
-- search for mastercard merchant locations
-- financial services
-- locations
-- search atm locations
-- list countries with mastercard atms
-- digital identity
 - places location intelligence
-- search for merchants in track
-- search for atm locations
-- search places
-- search for mastercard atm locations
-- track merchant data
-- acquirer
+- fraud detection
+- track
 - search for merchant places with location intelligence
 - mastercard
-- search for merchant places
 - submit a transaction as an acquirer
-- search track merchants
-- open banking
-- list merchant countries
-- payments
-- list countries with merchant locations
-- search for merchant locations
-- credit cards
 - search for merchants in the mastercard track network
+- merchant location search
+- list countries with merchant locations
+- search places
+- submit acquirer transaction
+- search atm locations
+- atm location search
+- payments
+- search for atm locations
+- credit cards
+- search for mastercard atm locations
+- list countries with mastercard atms
+- search for merchants in track
+- financial services
+- acquirer
+- search for merchant locations
+- merchant
+- open banking
+- search for merchant places
+- list atm countries
+- track merchant data
+- search track merchants
+- list merchant countries
+- search merchant locations
+- locations
+- digital identity
+- search for mastercard merchant locations
 slug: merchant-services-and-locations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Merchant Services and Locations\"\n  description: \"Unified workflow for merchants and acquirers to manage merchant/ATM locations, Places data, Track merchant search, and acquirer transaction processing.\"\n  tags:\n    - Mastercard\n    - Merchant\n    - Locations\n    - Acquirer\n    - Track\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: merchant-locations\n      location: ./shared/merchant-locations.yaml\n    - import: atm-locations\n      location: ./shared/atm-locations.yaml\n    - import: places\n      location: ./shared/places.yaml\n    - import: track-search\n      location: ./shared/track-search.yaml\n    - import: transaction-api-acquirers\n      location: ./shared/transaction-api-acquirers.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8091\n      namespace: merchant-services-api\n      description: \"Unified REST API for merchant services and location data.\"\n      resources:\n        - path: /v1/merchant-locations\n          name: merchant-locations\n          description: \"Merchant location search\"\n          operations:\n            - method: POST\n              name: search-merchant-locations\n              description: \"Search for merchant locations\"\n              call: \"merchant-locations.search-merchants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/atm-locations\n          name: atm-locations\n          description: \"ATM location search\"\n          operations:\n            - method: POST\n              name: search-atm-locations\n              description: \"Search for ATM locations\"\n              call: \"atm-locations.search-atms\"\n              outputParameters:\n                - type: object\n\

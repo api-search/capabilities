@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Events
 provider_slug: amazon-iot-events
 search_terms:
-- create alarm model
+- IoT Developer
+- amazon iot events create alarm model
 - amazon iot events create input
 - manages amazon iot events resources and operations
-- amazon iot events create alarm model
-- automation
-- IoT Developer
-- amazon iot events resources
-- event detection
-- aws
-- create detector model
 - describe detector model
-- amazon iot events create detector model
-- state machine
-- amazon iot events list alarms
-- list detector models
-- iot
-- describe alarm model
-- amazon iot events describe alarm model
-- amazon iot events list detector models
-- amazon iot events list inputs
 - list alarms
-- Solutions Architect
-- amazon iot events describe detector model
-- list inputs
+- create detector model
+- event detection
+- describe alarm model
 - detect and respond to events from iot sensors and applications.
+- amazon iot events resources
+- state machine
+- Solutions Architect
+- list inputs
 - create input
+- aws
+- amazon iot events list inputs
+- automation
+- list detector models
+- amazon iot events list alarms
+- amazon iot events list detector models
+- amazon iot events describe detector model
+- create alarm model
+- amazon iot events describe alarm model
+- iot
+- amazon iot events create detector model
 slug: iot-event-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Events - Iot Event Management\n  description: Unified capability for IoT Developer, Solutions Architect to manage detect and respond to events from iot sensors and applications operations.\n  tags:\n    - IoT\n    - AWS\n    - Event Detection\n    - Automation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-events\n      location: ./shared/iot-events.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iot-event-management-api\n      description: Unified REST API for iot event management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT Events resources\n          operations:\n            - method: GET\n              name: list-detector-models\n             \
   \ description: List Detector Models\n              call: \"iot-events.list-detector-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: iot-event-management-mcp\n      transport: http\n      description: MCP server for AI-assisted iot event management.\n      tools:\n        - name: list-detector-models\n          description: Amazon IoT Events List Detector Models\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-events.list-detector-models\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-detector-model\n          description: Amazon IoT Events Create Detector Model\n          hints:\n            readOnly: false\n            \n          call: \"iot-events.create-detector-model\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\

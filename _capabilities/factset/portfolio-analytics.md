@@ -40,39 +40,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- list datastore
-- list portfolio metadata.
-- financial data
+- research
+- spar engine resources.
 - portfolio resources.
-- list pa engine resources.
-- list metadata
-- list pa engine
-- list publisher resources.
-- list analytics datastore.
-- list analytics datastore
-- financial
+- list portfolio metadata.
+- analytics datastore.
+- list portfolios
 - list spar engine
-- factset
+- list publisher resources.
+- list spar engine resources.
 - performance attribution
 - list portfolio metadata
-- list vault
-- market data
-- research
-- list pa
-- pa engine resources.
-- list spar engine resources.
 - risk analysis
-- list portfolios
-- portfolio metadata.
-- portfolio analytics
+- factset
+- financial
+- list pa
 - list vault resources.
-- spar engine resources.
-- list spar
-- list publisher
+- financial data
 - investment analytics
+- market data
 - list portfolios.
+- list spar
+- list datastore
+- list pa engine resources.
+- list pa engine
+- portfolio analytics
 - vault resources.
-- analytics datastore.
+- list analytics datastore.
+- pa engine resources.
+- list analytics datastore
+- list vault
+- portfolio metadata.
+- list publisher
+- list metadata
 slug: portfolio-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Portfolio Analytics\"\n  description: \"Unified workflow for portfolio analytics including performance attribution, risk analysis, and benchmarking. Used by portfolio managers and performance analysts.\"\n  tags:\n    - FactSet\n    - Portfolio Analytics\n    - Performance Attribution\n    - Risk Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-pa-engine\n      location: ./shared/pa-engine.yaml\n    - import: factset-spar\n      location: ./shared/spar-engine.yaml\n    - import: factset-vault\n      location: ./shared/vault.yaml\n    - import: factset-publisher\n      location: ./shared/publisher.yaml\n    - import: factset-portfolio\n      location: ./shared/portfolio.yaml\n    - import: factset-portfolio-meta\n      location: ./shared/portfolio-metadata.yaml\n\
   \    - import: factset-datastore\n      location: ./shared/analytics-datastore.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: portfolio-analytics-api\n      description: \"Unified REST API for FactSet portfolio analytics.\"\n      resources:\n        - path: /v1/pa-engine\n          name: pa-engine\n          description: \"PA Engine resources.\"\n          operations:\n            - method: GET\n              name: list-pa\n              description: \"List PA Engine resources.\"\n              call: \"factset-pa-engine.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spar-engine\n          name: spar-engine\n          description: \"SPAR Engine resources.\"\n          operations:\n            - method: GET\n              name: list-spar\n              description: \"List SPAR Engine resources.\"\n              call: \"factset-spar.list\"\n              outputParameters:\n        \

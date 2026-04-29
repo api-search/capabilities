@@ -35,54 +35,54 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: airflow
 search_terms:
-- list connections
-- defining, scheduling, and executing data workflows.
 - get variable
-- data engineering
-- monitor task instances.
-- list all variables.
-- list dag runs.
-- list airflow dag run history with optional state filtering.
-- Platform Admin
-- builds and triggers data pipelines using airflow dags.
-- get dag
-- trigger a new dag run.
-- list task instances and their status for a dag run.
-- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
-- list task instances
-- pause an airflow dag to prevent scheduled runs.
-- managing pipeline configuration and integrations.
-- list all connections.
+- list all apache airflow dags.
 - data pipeline
-- airflow variables.
-- dag
-- pause dag
-- list dags
-- list airflow connections for external service integrations.
-- get a specific airflow variable by key.
-- Data Engineer
+- airflow
 - list dag runs
 - trigger dag run
-- etl
-- list all apache airflow dags.
-- list all dags.
-- scheduling
-- apache
-- airflow
-- trigger and monitor dag runs.
-- get the current status of an airflow dag run.
-- airflow connections.
-- trigger an apache airflow dag run with optional configuration.
-- apache airflow dag management.
-- manages airflow connections, variables, pools, and infrastructure.
-- get dag run status
-- monitoring and operating running pipelines.
-- list airflow variables for pipeline configuration.
-- open source
-- list variables
+- pause dag
 - list task instances for a dag run.
-- workflow orchestration
+- Platform Admin
+- list airflow dag run history with optional state filtering.
 - get details of an apache airflow dag by id.
+- defining, scheduling, and executing data workflows.
+- apache airflow dag management.
+- scheduling
+- list all variables.
+- trigger and monitor dag runs.
+- trigger a new dag run.
+- list connections
+- get the current status of an airflow dag run.
+- dag
+- list airflow connections for external service integrations.
+- list task instances
+- Data Engineer
+- monitoring and operating running pipelines.
+- workflow orchestration
+- pause an airflow dag to prevent scheduled runs.
+- list dag runs.
+- list all dags.
+- builds and triggers data pipelines using airflow dags.
+- apache
+- open source
+- trigger an apache airflow dag run with optional configuration.
+- monitor task instances.
+- etl
+- list variables
+- get dag
+- list airflow variables for pipeline configuration.
+- list task instances and their status for a dag run.
+- manages airflow connections, variables, pools, and infrastructure.
+- managing pipeline configuration and integrations.
+- get a specific airflow variable by key.
+- airflow variables.
+- data engineering
+- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
+- airflow connections.
+- list all connections.
+- list dags
+- get dag run status
 slug: workflow-orchestration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Airflow Workflow Orchestration\"\n  description: \"Unified workflow capability for managing Apache Airflow pipelines — DAGs, DAG runs, task monitoring, variables, and connections. Used by data engineers and platform teams for orchestrating data pipelines.\"\n  tags:\n    - Airflow\n    - Workflow Orchestration\n    - Data Pipeline\n    - ETL\n    - Data Engineering\n    - Apache\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRFLOW_BASE_URL: AIRFLOW_BASE_URL\n      AIRFLOW_USERNAME: AIRFLOW_USERNAME\n      AIRFLOW_PASSWORD: AIRFLOW_PASSWORD\n\ncapability:\n  consumes:\n    - import: airflow\n      location: ./shared/airflow-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airflow-orchestration-api\n      description: \"Unified REST API for Airflow workflow orchestration.\"\n      resources:\n        - path: /v1/dags\n          name: dags\n\
   \          description: \"Apache Airflow DAG management.\"\n          operations:\n            - method: GET\n              name: list-dags\n              description: \"List all DAGs.\"\n              call: \"airflow.list-dags\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dag-runs\n          name: dag-runs\n          description: \"Trigger and monitor DAG runs.\"\n          operations:\n            - method: GET\n              name: list-dag-runs\n              description: \"List DAG runs.\"\n              call: \"airflow.list-dag-runs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: trigger-dag-run\n              description: \"Trigger a new DAG run.\"\n              call: \"airflow.trigger-dag-run\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n      \

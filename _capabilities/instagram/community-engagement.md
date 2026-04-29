@@ -54,56 +54,56 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- creates and publishes photos, videos, reels, and stories.
-- search for hashtags.
-- media where user was tagged.
-- videos
 - get fields on an instagram comment.
-- community engagement
-- embeds instagram content on websites and applications.
-- create comment reply
-- get hashtag recent media
-- monitors mentions, comments, and brand sentiment on instagram.
-- comments on a media object.
-- publishes and manages content across instagram accounts.
-- recent media for a hashtag.
-- search hashtag
-- mentions
-- top media for a hashtag.
-- create a comment on an instagram media object.
-- get comments on an instagram media object.
-- meta
-- reply to a comment.
-- replies to a comment.
-- get comment
-- get comment replies
-- get hashtag top media
-- get the most popular media tagged with a specific hashtag.
-- get user tags
-- get replies to a comment.
-- individual comment operations.
-- content publishing and media management.
-- create comment
-- comments
-- hide or unhide a comment on your media.
-- get media comments
-- hide comment
-- content publishing
-- delete a comment on your media.
-- manages instagram direct conversations for business inquiries.
-- tracks content performance and audience insights.
-- get ig media objects where the user has been tagged by other users.
-- website embedding of instagram content.
-- instagram direct messaging.
-- social media
 - insights and performance metrics.
-- get the most recently published media tagged with a specific hashtag.
-- hashtags
-- search for a hashtag by name and get its id.
-- delete comment
-- comments, mentions, and community interaction.
+- top media for a hashtag.
 - photos
+- social media
+- get hashtag top media
+- get user tags
+- embeds instagram content on websites and applications.
+- get comment
+- search for hashtags.
+- reply to a comment.
+- comments, mentions, and community interaction.
+- get hashtag recent media
+- hide or unhide a comment on your media.
+- creates and publishes photos, videos, reels, and stories.
+- instagram direct messaging.
+- mentions
+- comments
+- videos
+- media where user was tagged.
+- get comments on an instagram media object.
+- website embedding of instagram content.
+- meta
+- manages instagram direct conversations for business inquiries.
+- get the most popular media tagged with a specific hashtag.
+- community engagement
+- get media comments
+- monitors mentions, comments, and brand sentiment on instagram.
+- get comment replies
+- publishes and manages content across instagram accounts.
+- create comment reply
+- hide comment
+- delete a comment on your media.
+- tracks content performance and audience insights.
+- content publishing and media management.
+- content publishing
+- recent media for a hashtag.
+- hashtags
+- get the most recently published media tagged with a specific hashtag.
+- get replies to a comment.
 - instagram
+- search hashtag
+- create comment
+- individual comment operations.
+- get ig media objects where the user has been tagged by other users.
+- replies to a comment.
+- create a comment on an instagram media object.
+- search for a hashtag by name and get its id.
+- comments on a media object.
+- delete comment
 slug: community-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Community Engagement\"\n  description: >-\n    Unified workflow for managing Instagram community interactions including\n    comment moderation, replies, hashtag discovery, and mention tracking. Used by\n    community managers and social media teams to engage with followers, moderate\n    comments, discover trending content via hashtags, and monitor brand mentions.\n  tags:\n    - Instagram\n    - Community Engagement\n    - Social Media\n    - Comments\n    - Hashtags\n    - Mentions\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: instagram-engagement-api\n      description: \"Unified REST API for Instagram community engagement workflows.\"\n\
   \      resources:\n        - path: /v1/media/{media_id}/comments\n          name: media-comments\n          description: \"Comments on a media object.\"\n          operations:\n            - method: GET\n              name: get-media-comments\n              description: \"Get comments on an Instagram media object.\"\n              call: \"instagram-graph.get-media-comments\"\n              with:\n                media_id: \"rest.media_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-comment\n              description: \"Create a comment on an Instagram media object.\"\n              call: \"instagram-graph.create-comment\"\n              with:\n                media_id: \"rest.media_id\"\n                message: \"rest.message\"\n                access_token: \"rest.access_token\"\n\

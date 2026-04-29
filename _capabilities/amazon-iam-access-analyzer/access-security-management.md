@@ -31,48 +31,48 @@ personas: []
 provider_name: Amazon IAM Access Analyzer
 provider_slug: amazon-iam-access-analyzer
 search_terms:
-- create analyzer
-- manage access analyzers
-- validate an iam policy document for best practices and security issues
-- manage analyzers, findings, validate policies, and generate least-privilege policies
-- manages iam policies, roles, and access controls
-- iam
-- list archive rules
-- reviews access findings and remediates unintended access
-- get details of a specific access finding
-- generate an iam policy based on cloudtrail access activity logs
-- create access preview
-- IAM Administrator
-- generate iam policies from activity logs
-- access control
-- create a new access analyzer
-- get finding
-- policy management
 - compliance
-- list archive rules for an analyzer
-- ensuring access controls meet security standards
-- aws
-- validate an iam policy for best practices
-- validate policy
-- review access analyzer findings
-- Cloud Security Engineer
-- start policy generation
-- list all iam access analyzers configured in the account
-- Security Engineer
-- start generating a policy based on cloudtrail activity
-- creating, validating, and optimizing iam policies
-- security
-- preview access changes before deploying permission changes
+- get finding
+- create a new access analyzer
+- create access preview
 - create a new iam access analyzer for an account or organization
-- list all access analyzers in the account
-- list security findings from an access analyzer
-- get generated policy
-- managing who can access what resources
-- retrieve a policy generated from cloudtrail activity
-- list findings
+- manage analyzers, findings, validate policies, and generate least-privilege policies
+- Security Engineer
+- IAM Administrator
+- list archive rules for an analyzer
+- reviews access findings and remediates unintended access
+- security
+- iam
 - validate iam policies
-- list analyzers
+- list findings
+- start generating a policy based on cloudtrail activity
+- managing who can access what resources
+- list archive rules
+- aws
+- ensuring access controls meet security standards
+- get details of a specific access finding
+- validate an iam policy document for best practices and security issues
 - list findings from an analyzer
+- start policy generation
+- list security findings from an access analyzer
+- creating, validating, and optimizing iam policies
+- list analyzers
+- get generated policy
+- list all iam access analyzers configured in the account
+- validate policy
+- Cloud Security Engineer
+- generate an iam policy based on cloudtrail access activity logs
+- list all access analyzers in the account
+- validate an iam policy for best practices
+- access control
+- review access analyzer findings
+- preview access changes before deploying permission changes
+- policy management
+- manages iam policies, roles, and access controls
+- generate iam policies from activity logs
+- manage access analyzers
+- retrieve a policy generated from cloudtrail activity
+- create analyzer
 slug: access-security-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon IAM Access Analyzer - Access Security Management\n  description: Unified capability for security teams to manage access analyzers, review findings, validate policies, and enforce least-privilege access controls across AWS accounts.\n  tags:\n    - AWS\n    - IAM\n    - Security\n    - Access Control\n    - Compliance\n    - Policy Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: iam-access-analyzer\n      location: ./shared/iam-access-analyzer.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: access-security-api\n      description: Unified REST API for access security management.\n      resources:\n        - path: /v1/analyzers\n          name: analyzers\n          description: Manage access analyzers\n   \
   \       operations:\n            - method: GET\n              name: list-analyzers\n              description: List all access analyzers in the account\n              call: \"iam-access-analyzer.listanalyzers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-analyzer\n              description: Create a new access analyzer\n              call: \"iam-access-analyzer.createanalyzer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/findings\n          name: findings\n          description: Review access analyzer findings\n          operations:\n            - method: GET\n              name: list-findings\n              description: List findings from an analyzer\n              call: \"iam-access-analyzer.listfindings\"\n              outputParameters:\n                - type: object\n                  mapping:\

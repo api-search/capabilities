@@ -56,61 +56,61 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- transactions
-- displaying financing terms and promotional messaging to customers.
-- initiation and management of customer financing sessions.
-- refund a captured transaction.
-- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
-- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
-- merchant engineer
-- get promo messaging
-- get details of a specific affirm payment dispute.
-- capture a transaction.
-- list all affirm payment disputes for a merchant.
-- buy now pay later
-- read an affirm checkout session by token.
-- payment transaction management.
-- list all affirm payment transactions for reconciliation.
-- get affirm promotional financing terms and messaging for a purchase amount.
-- list disputes
-- capture transaction
-- promotional messaging.
-- get promo
-- create an affirm bnpl checkout session for a customer purchase.
-- create an affirm checkout session.
-- specific dispute operations.
-- read checkout
-- submit evidence to contest an affirm payment dispute.
-- authorize transaction
-- disputes
-- authorize an affirm transaction using a checkout token.
-- refund a transaction.
-- authorize a transaction.
-- affirm
-- capture an authorized transaction.
 - list all disputes.
-- capture an authorized affirm transaction to collect funds.
-- handling of customer chargebacks and disputes.
-- payment ops
-- retrieve or update a checkout session.
-- refund a captured affirm transaction partially or fully.
-- void an authorized affirm transaction before capture.
-- refund transaction
-- store checkout
-- read a checkout session.
-- get dispute details.
-- submit dispute evidence
-- merchant operations team member managing transaction reconciliation and dispute resolution.
-- checkout
-- payments
-- void transaction
-- list transactions
-- get promotional financing terms.
-- authorization, capture, void, and refund of payment transactions.
-- dispute management.
-- get dispute
 - checkout session management.
+- buy now pay later
+- retrieve or update a checkout session.
+- void transaction
+- disputes
 - list all transactions.
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- refund a transaction.
+- capture transaction
+- list transactions
+- payments
+- list all affirm payment transactions for reconciliation.
+- refund a captured transaction.
+- capture an authorized transaction.
+- handling of customer chargebacks and disputes.
+- read an affirm checkout session by token.
+- payment ops
+- authorize a transaction.
+- read checkout
+- create an affirm checkout session.
+- create an affirm bnpl checkout session for a customer purchase.
+- checkout
+- payment transaction management.
+- get dispute details.
+- promotional messaging.
+- authorize an affirm transaction using a checkout token.
+- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- displaying financing terms and promotional messaging to customers.
+- refund a captured affirm transaction partially or fully.
+- dispute management.
+- authorization, capture, void, and refund of payment transactions.
+- refund transaction
+- specific dispute operations.
+- submit dispute evidence
+- transactions
+- capture a transaction.
+- get dispute
+- list disputes
+- capture an authorized affirm transaction to collect funds.
+- merchant engineer
+- void an authorized affirm transaction before capture.
+- read a checkout session.
+- get promo
+- get promo messaging
+- authorize transaction
+- get details of a specific affirm payment dispute.
+- submit evidence to contest an affirm payment dispute.
+- list all affirm payment disputes for a merchant.
+- get affirm promotional financing terms and messaging for a purchase amount.
+- affirm
+- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
+- initiation and management of customer financing sessions.
+- store checkout
+- get promotional financing terms.
 slug: payment-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Affirm Payment Management\"\n  description: \"Unified workflow capability for managing the full Affirm BNPL payment lifecycle — from initiating checkout sessions through transaction authorization, capture, refund, and dispute resolution. Used by merchant engineers and payment operations teams.\"\n  tags:\n    - Affirm\n    - Payments\n    - Buy Now Pay Later\n    - Checkout\n    - Transactions\n    - Disputes\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AFFIRM_PUBLIC_KEY: AFFIRM_PUBLIC_KEY\n      AFFIRM_PRIVATE_KEY: AFFIRM_PRIVATE_KEY\n\ncapability:\n  consumes:\n    - import: affirm-checkout\n      location: ./shared/checkout.yaml\n    - import: affirm-transactions\n      location: ./shared/transactions.yaml\n    - import: affirm-disputes\n      location: ./shared/disputes.yaml\n    - import: affirm-promos\n      location: ./shared/promos.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8080\n      namespace: affirm-payment-api\n      description: \"Unified REST API for Affirm BNPL payment management.\"\n      resources:\n        - path: /v1/checkouts\n          name: checkouts\n          description: \"Checkout session management.\"\n          operations:\n            - method: POST\n              name: store-checkout\n              description: \"Create an Affirm checkout session.\"\n              call: \"affirm-checkout.store-checkout\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/checkouts/{token}\n          name: checkout-by-token\n          description: \"Retrieve or update a checkout session.\"\n          operations:\n            - method: GET\n              name: read-checkout\n              description: \"Read a checkout session.\"\n              call: \"affirm-checkout.read-checkout\"\n              with:\n                token: \"rest.token\"\n              outputParameters:\n\

@@ -44,79 +44,79 @@ personas: []
 provider_name: Oracle Integration
 provider_slug: oracle-integration
 search_terms:
+- monitoring
+- list errored integration instances.
+- business process management with tasks and decision models.
+- list instances
+- list tasks
+- list monitoring instances.
+- get details of a specific integration.
+- ipaas
+- list process instances
+- process instances.
+- list packages
+- list all process definitions.
+- get task details.
+- oracle integration
+- list process analytics queries.
+- integration packages.
+- list process definitions
+- list dmn spaces
+- unified management of integrations, connections, monitoring, b2b, processes, and tasks.
+- list all oracle integration connections.
+- Integration Developer
 - list connections
+- list errored instances.
+- b2b trading partners.
+- list process instances.
 - list integration monitoring instances.
+- list workspace spaces.
+- get connection
+- list trading partners
+- integration connections.
+- integration monitoring instances.
+- integration flows.
+- integration flow design, deployment, and lifecycle management.
 - api management
 - get process instance
-- list user tasks.
-- get connection
-- automation
-- list tasks
-- list errored instances.
-- get details of a specific integration.
-- list dmn decision model spaces.
-- enterprise integration
-- process instances.
-- list monitoring instances.
-- list instances
-- list process instances
-- get task details.
-- designs and manages business process definitions and decision models.
-- get integration
-- list errors
-- oracle integration
-- test connection
-- get details of a specific connection.
-- list errored integration instances.
-- list process definitions
-- integration
-- ipaas
-- list process analytics queries.
-- real-time monitoring of integration instances and error handling.
-- manages the oracle integration platform including monitoring, users, and configuration.
-- get task
-- list all connections.
-- list all packages.
-- list analytics queries
-- list all oracle integration flows.
-- b2b
-- unified management of integrations, connections, monitoring, b2b, processes, and tasks.
-- integration management
-- list all b2b trading partners.
-- test a connection for connectivity.
-- list integrations
-- b2b trading partners.
-- integration flows.
-- errored integration instances.
-- business process management with tasks and decision models.
-- b2b integration
-- Integration Developer
-- list workspace spaces.
-- process automation
-- list monitoring errors
-- manages b2b trading partners, agreements, and document exchange.
-- list all process definitions.
-- list process instances.
-- list trading partners
-- list dmn spaces
-- monitoring
-- integration connections.
 - cloud integration
-- Platform Administrator
-- builds and manages integration flows, connections, and adapters.
-- list all trading partners.
-- user tasks.
-- list all oracle integration connections.
-- list spaces
+- integration management
+- list user tasks.
+- list all packages.
+- enterprise integration
 - list monitoring instances
-- list all integration packages.
+- list errors
+- list all oracle integration flows.
+- test a connection for connectivity.
+- integration
 - list all integrations.
+- manages the oracle integration platform including monitoring, users, and configuration.
+- Platform Administrator
+- get integration
+- b2b
+- designs and manages business process definitions and decision models.
+- list spaces
+- list all integration packages.
+- real-time monitoring of integration instances and error handling.
+- automation
+- get details of a specific connection.
+- builds and manages integration flows, connections, and adapters.
 - get process instance details.
-- integration monitoring instances.
-- integration flow design, deployment, and lifecycle management.
-- list packages
+- b2b integration
+- process automation
+- get task
+- errored integration instances.
+- list analytics queries
+- test connection
+- list all b2b trading partners.
+- manages b2b trading partners, agreements, and document exchange.
+- list all trading partners.
+- list monitoring errors
+- list dmn decision model spaces.
 - b2b trading partner management and document exchange.
-- integration packages.
+- list integrations
+- list all connections.
+- user tasks.
 slug: integration-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Oracle Integration Management\n  description: >-\n    Unified workflow for managing Oracle Integration lifecycle including\n    integrations, connections, packages, monitoring, B2B trading partners,\n    process automation, tasks, and decision models. Used by integration\n    developers and platform administrators.\n  tags:\n    - Oracle Integration\n    - Integration Management\n    - Process Automation\n    - B2B\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_INTEGRATION_USERNAME: ORACLE_INTEGRATION_USERNAME\n      ORACLE_INTEGRATION_PASSWORD: ORACLE_INTEGRATION_PASSWORD\n\ncapability:\n  consumes:\n    - import: oracle-developer-api\n      location: ./shared/developer-api.yaml\n    - import: oracle-process-api\n      location: ./shared/process-automation-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: oracle-integration-api\n\
   \      description: Unified REST API for Oracle Integration management.\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: Integration connections.\n          operations:\n            - method: GET\n              name: list-connections\n              description: List all connections.\n              call: oracle-developer-api.list-connections\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/integrations\n          name: integrations\n          description: Integration flows.\n          operations:\n            - method: GET\n              name: list-integrations\n              description: List all integrations.\n              call: oracle-developer-api.list-integrations\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitoring/instances\n          name: monitoring-instances\n          description:\

@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
+- aws
+- transcription
 - speech recognition
 - machine learning
-- transcription
-- speech-to-text
-- aws
 - audio processing
+- speech-to-text
 slug: amazon-transcribe-capability
 source_yaml: 'id: amazon-transcribe-capability
 

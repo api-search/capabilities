@@ -39,49 +39,49 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- authentication, sharing, and verification for consumer apps.
-- create crm data validation export job.
-- get crm validation job
-- marketing
-- integrates linkedin authentication and sharing into applications.
-- batch get profile associations
-- create export job
-- business
-- careers
-- create crm validation job
-- batch fetch profile associations from crm records.
-- linkedin
-- message archiving and regulatory communications governance.
-- fetch sales analytics export job by id.
-- employee development tracking and content access.
-- sales navigator
-- uses sales navigator for lead generation and crm sync.
 - archives communications for regulatory compliance.
-- job posting, recruiting, and applicant tracking.
-- posts jobs and manages candidates through ats integrations.
-- get export job
+- social media
 - find all contracts where user has an active seat.
 - manages b2b ad campaigns and audience targeting on linkedin.
-- get crm validation job status.
-- tracks employee learning activity and completions.
-- get contracts
-- create new sales analytics export job.
-- sales
-- b2b advertising, audience targeting, and campaign analytics.
-- get crm data validation export job status.
-- get sales access token
-- fetch export job status.
-- crm integration
-- recruiting
-- data portability and advertiser transparency for dma.
-- professional networking
-- create crm data validation job.
-- retrieve sales access token.
-- social media
+- get crm validation job
+- create crm data validation export job.
+- create export job
+- fetch sales analytics export job by id.
 - create sales analytics export job.
+- create new sales analytics export job.
+- marketing
+- professional networking
+- get export job
+- retrieve sales access token.
+- batch fetch profile associations from crm records.
+- b2b advertising, audience targeting, and campaign analytics.
+- sales
+- job posting, recruiting, and applicant tracking.
+- get crm validation job status.
+- get crm data validation export job status.
 - get sales access token.
-- batch fetch profile associations.
+- get sales access token
+- get contracts
+- create crm validation job
+- recruiting
+- crm integration
+- create crm data validation job.
+- employee development tracking and content access.
+- batch get profile associations
+- business
+- fetch export job status.
+- sales navigator
+- posts jobs and manages candidates through ats integrations.
+- uses sales navigator for lead generation and crm sync.
+- linkedin
 - sales intelligence, lead management, and crm integration.
+- data portability and advertiser transparency for dma.
+- careers
+- tracks employee learning activity and completions.
+- authentication, sharing, and verification for consumer apps.
+- integrates linkedin authentication and sharing into applications.
+- batch fetch profile associations.
+- message archiving and regulatory communications governance.
 slug: sales-engagement
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Sales Engagement\"\n  description: \"Unified workflow for sales representatives to manage Sales Navigator contracts, export analytics, associate CRM profiles, and validate CRM data.\"\n  tags:\n    - LinkedIn\n    - Sales Navigator\n    - CRM Integration\n    - Sales\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: sales-navigator\n      location: ./shared/sales-navigator.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: sales-engagement-api\n      description: \"Unified REST API for LinkedIn sales engagement workflows.\"\n      resources:\n        - path: /v1/sales-contracts\n          name: sales-contracts\n          operations:\n            - method: GET\n              name: get-contracts\n              description: \"Find all contracts where user has an active\
   \ seat.\"\n              call: \"sales-navigator.get-contracts\"\n        - path: /v1/sales-analytics-export-jobs\n          name: sales-analytics-export-jobs\n          operations:\n            - method: POST\n              name: create-export-job\n              description: \"Create sales analytics export job.\"\n              call: \"sales-navigator.create-export-job\"\n        - path: /v1/sales-analytics-export-jobs/{JobId}\n          name: export-job-by-id\n          operations:\n            - method: GET\n              name: get-export-job\n              description: \"Fetch export job status.\"\n              call: \"sales-navigator.get-export-job\"\n        - path: /v1/sales-access-tokens\n          name: sales-access-tokens\n          operations:\n            - method: GET\n              name: get-sales-access-token\n              description: \"Get sales access token.\"\n              call: \"sales-navigator.get-sales-access-token\"\n        - path: /v1/profile-associations\n\

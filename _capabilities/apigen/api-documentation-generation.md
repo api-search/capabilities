@@ -22,27 +22,27 @@ personas: []
 provider_name: APIGen
 provider_slug: apigen
 search_terms:
-- php
 - deploy documentation site
-- deploy an api documentation site for a project.
-- list projects
-- deploy
+- developer generating api documentation for php projects using apigen.
+- create project
+- apigen
+- documentation
+- api code generation
 - code
+- writer managing and publishing api documentation sites.
 - create a new php api documentation project in apigen.
 - create project.
-- developer generating api documentation for php projects using apigen.
-- api code generation
-- documentation
-- deploy documentation.
-- apigen
-- generation
-- create documentation project
-- list projects.
-- list all apigen documentation projects.
-- create project
-- writer managing and publishing api documentation sites.
+- php
 - PHP Developer
+- deploy documentation.
+- deploy an api documentation site for a project.
 - Technical Writer
+- create documentation project
+- generation
+- list projects.
+- deploy
+- list projects
+- list all apigen documentation projects.
 - open source
 slug: api-documentation-generation
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIGen Documentation Generation\"\n  description: \"Workflow for generating, publishing, and managing API documentation using APIGen - creating projects from PHP source code, configuring endpoints, and deploying documentation sites.\"\n  tags:\n    - APIGen\n    - Documentation\n    - PHP\n    - API Code Generation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIGEN_API_TOKEN: APIGEN_API_TOKEN\n\ncapability:\n  consumes:\n    - import: apigen\n      location: ./shared/apigen.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigen-docs-api\n      description: \"Unified REST API for APIGen documentation management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List projects.\"\n              call: \"apigen.list-projects\"\

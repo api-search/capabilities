@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
-- storage
-- automation
 - aws
-- migration
 - hybrid cloud
+- automation
+- migration
+- storage
 - data transfer
 slug: data-transfer-operations
 source_yaml: "id: https://api-evangelist.github.io/amazon-datasync/capabilities/data-transfer-operations.yaml\nname: Data Transfer Operations\ndescription: Workflow-oriented Naftiko capability for automated data transfer operations using Amazon DataSync, covering on-premises to cloud migration, cross-cloud transfer, and ongoing synchronization workflows.\nversion: 1.0.0-alpha1\nspecificationVersion: 1.0.0-alpha1\n\ntags:\n  - Data Transfer\n  - Migration\n  - Storage\n  - Automation\n  - Hybrid Cloud\n\nimports:\n  - url: capabilities/shared/datasync.yaml\n    as: datasync\n\npersonas:\n  - name: Storage Administrator\n    description: Administrator responsible for managing data movement between on-premises and cloud storage\n  - name: Cloud Migration Engineer\n    description: Engineer executing data migrations from on-premises systems to AWS cloud storage\n  - name: Data Platform Engineer\n    description: Engineer maintaining ongoing data synchronization between storage systems\n\nworkflows:\n\

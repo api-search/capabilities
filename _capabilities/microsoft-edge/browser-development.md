@@ -31,64 +31,64 @@ personas: []
 provider_name: Microsoft Edge
 provider_slug: microsoft-edge
 search_terms:
-- get the full devtools protocol schema definition
-- extension products
-- microsoft edge
-- list products
-- develops and publishes browser extensions for microsoft edge
-- develops web applications and uses devtools for debugging
-- browser version
-- list targets
-- automation
-- bring a browser tab to the foreground
-- list all debuggable targets
-- get protocol schema
-- developer tools
-- Extension Developer
-- list all extension products in the edge add-ons store
-- list extensions
-- list extension products
-- submit an extension for review and publishing
-- webview
-- open a new browser tab
-- browser
-- activate target
-- list all debuggable browser targets in microsoft edge
-- get microsoft edge browser version information
-- upload package
-- get extension details
-- extension product detail
-- check the status of an extension submission
-- Web Developer
-- microsoft
-- get browser version
-- open a new browser tab in microsoft edge
-- create submission
-- extension lifecycle from development to publication
-- web development
-- get details of an extension product
-- close target
-- QA Engineer
-- chromium
-- debuggable browser targets
-- browser development
-- extensions
-- create new browser target
-- debugging
-- get browser version info
-- get product
-- get submission status
-- check the status of a package upload
-- get upload status
-- get extension
-- close a browser tab
-- upload a new extension package
-- unified browser development workflow combining debugging and extension management
-- tests web applications and extensions using devtools automation
 - progressive web apps
-- browser debugging and inspection
-- create target
+- list extensions
+- developer tools
+- microsoft edge
+- open a new browser tab
+- list extension products
+- close target
 - edge
+- extension products
+- get extension details
+- activate target
+- extension lifecycle from development to publication
+- get submission status
+- debugging
+- Extension Developer
+- get upload status
+- browser
+- bring a browser tab to the foreground
+- develops web applications and uses devtools for debugging
+- submit an extension for review and publishing
+- chromium
+- get protocol schema
+- browser version
+- open a new browser tab in microsoft edge
+- get details of an extension product
+- list all debuggable browser targets in microsoft edge
+- web development
+- list targets
+- microsoft
+- extension product detail
+- create target
+- QA Engineer
+- get product
+- browser debugging and inspection
+- create submission
+- automation
+- tests web applications and extensions using devtools automation
+- debuggable browser targets
+- check the status of a package upload
+- create new browser target
+- close a browser tab
+- get browser version
+- upload package
+- develops and publishes browser extensions for microsoft edge
+- get browser version info
+- list all debuggable targets
+- browser development
+- get microsoft edge browser version information
+- check the status of an extension submission
+- unified browser development workflow combining debugging and extension management
+- webview
+- list all extension products in the edge add-ons store
+- extensions
+- get the full devtools protocol schema definition
+- get extension
+- upload a new extension package
+- Web Developer
+- list products
 slug: browser-development
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Edge Browser Development\"\n  description: \"Unified workflow for Microsoft Edge browser development combining DevTools Protocol debugging with Add-ons extension lifecycle management. Used by extension developers, web developers, and QA engineers.\"\n  tags:\n    - Microsoft Edge\n    - Browser Development\n    - Extensions\n    - Debugging\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      EDGE_DEVTOOLS_HOST: EDGE_DEVTOOLS_HOST\n      EDGE_ADDONS_API_TOKEN: EDGE_ADDONS_API_TOKEN\n\ncapability:\n  consumes:\n    - import: devtools-api\n      location: ./shared/devtools-api.yaml\n    - import: addons-api\n      location: ./shared/addons-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: browser-development-api\n      description: \"Unified REST API for Microsoft Edge browser development workflows.\"\n      resources:\n     \
   \   - path: /v1/targets\n          name: targets\n          description: \"Debuggable browser targets\"\n          operations:\n            - method: GET\n              name: list-targets\n              description: \"List all debuggable targets\"\n              call: \"devtools-api.list-targets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/targets/new\n          name: new-target\n          description: \"Create new browser target\"\n          operations:\n            - method: PUT\n              name: create-target\n              description: \"Open a new browser tab\"\n              call: \"devtools-api.create-target\"\n              with:\n                url: \"rest.url\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/version\n          name: version\n          description: \"Browser version\"\n          operations:\n            - method:\

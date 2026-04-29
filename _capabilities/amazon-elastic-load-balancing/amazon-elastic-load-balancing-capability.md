@@ -62,42 +62,42 @@ personas: []
 provider_name: Amazon Elastic Load Balancing
 provider_slug: amazon-elastic-load-balancing
 search_terms:
+- describeTargetHealth
+- createRule
+- scalability
+- amazon elastic load balancing create a listener
+- createLoadBalancer
+- amazon elastic load balancing create a listener rule
+- networking
+- amazon elastic load balancing create a target group
+- describeRules
+- amazon elastic load balancing modify load balancer attributes
+- registerTargets
+- describeListeners
 - operations teams managing amazon elastic load balancing infrastructure
 - createTargetGroup
-- registerTargets
-- amazon elastic load balancing describe load balancers
-- amazon elastic load balancing describe target health
-- createLoadBalancer
-- amazon elastic load balancing create a load balancer
 - modifyLoadBalancerAttributes
-- load balancing
-- amazon elastic load balancing describe target groups
-- aws
-- amazon elastic load balancing delete a load balancer
-- amazon elastic load balancing create a target group
-- distribute incoming traffic across multiple targets for high availability
-- scalability
-- describeTargetHealth
-- amazon elastic load balancing describe listener rules
-- createListener
-- amazon elastic load balancing create a listener rule
-- amazon elastic load balancing create a listener
 - developers building applications using amazon elastic load balancing
-- amazon elastic load balancing describe listeners
-- deleteLoadBalancer
-- amazon elastic load balancing modify load balancer attributes
-- describeListeners
-- unified capability for managing amazon elastic load balancing resources. combines amazon elastic load balancing apis for cloud architect workflows in network traffic management.
-- networking
-- describeLoadBalancers
+- high availability
+- amazon elastic load balancing delete a load balancer
 - amazon web services
 - deregisterTargets
-- createRule
+- amazon elastic load balancing create a load balancer
+- amazon elastic load balancing describe target health
+- createListener
+- aws
+- load balancing
 - amazon elastic load balancing deregister targets from a target group
+- amazon elastic load balancing describe listeners
+- distribute incoming traffic across multiple targets for high availability
+- describeLoadBalancers
 - describeTargetGroups
-- high availability
 - amazon elastic load balancing register targets with a target group
-- describeRules
+- amazon elastic load balancing describe listener rules
+- unified capability for managing amazon elastic load balancing resources. combines amazon elastic load balancing apis for cloud architect workflows in network traffic management.
+- amazon elastic load balancing describe load balancers
+- deleteLoadBalancer
+- amazon elastic load balancing describe target groups
 slug: amazon-elastic-load-balancing-capability
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Elastic Load Balancing Management\n  description: Unified capability for managing Amazon Elastic Load Balancing resources. Combines Amazon Elastic Load Balancing APIs for Cloud Architect workflows in Network Traffic Management.\n  tags:\n  - Amazon Web Services\n  - Load Balancing\n  - Networking\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: elastic_load_balancing\n    location: ./shared/elastic-load-balancing.yaml\n  exposes:\n  - type: rest\n    port: 8182\n    namespace: amazon-elastic-load-balancing-workflow-api\n    description: Unified REST API for Amazon Elastic Load Balancing management.\n    resources:\n    - path: /v1/createLoadBalancer\n      name: createLoadBalancer\n      description: Amazon Elastic Load Balancing Create a Load Balancer\n      operations:\n      - method: GET\n   \
   \     name: createLoadBalancer\n        description: Amazon Elastic Load Balancing Create a Load Balancer\n        call: api.createLoadBalancer\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/describeLoadBalancers\n      name: describeLoadBalancers\n      description: Amazon Elastic Load Balancing Describe Load Balancers\n      operations:\n      - method: GET\n        name: describeLoadBalancers\n        description: Amazon Elastic Load Balancing Describe Load Balancers\n        call: api.describeLoadBalancers\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/deleteLoadBalancer\n      name: deleteLoadBalancer\n      description: Amazon Elastic Load Balancing Delete a Load Balancer\n      operations:\n      - method: GET\n        name: deleteLoadBalancer\n        description: Amazon Elastic Load Balancing Delete a Load Balancer\n        call: api.deleteLoadBalancer\n        outputParameters:\n        -\

@@ -9,12 +9,12 @@ personas: []
 provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
+- data pipeline
+- data observability
+- data management
+- intelligence
 - observability
 - ai agents
-- intelligence
-- data management
-- data observability
-- data pipeline
 - data quality
 slug: data-observability
 source_yaml: "apiVersion: naftiko.io/v1alpha1\nkind: WorkflowCapability\nmetadata:\n  name: data-observability\n  version: 1.0.0\n  description: End-to-end data observability workflow for monitoring data quality, tracing lineage, and managing pipeline health across cloud and hybrid environments\n  provider: Acceldata\n  tags:\n    - Data Observability\n    - Data Quality\n    - Pipeline Monitoring\n    - Data Lineage\n    - Alerts\nspec:\n  sharedCapabilities:\n    - acceldata-adoc-api\n  workflow:\n    name: Data Quality Incident Response\n    description: Detect data quality alerts, trace root cause through lineage, and remediate with updated quality rules\n    steps:\n      - id: monitor-alerts\n        name: Monitor Active Alerts\n        description: Continuously poll for open data quality and pipeline alerts\n        operation: listAlerts\n        parameters:\n          status: OPEN\n          severity: [\"HIGH\", \"CRITICAL\"]\n      - id: investigate-dataset\n        name: Investigate\

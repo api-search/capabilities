@@ -52,54 +52,54 @@ personas:
 provider_name: BeyondTrust
 provider_slug: beyondtrust
 search_terms:
-- just in time access
-- secrets
-- list access requests
-- get secret
-- security engineer
-- privileged access management
-- privileged access
-- credential retrieval for approved requests
-- zero trust
 - devops engineer retrieving secrets and credentials for ci/cd pipelines
 - retrieve a specific secret value from secrets safe
-- secure storage and retrieval of secrets and credentials
-- list requests
-- list secrets stored in beyondtrust secrets safe
 - compliance
-- delete request
-- access management
-- delete a secret
-- access request management
-- get a secret value
-- just-in-time access to privileged accounts on managed systems
-- create secret
-- store a new secret in secrets safe
 - create a new secret
-- devops engineer
-- individual secret operations
-- list managed accounts
-- beyondtrust
-- get request credentials
-- security
-- access
-- list managed systems
-- create an access request
-- retrieve credentials for an approved privileged access request
 - list secrets
-- list privileged accounts available for just-in-time access
-- list all active privileged access requests
-- managed system discovery
-- cancel and delete an access request
-- privileged account discovery
-- get credentials for approved request
-- delete secret
-- security team member managing privileged access policies and requests
-- secrets management
-- create request
+- create an access request
+- store a new secret in secrets safe
 - create a just-in-time access request for a privileged account
+- security
+- access request management
+- secrets
+- credential retrieval for approved requests
+- list managed accounts
+- get secret
+- privileged access management
+- delete request
+- create secret
+- list access requests
+- just-in-time access to privileged accounts on managed systems
+- security engineer
 - credentials
+- retrieve credentials for an approved privileged access request
 - list systems registered in password safe
+- list all active privileged access requests
+- create request
+- just in time access
+- get credentials for approved request
+- individual secret operations
+- zero trust
+- managed system discovery
+- secure storage and retrieval of secrets and credentials
+- beyondtrust
+- privileged account discovery
+- cancel and delete an access request
+- security team member managing privileged access policies and requests
+- access management
+- list privileged accounts available for just-in-time access
+- get a secret value
+- privileged access
+- delete secret
+- list secrets stored in beyondtrust secrets safe
+- delete a secret
+- secrets management
+- get request credentials
+- list managed systems
+- list requests
+- access
+- devops engineer
 slug: privileged-access-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: BeyondTrust Privileged Access Management\n  description: >-\n    Unified privileged access management workflow combining Password Safe\n    credential management, access request workflows, and secrets management.\n    Used by security engineers and DevOps teams to manage just-in-time\n    privileged access and secrets retrieval for automated pipelines.\n  tags:\n    - BeyondTrust\n    - Privileged Access Management\n    - Zero Trust\n    - Secrets Management\n    - Just In Time Access\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BEYONDTRUST_HOST: BEYONDTRUST_HOST\n      BEYONDTRUST_APP_ID: BEYONDTRUST_APP_ID\n      BEYONDTRUST_API_KEY: BEYONDTRUST_API_KEY\n\ncapability:\n  consumes:\n    - import: beyondtrust\n      location: ./shared/beyondtrust.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: beyondtrust-pam-api\n      description: Unified REST API\
   \ for BeyondTrust privileged access management.\n      resources:\n        - path: /v1/managed-accounts\n          name: managed-accounts\n          description: Privileged account discovery\n          operations:\n            - method: GET\n              name: list-managed-accounts\n              description: List managed accounts\n              call: \"beyondtrust.list-managed-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/managed-systems\n          name: managed-systems\n          description: Managed system discovery\n          operations:\n            - method: GET\n              name: list-managed-systems\n              description: List managed systems\n              call: \"beyondtrust.list-managed-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/requests\n          name: requests\n          description: Access request\

@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- send an interactive event to edge network
-- secrets for event forwarding destinations
-- event forwarding rules
-- create a new event forwarding property
-- edge network data ingestion
-- end a media tracking session
-- list server-side event forwarding properties
-- server-side event forwarding properties
-- send batch events
-- send an interactive event to adobe edge network
-- send interactive event
-- marketing technology
-- create event forwarding rule
-- send batch events to edge network
-- create a new event forwarding rule
-- data collection
-- create secret
-- event forwarding
-- start a media tracking session
-- create a secret for an event forwarding destination
-- end media session
-- tag management
-- list secrets for a property
-- create event forwarding property
-- list event forwarding properties
-- list event forwarding rules
-- list secrets
-- adobe launch
-- list event forwarding rules for a property
-- edge network
-- start media session
-- list secrets for authenticating with forwarding destinations
 - send batch events to adobe edge network
+- end media session
+- event forwarding rules
+- list secrets
+- create a new event forwarding property
+- edge network
+- edge network data ingestion
+- tag management
+- end a media tracking session
+- event forwarding
+- create secret
+- send an interactive event to edge network
+- create a secret for an event forwarding destination
+- list event forwarding rules
+- list secrets for a property
+- list server-side event forwarding properties
+- list event forwarding rules for a property
+- create a new event forwarding rule
+- send an interactive event to adobe edge network
+- send batch events to edge network
+- send interactive event
+- adobe launch
+- marketing technology
+- list event forwarding properties
+- create event forwarding rule
+- list secrets for authenticating with forwarding destinations
+- start a media tracking session
+- secrets for event forwarding destinations
+- create event forwarding property
+- server-side event forwarding properties
+- data collection
+- start media session
+- send batch events
 slug: data-collection-pipeline
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Launch Data Collection Pipeline\"\n  description: \"Unified workflow for Adobe Experience Platform data collection. Combines Event Forwarding and Data Collection APIs for data engineers managing server-side event routing, Edge Network data ingestion, and media analytics tracking.\"\n  tags:\n    - Adobe Launch\n    - Data Collection\n    - Event Forwarding\n    - Edge Network\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ACCESS_TOKEN: ADOBE_ACCESS_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n      ADOBE_ORG_ID: ADOBE_ORG_ID\n\ncapability:\n  consumes:\n    - import: event-forwarding\n      location: ./shared/event-forwarding.yaml\n    - import: data-collection\n      location: ./shared/data-collection.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: data-collection-pipeline-api\n      description: \"Unified REST API for Adobe data collection\
   \ pipeline management.\"\n      resources:\n        - path: /v1/event-forwarding-properties\n          name: event-forwarding-properties\n          description: \"Server-side event forwarding properties\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-properties\n              description: \"List event forwarding properties\"\n              call: \"event-forwarding.list-properties\"\n              with:\n                companyId: \"rest.companyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/event-forwarding-rules\n          name: event-forwarding-rules\n          description: \"Event forwarding rules\"\n          operations:\n            - method: GET\n              name: list-event-forwarding-rules\n              description: \"List event forwarding rules\"\n              call: \"event-forwarding.list-rules\"\n              with:\n                propertyId: \"\

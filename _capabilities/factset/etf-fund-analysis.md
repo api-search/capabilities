@@ -26,33 +26,33 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- etf
-- get fund data
-- financial data
-- get benchmark data.
-- get etf reference data.
-- benchmarks
-- get etf data
-- get etf profiles and prices.
-- financial
-- factset
-- benchmark data.
-- market data
 - research
-- fund data.
-- get mutual fund data.
+- get etf data.
+- get benchmark data.
 - get estimates
+- benchmarks
+- etf data.
 - funds
 - get etfs
-- get fund data.
-- get funds
-- get benchmarks
-- portfolio analytics
-- etf data.
+- get etf profiles and prices.
+- fund data.
+- factset
+- financial
+- financial data
 - investment analytics
-- get consensus estimates.
-- get etf data.
+- etf
+- market data
+- get fund data
+- benchmark data.
+- get etf reference data.
+- get fund data.
+- get benchmarks
 - get etf profiles
+- portfolio analytics
+- get mutual fund data.
+- get consensus estimates.
+- get etf data
+- get funds
 slug: etf-fund-analysis
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet ETF and Fund Analysis\"\n  description: \"Unified workflow for ETF and mutual fund analysis including profiles, pricing, allocations, performance, and benchmarks. Used by fund analysts.\"\n  tags:\n    - FactSet\n    - ETF\n    - Funds\n    - Benchmarks\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-etf\n      location: ./shared/etf.yaml\n    - import: factset-etf-profile\n      location: ./shared/etf-profile-and-prices.yaml\n    - import: factset-funds\n      location: ./shared/funds.yaml\n    - import: factset-benchmarks\n      location: ./shared/benchmarks.yaml\n    - import: factset-estimates\n      location: ./shared/estimates.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: etf-fund-api\n      description: \"\
   Unified REST API for ETF and fund analysis.\"\n      resources:\n        - path: /v1/etfs\n          name: etfs\n          description: \"ETF data.\"\n          operations:\n            - method: GET\n              name: get-etfs\n              description: \"Get ETF data.\"\n              call: \"factset-etf.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/funds\n          name: funds\n          description: \"Fund data.\"\n          operations:\n            - method: GET\n              name: get-funds\n              description: \"Get fund data.\"\n              call: \"factset-funds.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benchmarks\n          name: benchmarks\n          description: \"Benchmark data.\"\n          operations:\n            - method: GET\n              name: get-benchmarks\n              description: \"\

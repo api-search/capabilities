@@ -9,12 +9,12 @@ personas: []
 provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
+- unified api
 - ipaas
+- embedded integrations
+- workflows
 - automation
 - integrations
-- workflows
-- unified api
-- embedded integrations
 slug: integration-platform
 source_yaml: "name: Integration Platform\ndescription: >-\n  Workflow capability composition for building and managing native integrations\n  using the Alloy Automation platform. Supports embedded iPaaS, connectivity API,\n  and MCP-based AI integration workflows.\nversion: 2025-09\ncapabilities:\n  - shared/embedded.yaml\n  - shared/connectivity.yaml\nworkflows:\n  - id: user-integration-setup\n    name: User Integration Setup\n    description: Onboard a new user and configure their first integration\n    steps:\n      - step: create-user\n        capability: embedded\n        operation: createUser\n        description: Create the end user in Alloy\n      - step: generate-token\n        capability: embedded\n        operation: generateUserToken\n        description: Generate JWT for frontend SDK operations\n      - step: list-integrations\n        capability: embedded\n        operation: listIntegrations\n        description: Show available integrations to the user\n  - id: connector-action-flow\n\
   \    name: Connector Action Flow\n    description: Discover and execute actions on a third-party connector\n    steps:\n      - step: list-connectors\n        capability: connectivity\n        operation: listConnectors\n        description: Discover available connectors\n      - step: list-resources\n        capability: connectivity\n        operation: listConnectorResources\n        description: Discover resources in a connector\n      - step: get-action\n        capability: connectivity\n        operation: getConnectorAction\n        description: Get action schema and parameters\n      - step: create-credential\n        capability: connectivity\n        operation: createCredential\n        description: Create credentials for the connector\n      - step: execute-action\n        capability: connectivity\n        operation: executeConnectorAction\n        description: Execute the connector action\n  - id: workflow-monitoring\n    name: Workflow Monitoring\n    description: Monitor workflow\

@@ -34,51 +34,51 @@ personas: []
 provider_name: APIs.guru
 provider_slug: apis-guru
 search_terms:
-- get a specific api version definition
-- statistics and health metrics for the apis.guru directory
-- apis.guru
-- services for a specific provider
-- list all apis
-- get service api definition
+- list all service names for a provider that has multiple services
+- a platform or devx engineer building api catalogs, portals, or governance tooling
 - api directory
-- get provider apis
-- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
-- specific api version spec
-- get directory-wide metrics
 - all apis in the directory
-- list all api provider domain names available in the apis.guru directory
-- retrieve the openapi definition for a specific api version from the directory
-- apis for a specific provider
+- get directory-wide metrics
+- api providers in the directory
+- api catalog
+- statistics and health metrics for the apis.guru directory
+- finding and retrieving api definitions from public directories
+- list api providers
+- get api definition
+- services for a specific provider
+- get all apis for a provider
+- community
+- list all apis
 - openapi
+- retrieve the openapi definition for a specific service api version (for multi-service providers)
+- specific api version spec
+- apis.guru
+- get api spec
+- get provider services
 - discover, browse, and retrieve api definitions from the apis.guru directory
 - list providers
-- list apis
-- get api spec
-- list api providers
-- list service names for a provider
+- open source
+- api discovery
 - directory metrics and statistics
-- get api definition
-- get all apis for a provider
+- list all apis in the apis.guru directory with their openapi definition links and metadata
+- graphql
 - a developer building integrations who needs to discover and retrieve api specifications
-- finding and retrieving api definitions from public directories
-- API Developer
+- get directory metrics
+- retrieve the openapi definition for a specific api version from the directory
+- list apis
+- list service names for a provider
+- list all api provider domain names available in the apis.guru directory
+- Platform Engineer
+- get provider apis
+- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
+- get metrics
+- get service api definition
 - list all apis in the apis.guru directory
-- api catalog
+- API Developer
 - list all api providers
 - 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
-- get provider services
-- get directory metrics
-- a platform or devx engineer building api catalogs, portals, or governance tooling
-- Platform Engineer
-- get metrics
-- graphql
-- api providers in the directory
-- list all apis in the apis.guru directory with their openapi definition links and metadata
-- retrieve the openapi definition for a specific service api version (for multi-service providers)
-- community
-- open source
-- list all service names for a provider that has multiple services
-- api discovery
+- apis for a specific provider
+- get a specific api version definition
 slug: api-discovery
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIs.guru API Discovery\"\n  description: \"Workflow capability for discovering, browsing, and retrieving API definitions from the APIs.guru directory. Enables developers and platform teams to programmatically find public APIs, retrieve their OpenAPI specifications, and explore the catalog by provider. The primary persona is an API developer or platform engineer building integrations or cataloging APIs.\"\n  tags:\n    - API Catalog\n    - API Directory\n    - API Discovery\n    - APIs.guru\n    - OpenAPI\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys: {}\n\ncapability:\n  consumes:\n    - import: apis-guru\n      location: ./shared/apis-guru-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-discovery-api\n      description: \"Unified REST API for API discovery and catalog browsing via APIs.guru.\"\n      resources:\n        - path: /v1/apis\n      \
   \    name: apis\n          description: \"All APIs in the directory\"\n          operations:\n            - method: GET\n              name: list-apis\n              description: \"List all APIs in the APIs.guru directory\"\n              call: \"apis-guru.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/metrics\n          name: metrics\n          description: \"Directory metrics and statistics\"\n          operations:\n            - method: GET\n              name: get-metrics\n              description: \"Get directory-wide metrics\"\n              call: \"apis-guru.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers\n          name: providers\n          description: \"API providers in the directory\"\n          operations:\n            - method: GET\n              name: list-providers\n              description:\

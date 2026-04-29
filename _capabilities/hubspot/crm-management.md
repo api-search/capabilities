@@ -17,160 +17,160 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- getcontact
-- hubspot create a company
-- batchupdatecompanies
-- listticketassociations
-- hubspot create a deal association
-- batchreadassociations
-- createdealassociation
-- createdeal
-- hubspot archive a ticket
-- batchupdatecontacts
-- hubspot batch read deals
-- listassociationlabels
-- content
-- hubspot remove members from a list
-- batchreadcontacts
-- hubspot create a contact
-- hubspot create a contact association
-- hubspot create a ticket
-- createticketassociation
-- crm
-- deletecompany
 - getticket
-- marketing automation
-- batchupdatetickets
-- listdeals
-- createassociationlabel
-- batchcreatetickets
-- hubspot get a contact
-- hubspot batch archive companies
-- hubspot create a company association
-- deletecontactassociation
-- deleteassociationlabel
-- getlistmemberships
-- updatecontact
-- hubspot delete an association label
-- hubspot list company associations
-- createcompanyassociation
-- hubspot batch archive contacts
-- updateticket
-- hubspot search contacts
-- hubspot update a contact
-- deleteobjectassociation
-- hubspot search crm objects
-- hubspot delete a list
-- hubspot get a ticket
-- deleteticketassociation
-- createticket
-- removelistmembers
-- hubspot create an association label
-- searchdeals
-- hubspot batch update deals
-- hubspot batch read contacts
-- hubspot batch archive tickets
-- hubspot list all association definitions
-- createcontactassociation
-- operations
-- hubspot create a list
-- hubspot list contacts
-- batchcreateassociations
-- hubspot add members to a list
-- hubspot delete an association between objects
-- deleteticket
-- hubspot create an association between objects
-- listcontactassociations
-- updatecompany
-- listassociationdefinitions
-- hubspot update an association label
-- sales
-- createobjectassociation
-- hubspot batch create tickets
+- hubspot batch create deals
+- createlist
+- hubspot list contact associations
+- analytics
 - createcontact
-- hubspot batch create contacts
-- deletecontact
-- hubspot list companies
-- hubspot batch update companies
-- updateassociationlabel
-- batchcreatecompanies
-- hubspot get list members
-- hubspot batch read associations for multiple objects
-- hubspot get a company
-- hubspot create a deal
-- hubspot list association labels
-- hubspot list tickets
-- hubspot list deals
-- batcharchivecontacts
-- batchreadcompanies
-- email marketing
+- deletecompany
+- hubspot list all association definitions
+- hubspot search crm objects
+- hubspot create a contact association
 - batchupdatedeals
-- hubspot batch create companies
-- hubspot search tickets
-- hubspot update a company
-- batcharchivecompanies
 - hubspot list associations for an object
 - getlist
-- listcompanies
-- getdeal
-- hubspot update a deal
-- updatedeal
-- hubspot delete a ticket association
-- analytics
-- searchcrmobjects
-- hubspot batch create deals
-- hubspot search deals
-- batchcreatedeals
-- listobjectassociations
-- deletelist
-- getcompany
-- hubspot batch update tickets
-- hubspot list deal associations
-- addlistmembers
-- hubspot batch update contacts
-- listcompanyassociations
-- listdealassociations
-- hubspot list contact associations
-- listtickets
-- marketing
-- hubspot batch read tickets
-- batchreadtickets
-- hubspot delete a deal association
-- createlist
-- hubspot batch read companies
-- searchcompanies
-- hubspot archive a contact
-- searchtickets
-- hubspot archive a deal
-- hubspot batch archive deals
-- listlists
-- hubspot archive a company
-- hubspot get a deal
-- batchreaddeals
-- deletedealassociation
-- hubspot list all lists
-- searchcontacts
-- deletedeal
-- hubspot search companies
-- commerce
-- contacts
-- hubspot get a list
-- customer service
-- createcompany
-- batchcreatecontacts
-- listcontacts
-- deletecompanyassociation
 - hubspot delete a company association
-- hubspot
-- hubspot update a ticket
-- hubspot batch create associations
-- hubspot create a ticket association
+- hubspot batch archive companies
+- hubspot batch update companies
+- deletecontactassociation
+- hubspot search deals
+- batchupdatecontacts
+- hubspot batch update tickets
+- crm
+- updatecontact
 - hubspot delete a contact association
-- batcharchivetickets
-- hubspot batch archive associations
+- createdealassociation
+- hubspot update a contact
+- createcompany
+- hubspot list deals
 - hubspot list ticket associations
-- batcharchiveassociations
+- hubspot create a ticket association
+- hubspot update a ticket
+- batchcreatecontacts
+- hubspot batch read deals
+- hubspot batch archive associations
+- batchreadtickets
+- hubspot get a deal
+- getcontact
+- hubspot list deal associations
+- deletecompanyassociation
+- batchcreatecompanies
+- listlists
+- createticketassociation
 - batcharchivedeals
+- hubspot create a deal association
+- deleteticketassociation
+- listcompanyassociations
+- deletecontact
+- hubspot get a list
+- hubspot archive a deal
+- deleteticket
+- createcompanyassociation
+- hubspot batch update deals
+- searchcontacts
+- deletedealassociation
+- listassociationlabels
+- listticketassociations
+- hubspot update an association label
+- listassociationdefinitions
+- hubspot archive a contact
+- listcompanies
+- deleteobjectassociation
+- hubspot create an association label
+- hubspot
+- hubspot list tickets
+- hubspot archive a ticket
+- hubspot list contacts
+- hubspot search companies
+- hubspot get a ticket
+- hubspot batch read associations for multiple objects
+- hubspot delete a list
+- hubspot archive a company
+- hubspot create a company association
+- batcharchivecompanies
+- batchcreateassociations
+- searchcrmobjects
+- hubspot list association labels
+- batchreaddeals
+- hubspot batch archive tickets
+- batchcreatedeals
+- batchupdatetickets
+- hubspot get a contact
+- hubspot batch archive contacts
+- hubspot list companies
+- searchcompanies
+- hubspot batch create companies
+- hubspot batch create contacts
+- marketing
+- hubspot create an association between objects
+- batchreadcontacts
+- searchdeals
+- batcharchivecontacts
+- batchreadcompanies
+- hubspot batch create tickets
+- listcontacts
+- sales
+- createcontactassociation
+- hubspot batch archive deals
+- batcharchiveassociations
+- listdeals
+- updatedeal
+- hubspot remove members from a list
+- hubspot search tickets
+- updateticket
+- hubspot batch create associations
+- commerce
+- hubspot create a contact
+- hubspot update a deal
+- hubspot delete a ticket association
+- hubspot update a company
+- hubspot get a company
+- deletedeal
+- listdealassociations
+- createassociationlabel
+- hubspot create a deal
+- createticket
+- hubspot batch update contacts
+- hubspot batch read tickets
+- addlistmembers
+- hubspot delete an association label
+- listtickets
+- marketing automation
+- hubspot create a list
+- createdeal
+- hubspot batch read contacts
+- getlistmemberships
+- listobjectassociations
+- contacts
+- hubspot delete an association between objects
+- getcompany
+- getdeal
+- searchtickets
+- hubspot get list members
+- customer service
+- content
+- hubspot list company associations
+- batchreadassociations
+- hubspot list all lists
+- operations
+- hubspot batch read companies
+- updateassociationlabel
+- updatecompany
+- hubspot add members to a list
+- createobjectassociation
+- deleteassociationlabel
+- hubspot delete a deal association
+- removelistmembers
+- email marketing
+- hubspot search contacts
+- hubspot create a ticket
+- batchcreatetickets
+- listcontactassociations
+- batchupdatecompanies
+- hubspot create a company
+- batcharchivetickets
+- deletelist
 slug: crm-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: HubSpot CRM Management\n  description: Unified CRM workflow for managing contacts, companies, deals, tickets, and their associations.\n  tags:\n  - HubSpot\n  - CRM\n  - Sales\n  - Contacts\n  created: '2026-04-18'\n  modified: '2026-04-18'\nbinds:\n- namespace: env\n  keys:\n    HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\ncapability:\n  consumes:\n  - import: crm-contacts-api\n    location: ./shared/crm-contacts-api.yaml\n  - import: crm-companies-api\n    location: ./shared/crm-companies-api.yaml\n  - import: crm-deals-api\n    location: ./shared/crm-deals-api.yaml\n  - import: crm-tickets-api\n    location: ./shared/crm-tickets-api.yaml\n  - import: crm-associations-api\n    location: ./shared/crm-associations-api.yaml\n  - import: crm-search-api\n    location: ./shared/crm-search-api.yaml\n  - import: crm-lists-api\n    location: ./shared/crm-lists-api.yaml\n  exposes:\n  - type: mcp\n    port: 9090\n    namespace: crm-management-mcp\n\
   \    transport: http\n    description: MCP server for AI-assisted HubSpot CRM Management.\n    tools:\n    - name: listcontacts\n      description: HubSpot List Contacts\n      hints:\n        readOnly: true\n      call: crm-contacts-api.listcontacts\n    - name: createcontact\n      description: HubSpot Create a Contact\n      hints:\n        readOnly: false\n      call: crm-contacts-api.createcontact\n    - name: getcontact\n      description: HubSpot Get a Contact\n      hints:\n        readOnly: true\n      call: crm-contacts-api.getcontact\n    - name: updatecontact\n      description: HubSpot Update a Contact\n      hints:\n        readOnly: false\n      call: crm-contacts-api.updatecontact\n    - name: deletecontact\n      description: HubSpot Archive a Contact\n      hints:\n        destructive: true\n      call: crm-contacts-api.deletecontact\n    - name: batchreadcontacts\n      description: HubSpot Batch Read Contacts\n      hints:\n        readOnly: false\n      call: crm-contacts-api.batchreadcontacts\n\

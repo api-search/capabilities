@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list api specifications tracked in the apigee registry.
-- discover shadow apis
-- api management
-- google cloud
-- apigee
-- API Governance Lead
 - monetization
-- api governance
-- list api specs
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- api hub
-- manager packaging api products and managing developer relationships.
-- api discovery
 - developer portal
-- list apis
-- Platform Architect
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- microservices
 - shadow apis discovered via apim.
-- architect overseeing api platform strategy and governance across the organization.
-- list catalogued apis
-- engineer managing api proxies, deployments, and policies in apigee.
-- list observed apis
-- list all catalogued apis.
+- list api specs
+- API Governance Lead
+- google cloud
+- analytics
+- api governance
 - api catalog
 - api catalog from api hub.
-- api gateway
-- analytics
-- enterprise
-- hybrid
+- Platform Architect
+- architect overseeing api platform strategy and governance across the organization.
+- list catalogued apis
+- discover shadow apis
+- manager packaging api products and managing developer relationships.
+- API Product Manager
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- api hub
+- api management
 - API Platform Engineer
-- list all apis in the apigee api hub catalog.
+- microservices
+- api discovery
 - integrations
 - list observed shadow apis.
-- API Product Manager
+- api gateway
+- list all apis in the apigee api hub catalog.
+- list apis
+- enterprise
+- apigee
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- engineer managing api proxies, deployments, and policies in apigee.
+- hybrid
+- list api specifications tracked in the apigee registry.
+- list observed apis
+- list all catalogued apis.
 slug: api-governance-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Governance and Observability\"\n  description: \"Unified workflow for API governance, discovery, and observability using Apigee API Hub for cataloguing, API Observation (APIM) for shadow API discovery, and Registry for tracking specifications.\"\n  tags:\n    - Apigee\n    - API Governance\n    - API Catalog\n    - API Discovery\n    - Google Cloud\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n    - import: apim\n      location: ./shared/apim.yaml\n    - import: registry\n      location: ./shared/registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: apigee-governance-api\n      description: \"Unified REST API for Apigee API governance and observability.\"\n      resources:\n        - path: /v1/apis\n   \
   \       name: api-catalog\n          description: \"API catalog from API Hub.\"\n          operations:\n            - method: GET\n              name: list-apis\n              description: \"List all catalogued APIs.\"\n              call: \"api-hub.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/observed-apis\n          name: observed-apis\n          description: \"Shadow APIs discovered via APIM.\"\n          operations:\n            - method: GET\n              name: list-observed-apis\n              description: \"List observed shadow APIs.\"\n              call: \"apim.listObservedApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: apigee-governance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API governance and catalog management.\"\n      tools:\n        - name:\

@@ -39,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- delete mapping
+- monitoring
+- delete a service instance permanently.
+- list instances
+- provision a new sap hana cloud instance.
+- get details of a specific instance.
+- delete instance
+- create a new instance mapping.
+- get database metrics.
 - retrieve database performance metrics.
 - create mapping
-- performance metrics.
-- provision a new sap hana cloud instance.
-- delete an instance.
-- cloud
-- delete a service instance permanently.
-- get details of a specific instance.
-- update instance configuration.
-- list alert rules for an instance.
-- list instances
-- get instance
-- update instance
-- create a new instance mapping.
-- list triggered alert events for an instance.
-- list alerts
-- instance lifecycle management.
-- list all sap hana cloud instances.
-- get database metrics.
-- list alert rules
-- get metering
-- individual instance operations.
-- update an instance.
-- list all instances in the inventory.
-- update alert rules for an instance.
-- update alert rules
-- list inventory
-- in-memory
-- delete an instance mapping.
-- list instance mappings.
-- list alert events.
-- retrieve consumption metering data.
-- administration
-- get instance details.
-- alert monitoring.
-- list all sap hana cloud service instances.
-- sap hana
-- monitoring
 - analytics
+- get instance details.
+- performance metrics.
 - list mappings
-- get metrics
-- enterprise
-- create instance
-- provision a new instance.
+- update instance
+- delete an instance mapping.
+- cloud
+- alert monitoring.
+- list alert rules for an instance.
+- update alert rules
+- update alert rules for an instance.
+- update an instance.
+- retrieve consumption metering data.
+- in-memory
+- update instance configuration.
+- list all sap hana cloud service instances.
+- list triggered alert events for an instance.
+- list inventory
+- list alert events.
 - database
-- delete instance
+- list all sap hana cloud instances.
+- get metering
+- list alert rules
+- provision a new instance.
+- delete mapping
+- get instance
+- create instance
+- delete an instance.
+- enterprise
+- individual instance operations.
+- list all instances in the inventory.
+- instance lifecycle management.
+- list alerts
+- list instance mappings.
+- get metrics
+- sap hana
+- administration
 slug: cloud-administration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP HANA Cloud Administration\"\n  description: \"Unified workflow for SAP HANA Cloud database administration including instance lifecycle management, monitoring alerts, performance metrics, and metering. Used by database administrators and cloud platform engineers.\"\n  tags:\n    - SAP HANA\n    - Cloud\n    - Administration\n    - Monitoring\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SAP_HANA_OAUTH_TOKEN: SAP_HANA_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: hana-cloud-rest\n      location: ./shared/hana-cloud-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hana-cloud-admin-api\n      description: \"Unified REST API for SAP HANA Cloud administration.\"\n      resources:\n        - path: /v1/instances\n          name: instances\n          description: \"Instance lifecycle management.\"\n          operations:\n            - method:\
   \ GET\n              name: list-instances\n              description: \"List all SAP HANA Cloud instances.\"\n              call: \"hana-cloud-rest.list-service-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-instance\n              description: \"Provision a new instance.\"\n              call: \"hana-cloud-rest.create-service-instance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/instances/{instanceId}\n          name: instance-details\n          description: \"Individual instance operations.\"\n          operations:\n            - method: GET\n              name: get-instance\n              description: \"Get instance details.\"\n              call: \"hana-cloud-rest.get-service-instance\"\n              with:\n                instanceId: \"rest.instanceId\"\n              outputParameters:\n\

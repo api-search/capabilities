@@ -43,57 +43,57 @@ personas: []
 provider_name: Amazon ECS
 provider_slug: amazon-ecs
 search_terms:
-- delete an ecs cluster.
-- register task definition
-- list all ecs clusters.
-- delete cluster
-- list tasks
-- list services in an ecs cluster.
-- list task definitions.
-- list task definition families or revisions.
-- run a new task from a task definition.
-- run task
-- delete service
-- list task definitions
-- execute a command in a running container.
-- ecs task execution.
-- delete an ecs service.
-- describe one or more ecs services.
-- update an ecs service configuration.
-- list clusters
-- aws
-- register a new task definition.
-- deregister task definition
-- describe task definition
-- ecs task definition management.
-- containers
-- describe one or more ecs clusters.
-- describe tasks
-- execute command
-- ecs service management.
-- create a new ecs cluster.
-- create a new ecs service.
-- amazon
-- describe clusters
-- orchestration
-- stop a running task.
-- run a new task.
-- list tasks in a cluster.
-- ecs cluster management.
-- deregister a task definition revision.
-- docker
-- create cluster
-- describe one or more tasks.
-- list all ecs clusters in the account.
-- describe services
-- list services in a cluster.
-- describe a task definition.
-- ecs
 - stop task
+- describe one or more ecs clusters.
+- list tasks
+- delete an ecs cluster.
+- describe one or more ecs services.
+- orchestration
+- describe a task definition.
 - create a new service.
-- list services
+- list services in an ecs cluster.
+- docker
+- list task definitions
+- delete cluster
+- ecs
+- run task
+- list task definition families or revisions.
+- execute command
+- list clusters
+- stop a running task.
+- containers
+- register a new task definition.
+- ecs task definition management.
+- list tasks in a cluster.
+- delete service
+- describe one or more tasks.
+- deregister a task definition revision.
 - update service
+- amazon
+- register task definition
+- describe tasks
+- describe clusters
+- aws
+- create cluster
+- list task definitions.
+- describe task definition
+- list all ecs clusters in the account.
+- list services
+- delete an ecs service.
+- deregister task definition
+- create a new ecs cluster.
+- list services in a cluster.
+- describe services
+- list all ecs clusters.
+- execute a command in a running container.
+- ecs cluster management.
+- run a new task.
+- create a new ecs service.
+- ecs task execution.
+- update an ecs service configuration.
+- ecs service management.
 - create service
+- run a new task from a task definition.
 slug: container-orchestration
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon ECS Container Orchestration\"\n  description: \"Container orchestration workflow for DevOps engineers and platform teams to manage ECS clusters, deploy services, run tasks, and monitor container workloads.\"\n  tags:\n    - Amazon\n    - Containers\n    - Orchestration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: ecs\n      location: ./shared/ecs.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: container-orchestration-api\n      description: \"Unified REST API for Amazon ECS container orchestration.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: \"ECS cluster management.\"\n          operations:\n            - method: GET\n     \
   \         name: list-clusters\n              description: \"List all ECS clusters.\"\n              call: \"ecs.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cluster\n              description: \"Create a new ECS cluster.\"\n              call: \"ecs.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services\n          name: services\n          description: \"ECS service management.\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List services in a cluster.\"\n              call: \"ecs.list-services\"\n              with:\n                cluster: \"rest.cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\

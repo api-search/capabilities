@@ -23,30 +23,30 @@ personas: []
 provider_name: Apache Kylin
 provider_slug: apache-kylin
 search_terms:
-- execute a sql query on apache kylin to retrieve olap analytics results
-- cancel job
-- list projects
 - big data
-- big data analytics
-- list jobs
-- execute sql query
 - Data Analyst
-- BI Engineer
-- cube
-- business intelligence
-- list models
-- execute query
-- apache kylin
-- sql
-- olap
-- engineers who build and manage kylin cubes for bi tool consumption
-- analytics
-- list data models in a kylin project
-- list cube build jobs and their statuses
 - list all kylin projects and their configurations
-- cancel a running kylin cube build job
-- open source
+- list cube build jobs and their statuses
+- analytics
+- execute sql query
+- execute query
+- list models
+- sql
+- list jobs
+- olap
 - analysts who execute olap sql queries over large hadoop datasets
+- big data analytics
+- execute a sql query on apache kylin to retrieve olap analytics results
+- cube
+- cancel a running kylin cube build job
+- list data models in a kylin project
+- BI Engineer
+- engineers who build and manage kylin cubes for bi tool consumption
+- business intelligence
+- list projects
+- apache kylin
+- cancel job
+- open source
 slug: olap-analytics
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Kylin OLAP Analytics\"\n  description: \"Workflow capability for data analysts and BI engineers to execute OLAP queries, manage projects, and monitor cube build jobs in Apache Kylin.\"\n  tags:\n    - Apache Kylin\n    - Big Data Analytics\n    - Business Intelligence\n    - OLAP\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      KYLIN_PASSWORD: KYLIN_PASSWORD\n\ncapability:\n  consumes:\n    - import: kylin-rest-api\n      location: ./shared/kylin-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kylin-olap-analytics-api\n      description: \"Unified REST API for Apache Kylin OLAP analytics.\"\n      resources:\n        - path: /v1/query\n          name: query\n          operations:\n            - method: POST\n              name: execute-query\n              call: \"kylin-rest-api.execute-query\"\n              outputParameters:\n     \
   \           - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects\n          name: projects\n          operations:\n            - method: GET\n              name: list-projects\n              call: \"kylin-rest-api.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          operations:\n            - method: GET\n              name: list-jobs\n              call: \"kylin-rest-api.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: kylin-olap-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Kylin OLAP analytics.\"\n      tools:\n        - name: execute-sql-query\n          description: Execute a SQL query on Apache Kylin to retrieve OLAP analytics results\n          hints:\n            readOnly:\

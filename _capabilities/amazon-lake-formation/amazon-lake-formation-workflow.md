@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Lake Formation
 provider_slug: amazon-lake-formation
 search_terms:
-- data lake
-- resources register resource
-- resources describe resource
-- data governance
-- Administrator
-- access control
-- amazon lake formation
-- retrieves the current data access role for the given resource registered in lake formation.
-- aws
-- Developer
-- manages resources and configurations
 - resources list resources
-- workflow
-- registers an amazon s3 path as a data lake location managed by lake formation.
-- lists the resources registered as managed by lake formation.
-- integrates api into applications
-- s3
-- unified workflow for amazon lake formation resource management
+- retrieves the current data access role for the given resource registered in lake formation.
 - analytics
+- integrates api into applications
+- workflow
+- Developer
+- data governance
+- registers an amazon s3 path as a data lake location managed by lake formation.
+- aws
+- s3
+- resources describe resource
+- lists the resources registered as managed by lake formation.
+- manages resources and configurations
+- data lake
+- amazon lake formation
+- access control
+- Administrator
+- unified workflow for amazon lake formation resource management
+- resources register resource
 slug: amazon-lake-formation-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lake Formation Workflow\n  description: Unified workflow capability for Amazon Lake Formation combining resource management and operations.\n  tags:\n  - Amazon Lake Formation\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lake-formation\n    location: ./shared/lake-formation.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lake-formation-api\n    description: REST API for Amazon Lake Formation workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lake-formation-mcp\n    transport: http\n    description: MCP server for Amazon Lake Formation.\n    tools:\n    - name: resources-register-resource\n      description: Registers an Amazon S3 path as a data lake location managed by Lake Formation.\n      hints:\n\
   \        readOnly: false\n        idempotent: false\n      call: lake-formation.registerresource\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: resources-list-resources\n      description: Lists the resources registered as managed by Lake Formation.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lake-formation.listresources\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: resources-describe-resource\n      description: Retrieves the current data access role for the given resource registered in Lake Formation.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lake-formation.describeresource\n      outputParameters:\n      - type: object\n        mapping: $.\n"

@@ -35,36 +35,36 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
-- amazon ecr batch get image
 - amazon ecr list images
-- container registry
-- create repository
-- amazon ecr delete repository
-- engineers managing amazon ecr resources on aws.
-- put image
-- putImage
-- describeRepositories
-- aws
-- describe repositories
-- createRepository
-- containers
-- amazon ecr describe repositories
-- list images
+- delete repository
 - oci
-- deleteRepository
-- workflow capability for container registry management.
-- batchGetImage
+- container images
 - listImages
+- createRepository
 - docker
+- amazon ecr batch get image
+- workflow capability for container registry management.
+- put image
+- list images
+- container registry
+- containers
+- create repository
 - ecr
 - amazon ecr create repository
+- putImage
+- amazon ecr delete repository
+- amazon web services
+- batchGetImage
+- aws
+- amazon ecr
+- amazon ecr describe repositories
+- deleteRepository
+- engineers managing amazon ecr resources on aws.
+- batch get image
 - container registry management business domain for amazon ecr.
 - amazon ecr put image
-- amazon web services
-- amazon ecr
-- delete repository
-- container images
-- batch get image
+- describe repositories
+- describeRepositories
 slug: ecr-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon ECR Container Registry Management\"\n  description: \"Unified capability for managing ECR repositories, container images, and lifecycle policies for DevOps engineers.\"\n  tags:\n    - Amazon ECR\n    - AWS\n    - Containers\n    - Container Registry\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ecr\n      location: ./shared/ecr.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: ecr-api\n      description: \"Unified REST API for Container Registry Management.\"\n      resources:\n        - path: /v1/resource\n          name: createRepository\n          description: \"Amazon ECR Create Repository\"\n          operations:\n            - method: POST\n              name: createRepository\n              description: \"\
   Amazon ECR Create Repository\"\n              call: \"ecr.createRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DescribeRepositories\n          name: describeRepositories\n          description: \"Amazon ECR Describe Repositories\"\n          operations:\n            - method: POST\n              name: describeRepositories\n              description: \"Amazon ECR Describe Repositories\"\n              call: \"ecr.describeRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DeleteRepository\n          name: deleteRepository\n          description: \"Amazon ECR Delete Repository\"\n          operations:\n            - method: POST\n              name: deleteRepository\n              description: \"Amazon ECR Delete Repository\"\n              call: \"ecr.deleteRepository\"\n              outputParameters:\n            \

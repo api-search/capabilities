@@ -31,48 +31,48 @@ personas: []
 provider_name: Airtable
 provider_slug: airtable
 search_terms:
-- reads and analyzes airtable data programmatically.
-- create one or more records in an airtable table.
-- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
-- list records from a table.
-- create records in a table.
-- create records
-- schema
-- managing the structure of bases, tables, and fields.
-- records
-- creating, reading, updating, and deleting data records.
-- airtable bases and schemas.
-- list bases
-- get the schema of an airtable base with all tables and fields.
-- applications
-- list records
-- Developer
-- delete a record.
-- get base schema
-- Data Analyst
-- list records from an airtable table with optional filtering.
-- databases
-- productivity
-- airtable table records.
-- user management, audit logs, and access control.
 - collaboration
-- low-code
-- list all accessible bases.
-- delete record
-- no-code
-- a specific airtable record.
-- spreadsheets
+- applications
 - data
-- delete an airtable record permanently.
-- integrates airtable with external systems via the rest api.
-- update specific fields in an airtable record.
-- real-time event-driven integrations via webhooks.
-- update record
-- update a record.
-- list all airtable bases the user has access to.
+- airtable table records.
+- Data Analyst
+- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
+- create records
+- low-code
+- create records in a table.
+- get base schema
+- list records from an airtable table with optional filtering.
 - manages users, audit logs, and shares across the organization.
-- database
 - airtable
+- real-time event-driven integrations via webhooks.
+- user management, audit logs, and access control.
+- get the schema of an airtable base with all tables and fields.
+- list records
+- update record
+- Developer
+- creating, reading, updating, and deleting data records.
+- update a record.
+- no-code
+- update specific fields in an airtable record.
+- database
+- list records from a table.
+- a specific airtable record.
+- managing the structure of bases, tables, and fields.
+- reads and analyzes airtable data programmatically.
+- airtable bases and schemas.
+- databases
+- list all accessible bases.
+- records
+- schema
+- integrates airtable with external systems via the rest api.
+- spreadsheets
+- productivity
+- list all airtable bases the user has access to.
+- list bases
+- create one or more records in an airtable table.
+- delete an airtable record permanently.
+- delete record
+- delete a record.
 slug: database-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Airtable Database Management\"\n  description: \"Unified workflow for managing Airtable databases — reading and writing records, browsing base schemas, managing webhooks, and administering tables. Used by developers and data teams integrating Airtable with external systems.\"\n  tags:\n    - Airtable\n    - Database\n    - Low-Code\n    - No-Code\n    - Records\n    - Schema\n    - Collaboration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRTABLE_API_TOKEN: AIRTABLE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: airtable\n      location: ./shared/airtable-api.yaml\n    - import: airtable-meta\n      location: ./shared/airtable-metadata-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airtable-db-api\n      description: \"Unified REST API for Airtable database management.\"\n      resources:\n        - path: /v1/bases\n          name: bases\n\
   \          description: \"Airtable bases and schemas.\"\n          operations:\n            - method: GET\n              name: list-bases\n              description: \"List all accessible bases.\"\n              call: \"airtable-meta.list-bases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/records\n          name: records\n          description: \"Airtable table records.\"\n          operations:\n            - method: GET\n              name: list-records\n              description: \"List records from a table.\"\n              call: \"airtable.list-records\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-records\n              description: \"Create records in a table.\"\n              call: \"airtable.create-records\"\n              outputParameters:\n                - type: object\n                  mapping:\

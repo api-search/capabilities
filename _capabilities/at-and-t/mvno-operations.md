@@ -42,68 +42,68 @@ personas: []
 provider_name: AT&T
 provider_slug: at-and-t
 search_terms:
-- reserve phone numbers for subscriber assignment
-- add prepaid data or voice balance to a subscriber's account
-- developer building enterprise notification, alerting, or communication systems
-- mvno
-- engineer integrating at&t network services with bss/oss systems via tm forum apis
-- submit a number portability order to bring a subscriber's existing number to at&t mvno
-- check the current status of a number portability order
-- get port order status
-- sms notifications and in-app messaging for mobile apps and enterprise systems
-- number portability
-- at&t
-- Enterprise Developer
-- activate a new mvno subscriber on at&t network
-- messaging
-- get subscriber service plan and profile
-- add balance to subscriber account
-- list number portability orders with optional state filtering
-- get portability order status
-- retrieve subscriber's service plan, features, and account profile
-- subscriber plan profile
-- complete mvno subscriber lifecycle and number portability management
 - activate subscriber
-- broadband
-- sms and mms messaging services for consumer and enterprise applications
-- get port order
-- list devices
-- reserve number
-- list all devices and sim cards associated with a subscriber
-- create port order
-- port number in
-- MVNO Operator
-- mobile or web application developer embedding messaging into consumer apps
-- mvno business operator managing at&t-powered mobile subscribers and services
-- subscriber device inventory
-- wireline
-- subscriber management
-- get subscriber profile
-- mobile network connectivity and subscriber management
-- speech
-- activate a new subscriber on the at&t mvno network with a service plan
-- mobile virtual network operator services on at&t infrastructure
 - reserve phone number
-- number portability operations
-- mobile
-- list devices and sims for subscriber
-- App Developer
-- telecommunications
-- tm forum
-- submit number portability order
-- list portability orders
-- reserve phone numbers from the at&t number pool prior to subscriber activation
-- subscriber balance management
-- Telecom Engineer
-- port order status
-- list port orders
-- wireless
-- topup subscriber balance
-- enterprise
-- list subscriber devices
-- topup balance
+- check the current status of a number portability order
 - phone number reservation
+- speech
+- sms and mms messaging services for consumer and enterprise applications
+- subscriber plan profile
+- list port orders
+- reserve phone numbers for subscriber assignment
+- messaging
+- port order status
+- retrieve subscriber's service plan, features, and account profile
+- get port order status
+- App Developer
+- mobile or web application developer embedding messaging into consumer apps
+- developer building enterprise notification, alerting, or communication systems
+- number portability operations
+- list all devices and sim cards associated with a subscriber
+- mobile network connectivity and subscriber management
+- reserve number
+- at&t
+- create port order
+- topup balance
+- get port order
+- list number portability orders with optional state filtering
+- broadband
+- submit number portability order
+- tm forum
+- Enterprise Developer
+- topup subscriber balance
+- add balance to subscriber account
+- number portability
+- complete mvno subscriber lifecycle and number portability management
+- list subscriber devices
+- telecommunications
+- subscriber device inventory
+- reserve phone numbers from the at&t number pool prior to subscriber activation
+- Telecom Engineer
+- subscriber balance management
+- wireline
+- add prepaid data or voice balance to a subscriber's account
+- enterprise
+- MVNO Operator
+- mvno business operator managing at&t-powered mobile subscribers and services
+- activate a new mvno subscriber on at&t network
 - subscriber activation and management
+- get subscriber service plan and profile
+- list portability orders
+- activate a new subscriber on the at&t mvno network with a service plan
+- sms notifications and in-app messaging for mobile apps and enterprise systems
+- engineer integrating at&t network services with bss/oss systems via tm forum apis
+- list devices and sims for subscriber
+- port number in
+- get subscriber profile
+- submit a number portability order to bring a subscriber's existing number to at&t mvno
+- mvno
+- get portability order status
+- mobile
+- list devices
+- subscriber management
+- mobile virtual network operator services on at&t infrastructure
+- wireless
 slug: mvno-operations
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T MVNO Operations\"\n  description: \"Comprehensive MVNO management capability using AT&T MVNX API for subscriber lifecycle management, number portability, device inventory, and balance management. Used by MVNO operators managing AT&T-powered mobile services.\"\n  tags:\n    - AT&T\n    - MVNO\n    - Subscriber Management\n    - Number Portability\n    - TM Forum\n    - Mobile\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_MVNX_CLIENT_ID: ATT_MVNX_CLIENT_ID\n\ncapability:\n  consumes:\n    - import: att-mvnx\n      location: ./shared/mvnx-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: att-mvno-api\n      description: \"Unified REST API for AT&T MVNO subscriber and service management.\"\n      resources:\n        - path: /v1/subscribers\n          name: subscribers\n          description: \"Subscriber activation and management\"\n      \
   \    operations:\n            - method: POST\n              name: activate-subscriber\n              description: \"Activate a new MVNO subscriber on AT&T network\"\n              call: \"att-mvnx.create-product-order\"\n              with:\n                externalId: \"rest.externalId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscribers/{subscriberId}/profile\n          name: subscriber-profile\n          description: \"Subscriber plan profile\"\n          operations:\n            - method: GET\n              name: get-subscriber-profile\n              description: \"Get subscriber service plan and profile\"\n              call: \"att-mvnx.get-subscriber-profile\"\n              with:\n                id: \"rest.subscriberId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscribers/{subscriberId}/devices\n          name: subscriber-devices\n\

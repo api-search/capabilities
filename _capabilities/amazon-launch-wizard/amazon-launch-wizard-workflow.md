@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon Launch Wizard
 provider_slug: amazon-launch-wizard
 search_terms:
-- creates a deployment for the given workload.
-- lists the deployments that have been created.
-- deployments create deployment
-- Administrator
-- workflow
-- sap
-- sql server
-- enterprise applications
-- aws
-- deployments list deployments
-- integrates api into applications
-- deployments get deployment
-- Developer
 - returns information about the deployment.
-- deployment
-- amazon launch wizard
+- Administrator
+- aws
+- integrates api into applications
 - manages resources and configurations
+- enterprise applications
+- workflow
+- deployment
+- creates a deployment for the given workload.
+- sap
 - unified workflow for amazon launch wizard resource management
+- sql server
+- Developer
+- deployments list deployments
+- lists the deployments that have been created.
+- amazon launch wizard
+- deployments create deployment
+- deployments get deployment
 slug: amazon-launch-wizard-workflow
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Launch Wizard Workflow\n  description: Unified workflow capability for Amazon Launch Wizard combining resource management and operations.\n  tags:\n  - Amazon Launch Wizard\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: launch-wizard\n    location: ./shared/launch-wizard.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: launch-wizard-api\n    description: REST API for Amazon Launch Wizard workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: launch-wizard-mcp\n    transport: http\n    description: MCP server for Amazon Launch Wizard.\n    tools:\n    - name: deployments-create-deployment\n      description: Creates a deployment for the given workload.\n      hints:\n        readOnly: false\n        idempotent:\
   \ false\n      call: launch-wizard.createdeployment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: deployments-list-deployments\n      description: Lists the deployments that have been created.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: launch-wizard.listdeployments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: deployments-get-deployment\n      description: Returns information about the deployment.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: launch-wizard.getdeployment\n      outputParameters:\n      - type: object\n        mapping: $.\n"

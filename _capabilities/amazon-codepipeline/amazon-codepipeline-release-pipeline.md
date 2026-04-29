@@ -11,49 +11,49 @@ personas: []
 provider_name: Amazon CodePipeline
 provider_slug: amazon-codepipeline
 search_terms:
-- retry all failed actions in a pipeline stage
-- stop pipeline execution
-- list pipeline webhooks
-- submit approval or rejection for a manual approval action
-- devops
-- get pipeline
-- DevOps Engineer
-- get the current state of each stage in a pipeline
 - unified workflow for devops and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline statu
-- aws
-- put approval result
-- list action executions for a pipeline
-- update the structure of a pipeline
-- Release Manager
-- start pipeline execution
-- start a pipeline execution
 - create a new delivery pipeline
 - unified workflow for devops and release engineering teams to create and manage delivery pipelines, t
-- amazon
-- get pipeline state
-- update pipeline
-- release automation
-- pipeline
-- delete pipeline
-- get the structure and details of a pipeline
-- list pipeline executions
-- release manager persona.
+- get pipeline execution
 - stop an in-progress pipeline execution
+- retry all failed actions in a pipeline stage
+- devops engineer persona.
+- pipeline
+- update the structure of a pipeline
+- get the structure and details of a pipeline
+- stop pipeline execution
+- get pipeline
+- continuous delivery
+- delete pipeline
+- list pipeline executions
+- start pipeline execution
+- submit approval or rejection for a manual approval action
+- DevOps Engineer
+- get the current state of each stage in a pipeline
+- amazon
+- devops
+- Release Manager
+- aws
+- update pipeline
+- list pipeline webhooks
+- delete a pipeline
+- list action executions for a pipeline
+- list pipelines in the account
 - list action executions
 - list executions for a pipeline
-- list webhooks
-- get details about a pipeline execution
-- ci/cd
-- list pipelines
-- create pipeline
-- delete a pipeline
-- get pipeline execution
-- retry stage execution
 - Platform Engineer
-- devops engineer persona.
+- ci/cd
+- put approval result
+- create pipeline
+- retry stage execution
+- list webhooks
+- start a pipeline execution
+- release manager persona.
+- list pipelines
+- get pipeline state
 - platform engineer persona.
-- list pipelines in the account
-- continuous delivery
+- get details about a pipeline execution
+- release automation
 slug: amazon-codepipeline-release-pipeline
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodePipeline Release Pipeline Automation\n  description: Unified workflow for DevOps and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline status, and manage pipeline artifacts \n    using Amazon CodePipeline.\n  tags:\n  - Amazon\n  - AWS\n  - CI/CD\n  - Continuous Delivery\n  - DevOps\n  - Pipeline\n  - Release Automation\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codepipeline\n    location: ./shared/codepipeline.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codepipeline-release-pipeline-api\n    description: Unified REST API for Release Pipeline Automation.\n    resources:\n    - path: /v1/listPipelines\n      name: list-pipelines\n      description:\
   \ List pipelines in the account\n    - path: /v1/getPipeline\n      name: get-pipeline\n      description: Get the structure and details of a pipeline\n    - path: /v1/createPipeline\n      name: create-pipeline\n      description: Create a new delivery pipeline\n    - path: /v1/updatePipeline\n      name: update-pipeline\n      description: Update the structure of a pipeline\n  - type: mcp\n    port: 9090\n    namespace: codepipeline-release-pipeline-mcp\n    transport: http\n    description: MCP server for AI-assisted Release Pipeline Automation.\n    tools:\n    - name: list-pipelines\n      description: List pipelines in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codepipeline.listPipelines\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-pipeline\n      description: Get the structure and details of a pipeline\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codepipeline.getPipeline\n\

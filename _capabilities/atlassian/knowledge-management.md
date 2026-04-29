@@ -22,31 +22,31 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list confluence groups
-- list confluence pages and blog posts
-- list groups
-- list confluence templates
-- knowledge management
-- code
-- search confluence content
-- confluence
-- search confluence content using cql
-- content search
-- list confluence users
-- search content
-- list confluence content
-- list confluence spaces
-- platform
-- space management
-- productivity
 - collaboration
-- list templates
-- atlassian
-- list users
-- list spaces
-- software development
-- list content
+- content search
 - content management
+- search content
+- confluence
+- software development
+- list groups
+- search confluence content
+- platform
+- list confluence content
+- list confluence templates
+- code
+- list confluence users
+- list confluence spaces
+- knowledge management
+- list confluence pages and blog posts
+- list confluence groups
+- list users
+- atlassian
+- list templates
+- space management
+- list spaces
+- list content
+- productivity
+- search confluence content using cql
 slug: knowledge-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Knowledge Management\"\n  description: \"Knowledge management workflow combining Confluence Content, Space, Search, Template, Label, and User APIs for technical writers and team leads to create, organize, and share documentation.\"\n  tags:\n    - Atlassian\n    - Confluence\n    - Knowledge Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: atlassian-knowledge-api\n      description: \"Unified REST API for Confluence knowledge management.\"\n      resources:\n        - path: /v1/content\n          name: content\n          description: \"Content management\"\n          operations:\n\
   \            - method: GET\n              name: list-content\n              description: \"List Confluence content\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spaces\n          name: spaces\n          description: \"Space management\"\n          operations:\n            - method: GET\n              name: list-spaces\n              description: \"List Confluence spaces\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search\n          name: search\n          description: \"Content search\"\n          operations:\n            - method: GET\n              name: search-content\n              description: \"Search Confluence content\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n\

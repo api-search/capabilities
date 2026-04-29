@@ -42,55 +42,55 @@ personas: []
 provider_name: SAP Concur
 provider_slug: sap-concur
 search_terms:
-- get allocations
-- get comments on an expense report.
-- submit report.
-- get expenses
-- get a single expense entry.
+- submit report
+- send back an expense report for revision.
+- get report comments
+- recall report
+- get expense
+- get reports pending approval.
 - list expense reports pending approval.
-- send back report
+- get allocations
+- get a single expense entry.
+- create report comment
+- invoice management
+- retrieve an expense report by id.
 - get comments
-- approve report
+- get expenses for a report.
+- approve an expense report.
+- get report
+- update an unsubmitted expense report.
 - get reports to approve
+- add a report comment.
+- delete an unsubmitted expense report.
+- create report
+- add a comment to an expense report.
+- get comments on an expense report.
+- get expenses
+- expense entry operations.
+- delete report
+- submit an expense report for approval.
 - submit for approval.
-- report comments.
+- approval workflows
+- submit report.
+- update report
+- recall a submitted expense report.
+- get expense allocations.
+- travel management
+- approve report
+- send back report
+- business travel
 - sap concur
+- report comments.
+- get report comments.
+- individual report operations.
+- get expense entries for a report.
+- create comment
+- expense report lifecycle management.
+- retrieve a report.
+- create a new expense report.
 - expense management
 - financial services
-- get report comments.
-- delete report
-- get expenses for a report.
-- add a comment to an expense report.
-- individual report operations.
-- submit an expense report for approval.
-- expense entry operations.
-- create comment
-- update report
-- expense report lifecycle management.
-- approve an expense report.
-- approval workflows
-- get reports pending approval.
-- business travel
-- submit report
-- delete an unsubmitted expense report.
 - approve report.
-- create report comment
-- get expense allocations.
-- get expense entries for a report.
-- recall report
-- retrieve an expense report by id.
-- travel management
-- create report
-- recall a submitted expense report.
-- invoice management
-- get report
-- create a new expense report.
-- get expense
-- get report comments
-- update an unsubmitted expense report.
-- send back an expense report for revision.
-- retrieve a report.
-- add a report comment.
 slug: expense-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SAP Concur Expense Management\"\n  description: \"Unified expense management workflow combining report creation, expense tracking, approval workflows, and allocation management. Used by finance teams, approvers, and employees to manage the full expense lifecycle.\"\n  tags:\n    - SAP Concur\n    - Expense Management\n    - Approval Workflows\n    - Financial Services\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONCUR_ACCESS_TOKEN: CONCUR_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: concur-expense\n      location: ./shared/concur-expense.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: concur-expense-mgmt-api\n      description: \"Unified REST API for SAP Concur expense management workflows.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Expense report lifecycle management.\"\n     \
   \     operations:\n            - method: POST\n              name: create-report\n              description: \"Create a new expense report.\"\n              call: \"concur-expense.create-report\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-reports-to-approve\n              description: \"Get reports pending approval.\"\n              call: \"concur-expense.get-reports-to-approve\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{reportId}\n          name: report-detail\n          description: \"Individual report operations.\"\n          operations:\n            - method: GET\n              name: get-report\n              description: \"Retrieve a report.\"\n              call: \"concur-expense.get-report\"\n              with:\n                reportId: \"rest.reportId\"\n              outputParameters:\n\

@@ -31,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- bulk tokenization operations
-- submit bulk tokenization
-- enroll an issuer in click to pay
-- mdes
-- fraud detection
-- register a new token requestor
-- push provision a token to a wallet
-- pre-digitization eligibility
-- check if a card is eligible for digitization
-- push provisioning to wallets
-- check digitization eligibility
-- enroll issuer click to pay
-- financial services
-- submit a bulk tokenization request for a card portfolio
-- tokenize card
-- get token details
-- digital identity
-- click to pay
-- delete token
 - delete a token
-- tokenize a payment card via mdes
-- suspend an active token
-- token lifecycle management
-- push provision to wallet
-- submit bulk tokenization request
+- fraud detection
+- bulk tokenization operations
 - suspend token
+- submit a bulk tokenization request for a card portfolio
 - mastercard
-- tokenize a payment card
-- register token requestor
-- push provision a token to a digital wallet
-- check card eligibility for digitization
-- open banking
+- push provision to wallet
+- suspend an active token
 - payments
-- digital payments
-- tokenization
 - push provision
+- check digitization eligibility
+- digital payments
 - credit cards
+- register token requestor
+- check card eligibility for digitization
+- enroll an issuer in click to pay
+- register a new token requestor
+- push provision a token to a digital wallet
+- tokenization
+- mdes
+- submit bulk tokenization
+- tokenize a payment card via mdes
+- click to pay
+- open banking
+- push provisioning to wallets
+- tokenize card
+- enroll issuer click to pay
+- pre-digitization eligibility
+- token lifecycle management
+- push provision a token to a wallet
+- submit bulk tokenization request
+- delete token
+- check if a card is eligible for digitization
+- digital identity
+- financial services
+- get token details
+- tokenize a payment card
 slug: digital-enablement-and-tokenization
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Digital Enablement and Tokenization\"\n  description: \"Unified workflow for digital payment teams and issuer technology to manage card tokenization, MDES digital enablement, Click to Pay enrollment, and push provisioning to digital wallets.\"\n  tags:\n    - Mastercard\n    - Tokenization\n    - MDES\n    - Digital Payments\n    - Click to Pay\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: mdes-digital\n      location: ./shared/mdes-digital-enablement.yaml\n    - import: mdes-token-connect\n      location: ./shared/mdes-token-connect.yaml\n    - import: mdes-pre-digitization\n      location: ./shared/mdes-pre-digitization.yaml\n    - import: mdes-bulk-tokenization\n      location: ./shared/mdes-bulk-tokenization.yaml\n\
   \    - import: token-requestor-id\n      location: ./shared/token-requestor-id.yaml\n    - import: issuer-click-to-pay\n      location: ./shared/issuer-enrollment-click-to-pay.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: digital-token-api\n      description: \"Unified REST API for digital enablement and tokenization.\"\n      resources:\n        - path: /v1/tokens\n          name: tokens\n          description: \"Token lifecycle management\"\n          operations:\n            - method: POST\n              name: tokenize-card\n              description: \"Tokenize a payment card\"\n              call: \"mdes-digital.tokenize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/eligibility\n          name: eligibility\n          description: \"Pre-digitization eligibility\"\n          operations:\n            - method: POST\n              name: check-digitization-eligibility\n             \

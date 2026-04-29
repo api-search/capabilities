@@ -30,43 +30,43 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- chargeback and dispute handling.
 - manage balance accounts.
-- marketplaces
-- online and in-person payment acceptance.
-- manage account holders on the balance platform.
-- create a new account holder on the adyen balance platform.
-- get account holder
 - get balance account
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- financial services
-- get account holder details.
-- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
-- create a balance account for an account holder.
-- manages merchant accounts, terminals, and dispute responses.
-- get balance and details of a balance account.
-- manage payment instruments including virtual and physical cards.
-- get balance account details.
 - transfers
-- create an account holder.
-- retrieve details of an account holder.
+- get balance account details.
 - issue card
-- builds payment integrations using adyen apis and sdks.
-- issuing
 - adyen
-- balance platform
-- builds marketplace and fintech platforms using adyen balance platform.
-- merchant account and balance platform configuration.
-- marketplace and platform fund management.
-- create balance account
-- payments
-- create payment instrument
 - fintech
-- create account holder
-- create a payment instrument (card).
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- issue a virtual or physical payment card for an account holder.
+- manage account holders on the balance platform.
 - create a balance account.
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- merchant account and balance platform configuration.
+- issuing
+- create a new account holder on the adyen balance platform.
+- online and in-person payment acceptance.
+- payments
+- marketplace and platform fund management.
+- create a balance account for an account holder.
+- create account holder
+- create an account holder.
+- get balance and details of a balance account.
+- builds payment integrations using adyen apis and sdks.
+- balance platform
+- issue a virtual or physical payment card for an account holder.
+- chargeback and dispute handling.
+- manages merchant accounts, terminals, and dispute responses.
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- builds marketplace and fintech platforms using adyen balance platform.
+- marketplaces
+- get account holder details.
+- get account holder
+- manage payment instruments including virtual and physical cards.
+- create payment instrument
+- retrieve details of an account holder.
+- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- create balance account
+- financial services
+- create a payment instrument (card).
 slug: balance-platform
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adyen Balance Platform\"\n  description: \"Unified capability for building financial products on Adyen's balance platform. Combines the Configuration API for account holder and card management with the Transfers API for fund movement. Used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. Primary persona: Platform Engineer or Marketplace Developer.\"\n  tags:\n    - Adyen\n    - Balance Platform\n    - Marketplaces\n    - Issuing\n    - Transfers\n    - Fintech\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADYEN_BALANCE_PLATFORM_API_KEY: ADYEN_BALANCE_PLATFORM_API_KEY\n\ncapability:\n  consumes:\n    - import: configuration\n      location: ./shared/configuration.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: adyen-balance-platform-api\n      description: \"Unified REST API for Adyen balance platform operations.\"\
   \n      resources:\n        - path: /v1/account-holders\n          name: account-holders\n          description: \"Manage account holders on the balance platform.\"\n          operations:\n            - method: POST\n              name: create-account-holder\n              description: \"Create an account holder.\"\n              call: \"configuration.create-account-holder\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-account-holder\n              description: \"Get account holder details.\"\n              call: \"configuration.get-account-holder\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/balance-accounts\n          name: balance-accounts\n          description: \"Manage balance accounts.\"\n          operations:\n            - method: POST\n     \

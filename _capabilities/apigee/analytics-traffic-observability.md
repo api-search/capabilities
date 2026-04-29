@@ -24,49 +24,49 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- discover shadow apis
-- api management
-- list observed api operations
-- google cloud
-- apigee
-- list all environments (dev, staging, prod) to identify which to query analytics for.
-- list observation jobs.
-- list shadow apis discovered by an observation job — apis found in live traffic that are not yet documented or governed.
-- API Governance Lead
-- api governance
 - monetization
-- query api traffic analytics for an apigee environment by dimension (e.g. apis, apiproducts, devs, apps). returns request counts, latency, and error rates.
-- list all proxy deployments across environments to correlate with traffic anomalies.
-- get stats
-- api hub
-- list observation jobs
-- manager packaging api products and managing developer relationships.
 - developer portal
-- Platform Architect
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- microservices
-- list all shadow api observation jobs configured to detect undocumented apis in traffic.
-- traffic analytics stats by dimension.
-- architect overseeing api platform strategy and governance across the organization.
-- list deployments
-- shadow api observation jobs.
-- engineer managing api proxies, deployments, and policies in apigee.
-- list observed apis
-- query traffic analytics for an environment.
-- shadow apis discovered by observation jobs.
-- observability
-- list environments
-- api gateway
+- API Governance Lead
+- google cloud
 - analytics
+- api governance
+- observability
+- list deployments
+- Platform Architect
+- architect overseeing api platform strategy and governance across the organization.
+- discover shadow apis
+- manager packaging api products and managing developer relationships.
+- list shadow apis discovered by an observation job — apis found in live traffic that are not yet documented or governed.
+- API Product Manager
+- api hub
+- api management
+- shadow api discovery
+- list observation jobs
+- query traffic analytics for an environment.
+- API Platform Engineer
+- shadow api observation jobs.
+- list all proxy deployments across environments to correlate with traffic anomalies.
+- microservices
+- integrations
+- list observed api operations
+- list observed shadow apis.
+- query api traffic analytics for an apigee environment by dimension (e.g. apis, apiproducts, devs, apps). returns request counts, latency, and error rates.
+- list all shadow api observation jobs configured to detect undocumented apis in traffic.
+- api gateway
+- shadow apis discovered by observation jobs.
 - get traffic analytics
 - enterprise
+- apigee
+- list observation jobs.
+- list environments
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- traffic analytics stats by dimension.
+- engineer managing api proxies, deployments, and policies in apigee.
+- list all environments (dev, staging, prod) to identify which to query analytics for.
+- get stats
 - hybrid
+- list observed apis
 - list individual http operations observed for a specific shadow api — method, path, count, and parameters seen in traffic.
-- API Platform Engineer
-- shadow api discovery
-- integrations
-- list observed shadow apis.
-- API Product Manager
 slug: analytics-traffic-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee Analytics and Traffic Observability\"\n  description: \"Unified workflow for API traffic analytics and observability on Apigee — querying runtime analytics by dimension, discovering undocumented shadow APIs via APIM observation jobs, and correlating traffic patterns with known API products. Provides platform architects, SREs, and governance teams with the operational visibility needed to monitor performance, detect anomalies, and govern API usage at scale.\"\n  tags:\n    - Apigee\n    - Analytics\n    - Observability\n    - Shadow API Discovery\n    - Google Cloud\n  created: \"2026-04-20\"\n  modified: \"2026-04-20\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-management\n      location: ./shared/api-management.yaml\n    - import: apim\n      location: ./shared/apim.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace:\
   \ apigee-analytics-api\n      description: \"Unified REST API for Apigee analytics and traffic observability.\"\n      resources:\n        - path: /v1/analytics/stats\n          name: analytics-stats\n          description: \"Traffic analytics stats by dimension.\"\n          operations:\n            - method: GET\n              name: get-stats\n              description: \"Query traffic analytics for an environment.\"\n              call: \"api-management.getEnvironmentStats\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/observation-jobs\n          name: observation-jobs\n          description: \"Shadow API observation jobs.\"\n          operations:\n            - method: GET\n              name: list-observation-jobs\n              description: \"List observation jobs.\"\n              call: \"apim.listObservationJobs\"\n              outputParameters:\n                - type: object\n                  mapping:\

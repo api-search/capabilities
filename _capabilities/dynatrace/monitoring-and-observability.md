@@ -62,64 +62,64 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- ingest logs into grail
+- monitoring
+- delete custom metric
+- delete a custom metric
+- ingest custom metrics
+- search log records
+- application performance monitoring
+- list events
 - aggregate log data grouped by specified fields
-- query events
-- query metric data with selectors and time ranges
-- get details of a specific monitored entity
+- list entities matching a selector
+- aggregate log data
+- list metric descriptors
+- analytics
+- logs
+- observability
+- ingest logs into grail
+- delete a custom metric from the environment
+- dynatrace
 - export logs
+- export log records for bulk retrieval
+- query metric data points with selectors and time ranges
 - apm
-- intelligence
+- cloud monitoring
+- get the descriptor for a specific metric
+- export log records
+- list entities
+- aggregate logs by dimensions
+- digital experience management
+- list all available metric descriptors
+- get metric descriptor
+- search logs using dql queries
+- get details of a specific monitored entity
+- metrics
+- ingest custom metrics via mint protocol
 - automation
 - ai operations
-- list events
-- aggregate log data
-- search log records
-- list metrics
-- ingest log records into dynatrace grail
-- query metric data
-- delete custom metric
-- ingest custom metrics via mint protocol
-- list all available metric descriptors
-- list monitored entities matching a selector
-- ops engineering
-- digital experience management
-- list entities matching a selector
-- list entities
-- get descriptor for a specific metric
-- query monitored entities
-- list all available metrics
-- aggregate logs
-- list metric descriptors
-- export log records
-- application security
-- get the descriptor for a specific metric
-- export logs for bulk retrieval
-- logs
-- metrics
-- ingest logs
-- ingest custom metric data points via mint protocol
-- aggregate logs by dimensions
-- dynatrace
-- observability
-- get metric descriptor
-- monitoring
-- delete a custom metric from the environment
-- get entity
-- export log records for bulk retrieval
-- get entity details
-- analytics
-- delete a custom metric
-- application performance monitoring
-- ingest log records
-- query metric data points with selectors and time ranges
-- list events from the dynatrace environment
-- ingest custom metrics
-- query metric data points
-- search logs using dql queries
-- cloud monitoring
 - search log records using dql queries
 - search logs
+- intelligence
+- list monitored entities matching a selector
+- get entity
+- application security
+- aggregate logs
+- export logs for bulk retrieval
+- list metrics
+- ingest log records into dynatrace grail
+- ops engineering
+- ingest logs
+- list all available metrics
+- query events
+- query monitored entities
+- query metric data points
+- query metric data
+- query metric data with selectors and time ranges
+- get entity details
+- list events from the dynatrace environment
+- ingest custom metric data points via mint protocol
+- ingest log records
+- get descriptor for a specific metric
 slug: monitoring-and-observability
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Monitoring And Observability\"\n  description: \"Unified monitoring and observability workflow combining metrics, logs, events, and entity data for ops engineers managing infrastructure health and performance.\"\n  tags:\n    - Dynatrace\n    - Monitoring\n    - Observability\n    - Ops Engineering\n    - Metrics\n    - Logs\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_API_TOKEN: DYNATRACE_API_TOKEN\n      DYNATRACE_ENVIRONMENT_ID: DYNATRACE_ENVIRONMENT_ID\n\ncapability:\n  consumes:\n    - import: metrics-v2\n      location: ./shared/metrics-v2.yaml\n    - import: log-monitoring-v2\n      location: ./shared/log-monitoring-v2.yaml\n    - import: events-v2\n      location: ./shared/events-v2.yaml\n    - import: entities-v2\n      location: ./shared/entities-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: monitoring-observability-api\n\
   \      description: \"Unified REST API for Dynatrace monitoring and observability workflows.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: \"List metric descriptors\"\n          operations:\n            - method: GET\n              name: list-metrics\n              description: \"List all available metrics\"\n              call: \"metrics-v2.list-metrics\"\n              with:\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                metricSelector: \"rest.metricSelector\"\n                fields: \"rest.fields\"\n                writtenSince: \"rest.writtenSince\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/{metricKey}\n          name: metric-descriptor\n          description: \"Get metric descriptor\"\n          operations:\n            - method: GET\n              name: get-metric-descriptor\n\

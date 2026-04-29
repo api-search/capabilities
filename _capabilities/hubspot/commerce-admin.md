@@ -35,42 +35,42 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- create a commerce payment
-- marketing
-- get a payment by id
-- create subscription
-- operations
-- search subscriptions
-- commerce payments
-- content
-- list subscriptions
-- email marketing
-- search payments
-- update payment
-- admin
-- search commerce subscriptions
-- individual payment
-- search commerce payments
-- create a commerce subscription
-- crm
-- marketing automation
-- update a commerce payment
-- list all commerce subscriptions
-- commerce
-- list payments
-- customer service
-- individual subscription
-- sales
-- list all commerce payments
-- get subscription
 - get payment
-- hubspot
-- analytics
-- commerce subscriptions
+- create subscription
 - cms
-- get a subscription by id
+- create a commerce payment
+- list all commerce payments
+- search payments
+- analytics
+- search subscriptions
+- list subscriptions
+- marketing automation
+- get a payment by id
+- commerce subscriptions
+- marketing
+- individual subscription
+- customer service
+- create a commerce subscription
+- sales
+- content
+- search commerce payments
+- operations
+- list payments
+- individual payment
+- crm
+- commerce payments
+- hubspot
+- list all commerce subscriptions
 - create payment
+- email marketing
+- commerce
+- search commerce subscriptions
+- get subscription
 - hubdb
+- get a subscription by id
+- update a commerce payment
+- admin
+- update payment
 slug: commerce-admin
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Commerce Admin\"\n  description: \"Unified workflow for admins to manage commerce payments, subscriptions, HubDB data tables, CMS pages, and domains. Combines commerce operations with CMS data management for platform administration.\"\n  tags:\n    - HubSpot\n    - Commerce\n    - Admin\n    - CMS\n    - HubDB\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: commerce-payments\n      location: ./shared/commerce-payments.yaml\n    - import: commerce-subscriptions\n      location: ./shared/commerce-subscriptions.yaml\n    - import: cms-hubdb\n      location: ./shared/cms-hubdb-api.yaml\n    - import: cms-pages\n      location: ./shared/cms-pages-api.yaml\n    - import: domains\n      location: ./shared/domains-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace:\
   \ commerce-admin-api\n      description: \"Unified REST API for commerce operations, data table management, and CMS administration.\"\n      resources:\n        - path: /v1/payments\n          name: payments\n          description: \"Commerce payments\"\n          operations:\n            - { method: GET, name: list-payments, description: \"List payments\", call: \"commerce-payments.list-payments\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-payment, description: \"Create payment\", call: \"commerce-payments.create-payment\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - path: /v1/payments/{commercePaymentId}\n          name: payment-by-id\n          description: \"Individual payment\"\n          operations:\n            - { method: GET, name: get-payment, description: \"Get payment\", call: \"commerce-payments.get-payment\", with: { commercePaymentId: \"rest.commercePaymentId\" }, outputParameters: [{ type:\

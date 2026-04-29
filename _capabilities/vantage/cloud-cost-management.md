@@ -91,104 +91,104 @@ personas: []
 provider_name: Vantage
 provider_slug: vantage
 search_terms:
-- list cost reports
-- create a new budget alert.
-- list all resource reports.
-- list kubernetes efficiency reports
-- list all segments.
-- get a specific cost report by token.
-- create dashboard
-- list all cloud provider integrations.
-- manage cost reports.
-- list all cost providers.
-- get a specific cloud product with pricing details.
-- delete a cost report.
-- create budget alert
-- list prices
-- cloud pricing
-- get pricing data for products.
-- manage cloud provider integrations.
-- list all integrations.
-- cloud costs
-- get a specific cost report.
-- get a specific cloud pricing provider.
-- list all saved filters.
-- list products
-- create a new cost report with vql filter.
-- list financial commitment reports
-- manage cost dashboards.
-- manage a specific cost report.
-- update cost report
-- get costs
-- list all dashboards.
-- list all anomaly alerts.
-- list all cost allocation segments.
-- get a specific cloud service.
-- list saved filters
-- list segments
-- get pricing service
-- create a new cost report.
-- budgets
-- list cloud services.
-- list budget alerts
-- list pricing providers
-- vantage
+- list all managed cloud accounts.
 - list recommendations
-- list all workspaces.
-- update a cost report.
-- list cloud services with pricing data.
+- list anomaly alerts
+- delete cost report
+- get pricing service
+- list managed accounts
+- get pricing data for products.
+- list all kubernetes efficiency reports.
+- create dashboard
+- manage cost reports.
+- list all anomaly alerts.
+- get a specific cloud pricing provider.
+- list pricing providers
+- get a specific cost report.
+- cloud infrastructure pricing.
+- list cost providers
+- create a new dashboard.
+- list segments
+- list all integrations.
+- list all cloud provider integrations.
 - list services
+- get provider
+- get cost report
+- list all folders.
+- list integrations
+- cost management
+- list products
+- list cloud services with pricing data.
+- manage cost allocation segments.
+- list teams
+- list pricing products
+- get pricing product
+- create budget alert
+- get a specific cloud product with pricing details.
+- manage cost dashboards.
+- list network flow reports
+- list all resource reports.
+- get costs for a report or vql filter.
+- manage anomaly detection alerts.
+- list all saved filters.
+- get pricing provider
+- list all business metrics.
+- list all budget alerts.
+- manage a specific cost report.
+- list resource reports
+- cloud pricing providers.
+- create anomaly alert
+- cloud costs
+- delete a cost report.
+- list all teams.
+- get costs
+- list all cost providers.
+- update an existing cost report.
+- cloud pricing
+- list all network flow reports.
+- list financial commitment reports
+- manage budget alerts.
+- get a specific cloud service.
+- list cloud services.
+- create a new budget alert.
+- list workspaces
+- finops
+- list saved filters
+- costs
+- get a specific cloud provider.
+- list all cost allocation segments.
+- list all cost reports.
 - list business metrics
 - list cloud products with pricing.
-- create a new anomaly alert.
-- list integrations
-- list all cost reports.
-- list all folders.
-- cloud infrastructure pricing.
-- get costs for a report or vql filter.
-- list teams
-- cloud pricing providers.
-- create a new dashboard.
-- get provider
-- list all teams.
-- list cost providers
-- list dashboards
-- list all managed cloud accounts.
-- cost management
-- list network flow reports
-- list resource reports
-- get cost report
-- cloud infrastructure products.
-- manage anomaly detection alerts.
-- list all budget alerts.
-- costs
-- list pricing services
-- list folders
-- list anomaly alerts
-- get a specific cloud provider.
-- manage budget alerts.
-- update an existing cost report.
-- cost optimization recommendations.
+- list cost reports
+- update a cost report.
 - cloud pricing services.
-- list workspaces
-- get pricing product
-- list providers
-- manage cost allocation segments.
-- list all network flow reports.
-- get pricing data filtered by product, provider, service, or region.
-- get pricing provider
-- list managed accounts
-- list cost optimization recommendations.
-- list pricing products
-- create anomaly alert
 - list all cloud pricing providers.
-- list all business metrics.
-- delete cost report
-- create cost report
-- finops
-- list all kubernetes efficiency reports.
-- retrieve cost data.
+- update cost report
+- list pricing services
+- vantage
+- get a specific cost report by token.
+- budgets
+- list all workspaces.
+- list all dashboards.
+- cost optimization recommendations.
+- create a new anomaly alert.
 - list all financial commitment reports.
+- create a new cost report with vql filter.
+- create cost report
+- list folders
+- list dashboards
+- list providers
+- list budget alerts
+- list prices
+- list kubernetes efficiency reports
+- manage cloud provider integrations.
+- cloud infrastructure products.
+- get pricing data filtered by product, provider, service, or region.
+- retrieve cost data.
+- list cost optimization recommendations.
+- list all segments.
+- create a new cost report.
 slug: cloud-cost-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Vantage Cloud Cost Management\"\n  description: \"Unified workflow for cloud cost management combining cost reporting, alerting, optimization recommendations, and cloud pricing comparison. Used by FinOps teams and cloud engineers to monitor, optimize, and control cloud spending.\"\n  tags:\n    - Vantage\n    - FinOps\n    - Cloud Costs\n    - Cost Management\n    - Cloud Pricing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VANTAGE_API_TOKEN: VANTAGE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: vantage-cost-mgmt\n      location: ./shared/cost-management.yaml\n    - import: vantage-pricing\n      location: ./shared/cloud-pricing.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: vantage-finops-api\n      description: \"Unified REST API for cloud cost management, optimization, and pricing comparison.\"\n      resources:\n        - path: /v1/cost-reports\n\
   \          name: cost-reports\n          description: \"Manage Cost Reports.\"\n          operations:\n            - method: GET\n              name: list-cost-reports\n              description: \"List all Cost Reports.\"\n              call: \"vantage-cost-mgmt.get-cost-reports\"\n              with:\n                page: \"rest.page\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cost-report\n              description: \"Create a new Cost Report.\"\n              call: \"vantage-cost-mgmt.create-cost-report\"\n              with:\n                title: \"rest.title\"\n                filter: \"rest.filter\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/cost-reports/{cost_report_token}\n          name: cost-report\n          description: \"Manage a specific Cost\

@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- list all server-side functions available in the cluster
-- list available functions
-- get region keys
-- high-performance in-memory data caching and distribution
-- data management
-- caching
-- region crud operations, oql queries, and function execution
-- list geode regions
-- geode region management
-- data grid
-- distributed systems
-- engineers managing the geode cluster infrastructure
-- list all regions in the apache geode data grid
-- developers using geode as a fast data store for applications
-- apache geode
-- in-memory data grid
-- list geode functions
-- execute query
-- in-memory
-- list functions
-- apache
 - list regions
+- list all server-side functions available in the cluster
+- data grid
+- apache geode
+- list geode regions
+- list all regions in the apache geode data grid
+- execute query
+- list functions
+- high-performance in-memory data caching and distribution
 - execute an oql query against geode regions
-- server-side function execution
-- platform engineering
-- manage in-memory data with regions, queries, and functions
-- execute oql query
-- list all geode regions
-- Application Developer
-- Platform Engineer
-- get all keys stored in a geode region
-- open source
-- oql query execution
 - execute an oql query
+- data management
+- get region keys
+- manage in-memory data with regions, queries, and functions
+- server-side function execution
+- in-memory
+- oql query execution
+- list geode functions
+- apache
+- execute oql query
+- list available functions
+- caching
+- developers using geode as a fast data store for applications
+- get all keys stored in a geode region
+- platform engineering
+- Application Developer
+- engineers managing the geode cluster infrastructure
+- Platform Engineer
+- region crud operations, oql queries, and function execution
+- distributed systems
+- in-memory data grid
+- geode region management
+- list all geode regions
+- open source
 slug: geode-data-management
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Geode Data Management\"\n  description: \"Unified capability for managing data in Apache Geode in-memory data grid — accessing regions, executing OQL queries, and running server-side functions. Designed for application developers and platform engineers working with high-performance in-memory data.\"\n  tags:\n    - Apache Geode\n    - In-Memory Data Grid\n    - Caching\n    - Data Management\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      GEODE_REST_URL: GEODE_REST_URL\ncapability:\n  consumes:\n    - import: geode-rest\n      location: ./shared/geode-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: geode-management-api\n      description: \"Unified REST API for Apache Geode data management.\"\n      resources:\n        - path: /v1/regions\n          name: regions\n          description: Geode region management\n   \
   \       operations:\n            - method: GET\n              name: list-regions\n              description: List all Geode regions\n              call: \"geode-rest.list-regions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: OQL query execution\n          operations:\n            - method: GET\n              name: execute-query\n              description: Execute an OQL query\n              call: \"geode-rest.execute-adhoc-query\"\n              with:\n                q: \"rest.q\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/functions\n          name: functions\n          description: Server-side function execution\n          operations:\n            - method: GET\n              name: list-functions\n              description: List available functions\n              call: \"geode-rest.list-functions\"\

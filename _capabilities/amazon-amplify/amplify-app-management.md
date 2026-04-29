@@ -14,27 +14,27 @@ personas: []
 provider_name: Amazon Amplify
 provider_slug: amazon-amplify
 search_terms:
-- Frontend Developer
-- web applications
-- developer building and deploying web and mobile frontends on aws amplify.
-- DevOps Engineer
-- manage amplify apps, branches, and deployments.
-- aws
-- deployment
+- list apps
 - hosting
 - amplify
 - full stack
-- list all amazon amplify applications in the aws account.
-- amazon
-- amplify application management.
+- mobile development
+- deployment
 - list all amplify apps.
 - create a new amplify full-stack application connected to a code repository.
-- mobile development
+- amplify application management.
+- DevOps Engineer
 - frontend
+- amazon
+- aws
+- Frontend Developer
+- developer building and deploying web and mobile frontends on aws amplify.
+- web applications
 - create amplify app
-- engineer managing ci/cd pipelines and deployments for amplify applications.
-- list apps
 - list amplify apps
+- list all amazon amplify applications in the aws account.
+- engineer managing ci/cd pipelines and deployments for amplify applications.
+- manage amplify apps, branches, and deployments.
 slug: amplify-app-management
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Amplify App Management\n  description: Workflow capability for managing full-stack Amplify applications including app creation, branch management, and deployment workflows.\n  tags:\n  - Amazon\n  - Amplify\n  - AWS\n  - Deployment\n  - Frontend\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: amazon-amplify\n    location: ./shared/amazon-amplify.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amplify-management-api\n    description: REST API for Amplify app management.\n    resources:\n    - path: /v1/apps\n      name: apps\n      description: Amplify application management.\n      operations:\n      - method: GET\n        name: list-apps\n        description: List all Amplify apps.\n        call: amazon-amplify.list-apps\n\
   \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amplify-management-mcp\n    transport: http\n    description: MCP server for AI-assisted Amplify app management.\n    tools:\n    - name: list-amplify-apps\n      description: List all Amazon Amplify applications in the AWS account.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: amazon-amplify.list-apps\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-amplify-app\n      description: Create a new Amplify full-stack application connected to a code repository.\n      hints:\n        readOnly: false\n        openWorld: false\n      call: amazon-amplify.create-app\n      with:\n        body: tools.body\n      outputParameters:\n      - type: object\n        mapping: $.\n"

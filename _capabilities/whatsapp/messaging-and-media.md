@@ -48,39 +48,39 @@ provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
 - retrieves a temporary download url for media.
-- upload media
-- qr codes
-- updates the prefilled message for a qr code.
-- update qr code
-- sends a message to a whatsapp user.
-- retrieves a temporary download url for a media file. url expires after 5 minutes.
-- send messages of all types to whatsapp users.
-- messaging
-- get media url
-- deletes a media file from whatsapp servers.
-- individual qr code management.
-- retrieves a specific qr code.
-- media
-- deletes a media file.
-- uploads media to whatsapp servers.
-- deletes a qr code.
-- delete qr code
-- customer engagement
-- list qr codes
 - delete media
-- updates a qr code.
+- individual qr code management.
+- messaging
+- qr codes for starting customer conversations.
+- list qr codes
+- media
+- updates the prefilled message for a qr code.
+- sends a message to a whatsapp user.
+- uploads media to whatsapp servers.
+- send message
 - creates a qr code for starting conversations.
-- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
 - lists all qr codes for a phone number.
-- get qr code
-- upload media files to whatsapp servers.
-- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- qr codes
 - retrieve and delete media files.
 - whatsapp
+- retrieves a specific qr code.
+- upload media
+- retrieves a temporary download url for a media file. url expires after 5 minutes.
 - creates a qr code that customers can scan to start a conversation.
+- sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
+- updates a qr code.
+- deletes a qr code.
+- deletes a media file from whatsapp servers.
+- upload media files to whatsapp servers.
+- update qr code
+- get media url
+- deletes a media file.
 - create qr code
-- qr codes for starting customer conversations.
-- send message
+- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- customer engagement
+- send messages of all types to whatsapp users.
+- get qr code
+- delete qr code
 slug: messaging-and-media
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WhatsApp Messaging And Media\"\n  description: \"Unified workflow for sending messages, managing media files, and creating QR codes for customer conversations. Combines WhatsApp Cloud API messaging, media management, and QR code capabilities used by customer engagement teams and chatbot developers.\"\n  tags:\n    - WhatsApp\n    - Messaging\n    - Media\n    - QR Codes\n    - Customer Engagement\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: whatsapp-cloud\n      location: ./shared/cloud-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: whatsapp-messaging-api\n      description: \"Unified REST API for WhatsApp messaging, media management, and QR codes.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Send messages\
   \ of all types to WhatsApp users.\"\n          operations:\n            - method: POST\n              name: send-message\n              description: \"Sends a message to a WhatsApp user.\"\n              call: \"whatsapp-cloud.send-message\"\n              with:\n                phone_number_id: \"rest.phone_number_id\"\n                messaging_product: \"rest.messaging_product\"\n                to: \"rest.to\"\n                type: \"rest.type\"\n                text: \"rest.text\"\n                template: \"rest.template\"\n                interactive: \"rest.interactive\"\n                image: \"rest.image\"\n                video: \"rest.video\"\n                audio: \"rest.audio\"\n                document: \"rest.document\"\n                sticker: \"rest.sticker\"\n                location: \"rest.location\"\n                contacts: \"rest.contacts\"\n                reaction: \"rest.reaction\"\n                context: \"rest.context\"\n                status: \"rest.status\"\

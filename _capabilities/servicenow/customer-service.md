@@ -52,70 +52,70 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- service catalog browsing.
-- get cart contents.
-- create a new csm contact.
-- automation
-- get cart
-- retrieve a catalog category with subcategories.
-- retrieve a specific service catalog.
-- update trouble ticket
-- workflows
-- list csm contacts with optional filtering.
-- submit cart as a service catalog request.
-- empty cart
-- order item now
-- list service catalogs.
-- cloud services
-- it service management
-- self service
-- shopping cart.
-- list contacts
-- trouble ticket operations.
-- remove all items from the shopping cart.
-- servicenow
-- csm contact management.
-- catalog item browsing.
-- create a trouble ticket.
-- get trouble ticket
-- create contact
-- list catalogs
-- get catalog item
-- retrieve a specific trouble ticket.
-- single catalog item.
-- create trouble ticket
+- list catalog items
+- list trouble tickets
 - add a catalog item to the shopping cart.
-- get contact
-- get category
-- submit cart order
-- contacts
-- customer service
-- list trouble tickets.
-- list catalog items.
-- retrieve shopping cart contents.
-- itsm
-- retrieve a specific csm contact.
-- empty the cart.
-- single contact operations.
-- get catalog item details.
-- get catalog
-- retrieve catalog item details with variables.
-- list csm contacts.
+- service catalog browsing.
+- get catalog item
+- remove all items from the shopping cart.
 - workflow automation
 - create a csm contact.
-- list available service catalogs.
-- order a catalog item immediately.
-- list trouble tickets
-- list catalog items with optional filtering.
-- update an existing trouble ticket.
-- list catalog items
-- t1
-- enterprise platform
+- get contact
+- it service management
+- create trouble ticket
+- list service catalogs.
 - processes
-- service catalog
-- get a specific contact.
-- digital workflows
+- retrieve a specific service catalog.
+- list csm contacts.
+- retrieve catalog item details with variables.
+- servicenow
+- itsm
+- empty the cart.
+- contacts
+- get cart contents.
 - add item to cart
+- list available service catalogs.
+- cloud services
+- customer service
+- submit cart as a service catalog request.
+- retrieve a specific csm contact.
+- get catalog item details.
+- list contacts
+- create a trouble ticket.
+- get trouble ticket
+- retrieve a specific trouble ticket.
+- update trouble ticket
+- trouble ticket operations.
+- self service
+- catalog item browsing.
+- workflows
+- automation
+- get catalog
+- empty cart
+- shopping cart.
+- get cart
+- submit cart order
+- retrieve a catalog category with subcategories.
+- create a new csm contact.
+- get a specific contact.
+- list trouble tickets.
+- order a catalog item immediately.
+- create contact
+- single contact operations.
+- service catalog
+- single catalog item.
+- list catalogs
+- order item now
+- digital workflows
+- csm contact management.
+- update an existing trouble ticket.
+- list catalog items with optional filtering.
+- get category
+- retrieve shopping cart contents.
+- enterprise platform
+- list csm contacts with optional filtering.
+- t1
+- list catalog items.
 slug: customer-service
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow Customer Service\"\n  description: \"Unified workflow for customer service operations combining contact management, service catalog browsing and ordering, and trouble ticket handling. Used by customer service agents and self-service portal integrations.\"\n  tags:\n    - ServiceNow\n    - Customer Service\n    - Service Catalog\n    - Contacts\n    - Self Service\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-contact\n      location: ./shared/contact.yaml\n    - import: servicenow-service-catalog\n      location: ./shared/service-catalog.yaml\n    - import: servicenow-trouble-ticket\n      location: ./shared/trouble-ticket.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n\
   \      namespace: servicenow-customer-service-api\n      description: \"Unified REST API for ServiceNow customer service operations.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"CSM contact management.\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List CSM contacts.\"\n              call: \"servicenow-contact.list-contacts\"\n              with:\n                sysparm_query: \"rest.sysparm_query\"\n                sysparm_limit: \"rest.sysparm_limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n            - method: POST\n              name: create-contact\n              description: \"Create a CSM contact.\"\n              call: \"servicenow-contact.create-contact\"\n              with:\n                first_name: \"rest.first_name\"\n                last_name: \"rest.last_name\"\n            \
