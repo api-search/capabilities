@@ -31,65 +31,67 @@ personas: []
 provider_name: Microsoft Edge
 provider_slug: microsoft-edge
 search_terms:
-- list all debuggable targets
 - get extension details
-- developer tools
-- create new browser target
-- extension product detail
-- browser debugging and inspection
-- progressive web apps
-- debugging
-- microsoft edge
-- submit an extension for review and publishing
-- tests web applications and extensions using devtools automation
-- edge
-- Extension Developer
-- develops and publishes browser extensions for microsoft edge
-- browser version
-- extension products
-- get submission status
-- upload a new extension package
-- get product
-- extension lifecycle from development to publication
-- get microsoft edge browser version information
-- webview
-- open a new browser tab
-- list targets
-- chromium
-- extensions
-- get upload status
 - close target
-- Web Developer
-- upload package
-- get browser version info
-- debuggable browser targets
-- create submission
-- bring a browser tab to the foreground
-- develops web applications and uses devtools for debugging
-- get details of an extension product
-- web development
-- close a browser tab
-- get protocol schema
-- open a new browser tab in microsoft edge
-- check the status of an extension submission
-- QA Engineer
-- automation
-- create target
-- list extension products
-- get browser version
-- list all extension products in the edge add-ons store
-- browser development
-- microsoft
-- check the status of a package upload
-- get the full devtools protocol schema definition
 - browser
-- list extensions
+- microsoft
+- get protocol schema
+- tests web applications and extensions using devtools automation
 - unified browser development workflow combining debugging and extension management
-- list products
-- activate target
+- develops and publishes browser extensions for microsoft edge
+- get product
+- web development
+- extension product detail
+- get microsoft edge browser version information
+- microsoft edge
+- browser development
 - list all debuggable browser targets in microsoft edge
+- check the status of an extension submission
+- get browser version
+- automation
+- create new browser target
+- upload a new extension package
+- close a browser tab
+- extension lifecycle from development to publication
+- chromium
+- list extension products
+- browser debugging and inspection
+- get browser version info
+- open a new browser tab
+- open a new browser tab in microsoft edge
+- list all extension products in the edge add-ons store
+- extension products
 - get extension
+- submit an extension for review and publishing
+- QA Engineer
+- create target
+- list extensions
+- create submission
+- upload package
+- list targets
+- browser version
+- develops web applications and uses devtools for debugging
+- activate target
+- extensions
+- bring a browser tab to the foreground
+- debugging
+- debuggable browser targets
+- webview
+- progressive web apps
+- get upload status
+- Extension Developer
+- list all debuggable targets
+- get submission status
+- check the status of a package upload
+- Web Developer
+- developer tools
+- edge
+- list products
+- get details of an extension product
+- get the full devtools protocol schema definition
 slug: browser-development
+source_filename: browser-development.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Edge Browser Development\"\n  description: \"Unified workflow for Microsoft Edge browser development combining DevTools Protocol debugging with Add-ons extension lifecycle management. Used by extension developers, web developers, and QA engineers.\"\n  tags:\n    - Microsoft Edge\n    - Browser Development\n    - Extensions\n    - Debugging\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      EDGE_DEVTOOLS_HOST: EDGE_DEVTOOLS_HOST\n      EDGE_ADDONS_API_TOKEN: EDGE_ADDONS_API_TOKEN\n\ncapability:\n  consumes:\n    - import: devtools-api\n      location: ./shared/devtools-api.yaml\n    - import: addons-api\n      location: ./shared/addons-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: browser-development-api\n      description: \"Unified REST API for Microsoft Edge browser development workflows.\"\n      resources:\n     \
   \   - path: /v1/targets\n          name: targets\n          description: \"Debuggable browser targets\"\n          operations:\n            - method: GET\n              name: list-targets\n              description: \"List all debuggable targets\"\n              call: \"devtools-api.list-targets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/targets/new\n          name: new-target\n          description: \"Create new browser target\"\n          operations:\n            - method: PUT\n              name: create-target\n              description: \"Open a new browser tab\"\n              call: \"devtools-api.create-target\"\n              with:\n                url: \"rest.url\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/version\n          name: version\n          description: \"Browser version\"\n          operations:\n            - method:\
   \ GET\n              name: get-browser-version\n              description: \"Get browser version info\"\n              call: \"devtools-api.get-browser-version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extensions\n          name: extensions\n          description: \"Extension products\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"List extension products\"\n              call: \"addons-api.list-products\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extensions/{productId}\n          name: extension-detail\n          description: \"Extension product detail\"\n          operations:\n            - method: GET\n              name: get-product\n              description: \"Get extension details\"\n              call: \"addons-api.get-product\"\n              with:\n \

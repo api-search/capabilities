@@ -65,79 +65,81 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- search for ad accounts.
-- forecast reach and impressions.
-- archives communications for regulatory compliance.
-- creative management.
-- create a new dmp segment.
-- authentication, sharing, and verification for consumer apps.
-- stream companies
-- business
-- uses sales navigator for lead generation and crm sync.
-- job posting, recruiting, and applicant tracking.
-- update ad account
-- archive campaign
-- stream users
-- create ad account
-- media plan forecasting.
-- employee development tracking and content access.
-- create dmp segment
-- archive a campaign.
-- recruiting
-- search campaign groups
-- audience insights.
-- update an ad account.
-- audience count estimation.
-- fetch audience insights by targeting criteria.
 - retrieve a campaign by id.
-- tracks employee learning activity and completions.
-- create a new ad account.
-- sales intelligence, lead management, and crm integration.
-- search for campaign groups.
-- create a new ad creative.
-- retrieve available ad targeting facets.
-- dmp segment management.
-- campaign management
-- careers
-- individual ad account operations.
-- ad targeting facets.
-- get audience insights
-- forecast impressions
-- delete a campaign group.
-- b2b advertising, audience targeting, and campaign analytics.
-- professional networking
-- forecast reach and impressions for media planning.
-- search for campaigns.
-- message archiving and regulatory communications governance.
-- social media
-- linkedin
-- data portability and advertiser transparency for dma.
-- campaign management.
-- search campaigns
+- create ad account
+- media planning
 - get campaign by id
-- advertising
-- campaign group management.
-- stream user data to a dmp segment.
-- search for ad targeting entities.
+- linkedin
+- stream companies
+- forecast reach and impressions.
+- authentication, sharing, and verification for consumer apps.
 - marketing
-- get audience count by targeting criteria.
-- posts jobs and manages candidates through ats integrations.
 - create creative
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get ad targeting facets
-- get dmp segments
-- delete campaign group
-- get audience count
-- retrieve an ad account by id.
-- ad account management.
-- stream company data to a dmp segment.
-- integrates linkedin authentication and sharing into applications.
-- get ad account by id
+- posts jobs and manages candidates through ats integrations.
+- create a new ad account.
 - search ad accounts
+- ad targeting facets.
+- dmp segment management.
+- professional networking
+- get audience insights
+- advertising
+- search for ad accounts.
+- fetch audience insights by targeting criteria.
+- forecast impressions
+- uses sales navigator for lead generation and crm sync.
+- search for campaign groups.
+- employee development tracking and content access.
+- search for ad targeting entities.
+- search campaigns
+- search campaign groups
+- search for campaigns.
+- get ad targeting facets
+- message archiving and regulatory communications governance.
+- campaign group management.
+- tracks employee learning activity and completions.
+- retrieve an ad account by id.
+- get ad account by id
+- create dmp segment
+- integrates linkedin authentication and sharing into applications.
+- data portability and advertiser transparency for dma.
+- creative management.
+- individual ad account operations.
+- stream users
+- create a new ad creative.
+- get audience count by targeting criteria.
+- get dmp segments
+- audience count estimation.
+- recruiting
+- social media
+- retrieve available ad targeting facets.
+- sales intelligence, lead management, and crm integration.
+- delete campaign group
+- careers
+- manages b2b ad campaigns and audience targeting on linkedin.
+- forecast reach and impressions for media planning.
+- stream user data to a dmp segment.
+- job posting, recruiting, and applicant tracking.
+- create a new dmp segment.
+- archive campaign
+- delete a campaign group.
 - search ad targeting entities
 - retrieve dmp segments.
-- media planning
+- get audience count
+- ad account management.
+- stream company data to a dmp segment.
+- update ad account
+- archives communications for regulatory compliance.
+- b2b advertising, audience targeting, and campaign analytics.
+- audience insights.
+- campaign management.
+- campaign management
+- media plan forecasting.
+- update an ad account.
+- business
+- archive a campaign.
 slug: campaign-management
+source_filename: campaign-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Campaign Management\"\n  description: \"Unified workflow for marketing managers to plan, build, and manage LinkedIn ad campaigns -- combining campaign management, audience targeting, audience insights, and media planning APIs.\"\n  tags:\n    - LinkedIn\n    - Campaign Management\n    - Advertising\n    - Media Planning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-campaigns\n      location: ./shared/marketing-campaigns.yaml\n    - import: marketing-audience\n      location: ./shared/marketing-audience.yaml\n    - import: marketing-audience-insights\n      location: ./shared/marketing-audience-insights.yaml\n    - import: marketing-media-planning\n      location: ./shared/marketing-media-planning.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace:\
   \ campaign-management-api\n      description: \"Unified REST API for LinkedIn campaign management workflows.\"\n      resources:\n        - path: /v1/ad-accounts\n          name: ad-accounts\n          description: \"Ad account management.\"\n          operations:\n            - method: GET\n              name: search-ad-accounts\n              description: \"Search for ad accounts.\"\n              call: \"marketing-campaigns.search-ad-accounts\"\n            - method: POST\n              name: create-ad-account\n              description: \"Create a new ad account.\"\n              call: \"marketing-campaigns.create-ad-account\"\n        - path: /v1/ad-accounts/{SponsoredAccountId}\n          name: ad-account-by-id\n          description: \"Individual ad account operations.\"\n          operations:\n            - method: GET\n              name: get-ad-account-by-id\n              description: \"Retrieve an ad account by ID.\"\n              call: \"marketing-campaigns.get-ad-account-by-id\"\
   \n            - method: POST\n              name: update-ad-account\n              description: \"Update an ad account.\"\n              call: \"marketing-campaigns.update-ad-account\"\n        - path: /v1/campaign-groups\n          name: campaign-groups\n          description: \"Campaign group management.\"\n          operations:\n            - method: GET\n              name: search-campaign-groups\n              description: \"Search for campaign groups.\"\n              call: \"marketing-campaigns.search-campaign-groups\"\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Campaign management.\"\n          operations:\n            - method: GET\n              name: search-campaigns\n              description: \"Search for campaigns.\"\n              call: \"marketing-campaigns.search-campaigns\"\n        - path: /v1/creatives\n          name: creatives\n          description: \"Creative management.\"\n          operations:\n            - method: POST\n\

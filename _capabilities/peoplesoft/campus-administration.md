@@ -1,4 +1,17 @@
 ---
+api_specs:
+- filename: campus-solutions.yml
+  format: yaml
+  label: campus-solutions
+  slug: campus-solutions
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/campus-solutions.yml
+- filename: approval-workflow-engine.yml
+  format: yaml
+  label: approval-workflow
+  slug: approval-workflow
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/approval-workflow-engine.yml
 categories: []
 consumed_apis:
 - campus-solutions
@@ -39,43 +52,45 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- list classes
-- crm
-- retrieve details for a specific student.
-- financial management
-- retrieve class schedule and enrollment data.
-- campus solutions.
-- retrieve pending campus approval requests.
-- higher education
-- retrieve financial aid award data.
-- approve, deny, or push back a campus approval request.
-- financial and supply chain management.
-- financial aid
-- erp
-- admissions
-- process approval
-- hcm
-- class schedule and enrollment data
-- admission applications
-- human capital management.
-- enterprise software
-- peoplesoft
-- campus solutions
-- list students
-- student records
-- list admission applications
-- supply chain management
-- list financial aid awards
-- individual approval operations
-- retrieve student records.
-- financial aid awards
-- retrieve admission applications.
-- individual student details
-- peopletools platform services.
-- campus approval requests
-- list pending approvals
 - get student
+- financial management
+- hcm
+- campus solutions.
+- list financial aid awards
+- retrieve admission applications.
+- financial aid awards
+- human capital management.
+- retrieve details for a specific student.
+- higher education
+- supply chain management
+- student records
+- list classes
+- individual student details
+- list pending approvals
+- retrieve student records.
+- process approval
+- erp
+- financial and supply chain management.
+- crm
+- campus approval requests
+- peoplesoft
+- retrieve financial aid award data.
+- class schedule and enrollment data
+- campus solutions
+- retrieve class schedule and enrollment data.
+- enterprise software
+- admissions
+- list students
+- financial aid
+- individual approval operations
+- list admission applications
+- approve, deny, or push back a campus approval request.
+- admission applications
+- peopletools platform services.
+- retrieve pending campus approval requests.
 slug: campus-administration
+source_filename: campus-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Campus Administration\"\n  description: \"Unified workflow for campus administrators combining student records, admissions, enrollment, financial aid, and approval workflows across PeopleSoft Campus Solutions and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Campus Solutions\n    - Higher Education\n    - Student Records\n    - Admissions\n    - Financial Aid\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: campus-solutions\n      location: ./shared/campus-solutions.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: campus-api\n      description: \"Unified REST API for PeopleSoft campus administration workflows.\"\
   \n      resources:\n        - path: /v1/students\n          name: students\n          description: \"Student records\"\n          operations:\n            - method: GET\n              name: list-students\n              description: \"Retrieve student records.\"\n              call: \"campus-solutions.list-students\"\n              with:\n                term: \"rest.term\"\n                program: \"rest.program\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/students/{studentId}\n          name: student-detail\n          description: \"Individual student details\"\n          operations:\n            - method: GET\n              name: get-student\n              description: \"Retrieve details for a specific student.\"\n              call: \"campus-solutions.get-student\"\n              with:\n                studentId: \"rest.studentId\"\n              outputParameters:\n                - type: object\n       \
   \           mapping: \"$.\"\n        - path: /v1/admission-applications\n          name: admissions\n          description: \"Admission applications\"\n          operations:\n            - method: GET\n              name: list-admission-applications\n              description: \"Retrieve admission applications.\"\n              call: \"campus-solutions.list-admission-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/classes\n          name: classes\n          description: \"Class schedule and enrollment data\"\n          operations:\n            - method: GET\n              name: list-classes\n              description: \"Retrieve class schedule and enrollment data.\"\n              call: \"campus-solutions.list-classes\"\n              with:\n                term: \"rest.term\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/financial-aid-awards\n\

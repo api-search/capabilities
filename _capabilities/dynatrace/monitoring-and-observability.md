@@ -62,65 +62,67 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- logs
-- monitoring
-- ops engineering
-- get metric descriptor
-- list entities
-- export logs for bulk retrieval
-- analytics
-- ingest log records into dynatrace grail
-- search logs
-- export logs
-- delete custom metric
-- search log records
-- ai operations
-- list events from the dynatrace environment
-- get details of a specific monitored entity
-- get entity details
-- application security
-- dynatrace
-- ingest log records
-- ingest custom metric data points via mint protocol
-- list events
-- list metrics
-- ingest custom metrics
-- ingest logs
-- export log records
-- get entity
-- list monitored entities matching a selector
-- aggregate log data grouped by specified fields
-- observability
-- search logs using dql queries
-- list all available metrics
-- apm
-- query metric data
-- list metric descriptors
-- ingest logs into grail
-- query metric data with selectors and time ranges
 - aggregate logs by dimensions
-- automation
-- digital experience management
-- metrics
-- get descriptor for a specific metric
+- get entity details
 - delete a custom metric from the environment
-- query metric data points
-- get the descriptor for a specific metric
-- cloud monitoring
+- dynatrace
+- export logs for bulk retrieval
+- delete a custom metric
+- list entities matching a selector
+- application security
+- aggregate log data grouped by specified fields
+- get entity
+- list events
+- search log records using dql queries
+- get descriptor for a specific metric
+- get metric descriptor
+- search logs using dql queries
+- query metric data with selectors and time ranges
 - query metric data points with selectors and time ranges
 - export log records for bulk retrieval
+- automation
+- query metric data
+- metrics
 - query events
-- query monitored entities
-- list entities matching a selector
-- search log records using dql queries
-- application performance monitoring
-- aggregate logs
-- delete a custom metric
-- list all available metric descriptors
+- get the descriptor for a specific metric
 - aggregate log data
-- intelligence
+- list entities
+- ingest log records into dynatrace grail
+- ai operations
+- apm
+- logs
+- list metric descriptors
 - ingest custom metrics via mint protocol
+- list all available metric descriptors
+- ops engineering
+- intelligence
+- delete custom metric
+- application performance monitoring
+- monitoring
+- search log records
+- observability
+- aggregate logs
+- ingest logs into grail
+- digital experience management
+- cloud monitoring
+- query metric data points
+- ingest custom metric data points via mint protocol
+- list metrics
+- analytics
+- list all available metrics
+- list monitored entities matching a selector
+- search logs
+- export logs
+- export log records
+- ingest log records
+- ingest logs
+- query monitored entities
+- ingest custom metrics
+- get details of a specific monitored entity
+- list events from the dynatrace environment
 slug: monitoring-and-observability
+source_filename: monitoring-and-observability.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynatrace Monitoring And Observability\"\n  description: \"Unified monitoring and observability workflow combining metrics, logs, events, and entity data for ops engineers managing infrastructure health and performance.\"\n  tags:\n    - Dynatrace\n    - Monitoring\n    - Observability\n    - Ops Engineering\n    - Metrics\n    - Logs\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DYNATRACE_API_TOKEN: DYNATRACE_API_TOKEN\n      DYNATRACE_ENVIRONMENT_ID: DYNATRACE_ENVIRONMENT_ID\n\ncapability:\n  consumes:\n    - import: metrics-v2\n      location: ./shared/metrics-v2.yaml\n    - import: log-monitoring-v2\n      location: ./shared/log-monitoring-v2.yaml\n    - import: events-v2\n      location: ./shared/events-v2.yaml\n    - import: entities-v2\n      location: ./shared/entities-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: monitoring-observability-api\n\
   \      description: \"Unified REST API for Dynatrace monitoring and observability workflows.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: \"List metric descriptors\"\n          operations:\n            - method: GET\n              name: list-metrics\n              description: \"List all available metrics\"\n              call: \"metrics-v2.list-metrics\"\n              with:\n                nextPageKey: \"rest.nextPageKey\"\n                pageSize: \"rest.pageSize\"\n                metricSelector: \"rest.metricSelector\"\n                fields: \"rest.fields\"\n                writtenSince: \"rest.writtenSince\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/{metricKey}\n          name: metric-descriptor\n          description: \"Get metric descriptor\"\n          operations:\n            - method: GET\n              name: get-metric-descriptor\n\
   \              description: \"Get descriptor for a specific metric\"\n              call: \"metrics-v2.get-metric-descriptor\"\n              with:\n                metricKey: \"rest.metricKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-custom-metric\n              description: \"Delete a custom metric\"\n              call: \"metrics-v2.delete-custom-metric\"\n              with:\n                metricKey: \"rest.metricKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics/query\n          name: metric-query\n          description: \"Query metric data points\"\n          operations:\n            - method: GET\n              name: query-metric-data\n              description: \"Query metric data with selectors and time ranges\"\n              call: \"metrics-v2.query-metric-data\"\n         \

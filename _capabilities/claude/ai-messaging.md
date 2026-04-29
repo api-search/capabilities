@@ -43,56 +43,58 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- list message batches.
-- delete a completed batch.
-- list models
-- anthropic
-- get message batch status and details.
-- artificial intelligence
-- list available models.
-- create message batch
-- chatbot
-- message operations.
-- create a message.
-- cancel an in-progress batch.
-- list batches
-- get batch status.
-- get model metadata.
-- delete message batch
-- create message
-- get batch
-- ai
-- delete a batch.
-- create a message batch.
-- large language models
-- list message batches
-- token counting.
-- send a message to claude and receive a response.
-- list all message batches.
-- claude
-- retrieve message batch
-- natural language processing
-- count tokens in a message.
-- delete batch
-- count message tokens
-- batch management.
-- individual batch management.
-- cancel message batch
 - machine learning
-- count message tokens.
-- retrieve message batch results
-- create a batch of message requests.
-- model discovery.
-- model details.
-- list available claude models.
+- count message tokens
+- individual batch management.
+- create message batch
+- create a message.
+- delete batch
+- chatbot
+- messaging
+- cancel an in-progress batch.
+- batch management.
+- list available models.
 - count tokens
+- model details.
+- get message batch status and details.
+- large language models
+- model discovery.
+- get batch
 - get completed batch results.
+- create message
 - get model
+- count tokens in a message.
+- ai
+- list available claude models.
+- retrieve message batch results
+- cancel message batch
+- message operations.
+- token counting.
+- create batch
+- anthropic
+- count message tokens.
+- send a message to claude and receive a response.
+- retrieve message batch
+- delete message batch
 - generative ai
 - conversational ai
-- messaging
-- create batch
+- artificial intelligence
+- get batch status.
+- list batches
+- list message batches
+- create a batch of message requests.
+- delete a batch.
+- list models
+- natural language processing
+- list message batches.
+- delete a completed batch.
+- claude
+- get model metadata.
+- list all message batches.
+- create a message batch.
 slug: ai-messaging
+source_filename: ai-messaging.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Claude AI Messaging\"\n  description: \"Unified workflow for AI-powered messaging, token counting, batch processing, and model discovery. Used by AI application developers and data scientists.\"\n  tags:\n    - Anthropic\n    - Claude\n    - AI\n    - Messaging\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ANTHROPIC_API_KEY: ANTHROPIC_API_KEY\n\ncapability:\n  consumes:\n    - import: claude-messages\n      location: ./shared/claude-messages.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ai-messaging-api\n      description: \"Unified REST API for Claude AI messaging.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Message operations.\"\n          operations:\n            - method: POST\n              name: create-message\n              description: \"Create a message.\"\n              call: \"\
   claude-messages.create-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/token-counts\n          name: token-counts\n          description: \"Token counting.\"\n          operations:\n            - method: POST\n              name: count-tokens\n              description: \"Count message tokens.\"\n              call: \"claude-messages.count-message-tokens\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batches\n          name: batches\n          description: \"Batch management.\"\n          operations:\n            - method: GET\n              name: list-batches\n              description: \"List message batches.\"\n              call: \"claude-messages.list-message-batches\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-batch\n\
   \              description: \"Create a message batch.\"\n              call: \"claude-messages.create-message-batch\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/batches/{id}\n          name: batch-details\n          description: \"Individual batch management.\"\n          operations:\n            - method: GET\n              name: get-batch\n              description: \"Get batch status.\"\n              call: \"claude-messages.retrieve-message-batch\"\n              with:\n                message_batch_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-batch\n              description: \"Delete a batch.\"\n              call: \"claude-messages.delete-message-batch\"\n              with:\n                message_batch_id: \"rest.id\"\n              outputParameters:\n                - type:\

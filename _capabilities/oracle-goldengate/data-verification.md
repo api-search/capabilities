@@ -27,47 +27,49 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- cdc
-- list veridata database connections
-- compare groups
-- list compare groups for data verification
-- get veridata server information
-- create a new veridata database connection
-- create a new compare group
-- comparison jobs
 - run job
-- create job
-- get comparison job statistics
-- data integration
-- database connections for verification
-- list groups
-- data synchronization
-- list connections
-- oracle goldengate
-- repair job
 - list replication process performance metrics
-- data quality
-- get job statistics
-- list comparison jobs
-- get server info
-- enterprise
-- execute a comparison job
 - get out of sync data
-- create connection
 - create a new comparison job
-- database
-- list process metrics
+- get goldengate process performance metrics for monitoring replication health
+- real-time replication
 - compliance
+- list compare groups for data verification
 - list jobs
 - replication process metrics
-- get goldengate process performance metrics for monitoring replication health
-- list compare groups
 - data verification
-- create group
+- get server info
+- data integration
+- create connection
+- list connections
+- list groups
+- get comparison job statistics
+- compare groups
+- create a new compare group
+- oracle goldengate
 - get details of out-of-sync data
-- real-time replication
+- data quality
 - repair out-of-sync data identified by a comparison job
+- get veridata server information
+- create job
+- enterprise
+- get job statistics
+- repair job
+- list veridata database connections
+- database connections for verification
+- create a new veridata database connection
+- list comparison jobs
+- list process metrics
+- comparison jobs
+- execute a comparison job
+- data synchronization
+- cdc
+- database
+- list compare groups
+- create group
 slug: data-verification
+source_filename: data-verification.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Data Verification\"\n  description: \"Unified workflow for verifying data consistency between source and target databases. Combines Veridata for data comparison and repair with core GoldenGate monitoring for data quality engineers and DBAs ensuring replication integrity.\"\n  tags:\n    - Oracle GoldenGate\n    - Data Verification\n    - Data Quality\n    - Compliance\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VERIDATA_USERNAME: VERIDATA_USERNAME\n      VERIDATA_PASSWORD: VERIDATA_PASSWORD\n      OGG_USERNAME: OGG_USERNAME\n      OGG_PASSWORD: OGG_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-veridata\n      location: ./shared/goldengate-veridata.yaml\n    - import: goldengate-rest\n      location: ./shared/goldengate-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: data-verification-api\n      description:\
   \ \"Unified REST API for Oracle GoldenGate data verification workflows.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Database connections for verification\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List Veridata database connections\"\n              call: \"goldengate-veridata.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Compare groups\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List compare groups\"\n              call: \"goldengate-veridata.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Comparison\
   \ jobs\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List comparison jobs\"\n              call: \"goldengate-veridata.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Replication process metrics\"\n          operations:\n            - method: GET\n              name: list-process-metrics\n              description: \"List replication process performance metrics\"\n              call: \"goldengate-rest.list-process-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: data-verification-mcp\n      transport: http\n      description: \"MCP server for AI-assisted data verification and comparison.\"\n      tools:\n        - name: list-connections\n          description: \"List\

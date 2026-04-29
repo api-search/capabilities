@@ -10,61 +10,63 @@ personas: []
 provider_name: Amazon CodeArtifact
 provider_slug: amazon-codeartifact
 search_terms:
-- aws
+- get authorization tokens for package managers
 - get repository endpoint
 - list repositories
-- amazon
-- storage and retrieval of software artifacts and their metadata.
-- connect a repository to a public package registry like npmjs or pypi
-- DevOps Engineer
-- list repositories in a domain
-- describe repository
-- maven
-- Software Developer
-- sets up domains, repositories, and governance controls across teams.
-- get details about a codeartifact repository
-- copy package versions
-- Platform Engineer
-- get the package-format-specific endpoint url for a repository
-- list versions of a package in a repository
 - artifact repository
-- create repository
-- manage codeartifact domains
-- delete specific package versions from a repository
-- create a new codeartifact repository within a domain
-- unified workflow for managing artifact repositories, packages, and software supply chain governance.
-- get authorization token
-- list packages
-- describe domain
-- npm
-- devops
-- package management
-- create a new codeartifact domain
-- list domains
-- create domain
-- copy package versions between repositories in the same domain
-- publish a new package version to a repository
-- publishes and consumes packages from codeartifact repositories.
-- get details about a package in a repository
-- publish package version
-- get authorization tokens for package managers
-- delete package versions
-- get details about a codeartifact domain
-- describe package
-- governance and security of external package dependencies and internal packages.
-- list all codeartifact domains in the account
-- list packages in a repository
-- managing software package lifecycle including publishing, versioning, and deprecation.
-- generate a temporary authorization token for accessing codeartifact repositories
-- manages repository infrastructure, external connections, and domain policies.
+- list versions of a package in a repository
+- copy package versions
 - manage codeartifact repositories
+- sets up domains, repositories, and governance controls across teams.
+- Platform Engineer
+- devops
+- get details about a package in a repository
+- list packages
+- connect a repository to a public package registry like npmjs or pypi
 - manage packages and package versions
-- list package versions
-- associate external connection
-- pypi
+- list all codeartifact domains in the account
+- get details about a codeartifact domain
+- managing software package lifecycle including publishing, versioning, and deprecation.
+- storage and retrieval of software artifacts and their metadata.
 - nuget
+- get details about a codeartifact repository
+- create a new codeartifact domain
+- get authorization token
+- unified workflow for managing artifact repositories, packages, and software supply chain governance.
+- manages repository infrastructure, external connections, and domain policies.
+- describe domain
+- list domains
+- list packages in a repository
+- describe repository
+- npm
+- aws
+- publish package version
+- delete specific package versions from a repository
+- amazon
+- generate a temporary authorization token for accessing codeartifact repositories
+- create a new codeartifact repository within a domain
+- DevOps Engineer
 - software supply chain
+- delete package versions
+- get the package-format-specific endpoint url for a repository
+- publish a new package version to a repository
+- Software Developer
+- list repositories in a domain
+- publishes and consumes packages from codeartifact repositories.
+- governance and security of external package dependencies and internal packages.
+- describe package
+- manage codeartifact domains
+- package management
+- list package versions
+- pypi
+- maven
+- create domain
+- associate external connection
+- create repository
+- copy package versions between repositories in the same domain
 slug: amazon-codeartifact-package-management
+source_filename: amazon-codeartifact-package-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeArtifact Package Management\n  description: Unified workflow for DevOps teams to manage artifact repositories, publish packages, control access, and govern software supply chains using Amazon CodeArtifact.\n  tags:\n  - Amazon\n  - AWS\n  - Package Management\n  - DevOps\n  - Artifact Repository\n  - Software Supply Chain\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codeartifact\n    location: ./shared/codeartifact.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: package-management-api\n    description: Unified REST API for managing CodeArtifact packages and repositories.\n    resources:\n    - path: /v1/domains\n      name: domains\n      description: Manage CodeArtifact domains\n    - path: /v1/repositories\n \
   \     name: repositories\n      description: Manage CodeArtifact repositories\n    - path: /v1/packages\n      name: packages\n      description: Manage packages and package versions\n    - path: /v1/tokens\n      name: tokens\n      description: Get authorization tokens for package managers\n  - type: mcp\n    port: 9090\n    namespace: package-management-mcp\n    transport: http\n    description: MCP server for AI-assisted package repository management.\n    tools:\n    - name: list-domains\n      description: List all CodeArtifact domains in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.listDomains\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-repositories\n      description: List repositories in a domain\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.listRepositoriesInDomain\n      outputParameters:\n      - type: object\n        mapping: $.\n   \
   \ - name: list-packages\n      description: List packages in a repository\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.listPackages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-package-versions\n      description: List versions of a package in a repository\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.listPackageVersions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-domain\n      description: Get details about a CodeArtifact domain\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.describeDomain\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-repository\n      description: Get details about a CodeArtifact repository\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codeartifact.describeRepository\n      outputParameters:\n\

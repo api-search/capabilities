@@ -103,101 +103,103 @@ personas: []
 provider_name: Confluence
 provider_slug: confluence
 search_terms:
+- create a new confluence blog post.
+- delete a confluence page by id.
+- manage blog posts
+- list all confluence spaces.
+- update an existing blog post.
+- list all confluence pages with optional filtering by space, status, and title.
+- get comment
+- delete page
+- list all spaces
+- list all blog posts with optional space filtering.
+- manage comments
+- knowledge base
+- list page attachments
+- update a blog post
+- get a specific confluence page by its id.
+- documentation
+- delete blog post
+- list child pages
+- get a label by id
 - get an attachment by id
 - get a blog post by id
-- delete an attachment
-- get label
-- update a blog post
-- delete page
-- create a new page
-- get labels for a page
-- create a new blog post
-- delete a comment
-- list inline comments
-- manage confluence pages
-- update an existing comment.
-- create a new confluence page in a space.
-- get a specific blog post by its id.
-- list inline comments on a specific page.
-- get comment
-- get a specific comment by its id.
-- list footer comments on a specific page.
-- list all file attachments on a specific page.
-- individual space operations
-- documentation
-- create a footer comment on a page or blog post.
-- page label management
-- update blog post
-- list footer comments
-- manage blog posts
-- list all spaces
-- confluence
-- manage attachments
-- create a new confluence blog post.
-- get space
-- delete an attachment by id.
-- list all blog posts
-- list pages
-- child page navigation
-- delete comment
-- get a space by id
-- delete a comment by id.
-- create footer comment
-- delete a confluence page by id.
-- delete a page
-- delete a blog post
-- get a comment by id
-- list child pages of a specific page for navigating content hierarchies.
-- create an inline comment on a specific text selection in a page.
-- get all labels applied to a specific page.
-- get page
-- list attachments for a page
-- list all blog posts with optional space filtering.
-- list child pages
-- update an existing confluence page title and body.
-- get a specific attachment by its id.
-- get a label by id
-- list page attachments
-- list pages in space
-- delete attachment
-- page attachment management
-- list all pages belonging to a specific space.
-- create inline comment
-- list all pages with optional filtering
-- list all confluence spaces.
-- get a page by id
-- manage confluence spaces
-- delete blog post
-- update comment
-- get attachment
-- get page labels
-- individual blog post operations
-- manage comments
-- list blog posts
-- individual page operations
 - get blog post
-- get a specific label by its id.
-- list all confluence pages with optional filtering by space, status, and title.
+- update an existing confluence page title and body.
+- list all blog posts
+- manage attachments
+- list all pages belonging to a specific space.
+- get all labels applied to a specific page.
+- create a footer comment on a page or blog post.
+- delete a blog post
+- manage confluence spaces
+- page attachment management
+- get labels for a page
+- create a new page
 - list spaces
-- update an existing blog post.
-- list pages in a space
-- create blog post
-- wiki
-- update a page
-- update a comment
-- content management
-- label information
-- knowledge base
-- pages within a space
-- update page
-- get a specific confluence space by its id.
 - delete a blog post by id.
-- create page
-- list footer comments for a page
-- get a specific confluence page by its id.
+- get a page by id
+- list pages in a space
+- get attachment
+- delete attachment
+- delete an attachment by id.
+- create an inline comment on a specific text selection in a page.
+- page label management
+- list inline comments on a specific page.
+- get page
+- child page navigation
+- list footer comments on a specific page.
+- update a page
 - collaboration
+- list all pages with optional filtering
+- update blog post
+- pages within a space
+- delete an attachment
+- list all file attachments on a specific page.
+- get page labels
+- list inline comments
+- individual blog post operations
 - page comment management
+- create a new blog post
+- delete a comment by id.
+- confluence
+- create footer comment
+- list footer comments for a page
+- get space
+- list attachments for a page
+- list blog posts
+- delete a comment
+- list pages
+- create inline comment
+- get a specific label by its id.
+- get a specific confluence space by its id.
+- create page
+- delete a page
+- get a specific comment by its id.
+- label information
+- get a space by id
+- create a new confluence page in a space.
+- get label
+- individual page operations
+- update page
+- create blog post
+- get a specific blog post by its id.
+- list footer comments
+- delete comment
+- content management
+- wiki
+- manage confluence pages
+- update comment
+- update a comment
+- update an existing comment.
+- get a specific attachment by its id.
+- list child pages of a specific page for navigating content hierarchies.
+- individual space operations
+- get a comment by id
+- list pages in space
 slug: content-management
+source_filename: content-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Confluence Content Management\"\n  description: \"Unified workflow for managing Confluence content including pages, blog posts, comments, attachments, spaces, and labels. Used by content authors, knowledge managers, and platform administrators.\"\n  tags:\n    - Confluence\n    - Content Management\n    - Collaboration\n    - Wiki\n    - Knowledge Base\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CONFLUENCE_API_TOKEN: CONFLUENCE_API_TOKEN\n      CONFLUENCE_EMAIL: CONFLUENCE_EMAIL\n\ncapability:\n  consumes:\n    - import: confluence-cloud-v2\n      location: ./shared/cloud-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: confluence-content-api\n      description: \"Unified REST API for Confluence content management workflows.\"\n      resources:\n        - path: /v1/pages\n          name: pages\n          description: \"Manage Confluence pages\"\
   \n          operations:\n            - method: GET\n              name: list-pages\n              description: \"List all pages with optional filtering\"\n              call: \"confluence-cloud-v2.get-pages\"\n              with:\n                space-id: \"rest.space_id\"\n                status: \"rest.status\"\n                title: \"rest.title\"\n                cursor: \"rest.cursor\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-page\n              description: \"Create a new page\"\n              call: \"confluence-cloud-v2.create-page\"\n              with:\n                space_id: \"rest.space_id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pages/{id}\n          name: page-by-id\n\
   \          description: \"Individual page operations\"\n          operations:\n            - method: GET\n              name: get-page\n              description: \"Get a page by ID\"\n              call: \"confluence-cloud-v2.get-page-by-id\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-page\n              description: \"Update a page\"\n              call: \"confluence-cloud-v2.update-page\"\n              with:\n                id: \"rest.id\"\n                title: \"rest.title\"\n                body: \"rest.body\"\n                version: \"rest.version\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-page\n              description: \"Delete a page\"\n              call: \"confluence-cloud-v2.delete-page\"\n\

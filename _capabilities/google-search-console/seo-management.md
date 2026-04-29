@@ -51,46 +51,48 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- webmaster tools
-- get sitemap details.
-- analytics
-- submit sitemap
-- delete a sitemap.
-- webmaster
-- list all search console sites.
-- get details for a specific sitemap.
-- seo
-- list sitemaps submitted for a site.
-- query search traffic data with filters and dimensions.
-- list sitemaps
-- inspect url
-- search
 - add a site to search console.
-- delete sitemap
-- delete a previously submitted sitemap.
-- remove a site from search console.
-- manage search console sites.
-- add site
-- list all search console sites for the authenticated user.
-- get details for a specific site.
-- get sitemap
-- get site
-- delete site
-- query search analytics data with filters.
-- submit a sitemap.
-- inspect urls for indexing status.
-- get details for a specific search console site.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- query search traffic data.
 - inspect a url for index status and rich results.
-- query search analytics
-- submit a sitemap for crawling.
+- delete site
+- query search traffic data with filters and dimensions.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- inspect urls for indexing status.
+- manage search console sites.
+- submit sitemap
+- webmaster
+- seo
+- search
+- get details for a specific search console site.
+- delete sitemap
+- list all search console sites for the authenticated user.
+- submit a sitemap.
 - search console
-- list sitemaps for a site.
-- google
-- manage sitemaps.
+- list all search console sites.
 - list sites
+- query search analytics
+- manage sitemaps.
+- get site
+- query search analytics data with filters.
+- get details for a specific site.
+- add site
+- list sitemaps
+- google
+- get sitemap
+- submit a sitemap for crawling.
+- get sitemap details.
+- list sitemaps submitted for a site.
+- query search traffic data.
+- list sitemaps for a site.
+- analytics
+- remove a site from search console.
+- inspect url
+- webmaster tools
+- get details for a specific sitemap.
+- delete a sitemap.
+- delete a previously submitted sitemap.
 slug: seo-management
+source_filename: seo-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Search Console SEO Management\"\n  description: \"Unified SEO management workflow combining search analytics, sitemap management, URL inspection, and site management for SEO specialists and webmasters.\"\n  tags:\n    - Google\n    - Search Console\n    - SEO\n    - Analytics\n    - Webmaster\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: search-console\n      location: ./shared/search-console.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: seo-management-api\n      description: \"Unified REST API for SEO management combining search analytics, sitemaps, URL inspection, and site management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          description: \"Manage Search Console sites.\"\n          operations:\n            - method: GET\n\
   \              name: list-sites\n              description: \"List all Search Console sites.\"\n              call: \"search-console.list-sites\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-site\n              description: \"Get details for a specific site.\"\n              call: \"search-console.get-site\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: add-site\n              description: \"Add a site to Search Console.\"\n              call: \"search-console.add-site\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-site\n              description:\
   \ \"Remove a site from Search Console.\"\n              call: \"search-console.delete-site\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search-analytics\n          name: search-analytics\n          description: \"Query search traffic data.\"\n          operations:\n            - method: POST\n              name: query-search-analytics\n              description: \"Query search analytics data with filters.\"\n              call: \"search-console.query-search-analytics\"\n              with:\n                siteUrl: \"rest.siteUrl\"\n                startDate: \"rest.startDate\"\n                endDate: \"rest.endDate\"\n                dimensions: \"rest.dimensions\"\n                type: \"rest.type\"\n                rowLimit: \"rest.rowLimit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\

@@ -23,41 +23,43 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- oracle
-- create an employee record.
-- payroll
-- retrieve positions.
-- get organizations
-- retrieve employees.
-- get positions
-- list payrolls.
-- list organizations.
-- retrieve payroll runs.
-- retrieve payroll definitions.
-- retrieve organizations.
-- payroll management.
-- update employee record.
-- get benefit enrollments
-- get employee by id
-- e-business suite
-- organization management.
 - list employees.
-- human resources
-- get employees
-- business applications
-- get assignments
-- enterprise
-- create employee
+- list payrolls.
+- retrieve positions.
 - get payroll runs
-- retrieve assignments.
-- get payrolls
-- workforce management
-- employee management.
-- erp
-- update employee
+- retrieve payroll runs.
 - get employee by id.
+- organization management.
+- retrieve employees.
+- erp
+- human resources
 - retrieve benefit enrollments.
+- get benefit enrollments
+- get payrolls
+- update employee
+- retrieve organizations.
+- get organizations
+- get employees
+- employee management.
+- get positions
+- update employee record.
+- retrieve payroll definitions.
+- e-business suite
+- create an employee record.
+- enterprise
+- payroll management.
+- workforce management
+- oracle
+- create employee
+- get employee by id
+- payroll
+- list organizations.
+- retrieve assignments.
+- get assignments
+- business applications
 slug: workforce-management
+source_filename: workforce-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Workforce Management\"\n  description: \"Human capital management combining HR, payroll, benefits, and organizational management. Used by HR administrators and payroll managers for employee lifecycle operations.\"\n  tags:\n    - Oracle\n    - Human Resources\n    - Workforce Management\n    - Payroll\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n\ncapability:\n  consumes:\n    - import: oracle-human-resources\n      location: ./shared/human-resources.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: workforce-management-api\n      description: \"Unified REST API for Oracle EBS workforce management.\"\n      resources:\n        - path: /v1/employees\n          name: employees\n          description: \"Employee management.\"\n          operations:\n            - method: GET\n              name: get-employees\n\
   \              description: \"List employees.\"\n              call: \"oracle-human-resources.get-employees\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Organization management.\"\n          operations:\n            - method: GET\n              name: get-organizations\n              description: \"List organizations.\"\n              call: \"oracle-human-resources.get-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payrolls\n          name: payrolls\n          description: \"Payroll management.\"\n          operations:\n            - method: GET\n              name: get-payrolls\n              description: \"List payrolls.\"\n              call: \"oracle-human-resources.get-payrolls\"\n              outputParameters:\n                - type: object\n \
   \                 mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: workforce-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Oracle EBS workforce management.\"\n      tools:\n        - name: get-employees\n          description: \"Retrieve employees.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"oracle-human-resources.get-employees\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-employee\n          description: \"Create an employee record.\"\n          hints:\n            readOnly: false\n          call: \"oracle-human-resources.create-employee\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-employee-by-id\n          description: \"Get employee by ID.\"\n          hints:\n            readOnly: true\n          call: \"oracle-human-resources.get-employee-by-id\"\

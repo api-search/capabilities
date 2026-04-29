@@ -32,71 +32,73 @@ provider_name: Azure Databricks
 provider_slug: azure-databricks
 search_terms:
 - list all jobs
-- get status of a workspace object
-- restart cluster
-- permanently delete a cluster
-- partially update job settings
+- machine learning
+- trigger a one-time job run
 - create a directory in the workspace
-- start a terminated cluster
-- export a notebook or file from the workspace
-- create a new cluster
-- analytics
+- list workspace objects in a directory
+- restart cluster
+- list job runs
+- get details of a specific cluster
+- partially update job settings
+- start cluster
+- azure
+- list node types
+- list workspace objects
+- delete job
+- list jobs
+- manage workspace objects
+- get job details
+- export workspace object
+- get job run output
+- delete a workspace object
+- terminate a running cluster
+- get cluster
+- manage databricks jobs
+- list spark versions
+- create a new job
+- data engineering
+- delete a job
+- cancel a running job
 - run job now
 - import workspace object
-- apache spark
-- list all databricks jobs
-- azure
-- list spark versions
-- import a notebook or file into the workspace
-- databricks
-- delete cluster
-- delete workspace object
-- list node types
-- create job
-- create a new databricks job
-- cancel job run
-- trigger a one-time job run
-- restart a running cluster
-- edit cluster
-- big data
-- get workspace object status
-- terminate cluster
-- list job runs
-- list workspace objects
-- create workspace directory
-- terminate a running cluster
+- create a new cluster
 - list available node types
-- list workspace objects in a directory
-- get job run
-- machine learning
-- data engineering
-- get the output of a completed job run
-- list available spark runtime versions
-- delete job
-- manage databricks clusters
-- delete a workspace object
-- list jobs
-- get job details
-- create a new databricks cluster
-- list clusters
-- create a new job
-- list all clusters
-- manage workspace objects
-- create cluster
-- manage databricks jobs
-- delete a job
-- update job
-- get details of a specific job run
-- cancel a running job
-- get job run output
-- export workspace object
-- get details of a specific cluster
+- databricks
 - list all databricks clusters
-- get cluster
-- get job
+- list all databricks jobs
+- edit cluster
+- create cluster
+- list all clusters
+- list available spark runtime versions
+- import a notebook or file into the workspace
+- update job
+- delete workspace object
+- get job run
+- create job
+- get workspace object status
+- delete cluster
 - edit cluster configuration
-- start cluster
+- analytics
+- create a new databricks job
+- restart a running cluster
+- list clusters
+- create a new databricks cluster
+- start a terminated cluster
+- terminate cluster
+- permanently delete a cluster
+- get job
+- export a notebook or file from the workspace
+- get status of a workspace object
+- get details of a specific job run
+- cancel job run
+- get the output of a completed job run
+- big data
+- apache spark
+- manage databricks clusters
+- create workspace directory
 slug: data-engineering
+source_filename: data-engineering.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Databricks Data Engineering\"\n  description: \"Manage Azure Databricks clusters, jobs, and workspace objects for data engineering workflows. Used by data engineers and platform administrators.\"\n  tags:\n    - Azure\n    - Databricks\n    - Data Engineering\n    - Apache Spark\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATABRICKS_TOKEN: DATABRICKS_TOKEN\n      DATABRICKS_HOST: DATABRICKS_HOST\n\ncapability:\n  consumes:\n    - import: databricks\n      location: ./shared/databricks.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: databricks-engineering-api\n      description: \"Unified REST API for Azure Databricks data engineering.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: \"Manage Databricks clusters\"\n          operations:\n            - method: GET\n              name: list-clusters\n\
   \              description: \"List all clusters\"\n              call: \"databricks.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cluster\n              description: \"Create a new cluster\"\n              call: \"databricks.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Manage Databricks jobs\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List all jobs\"\n              call: \"databricks.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-job\n              description: \"Create a new job\"\n              call: \"databricks.create-job\"\n  \
   \            outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspace\n          name: workspace\n          description: \"Manage workspace objects\"\n          operations:\n            - method: GET\n              name: list-workspace-objects\n              description: \"List workspace objects\"\n              call: \"databricks.list-workspace-objects\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: databricks-engineering-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Databricks data engineering.\"\n      tools:\n        - name: create-cluster\n          description: \"Create a new Databricks cluster\"\n          hints:\n            readOnly: false\n          call: \"databricks.create-cluster\"\n          outputParameters:\n   \

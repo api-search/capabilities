@@ -64,82 +64,84 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- milestones
-- label management
-- updateProject
-- project management
-- listMilestones
-- list cards
-- search issues and pull requests
-- move a project card
-- add labels to an issue
-- list repository issues
-- create milestone
-- project operations
-- list columns
-- list timeline events for an issue
-- create a project column
-- list timeline events
-- milestone management
-- software development
-- create an issue comment
-- create an issue
-- update issue
-- issues
-- search
-- update an issue
-- project column management
-- create issue comment
-- add assignees to an issue
-- get an issue
-- get project
-- create column
-- move card
-- createAnIssue
-- listProjectColumns
-- getProject
-- create card
-- update a project
-- search issues
-- create a milestone
-- create a column
-- getAnIssue
-- issue management
-- lock issue
-- create label
-- create a project card
-- create issue
-- pipelines
-- searchIssuesAndPullRequests
-- add assignees
 - individual issue operations
-- t1
-- list project columns
-- add labels
-- list milestones
-- get issue
-- update project
-- listLabelsForRepository
-- search labels
-- github
-- updateAnIssue
-- projects
 - create a label
-- lock an issue
-- listRepositoryIssues
-- list issue comments
-- list issues
-- list project cards
-- createProjectColumn
+- move card
+- create an issue
 - code
-- platform
-- createLabel
-- source control
-- list labels
+- github
+- milestone management
 - get a project
+- create an issue comment
+- update project
+- create card
+- search
+- create column
+- platform
+- source control
+- create issue comment
+- create a column
+- list issues
+- create a project column
+- search issues
+- lock an issue
+- add labels
+- pipelines
+- listProjectColumns
+- projects
+- createLabel
+- list labels
+- add assignees
+- lock issue
+- search labels
+- get issue
+- list issue comments
+- updateProject
+- milestones
+- update a project
+- project operations
+- create issue
+- getProject
+- update issue
+- software development
+- create milestone
+- issues
+- move a project card
+- listMilestones
+- list project columns
+- get an issue
 - createMilestone
+- updateAnIssue
+- label management
+- list cards
+- t1
+- project column management
+- list repository issues
+- createProjectColumn
+- listRepositoryIssues
+- createAnIssue
+- list columns
+- get project
+- update an issue
+- create label
+- list project cards
+- searchIssuesAndPullRequests
+- create a project card
+- list timeline events
 - issue and pr search
+- issue management
+- listLabelsForRepository
+- add assignees to an issue
+- list timeline events for an issue
+- add labels to an issue
+- list milestones
+- project management
+- getAnIssue
+- search issues and pull requests
+- create a milestone
 slug: project-management
+source_filename: project-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Project Management\"\n  description: \"Unified workflow for project management combining issues, projects, milestones, labels, and search. Used by project managers and team leads for tracking work, organizing sprints, and managing deliverables.\"\n  tags:\n    - GitHub\n    - Project Management\n    - Issues\n    - Projects\n    - Milestones\n    - Search\n  personas:\n    - project managers\n    - team leads\n    - scrum masters\n    - product owners\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-issues\n      location: \"./shared/issues.yaml\"\n    - import: github-projects\n      location: \"./shared/projects.yaml\"\n    - import: github-search\n      location: \"./shared/search.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: github-project-management-api\n   \
   \   description: \"Unified REST API for project management workflows combining issues, projects, and search.\"\n      resources:\n        - path: /v1/repositories/{owner}/{repo}/issues\n          name: issues\n          description: \"Issue management\"\n          operations:\n            - method: GET\n              name: listRepositoryIssues\n              description: \"List issues\"\n              call: \"github-issues.listRepositoryIssues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: createAnIssue\n              description: \"Create an issue\"\n              call: \"github-issues.createAnIssue\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/issues/{issue_number}\n          name: issue\n          description: \"Individual issue operations\"\n          operations:\n           \
   \ - method: GET\n              name: getAnIssue\n              description: \"Get an issue\"\n              call: \"github-issues.getAnIssue\"\n              with:\n                issue_number: \"rest.issue_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: updateAnIssue\n              description: \"Update an issue\"\n              call: \"github-issues.updateAnIssue\"\n              with:\n                issue_number: \"rest.issue_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/milestones\n          name: milestones\n          description: \"Milestone management\"\n          operations:\n            - method: GET\n              name: listMilestones\n              description: \"List milestones\"\n              call: \"github-issues.listMilestones\"\n              outputParameters:\n\

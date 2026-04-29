@@ -22,37 +22,39 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
+- amazon appsync
 - upload a new graphql schema
+- list all graphql apis
 - create function
+- serverless
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- list reusable pipeline functions available for composing complex resolvers.
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- graphql
+- create data source
+- api management
+- create a resolver that maps a graphql field to a data source operation.
+- graphql schema management
 - aws
 - create resolver
-- list reusable pipeline functions available for composing complex resolvers.
-- create a reusable pipeline function for use in pipeline resolvers.
-- graphql
-- list data sources
-- create graphql api
-- list all appsync graphql apis to understand available apis and their configurations.
-- create a new graphql api with the specified authentication type and configuration.
-- list all graphql apis
-- upload a new graphql schema definition to an appsync api.
-- amazon appsync
-- get complete details of a graphql api including authentication configuration and endpoints.
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- graphql api management
 - create a graphql api
-- start schema creation
-- api management
-- list resolvers
-- list functions
-- serverless
-- get graphql api
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
 - list all data sources connected to a graphql api.
-- create data source
-- create a resolver that maps a graphql field to a data source operation.
+- get complete details of a graphql api including authentication configuration and endpoints.
+- list functions
+- upload a new graphql schema definition to an appsync api.
+- get graphql api
+- start schema creation
+- list all appsync graphql apis to understand available apis and their configurations.
+- list data sources
+- graphql api management
+- create a new graphql api with the specified authentication type and configuration.
+- create a reusable pipeline function for use in pipeline resolvers.
+- create graphql api
 - list graphql apis
-- graphql schema management
+- list resolvers
 slug: graphql-api-management
+source_filename: graphql-api-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: GraphQL Api Management Workflow\n  description: Workflow capability for building and managing GraphQL APIs with AppSync including data sources, resolvers, and schema management.\n  tags:\n    - Amazon AppSync\n    - GraphQL\n    - API Management\n    - Serverless\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: appsync\n    from: shared/appsync-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: graphql-mgmt-rest\n      resources:\n        - path: /v1/apis\n          name: graphql-apis\n          description: GraphQL API management\n          operations:\n            - method: GET\n              name: list-graphql-apis\n              description: List all GraphQL APIs\n              call: \"appsync.list-graphql-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n  \
   \            name: create-graphql-api\n              description: Create a GraphQL API\n              call: \"appsync.create-graphql-api\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/schema\n          name: schema\n          description: GraphQL schema management\n          operations:\n            - method: POST\n              name: start-schema-creation\n              description: Upload a new GraphQL schema\n              call: \"appsync.start-schema-creation\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: graphql-mgmt-mcp\n      transport: http\n      tools:\n        - name: list-graphql-apis\n          description: List all AppSync GraphQL APIs to understand available APIs and their configurations.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"appsync.list-graphql-apis\"\
   \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-graphql-api\n          description: Get complete details of a GraphQL API including authentication configuration and endpoints.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"appsync.get-graphql-api\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-graphql-api\n          description: Create a new GraphQL API with the specified authentication type and configuration.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"appsync.create-graphql-api\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-data-sources\n          description: List all data sources connected to a GraphQL API.\n          hints:\n            readOnly: true\n            openWorld: true\n      \

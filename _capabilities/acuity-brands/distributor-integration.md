@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: acuity-brands.json
+  format: json
+  label: acuity-brands
+  slug: acuity-brands
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/acuity-brands/refs/heads/main/openapi/acuity-brands.json
 categories:
 - procurement-supply-chain
 consumed_apis:
@@ -23,43 +30,45 @@ personas: []
 provider_name: acuity-brands
 provider_slug: acuity-brands
 search_terms:
-- b2b distributor ordering, inventory management, and shipment tracking
-- order management
-- get full order status and details including estimated and actual ship dates
-- list recent orders filtered by status or date range
-- get detailed inventory including warehouse locations and estimated ship dates for a specific product
-- order status and tracking
-- get product
-- list inventory
+- get product inventory
+- b2b
 - get full product details including specifications, certifications, list price, and data sheet
-- product inventory availability
-- list inventory with optional filters
 - E Commerce Developer
-- list orders
+- get full order status and details including estimated and actual ship dates
+- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
+- check inventory
+- b2b distributor ordering, inventory management, and shipment tracking
+- get product
+- list inventory with optional filters
+- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
+- distributor
 - check inventory availability for an acuity brands product by product number or brand
 - lighting
-- search the acuity brands product catalog by keyword, brand, or product category
-- inventory
-- Electrical Distributor
-- ERP Integration Developer
-- acuity brands
-- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
-- distributor
-- check inventory
-- search product catalog
-- product catalog search
-- track shipment
-- b2b
-- get product inventory
-- search products
 - list catalog
-- developers building e-commerce sites that display acuity brands product data, pricing, and availability
+- Electrical Distributor
+- track shipment
 - get shipment records for an order including carrier name and pro number for freight tracking
-- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
-- commercial, industrial, and residential lighting products and controls
-- electrical distributors who carry acuity brands products and need real-time inventory and order data
+- acuity brands
+- product catalog search
+- search product catalog
+- search products
+- ERP Integration Developer
+- order status and tracking
+- inventory
 - track order
+- developers building e-commerce sites that display acuity brands product data, pricing, and availability
+- electrical distributors who carry acuity brands products and need real-time inventory and order data
+- commercial, industrial, and residential lighting products and controls
+- list inventory
+- list recent orders filtered by status or date range
+- list orders
+- order management
+- product inventory availability
+- search the acuity brands product catalog by keyword, brand, or product category
+- get detailed inventory including warehouse locations and estimated ship dates for a specific product
 slug: distributor-integration
+source_filename: distributor-integration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Acuity Brands Distributor Integration\"\n  description: \"Workflow for distributor integration with Acuity Brands covering inventory lookup, order status tracking, product catalog search, and shipment tracking. Used by electrical distributors integrating Acuity Brands data into ERP and e-commerce systems.\"\n  tags:\n    - Acuity Brands\n    - Lighting\n    - B2B\n    - Distributor\n    - Inventory\n    - Order Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACUITY_BRANDS_USER_ID: ACUITY_BRANDS_USER_ID\n      ACUITY_BRANDS_API_KEY: ACUITY_BRANDS_API_KEY\n\ncapability:\n  consumes:\n    - import: acuity-brands\n      location: ./shared/acuity-brands.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributor-integration-api\n      description: \"Unified REST API for Acuity Brands distributor integration.\"\n      resources:\n        - path:\
   \ /v1/inventory\n          name: inventory\n          description: \"Product inventory availability\"\n          operations:\n            - method: GET\n              name: list-inventory\n              description: \"List inventory with optional filters\"\n              call: \"acuity-brands.list-inventory\"\n              with:\n                productNumber: \"rest.productNumber\"\n                brand: \"rest.brand\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/orders\n          name: orders\n          description: \"Order status and tracking\"\n          operations:\n            - method: GET\n              name: list-orders\n              description: \"List orders\"\n              call: \"acuity-brands.list-orders\"\n              with:\n                status: \"rest.status\"\n                fromDate: \"rest.fromDate\"\n              outputParameters:\n                - type: object\n                \
   \  mapping: \"$.\"\n        - path: /v1/catalog\n          name: catalog\n          description: \"Product catalog search\"\n          operations:\n            - method: GET\n              name: list-catalog\n              description: \"Search product catalog\"\n              call: \"acuity-brands.list-catalog-items\"\n              with:\n                q: \"rest.q\"\n                brand: \"rest.brand\"\n                category: \"rest.category\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: distributor-integration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Acuity Brands distributor operations.\"\n      tools:\n        - name: check-inventory\n          description: \"Check inventory availability for an Acuity Brands product by product number or brand\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call:\

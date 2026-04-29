@@ -1,4 +1,23 @@
 ---
+api_specs:
+- filename: acronis-account-management-openapi.yaml
+  format: yaml
+  label: acronis-account
+  slug: acronis-account
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/acronis/refs/heads/main/openapi/acronis-account-management-openapi.yaml
+- filename: acronis-agent-management-openapi.yaml
+  format: yaml
+  label: acronis-agents
+  slug: acronis-agents
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/acronis/refs/heads/main/openapi/acronis-agent-management-openapi.yaml
+- filename: acronis-task-manager-openapi.yaml
+  format: yaml
+  label: acronis-tasks
+  slug: acronis-tasks
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/acronis/refs/heads/main/openapi/acronis-task-manager-openapi.yaml
 categories:
 - security
 consumed_apis:
@@ -45,60 +64,62 @@ personas: []
 provider_name: Acronis
 provider_slug: acronis
 search_terms:
-- monitoring
-- acronis
-- list agents
-- get details about a specific acronis backup agent including online status
-- backup task monitoring
-- get agent
-- search acronis platform for tenants and users by name or email
-- backup and recovery task execution tracking
-- list tenant users
-- list acronis tenant hierarchy - companies, partners, and customer accounts
-- cybersecurity
-- Security Analyst
-- search tenants and users
-- list hardware nodes
-- enterprise it admin managing backup agents, policies, and task monitoring
-- search
+- list hardware nodes managed by acronis for a tenant
+- IT Administrator
+- get current usage metrics for an acronis tenant across all services
 - security professional monitoring edr events and threat response
-- protection policy creation and application
-- backup
-- list users in a tenant
-- unified tenant, agent, and task management for msps and it admins
-- tenant user management
-- get details about a specific acronis backup task
+- protection agent management
+- cross-tenant search
+- get agent
+- search
+- msp
+- get usage metrics for a tenant
+- list tenants
+- get tenant usages
+- list backup tasks
+- cybersecurity
+- list tenant users
+- search acronis platform for tenants and users by name or email
+- tenant hierarchy management
 - managed service provider admin managing multiple customer tenants, licensing, and usage
+- backup and recovery task execution tracking
+- backup agent deployment and management across endpoints
+- enterprise it admin managing backup agents, policies, and task monitoring
+- list acronis protection agents registered for a tenant
+- list tasks
+- list users in a tenant
+- list acronis tenant hierarchy - companies, partners, and customer accounts
+- Security Analyst
+- backup task monitoring
+- monitoring
+- endpoint management
+- protection policy creation and application
+- tenant user management
 - multi-tier tenant hierarchy and licensing management
 - account management
-- IT Administrator
-- cross-tenant search
-- endpoint management
-- get details about a specific acronis tenant
-- get tenant details
-- tenant usage monitoring
-- list backup tasks
+- acronis
+- list agents
 - list users in an acronis tenant
-- get task
+- get tenant details
 - data protection
-- individual tenant operations
-- get usage metrics for a tenant
-- list acronis protection agents registered for a tenant
-- tenant hierarchy management
+- get details about a specific acronis backup task
+- get details about a specific acronis tenant
 - get tenant
-- get tenant usages
-- backup agent deployment and management across endpoints
-- msp
+- backup
+- unified tenant, agent, and task management for msps and it admins
 - list acronis backup tasks with filtering by state, result, policy, and resource
-- list tenants
-- create tenant
-- list tasks
-- get current usage metrics for an acronis tenant across all services
-- protection agent management
-- list agents for a tenant
-- list hardware nodes managed by acronis for a tenant
+- tenant usage monitoring
 - MSP Administrator
+- get task
+- create tenant
+- list hardware nodes
+- get details about a specific acronis backup agent including online status
+- search tenants and users
+- individual tenant operations
+- list agents for a tenant
 slug: cyber-protection-operations
+source_filename: cyber-protection-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Acronis Cyber Protection Operations\n  description: >-\n    Unified workflow for managing Acronis Cyber Protect Cloud operations including tenant administration,\n    agent monitoring, backup task tracking, and usage reporting. Used by MSPs, IT administrators, and\n    security teams to automate Acronis cyber protection platform management.\n  tags:\n    - Acronis\n    - Account Management\n    - Backup\n    - Cybersecurity\n    - Monitoring\n    - MSP\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACRONIS_ACCESS_TOKEN: ACRONIS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: acronis-account\n      location: ./shared/acronis-account-management.yaml\n    - import: acronis-agents\n      location: ./shared/acronis-agent-management.yaml\n    - import: acronis-tasks\n      location: ./shared/acronis-task-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n    \
   \  namespace: acronis-cyber-protection-api\n      description: Unified REST API for Acronis Cyber Protect Cloud platform management.\n      resources:\n        - path: /v1/tenants\n          name: tenants\n          description: Tenant hierarchy management\n          operations:\n            - method: GET\n              name: list-tenants\n              description: List tenants\n              call: \"acronis-account.list-tenants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-tenant\n              description: Create tenant\n              call: \"acronis-account.create-tenant\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tenants/{tenant_id}\n          name: tenant\n          description: Individual tenant operations\n          operations:\n            - method: GET\n              name: get-tenant\n  \
   \            description: Get tenant details\n              call: \"acronis-account.get-tenant\"\n              with:\n                tenant_id: \"rest.tenant_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tenants/{tenant_id}/users\n          name: tenant-users\n          description: Tenant user management\n          operations:\n            - method: GET\n              name: list-tenant-users\n              description: List users in a tenant\n              call: \"acronis-account.list-tenant-users\"\n              with:\n                tenant_id: \"rest.tenant_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tenants/{tenant_id}/usages\n          name: tenant-usages\n          description: Tenant usage monitoring\n          operations:\n            - method: GET\n              name: get-tenant-usages\n              description:\

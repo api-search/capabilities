@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: activecampaign-v3.json
+  format: json
+  label: activecampaign-v3
+  slug: activecampaign-v3
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/activecampaign/refs/heads/main/openapi/activecampaign-v3.json
 categories:
 - customer-engagement
 consumed_apis:
@@ -39,59 +46,61 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- manage sales pipeline, deals, accounts, and tasks
-- create a new contact list
+- list automations
+- orchestrate contact journeys, campaigns, automations, and list management
+- list all email campaigns in activecampaign
+- list campaigns
+- sync contact
+- marketing automation
+- Growth Engineer
+- create contact
+- sales automation
+- builds integrations, automation workflows, and uses the api directly
+- cross-channel contact engagement and personalization
+- list all contact tags in activecampaign
+- marketing automation workflows
+- list and search contacts
+- email campaign management
+- list contact lists
+- tracks deals, manages accounts, and uses crm features
 - crm
 - create tag
-- marketing automation workflows
-- list all contact tags in activecampaign
-- crm, pipeline management, and revenue operations
-- email campaign management
-- cross-channel contact engagement and personalization
-- email, sms, and multi-channel marketing automation
-- contact tag management
-- contact lifecycle management
-- list all email campaigns in activecampaign
-- list all campaigns
-- create contact
 - create a new contact
-- manages email campaigns, automations, and contact segmentation
-- activecampaign
-- contacts
-- create a new contact in activecampaign
-- list all marketing automations in activecampaign
-- sync contact
-- list contact lists
-- campaigns
-- orchestrate contact journeys, campaigns, automations, and list management
-- Revenue Operations
-- list tags
-- list automations
-- email marketing
-- Account Manager
-- customer experience
-- Marketing Manager
-- list contacts
-- Growth Engineer
-- list all contact lists in activecampaign
-- sales automation
-- list all automations
 - create a new contact tag in activecampaign
-- sync a contact's data to activecampaign, creating or updating as needed
-- builds integrations, automation workflows, and uses the api directly
-- list all tags
-- list and search activecampaign contacts by email, name, or other criteria
-- Email Marketer
-- list campaigns
-- tracks deals, manages accounts, and uses crm features
-- list and search contacts
 - Sales Representative
-- marketing automation
-- contact list management
-- list all contact lists
+- contact lifecycle management
+- crm, pipeline management, and revenue operations
+- list all tags
+- list all automations
+- list all marketing automations in activecampaign
 - list lists
+- Account Manager
+- activecampaign
+- list all contact lists
+- manage sales pipeline, deals, accounts, and tasks
+- sync a contact's data to activecampaign, creating or updating as needed
+- campaigns
+- Email Marketer
+- email marketing
+- list and search activecampaign contacts by email, name, or other criteria
+- manages email campaigns, automations, and contact segmentation
+- list tags
+- Marketing Manager
 - create list
+- list contacts
+- contact list management
+- create a new contact list
+- contact tag management
+- create a new contact in activecampaign
+- Revenue Operations
+- email, sms, and multi-channel marketing automation
+- customer experience
+- list all contact lists in activecampaign
+- contacts
+- list all campaigns
 slug: marketing-automation
+source_filename: marketing-automation.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ActiveCampaign Marketing Automation\"\n  description: \"Unified workflow capability for marketing automation, contact management, campaign execution, and list segmentation. Used by marketing teams and growth engineers to orchestrate multi-channel customer journeys.\"\n  tags:\n    - ActiveCampaign\n    - Marketing Automation\n    - Email Marketing\n    - Contacts\n    - Campaigns\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVECAMPAIGN_API_TOKEN: ACTIVECAMPAIGN_API_TOKEN\n      ACTIVECAMPAIGN_API_URL: ACTIVECAMPAIGN_API_URL\n\ncapability:\n  consumes:\n    - import: activecampaign-v3\n      location: ./shared/activecampaign-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: marketing-automation-api\n      description: \"Unified REST API for marketing automation workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n\
   \          description: \"Contact lifecycle management\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List and search contacts\"\n              call: \"activecampaign-v3.list-contacts\"\n              with:\n                email: \"rest.email\"\n                limit: \"rest.limit\"\n                offset: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-contact\n              description: \"Create a new contact\"\n              call: \"activecampaign-v3.create-contact\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Email campaign management\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"\
   List all campaigns\"\n              call: \"activecampaign-v3.list-campaigns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/automations\n          name: automations\n          description: \"Marketing automation workflows\"\n          operations:\n            - method: GET\n              name: list-automations\n              description: \"List all automations\"\n              call: \"activecampaign-v3.list-automations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists\n          name: lists\n          description: \"Contact list management\"\n          operations:\n            - method: GET\n              name: list-lists\n              description: \"List all contact lists\"\n              call: \"activecampaign-v3.list-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    \

@@ -37,59 +37,61 @@ personas: []
 provider_name: Amazon
 provider_slug: amazon
 search_terms:
-- request an advertising performance report.
-- create a new amazon pay checkout session for payment processing.
-- amazon
-- advertising campaign management.
-- list advertising campaigns.
-- advertising list campaigns
-- advertising create campaign
-- unified workflow for amazon sellers, advertisers, and merchants covering marketplace listings, orders, advertising campaigns, and payment processing.
-- processes payments and refunds via amazon pay.
-- marketplace
-- Amazon Seller
-- Merchant
-- creates and optimizes amazon advertising campaigns.
-- create or update a product listing on amazon.
-- product catalog search.
-- campaign management and performance reporting
-- pay create checkout session
-- process a payment refund.
-- process a refund for an amazon pay charge.
-- search amazon product catalog.
-- search the amazon product catalog by keywords.
-- product listings, catalog, and order management
-- create checkout session
-- create a new amazon advertising campaign.
-- get marketplace orders.
-- marketplace order management.
 - advertising request report
-- pay create refund
-- get orders
-- pay create charge
-- Advertiser
-- manages product listings, orders, and inventory on amazon marketplace.
-- advertising
-- selling partner put listing
-- payments
-- list amazon advertising campaigns across all campaign types.
-- search catalog
-- create a checkout session.
-- amazon pay checkout sessions.
-- create an advertising campaign.
-- create a payment charge via amazon pay.
-- list campaigns
-- e-commerce
-- payment refund processing.
-- get amazon marketplace orders with filters by marketplace and date range.
-- selling partner search catalog
-- create campaign
-- voice
-- checkout session and payment processing
-- selling partner get orders
 - alexa
+- e-commerce
+- list campaigns
+- Amazon Seller
+- product catalog search.
+- advertising
+- list advertising campaigns.
+- create a payment charge via amazon pay.
+- processes payments and refunds via amazon pay.
+- pay create refund
+- create checkout session
+- advertising create campaign
 - create refund
+- request an advertising performance report.
+- selling partner search catalog
+- checkout session and payment processing
+- manages product listings, orders, and inventory on amazon marketplace.
+- marketplace order management.
+- Advertiser
+- create or update a product listing on amazon.
+- voice
+- campaign management and performance reporting
+- create a checkout session.
+- get orders
+- create an advertising campaign.
+- payment refund processing.
+- amazon
+- pay create checkout session
+- create campaign
+- selling partner put listing
+- get marketplace orders.
+- unified workflow for amazon sellers, advertisers, and merchants covering marketplace listings, orders, advertising campaigns, and payment processing.
+- process a payment refund.
+- Merchant
+- marketplace
+- process a refund for an amazon pay charge.
+- creates and optimizes amazon advertising campaigns.
+- create a new amazon pay checkout session for payment processing.
+- selling partner get orders
+- product listings, catalog, and order management
+- search catalog
+- advertising campaign management.
+- pay create charge
+- list amazon advertising campaigns across all campaign types.
+- amazon pay checkout sessions.
+- create a new amazon advertising campaign.
+- get amazon marketplace orders with filters by marketplace and date range.
+- advertising list campaigns
+- search the amazon product catalog by keywords.
+- payments
+- search amazon product catalog.
 slug: amazon-seller-and-commerce
+source_filename: amazon-seller-and-commerce.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Seller and Commerce Workflow\"\n  description: >-\n    Unified workflow for Amazon sellers, advertisers, and merchants to manage\n    marketplace listings and orders, run advertising campaigns, and process\n    payments using Amazon Selling Partner API, Amazon Advertising API, and\n    Amazon Pay API.\n  tags:\n    - Amazon\n    - E-Commerce\n    - Marketplace\n    - Advertising\n    - Payments\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      SP_API_ACCESS_TOKEN: SP_API_ACCESS_TOKEN\n      SP_API_REGION: SP_API_REGION\n      AMAZON_ADS_ACCESS_TOKEN: AMAZON_ADS_ACCESS_TOKEN\n      AMAZON_ADS_CLIENT_ID: AMAZON_ADS_CLIENT_ID\n      AMAZON_PAY_PUBLIC_KEY_ID: AMAZON_PAY_PUBLIC_KEY_ID\n      AMAZON_PAY_PRIVATE_KEY: AMAZON_PAY_PRIVATE_KEY\n      AMAZON_PAY_MERCHANT_ID: AMAZON_PAY_MERCHANT_ID\n\ncapability:\n  consumes:\n    - import: selling-partner\n      location: ./shared/selling-partner-api.yaml\n\
   \    - import: advertising\n      location: ./shared/advertising-api.yaml\n    - import: pay\n      location: ./shared/pay-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: amazon-commerce-api\n      description: \"Unified REST API for Amazon seller, advertising, and payment operations.\"\n      resources:\n        - path: /v1/orders\n          name: orders\n          description: \"Marketplace order management.\"\n          operations:\n            - method: GET\n              name: get-orders\n              description: \"Get marketplace orders.\"\n              call: \"selling-partner.get-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/catalog\n          name: catalog\n          description: \"Product catalog search.\"\n          operations:\n            - method: GET\n              name: search-catalog\n              description: \"Search Amazon product catalog.\"\n        \
   \      call: \"selling-partner.search-catalog-items\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/campaigns\n          name: campaigns\n          description: \"Advertising campaign management.\"\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: \"List advertising campaigns.\"\n              call: \"advertising.list-campaigns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: \"Create an advertising campaign.\"\n              call: \"advertising.create-campaign\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/checkout-sessions\n          name: checkout-sessions\n          description: \"Amazon Pay checkout sessions.\"\n          operations:\n\

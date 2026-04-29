@@ -9,13 +9,15 @@ personas: []
 provider_name: Amazon WAF
 provider_slug: amazon-waf
 search_terms:
-- web application firewall
 - ddos protection
 - bot management
-- aws
-- security
 - waf
+- web application firewall
+- security
+- aws
 slug: amazon-waf-capability
+source_filename: amazon-waf-capability.yaml
+source_heading: Capability Spec
 source_yaml: 'id: amazon-waf-capability
 
   name: Amazon WAF Capability

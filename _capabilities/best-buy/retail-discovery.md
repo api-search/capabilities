@@ -41,56 +41,58 @@ provider_name: Best Buy
 provider_slug: best-buy
 search_terms:
 - product search, filtering, and attribute retrieval
-- best buy
-- stores
-- get a specific best buy product by sku
-- consumer electronics
-- get also viewed
-- find best buy stores near a location using postal code or gps coordinates
-- store location, hours, and services
-- get products frequently viewed alongside this sku
-- Partner
-- list stores
-- search the best buy product catalog by keyword, price range, or product attributes
-- get the top trending best buy products by category or across the entire catalog
-- search and filter best buy products with keyword search and attribute filtering
-- get trending best buy products
-- get also viewed products
-- product search, store lookup, and recommendations
-- authorized best buy commerce partner building shopping experiences
-- get product
-- get also bought
-- get the most viewed best buy products in the last 48 hours
-- get products frequently purchased with this sku
-- get products frequently purchased together with a specific sku for bundle recommendations
-- search and browse the best buy product catalog
-- get also bought products
-- get store details including hours and services
-- get store
-- find stores
-- retail
-- get detailed product information by sku
-- get hours, services, and contact information for a specific best buy store
-- get most viewed products
-- developer building retail integrations and shopping applications
-- recommendations
-- get a specific best buy store
-- find best buy stores near a location
-- get trending products
-- get also-bought product recommendations
-- Developer
-- search products
-- find best buy stores with proximity search
 - e-commerce
-- products
-- get also-viewed product recommendations
+- get detailed product information by sku
+- get also bought products
+- product search, store lookup, and recommendations
+- retail
+- recommendations
+- search and browse the best buy product catalog
 - get detailed product information for a specific best buy sku including price, availability, and specs
+- get product
+- find best buy stores with proximity search
+- get most viewed products
+- get the top trending best buy products by category or across the entire catalog
+- list stores
+- get a specific best buy product by sku
+- get hours, services, and contact information for a specific best buy store
+- best buy
+- Partner
+- get products frequently viewed alongside this sku
 - behavioral recommendations and trending data
-- get trending
-- list products
-- get products frequently viewed alongside a specific sku for cross-sell discovery
+- Developer
+- find stores
+- search the best buy product catalog by keyword, price range, or product attributes
+- get also viewed products
+- get trending products
+- consumer electronics
 - get top trending products by view velocity
+- search products
+- get a specific best buy store
+- get the most viewed best buy products in the last 48 hours
+- stores
+- developer building retail integrations and shopping applications
+- store location, hours, and services
+- get products frequently viewed alongside a specific sku for cross-sell discovery
+- get trending best buy products
+- get store
+- get also bought
+- get products frequently purchased together with a specific sku for bundle recommendations
+- get also-viewed product recommendations
+- authorized best buy commerce partner building shopping experiences
+- search and filter best buy products with keyword search and attribute filtering
+- find best buy stores near a location using postal code or gps coordinates
+- get trending
+- get also viewed
+- products
+- get products frequently purchased with this sku
+- list products
+- find best buy stores near a location
+- get store details including hours and services
+- get also-bought product recommendations
 slug: retail-discovery
+source_filename: retail-discovery.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Best Buy Retail Discovery\"\n  description: >-\n    Unified retail discovery workflow combining product search, store locator, and\n    personalized recommendations. Designed for developers and partners building\n    retail integrations, shopping apps, and e-commerce experiences. Combines the\n    Products, Stores, and Recommendations APIs into a cohesive consumer-facing\n    workflow for product discovery, inventory lookup, and personalized suggestions.\n  tags:\n    - Best Buy\n    - Retail\n    - Products\n    - Stores\n    - Recommendations\n    - E-Commerce\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BEST_BUY_API_KEY: BEST_BUY_API_KEY\n\ncapability:\n  consumes:\n    - import: best-buy-products\n      location: ./shared/products-api.yaml\n    - import: best-buy-stores\n      location: ./shared/stores-api.yaml\n    - import: best-buy-recommendations\n      location:\
   \ ./shared/recommendations-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: retail-discovery-api\n      description: \"Unified REST API for Best Buy retail product discovery and store lookup.\"\n      resources:\n        - path: /v1/products\n          name: products\n          description: \"Search and browse the Best Buy product catalog\"\n          operations:\n            - method: GET\n              name: list-products\n              description: \"Search and filter Best Buy products with keyword search and attribute filtering\"\n              call: \"best-buy-products.list-products\"\n              with:\n                search: \"rest.search\"\n                pageSize: \"rest.pageSize\"\n                page: \"rest.page\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products/{sku}\n          name: product\n          description: \"Get a specific\
   \ Best Buy product by SKU\"\n          operations:\n            - method: GET\n              name: get-product\n              description: \"Get detailed product information by SKU\"\n              call: \"best-buy-products.get-product-by-sku\"\n              with:\n                sku: \"rest.sku\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stores\n          name: stores\n          description: \"Find Best Buy stores near a location\"\n          operations:\n            - method: GET\n              name: list-stores\n              description: \"Find Best Buy stores with proximity search\"\n              call: \"best-buy-stores.list-stores\"\n              with:\n                area: \"rest.area\"\n                pageSize: \"rest.pageSize\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stores/{storeId}\n          name: store\n     \

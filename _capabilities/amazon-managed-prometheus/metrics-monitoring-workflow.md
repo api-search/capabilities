@@ -23,34 +23,36 @@ personas: []
 provider_name: Amazon Managed Service for Prometheus
 provider_slug: amazon-managed-prometheus
 search_terms:
-- monitoring
-- alerting
-- aws
-- amazon
-- DevOps Engineer
-- prometheus workspaces
-- create prometheus recording and alerting rules namespace
-- list rule groups
-- create workspace
-- create a workspace
-- configure alert manager
-- create prometheus workspace
-- create alert manager
+- create recording rules
+- list workspaces
+- list prometheus workspaces
 - containers
 - create a new prometheus workspace for storing container metrics
-- list all prometheus workspaces
-- SRE
 - prometheus
-- observability
-- alert manager configuration
-- describe prometheus workspace
-- list workspaces
-- get workspace details and prometheus remote write endpoint url
-- configure alert manager for prometheus alerting notifications
-- list prometheus workspaces
 - list all prometheus rule group namespaces
-- create recording rules
+- configure alert manager
+- alerting
+- configure alert manager for prometheus alerting notifications
+- aws
+- monitoring
+- amazon
+- DevOps Engineer
+- SRE
+- observability
+- create prometheus workspace
+- get workspace details and prometheus remote write endpoint url
+- list rule groups
+- prometheus workspaces
+- create a workspace
+- create workspace
+- create alert manager
+- alert manager configuration
+- create prometheus recording and alerting rules namespace
+- describe prometheus workspace
+- list all prometheus workspaces
 slug: metrics-monitoring-workflow
+source_filename: metrics-monitoring-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Amazon Managed Service for Prometheus - Metrics Monitoring Workflow\"\n  description: \"Workflow capability for DevOps and SRE teams to manage Prometheus workspaces, configure alerting, and define recording rules for container metrics monitoring.\"\n  tags:\n    - Amazon\n    - Prometheus\n    - Monitoring\n    - Observability\n    - Containers\n    - Alerting\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: managed-prometheus\n      location: ./shared/managed-prometheus.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: prometheus-monitoring-api\n      description: \"Unified REST API for Prometheus metrics monitoring workflows.\"\n      resources:\n        - path: /v1/workspaces\n          name: workspaces\n\
   \          description: \"Prometheus workspaces\"\n          operations:\n            - method: GET\n              name: list-workspaces\n              description: \"List workspaces\"\n              call: \"managed-prometheus.list-workspaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-workspace\n              description: \"Create a workspace\"\n              call: \"managed-prometheus.create-workspace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces/{id}/alert-manager\n          name: alert-manager\n          description: \"Alert manager configuration\"\n          operations:\n            - method: POST\n              name: create-alert-manager\n              description: \"Create alert manager\"\n              call: \"managed-prometheus.create-alert-manager-definition\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: prometheus-monitoring-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Prometheus metrics monitoring.\"\n      tools:\n        - name: list-prometheus-workspaces\n          description: \"List all Prometheus workspaces\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"managed-prometheus.list-workspaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-prometheus-workspace\n          description: \"Create a new Prometheus workspace for storing container metrics\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"managed-prometheus.create-workspace\"\n          outputParameters:\n            - type: object\n              mapping:\

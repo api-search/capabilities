@@ -10,24 +10,26 @@ personas: []
 provider_name: Amazon Kinesis Data Firehose
 provider_slug: amazon-kinesis-firehose
 search_terms:
-- aws
-- data delivery
+- describes the specified delivery stream.
+- manages resources and configurations
 - lists your delivery streams in alphabetical order of their names.
+- integrates api into applications
+- Developer
+- Administrator
+- data delivery
+- workflow
+- amazon kinesis data firehose
+- unified workflow for amazon kinesis data firehose resource management
 - streaming
+- delivery streams describe delivery stream
 - delivery streams create delivery stream
 - creates a kinesis data firehose delivery stream.
-- manages resources and configurations
-- Administrator
-- analytics
-- workflow
 - delivery streams list delivery streams
-- delivery streams describe delivery stream
-- Developer
-- integrates api into applications
-- amazon kinesis data firehose
-- describes the specified delivery stream.
-- unified workflow for amazon kinesis data firehose resource management
+- aws
+- analytics
 slug: amazon-kinesis-firehose-workflow
+source_filename: amazon-kinesis-firehose-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Data Firehose Workflow\n  description: Unified workflow capability for Amazon Kinesis Data Firehose combining resource management and operations.\n  tags:\n  - Amazon Kinesis Data Firehose\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: kinesis-firehose\n    location: ./shared/kinesis-firehose.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kinesis-firehose-api\n    description: REST API for Amazon Kinesis Data Firehose workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: kinesis-firehose-mcp\n    transport: http\n    description: MCP server for Amazon Kinesis Data Firehose.\n    tools:\n    - name: delivery-streams-create-delivery-stream\n      description: Creates a Kinesis Data Firehose delivery\
   \ stream.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: kinesis-firehose.createdeliverystream\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delivery-streams-list-delivery-streams\n      description: Lists your delivery streams in alphabetical order of their names.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-firehose.listdeliverystreams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delivery-streams-describe-delivery-stream\n      description: Describes the specified delivery stream.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: kinesis-firehose.describedeliverystream\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kinesis-firehose/refs/heads/main/capabilities/amazon-kinesis-firehose-workflow.yaml

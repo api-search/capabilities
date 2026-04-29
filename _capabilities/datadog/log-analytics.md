@@ -44,52 +44,54 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- logs
-- monitoring
+- visualizations
+- compute aggregations over log events
+- searchLogs
+- log analytics
+- search events
+- send log entries to datadog
+- get a specific event
+- search
+- platform
+- list events
 - search log events
+- list configured log indexes
 - post an event
+- get log index
+- searchEvents
+- search log events with query language
 - listLogIndexes
+- event correlation
+- aggregate log data
+- logs
+- log indexes
+- create event
+- individual log index
+- get event
+- search events alongside log analysis
+- createEvent
+- monitoring
 - post an event to correlate with log data
+- submit logs
+- aggregate logs
+- aggregateLogs
+- get a specific log index configuration
+- listEvents
+- t1
+- list log indexes
 - analytics
 - datadog
 - search logs
-- createEvent
-- compute aggregations over log events
-- log analytics
-- submit logs
-- searchLogs
-- search events alongside log analysis
-- search
-- visualizations
-- list events
-- get a log index
-- get event
-- getLogIndex
-- send log entries to datadog
-- create event
-- get a specific log index configuration
-- search log events with query language
-- send log entries
-- events
-- t1
 - submitLogs
-- search events
+- events
+- send log entries
 - list events for correlation with logs
-- log indexes
-- individual log index
-- get log index
-- aggregateLogs
-- searchEvents
 - dashboards
-- event correlation
-- listEvents
-- platform
-- aggregate logs
-- list log indexes
-- list configured log indexes
-- aggregate log data
-- get a specific event
+- getLogIndex
+- get a log index
 slug: log-analytics
+source_filename: log-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Datadog Log Analytics\"\n  description: \"Unified workflow for log analytics combining logs and events. Used by platform engineers and developers for submitting, searching, and aggregating logs alongside event correlation.\"\n  tags:\n    - Datadog\n    - Log Analytics\n    - Logs\n    - Events\n    - Search\n  personas:\n    - Platform Engineer\n    - Developer\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATADOG_API_KEY: DATADOG_API_KEY\n      DATADOG_APP_KEY: DATADOG_APP_KEY\n\ncapability:\n  consumes:\n    - import: dd-logs\n      location: \"./shared/logs.yaml\"\n    - import: dd-events\n      location: \"./shared/events.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: dd-log-analytics-api\n      description: \"Unified REST API for log analytics workflows combining logs and events.\"\n      resources:\n        - path: /v1/logs\n          name:\
   \ logs\n          description: \"Submit logs\"\n          operations:\n            - method: POST\n              name: submitLogs\n              description: \"Send log entries\"\n              call: \"dd-logs.submitLogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/search\n          name: logs-search\n          description: \"Search logs\"\n          operations:\n            - method: POST\n              name: searchLogs\n              description: \"Search log events\"\n              call: \"dd-logs.searchLogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/aggregate\n          name: logs-aggregate\n          description: \"Aggregate logs\"\n          operations:\n            - method: POST\n              name: aggregateLogs\n              description: \"Aggregate log data\"\n              call: \"dd-logs.aggregateLogs\"\n \
   \             outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/indexes\n          name: log-indexes\n          description: \"Log indexes\"\n          operations:\n            - method: GET\n              name: listLogIndexes\n              description: \"List log indexes\"\n              call: \"dd-logs.listLogIndexes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs/indexes/{name}\n          name: log-index\n          description: \"Individual log index\"\n          operations:\n            - method: GET\n              name: getLogIndex\n              description: \"Get a log index\"\n              call: \"dd-logs.getLogIndex\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Event correlation\"\n          operations:\n\

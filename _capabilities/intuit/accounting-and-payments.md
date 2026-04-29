@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: quickbooks-accounting.yml
+  format: yaml
+  label: quickbooks-accounting
+  slug: quickbooks-accounting
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/intuit/refs/heads/main/openapi/quickbooks-accounting.yml
 categories:
 - payments
 consumed_apis:
@@ -59,80 +66,82 @@ personas: []
 provider_name: Intuit
 provider_slug: intuit
 search_terms:
-- send an invoice via email.
 - single item operations.
-- read invoice
-- project management
-- retrieve a customer by id.
-- small business
-- create a new product or service item.
-- payroll
-- create invoice
-- send a quickbooks invoice via email.
-- tax
-- tax preparation
-- retrieve a payment by id.
-- retrieve an invoice by id.
-- customer management.
-- create item
-- entity query endpoint.
-- query quickbooks entities using sql-like syntax.
-- retrieve a quickbooks customer by id.
-- record a customer payment in quickbooks.
-- query entities
-- retrieve a quickbooks payment by id.
-- update an existing quickbooks payment.
-- update invoice
-- financial services
-- single customer operations.
-- void payment
-- update payment
-- time tracking
-- query quickbooks entities.
-- create a new customer in quickbooks.
-- read payment
-- void a quickbooks payment.
-- send invoice
-- get pdf of a quickbooks invoice.
-- product and service catalog.
-- update customer
-- retrieve invoice as pdf.
-- intuit
-- retrieve a quickbooks invoice by id.
-- create a new item.
-- void an existing invoice.
-- email an invoice to the customer.
-- read item
-- payment management.
-- update an existing quickbooks invoice.
-- taxes
-- financial
-- single invoice operations.
-- accounting
-- create a new quickbooks invoice.
-- update item
-- record a new payment.
-- create a new customer.
-- payments
-- create customer
-- update a quickbooks customer record.
-- create a new invoice.
-- retrieve an item by id.
-- single payment operations.
-- invoice lifecycle management.
-- custom fields
-- void an invoice.
-- get invoice pdf
 - retrieve a quickbooks item by id.
+- read payment
+- create a new item.
+- query quickbooks entities using sql-like syntax.
 - update an existing quickbooks item.
-- void a quickbooks invoice.
-- void invoice
 - sales tax
-- invoicing
+- create a new customer in quickbooks.
+- single invoice operations.
+- retrieve an invoice by id.
+- entity query endpoint.
+- update item
+- retrieve a quickbooks invoice by id.
+- project management
+- taxes
+- create customer
+- create a new customer.
+- retrieve a payment by id.
+- update customer
+- send an invoice via email.
+- time tracking
+- update an existing quickbooks invoice.
+- record a customer payment in quickbooks.
+- retrieve an item by id.
+- retrieve a quickbooks customer by id.
+- email an invoice to the customer.
+- payment management.
+- read item
+- void an invoice.
+- financial services
+- void a quickbooks invoice.
+- small business
+- query quickbooks entities.
+- get pdf of a quickbooks invoice.
+- record a new payment.
+- create a new product or service item.
+- void invoice
+- customer management.
+- retrieve invoice as pdf.
+- custom fields
 - get invoice pdf.
-- read customer
+- update invoice
+- query entities
+- send a quickbooks invoice via email.
+- single payment operations.
+- tax preparation
+- update an existing quickbooks payment.
+- update a quickbooks customer record.
+- void payment
 - create payment
+- single customer operations.
+- get invoice pdf
+- tax
+- read customer
+- read invoice
+- void an existing invoice.
+- intuit
+- financial
+- create a new quickbooks invoice.
+- accounting
+- create item
+- create invoice
+- invoicing
+- retrieve a customer by id.
+- void a quickbooks payment.
+- payroll
+- product and service catalog.
+- retrieve a quickbooks payment by id.
+- send invoice
+- create a new invoice.
+- invoice lifecycle management.
+- update payment
+- payments
 slug: accounting-and-payments
+source_filename: accounting-and-payments.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Intuit Accounting and Payments\"\n  description: \"Unified workflow for small business accounting automation combining QuickBooks Online invoice, customer, item, and payment management. Used by accountants, bookkeepers, and business owners to automate financial workflows.\"\n  tags:\n    - Intuit\n    - Accounting\n    - Invoicing\n    - Payments\n    - Small Business\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INTUIT_OAUTH_ACCESS_TOKEN: INTUIT_OAUTH_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: quickbooks-accounting\n      location: ./shared/quickbooks-accounting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: intuit-accounting-api\n      description: \"Unified REST API for Intuit QuickBooks accounting and payment operations.\"\n      resources:\n        - path: /v1/invoices\n          name: invoices\n          description: \"Invoice\
   \ lifecycle management.\"\n          operations:\n            - method: POST\n              name: create-invoice\n              description: \"Create a new invoice.\"\n              call: \"quickbooks-accounting.create-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}\n          name: invoice-detail\n          description: \"Single invoice operations.\"\n          operations:\n            - method: GET\n              name: read-invoice\n              description: \"Retrieve an invoice by ID.\"\n              call: \"quickbooks-accounting.read-invoice\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/send\n          name: invoice-send\n          description: \"Send an invoice via email.\"\n          operations:\n            - method:\
   \ POST\n              name: send-invoice\n              description: \"Email an invoice to the customer.\"\n              call: \"quickbooks-accounting.send-invoice\"\n              with:\n                invoiceId: \"rest.invoiceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/void\n          name: invoice-void\n          description: \"Void an invoice.\"\n          operations:\n            - method: POST\n              name: void-invoice\n              description: \"Void an existing invoice.\"\n              call: \"quickbooks-accounting.void-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices/{invoiceId}/pdf\n          name: invoice-pdf\n          description: \"Get invoice PDF.\"\n          operations:\n            - method: GET\n              name: get-invoice-pdf\n              description: \"Retrieve\

@@ -35,58 +35,60 @@ personas: []
 provider_name: Ariba Sourcing
 provider_slug: ariba-sourcing
 search_terms:
-- supplier management projects requiring external approval.
-- list changed approval tasks.
-- external approval workflow for sourcing projects, contracts, and supplier management
-- list approval changes
-- submit approve or deny action.
-- approve task
-- list pending sap ariba sourcing approval tasks awaiting action.
-- approvable documents.
-- supplier management
-- get details about an sap ariba approvable sourcing document, rfx event, or contract workspace.
-- approve an sap ariba sourcing approval task on behalf of an authorized approver.
-- Sourcing Manager
-- reviews and approves or denies sourcing documents, events, and contracts.
-- pending approval tasks.
-- get details for a specific sap ariba sourcing approval task including approvers.
-- deny an sap ariba sourcing approval task on behalf of an authorized approver.
-- approvals
-- list pending approval tasks.
-- Procurement Approver
-- supply chain
-- list group members.
-- list approval group members
-- contracts
-- ariba
-- list sap ariba sourcing approval tasks that have recently changed state.
-- rfx events, auctions, and sourcing projects requiring approval.
-- approval task details.
-- sap
-- list members
-- sourcing
-- list pending
-- list changes
-- get task
-- approval task state changes.
-- get task details
-- submit action
-- get sourcing document
-- deny task
-- contract workspaces and contract content requiring approval.
-- manages strategic sourcing events, rfx processes, and contract workflows.
-- procurement
-- auctions
 - b2b
+- list changed approval tasks.
+- approval group members.
 - get approvable document details.
+- approve task
+- approval task state changes.
 - get document
-- rfx
+- rfx events, auctions, and sourcing projects requiring approval.
+- supplier management
+- list changes
+- list group members.
+- list pending approvals
 - list members of an sap ariba approval group to identify eligible approvers.
+- approve an sap ariba sourcing approval task on behalf of an authorized approver.
+- list pending
+- manages strategic sourcing events, rfx processes, and contract workflows.
+- contract workspaces and contract content requiring approval.
+- get details about an sap ariba approvable sourcing document, rfx event, or contract workspace.
+- ariba
+- list approval group members
 - get approval task details.
 - approval actions.
-- list pending approvals
-- approval group members.
+- sourcing
+- sap
+- list pending approval tasks.
+- Sourcing Manager
+- auctions
+- pending approval tasks.
+- approvals
+- submit action
+- list sap ariba sourcing approval tasks that have recently changed state.
+- list approval changes
+- get details for a specific sap ariba sourcing approval task including approvers.
+- contracts
+- Procurement Approver
+- list pending sap ariba sourcing approval tasks awaiting action.
+- get sourcing document
+- approvable documents.
+- reviews and approves or denies sourcing documents, events, and contracts.
+- list members
+- approval task details.
+- deny task
+- get task details
+- deny an sap ariba sourcing approval task on behalf of an authorized approver.
+- get task
+- supply chain
+- supplier management projects requiring external approval.
+- procurement
+- submit approve or deny action.
+- external approval workflow for sourcing projects, contracts, and supplier management
+- rfx
 slug: sourcing-approvals
+source_filename: sourcing-approvals.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Ariba Sourcing - Sourcing Approvals\"\n  description: \"Workflow for managing external approval tasks in SAP Ariba strategic sourcing projects, contracts, and supplier management. Used by procurement approvers and sourcing managers.\"\n  tags:\n    - Approvals\n    - Ariba\n    - Contracts\n    - Procurement\n    - SAP\n    - Sourcing\n    - Supplier Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ARIBA_SOURCING_OAUTH_TOKEN: ARIBA_SOURCING_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: ariba-sourcing-approval\n      location: ./shared/external-approval-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ariba-sourcing-workflow-api\n      description: \"Unified REST API for SAP Ariba Sourcing external approval workflows.\"\n      resources:\n        - path: /v1/changes\n          name: changes\n          description: \"Approval task\
   \ state changes.\"\n          operations:\n            - method: GET\n              name: list-changes\n              description: \"List changed approval tasks.\"\n              call: \"ariba-sourcing-approval.list-approval-changes\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pending-approvables\n          name: pending-approvables\n          description: \"Pending approval tasks.\"\n          operations:\n            - method: GET\n              name: list-pending\n              description: \"List pending approval tasks.\"\n              call: \"ariba-sourcing-approval.list-pending-approvables\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tasks/{taskId}\n          name: task-details\n          description: \"Approval\
   \ task details.\"\n          operations:\n            - method: GET\n              name: get-task\n              description: \"Get approval task details.\"\n              call: \"ariba-sourcing-approval.get-approval-task\"\n              with:\n                entity_id: \"rest.taskId\"\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{entityType}/{entityId}\n          name: approvable-documents\n          description: \"Approvable documents.\"\n          operations:\n            - method: GET\n              name: get-document\n              description: \"Get approvable document details.\"\n              call: \"ariba-sourcing-approval.get-approvable-document\"\n              with:\n                entity_type: \"rest.entityType\"\n                entity_id: \"rest.entityId\"\n                realm: \"rest.realm\"\n              outputParameters:\n                -\

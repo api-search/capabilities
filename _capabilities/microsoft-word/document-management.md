@@ -57,95 +57,97 @@ personas: []
 provider_name: Microsoft Word
 provider_slug: microsoft-word
 search_terms:
-- graph list files
-- addin list comments
-- addin insert table
-- graph delete document
-- search for text within the document.
-- graph get document
-- graph list versions
-- graph create folder
-- microsoft word
-- individual document operations.
-- insert text into the document body.
-- manages document templates, reviews, and publishing workflows.
-- list comments in the document.
-- automation
-- graph share document
-- word processing
-- get document body content.
-- search for word documents in onedrive/sharepoint.
-- addin get body
-- list paragraphs.
-- delete a document.
-- document management
-- microsoft 365
-- insert html content into the document.
-- productivity
-- create a new word document server-side using open xml.
-- search for documents.
-- create a new folder in onedrive.
-- version history operations.
-- openxml add paragraph
-- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
-- list comments
-- list comments.
-- permission and sharing operations.
-- comment operations.
-- openxml convert document
-- addin insert text
-- Automation Engineer
-- get content
-- list sharing permissions on a document.
-- list versions
-- list tables
-- paragraph operations.
-- get metadata for a word document stored in onedrive/sharepoint.
-- convert a word document to pdf or other format.
-- office
-- add a paragraph to a document server-side.
-- get the body content of an open word document.
-- list files and folders in a onedrive directory.
-- document search.
-- list all paragraphs in the document.
-- list permissions
-- delete document
-- addin list content controls
-- openxml create document
-- addin list tables
-- get document metadata.
-- list version history of a document.
-- addin insert html
-- list content controls in the document.
-- list version history.
-- addin list paragraphs
-- list tables.
-- list permissions.
 - delete a document from onedrive/sharepoint.
-- graph list permissions
-- graph search documents
-- document format conversion.
-- table operations.
-- create a sharing link for a document.
-- document lifecycle operations.
-- document content operations.
-- search documents
-- creates and edits word documents, manages formatting and content.
-- convert document
-- insert a new table into the document.
-- Content Manager
-- Document Author
-- builds automated document generation and processing pipelines.
-- list paragraphs
+- addin insert table
+- list all paragraphs in the document.
+- addin insert html
 - convert to another format.
-- create a new word document.
-- create document
-- documents
-- get document
+- list versions
+- automation
+- search for word documents in onedrive/sharepoint.
+- list permissions.
+- graph list versions
+- add a paragraph to a document server-side.
+- individual document operations.
+- graph list files
+- get the body content of an open word document.
+- list content controls in the document.
+- convert document
+- version history operations.
 - list tables in the document.
+- delete a document.
+- graph create folder
+- graph share document
+- get content
+- document format conversion.
+- list version history of a document.
+- insert html content into the document.
+- graph delete document
+- builds automated document generation and processing pipelines.
+- insert a new table into the document.
+- insert text into the document body.
+- Content Manager
+- paragraph operations.
+- productivity
+- create a sharing link for a document.
+- document search.
+- openxml add paragraph
+- documents
+- microsoft 365
+- word processing
+- search documents
+- addin list content controls
+- addin list comments
+- openxml convert document
 - collaboration
+- unified document lifecycle management combining cloud storage, content manipulation, and server-side processing.
+- create a new word document.
+- comment operations.
+- list comments.
+- table operations.
+- document lifecycle operations.
+- permission and sharing operations.
+- Document Author
+- list sharing permissions on a document.
+- creates and edits word documents, manages formatting and content.
+- addin get body
+- get metadata for a word document stored in onedrive/sharepoint.
+- microsoft word
+- search for documents.
+- list comments in the document.
+- list tables.
+- create document
+- get document metadata.
+- manages document templates, reviews, and publishing workflows.
+- list paragraphs
+- openxml create document
+- list paragraphs.
+- search for text within the document.
+- get document body content.
+- get document
+- graph search documents
+- Automation Engineer
+- document management
+- delete document
+- list version history.
+- document content operations.
+- create a new word document server-side using open xml.
+- office
+- list tables
+- create a new folder in onedrive.
+- list comments
+- addin list tables
+- list permissions
+- graph get document
+- graph list permissions
+- addin list paragraphs
+- addin insert text
 - addin search text
+- list files and folders in a onedrive directory.
+- convert a word document to pdf or other format.
 slug: document-management
+source_filename: document-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Word Document Management\"\n  description: \"Unified workflow for Word document creation, editing, collaboration, conversion, and lifecycle management. Combines Microsoft Graph for cloud storage and sharing, JavaScript API for content manipulation, and Open XML SDK for server-side processing. Used by document authors, content managers, and automation engineers.\"\n  tags:\n    - Microsoft Word\n    - Document Management\n    - Collaboration\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n      OFFICE_ADDIN_TOKEN: OFFICE_ADDIN_TOKEN\n      OPENXML_API_KEY: OPENXML_API_KEY\n\ncapability:\n  consumes:\n    - import: graph-api\n      location: ./shared/graph-api.yaml\n    - import: javascript-api\n      location: ./shared/javascript-api.yaml\n    - import: open-xml-sdk\n      location: ./shared/open-xml-sdk.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: word-document-mgmt-api\n      description: \"Unified REST API for Microsoft Word document management across cloud, add-in, and server-side processing.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          description: \"Document lifecycle operations.\"\n          operations:\n            - method: POST\n              name: create-document\n              description: \"Create a new Word document.\"\n              call: \"open-xml-sdk.create-document\"\n              with:\n                filename: \"rest.filename\"\n                title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{document-id}\n          name: document-detail\n          description: \"Individual document operations.\"\n          operations:\n            - method: GET\n              name: get-document\n              description:\
   \ \"Get document metadata.\"\n              call: \"graph-api.get-drive-item\"\n              with:\n                item-id: \"rest.document-id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-document\n              description: \"Delete a document.\"\n              call: \"graph-api.delete-drive-item\"\n              with:\n                item-id: \"rest.document-id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{document-id}/content\n          name: content\n          description: \"Document content operations.\"\n          operations:\n            - method: GET\n              name: get-content\n              description: \"Get document body content.\"\n              call: \"javascript-api.get-body\"\n              with:\n                document-id: \"rest.document-id\"\n              outputParameters:\n\

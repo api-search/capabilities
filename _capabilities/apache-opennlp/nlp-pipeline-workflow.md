@@ -46,64 +46,66 @@ personas: []
 provider_name: Apache OpenNLP
 provider_slug: apache-opennlp
 search_terms:
-- tokenize text into words and punctuation
-- list models
-- find named entities (persons, locations, organizations) in text
-- detect the language of input text
-- full syntactic parsing
-- split text into individual sentences
-- uses opennlp apis to add language processing capabilities to applications
-- parse sentence
-- detect sentences
-- tokenization
-- detect language
-- integrates opennlp into custom nlp pipelines and applications
-- parse sentence structure
-- part-of-speech tagging
-- phrase chunking
-- open source
-- java
-- list all available nlp models
-- nlp
-- build a full parse tree for a sentence
-- tokenize text
-- find entities
-- tag parts of speech
-- assign pos tags to each token in tokenized text
-- tag pos
-- detect document language
-- sentence boundary detection
-- chunk phrases
-- model management
-- end-to-end nlp processing pipeline
-- categorize
-- Application Developer
-- text processing
-- natural language processing
-- list available models
 - machine learning
-- chunk text into phrases
-- classify a document into predefined categories
-- apache opennlp
-- apache
-- information extraction
+- detect document language
+- parse sentence structure
+- find entities
+- document categorization
+- list available models
+- named entity recognition
+- model management
+- find named entities
+- build a full parse tree for a sentence
+- Application Developer
+- detect language
+- categorize
+- text processing
+- phrase chunking
+- java
+- uses opennlp apis to add language processing capabilities to applications
+- full syntactic parsing
+- parse
+- language detection
+- assign pos tags to each token in tokenized text
+- NLP Engineer
+- split text into sentences
+- tokenize
+- sentence boundary detection
+- detect the language of input text
+- open source
+- tokenize text
+- split text into individual sentences
 - reduce tokens to their base/lemma forms
+- tag pos
+- apache opennlp
+- parse sentence
+- uses nlp pipeline for text analysis and feature extraction
+- integrates opennlp into custom nlp pipelines and applications
+- tokenization
+- list all available nlp models
+- identify noun phrases, verb phrases, and other chunks
+- text analysis
+- lemmatize
 - Data Scientist
 - categorize document
-- tokenize
-- identify noun phrases, verb phrases, and other chunks
-- document categorization
-- named entity recognition
-- split text into sentences
-- find named entities
-- uses nlp pipeline for text analysis and feature extraction
+- tokenize text into words and punctuation
+- information extraction
+- find named entities (persons, locations, organizations) in text
+- apache
+- classify a document into predefined categories
+- part-of-speech tagging
+- detect sentences
+- list models
+- natural language processing
+- nlp
+- chunk phrases
+- chunk text into phrases
+- end-to-end nlp processing pipeline
 - chunk
-- text analysis
-- parse
-- lemmatize
-- language detection
-- NLP Engineer
+- tag parts of speech
 slug: nlp-pipeline-workflow
+source_filename: nlp-pipeline-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache OpenNLP NLP Pipeline Workflow\"\n  description: \"End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging, NER, chunking, and parsing for comprehensive text analysis.\"\n  tags:\n    - Apache OpenNLP\n    - Natural Language Processing\n    - Text Analysis\n    - Information Extraction\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENNLP_API_KEY: OPENNLP_API_KEY\n\ncapability:\n  consumes:\n    - import: opennlp\n      location: ./shared/opennlp-tools.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: nlp-pipeline-api\n      description: \"Unified REST API for NLP text processing pipeline.\"\n      resources:\n        - path: /v1/language\n          name: language-detection\n          description: \"Language detection\"\n          operations:\n            - method: POST\n              name:\
   \ detect-language\n              description: \"Detect document language\"\n              call: \"opennlp.detectLanguage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sentences\n          name: sentence-detection\n          description: \"Sentence boundary detection\"\n          operations:\n            - method: POST\n              name: detect-sentences\n              description: \"Split text into sentences\"\n              call: \"opennlp.detectSentences\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tokens\n          name: tokenization\n          description: \"Tokenization\"\n          operations:\n            - method: POST\n              name: tokenize\n              description: \"Tokenize text\"\n              call: \"opennlp.tokenize\"\n              outputParameters:\n                - type: object\n                  mapping:\
   \ \"$.\"\n        - path: /v1/entities\n          name: named-entities\n          description: \"Named entity recognition\"\n          operations:\n            - method: POST\n              name: find-entities\n              description: \"Find named entities\"\n              call: \"opennlp.findNamedEntities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pos\n          name: pos-tags\n          description: \"Part-of-speech tagging\"\n          operations:\n            - method: POST\n              name: tag-pos\n              description: \"Tag parts of speech\"\n              call: \"opennlp.tagPartsOfSpeech\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/chunks\n          name: chunks\n          description: \"Phrase chunking\"\n          operations:\n            - method: POST\n              name: chunk\n              description: \"\

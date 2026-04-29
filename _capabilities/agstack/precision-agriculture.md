@@ -9,13 +9,15 @@ personas: []
 provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
-- open source
-- geospatial
-- precision agriculture
 - agriculture
-- linux foundation
+- geospatial
 - linked data
+- open source
+- linux foundation
+- precision agriculture
 slug: precision-agriculture
+source_filename: precision-agriculture.yaml
+source_heading: Capability Spec
 source_yaml: "name: Precision Agriculture\ndescription: Workflow-oriented capability composition for precision agriculture using AgStack's open infrastructure — field registration, weather intelligence, farm calendar management, and agricultural decision support.\nversion: \"1.0\"\ntags:\n  - Agriculture\n  - Precision Agriculture\n  - Open Source\n  - Linux Foundation\n\ntools:\n  - name: register_field_boundary\n    description: Register an agricultural field boundary using WKT or GeoJSON geometry and receive a permanent unique geo ID\n    capability: agstack-asset-registry-api.registerFieldBoundary\n    inputs:\n      - name: wkt\n        type: string\n        description: Well-Known Text geometry of the field boundary\n    outputs:\n      - name: geo_id\n        type: string\n        description: 16-character alphanumeric unique identifier for the field\n\n  - name: bulk_register_fields\n    description: Register multiple field boundaries at once from a GeoJSON file\n    capability:\
   \ agstack-asset-registry-api.registerFieldBoundariesGeoJson\n    inputs:\n      - name: geojson_file\n        type: object\n        description: GeoJSON FeatureCollection containing field boundary geometries\n    outputs:\n      - name: geo_ids\n        type: array\n        description: List of assigned geo IDs for each registered field\n\n  - name: get_field_data\n    description: Retrieve the complete boundary data and metadata for a registered field by geo ID\n    capability: agstack-asset-registry-api.fetchField\n    inputs:\n      - name: geo_id\n        type: string\n        description: Field's unique geo identifier\n    outputs:\n      - name: field_data\n        type: object\n        description: Field boundary geometry and associated metadata\n\n  - name: check_field_overlap\n    description: Calculate the spatial overlap percentage between two registered fields for land rights or deduplication analysis\n    capability: agstack-asset-registry-api.getPercentageOverlap\n    inputs:\n\
   \      - name: geo_id_1\n        type: string\n        description: First field geo ID\n      - name: geo_id_2\n        type: string\n        description: Second field geo ID\n    outputs:\n      - name: overlap_percentage\n        type: number\n        description: Percentage of spatial overlap between the two fields (0-100)\n\n  - name: get_weather_forecast\n    description: Retrieve 5-day weather forecast for agricultural planning by geographic coordinates\n    capability: agstack-openagri-weather-service-api.get_weather_forecast5days\n    inputs:\n      - name: lat\n        type: number\n        description: Latitude of the location\n      - name: lon\n        type: number\n        description: Longitude of the location\n    outputs:\n      - name: forecast\n        type: array\n        description: 5-day weather forecast records with temperature, humidity, wind, and precipitation\n\n  - name: get_current_weather\n    description: Get current weather conditions for a field location\n\

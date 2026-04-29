@@ -16,53 +16,55 @@ provider_name: Moody's
 provider_slug: moodys
 search_terms:
 - download completed order output
-- get series
-- update basket
 - create order
-- economic data
-- analytics
-- update a basket
-- screening
+- check data buffet api health
+- update basket
+- moody's
 - time series data
-- list supported output file types
-- credit risk
-- create basket
-- retrieve a time series
-- get order status and details
-- forecasting
-- financial analytics
-- climate risk
-- list orders
-- risk
-- list file types
 - list vintages
-- download order
-- create a new data basket
-- retrieve a single time series by mnemonic
-- delete basket
-- create a new data order
-- entity verification
-- list all data baskets
-- list frequencies
-- search for available series
+- list file types
 - compliance
+- list available data frequencies
+- list all data baskets
+- retrieve a time series
 - get basket details
+- climate risk
+- search series
+- list all orders
+- delete a basket
+- list frequencies
+- create a new data order
+- check health
+- create a new data basket
+- entity verification
+- economic data
+- credit risk
+- retrieve multiple time series
+- get series
+- search for available series
 - get multi series
 - get order
-- moody's
-- retrieve multiple time series
-- list vintages for a series
-- search series
-- check data buffet api health
-- list available data frequencies
-- delete a basket
-- list all orders
-- insurance
-- kyc
-- list baskets
+- forecasting
+- list supported output file types
 - get basket
-- check health
+- delete basket
+- list vintages for a series
+- get order status and details
+- risk
+- list orders
+- insurance
+- analytics
+- list baskets
+- create basket
+- update a basket
+- download order
+- retrieve a single time series by mnemonic
+- financial analytics
+- kyc
+- screening
 slug: economic-data-analytics
+source_filename: economic-data-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Moody's Economic Data Analytics\"\n  description: \"Unified economic data analytics capability combining time series retrieval, basket management, order processing, and data search. Used by economists, risk analysts, and data scientists.\"\n  tags: [Moody's, Economic Data, Analytics, Forecasting]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      MOODYS_OAUTH_TOKEN: MOODYS_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: data-buffet\n      location: ./shared/data-buffet.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: economic-data-analytics-api\n      description: \"Unified REST API for Moody's economic data analytics.\"\n      resources:\n        - path: /v1/series\n          name: series\n          description: \"Time series data\"\n          operations:\n            - { method: GET, name: get-series, description: \"Retrieve a time series\", call: \"data-buffet.get-series\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: economic-data-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted economic data analytics.\"\n      tools:\n        - { name: get-series, description: \"Retrieve a single time series by mnemonic\", hints: { readOnly: true }, call: \"data-buffet.get-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-multi-series, description: \"Retrieve multiple time series\", hints: { readOnly: true }, call: \"data-buffet.get-multi-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: search-series, description: \"Search for available series\", hints: { readOnly: true, openWorld: true }, call: \"data-buffet.search-series\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-baskets, description: \"List all data baskets\", hints: { readOnly: true }, call: \"data-buffet.list-baskets\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-basket, description: \"Create a new data basket\", call: \"data-buffet.create-basket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-basket, description: \"Get basket details\", hints: { readOnly: true }, call: \"data-buffet.get-basket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-basket, description: \"Update a basket\", call: \"data-buffet.update-basket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: delete-basket, description: \"Delete a basket\", hints: { destructive: true }, call: \"data-buffet.delete-basket\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-orders, description: \"List all orders\", hints: { readOnly: true }, call: \"data-buffet.list-orders\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-order, description: \"Create\

@@ -59,62 +59,64 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- permanently delete an uploaded asset
-- generate a document by merging json data into a template
-- pdf export to other formats
-- graphics
-- accessibility
-- pdf compression operations
-- ocr pdf
-- apply ocr to a scanned pdf to make text searchable
-- ocr processing operations
-- pdf combination operations
-- creative
-- create a pdf from word, excel, powerpoint, or html
-- accessibility tagging operations
-- pdf creation from other formats
-- get the status of a pdf operation
-- video
-- combine multiple pdfs into a single document
-- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
-- pdf
-- photography
-- get asset
-- design
-- auto-tag a pdf for accessibility compliance
-- pdf linearization for web optimization
-- get operation status
-- compress a pdf to reduce file size
-- compress a pdf to reduce its file size
-- apply ocr to a scanned pdf
-- upload an asset for use in pdf operations
-- linearize a pdf for fast web viewing
-- individual asset operations
-- combine pdfs
-- upload asset
-- combine multiple pdfs into one
-- operation status polling
-- delete asset
-- get the status of a pdf services operation job
-- delete an uploaded asset
-- upload an asset for pdf operations
-- adobe
-- export a pdf to word, excel, powerpoint, rtf, or text
-- compress pdf
-- get metadata and download uri for an uploaded asset
-- create pdf
-- document conversion
-- ocr
-- export pdf
 - template-based document generation
-- generate a document from a template and data
+- compress a pdf to reduce file size
 - linearize pdf
-- asset upload and management for pdf operations
-- get asset metadata and download uri
-- auto tag pdf
+- graphics
 - generate document
+- accessibility tagging operations
+- combine pdfs
+- export pdf
+- get the status of a pdf services operation job
+- get metadata and download uri for an uploaded asset
+- auto tag pdf
+- combine multiple pdfs into a single document
+- apply ocr to a scanned pdf
+- generate a document by merging json data into a template
+- pdf compression operations
 - document management
+- ocr pdf
+- accessibility
+- linearize a pdf for fast web viewing
+- upload an asset for pdf operations
+- apply ocr to a scanned pdf to make text searchable
+- creative
+- document conversion
+- delete asset
+- ocr
+- generate a document from a template and data
+- pdf linearization for web optimization
+- auto-tag a pdf for accessibility compliance
+- design
+- get operation status
+- photography
+- get the status of a pdf operation
+- get asset
+- compress pdf
+- upload asset
+- pdf creation from other formats
+- upload an asset for use in pdf operations
+- compress a pdf to reduce its file size
+- delete an uploaded asset
+- create a pdf from word, excel, powerpoint, or html
+- pdf combination operations
+- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
+- combine multiple pdfs into one
+- pdf
+- pdf export to other formats
+- adobe
+- operation status polling
+- ocr processing operations
+- video
+- create pdf
+- get asset metadata and download uri
+- individual asset operations
+- asset upload and management for pdf operations
+- export a pdf to word, excel, powerpoint, rtf, or text
+- permanently delete an uploaded asset
 slug: document-management
+source_filename: document-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Document Management\"\n  description: \"PDF document lifecycle management workflow using Adobe PDF Services for creating, converting, combining, compressing, OCR processing, accessibility tagging, and template-based document generation. Used by document workflow teams, compliance officers, and developers building document processing pipelines.\"\n  tags:\n    - Adobe\n    - PDF\n    - Document Management\n    - Document Conversion\n    - OCR\n    - Accessibility\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PDF_SERVICES_TOKEN: ADOBE_PDF_SERVICES_TOKEN\n\ncapability:\n  consumes:\n    - import: pdf-services\n      location: ./shared/pdf-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: document-management-api\n      description: \"Unified REST API for PDF document lifecycle management using Adobe PDF Services.\"\n      resources:\n\
   \        - path: /v1/assets\n          name: assets\n          description: \"Asset upload and management for PDF operations\"\n          operations:\n            - method: POST\n              name: upload-asset\n              description: \"Upload an asset for PDF operations\"\n              call: \"pdf-services.upload-asset\"\n              with:\n                media_type: \"rest.media_type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/assets/{assetID}\n          name: asset-detail\n          description: \"Individual asset operations\"\n          operations:\n            - method: GET\n              name: get-asset\n              description: \"Get asset metadata and download URI\"\n              call: \"pdf-services.get-asset\"\n              with:\n                assetID: \"rest.assetID\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n           \
   \ - method: DELETE\n              name: delete-asset\n              description: \"Delete an uploaded asset\"\n              call: \"pdf-services.delete-asset\"\n              with:\n                assetID: \"rest.assetID\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/pdfs\n          name: pdfs\n          description: \"PDF creation from other formats\"\n          operations:\n            - method: POST\n              name: create-pdf\n              description: \"Create a PDF from Word, Excel, PowerPoint, or HTML\"\n              call: \"pdf-services.create-pdf\"\n              with:\n                asset_id: \"rest.asset_id\"\n                document_language: \"rest.document_language\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/exports\n          name: exports\n          description: \"PDF export to other formats\"\n       \

@@ -1,4 +1,17 @@
 ---
+api_specs:
+- filename: kafka-rest-proxy.yml
+  format: yaml
+  label: kafka-rest-proxy
+  slug: kafka-rest-proxy
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/apache-kafka/refs/heads/main/openapi/kafka-rest-proxy.yml
+- filename: kafka-connect.yml
+  format: yaml
+  label: kafka-connect
+  slug: kafka-connect
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/apache-kafka/refs/heads/main/openapi/kafka-connect.yml
 categories: []
 consumed_apis:
 - kafka-rest-proxy
@@ -27,31 +40,33 @@ personas: []
 provider_name: Apache Kafka
 provider_slug: apache-kafka
 search_terms:
-- restart a failed kafka connect connector
+- distributed systems
+- Data Engineer
+- messaging
+- list connectors
+- pub-sub
+- create a new kafka connect connector for data integration
+- open source
+- engineers who build data pipelines using kafka topics and connectors
+- restart connector
 - Platform Architect
 - platform architecture
-- get the status of a specific kafka connect connector
-- create connector
-- open source
-- pub-sub
-- list all kafka topics in the cluster
-- produce a message to a kafka topic via the rest proxy
-- get connector status
-- produce message
-- data engineering
-- distributed systems
-- event streaming
-- apache kafka
-- Data Engineer
+- restart a failed kafka connect connector
 - list all kafka connect connectors
-- engineers who build data pipelines using kafka topics and connectors
-- list topics
-- restart connector
-- list connectors
-- create a new kafka connect connector for data integration
-- messaging
+- get the status of a specific kafka connect connector
 - architects who design and manage kafka cluster topology and connectivity
+- list topics
+- event streaming
+- get connector status
+- list all kafka topics in the cluster
+- produce message
+- create connector
+- apache kafka
+- data engineering
+- produce a message to a kafka topic via the rest proxy
 slug: event-streaming
+source_filename: event-streaming.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Kafka Event Streaming\"\n  description: \"Workflow capability for data engineers and platform architects to manage Kafka topics, produce and consume messages, and manage connectors via Kafka REST Proxy and Connect APIs.\"\n  tags:\n    - Apache Kafka\n    - Data Engineering\n    - Event Streaming\n    - Platform Architecture\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      KAFKA_REST_URL: KAFKA_REST_URL\n      KAFKA_CONNECT_URL: KAFKA_CONNECT_URL\n\ncapability:\n  consumes:\n    - import: kafka-rest-proxy\n      location: ./shared/kafka-rest-proxy.yaml\n    - import: kafka-connect\n      location: ./shared/kafka-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kafka-event-streaming-api\n      description: \"Unified REST API for Apache Kafka event streaming management.\"\n      resources:\n        - path: /v1/topics\n          name: topics\n\
   \          operations:\n            - method: GET\n              name: list-topics\n              call: \"kafka-rest-proxy.list-topics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: produce-message\n              call: \"kafka-rest-proxy.produce-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connectors\n          name: connectors\n          operations:\n            - method: GET\n              name: list-connectors\n              call: \"kafka-connect.list-connectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connector\n              call: \"kafka-connect.create-connector\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n\
   \      port: 9090\n      namespace: kafka-event-streaming-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Kafka event streaming management.\"\n      tools:\n        - name: list-topics\n          description: List all Kafka topics in the cluster\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"kafka-rest-proxy.list-topics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: produce-message\n          description: Produce a message to a Kafka topic via the REST Proxy\n          hints:\n            readOnly: false\n          call: \"kafka-rest-proxy.produce-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connectors\n          description: List all Kafka Connect connectors\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"kafka-connect.list-connectors\"\

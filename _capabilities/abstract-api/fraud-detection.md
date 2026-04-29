@@ -31,61 +31,63 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
+- check email address risk and reputation
 - ip geolocation
-- image processing
-- security
-- check email risk
-- timezones
-- check phone number risk and validity
-- public holidays
-- email reputation
-- fraud detection
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- automatic enrichment of user profiles with geographic, company, and temporal data
+- ip intelligence
+- avatars
+- check ip intelligence and security flags
+- product engineer
+- exchange rates, vat validation, and iban validation for financial compliance
+- engineer building fraud detection and threat intelligence systems
+- vat validation
+- detection and blocking of fraudulent users, transactions, and bot activity
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- exchange rates
+- security engineer
 - check phone intelligence and risk score
-- engineer building data pipelines and enrichment workflows
+- finance engineer
+- web scraping
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- image processing
+- currencies
 - iban validation
 - developer building user onboarding and personalization features
-- avatars
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- ip intelligence
-- check ip risk
-- web scraping
-- contacts
-- vat validation
-- currency conversion, vat compliance, and banking validation for financial applications
-- finance engineer
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- abstract api
-- fraud analyst
-- data engineer
-- engineer building fraud detection and threat intelligence systems
-- compliance analyst
-- check ip address risk signals
-- check ip intelligence and security flags
-- detection and blocking of fraudulent users, transactions, and bot activity
-- check phone risk
-- check email reputation and risk score
-- validate phone number and retrieve carrier, line type, voip status, and risk score
-- phone intelligence
-- currencies
-- exchange rates, vat validation, and iban validation for financial compliance
-- check phone intelligence
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- product engineer
-- exchange rates
-- check ip intelligence
-- developer building payment, billing, and financial compliance systems
-- check email reputation
-- security engineer
-- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
-- company enrichment
-- check email address risk and reputation
 - phone validation
+- check phone risk
+- check ip address risk signals
+- check email risk
+- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
+- data engineer
 - screenshots
-- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- check phone number risk and validity
+- check ip risk
+- compliance analyst
+- security
+- phone intelligence
+- company enrichment
 - email validation
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- fraud detection
+- timezones
+- public holidays
+- fraud analyst
+- currency conversion, vat compliance, and banking validation for financial applications
+- check email reputation and risk score
+- check email reputation
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- engineer building data pipelines and enrichment workflows
+- developer building payment, billing, and financial compliance systems
+- check phone intelligence
+- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- validate phone number and retrieve carrier, line type, voip status, and risk score
+- email reputation
+- abstract api
+- check ip intelligence
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- contacts
 slug: fraud-detection
+source_filename: fraud-detection.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abstract API Fraud Detection\"\n  description: \"Unified fraud detection and risk assessment workflow combining email reputation, phone intelligence, and IP intelligence APIs. Used by security engineers, fraud analysts, and compliance teams to detect and block fraudulent users at signup or transaction time.\"\n  tags:\n    - Abstract Api\n    - Fraud Detection\n    - Security\n    - Email Reputation\n    - Phone Intelligence\n    - Ip Intelligence\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      EMAIL_REPUTATION_API_KEY: EMAIL_REPUTATION_API_KEY\n      PHONE_INTELLIGENCE_API_KEY: PHONE_INTELLIGENCE_API_KEY\n      IP_INTELLIGENCE_API_KEY: IP_INTELLIGENCE_API_KEY\n\ncapability:\n  consumes:\n    - import: email-reputation\n      location: ./shared/email-reputation.yaml\n    - import: phone-intelligence\n      location: ./shared/phone-intelligence.yaml\n    - import: ip-intelligence\n\
   \      location: ./shared/ip-intelligence.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: fraud-detection-api\n      description: \"Unified REST API for fraud detection and risk assessment.\"\n      resources:\n        - path: /v1/email-risk\n          name: email-risk\n          description: \"Check email address risk and reputation\"\n          operations:\n            - method: GET\n              name: check-email-risk\n              description: \"Check email reputation and risk score\"\n              call: \"email-reputation.getEmailReputation\"\n              with:\n                email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/phone-risk\n          name: phone-risk\n          description: \"Check phone number risk and validity\"\n          operations:\n            - method: GET\n              name: check-phone-risk\n              description: \"Check phone intelligence\
   \ and risk score\"\n              call: \"phone-intelligence.getPhoneIntelligence\"\n              with:\n                phone: \"rest.phone\"\n                country: \"rest.country\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ip-risk\n          name: ip-risk\n          description: \"Check IP address risk signals\"\n          operations:\n            - method: GET\n              name: check-ip-risk\n              description: \"Check IP intelligence and security flags\"\n              call: \"ip-intelligence.getIPIntelligence\"\n              with:\n                ip_address: \"rest.ip_address\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: fraud-detection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted fraud detection and risk assessment.\"\n      tools:\n        - name:\

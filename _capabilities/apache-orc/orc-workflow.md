@@ -17,34 +17,36 @@ personas: []
 provider_name: Apache ORC
 provider_slug: apache-orc
 search_terms:
-- convert to orc
-- get column statistics
-- compression
-- list orc files
-- merge orc files
-- open source
-- big data
-- list files
-- merge multiple orc files into one
-- list available orc files
-- convert csv, json, or parquet to orc format
-- columnar storage
 - get file schema
-- get metadata about an orc file
-- manages orc file creation, conversion, and schema evolution
-- reads orc files and analyzes column statistics
-- apache
-- file format
+- list orc files
+- compression
+- convert csv, json, or parquet to orc format
 - Data Engineer
-- Data Analyst
-- data processing
-- convert
-- apache orc
-- hadoop
-- get file metadata
-- get the schema of an orc file
 - get column statistics from an orc file
+- get column statistics
+- open source
+- get file metadata
+- columnar storage
+- merge multiple orc files into one
+- Data Analyst
+- convert to orc
+- get metadata about an orc file
+- apache
+- reads orc files and analyzes column statistics
+- hadoop
+- list available orc files
+- merge orc files
+- manages orc file creation, conversion, and schema evolution
+- get the schema of an orc file
+- list files
+- data processing
+- apache orc
+- convert
+- big data
+- file format
 slug: orc-workflow
+source_filename: orc-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache ORC File Processing Workflow\"\n  description: \"Workflow capability for reading, writing, converting, and analyzing Apache ORC columnar files.\"\n  tags:\n    - Apache ORC\n    - Big Data\n    - Columnar Storage\n    - Data Processing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      ORC_API_KEY: ORC_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: orc\n      baseUri: https://localhost:8080/orc\n      description: \"Apache ORC REST service\"\n      resources:\n        - name: files\n          path: /files\n          description: \"ORC file management\"\n          operations:\n            - name: listFiles\n              method: GET\n              description: \"List ORC files\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n       \
   \ - name: convert\n          path: /convert\n          description: \"File conversion\"\n          operations:\n            - name: convertToOrc\n              method: POST\n              description: \"Convert files to ORC format\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: orc-api\n      description: \"Unified REST API for ORC file operations.\"\n      resources:\n        - path: /v1/files\n          name: files\n          operations:\n            - method: GET\n              name: list-files\n              description: \"List ORC files\"\n              call: \"orc.listFiles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/convert\n          name: convert\n          operations:\n            - method: POST\n              name:\
   \ convert\n              description: \"Convert to ORC\"\n              call: \"orc.convertToOrc\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: orc-mcp\n      transport: http\n      description: \"MCP server for AI-assisted ORC file operations.\"\n      tools:\n        - name: list-orc-files\n          description: \"List available ORC files\"\n          hints:\n            readOnly: true\n          call: \"orc.listFiles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-file-schema\n          description: \"Get the schema of an ORC file\"\n          hints:\n            readOnly: true\n          call: \"orc.getFileSchema\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-file-metadata\n          description: \"Get metadata about an ORC file\"\n          hints:\n\

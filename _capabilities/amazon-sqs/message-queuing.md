@@ -27,58 +27,60 @@ personas: []
 provider_name: Amazon SQS
 provider_slug: amazon-sqs
 search_terms:
-- add a permission to a queue
-- delete message
-- aws
-- amazon
-- delete queue
-- receive messages from a queue
-- tag queue
-- list dead-letter queue source queues
-- list queue tags
-- change message visibility
-- purge queue
-- send message batch
-- create a new standard or fifo queue
-- list queues that feed a dead-letter queue
-- set queue attributes
-- add tags to a queue
-- delete up to 10 messages in a batch
-- start moving messages from a dead-letter queue
-- change the visibility timeout of a message
-- delete message batch
-- list dead letter source queues
-- queue
-- add permission
-- list tags for a queue
-- create a new sqs queue
-- send message
-- list dlq sources
-- list queues
-- remove a permission from a queue
-- create queue
-- delete an sqs queue
-- receive message
-- microservices
-- message operations
-- start message move task
-- cloud
-- list all sqs queues
-- send up to 10 messages in a batch
 - distributed systems
-- set attributes for a queue
-- delete a message from a queue
-- send a message to a queue
-- queue management
 - dead-letter queue management
-- get attributes for a queue
+- list dead letter source queues
 - get queue attributes
-- get the url of a queue by name
-- get queue url
+- send a message to a queue
+- message operations
 - messaging
-- delete all messages in a queue
+- receive message
+- add a permission to a queue
+- cloud
+- delete message
+- delete queue
+- start moving messages from a dead-letter queue
+- add permission
+- purge queue
+- aws
 - remove permission
+- remove a permission from a queue
+- delete all messages in a queue
+- list tags for a queue
+- amazon
+- list queue tags
+- list all sqs queues
+- receive messages from a queue
+- list queues
+- create queue
+- get attributes for a queue
+- start message move task
+- change the visibility timeout of a message
+- list dead-letter queue source queues
+- get the url of a queue by name
+- delete message batch
+- list dlq sources
+- microservices
+- queue management
+- add tags to a queue
+- queue
+- get queue url
+- send message batch
+- change message visibility
+- tag queue
+- create a new sqs queue
+- delete up to 10 messages in a batch
+- delete a message from a queue
+- create a new standard or fifo queue
+- set attributes for a queue
+- set queue attributes
+- list queues that feed a dead-letter queue
+- send message
+- send up to 10 messages in a batch
+- delete an sqs queue
 slug: message-queuing
+source_filename: message-queuing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SQS Message Queuing\"\n  description: \"Message queuing workflow for managing SQS queues, sending and receiving messages, batch operations, dead-letter queue management, and access control. Used by developers and DevOps engineers for microservices decoupling and asynchronous processing.\"\n  tags:\n    - Amazon\n    - AWS\n    - Messaging\n    - Queue\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-sqs\n      location: ./shared/sqs.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sqs-queuing-api\n      description: \"Unified REST API for Amazon SQS message queuing operations.\"\n      resources:\n        - path: /v1/queues\n          name: queues\n          description: \"Queue\
   \ management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List all SQS queues\"\n              call: \"amazon-sqs.list-queues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-queue\n              description: \"Create a new SQS queue\"\n              call: \"amazon-sqs.create-queue\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Message operations\"\n          operations:\n            - method: POST\n              name: send-message\n              description: \"Send a message to a queue\"\n              call: \"amazon-sqs.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dead-letter-queues\n\
   \          name: dead-letter\n          description: \"Dead-letter queue management\"\n          operations:\n            - method: GET\n              name: list-dlq-sources\n              description: \"List dead-letter queue source queues\"\n              call: \"amazon-sqs.list-dead-letter-source-queues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: sqs-queuing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon SQS message queuing.\"\n      tools:\n        - name: list-queues\n          description: \"List all SQS queues\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amazon-sqs.list-queues\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-queue\n          description: \"Create a new standard or FIFO queue\"\n          hints:\n     \

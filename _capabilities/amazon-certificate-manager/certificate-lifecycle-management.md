@@ -27,35 +27,37 @@ personas: []
 provider_name: Amazon Certificate Manager
 provider_slug: amazon-certificate-manager
 search_terms:
-- aws
-- security
-- request a new ssl/tls certificate with dns or email validation
-- DevOps Engineer
-- inspect or delete a specific certificate
-- describe certificate
-- encryption
-- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
-- list all acm certificates with optional status filtering
-- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
-- delete an acm certificate
-- Security Engineer
-- ssl
 - ssl/tls certificate provisioning, validation, and lifecycle operations
+- engineers managing infrastructure and certificate rotation for web services
+- delete certificate
+- request a new acm ssl/tls certificate for a domain using dns or email validation
+- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
+- devops
+- list certificates
+- encryption
+- request a new ssl/tls certificate with dns or email validation
+- security professionals overseeing certificate compliance and expiry monitoring
+- describe certificate
+- inspect or delete a specific certificate
+- aws
+- Security Engineer
+- manage the full lifecycle of acm ssl/tls certificates
+- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- DevOps Engineer
+- security
+- get full details of a specific acm certificate
 - amazon web services
+- list all acm certificates with optional status filtering
+- delete an acm certificate
+- request certificate
+- delete an acm certificate by arn. cannot delete certificates in use by aws services.
+- ssl
 - certificates
 - tls
-- devops
-- delete an acm certificate by arn. cannot delete certificates in use by aws services.
-- get full details of a specific acm certificate
-- manage the full lifecycle of acm ssl/tls certificates
-- delete certificate
-- request certificate
-- security professionals overseeing certificate compliance and expiry monitoring
-- list certificates
 - list all acm ssl/tls certificates, optionally filtered by status
-- request a new acm ssl/tls certificate for a domain using dns or email validation
-- engineers managing infrastructure and certificate rotation for web services
 slug: certificate-lifecycle-management
+source_filename: certificate-lifecycle-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Certificate Manager Certificate Lifecycle Management\"\n  description: \"Unified workflow for managing SSL/TLS certificate lifecycles on AWS, enabling DevOps engineers and security teams to provision, inspect, and retire certificates for websites and internal services.\"\n  tags:\n    - Amazon Web Services\n    - Certificates\n    - SSL\n    - TLS\n    - Security\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: acm\n      location: ./shared/certificate-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: certificate-lifecycle-api\n      description: \"Unified REST API for SSL/TLS certificate lifecycle management on AWS.\"\n      resources:\n        - path: /v1/certificates\n\
   \          name: certificates\n          description: \"Manage the full lifecycle of ACM SSL/TLS certificates\"\n          operations:\n            - method: GET\n              name: list-certificates\n              description: \"List all ACM certificates with optional status filtering\"\n              call: \"acm.list-certificates\"\n              with:\n                maxItems: \"rest.max_items\"\n                nextToken: \"rest.next_token\"\n                certificateStatuses: \"rest.statuses\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: request-certificate\n              description: \"Request a new SSL/TLS certificate with DNS or email validation\"\n              call: \"acm.request-certificate\"\n              with:\n                DomainName: \"rest.domain_name\"\n                ValidationMethod: \"rest.validation_method\"\n              outputParameters:\n           \
   \     - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/certificates/{certificateArn}\n          name: certificate\n          description: \"Inspect or delete a specific certificate\"\n          operations:\n            - method: GET\n              name: describe-certificate\n              description: \"Get full details of a specific ACM certificate\"\n              call: \"acm.describe-certificate\"\n              with:\n                certificateArn: \"rest.certificateArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-certificate\n              description: \"Delete an ACM certificate\"\n              call: \"acm.delete-certificate\"\n              with:\n                certificateArn: \"rest.certificateArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n \

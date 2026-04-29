@@ -11,28 +11,30 @@ personas: []
 provider_name: Amazon S3 API
 provider_slug: aws-s3
 search_terms:
-- delete_object
-- aws
-- list_objects
-- upload_object
-- copy an object within or between s3 buckets
-- delete an s3 bucket
-- get_object
-- create a new s3 bucket
-- object storage
-- list_buckets
-- list objects in an s3 bucket
+- data management
 - delete_bucket
+- list_buckets
 - cloud storage
+- delete an object from s3
+- delete an s3 bucket
 - create_bucket
+- storage
+- aws
 - upload an object to s3
 - copy_object
-- download an object from s3
-- data management
-- delete an object from s3
+- copy an object within or between s3 buckets
+- upload_object
+- create a new s3 bucket
 - list all s3 buckets in the account
-- storage
+- list_objects
+- delete_object
+- get_object
+- download an object from s3
+- list objects in an s3 bucket
+- object storage
 slug: object-storage-workflow
+source_filename: object-storage-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon S3 Object Storage Workflow\n  description: Workflow capability for managing Amazon S3 buckets and objects for scalable object storage.\n  tags:\n    - Cloud Storage\n    - Object Storage\n    - Data Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n    - import: s3\n      location: ./shared/s3.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workflow-api\n      resources:\n        - label: List Buckets\n          method: GET\n          path: /buckets\n        - label: Create Bucket\n          method: POST\n          path: /buckets\n        - label: Delete Bucket\n          method: DELETE\n          path: /buckets/{bucket}\n        - label: List Objects\n          method: GET\n          path: /buckets/{bucket}/objects\n\
   \        - label: Get Object\n          method: GET\n          path: /buckets/{bucket}/objects/{key}\n        - label: Upload Object\n          method: PUT\n          path: /buckets/{bucket}/objects/{key}\n        - label: Delete Object\n          method: DELETE\n          path: /buckets/{bucket}/objects/{key}\n        - label: Copy Object\n          method: POST\n          path: /buckets/{bucket}/objects/{key}/copy\n    - type: mcp\n      port: 9090\n      namespace: workflow-mcp\n      transport: http\n      tools:\n        - name: list_buckets\n          description: List all S3 buckets in the account\n        - name: create_bucket\n          description: Create a new S3 bucket\n        - name: delete_bucket\n          description: Delete an S3 bucket\n        - name: list_objects\n          description: List objects in an S3 bucket\n        - name: get_object\n          description: Download an object from S3\n        - name: upload_object\n          description: Upload an object to\
   \ S3\n        - name: delete_object\n          description: Delete an object from S3\n        - name: copy_object\n          description: Copy an object within or between S3 buckets\n"

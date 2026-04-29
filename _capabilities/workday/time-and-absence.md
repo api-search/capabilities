@@ -20,41 +20,43 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- submit a time-off request
-- time entries
+- list balances
 - financial management
-- list time-off balances
-- time-off balances
+- hcm
+- time request entry
+- submit a leave of absence request
+- time tracking
+- list time-off entries
+- absence request time off
+- time list timesheets
+- time create clock event
+- absence management
+- time entries
+- absence get balances
 - absence get eligible types
 - absence list leaves
-- time tracking
-- hcm
+- submit a time entry request
+- enterprise software
+- time-off balances
+- time list clock events
+- saas
+- submit a time-off request
+- list time entries
+- list leaves of absence
+- list time clock events
+- cloud computing
+- absence list time off entries
+- list time-off balances
+- list timesheets
+- get eligible absence types for a worker
+- create a time clock event
 - get time-off balances for a worker
 - absence request leave
-- time create clock event
-- enterprise software
-- list time clock events
-- create a time clock event
-- time list clock events
 - time list entries
-- submit a time entry request
-- list leaves of absence
-- saas
-- submit a leave of absence request
-- time list timesheets
-- list time entries
-- time request entry
-- absence management
-- list time-off entries
 - workday
-- cloud computing
-- absence get balances
-- absence list time off entries
-- absence request time off
-- get eligible absence types for a worker
-- list timesheets
-- list balances
 slug: time-and-absence
+source_filename: time-and-absence.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Time and Absence\"\n  description: \"Unified time and absence management combining Time Tracking and Absence Management APIs for HR operations to manage timesheets, time-off requests, and leave balances.\"\n  tags:\n    - Workday\n    - Time Tracking\n    - Absence Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-time-tracking\n      location: ./shared/time-tracking.yaml\n    - import: workday-absence\n      location: ./shared/absence-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: time-absence-api\n      description: \"Unified REST API for time and absence management.\"\n      resources:\n        - path: /v1/time-entries\n          name: time-entries\n          description: \"Time entries\"\n          operations:\n            - method:\
   \ GET\n              name: list-time-entries\n              description: \"List time entries\"\n              call: \"workday-time-tracking.get-time-entries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/time-off-balances\n          name: balances\n          description: \"Time-off balances\"\n          operations:\n            - method: GET\n              name: list-balances\n              description: \"List time-off balances\"\n              call: \"workday-absence.get-time-off-balances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: time-absence-mcp\n      transport: http\n      description: \"MCP server for AI-assisted time and absence management.\"\n      tools:\n        - name: time-list-clock-events\n          description: \"List time clock events\"\n          hints:\n            readOnly: true\n\
   \          call: \"workday-time-tracking.get-time-clock-events\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: time-create-clock-event\n          description: \"Create a time clock event\"\n          hints:\n            readOnly: false\n          call: \"workday-time-tracking.create-time-clock-event\"\n          with:\n            worker: \"tools.worker\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: time-list-entries\n          description: \"List time entries\"\n          hints:\n            readOnly: true\n          call: \"workday-time-tracking.get-time-entries\"\n          with:\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: time-list-timesheets\n          description: \"List timesheets\"\

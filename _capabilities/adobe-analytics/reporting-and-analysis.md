@@ -96,98 +96,100 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- create repair job
-- adobe analytics
-- list calculated metrics
-- metric discovery.
-- create a data repair job to delete or transform ingested data.
-- get repair job
-- list all tags used on analytics components.
-- single report suite.
-- customer intelligence
-- create calculated metric
-- get server call estimate
-- calculated metrics
-- create an annotation.
-- create an annotation for a report suite date range.
-- create a new calculated metric.
-- list calculated metrics.
-- list saved date ranges.
-- list tags
-- get status of a specific data repair job.
-- list dimensions
+- annotation management.
+- create a repair job.
+- permanently delete a calculated metric.
+- create a new analytics segment.
+- calculated metric management.
+- get calculated metric
+- get repair job status.
+- delete calculated metric
+- data repair jobs.
+- segments
 - list report suites
+- list recent data repair jobs for a report suite.
+- create a segment.
+- get report suite details.
+- analytics
+- list segments.
+- adobe
+- list repair jobs.
+- analytics reporting.
+- create an annotation.
+- list saved date ranges.
+- data repair cost estimation.
+- data governance
+- update an existing segment.
+- adobe analytics
+- get segment
+- segment management.
+- update calculated metric
+- create a calculated metric.
+- run report
+- create calculated metric
+- estimate the scope and cost of a data repair job.
+- analysis
+- customer intelligence
+- list annotations.
+- web analytics
+- list dimensions
+- get server call estimate
+- single calculated metric operations.
+- estimate repair scope.
+- report suite management.
+- delete a segment.
+- update segment
+- list date ranges
+- list tags
+- create repair job
+- permanently delete a segment.
+- list accessible report suites.
+- list dimensions for a report suite.
+- update a calculated metric.
+- get a calculated metric.
+- list all dimensions available in a report suite.
+- get details for a specific report suite.
+- list calculated metrics
+- update a segment.
+- run an adobe analytics report with metrics, dimensions, and date filters.
+- reporting
+- get a segment.
+- dimension discovery.
+- get status of a specific data repair job.
+- delete a calculated metric.
+- create a data repair job to delete or transform ingested data.
+- retrieve a calculated metric by id.
+- list annotations
+- list analytics annotations.
+- business intelligence
+- run an analytics report.
+- list metrics
+- calculated metrics
+- create annotation
+- create a new calculated metric.
+- metric discovery.
 - digital marketing
 - marketing
-- create segment
-- report suite management.
-- delete a calculated metric.
-- analysis
-- list accessible report suites.
-- delete calculated metric
-- dimension discovery.
-- calculated metric management.
 - list segments
-- retrieve a specific segment by id.
-- create a calculated metric.
-- create annotation
-- reporting
-- run an adobe analytics report with metrics, dimensions, and date filters.
-- estimate the scope and cost of a data repair job.
-- list report suites.
-- data repair jobs.
-- update a segment.
-- list metrics for a report suite.
-- list segments.
-- get report suite
-- single calculated metric operations.
-- segments
-- delete a segment.
-- create a segment.
-- business intelligence
-- run report
-- list repair jobs
-- get calculated metric
-- data repair cost estimation.
-- list metrics
-- single repair job.
-- segment management.
-- permanently delete a segment.
-- delete segment
-- analytics reporting.
-- update a calculated metric.
-- update segment
-- data governance
-- list annotations
-- annotation management.
-- list dimensions for a report suite.
-- single segment operations.
-- list date ranges
-- list annotations.
-- list repair jobs.
+- create an annotation for a report suite date range.
 - list all metrics available in a report suite.
-- analytics
-- create a repair job.
-- get repair job status.
-- get segment
+- single repair job.
 - list analytics segments.
-- get a calculated metric.
-- get a segment.
-- list all dimensions available in a report suite.
-- permanently delete a calculated metric.
-- web analytics
-- update an existing segment.
-- retrieve a calculated metric by id.
-- list recent data repair jobs for a report suite.
-- get report suite details.
-- run an analytics report.
-- get details for a specific report suite.
-- update calculated metric
-- estimate repair scope.
-- adobe
-- list analytics annotations.
-- create a new analytics segment.
+- list calculated metrics.
+- list all tags used on analytics components.
+- list repair jobs
+- single segment operations.
+- delete segment
+- list report suites.
+- create segment
+- list metrics for a report suite.
+- single report suite.
+- get report suite
+- retrieve a specific segment by id.
+- get repair job
 slug: reporting-and-analysis
+source_filename: reporting-and-analysis.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Analytics Reporting And Analysis\"\n  description: \"Unified workflow for analytics reporting, component management, and data governance combining the Analytics 2.0 API for reports, segments, calculated metrics, and the Data Repair API for data quality management. Used by digital analysts, marketing analysts, and data governance teams.\"\n  tags:\n    - Adobe Analytics\n    - Reporting\n    - Analysis\n    - Segments\n    - Calculated Metrics\n    - Data Governance\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ANALYTICS_BEARER_TOKEN: ADOBE_ANALYTICS_BEARER_TOKEN\n      ADOBE_ANALYTICS_API_KEY: ADOBE_ANALYTICS_API_KEY\n      ADOBE_ANALYTICS_GLOBAL_COMPANY_ID: ADOBE_ANALYTICS_GLOBAL_COMPANY_ID\n\ncapability:\n  consumes:\n    - import: adobe-analytics\n      location: ./shared/analytics-api.yaml\n    - import: adobe-data-repair\n      location: ./shared/data-repair.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adobe-reporting-analysis-api\n      description: \"Unified REST API for Adobe Analytics reporting, component management, and data governance.\"\n      resources:\n        - path: /v1/reports\n          name: reports\n          description: \"Analytics reporting.\"\n          operations:\n            - method: POST\n              name: run-report\n              description: \"Run an analytics report.\"\n              call: \"adobe-analytics.run-report\"\n              with:\n                rsid: \"rest.rsid\"\n                globalFilters: \"rest.globalFilters\"\n                metricContainer: \"rest.metricContainer\"\n                dimension: \"rest.dimension\"\n                settings: \"rest.settings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments\n          name: segments\n          description: \"Segment management.\"\n      \
   \    operations:\n            - method: GET\n              name: list-segments\n              description: \"List segments.\"\n              call: \"adobe-analytics.list-segments\"\n              with:\n                limit: \"rest.limit\"\n                page: \"rest.page\"\n                includeType: \"rest.includeType\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-segment\n              description: \"Create a segment.\"\n              call: \"adobe-analytics.create-segment\"\n              with:\n                name: \"rest.name\"\n                rsid: \"rest.rsid\"\n                definition: \"rest.definition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/segments/{segmentId}\n          name: segment-detail\n          description: \"Single segment operations.\"\n          operations:\n   \

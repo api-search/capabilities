@@ -60,55 +60,57 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- get flow assets
-- whatsapp
-- deprecates a published flow.
-- delete flow
-- unsubscribe app
-- creates a new flow.
-- creates a new interactive flow. supports appointment booking, surveys, lead capture, and other guided experiences.
-- updates a draft flow.
-- create flow
-- update flow
-- flow json assets.
-- flow management.
-- updates a draft flow. only draft flows can be updated; published flows must be cloned.
-- subscribes app to webhooks.
-- unsubscribes app from webhooks.
-- lists all flows for a waba.
-- publishes a draft flow.
-- uploads or replaces the flow json definition file. the file is validated on upload.
-- lists all apps subscribed to webhook events for a waba.
-- upload flow json
-- get flow
-- lists webhook subscriptions.
-- webhooks
-- subscribe app
 - list flows
-- retrieves the flow json assets including download urls.
-- unsubscribes the current app from webhook events.
-- flows
-- webhook subscription management.
-- automation
-- lists all flows for a whatsapp business account.
-- list subscribed apps
-- uploads flow json definition.
-- publish flow
-- deletes a draft flow.
-- publishes a draft flow, making it available for use in messages. requires valid flow json with no errors.
+- lists all flows for a waba.
 - individual flow management.
-- conversational design
-- interactive experiences
-- deprecate a flow.
-- retrieves details about a specific flow including status, categories, and validation errors.
-- deletes a draft flow. only draft flows can be deleted; published flows must be deprecated.
-- subscribes the current app to receive webhook events for a waba.
-- publish a flow.
 - retrieves flow assets.
-- deprecates a published flow. deprecated flows remain in history but cannot be sent to customers.
 - retrieves details about a flow.
+- conversational design
+- update flow
+- deletes a draft flow.
+- delete flow
+- webhook subscription management.
+- lists all apps subscribed to webhook events for a waba.
+- automation
+- get flow
+- uploads or replaces the flow json definition file. the file is validated on upload.
+- uploads flow json definition.
+- subscribes the current app to receive webhook events for a waba.
+- list subscribed apps
+- deletes a draft flow. only draft flows can be deleted; published flows must be deprecated.
+- unsubscribe app
+- flow management.
+- publishes a draft flow.
+- get flow assets
+- unsubscribes the current app from webhook events.
+- whatsapp
+- flows
+- creates a new flow.
+- updates a draft flow.
+- deprecates a published flow.
+- publishes a draft flow, making it available for use in messages. requires valid flow json with no errors.
+- publish a flow.
+- deprecates a published flow. deprecated flows remain in history but cannot be sent to customers.
+- lists webhook subscriptions.
+- deprecate a flow.
+- webhooks
+- publish flow
+- lists all flows for a whatsapp business account.
+- retrieves the flow json assets including download urls.
+- unsubscribes app from webhooks.
+- subscribes app to webhooks.
+- interactive experiences
+- subscribe app
+- retrieves details about a specific flow including status, categories, and validation errors.
+- updates a draft flow. only draft flows can be updated; published flows must be cloned.
 - deprecate flow
+- upload flow json
+- create flow
+- flow json assets.
+- creates a new interactive flow. supports appointment booking, surveys, lead capture, and other guided experiences.
 slug: flows-and-automation
+source_filename: flows-and-automation.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WhatsApp Flows And Automation\"\n  description: \"Unified workflow for creating and managing interactive flows, publishing lifecycle management, and webhook subscriptions. Combines Flows API and Business Management API webhook capabilities used by developers building guided conversational experiences and automation integrations.\"\n  tags:\n    - WhatsApp\n    - Flows\n    - Automation\n    - Webhooks\n    - Interactive Experiences\n    - Conversational Design\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: whatsapp-flows\n      location: ./shared/flows.yaml\n    - import: whatsapp-business-mgmt\n      location: ./shared/business-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: whatsapp-flows-automation-api\n      description: \"Unified REST API for WhatsApp\
   \ flows, lifecycle management, and webhook subscriptions.\"\n      resources:\n        - path: /v1/flows\n          name: flows\n          description: \"Flow management.\"\n          operations:\n            - method: GET\n              name: list-flows\n              description: \"Lists all flows for a WABA.\"\n              call: \"whatsapp-flows.list-flows\"\n              with:\n                waba_id: \"rest.waba_id\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-flow\n              description: \"Creates a new flow.\"\n              call: \"whatsapp-flows.create-flow\"\n              with:\n                waba_id: \"rest.waba_id\"\n                name: \"rest.name\"\n                categories: \"rest.categories\"\n                clone_flow_id: \"rest.clone_flow_id\"\n                endpoint_uri: \"rest.endpoint_uri\"\n    \
   \          outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/flows/{flow_id}\n          name: flow\n          description: \"Individual flow management.\"\n          operations:\n            - method: GET\n              name: get-flow\n              description: \"Retrieves details about a flow.\"\n              call: \"whatsapp-flows.get-flow\"\n              with:\n                flow_id: \"rest.flow_id\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: update-flow\n              description: \"Updates a draft flow.\"\n              call: \"whatsapp-flows.update-flow\"\n              with:\n                flow_id: \"rest.flow_id\"\n                name: \"rest.name\"\n                categories: \"rest.categories\"\n                endpoint_uri: \"rest.endpoint_uri\"\n                application_id:\

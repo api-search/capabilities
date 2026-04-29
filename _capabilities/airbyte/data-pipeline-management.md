@@ -47,62 +47,64 @@ personas: []
 provider_name: Airbyte
 provider_slug: airbyte
 search_terms:
-- airbyte
-- etl
-- elt
-- monitor and trigger sync jobs.
-- list all data sources.
-- monitoring and operating sync pipelines.
-- list all destinations.
-- create a new airbyte data source connector.
-- list workspaces.
-- manage workspaces.
-- delete an airbyte source connector.
-- list airbyte connections between sources and destinations.
-- manage data source connectors.
-- connectors
-- open source
-- manage source-to-destination connections.
-- user, workspace, and organizational management.
-- data integration
 - create source
-- create a new airbyte data destination connector.
-- create a new data source.
-- builds and maintains data pipelines using airbyte connectors and connections.
-- trigger an airbyte sync job for a connection.
-- trigger job
-- list connections
-- list all connections.
-- create destination
-- trigger a sync job.
-- list airbyte sync jobs with optional status filtering.
-- manage airbyte sources, destinations, connections, and sync jobs.
-- delete source
-- list sync jobs
-- manage data destination connectors.
-- data engineering
-- data pipeline
-- list sources
-- trigger sync
-- create connection
-- moving data between sources and destinations.
-- list sync jobs.
-- create a new destination.
-- list jobs
-- list all airbyte data source connectors.
-- list all airbyte data destination connectors.
-- list destinations
-- check the status of an airbyte sync job.
-- Data Engineer
-- Platform Admin
 - get job status
-- list airbyte workspaces.
-- manages airbyte workspaces, users, permissions, and organizational settings.
+- list all connections.
+- delete source
+- airbyte
+- monitor and trigger sync jobs.
+- manage workspaces.
+- create a new data source.
 - list workspaces
+- manage data source connectors.
+- list airbyte sync jobs with optional status filtering.
+- create a new airbyte data source connector.
+- list airbyte workspaces.
+- Platform Admin
+- Data Engineer
+- data pipeline
+- list sync jobs
+- trigger an airbyte sync job for a connection.
+- create destination
+- delete an airbyte source connector.
+- create a new connection.
+- list jobs
+- create a new airbyte data destination connector.
+- list all destinations.
+- data integration
+- create connection
+- list connections
+- trigger a sync job.
+- user, workspace, and organizational management.
+- list workspaces.
+- list all airbyte data source connectors.
+- trigger sync
+- open source
 - data
 - create an airbyte connection between a source and destination.
-- create a new connection.
+- list all data sources.
+- manage source-to-destination connections.
+- monitoring and operating sync pipelines.
+- moving data between sources and destinations.
+- manage data destination connectors.
+- create a new destination.
+- check the status of an airbyte sync job.
+- manage airbyte sources, destinations, connections, and sync jobs.
+- list sources
+- connectors
+- list airbyte connections between sources and destinations.
+- list all airbyte data destination connectors.
+- elt
+- list sync jobs.
+- manages airbyte workspaces, users, permissions, and organizational settings.
+- list destinations
+- trigger job
+- builds and maintains data pipelines using airbyte connectors and connections.
+- data engineering
+- etl
 slug: data-pipeline-management
+source_filename: data-pipeline-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Airbyte Data Pipeline Management\"\n  description: \"Unified workflow capability for managing Airbyte data integration pipelines — sources, destinations, connections, and sync jobs. Used by data engineers and platform teams.\"\n  tags:\n    - Airbyte\n    - Data Integration\n    - ETL\n    - ELT\n    - Data Pipeline\n    - Data Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRBYTE_API_TOKEN: AIRBYTE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: airbyte\n      location: ./shared/airbyte-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airbyte-pipeline-api\n      description: \"Unified REST API for Airbyte data pipeline management.\"\n      resources:\n        - path: /v1/sources\n          name: sources\n          description: \"Manage data source connectors.\"\n          operations:\n            - method: GET\n              name:\
   \ list-sources\n              description: \"List all data sources.\"\n              call: \"airbyte.list-sources\"\n              with:\n                workspaceId: \"rest.workspaceId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-source\n              description: \"Create a new data source.\"\n              call: \"airbyte.create-source\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/destinations\n          name: destinations\n          description: \"Manage data destination connectors.\"\n          operations:\n            - method: GET\n              name: list-destinations\n              description: \"List all destinations.\"\n              call: \"airbyte.list-destinations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method:\
   \ POST\n              name: create-destination\n              description: \"Create a new destination.\"\n              call: \"airbyte.create-destination\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections\n          name: connections\n          description: \"Manage source-to-destination connections.\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List all connections.\"\n              call: \"airbyte.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: \"Create a new connection.\"\n              call: \"airbyte.create-connection\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n\

@@ -29,54 +29,56 @@ personas: []
 provider_name: Spot
 provider_slug: spot
 search_terms:
-- autoscaling
-- get aws savings analysis
-- get billing cost analysis
-- eco get unused ris aws
-- eco list commitment plans gcp
-- list aws reserved instances
-- billing list account families
-- finops
-- list aws savings plans
-- cloud infrastructure
-- eco list reserved instances aws
-- list billing accounts
-- cost optimization
-- get aws commitment analysis
-- list gcp commitment plans
-- savings analysis
-- containers
-- get unused aws reserved instances
 - get azure savings analysis
-- eco list savings plans aws
-- get a specific aws commitment plan
-- billing accounts
-- eco get commitment plan aws
 - list azure commitment plans
-- cost analysis
-- billing
-- list spot accounts for context
-- spot instances
-- cloud commitment plans
-- kubernetes
-- list billing engine accounts
-- eco list commitment plans aws
-- admin list accounts
-- list aws commitment plans
-- list billing account families
-- eco get savings analysis gcp
-- billing get cost analysis
-- eco list commitment plans azure
 - get cost analysis
+- list aws reserved instances
+- cost optimization
+- eco get unused ris aws
+- containers
 - spot
-- eco get savings analysis azure
-- list commitment plans
-- billing list accounts
-- eco get savings analysis aws
+- savings analysis
+- billing accounts
+- get aws savings analysis
 - get gcp savings analysis
-- eco get commitment analysis aws
+- get a specific aws commitment plan
+- autoscaling
+- eco get commitment plan aws
+- cloud commitment plans
 - get savings analysis
+- list spot accounts for context
+- list aws commitment plans
+- eco get commitment analysis aws
+- list aws savings plans
+- list commitment plans
+- list billing accounts
+- cloud infrastructure
+- admin list accounts
+- eco list commitment plans aws
+- list billing engine accounts
+- eco list reserved instances aws
+- spot instances
+- eco get savings analysis gcp
+- finops
+- cost analysis
+- list billing account families
+- billing
+- billing list account families
+- get aws commitment analysis
+- eco list savings plans aws
+- get unused aws reserved instances
+- eco get savings analysis azure
+- billing get cost analysis
+- billing list accounts
+- kubernetes
+- get billing cost analysis
+- eco list commitment plans gcp
+- eco get savings analysis aws
+- list gcp commitment plans
+- eco list commitment plans azure
 slug: finops
+source_filename: finops.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Spot FinOps\"\n  description: \"Unified workflow for cloud financial operations combining commitment management (Eco), billing analytics (Billing Engine), and cost optimization. Used by FinOps teams, cloud finance analysts, and platform administrators.\"\n  tags:\n    - Spot\n    - FinOps\n    - Cost Optimization\n    - Billing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPOT_API_TOKEN: SPOT_API_TOKEN\n\ncapability:\n  consumes:\n    - import: spot-eco\n      location: ./shared/eco.yaml\n    - import: spot-billing\n      location: ./shared/billing-engine.yaml\n    - import: spot-admin\n      location: ./shared/administration.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: spot-finops-api\n      description: \"Unified REST API for Spot FinOps operations.\"\n      resources:\n        - path: /v1/commitment-plans\n          name: commitment-plans\n\
   \          description: \"Cloud commitment plans\"\n          operations:\n            - method: GET\n              name: list-commitment-plans\n              description: \"List AWS commitment plans\"\n              call: \"spot-eco.list-commitment-plans-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/savings-analysis\n          name: savings-analysis\n          description: \"Savings analysis\"\n          operations:\n            - method: GET\n              name: get-savings-analysis\n              description: \"Get AWS savings analysis\"\n              call: \"spot-eco.get-savings-analysis-aws\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/billing-accounts\n          name: billing-accounts\n          description: \"Billing accounts\"\n          operations:\n            - method: GET\n              name: list-billing-accounts\n \
   \             description: \"List billing accounts\"\n              call: \"spot-billing.list-billing-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cost-analysis\n          name: cost-analysis\n          description: \"Cost analysis\"\n          operations:\n            - method: GET\n              name: get-cost-analysis\n              description: \"Get cost analysis\"\n              call: \"spot-billing.get-cost-analysis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: spot-finops-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Spot FinOps operations.\"\n      tools:\n        - name: eco-list-commitment-plans-aws\n          description: \"List AWS commitment plans\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"spot-eco.list-commitment-plans-aws\"\

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: azure-container-apps-openapi.yml
+  format: yaml
+  label: azure-container-apps
+  slug: azure-container-apps
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/azure-container-apps/refs/heads/main/openapi/azure-container-apps-openapi.yml
 categories:
 - container-orchestration
 consumed_apis:
@@ -23,36 +30,38 @@ personas: []
 provider_name: Azure Container Apps
 provider_slug: azure-container-apps
 search_terms:
-- list all managed environments
-- DevOps Engineer
-- delete container app
-- manages the container infrastructure and environments
-- azure
-- list environments
-- list all managed container app environments
-- Platform Engineer
-- serverless compute and job execution
-- container app job management
-- container app deployment and management
-- containers
-- list container apps
-- delete an azure container app
-- list all container apps
-- list all container app jobs
-- microservices
-- deploys and manages containerized application workloads
-- devops
-- create or update an azure container app
 - list all azure container apps in a subscription
-- kubernetes
-- container app management
+- containers
 - manage containerized applications, environments, and jobs
-- list jobs
 - managed environment management
+- create or update an azure container app
+- Platform Engineer
+- container app deployment and management
 - serverless
+- devops
+- azure
+- list all container apps
 - create container app
+- list jobs
+- delete container app
+- delete an azure container app
+- serverless compute and job execution
+- list all managed environments
 - dapr
+- list container apps
+- list all container app jobs
+- container app management
+- DevOps Engineer
+- container app job management
+- microservices
+- manages the container infrastructure and environments
+- list all managed container app environments
+- kubernetes
+- list environments
+- deploys and manages containerized application workloads
 slug: container-apps-management
+source_filename: container-apps-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Apps Management\"\n  description: \"Workflow capability for managing containerized applications, environments, and jobs in Azure Container Apps. Used by platform engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Containers\n    - Microservices\n    - Serverless\n    - DevOps\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-container-apps\n      location: ./shared/azure-container-apps.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: container-apps-management-api\n      description: \"Unified REST API for Azure Container Apps management.\"\n      resources:\n        - path: /v1/container-apps\n          name: container-apps\n          description: \"Container app management\"\n          operations:\n\
   \            - method: GET\n              name: list-container-apps\n              description: \"List all container apps\"\n              call: \"azure-container-apps.list-container-apps\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments\n          name: environments\n          description: \"Managed environment management\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"List all managed environments\"\n              call: \"azure-container-apps.list-environments\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Container app job management\"\n         \
   \ operations:\n            - method: GET\n              name: list-jobs\n              description: \"List all container app jobs\"\n              call: \"azure-container-apps.list-jobs\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: container-apps-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Container Apps management.\"\n      tools:\n        - name: list-container-apps\n          description: \"List all Azure Container Apps in a subscription\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-container-apps.list-container-apps\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-container-app\n\

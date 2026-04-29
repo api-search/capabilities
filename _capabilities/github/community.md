@@ -56,77 +56,79 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- star a repository
-- list discussions
-- update gist
-- update a gist
-- list starred
-- getgist
-- individual gist operations
-- fork gist
-- get organization
-- get a user
-- unfollow user
-- software development
-- get a gist
-- get user
-- list team discussions
-- star gist
-- community
+- get a team discussion
+- user profile
+- list gist comments
 - list followers of a user
+- update a gist
+- get a user profile
+- get user
+- github
+- list public gists
+- getUser
+- get a gist
+- get a user
+- list organization members
+- team discussions
+- individual gist operations
+- starred gists
+- fork a gist
+- discussions
+- community
+- star a gist
+- star repository
+- platform
+- create a team discussion
+- gist management
+- source control
+- follow a user
+- get discussion
+- update gist
+- get an organization
+- fork gist
+- get gist
+- pipelines
+- listFollowersOfUser
+- organization members
+- unfollow user
+- list followers
+- create gist comment
+- listDiscussions
+- star a repository
+- listUsers
+- star gist
+- create a gist comment
+- software development
+- user followers
+- list users
+- search users
+- createDiscussion
+- users
+- get organization
+- list discussions
+- list team discussions
+- organizations
 - user listing
 - list org members
-- create a team discussion
-- listFollowersOfUser
-- list gist comments
-- organization members
-- organizations
-- create discussion
-- discussions
-- create gist comment
-- star a gist
-- gists
-- unfollow a user
-- follow user
-- team discussions
-- listDiscussions
-- get gist
-- createDiscussion
-- search users
-- get a team discussion
-- follow a user
-- listStarredGists
-- pipelines
-- list users
-- organization profile
-- list organization members
-- list starred gists
-- user followers
-- user profile
-- list followers
-- create a gist comment
-- updategist
-- star repository
+- list starred repositories
 - t1
 - getAnOrganization
-- get an organization
-- get a user profile
-- starred gists
-- users
-- github
-- list starred repositories
-- platform
-- listPublicGists
+- gists
+- listStarredGists
+- updategist
+- follow user
+- list starred
+- unfollow a user
 - code
-- source control
-- get discussion
-- fork a gist
+- list starred gists
+- listPublicGists
+- organization profile
+- create discussion
+- getgist
 - listOrganizationMembers
-- gist management
-- listUsers
-- getUser
-- list public gists
 slug: community
+source_filename: community.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Community\"\n  description: \"Unified workflow for community engagement combining gists, user profiles, organizations, and team discussions. Used by community managers, developer advocates, and open source maintainers for community management and engagement.\"\n  tags:\n    - GitHub\n    - Community\n    - Gists\n    - Users\n    - Organizations\n    - Discussions\n  personas:\n    - community managers\n    - developer advocates\n    - open source maintainers\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-gists\n      location: \"./shared/gists.yaml\"\n    - import: github-users\n      location: \"./shared/users.yaml\"\n    - import: github-orgs\n      location: \"./shared/orgs.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: github-community-api\n      description:\
   \ \"Unified REST API for community engagement combining gists, users, organizations, and discussions.\"\n      resources:\n        - path: /v1/gists\n          name: gists\n          description: \"Gist management\"\n          operations:\n            - method: GET\n              name: listPublicGists\n              description: \"List public gists\"\n              call: \"github-gists.listPublicGists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gists/starred\n          name: starred-gists\n          description: \"Starred gists\"\n          operations:\n            - method: GET\n              name: listStarredGists\n              description: \"List starred gists\"\n              call: \"github-gists.listStarredGists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gists/{gist_id}\n          name: gist\n          description: \"Individual\
   \ gist operations\"\n          operations:\n            - method: GET\n              name: getgist\n              description: \"Get a gist\"\n              call: \"github-gists.getgist\"\n              with:\n                gist_id: \"rest.gist_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: updategist\n              description: \"Update a gist\"\n              call: \"github-gists.updategist\"\n              with:\n                gist_id: \"rest.gist_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User listing\"\n          operations:\n            - method: GET\n              name: listUsers\n              description: \"List users\"\n              call: \"github-users.listUsers\"\n              outputParameters:\n                - type: object\n\

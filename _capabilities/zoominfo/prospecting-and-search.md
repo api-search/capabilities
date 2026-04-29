@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: zoominfo-openapi.yml
+  format: yaml
+  label: zoominfo
+  slug: zoominfo
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/zoominfo/refs/heads/main/openapi/zoominfo-openapi.yml
 categories: []
 consumed_apis:
 - zoominfo
@@ -54,54 +61,56 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get available job function lookup values for filtering contact searches.
-- zoominfo
-- reference data for management levels.
-- get available industry code lookup values.
-- get available revenue range lookup values.
-- get departments
-- company data
-- search zoominfo news for recent company events and announcements.
-- search zoominfo contacts by criteria such as job title, company, location, and more.
-- search for buyer intent signals.
-- search for buying signals and scoops.
-- search contacts
-- get available department lookup values for filtering contact searches.
 - reference data for job functions.
-- get available job function lookup values.
-- get management levels
-- search news
-- marketing intelligence
-- get available department lookup values.
-- search for companies matching prospecting criteria.
-- contacts
-- sales intelligence
-- search zoominfo intent data to identify companies actively researching topics.
-- get job functions
-- get available industry code lookup values for filtering searches.
-- reference data for contact departments.
-- search scoops
-- search companies
-- reference data for revenue ranges.
-- get revenue ranges
-- reference data for intent topics.
-- lead generation
-- get intent topics
-- search for contacts matching prospecting criteria.
 - b2b
-- b2b data
+- search contacts
+- search for buying signals and scoops.
+- marketing intelligence
+- search for buyer intent signals.
+- get available job function lookup values.
+- get departments
+- get available revenue range lookup values.
 - contact database
-- search zoominfo companies by criteria such as industry, revenue, employee count, and more.
-- prospecting
-- search for company news articles.
-- search intent
-- get available management level lookup values.
+- search zoominfo intent data to identify companies actively researching topics.
+- reference data for contact departments.
+- lead generation
+- reference data for management levels.
 - get available intent topic lookup values.
+- search zoominfo news for recent company events and announcements.
+- search scoops
 - data
-- get industries
+- sales intelligence
+- search for companies matching prospecting criteria.
 - search zoominfo scoops for buying signals like funding, expansion, and leadership changes.
+- get available industry code lookup values for filtering searches.
+- company data
+- get revenue ranges
+- prospecting
+- search zoominfo companies by criteria such as industry, revenue, employee count, and more.
+- search zoominfo contacts by criteria such as job title, company, location, and more.
+- get available job function lookup values for filtering contact searches.
+- b2b data
+- get intent topics
+- get available department lookup values for filtering contact searches.
+- search for contacts matching prospecting criteria.
+- get management levels
+- search companies
+- search news
+- get job functions
+- get available industry code lookup values.
 - reference data for industry codes.
+- zoominfo
+- reference data for intent topics.
+- reference data for revenue ranges.
+- search intent
+- get available department lookup values.
+- get industries
+- search for company news articles.
+- contacts
+- get available management level lookup values.
 slug: prospecting-and-search
+source_filename: prospecting-and-search.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Prospecting And Search\"\n  description: \"Unified capability for B2B prospecting workflows combining contact search, company search, intent signals, news, and scoops. Used by sales development reps and account executives to identify and prioritize target accounts and contacts.\"\n  tags:\n    - ZoomInfo\n    - Prospecting\n    - Sales Intelligence\n    - B2B Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo\n      location: ./shared/zoominfo.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: prospecting-and-search-api\n      description: \"Unified REST API for B2B prospecting and search workflows.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"Search for\
   \ contacts matching prospecting criteria.\"\n          operations:\n            - method: POST\n              name: search-contacts\n              description: \"Search ZoomInfo contacts by criteria such as job title, company, location, and more.\"\n              call: \"zoominfo.search-contacts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/companies\n          name: companies\n          description: \"Search for companies matching prospecting criteria.\"\n          operations:\n            - method: POST\n              name: search-companies\n              description: \"Search ZoomInfo companies by criteria such as industry, revenue, employee count, and more.\"\n              call: \"zoominfo.search-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/scoops\n          name: scoops\n          description: \"Search for buying signals\
   \ and scoops.\"\n          operations:\n            - method: POST\n              name: search-scoops\n              description: \"Search ZoomInfo scoops for buying signals like funding, expansion, and leadership changes.\"\n              call: \"zoominfo.search-scoops\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/news\n          name: news\n          description: \"Search for company news articles.\"\n          operations:\n            - method: POST\n              name: search-news\n              description: \"Search ZoomInfo news for recent company events and announcements.\"\n              call: \"zoominfo.search-news\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/intent\n          name: intent\n          description: \"Search for buyer intent signals.\"\n          operations:\n            - method: POST\n              name: search-intent\n\

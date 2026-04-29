@@ -1,4 +1,17 @@
 ---
+api_specs:
+- filename: recruiting.yml
+  format: yaml
+  label: workday-recruiting
+  slug: workday-recruiting
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/recruiting.yml
+- filename: talent.yml
+  format: yaml
+  label: workday-talent
+  slug: workday-talent
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/talent.yml
 categories:
 - recruiting-ats
 consumed_apis:
@@ -29,60 +42,62 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- get talent profile for a worker
-- get a job requisition by id
-- candidates
-- recruiting get requisition
-- recruiting list prospects
-- performance request feedback
-- financial management
-- talent get skills
-- recruiting
-- list reviews
-- list requisitions
-- give a feedback badge to a worker
-- recruiting list applications
+- recruiting list postings
 - list all candidates
-- hcm
-- list succession plans
+- recruiting list prospects
 - talent get profile
-- job requisitions
-- list job requisitions
-- list candidates
+- performance reviews
+- list succession plans
+- list mentorships
 - get certifications for a worker
 - performance list badges
-- enterprise software
-- saas
-- request feedback for a worker
-- recruiting get candidate
-- talent list succession plans
-- workday
-- list feedback badges
-- performance give badge
-- cloud computing
-- list all job postings
-- talent management
-- performance
-- get a candidate by id
-- list mentorships
-- recruiting list requisitions
-- succession plans
-- recruiting list candidates
+- performance request feedback
+- financial management
 - talent get certifications
-- recruiting get application
-- get goals for a worker
-- performance reviews
-- performance get goals
-- recruiting list postings
-- list all prospects
-- list all job requisitions
-- list performance reviews
-- list all job applications
+- hcm
 - get a job application by id
-- talent list mentorships
+- list reviews
+- list all job requisitions
+- recruiting get requisition
+- list all job applications
+- performance give badge
+- talent management
 - performance list reviews
+- request feedback for a worker
+- list performance reviews
+- list feedback badges
+- list requisitions
+- talent list mentorships
+- talent get skills
+- job requisitions
+- performance get goals
+- recruiting list candidates
+- recruiting get application
+- get talent profile for a worker
+- give a feedback badge to a worker
+- recruiting
+- get a job requisition by id
+- get a candidate by id
+- enterprise software
 - get skills for a worker
+- saas
+- recruiting get candidate
+- recruiting list requisitions
+- workday
+- recruiting list applications
+- list all job postings
+- succession plans
+- cloud computing
+- talent list succession plans
+- get goals for a worker
+- list candidates
+- list all prospects
+- performance
+- list job requisitions
+- candidates
 slug: talent-and-performance
+source_filename: talent-and-performance.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Talent and Performance\"\n  description: \"Unified talent and performance management combining Recruiting, Talent, and Performance Management APIs for HR and talent leads to manage hiring pipelines, career development, and performance evaluations.\"\n  tags:\n    - Workday\n    - Talent Management\n    - Performance\n    - Recruiting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-recruiting\n      location: ./shared/recruiting.yaml\n    - import: workday-talent\n      location: ./shared/talent.yaml\n    - import: workday-performance\n      location: ./shared/performance-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: talent-performance-api\n      description: \"Unified REST API for talent and performance management.\"\n      resources:\n \
   \       - path: /v1/job-requisitions\n          name: requisitions\n          description: \"Job requisitions\"\n          operations:\n            - method: GET\n              name: list-requisitions\n              description: \"List job requisitions\"\n              call: \"workday-recruiting.get-job-requisitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/candidates\n          name: candidates\n          description: \"Candidates\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List candidates\"\n              call: \"workday-recruiting.get-candidates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/performance-reviews\n          name: reviews\n          description: \"Performance reviews\"\n          operations:\n            - method: GET\n              name: list-reviews\n\
   \              description: \"List performance reviews\"\n              call: \"workday-performance.get-performance-reviews\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/succession-plans\n          name: succession\n          description: \"Succession plans\"\n          operations:\n            - method: GET\n              name: list-succession-plans\n              description: \"List succession plans\"\n              call: \"workday-talent.get-succession-plans\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: talent-performance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted talent and performance management.\"\n      tools:\n        - name: recruiting-list-requisitions\n          description: \"List all job requisitions\"\n          hints:\n            readOnly: true\n      \

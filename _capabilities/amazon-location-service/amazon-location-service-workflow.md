@@ -10,26 +10,28 @@ personas: []
 provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
-- aws
-- retrieves the map resource details.
-- Administrator
-- amazon location service
-- integrates api into applications
-- geofencing
-- creates a map resource in your aws account.
 - geocoding
-- lists map resources in your aws account.
-- routing
-- unified workflow for amazon location service resource management
-- workflow
-- Developer
-- map resources list maps
-- location
+- Administrator
 - map resources describe map
 - manages resources and configurations
-- maps
+- integrates api into applications
+- Developer
+- workflow
+- routing
+- lists map resources in your aws account.
+- amazon location service
+- creates a map resource in your aws account.
+- location
 - map resources create map
+- map resources list maps
+- aws
+- geofencing
+- maps
+- unified workflow for amazon location service resource management
+- retrieves the map resource details.
 slug: amazon-location-service-workflow
+source_filename: amazon-location-service-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Location Service Workflow\n  description: Unified workflow capability for Amazon Location Service combining resource management and operations.\n  tags:\n  - Amazon Location Service\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: location-service\n    location: ./shared/location-service.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: location-service-api\n    description: REST API for Amazon Location Service workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: location-service-mcp\n    transport: http\n    description: MCP server for Amazon Location Service.\n    tools:\n    - name: map-resources-create-map\n      description: Creates a map resource in your AWS account.\n      hints:\n        readOnly:\
   \ false\n        idempotent: false\n      call: location-service.createmap\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: map-resources-list-maps\n      description: Lists map resources in your AWS account.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: location-service.listmaps\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: map-resources-describe-map\n      description: Retrieves the map resource details.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: location-service.describemap\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-location-service/refs/heads/main/capabilities/amazon-location-service-workflow.yaml

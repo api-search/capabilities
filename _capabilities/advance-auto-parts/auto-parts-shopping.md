@@ -22,44 +22,46 @@ personas: []
 provider_name: Advance Auto Parts
 provider_slug: advance-auto-parts
 search_terms:
-- do-it-yourself automotive enthusiast sourcing parts for self-repairs
-- automotive
-- parts catalog
-- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
-- diy customer
-- professional mechanic using the api to source parts for repair jobs
-- lookup vehicle makes
-- supply chain
-- loyalty
-- get available vehicle makes for a given model year for fitment-based part search.
-- get the range of supported vehicle model years for parts catalog lookups.
 - fleet manager
-- fleet operations manager ordering parts for vehicle maintenance programs
-- store inventory.
-- get available vehicle models for a year and make for fitment-based part search.
-- retail
-- find advance auto parts store locations near a zip code or city.
-- advance auto parts
-- part details.
-- get full specifications, fitment notes, and pricing for a specific automotive part.
-- check part inventory at stores.
-- check part availability
-- check inventory
-- search for automotive parts.
-- parts catalog search.
-- get part
+- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
 - e-commerce
 - find nearby stores
-- lookup vehicle models
 - search auto parts
-- check if an automotive part is in stock at nearby advance auto parts stores.
-- get vehicle years
-- get automotive part details.
-- search for automotive parts by keyword, part number, or vehicle year/make/model.
-- automotive technician
+- check part availability
+- retail
+- get available vehicle makes for a given model year for fitment-based part search.
+- check inventory
+- get the range of supported vehicle model years for parts catalog lookups.
+- part details.
+- fleet operations manager ordering parts for vehicle maintenance programs
 - get part details
+- store inventory.
+- get automotive part details.
 - search parts
+- professional mechanic using the api to source parts for repair jobs
+- diy customer
+- parts catalog search.
+- lookup vehicle makes
+- lookup vehicle models
+- find advance auto parts store locations near a zip code or city.
+- do-it-yourself automotive enthusiast sourcing parts for self-repairs
+- search for automotive parts.
+- check if an automotive part is in stock at nearby advance auto parts stores.
+- automotive
+- get full specifications, fitment notes, and pricing for a specific automotive part.
+- check part inventory at stores.
+- parts catalog
+- automotive technician
+- supply chain
+- advance auto parts
+- loyalty
+- get available vehicle models for a year and make for fitment-based part search.
+- get vehicle years
+- get part
+- search for automotive parts by keyword, part number, or vehicle year/make/model.
 slug: auto-parts-shopping
+source_filename: auto-parts-shopping.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Advance Auto Parts Shopping\"\n  description: \"Unified workflow capability for automotive parts discovery, fitment lookup, inventory checking, ordering, and loyalty management. Designed for automotive technicians, fleet managers, and DIY customers.\"\n  tags:\n    - Advance Auto Parts\n    - Automotive\n    - E-Commerce\n    - Parts Catalog\n    - Loyalty\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AAP_API_KEY: AAP_API_KEY\n      AAP_OAUTH_TOKEN: AAP_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: aap-catalog\n      location: ./shared/catalog-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8090\n      namespace: aap-shopping-api\n      description: \"Unified REST API for Advance Auto Parts catalog search, inventory, ordering, and loyalty.\"\n      resources:\n        - path: /v1/parts\n          name: parts\n          description: \"Parts catalog search.\"\
   \n          operations:\n            - method: GET\n              name: search-parts\n              description: \"Search for automotive parts.\"\n              call: \"aap-catalog.search-products\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/parts/{productId}\n          name: part\n          description: \"Part details.\"\n          operations:\n            - method: GET\n              name: get-part\n              description: \"Get automotive part details.\"\n              call: \"aap-catalog.get-product\"\n              with:\n                productId: \"rest.productId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory\n          name: inventory\n          description: \"Store inventory.\"\n          operations:\n            - method: GET\n              name: check-inventory\n              description: \"Check part inventory\
   \ at stores.\"\n              call: \"aap-catalog.check-inventory\"\n              with:\n                productId: \"rest.productId\"\n                zip: \"rest.zip\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: aap-shopping-mcp\n      transport: http\n      description: \"MCP server for AI-assisted automotive parts shopping — find parts, check availability, and manage orders.\"\n      tools:\n        - name: search-auto-parts\n          description: \"Search for automotive parts by keyword, part number, or vehicle year/make/model.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aap-catalog.search-products\"\n          with:\n            q: \"tools.q\"\n            year: \"tools.year\"\n            makeId: \"tools.makeId\"\n            modelId: \"tools.modelId\"\n          outputParameters:\n            - type: object\n      \

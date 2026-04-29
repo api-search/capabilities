@@ -38,46 +38,48 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a disbursement to send money to a recipient
-- process a direct service transaction
-- get currency conversion rate
-- create a funding transaction
-- fraud detection
-- create a funding transaction via mastercard send
-- financial services
-- create a cross-border international payment
-- create a person-to-person money transfer
-- disbursement transactions
-- get currency conversion rate for cross-border transactions
-- cross-border
-- disbursements
-- money transfer
-- get account info
-- create disbursement
-- create a cross-border payment
-- currency conversion rates
-- mastercard send
-- get account information for a send recipient
-- process direct transaction
 - digital identity
-- create a person-to-person transfer
-- create funding
-- verify account eligibility for mastercard send
-- payments
-- open banking
 - create p2p transfer
-- create a disbursement
-- cross-border payment processing
-- validate account details before transfer
+- create a funding transaction
+- create a disbursement to send money to a recipient
 - verify send account
-- mastercard
+- get currency conversion rate for cross-border transactions
+- create a cross-border payment
+- disbursement transactions
+- get account info
+- financial services
+- verify account eligibility for mastercard send
+- create a cross-border international payment
+- open banking
+- create a person-to-person money transfer
 - get conversion rate
+- cross-border payment processing
+- cross-border
 - validate account
-- credit cards
-- create cross border payment
-- p2p transfers
+- create a disbursement
+- create a funding transaction via mastercard send
 - funding transactions
+- get account information for a send recipient
+- disbursements
+- p2p transfers
+- process direct transaction
+- fraud detection
+- create disbursement
+- credit cards
+- currency conversion rates
+- payments
+- create cross border payment
+- validate account details before transfer
+- money transfer
+- mastercard send
+- create funding
+- mastercard
+- get currency conversion rate
+- create a person-to-person transfer
+- process a direct service transaction
 slug: money-transfer-and-disbursements
+source_filename: money-transfer-and-disbursements.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Money Transfer and Disbursements\"\n  description: \"Unified workflow for fintech developers and payment processors to manage real-time money transfers, P2P payments, disbursements, and cross-border services through Mastercard Send and related APIs.\"\n  tags:\n    - Mastercard\n    - Money Transfer\n    - Disbursements\n    - Cross-Border\n    - Mastercard Send\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: send-funding\n      location: ./shared/send-funding.yaml\n    - import: send-p2p\n      location: ./shared/send-person-to-person.yaml\n    - import: send-disbursements\n      location: ./shared/send-disbursements.yaml\n    - import: send-account-info\n      location: ./shared/send-account-info.yaml\n    - import: send-account-verification\n\
   \      location: ./shared/send-account-verification.yaml\n    - import: cross-border\n      location: ./shared/cross-border-services.yaml\n    - import: direct-services\n      location: ./shared/direct-services.yaml\n    - import: account-validation\n      location: ./shared/account-validation.yaml\n    - import: currency-conversion\n      location: ./shared/currency-conversion.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: money-transfer-api\n      description: \"Unified REST API for Mastercard money transfer and disbursement workflows.\"\n      resources:\n        - path: /v1/funding\n          name: funding\n          description: \"Funding transactions\"\n          operations:\n            - method: POST\n              name: create-funding\n              description: \"Create a funding transaction\"\n              call: \"send-funding.create-funding\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    \
   \    - path: /v1/transfers\n          name: transfers\n          description: \"P2P transfers\"\n          operations:\n            - method: POST\n              name: create-p2p-transfer\n              description: \"Create a person-to-person transfer\"\n              call: \"send-p2p.create-p2p-transfer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/disbursements\n          name: disbursements\n          description: \"Disbursement transactions\"\n          operations:\n            - method: POST\n              name: create-disbursement\n              description: \"Create a disbursement\"\n              call: \"send-disbursements.create-disbursement\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cross-border-payments\n          name: cross-border-payments\n          description: \"Cross-border payment processing\"\n          operations:\n\

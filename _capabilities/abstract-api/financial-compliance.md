@@ -34,63 +34,65 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- validate vat
-- ip geolocation
-- image processing
-- get live exchange rates
-- timezones
-- convert currency amounts
-- public holidays
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- engineer building data pipelines and enrichment workflows
-- iban validation
-- developer building user onboarding and personalization features
-- avatars
-- validate vat number
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
 - financial compliance
-- validate iban
-- convert currency
-- validate an iban and get bank details
-- ip intelligence
-- web scraping
-- vat validation
-- contacts
-- get current vat rates for a country
-- currency conversion, vat compliance, and banking validation for financial applications
-- finance engineer
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- abstract api
-- fraud analyst
-- data engineer
-- engineer building fraud detection and threat intelligence systems
-- compliance analyst
-- retrieve current exchange rates
-- convert an amount from one currency to another
 - convert an amount from one currency to another using live rates
-- get live rates
-- validate a vat number and get company details
-- validate a vat number and retrieve associated company details
-- validate a vat number
-- detection and blocking of fraudulent users, transactions, and bot activity
-- currencies
-- exchange rates
-- exchange rates, vat validation, and iban validation for financial compliance
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- ip geolocation
+- ip intelligence
+- validate iban
+- avatars
 - product engineer
-- developer building payment, billing, and financial compliance systems
+- exchange rates, vat validation, and iban validation for financial compliance
+- get current vat rates for a country
+- convert an amount from one currency to another
+- engineer building fraud detection and threat intelligence systems
+- vat validation
+- detection and blocking of fraudulent users, transactions, and bot activity
+- exchange rates
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
 - security engineer
-- get the latest exchange rates for 80+ currencies
-- validate an iban number and retrieve bank and account details
-- company enrichment
+- validate a vat number and retrieve associated company details
+- finance engineer
+- web scraping
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- image processing
+- currencies
+- iban validation
+- get live exchange rates
+- validate a vat number and get company details
+- convert currency amounts
+- developer building user onboarding and personalization features
 - phone validation
+- get the latest exchange rates for 80+ currencies
+- get live rates
+- data engineer
 - screenshots
-- finance
-- validate an iban number
-- get vat rates
+- compliance analyst
 - email validation
+- company enrichment
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- timezones
+- public holidays
+- fraud analyst
+- validate an iban and get bank details
+- currency conversion, vat compliance, and banking validation for financial applications
+- finance
+- retrieve current exchange rates
+- validate a vat number
+- validate vat
+- get vat rates
+- engineer building data pipelines and enrichment workflows
+- developer building payment, billing, and financial compliance systems
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- validate an iban number
+- convert currency
+- validate an iban number and retrieve bank and account details
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- abstract api
+- validate vat number
+- contacts
 slug: financial-compliance
+source_filename: financial-compliance.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abstract API Financial Compliance\"\n  description: \"Unified financial compliance workflow combining exchange rates, VAT validation, and IBAN validation APIs. Used by finance teams, e-commerce platforms, and fintech developers to automate VAT compliance, currency conversion, and banking validation.\"\n  tags:\n    - Abstract Api\n    - Financial Compliance\n    - Exchange Rates\n    - Vat Validation\n    - Iban Validation\n    - Finance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      EXCHANGE_RATES_API_KEY: EXCHANGE_RATES_API_KEY\n      VAT_VALIDATION_API_KEY: VAT_VALIDATION_API_KEY\n      IBAN_VALIDATION_API_KEY: IBAN_VALIDATION_API_KEY\n\ncapability:\n  consumes:\n    - import: exchange-rates\n      location: ./shared/exchange-rates.yaml\n    - import: vat-validation\n      location: ./shared/vat-validation.yaml\n    - import: iban-validation\n      location: ./shared/iban-validation.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8082\n      namespace: financial-compliance-api\n      description: \"Unified REST API for financial compliance automation.\"\n      resources:\n        - path: /v1/exchange-rates\n          name: exchange-rates\n          description: \"Get live exchange rates\"\n          operations:\n            - method: GET\n              name: get-live-rates\n              description: \"Retrieve current exchange rates\"\n              call: \"exchange-rates.getLiveExchangeRates\"\n              with:\n                base: \"rest.base\"\n                target: \"rest.target\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/currency-convert\n          name: currency-convert\n          description: \"Convert currency amounts\"\n          operations:\n            - method: GET\n              name: convert-currency\n              description: \"Convert an amount from one currency to\
   \ another\"\n              call: \"exchange-rates.convertCurrency\"\n              with:\n                base: \"rest.base\"\n                target: \"rest.target\"\n                base_amount: \"rest.base_amount\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vat/validate\n          name: vat-validate\n          description: \"Validate a VAT number\"\n          operations:\n            - method: GET\n              name: validate-vat\n              description: \"Validate a VAT number and get company details\"\n              call: \"vat-validation.validateVATNumber\"\n              with:\n                vat_number: \"rest.vat_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/iban/validate\n          name: iban-validate\n          description: \"Validate an IBAN number\"\n          operations:\n            - method: GET\n        \

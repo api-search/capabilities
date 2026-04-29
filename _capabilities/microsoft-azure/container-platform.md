@@ -20,41 +20,43 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- aks get agent pool
+- get agent pool details
 - list repositories
-- azure
-- list manifests for a repository
-- aks get admin credentials
-- list cluster agent pools
-- get cluster admin credentials
 - list container repositories
+- list cluster agent pools
+- container registry
 - containers
-- aks list agent pools
-- aks get cluster
-- cloud
+- platform as a service
+- aks get agent pool
+- container repositories
+- azure
+- infrastructure as a service
+- acr list tags
 - aks cluster management
-- acr list repositories
+- api management
+- get cluster admin credentials
+- list aks clusters
+- aks get cluster
+- aks list agent pools
+- cloud
+- aks get admin credentials
 - list tags for a repository
 - enterprise
-- kubernetes
-- aks list clusters
-- get repository attributes
-- cloud computing
 - t1
-- acr get repository
-- list clusters
-- platform as a service
-- api management
-- infrastructure as a service
-- get agent pool details
 - get aks cluster details
+- cloud computing
+- acr get repository
+- list manifests for a repository
+- list clusters
+- acr list repositories
+- aks list clusters
+- kubernetes
 - acr list manifests
-- container repositories
-- container registry
-- acr list tags
-- list aks clusters
 - list aks managed clusters
+- get repository attributes
 slug: container-platform
+source_filename: container-platform.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Container Platform\"\n  description: \"Unified workflow for Azure container infrastructure combining AKS cluster management and Container Registry operations. Used by platform engineers, DevOps teams, and SREs managing containerized workloads.\"\n  tags:\n    - Azure\n    - Kubernetes\n    - Containers\n    - Container Registry\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n      AZURE_ACR_TOKEN: AZURE_ACR_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-aks\n      location: ./shared/kubernetes-service.yaml\n    - import: azure-acr\n      location: ./shared/container-registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: azure-container-api\n      description: \"Unified REST API for Azure container platform.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n  \
   \        description: \"AKS cluster management\"\n          operations:\n            - method: GET\n              name: list-clusters\n              description: \"List AKS clusters\"\n              call: \"azure-aks.list-clusters\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories\n          name: repositories\n          description: \"Container repositories\"\n          operations:\n            - method: GET\n              name: list-repositories\n              description: \"List container repositories\"\n              call: \"azure-acr.list-repositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: azure-container-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure container platform\
   \ management.\"\n      tools:\n        - name: aks-list-clusters\n          description: \"List AKS managed clusters\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-aks.list-clusters\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: aks-get-cluster\n          description: \"Get AKS cluster details\"\n          hints:\n            readOnly: true\n          call: \"azure-aks.get-cluster\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n            resourceGroupName: \"tools.resourceGroupName\"\n            resourceName: \"tools.resourceName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: aks-list-agent-pools\n          description: \"List cluster agent pools\"\n          hints:\n            readOnly: true\n          call: \"azure-aks.list-agent-pools\"\

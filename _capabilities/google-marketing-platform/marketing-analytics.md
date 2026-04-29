@@ -27,27 +27,29 @@ personas: []
 provider_name: Google Marketing Platform Admin
 provider_slug: google-marketing-platform
 search_terms:
-- list organizations
+- list marketing platform organizations.
+- marketing
 - set analytics property service level (standard or 360).
-- analytics
-- organization management
+- delete an analytics account link.
+- platform administration
+- organization management.
+- individual analytics link management.
+- list analytics links
 - list google marketing platform organizations.
+- list analytics account links.
+- organization management
+- google marketing platform
+- create analytics link
+- create an analytics account link.
+- list analytics account links for an organization.
+- analytics
+- list organizations
+- set property service level
 - analytics account link management.
 - delete analytics link
-- list marketing platform organizations.
-- organization management.
-- list analytics account links.
-- create an analytics account link.
-- set property service level
-- google marketing platform
-- individual analytics link management.
-- list analytics account links for an organization.
-- platform administration
-- marketing
-- create analytics link
-- list analytics links
-- delete an analytics account link.
 slug: marketing-analytics
+source_filename: marketing-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Marketing Platform Analytics Administration\"\n  description: \"Unified workflow for managing Google Marketing Platform organizations and their Analytics account integrations including service level configuration. Used by marketing platform administrators and analytics managers.\"\n  tags:\n    - Google Marketing Platform\n    - Analytics\n    - Platform Administration\n    - Organization Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GMP_ACCESS_TOKEN: GMP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: gmp-admin\n      location: ./shared/admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gmp-analytics-admin-api\n      description: \"Unified REST API for Google Marketing Platform analytics administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description: \"\
   Organization management.\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List Marketing Platform organizations.\"\n              call: \"gmp-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations/{id}/analytics-links\n          name: analytics-links\n          description: \"Analytics account link management.\"\n          operations:\n            - method: GET\n              name: list-analytics-links\n              description: \"List analytics account links.\"\n              call: \"gmp-admin.list-analytics-links\"\n              with:\n                parent: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-analytics-link\n              description: \"Create an analytics account link.\"\n\
   \              call: \"gmp-admin.create-analytics-link\"\n              with:\n                parent: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/analytics-links/{id}\n          name: analytics-link-details\n          description: \"Individual analytics link management.\"\n          operations:\n            - method: DELETE\n              name: delete-analytics-link\n              description: \"Delete an analytics account link.\"\n              call: \"gmp-admin.delete-analytics-link\"\n              with:\n                name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: gmp-analytics-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Google Marketing Platform analytics administration.\"\n      tools:\n        - name: list-organizations\n     \

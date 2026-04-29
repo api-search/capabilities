@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: instagram-graph-api.yaml
+  format: yaml
+  label: instagram-graph
+  slug: instagram-graph
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/instagram/refs/heads/main/openapi/instagram-graph-api.yaml
 categories:
 - analytics
 consumed_apis:
@@ -35,46 +42,48 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- user profile data.
-- embeds instagram content on websites and applications.
-- website embedding of instagram content.
-- competitor and business account research.
-- content publishing and media management.
-- analytics
-- individual media detail for analytics.
-- get fields on an instagram media object.
-- photos
-- media-level analytics.
-- monitors mentions, comments, and brand sentiment on instagram.
-- get fields on an instagram photo, video, story, reel, or album.
-- get a collection of ig media objects published on the account.
-- get user
-- instagram direct messaging.
-- get user insights
-- get media insights
-- comments, mentions, and community interaction.
-- get fields and edges on an instagram business or creator account.
-- insights and performance metrics.
-- reporting
-- meta
-- instagram
-- creates and publishes photos, videos, reels, and stories.
-- get social interaction metrics for a media object.
-- manages instagram direct conversations for business inquiries.
-- get business discovery
-- tracks content performance and audience insights.
-- get data about other instagram business or creator accounts.
 - publishes and manages content across instagram accounts.
-- social media
-- user media for analytics review.
+- get fields on an instagram photo, video, story, reel, or album.
+- get user
+- get user insights
+- meta
 - get social interaction metrics for the account.
+- get social interaction metrics for a media object.
+- get fields and edges on an instagram business or creator account.
 - get media
-- videos
-- content publishing
+- tracks content performance and audience insights.
+- reporting
 - get user media
+- instagram direct messaging.
+- get fields on an instagram media object.
+- instagram
+- get data about other instagram business or creator accounts.
+- get a collection of ig media objects published on the account.
+- website embedding of instagram content.
+- insights and performance metrics.
+- content publishing and media management.
+- embeds instagram content on websites and applications.
 - insights
 - account-level analytics.
+- social media
+- user media for analytics review.
+- competitor and business account research.
+- user profile data.
+- analytics
+- monitors mentions, comments, and brand sentiment on instagram.
+- comments, mentions, and community interaction.
+- videos
+- creates and publishes photos, videos, reels, and stories.
+- photos
+- media-level analytics.
+- get business discovery
+- manages instagram direct conversations for business inquiries.
+- content publishing
+- individual media detail for analytics.
+- get media insights
 slug: analytics-and-insights
+source_filename: analytics-and-insights.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Instagram Analytics And Insights\"\n  description: >-\n    Unified workflow for Instagram analytics and insights including account-level\n    metrics, media-level performance data, user profile analysis, and competitor\n    research via business discovery. Used by marketing analysts and social media\n    strategists to measure content performance, track audience growth, and\n    benchmark against competitors.\n  tags:\n    - Instagram\n    - Analytics\n    - Insights\n    - Social Media\n    - Reporting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INSTAGRAM_ACCESS_TOKEN: INSTAGRAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: instagram-graph\n      location: ./shared/instagram-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: instagram-analytics-api\n      description: \"Unified REST API for Instagram analytics and insights workflows.\"\
   \n      resources:\n        - path: /v1/users/{user_id}\n          name: user-profile\n          description: \"User profile data.\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get fields and edges on an Instagram Business or Creator account.\"\n              call: \"instagram-graph.get-user\"\n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/business-discovery\n          name: business-discovery\n          description: \"Competitor and business account research.\"\n          operations:\n            - method: GET\n              name: get-business-discovery\n              description: \"Get data about other Instagram Business or Creator accounts.\"\n              call: \"instagram-graph.get-business-discovery\"\
   \n              with:\n                user_id: \"rest.user_id\"\n                fields: \"rest.fields\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users/{user_id}/insights\n          name: user-insights\n          description: \"Account-level analytics.\"\n          operations:\n            - method: GET\n              name: get-user-insights\n              description: \"Get social interaction metrics for the account.\"\n              call: \"instagram-graph.get-user-insights\"\n              with:\n                user_id: \"rest.user_id\"\n                metric: \"rest.metric\"\n                period: \"rest.period\"\n                since: \"rest.since\"\n                until: \"rest.until\"\n                access_token: \"rest.access_token\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n\

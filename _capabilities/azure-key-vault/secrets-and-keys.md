@@ -47,59 +47,61 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- list secrets.
-- delete key
-- security
-- delete secret
-- list certificates.
-- set a secret value.
-- set secret
-- individual key management.
-- azure
-- get a secret value.
-- cryptography
-- sign a digest using a key.
-- sign
-- verify
-- certificate management.
-- cloud security
-- create a new certificate.
-- get a key.
-- get a certificate.
-- delete a secret.
-- create a new cryptographic key.
 - key management
-- key management.
+- list secrets
+- encrypt
+- cryptography
+- delete certificate
+- get secret
+- cloud security
 - get a secret.
 - get key details.
+- azure
+- encrypt data using a key.
+- delete a secret.
+- create a new certificate.
+- list certificates
+- set secret
+- create certificate
 - secrets management
-- secret management.
+- list secrets.
+- list keys.
+- list secrets in the vault.
+- get key
+- list certificates.
+- set a secret value.
+- get a certificate.
 - get certificate
+- create key
+- delete key
+- individual secret management.
+- list certificates in the vault.
+- verify
+- decrypt
 - list keys
+- verify a signature.
+- security
+- sign
+- secret management.
+- set a secret.
+- certificate management.
+- individual key management.
+- get a key.
+- key management.
+- get a secret value.
+- key vault
+- decrypt data using a key.
+- sign a digest using a key.
+- list cryptographic keys in the vault.
+- create a key.
+- delete a key.
+- create a new cryptographic key.
 - certificates
 - delete a certificate.
-- list secrets
-- delete a key.
-- get key
-- get secret
-- encrypt data using a key.
-- create key
-- delete certificate
-- list secrets in the vault.
-- decrypt
-- list keys.
-- individual secret management.
-- verify a signature.
-- create a key.
-- key vault
-- list certificates in the vault.
-- list cryptographic keys in the vault.
-- set a secret.
-- decrypt data using a key.
-- encrypt
-- create certificate
-- list certificates
+- delete secret
 slug: secrets-and-keys
+source_filename: secrets-and-keys.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Key Vault Secrets and Keys\"\n  description: \"Unified workflow for managing cryptographic keys, secrets, and certificates with encryption, signing, and certificate lifecycle operations. Used by security engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Key Vault\n    - Security\n    - Secrets Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_KEY_VAULT_TOKEN: AZURE_KEY_VAULT_TOKEN\n\ncapability:\n  consumes:\n    - import: key-vault\n      location: ./shared/key-vault-data-plane.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secrets-and-keys-api\n      description: \"Unified REST API for Azure Key Vault secrets, keys, and certificates.\"\n      resources:\n        - path: /v1/keys\n          name: keys\n          description: \"Key management.\"\n          operations:\n            - method: GET\n              name: list-keys\n\
   \              description: \"List keys.\"\n              call: \"key-vault.list-keys\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-key\n              description: \"Create a key.\"\n              call: \"key-vault.create-key\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/keys/{id}\n          name: key-details\n          description: \"Individual key management.\"\n          operations:\n            - method: GET\n              name: get-key\n              description: \"Get a key.\"\n              call: \"key-vault.get-key\"\n              with:\n                key-name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-key\n              description: \"Delete a key.\"\n          \
   \    call: \"key-vault.delete-key\"\n              with:\n                key-name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets\n          name: secrets\n          description: \"Secret management.\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List secrets.\"\n              call: \"key-vault.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{id}\n          name: secret-details\n          description: \"Individual secret management.\"\n          operations:\n            - method: PUT\n              name: set-secret\n              description: \"Set a secret.\"\n              call: \"key-vault.set-secret\"\n              with:\n                secret-name: \"rest.id\"\n              outputParameters:\n                - type: object\n\

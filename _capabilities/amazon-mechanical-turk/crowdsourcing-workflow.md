@@ -34,54 +34,56 @@ personas: []
 provider_name: Amazon Mechanical Turk
 provider_slug: amazon-mechanical-turk
 search_terms:
-- managing worker qualifications, blocks, bonuses, and notifications.
-- aws
-- amazon
-- list assignments
-- list all assignments submitted for a hit.
-- reject assignment
-- data scientist using mturk for data labeling, annotation, and validation tasks.
-- create a new hit for crowdsourced task execution.
-- managing account balance and prepaid funds.
-- mechanical turk
-- get account balance
-- list all worker assignments submitted for a specific hit for review.
-- list all active and reviewable hits in the requester account.
+- machine learning
+- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
 - get hit
-- tasks
-- approve a completed worker assignment and release payment.
-- get the current prepaid balance available in the mturk requester account.
-- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- creating and managing hits for crowdsourced work.
+- create and manage human intelligence tasks.
+- send bonus
+- list qualification types used to filter and target the right worker pool.
+- create a new hit for crowdsourced task execution.
+- Researcher
+- reject a completed worker assignment with feedback.
+- list qualification types
 - manage worker bonuses and notifications.
+- approve a completed assignment and release payment.
+- labor
+- approve assignment
+- list assignments
+- list all active and reviewable hits in the requester account.
+- review and manage worker assignment submissions.
+- approve a completed worker assignment and release payment.
+- list all hits in the requester account.
+- get account balance
+- list assignments for hit
+- notify workers
+- aws
+- mechanical turk
+- get detailed information about a specific hit including status and completion metrics.
+- amazon
+- list all worker assignments submitted for a specific hit for review.
+- data scientist using mturk for data labeling, annotation, and validation tasks.
+- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- Data Scientist
+- tasks
+- send a bonus payment to a worker.
+- send a bonus payment to a worker for exceptional task completion.
+- managing worker qualifications, blocks, bonuses, and notifications.
+- crowdsourcing
+- reject assignment
+- create hit
+- account balance and status.
+- human intelligence
+- managing account balance and prepaid funds.
+- get the current prepaid balance available in the mturk requester account.
+- list all assignments submitted for a hit.
+- get the current prepaid balance in the mturk account.
+- list hits
 - send notification messages to specific workers.
 - academic or market researcher coordinating human intelligence tasks for studies and surveys.
-- Researcher
-- creating and managing hits for crowdsourced work.
-- list qualification types used to filter and target the right worker pool.
-- human intelligence
-- crowdsourcing
-- machine learning
-- approve a completed assignment and release payment.
-- create hit
-- send bonus
-- list all hits in the requester account.
-- account balance and status.
-- labor
-- get the current prepaid balance in the mturk account.
-- Data Scientist
-- review and manage worker assignment submissions.
-- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
-- create and manage human intelligence tasks.
-- send a bonus payment to a worker for exceptional task completion.
-- list assignments for hit
-- reject a completed worker assignment with feedback.
-- send a bonus payment to a worker.
-- list qualification types
-- get detailed information about a specific hit including status and completion metrics.
-- list hits
-- notify workers
-- approve assignment
 slug: crowdsourcing-workflow
+source_filename: crowdsourcing-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Mechanical Turk - Crowdsourcing Workflow\"\n  description: \"Workflow capability for data scientists and researchers to create HITs, manage worker assignments, approve work, and coordinate crowdsourced human intelligence tasks through Amazon Mechanical Turk.\"\n  tags:\n    - Amazon\n    - Mechanical Turk\n    - Crowdsourcing\n    - Human Intelligence\n    - Tasks\n    - Machine Learning\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: mturk-requester\n      location: ./shared/mturk-requester.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: mturk-crowdsourcing-api\n      description: \"Unified REST API for Amazon Mechanical Turk crowdsourcing workflows.\"\n      resources:\n        - path:\
   \ /v1/hits\n          name: hits\n          description: \"Create and manage Human Intelligence Tasks.\"\n          operations:\n            - method: POST\n              name: create-hit\n              description: \"Create a new HIT for crowdsourced task execution.\"\n              call: \"mturk-requester.create-hit\"\n              with:\n                title: \"rest.title\"\n                description: \"rest.description\"\n                reward: \"rest.reward\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-hits\n              description: \"List all HITs in the requester account.\"\n              call: \"mturk-requester.list-hits\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assignments\n          name: assignments\n          description: \"Review and manage worker assignment submissions.\"\n    \
   \      operations:\n            - method: GET\n              name: list-assignments\n              description: \"List all assignments submitted for a HIT.\"\n              call: \"mturk-requester.list-assignments-for-hit\"\n              with:\n                hitId: \"rest.hitId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: approve-assignment\n              description: \"Approve a completed assignment and release payment.\"\n              call: \"mturk-requester.approve-assignment\"\n              with:\n                assignmentId: \"rest.assignmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workers\n          name: workers\n          description: \"Manage worker bonuses and notifications.\"\n          operations:\n            - method: POST\n              name: send-bonus\n              description:\

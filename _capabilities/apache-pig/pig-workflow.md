@@ -18,33 +18,35 @@ personas: []
 provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
-- etl
-- get execution logs for a pig job
-- submit pig script
-- kill a running pig job
-- get job logs
-- open source
-- kill job
-- big data
+- get status and details of a pig job
 - builds etl pipelines using pig latin scripts
-- list pig jobs
-- list all pig data processing jobs
-- apache pig
-- validate script
-- data analysis
-- apache
-- validate a pig latin script for syntax errors
-- submit job
-- list jobs
+- submit a pig latin script for execution
+- get job logs
+- kill job
 - Data Engineer
+- validate script
+- kill a running pig job
+- list jobs
+- submit pig script
+- get execution logs for a pig job
+- open source
+- data analysis
 - Data Analyst
 - runs ad-hoc data analysis jobs on hadoop clusters
-- scripting
+- list all pig data processing jobs
+- apache
 - hadoop
-- get status and details of a pig job
-- submit a pig latin script for execution
+- validate a pig latin script for syntax errors
 - get job
+- apache pig
+- big data
+- list pig jobs
+- scripting
+- submit job
+- etl
 slug: pig-workflow
+source_filename: pig-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Pig Data Processing Workflow\"\n  description: \"Workflow for submitting, monitoring, and managing Pig Latin data analysis jobs on Hadoop clusters.\"\n  tags:\n    - Apache Pig\n    - Big Data\n    - Data Analysis\n    - Hadoop\n    - ETL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PIG_API_KEY: PIG_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: pig\n      baseUri: https://localhost:8080/pig\n      description: \"Apache Pig REST API\"\n      resources:\n        - name: jobs\n          path: /jobs\n          description: \"Pig job management\"\n          operations:\n            - name: listJobs\n              method: GET\n              description: \"List Pig jobs\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n            -\
   \ name: submitJob\n              method: POST\n              description: \"Submit a Pig script\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pig-api\n      description: \"Unified REST API for Pig data processing.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List Pig jobs\"\n              call: \"pig.listJobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: submit-job\n              description: \"Submit Pig script\"\n              call: \"pig.submitJob\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n\
   \      port: 9090\n      namespace: pig-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Pig data processing.\"\n      tools:\n        - name: list-jobs\n          description: \"List all Pig data processing jobs\"\n          hints:\n            readOnly: true\n          call: \"pig.listJobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-job\n          description: \"Submit a Pig Latin script for execution\"\n          hints:\n            readOnly: false\n          call: \"pig.submitJob\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job\n          description: \"Get status and details of a Pig job\"\n          hints:\n            readOnly: true\n          call: \"pig.getJob\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: kill-job\n          description: \"Kill a running Pig\

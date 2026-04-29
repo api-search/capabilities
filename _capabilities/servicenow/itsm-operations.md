@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: trouble-ticket-openapi.yaml
+  format: yaml
+  label: servicenow-trouble-ticket
+  slug: servicenow-trouble-ticket
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/servicenow/refs/heads/main/openapi/trouble-ticket-openapi.yaml
 categories: []
 consumed_apis:
 - servicenow-table
@@ -81,85 +88,87 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- update a record.
-- create an emergency change for urgent situations.
-- single trouble ticket operations.
-- create a new normal change request.
-- delete a record.
-- list change tasks
-- trouble ticket operations.
-- incident management
-- get aggregate stats
-- processes
-- single record operations.
-- delete record
-- update an existing record in a servicenow table.
-- automation
-- servicenow
-- create a normal change request.
-- create trouble ticket
-- list normal change requests.
-- single normal change operations.
 - list emergency changes.
-- list tasks for a change request.
-- generic table record operations for any servicenow table.
-- standard change operations.
-- create normal change
-- update a trouble ticket.
-- list records from any servicenow table with query filtering.
-- update normal change
-- cloud services
-- emergency change operations.
-- list records from any servicenow table.
-- list normal changes
-- permanently delete a record from a servicenow table.
-- update a normal change request.
-- retrieve a specific trouble ticket.
-- list emergency changes
-- get a trouble ticket.
-- get a single record.
-- update record
-- list standard change requests.
-- create a new record in any servicenow table.
-- list standard changes
-- create a record in any table.
-- get a normal change request.
-- digital workflows
-- retrieve a specific normal change request.
 - create emergency change
-- create change task
-- normal change request management.
-- create a trouble ticket (case, incident, or service problem case).
-- aggregate statistics on table data.
-- service desk
-- list standard changes.
-- get trouble ticket
 - get record
-- create a trouble ticket.
-- create a task for a change request.
-- change management
-- create an emergency change.
-- get normal change
-- list trouble tickets with filtering by severity, status, and type.
-- compute aggregate statistics on any servicenow table.
-- enterprise platform
-- create a standard change from a template.
 - compute aggregate statistics.
-- list trouble tickets
-- itsm
-- list records
-- update trouble ticket
-- create record
+- single record operations.
+- get a normal change request.
 - list emergency change requests.
-- list trouble tickets.
-- retrieve a single record by table name and sys_id.
-- workflow automation
-- it service management
-- update an existing trouble ticket.
-- t1
-- workflows
+- create a normal change request.
+- automation
+- create change task
+- update a trouble ticket.
+- list standard change requests.
+- aggregate statistics on table data.
 - create standard change
+- enterprise platform
+- normal change request management.
+- create trouble ticket
+- update an existing record in a servicenow table.
+- single normal change operations.
+- workflows
+- create a trouble ticket (case, incident, or service problem case).
+- update trouble ticket
+- update an existing trouble ticket.
+- list records from any servicenow table with query filtering.
+- create an emergency change for urgent situations.
+- create a trouble ticket.
+- workflow automation
+- itsm
+- retrieve a single record by table name and sys_id.
+- create a record in any table.
+- list normal change requests.
+- permanently delete a record from a servicenow table.
+- get trouble ticket
+- create an emergency change.
+- processes
+- get a single record.
+- update a normal change request.
+- create record
+- list tasks for a change request.
+- create a new normal change request.
+- delete record
+- update a record.
+- change management
+- list change tasks
+- servicenow
+- create normal change
+- list records
+- create a new record in any servicenow table.
+- retrieve a specific normal change request.
+- trouble ticket operations.
+- list records from any servicenow table.
+- digital workflows
+- update normal change
+- t1
+- list standard changes.
+- create a standard change from a template.
+- list standard changes
+- list trouble tickets with filtering by severity, status, and type.
+- list normal changes
+- delete a record.
+- single trouble ticket operations.
+- retrieve a specific trouble ticket.
+- cloud services
+- create a task for a change request.
+- list emergency changes
+- standard change operations.
+- update record
+- get normal change
+- get aggregate stats
+- list trouble tickets
+- compute aggregate statistics on any servicenow table.
+- list trouble tickets.
+- it service management
+- incident management
+- generic table record operations for any servicenow table.
+- emergency change operations.
+- get a trouble ticket.
+- service desk
 slug: itsm-operations
+source_filename: itsm-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow ITSM Operations\"\n  description: \"Unified workflow for IT Service Management operations combining table records, aggregate analytics, change management, and trouble tickets. Used by ITSM administrators and service desk agents to manage incidents, changes, and operational reporting.\"\n  tags:\n    - ServiceNow\n    - ITSM\n    - Change Management\n    - Incident Management\n    - Service Desk\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-table\n      location: ./shared/table.yaml\n    - import: servicenow-aggregate\n      location: ./shared/aggregate.yaml\n    - import: servicenow-change-management\n      location: ./shared/change-management.yaml\n    - import: servicenow-trouble-ticket\n\
   \      location: ./shared/trouble-ticket.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: servicenow-itsm-operations-api\n      description: \"Unified REST API for ServiceNow ITSM operations including records, changes, and trouble tickets.\"\n      resources:\n        - path: /v1/records/{tableName}\n          name: table-records\n          description: \"Generic table record operations for any ServiceNow table.\"\n          operations:\n            - method: GET\n              name: list-records\n              description: \"List records from any ServiceNow table.\"\n              call: \"servicenow-table.list-records\"\n              with:\n                tableName: \"rest.tableName\"\n                sysparm_query: \"rest.sysparm_query\"\n                sysparm_fields: \"rest.sysparm_fields\"\n                sysparm_limit: \"rest.sysparm_limit\"\n                sysparm_offset: \"rest.sysparm_offset\"\n              outputParameters:\n                - type:\
   \ object\n                  mapping: \"$.result\"\n            - method: POST\n              name: create-record\n              description: \"Create a record in any table.\"\n              call: \"servicenow-table.create-record\"\n              with:\n                tableName: \"rest.tableName\"\n                record_data: \"rest.body\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/records/{tableName}/{sys_id}\n          name: table-record-detail\n          description: \"Single record operations.\"\n          operations:\n            - method: GET\n              name: get-record\n              description: \"Get a single record.\"\n              call: \"servicenow-table.get-record\"\n              with:\n                tableName: \"rest.tableName\"\n                sys_id: \"rest.sys_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n     \

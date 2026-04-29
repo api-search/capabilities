@@ -47,57 +47,59 @@ personas: []
 provider_name: Amazon CodeStar
 provider_slug: amazon-codestar
 search_terms:
-- developer tools
-- manage codestar projects.
-- aws
-- list all team members in a project.
-- project management
-- amazon
-- list user profiles
-- list all team members and their roles in a codestar project.
-- add an iam user to an aws codestar project team with a role.
-- create and manage codestar projects, team members, and user profiles.
-- list all aws codestar projects.
-- create user profile
-- create a new aws codestar project.
-- create a user profile.
-- create a new aws codestar development project with ci/cd toolchain.
-- delete project
-- get details of a specific aws codestar project.
-- list resources
-- list all user profiles.
-- creates and manages codestar projects and team membership.
-- list all aws codestar user profiles.
-- manage team members for a project.
-- describe a specific codestar project.
-- list all aws codestar projects in the account.
-- delete an aws codestar project and its resources.
-- list tags
-- devops
-- describe project
 - delete a codestar project.
-- manage codestar user profiles.
-- tag project
-- Platform Administrator
-- create project
-- add tags to an aws codestar project for organization.
-- list tags for a codestar project.
-- update attributes of an aws codestar project.
 - get and update individual codestar project.
+- list all team members in a project.
+- create a new aws codestar development project with ci/cd toolchain.
 - remove an iam user from an aws codestar project team.
-- list aws resources associated with a codestar project.
-- update project
-- disassociate team member
-- list projects
-- create a user profile for aws codestar.
-- manages user profiles and project-level access controls.
-- team collaboration
-- add an iam user to the project team.
-- list team members
+- create and manage codestar projects, team members, and user profiles.
 - associate team member
+- disassociate team member
+- describe a specific codestar project.
+- update attributes of an aws codestar project.
+- manage team members for a project.
+- list all user profiles.
+- devops
+- get details of a specific aws codestar project.
+- delete an aws codestar project and its resources.
+- create a user profile for aws codestar.
+- list team members
+- add an iam user to an aws codestar project team with a role.
+- describe project
 - Development Team Lead
+- aws
+- add an iam user to the project team.
 - manage tags on a project.
+- manages user profiles and project-level access controls.
+- Platform Administrator
+- amazon
+- add tags to an aws codestar project for organization.
+- creates and manages codestar projects and team membership.
+- list aws resources associated with a codestar project.
+- manage codestar user profiles.
+- list all aws codestar projects in the account.
+- create a new aws codestar project.
+- list all team members and their roles in a codestar project.
+- manage codestar projects.
+- list tags
+- list projects
+- delete project
+- list tags for a codestar project.
+- list user profiles
+- create a user profile.
+- list resources
+- team collaboration
+- create project
+- list all aws codestar user profiles.
+- list all aws codestar projects.
+- developer tools
+- tag project
+- project management
+- update project
+- create user profile
 slug: project-management
+source_filename: project-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon CodeStar Project Management\"\n  description: \"Workflow capability for managing AWS CodeStar development projects, team collaboration, and user profiles. Used by development team leads and platform administrators to set up CI/CD toolchains and manage project access.\"\n  tags:\n    - Amazon\n    - AWS\n    - Developer Tools\n    - DevOps\n    - Project Management\n    - Team Collaboration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: codestar\n      location: ./shared/codestar.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: project-management-api\n      description: \"Unified REST API for AWS CodeStar project management and team collaboration.\"\n      resources:\n        - path:\
   \ /v1/projects\n          name: projects\n          description: \"Manage CodeStar projects.\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List all AWS CodeStar projects.\"\n              call: \"codestar.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: create-project\n              description: \"Create a new AWS CodeStar project.\"\n              call: \"codestar.create-project\"\n              with:\n                project_name: \"rest.project_name\"\n                project_id: \"rest.project_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/projects/{project_id}\n          name: project-detail\n          description: \"Get and update individual CodeStar project.\"\n          operations:\n            - method: GET\n  \
   \            name: describe-project\n              description: \"Describe a specific CodeStar project.\"\n              call: \"codestar.describe-project\"\n              with:\n                project_id: \"rest.project_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: DELETE\n              name: delete-project\n              description: \"Delete a CodeStar project.\"\n              call: \"codestar.delete-project\"\n              with:\n                project_id: \"rest.project_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/projects/{project_id}/team-members\n          name: team-members\n          description: \"Manage team members for a project.\"\n          operations:\n            - method: GET\n              name: list-team-members\n              description: \"List all team members in a project.\"\n              call:\

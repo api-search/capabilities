@@ -63,65 +63,67 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- fetch multiple posts.
-- archives communications for regulatory compliance.
-- retrieve social action notifications.
-- create a share with company mention.
-- create share
-- authentication, sharing, and verification for consumer apps.
-- business
-- uses sales navigator for lead generation and crm sync.
-- job posting, recruiting, and applicant tracking.
-- initialize video upload.
-- create sponsored conversation
-- get organization by id
-- employee development tracking and content access.
-- get inmail content
-- initialize document upload
-- recruiting
-- retrieve follower statistics.
-- get posts
-- search for creatives.
-- sales intelligence, lead management, and crm integration.
 - create an ad creative.
-- look up organization by id.
-- tracks employee learning activity and completions.
-- content marketing
+- create inmail content.
+- linkedin
+- retrieve page statistics.
+- get follower count
+- authentication, sharing, and verification for consumer apps.
+- create creative
+- retrieve follower statistics.
+- initialize video upload.
+- get follower statistics
+- get sponsored conversations.
+- posts jobs and manages candidates through ats integrations.
+- retrieve organization follower count.
+- professional networking
+- create inmail content
 - search creatives
+- initialize image upload.
+- look up organization by id.
+- uses sales navigator for lead generation and crm sync.
+- content marketing
+- create share
+- create a sponsored conversation.
+- employee development tracking and content access.
+- get page statistics
+- initialize document upload.
+- initialize video upload
+- message archiving and regulatory communications governance.
+- retrieve social action notifications.
+- retrieve inmail content by id.
+- create a share with company mention.
+- tracks employee learning activity and completions.
+- data portability and advertiser transparency for dma.
+- integrates linkedin authentication and sharing into applications.
+- community management
+- get inmail content
+- get posts
+- get share statistics
+- fetch multiple posts.
+- recruiting
+- create a post.
+- get organization by id
+- social media
+- sales intelligence, lead management, and crm integration.
+- create post
+- initialize document upload
 - careers
 - get notifications
-- retrieve organization follower count.
-- get share statistics
-- b2b advertising, audience targeting, and campaign analytics.
-- professional networking
-- get sponsored conversations
-- social media
-- initialize image upload
-- initialize image upload.
-- linkedin
-- message archiving and regulatory communications governance.
-- initialize video upload
-- get follower count
-- create a post.
-- marketing
-- get page statistics
-- retrieve inmail content by id.
-- create inmail content.
-- community management
-- create creative
-- initialize document upload.
-- posts jobs and manages candidates through ats integrations.
-- get follower statistics
-- manages b2b ad campaigns and audience targeting on linkedin.
-- create post
 - retrieve share statistics.
-- create inmail content
-- integrates linkedin authentication and sharing into applications.
-- data portability and advertiser transparency for dma.
-- get sponsored conversations.
-- retrieve page statistics.
-- create a sponsored conversation.
+- search for creatives.
+- initialize image upload
+- get sponsored conversations
+- b2b advertising, audience targeting, and campaign analytics.
+- job posting, recruiting, and applicant tracking.
+- archives communications for regulatory compliance.
+- create sponsored conversation
+- manages b2b ad campaigns and audience targeting on linkedin.
+- marketing
+- business
 slug: content-and-community
+source_filename: content-and-community.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Content And Community\"\n  description: \"Unified workflow for content marketers to create rich ad content, manage organization pages, track engagement, and monitor social actions -- combining content APIs and community management.\"\n  tags:\n    - LinkedIn\n    - Content Marketing\n    - Community Management\n    - Social Media\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-content\n      location: ./shared/marketing-content.yaml\n    - import: marketing-community\n      location: ./shared/marketing-community.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: content-community-api\n      description: \"Unified REST API for LinkedIn content creation and community management.\"\n      resources:\n        - path: /v1/posts\n          name: posts\n \
   \         operations:\n            - method: POST\n              name: create-post\n              description: \"Create a post.\"\n              call: \"marketing-content.create-post\"\n            - method: GET\n              name: get-posts\n              description: \"Fetch multiple posts.\"\n              call: \"marketing-content.get-posts\"\n        - path: /v1/shares\n          name: shares\n          operations:\n            - method: POST\n              name: create-share\n              description: \"Create a share with company mention.\"\n              call: \"marketing-community.create-share\"\n        - path: /v1/creatives\n          name: creatives\n          operations:\n            - method: POST\n              name: create-creative\n              description: \"Create an ad creative.\"\n              call: \"marketing-content.create-creative\"\n            - method: GET\n              name: search-creatives\n              description: \"Search for creatives.\"\n     \
   \         call: \"marketing-content.search-creatives\"\n        - path: /v1/inmail-contents\n          name: inmail-contents\n          operations:\n            - method: POST\n              name: create-inmail-content\n              description: \"Create InMail content.\"\n              call: \"marketing-content.create-inmail-content\"\n        - path: /v1/conversation-ads\n          name: conversation-ads\n          operations:\n            - method: POST\n              name: create-sponsored-conversation\n              description: \"Create a sponsored conversation.\"\n              call: \"marketing-content.create-sponsored-conversation\"\n            - method: GET\n              name: get-sponsored-conversations\n              description: \"Get sponsored conversations.\"\n              call: \"marketing-content.get-sponsored-conversations\"\n        - path: /v1/images\n          name: images\n          operations:\n            - method: POST\n              name: initialize-image-upload\n\

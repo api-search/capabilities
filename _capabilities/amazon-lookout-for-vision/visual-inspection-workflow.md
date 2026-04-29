@@ -30,52 +30,54 @@ personas: []
 provider_name: Amazon Lookout for Vision
 provider_slug: amazon-lookout-for-vision
 search_terms:
-- list models
-- managing training and test datasets
-- aws
-- list all visual inspection projects
-- amazon
-- list all trained inspection models in a project
-- train inspection model
-- Manufacturing Engineer
-- list all inspection projects
-- inspect image
-- train model
-- training and lifecycle management of computer vision models
-- visual inspection models
-- start inspection model
-- check the training status and performance metrics of an inspection model
-- workflow for building and deploying computer vision models for quality inspection
 - train a new inspection model
-- detect visual anomalies in an image
-- train a computer vision model for defect detection
-- list inspection models
-- list inspection projects
-- manufacturing
-- stop inspection model
 - machine learning
+- training and lifecycle management of computer vision models
+- manufacturing
 - builds and trains computer vision models for automated defect detection
-- list trained models
-- create project
-- run anomaly detection on images
-- detect anomalies
-- anomaly detection
 - create a new visual quality inspection project
-- inspection projects
-- list projects
+- anomaly detection
+- Quality Inspector
 - quality inspection
-- create inspection project
-- start a trained model to enable real-time inspection
-- stop a running model to reduce costs when not actively inspecting
+- run anomaly detection on images
+- list inspection projects
+- train a computer vision model for defect detection
+- list all inspection projects
+- check the training status and performance metrics of an inspection model
+- detect anomalies
 - runs inspection models on product images to detect defects in real time
 - visual inspection
-- Quality Inspector
+- detect visual anomalies in an image
+- inspection projects
+- visual inspection models
+- list all visual inspection projects
+- aws
+- computer vision
 - create a visual inspection project
+- stop inspection model
+- workflow for building and deploying computer vision models for quality inspection
+- amazon
+- train model
+- start a trained model to enable real-time inspection
+- start inspection model
+- create inspection project
+- inspect image
 - get model status
+- Manufacturing Engineer
+- list trained models
+- list models
+- list inspection models
+- list projects
+- stop a running model to reduce costs when not actively inspecting
+- managing training and test datasets
+- create project
 - run anomaly detection on a product image to identify defects
 - running anomaly detection on product images
-- computer vision
+- train inspection model
+- list all trained inspection models in a project
 slug: visual-inspection-workflow
+source_filename: visual-inspection-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Lookout for Vision - Visual Inspection Workflow\"\n  description: \"Workflow capability for manufacturing and quality teams to build, train, and deploy computer vision models for automated visual quality inspection using Amazon Lookout for Vision.\"\n  tags:\n    - Amazon\n    - Computer Vision\n    - Machine Learning\n    - Manufacturing\n    - Quality Inspection\n    - Visual Inspection\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: lookout-for-vision\n      location: ./shared/lookout-for-vision.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: visual-inspection-api\n      description: \"Unified REST API for visual quality inspection workflows.\"\n      resources:\n        - path: /v1/projects\n\
   \          name: projects\n          description: \"Inspection projects\"\n          operations:\n            - method: POST\n              name: create-project\n              description: \"Create a visual inspection project\"\n              call: \"lookout-for-vision.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-projects\n              description: \"List all inspection projects\"\n              call: \"lookout-for-vision.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{id}/models\n          name: models\n          description: \"Visual inspection models\"\n          operations:\n            - method: POST\n              name: train-model\n              description: \"Train a new inspection model\"\n              call: \"lookout-for-vision.create-model\"\n         \
   \     with:\n                projectName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-models\n              description: \"List trained models\"\n              call: \"lookout-for-vision.list-models\"\n              with:\n                projectName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{id}/models/{modelVersion}/detect\n          name: detection\n          description: \"Run anomaly detection on images\"\n          operations:\n            - method: POST\n              name: detect-anomalies\n              description: \"Detect visual anomalies in an image\"\n              call: \"lookout-for-vision.detect-anomalies\"\n              with:\n                projectName: \"rest.id\"\n                modelVersion: \"rest.modelVersion\"\n              outputParameters:\n\

@@ -19,50 +19,52 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- contract management
-- cancel purchase order
-- list purchase orders
-- get supplier
-- approve invoice
-- list suppliers
-- create invoice
-- supplier management
-- list receipts
-- update purchase order
-- get invoice
-- cancel a purchase order
-- get invoice details
-- create a requisition
-- supply chain
-- list requisitions
-- create an invoice
-- ariba
-- procure-to-pay
-- create purchase order
-- create a purchase order
-- get purchase order details
-- get requisition
-- spend analysis
-- sap
-- reject invoice
-- sourcing
-- approve an invoice for payment
-- purchase order management
-- get purchase order
-- b2b
-- procurement
-- list line items
-- create receipt
-- get supplier profile
-- update a purchase order
-- create a receipt
-- list line items for an order
-- get requisition details
-- create requisition
-- reject an invoice
-- list invoices
 - list receipts for an order
+- b2b
+- list purchase orders
+- update purchase order
+- list line items for an order
+- create a receipt
+- list receipts
+- contract management
+- create requisition
+- supplier management
+- create a requisition
+- create an invoice
+- get invoice details
+- approve invoice
+- get requisition details
+- ariba
+- list requisitions
+- sap
+- sourcing
+- cancel a purchase order
+- reject an invoice
+- list suppliers
+- update a purchase order
+- list invoices
+- cancel purchase order
+- get purchase order
+- create a purchase order
+- get invoice
+- get purchase order details
+- purchase order management
+- procure-to-pay
+- get supplier profile
+- create purchase order
+- get supplier
+- create receipt
+- list line items
+- spend analysis
+- create invoice
+- supply chain
+- procurement
+- reject invoice
+- approve an invoice for payment
+- get requisition
 slug: procure-to-pay
+source_filename: procure-to-pay.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"SAP Ariba Procure-to-Pay\"\n  description: \"Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts. Used by procurement teams and AP automation workflows.\"\n  tags: [SAP, Ariba, Procurement, Procure-to-Pay]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      ARIBA_OAUTH_TOKEN: ARIBA_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: procurement\n      location: ./shared/procurement.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: procure-to-pay-api\n      description: \"Unified REST API for SAP Ariba procure-to-pay operations.\"\n      resources:\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase order management\"\n          operations:\n            - { method: GET, name: list-purchase-orders, description: \"List purchase orders\", call: \"procurement.list-purchase-orders\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: procure-to-pay-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SAP Ariba procure-to-pay operations.\"\n      tools:\n        - { name: list-purchase-orders, description: \"List purchase orders\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-purchase-orders\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-purchase-order, description: \"Get purchase order details\", hints: { readOnly: true }, call: \"procurement.get-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\"\
   , outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-purchase-order, description: \"Update a purchase order\", call: \"procurement.update-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: cancel-purchase-order, description: \"Cancel a purchase order\", hints: { destructive: true }, call: \"procurement.cancel-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-line-items, description: \"List line items for an order\", hints: { readOnly: true }, call: \"procurement.list-line-items\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-invoices, description: \"List invoices\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-invoices\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-invoice, description: \"Get invoice details\", hints: { readOnly: true }, call: \"procurement.get-invoice\", outputParameters:\

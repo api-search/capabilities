@@ -1,4 +1,59 @@
 ---
+api_specs:
+- filename: content-catalog.yml
+  format: yaml
+  label: pluralsight-content-catalog
+  slug: pluralsight-content-catalog
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/content-catalog.yml
+- filename: content-slug.yml
+  format: yaml
+  label: pluralsight-content-slug
+  slug: pluralsight-content-slug
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/content-slug.yml
+- filename: course-catalog.yml
+  format: yaml
+  label: pluralsight-course-catalog
+  slug: pluralsight-course-catalog
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/course-catalog.yml
+- filename: public-course-catalog-rest.yml
+  format: yaml
+  label: pluralsight-public-course-catalog
+  slug: pluralsight-public-course-catalog
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/public-course-catalog-rest.yml
+- filename: channels.yml
+  format: yaml
+  label: pluralsight-channels
+  slug: pluralsight-channels
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/channels.yml
+- filename: learning-paths.yml
+  format: yaml
+  label: pluralsight-learning-paths
+  slug: pluralsight-learning-paths
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/learning-paths.yml
+- filename: programs.yml
+  format: yaml
+  label: pluralsight-programs
+  slug: pluralsight-programs
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/programs.yml
+- filename: labs.yml
+  format: yaml
+  label: pluralsight-labs
+  slug: pluralsight-labs
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/labs.yml
+- filename: tags.yml
+  format: yaml
+  label: pluralsight-tags
+  slug: pluralsight-tags
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/tags.yml
 categories:
 - content-management
 consumed_apis:
@@ -55,54 +110,56 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- skills assessment
-- courses
-- content channels for organizing and curating learning content
-- query programs
-- query content tags and taxonomy data used to categorize and organize learning content.
-- query course catalog
-- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- pluralsight
-- manage channels
-- learning content
-- video training
-- hands-on labs and practical exercises
-- learning
-- course catalog with titles, descriptions, authors, and metadata
-- structured sequences of courses organized around skills and roles
 - public course catalog accessible without authentication
-- education
-- query the general content catalog
-- engineering metrics
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- query learning paths
 - query the general content catalog including videos, guides, interactive courses, and other content types.
-- query content tags and taxonomy data
-- query content catalog
+- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
+- query learning paths
+- query programs
+- course catalog with titles, descriptions, authors, and metadata
+- courses
+- query course catalog
 - retrieve the full public course catalog
-- content management
-- learning paths
-- general content catalog including videos, guides, and interactive courses
-- query lab catalog and activity data
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- query labs
-- content tags and taxonomy for categorization
+- pluralsight
+- query the program catalog
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- query content tags and taxonomy data used to categorize and organize learning content.
 - query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- query the course catalog
-- technology
-- get public course catalog
-- structured learning programs and curriculum offerings
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- query content tags and taxonomy data
 - query and manage content channels
 - query content slugs
-- channels
-- query tags
-- query learning path catalog data
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
 - query the program catalog including structured learning programs and curriculum offerings.
-- query the program catalog
+- structured sequences of courses organized around skills and roles
+- content channels for organizing and curating learning content
+- engineering metrics
+- video training
+- query lab catalog and activity data
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
+- content tags and taxonomy for categorization
+- skills assessment
+- structured learning programs and curriculum offerings
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- general content catalog including videos, guides, and interactive courses
+- content management
+- query labs
+- technology
+- get public course catalog
+- hands-on labs and practical exercises
+- learning content
+- channels
+- manage channels
+- learning paths
+- query the course catalog
+- query tags
+- learning
+- education
+- query content catalog
+- query learning path catalog data
+- query the general content catalog
 - resolve content slugs to internal identifiers
 slug: learning-content-management
+source_filename: learning-content-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Learning Content Management\"\n  description: \"Unified workflow for L&D managers and content administrators to browse, organize, and manage learning content across courses, channels, learning paths, programs, labs, and tags. Combines content catalog, course catalog, public catalog, channels, learning paths, programs, labs, content slugs, and tags APIs.\"\n  tags:\n    - Pluralsight\n    - Learning Content\n    - Content Management\n    - Courses\n    - Channels\n    - Learning Paths\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: pluralsight-content-catalog\n      location: ./shared/content-catalog.yaml\n    - import: pluralsight-content-slug\n      location: ./shared/content-slug.yaml\n    - import: pluralsight-course-catalog\n      location: ./shared/course-catalog.yaml\n\
   \    - import: pluralsight-public-course-catalog\n      location: ./shared/public-course-catalog-rest.yaml\n    - import: pluralsight-channels\n      location: ./shared/channels.yaml\n    - import: pluralsight-learning-paths\n      location: ./shared/learning-paths.yaml\n    - import: pluralsight-programs\n      location: ./shared/programs.yaml\n    - import: pluralsight-labs\n      location: ./shared/labs.yaml\n    - import: pluralsight-tags\n      location: ./shared/tags.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: learning-content-api\n      description: \"Unified REST API for browsing and managing Pluralsight learning content across all content types.\"\n      resources:\n        - path: /v1/content-catalog\n          name: content-catalog\n          description: \"General content catalog including videos, guides, and interactive courses\"\n          operations:\n            - method: POST\n              name: query-content-catalog\n              description:\
   \ \"Query the general content catalog\"\n              call: \"pluralsight-content-catalog.query-content-catalog\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content-slugs\n          name: content-slugs\n          description: \"Resolve content slugs to internal identifiers\"\n          operations:\n            - method: POST\n              name: query-content-slugs\n              description: \"Resolve content slugs to internal identifiers\"\n              call: \"pluralsight-content-slug.query-content-slugs\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n              \

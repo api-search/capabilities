@@ -50,66 +50,68 @@ personas: []
 provider_name: Apache Iceberg
 provider_slug: apache-iceberg
 search_terms:
-- table management within a namespace
-- drop an iceberg table from the catalog
-- catalog configuration
-- list namespaces
-- create a new iceberg table
-- individual table operations
-- get iceberg catalog configuration settings
-- load a table from the catalog
-- create view
-- analytics
-- drop namespace
-- acid
-- Lakehouse Architect
-- drop an empty namespace from the iceberg catalog
-- create a new namespace in the iceberg catalog
-- list all iceberg table identifiers in a namespace
-- server-side scan planning for compute engine integration
-- create a new namespace
-- list all tables in a namespace
-- open source
-- commit updates and schema changes to an iceberg table
-- drop a namespace
-- data engineers and lakehouse architects managing namespaces, tables, and views
-- load namespace metadata
 - list all namespaces in the catalog
-- architects who design lakehouse schemas, partition strategies, and catalog topology
-- view management within a namespace
-- create table
+- retrieve iceberg catalog configuration settings
+- drop an iceberg table from the catalog
+- data engineers and lakehouse architects managing namespaces, tables, and views
+- load an iceberg table and its metadata from the catalog
+- Data Engineer
+- engineers who build and maintain data pipelines and manage iceberg tables and namespaces
+- Lakehouse Architect
+- list all view identifiers in a namespace
 - load metadata and properties for a specific iceberg namespace
-- drop a table from the catalog
+- get config
+- load a table from the catalog
+- create a new view in the iceberg catalog
+- lakehouse
+- individual namespace
+- view management within a namespace
 - list all namespaces in the iceberg catalog, optionally filtered by parent namespace
-- create namespace
-- get catalog config
-- data lake
-- data engineering
+- load table
+- open source
+- drop a namespace
+- architects who design lakehouse schemas, partition strategies, and catalog topology
+- create view
+- server-side scan planning for compute engine integration
+- list tables
 - apache iceberg
-- apache
-- drop table
+- create table
+- catalog management
+- create a new namespace in the iceberg catalog
+- object storage credential management
+- catalog configuration
+- data lake
+- drop a table from the catalog
+- load namespace metadata
+- list all tables in a namespace
+- drop an empty namespace from the iceberg catalog
 - commit table
 - metrics collection and reporting
-- list tables
-- Data Engineer
-- load table
-- list all view identifiers in a namespace
-- catalog management
-- lakehouse
-- table format
-- list all views in a namespace
-- get config
-- engineers who build and maintain data pipelines and manage iceberg tables and namespaces
-- table and namespace discovery and management
-- list views
-- retrieve iceberg catalog configuration settings
 - create a new iceberg table in a namespace
+- acid
+- list all iceberg table identifiers in a namespace
+- apache
+- table management within a namespace
+- list all views in a namespace
+- list views
+- get iceberg catalog configuration settings
+- get catalog config
+- table format
+- create a new namespace
+- create namespace
+- create a new iceberg table
+- individual table operations
+- commit updates and schema changes to an iceberg table
+- analytics
+- drop table
 - namespace management
-- load an iceberg table and its metadata from the catalog
-- create a new view in the iceberg catalog
-- individual namespace
-- object storage credential management
+- list namespaces
+- drop namespace
+- table and namespace discovery and management
+- data engineering
 slug: catalog-management
+source_filename: catalog-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Iceberg Catalog Management\"\n  description: \"Workflow capability for data engineers and lakehouse architects to manage namespaces, tables, and views in Apache Iceberg catalogs via the REST Catalog API.\"\n  tags:\n    - Apache Iceberg\n    - Catalog Management\n    - Data Engineering\n    - Lakehouse\n    - Table Format\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ICEBERG_CATALOG_TOKEN: ICEBERG_CATALOG_TOKEN\n\ncapability:\n  consumes:\n    - import: iceberg-rest-catalog\n      location: ./shared/rest-catalog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: iceberg-catalog-management-api\n      description: \"Unified REST API for Apache Iceberg catalog management workflows.\"\n      resources:\n        - path: /v1/config\n          name: catalog-config\n          description: Catalog configuration\n          operations:\n            - method:\
   \ GET\n              name: get-config\n              description: Get Iceberg catalog configuration settings\n              call: \"iceberg-rest-catalog.get-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/namespaces\n          name: namespaces\n          description: Namespace management\n          operations:\n            - method: GET\n              name: list-namespaces\n              description: List all namespaces in the catalog\n              call: \"iceberg-rest-catalog.list-namespaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-namespace\n              description: Create a new namespace\n              call: \"iceberg-rest-catalog.create-namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/namespaces/{namespace}\n\
   \          name: namespace\n          description: Individual namespace\n          operations:\n            - method: GET\n              name: load-namespace-metadata\n              description: Load namespace metadata\n              call: \"iceberg-rest-catalog.load-namespace-metadata\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: drop-namespace\n              description: Drop a namespace\n              call: \"iceberg-rest-catalog.drop-namespace\"\n              with:\n                namespace: \"rest.namespace\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/namespaces/{namespace}/tables\n          name: tables\n          description: Table management within a namespace\n          operations:\n            - method: GET\n              name:\

@@ -40,60 +40,62 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- vat returns, 1099 filing, and lodging tax reporting
-- tax calculations for transactions
-- submit e-invoice for compliance
-- validate postal address and determine jurisdiction
-- validate address
-- submit an e-invoice document for cross-border or domestic compliance
-- list submitted e-invoice documents and their status
-- e-invoicing
-- integrates avalara apis into erp and billing systems
-- exemptions
-- real-time tax calculation across us and global jurisdictions
-- submit einvoice
-- country-specific e-invoicing mandate compliance
-- check e-invoicing mandate requirements for a country
-- Tax Manager
-- oversees tax strategy, compliance automation, and cost optimization
-- list certcapture customer accounts
-- create exemption certificate
-- list tax transactions
 - avalara
-- list historical tax transactions for audit and reconciliation
-- e-invoicing mandate requirements
-- calculate sales tax, vat, or gst
-- tax exemption certificates
-- Finance Director
-- calculate sales tax
-- list e-invoicing mandates by country
-- list exemption certificates
-- e-invoice submission
-- list transactions
-- validate a postal address and determine the applicable tax jurisdiction
-- manages cross-border compliance, tariff classification, and e-invoicing
-- taxes
-- International Trade Manager
-- list tax exemption certificates for exempt customers
 - sales tax calculation, certificate management, and e-invoicing
-- hs code and tax code classification for products
-- calculate tax
-- tax compliance
-- list mandates
-- import duties, vat, and e-invoicing for international trade
-- create a new tax exemption certificate for a customer
-- manages sales tax compliance, exemption certificates, and returns filing
-- address validation
-- list customers
-- check einvoicing mandate
-- create certificate
-- validate postal address
-- list certificates
-- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- real-time tax calculation across us and global jurisdictions
+- tax exemption certificates
+- validate address
+- submit einvoice
+- validate a postal address and determine the applicable tax jurisdiction
 - sales tax
+- list tax exemption certificates for exempt customers
+- oversees tax strategy, compliance automation, and cost optimization
+- submit e-invoice for compliance
+- calculate sales tax
+- e-invoicing
+- list mandates
+- taxes
+- integrates avalara apis into erp and billing systems
+- list certcapture customer accounts
+- e-invoice submission
+- list customers
+- list certificates
+- e-invoicing mandate requirements
+- create certificate
+- submit an e-invoice document for cross-border or domestic compliance
+- create exemption certificate
+- International Trade Manager
 - tax exemption certificate collection and validation
 - list submitted einvoices
+- hs code and tax code classification for products
+- validate postal address
+- manages sales tax compliance, exemption certificates, and returns filing
+- list tax transactions
+- exemptions
+- calculate sales tax, vat, or gst
+- list exemption certificates
+- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- list historical tax transactions for audit and reconciliation
+- address validation
+- list e-invoicing mandates by country
+- vat returns, 1099 filing, and lodging tax reporting
+- list submitted e-invoice documents and their status
+- Tax Manager
+- check einvoicing mandate
+- validate postal address and determine jurisdiction
+- manages cross-border compliance, tariff classification, and e-invoicing
+- Finance Director
+- tax compliance
+- tax calculations for transactions
+- list transactions
+- check e-invoicing mandate requirements for a country
+- create a new tax exemption certificate for a customer
+- calculate tax
+- country-specific e-invoicing mandate compliance
+- import duties, vat, and e-invoicing for international trade
 slug: avalara-tax-compliance
+source_filename: avalara-tax-compliance.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Avalara Tax Compliance Automation\n  description: Unified workflow for automated tax compliance combining sales tax calculation, exemption certificate management, and e-invoicing. Used by tax teams, finance departments, and ERP \n    integrators to automate end-to-end tax compliance.\n  tags:\n  - Avalara\n  - Tax Compliance\n  - Sales Tax\n  - E-Invoicing\n  - Exemptions\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AVALARA_USERNAME: AVALARA_USERNAME\n    AVALARA_PASSWORD: AVALARA_PASSWORD\n    CERTCAPTURE_TOKEN: CERTCAPTURE_TOKEN\n    AVALARA_BEARER_TOKEN: AVALARA_BEARER_TOKEN\ncapability:\n  consumes:\n  - import: avatax\n    location: ./shared/avatax.yaml\n  - import: certcapture\n    location: ./shared/certcapture.yaml\n  - import: einvoicing\n    location: ./shared/einvoicing.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: avalara-compliance-api\n    description: Unified\
   \ REST API for Avalara tax compliance automation.\n    resources:\n    - path: /v1/transactions\n      name: transactions\n      description: Tax calculations for transactions\n      operations:\n      - method: POST\n        name: calculate-tax\n        description: Calculate sales tax, VAT, or GST\n        call: avatax.create-transaction\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-transactions\n        description: List tax transactions\n        call: avatax.list-transactions\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/addresses\n      name: addresses\n      description: Address validation\n      operations:\n      - method: GET\n        name: validate-address\n        description: Validate postal address and determine jurisdiction\n        call: avatax.resolve-address\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/certificates\n\
   \      name: certificates\n      description: Tax exemption certificates\n      operations:\n      - method: GET\n        name: list-certificates\n        description: List exemption certificates\n        call: certcapture.list-certificates\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-certificate\n        description: Create exemption certificate\n        call: certcapture.create-certificate\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/einvoicing/mandates\n      name: einvoicing-mandates\n      description: E-invoicing mandate requirements\n      operations:\n      - method: GET\n        name: list-mandates\n        description: List e-invoicing mandates by country\n        call: einvoicing.list-mandates\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/einvoicing/documents\n      name: einvoicing-documents\n      description: E-invoice\

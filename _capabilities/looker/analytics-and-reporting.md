@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: looker-api-openapi.yml
+  format: yaml
+  label: looker
+  slug: looker
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/looker/refs/heads/main/openapi/looker-api-openapi.yml
 categories:
 - analytics
 consumed_apis:
@@ -63,64 +70,66 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- search for dashboards.
-- create a new user.
-- looker
-- analytics
-- update a look.
-- individual query operations.
-- update a dashboard.
-- create a user.
-- business intelligence
-- update look
-- run query
 - list all users.
+- delete user
 - get user
-- look management.
-- get query details.
-- create dashboard
-- delete a dashboard.
+- create a user.
 - data analytics
-- individual look management.
-- run look
-- get dashboard details.
-- user management.
-- list all dashboards.
-- update user
-- create user
-- delete a look.
-- delete a user.
-- search looks
+- get query
+- list looks
+- data visualization
+- create a dashboard.
+- query management.
 - get look
-- dashboard management.
-- create a query.
-- get dashboard
+- delete a user.
+- get user details.
+- search for looks by title.
 - list all saved looks.
+- individual look management.
 - update dashboard
+- run look
+- delete look
+- run a saved query.
+- get look details.
+- search dashboards
+- update a user.
 - create a new dashboard.
 - list users
+- create user
+- update look
+- create a query.
+- get dashboard details.
 - delete dashboard
-- search for looks by title.
-- query management.
-- data visualization
-- list dashboards
-- get user details.
-- get query
-- dashboards
-- create query
+- search looks
+- get query details.
+- list all dashboards.
 - individual dashboard management.
-- run a look and return results.
-- run a saved query.
-- delete look
-- delete user
-- get look details.
-- update a user.
+- update user
+- user management.
+- create a new user.
+- business intelligence
+- look management.
+- run query
+- individual query operations.
 - bi platform
-- create a dashboard.
-- search dashboards
+- analytics
+- looker
+- delete a dashboard.
+- create query
+- run a look and return results.
+- search for dashboards.
+- list dashboards
+- create dashboard
 - list all looks.
-- list looks
+- get dashboard
+- update a look.
+- dashboards
+- update a dashboard.
+- dashboard management.
+- delete a look.
 slug: analytics-and-reporting
+source_filename: analytics-and-reporting.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Looker Analytics and Reporting\"\n  description: \"Unified workflow for business intelligence analytics including dashboards, looks, queries, and user management. Used by data analysts and BI administrators.\"\n  tags:\n    - Looker\n    - Business Intelligence\n    - Analytics\n    - Dashboards\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LOOKER_CLIENT_ID: LOOKER_CLIENT_ID\n      LOOKER_CLIENT_SECRET: LOOKER_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: looker\n      location: ./shared/looker-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: looker-analytics-api\n      description: \"Unified REST API for Looker analytics and reporting.\"\n      resources:\n        - path: /v1/looks\n          name: looks\n          description: \"Look management.\"\n          operations:\n            - method: GET\n              name: list-looks\n \
   \             description: \"List all looks.\"\n              call: \"looker.list-looks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/looks/{id}\n          name: look-details\n          description: \"Individual look management.\"\n          operations:\n            - method: GET\n              name: get-look\n              description: \"Get look details.\"\n              call: \"looker.get-look\"\n              with:\n                look_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-look\n              description: \"Update a look.\"\n              call: \"looker.update-look\"\n              with:\n                look_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name:\
   \ delete-look\n              description: \"Delete a look.\"\n              call: \"looker.delete-look\"\n              with:\n                look_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dashboards\n          name: dashboards\n          description: \"Dashboard management.\"\n          operations:\n            - method: GET\n              name: list-dashboards\n              description: \"List all dashboards.\"\n              call: \"looker.list-dashboards\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-dashboard\n              description: \"Create a dashboard.\"\n              call: \"looker.create-dashboard\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dashboards/{id}\n          name: dashboard-details\n\

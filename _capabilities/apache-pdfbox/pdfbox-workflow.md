@@ -18,37 +18,39 @@ personas: []
 provider_name: Apache PDFBox
 provider_slug: apache-pdfbox
 search_terms:
+- create a new pdf document
+- get form fields
+- java
+- Application Developer
+- Document Manager
 - get interactive form fields from a pdf document
+- integrates pdf processing into applications
+- list pages and their dimensions in a pdf
+- open source
+- extract text
+- text extraction
+- get metadata
+- get pdf document metadata (title, author, dates)
+- extract text content from a pdf document
 - apache pdfbox
+- split document
+- split a pdf document at specified page boundaries
+- apply a digital signature to a pdf document
+- apache
+- creates and manages pdf documents with metadata and signatures
+- extract text from pdf
+- merge multiple pdf documents into one
+- document processing
+- create document
+- list pages
+- pdf
+- digital signatures
 - sign document
 - merge documents
-- extract text content from a pdf document
-- list pages and their dimensions in a pdf
-- get form fields
-- creates and manages pdf documents with metadata and signatures
-- open source
-- document processing
-- extract text
-- java
-- get pdf document metadata (title, author, dates)
-- list pages
-- integrates pdf processing into applications
-- get metadata
-- pdf
-- create a new pdf document
-- split document
-- Application Developer
-- split a pdf document at specified page boundaries
-- apache
-- Document Manager
-- text extraction
-- create document
-- merge multiple pdf documents into one
-- apply a digital signature to a pdf document
-- digital signatures
 - create pdf document
-- extract text from pdf
 slug: pdfbox-workflow
+source_filename: pdfbox-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache PDFBox Document Processing Workflow\"\n  description: \"Workflow for creating, manipulating, extracting text from, and digitally signing PDF documents using Apache PDFBox.\"\n  tags:\n    - Apache PDFBox\n    - PDF\n    - Document Processing\n    - Digital Signatures\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PDFBOX_API_KEY: PDFBOX_API_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: pdfbox\n      baseUri: https://localhost:8080/pdfbox\n      description: \"Apache PDFBox REST API\"\n      resources:\n        - name: documents\n          path: /documents\n          description: \"Document operations\"\n          operations:\n            - name: createDocument\n              method: POST\n              description: \"Create a PDF document\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n        \
   \          type: object\n                  value: \"$.\"\n            - name: extractText\n              method: GET\n              description: \"Extract text from PDF\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pdfbox-api\n      description: \"Unified REST API for PDF document processing.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          operations:\n            - method: POST\n              name: create-document\n              description: \"Create PDF document\"\n              call: \"pdfbox.createDocument\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{documentId}/text\n          name: text-extraction\n          operations:\n            - method: GET\n              name:\
   \ extract-text\n              description: \"Extract text from PDF\"\n              call: \"pdfbox.extractText\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: pdfbox-mcp\n      transport: http\n      description: \"MCP server for AI-assisted PDF document processing.\"\n      tools:\n        - name: create-document\n          description: \"Create a new PDF document\"\n          hints:\n            readOnly: false\n          call: \"pdfbox.createDocument\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: extract-text\n          description: \"Extract text content from a PDF document\"\n          hints:\n            readOnly: true\n          call: \"pdfbox.extractText\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metadata\n          description: \"Get PDF document\

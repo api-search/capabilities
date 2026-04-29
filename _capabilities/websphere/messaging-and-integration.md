@@ -31,39 +31,41 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- delete queue
-- list queues on a queue manager
-- get queue details
-- create a new queue
-- cloud native
-- application server
-- enterprise java
-- channel management
-- get queue
 - list available queue managers
-- send message
-- list channels on a queue manager
-- queue manager operations
-- browse messages
-- list queues
-- browse messages on a queue non-destructively
+- ibm mq
 - list channels
+- middleware
+- cloud native
+- send a message to a queue
+- message operations
+- messaging
+- list queues on a queue manager
+- enterprise java
+- delete queue
+- j2ee
+- get queue details
+- list channels on a queue manager
+- list queue managers
+- browse messages on a queue non-destructively
+- get queue
+- list queues
 - create queue
-- delete a queue
 - browse messages on a queue
 - microservices
-- message operations
-- integration
-- get queue manager details
-- ibm mq
-- send a message to a queue
 - queue management
-- j2ee
-- list queue managers
+- delete a queue
+- create a new queue
+- channel management
+- integration
+- queue manager operations
 - get queue manager
-- middleware
-- messaging
+- get queue manager details
+- browse messages
+- application server
+- send message
 slug: messaging-and-integration
+source_filename: messaging-and-integration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Messaging and Integration\"\n  description: \"Workflow for managing IBM MQ messaging infrastructure including queue management, message operations, channels, and topics for integration architects and middleware administrators.\"\n  tags:\n    - IBM MQ\n    - Messaging\n    - Integration\n    - Queue Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MQ_USERNAME: MQ_USERNAME\n      MQ_PASSWORD: MQ_PASSWORD\n\ncapability:\n  consumes:\n    - import: mq-rest\n      location: ./shared/mq-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: messaging-api\n      description: \"Unified REST API for IBM MQ messaging operations.\"\n      resources:\n        - path: /v1/queue-managers\n          name: queue-managers\n          description: \"Queue manager operations\"\n          operations:\n            - method: GET\n              name: list-queue-managers\n\
   \              description: \"List queue managers\"\n              call: \"mq-rest.list-queue-managers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-queue-manager\n              description: \"Get queue manager details\"\n              call: \"mq-rest.get-queue-manager\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Queue management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List queues\"\n              call: \"mq-rest.list-queues\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n\
   \          name: messages\n          description: \"Message operations\"\n          operations:\n            - method: GET\n              name: browse-messages\n              description: \"Browse messages on a queue\"\n              call: \"mq-rest.browse-messages\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n                queueName: \"rest.queueName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/channels\n          name: channels\n          description: \"Channel management\"\n          operations:\n            - method: GET\n              name: list-channels\n              description: \"List channels\"\n              call: \"mq-rest.list-channels\"\n              with:\n                qmgrName: \"rest.qmgrName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: messaging-mcp\n \

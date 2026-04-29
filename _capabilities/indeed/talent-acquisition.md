@@ -35,49 +35,51 @@ personas: []
 provider_name: Indeed
 provider_slug: indeed
 search_terms:
-- create an employer entity on indeed.
-- expire a job posting.
-- get job posting details.
-- get employer
-- update employer
-- update employer details.
-- individual employer management.
-- create a job posting on indeed.
-- recruiting
-- create job
-- register employer for candidate sync.
-- jobs
-- careers
-- list candidates for an employer.
-- get employer details.
-- update job posting
-- hiring
-- list candidates
-- get candidate details.
-- employer management.
 - candidate management.
-- indeed
-- talent acquisition
-- update disposition
-- get job posting
-- list job postings for an employer.
-- get candidate
-- update a job posting.
+- list employer jobs
+- update candidate disposition status.
+- expire a job posting.
 - create employer
-- employment
-- job postings
-- create job posting
+- update job posting
+- get candidate
+- hiring
+- list candidates for an employer.
+- employer management.
 - list jobs
 - expire job posting
+- talent acquisition
+- get job posting
+- register candidate sync
+- create an employer entity.
+- create a job posting.
+- update a job posting.
+- recruiting
+- create job posting
+- update employer details.
+- indeed
+- create job
+- list job postings for an employer.
+- careers
+- get employer
+- update employer
+- update disposition
+- create a job posting on indeed.
+- individual employer management.
+- employment
+- get employer details.
+- job posting management.
+- jobs
+- list candidates
+- get candidate details.
 - job search
 - list job postings.
-- create a job posting.
-- list employer jobs
-- job posting management.
-- create an employer entity.
-- update candidate disposition status.
-- register candidate sync
+- register employer for candidate sync.
+- job postings
+- get job posting details.
+- create an employer entity on indeed.
 slug: talent-acquisition
+source_filename: talent-acquisition.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Indeed Talent Acquisition\"\n  description: \"Unified workflow for managing the hiring pipeline including employer setup, job posting, candidate retrieval, and disposition tracking. Used by ATS partners and hiring platform developers.\"\n  tags:\n    - Indeed\n    - Talent Acquisition\n    - Hiring\n    - Job Postings\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INDEED_ACCESS_TOKEN: INDEED_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: indeed\n      location: ./shared/employer-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: indeed-talent-api\n      description: \"Unified REST API for Indeed talent acquisition workflows.\"\n      resources:\n        - path: /v1/employers\n          name: employers\n          description: \"Employer management.\"\n          operations:\n            - method: POST\n              name: create-employer\n\
   \              description: \"Create an employer entity.\"\n              call: \"indeed.create-employer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employers/{id}\n          name: employer-details\n          description: \"Individual employer management.\"\n          operations:\n            - method: GET\n              name: get-employer\n              description: \"Get employer details.\"\n              call: \"indeed.get-employer\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-employer\n              description: \"Update employer details.\"\n              call: \"indeed.update-employer\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping:\
   \ \"$.\"\n        - path: /v1/employers/{id}/candidates\n          name: candidates\n          description: \"Candidate management.\"\n          operations:\n            - method: GET\n              name: list-candidates\n              description: \"List candidates for an employer.\"\n              call: \"indeed.list-candidates\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employers/{id}/jobs\n          name: jobs\n          description: \"Job posting management.\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List job postings.\"\n              call: \"indeed.list-employer-jobs\"\n              with:\n                employerId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-secrets-manager-openapi.yml
+  format: yaml
+  label: amazon-secrets-manager
+  slug: amazon-secrets-manager
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-secrets-manager/refs/heads/main/openapi/amazon-secrets-manager-openapi.yml
 categories:
 - security
 consumed_apis:
@@ -39,51 +46,53 @@ personas: []
 provider_name: Amazon Secrets Manager
 provider_slug: amazon-secrets-manager
 search_terms:
-- configuration
-- trigger rotation for a secret
-- secret lifecycle management
-- secure storage and access control for sensitive credentials and configuration
-- aws
-- security
-- restore secret
-- schedule a secret for deletion
-- delete secret
-- DevOps Engineer
-- create secret
-- rotate secret
-- secret rotation management
-- secrets
-- update the value of a secret
-- rotation
-- credentials
-- describe secret
-- retrieve the plaintext value of a secret
-- generate a cryptographically secure random password
-- put secret value
-- Application Developer
-- retrieve the current value of a secret
-- amazon secrets manager
 - list secrets
+- secret rotation management
+- rotate secret
+- Application Developer
+- describe secret
+- cancel scheduled deletion and restore a secret
 - devops
+- list all secrets stored in amazon secrets manager
+- amazon secrets manager
+- secure storage and access control for sensitive credentials and configuration
+- lifecycle management of secrets including rotation, versioning, and audit
+- create secret
+- secret lifecycle management
+- retrieve the plaintext value of a secret
+- secret value retrieval and update
+- put secret value
+- credentials
+- trigger rotation for a secret
+- developers who integrate applications with secrets manager to retrieve credentials at runtime
+- get metadata and configuration details of a secret
+- get random password
+- aws
+- secrets
+- get metadata for a secret
+- random password generation
+- create a new secret in amazon secrets manager
+- DevOps Engineer
+- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
+- restore secret
+- security
+- rotation
+- schedule a secret for deletion
+- get secret value
+- retrieve the current value of a secret
+- trigger automatic rotation for a secret
+- update the value of a secret
+- individual secret management
+- list all managed secrets
+- generate a cryptographically secure random password
+- configuration
 - update the value stored in a secret
 - engineers who manage application infrastructure and configure secrets rotation and access policies
-- get metadata and configuration details of a secret
-- trigger automatic rotation for a secret
-- get secret value
-- list all secrets stored in amazon secrets manager
-- get random password
 - create and store a new secret
-- create a new secret in amazon secrets manager
-- random password generation
-- list all managed secrets
-- secret value retrieval and update
-- individual secret management
-- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
-- lifecycle management of secrets including rotation, versioning, and audit
-- cancel scheduled deletion and restore a secret
-- developers who integrate applications with secrets manager to retrieve credentials at runtime
-- get metadata for a secret
+- delete secret
 slug: secrets-management
+source_filename: secrets-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Secrets Manager Secrets Management\"\n  description: \"Unified capability for managing application secrets lifecycle including creation, retrieval, rotation, and deletion. Used by DevOps Engineers and Application Developers.\"\n  tags:\n    - Amazon Secrets Manager\n    - Security\n    - Secrets\n    - DevOps\n    - Credentials\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-secrets-manager\n      location: ./shared/amazon-secrets-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secrets-management-api\n      description: \"Unified REST API for Amazon Secrets Manager secrets lifecycle management.\"\n      resources:\n        - path: /v1/secrets\n          name: secrets\n\
   \          description: \"Secret lifecycle management\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List all managed secrets\"\n              call: \"amazon-secrets-manager.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-secret\n              description: \"Create and store a new secret\"\n              call: \"amazon-secrets-manager.create-secret\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{name}\n          name: secret\n          description: \"Individual secret management\"\n          operations:\n            - method: GET\n              name: describe-secret\n              description: \"Get metadata for a secret\"\n              call: \"amazon-secrets-manager.describe-secret\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{name}/value\n          name: secret-value\n          description: \"Secret value retrieval and update\"\n          operations:\n            - method: GET\n              name: get-secret-value\n              description: \"Retrieve the current value of a secret\"\n              call: \"amazon-secrets-manager.get-secret-value\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: put-secret-value\n              description: \"Update the value of a secret\"\n              call: \"amazon-secrets-manager.put-secret-value\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{name}/rotate\n          name: secret-rotation\n          description: \"Secret rotation management\"\n          operations:\n            - method: POST\n\

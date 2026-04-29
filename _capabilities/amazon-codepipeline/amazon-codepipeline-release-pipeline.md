@@ -11,50 +11,52 @@ personas: []
 provider_name: Amazon CodePipeline
 provider_slug: amazon-codepipeline
 search_terms:
-- unified workflow for devops and release engineering teams to create and manage delivery pipelines, t
-- aws
-- continuous delivery
-- amazon
-- pipeline
-- DevOps Engineer
-- list pipelines in the account
-- get pipeline
-- get the structure and details of a pipeline
 - list pipeline webhooks
-- start pipeline execution
-- get pipeline state
-- Platform Engineer
-- start a pipeline execution
 - update the structure of a pipeline
-- Release Manager
-- update pipeline
-- stop pipeline execution
+- create pipeline
+- start a pipeline execution
+- retry stage execution
 - put approval result
-- ci/cd
-- list pipelines
-- retry all failed actions in a pipeline stage
+- list pipelines in the account
+- Platform Engineer
+- list webhooks
 - devops
+- get pipeline state
+- start pipeline execution
 - stop an in-progress pipeline execution
-- devops engineer persona.
+- create a new delivery pipeline
+- update pipeline
 - platform engineer persona.
+- list pipeline executions
 - list action executions
-- delete pipeline
-- get details about a pipeline execution
-- unified workflow for devops and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline statu
-- list executions for a pipeline
-- list action executions for a pipeline
 - release manager persona.
 - release automation
-- get the current state of each stage in a pipeline
-- retry stage execution
-- list pipeline executions
-- get pipeline execution
-- delete a pipeline
-- create a new delivery pipeline
-- create pipeline
-- list webhooks
+- get the structure and details of a pipeline
+- Release Manager
 - submit approval or rejection for a manual approval action
+- continuous delivery
+- aws
+- get the current state of each stage in a pipeline
+- delete pipeline
+- stop pipeline execution
+- unified workflow for devops and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline statu
+- amazon
+- DevOps Engineer
+- get pipeline execution
+- list executions for a pipeline
+- pipeline
+- list action executions for a pipeline
+- get details about a pipeline execution
+- devops engineer persona.
+- list pipelines
+- delete a pipeline
+- retry all failed actions in a pipeline stage
+- get pipeline
+- unified workflow for devops and release engineering teams to create and manage delivery pipelines, t
+- ci/cd
 slug: amazon-codepipeline-release-pipeline
+source_filename: amazon-codepipeline-release-pipeline.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodePipeline Release Pipeline Automation\n  description: Unified workflow for DevOps and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline status, and manage pipeline artifacts \n    using Amazon CodePipeline.\n  tags:\n  - Amazon\n  - AWS\n  - CI/CD\n  - Continuous Delivery\n  - DevOps\n  - Pipeline\n  - Release Automation\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: codepipeline\n    location: ./shared/codepipeline.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: codepipeline-release-pipeline-api\n    description: Unified REST API for Release Pipeline Automation.\n    resources:\n    - path: /v1/listPipelines\n      name: list-pipelines\n      description:\
   \ List pipelines in the account\n    - path: /v1/getPipeline\n      name: get-pipeline\n      description: Get the structure and details of a pipeline\n    - path: /v1/createPipeline\n      name: create-pipeline\n      description: Create a new delivery pipeline\n    - path: /v1/updatePipeline\n      name: update-pipeline\n      description: Update the structure of a pipeline\n  - type: mcp\n    port: 9090\n    namespace: codepipeline-release-pipeline-mcp\n    transport: http\n    description: MCP server for AI-assisted Release Pipeline Automation.\n    tools:\n    - name: list-pipelines\n      description: List pipelines in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codepipeline.listPipelines\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-pipeline\n      description: Get the structure and details of a pipeline\n      hints:\n        readOnly: true\n        openWorld: true\n      call: codepipeline.getPipeline\n\
   \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-pipeline\n      description: Create a new delivery pipeline\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codepipeline.createPipeline\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-pipeline\n      description: Update the structure of a pipeline\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codepipeline.updatePipeline\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-pipeline\n      description: Delete a pipeline\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codepipeline.deletePipeline\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-pipeline-execution\n      description: Start a pipeline execution\n      hints:\n        readOnly: false\n        openWorld: true\n      call: codepipeline.startPipelineExecution\n\

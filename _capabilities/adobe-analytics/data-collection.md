@@ -36,43 +36,45 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- upload a gzip-compressed csv file of batched analytics event data.
-- adobe analytics
-- analytics
-- validate events
-- business intelligence
-- customer intelligence
 - report suite details.
-- list report suites to identify collection targets.
-- web analytics
-- list metrics
-- dimension discovery for event mapping.
-- list report suites to identify data collection targets.
-- validate a batch events file without ingesting.
-- metric discovery for event mapping.
-- server side
-- get report suite details.
-- get details for a report suite to verify collection configuration.
-- data collection
-- upload events
-- events
-- list dimensions
-- list report suites
-- list metrics to validate event data mapping.
-- digital marketing
-- marketing
-- adobe
-- validate event files.
-- upload a batch events file.
-- bulk data insertion
-- get report suite
+- adobe analytics
 - validate a batch events file without ingesting data.
-- batch event upload.
+- list report suites to identify collection targets.
 - list available dimensions to validate event data mapping.
 - report suite discovery for data collection targeting.
 - list available metrics to validate event data mapping.
+- validate event files.
+- upload a batch events file.
 - list dimensions to validate event data mapping.
+- metric discovery for event mapping.
+- list report suites to identify data collection targets.
+- list metrics to validate event data mapping.
+- upload events
+- customer intelligence
+- web analytics
+- list dimensions
+- upload a gzip-compressed csv file of batched analytics event data.
+- validate events
+- list report suites
+- get details for a report suite to verify collection configuration.
+- data collection
+- validate a batch events file without ingesting.
+- get report suite details.
+- business intelligence
+- list metrics
+- analytics
+- get report suite
+- adobe
+- bulk data insertion
+- events
+- server side
+- digital marketing
+- batch event upload.
+- marketing
+- dimension discovery for event mapping.
 slug: data-collection
+source_filename: data-collection.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Analytics Data Collection\"\n  description: \"Unified workflow for server-side data collection and ingestion combining Bulk Data Insertion for high-volume event uploads with the Analytics API for report suite discovery and validation. Used by data engineers and implementation teams.\"\n  tags:\n    - Adobe Analytics\n    - Data Collection\n    - Bulk Data Insertion\n    - Events\n    - Server Side\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_ANALYTICS_BEARER_TOKEN: ADOBE_ANALYTICS_BEARER_TOKEN\n      ADOBE_ANALYTICS_API_KEY: ADOBE_ANALYTICS_API_KEY\n      ADOBE_ANALYTICS_GLOBAL_COMPANY_ID: ADOBE_ANALYTICS_GLOBAL_COMPANY_ID\n\ncapability:\n  consumes:\n    - import: adobe-bulk-data-insertion\n      location: ./shared/bulk-data-insertion.yaml\n    - import: adobe-analytics\n      location: ./shared/analytics-api.yaml\n\n  exposes:\n    - type: rest\n      port:\
   \ 8081\n      namespace: adobe-data-collection-api\n      description: \"Unified REST API for Adobe Analytics server-side data collection and ingestion.\"\n      resources:\n        - path: /v1/events\n          name: events\n          description: \"Batch event upload.\"\n          operations:\n            - method: POST\n              name: upload-events\n              description: \"Upload a batch events file.\"\n              call: \"adobe-bulk-data-insertion.upload-events\"\n              with:\n                x-adobe-vgid: \"rest.x-adobe-vgid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events/validate\n          name: event-validation\n          description: \"Validate event files.\"\n          operations:\n            - method: POST\n              name: validate-events\n              description: \"Validate a batch events file without ingesting.\"\n              call: \"adobe-bulk-data-insertion.validate-events\"\
   \n              with:\n                x-adobe-vgid: \"rest.x-adobe-vgid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites\n          name: report-suites\n          description: \"Report suite discovery for data collection targeting.\"\n          operations:\n            - method: GET\n              name: list-report-suites\n              description: \"List report suites to identify collection targets.\"\n              call: \"adobe-analytics.list-report-suites\"\n              with:\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/report-suites/{rsid}\n          name: report-suite-detail\n          description: \"Report suite details.\"\n          operations:\n            - method: GET\n              name: get-report-suite\n              description: \"Get report suite details.\"\n       \

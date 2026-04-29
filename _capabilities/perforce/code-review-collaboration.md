@@ -35,44 +35,46 @@ personas: []
 provider_name: Perforce
 provider_slug: perforce
 search_terms:
-- get version
-- update a review description or author
-- update review
-- create comment
 - transition a review to a new state (approve, reject, etc.)
-- create a new code review
-- transition review state
-- list swarm projects
-- delete project
-- get review
-- list comments on reviews and changelists
-- list reviews
-- get project
-- review details
-- list comments
-- code review
-- activity stream
-- list activity entries
-- get review details
-- get details of a specific code review
 - get swarm server version information
-- devops
-- get details of a specific swarm project
-- list code reviews in helix swarm
-- perforce
-- list code reviews
-- code reviews
-- list activity
-- create review
-- delete a swarm project
-- list projects
+- create comment
 - create a new code review from a changelist
-- add a comment to a review or changelist
 - list activity stream entries
-- collaboration
+- list activity entries
+- list reviews
+- get details of a specific swarm project
+- activity stream
+- devops
+- code review
+- transition review state
+- delete a swarm project
+- code reviews
+- get version
+- get review
+- get details of a specific code review
+- update a review description or author
+- list code reviews in helix swarm
+- list comments
+- create a new code review
+- add a comment to a review or changelist
 - review comments
 - swarm projects
+- perforce
+- get review details
+- review details
+- get project
+- list comments on reviews and changelists
+- list projects
+- delete project
+- list code reviews
+- list activity
+- update review
+- collaboration
+- list swarm projects
+- create review
 slug: code-review-collaboration
+source_filename: code-review-collaboration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Perforce Code Review and Collaboration\"\n  description: \"Unified workflow for code review, commenting, and project management using Helix Swarm. Designed for development teams managing code review workflows integrated with Helix Core version control.\"\n  tags:\n    - Perforce\n    - Code Review\n    - Collaboration\n    - DevOps\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWARM_USERNAME: SWARM_USERNAME\n      SWARM_PASSWORD: SWARM_PASSWORD\n\ncapability:\n  consumes:\n    - import: helix-swarm\n      location: ./shared/helix-swarm.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: code-review-api\n      description: \"Unified REST API for Perforce code review and collaboration.\"\n      resources:\n        - path: /v1/reviews\n          name: reviews\n          description: \"Code reviews\"\n          operations:\n            - method: GET\n   \
   \           name: list-reviews\n              description: \"List code reviews\"\n              call: \"helix-swarm.list-reviews\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-review\n              description: \"Create a new code review\"\n              call: \"helix-swarm.create-review\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reviews/{id}\n          name: review-details\n          description: \"Review details\"\n          operations:\n            - method: GET\n              name: get-review\n              description: \"Get review details\"\n              call: \"helix-swarm.get-review\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/comments\n          name: comments\n\
   \          description: \"Review comments\"\n          operations:\n            - method: GET\n              name: list-comments\n              description: \"List comments\"\n              call: \"helix-swarm.list-comments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects\n          name: projects\n          description: \"Swarm projects\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List projects\"\n              call: \"helix-swarm.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/activity\n          name: activity\n          description: \"Activity stream\"\n          operations:\n            - method: GET\n              name: list-activity\n              description: \"List activity entries\"\n              call: \"helix-swarm.list-activity\"\n \

@@ -1,4 +1,23 @@
 ---
+api_specs:
+- filename: crm.yml
+  format: yaml
+  label: crm
+  slug: crm
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/crm.yml
+- filename: chatbot-integration.yml
+  format: yaml
+  label: chatbot
+  slug: chatbot
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/chatbot-integration.yml
+- filename: notification-framework.yml
+  format: yaml
+  label: notification-framework
+  slug: notification-framework
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/notification-framework.yml
 categories:
 - crm-sales
 consumed_apis:
@@ -49,48 +68,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- crm
-- chatbot
-- notification management
-- sales opportunities
-- sales
-- get customer
-- retrieve details for a specific customer.
-- create case
-- retrieve notifications for the current user.
-- financial management
-- individual customer details
-- retrieve customer records.
-- customer records
-- campus solutions.
-- list notifications
-- financial and supply chain management.
-- hcm
-- retrieve sales opportunities.
-- list opportunities
-- create a new support or service case.
-- fulfill intent
-- chatbot intent fulfillments
-- human capital management.
-- enterprise software
 - send a notification via email, text, or in-app channels.
-- peoplesoft
-- retrieve available chatbot intents.
-- chatbot intents
-- campus solutions
+- financial management
+- hcm
+- campus solutions.
 - customer engagement
-- supply chain management
-- list cases
 - case management
-- retrieve support and service cases.
-- send notification
-- list customers
-- peopletools platform services.
+- list opportunities
+- customer records
+- chatbot
+- human capital management.
 - process a chatbot intent fulfillment request.
+- fulfill intent
+- supply chain management
+- retrieve sales opportunities.
+- list customers
+- retrieve notifications for the current user.
+- list notifications
 - erp
-- support and service cases
+- crm
+- financial and supply chain management.
+- peoplesoft
+- chatbot intent fulfillments
+- individual customer details
+- retrieve available chatbot intents.
+- campus solutions
+- send notification
+- sales
+- enterprise software
+- retrieve support and service cases.
+- sales opportunities
+- retrieve customer records.
+- create case
+- notification management
+- peopletools platform services.
+- chatbot intents
+- retrieve details for a specific customer.
+- list cases
+- create a new support or service case.
 - list intents
+- get customer
+- support and service cases
 slug: customer-engagement
+source_filename: customer-engagement.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Customer Engagement\"\n  description: \"Unified workflow for CRM users combining customer management, case management, sales, chatbot integration, and notifications across PeopleSoft CRM, Chatbot Integration, and Notification Framework APIs.\"\n  tags:\n    - PeopleSoft\n    - CRM\n    - Customer Engagement\n    - Case Management\n    - Sales\n    - Chatbot\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: crm\n      location: ./shared/crm.yaml\n    - import: chatbot\n      location: ./shared/chatbot-integration.yaml\n    - import: notification-framework\n      location: ./shared/notification-framework.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: customer-engagement-api\n      description: \"Unified REST API\
   \ for PeopleSoft customer engagement workflows.\"\n      resources:\n        - path: /v1/customers\n          name: customers\n          description: \"Customer records\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"Retrieve customer records.\"\n              call: \"crm.list-customers\"\n              with:\n                search: \"rest.search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/customers/{customerId}\n          name: customer-detail\n          description: \"Individual customer details\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Retrieve details for a specific customer.\"\n              call: \"crm.get-customer\"\n              with:\n                customerId: \"rest.customerId\"\n              outputParameters:\n                - type: object\n        \
   \          mapping: \"$.\"\n        - path: /v1/cases\n          name: cases\n          description: \"Support and service cases\"\n          operations:\n            - method: GET\n              name: list-cases\n              description: \"Retrieve support and service cases.\"\n              call: \"crm.list-cases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-case\n              description: \"Create a new support or service case.\"\n              call: \"crm.create-case\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/opportunities\n          name: opportunities\n          description: \"Sales opportunities\"\n          operations:\n            - method: GET\n              name: list-opportunities\n              description: \"Retrieve sales opportunities.\"\n              call: \"crm.list-opportunities\"\

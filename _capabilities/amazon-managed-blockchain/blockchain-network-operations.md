@@ -34,39 +34,41 @@ personas: []
 provider_name: Amazon Managed Blockchain
 provider_slug: amazon-managed-blockchain
 search_terms:
-- list all members of a blockchain network
-- create blockchain network
-- invite an aws account to join a blockchain network as a member
-- aws
-- amazon
-- list networks
-- ethereum
-- list blockchain networks
-- create network
-- network members
-- create a peer node to participate in a blockchain network
 - peer nodes
-- create a peer node
-- list peer nodes
-- create a blockchain network
 - list all amazon managed blockchain networks
-- list nodes
 - list network members
-- create a new hyperledger fabric or ethereum blockchain network
-- invite network member
-- blockchain
-- Blockchain Architect
-- list members
-- distributed ledger
-- Blockchain Developer
-- hyperledger fabric
 - create peer node
-- blockchain networks
-- list all peer nodes in a blockchain network
-- create node
-- create a member
+- list nodes
 - create member
+- list blockchain networks
+- list peer nodes
+- blockchain
+- create a peer node to participate in a blockchain network
+- invite an aws account to join a blockchain network as a member
+- create node
+- network members
+- aws
+- create a new hyperledger fabric or ethereum blockchain network
+- create blockchain network
+- amazon
+- create a member
+- create network
+- invite network member
+- Blockchain Developer
+- list all peer nodes in a blockchain network
+- list members
+- list networks
+- list all members of a blockchain network
+- Blockchain Architect
+- create a blockchain network
+- hyperledger fabric
+- distributed ledger
+- create a peer node
+- blockchain networks
+- ethereum
 slug: blockchain-network-operations
+source_filename: blockchain-network-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Managed Blockchain - Network Operations\"\n  description: \"Workflow capability for blockchain architects and developers to create and manage Hyperledger Fabric and Ethereum networks, members, peer nodes, and proposals on Amazon Managed Blockchain.\"\n  tags:\n    - Amazon\n    - Blockchain\n    - Hyperledger Fabric\n    - Ethereum\n    - Distributed Ledger\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: managed-blockchain\n      location: ./shared/managed-blockchain.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: blockchain-api\n      description: \"Unified REST API for Amazon Managed Blockchain operations.\"\n      resources:\n        - path: /v1/networks\n          name: networks\n\
   \          description: \"Blockchain networks\"\n          operations:\n            - method: GET\n              name: list-networks\n              description: \"List blockchain networks\"\n              call: \"managed-blockchain.list-networks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-network\n              description: \"Create a blockchain network\"\n              call: \"managed-blockchain.create-network\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/networks/{id}/members\n          name: members\n          description: \"Network members\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List members\"\n              call: \"managed-blockchain.list-members\"\n              with:\n                networkId: \"rest.id\"\n        \
   \      outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-member\n              description: \"Create a member\"\n              call: \"managed-blockchain.create-member\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/networks/{id}/nodes\n          name: nodes\n          description: \"Peer nodes\"\n          operations:\n            - method: GET\n              name: list-nodes\n              description: \"List peer nodes\"\n              call: \"managed-blockchain.list-nodes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-node\n              description: \"Create a peer node\"\n              call: \"managed-blockchain.create-node\"\n              outputParameters:\n                - type: object\n                \

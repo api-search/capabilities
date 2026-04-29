@@ -1,4 +1,47 @@
 ---
+api_specs:
+- filename: cloud-manager.yml
+  format: yaml
+  label: cloud-manager
+  slug: cloud-manager
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/cloud-manager.yml
+- filename: update-manager.yml
+  format: yaml
+  label: update-manager
+  slug: update-manager
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/update-manager.yml
+- filename: process-scheduler.yml
+  format: yaml
+  label: process-scheduler
+  slug: process-scheduler
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/process-scheduler.yml
+- filename: integration-broker.yml
+  format: yaml
+  label: integration-broker
+  slug: integration-broker
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/integration-broker.yml
+- filename: rest-api.yml
+  format: yaml
+  label: rest-api
+  slug: rest-api
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/rest-api.yml
+- filename: application-services-framework.yml
+  format: yaml
+  label: asf
+  slug: asf
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/application-services-framework.yml
+- filename: component-interface.yml
+  format: yaml
+  label: component-interface
+  slug: component-interface
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/component-interface.yml
 categories: []
 consumed_apis:
 - cloud-manager
@@ -84,80 +127,82 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- get service operation
-- retrieve data from an asf-defined service.
-- list updates
-- retrieve peoplesoft resource data via rest.
-- submit process
-- crm
-- retrieve available updates.
-- create service resource
 - financial management
-- retrieve data from a component interface.
-- retrieve data from a peoplesoft component interface.
-- component interface resources
-- campus solutions.
-- create a new peoplesoft resource.
-- list environments
-- available updates and change packages
+- retrieve the status of a specific process instance.
+- cloud manager
+- provision a new environment.
 - apply update
-- retrieve available updates and change packages.
+- retrieve data from a component interface.
+- campus solutions.
 - retrieve provisioned environments.
-- invoke a service operation using get.
+- hcm
+- retrieve available updates.
+- peoplesoft environments
+- get service operation
+- asf service resources
+- provisioning templates
+- process instance details
+- human capital management.
+- retrieve available provisioning templates.
 - initiate application of a specific update.
-- get service resource
+- devops
 - get component data
+- create a new record via a component interface.
+- retrieve available updates and change packages.
+- create a new peoplesoft resource via rest.
+- create service resource
+- supply chain management
+- platform administration
+- update an existing record via a component interface.
+- list processes
 - submit a new process request.
+- available updates and change packages
+- list templates
+- retrieve data from a peoplesoft component interface.
+- get resource
+- erp
 - financial and supply chain management.
+- crm
+- invoke a synchronous integration broker service operation using get.
+- apply updates
+- peoplesoft
+- get service resource
+- retrieve peoplesoft resource data via rest.
+- retrieve process requests and their run status.
+- update component data
+- provision a new peoplesoft environment on oci.
+- initiate application of a specific update or change package.
+- create a new record via a peoplesoft component interface.
+- create a new peoplesoft resource.
+- create component data
+- create a resource via an asf-defined service.
+- invoke a service operation using post.
+- campus solutions
+- create resource
+- enterprise software
+- provision environment
 - peopletools
 - update an existing record via a peoplesoft component interface.
-- post service operation
-- process instance details
-- hcm
-- invoke a synchronous integration broker service operation using get.
-- list templates
-- provision environment
-- list processes
-- update component data
-- submit a new process request for scheduling.
-- human capital management.
-- enterprise software
-- provisioning templates
-- devops
-- peoplesoft
-- retrieve peoplesoft resource data.
-- invoke a service operation using post.
-- create a new record via a peoplesoft component interface.
-- integration
-- update an existing record via a component interface.
-- campus solutions
-- platform administration
-- provision a new environment.
-- apply updates
-- initiate application of a specific update or change package.
-- invoke an integration broker service operation using post.
 - process requests
-- retrieve provisioned peoplesoft environments.
-- get resource
+- submit a new process request for scheduling.
+- post service operation
 - peoplesoft rest resources
-- get process status
-- create a new peoplesoft resource via rest.
-- peoplesoft environments
-- asf service resources
-- supply chain management
+- invoke a service operation using get.
 - integration broker service operations
-- create resource
-- create a resource via an asf-defined service.
-- create component data
-- provision a new peoplesoft environment on oci.
-- retrieve process requests and their run status.
+- list updates
+- submit process
+- integration
 - peopletools platform services.
-- erp
-- create a new record via a component interface.
-- retrieve available provisioning templates.
-- cloud manager
-- retrieve the status of a specific process instance.
+- invoke an integration broker service operation using post.
+- retrieve data from an asf-defined service.
+- list environments
+- retrieve provisioned peoplesoft environments.
+- get process status
+- retrieve peoplesoft resource data.
+- component interface resources
 slug: platform-administration
+source_filename: platform-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Platform Administration\"\n  description: \"Unified workflow for IT administrators combining environment provisioning, update management, process scheduling, integration broker, REST API management, application services framework, and component interface operations across PeopleSoft platform APIs.\"\n  tags:\n    - PeopleSoft\n    - Platform Administration\n    - Cloud Manager\n    - Integration\n    - DevOps\n    - PeopleTools\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: cloud-manager\n      location: ./shared/cloud-manager.yaml\n    - import: update-manager\n      location: ./shared/update-manager.yaml\n    - import: process-scheduler\n      location: ./shared/process-scheduler.yaml\n    - import: integration-broker\n      location:\
   \ ./shared/integration-broker.yaml\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n    - import: asf\n      location: ./shared/application-services-framework.yaml\n    - import: component-interface\n      location: ./shared/component-interface.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: platform-admin-api\n      description: \"Unified REST API for PeopleSoft platform administration workflows.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"PeopleSoft environments\"\n          operations:\n            - method: GET\n              name: list-environments\n              description: \"Retrieve provisioned environments.\"\n              call: \"cloud-manager.list-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: provision-environment\n              description: \"Provision\
   \ a new environment.\"\n              call: \"cloud-manager.provision-environment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/templates\n          name: templates\n          description: \"Provisioning templates\"\n          operations:\n            - method: GET\n              name: list-templates\n              description: \"Retrieve available provisioning templates.\"\n              call: \"cloud-manager.list-templates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/updates\n          name: updates\n          description: \"Available updates and change packages\"\n          operations:\n            - method: GET\n              name: list-updates\n              description: \"Retrieve available updates.\"\n              call: \"update-manager.list-updates\"\n              outputParameters:\n                - type: object\n        \

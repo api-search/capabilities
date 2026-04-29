@@ -30,40 +30,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- search for mastercard atm locations
-- search for merchants in track
+- submit acquirer transaction
+- digital identity
 - track
+- submit a transaction as an acquirer
+- locations
+- search for merchant places
+- list countries with merchant locations
+- merchant location search
+- search for merchants in track
+- financial services
+- search places
+- open banking
+- search for atm locations
+- search track merchants
+- search merchant locations
+- atm location search
+- acquirer
+- search for mastercard atm locations
+- search atm locations
+- list atm countries
 - merchant
 - fraud detection
-- locations
-- places location intelligence
-- financial services
-- search for merchant places with location intelligence
-- search for merchant places
-- search for mastercard merchant locations
-- search track merchants
-- search for merchants in the mastercard track network
-- list countries with merchant locations
-- track merchant data
-- search places
-- list countries with mastercard atms
-- atm location search
-- list atm countries
-- submit acquirer transaction
-- merchant location search
-- digital identity
-- payments
-- submit a transaction as an acquirer
-- open banking
-- acquirer
-- search for atm locations
-- search merchant locations
 - credit cards
-- mastercard
 - list merchant countries
-- search atm locations
+- list countries with mastercard atms
+- places location intelligence
 - search for merchant locations
+- mastercard
+- search for merchants in the mastercard track network
+- track merchant data
+- search for mastercard merchant locations
+- payments
+- search for merchant places with location intelligence
 slug: merchant-services-and-locations
+source_filename: merchant-services-and-locations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Merchant Services and Locations\"\n  description: \"Unified workflow for merchants and acquirers to manage merchant/ATM locations, Places data, Track merchant search, and acquirer transaction processing.\"\n  tags:\n    - Mastercard\n    - Merchant\n    - Locations\n    - Acquirer\n    - Track\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: merchant-locations\n      location: ./shared/merchant-locations.yaml\n    - import: atm-locations\n      location: ./shared/atm-locations.yaml\n    - import: places\n      location: ./shared/places.yaml\n    - import: track-search\n      location: ./shared/track-search.yaml\n    - import: transaction-api-acquirers\n      location: ./shared/transaction-api-acquirers.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8091\n      namespace: merchant-services-api\n      description: \"Unified REST API for merchant services and location data.\"\n      resources:\n        - path: /v1/merchant-locations\n          name: merchant-locations\n          description: \"Merchant location search\"\n          operations:\n            - method: POST\n              name: search-merchant-locations\n              description: \"Search for merchant locations\"\n              call: \"merchant-locations.search-merchants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/atm-locations\n          name: atm-locations\n          description: \"ATM location search\"\n          operations:\n            - method: POST\n              name: search-atm-locations\n              description: \"Search for ATM locations\"\n              call: \"atm-locations.search-atms\"\n              outputParameters:\n                - type: object\n\
   \                  mapping: \"$.\"\n        - path: /v1/places\n          name: places\n          description: \"Places location intelligence\"\n          operations:\n            - method: POST\n              name: search-places\n              description: \"Search for merchant places\"\n              call: \"places.search-places\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/track-merchants\n          name: track-merchants\n          description: \"Track merchant data\"\n          operations:\n            - method: POST\n              name: search-track-merchants\n              description: \"Search for merchants in Track\"\n              call: \"track-search.search-merchants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9101\n      namespace: merchant-services-mcp\n      transport: http\n      description: \"MCP server for\

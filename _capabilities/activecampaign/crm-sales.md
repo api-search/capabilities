@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: activecampaign-v3.json
+  format: json
+  label: activecampaign-v3
+  slug: activecampaign-v3
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/activecampaign/refs/heads/main/openapi/activecampaign-v3.json
 categories:
 - crm-sales
 consumed_apis:
@@ -28,45 +35,47 @@ provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
 - create a new deal
-- manage sales pipeline, deals, accounts, and tasks
-- crm
-- list all sales deals in activecampaign crm
-- crm, pipeline management, and revenue operations
-- sales
-- list all deals
-- cross-channel contact engagement and personalization
-- email, sms, and multi-channel marketing automation
-- list accounts
-- sales deal management
-- retrieve a specific deal by id
-- manages email campaigns, automations, and contact segmentation
-- activecampaign
-- create deal
 - orchestrate contact journeys, campaigns, automations, and list management
-- Account Manager
-- Revenue Operations
-- create a new sales deal in activecampaign crm
-- email marketing
-- company account management
-- customer experience
-- list all accounts
-- Marketing Manager
-- Growth Engineer
-- list deals
-- deals
-- sales automation
-- builds integrations, automation workflows, and uses the api directly
 - list all company accounts in activecampaign crm
-- create a new account
-- get deal
-- create a new company account in activecampaign crm
-- Email Marketer
-- accounts
-- tracks deals, manages accounts, and uses crm features
-- Sales Representative
 - marketing automation
+- deals
+- list deals
+- Growth Engineer
+- sales deal management
+- builds integrations, automation workflows, and uses the api directly
+- cross-channel contact engagement and personalization
+- sales automation
+- create a new account
+- tracks deals, manages accounts, and uses crm features
+- crm
+- company account management
+- Sales Representative
+- list accounts
+- create a new sales deal in activecampaign crm
+- Account Manager
+- activecampaign
+- retrieve a specific deal by id
+- sales
+- create a new company account in activecampaign crm
+- manage sales pipeline, deals, accounts, and tasks
+- Email Marketer
+- list all deals
+- email marketing
+- create deal
 - create account
+- manages email campaigns, automations, and contact segmentation
+- list all sales deals in activecampaign crm
+- Marketing Manager
+- get deal
+- Revenue Operations
+- accounts
+- customer experience
+- crm, pipeline management, and revenue operations
+- email, sms, and multi-channel marketing automation
+- list all accounts
 slug: crm-sales
+source_filename: crm-sales.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ActiveCampaign CRM and Sales\"\n  description: \"Workflow capability for CRM and sales pipeline management including deals, accounts, tasks, and pipeline stages. Used by sales teams and revenue operations to track and advance deals.\"\n  tags:\n    - ActiveCampaign\n    - CRM\n    - Sales\n    - Deals\n    - Accounts\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACTIVECAMPAIGN_API_TOKEN: ACTIVECAMPAIGN_API_TOKEN\n      ACTIVECAMPAIGN_API_URL: ACTIVECAMPAIGN_API_URL\n\ncapability:\n  consumes:\n    - import: activecampaign-v3\n      location: ./shared/activecampaign-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: crm-sales-api\n      description: \"Unified REST API for CRM and sales pipeline workflows.\"\n      resources:\n        - path: /v1/deals\n          name: deals\n          description: \"Sales deal management\"\n          operations:\n\
   \            - method: GET\n              name: list-deals\n              description: \"List all deals\"\n              call: \"activecampaign-v3.list-deals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-deal\n              description: \"Create a new deal\"\n              call: \"activecampaign-v3.create-deal\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/accounts\n          name: accounts\n          description: \"Company account management\"\n          operations:\n            - method: GET\n              name: list-accounts\n              description: \"List all accounts\"\n              call: \"activecampaign-v3.list-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-account\n     \
   \         description: \"Create a new account\"\n              call: \"activecampaign-v3.create-account\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: crm-sales-mcp\n      transport: http\n      description: \"MCP server for AI-assisted CRM and sales pipeline management.\"\n      tools:\n        - name: list-deals\n          description: \"List all sales deals in ActiveCampaign CRM\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"activecampaign-v3.list-deals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-deal\n          description: \"Create a new sales deal in ActiveCampaign CRM\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"activecampaign-v3.create-deal\"\n          outputParameters:\n            - type: object\n\

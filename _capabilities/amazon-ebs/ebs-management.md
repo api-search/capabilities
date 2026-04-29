@@ -38,40 +38,42 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- amazon ebs attach volume
-- create volume
-- aws
-- ebs
-- amazon ebs describe snapshots
-- deleteVolume
-- amazon ebs create snapshot
-- amazon ebs detach volume
-- createSnapshot
-- describeSnapshots
-- createVolume
-- detachVolume
-- block storage management business domain for amazon ebs.
-- describeVolumes
-- delete volume
-- describe snapshots
-- amazon web services
-- amazon ebs create volume
-- create snapshot
-- workflow capability for block storage management.
-- detach volume
-- attach volume
-- amazon ebs delete volume
-- ec2
-- snapshots
 - block storage
-- describe volumes
-- amazon ebs describe volumes
-- attachVolume
-- engineers managing amazon ebs resources on aws.
-- volumes
+- amazon ebs create snapshot
+- describe snapshots
+- describeSnapshots
+- amazon ebs attach volume
+- snapshots
 - storage
+- amazon ebs describe snapshots
+- describeVolumes
+- workflow capability for block storage management.
+- createVolume
+- attachVolume
+- aws
+- volumes
+- ebs
+- delete volume
+- detach volume
+- engineers managing amazon ebs resources on aws.
+- amazon ebs delete volume
+- detachVolume
+- describe volumes
+- amazon ebs detach volume
+- block storage management business domain for amazon ebs.
+- amazon web services
+- deleteVolume
+- amazon ebs create volume
+- ec2
 - amazon ebs
+- create volume
+- attach volume
+- create snapshot
+- createSnapshot
+- amazon ebs describe volumes
 slug: ebs-management
+source_filename: ebs-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EBS Block Storage Management\"\n  description: \"Unified capability for managing EBS volumes, snapshots, and encryption for cloud storage administrators.\"\n  tags:\n    - Amazon EBS\n    - AWS\n    - Storage\n    - Block Storage\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ebs\n      location: ./shared/ebs.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: ebs-api\n      description: \"Unified REST API for Block Storage Management.\"\n      resources:\n        - path: /v1/resource\n          name: describeVolumes\n          description: \"Amazon EBS Describe Volumes\"\n          operations:\n            - method: GET\n              name: describeVolumes\n              description: \"Amazon EBS Describe Volumes\"\
   \n              call: \"ebs.describeVolumes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/resource\n          name: createVolume\n          description: \"Amazon EBS Create Volume\"\n          operations:\n            - method: POST\n              name: createVolume\n              description: \"Amazon EBS Create Volume\"\n              call: \"ebs.createVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DeleteVolume\n          name: deleteVolume\n          description: \"Amazon EBS Delete Volume\"\n          operations:\n            - method: POST\n              name: deleteVolume\n              description: \"Amazon EBS Delete Volume\"\n              call: \"ebs.deleteVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#AttachVolume\n          name: attachVolume\n\
   \          description: \"Amazon EBS Attach Volume\"\n          operations:\n            - method: POST\n              name: attachVolume\n              description: \"Amazon EBS Attach Volume\"\n              call: \"ebs.attachVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DetachVolume\n          name: detachVolume\n          description: \"Amazon EBS Detach Volume\"\n          operations:\n            - method: POST\n              name: detachVolume\n              description: \"Amazon EBS Detach Volume\"\n              call: \"ebs.detachVolume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#CreateSnapshot\n          name: createSnapshot\n          description: \"Amazon EBS Create Snapshot\"\n          operations:\n            - method: POST\n              name: createSnapshot\n              description: \"Amazon EBS Create Snapshot\"\

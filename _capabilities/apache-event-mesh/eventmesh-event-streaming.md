@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: eventmesh-admin.yml
+  format: yaml
+  label: eventmesh-admin
+  slug: eventmesh-admin
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/apache-event-mesh/refs/heads/main/openapi/eventmesh-admin.yml
 categories: []
 consumed_apis:
 - eventmesh-admin
@@ -26,41 +33,43 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- list all topics registered in eventmesh
-- apache eventmesh
-- engineers managing the eventmesh cluster and messaging infrastructure
-- manage topics, subscriptions, and publish cloudevents
-- open source
-- Platform Engineer
-- manage eventmesh topics
-- manage event subscriptions
-- pub-sub
-- publish event
-- cloudevents
-- subscribe a consumer to an eventmesh topic
-- event-driven
-- create topic
 - subscribe to eventmesh topics
-- apache
+- Platform Engineer
+- messaging
+- engineers managing the eventmesh cluster and messaging infrastructure
+- serverless
+- create subscription
+- platform engineering
+- manage eventmesh topics
+- create a new eventmesh topic
+- manage event subscriptions
 - Developer
-- publish a cloudevent
+- pub-sub
 - list all eventmesh topics
 - topic management and event publishing via cloudevents
-- create eventmesh topic
-- application developers building event-driven services on eventmesh
-- create a new eventmesh topic
-- subscribe to topic
-- platform engineering
-- publish cloud event
-- list topics
-- serverless
+- open source
 - list eventmesh topics
-- publish a cloudevent to an eventmesh topic
+- list all topics registered in eventmesh
+- subscribe to topic
+- create eventmesh topic
+- apache eventmesh
+- application developers building event-driven services on eventmesh
+- publish cloud event
 - publish events
+- subscribe a consumer to an eventmesh topic
+- event-driven
+- list topics
+- publish a cloudevent
+- apache
+- manage topics, subscriptions, and publish cloudevents
+- cloudevents
+- publish a cloudevent to an eventmesh topic
 - pub-sub, request-reply, and broadcast messaging patterns
-- messaging
-- create subscription
+- create topic
+- publish event
 slug: eventmesh-event-streaming
+source_filename: eventmesh-event-streaming.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache EventMesh Event Streaming\"\n  description: \"Unified capability for event-driven architectures using Apache EventMesh — managing topics, subscriptions, and publishing CloudEvents. Designed for platform engineers and developers building distributed event streaming pipelines.\"\n  tags:\n    - Apache EventMesh\n    - Event-Driven\n    - CloudEvents\n    - Messaging\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      EVENTMESH_BASE_URL: EVENTMESH_BASE_URL\ncapability:\n  consumes:\n    - import: eventmesh-admin\n      location: ./shared/eventmesh-admin.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: eventmesh-streaming-api\n      description: \"Unified REST API for Apache EventMesh event streaming.\"\n      resources:\n        - path: /v1/topics\n          name: topics\n          description: Manage EventMesh topics\n        \
   \  operations:\n            - method: GET\n              name: list-topics\n              description: List all EventMesh topics\n              call: \"eventmesh-admin.list-topics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: create-topic\n              description: Create a new EventMesh topic\n              call: \"eventmesh-admin.create-topic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: Manage event subscriptions\n          operations:\n            - method: POST\n              name: create-subscription\n              description: Subscribe to EventMesh topics\n              call: \"eventmesh-admin.create-subscription\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n\
   \          name: events\n          description: Publish events\n          operations:\n            - method: POST\n              name: publish-event\n              description: Publish a CloudEvent\n              call: \"eventmesh-admin.publish-event\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: eventmesh-streaming-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache EventMesh event streaming.\"\n      tools:\n        - name: list-eventmesh-topics\n          description: List all topics registered in EventMesh\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"eventmesh-admin.list-topics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-eventmesh-topic\n          description: Create a new EventMesh topic\n          hints:\n            readOnly:\

@@ -43,43 +43,45 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- configuration
-- alerting
-- list alert policies
-- update or delete an alert policy
-- monitoring
-- analytics
-- list conditions for a policy
 - create alerts policy
-- list all alert policies
-- delete alerts policy
 - get alerts conditions
 - list alert conditions for a specific policy
-- new relic
-- delete an alert policy
-- observability
-- apm
-- update alerts policy
-- devops
-- infrastructure
-- platform administration
-- get alerts violations
-- create a new alert policy
-- list alert incidents
-- get alerts incidents
-- performance
-- get alerts policies
-- list alert conditions
-- list alert events
 - platform
-- analysis
-- policies
-- manage alert policies
+- devops
+- update alerts policy
+- list conditions for a policy
+- platform administration
 - list alert events filtered by product or entity type
+- delete alerts policy
+- get alerts policies
+- manage alert policies
+- apm
+- delete an alert policy
+- analysis
 - list alert violations
-- get alerts events
+- alerting
 - update an alert policy
+- policies
+- list alert conditions
+- monitoring
+- performance
+- observability
+- list alert events
+- get alerts events
+- analytics
+- new relic
+- list alert policies
+- create a new alert policy
+- configuration
+- get alerts violations
+- infrastructure
+- update or delete an alert policy
+- get alerts incidents
+- list alert incidents
+- list all alert policies
 slug: full-stack-observability
+source_filename: full-stack-observability.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Alerting Configuration\"\n  description: \"Alert policy and condition management workflow for platform admins configuring and maintaining New Relic alerting rules, notification channels, and policy structures.\"\n  tags:\n    - New Relic\n    - Alerting\n    - Configuration\n    - Platform Administration\n    - Policies\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: alerting-config-api\n      description: \"Unified REST API for New Relic alert policy and condition management.\"\n      resources:\n        - path: /v1/policies\n          name: policies\n          description: \"Manage alert policies\"\n          operations:\n            - method: GET\n              name:\
   \ get-alerts-policies\n              description: \"List alert policies\"\n              call: \"rest-api.get-alerts-policies\"\n              with:\n                filter[name]: \"rest.filter_name\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-alerts-policy\n              description: \"Create a new alert policy\"\n              call: \"rest-api.create-alerts-policy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies/{policyId}\n          name: policy-detail\n          description: \"Update or delete an alert policy\"\n          operations:\n            - method: PUT\n              name: update-alerts-policy\n              description: \"Update an alert policy\"\n              call: \"rest-api.update-alerts-policy\"\n              with:\n                policy_id:\
   \ \"rest.policyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-alerts-policy\n              description: \"Delete an alert policy\"\n              call: \"rest-api.delete-alerts-policy\"\n              with:\n                policy_id: \"rest.policyId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/conditions\n          name: conditions\n          description: \"List alert conditions\"\n          operations:\n            - method: GET\n              name: get-alerts-conditions\n              description: \"List conditions for a policy\"\n              call: \"rest-api.get-alerts-conditions\"\n              with:\n                policy_id: \"rest.policy_id\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    \

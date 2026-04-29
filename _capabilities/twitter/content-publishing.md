@@ -71,107 +71,109 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- get analytics data for a specific post
-- finalize chunked upload
-- media
-- bookmark a post
-- customer support
-- platform operations
-- produces original posts, threads, and media content on x.
-- create a new post (tweet) on x
-- getUsersBookmarks
-- delete a post by its id
-- createLists
-- microblogging
-- post creation, editing, media management, and content analytics.
-- addListsMember
-- user relationships, direct messaging, spaces, and community interaction.
-- marketing team
-- marketing
-- monitor conversations, search posts, analyze trends, and extract insights.
-- researcher
-- manage user relationships, direct messages, spaces, and community interactions.
-- data analyst
-- remove a bookmark
-- x api
-- get the processing status of an uploaded media
-- create and retrieve posts
-- deleteUsersBookmark
-- get the members of a list
-- deleteLists
-- ensures data handling meets regulatory and platform compliance requirements.
-- retrieve posts by ids
-- creates, schedules, and analyzes social media content across platforms.
-- monitors brand mentions, sentiment, and competitive landscape.
-- finalizeMediaUpload
-- get a list by its id
-- update a list's name or description
-- getPostsByIds
-- social media manager
-- content
-- social media
-- data engineer
-- append a chunk to an in-progress media upload
-- appendMediaUpload
-- streaming
-- manage a specific post
-- data compliance, deletion tracking, and regulatory event monitoring.
-- createMediaMetadata
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- initialize a chunked media upload
-- mediaUpload
-- engagement specialist
-- get analytics for a post
-- updateLists
-- upload media for posts (simple upload for small files)
-- community manager
-- get bookmarked posts
-- createUsersBookmark
-- manage user bookmarks
-- getPostsAnalytics
-- deletePostById
 - create or update metadata (alt text) for uploaded media
-- upload media for posts
-- get bookmarked posts for the authenticated user
-- get list posts
-- create a new post
-- builds and maintains communities through engagement and moderation.
-- manages brand presence, campaigns, and content strategy.
-- manages user relationships, follows, and interaction strategies.
-- social monitoring, search, trending topics, and sentiment analysis.
-- real-time data
-- delete a post
-- extracts insights from social data through search, streaming, and analytics.
-- createPosts
-- retrieve multiple posts by their ids
-- handles customer inquiries and issues via direct messages and replies.
 - getListsMembers
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- conducts academic or market research using x data archives.
-- initialize chunked upload
-- publishing
-- brand manager
-- posts
-- add a member to a list
-- initializeMediaUpload
-- getListsPosts
-- create a new list
-- finalize a chunked media upload
-- delete a list
-- create a new list on x
+- manages brand presence, campaigns, and content strategy.
+- create a new post
+- media
 - get posts from a list timeline
-- getListsById
-- content creator
-- get posts from a list's timeline
-- getMediaUploadStatus
-- manage list members
-- advertising
 - create, manage, and analyze posts, media, bookmarks, and lists.
-- compliance officer
-- upload media
-- get post analytics
+- get posts from a list's timeline
+- delete a list
+- finalize chunked upload
+- getListsPosts
+- brand manager
+- engagement specialist
+- getPostsByIds
+- createMediaMetadata
+- data compliance, deletion tracking, and regulatory event monitoring.
+- x api
+- get the members of a list
+- deleteUsersBookmark
+- createUsersBookmark
+- extracts insights from social data through search, streaming, and analytics.
+- bookmark a post
+- real-time data
+- append a chunk to an in-progress media upload
+- data analyst
+- advertising
 - create lists
+- ensures data handling meets regulatory and platform compliance requirements.
+- monitor conversations, search posts, analyze trends, and extract insights.
+- conducts academic or market research using x data archives.
+- content
+- streaming
+- marketing team
+- community manager
+- user relationships, direct messaging, spaces, and community interaction.
+- createPosts
+- content creator
+- create a new list on x
+- addListsMember
+- create a new list
+- get analytics data for a specific post
+- data engineer
+- get bookmarked posts for the authenticated user
+- social media
+- get analytics for a post
+- social media manager
+- finalizeMediaUpload
+- post creation, editing, media management, and content analytics.
+- remove a bookmark
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- get post analytics
+- manage a specific post
+- produces original posts, threads, and media content on x.
+- get a list by its id
+- upload media
+- create and retrieve posts
+- creates, schedules, and analyzes social media content across platforms.
+- initialize chunked upload
+- retrieve posts by ids
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- upload media for posts (simple upload for small files)
+- add a member to a list
+- initialize a chunked media upload
+- update a list's name or description
+- updateLists
+- get list posts
+- posts
+- initializeMediaUpload
+- builds and maintains communities through engagement and moderation.
+- manages user relationships, follows, and interaction strategies.
+- manage list members
+- delete a post by its id
+- publishing
+- platform operations
+- researcher
+- createLists
+- create a new post (tweet) on x
+- mediaUpload
+- marketing
+- manage user bookmarks
+- manage user relationships, direct messages, spaces, and community interactions.
+- delete a post
+- appendMediaUpload
+- monitors brand mentions, sentiment, and competitive landscape.
+- deletePostById
+- getPostsAnalytics
+- customer support
+- getUsersBookmarks
+- upload media for posts
+- microblogging
+- retrieve multiple posts by their ids
+- compliance officer
+- handles customer inquiries and issues via direct messages and replies.
+- get bookmarked posts
+- social monitoring, search, trending topics, and sentiment analysis.
+- finalize a chunked media upload
+- getListsById
+- get the processing status of an uploaded media
+- deleteLists
+- getMediaUploadStatus
 slug: content-publishing
+source_filename: content-publishing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"X Content Publishing and Management\"\n  description: \"Unified workflow for creating, managing, and analyzing posts, media, bookmarks, and lists on X. Used by social media managers, content creators, and marketing teams.\"\n  tags:\n    - X API\n    - Content\n    - Publishing\n    - Posts\n    - Media\n    - Marketing\n  personas:\n    - social media managers\n    - content creators\n    - marketing teams\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      X_API_BEARER_TOKEN: X_API_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: x-posts\n      location: \"./shared/posts.yaml\"\n    - import: x-media\n      location: \"./shared/media.yaml\"\n    - import: x-bookmarks\n      location: \"./shared/bookmarks.yaml\"\n    - import: x-lists\n      location: \"./shared/lists.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: x-content-api\n      resources:\n\
   \        - path: /v1/content/posts\n          name: posts\n          description: \"Create and retrieve posts\"\n          operations:\n            - method: POST\n              name: createPosts\n              description: \"Create a new post\"\n              call: \"x-content-api.createPosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: getPostsByIds\n              description: \"Retrieve posts by IDs\"\n              call: \"x-content-api.getPostsByIds\"\n              with:\n                ids: \"rest.ids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/posts/{id}\n          name: post\n          description: \"Manage a specific post\"\n          operations:\n            - method: DELETE\n              name: deletePostById\n              description: \"Delete a post\"\n              call: \"x-content-api.deletePostById\"\
   \n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/posts/{id}/analytics\n          name: post-analytics\n          description: \"Get post analytics\"\n          operations:\n            - method: GET\n              name: getPostsAnalytics\n              description: \"Get analytics for a post\"\n              call: \"x-content-api.getPostsAnalytics\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content/media/upload\n          name: media-upload\n          description: \"Upload media\"\n          operations:\n            - method: POST\n              name: mediaUpload\n              description: \"Upload media for posts\"\n              call: \"x-content-api.mediaUpload\"\n              outputParameters:\n                - type:\

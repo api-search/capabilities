@@ -67,68 +67,70 @@ personas: []
 provider_name: Red Hat Satellite
 provider_slug: red-hat-satellite
 search_terms:
-- subscription management
-- list hosts
-- list organizations
-- delete a content view.
 - publish a new version of a content view.
-- host power action
-- promote a content view version to a lifecycle environment.
-- list lifecycle environments.
-- host management endpoints.
-- get details for a specific host.
-- create a new lifecycle environment.
-- create lifecycle environment
-- create a lifecycle environment.
-- list organizations.
-- lifecycle management
-- update host
-- register a new host.
-- update a content view.
-- list subscriptions
 - execute a power action on a host (start, stop, reboot).
-- promote content view version
-- list subscriptions for an organization.
-- list lifecycle environments for an organization.
-- red hat satellite
-- list subscriptions.
-- list content views in an organization.
-- systems management
-- show organization
-- publish content view
-- show host
-- list lifecycle environments
-- organization management.
-- content view management.
-- get details for a content view.
-- delete host
-- delete a host.
-- delete content view
-- content management
-- lifecycle environment management.
-- create a new content view.
-- get content view details.
-- update content view
-- host management
+- lifecycle management
+- update a content view.
+- register a new host with satellite.
 - patch management
-- configuration management
-- get host details.
-- list all organizations.
-- show details for a specific organization.
-- list all content views.
-- list all hosts registered with satellite.
+- delete a host.
+- get details for a content view.
+- get details for a specific host.
+- individual host management.
+- publish content view
+- list content views
 - create host
 - create content view
+- promote a content view version to a lifecycle environment.
+- list content views in an organization.
+- list lifecycle environments
+- list hosts
+- get host details.
+- subscription management
+- host management
+- list subscriptions.
 - subscription management.
-- individual host management.
-- list content views
-- show content view
-- update host attributes.
 - list all managed hosts.
+- get content view details.
+- lifecycle environment management.
+- organization management.
+- delete a content view.
+- update host attributes.
+- list lifecycle environments.
+- content view management.
+- show content view
+- create a lifecycle environment.
+- promote content view version
+- list subscriptions for an organization.
 - delete a host from satellite.
+- content management
+- register a new host.
+- red hat satellite
+- list subscriptions
+- host power action
+- list lifecycle environments for an organization.
+- show details for a specific organization.
+- create a new lifecycle environment.
+- list all content views.
+- update host
+- host management endpoints.
+- create lifecycle environment
+- list organizations
+- show host
+- update content view
+- show organization
+- configuration management
+- list all organizations.
+- list organizations.
+- list all hosts registered with satellite.
+- delete content view
+- create a new content view.
 - individual content view management.
-- register a new host with satellite.
+- delete host
+- systems management
 slug: systems-lifecycle-management
+source_filename: systems-lifecycle-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Satellite Systems Lifecycle Management\"\n  description: \"Unified workflow for managing the complete lifecycle of physical, virtual, and cloud hosts including provisioning, content management, patching, and subscription management. Used by system administrators and platform engineers.\"\n  tags:\n    - Red Hat Satellite\n    - Systems Management\n    - Lifecycle Management\n    - Host Management\n    - Content Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SATELLITE_USERNAME: SATELLITE_USERNAME\n      SATELLITE_PASSWORD: SATELLITE_PASSWORD\n\ncapability:\n  consumes:\n    - import: satellite-api\n      location: ./shared/satellite-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: satellite-lifecycle-api\n      description: \"Unified REST API for Red Hat Satellite systems lifecycle management.\"\n      resources:\n        - path:\
   \ /v1/hosts\n          name: hosts\n          description: \"Host management endpoints.\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List all managed hosts.\"\n              call: \"satellite-api.list-hosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-host\n              description: \"Register a new host.\"\n              call: \"satellite-api.create-host\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts/{id}\n          name: host-details\n          description: \"Individual host management.\"\n          operations:\n            - method: GET\n              name: show-host\n              description: \"Get host details.\"\n              call: \"satellite-api.show-host\"\n              with:\n                id: \"rest.id\"\n   \
   \           outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-host\n              description: \"Update host attributes.\"\n              call: \"satellite-api.update-host\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-host\n              description: \"Delete a host.\"\n              call: \"satellite-api.delete-host\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/content-views\n          name: content-views\n          description: \"Content view management.\"\n          operations:\n            - method: GET\n              name: list-content-views\n              description: \"List all content views.\"\n\

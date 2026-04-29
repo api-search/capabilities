@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: dynamodb-openapi.yml
+  format: yaml
+  label: dynamodb
+  slug: dynamodb
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/dynamodb/refs/heads/main/openapi/dynamodb-openapi.yml
 categories: []
 consumed_apis:
 - dynamodb
@@ -46,62 +53,64 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- get an item.
-- get an item by primary key.
-- aws
-- update a table.
-- key-value
-- table management.
-- item operations.
-- update table
-- query
-- query operations.
-- delete table
-- list dynamodb tables.
-- transact write items
-- nosql
-- get multiple items from one or more tables.
-- query items by primary key.
-- dynamodb
-- put or delete multiple items in batch.
-- get item
-- batch write item
-- describe a table.
-- cloud
-- list on-demand backups.
-- delete an item.
-- create table
-- describe a dynamodb table.
 - create a table.
-- scan a table.
-- put item
-- delete item
-- create or replace an item.
-- get items in a transaction.
-- write items in a transaction.
+- delete a dynamodb table.
 - describe table
-- create backup
-- transact get items
-- list tables.
-- query items.
+- update table
+- table management.
+- update a table.
+- delete table
+- list on-demand backups.
+- list backups
 - update an item.
 - update item
-- scan an entire table or index.
-- database management
-- create a new dynamodb table.
-- database
-- create an on-demand backup.
-- list backups
-- delete a table.
-- list tables
-- scan
 - serverless
+- describe a table.
+- query operations.
+- item operations.
+- get item
+- scan an entire table or index.
+- scan
+- describe a dynamodb table.
+- query items.
+- write items in a transaction.
+- get an item.
+- transact write items
+- create an on-demand backup.
+- query
+- delete item
 - managed service
+- list tables
+- aws
+- transact get items
+- create table
+- delete an item.
+- cloud
+- nosql
+- database
+- create backup
+- list tables.
+- batch write item
+- create or replace an item.
+- key-value
+- dynamodb
+- database management
+- query items by primary key.
+- put or delete multiple items in batch.
+- get multiple items from one or more tables.
 - individual table management.
-- delete a dynamodb table.
+- get items in a transaction.
+- list dynamodb tables.
+- get an item by primary key.
+- put item
+- scan a table.
 - batch get item
+- create a new dynamodb table.
+- delete a table.
 - document store
 slug: database-management
+source_filename: database-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DynamoDB Database Management\"\n  description: \"Unified workflow for managing DynamoDB tables, items, queries, batch operations, transactions, and backups. Used by backend developers and data engineers.\"\n  tags:\n    - AWS\n    - DynamoDB\n    - NoSQL\n    - Database Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: dynamodb\n      location: ./shared/dynamodb.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: dynamodb-management-api\n      description: \"Unified REST API for DynamoDB database management.\"\n      resources:\n        - path: /v1/tables\n          name: tables\n          description: \"Table management.\"\n          operations:\n            - method: GET\n              name: list-tables\n\
   \              description: \"List tables.\"\n              call: \"dynamodb.list-tables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-table\n              description: \"Create a table.\"\n              call: \"dynamodb.create-table\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables/{id}\n          name: table-details\n          description: \"Individual table management.\"\n          operations:\n            - method: GET\n              name: describe-table\n              description: \"Describe a table.\"\n              call: \"dynamodb.describe-table\"\n              with:\n                tableName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-table\n              description:\
   \ \"Update a table.\"\n              call: \"dynamodb.update-table\"\n              with:\n                tableName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-table\n              description: \"Delete a table.\"\n              call: \"dynamodb.delete-table\"\n              with:\n                tableName: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items\n          name: items\n          description: \"Item operations.\"\n          operations:\n            - method: POST\n              name: put-item\n              description: \"Create or replace an item.\"\n              call: \"dynamodb.put-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-item\n             \

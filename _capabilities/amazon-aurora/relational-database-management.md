@@ -17,35 +17,37 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- postgresql
-- aws
-- create db cluster snapshot
-- create a snapshot of an aurora db cluster for backup or cloning.
-- describe db instances
-- create a new aurora db cluster
-- relational database
-- describe db clusters
-- list aurora db clusters
-- create db cluster
 - create db instance
-- start db cluster
-- modify the configuration of an existing aurora db cluster.
-- amazon aurora
-- stop db cluster
-- mysql
-- restore db cluster from snapshot
-- create a new aurora mysql or postgresql compatible db cluster.
 - modify db cluster
-- add a new read replica or writer instance to an aurora db cluster.
-- describe db cluster snapshots
-- list all aurora db clusters to understand available databases and their status.
-- start a stopped aurora db cluster to resume database operations.
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- list all db instances in aurora clusters.
-- stop an aurora db cluster to reduce costs when not in use.
+- create a new aurora db cluster
+- create a new aurora mysql or postgresql compatible db cluster.
+- amazon aurora
 - aurora db cluster management
+- describe db cluster snapshots
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- stop an aurora db cluster to reduce costs when not in use.
+- create db cluster
+- relational database
+- add a new read replica or writer instance to an aurora db cluster.
+- aws
+- list aurora db clusters
 - list available aurora db cluster snapshots for backup management.
+- list all db instances in aurora clusters.
+- list all aurora db clusters to understand available databases and their status.
+- mysql
+- stop db cluster
+- create db cluster snapshot
+- modify the configuration of an existing aurora db cluster.
+- describe db instances
+- restore db cluster from snapshot
+- postgresql
+- describe db clusters
+- start a stopped aurora db cluster to resume database operations.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- start db cluster
 slug: relational-database-management
+source_filename: relational-database-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Relational Database Management Workflow\n  description: Workflow capability for managing Amazon Aurora relational database clusters including creation, scaling, snapshots, and global database configurations.\n  tags:\n    - Amazon Aurora\n    - MySQL\n    - PostgreSQL\n    - Relational Database\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: aurora\n    from: shared/aurora-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: relational-db-rest\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: Aurora DB cluster management\n          operations:\n            - method: POST\n              name: create-db-cluster\n              description: Create a new Aurora DB cluster\n              call: \"aurora.create-db-cluster\"\n              outputParameters:\n                - type: object\n                  mapping:\
   \ \"$.\"\n            - method: GET\n              name: describe-db-clusters\n              description: List Aurora DB clusters\n              call: \"aurora.describe-db-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: relational-db-mcp\n      transport: http\n      tools:\n        - name: describe-db-clusters\n          description: List all Aurora DB clusters to understand available databases and their status.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aurora.describe-db-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-db-cluster\n          description: Create a new Aurora MySQL or PostgreSQL compatible DB cluster.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"aurora.create-db-cluster\"\n    \
   \      outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: modify-db-cluster\n          description: Modify the configuration of an existing Aurora DB cluster.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"aurora.modify-db-cluster\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-db-cluster\n          description: Start a stopped Aurora DB cluster to resume database operations.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"aurora.start-db-cluster\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stop-db-cluster\n          description: Stop an Aurora DB cluster to reduce costs when not in use.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"aurora.stop-db-cluster\"\n         \

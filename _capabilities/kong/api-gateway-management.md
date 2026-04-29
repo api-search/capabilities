@@ -39,77 +39,79 @@ personas: []
 provider_name: Kong
 provider_slug: kong
 search_terms:
-- configuration
-- delete a consumer.
-- upstream service management.
-- delete a route.
-- update service
-- list plugins
-- list all configured upstream services.
-- create upstream
-- delete an upstream.
-- get node info
-- api consumer management.
-- retrieve a specific service.
-- create service
-- retrieve kong gateway node information.
-- retrieve a specific plugin configuration.
-- get route
-- list all enabled plugin names on the node.
-- delete plugin
-- retrieve a specific consumer.
-- delete a service.
-- update a service configuration.
-- open source
-- retrieve gateway node info.
-- api gateway
-- create a new route.
-- create a new service.
-- create a new upstream service.
-- delete route
-- route management.
-- list all consumers.
-- list all api consumers.
-- list enabled plugins
-- list services
-- list upstreams
-- delete upstream
-- list consumers
-- list tags
-- list routes
-- create plugin
-- get plugin
-- list all tls certificates.
-- list certificates
-- lua
-- update a route.
-- kong
-- create a new upstream for load balancing.
-- create a new route for a service.
-- gateway node information.
-- list all plugins.
-- list all configured plugins.
-- create a new plugin configuration.
-- list all configured routes.
-- delete consumer
-- get node status
-- get service
-- delete service
 - create consumer
-- list all tags and tagged entities.
-- list all services.
-- create route
-- create a new api consumer.
+- delete a route.
+- lua
+- delete a service.
+- list all api consumers.
+- create a new upstream service.
+- list all tls certificates.
+- update a service configuration.
+- create a new upstream for load balancing.
+- list consumers
+- get service
 - get consumer
+- retrieve kong gateway node information.
+- create a new api consumer.
+- list all configured upstream services.
+- delete service
+- get plugin
+- create a new route for a service.
+- delete plugin
+- retrieve gateway node info.
 - delete a plugin.
+- list enabled plugins
+- list all plugins.
+- list upstreams
+- create a new service.
+- list certificates
+- delete upstream
+- open source
+- delete route
+- kong
+- api gateway
+- list routes
+- list plugins
+- get route
+- plugin management.
+- retrieve a specific plugin configuration.
+- list all enabled plugin names on the node.
+- update a route.
+- retrieve a specific route.
+- list all tags and tagged entities.
+- retrieve a specific service.
+- upstream service management.
+- retrieve a specific consumer.
+- update service
+- delete a consumer.
+- create service
+- list all services.
+- route management.
 - list all routes.
+- get node info
+- create route
+- create a new plugin configuration.
+- api consumer management.
+- list all configured plugins.
+- delete an upstream.
+- list tags
+- create upstream
+- gateway node information.
+- configuration
+- get node status
+- list services
+- list all configured routes.
+- list all consumers.
+- create plugin
 - nginx
+- delete consumer
+- list all upstream load balancers.
 - retrieve kong gateway node status.
 - update route
-- plugin management.
-- list all upstream load balancers.
-- retrieve a specific route.
+- create a new route.
 slug: api-gateway-management
+source_filename: api-gateway-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Kong API Gateway Management\"\n  description: \"API gateway management workflow for platform engineers to configure services, routes, plugins, consumers, upstreams, and TLS certificates on Kong Gateway instances.\"\n  tags:\n    - Kong\n    - API Gateway\n    - Configuration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      KONG_ADMIN_URL: KONG_ADMIN_URL\n\ncapability:\n  consumes:\n    - import: kong-admin\n      location: ./shared/kong-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-gateway-management-api\n      description: \"Unified REST API for Kong Gateway management.\"\n      resources:\n        - path: /v1/info\n          name: info\n          description: \"Gateway node information.\"\n          operations:\n            - method: GET\n              name: get-node-info\n              description: \"Retrieve gateway node info.\"\n   \
   \           call: \"kong-admin.get-node-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/services\n          name: services\n          description: \"Upstream service management.\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List all services.\"\n              call: \"kong-admin.list-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-service\n              description: \"Create a new service.\"\n              call: \"kong-admin.create-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/routes\n          name: routes\n          description: \"Route management.\"\n          operations:\n            - method: GET\n              name: list-routes\n  \
   \            description: \"List all routes.\"\n              call: \"kong-admin.list-routes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-route\n              description: \"Create a new route.\"\n              call: \"kong-admin.create-route\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/consumers\n          name: consumers\n          description: \"API consumer management.\"\n          operations:\n            - method: GET\n              name: list-consumers\n              description: \"List all consumers.\"\n              call: \"kong-admin.list-consumers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/plugins\n          name: plugins\n          description: \"Plugin management.\"\n          operations:\n            - method:\

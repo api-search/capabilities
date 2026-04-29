@@ -52,52 +52,54 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- get application metrics data
-- monitoring
-- analytics
-- get key transactions
-- record a new deployment for an application
-- query metric data for an application
-- send custom events
-- get application hosts
-- list deployment records for an application
-- get details of a specific application
-- developer
-- record a new deployment
-- create deployment
-- list application metrics
 - get application metrics
-- new relic
-- send events
-- observability
-- apm
-- get deployments
-- devops
-- query metric data
-- infrastructure
-- get application
 - update application
-- list hosts for an application
-- performance
-- list application hosts
-- get or update an application
-- list deployments for an application
-- list available metric names for an application
-- get applications
-- list applications
-- list key transactions
-- deployments
-- update application settings
+- send custom events
+- application monitoring
+- developer
+- send custom events for application tracking
+- get application metrics data
 - platform
-- analysis
-- manage deployments
+- devops
+- get details of a specific application
+- list hosts for an application
+- get deployments
+- record a new deployment
+- get or update an application
+- query metric data
+- get key transactions
+- apm
 - list all monitored applications
+- send events
+- analysis
+- deployments
+- get application hosts
 - get application details
 - list available metric names
+- query metric data for an application
+- list key transactions
+- monitoring
+- list available metric names for an application
+- create deployment
+- get applications
+- performance
+- observability
+- update application settings
+- list application hosts
+- analytics
+- manage deployments
+- new relic
+- list application metrics
+- list deployments for an application
 - query metric data points for an application
-- application monitoring
-- send custom events for application tracking
+- infrastructure
+- list applications
+- record a new deployment for an application
+- get application
+- list deployment records for an application
 slug: application-monitoring
+source_filename: application-monitoring.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Application Monitoring\"\n  description: \"Application performance monitoring workflow combining application metrics, deployments, hosts, and custom events for developers tracking application health and release impact.\"\n  tags:\n    - New Relic\n    - Application Monitoring\n    - Developer\n    - APM\n    - Deployments\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n      NEW_RELIC_INSERT_KEY: NEW_RELIC_INSERT_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n    - import: event-api\n      location: ./shared/event-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: application-monitoring-api\n      description: \"Unified REST API for New Relic application performance monitoring.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n\
   \          description: \"List applications\"\n          operations:\n            - method: GET\n              name: get-applications\n              description: \"List all monitored applications\"\n              call: \"rest-api.get-applications\"\n              with:\n                filter[name]: \"rest.filter_name\"\n                filter[host]: \"rest.filter_host\"\n                filter[language]: \"rest.filter_language\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/{id}\n          name: application-detail\n          description: \"Get or update an application\"\n          operations:\n            - method: GET\n              name: get-application\n              description: \"Get application details\"\n              call: \"rest-api.get-application\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n               \
   \ - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-application\n              description: \"Update application settings\"\n              call: \"rest-api.update-application\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/deployments/{applicationId}\n          name: deployments\n          description: \"Manage deployments\"\n          operations:\n            - method: GET\n              name: get-deployments\n              description: \"List deployments for an application\"\n              call: \"rest-api.get-deployments\"\n              with:\n                application_id: \"rest.applicationId\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-deployment\n \

@@ -25,36 +25,38 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude upload events
-- analyzes data and manages cohorts
-- analytics
-- manage event schemas and chart annotations. for data governance teams.
-- privacy compliance
+- event ingestion
+- a/b testing
+- amplitude identify a user
 - http v2 api uploadEvents
-- manages privacy and compliance
-- scim provisioning and privacy compliance. for it admins and compliance teams.
 - feature flags
+- data governance
 - user behavior
 - attribution api sendAttribution
-- amplitude send attribution data
-- ingests and exports event data
-- identifyUser
-- identify api identifyUser
-- amplitude
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- product analytics
-- amplitude identify a user
-- a/b testing
-- unified workflow for sending events and identifying users. for data engineers.
-- data governance
-- runs experiments and feature flags
 - experimentation
-- event ingestion
-- sendAttribution
-- identity management
-- export raw event data and manage behavioral cohorts. for data analysts.
+- amplitude send attribution data
+- product analytics
+- manages privacy and compliance
+- identify api identifyUser
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- runs experiments and feature flags
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- analyzes data and manages cohorts
+- privacy compliance
 - uploadEvents
+- export raw event data and manage behavioral cohorts. for data analysts.
+- analytics
+- manage event schemas and chart annotations. for data governance teams.
+- identity management
+- sendAttribution
+- amplitude upload events
+- identifyUser
+- unified workflow for sending events and identifying users. for data engineers.
+- amplitude
+- ingests and exports event data
 slug: amplitude-analytics-ingestion
+source_filename: amplitude-analytics-ingestion.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amplitude Analytics Ingestion\n  description: Unified workflow for sending events and identifying users. For data engineers.\n  tags:\n  - Amplitude\n  - Analytics\n  - Event Ingestion\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMPLITUDE_API_KEY: AMPLITUDE_API_KEY\ncapability:\n  consumes:\n  - import: attribution-api\n    location: ./shared/attribution-api.yaml\n  - import: http-v2-api\n    location: ./shared/http-v2-api.yaml\n  - import: identify-api\n    location: ./shared/identify-api.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amplitude-analytics-ingestion-api\n    description: REST API for Amplitude Analytics Ingestion\n    resources:\n    - path: /v1/attribution\n      name: attribution\n      operations:\n      - method: POST\n        name: sendAttribution\n        description: Amplitude Send Attribution Data\n        call: attribution-api.sendAttribution\n  \
   \      with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/events\n      name: events\n      operations:\n      - method: POST\n        name: uploadEvents\n        description: Amplitude Upload Events\n        call: http-v2-api.uploadEvents\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/identify\n      name: identify\n      operations:\n      - method: POST\n        name: identifyUser\n        description: Amplitude Identify a User\n        call: identify-api.identifyUser\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amplitude-analytics-ingestion-mcp\n    transport: http\n    description: MCP for Amplitude Analytics Ingestion\n    tools:\n    - name: attribution-api-sendAttribution\n      description: Amplitude Send Attribution Data\n      hints:\n        readOnly: false\n      call: attribution-api.sendAttribution\n\
   \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: http-v2-api-uploadEvents\n      description: Amplitude Upload Events\n      hints:\n        readOnly: false\n      call: http-v2-api.uploadEvents\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: identify-api-identifyUser\n      description: Amplitude Identify a User\n      hints:\n        readOnly: false\n      call: identify-api.identifyUser\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"

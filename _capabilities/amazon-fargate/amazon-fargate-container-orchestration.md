@@ -51,72 +51,74 @@ personas: []
 provider_name: Amazon Fargate
 provider_slug: amazon-fargate
 search_terms:
-- describe services
-- compute
-- aws
-- update service
-- create a new ecs cluster
-- DevOps Engineer
-- create a new cluster
-- eks
-- stop task
-- register a task definition
-- create service
-- register task definition
-- create a service
-- Cloud Architect
-- list all services running in a fargate cluster
-- run task
-- delete cluster
-- run a task
-- running workloads without managing infrastructure
-- delete a fargate cluster
-- get cluster details
-- list task definitions
-- manage task execution
-- Platform Engineer
-- architects designing serverless container solutions
-- manage services
-- deploying and scaling microservices architectures
-- containers
-- amazon fargate
-- scale or update a fargate service task count or definition
-- remove a fargate service from a cluster
-- deploy a persistent fargate service with load balancing and auto-scaling
-- describe task definition
-- get details of a task definition
-- list all registered task definitions
-- list services
-- deregister a task definition revision
-- get status and details of running tasks
-- engineers building container platforms and infrastructure
-- microservices
-- delete a cluster
-- stop a running fargate task
-- devops
-- describe clusters
 - list tasks in a cluster with status filtering
-- managing container lifecycle from definition to deployment
-- list all ecs clusters
-- describe tasks
-- manage task definitions
-- delete service
-- ecs
-- list clusters
-- engineers deploying and operating containerized applications
-- create cluster
-- launch a fargate task with specified cpu, memory, and networking
-- deregister task definition
-- register a task definition specifying container images, cpu, memory, and networking
-- manage ecs clusters
-- full lifecycle management of serverless container workloads
-- serverless
-- get detailed cluster information
-- list tasks
-- manage specific cluster
 - get deployment status and health of fargate services
+- managing container lifecycle from definition to deployment
+- stop a running fargate task
+- engineers deploying and operating containerized applications
+- containers
+- manage ecs clusters
+- run a task
+- Platform Engineer
+- list task definitions
+- serverless
+- devops
+- describe services
+- eks
+- get cluster details
+- run task
+- register a task definition specifying container images, cpu, memory, and networking
+- deregister a task definition revision
+- delete service
+- full lifecycle management of serverless container workloads
+- deregister task definition
+- delete a fargate cluster
+- register a task definition
+- manage task execution
+- register task definition
+- get details of a task definition
+- list tasks
+- list all services running in a fargate cluster
+- amazon fargate
+- aws
+- create a new cluster
+- list all registered task definitions
+- stop task
+- manage task definitions
+- architects designing serverless container solutions
+- create a new ecs cluster
+- scale or update a fargate service task count or definition
+- create cluster
+- update service
+- DevOps Engineer
+- create service
+- create a service
+- compute
+- running workloads without managing infrastructure
+- describe clusters
+- launch a fargate task with specified cpu, memory, and networking
+- describe tasks
+- deploying and scaling microservices architectures
+- manage services
+- delete cluster
+- microservices
+- get detailed cluster information
 - list all ecs clusters for fargate workloads
+- deploy a persistent fargate service with load balancing and auto-scaling
+- remove a fargate service from a cluster
+- Cloud Architect
+- delete a cluster
+- list clusters
+- manage specific cluster
+- engineers building container platforms and infrastructure
+- list services
+- ecs
+- describe task definition
+- list all ecs clusters
+- get status and details of running tasks
 slug: amazon-fargate-container-orchestration
+source_filename: amazon-fargate-container-orchestration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Fargate Container Orchestration\n  description: Workflow capability for deploying and managing serverless container workloads on Amazon Fargate. Combines cluster management, task definitions, task execution, and service deployment \n    for platform engineers and DevOps teams.\n  tags:\n  - Amazon Fargate\n  - Containers\n  - Serverless\n  - ECS\n  - DevOps\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: fargate\n    location: ./shared/fargate.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: fargate-orchestration-api\n    description: Unified REST API for Amazon Fargate container orchestration.\n    resources:\n    - path: /v1/clusters\n      name: clusters\n      description: Manage ECS clusters\n      operations:\n  \
   \    - method: GET\n        name: list-clusters\n        description: List all ECS clusters\n        call: fargate.list-clusters\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-cluster\n        description: Create a new cluster\n        call: fargate.create-cluster\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/clusters/{cluster}\n      name: cluster\n      description: Manage specific cluster\n      operations:\n      - method: GET\n        name: describe-clusters\n        description: Get cluster details\n        call: fargate.describe-clusters\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-cluster\n        description: Delete a cluster\n        call: fargate.delete-cluster\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/task-definitions\n      name: task-definitions\n\
   \      description: Manage task definitions\n      operations:\n      - method: GET\n        name: list-task-definitions\n        description: List task definitions\n        call: fargate.list-task-definitions\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: register-task-definition\n        description: Register a task definition\n        call: fargate.register-task-definition\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tasks\n      name: tasks\n      description: Manage task execution\n      operations:\n      - method: GET\n        name: list-tasks\n        description: List tasks\n        call: fargate.list-tasks\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: run-task\n        description: Run a task\n        call: fargate.run-task\n        outputParameters:\n        - type: object\n          mapping: $.\n    -\

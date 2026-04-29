@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: zoominfo-openapi.yml
+  format: yaml
+  label: zoominfo
+  slug: zoominfo
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/zoominfo/refs/heads/main/openapi/zoominfo-openapi.yml
 categories: []
 consumed_apis:
 - zoominfo
@@ -82,75 +89,77 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- enrich technology
-- zoominfo
-- bulk search companies
-- get the results of a completed bulk job.
-- enrich company records with zoominfo master data.
-- submit a bulk company enrichment job.
-- get corporate hierarchy data showing parent/subsidiary relationships.
-- enrich intent
-- enrich company master
-- company data
-- enrich a company record with zoominfo master company data.
-- get bulk job results
-- retrieve organizational chart data.
-- enrich a contact record with zoominfo person data including email, phone, title, and company.
-- bulk enrich contacts
-- bulk company search and enrichment.
-- get the status of a bulk job.
-- enrich corporate hierarchy
-- submit a bulk company search job.
-- marketing intelligence
 - enrich a contact record with zoominfo person data.
+- b2b
+- retrieve organizational chart data.
+- marketing intelligence
 - enrich company records with zoominfo data.
-- get technology stack data for a company.
-- enrich company
-- get scoop data for a company.
-- get org chart data for a company.
-- retrieve scoop enrichment data.
-- enrich news
-- enrich contact records with zoominfo data.
-- get bulk job status
-- contacts
+- submit a bulk company search job.
+- get corporate hierarchy showing parent/subsidiary relationships.
+- bulk enrich contacts
+- retrieve news enrichment data.
+- get corporate hierarchy data showing parent/subsidiary relationships.
+- contact database
+- get company data associated with an ip address.
+- enrich a contact record with zoominfo person data including email, phone, title, and company.
+- bulk search companies
+- enrich company master
+- lead generation
+- data enrichment
+- get hashtag data for a contact.
+- get intent signal data for a company.
+- enrich hashtags
+- get news data for a company.
+- enrich corporate hierarchy
+- data
+- retrieve company location data.
 - sales intelligence
-- enrich ip
+- get the status of a bulk job.
+- enrich contact
+- bulk search contacts
+- company data
+- get scoop data for a company.
+- retrieve intent signal enrichment data.
+- b2b data
+- bulk company search and enrichment.
+- enrich intent
+- get location data for a company.
+- retrieve scoop enrichment data.
+- get bulk job status
+- get bulk job results
+- retrieve contact hashtag data.
+- enrich a company record with zoominfo master company data.
+- get organizational chart data for a company.
 - retrieve bulk job results.
 - retrieve corporate hierarchy data.
-- get hashtag data for a contact.
-- retrieve intent signal enrichment data.
-- enrich a company record with zoominfo firmographic data including revenue, employees, and industry.
-- get organizational chart data for a company.
-- get intent signal data for a company.
-- data enrichment
-- submit a bulk contact enrichment job.
-- enrich hashtags
-- check bulk job status.
-- crm integration
-- get news data for a company.
-- lead generation
-- bulk search contacts
-- retrieve contact hashtag data.
-- enrich ip addresses with company data.
-- retrieve technology stack data.
-- b2b
-- retrieve news enrichment data.
-- enrich orgchart
-- b2b data
-- enrich scoop
-- enrich location
-- bulk contact search and enrichment.
-- get company data associated with an ip address.
-- get corporate hierarchy showing parent/subsidiary relationships.
-- contact database
-- submit a bulk contact search job.
-- retrieve company location data.
-- get location data for a company.
-- data
 - enrich a company record with zoominfo firmographic data.
-- enrich contact
+- get the results of a completed bulk job.
+- submit a bulk contact search job.
+- zoominfo
+- enrich ip
+- enrich company records with zoominfo master data.
+- enrich company
+- enrich location
+- get technology stack data for a company.
+- retrieve technology stack data.
+- enrich technology
+- submit a bulk contact enrichment job.
+- submit a bulk company enrichment job.
+- check bulk job status.
+- enrich contact records with zoominfo data.
+- crm integration
+- enrich news
 - bulk enrich companies
+- get org chart data for a company.
+- enrich a company record with zoominfo firmographic data including revenue, employees, and industry.
+- enrich scoop
+- enrich ip addresses with company data.
+- bulk contact search and enrichment.
+- contacts
+- enrich orgchart
 slug: data-enrichment
+source_filename: data-enrichment.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ZoomInfo Data Enrichment\"\n  description: \"Unified capability for B2B data enrichment workflows combining contact, company, org chart, corporate hierarchy, location, technology, intent, and IP enrichment. Used by sales ops, marketing ops, and data teams to enrich CRM and marketing automation records.\"\n  tags:\n    - ZoomInfo\n    - Data Enrichment\n    - CRM Integration\n    - B2B Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOMINFO_USERNAME: ZOOMINFO_USERNAME\n      ZOOMINFO_PASSWORD: ZOOMINFO_PASSWORD\n\ncapability:\n  consumes:\n    - import: zoominfo\n      location: ./shared/zoominfo.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: data-enrichment-api\n      description: \"Unified REST API for B2B data enrichment workflows.\"\n      resources:\n        - path: /v1/contacts/enrich\n          name: contact-enrichment\n          description:\
   \ \"Enrich contact records with ZoomInfo data.\"\n          operations:\n            - method: POST\n              name: enrich-contact\n              description: \"Enrich a contact record with ZoomInfo person data.\"\n              call: \"zoominfo.enrich-contact\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/companies/enrich\n          name: company-enrichment\n          description: \"Enrich company records with ZoomInfo data.\"\n          operations:\n            - method: POST\n              name: enrich-company\n              description: \"Enrich a company record with ZoomInfo firmographic data.\"\n              call: \"zoominfo.enrich-company\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/companies/master-enrich\n          name: company-master-enrichment\n          description: \"Enrich company records with ZoomInfo master data.\"\
   \n          operations:\n            - method: POST\n              name: enrich-company-master\n              description: \"Enrich a company record with ZoomInfo master company data.\"\n              call: \"zoominfo.enrich-company-master\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/org-charts\n          name: org-charts\n          description: \"Retrieve organizational chart data.\"\n          operations:\n            - method: POST\n              name: enrich-orgchart\n              description: \"Get org chart data for a company.\"\n              call: \"zoominfo.enrich-orgchart\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/corporate-hierarchies\n          name: corporate-hierarchies\n          description: \"Retrieve corporate hierarchy data.\"\n          operations:\n            - method: POST\n              name: enrich-corporate-hierarchy\n\

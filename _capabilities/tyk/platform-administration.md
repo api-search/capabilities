@@ -31,44 +31,46 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- administration
-- list organizations
-- update an organization
-- create admin user
-- import system configuration
+- update organization
+- delete an organization
+- get pprof diagnostic data from mdcb
+- list all connected data plane nodes
+- platform
+- list all tyk organizations
+- graphql
 - mdcb
-- list dataplanes
-- organization management
 - list all connected data planes
 - import system
-- delete an organization
+- api management
 - open source
-- get diagnostics
-- create a new organization
-- create an admin user
+- update an organization
+- check mdcb health
 - api gateway
 - list all admin users
-- graphql
-- data plane monitoring
-- list admin users
+- administration
+- create an admin user
 - list all organizations
-- get dataplane
-- get pprof diagnostic data from mdcb
-- list all tyk organizations
-- get details for a specific data plane
-- list all connected data plane nodes
-- tyk
-- admin user management
+- import system configuration
 - mdcb health
-- export system
-- platform
-- export system configuration
+- organization management
+- data plane monitoring
+- get details for a specific data plane
 - create organization
-- api management
-- update organization
+- admin user management
 - delete organization
-- check mdcb health
+- export system configuration
+- get dataplane
+- create admin user
+- list dataplanes
+- create a new organization
+- list organizations
+- list admin users
+- get diagnostics
+- export system
+- tyk
 slug: platform-administration
+source_filename: platform-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Tyk Platform Administration\"\n  description: \"Platform administration workflow combining Dashboard Admin and MDCB APIs for platform administrators to manage organizations, multi-data center deployments, and system diagnostics.\"\n  tags:\n    - Administration\n    - MDCB\n    - Platform\n    - Tyk\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      TYK_ADMIN_SECRET: TYK_ADMIN_SECRET\n      TYK_MDCB_API_KEY: TYK_MDCB_API_KEY\n\ncapability:\n  consumes:\n    - import: tyk-dashboard-admin\n      location: ./shared/dashboard-admin.yaml\n    - import: tyk-mdcb\n      location: ./shared/mdcb.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: tyk-platform-admin-api\n      description: \"Unified REST API for Tyk platform administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description: \"Organization management\"\
   \n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List all organizations\"\n              call: \"tyk-dashboard-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-organization\n              description: \"Create a new organization\"\n              call: \"tyk-dashboard-admin.create-organization\"\n              with:\n                org: \"rest.org\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/admin-users\n          name: admin-users\n          description: \"Admin user management\"\n          operations:\n            - method: GET\n              name: list-admin-users\n              description: \"List admin users\"\n              call: \"tyk-dashboard-admin.list-admin-users\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dataplanes\n          name: dataplanes\n          description: \"Data plane monitoring\"\n          operations:\n            - method: GET\n              name: list-dataplanes\n              description: \"List all connected data planes\"\n              call: \"tyk-mdcb.list-dataplanes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health\n          name: health\n          description: \"MDCB health\"\n          operations:\n            - method: GET\n              name: check-mdcb-health\n              description: \"Check MDCB health\"\n              call: \"tyk-mdcb.check-health\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: tyk-platform-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\

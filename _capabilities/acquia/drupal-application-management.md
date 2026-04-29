@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: acquia-cloud-applications.yml
+  format: yaml
+  label: acquia-cloud
+  slug: acquia-cloud
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/acquia/refs/heads/main/openapi/acquia-cloud-applications.yml
 categories: []
 consumed_apis:
 - acquia-cloud
@@ -34,47 +41,49 @@ personas: []
 provider_name: Acquia
 provider_slug: acquia
 search_terms:
-- drupal application lifecycle management
-- list organizations
-- DevOps Engineer
+- list all acquia cloud drupal applications the current user can access
+- Drupal Developer
+- environments
+- application discovery, environment management, and organization administration
+- get environment details
+- get detailed information about a specific acquia cloud environment
+- devops
+- experience
+- drupal application hosting lifecycle on acquia cloud platform
+- get the current acquia cloud user account profile and permissions
 - list environments for an application
+- drupal application lifecycle management
+- content
+- engineer managing ci/cd pipelines, deployments, and environment configuration
+- acquia platform admin managing organizations, teams, and subscriptions
+- get application details
+- list all organizations
+- acquia
+- Platform Administrator
+- applications
+- developer building and deploying drupal applications on acquia cloud
 - organization management
+- get environment
+- DevOps Engineer
+- cloud
+- current user account
+- application environment operations
+- list all organizations the current acquia user belongs to
+- get account
+- list all environments (dev, staging, prod) for an acquia cloud application
+- list organizations
+- list all accessible acquia cloud applications
 - list environments
 - get detailed information about a specific acquia cloud application
-- get current user account details
-- applications
-- get account
-- Drupal Developer
-- get environment
-- engineer managing ci/cd pipelines, deployments, and environment configuration
-- get environment details
-- environments
-- content
-- devops
-- list all organizations
-- get detailed information about a specific acquia cloud environment
-- cloud
-- application discovery, environment management, and organization administration
-- user, team, and organizational access control management
-- list all accessible acquia cloud applications
-- get application
-- Platform Administrator
-- cloud ide environments and platform notification management
-- get the current acquia cloud user account profile and permissions
-- list applications
 - drupal
-- list all acquia cloud drupal applications the current user can access
-- drupal application hosting lifecycle on acquia cloud platform
-- acquia platform admin managing organizations, teams, and subscriptions
-- application environment operations
-- list all environments (dev, staging, prod) for an acquia cloud application
-- developer building and deploying drupal applications on acquia cloud
-- acquia
-- get application details
-- list all organizations the current acquia user belongs to
-- experience
-- current user account
+- list applications
+- get current user account details
+- user, team, and organizational access control management
+- get application
+- cloud ide environments and platform notification management
 slug: drupal-application-management
+source_filename: drupal-application-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Acquia Drupal Application Management\n  description: >-\n    Unified workflow for managing Drupal applications on Acquia Cloud, including application\n    discovery, environment management, organization administration, and account operations.\n    Used by Drupal developers, DevOps engineers, and platform administrators to automate\n    Acquia Cloud Platform workflows.\n  tags:\n    - Acquia\n    - Applications\n    - Cloud\n    - DevOps\n    - Drupal\n    - Environments\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ACQUIA_OAUTH_TOKEN: ACQUIA_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: acquia-cloud\n      location: ./shared/acquia-cloud-applications.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: acquia-management-api\n      description: Unified REST API for Acquia Cloud application and environment management.\n      resources:\n        -\
   \ path: /v1/applications\n          name: applications\n          description: Drupal application lifecycle management\n          operations:\n            - method: GET\n              name: list-applications\n              description: List all accessible Acquia Cloud applications\n              call: \"acquia-cloud.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-application\n              description: Get application details\n              call: \"acquia-cloud.get-application\"\n              with:\n                applicationUuid: \"rest.applicationUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments\n          name: environments\n          description: Application environment operations\n          operations:\n            - method: GET\n              name: list-environments\n\
   \              description: List environments for an application\n              call: \"acquia-cloud.list-environments\"\n              with:\n                applicationUuid: \"rest.applicationUuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-environment\n              description: Get environment details\n              call: \"acquia-cloud.get-environment\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: Organization management\n          operations:\n            - method: GET\n              name: list-organizations\n              description: List all organizations\n              call: \"acquia-cloud.list-organizations\"\n              outputParameters:\n      \

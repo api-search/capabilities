@@ -18,40 +18,42 @@ personas: []
 provider_name: Apache Pinot
 provider_slug: apache-pinot
 search_terms:
-- list all tables in the pinot cluster
-- analytics
-- real-time
-- query
-- low latency
-- open source
-- Platform Engineer
-- execute sql query
-- execute a sql query against pinot tables
-- get cluster info
-- sql
-- get schema
-- real-time olap
-- create a new pinot table
-- create table
 - list schemas
-- queries pinot for real-time analytics and dashboards
-- apache
-- get the configuration of a specific table
-- list all segments for a table
-- get a specific schema definition
-- database
-- list all registered schemas
-- olap
-- list tables
-- Data Analyst
-- distributed databases
-- manages pinot cluster, tables, and schemas
-- apache pinot
-- get pinot cluster status and information
 - list segments
+- get the configuration of a specific table
+- manages pinot cluster, tables, and schemas
+- create a new pinot table
 - query sql
+- list all segments for a table
+- Platform Engineer
+- olap
+- get a specific schema definition
+- sql
+- open source
 - get table
+- query
+- list all tables in the pinot cluster
+- list tables
+- real-time olap
+- list all registered schemas
+- create table
+- get pinot cluster status and information
+- Data Analyst
+- execute sql query
+- real-time
+- apache
+- get schema
+- get cluster info
+- execute a sql query against pinot tables
+- analytics
+- apache pinot
+- low latency
+- distributed databases
+- database
+- queries pinot for real-time analytics and dashboards
 slug: pinot-workflow
+source_filename: pinot-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Pinot Analytics Workflow\"\n  description: \"Workflow for executing real-time OLAP queries, managing schemas and tables, and monitoring the Pinot cluster.\"\n  tags:\n    - Apache Pinot\n    - Analytics\n    - Real-Time OLAP\n    - SQL\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      PINOT_AUTH_TOKEN: PINOT_AUTH_TOKEN\ncapability:\n  consumes:\n    - type: http\n      namespace: pinot\n      baseUri: https://localhost:9000\n      description: \"Apache Pinot REST API\"\n      resources:\n        - name: queries\n          path: /query/sql\n          description: \"SQL query execution\"\n          operations:\n            - name: querySql\n              method: POST\n              description: \"Execute SQL query\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"\
   $.\"\n        - name: tables\n          path: /tables\n          description: \"Table management\"\n          operations:\n            - name: listTables\n              method: GET\n              description: \"List all tables\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pinot-api\n      description: \"Unified REST API for Pinot analytics.\"\n      resources:\n        - path: /v1/query\n          name: queries\n          operations:\n            - method: POST\n              name: query\n              description: \"Execute SQL query\"\n              call: \"pinot.querySql\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables\n          name: tables\n          operations:\n            - method: GET\n              name: list-tables\n\
   \              description: \"List tables\"\n              call: \"pinot.listTables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: pinot-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Pinot analytics.\"\n      tools:\n        - name: query-sql\n          description: \"Execute a SQL query against Pinot tables\"\n          hints:\n            readOnly: true\n          call: \"pinot.querySql\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-tables\n          description: \"List all tables in the Pinot cluster\"\n          hints:\n            readOnly: true\n          call: \"pinot.listTables\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-table\n          description: \"Get the configuration of a specific table\"\n          hints:\n\

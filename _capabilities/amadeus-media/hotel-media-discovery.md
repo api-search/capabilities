@@ -28,39 +28,41 @@ personas: []
 provider_name: Amadeus Media
 provider_slug: amadeus-media
 search_terms:
-- retrieve hotel photos and media assets organized by category (exterior, lobby, rooms, restaurant, pool, spa).
-- combines hotel list and hotel content apis for comprehensive hotel property discovery with rich media retrieval.
-- content team maintaining hotel profiles, photos, and descriptions on online travel agencies.
-- get detailed hotel property content.
+- get hotel photos
+- find hotels by city
 - visual media assets including photos and videos for hotel properties.
+- hotels
 - media
+- developer building hotel search and booking experiences requiring property data and media.
+- content team maintaining hotel profiles, photos, and descriptions on online travel agencies.
+- get hotel photos and media assets.
+- find hotels in a city using its iata code for content and media retrieval.
+- get hotel details
+- hotel discovery and search.
+- find hotels near geographic coordinates.
+- content
+- get detailed hotel property content.
+- find hotels in a city by iata code.
+- amadeus
 - hotel property content and descriptions.
-- Travel Platform Developer
-- OTA Content Team
-- travel
+- get hotel media
+- combines hotel list and hotel content apis for comprehensive hotel property discovery with rich media retrieval.
 - get hotels by city
 - find hotels by location
-- retrieve rich hotel property content including descriptions, amenities, address, and contact information.
-- amadeus
-- find hotels near geographic coordinates.
-- hotels
-- find hotels by city
-- hotel discovery and search.
-- find hotels near a geographic location using latitude and longitude coordinates.
-- content
-- get hotels by geocode
-- find hotels in a city using its iata code for content and media retrieval.
-- find hotels in a city by iata code.
-- get hotel details
 - hotel property information, descriptions, and classifications.
-- hotel media assets including images.
-- get hotel media
-- get hotel photos
-- developer building hotel search and booking experiences requiring property data and media.
-- images
+- Travel Platform Developer
+- retrieve hotel photos and media assets organized by category (exterior, lobby, rooms, restaurant, pool, spa).
+- get hotels by geocode
 - get hotel content
-- get hotel photos and media assets.
+- find hotels near a geographic location using latitude and longitude coordinates.
+- travel
+- images
+- hotel media assets including images.
+- OTA Content Team
+- retrieve rich hotel property content including descriptions, amenities, address, and contact information.
 slug: hotel-media-discovery
+source_filename: hotel-media-discovery.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Hotel Media Discovery\n  description: >-\n    Workflow capability for discovering and retrieving hotel media content, combining the Hotel List API for property discovery with the Hotel Content API for rich media retrieval. Used by travel platform developers, OTA content teams, and hospitality technology teams building hotel profile pages.\n  tags:\n    - Amadeus\n    - Hotels\n    - Media\n    - Content\n    - Travel\n    - Images\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_API_KEY: AMADEUS_API_KEY\n      AMADEUS_API_SECRET: AMADEUS_API_SECRET\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: hotel-content\n      location: ./shared/hotel-content.yaml\n    - import: hotel-list\n      location: ./shared/hotel-list.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hotel-media-discovery-api\n  \
   \    description: Unified REST API for hotel property discovery and media retrieval.\n      resources:\n        - path: /v1/hotels\n          name: hotels\n          description: Hotel discovery and search.\n          operations:\n            - method: GET\n              name: get-hotels-by-city\n              description: Find hotels in a city by IATA code.\n              call: \"hotel-list.get-hotels-by-city\"\n              with:\n                cityCode: \"rest.cityCode\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-hotels-by-geocode\n              description: Find hotels near geographic coordinates.\n              call: \"hotel-list.get-hotels-by-geocode\"\n              with:\n                latitude: \"rest.latitude\"\n                longitude: \"rest.longitude\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n      \
   \  - path: /v1/hotels/{hotelId}/content\n          name: hotel-content\n          description: Hotel property content and descriptions.\n          operations:\n            - method: GET\n              name: get-hotel-content\n              description: Get detailed hotel property content.\n              call: \"hotel-content.get-hotel-content\"\n              with:\n                hotelIds: \"rest.hotelId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hotels/{hotelId}/media\n          name: hotel-media\n          description: Hotel media assets including images.\n          operations:\n            - method: GET\n              name: get-hotel-media\n              description: Get hotel photos and media assets.\n              call: \"hotel-content.get-hotel-media\"\n              with:\n                hotelIds: \"rest.hotelId\"\n              outputParameters:\n                - type: object\n                 \

@@ -43,47 +43,49 @@ personas: []
 provider_name: Amazon Proton
 provider_slug: amazon-proton
 search_terms:
-- aws
-- platform engineering template and deployment workflow
+- create an environment from a template
+- create a new service template for standardized application deployments
+- templates
+- create a service template
+- creates and manages environment and service templates for standardized deployments
+- Application Developer
+- Platform Engineer
+- create an environment template
+- devops
+- serverless
 - environment template management for platform engineers
+- deploy a new environment from a standardized template
+- platform engineering
+- deployed service management
+- create environment
+- deploy a new application service from a service template
+- create environment template
+- list service templates
+- list all deployed environments
+- list deployed services
+- create a new standardized environment template for developers
+- list environment templates
+- aws
+- list environment templates for standardized infrastructure
+- list all deployed services
 - amazon
 - create service
-- list all deployed services
-- list environments
-- create service template
-- Platform Engineer
-- deploys services using self-service templates provided by platform engineers
-- deploy a new application service from a service template
-- create environment
-- list environment templates for standardized infrastructure
-- self-service
-- templates
-- list deployed environments
-- create a service template
-- deployed environment management
-- ci/cd
-- deploy a new environment from a standardized template
-- list services
-- Application Developer
-- create environment template
-- create an environment from a template
-- devops
-- creates and manages environment and service templates for standardized deployments
-- list deployed services
 - list service templates available for developer self-service
 - infrastructure as code
-- list environment templates
+- create service template
+- list deployed environments
+- platform engineering template and deployment workflow
 - create a service from a template
+- deployed environment management
+- deploys services using self-service templates provided by platform engineers
+- list environments
+- list services
+- ci/cd
 - service template catalog for developers
-- list all deployed environments
-- platform engineering
-- create a new standardized environment template for developers
-- deployed service management
-- create a new service template for standardized application deployments
-- serverless
-- list service templates
-- create an environment template
+- self-service
 slug: platform-engineering
+source_filename: platform-engineering.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Proton Platform Engineering\n  description: Workflow capability for platform engineering teams using Amazon Proton to publish standardized templates and automate infrastructure provisioning for development teams. Covers template management, environment deployment, and service lifecycle management.\n  tags:\n    - Amazon\n    - AWS\n    - DevOps\n    - Platform Engineering\n    - Infrastructure as Code\n    - Self-Service\n    - Templates\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-proton\n      location: ./shared/amazon-proton.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: platform-engineering-api\n      description: Unified REST API for Amazon Proton platform engineering workflows.\n\
   \      resources:\n        - path: /v1/environment-templates\n          name: environment-templates\n          description: Environment template management for platform engineers\n          operations:\n            - method: GET\n              name: list-environment-templates\n              description: List environment templates\n              call: \"amazon-proton.list-environment-templates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-environment-template\n              description: Create an environment template\n              call: \"amazon-proton.create-environment-template\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/environments\n          name: environments\n          description: Deployed environment management\n          operations:\n            - method: GET\n              name: list-environments\n\
   \              description: List deployed environments\n              call: \"amazon-proton.list-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-environment\n              description: Create an environment from a template\n              call: \"amazon-proton.create-environment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/service-templates\n          name: service-templates\n          description: Service template catalog for developers\n          operations:\n            - method: GET\n              name: list-service-templates\n              description: List service templates\n              call: \"amazon-proton.list-service-templates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-glue-openapi.yml
+  format: yaml
+  label: amazon-glue
+  slug: amazon-glue
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-glue/refs/heads/main/openapi/amazon-glue-openapi.yml
 categories:
 - data-engineering
 consumed_apis:
@@ -43,65 +50,67 @@ personas: []
 provider_name: Amazon Glue
 provider_slug: amazon-glue
 search_terms:
-- etl
-- create a new etl job
-- aws
-- list tables in a data catalog database
-- data catalog
-- list all etl jobs
-- list all amazon glue etl jobs with status and configuration
-- list all glue ml transforms
-- create a connection to a data source
-- analytics
-- builds and manages etl pipelines and data catalog resources
-- list all databases in the glue data catalog
+- amazon glue
+- job execution runs
 - data catalog databases
-- create a new etl workflow with triggers and jobs
-- create a new crawler
-- list all catalog databases
-- create etl job
-- list all data source connections
-- create job
-- list etl jobs
-- data integration
-- etl job lifecycle management
-- create a new etl workflow
-- create a new amazon glue etl job
-- list all workflows
-- list ml transforms
-- create crawler
-- list all data catalog crawlers
-- create workflow
-- list connections
-- uses glue to access and prepare data for analytics
-- start job run
-- list crawlers
-- start a job run
-- etl workflow orchestration
-- start crawler
-- data engineering
-- data pipeline
 - list all etl workflow orchestrations
-- check the status of an etl job run
+- list etl jobs
+- list all databases in the glue data catalog
+- Data Engineer
+- data catalog
+- data pipeline
+- create a new etl job
+- list all workflows
+- serverless
+- list jobs
+- builds and manages etl pipelines and data catalog resources
+- uses glue to access and prepare data for analytics
+- create a new crawler
+- create workflow
+- start crawler
+- data integration
+- create a connection to a data source
+- etl job lifecycle management
+- list connections
 - create connection
 - list data quality results
-- list databases
-- run a crawler to populate the data catalog
-- create a crawler to discover and catalog data sources
-- data catalog crawlers
-- list jobs
-- list tables
-- Data Engineer
-- Data Analyst
-- amazon glue
-- list data quality evaluation results
-- serverless
-- list all crawlers
+- check the status of an etl job run
+- create a new etl workflow
 - get job run status
-- list workflows
-- job execution runs
+- list tables
+- aws
+- list databases
+- data catalog crawlers
+- Data Analyst
+- list all glue ml transforms
+- list all crawlers
+- list crawlers
+- start job run
+- list all data source connections
+- create a new etl workflow with triggers and jobs
+- create job
 - execute an etl job run
+- list all amazon glue etl jobs with status and configuration
+- run a crawler to populate the data catalog
+- list ml transforms
+- analytics
+- start a job run
+- create a new amazon glue etl job
+- create etl job
+- list tables in a data catalog database
+- list all catalog databases
+- list all etl jobs
+- list workflows
+- list data quality evaluation results
+- list all data catalog crawlers
+- create crawler
+- create a crawler to discover and catalog data sources
+- etl workflow orchestration
+- data engineering
+- etl
 slug: amazon-glue-data-integration
+source_filename: amazon-glue-data-integration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Glue Data Integration\n  description: >-\n    Workflow capability for data engineers building ETL pipelines with Amazon Glue.\n    Covers job management, crawler configuration, data catalog operations, workflow\n    orchestration, and data quality for serverless data integration.\n  tags:\n    - Amazon Glue\n    - ETL\n    - Data Integration\n    - Data Catalog\n    - Data Engineering\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-glue\n      location: ./shared/amazon-glue.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: glue-data-integration-api\n      description: Unified REST API for Amazon Glue data integration operations.\n      resources:\n        - path: /v1/jobs\n\
   \          name: jobs\n          description: ETL job lifecycle management\n          operations:\n            - method: GET\n              name: list-jobs\n              description: List all ETL jobs\n              call: amazon-glue.GetJobs\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-job\n              description: Create a new ETL job\n              call: amazon-glue.CreateJob\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobName}/runs\n          name: job-runs\n          description: Job execution runs\n          operations:\n            - method: POST\n              name: start-job-run\n              description: Start a job run\n              call: amazon-glue.StartJobRun\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/crawlers\n\
   \          name: crawlers\n          description: Data catalog crawlers\n          operations:\n            - method: GET\n              name: list-crawlers\n              description: List all crawlers\n              call: amazon-glue.GetCrawlers\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-crawler\n              description: Create a new crawler\n              call: amazon-glue.CreateCrawler\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/databases\n          name: databases\n          description: Data Catalog databases\n          operations:\n            - method: GET\n              name: list-databases\n              description: List all catalog databases\n              call: amazon-glue.GetDatabases\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\

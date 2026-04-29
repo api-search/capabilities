@@ -70,50 +70,52 @@ personas: []
 provider_name: Amazon Elastic Transcoder
 provider_slug: amazon-elastic-transcoder
 search_terms:
-- ListPresets
-- amazon elastic transcoder updatepipelinenotifications
-- amazon elastic transcoder deletepreset
-- UpdatePipelineStatus
-- media transcoding service for converting media files to various formats
-- aws
-- amazon elastic transcoder listpipelines
-- ReadPreset
-- amazon elastic transcoder testrole
-- media
 - CreatePreset
-- transcoding
-- amazon elastic transcoder readpipeline
-- UpdatePipelineNotifications
-- video
-- amazon elastic transcoder readjob
-- ReadJob
-- amazon elastic transcoder createpipeline
-- amazon web services
-- TestRole
-- operations teams managing amazon elastic transcoder infrastructure
-- DeletePipeline
-- UpdatePipeline
-- unified capability for managing amazon elastic transcoder resources. combines amazon elastic transcoder apis for media engineer workflows in media processing.
-- amazon elastic transcoder createpreset
-- DeletePreset
-- ReadPipeline
-- amazon elastic transcoder listjobsbypipeline
-- amazon elastic transcoder listpresets
-- CreateJob
-- amazon elastic transcoder canceljob
-- amazon elastic transcoder updatepipeline
-- amazon elastic transcoder createjob
-- amazon elastic transcoder listjobsbystatus
-- amazon elastic transcoder updatepipelinestatus
-- ListJobsByPipeline
-- developers building applications using amazon elastic transcoder
+- amazon elastic transcoder updatepipelinenotifications
+- ListPresets
+- amazon elastic transcoder listpipelines
 - CreatePipeline
-- CancelJob
-- amazon elastic transcoder readpreset
-- amazon elastic transcoder deletepipeline
-- ListPipelines
 - ListJobsByStatus
+- amazon elastic transcoder createpipeline
+- media
+- amazon elastic transcoder updatepipeline
+- CancelJob
+- TestRole
+- ListJobsByPipeline
+- CreateJob
+- ReadJob
+- amazon elastic transcoder updatepipelinestatus
+- media transcoding service for converting media files to various formats
+- amazon elastic transcoder deletepipeline
+- operations teams managing amazon elastic transcoder infrastructure
+- ReadPipeline
+- amazon elastic transcoder readpreset
+- aws
+- amazon elastic transcoder canceljob
+- UpdatePipelineNotifications
+- DeletePreset
+- transcoding
+- unified capability for managing amazon elastic transcoder resources. combines amazon elastic transcoder apis for media engineer workflows in media processing.
+- amazon elastic transcoder testrole
+- amazon elastic transcoder readjob
+- amazon web services
+- UpdatePipeline
+- amazon elastic transcoder createjob
+- DeletePipeline
+- ListPipelines
+- UpdatePipelineStatus
+- video
+- amazon elastic transcoder listjobsbystatus
+- developers building applications using amazon elastic transcoder
+- amazon elastic transcoder listpresets
+- amazon elastic transcoder listjobsbypipeline
+- ReadPreset
+- amazon elastic transcoder deletepreset
+- amazon elastic transcoder readpipeline
+- amazon elastic transcoder createpreset
 slug: amazon-elastic-transcoder-capability
+source_filename: amazon-elastic-transcoder-capability.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Elastic Transcoder Management\n  description: Unified capability for managing Amazon Elastic Transcoder resources. Combines Amazon Elastic Transcoder APIs for Media Engineer workflows in Media Processing.\n  tags:\n  - Amazon Web Services\n  - Media\n  - Transcoding\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_API_KEY: AWS_API_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: elastic_transcoder\n    location: ./shared/elastic-transcoder.yaml\n  exposes:\n  - type: rest\n    port: 8184\n    namespace: amazon-elastic-transcoder-workflow-api\n    description: Unified REST API for Amazon Elastic Transcoder management.\n    resources:\n    - path: /v1/ReadJob\n      name: ReadJob\n      description: Amazon Elastic Transcoder ReadJob\n      operations:\n      - method: GET\n        name: ReadJob\n        description: Amazon Elastic Transcoder ReadJob\n        call:\
   \ api.ReadJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CancelJob\n      name: CancelJob\n      description: Amazon Elastic Transcoder CancelJob\n      operations:\n      - method: POST\n        name: CancelJob\n        description: Amazon Elastic Transcoder CancelJob\n        call: api.CancelJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreateJob\n      name: CreateJob\n      description: Amazon Elastic Transcoder CreateJob\n      operations:\n      - method: POST\n        name: CreateJob\n        description: Amazon Elastic Transcoder CreateJob\n        call: api.CreateJob\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListPipelines\n      name: ListPipelines\n      description: Amazon Elastic Transcoder ListPipelines\n      operations:\n      - method: GET\n        name: ListPipelines\n        description: Amazon Elastic Transcoder ListPipelines\n\
   \        call: api.ListPipelines\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreatePipeline\n      name: CreatePipeline\n      description: Amazon Elastic Transcoder CreatePipeline\n      operations:\n      - method: POST\n        name: CreatePipeline\n        description: Amazon Elastic Transcoder CreatePipeline\n        call: api.CreatePipeline\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ListPresets\n      name: ListPresets\n      description: Amazon Elastic Transcoder ListPresets\n      operations:\n      - method: GET\n        name: ListPresets\n        description: Amazon Elastic Transcoder ListPresets\n        call: api.ListPresets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/CreatePreset\n      name: CreatePreset\n      description: Amazon Elastic Transcoder CreatePreset\n      operations:\n      - method: POST\n        name: CreatePreset\n\

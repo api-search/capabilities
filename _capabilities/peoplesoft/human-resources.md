@@ -1,4 +1,23 @@
 ---
+api_specs:
+- filename: hcm.yml
+  format: yaml
+  label: hcm
+  slug: hcm
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/hcm.yml
+- filename: recruiting-talent-management.yml
+  format: yaml
+  label: recruiting
+  slug: recruiting
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/recruiting-talent-management.yml
+- filename: approval-workflow-engine.yml
+  format: yaml
+  label: approval-workflow
+  slug: approval-workflow
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/approval-workflow-engine.yml
 categories:
 - payroll-hr
 consumed_apis:
@@ -49,50 +68,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve details for a specific job posting.
-- search available job postings.
-- approve, deny, or push back an hr approval request.
+- retrieve pending hr approval requests.
+- financial management
+- hcm
+- search jobs
+- retrieve employee records with optional department and status filters.
+- campus solutions.
+- list employees
+- human capital management.
+- supply chain management
+- list payroll runs
+- hr approval requests
+- talent management
+- retrieve payroll run history and status.
+- list pending approvals
+- get job details
+- submit application
+- process approval
+- erp
+- financial and supply chain management.
 - crm
+- submit a candidate application for a job posting.
+- peoplesoft
+- human resources
+- search available job postings.
+- job posting details
+- payroll run history and status
+- campus solutions
+- recruiting
+- list benefit enrollments
+- enterprise software
+- approve, deny, or push back an hr approval request.
+- individual approval operations
+- individual employee details
+- retrieve details for a specific job posting.
+- peopletools platform services.
 - retrieve benefit enrollment records.
 - employee records
-- payroll
-- financial management
-- individual employee details
-- submit a candidate application for a job posting.
-- campus solutions.
-- recruiting
-- hr approval requests
-- list employees
-- financial and supply chain management.
-- hcm
-- erp
-- process approval
-- list payroll runs
-- get employee
-- human resources
-- benefit enrollment records
-- payroll run history and status
-- human capital management.
-- peoplesoft
-- submit application
-- job posting details
-- enterprise software
-- campus solutions
-- search jobs
-- candidate applications
-- talent management
-- job postings
-- list benefit enrollments
-- retrieve pending hr approval requests.
-- get job details
-- supply chain management
-- retrieve payroll run history and status.
 - retrieve details for a specific employee.
-- individual approval operations
-- retrieve employee records with optional department and status filters.
-- peopletools platform services.
-- list pending approvals
+- get employee
+- payroll
+- candidate applications
+- job postings
+- benefit enrollment records
 slug: human-resources
+source_filename: human-resources.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Human Resources\"\n  description: \"Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Human Resources\n    - HCM\n    - Recruiting\n    - Talent Management\n    - Payroll\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: hcm\n      location: ./shared/hcm.yaml\n    - import: recruiting\n      location: ./shared/recruiting-talent-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hr-api\n      description: \"Unified REST API\
   \ for PeopleSoft human resources workflows.\"\n      resources:\n        - path: /v1/employees\n          name: employees\n          description: \"Employee records\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"Retrieve employee records with optional department and status filters.\"\n              call: \"hcm.list-employees\"\n              with:\n                department: \"rest.department\"\n                status: \"rest.status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees/{employeeId}\n          name: employee-detail\n          description: \"Individual employee details\"\n          operations:\n            - method: GET\n              name: get-employee\n              description: \"Retrieve details for a specific employee.\"\n              call: \"hcm.get-employee\"\n              with:\n                employeeId: \"rest.employeeId\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benefit-enrollments\n          name: benefit-enrollments\n          description: \"Benefit enrollment records\"\n          operations:\n            - method: GET\n              name: list-benefit-enrollments\n              description: \"Retrieve benefit enrollment records.\"\n              call: \"hcm.list-benefit-enrollments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payroll-runs\n          name: payroll-runs\n          description: \"Payroll run history and status\"\n          operations:\n            - method: GET\n              name: list-payroll-runs\n              description: \"Retrieve payroll run history and status.\"\n              call: \"hcm.list-payroll-runs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

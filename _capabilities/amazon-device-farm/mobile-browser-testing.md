@@ -70,83 +70,85 @@ personas: []
 provider_name: Amazon Device Farm
 provider_slug: amazon-device-farm
 search_terms:
-- list selenium test grid projects for browser testing
-- mobile testing
-- aws
-- interactive remote access to real devices for debugging
-- app and test artifact uploads
-- list unique problems
-- remote device access sessions
-- device testing
-- list test runs for a project
-- stop run
-- create upload
-- mobile app developer running tests on real devices to validate app quality
-- create a device pool with filter rules
-- list available real physical devices for testing
-- device pool configuration
-- schedule run
-- real device catalog
-- stop remote access session
-- list artifacts
-- Mobile Developer
-- application testing
-- get the status and results of a test run
-- test automation
-- list device pools
-- list all device farm test projects
-- create an upload slot and get a pre-signed url to upload your app or test package
-- create device pool
-- stop an active remote access session
-- list remote access sessions
-- stop a running test
-- start a remote access session on a device
-- list available real physical devices
-- selenium browser test grid projects
-- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
-- create a new test project
-- check the status of an uploaded app or test package
-- create test grid url
-- create test grid project
-- schedule a test run on real devices
-- testing web applications in selenium-powered desktop browsers
-- individual run management
-- QA Engineer
-- create project
-- list jobs within a test run
-- get run
-- list uploads
-- get upload
-- upload an app or test package
-- list device pools configured for a project
-- list jobs
-- test run lifecycle
-- list all aws device farm test projects
-- list selenium test grid projects
-- list projects
-- list uploads for a project
-- list runs
-- list all test runs for a project
-- schedule a test run on real physical devices
-- stop a currently running test
-- create a new selenium test grid project
-- list unique problems found across test runs
-- browser testing
-- create a device pool with rules to filter devices for testing
-- create a signed url for selenium remotewebdriver to connect to device farm
-- quality assurance engineer managing test infrastructure and running automated test suites
 - start an interactive remote access session on a real device
-- list test artifacts like screenshots, logs, and videos from a run
-- test project management
-- quality assurance
-- list devices
-- get test run results and status
-- list test grid projects
+- list available real physical devices
+- testing web applications in selenium-powered desktop browsers
+- mobile testing
+- create a new selenium test grid project
 - testing mobile applications on real physical ios and android devices
-- create a new device farm test project
-- amazon device farm
+- app and test artifact uploads
+- list artifacts
+- remote device access sessions
+- list remote access sessions
+- create upload
+- test run lifecycle
+- get test run results and status
+- create a signed url for selenium remotewebdriver to connect to device farm
+- list jobs
+- application testing
+- list runs
+- quality assurance engineer managing test infrastructure and running automated test suites
+- list all aws device farm test projects
+- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
 - create remote access session
+- list test grid projects
+- list all device farm test projects
+- stop run
+- stop a running test
+- selenium browser test grid projects
+- stop an active remote access session
+- list device pools
+- mobile app developer running tests on real devices to validate app quality
+- get upload
+- list device pools configured for a project
+- create device pool
+- aws
+- stop a currently running test
+- browser testing
+- list selenium test grid projects
+- create a new test project
+- QA Engineer
+- test project management
+- list devices
+- list uploads for a project
+- get the status and results of a test run
+- Mobile Developer
+- interactive remote access to real devices for debugging
+- upload an app or test package
+- create a device pool with rules to filter devices for testing
+- list test runs for a project
+- individual run management
+- schedule a test run on real physical devices
+- list all test runs for a project
+- check the status of an uploaded app or test package
+- list jobs within a test run
+- list selenium test grid projects for browser testing
+- create a new device farm test project
+- schedule run
+- list unique problems found across test runs
+- device pool configuration
+- device testing
+- list projects
+- real device catalog
+- list unique problems
+- test automation
+- create project
+- start a remote access session on a device
+- create a device pool with filter rules
+- amazon device farm
+- schedule a test run on real devices
+- create test grid project
+- stop remote access session
+- quality assurance
+- list uploads
+- list test artifacts like screenshots, logs, and videos from a run
+- create an upload slot and get a pre-signed url to upload your app or test package
+- create test grid url
+- list available real physical devices for testing
+- get run
 slug: mobile-browser-testing
+source_filename: mobile-browser-testing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AWS Device Farm Mobile and Browser Testing\n  description: >-\n    Workflow capability for QA engineers and mobile developers to run automated\n    tests on real physical devices and desktop browsers using AWS Device Farm.\n    Combines project management, device pool configuration, test scheduling,\n    artifact collection, and remote access session management.\n  tags:\n    - Amazon Device Farm\n    - Mobile Testing\n    - Browser Testing\n    - Quality Assurance\n    - Test Automation\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: device-farm\n      location: ./shared/device-farm-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: mobile-browser-testing-api\n      description:\
   \ Unified REST API for AWS Device Farm mobile and browser testing workflows.\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: Test project management\n          operations:\n            - method: GET\n              name: list-projects\n              description: List all Device Farm test projects\n              call: \"device-farm.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: Create a new test project\n              call: \"device-farm.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/devices\n          name: devices\n          description: Real device catalog\n          operations:\n            - method: GET\n              name: list-devices\n              description: List available real\
   \ physical devices\n              call: \"device-farm.list-devices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/device-pools\n          name: device-pools\n          description: Device pool configuration\n          operations:\n            - method: GET\n              name: list-device-pools\n              description: List device pools\n              call: \"device-farm.list-device-pools\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-device-pool\n              description: Create a device pool with filter rules\n              call: \"device-farm.create-device-pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/uploads\n          name: uploads\n          description: App and test artifact uploads\n          operations:\n\

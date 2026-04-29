@@ -53,63 +53,65 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- get dma reactions
-- archives communications for regulatory compliance.
-- retrieve compliance events.
+- get organization acls for data portability.
+- linkedin
 - authentication, sharing, and verification for consumer apps.
-- get advertiser transparency
-- business
-- uses sales navigator for lead generation and crm sync.
-- job posting, recruiting, and applicant tracking.
-- get comments for data portability.
-- get business manager relationships
-- employee development tracking and content access.
-- get organization
-- get dma lead gen responses
-- recruiting
-- get events for data portability.
-- get reactions for data portability.
-- get organization acls
-- sales intelligence, lead management, and crm integration.
-- tracks employee learning activity and completions.
-- opt out a member from compliance monitoring.
-- get dma events
-- batch get organizations for data portability.
-- careers
-- get dma posts
-- get organization by id for data portability.
+- retrieve compliance events.
+- opt in a member for compliance monitoring.
+- batch get organizations
+- posts jobs and manages candidates through ats integrations.
 - get advertiser transparency data for a sponsored account.
-- b2b advertising, audience targeting, and campaign analytics.
-- get lead gen responses for data portability.
+- retrieve compliance events for a regulated member.
 - professional networking
-- get page content analytics
+- get reactions for data portability.
+- get advertiser transparency
+- compliance
+- opt out member
+- uses sales navigator for lead generation and crm sync.
+- get posts for data portability.
+- employee development tracking and content access.
+- get dma reactions
+- get advertiser transparency data.
+- opt out a member from compliance monitoring.
+- get business manager account relationships.
 - regulatory
 - message archiving and regulatory communications governance.
-- social media
-- data portability
-- linkedin
-- data portability and advertiser transparency for dma.
-- opt in member
-- get dma comments
-- get organization acls for data portability.
-- retrieve compliance events for a regulated member.
-- marketing
-- opt in a member for compliance monitoring.
-- get advertiser transparency data.
-- check member status
-- posts jobs and manages candidates through ats integrations.
-- compliance
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get business manager account relationships.
-- get page content analytics for data portability.
-- opt out member
-- get compliance events
-- integrates linkedin authentication and sharing into applications.
-- get posts for data portability.
+- get dma lead gen responses
+- get dma posts
 - get organization by id.
+- get compliance events
+- get dma comments
+- tracks employee learning activity and completions.
+- data portability and advertiser transparency for dma.
+- integrates linkedin authentication and sharing into applications.
 - check member compliance monitoring status.
-- batch get organizations
+- get events for data portability.
+- opt in member
+- get business manager relationships
+- data portability
+- get organization
+- get organization by id for data portability.
+- recruiting
+- get organization acls
+- check member status
+- get comments for data portability.
+- social media
+- get dma events
+- sales intelligence, lead management, and crm integration.
+- careers
+- get lead gen responses for data portability.
+- job posting, recruiting, and applicant tracking.
+- b2b advertising, audience targeting, and campaign analytics.
+- archives communications for regulatory compliance.
+- get page content analytics for data portability.
+- get page content analytics
+- manages b2b ad campaigns and audience targeting on linkedin.
+- marketing
+- business
+- batch get organizations for data portability.
 slug: compliance-and-regulatory
+source_filename: compliance-and-regulatory.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Compliance And Regulatory\"\n  description: \"Unified workflow for compliance officers to monitor regulated communications, export data for portability compliance, and access ads transparency data -- combining compliance events, data portability, and ads transparency APIs.\"\n  tags:\n    - LinkedIn\n    - Compliance\n    - Regulatory\n    - Data Portability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: compliance-events\n      location: ./shared/compliance-events.yaml\n    - import: data-portability\n      location: ./shared/data-portability.yaml\n    - import: ads-transparency\n      location: ./shared/ads-transparency.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n      namespace: compliance-regulatory-api\n      description: \"Unified REST API for LinkedIn compliance\
   \ and regulatory workflows.\"\n      resources:\n        - path: /v1/compliance-authorizations\n          name: compliance-authorizations\n          operations:\n            - method: POST\n              name: opt-in-member\n              description: \"Opt in a member for compliance monitoring.\"\n              call: \"compliance-events.opt-in-member\"\n            - method: GET\n              name: check-member-status\n              description: \"Check member compliance monitoring status.\"\n              call: \"compliance-events.check-member-status\"\n        - path: /v1/compliance-events\n          name: compliance-events\n          operations:\n            - method: GET\n              name: get-compliance-events\n              description: \"Retrieve compliance events.\"\n              call: \"compliance-events.get-compliance-events\"\n        - path: /v1/dma-organizations\n          name: dma-organizations\n          operations:\n            - method: GET\n              name: batch-get-organizations\n\
   \              description: \"Batch get organizations for data portability.\"\n              call: \"data-portability.batch-get-organizations\"\n        - path: /v1/dma-organizations/{organizationId}\n          name: dma-organization-by-id\n          operations:\n            - method: GET\n              name: get-organization\n              description: \"Get organization by ID.\"\n              call: \"data-portability.get-organization\"\n        - path: /v1/dma-posts\n          name: dma-posts\n          operations:\n            - method: GET\n              name: get-dma-posts\n              description: \"Get posts for data portability.\"\n              call: \"data-portability.get-posts\"\n        - path: /v1/dma-reactions\n          name: dma-reactions\n          operations:\n            - method: GET\n              name: get-dma-reactions\n              description: \"Get reactions for data portability.\"\n              call: \"data-portability.get-reactions\"\n        - path: /v1/dma-comments\n\

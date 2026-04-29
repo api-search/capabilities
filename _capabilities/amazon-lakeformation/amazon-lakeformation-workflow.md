@@ -10,24 +10,26 @@ personas: []
 provider_name: AWS Lake Formation
 provider_slug: amazon-lakeformation
 search_terms:
-- retrieves the definition of a specified database.
-- creates a new database in the data catalog.
-- aws
-- governance
-- data lake
-- analytics
-- aws lake formation
 - manages resources and configurations
-- Administrator
-- lists all the registered databases in the data catalog.
-- workflow
-- databases get database
+- data lake
+- governance
+- retrieves the definition of a specified database.
 - Developer
-- databases create database
 - integrates api into applications
-- databases list databases
 - unified workflow for aws lake formation resource management
+- Administrator
+- workflow
+- databases list databases
+- databases get database
+- lists all the registered databases in the data catalog.
+- databases create database
+- creates a new database in the data catalog.
+- aws lake formation
+- aws
+- analytics
 slug: amazon-lakeformation-workflow
+source_filename: amazon-lakeformation-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: AWS Lake Formation Workflow\n  description: Unified workflow capability for AWS Lake Formation combining resource management and operations.\n  tags:\n  - AWS Lake Formation\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lakeformation\n    location: ./shared/lakeformation.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lakeformation-api\n    description: REST API for AWS Lake Formation workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lakeformation-mcp\n    transport: http\n    description: MCP server for AWS Lake Formation.\n    tools:\n    - name: databases-create-database\n      description: Creates a new database in the Data Catalog.\n      hints:\n        readOnly: false\n        idempotent: false\n\
   \      call: lakeformation.createdatabase\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: databases-get-database\n      description: Retrieves the definition of a specified database.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lakeformation.getdatabase\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: databases-list-databases\n      description: Lists all the registered databases in the Data Catalog.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lakeformation.listdatabases\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lakeformation/refs/heads/main/capabilities/amazon-lakeformation-workflow.yaml

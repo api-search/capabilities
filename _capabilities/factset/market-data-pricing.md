@@ -39,47 +39,49 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- factset
-- get rt news
-- get options data.
-- get tick history
-- get equity prices and returns.
-- financial data
-- real-time quotes.
-- get fx rates.
-- get options
-- get historical tick data.
-- get equity prices.
-- get price alerts
-- global equity prices.
 - options data.
-- get quotes
-- get tick history.
-- get fx
-- get real-time time series.
-- get rt quotes
-- get global prices
-- get intraday tick history.
-- get global equity prices.
-- get real-time quotes.
-- investment analytics
-- foreign exchange rates.
-- financial
-- get fx rates
-- portfolio analytics
-- get foreign exchange rates.
 - real-time data
-- get time series
-- historical tick data.
-- market data
 - get intraday ticks
-- get ticks
-- pricing
+- global equity prices.
+- portfolio analytics
+- get options data.
 - get real-time news.
+- get options
+- pricing
+- get fx
+- get time series
+- get fx rates
+- get tick history.
 - get price alerting data.
-- research
+- get historical tick data.
+- get global equity prices.
+- get fx rates.
+- get rt news
+- historical tick data.
+- get tick history
+- foreign exchange rates.
+- get global prices
+- get real-time quotes.
+- get real-time time series.
+- get foreign exchange rates.
+- get quotes
+- financial data
+- factset
 - get prices
+- get equity prices.
+- real-time quotes.
+- get ticks
+- get rt quotes
+- market data
+- financial
+- get equity prices and returns.
+- get intraday tick history.
+- research
+- get price alerts
+- investment analytics
 slug: market-data-pricing
+source_filename: market-data-pricing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Market Data and Pricing\"\n  description: \"Unified workflow for accessing real-time and historical market data including prices, quotes, news, tick history, options, and FX rates. Used by traders and market data analysts.\"\n  tags:\n    - FactSet\n    - Market Data\n    - Real-Time Data\n    - Pricing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-global-prices\n      location: ./shared/global-prices.yaml\n    - import: factset-prices\n      location: ./shared/prices.yaml\n    - import: factset-rt-quotes\n      location: ./shared/real-time-quotes.yaml\n    - import: factset-rt-news\n      location: ./shared/real-time-news.yaml\n    - import: factset-rt-ts\n      location: ./shared/real-time-time-series.yaml\n    - import: factset-rt-alert\n\
   \      location: ./shared/real-time-price-alerting.yaml\n    - import: factset-options\n      location: ./shared/options.yaml\n    - import: factset-fx\n      location: ./shared/foreign-exchange-rate.yaml\n    - import: factset-intraday\n      location: ./shared/intraday-tick-history.yaml\n    - import: factset-tick\n      location: ./shared/tick-history.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: market-data-api\n      description: \"Unified REST API for market data and pricing.\"\n      resources:\n        - path: /v1/prices\n          name: prices\n          description: \"Global equity prices.\"\n          operations:\n            - method: GET\n              name: get-prices\n              description: \"Get equity prices.\"\n              call: \"factset-prices.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/quotes\n          name: quotes\n          description: \"Real-time\
   \ quotes.\"\n          operations:\n            - method: GET\n              name: get-quotes\n              description: \"Get real-time quotes.\"\n              call: \"factset-rt-quotes.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/options\n          name: options\n          description: \"Options data.\"\n          operations:\n            - method: GET\n              name: get-options\n              description: \"Get options data.\"\n              call: \"factset-options.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fx-rates\n          name: fx-rates\n          description: \"Foreign exchange rates.\"\n          operations:\n            - method: GET\n              name: get-fx\n              description: \"Get FX rates.\"\n              call: \"factset-fx.list\"\n              outputParameters:\n                - type:\

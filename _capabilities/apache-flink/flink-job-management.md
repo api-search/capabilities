@@ -27,44 +27,46 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- monitoring
-- get metrics for a flink job
-- list all flink streaming and batch jobs
-- list all flink jobs
-- shutdown cluster
-- metrics, checkpoints, and cluster health monitoring
-- batch processing
-- apache flink
-- open source
-- flink job management
-- big data
+- Platform Operator
 - stateful computing
-- list all taskmanagers
-- shut down the flink cluster
+- operators managing the flink cluster and ensuring job reliability
+- job performance metrics
+- real-time analytics
 - engineers submitting and monitoring flink streaming and batch jobs
+- Data Engineer
+- shutdown cluster
+- get metrics for a flink job
+- batch processing
+- list taskmanagers
+- get flink job
+- list jobs
+- apache flink
+- list all taskmanagers in the flink cluster
+- list all flink streaming and batch jobs
+- job submission, tracking, and lifecycle management
+- open source
 - get detailed status and information for a specific flink job
 - manage and monitor flink streaming and batch jobs
-- get flink job
-- Platform Operator
-- job management
 - get performance metrics for a flink job
-- taskmanager management
-- get details of a specific job
-- list all taskmanagers in the flink cluster
-- data engineering
-- job performance metrics
-- apache
-- operators managing the flink cluster and ensuring job reliability
-- list jobs
-- list taskmanagers
-- Data Engineer
+- monitoring
+- shut down the flink cluster
+- flink job management
 - list flink jobs
+- apache
 - stream processing
-- real-time analytics
-- job submission, tracking, and lifecycle management
-- get job
 - get job metrics
+- list all flink jobs
+- list all taskmanagers
+- get job
+- job management
+- get details of a specific job
+- metrics, checkpoints, and cluster health monitoring
+- big data
+- data engineering
+- taskmanager management
 slug: flink-job-management
+source_filename: flink-job-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Flink Job Management\"\n  description: \"Unified capability for managing and monitoring Apache Flink streaming and batch jobs — submitting, tracking, monitoring metrics, and managing the cluster. Designed for data engineers and platform operators.\"\n  tags:\n    - Apache Flink\n    - Stream Processing\n    - Job Management\n    - Data Engineering\n    - Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      FLINK_JOBMANAGER_URL: FLINK_JOBMANAGER_URL\ncapability:\n  consumes:\n    - import: flink-rest\n      location: ./shared/flink-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flink-management-api\n      description: \"Unified REST API for Apache Flink job management.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: Flink job management\n          operations:\n            - method: GET\n      \
   \        name: list-jobs\n              description: List all Flink jobs\n              call: \"flink-rest.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-job\n              description: Get details of a specific job\n              call: \"flink-rest.get-job\"\n              with:\n                jobid: \"rest.jobid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/taskmanagers\n          name: taskmanagers\n          description: TaskManager management\n          operations:\n            - method: GET\n              name: list-taskmanagers\n              description: List all TaskManagers\n              call: \"flink-rest.list-taskmanagers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobid}/metrics\n          name:\
   \ metrics\n          description: Job performance metrics\n          operations:\n            - method: GET\n              name: get-job-metrics\n              description: Get metrics for a Flink job\n              call: \"flink-rest.get-job-metrics\"\n              with:\n                jobid: \"rest.jobid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: flink-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Flink job management.\"\n      tools:\n        - name: list-flink-jobs\n          description: List all Flink streaming and batch jobs\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flink-rest.list-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-flink-job\n          description: Get detailed status and information for\

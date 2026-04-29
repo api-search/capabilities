@@ -32,50 +32,52 @@ provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
 - list actions
-- Backend Developer
-- DevOps Engineer
-- create action
-- faas
-- cloud native
-- apache openwhisk
-- delete action
-- list rules
-- event driven
-- open source
-- create a new serverless action
-- fire trigger
-- list all trigger-to-action rules
-- invoke an action
-- list all action packages
-- serverless computing
-- functions
-- list triggers
-- event-driven architecture
-- get details of a specific activation
-- list packages
-- event-driven
 - manages namespaces, limits, and platform configuration
-- event triggers
-- invoke a serverless action/function
-- activation history
-- Platform Administrator
-- manages serverless deployments and ci/cd pipelines
-- list all actions
-- serverless function actions
-- apache
-- list all serverless functions/actions
-- delete a serverless action
-- list activation history
-- functions as a service
-- get activation
-- serverless
-- fire an event trigger
+- get details of a specific activation
+- invoke an action
+- cloud native
 - action packages
-- list all event triggers
+- event driven
+- serverless
+- delete action
+- serverless function actions
+- list packages
+- delete a serverless action
+- activation history
+- functions
+- open source
+- list triggers
+- invoke a serverless action/function
+- functions as a service
+- Backend Developer
+- faas
+- list all trigger-to-action rules
+- list rules
+- list all action packages
+- create action
+- get activation
+- list all serverless functions/actions
+- Platform Administrator
+- apache openwhisk
 - builds event-driven applications using serverless functions
-- invoke action
+- event triggers
+- DevOps Engineer
+- event-driven
+- manages serverless deployments and ci/cd pipelines
+- apache
+- list all event triggers
 - list activations
+- fire an event trigger
+- fire trigger
+- event-driven architecture
+- serverless computing
+- list all actions
+- invoke action
+- list activation history
+- create a new serverless action
 slug: serverless-workflow
+source_filename: serverless-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache OpenWhisk Serverless Workflow\"\n  description: \"Unified workflow capability for deploying and managing serverless functions, event triggers, rules, and activations in Apache OpenWhisk.\"\n  tags:\n    - Apache OpenWhisk\n    - Serverless\n    - Functions As A Service\n    - Event Driven\n    - Cloud Native\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENWHISK_AUTH_USER: OPENWHISK_AUTH_USER\n      OPENWHISK_AUTH_PASS: OPENWHISK_AUTH_PASS\n\ncapability:\n  consumes:\n    - import: openwhisk\n      location: ./shared/openwhisk-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: serverless-api\n      description: \"Unified REST API for OpenWhisk serverless management.\"\n      resources:\n        - path: /v1/actions\n          name: actions\n          description: \"Serverless function actions\"\n          operations:\n            - method:\
   \ GET\n              name: list-actions\n              description: \"List all actions\"\n              call: \"openwhisk.listActions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: invoke-action\n              description: \"Invoke an action\"\n              call: \"openwhisk.invokeAction\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/triggers\n          name: triggers\n          description: \"Event triggers\"\n          operations:\n            - method: GET\n              name: list-triggers\n              description: \"List triggers\"\n              call: \"openwhisk.listTriggers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/activations\n          name: activations\n          description: \"Activation history\"\n          operations:\n\
   \            - method: GET\n              name: list-activations\n              description: \"List activations\"\n              call: \"openwhisk.listActivations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/packages\n          name: packages\n          description: \"Action packages\"\n          operations:\n            - method: GET\n              name: list-packages\n              description: \"List packages\"\n              call: \"openwhisk.listPackages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: serverless-mcp\n      transport: http\n      description: \"MCP server for AI-assisted serverless function management.\"\n      tools:\n        - name: list-actions\n          description: \"List all serverless functions/actions\"\n          hints:\n            readOnly: true\n          call: \"openwhisk.listActions\"\

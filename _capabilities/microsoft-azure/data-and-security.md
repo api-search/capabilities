@@ -30,56 +30,58 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- blob list blobs
-- get a secret value
-- list resource groups
-- subscription management
-- keyvault list certificates
-- list azure subscriptions
-- arm list tags
-- arm list resource groups
-- azure
-- list items in a container
 - cosmos list items
-- list subscriptions
-- blob get properties
-- keyvault get secret
-- cosmos list containers
-- cosmos list databases
-- list cosmos db databases
+- list resources in a subscription
 - list secrets
-- arm list subscriptions
+- cosmos list containers
 - list resource providers
-- cloud
-- cosmos db
-- list cryptographic keys
-- blob storage operations
+- cosmos db database management
+- platform as a service
+- keyvault list certificates
+- list blobs
+- list subscription tags
+- subscription management
+- list blobs in a container
+- list items in a container
+- azure
+- get blob properties
+- arm list tags
+- infrastructure as a service
+- list certificates
+- arm list resources
+- list azure subscriptions
+- api management
+- list cosmos db databases
+- list databases
+- keyvault get secret
 - key vault secret management
-- keyvault list secrets
-- resource manager
-- cloud computing
+- cosmos db
+- cloud
+- blob storage
+- blob storage operations
+- list subscriptions
 - enterprise
 - t1
-- list databases
-- list blobs
-- list containers in a database
-- blob download
-- list subscription tags
+- get a secret value
+- list resource groups
+- cloud computing
+- keyvault list secrets
 - download a blob
-- list blobs in a container
 - key vault
-- api management
-- keyvault list keys
-- infrastructure as a service
-- platform as a service
-- blob storage
-- arm list resources
+- blob download
 - arm list providers
-- get blob properties
-- list resources in a subscription
-- list certificates
-- cosmos db database management
+- arm list subscriptions
+- cosmos list databases
+- blob list blobs
+- blob get properties
+- keyvault list keys
+- arm list resource groups
+- list containers in a database
+- list cryptographic keys
+- resource manager
 slug: data-and-security
+source_filename: data-and-security.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Data and Security\"\n  description: \"Unified workflow for Azure data infrastructure and security combining Cosmos DB for NoSQL data, Blob Storage for object storage, Key Vault for secrets management, and Resource Manager for infrastructure governance. Used by cloud architects, data engineers, and security teams.\"\n  tags:\n    - Azure\n    - Cosmos DB\n    - Blob Storage\n    - Key Vault\n    - Resource Manager\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_MANAGEMENT_TOKEN: AZURE_MANAGEMENT_TOKEN\n      AZURE_COSMOS_KEY: AZURE_COSMOS_KEY\n      AZURE_STORAGE_KEY: AZURE_STORAGE_KEY\n      AZURE_KEY_VAULT_TOKEN: AZURE_KEY_VAULT_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-cosmos\n      location: ./shared/cosmos-db.yaml\n    - import: azure-blob\n      location: ./shared/blob-storage.yaml\n    - import: azure-keyvault\n      location: ./shared/key-vault.yaml\n\
   \    - import: azure-arm\n      location: ./shared/resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: azure-data-security-api\n      description: \"Unified REST API for Azure data and security operations.\"\n      resources:\n        - path: /v1/databases\n          name: databases\n          description: \"Cosmos DB database management\"\n          operations:\n            - method: GET\n              name: list-databases\n              description: \"List Cosmos DB databases\"\n              call: \"azure-cosmos.list-databases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blobs\n          name: blobs\n          description: \"Blob storage operations\"\n          operations:\n            - method: GET\n              name: list-blobs\n              description: \"List blobs in a container\"\n              call: \"azure-blob.list-blobs\"\n              with:\n            \
   \    containerName: \"rest.containerName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets\n          name: secrets\n          description: \"Key Vault secret management\"\n          operations:\n            - method: GET\n              name: list-secrets\n              description: \"List secrets\"\n              call: \"azure-keyvault.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Subscription management\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List subscriptions\"\n              call: \"azure-arm.list-subscriptions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace:\

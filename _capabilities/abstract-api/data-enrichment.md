@@ -30,61 +30,63 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- retrieve company name, industry, headcount, logo, and location from a domain or email
-- ip geolocation
-- image processing
-- timezones
-- get current time and timezone information for any location
-- geolocate ip address
-- public holidays
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- geolocate ip
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- engineer building data pipelines and enrichment workflows
-- iban validation
-- developer building user onboarding and personalization features
-- avatars
-- convert date/time from one timezone to another
-- enrich company
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- get location data for an ip address
-- get timezone
-- ip intelligence
-- convert time between zones
-- web scraping
-- contacts
-- geolocate an ip address to get country, city, timezone, and currency data
-- vat validation
-- geolocation
-- currency conversion, vat compliance, and banking validation for financial applications
-- finance engineer
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- abstract api
-- fraud analyst
-- data engineer
-- engineer building fraud detection and threat intelligence systems
-- data enrichment
-- compliance analyst
-- enrich company data from domain
-- geolocate an ip address
 - get company details from domain or email
-- detection and blocking of fraudulent users, transactions, and bot activity
-- currencies
-- exchange rates
+- get current time and timezone information for any location
+- ip geolocation
+- ip intelligence
+- get current timezone
+- avatars
+- product engineer
 - exchange rates, vat validation, and iban validation for financial compliance
+- get timezone
+- engineer building fraud detection and threat intelligence systems
+- vat validation
+- detection and blocking of fraudulent users, transactions, and bot activity
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- exchange rates
+- security engineer
+- data enrichment
+- geolocate an ip address
+- finance engineer
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- image processing
+- web scraping
+- currencies
+- enrich company data from domain
+- iban validation
+- convert date/time from one timezone to another
+- developer building user onboarding and personalization features
+- phone validation
+- get current timezone for a location
+- retrieve timezone and current time for a location
+- convert time between zones
+- data engineer
+- screenshots
+- geolocate ip
+- compliance analyst
+- email validation
+- company enrichment
+- get location data for an ip address
+- retrieve company name, industry, headcount, logo, and location from a domain or email
+- geolocate an ip address to get country, city, timezone, and currency data
 - email reputation, phone intelligence, and ip intelligence for fraud prevention
 - enrich company data
-- product engineer
+- timezones
+- public holidays
+- fraud analyst
+- currency conversion, vat compliance, and banking validation for financial applications
+- enrich company
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- engineer building data pipelines and enrichment workflows
 - developer building payment, billing, and financial compliance systems
-- retrieve timezone and current time for a location
-- security engineer
-- company enrichment
-- screenshots
-- phone validation
-- get current timezone
-- get current timezone for a location
-- email validation
+- geolocate ip address
+- geolocation
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- abstract api
+- contacts
 slug: data-enrichment
+source_filename: data-enrichment.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abstract API Data Enrichment\"\n  description: \"Unified data enrichment workflow combining IP geolocation, company enrichment, and timezone APIs. Used by product teams and data engineers to automatically enrich user profiles, personalize experiences, and localize content at signup or session start.\"\n  tags:\n    - Abstract Api\n    - Data Enrichment\n    - Geolocation\n    - Company Enrichment\n    - Timezones\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      IP_GEOLOCATION_API_KEY: IP_GEOLOCATION_API_KEY\n      COMPANY_ENRICHMENT_API_KEY: COMPANY_ENRICHMENT_API_KEY\n      TIMEZONES_API_KEY: TIMEZONES_API_KEY\n\ncapability:\n  consumes:\n    - import: ip-geolocation\n      location: ./shared/ip-geolocation.yaml\n    - import: company-enrichment\n      location: ./shared/company-enrichment.yaml\n    - import: timezones\n      location: ./shared/timezones.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8081\n      namespace: data-enrichment-api\n      description: \"Unified REST API for user and session data enrichment.\"\n      resources:\n        - path: /v1/ip-location\n          name: ip-location\n          description: \"Geolocate an IP address\"\n          operations:\n            - method: GET\n              name: geolocate-ip\n              description: \"Get location data for an IP address\"\n              call: \"ip-geolocation.getIPGeolocation\"\n              with:\n                ip_address: \"rest.ip_address\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/company\n          name: company\n          description: \"Enrich company data from domain\"\n          operations:\n            - method: GET\n              name: enrich-company\n              description: \"Get company details from domain or email\"\n              call: \"company-enrichment.getCompanyEnrichment\"\
   \n              with:\n                domain: \"rest.domain\"\n                email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/timezone\n          name: timezone\n          description: \"Get current timezone for a location\"\n          operations:\n            - method: GET\n              name: get-timezone\n              description: \"Retrieve timezone and current time for a location\"\n              call: \"timezones.getCurrentTime\"\n              with:\n                location: \"rest.location\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: data-enrichment-mcp\n      transport: http\n      description: \"MCP server for AI-assisted data enrichment and user personalization.\"\n      tools:\n        - name: geolocate-ip-address\n          description: \"Geolocate an IP address to\

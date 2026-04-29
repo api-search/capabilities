@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: gitlab-oauth2-openapi.yml
+  format: yaml
+  label: gitlab-oauth2
+  slug: gitlab-oauth2
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/gitlab/refs/heads/main/openapi/gitlab-oauth2-openapi.yml
 categories:
 - identity-access
 consumed_apis:
@@ -35,39 +42,41 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- initiate the device authorization grant flow.
-- device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow.
-- initiate the device authorization grant flow for input-constrained devices.
-- oauth 2.0 authorization code flow initiation.
-- get information about the current oauth access token including scopes and expiration.
-- gitlab
-- token introspection and validation.
 - oauth
+- code
 - token revocation.
-- software development
-- authorize device
-- exchange an authorization code, device code, or refresh token for an access token.
+- get profile information about the currently authenticated user.
+- device authorization grant flow for input-constrained devices.
+- source control
+- revoke an oauth access or refresh token.
+- platform
 - oauth token exchange and creation.
+- identity
+- get profile information about the authenticated user.
+- get information about the current oauth access token including scopes and expiration.
+- authenticated user profile information.
+- revoke token
+- initiate the device authorization grant flow.
+- authentication
+- gitlab
+- software development
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- get user info
 - tokens
 - authorize oauth
-- authenticated user profile information.
-- authentication
-- revoke an existing oauth access or refresh token.
-- get profile information about the currently authenticated user.
-- get user info
+- authorize device
+- exchange an authorization code, device code, or refresh token for an access token.
 - get token info
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- revoke an oauth access or refresh token.
-- identity
-- platform
-- code
-- source control
-- get profile information about the authenticated user.
-- revoke token
+- initiate the device authorization grant flow for input-constrained devices.
 - exchange token
+- oauth 2.0 authorization code flow initiation.
 - get information about the current access token.
+- initiate the oauth 2.0 authorization code flow.
+- revoke an existing oauth access or refresh token.
+- token introspection and validation.
 slug: authentication-and-identity
+source_filename: authentication-and-identity.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitLab Authentication And Identity\"\n  description: \"Unified capability for GitLab OAuth 2.0 authentication flows and user identity. Enables developers and platform administrators to manage OAuth application authorization, token lifecycle, and authenticated user profile retrieval.\"\n  tags:\n    - Gitlab\n    - Authentication\n    - OAuth\n    - Identity\n    - Tokens\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITLAB_OAUTH_TOKEN: GITLAB_OAUTH_TOKEN\n      GITLAB_CLIENT_ID: GITLAB_CLIENT_ID\n      GITLAB_CLIENT_SECRET: GITLAB_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: gitlab-oauth2\n      location: ./shared/gitlab-oauth2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gitlab-auth-api\n      description: \"Unified REST API for GitLab OAuth 2.0 authentication and identity management.\"\n      resources:\n        - path: /v1/authorizations\n\
   \          name: authorizations\n          description: \"OAuth 2.0 authorization code flow initiation.\"\n          operations:\n            - method: GET\n              name: authorize-oauth\n              description: \"Initiate the OAuth 2.0 authorization code flow.\"\n              call: \"gitlab-oauth2.authorize-oauth\"\n              with:\n                client_id: \"rest.client_id\"\n                redirect_uri: \"rest.redirect_uri\"\n                response_type: \"rest.response_type\"\n                state: \"rest.state\"\n                scope: \"rest.scope\"\n                code_challenge: \"rest.code_challenge\"\n                code_challenge_method: \"rest.code_challenge_method\"\n                root_namespace_id: \"rest.root_namespace_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/device-authorizations\n          name: device-authorizations\n          description: \"Device authorization\
   \ grant flow for input-constrained devices.\"\n          operations:\n            - method: POST\n              name: authorize-device\n              description: \"Initiate the device authorization grant flow.\"\n              call: \"gitlab-oauth2.authorize-device\"\n              with:\n                client_id: \"rest.client_id\"\n                scope: \"rest.scope\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/tokens\n          name: tokens\n          description: \"OAuth token exchange and creation.\"\n          operations:\n            - method: POST\n              name: exchange-token\n              description: \"Exchange an authorization code, device code, or refresh token for an access token.\"\n              call: \"gitlab-oauth2.exchange-token\"\n              with:\n                grant_type: \"rest.grant_type\"\n                client_id: \"rest.client_id\"\n                client_secret: \"\

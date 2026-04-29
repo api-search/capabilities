@@ -34,44 +34,46 @@ personas: []
 provider_name: Amazon MediaConnect
 provider_slug: amazon-mediaconnect
 search_terms:
-- aws
-- list bridges
-- broadcasting
-- delete flow
-- list all flows
-- get details of a specific flow
-- media
-- Broadcast Engineer
-- manage entitlements
-- create flow
-- list all mediaconnect bridges
-- delete a flow
-- media transport
-- start flow
-- manage individual flow
-- list gateways
-- list all mediaconnect gateways
-- stop a mediaconnect flow
-- list all bridges
-- live video
-- create a new flow
 - list flows
-- manage bridges
-- live video transport and distribution
-- get flow details
-- flows
-- list all mediaconnect flows for live video transport
-- list entitlements
-- list all flow entitlements
-- describe flow
-- create a new mediaconnect flow
-- stop flow
-- live video transport workflow for broadcast engineers
-- start a mediaconnect flow
+- Broadcast Engineer
+- list all mediaconnect bridges
 - manage live video flows
-- engineer managing live video workflows
+- media transport
+- list all mediaconnect flows for live video transport
+- list all mediaconnect gateways
+- media
+- list all flow entitlements
+- delete flow
+- live video transport workflow for broadcast engineers
+- list all bridges
+- manage bridges
+- manage individual flow
 - list all entitlements
+- live video transport and distribution
+- get details of a specific flow
+- list bridges
+- aws
+- delete a flow
+- stop flow
+- flows
+- broadcasting
+- manage entitlements
+- create a new flow
+- start flow
+- engineer managing live video workflows
+- get flow details
+- list all flows
+- list gateways
+- live video
+- describe flow
+- start a mediaconnect flow
+- create flow
+- list entitlements
+- create a new mediaconnect flow
+- stop a mediaconnect flow
 slug: amazon-mediaconnect-live-video-transport
+source_filename: amazon-mediaconnect-live-video-transport.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaConnect Live Video Transport\n  description: Workflow capability for live video transport operations including flow management, source configuration, output routing, and entitlement management for broadcast engineers.\n  tags:\n  - AWS\n  - Broadcasting\n  - Live Video\n  - Media Transport\n  - Flows\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: mediaconnect\n    location: ./shared/mediaconnect.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: mediaconnect-transport-api\n    description: Unified REST API for live video transport workflow management.\n    resources:\n    - path: /v1/flows\n      name: flows\n      description: Manage live video flows\n      operations:\n      - method: GET\n        name: list-flows\n\
   \        description: List all flows\n        call: mediaconnect.list-flows\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-flow\n        description: Create a new flow\n        call: mediaconnect.create-flow\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/flows/{flowArn}\n      name: flow\n      description: Manage individual flow\n      operations:\n      - method: GET\n        name: describe-flow\n        description: Get flow details\n        call: mediaconnect.describe-flow\n        with:\n          flowArn: rest.flowArn\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-flow\n        description: Delete a flow\n        call: mediaconnect.delete-flow\n        with:\n          flowArn: rest.flowArn\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/bridges\n     \
   \ name: bridges\n      description: Manage bridges\n      operations:\n      - method: GET\n        name: list-bridges\n        description: List all bridges\n        call: mediaconnect.list-bridges\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/entitlements\n      name: entitlements\n      description: Manage entitlements\n      operations:\n      - method: GET\n        name: list-entitlements\n        description: List all entitlements\n        call: mediaconnect.list-entitlements\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: mediaconnect-transport-mcp\n    transport: http\n    description: MCP server for AI-assisted live video transport workflow management.\n    tools:\n    - name: list-flows\n      description: List all MediaConnect flows for live video transport\n      hints:\n        readOnly: true\n        openWorld: true\n      call: mediaconnect.list-flows\n \

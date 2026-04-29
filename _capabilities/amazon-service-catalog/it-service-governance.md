@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-service-catalog-openapi.yml
+  format: yaml
+  label: amazon-service-catalog
+  slug: amazon-service-catalog
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-service-catalog/refs/heads/main/openapi/amazon-service-catalog-openapi.yml
 categories:
 - compliance
 consumed_apis:
@@ -31,38 +38,40 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- self-service product provisioning
-- browse and search approved it products
-- create a new it service catalog portfolio
-- aws
-- provision product
-- add a new product to the it service catalog
-- service catalog
-- terminate and decommission a provisioned product
-- describe provisioned product
-- cloud governance
-- add a product to the catalog
-- it governance
-- describe portfolio
-- create portfolio
-- amazon service catalog
-- it service portfolio management
-- self-service
-- approved product catalog
-- check the status of a provisioned product
-- terminate provisioned product
-- self-service provision an approved it product
-- create product
-- create an it service portfolio
-- list portfolios
-- compliance
 - provision an approved product
+- describe provisioned product
+- approved product catalog
+- list portfolios
+- add a product to the catalog
+- create a new it service catalog portfolio
+- amazon service catalog
+- terminate provisioned product
+- compliance
+- service catalog
+- create an it service portfolio
+- create portfolio
 - search products
-- browse approved products
-- get details about an it service portfolio
-- list all it service catalog portfolios
 - list all it service portfolios
+- cloud governance
+- aws
+- self-service provision an approved it product
+- list all it service catalog portfolios
+- it governance
+- self-service product provisioning
+- get details about an it service portfolio
+- terminate and decommission a provisioned product
+- describe portfolio
+- it service portfolio management
+- create product
+- add a new product to the it service catalog
+- provision product
+- check the status of a provisioned product
+- browse approved products
+- browse and search approved it products
+- self-service
 slug: it-service-governance
+source_filename: it-service-governance.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Service Catalog IT Service Governance\"\n  description: \"Unified capability for IT service governance including portfolio management, product catalog curation, and self-service product provisioning. Used by IT Administrators and End Users.\"\n  tags:\n    - Amazon Service Catalog\n    - IT Governance\n    - Cloud Governance\n    - Self-Service\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-service-catalog\n      location: ./shared/amazon-service-catalog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: it-service-governance-api\n      description: \"Unified REST API for Amazon Service Catalog IT service governance.\"\n      resources:\n        - path: /v1/portfolios\n\
   \          name: portfolios\n          description: \"IT service portfolio management\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List all IT service portfolios\"\n              call: \"amazon-service-catalog.list-portfolios\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-portfolio\n              description: \"Create an IT service portfolio\"\n              call: \"amazon-service-catalog.create-portfolio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: products\n          description: \"Approved product catalog\"\n          operations:\n            - method: GET\n              name: search-products\n              description: \"Browse approved products\"\n              call: \"amazon-service-catalog.search-products\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-product\n              description: \"Add a product to the catalog\"\n              call: \"amazon-service-catalog.create-product\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/provisioned-products\n          name: provisioned-products\n          description: \"Self-service product provisioning\"\n          operations:\n            - method: POST\n              name: provision-product\n              description: \"Provision an approved product\"\n              call: \"amazon-service-catalog.provision-product\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: it-service-governance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\

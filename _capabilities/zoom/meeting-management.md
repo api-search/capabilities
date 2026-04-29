@@ -54,57 +54,59 @@ personas: []
 provider_name: Zoom
 provider_slug: zoom
 search_terms:
-- meeting lifecycle management.
-- create a poll for a meeting.
-- list registrants for a meeting.
-- create a new meeting.
-- delete a meeting permanently.
-- list all meetings for a user.
-- delete recordings
-- get recordings for a meeting.
-- create a new meeting for a user.
-- get details of a past meeting.
-- update a meeting's live stream configuration.
-- list all meetings scheduled for a user.
-- chat
 - list participants
-- list registrants
-- get past meeting details
-- list all registrants for a meeting.
-- delete a meeting.
-- get all recordings for a meeting.
-- add a registrant to a meeting.
-- delete meeting
-- list participants of a live or past meeting.
-- meeting recording management.
-- create poll
-- meetings
-- get meeting details.
-- list polls for a meeting.
-- webinars
-- get recordings
-- delete all recordings for a meeting.
-- update livestream
-- communications
-- retrieve details of a specific meeting.
-- list meetings
-- zoom
-- individual meeting operations.
-- delete recordings for a meeting.
-- videos
-- update a meeting.
-- video conferencing
-- update meeting
-- update meeting details.
-- meeting registration management.
-- add registrant
-- meeting poll management.
-- get meeting
-- collaboration
-- create meeting
 - list polls
+- zoom
+- create meeting
 - list all polls for a meeting.
+- create a poll for a meeting.
+- get recordings for a meeting.
+- retrieve details of a specific meeting.
+- get recordings
+- meetings
+- list registrants for a meeting.
+- get details of a past meeting.
+- delete all recordings for a meeting.
+- chat
+- update meeting details.
+- get all recordings for a meeting.
+- delete a meeting.
+- meeting lifecycle management.
+- list meetings
+- delete a meeting permanently.
+- update livestream
+- get meeting details.
+- list all meetings scheduled for a user.
+- list registrants
+- add registrant
+- meeting registration management.
+- update a meeting.
+- delete meeting
+- individual meeting operations.
+- update meeting
+- create a new meeting for a user.
+- delete recordings for a meeting.
+- get meeting
+- list all registrants for a meeting.
+- add a registrant to a meeting.
+- update a meeting's live stream configuration.
+- communications
+- videos
+- meeting poll management.
+- webinars
+- list participants of a live or past meeting.
+- list polls for a meeting.
+- create poll
+- video conferencing
+- create a new meeting.
+- meeting recording management.
+- collaboration
+- get past meeting details
+- delete recordings
+- list all meetings for a user.
 slug: meeting-management
+source_filename: meeting-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Zoom Meeting Management\"\n  description: \"Unified workflow for managing the complete Zoom meeting lifecycle including scheduling, registrants, polls, participants, recordings, and live streaming. Used by meeting organizers, administrators, and automation tools.\"\n  tags:\n    - Zoom\n    - Meetings\n    - Video Conferencing\n    - Collaboration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ZOOM_OAUTH_TOKEN: ZOOM_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: zoom-meeting\n      location: ./shared/zoom-meeting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: zoom-meeting-management-api\n      description: \"Unified REST API for Zoom meeting lifecycle management.\"\n      resources:\n        - path: /v1/meetings\n          name: meetings\n          description: \"Meeting lifecycle management.\"\n          operations:\n            - method:\
   \ GET\n              name: list-meetings\n              description: \"List all meetings for a user.\"\n              call: \"zoom-meeting.list-meetings\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-meeting\n              description: \"Create a new meeting.\"\n              call: \"zoom-meeting.create-meeting\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/meetings/{meetingId}\n          name: meeting-details\n          description: \"Individual meeting operations.\"\n          operations:\n            - method: GET\n              name: get-meeting\n              description: \"Get meeting details.\"\n              call: \"zoom-meeting.get-meeting\"\n              with:\n       \
   \         meetingId: \"rest.meetingId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-meeting\n              description: \"Update a meeting.\"\n              call: \"zoom-meeting.update-meeting\"\n              with:\n                meetingId: \"rest.meetingId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-meeting\n              description: \"Delete a meeting.\"\n              call: \"zoom-meeting.delete-meeting\"\n              with:\n                meetingId: \"rest.meetingId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/registrants\n          name: registrants\n          description: \"Meeting registration management.\"\n          operations:\n            - method: GET\n            \

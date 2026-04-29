@@ -37,70 +37,72 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- manages data privacy compliance including gdpr deletion requests.
-- create audience export
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- analytics administrator
+- machine learning
+- get audience export
 - platform engineer
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- implements server-side event tracking and offline data collection.
+- connects advertising platforms and implements server-side tracking.
+- google analytics
+- list properties
+- measures campaign performance, segments audiences, and tracks conversions.
+- connecting ga4 with advertising, app, and measurement platforms.
+- extracts insights from ga4 data through reports and explorations.
+- data analyst
+- list properties for audience context
 - audits data access and monitors configuration changes.
-- querying and analyzing ga4 event data through various report types.
-- create an audience export
-- get audience export details
+- get a specific audience export
+- reporting
 - data protection engineer
 - query users from an audience export
-- server-side event tracking with data stream and secret management.
-- connecting ga4 with advertising, app, and measurement platforms.
-- measures campaign performance, segments audiences, and tracks conversions.
-- list ga4 properties to identify available audiences
-- export
-- implements privacy-compliant data handling and deletion workflows.
-- run standard, realtime, pivot, and batch reports with data access auditing.
+- metrics
 - list ga4 properties
-- integrates ga4 with other platforms and manages infrastructure.
+- marketing team
+- create audience export
+- data
 - audiences
-- builds automated reporting pipelines and dashboards from ga4 data.
-- compliance team
-- segmenting and exporting user populations for analysis and activation.
-- sets up and maintains ga4 accounts, properties, and configurations.
-- create and list audience exports
+- marketing ops
+- manages data privacy compliance including gdpr deletion requests.
+- create, export, and query ga4 audience segments.
 - web analytics
-- reporting
-- list properties
+- create an audience export for a ga4 property
+- retrieve users from an audience export
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- sets up and maintains ga4 accounts, properties, and configurations.
+- ingesting events from servers, apps, and offline sources.
+- attribution
 - retrieve users from a completed audience export
 - user data deletion, access auditing, and data collection acknowledgement.
-- bi engineer
-- setting up and maintaining ga4 account and property structure.
-- list properties for audience context
-- managing data privacy, deletion, and access auditing.
-- get metadata about a specific audience export
-- marketing team
-- marketing ops
-- create an audience export for a ga4 property
-- implements server-side event tracking and offline data collection.
-- get audience export
-- machine learning
-- list audience exports
-- retrieve users from an audience export
-- marketing
-- connects advertising platforms and implements server-side tracking.
-- attribution
-- metrics
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
 - list all audience exports for a property
-- create, export, and query ga4 audience segments.
-- get a specific audience export
-- backend engineer
-- query audience export
-- google analytics
-- data analyst
-- analytics
-- segmentation
-- ingesting events from servers, apps, and offline sources.
-- data
-- privacy officer
+- managing data privacy, deletion, and access auditing.
 - google
-- extracts insights from ga4 data through reports and explorations.
+- server-side event tracking with data stream and secret management.
+- get audience export details
+- query audience export
+- compliance team
+- implements privacy-compliant data handling and deletion workflows.
+- builds automated reporting pipelines and dashboards from ga4 data.
+- analytics
+- segmenting and exporting user populations for analysis and activation.
+- privacy officer
+- get metadata about a specific audience export
+- bi engineer
+- export
+- segmentation
+- querying and analyzing ga4 event data through various report types.
+- setting up and maintaining ga4 account and property structure.
+- analytics administrator
+- list audience exports
+- create and list audience exports
+- list ga4 properties to identify available audiences
+- integrates ga4 with other platforms and manages infrastructure.
+- marketing
+- backend engineer
+- create an audience export
+- run standard, realtime, pivot, and batch reports with data access auditing.
 slug: audience-management
+source_filename: audience-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Analytics Audience Management\"\n  description: \"Unified workflow for creating, exporting, and analyzing GA4 audiences. Combines the Data API audience export capabilities with Admin API property configuration. Used by marketing teams and data analysts for audience segmentation, export, and activation.\"\n  tags:\n    - Google Analytics\n    - Audiences\n    - Segmentation\n    - Export\n    - Marketing\n  created: \"2026-04-17\"\n  modified: \"2026-04-17\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ANALYTICS_ACCESS_TOKEN: GOOGLE_ANALYTICS_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: ga-data-api\n      location: ./shared/data-api.yaml\n    - import: ga-admin-api\n      location: ./shared/admin-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: ga-audience-api\n      description: \"Unified REST API for Google Analytics audience management.\"\n      resources:\n        - path:\
   \ /v1/audience-exports\n          name: audience-exports\n          description: \"Create and list audience exports\"\n          operations:\n            - method: POST\n              name: create-audience-export\n              description: \"Create an audience export\"\n              call: \"ga-data-api.create-audience-export\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-audience-exports\n              description: \"List audience exports\"\n              call: \"ga-data-api.list-audience-exports\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audience-exports/{id}\n          name: audience-export\n          description: \"Get a specific audience export\"\n          operations:\n  \
   \          - method: GET\n              name: get-audience-export\n              description: \"Get audience export details\"\n              call: \"ga-data-api.get-audience-export\"\n              with:\n                name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audience-exports/{id}/users\n          name: audience-export-users\n          description: \"Retrieve users from an audience export\"\n          operations:\n            - method: POST\n              name: query-audience-export\n              description: \"Query users from an audience export\"\n              call: \"ga-data-api.query-audience-export\"\n              with:\n                name: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/properties\n          name: properties\n          description: \"List properties for audience context\"\n  \

@@ -19,41 +19,43 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: apache-airflow
 search_terms:
-- etl
+- Platform Operator
+- engineers who build and manage data pipelines using airflow dags.
+- Data Engineer
+- data pipeline
+- dag management
+- list airflow resource pools.
 - list task instances
+- workflow
+- list connections
+- workflow orchestration
+- open source
+- scheduling
+- trigger a dag run.
+- list variables
+- list all airflow dags.
+- get the status of an airflow dag run.
+- list task instances for monitoring dag run progress.
+- python
+- apache airflow
+- apache
+- list dags
+- list pools
+- task scheduling
+- list all dags.
+- operators who monitor and maintain airflow platform health.
+- list airflow connections for integrations.
+- trigger dag run
+- dag and task management capability.
+- dag
+- trigger an airflow dag run.
+- orchestration
 - get dag run status
 - list airflow variables.
-- list airflow connections for integrations.
-- python
-- open source
-- list variables
-- scheduling
-- list airflow resource pools.
-- list all airflow dags.
-- list connections
-- dag and task management capability.
-- Platform Operator
-- list dags
-- dag
-- engineers who build and manage data pipelines using airflow dags.
-- trigger an airflow dag run.
-- data pipeline
-- apache
-- workflow
-- apache airflow
-- orchestration
-- task scheduling
-- trigger dag run
-- dag management
-- list pools
-- operators who monitor and maintain airflow platform health.
-- Data Engineer
-- get the status of an airflow dag run.
-- trigger a dag run.
-- list all dags.
-- workflow orchestration
-- list task instances for monitoring dag run progress.
+- etl
 slug: airflow-orchestration
+source_filename: airflow-orchestration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Apache Airflow Workflow Orchestration\n  description: Unified capability for managing and monitoring Apache Airflow \n    DAGs, runs, tasks, connections, and variables. Used by data engineers and \n    platform operators to orchestrate data pipelines.\n  tags:\n  - Apache Airflow\n  - Workflow Orchestration\n  - DAG Management\n  - Data Pipeline\n  - ETL\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AIRFLOW_USERNAME: AIRFLOW_USERNAME\n    AIRFLOW_PASSWORD: AIRFLOW_PASSWORD\ncapability:\n  consumes:\n  - import: airflow-rest\n    location: ./shared/airflow-rest.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: airflow-orchestration-api\n    description: Unified REST API for Airflow workflow orchestration.\n    resources:\n    - path: /v1/dags\n      name: dags\n      operations:\n      - method: GET\n        name: list-dags\n        description: List all DAGs.\n        call: airflow-rest.list-dags\n\
   \        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/dag-runs\n      name: dag-runs\n      operations:\n      - method: POST\n        name: trigger-dag-run\n        description: Trigger a DAG run.\n        call: airflow-rest.trigger-dag-run\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: airflow-orchestration-mcp\n    transport: http\n    description: MCP server for AI-assisted Airflow workflow management.\n    tools:\n    - name: list-dags\n      description: List all Airflow DAGs.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airflow-rest.list-dags\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: trigger-dag-run\n      description: Trigger an Airflow DAG run.\n      hints:\n        readOnly: false\n        openWorld: false\n      call: airflow-rest.trigger-dag-run\n      with:\n        dag_id: tools.dag_id\n     \
   \ outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-dag-run-status\n      description: Get the status of an Airflow DAG run.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airflow-rest.get-dag-run\n      with:\n        dag_id: tools.dag_id\n        dag_run_id: tools.dag_run_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-task-instances\n      description: List task instances for monitoring DAG run progress.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airflow-rest.list-task-instances\n      with:\n        dag_id: tools.dag_id\n        dag_run_id: tools.dag_run_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-connections\n      description: List Airflow connections for integrations.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airflow-rest.list-connections\n      outputParameters:\n      -\

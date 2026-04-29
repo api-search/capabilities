@@ -40,51 +40,53 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get entities
-- concordance lookup.
-- factset
-- concordance lookup
-- get fundamental financial data.
-- get georev
-- symbology translate
-- get esg data.
-- esg data.
-- concord
-- entity data.
-- get industry classifications.
-- entity concordance.
-- id lookup
-- look up security identifiers.
-- financial data
-- get esg
-- concordance entity lookup.
-- get fundamentals
 - people data.
-- fundamental data.
-- get entity
-- get esg scores.
-- get rbics classifications.
-- get ownership
-- get entity reference data.
-- investment analytics
-- get people
-- financial
-- portfolio analytics
-- get fundamentals.
-- get entity data.
-- get ownership data.
-- translate between identifier types.
-- market data
-- get classifications
-- get people data.
-- research
-- get rbics
+- id lookup
 - entity data
 - get geographic revenue.
+- get ownership
+- translate between identifier types.
+- entity concordance.
+- portfolio analytics
+- get entity
+- get entities
 - get people profiles.
 - company research
+- get fundamentals
+- get rbics
+- get georev
+- concordance lookup.
+- get esg data.
+- get fundamental financial data.
+- entity data.
+- get esg scores.
+- concordance lookup
 - fundamentals
+- get esg
+- get industry classifications.
+- get entity reference data.
+- get ownership data.
+- fundamental data.
+- get entity data.
+- get rbics classifications.
+- financial data
+- get classifications
+- research
+- esg data.
+- factset
+- get fundamentals.
+- get people data.
+- symbology translate
+- financial
+- market data
+- concordance entity lookup.
+- look up security identifiers.
+- concord
+- get people
+- investment analytics
 slug: company-research
+source_filename: company-research.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Company Research\"\n  description: \"Unified workflow for company research including entity data, fundamentals, people, concordance, symbology, classifications, ESG, and ownership. Used by research analysts.\"\n  tags:\n    - FactSet\n    - Company Research\n    - Entity Data\n    - Fundamentals\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-entity\n      location: ./shared/entity.yaml\n    - import: factset-fundamentals\n      location: ./shared/fundamentals.yaml\n    - import: factset-people\n      location: ./shared/people.yaml\n    - import: factset-concordance\n      location: ./shared/concordance.yaml\n    - import: factset-symbology\n      location: ./shared/symbology.yaml\n    - import: factset-classifications\n      location: ./shared/classifications.yaml\n\
   \    - import: factset-rbics\n      location: ./shared/rbics.yaml\n    - import: factset-esg\n      location: ./shared/esg.yaml\n    - import: factset-ownership\n      location: ./shared/ownership.yaml\n    - import: factset-georev\n      location: ./shared/georev.yaml\n    - import: factset-id-lookup\n      location: ./shared/id-lookup.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: company-research-api\n      description: \"Unified REST API for company research.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description: \"Entity data.\"\n          operations:\n            - method: GET\n              name: get-entities\n              description: \"Get entity data.\"\n              call: \"factset-entity.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fundamentals\n          name: fundamentals\n          description: \"Fundamental data.\"\n\
   \          operations:\n            - method: GET\n              name: get-fundamentals\n              description: \"Get fundamentals.\"\n              call: \"factset-fundamentals.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/people\n          name: people\n          description: \"People data.\"\n          operations:\n            - method: GET\n              name: get-people\n              description: \"Get people data.\"\n              call: \"factset-people.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/concordance\n          name: concordance\n          description: \"Entity concordance.\"\n          operations:\n            - method: GET\n              name: concord\n              description: \"Concordance lookup.\"\n              call: \"factset-concordance.list\"\n              outputParameters:\n                -\

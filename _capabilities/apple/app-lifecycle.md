@@ -34,59 +34,61 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- list apps
-- get beta tester details.
-- create beta tester
-- update a beta group.
-- app management
-- beta group management.
-- modify build
 - delete beta group
-- create beta group
+- list beta testers
+- get beta tester details.
 - update build information.
-- list all builds.
-- macos
-- delete beta tester
+- update app metadata.
+- mobile
+- list all apps.
 - developer
-- modify beta group
-- list groups
-- app management.
-- create tester
-- list beta groups.
-- list all beta groups.
-- list all beta testers.
-- get build details.
-- read build
-- create a beta group.
-- list builds
+- beta tester management.
+- update a beta group.
+- beta group management.
+- add a beta tester.
 - list beta groups
-- list testers
+- delete a beta group.
+- list beta groups.
+- create a beta group.
+- get build details.
+- create tester
 - read beta tester
-- technology
-- apple
-- build management.
-- get beta group details.
+- app management.
+- delete beta tester
+- list groups
+- list apps
+- create beta tester
 - remove a beta tester.
 - read app
-- list beta testers.
-- modify app
 - add a new beta tester.
-- delete a beta group.
-- list all apps in app store connect.
-- list beta testers
-- ios
-- beta tester management.
-- create group
-- get details of a specific app.
-- create a new beta group.
-- testflight
+- modify app
+- modify build
+- read build
+- build management.
+- list builds
+- create beta group
+- modify beta group
+- app management
 - read beta group
-- mobile
-- add a beta tester.
-- list all apps.
-- update app metadata.
+- technology
+- macos
+- list testers
+- create a new beta group.
+- list all builds.
+- list all apps in app store connect.
+- get details of a specific app.
+- list all beta groups.
+- get beta group details.
 - app store
+- testflight
+- list beta testers.
+- apple
+- list all beta testers.
+- ios
+- create group
 slug: app-lifecycle
+source_filename: app-lifecycle.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apple App Lifecycle\"\n  description: \"Unified workflow for managing the Apple app lifecycle including app metadata, builds, TestFlight beta testing, and beta group management. Used by app developers and release managers.\"\n  tags:\n    - Apple\n    - App Store\n    - TestFlight\n    - App Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      APPLE_ASC_TOKEN: APPLE_ASC_TOKEN\n\ncapability:\n  consumes:\n    - import: app-store-connect\n      location: ./shared/app-store-connect.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apple-app-lifecycle-api\n      description: \"Unified REST API for Apple app lifecycle management.\"\n      resources:\n        - path: /v1/apps\n          name: apps\n          description: \"App management.\"\n          operations:\n            - method: GET\n              name: list-apps\n              description: \"\
   List all apps.\"\n              call: \"app-store-connect.list-apps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/builds\n          name: builds\n          description: \"Build management.\"\n          operations:\n            - method: GET\n              name: list-builds\n              description: \"List all builds.\"\n              call: \"app-store-connect.list-builds\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/testers\n          name: testers\n          description: \"Beta tester management.\"\n          operations:\n            - method: GET\n              name: list-testers\n              description: \"List beta testers.\"\n              call: \"app-store-connect.list-beta-testers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n             \
   \ name: create-tester\n              description: \"Add a beta tester.\"\n              call: \"app-store-connect.create-beta-tester\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Beta group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List beta groups.\"\n              call: \"app-store-connect.list-beta-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-group\n              description: \"Create a beta group.\"\n              call: \"app-store-connect.create-beta-group\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apple-app-lifecycle-mcp\n      transport:\

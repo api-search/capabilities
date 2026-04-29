@@ -24,51 +24,53 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- api hub
-- list all apis in the api hub catalog.
-- apis catalogued in api hub.
-- Platform Architect
-- apis tracked in the apigee registry.
-- apigee
-- list all apis catalogued in apigee api hub — the primary api inventory for governance.
-- analytics
-- architect overseeing api platform strategy and governance across the organization.
-- list hub apis
-- api governance
-- list apis in the registry.
-- list api versions
-- integrations
-- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
-- API Governance Lead
-- openapi
-- list specs for an api version.
-- developer portal
-- api gateway
-- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
-- API Platform Engineer
-- microservices
-- list versions of a specific api in the hub catalog.
-- engineer managing api proxies, deployments, and policies in apigee.
-- lint an api spec for compliance and quality violations — returns issues with severity and location.
-- list openapi and other specs attached to an api version in the hub.
-- enterprise
-- hybrid
-- lint api spec
-- list hub specs
-- list registry specs
-- specs for a given api version in hub.
-- list api specs
-- api specifications
-- list registry apis
 - API Product Manager
-- list spec artifacts in the apigee registry for a specific api version.
-- api management
-- google cloud
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- monetization
 - get api spec contents
+- integrations
+- list specs for an api version.
+- list api versions
+- apis tracked in the apigee registry.
+- API Governance Lead
+- list all apis catalogued in apigee api hub — the primary api inventory for governance.
+- openapi
+- list registry specs
+- lint api spec
+- monetization
+- api specifications
+- lint an api spec for compliance and quality violations — returns issues with severity and location.
+- google cloud
+- api management
+- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
 - manager packaging api products and managing developer relationships.
+- architect overseeing api platform strategy and governance across the organization.
+- api gateway
+- developer portal
+- engineer managing api proxies, deployments, and policies in apigee.
+- Platform Architect
+- list openapi and other specs attached to an api version in the hub.
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list hub specs
+- specs for a given api version in hub.
+- list versions of a specific api in the hub catalog.
+- enterprise
+- list registry apis
+- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
+- microservices
+- apigee
+- api governance
+- analytics
+- list spec artifacts in the apigee registry for a specific api version.
+- hybrid
+- list all apis in the api hub catalog.
+- api hub
+- list api specs
+- API Platform Engineer
+- apis catalogued in api hub.
+- list apis in the registry.
+- list hub apis
 slug: api-specification-management
+source_filename: api-specification-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Specification Management\"\n  description: \"Unified workflow for managing API specifications on Apigee — browsing the API Hub catalog, retrieving spec contents, linting for compliance, and cross-referencing with Registry artifacts. Provides API product managers and governance teams a single surface to inspect, validate, and govern the specifications that define your API contracts.\"\n  tags:\n    - Apigee\n    - API Specifications\n    - API Governance\n    - OpenAPI\n    - Google Cloud\n  created: \"2026-04-20\"\n  modified: \"2026-04-20\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n    - import: registry\n      location: ./shared/registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: apigee-specs-api\n      description: \"Unified REST API for Apigee API\
   \ specification management.\"\n      resources:\n        - path: /v1/hub/apis\n          name: hub-apis\n          description: \"APIs catalogued in API Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-apis\n              description: \"List all APIs in the API Hub catalog.\"\n              call: \"api-hub.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hub/specs\n          name: hub-specs\n          description: \"Specs for a given API version in Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-specs\n              description: \"List specs for an API version.\"\n              call: \"api-hub.listApiSpecs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/registry/apis\n          name: registry-apis\n          description: \"APIs tracked in the Apigee Registry.\"\
   \n          operations:\n            - method: GET\n              name: list-registry-apis\n              description: \"List APIs in the Registry.\"\n              call: \"registry.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: apigee-specs-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API specification management and governance.\"\n      tools:\n        - name: list-hub-apis\n          description: \"List all APIs catalogued in Apigee API Hub — the primary API inventory for governance.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-hub.listApis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-api-versions\n          description: \"List versions of a specific API in the Hub catalog.\"\n   \

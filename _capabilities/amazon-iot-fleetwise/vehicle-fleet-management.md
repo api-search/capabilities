@@ -15,35 +15,37 @@ personas: []
 provider_name: Amazon IoT FleetWise
 provider_slug: amazon-iot-fleetwise
 search_terms:
-- aws
-- automotive
-- amazon iot fleetwise list campaigns
-- amazon iot fleetwise resources
-- amazon iot fleetwise create signal catalog
-- amazon iot fleetwise list fleets
-- amazon iot fleetwise create fleet
-- Automotive Engineer
-- create fleet
-- amazon iot fleetwise list signal catalogs
 - amazon iot fleetwise create campaign
-- list signal catalogs
-- list vehicles
-- telematics
-- connected vehicles
-- create vehicle
-- manages amazon iot fleetwise resources and operations
-- create signal catalog
-- iot
-- vehicle telematics
-- amazon iot fleetwise list vehicles
-- list fleets
-- collect, transform, and transfer vehicle data to the cloud.
 - list campaigns
 - vehicle data
 - amazon iot fleetwise create vehicle
+- amazon iot fleetwise create fleet
+- collect, transform, and transfer vehicle data to the cloud.
+- telematics
+- amazon iot fleetwise list signal catalogs
+- create signal catalog
+- manages amazon iot fleetwise resources and operations
+- amazon iot fleetwise resources
+- vehicle telematics
+- amazon iot fleetwise create signal catalog
+- connected vehicles
+- iot
+- aws
+- create fleet
+- list vehicles
 - create campaign
+- amazon iot fleetwise list fleets
+- automotive
+- create vehicle
+- amazon iot fleetwise list vehicles
+- Automotive Engineer
+- list signal catalogs
 - IoT Developer
+- amazon iot fleetwise list campaigns
+- list fleets
 slug: vehicle-fleet-management
+source_filename: vehicle-fleet-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT FleetWise - Vehicle Fleet Management\n  description: Unified capability for Automotive Engineer, IoT Developer to manage collect, transform, and transfer vehicle data to the cloud operations.\n  tags:\n    - IoT\n    - AWS\n    - Automotive\n    - Vehicle Telematics\n    - Connected Vehicles\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-fleetwise\n      location: ./shared/iot-fleetwise.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: vehicle-fleet-management-api\n      description: Unified REST API for vehicle fleet management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT FleetWise resources\n          operations:\n            - method: GET\n      \
   \        name: list-vehicles\n              description: List Vehicles\n              call: \"iot-fleetwise.list-vehicles\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: vehicle-fleet-management-mcp\n      transport: http\n      description: MCP server for AI-assisted vehicle fleet management.\n      tools:\n        - name: list-vehicles\n          description: Amazon IoT FleetWise List Vehicles\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-fleetwise.list-vehicles\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-vehicle\n          description: Amazon IoT FleetWise Create Vehicle\n          hints:\n            readOnly: false\n            \n          call: \"iot-fleetwise.create-vehicle\"\n          outputParameters:\n            - type: object\n              mapping:\
   \ \"$.\"\n\n        - name: list-fleets\n          description: Amazon IoT FleetWise List Fleets\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-fleetwise.list-fleets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-fleet\n          description: Amazon IoT FleetWise Create Fleet\n          hints:\n            readOnly: false\n            \n          call: \"iot-fleetwise.create-fleet\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-signal-catalogs\n          description: Amazon IoT FleetWise List Signal Catalogs\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-fleetwise.list-signal-catalogs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-signal-catalog\n          description: Amazon IoT FleetWise\

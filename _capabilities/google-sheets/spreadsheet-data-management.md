@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: google-sheets-openapi.yml
+  format: yaml
+  label: google-sheets
+  slug: google-sheets
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/google-sheets/refs/heads/main/openapi/google-sheets-openapi.yml
 categories:
 - automation
 consumed_apis:
@@ -35,48 +42,50 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- batch get values
-- batch clear values
 - append values
-- search developer metadata
-- productivity
-- batch update values
-- write values to a spreadsheet range
-- get spreadsheet details
-- copy sheet
-- single spreadsheet operations
-- write values to a range
-- spreadsheets
-- search developer metadata matching filters
-- copy a sheet to another spreadsheet
-- write values to multiple ranges at once
-- read values from multiple ranges at once
-- cell value read and write operations
-- append values to a range
-- get spreadsheet details by id
-- get values
-- spreadsheet lifecycle operations
-- create spreadsheet
-- batch update spreadsheet
-- google workspace
-- get developer metadata by id
-- clear values from multiple ranges
-- clear values
-- clear values from a range
-- apply batch updates to a spreadsheet
-- automation
-- read values from a range
-- get spreadsheet
-- clear values from a spreadsheet range
-- create a new google sheets spreadsheet
 - data management
-- read values from a spreadsheet range
 - update values
-- append rows of data to a spreadsheet
+- clear values from a range
+- read values from a range
+- create a new spreadsheet
+- copy sheet
+- batch get values
+- read values from a spreadsheet range
+- create a new google sheets spreadsheet
+- read values from multiple ranges at once
+- write values to multiple ranges at once
+- automation
+- clear values
+- productivity
+- batch update spreadsheet
+- batch clear values
+- append values to a range
+- write values to a range
+- apply batch updates to a spreadsheet
+- write values to a spreadsheet range
+- copy a sheet to another spreadsheet
+- cell value read and write operations
+- clear values from multiple ranges
+- get values
+- batch update values
+- get developer metadata by id
+- google workspace
+- search developer metadata matching filters
+- get spreadsheet details by id
+- search developer metadata
+- clear values from a spreadsheet range
+- single spreadsheet operations
 - google sheets
 - get developer metadata
-- create a new spreadsheet
+- spreadsheets
+- create spreadsheet
+- get spreadsheet details
+- append rows of data to a spreadsheet
+- spreadsheet lifecycle operations
+- get spreadsheet
 slug: spreadsheet-data-management
+source_filename: spreadsheet-data-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Sheets Spreadsheet Data Management\"\n  description: \"Workflow for managing spreadsheet data including creating spreadsheets, reading and writing cell values, batch operations, and metadata management. Used by data analysts, developers, and automation engineers.\"\n  tags:\n    - Google Sheets\n    - Spreadsheets\n    - Data Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: google-sheets\n      location: ./shared/google-sheets.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sheets-data-api\n      description: \"Unified REST API for Google Sheets data management.\"\n      resources:\n        - path: /v1/spreadsheets\n          name: spreadsheets\n          description: \"Spreadsheet lifecycle operations\"\n          operations:\n     \
   \       - method: POST\n              name: create-spreadsheet\n              description: \"Create a new spreadsheet\"\n              call: \"google-sheets.create-spreadsheet\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spreadsheets/{spreadsheetId}\n          name: spreadsheet\n          description: \"Single spreadsheet operations\"\n          operations:\n            - method: GET\n              name: get-spreadsheet\n              description: \"Get spreadsheet details\"\n              call: \"google-sheets.get-spreadsheet\"\n              with:\n                spreadsheetId: \"rest.spreadsheetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spreadsheets/{spreadsheetId}/values/{range}\n          name: values\n          description: \"Cell value read and write operations\"\n          operations:\n            - method: GET\n     \
   \         name: get-values\n              description: \"Read values from a range\"\n              call: \"google-sheets.get-values\"\n              with:\n                spreadsheetId: \"rest.spreadsheetId\"\n                range: \"rest.range\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-values\n              description: \"Write values to a range\"\n              call: \"google-sheets.update-values\"\n              with:\n                spreadsheetId: \"rest.spreadsheetId\"\n                range: \"rest.range\"\n                valueInputOption: \"rest.valueInputOption\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: append-values\n              description: \"Append values to a range\"\n              call: \"google-sheets.append-values\"\n              with:\n        \

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: power-platform-api-openapi.json
+  format: json
+  label: power-platform-api
+  slug: power-platform-api
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/power-platform/refs/heads/main/openapi/power-platform-api-openapi.json
 categories: []
 consumed_apis:
 - power-platform-api
@@ -38,54 +45,56 @@ personas: []
 provider_name: Microsoft Power Platform APIs
 provider_slug: power-platform
 search_terms:
-- administration
-- update an existing billing policy
-- install an application package in an environment
 - list application packages
-- create a new billing policy linking azure subscription
-- list environments
-- get install status
-- list power automate flow runs by workflow id
-- get details for a specific billing policy
-- list application packages available in an environment
-- install application package
-- get environment
-- list installable application packages for the tenant
-- get details for a specific power platform environment
-- application package management
-- dataverse
-- list billing policies
-- delete environment
-- environment management
-- get environment details
-- list tenant packages
+- delete an environment
+- microsoft
 - list flow runs for an environment
-- delete a power platform environment
+- billing policy management
+- list application packages available in an environment
+- power pages
+- list flow runs
+- get environment details
+- list all billing policies
+- create a billing policy
+- create a new billing policy linking azure subscription
+- check the installation status of an application package
 - no-code
 - list packages
-- create billing policy
-- business applications
-- list all billing policies
+- list power automate flow runs by workflow id
+- delete a power platform environment
 - get billing policy
-- billing policy management
-- list application packages for an environment
-- check the installation status of an application package
-- list all environments
-- list all power platform environments in the tenant
-- microsoft
-- power platform
-- governance
-- list flow runs
-- update billing policy
+- get details for a specific billing policy
 - copilot studio
-- power pages
 - flow run monitoring
-- low-code
-- list billing policies for the tenant
-- delete an environment
-- create a billing policy
+- list all environments
+- application package management
+- update an existing billing policy
+- list application packages for an environment
+- list tenant packages
 - single environment operations
+- administration
+- install an application package in an environment
+- install application package
+- create billing policy
+- update billing policy
+- low-code
+- get environment
+- list all power platform environments in the tenant
+- delete environment
+- environment management
+- list installable application packages for the tenant
+- list billing policies
+- list billing policies for the tenant
+- governance
+- dataverse
+- power platform
+- list environments
+- get details for a specific power platform environment
+- business applications
+- get install status
 slug: platform-administration
+source_filename: platform-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Power Platform Administration\"\n  description: \"Unified workflow for Power Platform administrators to manage environments, deploy applications, monitor flow runs, and govern licensing across the tenant.\"\n  tags:\n    - Microsoft\n    - Power Platform\n    - Administration\n    - Governance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      POWER_PLATFORM_BEARER_TOKEN: POWER_PLATFORM_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: power-platform-api\n      location: ./shared/power-platform-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: power-platform-admin-api\n      description: \"Unified REST API for Power Platform administration.\"\n      resources:\n        - path: /v1/environments\n          name: environments\n          description: \"Environment management\"\n          operations:\n            - method: GET\n          \
   \    name: list-environments\n              description: \"List all environments\"\n              call: \"power-platform-api.list-environments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}\n          name: environment-detail\n          description: \"Single environment operations\"\n          operations:\n            - method: GET\n              name: get-environment\n              description: \"Get environment details\"\n              call: \"power-platform-api.get-environment\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-environment\n              description: \"Delete an environment\"\n              call: \"power-platform-api.delete-environment\"\n              with:\n                environmentId:\
   \ \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}/packages\n          name: application-packages\n          description: \"Application package management\"\n          operations:\n            - method: GET\n              name: list-packages\n              description: \"List application packages for an environment\"\n              call: \"power-platform-api.get-environment-application-packages\"\n              with:\n                environmentId: \"rest.environmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/environments/{environmentId}/flow-runs\n          name: flow-runs\n          description: \"Flow run monitoring\"\n          operations:\n            - method: GET\n              name: list-flow-runs\n              description: \"List flow runs for an environment\"\n           \

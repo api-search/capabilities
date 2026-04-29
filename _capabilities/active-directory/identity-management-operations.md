@@ -1,4 +1,23 @@
 ---
+api_specs:
+- filename: active-directory-users-openapi.yaml
+  format: yaml
+  label: active-directory-users
+  slug: active-directory-users
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/active-directory/refs/heads/main/openapi/active-directory-users-openapi.yaml
+- filename: active-directory-groups-openapi.yaml
+  format: yaml
+  label: active-directory-groups
+  slug: active-directory-groups
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/active-directory/refs/heads/main/openapi/active-directory-groups-openapi.yaml
+- filename: active-directory-applications-openapi.yaml
+  format: yaml
+  label: active-directory-applications
+  slug: active-directory-applications
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/active-directory/refs/heads/main/openapi/active-directory-applications-openapi.yaml
 categories:
 - identity-access
 consumed_apis:
@@ -53,59 +72,61 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- create a new user account in microsoft entra id with required profile and password settings
-- list service principals in the microsoft entra tenant
-- conditional access policy automation for zero-trust enforcement
-- active directory
-- zero trust
-- group member management
-- service principals
-- get details about a specific microsoft entra user by object id or userprincipalname
-- registered and joined device management for compliant device access policies
-- signed-in user profile
-- individual group operations
-- Identity Engineer
-- list group members
-- unified user, group, and application management for microsoft entra id
-- enterprise it admin managing user accounts, groups, device policies, and access management
-- periodic access reviews and identity risk remediation
-- get details about a specific microsoft entra application registration
-- group management
-- get group
-- authorization
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- Security Analyst
-- get user
-- application registrations
-- list microsoft entra id groups — security groups and microsoft 365 groups
-- group-based access control and app role assignment for resource permissions
-- list service principals
-- list groups
 - user management
-- get details about a specific microsoft entra group including type and membership settings
-- create user
-- authentication
-- IT Administrator
-- get signed-in user profile
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- list users
+- get details about a specific microsoft entra user by object id or userprincipalname
+- application registrations
 - list direct members of a microsoft entra group
-- get application
-- get me
-- list applications
-- individual user operations
-- user lifecycle management
-- microsoft entra
-- directory services
-- list application registrations in the microsoft entra tenant
+- get user
+- IT Administrator
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- registered and joined device management for compliant device access policies
+- periodic access reviews and identity risk remediation
+- signed-in user profile
+- get details about a specific microsoft entra application registration
+- authorization
+- list group members
 - application registration and service principal lifecycle for zero-trust app governance
-- create group
-- identity management
-- get the signed-in user's microsoft entra profile
+- individual group operations
+- list service principals in the microsoft entra tenant
+- list groups
+- service principals
+- get me
+- enterprise it admin managing user accounts, groups, device policies, and access management
+- list service principals
+- authentication
+- Security Analyst
+- user lifecycle management
+- directory services
+- list users
+- get group
+- create user
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- get details about a specific microsoft entra group including type and membership settings
 - security professional monitoring identity risks, conditional access policies, and audit logs
-- get user by id or upn
+- zero trust
+- Identity Engineer
+- get the signed-in user's microsoft entra profile
+- individual user operations
+- group-based access control and app role assignment for resource permissions
+- conditional access policy automation for zero-trust enforcement
+- list application registrations in the microsoft entra tenant
+- unified user, group, and application management for microsoft entra id
+- microsoft entra
+- list microsoft entra id groups — security groups and microsoft 365 groups
+- get signed-in user profile
 - create, update, and deactivate user accounts throughout the employee/guest lifecycle
+- identity management
+- create a new user account in microsoft entra id with required profile and password settings
+- active directory
+- group member management
+- get user by id or upn
+- list applications
+- get application
+- group management
+- create group
 slug: identity-management-operations
+source_filename: identity-management-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Microsoft Active Directory Identity Management Operations\n  description: >-\n    Unified workflow for managing Microsoft Entra ID (Active Directory) identity and access\n    operations including user lifecycle management, group management, and application\n    registration. Used by IT administrators, identity engineers, and security teams to\n    automate identity governance and access management.\n  tags:\n    - Active Directory\n    - Identity Management\n    - Microsoft Entra\n    - User Management\n    - Zero Trust\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AD_ACCESS_TOKEN: AD_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: active-directory-users\n      location: ./shared/active-directory-users.yaml\n    - import: active-directory-groups\n      location: ./shared/active-directory-groups.yaml\n    - import: active-directory-applications\n      location: ./shared/active-directory-applications.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: active-directory-identity-api\n      description: Unified REST API for Microsoft Active Directory identity management operations.\n      resources:\n        - path: /v1/users\n          name: users\n          description: User lifecycle management\n          operations:\n            - method: GET\n              name: list-users\n              description: List users\n              call: \"active-directory-users.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: Create user\n              call: \"active-directory-users.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{userId}\n          name: user\n          description: Individual user operations\n          operations:\n          \
   \  - method: GET\n              name: get-user\n              description: Get user by ID or UPN\n              call: \"active-directory-users.get-user\"\n              with:\n                userId: \"rest.userId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/me\n          name: me\n          description: Signed-in user profile\n          operations:\n            - method: GET\n              name: get-me\n              description: Get signed-in user profile\n              call: \"active-directory-users.get-me\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: Group management\n          operations:\n            - method: GET\n              name: list-groups\n              description: List groups\n              call: \"active-directory-groups.list-groups\"\n              outputParameters:\n\

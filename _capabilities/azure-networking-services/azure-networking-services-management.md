@@ -14,25 +14,27 @@ personas: []
 provider_name: Azure Networking Services
 provider_slug: azure-networking-services
 search_terms:
-- list virtual networks
+- list subnet resources
+- list network interfaces
 - resource management
 - list virtualnetwork resources
-- list loadbalancer resources
-- list networkinterface resources
-- microsoft
-- networking
-- cloud
-- list
-- infrastructure
-- management
+- list virtual networks
 - azure resource management
-- list all resources
-- azure
-- list subnet resources
-- list subnets
-- list network interfaces
+- microsoft
 - list load balancers
+- cloud
+- list networkinterface resources
+- list loadbalancer resources
+- list subnets
+- infrastructure
+- list all resources
+- networking
+- management
+- azure
+- list
 slug: azure-networking-services-management
+source_filename: azure-networking-services-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Networking Services Management\"\n  description: \"Workflow capability for managing Azure Networking Services resources. Used by cloud engineers and DevOps teams.\"\n  tags:\n    - Azure\n    - Cloud\n    - Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID\n      AZURE_ACCESS_TOKEN: AZURE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: azure-networking-services\n      location: ./shared/azure-networking-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8088\n      namespace: azure-networking-services-management-api\n      description: \"Unified REST API for Azure Networking Services management.\"\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: \"Resource management\"\n          operations:\n            - method: GET\n              name: list\n   \
   \           description: \"List all resources\"\n              call: \"azure-networking-services.list-virtual-networks\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9098\n      namespace: azure-networking-services-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Azure Networking Services management.\"\n      tools:\n        - name: list-virtual-networks\n          description: \"List VirtualNetwork resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-networking-services.list-virtual-networks\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-subnets\n          description: \"List Subnet resources\"\
   \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-networking-services.list-subnets\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-load-balancers\n          description: \"List LoadBalancer resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-networking-services.list-load-balancers\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-network-interfaces\n          description: \"List NetworkInterface resources\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"azure-networking-services.list-network-interfaces\"\n          with:\n            subscriptionId: \"tools.subscriptionId\"\

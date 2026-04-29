@@ -57,73 +57,75 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- cdc
-- list replicats
-- extract process management across core and big data deployments
-- distribution path management
-- list extracts
-- core create extract
-- list credential store domains
-- available big data target types
-- create a new replicat process
-- get details of a specific extract process
-- get configuration of a specific data stream
-- delete an extract process
-- create extract
-- core list extracts
-- list available big data target types
-- list all big data replicat processes
-- delete extract
-- data replication
-- list credential domains
-- list all data streams
-- list all configured data streams
-- issue a command (start, stop, kill) to an extract
 - core issue extract command
-- data integration
-- big data replicat processes
-- get service health
-- service health
-- core get extract
-- create a new extract process
+- get data stream
+- get a big data replicat process
 - list all extract processes from the core goldengate deployment
-- list data distribution paths
-- data synchronization
-- oracle goldengate
-- list data target types
+- execute a ggsci-style goldengate command
+- individual extract operations
 - get extract
-- credential store management
-- data stream management
-- enterprise
-- list all extract processes
-- list all replicat processes
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- bigdata list replicats
-- replicat process management
+- real-time replication
+- get details of a specific extract process
 - get details of a specific replicat process
-- bigdata get replicat
 - create data stream
+- available big data target types
+- list big data replicats
+- list data target types
+- core create extract
+- create a new extract process
+- big data replicat processes
+- core get replicat
+- distribution path management
+- list data distribution paths
+- get configuration of a specific data stream
+- core create replicat
+- data integration
+- delete extract
+- issue a command to a replicat process
 - list data streams
+- create extract
+- core get extract
+- list all configured data streams
+- list replicats
+- core list replicats
+- list extracts
+- create a new replicat process
+- replicat process management
+- data synchronization
+- core list extracts
+- list credential store domains
+- get a specific extract process
+- list all data streams
+- oracle goldengate
+- list distribution paths
+- data stream management
+- delete an extract process
+- service health
+- get service health
+- list all extract processes
+- enterprise
+- get performance metrics for all running processes
+- core issue replicat command
+- data replication
 - execute command
+- list all big data replicat processes
+- extract process management across core and big data deployments
+- credential store management
+- issue a command (start, stop, kill) to an extract
+- bigdata get replicat
+- list available big data target types
 - list process metrics
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- list credential domains
+- bigdata list replicats
+- list all replicat processes
+- create a new data stream for downstream distribution
+- cdc
 - database
 - get service health details
-- issue a command to a replicat process
-- list distribution paths
-- individual extract operations
-- core create replicat
-- get performance metrics for all running processes
-- get data stream
-- create a new data stream for downstream distribution
-- execute a ggsci-style goldengate command
-- get a specific extract process
-- list big data replicats
-- real-time replication
-- core issue replicat command
-- get a big data replicat process
-- core get replicat
-- core list replicats
 slug: data-replication
+source_filename: data-replication.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Data Replication\"\n  description: \"Unified workflow for managing real-time data replication across on-premises and cloud environments. Combines the core GoldenGate REST API, Big Data API, and Data Streams API for data integration engineers managing CDC pipelines, extract/replicat processes, and data distribution.\"\n  tags:\n    - Oracle GoldenGate\n    - Data Replication\n    - CDC\n    - Data Integration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OGG_USERNAME: OGG_USERNAME\n      OGG_PASSWORD: OGG_PASSWORD\n      OGG_BD_USERNAME: OGG_BD_USERNAME\n      OGG_BD_PASSWORD: OGG_BD_PASSWORD\n      OGG_DS_USERNAME: OGG_DS_USERNAME\n      OGG_DS_PASSWORD: OGG_DS_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-rest\n      location: ./shared/goldengate-rest.yaml\n    - import: goldengate-big-data\n      location: ./shared/goldengate-big-data.yaml\n\
   \    - import: goldengate-data-streams\n      location: ./shared/goldengate-data-streams.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: data-replication-api\n      description: \"Unified REST API for Oracle GoldenGate data replication workflows.\"\n      resources:\n        - path: /v1/extracts\n          name: extracts\n          description: \"Extract process management across core and big data deployments\"\n          operations:\n            - method: GET\n              name: list-extracts\n              description: \"List all Extract processes\"\n              call: \"goldengate-rest.list-extracts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-extract\n              description: \"Create a new Extract process\"\n              call: \"goldengate-rest.create-extract\"\n              with:\n                extract: \"rest.extract\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extracts/{extract}\n          name: extract-detail\n          description: \"Individual extract operations\"\n          operations:\n            - method: GET\n              name: get-extract\n              description: \"Get a specific Extract process\"\n              call: \"goldengate-rest.get-extract\"\n              with:\n                extract: \"rest.extract\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-extract\n              description: \"Delete an Extract process\"\n              call: \"goldengate-rest.delete-extract\"\n              with:\n                extract: \"rest.extract\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/replicats\n          name: replicats\n          description: \"Replicat process\

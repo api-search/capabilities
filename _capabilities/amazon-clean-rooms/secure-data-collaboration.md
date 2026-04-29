@@ -47,49 +47,51 @@ personas: []
 provider_name: Amazon Clean Rooms
 provider_slug: amazon-clean-rooms
 search_terms:
-- clean rooms
-- aws
-- list configured tables
-- create a new secure data collaboration workspace in aws clean rooms
-- get collaboration
-- analytics
-- create a configured table from an aws glue table with defined analysis rules for collaboration use
-- create a configured table
-- get details of a specific clean rooms collaboration by id
-- manage configured tables
-- get collaboration details
-- join a clean rooms collaboration as a member
-- list memberships
-- execute and list protected queries
-- manage collaboration memberships
-- create collaboration
-- privacy
-- list collaborations
-- manage clean rooms collaboration workspaces
-- list all clean rooms memberships in the caller's account
-- Marketing Analyst
 - join a collaboration
-- amazon web services
-- create membership
-- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
-- list all protected queries run within a collaboration membership
-- create configured table
 - start protected query
-- create a new collaboration
 - list all collaborations
-- analysts running collaborative queries across partner datasets without data exposure
-- marketing
-- privacy-preserving multi-party data analytics
-- marketing teams measuring campaign effectiveness across publisher and advertiser data
-- list all clean rooms collaborations the caller participates in
-- Data Analyst
-- run a protected query
-- end-to-end workflow for creating and operating secure multi-party data clean rooms
-- list configured tables available for use in collaborations
+- privacy
 - list protected queries
-- data collaboration
 - get or delete a specific collaboration
+- marketing teams measuring campaign effectiveness across publisher and advertiser data
+- list configured tables
+- clean rooms
+- create collaboration
+- join a clean rooms collaboration as a member
+- get collaboration
+- list all clean rooms memberships in the caller's account
+- data collaboration
+- aws
+- list configured tables available for use in collaborations
+- Data Analyst
+- Marketing Analyst
+- manage clean rooms collaboration workspaces
+- list memberships
+- list all clean rooms collaborations the caller participates in
+- manage collaboration memberships
+- get details of a specific clean rooms collaboration by id
+- list all protected queries run within a collaboration membership
+- get collaboration details
+- amazon web services
+- manage configured tables
+- analytics
+- create a configured table
+- end-to-end workflow for creating and operating secure multi-party data clean rooms
+- create a new secure data collaboration workspace in aws clean rooms
+- create a new collaboration
+- run a protected query
+- privacy-preserving multi-party data analytics
+- create membership
+- create configured table
+- execute a protected sql query within a clean rooms collaboration without exposing partner raw data
+- list collaborations
+- create a configured table from an aws glue table with defined analysis rules for collaboration use
+- marketing
+- execute and list protected queries
+- analysts running collaborative queries across partner datasets without data exposure
 slug: secure-data-collaboration
+source_filename: secure-data-collaboration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Clean Rooms Secure Data Collaboration\"\n  description: \"Workflow for establishing and operating secure multi-party data clean rooms on AWS, enabling data analysts and marketing teams to run collaborative analytics without sharing raw data.\"\n  tags:\n    - Amazon Web Services\n    - Clean Rooms\n    - Data Collaboration\n    - Privacy\n    - Analytics\n    - Marketing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: cleanrooms\n      location: ./shared/clean-rooms.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: secure-collaboration-api\n      description: \"Unified REST API for secure multi-party data collaboration using AWS Clean Rooms.\"\n      resources:\n        - path: /v1/collaborations\n\
   \          name: collaborations\n          description: \"Manage Clean Rooms collaboration workspaces\"\n          operations:\n            - method: GET\n              name: list-collaborations\n              description: \"List all collaborations\"\n              call: \"cleanrooms.list-collaborations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-collaboration\n              description: \"Create a new collaboration\"\n              call: \"cleanrooms.create-collaboration\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/collaborations/{collaborationId}\n          name: collaboration\n          description: \"Get or delete a specific collaboration\"\n          operations:\n            - method: GET\n              name: get-collaboration\n              description: \"Get collaboration details\"\n    \
   \          call: \"cleanrooms.get-collaboration\"\n              with:\n                collaborationIdentifier: \"rest.collaborationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/memberships\n          name: memberships\n          description: \"Manage collaboration memberships\"\n          operations:\n            - method: GET\n              name: list-memberships\n              description: \"List memberships\"\n              call: \"cleanrooms.list-memberships\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-membership\n              description: \"Join a collaboration\"\n              call: \"cleanrooms.create-membership\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/memberships/{membershipId}/queries\n          name:\

@@ -48,40 +48,42 @@ provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
 - retrieve and delete media files.
-- creates a qr code that customers can scan to start a conversation.
-- whatsapp
+- deletes a qr code.
+- update qr code
+- creates a qr code for starting conversations.
+- customer engagement
 - media
-- retrieves a specific qr code.
+- messaging
+- upload media files to whatsapp servers.
+- list qr codes
 - send messages of all types to whatsapp users.
-- get media url
-- qr codes for starting customer conversations.
-- retrieves a temporary download url for a media file. url expires after 5 minutes.
-- send message
-- delete qr code
+- uploads media to whatsapp servers. returns a media id for use when sending media messages.
+- deletes a media file from whatsapp servers.
 - sends a message to a whatsapp user.
 - sends a message to a whatsapp user. supports text, image, video, audio, document, sticker, location, contacts, interactive, template, and reaction message types.
-- list qr codes
-- lists all qr codes for a phone number.
-- updates a qr code.
-- individual qr code management.
-- update qr code
-- get qr code
-- qr codes
 - create qr code
-- uploads media to whatsapp servers. returns a media id for use when sending media messages.
-- upload media files to whatsapp servers.
-- updates the prefilled message for a qr code.
-- deletes a media file from whatsapp servers.
-- customer engagement
-- retrieves a temporary download url for media.
-- creates a qr code for starting conversations.
-- deletes a media file.
-- deletes a qr code.
-- upload media
 - delete media
+- retrieves a temporary download url for a media file. url expires after 5 minutes.
+- whatsapp
+- qr codes
+- deletes a media file.
+- qr codes for starting customer conversations.
+- retrieves a temporary download url for media.
+- individual qr code management.
+- retrieves a specific qr code.
+- get media url
+- delete qr code
+- creates a qr code that customers can scan to start a conversation.
+- updates a qr code.
 - uploads media to whatsapp servers.
-- messaging
+- updates the prefilled message for a qr code.
+- upload media
+- lists all qr codes for a phone number.
+- send message
+- get qr code
 slug: messaging-and-media
+source_filename: messaging-and-media.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WhatsApp Messaging And Media\"\n  description: \"Unified workflow for sending messages, managing media files, and creating QR codes for customer conversations. Combines WhatsApp Cloud API messaging, media management, and QR code capabilities used by customer engagement teams and chatbot developers.\"\n  tags:\n    - WhatsApp\n    - Messaging\n    - Media\n    - QR Codes\n    - Customer Engagement\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WHATSAPP_ACCESS_TOKEN: WHATSAPP_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: whatsapp-cloud\n      location: ./shared/cloud-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: whatsapp-messaging-api\n      description: \"Unified REST API for WhatsApp messaging, media management, and QR codes.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Send messages\
   \ of all types to WhatsApp users.\"\n          operations:\n            - method: POST\n              name: send-message\n              description: \"Sends a message to a WhatsApp user.\"\n              call: \"whatsapp-cloud.send-message\"\n              with:\n                phone_number_id: \"rest.phone_number_id\"\n                messaging_product: \"rest.messaging_product\"\n                to: \"rest.to\"\n                type: \"rest.type\"\n                text: \"rest.text\"\n                template: \"rest.template\"\n                interactive: \"rest.interactive\"\n                image: \"rest.image\"\n                video: \"rest.video\"\n                audio: \"rest.audio\"\n                document: \"rest.document\"\n                sticker: \"rest.sticker\"\n                location: \"rest.location\"\n                contacts: \"rest.contacts\"\n                reaction: \"rest.reaction\"\n                context: \"rest.context\"\n                status: \"rest.status\"\
   \n                message_id: \"rest.message_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/media\n          name: media-upload\n          description: \"Upload media files to WhatsApp servers.\"\n          operations:\n            - method: POST\n              name: upload-media\n              description: \"Uploads media to WhatsApp servers.\"\n              call: \"whatsapp-cloud.upload-media\"\n              with:\n                phone_number_id: \"rest.phone_number_id\"\n                file: \"rest.file\"\n                type: \"rest.type\"\n                messaging_product: \"rest.messaging_product\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/media/{media_id}\n          name: media\n          description: \"Retrieve and delete media files.\"\n          operations:\n            - method: GET\n              name: get-media-url\n\

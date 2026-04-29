@@ -15,35 +15,37 @@ personas: []
 provider_name: Amazon IoT Greengrass
 provider_slug: amazon-iot-greengrass
 search_terms:
-- amazon iot greengrass resources
-- manages amazon iot greengrass resources and operations
-- aws
-- real-time processing
-- device management
-- create deployment
-- amazon iot greengrass create component version
-- amazon iot greengrass list core devices
-- amazon iot greengrass create deployment
-- lambda
-- amazon iot greengrass get core device
 - machine learning
-- amazon iot greengrass list components
-- create component version
-- amazon iot greengrass list component versions
-- iot
+- edge computing
+- list components
 - list core devices
 - amazon iot greengrass list deployments
+- amazon iot greengrass list core devices
+- amazon iot greengrass get core device
 - amazon iot greengrass describe component
-- get core device
-- list deployments
-- Edge Computing Engineer
-- edge computing
+- real-time processing
+- create component version
 - describe component
+- lambda
+- list deployments
+- iot
+- amazon iot greengrass resources
+- aws
 - list component versions
+- create deployment
 - extend aws compute and services to edge devices.
+- device management
+- amazon iot greengrass list component versions
+- amazon iot greengrass list components
 - IoT Developer
-- list components
+- Edge Computing Engineer
+- amazon iot greengrass create deployment
+- get core device
+- amazon iot greengrass create component version
+- manages amazon iot greengrass resources and operations
 slug: edge-device-management
+source_filename: edge-device-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Greengrass - Edge Device Management\n  description: Unified capability for IoT Developer, Edge Computing Engineer to manage extend aws compute and services to edge devices operations.\n  tags:\n    - IoT\n    - AWS\n    - Edge Computing\n    - Lambda\n    - Device Management\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-greengrass\n      location: ./shared/iot-greengrass.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: edge-device-management-api\n      description: Unified REST API for edge device management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT Greengrass resources\n          operations:\n            - method: GET\n              name: list-components\n\
   \              description: List Components\n              call: \"iot-greengrass.list-components\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: edge-device-management-mcp\n      transport: http\n      description: MCP server for AI-assisted edge device management.\n      tools:\n        - name: list-components\n          description: Amazon IoT Greengrass List Components\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-greengrass.list-components\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-component-version\n          description: Amazon IoT Greengrass Create Component Version\n          hints:\n            readOnly: false\n            \n          call: \"iot-greengrass.create-component-version\"\n          outputParameters:\n            - type: object\n      \
   \        mapping: \"$.\"\n\n        - name: list-core-devices\n          description: Amazon IoT Greengrass List Core Devices\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-greengrass.list-core-devices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-deployments\n          description: Amazon IoT Greengrass List Deployments\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-greengrass.list-deployments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-deployment\n          description: Amazon IoT Greengrass Create Deployment\n          hints:\n            readOnly: false\n            \n          call: \"iot-greengrass.create-deployment\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-component\n\

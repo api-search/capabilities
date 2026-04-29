@@ -37,43 +37,45 @@ provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
 - get server health
-- security user management
-- security
-- list known security vulnerabilities
-- list fixes
-- get overall health status
-- vulnerability management
+- middleware
 - cloud native
+- ibm websphere
+- list compliance reports
+- list managed servers
+- initiate vulnerability resolution
+- compliance
+- fix and patch management
+- vulnerability tracking and remediation
+- list fixes
+- get vulnerability
+- get overall environment health
+- enterprise java
+- list available fixes
+- j2ee
 - resolve vulnerability
+- list available security fixes
+- list users
+- list servers managed by websphere automation
+- vulnerability management
 - get overall health
-- list known vulnerabilities
-- list vulnerabilities
+- get individual server health
+- security
+- get vulnerability details
+- health monitoring
+- microservices
+- compliance reporting
+- list security users
+- get overall health status
+- security user management
+- apply fix
 - apply a fix to managed servers
 - application server
-- get individual server health
-- enterprise java
-- fix and patch management
-- list available security fixes
-- compliance reporting
-- initiate vulnerability resolution
-- list managed servers
-- apply fix
-- ibm websphere
-- list servers managed by websphere automation
-- microservices
-- vulnerability tracking and remediation
-- list available fixes
-- list compliance reports
-- health monitoring
-- list users
-- compliance
-- j2ee
-- middleware
-- get overall environment health
-- list security users
-- get vulnerability
-- get vulnerability details
+- list vulnerabilities
+- list known vulnerabilities
+- list known security vulnerabilities
 slug: security-and-compliance
+source_filename: security-and-compliance.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Security and Compliance\"\n  description: \"Workflow for security vulnerability management, automated patching, compliance reporting, and health monitoring across WebSphere environments for security engineers and compliance teams.\"\n  tags:\n    - IBM WebSphere\n    - Security\n    - Compliance\n    - Vulnerability Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_AUTOMATION_TOKEN: WEBSPHERE_AUTOMATION_TOKEN\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n\ncapability:\n  consumes:\n    - import: automation\n      location: ./shared/automation.yaml\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: security-compliance-api\n      description: \"Unified REST API for WebSphere security and compliance operations.\"\n   \
   \   resources:\n        - path: /v1/vulnerabilities\n          name: vulnerabilities\n          description: \"Vulnerability tracking and remediation\"\n          operations:\n            - method: GET\n              name: list-vulnerabilities\n              description: \"List known vulnerabilities\"\n              call: \"automation.list-vulnerabilities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-vulnerability\n              description: \"Get vulnerability details\"\n              call: \"automation.get-vulnerability\"\n              with:\n                vulnerabilityId: \"rest.vulnerabilityId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fixes\n          name: fixes\n          description: \"Fix and patch management\"\n          operations:\n            - method: GET\n              name: list-fixes\n\
   \              description: \"List available fixes\"\n              call: \"automation.list-fixes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/compliance\n          name: compliance\n          description: \"Compliance reporting\"\n          operations:\n            - method: GET\n              name: list-compliance-reports\n              description: \"List compliance reports\"\n              call: \"automation.list-compliance-reports\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/health\n          name: health\n          description: \"Health monitoring\"\n          operations:\n            - method: GET\n              name: get-overall-health\n              description: \"Get overall health status\"\n              call: \"automation.get-overall-health\"\n              outputParameters:\n                - type: object\n            \

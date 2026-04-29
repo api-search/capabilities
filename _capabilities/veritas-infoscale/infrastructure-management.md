@@ -34,66 +34,68 @@ personas: []
 provider_name: Veritas InfoScale
 provider_slug: veritas-infoscale
 search_terms:
-- create volume
-- list all active cluster alerts
-- Storage Administrator
-- veritas infoscale
+- alert management
 - unified infrastructure management workflow for managing clusters, service groups, storage volumes, and alerts.
-- resize volume
+- data management
 - disk groups, volumes, and snapshot operations
 - disaster recovery
-- acknowledge alert
-- manages cluster configurations, service groups, and high availability operations.
-- high availability
-- monitors cluster health, alerts, and performs failover operations.
-- take a service group offline
-- list systems
-- get cluster details
-- list all cluster nodes
-- get disk group details
-- get service group
-- clustering
-- acknowledge a cluster alert
-- list volumes
-- list volumes in a disk group
-- manages disk groups, volumes, snapshots, and storage capacity.
-- offline service group
-- single cluster operations
-- Infrastructure Engineer
-- service group management
-- create snapshot
-- get service group details
-- list all vxvm disk groups
-- bring a service group online on a system
-- create a new storage volume
-- list all disk groups
-- list disk groups
-- create a volume snapshot
-- cluster lifecycle, service groups, and node management
-- list service groups in a cluster
-- alert management
-- switch service group
-- alert management and health monitoring
-- data management
-- virtualization
-- disk group management
-- list all service groups in a cluster
-- get disk group
-- list clusters
-- resize a storage volume
-- list all clusters
-- list service groups
-- list all infoscale clusters
-- online service group
-- list alerts
-- list all active alerts
 - get details of a specific cluster
-- volume management
-- switch a service group to another system
-- get cluster
+- list all service groups in a cluster
+- list service groups in a cluster
+- take a service group offline
+- get cluster details
+- get disk group
+- list all vxvm disk groups
+- list service groups
+- get service group
 - cluster lifecycle management
+- list systems
+- Infrastructure Engineer
+- get cluster
+- switch a service group to another system
+- alert management and health monitoring
+- bring a service group online on a system
+- disk group management
+- list disk groups
+- virtualization
+- list all infoscale clusters
+- resize a storage volume
+- cluster lifecycle, service groups, and node management
 - storage management
+- volume management
+- acknowledge alert
+- get service group details
+- get disk group details
+- list all clusters
+- resize volume
+- list volumes
+- online service group
+- offline service group
+- monitors cluster health, alerts, and performs failover operations.
+- list all active alerts
+- list all cluster nodes
+- manages disk groups, volumes, snapshots, and storage capacity.
+- list clusters
+- create a new storage volume
+- switch service group
+- list volumes in a disk group
+- manages cluster configurations, service groups, and high availability operations.
+- single cluster operations
+- service group management
+- veritas infoscale
+- list all disk groups
+- clustering
+- create volume
+- list alerts
+- acknowledge a cluster alert
+- create snapshot
+- high availability
+- Storage Administrator
+- list all active cluster alerts
+- create a volume snapshot
 slug: infrastructure-management
+source_filename: infrastructure-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Veritas InfoScale Infrastructure Management\"\n  description: \"Unified infrastructure management workflow combining the Veritas InfoScale REST API for managing clusters, service groups, storage volumes, disk groups, and alerts. Used by infrastructure engineers, storage administrators, and site reliability engineers.\"\n  tags:\n    - Veritas InfoScale\n    - Clustering\n    - High Availability\n    - Storage Management\n    - Disaster Recovery\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INFOSCALE_API_TOKEN: INFOSCALE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: infoscale-rest\n      location: ./shared/infoscale-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: infrastructure-management-api\n      description: \"Unified REST API for Veritas InfoScale infrastructure management workflows.\"\n      resources:\n        - path: /v1/clusters\n\
   \          name: clusters\n          description: \"Cluster lifecycle management\"\n          operations:\n            - method: GET\n              name: list-clusters\n              description: \"List all clusters\"\n              call: \"infoscale-rest.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters/{clusterId}\n          name: cluster-detail\n          description: \"Single cluster operations\"\n          operations:\n            - method: GET\n              name: get-cluster\n              description: \"Get cluster details\"\n              call: \"infoscale-rest.get-cluster\"\n              with:\n                clusterId: \"rest.clusterId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters/{clusterId}/servicegroups\n          name: service-groups\n          description: \"Service group management\"\n  \
   \        operations:\n            - method: GET\n              name: list-service-groups\n              description: \"List service groups in a cluster\"\n              call: \"infoscale-rest.list-service-groups\"\n              with:\n                clusterId: \"rest.clusterId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diskgroups\n          name: disk-groups\n          description: \"Disk group management\"\n          operations:\n            - method: GET\n              name: list-disk-groups\n              description: \"List all disk groups\"\n              call: \"infoscale-rest.list-disk-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diskgroups/{diskGroupName}/volumes\n          name: volumes\n          description: \"Volume management\"\n          operations:\n            - method: GET\n              name: list-volumes\n\

@@ -75,82 +75,84 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- list stacks
-- list resources by type
-- create a cloudformation stack
-- aws
-- provisioning
-- describe stack
-- get stack events
-- list resources in a stack
-- validate a template
-- update a stack
-- change set operations
-- describe a change set
-- update a resource
-- get resource request status
-- stack events
-- describe stacks
-- delete a cloud resource via cloud control
-- list stack sets
-- describe cloudformation stacks
-- describe a stack
-- get a resource
-- execute a change set
-- stack drift detection
-- update stack
 - cloudformation
-- delete resource
-- list resources
-- list stack resources
-- validate a cloudformation template
-- iac
-- update resource
-- detect drift on a stack
-- cancel resource request
 - single stack operations
-- validate template
-- get template
-- cloudformation stack operations
-- create stack
-- describe stack events
-- execute change set
 - stack resources
-- delete a resource
-- detect stack drift
-- read a cloud resource via cloud control
-- create a cloud resource via cloud control
-- list stack exports
-- cloud resources
-- list registry extension types
-- create a change set for a stack
-- infrastructure as code
-- automation
-- get the template for a stack
-- single change set
-- template validation
-- create a change set
-- describe change set
-- delete a stack
-- detect drift
-- cloud control resource operations
-- get resource
-- update a cloud resource via cloud control
-- cancel an in-progress resource operation
-- delete stack
-- create change set
-- get status of a resource operation
-- list resources of a specified type
-- create a stack
-- create resource
-- stack management
-- single resource operations
-- cloud control
+- change set operations
 - create a cloud resource
-- list exports
-- list all stacks
+- list stack sets
 - list types
+- create a change set for a stack
+- stack management
+- describe stack
+- update a stack
+- stack drift detection
+- get the template for a stack
+- list registry extension types
+- cloud resources
+- list stacks
+- list stack exports
+- list stack resources
+- delete resource
+- list resources in a stack
+- validate template
+- detect drift
+- create stack
+- validate a cloudformation template
+- automation
+- update stack
+- update a cloud resource via cloud control
+- get resource
+- get resource request status
+- create a cloudformation stack
+- create a cloud resource via cloud control
+- cancel resource request
+- delete a resource
+- create a change set
+- list exports
+- create change set
+- describe a change set
+- validate a template
+- update resource
+- aws
+- single resource operations
+- provisioning
+- describe cloudformation stacks
+- create resource
+- get stack events
+- describe stacks
+- describe a stack
+- iac
+- infrastructure as code
+- execute a change set
+- update a resource
+- cloud control resource operations
+- execute change set
+- cloud control
+- describe change set
+- cancel an in-progress resource operation
+- cloudformation stack operations
+- create a stack
+- template validation
+- list all stacks
+- detect stack drift
+- list resources of a specified type
+- single change set
+- list resources
+- delete stack
+- describe stack events
+- stack events
+- delete a cloud resource via cloud control
+- get status of a resource operation
+- get a resource
+- read a cloud resource via cloud control
+- delete a stack
+- get template
+- list resources by type
+- detect drift on a stack
 slug: infrastructure-provisioning
+source_filename: infrastructure-provisioning.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS Infrastructure Provisioning\"\n  description: \"Unified workflow for AWS infrastructure provisioning combining CloudFormation stack management with Cloud Control API resource operations. Used by cloud engineers and platform teams to define, deploy, and manage infrastructure as code.\"\n  tags:\n    - AWS\n    - CloudFormation\n    - Cloud Control\n    - Infrastructure As Code\n    - Provisioning\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: cloudformation\n      location: ./shared/cloudformation.yaml\n    - import: cloud-control\n      location: ./shared/cloud-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: infra-provisioning-api\n      description: \"Unified REST API for AWS infrastructure provisioning combining\
   \ CloudFormation and Cloud Control.\"\n      resources:\n        - path: /v1/stacks\n          name: stacks\n          description: \"CloudFormation stack operations\"\n          operations:\n            - method: GET\n              name: list-stacks\n              description: \"List all stacks\"\n              call: \"cloudformation.list-stacks\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-stack\n              description: \"Create a stack\"\n              call: \"cloudformation.create-stack\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}\n          name: stack\n          description: \"Single stack operations\"\n          operations:\n            - method: GET\n              name: describe-stack\n              description: \"Describe a stack\"\n              call: \"cloudformation.describe-stacks\"\
   \n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-stack\n              description: \"Update a stack\"\n              call: \"cloudformation.update-stack\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-stack\n              description: \"Delete a stack\"\n              call: \"cloudformation.delete-stack\"\n              with:\n                StackName: \"rest.stackName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/stacks/{stackName}/events\n          name: stack-events\n          description: \"Stack events\"\n          operations:\n            - method: GET\n\

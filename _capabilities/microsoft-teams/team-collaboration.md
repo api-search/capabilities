@@ -43,54 +43,56 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- initiate a call.
-- list messages.
-- productivity
-- send channel message
-- create online meeting
-- create channel
-- channel management.
-- create a new channel.
-- team management.
-- chat
-- list members.
-- list all members of a team.
-- microsoft 365
-- microsoft teams
-- list joined teams.
-- create a channel.
-- create team
-- list channels
-- create a meeting.
-- it admins managing teams infrastructure and policies.
-- Team Lead
-- add a member to a team.
-- create a new team.
-- IT Administrator
-- communication
-- create an online meeting.
-- manage teams collaboration workflows.
-- send a message.
-- create a team.
-- Developer
-- send a message to a channel.
-- team leads managing channels, members, and communication.
-- messaging.
-- video conferencing
 - member management.
 - list all teams the user has joined.
-- list channels.
-- list messages from a channel.
-- meeting management.
-- list joined teams
-- create call
+- list channels
+- IT Administrator
 - developers building teams integrations and bots.
-- list team members
-- list channels in a team.
-- collaboration
+- manage teams collaboration workflows.
+- create online meeting
 - list channel messages
+- create a team.
+- team management.
+- team leads managing channels, members, and communication.
+- messaging.
+- create call
+- communication
 - add team member
+- initiate a call.
+- Developer
+- list channels in a team.
+- list members.
+- Team Lead
+- productivity
+- chat
+- list team members
+- list joined teams
+- channel management.
+- send a message to a channel.
+- it admins managing teams infrastructure and policies.
+- create a meeting.
+- list joined teams.
+- create team
+- list channels.
+- create an online meeting.
+- list all members of a team.
+- microsoft 365
+- list messages.
+- send channel message
+- send a message.
+- microsoft teams
+- create a new team.
+- create channel
+- video conferencing
+- list messages from a channel.
+- create a channel.
+- create a new channel.
+- collaboration
+- meeting management.
+- add a member to a team.
 slug: team-collaboration
+source_filename: team-collaboration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Teams Collaboration\"\n  description: \"Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings, and calls. Used by IT administrators, team leads, and developers building Teams integrations.\"\n  tags:\n    - Microsoft Teams\n    - Collaboration\n    - Communication\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: teams-graph\n      location: ./shared/teams-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: team-collaboration-api\n      description: \"Unified REST API for Teams collaboration workflows.\"\n      resources:\n        - path: /v1/teams\n          name: teams\n          description: \"Team management.\"\n          operations:\n            - method: GET\n              name: list-joined-teams\n\
   \              description: \"List joined teams.\"\n              call: \"teams-graph.list-joined-teams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-team\n              description: \"Create a team.\"\n              call: \"teams-graph.create-team\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/channels\n          name: channels\n          description: \"Channel management.\"\n          operations:\n            - method: GET\n              name: list-channels\n              description: \"List channels.\"\n              call: \"teams-graph.list-channels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-channel\n              description: \"Create a channel.\"\n              call: \"teams-graph.create-channel\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Messaging.\"\n          operations:\n            - method: GET\n              name: list-channel-messages\n              description: \"List messages.\"\n              call: \"teams-graph.list-channel-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-channel-message\n              description: \"Send a message.\"\n              call: \"teams-graph.send-channel-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/members\n          name: members\n          description: \"Member management.\"\n          operations:\n            - method: GET\n              name: list-team-members\n              description: \"List members.\"\

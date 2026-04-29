@@ -1,4 +1,59 @@
 ---
+api_specs:
+- filename: sqlapi.yaml
+  format: yaml
+  label: snowflake-sql
+  slug: snowflake-sql
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/sqlapi.yaml
+- filename: task.yaml
+  format: yaml
+  label: snowflake-task
+  slug: snowflake-task
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/task.yaml
+- filename: stream.yaml
+  format: yaml
+  label: snowflake-stream
+  slug: snowflake-stream
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/stream.yaml
+- filename: pipe.yaml
+  format: yaml
+  label: snowflake-pipe
+  slug: snowflake-pipe
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/pipe.yaml
+- filename: stage.yaml
+  format: yaml
+  label: snowflake-stage
+  slug: snowflake-stage
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/stage.yaml
+- filename: function.yaml
+  format: yaml
+  label: snowflake-function
+  slug: snowflake-function
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/function.yaml
+- filename: procedure.yaml
+  format: yaml
+  label: snowflake-procedure
+  slug: snowflake-procedure
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/procedure.yaml
+- filename: user-defined-function.yaml
+  format: yaml
+  label: snowflake-udf
+  slug: snowflake-udf
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/user-defined-function.yaml
+- filename: result.yaml
+  format: yaml
+  label: snowflake-result
+  slug: snowflake-result
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/result.yaml
 categories:
 - data-engineering
 consumed_apis:
@@ -55,73 +110,75 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list scheduled tasks
-- etl
-- suspend task
-- create function
-- get statement status
-- cancel statement
-- list user defined functions
-- list udfs
-- data warehousing
-- submit a sql statement
-- list change data capture streams
-- task management
-- list data ingestion pipes
-- create a cdc stream
-- create a function
+- get status of a submitted statement
 - data lakes
-- data sharing
-- list data loading stages
-- stream management
-- create a pipe for continuous ingestion
-- pipe management
-- list pipes
-- list stages
-- submit statement
-- create stream
-- list streams
-- create stage
-- execute a task immediately
-- refresh pipe
-- call a stored procedure
-- create pipe
+- cancel statement
+- list scheduled tasks
+- snowflake
 - resume task
+- create stage
+- list streams
+- create a stream
+- create function
+- list pipes
+- refresh pipe
+- create a pipe
+- execute function
+- task management
+- list user defined functions
+- list data ingestion pipes
+- submit sql
+- sql statement execution
+- call procedure
+- sql
+- suspend task
+- list procedures
+- execute a function
+- list tasks
+- create task
+- create procedure
+- list stage files
+- submit a sql statement for execution
+- create a task
+- list data loading stages
+- submit statement
+- list change data capture streams
+- get query result
+- create pipe
+- list files in a stage
+- create a scheduled task
+- suspend a running task
+- list udfs
+- list functions
 - create a stored procedure
 - data pipelines
-- sql
-- list files in a stage
-- get query result
-- create task
-- get status of a submitted statement
-- refresh a pipe
-- execute function
-- call procedure
-- stage management
-- execute a function
-- list stored procedures
-- create procedure
-- create a stream
-- submit a sql statement for execution
-- data engineering
-- submit sql
-- snowflake
-- list procedures
-- create a pipe
-- execute task
-- get a query result
-- database
-- suspend a running task
-- create a stage
-- list functions
-- list tasks
-- create a task
 - cancel a running statement
-- list stage files
-- sql statement execution
-- create a scheduled task
+- execute a task immediately
+- list stored procedures
+- pipe management
+- stage management
+- data sharing
+- call a stored procedure
+- create a cdc stream
+- get a query result
+- stream management
+- submit a sql statement
+- create a stage
+- execute task
+- create a function
 - resume a suspended task
+- create a pipe for continuous ingestion
+- refresh a pipe
+- list stages
+- data warehousing
+- get statement status
+- database
+- data engineering
+- create stream
+- etl
 slug: data-engineering
+source_filename: data-engineering.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Data Engineering\"\n  description: \"Unified workflow for building and managing data pipelines using SQL execution, tasks, streams, pipes, stages, and functions. Used by Data Engineers to orchestrate ETL/ELT workflows and continuous data ingestion.\"\n  tags:\n    - Snowflake\n    - Data Engineering\n    - ETL\n    - Data Pipelines\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-sql\n      location: ./shared/sqlapi.yaml\n    - import: snowflake-task\n      location: ./shared/task.yaml\n    - import: snowflake-stream\n      location: ./shared/stream.yaml\n    - import: snowflake-pipe\n      location: ./shared/pipe.yaml\n    - import: snowflake-stage\n      location: ./shared/stage.yaml\n    - import: snowflake-function\n\
   \      location: ./shared/function.yaml\n    - import: snowflake-procedure\n      location: ./shared/procedure.yaml\n    - import: snowflake-udf\n      location: ./shared/user-defined-function.yaml\n    - import: snowflake-result\n      location: ./shared/result.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: snowflake-data-eng-api\n      description: \"Unified REST API for Snowflake data pipeline management.\"\n      resources:\n        - path: /v1/statements\n          name: statements\n          description: \"SQL statement execution\"\n          operations:\n            - method: POST\n              name: submit-statement\n              description: \"Submit a SQL statement\"\n              call: \"snowflake-sql.submit-statement\"\n        - path: /v1/tasks\n          name: tasks\n          description: \"Task management\"\n          operations:\n            - method: GET\n              name: list-tasks\n              description: \"List tasks\"\n         \
   \     call: \"snowflake-task.list-tasks\"\n            - method: POST\n              name: create-task\n              description: \"Create a task\"\n              call: \"snowflake-task.create-task\"\n        - path: /v1/streams\n          name: streams\n          description: \"Stream management\"\n          operations:\n            - method: GET\n              name: list-streams\n              description: \"List streams\"\n              call: \"snowflake-stream.list-streams\"\n            - method: POST\n              name: create-stream\n              description: \"Create a stream\"\n              call: \"snowflake-stream.create-stream\"\n        - path: /v1/pipes\n          name: pipes\n          description: \"Pipe management\"\n          operations:\n            - method: GET\n              name: list-pipes\n              description: \"List pipes\"\n              call: \"snowflake-pipe.list-pipes\"\n            - method: POST\n              name: create-pipe\n              description:\

@@ -18,37 +18,39 @@ personas: []
 provider_name: Apache Ozone
 provider_slug: apache-ozone
 search_terms:
-- s3-compatible
-- manages data lake storage with ozone
-- put object
-- cloud native
-- upload an object to a bucket
-- list all object storage buckets
-- open source
-- s3 compatible
-- uses s3-compatible api for application storage
-- list objects
-- download an object from a bucket
-- object storage
-- list objects in a bucket
-- Application Developer
-- list all buckets
-- get object
 - apache ozone
+- delete bucket
+- list buckets
+- s3-compatible
+- cloud native
+- Data Engineer
+- Application Developer
+- head object
 - get metadata for an object
+- s3 compatible
+- create bucket
+- uses s3-compatible api for application storage
+- download an object from a bucket
+- open source
+- list all object storage buckets
+- delete object
+- get object
+- list objects in a bucket
 - apache
 - delete an empty bucket
+- upload an object to a bucket
 - delete an object from a bucket
-- head object
-- distributed storage
-- Data Engineer
-- delete object
-- create bucket
-- list buckets
-- create a new storage bucket
+- list objects
 - hadoop
-- delete bucket
+- distributed storage
+- create a new storage bucket
+- object storage
+- list all buckets
+- put object
+- manages data lake storage with ozone
 slug: ozone-workflow
+source_filename: ozone-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Ozone Object Storage Workflow\"\n  description: \"Workflow capability for managing object storage using Apache Ozone's S3-compatible API.\"\n  tags:\n    - Apache Ozone\n    - Object Storage\n    - Distributed Storage\n    - S3 Compatible\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      OZONE_ACCESS_KEY: OZONE_ACCESS_KEY\n      OZONE_SECRET_KEY: OZONE_SECRET_KEY\ncapability:\n  consumes:\n    - type: http\n      namespace: ozone\n      baseUri: https://localhost:9878\n      description: \"Apache Ozone S3-Compatible API\"\n      authentication:\n        type: apikey\n        key: Authorization\n        value: \"{{OZONE_ACCESS_KEY}}\"\n        placement: header\n      resources:\n        - name: buckets\n          path: /\n          description: \"Bucket management\"\n          operations:\n            - name: listBuckets\n              method: GET\n              description:\
   \ \"List all buckets\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n        - name: objects\n          path: /{bucket}\n          description: \"Object management\"\n          operations:\n            - name: listObjects\n              method: GET\n              description: \"List objects in bucket\"\n              outputRawFormat: json\n              outputParameters:\n                - name: result\n                  type: object\n                  value: \"$.\"\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ozone-api\n      description: \"Unified REST API for Ozone object storage.\"\n      resources:\n        - path: /v1/buckets\n          name: buckets\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List all buckets\"\n              call: \"ozone.listBuckets\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{bucket}/objects\n          name: objects\n          operations:\n            - method: GET\n              name: list-objects\n              description: \"List objects\"\n              call: \"ozone.listObjects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: ozone-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Ozone object storage management.\"\n      tools:\n        - name: list-buckets\n          description: \"List all object storage buckets\"\n          hints:\n            readOnly: true\n          call: \"ozone.listBuckets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-bucket\n          description: \"Create a new storage bucket\"\n          hints:\n            readOnly: false\n       \

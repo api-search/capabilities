@@ -25,64 +25,66 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- get dnssec settings.
-- security
-- turnstile widget management.
-- artificial intelligence
-- dns batch records
-- turnstile create widget
-- real-time communication
-- dns update record
-- dns
-- verify a turnstile token.
-- edge
+- turnstile verify token
+- edge computing
 - logpush job management.
-- web performance
-- list logpush jobs
+- list dns records.
+- list dataset fields.
+- cdn
+- containers
+- dns update record
+- platform
+- serverless
+- turnstile list widgets
+- logpush create job
+- list dns records
+- cloudflare
+- delete a logpush job.
+- dns
+- logpush list jobs
+- get dns record details.
+- turnstile widget management.
+- dns list records
+- api gateway
+- dns delete record
+- get logpush job details.
+- list logpush jobs.
 - list turnstile widgets
+- list turnstile widgets.
+- execute batch dns operations.
+- create a turnstile widget.
+- web performance
+- dns batch records
+- dns record management.
 - logpush get job
 - delete a dns record.
-- api gateway
-- execute batch dns operations.
-- dns get record
-- list dns records for a zone.
-- containers
-- get logpush job details.
-- create a turnstile widget.
-- object storage
-- update a dns record.
-- dns list records
-- create a dns record.
-- create a logpush job.
-- logpush list dataset fields
-- delete a logpush job.
-- observability
-- list dns records
 - delete a turnstile widget.
-- cdn
-- logpush create job
 - cloud
-- turnstile list widgets
-- list logpush jobs.
-- logpush list jobs
-- cloudflare
-- turnstile verify token
+- list dns records for a zone.
+- observability
+- security
+- real-time communication
+- get dnssec settings.
+- artificial intelligence
+- dns get record
+- list logpush jobs
+- verify a turnstile token.
 - ai gateway
-- dns get dnssec
+- turnstile create widget
 - ddos protection
-- logpush delete job
-- platform
-- list dataset fields.
-- serverless
-- dns record management.
-- get dns record details.
-- dns delete record
-- list turnstile widgets.
-- edge computing
-- dns create record
-- list dns records.
+- object storage
+- create a logpush job.
+- create a dns record.
 - turnstile delete widget
+- update a dns record.
+- edge
+- dns create record
+- dns get dnssec
+- logpush delete job
+- logpush list dataset fields
 slug: dns-and-security
+source_filename: dns-and-security.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare DNS and Security\"\n  description: \"DNS management and web security combining DNS record management with Turnstile bot protection and Logpush observability. Used by site reliability engineers and security teams.\"\n  tags:\n    - Cloudflare\n    - DNS\n    - Security\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-dns\n      location: ./shared/dns.yaml\n    - import: cloudflare-turnstile\n      location: ./shared/turnstile.yaml\n    - import: cloudflare-logpush\n      location: ./shared/logpush.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: dns-security-api\n      description: \"Unified REST API for Cloudflare DNS and security services.\"\n      resources:\n        - path: /v1/dns-records\n          name: dns-records\n \
   \         description: \"DNS record management.\"\n          operations:\n            - method: GET\n              name: list-dns-records\n              description: \"List DNS records.\"\n              call: \"cloudflare-dns.list-dns-records\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/turnstile-widgets\n          name: turnstile-widgets\n          description: \"Turnstile widget management.\"\n          operations:\n            - method: GET\n              name: list-turnstile-widgets\n              description: \"List Turnstile widgets.\"\n              call: \"cloudflare-turnstile.list-turnstile-widgets\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logpush-jobs\n          name: logpush-jobs\n     \
   \     description: \"Logpush job management.\"\n          operations:\n            - method: GET\n              name: list-logpush-jobs\n              description: \"List Logpush jobs.\"\n              call: \"cloudflare-logpush.list-logpush-jobs\"\n              with:\n                zone_id: \"rest.zone_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9084\n      namespace: dns-security-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Cloudflare DNS and security management.\"\n      tools:\n        - name: dns-list-records\n          description: \"List DNS records for a zone.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"cloudflare-dns.list-dns-records\"\n          with:\n            zone_id: \"tools.zone_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: dns-create-record\n\

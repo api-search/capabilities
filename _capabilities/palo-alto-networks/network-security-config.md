@@ -19,86 +19,88 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- saas security admin
-- network architect
-- subscription manager
-- researches threat actors, malware campaigns, and vulnerability trends.
-- network security
+- proactively searches for threats and iocs across telemetry data.
+- cloud security engineer
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- threat hunter
 - tenant operator
 - sre
-- compliance team
-- threat intelligence
-- soc analyst
-- conducts automated adversarial testing against ai systems and llm applications.
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- monitors network health, performance, and digital experience metrics.
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- mssp operator
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- enterprise it
-- security rules
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- palo alto networks
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- sd wan operator
-- proactively searches for threats and iocs across telemetry data.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- network operations
-- manages multi-tenant security operations at scale for managed service providers.
-- cybersecurity
-- manages service accounts, roles, and access policies for platform api access.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- network security engineer
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- sase
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- manages enterprise browser policies and secure browsing configurations.
-- incident responder
-- firewall
-- threat intel analyst
-- configuration
-- platform engineer
-- data protection analyst
 - investigates dlp incidents and manages sensitive data protection policies.
-- cloud security posture management, compliance monitoring, and workload protection.
+- conducts automated adversarial testing against ai systems and llm applications.
 - incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- cloud security
-- ai runtime security scanning and automated red teaming for ai applications.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- identity and access management, tenant hierarchies, and subscription management.
+- manage enterprise browser policies, user sessions, and deployments.
 - executes containment, eradication, and recovery actions during security incidents.
-- secures ai applications with runtime scanning and vulnerability assessment.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
 - firewall admin
-- browser security admin
-- data loss prevention, saas security monitoring, and identity security posture.
+- designs sase and sd-wan network architectures for secure remote access.
+- saas security admin
 - digital experience monitoring, log management, and best practice assessment.
-- iam admin
-- designs and implements network security architectures and policies.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- incident responder
+- browser security admin
+- cloud security posture management, compliance monitoring, and workload protection.
+- ai runtime security scanning and automated red teaming for ai applications.
+- security rules
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- data protection analyst
+- palo alto networks
+- vulnerability manager
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- subscription manager
+- sase admin
+- secure access service edge with remote networking, sd-wan, and zero trust access.
 - track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
 - ensures cloud infrastructure meets regulatory and industry compliance standards.
-- designs sase and sd-wan network architectures for secure remote access.
-- enterprise browser policy management and secure browsing.
-- xdr
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- malware researcher
-- threat hunter
-- ai security engineer
-- manages logging infrastructure, integrations, and platform automation.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- vulnerability manager
-- compliance officer
-- red team operator
-- sase admin
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- cloud security engineer
+- sase
 - analyzes suspicious files and samples for malware characteristics.
-- manage enterprise browser policies, user sessions, and deployments.
+- network architect
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- manages multi-tenant security operations at scale for managed service providers.
+- network security engineer
+- firewall
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
 - soar
-- identity and access management, tenant hierarchies, and subscription management.
+- xdr
+- platform engineer
+- manages enterprise browser policies and secure browsing configurations.
+- cloud security
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- cybersecurity
+- designs and implements network security architectures and policies.
+- malware researcher
+- secures ai applications with runtime scanning and vulnerability assessment.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- data loss prevention, saas security monitoring, and identity security posture.
+- iam admin
+- threat intelligence
+- enterprise it
+- monitors network health, performance, and digital experience metrics.
+- soc analyst
+- mssp operator
+- researches threat actors, malware campaigns, and vulnerability trends.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- manages logging infrastructure, integrations, and platform automation.
+- enterprise browser policy management and secure browsing.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- sd wan operator
+- manages service accounts, roles, and access policies for platform api access.
+- threat intel analyst
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- red team operator
+- compliance officer
+- compliance team
+- ai security engineer
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- configuration
+- network security
+- network operations
 slug: network-security-config
+source_filename: network-security-config.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Network Security Configuration\"\n  description: \"Unified network security configuration capability for managing firewall objects, security rules, NAT rules, and cloud NGFW rule stacks across PAN-OS, Strata Cloud Manager, and Cloud NGFW.\"\n  tags:\n    - Palo Alto Networks\n    - Network Security\n    - Firewall\n    - Security Rules\n    - Configuration\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PAN_OS_API_KEY: PAN_OS_API_KEY\n      PAN_OS_FIREWALL: PAN_OS_FIREWALL\n      STRATA_CLOUD_MANAGER_TOKEN: STRATA_CLOUD_MANAGER_TOKEN\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: pan-os\n      location: ./shared/pan-os.yaml\n    - import: strata-cloud-manager\n      location: ./shared/strata-cloud-manager.yaml\n    - import: cloud-ngfw\n      location: ./shared/cloud-ngfw.yaml\n\
   \n  serves:\n    rest:\n      port: 8083\n      resources:\n\n        # ---------------------------------------------------------------\n        # Address Objects\n        # ---------------------------------------------------------------\n\n        # PAN-OS Addresses\n        - path: /v1/panos-addresses\n          operations:\n            - method: GET\n              operationId: list-panos-addresses\n              description: \"List PAN-OS address objects.\"\n              call: pan-os.list-addresses\n              hints:\n                - \"list firewall address objects\"\n                - \"show PAN-OS addresses\"\n              inputParameters:\n                - name: location\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Configuration location (e.g., vsys, panorama).\"\n                - name: vsys\n                  in: query\n                  type: string\n                  required: false\n\
   \                  description: \"Virtual system name.\"\n                - name: name\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Filter by address object name.\"\n            - method: POST\n              operationId: create-panos-address\n              description: \"Create a PAN-OS address object.\"\n              call: pan-os.create-address\n              hints:\n                - \"create firewall address object\"\n                - \"add PAN-OS address\"\n            - method: PUT\n              operationId: update-panos-address\n              description: \"Update a PAN-OS address object.\"\n              call: pan-os.update-address\n              hints:\n                - \"update firewall address object\"\n                - \"modify PAN-OS address\"\n            - method: DELETE\n              operationId: delete-panos-address\n              description: \"Delete a PAN-OS address object.\"\n\

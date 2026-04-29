@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: lightroom-services-openapi.yml
+  format: yaml
+  label: lightroom-services
+  slug: lightroom-services
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/lightroom/refs/heads/main/openapi/lightroom-services-openapi.yml
 categories: []
 consumed_apis:
 - lightroom-services
@@ -51,66 +58,68 @@ personas: []
 provider_name: Adobe Lightroom
 provider_slug: lightroom
 search_terms:
-- get the lightroom catalog.
-- add assets to album
-- metadata
-- edit an image.
-- get develop xmp
-- image editing.
+- photo management
+- get a rendered version of an asset.
+- ai auto tone.
+- apply lightroom presets to an image.
 - add assets to an album.
-- apply ai auto tone adjustment.
-- album assets.
+- get the user's catalog.
+- create or update an album.
+- list photo assets in a catalog.
+- get a rendition.
+- get rendition
+- apply auto straighten.
+- get the lightroom catalog.
+- cloud storage
+- apply presets
+- upload an original master file.
+- preset application.
+- list photo albums.
+- create or update album
+- list assets in a catalog.
+- auto straighten
+- get a specific photo asset.
 - ai auto straighten.
+- metadata
+- edit image
+- apply programmatic edits to an image.
+- list album assets
+- upload master
+- image editing
+- lightroom catalog.
+- asset renditions.
+- edit an image.
+- add assets to album
+- photography
+- get asset details.
+- apply auto tone.
+- get asset
+- get xmp develop settings.
+- delete an album.
+- get album
+- get a specific album.
+- get develop xmp
+- ai image editing
+- photo assets.
+- list assets in an album.
+- delete album
+- photo albums.
 - auto tone
 - get catalog
-- upload an original master file.
-- asset renditions.
-- list assets
-- lightroom
-- get asset details.
-- list albums
-- apply auto tone.
-- get rendition
-- list photo albums.
-- photography
-- get asset
-- list photo assets in a catalog.
-- list albums.
-- get album
-- specific asset operations.
-- get a rendition.
 - apply presets.
-- create or update album
-- cloud storage
-- photo management
-- get xmp develop settings.
-- lightroom catalog.
-- create or update an album.
-- preset application.
-- apply ai auto straighten.
-- apply auto straighten.
-- ai image editing
-- get a specific album.
-- list assets in a catalog.
+- specific asset operations.
+- image editing.
+- apply ai auto tone adjustment.
 - adobe
-- list album assets
-- get a rendered version of an asset.
-- get a specific photo asset.
-- get the user's catalog.
-- photo assets.
-- auto straighten
-- apply programmatic edits to an image.
-- image editing
-- list assets in an album.
-- edit image
-- upload master
-- apply lightroom presets to an image.
-- delete album
-- delete an album.
-- ai auto tone.
-- photo albums.
-- apply presets
+- lightroom
+- list assets
+- apply ai auto straighten.
+- album assets.
+- list albums.
+- list albums
 slug: photo-management
+source_filename: photo-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Lightroom Photo Management\"\n  description: \"Unified workflow combining Lightroom cloud services for catalog, asset, and album management with Firefly Services AI-powered editing. Used by photographers and creative developers to manage and enhance photos programmatically.\"\n  tags:\n    - Adobe\n    - Lightroom\n    - Photography\n    - AI Image Editing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_OAUTH_TOKEN: ADOBE_OAUTH_TOKEN\n      ADOBE_API_KEY: ADOBE_API_KEY\n\ncapability:\n  consumes:\n    - import: lightroom-services\n      location: ./shared/lightroom-services.yaml\n    - import: firefly-services\n      location: ./shared/firefly-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: photo-management-api\n      description: \"Unified REST API for Lightroom photo management and AI editing.\"\n      resources:\n        - path:\
   \ /v1/catalog\n          name: catalog\n          description: \"Lightroom catalog.\"\n          operations:\n            - method: GET\n              name: get-catalog\n              description: \"Get the user's catalog.\"\n              call: \"lightroom-services.get-catalog\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Photo assets.\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List assets in a catalog.\"\n              call: \"lightroom-services.list-assets\"\n              with:\n                catalog_id: \"rest.catalog_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets/{asset_id}\n          name: asset-detail\n          description: \"Specific asset operations.\"\n          operations:\n         \
   \   - method: GET\n              name: get-asset\n              description: \"Get asset details.\"\n              call: \"lightroom-services.get-asset\"\n              with:\n                catalog_id: \"rest.catalog_id\"\n                asset_id: \"rest.asset_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets/{asset_id}/renditions/{rendition_type}\n          name: renditions\n          description: \"Asset renditions.\"\n          operations:\n            - method: GET\n              name: get-rendition\n              description: \"Get a rendition.\"\n              call: \"lightroom-services.get-rendition\"\n              with:\n                catalog_id: \"rest.catalog_id\"\n                asset_id: \"rest.asset_id\"\n                rendition_type: \"rest.rendition_type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/albums\n\

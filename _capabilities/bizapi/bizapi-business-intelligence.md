@@ -20,31 +20,33 @@ provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- search companies test
-- crm
-- business intelligence
-- company data
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- test company search returning fake firmographic data.
-- crm enrichment
-- search business entities by name, address, phone, or url.
-- appending firmographic data to crm records for sales and marketing
-- Marketing Analyst
 - uses firmographic data to qualify leads and enrich crm account records
-- sic
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- firmographic data
-- business intelligence and crm enrichment workflow combining company search and test endpoints
-- segments and scores prospects using naics, sic, and financial data
-- search companies
-- firmographic data retrieval and company lookup
-- naics
 - Data Engineer
-- search for business entities and retrieve firmographic data.
-- Sales Representative
-- sales enablement
 - test search returning fake data without consuming api credits.
+- search business entities by name, address, phone, or url.
+- sic
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
+- firmographic data retrieval and company lookup
+- crm
+- segments and scores prospects using naics, sic, and financial data
+- Sales Representative
+- naics
+- company data
+- test company search returning fake firmographic data.
+- Marketing Analyst
+- appending firmographic data to crm records for sales and marketing
+- crm enrichment
+- search companies
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
+- business intelligence
+- search companies test
+- search for business entities and retrieve firmographic data.
+- firmographic data
+- sales enablement
+- business intelligence and crm enrichment workflow combining company search and test endpoints
 slug: bizapi-business-intelligence
+source_filename: bizapi-business-intelligence.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: BizAPI Business Intelligence\n  description: >-\n    Workflow capability for business intelligence and CRM data enrichment using the BizAPI.\n    Enables sales, marketing, and data teams to search and enrich company records with\n    firmographic data including NAICS, SIC, DUNS, employee counts, and corporate hierarchy.\n  tags:\n    - Business Intelligence\n    - CRM Enrichment\n    - Company Data\n    - Firmographic Data\n    - NAICS\n    - Sales Enablement\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BIZAPI_USERNAME: BIZAPI_USERNAME\n      BIZAPI_PASSWORD: BIZAPI_PASSWORD\n\ncapability:\n  consumes:\n    - import: bizapi\n      location: ./shared/bizapi.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: bizapi-business-intelligence-api\n      description: Unified REST API for business intelligence and firmographic data enrichment.\n      resources:\n\
   \        - path: /v1/companies/search\n          name: company-search\n          description: Search business entities by name, address, phone, or URL.\n          operations:\n            - method: POST\n              name: search-companies\n              description: Search for business entities and retrieve firmographic data.\n              call: \"bizapi.search-companies\"\n              with:\n                company_name: \"rest.company_name\"\n                street: \"rest.street\"\n                city: \"rest.city\"\n                state: \"rest.state\"\n                zip: \"rest.zip\"\n                country: \"rest.country\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/companies/search/test\n          name: company-search-test\n          description: Test search returning fake data without consuming API credits.\n          operations:\n            - method: POST\n              name: search-companies-test\n\
   \              description: Test company search returning fake firmographic data.\n              call: \"bizapi.search-companies-test\"\n              with:\n                company_name: \"rest.company_name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: bizapi-business-intelligence-mcp\n      transport: http\n      description: MCP server for AI-assisted business intelligence and CRM enrichment workflows.\n      tools:\n        - name: search-companies\n          description: Search for business entities and retrieve firmographic data including DUNS numbers, NAICS codes, SIC codes, employee counts, sales volume, and corporate hierarchy.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"bizapi.search-companies\"\n          with:\n            company_name: \"tools.company_name\"\n            street: \"tools.street\"\n            city:\

@@ -31,41 +31,43 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
+- IT Administrator
+- email
+- list all amazon workmail organizations in the account.
+- mobile device access control and compliance
+- list email distribution groups in an organization.
+- list mobile device access rules.
+- list groups
+- manages workmail infrastructure, user provisioning, and security policies.
+- handles day-to-day email user and group management.
+- enterprise email provisioning and management
 - administration
 - aws
-- list organizations
-- list email groups.
-- business communication
-- create a new workmail user with mailbox.
-- email
-- mobile device access control and compliance
-- group management.
-- list email distribution groups in an organization.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- manages workmail infrastructure, user provisioning, and security policies.
-- list groups
-- list mobile device access control rules.
-- mobile device access control.
-- user provisioning and management.
-- create user
-- exchange
-- list users in an organization.
-- create a new email user.
-- it administration of email infrastructure
-- IT Administrator
-- list users
-- list all workmail organizations.
-- calendar
-- enterprise
-- list mobile device access rules
-- enterprise email provisioning and management
-- list all amazon workmail organizations in the account.
-- Email Operations
-- handles day-to-day email user and group management.
-- list mobile device access rules.
 - list users in a workmail organization.
+- list mobile device access rules
+- list all workmail organizations.
+- list users
+- create user
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- create a new workmail user with mailbox.
+- group management.
+- calendar
+- create a new email user.
+- Email Operations
+- it administration of email infrastructure
+- enterprise
 - workmail organization management.
+- business communication
+- list organizations
+- list mobile device access control rules.
+- list email groups.
+- list users in an organization.
+- exchange
+- user provisioning and management.
+- mobile device access control.
 slug: email-management
+source_filename: email-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkMail Email Management\"\n  description: >-\n    Unified workflow for IT administrators and email operations teams to manage\n    Amazon WorkMail organizations, users, groups, and mobile device access.\n    Enables programmatic provisioning, deprovisioning, and governance of\n    enterprise email infrastructure.\n  tags:\n    - AWS\n    - Email\n    - Calendar\n    - Business Communication\n    - Administration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: workmail\n      location: ./shared/workmail.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-management-api\n      description: \"Unified REST API for Amazon WorkMail email infrastructure management.\"\n      resources:\n\
   \        - path: /v1/organizations\n          name: organizations\n          description: \"WorkMail organization management.\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List all WorkMail organizations.\"\n              call: \"workmail.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User provisioning and management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users in an organization.\"\n              call: \"workmail.list-users\"\n              with:\n                OrganizationId: \"rest.organization_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description:\
   \ \"Create a new email user.\"\n              call: \"workmail.create-user\"\n              with:\n                OrganizationId: \"rest.organization_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List email groups.\"\n              call: \"workmail.list-groups\"\n              with:\n                OrganizationId: \"rest.organization_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/mobile-device-access\n          name: mobile-device-access\n          description: \"Mobile device access control.\"\n          operations:\n            - method: GET\n              name: list-mobile-device-access-rules\n              description: \"List mobile device\

@@ -40,40 +40,42 @@ personas: []
 provider_name: Microsoft SharePoint
 provider_slug: sharepoint
 search_terms:
-- get lists
-- get my user profile
-- download file
-- search across all sharepoint content
-- get list items
-- get current user's sharepoint profile
-- list files in a sharepoint folder
-- search query
-- get web
-- search
-- enterprise content management
-- update a sharepoint list item
-- create a new sharepoint list
-- get items from a sharepoint list
-- intranet
-- update list item
-- content management
-- get files
-- delete a sharepoint list item
-- upload a file to sharepoint
-- list all sharepoint lists
-- add an item to a sharepoint list
 - upload file
-- delete list item
 - sharepoint
-- create list item
 - microsoft
+- enterprise content management
+- upload a file to sharepoint
+- get files
+- search
 - get sharepoint site properties
-- download a file from sharepoint
-- get files in folder
-- collaboration
+- get items from a sharepoint list
 - document management
+- add an item to a sharepoint list
+- delete a sharepoint list item
+- download a file from sharepoint
+- update list item
+- get list items
+- get my user profile
+- search across all sharepoint content
+- get current user's sharepoint profile
+- download file
+- list files in a sharepoint folder
+- update a sharepoint list item
+- content management
+- list all sharepoint lists
+- create a new sharepoint list
+- get web
+- create list item
+- delete list item
+- intranet
 - create list
+- get files in folder
+- get lists
+- collaboration
+- search query
 slug: content-management
+source_filename: content-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SharePoint Content Management\"\n  description: \"Unified workflow for managing SharePoint content including sites, lists, items, files, and search. Used by content managers, site admins, and collaboration teams.\"\n  tags:\n    - SharePoint\n    - Content Management\n    - Collaboration\n    - Document Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SHAREPOINT_ACCESS_TOKEN: SHAREPOINT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: sp-sites-lists\n      location: ./shared/sites-and-lists.yaml\n    - import: sp-files-search\n      location: ./shared/files-and-search.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sp-content-api\n      description: \"Unified REST API for SharePoint content management.\"\n      resources:\n        - path: /v1/sites\n          name: sites\n          operations:\n            - method: GET\n          \
   \    name: get-web\n              call: \"sp-sites-lists.get-web\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists\n          name: lists\n          operations:\n            - method: GET\n              name: get-lists\n              call: \"sp-sites-lists.get-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-list\n              call: \"sp-sites-lists.create-list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/lists/{title}/items\n          name: items\n          operations:\n            - method: GET\n              name: get-list-items\n              call: \"sp-sites-lists.get-list-items\"\n              with:\n                list_title: \"rest.title\"\n              outputParameters:\n                - type: object\n  \
   \                mapping: \"$.\"\n            - method: POST\n              name: create-list-item\n              call: \"sp-sites-lists.create-list-item\"\n              with:\n                list_title: \"rest.title\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/files\n          name: files\n          operations:\n            - method: GET\n              name: get-files\n              call: \"sp-files-search.get-files-in-folder\"\n              with:\n                folder_url: \"rest.folder_url\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/search\n          name: search\n          operations:\n            - method: GET\n              name: search\n              call: \"sp-files-search.search-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n\

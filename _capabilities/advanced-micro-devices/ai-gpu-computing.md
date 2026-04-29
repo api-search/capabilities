@@ -27,47 +27,49 @@ personas: []
 provider_name: Advanced Micro Devices
 provider_slug: advanced-micro-devices
 search_terms:
-- check available amd developer cloud gpu credit balance and usage history.
-- list models
-- deploy model
-- check credit balance
-- amd
-- create gpu instance
-- engineer deploying and optimizing ml inference workloads on amd hardware
-- list gpu instances.
-- unified workflow for ai and hpc workloads on amd instinct gpus
-- create a gpu instance.
-- terminate an amd gpu compute instance to stop billing and release resources.
-- list instances
-- researcher training and evaluating large language models on amd gpu clusters
-- deploy a large language model on amd instinct gpus using vllm for high-throughput inference.
-- list deployed models
-- ai
-- ai model deployment.
-- get gpu instance status
-- developer running scientific simulations and hpc workloads with rocm
-- launch an amd instinct gpu instance (mi300x, mi250, mi210) for ai training or hpc.
-- create instance
-- ml engineer
-- deploy an ai model.
-- check the current status and configuration of an amd gpu compute instance.
-- hpc developer
-- list gpu instances
-- get real-time gpu utilization, memory usage, temperature, and power draw for an amd instance.
 - machine learning
-- terminate instance
-- cloud computing
-- list deployed ai models.
-- list ai models deployed and serving on amd instinct gpus.
-- list all amd instinct gpu compute instances in the developer cloud.
 - monitor gpu performance
+- list deployed ai models.
+- researcher training and evaluating large language models on amd gpu clusters
+- developer running scientific simulations and hpc workloads with rocm
+- check available amd developer cloud gpu credit balance and usage history.
+- unified workflow for ai and hpc workloads on amd instinct gpus
+- terminate instance
+- ai model deployment.
+- get real-time gpu utilization, memory usage, temperature, and power draw for an amd instance.
+- deploy model
+- deploy a large language model on amd instinct gpus using vllm for high-throughput inference.
 - ai researcher
-- hpc
-- deploy llm
-- gpu instance management.
-- gpu
+- list gpu instances
+- list gpu instances.
 - semiconductor
+- create gpu instance
+- create instance
+- ai
+- terminate an amd gpu compute instance to stop billing and release resources.
+- check credit balance
+- list deployed models
+- gpu
+- get gpu instance status
+- engineer deploying and optimizing ml inference workloads on amd hardware
+- ml engineer
+- deploy llm
+- hpc developer
+- list instances
+- list all amd instinct gpu compute instances in the developer cloud.
+- check the current status and configuration of an amd gpu compute instance.
+- launch an amd instinct gpu instance (mi300x, mi250, mi210) for ai training or hpc.
+- hpc
+- cloud computing
+- list models
+- create a gpu instance.
+- deploy an ai model.
+- gpu instance management.
+- amd
+- list ai models deployed and serving on amd instinct gpus.
 slug: ai-gpu-computing
+source_filename: ai-gpu-computing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AMD AI GPU Computing\"\n  description: \"Unified workflow capability for AI and HPC workloads on AMD Instinct GPUs — provision instances, deploy LLMs, monitor performance, and manage cloud credits. Designed for AI researchers, ML engineers, and HPC developers.\"\n  tags:\n    - AMD\n    - AI\n    - Cloud Computing\n    - GPU\n    - HPC\n    - Machine Learning\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMD_API_KEY: AMD_API_KEY\n\ncapability:\n  consumes:\n    - import: amd-cloud\n      location: ./shared/developer-cloud-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: amd-gpu-api\n      description: \"Unified REST API for AMD GPU compute management, AI model deployment, and monitoring.\"\n      resources:\n        - path: /v1/instances\n          name: instances\n          description: \"GPU instance management.\"\n          operations:\n   \
   \         - method: GET\n              name: list-instances\n              description: \"List GPU instances.\"\n              call: \"amd-cloud.list-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-instance\n              description: \"Create a GPU instance.\"\n              call: \"amd-cloud.create-instance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name: models\n          description: \"AI model deployment.\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List deployed AI models.\"\n              call: \"amd-cloud.list-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: deploy-model\n              description:\
   \ \"Deploy an AI model.\"\n              call: \"amd-cloud.deploy-model\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: amd-gpu-mcp\n      transport: http\n      description: \"MCP server for AI-assisted AMD GPU computing — provision hardware, deploy models, and monitor performance.\"\n      tools:\n        - name: list-gpu-instances\n          description: \"List all AMD Instinct GPU compute instances in the developer cloud.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amd-cloud.list-instances\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-gpu-instance\n          description: \"Launch an AMD Instinct GPU instance (MI300X, MI250, MI210) for AI training or HPC.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent:\

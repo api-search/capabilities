@@ -65,59 +65,61 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- delete synced applications.
-- archives communications for regulatory compliance.
-- create or update entity acl.
+- linkedin
+- create or update a job posting.
+- update customer integrations
 - authentication, sharing, and verification for consumer apps.
-- business
-- check job posting task status.
-- get job posting task status
-- get child application
+- create resume upload url.
+- retrieve candidate matches.
+- posts jobs and manages candidates through ats integrations.
+- delete synced candidates.
+- delete candidates
+- provision a child application.
+- professional networking
+- create or update entity acl.
+- create or update job posting
 - uses sales navigator for lead generation and crm sync.
 - update customer ats integrations.
-- job posting, recruiting, and applicant tracking.
-- get seatholders
-- update customer integrations
-- get customer integrations
-- employee development tracking and content access.
-- recruiting
-- get child application credentials.
-- get candidate matches
-- delete candidates
-- create or update job posting
-- sales intelligence, lead management, and crm integration.
-- tracks employee learning activity and completions.
-- get exported candidates
-- create resume upload url.
-- create or update a job posting.
-- provision a child application.
-- careers
 - sync applications
-- b2b advertising, audience targeting, and campaign analytics.
-- delete synced candidates.
-- professional networking
-- delete applications
+- get seatholders
+- retrieve recruiter seatholders.
+- employee development tracking and content access.
 - talent acquisition
 - message archiving and regulatory communications governance.
-- social media
-- linkedin
-- upsert entity acl
-- provision child application
-- job posting
-- marketing
-- retrieve recruiter seatholders.
-- create resume upload url
-- sync job applications.
-- posts jobs and manages candidates through ats integrations.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get customer ats integration details.
-- retrieve candidate matches.
-- get exported candidate profiles.
-- sync candidates
+- get child application
+- tracks employee learning activity and completions.
+- data portability and advertiser transparency for dma.
 - integrates linkedin authentication and sharing into applications.
 - sync candidates to linkedin.
-- data portability and advertiser transparency for dma.
+- get job posting task status
+- delete synced applications.
+- get exported candidate profiles.
+- recruiting
+- get customer ats integration details.
+- social media
+- sales intelligence, lead management, and crm integration.
+- get candidate matches
+- get exported candidates
+- job posting
+- create resume upload url
+- careers
+- provision child application
+- job posting, recruiting, and applicant tracking.
+- b2b advertising, audience targeting, and campaign analytics.
+- delete applications
+- archives communications for regulatory compliance.
+- get customer integrations
+- sync candidates
+- sync job applications.
+- check job posting task status.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- marketing
+- get child application credentials.
+- business
+- upsert entity acl
 slug: talent-acquisition
+source_filename: talent-acquisition.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Talent Acquisition\"\n  description: \"Unified workflow for recruiters to post jobs, sync candidates and applications via ATS, manage recruiter integrations, and provision partner applications -- combining job posting, RSC, and provisioning APIs.\"\n  tags:\n    - LinkedIn\n    - Talent Acquisition\n    - Recruiting\n    - Job Posting\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: talent-job-posting\n      location: ./shared/talent-job-posting.yaml\n    - import: talent-rsc\n      location: ./shared/talent-recruiter-system-connect.yaml\n    - import: talent-learning-parent-app\n      location: ./shared/talent-learning-parent-application.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: talent-acquisition-api\n      description: \"Unified REST API for LinkedIn\
   \ talent acquisition workflows.\"\n      resources:\n        - path: /v1/job-postings\n          name: job-postings\n          operations:\n            - method: POST\n              name: create-or-update-job-posting\n              description: \"Create or update a job posting.\"\n              call: \"talent-job-posting.create-or-update-job-posting\"\n        - path: /v1/job-posting-tasks\n          name: job-posting-tasks\n          operations:\n            - method: GET\n              name: get-job-posting-task-status\n              description: \"Check job posting task status.\"\n              call: \"talent-job-posting.get-job-posting-task-status\"\n        - path: /v1/ats-integrations\n          name: ats-integrations\n          operations:\n            - method: POST\n              name: update-customer-integrations\n              description: \"Update customer ATS integrations.\"\n              call: \"talent-job-posting.update-customer-integrations\"\n            - method: GET\n\
   \              name: get-customer-integrations\n              description: \"Get customer ATS integration details.\"\n              call: \"talent-job-posting.get-customer-integrations\"\n        - path: /v1/candidates\n          name: candidates\n          operations:\n            - method: PUT\n              name: sync-candidates\n              description: \"Sync candidates to LinkedIn.\"\n              call: \"talent-rsc.sync-candidates\"\n            - method: GET\n              name: get-candidate-matches\n              description: \"Retrieve candidate matches.\"\n              call: \"talent-rsc.get-candidate-matches\"\n            - method: DELETE\n              name: delete-candidates\n              description: \"Delete synced candidates.\"\n              call: \"talent-rsc.delete-candidates\"\n        - path: /v1/applications\n          name: applications\n          operations:\n            - method: PUT\n              name: sync-applications\n              description: \"\

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: cloud-resource-manager-openapi.yml
+  format: yaml
+  label: cloud-resource-manager
+  slug: cloud-resource-manager
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/google-cloud-platform/refs/heads/main/openapi/cloud-resource-manager-openapi.yml
 categories: []
 consumed_apis:
 - cloud-resource-manager
@@ -42,48 +49,50 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- search for organizations
-- project management
 - delete a folder
-- search organizations
-- get organization
-- delete project
-- get organization details
+- search for projects matching a query
 - resource management
-- list folders under a parent
-- create tag key
-- get project
-- create a new tag key
-- create a new google cloud project
-- get folder details
-- delete a project
-- update a project
-- get project details
-- folder management
-- organization operations
-- delete a google cloud project
-- list google cloud projects under a parent
-- infrastructure
-- list tag keys
-- list folders
-- search projects
-- create project
-- single project operations
-- cloud computing
 - create a project
-- update project
-- list projects
-- governance
-- api management
-- create a folder
+- delete a google cloud project
 - delete folder
 - platform as a service
+- single project operations
+- list folders under a parent
+- search for organizations
+- search organizations
+- list folders
+- get folder details
 - google cloud
+- api management
+- organization operations
+- create a new tag key
+- update a project
+- get organization
 - create folder
-- list tag keys for resource tagging
+- create a folder
+- folder management
+- get project
+- get project details
+- list google cloud projects under a parent
+- cloud computing
+- governance
+- create tag key
+- create a new google cloud project
+- list projects
+- delete project
+- search projects
+- create project
+- delete a project
+- infrastructure
 - get folder
-- search for projects matching a query
+- list tag keys for resource tagging
+- project management
+- get organization details
+- update project
+- list tag keys
 slug: resource-hierarchy-management
+source_filename: resource-hierarchy-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Cloud Platform Resource Hierarchy Management\"\n  description: \"Workflow for managing the Google Cloud resource hierarchy including projects, folders, organizations, and tags. Used by cloud administrators and platform engineers.\"\n  tags:\n    - Google Cloud\n    - Resource Management\n    - Governance\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-resource-manager\n      location: ./shared/cloud-resource-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gcp-resource-api\n      description: \"Unified REST API for GCP resource hierarchy management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - method: GET\n      \
   \        name: list-projects\n              description: \"List projects\"\n              call: \"cloud-resource-manager.list-projects\"\n              with:\n                parent: \"rest.parent\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: \"Create a project\"\n              call: \"cloud-resource-manager.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{name}\n          name: project\n          description: \"Single project operations\"\n          operations:\n            - method: GET\n              name: get-project\n              description: \"Get project details\"\n              call: \"cloud-resource-manager.get-project\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type:\
   \ object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-project\n              description: \"Update a project\"\n              call: \"cloud-resource-manager.update-project\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-project\n              description: \"Delete a project\"\n              call: \"cloud-resource-manager.delete-project\"\n              with:\n                name: \"rest.name\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/folders\n          name: folders\n          description: \"Folder management\"\n          operations:\n            - method: GET\n              name: list-folders\n              description: \"List folders\"\n              call: \"cloud-resource-manager.list-folders\"\

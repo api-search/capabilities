@@ -41,44 +41,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- checkout session management
 - get payment
-- merchant
-- process cloud transaction
-- generate a merchant-presented qr code for payment
-- get payment details
-- process payment
-- fraud detection
+- checkout
+- e-commerce
+- digital identity
 - create unified session
-- financial services
 - process a payment through the gateway
-- register contactless reader
-- buy-now-pay-later installment plans
-- process a cloud commerce transaction
-- create a new checkout session
-- process a payment through the mastercard gateway
-- create a unified checkout session
+- generate a merchant-presented qr code for payment
 - create checkout session
+- create a new checkout session for a merchant
+- process payment
+- generate a merchant qr code for payment
+- register a contactless reader device
+- financial services
+- checkout session management
+- create a new checkout session
+- unified checkout sessions
 - create an installment plan
 - retrieve payment transaction details
-- create a buy-now-pay-later installment plan
-- generate a merchant qr code for payment
-- create installment plan
-- qr code payment acceptance
-- digital identity
-- payments
 - open banking
-- generate qr code
-- unified checkout sessions
+- process cloud transaction
 - create a unified checkout session supporting multiple payment methods
-- e-commerce
-- payment processing
-- checkout
-- register a contactless reader device
-- mastercard
+- qr code payment acceptance
+- buy-now-pay-later installment plans
+- get payment details
+- create a unified checkout session
+- merchant
+- fraud detection
 - credit cards
-- create a new checkout session for a merchant
+- create installment plan
+- payment processing
+- register contactless reader
+- generate qr code
+- create a buy-now-pay-later installment plan
+- process a cloud commerce transaction
+- mastercard
+- process a payment through the mastercard gateway
+- payments
 slug: payment-processing-and-checkout
+source_filename: payment-processing-and-checkout.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Payment Processing and Checkout\"\n  description: \"Unified workflow for merchants and payment processors to manage checkout experiences, process payments, and accept contactless transactions across Mastercard's payment gateway, checkout solutions, and commerce APIs.\"\n  tags:\n    - Mastercard\n    - Payment Processing\n    - Checkout\n    - E-Commerce\n    - Merchant\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: checkout-solutions\n      location: ./shared/checkout-solutions.yaml\n    - import: unified-checkout\n      location: ./shared/unified-checkout-solutions.yaml\n    - import: cloud-commerce\n      location: ./shared/cloud-commerce.yaml\n    - import: contactless-reader\n      location: ./shared/contactless-reader-sdk.yaml\n\
   \    - import: gateway\n      location: ./shared/gateway.yaml\n    - import: merchant-qr\n      location: ./shared/merchant-presented-qr.yaml\n    - import: installments\n      location: ./shared/installments.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: payment-checkout-api\n      description: \"Unified REST API for Mastercard payment processing and checkout workflows.\"\n      resources:\n        - path: /v1/checkout-sessions\n          name: checkout-sessions\n          description: \"Checkout session management\"\n          operations:\n            - method: POST\n              name: create-checkout-session\n              description: \"Create a new checkout session\"\n              call: \"checkout-solutions.initiate-checkout\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/unified-sessions\n          name: unified-sessions\n          description: \"Unified checkout sessions\"\n  \
   \        operations:\n            - method: POST\n              name: create-unified-session\n              description: \"Create a unified checkout session\"\n              call: \"unified-checkout.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description: \"Payment processing\"\n          operations:\n            - method: POST\n              name: process-payment\n              description: \"Process a payment through the gateway\"\n              call: \"gateway.process-payment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-payment\n              description: \"Get payment details\"\n              call: \"gateway.get-payment\"\n              with:\n                payment_id: \"rest.payment_id\"\n              outputParameters:\n            \

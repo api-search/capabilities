@@ -17,29 +17,31 @@ personas: []
 provider_name: Amazon Aurora DSQL
 provider_slug: amazon-aurora-dsql
 search_terms:
-- aws
-- postgresql
-- create a new cluster
-- get the current status and configuration of an aurora dsql cluster.
-- list all aurora dsql clusters to understand available databases.
-- create linked aurora dsql clusters across multiple aws regions for global distribution.
-- create multi region clusters
-- distributed sql
-- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
-- delete cluster
-- amazon aurora dsql
 - distributed sql cluster management
+- serverless
+- list all aurora dsql clusters to understand available databases.
+- update the configuration of an aurora dsql cluster.
+- create a new aurora dsql cluster for distributed sql workloads.
+- get cluster
+- delete an aurora dsql cluster when it is no longer needed.
+- distributed sql
+- aws
+- amazon aurora dsql
+- create a new cluster
+- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
+- get the current status and configuration of an aurora dsql cluster.
+- create cluster
+- list all clusters
+- create linked aurora dsql clusters across multiple aws regions for global distribution.
 - update cluster
 - get cluster endpoint
+- delete cluster
+- postgresql
+- create multi region clusters
 - list clusters
-- list all clusters
-- create cluster
-- create a new aurora dsql cluster for distributed sql workloads.
-- delete an aurora dsql cluster when it is no longer needed.
-- serverless
-- get cluster
-- update the configuration of an aurora dsql cluster.
 slug: distributed-sql-management
+source_filename: distributed-sql-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Distributed SQL Management Workflow\n  description: Workflow capability for creating and managing distributed SQL clusters with Amazon Aurora DSQL including multi-region configurations.\n  tags:\n    - Amazon Aurora DSQL\n    - Distributed SQL\n    - PostgreSQL\n    - Serverless\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: dsql\n    from: shared/aurora-dsql-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: distributed-sql-rest\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: Distributed SQL cluster management\n          operations:\n            - method: POST\n              name: create-cluster\n              description: Create a new cluster\n              call: \"dsql.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n       \
   \     - method: GET\n              name: list-clusters\n              description: List all clusters\n              call: \"dsql.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: distributed-sql-mcp\n      transport: http\n      tools:\n        - name: list-clusters\n          description: List all Aurora DSQL clusters to understand available databases.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"dsql.list-clusters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-cluster\n          description: Create a new Aurora DSQL cluster for distributed SQL workloads.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"dsql.create-cluster\"\n          outputParameters:\n            - type: object\n              mapping:\
   \ \"$.\"\n\n        - name: get-cluster\n          description: Get the current status and configuration of an Aurora DSQL cluster.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"dsql.get-cluster\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-cluster-endpoint\n          description: Get the PostgreSQL-compatible connection endpoint for an Aurora DSQL cluster.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"dsql.get-cluster-endpoint\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-cluster\n          description: Update the configuration of an Aurora DSQL cluster.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"dsql.update-cluster\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\

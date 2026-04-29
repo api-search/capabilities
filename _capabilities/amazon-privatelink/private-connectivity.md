@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-privatelink-openapi.yaml
+  format: yaml
+  label: amazon-privatelink
+  slug: amazon-privatelink
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-privatelink/refs/heads/main/openapi/amazon-privatelink-openapi.yaml
 categories: []
 consumed_apis:
 - amazon-privatelink
@@ -34,44 +41,46 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- Network Engineer
+- create endpoint
+- accept pending vpc endpoint connection requests
 - endpoint connection management
+- Platform Engineer
+- private vpc connectivity workflow
+- vpc endpoint service provider management
+- list vpc endpoint services
+- reject vpc endpoint connection requests
+- private connectivity
+- list connections
+- list endpoint services
+- Network Engineer
 - aws
-- zero trust
-- security
+- list vpc endpoints in the account
 - amazon
+- accept connections
 - create a vpc endpoint service
+- create a vpc endpoint service backed by a load balancer
+- consumes endpoint services and manages vpc endpoints for internal services
+- list endpoint connections
+- security
+- zero trust
+- manages vpc endpoint services and private connectivity architecture
+- list available vpc endpoint services for private connectivity
 - list pending and active connections to endpoint services
 - vpc endpoint consumer management
-- consumes endpoint services and manages vpc endpoints for internal services
-- manages vpc endpoint services and private connectivity architecture
-- create vpc endpoint
-- list vpc endpoint services
-- endpoint services
-- list available vpc endpoint services for private connectivity
-- Platform Engineer
-- networking
-- vpc endpoint service provider management
-- accept pending vpc endpoint connection requests
-- accept connections
-- list endpoint connections
-- create endpoint service
-- list connections
-- list vpc endpoints in the account
-- create a private vpc endpoint for an aws service or endpoint service
-- accept endpoint connections
-- private connectivity
-- vpc
 - list endpoints
+- endpoint services
+- vpc
+- accept endpoint connections
 - create a vpc endpoint
-- private vpc connectivity workflow
-- list endpoint services
-- create a vpc endpoint service backed by a load balancer
-- reject vpc endpoint connection requests
-- reject endpoint connections
 - list vpc endpoints
-- create endpoint
+- create a private vpc endpoint for an aws service or endpoint service
+- reject endpoint connections
+- create vpc endpoint
+- create endpoint service
+- networking
 slug: private-connectivity
+source_filename: private-connectivity.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon PrivateLink Private Connectivity\n  description: Workflow capability for establishing and managing private connectivity between VPCs and AWS services using Amazon PrivateLink. Covers endpoint service creation, VPC endpoint management, and connection lifecycle for network engineers and platform teams.\n  tags:\n    - Amazon\n    - AWS\n    - Networking\n    - Private Connectivity\n    - VPC\n    - Security\n    - Zero Trust\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-privatelink\n      location: ./shared/amazon-privatelink.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: private-connectivity-api\n      description: Unified REST API for Amazon PrivateLink private connectivity workflows.\n\
   \      resources:\n        - path: /v1/endpoint-services\n          name: endpoint-services\n          description: VPC endpoint service provider management\n          operations:\n            - method: GET\n              name: list-endpoint-services\n              description: List VPC endpoint services\n              call: \"amazon-privatelink.describe-endpoint-services\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-endpoint-service\n              description: Create a VPC endpoint service\n              call: \"amazon-privatelink.create-endpoint-service\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/endpoints\n          name: endpoints\n          description: VPC endpoint consumer management\n          operations:\n            - method: GET\n              name: list-endpoints\n              description:\
   \ List VPC endpoints\n              call: \"amazon-privatelink.describe-endpoints\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-endpoint\n              description: Create a VPC endpoint\n              call: \"amazon-privatelink.create-endpoint\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/connections\n          name: connections\n          description: Endpoint connection management\n          operations:\n            - method: GET\n              name: list-connections\n              description: List endpoint connections\n              call: \"amazon-privatelink.describe-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: accept-connections\n              description: Accept endpoint connections\n\

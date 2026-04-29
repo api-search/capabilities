@@ -29,65 +29,67 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list vectorize indexes
-- gateway delete gateway
-- artificial intelligence
-- security
-- gateway get gateway
-- list ai gateway logs.
-- real-time communication
-- dns
-- edge
-- vector database
-- list ai gateways.
-- web performance
-- ai create response
-- run an ai model.
-- create chat completion
-- vectorize insert vectors
-- chat completions.
-- api gateway
-- containers
-- create an ai gateway.
-- gateway list logs
+- machine learning
 - ai create embeddings
+- text embeddings.
+- vectorize query vectors
+- edge computing
+- list vectorize indexes.
+- list ai gateway instances.
+- create an ai gateway.
+- cdn
+- ai gateway management.
+- containers
+- generate text embeddings.
+- platform
+- serverless
+- list ai gateway logs.
+- delete an ai gateway.
+- create embeddings
+- list vectorize indexes
+- cloudflare
+- ai execute model
+- ai create response
+- dns
+- gateway list logs
+- vectorize delete index
+- api gateway
+- list ai gateways
+- chat completions.
 - gateway create gateway
+- web performance
+- gateway get gateway
+- get ai gateway details.
+- insert vectors into an index.
+- vectorize insert vectors
+- vectorize create index
+- cloud
+- security
+- create an ai response.
+- gateway delete gateway
+- real-time communication
+- create chat completion
+- artificial intelligence
+- create a vectorize index.
+- vector database
+- ai gateway
+- create a text completion.
+- create a chat completion.
+- ddos protection
+- delete a vectorize index.
+- vectorize list indexes
 - object storage
 - ai create chat completion
-- create a chat completion.
-- perform similarity query.
-- cdn
-- cloud
-- generate text embeddings.
-- create embeddings
-- create an ai response.
-- gateway list gateways
-- machine learning
-- ai execute model
-- delete an ai gateway.
-- vectorize query vectors
-- insert vectors into an index.
-- vectorize create index
-- text embeddings.
-- delete a vectorize index.
-- cloudflare
-- ai gateway management.
-- ai gateway
-- list ai gateways
-- vectorize list indexes
-- ddos protection
 - vectorize index management.
-- list vectorize indexes.
-- get ai gateway details.
-- platform
-- vectorize delete index
-- serverless
-- edge computing
-- create a text completion.
-- create a vectorize index.
-- list ai gateway instances.
+- list ai gateways.
+- gateway list gateways
+- edge
+- perform similarity query.
+- run an ai model.
 - ai create text completion
 slug: ai-and-ml
+source_filename: ai-and-ml.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Cloudflare AI and ML\"\n  description: \"AI and machine learning capabilities combining Workers AI model inference, AI Gateway for observability and control, and Vectorize for vector search. Used by AI/ML engineers building intelligent applications at the edge.\"\n  tags:\n    - Cloudflare\n    - Artificial Intelligence\n    - Machine Learning\n    - Vector Database\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CLOUDFLARE_API_TOKEN: CLOUDFLARE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: cloudflare-workers-ai\n      location: ./shared/workers-ai.yaml\n    - import: cloudflare-ai-gateway\n      location: ./shared/ai-gateway.yaml\n    - import: cloudflare-vectorize\n      location: ./shared/vectorize.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: ai-ml-api\n      description: \"Unified REST API for Cloudflare AI and ML services.\"\n      resources:\n\
   \        - path: /v1/chat-completions\n          name: chat-completions\n          description: \"Chat completions.\"\n          operations:\n            - method: POST\n              name: create-chat-completion\n              description: \"Create a chat completion.\"\n              call: \"cloudflare-workers-ai.create-chat-completion\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/embeddings\n          name: embeddings\n          description: \"Text embeddings.\"\n          operations:\n            - method: POST\n              name: create-embeddings\n              description: \"Generate text embeddings.\"\n              call: \"cloudflare-workers-ai.create-embeddings\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
   \        - path: /v1/ai-gateways\n          name: ai-gateways\n          description: \"AI Gateway management.\"\n          operations:\n            - method: GET\n              name: list-ai-gateways\n              description: \"List AI gateways.\"\n              call: \"cloudflare-ai-gateway.list-ai-gateways\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vectorize-indexes\n          name: vectorize-indexes\n          description: \"Vectorize index management.\"\n          operations:\n            - method: GET\n              name: list-vectorize-indexes\n              description: \"List Vectorize indexes.\"\n              call: \"cloudflare-vectorize.list-vectorize-indexes\"\n              with:\n                account_id: \"rest.account_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"\

@@ -50,47 +50,49 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- compute
-- cloud compute management business domain for amazon ec2.
-- aws
-- reboot instances
-- startInstances
+- describe images
 - terminate instances
-- amazon ec2 reboot instances
-- workflow capability for cloud compute management.
-- stopInstances
+- deregisterImage
+- amazon ec2 launch ec2 instances
+- engineers managing amazon ec2 resources on aws.
+- deregister image
+- cloud compute management business domain for amazon ec2.
+- virtual machines
+- rebootInstances
+- start instances
+- run instances
 - amazon ec2 describe amis
+- amazon ec2 reboot instances
+- runInstances
+- amazon ec2 start stopped instances
+- workflow capability for cloud compute management.
+- describe instance status
+- amazon ec2 create an ami from an instance
+- describeInstances
+- stop instances
+- aws
+- compute
+- amazon ec2 deregister an ami
+- amazon ec2
+- describe instances
+- iaas
+- describeInstanceStatus
+- startInstances
+- createImage
+- cloud computing
+- stopInstances
+- amazon ec2 describe ec2 instances
+- reboot instances
 - amazon ec2 stop running instances
+- create image
+- describeImages
+- infrastructure
+- terminateInstances
 - amazon ec2 terminate instances
 - amazon ec2 describe instance status
-- terminateInstances
-- amazon ec2 create an ami from an instance
-- virtual machines
-- create image
-- describe instances
-- rebootInstances
-- describeInstances
-- iaas
-- amazon ec2 start stopped instances
-- describe instance status
-- infrastructure
-- run instances
-- describe images
-- cloud computing
-- describeInstanceStatus
-- createImage
-- describeImages
-- deregister image
-- amazon ec2
-- engineers managing amazon ec2 resources on aws.
-- amazon ec2 deregister an ami
-- start instances
-- stop instances
-- deregisterImage
-- runInstances
-- amazon ec2 describe ec2 instances
-- amazon ec2 launch ec2 instances
 slug: ec2-management
+source_filename: ec2-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EC2 Cloud Compute Management\"\n  description: \"Unified capability for managing EC2 instances, AMIs, security groups, and networking for cloud infrastructure engineers.\"\n  tags:\n    - Amazon EC2\n    - AWS\n    - Compute\n    - Cloud Computing\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ec2\n      location: ./shared/ec2.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: ec2-api\n      description: \"Unified REST API for Cloud Compute Management.\"\n      resources:\n        - path: /v1/?Action=RunInstances\n          name: runInstances\n          description: \"Amazon EC2 Launch EC2 Instances\"\n          operations:\n            - method: GET\n              name: runInstances\n              description: \"\
   Amazon EC2 Launch EC2 Instances\"\n              call: \"ec2.runInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/?Action=DescribeInstances\n          name: describeInstances\n          description: \"Amazon EC2 Describe EC2 Instances\"\n          operations:\n            - method: GET\n              name: describeInstances\n              description: \"Amazon EC2 Describe EC2 Instances\"\n              call: \"ec2.describeInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/?Action=StartInstances\n          name: startInstances\n          description: \"Amazon EC2 Start Stopped Instances\"\n          operations:\n            - method: GET\n              name: startInstances\n              description: \"Amazon EC2 Start Stopped Instances\"\n              call: \"ec2.startInstances\"\n              outputParameters:\n       \
   \         - type: object\n                  mapping: \"$.\"\n        - path: /v1/?Action=StopInstances\n          name: stopInstances\n          description: \"Amazon EC2 Stop Running Instances\"\n          operations:\n            - method: GET\n              name: stopInstances\n              description: \"Amazon EC2 Stop Running Instances\"\n              call: \"ec2.stopInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/?Action=TerminateInstances\n          name: terminateInstances\n          description: \"Amazon EC2 Terminate Instances\"\n          operations:\n            - method: GET\n              name: terminateInstances\n              description: \"Amazon EC2 Terminate Instances\"\n              call: \"ec2.terminateInstances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/?Action=RebootInstances\n          name: rebootInstances\n\

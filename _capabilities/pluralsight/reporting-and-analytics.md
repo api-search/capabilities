@@ -1,4 +1,29 @@
 ---
+api_specs:
+- filename: content-progress.yml
+  format: yaml
+  label: pluralsight-content-progress
+  slug: pluralsight-content-progress
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/content-progress.yml
+- filename: course-progress.yml
+  format: yaml
+  label: pluralsight-course-progress
+  slug: pluralsight-course-progress
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/course-progress.yml
+- filename: course-daily-usage.yml
+  format: yaml
+  label: pluralsight-course-daily-usage
+  slug: pluralsight-course-daily-usage
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/course-daily-usage.yml
+- filename: reports-rest.yml
+  format: yaml
+  label: pluralsight-reports-rest
+  slug: pluralsight-reports-rest
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/pluralsight/refs/heads/main/openapi/reports-rest.yml
 categories:
 - analytics
 consumed_apis:
@@ -38,43 +63,45 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- skills assessment
-- courses
-- download a course usage report as csv. deprecated - migrate to graphql.
-- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
-- analytics
-- query course progress
-- pluralsight
-- download a course usage report as csv
-- track user course progress including completion status and viewing history for video courses.
-- download course completion report
-- video training
-- learning
-- track user course progress and completion status
 - query course daily usage
-- education
-- course usage reports as csv downloads (legacy rest, deprecated)
-- reporting
-- engineering metrics
-- download a course completion report as csv. deprecated - migrate to graphql.
-- user progress across all content types including videos, guides, paths, and projects
-- course completion
-- download user report
-- retrieve daily course engagement metrics and usage statistics.
-- download a user report as csv. deprecated - migrate to graphql.
-- technology
-- download a course completion report as csv
-- user reports as csv downloads (legacy rest, deprecated)
+- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
 - track user progress across all content types
-- daily course engagement metrics and usage statistics
+- retrieve daily course engagement metrics and usage statistics.
+- courses
 - learning progress
-- download a user report as csv
-- download course usage report
-- user course progress including completion status and viewing history
-- retrieve daily course engagement metrics
+- pluralsight
+- reporting
 - query content progress
+- daily course engagement metrics and usage statistics
+- download user report
+- query course progress
+- course completion
+- download a user report as csv
+- engineering metrics
+- video training
+- user course progress including completion status and viewing history
+- download course completion report
+- user progress across all content types including videos, guides, paths, and projects
+- skills assessment
 - course completion reports as csv downloads (legacy rest, deprecated)
+- download a user report as csv. deprecated - migrate to graphql.
+- user reports as csv downloads (legacy rest, deprecated)
+- technology
+- track user course progress including completion status and viewing history for video courses.
+- download a course usage report as csv. deprecated - migrate to graphql.
+- download a course completion report as csv
+- analytics
+- retrieve daily course engagement metrics
+- download course usage report
+- download a course usage report as csv
+- track user course progress and completion status
+- learning
+- course usage reports as csv downloads (legacy rest, deprecated)
+- download a course completion report as csv. deprecated - migrate to graphql.
+- education
 slug: reporting-and-analytics
+source_filename: reporting-and-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Pluralsight Reporting And Analytics\"\n  description: \"Unified workflow for L&D managers to track learning progress, course completions, daily usage patterns, and generate reports. Combines content progress, course progress, course daily usage, and reports REST APIs.\"\n  tags:\n    - Pluralsight\n    - Reporting\n    - Analytics\n    - Learning Progress\n    - Course Completion\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PLURALSIGHT_BEARER_TOKEN: PLURALSIGHT_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: pluralsight-content-progress\n      location: ./shared/content-progress.yaml\n    - import: pluralsight-course-progress\n      location: ./shared/course-progress.yaml\n    - import: pluralsight-course-daily-usage\n      location: ./shared/course-daily-usage.yaml\n    - import: pluralsight-reports-rest\n      location: ./shared/reports-rest.yaml\n\n  exposes:\n\
   \    - type: rest\n      port: 8084\n      namespace: reporting-analytics-api\n      description: \"Unified REST API for Pluralsight reporting and analytics including learning progress, course completions, usage, and legacy reports.\"\n      resources:\n        - path: /v1/content-progress\n          name: content-progress\n          description: \"User progress across all content types including videos, guides, paths, and projects\"\n          operations:\n            - method: POST\n              name: query-content-progress\n              description: \"Track user progress across all content types\"\n              call: \"pluralsight-content-progress.query-content-progress\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/course-progress\n          name:\
   \ course-progress\n          description: \"User course progress including completion status and viewing history\"\n          operations:\n            - method: POST\n              name: query-course-progress\n              description: \"Track user course progress and completion status\"\n              call: \"pluralsight-course-progress.query-course-progress\"\n              with:\n                query: \"rest.query\"\n                variables: \"rest.variables\"\n                operationName: \"rest.operationName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/course-daily-usage\n          name: course-daily-usage\n          description: \"Daily course engagement metrics and usage statistics\"\n          operations:\n            - method: POST\n              name: query-course-daily-usage\n              description: \"Retrieve daily course engagement metrics\"\n              call: \"pluralsight-course-daily-usage.query-course-daily-usage\"\

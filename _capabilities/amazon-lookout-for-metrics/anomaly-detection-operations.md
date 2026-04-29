@@ -55,71 +55,73 @@ personas: []
 provider_name: Amazon Lookout for Metrics
 provider_slug: amazon-lookout-for-metrics
 search_terms:
-- monitoring
-- get detector details
+- machine learning
+- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
+- operations
+- create a new anomaly detector for a set of business metrics
+- anomaly detection
+- list anomaly group related metrics
+- ml-powered detection of anomalies in business and operational metrics
+- describe anomaly detector
+- manage anomaly detectors
+- get anomaly
+- deactivate anomaly detector
+- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
 - aws
 - list all anomaly detectors
-- update detector
-- amazon
-- list anomaly group summaries
-- submit feedback
-- get configuration and status details of an anomaly detector
-- activate an anomaly detector to begin monitoring metrics
-- stop an anomaly detector from monitoring metrics
-- list summaries of detected anomaly groups for investigation
-- list anomaly group related metrics
-- monitoring and assessment of metric data quality
-- delete detector
-- anomaly alerts
-- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
-- deactivate anomaly detector
-- business intelligence
-- create a new anomaly detector for a set of business metrics
-- list all configured anomaly alerts
-- get feedback
-- describe anomaly detector
-- get anomaly group
-- get detector
-- anomaly group results
-- list anomaly detectors
-- create a new anomaly detector
-- list anomalies
-- operations
-- get full details of a specific anomaly group including contributing metrics
-- Operations Engineer
-- list all configured anomaly detectors
-- detection feedback
-- ml-powered detection of anomalies in business and operational metrics
-- create detector
-- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
-- single anomaly detector
-- list all alerts
-- machine learning
-- activate anomaly detector
-- list detectors
-- create an alert
-- configuration and management of anomaly alert notifications
-- list all metrics that contributed to an anomaly group
 - metrics
+- create detector
+- get detector details
+- submit feedback
+- stop an anomaly detector from monitoring metrics
+- detection feedback
 - put feedback
-- submit anomaly feedback
-- create alert
-- Data Scientist
-- get anomaly
-- get anomaly feedback
-- anomaly detection
-- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
-- manage anomaly detectors
-- update detector configuration
-- get anomaly group details
-- delete a detector
-- list alerts
+- list all alerts
+- list anomaly group summaries
 - retrieve previously submitted anomaly detection feedback
-- submit feedback on anomaly detections to improve ml model accuracy
+- monitoring and assessment of metric data quality
+- activate an anomaly detector to begin monitoring metrics
+- activate anomaly detector
+- Operations Engineer
+- delete a detector
+- get anomaly group details
+- get full details of a specific anomaly group including contributing metrics
+- monitoring
+- create alert
+- amazon
 - create an alert to receive notifications when anomalies are detected
+- update detector configuration
+- anomaly group results
+- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
+- get anomaly feedback
 - single anomaly group
+- get detector
+- list anomalies
+- list detectors
+- list all configured anomaly alerts
+- Data Scientist
+- get configuration and status details of an anomaly detector
+- configuration and management of anomaly alert notifications
+- list all configured anomaly detectors
+- business intelligence
+- create an alert
+- delete detector
+- list anomaly detectors
+- get anomaly group
+- anomaly alerts
+- list all metrics that contributed to an anomaly group
+- update detector
+- get feedback
 - create anomaly detector
+- list summaries of detected anomaly groups for investigation
+- list alerts
+- submit anomaly feedback
+- create a new anomaly detector
+- single anomaly detector
+- submit feedback on anomaly detections to improve ml model accuracy
 slug: anomaly-detection-operations
+source_filename: anomaly-detection-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Lookout for Metrics - Anomaly Detection Operations\"\n  description: \"Workflow capability for data science and operations teams to manage anomaly detectors, monitor metric anomalies, configure alerts, and provide detection feedback using Amazon Lookout for Metrics.\"\n  tags:\n    - Amazon\n    - Anomaly Detection\n    - Machine Learning\n    - Metrics\n    - Monitoring\n    - Operations\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: lookout-for-metrics\n      location: ./shared/lookout-for-metrics.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: anomaly-detection-api\n      description: \"Unified REST API for Amazon Lookout for Metrics anomaly detection operations.\"\n      resources:\n\
   \        - path: /v1/detectors\n          name: detectors\n          description: \"Manage anomaly detectors\"\n          operations:\n            - method: POST\n              name: create-detector\n              description: \"Create a new anomaly detector\"\n              call: \"lookout-for-metrics.create-anomaly-detector\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-detectors\n              description: \"List all anomaly detectors\"\n              call: \"lookout-for-metrics.list-anomaly-detectors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/detectors/{id}\n          name: detector\n          description: \"Single anomaly detector\"\n          operations:\n            - method: GET\n              name: get-detector\n              description: \"Get detector details\"\n              call: \"lookout-for-metrics.describe-anomaly-detector\"\
   \n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-detector\n              description: \"Update detector configuration\"\n              call: \"lookout-for-metrics.update-anomaly-detector\"\n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-detector\n              description: \"Delete a detector\"\n              call: \"lookout-for-metrics.delete-anomaly-detector\"\n              with:\n                AnomalyDetectorArn: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/anomalies\n          name: anomalies\n          description: \"Anomaly group results\"\n\

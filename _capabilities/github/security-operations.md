@@ -59,76 +59,78 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- listSecretScanningAlertsForRepository
-- get a code scanning alert
-- enable vulnerability alerts
-- update a dependabot alert
-- update default setup
-- security
-- individual dependabot alert
-- listDependabotAlertsForRepository
-- list analyses
-- get a secret scanning alert
-- check if vulnerability alerts are enabled
-- vulnerability management
-- updateSecretScanningAlert
-- code scanning
-- update secret scanning alert
-- software development
-- dependabot alert management
-- updateCodeScanningAlert
-- getCodeScanningAlert
-- update a code scanning alert (dismiss, reopen)
-- update a secret scanning alert (resolve, reopen)
-- get code scanning default setup configuration
-- list code scanning analyses
-- code scanning analyses
-- update a code scanning alert
-- enableVulnerabilityAlerts
-- get a code scanning analysis
 - get a dependabot alert
-- list secret scanning locations
-- individual code scanning alert
-- update code scanning alert
-- update dependabot alert
-- list code scanning alerts for a repository
-- list secret scanning alerts
 - vulnerability alert settings
-- check vulnerability alert status
-- get code scanning alert
-- updateDependabotAlert
-- check vulnerability alerts
-- pipelines
-- getSecretScanningAlert
-- update a secret scanning alert
+- code
+- secret scanning alert management
+- updateSecretScanningAlert
+- github
 - listCodeScanningAnalysesForRepository
-- get code scanning analysis
-- t1
-- update code scanning default setup
-- secret scanning
-- checkIfVulnerabilityAlertsAreEnabledForRepository
-- individual secret scanning alert
+- check vulnerability alerts
+- individual dependabot alert
+- dependabot alert management
+- get a code scanning analysis
+- get a secret scanning alert
+- updateDependabotAlert
+- enable vulnerability alerts
+- check if vulnerability alerts are enabled
+- platform
+- update a secret scanning alert
+- updateCodeScanningAlert
+- list dependabot alerts
+- source control
+- list code scanning analyses
 - get default setup
 - upload sarif analysis data
-- get secret scanning alert
-- code scanning alert management
-- github
-- listCodeScanningAlertsForRepository
-- getDependabotAlert
-- secret scanning alert management
-- list locations for a secret scanning alert
-- platform
+- pipelines
 - list dependabot secrets
-- code
-- list code scanning alerts
-- source control
-- dependabot
-- get dependabot alert
-- upload sarif
+- secret scanning
+- listCodeScanningAlertsForRepository
+- list secret scanning alerts
+- getSecretScanningAlert
 - disable vulnerability alerts
+- list analyses
+- check vulnerability alert status
+- update dependabot alert
+- listDependabotAlertsForRepository
+- update a dependabot alert
+- software development
+- upload sarif
+- individual secret scanning alert
+- enableVulnerabilityAlerts
+- vulnerability management
+- update a secret scanning alert (resolve, reopen)
+- security
+- update code scanning alert
+- code scanning analyses
+- checkIfVulnerabilityAlertsAreEnabledForRepository
+- update secret scanning alert
+- getCodeScanningAlert
+- get code scanning alert
+- update default setup
+- get code scanning analysis
+- code scanning
+- get secret scanning alert
+- t1
+- listSecretScanningAlertsForRepository
+- update code scanning default setup
+- code scanning alert management
+- list code scanning alerts for a repository
+- dependabot
+- individual code scanning alert
+- get a code scanning alert
+- getDependabotAlert
 - update a dependabot alert (dismiss, reopen)
-- list dependabot alerts
+- list secret scanning locations
+- get dependabot alert
+- list code scanning alerts
+- update a code scanning alert
+- list locations for a secret scanning alert
+- update a code scanning alert (dismiss, reopen)
+- get code scanning default setup configuration
 slug: security-operations
+source_filename: security-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"GitHub Security Operations\"\n  description: \"Unified workflow for security operations combining code scanning, Dependabot, and secret scanning. Used by security engineers for vulnerability management, dependency auditing, and secret leak remediation.\"\n  tags:\n    - GitHub\n    - Security\n    - Code Scanning\n    - Dependabot\n    - Secret Scanning\n    - Vulnerability Management\n  personas:\n    - security engineers\n    - application security specialists\n    - compliance officers\n  created: \"2026-04-17\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GITHUB_TOKEN: GITHUB_TOKEN\n\ncapability:\n  consumes:\n    - import: github-security\n      location: \"./shared/security.yaml\"\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: github-security-ops-api\n      description: \"Unified REST API for security operations combining code scanning, Dependabot, and secret scanning.\"\
   \n      resources:\n        - path: /v1/repositories/{owner}/{repo}/code-scanning/alerts\n          name: code-scanning-alerts\n          description: \"Code scanning alert management\"\n          operations:\n            - method: GET\n              name: listCodeScanningAlertsForRepository\n              description: \"List code scanning alerts\"\n              call: \"github-security.listCodeScanningAlertsForRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/code-scanning/alerts/{alert_number}\n          name: code-scanning-alert\n          description: \"Individual code scanning alert\"\n          operations:\n            - method: GET\n              name: getCodeScanningAlert\n              description: \"Get a code scanning alert\"\n              call: \"github-security.getCodeScanningAlert\"\n              with:\n                alert_number: \"rest.alert_number\"\n   \
   \           outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: updateCodeScanningAlert\n              description: \"Update a code scanning alert\"\n              call: \"github-security.updateCodeScanningAlert\"\n              with:\n                alert_number: \"rest.alert_number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/code-scanning/analyses\n          name: code-scanning-analyses\n          description: \"Code scanning analyses\"\n          operations:\n            - method: GET\n              name: listCodeScanningAnalysesForRepository\n              description: \"List analyses\"\n              call: \"github-security.listCodeScanningAnalysesForRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/repositories/{owner}/{repo}/dependabot/alerts\n\

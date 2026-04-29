@@ -57,65 +57,67 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- administration
-- list servers
-- get liberty server runtime information
-- list applications on traditional was
-- get liberty server info
-- jmx mbean access
-- stop a was server
-- list registered mbeans
-- liberty
-- cloud native
-- get liberty health check results
-- list was servers
-- list collective members
-- application server
-- enterprise java
-- list was configuration resource types
-- list was servers in the cell
-- start a was server
-- list deployed applications on liberty
-- was stop server
-- server management
-- cluster management
-- list collective clusters
-- list deployed applications on traditional websphere
-- collective member management
-- application lifecycle management across was and liberty
-- list was clusters
-- ibm websphere
-- liberty list applications
-- list liberty collective members
-- list installed liberty features
-- microservices
-- get liberty config
-- liberty get server info
-- list was applications
-- get was config
-- list mbeans
-- list members
-- list clusters in liberty collective
-- get was health
-- list jmx mbeans via rest connector
-- get liberty server information
-- liberty feature management
-- was list servers
-- get controller info
-- get was server health status
-- was list applications
 - list applications on liberty
+- jmx mbean access
+- get liberty server runtime information
+- list features
+- middleware
+- cluster management
+- cloud native
+- list deployed applications on traditional websphere
+- get collective controller information
+- was stop server
+- ibm websphere
+- list clusters in liberty collective
+- get was config
+- was start server
+- list servers
+- list liberty collective members
+- list liberty applications
+- enterprise java
+- liberty get server info
+- stop a was server
+- list liberty collective clusters
+- list was servers
+- list mbeans
+- liberty
+- j2ee
+- was list servers
+- was list applications
+- list deployed applications on liberty
+- administration
+- get liberty server info
+- list was applications
+- list was configuration resource types
+- application lifecycle management across was and liberty
+- get liberty health check results
+- liberty list applications
+- list collective members
+- list registered mbeans
+- get controller info
+- list installed liberty features
+- list members
+- collective member management
+- server configuration
+- get was health
+- microservices
+- list applications on traditional was
 - get liberty health
 - get liberty server configuration
-- get collective controller information
-- j2ee
-- middleware
-- list features
-- list liberty collective clusters
-- was start server
-- list liberty applications
-- server configuration
+- start a was server
+- get liberty config
+- get was server health status
+- list was clusters
+- get liberty server information
+- server management
+- liberty feature management
+- list was servers in the cell
+- list jmx mbeans via rest connector
+- application server
+- list collective clusters
 slug: server-administration
+source_filename: server-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"WebSphere Server Administration\"\n  description: \"Unified workflow for administering WebSphere Application Server and Liberty environments, combining traditional admin, Liberty admin, collective controller, and JMX connector APIs for platform administrators.\"\n  tags:\n    - IBM WebSphere\n    - Administration\n    - Server Management\n    - Liberty\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEBSPHERE_USERNAME: WEBSPHERE_USERNAME\n      WEBSPHERE_PASSWORD: WEBSPHERE_PASSWORD\n      LIBERTY_USERNAME: LIBERTY_USERNAME\n      LIBERTY_PASSWORD: LIBERTY_PASSWORD\n\ncapability:\n  consumes:\n    - import: admin-rest\n      location: ./shared/admin-rest.yaml\n    - import: liberty-admin\n      location: ./shared/liberty-admin.yaml\n    - import: rest-connector\n      location: ./shared/rest-connector.yaml\n    - import: collective-controller\n      location: ./shared/collective-controller.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8080\n      namespace: server-admin-api\n      description: \"Unified REST API for WebSphere server administration.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n          description: \"Application lifecycle management across WAS and Liberty\"\n          operations:\n            - method: GET\n              name: list-was-applications\n              description: \"List applications on traditional WAS\"\n              call: \"admin-rest.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-liberty-applications\n              description: \"List applications on Liberty\"\n              call: \"liberty-admin.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/servers\n          name: servers\n        \
   \  description: \"Server management\"\n          operations:\n            - method: GET\n              name: list-servers\n              description: \"List WAS servers\"\n              call: \"admin-rest.list-servers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-liberty-server-info\n              description: \"Get Liberty server information\"\n              call: \"liberty-admin.get-server-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/clusters\n          name: clusters\n          description: \"Cluster management\"\n          operations:\n            - method: GET\n              name: list-was-clusters\n              description: \"List WAS clusters\"\n              call: \"admin-rest.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\

@@ -35,42 +35,44 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- monitoring
-- alerts
-- get application details for incident investigation
-- list applications for context
-- list applications for incident context
-- analytics
-- incident response
-- get application details for incident context
-- sre
-- list alert conditions for a policy
 - get alerts conditions
 - list alert conditions for a specific policy
-- incidents
-- new relic
-- observability
-- apm
-- devops
-- infrastructure
-- get application
 - list alert violations, optionally filtered to only open ones
-- get alerts violations
-- list alert incidents
-- performance
-- get alerts incidents
-- list applications
-- get applications
-- list alert conditions
-- get application details
-- list alert events
 - platform
-- analysis
-- list alert events filtered by product or entity type
-- list alert violations
-- get alerts events
+- devops
 - list alert incidents, optionally filtered to only open ones
+- sre
+- list alert events filtered by product or entity type
+- apm
+- analysis
+- list alert violations
+- incident response
+- get application details
+- list applications for context
+- list alert conditions
+- monitoring
+- list applications for incident context
+- get applications
+- get application details for incident investigation
+- observability
+- list alert events
+- alerts
+- get alerts events
+- analytics
+- list alert conditions for a policy
+- new relic
+- incidents
+- get alerts violations
+- infrastructure
+- list applications
+- get alerts incidents
+- get application details for incident context
+- list alert incidents
+- get application
+- performance
 slug: incident-response
+source_filename: incident-response.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Incident Response\"\n  description: \"Incident response workflow combining alerts, incidents, violations, and events for SREs investigating and resolving production issues detected by New Relic.\"\n  tags:\n    - New Relic\n    - Incident Response\n    - SRE\n    - Alerts\n    - Incidents\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_API_KEY: NEW_RELIC_API_KEY\n\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: \"Unified REST API for New Relic incident response workflows.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"List alert incidents\"\n          operations:\n            - method: GET\n              name: get-alerts-incidents\n              description:\
   \ \"List alert incidents\"\n              call: \"rest-api.get-alerts-incidents\"\n              with:\n                only_open: \"rest.only_open\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/violations\n          name: violations\n          description: \"List alert violations\"\n          operations:\n            - method: GET\n              name: get-alerts-violations\n              description: \"List alert violations\"\n              call: \"rest-api.get-alerts-violations\"\n              with:\n                only_open: \"rest.only_open\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alert-events\n          name: alert-events\n          description: \"List alert events\"\n          operations:\n            - method: GET\n              name: get-alerts-events\n\
   \              description: \"List alert events\"\n              call: \"rest-api.get-alerts-events\"\n              with:\n                filter[product]: \"rest.filter_product\"\n                filter[entity_type]: \"rest.filter_entity_type\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alert-conditions\n          name: alert-conditions\n          description: \"List alert conditions\"\n          operations:\n            - method: GET\n              name: get-alerts-conditions\n              description: \"List alert conditions for a policy\"\n              call: \"rest-api.get-alerts-conditions\"\n              with:\n                policy_id: \"rest.policy_id\"\n                page: \"rest.page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications\n          name: applications\n       \

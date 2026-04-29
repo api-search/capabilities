@@ -40,47 +40,49 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- submit a suspected fraud record
-- get fraud alerts
-- merchant onboarding risk assessment
-- retrieve ethoca fraud alerts for chargeback prevention
-- look up transaction details to resolve disputes before chargebacks
-- search match database
-- perform risk check on a merchant
-- check merchant risk
-- retrieve ethoca fraud alerts
-- fraud detection
-- submit a confirmed fraud record to the mastercard fraud and loss database
-- suspected fraud record management
-- financial services
-- lookup transaction clarity
-- ethoca fraud alerts
-- risk management
-- get available fraud record statuses
-- lookup transaction
-- submit confirmed fraud
-- submit a confirmed fraud record
-- look up transaction details for clarity
 - update fraud alert
-- ethoca
-- submit suspected fraud
 - match
 - digital identity
+- submit a suspected fraud record
+- lookup transaction clarity
+- lookup transaction
+- submit a confirmed fraud record to the mastercard fraud and loss database
 - search the match database
-- payments
-- open banking
-- fraud prevention
-- search the match database for terminated merchants
-- search terminated merchants
-- match terminated merchant screening
-- get fraud statuses
+- submit a confirmed fraud record
+- ethoca fraud alerts
+- look up transaction details for clarity
+- get fraud alerts
+- perform risk check on a merchant
+- submit suspected fraud
+- financial services
 - update the status of an ethoca fraud alert
-- credit cards
-- mastercard
+- open banking
+- check merchant risk
 - confirmed fraud record management
-- assess merchant risk during onboarding
+- retrieve ethoca fraud alerts
+- fraud prevention
+- match terminated merchant screening
+- get available fraud record statuses
+- merchant onboarding risk assessment
+- risk management
+- search the match database for terminated merchants
+- suspected fraud record management
+- fraud detection
+- credit cards
+- look up transaction details to resolve disputes before chargebacks
+- search match database
 - transaction detail lookups for dispute prevention
+- search terminated merchants
+- mastercard
+- retrieve ethoca fraud alerts for chargeback prevention
+- get fraud statuses
+- assess merchant risk during onboarding
+- ethoca
+- submit confirmed fraud
+- payments
 slug: fraud-prevention-and-risk
+source_filename: fraud-prevention-and-risk.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Fraud Prevention and Risk\"\n  description: \"Unified workflow for fraud analysts and risk managers to detect, report, and manage fraud using Mastercard's fraud database, Ethoca alerts, merchant screening (MATCH), and onboarding risk checks.\"\n  tags:\n    - Mastercard\n    - Fraud Prevention\n    - Risk Management\n    - Ethoca\n    - MATCH\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: confirmed-fraud\n      location: ./shared/confirmed-fraud.yaml\n    - import: suspected-fraud\n      location: ./shared/suspected-fraud.yaml\n    - import: ethoca-alerts\n      location: ./shared/ethoca-alerts.yaml\n    - import: ethoca-consumer-clarity\n      location: ./shared/ethoca-consumer-clarity.yaml\n    - import: ethoca-merchant-services\n\
   \      location: ./shared/ethoca-merchant-self-services.yaml\n    - import: onboard-risk-check\n      location: ./shared/onboard-risk-check.yaml\n    - import: match-pro\n      location: ./shared/match-pro.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: fraud-risk-api\n      description: \"Unified REST API for Mastercard fraud prevention and risk management.\"\n      resources:\n        - path: /v1/confirmed-frauds\n          name: confirmed-frauds\n          description: \"Confirmed fraud record management\"\n          operations:\n            - method: POST\n              name: submit-confirmed-fraud\n              description: \"Submit a confirmed fraud record\"\n              call: \"confirmed-fraud.submit-mastercard-fraud\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/suspected-frauds\n          name: suspected-frauds\n          description: \"Suspected fraud record management\"\n\
   \          operations:\n            - method: POST\n              name: submit-suspected-fraud\n              description: \"Submit a suspected fraud record\"\n              call: \"suspected-fraud.submit-suspected-fraud\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/alerts\n          name: alerts\n          description: \"Ethoca fraud alerts\"\n          operations:\n            - method: GET\n              name: get-fraud-alerts\n              description: \"Retrieve Ethoca fraud alerts\"\n              call: \"ethoca-alerts.get-alerts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transaction-clarity\n          name: transaction-clarity\n          description: \"Transaction detail lookups for dispute prevention\"\n          operations:\n            - method: POST\n              name: lookup-transaction\n              description: \"\

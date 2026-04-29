@@ -42,56 +42,58 @@ personas: []
 provider_name: Amazon Comprehend
 provider_slug: amazon-comprehend
 search_terms:
-- aws
-- amazon
-- detect the dominant language of input text using amazon comprehend.
-- language detection.
 - detect sentiment
-- analyze syntax and parts of speech in text using amazon comprehend.
-- detect sentiment in multiple text documents in one batch call.
-- key phrase extraction.
-- detect language
-- batch detect sentiment
-- detect key phrases
-- sentiment analysis.
-- detect personally identifiable information (pii) entities in text using amazon comprehend.
-- extract key noun phrases from text using amazon comprehend.
-- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
-- sentiment analysis
-- detect the dominant language of text.
-- nlp
-- named entity recognition.
-- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
-- batch entity detection.
-- list classifiers
+- machine learning
+- detect pii
+- detect syntax
 - pii detection.
 - Application Developer
-- extract key phrases from text.
-- detect entities in multiple documents.
-- get properties and status of a specific document classifier.
+- detect language
+- detect the dominant language of input text using amazon comprehend.
 - list available document classifiers.
-- detect pii entities in text.
-- natural language processing
-- machine learning
 - entity recognition
-- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
+- sentiment analysis
 - detect sentiment in multiple documents.
-- uses comprehend for bulk text analysis, topic modeling, and custom model training.
+- describe classifier
+- analyze syntax and parts of speech in text using amazon comprehend.
+- aws
+- batch entity detection.
+- detect named entities (people, places, organizations, dates) in text using amazon comprehend.
+- get properties and status of a specific document classifier.
+- extract key noun phrases from text using amazon comprehend.
+- amazon
+- analyze the sentiment of text (positive, negative, neutral, or mixed) using amazon comprehend.
+- detect key phrases
+- custom text classification.
+- text analysis
+- key phrase extraction.
 - batch detect entities
 - integrates comprehend nlp apis into applications for real-time text analysis.
-- Data Scientist
-- custom text classification.
-- detect entities in multiple text documents in one batch call.
-- batch sentiment analysis.
-- detect syntax
-- list custom document classifiers trained in amazon comprehend.
-- text analysis
 - detect sentiment in text.
+- list classifiers
+- Data Scientist
+- batch detect sentiment
+- detect entities in multiple text documents in one batch call.
+- named entity recognition.
+- detect entities in multiple documents.
+- list custom document classifiers trained in amazon comprehend.
+- language detection.
+- detect personally identifiable information (pii) entities in text using amazon comprehend.
+- extract key phrases from text.
+- uses comprehend for bulk text analysis, topic modeling, and custom model training.
+- detect pii entities in text.
+- nlp
+- natural language processing
+- sentiment analysis.
 - detect named entities in text.
-- detect pii
-- describe classifier
+- end-to-end nlp analysis using entity, sentiment, key phrase, and pii detection.
+- detect the dominant language of text.
+- detect sentiment in multiple text documents in one batch call.
+- batch sentiment analysis.
 - detect entities
 slug: nlp-analysis
+source_filename: nlp-analysis.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Comprehend NLP Analysis\"\n  description: \"Workflow capability for natural language processing analysis including entity recognition, sentiment analysis, key phrase extraction, language detection, PII detection, and custom text classification. Used by data scientists and application developers to extract insights from unstructured text.\"\n  tags:\n    - Amazon\n    - AWS\n    - Natural Language Processing\n    - NLP\n    - Machine Learning\n    - Text Analysis\n    - Sentiment Analysis\n    - Entity Recognition\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: comprehend\n      location: ./shared/comprehend.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: nlp-analysis-api\n      description:\
   \ \"Unified REST API for Amazon Comprehend NLP analysis workflows.\"\n      resources:\n        - path: /v1/analyze/entities\n          name: entity-analysis\n          description: \"Named entity recognition.\"\n          operations:\n            - method: POST\n              name: detect-entities\n              description: \"Detect named entities in text.\"\n              call: \"comprehend.detect-entities\"\n              with:\n                text: \"rest.text\"\n                language_code: \"rest.language_code\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analyze/sentiment\n          name: sentiment-analysis\n          description: \"Sentiment analysis.\"\n          operations:\n            - method: POST\n              name: detect-sentiment\n              description: \"Detect sentiment in text.\"\n              call: \"comprehend.detect-sentiment\"\n              with:\n                text: \"\
   rest.text\"\n                language_code: \"rest.language_code\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analyze/key-phrases\n          name: key-phrase-extraction\n          description: \"Key phrase extraction.\"\n          operations:\n            - method: POST\n              name: detect-key-phrases\n              description: \"Extract key phrases from text.\"\n              call: \"comprehend.detect-key-phrases\"\n              with:\n                text: \"rest.text\"\n                language_code: \"rest.language_code\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analyze/language\n          name: language-detection\n          description: \"Language detection.\"\n          operations:\n            - method: POST\n              name: detect-language\n              description: \"Detect the dominant language of text.\"\

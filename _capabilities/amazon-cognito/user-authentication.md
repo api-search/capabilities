@@ -40,55 +40,57 @@ personas: []
 provider_name: Amazon Cognito
 provider_slug: amazon-cognito
 search_terms:
-- list identity pools
-- create identity pool
-- aws
-- list users in a cognito user pool.
-- amazon
-- list all amazon cognito user pools in the account.
-- describe identity pool
-- list all cognito identity pools.
-- create a new amazon cognito user pool.
-- initiate auth
-- oauth
-- start the authentication flow.
-- get user
-- initiate an authentication flow in cognito.
-- get temporary aws credentials for a federated cognito identity.
-- end-to-end user authentication using user pools and identity pools.
-- create a new user pool.
-- list users in a user pool.
-- list user pools
 - user management
-- delete a user from a cognito user pool.
-- create user pool
-- create user
+- oauth
+- initiate auth
+- get credentials
+- delete user
+- get user
+- get temporary aws credentials for a federated cognito identity.
 - manage cognito user pools.
-- authentication
+- integrates cognito authentication into web and mobile applications.
 - Application Developer
-- manage users within a user pool.
-- federated identity
-- list users
-- get temporary aws credentials.
-- Platform Administrator
-- create a new user in the pool.
+- create a new user pool.
+- get temporary aws credentials for a federated identity.
+- identity
+- create a new amazon cognito user pool.
 - list all user pools.
+- list all cognito identity pools.
+- manages user pools, groups, and identity pool configurations.
+- start the authentication flow.
+- list users in a user pool.
+- authentication
+- list user pools
+- list all identity pools.
+- aws
+- Platform Administrator
+- list users
+- create user
+- initiate an authentication flow in cognito.
+- amazon
+- get details of a specific cognito identity pool.
+- describe identity pool
+- federated identity
 - initiate authentication flows.
-- get details of a specific user in a cognito user pool.
-- manage cognito identity pools.
+- list all amazon cognito user pools in the account.
+- create identity pool
+- create a new user in a cognito user pool.
+- manage users within a user pool.
 - describe user pool
 - create a new cognito identity pool for federated identity management.
-- get details of a specific cognito identity pool.
-- identity
-- manages user pools, groups, and identity pool configurations.
-- create a new user in a cognito user pool.
-- delete user
-- list all identity pools.
-- get temporary aws credentials for a federated identity.
-- integrates cognito authentication into web and mobile applications.
+- list users in a cognito user pool.
+- get temporary aws credentials.
+- manage cognito identity pools.
+- list identity pools
+- delete a user from a cognito user pool.
+- create user pool
+- get details of a specific user in a cognito user pool.
+- create a new user in the pool.
+- end-to-end user authentication using user pools and identity pools.
 - get configuration details of a specific cognito user pool.
-- get credentials
 slug: user-authentication
+source_filename: user-authentication.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Cognito User Authentication\"\n  description: \"Workflow capability for managing user authentication, identity federation, and access control using Amazon Cognito User Pools and Identity Pools. Used by application developers and platform administrators to implement secure sign-up, sign-in, and AWS resource access for web and mobile apps.\"\n  tags:\n    - Amazon\n    - AWS\n    - Authentication\n    - Identity\n    - User Management\n    - OAuth\n    - Federated Identity\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n      COGNITO_USER_POOL_ID: COGNITO_USER_POOL_ID\n      COGNITO_CLIENT_ID: COGNITO_CLIENT_ID\n      COGNITO_IDENTITY_POOL_ID: COGNITO_IDENTITY_POOL_ID\n\ncapability:\n  consumes:\n    - import: cognito-user-pools\n      location: ./shared/cognito-user-pools.yaml\n\
   \    - import: cognito-identity-pools\n      location: ./shared/cognito-identity-pools.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: user-auth-api\n      description: \"Unified REST API for Amazon Cognito user authentication and identity management.\"\n      resources:\n        - path: /v1/user-pools\n          name: user-pools\n          description: \"Manage Cognito user pools.\"\n          operations:\n            - method: GET\n              name: list-user-pools\n              description: \"List all user pools.\"\n              call: \"cognito-user-pools.list-user-pools\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: create-user-pool\n              description: \"Create a new user pool.\"\n              call: \"cognito-user-pools.create-user-pool\"\n              with:\n                pool_name: \"rest.pool_name\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/user-pools/{user_pool_id}/users\n          name: users\n          description: \"Manage users within a user pool.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users in a user pool.\"\n              call: \"cognito-user-pools.list-users\"\n              with:\n                user_pool_id: \"rest.user_pool_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: create-user\n              description: \"Create a new user in the pool.\"\n              call: \"cognito-user-pools.admin-create-user\"\n              with:\n                user_pool_id: \"rest.user_pool_id\"\n                username: \"rest.username\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path:\

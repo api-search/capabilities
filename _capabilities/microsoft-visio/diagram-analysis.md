@@ -23,32 +23,34 @@ provider_name: Microsoft Visio
 provider_slug: microsoft-visio
 search_terms:
 - diagram page operations.
-- get shape
-- list all pages.
-- list shapes on a page.
-- IT Architect
-- diagramming
-- diagram analysis
-- business analysts reviewing process flow diagrams.
-- list all shapes on a diagram page.
-- list shape data items
-- microsoft 365
-- list pages
-- shape operations.
-- list data items attached to a shape.
-- Business Analyst
-- get details of a specific shape.
-- business process
-- shape data operations.
-- list all pages in a visio diagram.
-- microsoft visio
-- it architects analyzing network and system diagrams.
-- flowcharts
-- list shapes
-- analyze visio diagrams programmatically.
-- visualization
 - list data items for a shape.
+- analyze visio diagrams programmatically.
+- diagram analysis
+- flowcharts
+- list data items attached to a shape.
+- shape data operations.
+- business process
+- list shape data items
+- list shapes on a page.
+- diagramming
+- it architects analyzing network and system diagrams.
+- list shapes
+- get shape
+- list all shapes on a diagram page.
+- microsoft 365
+- list all pages in a visio diagram.
+- get details of a specific shape.
+- list pages
+- microsoft visio
+- list all pages.
+- shape operations.
+- business analysts reviewing process flow diagrams.
+- visualization
+- IT Architect
+- Business Analyst
 slug: diagram-analysis
+source_filename: diagram-analysis.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Visio Diagram Analysis\"\n  description: \"Workflow capability for analyzing Visio diagrams including reading pages, shapes, data items, comments, and hyperlinks. Used by business analysts and IT architects to programmatically inspect diagram content.\"\n  tags:\n    - Microsoft Visio\n    - Diagram Analysis\n    - Visualization\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: visio-graph\n      location: ./shared/visio-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: diagram-analysis-api\n      description: \"Unified REST API for Visio diagram analysis.\"\n      resources:\n        - path: /v1/pages\n          name: pages\n          description: \"Diagram page operations.\"\n          operations:\n            - method: GET\n              name:\
   \ list-pages\n              description: \"List all pages.\"\n              call: \"visio-graph.list-pages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shapes\n          name: shapes\n          description: \"Shape operations.\"\n          operations:\n            - method: GET\n              name: list-shapes\n              description: \"List shapes on a page.\"\n              call: \"visio-graph.list-shapes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/shape-data\n          name: shape-data\n          description: \"Shape data operations.\"\n          operations:\n            - method: GET\n              name: list-shape-data-items\n              description: \"List data items for a shape.\"\n              call: \"visio-graph.list-shape-data-items\"\n              outputParameters:\n                - type: object\n               \
   \   mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: diagram-analysis-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Visio diagram analysis.\"\n      tools:\n        - name: list-pages\n          description: \"List all pages in a Visio diagram.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"visio-graph.list-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-shapes\n          description: \"List all shapes on a diagram page.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"visio-graph.list-shapes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-shape\n          description: \"Get details of a specific shape.\"\n          hints:\n            readOnly: true\n          call: \"visio-graph.get-shape\"\n          outputParameters:\n\

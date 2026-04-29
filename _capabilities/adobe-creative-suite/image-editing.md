@@ -55,61 +55,63 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- manage layers
+- product cropping operations
+- remove background
+- product crop
+- graphics
+- apply resize, flatten, or trim operations to a psd
+- create artboards within a psd document
+- create an alpha mask for an image
+- create artboard
 - apply document operations
-- photoshop
+- document-level operations
+- alpha mask creation
+- automation
+- create an alpha mask for an image using adobe sensei ai
+- replace smart object content in a psd document
 - image processing
-- create rendition
+- creative
+- edit text layers in a psd
+- replace smart object content in a psd
+- get the status of an async photoshop job
 - remove the background from an image using adobe sensei ai
 - create renditions from a psd or image
-- graphics
-- read, add, modify, or delete layers in a psd document
-- get the status of an async photoshop job
-- creative
-- auto-crop an image to focus on the primary product
-- auto-crop an image to the primary product
-- get the status of an asynchronous photoshop api job
-- create renditions from a psd or image in jpeg, png, or tiff
-- replace smart object content in a psd
-- video
-- edit text content and styling in psd text layers
-- create artboard
-- document-level operations
-- artboard creation
-- photography
-- apply resize, flatten, or trim operations to a psd document
-- design
-- create an alpha mask for an image using adobe sensei ai
-- product crop
-- job status polling
-- straighten image
-- layer management
-- create mask
-- edit smart object
-- product cropping operations
-- automation
-- image straightening
-- straighten a rotated image
-- edit text layers in a psd
-- adobe
-- remove background
-- create artboards within a psd document
-- image editing
-- text layer editing
-- create an alpha mask for an image
-- rendition creation
-- background removal operations
-- edit text layers
-- manage layers in a psd document
 - smart object editing
+- auto-crop an image to focus on the primary product
+- read, add, modify, or delete layers in a psd document
+- image editing
+- create mask
+- layer management
+- edit smart object
+- design
 - create artboards in a psd document
-- get job status
-- replace smart object content in a psd document
-- apply resize, flatten, or trim operations to a psd
-- alpha mask creation
+- photography
+- create renditions from a psd or image in jpeg, png, or tiff
+- background removal operations
+- create rendition
+- job status polling
 - remove the background from an image
+- edit text layers
+- text layer editing
+- manage layers in a psd document
+- manage layers
+- adobe
+- straighten image
+- edit text content and styling in psd text layers
+- straighten a rotated image
+- photoshop
+- artboard creation
+- rendition creation
 - automatically straighten a rotated image
+- video
+- image straightening
+- apply resize, flatten, or trim operations to a psd document
+- get the status of an asynchronous photoshop api job
+- auto-crop an image to the primary product
+- get job status
 slug: image-editing
+source_filename: image-editing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Image Editing\"\n  description: \"Automated image editing and processing workflow using the Adobe Photoshop API for background removal, masking, layer management, rendition creation, document operations, and smart object editing. Used by production designers, e-commerce teams, and digital asset managers who need to automate image processing at scale.\"\n  tags:\n    - Adobe\n    - Photoshop\n    - Image Editing\n    - Image Processing\n    - Layer Management\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_PHOTOSHOP_TOKEN: ADOBE_PHOTOSHOP_TOKEN\n\ncapability:\n  consumes:\n    - import: photoshop\n      location: ./shared/photoshop.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: image-editing-api\n      description: \"Unified REST API for automated image editing and processing using Adobe Photoshop.\"\n      resources:\n\
   \        - path: /v1/cutouts\n          name: cutouts\n          description: \"Background removal operations\"\n          operations:\n            - method: POST\n              name: remove-background\n              description: \"Remove the background from an image\"\n              call: \"photoshop.remove-background\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/masks\n          name: masks\n          description: \"Alpha mask creation\"\n          operations:\n            - method: POST\n              name: create-mask\n              description: \"Create an alpha mask for an image\"\n              call: \"photoshop.create-mask\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n           \
   \       mapping: \"$.\"\n\n        - path: /v1/product-crops\n          name: product-crops\n          description: \"Product cropping operations\"\n          operations:\n            - method: POST\n              name: product-crop\n              description: \"Auto-crop an image to the primary product\"\n              call: \"photoshop.product-crop\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/straighten-jobs\n          name: straighten-jobs\n          description: \"Image straightening\"\n          operations:\n            - method: POST\n              name: straighten-image\n              description: \"Straighten a rotated image\"\n              call: \"photoshop.straighten-image\"\n              with:\n                input: \"rest.input\"\n                output: \"rest.output\"\n              outputParameters:\n\

@@ -35,37 +35,39 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
-- aws
 - amazon ecr describe repositories
-- amazon ecr batch get image
-- ecr
-- putImage
-- amazon ecr create repository
-- delete repository
-- describeRepositories
-- createRepository
-- create repository
-- containers
-- amazon ecr
-- amazon web services
-- list images
-- listImages
 - describe repositories
-- batchGetImage
-- amazon ecr list images
-- amazon ecr put image
-- amazon ecr delete repository
-- put image
-- workflow capability for container registry management.
-- engineers managing amazon ecr resources on aws.
-- deleteRepository
-- oci
-- container registry
-- container images
-- batch get image
-- container registry management business domain for amazon ecr.
 - docker
+- container registry
+- containers
+- delete repository
+- ecr
+- engineers managing amazon ecr resources on aws.
+- put image
+- container images
+- container registry management business domain for amazon ecr.
+- describeRepositories
+- amazon ecr create repository
+- list images
+- amazon ecr delete repository
+- oci
+- amazon ecr list images
+- aws
+- batch get image
+- amazon ecr batch get image
+- amazon ecr put image
+- putImage
+- batchGetImage
+- amazon web services
+- listImages
+- workflow capability for container registry management.
+- createRepository
+- amazon ecr
+- create repository
+- deleteRepository
 slug: ecr-management
+source_filename: ecr-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon ECR Container Registry Management\"\n  description: \"Unified capability for managing ECR repositories, container images, and lifecycle policies for DevOps engineers.\"\n  tags:\n    - Amazon ECR\n    - AWS\n    - Containers\n    - Container Registry\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: ecr\n      location: ./shared/ecr.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: ecr-api\n      description: \"Unified REST API for Container Registry Management.\"\n      resources:\n        - path: /v1/resource\n          name: createRepository\n          description: \"Amazon ECR Create Repository\"\n          operations:\n            - method: POST\n              name: createRepository\n              description: \"\
   Amazon ECR Create Repository\"\n              call: \"ecr.createRepository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DescribeRepositories\n          name: describeRepositories\n          description: \"Amazon ECR Describe Repositories\"\n          operations:\n            - method: POST\n              name: describeRepositories\n              description: \"Amazon ECR Describe Repositories\"\n              call: \"ecr.describeRepositories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#DeleteRepository\n          name: deleteRepository\n          description: \"Amazon ECR Delete Repository\"\n          operations:\n            - method: POST\n              name: deleteRepository\n              description: \"Amazon ECR Delete Repository\"\n              call: \"ecr.deleteRepository\"\n              outputParameters:\n            \
   \    - type: object\n                  mapping: \"$.\"\n        - path: /v1/#PutImage\n          name: putImage\n          description: \"Amazon ECR Put Image\"\n          operations:\n            - method: POST\n              name: putImage\n              description: \"Amazon ECR Put Image\"\n              call: \"ecr.putImage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#BatchGetImage\n          name: batchGetImage\n          description: \"Amazon ECR Batch Get Image\"\n          operations:\n            - method: POST\n              name: batchGetImage\n              description: \"Amazon ECR Batch Get Image\"\n              call: \"ecr.batchGetImage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/#ListImages\n          name: listImages\n          description: \"Amazon ECR List Images\"\n          operations:\n            - method:\

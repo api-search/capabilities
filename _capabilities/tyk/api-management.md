@@ -44,65 +44,67 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- api definitions
-- delete an api definition from the dashboard
-- list apis
-- dashboard get catalogue
-- gateway hot reload
-- gateway list apis
-- hot reload the gateway configuration
-- gateway list certificates
-- security policies
-- api keys
-- dashboard create policy
-- create api
-- get portal catalogue
-- get api
-- gateway check health
-- open source
-- list all api definitions from dashboard
-- list all api keys
-- gateway
-- check health
+- gateway health
 - get a specific api definition from the dashboard
-- api gateway
-- check gateway health
-- graphql
-- create a new api definition
-- update an api definition in the dashboard
-- dashboard list policies
-- dashboard users
-- list keys
-- list all certificates on the gateway
-- dashboard list users
-- portal catalogue
-- dashboard get policy
-- dashboard update api
+- gateway hot reload
+- list all security policies
+- api keys
+- get a specific policy
+- get portal catalogue
+- create a new api key
 - check the gateway health status
+- dashboard users
+- list all certificates on the gateway
+- create a new api definition
 - create a new api definition in the dashboard
-- list users
+- dashboard update api
+- dashboard get api
+- get api
+- dashboard get policy
+- hot reload the gateway configuration
+- dashboard create api
 - list policies
+- dashboard create key
+- dashboard list keys
+- graphql
+- security policies
+- api definitions
+- list all api definitions from the tyk dashboard
+- api management
+- open source
+- check health
+- portal catalogue
+- create api
+- api gateway
+- delete an api definition from the dashboard
+- list all api definitions from dashboard
+- get a specific api definition
+- dashboard list policies
+- list users
+- dashboard delete api
+- dashboard create policy
+- dashboard list apis
+- gateway list apis
+- get the developer portal catalogue
+- check gateway health
+- list keys
+- list all api definitions directly from the gateway
+- gateway
+- list apis
+- list all policies
+- list all dashboard users
+- update an api definition in the dashboard
+- dashboard list users
+- dashboard get catalogue
 - create a new security policy
 - get catalogue
+- gateway check health
+- gateway list certificates
+- list all api keys
 - tyk
-- get the developer portal catalogue
-- dashboard delete api
-- create a new api key
-- list all api definitions directly from the gateway
-- get a specific api definition
-- dashboard get api
-- api management
-- list all api definitions from the tyk dashboard
-- dashboard list keys
-- dashboard create key
-- dashboard list apis
-- list all security policies
-- list all policies
-- dashboard create api
-- list all dashboard users
-- gateway health
-- get a specific policy
 slug: api-management
+source_filename: api-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Tyk API Management\"\n  description: \"Unified API management workflow combining Gateway and Dashboard APIs for API developers and platform engineers to manage API definitions, keys, policies, and portal configurations.\"\n  tags:\n    - API Management\n    - Gateway\n    - Tyk\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      TYK_GATEWAY_SECRET: TYK_GATEWAY_SECRET\n      TYK_DASHBOARD_API_KEY: TYK_DASHBOARD_API_KEY\n\ncapability:\n  consumes:\n    - import: tyk-gateway\n      location: ./shared/gateway.yaml\n    - import: tyk-dashboard\n      location: ./shared/dashboard.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: tyk-api-management-api\n      description: \"Unified REST API for Tyk API management operations.\"\n      resources:\n        - path: /v1/apis\n          name: apis\n          description: \"API definitions\"\n          operations:\n  \
   \          - method: GET\n              name: list-apis\n              description: \"List all API definitions from Dashboard\"\n              call: \"tyk-dashboard.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-api\n              description: \"Get a specific API definition\"\n              call: \"tyk-dashboard.get-api\"\n              with:\n                apiID: \"rest.apiID\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-api\n              description: \"Create a new API definition\"\n              call: \"tyk-dashboard.create-api\"\n              with:\n                api_definition: \"rest.api_definition\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/keys\n          name: keys\n\
   \          description: \"API keys\"\n          operations:\n            - method: GET\n              name: list-keys\n              description: \"List all API keys\"\n              call: \"tyk-dashboard.list-keys\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Security policies\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List all policies\"\n              call: \"tyk-dashboard.list-policies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"Dashboard users\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List all dashboard users\"\n              call: \"tyk-dashboard.list-users\"\n        \

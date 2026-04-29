@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: basecamp-api-openapi.yml
+  format: yaml
+  label: basecamp-api
+  slug: basecamp-api
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/basecamp/refs/heads/main/openapi/basecamp-api-openapi.yml
 categories: []
 consumed_apis:
 - basecamp-api
@@ -10,36 +17,38 @@ personas: []
 provider_name: Basecamp
 provider_slug: basecamp
 search_terms:
+- post a new message to a basecamp message board
+- rest
+- list all people in the basecamp account
+- Team Member
+- list basecamp projects
+- list messages
+- list todos
+- Developer
+- team communication
+- individual contributor managing tasks and collaborating on projects
+- list team members
+- full basecamp project lifecycle including todos, messages, scheduling, and team management
 - post message
 - list all active basecamp projects for the account
-- list all people in the basecamp account
-- project management
-- create basecamp project
-- list basecamp projects
-- rest
-- list messages
-- developer integrating basecamp into custom workflows and tools
-- manager overseeing project progress, tasks, and team communication
-- project creation and lifecycle management
-- list todos
-- team communication
-- saas
-- create a new to-do item in a basecamp project
-- post a new message to a basecamp message board
-- Developer
-- to-dos, messages, and team member management
-- basecamp
-- full basecamp project lifecycle including todos, messages, scheduling, and team management
-- Project Manager
-- Team Member
-- list team members
 - create a new basecamp project
-- create todo
-- collaboration
-- individual contributor managing tasks and collaborating on projects
-- list to-dos in a basecamp todolist
 - list messages on a basecamp message board
+- create todo
+- manager overseeing project progress, tasks, and team communication
+- Project Manager
+- project creation and lifecycle management
+- list to-dos in a basecamp todolist
+- saas
+- to-dos, messages, and team member management
+- create basecamp project
+- project management
+- collaboration
+- basecamp
+- developer integrating basecamp into custom workflows and tools
+- create a new to-do item in a basecamp project
 slug: project-management
+source_filename: project-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Basecamp Project Management\"\n  description: >-\n    Basecamp project management workflow for teams, covering project creation,\n    to-do management, messaging, scheduling, and team member management.\n  tags:\n    - Basecamp\n    - Project Management\n    - Collaboration\n    - Team Communication\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BASECAMP_ACCESS_TOKEN: BASECAMP_ACCESS_TOKEN\n      BASECAMP_ACCOUNT_ID: BASECAMP_ACCOUNT_ID\n\ncapability:\n  consumes:\n    - import: basecamp-api\n      location: ./shared/basecamp-api.yaml\n\n  exposes:\n    - type: mcp\n      port: 9080\n      namespace: basecamp-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Basecamp project management.\"\n      tools:\n        - name: list-basecamp-projects\n          description: List all active Basecamp projects for the account\n          hints:\n            readOnly:\
   \ true\n            openWorld: false\n          call: \"basecamp-api.listProjects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-basecamp-project\n          description: Create a new Basecamp project\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"basecamp-api.createProject\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-todos\n          description: List to-dos in a Basecamp todolist\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"basecamp-api.listTodos\"\n          with:\n            projectId: \"tools.projectId\"\n            todolistId: \"tools.todolistId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-todo\n          description: Create a new to-do item in a Basecamp project\n          hints:\n\
   \            readOnly: false\n            openWorld: false\n          call: \"basecamp-api.createTodo\"\n          with:\n            projectId: \"tools.projectId\"\n            todolistId: \"tools.todolistId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-messages\n          description: List messages on a Basecamp message board\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"basecamp-api.listMessages\"\n          with:\n            projectId: \"tools.projectId\"\n            messageBoardId: \"tools.messageBoardId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: post-message\n          description: Post a new message to a Basecamp message board\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"basecamp-api.createMessage\"\n          with:\n            projectId: \"tools.projectId\"\

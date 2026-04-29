@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: trouble-ticket-openapi.yaml
+  format: yaml
+  label: servicenow-trouble-ticket
+  slug: servicenow-trouble-ticket
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/servicenow/refs/heads/main/openapi/trouble-ticket-openapi.yaml
 categories: []
 consumed_apis:
 - servicenow-contact
@@ -52,71 +59,73 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- itsm
-- retrieve a specific service catalog.
-- retrieve shopping cart contents.
-- self service
 - get cart contents.
-- list catalogs
-- service catalog
-- get catalog item details.
-- get catalog
-- update trouble ticket
-- list catalog items.
-- order item now
-- get catalog item
-- list catalog items with optional filtering.
-- cloud services
-- get trouble ticket
-- shopping cart.
-- catalog item browsing.
-- trouble ticket operations.
-- create contact
-- get category
-- submit cart as a service catalog request.
-- list service catalogs.
-- retrieve a specific csm contact.
-- customer service
-- list trouble tickets.
-- create a new csm contact.
-- retrieve a catalog category with subcategories.
-- contacts
-- list csm contacts.
-- create a trouble ticket.
-- list catalog items
-- create a csm contact.
-- remove all items from the shopping cart.
-- processes
-- add item to cart
-- single contact operations.
-- get contact
-- workflow automation
-- list contacts
-- list available service catalogs.
-- retrieve catalog item details with variables.
-- retrieve a specific trouble ticket.
-- it service management
-- automation
-- update an existing trouble ticket.
-- submit cart order
-- t1
-- servicenow
-- empty the cart.
 - get cart
-- create trouble ticket
-- enterprise platform
-- service catalog browsing.
-- add a catalog item to the shopping cart.
-- list csm contacts with optional filtering.
-- workflows
-- get a specific contact.
-- list trouble tickets
-- order a catalog item immediately.
+- create a trouble ticket.
+- retrieve a specific csm contact.
+- retrieve catalog item details with variables.
 - empty cart
+- retrieve a specific trouble ticket.
 - single catalog item.
-- digital workflows
 - csm contact management.
+- cloud services
+- create contact
+- order item now
+- shopping cart.
+- servicenow
+- service catalog
+- itsm
+- service catalog browsing.
+- submit cart order
+- retrieve a catalog category with subcategories.
+- get catalog item details.
+- automation
+- list service catalogs.
+- list csm contacts.
+- trouble ticket operations.
+- list catalogs
+- workflow automation
+- enterprise platform
+- empty the cart.
+- list catalog items
+- get contact
+- order a catalog item immediately.
+- get trouble ticket
+- processes
+- list trouble tickets
+- create trouble ticket
+- list trouble tickets.
+- self service
+- retrieve a specific service catalog.
+- digital workflows
+- catalog item browsing.
+- list available service catalogs.
+- t1
+- single contact operations.
+- it service management
+- list csm contacts with optional filtering.
+- create a csm contact.
+- get category
+- add item to cart
+- remove all items from the shopping cart.
+- workflows
+- list catalog items.
+- get catalog
+- submit cart as a service catalog request.
+- update trouble ticket
+- get catalog item
+- update an existing trouble ticket.
+- customer service
+- retrieve shopping cart contents.
+- list catalog items with optional filtering.
+- add a catalog item to the shopping cart.
+- get a specific contact.
+- list contacts
+- create a new csm contact.
+- contacts
 slug: customer-service
+source_filename: customer-service.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"ServiceNow Customer Service\"\n  description: \"Unified workflow for customer service operations combining contact management, service catalog browsing and ordering, and trouble ticket handling. Used by customer service agents and self-service portal integrations.\"\n  tags:\n    - ServiceNow\n    - Customer Service\n    - Service Catalog\n    - Contacts\n    - Self Service\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SERVICENOW_USERNAME: SERVICENOW_USERNAME\n      SERVICENOW_PASSWORD: SERVICENOW_PASSWORD\n      SERVICENOW_INSTANCE: SERVICENOW_INSTANCE\n\ncapability:\n  consumes:\n    - import: servicenow-contact\n      location: ./shared/contact.yaml\n    - import: servicenow-service-catalog\n      location: ./shared/service-catalog.yaml\n    - import: servicenow-trouble-ticket\n      location: ./shared/trouble-ticket.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n\
   \      namespace: servicenow-customer-service-api\n      description: \"Unified REST API for ServiceNow customer service operations.\"\n      resources:\n        - path: /v1/contacts\n          name: contacts\n          description: \"CSM contact management.\"\n          operations:\n            - method: GET\n              name: list-contacts\n              description: \"List CSM contacts.\"\n              call: \"servicenow-contact.list-contacts\"\n              with:\n                sysparm_query: \"rest.sysparm_query\"\n                sysparm_limit: \"rest.sysparm_limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n            - method: POST\n              name: create-contact\n              description: \"Create a CSM contact.\"\n              call: \"servicenow-contact.create-contact\"\n              with:\n                first_name: \"rest.first_name\"\n                last_name: \"rest.last_name\"\n            \
   \    email: \"rest.email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/contacts/{id}\n          name: contact-detail\n          description: \"Single contact operations.\"\n          operations:\n            - method: GET\n              name: get-contact\n              description: \"Get a specific contact.\"\n              call: \"servicenow-contact.get-contact\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.result\"\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Service catalog browsing.\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List service catalogs.\"\n              call: \"servicenow-service-catalog.list-catalogs\"\n              with:\n                sysparm_limit: \"rest.sysparm_limit\"\

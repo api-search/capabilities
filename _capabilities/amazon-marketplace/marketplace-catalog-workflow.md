@@ -30,44 +30,46 @@ personas: []
 provider_name: Amazon Marketplace
 provider_slug: amazon-marketplace
 search_terms:
-- get detailed information about a specific aws marketplace entity including its attributes and status.
-- list change sets
-- ISV Seller
-- aws
-- amazon
-- list entities
-- list entities available in the marketplace catalog.
-- initiate a change set to publish a new product or update an existing marketplace listing.
-- commerce
-- marketplace
-- workflow for isv sellers to publish, update, and manage products on aws marketplace.
-- list software products, offers, and data products available in the aws marketplace catalog.
 - software catalog
-- start a change set to publish or update a marketplace entity.
-- cancel an active change set that has not yet completed.
-- independent software vendor publishing and managing products on aws marketplace.
-- manage marketplace entities (products, offers).
-- list change sets in the marketplace catalog.
-- get details of a specific change set.
-- Marketplace Operator
+- get resource policy
+- describe marketplace entity
 - cancel change set
+- managing resource policies for marketplace entities.
+- get details of a specific change set.
 - manage change sets for publishing and updating marketplace entities.
 - start change set
-- retrieve the resource-based policy attached to a marketplace entity.
-- platform operator managing marketplace listings, policies, and change sets at scale.
+- list change sets
 - list change sets for tracking publishing and update operations on marketplace entities.
-- get details of a specific marketplace entity.
-- describe change set
-- publishing and updating software products and offers on aws marketplace.
-- describe entity
-- managing resource policies for marketplace entities.
+- list entities available in the marketplace catalog.
+- workflow for isv sellers to publish, update, and manage products on aws marketplace.
+- manage marketplace entities (products, offers).
+- list change sets in the marketplace catalog.
+- start a change set to publish or update a marketplace entity.
+- list entities
+- initiate a change set to publish a new product or update an existing marketplace listing.
+- independent software vendor publishing and managing products on aws marketplace.
+- cancel an active change set that has not yet completed.
 - list marketplace entities
-- describe marketplace entity
-- get the status and details of a specific marketplace change set.
-- get resource policy
-- isv
+- aws
 - publish and update marketplace listings.
+- amazon
+- Marketplace Operator
+- retrieve the resource-based policy attached to a marketplace entity.
+- marketplace
+- describe change set
+- get the status and details of a specific marketplace change set.
+- get detailed information about a specific aws marketplace entity including its attributes and status.
+- publishing and updating software products and offers on aws marketplace.
+- commerce
+- isv
+- platform operator managing marketplace listings, policies, and change sets at scale.
+- describe entity
+- get details of a specific marketplace entity.
+- list software products, offers, and data products available in the aws marketplace catalog.
+- ISV Seller
 slug: marketplace-catalog-workflow
+source_filename: marketplace-catalog-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Marketplace - Catalog Management Workflow\"\n  description: \"Workflow capability for ISV sellers and marketplace operators to publish, update, and manage software products and offers on AWS Marketplace using the Catalog API.\"\n  tags:\n    - Amazon\n    - Marketplace\n    - Commerce\n    - Software Catalog\n    - ISV\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: marketplace-catalog\n      location: ./shared/marketplace-catalog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: marketplace-workflow-api\n      description: \"Unified REST API for AWS Marketplace catalog management workflows.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description:\
   \ \"Manage marketplace entities (products, offers).\"\n          operations:\n            - method: POST\n              name: list-entities\n              description: \"List entities available in the marketplace catalog.\"\n              call: \"marketplace-catalog.list-entities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: describe-entity\n              description: \"Get details of a specific marketplace entity.\"\n              call: \"marketplace-catalog.describe-entity\"\n              with:\n                catalog: \"rest.catalog\"\n                entityId: \"rest.entityId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/change-sets\n          name: change-sets\n          description: \"Manage change sets for publishing and updating marketplace entities.\"\n          operations:\n            - method:\
   \ POST\n              name: list-change-sets\n              description: \"List change sets in the marketplace catalog.\"\n              call: \"marketplace-catalog.list-change-sets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: describe-change-set\n              description: \"Get details of a specific change set.\"\n              call: \"marketplace-catalog.describe-change-set\"\n              with:\n                catalog: \"rest.catalog\"\n                changeSetId: \"rest.changeSetId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/publish\n          name: publish\n          description: \"Publish and update marketplace listings.\"\n          operations:\n            - method: POST\n              name: start-change-set\n              description: \"Start a change set to publish or update a marketplace entity.\"\

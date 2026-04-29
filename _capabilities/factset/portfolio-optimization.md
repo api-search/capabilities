@@ -22,33 +22,35 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- factset
-- run barra optimization.
-- run axioma equity optimization.
-- northfield optimize
-- financial data
-- risk models
-- portfolio optimization.
-- run factset portfolio optimization.
 - list risk models.
-- investment analytics
-- financial
-- portfolio analytics
-- market data
-- barra optimize
-- run northfield optimization.
-- list risk models
-- open risk models.
-- get open risk models.
-- asset allocation
 - list optimizations.
-- factset optimize
-- axioma equity optimize
-- get risk models
-- research
+- portfolio analytics
+- asset allocation
+- run northfield optimization.
 - portfolio optimization
+- northfield optimize
+- barra optimize
+- factset optimize
+- risk models
 - list optimizations
+- run barra optimization.
+- get risk models
+- financial data
+- list risk models
+- factset
+- get open risk models.
+- portfolio optimization.
+- financial
+- run factset portfolio optimization.
+- market data
+- open risk models.
+- axioma equity optimize
+- research
+- run axioma equity optimization.
+- investment analytics
 slug: portfolio-optimization
+source_filename: portfolio-optimization.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Portfolio Optimization\"\n  description: \"Unified workflow for portfolio optimization using multiple optimization engines including FactSet, Axioma, Barra, Northfield, and open risk models. Used by portfolio optimizers.\"\n  tags:\n    - FactSet\n    - Portfolio Optimization\n    - Risk Models\n    - Asset Allocation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-optimizer\n      location: ./shared/portfolio-optimizer.yaml\n    - import: factset-axioma-eq\n      location: ./shared/axioma-equity-optimizer.yaml\n    - import: factset-barra\n      location: ./shared/barra-portfolio-optimizer.yaml\n    - import: factset-northfield\n      location: ./shared/northfield-portfolio-optimizer.yaml\n    - import: factset-open-risk\n      location: ./shared/open-risk.yaml\n\
   \n  exposes:\n    - type: rest\n      port: 8085\n      namespace: portfolio-optimization-api\n      description: \"Unified REST API for portfolio optimization.\"\n      resources:\n        - path: /v1/optimize\n          name: optimize\n          description: \"Portfolio optimization.\"\n          operations:\n            - method: GET\n              name: list-optimizations\n              description: \"List optimizations.\"\n              call: \"factset-optimizer.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/risk-models\n          name: risk-models\n          description: \"Open risk models.\"\n          operations:\n            - method: GET\n              name: list-risk-models\n              description: \"List risk models.\"\n              call: \"factset-open-risk.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port:\
   \ 9085\n      namespace: portfolio-optimization-mcp\n      transport: http\n      description: \"MCP server for AI-assisted portfolio optimization.\"\n      tools:\n        - name: factset-optimize\n          description: \"Run FactSet portfolio optimization.\"\n          hints:\n            readOnly: true\n          call: \"factset-optimizer.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: axioma-equity-optimize\n          description: \"Run Axioma equity optimization.\"\n          hints:\n            readOnly: true\n          call: \"factset-axioma-eq.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: barra-optimize\n          description: \"Run Barra optimization.\"\n          hints:\n            readOnly: true\n          call: \"factset-barra.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: northfield-optimize\n\

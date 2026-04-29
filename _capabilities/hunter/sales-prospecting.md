@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: hunter-api-openapi.yml
+  format: yaml
+  label: hunter
+  slug: hunter
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/hunter/refs/heads/main/openapi/hunter-api-openapi.yml
 categories: []
 consumed_apis:
 - hunter
@@ -54,69 +61,71 @@ personas: []
 provider_name: Hunter
 provider_slug: hunter
 search_terms:
-- verify email
-- enrich personal data from email.
-- sales prospecting
-- find email
-- email verification
-- contact discovery
-- email
-- list leads lists
-- search emails by domain.
-- enrich personal data from email address.
-- get lead
-- find the most likely email for a person at a company.
-- get account
-- list all leads.
-- enrich company
-- discover companies
-- create a new lead.
-- get combined person and company data.
-- find email addresses.
-- delete lead
 - list all lead lists.
-- create lead
+- find email addresses.
+- find the most likely email for a person at a company.
+- hunter
+- enrich company data from domain.
+- update a lead list.
+- list campaigns
+- verify email
+- delete leads list
 - create a lead.
 - find email for a person.
-- sales intelligence
-- update a lead.
-- get lead details.
-- enrich email
-- company discovery.
-- domain search
-- update lead
-- enrich company data from domain.
-- create a new lead list.
-- delete a lead list.
-- verify emails.
-- individual lead management.
-- list leads
-- company enrichment.
-- get account information and usage.
-- list all email campaigns.
-- lead generation
-- email enrichment.
-- hunter
-- get lead list details.
-- delete leads list
-- count emails
-- update a lead list.
-- update leads list
-- delete a lead.
-- discover companies.
-- email outreach
-- discover companies matching criteria.
-- list campaigns
+- enrich personal data from email.
+- email
+- get lead
 - enrich combined
-- prospecting
-- get leads list
-- search for emails by domain.
-- count emails for a domain.
-- create leads list
+- lead generation
+- update lead
+- create a new lead.
+- discover companies.
+- company discovery.
 - lead management.
-- verify email deliverability.
+- list leads lists
+- sales intelligence
+- search for emails by domain.
+- discover companies
+- get lead list details.
+- list all email campaigns.
+- update a lead.
+- get leads list
+- email verification
+- delete a lead list.
+- list all leads.
+- prospecting
+- delete a lead.
+- sales prospecting
+- enrich email
+- get account information and usage.
+- create a new lead list.
+- update leads list
+- count emails for a domain.
+- discover companies matching criteria.
+- email enrichment.
+- email outreach
+- find email
+- count emails
+- domain search
+- list leads
 - search for email addresses by domain.
+- search emails by domain.
+- verify emails.
+- get account
+- create leads list
+- get combined person and company data.
+- enrich company
+- contact discovery
+- verify email deliverability.
+- create lead
+- company enrichment.
+- delete lead
+- get lead details.
+- individual lead management.
+- enrich personal data from email address.
 slug: sales-prospecting
+source_filename: sales-prospecting.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hunter Sales Prospecting\"\n  description: \"Unified workflow for sales prospecting including email discovery, verification, enrichment, lead management, and outreach campaigns. Used by sales development representatives and marketing teams.\"\n  tags:\n    - Hunter\n    - Sales Prospecting\n    - Lead Generation\n    - Email Outreach\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUNTER_API_KEY: HUNTER_API_KEY\n\ncapability:\n  consumes:\n    - import: hunter\n      location: ./shared/hunter-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hunter-prospecting-api\n      description: \"Unified REST API for Hunter sales prospecting workflows.\"\n      resources:\n        - path: /v1/domain-search\n          name: domain-search\n          description: \"Search emails by domain.\"\n          operations:\n            - method: GET\n              name:\
   \ domain-search\n              description: \"Search for emails by domain.\"\n              call: \"hunter.domain-search\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-finder\n          name: email-finder\n          description: \"Find email addresses.\"\n          operations:\n            - method: GET\n              name: find-email\n              description: \"Find email for a person.\"\n              call: \"hunter.find-email\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/email-verifier\n          name: email-verifier\n          description: \"Verify emails.\"\n          operations:\n            - method: GET\n              name: verify-email\n              description: \"Verify email deliverability.\"\n              call: \"hunter.verify-email\"\n              outputParameters:\n                - type: object\n             \
   \     mapping: \"$.\"\n        - path: /v1/leads\n          name: leads\n          description: \"Lead management.\"\n          operations:\n            - method: GET\n              name: list-leads\n              description: \"List all leads.\"\n              call: \"hunter.list-leads\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lead\n              description: \"Create a lead.\"\n              call: \"hunter.create-lead\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/leads/{id}\n          name: lead-details\n          description: \"Individual lead management.\"\n          operations:\n            - method: GET\n              name: get-lead\n              description: \"Get lead details.\"\n              call: \"hunter.get-lead\"\n              with:\n                id: \"rest.id\"\n             \

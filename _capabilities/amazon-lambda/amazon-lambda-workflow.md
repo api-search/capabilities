@@ -11,32 +11,34 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
-- event source mappings create event source mapping
-- compute
-- aws
+- amazon lambda
 - Administrator
-- faas
+- event source mappings get event source mapping
+- serverless
+- creates a lambda function.
+- functions create function
+- manages resources and configurations
 - integrates api into applications
-- lists event source mappings.
+- Developer
 - functions
+- workflow
 - creates a mapping between an event source and an aws lambda function.
+- event source mappings create event source mapping
+- functions get function
+- functions list functions
+- faas
+- event source mappings list event source mappings
+- aws
+- compute
 - event-driven
 - returns information about the function or function version.
-- functions get function
-- workflow
-- Developer
-- creates a lambda function.
-- event source mappings get event source mapping
-- functions create function
-- event source mappings list event source mappings
-- unified workflow for amazon lambda resource management
-- returns a list of lambda functions, with the version-specific configuration of each.
 - returns details about an event source mapping.
-- serverless
-- manages resources and configurations
-- functions list functions
-- amazon lambda
+- lists event source mappings.
+- returns a list of lambda functions, with the version-specific configuration of each.
+- unified workflow for amazon lambda resource management
 slug: amazon-lambda-workflow
+source_filename: amazon-lambda-workflow.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lambda Workflow\n  description: Unified workflow capability for Amazon Lambda combining resource management and operations.\n  tags:\n  - Amazon Lambda\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lambda\n    location: ./shared/lambda.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lambda-api\n    description: REST API for Amazon Lambda workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lambda-mcp\n    transport: http\n    description: MCP server for Amazon Lambda.\n    tools:\n    - name: functions-create-function\n      description: Creates a Lambda function.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lambda.createfunction\n      outputParameters:\n      - type:\
   \ object\n        mapping: $.\n    - name: functions-list-functions\n      description: Returns a list of Lambda functions, with the version-specific configuration of each.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.listfunctions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: functions-get-function\n      description: Returns information about the function or function version.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.getfunction\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: event-source-mappings-create-event-source-mapping\n      description: Creates a mapping between an event source and an AWS Lambda function.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lambda.createeventsourcemapping\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: event-source-mappings-list-event-source-mappings\n\
   \      description: Lists event source mappings.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.listeventsourcemappings\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: event-source-mappings-get-event-source-mapping\n      description: Returns details about an event source mapping.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lambda.geteventsourcemapping\n      outputParameters:\n      - type: object\n        mapping: $.\n"

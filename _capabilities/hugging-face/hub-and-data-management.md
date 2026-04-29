@@ -47,77 +47,79 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
+- check dataset validity
+- delete repo
+- data management
+- list and search datasets
 - list and search models
-- list models
-- get model details
-- get rows from a dataset
-- get dataset parquet
-- manage spaces on the hub
+- get dataset information
+- get model information
 - get rows
-- create repo
+- user information
+- delete a repository from the hub.
 - hugging face
-- get dataset
-- get information about the authenticated user.
-- get space
-- preview dataset rows
-- create a new model, dataset, or space repository on the hub.
-- get dataset rows
-- list spaces
-- create repositories
-- get model revision
-- get dataset size
-- whoami
+- get model information at a specific revision or branch.
+- manage models on the hub
 - get detailed information about a specific dataset.
+- hub
+- get information about the authenticated user.
+- list all available dataset tags grouped by type.
+- get rows from a dataset split with pagination.
+- create repositories
+- get statistical information about a dataset split.
+- search dataset
+- list spaces
+- search dataset rows
+- search for rows matching a query in a dataset.
+- filter dataset
+- get size information for a dataset.
+- get dataset
+- get model
+- get dataset size
+- get rows from a dataset
+- get dataset details
+- create a new repository
+- get dataset statistics
+- create a new model, dataset, or space repository on the hub.
+- filter dataset rows using a condition.
 - search rows in a dataset
 - list dataset tags
-- get model information
-- search rows
-- get statistical information about a dataset split.
-- get croissant metadata for a dataset.
+- models
+- list and search spaces on the hub.
 - list all available model tags grouped by type.
-- get dataset details
-- get size information for a dataset.
-- get dataset splits
-- check if a dataset is valid and available on the hub.
-- list and search datasets
-- get the list of splits for a dataset.
-- check dataset validity
-- get the first rows of a dataset split for preview.
-- update repo settings
-- get croissant metadata
-- list datasets
-- user information
-- get parquet file urls for a dataset.
-- update settings for a repository.
+- get model details
+- get authenticated user info
+- search rows
+- get space
+- create repo
 - get detailed information about a specific model.
-- get detailed information about a specific space.
-- search dataset rows
 - list and search datasets on the hub.
-- hub
+- list datasets
+- get dataset splits
+- preview dataset rows
+- whoami
+- list models
+- update repo settings
+- list model tags
+- update settings for a repository.
+- get parquet file urls for a dataset.
+- get detailed information about a specific space.
+- get the first rows of a dataset split for preview.
 - manage datasets on the hub
-- data management
+- get croissant metadata
+- check if a dataset is valid and available on the hub.
+- get dataset rows
+- get model revision
+- manage spaces on the hub
+- datasets
+- get the list of splits for a dataset.
+- get croissant metadata for a dataset.
+- get dataset parquet
 - list and search spaces
 - list and search ml models on the hugging face hub.
-- datasets
-- search dataset
-- get dataset information
-- get model information at a specific revision or branch.
-- filter dataset
-- list model tags
-- create a new repository
-- get rows from a dataset split with pagination.
-- list and search spaces on the hub.
-- get dataset statistics
-- get authenticated user info
-- models
-- search for rows matching a query in a dataset.
-- get model
-- delete a repository from the hub.
-- list all available dataset tags grouped by type.
-- manage models on the hub
-- delete repo
-- filter dataset rows using a condition.
 slug: hub-and-data-management
+source_filename: hub-and-data-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Hugging Face Hub and Data Management\"\n  description: \"Unified workflow for managing models, datasets, and spaces on the Hugging Face Hub, and exploring dataset contents via the Dataset Viewer. Used by ML engineers, data scientists, and platform administrators for model discovery, dataset curation, and repository management.\"\n  tags:\n    - Hugging Face\n    - Hub\n    - Models\n    - Datasets\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HF_API_TOKEN: HF_API_TOKEN\n\ncapability:\n  consumes:\n    - import: hf-hub\n      location: ./shared/hub.yaml\n    - import: hf-dataset-viewer\n      location: ./shared/dataset-viewer.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: hf-hub-data-api\n      description: \"Unified REST API for Hugging Face Hub resource management and dataset exploration.\"\n      resources:\n        - path:\
   \ /v1/models\n          name: models\n          description: \"Manage models on the Hub\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List and search models\"\n              call: \"hf-hub.list-models\"\n              with:\n                search: \"rest.search\"\n                author: \"rest.author\"\n                filter: \"rest.filter\"\n                sort: \"rest.sort\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models/{repo_id}\n          name: model-details\n          description: \"Get model details\"\n          operations:\n            - method: GET\n              name: get-model\n              description: \"Get model information\"\n              call: \"hf-hub.get-model\"\n              with:\n                repo_id: \"rest.repo_id\"\n              outputParameters:\n                -\
   \ type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets\n          name: datasets\n          description: \"Manage datasets on the Hub\"\n          operations:\n            - method: GET\n              name: list-datasets\n              description: \"List and search datasets\"\n              call: \"hf-hub.list-datasets\"\n              with:\n                search: \"rest.search\"\n                author: \"rest.author\"\n                filter: \"rest.filter\"\n                sort: \"rest.sort\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/datasets/{repo_id}\n          name: dataset-details\n          description: \"Get dataset details\"\n          operations:\n            - method: GET\n              name: get-dataset\n              description: \"Get dataset information\"\n              call: \"hf-hub.get-dataset\"\n              with:\n    \

@@ -60,49 +60,51 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- create a new work item
-- project management
-- pipeline runs
-- list all pipelines
-- get multiple work items by ids
-- work items
 - list runs for a pipeline
-- get a pipeline by id
-- get pipeline
-- get pipeline run
-- trigger a pipeline run
-- list all work item field definitions
-- azure
-- single pipeline run
-- update work item
-- individual work item operations
-- azure devops
-- list pipeline runs
-- single pipeline
-- run pipeline
-- work item field definitions
-- get details of a pipeline run
-- create work item
-- list fields
-- list work item fields
-- ci/cd
-- get a work item by id
-- pipeline definitions
-- list pipelines
-- get a pipeline run
-- update a work item
+- create pipeline
+- wiql query execution
+- list all pipelines in a project
 - get work items batch
+- create work item
 - devops
-- query work items
+- azure
 - pipelines
+- get pipeline run
+- get details of a pipeline run
+- get a pipeline by id
+- pipeline runs
+- update work item
+- single pipeline run
+- get multiple work items by ids
+- azure devops
+- pipeline definitions
+- get a pipeline run
+- work items
+- create a new pipeline
+- list all work item field definitions
+- query work items
 - query work items using wiql
 - get work item
-- list all pipelines in a project
-- create a new pipeline
-- wiql query execution
-- create pipeline
+- run pipeline
+- get a work item by id
+- individual work item operations
+- list pipeline runs
+- list fields
+- list pipelines
+- update a work item
+- create a new work item
+- get pipeline
+- trigger a pipeline run
+- single pipeline
+- ci/cd
 - work item batch and creation
+- list work item fields
+- project management
+- work item field definitions
+- list all pipelines
 slug: devops-project-management
+source_filename: devops-project-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure DevOps Project Management\"\n  description: \"Unified workflow for managing Azure DevOps projects combining work item tracking and CI/CD pipeline operations. Used by development teams, project managers, and DevOps engineers to plan work, track progress, and automate build/release processes.\"\n  tags:\n    - Azure DevOps\n    - Project Management\n    - CI/CD\n    - Work Items\n    - Pipelines\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_DEVOPS_PAT: AZURE_DEVOPS_PAT\n\ncapability:\n  consumes:\n    - import: azure-devops-work-items\n      location: ./shared/work-items.yaml\n    - import: azure-devops-pipelines\n      location: ./shared/pipelines.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: devops-project-mgmt-api\n      description: \"Unified REST API for Azure DevOps project management combining work items and pipelines.\"\n     \
   \ resources:\n        - path: /v1/work-items/{id}\n          name: work-item\n          description: \"Individual work item operations\"\n          operations:\n            - method: GET\n              name: get-work-item\n              description: \"Get a work item by ID\"\n              call: \"azure-devops-work-items.get-work-item\"\n              with:\n                project: \"rest.project\"\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-work-item\n              description: \"Update a work item\"\n              call: \"azure-devops-work-items.update-work-item\"\n              with:\n                project: \"rest.project\"\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/work-items\n          name: work-items\n          description:\
   \ \"Work item batch and creation\"\n          operations:\n            - method: GET\n              name: get-work-items-batch\n              description: \"Get multiple work items by IDs\"\n              call: \"azure-devops-work-items.get-work-items-batch\"\n              with:\n                project: \"rest.project\"\n                ids: \"rest.ids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-work-item\n              description: \"Create a new work item\"\n              call: \"azure-devops-work-items.create-work-item\"\n              with:\n                project: \"rest.project\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/queries\n          name: queries\n          description: \"WIQL query execution\"\n          operations:\n            - method: POST\n\

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: abacus-api-openapi.yaml
+  format: yaml
+  label: abacus-api
+  slug: abacus-api
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/abacus/refs/heads/main/openapi/abacus-api-openapi.yaml
 categories: []
 consumed_apis:
 - abacus-api
@@ -38,47 +45,49 @@ personas: []
 provider_name: Abacus
 provider_slug: abacus
 search_terms:
-- expense management
-- expense report management
-- suspend a member
-- suspend an organization member to prevent expense submissions
-- get expense report details
-- list all members in the organization with pagination support
-- hr manager responsible for member provisioning and access management
-- abacus
-- update member
-- HR Manager
-- individual member operations
-- members
-- get member
-- list expense reports with filters
-- organization member provisioning, role management, and access control
-- update a member's role, department, or status within the organization
-- invite a new member to the organization
-- individual expense report
-- update member role or department
-- member suspension
-- reimbursement
-- invite member
-- suspend member
-- get member details
-- get detailed information for a specific organization member
-- list members
-- unified workflow for member management and expense tracking
-- organization employee submitting expense reports for reimbursement
-- accounting
-- invite a new member to the organization with email and role assignment
-- list all organization members
-- list expenses
-- get detailed information for a specific expense report including receipt url
-- Finance Administrator
-- finance team member responsible for expense approvals and reimbursements
-- list expense reports with filtering by status, member, or date range
-- organization member management
-- finance
 - get expense
+- HR Manager
+- abacus
+- organization member provisioning, role management, and access control
+- suspend member
+- organization member management
+- member suspension
+- suspend an organization member to prevent expense submissions
+- unified workflow for member management and expense tracking
+- get member
+- suspend a member
+- list expense reports with filters
+- get expense report details
+- reimbursement
+- individual expense report
+- members
 - expense report submission, approval, and reimbursement workflows
+- get detailed information for a specific expense report including receipt url
+- invite member
+- list all organization members
+- get member details
+- invite a new member to the organization with email and role assignment
+- update member
+- get detailed information for a specific organization member
+- list expense reports with filtering by status, member, or date range
+- update a member's role, department, or status within the organization
+- individual member operations
+- Finance Administrator
+- list members
+- finance team member responsible for expense approvals and reimbursements
+- finance
+- list all members in the organization with pagination support
+- expense management
+- invite a new member to the organization
+- update member role or department
+- hr manager responsible for member provisioning and access management
+- accounting
+- expense report management
+- list expenses
+- organization employee submitting expense reports for reimbursement
 slug: expense-management
+source_filename: expense-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Abacus Expense Management\"\n  description: \"Unified workflow for managing employee expenses, reimbursements, and member provisioning. Enables finance teams and administrators to automate expense reporting, track spending by member or category, and manage organizational membership.\"\n  tags:\n    - Abacus\n    - Expense Management\n    - Finance\n    - Reimbursement\n    - Members\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ABACUS_CLIENT_ID: ABACUS_CLIENT_ID\n      ABACUS_CLIENT_SECRET: ABACUS_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: abacus-api\n      location: ./shared/abacus-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: expense-management-api\n      description: \"Unified REST API for Abacus expense management and member administration.\"\n      resources:\n        - path: /v1/members\n          name: members\n        \
   \  description: \"Organization member management\"\n          operations:\n            - method: GET\n              name: list-members\n              description: \"List all organization members\"\n              call: \"abacus-api.list-members\"\n              with:\n                page: \"rest.page\"\n                per_page: \"rest.per_page\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: invite-member\n              description: \"Invite a new member to the organization\"\n              call: \"abacus-api.invite-member\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/members/{member_id}\n          name: member\n          description: \"Individual member operations\"\n          operations:\n            - method: GET\n              name: get-member\n              description: \"Get member details\"\n       \
   \       call: \"abacus-api.get-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-member\n              description: \"Update member role or department\"\n              call: \"abacus-api.update-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/members/{member_id}/suspend\n          name: suspend-member\n          description: \"Member suspension\"\n          operations:\n            - method: POST\n              name: suspend-member\n              description: \"Suspend a member\"\n              call: \"abacus-api.suspend-member\"\n              with:\n                member_id: \"rest.member_id\"\n              outputParameters:\n                - type: object\n\

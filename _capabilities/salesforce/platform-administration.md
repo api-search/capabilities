@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: salesforce-openapi.yml
+  format: yaml
+  label: salesforce-platform
+  slug: salesforce-platform
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/salesforce/refs/heads/main/openapi/salesforce-openapi.yml
 categories:
 - identity-access
 consumed_apis:
@@ -45,56 +52,58 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- get full metadata for a salesforce sobject type including all fields.
-- metadata
-- get app switcher menu
-- list all sobject types available in the salesforce org.
-- get the app switcher menu items.
-- get current api limit usage and remaining quotas for the org.
-- list sobjects
-- get lookup records
-- crm
-- commerce
-- analytics
-- get ui-ready metadata about a salesforce object.
-- sales
-- list api versions
-- get picklist values for all picklist fields on an object.
 - oauth
-- get full metadata for an sobject type.
+- sobject type listing.
+- list sobjects
 - search lookup field records for typeahead.
-- ai
-- get list views for a salesforce object.
+- list all sobject types available in the salesforce org.
+- list api versions
+- get full metadata for a salesforce sobject type including all fields.
+- get object info
+- list all sobject types in the org.
+- platform
+- get app switcher menu
+- get picklist values
+- full sobject metadata.
+- identity
+- get full metadata for an sobject type.
+- platform administration
+- authenticated user information.
+- full describe sobject
+- crm
+- get current api limit usage and quotas.
 - salesforce
 - get the app switcher menu items available to the current user.
-- full describe sobject
-- picklist value retrieval.
-- customer service
-- list available salesforce rest api versions.
-- full sobject metadata.
-- authenticated user information.
-- cloud
-- get org limits
-- enterprise
-- get current api limit usage and quotas.
-- marketing
-- platform administration
-- sobject type listing.
-- org api limits.
-- get picklist values for all picklist fields on an object for a given record type.
-- get list views
-- get the authenticated user's profile information.
-- app switcher menu items.
-- get user info
-- get ui-ready metadata for an object.
-- get picklist values
-- get object info
-- identity
-- salesforce api version information.
-- platform
-- list all sobject types in the org.
+- metadata
+- get picklist values for all picklist fields on an object.
+- ai
 - ui-ready object metadata.
+- list available salesforce rest api versions.
+- org api limits.
+- get list views
+- picklist value retrieval.
+- get org limits
+- cloud
+- get user info
+- sales
+- enterprise
+- salesforce api version information.
+- analytics
+- get lookup records
+- commerce
+- app switcher menu items.
+- get list views for a salesforce object.
+- customer service
+- get ui-ready metadata about a salesforce object.
+- get the authenticated user's profile information.
+- get ui-ready metadata for an object.
+- get current api limit usage and remaining quotas for the org.
+- get picklist values for all picklist fields on an object for a given record type.
+- get the app switcher menu items.
+- marketing
 slug: platform-administration
+source_filename: platform-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Salesforce Platform Administration\"\n  description: \"Unified capability for Salesforce platform administration workflows combining the platform API and UI API for identity management, OAuth administration, metadata exploration, and application configuration. Used by Salesforce admins and platform engineers.\"\n  tags:\n    - Salesforce\n    - Platform Administration\n    - Identity\n    - OAuth\n    - Metadata\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SALESFORCE_ACCESS_TOKEN: SALESFORCE_ACCESS_TOKEN\n      SALESFORCE_CLIENT_ID: SALESFORCE_CLIENT_ID\n      SALESFORCE_CLIENT_SECRET: SALESFORCE_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: salesforce-platform\n      location: ./shared/salesforce.yaml\n    - import: salesforce-rest\n      location: ./shared/rest-api.yaml\n    - import: salesforce-ui\n      location: ./shared/ui-api.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8082\n      namespace: platform-administration-api\n      description: \"Unified REST API for Salesforce platform administration.\"\n      resources:\n        - path: /v1/user-info\n          name: user-info\n          description: \"Authenticated user information.\"\n          operations:\n            - method: GET\n              name: get-user-info\n              description: \"Get the authenticated user's profile information.\"\n              call: \"salesforce-platform.get-user-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/api-versions\n          name: api-versions\n          description: \"Salesforce API version information.\"\n          operations:\n            - method: GET\n              name: list-api-versions\n              description: \"List available Salesforce REST API versions.\"\n              call: \"salesforce-rest.list-api-versions\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/limits\n          name: limits\n          description: \"Org API limits.\"\n          operations:\n            - method: GET\n              name: get-org-limits\n              description: \"Get current API limit usage and quotas.\"\n              call: \"salesforce-rest.get-org-limits\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/app-menu\n          name: app-menu\n          description: \"App switcher menu items.\"\n          operations:\n            - method: GET\n              name: get-app-switcher-menu\n              description: \"Get the app switcher menu items.\"\n              call: \"salesforce-rest.get-app-switcher-menu\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sobjects\n          name: sobjects\n          description: \"SObject type\

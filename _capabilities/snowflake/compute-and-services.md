@@ -1,4 +1,35 @@
 ---
+api_specs:
+- filename: warehouse.yaml
+  format: yaml
+  label: snowflake-warehouse
+  slug: snowflake-warehouse
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/warehouse.yaml
+- filename: compute-pool.yaml
+  format: yaml
+  label: snowflake-compute-pool
+  slug: snowflake-compute-pool
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/compute-pool.yaml
+- filename: service.yaml
+  format: yaml
+  label: snowflake-service
+  slug: snowflake-service
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/service.yaml
+- filename: image-repository.yaml
+  format: yaml
+  label: snowflake-image-repository
+  slug: snowflake-image-repository
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/image-repository.yaml
+- filename: alert.yaml
+  format: yaml
+  label: snowflake-alert
+  slug: snowflake-alert
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/snowflake/refs/heads/main/openapi/alert.yaml
 categories:
 - container-orchestration
 consumed_apis:
@@ -47,55 +78,57 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- compute
-- create warehouse
-- resume service
-- warehouse management
-- suspend a running service
-- data warehousing
-- create service
-- create a service
+- alert management
+- compute pool management
+- create a virtual warehouse
 - data lakes
-- data sharing
-- create a monitoring alert
-- resume a suspended service
-- suspend service
-- delete warehouse
-- list image repositories
+- execute alert
 - create an image repository
-- create a container service
-- create a warehouse
-- list container services
-- sql
+- snowflake
 - containers
-- list compute pools
-- execute an alert
-- get service logs
-- list services
+- container service management
+- delete warehouse
+- create warehouse
+- create a compute pool
+- fetch warehouse details
+- create a monitoring alert
+- sql
+- create image repository
 - fetch service logs
 - list warehouses
-- compute pool management
+- suspend service
 - fetch service status
-- infrastructure
-- fetch warehouse
-- create a virtual warehouse
-- create compute pool
-- snowflake
-- create an alert
-- get service status
-- alert management
-- fetch warehouse details
-- database
-- create alert
-- execute alert
-- create a compute pool
+- list image repositories
 - list virtual warehouses
-- list alerts
-- container service management
-- create image repository
-- delete a warehouse
+- create alert
+- compute
+- create a container service
+- resume a suspended service
+- resume service
+- suspend a running service
+- list container services
+- create service
+- create a service
+- get service logs
+- get service status
+- data sharing
+- create compute pool
+- create an alert
+- create a warehouse
 - list monitoring alerts
+- infrastructure
+- list services
+- list alerts
+- delete a warehouse
+- fetch warehouse
+- list compute pools
+- execute an alert
+- data warehousing
+- database
+- warehouse management
 slug: compute-and-services
+source_filename: compute-and-services.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Snowflake Compute and Services\"\n  description: \"Unified workflow for managing warehouses, compute pools, Snowpark Container Services, image repositories, and monitoring alerts. Used by Platform Engineers and DevOps teams to provision and operate compute infrastructure.\"\n  tags:\n    - Snowflake\n    - Compute\n    - Containers\n    - Infrastructure\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SNOWFLAKE_ACCOUNT_URL: SNOWFLAKE_ACCOUNT_URL\n      SNOWFLAKE_JWT_TOKEN: SNOWFLAKE_JWT_TOKEN\n\ncapability:\n  consumes:\n    - import: snowflake-warehouse\n      location: ./shared/warehouse.yaml\n    - import: snowflake-compute-pool\n      location: ./shared/compute-pool.yaml\n    - import: snowflake-service\n      location: ./shared/service.yaml\n    - import: snowflake-image-repository\n      location: ./shared/image-repository.yaml\n    - import: snowflake-alert\n      location:\
   \ ./shared/alert.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: snowflake-compute-api\n      description: \"Unified REST API for Snowflake compute and services management.\"\n      resources:\n        - path: /v1/warehouses\n          name: warehouses\n          description: \"Warehouse management\"\n          operations:\n            - method: GET\n              name: list-warehouses\n              description: \"List warehouses\"\n              call: \"snowflake-warehouse.list-warehouses\"\n            - method: POST\n              name: create-warehouse\n              description: \"Create a warehouse\"\n              call: \"snowflake-warehouse.create-warehouse\"\n        - path: /v1/compute-pools\n          name: compute-pools\n          description: \"Compute pool management\"\n          operations:\n            - method: GET\n              name: list-compute-pools\n              description: \"List compute pools\"\n              call: \"snowflake-compute-pool.list-compute-pools\"\
   \n            - method: POST\n              name: create-compute-pool\n              description: \"Create a compute pool\"\n              call: \"snowflake-compute-pool.create-compute-pool\"\n        - path: /v1/services\n          name: services\n          description: \"Container service management\"\n          operations:\n            - method: GET\n              name: list-services\n              description: \"List services\"\n              call: \"snowflake-service.list-services\"\n            - method: POST\n              name: create-service\n              description: \"Create a service\"\n              call: \"snowflake-service.create-service\"\n        - path: /v1/alerts\n          name: alerts\n          description: \"Alert management\"\n          operations:\n            - method: GET\n              name: list-alerts\n              description: \"List alerts\"\n              call: \"snowflake-alert.list-alerts\"\n            - method: POST\n              name: create-alert\n\

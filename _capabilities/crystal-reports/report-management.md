@@ -31,37 +31,39 @@ personas: []
 provider_name: Crystal Reports
 provider_slug: crystal-reports
 search_terms:
-- logon
-- get report summary
-- browse repository
-- get rows
-- get report summary including name, author, and uris
-- get grand totals
 - list folder children
-- export
-- business intelligence
+- get report summary including name, author, and uris
 - get report data rows via odata with pagination and filtering
-- post row
-- get report metadata with datasources, fields, parameters, and formulas
-- get report structure
-- create a transient report instance
+- get report grand totals and summaries
+- get rows
+- crystal reports
+- export report
+- export report to pdf, excel, csv, word, xml, or other format
+- authenticate to crystal reports server
 - reporting
-- data analytics
-- create instance
+- get report structure
 - push data to a transient report instance
-- get edmx metadata describing the report data model
+- create instance
+- get report metadata with datasources, fields, parameters, and formulas
+- get grand totals
+- sap
+- get odata metadata
 - enterprise software
 - browse the bi platform report repository
-- get odata metadata
-- export report
-- sap
-- list contents of a repository folder
-- crystal reports
-- export report to pdf, excel, csv, word, xml, or other format
-- get report grand totals and summaries
-- authenticate to crystal reports server
+- business intelligence
+- data analytics
 - report management
+- get report summary
+- export
+- create a transient report instance
+- get edmx metadata describing the report data model
+- browse repository
+- list contents of a repository folder
+- post row
+- logon
 slug: report-management
+source_filename: report-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Crystal Reports Report Management\"\n  description: \"Unified workflow for managing Crystal Reports including authentication, repository browsing, report viewing, data access, and export. Used by report developers, BI analysts, and application developers.\"\n  tags:\n    - Crystal Reports\n    - Report Management\n    - Business Intelligence\n    - Export\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      CR_USERNAME: CR_USERNAME\n      CR_PASSWORD: CR_PASSWORD\n\ncapability:\n  consumes:\n    - import: cr-reporting\n      location: ./shared/reporting.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cr-management-api\n      description: \"Unified REST API for Crystal Reports management.\"\n      resources:\n        - path: /v1/auth\n          name: authentication\n          operations:\n            - method: POST\n              name: logon\n           \
   \   call: \"cr-reporting.logon\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports\n          name: reports\n          operations:\n            - method: GET\n              name: browse-repository\n              call: \"cr-reporting.browse-repository\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}\n          name: report\n          operations:\n            - method: GET\n              name: get-report-summary\n              call: \"cr-reporting.get-report-summary\"\n              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}/export\n          name: export\n          operations:\n            - method: GET\n              name: export-report\n              call: \"cr-reporting.export-report\"\n\
   \              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reports/{id}/rows\n          name: rows\n          operations:\n            - method: GET\n              name: get-rows\n              call: \"cr-reporting.get-rows\"\n              with:\n                reportId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: cr-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Crystal Reports management.\"\n      tools:\n        - name: logon\n          description: \"Authenticate to Crystal Reports server\"\n          hints: {readOnly: false}\n          call: \"cr-reporting.logon\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: browse-repository\n          description:\

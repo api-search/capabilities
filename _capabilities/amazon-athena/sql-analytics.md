@@ -26,36 +26,38 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list recent query executions in an athena workgroup.
+- start a sql query execution
+- create named query
+- list data catalogs
+- serverless
+- sql
+- list query executions
+- download the results of a completed athena sql query.
 - save a sql query as a named query for reuse in athena.
 - aws
-- start a sql query execution
-- sql query management
-- analytics
-- list saved named queries available in an athena workgroup.
-- get query execution
-- list data catalogs
-- create a named query
-- list named queries
-- list athena workgroups to understand available query isolation environments.
-- list data catalogs registered with athena to discover available data sources.
-- sql
-- download the results of a completed athena sql query.
-- create named query
-- list query executions
-- list work groups
-- start query execution
-- amazon athena
-- list databases in an athena data catalog to explore available schemas.
-- run a sql query against s3 data using amazon athena for serverless analytics.
 - list databases
-- get query results
-- list table metadata
+- list work groups
+- list databases in an athena data catalog to explore available schemas.
 - list tables in an athena database to understand available data.
-- named query management
-- serverless
+- list table metadata
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list recent query executions in an athena workgroup.
+- create a named query
+- sql query management
+- list data catalogs registered with athena to discover available data sources.
+- analytics
+- get query results
+- list athena workgroups to understand available query isolation environments.
+- get query execution
 - check the status of a running or completed athena query execution.
+- list named queries
+- amazon athena
+- list saved named queries available in an athena workgroup.
+- named query management
+- start query execution
 slug: sql-analytics
+source_filename: sql-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: SQL Analytics Workflow\n  description: Workflow capability for running and managing SQL analytics queries with Amazon Athena including query execution, named queries, work groups, and data catalog management.\n  tags:\n    - Amazon Athena\n    - SQL\n    - Analytics\n    - Serverless\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nimports:\n  - namespace: athena\n    from: shared/athena-api.yaml\n\ncapability:\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sql-analytics-rest\n      resources:\n        - path: /v1/queries\n          name: queries\n          description: SQL query management\n          operations:\n            - method: POST\n              name: start-query-execution\n              description: Start a SQL query execution\n              call: \"athena.start-query-execution\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
   \            - method: GET\n              name: list-query-executions\n              description: List query executions\n              call: \"athena.list-query-executions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/named-queries\n          name: named-queries\n          description: Named query management\n          operations:\n            - method: POST\n              name: create-named-query\n              description: Create a named query\n              call: \"athena.create-named-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-named-queries\n              description: List named queries\n              call: \"athena.list-named-queries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace:\
   \ sql-analytics-mcp\n      transport: http\n      tools:\n        - name: start-query-execution\n          description: Run a SQL query against S3 data using Amazon Athena for serverless analytics.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"athena.start-query-execution\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-query-execution\n          description: Check the status of a running or completed Athena query execution.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"athena.get-query-execution\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-query-results\n          description: Download the results of a completed Athena SQL query.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"athena.get-query-results\"\n        \

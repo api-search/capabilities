@@ -9,23 +9,25 @@ personas: []
 provider_name: BigCommerce
 provider_slug: bigcommerce
 search_terms:
-- product catalog management including products, variants, and categories
-- saas
+- checkout
 - online store owner managing catalog, orders, and customers via api
-- orders
-- e-commerce
-- developer building bigcommerce store integrations and customizations
 - customer account and address book management
+- shopping cart and checkout flow management
+- e-commerce
+- orders
+- retail
 - manage product catalog including products, categories, and brands
 - shipping zone, method, and carrier configuration
-- checkout
-- order lifecycle management from placement to fulfillment
-- shopping cart and checkout flow management
-- payment method configuration and transaction processing
-- retail
-- catalog
 - payments
+- product catalog management including products, variants, and categories
+- payment method configuration and transaction processing
+- saas
+- order lifecycle management from placement to fulfillment
+- developer building bigcommerce store integrations and customizations
+- catalog
 slug: catalog-management
+source_filename: catalog-management.yaml
+source_heading: Capability Spec
 source_yaml: "name: Catalog Management\ndescription: >-\n  Workflow capability for managing BigCommerce product catalogs including\n  products, variants, categories, and brands.\nversion: v1\n\nimports:\n  - shared/bigcommerce.yaml\n\ntools:\n  - name: list-products\n    import: bigcommerce.list-products\n    description: List all products in the BigCommerce catalog with filtering options.\n    inputSchema:\n      type: object\n      properties:\n        limit:\n          type: integer\n          description: Number of products per page\n        page:\n          type: integer\n          description: Page number for pagination\n        keyword:\n          type: string\n          description: Filter products by keyword\n  - name: get-product\n    import: bigcommerce.get-product\n    description: Get a single product by its ID including all variants and images.\n    inputSchema:\n      type: object\n      required:\n        - product_id\n      properties:\n        product_id:\n          type:\
   \ integer\n          description: The product ID to retrieve\n  - name: create-product\n    import: bigcommerce.create-product\n    description: Create a new product in the BigCommerce catalog.\n    inputSchema:\n      type: object\n      required:\n        - name\n        - price\n        - type\n        - weight\n      properties:\n        name:\n          type: string\n          description: Product name\n        price:\n          type: number\n          description: Product price\n        type:\n          type: string\n          description: Product type (physical or digital)\n        sku:\n          type: string\n          description: Stock keeping unit\n  - name: update-product\n    import: bigcommerce.update-product\n    description: Update an existing product's details, price, or inventory.\n    inputSchema:\n      type: object\n      required:\n        - product_id\n      properties:\n        product_id:\n          type: integer\n          description: The product ID to update\n\
   \  - name: delete-product\n    import: bigcommerce.delete-product\n    description: Delete a product from the catalog.\n    inputSchema:\n      type: object\n      required:\n        - product_id\n      properties:\n        product_id:\n          type: integer\n          description: The product ID to delete\n  - name: list-categories\n    import: bigcommerce.list-categories\n    description: List all product categories in the category tree.\n    inputSchema:\n      type: object\n      properties:\n        parent_id:\n          type: integer\n          description: Filter by parent category ID\n  - name: create-category\n    import: bigcommerce.create-category\n    description: Create a new product category.\n    inputSchema:\n      type: object\n      required:\n        - name\n        - parent_id\n      properties:\n        name:\n          type: string\n          description: Category name\n        parent_id:\n          type: integer\n          description: Parent category ID (0 for\

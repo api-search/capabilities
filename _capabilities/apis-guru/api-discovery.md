@@ -34,52 +34,54 @@ personas: []
 provider_name: APIs.guru
 provider_slug: apis-guru
 search_terms:
-- directory metrics and statistics
-- get service api definition
-- list apis
-- api directory
-- get a specific api version definition
-- all apis in the directory
-- discover, browse, and retrieve api definitions from the apis.guru directory
-- apis.guru
-- list all apis in the apis.guru directory with their openapi definition links and metadata
 - get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
-- get directory-wide metrics
-- openapi
-- Platform Engineer
-- open source
-- list all api providers
-- list service names for a provider
-- community
-- a developer building integrations who needs to discover and retrieve api specifications
-- specific api version spec
-- graphql
-- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
-- statistics and health metrics for the apis.guru directory
-- list all service names for a provider that has multiple services
-- get api definition
-- list api providers
-- list all apis in the apis.guru directory
-- api providers in the directory
-- get provider services
-- list all api provider domain names available in the apis.guru directory
-- api discovery
-- api catalog
-- list providers
-- get provider apis
-- list all apis
-- API Developer
-- retrieve the openapi definition for a specific service api version (for multi-service providers)
-- a platform or devx engineer building api catalogs, portals, or governance tooling
 - get api spec
+- list providers
+- get a specific api version definition
+- Platform Engineer
+- community
+- openapi
+- get provider services
+- statistics and health metrics for the apis.guru directory
+- list all api providers
+- a platform or devx engineer building api catalogs, portals, or governance tooling
+- list api providers
+- graphql
+- api directory
+- get metrics
+- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
+- open source
 - apis for a specific provider
+- list all api provider domain names available in the apis.guru directory
+- get api definition
+- discover, browse, and retrieve api definitions from the apis.guru directory
+- a developer building integrations who needs to discover and retrieve api specifications
+- retrieve the openapi definition for a specific service api version (for multi-service providers)
+- services for a specific provider
+- get service api definition
+- list all service names for a provider that has multiple services
+- directory metrics and statistics
+- api catalog
+- list apis
+- list service names for a provider
+- specific api version spec
 - retrieve the openapi definition for a specific api version from the directory
 - finding and retrieving api definitions from public directories
+- list all apis in the apis.guru directory with their openapi definition links and metadata
+- api discovery
+- api providers in the directory
+- list all apis
+- list all apis in the apis.guru directory
 - get directory metrics
-- services for a specific provider
-- get metrics
+- get directory-wide metrics
+- API Developer
+- get provider apis
+- all apis in the directory
 - get all apis for a provider
+- apis.guru
 slug: api-discovery
+source_filename: api-discovery.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIs.guru API Discovery\"\n  description: \"Workflow capability for discovering, browsing, and retrieving API definitions from the APIs.guru directory. Enables developers and platform teams to programmatically find public APIs, retrieve their OpenAPI specifications, and explore the catalog by provider. The primary persona is an API developer or platform engineer building integrations or cataloging APIs.\"\n  tags:\n    - API Catalog\n    - API Directory\n    - API Discovery\n    - APIs.guru\n    - OpenAPI\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys: {}\n\ncapability:\n  consumes:\n    - import: apis-guru\n      location: ./shared/apis-guru-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-discovery-api\n      description: \"Unified REST API for API discovery and catalog browsing via APIs.guru.\"\n      resources:\n        - path: /v1/apis\n      \
   \    name: apis\n          description: \"All APIs in the directory\"\n          operations:\n            - method: GET\n              name: list-apis\n              description: \"List all APIs in the APIs.guru directory\"\n              call: \"apis-guru.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/metrics\n          name: metrics\n          description: \"Directory metrics and statistics\"\n          operations:\n            - method: GET\n              name: get-metrics\n              description: \"Get directory-wide metrics\"\n              call: \"apis-guru.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers\n          name: providers\n          description: \"API providers in the directory\"\n          operations:\n            - method: GET\n              name: list-providers\n              description:\
   \ \"List all API providers\"\n              call: \"apis-guru.list-providers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers/{provider}\n          name: provider-apis\n          description: \"APIs for a specific provider\"\n          operations:\n            - method: GET\n              name: get-provider-apis\n              description: \"Get all APIs for a provider\"\n              call: \"apis-guru.get-provider\"\n              with:\n                provider: \"rest.provider\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/providers/{provider}/services\n          name: provider-services\n          description: \"Services for a specific provider\"\n          operations:\n            - method: GET\n              name: get-provider-services\n              description: \"List service names for a provider\"\n              call:\

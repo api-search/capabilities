@@ -18,40 +18,42 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- Treasury Analyst
-- list available bank of america account statements
-- cashpro
-- get account balances
-- corporate banking
-- list statements
-- list bank of america cashpro accounts for the authenticated client
-- list accounts
-- treasury
-- payment initiation and tracking across 350+ payment types
-- initiate a payment
-- ERP Integration
-- corporate cash management, balance reporting, and liquidity
 - list transactions for a bank of america account within a date range
-- banking
+- list available bank of america account statements
+- ERP Integration
+- system integration connecting erp/tms to bank of america cashpro apis
+- get payment status
+- cashpro
+- list cashpro accounts
+- list account transactions
 - Corporate Treasurer
 - get the current status of a bank of america payment
-- bank of america
-- list cashpro accounts
+- payment management
+- list bofa accounts
+- get account balances
+- corporate cash management, balance reporting, and liquidity
+- banking
+- list accounts
+- initiate payment
+- get current and available balances for a cashpro account
+- payment initiation and tracking across 350+ payment types
+- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- Treasury Analyst
+- list statements
 - account management
 - analyst managing day-to-day treasury operations and reporting
 - executive responsible for corporate cash and liquidity management
-- get current and available balances for a cashpro account
-- system integration connecting erp/tms to bank of america cashpro apis
-- list bofa accounts
-- get payment status
-- payments
-- list account transactions
-- initiate payment
-- payment management
-- corporate treasury operations including account management, payments, and reporting
 - finance
-- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- corporate treasury operations including account management, payments, and reporting
+- corporate banking
+- initiate a payment
+- list bank of america cashpro accounts for the authenticated client
+- bank of america
+- payments
+- treasury
 slug: treasury-banking
+source_filename: treasury-banking.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bank of America CashPro Treasury Banking\"\n  description: >-\n    Bank of America CashPro treasury banking workflow for corporate clients covering\n    account management, balance reporting, payment initiation, and statement access.\n    Integrates with TMS and ERP platforms for automated treasury operations.\n  tags:\n    - Bank of America\n    - CashPro\n    - Treasury\n    - Payments\n    - Corporate Banking\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BOFA_CLIENT_ID: BOFA_CLIENT_ID\n      BOFA_CLIENT_SECRET: BOFA_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: bofa-cashpro\n      location: ./shared/cashpro-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: bofa-treasury-api\n      description: \"Unified REST API for Bank of America CashPro treasury operations.\"\n      resources:\n        - path: /v1/accounts\n          name: accounts\n\
   \          description: Account management\n          operations:\n            - method: GET\n              name: list-accounts\n              description: List CashPro accounts\n              call: \"bofa-cashpro.listAccounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payments\n          name: payments\n          description: Payment management\n          operations:\n            - method: POST\n              name: initiate-payment\n              description: Initiate a payment\n              call: \"bofa-cashpro.initiatePayment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: bofa-treasury-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Bank of America treasury management.\"\n      tools:\n        - name: list-bofa-accounts\n          description: List Bank of America CashPro\
   \ accounts for the authenticated client\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bofa-cashpro.listAccounts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-account-balances\n          description: Get current and available balances for a CashPro account\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bofa-cashpro.getAccountBalances\"\n          with:\n            accountId: \"tools.accountId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-account-transactions\n          description: List transactions for a Bank of America account within a date range\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bofa-cashpro.listTransactions\"\n          with:\n            accountId: \"tools.accountId\"\n          outputParameters:\n\

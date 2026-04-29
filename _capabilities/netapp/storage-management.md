@@ -58,58 +58,60 @@ personas: []
 provider_name: NetApp
 provider_slug: netapp
 search_terms:
-- volume snapshot management
-- create volume
-- retrieve a specific volume
+- list network interfaces
+- data management
+- storage virtual machine management
+- list svms
+- list storage aggregates (local tiers) in the cluster
+- list snapshots
+- list nodes
+- create a new storage volume on a specified svm and aggregate
+- storage volume management
+- update a volume
+- aggregate management
+- list storage aggregates
+- ontap
+- list all nodes in the ontap cluster
+- hybrid cloud
+- storage
 - retrieve ontap cluster information including name, version, and health
 - list snapshots for a specific volume
-- netapp
-- create a point-in-time snapshot of a volume
-- delete a volume
-- create a new storage volume on a specified svm and aggregate
-- list svms
-- list all nodes in the ontap cluster
-- delete a storage volume
-- update volume
-- list volumes
-- storage virtual machine management
-- storage
-- list storage aggregates (local tiers) in the cluster
-- network interface management
-- delete volume
-- ontap
-- list network interfaces
-- list aggregates
-- list nodes
-- list storage virtual machines in the cluster
-- create snapshot
-- get volume
-- list all storage volumes across the cluster
-- list snapshots
-- update a volume
-- cloud
-- infrastructure
-- list cluster nodes
-- storage management
-- create a volume snapshot
-- data protection
-- list storage volumes
-- list storage aggregates
-- data management
-- retrieve cluster information
-- aggregate management
-- list network interfaces (lifs) in the cluster
-- update properties of an existing volume
-- retrieve detailed information about a specific volume
-- create a new volume
-- cluster information and configuration
-- storage volume management
-- hybrid cloud
-- list volume snapshots
 - get cluster
-- cluster node management
+- retrieve cluster information
+- update properties of an existing volume
+- list all storage volumes across the cluster
+- volume snapshot management
+- delete a storage volume
 - individual volume operations
+- create a new volume
+- update volume
+- delete a volume
+- get volume
+- storage management
+- delete volume
+- list aggregates
+- cloud
+- list volumes
+- retrieve detailed information about a specific volume
+- list storage volumes
+- cluster node management
+- list network interfaces (lifs) in the cluster
+- netapp
+- list volume snapshots
+- data protection
+- list storage virtual machines in the cluster
+- network interface management
+- retrieve a specific volume
+- list cluster nodes
+- cluster information and configuration
+- create volume
+- infrastructure
+- create snapshot
+- create a point-in-time snapshot of a volume
+- create a volume snapshot
 slug: storage-management
+source_filename: storage-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"NetApp Storage Management\"\n  description: \"Unified workflow for managing NetApp ONTAP storage infrastructure including volumes, aggregates, SVMs, snapshots, and network interfaces. Used by storage administrators for provisioning and day-to-day management.\"\n  tags:\n    - NetApp\n    - Storage Management\n    - ONTAP\n    - Data Protection\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      NETAPP_USERNAME: NETAPP_USERNAME\n      NETAPP_PASSWORD: NETAPP_PASSWORD\n\ncapability:\n  consumes:\n    - import: ontap\n      location: ./shared/ontap.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: storage-management-api\n      description: \"Unified REST API for NetApp storage management.\"\n      resources:\n        - path: /v1/cluster\n          name: cluster\n          description: \"Cluster information and configuration\"\n          operations:\n       \
   \     - method: GET\n              name: get-cluster\n              description: \"Retrieve cluster information\"\n              call: \"ontap.get-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/nodes\n          name: nodes\n          description: \"Cluster node management\"\n          operations:\n            - method: GET\n              name: list-nodes\n              description: \"List cluster nodes\"\n              call: \"ontap.list-cluster-nodes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/volumes\n          name: volumes\n          description: \"Storage volume management\"\n          operations:\n            - method: GET\n              name: list-volumes\n              description: \"List storage volumes\"\n              call: \"ontap.list-volumes\"\n              outputParameters:\n                - type: object\n  \
   \                mapping: \"$.\"\n            - method: POST\n              name: create-volume\n              description: \"Create a new volume\"\n              call: \"ontap.create-volume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/volumes/{uuid}\n          name: volume\n          description: \"Individual volume operations\"\n          operations:\n            - method: GET\n              name: get-volume\n              description: \"Retrieve a specific volume\"\n              call: \"ontap.get-volume\"\n              with:\n                uuid: \"rest.uuid\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-volume\n              description: \"Update a volume\"\n              call: \"ontap.update-volume\"\n              with:\n                uuid: \"rest.uuid\"\n              outputParameters:\n\

@@ -35,55 +35,57 @@ personas: []
 provider_name: Apache Airflow
 provider_slug: airflow
 search_terms:
-- manages airflow connections, variables, pools, and infrastructure.
-- etl
-- list task instances
-- list dag runs
-- get variable
-- monitoring and operating running pipelines.
 - trigger a new dag run.
-- get dag run status
-- airflow connections.
-- trigger and monitor dag runs.
-- list airflow connections for external service integrations.
-- airflow
-- monitor task instances.
-- apache airflow dag management.
-- trigger an apache airflow dag run with optional configuration.
-- pause dag
-- defining, scheduling, and executing data workflows.
-- open source
-- list task instances and their status for a dag run.
-- get a specific airflow variable by key.
-- builds and triggers data pipelines using airflow dags.
-- list variables
-- scheduling
 - list task instances for a dag run.
-- list airflow dag run history with optional state filtering.
-- list airflow variables for pipeline configuration.
-- get details of an apache airflow dag by id.
-- airflow variables.
-- list connections
+- get variable
 - list all connections.
-- list all apache airflow dags.
-- get dag
-- list dags
-- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
-- dag
-- data engineering
-- data pipeline
-- apache
-- list all variables.
-- pause an airflow dag to prevent scheduled runs.
-- trigger dag run
-- managing pipeline configuration and integrations.
-- Data Engineer
-- list dag runs.
+- get a specific airflow variable by key.
+- defining, scheduling, and executing data workflows.
+- monitoring and operating running pipelines.
 - Platform Admin
-- list all dags.
-- get the current status of an airflow dag run.
+- Data Engineer
+- data pipeline
+- list task instances
+- monitor task instances.
+- list connections
 - workflow orchestration
+- open source
+- scheduling
+- list task instances and their status for a dag run.
+- list variables
+- list airflow dag run history with optional state filtering.
+- airflow connections.
+- list dag runs
+- list all apache airflow dags.
+- airflow variables.
+- list dag runs.
+- get dag
+- trigger an apache airflow dag run with optional configuration.
+- get the current status of an airflow dag run.
+- manage airflow dags, trigger runs, monitor task execution, and manage variables and connections.
+- apache
+- apache airflow dag management.
+- list dags
+- list airflow connections for external service integrations.
+- manages airflow connections, variables, pools, and infrastructure.
+- managing pipeline configuration and integrations.
+- airflow
+- trigger and monitor dag runs.
+- list all variables.
+- list all dags.
+- builds and triggers data pipelines using airflow dags.
+- trigger dag run
+- get details of an apache airflow dag by id.
+- pause an airflow dag to prevent scheduled runs.
+- pause dag
+- list airflow variables for pipeline configuration.
+- dag
+- get dag run status
+- data engineering
+- etl
 slug: workflow-orchestration
+source_filename: workflow-orchestration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Airflow Workflow Orchestration\"\n  description: \"Unified workflow capability for managing Apache Airflow pipelines — DAGs, DAG runs, task monitoring, variables, and connections. Used by data engineers and platform teams for orchestrating data pipelines.\"\n  tags:\n    - Airflow\n    - Workflow Orchestration\n    - Data Pipeline\n    - ETL\n    - Data Engineering\n    - Apache\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRFLOW_BASE_URL: AIRFLOW_BASE_URL\n      AIRFLOW_USERNAME: AIRFLOW_USERNAME\n      AIRFLOW_PASSWORD: AIRFLOW_PASSWORD\n\ncapability:\n  consumes:\n    - import: airflow\n      location: ./shared/airflow-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airflow-orchestration-api\n      description: \"Unified REST API for Airflow workflow orchestration.\"\n      resources:\n        - path: /v1/dags\n          name: dags\n\
   \          description: \"Apache Airflow DAG management.\"\n          operations:\n            - method: GET\n              name: list-dags\n              description: \"List all DAGs.\"\n              call: \"airflow.list-dags\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dag-runs\n          name: dag-runs\n          description: \"Trigger and monitor DAG runs.\"\n          operations:\n            - method: GET\n              name: list-dag-runs\n              description: \"List DAG runs.\"\n              call: \"airflow.list-dag-runs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: trigger-dag-run\n              description: \"Trigger a new DAG run.\"\n              call: \"airflow.trigger-dag-run\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n      \
   \  - path: /v1/task-instances\n          name: task-instances\n          description: \"Monitor task instances.\"\n          operations:\n            - method: GET\n              name: list-task-instances\n              description: \"List task instances for a DAG run.\"\n              call: \"airflow.list-task-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/variables\n          name: variables\n          description: \"Airflow Variables.\"\n          operations:\n            - method: GET\n              name: list-variables\n              description: \"List all variables.\"\n              call: \"airflow.list-variables\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections\n          name: connections\n          description: \"Airflow Connections.\"\n          operations:\n            - method: GET\n              name: list-connections\n\

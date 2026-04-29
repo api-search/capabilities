@@ -1,4 +1,29 @@
 ---
+api_specs:
+- filename: query.yml
+  format: yaml
+  label: query
+  slug: query
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/query.yml
+- filename: pivot-grid.yml
+  format: yaml
+  label: pivot-grid
+  slug: pivot-grid
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/pivot-grid.yml
+- filename: search-framework.yml
+  format: yaml
+  label: search-framework
+  slug: search-framework
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/search-framework.yml
+- filename: enterprise-performance-management.yml
+  format: yaml
+  label: epm
+  slug: epm
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/enterprise-performance-management.yml
 categories:
 - analytics
 consumed_apis:
@@ -50,53 +75,55 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- budget definitions and data
-- execute a peoplesoft query by name.
-- retrieve performance analytics reports.
-- execute query
-- crm
-- analytics
+- query execution
 - financial management
-- full-text search results
+- hcm
+- retrieve available pivot grid definitions.
 - campus solutions.
-- query
-- search index operations
-- performance analytics reports
 - execute a full-text search across peoplesoft indexed content.
+- list forecasts
 - search
-- retrieve available peoplesoft query definitions.
+- performance analytics reports
+- human capital management.
+- pivot grid data
+- get pivot grid data
+- supply chain management
+- forecast data and projections
+- budget definitions and data
 - reporting
 - list queries
-- list budgets
-- financial and supply chain management.
-- pivot grid data
-- erp
-- hcm
-- pivot grid definitions
-- query execution
-- get pivot grid data
 - list pivot grids
-- trigger a search index build or incremental update.
+- retrieve available peoplesoft query definitions.
+- erp
 - retrieve forecast data and projections.
-- retrieve budget definitions and data.
-- human capital management.
-- enterprise software
+- financial and supply chain management.
+- crm
 - peoplesoft
-- retrieve data for a specific pivot grid with optional filters.
-- list forecasts
-- forecast data and projections
-- campus solutions
-- search content
-- trigger index build
-- retrieve data for a specific pivot grid.
-- supply chain management
 - peoplesoft query definitions
-- dashboards
-- execute a peoplesoft query by name and retrieve results.
-- retrieve available pivot grid definitions.
-- peopletools platform services.
+- query
 - list analytics reports
+- execute a peoplesoft query by name.
+- execute query
+- list budgets
+- execute a peoplesoft query by name and retrieve results.
+- campus solutions
+- retrieve data for a specific pivot grid.
+- search content
+- enterprise software
+- pivot grid definitions
+- retrieve budget definitions and data.
+- full-text search results
+- retrieve data for a specific pivot grid with optional filters.
+- analytics
+- trigger a search index build or incremental update.
+- peopletools platform services.
+- trigger index build
+- dashboards
+- retrieve performance analytics reports.
+- search index operations
 slug: reporting-and-analytics
+source_filename: reporting-and-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Reporting And Analytics\"\n  description: \"Unified workflow for analysts combining query execution, pivot grid dashboards, full-text search, and performance analytics across PeopleSoft Query, Pivot Grid, Search Framework, and EPM APIs.\"\n  tags:\n    - PeopleSoft\n    - Reporting\n    - Analytics\n    - Dashboards\n    - Query\n    - Search\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: query\n      location: ./shared/query.yaml\n    - import: pivot-grid\n      location: ./shared/pivot-grid.yaml\n    - import: search-framework\n      location: ./shared/search-framework.yaml\n    - import: epm\n      location: ./shared/enterprise-performance-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8086\n      namespace: reporting-api\n\
   \      description: \"Unified REST API for PeopleSoft reporting and analytics workflows.\"\n      resources:\n        - path: /v1/queries\n          name: queries\n          description: \"PeopleSoft Query definitions\"\n          operations:\n            - method: GET\n              name: list-queries\n              description: \"Retrieve available PeopleSoft Query definitions.\"\n              call: \"query.list-queries\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries/{queryName}\n          name: query-execution\n          description: \"Query execution\"\n          operations:\n            - method: GET\n              name: execute-query\n              description: \"Execute a PeopleSoft Query by name.\"\n              call: \"query.execute-query\"\n              with:\n                queryName: \"rest.queryName\"\n                isConnectedQuery: \"rest.isConnectedQuery\"\n                maxRows:\
   \ \"rest.maxRows\"\n                offset: \"rest.offset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pivot-grids\n          name: pivot-grids\n          description: \"Pivot grid definitions\"\n          operations:\n            - method: GET\n              name: list-pivot-grids\n              description: \"Retrieve available pivot grid definitions.\"\n              call: \"pivot-grid.list-pivot-grids\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pivot-grids/{gridId}/data\n          name: pivot-grid-data\n          description: \"Pivot grid data\"\n          operations:\n            - method: GET\n              name: get-pivot-grid-data\n              description: \"Retrieve data for a specific pivot grid.\"\n              call: \"pivot-grid.get-pivot-grid-data\"\n              with:\n                gridId: \"rest.gridId\"\n   \

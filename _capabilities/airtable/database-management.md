@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: airtable-metadata-api-openapi.yml
+  format: yaml
+  label: airtable-meta
+  slug: airtable-meta
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/airtable/refs/heads/main/openapi/airtable-metadata-api-openapi.yml
 categories: []
 consumed_apis:
 - airtable
@@ -31,49 +38,51 @@ personas: []
 provider_name: Airtable
 provider_slug: airtable
 search_terms:
-- list bases
-- user management, audit logs, and access control.
-- delete an airtable record permanently.
-- productivity
-- airtable table records.
-- list records from a table.
-- reads and analyzes airtable data programmatically.
-- records
+- airtable bases and schemas.
 - update a record.
-- manages users, audit logs, and shares across the organization.
+- list bases
+- reads and analyzes airtable data programmatically.
+- managing the structure of bases, tables, and fields.
 - real-time event-driven integrations via webhooks.
+- create records
+- list all accessible bases.
+- get base schema
+- no-code
+- list records
+- delete an airtable record permanently.
+- Developer
+- update record
+- airtable table records.
+- manages users, audit logs, and shares across the organization.
+- productivity
+- list all airtable bases the user has access to.
+- create records in a table.
+- data
+- creating, reading, updating, and deleting data records.
+- Data Analyst
+- applications
+- low-code
+- database
+- user management, audit logs, and access control.
+- list records from a table.
+- a specific airtable record.
+- records
+- delete a record.
+- get the schema of an airtable base with all tables and fields.
+- update specific fields in an airtable record.
+- integrates airtable with external systems via the rest api.
+- databases
+- list records from an airtable table with optional filtering.
 - schema
 - spreadsheets
-- list records
-- integrates airtable with external systems via the rest api.
-- delete a record.
-- list all accessible bases.
-- list records from an airtable table with optional filtering.
-- applications
-- no-code
-- creating, reading, updating, and deleting data records.
-- delete record
-- update specific fields in an airtable record.
-- a specific airtable record.
-- databases
-- airtable
 - read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
-- create records
-- Developer
-- database
-- list all airtable bases the user has access to.
-- get base schema
-- Data Analyst
-- create one or more records in an airtable table.
-- airtable bases and schemas.
-- get the schema of an airtable base with all tables and fields.
-- create records in a table.
-- update record
-- data
 - collaboration
-- managing the structure of bases, tables, and fields.
-- low-code
+- airtable
+- create one or more records in an airtable table.
+- delete record
 slug: database-management
+source_filename: database-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Airtable Database Management\"\n  description: \"Unified workflow for managing Airtable databases — reading and writing records, browsing base schemas, managing webhooks, and administering tables. Used by developers and data teams integrating Airtable with external systems.\"\n  tags:\n    - Airtable\n    - Database\n    - Low-Code\n    - No-Code\n    - Records\n    - Schema\n    - Collaboration\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AIRTABLE_API_TOKEN: AIRTABLE_API_TOKEN\n\ncapability:\n  consumes:\n    - import: airtable\n      location: ./shared/airtable-api.yaml\n    - import: airtable-meta\n      location: ./shared/airtable-metadata-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: airtable-db-api\n      description: \"Unified REST API for Airtable database management.\"\n      resources:\n        - path: /v1/bases\n          name: bases\n\
   \          description: \"Airtable bases and schemas.\"\n          operations:\n            - method: GET\n              name: list-bases\n              description: \"List all accessible bases.\"\n              call: \"airtable-meta.list-bases\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/records\n          name: records\n          description: \"Airtable table records.\"\n          operations:\n            - method: GET\n              name: list-records\n              description: \"List records from a table.\"\n              call: \"airtable.list-records\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-records\n              description: \"Create records in a table.\"\n              call: \"airtable.create-records\"\n              outputParameters:\n                - type: object\n                  mapping:\
   \ \"$.\"\n        - path: /v1/records/{recordId}\n          name: record\n          description: \"A specific Airtable record.\"\n          operations:\n            - method: PATCH\n              name: update-record\n              description: \"Update a record.\"\n              call: \"airtable.update-record\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-record\n              description: \"Delete a record.\"\n              call: \"airtable.delete-record\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: airtable-db-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Airtable database management.\"\n      tools:\n        - name: list-bases\n          description: \"List all Airtable bases the user has access to.\"\n          hints:\n            readOnly:\

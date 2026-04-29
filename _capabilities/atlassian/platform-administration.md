@@ -35,40 +35,42 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- administration
-- list audit events
-- productivity
-- list organizations
-- list groups in an organization
-- list domains in an organization
-- organization management
-- get organization
-- group management
-- get organization details
-- software development
-- audit events
-- list organization groups
-- list events
-- list groups
 - user management
-- list organization policies
-- list organization domains
-- list users
+- code
+- list groups in an organization
+- platform
+- list events
+- identity
 - list policies
-- list domains
-- domain management
+- list organization policies
+- list organization users
 - list all atlassian organizations
+- productivity
+- list groups
+- list organization domains
+- list domains
+- administration
+- software development
+- list users
+- organization management
+- audit events
+- get organization
+- list domains in an organization
+- list atlassian organizations
 - list users in an organization
 - policy management
-- list organization users
-- platform
-- identity
-- atlassian
-- code
-- list atlassian organizations
-- collaboration
+- list organizations
+- list organization groups
 - list organization audit events
+- list audit events
+- domain management
+- collaboration
+- get organization details
+- atlassian
+- group management
 slug: platform-administration
+source_filename: platform-administration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Platform Administration\"\n  description: \"Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.\"\n  tags:\n    - Administration\n    - Atlassian\n    - Identity\n    - Platform\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: atlassian-platform-admin-api\n      description: \"Unified REST API for Atlassian platform administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description:\
   \ \"Organization management\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List Atlassian organizations\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List organization users\"\n              call: \"atlassian-admin.list-users\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List\
   \ organization groups\"\n              call: \"atlassian-admin.list-groups\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/domains\n          name: domains\n          description: \"Domain management\"\n          operations:\n            - method: GET\n              name: list-domains\n              description: \"List organization domains\"\n              call: \"atlassian-admin.list-domains\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Policy management\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List organization policies\"\n              call: \"atlassian-admin.list-policies\"\n    \

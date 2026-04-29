@@ -48,61 +48,63 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list all blog posts in hubspot
-- retrieve analytics events
-- list blog posts
-- crm
-- commerce
-- analytics
-- sales
-- get blog post
-- update a blog post
-- list all blog authors
-- get blog author
-- list all blog posts
-- update an existing blog post
-- create a new blog post
-- get event types
-- analytics events
-- get a specific blog post by id
-- create blog post
-- list events
-- archive a blog post
-- operations
-- blog
-- customer service
-- create a blog post
-- list available analytics event types
-- clone blog post
-- push a draft blog post to live
-- content
-- email marketing
-- archive blog post
-- list event types
-- create a new blog author
 - cms
-- get revision history for a blog post
-- hubspot
-- marketing
-- blog author management
-- get analytics events
-- create blog author
-- schedule a blog post for publication
-- push blog post live
-- schedule blog post
-- get a blog author by id
-- event type definitions
-- clone an existing blog post
-- get blog post revisions
-- individual blog post
-- get a blog post
-- marketing automation
-- update blog post
-- retrieve analytics event data for crm objects
-- list available event types
-- list blog authors
 - blog post management
+- update blog post
+- list blog authors
+- operations
+- marketing automation
+- clone an existing blog post
+- list events
+- hubspot
+- clone blog post
+- blog author management
+- get revision history for a blog post
+- create blog post
+- content
+- crm
+- list event types
+- list available event types
+- schedule a blog post for publication
+- list available analytics event types
+- get event types
+- create a new blog post
+- create blog author
+- get analytics events
+- update an existing blog post
+- list all blog posts in hubspot
+- get blog author
+- get blog post revisions
+- push blog post live
+- update a blog post
+- schedule blog post
+- archive a blog post
+- sales
+- get a blog post
+- list blog posts
+- email marketing
+- create a blog post
+- analytics
+- get a specific blog post by id
+- push a draft blog post to live
+- get a blog author by id
+- commerce
+- blog
+- individual blog post
+- get blog post
+- customer service
+- retrieve analytics event data for crm objects
+- list all blog posts
+- create a new blog author
+- archive blog post
+- marketing
+- retrieve analytics events
+- list all blog authors
+- event type definitions
+- analytics events
 slug: content-and-marketing
+source_filename: content-and-marketing.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"HubSpot Content And Marketing\"\n  description: \"Unified workflow for marketing managers to manage blog content, authors, landing pages, site pages, domains, analytics events, and transactional email. Combines CMS and marketing APIs into a single content operations interface.\"\n  tags:\n    - HubSpot\n    - Marketing\n    - Content\n    - CMS\n    - Blog\n    - Analytics\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      HUBSPOT_ACCESS_TOKEN: HUBSPOT_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: blog-posts\n      location: ./shared/blog-posts.yaml\n    - import: blog-authors\n      location: ./shared/blog-authors.yaml\n    - import: analytics-events\n      location: ./shared/analytics-events.yaml\n    - import: cms-pages\n      location: ./shared/cms-pages-api.yaml\n    - import: domains\n      location: ./shared/domains-api.yaml\n    - import: marketing-email\n  \
   \    location: ./shared/marketing-emal-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: content-marketing-api\n      description: \"Unified REST API for content creation, publishing, and marketing analytics.\"\n      resources:\n        - path: /v1/blog-posts\n          name: blog-posts\n          description: \"Blog post management\"\n          operations:\n            - method: GET\n              name: list-blog-posts\n              description: \"List all blog posts\"\n              call: \"blog-posts.list-blog-posts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-blog-post\n              description: \"Create a blog post\"\n              call: \"blog-posts.create-blog-post\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/blog-posts/{objectId}\n          name: blog-post-by-id\n\
   \          description: \"Individual blog post\"\n          operations:\n            - method: GET\n              name: get-blog-post\n              description: \"Get a blog post\"\n              call: \"blog-posts.get-blog-post\"\n              with:\n                objectId: \"rest.objectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-blog-post\n              description: \"Update a blog post\"\n              call: \"blog-posts.update-blog-post\"\n              with:\n                objectId: \"rest.objectId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: archive-blog-post\n              description: \"Archive a blog post\"\n              call: \"blog-posts.archive-blog-post\"\n              with:\n                objectId: \"rest.objectId\"\n              outputParameters:\n\

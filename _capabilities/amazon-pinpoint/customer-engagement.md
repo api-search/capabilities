@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-pinpoint-openapi.yml
+  format: yaml
+  label: amazon-pinpoint
+  slug: amazon-pinpoint
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-pinpoint/refs/heads/main/openapi/amazon-pinpoint-openapi.yml
 categories:
 - customer-engagement
 consumed_apis:
@@ -47,58 +54,60 @@ personas: []
 provider_name: Amazon Pinpoint
 provider_slug: amazon-pinpoint
 search_terms:
-- create a new customer journey
-- list apps
-- list all pinpoint applications
-- aws
-- amazon
-- create a new pinpoint application for customer engagement
-- analytics
-- send transactional messages to customer endpoints
-- list marketing campaigns for a pinpoint application
-- send transactional messages
 - list audience segments for targeting campaigns and journeys
-- email
-- audience segment management
-- journeys
-- create a new pinpoint application
-- create a new customer audience segment based on attributes or imported data
-- integrates messaging apis and manages endpoints
-- create a multi-step automated customer engagement journey
-- create a new audience segment
-- list campaigns for an application
-- send messages
-- list customer journeys
 - list audience segments
-- manages campaigns, segments, and journeys
-- campaigns
-- pinpoint application management
-- create a new marketing campaign
-- create app
-- create a new multi-channel marketing campaign
-- create journey
-- multi-channel customer engagement workflow
-- list journeys
-- Marketing Manager
-- Growth Engineer
-- create audience segment
-- marketing
-- communications
-- customer engagement
-- create segment
-- marketing campaign management
-- list campaigns
-- sms
-- send transactional messages (confirmations, alerts, notifications) to customer endpoints
-- segmentation
-- customer journey workflow management
-- create campaign
 - list segments
-- push notifications
-- voice
+- list campaigns
+- Growth Engineer
+- create a new multi-channel marketing campaign
+- customer engagement
+- create a new customer journey
+- audience segment management
+- marketing campaign management
 - messaging
+- push notifications
+- email
+- list all pinpoint applications
+- send messages
+- list marketing campaigns for a pinpoint application
+- create a new customer audience segment based on attributes or imported data
+- list apps
+- voice
+- journeys
+- send transactional messages
+- send transactional messages to customer endpoints
+- customer journey workflow management
+- manages campaigns, segments, and journeys
+- create segment
+- aws
+- pinpoint application management
+- create audience segment
+- amazon
+- list journeys
+- sms
+- create campaign
+- create journey
 - list automated customer journey workflows
+- list customer journeys
+- create a new pinpoint application
+- campaigns
+- send transactional messages (confirmations, alerts, notifications) to customer endpoints
+- create a new pinpoint application for customer engagement
+- integrates messaging apis and manages endpoints
+- analytics
+- communications
+- list campaigns for an application
+- segmentation
+- create a multi-step automated customer engagement journey
+- create app
+- create a new marketing campaign
+- create a new audience segment
+- Marketing Manager
+- multi-channel customer engagement workflow
+- marketing
 slug: customer-engagement
+source_filename: customer-engagement.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Pinpoint Customer Engagement\n  description: Workflow capability for multi-channel customer engagement using Amazon Pinpoint. Combines campaign management, audience segmentation, customer journeys, and transactional messaging for marketing teams and growth engineers.\n  tags:\n    - Amazon\n    - AWS\n    - Marketing\n    - Customer Engagement\n    - Campaigns\n    - Journeys\n    - Segmentation\n    - Messaging\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-pinpoint\n      location: ./shared/amazon-pinpoint.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: customer-engagement-api\n      description: Unified REST API for Amazon Pinpoint customer engagement workflows.\n      resources:\n\
   \        - path: /v1/apps\n          name: apps\n          description: Pinpoint application management\n          operations:\n            - method: GET\n              name: list-apps\n              description: List all Pinpoint applications\n              call: \"amazon-pinpoint.get-apps\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-app\n              description: Create a new Pinpoint application\n              call: \"amazon-pinpoint.create-app\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/campaigns\n          name: campaigns\n          description: Marketing campaign management\n          operations:\n            - method: GET\n              name: list-campaigns\n              description: List campaigns for an application\n              call: \"amazon-pinpoint.get-campaigns\"\n             \
   \ with:\n                application-id: \"rest.application_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-campaign\n              description: Create a new marketing campaign\n              call: \"amazon-pinpoint.create-campaign\"\n              with:\n                application-id: \"rest.application_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/audiences\n          name: audiences\n          description: Audience segment management\n          operations:\n            - method: GET\n              name: list-segments\n              description: List audience segments\n              call: \"amazon-pinpoint.get-segments\"\n              with:\n                application-id: \"rest.application_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"\

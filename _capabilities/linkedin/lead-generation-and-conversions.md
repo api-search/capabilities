@@ -39,48 +39,50 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- archives communications for regulatory compliance.
-- authentication, sharing, and verification for consumer apps.
-- business
-- demand generation
-- uses sales navigator for lead generation and crm sync.
-- job posting, recruiting, and applicant tracking.
 - get lead form responses
-- validate organization role
-- employee development tracking and content access.
-- get conversion rules
-- get lead forms for a sponsored account.
-- stream conversion events.
-- get lead by id
-- recruiting
-- subscribe for lead notification webhooks.
-- sales intelligence, lead management, and crm integration.
-- tracks employee learning activity and completions.
-- careers
-- stream conversion events
-- fetch full lead data by id.
-- get lead forms
-- conversions
-- b2b advertising, audience targeting, and campaign analytics.
-- professional networking
-- message archiving and regulatory communications governance.
-- social media
 - linkedin
-- fetch existing conversion rules.
-- pull lead form responses.
-- marketing
-- lead generation
+- authentication, sharing, and verification for consumer apps.
+- validate organization role
 - posts jobs and manages candidates through ats integrations.
-- validate user's organization role for lead access.
+- professional networking
 - create a new conversion rule.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- subscribe lead notifications
-- get the user's sponsored accounts.
-- create conversion rule
-- get sponsored accounts
-- integrates linkedin authentication and sharing into applications.
+- uses sales navigator for lead generation and crm sync.
+- employee development tracking and content access.
+- lead generation
+- get lead by id
+- message archiving and regulatory communications governance.
+- stream conversion events.
+- tracks employee learning activity and completions.
 - data portability and advertiser transparency for dma.
+- get conversion rules
+- integrates linkedin authentication and sharing into applications.
+- demand generation
+- get lead forms for a sponsored account.
+- recruiting
+- fetch existing conversion rules.
+- social media
+- sales intelligence, lead management, and crm integration.
+- subscribe lead notifications
+- careers
+- pull lead form responses.
+- validate user's organization role for lead access.
+- fetch full lead data by id.
+- job posting, recruiting, and applicant tracking.
+- get lead forms
+- stream conversion events
+- b2b advertising, audience targeting, and campaign analytics.
+- subscribe for lead notification webhooks.
+- get the user's sponsored accounts.
+- get sponsored accounts
+- archives communications for regulatory compliance.
+- conversions
+- manages b2b ad campaigns and audience targeting on linkedin.
+- marketing
+- business
+- create conversion rule
 slug: lead-generation-and-conversions
+source_filename: lead-generation-and-conversions.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Lead Generation And Conversions\"\n  description: \"Unified workflow for demand generation managers to capture leads, sync lead data, track conversions, and measure attribution -- combining lead sync and conversions APIs.\"\n  tags:\n    - LinkedIn\n    - Lead Generation\n    - Conversions\n    - Demand Generation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: marketing-leads\n      location: ./shared/marketing-leads.yaml\n    - import: marketing-conversions\n      location: ./shared/marketing-conversions.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: lead-gen-conversions-api\n      description: \"Unified REST API for LinkedIn lead generation and conversion tracking.\"\n      resources:\n        - path: /v1/lead-forms\n          name: lead-forms\n      \
   \    operations:\n            - method: GET\n              name: get-lead-forms\n              description: \"Get lead forms for a sponsored account.\"\n              call: \"marketing-leads.get-lead-forms\"\n        - path: /v1/lead-form-responses\n          name: lead-form-responses\n          operations:\n            - method: GET\n              name: get-lead-form-responses\n              description: \"Pull lead form responses.\"\n              call: \"marketing-leads.get-lead-form-responses\"\n        - path: /v1/lead-form-responses/{lead_id}\n          name: lead-by-id\n          operations:\n            - method: GET\n              name: get-lead-by-id\n              description: \"Fetch full lead data by ID.\"\n              call: \"marketing-leads.get-lead-by-id\"\n        - path: /v1/lead-notifications\n          name: lead-notifications\n          operations:\n            - method: POST\n              name: subscribe-lead-notifications\n              description: \"Subscribe\
   \ for lead notification webhooks.\"\n              call: \"marketing-leads.subscribe-lead-notifications\"\n        - path: /v1/conversions\n          name: conversions\n          operations:\n            - method: GET\n              name: get-conversion-rules\n              description: \"Fetch existing conversion rules.\"\n              call: \"marketing-conversions.get-conversion-rules\"\n            - method: POST\n              name: create-conversion-rule\n              description: \"Create a new conversion rule.\"\n              call: \"marketing-conversions.create-conversion-rule\"\n        - path: /v1/conversion-events\n          name: conversion-events\n          operations:\n            - method: POST\n              name: stream-conversion-events\n              description: \"Stream conversion events.\"\n              call: \"marketing-conversions.stream-conversion-events\"\n\n    - type: mcp\n      port: 9092\n      namespace: lead-gen-conversions-mcp\n      transport: http\n\

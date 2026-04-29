@@ -55,54 +55,56 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- set iam policy.
-- update object
-- individual bucket management.
-- object management.
-- list objects.
-- bucket iam management.
-- create a new storage bucket.
-- delete an object.
-- get iam policy.
-- get bucket
-- get bucket details.
+- get bucket iam policy
 - individual object management.
-- list buckets.
-- list objects
+- data management
+- delete bucket
+- list buckets
+- copy object
+- set bucket iam policy
+- list storage buckets in a project.
+- cloud storage
+- create bucket
+- delete a storage bucket.
 - storage
+- google cloud
+- data
+- object management.
+- create a bucket.
+- bucket iam management.
+- bucket management.
+- set bucket iam policy.
+- get bucket details.
+- list buckets.
+- delete an object.
+- update object metadata.
+- list objects.
+- delete object
+- update a bucket.
+- get object
+- list objects in a bucket.
+- blob storage
+- get bucket
+- compose multiple objects into one.
+- list objects
+- archival
+- individual bucket management.
+- compose objects
+- backup
+- update object
 - object storage
 - delete a bucket.
 - copy an object to another location.
-- archival
-- compose multiple objects into one.
-- cloud storage
-- backup
-- copy object
-- set bucket iam policy.
-- create a bucket.
-- update object metadata.
-- get object
-- get object metadata.
-- update a bucket.
-- data management
-- file storage
-- delete object
-- compose objects
+- create a new storage bucket.
 - get bucket iam policy.
-- create bucket
-- list buckets
-- list objects in a bucket.
-- blob storage
-- set bucket iam policy
-- delete bucket
-- google cloud
-- bucket management.
+- get iam policy.
+- set iam policy.
+- file storage
 - update bucket
-- delete a storage bucket.
-- list storage buckets in a project.
-- data
-- get bucket iam policy
+- get object metadata.
 slug: cloud-storage
+source_filename: cloud-storage.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Cloud Storage Management\"\n  description: \"Unified workflow for managing cloud storage buckets, objects, access controls, and IAM policies. Used by cloud engineers and data platform teams.\"\n  tags:\n    - Google Cloud\n    - Cloud Storage\n    - Object Storage\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GCP_OAUTH2_TOKEN: GCP_OAUTH2_TOKEN\n\ncapability:\n  consumes:\n    - import: cloud-storage\n      location: ./shared/cloud-storage-json.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: cloud-storage-api\n      description: \"Unified REST API for Google Cloud Storage management.\"\n      resources:\n        - path: /v1/buckets\n          name: buckets\n          description: \"Bucket management.\"\n          operations:\n            - method: GET\n              name: list-buckets\n              description: \"List\
   \ buckets.\"\n              call: \"cloud-storage.list-buckets\"\n              with:\n                project: \"rest.project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-bucket\n              description: \"Create a bucket.\"\n              call: \"cloud-storage.create-bucket\"\n              with:\n                project: \"rest.project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{id}\n          name: bucket-details\n          description: \"Individual bucket management.\"\n          operations:\n            - method: GET\n              name: get-bucket\n              description: \"Get bucket details.\"\n              call: \"cloud-storage.get-bucket\"\n              with:\n                bucket: \"rest.id\"\n              outputParameters:\n                - type: object\n         \
   \         mapping: \"$.\"\n            - method: PUT\n              name: update-bucket\n              description: \"Update a bucket.\"\n              call: \"cloud-storage.update-bucket\"\n              with:\n                bucket: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-bucket\n              description: \"Delete a bucket.\"\n              call: \"cloud-storage.delete-bucket\"\n              with:\n                bucket: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/buckets/{id}/iam\n          name: bucket-iam\n          description: \"Bucket IAM management.\"\n          operations:\n            - method: GET\n              name: get-bucket-iam-policy\n              description: \"Get IAM policy.\"\n              call: \"cloud-storage.get-bucket-iam-policy\"\n      \

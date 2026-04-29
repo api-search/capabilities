@@ -54,59 +54,61 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- create a new jira issue.
-- single project.
-- get project details.
-- itsm
-- project management
-- jira
-- get comments
 - project management.
-- get all jira priorities.
-- get all jira issue statuses.
-- get comments on a jira issue.
-- transition an issue through its workflow.
-- get transitions
-- delete issue
-- workflow transitions.
-- issue lifecycle management.
-- perform a transition.
-- search jira issues using jql.
-- get project
-- get issue types
-- get issue details.
-- service management
-- create a new issue.
-- get available workflow transitions.
-- add comment
-- get priorities
-- search issues
-- list all projects.
-- jql issue search.
-- delete an issue.
-- list all jira projects.
-- create issue
-- agile
-- edit an existing jira issue.
-- edit an issue.
-- edit issue
-- get all jira issue types.
-- get issue
-- search with jql.
-- get statuses
-- delete a jira issue.
-- single issue operations.
-- get issue comments.
-- list projects
-- issue tracking
-- get available transitions.
-- do transition
 - get jira project details.
-- get jira issue details.
 - add a comment.
-- add a comment to a jira issue.
+- list all projects.
+- get jira issue details.
+- get priorities
+- delete a jira issue.
+- transition an issue through its workflow.
+- get all jira issue types.
+- edit an existing jira issue.
+- create a new jira issue.
+- get available workflow transitions.
+- itsm
+- search issues
+- issue lifecycle management.
+- get comments
+- get all jira issue statuses.
+- list all jira projects.
+- jira
+- create a new issue.
+- get issue
+- single issue operations.
+- get project details.
+- get transitions
+- get issue types
+- create issue
+- issue tracking
+- get statuses
 - issue comments.
+- add comment
+- agile
+- get available transitions.
+- edit issue
+- do transition
+- single project.
+- edit an issue.
+- get issue details.
+- workflow transitions.
+- get issue comments.
+- delete issue
+- get project
+- add a comment to a jira issue.
+- get comments on a jira issue.
+- service management
+- list projects
+- search jira issues using jql.
+- get all jira priorities.
+- perform a transition.
+- project management
+- search with jql.
+- delete an issue.
+- jql issue search.
 slug: project-management
+source_filename: project-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Jira Project Management\"\n  description: \"Unified project management workflow combining issue tracking, workflow transitions, JQL search, and project management. Used by project managers, developers, and team leads to manage agile software delivery.\"\n  tags:\n    - Jira\n    - Project Management\n    - Issue Tracking\n    - Agile\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      JIRA_API_TOKEN: JIRA_API_TOKEN\n      JIRA_EMAIL: JIRA_EMAIL\n\ncapability:\n  consumes:\n    - import: jira-cloud\n      location: ./shared/jira-cloud-platform.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: jira-pm-api\n      description: \"Unified REST API for Jira project management workflows.\"\n      resources:\n        - path: /v1/issues\n          name: issues\n          description: \"Issue lifecycle management.\"\n          operations:\n            - method: POST\n\
   \              name: create-issue\n              description: \"Create a new issue.\"\n              call: \"jira-cloud.create-issue\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/issues/{issueIdOrKey}\n          name: issue-detail\n          description: \"Single issue operations.\"\n          operations:\n            - method: GET\n              name: get-issue\n              description: \"Get issue details.\"\n              call: \"jira-cloud.get-issue\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: edit-issue\n              description: \"Edit an issue.\"\n              call: \"jira-cloud.edit-issue\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n\
   \                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-issue\n              description: \"Delete an issue.\"\n              call: \"jira-cloud.delete-issue\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/issues/{issueIdOrKey}/transitions\n          name: transitions\n          description: \"Workflow transitions.\"\n          operations:\n            - method: GET\n              name: get-transitions\n              description: \"Get available transitions.\"\n              call: \"jira-cloud.get-transitions\"\n              with:\n                issueIdOrKey: \"rest.issueIdOrKey\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: do-transition\n              description: \"Perform a transition.\"\n    \

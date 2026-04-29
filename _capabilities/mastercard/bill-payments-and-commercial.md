@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: bill-payment-validator-openapi.yml
+  format: yaml
+  label: bill-payment-validator
+  slug: bill-payment-validator
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/mastercard/refs/heads/main/openapi/bill-payment-validator-openapi.yml
 categories: []
 consumed_apis:
 - bill-pay
@@ -30,40 +37,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- list business spending control rules
-- list spending controls
-- validate a bill payment
-- search for billers
-- fraud detection
-- validate a bill payment before processing
-- create spending control
-- validate bill payment
-- get biller details
-- treasury
-- financial services
-- create virtual card
 - biller management
-- bill payment validation
-- virtual card management
-- retrieve commercial event notifications
-- validate payment
-- create a virtual card
+- business payments
 - digital identity
 - bill payments
-- commercial
-- create a virtual card for commercial payments
-- create a business spending control rule
-- payments
-- get commercial notifications
-- open banking
 - create a spending control rule
-- business payments
+- create a business spending control rule
+- retrieve commercial event notifications
+- validate payment
+- get commercial notifications
 - search for billers in the rpps network
-- credit cards
-- mastercard
+- financial services
+- validate a bill payment before processing
+- get biller details
+- open banking
 - business spending controls
+- virtual card management
+- list spending controls
+- search for billers
+- create spending control
+- list business spending control rules
 - search billers
+- create virtual card
+- bill payment validation
+- create a virtual card
+- commercial
+- fraud detection
+- create a virtual card for commercial payments
+- credit cards
+- validate bill payment
+- validate a bill payment
+- mastercard
+- payments
+- treasury
 slug: bill-payments-and-commercial
+source_filename: bill-payments-and-commercial.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Mastercard Bill Payments and Commercial\"\n  description: \"Unified workflow for treasury teams and accounts payable to manage bill payments, business payment controls, virtual cards, commercial event notifications, and installment plans.\"\n  tags:\n    - Mastercard\n    - Bill Payments\n    - Commercial\n    - Treasury\n    - Business Payments\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MASTERCARD_CONSUMER_KEY: MASTERCARD_CONSUMER_KEY\n      MASTERCARD_SIGNING_KEY: MASTERCARD_SIGNING_KEY\n\ncapability:\n  consumes:\n    - import: bill-pay\n      location: ./shared/bill-pay.yaml\n    - import: bill-payment-validator\n      location: ./shared/bill-payment-validator.yaml\n    - import: business-payment-controls\n      location: ./shared/business-payment-controls.yaml\n    - import: in-control-commercial\n      location: ./shared/in-control-commercial.yaml\n    - import:\
   \ commercial-notifications\n      location: ./shared/commercial-event-notifications.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: bill-commercial-api\n      description: \"Unified REST API for bill payments and commercial payment workflows.\"\n      resources:\n        - path: /v1/billers\n          name: billers\n          description: \"Biller management\"\n          operations:\n            - method: POST\n              name: search-billers\n              description: \"Search for billers\"\n              call: \"bill-pay.search-billers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payment-validations\n          name: payment-validations\n          description: \"Bill payment validation\"\n          operations:\n            - method: POST\n              name: validate-payment\n              description: \"Validate a bill payment\"\n              call: \"bill-payment-validator.validate-payment\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spending-controls\n          name: spending-controls\n          description: \"Business spending controls\"\n          operations:\n            - method: POST\n              name: create-spending-control\n              description: \"Create a spending control rule\"\n              call: \"business-payment-controls.create-control\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/virtual-cards\n          name: virtual-cards\n          description: \"Virtual card management\"\n          operations:\n            - method: POST\n              name: create-virtual-card\n              description: \"Create a virtual card\"\n              call: \"in-control-commercial.create-virtual-card\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type:\

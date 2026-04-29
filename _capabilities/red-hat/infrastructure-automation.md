@@ -49,81 +49,83 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- insights get system stats
+- host-level errata.
+- list job templates.
+- get details of a job execution.
+- ansible list jobs
+- list content views.
+- ansible list inventories
+- insights-registered systems.
+- insights list systems
+- ansible job templates.
+- containers
+- list ansible job templates.
+- list all available errata.
+- get aggregate system health statistics.
+- managed hosts from satellite.
+- list managed hosts.
+- list content views
+- satellite list repositories
+- list errata for a host.
+- list hosts managed by satellite.
+- list software repositories.
+- list hosts
+- list jobs
+- automation
+- hybrid cloud
+- list errata
+- cancel a running job.
+- list registered systems.
+- list systems
+- open source
+- list jobs.
+- list errata.
+- automation jobs.
+- list advisor rules.
+- ansible launch job template
+- launch a job template.
+- satellite get host
+- ansible list job templates
+- list recommendation topics.
+- content views.
+- list rules
+- satellite list errata
+- list advisor detection rules.
 - red hat
 - list job templates
-- list hosts
-- launch a job template.
+- insights
+- insights list topics
+- list host errata
+- launch automation jobs.
+- ansible cancel job
+- satellite list host errata
+- launch job template
+- satellite list content views
+- list systems registered with insights.
+- cloud
+- satellite list hosts
+- ansible get job template
+- list errata applicable to a host.
+- insights get system stats
+- enterprise
+- insights get system
+- advisor rules.
+- launch an ansible job template.
 - get details of an ansible job template.
 - get a specific satellite host.
-- list systems
-- cancel a running job.
-- list hosts managed by satellite.
-- list rules
-- list advisor rules.
-- list host errata
-- list jobs.
-- insights list systems
-- list errata applicable to a host.
-- insights list rules
-- satellite list content views
-- list software repositories.
-- satellite list hosts
-- list systems registered with insights.
-- open source
-- satellite list repositories
-- insights-registered systems.
-- content views.
-- list content views.
-- launch job template
-- list ansible inventories.
-- ansible list jobs
-- insights list topics
-- containers
-- list automation job executions.
-- list managed hosts.
-- list errata
-- list recommendation topics.
-- list job templates.
-- automation jobs.
-- list ansible job templates.
-- ansible list job templates
-- satellite get host
-- list all available errata.
-- launch an ansible job template.
-- ansible launch job template
-- ansible get job
-- ansible list inventories
-- cloud
-- list registered systems.
-- linux
-- enterprise
-- kubernetes
-- automation
-- get aggregate system health statistics.
 - get details for a system in insights.
-- get details of a job execution.
-- insights get system
-- host-level errata.
-- errata advisories.
-- list jobs
-- list errata.
-- list errata for a host.
-- satellite list host errata
-- ansible job templates.
-- satellite list errata
-- ansible get job template
+- kubernetes
 - satellite
-- managed hosts from satellite.
-- hybrid cloud
-- ansible cancel job
-- launch automation jobs.
-- list content views
+- list automation job executions.
+- insights list rules
+- linux
+- errata advisories.
+- ansible get job
 - ansible
-- insights
-- advisor rules.
-- list advisor detection rules.
+- list ansible inventories.
 slug: infrastructure-automation
+source_filename: infrastructure-automation.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Infrastructure Automation\"\n  description: \"Unified workflow combining Ansible automation, Satellite content management, and Insights analytics for infrastructure operations teams managing RHEL environments at scale.\"\n  tags:\n    - Red Hat\n    - Ansible\n    - Satellite\n    - Insights\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      RED_HAT_BEARER_TOKEN: RED_HAT_BEARER_TOKEN\n      SATELLITE_USERNAME: SATELLITE_USERNAME\n      SATELLITE_PASSWORD: SATELLITE_PASSWORD\n\ncapability:\n  consumes:\n    - import: ansible-automation\n      location: ./shared/ansible-automation.yaml\n    - import: satellite\n      location: ./shared/satellite.yaml\n    - import: insights\n      location: ./shared/insights.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: infrastructure-automation-api\n      description: \"Unified REST API for RHEL\
   \ infrastructure automation, content management, and analytics.\"\n      resources:\n        - path: /v1/job-templates\n          name: job-templates\n          description: \"Ansible job templates.\"\n          operations:\n            - method: GET\n              name: list-job-templates\n              description: \"List job templates.\"\n              call: \"ansible-automation.list-job-templates\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/job-templates/{id}/launch\n          name: launch-job\n          description: \"Launch automation jobs.\"\n          operations:\n            - method: POST\n              name: launch-job-template\n              description: \"Launch a job template.\"\n              call: \"ansible-automation.launch-job-template\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
   \        - path: /v1/jobs\n          name: jobs\n          description: \"Automation jobs.\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List jobs.\"\n              call: \"ansible-automation.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts\n          name: hosts\n          description: \"Managed hosts from Satellite.\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List managed hosts.\"\n              call: \"satellite.list-hosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts/{id}/errata\n          name: host-errata\n          description: \"Host-level errata.\"\n          operations:\n            - method: GET\n              name: list-host-errata\n              description: \"List errata\

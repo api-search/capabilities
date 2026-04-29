@@ -23,36 +23,38 @@ personas: []
 provider_name: BFE
 provider_slug: bfe
 search_terms:
-- configuration
-- monitoring
-- retrieve bfe load balancer runtime metrics and performance counters for monitoring
-- layer 7 load balancing and traffic routing
-- traffic management
-- reload config
-- load balancer
-- open source
-- metrics, logging, and distributed tracing
-- bfe
-- networking
-- get bfe metrics
-- list available bfe metric categories for targeted monitoring
-- reload bfe config
-- get categories
 - get metric categories
-- cncf
-- get bfe runtime metrics and performance counters
-- get available monitoring metric categories
-- retrieve bfe runtime monitoring metrics
-- baidu
-- trigger hot reload of bfe routing rules and configuration
-- retrieve available metric categories
-- dynamic configuration management and reload
-- engineer managing bfe load balancer deployments and configuration
 - hot reload bfe configuration
-- management
+- get bfe metrics
+- retrieve available metric categories
+- bfe
+- get categories
+- cncf
+- dynamic configuration management and reload
+- baidu
+- retrieve bfe runtime monitoring metrics
+- load balancer
 - get metrics
+- engineer managing bfe load balancer deployments and configuration
+- get bfe runtime metrics and performance counters
+- open source
+- reload bfe config
+- layer 7 load balancing and traffic routing
+- reload config
+- monitoring
+- traffic management
+- get available monitoring metric categories
 - trigger a hot reload of bfe routing and load balancing configuration without restart
+- metrics, logging, and distributed tracing
+- configuration
+- trigger hot reload of bfe routing rules and configuration
+- retrieve bfe load balancer runtime metrics and performance counters for monitoring
+- networking
+- management
+- list available bfe metric categories for targeted monitoring
 slug: load-balancer-management
+source_filename: load-balancer-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"BFE Load Balancer Management\"\n  description: >-\n    Workflow capability for managing BFE load balancer operations including\n    runtime metrics collection, configuration hot reload, and observability\n    for infrastructure and platform engineering teams.\n  tags:\n    - BFE\n    - Load Balancer\n    - Management\n    - Monitoring\n    - Configuration\n  created: \"2026-04-21\"\n  modified: \"2026-04-21\"\n\nbinds:\n  - namespace: env\n    keys:\n      BFE_HOST: BFE_HOST\n      BFE_PORT: BFE_PORT\n\ncapability:\n  consumes:\n    - import: bfe-management\n      location: ./shared/management-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: bfe-management-api\n      description: \"REST API for BFE load balancer management and observability.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: \"Retrieve BFE runtime monitoring metrics\"\n          operations:\n\
   \            - method: GET\n              name: get-metrics\n              description: \"Get BFE runtime metrics and performance counters\"\n              call: \"bfe-management.get-monitor-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/categories\n          name: categories\n          description: \"Retrieve available metric categories\"\n          operations:\n            - method: GET\n              name: get-categories\n              description: \"Get available monitoring metric categories\"\n              call: \"bfe-management.get-monitor-categories\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reload\n          name: reload\n          description: \"Hot reload BFE configuration\"\n          operations:\n            - method: POST\n              name: reload-config\n              description: \"Trigger hot reload of BFE\
   \ routing rules and configuration\"\n              call: \"bfe-management.reload-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: bfe-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted BFE load balancer management and observability.\"\n      tools:\n        - name: get-bfe-metrics\n          description: \"Retrieve BFE load balancer runtime metrics and performance counters for monitoring\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bfe-management.get-monitor-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-metric-categories\n          description: \"List available BFE metric categories for targeted monitoring\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"bfe-management.get-monitor-categories\"\

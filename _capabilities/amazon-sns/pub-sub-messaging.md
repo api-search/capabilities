@@ -31,54 +31,56 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- pub/sub
-- aws
-- subscription management
-- create a subscription to a topic
-- amazon
+- create platform application
+- unsubscribe
+- list tags for an sns resource
+- publish a message to a topic or endpoint
 - tag resource
+- get subscription attributes
+- unsubscribe from a topic
+- push notifications
+- messaging
+- publish a message to a topic
+- create a subscription to a topic
+- set topic attributes
+- topic management
+- subscription management
 - email
-- create a new sns topic
-- delete topic
 - set attributes on an sns topic
 - get sms messaging attributes
+- check if a phone number has opted out of sms
+- create a new sns topic
+- get attributes of a subscription
+- subscribe
+- list all subscriptions
+- aws
+- amazon
+- publish batch
+- sms
+- publish up to 10 messages in a batch
+- list all sns topics
+- list topics
 - list subscriptions
 - list subscriptions for a specific topic
-- get subscription attributes
-- check phone opted out
-- set topic attributes
-- list subscriptions by topic
-- list tags for an sns resource
-- publish batch
-- create a subscription
-- topic management
-- unsubscribe
-- create a platform application for mobile push
-- list tags
-- notifications
-- publish
-- get topic attributes
-- publish a message to a topic or endpoint
-- subscribe
-- publish up to 10 messages in a batch
-- create platform application
 - add tags to an sns resource
-- create topic
-- list all sns topics
 - message publishing
-- list all subscriptions
+- create a subscription
+- get topic attributes
+- list tags
+- list subscriptions by topic
+- delete topic
 - get sms attributes
-- check if a phone number has opted out of sms
-- list topics
-- get attributes of a subscription
 - get attributes of an sns topic
-- sms
-- publish a message to a topic
+- publish
+- check phone opted out
+- create topic
 - delete an sns topic
-- push notifications
-- unsubscribe from a topic
-- messaging
+- notifications
+- create a platform application for mobile push
+- pub/sub
 slug: pub-sub-messaging
+source_filename: pub-sub-messaging.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SNS Pub/Sub Messaging\"\n  description: \"Pub/sub messaging workflow combining topic management, subscription lifecycle, message publishing, mobile push, and SMS operations. Used by developers and platform engineers for event-driven architectures and notification systems.\"\n  tags:\n    - Amazon\n    - AWS\n    - Messaging\n    - Notifications\n    - Pub/Sub\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-sns\n      location: ./shared/sns.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: sns-pubsub-api\n      description: \"Unified REST API for Amazon SNS pub/sub messaging.\"\n      resources:\n        - path: /v1/topics\n          name: topics\n          description: \"Topic management\"\
   \n          operations:\n            - method: GET\n              name: list-topics\n              description: \"List all SNS topics\"\n              call: \"amazon-sns.list-topics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-topic\n              description: \"Create a new SNS topic\"\n              call: \"amazon-sns.create-topic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/subscriptions\n          name: subscriptions\n          description: \"Subscription management\"\n          operations:\n            - method: GET\n              name: list-subscriptions\n              description: \"List all subscriptions\"\n              call: \"amazon-sns.list-subscriptions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n  \
   \            name: subscribe\n              description: \"Create a subscription\"\n              call: \"amazon-sns.subscribe\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Message publishing\"\n          operations:\n            - method: POST\n              name: publish\n              description: \"Publish a message to a topic\"\n              call: \"amazon-sns.publish\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: sns-pubsub-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Amazon SNS pub/sub messaging.\"\n      tools:\n        - name: list-topics\n          description: \"List all SNS topics\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"amazon-sns.list-topics\"\

@@ -24,46 +24,48 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- available systems.
-- create a query session.
-- health monitoring and issue detection.
-- execute query
-- executes queries and analyzes data across vantage systems.
-- analytics
-- data warehousing
-- administers querygrid systems, nodes, and software.
-- query
-- list querygrid queries
-- execute sql queries and analytics.
-- manage querygrid data fabric infrastructure.
-- sql
-- get query status
-- list cross-system query summaries from querygrid.
-- execute a sql query.
-- Application Developer
-- sql queries.
-- manages data fabric infrastructure and cross-system connectivity.
-- cloud
-- teradata
-- sql query execution and session management.
-- system and fabric configuration management.
 - machine learning
-- enterprise
-- Platform Administrator
-- integrates applications with teradata via rest apis.
-- create session
-- get the status and results of a submitted query.
-- data management
 - execute a sql query against teradata vantage.
-- database
-- list available vantage systems for query execution.
+- data management
+- create session
+- teradata
+- integrates applications with teradata via rest apis.
+- health monitoring and issue detection.
 - Data Engineer
-- create a new query session on a vantage system.
-- Data Analyst
+- Application Developer
+- list available vantage systems for query execution.
+- list querygrid queries
 - query sessions.
+- execute sql queries and analytics.
+- executes queries and analyzes data across vantage systems.
+- sql
 - list available vantage systems.
+- query
+- sql queries.
+- system and fabric configuration management.
+- create a query session.
 - list query systems
+- create a new query session on a vantage system.
+- execute query
+- Platform Administrator
+- Data Analyst
+- execute a sql query.
+- available systems.
+- administers querygrid systems, nodes, and software.
+- cloud
+- sql query execution and session management.
+- enterprise
+- analytics
+- get query status
+- get the status and results of a submitted query.
+- manages data fabric infrastructure and cross-system connectivity.
+- list cross-system query summaries from querygrid.
+- data warehousing
+- database
+- manage querygrid data fabric infrastructure.
 slug: query-and-analytics
+source_filename: query-and-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Teradata Query and Analytics\n  description: >-\n    Workflow capability for executing SQL queries and analytics against Teradata\n    Vantage systems. Combines Query Service for SQL execution with QueryGrid for\n    cross-system query monitoring. Used by data analysts and application\n    developers.\n  tags:\n    - Teradata\n    - Query\n    - Analytics\n    - SQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VANTAGE_USERNAME: VANTAGE_USERNAME\n      VANTAGE_PASSWORD: VANTAGE_PASSWORD\n      QUERYGRID_USERNAME: QUERYGRID_USERNAME\n      QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n\ncapability:\n  consumes:\n    - import: query-service\n      location: ./shared/query-service.yaml\n    - import: querygrid-manager\n      location: ./shared/querygrid-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: query-analytics-api\n      description: \"Unified\
   \ REST API for Teradata query and analytics.\"\n      resources:\n        - path: /v1/systems\n          name: systems\n          description: \"Available systems.\"\n          operations:\n            - method: GET\n              name: list-query-systems\n              description: \"List available Vantage systems.\"\n              call: \"query-service.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions\n          name: sessions\n          description: \"Query sessions.\"\n          operations:\n            - method: POST\n              name: create-session\n              description: \"Create a query session.\"\n              call: \"query-service.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: \"SQL queries.\"\n          operations:\n           \
   \ - method: POST\n              name: execute-query\n              description: \"Execute a SQL query.\"\n              call: \"query-service.execute-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: query-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SQL query execution.\"\n      tools:\n        - name: list-query-systems\n          description: \"List available Vantage systems for query execution.\"\n          hints:\n            readOnly: true\n          call: \"query-service.list-systems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-session\n          description: \"Create a new query session on a Vantage system.\"\n          hints:\n            readOnly: false\n          call: \"query-service.create-session\"\n          outputParameters:\n            - type: object\n\

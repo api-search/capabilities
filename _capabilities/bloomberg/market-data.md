@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: blpapi-core.yml
+  format: yaml
+  label: blpapi
+  slug: blpapi
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/bloomberg/refs/heads/main/openapi/blpapi-core.yml
 categories: []
 consumed_apis:
 - blpapi
@@ -34,48 +41,50 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- search for fields.
-- search the bloomberg api data dictionary for fields.
-- analytics
-- intraday bar request
-- look up field metadata.
-- historical data request
-- request reference data for securities and fields.
-- trading
-- business intelligence
-- request intraday ticks.
-- intraday tick request
-- intraday tick queries.
-- subscribe to custom vwap stream.
-- request reference data.
-- financial services
-- request intraday ohlc bars for a security.
-- subscribe market data
-- request historical data.
-- news
-- quantitative analysis
-- field search request
-- data license
-- execution management
-- subscribe market bar
-- request raw intraday tick data for a security.
-- bloomberg
-- request end-of-day historical data for securities.
-- transaction cost analysis
-- reference data queries.
-- subscribe market vwap
-- enterprise
-- field discovery.
-- market data
 - field info request
-- intraday bar queries.
-- reference data request
-- request intraday bars.
-- subscribe to interval-based real-time bars.
-- look up metadata for bloomberg field mnemonics.
+- request intraday ohlc bars for a security.
+- trading
+- request reference data.
+- news
+- field search request
 - subscribe to streaming real-time market data.
+- intraday bar queries.
+- subscribe market bar
+- financial services
+- intraday tick queries.
+- request end-of-day historical data for securities.
+- request historical data.
+- transaction cost analysis
+- search for fields.
+- historical data request
+- subscribe to interval-based real-time bars.
+- look up field metadata.
+- subscribe market vwap
+- subscribe to custom vwap stream.
+- request reference data for securities and fields.
+- quantitative analysis
+- request intraday ticks.
+- request intraday bars.
+- data license
+- enterprise
+- business intelligence
+- execution management
+- field discovery.
+- subscribe market data
+- intraday bar request
+- intraday tick request
+- analytics
+- bloomberg
+- look up metadata for bloomberg field mnemonics.
+- market data
 - historical data queries.
+- reference data queries.
+- request raw intraday tick data for a security.
+- reference data request
+- search the bloomberg api data dictionary for fields.
 slug: market-data
+source_filename: market-data.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data\"\n  description: \"Unified workflow for accessing Bloomberg reference data, historical data, intraday analytics, and field discovery. Used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Services\n    - Quantitative Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_SESSION_TOKEN: BLOOMBERG_SESSION_TOKEN\n\ncapability:\n  consumes:\n    - import: blpapi\n      location: ./shared/blpapi-core.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data access.\"\n      resources:\n        - path: /v1/reference-data\n          name: reference-data\n          description: \"Reference data queries.\"\n          operations:\n            - method: POST\n              name: reference-data-request\n\
   \              description: \"Request reference data.\"\n              call: \"blpapi.reference-data-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/historical-data\n          name: historical-data\n          description: \"Historical data queries.\"\n          operations:\n            - method: POST\n              name: historical-data-request\n              description: \"Request historical data.\"\n              call: \"blpapi.historical-data-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/intraday-bars\n          name: intraday-bars\n          description: \"Intraday bar queries.\"\n          operations:\n            - method: POST\n              name: intraday-bar-request\n              description: \"Request intraday bars.\"\n              call: \"blpapi.intraday-bar-request\"\n              outputParameters:\n     \
   \           - type: object\n                  mapping: \"$.\"\n        - path: /v1/intraday-ticks\n          name: intraday-ticks\n          description: \"Intraday tick queries.\"\n          operations:\n            - method: POST\n              name: intraday-tick-request\n              description: \"Request intraday ticks.\"\n              call: \"blpapi.intraday-tick-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/fields\n          name: fields\n          description: \"Field discovery.\"\n          operations:\n            - method: POST\n              name: field-info-request\n              description: \"Look up field metadata.\"\n              call: \"blpapi.field-info-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: field-search-request\n              description: \"Search for fields.\"\

@@ -27,51 +27,53 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- edi
-- isg logout
-- extract an outbound edi transaction.
-- oracle
-- get inbound transactions
-- isg login
-- retrieve trading partners.
-- list inbound transactions.
-- soa gateway
-- login
-- authenticate.
-- initialize responsibility context.
-- authentication.
-- erp
-- edi get trading partners
-- e-business suite
-- invoke a rest method on a service.
-- edi get inbound transactions
-- retrieve inbound edi transactions.
-- retrieve outbound edi transactions.
-- business applications
-- end the current session.
-- trading partner management.
-- isg get service wadl
-- integration
 - get trading partner by id.
-- edi import inbound transaction
-- enterprise
-- import an inbound edi transaction.
-- get trading partners
-- isg initialize
-- retrieve code conversion mappings.
-- edi extract outbound transaction
-- authenticate and obtain session token.
-- edi get trading partner by id
-- get outbound transactions
-- edi get outbound transactions
 - list outbound transactions.
-- isg invoke rest method
-- get wadl for a rest service.
+- retrieve trading partners.
 - list trading partners.
-- outbound edi transactions.
-- edi get code conversions
+- edi extract outbound transaction
+- edi
+- edi import inbound transaction
+- soa gateway
+- import an inbound edi transaction.
+- edi get inbound transactions
+- get inbound transactions
+- invoke a rest method on a service.
+- retrieve code conversion mappings.
+- authenticate.
 - inbound edi transactions.
+- get outbound transactions
+- isg login
+- business applications
+- trading partner management.
+- end the current session.
+- get wadl for a rest service.
+- erp
+- login
+- isg invoke rest method
+- isg get service wadl
+- authenticate and obtain session token.
+- retrieve outbound edi transactions.
+- e-business suite
+- authentication.
+- edi get outbound transactions
+- enterprise
+- outbound edi transactions.
+- isg logout
+- oracle
+- edi get trading partners
+- integration
+- extract an outbound edi transaction.
+- get trading partners
+- initialize responsibility context.
+- edi get trading partner by id
+- retrieve inbound edi transactions.
+- edi get code conversions
+- isg initialize
+- list inbound transactions.
 slug: integration-and-edi
+source_filename: integration-and-edi.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle EBS Integration and EDI\"\n  description: \"Integration capabilities combining ISG REST API for service management and e-Commerce Gateway for EDI document exchange with trading partners. Used by integration architects and B2B teams.\"\n  tags:\n    - Oracle\n    - Integration\n    - EDI\n    - SOA Gateway\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ORACLE_EBS_TOKEN: ORACLE_EBS_TOKEN\n      ORACLE_EBS_USERNAME: ORACLE_EBS_USERNAME\n      ORACLE_EBS_PASSWORD: ORACLE_EBS_PASSWORD\n\ncapability:\n  consumes:\n    - import: oracle-isg-rest\n      location: ./shared/isg-rest.yaml\n    - import: oracle-ecommerce-gateway\n      location: ./shared/ecommerce-gateway.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: integration-edi-api\n      description: \"Unified REST API for Oracle EBS integration and EDI.\"\n      resources:\n        - path: /v1/auth\n\
   \          name: auth\n          description: \"Authentication.\"\n          operations:\n            - method: POST\n              name: login\n              description: \"Authenticate.\"\n              call: \"oracle-isg-rest.login\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/trading-partners\n          name: trading-partners\n          description: \"Trading partner management.\"\n          operations:\n            - method: GET\n              name: get-trading-partners\n              description: \"List trading partners.\"\n              call: \"oracle-ecommerce-gateway.get-trading-partners\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inbound-transactions\n          name: inbound-transactions\n          description: \"Inbound EDI transactions.\"\n          operations:\n            - method: GET\n              name: get-inbound-transactions\n\
   \              description: \"List inbound transactions.\"\n              call: \"oracle-ecommerce-gateway.get-inbound-transactions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/outbound-transactions\n          name: outbound-transactions\n          description: \"Outbound EDI transactions.\"\n          operations:\n            - method: GET\n              name: get-outbound-transactions\n              description: \"List outbound transactions.\"\n              call: \"oracle-ecommerce-gateway.get-outbound-transactions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9083\n      namespace: integration-edi-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Oracle EBS integration and EDI.\"\n      tools:\n        - name: isg-login\n          description: \"Authenticate and obtain session token.\"\n     \

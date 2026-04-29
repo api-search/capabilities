@@ -35,48 +35,50 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- list available bloomberg data catalogs
-- search available bloomberg data fields
-- data catalog browsing
-- list completed data distributions
-- order management
-- field list management
+- historical data access
 - get reference data for securities
-- list catalogs
-- reference data access
-- get intraday bars
-- get reference data for securities via http api
+- reference data
 - trading
-- get historical data for securities
-- search for securities and instruments
-- get catalog
-- financial data
-- search fields
-- list field lists
+- list distributions
+- portfolio management
 - list security universes
-- financial analytics
-- get reference data
+- reference data access
+- field list management
 - create a bloomberg data request
+- create universe
+- get historical data
+- list universes
+- list available bloomberg data catalogs
+- list catalogs
+- create data request
+- get intraday bar data
+- search instruments
+- list field lists for data requests
+- data catalog browsing
+- search fields
+- list available data catalogs
 - security universe management
+- get historical data for securities
+- get historical end-of-day data
+- list field lists
+- search available bloomberg data fields
+- search for securities and instruments
+- list completed data distributions
+- get reference data
+- financial data
+- get catalog
+- bloomberg
+- order management
+- market data
+- get reference data for securities via http api
+- get intraday bars
+- get data catalog details
+- financial analytics
 - create a security universe for data requests
 - data distributions
-- get intraday bar data
-- get data catalog details
-- create data request
-- bloomberg
-- list available data catalogs
-- list distributions
-- list field lists for data requests
-- get historical end-of-day data
-- search instruments
-- market data
-- portfolio management
-- list universes
-- get historical data
-- create universe
-- historical data access
-- reference data
 slug: market-data-and-analytics
+source_filename: market-data-and-analytics.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Bloomberg Market Data and Analytics\"\n  description: \"Workflow for accessing Bloomberg market data combining the Data License HAPI for bulk data with the HTTP API for real-time reference and historical data, used by quantitative analysts and portfolio managers.\"\n  tags:\n    - Bloomberg\n    - Market Data\n    - Financial Analytics\n    - Reference Data\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLOOMBERG_HAPI_TOKEN: BLOOMBERG_HAPI_TOKEN\n      BLOOMBERG_HTTP_USERNAME: BLOOMBERG_HTTP_USERNAME\n      BLOOMBERG_HTTP_PASSWORD: BLOOMBERG_HTTP_PASSWORD\n\ncapability:\n  consumes:\n    - import: data-license\n      location: ./shared/data-license.yaml\n    - import: http-api\n      location: ./shared/http-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: market-data-api\n      description: \"Unified REST API for Bloomberg market data and analytics.\"\
   \n      resources:\n        - path: /v1/catalogs\n          name: catalogs\n          description: \"Data catalog browsing\"\n          operations:\n            - method: GET\n              name: list-catalogs\n              description: \"List available data catalogs\"\n              call: \"data-license.list-catalogs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/universes\n          name: universes\n          description: \"Security universe management\"\n          operations:\n            - method: GET\n              name: list-universes\n              description: \"List security universes\"\n              call: \"data-license.list-universes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/field-lists\n          name: field-lists\n          description: \"Field list management\"\n          operations:\n            - method: GET\n   \
   \           name: list-field-lists\n              description: \"List field lists\"\n              call: \"data-license.list-field-lists\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/reference-data\n          name: reference-data\n          description: \"Reference data access\"\n          operations:\n            - method: POST\n              name: get-reference-data\n              description: \"Get reference data for securities\"\n              call: \"http-api.get-reference-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/historical-data\n          name: historical-data\n          description: \"Historical data access\"\n          operations:\n            - method: POST\n              name: get-historical-data\n              description: \"Get historical end-of-day data\"\n              call: \"http-api.get-historical-data\"\n \

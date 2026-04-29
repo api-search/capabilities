@@ -37,54 +37,56 @@ personas: []
 provider_name: Azure Log Analytics
 provider_slug: azure-log-analytics
 search_terms:
-- monitoring
-- list all tables.
-- DevOps Engineer
-- execute query
-- analytics
-- execute a kql query against a log analytics workspace.
-- list saved searches in a workspace.
-- get details of a specific log analytics workspace.
-- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
-- infrastructure and application monitoring through log analysis.
-- list all workspaces.
-- azure
-- create workspace
-- log analytics
-- send custom log data to a workspace via data collection rule.
-- kql-based data exploration and saved query management.
-- logging
-- get workspace
-- get workspace details.
-- list all tables in a log analytics workspace.
-- administrators managing workspaces, tables, and data collection configurations.
-- security event analysis and custom security log ingestion.
-- delete workspace
+- list workspace tables.
 - engineers monitoring infrastructure and application health through log queries.
-- manage log analytics workspaces.
-- manage saved kql queries.
-- create or update a log analytics workspace.
-- list saved searches
-- upload logs
-- execute kql queries against workspaces.
-- cloud
 - security analysts investigating incidents and threats through log data.
+- send custom log data.
+- list workspaces
+- log analytics
+- execute a kql query.
+- get workspace details.
+- delete a log analytics workspace.
+- list all workspaces.
+- get a workspace.
+- execute a kql query against a log analytics workspace.
+- create or update a saved search in a workspace.
+- azure
+- manage log analytics workspaces.
+- list saved searches in a workspace.
 - kql
-- Platform Administrator
-- list tables
-- list all log analytics workspaces in a subscription.
 - upload custom log entries.
 - SOC Analyst
-- create or update a saved search in a workspace.
-- list workspace tables.
-- execute a kql query.
-- list workspaces
-- create saved search
+- manage saved kql queries.
 - list saved searches.
-- send custom log data.
-- get a workspace.
-- delete a log analytics workspace.
+- list all log analytics workspaces in a subscription.
+- upload logs
+- delete workspace
+- infrastructure and application monitoring through log analysis.
+- administrators managing workspaces, tables, and data collection configurations.
+- list tables
+- execute query
+- Platform Administrator
+- monitoring
+- DevOps Engineer
+- execute kql queries against workspaces.
+- send custom log data to a workspace via data collection rule.
+- cloud
+- security event analysis and custom security log ingestion.
+- analytics
+- create workspace
+- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
+- get workspace
+- create saved search
+- list all tables.
+- list saved searches
+- list all tables in a log analytics workspace.
+- get details of a specific log analytics workspace.
+- kql-based data exploration and saved query management.
+- create or update a log analytics workspace.
+- logging
 slug: log-monitoring-and-analysis
+source_filename: log-monitoring-and-analysis.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Azure Log Analytics Log Monitoring and Analysis\"\n  description: >-\n    Unified workflow for log monitoring and analysis combining the Query API for\n    KQL-based data exploration, the Management API for workspace and saved search\n    administration, and the Ingestion API for custom log data collection. Used by\n    DevOps engineers, SOC analysts, and platform administrators.\n  tags:\n    - Azure\n    - Log Analytics\n    - Monitoring\n    - Analytics\n    - KQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      AZURE_LOG_ANALYTICS_BEARER_TOKEN: AZURE_LOG_ANALYTICS_BEARER_TOKEN\n      AZURE_MANAGEMENT_BEARER_TOKEN: AZURE_MANAGEMENT_BEARER_TOKEN\n      AZURE_INGESTION_BEARER_TOKEN: AZURE_INGESTION_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: log-analytics-query\n      location: ./shared/query-api.yaml\n    - import: log-analytics-management\n      location: ./shared/management-api.yaml\n\
   \    - import: log-analytics-ingestion\n      location: ./shared/ingestion-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: log-monitoring-api\n      description: \"Unified REST API for Azure Log Analytics monitoring and analysis.\"\n      resources:\n        - path: /v1/queries\n          name: queries\n          description: \"Execute KQL queries against workspaces.\"\n          operations:\n            - method: POST\n              name: execute-query\n              description: \"Execute a KQL query.\"\n              call: \"log-analytics-query.post-query\"\n              with:\n                workspaceId: \"rest.workspaceId\"\n                query: \"rest.query\"\n                timespan: \"rest.timespan\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces\n          name: workspaces\n          description: \"Manage Log Analytics workspaces.\"\n          operations:\n  \
   \          - method: GET\n              name: list-workspaces\n              description: \"List all workspaces.\"\n              call: \"log-analytics-management.list-workspaces\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspaces/{workspaceName}\n          name: workspace-detail\n          description: \"Get workspace details.\"\n          operations:\n            - method: GET\n              name: get-workspace\n              description: \"Get a workspace.\"\n              call: \"log-analytics-management.get-workspace\"\n              with:\n                subscriptionId: \"rest.subscriptionId\"\n                resourceGroupName: \"rest.resourceGroupName\"\n                workspaceName: \"rest.workspaceName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\

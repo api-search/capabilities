@@ -28,47 +28,49 @@ personas: []
 provider_name: Amazon IAM Identity Center
 provider_slug: amazon-iam-identity-center
 search_terms:
-- IAM Administrator
-- aws
-- access control
-- assign access to a user or group for an aws account
-- workforce identity
-- configures permission sets and account assignments
+- assigning aws account access to users and groups
+- manage workforce users
+- list user groups in the identity store
 - manage aws account access assignments
-- create permission set
-- list instances
-- create a new group for organizing users
-- list permission sets for assigning aws account access
-- assign a permission set to a user or group for an aws account
-- list groups in the identity store
+- list sso instances in the account
+- IT Administrator
+- list all permission sets
+- remove account access
+- remove a user or group's access to an aws account
+- list users in the identity store
+- list permission sets
 - assign account access
 - list groups
-- manage user groups
-- single sign-on
-- remove a user or group's access to an aws account
-- create user
-- managing workforce user and group identities
-- authentication
-- manages workforce identities and provisions access to aws accounts
-- IT Administrator
-- list users
-- list user groups in the identity store
-- list all permission sets
-- create a new workforce user in iam identity center
-- list users in the identity store
 - list workforce users in the identity store
-- list sso instances in the account
-- remove account access
-- manage permission sets for aws account access
-- create group
-- assigning aws account access to users and groups
+- list permission sets for assigning aws account access
+- assign a permission set to a user or group for an aws account
+- aws
+- authentication
+- single sign-on
+- list users
+- create user
+- configures permission sets and account assignments
+- access control
+- manages workforce identities and provisions access to aws accounts
 - create a permission set defining what access a user gets to an aws account
-- identity management
-- list permission sets
+- list instances
+- managing workforce user and group identities
+- manage permission sets for aws account access
+- IAM Administrator
+- list groups in the identity store
+- create a new group for organizing users
+- workforce identity
+- create permission set
 - iam
-- manage workforce users
 - create account assignment
+- assign access to a user or group for an aws account
+- identity management
+- create a new workforce user in iam identity center
+- manage user groups
+- create group
 slug: identity-access-management
+source_filename: identity-access-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IAM Identity Center - Identity and Access Management\n  description: Unified capability for IT administrators to manage workforce identities, provision access to AWS accounts, and configure SSO for enterprise applications.\n  tags:\n    - AWS\n    - IAM\n    - Identity Management\n    - Single Sign-On\n    - Access Control\n    - Workforce Identity\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: sso-admin\n      location: ./shared/sso-admin.yaml\n    - import: identitystore\n      location: ./shared/identitystore.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: identity-access-api\n      description: Unified REST API for identity and access management.\n      resources:\n        - path: /v1/users\n          name: users\n  \
   \        description: Manage workforce users\n          operations:\n            - method: GET\n              name: list-users\n              description: List users in the identity store\n              call: \"identitystore.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: Manage user groups\n          operations:\n            - method: GET\n              name: list-groups\n              description: List groups in the identity store\n              call: \"identitystore.list-groups\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/permission-sets\n          name: permission-sets\n          description: Manage permission sets for AWS account access\n          operations:\n            - method: GET\n              name: list-permission-sets\n              description: List all permission\
   \ sets\n              call: \"sso-admin.list-permission-sets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/account-assignments\n          name: account-assignments\n          description: Manage AWS account access assignments\n          operations:\n            - method: POST\n              name: create-account-assignment\n              description: Assign access to a user or group for an AWS account\n              call: \"sso-admin.create-account-assignment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: identity-access-mcp\n      transport: http\n      description: MCP server for AI-assisted identity and access management.\n      tools:\n        - name: list-users\n          description: List workforce users in the identity store\n          hints:\n            readOnly: true\n            openWorld: true\n\

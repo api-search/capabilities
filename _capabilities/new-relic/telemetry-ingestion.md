@@ -30,34 +30,36 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- monitoring
+- send metric data to new relic
+- send custom events
 - send custom events to a new relic account
-- ops engineering
+- send traces
+- platform
+- devops
+- send logs
 - send log records to new relic
 - telemetry
-- analytics
-- send custom events
-- send custom events to new relic
-- send trace spans
-- send metric data to new relic
-- new relic
-- observability
-- send events
 - apm
-- devops
-- send distributed trace spans to new relic
-- send metrics
-- infrastructure
-- send logs
-- send log data
-- performance
 - data ingestion
-- platform
+- send log data
+- send events
 - analysis
-- send traces
+- send custom events to new relic
+- send metrics
+- ops engineering
+- send trace spans
 - send dimensional metric data to new relic
+- monitoring
 - send metric data
+- send distributed trace spans to new relic
+- observability
+- analytics
+- new relic
+- infrastructure
+- performance
 slug: telemetry-ingestion
+source_filename: telemetry-ingestion.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"New Relic Telemetry Ingestion\"\n  description: \"Telemetry data ingestion workflow combining event, log, metric, and trace APIs for ops engineers sending observability data to New Relic from external sources.\"\n  tags:\n    - New Relic\n    - Telemetry\n    - Data Ingestion\n    - Ops Engineering\n    - Observability\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      NEW_RELIC_INSERT_KEY: NEW_RELIC_INSERT_KEY\n\ncapability:\n  consumes:\n    - import: event-api\n      location: ./shared/event-api.yaml\n    - import: log-api\n      location: ./shared/log-api.yaml\n    - import: metric-api\n      location: ./shared/metric-api.yaml\n    - import: trace-api\n      location: ./shared/trace-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: telemetry-ingestion-api\n      description: \"Unified REST API for New Relic telemetry data ingestion.\"\n      resources:\n\
   \        - path: /v1/events/{accountId}\n          name: events\n          description: \"Send custom events\"\n          operations:\n            - method: POST\n              name: send-events\n              description: \"Send custom events to New Relic\"\n              call: \"event-api.send-events\"\n              with:\n                accountId: \"rest.accountId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/logs\n          name: logs\n          description: \"Send log data\"\n          operations:\n            - method: POST\n              name: send-logs\n              description: \"Send log records to New Relic\"\n              call: \"log-api.send-logs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/metrics\n          name: metrics\n          description: \"Send metric data\"\n          operations:\n            - method: POST\n\
   \              name: send-metrics\n              description: \"Send metric data to New Relic\"\n              call: \"metric-api.send-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/traces\n          name: traces\n          description: \"Send trace spans\"\n          operations:\n            - method: POST\n              name: send-traces\n              description: \"Send distributed trace spans to New Relic\"\n              call: \"trace-api.send-traces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9091\n      namespace: telemetry-ingestion-mcp\n      transport: http\n      description: \"MCP server for AI-assisted New Relic telemetry data ingestion.\"\n      tools:\n        - name: send-events\n          description: \"Send custom events to a New Relic account\"\n          hints:\n            readOnly: false\n  \

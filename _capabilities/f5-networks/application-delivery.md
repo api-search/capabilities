@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: bigip-icontrol-rest.yml
+  format: yaml
+  label: bigip-icontrol
+  slug: bigip-icontrol
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/f5-networks/refs/heads/main/openapi/bigip-icontrol-rest.yml
 categories: []
 consumed_apis:
 - bigip-icontrol
@@ -82,80 +89,82 @@ personas: []
 provider_name: F5 Networks
 provider_slug: f5-networks
 search_terms:
+- manage virtual servers that direct client traffic
 - get node details
-- update a node
-- list http traffic profiles
-- update pool
-- security
-- get details of a specific pool
-- network management
-- create a new backend node
-- view traffic profiles
-- delete pool
+- list all server pools
+- edge computing
+- list all backend nodes
+- get details of a specific node
+- waf
+- get virtual server
+- delete pool member
+- list nodes
 - f5
-- manage a specific node
-- get pool
 - list pool members
+- list members of a pool
+- list all virtual servers
+- manage pool members
+- delete node
+- update a node
+- get pool
+- automation
+- add a pool member
+- list tcp profiles
+- manage server pools
+- manage a specific pool
+- add pool member
 - get pool member
 - get node
-- create a new virtual server
-- waf
-- manage pool members
+- view traffic profiles
+- list http traffic profiles
 - api gateway
-- update a virtual server
-- list client ssl profiles
-- get virtual server
-- add pool member
-- get virtual server details
-- create pool
-- manage server pools
-- update virtual server
-- delete a pool
-- delete a node
-- list nodes
-- get details of a specific virtual server
-- list members of a pool
-- application delivery
-- list all nodes
-- load balancing
-- list all backend nodes
-- remove a pool member
-- manage virtual servers that direct client traffic
-- list tcp profiles
-- kubernetes
-- automation
-- manage backend nodes
-- delete a virtual server
+- create a new backend node
 - get pool details
-- manage a specific pool
-- list pools
-- manage a specific virtual server
-- add a member to a pool
-- delete node
-- update node
-- list http profiles
-- update pool member
-- get details of a pool member
-- get details of a specific node
-- list virtual servers
-- list all virtual servers
-- delete virtual server
-- update a pool member
-- list all virtual servers on the big-ip
+- create node
 - create virtual server
-- delete pool member
+- update virtual server
+- update pool
+- list tcp traffic profiles
+- list http profiles
+- get details of a specific pool
+- update node
+- delete a virtual server
+- list all pools
+- list virtual servers
+- manage a specific virtual server
+- get virtual server details
+- update a virtual server
+- add a member to a pool
+- manage backend nodes
+- security
+- application delivery
+- network management
+- list pools
+- load balancing
+- list client ssl profiles
 - create a new pool
 - create a node
-- add a pool member
-- list tcp traffic profiles
-- create node
-- edge computing
+- get details of a pool member
+- create a new virtual server
 - multi-cloud
+- create pool
+- delete pool
+- kubernetes
+- delete a node
+- get details of a specific virtual server
+- list all nodes
+- update a pool member
+- update pool member
+- list all virtual servers on the big-ip
+- manage a specific node
 - nginx
-- list all pools
-- list all server pools
+- delete virtual server
 - update a pool
+- delete a pool
+- remove a pool member
 slug: application-delivery
+source_filename: application-delivery.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"F5 Application Delivery\"\n  description: \"Unified workflow for managing application delivery infrastructure including virtual servers, server pools, backend nodes, and traffic profiles on F5 BIG-IP. Used by network administrators and DevOps engineers for load balancing configuration and application traffic management.\"\n  tags:\n    - F5\n    - Application Delivery\n    - Load Balancing\n    - Network Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BIGIP_USERNAME: BIGIP_USERNAME\n      BIGIP_PASSWORD: BIGIP_PASSWORD\n\ncapability:\n  consumes:\n    - import: bigip-icontrol\n      location: ./shared/bigip-icontrol-rest.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: f5-application-delivery-api\n      description: \"Unified REST API for F5 BIG-IP application delivery management.\"\n      resources:\n        - path: /v1/virtual-servers\n\
   \          name: virtual-servers\n          description: \"Manage virtual servers that direct client traffic\"\n          operations:\n            - method: GET\n              name: list-virtual-servers\n              description: \"List all virtual servers\"\n              call: \"bigip-icontrol.list-virtual-servers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-virtual-server\n              description: \"Create a new virtual server\"\n              call: \"bigip-icontrol.create-virtual-server\"\n              with:\n                name: \"rest.name\"\n                destination: \"rest.destination\"\n                pool: \"rest.pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/virtual-servers/{virtualName}\n          name: virtual-server\n          description: \"Manage a specific virtual server\"\
   \n          operations:\n            - method: GET\n              name: get-virtual-server\n              description: \"Get virtual server details\"\n              call: \"bigip-icontrol.get-virtual-server\"\n              with:\n                virtualName: \"rest.virtualName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-virtual-server\n              description: \"Update a virtual server\"\n              call: \"bigip-icontrol.update-virtual-server\"\n              with:\n                virtualName: \"rest.virtualName\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-virtual-server\n              description: \"Delete a virtual server\"\n              call: \"bigip-icontrol.delete-virtual-server\"\n              with:\n                virtualName: \"rest.virtualName\"\

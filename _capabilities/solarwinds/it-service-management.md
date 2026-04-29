@@ -28,35 +28,37 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- itsm
-- solarwinds
-- create a new incident
-- service desk
-- list assets
-- get incident
 - application monitoring
-- database monitoring
-- incident management
-- query infrastructure
-- log management
-- ip address management
-- observability
-- change management
-- it management
-- service request management
-- create incident
-- infrastructure
-- network monitoring
-- list service requests
-- list changes
-- asset management
-- list hardware assets
 - list change requests
-- list incidents
-- get incident details
+- change management
+- database monitoring
+- itsm
+- list changes
+- get incident
 - list service desk incidents
+- it management
+- list incidents
+- solarwinds
+- list hardware assets
+- asset management
+- list service requests
+- log management
+- service request management
+- observability
+- get incident details
+- network monitoring
+- incident management
+- create incident
+- query infrastructure
+- infrastructure
 - query orion infrastructure data via swql
+- create a new incident
+- list assets
+- service desk
+- ip address management
 slug: it-service-management
+source_filename: it-service-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SolarWinds IT Service Management\"\n  description: \"Workflow for IT service management combining Service Desk incident/change management with Orion infrastructure data for IT support and service delivery teams.\"\n  tags:\n    - SolarWinds\n    - ITSM\n    - Service Desk\n    - Incident Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWSD_API_TOKEN: SWSD_API_TOKEN\n      ORION_USERNAME: ORION_USERNAME\n      ORION_PASSWORD: ORION_PASSWORD\n\ncapability:\n  consumes:\n    - import: service-desk\n      location: ./shared/service-desk.yaml\n    - import: orion\n      location: ./shared/orion.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: itsm-api\n      description: \"Unified REST API for SolarWinds IT service management.\"\n      resources:\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management\"\
   \n          operations:\n            - method: GET\n              name: list-incidents\n              description: \"List incidents\"\n              call: \"service-desk.list-incidents\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/service-requests\n          name: service-requests\n          description: \"Service request management\"\n          operations:\n            - method: GET\n              name: list-service-requests\n              description: \"List service requests\"\n              call: \"service-desk.list-service-requests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/changes\n          name: changes\n          description: \"Change management\"\n          operations:\n            - method: GET\n              name: list-changes\n              description: \"List change requests\"\n              call: \"service-desk.list-changes\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Asset management\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List hardware assets\"\n              call: \"service-desk.list-assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: itsm-mcp\n      transport: http\n      description: \"MCP server for AI-assisted IT service management.\"\n      tools:\n        - name: list-incidents\n          description: \"List service desk incidents\"\n          hints:\n            readOnly: true\n          call: \"service-desk.list-incidents\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-incident\n          description: \"Get incident details\"\

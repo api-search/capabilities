@@ -59,64 +59,66 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- dynamics 365
-- list all customers
-- list general ledger accounts
-- list purchase orders
-- dynamics nav
-- list journals
-- purchase orders
-- business management
-- general journals
-- sales
-- get customer
-- customer management
-- list vendors
-- list sales orders
-- list all items
-- list inventory items
-- create a new purchase order
-- create item
-- create a new vendor
-- create a new customer
-- sales invoices
-- list accounts
-- list employees
-- create a customer
-- get a customer
-- navision
 - list all sales orders
-- sales orders
-- general ledger accounts
-- create sales order
-- inventory
-- get a customer by id
-- list available companies
-- create a sales order
-- create purchase order
-- list purchase invoices
-- list all employees
-- list items
-- business central
-- company information
-- single customer
+- customer management
 - create a new sales order
-- inventory items
-- purchasing
-- create customer
-- list companies
-- create a new inventory item
-- create vendor
+- business management
 - microsoft
-- list all purchase orders
-- list all vendors
-- vendor management
+- dynamics 365
+- list purchase orders
+- general ledger accounts
+- list all customers
+- list journals
+- list employees
+- create customer
+- list items
+- list available companies
+- inventory items
+- list vendors
+- create a new purchase order
 - list customers
-- list sales invoices
-- finance
+- sales orders
+- purchasing
+- create a new customer
+- list general ledger accounts
 - erp
+- list all items
 - list general journals
+- dynamics nav
+- create a new vendor
+- inventory
+- list sales orders
+- list accounts
+- get a customer by id
+- business central
+- list sales invoices
+- create a sales order
+- sales
+- list companies
+- single customer
+- get a customer
+- create vendor
+- purchase orders
+- list all purchase orders
+- list purchase invoices
+- list inventory items
+- create a new inventory item
+- create purchase order
+- finance
+- create sales order
+- sales invoices
+- list all vendors
+- company information
+- create item
+- create a customer
+- list all employees
+- navision
+- vendor management
+- general journals
+- get customer
 slug: business-operations
+source_filename: business-operations.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Dynamics NAV Business Operations\"\n  description: \"Unified workflow for day-to-day business operations in Dynamics 365 Business Central combining the Business Central API v2.0 for managing customers, vendors, items, orders, invoices, and financials. Used by accountants, sales teams, and operations managers.\"\n  tags:\n    - Business Central\n    - Dynamics 365\n    - ERP\n    - Finance\n    - Sales\n    - Purchasing\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      BC_OAUTH_TOKEN: BC_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: business-central-v2\n      location: ./shared/business-central-v2.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: business-ops-api\n      description: \"Unified REST API for Business Central day-to-day business operations.\"\n      resources:\n        - path: /v1/companies\n          name: companies\n          description:\
   \ \"Company information\"\n          operations:\n            - method: GET\n              name: list-companies\n              description: \"List available companies\"\n              call: \"business-central-v2.list-companies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers\n          name: customers\n          description: \"Customer management\"\n          operations:\n            - method: GET\n              name: list-customers\n              description: \"List all customers\"\n              call: \"business-central-v2.list-customers\"\n              with:\n                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-customer\n              description: \"Create a customer\"\n              call: \"business-central-v2.create-customer\"\n              with:\n\
   \                company_id: \"rest.company_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/customers/{customer_id}\n          name: customer\n          description: \"Single customer\"\n          operations:\n            - method: GET\n              name: get-customer\n              description: \"Get a customer\"\n              call: \"business-central-v2.get-customer\"\n              with:\n                company_id: \"rest.company_id\"\n                customer_id: \"rest.customer_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/vendors\n          name: vendors\n          description: \"Vendor management\"\n          operations:\n            - method: GET\n              name: list-vendors\n              description: \"List all vendors\"\n              call: \"business-central-v2.list-vendors\"\n              with:\n        \

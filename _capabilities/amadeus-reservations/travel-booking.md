@@ -37,51 +37,53 @@ personas: []
 provider_name: Amadeus Reservations
 provider_slug: amadeus-reservations
 search_terms:
-- create hotel order
-- airline reservation creation and management.
-- flight reservation operations.
-- create transfer order
-- Travel Chatbot Developer
-- create hotel booking
-- cancel a flight booking.
-- cancel transfer order
-- create a confirmed airline reservation from a priced flight offer.
-- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
-- travel
-- amadeus
-- hotel reservation creation.
-- retrieve a flight booking.
-- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
-- hotels
-- Travel Booking Agent
-- create a confirmed hotel booking.
-- get flight booking
-- booking
-- ground transportation booking and management.
-- developer building ai-powered travel assistants that create bookings conversationally.
-- hotel reservation operations.
-- cancel an existing confirmed flight reservation.
-- flights
 - ground transfer reservation operations.
-- create flight booking
-- retrieve details of an existing flight reservation by order id.
-- reservations
-- create flight order
-- cancel transfer booking
-- human or automated agent creating and managing travel reservations on behalf of travelers.
-- end-to-end travel booking combining flights, hotels, and transfers.
-- individual flight order management.
-- transfers
-- create transfer booking
-- cancel flight order
+- get flight booking
+- create a confirmed hotel booking.
 - cancel flight booking
-- individual transfer management.
-- get flight order
-- create a confirmed transfer booking.
-- cancel an existing confirmed ground transfer reservation.
-- cancel a transfer booking.
+- create flight booking
+- hotels
+- flight reservation operations.
+- create transfer booking
+- cancel transfer booking
 - create a confirmed flight booking.
+- Travel Booking Agent
+- airline reservation creation and management.
+- hotel reservation creation.
+- retrieve details of an existing flight reservation by order id.
+- create flight order
+- developer building ai-powered travel assistants that create bookings conversationally.
+- Travel Chatbot Developer
+- hotel reservation operations.
+- create hotel booking
+- end-to-end travel booking combining flights, hotels, and transfers.
+- retrieve a flight booking.
+- cancel an existing confirmed flight reservation.
+- amadeus
+- booking
+- cancel transfer order
+- create hotel order
+- book a ground transfer (airport taxi, private car, or shuttle) for a traveler.
+- reservations
+- human or automated agent creating and managing travel reservations on behalf of travelers.
+- cancel a flight booking.
+- create transfer order
+- cancel an existing confirmed ground transfer reservation.
+- cancel flight order
+- cancel a transfer booking.
+- flights
+- travel
+- transfers
+- individual flight order management.
+- get flight order
+- create a confirmed hotel reservation from a hotel offer at any of 150,000+ hotels worldwide.
+- individual transfer management.
+- create a confirmed transfer booking.
+- ground transportation booking and management.
+- create a confirmed airline reservation from a priced flight offer.
 slug: travel-booking
+source_filename: travel-booking.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amadeus Travel Booking\n  description: >-\n    Unified workflow capability for complete travel booking encompassing flight\n    reservations, hotel bookings, and ground transfer arrangements. Used by\n    online travel agencies, travel chatbots, and corporate travel management\n    platforms to create end-to-end trip reservations.\n  tags:\n    - Amadeus\n    - Booking\n    - Flights\n    - Hotels\n    - Transfers\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AMADEUS_API_KEY: AMADEUS_API_KEY\n      AMADEUS_API_SECRET: AMADEUS_API_SECRET\n      AMADEUS_BEARER_TOKEN: AMADEUS_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: hotel-booking\n      location: ./shared/hotel-booking.yaml\n    - import: flight-orders\n      location: ./shared/flight-orders.yaml\n    - import: transfer-booking\n      location: ./shared/transfer-booking.yaml\n\n  exposes:\n    - type:\
   \ rest\n      port: 8080\n      namespace: travel-booking-api\n      description: Unified REST API for multi-modal travel booking.\n      resources:\n        - path: /v1/bookings/flights\n          name: flight-bookings\n          description: Flight reservation operations.\n          operations:\n            - method: POST\n              name: create-flight-order\n              description: Create a confirmed flight booking.\n              call: \"flight-orders.create-flight-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings/flights/{orderId}\n          name: flight-order\n          description: Individual flight order management.\n          operations:\n            - method: GET\n              name: get-flight-order\n              description: Retrieve a flight booking.\n              call: \"flight-orders.get-flight-order\"\n              with:\n                orderId: \"rest.orderId\"\n        \
   \      outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: cancel-flight-order\n              description: Cancel a flight booking.\n              call: \"flight-orders.delete-flight-order\"\n              with:\n                orderId: \"rest.orderId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings/hotels\n          name: hotel-bookings\n          description: Hotel reservation operations.\n          operations:\n            - method: POST\n              name: create-hotel-order\n              description: Create a confirmed hotel booking.\n              call: \"hotel-booking.create-hotel-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings/transfers\n          name: transfer-bookings\n          description: Ground transfer reservation\

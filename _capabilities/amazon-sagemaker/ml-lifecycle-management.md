@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: amazon-sagemaker-openapi.yml
+  format: yaml
+  label: amazon-sagemaker
+  slug: amazon-sagemaker
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-sagemaker/refs/heads/main/openapi/amazon-sagemaker-openapi.yml
 categories:
 - machine-learning
 consumed_apis:
@@ -43,56 +50,58 @@ personas: []
 provider_name: Amazon SageMaker
 provider_slug: amazon-sagemaker
 search_terms:
-- list models
-- aws
-- trained model artifact management
-- amazon sagemaker
-- create a sagemaker jupyter notebook instance
-- create model
-- jupyter notebook instance management for ml development
-- describe training job
-- list all sagemaker notebook instances
-- model training job management
+- machine learning
+- list training jobs
+- inference
+- register a trained model in sagemaker
 - end-to-end ml lifecycle from notebook development through training, model registration, and endpoint deployment
-- ML Engineer
-- submit a sagemaker model training job
-- engineers who build, train, and deploy machine learning models at scale
-- create notebook
-- list all sagemaker training jobs
-- submit a new model training job
+- training
+- list registered sagemaker ml models
+- create a sagemaker notebook instance for ml development
+- get the status and details of a sagemaker inference endpoint
+- register a trained model for deployment
 - list active sagemaker inference endpoints
-- list notebook instances
-- list all sagemaker inference endpoints
-- ai
+- engineers who build, train, and deploy machine learning models at scale
+- create notebook instance
+- trained model artifact management
+- create model
+- list sagemaker jupyter notebook instances for ml development
 - core ml activities including model development, training, and inference
 - deploy a model to a sagemaker inference endpoint
-- mlops
-- feature creation, storage, and retrieval for ml models
-- model inference endpoint management
-- register a trained model for deployment
-- list training jobs
-- create a sagemaker notebook instance for ml development
-- list registered sagemaker ml models
-- register model
-- create training job
-- list endpoints
-- list notebooks
-- list sagemaker jupyter notebook instances for ml development
-- machine learning
-- describe endpoint
-- get details about a specific sagemaker training job
-- get the status and details of a sagemaker inference endpoint
-- Data Scientist
+- ai
+- list all sagemaker training jobs
 - list sagemaker model training jobs
-- inference
-- training
-- operational management of ml pipelines, monitoring, and model governance
-- deploy endpoint
+- aws
 - list all registered sagemaker models
-- create notebook instance
-- register a trained model in sagemaker
+- deploy endpoint
+- model inference endpoint management
+- list all sagemaker notebook instances
+- mlops
+- submit a new model training job
+- create a sagemaker jupyter notebook instance
+- describe endpoint
+- Data Scientist
+- describe training job
+- create notebook
+- submit a sagemaker model training job
+- list endpoints
 - scientists who explore data and experiment with ml models using notebooks and experiments
+- list models
+- ML Engineer
+- get details about a specific sagemaker training job
+- feature creation, storage, and retrieval for ml models
+- create training job
+- operational management of ml pipelines, monitoring, and model governance
+- jupyter notebook instance management for ml development
+- register model
+- list all sagemaker inference endpoints
+- list notebook instances
+- model training job management
+- list notebooks
+- amazon sagemaker
 slug: ml-lifecycle-management
+source_filename: ml-lifecycle-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SageMaker ML Lifecycle Management\"\n  description: \"Unified capability for managing the end-to-end machine learning lifecycle including notebook development, training, model management, and endpoint deployment. Used by ML Engineers and Data Scientists.\"\n  tags:\n    - Amazon SageMaker\n    - Machine Learning\n    - MLOps\n    - Training\n    - Inference\n    - AI\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-sagemaker\n      location: ./shared/amazon-sagemaker.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: ml-lifecycle-api\n      description: \"Unified REST API for Amazon SageMaker ML lifecycle management.\"\n      resources:\n        - path: /v1/notebooks\n          name:\
   \ notebooks\n          description: \"Jupyter notebook instance management for ML development\"\n          operations:\n            - method: GET\n              name: list-notebooks\n              description: \"List all SageMaker notebook instances\"\n              call: \"amazon-sagemaker.list-notebook-instances\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-notebook\n              description: \"Create a SageMaker notebook instance for ML development\"\n              call: \"amazon-sagemaker.create-notebook-instance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/training-jobs\n          name: training-jobs\n          description: \"Model training job management\"\n          operations:\n            - method: GET\n              name: list-training-jobs\n              description: \"List all SageMaker\
   \ training jobs\"\n              call: \"amazon-sagemaker.list-training-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-training-job\n              description: \"Submit a new model training job\"\n              call: \"amazon-sagemaker.create-training-job\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name: models\n          description: \"Trained model artifact management\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List all registered SageMaker models\"\n              call: \"amazon-sagemaker.list-models\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: register-model\n              description: \"Register a trained\

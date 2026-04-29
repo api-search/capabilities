@@ -44,65 +44,67 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- start pipeline
-- upgrade deployment
-- check status of an asynchronous operation
-- cdc
-- list database and service connections
-- connection management
+- create pipeline
 - deployment backup management
+- list oci goldengate deployments
+- individual deployment operations
+- list backups
+- real-time replication
+- list work requests
+- start a stopped pipeline
+- start deployment
+- platform administration
+- create a new oci deployment
+- create a new oci goldengate deployment
+- list asynchronous work requests
 - stream analytics pipeline management
+- get details of a specific oci deployment
+- check status of an asynchronous operation
+- create a new data replication pipeline
+- create connection
+- list connections
+- stop deployment
+- publish stream pipeline
+- data integration
+- list oci goldengate deployments in a compartment
+- get deployment
+- get deployment details
+- cloud management
+- connection management
+- data replication pipelines
+- list deployments
+- oci
+- unpublish a stream analytics pipeline
+- get work request
+- upgrade an oci deployment to a newer version
+- start pipeline
+- create a deployment backup
+- oracle goldengate
+- create deployment
+- create backup
+- upgrade deployment
+- enterprise
+- publish a stream analytics pipeline to the spark runtime
+- unpublish stream pipeline
+- restore a deployment from a backup
 - stop a running oci deployment
 - restore deployment
-- data replication pipelines
-- unpublish stream pipeline
-- unpublish a stream analytics pipeline
-- list work requests
-- data integration
-- list deployment backups
-- create deployment
-- create a deployment backup
-- create a new oci goldengate deployment
-- data synchronization
-- list connections
-- oracle goldengate
-- start a stopped pipeline
-- list pipelines
-- stop deployment
-- create a new connection for a source or target system
-- upgrade an oci deployment to a newer version
 - list data replication pipelines
-- list ggsa stream analytics pipelines
-- list asynchronous work requests
-- restore a deployment from a backup
-- list oci goldengate deployments in a compartment
-- create backup
-- create a new oci deployment
-- cloud management
-- list oci goldengate deployments
-- start deployment
-- enterprise
-- platform administration
-- create connection
-- get details of a specific oci deployment
-- async operation tracking
-- database
-- list backups
-- create a new data replication pipeline
+- list pipelines
 - oci goldengate deployment lifecycle management
-- publish stream pipeline
-- individual deployment operations
-- oci
-- list deployments
-- get deployment details
+- create a new connection for a source or target system
+- list ggsa stream analytics pipelines
 - list stream pipelines
-- create pipeline
-- real-time replication
-- publish a stream analytics pipeline to the spark runtime
-- get work request
-- get deployment
+- list deployment backups
+- data synchronization
+- list database and service connections
+- cdc
+- database
+- async operation tracking
 - start a stopped oci deployment
 slug: cloud-management
+source_filename: cloud-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Oracle GoldenGate Cloud Management\"\n  description: \"Unified workflow for managing Oracle GoldenGate cloud deployments in OCI. Combines the OCI Cloud Service API with Stream Analytics for cloud platform administrators managing deployment lifecycle, connections, pipelines, backups, and stream analytics in Oracle Cloud.\"\n  tags:\n    - Oracle GoldenGate\n    - OCI\n    - Cloud Management\n    - Platform Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      OCI_API_KEY: OCI_API_KEY\n      GGSA_USERNAME: GGSA_USERNAME\n      GGSA_PASSWORD: GGSA_PASSWORD\n\ncapability:\n  consumes:\n    - import: goldengate-cloud\n      location: ./shared/goldengate-cloud-service.yaml\n    - import: goldengate-stream-analytics\n      location: ./shared/goldengate-stream-analytics.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: cloud-management-api\n      description:\
   \ \"Unified REST API for Oracle GoldenGate cloud deployment management.\"\n      resources:\n        - path: /v1/deployments\n          name: deployments\n          description: \"OCI GoldenGate deployment lifecycle management\"\n          operations:\n            - method: GET\n              name: list-deployments\n              description: \"List OCI GoldenGate deployments\"\n              call: \"goldengate-cloud.list-deployments\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-deployment\n              description: \"Create a new OCI deployment\"\n              call: \"goldengate-cloud.create-deployment\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/deployments/{deploymentId}\n          name: deployment-detail\n          description:\
   \ \"Individual deployment operations\"\n          operations:\n            - method: GET\n              name: get-deployment\n              description: \"Get deployment details\"\n              call: \"goldengate-cloud.get-deployment\"\n              with:\n                deploymentId: \"rest.deploymentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections\n          name: connections\n          description: \"Connection management\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List database and service connections\"\n              call: \"goldengate-cloud.list-connections\"\n              with:\n                compartmentId: \"rest.compartmentId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pipelines\n          name: pipelines\n          description: \"\

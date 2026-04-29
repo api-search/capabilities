@@ -31,74 +31,76 @@ personas: []
 provider_name: Databricks
 provider_slug: databricks
 search_terms:
-- clean rooms
-- etl
-- model serving
-- security
-- workspace object management.
-- analytics
-- run job now
-- import workspace object
-- mlflow
-- apache spark
-- delete a job.
-- get details of a specific run.
-- cancel a running job.
-- databricks
-- get job details.
-- delete workspace object
-- create job
-- visualize
-- job orchestration.
-- cancel job run
-- list all jobs.
-- create a new spark cluster.
-- get cluster details.
-- ai
-- edit cluster
-- big data
-- sql
-- data analytics
-- terminate cluster
-- list job runs
-- delta lake
-- list workspace objects
-- cluster lifecycle management.
-- list runs for a job.
-- list all clusters.
-- list all databricks clusters.
-- edit cluster configuration.
-- delta sharing
-- create a new cluster.
-- trigger a job run immediately.
-- list workspace objects.
-- start a terminated cluster.
-- unity catalog
-- get job run
 - machine learning
-- data engineering
-- list all databricks jobs.
-- data governance
-- cloud computing
+- delta sharing
 - terminate a running cluster.
-- delete job
-- list objects in a workspace directory.
-- import a notebook or workspace object.
-- list jobs
-- vector search
-- list clusters
-- create cluster
-- lakehouse
+- get details of a specific run.
 - export a notebook or workspace object.
-- identity management
+- list job runs
+- list all databricks jobs.
+- start cluster
+- data governance
+- create a new job.
+- list workspace objects
+- get cluster details.
+- delete job
+- list jobs
+- list objects in a workspace directory.
+- clean rooms
 - export workspace object
-- data
+- cancel a running job.
+- lakehouse
+- vector search
+- sql
 - delete a workspace object.
 - get cluster
+- data
+- ai
+- workspace object management.
+- run job now
+- edit cluster configuration.
+- import workspace object
+- job orchestration.
+- list runs for a job.
+- databricks
+- edit cluster
+- list all jobs.
+- create cluster
+- model serving
+- list workspace objects.
+- delete workspace object
+- security
+- start a terminated cluster.
+- create job
+- get job run
+- delete a job.
+- list all databricks clusters.
+- cluster lifecycle management.
+- data analytics
+- mlflow
+- analytics
+- cloud computing
+- delta lake
+- unity catalog
+- list clusters
+- create a new cluster.
+- terminate cluster
 - get job
-- create a new job.
-- start cluster
+- identity management
+- visualize
+- cancel job run
+- big data
+- list all clusters.
+- get job details.
+- apache spark
+- import a notebook or workspace object.
+- data engineering
+- trigger a job run immediately.
+- create a new spark cluster.
+- etl
 slug: data-engineering
+source_filename: data-engineering.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Databricks Data Engineering\"\n  description: \"Unified workflow for Databricks data engineering including cluster management, job orchestration, and workspace operations. Used by data engineers and platform administrators.\"\n  tags:\n    - Databricks\n    - Data Engineering\n    - ETL\n    - Apache Spark\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      DATABRICKS_TOKEN: DATABRICKS_TOKEN\n\ncapability:\n  consumes:\n    - import: databricks-api\n      location: ./shared/databricks-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: databricks-data-eng-api\n      description: \"Unified REST API for Databricks data engineering workflows.\"\n      resources:\n        - path: /v1/clusters\n          name: clusters\n          description: \"Cluster lifecycle management.\"\n          operations:\n            - method: GET\n              name: list-clusters\n\
   \              description: \"List all clusters.\"\n              call: \"databricks-api.list-clusters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-cluster\n              description: \"Create a new cluster.\"\n              call: \"databricks-api.create-cluster\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"Job orchestration.\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List all jobs.\"\n              call: \"databricks-api.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-job\n              description: \"Create a new job.\"\n              call: \"databricks-api.create-job\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workspace\n          name: workspace\n          description: \"Workspace object management.\"\n          operations:\n            - method: GET\n              name: list-workspace-objects\n              description: \"List workspace objects.\"\n              call: \"databricks-api.list-workspace-objects\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: databricks-data-eng-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Databricks data engineering.\"\n      tools:\n        - name: list-clusters\n          description: \"List all Databricks clusters.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"databricks-api.list-clusters\"\n \

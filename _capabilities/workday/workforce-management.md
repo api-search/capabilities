@@ -1,4 +1,29 @@
 ---
+api_specs:
+- filename: hcm.yml
+  format: yaml
+  label: workday-hcm
+  slug: workday-hcm
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/hcm.yml
+- filename: person.yml
+  format: yaml
+  label: workday-person
+  slug: workday-person
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/person.yml
+- filename: staffing.yml
+  format: yaml
+  label: workday-staffing
+  slug: workday-staffing
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/staffing.yml
+- filename: common.yml
+  format: yaml
+  label: workday-common
+  slug: workday-common
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/workday/refs/heads/main/openapi/common.yml
 categories:
 - payroll-hr
 consumed_apis:
@@ -38,61 +63,63 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- person get home contact
-- list organizations
-- staffing list positions
-- get work contact information
-- list all workers with optional search and pagination
-- financial management
 - list all workers
-- hcm get worker inbox tasks
-- common list currencies
-- get worker
-- staffing list job profiles
-- hcm list workers
-- staffing create job change
-- supervisory organizations
-- worker management
-- list positions
-- common list countries
-- list all locations
-- list supervisory organizations
-- hcm list locations
-- get inbox tasks for a worker
-- hcm
-- get home contact information
-- person data
-- get a worker by id
-- hcm get worker history
-- initiate a worker termination
-- list all positions
-- position management
-- list all people
-- person get person
-- enterprise software
-- human resources
-- saas
-- list people
 - hcm list organizations
-- create a job change request
-- get change history for a worker
-- get a specific worker by id
-- workday
-- list all currencies
-- list all job profiles
-- staffing terminate worker
-- worker detail
-- list workers
-- cloud computing
-- country reference data
+- list all workers with optional search and pagination
+- common list currencies
+- financial management
+- worker management
+- hcm
 - hcm get worker
-- workforce management
-- person get work contact
-- list countries
+- get change history for a worker
+- person data
+- list all positions
+- staffing list positions
+- common list countries
+- list supervisory organizations
 - list all countries
+- country reference data
+- list all currencies
 - person list people
 - get a person by id
+- human resources
+- hcm get worker inbox tasks
+- supervisory organizations
+- list countries
+- person get person
+- staffing terminate worker
+- hcm list workers
+- staffing create job change
+- create a job change request
+- staffing list job profiles
+- hcm list locations
+- get a worker by id
+- enterprise software
+- hcm get worker history
+- list people
+- list all job profiles
+- worker detail
+- saas
+- position management
+- get home contact information
+- initiate a worker termination
+- workforce management
+- list organizations
+- cloud computing
+- list workers
+- get a specific worker by id
+- list positions
+- get inbox tasks for a worker
+- get work contact information
+- person get work contact
+- list all people
+- person get home contact
+- get worker
+- list all locations
+- workday
 slug: workforce-management
+source_filename: workforce-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Workday Workforce Management\"\n  description: \"Unified workforce management combining HCM, Person, Staffing, and Common APIs for HR administrators to manage workers, organizations, positions, and reference data.\"\n  tags:\n    - Workday\n    - Workforce Management\n    - Human Resources\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      WORKDAY_OAUTH_TOKEN: WORKDAY_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: workday-hcm\n      location: ./shared/hcm.yaml\n    - import: workday-person\n      location: ./shared/person.yaml\n    - import: workday-staffing\n      location: ./shared/staffing.yaml\n    - import: workday-common\n      location: ./shared/common.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: workforce-management-api\n      description: \"Unified REST API for workforce management operations.\"\n      resources:\n        - path: /v1/workers\n\
   \          name: workers\n          description: \"Worker management\"\n          operations:\n            - method: GET\n              name: list-workers\n              description: \"List all workers\"\n              call: \"workday-hcm.get-workers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workers/{id}\n          name: worker-detail\n          description: \"Worker detail\"\n          operations:\n            - method: GET\n              name: get-worker\n              description: \"Get a worker by ID\"\n              call: \"workday-hcm.get-worker-by-id\"\n              with:\n                ID: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/people\n          name: people\n          description: \"Person data\"\n          operations:\n            - method: GET\n              name: list-people\n              description:\
   \ \"List all people\"\n              call: \"workday-person.get-people\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/positions\n          name: positions\n          description: \"Position management\"\n          operations:\n            - method: GET\n              name: list-positions\n              description: \"List all positions\"\n              call: \"workday-staffing.get-positions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Supervisory organizations\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List supervisory organizations\"\n              call: \"workday-hcm.get-supervisory-organizations\"\n              outputParameters:\n                - type: object\n                  mapping:\

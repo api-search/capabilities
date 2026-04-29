@@ -47,75 +47,77 @@ personas: []
 provider_name: Informatica
 provider_slug: informatica
 search_terms:
-- list all mapping tasks.
-- etl
-- create mapping task
-- update an existing connection.
-- delete schedule
-- data source connection management.
-- update connection
-- reference data management
-- get mapping task details by id.
-- individual connection management.
-- update a connection.
-- retrieve the activity log.
-- informatica
-- update a schedule.
-- address verification
-- start job
-- authenticate and obtain a session id.
-- update schedule
-- b2b gateway
-- idmc
-- get schedule details by id.
-- update a mapping task.
-- cloud services
-- delete mapping task
-- start a job.
-- login
-- create a new data source connection.
-- delete a mapping task.
-- get schedule
-- data integration
-- data mapping management.
-- list mappings
-- get mapping task
 - update mapping task
-- create schedule
-- get mapping
-- iics
-- stop job
-- list connections
-- start a job for a task or taskflow.
-- list all data source connections.
+- get connection
 - list all connections.
-- list mapping tasks
+- delete connection
+- mapping task management.
+- stop job
+- update schedule
+- cloud services
+- list mappings
+- iics
+- delete a mapping task.
+- update connection
+- data governance
+- idmc
+- individual connection management.
+- reference data management
+- data mapping management.
+- list schedules
+- create schedule
+- get mapping details by id.
+- create a new connection.
+- retrieve the activity log.
+- data integration
+- create connection
+- list connections
+- delete a connection.
+- informatica
+- update a connection.
+- get connection details.
+- data profiling
+- get activity log
+- login
+- get mapping task
+- list all task schedules.
+- start a job for a task or taskflow.
+- get mapping
+- list all data mappings.
+- start job
+- get schedule
+- get schedule details by id.
+- authenticate and obtain a session id.
+- list all mapping tasks.
+- create a new schedule.
+- get connection details by id.
+- update an existing connection.
 - data quality
 - enterprise software
-- delete connection
-- master data management
-- get connection details.
-- delete a schedule.
-- data governance
-- get connection
-- create connection
-- create a new schedule.
-- get activity log
-- list all task schedules.
-- list all mappings.
-- pipeline management
-- list schedules
-- data profiling
+- delete mapping task
+- b2b gateway
 - job execution management.
+- update a schedule.
+- start a job.
+- pipeline management
+- delete schedule
+- create a new data source connection.
+- address verification
+- data source connection management.
+- list all data source connections.
+- delete a schedule.
+- get mapping task details by id.
+- create mapping task
+- update a mapping task.
+- list mapping tasks
+- master data management
 - stop a running job.
-- get connection details by id.
-- delete a connection.
-- get mapping details by id.
-- list all data mappings.
-- mapping task management.
 - create a new mapping task.
-- create a new connection.
+- list all mappings.
+- etl
 slug: data-integration
+source_filename: data-integration.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Informatica Data Integration\"\n  description: \"Unified workflow for managing data integration pipelines including connections, mappings, mapping tasks, job execution, scheduling, and activity monitoring. Used by data engineers and ETL developers.\"\n  tags:\n    - Informatica\n    - Data Integration\n    - ETL\n    - Pipeline Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      INFORMATICA_USERNAME: INFORMATICA_USERNAME\n      INFORMATICA_PASSWORD: INFORMATICA_PASSWORD\n\ncapability:\n  consumes:\n    - import: informatica-platform\n      location: ./shared/platform-rest-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: informatica-integration-api\n      description: \"Unified REST API for Informatica data integration management.\"\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: \"Data\
   \ source connection management.\"\n          operations:\n            - method: GET\n              name: list-connections\n              description: \"List all connections.\"\n              call: \"informatica-platform.list-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: \"Create a new connection.\"\n              call: \"informatica-platform.create-connection\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connections/{id}\n          name: connection-details\n          description: \"Individual connection management.\"\n          operations:\n            - method: GET\n              name: get-connection\n              description: \"Get connection details.\"\n              call: \"informatica-platform.get-connection\"\n              with:\n           \
   \     connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-connection\n              description: \"Update a connection.\"\n              call: \"informatica-platform.update-connection\"\n              with:\n                connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-connection\n              description: \"Delete a connection.\"\n              call: \"informatica-platform.delete-connection\"\n              with:\n                connectionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/mappings\n          name: mappings\n          description: \"Data mapping management.\"\n          operations:\n            - method: GET\n          \

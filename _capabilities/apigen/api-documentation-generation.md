@@ -22,29 +22,31 @@ personas: []
 provider_name: APIGen
 provider_slug: apigen
 search_terms:
-- deploy
-- deploy documentation site
-- list projects.
-- apigen
-- developer generating api documentation for php projects using apigen.
-- php
-- PHP Developer
-- open source
-- api code generation
-- deploy documentation.
-- create project.
-- generation
-- deploy an api documentation site for a project.
-- Technical Writer
-- create project
-- writer managing and publishing api documentation sites.
-- list all apigen documentation projects.
-- list projects
-- create documentation project
-- create a new php api documentation project in apigen.
 - code
+- create documentation project
+- php
+- deploy documentation site
+- Technical Writer
+- open source
+- list all apigen documentation projects.
+- list projects.
+- api code generation
+- developer generating api documentation for php projects using apigen.
+- writer managing and publishing api documentation sites.
+- deploy
+- deploy documentation.
 - documentation
+- generation
+- create a new php api documentation project in apigen.
+- list projects
+- create project
+- PHP Developer
+- create project.
+- apigen
+- deploy an api documentation site for a project.
 slug: api-documentation-generation
+source_filename: api-documentation-generation.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"APIGen Documentation Generation\"\n  description: \"Workflow for generating, publishing, and managing API documentation using APIGen - creating projects from PHP source code, configuring endpoints, and deploying documentation sites.\"\n  tags:\n    - APIGen\n    - Documentation\n    - PHP\n    - API Code Generation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      APIGEN_API_TOKEN: APIGEN_API_TOKEN\n\ncapability:\n  consumes:\n    - import: apigen\n      location: ./shared/apigen.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: apigen-docs-api\n      description: \"Unified REST API for APIGen documentation management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List projects.\"\n              call: \"apigen.list-projects\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: \"Create project.\"\n              call: \"apigen.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/projects/{projectId}/deploy\n          name: deploy\n          operations:\n            - method: POST\n              name: deploy\n              description: \"Deploy documentation.\"\n              call: \"apigen.deploy\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: apigen-docs-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API documentation generation.\"\n      tools:\n        - name: list-projects\n          description: \"List all APIGen documentation projects.\"\n     \
   \     hints: {readOnly: true, destructive: false, idempotent: true}\n          call: \"apigen.list-projects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-documentation-project\n          description: \"Create a new PHP API documentation project in APIGen.\"\n          hints: {readOnly: false, destructive: false, idempotent: false}\n          call: \"apigen.create-project\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deploy-documentation-site\n          description: \"Deploy an API documentation site for a project.\"\n          hints: {readOnly: false, destructive: false, idempotent: false}\n          call: \"apigen.deploy\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"

@@ -1,4 +1,11 @@
 ---
+api_specs:
+- filename: better-stack-openapi.yml
+  format: yaml
+  label: better-stack
+  slug: better-stack
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/better-stack/refs/heads/main/openapi/better-stack-openapi.yml
 categories:
 - incident-management
 consumed_apis:
@@ -73,75 +80,77 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- logs
-- monitoring
-- engineer on-call rotation responsible for responding to incidents
-- list all heartbeats
-- list all heartbeat monitors for scheduled jobs
-- list incidents with optional date and filter parameters
-- monitor management for uptime checks
-- get monitor details
-- list all incidents
-- single incident operations
-- single monitor operations
-- delete a monitor
-- incident response
-- update a monitor
-- delete incident
-- create monitor
-- resolve an incident
-- get availability metrics for a monitor
-- sre
-- get incident
-- create a heartbeat monitor
-- list heartbeats
-- delete an incident
-- create heartbeat
-- get monitor availability summary
-- incident management
-- acknowledge an active incident to indicate someone is working on it
-- site reliability engineer managing infrastructure uptime and incident response
-- uptime and availability monitoring for services and scheduled jobs
-- sre engineer
-- acknowledge incident
-- acknowledge an incident
-- resolve incident
-- get details for a specific incident
-- uptime
-- create a manual incident
-- incidents
 - update monitor
-- observability
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- heartbeat monitor management
-- create incident
-- acknowledge an active incident
+- list incidents with optional date and filter parameters
 - heartbeats
-- on-call
+- get monitor details
+- get monitor availability summary
+- get availability metrics for a monitor
+- create a manual incident
+- get details for a specific incident
+- acknowledge an active incident to indicate someone is working on it
 - managing team access and membership
-- monitor availability metrics
-- resolve an active incident once the issue is fixed
-- list all uptime monitors
-- on call engineer
-- create a new uptime monitor for a url or api
-- better stack
+- acknowledge incident
 - list monitors
-- list incidents
-- status
-- get monitor availability
-- create a new uptime monitor
-- get monitor
-- detection, acknowledgement, and resolution of service incidents
+- delete a monitor
+- acknowledge an incident
 - platform
-- get details for a specific uptime monitor
-- get heartbeat availability
-- delete monitor
-- get availability for a heartbeat monitor
-- get incident details
+- create a new uptime monitor for a url or api
+- sre
+- list heartbeats
+- acknowledge an active incident
+- get incident
+- heartbeat monitor management
+- resolve incident
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- list all uptime monitors
+- update a monitor
+- sre engineer
+- create a new uptime monitor
 - communicating service health to customers and stakeholders
+- list all heartbeats
+- list incidents
+- single monitor operations
+- logs
+- get heartbeat availability
+- resolve an active incident once the issue is fixed
+- get availability for a heartbeat monitor
+- resolve an incident
+- incident response
+- engineer on-call rotation responsible for responding to incidents
+- monitor management for uptime checks
+- delete monitor
+- monitoring
+- list all incidents
+- get monitor availability
 - resolve an active incident
+- delete incident
+- observability
+- create a heartbeat monitor
+- get incident details
+- site reliability engineer managing infrastructure uptime and incident response
+- incident management
+- get details for a specific uptime monitor
+- list all heartbeat monitors for scheduled jobs
+- better stack
+- monitor availability metrics
+- create heartbeat
+- create incident
+- incidents
+- detection, acknowledgement, and resolution of service incidents
+- uptime
+- get monitor
+- create monitor
+- status
+- single incident operations
+- on call engineer
 - list all uptime monitors to check what is being monitored
+- on-call
+- delete an incident
+- uptime and availability monitoring for services and scheduled jobs
 slug: incident-response
+source_filename: incident-response.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Better Stack Incident Response\n  description: >-\n    Unified incident response workflow combining Better Stack uptime monitoring,\n    heartbeat monitoring, and incident management. Used by SRE teams and on-call\n    engineers to detect, acknowledge, and resolve infrastructure incidents.\n  tags:\n    - Better Stack\n    - Incident Response\n    - Monitoring\n    - On-Call\n    - Sre\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BETTER_STACK_API_TOKEN: BETTER_STACK_API_TOKEN\n\ncapability:\n  consumes:\n    - import: better-stack\n      location: ./shared/better-stack.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: better-stack-incident-response-api\n      description: Unified REST API for Better Stack incident response workflows.\n      resources:\n        - path: /v1/monitors\n          name: monitors\n          description: Monitor management for\
   \ uptime checks\n          operations:\n            - method: GET\n              name: list-monitors\n              description: List all uptime monitors\n              call: \"better-stack.list-monitors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-monitor\n              description: Create a new uptime monitor\n              call: \"better-stack.create-monitor\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{id}\n          name: monitor\n          description: Single monitor operations\n          operations:\n            - method: GET\n              name: get-monitor\n              description: Get monitor details\n              call: \"better-stack.get-monitor\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n         \
   \         mapping: \"$.\"\n            - method: PATCH\n              name: update-monitor\n              description: Update a monitor\n              call: \"better-stack.update-monitor\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-monitor\n              description: Delete a monitor\n              call: \"better-stack.delete-monitor\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/monitors/{id}/availability\n          name: monitor-availability\n          description: Monitor availability metrics\n          operations:\n            - method: GET\n              name: get-monitor-availability\n              description: Get monitor availability summary\n              call: \"better-stack.get-monitor-availability\"\

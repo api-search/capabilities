@@ -36,65 +36,67 @@ personas: []
 provider_name: AT&T
 provider_slug: at-and-t
 search_terms:
-- in app send message
-- App Developer
-- MVNO Operator
-- telecommunications
-- sms get inbound messages
-- list messages from a user's at&t inbox with pagination and unread filtering
-- engineer integrating at&t network services with bss/oss systems via tm forum apis
-- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
-- check the delivery status of a sent sms message
-- get inbox delta
-- list user inbox messages
-- poll for inbound sms messages received on a registered short code
-- mobile network connectivity and subscriber management
-- in app sync inbox delta
-- get inbox changes since last sync
-- poll for inbound sms messages
-- send sms
-- broadband
-- mms
-- list messages
-- get full details of a specific inbox message including content and metadata
-- send message
-- send an sms short code message to up to 50 recipients
-- mobile virtual network operator services on at&t infrastructure
-- complete mvno subscriber lifecycle and number portability management
-- at&t
-- sms notifications and in-app messaging for mobile apps and enterprise systems
-- sms short code inbox
-- mvno business operator managing at&t-powered mobile subscribers and services
-- send mms or sms on behalf of user
-- Enterprise Developer
-- in-app user messaging inbox
-- notifications
-- get sms delivery status
-- sms delivery tracking
-- in app get message
-- in app delete message
-- developer building enterprise notification, alerting, or communication systems
-- sms and mms messaging services for consumer and enterprise applications
-- enterprise
-- in app list messages
-- get inbox changes since last synchronization for efficient message management
-- wireless
-- wireline
 - get inbound sms
-- inbox delta synchronization
-- delete a message from the user's inbox permanently
-- Telecom Engineer
-- speech
-- sms
 - mobile
-- check delivery status of a sent sms
-- sms send message
-- send an mms or sms message on behalf of an authenticated at&t user
+- send an sms short code message to at&t subscribers for notifications, alerts, or marketing
+- get inbox changes since last synchronization for efficient message management
+- mobile network connectivity and subscriber management
 - mobile or web application developer embedding messaging into consumer apps
-- sms short code messaging
-- messaging
+- Enterprise Developer
+- sms get inbound messages
+- in app delete message
+- list messages from a user's at&t inbox with pagination and unread filtering
 - sms check delivery status
+- get full details of a specific inbox message including content and metadata
+- messaging
+- sms short code inbox
+- at&t
+- get inbox changes since last sync
+- list messages
+- developer building enterprise notification, alerting, or communication systems
+- delete a message from the user's inbox permanently
+- in app sync inbox delta
+- check delivery status of a sent sms
+- send sms
+- list user inbox messages
+- check the delivery status of a sent sms message
+- engineer integrating at&t network services with bss/oss systems via tm forum apis
+- sms and mms messaging services for consumer and enterprise applications
+- sms notifications and in-app messaging for mobile apps and enterprise systems
+- sms short code messaging
+- in app send message
+- Telecom Engineer
+- in-app user messaging inbox
+- telecommunications
+- wireless
+- sms send message
+- sms
+- mobile virtual network operator services on at&t infrastructure
+- poll for inbound sms messages
+- enterprise
+- MVNO Operator
+- inbox delta synchronization
+- wireline
+- mvno business operator managing at&t-powered mobile subscribers and services
+- sms delivery tracking
+- in app list messages
+- in app get message
+- complete mvno subscriber lifecycle and number portability management
+- send an sms short code message to up to 50 recipients
+- get inbox delta
+- send mms or sms on behalf of user
+- mms
+- App Developer
+- send an mms or sms message on behalf of an authenticated at&t user
+- get sms delivery status
+- broadband
+- notifications
+- send message
+- poll for inbound sms messages received on a registered short code
+- speech
 slug: messaging
+source_filename: messaging.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AT&T Messaging\"\n  description: \"Unified messaging capability combining AT&T SMS API and In-App Messaging API for customer notifications, two-way messaging, and inbox management. Used by developers building mobile apps and enterprise notification systems.\"\n  tags:\n    - AT&T\n    - SMS\n    - MMS\n    - Messaging\n    - Notifications\n    - Mobile\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATT_SMS_ACCESS_TOKEN: ATT_SMS_ACCESS_TOKEN\n      ATT_IAM_ACCESS_TOKEN: ATT_IAM_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: att-sms\n      location: ./shared/sms-api.yaml\n    - import: att-iam\n      location: ./shared/in-app-messaging-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: att-messaging-api\n      description: \"Unified REST API for AT&T SMS and in-app messaging operations.\"\n      resources:\n        - path: /v1/sms/messages\n\
   \          name: sms-outbox\n          description: \"SMS short code messaging\"\n          operations:\n            - method: POST\n              name: send-sms\n              description: \"Send an SMS short code message to up to 50 recipients\"\n              call: \"att-sms.send-sms\"\n              with:\n                address: \"rest.address\"\n                message: \"rest.message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sms/messages/{messageId}/status\n          name: sms-delivery-status\n          description: \"SMS delivery tracking\"\n          operations:\n            - method: GET\n              name: get-sms-delivery-status\n              description: \"Check delivery status of a sent SMS\"\n              call: \"att-sms.get-sms-delivery-status\"\n              with:\n                messageId: \"rest.messageId\"\n              outputParameters:\n                - type: object\n        \
   \          mapping: \"$.\"\n        - path: /v1/sms/inbox/{registrationId}\n          name: sms-inbox\n          description: \"SMS short code inbox\"\n          operations:\n            - method: GET\n              name: get-inbound-sms\n              description: \"Poll for inbound SMS messages\"\n              call: \"att-sms.get-inbound-sms\"\n              with:\n                registrationId: \"rest.registrationId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/in-app/messages\n          name: in-app-messages\n          description: \"In-app user messaging inbox\"\n          operations:\n            - method: POST\n              name: send-message\n              description: \"Send MMS or SMS on behalf of user\"\n              call: \"att-iam.send-message\"\n              with:\n                addresses: \"rest.addresses\"\n                text: \"rest.text\"\n              outputParameters:\n          \

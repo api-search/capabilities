@@ -10,17 +10,19 @@ provider_name: Bindbee
 provider_slug: bindbee
 search_terms:
 - hris
-- developer building hr workflow automations using unified hr data
-- access unified hr and recruiting data from connected hris and ats systems
-- hr integration
-- unified access to recruiting data from ats platforms
-- employee time-off, tenure, and workforce data
-- ats
-- unified access to employee data from hris platforms
-- department hierarchy and org structure normalization
-- people operations engineer integrating hr systems into internal tooling
 - workforce
+- ats
+- employee time-off, tenure, and workforce data
+- unified access to recruiting data from ats platforms
+- developer building hr workflow automations using unified hr data
+- hr integration
+- department hierarchy and org structure normalization
+- unified access to employee data from hris platforms
+- access unified hr and recruiting data from connected hris and ats systems
+- people operations engineer integrating hr systems into internal tooling
 slug: hr-integration
+source_filename: hr-integration.yaml
+source_heading: Capability Spec
 source_yaml: "name: HR Integration\ndescription: >-\n  Workflow capability for accessing unified HR data from HRIS and ATS systems\n  through Bindbee, including employee records, departments, time-off, job\n  postings, and candidates.\nversion: v1\n\nimports:\n  - shared/bindbee.yaml\n\ntools:\n  - name: list-employees\n    import: bindbee.list-employees\n    description: List all employees from the connected HRIS system with pagination.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the specific HRIS integration\n        page_size:\n          type: integer\n          description: Number of results per page\n        cursor:\n          type: string\n          description: Pagination cursor from previous response\n  - name: get-employee\n    import: bindbee.get-employee\n    description: Get a specific employee's full record by ID.\n    inputSchema:\n\
   \      type: object\n      required:\n        - connector_token\n        - id\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n        id:\n          type: string\n          description: Employee ID\n  - name: list-departments\n    import: bindbee.list-departments\n    description: List all organizational departments from the connected HRIS.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n  - name: list-time-off\n    import: bindbee.list-time-off\n    description: List time-off requests with optional employee filtering.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the HRIS integration\n \
   \       employee_id:\n          type: string\n          description: Filter by employee ID\n  - name: list-jobs\n    import: bindbee.list-jobs\n    description: List open job postings from the connected ATS system.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the ATS integration\n        status:\n          type: string\n          description: Filter by job status (open, closed, draft)\n  - name: list-candidates\n    import: bindbee.list-candidates\n    description: List candidates from the connected ATS system.\n    inputSchema:\n      type: object\n      required:\n        - connector_token\n      properties:\n        connector_token:\n          type: string\n          description: Connector token for the ATS integration\n        job_id:\n          type: string\n          description: Filter by job ID\n  - name: get-candidate\n    import:\

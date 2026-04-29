@@ -43,58 +43,60 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- terminate a user session.
-- keycloak realms.
-- red hat
-- create a new user in a realm.
-- list realms
-- create a user.
-- list users.
-- list users in a realm.
-- keycloak
-- delete a user from a realm.
-- get user
-- create client
-- list external identity providers.
-- open source
-- list roles
-- delete session
-- get realm configuration details.
-- list clients.
-- list identity providers.
-- containers
-- list groups
-- create user
-- list groups.
-- realm clients.
-- access management
-- identity providers.
-- cloud
-- linux
-- list users
-- list roles.
-- register a new client application.
-- enterprise
-- kubernetes
-- realm users.
 - specific realm.
+- list users.
 - list roles in a realm.
-- realm roles.
-- get user details.
-- realm groups.
-- list realm roles
-- list identity providers
-- identity
-- hybrid cloud
 - delete user
-- list all realms.
+- get user
+- create a user.
+- list realm roles
+- containers
+- keycloak realms.
 - list clients
-- get realm details.
+- realm roles.
+- list roles.
 - list groups in a realm.
-- list all keycloak realms.
-- get realm
+- identity
+- get user details.
 - list client applications in a realm.
+- create client
+- realm users.
+- hybrid cloud
+- create a new user in a realm.
+- terminate a user session.
+- open source
+- list groups
+- list realms
+- get realm configuration details.
+- red hat
+- get realm details.
+- list users
+- identity providers.
+- create user
+- delete a user from a realm.
+- realm groups.
+- list users in a realm.
+- cloud
+- enterprise
+- list all keycloak realms.
+- list identity providers
+- get realm
+- access management
+- list groups.
+- list clients.
+- list external identity providers.
+- realm clients.
+- list roles
+- kubernetes
+- keycloak
+- list identity providers.
+- linux
+- register a new client application.
+- delete session
+- list all realms.
 slug: identity-and-access
+source_filename: identity-and-access.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Red Hat Identity and Access\"\n  description: \"Identity and access management workflow using Keycloak for managing realms, users, clients, roles, groups, and identity federation. Used by platform admins and security teams.\"\n  tags:\n    - Red Hat\n    - Keycloak\n    - Identity\n    - Access Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      KEYCLOAK_BEARER_TOKEN: KEYCLOAK_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: keycloak-admin\n      location: ./shared/keycloak-admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: identity-and-access-api\n      description: \"Unified REST API for identity and access management.\"\n      resources:\n        - path: /v1/realms\n          name: realms\n          description: \"Keycloak realms.\"\n          operations:\n            - method: GET\n              name: list-realms\n             \
   \ description: \"List all realms.\"\n              call: \"keycloak-admin.list-realms\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}\n          name: realm-detail\n          description: \"Specific realm.\"\n          operations:\n            - method: GET\n              name: get-realm\n              description: \"Get realm details.\"\n              call: \"keycloak-admin.get-realm\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}/users\n          name: users\n          description: \"Realm users.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users.\"\n              call: \"keycloak-admin.list-users\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n\
   \                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a user.\"\n              call: \"keycloak-admin.create-user\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}/clients\n          name: clients\n          description: \"Realm clients.\"\n          operations:\n            - method: GET\n              name: list-clients\n              description: \"List clients.\"\n              call: \"keycloak-admin.list-clients\"\n              with:\n                realm: \"rest.realm\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/realms/{realm}/roles\n          name: roles\n          description: \"Realm roles.\"\n          operations:\n            - method: GET\n\

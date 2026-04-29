@@ -22,41 +22,43 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- execute an oql query
-- execute oql query
-- list geode functions
-- execute query
-- high-performance in-memory data caching and distribution
-- list regions
-- developers using geode as a fast data store for applications
-- manage in-memory data with regions, queries, and functions
-- open source
-- Platform Engineer
-- oql query execution
-- execute an oql query against geode regions
-- Application Developer
-- caching
-- apache geode
-- region crud operations, oql queries, and function execution
-- data grid
-- get region keys
-- engineers managing the geode cluster infrastructure
-- in-memory data grid
 - distributed systems
-- apache
-- list all server-side functions available in the cluster
 - data management
-- geode region management
-- list all geode regions
-- platform engineering
-- list functions
-- in-memory
-- list geode regions
+- oql query execution
 - list available functions
+- Application Developer
+- developers using geode as a fast data store for applications
+- Platform Engineer
+- platform engineering
+- data grid
 - list all regions in the apache geode data grid
+- list all geode regions
+- in-memory
+- open source
+- caching
+- list all server-side functions available in the cluster
+- region crud operations, oql queries, and function execution
+- execute query
+- engineers managing the geode cluster infrastructure
 - server-side function execution
+- list functions
+- execute an oql query
+- execute an oql query against geode regions
+- apache
+- list geode functions
+- list geode regions
+- execute oql query
+- get region keys
+- geode region management
+- list regions
+- high-performance in-memory data caching and distribution
+- in-memory data grid
+- apache geode
 - get all keys stored in a geode region
+- manage in-memory data with regions, queries, and functions
 slug: geode-data-management
+source_filename: geode-data-management.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Geode Data Management\"\n  description: \"Unified capability for managing data in Apache Geode in-memory data grid — accessing regions, executing OQL queries, and running server-side functions. Designed for application developers and platform engineers working with high-performance in-memory data.\"\n  tags:\n    - Apache Geode\n    - In-Memory Data Grid\n    - Caching\n    - Data Management\n    - Platform Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      GEODE_REST_URL: GEODE_REST_URL\ncapability:\n  consumes:\n    - import: geode-rest\n      location: ./shared/geode-rest.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: geode-management-api\n      description: \"Unified REST API for Apache Geode data management.\"\n      resources:\n        - path: /v1/regions\n          name: regions\n          description: Geode region management\n   \
   \       operations:\n            - method: GET\n              name: list-regions\n              description: List all Geode regions\n              call: \"geode-rest.list-regions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: OQL query execution\n          operations:\n            - method: GET\n              name: execute-query\n              description: Execute an OQL query\n              call: \"geode-rest.execute-adhoc-query\"\n              with:\n                q: \"rest.q\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/functions\n          name: functions\n          description: Server-side function execution\n          operations:\n            - method: GET\n              name: list-functions\n              description: List available functions\n              call: \"geode-rest.list-functions\"\
   \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: geode-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Geode data management.\"\n      tools:\n        - name: list-geode-regions\n          description: List all regions in the Apache Geode data grid\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"geode-rest.list-regions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-region-keys\n          description: Get all keys stored in a Geode region\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"geode-rest.get-region-keys\"\n          with:\n            region: \"tools.region\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: execute-oql-query\n\

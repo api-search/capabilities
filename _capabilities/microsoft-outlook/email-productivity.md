@@ -79,83 +79,85 @@ personas: []
 provider_name: Microsoft Outlook
 provider_slug: microsoft-outlook
 search_terms:
-- forward an email message to recipients
-- delete message
-- productivity
-- copy a message to a different folder
-- get a specific attachment from a message
-- add an attachment to a message
-- get message
-- email
-- forward message
-- forward
-- get a specific message
-- email messages
-- delete attachment
-- delete a message
-- send a draft message
 - reply to an email message
-- delete an email message
-- move a message to a different folder
-- list mail folders
-- office 365
-- list attachments for a message
-- graph api
-- list messages
-- reply all to an email message
-- list attachments
-- send mail
-- messages in a folder
-- update a mail folder
+- microsoft
+- email messages
 - single email message
-- create a new mail folder
-- add attachment
-- update folder
-- list folder messages
-- reply all to message
-- delete an attachment from a message
-- contacts
-- enterprise
-- update a message
+- forward an email message to recipients
+- copy message
+- delete folder
+- update an email message
+- delete a mail folder
+- delete an email message
+- update message
+- send a new email directly
+- send mail
+- list messages
+- create draft
+- email
+- forward a message
+- move message
+- get a specific mail folder
 - list folders
-- get a mail folder
-- outlook
-- create a draft message
-- list email messages
-- send draft
-- reply
+- list mail folders
+- add an attachment to a message
+- get a specific message
 - reply to a message
+- list folder messages
+- forward message
+- outlook
+- messages in a folder
+- productivity
+- reply all to an email message
+- delete message
 - single mail folder
-- send a new email message
+- create a draft message
 - create a draft email message
 - send an existing draft message
+- update a message
 - message attachments
-- create draft
-- send a new email directly
-- mail folders
 - create a mail folder
-- reply to message
-- list mail folders in the mailbox
-- get a specific mail folder
-- list messages in a specific mail folder
-- send a new email message directly
-- copy message
-- microsoft
+- get a mail folder
+- reply
+- delete attachment
 - get attachment
-- update an email message
-- delete folder
-- add an attachment
-- move message
-- delete a mail folder
-- forward a message
+- update folder
+- list mail folders in the mailbox
+- office 365
 - create folder
-- update message
-- get folder
-- list messages in a folder
-- get a specific email message by id
+- list attachments for a message
+- get a specific attachment from a message
+- graph api
+- mail folders
+- list messages in a specific mail folder
 - calendar
+- enterprise
+- add attachment
+- reply to message
+- add an attachment
+- list messages in a folder
 - list email messages in the outlook mailbox
+- send draft
+- list email messages
+- reply all to message
+- copy a message to a different folder
+- forward
+- get a specific email message by id
+- move a message to a different folder
+- send a draft message
+- send a new email message directly
+- update a mail folder
+- create a new mail folder
+- list attachments
+- get folder
+- send a new email message
+- delete an attachment from a message
+- delete a message
+- get message
+- contacts
 slug: email-productivity
+source_filename: email-productivity.yaml
+source_heading: Capability Spec
 source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Outlook Email Productivity\"\n  description: \"Unified capability for Microsoft Outlook email productivity combining mail operations, folder management, and attachment handling via Microsoft Graph. Used by productivity teams, IT administrators, and automation engineers.\"\n  tags:\n    - Microsoft\n    - Outlook\n    - Email\n    - Productivity\n    - Graph API\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: graph-mail\n      location: ./shared/graph-mail.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: email-productivity-api\n      description: \"Unified REST API for Microsoft Outlook email productivity.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Email messages\"\n          operations:\n       \
   \     - method: GET\n              name: list-messages\n              description: \"List email messages\"\n              call: \"graph-mail.list-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-draft\n              description: \"Create a draft message\"\n              call: \"graph-mail.create-draft-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages/{id}\n          name: message\n          description: \"Single email message\"\n          operations:\n            - method: GET\n              name: get-message\n              description: \"Get a specific message\"\n              call: \"graph-mail.get-message\"\n              with:\n                message-id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n          \
   \  - method: PATCH\n              name: update-message\n              description: \"Update a message\"\n              call: \"graph-mail.update-message\"\n              with:\n                message-id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-message\n              description: \"Delete a message\"\n              call: \"graph-mail.delete-message\"\n              with:\n                message-id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages/{id}/send\n          name: send-draft\n          description: \"Send a draft message\"\n          operations:\n            - method: POST\n              name: send-draft\n              description: \"Send a draft message\"\n              call: \"graph-mail.send-draft-message\"\n              with:\n                message-id:\
