@@ -7,11 +7,7 @@ layout: capability
 naftiko_layer: service-anchored
 naftiko_partner: Mark McAllister
 name: JPMorgan Chase Jpmc Openapi Spec Aggregation Capability
-operations:
-- description: Find Chase OpenAPI specs across GitHub orgs/repos and AWS API Gateway.
-  method: GET
-  name: find-specs
-  path: /find-specs
+operations: []
 personas: []
 provider_name: JPMorgan Chase
 provider_slug: jpmorgan-chase
@@ -22,9 +18,9 @@ search_terms:
 - every
 - place
 slug: jpmc-openapi-spec-aggregation-capability
-source_filename: jpmc-openapi-spec-aggregation.yaml
+source_filename: jpmc-openapi-spec-aggregation-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: "1.0.0-alpha2"
 
   info:
@@ -167,17 +163,6 @@ source_yaml: |
                 from:
                   sourceNamespace: spec-aggregation-mcp
                   action: find-specs
-tags:
-- JPMorgan Chase
-- OpenAPI
-- GitHub
-- AWS API Gateway
-- Discovery
-tools:
-- description: Discover Chase OpenAPI specs across GitHub orgs/repos and AWS API Gateway in one call.
-  hints:
-    readOnly: true
-  name: find-specs
 ---
 
 A capability that crawls every place a Chase OpenAPI spec might live — GitHub Search across Chase orgs/repos, plus AWS API Gateway — and exposes the unified result as REST + MCP + Agent Skills so any developer or agent can discover specs across the whole estate from one tool call. His verbatim ask was "Pulling OpenAPIs from GitHub repos and AWS API Gateway" — this is the single capability that unifies both sources behind one discovery interface, callable from any surface his developers reach for (REST tool, IDE-attached MCP, or installed Skill).

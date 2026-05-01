@@ -17,6 +17,77 @@ search_terms:
 - wraps
 - github
 - rest
+slug: github-mcp-vs-sdk-side-by-side
+source_filename: github-mcp-vs-sdk-side-by-side.yaml
+source_heading: Capability Spec
+source_yaml: |-
+  naftiko: 1.0.0-alpha2
+  info:
+    title: Redmonk Github Mcp Vs Sdk Side By Side
+    description: A capability that wraps the GitHub REST API as both a generated SDK call path AND a Naftiko-exposed MCP tool over the same operation, used as the visual proof of "Capabilities Are the New Abstraction Layer."
+    tags:
+    - Redmonk
+    created: '2026-04-30'
+    modified: '2026-04-30'
+  binds:
+  - namespace: redmonk-env
+    description: Redmonk credentials.
+    keys:
+      REDMONK_API_KEY: REDMONK_API_KEY
+  capability:
+    consumes:
+    - namespace: redmonk
+      type: http
+      baseUri: https://api.redmonk.com
+      authentication:
+        type: bearer
+        token: '{{REDMONK_API_KEY}}'
+      resources:
+      - name: example
+        path: /example
+        operations:
+        - name: example-op
+          method: GET
+    exposes:
+    - type: rest
+      address: 0.0.0.0
+      port: 8080
+      namespace: github-mcp-vs-sdk-side-by-side-rest
+      description: REST API for Redmonk Github Mcp Vs Sdk Side By Side.
+      resources:
+      - name: example
+        path: /example
+        operations:
+        - method: GET
+          name: example-op
+          call: redmonk.example-op
+    - type: mcp
+      address: 0.0.0.0
+      port: 3010
+      namespace: github-mcp-vs-sdk-side-by-side-mcp
+      description: MCP server exposing Redmonk Github Mcp Vs Sdk Side By Side for AI agents.
+      tools:
+      - name: example
+        description: A capability that wraps the GitHub REST API as both a generated SDK call path AND a Naftiko-exposed MCP tool over the same operation, used as the visual proof of "Capabilities Are the New Abstraction Layer."
+        hints:
+          readOnly: true
+        call: redmonk.example-op
+    - type: skill
+      address: 0.0.0.0
+      port: 3011
+      namespace: github-mcp-vs-sdk-side-by-side-skills
+      description: Agent Skill bundle for Redmonk Github Mcp Vs Sdk Side By Side.
+      skills:
+      - name: github-mcp-vs-sdk-side-by-side
+        description: A capability that wraps the GitHub REST API as both a generated SDK call path AND a Naftiko-exposed MCP tool over the same operation, used as the visual proof of "Capabilities Are the New Abstraction Layer."
+        location: file:///opt/naftiko/skills/github-mcp-vs-sdk-side-by-side
+        allowed-tools: example
+        tools:
+        - name: example
+          description: A capability that wraps the GitHub REST API as both a generated SDK call path AND a Naftiko-exposed MCP tool over the same operation, used as the visual proof of "Capabilities Are the New Abstraction Layer."
+          from:
+            sourceNamespace: github-mcp-vs-sdk-side-by-side-mcp
+            action: example
 ---
 
 A capability that wraps the GitHub REST API as both a generated SDK call path AND a Naftiko-exposed MCP tool over the same operation, used as the visual proof of "Capabilities Are the New Abstraction Layer." The MonkCast episode explicitly framed SDK-vs-MCP as the abstraction question; a side-by-side over GitHub closes the loop.

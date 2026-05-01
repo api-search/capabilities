@@ -17,6 +17,77 @@ search_terms:
 - capability
 - collection
 - that
+slug: stealth-build-foundation-starter
+source_filename: stealth-build-foundation-starter.yaml
+source_heading: Capability Spec
+source_yaml: |-
+  naftiko: 1.0.0-alpha2
+  info:
+    title: Peter Townsend Stealth Stealth Build Foundation Starter
+    description: A scaffolded starter capability collection that gives a stealth team a "build on top of, not from scratch" engine for their integration layer.
+    tags:
+    - Peter Townsend Stealth
+    created: '2026-04-30'
+    modified: '2026-04-30'
+  binds:
+  - namespace: peter-townsend-stealth-env
+    description: Peter Townsend Stealth credentials.
+    keys:
+      PETER_TOWNSEND_STEALTH_API_KEY: PETER_TOWNSEND_STEALTH_API_KEY
+  capability:
+    consumes:
+    - namespace: peter-townsend-stealth
+      type: http
+      baseUri: https://api.peter-townsend-stealth.com
+      authentication:
+        type: bearer
+        token: '{{PETER_TOWNSEND_STEALTH_API_KEY}}'
+      resources:
+      - name: example
+        path: /example
+        operations:
+        - name: example-op
+          method: GET
+    exposes:
+    - type: rest
+      address: 0.0.0.0
+      port: 8080
+      namespace: stealth-build-foundation-starter-rest
+      description: REST API for Peter Townsend Stealth Stealth Build Foundation Starter.
+      resources:
+      - name: example
+        path: /example
+        operations:
+        - method: GET
+          name: example-op
+          call: peter-townsend-stealth.example-op
+    - type: mcp
+      address: 0.0.0.0
+      port: 3010
+      namespace: stealth-build-foundation-starter-mcp
+      description: MCP server exposing Peter Townsend Stealth Stealth Build Foundation Starter for AI agents.
+      tools:
+      - name: example
+        description: A scaffolded starter capability collection that gives a stealth team a "build on top of, not from scratch" engine for their integration layer.
+        hints:
+          readOnly: true
+        call: peter-townsend-stealth.example-op
+    - type: skill
+      address: 0.0.0.0
+      port: 3011
+      namespace: stealth-build-foundation-starter-skills
+      description: Agent Skill bundle for Peter Townsend Stealth Stealth Build Foundation Starter.
+      skills:
+      - name: stealth-build-foundation-starter
+        description: A scaffolded starter capability collection that gives a stealth team a "build on top of, not from scratch" engine for their integration layer.
+        location: file:///opt/naftiko/skills/stealth-build-foundation-starter
+        allowed-tools: example
+        tools:
+        - name: example
+          description: A scaffolded starter capability collection that gives a stealth team a "build on top of, not from scratch" engine for their integration layer.
+          from:
+            sourceNamespace: stealth-build-foundation-starter-mcp
+            action: example
 ---
 
 A scaffolded starter capability collection that gives a stealth team a "build on top of, not from scratch" engine for their integration layer. Stealth-stage companies value time-to-prototype; a declarative engine they don't have to write is a force multiplier.
