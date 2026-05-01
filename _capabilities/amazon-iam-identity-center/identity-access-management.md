@@ -28,46 +28,46 @@ personas: []
 provider_name: Amazon IAM Identity Center
 provider_slug: amazon-iam-identity-center
 search_terms:
-- list permission sets for assigning aws account access
-- list sso instances in the account
-- list user groups in the identity store
-- list instances
-- assign access to a user or group for an aws account
-- manage aws account access assignments
-- list permission sets
-- manage user groups
-- manages workforce identities and provisions access to aws accounts
-- create account assignment
 - access control
-- list groups
-- IAM Administrator
-- aws
-- assign account access
-- create a new group for organizing users
-- assigning aws account access to users and groups
-- list all permission sets
-- configures permission sets and account assignments
-- list users in the identity store
+- assign a permission set to a user or group for an aws account
+- create a new workforce user in iam identity center
+- list groups in the identity store
+- workforce identity
 - remove account access
 - manage workforce users
-- IT Administrator
-- create permission set
-- list users
-- create a permission set defining what access a user gets to an aws account
-- list groups in the identity store
-- manage permission sets for aws account access
-- workforce identity
-- iam
-- single sign-on
-- create user
-- assign a permission set to a user or group for an aws account
-- authentication
-- remove a user or group's access to an aws account
-- identity management
-- managing workforce user and group identities
-- create a new workforce user in iam identity center
 - list workforce users in the identity store
+- IAM Administrator
+- assigning aws account access to users and groups
+- create a new group for organizing users
+- single sign-on
+- manage user groups
+- aws
+- create permission set
+- list instances
+- list all permission sets
+- IT Administrator
+- create user
+- manages workforce identities and provisions access to aws accounts
+- manage aws account access assignments
+- managing workforce user and group identities
 - create group
+- iam
+- assign access to a user or group for an aws account
+- create a permission set defining what access a user gets to an aws account
+- remove a user or group's access to an aws account
+- list groups
+- list sso instances in the account
+- list permission sets for assigning aws account access
+- create account assignment
+- authentication
+- list users in the identity store
+- list user groups in the identity store
+- manage permission sets for aws account access
+- list users
+- list permission sets
+- configures permission sets and account assignments
+- assign account access
+- identity management
 slug: identity-access-management
 source_filename: identity-access-management.yaml
 source_heading: Capability Spec

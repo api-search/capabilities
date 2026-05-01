@@ -47,76 +47,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- create a new model, dataset, or space repository on the hub.
-- search dataset rows
 - get detailed information about a specific model.
-- delete repo
-- list and search datasets
-- search rows
-- list and search datasets on the hub.
-- manage models on the hub
-- get dataset details
-- get space
-- list and search models
-- create a new repository
-- datasets
-- filter dataset rows using a condition.
-- list and search spaces on the hub.
-- models
-- list dataset tags
-- get size information for a dataset.
-- filter dataset
-- create repositories
-- manage datasets on the hub
-- list and search spaces
-- get dataset statistics
-- get dataset parquet
-- list models
-- get model details
-- list and search ml models on the hugging face hub.
-- update settings for a repository.
-- get dataset
-- whoami
-- get model information
-- search for rows matching a query in a dataset.
-- get information about the authenticated user.
-- get the list of splits for a dataset.
-- list model tags
-- update repo settings
-- get model
-- search rows in a dataset
-- manage spaces on the hub
-- preview dataset rows
-- user information
-- hub
-- get model revision
-- list spaces
-- create repo
-- get croissant metadata for a dataset.
-- get dataset splits
-- list all available model tags grouped by type.
-- get detailed information about a specific space.
-- list datasets
-- search dataset
-- get dataset rows
-- hugging face
-- get the first rows of a dataset split for preview.
-- get parquet file urls for a dataset.
-- get authenticated user info
-- list all available dataset tags grouped by type.
-- check dataset validity
-- get dataset size
-- get croissant metadata
 - get rows from a dataset split with pagination.
-- data management
-- get rows
+- get the first rows of a dataset split for preview.
+- list and search spaces
+- get dataset
+- get model information
+- manage models on the hub
+- get model details
+- manage datasets on the hub
+- search rows
+- search rows in a dataset
 - get model information at a specific revision or branch.
-- get rows from a dataset
-- get detailed information about a specific dataset.
+- create a new model, dataset, or space repository on the hub.
+- list model tags
+- get dataset splits
+- list models
+- list dataset tags
+- list datasets
+- get dataset parquet
 - delete a repository from the hub.
-- get dataset information
-- check if a dataset is valid and available on the hub.
+- get model
+- get croissant metadata for a dataset.
+- get authenticated user info
+- hugging face
+- create a new repository
+- get parquet file urls for a dataset.
+- get detailed information about a specific space.
+- update repo settings
+- preview dataset rows
+- search for rows matching a query in a dataset.
+- models
+- delete repo
 - get statistical information about a dataset split.
+- filter dataset
+- get rows
+- update settings for a repository.
+- list and search datasets
+- data management
+- get model revision
+- list all available model tags grouped by type.
+- check dataset validity
+- get the list of splits for a dataset.
+- list and search spaces on the hub.
+- get dataset information
+- search dataset
+- get size information for a dataset.
+- list spaces
+- get information about the authenticated user.
+- get croissant metadata
+- whoami
+- filter dataset rows using a condition.
+- search dataset rows
+- get dataset rows
+- get space
+- hub
+- list and search models
+- list all available dataset tags grouped by type.
+- datasets
+- get dataset details
+- create repo
+- create repositories
+- list and search ml models on the hugging face hub.
+- list and search datasets on the hub.
+- get dataset size
+- get dataset statistics
+- manage spaces on the hub
+- check if a dataset is valid and available on the hub.
+- get rows from a dataset
+- user information
+- get detailed information about a specific dataset.
 slug: hub-and-data-management
 source_filename: hub-and-data-management.yaml
 source_heading: Capability Spec

@@ -21,25 +21,25 @@ personas: []
 provider_name: Azure Functions
 provider_slug: azure-functions
 search_terms:
-- list functions
-- list function resources
-- list binding resources
-- compute
-- list trigger resources
-- serverless
-- list
-- list function apps
-- list triggers
-- list bindings
-- event-driven
 - list functionapp resources
+- list binding resources
+- serverless
+- list functions
+- list function apps
 - resource management
 - functions
+- list trigger resources
 - list all resources
 - azure
-- cloud
-- azure resource management
+- list bindings
+- list function resources
+- list triggers
+- compute
 - management
+- cloud
+- event-driven
+- azure resource management
+- list
 slug: azure-functions-management
 source_filename: azure-functions-management.yaml
 source_heading: Capability Spec

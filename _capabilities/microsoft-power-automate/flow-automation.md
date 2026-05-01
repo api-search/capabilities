@@ -39,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- flow management
-- list environments
-- update flow
-- microsoft power automate
-- environment management
-- workflow
-- turn on flow
-- list all environments
-- get flow
-- update a flow's properties
-- create flow
-- microsoft
-- integration
+- Platform Administrator
 - get details of a specific connector
+- rpa
+- manages environments, connectors, and permissions
+- list all environments
 - automation
 - create a new automation flow
-- start/activate a flow
+- microsoft power automate
+- flow management
+- list environments
 - turn off flow
-- creates and manages automation flows
-- rpa
-- delete a flow
-- Automation Engineer
-- stop/deactivate a flow
-- get details of a specific flow
-- connector management
-- managing environments and available connectors
-- delete flow
-- flow lifecycle management
-- update a flow
-- low-code
-- manage flows, environments, and connectors
-- manages environments, connectors, and permissions
-- power platform
-- list all power automate environments
-- business process
-- creating, running, and managing automation flows
-- get flow details
 - get connector
-- list flows in an environment
-- list available connectors in an environment
+- stop/deactivate a flow
+- business process
+- workflow
+- flow lifecycle management
+- creating, running, and managing automation flows
 - list connectors
+- managing environments and available connectors
+- list all power automate environments
+- power platform
+- environment management
+- update a flow's properties
+- delete flow
+- low-code
+- get details of a specific flow
+- list available connectors in an environment
 - list flows
+- list flows in an environment
+- create flow
+- update a flow
+- get flow details
+- start/activate a flow
+- turn on flow
+- delete a flow
+- update flow
+- connector management
+- Automation Engineer
+- integration
+- get flow
+- manage flows, environments, and connectors
+- microsoft
 - create a flow
-- Platform Administrator
+- creates and manages automation flows
 slug: flow-automation
 source_filename: flow-automation.yaml
 source_heading: Capability Spec

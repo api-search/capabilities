@@ -59,62 +59,62 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- list environments
-- list permissions
-- get user
-- observability
-- get group
-- list all environments
-- permanently delete a group
-- get group details
-- delete group
-- get details of a specific group
-- list all permissions defined for the account
-- apm
-- application security
-- digital experience management
-- intelligence
-- list all users in the account
-- list all user groups in the account
-- manage user groups
-- update user profile and groups
-- platform administration
-- analytics
 - access control
-- list groups
-- identity
+- list all user groups in the account
+- create a new user and send an invitation email
+- get user
+- list all users in the account
+- delete a user
+- analytics
+- permanently delete a group
+- digital experience management
+- application security
 - list all groups
-- create a new user group
+- delete group
+- list all permissions defined for the account
+- observability
+- get, update, or delete a specific user
+- update user profile and groups
+- list all environments
 - automation
-- permanently remove a user from the account
-- delete user
-- update group
+- get user details
+- platform administration
+- list environments
+- intelligence
+- manage account users
+- manage user groups
 - list all users in the dynatrace account
-- dynatrace
+- query permissions
+- list all permissions for the account
+- update a user's profile and group memberships
+- permanently remove a user from the account
+- application performance monitoring
 - get details of a specific user
+- get, update, or delete a specific group
+- get details of a specific group
+- dynatrace
+- get group
+- create user
 - create a new group
 - create a new user
-- query permissions
-- create a new user and send an invitation email
-- update user
-- ai operations
+- delete user
 - update a group's name and description
-- update a user's profile and group memberships
-- list users
-- update group name and description
-- get, update, or delete a specific group
 - delete a group
-- get user details
-- delete a user
-- list all permissions for the account
-- create user
-- iam
-- list all environments associated with the account
-- application performance monitoring
-- manage account users
-- create group
-- get, update, or delete a specific user
+- ai operations
 - cloud monitoring
+- create group
+- identity
+- iam
+- list groups
+- update group name and description
+- apm
+- list permissions
+- create a new user group
+- get group details
+- update group
+- list users
+- update user
+- list all environments associated with the account
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

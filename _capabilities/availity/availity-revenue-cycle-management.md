@@ -40,56 +40,56 @@ personas: []
 provider_name: availity
 provider_slug: availity
 search_terms:
-- member eligibility verification
-- list eligibility inquiries
-- verify member insurance coverage and benefits
-- verify eligibility
-- find health plan payers available for transactions
-- submit a prior authorization request for a scheduled procedure
-- search claims by service date or member id for revenue tracking
-- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
-- eligibility
-- claim status inquiries
-- list supported payers
-- claims
-- submit claim status inquiry
-- determine if a payer requires prior authorization before service delivery
-- healthcare
-- service review and authorization request management
-- real-time insurance coverage and benefits verification
-- submit authorization
-- verify member eligibility
-- submit a claim status inquiry to check adjudication status
-- integrates availity apis into electronic health record and practice management systems
-- prior authorization requests
-- availity
-- verify patient insurance eligibility and benefits before service delivery
 - check prior auth required
-- search claims summary
-- Billing Specialist
-- check auth required
-- get claim detail
-- list claim statuses
-- track authorization status
-- get detailed claim information including adjudication and payment amounts
-- revenue cycle
-- unified workflow combining eligibility, claims, and authorization for rcm teams
-- Revenue Cycle Manager
-- track the status of a submitted prior authorization request
-- check claim status
-- list eligibility history
-- list eligibilities
-- submit prior authorization
-- lookup supported payers
-- supported health plan payers
-- submit prior authorization request
-- manages claim submission, status tracking, and patient billing
+- healthcare
+- integrates availity apis into electronic health record and practice management systems
+- verify patient insurance eligibility and benefits before service delivery
 - patient cost estimation and price transparency
-- claim status tracking and attachment submission
-- list previous eligibility inquiries for audit and follow-up
-- check if authorization is required
-- list payers
+- verify member insurance coverage and benefits
+- get claim detail
+- list eligibility inquiries
+- verify eligibility
+- list eligibility history
+- real-time insurance coverage and benefits verification
+- claim status inquiries
+- member eligibility verification
+- submit prior authorization request
+- track the status of a submitted prior authorization request
+- unified workflow combining eligibility, claims, and authorization for rcm teams
+- lookup supported payers
+- search claims by service date or member id for revenue tracking
+- eligibility
+- submit authorization
+- Revenue Cycle Manager
+- claims
+- availity
+- supported health plan payers
+- submit claim status inquiry
+- list eligibilities
 - list claim status inquiries
+- service review and authorization request management
+- submit a prior authorization request for a scheduled procedure
+- check claim status
+- Billing Specialist
+- determine if a payer requires prior authorization before service delivery
+- list payers
+- search claims summary
+- track authorization status
+- revenue cycle
+- manages claim submission, status tracking, and patient billing
+- list claim statuses
+- claim status tracking and attachment submission
+- verify member eligibility
+- submit prior authorization
+- check if authorization is required
+- prior authorization requests
+- submit a claim status inquiry to check adjudication status
+- list previous eligibility inquiries for audit and follow-up
+- list supported payers
+- check auth required
+- find health plan payers available for transactions
+- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
+- get detailed claim information including adjudication and payment amounts
 slug: availity-revenue-cycle-management
 source_filename: availity-revenue-cycle-management.yaml
 source_heading: Capability Spec

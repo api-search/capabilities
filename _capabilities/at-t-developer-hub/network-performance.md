@@ -35,58 +35,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- check if device is roaming
-- 5g network quality monitoring and on-demand qos enhancement
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- Identity Developer
-- developer building fraud prevention and identity verification using network signals
-- qod terminate session
-- device connectivity status
-- terminate an active quality on demand session and restore normal network quality
-- device status
-- connectivity
-- terminate qod session
-- edge computing
-- network-based fraud prevention and authentication using sim swap and number verification
-- device check roaming
-- network apis
-- IoT Engineer
-- get qod session
-- camara
-- create qod session
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- list qod sessions
-- get the current status of a quality on demand session
-- network-based security signals for fraud detection and identity verification
-- get qod session status
-- mobile or web developer building connectivity-aware applications
-- check if an at&t subscriber device is roaming on a partner network and get location
-- list active quality on demand sessions for the application
-- at&t
-- Security Developer
-- telecommunications
-- request enhanced qos for a device
-- delete qod session
-- device roaming status
-- qod get session
-- 5g
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- quality of service
-- check connectivity
 - network performance
+- quality of service
+- qod get session
+- device check roaming
+- network-based fraud prevention and authentication using sim swap and number verification
+- request enhanced qos for a device
+- get the current status of a quality on demand session
+- check if an at&t subscriber device is roaming on a partner network and get location
 - sim swap
-- check device connectivity and network connection type
-- device check connectivity
-- individual qod session
-- qod create session
-- App Developer
-- developer implementing passwordless or frictionless mobile authentication
-- list active qod sessions
-- mobile network-based authentication without otp
-- qod list sessions
-- check roaming
 - quality on demand session management
+- individual qod session
+- at&t
+- network-based security signals for fraud detection and identity verification
+- qod list sessions
+- network apis
+- App Developer
+- qod create session
+- device status
+- check if device is roaming
+- Identity Developer
+- list active quality on demand sessions for the application
+- terminate qod session
+- telecommunications
+- edge computing
+- camara
+- mobile or web developer building connectivity-aware applications
+- check device connectivity and network connection type
+- connectivity
+- create qod session
+- list qod sessions
+- terminate an active quality on demand session and restore normal network quality
+- list active qod sessions
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- mobile network-based authentication without otp
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- qod terminate session
+- Security Developer
+- developer building fraud prevention and identity verification using network signals
+- check connectivity
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- developer implementing passwordless or frictionless mobile authentication
+- 5g
+- delete qod session
+- device check connectivity
+- get qod session status
+- IoT Engineer
+- 5g network quality monitoring and on-demand qos enhancement
+- get qod session
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- check roaming
+- device connectivity status
+- device roaming status
 slug: network-performance
 source_filename: network-performance.yaml
 source_heading: Capability Spec

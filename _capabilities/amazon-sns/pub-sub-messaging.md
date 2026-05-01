@@ -31,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- set attributes on an sns topic
-- topic management
-- publish a message to a topic or endpoint
-- unsubscribe from a topic
-- notifications
-- unsubscribe
-- get subscription attributes
-- amazon
-- tag resource
-- publish a message to a topic
+- publish batch
+- delete an sns topic
 - check if a phone number has opted out of sms
-- list tags for an sns resource
-- email
-- create a subscription to a topic
-- list subscriptions by topic
-- aws
-- subscription management
+- amazon
+- topic management
+- set topic attributes
+- push notifications
+- list subscriptions for a specific topic
 - list subscriptions
-- list all sns topics
+- publish a message to a topic
+- create a subscription
+- sms
 - subscribe
-- get sms attributes
-- check phone opted out
 - create platform application
 - publish up to 10 messages in a batch
-- set topic attributes
-- get attributes of an sns topic
-- push notifications
+- set attributes on an sns topic
 - get sms messaging attributes
-- sms
-- create topic
-- messaging
-- delete an sns topic
-- delete topic
-- create a new sns topic
-- list tags
-- list subscriptions for a specific topic
-- get topic attributes
+- notifications
+- aws
+- get sms attributes
 - add tags to an sns resource
-- message publishing
-- publish batch
-- list all subscriptions
-- create a subscription
-- create a platform application for mobile push
-- get attributes of a subscription
-- pub/sub
+- tag resource
+- list tags
+- create topic
+- get topic attributes
+- check phone opted out
 - list topics
+- pub/sub
+- list subscriptions by topic
+- list all subscriptions
+- create a subscription to a topic
+- messaging
+- unsubscribe
+- list tags for an sns resource
+- list all sns topics
+- create a platform application for mobile push
+- subscription management
+- email
 - publish
+- get attributes of an sns topic
+- delete topic
+- get attributes of a subscription
+- create a new sns topic
+- message publishing
+- publish a message to a topic or endpoint
+- get subscription attributes
+- unsubscribe from a topic
 slug: pub-sub-messaging
 source_filename: pub-sub-messaging.yaml
 source_heading: Capability Spec

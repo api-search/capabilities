@@ -9,12 +9,12 @@ personas: []
 provider_name: Cloudability
 provider_slug: cloudability
 search_terms:
-- recommendations
+- cost optimization
+- finops
 - cloud cost management
 - reporting
-- cost optimization
+- recommendations
 - multi-cloud
-- finops
 slug: cloud-cost-finops
 source_filename: cloud-cost-finops.yaml
 source_heading: Capability Spec

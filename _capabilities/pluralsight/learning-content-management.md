@@ -110,53 +110,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- video training
-- retrieve the full public course catalog
-- query and manage content channels
+- course catalog with titles, descriptions, authors, and metadata
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
 - query lab catalog and activity data
-- query the general content catalog
+- query content slugs
+- courses
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- content tags and taxonomy for categorization
+- learning
+- structured sequences of courses organized around skills and roles
+- video training
+- query course catalog
+- content management
+- query and manage content channels
+- learning paths
+- query the program catalog including structured learning programs and curriculum offerings.
+- channels
+- structured learning programs and curriculum offerings
+- query the general content catalog including videos, guides, interactive courses, and other content types.
+- manage channels
 - query content tags and taxonomy data used to categorize and organize learning content.
-- engineering metrics
-- get public course catalog
-- query the program catalog
+- general content catalog including videos, guides, and interactive courses
+- query the course catalog
+- skills assessment
+- content channels for organizing and curating learning content
+- pluralsight
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- learning content
+- hands-on labs and practical exercises
+- query content catalog
 - public course catalog accessible without authentication
 - query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- query the program catalog including structured learning programs and curriculum offerings.
-- technology
-- query the course catalog
-- query content slugs
 - resolve content slugs to internal identifiers
-- content management
-- general content catalog including videos, guides, and interactive courses
-- content channels for organizing and curating learning content
-- query labs
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- manage channels
-- courses
-- query learning path catalog data
-- pluralsight
-- education
-- learning
-- query course catalog
 - query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
-- query the general content catalog including videos, guides, interactive courses, and other content types.
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- query content catalog
-- content tags and taxonomy for categorization
-- query programs
-- query tags
+- technology
+- engineering metrics
 - query content tags and taxonomy data
-- learning content
+- retrieve the full public course catalog
 - query learning paths
-- learning paths
-- structured learning programs and curriculum offerings
-- channels
-- skills assessment
-- hands-on labs and practical exercises
-- course catalog with titles, descriptions, authors, and metadata
-- structured sequences of courses organized around skills and roles
+- get public course catalog
+- query programs
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- query labs
+- education
+- query tags
+- query learning path catalog data
+- query the general content catalog
+- query the program catalog
 slug: learning-content-management
 source_filename: learning-content-management.yaml
 source_heading: Capability Spec

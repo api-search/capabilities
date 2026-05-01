@@ -15,34 +15,34 @@ provider_name: Amazon MediaStore
 provider_slug: amazon-mediastore
 search_terms:
 - broadcasting
+- describecontainer
+- get container policy
+- manage media processing jobs
+- media
+- developer building media processing applications
+- deletecorspolicy
 - workflow
-- engineer managing broadcast media workflows
+- create container
+- delete cors policy
+- media processing
+- Media Developer
+- aws
+- list jobs
+- delete lifecycle policy
+- getcontainerpolicy
+- deletecontainerpolicy
+- createcontainer
+- delete container policy
+- amazon mediastore media processing workflow
 - delete metric policy
+- deletemetricpolicy
+- deletecontainer
+- Broadcast Engineer
+- engineer managing broadcast media workflows
+- describe container
+- delete container
 - deletelifecyclepolicy
 - aws media processing and delivery
-- delete lifecycle policy
-- deletemetricpolicy
-- create container
-- aws
-- Broadcast Engineer
-- get container policy
-- delete cors policy
-- describe container
-- manage media processing jobs
-- createcontainer
-- media
-- amazon mediastore media processing workflow
-- delete container
-- deletecorspolicy
-- delete container policy
-- list jobs
-- developer building media processing applications
-- describecontainer
-- Media Developer
-- media processing
-- getcontainerpolicy
-- deletecontainer
-- deletecontainerpolicy
 slug: amazon-mediastore-media-workflow
 source_filename: amazon-mediastore-media-workflow.yaml
 source_heading: Capability Spec

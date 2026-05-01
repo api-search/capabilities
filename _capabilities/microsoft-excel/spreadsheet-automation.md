@@ -34,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- add a new data row to an excel table.
-- Business Analyst
-- list all charts in a worksheet.
+- list table rows
 - add a row to a table.
 - cell range operations.
-- list charts
-- chart operations.
-- microsoft excel
-- create worksheet
-- manage table rows.
-- list all rows in an excel table.
-- list rows in a table.
-- list table rows
-- office
-- microsoft 365
-- list all worksheets in the workbook.
-- microsoft
-- automation
-- list all worksheets.
 - get range
-- get a cell range.
-- list worksheets
-- manage worksheets.
 - automate excel workbook operations.
-- add table row
-- data analysis
-- create a new worksheet.
-- business users automating excel-based reporting.
-- update cell values in a specified range.
-- list charts.
-- spreadsheet automation
+- list charts
+- list rows in a table.
+- list all worksheets.
+- get a cell range.
 - Data Analyst
-- update range
-- analysts working with excel workbooks for data processing.
-- read cell values from a specified range.
-- create a new worksheet in the workbook.
-- data management
+- automation
 - spreadsheets
+- manage worksheets.
+- update cell values in a specified range.
+- business users automating excel-based reporting.
+- list worksheets
+- chart operations.
+- list all charts in a worksheet.
+- data management
+- add a new data row to an excel table.
+- list charts.
+- read cell values from a specified range.
+- microsoft 365
+- update range
+- create a new worksheet in the workbook.
+- list all rows in an excel table.
+- create worksheet
+- office
+- analysts working with excel workbooks for data processing.
+- Business Analyst
+- microsoft excel
+- create a new worksheet.
+- data analysis
+- manage table rows.
+- microsoft
+- spreadsheet automation
+- add table row
+- list all worksheets in the workbook.
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

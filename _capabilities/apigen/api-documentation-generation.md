@@ -22,28 +22,28 @@ personas: []
 provider_name: APIGen
 provider_slug: apigen
 search_terms:
-- writer managing and publishing api documentation sites.
 - list projects.
-- list projects
-- generation
-- create documentation project
-- deploy
-- create project
 - create project.
-- developer generating api documentation for php projects using apigen.
-- deploy documentation.
-- code
-- apigen
-- open source
-- documentation
 - list all apigen documentation projects.
-- create a new php api documentation project in apigen.
-- deploy an api documentation site for a project.
-- Technical Writer
 - PHP Developer
+- create a new php api documentation project in apigen.
 - api code generation
 - deploy documentation site
+- deploy documentation.
+- list projects
 - php
+- deploy an api documentation site for a project.
+- code
+- writer managing and publishing api documentation sites.
+- developer generating api documentation for php projects using apigen.
+- apigen
+- Technical Writer
+- open source
+- generation
+- documentation
+- create project
+- create documentation project
+- deploy
 slug: api-documentation-generation
 source_filename: api-documentation-generation.yaml
 source_heading: Capability Spec

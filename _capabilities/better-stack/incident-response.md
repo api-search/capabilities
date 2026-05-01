@@ -80,74 +80,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- get incident details
-- resolve an incident
-- get availability for a heartbeat monitor
-- acknowledge an active incident to indicate someone is working on it
-- engineer on-call rotation responsible for responding to incidents
-- managing team access and membership
-- incidents
-- sre engineer
-- observability
-- detection, acknowledgement, and resolution of service incidents
-- monitor management for uptime checks
-- list all heartbeats
-- list all uptime monitors
-- list all uptime monitors to check what is being monitored
-- delete monitor
-- list incidents with optional date and filter parameters
-- acknowledge incident
-- list monitors
-- create incident
-- logs
-- monitor availability metrics
-- platform
-- create monitor
-- get monitor availability
-- resolve an active incident
-- create a new uptime monitor for a url or api
-- uptime
-- uptime and availability monitoring for services and scheduled jobs
-- on-call
-- list all incidents
-- delete incident
-- communicating service health to customers and stakeholders
-- update a monitor
-- delete a monitor
-- get heartbeat availability
-- list heartbeats
-- get availability metrics for a monitor
-- resolve an active incident once the issue is fixed
-- on call engineer
-- heartbeat monitor management
-- get details for a specific uptime monitor
-- acknowledge an incident
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- single monitor operations
-- get monitor
-- get incident
-- monitoring
-- list all heartbeat monitors for scheduled jobs
-- incident management
-- single incident operations
-- list incidents
 - incident response
-- create a heartbeat monitor
-- get details for a specific incident
-- status
-- create heartbeat
+- resolve an incident
+- resolve an active incident
+- get availability for a heartbeat monitor
 - create a new uptime monitor
-- get monitor availability summary
-- resolve incident
-- sre
-- get monitor details
 - site reliability engineer managing infrastructure uptime and incident response
+- get availability metrics for a monitor
+- incidents
+- acknowledge an active incident to indicate someone is working on it
+- heartbeat monitor management
+- get incident details
+- observability
+- monitoring
+- monitor management for uptime checks
+- get monitor availability summary
 - acknowledge an active incident
-- heartbeats
+- sre
+- list all uptime monitors to check what is being monitored
+- logs
+- get monitor details
 - update monitor
+- create heartbeat
+- delete incident
+- detection, acknowledgement, and resolution of service incidents
+- update a monitor
+- get incident
+- list all incidents
+- single incident operations
+- heartbeats
+- list incidents with optional date and filter parameters
+- create incident
+- list monitors
+- acknowledge an incident
+- get details for a specific uptime monitor
+- single monitor operations
+- list all heartbeats
+- list incidents
+- create a new uptime monitor for a url or api
+- get details for a specific incident
+- on call engineer
+- incident management
+- engineer on-call rotation responsible for responding to incidents
+- communicating service health to customers and stakeholders
+- create a heartbeat monitor
+- sre engineer
+- get monitor availability
+- get heartbeat availability
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- create monitor
 - better stack
-- delete an incident
+- get monitor
 - create a manual incident
+- list all heartbeat monitors for scheduled jobs
+- uptime
+- on-call
+- status
+- resolve an active incident once the issue is fixed
+- delete a monitor
+- acknowledge incident
+- platform
+- monitor availability metrics
+- list heartbeats
+- delete an incident
+- managing team access and membership
+- uptime and availability monitoring for services and scheduled jobs
+- delete monitor
+- list all uptime monitors
+- resolve incident
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

@@ -27,53 +27,53 @@ personas: []
 provider_name: AT&T
 provider_slug: atandt
 search_terms:
-- mobile virtual network operator managing subscribers on at&t infrastructure
-- sms outbound messaging
-- get delivery status
-- fortune 100
-- Identity Developer
-- retrieve inbound sms messages for an at&t registered endpoint
-- att check sms delivery
-- network-based fraud detection and threat intelligence
-- sms inbound messages
-- mobile or web developer building consumer applications on at&t apis
-- wireline service ordering and qualification
-- oauth and network-based authentication
-- developer integrating at&t enterprise connectivity and ebonding apis
-- get inbound sms
-- send an sms message to one or more recipients via at&t network
-- developer implementing frictionless mobile authentication via at&t network
-- Enterprise Developer
-- sms messaging and oauth authentication for consumer and business applications
-- camara network-based fraud prevention using sim swap and number verification
-- at&t
-- sms and in-app messaging services
 - broadband
-- enterprise
-- Security Developer
-- telecommunications
+- wireline service ordering and qualification
 - engineer integrating enterprise wireline services and ebonding systems
-- sms delivery status
 - oauth token management
-- get token
-- att get inbound sms
-- wireline
-- sms
-- get inbound sms messages
-- wireless
-- 5g
-- messaging
-- att send sms
+- sms messaging and oauth authentication for consumer and business applications
 - device status, roaming, and qos management
-- developer building fraud prevention and identity verification using at&t network signals
+- mobile virtual network operator managing subscribers on at&t infrastructure
+- oauth and network-based authentication
+- send an sms message to one or more recipients via at&t network
 - network
-- send sms
+- mobile or web developer building consumer applications on at&t apis
+- at&t
+- sms
+- fortune 100
 - send sms message
 - App Developer
-- check delivery status of a sent at&t sms message
-- obtain oauth access token
+- att get inbound sms
+- Identity Developer
+- get delivery status
+- att send sms
+- camara network-based fraud prevention using sim swap and number verification
+- developer building fraud prevention and identity verification using at&t network signals
+- telecommunications
+- enterprise
+- wireless
 - get sms delivery status
+- sms inbound messages
+- check delivery status of a sent at&t sms message
+- network-based fraud detection and threat intelligence
+- get inbound sms messages
+- send sms
+- Security Developer
+- messaging
+- get token
+- obtain oauth access token
+- developer integrating at&t enterprise connectivity and ebonding apis
 - oauth
+- sms outbound messaging
+- sms delivery status
+- 5g
+- developer implementing frictionless mobile authentication via at&t network
+- wireline
+- retrieve inbound sms messages for an at&t registered endpoint
+- sms and in-app messaging services
+- get inbound sms
+- Enterprise Developer
+- att check sms delivery
 slug: wireless-messaging
 source_filename: wireless-messaging.yaml
 source_heading: Capability Spec

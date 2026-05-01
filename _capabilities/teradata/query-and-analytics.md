@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- Data Engineer
-- list available vantage systems for query execution.
-- integrates applications with teradata via rest apis.
-- create a new query session on a vantage system.
-- create session
-- teradata
-- list available vantage systems.
-- sql queries.
-- analytics
-- list query systems
-- get the status and results of a submitted query.
-- list cross-system query summaries from querygrid.
-- system and fabric configuration management.
-- database
-- get query status
-- execute a sql query against teradata vantage.
-- sql
 - manage querygrid data fabric infrastructure.
-- enterprise
-- available systems.
-- machine learning
+- execute query
+- list cross-system query summaries from querygrid.
+- teradata
 - executes queries and analyzes data across vantage systems.
-- health monitoring and issue detection.
+- Platform Administrator
+- analytics
+- list available vantage systems for query execution.
+- create a query session.
 - data warehousing
-- administers querygrid systems, nodes, and software.
-- query sessions.
+- integrates applications with teradata via rest apis.
+- available systems.
 - sql query execution and session management.
-- manages data fabric infrastructure and cross-system connectivity.
-- execute a sql query.
+- machine learning
 - Data Analyst
-- execute sql queries and analytics.
-- query
-- cloud
+- list available vantage systems.
+- create session
+- get the status and results of a submitted query.
 - list querygrid queries
 - Application Developer
+- health monitoring and issue detection.
 - data management
-- execute query
-- create a query session.
-- Platform Administrator
+- list query systems
+- enterprise
+- execute a sql query.
+- get query status
+- system and fabric configuration management.
+- Data Engineer
+- execute sql queries and analytics.
+- create a new query session on a vantage system.
+- database
+- execute a sql query against teradata vantage.
+- query sessions.
+- sql queries.
+- cloud
+- administers querygrid systems, nodes, and software.
+- sql
+- query
+- manages data fabric infrastructure and cross-system connectivity.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

@@ -78,41 +78,41 @@ provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
 - retrieve dora engineering metrics including deployment frequency, lead time for changes, change failure rate, and time to restore service.
-- flow
-- video training
-- retrieve pull request data, comments, and events across repositories.
-- engineering metrics
-- developer productivity
-- technology
-- retrieve dora engineering metrics
-- pull request and collaboration metrics for engineering teams
-- code-level engineering metrics and developer productivity data
-- commit data and aggregated metrics across repositories
-- dora
-- get collaboration metrics
-- retrieve commit data and metrics
-- retrieve code-level engineering metrics
-- get coding metrics
-- get dora metrics
-- courses
-- pluralsight
-- education
-- learning
-- ticket data from connected project management tools
-- retrieve pull request data and events
-- get commits
-- get tickets
-- collaboration
-- retrieve pull request and collaboration metrics for engineering teams with date range filtering.
-- retrieve collaboration metrics for engineering teams
-- dora engineering metrics including deployment frequency and lead time
 - retrieve ticket data including comments, events, and project associations from connected project management tools.
-- pull request data, comments, and events across repositories
-- retrieve code-level engineering metrics and developer productivity data with date range filtering.
-- get pull requests
-- retrieve ticket data and events
+- retrieve code-level engineering metrics
+- commit data and aggregated metrics across repositories
+- dora engineering metrics including deployment frequency and lead time
+- courses
+- video training
+- learning
+- developer productivity
+- code-level engineering metrics and developer productivity data
+- retrieve pull request and collaboration metrics for engineering teams with date range filtering.
+- pull request and collaboration metrics for engineering teams
+- get tickets
+- get dora metrics
 - retrieve commit data and aggregated commit metrics across repositories.
+- dora
+- get commits
 - skills assessment
+- collaboration
+- retrieve commit data and metrics
+- retrieve collaboration metrics for engineering teams
+- pluralsight
+- retrieve code-level engineering metrics and developer productivity data with date range filtering.
+- retrieve dora engineering metrics
+- get coding metrics
+- technology
+- engineering metrics
+- retrieve ticket data and events
+- get pull requests
+- pull request data, comments, and events across repositories
+- education
+- retrieve pull request data, comments, and events across repositories.
+- flow
+- retrieve pull request data and events
+- get collaboration metrics
+- ticket data from connected project management tools
 slug: engineering-metrics
 source_filename: engineering-metrics.yaml
 source_heading: Capability Spec

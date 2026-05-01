@@ -10,10 +10,10 @@ provider_name: Amazon WAF
 provider_slug: amazon-waf
 search_terms:
 - web application firewall
-- waf
 - security
-- aws
 - bot management
+- waf
+- aws
 - ddos protection
 slug: amazon-waf-capability
 source_filename: amazon-waf-capability.yaml

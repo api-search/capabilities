@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- health check endpoints
-- get liberty logging configuration
-- observability
-- ibm websphere
-- metrics
 - check if liberty server is ready for traffic
-- microservices
-- check if liberty server is alive
-- performance data
-- batch job monitoring
-- get open liberty overall health status
-- list jakarta batch job instances
-- get open liberty overall health
-- get performance data
-- get recent liberty log messages
-- get batch job
-- get was server health status
-- application server
-- get was health
-- get all metrics
-- get liberty log messages
-- j2ee
-- cloud native
-- list batch job instances
-- get liveness
-- middleware
-- get liberty metrics
-- get batch job instance details
-- get all open liberty metrics
-- get was performance monitoring data
-- get log config
-- list batch jobs
-- log management
-- monitoring
 - get log messages
-- enterprise java
-- get liberty admin metrics
-- get readiness
-- get liberty health
-- get was server health
+- j2ee
+- get was health
+- list batch job instances
+- get batch job instance details
+- health check endpoints
+- get open liberty overall health
 - metrics collection
+- metrics
+- observability
+- get liberty health
+- monitoring
+- get was performance monitoring data
+- list jakarta batch job instances
+- get liberty metrics
+- get log config
+- get liberty log messages
+- performance data
+- get liberty logging configuration
+- get liberty admin metrics
+- microservices
+- get all open liberty metrics
+- list batch jobs
+- get open liberty overall health status
+- middleware
+- batch job monitoring
+- get batch job
+- cloud native
+- application server
+- get was server health status
+- get was server health
+- ibm websphere
+- enterprise java
+- check if liberty server is alive
+- get recent liberty log messages
+- get readiness
+- get liveness
+- get all metrics
+- get performance data
+- log management
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

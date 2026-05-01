@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- generate speech from text
-- openai list deployments
-- list cognitive services accounts
-- openai
-- embedding operations
-- list available openai models
-- openai create completion
-- list cognitive accounts
-- openai create transcription
-- transcribe audio to text
-- create a chat completion using azure openai
-- chat completion operations
-- openai create speech
-- model listing
-- openai create embedding
-- openai create image
-- create a chat completion
-- openai create translation
-- create a text completion
-- generate images from text
-- t1
-- list model deployments
-- enterprise
-- api management
-- translate audio to english
-- list openai models
-- list available ai models
-- cognitive services accounts
-- ai
-- infrastructure as a service
-- cognitive services
-- platform as a service
-- cloud computing
 - cognitive list models
-- create text embeddings
-- azure
-- cloud
-- create embedding
-- cognitive list accounts
-- openai list models
-- create chat completion
 - openai create chat completion
+- list available ai models
+- create embedding
+- openai create transcription
+- t1
+- openai list deployments
+- create text embeddings
+- openai create speech
+- infrastructure as a service
+- create a text completion
+- list cognitive accounts
+- enterprise
+- generate images from text
+- cloud computing
+- azure
+- api management
+- list available openai models
+- openai create embedding
+- openai list models
+- list model deployments
+- translate audio to english
+- generate speech from text
+- create a chat completion using azure openai
+- model listing
+- create a chat completion
+- cognitive services
+- openai create completion
+- ai
+- cognitive list accounts
+- cloud
+- embedding operations
+- chat completion operations
+- create chat completion
+- openai
+- list cognitive services accounts
+- openai create translation
+- platform as a service
+- transcribe audio to text
+- openai create image
+- cognitive services accounts
+- list openai models
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

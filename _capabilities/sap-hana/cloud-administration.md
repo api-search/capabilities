@@ -39,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- individual instance operations.
-- delete instance
-- list instances
-- list all sap hana cloud instances.
-- create a new instance mapping.
-- create instance
-- list alert rules
-- list mappings
-- retrieve consumption metering data.
+- list alerts
 - get details of a specific instance.
-- create mapping
-- alert monitoring.
-- list triggered alert events for an instance.
-- analytics
-- in-memory
-- provision a new sap hana cloud instance.
-- sap hana
-- delete an instance mapping.
-- provision a new instance.
-- update instance
-- administration
-- list alert events.
-- update alert rules for an instance.
-- database
-- retrieve database performance metrics.
-- list all sap hana cloud service instances.
-- enterprise
+- retrieve consumption metering data.
 - list all instances in the inventory.
+- get instance details.
+- administration
+- delete a service instance permanently.
 - delete mapping
 - update an instance.
-- list instance mappings.
-- get database metrics.
-- monitoring
-- performance metrics.
-- get metrics
-- update alert rules
-- delete an instance.
-- cloud
-- instance lifecycle management.
-- delete a service instance permanently.
-- get instance
-- list alerts
-- update instance configuration.
+- analytics
+- list all sap hana cloud instances.
+- list all sap hana cloud service instances.
+- alert monitoring.
+- in-memory
 - list inventory
-- get instance details.
+- sap hana
+- monitoring
+- update alert rules
+- delete instance
+- delete an instance.
+- performance metrics.
+- update instance configuration.
+- get metrics
+- list alert rules
+- create mapping
+- list alert events.
+- list instances
 - list alert rules for an instance.
+- enterprise
+- list mappings
+- update alert rules for an instance.
+- individual instance operations.
+- list instance mappings.
+- provision a new instance.
+- retrieve database performance metrics.
+- get instance
+- delete an instance mapping.
+- update instance
+- list triggered alert events for an instance.
+- provision a new sap hana cloud instance.
+- create a new instance mapping.
+- database
+- create instance
 - get metering
+- cloud
+- get database metrics.
+- instance lifecycle management.
 slug: cloud-administration
 source_filename: cloud-administration.yaml
 source_heading: Capability Spec

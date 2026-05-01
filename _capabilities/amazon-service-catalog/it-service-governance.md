@@ -38,37 +38,37 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- create a new it service catalog portfolio
-- compliance
-- list all it service catalog portfolios
-- describe provisioned product
-- it governance
-- amazon service catalog
-- create an it service portfolio
-- search products
-- browse and search approved it products
-- list all it service portfolios
-- terminate provisioned product
-- aws
-- browse approved products
-- provision product
-- add a product to the catalog
-- list portfolios
-- describe portfolio
-- it service portfolio management
-- approved product catalog
-- check the status of a provisioned product
-- self-service provision an approved it product
-- self-service
-- create product
-- add a new product to the it service catalog
-- get details about an it service portfolio
-- cloud governance
-- terminate and decommission a provisioned product
 - service catalog
-- self-service product provisioning
-- provision an approved product
+- list portfolios
+- list all it service catalog portfolios
 - create portfolio
+- it governance
+- get details about an it service portfolio
+- add a product to the catalog
+- describe portfolio
+- add a new product to the it service catalog
+- create product
+- create a new it service catalog portfolio
+- provision an approved product
+- self-service product provisioning
+- aws
+- browse and search approved it products
+- compliance
+- browse approved products
+- describe provisioned product
+- search products
+- create an it service portfolio
+- amazon service catalog
+- self-service
+- approved product catalog
+- self-service provision an approved it product
+- it service portfolio management
+- terminate and decommission a provisioned product
+- terminate provisioned product
+- list all it service portfolios
+- provision product
+- check the status of a provisioned product
+- cloud governance
 slug: it-service-governance
 source_filename: it-service-governance.yaml
 source_heading: Capability Spec

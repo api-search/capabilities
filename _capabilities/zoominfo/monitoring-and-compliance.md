@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- lead generation
-- compliance
+- data
+- check compliance
+- get api usage data.
+- update an existing webhook subscription.
+- webhook target url validation.
+- create a new webhook subscription for data change notifications.
+- create webhook
+- validate target url
+- data compliance operations.
+- update webhook
+- monitoring
+- list webhooks
+- check data compliance status for specified contacts.
+- sales intelligence
+- validate a webhook target url.
+- create a new webhook subscription.
 - webhook subscription management.
 - b2b data
-- get api usage data and consumption metrics.
-- company data
-- get subscription types
-- create a new webhook subscription for data change notifications.
-- delete webhook
-- individual webhook management.
-- validate a webhook target url.
-- list all configured webhook subscriptions.
-- available webhook subscription types.
-- update webhook
-- get api usage data.
-- marketing intelligence
-- api usage tracking.
-- contact database
-- api usage
-- create a new webhook subscription.
-- list webhooks
-- data
 - check compliance status for specified contacts.
-- update an existing webhook subscription.
-- webhooks
-- check data compliance status for specified contacts.
-- list all webhook subscriptions.
-- validate target url
-- get usage
-- webhook target url validation.
-- sales intelligence
-- check compliance
-- monitoring
-- data compliance operations.
+- available webhook subscription types.
+- list all configured webhook subscriptions.
+- zoominfo
+- api usage tracking.
+- compliance
+- contact database
+- company data
+- contacts
+- get api usage data and consumption metrics.
+- get subscription types
+- lead generation
+- api usage
 - get available webhook subscription types.
+- delete webhook
 - validate a webhook target url is reachable.
 - b2b
+- marketing intelligence
+- webhooks
+- individual webhook management.
+- list all webhook subscriptions.
 - delete a webhook subscription.
-- create webhook
-- contacts
-- zoominfo
+- get usage
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

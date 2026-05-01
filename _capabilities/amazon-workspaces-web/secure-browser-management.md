@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- list all workspaces web secure browser portals.
-- list browser settings.
-- list ssl certificate trust stores.
-- create a new secure browser portal.
-- Security Engineer
-- browser policy and access control enforcement
-- virtual desktop
-- list browser settings
-- zero trust
-- list trust stores
 - create portal
-- aws
-- list portals
-- create a portal.
-- administration
-- list network settings for portal connectivity.
-- list secure browser portals.
-- network configuration management.
-- user settings management.
-- trust store management.
-- secure remote browser access infrastructure
-- IT Administrator
-- browser policy management.
-- portal management.
-- list trust stores.
-- manages workspaces web portals and configurations.
-- list browser policy settings for portals.
-- list network settings
-- list user settings
-- secure browser
-- end user computing
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- list user settings.
-- list user settings configurations for portals.
-- portal and resource provisioning
 - configures browser policies and access controls.
+- create a portal.
+- virtual desktop
+- browser policy management.
+- list browser settings
+- administration
+- trust store management.
+- zero trust
 - list network settings.
+- portal and resource provisioning
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- end user computing
+- aws
+- list browser settings.
+- list network settings for portal connectivity.
+- list user settings.
+- IT Administrator
+- manages workspaces web portals and configurations.
+- list ssl certificate trust stores.
+- secure browser
+- list portals
+- list trust stores
+- secure remote browser access infrastructure
+- browser policy and access control enforcement
+- list network settings
+- list all workspaces web secure browser portals.
+- network configuration management.
+- list trust stores.
+- Security Engineer
+- list secure browser portals.
+- user settings management.
+- list user settings
+- portal management.
+- create a new secure browser portal.
+- list user settings configurations for portals.
+- list browser policy settings for portals.
 slug: secure-browser-management
 source_filename: secure-browser-management.yaml
 source_heading: Capability Spec

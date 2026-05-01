@@ -24,39 +24,39 @@ personas: []
 provider_name: Amadeus Traveler Media
 provider_slug: amadeus-traveler-media
 search_terms:
-- destinations
-- retrieve detailed information about a specific tourist attraction or point of interest.
-- get hotel sentiment ratings.
-- hotels
-- get hotel ratings
-- Destination Content Manager
-- destination
-- travel
-- discovery
-- get poi
-- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
-- tourist attractions, pois, and destination information.
-- points of interest
-- search pois
-- photos
-- content manager building rich destination guides with attractions and ratings.
-- individual point of interest details.
-- hotel ratings and traveler sentiment data.
 - retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
-- find attractions and points of interest near a location.
-- Travel App Developer
-- get details for a specific point of interest.
-- search attractions
-- developer building destination discovery and travel planning applications.
-- get attraction details
-- media
-- get hotel sentiment ratings
-- discover destinations with pois, hotel ratings, and recommendations.
 - tourism
+- hotel ratings and traveler sentiment data.
+- destination
+- media
+- Destination Content Manager
+- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
+- get hotel sentiment ratings
+- destinations
+- search pois
+- find attractions and points of interest near a location.
+- retrieve detailed information about a specific tourist attraction or point of interest.
+- search attractions
+- Travel App Developer
+- discover destinations with pois, hotel ratings, and recommendations.
+- get hotel ratings
+- points of interest
+- get attraction details
+- developer building destination discovery and travel planning applications.
+- get details for a specific point of interest.
 - hotel sentiment ratings.
+- discovery
+- photos
 - content
-- points of interest discovery.
+- get hotel sentiment ratings.
+- get poi
 - amadeus
+- travel
+- tourist attractions, pois, and destination information.
+- points of interest discovery.
+- individual point of interest details.
+- content manager building rich destination guides with attractions and ratings.
+- hotels
 slug: destination-discovery
 source_filename: destination-discovery.yaml
 source_heading: Capability Spec

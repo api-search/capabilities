@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- card management
-- open banking
-- financial services
-- card issuance and management
-- retrieve account catalog data
-- create fulfillment order
-- mastercard
-- get card details
-- create a physical card fulfillment order
-- automatic billing updates
-- manage payment account
-- list bins
-- validate account
-- account management
-- query payment account reference to link tokens to accounts
-- get billing updates
-- payments
-- get account catalog
-- list available mastercard bins
-- payment account management
-- fraud detection
-- manage a payment account lifecycle
-- get payment account reference
 - issue card
-- credit cards
-- issue a new card
-- look up bin information
+- card issuance and management
+- mastercard
+- account management
+- manage a payment account
 - digital identity
-- bin lookup
-- look up bin information for a card
-- submit pan event
+- payment account management
 - issuers
-- lookup bin
+- query payment account reference to link tokens to accounts
+- validate account details
+- get billing updates
+- bin lookup
+- submit pan-related event for account level management
+- manage a payment account lifecycle
 - manage account
 - request updated card credentials
+- list bins
+- submit pan event
+- look up bin information
+- get card details
+- payments
+- fraud detection
+- card management
+- look up bin information for a card
+- open banking
+- get account catalog
+- retrieve account catalog data
+- get payment account reference
+- credit cards
 - request updated card credentials for card-on-file
-- submit pan-related event for account level management
+- financial services
+- create a physical card fulfillment order
+- manage payment account
+- automatic billing updates
+- lookup bin
+- list available mastercard bins
+- issue a new card
+- create fulfillment order
+- validate account
 - issue a new mastercard card
-- manage a payment account
-- validate account details
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

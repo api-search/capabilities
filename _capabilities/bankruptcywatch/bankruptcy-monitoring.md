@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- Loan Officer
-- court data
-- Bankruptcy Attorney
-- compliance
-- list monitors
-- retrieve docket entries for a bankruptcy case
-- get detailed information about a specific bankruptcy case
-- list claims register for a bankruptcy case
-- search bankruptcy cases
-- list case claims
-- attorney managing creditor representation in bankruptcy proceedings
-- bankruptcywatch
-- create bankruptcy monitor
-- get case docket
-- get bankruptcy case
-- pacer
-- lending
-- business or individual owed money by a bankruptcy filer
-- file a proof of claim for a bankruptcy case
-- create a bankruptcy monitoring alert for a debtor or entity
 - list all active bankruptcy monitoring alerts
-- us bankruptcy court cases and proceedings
-- file proof of claim
-- lender monitoring borrowers for bankruptcy filings
-- automated alerts for bankruptcy filings
-- legal
-- bankruptcy case research, claims management, and automated monitoring
-- bankruptcy
-- search for bankruptcy cases across all us bankruptcy court districts
 - creditor
+- us bankruptcy court cases and proceedings
+- list claims register for a bankruptcy case
+- automated alerts for bankruptcy filings
+- file proof of claim
+- attorney managing creditor representation in bankruptcy proceedings
+- Bankruptcy Attorney
+- retrieve docket entries for a bankruptcy case
+- search bankruptcy cases
+- pacer
+- court data
+- search for bankruptcy cases across all us bankruptcy court districts
+- get bankruptcy case
+- create bankruptcy monitor
+- list monitors
+- compliance
+- list case claims
+- Loan Officer
+- lender monitoring borrowers for bankruptcy filings
+- business or individual owed money by a bankruptcy filer
+- bankruptcywatch
+- lending
+- legal
+- bankruptcy
+- get case docket
+- create a bankruptcy monitoring alert for a debtor or entity
 - Creditor
+- get detailed information about a specific bankruptcy case
+- file a proof of claim for a bankruptcy case
+- bankruptcy case research, claims management, and automated monitoring
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

@@ -25,35 +25,35 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- amplitude upload events
-- amplitude
-- user behavior
-- event ingestion
-- analytics
-- a/b testing
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- identify api identifyUser
-- sendAttribution
-- identifyUser
-- export raw event data and manage behavioral cohorts. for data analysts.
-- unified workflow for sending events and identifying users. for data engineers.
-- privacy compliance
-- data governance
-- http v2 api uploadEvents
-- analyzes data and manages cohorts
-- amplitude send attribution data
-- manage event schemas and chart annotations. for data governance teams.
-- runs experiments and feature flags
-- amplitude identify a user
-- feature flags
-- experimentation
-- uploadEvents
-- manages privacy and compliance
-- attribution api sendAttribution
 - scim provisioning and privacy compliance. for it admins and compliance teams.
-- ingests and exports event data
-- identity management
+- event ingestion
+- uploadEvents
+- sendAttribution
+- amplitude
+- analytics
+- identifyUser
+- a/b testing
+- runs experiments and feature flags
 - product analytics
+- attribution api sendAttribution
+- amplitude identify a user
+- data governance
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- manage event schemas and chart annotations. for data governance teams.
+- amplitude send attribution data
+- unified workflow for sending events and identifying users. for data engineers.
+- user behavior
+- export raw event data and manage behavioral cohorts. for data analysts.
+- analyzes data and manages cohorts
+- feature flags
+- privacy compliance
+- http v2 api uploadEvents
+- amplitude upload events
+- manages privacy and compliance
+- experimentation
+- ingests and exports event data
+- identify api identifyUser
+- identity management
 slug: amplitude-analytics-ingestion
 source_filename: amplitude-analytics-ingestion.yaml
 source_heading: Capability Spec

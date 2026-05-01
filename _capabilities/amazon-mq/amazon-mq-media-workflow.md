@@ -15,34 +15,34 @@ provider_name: Amazon MQ
 provider_slug: amazon-mq
 search_terms:
 - broadcasting
-- describeuser
-- describe user
-- createuser
-- workflow
-- engineer managing broadcast media workflows
-- listbrokers
-- amazon mq media processing workflow
-- aws media processing and delivery
-- createtags
-- Broadcast Engineer
-- aws
-- listconfigurations
-- list configurations
-- create tags
-- listtags
+- createconfiguration
 - manage media processing jobs
 - media
-- create configuration
-- list tags
-- list brokers
-- createbroker
-- create user
-- list jobs
-- create broker
 - developer building media processing applications
+- createuser
+- create broker
+- list configurations
+- listbrokers
+- workflow
+- describeuser
 - media processing
 - Media Developer
-- createconfiguration
+- aws
+- list jobs
+- list tags
+- createtags
+- create configuration
+- create user
+- listconfigurations
+- listtags
+- list brokers
+- createbroker
+- create tags
+- describe user
+- Broadcast Engineer
+- engineer managing broadcast media workflows
+- aws media processing and delivery
+- amazon mq media processing workflow
 slug: amazon-mq-media-workflow
 source_filename: amazon-mq-media-workflow.yaml
 source_heading: Capability Spec

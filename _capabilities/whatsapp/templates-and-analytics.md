@@ -35,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- marketing
-- get template analytics
-- retrieves template analytics.
-- lists all message templates for a waba.
-- message templates
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- deletes a message template. deleting by name removes all language variants.
+- conversation analytics and reporting.
 - analytics
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- updates an existing message template.
-- reporting
-- individual message template management.
-- message template management.
-- get conversation analytics
-- template performance analytics.
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 - creates a new message template.
 - retrieves conversation analytics.
+- individual message template management.
+- lists all message templates for a waba.
 - list message templates
-- delete message template
-- create message template
-- whatsapp
-- update message template
+- marketing
+- message template management.
 - deletes a message template.
+- updates an existing message template.
+- reporting
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- update message template
+- whatsapp
+- delete message template
 - creates a new message template. templates must be approved by meta before use.
-- conversation analytics and reporting.
+- get conversation analytics
+- get template analytics
+- message templates
+- template performance analytics.
+- create message template
+- deletes a message template. deleting by name removes all language variants.
+- retrieves template analytics.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
 slug: templates-and-analytics
 source_filename: templates-and-analytics.yaml
 source_heading: Capability Spec

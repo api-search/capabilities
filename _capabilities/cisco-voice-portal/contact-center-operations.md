@@ -45,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- list cdrs
-- telephony
-- list sessions
-- cisco
 - system health
-- get call server health
-- list all active calls on the cvp call server
-- individual call details
-- list deployed cvp applications
-- list deployed applications
-- active call management
-- list deployed vxml applications
-- get real-time call statistics
-- get call
-- get health
-- list devices
-- list applications
-- vxml session monitoring
-- list call detail records from the reporting server
-- list managed devices
-- vxml
-- list call detail records
-- call detail records
-- get statistics
-- check cvp call server health status
-- contact center
-- list configured dialed number patterns
-- application management
-- list active vxml sessions
-- list managed cvp devices
-- ivr
-- device management
-- list dialed number patterns
-- list active calls
-- get details of a specific active call
-- list vxml applications
-- list active sessions
-- real-time statistics
-- voice portal
-- get call details
 - voice
+- ivr
+- cisco
+- list managed devices
+- real-time statistics
+- list deployed applications
+- application management
+- list call detail records from the reporting server
+- telephony
+- get health
+- list call detail records
+- get call details
+- voice portal
+- list cdrs
+- list configured dialed number patterns
+- get details of a specific active call
+- get call
+- list vxml applications
+- list deployed vxml applications
+- list deployed cvp applications
+- individual call details
+- list sessions
+- list active calls
+- list dialed number patterns
+- list applications
+- check cvp call server health status
+- call detail records
+- get call server health
+- list devices
+- list all active calls on the cvp call server
+- list managed cvp devices
+- device management
+- list active vxml sessions
+- list active sessions
+- vxml
+- contact center
+- get statistics
+- active call management
+- vxml session monitoring
+- get real-time call statistics
 slug: contact-center-operations
 source_filename: contact-center-operations.yaml
 source_heading: Capability Spec

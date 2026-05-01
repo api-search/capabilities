@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- models list
-- create speech
-- images edit
+- chat completion
+- audio create transcription
+- images create variation
 - audio create translation
-- openai
-- audio create speech
+- text embeddings
+- generate a conversational response using gpt models
+- list all available openai models
+- create embedding
+- generate an image from a text prompt using dall-e
+- transcribe audio to text using whisper
+- t1
+- generate speech
+- image generation
+- list models
 - available models
+- content generation
+- get details of a specific model
 - text to speech
 - generate audio from text using tts models
-- list models
-- generate a conversational response using gpt models
-- create a chat completion
-- chat create completion
-- t1
+- translate audio to english text
+- models list
+- artificial intelligence
+- create speech
 - models get
 - edit an existing image with a text prompt
-- images create
-- images create variation
-- generate speech
-- artificial intelligence
-- ai
-- generate an image from a text prompt using dall-e
-- create embeddings
-- image generation
-- translate audio to english text
-- chat completion
-- content generation
-- audio create transcription
-- text embeddings
-- create image
-- list all available openai models
-- transcribe audio to text using whisper
-- generate vector embeddings for text input
-- get details of a specific model
-- create a variation of an existing image
-- generate an image
 - large language models
-- create embedding
+- chat create completion
+- images edit
+- create embeddings
+- create a variation of an existing image
+- generate vector embeddings for text input
+- create a chat completion
+- create image
 - embeddings create
+- ai
 - create chat completion
+- openai
+- images create
+- generate an image
+- audio create speech
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

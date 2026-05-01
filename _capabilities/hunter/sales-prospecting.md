@@ -61,68 +61,68 @@ personas: []
 provider_name: Hunter
 provider_slug: hunter
 search_terms:
-- lead generation
-- get lead
-- list leads lists
-- delete a lead.
-- update lead
-- enrich company data from domain.
-- find the most likely email for a person at a company.
-- update a lead.
-- company enrichment.
-- get account information and usage.
-- get combined person and company data.
 - discover companies
-- lead management.
-- enrich company
-- create a new lead.
-- email
-- email verification
-- delete leads list
-- get account
-- list campaigns
-- enrich combined
-- verify email
-- update leads list
-- hunter
-- enrich email
-- get lead list details.
-- contact discovery
-- domain search
-- list all email campaigns.
-- get lead details.
-- company discovery.
-- discover companies.
-- enrich personal data from email.
-- update a lead list.
-- find email
-- sales intelligence
-- prospecting
-- delete a lead list.
-- create a lead.
-- sales prospecting
-- list all leads.
-- create leads list
-- count emails for a domain.
-- search for email addresses by domain.
-- verify emails.
-- count emails
-- list all lead lists.
-- create a new lead list.
-- search for emails by domain.
-- create lead
-- get leads list
-- list leads
 - find email addresses.
-- search emails by domain.
-- find email for a person.
-- verify email deliverability.
+- verify emails.
+- get leads list
+- get account
+- update leads list
+- delete a lead list.
+- update a lead list.
+- verify email
+- hunter
 - individual lead management.
+- lead management.
+- company enrichment.
+- list campaigns
+- create a new lead.
+- get account information and usage.
+- sales prospecting
 - discover companies matching criteria.
-- enrich personal data from email address.
-- email enrichment.
-- email outreach
+- enrich combined
+- list all lead lists.
+- sales intelligence
+- find email
 - delete lead
+- create a new lead list.
+- find the most likely email for a person at a company.
+- email enrichment.
+- delete leads list
+- contact discovery
+- find email for a person.
+- enrich personal data from email address.
+- email outreach
+- list all leads.
+- get lead list details.
+- prospecting
+- list leads lists
+- get lead
+- search for emails by domain.
+- count emails for a domain.
+- lead generation
+- count emails
+- verify email deliverability.
+- enrich company
+- get combined person and company data.
+- email verification
+- create lead
+- update lead
+- create leads list
+- list all email campaigns.
+- company discovery.
+- list leads
+- search for email addresses by domain.
+- enrich personal data from email.
+- enrich email
+- email
+- delete a lead.
+- create a lead.
+- update a lead.
+- search emails by domain.
+- domain search
+- get lead details.
+- discover companies.
+- enrich company data from domain.
 slug: sales-prospecting
 source_filename: sales-prospecting.yaml
 source_heading: Capability Spec

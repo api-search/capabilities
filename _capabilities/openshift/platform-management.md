@@ -15,37 +15,37 @@ personas: []
 provider_name: OpenShift
 provider_slug: openshift
 search_terms:
-- list services
-- get project details
-- project management
-- containers
-- list images
-- list image streams
-- list builds
-- list projects
-- platform
-- list storage
-- kubernetes
-- list deployments
-- list installed operators
-- list pods
 - paas
-- list routes
-- get pod
-- cloud native
-- enterprise
-- list operators
+- list installed operators
 - list configmaps
-- list cluster nodes
-- devops
+- project management
+- list image streams
 - get project
-- list config maps
+- list storage
+- list deployments
 - list persistent volumes
-- openshift
+- list builds
+- kubernetes
 - list openshift projects
-- get pod details
-- list nodes
+- list projects
+- devops
+- get project details
+- list operators
 - ci/cd
+- enterprise
+- list services
+- list images
+- list routes
+- list nodes
+- list config maps
+- cloud native
+- get pod details
+- get pod
+- openshift
+- list pods
+- containers
+- platform
+- list cluster nodes
 slug: platform-management
 source_filename: platform-management.yaml
 source_heading: Capability Spec

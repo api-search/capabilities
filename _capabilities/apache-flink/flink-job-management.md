@@ -27,43 +27,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- job management
-- get job
-- metrics, checkpoints, and cluster health monitoring
-- Data Engineer
-- shutdown cluster
 - stream processing
-- get job metrics
-- get details of a specific job
-- get flink job
+- operators managing the flink cluster and ensuring job reliability
+- engineers submitting and monitoring flink streaming and batch jobs
 - job submission, tracking, and lifecycle management
-- apache flink
-- real-time analytics
-- shut down the flink cluster
-- job performance metrics
-- stateful computing
-- data engineering
-- taskmanager management
+- list all taskmanagers in the flink cluster
 - list all flink jobs
-- get detailed status and information for a specific flink job
-- batch processing
-- list all flink streaming and batch jobs
-- open source
-- manage and monitor flink streaming and batch jobs
-- apache
 - list taskmanagers
 - monitoring
-- operators managing the flink cluster and ensuring job reliability
-- get performance metrics for a flink job
-- Platform Operator
-- big data
-- get metrics for a flink job
-- list flink jobs
-- list jobs
-- engineers submitting and monitoring flink streaming and batch jobs
-- flink job management
 - list all taskmanagers
-- list all taskmanagers in the flink cluster
+- get performance metrics for a flink job
+- get details of a specific job
+- apache flink
+- shut down the flink cluster
+- get detailed status and information for a specific flink job
+- taskmanager management
+- Platform Operator
+- list jobs
+- list all flink streaming and batch jobs
+- get job metrics
+- shutdown cluster
+- job performance metrics
+- batch processing
+- real-time analytics
+- get metrics for a flink job
+- manage and monitor flink streaming and batch jobs
+- metrics, checkpoints, and cluster health monitoring
+- Data Engineer
+- get job
+- get flink job
+- job management
+- big data
+- apache
+- stateful computing
+- data engineering
+- open source
+- list flink jobs
+- flink job management
 slug: flink-job-management
 source_filename: flink-job-management.yaml
 source_heading: Capability Spec

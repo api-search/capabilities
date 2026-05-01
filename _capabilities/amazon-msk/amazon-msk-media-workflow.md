@@ -15,34 +15,34 @@ provider_name: Amazon MSK
 provider_slug: amazon-msk
 search_terms:
 - broadcasting
-- list clusters
-- workflow
-- engineer managing broadcast media workflows
 - batchdisassociatescramsecret
 - aws media processing and delivery
-- listclusters
-- create cluster v2
-- Broadcast Engineer
-- aws
-- listconfigurations
-- list configurations
-- batch associate scram secret
-- listscramsecrets
-- list scram secrets
-- createcluster
-- create cluster
 - manage media processing jobs
-- listclustersv2
 - media
-- list clusters v2
-- batch disassociate scram secret
-- createclusterv2
-- amazon msk media processing workflow
-- list jobs
 - developer building media processing applications
+- create cluster
+- list configurations
+- workflow
+- list scram secrets
 - media processing
+- create cluster v2
+- amazon msk media processing workflow
+- aws
 - Media Developer
+- list jobs
+- list clusters
+- createclusterv2
+- listconfigurations
+- batch disassociate scram secret
+- listscramsecrets
+- batch associate scram secret
+- Broadcast Engineer
+- listclustersv2
+- engineer managing broadcast media workflows
+- createcluster
 - batchassociatescramsecret
+- list clusters v2
+- listclusters
 slug: amazon-msk-media-workflow
 source_filename: amazon-msk-media-workflow.yaml
 source_heading: Capability Spec

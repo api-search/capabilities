@@ -67,50 +67,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- finance
-- finance approval requests
-- crm
-- supply chain management
-- retrieve general ledger journal entries.
-- retrieve budget definitions and data.
-- hcm
-- forecast data and projections
-- list pending approvals
-- budgeting
-- budget definitions and data
-- list ar items
-- performance analytics reports
-- campus solutions
-- accounting
-- peoplesoft
-- list journal entries
-- list expense reports
-- list budgets
-- list analytics reports
-- peopletools platform services.
-- expense reports
-- approve, deny, or push back a finance approval request.
-- retrieve performance analytics reports.
-- list vouchers
-- forecasting
-- retrieve forecast data and projections.
-- general ledger
-- list forecasts
-- retrieve accounts payable vouchers.
-- campus solutions.
 - accounts payable vouchers
-- process approval
+- crm
+- approve, deny, or push back a finance approval request.
+- erp
+- hcm
+- list analytics reports
+- general ledger
+- peoplesoft
 - retrieve accounts receivable items.
-- retrieve expense reports.
+- list ar items
 - enterprise software
-- retrieve pending finance approval requests.
-- human capital management.
+- retrieve accounts payable vouchers.
+- list vouchers
+- performance analytics reports
+- finance approval requests
+- campus solutions.
+- financial and supply chain management.
+- list journal entries
+- accounting
+- retrieve expense reports.
+- retrieve general ledger journal entries.
 - accounts receivable items
+- finance
+- campus solutions
+- budget definitions and data
+- retrieve budget definitions and data.
+- individual approval operations
+- list pending approvals
+- list expense reports
+- forecast data and projections
+- process approval
+- supply chain management
+- peopletools platform services.
+- list budgets
+- retrieve performance analytics reports.
+- human capital management.
+- retrieve pending finance approval requests.
+- budgeting
 - financial management
 - general ledger journal entries
-- financial and supply chain management.
-- individual approval operations
-- erp
+- expense reports
+- retrieve forecast data and projections.
+- list forecasts
+- forecasting
 slug: finance-and-accounting
 source_filename: finance-and-accounting.yaml
 source_heading: Capability Spec

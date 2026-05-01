@@ -43,29 +43,29 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- video training
-- engineering metrics
-- skill iq
-- query practice exam attempt data and results
-- technology
-- practice exams
-- skill iq assessments, scores, and competency measurements
-- query and manage role iq assessments and role associations
-- manage role iq
-- courses
 - query practice exams
-- pluralsight
-- query skills assessment
 - practice exam attempts, scores, and results
-- education
-- query practice exam attempt data including scores and results.
-- learning
-- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
 - query skill assessments and skill iq scores
-- role iq
+- query practice exam attempt data and results
+- courses
+- video training
+- learning
 - query skill assessments, skill iq scores, assessment catalogs, and competency measurements.
-- role iq assessments, role catalogs, and skill assignments
+- query skills assessment
+- skill iq
+- manage role iq
+- query practice exam attempt data including scores and results.
+- skill iq assessments, scores, and competency measurements
 - skills assessment
+- query and manage role iq assessments and role associations
+- pluralsight
+- query and manage role iq assessments, role catalogs, skill assignments, and user/team role associations.
+- role iq
+- role iq assessments, role catalogs, and skill assignments
+- technology
+- engineering metrics
+- education
+- practice exams
 slug: skills-assessment
 source_filename: skills-assessment.yaml
 source_heading: Capability Spec

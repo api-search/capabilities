@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- list supported crops
-- list all supported crop types.
-- supported crop types for diagnosis
-- crop advisory
-- check remaining api credits for plant diagnosis requests.
-- agricultural consultants providing plant health recommendations
-- Precision Agriculture Developer
-- ai-powered plant disease diagnosis and crop advisory
-- field specialists diagnosing plant health issues in crops
 - Agronomist
-- plant health diagnosis.
-- check credit balance
-- crop protection
-- agriculture
-- Crop Advisor
-- ai diagnosis
-- credit balance and api usage monitoring
-- disease and pest identification from plant images
-- list all crop types supported by agrio's ai diagnosis service.
-- diagnose plant diseases and pests from an uploaded image.
-- ai
 - plant disease
-- diagnose plant disease
-- get current credit balance.
-- agrio
-- list crops
 - account credit management.
-- supported crop catalog.
+- agriculture
 - submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
 - get credit
-- pest detection
-- diagnose
+- disease and pest identification from plant images
+- supported crop catalog.
 - developers building crop advisory and farm management applications
+- list crops
+- Precision Agriculture Developer
+- supported crop types for diagnosis
+- credit balance and api usage monitoring
+- check credit balance
+- list all supported crop types.
+- list supported crops
+- diagnose plant diseases and pests from an uploaded image.
+- diagnose
+- Crop Advisor
+- check remaining api credits for plant diagnosis requests.
+- field specialists diagnosing plant health issues in crops
+- get current credit balance.
+- list all crop types supported by agrio's ai diagnosis service.
+- ai diagnosis
+- agricultural consultants providing plant health recommendations
+- ai
+- pest detection
+- diagnose plant disease
+- plant health diagnosis.
+- agrio
+- ai-powered plant disease diagnosis and crop advisory
+- crop protection
+- crop advisory
 slug: crop-protection
 source_filename: crop-protection.yaml
 source_heading: Capability Spec

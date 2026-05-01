@@ -39,47 +39,47 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- lead generation
-- uses sales navigator for lead generation and crm sync.
-- marketing
-- subscribe for lead notification webhooks.
-- demand generation
-- stream conversion events
-- pull lead form responses.
-- validate user's organization role for lead access.
-- business
-- professional networking
-- careers
-- validate organization role
-- b2b advertising, audience targeting, and campaign analytics.
-- authentication, sharing, and verification for consumer apps.
-- get conversion rules
-- recruiting
-- stream conversion events.
-- get sponsored accounts
-- data portability and advertiser transparency for dma.
-- fetch full lead data by id.
-- job posting, recruiting, and applicant tracking.
-- sales intelligence, lead management, and crm integration.
-- create conversion rule
-- get lead forms for a sponsored account.
-- create a new conversion rule.
-- social media
-- get lead by id
-- posts jobs and manages candidates through ats integrations.
-- archives communications for regulatory compliance.
-- subscribe lead notifications
-- tracks employee learning activity and completions.
-- conversions
-- fetch existing conversion rules.
-- get lead forms
 - manages b2b ad campaigns and audience targeting on linkedin.
-- get lead form responses
-- message archiving and regulatory communications governance.
-- employee development tracking and content access.
-- get the user's sponsored accounts.
+- tracks employee learning activity and completions.
+- stream conversion events
 - integrates linkedin authentication and sharing into applications.
+- professional networking
+- get sponsored accounts
+- get lead forms
+- job posting, recruiting, and applicant tracking.
+- uses sales navigator for lead generation and crm sync.
+- get lead form responses
 - linkedin
+- employee development tracking and content access.
+- stream conversion events.
+- marketing
+- validate user's organization role for lead access.
+- get the user's sponsored accounts.
+- data portability and advertiser transparency for dma.
+- validate organization role
+- demand generation
+- get lead forms for a sponsored account.
+- posts jobs and manages candidates through ats integrations.
+- recruiting
+- lead generation
+- archives communications for regulatory compliance.
+- create conversion rule
+- fetch full lead data by id.
+- get conversion rules
+- subscribe for lead notification webhooks.
+- authentication, sharing, and verification for consumer apps.
+- business
+- social media
+- message archiving and regulatory communications governance.
+- b2b advertising, audience targeting, and campaign analytics.
+- subscribe lead notifications
+- careers
+- fetch existing conversion rules.
+- pull lead form responses.
+- sales intelligence, lead management, and crm integration.
+- create a new conversion rule.
+- conversions
+- get lead by id
 slug: lead-generation-and-conversions
 source_filename: lead-generation-and-conversions.yaml
 source_heading: Capability Spec

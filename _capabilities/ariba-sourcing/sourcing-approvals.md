@@ -35,57 +35,57 @@ personas: []
 provider_name: Ariba Sourcing
 provider_slug: ariba-sourcing
 search_terms:
-- get sourcing document
-- supply chain
-- approvals
-- pending approval tasks.
-- approval group members.
+- get approval task details.
 - deny task
-- approval task state changes.
-- get details for a specific sap ariba sourcing approval task including approvers.
-- approvable documents.
-- list pending approvals
-- approve task
-- get task details
-- submit action
-- list pending approval tasks.
-- sap
-- get document
-- manages strategic sourcing events, rfx processes, and contract workflows.
 - approve an sap ariba sourcing approval task on behalf of an authorized approver.
-- external approval workflow for sourcing projects, contracts, and supplier management
-- get details about an sap ariba approvable sourcing document, rfx event, or contract workspace.
+- approve task
+- supplier management projects requiring external approval.
 - approval task details.
-- reviews and approves or denies sourcing documents, events, and contracts.
-- auctions
-- get task
-- list changes
-- approval actions.
-- list members
-- list group members.
-- contracts
 - submit approve or deny action.
-- contract workspaces and contract content requiring approval.
+- get approvable document details.
+- sourcing
+- submit action
 - list approval changes
 - supplier management
-- Procurement Approver
+- approval task state changes.
 - list members of an sap ariba approval group to identify eligible approvers.
-- ariba
-- procurement
-- sourcing
-- get approval task details.
-- list pending sap ariba sourcing approval tasks awaiting action.
+- external approval workflow for sourcing projects, contracts, and supplier management
+- pending approval tasks.
+- list changes
 - rfx events, auctions, and sourcing projects requiring approval.
-- b2b
+- sap
+- list group members.
 - Sourcing Manager
-- list sap ariba sourcing approval tasks that have recently changed state.
-- list changed approval tasks.
-- rfx
-- supplier management projects requiring external approval.
-- list approval group members
+- approvals
+- approval actions.
+- get task
+- contracts
 - list pending
+- get details for a specific sap ariba sourcing approval task including approvers.
+- ariba
+- list sap ariba sourcing approval tasks that have recently changed state.
+- approvable documents.
+- list pending approvals
+- list approval group members
+- contract workspaces and contract content requiring approval.
+- approval group members.
+- get details about an sap ariba approvable sourcing document, rfx event, or contract workspace.
+- reviews and approves or denies sourcing documents, events, and contracts.
+- list members
+- auctions
+- b2b
+- get task details
 - deny an sap ariba sourcing approval task on behalf of an authorized approver.
-- get approvable document details.
+- procurement
+- list pending approval tasks.
+- rfx
+- Procurement Approver
+- list changed approval tasks.
+- list pending sap ariba sourcing approval tasks awaiting action.
+- get sourcing document
+- get document
+- manages strategic sourcing events, rfx processes, and contract workflows.
+- supply chain
 slug: sourcing-approvals
 source_filename: sourcing-approvals.yaml
 source_heading: Capability Spec

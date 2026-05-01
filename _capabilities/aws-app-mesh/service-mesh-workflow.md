@@ -34,42 +34,42 @@ personas: []
 provider_name: AWS App Mesh
 provider_slug: aws-app-mesh
 search_terms:
-- list all app mesh service meshes in the aws account
-- networking
-- create a new service mesh
-- microservices
-- service mesh lifecycle management
-- virtual node management
-- list virtual nodes
 - configuring routing rules for service-to-service communication
+- virtual service management
+- Platform Engineer
 - list virtual routers in a mesh
-- create mesh
 - list virtual services in a mesh
+- list virtual nodes in a service mesh
 - managing gateway routing for external traffic ingress
+- list virtual services in a service mesh
+- networking
+- virtual gateway management
+- list virtual nodes in a mesh
 - list virtual gateways for ingress traffic management
-- creating and configuring service meshes and their components
-- envoy
+- manages service mesh infrastructure and inter-service communication
 - aws app mesh
 - aws
-- virtual service management
-- virtual router management
-- list all service meshes
-- manage app mesh service meshes, virtual nodes, services, routers, and gateways
-- virtual gateway management
-- Platform Engineer
-- list virtual nodes in a mesh
-- manages service mesh infrastructure and inter-service communication
-- deprecated
-- service mesh
-- list virtual services in a service mesh
-- list virtual nodes in a service mesh
-- list virtual services
-- create a new app mesh service mesh
-- list virtual routers
 - list virtual gateways
-- list virtual gateways in a mesh
-- list meshes
+- microservices
+- list virtual routers
+- create mesh
+- list virtual services
 - list virtual routers and their routing rules
+- virtual node management
+- manage app mesh service meshes, virtual nodes, services, routers, and gateways
+- service mesh lifecycle management
+- list virtual gateways in a mesh
+- envoy
+- virtual router management
+- deprecated
+- create a new app mesh service mesh
+- list virtual nodes
+- creating and configuring service meshes and their components
+- create a new service mesh
+- list meshes
+- list all app mesh service meshes in the aws account
+- list all service meshes
+- service mesh
 slug: service-mesh-workflow
 source_filename: service-mesh-workflow.yaml
 source_heading: Capability Spec

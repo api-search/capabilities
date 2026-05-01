@@ -24,49 +24,49 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- query traffic analytics for an environment.
-- shadow apis discovered by observation jobs.
-- list environments
-- observability
-- get traffic analytics
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- developer portal
-- microservices
-- list all shadow api observation jobs configured to detect undocumented apis in traffic.
-- API Product Manager
-- list shadow apis discovered by an observation job — apis found in live traffic that are not yet documented or governed.
-- list deployments
-- analytics
-- list observed shadow apis.
+- manager packaging api products and managing developer relationships.
+- traffic analytics stats by dimension.
+- list individual http operations observed for a specific shadow api — method, path, count, and parameters seen in traffic.
+- list all environments (dev, staging, prod) to identify which to query analytics for.
+- discover shadow apis
+- list all proxy deployments across environments to correlate with traffic anomalies.
 - list observed api operations
 - API Governance Lead
-- list all proxy deployments across environments to correlate with traffic anomalies.
 - architect overseeing api platform strategy and governance across the organization.
-- integrations
 - monetization
-- google cloud
-- Platform Architect
+- analytics
+- list shadow apis discovered by an observation job — apis found in live traffic that are not yet documented or governed.
+- observability
 - shadow api observation jobs.
-- list all environments (dev, staging, prod) to identify which to query analytics for.
-- hybrid
-- enterprise
-- list individual http operations observed for a specific shadow api — method, path, count, and parameters seen in traffic.
-- api management
-- query api traffic analytics for an apigee environment by dimension (e.g. apis, apiproducts, devs, apps). returns request counts, latency, and error rates.
-- get stats
-- discover shadow apis
-- api governance
-- manager packaging api products and managing developer relationships.
+- list deployments
+- list environments
 - apigee
-- engineer managing api proxies, deployments, and policies in apigee.
-- list observation jobs.
-- API Platform Engineer
-- traffic analytics stats by dimension.
-- api gateway
-- list observed apis
-- list observation jobs
+- get traffic analytics
+- API Product Manager
+- query api traffic analytics for an apigee environment by dimension (e.g. apis, apiproducts, devs, apps). returns request counts, latency, and error rates.
+- microservices
+- enterprise
+- query traffic analytics for an environment.
+- list all shadow api observation jobs configured to detect undocumented apis in traffic.
+- api management
+- Platform Architect
 - api hub
+- list observed apis
+- integrations
+- list observed shadow apis.
+- shadow apis discovered by observation jobs.
+- api governance
+- google cloud
+- engineer managing api proxies, deployments, and policies in apigee.
 - shadow api discovery
+- list observation jobs.
+- api gateway
+- hybrid
+- get stats
+- API Platform Engineer
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list observation jobs
+- developer portal
 slug: analytics-traffic-observability
 source_filename: analytics-traffic-observability.yaml
 source_heading: Capability Spec

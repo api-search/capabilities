@@ -34,53 +34,53 @@ personas: []
 provider_name: Amazon Mechanical Turk
 provider_slug: amazon-mechanical-turk
 search_terms:
-- labor
-- human intelligence
-- review and manage worker assignment submissions.
-- create hit
-- mechanical turk
-- get account balance
-- approve assignment
-- approve a completed worker assignment and release payment.
-- crowdsourcing
 - tasks
-- amazon
-- list all assignments submitted for a hit.
-- reject a completed worker assignment with feedback.
-- create a new hit for crowdsourced task execution.
-- list hits
-- get detailed information about a specific hit including status and completion metrics.
-- get hit
+- create hit
+- human intelligence
+- approve assignment
 - list qualification types used to filter and target the right worker pool.
-- list qualification types
-- Researcher
-- get the current prepaid balance in the mturk account.
-- academic or market researcher coordinating human intelligence tasks for studies and surveys.
-- creating and managing hits for crowdsourced work.
-- aws
-- list assignments for hit
+- get detailed information about a specific hit including status and completion metrics.
+- review and manage worker assignment submissions.
+- amazon
+- reject assignment
+- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- get hit
 - list all worker assignments submitted for a specific hit for review.
-- list all hits in the requester account.
-- get the current prepaid balance available in the mturk requester account.
-- manage worker bonuses and notifications.
-- account balance and status.
-- machine learning
-- send a bonus payment to a worker.
-- send notification messages to specific workers.
+- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
+- Researcher
 - send a bonus payment to a worker for exceptional task completion.
-- managing account balance and prepaid funds.
+- list all hits in the requester account.
+- list all active and reviewable hits in the requester account.
+- machine learning
+- data scientist using mturk for data labeling, annotation, and validation tasks.
+- create a new hit for crowdsourced task execution.
+- list qualification types
+- academic or market researcher coordinating human intelligence tasks for studies and surveys.
+- crowdsourcing
+- send a bonus payment to a worker.
+- managing worker qualifications, blocks, bonuses, and notifications.
+- aws
+- account balance and status.
+- get the current prepaid balance in the mturk account.
+- labor
+- mechanical turk
+- list assignments for hit
+- send bonus
+- get the current prepaid balance available in the mturk requester account.
+- list assignments
+- notify workers
+- creating and managing hits for crowdsourced work.
 - Data Scientist
 - approve a completed assignment and release payment.
-- data scientist using mturk for data labeling, annotation, and validation tasks.
-- managing worker qualifications, blocks, bonuses, and notifications.
-- create a new human intelligence task for crowdsourced annotation, transcription, or research.
-- list all active and reviewable hits in the requester account.
-- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
-- list assignments
+- managing account balance and prepaid funds.
 - create and manage human intelligence tasks.
-- send bonus
-- notify workers
-- reject assignment
+- get account balance
+- send notification messages to specific workers.
+- reject a completed worker assignment with feedback.
+- approve a completed worker assignment and release payment.
+- manage worker bonuses and notifications.
+- list all assignments submitted for a hit.
+- list hits
 slug: crowdsourcing-workflow
 source_filename: crowdsourcing-workflow.yaml
 source_heading: Capability Spec

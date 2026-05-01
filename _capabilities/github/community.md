@@ -56,76 +56,76 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- fork gist
-- list team discussions
-- listFollowersOfUser
-- get user
-- source control
-- get organization
-- user profile
-- gist management
-- unfollow user
-- create a gist comment
-- discussions
-- get a user profile
-- individual gist operations
-- organization members
-- get a gist
-- list organization members
-- organization profile
-- create a team discussion
-- platform
-- getUser
-- follow user
-- follow a user
 - list starred gists
-- listUsers
-- list org members
-- star repository
-- unfollow a user
-- getAnOrganization
-- software development
-- t1
-- list public gists
-- create gist comment
-- listDiscussions
-- fork a gist
-- community
-- listOrganizationMembers
-- star a gist
-- get a team discussion
-- pipelines
-- update gist
-- get discussion
-- getgist
-- get a user
-- list starred repositories
-- updategist
-- listPublicGists
-- user listing
-- get an organization
-- list gist comments
-- list starred
-- code
-- update a gist
-- list users
-- get gist
-- organizations
-- list followers
-- listStarredGists
-- gists
-- star gist
-- users
-- user followers
-- createDiscussion
-- list discussions
-- github
 - star a repository
+- get organization
+- listStarredGists
+- get user
+- star gist
+- gists
+- listFollowersOfUser
+- listPublicGists
+- user followers
+- listOrganizationMembers
+- t1
+- create a gist comment
+- gist management
+- get a user
+- getgist
+- organization members
+- follow a user
+- get an organization
+- community
+- pipelines
 - create discussion
-- team discussions
+- createDiscussion
+- list starred repositories
+- list public gists
+- getUser
+- unfollow a user
+- discussions
+- fork a gist
+- unfollow user
+- updategist
+- create a team discussion
 - list followers of a user
+- listDiscussions
+- follow user
+- get a team discussion
+- get a gist
+- getAnOrganization
+- get a user profile
+- star repository
+- list org members
+- code
+- list organization members
+- list team discussions
+- star a gist
+- software development
+- list followers
+- get gist
+- list gist comments
+- create gist comment
+- individual gist operations
+- user listing
+- get discussion
+- source control
+- github
+- user profile
 - starred gists
+- team discussions
+- organizations
+- update gist
+- list discussions
+- users
+- platform
+- update a gist
+- organization profile
 - search users
+- list starred
+- list users
+- listUsers
+- fork gist
 slug: community
 source_filename: community.yaml
 source_heading: Capability Spec

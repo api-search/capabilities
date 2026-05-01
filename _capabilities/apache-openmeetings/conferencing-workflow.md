@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- list session recordings
-- authenticate a user to openmeetings
-- create room
-- close a conference room
-- manages conference rooms, invites participants, and handles recordings
-- whiteboard
-- get upcoming meetings
+- apache openmeetings
+- calendar and scheduling
 - login
-- session recordings
-- list groups
-- list all user groups
-- check health
-- Meeting Organizer
-- list public rooms
-- conferencing
-- web conferencing
-- user management
-- create a new conference room
-- unified workflow for managing conferencing sessions
-- conference room management
-- list all public conference rooms
-- close room
-- get recordings by type
-- video conferencing
-- open source
-- apache
+- get room hash
 - create a new room
-- list all registered users
-- list users
-- get upcoming calendar meetings
-- list recordings
-- collaboration
+- check system health status
+- unified workflow for managing conferencing sessions
+- video conferencing
+- user management
 - generate a secure room access hash
 - System Administrator
-- check system health status
-- list upcoming
-- get room hash
-- calendar and scheduling
+- list public rooms
+- session recordings
+- get upcoming meetings
+- conference room management
+- manages conference rooms, invites participants, and handles recordings
+- collaboration
+- conferencing
+- Meeting Organizer
+- close a conference room
+- web conferencing
+- list all registered users
+- whiteboard
+- close room
+- check health
+- list recordings
 - manages users, groups, and system health
+- create room
 - list rooms
-- apache openmeetings
+- apache
+- get recordings by type
+- list session recordings
+- list groups
+- open source
+- list all public conference rooms
+- create a new conference room
+- list upcoming
+- get upcoming calendar meetings
+- list users
+- list all user groups
+- authenticate a user to openmeetings
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

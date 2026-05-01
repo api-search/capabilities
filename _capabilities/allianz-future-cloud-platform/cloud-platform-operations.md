@@ -35,55 +35,55 @@ personas: []
 provider_name: Allianz Future Cloud Platform
 provider_slug: allianz-future-cloud-platform
 search_terms:
-- trigger a deployment
-- list services
+- engineer responsible for maintaining and evolving the allianz future cloud platform
+- list platform namespaces
+- Platform Engineer
+- gitops-based deployment pipelines for microservice updates
 - observability
-- cloud platform
-- infrastructure provisioning
-- financial services
-- Insurance Product Developer
-- get cpu, memory, request rate, error rate, and latency metrics for a service
-- list all platform services
-- end-to-end platform operations for devops teams
-- registration and lifecycle management of insurance microservices
-- platform engineering
-- deploy service
-- kubernetes
-- list deployments
 - DevOps Engineer
-- get platform metrics
+- list deployments
+- list deployment history
+- list all microservices registered on the allianz future cloud platform
+- get details and status of a specific platform service
+- deploy platform service
+- engineer deploying and operating insurance microservices on the platform
+- kubernetes
 - microservice lifecycle management
+- registration and lifecycle management of insurance microservices
+- get metrics
+- register service
+- insurance
+- register a new insurance microservice on the kubernetes platform
+- devops
+- list deployment history for a platform service including version and status
+- trigger a deployment
+- provision redis, rds, msk, or s3 resources for insurance microservices
+- enterprise
+- platform engineering
+- list kubernetes namespaces and their team ownership on the platform
+- get platform metrics
+- infrastructure provisioning
+- get platform service
+- list services
+- get service metrics
+- end-to-end platform operations for devops teams
+- list service deployments
+- deploy service
+- cloud resource provisioning for microservice dependencies
+- list platform services
+- developer building insurance microservices on the allianz future cloud platform
+- get cpu, memory, request rate, error rate, and latency metrics for a service
 - trigger a rolling, blue-green, or canary deployment for a microservice
 - metrics, monitoring, and alerting for platform health
-- provision resource
-- engineer deploying and operating insurance microservices on the platform
-- register platform service
-- provision redis, rds, msk, or s3 resources for insurance microservices
-- list platform services
-- get details and status of a specific platform service
-- platform observability metrics
-- cloud resource provisioning for microservice dependencies
-- get service metrics
-- enterprise
-- engineer responsible for maintaining and evolving the allianz future cloud platform
-- gitops-based deployment pipelines for microservice updates
-- devops
-- provision infrastructure resource
-- Platform Engineer
-- insurance
-- get metrics
-- get platform service
-- deploy platform service
-- list deployment history
-- list service deployments
-- register service
-- list kubernetes namespaces and their team ownership on the platform
+- list all platform services
 - register a new microservice
-- register a new insurance microservice on the kubernetes platform
-- list deployment history for a platform service including version and status
-- developer building insurance microservices on the allianz future cloud platform
-- list platform namespaces
-- list all microservices registered on the allianz future cloud platform
+- provision resource
+- financial services
+- provision infrastructure resource
+- register platform service
+- Insurance Product Developer
+- platform observability metrics
+- cloud platform
 - deployment management for services
 slug: cloud-platform-operations
 source_filename: cloud-platform-operations.yaml

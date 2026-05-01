@@ -34,65 +34,65 @@ personas: []
 provider_name: Veritas InfoScale
 provider_slug: veritas-infoscale
 search_terms:
-- alert management and health monitoring
-- get cluster
-- list clusters
-- Infrastructure Engineer
-- switch a service group to another system
-- get details of a specific cluster
-- list all cluster nodes
-- list systems
-- get cluster details
-- list all vxvm disk groups
-- disaster recovery
-- volume management
-- list all active cluster alerts
-- disk group management
-- list service groups
-- get service group
-- list disk groups
-- disk groups, volumes, and snapshot operations
-- alert management
-- monitors cluster health, alerts, and performs failover operations.
-- high availability
-- acknowledge a cluster alert
-- get service group details
-- unified infrastructure management workflow for managing clusters, service groups, storage volumes, and alerts.
-- veritas infoscale
-- list all active alerts
-- create volume
-- manages disk groups, volumes, snapshots, and storage capacity.
-- online service group
-- single cluster operations
-- switch service group
-- bring a service group online on a system
-- resize volume
-- service group management
-- get disk group
-- resize a storage volume
-- manages cluster configurations, service groups, and high availability operations.
-- get disk group details
-- take a service group offline
-- list all clusters
-- list all disk groups
-- cluster lifecycle management
-- list all infoscale clusters
-- create a new storage volume
-- create a volume snapshot
-- virtualization
-- storage management
-- clustering
-- list volumes in a disk group
 - list alerts
+- manages cluster configurations, service groups, and high availability operations.
 - acknowledge alert
-- list volumes
-- Storage Administrator
+- list all infoscale clusters
+- single cluster operations
+- service group management
+- get details of a specific cluster
+- get disk group details
+- create volume
+- get service group
+- high availability
+- list all disk groups
+- virtualization
+- list all cluster nodes
+- get cluster details
+- list all clusters
+- take a service group offline
+- switch service group
+- manages disk groups, volumes, snapshots, and storage capacity.
 - cluster lifecycle, service groups, and node management
-- data management
+- resize a storage volume
+- get service group details
+- get disk group
+- acknowledge a cluster alert
+- Storage Administrator
+- clustering
+- get cluster
+- disk group management
+- switch a service group to another system
+- list volumes
+- monitors cluster health, alerts, and performs failover operations.
+- create a volume snapshot
+- list disk groups
+- veritas infoscale
+- disk groups, volumes, and snapshot operations
 - list all service groups in a cluster
+- unified infrastructure management workflow for managing clusters, service groups, storage volumes, and alerts.
+- data management
+- alert management and health monitoring
+- list service groups
+- list clusters
+- storage management
 - create snapshot
-- offline service group
+- list systems
+- resize volume
+- volume management
 - list service groups in a cluster
+- list volumes in a disk group
+- Infrastructure Engineer
+- disaster recovery
+- cluster lifecycle management
+- list all active cluster alerts
+- list all vxvm disk groups
+- online service group
+- offline service group
+- list all active alerts
+- create a new storage volume
+- bring a service group online on a system
+- alert management
 slug: infrastructure-management
 source_filename: infrastructure-management.yaml
 source_heading: Capability Spec

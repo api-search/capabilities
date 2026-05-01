@@ -23,39 +23,39 @@ personas: []
 provider_name: Apify
 provider_slug: apify
 search_terms:
+- monitor actor runs.
 - data extraction
-- list actors.
-- Web Scraping Engineer
-- Data Engineer
-- web scraping
-- abort a running apify actor.
-- browse and run actors.
-- get run status.
-- retrieve scraped data.
-- data aggregation
-- AI Developer
-- get run
-- get dataset items.
-- check the status of an apify actor run.
-- list actors
 - get scraped data
 - web automation
 - run an apify actor with custom input to scrape a website or automate a task.
-- automation
-- engineer building and running production web scrapers on apify.
-- crawling
-- abort actor run
-- list all available apify actors for web scraping and automation.
-- monitor actor runs.
-- browser automation
 - run actor
-- actors
-- get dataset items
-- engineer extracting structured data from websites for analytics pipelines.
-- developer using web scraping to collect training data or rag document sources.
+- Web Scraping Engineer
+- crawling
+- web scraping
+- abort a running apify actor.
+- automation
+- get run status.
+- list all available apify actors for web scraping and automation.
 - apify
-- retrieve structured scraped data from an apify dataset.
+- check the status of an apify actor run.
+- engineer building and running production web scrapers on apify.
+- list actors.
 - get run status
+- Data Engineer
+- list actors
+- data aggregation
+- get dataset items.
+- AI Developer
+- engineer extracting structured data from websites for analytics pipelines.
+- actors
+- retrieve structured scraped data from an apify dataset.
+- get dataset items
+- retrieve scraped data.
+- abort actor run
+- browse and run actors.
+- browser automation
+- get run
+- developer using web scraping to collect training data or rag document sources.
 slug: web-scraping-automation
 source_filename: web-scraping-automation.yaml
 source_heading: Capability Spec

@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
+- real-time communication
+- serverless
+- security
+- images list variants
+- list all videos.
+- edge
+- images
+- images create direct upload
+- media
+- video
+- cloudflare
+- delete a video.
 - list live streaming inputs.
+- list image variants.
+- dns
+- edge computing
+- object storage
+- artificial intelligence
+- get image details.
+- list images
+- stream create direct upload
+- upload a video from url.
+- video management.
+- get video details.
+- create a direct upload url for images.
+- images list images
+- stream get video
+- stream upload video
+- web performance
 - cdn
-- images upload image
+- ai gateway
+- containers
+- stream delete video
+- create a live streaming input.
+- stream list videos
+- list all images.
+- list videos.
+- create a direct upload url.
+- list images.
+- upload an image.
+- delete an image.
+- api gateway
+- cloud
 - stream create live input
 - stream list live inputs
-- security
-- containers
-- list images
-- delete a video.
-- upload a video from url.
-- list images.
 - platform
-- edge computing
-- serverless
-- delete an image.
-- get image details.
-- ai gateway
-- list videos.
-- images list images
-- object storage
-- video management.
-- image management.
-- stream upload video
-- ddos protection
-- stream delete video
-- get video details.
-- list all videos.
-- images create direct upload
 - images delete image
-- stream create direct upload
-- web performance
-- create a direct upload url.
-- images
-- images list variants
-- artificial intelligence
-- media
-- real-time communication
-- list all images.
-- stream get video
-- cloudflare
-- video
-- edge
-- stream list videos
-- upload an image.
-- cloud
-- dns
-- images get image
-- create a direct upload url for images.
-- api gateway
-- list image variants.
+- image management.
+- ddos protection
 - list videos
-- create a live streaming input.
+- images upload image
+- images get image
 slug: media-and-content
 source_filename: media-and-content.yaml
 source_heading: Capability Spec

@@ -10,15 +10,15 @@ personas: []
 provider_name: Amazon CloudHSM
 provider_slug: amazon-cloudhsm
 search_terms:
+- Security Engineer
 - cloudhsm
 - amazon cloudhsm
-- compliance
 - security
-- cryptography
-- aws
-- Security Engineer
-- amazon web services
 - hsm
+- amazon web services
+- aws
+- cryptography
+- compliance
 slug: cryptographic-key-management
 source_filename: cryptographic-key-management.yaml
 source_heading: Capability Spec

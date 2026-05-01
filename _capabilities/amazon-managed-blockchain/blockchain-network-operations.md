@@ -34,38 +34,38 @@ personas: []
 provider_name: Amazon Managed Blockchain
 provider_slug: amazon-managed-blockchain
 search_terms:
-- invite network member
-- distributed ledger
-- invite an aws account to join a blockchain network as a member
 - create network
 - amazon
-- Blockchain Architect
-- ethereum
-- network members
-- peer nodes
-- create peer node
-- list network members
-- list blockchain networks
-- create blockchain network
-- create a member
-- aws
 - list all peer nodes in a blockchain network
-- create a peer node to participate in a blockchain network
-- create node
-- list all members of a blockchain network
+- network members
+- Blockchain Architect
 - hyperledger fabric
-- list members
-- list all amazon managed blockchain networks
-- blockchain networks
-- create a new hyperledger fabric or ethereum blockchain network
-- blockchain
-- Blockchain Developer
+- create a member
+- create peer node
 - list networks
-- list peer nodes
-- list nodes
-- create a peer node
+- distributed ledger
+- create blockchain network
+- list network members
+- invite an aws account to join a blockchain network as a member
+- list all members of a blockchain network
+- aws
+- blockchain networks
 - create a blockchain network
+- create a peer node
+- list peer nodes
+- list blockchain networks
+- list nodes
+- create a new hyperledger fabric or ethereum blockchain network
+- list members
 - create member
+- create node
+- list all amazon managed blockchain networks
+- peer nodes
+- invite network member
+- ethereum
+- Blockchain Developer
+- blockchain
+- create a peer node to participate in a blockchain network
 slug: blockchain-network-operations
 source_filename: blockchain-network-operations.yaml
 source_heading: Capability Spec

@@ -31,73 +31,73 @@ personas: []
 provider_name: Databricks
 provider_slug: databricks
 search_terms:
-- delete job
-- clean rooms
-- get cluster
-- get job
-- list clusters
-- start a terminated cluster.
-- vector search
-- lakehouse
+- list objects in a workspace directory.
+- get job details.
+- data
 - import a notebook or workspace object.
 - security
-- list all databricks clusters.
-- databricks
-- list workspace objects
-- delete workspace object
-- analytics
-- export a notebook or workspace object.
-- cancel a running job.
-- cluster lifecycle management.
-- list all clusters.
 - create a new job.
-- run job now
-- delta sharing
-- terminate cluster
-- get job run
-- data engineering
-- data
-- get cluster details.
+- list workspace objects
+- analytics
 - edit cluster
-- mlflow
-- create a new spark cluster.
-- sql
-- machine learning
-- apache spark
-- create cluster
-- get job details.
-- trigger a job run immediately.
-- terminate a running cluster.
-- data governance
-- delta lake
+- run job now
+- get details of a specific run.
 - unity catalog
-- ai
-- export workspace object
-- list job runs
+- data analytics
+- list all clusters.
+- job orchestration.
+- list workspace objects.
+- create cluster
+- edit cluster configuration.
+- clean rooms
+- data governance
+- get cluster
+- machine learning
+- delta lake
+- export a notebook or workspace object.
+- delta sharing
+- list jobs
+- start a terminated cluster.
+- get job run
 - cancel job run
-- create job
+- identity management
+- cancel a running job.
+- list clusters
+- apache spark
+- delete workspace object
+- cloud computing
+- export workspace object
+- mlflow
+- delete a workspace object.
+- workspace object management.
+- trigger a job run immediately.
+- create a new spark cluster.
+- terminate a running cluster.
+- get job
+- list job runs
+- lakehouse
+- list all databricks clusters.
+- list all databricks jobs.
+- delete job
+- import workspace object
+- get cluster details.
+- big data
+- vector search
+- etl
+- list all jobs.
+- terminate cluster
+- ai
+- sql
+- model serving
+- data engineering
+- databricks
+- start cluster
 - create a new cluster.
 - delete a job.
-- get details of a specific run.
-- cloud computing
-- list all databricks jobs.
-- workspace object management.
-- big data
-- job orchestration.
-- edit cluster configuration.
-- list runs for a job.
-- etl
-- list objects in a workspace directory.
-- list jobs
+- create job
+- cluster lifecycle management.
 - visualize
-- list all jobs.
-- import workspace object
-- delete a workspace object.
-- data analytics
-- identity management
-- start cluster
-- model serving
-- list workspace objects.
+- list runs for a job.
 slug: data-engineering
 source_filename: data-engineering.yaml
 source_heading: Capability Spec

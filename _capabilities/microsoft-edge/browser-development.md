@@ -31,64 +31,64 @@ personas: []
 provider_name: Microsoft Edge
 provider_slug: microsoft-edge
 search_terms:
-- get extension details
-- extension products
-- get protocol schema
-- Extension Developer
-- browser
-- debugging
-- create target
-- activate target
-- open a new browser tab
-- get extension
-- chromium
-- unified browser development workflow combining debugging and extension management
-- create new browser target
-- QA Engineer
-- get product
-- microsoft edge
-- list extensions
-- close a browser tab
-- tests web applications and extensions using devtools automation
-- web development
-- list all extension products in the edge add-ons store
 - get upload status
-- microsoft
-- get submission status
-- check the status of an extension submission
-- extension product detail
-- automation
-- extensions
-- browser debugging and inspection
-- develops web applications and uses devtools for debugging
-- bring a browser tab to the foreground
-- list all debuggable browser targets in microsoft edge
-- extension lifecycle from development to publication
-- browser development
-- get microsoft edge browser version information
-- check the status of a package upload
-- close target
-- list extension products
-- get browser version
-- submit an extension for review and publishing
-- get browser version info
-- developer tools
-- create submission
-- list products
-- progressive web apps
-- list targets
-- open a new browser tab in microsoft edge
-- debuggable browser targets
-- upload package
-- get details of an extension product
-- Web Developer
 - get the full devtools protocol schema definition
-- edge
-- develops and publishes browser extensions for microsoft edge
+- get extension details
+- get submission status
+- get protocol schema
+- debugging
+- browser
+- submit an extension for review and publishing
+- debuggable browser targets
+- extensions
+- get browser version
+- extension product detail
+- open a new browser tab
+- close a browser tab
+- microsoft edge
+- create new browser target
+- browser development
+- automation
+- create target
+- check the status of an extension submission
+- Extension Developer
+- unified browser development workflow combining debugging and extension management
+- list all extension products in the edge add-ons store
+- list extensions
+- get product
+- develops web applications and uses devtools for debugging
+- chromium
+- list extension products
+- tests web applications and extensions using devtools automation
+- get browser version info
+- get details of an extension product
+- list all debuggable browser targets in microsoft edge
+- upload package
+- close target
+- check the status of a package upload
+- webview
 - upload a new extension package
+- extension products
+- create submission
+- progressive web apps
+- QA Engineer
+- web development
+- activate target
 - browser version
 - list all debuggable targets
-- webview
+- bring a browser tab to the foreground
+- list targets
+- list products
+- get extension
+- develops and publishes browser extensions for microsoft edge
+- microsoft
+- extension lifecycle from development to publication
+- get microsoft edge browser version information
+- edge
+- open a new browser tab in microsoft edge
+- Web Developer
+- developer tools
+- browser debugging and inspection
 slug: browser-development
 source_filename: browser-development.yaml
 source_heading: Capability Spec

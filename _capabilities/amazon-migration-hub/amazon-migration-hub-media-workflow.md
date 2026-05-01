@@ -17,32 +17,32 @@ search_terms:
 - broadcasting
 - disassociate created artifact
 - describemigrationtask
-- workflow
-- engineer managing broadcast media workflows
-- disassociate discovered resource
+- manage media processing jobs
+- describe application state
+- media
+- developer building media processing applications
 - amazon migration hub media processing workflow
-- aws media processing and delivery
-- associatediscoveredresource
-- associatecreatedartifact
-- describeapplicationstate
-- Broadcast Engineer
+- workflow
+- media processing
+- associate discovered resource
+- Media Developer
 - aws
-- deleteprogressupdatestream
-- describe migration task
-- associate created artifact
+- list jobs
 - delete progress update stream
 - disassociatecreatedartifact
-- disassociatediscoveredresource
-- manage media processing jobs
-- media
+- describe migration task
 - createprogressupdatestream
+- associatediscoveredresource
+- associatecreatedartifact
+- associate created artifact
+- Broadcast Engineer
 - create progress update stream
-- associate discovered resource
-- list jobs
-- developer building media processing applications
-- media processing
-- Media Developer
-- describe application state
+- engineer managing broadcast media workflows
+- describeapplicationstate
+- disassociate discovered resource
+- disassociatediscoveredresource
+- aws media processing and delivery
+- deleteprogressupdatestream
 slug: amazon-migration-hub-media-workflow
 source_filename: amazon-migration-hub-media-workflow.yaml
 source_heading: Capability Spec

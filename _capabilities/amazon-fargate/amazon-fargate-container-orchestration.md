@@ -51,71 +51,71 @@ personas: []
 provider_name: Amazon Fargate
 provider_slug: amazon-fargate
 search_terms:
-- register a task definition specifying container images, cpu, memory, and networking
-- describe task definition
-- manage task execution
-- describe clusters
-- run task
-- list services
-- list clusters
 - stop task
-- microservices
-- containers
-- manage specific cluster
-- amazon fargate
-- register a task definition
-- scale or update a fargate service task count or definition
-- get cluster details
-- update service
-- eks
-- manage ecs clusters
-- compute
-- deregister task definition
-- launch a fargate task with specified cpu, memory, and networking
-- serverless
-- DevOps Engineer
-- get detailed cluster information
-- create a service
-- delete a fargate cluster
-- aws
-- engineers building container platforms and infrastructure
-- ecs
-- delete a cluster
-- get details of a task definition
-- stop a running fargate task
-- manage services
-- running workloads without managing infrastructure
-- deregister a task definition revision
-- create a new ecs cluster
-- manage task definitions
-- deploy a persistent fargate service with load balancing and auto-scaling
-- create cluster
-- devops
-- list all ecs clusters for fargate workloads
-- full lifecycle management of serverless container workloads
-- Platform Engineer
 - managing container lifecycle from definition to deployment
-- get status and details of running tasks
-- get deployment status and health of fargate services
-- deploying and scaling microservices architectures
-- delete service
-- Cloud Architect
+- full lifecycle management of serverless container workloads
+- list all ecs clusters for fargate workloads
+- register a task definition specifying container images, cpu, memory, and networking
+- Platform Engineer
+- eks
+- serverless
 - register task definition
-- list tasks
-- describe services
-- create service
-- architects designing serverless container solutions
-- list task definitions
-- list all ecs clusters
-- engineers deploying and operating containerized applications
-- run a task
-- list all registered task definitions
-- describe tasks
+- get cluster details
+- amazon fargate
+- DevOps Engineer
+- create a new ecs cluster
 - remove a fargate service from a cluster
+- Cloud Architect
+- delete a cluster
 - delete cluster
+- manage specific cluster
+- stop a running fargate task
+- create cluster
+- list all registered task definitions
+- update service
+- describe tasks
+- engineers deploying and operating containerized applications
+- list task definitions
+- list tasks
+- get status and details of running tasks
+- describe services
 - create a new cluster
-- list all services running in a fargate cluster
+- describe task definition
+- scale or update a fargate service task count or definition
+- aws
+- devops
+- microservices
+- list clusters
+- manage task definitions
+- running workloads without managing infrastructure
+- deregister task definition
+- manage services
+- delete service
+- get detailed cluster information
+- list services
+- launch a fargate task with specified cpu, memory, and networking
+- manage ecs clusters
+- create service
 - list tasks in a cluster with status filtering
+- engineers building container platforms and infrastructure
+- architects designing serverless container solutions
+- compute
+- containers
+- register a task definition
+- run task
+- delete a fargate cluster
+- deploying and scaling microservices architectures
+- deregister a task definition revision
+- deploy a persistent fargate service with load balancing and auto-scaling
+- run a task
+- list all ecs clusters
+- manage task execution
+- get details of a task definition
+- get deployment status and health of fargate services
+- describe clusters
+- create a service
+- list all services running in a fargate cluster
+- ecs
 slug: amazon-fargate-container-orchestration
 source_filename: amazon-fargate-container-orchestration.yaml
 source_heading: Capability Spec

@@ -9,11 +9,11 @@ personas: []
 provider_name: Apache Helix
 provider_slug: apache-helix
 search_terms:
-- distributed systems
-- cluster management
-- partitioning
-- open source
 - apache
+- cluster management
+- open source
+- distributed systems
+- partitioning
 - replication
 slug: helix-cluster-management
 source_filename: helix-cluster-management.yaml

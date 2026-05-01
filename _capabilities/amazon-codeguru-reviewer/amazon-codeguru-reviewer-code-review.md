@@ -10,37 +10,37 @@ personas: []
 provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
-- get details about a repository association
-- security
-- list code reviews for a repository
-- list code reviews
-- developer persona.
-- security engineer persona.
-- submit feedback on a code review recommendation
 - get details about a code review
-- devops engineer persona.
-- Developer
+- security
 - amazon
-- Security Engineer
+- devops engineer persona.
+- get details about a repository association
+- list code reviews for a repository
 - code review
-- describe repository association
+- list recommendations from a code review
 - DevOps Engineer
-- associate a repository for code review
-- list repositories associated with codeguru reviewer
-- create a code review
-- aws
-- associate repository
 - machine learning
-- put recommendation feedback
+- submit feedback on a code review recommendation
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
+- associate repository
+- describe repository association
+- aws
 - devops
+- put recommendation feedback
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- associate a repository for code review
+- list repository associations
+- list code reviews
+- create a code review
+- Developer
+- describe code review
+- Security Engineer
+- security engineer persona.
+- create code review
+- list repositories associated with codeguru reviewer
+- developer persona.
 - developer tools
 - list recommendations
-- create code review
-- list recommendations from a code review
-- list repository associations
-- describe code review
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
 slug: amazon-codeguru-reviewer-code-review
 source_filename: amazon-codeguru-reviewer-code-review.yaml
 source_heading: Capability Spec

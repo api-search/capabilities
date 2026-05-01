@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- create a new gateway route.
-- lua
-- list consumers
-- delete an apisix route.
-- apache apisix
-- list api consumers.
-- list backend upstreams.
-- list all backend upstream configurations.
 - create a new apisix route for traffic routing.
-- kubernetes
-- list routes
-- create upstream
-- create a new backend upstream with load balancing config.
-- nginx
-- create a backend upstream.
-- delete route
-- cloud native
-- create an api consumer.
-- update an existing apisix route.
-- create consumer
-- open source
 - Platform Engineer
-- create route
-- apache
-- administrators configuring routes, consumers, and security policies.
-- create a new api consumer with authentication plugins.
-- configuration
-- route, upstream, consumer, and ssl management workflow.
-- engineers deploying and managing api gateway infrastructure.
-- list all apisix gateway routes.
-- traffic management
-- list upstreams
+- create consumer
+- list backend upstreams.
+- create a new gateway route.
 - update route
-- authentication
-- API Gateway Administrator
-- api gateway
+- create a new backend upstream with load balancing config.
+- create a backend upstream.
+- traffic management
 - list all gateway routes.
+- create route
+- kubernetes
+- list all apisix gateway routes.
+- create upstream
+- list api consumers.
+- API Gateway Administrator
+- nginx
+- list upstreams
+- lua
+- list all backend upstream configurations.
+- route, upstream, consumer, and ssl management workflow.
+- create a new api consumer with authentication plugins.
+- engineers deploying and managing api gateway infrastructure.
+- list routes
+- apache apisix
 - list all api consumers and their plugin configs.
+- configuration
+- cloud native
+- delete an apisix route.
+- delete route
+- update an existing apisix route.
+- apache
+- create an api consumer.
+- administrators configuring routes, consumers, and security policies.
+- api gateway
+- authentication
+- open source
+- list consumers
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

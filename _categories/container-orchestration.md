@@ -11,7 +11,7 @@ description: 'Kubernetes-style or proprietary orchestrators that schedule contai
 
   '
 domain: infrastructure
-implementation_count: 14
+implementation_count: 15
 implementations:
 - capability_name: Amazon ECR Container Registry Management
   capability_slug: ecr-management
@@ -188,6 +188,19 @@ implementations:
   - Containers
   - Infrastructure
   tool_count: 17
+- capability_name: Spot Compute Optimization
+  capability_slug: compute-optimization
+  capability_url: https://capabilities.apis.io/capabilities/spot/compute-optimization/
+  consumed_api_count: 2
+  operation_count: 3
+  provider_name: Spot
+  provider_slug: spot
+  tags:
+  - Spot
+  - Compute
+  - Autoscaling
+  - Kubernetes
+  tool_count: 16
 - capability_name: Spot Compute Optimization
   capability_slug: compute-optimization
   capability_url: https://capabilities.apis.io/capabilities/spot/compute-optimization/

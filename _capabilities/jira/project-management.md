@@ -54,58 +54,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- delete an issue.
-- perform a transition.
-- project management
-- transition an issue through its workflow.
-- itsm
-- get jira issue details.
-- get all jira priorities.
-- issue lifecycle management.
-- create issue
-- list projects
-- edit an existing jira issue.
-- get all jira issue statuses.
-- edit an issue.
-- jql issue search.
-- get comments on a jira issue.
-- edit issue
-- search issues
-- add comment
-- workflow transitions.
-- delete issue
-- search jira issues using jql.
-- search with jql.
-- create a new issue.
-- single project.
 - get priorities
-- issue comments.
-- get available workflow transitions.
-- get jira project details.
-- get comments
-- agile
-- get issue comments.
-- service management
-- get project
-- add a comment.
-- get all jira issue types.
-- get available transitions.
-- list all jira projects.
-- jira
 - single issue operations.
+- issue lifecycle management.
+- get all jira issue statuses.
+- single project.
+- jira
 - delete a jira issue.
-- get issue
-- get issue types
-- add a comment to a jira issue.
-- get issue details.
-- issue tracking
-- create a new jira issue.
-- get project details.
-- project management.
-- list all projects.
+- project management
+- get project
 - get statuses
-- do transition
+- add a comment to a jira issue.
+- get comments on a jira issue.
+- perform a transition.
+- get all jira priorities.
+- edit an existing jira issue.
+- get issue comments.
+- list all jira projects.
+- edit an issue.
+- create issue
+- itsm
+- create a new issue.
+- list projects
+- list all projects.
+- delete issue
+- search issues
+- get project details.
 - get transitions
+- add comment
+- get comments
+- add a comment.
+- service management
+- issue comments.
+- workflow transitions.
+- get issue details.
+- get issue types
+- get issue
+- search with jql.
+- create a new jira issue.
+- edit issue
+- get available workflow transitions.
+- get all jira issue types.
+- project management.
+- do transition
+- get jira project details.
+- search jira issues using jql.
+- delete an issue.
+- get available transitions.
+- transition an issue through its workflow.
+- jql issue search.
+- get jira issue details.
+- issue tracking
+- agile
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

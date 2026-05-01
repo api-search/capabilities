@@ -10,24 +10,24 @@ personas: []
 provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
-- event-driven
-- list all registered axon applications
-- cqrs
-- get axon server metrics and health information
-- delete an axon application registration
-- microservices
+- create_application
 - create a new axon context
-- list_applications
-- create a new axon application registration
+- event-driven
+- delete an axon application registration
 - get_metrics
-- delete_application
 - create_context
 - list_contexts
-- java
-- create_application
+- cqrs
+- list all registered axon applications
+- list_applications
+- list all axon contexts
+- create a new axon application registration
 - messaging
 - event sourcing
-- list all axon contexts
+- get axon server metrics and health information
+- delete_application
+- microservices
+- java
 slug: event-driven-workflow
 source_filename: event-driven-workflow.yaml
 source_heading: Capability Spec

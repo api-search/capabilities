@@ -9,13 +9,13 @@ personas: []
 provider_name: Block
 provider_slug: block
 search_terms:
-- commerce
-- payments
 - fintech
-- square
-- ecommerce
+- commerce
 - point of sale
 - cryptocurrency
+- payments
+- square
+- ecommerce
 slug: block-square-commerce
 source_filename: block-square-commerce.yaml
 source_heading: Capability Spec

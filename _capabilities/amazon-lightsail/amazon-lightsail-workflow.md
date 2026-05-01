@@ -10,20 +10,20 @@ personas: []
 provider_name: Amazon Lightsail
 provider_slug: amazon-lightsail
 search_terms:
-- Developer
-- creates one or more amazon lightsail instances.
 - integrates api into applications
-- returns information about a specific amazon lightsail instance.
-- instances get instance
-- workflow
-- aws
-- instances get instances
+- Developer
+- returns information about all amazon lightsail virtual private servers.
 - unified workflow for amazon lightsail resource management
+- workflow
+- Administrator
 - manages resources and configurations
+- aws
+- instances get instance
+- returns information about a specific amazon lightsail instance.
 - instances create instances
 - amazon lightsail
-- returns information about all amazon lightsail virtual private servers.
-- Administrator
+- creates one or more amazon lightsail instances.
+- instances get instances
 slug: amazon-lightsail-workflow
 source_filename: amazon-lightsail-workflow.yaml
 source_heading: Capability Spec

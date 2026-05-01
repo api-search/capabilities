@@ -39,63 +39,63 @@ personas: []
 provider_name: Google Tag Manager
 provider_slug: google-tag-manager
 search_terms:
-- list variables
-- list container version headers
-- marketing
-- variable management
-- publish a container version
-- list variables in a workspace
-- google tag manager
-- create tag
-- create a tag
-- delete a tag
-- get tag
 - delete variable
-- create a new workspace
-- create trigger
-- analytics
-- update account
-- delete trigger
-- list tags in a workspace
-- trigger management
-- account management
-- create a new tag
-- create container
-- create variable
 - get account
-- update account settings
-- list all google tag manager accounts
-- delete a variable
-- create a new container
-- list triggers
-- list accounts
-- list all gtm accounts
-- get account details
-- create workspace
-- delete a workspace
-- publish version
-- tag management
-- create a new trigger
-- delete workspace
-- list containers in an account
-- conversion tracking
-- list versions
-- container management
-- get container
-- delete a container
-- delete a trigger
-- delete container
-- list tags
+- list tags in a workspace
 - list triggers in a workspace
-- create a container
-- get tag details
-- create a new variable
-- tracking
-- list workspaces
+- account management
+- analytics
+- list container version headers
+- list accounts
+- get account details
+- delete a workspace
+- delete trigger
+- delete a trigger
+- create a new container
 - get container details
+- create a container
 - delete tag
+- marketing
+- create a new trigger
+- create trigger
+- list workspaces
+- create container
+- list versions
+- publish a container version
+- create a new variable
 - list containers
+- create a new workspace
+- create workspace
+- list tags
+- google tag manager
+- list variables
 - list workspaces in a container
+- list all google tag manager accounts
+- create tag
+- update account
+- delete a tag
+- conversion tracking
+- list containers in an account
+- trigger management
+- list variables in a workspace
+- list all gtm accounts
+- list triggers
+- get container
+- delete workspace
+- create a tag
+- variable management
+- delete a container
+- create variable
+- get tag details
+- tracking
+- publish version
+- create a new tag
+- container management
+- update account settings
+- delete container
+- get tag
+- tag management
+- delete a variable
 slug: tag-deployment-management
 source_filename: tag-deployment-management.yaml
 source_heading: Capability Spec

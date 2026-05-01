@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- key management.
-- encrypt
-- security
-- delete key
-- get a secret value.
-- delete secret
-- key vault
-- list keys.
-- get secret
-- list secrets in the vault.
-- set a secret.
-- list keys
-- secret management.
-- verify a signature.
-- decrypt data using a key.
-- set secret
-- list secrets.
-- secrets management
-- set a secret value.
-- delete a key.
-- create key
-- sign a digest using a key.
-- cloud security
-- list secrets
-- get certificate
-- list certificates
-- encrypt data using a key.
-- individual key management.
-- delete a secret.
-- list certificates.
-- certificate management.
-- key management
-- delete certificate
-- get key details.
-- verify
-- get a secret.
-- sign
-- certificates
 - create a new cryptographic key.
-- azure
-- delete a certificate.
-- list cryptographic keys in the vault.
-- individual secret management.
-- list certificates in the vault.
-- cryptography
+- verify
+- secret management.
+- key vault
+- security
+- set a secret.
+- secrets management
+- key management
+- list secrets.
+- list certificates.
+- set a secret value.
+- key management.
+- get certificate
+- delete key
+- encrypt
+- list certificates
 - create a new certificate.
+- get a secret value.
+- delete a certificate.
 - get key
-- get a certificate.
-- get a key.
-- decrypt
 - create certificate
+- encrypt data using a key.
+- get a secret.
+- list cryptographic keys in the vault.
+- cloud security
+- list keys
+- decrypt
+- get a certificate.
+- verify a signature.
+- list keys.
+- create key
+- azure
 - create a key.
+- certificates
+- cryptography
+- delete certificate
+- sign a digest using a key.
+- certificate management.
+- individual key management.
+- list secrets
+- individual secret management.
+- get a key.
+- list secrets in the vault.
+- list certificates in the vault.
+- get key details.
+- get secret
+- delete a key.
+- set secret
+- delete a secret.
+- delete secret
+- decrypt data using a key.
+- sign
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

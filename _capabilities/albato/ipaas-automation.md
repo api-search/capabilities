@@ -23,48 +23,48 @@ personas: []
 provider_name: Albato
 provider_slug: albato
 search_terms:
-- saas
-- workflow
-- integrates albato embedded ipaas into saas products to offer white-label automation capabilities to customers. manages teams and connectors.
-- browse 1,000+ available app connectors for albato embedded. search by name or filter to find specific integrations.
-- Automation Builder
+- creates no-code automation workflows in albato connecting apps without writing code, configuring triggers, actions, conditions, and delays.
+- get details and configuration for a specific albato automation.
+- automation workflows
+- list automations
 - albato
-- integrations
-- manage embedded ipaas customer accounts
+- list all albato automation workflows with their status, trigger counts, and success/error rates.
+- list albato templates
+- workflow automation
+- app integration
+- app connectors
+- list all automation workflows
+- no-code automation
+- saas
+- integrates albato embedded ipaas into saas products to offer white-label automation capabilities to customers. manages teams and connectors.
 - white-label
+- list teams
+- list albato embedded teams
+- workflow
+- monitors automation health, reviews execution rates and errors, and ensures business processes run reliably across integrated apps.
+- list embedded teams
+- browse 1,000+ available app connectors for albato embedded. search by name or filter to find specific integrations.
+- ipaas
+- get albato automation
+- list connectors
+- embedded ipaas
+- Operations Manager
+- list albato executions
+- list albato automations
+- list albato connectors
+- Automation Builder
+- integrations
+- create and monitor automation workflows
+- embedded teams
+- SaaS Developer
+- list automation templates available for albato embedded use.
+- webhooks
 - embedded integration
 - list all embedded teams (customer accounts) in albato embedded ipaas with active automation and transaction counts.
-- no-code automation
-- workflow automation
-- get albato automation
-- SaaS Developer
-- manage no-code automations and embedded ipaas customer teams
-- list albato connectors
-- list automations
-- monitors automation health, reviews execution rates and errors, and ensures business processes run reliably across integrated apps.
-- webhooks
-- creates no-code automation workflows in albato connecting apps without writing code, configuring triggers, actions, conditions, and delays.
-- app integration
-- create and monitor automation workflows
-- list albato executions
-- app connectors
-- list albato automations
-- automation workflows
-- list teams
-- list all automation workflows
-- list albato embedded teams
-- embedded ipaas
 - get execution history for an albato automation including success/error rates and step completion details.
-- list automation templates available for albato embedded use.
-- embedded teams
-- list connectors
+- manage no-code automations and embedded ipaas customer teams
 - list available connectors
-- ipaas
-- list embedded teams
-- list albato templates
-- get details and configuration for a specific albato automation.
-- Operations Manager
-- list all albato automation workflows with their status, trigger counts, and success/error rates.
+- manage embedded ipaas customer accounts
 slug: ipaas-automation
 source_filename: ipaas-automation.yaml
 source_heading: Capability Spec

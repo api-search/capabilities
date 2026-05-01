@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- list functions
-- graphql
-- list all data sources connected to a graphql api.
-- create graphql api
-- list graphql apis
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- list data sources
+- list all graphql apis
 - serverless
+- create a graphql api
+- list functions
+- list graphql apis
+- create resolver
+- list all data sources connected to a graphql api.
 - list reusable pipeline functions available for composing complex resolvers.
-- amazon appsync
+- create a reusable pipeline function for use in pipeline resolvers.
 - aws
 - create a resolver that maps a graphql field to a data source operation.
-- start schema creation
-- create a new graphql api with the specified authentication type and configuration.
-- create function
-- get graphql api
-- upload a new graphql schema
-- api management
-- create resolver
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
-- create a graphql api
 - list resolvers
+- create function
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- api management
+- create a new graphql api with the specified authentication type and configuration.
+- create graphql api
+- start schema creation
+- upload a new graphql schema
+- list all appsync graphql apis to understand available apis and their configurations.
+- get graphql api
+- create data source
 - graphql schema management
-- list all graphql apis
-- list data sources
 - graphql api management
 - upload a new graphql schema definition to an appsync api.
-- list all appsync graphql apis to understand available apis and their configurations.
-- create a reusable pipeline function for use in pipeline resolvers.
+- graphql
 - get complete details of a graphql api including authentication configuration and endpoints.
-- create data source
+- amazon appsync
 slug: graphql-api-management
 source_filename: graphql-api-management.yaml
 source_heading: Capability Spec

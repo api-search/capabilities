@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- delete a user.
-- delete an application registration.
-- update user properties.
-- list applications
-- get user properties by id.
-- list all users in microsoft entra directory.
-- list all groups in the directory.
-- list all service principals.
-- update user
-- add group member
-- individual application management.
-- update application
-- create a new user.
-- create a new service principal.
-- update service principal.
+- group membership management.
 - remove group member
-- delete a service principal.
-- update group properties.
-- create a new user in the directory.
-- update service principal properties.
-- security
-- individual service principal management.
-- list members of a group.
-- list all application registrations.
-- directory management
-- access management
+- list user group memberships.
+- list group members
 - delete an application.
-- microsoft
-- zero trust
-- identity
+- delete a user from the directory.
+- delete a group.
+- list all applications.
+- update group properties.
+- network security
+- update service principal properties.
+- list all groups.
+- group management.
+- create user
+- list applications
 - application registration management.
+- add group member
+- create group
+- individual service principal management.
+- individual application management.
+- list all users in the directory.
+- create a new group.
+- directory management
+- list all users in microsoft entra directory.
+- get user
+- security
+- remove a member from a group.
+- get user properties by id.
+- individual user management.
+- user account management.
+- get user details.
+- get application details.
+- delete application
+- list members of a group.
+- update user properties.
+- access management
+- create application
+- update group
+- list users
+- delete group
+- list all groups in the directory.
+- identity governance
+- delete a user.
+- add a member to a group.
+- list all application registrations.
+- get group details.
+- individual group management.
+- delete a service principal.
+- update service principal.
 - delete user
-- list service principals
+- update application properties.
+- list all service principals.
+- user group membership.
+- microsoft
+- service principal management.
+- register a new application.
+- zero trust
+- update application
+- get service principal
+- create a new user.
+- list user memberships
 - list group members.
 - get service principal details.
-- group management.
-- service principal management.
-- entra
-- network security
+- create a new user in the directory.
 - get application
-- list groups and roles a user belongs to.
-- delete application
-- get application details.
-- user group membership.
 - azure ad
-- identity governance
-- get user
-- list all users in the directory.
-- individual group management.
-- register a new application.
-- add a member to a group.
-- update service principal
-- delete a group.
-- individual user management.
-- delete service principal
-- update group
-- list user memberships
-- create a new group.
-- group membership management.
-- create user
-- authentication
-- remove a member from a group.
-- list all applications.
-- list all groups.
-- create group
-- get group
-- delete group
-- get service principal
-- list groups
 - microsoft entra
-- get group details.
-- list group members
-- get user details.
-- create application
-- user account management.
-- list users
-- update application properties.
+- get group
+- update service principal
+- delete an application registration.
+- create a new service principal.
+- identity
+- list groups
 - create service principal
-- delete a user from the directory.
-- list user group memberships.
+- delete service principal
+- authentication
+- list service principals
+- update user
+- entra
+- list groups and roles a user belongs to.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

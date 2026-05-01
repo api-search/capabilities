@@ -19,27 +19,27 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- saas
-- get supplier
-- get expense report
-- hcm
 - get an accounting journal by id
-- list customer invoices
-- list expense reports
+- hcm
 - list suppliers
-- get a supplier by id
-- suppliers
-- list journals
+- get supplier
+- enterprise software
+- saas
 - workday
-- accounting journals
+- list journals
+- cloud computing
+- get accounting journal
+- list expense reports
+- suppliers
+- get expense report
 - list accounting journals
 - list purchase orders
-- cloud computing
-- enterprise software
 - procurement
+- accounting journals
 - financial management
+- get a supplier by id
+- list customer invoices
 - get an expense report by id
-- get accounting journal
 slug: finance-and-procurement
 source_filename: finance-and-procurement.yaml
 source_heading: Capability Spec

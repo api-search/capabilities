@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- developer persona.
-- get profile
-- devops engineer persona.
-- Developer
+- describe profiling group
+- Platform Engineer
+- get optimization recommendations for a profiling group
+- create profiling group
+- post agent profile
 - amazon
+- get aggregated profile data
+- list findings reports for a profiling group
+- devops engineer persona.
+- application performance
+- create a new profiling group
+- list profile times
 - DevOps Engineer
+- machine learning
+- get profile
+- platform engineer persona.
 - list profiling groups in the account
 - aws
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- create a new profiling group
-- get aggregated profile data
-- application performance
-- get optimization recommendations for a profiling group
-- list findings reports for a profiling group
 - list findings reports
-- machine learning
-- list profiling groups
-- get details about a profiling group
 - devops
-- Platform Engineer
-- describe profiling group
-- platform engineer persona.
-- post agent profile
-- get recommendations
-- create profiling group
-- profiling
-- list profile collection times for a profiling group
-- list profile times
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
 - submit profiling agent data
+- Developer
+- get details about a profiling group
+- list profile collection times for a profiling group
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- list profiling groups
+- developer persona.
+- get recommendations
+- profiling
 slug: amazon-codeguru-profiler-application-performance
 source_filename: amazon-codeguru-profiler-application-performance.yaml
 source_heading: Capability Spec

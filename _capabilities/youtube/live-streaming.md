@@ -67,59 +67,59 @@ provider_name: Youtube
 provider_slug: youtube
 search_terms:
 - broadcasting
-- create a new live broadcast event
-- manage live broadcasts
-- create stream
+- send chat message
 - update stream
-- send a live chat message
-- bind broadcast
-- list broadcasts
-- send a message to live chat
-- create a new live stream
-- delete a live chat message
-- list live streams
-- google
-- create broadcast
-- manage live chat moderators
-- transition broadcast status (testing, live, complete)
-- update broadcast
 - update stream settings
-- remove a live chat moderator
-- delete a live broadcast
-- update broadcast settings
-- manage live video streams
-- list moderators
-- transition broadcast
-- create a new live broadcast
+- manage live chat moderators
+- delete a live chat message
+- delete stream
 - delete broadcast
-- create a new live video stream
-- manage live chat messages
-- add moderator
+- create broadcast
+- create a new live broadcast
+- list live video streams
+- social
+- list live broadcasts
+- delete a live broadcast
+- list chat messages
 - media
 - youtube
-- videos
-- list streams
-- delete a broadcast
-- bind a broadcast to a video stream
-- list live broadcasts
-- remove moderator
-- update live broadcast settings
-- list messages in live chat
 - streaming
 - video
-- live streaming
-- social
-- list live video streams
-- list chat messages
+- create stream
+- list broadcasts
+- remove a live chat moderator
+- update live broadcast settings
+- create a new live stream
+- transition broadcast status (testing, live, complete)
+- bind broadcast
+- list live streams
+- update broadcast settings
+- create a new live video stream
+- delete a broadcast
+- google
+- videos
+- delete a live stream
+- list streams
+- remove moderator
 - list youtube live broadcasts
 - list live chat messages
-- list live chat moderators
-- delete a live stream
-- live chat
-- delete chat message
-- send chat message
+- list moderators
+- manage live chat messages
 - add a live chat moderator
-- delete stream
+- list live chat moderators
+- add moderator
+- send a live chat message
+- live chat
+- manage live broadcasts
+- bind a broadcast to a video stream
+- live streaming
+- transition broadcast
+- update broadcast
+- list messages in live chat
+- manage live video streams
+- send a message to live chat
+- create a new live broadcast event
+- delete chat message
 slug: live-streaming
 source_filename: live-streaming.yaml
 source_heading: Capability Spec

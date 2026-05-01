@@ -9,11 +9,11 @@ personas: []
 provider_name: Apache BookKeeper
 provider_slug: apache-bookkeeper
 search_terms:
+- apache
 - streaming
+- open source
 - distributed systems
 - log storage
-- open source
-- apache
 - storage
 slug: bookkeeper-cluster-management
 source_filename: bookkeeper-cluster-management.yaml

@@ -41,53 +41,53 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- insert multiple records into a staging table.
-- insert a single record into an import set staging table.
-- attachments
-- enterprise platform
-- insert multiple import set records
-- data integration
-- itsm
-- delete attachment
 - list attachments
-- workflows
-- get a specific ci.
-- cmdb configuration item operations.
-- insert multiple records into an import set staging table.
-- single ci operations.
-- upload a file as a binary stream attached to a record.
-- insert import set record
-- download the binary file content of an attachment.
-- it service management
-- automation
-- configuration management
-- get metadata for a specific attachment.
-- workflow automation
-- list file attachment metadata.
-- servicenow
-- delete an attachment and its file content.
-- cloud services
-- digital workflows
-- list configuration items by cmdb class.
-- list attachments.
-- t1
-- cmdb
-- download attachment file
 - list cis by class.
-- retrieve full details of a configuration item.
-- single attachment operations.
-- delete an attachment.
-- upload attachment binary
-- bulk import operations.
-- insert a record into a staging table.
+- download attachment file
+- insert a single record into an import set staging table.
 - get attachment
-- list cmdb instances
-- get attachment metadata.
-- file attachment operations.
-- etl
-- get cmdb instance
+- cloud services
+- bulk import operations.
+- insert multiple records into an import set staging table.
+- t1
+- workflow automation
+- it service management
+- attachments
+- upload attachment binary
+- automation
+- list file attachment metadata.
+- workflows
+- insert a record into a staging table.
+- cmdb
+- configuration management
+- list configuration items by cmdb class.
+- itsm
+- insert import set record
 - import set operations.
+- get a specific ci.
+- servicenow
+- insert multiple import set records
+- list attachments.
+- get attachment metadata.
+- cmdb configuration item operations.
+- data integration
+- file attachment operations.
+- list cmdb instances
+- enterprise platform
+- insert multiple records into a staging table.
+- digital workflows
+- get cmdb instance
+- single ci operations.
+- single attachment operations.
+- delete attachment
+- retrieve full details of a configuration item.
+- delete an attachment.
 - processes
+- etl
+- upload a file as a binary stream attached to a record.
+- delete an attachment and its file content.
+- get metadata for a specific attachment.
+- download the binary file content of an attachment.
 slug: data-integration-and-configuration
 source_filename: data-integration-and-configuration.yaml
 source_heading: Capability Spec

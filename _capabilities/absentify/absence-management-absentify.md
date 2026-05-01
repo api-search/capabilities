@@ -10,10 +10,10 @@ provider_name: Absentify
 provider_slug: absentify
 search_terms:
 - human resources
+- hr
+- leave management
 - microsoft teams
 - absence management
-- leave management
-- hr
 slug: absence-management-absentify
 source_filename: absence-management-absentify.yaml
 source_heading: Capability Spec

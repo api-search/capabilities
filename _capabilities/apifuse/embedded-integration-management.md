@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- saas
-- SaaS Product Manager
-- integration analytics.
-- developer implementing and automating embedded integration workflows.
-- managing native integrations within saas products.
-- list all integrations.
-- integrations
-- list all pre-built connectors available for embedding into your saas product.
-- browse and manage integrations.
-- create a new automation workflow connecting two or more integrated platforms.
-- workflow automation
-- browse pre-built connectors.
-- browse all available embedded integrations, optionally filtered by category.
+- integration platform
+- product manager building native integrations into a saas product.
+- list integrations
 - list all integration workflows configured in the embedded marketplace.
-- manage workflows.
+- browse all available embedded integrations, optionally filtered by category.
+- Integration Developer
+- workflow automation
 - list workflows
+- browse and manage integrations.
+- developer implementing and automating embedded integration workflows.
+- saas
+- get analytics
+- list all pre-built connectors available for embedding into your saas product.
+- browse pre-built connectors.
+- managing native integrations within saas products.
+- ipaas
+- SaaS Product Manager
+- list connectors
+- list all connectors.
+- integration analytics.
+- list all integrations.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
+- create a workflow.
+- integrations
 - list workflows.
+- apifuse
+- create a new automation workflow connecting two or more integrated platforms.
+- get analytics data.
 - create workflow
 - embedded integrations
-- apifuse
-- get analytics
-- Integration Developer
-- list integrations
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- list connectors
+- manage workflows.
 - marketplace
-- get analytics data.
-- product manager building native integrations into a saas product.
-- ipaas
-- create a workflow.
-- integration platform
-- list all connectors.
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

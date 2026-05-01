@@ -10,35 +10,35 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- banking
+- Treasury Analyst
 - Institutional Client
+- Corporate Treasurer
 - get the status and details of a bny mellon payment
-- analyst executing treasury transactions and reporting
-- list transactions for a bny mellon account
-- institutional banking
-- get account balances
-- payments
-- institutional investor or fund manager using bny custody and treasury services
-- get current and available balances for a bny mellon account
-- initiate a funds transfer between bny mellon accounts
 - internal funds transfers and liquidity management
 - get payment status
-- initiate funds transfer
-- list transactions
-- initiate a payment (wire, ach, swift, chips) through bny mellon
 - executive managing corporate liquidity and treasury operations
-- wire, ach, swift, and chips payment execution
-- Treasury Analyst
-- Corporate Treasurer
-- bny mellon
-- institutional treasury operations including accounts, payments, and funds transfers
-- treasury
-- list bny mellon treasury accounts for the authenticated client
-- initiate payment
+- institutional banking
 - wire transfers
+- analyst executing treasury transactions and reporting
+- wire, ach, swift, and chips payment execution
+- get account balances
+- initiate payment
+- list transactions for a bny mellon account
 - list bny accounts
 - asset servicing
+- banking
 - institutional account management and cash positioning
+- payments
+- institutional investor or fund manager using bny custody and treasury services
+- initiate a payment (wire, ach, swift, chips) through bny mellon
+- institutional treasury operations including accounts, payments, and funds transfers
+- get current and available balances for a bny mellon account
+- initiate a funds transfer between bny mellon accounts
+- bny mellon
+- treasury
+- initiate funds transfer
+- list bny mellon treasury accounts for the authenticated client
+- list transactions
 slug: treasury-operations
 source_filename: treasury-operations.yaml
 source_heading: Capability Spec

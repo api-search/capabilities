@@ -10,9 +10,9 @@ provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
 - time series
+- aws
 - iot
 - database
-- aws
 slug: amazon-timestream-capability
 source_filename: amazon-timestream-capability.yaml
 source_heading: Capability Spec

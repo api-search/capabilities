@@ -10,19 +10,19 @@ provider_name: Apache Pulsar
 provider_slug: apache-pulsar
 search_terms:
 - multi-tenant
-- pub-sub
-- streaming
-- cloud native
-- developer producing and consuming messages with pulsar
-- end-to-end workflow for producing and consuming pulsar messages
-- open source
-- processing message streams with pulsar functions
 - apache
-- messaging
-- workflow for managing pulsar cluster resources
-- real-time message delivery between producers and consumers
-- engineer managing pulsar clusters and multi-tenancy
+- end-to-end workflow for producing and consuming pulsar messages
+- streaming
 - engineer building real-time streaming pipelines with pulsar
+- pub-sub
+- workflow for managing pulsar cluster resources
+- open source
+- engineer managing pulsar clusters and multi-tenancy
+- processing message streams with pulsar functions
+- messaging
+- developer producing and consuming messages with pulsar
+- real-time message delivery between producers and consumers
+- cloud native
 slug: pulsar-workflow
 source_filename: pulsar-workflow.yaml
 source_heading: Capability Spec

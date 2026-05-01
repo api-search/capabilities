@@ -19,32 +19,32 @@ personas: []
 provider_name: Apache Giraph
 provider_slug: apache-giraph
 search_terms:
-- cluster capacity metrics
-- bsp
-- engineers running large-scale graph algorithms with giraph on hadoop
-- Data Engineer
 - get yarn cluster metrics
 - list all giraph graph processing jobs
-- iterative bsp graph algorithm execution at scale
-- get cluster metrics
-- get yarn cluster capacity metrics for running giraph jobs
-- list all giraph graph processing jobs running on yarn
-- retired
-- apache giraph
-- open source
-- apache
-- job status tracking and cluster capacity monitoring
+- bsp
 - monitoring
 - get metrics
-- get giraph job
-- graph processing
-- get detailed status of a specific giraph job
-- big data
+- retired
 - list jobs
+- get detailed status of a specific giraph job
 - hadoop
 - monitor giraph graph processing jobs on hadoop yarn
-- giraph graph processing jobs
+- engineers running large-scale graph algorithms with giraph on hadoop
 - list giraph jobs
+- get giraph job
+- Data Engineer
+- apache giraph
+- big data
+- apache
+- giraph graph processing jobs
+- list all giraph graph processing jobs running on yarn
+- get yarn cluster capacity metrics for running giraph jobs
+- cluster capacity metrics
+- open source
+- graph processing
+- iterative bsp graph algorithm execution at scale
+- job status tracking and cluster capacity monitoring
+- get cluster metrics
 slug: giraph-graph-processing
 source_filename: giraph-graph-processing.yaml
 source_heading: Capability Spec

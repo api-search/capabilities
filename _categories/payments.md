@@ -14,7 +14,7 @@ description: 'Card processing, ACH, wallets, subscription billing, invoicing, re
 
   '
 domain: commerce
-implementation_count: 12
+implementation_count: 13
 implementations:
 - capability_name: Adyen Online Payment Processing
   capability_slug: online-payment-processing
@@ -156,6 +156,19 @@ implementations:
   - E-Commerce
   - Merchant
   tool_count: 8
+- capability_name: Spot FinOps
+  capability_slug: finops
+  capability_url: https://capabilities.apis.io/capabilities/spot/finops/
+  consumed_api_count: 3
+  operation_count: 4
+  provider_name: Spot
+  provider_slug: spot
+  tags:
+  - Spot
+  - FinOps
+  - Cost Optimization
+  - Billing
+  tool_count: 15
 - capability_name: Spot FinOps
   capability_slug: finops
   capability_url: https://capabilities.apis.io/capabilities/spot/finops/

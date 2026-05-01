@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- write values to multiple ranges at once
-- append values
-- spreadsheet lifecycle operations
-- clear values from multiple ranges
 - google sheets
-- update values
-- get values
-- clear values
-- append rows of data to a spreadsheet
-- read values from multiple ranges at once
-- single spreadsheet operations
-- search developer metadata
-- batch update spreadsheet
-- create a new google sheets spreadsheet
-- copy a sheet to another spreadsheet
-- automation
-- batch get values
-- cell value read and write operations
-- write values to a spreadsheet range
-- google workspace
-- apply batch updates to a spreadsheet
-- get spreadsheet
-- write values to a range
-- create a new spreadsheet
-- get developer metadata by id
 - clear values from a range
-- get spreadsheet details
-- batch clear values
-- productivity
-- read values from a spreadsheet range
-- clear values from a spreadsheet range
-- batch update values
-- get developer metadata
-- read values from a range
-- data management
-- copy sheet
-- spreadsheets
-- create spreadsheet
 - get spreadsheet details by id
-- search developer metadata matching filters
+- spreadsheet lifecycle operations
+- get spreadsheet
+- batch update values
+- apply batch updates to a spreadsheet
+- get developer metadata
+- get spreadsheet details
+- write values to multiple ranges at once
+- create a new google sheets spreadsheet
+- clear values from a spreadsheet range
+- create spreadsheet
+- automation
+- spreadsheets
+- google workspace
+- batch get values
+- read values from a spreadsheet range
 - append values to a range
+- batch update spreadsheet
+- productivity
+- update values
+- clear values
+- single spreadsheet operations
+- data management
+- get values
+- cell value read and write operations
+- create a new spreadsheet
+- search developer metadata
+- copy sheet
+- read values from multiple ranges at once
+- copy a sheet to another spreadsheet
+- search developer metadata matching filters
+- append values
+- write values to a spreadsheet range
+- clear values from multiple ranges
+- read values from a range
+- write values to a range
+- append rows of data to a spreadsheet
+- batch clear values
+- get developer metadata by id
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

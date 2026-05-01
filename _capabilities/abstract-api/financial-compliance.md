@@ -34,62 +34,62 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- convert currency amounts
-- engineer building data pipelines and enrichment workflows
-- finance
-- retrieve current exchange rates
-- validate an iban number
-- get current vat rates for a country
-- convert currency
-- validate a vat number and get company details
-- company enrichment
-- web scraping
-- get live rates
-- validate an iban number and retrieve bank and account details
-- get the latest exchange rates for 80+ currencies
-- detection and blocking of fraudulent users, transactions, and bot activity
-- avatars
-- validate a vat number
-- vat validation
-- get live exchange rates
-- currency conversion, vat compliance, and banking validation for financial applications
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- financial compliance
-- convert an amount from one currency to another
-- validate vat number
-- ip geolocation
-- abstract api
-- exchange rates
-- ip intelligence
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- compliance analyst
-- currencies
-- product engineer
-- data engineer
-- finance engineer
 - phone validation
-- iban validation
-- validate a vat number and retrieve associated company details
-- get vat rates
-- validate vat
-- validate iban
-- validate an iban and get bank details
-- engineer building fraud detection and threat intelligence systems
-- developer building user onboarding and personalization features
-- timezones
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- convert an amount from one currency to another using live rates
-- public holidays
-- image processing
-- security engineer
+- compliance analyst
 - security professional responsible for detecting and blocking fraudulent users and transactions
-- developer building payment, billing, and financial compliance systems
-- contacts
+- data engineer
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- get current vat rates for a country
+- developer building user onboarding and personalization features
+- validate a vat number and retrieve associated company details
+- currency conversion, vat compliance, and banking validation for financial applications
+- validate a vat number
+- ip intelligence
+- convert currency amounts
+- timezones
+- ip geolocation
+- web scraping
+- validate a vat number and get company details
+- validate an iban and get bank details
+- validate an iban number and retrieve bank and account details
+- avatars
 - exchange rates, vat validation, and iban validation for financial compliance
+- currencies
+- finance engineer
+- financial compliance
+- retrieve current exchange rates
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- validate an iban number
+- get the latest exchange rates for 80+ currencies
+- finance
+- validate iban
+- exchange rates
+- convert currency
+- contacts
+- public holidays
+- security engineer
+- get vat rates
+- vat validation
+- automatic enrichment of user profiles with geographic, company, and temporal data
 - fraud analyst
-- email validation
+- engineer building data pipelines and enrichment workflows
+- detection and blocking of fraudulent users, transactions, and bot activity
+- validate vat
+- abstract api
+- convert an amount from one currency to another using live rates
 - screenshots
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- image processing
+- convert an amount from one currency to another
+- company enrichment
+- validate vat number
+- get live exchange rates
+- engineer building fraud detection and threat intelligence systems
+- developer building payment, billing, and financial compliance systems
+- email validation
+- product engineer
+- get live rates
+- iban validation
 slug: financial-compliance
 source_filename: financial-compliance.yaml
 source_heading: Capability Spec

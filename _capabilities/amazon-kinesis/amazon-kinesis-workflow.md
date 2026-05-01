@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Kinesis
 provider_slug: amazon-kinesis
 search_terms:
-- streams describe stream summary
-- lists your kinesis data streams.
-- workflow
-- manages resources and configurations
-- creates a kinesis data stream.
-- data processing
-- Developer
-- Administrator
 - analytics
+- data processing
 - amazon kinesis
-- aws
-- streams list streams
-- provides a summarized description of the specified kinesis data stream.
-- unified workflow for amazon kinesis resource management
-- big data
 - streaming
-- integrates api into applications
+- provides a summarized description of the specified kinesis data stream.
+- workflow
+- Administrator
+- aws
 - real-time
+- streams list streams
+- creates a kinesis data stream.
+- streams describe stream summary
+- Developer
+- big data
+- manages resources and configurations
 - streams create stream
+- lists your kinesis data streams.
+- unified workflow for amazon kinesis resource management
+- integrates api into applications
 slug: amazon-kinesis-workflow
 source_filename: amazon-kinesis-workflow.yaml
 source_heading: Capability Spec

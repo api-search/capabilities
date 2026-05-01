@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- read app
-- get beta tester details.
-- app management.
-- create tester
-- read build
-- modify build
-- create a beta group.
-- beta tester management.
-- technology
-- list all apps.
-- list beta testers
-- list builds
-- list all beta groups.
-- add a beta tester.
-- build management.
-- remove a beta tester.
-- list groups
-- developer
-- list apps
-- update app metadata.
-- modify app
-- add a new beta tester.
-- get beta group details.
-- update a beta group.
-- list all apps in app store connect.
-- beta group management.
-- get details of a specific app.
-- app management
-- list all builds.
-- delete a beta group.
-- delete beta tester
-- modify beta group
-- macos
-- get build details.
-- ios
-- create a new beta group.
-- testflight
-- list beta testers.
-- list beta groups
-- create beta tester
-- list testers
-- delete beta group
-- list all beta testers.
-- list beta groups.
-- mobile
-- read beta tester
-- create beta group
-- create group
-- app store
-- apple
 - read beta group
+- list all beta testers.
+- update a beta group.
+- get beta tester details.
+- list beta testers.
+- list beta testers
+- list all apps.
+- get beta group details.
+- modify beta group
+- list builds
+- remove a beta tester.
+- app management
+- read beta tester
+- app management.
+- testflight
+- beta group management.
+- create beta tester
+- list all apps in app store connect.
+- list beta groups
+- get build details.
+- macos
+- delete beta tester
+- delete beta group
+- list testers
+- create a beta group.
+- ios
+- mobile
+- read build
+- create tester
+- apple
+- update app metadata.
+- delete a beta group.
+- modify app
+- app store
+- create group
+- read app
+- add a new beta tester.
+- beta tester management.
+- list all beta groups.
+- modify build
+- list apps
+- list groups
+- technology
+- get details of a specific app.
+- create beta group
+- list all builds.
+- add a beta tester.
+- create a new beta group.
+- list beta groups.
 - update build information.
+- build management.
+- developer
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

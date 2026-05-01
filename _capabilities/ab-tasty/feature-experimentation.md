@@ -33,41 +33,41 @@ personas: []
 provider_name: AB Tasty
 provider_slug: ab-tasty
 search_terms:
-- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
-- product manager monitoring experiment assignments and flag rollouts
 - retrieve feature flag values and metadata for a visitor
-- activate experiment
-- Developer
-- get visitor flags
-- server side
-- a/b testing
-- feature flag evaluation operations
-- manual campaign activation
-- Product Manager
-- quality assurance engineer using remote control api to test experiments
-- get visitor campaigns
-- aggregation
-- retrieve campaign assignments for a visitor based on context
-- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
-- get campaigns
-- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
-- activate campaign
-- backend or frontend developer implementing server-side experiments and feature flags
-- conversion tracking and experiment measurement
-- get flags
-- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
-- ab tasty
-- feature flags
-- retrieve a specific campaign assignment for a visitor
-- get assignment for a specific campaign by id
-- experimentation
-- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
-- a/b testing, multivariate testing, and experiment management
-- evaluate visitor context and retrieve all matching campaign assignments
-- manually activate a campaign variation for a visitor
-- progressive feature releases and feature toggles
 - get campaign
+- retrieve a specific campaign assignment for a visitor, useful for targeted experiment evaluation
 - personalization
+- a/b testing
+- manually activate a campaign variation for a visitor
+- a/b testing, multivariate testing, and experiment management
+- unified workflow for server-side feature experimentation, a/b testing, and feature flag management
+- backend or frontend developer implementing server-side experiments and feature flags
+- retrieve feature flag values and metadata for a visitor, used to implement feature toggles and progressive rollouts
+- manual campaign activation
+- progressive feature releases and feature toggles
+- manually activate a campaign variation assignment, used when auto-activation is disabled via trigger_hit=false
+- ab tasty
+- quality assurance engineer using remote control api to test experiments
+- conversion tracking and experiment measurement
+- product manager monitoring experiment assignments and flag rollouts
+- activate campaign
+- feature flag evaluation operations
+- get flags
+- evaluate a visitor's context and retrieve all active campaign and variation assignments for server-side rendering
+- get campaigns
+- aggregation
+- feature flags
+- Developer
+- server side
+- Product Manager
+- get visitor campaigns
+- experimentation
+- get visitor flags
+- retrieve a specific campaign assignment for a visitor
+- retrieve campaign assignments for a visitor based on context
+- evaluate visitor context and retrieve all matching campaign assignments
+- activate experiment
+- get assignment for a specific campaign by id
 - get visitor campaign
 slug: feature-experimentation
 source_filename: feature-experimentation.yaml

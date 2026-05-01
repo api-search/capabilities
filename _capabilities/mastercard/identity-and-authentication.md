@@ -33,42 +33,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get consent status
-- identity insights for transactions
-- open banking
-- financial services
-- kyc
+- get account identity insights
 - mastercard
 - create consent
-- get identity insights for an account
-- verification
-- identity verification
-- identity
-- payments
-- get authentication consent status
-- get account identity insights
-- get identity insights for a transaction
-- create authentication consent
-- fraud detection
+- kyc
 - verify a consumer identity
-- submit identity verification as a trust provider
-- verify a consumer identity using mastercard id
-- credit cards
+- get authentication consent status
 - create an authentication consent request
-- authentication consent management
-- initiate strong customer authentication
-- get identity intelligence insights for a transaction
-- submit trust verification
-- digital identity
-- get identity intelligence insights for an account
-- authentication
-- get account insights
+- verify a consumer identity using mastercard id
+- identity verification
 - get transaction insights
-- verify identity
+- get account insights
 - initiate authentication
+- digital identity
+- identity insights for transactions
+- get identity intelligence insights for an account
+- get identity insights for an account
+- authentication consent management
+- create authentication consent
 - get transaction identity insights
-- create auth consent
+- get consent status
+- verify identity
+- get identity insights for a transaction
+- submit trust verification
 - identity insights for accounts
+- fraud detection
+- identity
+- verification
+- open banking
+- payments
+- initiate strong customer authentication
+- credit cards
+- financial services
+- submit identity verification as a trust provider
+- get identity intelligence insights for a transaction
+- authentication
+- create auth consent
 slug: identity-and-authentication
 source_filename: identity-and-authentication.yaml
 source_heading: Capability Spec

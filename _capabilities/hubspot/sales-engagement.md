@@ -15,135 +15,135 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- crm
-- searchcalls
-- marketing
-- hubspot batch read meetings
-- hubspot batch update tasks
-- deletetask
-- createtaskassociation
-- updatenote
-- hubspot archive an email engagement
-- hubspot search email engagements
-- hubspot update a batch of notes
-- hubspot search tasks
-- getmeeting
-- hubspot update a call
-- searchnotes
-- hubspot permanently delete a note for gdpr compliance
-- updatecall
-- hubspot batch update email engagements
-- hubspot archive a note
-- listemailengagements
-- batchcreatecalls
-- hubspot delete an email engagement association
-- batchcreatenotes
-- hubspot update a batch of calls
-- deleteemailengagementassociation
-- createcall
-- hubspot permanently delete a call for gdpr compliance
-- hubspot create an email engagement association
-- batcharchivenotes
-- hubspot get a meeting
-- hubspot list all calls
-- hubspot list meeting associations
-- hubspot list task associations
-- hubspot delete a meeting association
-- customer service
-- createnote
-- hubspot update a task
-- batchcreatemeetings
-- updatetask
-- batchreadtasks
-- hubspot list email engagement associations
-- batchupdatenotes
-- hubspot create a batch of calls
-- hubspot create a batch of notes
-- batchreademailengagements
-- deletemeeting
-- searchtasks
-- hubspot read a batch of calls
-- hubspot create an email engagement
-- deletemeetingassociation
-- email marketing
-- listtaskassociations
-- hubspot update a meeting
-- hubspot archive a batch of notes
-- createtask
-- archivecall
-- operations
-- hubspot update an email engagement
-- sales
-- hubspot batch read email engagements
-- hubspot list all notes
-- searchemailengagements
-- content
-- gdprdeletenote
-- batchcreatetasks
-- hubspot update a note
-- archivenote
-- hubspot batch create meetings
-- commerce
-- deletetaskassociation
-- getcallbyid
-- hubspot get a note by id
-- listemailengagementassociations
-- batcharchivecalls
-- createemailengagementassociation
-- hubspot batch update meetings
-- hubspot get a task
-- hubspot create a task
-- hubspot get a call by id
-- gdprdeletecall
-- listmeetingassociations
-- hubspot create a note
-- hubspot search notes
-- updateemailengagement
-- hubspot create a meeting
-- batchupdatemeetings
-- hubspot get an email engagement
-- hubspot batch create tasks
-- hubspot
-- createmeetingassociation
-- listtasks
-- deleteemailengagement
-- hubspot archive a task
-- batchreadcalls
-- getnotebyid
-- updatemeeting
-- gettask
-- batchupdatecalls
-- searchmeetings
-- getemailengagement
-- hubspot archive a call
-- hubspot create a task association
-- hubspot search calls
-- hubspot create a call
-- createemailengagement
 - hubspot archive a meeting
-- marketing automation
-- analytics
-- hubspot list email engagements
-- batchcreateemailengagements
-- listmeetings
-- batchreadnotes
-- batchreadmeetings
-- hubspot batch read tasks
+- batchcreatecalls
+- archivenote
+- hubspot update a task
+- searchnotes
+- batchreademailengagements
+- listemailengagementassociations
+- marketing
+- hubspot search email engagements
+- batchupdatenotes
+- hubspot create a task
+- getnotebyid
+- searchtasks
 - hubspot batch create email engagements
-- hubspot list tasks
-- hubspot list meetings
-- createmeeting
-- hubspot create a meeting association
-- listcalls
+- hubspot archive an email engagement
+- updatemeeting
+- hubspot archive a batch of notes
+- hubspot get a meeting
+- email marketing
+- hubspot list meeting associations
+- gettask
+- hubspot search tasks
+- gdprdeletenote
+- hubspot delete a meeting association
+- hubspot archive a task
 - activities
-- batchupdateemailengagements
+- sales
+- batchreadnotes
+- gdprdeletecall
+- hubspot archive a call
+- searchcalls
+- updateemailengagement
+- hubspot batch update meetings
+- batchcreatetasks
+- hubspot create a batch of calls
+- hubspot permanently delete a call for gdpr compliance
+- customer service
+- hubspot update a meeting
+- hubspot list email engagement associations
+- hubspot
 - batchupdatetasks
+- hubspot list tasks
+- hubspot create a batch of notes
+- batchcreatenotes
+- batchreadcalls
+- createcall
+- analytics
+- hubspot update a batch of calls
+- listmeetingassociations
+- hubspot get a task
 - hubspot read a batch of notes
+- deleteemailengagement
+- getmeeting
+- createtaskassociation
+- batchreadtasks
+- deletemeetingassociation
+- listtasks
 - hubspot search meetings
-- engagements
 - listnotes
+- hubspot update a batch of notes
+- hubspot batch create tasks
+- hubspot create a note
+- hubspot list all notes
+- hubspot batch read email engagements
+- commerce
+- deletetask
+- hubspot list meetings
+- marketing automation
+- hubspot permanently delete a note for gdpr compliance
+- hubspot list task associations
+- hubspot get a call by id
+- createtask
+- hubspot update a call
+- operations
+- crm
+- updatenote
+- hubspot create a meeting association
+- hubspot create a task association
+- hubspot list email engagements
+- archivecall
+- hubspot get an email engagement
+- hubspot search notes
+- searchemailengagements
+- hubspot search calls
+- hubspot create an email engagement
+- hubspot batch read tasks
+- createemailengagement
+- updatecall
+- batchcreatemeetings
+- listtaskassociations
+- hubspot get a note by id
+- content
 - hubspot archive a batch of calls
+- deletemeeting
+- hubspot update an email engagement
+- hubspot create an email engagement association
+- batchupdatecalls
+- createemailengagementassociation
+- listmeetings
+- listemailengagements
+- hubspot list all calls
+- createnote
+- hubspot batch create meetings
+- getemailengagement
+- hubspot read a batch of calls
+- createmeeting
+- hubspot delete an email engagement association
+- hubspot batch update email engagements
+- hubspot update a note
+- hubspot create a meeting
 - hubspot delete a task association
+- deletetaskassociation
+- batchcreateemailengagements
+- batcharchivenotes
+- batchupdatemeetings
+- hubspot create a call
+- updatetask
+- listcalls
+- hubspot archive a note
+- engagements
+- batchupdateemailengagements
+- hubspot batch read meetings
+- createmeetingassociation
+- deleteemailengagementassociation
+- batchreadmeetings
+- searchmeetings
+- hubspot batch update tasks
+- batcharchivecalls
+- getcallbyid
 slug: sales-engagement
 source_filename: sales-engagement.yaml
 source_heading: Capability Spec

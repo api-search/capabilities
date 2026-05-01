@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- caching
-- list functions
-- apache geode
-- platform engineering
-- engineers managing the geode cluster infrastructure
-- execute oql query
-- region crud operations, oql queries, and function execution
-- in-memory
-- developers using geode as a fast data store for applications
-- high-performance in-memory data caching and distribution
-- get all keys stored in a geode region
-- list geode regions
-- distributed systems
-- in-memory data grid
-- list all geode regions
-- manage in-memory data with regions, queries, and functions
-- get region keys
-- open source
 - Platform Engineer
-- apache
-- execute an oql query against geode regions
-- list available functions
-- server-side function execution
-- data grid
-- list all server-side functions available in the cluster
-- execute an oql query
-- list geode functions
+- execute query
+- list functions
+- get all keys stored in a geode region
 - geode region management
+- in-memory
+- list geode functions
+- developers using geode as a fast data store for applications
+- list all server-side functions available in the cluster
+- oql query execution
+- in-memory data grid
+- manage in-memory data with regions, queries, and functions
+- execute an oql query against geode regions
+- list regions
 - Application Developer
 - data management
-- oql query execution
-- execute query
-- list regions
+- execute an oql query
+- platform engineering
+- list all geode regions
+- list available functions
 - list all regions in the apache geode data grid
+- execute oql query
+- distributed systems
+- server-side function execution
+- list geode regions
+- apache geode
+- get region keys
+- caching
+- engineers managing the geode cluster infrastructure
+- apache
+- high-performance in-memory data caching and distribution
+- data grid
+- open source
+- region crud operations, oql queries, and function execution
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

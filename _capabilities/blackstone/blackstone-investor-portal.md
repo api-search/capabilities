@@ -9,10 +9,10 @@ personas: []
 provider_name: Blackstone
 provider_slug: blackstone
 search_terms:
-- finance
-- real estate
-- investment management
 - private equity
+- investment management
+- real estate
+- finance
 - alternative assets
 slug: blackstone-investor-portal
 source_filename: blackstone-investor-portal.yaml

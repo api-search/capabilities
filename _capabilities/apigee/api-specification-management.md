@@ -24,50 +24,50 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- get api spec contents
-- list apis in the registry.
-- developer portal
-- microservices
-- list specs for an api version.
+- manager packaging api products and managing developer relationships.
 - list hub specs
-- API Product Manager
-- analytics
-- API Governance Lead
-- integrations
 - architect overseeing api platform strategy and governance across the organization.
-- list api versions
 - monetization
-- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
-- list registry specs
-- list registry apis
-- list api specs
-- lint api spec
-- google cloud
-- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
-- openapi
-- Platform Architect
 - apis tracked in the apigee registry.
+- API Governance Lead
+- specs for a given api version in hub.
+- list all apis catalogued in apigee api hub — the primary api inventory for governance.
+- analytics
+- list openapi and other specs attached to an api version in the hub.
+- list registry apis
+- list hub apis
+- list spec artifacts in the apigee registry for a specific api version.
+- apigee
+- API Product Manager
 - list all apis in the api hub catalog.
-- hybrid
+- list registry specs
+- apis catalogued in api hub.
+- get api spec contents
+- microservices
+- list api versions
 - enterprise
 - api management
-- lint an api spec for compliance and quality violations — returns issues with severity and location.
-- list all apis catalogued in apigee api hub — the primary api inventory for governance.
-- api governance
-- manager packaging api products and managing developer relationships.
-- specs for a given api version in hub.
-- apigee
-- list hub apis
-- engineer managing api proxies, deployments, and policies in apigee.
-- apis catalogued in api hub.
-- list versions of a specific api in the hub catalog.
-- API Platform Engineer
-- api gateway
 - api specifications
-- list openapi and other specs attached to an api version in the hub.
+- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
+- Platform Architect
 - api hub
-- list spec artifacts in the apigee registry for a specific api version.
+- integrations
+- list apis in the registry.
+- api governance
+- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
+- lint api spec
+- openapi
+- engineer managing api proxies, deployments, and policies in apigee.
+- lint an api spec for compliance and quality violations — returns issues with severity and location.
+- api gateway
+- list api specs
+- hybrid
+- list versions of a specific api in the hub catalog.
+- google cloud
+- API Platform Engineer
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list specs for an api version.
+- developer portal
 slug: api-specification-management
 source_filename: api-specification-management.yaml
 source_heading: Capability Spec

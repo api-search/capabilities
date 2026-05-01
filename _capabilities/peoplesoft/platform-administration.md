@@ -127,79 +127,79 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- submit a new process request for scheduling.
+- invoke a service operation using get.
 - update component data
 - crm
-- list environments
-- available updates and change packages
-- submit process
-- apply updates
-- apply update
-- create component data
-- get process status
-- supply chain management
 - hcm
-- retrieve available provisioning templates.
-- update an existing record via a peoplesoft component interface.
-- retrieve provisioned peoplesoft environments.
-- get component data
-- get service operation
-- component interface resources
-- submit a new process request.
-- platform administration
-- provision environment
-- campus solutions
-- initiate application of a specific update or change package.
-- retrieve data from an asf-defined service.
-- integration
-- peoplesoft environments
-- peoplesoft
-- retrieve peoplesoft resource data.
-- list updates
-- peopletools platform services.
-- integration broker service operations
-- get resource
-- create resource
-- create service resource
-- invoke a service operation using post.
-- retrieve data from a peoplesoft component interface.
-- invoke a service operation using get.
-- initiate application of a specific update.
-- retrieve peoplesoft resource data via rest.
-- peoplesoft rest resources
-- invoke an integration broker service operation using post.
-- get service resource
-- create a new peoplesoft resource.
-- campus solutions.
-- retrieve data from a component interface.
-- retrieve process requests and their run status.
-- devops
-- provision a new environment.
-- provisioning templates
-- list processes
-- post service operation
-- create a new peoplesoft resource via rest.
-- process instance details
-- asf service resources
-- retrieve the status of a specific process instance.
-- peopletools
-- create a new record via a component interface.
-- list templates
-- enterprise software
-- retrieve provisioned environments.
-- create a resource via an asf-defined service.
-- cloud manager
-- update an existing record via a component interface.
-- submit a new process request for scheduling.
-- human capital management.
-- process requests
-- create a new record via a peoplesoft component interface.
-- financial management
-- financial and supply chain management.
-- invoke a synchronous integration broker service operation using get.
-- retrieve available updates.
-- retrieve available updates and change packages.
-- provision a new peoplesoft environment on oci.
+- apply updates
 - erp
+- create a new record via a component interface.
+- component interface resources
+- peoplesoft
+- provision a new peoplesoft environment on oci.
+- peoplesoft environments
+- retrieve process requests and their run status.
+- update an existing record via a peoplesoft component interface.
+- post service operation
+- retrieve provisioned peoplesoft environments.
+- apply update
+- submit a new process request.
+- enterprise software
+- retrieve data from an asf-defined service.
+- retrieve peoplesoft resource data.
+- list environments
+- platform administration
+- get component data
+- invoke an integration broker service operation using post.
+- create service resource
+- get service operation
+- retrieve data from a peoplesoft component interface.
+- financial and supply chain management.
+- campus solutions.
+- create a new peoplesoft resource via rest.
+- provisioning templates
+- list templates
+- get service resource
+- process requests
+- devops
+- submit process
+- peopletools
+- create component data
+- campus solutions
+- update an existing record via a component interface.
+- get resource
+- cloud manager
+- provision environment
+- list updates
+- supply chain management
+- retrieve provisioned environments.
+- initiate application of a specific update.
+- peopletools platform services.
+- create resource
+- retrieve peoplesoft resource data via rest.
+- invoke a synchronous integration broker service operation using get.
+- get process status
+- integration broker service operations
+- create a resource via an asf-defined service.
+- initiate application of a specific update or change package.
+- create a new record via a peoplesoft component interface.
+- retrieve available updates.
+- asf service resources
+- human capital management.
+- peoplesoft rest resources
+- list processes
+- create a new peoplesoft resource.
+- invoke a service operation using post.
+- retrieve available provisioning templates.
+- retrieve data from a component interface.
+- provision a new environment.
+- integration
+- retrieve available updates and change packages.
+- process instance details
+- available updates and change packages
+- financial management
+- retrieve the status of a specific process instance.
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

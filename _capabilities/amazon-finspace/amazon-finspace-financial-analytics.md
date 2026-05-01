@@ -12,12 +12,12 @@ search_terms:
 - capital markets
 - market data
 - financial services
-- aws
-- data analytics
-- kdb
-- data management
 - tick data
+- aws
 - financial analytics
+- kdb
+- data analytics
+- data management
 slug: amazon-finspace-financial-analytics
 source_filename: amazon-finspace-financial-analytics.yaml
 source_heading: Capability Spec

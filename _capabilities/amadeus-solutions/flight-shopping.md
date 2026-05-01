@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- developer building conversational travel assistants for flight search.
-- price confirmation and validation before booking.
-- hotels
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- booking
-- travel
-- search flights advanced
-- confirm pricing for a selected flight offer.
-- search for available flight offers.
-- flights
-- search
-- search flights
-- pricing
-- shopping
-- flight offer discovery and comparison.
-- developer building online travel agency flight search and booking flows.
 - confirm price
-- Travel Chatbot Developer
-- confirm flight price
-- travel technology
-- confirm current price and availability.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- airlines
-- upsell, seat selection, and add-on services.
-- gds
-- amadeus
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- complete flight shopping flow from search through price confirmation.
 - OTA Developer
+- flights
+- confirm current price and availability.
 - search available flights by origin, destination, and date.
+- price confirmation and validation before booking.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- developer building online travel agency flight search and booking flows.
+- search flights
+- search flights advanced
+- complete flight shopping flow from search through price confirmation.
+- search for available flight offers.
+- gds
+- shopping
+- upsell, seat selection, and add-on services.
+- confirm flight price
+- search
+- Travel Chatbot Developer
+- travel technology
+- booking
+- confirm pricing for a selected flight offer.
+- amadeus
+- flight offer discovery and comparison.
+- travel
+- pricing
+- hotels
+- airlines
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- developer building conversational travel assistants for flight search.
+- confirm the current price and availability of a selected flight offer before creating a booking.
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

@@ -17,35 +17,35 @@ personas: []
 provider_name: Basecamp
 provider_slug: basecamp
 search_terms:
-- saas
-- post a new message to a basecamp message board
-- create basecamp project
-- post message
-- Project Manager
-- project management
 - developer integrating basecamp into custom workflows and tools
-- full basecamp project lifecycle including todos, messages, scheduling, and team management
-- Developer
-- create a new basecamp project
-- basecamp
-- list todos
-- manager overseeing project progress, tasks, and team communication
-- list messages
-- create a new to-do item in a basecamp project
-- project creation and lifecycle management
-- list basecamp projects
-- list all people in the basecamp account
-- list messages on a basecamp message board
-- collaboration
 - create todo
-- list to-dos in a basecamp todolist
+- list todos
 - rest
-- list all active basecamp projects for the account
-- list team members
-- Team Member
-- team communication
+- list to-dos in a basecamp todolist
 - individual contributor managing tasks and collaborating on projects
+- project management
+- list messages on a basecamp message board
 - to-dos, messages, and team member management
+- Team Member
+- list all people in the basecamp account
+- saas
+- manager overseeing project progress, tasks, and team communication
+- project creation and lifecycle management
+- create a new to-do item in a basecamp project
+- team communication
+- full basecamp project lifecycle including todos, messages, scheduling, and team management
+- create basecamp project
+- collaboration
+- post a new message to a basecamp message board
+- post message
+- list team members
+- Developer
+- basecamp
+- list basecamp projects
+- Project Manager
+- list messages
+- list all active basecamp projects for the account
+- create a new basecamp project
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

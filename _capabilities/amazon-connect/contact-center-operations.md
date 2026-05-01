@@ -62,80 +62,80 @@ personas: []
 provider_name: Amazon Connect
 provider_slug: amazon-connect
 search_terms:
-- responsible for configuring and managing the amazon connect instance, including users, queues, routing profiles, and contact flows.
-- configuration and lifecycle management of amazon connect instances
-- user/agent account management and workforce administration
-- chat
-- metrics
+- get details of an amazon connect instance
+- Contact Center Administrator
 - voice
-- list agents
-- customer service
-- list instances
+- unified workflow for managing and monitoring the amazon connect contact center, combining instance administration, agent management, queue configuration, and real-time/historical metrics.
+- get details and status of a specific amazon connect instance
 - amazon connect instance management
-- create instance
-- search contacts
-- start chat contact
-- historical metrics
-- amazon connect
-- search for past contacts by time range, agent, queue, or channel
-- get details of a specific agent including their routing profile and security profile
+- start outbound voice contact
+- list all amazon connect instances
+- list routing profiles in an amazon connect instance
+- Contact Center Supervisor
 - list agents in an amazon connect instance
+- configuration and lifecycle management of amazon connect instances
+- metrics
+- list all amazon connect contact center instances in the aws account
+- manages day-to-day contact center operations including agent status, contact handling, and performance reporting.
 - contact search
-- list routing profiles
+- list all agents/users in an amazon connect instance
+- get details of a specific agent
+- user/agent account management and workforce administration
+- search contacts
 - place an outbound call from the contact center to a customer phone number
+- list all contact flows in an amazon connect instance
 - omnichannel
 - list contact flows
-- create a new queue in an amazon connect instance
-- queue, routing profile, and contact flow configuration for intelligent routing
-- get details of a specific agent
-- list routing profiles in an amazon connect instance
-- describe contact
-- create agent
-- list all agents/users in an amazon connect instance
-- aws
-- start outbound voice contact
-- create a new amazon connect instance
-- list contact flows in an amazon connect instance
-- contact center
-- list all amazon connect instances
-- get details and status of a specific amazon connect instance
-- list queues
-- list all routing profiles configured in an amazon connect instance
-- initiation, management, and search of contact interactions
-- real-time and historical performance metrics and reporting
-- get details of an amazon connect instance
-- Operations Team
-- describe instance
-- single instance operations
-- search contacts in an amazon connect instance
-- list all amazon connect contact center instances in the aws account
-- create queue
-- get historical metrics for an amazon connect instance
+- search for past contacts by time range, agent, queue, or channel
 - real-time metrics
-- get historical metrics for contacts handled, handle time, abandon rate, and service level
-- routing profile management
-- Contact Center Supervisor
-- operations
 - get historical metrics
-- manages day-to-day contact center operations including agent status, contact handling, and performance reporting.
-- initiate a chat contact session with a customer
-- unified workflow for managing and monitoring the amazon connect contact center, combining instance administration, agent management, queue configuration, and real-time/historical metrics.
-- monitors agent activity, queue health, and contact center performance using real-time and historical metrics dashboards.
-- agent/user management
-- get current metrics
-- get real-time metrics for queues and agents
-- individual agent operations
-- ai
-- list queues in an amazon connect instance
-- contact flow management
-- queue management
-- get agent
 - get full details of a specific contact interaction
-- get real-time metrics showing agents online, contacts in queue, and queue health
+- aws
+- queue management
+- list queues
+- list queues in an amazon connect instance
 - list all queues configured in an amazon connect instance
-- list all contact flows in an amazon connect instance
+- list instances
+- routing profile management
+- list all routing profiles configured in an amazon connect instance
+- get historical metrics for contacts handled, handle time, abandon rate, and service level
+- chat
+- get historical metrics for an amazon connect instance
+- get current metrics
+- get real-time metrics showing agents online, contacts in queue, and queue health
+- real-time and historical performance metrics and reporting
+- initiation, management, and search of contact interactions
+- list agents
+- responsible for configuring and managing the amazon connect instance, including users, queues, routing profiles, and contact flows.
+- list routing profiles
+- contact flow management
+- get agent
+- Operations Team
+- amazon connect
+- describe instance
+- list contact flows in an amazon connect instance
+- create agent
+- search contacts in an amazon connect instance
+- create instance
 - create a new agent in an amazon connect instance
-- Contact Center Administrator
+- get real-time metrics for queues and agents
+- describe contact
+- initiate a chat contact session with a customer
+- monitors agent activity, queue health, and contact center performance using real-time and historical metrics dashboards.
+- start chat contact
+- single instance operations
+- ai
+- customer service
+- individual agent operations
+- create a new queue in an amazon connect instance
+- agent/user management
+- historical metrics
+- contact center
+- queue, routing profile, and contact flow configuration for intelligent routing
+- create queue
+- operations
+- create a new amazon connect instance
+- get details of a specific agent including their routing profile and security profile
 slug: contact-center-operations
 source_filename: contact-center-operations.yaml
 source_heading: Capability Spec

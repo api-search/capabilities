@@ -41,51 +41,51 @@ personas: []
 provider_name: Amazon Ground Station
 provider_slug: amazon-ground-station
 search_terms:
-- satellite contact scheduling
-- mission control
-- space technology
-- list all mission profiles
-- list configs
-- list trackable satellites
-- list ground stations
-- satellite mission profiles
-- satellite tracking information
-- list available ground stations
-- data processing
-- list satellite contacts
-- create a new mission profile defining satellite operations parameters
-- get detailed information about a specific satellite contact
-- list contacts
-- create dataflow endpoint group
-- list all dataflow endpoint and antenna configurations
-- describe contact
-- Mission Control Engineer
-- create mission profile
-- cancel a previously scheduled satellite contact
-- list all satellites that can be tracked through aws ground station
-- aws
-- list all configured satellite mission profiles
-- list all satellite contacts
-- ground station locations
-- create a dataflow endpoint group for satellite data delivery
-- Satellite Operator
-- schedule a satellite contact
-- list ground station locations
-- schedules and manages satellite contacts and data downlinks
 - cancel satellite contact
-- configures mission profiles and dataflow infrastructure
+- list all dataflow endpoint and antenna configurations
+- list contacts
+- list trackable satellites
+- list ground station locations
+- list ground stations
 - amazon ground station
-- reserve satellite contact
-- list satellites
-- iot
-- list all available aws ground station antenna locations worldwide
-- reserve contact
-- create a new mission profile
-- list all scheduled and historical satellite contacts with status and timing
-- satellite communications
-- schedule a new satellite contact window at an aws ground station
-- satellite operations
+- list all satellites that can be tracked through aws ground station
+- data processing
+- cancel a previously scheduled satellite contact
 - list mission profiles
+- Satellite Operator
+- iot
+- list satellites
+- list all configured satellite mission profiles
+- configures mission profiles and dataflow infrastructure
+- aws
+- list satellite contacts
+- get detailed information about a specific satellite contact
+- list all scheduled and historical satellite contacts with status and timing
+- Mission Control Engineer
+- satellite tracking information
+- create mission profile
+- schedule a new satellite contact window at an aws ground station
+- satellite mission profiles
+- list all satellite contacts
+- satellite contact scheduling
+- create a new mission profile defining satellite operations parameters
+- satellite communications
+- create a new mission profile
+- list all available aws ground station antenna locations worldwide
+- reserve satellite contact
+- schedules and manages satellite contacts and data downlinks
+- describe contact
+- list available ground stations
+- list configs
+- reserve contact
+- schedule a satellite contact
+- ground station locations
+- satellite operations
+- create a dataflow endpoint group for satellite data delivery
+- space technology
+- mission control
+- list all mission profiles
+- create dataflow endpoint group
 slug: amazon-ground-station-satellite-operations
 source_filename: amazon-ground-station-satellite-operations.yaml
 source_heading: Capability Spec

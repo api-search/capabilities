@@ -39,46 +39,46 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get options data.
-- market data
-- portfolio analytics
-- foreign exchange rates.
-- financial
-- financial data
-- get real-time time series.
-- get quotes
-- get foreign exchange rates.
-- get prices
-- pricing
-- global equity prices.
-- get fx
-- get time series
-- factset
-- get ticks
-- get global prices
-- get intraday tick history.
-- options data.
-- get price alerting data.
-- get tick history.
-- get intraday ticks
 - get global equity prices.
 - get real-time news.
 - get equity prices and returns.
-- get equity prices.
-- real-time quotes.
-- get price alerts
-- get rt quotes
-- get fx rates
-- real-time data
-- get historical tick data.
-- get tick history
-- investment analytics
 - research
-- historical tick data.
 - get options
+- get fx rates
+- get global prices
+- get equity prices.
+- get fx
+- get ticks
+- get time series
+- historical tick data.
 - get real-time quotes.
+- get historical tick data.
+- get rt quotes
+- foreign exchange rates.
+- get intraday tick history.
+- get prices
+- financial data
+- get real-time time series.
+- market data
+- financial
+- factset
+- get quotes
+- options data.
+- real-time data
+- portfolio analytics
+- real-time quotes.
+- get options data.
 - get fx rates.
+- investment analytics
 - get rt news
+- global equity prices.
+- pricing
+- get tick history.
+- get foreign exchange rates.
+- get price alerts
+- get tick history
+- get price alerting data.
+- get intraday ticks
 slug: market-data-pricing
 source_filename: market-data-pricing.yaml
 source_heading: Capability Spec

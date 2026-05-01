@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon S3 Glacier
 provider_slug: amazon-s3-glacier
 search_terms:
-- backup
-- aws cloud resource management
-- automation workflow for amazon s3 glacier
 - cloud operations
 - archive
-- aws
-- amazon s3 glacier resources
-- engineer managing amazon s3 glacier resources
+- aws cloud resource management
 - list resources
+- automation workflow for amazon s3 glacier
+- backup
 - amazon s3 glacier
-- storage
+- engineer managing amazon s3 glacier resources
+- aws
 - list amazon s3 glacier resources
+- amazon s3 glacier resources
+- storage
 slug: amazon-s3-glacier
 source_filename: amazon-s3-glacier.yaml
 source_heading: Capability Spec

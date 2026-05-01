@@ -26,31 +26,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- registers a merchant domain to accept apple pay on the web payments
-- validate merchant
-- register a domain for apple pay on the web
-- digital wallet
-- e-commerce
 - contactless payments
-- registering and managing merchant identity and domains for apple pay
-- apple pay
-- engineer building payment processing infrastructure supporting multiple payment methods
-- payments
-- validate apple pay merchant
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- merchant domain management for apple pay
-- validates merchant and obtains apple pay payment session
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- initiating and completing apple pay payment authorizations
 - checkout
+- register a domain for apple pay on the web
+- registering and managing merchant identity and domains for apple pay
+- validate apple pay merchant
+- merchant domain management for apple pay
+- apple pay
+- digital wallet
 - mobile payments
-- register domain
-- developer integrating apple pay into a web or mobile checkout experience
-- Payment Integration Engineer
-- register apple pay domain
-- apple pay merchant validation and payment session
-- apple
 - E Commerce Developer
+- register apple pay domain
+- validates merchant and obtains apple pay payment session
+- initiating and completing apple pay payment authorizations
+- apple
+- apple pay merchant validation and payment session
+- validate merchant
+- validates merchant identity with apple and returns a payment session object for completing checkout
+- payments
+- developer integrating apple pay into a web or mobile checkout experience
+- engineer building payment processing infrastructure supporting multiple payment methods
+- e-commerce
+- registers a merchant domain to accept apple pay on the web payments
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
+- Payment Integration Engineer
+- register domain
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- realm clients.
 - get user
-- specific realm.
+- list client applications in a realm.
+- terminate a user session.
+- realm groups.
+- list realms
+- list all keycloak realms.
+- list users in a realm.
+- linux
+- list groups.
+- kubernetes
+- list all realms.
+- create client
+- realm users.
+- realm clients.
+- keycloak
+- delete session
+- list users.
+- register a new client application.
+- list realm roles
+- list roles in a realm.
+- get realm details.
+- get realm
+- enterprise
+- list roles.
+- list clients
+- list groups in a realm.
+- create user
+- identity providers.
+- get user details.
+- delete user
+- delete a user from a realm.
+- list external identity providers.
+- keycloak realms.
 - create a user.
-- list roles
+- identity
 - create a new user in a realm.
 - containers
-- list groups.
-- list identity providers
-- hybrid cloud
-- register a new client application.
-- linux
-- get realm details.
-- kubernetes
-- access management
-- list external identity providers.
-- create client
-- keycloak realms.
-- identity
 - list groups
-- delete a user from a realm.
-- identity providers.
-- get realm
-- delete user
-- list realm roles
-- terminate a user session.
-- realm users.
-- realm groups.
-- list users in a realm.
-- list users.
 - red hat
-- list client applications in a realm.
-- list clients
-- list realms
-- list all realms.
-- enterprise
-- list clients.
-- list identity providers.
-- open source
-- get user details.
-- list groups in a realm.
-- list all keycloak realms.
-- list users
-- keycloak
-- create user
-- delete session
+- list identity providers
+- access management
 - cloud
 - realm roles.
+- open source
+- list identity providers.
+- specific realm.
+- list clients.
 - get realm configuration details.
-- list roles in a realm.
-- list roles.
+- list users
+- hybrid cloud
+- list roles
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

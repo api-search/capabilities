@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- manages invoicing, payments, and revenue assurance
-- saas
-- manages telco bss operations and system configuration
-- add a service subscription to a customer account
-- browse the service catalog and available plans
 - list customers
-- product and service catalog
 - list all customer accounts
-- list invoices
-- unified bss workflow for customer onboarding, billing, and service management
-- oss
-- create customer
+- customer billing invoices
+- manages telco bss operations and system configuration
+- add a service subscription
+- browse available products and plans
 - handles customer inquiries and account management
-- list subscriptions for a customer
-- onboard a new customer
 - customer management
 - list subscriptions
-- telecom customer account management
-- retrieve billing invoices for a customer
-- Billing Team
-- mvno
-- customer billing invoices
-- bss
-- list service subscriptions for a customer
-- 5g
-- BSS Operator
-- customer subscription management
-- create subscription
-- list products
-- billing
-- telecom
-- onboard a new telecom customer
-- amdocs
-- list telecom customer accounts
-- browse available products and plans
-- Customer Care Agent
 - list invoices for a customer
-- add a service subscription
+- onboard a new customer
+- telecom
+- list service subscriptions for a customer
+- retrieve billing invoices for a customer
+- saas
+- Customer Care Agent
+- customer subscription management
+- BSS Operator
+- oss
+- create subscription
+- telecom customer account management
+- list telecom customer accounts
+- unified bss workflow for customer onboarding, billing, and service management
+- browse the service catalog and available plans
+- mvno
+- list subscriptions for a customer
+- amdocs
+- onboard a new telecom customer
+- add a service subscription to a customer account
+- bss
+- 5g
+- Billing Team
+- manages invoicing, payments, and revenue assurance
+- list products
+- list invoices
+- product and service catalog
+- create customer
+- billing
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

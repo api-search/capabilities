@@ -35,48 +35,48 @@ personas: []
 provider_name: Indeed
 provider_slug: indeed
 search_terms:
-- update job posting
-- list job postings.
-- update candidate disposition status.
-- update disposition
-- get employer details.
-- update a job posting.
-- list employer jobs
-- job postings
-- indeed
-- create a job posting.
-- get employer
-- update employer
-- candidate management.
-- careers
-- list candidates for an employer.
-- create an employer entity.
-- hiring
+- employer management.
 - list job postings for an employer.
+- update candidate disposition status.
+- list candidates
+- create a job posting.
+- get employer details.
+- create an employer entity.
+- job postings
 - get job posting
-- individual employer management.
-- jobs
-- create employer
+- list candidates for an employer.
+- expire job posting
+- update employer details.
+- create a job posting on indeed.
+- create an employer entity on indeed.
+- list jobs
+- update employer
+- get employer
+- expire a job posting.
 - recruiting
 - get candidate
-- get candidate details.
-- create job posting
-- employer management.
-- talent acquisition
-- update employer details.
-- register employer for candidate sync.
-- create job
-- job posting management.
-- create a job posting on indeed.
+- update disposition
+- create employer
+- list job postings.
+- candidate management.
 - register candidate sync
-- employment
-- job search
-- list jobs
-- create an employer entity on indeed.
-- expire a job posting.
-- list candidates
+- list employer jobs
+- hiring
+- create job posting
+- talent acquisition
+- jobs
+- job posting management.
 - get job posting details.
-- expire job posting
+- register employer for candidate sync.
+- job search
+- update job posting
+- employment
+- careers
+- get candidate details.
+- individual employer management.
+- update a job posting.
+- indeed
+- create job
 slug: talent-acquisition
 source_filename: talent-acquisition.yaml
 source_heading: Capability Spec

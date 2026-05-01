@@ -40,59 +40,59 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- validate postal address and determine jurisdiction
-- tax exemption certificates
 - list customers
-- import duties, vat, and e-invoicing for international trade
+- check einvoicing mandate
+- manages sales tax compliance, exemption certificates, and returns filing
+- exemptions
+- list tax transactions
+- validate postal address and determine jurisdiction
+- list certificates
 - list tax exemption certificates for exempt customers
-- validate postal address
-- submit an e-invoice document for cross-border or domestic compliance
+- tax exemption certificate collection and validation
+- sales tax calculation, certificate management, and e-invoicing
+- submit einvoice
+- address validation
+- calculate sales tax
+- integrates avalara apis into erp and billing systems
+- e-invoicing
+- hs code and tax code classification for products
+- create certificate
+- submit e-invoice for compliance
+- list submitted e-invoice documents and their status
+- country-specific e-invoicing mandate compliance
+- validate a postal address and determine the applicable tax jurisdiction
+- International Trade Manager
+- create exemption certificate
+- calculate sales tax, vat, or gst
+- oversees tax strategy, compliance automation, and cost optimization
+- real-time tax calculation across us and global jurisdictions
+- tax calculations for transactions
+- validate address
+- sales tax
+- list mandates
+- e-invoice submission
+- tax compliance
+- list e-invoicing mandates by country
+- check e-invoicing mandate requirements for a country
+- import duties, vat, and e-invoicing for international trade
+- list exemption certificates
+- avalara
+- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- list certcapture customer accounts
+- manages cross-border compliance, tariff classification, and e-invoicing
+- vat returns, 1099 filing, and lodging tax reporting
 - list submitted einvoices
 - Tax Manager
-- sales tax
-- check einvoicing mandate
-- address validation
-- submit einvoice
-- check e-invoicing mandate requirements for a country
-- list submitted e-invoice documents and their status
-- taxes
-- validate address
-- list tax transactions
-- manages sales tax compliance, exemption certificates, and returns filing
-- validate a postal address and determine the applicable tax jurisdiction
-- avalara
-- list mandates
-- list transactions
-- tax exemption certificate collection and validation
-- manages cross-border compliance, tariff classification, and e-invoicing
-- list certcapture customer accounts
-- tax compliance
-- calculate tax
-- calculate sales tax, vat, or gst
-- create a new tax exemption certificate for a customer
-- vat returns, 1099 filing, and lodging tax reporting
-- oversees tax strategy, compliance automation, and cost optimization
-- integrates avalara apis into erp and billing systems
-- calculate sales tax
-- list certificates
-- submit e-invoice for compliance
-- e-invoicing mandate requirements
-- real-time tax calculation across us and global jurisdictions
-- e-invoice submission
-- Finance Director
-- calculate sales tax, vat, or gst for a transaction across all jurisdictions
-- list exemption certificates
-- hs code and tax code classification for products
-- create exemption certificate
-- exemptions
-- list e-invoicing mandates by country
-- sales tax calculation, certificate management, and e-invoicing
 - list historical tax transactions for audit and reconciliation
-- country-specific e-invoicing mandate compliance
-- e-invoicing
-- International Trade Manager
-- create certificate
-- tax calculations for transactions
+- taxes
+- e-invoicing mandate requirements
+- calculate tax
+- create a new tax exemption certificate for a customer
+- Finance Director
+- tax exemption certificates
+- submit an e-invoice document for cross-border or domestic compliance
+- validate postal address
+- list transactions
 slug: avalara-tax-compliance
 source_filename: avalara-tax-compliance.yaml
 source_heading: Capability Spec

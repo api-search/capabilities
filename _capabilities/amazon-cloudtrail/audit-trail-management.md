@@ -10,15 +10,15 @@ personas: []
 provider_name: Amazon CloudTrail
 provider_slug: amazon-cloudtrail
 search_terms:
-- cloudtrail
-- compliance
-- security
 - governance
-- aws
 - Security Analyst
+- security
 - audit
 - amazon web services
+- aws
+- cloudtrail
 - amazon cloudtrail
+- compliance
 slug: audit-trail-management
 source_filename: audit-trail-management.yaml
 source_heading: Capability Spec

@@ -45,51 +45,51 @@ personas: []
 provider_name: Amazon Global Accelerator
 provider_slug: amazon-global-accelerator
 search_terms:
-- cdn
-- networking
-- update endpoint group traffic settings and weights
-- create an endpoint group
-- configures and optimizes global network traffic routing
-- performance
-- Network Engineer
-- create a new listener
-- create listener
-- traffic routing
-- update listener
-- DevOps Engineer
-- create a new accelerator with static ips
-- list all listeners
-- list endpoint groups
-- aws
-- get detailed status and configuration of a specific accelerator
-- update listener configuration including ports and protocol
-- create endpoint group
-- update accelerator configuration and settings
-- delete accelerator
-- list all endpoint groups for a listener
-- delete an accelerator
-- create a listener for an accelerator specifying ports and protocol
+- update endpoint group
+- manage global accelerator accelerators
 - create accelerator
 - manage endpoint groups for traffic routing
-- list all global accelerator accelerators and their static ip addresses
-- amazon global accelerator
-- load balancing
-- describe accelerator
-- manage global accelerator accelerators
-- global
-- manage listeners for accelerators
-- update accelerator
-- create an endpoint group to route traffic to specific aws resources
-- list accelerators
-- create a new global accelerator with static anycast ip addresses
-- availability
-- list all accelerators
-- list all listeners configured for an accelerator
-- update endpoint group
-- manage a specific accelerator
 - manages application infrastructure and availability
+- DevOps Engineer
+- create a listener for an accelerator specifying ports and protocol
+- update accelerator
+- create a new listener
+- delete accelerator
+- list all listeners configured for an accelerator
+- load balancing
+- manage a specific accelerator
 - get accelerator details and status
+- Network Engineer
+- get detailed status and configuration of a specific accelerator
+- create listener
 - list listeners
+- aws
+- update accelerator configuration and settings
+- configures and optimizes global network traffic routing
+- update listener
+- availability
+- list all listeners
+- list accelerators
+- create an endpoint group to route traffic to specific aws resources
+- create endpoint group
+- list endpoint groups
+- create an endpoint group
+- amazon global accelerator
+- delete an accelerator
+- cdn
+- traffic routing
+- update endpoint group traffic settings and weights
+- manage listeners for accelerators
+- performance
+- list all accelerators
+- list all global accelerator accelerators and their static ip addresses
+- describe accelerator
+- create a new global accelerator with static anycast ip addresses
+- create a new accelerator with static ips
+- networking
+- list all endpoint groups for a listener
+- update listener configuration including ports and protocol
+- global
 slug: amazon-global-accelerator-network-operations
 source_filename: amazon-global-accelerator-network-operations.yaml
 source_heading: Capability Spec

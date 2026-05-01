@@ -37,65 +37,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- ajo list messages
-- Data Engineer
-- CDP Administrator
-- list available metrics for an adobe analytics report suite.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- list journeys
-- target list audiences
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- list content offers in adobe target.
-- list activities
-- digital analytics reporting and audience insights.
-- administrator managing customer profiles, segments, and identity resolution.
-- adobe experience cloud
-- list journey optimizer journeys.
-- analytics
-- target list offers
-- list segments
-- journey orchestration
-- run analytics report
-- ajo list offers
-- analytics list metrics
+- a/b test and personalization activities.
 - customer experience
+- journey orchestration
+- analytics list segments
 - personalized offers.
+- Marketing Technologist
+- personalization
+- analytics
+- ajo create offer
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- create a new personalized offer in adobe journey optimizer.
+- list analytics segments.
+- customer journeys.
+- list campaign messages in adobe journey optimizer.
+- campaign management
+- audience segment management.
+- list target activities.
+- list available metrics for an adobe analytics report suite.
+- list audiences
+- adobe experience cloud
+- digital analytics reporting and audience insights.
+- target list offers
+- ajo list offers
+- run report
+- ajo list messages
+- list content offers in adobe target.
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- list a/b test and personalization activities in adobe target.
+- technical marketer integrating experience cloud apis into marketing stack.
+- run an adobe analytics report.
+- unified customer profiles and data management.
+- list journey optimizer journeys.
+- target list activities
+- Data Engineer
+- Digital Marketer
+- multi-channel customer journey management.
+- list activities
+- list target audiences.
+- list journeys
+- marketing professional using analytics, personalization, and journey tools.
+- ajo list journeys
+- list personalized offers in adobe journey optimizer.
+- list customer journeys in adobe journey optimizer.
+- digital marketing
+- list audience segments in adobe analytics.
 - list journey optimizer offers.
+- target audiences.
+- CDP Administrator
+- analytics report execution.
+- run analytics report
+- administrator managing customer profiles, segments, and identity resolution.
+- target list audiences
+- a/b testing and content personalization.
+- list segments
+- list targeting audiences in adobe target.
 - run an adobe analytics report with dimensions, metrics, and segments.
 - profile management, audience segmentation, and data ingestion.
-- ajo create offer
-- run an adobe analytics report.
-- create a new personalized offer in adobe journey optimizer.
-- technical marketer integrating experience cloud apis into marketing stack.
-- a/b testing and content personalization.
-- marketing professional using analytics, personalization, and journey tools.
-- a/b test and personalization activities.
-- analytics report execution.
-- target audiences.
-- list campaign messages in adobe journey optimizer.
-- list audience segments in adobe analytics.
-- list target audiences.
-- ajo list journeys
-- run report
-- unified customer profiles and data management.
-- list target activities.
-- analytics list segments
-- list customer journeys in adobe journey optimizer.
-- customer journeys.
-- Digital Marketer
-- campaign management
-- list audiences
-- list personalized offers in adobe journey optimizer.
-- digital marketing
-- list a/b test and personalization activities in adobe target.
-- list targeting audiences in adobe target.
+- analytics list metrics
 - list offers
-- Marketing Technologist
-- audience segment management.
-- list analytics segments.
-- personalization
-- target list activities
-- multi-channel customer journey management.
 slug: digital-marketing
 source_filename: digital-marketing.yaml
 source_heading: Capability Spec

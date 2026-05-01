@@ -30,60 +30,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- engineer building data pipelines and enrichment workflows
-- enrich company data from domain
-- web scraping
-- company enrichment
-- get current timezone for a location
-- retrieve timezone and current time for a location
-- detection and blocking of fraudulent users, transactions, and bot activity
-- avatars
-- get current timezone
-- vat validation
-- currency conversion, vat compliance, and banking validation for financial applications
-- convert date/time from one timezone to another
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- enrich company
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- ip geolocation
-- abstract api
-- exchange rates
-- ip intelligence
-- geolocate an ip address
-- get current time and timezone information for any location
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- compliance analyst
-- currencies
-- product engineer
-- data engineer
-- geolocate ip
-- get location data for an ip address
-- finance engineer
 - phone validation
-- fraud analyst
-- iban validation
-- convert time between zones
-- geolocate an ip address to get country, city, timezone, and currency data
+- compliance analyst
+- get current timezone
+- enrich company data from domain
 - get timezone
-- exchange rates, vat validation, and iban validation for financial compliance
-- enrich company data
-- engineer building fraud detection and threat intelligence systems
+- data engineer
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- product engineer
 - developer building user onboarding and personalization features
+- geolocate an ip address to get country, city, timezone, and currency data
+- currency conversion, vat compliance, and banking validation for financial applications
+- ip intelligence
 - timezones
-- data enrichment
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- public holidays
-- image processing
-- security engineer
-- geolocation
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- developer building payment, billing, and financial compliance systems
-- contacts
-- geolocate ip address
+- ip geolocation
+- web scraping
+- get location data for an ip address
+- avatars
+- exchange rates, vat validation, and iban validation for financial compliance
+- currencies
+- finance engineer
+- iban validation
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- retrieve timezone and current time for a location
 - retrieve company name, industry, headcount, logo, and location from a domain or email
-- get company details from domain or email
-- email validation
+- exchange rates
+- convert date/time from one timezone to another
+- contacts
+- public holidays
+- security engineer
+- enrich company
+- data enrichment
+- vat validation
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- fraud analyst
+- get current time and timezone information for any location
+- geolocate an ip address
+- convert time between zones
+- engineer building data pipelines and enrichment workflows
+- detection and blocking of fraudulent users, transactions, and bot activity
+- abstract api
 - screenshots
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- image processing
+- enrich company data
+- geolocation
+- company enrichment
+- get company details from domain or email
+- engineer building fraud detection and threat intelligence systems
+- developer building payment, billing, and financial compliance systems
+- email validation
+- geolocate ip address
+- get current timezone for a location
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- geolocate ip
 slug: data-enrichment
 source_filename: data-enrichment.yaml
 source_heading: Capability Spec

@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- Developer
-- AI Engineer
-- developer integrating ai capabilities into applications via aimlapi
-- generate embeddings
-- llm
-- embeddings
-- generate a chat response from any of 400+ ai language models via aimlapi
-- list models
-- create a chat completion
-- generate an image from a text prompt using aimlapi image generation models
-- list available models
-- machine learning
-- artificial intelligence
-- create embeddings
-- developer tools
-- image generation
-- speech
-- create image
-- discover all 400+ available ai models on aimlapi platform
-- ai models
-- generate image
-- generate an image
-- chat completions via 400+ llms
-- ai model inference across modalities
-- video generation
-- generate vector embeddings for semantic search and rag applications
-- ai engineer evaluating and comparing models for ml pipelines
-- list all models
-- api gateway
-- create embedding
-- create chat completion
 - api key management and model discovery
+- video generation
+- generate image
+- generate an image from a text prompt using aimlapi image generation models
+- speech
+- create embedding
+- list available models
+- generate vector embeddings for semantic search and rag applications
+- machine learning
+- image generation
+- list models
+- developer integrating ai capabilities into applications via aimlapi
+- llm
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- generate embeddings
+- discover all 400+ available ai models on aimlapi platform
+- list all models
+- ai engineer evaluating and comparing models for ml pipelines
+- embeddings
+- chat completions via 400+ llms
+- artificial intelligence
+- AI Engineer
+- create embeddings
+- Developer
+- create a chat completion
+- create image
+- ai model inference across modalities
+- create chat completion
+- api gateway
+- developer tools
+- ai models
+- generate an image
+- generate a chat response from any of 400+ ai language models via aimlapi
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

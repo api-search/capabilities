@@ -60,48 +60,48 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- list pipeline runs
-- list fields
-- pipeline runs
-- project management
-- create work item
-- list all pipelines
-- single pipeline run
-- work items
-- list all work item field definitions
-- get details of a pipeline run
-- query work items
 - trigger a pipeline run
-- list all pipelines in a project
-- run pipeline
-- pipeline definitions
-- work item batch and creation
-- create a new work item
-- work item field definitions
-- create a new pipeline
-- list work item fields
-- individual work item operations
-- get work items batch
-- get multiple work items by ids
 - update work item
-- pipelines
-- list runs for a pipeline
-- devops
-- list pipelines
-- query work items using wiql
-- azure devops
 - get pipeline
-- get a pipeline by id
-- get a pipeline run
-- get a work item by id
-- wiql query execution
-- ci/cd
-- single pipeline
-- create pipeline
+- project management
+- list all pipelines
+- azure devops
+- list all pipelines in a project
 - get work item
-- get pipeline run
+- list work item fields
+- wiql query execution
+- pipelines
+- create a new work item
+- query work items using wiql
+- devops
+- get details of a pipeline run
+- get a pipeline run
+- individual work item operations
+- ci/cd
+- create a new pipeline
+- work item batch and creation
 - azure
+- create work item
 - update a work item
+- pipeline definitions
+- get pipeline run
+- list all work item field definitions
+- get work items batch
+- single pipeline
+- get multiple work items by ids
+- pipeline runs
+- single pipeline run
+- run pipeline
+- list runs for a pipeline
+- get a work item by id
+- list pipeline runs
+- work item field definitions
+- list fields
+- list pipelines
+- work items
+- query work items
+- get a pipeline by id
+- create pipeline
 slug: devops-project-management
 source_filename: devops-project-management.yaml
 source_heading: Capability Spec

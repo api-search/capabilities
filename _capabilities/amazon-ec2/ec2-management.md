@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- startInstances
-- amazon ec2
-- runInstances
-- terminate instances
-- stop instances
-- amazon ec2 stop running instances
-- start instances
-- stopInstances
-- rebootInstances
 - amazon ec2 terminate instances
-- compute
-- amazon ec2 describe ec2 instances
-- run instances
-- amazon ec2 describe instance status
-- engineers managing amazon ec2 resources on aws.
-- aws
-- deregisterImage
-- amazon ec2 start stopped instances
+- amazon ec2
 - createImage
-- infrastructure
-- describeInstanceStatus
-- describeInstances
-- workflow capability for cloud compute management.
-- virtual machines
-- amazon ec2 deregister an ami
-- describe instances
-- terminateInstances
-- cloud compute management business domain for amazon ec2.
-- describe images
-- cloud computing
-- amazon ec2 create an ami from an instance
-- create image
-- amazon ec2 describe amis
 - describeImages
+- start instances
+- describe images
+- stopInstances
+- deregisterImage
+- amazon ec2 describe amis
+- amazon ec2 start stopped instances
+- runInstances
+- amazon ec2 launch ec2 instances
+- infrastructure
+- terminateInstances
+- amazon ec2 describe ec2 instances
+- amazon ec2 deregister an ami
 - iaas
 - describe instance status
-- amazon ec2 reboot instances
+- describeInstanceStatus
+- run instances
+- startInstances
+- virtual machines
+- aws
 - deregister image
-- amazon ec2 launch ec2 instances
+- engineers managing amazon ec2 resources on aws.
+- amazon ec2 reboot instances
+- cloud computing
+- amazon ec2 stop running instances
+- stop instances
+- cloud compute management business domain for amazon ec2.
 - reboot instances
+- compute
+- create image
+- workflow capability for cloud compute management.
+- describeInstances
+- describe instances
+- terminate instances
+- rebootInstances
+- amazon ec2 create an ami from an instance
+- amazon ec2 describe instance status
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

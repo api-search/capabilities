@@ -28,52 +28,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- supply chain
-- complete an assembly.
-- mfg get discrete jobs
-- inv get deliveries
-- get discrete jobs
-- retrieve inventory items.
 - get discrete job by id.
-- mfg get discrete job by id
-- discrete job management.
-- list boms.
-- mfg complete assembly
-- mfg issue material
-- get onhand quantities
-- bom management.
-- mfg get bills of material
-- mfg get routings
-- get inventory items
-- retrieve routings.
-- production
-- list on-hand quantities.
-- mfg get bill of material by id
-- retrieve sales orders.
-- list discrete jobs.
-- enterprise
+- get bills of material
 - business applications
-- mfg create discrete job
-- retrieve discrete jobs.
-- retrieve deliveries.
+- mfg get bills of material
+- inv get deliveries
+- erp
+- retrieve inventory items.
+- get discrete jobs
+- get onhand quantities
+- e-business suite
+- bom management.
+- list boms.
+- mfg get discrete job by id
+- list discrete jobs.
+- mfg get bill of material by id
+- inv get onhand quantities
 - issue material to a job.
+- mfg complete assembly
+- inv get sales orders
+- retrieve sales orders.
+- enterprise
+- mfg get discrete jobs
+- oracle
+- mfg issue material
+- mfg get routings
+- inv get inventory items
+- retrieve discrete jobs.
+- list inventory items.
+- discrete job management.
+- mfg create discrete job
+- inventory item management.
+- list on-hand quantities.
 - get bom by id.
-- retrieve on-hand quantities.
+- create a discrete job.
+- mfg get wip operations
+- get inventory items
+- on-hand quantity management.
+- retrieve wip operations.
 - manufacturing
 - retrieve bills of material.
-- inv get sales orders
-- inv get inventory items
-- oracle
-- on-hand quantity management.
-- inventory item management.
-- mfg get wip operations
-- create a discrete job.
-- inv get onhand quantities
-- get bills of material
-- retrieve wip operations.
-- list inventory items.
-- e-business suite
-- erp
+- retrieve on-hand quantities.
+- retrieve routings.
+- production
+- complete an assembly.
+- retrieve deliveries.
+- supply chain
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

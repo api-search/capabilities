@@ -10,12 +10,12 @@ provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
 - multi-account
-- controls
-- compliance
 - security
-- governance
-- aws
 - landing zone
+- aws
+- controls
+- governance
+- compliance
 slug: governance-operations
 source_filename: governance-operations.yaml
 source_heading: Capability Spec
