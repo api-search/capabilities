@@ -1,0 +1,92 @@
+---
+categories: []
+consumed_apis: []
+description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+layout: capability
+naftiko_layer: proposed
+naftiko_partner: Norbert Anthony
+name: Enterprise Integration Context Composition
+operations: []
+personas: []
+provider_name: Naftiko
+provider_slug: naftiko
+search_terms:
+- compose
+- context
+- capability
+- stitching
+- marketing
+slug: enterprise-integration-context-composition
+source_filename: enterprise-integration-context-composition.yaml
+source_heading: Capability Spec
+source_yaml: |-
+  naftiko: 1.0.0-alpha2
+  info:
+  title: Enterprise Integration Context Composition
+  description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+  tags:
+  Naftiko
+  created:'2026-05-01'
+  modified:'2026-05-01'
+  binds:
+  namespace: naftiko-env
+  description: Naftiko credentials.
+  keys:
+  NAFTIKO_API_KEY: NAFTIKO_API_KEY
+  capability:
+  consumes:
+  namespace: naftiko
+  type: http
+  baseUri: https://api.naftiko.com
+  authentication:
+  type: bearer
+  token:'{{NAFTIKO_API_KEY}}'
+  resources:
+  name: example
+  path: /example
+  operations:
+  name: example-op
+  method: GET
+  exposes:
+  type: rest
+  address: 0.0.0.0
+  port: 8080
+  namespace: enterprise-integration-context-composition-rest
+  description: REST API for Enterprise Integration Context Composition.
+  resources:
+  name: example
+  path: /example
+  operations:
+  method: GET
+  name: example-op
+  call: naftiko.example-op
+  type: mcp
+  address: 0.0.0.0
+  port: 3010
+  namespace: enterprise-integration-context-composition-mcp
+  description: MCP server exposing Enterprise Integration Context Composition for AI agents.
+  tools:
+  name: example
+  description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+  hints:
+  readOnly: true
+  call: naftiko.example-op
+  type: skill
+  address: 0.0.0.0
+  port: 3011
+  namespace: enterprise-integration-context-composition-skills
+  description: Agent Skill bundle for Enterprise Integration Context Composition.
+  skills:
+  name: enterprise-integration-context-composition
+  description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+  location: file:///opt/naftiko/skills/enterprise-integration-context-composition
+  allowed-tools: example
+  tools:
+  name: example
+  description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+  from:
+  sourceNamespace: enterprise-integration-context-composition-mcp
+  action: example
+---
+
+Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
