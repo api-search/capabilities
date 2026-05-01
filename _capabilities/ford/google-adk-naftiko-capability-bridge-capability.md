@@ -20,7 +20,7 @@ search_terms:
 slug: google-adk-naftiko-capability-bridge-capability
 source_filename: google-adk-naftiko-capability-bridge-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Ford Google Adk Naftiko Capability Bridge Capability

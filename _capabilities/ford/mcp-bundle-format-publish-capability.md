@@ -20,7 +20,7 @@ search_terms:
 slug: mcp-bundle-format-publish-capability
 source_filename: mcp-bundle-format-publish-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Ford Mcp Bundle Format Publish Capability

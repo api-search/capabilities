@@ -20,7 +20,7 @@ search_terms:
 slug: okta-auth0-obo-token-propagation-capability
 source_filename: okta-auth0-obo-token-propagation-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Ford Okta Auth0 Obo Token Propagation Capability

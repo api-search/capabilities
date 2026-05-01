@@ -20,7 +20,7 @@ search_terms:
 slug: finops-ai-cross-platform-cost-capability
 source_filename: finops-ai-cross-platform-cost-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Ford Finops Ai Cross Platform Cost Capability

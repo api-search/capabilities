@@ -20,7 +20,7 @@ search_terms:
 slug: a2a-protocol-agent-bridge-capability
 source_filename: a2a-protocol-agent-bridge-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Ford A2a Protocol Agent Bridge Capability
