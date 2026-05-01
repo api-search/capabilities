@@ -20,7 +20,7 @@ search_terms:
 slug: sdi-pm-methodology-reference
 source_filename: sdi-pm-methodology-reference.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Xero Sdi Pm Methodology Reference

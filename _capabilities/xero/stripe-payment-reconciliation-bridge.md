@@ -20,7 +20,7 @@ search_terms:
 slug: stripe-payment-reconciliation-bridge
 source_filename: stripe-payment-reconciliation-bridge.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Xero Stripe Payment Reconciliation Bridge

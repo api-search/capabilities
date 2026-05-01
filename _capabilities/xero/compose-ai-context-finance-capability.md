@@ -20,7 +20,7 @@ search_terms:
 slug: compose-ai-context-finance-capability
 source_filename: compose-ai-context-finance-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Xero Compose Ai Context Finance Capability

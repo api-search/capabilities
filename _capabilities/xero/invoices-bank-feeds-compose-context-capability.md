@@ -20,7 +20,7 @@ search_terms:
 slug: invoices-bank-feeds-compose-context-capability
 source_filename: invoices-bank-feeds-compose-context-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Xero Invoices Bank Feeds Compose Context Capability

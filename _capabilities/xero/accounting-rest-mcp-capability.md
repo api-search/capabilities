@@ -20,7 +20,7 @@ search_terms:
 slug: accounting-rest-mcp-capability
 source_filename: accounting-rest-mcp-capability.yaml
 source_heading: Capability Spec
-source_yaml: |
+source_yaml: |-
   naftiko: 1.0.0-alpha2
   info:
     title: Xero Accounting Rest Mcp Capability
