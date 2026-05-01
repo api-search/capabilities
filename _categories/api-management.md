@@ -43,7 +43,6 @@ implementations:
   tags:
   - Amazon
   - API Gateway
-  - AWS
   - API Management
   tool_count: 2
 - capability_name: GraphQL Api Management Workflow
@@ -58,7 +57,6 @@ implementations:
   - GraphQL
   - API Management
   - Serverless
-  - AWS
   tool_count: 10
 - capability_name: Apache APISIX Gateway Configuration
   capability_slug: apisix-gateway-config
@@ -139,7 +137,6 @@ implementations:
   provider_slug: aws-api-gateway
   tags:
   - Amazon API Gateway
-  - AWS
   - API Management
   - REST
   - WebSocket

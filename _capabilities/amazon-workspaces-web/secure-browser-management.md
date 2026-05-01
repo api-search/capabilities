@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- create portal
-- configures browser policies and access controls.
-- create a portal.
-- virtual desktop
-- browser policy management.
-- list browser settings
-- administration
-- trust store management.
-- zero trust
 - list network settings.
-- portal and resource provisioning
-- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- end user computing
-- aws
-- list browser settings.
 - list network settings for portal connectivity.
-- list user settings.
-- IT Administrator
-- manages workspaces web portals and configurations.
-- list ssl certificate trust stores.
-- secure browser
 - list portals
+- list user settings.
+- list user settings configurations for portals.
+- end user computing
+- administration
+- IT Administrator
+- browser policy management.
+- list trust stores.
+- secure browser
+- network configuration management.
+- list secure browser portals.
+- Security Engineer
+- trust store management.
+- portal management.
 - list trust stores
+- list browser settings
+- create portal
+- list browser policy settings for portals.
+- create a new secure browser portal.
+- list network settings
+- list user settings
+- list browser settings.
+- aws
+- workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
+- virtual desktop
+- list all workspaces web secure browser portals.
+- user settings management.
+- configures browser policies and access controls.
 - secure remote browser access infrastructure
 - browser policy and access control enforcement
-- list network settings
-- list all workspaces web secure browser portals.
-- network configuration management.
-- list trust stores.
-- Security Engineer
-- list secure browser portals.
-- user settings management.
-- list user settings
-- portal management.
-- create a new secure browser portal.
-- list user settings configurations for portals.
-- list browser policy settings for portals.
+- manages workspaces web portals and configurations.
+- list ssl certificate trust stores.
+- zero trust
+- create a portal.
+- portal and resource provisioning
 slug: secure-browser-management
 source_filename: secure-browser-management.yaml
 source_heading: Capability Spec
@@ -82,7 +82,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkSpaces W
   \     hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces-web.list-network-settings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-trust-stores\n          description: \"List SSL certificate trust stores.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"workspaces-web.list-trust-stores\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces-web/refs/heads/main/capabilities/secure-browser-management.yaml
 tags:
-- AWS
 - Secure Browser
 - End User Computing
 - Administration

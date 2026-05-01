@@ -14,22 +14,22 @@ personas: []
 provider_name: Amazon Personalize
 provider_slug: amazon-personalize
 search_terms:
-- customer experience
-- machine learning
-- list openapi.yml
-- core api workflow
 - list resources
-- amazon personalize
-- Developer
-- ai
-- ml
-- personalization
+- customer experience
+- list openapi.yml
 - aws
-- primary amazon personalize resources
+- amazon personalize
 - recommendations
 - list and manage openapi.yml resources
+- personalization
 - list amazon personalize resources
 - developer using amazon personalize apis
+- machine learning
+- core api workflow
+- ai
+- ml
+- Developer
+- primary amazon personalize resources
 slug: amazon-personalize-workflow
 source_filename: amazon-personalize-workflow.yaml
 source_heading: Capability Spec
@@ -38,7 +38,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Personalize API Work
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-personalize/refs/heads/main/capabilities/amazon-personalize-workflow.yaml
 tags:
 - Amazon Personalize
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

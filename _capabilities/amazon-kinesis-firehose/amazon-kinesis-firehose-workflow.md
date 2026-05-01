@@ -10,23 +10,23 @@ personas: []
 provider_name: Amazon Kinesis Data Firehose
 provider_slug: amazon-kinesis-firehose
 search_terms:
-- unified workflow for amazon kinesis data firehose resource management
-- streaming
-- delivery streams create delivery stream
-- Developer
-- amazon kinesis data firehose
-- describes the specified delivery stream.
 - workflow
-- delivery streams describe delivery stream
-- Administrator
-- manages resources and configurations
+- delivery streams create delivery stream
 - analytics
-- lists your delivery streams in alphabetical order of their names.
+- describes the specified delivery stream.
+- Developer
 - aws
-- delivery streams list delivery streams
-- data delivery
+- manages resources and configurations
+- unified workflow for amazon kinesis data firehose resource management
+- Administrator
+- lists your delivery streams in alphabetical order of their names.
+- streaming
 - integrates api into applications
+- data delivery
+- delivery streams list delivery streams
+- delivery streams describe delivery stream
 - creates a kinesis data firehose delivery stream.
+- amazon kinesis data firehose
 slug: amazon-kinesis-firehose-workflow
 source_filename: amazon-kinesis-firehose-workflow.yaml
 source_heading: Capability Spec
@@ -35,7 +35,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Data Firehos
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kinesis-firehose/refs/heads/main/capabilities/amazon-kinesis-firehose-workflow.yaml
 tags:
 - Amazon Kinesis Data Firehose
-- AWS
 - Workflow
 tools:
 - description: Creates a Kinesis Data Firehose delivery stream.

@@ -21,19 +21,19 @@ personas: []
 provider_name: Amazon App Mesh
 provider_slug: amazon-app-mesh
 search_terms:
-- list amazon app mesh api resources.
-- Platform Engineer
-- networking
 - list resources
-- manage amazon app mesh api resources.
-- amazon
-- engineer managing service deployments and traffic routing.
 - service mesh
-- list resources.
+- microservices
 - aws
 - DevOps Engineer
+- amazon
+- manage amazon app mesh api resources.
 - engineer managing microservices networking infrastructure.
-- microservices
+- Platform Engineer
+- engineer managing service deployments and traffic routing.
+- list resources.
+- list amazon app mesh api resources.
+- networking
 slug: app-mesh-management
 source_filename: app-mesh-management.yaml
 source_heading: Capability Spec
@@ -42,7 +42,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: App Mesh Management\n  desc
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-app-mesh/refs/heads/main/capabilities/app-mesh-management.yaml
 tags:
 - Amazon
-- AWS
 tools:
 - description: List Amazon App Mesh API resources.
   hints:

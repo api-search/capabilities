@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- apache openmeetings
-- calendar and scheduling
-- login
-- get room hash
-- create a new room
-- check system health status
-- unified workflow for managing conferencing sessions
-- video conferencing
-- user management
-- generate a secure room access hash
-- System Administrator
-- list public rooms
 - session recordings
+- create a new conference room
+- generate a secure room access hash
+- create room
+- list users
+- list recordings
+- whiteboard
+- collaboration
+- user management
 - get upcoming meetings
+- close a conference room
+- get upcoming calendar meetings
+- list session recordings
+- list rooms
+- check system health status
+- video conferencing
+- get recordings by type
+- list all user groups
+- manages users, groups, and system health
+- apache openmeetings
+- list all registered users
+- list all public conference rooms
+- list groups
+- login
+- list public rooms
+- create a new room
 - conference room management
 - manages conference rooms, invites participants, and handles recordings
-- collaboration
-- conferencing
-- Meeting Organizer
-- close a conference room
-- web conferencing
-- list all registered users
-- whiteboard
 - close room
-- check health
-- list recordings
-- manages users, groups, and system health
-- create room
-- list rooms
+- unified workflow for managing conferencing sessions
 - apache
-- get recordings by type
-- list session recordings
-- list groups
-- open source
-- list all public conference rooms
-- create a new conference room
+- get room hash
 - list upcoming
-- get upcoming calendar meetings
-- list users
-- list all user groups
+- check health
+- Meeting Organizer
+- System Administrator
+- open source
+- calendar and scheduling
 - authenticate a user to openmeetings
+- conferencing
+- web conferencing
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

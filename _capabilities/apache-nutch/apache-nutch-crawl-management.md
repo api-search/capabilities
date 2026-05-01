@@ -70,76 +70,76 @@ personas: []
 provider_name: Apache Nutch
 provider_slug: apache-nutch
 search_terms:
-- delete a configuration.
-- get the current status of the apache nutch server including running jobs and known configurations.
-- data engineers who consume crawl outputs for search indexing or data analysis pipelines.
-- stop a running job.
-- get all configuration properties for a specific nutch configuration.
-- Crawl Engineer
-- get apache nutch server status.
-- indexing
-- create a new seed url list.
-- get job info
-- list all nutch crawl jobs, optionally filtered by crawl id.
-- structured collection and storage of web data for downstream processing.
-- stop a running crawl job.
-- systematic automated retrieval of web content at scale.
-- list all seed url lists.
-- create and start a crawl job.
-- list all available seed url lists in the nutch server.
-- query the fetchdb for node information.
-- get server status
-- engineers responsible for configuring and running web crawl pipelines using nutch.
-- single job management.
-- seed url list management.
-- create a new crawl configuration.
-- crawl job management.
-- list all crawl jobs.
-- list seeds
-- query crawldb
-- create and start a new nutch crawl job. job types include inject, generate, fetch, parse, updatedb, index, dedup, invertlinks.
-- create a new seed url list for initializing a crawl.
-- query the apache nutch fetchdb for node fetch history and statistics.
-- list jobs
-- manage crawl configurations.
-- create seed
-- list all known nutch configuration identifiers.
-- list seed lists
-- delete config
-- stop a running nutch crawl job gracefully.
-- end-to-end crawl pipeline management workflow covering job lifecycle, configuration, seeds, and database queries.
-- hadoop
-- get status
 - get config
-- get all properties for a configuration.
-- search
-- Data Engineer
-- get job
-- web crawler
-- server status and administration.
-- single configuration management.
-- get job status and info.
-- crawl management
-- list all available configurations.
-- create config
-- list configs
-- query the crawldb for stats or url lookups.
 - create a new nutch crawl configuration with custom properties.
-- get the current state and details for a specific nutch crawl job.
-- stop job
-- abort a nutch crawl job immediately without waiting for graceful shutdown.
-- apache
-- abort job
-- data engineering
+- query the apache nutch fetchdb for node fetch history and statistics.
 - crawldb query interface.
-- fetchdb node information.
-- query the apache nutch crawldb for statistics, data dumps, or specific url status.
-- open source
-- apache nutch
-- create job
-- query fetchdb
+- get job status and info.
+- web crawler
+- create a new crawl configuration.
+- query the fetchdb for node information.
+- end-to-end crawl pipeline management workflow covering job lifecycle, configuration, seeds, and database queries.
 - java
+- get server status
+- hadoop
+- create and start a new nutch crawl job. job types include inject, generate, fetch, parse, updatedb, index, dedup, invertlinks.
+- abort a nutch crawl job immediately without waiting for graceful shutdown.
+- structured collection and storage of web data for downstream processing.
+- indexing
+- search
+- get apache nutch server status.
+- query the crawldb for stats or url lookups.
+- create config
+- get all configuration properties for a specific nutch configuration.
+- stop a running nutch crawl job gracefully.
+- manage crawl configurations.
+- get all properties for a configuration.
+- create seed
+- crawl management
+- get the current status of the apache nutch server including running jobs and known configurations.
+- list all available seed url lists in the nutch server.
+- stop a running job.
+- systematic automated retrieval of web content at scale.
+- crawl job management.
+- list all available configurations.
+- list all nutch crawl jobs, optionally filtered by crawl id.
+- create a new seed url list.
+- query the apache nutch crawldb for statistics, data dumps, or specific url status.
+- stop a running crawl job.
+- list seeds
+- single configuration management.
+- query crawldb
+- list configs
+- abort job
+- stop job
+- create and start a crawl job.
+- delete config
+- list jobs
+- server status and administration.
+- single job management.
+- list all seed url lists.
+- Crawl Engineer
+- list all crawl jobs.
+- query fetchdb
+- get the current state and details for a specific nutch crawl job.
+- apache
+- list all known nutch configuration identifiers.
+- Data Engineer
+- create a new seed url list for initializing a crawl.
+- apache nutch
+- fetchdb node information.
+- list seed lists
 - create seed list
+- data engineering
+- get status
+- create job
+- get job
+- seed url list management.
+- engineers responsible for configuring and running web crawl pipelines using nutch.
+- get job info
+- open source
+- data engineers who consume crawl outputs for search indexing or data analysis pipelines.
+- delete a configuration.
 slug: apache-nutch-crawl-management
 source_filename: apache-nutch-crawl-management.yaml
 source_heading: Capability Spec

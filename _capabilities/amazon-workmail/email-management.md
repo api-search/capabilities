@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- list organizations
-- it administration of email infrastructure
 - Email Operations
-- administration
-- list all workmail organizations.
-- workmail organization management.
-- list mobile device access rules.
-- list users in an organization.
 - list mobile device access rules
-- aws
+- enterprise email provisioning and management
+- user provisioning and management.
+- manages workmail infrastructure, user provisioning, and security policies.
+- list users
+- administration
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- IT Administrator
+- list mobile device access rules.
+- mobile device access control and compliance
+- list organizations
+- create a new workmail user with mailbox.
+- exchange
+- email
+- list all workmail organizations.
+- list all amazon workmail organizations in the account.
+- list groups
+- create user
+- list mobile device access control rules.
+- it administration of email infrastructure
 - create a new email user.
+- workmail organization management.
+- business communication
+- list email distribution groups in an organization.
+- enterprise
+- aws
+- handles day-to-day email user and group management.
 - list email groups.
 - group management.
-- enterprise
-- IT Administrator
-- create user
-- handles day-to-day email user and group management.
-- user provisioning and management.
-- list email distribution groups in an organization.
-- create a new workmail user with mailbox.
-- list users in a workmail organization.
-- business communication
-- manages workmail infrastructure, user provisioning, and security policies.
-- list groups
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- enterprise email provisioning and management
-- email
-- list all amazon workmail organizations in the account.
-- mobile device access control and compliance
-- exchange
 - mobile device access control.
+- list users in an organization.
 - calendar
-- list users
-- list mobile device access control rules.
+- list users in a workmail organization.
 slug: email-management
 source_filename: email-management.yaml
 source_heading: Capability Spec
@@ -76,7 +76,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon WorkMail Ema
   \          description: \"List mobile device access control rules.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"workmail.list-mobile-device-access-rules\"\n          with:\n            OrganizationId: \"tools.organization_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/capabilities/email-management.yaml
 tags:
-- AWS
 - Email
 - Calendar
 - Business Communication

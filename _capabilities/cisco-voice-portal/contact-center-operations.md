@@ -45,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
+- list managed devices
+- get real-time call statistics
+- list devices
+- cisco
+- list all active calls on the cvp call server
+- check cvp call server health status
+- list applications
+- list active vxml sessions
+- list sessions
+- list cdrs
+- get health
+- ivr
+- list configured dialed number patterns
+- list active sessions
+- list dialed number patterns
+- contact center
+- call detail records
+- list call detail records
+- real-time statistics
+- get call details
+- device management
+- voice portal
+- individual call details
+- active call management
+- list active calls
+- list vxml applications
+- vxml
 - system health
 - voice
-- ivr
-- cisco
-- list managed devices
-- real-time statistics
-- list deployed applications
-- application management
-- list call detail records from the reporting server
 - telephony
-- get health
-- list call detail records
-- get call details
-- voice portal
-- list cdrs
-- list configured dialed number patterns
-- get details of a specific active call
-- get call
-- list vxml applications
-- list deployed vxml applications
 - list deployed cvp applications
-- individual call details
-- list sessions
-- list active calls
-- list dialed number patterns
-- list applications
-- check cvp call server health status
-- call detail records
-- get call server health
-- list devices
-- list all active calls on the cvp call server
-- list managed cvp devices
-- device management
-- list active vxml sessions
-- list active sessions
-- vxml
-- contact center
+- list deployed vxml applications
 - get statistics
-- active call management
+- get call server health
+- get call
+- list call detail records from the reporting server
 - vxml session monitoring
-- get real-time call statistics
+- application management
+- get details of a specific active call
+- list managed cvp devices
+- list deployed applications
 slug: contact-center-operations
 source_filename: contact-center-operations.yaml
 source_heading: Capability Spec

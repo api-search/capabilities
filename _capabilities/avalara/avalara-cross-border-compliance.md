@@ -19,37 +19,37 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- hs codes
-- manages sales tax compliance, exemption certificates, and returns filing
-- cross-border tax calculations
+- submit a cross-border e-invoice for customs and vat compliance
+- list mandates
+- avalara
+- check country einvoicing mandate
 - calculate import duties, customs fees, and vat for cross-border shipments
-- tax exemption certificate collection and validation
+- cross-border tax calculations
+- hs code and tax code classification for products
+- manages sales tax compliance, exemption certificates, and returns filing
+- check e-invoicing compliance requirements for a destination country
+- International Trade Manager
 - sales tax calculation, certificate management, and e-invoicing
-- integrates avalara apis into erp and billing systems
+- real-time tax calculation across us and global jurisdictions
+- tariff
+- cross-border
+- vat
+- tax exemption certificate collection and validation
+- Tax Manager
+- country-specific e-invoicing mandate compliance
+- oversees tax strategy, compliance automation, and cost optimization
+- submit cross border einvoice
+- import duties, vat, and e-invoicing for international trade
 - e-invoicing
 - e-invoicing mandates by country
-- check country einvoicing mandate
-- hs code and tax code classification for products
-- cross-border
-- submit a cross-border e-invoice for customs and vat compliance
-- country-specific e-invoicing mandate compliance
-- vat
-- International Trade Manager
-- oversees tax strategy, compliance automation, and cost optimization
+- hs codes
 - calculate import duties
-- real-time tax calculation across us and global jurisdictions
-- list mandates
-- submit cross border einvoice
-- list country e-invoicing mandates
-- import duties, vat, and e-invoicing for international trade
-- avalara
-- manages cross-border compliance, tariff classification, and e-invoicing
-- vat returns, 1099 filing, and lodging tax reporting
-- check e-invoicing compliance requirements for a destination country
-- Tax Manager
-- taxes
-- tariff
 - calculate import duties and vat for cross-border shipment
+- integrates avalara apis into erp and billing systems
+- list country e-invoicing mandates
+- taxes
+- vat returns, 1099 filing, and lodging tax reporting
+- manages cross-border compliance, tariff classification, and e-invoicing
 - Finance Director
 slug: avalara-cross-border-compliance
 source_filename: avalara-cross-border-compliance.yaml

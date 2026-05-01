@@ -10,27 +10,27 @@ personas: []
 provider_name: Appwrite
 provider_slug: appwrite
 search_terms:
-- database and file storage management
-- lists file storage buckets configured in the appwrite backend
-- list databases
-- user authentication and account management
-- list storage buckets
-- backend-as-a-service
-- lists all registered users in the appwrite project backend
-- cloud function deployment and execution
-- creates a new user account in the appwrite backend for a mobile app
-- appwrite
-- applications
-- provision user
 - list project users
-- mobile
-- administrator managing appwrite project users and configuration
-- developer building ios, android, or web apps with appwrite
-- configure and manage a mobile app backend with appwrite
-- open source
-- lists appwrite databases available in the backend project
+- applications
+- database and file storage management
+- backend-as-a-service
 - backends
+- mobile
+- lists file storage buckets configured in the appwrite backend
+- administrator managing appwrite project users and configuration
+- appwrite
+- list storage buckets
+- developer building ios, android, or web apps with appwrite
+- user authentication and account management
+- configure and manage a mobile app backend with appwrite
+- list databases
+- creates a new user account in the appwrite backend for a mobile app
+- cloud function deployment and execution
+- provision user
+- open source
 - developer tools
+- lists appwrite databases available in the backend project
+- lists all registered users in the appwrite project backend
 slug: mobile-backend
 source_filename: mobile-backend.yaml
 source_heading: Capability Spec

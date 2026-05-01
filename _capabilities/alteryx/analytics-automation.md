@@ -39,70 +39,70 @@ personas: []
 provider_name: Alteryx
 provider_slug: alteryx
 search_terms:
-- upload a new workflow
-- get user
-- update workflow metadata
-- alteryx
-- list all users on the server
-- delete a user
 - upload workflow
-- list all workflow schedules
 - analytics
-- deactivate a user account
-- collection management
-- list workflows
-- user management
-- machine learning
-- delete a workflow schedule
-- automation
-- delete workflow
-- create schedule
-- get user details
-- list all stored credentials
-- list credentials
-- schedule management
 - list all schedules
-- create a new schedule
-- get details of a specific workflow
-- create and execute a workflow job
-- list all workflows on the alteryx server
-- upload a new workflow package
-- list all workflows
-- delete a workflow
-- get workflow details
-- deactivate user
-- list schedules
-- data preparation
-- workflow management
-- data science
-- create user
-- delete collection
-- create a new user
-- individual workflow operations
-- get workflow
-- delete user
-- get workflow jobs
 - get execution jobs for a workflow
-- list collections
-- update workflow
-- list all collections
-- delete schedule
-- etl
+- create a new user
+- delete a user
+- delete collection
+- list all users on the server
 - create a new credential
-- delete a collection
-- create a new collection
-- get analytic app questions for a workflow
-- data engineering
-- create credential
-- download workflow
-- get workflow questions
 - list users
 - create a new workflow schedule
-- create collection
-- download a workflow package
-- list all users
-- create job
+- get workflow details
+- upload a new workflow package
+- list schedules
 - predictive analytics
+- create a new collection
+- data science
+- user management
+- list credentials
+- list workflows
+- delete user
+- get workflow
+- data preparation
+- create a new schedule
+- get workflow questions
+- individual workflow operations
+- get user
+- schedule management
+- deactivate a user account
+- create and execute a workflow job
+- list all workflows
+- download a workflow package
+- get details of a specific workflow
+- delete workflow
+- list all workflow schedules
+- automation
+- deactivate user
+- machine learning
+- update workflow metadata
+- upload a new workflow
+- list all collections
+- delete schedule
+- list collections
+- create user
+- download workflow
+- delete a collection
+- list all stored credentials
+- get analytic app questions for a workflow
+- update workflow
+- list all workflows on the alteryx server
+- create schedule
+- delete a workflow schedule
+- collection management
+- create credential
+- data engineering
+- delete a workflow
+- alteryx
+- create job
+- list all users
+- get user details
+- create collection
+- get workflow jobs
+- etl
+- workflow management
 slug: analytics-automation
 source_filename: analytics-automation.yaml
 source_heading: Capability Spec

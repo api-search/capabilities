@@ -10,37 +10,37 @@ personas: []
 provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
-- get details about a code review
-- security
-- amazon
-- devops engineer persona.
-- get details about a repository association
-- list code reviews for a repository
-- code review
-- list recommendations from a code review
-- DevOps Engineer
-- machine learning
-- submit feedback on a code review recommendation
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
-- associate repository
-- describe repository association
-- aws
-- devops
-- put recommendation feedback
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
-- associate a repository for code review
-- list repository associations
-- list code reviews
-- create a code review
-- Developer
-- describe code review
-- Security Engineer
-- security engineer persona.
 - create code review
+- put recommendation feedback
+- associate a repository for code review
+- submit feedback on a code review recommendation
+- devops engineer persona.
+- Security Engineer
 - list repositories associated with codeguru reviewer
+- associate repository
+- list code reviews
+- get details about a code review
+- code review
+- list code reviews for a repository
+- devops
+- machine learning
 - developer persona.
-- developer tools
+- create a code review
+- security engineer persona.
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
 - list recommendations
+- aws
+- security
+- DevOps Engineer
+- get details about a repository association
+- amazon
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
+- list repository associations
+- developer tools
+- describe code review
+- Developer
+- list recommendations from a code review
+- describe repository association
 slug: amazon-codeguru-reviewer-code-review
 source_filename: amazon-codeguru-reviewer-code-review.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Reviewer Au
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codeguru-reviewer/refs/heads/main/capabilities/amazon-codeguru-reviewer-code-review.yaml
 tags:
 - Amazon
-- AWS
 - Code Review
 - Security
 - DevOps

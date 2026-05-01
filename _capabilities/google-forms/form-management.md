@@ -38,51 +38,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- get response
-- update form publish settings
+- Form Administrator
+- google
+- create form
+- set publish settings
+- get a google form's structure and settings
 - create forms, collect responses, monitor changes
-- renew watch
-- batch update form
-- set up a pub/sub watch for form changes or new responses
-- create a new google form with a title
-- creating and managing forms for data collection
-- responses
-- Data Analyst
 - list responses
-- analyzes form responses and collects data
+- create a new google form with a title
+- create a notification watch
+- delete watch
+- get response
+- list form responses
+- watch notification operations
+- create watch
+- questionnaires
+- get form details
+- forms
+- google forms
+- form crud operations
+- notifications
+- set up a pub/sub watch for form changes or new responses
+- get a single response
+- Data Analyst
+- responses
+- extend a watch's expiration by seven days
+- list watches
+- create a new form
+- form response operations
 - managing surveys, questions, and notification watches
 - google workspace
-- google forms
-- questionnaires
-- form response operations
-- create a notification watch
-- data collection
-- notifications
-- get a single form response by id
-- google
+- batch update form
+- analyzes form responses and collects data
 - delete a watch to stop notifications
-- creates and manages forms, monitors responses
-- get form details
+- renew watch
 - get form
-- create form
-- list all active watches for a form
-- extend a watch's expiration by seven days
-- list all responses for a form
-- surveys
-- create a new form
 - apply batch updates to a form (add/remove/modify items)
-- list form responses
-- forms
-- get a single response
-- create watch
-- form crud operations
-- get a google form's structure and settings
+- get a single form response by id
+- surveys
 - delete a watch
-- set publish settings
-- watch notification operations
-- Form Administrator
-- list watches
-- delete watch
+- creating and managing forms for data collection
+- data collection
+- list all active watches for a form
+- update form publish settings
+- creates and manages forms, monitors responses
+- list all responses for a form
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

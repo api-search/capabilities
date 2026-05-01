@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon MediaConnect
 provider_slug: amazon-mediaconnect
 search_terms:
-- broadcasting
+- Broadcast Engineer
+- start flow
+- engineer managing live video workflows
 - list all bridges
-- stop flow
-- create a new flow
-- manage entitlements
-- list all flows
 - stop a mediaconnect flow
-- list all mediaconnect gateways
-- live video transport workflow for broadcast engineers
-- list all entitlements
+- manage bridges
+- start a mediaconnect flow
+- broadcasting
+- delete a flow
+- list gateways
+- list flows
+- manage entitlements
 - media
-- describe flow
-- media transport
-- list all mediaconnect flows for live video transport
+- list entitlements
+- list all flows
+- manage individual flow
+- stop flow
+- list all mediaconnect gateways
+- list all entitlements
+- delete flow
+- live video
+- create flow
+- list all mediaconnect bridges
+- live video transport and distribution
+- get flow details
+- flows
+- get details of a specific flow
+- create a new flow
+- live video transport workflow for broadcast engineers
+- create a new mediaconnect flow
+- aws
 - list bridges
+- list all mediaconnect flows for live video transport
 - list all flow entitlements
 - manage live video flows
-- list gateways
-- list entitlements
-- aws
-- list all mediaconnect bridges
-- manage individual flow
-- live video transport and distribution
-- flows
-- delete flow
-- get details of a specific flow
-- list flows
-- manage bridges
-- create flow
-- get flow details
-- live video
-- delete a flow
-- Broadcast Engineer
-- engineer managing live video workflows
-- create a new mediaconnect flow
-- start a mediaconnect flow
-- start flow
+- describe flow
+- media transport
 slug: amazon-mediaconnect-live-video-transport
 source_filename: amazon-mediaconnect-live-video-transport.yaml
 source_heading: Capability Spec
@@ -81,7 +81,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaConnect Live Vi
   \        flowArn: tools.flowArn\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-bridges\n      description: List all MediaConnect bridges\n      hints:\n        readOnly: true\n      call: mediaconnect.list-bridges\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-entitlements\n      description: List all flow entitlements\n      hints:\n        readOnly: true\n      call: mediaconnect.list-entitlements\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-gateways\n      description: List all MediaConnect gateways\n      hints:\n        readOnly: true\n      call: mediaconnect.list-gateways\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mediaconnect/refs/heads/main/capabilities/amazon-mediaconnect-live-video-transport.yaml
 tags:
-- AWS
 - Broadcasting
 - Live Video
 - Media Transport

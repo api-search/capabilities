@@ -10,31 +10,31 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
-- cassandra
-- returns a list of tables for a specified keyspace.
 - returns a list of keyspaces.
-- returns information about the table.
-- workflow
-- Administrator
-- amazon keyspaces
-- aws
-- tables create table
-- wide column
+- tables get table
+- nosql
 - returns the name and the amazon resource name (arn) of a keyspace.
 - managed database
-- the createtable operation adds a new table to the specified keyspace.
-- nosql
-- Developer
-- database
-- tables get table
-- tables list tables
-- manages resources and configurations
-- keyspaces create keyspace
-- keyspaces get keyspace
 - keyspaces list keyspaces
+- cassandra
+- workflow
+- tables list tables
+- keyspaces create keyspace
+- amazon keyspaces
 - integrates api into applications
+- returns a list of tables for a specified keyspace.
+- database
+- the createtable operation adds a new table to the specified keyspace.
+- manages resources and configurations
+- tables create table
+- returns information about the table.
 - creates a new keyspace.
+- aws
+- keyspaces get keyspace
 - unified workflow for amazon keyspaces resource management
+- wide column
+- Developer
+- Administrator
 slug: amazon-keyspaces-workflow
 source_filename: amazon-keyspaces-workflow.yaml
 source_heading: Capability Spec
@@ -44,7 +44,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Keyspaces Workflow\n
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-keyspaces/refs/heads/main/capabilities/amazon-keyspaces-workflow.yaml
 tags:
 - Amazon Keyspaces
-- AWS
 - Workflow
 tools:
 - description: Creates a new keyspace.

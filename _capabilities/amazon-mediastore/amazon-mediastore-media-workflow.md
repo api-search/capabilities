@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaStore
 provider_slug: amazon-mediastore
 search_terms:
-- broadcasting
-- describecontainer
-- get container policy
-- manage media processing jobs
-- media
-- developer building media processing applications
-- deletecorspolicy
-- workflow
-- create container
-- delete cors policy
-- media processing
-- Media Developer
-- aws
-- list jobs
-- delete lifecycle policy
-- getcontainerpolicy
-- deletecontainerpolicy
-- createcontainer
-- delete container policy
-- amazon mediastore media processing workflow
-- delete metric policy
-- deletemetricpolicy
-- deletecontainer
 - Broadcast Engineer
-- engineer managing broadcast media workflows
-- describe container
+- deletemetricpolicy
+- broadcasting
+- createcontainer
+- media
 - delete container
-- deletelifecyclepolicy
+- media processing
+- get container policy
+- workflow
+- describe container
+- create container
 - aws media processing and delivery
+- delete metric policy
+- deletecorspolicy
+- deletecontainer
+- delete lifecycle policy
+- deletelifecyclepolicy
+- list jobs
+- Media Developer
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- manage media processing jobs
+- aws
+- delete cors policy
+- delete container policy
+- getcontainerpolicy
+- amazon mediastore media processing workflow
+- deletecontainerpolicy
+- describecontainer
 slug: amazon-mediastore-media-workflow
 source_filename: amazon-mediastore-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaStore Workflow\
   \      description: GetContainerPolicy\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediastore.get-container-policy\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/capabilities/amazon-mediastore-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

@@ -27,57 +27,57 @@ personas: []
 provider_name: Amazon SQS
 provider_slug: amazon-sqs
 search_terms:
-- delete all messages in a queue
-- add permission
-- get the url of a queue by name
-- send up to 10 messages in a batch
-- create a new standard or fifo queue
-- amazon
-- list queue tags
-- set attributes for a queue
-- add tags to a queue
-- dead-letter queue management
-- receive message
-- start moving messages from a dead-letter queue
-- change the visibility timeout of a message
-- start message move task
-- get queue attributes
-- get attributes for a queue
-- add a permission to a queue
-- list all sqs queues
-- change message visibility
-- send message batch
-- list queues that feed a dead-letter queue
-- receive messages from a queue
-- list tags for a queue
-- queue
-- list dead letter source queues
-- delete an sqs queue
-- aws
-- queue management
-- list queues
-- get queue url
-- set queue attributes
-- microservices
-- send message
-- delete queue
-- delete a message from a queue
-- remove a permission from a queue
-- list dead-letter queue source queues
-- list dlq sources
-- distributed systems
-- delete message
-- messaging
-- remove permission
-- message operations
-- cloud
-- create a new sqs queue
-- send a message to a queue
-- delete message batch
-- purge queue
-- delete up to 10 messages in a batch
-- tag queue
 - create queue
+- get the url of a queue by name
+- list queue tags
+- list queues
+- create a new sqs queue
+- set attributes for a queue
+- send message batch
+- set queue attributes
+- receive message
+- send message
+- get queue url
+- list queues that feed a dead-letter queue
+- distributed systems
+- send a message to a queue
+- list dlq sources
+- dead-letter queue management
+- cloud
+- delete all messages in a queue
+- list tags for a queue
+- remove permission
+- delete message batch
+- list dead-letter queue source queues
+- purge queue
+- queue management
+- receive messages from a queue
+- delete a message from a queue
+- get attributes for a queue
+- change the visibility timeout of a message
+- tag queue
+- queue
+- remove a permission from a queue
+- delete an sqs queue
+- add permission
+- list dead letter source queues
+- start moving messages from a dead-letter queue
+- message operations
+- messaging
+- start message move task
+- add tags to a queue
+- send up to 10 messages in a batch
+- delete message
+- microservices
+- aws
+- get queue attributes
+- amazon
+- delete up to 10 messages in a batch
+- add a permission to a queue
+- change message visibility
+- create a new standard or fifo queue
+- list all sqs queues
+- delete queue
 slug: message-queuing
 source_filename: message-queuing.yaml
 source_heading: Capability Spec
@@ -93,7 +93,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SQS Message 
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-sqs/refs/heads/main/capabilities/message-queuing.yaml
 tags:
 - Amazon
-- AWS
 - Messaging
 - Queue
 tools:

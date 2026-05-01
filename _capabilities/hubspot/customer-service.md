@@ -34,44 +34,44 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- conversations
-- crm
-- archive ticket
-- analytics
-- support
-- list tickets
-- list all support tickets
-- search contacts
-- marketing
-- create a new support ticket
-- service
-- update a support ticket
-- search tickets
-- search contacts to find the customer
-- update ticket
-- commerce
-- individual ticket
-- email marketing
-- marketing automation
-- sales
-- search tickets with filters
-- content
-- get a support ticket by id
-- tickets
-- list associations for a crm object
-- get contact
-- archive a support ticket
-- look up a contact for ticket context
-- associate a ticket with a contact or company
-- create association
-- customer service
 - support tickets
-- hubspot
-- create ticket
-- get ticket
+- analytics
+- individual ticket
+- update a support ticket
+- archive ticket
+- update ticket
+- look up a contact for ticket context
+- commerce
+- customer service
+- content
+- conversations
+- support
 - list associations
-- contact lookup
+- search tickets
+- search contacts
+- associate a ticket with a contact or company
+- get a support ticket by id
+- crm
+- email marketing
+- get ticket
 - operations
+- create ticket
+- create a new support ticket
+- hubspot
+- list tickets
+- tickets
+- service
+- marketing automation
+- archive a support ticket
+- list all support tickets
+- list associations for a crm object
+- contact lookup
+- get contact
+- search tickets with filters
+- create association
+- search contacts to find the customer
+- sales
+- marketing
 slug: customer-service
 source_filename: customer-service.yaml
 source_heading: Capability Spec

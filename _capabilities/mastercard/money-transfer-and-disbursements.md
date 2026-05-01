@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- p2p transfers
-- create a cross-border international payment
-- validate account
-- get account info
+- get conversion rate
+- payments
+- create a funding transaction via mastercard send
+- verify account eligibility for mastercard send
+- mastercard send
 - mastercard
-- verify send account
-- validate account details before transfer
-- process a direct service transaction
 - get currency conversion rate
+- process direct transaction
+- verify send account
+- financial services
+- disbursement transactions
+- money transfer
+- create disbursement
+- validate account details before transfer
+- validate account
+- create a disbursement
+- cross-border payment processing
+- fraud detection
+- currency conversion rates
+- p2p transfers
 - create cross border payment
-- create a person-to-person transfer
-- digital identity
-- disbursements
-- create a funding transaction
-- get currency conversion rate for cross-border transactions
 - cross-border
 - create p2p transfer
-- process direct transaction
-- create a cross-border payment
-- create a person-to-person money transfer
-- mastercard send
-- create disbursement
-- cross-border payment processing
-- money transfer
-- fraud detection
-- open banking
-- get conversion rate
-- currency conversion rates
-- payments
-- credit cards
 - get account information for a send recipient
-- financial services
+- credit cards
+- create a cross-border international payment
 - create funding
+- get currency conversion rate for cross-border transactions
 - create a disbursement to send money to a recipient
+- digital identity
+- get account info
+- create a funding transaction
+- open banking
+- disbursements
+- create a person-to-person money transfer
+- create a person-to-person transfer
+- create a cross-border payment
 - funding transactions
-- disbursement transactions
-- create a disbursement
-- verify account eligibility for mastercard send
-- create a funding transaction via mastercard send
+- process a direct service transaction
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

@@ -11,26 +11,26 @@ personas: []
 provider_name: AppOmni
 provider_slug: appomni
 search_terms:
-- gets full details of a specific security event for investigation
-- investigates security events and threats in saas applications
+- detecting and investigating security threats in saas applications
+- get event details
+- casb
+- threat detection
 - generating and managing compliance reports for regulatory needs
 - get compliance reports
-- zero trust
-- review security policies
-- detecting and investigating security threats in saas applications
-- lists and filters security events across enterprise saas applications
-- reviews security policies configured across monitored saas applications
-- continuous monitoring and investigation of saas security threats
-- casb
-- retrieves compliance reports for audit and governance purposes
-- compliance
-- investigate security events
+- gets full details of a specific security event for investigation
 - saas security
-- appomni
-- generates and reviews compliance reports for regulatory frameworks
+- retrieves compliance reports for audit and governance purposes
+- reviews security policies configured across monitored saas applications
+- lists and filters security events across enterprise saas applications
+- compliance
 - managing security policies for saas application governance
-- threat detection
-- get event details
+- generates and reviews compliance reports for regulatory frameworks
+- appomni
+- investigates security events and threats in saas applications
+- review security policies
+- continuous monitoring and investigation of saas security threats
+- zero trust
+- investigate security events
 slug: saas-security-monitoring
 source_filename: saas-security-monitoring.yaml
 source_heading: Capability Spec

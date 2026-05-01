@@ -31,38 +31,38 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
+- create queue
 - queue manager operations
-- j2ee
-- get queue manager
-- create a new queue
-- get queue
-- delete a queue
-- ibm mq
 - list channels
-- list queue managers
-- get queue details
-- list queues
-- queue management
-- microservices
-- send message
-- delete queue
-- list channels on a queue manager
-- middleware
-- list available queue managers
-- messaging
 - cloud native
-- application server
-- message operations
-- enterprise java
+- get queue manager details
+- list queues
+- get queue
 - list queues on a queue manager
-- browse messages on a queue
-- browse messages
+- send message
 - send a message to a queue
 - channel management
-- browse messages on a queue non-destructively
+- list channels on a queue manager
 - integration
-- get queue manager details
-- create queue
+- queue management
+- ibm mq
+- middleware
+- browse messages on a queue non-destructively
+- list available queue managers
+- j2ee
+- message operations
+- list queue managers
+- application server
+- messaging
+- browse messages on a queue
+- create a new queue
+- microservices
+- enterprise java
+- get queue manager
+- browse messages
+- get queue details
+- delete queue
+- delete a queue
 slug: messaging-and-integration
 source_filename: messaging-and-integration.yaml
 source_heading: Capability Spec

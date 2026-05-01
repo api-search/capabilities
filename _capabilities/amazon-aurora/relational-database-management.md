@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- modify db cluster
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- describe db clusters
-- list all db instances in aurora clusters.
-- create db cluster
+- modify the configuration of an existing aurora db cluster.
+- list all aurora db clusters to understand available databases and their status.
 - start a stopped aurora db cluster to resume database operations.
+- list all db instances in aurora clusters.
+- create a new aurora db cluster
+- describe db instances
+- aurora db cluster management
+- create a new aurora mysql or postgresql compatible db cluster.
+- mysql
+- describe db clusters
+- restore an aurora db cluster from a snapshot for disaster recovery.
 - create db instance
+- create a snapshot of an aurora db cluster for backup or cloning.
+- start db cluster
+- create db cluster
+- restore db cluster from snapshot
 - postgresql
 - list aurora db clusters
-- create a new aurora mysql or postgresql compatible db cluster.
-- list all aurora db clusters to understand available databases and their status.
-- amazon aurora
-- create a snapshot of an aurora db cluster for backup or cloning.
 - create db cluster snapshot
-- aws
-- stop db cluster
-- start db cluster
-- relational database
-- modify the configuration of an existing aurora db cluster.
-- stop an aurora db cluster to reduce costs when not in use.
-- describe db instances
-- mysql
-- restore db cluster from snapshot
-- aurora db cluster management
-- list available aurora db cluster snapshots for backup management.
 - describe db cluster snapshots
 - add a new read replica or writer instance to an aurora db cluster.
-- create a new aurora db cluster
+- relational database
+- modify db cluster
+- list available aurora db cluster snapshots for backup management.
+- aws
+- amazon aurora
+- stop db cluster
+- stop an aurora db cluster to reduce costs when not in use.
 slug: relational-database-management
 source_filename: relational-database-management.yaml
 source_heading: Capability Spec
@@ -60,7 +60,6 @@ tags:
 - MySQL
 - PostgreSQL
 - Relational Database
-- AWS
 tools:
 - description: List all Aurora DB clusters to understand available databases and their status.
   hints:

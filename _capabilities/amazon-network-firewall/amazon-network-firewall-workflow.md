@@ -14,20 +14,20 @@ personas: []
 provider_name: Amazon Network Firewall
 provider_slug: amazon-network-firewall
 search_terms:
-- intrusion detection
-- list openapi.yml
-- firewall
-- core api workflow
 - list resources
-- Developer
-- network security
 - vpc
+- Developer
+- firewall
 - list amazon network firewall resources
 - aws
-- amazon network firewall
-- developer using amazon network firewall apis
+- network security
 - list and manage openapi.yml resources
 - primary amazon network firewall resources
+- developer using amazon network firewall apis
+- core api workflow
+- intrusion detection
+- amazon network firewall
+- list openapi.yml
 slug: amazon-network-firewall-workflow
 source_filename: amazon-network-firewall-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Network Firewall API
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-network-firewall/refs/heads/main/capabilities/amazon-network-firewall-workflow.yaml
 tags:
 - Amazon Network Firewall
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

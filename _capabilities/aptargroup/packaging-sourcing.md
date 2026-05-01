@@ -11,24 +11,24 @@ personas: []
 provider_name: AptarGroup
 provider_slug: aptargroup
 search_terms:
-- finds sustainable dispensing and packaging solutions from aptargroup
-- manufacturing
-- browse and sample sustainable packaging solutions from aptargroup
-- submits a sample request for aptargroup packaging evaluation
-- manages packaging supplier relationships and sample requests
-- order packaging samples
-- gets detailed specifications for a specific aptargroup packaging product
-- get packaging specs
-- evaluates and sources packaging solutions for consumer products
 - dispensing
-- requesting and tracking product samples for evaluation
-- aptargroup
-- browsing dispensing and packaging product options
-- find sustainable packaging
-- product development
+- sustainability
+- order packaging samples
 - consumer goods
 - packaging
-- sustainability
+- get packaging specs
+- browse and sample sustainable packaging solutions from aptargroup
+- requesting and tracking product samples for evaluation
+- product development
+- finds sustainable dispensing and packaging solutions from aptargroup
+- find sustainable packaging
+- gets detailed specifications for a specific aptargroup packaging product
+- aptargroup
+- browsing dispensing and packaging product options
+- evaluates and sources packaging solutions for consumer products
+- manages packaging supplier relationships and sample requests
+- submits a sample request for aptargroup packaging evaluation
+- manufacturing
 slug: packaging-sourcing
 source_filename: packaging-sourcing.yaml
 source_heading: Capability Spec

@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT SiteWise
 provider_slug: amazon-iot-sitewise
 search_terms:
-- amazon iot sitewise list assets
-- create portal
-- industrial iot
-- amazon iot sitewise create portal
-- iot
-- list assets
-- Data Analyst
-- amazon iot sitewise resources
-- amazon iot sitewise list portals
-- asset management
-- amazon iot sitewise create asset
-- aws
-- list asset models
-- amazon iot sitewise get asset property value
 - list portals
-- get asset property value
 - create asset model
-- collect, organize, and analyze industrial equipment data.
-- amazon iot sitewise list asset models
-- amazon iot sitewise batch put asset property value
-- amazon iot sitewise create asset model
-- batch put asset property value
-- OT Engineer
-- time series data
-- manages amazon iot sitewise resources and operations
+- amazon iot sitewise create asset
+- asset management
+- amazon iot sitewise list assets
+- iot
 - create asset
+- amazon iot sitewise create portal
+- list assets
+- amazon iot sitewise get asset property value
+- amazon iot sitewise list portals
+- amazon iot sitewise batch put asset property value
+- Data Analyst
+- create portal
+- get asset property value
+- amazon iot sitewise create asset model
+- amazon iot sitewise list asset models
+- aws
+- OT Engineer
+- amazon iot sitewise resources
+- list asset models
+- batch put asset property value
+- industrial iot
+- manages amazon iot sitewise resources and operations
+- collect, organize, and analyze industrial equipment data.
+- time series data
 slug: industrial-asset-management
 source_filename: industrial-asset-management.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT SiteWise - I
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-sitewise/refs/heads/main/capabilities/industrial-asset-management.yaml
 tags:
 - IoT
-- AWS
 - Industrial IoT
 - Asset Management
 - Time Series Data

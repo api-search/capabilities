@@ -27,34 +27,33 @@ personas: []
 provider_name: Amazon Certificate Manager
 provider_slug: amazon-certificate-manager
 search_terms:
-- request a new ssl/tls certificate with dns or email validation
-- list all acm ssl/tls certificates, optionally filtered by status
-- manage the full lifecycle of acm ssl/tls certificates
-- security
-- engineers managing infrastructure and certificate rotation for web services
-- amazon web services
+- list all acm certificates with optional status filtering
+- delete an acm certificate
+- inspect or delete a specific certificate
 - describe certificate
-- DevOps Engineer
-- list certificates
 - get full details of a specific acm certificate
-- security professionals overseeing certificate compliance and expiry monitoring
-- delete an acm certificate by arn. cannot delete certificates in use by aws services.
-- aws
-- encryption
 - request a new acm ssl/tls certificate for a domain using dns or email validation
-- devops
 - certificates
-- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- manage the full lifecycle of acm ssl/tls certificates
+- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
 - delete certificate
+- engineers managing infrastructure and certificate rotation for web services
+- Security Engineer
+- ssl/tls certificate provisioning, validation, and lifecycle operations
+- list certificates
+- list all acm ssl/tls certificates, optionally filtered by status
 - ssl
 - tls
-- end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
-- Security Engineer
+- devops
+- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
+- security professionals overseeing certificate compliance and expiry monitoring
 - request certificate
-- list all acm certificates with optional status filtering
-- inspect or delete a specific certificate
-- ssl/tls certificate provisioning, validation, and lifecycle operations
-- delete an acm certificate
+- request a new ssl/tls certificate with dns or email validation
+- encryption
+- amazon web services
+- delete an acm certificate by arn. cannot delete certificates in use by aws services.
+- security
+- DevOps Engineer
 slug: certificate-lifecycle-management
 source_filename: certificate-lifecycle-management.yaml
 source_heading: Capability Spec

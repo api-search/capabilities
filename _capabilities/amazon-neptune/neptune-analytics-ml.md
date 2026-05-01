@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- list ml jobs
-- data streaming
-- rdf
-- gremlin
-- amazon neptune
-- graph analytics
-- neptune ml training job management
-- list ml training jobs
-- trains and deploys neptune ml graph neural network models
-- ML Engineer
-- machine learning
-- list neptune analytics graphs for in-memory graph analysis
-- create a neptune ml inference endpoint for predictions
-- graph database management, querying, and data streaming
-- graph analytics, vector search, and ml model training and inference
-- aws
-- Graph Database Administrator
-- writes gremlin, sparql, and opencypher queries against neptune
-- manages neptune clusters, instances, and infrastructure
-- create a neptune analytics graph for graph analytics workloads
-- list neptune analytics graphs
-- performs graph analytics and builds ml models on graph data
-- neptune
-- create analytics graph
-- list analytics graphs
 - property graph
-- list neptune ml training jobs
-- Data Scientist
-- sparql
-- database
-- neptune analytics graph management
+- graph analytics
+- bulk loading
+- create a neptune analytics graph for graph analytics workloads
+- rdf
+- neptune ml training job management
+- graph database management, querying, and data streaming
 - create ml inference endpoint
 - list neptune ml graph neural network training jobs
-- bulk loading
-- Graph Developer
+- create a neptune ml inference endpoint for predictions
+- ML Engineer
+- writes gremlin, sparql, and opencypher queries against neptune
 - graph database
+- database
+- manages neptune clusters, instances, and infrastructure
+- list analytics graphs
+- amazon neptune
+- Graph Database Administrator
+- neptune analytics graph management
+- Data Scientist
+- machine learning
+- data streaming
+- neptune
+- Graph Developer
+- list neptune ml training jobs
+- graph analytics, vector search, and ml model training and inference
+- list ml jobs
+- trains and deploys neptune ml graph neural network models
+- aws
+- create analytics graph
+- list neptune analytics graphs for in-memory graph analysis
+- list ml training jobs
+- performs graph analytics and builds ml models on graph data
+- list neptune analytics graphs
+- sparql
+- gremlin
 slug: neptune-analytics-ml
 source_filename: neptune-analytics-ml.yaml
 source_heading: Capability Spec
@@ -65,7 +65,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Neptune Analytics an
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-neptune/refs/heads/main/capabilities/neptune-analytics-ml.yaml
 tags:
 - Amazon Neptune
-- AWS
 - Graph Analytics
 - Machine Learning
 tools:

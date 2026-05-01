@@ -21,18 +21,18 @@ personas: []
 provider_name: Amazon Q
 provider_slug: amazon-q
 search_terms:
-- cloud operations
-- list amazon q resources
-- artificial intelligence
-- aws cloud resource management
-- generative ai
 - list resources
-- automation workflow for amazon q
-- assistant
-- amazon q
+- cloud operations
 - amazon q resources
 - aws
+- list amazon q resources
 - engineer managing amazon q resources
+- artificial intelligence
+- generative ai
+- assistant
+- aws cloud resource management
+- automation workflow for amazon q
+- amazon q
 - enterprise
 slug: amazon-q
 source_filename: amazon-q.yaml
@@ -42,7 +42,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Q Operations\n  desc
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-q/refs/heads/main/capabilities/amazon-q.yaml
 tags:
 - Amazon Q
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Q resources

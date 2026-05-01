@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- get user
-- list client applications in a realm.
 - terminate a user session.
-- realm groups.
-- list realms
-- list all keycloak realms.
-- list users in a realm.
-- linux
-- list groups.
-- kubernetes
-- list all realms.
-- create client
-- realm users.
-- realm clients.
-- keycloak
-- delete session
-- list users.
-- register a new client application.
-- list realm roles
-- list roles in a realm.
-- get realm details.
-- get realm
-- enterprise
-- list roles.
-- list clients
-- list groups in a realm.
-- create user
-- identity providers.
-- get user details.
-- delete user
-- delete a user from a realm.
-- list external identity providers.
-- keycloak realms.
-- create a user.
-- identity
-- create a new user in a realm.
-- containers
-- list groups
-- red hat
 - list identity providers
-- access management
-- cloud
-- realm roles.
-- open source
-- list identity providers.
-- specific realm.
-- list clients.
-- get realm configuration details.
+- identity
+- kubernetes
+- containers
+- keycloak realms.
 - list users
-- hybrid cloud
+- linux
+- list all keycloak realms.
+- list clients
+- list identity providers.
+- delete a user from a realm.
+- list roles in a realm.
+- cloud
 - list roles
+- get realm
+- list groups.
+- delete user
+- list all realms.
+- hybrid cloud
+- access management
+- get realm configuration details.
+- get user
+- create client
+- list roles.
+- list realm roles
+- register a new client application.
+- specific realm.
+- list groups
+- realm clients.
+- create user
+- create a user.
+- list client applications in a realm.
+- list external identity providers.
+- red hat
+- list realms
+- list users in a realm.
+- enterprise
+- realm roles.
+- realm groups.
+- get realm details.
+- get user details.
+- delete session
+- keycloak
+- realm users.
+- list users.
+- create a new user in a realm.
+- identity providers.
+- list groups in a realm.
+- open source
+- list clients.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

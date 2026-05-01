@@ -14,20 +14,20 @@ personas: []
 provider_name: Amazon Payment Cryptography
 provider_slug: amazon-payment-cryptography
 search_terms:
-- pci
-- list openapi.yml
-- core api workflow
-- list resources
-- primary amazon payment cryptography resources
-- Developer
-- financial services
-- payment processing
-- aws
 - amazon payment cryptography
+- list resources
+- pci
+- aws
+- developer using amazon payment cryptography apis
+- primary amazon payment cryptography resources
 - list and manage openapi.yml resources
 - list amazon payment cryptography resources
-- developer using amazon payment cryptography apis
+- core api workflow
 - cryptography
+- Developer
+- financial services
+- list openapi.yml
+- payment processing
 slug: amazon-payment-cryptography-workflow
 source_filename: amazon-payment-cryptography-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Payment Cryptography
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-payment-cryptography/refs/heads/main/capabilities/amazon-payment-cryptography-workflow.yaml
 tags:
 - Amazon Payment Cryptography
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

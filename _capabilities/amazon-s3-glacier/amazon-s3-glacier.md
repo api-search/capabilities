@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon S3 Glacier
 provider_slug: amazon-s3-glacier
 search_terms:
+- list resources
 - cloud operations
+- backup
+- aws
+- amazon s3 glacier resources
+- list amazon s3 glacier resources
+- automation workflow for amazon s3 glacier
 - archive
 - aws cloud resource management
-- list resources
-- automation workflow for amazon s3 glacier
-- backup
+- storage
 - amazon s3 glacier
 - engineer managing amazon s3 glacier resources
-- aws
-- list amazon s3 glacier resources
-- amazon s3 glacier resources
-- storage
 slug: amazon-s3-glacier
 source_filename: amazon-s3-glacier.yaml
 source_heading: Capability Spec
@@ -34,7 +34,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon S3 Glacier Operation
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-s3-glacier/refs/heads/main/capabilities/amazon-s3-glacier.yaml
 tags:
 - Amazon S3 Glacier
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon S3 Glacier resources

@@ -68,49 +68,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve employee records with optional department and status filters.
-- hcm
-- crm
-- employee records
-- erp
-- get job details
-- hr approval requests
-- peoplesoft
-- job postings
-- search jobs
-- retrieve benefit enrollment records.
-- retrieve pending hr approval requests.
-- enterprise software
-- search available job postings.
-- list payroll runs
-- campus solutions.
-- financial and supply chain management.
-- individual employee details
-- retrieve details for a specific job posting.
-- recruiting
-- payroll run history and status
-- submit a candidate application for a job posting.
-- payroll
-- campus solutions
-- individual approval operations
-- list employees
-- submit application
-- list pending approvals
-- process approval
-- retrieve details for a specific employee.
-- supply chain management
-- peopletools platform services.
-- approve, deny, or push back an hr approval request.
-- list benefit enrollments
-- human resources
-- human capital management.
-- talent management
-- benefit enrollment records
 - job posting details
-- get employee
-- financial management
-- retrieve payroll run history and status.
+- approve, deny, or push back an hr approval request.
+- search jobs
+- campus solutions
+- peopletools platform services.
+- recruiting
+- list payroll runs
+- list pending approvals
+- get job details
+- crm
+- human resources
+- individual employee details
+- list employees
+- peoplesoft
+- retrieve benefit enrollment records.
+- hr approval requests
+- retrieve details for a specific job posting.
+- campus solutions.
+- payroll run history and status
+- financial and supply chain management.
 - candidate applications
+- retrieve pending hr approval requests.
+- retrieve payroll run history and status.
+- human capital management.
+- list benefit enrollments
+- search available job postings.
+- submit application
+- talent management
+- supply chain management
+- employee records
+- hcm
+- financial management
+- benefit enrollment records
+- individual approval operations
+- job postings
+- enterprise software
+- erp
+- payroll
+- retrieve details for a specific employee.
+- retrieve employee records with optional department and status filters.
+- submit a candidate application for a job posting.
+- get employee
+- process approval
 slug: human-resources
 source_filename: human-resources.yaml
 source_heading: Capability Spec

@@ -11,24 +11,24 @@ provider_name: Amazon Kinesis
 provider_slug: amazon-kinesis
 search_terms:
 - analytics
-- data processing
-- amazon kinesis
-- streaming
-- provides a summarized description of the specified kinesis data stream.
 - workflow
-- Administrator
-- aws
+- amazon kinesis
+- streams create stream
+- unified workflow for amazon kinesis resource management
+- streaming
+- integrates api into applications
 - real-time
 - streams list streams
-- creates a kinesis data stream.
 - streams describe stream summary
-- Developer
 - big data
 - manages resources and configurations
-- streams create stream
+- provides a summarized description of the specified kinesis data stream.
+- aws
+- data processing
 - lists your kinesis data streams.
-- unified workflow for amazon kinesis resource management
-- integrates api into applications
+- creates a kinesis data stream.
+- Developer
+- Administrator
 slug: amazon-kinesis-workflow
 source_filename: amazon-kinesis-workflow.yaml
 source_heading: Capability Spec
@@ -37,7 +37,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Workflow\n  
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kinesis/refs/heads/main/capabilities/amazon-kinesis-workflow.yaml
 tags:
 - Amazon Kinesis
-- AWS
 - Workflow
 tools:
 - description: Creates a Kinesis data stream.

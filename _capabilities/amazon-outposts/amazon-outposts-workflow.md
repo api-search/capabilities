@@ -14,20 +14,20 @@ personas: []
 provider_name: Amazon Outposts
 provider_slug: amazon-outposts
 search_terms:
-- list openapi.yml
-- core api workflow
 - list resources
-- Developer
 - primary amazon outposts resources
-- on-premises
-- list amazon outposts resources
-- developer using amazon outposts apis
-- amazon outposts
 - aws
-- hybrid cloud
+- amazon outposts
+- list amazon outposts resources
 - list and manage openapi.yml resources
-- infrastructure
 - edge computing
+- on-premises
+- hybrid cloud
+- core api workflow
+- infrastructure
+- Developer
+- list openapi.yml
+- developer using amazon outposts apis
 slug: amazon-outposts-workflow
 source_filename: amazon-outposts-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Outposts API Workflo
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-outposts/refs/heads/main/capabilities/amazon-outposts-workflow.yaml
 tags:
 - Amazon Outposts
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

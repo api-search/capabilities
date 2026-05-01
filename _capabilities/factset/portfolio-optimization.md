@@ -22,32 +22,32 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
+- get risk models
+- financial
+- portfolio optimization.
+- list optimizations.
+- run factset portfolio optimization.
+- run axioma equity optimization.
+- run barra optimization.
+- get open risk models.
 - portfolio optimization
 - northfield optimize
 - factset optimize
+- investment analytics
+- market data
+- financial data
+- factset
+- list risk models
+- portfolio analytics
+- risk models
+- list optimizations
+- asset allocation
+- barra optimize
+- axioma equity optimize
+- list risk models.
 - research
 - run northfield optimization.
-- portfolio optimization.
-- risk models
-- asset allocation
-- get open risk models.
-- list risk models
-- run barra optimization.
-- list optimizations.
-- financial data
 - open risk models.
-- market data
-- financial
-- factset
-- list optimizations
-- list risk models.
-- portfolio analytics
-- run axioma equity optimization.
-- investment analytics
-- axioma equity optimize
-- run factset portfolio optimization.
-- get risk models
-- barra optimize
 slug: portfolio-optimization
 source_filename: portfolio-optimization.yaml
 source_heading: Capability Spec

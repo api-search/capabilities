@@ -24,7 +24,6 @@ implementations:
   provider_slug: amazon-lambda
   tags:
   - Amazon Lambda
-  - AWS
   - Workflow
   tool_count: 6
 - capability_name: Amazon SAR Serverless App Management

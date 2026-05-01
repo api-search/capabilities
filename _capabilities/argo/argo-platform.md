@@ -28,41 +28,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
-- progressive delivery
-- Platform Engineer
-- workflow engine
-- container orchestration platform
-- DevOps Engineer
-- argo
-- list workflows
-- container-native workflow execution
-- trigger an argo cd application sync from git
-- git-driven deployment and infrastructure management
-- kubernetes
 - cncf
-- gitops
-- sync an application from git
-- workflows list
-- gitops application management
-- ci/cd
-- list all workflows
-- list all argo workflows in a namespace
-- list argo cd applications
-- platform engineering
-- workflow management
-- sync application
-- applications sync
-- applications list
+- kubernetes
 - list applications
-- complete argo project platform combining workflows and cd for devops teams
-- list all argo cd applications with sync and health status
-- submit a new workflow
-- uses argo tools for ci/cd and gitops workflows
-- create workflow
-- manages kubernetes platform tools including argo workflows and argo cd
-- open source
 - workflows create
+- uses argo tools for ci/cd and gitops workflows
+- list workflows
+- create workflow
+- list all argo cd applications with sync and health status
+- workflow engine
+- applications list
+- list all argo workflows in a namespace
+- complete argo project platform combining workflows and cd for devops teams
+- sync application
+- platform engineering
+- list all workflows
+- gitops application management
+- applications sync
+- container-native workflow execution
+- container orchestration platform
+- Platform Engineer
+- progressive delivery
+- ci/cd
+- workflows list
+- manages kubernetes platform tools including argo workflows and argo cd
+- submit a new workflow
+- DevOps Engineer
 - submit a new argo workflow
+- sync an application from git
+- git-driven deployment and infrastructure management
+- open source
+- trigger an argo cd application sync from git
+- list argo cd applications
+- gitops
+- argo
+- workflow management
 slug: argo-platform
 source_filename: argo-platform.yaml
 source_heading: Capability Spec

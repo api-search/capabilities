@@ -57,7 +57,6 @@ implementations:
   - Human In The Loop
   - Machine Learning
   - AI Review
-  - AWS
   tool_count: 4
 - capability_name: Amazon Neptune Analytics and Machine Learning
   capability_slug: neptune-analytics-ml
@@ -68,7 +67,6 @@ implementations:
   provider_slug: amazon-neptune
   tags:
   - Amazon Neptune
-  - AWS
   - Graph Analytics
   - Machine Learning
   tool_count: 4
@@ -81,7 +79,6 @@ implementations:
   provider_slug: amazon-polly
   tags:
   - Amazon
-  - AWS
   - Text-To-Speech
   - Speech Synthesis
   - AI

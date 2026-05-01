@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- Platform Engineer
-- execute query
-- list functions
-- get all keys stored in a geode region
-- geode region management
-- in-memory
-- list geode functions
 - developers using geode as a fast data store for applications
-- list all server-side functions available in the cluster
-- oql query execution
-- in-memory data grid
-- manage in-memory data with regions, queries, and functions
-- execute an oql query against geode regions
-- list regions
-- Application Developer
-- data management
-- execute an oql query
-- platform engineering
-- list all geode regions
-- list available functions
-- list all regions in the apache geode data grid
-- execute oql query
-- distributed systems
-- server-side function execution
-- list geode regions
 - apache geode
-- get region keys
+- in-memory data grid
+- execute an oql query
 - caching
+- list all server-side functions available in the cluster
+- distributed systems
+- execute an oql query against geode regions
+- Application Developer
+- list all regions in the apache geode data grid
+- list available functions
+- data grid
+- platform engineering
+- list functions
+- list geode functions
+- oql query execution
+- execute query
+- get all keys stored in a geode region
+- server-side function execution
+- Platform Engineer
+- region crud operations, oql queries, and function execution
+- execute oql query
+- list all geode regions
+- manage in-memory data with regions, queries, and functions
+- get region keys
 - engineers managing the geode cluster infrastructure
 - apache
-- high-performance in-memory data caching and distribution
-- data grid
+- list regions
+- geode region management
 - open source
-- region crud operations, oql queries, and function execution
+- list geode regions
+- in-memory
+- high-performance in-memory data caching and distribution
+- data management
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

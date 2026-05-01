@@ -10,12 +10,12 @@ provider_name: Block
 provider_slug: block
 search_terms:
 - fintech
-- commerce
-- point of sale
-- cryptocurrency
 - payments
-- square
+- point of sale
+- commerce
 - ecommerce
+- square
+- cryptocurrency
 slug: block-square-commerce
 source_filename: block-square-commerce.yaml
 source_heading: Capability Spec

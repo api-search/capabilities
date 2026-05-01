@@ -22,30 +22,30 @@ personas: []
 provider_name: Apache JMeter
 provider_slug: apache-jmeter
 search_terms:
-- performance engineering
-- qa engineers who run and monitor jmeter load tests
-- Performance Engineer
-- load testing
-- get test status
-- start test
-- engineers who analyze performance test results and tune systems
-- stress testing
-- java
-- qa automation
-- get status
-- retrieve performance test results including response times and throughput
 - get test results
-- performance testing
-- get current status and metrics of a running jmeter test
-- get results
-- stop the currently running jmeter load test
 - QA Engineer
-- api testing
-- stop load test
-- open source
-- start load test
+- java
+- get current status and metrics of a running jmeter test
+- stop the currently running jmeter load test
 - apache jmeter
+- get test status
+- get results
+- retrieve performance test results including response times and throughput
+- load testing
+- performance engineering
+- Performance Engineer
+- engineers who analyze performance test results and tune systems
 - start an apache jmeter load test with a specified test plan
+- qa automation
+- performance testing
+- qa engineers who run and monitor jmeter load tests
+- get status
+- open source
+- start test
+- api testing
+- stress testing
+- start load test
+- stop load test
 slug: load-test-management
 source_filename: load-test-management.yaml
 source_heading: Capability Spec

@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Migration Hub
 provider_slug: amazon-migration-hub
 search_terms:
-- broadcasting
-- disassociate created artifact
-- describemigrationtask
-- manage media processing jobs
-- describe application state
-- media
-- developer building media processing applications
-- amazon migration hub media processing workflow
-- workflow
-- media processing
-- associate discovered resource
-- Media Developer
-- aws
-- list jobs
-- delete progress update stream
-- disassociatecreatedartifact
-- describe migration task
-- createprogressupdatestream
-- associatediscoveredresource
-- associatecreatedartifact
-- associate created artifact
 - Broadcast Engineer
-- create progress update stream
-- engineer managing broadcast media workflows
-- describeapplicationstate
-- disassociate discovered resource
-- disassociatediscoveredresource
-- aws media processing and delivery
 - deleteprogressupdatestream
+- createprogressupdatestream
+- disassociatediscoveredresource
+- describe migration task
+- broadcasting
+- media
+- media processing
+- associate created artifact
+- workflow
+- describemigrationtask
+- disassociatecreatedartifact
+- aws media processing and delivery
+- disassociate created artifact
+- associatecreatedartifact
+- associate discovered resource
+- associatediscoveredresource
+- describe application state
+- list jobs
+- Media Developer
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- manage media processing jobs
+- delete progress update stream
+- aws
+- describeapplicationstate
+- amazon migration hub media processing workflow
+- create progress update stream
+- disassociate discovered resource
 slug: amazon-migration-hub-media-workflow
 source_filename: amazon-migration-hub-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Migration Hub Workfl
   \ false\n        openWorld: true\n      call: migration_hub.disassociate-created-artifact\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: disassociate-discovered-resource\n      description: DisassociateDiscoveredResource\n      hints:\n        readOnly: false\n        openWorld: true\n      call: migration_hub.disassociate-discovered-resource\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-migration-hub/refs/heads/main/capabilities/amazon-migration-hub-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

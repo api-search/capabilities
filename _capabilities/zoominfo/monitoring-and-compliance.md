@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- data
-- check compliance
 - get api usage data.
-- update an existing webhook subscription.
-- webhook target url validation.
-- create a new webhook subscription for data change notifications.
-- create webhook
-- validate target url
-- data compliance operations.
-- update webhook
-- monitoring
-- list webhooks
-- check data compliance status for specified contacts.
-- sales intelligence
-- validate a webhook target url.
-- create a new webhook subscription.
-- webhook subscription management.
-- b2b data
-- check compliance status for specified contacts.
-- available webhook subscription types.
-- list all configured webhook subscriptions.
-- zoominfo
-- api usage tracking.
-- compliance
-- contact database
-- company data
-- contacts
-- get api usage data and consumption metrics.
-- get subscription types
-- lead generation
-- api usage
-- get available webhook subscription types.
-- delete webhook
 - validate a webhook target url is reachable.
-- b2b
-- marketing intelligence
-- webhooks
-- individual webhook management.
-- list all webhook subscriptions.
-- delete a webhook subscription.
+- b2b data
+- update webhook
+- check compliance
+- get subscription types
 - get usage
+- validate target url
+- data
+- webhook target url validation.
+- update an existing webhook subscription.
+- list webhooks
+- company data
+- sales intelligence
+- check data compliance status for specified contacts.
+- api usage
+- validate a webhook target url.
+- zoominfo
+- list all webhook subscriptions.
+- marketing intelligence
+- get available webhook subscription types.
+- list all configured webhook subscriptions.
+- webhooks
+- lead generation
+- b2b
+- create webhook
+- individual webhook management.
+- contacts
+- monitoring
+- contact database
+- compliance
+- create a new webhook subscription.
+- available webhook subscription types.
+- create a new webhook subscription for data change notifications.
+- api usage tracking.
+- get api usage data and consumption metrics.
+- delete a webhook subscription.
+- check compliance status for specified contacts.
+- webhook subscription management.
+- data compliance operations.
+- delete webhook
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

@@ -72,58 +72,58 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- get me
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- get user
-- directory services
-- conditional access policy automation for zero-trust enforcement
-- active directory
-- list group members
-- zero trust
-- create, update, and deactivate user accounts throughout the employee/guest lifecycle
-- periodic access reviews and identity risk remediation
-- user management
 - get the signed-in user's microsoft entra profile
-- signed-in user profile
-- service principals
-- authorization
-- individual user operations
-- get user by id or upn
-- unified user, group, and application management for microsoft entra id
-- Security Analyst
-- application registration and service principal lifecycle for zero-trust app governance
+- list microsoft entra id groups — security groups and microsoft 365 groups
+- list application registrations in the microsoft entra tenant
+- list service principals in the microsoft entra tenant
 - create a new user account in microsoft entra id with required profile and password settings
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- get application
-- get signed-in user profile
-- get details about a specific microsoft entra user by object id or userprincipalname
-- IT Administrator
-- security professional monitoring identity risks, conditional access policies, and audit logs
-- microsoft entra
+- list users
+- identity management
+- periodic access reviews and identity risk remediation
 - get group
+- IT Administrator
+- list applications
+- list direct members of a microsoft entra group
+- Identity Engineer
+- application registrations
+- application registration and service principal lifecycle for zero-trust app governance
+- get details about a specific microsoft entra application registration
+- user management
+- get details about a specific microsoft entra user by object id or userprincipalname
+- active directory
+- individual user operations
+- get signed-in user profile
+- security professional monitoring identity risks, conditional access policies, and audit logs
+- get user
+- group member management
+- create, update, and deactivate user accounts throughout the employee/guest lifecycle
+- conditional access policy automation for zero-trust enforcement
+- authentication
+- get user by id or upn
+- service principals
+- get details about a specific microsoft entra group including type and membership settings
+- get me
+- list groups
 - create user
+- enterprise it admin managing user accounts, groups, device policies, and access management
+- group management
+- user lifecycle management
+- get application
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- group-based access control and app role assignment for resource permissions
+- signed-in user profile
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- create group
+- list group members
+- unified user, group, and application management for microsoft entra id
+- authorization
+- list service principals
+- zero trust
+- directory services
+- microsoft entra
 - registered and joined device management for compliant device access policies
 - individual group operations
-- list microsoft entra id groups — security groups and microsoft 365 groups
-- list applications
-- group management
-- get details about a specific microsoft entra application registration
-- enterprise it admin managing user accounts, groups, device policies, and access management
-- create group
-- group member management
-- list groups
-- list service principals
-- list service principals in the microsoft entra tenant
-- get details about a specific microsoft entra group including type and membership settings
-- list direct members of a microsoft entra group
-- list application registrations in the microsoft entra tenant
-- user lifecycle management
-- authentication
-- group-based access control and app role assignment for resource permissions
-- list users
-- application registrations
-- Identity Engineer
-- identity management
+- Security Analyst
 slug: identity-management-operations
 source_filename: identity-management-operations.yaml
 source_heading: Capability Spec

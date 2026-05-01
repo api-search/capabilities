@@ -38,7 +38,6 @@ implementations:
   provider_slug: amazon-cognito
   tags:
   - Amazon
-  - AWS
   - Authentication
   - Identity
   - User Management
@@ -53,7 +52,6 @@ implementations:
   provider_name: Amazon IAM
   provider_slug: amazon-iam
   tags:
-  - AWS
   - IAM
   - Security
   - Access Control
@@ -68,7 +66,6 @@ implementations:
   provider_name: Amazon IAM Identity Center
   provider_slug: amazon-iam-identity-center
   tags:
-  - AWS
   - IAM
   - Identity Management
   - Single Sign-On
@@ -109,7 +106,6 @@ implementations:
   provider_slug: aws-cognito
   tags:
   - Amazon Cognito
-  - AWS
   - Authentication
   - Authorization
   - Identity Management

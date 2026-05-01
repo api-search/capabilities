@@ -10,30 +10,30 @@ personas: []
 provider_name: Amazon Kinesis Video Streams
 provider_slug: amazon-kinesis-video-streams
 search_terms:
-- returns an array of channelinfo objects.
-- streams describe stream
-- amazon kinesis video streams
-- video streaming
 - returns an array of streaminfo objects.
 - media
-- unified workflow for amazon kinesis video streams resource management
 - iot
-- machine learning
-- creates a signaling channel.
 - workflow
-- Administrator
-- returns the most current information about the signaling channel.
-- aws
-- streams list streams
-- channels list signaling channels
-- Developer
-- creates a new kinesis video stream.
-- returns the most current information about the specified stream.
-- channels create signaling channel
-- manages resources and configurations
+- video streaming
 - streams create stream
-- channels describe signaling channel
+- returns an array of channelinfo objects.
+- streams describe stream
 - integrates api into applications
+- unified workflow for amazon kinesis video streams resource management
+- channels create signaling channel
+- creates a signaling channel.
+- returns the most current information about the specified stream.
+- streams list streams
+- manages resources and configurations
+- machine learning
+- amazon kinesis video streams
+- channels list signaling channels
+- returns the most current information about the signaling channel.
+- creates a new kinesis video stream.
+- channels describe signaling channel
+- aws
+- Developer
+- Administrator
 slug: amazon-kinesis-video-streams-workflow
 source_filename: amazon-kinesis-video-streams-workflow.yaml
 source_heading: Capability Spec
@@ -43,7 +43,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Kinesis Video Stream
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kinesis-video-streams/refs/heads/main/capabilities/amazon-kinesis-video-streams-workflow.yaml
 tags:
 - Amazon Kinesis Video Streams
-- AWS
 - Workflow
 tools:
 - description: Creates a new Kinesis video stream.

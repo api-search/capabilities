@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- import an openapi/swagger specification into an apidog project for design-first development.
-- developer building and managing apis using apidog's design-first platform.
-- mocking
-- Platform Engineer
-- export openapi spec
-- import a postman collection into apidog for converting to openapi-based workflows.
-- API Developer
-- engineer automating api specification workflows via ci/cd integration.
-- api lifecycle
-- import openapi spec
-- import openapi
-- unified workflow for managing api specifications lifecycle.
-- export openapi
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
 - managing the complete lifecycle of api specifications from design to deployment.
-- export openapi specification from apidog project.
-- design-first
+- export openapi
+- export
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- api lifecycle
+- documentation
+- mocking
+- collaboration
+- import an openapi/swagger specification into an apidog project for design-first development.
+- apidog
+- engineer automating api specification workflows via ci/cd integration.
+- import
+- import openapi
+- API Developer
+- export openapi spec
+- Platform Engineer
+- unified workflow for managing api specifications lifecycle.
 - api design
+- developer building and managing apis using apidog's design-first platform.
 - import postman collection
 - import api specifications from various formats.
-- collaboration
+- import a postman collection into apidog for converting to openapi-based workflows.
 - export api specifications to standard formats.
-- import
-- api testing
+- export openapi specification from apidog project.
 - import openapi specification into apidog project.
 - platform
-- documentation
-- export
-- apidog
+- api testing
+- design-first
+- import openapi spec
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

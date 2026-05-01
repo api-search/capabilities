@@ -41,55 +41,55 @@ personas: []
 provider_name: Appium
 provider_slug: appium
 search_terms:
-- mobile testing
+- ios
+- check server
+- automation session lifecycle management
+- find element
 - launch mobile app
-- qa
-- takes a screenshot of the current mobile app screen for visual inspection or debugging
-- check appium server
+- capture screen
+- Test Automation Engineer
+- screen capture for visual testing
 - install app
-- checks appium server availability
+- QA Engineer
+- end-to-end mobile app test automation combining session management, element interaction, device control, and visual capture
 - finds a ui element by locator strategy
-- install mobile app
+- android
 - engineer building automated test frameworks and ci/cd pipelines for mobile apps
-- launches or brings to foreground a mobile app by package name (android) or bundle id (ios)
-- checks whether the appium server is running and ready to accept connections
+- starts a new appium automation session for a mobile app with platform capabilities (platformname, devicename, app path, etc.)
 - test automation
+- openjs foundation
+- ui element discovery and interaction
+- checks whether the appium server is running and ready to accept connections
+- captures the current device screen
+- device-level operations including app lifecycle and device state
 - end automation session
-- cross-platform
-- installs an app on the test device
+- app installation and lifecycle management
+- appium server health check
+- start session
+- finds a ui element in the current app screen using a locator strategy (accessibility id, xpath, id, class name)
+- simulating user input including taps, swipes, and text entry
 - start automation session
 - appium
-- openjs foundation
-- start session
-- launches or activates an installed app
-- Test Automation Engineer
-- starts a new appium automation session for a mobile app with platform capabilities (platformname, devicename, app path, etc.)
-- launch app
-- screen capture for visual testing
-- finds a ui element in the current app screen using a locator strategy (accessibility id, xpath, id, class name)
-- quality assurance professional writing and running mobile app tests
-- ios
-- find element
-- ends an appium automation session and releases device resources
-- simulating user input including taps, swipes, and text entry
-- capture screen
-- appium server health check
-- device-level operations including app lifecycle and device state
-- app installation and lifecycle management
-- starts a new mobile automation session
-- automation session lifecycle management
-- find ui element
+- takes a screenshot of the current mobile app screen for visual inspection or debugging
 - capture screenshot
-- QA Engineer
-- webdriver
-- end-to-end mobile app test automation combining session management, element interaction, device control, and visual capture
-- captures the current device screen
-- ui element discovery and interaction
-- open source
-- installs a mobile app (.apk or .ipa) on the test device from a local path or url
-- android
+- starts a new mobile automation session
+- launches or brings to foreground a mobile app by package name (android) or bundle id (ios)
 - automated testing of mobile and web applications
-- check server
+- installs an app on the test device
+- quality assurance professional writing and running mobile app tests
+- check appium server
+- installs a mobile app (.apk or .ipa) on the test device from a local path or url
+- checks appium server availability
+- find ui element
+- launch app
+- ends an appium automation session and releases device resources
+- mobile testing
+- cross-platform
+- webdriver
+- open source
+- qa
+- install mobile app
+- launches or activates an installed app
 slug: mobile-test-automation
 source_filename: mobile-test-automation.yaml
 source_heading: Capability Spec

@@ -55,7 +55,6 @@ implementations:
   provider_slug: amazon-pinpoint
   tags:
   - Amazon
-  - AWS
   - Marketing
   - Customer Engagement
   - Campaigns

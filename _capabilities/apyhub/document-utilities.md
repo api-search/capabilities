@@ -11,29 +11,29 @@ personas: []
 provider_name: ApyHub
 provider_slug: apyhub
 search_terms:
+- utility apis
+- developer utilities
+- get exchange rate
+- converts a webpage or html document to pdf format
+- generate invoice pdf
+- uses apyhub to generate pdfs and process documents at scale
 - data extraction
 - pdf generation
 - document conversion
-- document processing
-- extract document text
-- generating pdfs from html templates with dynamic data
-- data processing
-- uses apyhub to generate pdfs and process documents at scale
-- extracting structured data from documents like pdfs
-- developer utilities
-- utility apis
-- api platform
-- apyhub
-- generates a pdf invoice from an html template with dynamic order data
-- converts a webpage or html document to pdf format
-- extracts text content from a pdf document for processing
 - integrates apyhub document utilities into web and mobile applications
-- convert webpage to pdf
-- gets the current exchange rate and converts a currency amount
+- generating pdfs from html templates with dynamic data
+- document processing
 - convert, generate, and extract data from documents using apyhub
-- generate invoice pdf
-- get exchange rate
+- apyhub
+- extracting structured data from documents like pdfs
+- convert webpage to pdf
+- extract document text
+- extracts text content from a pdf document for processing
+- gets the current exchange rate and converts a currency amount
 - converting documents between formats (html to pdf, word to pdf)
+- api platform
+- data processing
+- generates a pdf invoice from an html template with dynamic order data
 slug: document-utilities
 source_filename: document-utilities.yaml
 source_heading: Capability Spec

@@ -53,61 +53,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- query items by primary key.
-- list backups
-- describe table
-- get multiple items from one or more tables.
-- update a table.
-- item operations.
-- serverless
-- describe a dynamodb table.
-- database management
-- create a table.
-- document store
-- table management.
-- query operations.
-- delete an item.
-- update item
-- update table
-- get item
-- put or delete multiple items in batch.
-- write items in a transaction.
-- list on-demand backups.
-- managed service
-- create a new dynamodb table.
-- scan
-- aws
-- query items.
-- get an item by primary key.
-- describe a table.
-- batch write item
-- delete a dynamodb table.
-- transact write items
-- delete item
-- scan an entire table or index.
-- update an item.
-- create table
-- delete a table.
-- list tables.
-- batch get item
-- key-value
-- delete table
-- nosql
-- dynamodb
-- create an on-demand backup.
-- scan a table.
-- get items in a transaction.
-- list dynamodb tables.
-- create backup
-- database
-- cloud
-- transact get items
 - get an item.
-- put item
-- individual table management.
-- query
+- delete an item.
+- key-value
 - create or replace an item.
+- create a table.
+- get an item by primary key.
+- nosql
+- describe a dynamodb table.
+- get item
+- put item
+- query operations.
+- list on-demand backups.
+- update a table.
+- create an on-demand backup.
+- document store
+- cloud
+- individual table management.
+- managed service
+- update an item.
+- database management
+- item operations.
+- describe table
+- transact write items
+- get items in a transaction.
+- create table
+- database
+- scan an entire table or index.
+- update item
+- dynamodb
+- table management.
+- query items.
+- scan
+- list tables.
+- list backups
+- describe a table.
+- delete a table.
+- list dynamodb tables.
+- delete table
+- delete item
+- create backup
+- transact get items
+- query
+- delete a dynamodb table.
+- aws
+- batch get item
 - list tables
+- write items in a transaction.
+- update table
+- scan a table.
+- put or delete multiple items in batch.
+- create a new dynamodb table.
+- batch write item
+- query items by primary key.
+- serverless
+- get multiple items from one or more tables.
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec
@@ -123,7 +123,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DynamoDB Dat
   \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/dynamodb/refs/heads/main/capabilities/database-management.yaml
 tags:
-- AWS
 - DynamoDB
 - NoSQL
 - Database Management

@@ -34,52 +34,52 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- search for contacts matching sales criteria
-- data
-- enrich intent
-- enrich a company with firmographic data including revenue and employee count
-- enrich technology
-- business intelligence scoops
-- search for companies matching ideal customer profile
-- company search
-- sales prospecting
-- enrich company records
-- search contacts
-- find companies showing buying intent
-- enrich a contact with verified data
-- find companies showing buying intent signals in your category
-- search scoops
-- sales intelligence
 - b2b data
-- search and discover contacts
-- search and discover companies
-- search zoominfo for companies by industry, revenue, employee count, and tech stack
-- enrich a company with firmographic data
-- zoominfo
-- contact database
-- search zoominfo for contacts by job title, company, location, and industry
-- company data
-- lead generation
-- contacts
-- enrich company
+- find companies showing buying intent signals in your category
+- sales prospecting
 - enrich contact records
-- get technology stack details for a target company
+- data
 - enrich contact
-- search news
-- search for recent news about target companies
+- enrich intent
 - get org chart to identify decision makers at target company
-- enrich a contact record with verified email, phone, and professional details
-- search for business intelligence scoops about target companies
-- enrich orgchart
-- b2b
-- search for business scoops about companies
+- search and discover companies
+- search for recent news about target companies
+- search news
+- company search
+- company data
+- enrich company records
+- sales intelligence
+- zoominfo
+- enrich company
+- search contacts
+- business intelligence scoops
+- search zoominfo for companies by industry, revenue, employee count, and tech stack
 - marketing intelligence
-- get intent data for a specific company
-- search companies
-- search intent
-- intent data
-- buyer intent signals
+- search for business scoops about companies
+- search scoops
+- lead generation
+- b2b
 - contact search
+- contacts
+- contact database
+- search for contacts matching sales criteria
+- enrich a contact with verified data
+- enrich a contact record with verified email, phone, and professional details
+- intent data
+- search zoominfo for contacts by job title, company, location, and industry
+- get technology stack details for a target company
+- search for companies matching ideal customer profile
+- search and discover contacts
+- search intent
+- enrich orgchart
+- find companies showing buying intent
+- enrich technology
+- get intent data for a specific company
+- enrich a company with firmographic data including revenue and employee count
+- buyer intent signals
+- search companies
+- enrich a company with firmographic data
+- search for business intelligence scoops about target companies
 slug: sales-prospecting
 source_filename: sales-prospecting.yaml
 source_heading: Capability Spec

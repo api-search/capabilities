@@ -12,14 +12,13 @@ provider_name: Amazon CloudWatch
 provider_slug: amazon-cloudwatch
 search_terms:
 - amazon cloudwatch
-- logs
-- cloudwatch
-- amazon web services
-- aws
-- metrics
-- observability
-- monitoring
 - Operations Engineer
+- monitoring
+- cloudwatch
+- observability
+- logs
+- amazon web services
+- metrics
 slug: observability
 source_filename: observability.yaml
 source_heading: Capability Spec

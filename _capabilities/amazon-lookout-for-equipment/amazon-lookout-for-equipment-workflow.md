@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon Lookout for Equipment
 provider_slug: amazon-lookout-for-equipment
 search_terms:
-- machine learning
-- provides a json containing the overall information about a specific dataset.
-- datasets describe dataset
+- workflow
 - predictive maintenance
 - lists all datasets currently available in your account.
+- aws
+- manages resources and configurations
+- Administrator
+- machine learning
+- integrates api into applications
+- equipment monitoring
 - amazon lookout for equipment
 - industrial iot
-- datasets list datasets
-- workflow
-- Administrator
-- manages resources and configurations
-- unified workflow for amazon lookout for equipment resource management
-- equipment monitoring
-- aws
-- datasets create dataset
-- Developer
 - creates a container (dataset) for a collection of data being ingested for analysis.
-- integrates api into applications
+- datasets describe dataset
+- Developer
+- unified workflow for amazon lookout for equipment resource management
+- datasets create dataset
+- datasets list datasets
+- provides a json containing the overall information about a specific dataset.
 slug: amazon-lookout-for-equipment-workflow
 source_filename: amazon-lookout-for-equipment-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lookout for Equipmen
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/capabilities/amazon-lookout-for-equipment-workflow.yaml
 tags:
 - Amazon Lookout for Equipment
-- AWS
 - Workflow
 tools:
 - description: Creates a container (dataset) for a collection of data being ingested for analysis.

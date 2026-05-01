@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- captions
-- list youtube videos matching criteria
-- list captions
-- social
-- update video
-- delete caption
-- media
-- content management
-- youtube
-- video
-- list youtube playlists
-- streaming
-- delete a video
-- upload caption
-- list caption tracks for a video
-- delete a playlist
-- google
-- manage items within playlists
-- videos
 - playlists
-- update playlist details
-- delete a caption track
+- list captions
+- delete caption
+- delete a video
+- google
+- update video metadata
+- update playlist
 - manage youtube playlists
-- update caption
+- manage items within playlists
+- manage video captions
+- upload a new video to youtube
+- media
+- create playlist
+- upload video
+- update video
+- list videos
+- list videos matching criteria
+- list playlist items
+- delete a caption track
+- upload a new caption track
+- content management
+- video
+- streaming
+- delete playlist
+- videos
 - upload a new video
+- list items in a playlist
 - delete a video from youtube
-- manage youtube videos
-- create a new playlist
 - delete video
 - add playlist item
-- remove a video from a playlist
-- manage video captions
-- update playlist
-- remove playlist item
-- upload a caption track
-- delete playlist
-- list items in a playlist
-- update a caption track
-- list playlists
-- list videos matching criteria
-- upload a new video to youtube
-- create playlist
 - add a video to a playlist
-- upload video
-- list playlist items
-- list videos
-- upload a new caption track
-- update video metadata
+- list caption tracks for a video
+- delete a playlist
+- upload a caption track
+- remove playlist item
+- list youtube playlists
+- update a caption track
+- captions
+- create a new playlist
+- remove a video from a playlist
+- upload caption
+- list youtube videos matching criteria
+- update playlist details
+- manage youtube videos
+- social
+- list playlists
+- update caption
+- youtube
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

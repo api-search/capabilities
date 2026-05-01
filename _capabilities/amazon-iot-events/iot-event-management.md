@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Events
 provider_slug: amazon-iot-events
 search_terms:
-- amazon iot events list alarms
-- amazon iot events create detector model
-- list inputs
-- amazon iot events create alarm model
-- amazon iot events list inputs
-- amazon iot events resources
-- create detector model
-- iot
 - describe detector model
-- create alarm model
-- automation
-- amazon iot events list detector models
-- detect and respond to events from iot sensors and applications.
-- IoT Developer
-- aws
-- list alarms
-- describe alarm model
-- amazon iot events create input
-- state machine
-- create input
+- amazon iot events list alarms
+- create detector model
+- list inputs
 - amazon iot events describe alarm model
-- manages amazon iot events resources and operations
-- event detection
+- iot
+- detect and respond to events from iot sensors and applications.
+- describe alarm model
+- create input
+- list alarms
+- state machine
+- amazon iot events list detector models
 - amazon iot events describe detector model
+- IoT Developer
+- amazon iot events create input
+- automation
+- create alarm model
+- amazon iot events resources
+- amazon iot events create detector model
 - Solutions Architect
+- aws
+- manages amazon iot events resources and operations
+- amazon iot events create alarm model
 - list detector models
+- amazon iot events list inputs
+- event detection
 slug: iot-event-management
 source_filename: iot-event-management.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Events - Iot
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-events/refs/heads/main/capabilities/iot-event-management.yaml
 tags:
 - IoT
-- AWS
 - Event Detection
 - Automation
 tools:

@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- Agronomist
-- plant disease
-- account credit management.
-- agriculture
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- get credit
-- disease and pest identification from plant images
-- supported crop catalog.
-- developers building crop advisory and farm management applications
-- list crops
-- Precision Agriculture Developer
-- supported crop types for diagnosis
-- credit balance and api usage monitoring
-- check credit balance
-- list all supported crop types.
-- list supported crops
-- diagnose plant diseases and pests from an uploaded image.
-- diagnose
-- Crop Advisor
-- check remaining api credits for plant diagnosis requests.
+- diagnose plant disease
 - field specialists diagnosing plant health issues in crops
+- account credit management.
+- plant health diagnosis.
+- get credit
 - get current credit balance.
 - list all crop types supported by agrio's ai diagnosis service.
-- ai diagnosis
-- agricultural consultants providing plant health recommendations
+- list all supported crop types.
 - ai
-- pest detection
-- diagnose plant disease
-- plant health diagnosis.
-- agrio
-- ai-powered plant disease diagnosis and crop advisory
+- Crop Advisor
+- list supported crops
+- plant disease
 - crop protection
+- ai-powered plant disease diagnosis and crop advisory
+- supported crop catalog.
 - crop advisory
+- diagnose plant diseases and pests from an uploaded image.
+- check credit balance
+- agriculture
+- list crops
+- credit balance and api usage monitoring
+- Agronomist
+- agrio
+- supported crop types for diagnosis
+- agricultural consultants providing plant health recommendations
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
+- developers building crop advisory and farm management applications
+- pest detection
+- check remaining api credits for plant diagnosis requests.
+- disease and pest identification from plant images
+- Precision Agriculture Developer
+- diagnose
+- ai diagnosis
 slug: crop-protection
 source_filename: crop-protection.yaml
 source_heading: Capability Spec

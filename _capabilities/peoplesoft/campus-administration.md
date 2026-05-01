@@ -52,42 +52,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve class schedule and enrollment data.
-- crm
-- retrieve student records.
-- hcm
-- erp
-- peoplesoft
-- financial aid awards
-- campus approval requests
-- retrieve pending campus approval requests.
-- financial aid
-- get student
-- enterprise software
-- list financial aid awards
-- list students
 - list admission applications
 - student records
-- individual student details
-- list classes
-- retrieve financial aid award data.
-- financial and supply chain management.
-- campus solutions.
-- admissions
-- higher education
 - campus solutions
-- individual approval operations
-- list pending approvals
+- individual student details
 - class schedule and enrollment data
-- admission applications
-- retrieve details for a specific student.
-- process approval
-- supply chain management
-- approve, deny, or push back a campus approval request.
+- list students
 - peopletools platform services.
-- retrieve admission applications.
+- retrieve financial aid award data.
+- retrieve class schedule and enrollment data.
+- list pending approvals
+- retrieve details for a specific student.
+- list financial aid awards
+- crm
+- get student
+- retrieve student records.
+- peoplesoft
+- financial aid awards
+- higher education
+- approve, deny, or push back a campus approval request.
+- campus solutions.
+- financial aid
+- financial and supply chain management.
+- admissions
 - human capital management.
+- retrieve pending campus approval requests.
+- admission applications
+- campus approval requests
+- supply chain management
+- retrieve admission applications.
+- hcm
 - financial management
+- list classes
+- individual approval operations
+- enterprise software
+- erp
+- process approval
 slug: campus-administration
 source_filename: campus-administration.yaml
 source_heading: Capability Spec

@@ -22,16 +22,16 @@ provider_name: Amazon RoboMaker
 provider_slug: amazon-robomaker
 search_terms:
 - cloud operations
+- list resources
 - automation workflow for amazon robomaker
+- amazon robomaker resources
+- aws
+- engineer managing amazon robomaker resources
 - robotics
+- simulation
 - aws cloud resource management
 - amazon robomaker
-- list resources
-- engineer managing amazon robomaker resources
 - list amazon robomaker resources
-- aws
-- simulation
-- amazon robomaker resources
 slug: amazon-robomaker
 source_filename: amazon-robomaker.yaml
 source_heading: Capability Spec
@@ -40,7 +40,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Robomaker Operations
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-robomaker/refs/heads/main/capabilities/amazon-robomaker.yaml
 tags:
 - Amazon Robomaker
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Robomaker resources

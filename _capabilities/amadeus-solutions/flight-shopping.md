@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- confirm price
-- OTA Developer
+- confirm flight price
+- flight offer discovery and comparison.
 - flights
-- confirm current price and availability.
+- developer building conversational travel assistants for flight search.
+- travel
+- Travel Chatbot Developer
 - search available flights by origin, destination, and date.
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- search
 - price confirmation and validation before booking.
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- complete flight shopping flow from search through price confirmation.
+- OTA Developer
+- gds
+- search flights advanced
+- amadeus
+- search for available flight offers.
 - developer building online travel agency flight search and booking flows.
 - search flights
-- search flights advanced
-- complete flight shopping flow from search through price confirmation.
-- search for available flight offers.
-- gds
-- shopping
-- upsell, seat selection, and add-on services.
-- confirm flight price
-- search
-- Travel Chatbot Developer
-- travel technology
 - booking
 - confirm pricing for a selected flight offer.
-- amadeus
-- flight offer discovery and comparison.
-- travel
-- pricing
 - hotels
-- airlines
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- developer building conversational travel assistants for flight search.
+- shopping
+- pricing
+- travel technology
+- confirm price
 - confirm the current price and availability of a selected flight offer before creating a booking.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- airlines
+- confirm current price and availability.
+- upsell, seat selection, and add-on services.
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

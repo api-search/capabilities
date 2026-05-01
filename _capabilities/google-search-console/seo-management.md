@@ -51,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- add a site to search console.
-- get sitemap
-- webmaster tools
-- inspect url
-- query search analytics
-- manage sitemaps.
-- inspect a url for index status and rich results.
-- analytics
-- list all search console sites for the authenticated user.
-- list sitemaps submitted for a site.
-- submit a sitemap for crawling.
-- inspect urls for indexing status.
-- get details for a specific sitemap.
-- query search traffic data.
-- delete site
-- webmaster
-- submit a sitemap.
-- get details for a specific site.
-- google
-- inspect a url for index status, crawl info, mobile usability, and rich results.
+- remove a site from search console.
 - get site
-- get details for a specific search console site.
-- search
+- analytics
 - manage search console sites.
+- query search analytics
+- get sitemap details.
+- inspect urls for indexing status.
+- google
+- list all search console sites for the authenticated user.
+- query search analytics data with filters.
+- list sitemaps for a site.
+- manage sitemaps.
+- get details for a specific sitemap.
+- search
+- submit a sitemap for crawling.
+- list sitemaps submitted for a site.
+- delete sitemap
+- get details for a specific site.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- get sitemap
+- delete site
+- seo
+- submit sitemap
 - delete a previously submitted sitemap.
 - list sites
-- delete a sitemap.
-- query search traffic data with filters and dimensions.
-- query search analytics data with filters.
-- list sitemaps
-- submit sitemap
-- search console
-- list all search console sites.
+- webmaster tools
 - add site
-- seo
-- remove a site from search console.
-- get sitemap details.
-- list sitemaps for a site.
-- delete sitemap
+- list all search console sites.
+- query search traffic data with filters and dimensions.
+- inspect a url for index status and rich results.
+- webmaster
+- delete a sitemap.
+- add a site to search console.
+- search console
+- list sitemaps
+- inspect url
+- query search traffic data.
+- get details for a specific search console site.
+- submit a sitemap.
 slug: seo-management
 source_filename: seo-management.yaml
 source_heading: Capability Spec

@@ -23,39 +23,39 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- get loggly account information
-- it management
-- papertrail list systems
-- retrieve loggly search results by rsid
-- database monitoring
 - list log-sending systems
-- papertrail list groups
-- infrastructure
-- observability
-- loggly search
-- loggly log search
-- solarwinds
-- ip address management
-- list papertrail system groups
-- search papertrail log events
-- itsm
-- loggly search events
-- papertrail
-- application monitoring
-- list papertrail log-sending systems
-- list systems
-- papertrail system management
-- list papertrail saved searches
-- papertrail list saved searches
-- papertrail search
+- it management
 - network monitoring
-- loggly get events
-- loggly
-- papertrail search events
-- papertrail log search
+- papertrail
+- ip address management
+- loggly search
+- list papertrail log-sending systems
+- papertrail search
 - search loggly log events
+- papertrail log search
+- list papertrail saved searches
+- itsm
+- solarwinds
+- list systems
+- papertrail search events
+- papertrail system management
 - loggly get account info
+- papertrail list saved searches
+- application monitoring
+- database monitoring
+- infrastructure
+- get loggly account information
+- papertrail list systems
+- loggly log search
+- loggly
+- retrieve loggly search results by rsid
+- papertrail list groups
+- observability
+- loggly search events
+- loggly get events
 - log management
+- search papertrail log events
+- list papertrail system groups
 slug: log-management
 source_filename: log-management.yaml
 source_heading: Capability Spec

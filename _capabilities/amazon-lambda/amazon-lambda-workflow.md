@@ -11,31 +11,31 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
-- returns information about the function or function version.
-- creates a mapping between an event source and an aws lambda function.
-- serverless
-- unified workflow for amazon lambda resource management
 - event source mappings get event source mapping
-- event source mappings create event source mapping
-- event source mappings list event source mappings
-- workflow
-- Administrator
-- functions
-- lists event source mappings.
-- aws
 - functions create function
 - faas
-- functions get function
-- functions list functions
-- returns a list of lambda functions, with the version-specific configuration of each.
-- amazon lambda
-- Developer
-- compute
-- event-driven
-- returns details about an event source mapping.
-- manages resources and configurations
 - creates a lambda function.
+- returns a list of lambda functions, with the version-specific configuration of each.
+- compute
+- functions get function
+- unified workflow for amazon lambda resource management
+- workflow
+- returns information about the function or function version.
+- event source mappings list event source mappings
 - integrates api into applications
+- returns details about an event source mapping.
+- creates a mapping between an event source and an aws lambda function.
+- manages resources and configurations
+- amazon lambda
+- aws
+- functions list functions
+- lists event source mappings.
+- functions
+- event source mappings create event source mapping
+- event-driven
+- Developer
+- Administrator
+- serverless
 slug: amazon-lambda-workflow
 source_filename: amazon-lambda-workflow.yaml
 source_heading: Capability Spec
@@ -45,7 +45,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lambda Workflow\n  d
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lambda/refs/heads/main/capabilities/amazon-lambda-workflow.yaml
 tags:
 - Amazon Lambda
-- AWS
 - Workflow
 tools:
 - description: Creates a Lambda function.

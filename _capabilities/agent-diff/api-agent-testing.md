@@ -15,18 +15,18 @@ personas:
 provider_name: Agent Diff
 provider_slug: agent-diff
 search_terms:
-- devops engineer
-- sandboxing
-- ai agent developer
-- api testing
-- api diffing
-- developer building and testing ai agents that interact with third-party apis.
-- creating, managing, and terminating isolated api sandbox replicas.
 - engineer integrating agent testing into ci/cd pipelines for deterministic validation.
-- end-to-end workflow for testing ai agents against isolated ephemeral api sandbox replicas.
+- devops engineer
+- ai agent developer
+- sandboxing
 - tracking and reviewing state changes produced by agent operations.
 - ai agents
+- api diffing
 - developer tools
+- api testing
+- developer building and testing ai agents that interact with third-party apis.
+- end-to-end workflow for testing ai agents against isolated ephemeral api sandbox replicas.
+- creating, managing, and terminating isolated api sandbox replicas.
 slug: api-agent-testing
 source_filename: api-agent-testing.yaml
 source_heading: Capability Spec

@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- create a new incident response plan with escalation contacts
-- list all incident response plans
-- update incident
-- operations
-- list response plans
-- Operations Engineer
-- manage incident response plans
-- update the summary or status of an active incident
-- automation
+- list active incidents
+- list timeline events for an incident
+- create incident
+- automated incident response plans and escalation
+- Site Reliability Engineer
+- manages incident response plans and responds to operational incidents
+- monitors system reliability and coordinates incident resolution
 - manage active incidents
 - create response plan
-- list all response plans
-- manages incident response plans and responds to operational incidents
-- get incident
-- creating, tracking, and resolving operational incidents
-- list active and recent incidents
-- aws
-- devops
-- create incident
-- list timeline events for an incident
 - list incidents
+- operations
+- update incident
 - list timeline events
-- incident management
-- list active incidents
-- Site Reliability Engineer
-- automated incident response plans and escalation
-- get details of a specific incident
-- monitors system reliability and coordinates incident resolution
-- start a new incident and trigger response plan
+- list all response plans
+- devops
 - create a new incident
+- automation
+- update the summary or status of an active incident
+- get details of a specific incident
+- create a new incident response plan with escalation contacts
+- incident management
+- start a new incident and trigger response plan
+- aws
+- manage incident response plans
+- list active and recent incidents
+- Operations Engineer
+- creating, tracking, and resolving operational incidents
+- list response plans
+- get incident
+- list all incident response plans
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec
@@ -63,7 +63,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon Incident Manager
   \          hints:\n            readOnly: true\n            openWorld: true\n          call: \"ssm-incidents.list-timeline-events\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-incident-manager/refs/heads/main/capabilities/incident-response.yaml
 tags:
-- AWS
 - Incident Management
 - DevOps
 - Operations

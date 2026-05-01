@@ -14,22 +14,22 @@ personas: []
 provider_name: Amazon Organizations
 provider_slug: amazon-organizations
 search_terms:
-- developer using amazon organizations apis
-- multi-account
-- list openapi.yml
-- policies
-- core api workflow
 - list resources
-- Developer
-- consolidated billing
-- organizations
-- account management
 - amazon organizations
 - primary amazon organizations resources
 - aws
-- list and manage openapi.yml resources
-- governance
+- developer using amazon organizations apis
 - list amazon organizations resources
+- list and manage openapi.yml resources
+- consolidated billing
+- multi-account
+- organizations
+- account management
+- core api workflow
+- Developer
+- list openapi.yml
+- governance
+- policies
 slug: amazon-organizations-workflow
 source_filename: amazon-organizations-workflow.yaml
 source_heading: Capability Spec
@@ -38,7 +38,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Organizations API Wo
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-organizations/refs/heads/main/capabilities/amazon-organizations-workflow.yaml
 tags:
 - Amazon Organizations
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

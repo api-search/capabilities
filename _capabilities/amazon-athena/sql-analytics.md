@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- create named query
-- save a sql query as a named query for reuse in athena.
-- list databases
-- serverless
-- list tables in an athena database to understand available data.
-- analytics
-- start a sql query execution
-- start query execution
-- download the results of a completed athena sql query.
-- create a named query
-- check the status of a running or completed athena query execution.
-- list athena workgroups to understand available query isolation environments.
-- sql query management
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list table metadata
-- aws
-- list databases in an athena data catalog to explore available schemas.
-- list data catalogs
 - list recent query executions in an athena workgroup.
-- list named queries
-- named query management
-- amazon athena
-- list work groups
-- get query results
-- list query executions
-- list saved named queries available in an athena workgroup.
+- analytics
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- list tables in an athena database to understand available data.
 - sql
+- start a sql query execution
+- list query executions
+- list named queries
+- list databases in an athena data catalog to explore available schemas.
+- check the status of a running or completed athena query execution.
 - get query execution
+- list athena workgroups to understand available query isolation environments.
+- amazon athena
+- named query management
+- create a named query
+- sql query management
+- create named query
+- list saved named queries available in an athena workgroup.
+- download the results of a completed athena sql query.
+- list table metadata
+- list databases
+- start query execution
+- aws
+- list work groups
+- list data catalogs
 - list data catalogs registered with athena to discover available data sources.
+- save a sql query as a named query for reuse in athena.
+- serverless
+- get query results
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec
@@ -71,7 +71,6 @@ tags:
 - SQL
 - Analytics
 - Serverless
-- AWS
 tools:
 - description: Run a SQL query against S3 data using Amazon Athena for serverless analytics.
   hints:

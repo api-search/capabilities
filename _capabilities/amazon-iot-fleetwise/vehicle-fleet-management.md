@@ -15,34 +15,34 @@ personas: []
 provider_name: Amazon IoT FleetWise
 provider_slug: amazon-iot-fleetwise
 search_terms:
-- amazon iot fleetwise create signal catalog
-- list signal catalogs
-- amazon iot fleetwise create campaign
-- automotive
-- amazon iot fleetwise list campaigns
-- iot
-- list campaigns
-- list vehicles
-- connected vehicles
-- amazon iot fleetwise create fleet
-- create fleet
-- IoT Developer
-- aws
-- create campaign
-- Automotive Engineer
-- vehicle telematics
-- create signal catalog
-- amazon iot fleetwise list fleets
-- amazon iot fleetwise create vehicle
 - amazon iot fleetwise list signal catalogs
+- manages amazon iot fleetwise resources and operations
+- list fleets
+- list vehicles
+- create campaign
+- iot
+- create vehicle
+- connected vehicles
+- amazon iot fleetwise list fleets
+- amazon iot fleetwise create signal catalog
+- create fleet
+- amazon iot fleetwise create fleet
+- IoT Developer
+- vehicle data
+- amazon iot fleetwise list campaigns
+- vehicle telematics
+- amazon iot fleetwise resources
+- list signal catalogs
 - amazon iot fleetwise list vehicles
 - telematics
-- list fleets
-- vehicle data
-- create vehicle
-- manages amazon iot fleetwise resources and operations
+- aws
+- Automotive Engineer
+- automotive
+- list campaigns
+- amazon iot fleetwise create vehicle
+- amazon iot fleetwise create campaign
 - collect, transform, and transfer vehicle data to the cloud.
-- amazon iot fleetwise resources
+- create signal catalog
 slug: vehicle-fleet-management
 source_filename: vehicle-fleet-management.yaml
 source_heading: Capability Spec
@@ -53,7 +53,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT FleetWise - 
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/capabilities/vehicle-fleet-management.yaml
 tags:
 - IoT
-- AWS
 - Automotive
 - Vehicle Telematics
 - Connected Vehicles

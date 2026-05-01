@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- undelete a deleted user.
-- get user
-- organizational unit management.
-- delete a group.
-- patch user properties.
-- delete group
-- user management
-- list groups.
-- make user admin
-- update a user.
 - delete a user.
-- create a new user.
-- google workspace
+- organizational unit management.
 - get group details.
-- domain administration
-- list users in the google workspace domain.
-- productivity
-- create a group.
-- individual group management.
-- list organizational units.
-- group management.
-- collaboration
-- sign out a user from all sessions.
 - individual user management.
-- user account management.
-- get group
-- create user
-- list groups in the domain.
-- patch user
-- get user details.
-- delete user
 - create org unit
-- group management
-- update a group.
-- sign out user
-- create an organizational unit.
-- create group
-- list groups
-- make a user an admin.
-- email
-- list org units
-- create a new user in the domain.
-- undelete user
-- calendar
-- update group
 - list users
-- storage
-- update user
+- make user admin
+- list users in the google workspace domain.
+- get group
 - create a new group.
+- update a user.
+- undelete a deleted user.
+- user management
+- collaboration
+- delete a group.
+- patch user
+- list groups.
+- delete user
 - video conferencing
+- create a group.
+- patch user properties.
+- get user
+- update user
+- list org units
+- individual group management.
+- undelete user
+- email
+- list groups in the domain.
 - list users in the domain.
+- sign out user
+- update a group.
+- domain administration
+- delete group
+- create a new user in the domain.
+- list groups
+- productivity
+- google workspace
+- update group
+- create user
+- create an organizational unit.
+- make a user an admin.
+- user account management.
+- sign out a user from all sessions.
+- group management
+- create a new user.
+- create group
+- get user details.
+- group management.
+- list organizational units.
+- storage
+- calendar
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

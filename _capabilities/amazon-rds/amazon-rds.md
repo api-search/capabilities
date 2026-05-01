@@ -21,20 +21,20 @@ personas: []
 provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
-- cloud operations
-- amazon rds
-- automation workflow for amazon rds
-- aws cloud resource management
 - list resources
-- engineer managing amazon rds resources
-- cloud databases
-- database service
+- cloud operations
+- amazon rds resources
 - aws
 - dbaas
-- managed databases
-- amazon rds resources
+- cloud databases
 - list amazon rds resources
+- amazon rds
+- engineer managing amazon rds resources
+- aws cloud resource management
+- managed databases
 - relational databases
+- database service
+- automation workflow for amazon rds
 slug: amazon-rds
 source_filename: amazon-rds.yaml
 source_heading: Capability Spec
@@ -43,7 +43,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Rds Operations\n  de
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-rds/refs/heads/main/capabilities/amazon-rds.yaml
 tags:
 - Amazon Rds
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Rds resources

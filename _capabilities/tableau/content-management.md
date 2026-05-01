@@ -43,51 +43,51 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- list data sources
-- get details of a specific data source
-- get workbook
-- add a user to a site
-- tableau
-- update a site
-- sign in to tableau server or cloud
-- get data source
-- administration
-- analytics
-- get details of a specific workbook
-- sign in
-- content management
-- user operations
-- dashboards
-- get site details
-- workbook operations
-- create a new site
-- list users on a site
-- delete data source
-- delete site
-- business intelligence
-- list workbooks on a site
-- sign out
-- list data sources on a site
-- list all sites
-- list all sites on the server
-- data source operations
-- delete a workbook
-- delete a data source
 - get site
-- data visualization
-- get details of a specific site
+- analytics
 - update site configuration
-- delete workbook
-- update site
-- list sites
-- single site operations
-- add user
-- sign out from tableau
-- delete a site
-- create site
-- site management
-- list workbooks
+- list data sources on a site
+- get workbook
+- workbook operations
+- get details of a specific site
+- delete a data source
+- get site details
+- administration
+- update a site
+- data source operations
 - list users
+- add user
+- data visualization
+- update site
+- single site operations
+- list data sources
+- sign in to tableau server or cloud
+- content management
+- delete data source
+- site management
+- list all sites
+- create a new site
+- delete workbook
+- delete site
+- user operations
+- get data source
+- list workbooks on a site
+- list sites
+- create site
+- list all sites on the server
+- get details of a specific data source
+- business intelligence
+- dashboards
+- sign out from tableau
+- delete a workbook
+- list users on a site
+- list workbooks
+- add a user to a site
+- delete a site
+- get details of a specific workbook
+- sign out
+- tableau
+- sign in
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

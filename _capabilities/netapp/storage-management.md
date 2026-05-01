@@ -58,57 +58,57 @@ personas: []
 provider_name: NetApp
 provider_slug: netapp
 search_terms:
-- retrieve detailed information about a specific volume
-- retrieve ontap cluster information including name, version, and health
+- create a point-in-time snapshot of a volume
+- data protection
 - list storage virtual machines in the cluster
 - create volume
-- infrastructure
-- network interface management
-- list snapshots
-- individual volume operations
-- data protection
-- aggregate management
+- list nodes
+- get volume
+- create a new volume
+- list storage volumes
+- list network interfaces
+- list network interfaces (lifs) in the cluster
+- storage management
+- netapp
+- create snapshot
+- retrieve ontap cluster information including name, version, and health
+- cloud
+- list svms
+- retrieve a specific volume
 - get cluster
-- list volumes
+- hybrid cloud
+- network interface management
+- aggregate management
+- ontap
+- list aggregates
+- update volume
+- delete a volume
 - create a volume snapshot
+- list cluster nodes
+- list snapshots
+- list snapshots for a specific volume
+- list volumes
+- delete volume
+- update a volume
+- infrastructure
 - list all nodes in the ontap cluster
 - cluster information and configuration
-- list storage aggregates (local tiers) in the cluster
-- list snapshots for a specific volume
-- data management
-- create snapshot
-- storage management
-- list all storage volumes across the cluster
-- retrieve cluster information
-- create a point-in-time snapshot of a volume
-- list network interfaces (lifs) in the cluster
-- update volume
-- get volume
-- storage volume management
-- update a volume
-- list aggregates
-- ontap
-- list nodes
-- list storage volumes
-- update properties of an existing volume
-- create a new volume
-- delete a volume
-- cluster node management
-- volume snapshot management
-- netapp
-- list network interfaces
-- retrieve a specific volume
-- create a new storage volume on a specified svm and aggregate
-- cloud
-- list storage aggregates
-- list svms
 - storage virtual machine management
-- delete volume
-- delete a storage volume
-- hybrid cloud
-- list cluster nodes
 - list volume snapshots
+- list all storage volumes across the cluster
+- retrieve detailed information about a specific volume
+- create a new storage volume on a specified svm and aggregate
+- delete a storage volume
+- list storage aggregates
+- storage volume management
+- cluster node management
+- list storage aggregates (local tiers) in the cluster
+- volume snapshot management
+- update properties of an existing volume
+- data management
 - storage
+- individual volume operations
+- retrieve cluster information
 slug: storage-management
 source_filename: storage-management.yaml
 source_heading: Capability Spec

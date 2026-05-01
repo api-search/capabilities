@@ -39,7 +39,6 @@ implementations:
   provider_slug: amazon-sns
   tags:
   - Amazon
-  - AWS
   - Messaging
   - Notifications
   - Pub/Sub
@@ -53,7 +52,6 @@ implementations:
   provider_slug: amazon-sqs
   tags:
   - Amazon
-  - AWS
   - Messaging
   - Queue
   tool_count: 19
@@ -65,7 +63,6 @@ implementations:
   provider_name: Amazon WorkMail
   provider_slug: amazon-workmail
   tags:
-  - AWS
   - Email
   - Calendar
   - Business Communication

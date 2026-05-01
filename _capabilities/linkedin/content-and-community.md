@@ -63,64 +63,64 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- manages b2b ad campaigns and audience targeting on linkedin.
-- initialize document upload
-- tracks employee learning activity and completions.
-- initialize image upload
-- integrates linkedin authentication and sharing into applications.
-- professional networking
-- search for creatives.
-- get organization by id
-- job posting, recruiting, and applicant tracking.
-- uses sales navigator for lead generation and crm sync.
-- initialize document upload.
-- create an ad creative.
-- create a post.
-- create inmail content
-- linkedin
-- get follower count
-- create inmail content.
-- employee development tracking and content access.
-- get follower statistics
-- marketing
-- content marketing
-- create share
 - retrieve follower statistics.
-- data portability and advertiser transparency for dma.
-- initialize video upload.
-- fetch multiple posts.
-- retrieve share statistics.
-- get page statistics
-- retrieve social action notifications.
-- posts jobs and manages candidates through ats integrations.
-- recruiting
-- community management
-- initialize image upload.
-- get posts
+- initialize document upload
+- sales intelligence, lead management, and crm integration.
+- get share statistics
+- get sponsored conversations
 - archives communications for regulatory compliance.
 - create post
-- create a share with company mention.
-- get sponsored conversations.
+- retrieve share statistics.
 - initialize video upload
-- create sponsored conversation
-- get inmail content
-- search creatives
+- initialize document upload.
 - social media
-- get sponsored conversations
-- look up organization by id.
-- authentication, sharing, and verification for consumer apps.
-- b2b advertising, audience targeting, and campaign analytics.
-- message archiving and regulatory communications governance.
-- retrieve organization follower count.
 - business
 - get notifications
+- search creatives
+- create share
+- recruiting
 - careers
-- sales intelligence, lead management, and crm integration.
-- create creative
-- get share statistics
+- content marketing
+- employee development tracking and content access.
+- posts jobs and manages candidates through ats integrations.
+- tracks employee learning activity and completions.
+- data portability and advertiser transparency for dma.
+- search for creatives.
+- linkedin
+- initialize image upload.
+- uses sales navigator for lead generation and crm sync.
+- get organization by id
+- get follower statistics
+- initialize image upload
 - retrieve inmail content by id.
+- create creative
+- get page statistics
 - retrieve page statistics.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- authentication, sharing, and verification for consumer apps.
+- get follower count
+- get sponsored conversations.
+- fetch multiple posts.
+- retrieve organization follower count.
+- create inmail content.
+- create an ad creative.
+- community management
+- create a post.
+- integrates linkedin authentication and sharing into applications.
+- create sponsored conversation
+- create a share with company mention.
+- retrieve social action notifications.
+- look up organization by id.
+- get inmail content
+- b2b advertising, audience targeting, and campaign analytics.
 - create a sponsored conversation.
+- create inmail content
+- initialize video upload.
+- get posts
+- job posting, recruiting, and applicant tracking.
+- professional networking
+- message archiving and regulatory communications governance.
+- marketing
 slug: content-and-community
 source_filename: content-and-community.yaml
 source_heading: Capability Spec

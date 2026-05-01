@@ -77,90 +77,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- delete objects
-- list tables in a namespace
-- storage lens configurations
-- list storage lens configs
-- list objects in an s3 bucket
-- create an s3 bucket
-- list batch operations jobs
-- list all s3 buckets owned by the account
-- list namespaces in a table bucket
 - get table bucket
-- list namespaces
-- get details of a batch operations job
-- upload an object to s3
-- create bucket
-- get bucket encryption
-- create a new s3 bucket
 - get an object
-- get details of an s3 table bucket
-- get object
-- tables in a table bucket
-- get encryption configuration for an s3 bucket
-- get access point
-- get bucket versioning
-- s3 access points
-- put object
-- describe batch job
-- list s3 table buckets
-- list buckets
-- list s3 batch operations jobs
-- backup
-- get lifecycle configuration for an s3 bucket
-- list jobs
-- list s3 storage lens configurations
-- delete object
-- list storage lens configurations
-- delete bucket
-- describe job
-- s3 table buckets
-- delete multiple objects from an s3 bucket
-- upload an object
-- delete an s3 bucket
-- cloud storage
-- create a batch operations job
-- copy an object within s3
-- delete an object from s3
-- objects in a bucket
-- get versioning configuration for an s3 bucket
-- list all s3 buckets
-- scalable storage
-- storage management
-- retrieve an object from s3
-- archive
-- list access points
-- copy object
-- single batch operations job
-- list table buckets
-- list s3 access points for the account
-- delete an object
-- list s3 access points
-- list objects
-- get bucket lifecycle
+- list namespaces in a table bucket
 - head bucket
-- list tables
-- get public access block settings for the account
-- get an access point
-- s3 buckets
-- amazon
-- s3 batch operations jobs
-- list objects in a bucket
-- single object
+- copy an object within s3
+- storage management
 - check if a bucket exists
-- get details of a table
-- aws
-- single s3 bucket
-- get public access block
-- object storage
-- get configuration of an s3 access point
-- list batch jobs
-- get table
-- s3
-- data storage
 - single access point
-- create job
+- get bucket versioning
+- s3 table buckets
+- get bucket encryption
+- list storage lens configurations
+- list batch operations jobs
+- data storage
+- list all s3 buckets
+- delete multiple objects from an s3 bucket
+- get an access point
+- list tables in a namespace
+- backup
+- get configuration of an s3 access point
+- scalable storage
+- retrieve an object from s3
 - list storage lens
+- list batch jobs
+- get access point
+- storage lens configurations
+- get table
+- create an s3 bucket
+- list table buckets
+- list objects in an s3 bucket
+- get encryption configuration for an s3 bucket
+- get public access block
+- s3 buckets
+- get public access block settings for the account
+- s3 batch operations jobs
+- objects in a bucket
+- list storage lens configs
+- single object
+- list jobs
+- cloud storage
+- amazon
+- get object
+- delete an object
+- get details of a batch operations job
+- list objects in a bucket
+- tables in a table bucket
+- list s3 batch operations jobs
+- upload an object to s3
+- list access points
+- delete objects
+- single s3 bucket
+- list s3 table buckets
+- get lifecycle configuration for an s3 bucket
+- list s3 access points
+- s3 access points
+- object storage
+- copy object
+- list s3 storage lens configurations
+- describe job
+- delete an object from s3
+- list all s3 buckets owned by the account
+- create bucket
+- delete an s3 bucket
+- list buckets
+- list objects
+- delete bucket
+- list tables
+- delete object
+- get details of an s3 table bucket
+- archive
+- list namespaces
+- create a new s3 bucket
+- single batch operations job
+- create a batch operations job
+- put object
+- get versioning configuration for an s3 bucket
+- describe batch job
+- get details of a table
+- upload an object
+- aws
+- create job
+- get bucket lifecycle
+- list s3 access points for the account
+- s3
 slug: storage-management
 source_filename: storage-management.yaml
 source_heading: Capability Spec
@@ -183,7 +183,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon S3 Storage M
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-s3/refs/heads/main/capabilities/storage-management.yaml
 tags:
 - Amazon
-- AWS
 - S3
 - Storage Management
 - Cloud Storage

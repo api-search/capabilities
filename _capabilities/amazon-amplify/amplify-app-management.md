@@ -21,27 +21,27 @@ personas: []
 provider_name: Amazon Amplify
 provider_slug: amazon-amplify
 search_terms:
-- manage amplify apps, branches, and deployments.
-- amazon
-- create a new amplify full-stack application connected to a code repository.
-- DevOps Engineer
-- full stack
-- Frontend Developer
-- create amplify app
-- list all amazon amplify applications in the aws account.
-- hosting
-- frontend
-- developer building and deploying web and mobile frontends on aws amplify.
-- aws
 - amplify
-- list amplify apps
-- deployment
-- list all amplify apps.
-- amplify application management.
-- mobile development
-- engineer managing ci/cd pipelines and deployments for amplify applications.
+- frontend
 - list apps
+- list amplify apps
+- developer building and deploying web and mobile frontends on aws amplify.
+- full stack
+- engineer managing ci/cd pipelines and deployments for amplify applications.
+- manage amplify apps, branches, and deployments.
+- list all amplify apps.
 - web applications
+- list all amazon amplify applications in the aws account.
+- create a new amplify full-stack application connected to a code repository.
+- mobile development
+- create amplify app
+- aws
+- Frontend Developer
+- DevOps Engineer
+- amazon
+- amplify application management.
+- deployment
+- hosting
 slug: amplify-app-management
 source_filename: amplify-app-management.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-amplify
 tags:
 - Amazon
 - Amplify
-- AWS
 - Deployment
 - Frontend
 tools:

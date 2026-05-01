@@ -27,40 +27,40 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- it management
-- get summary average
-- uptime monitoring
-- database monitoring
-- infrastructure monitoring
-- uptime monitoring checks
-- infrastructure
-- query swis
-- observability
 - execute a swql query against orion platform
-- create check
-- solarwinds
-- get check
-- list pingdom checks
-- get pingdom check details
-- ip address management
-- get pingdom performance summary
-- query orion
-- itsm
-- create a monitored entity in orion
-- create a new pingdom monitoring check
-- get check results
-- application monitoring
-- swql query execution
-- log management
-- get results
-- list checks
-- list pingdom uptime monitoring checks
-- execute a swql query
-- create orion entity
+- it management
+- infrastructure monitoring
 - network monitoring
-- check results
-- get check details
+- get pingdom performance summary
+- list pingdom uptime monitoring checks
+- get check
 - get pingdom check results
+- ip address management
+- create a monitored entity in orion
+- execute a swql query
+- get results
+- create check
+- itsm
+- create a new pingdom monitoring check
+- solarwinds
+- list checks
+- swql query execution
+- get check details
+- application monitoring
+- list pingdom checks
+- get summary average
+- database monitoring
+- infrastructure
+- create orion entity
+- query swis
+- check results
+- query orion
+- uptime monitoring
+- observability
+- get pingdom check details
+- uptime monitoring checks
+- log management
+- get check results
 slug: infrastructure-monitoring
 source_filename: infrastructure-monitoring.yaml
 source_heading: Capability Spec

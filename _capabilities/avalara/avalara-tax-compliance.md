@@ -40,59 +40,59 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- list customers
-- check einvoicing mandate
-- manages sales tax compliance, exemption certificates, and returns filing
-- exemptions
-- list tax transactions
-- validate postal address and determine jurisdiction
-- list certificates
-- list tax exemption certificates for exempt customers
-- tax exemption certificate collection and validation
-- sales tax calculation, certificate management, and e-invoicing
-- submit einvoice
-- address validation
-- calculate sales tax
-- integrates avalara apis into erp and billing systems
-- e-invoicing
-- hs code and tax code classification for products
-- create certificate
-- submit e-invoice for compliance
-- list submitted e-invoice documents and their status
-- country-specific e-invoicing mandate compliance
-- validate a postal address and determine the applicable tax jurisdiction
-- International Trade Manager
-- create exemption certificate
-- calculate sales tax, vat, or gst
-- oversees tax strategy, compliance automation, and cost optimization
-- real-time tax calculation across us and global jurisdictions
-- tax calculations for transactions
-- validate address
 - sales tax
-- list mandates
-- e-invoice submission
+- validate postal address
+- validate a postal address and determine the applicable tax jurisdiction
+- validate postal address and determine jurisdiction
 - tax compliance
-- list e-invoicing mandates by country
-- check e-invoicing mandate requirements for a country
-- import duties, vat, and e-invoicing for international trade
-- list exemption certificates
+- validate address
+- list mandates
 - avalara
-- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- create a new tax exemption certificate for a customer
 - list certcapture customer accounts
+- hs code and tax code classification for products
+- manages sales tax compliance, exemption certificates, and returns filing
+- create certificate
+- calculate sales tax
+- International Trade Manager
+- sales tax calculation, certificate management, and e-invoicing
+- real-time tax calculation across us and global jurisdictions
+- list submitted e-invoice documents and their status
+- submit e-invoice for compliance
+- list certificates
+- country-specific e-invoicing mandate compliance
+- tax exemption certificate collection and validation
+- Tax Manager
+- oversees tax strategy, compliance automation, and cost optimization
+- submit einvoice
+- list tax transactions
+- check einvoicing mandate
+- list tax exemption certificates for exempt customers
+- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- import duties, vat, and e-invoicing for international trade
+- e-invoicing
+- submit an e-invoice document for cross-border or domestic compliance
+- calculate sales tax, vat, or gst
+- list exemption certificates
+- list historical tax transactions for audit and reconciliation
+- tax calculations for transactions
+- create exemption certificate
+- e-invoice submission
+- list customers
+- integrates avalara apis into erp and billing systems
+- calculate tax
+- tax exemption certificates
+- check e-invoicing mandate requirements for a country
+- list e-invoicing mandates by country
+- taxes
+- e-invoicing mandate requirements
+- exemptions
+- list transactions
+- address validation
 - manages cross-border compliance, tariff classification, and e-invoicing
 - vat returns, 1099 filing, and lodging tax reporting
 - list submitted einvoices
-- Tax Manager
-- list historical tax transactions for audit and reconciliation
-- taxes
-- e-invoicing mandate requirements
-- calculate tax
-- create a new tax exemption certificate for a customer
 - Finance Director
-- tax exemption certificates
-- submit an e-invoice document for cross-border or domestic compliance
-- validate postal address
-- list transactions
 slug: avalara-tax-compliance
 source_filename: avalara-tax-compliance.yaml
 source_heading: Capability Spec

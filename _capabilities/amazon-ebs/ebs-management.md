@@ -38,39 +38,39 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- amazon ebs
-- amazon ebs describe volumes
-- snapshots
-- create volume
-- workflow capability for block storage management.
-- amazon web services
-- ec2
-- engineers managing amazon ebs resources on aws.
-- volumes
-- amazon ebs attach volume
-- amazon ebs delete volume
-- aws
 - createSnapshot
-- amazon ebs detach volume
-- attachVolume
-- create snapshot
-- detach volume
-- ebs
 - deleteVolume
-- amazon ebs describe snapshots
-- block storage
-- amazon ebs create snapshot
-- detachVolume
-- describe snapshots
-- createVolume
-- amazon ebs create volume
-- describeSnapshots
-- attach volume
-- delete volume
+- detach volume
+- create volume
 - describe volumes
-- describeVolumes
+- amazon ebs describe snapshots
+- create snapshot
 - block storage management business domain for amazon ebs.
+- describeVolumes
+- attachVolume
+- snapshots
+- amazon ebs delete volume
+- createVolume
+- workflow capability for block storage management.
+- amazon ebs detach volume
+- amazon ebs create volume
+- amazon ebs attach volume
+- detachVolume
+- block storage
+- delete volume
+- volumes
+- amazon ebs describe volumes
+- amazon ebs
+- amazon web services
+- engineers managing amazon ebs resources on aws.
+- ec2
+- aws
+- ebs
+- describe snapshots
+- describeSnapshots
 - storage
+- attach volume
+- amazon ebs create snapshot
 slug: ebs-management
 source_filename: ebs-management.yaml
 source_heading: Capability Spec
@@ -83,7 +83,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EBS Block St
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-ebs/refs/heads/main/capabilities/ebs-management.yaml
 tags:
 - Amazon EBS
-- AWS
 - Storage
 - Block Storage
 tools:

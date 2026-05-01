@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- api key management and model discovery
-- video generation
-- generate image
-- generate an image from a text prompt using aimlapi image generation models
-- speech
-- create embedding
-- list available models
-- generate vector embeddings for semantic search and rag applications
-- machine learning
-- image generation
 - list models
-- developer integrating ai capabilities into applications via aimlapi
-- llm
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- generate embeddings
-- discover all 400+ available ai models on aimlapi platform
-- list all models
-- ai engineer evaluating and comparing models for ml pipelines
-- embeddings
-- chat completions via 400+ llms
-- artificial intelligence
-- AI Engineer
-- create embeddings
 - Developer
-- create a chat completion
-- create image
-- ai model inference across modalities
-- create chat completion
 - api gateway
-- developer tools
-- ai models
-- generate an image
+- AI Engineer
+- speech
+- api key management and model discovery
+- embeddings
+- ai engineer evaluating and comparing models for ml pipelines
+- generate vector embeddings for semantic search and rag applications
+- artificial intelligence
+- create chat completion
+- list available models
+- developer integrating ai capabilities into applications via aimlapi
+- image generation
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- create embedding
 - generate a chat response from any of 400+ ai language models via aimlapi
+- machine learning
+- create embeddings
+- generate embeddings
+- generate an image
+- discover all 400+ available ai models on aimlapi platform
+- video generation
+- create image
+- ai models
+- generate an image from a text prompt using aimlapi image generation models
+- chat completions via 400+ llms
+- list all models
+- developer tools
+- create a chat completion
+- ai model inference across modalities
+- generate image
+- llm
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

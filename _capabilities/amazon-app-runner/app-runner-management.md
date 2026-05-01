@@ -21,22 +21,22 @@ personas: []
 provider_name: Amazon App Runner
 provider_slug: amazon-app-runner
 search_terms:
-- ci/cd
-- containers
-- developer deploying web apis and services on app runner.
-- managed service
-- web applications
-- deployment
 - list resources
-- manage amazon app runner api resources.
-- serverless
-- amazon
-- Backend Developer
-- list resources.
+- managed service
 - aws
-- engineer automating deployments using app runner api.
 - DevOps Engineer
+- web applications
+- amazon
 - list amazon app runner api resources.
+- manage amazon app runner api resources.
+- containers
+- deployment
+- developer deploying web apis and services on app runner.
+- ci/cd
+- list resources.
+- engineer automating deployments using app runner api.
+- serverless
+- Backend Developer
 slug: app-runner-management
 source_filename: app-runner-management.yaml
 source_heading: Capability Spec
@@ -45,7 +45,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: App Runner Management\n  de
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-app-runner/refs/heads/main/capabilities/app-runner-management.yaml
 tags:
 - Amazon
-- AWS
 tools:
 - description: List Amazon App Runner API resources.
   hints:

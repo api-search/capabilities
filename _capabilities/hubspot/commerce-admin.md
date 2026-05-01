@@ -35,42 +35,42 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- crm
 - analytics
-- list subscriptions
-- get subscription
-- search commerce subscriptions
-- individual payment
-- marketing
-- list all commerce subscriptions
-- hubdb
-- create a commerce subscription
-- create subscription
-- individual subscription
 - get a payment by id
-- list all commerce payments
 - get a subscription by id
 - commerce
-- email marketing
-- get payment
-- search payments
-- search commerce payments
-- update a commerce payment
-- cms
-- marketing automation
-- sales
-- content
-- list payments
-- admin
-- create a commerce payment
-- update payment
-- create payment
+- individual subscription
+- marketing
 - customer service
-- hubspot
+- content
+- hubdb
+- search commerce subscriptions
+- list all commerce payments
+- list all commerce subscriptions
+- get payment
+- crm
+- email marketing
+- admin
+- list payments
+- create a commerce payment
+- search payments
 - search subscriptions
-- commerce payments
-- commerce subscriptions
+- search commerce payments
 - operations
+- individual payment
+- hubspot
+- commerce payments
+- cms
+- commerce subscriptions
+- marketing automation
+- create payment
+- create a commerce subscription
+- create subscription
+- update a commerce payment
+- get subscription
+- update payment
+- sales
+- list subscriptions
 slug: commerce-admin
 source_filename: commerce-admin.yaml
 source_heading: Capability Spec

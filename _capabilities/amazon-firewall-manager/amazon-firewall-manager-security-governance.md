@@ -10,12 +10,11 @@ personas: []
 provider_name: Amazon Firewall Manager
 provider_slug: amazon-firewall-manager
 search_terms:
-- multi-account
-- network security
-- firewall
-- security
 - aws organizations
-- aws
+- firewall
+- network security
+- security
+- multi-account
 - compliance
 slug: amazon-firewall-manager-security-governance
 source_filename: amazon-firewall-manager-security-governance.yaml

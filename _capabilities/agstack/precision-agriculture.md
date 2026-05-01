@@ -10,11 +10,11 @@ provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
 - linux foundation
-- linked data
-- precision agriculture
 - open source
-- agriculture
+- linked data
 - geospatial
+- precision agriculture
+- agriculture
 slug: precision-agriculture
 source_filename: precision-agriculture.yaml
 source_heading: Capability Spec

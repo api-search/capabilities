@@ -15,33 +15,33 @@ personas: []
 provider_name: Amazon IoT Device Defender
 provider_slug: amazon-iot-device-defender
 search_terms:
-- amazon iot device defender resources
-- security
-- list security profiles
-- security service for iot fleet auditing and anomaly detection.
+- amazon iot device defender start audit
 - vulnerability management
-- iot
+- list audit tasks
+- list detect mitigations
+- amazon iot device defender list detect mitigations
+- amazon iot device defender describe security profile
 - list audit findings
+- iot
+- amazon iot device defender list audit findings
+- amazon iot device defender list audit tasks
+- Security Engineer
+- start audit
+- amazon iot device defender resources
+- device management
 - amazon iot device defender list violations
 - IoT Developer
-- aws
 - amazon iot device defender list security profiles
-- amazon iot device defender start audit
-- compliance
-- describe security profile
-- start audit
-- amazon iot device defender list audit tasks
-- create security profile
-- manages amazon iot device defender resources and operations
-- Security Engineer
-- list audit tasks
-- list violations
-- amazon iot device defender list detect mitigations
-- list detect mitigations
 - amazon iot device defender create security profile
-- device management
-- amazon iot device defender describe security profile
-- amazon iot device defender list audit findings
+- describe security profile
+- security service for iot fleet auditing and anomaly detection.
+- list security profiles
+- compliance
+- create security profile
+- aws
+- security
+- manages amazon iot device defender resources and operations
+- list violations
 slug: iot-security-monitoring
 source_filename: iot-security-monitoring.yaml
 source_heading: Capability Spec
@@ -53,7 +53,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Device Defen
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-device-defender/refs/heads/main/capabilities/iot-security-monitoring.yaml
 tags:
 - IoT
-- AWS
 - Security
 - Device Management
 - Compliance

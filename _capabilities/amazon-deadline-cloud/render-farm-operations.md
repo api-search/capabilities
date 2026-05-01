@@ -11,7 +11,6 @@ provider_slug: amazon-deadline-cloud
 search_terms:
 - compute
 - rendering
-- aws
 - visual effects
 - media
 slug: render-farm-operations

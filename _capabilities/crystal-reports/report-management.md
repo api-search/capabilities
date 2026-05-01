@@ -31,36 +31,36 @@ personas: []
 provider_name: Crystal Reports
 provider_slug: crystal-reports
 search_terms:
-- get report grand totals and summaries
 - get edmx metadata describing the report data model
-- push data to a transient report instance
-- browse the bi platform report repository
-- get grand totals
-- data analytics
-- enterprise software
-- list contents of a repository folder
-- get report metadata with datasources, fields, parameters, and formulas
-- report management
-- export report to pdf, excel, csv, word, xml, or other format
-- post row
-- business intelligence
 - crystal reports
-- authenticate to crystal reports server
-- get report structure
+- get report grand totals and summaries
+- export
 - sap
 - get report data rows via odata with pagination and filtering
-- get rows
+- data analytics
+- export report to pdf, excel, csv, word, xml, or other format
+- report management
 - get odata metadata
+- get report metadata with datasources, fields, parameters, and formulas
+- authenticate to crystal reports server
+- push data to a transient report instance
+- get rows
+- get report structure
+- get grand totals
+- browse repository
+- get report summary
+- business intelligence
+- export report
 - reporting
 - get report summary including name, author, and uris
-- list folder children
-- browse repository
-- export report
-- logon
-- create instance
+- list contents of a repository folder
 - create a transient report instance
-- get report summary
-- export
+- logon
+- post row
+- browse the bi platform report repository
+- enterprise software
+- create instance
+- list folder children
 slug: report-management
 source_filename: report-management.yaml
 source_heading: Capability Spec

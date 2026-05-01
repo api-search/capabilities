@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process payment
-- create a new checkout session for a merchant
-- payment processing
-- mastercard
-- create installment plan
-- checkout
-- create an installment plan
-- merchant
-- digital identity
-- create a new checkout session
-- create a unified checkout session
-- register contactless reader
-- create checkout session
-- unified checkout sessions
-- get payment details
-- create a unified checkout session supporting multiple payment methods
-- qr code payment acceptance
-- create a buy-now-pay-later installment plan
-- get payment
-- generate a merchant-presented qr code for payment
+- create unified session
 - process cloud transaction
 - payments
+- create installment plan
+- mastercard
+- get payment details
+- financial services
+- payment processing
+- create a new checkout session for a merchant
+- register contactless reader
+- unified checkout sessions
+- checkout session management
 - fraud detection
-- create unified session
-- open banking
-- buy-now-pay-later installment plans
-- register a contactless reader device
+- generate a merchant-presented qr code for payment
+- create an installment plan
+- get payment
+- qr code payment acceptance
+- retrieve payment transaction details
+- process a cloud commerce transaction
+- create a unified checkout session supporting multiple payment methods
 - e-commerce
 - credit cards
-- checkout session management
-- financial services
-- generate qr code
-- retrieve payment transaction details
-- process a payment through the mastercard gateway
-- process a cloud commerce transaction
+- create checkout session
 - generate a merchant qr code for payment
+- buy-now-pay-later installment plans
+- register a contactless reader device
+- digital identity
+- process payment
+- create a new checkout session
+- process a payment through the mastercard gateway
+- open banking
+- generate qr code
+- create a unified checkout session
+- merchant
+- create a buy-now-pay-later installment plan
 - process a payment through the gateway
+- checkout
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

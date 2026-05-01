@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MQ
 provider_slug: amazon-mq
 search_terms:
+- Broadcast Engineer
+- listconfigurations
+- create tags
+- createtags
 - broadcasting
-- createconfiguration
-- manage media processing jobs
 - media
-- developer building media processing applications
-- createuser
-- create broker
-- list configurations
-- listbrokers
-- workflow
 - describeuser
 - media processing
-- Media Developer
-- aws
-- list jobs
 - list tags
-- createtags
-- create configuration
-- create user
-- listconfigurations
 - listtags
-- list brokers
-- createbroker
-- create tags
-- describe user
-- Broadcast Engineer
-- engineer managing broadcast media workflows
+- workflow
 - aws media processing and delivery
+- createbroker
+- list brokers
+- list configurations
+- create user
+- list jobs
+- Media Developer
 - amazon mq media processing workflow
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- manage media processing jobs
+- create broker
+- createuser
+- describe user
+- listbrokers
+- aws
+- createconfiguration
+- create configuration
 slug: amazon-mq-media-workflow
 source_filename: amazon-mq-media-workflow.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MQ Workflow\n  descr
   \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-tags\n      description: ListTags\n      hints:\n        readOnly: true\n        openWorld: true\n      call: mq.list-tags\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-tags\n      description: CreateTags\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mq.create-tags\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-user\n      description: DescribeUser\n      hints:\n        readOnly: true\n        openWorld: true\n      call: mq.describe-user\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-user\n      description: CreateUser\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mq.create-user\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mq/refs/heads/main/capabilities/amazon-mq-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

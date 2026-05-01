@@ -30,45 +30,45 @@ personas: []
 provider_name: Akamai API Security
 provider_slug: akamai-api-security
 search_terms:
-- discover apis
-- real-time api threat detection and blocking
-- security automation
-- list policies
-- list configuration activations
-- manages api security configurations and activations
-- list configurations
-- api inventory and discovery
-- list all akamai api security configurations
-- list activations
-- API Security Analyst
-- check activation status
-- cloud security
-- runtime protection
-- api security configuration management
-- security policy management
 - api posture assessment and vulnerability management
-- create configuration
-- list security policies
-- posture management
-- list all api security configurations
-- create a new api security configuration
-- akamai
-- configuration activations
-- api discovery
-- api security
-- threat protection
-- Security Engineer
-- manage api security configurations and posture
-- create a new akamai api security configuration
-- monitors api discovery, threat detection, and posture findings
-- get api discovery
-- get api discovery results
-- list security policies within a configuration
-- api security configuration and policy management
-- get api inventory including shadow and zombie api findings
-- create security configuration
 - list and check status of security configuration activations
+- api security configuration management
+- monitors api discovery, threat detection, and posture findings
+- get api discovery results
+- threat protection
+- list configuration activations
+- configuration activations
+- create security configuration
+- runtime protection
+- api security configuration and policy management
+- list policies
 - list security configurations
+- list security policies within a configuration
+- list security policies
+- manages api security configurations and activations
+- create a new api security configuration
+- Security Engineer
+- get api discovery
+- api discovery
+- API Security Analyst
+- real-time api threat detection and blocking
+- api inventory and discovery
+- list configurations
+- create a new akamai api security configuration
+- security automation
+- security policy management
+- discover apis
+- get api inventory including shadow and zombie api findings
+- check activation status
+- api security
+- akamai
+- list activations
+- list all api security configurations
+- posture management
+- create configuration
+- manage api security configurations and posture
+- cloud security
+- list all akamai api security configurations
 slug: api-security-management
 source_filename: api-security-management.yaml
 source_heading: Capability Spec

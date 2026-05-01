@@ -14,20 +14,20 @@ personas: []
 provider_name: Amazon Panorama
 provider_slug: amazon-panorama
 search_terms:
-- amazon panorama
-- list openapi.yml
-- core api workflow
 - list resources
-- Developer
-- cameras
-- edge ml
-- industrial iot
-- list amazon panorama resources
-- developer using amazon panorama apis
-- computer vision
+- primary amazon panorama resources
+- list openapi.yml
 - aws
 - list and manage openapi.yml resources
-- primary amazon panorama resources
+- computer vision
+- edge ml
+- industrial iot
+- core api workflow
+- amazon panorama
+- Developer
+- list amazon panorama resources
+- cameras
+- developer using amazon panorama apis
 slug: amazon-panorama-workflow
 source_filename: amazon-panorama-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Panorama API Workflo
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-panorama/refs/heads/main/capabilities/amazon-panorama-workflow.yaml
 tags:
 - Amazon Panorama
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

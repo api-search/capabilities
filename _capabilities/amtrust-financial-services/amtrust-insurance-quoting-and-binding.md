@@ -22,31 +22,31 @@ personas: []
 provider_name: AmTrust Financial Services
 provider_slug: amtrust-financial-services
 search_terms:
-- agent checking appetite and generating quotes for clients
-- commercial lines
-- end-to-end insurance quoting and binding workflow
+- get policy
+- bind an approved quote to issue a policy
+- check coverage appetite
+- commercial insurance
 - amtrust financial services
+- check amtrust coverage appetite for a business risk
+- checkAppetite
+- small business
+- workers compensation
+- check appetite
+- generate a commercial lines quote
+- property and casualty
+- insurance
+- developer integrating amtrust api into agent or broker platform
+- list all quotes for the agent account
+- end-to-end insurance quoting and binding workflow
+- create quote
+- bind policy
 - retrieve policy details by policy number
 - getPolicy
-- small business
-- insurance
-- bind an approved quote to issue a policy
-- list quotes
-- check amtrust coverage appetite for a business risk
-- generate a commercial lines quote
-- developer integrating amtrust api into agent or broker platform
-- workers compensation
-- create quote
-- check coverage appetite
-- bind policy
-- property and casualty
-- commercial insurance
-- createQuote
-- get policy
-- list all quotes for the agent account
-- checkAppetite
+- commercial lines
 - insurance technology
-- check appetite
+- agent checking appetite and generating quotes for clients
+- list quotes
+- createQuote
 slug: amtrust-insurance-quoting-and-binding
 source_filename: amtrust-insurance-quoting-and-binding.yaml
 source_heading: Capability Spec

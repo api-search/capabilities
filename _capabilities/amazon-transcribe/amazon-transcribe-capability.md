@@ -10,11 +10,10 @@ provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
 - machine learning
-- audio processing
-- transcription
-- aws
 - speech recognition
+- audio processing
 - speech-to-text
+- transcription
 slug: amazon-transcribe-capability
 source_filename: amazon-transcribe-capability.yaml
 source_heading: Capability Spec

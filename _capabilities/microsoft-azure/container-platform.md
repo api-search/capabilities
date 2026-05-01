@@ -20,40 +20,40 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- acr list manifests
-- list aks managed clusters
 - container registry
-- acr list repositories
-- get cluster admin credentials
-- acr list tags
-- list aks clusters
-- list tags for a repository
-- t1
-- get agent pool details
 - kubernetes
-- container repositories
-- aks get cluster
-- get repository attributes
-- infrastructure as a service
+- api management
+- containers
+- get cluster admin credentials
+- aks list clusters
+- get agent pool details
+- list aks clusters
+- get aks cluster details
 - aks get agent pool
-- aks list agent pools
+- cloud
+- get repository attributes
+- list container repositories
+- infrastructure as a service
+- container repositories
 - list repositories
+- aks get cluster
+- acr list tags
+- list cluster agent pools
 - list clusters
 - acr get repository
-- cloud computing
-- azure
+- aks list agent pools
+- list tags for a repository
+- t1
 - enterprise
-- api management
-- get aks cluster details
-- aks cluster management
-- list container repositories
-- aks list clusters
-- containers
-- list cluster agent pools
-- cloud
-- platform as a service
-- aks get admin credentials
 - list manifests for a repository
+- acr list repositories
+- aks get admin credentials
+- acr list manifests
+- cloud computing
+- platform as a service
+- aks cluster management
+- azure
+- list aks managed clusters
 slug: container-platform
 source_filename: container-platform.yaml
 source_heading: Capability Spec

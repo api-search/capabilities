@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- manager packaging api products and managing developer relationships.
-- discover shadow apis
-- architect overseeing api platform strategy and governance across the organization.
-- monetization
-- API Governance Lead
-- analytics
 - list api specifications tracked in the apigee registry.
-- apigee
-- API Product Manager
-- list apis
-- microservices
-- enterprise
-- shadow apis discovered via apim.
-- api management
+- analytics
 - list catalogued apis
-- Platform Architect
-- api hub
-- api catalog from api hub.
-- list observed apis
-- api discovery
-- integrations
-- list observed shadow apis.
-- api governance
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- api catalog
-- engineer managing api proxies, deployments, and policies in apigee.
-- api gateway
 - list api specs
-- hybrid
-- list all apis in the apigee api hub catalog.
-- list all catalogued apis.
+- api management
+- api gateway
+- manager packaging api products and managing developer relationships.
+- integrations
+- monetization
+- list observed shadow apis.
+- discover shadow apis
+- api hub
+- engineer managing api proxies, deployments, and policies in apigee.
+- list observed apis
 - google cloud
-- API Platform Engineer
 - leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- API Governance Lead
+- api discovery
+- hybrid
+- api catalog from api hub.
+- Platform Architect
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- api governance
+- list all apis in the apigee api hub catalog.
+- architect overseeing api platform strategy and governance across the organization.
+- enterprise
+- list all catalogued apis.
+- microservices
 - developer portal
+- apigee
+- list apis
+- api catalog
+- shadow apis discovered via apim.
+- API Product Manager
+- API Platform Engineer
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

@@ -14,32 +14,32 @@ personas: []
 provider_name: Amazon Interactive Video Service
 provider_slug: amazon-interactive-video-service
 search_terms:
-- managed live streaming with low latency for interactive applications.
-- amazon interactive video service list stream keys
-- media
-- amazon interactive video service get channel
-- manages amazon interactive video service resources and operations
-- video
-- get channel
-- amazon interactive video service stop stream
-- stop stream
-- aws
-- amazon interactive video service list recordings
-- amazon interactive video service delete channel
-- create channel
-- real-time
-- list recordings
-- Developer
-- delete channel
-- amazon interactive video service create channel
-- create stream key
-- list stream keys
-- live streaming
-- amazon interactive video service create stream key
-- amazon interactive video service list channels
 - list channels
-- Media Engineer
+- list stream keys
+- amazon interactive video service list stream keys
+- get channel
+- create stream key
+- list recordings
+- create channel
+- media
+- amazon interactive video service create channel
+- delete channel
+- stop stream
+- amazon interactive video service list channels
+- live streaming
+- amazon interactive video service delete channel
+- video
 - amazon interactive video service resources
+- amazon interactive video service list recordings
+- amazon interactive video service stop stream
+- amazon interactive video service create stream key
+- real-time
+- amazon interactive video service get channel
+- Media Engineer
+- managed live streaming with low latency for interactive applications.
+- aws
+- manages amazon interactive video service resources and operations
+- Developer
 slug: live-streaming-management
 source_filename: live-streaming-management.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-interac
 tags:
 - Live Streaming
 - Video
-- AWS
 - Media
 tools:
 - description: Amazon Interactive Video Service List Channels

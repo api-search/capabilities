@@ -22,26 +22,26 @@ provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
 - analytics
-- list pipeline resources
-- resource management
-- list workspaces
-- list workspace resources
-- list sql pools
-- data warehouse
-- apache spark
 - list big data pools
+- list pipeline resources
 - list all resources
-- azure
-- list sqlpool resources
-- big data
+- sql
+- data warehouse
+- list workspaces
+- cloud
+- list sql pools
+- list workspace resources
+- list bigdatapool resources
 - list pipelines
+- list
+- apache spark
+- list sqlpool resources
+- resource management
+- big data
+- azure resource management
+- azure
 - management
 - etl
-- list bigdatapool resources
-- cloud
-- azure resource management
-- list
-- sql
 slug: azure-synapse-management
 source_filename: azure-synapse-management.yaml
 source_heading: Capability Spec

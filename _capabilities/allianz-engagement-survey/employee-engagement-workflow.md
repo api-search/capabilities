@@ -39,54 +39,54 @@ personas: []
 provider_name: Allianz Engagement Survey
 provider_slug: allianz-engagement-survey
 search_terms:
-- list participants and response status
-- HR Business Partner
-- add employees to a survey and send invitation emails
-- add survey participants
-- list all engagement surveys
-- action plan management
-- create action plan
 - analytics
-- add employees as survey participants
-- list improvement action plans created from survey findings
-- Team Manager
-- create engagement survey
-- participant management for a survey
-- list survey participants
-- analyzing survey results and generating engagement insights
-- employee experience
-- people manager who reviews team-level results and creates action plans
-- get analytics
-- create an action plan to address employee engagement survey findings
-- create a new annual, pulse, onboarding, or exit engagement survey
-- create survey
-- list all allianz employee engagement surveys with status and type filtering
-- create a new engagement survey
-- insurance
-- get engagement analytics for a survey
-- end-to-end workflow for hr teams running engagement surveys
-- get engagement survey
-- People Analytics Analyst
-- list participants and track who has responded to a survey
-- get aggregated engagement scores, participation rates, and insights for a survey
-- analyst who interprets engagement data and generates insights and recommendations
-- create an action plan from survey insights
-- enterprise
-- list surveys
-- survey management for hr teams
 - list engagement surveys
-- creating and tracking improvement initiatives from survey findings
-- surveys
-- list participants
-- list action plans for a survey
-- hr professional responsible for running engagement surveys and following up with business units
-- add participants
-- list action plans
-- human resources
-- get details and configuration of a specific engagement survey
-- survey analytics and reporting
-- get survey analytics
 - creating and managing employee engagement surveys
+- get engagement analytics for a survey
+- survey analytics and reporting
+- add employees to a survey and send invitation emails
+- participant management for a survey
+- survey management for hr teams
+- people manager who reviews team-level results and creates action plans
+- create an action plan to address employee engagement survey findings
+- create an action plan from survey insights
+- get aggregated engagement scores, participation rates, and insights for a survey
+- add participants
+- analyst who interprets engagement data and generates insights and recommendations
+- human resources
+- create action plan
+- list action plans for a survey
+- analyzing survey results and generating engagement insights
+- get engagement survey
+- list all engagement surveys
+- get analytics
+- get survey analytics
+- create a new annual, pulse, onboarding, or exit engagement survey
+- get details and configuration of a specific engagement survey
+- list participants
+- create survey
+- create a new engagement survey
+- list surveys
+- action plan management
+- hr professional responsible for running engagement surveys and following up with business units
+- end-to-end workflow for hr teams running engagement surveys
+- creating and tracking improvement initiatives from survey findings
+- list all allianz employee engagement surveys with status and type filtering
+- list improvement action plans created from survey findings
+- list participants and response status
+- insurance
+- list survey participants
+- employee experience
+- list action plans
+- add employees as survey participants
+- list participants and track who has responded to a survey
+- enterprise
+- Team Manager
+- People Analytics Analyst
+- surveys
+- HR Business Partner
+- add survey participants
+- create engagement survey
 slug: employee-engagement-workflow
 source_filename: employee-engagement-workflow.yaml
 source_heading: Capability Spec

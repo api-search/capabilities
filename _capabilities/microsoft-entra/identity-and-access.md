@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- group membership management.
-- remove group member
-- list user group memberships.
-- list group members
-- delete an application.
-- delete a user from the directory.
-- delete a group.
-- list all applications.
-- update group properties.
-- network security
-- update service principal properties.
-- list all groups.
-- group management.
-- create user
-- list applications
-- application registration management.
-- add group member
-- create group
-- individual service principal management.
-- individual application management.
-- list all users in the directory.
-- create a new group.
-- directory management
-- list all users in microsoft entra directory.
-- get user
-- security
-- remove a member from a group.
-- get user properties by id.
-- individual user management.
-- user account management.
-- get user details.
-- get application details.
-- delete application
-- list members of a group.
-- update user properties.
-- access management
-- create application
-- update group
-- list users
-- delete group
-- list all groups in the directory.
-- identity governance
 - delete a user.
-- add a member to a group.
-- list all application registrations.
-- get group details.
-- individual group management.
-- delete a service principal.
-- update service principal.
-- delete user
-- update application properties.
-- list all service principals.
-- user group membership.
-- microsoft
+- delete application
+- network security
 - service principal management.
-- register a new application.
-- zero trust
-- update application
-- get service principal
-- create a new user.
-- list user memberships
-- list group members.
-- get service principal details.
-- create a new user in the directory.
-- get application
-- azure ad
-- microsoft entra
-- get group
+- individual user management.
+- individual service principal management.
+- list users
+- create a new group.
 - update service principal
-- delete an application registration.
 - create a new service principal.
-- identity
-- list groups
-- create service principal
-- delete service principal
+- get user
+- create a new user in the directory.
 - authentication
-- list service principals
-- update user
-- entra
+- delete group
+- add a member to a group.
+- add group member
+- list groups
+- update service principal.
+- list all groups.
+- security
+- delete a user from the directory.
+- individual application management.
+- identity
+- get group details.
+- create application
+- get service principal
 - list groups and roles a user belongs to.
+- list all service principals.
+- delete a group.
+- list user group memberships.
+- delete service principal
+- application registration management.
+- list user memberships
+- update application properties.
+- directory management
+- update service principal properties.
+- user account management.
+- get user properties by id.
+- list all application registrations.
+- list group members
+- remove group member
+- group management.
+- list group members.
+- delete an application registration.
+- get application details.
+- list all users in microsoft entra directory.
+- azure ad
+- update group properties.
+- update group
+- create user
+- delete a service principal.
+- create a new user.
+- get application
+- update application
+- create group
+- get user details.
+- remove a member from a group.
+- list all applications.
+- list all users in the directory.
+- entra
+- user group membership.
+- list all groups in the directory.
+- delete an application.
+- get group
+- list applications
+- delete user
+- access management
+- group membership management.
+- register a new application.
+- update user
+- individual group management.
+- microsoft
+- update user properties.
+- list members of a group.
+- list service principals
+- create service principal
+- identity governance
+- zero trust
+- microsoft entra
+- get service principal details.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

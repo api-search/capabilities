@@ -14,20 +14,20 @@ personas: []
 provider_name: Amazon Parallel Computing Service
 provider_slug: amazon-parallel-computing-service
 search_terms:
-- parallel computing
-- primary amazon parallel computing service resources
-- developer using amazon parallel computing service apis
-- list openapi.yml
-- scientific computing
-- core api workflow
 - list resources
-- Developer
-- list amazon parallel computing service resources
-- hpc
-- amazon parallel computing service
-- high performance computing
+- developer using amazon parallel computing service apis
 - aws
 - list and manage openapi.yml resources
+- hpc
+- parallel computing
+- list amazon parallel computing service resources
+- primary amazon parallel computing service resources
+- amazon parallel computing service
+- high performance computing
+- scientific computing
+- core api workflow
+- Developer
+- list openapi.yml
 slug: amazon-parallel-computing-service-workflow
 source_filename: amazon-parallel-computing-service-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Parallel Computing S
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-parallel-computing-service/refs/heads/main/capabilities/amazon-parallel-computing-service-workflow.yaml
 tags:
 - Amazon Parallel Computing Service
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

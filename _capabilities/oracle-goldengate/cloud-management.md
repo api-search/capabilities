@@ -44,64 +44,64 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- individual deployment operations
-- create a new data replication pipeline
-- list backups
-- unpublish stream pipeline
-- real-time replication
-- list work requests
-- list connections
-- get work request
-- stream analytics pipeline management
-- list deployment backups
-- create a new oci goldengate deployment
-- list deployments
-- data replication pipelines
-- list ggsa stream analytics pipelines
-- start deployment
-- platform administration
-- cdc
-- oci goldengate deployment lifecycle management
-- cloud management
-- create a new oci deployment
-- list asynchronous work requests
 - publish stream pipeline
-- list oci goldengate deployments
-- enterprise
+- start deployment
+- real-time replication
+- cloud management
+- list asynchronous work requests
+- list data replication pipelines
+- upgrade an oci deployment to a newer version
+- platform administration
 - create a deployment backup
-- list oci goldengate deployments in a compartment
-- create connection
-- start a stopped oci deployment
-- unpublish a stream analytics pipeline
-- create deployment
-- data integration
-- get details of a specific oci deployment
-- restore a deployment from a backup
-- list database and service connections
 - oracle goldengate
-- create backup
-- start pipeline
-- database
-- deployment backup management
+- create a new oci deployment
+- stop deployment
+- list oci goldengate deployments
 - list pipelines
 - upgrade deployment
-- stop a running oci deployment
-- start a stopped pipeline
-- check status of an asynchronous operation
-- upgrade an oci deployment to a newer version
-- data synchronization
-- oci
-- connection management
-- restore deployment
-- list stream pipelines
-- get deployment
-- async operation tracking
-- create a new connection for a source or target system
-- publish a stream analytics pipeline to the spark runtime
-- stop deployment
+- cdc
+- oci goldengate deployment lifecycle management
+- data integration
 - create pipeline
+- list connections
+- list work requests
+- database
+- start a stopped oci deployment
+- unpublish stream pipeline
+- individual deployment operations
+- get details of a specific oci deployment
+- check status of an asynchronous operation
+- data replication pipelines
+- list backups
+- list ggsa stream analytics pipelines
+- start a stopped pipeline
+- list deployments
+- unpublish a stream analytics pipeline
+- oci
+- create deployment
+- create a new oci goldengate deployment
+- create a new connection for a source or target system
+- restore a deployment from a backup
+- restore deployment
+- publish a stream analytics pipeline to the spark runtime
+- create backup
+- enterprise
+- list deployment backups
+- deployment backup management
+- stream analytics pipeline management
+- list oci goldengate deployments in a compartment
+- connection management
+- list stream pipelines
+- create a new data replication pipeline
+- start pipeline
+- data synchronization
 - get deployment details
-- list data replication pipelines
+- create connection
+- async operation tracking
+- stop a running oci deployment
+- get deployment
+- get work request
+- list database and service connections
 slug: cloud-management
 source_filename: cloud-management.yaml
 source_heading: Capability Spec

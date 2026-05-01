@@ -11,42 +11,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- project and workflow management for development teams.
-- developer collaboration
-- start workflow run
-- amazon
-- create source repository
-- project management
-- DevOps Engineer
-- list workflows
-- list workflows for a project
-- create a source repository
-- list workflow runs
-- writes code and manages repos and dev environments.
-- aws
-- list projects
-- continuous integration and deployment workflows.
-- devops
-- manage codecatalyst spaces
-- manage projects
-- ci/cd
-- collaboration
-- team collaboration on code and projects.
-- list spaces
-- list dev environments
-- list source repositories
-- list projects in a space
-- Developer
-- create a cloud dev environment
-- list codecatalyst spaces
-- create dev environment
-- source control
-- manage ci/cd workflows
-- create a new project
-- manages ci/cd workflows and project automation.
 - create project
-- developer tools
+- manage projects
+- start workflow run
+- create dev environment
+- list codecatalyst spaces
+- writes code and manages repos and dev environments.
+- list workflows for a project
+- team collaboration on code and projects.
+- collaboration
+- create a new project
+- developer collaboration
+- list workflows
+- continuous integration and deployment workflows.
+- create source repository
+- list source repositories
+- project management
+- list workflow runs
+- list projects
+- devops
+- list projects in a space
+- manage codecatalyst spaces
+- ci/cd
+- manage ci/cd workflows
+- project and workflow management for development teams.
+- create a cloud dev environment
+- aws
+- DevOps Engineer
+- amazon
+- list dev environments
 - start a workflow run
+- manages ci/cd workflows and project automation.
+- developer tools
+- source control
+- Developer
+- create a source repository
+- list spaces
 slug: amazon-codecatalyst-developer-collaboration
 source_filename: amazon-codecatalyst-developer-collaboration.yaml
 source_heading: Capability Spec
@@ -57,7 +57,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeCatalyst Develop
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codecatalyst/refs/heads/main/capabilities/amazon-codecatalyst-developer-collaboration.yaml
 tags:
 - Amazon
-- AWS
 - Developer Collaboration
 - CI/CD
 - Project Management

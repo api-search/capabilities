@@ -55,7 +55,6 @@ implementations:
   - RTOS
   - OTA Updates
   - Firmware
-  - AWS
   tool_count: 0
 - capability_name: Amazon IoT Core - Iot Device Connectivity
   capability_slug: iot-device-connectivity
@@ -66,7 +65,6 @@ implementations:
   provider_slug: amazon-iot-core
   tags:
   - IoT
-  - AWS
   - Device Management
   - MQTT
   - Message Routing
@@ -80,7 +78,6 @@ implementations:
   provider_slug: amazon-iot-device-defender
   tags:
   - IoT
-  - AWS
   - Security
   - Device Management
   - Compliance
@@ -94,7 +91,6 @@ implementations:
   provider_slug: amazon-iot-device-management
   tags:
   - IoT
-  - AWS
   - Device Management
   - Fleet Management
   tool_count: 8
@@ -107,7 +103,6 @@ implementations:
   provider_slug: amazon-iot-events
   tags:
   - IoT
-  - AWS
   - Event Detection
   - Automation
   tool_count: 8
@@ -120,7 +115,6 @@ implementations:
   provider_slug: amazon-iot-fleetwise
   tags:
   - IoT
-  - AWS
   - Automotive
   - Vehicle Telematics
   - Connected Vehicles
@@ -134,7 +128,6 @@ implementations:
   provider_slug: amazon-iot-greengrass
   tags:
   - IoT
-  - AWS
   - Edge Computing
   - Lambda
   - Device Management
@@ -148,7 +141,6 @@ implementations:
   provider_slug: amazon-iot-sitewise
   tags:
   - IoT
-  - AWS
   - Industrial IoT
   - Asset Management
   - Time Series Data
@@ -162,7 +154,6 @@ implementations:
   provider_slug: amazon-iot-twinmaker
   tags:
   - IoT
-  - AWS
   - Digital Twin
   - Industrial IoT
   - 3D Visualization

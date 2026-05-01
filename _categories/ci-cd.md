@@ -25,7 +25,6 @@ implementations:
   provider_slug: amazon-codebuild
   tags:
   - Amazon
-  - AWS
   - CI/CD
   - Build Automation
   - DevOps
@@ -40,7 +39,6 @@ implementations:
   provider_slug: amazon-codecatalyst
   tags:
   - Amazon
-  - AWS
   - Developer Collaboration
   - CI/CD
   - Project Management
@@ -55,7 +53,6 @@ implementations:
   provider_slug: amazon-codedeploy
   tags:
   - Amazon
-  - AWS
   - Deployment
   - DevOps
   - CI/CD
@@ -70,7 +67,6 @@ implementations:
   provider_slug: amazon-codepipeline
   tags:
   - Amazon
-  - AWS
   - CI/CD
   - Continuous Delivery
   - DevOps
@@ -86,7 +82,6 @@ implementations:
   provider_slug: amazon-codestar
   tags:
   - Amazon
-  - AWS
   - Developer Tools
   - DevOps
   - Project Management
@@ -101,7 +96,6 @@ implementations:
   provider_slug: amazon-proton
   tags:
   - Amazon
-  - AWS
   - DevOps
   - Platform Engineering
   - Infrastructure as Code
@@ -117,7 +111,6 @@ implementations:
   provider_slug: aws-app-runner
   tags:
   - AWS App Runner
-  - AWS
   - Containers
   - Deployment
   - Serverless

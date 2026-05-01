@@ -30,33 +30,33 @@ personas: []
 provider_name: Amazon DocumentDB
 provider_slug: amazon-documentdb
 search_terms:
-- documentdb
-- describe db clusters
-- amazon web services
-- create db cluster
-- createDBCluster
-- create db instance
-- amazon documentdb create db cluster
-- engineers managing amazon documentdb resources on aws.
-- amazon documentdb create db instance
-- amazon documentdb describe db clusters
-- deleteDBCluster
 - document database
-- describeDBClusters
-- describeDBInstances
-- aws
-- amazon documentdb describe db instances
-- mongodb
-- managed database
-- nosql
 - delete db cluster
+- nosql
+- amazon documentdb
+- managed database
+- amazon documentdb describe db clusters
+- describe db instances
+- describeDBInstances
+- amazon documentdb create db instance
+- describe db clusters
 - database administration business domain for amazon documentdb.
 - database
-- workflow capability for database administration.
+- create db instance
 - createDBInstance
-- amazon documentdb
+- deleteDBCluster
 - amazon documentdb delete db cluster
-- describe db instances
+- create db cluster
+- engineers managing amazon documentdb resources on aws.
+- createDBCluster
+- mongodb
+- amazon web services
+- amazon documentdb create db cluster
+- aws
+- workflow capability for database administration.
+- describeDBClusters
+- amazon documentdb describe db instances
+- documentdb
 slug: documentdb-management
 source_filename: documentdb-management.yaml
 source_heading: Capability Spec
@@ -68,7 +68,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DocumentDB D
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-documentdb/refs/heads/main/capabilities/documentdb-management.yaml
 tags:
 - Amazon DocumentDB
-- AWS
 - Database
 - NoSQL
 tools:

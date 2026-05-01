@@ -34,47 +34,46 @@ personas: []
 provider_name: Amazon Mainframe Modernization
 provider_slug: amazon-mainframe-modernization
 search_terms:
+- create a new mainframe modernization application on aws
 - cobol
-- runtime environments
-- Platform Engineer
-- create a runtime environment for modernized mainframe applications
-- amazon
 - list runtime environments
-- modernization
+- runtime environments
+- create application
+- get details and status of a modernization application
+- create environment
+- list modernization applications
+- execution of batch jobs migrated from mainframe
+- creation and management of modernized mainframe applications
+- create modernization application
+- list applications
+- start batch job
 - batch job executions
+- create a runtime environment
+- create a runtime environment for modernized mainframe applications
+- list environments
+- start a batch job
+- modernization applications
 - start a batch job execution for a modernized mainframe application
+- modernization
+- manages runtime environments and deployment infrastructure for modernized mainframe applications
+- migration
 - list batch job executions
+- batch jobs
+- create runtime environment
+- Platform Engineer
+- create a modernization application
+- list all mainframe applications being modernized
+- list batch job execution history for an application
+- mainframe
 - Mainframe Developer
 - workflow for managing mainframe application modernization, environments, and batch jobs
-- mainframe
-- manages runtime environments and deployment infrastructure for modernized mainframe applications
-- execution of batch jobs migrated from mainframe
-- list environments
-- list all mainframe applications being modernized
-- aws
-- create a modernization application
-- create environment
-- batch processing
-- get application details
-- list batch job execution history for an application
-- create a runtime environment
-- start batch job
-- batch jobs
-- list batch jobs
-- list applications
-- modernization applications
-- start a batch job
 - list all runtime environments available for deployment
+- batch processing
+- amazon
+- get application details
 - environment provisioning for running modernized applications
-- create a new mainframe modernization application on aws
-- migration
-- create application
-- creation and management of modernized mainframe applications
-- list modernization applications
-- get details and status of a modernization application
-- create modernization application
-- create runtime environment
 - develops and deploys modernized cobol/mainframe applications and manages batch job execution
+- list batch jobs
 slug: modernization-workflow
 source_filename: modernization-workflow.yaml
 source_heading: Capability Spec

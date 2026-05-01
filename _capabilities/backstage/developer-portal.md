@@ -23,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- internal developer platform
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- Platform Engineer
-- list all catalog entities
-- engineer building and maintaining the internal developer platform and backstage configuration
-- list all registered catalog locations
 - delete catalog entity
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- list entities
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- backstage
-- software catalog
-- scaffolding, documentation, and search to accelerate development
-- list catalog entities
-- register a new catalog location
 - create location
-- Developer
-- list catalog locations
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- list all registered catalog locations
+- engineer building and maintaining the internal developer platform and backstage configuration
 - delete an entity from the software catalog
-- central inventory of all software components, apis, and resources
-- catalog locations
-- get catalog entity
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- open source
-- get a specific catalog entity by kind, namespace, and name
 - list locations
-- software catalog entities
+- central inventory of all software components, apis, and resources
+- register a new catalog location
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- scaffolding, documentation, and search to accelerate development
 - register catalog location
+- software catalog entities
+- list entities
+- list catalog entities
+- list all catalog entities
+- Platform Engineer
+- catalog locations
+- get a specific catalog entity by kind, namespace, and name
+- software catalog
+- list catalog locations
 - developer portal
+- get catalog entity
+- open source
+- backstage
+- Developer
+- internal developer platform
 slug: developer-portal
 source_filename: developer-portal.yaml
 source_heading: Capability Spec

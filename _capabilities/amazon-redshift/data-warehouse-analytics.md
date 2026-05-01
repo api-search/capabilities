@@ -27,42 +27,42 @@ personas: []
 provider_name: Amazon Redshift
 provider_slug: amazon-redshift
 search_terms:
-- list databases
-- describe table
-- serverless
-- amazon
-- execute a sql statement
-- data lake
 - analytics
-- table metadata
-- retrieve results from a completed sql statement
-- execute a sql statement asynchronously against redshift
-- machine learning
-- cancel statement
-- execute statement
-- sql statement execution
-- list tables in a schema
-- aws
-- execute multiple sql statements in a batch transaction
+- sql
+- list databases in a redshift cluster or workgroup
 - data warehouse
-- list schemas
-- get details about a sql statement execution
-- describe statement
-- describe the columns of a table
-- get statement result
-- big data
 - list schemas in a database
-- etl
-- list statements
+- list sql statement executions
+- execute multiple sql statements in a batch transaction
+- execute statement
+- describe statement
 - cloud
 - database metadata
+- describe table
+- etl
+- get details about a sql statement execution
+- execute a sql statement
 - cancel a running sql statement
-- list sql statement executions
+- big data
+- list tables in a schema
+- get statement result
+- machine learning
+- execute a sql statement asynchronously against redshift
+- retrieve results from a completed sql statement
+- list databases
+- cancel statement
 - list sql statements
-- list databases in a redshift cluster or workgroup
-- sql
 - batch execute statement
+- aws
+- amazon
+- list schemas
 - list tables
+- list statements
+- sql statement execution
+- describe the columns of a table
+- data lake
+- serverless
+- table metadata
 slug: data-warehouse-analytics
 source_filename: data-warehouse-analytics.yaml
 source_heading: Capability Spec
@@ -75,7 +75,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Redshift Dat
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-redshift/refs/heads/main/capabilities/data-warehouse-analytics.yaml
 tags:
 - Amazon
-- AWS
 - Analytics
 - Data Warehouse
 - SQL

@@ -70,7 +70,6 @@ implementations:
   - Compliance
   - Audit
   - Risk Management
-  - AWS
   tool_count: 10
 - capability_name: Amazon Config Compliance and Governance
   capability_slug: compliance-governance
@@ -81,7 +80,6 @@ implementations:
   provider_slug: amazon-config
   tags:
   - Amazon
-  - AWS
   - Compliance
   - Configuration Management
   - Governance
@@ -127,7 +125,6 @@ implementations:
   provider_slug: amazon-well-architected-tool
   tags:
   - Architecture
-  - AWS
   - Cloud Governance
   - Well-Architected
   - Compliance

@@ -49,40 +49,40 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve purchase orders.
-- list requisitions
-- crm
-- hcm
-- erp
-- peoplesoft
-- supply chain approval requests
-- inventory
-- inventory items and stock levels
-- enterprise software
-- list orders
-- campus solutions.
-- list inventory items
-- financial and supply chain management.
 - campus solutions
-- retrieve order fulfillment records.
-- individual approval operations
-- order fulfillment
-- list pending approvals
-- retrieve inventory items and stock levels.
-- order fulfillment records
 - process approval
-- supply chain management
-- approve, deny, or push back a supply chain approval request.
+- list requisitions
 - peopletools platform services.
 - retrieve procurement requisitions.
-- list purchase orders
-- procurement
-- purchase orders
-- human capital management.
-- retrieve pending supply chain approval requests.
-- financial management
+- inventory
 - procurement requisitions
+- list pending approvals
+- retrieve pending supply chain approval requests.
+- crm
+- order fulfillment
+- peoplesoft
+- inventory items and stock levels
+- order fulfillment records
 - supply chain
+- list purchase orders
+- campus solutions.
+- financial and supply chain management.
+- purchase orders
+- list inventory items
+- retrieve inventory items and stock levels.
+- human capital management.
+- supply chain management
+- supply chain approval requests
+- hcm
+- approve, deny, or push back a supply chain approval request.
+- financial management
+- individual approval operations
+- procurement
+- list orders
+- enterprise software
+- erp
+- retrieve order fulfillment records.
+- retrieve purchase orders.
 slug: supply-chain-and-procurement
 source_filename: supply-chain-and-procurement.yaml
 source_heading: Capability Spec

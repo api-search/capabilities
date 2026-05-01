@@ -21,19 +21,19 @@ personas: []
 provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
+- amazon resource explorer resources
 - cloud operations
-- aws cloud resource management
-- resource management
 - list resources
+- aws cloud resource management
+- aws
 - inventory
+- list amazon resource explorer resources
+- discovery
 - amazon resource explorer
 - automation workflow for amazon resource explorer
-- aws
-- discovery
-- amazon resource explorer resources
-- engineer managing amazon resource explorer resources
 - operations
-- list amazon resource explorer resources
+- resource management
+- engineer managing amazon resource explorer resources
 slug: amazon-resource-explorer
 source_filename: amazon-resource-explorer.yaml
 source_heading: Capability Spec
@@ -42,7 +42,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Resource Explorer Op
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-resource-explorer/refs/heads/main/capabilities/amazon-resource-explorer.yaml
 tags:
 - Amazon Resource Explorer
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Resource Explorer resources

@@ -9,11 +9,10 @@ personas: []
 provider_name: Amazon HealthLake
 provider_slug: amazon-healthlake
 search_terms:
-- cloud computing
+- hipaa
 - healthcare
 - fhir
-- aws
-- hipaa
+- cloud computing
 - health data
 slug: amazon-healthlake-health-data-operations
 source_filename: amazon-healthlake-health-data-operations.yaml

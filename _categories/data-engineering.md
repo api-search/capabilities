@@ -73,7 +73,6 @@ implementations:
   - Data Integration
   - ETL
   - SaaS
-  - AWS
   - Data Engineering
   tool_count: 19
 - capability_name: Amazon Glue Data Integration
@@ -89,7 +88,6 @@ implementations:
   - Data Integration
   - Data Catalog
   - Data Engineering
-  - AWS
   tool_count: 15
 - capability_name: Amazon Glue DataBrew Data Preparation
   capability_slug: amazon-glue-databrew-data-preparation
@@ -104,7 +102,6 @@ implementations:
   - ETL
   - Analytics
   - Machine Learning
-  - AWS
   tool_count: 12
 - capability_name: Apache Airflow Workflow Orchestration
   capability_slug: airflow-orchestration

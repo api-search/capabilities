@@ -10,20 +10,20 @@ personas: []
 provider_name: Amazon Lightsail
 provider_slug: amazon-lightsail
 search_terms:
-- integrates api into applications
-- Developer
-- returns information about all amazon lightsail virtual private servers.
-- unified workflow for amazon lightsail resource management
 - workflow
-- Administrator
-- manages resources and configurations
-- aws
 - instances get instance
-- returns information about a specific amazon lightsail instance.
-- instances create instances
 - amazon lightsail
+- returns information about a specific amazon lightsail instance.
+- aws
+- manages resources and configurations
+- instances create instances
+- unified workflow for amazon lightsail resource management
 - creates one or more amazon lightsail instances.
+- integrates api into applications
 - instances get instances
+- Developer
+- Administrator
+- returns information about all amazon lightsail virtual private servers.
 slug: amazon-lightsail-workflow
 source_filename: amazon-lightsail-workflow.yaml
 source_heading: Capability Spec
@@ -32,7 +32,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lightsail Workflow\n
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lightsail/refs/heads/main/capabilities/amazon-lightsail-workflow.yaml
 tags:
 - Amazon Lightsail
-- AWS
 - Workflow
 tools:
 - description: Creates one or more Amazon Lightsail instances.

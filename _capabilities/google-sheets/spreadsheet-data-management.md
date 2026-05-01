@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- google sheets
-- clear values from a range
-- get spreadsheet details by id
-- spreadsheet lifecycle operations
-- get spreadsheet
-- batch update values
-- apply batch updates to a spreadsheet
-- get developer metadata
-- get spreadsheet details
-- write values to multiple ranges at once
-- create a new google sheets spreadsheet
-- clear values from a spreadsheet range
-- create spreadsheet
-- automation
-- spreadsheets
-- google workspace
 - batch get values
-- read values from a spreadsheet range
-- append values to a range
-- batch update spreadsheet
-- productivity
-- update values
-- clear values
-- single spreadsheet operations
-- data management
 - get values
-- cell value read and write operations
+- get spreadsheet
 - create a new spreadsheet
-- search developer metadata
+- update values
 - copy sheet
 - read values from multiple ranges at once
-- copy a sheet to another spreadsheet
-- search developer metadata matching filters
-- append values
-- write values to a spreadsheet range
-- clear values from multiple ranges
-- read values from a range
-- write values to a range
 - append rows of data to a spreadsheet
+- read values from a spreadsheet range
+- get spreadsheet details by id
+- get spreadsheet details
+- batch update spreadsheet
+- single spreadsheet operations
+- append values to a range
+- clear values from multiple ranges
+- write values to a spreadsheet range
+- write values to multiple ranges at once
+- read values from a range
+- append values
 - batch clear values
+- spreadsheet lifecycle operations
+- cell value read and write operations
+- batch update values
+- automation
+- create a new google sheets spreadsheet
+- get developer metadata
+- google workspace
+- copy a sheet to another spreadsheet
+- productivity
+- create spreadsheet
+- clear values from a spreadsheet range
+- apply batch updates to a spreadsheet
 - get developer metadata by id
+- spreadsheets
+- search developer metadata
+- google sheets
+- search developer metadata matching filters
+- clear values
+- data management
+- clear values from a range
+- write values to a range
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

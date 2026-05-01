@@ -9,13 +9,13 @@ personas: []
 provider_name: Apache Hudi
 provider_slug: apache-hudi
 search_terms:
-- acid
-- apache
-- incremental processing
-- data lake
-- open source
-- lakehouse
 - big data
+- apache
+- acid
+- incremental processing
+- lakehouse
+- open source
+- data lake
 slug: hudi-lakehouse-management
 source_filename: hudi-lakehouse-management.yaml
 source_heading: Capability Spec

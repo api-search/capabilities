@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- describe table
-- amazon dynamodb update an item in a table
-- serverless
-- document store
-- update item
-- update table
-- get item
-- workflow capability for nosql database operations.
-- deleteTable
-- createTable
-- amazon dynamodb query items in a table or index
-- getItem
-- deleteItem
-- aws
-- engineers managing amazon dynamodb resources on aws.
-- amazon dynamodb update a dynamodb table
-- putItem
-- delete item
-- create table
-- amazon dynamodb delete an item from a table
-- key-value
-- amazon dynamodb get an item from a table
-- nosql database operations business domain for amazon dynamodb.
-- delete table
-- nosql
-- listTables
-- updateItem
-- database
-- amazon dynamodb describe a dynamodb table
-- updateTable
-- amazon dynamodb delete a dynamodb table
 - amazon dynamodb list dynamodb tables
-- amazon dynamodb put an item into a table
-- describeTable
-- amazon dynamodb create a dynamodb table
+- key-value
+- amazon dynamodb update a dynamodb table
+- nosql
+- get item
 - put item
+- engineers managing amazon dynamodb resources on aws.
+- document store
+- amazon dynamodb describe a dynamodb table
+- amazon dynamodb get an item from a table
+- describe table
+- amazon dynamodb query items in a table or index
+- workflow capability for nosql database operations.
 - amazon dynamodb
+- amazon dynamodb update an item in a table
+- database
+- amazon dynamodb delete a dynamodb table
+- create table
+- describeTable
+- update item
+- listTables
+- amazon dynamodb create a dynamodb table
+- deleteItem
+- updateTable
+- nosql database operations business domain for amazon dynamodb.
+- putItem
+- delete table
+- amazon dynamodb put an item into a table
+- delete item
+- getItem
 - query
+- updateItem
+- aws
+- createTable
+- deleteTable
 - list tables
+- update table
+- serverless
+- amazon dynamodb delete an item from a table
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec
@@ -104,7 +104,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon DynamoDB NoS
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-dynamodb/refs/heads/main/capabilities/dynamodb-management.yaml
 tags:
 - Amazon DynamoDB
-- AWS
 - Database
 - NoSQL
 tools:

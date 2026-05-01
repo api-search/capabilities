@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Monitron
 provider_slug: amazon-monitron
 search_terms:
-- broadcasting
-- amazon monitron media processing workflow
-- manage media processing jobs
+- Broadcast Engineer
+- create project
 - get project
+- broadcasting
+- amazon monitron list project admin users
 - media
-- developer building media processing applications
+- media processing
+- workflow
+- amazon monitron get project admin user
+- associate project admin user
+- aws media processing and delivery
+- amazon monitron create project
+- list projects
+- delete project
+- amazon monitron delete project
+- amazon monitron media processing workflow
+- get project admin user
 - amazon monitron associate project admin user
 - update project
-- workflow
-- media processing
-- amazon monitron update project
-- delete project
-- Media Developer
-- aws
-- list projects
-- get project admin user
 - list jobs
-- amazon monitron get project
-- amazon monitron create project
-- associate project admin user
-- list project admin users
-- amazon monitron get project admin user
-- Broadcast Engineer
-- amazon monitron list project admin users
-- amazon monitron list projects
+- Media Developer
 - engineer managing broadcast media workflows
-- amazon monitron delete project
-- create project
-- aws media processing and delivery
+- developer building media processing applications
+- manage media processing jobs
+- amazon monitron list projects
+- aws
+- amazon monitron get project
+- amazon monitron update project
+- list project admin users
 slug: amazon-monitron-media-workflow
 source_filename: amazon-monitron-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Monitron Workflow\n 
   \    - name: get-project-admin-user\n      description: Amazon Monitron Get Project Admin User\n      hints:\n        readOnly: true\n        openWorld: true\n      call: monitron.get-project-admin-user\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-monitron/refs/heads/main/capabilities/amazon-monitron-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

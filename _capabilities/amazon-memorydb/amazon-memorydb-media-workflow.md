@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MemoryDB
 provider_slug: amazon-memorydb
 search_terms:
-- broadcasting
-- amazon memorydb createcluster
-- amazon memorydb describeacls
-- describe ac ls
-- manage media processing jobs
-- delete acl
-- media
-- developer building media processing applications
-- delete cluster
-- update cluster
-- create cluster
-- amazon memorydb updatecluster
-- workflow
-- media processing
-- create acl
-- amazon memorydb media processing workflow
-- Media Developer
-- aws
-- amazon memorydb deletecluster
-- list jobs
-- amazon memorydb describeclusters
-- amazon memorydb updateacl
 - Broadcast Engineer
-- amazon memorydb deleteacl
+- delete cluster
+- amazon memorydb describeacls
+- describe clusters
+- create cluster
+- broadcasting
+- media
+- media processing
+- workflow
+- amazon memorydb media processing workflow
+- create acl
+- aws media processing and delivery
+- update cluster
+- delete acl
+- amazon memorydb describeclusters
+- amazon memorydb updatecluster
+- amazon memorydb createacl
+- amazon memorydb updateacl
+- amazon memorydb createcluster
+- describe ac ls
+- list jobs
+- Media Developer
 - update acl
 - engineer managing broadcast media workflows
-- amazon memorydb createacl
-- describe clusters
-- aws media processing and delivery
+- developer building media processing applications
+- manage media processing jobs
+- amazon memorydb deleteacl
+- aws
+- amazon memorydb deletecluster
 slug: amazon-memorydb-media-workflow
 source_filename: amazon-memorydb-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MemoryDB Workflow\n 
   \  readOnly: false\n        openWorld: true\n      call: memorydb.delete-cluster\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-memorydb/refs/heads/main/capabilities/amazon-memorydb-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

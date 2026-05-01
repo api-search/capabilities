@@ -14,19 +14,19 @@ personas: []
 provider_name: Amazon OpenSearch Service API
 provider_slug: amazon-opensearch
 search_terms:
-- list openapi.yml
-- core api workflow
-- list resources
-- Developer
-- primary amazon opensearch service api resources
-- analytics
-- search
 - list amazon opensearch service api resources
-- amazon opensearch service api
+- list resources
+- analytics
 - aws
-- elasticsearch
 - list and manage openapi.yml resources
 - developer using amazon opensearch service api apis
+- primary amazon opensearch service api resources
+- amazon opensearch service api
+- elasticsearch
+- core api workflow
+- Developer
+- list openapi.yml
+- search
 slug: amazon-opensearch-workflow
 source_filename: amazon-opensearch-workflow.yaml
 source_heading: Capability Spec
@@ -35,7 +35,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon OpenSearch Service A
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-opensearch/refs/heads/main/capabilities/amazon-opensearch-workflow.yaml
 tags:
 - Amazon OpenSearch Service API
-- AWS
 tools:
 - description: List and manage openapi.yml resources
   hints:

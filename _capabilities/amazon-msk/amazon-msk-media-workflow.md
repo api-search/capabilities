@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MSK
 provider_slug: amazon-msk
 search_terms:
-- broadcasting
-- batchdisassociatescramsecret
-- aws media processing and delivery
-- manage media processing jobs
-- media
-- developer building media processing applications
-- create cluster
-- list configurations
-- workflow
-- list scram secrets
-- media processing
-- create cluster v2
-- amazon msk media processing workflow
-- aws
-- Media Developer
-- list jobs
-- list clusters
-- createclusterv2
+- Broadcast Engineer
 - listconfigurations
 - batch disassociate scram secret
+- create cluster
+- broadcasting
 - listscramsecrets
+- media
+- media processing
+- workflow
+- list scram secrets
+- createclusterv2
 - batch associate scram secret
-- Broadcast Engineer
+- create cluster v2
+- aws media processing and delivery
+- listclusters
+- list clusters
+- list clusters v2
+- list configurations
+- batchdisassociatescramsecret
+- list jobs
 - listclustersv2
+- Media Developer
 - engineer managing broadcast media workflows
+- developer building media processing applications
+- manage media processing jobs
+- amazon msk media processing workflow
+- aws
 - createcluster
 - batchassociatescramsecret
-- list clusters v2
-- listclusters
 slug: amazon-msk-media-workflow
 source_filename: amazon-msk-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MSK Workflow\n  desc
   \ msk.list-configurations\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-msk/refs/heads/main/capabilities/amazon-msk-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

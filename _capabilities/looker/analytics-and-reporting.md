@@ -70,63 +70,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
-- get user
-- bi platform
-- search for looks by title.
-- search dashboards
-- create a new dashboard.
+- list looks
 - analytics
-- list all saved looks.
-- search for dashboards.
-- create a query.
-- get dashboard details.
-- data analytics
-- run a saved query.
-- data visualization
-- update a user.
+- delete a look.
+- query management.
+- create query
+- update look
+- run look
+- create a new dashboard.
 - delete a user.
+- bi platform
+- data visualization
+- create a dashboard.
+- list users
+- data analytics
+- get query
+- update a user.
+- create dashboard
+- delete user
+- individual dashboard management.
+- search looks
+- get user
+- look management.
+- search for dashboards.
+- individual query operations.
+- run query
+- get dashboard
+- run a look and return results.
+- update user
+- delete dashboard
+- user management.
+- list all looks.
+- delete look
+- list dashboards
+- update a look.
+- get query details.
+- update dashboard
+- business intelligence
+- get look details.
+- create user
+- create a user.
+- delete a dashboard.
+- create a query.
 - dashboards
 - create a new user.
-- list all looks.
-- list all dashboards.
-- search looks
-- list looks
-- business intelligence
-- update dashboard
-- dashboard management.
-- update a dashboard.
-- get query details.
-- run query
-- get look details.
-- list all users.
-- delete a look.
 - get look
-- get dashboard
-- delete look
-- delete a dashboard.
-- create query
-- individual query operations.
-- get query
-- create user
-- run look
 - individual look management.
-- get user details.
-- delete user
-- list dashboards
-- query management.
-- create a user.
-- delete dashboard
-- individual dashboard management.
-- update a look.
-- create a dashboard.
-- user management.
-- look management.
-- run a look and return results.
-- list users
-- update user
-- create dashboard
-- update look
+- list all users.
+- list all saved looks.
+- search for looks by title.
+- search dashboards
+- get dashboard details.
 - looker
+- update a dashboard.
+- get user details.
+- list all dashboards.
+- dashboard management.
+- run a saved query.
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

@@ -13,8 +13,8 @@ search_terms:
 - streaming
 - open source
 - distributed systems
-- log storage
 - storage
+- log storage
 slug: bookkeeper-cluster-management
 source_filename: bookkeeper-cluster-management.yaml
 source_heading: Capability Spec

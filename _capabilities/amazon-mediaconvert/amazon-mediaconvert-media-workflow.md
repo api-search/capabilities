@@ -14,34 +14,34 @@ personas: []
 provider_name: Amazon MediaConvert
 provider_slug: amazon-mediaconvert
 search_terms:
+- list presets
+- Broadcast Engineer
 - broadcasting
-- getjob
-- createjobtemplate
-- manage media processing jobs
 - media
-- developer building media processing applications
-- listjobs
-- workflow
 - media processing
-- Media Developer
-- aws
-- listjobtemplates
-- list jobs
+- workflow
+- aws media processing and delivery
 - list job templates
-- create job template
+- createjobtemplate
 - canceljob
 - createjob
-- get job
-- associatecertificate
-- associate certificate
-- Broadcast Engineer
-- listpresets
-- list presets
-- engineer managing broadcast media workflows
-- cancel job
 - amazon mediaconvert media processing workflow
+- associatecertificate
+- list jobs
+- Media Developer
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- associate certificate
+- manage media processing jobs
+- listjobtemplates
+- aws
+- getjob
 - create job
-- aws media processing and delivery
+- get job
+- listjobs
+- cancel job
+- create job template
+- listpresets
 slug: amazon-mediaconvert-media-workflow
 source_filename: amazon-mediaconvert-media-workflow.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaConvert Workflo
   \ mediaconvert.list-presets\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mediaconvert/refs/heads/main/capabilities/amazon-mediaconvert-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

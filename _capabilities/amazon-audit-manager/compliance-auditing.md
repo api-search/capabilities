@@ -23,35 +23,35 @@ provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
 - create a custom compliance control for use in frameworks and assessments.
-- create control
-- list all compliance assessments to understand current audit coverage.
-- list frameworks
-- get complete details of a compliance assessment including control status.
-- update settings
-- risk management
-- list generated assessment reports for compliance documentation.
-- create assessment
-- update audit manager settings including sns notifications and default report destination.
-- get assessment
-- list assessment reports
-- aws
-- get audit manager account settings including default destinations and process owners.
-- compliance
-- list compliance controls available for building assessments.
-- compliance framework management
-- create a new assessment
-- generate a compliance assessment report from collected evidence.
-- create a new compliance assessment using a regulatory framework.
-- get settings
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- list assessments
-- list available frameworks
-- audit
-- list all assessments
-- list controls
 - create assessment report
-- compliance assessment management
 - amazon audit manager
+- update audit manager settings including sns notifications and default report destination.
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- list frameworks
+- list assessments
+- get complete details of a compliance assessment including control status.
+- create a new compliance assessment using a regulatory framework.
+- create control
+- list generated assessment reports for compliance documentation.
+- list assessment reports
+- get settings
+- create a new assessment
+- risk management
+- update settings
+- compliance assessment management
+- list controls
+- list all assessments
+- compliance framework management
+- compliance
+- list available frameworks
+- list all compliance assessments to understand current audit coverage.
+- audit
+- aws
+- create assessment
+- generate a compliance assessment report from collected evidence.
+- get assessment
+- list compliance controls available for building assessments.
+- get audit manager account settings including default destinations and process owners.
 slug: compliance-auditing
 source_filename: compliance-auditing.yaml
 source_heading: Capability Spec
@@ -67,7 +67,6 @@ tags:
 - Compliance
 - Audit
 - Risk Management
-- AWS
 tools:
 - description: List all compliance assessments to understand current audit coverage.
   hints:

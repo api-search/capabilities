@@ -83,7 +83,6 @@ implementations:
   - Operations
   - Monitoring
   - Incident Response
-  - AWS
   tool_count: 7
 - capability_name: Amazon Lookout for Metrics - Anomaly Detection Operations
   capability_slug: anomaly-detection-operations
@@ -137,7 +136,6 @@ implementations:
   provider_name: Amazon X-Ray
   provider_slug: amazon-xray
   tags:
-  - AWS
   - Distributed Tracing
   - Observability
   - Application Performance
@@ -261,7 +259,6 @@ implementations:
   provider_name: AWS CloudWatch
   provider_slug: cloudwatch
   tags:
-  - AWS
   - CloudWatch
   - Monitoring
   - Observability

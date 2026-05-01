@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- chat completion
-- audio create transcription
-- images create variation
-- audio create translation
-- text embeddings
-- generate a conversational response using gpt models
-- list all available openai models
-- create embedding
-- generate an image from a text prompt using dall-e
-- transcribe audio to text using whisper
-- t1
-- generate speech
-- image generation
-- list models
-- available models
-- content generation
-- get details of a specific model
-- text to speech
-- generate audio from text using tts models
-- translate audio to english text
-- models list
-- artificial intelligence
-- create speech
-- models get
-- edit an existing image with a text prompt
-- large language models
-- chat create completion
-- images edit
-- create embeddings
-- create a variation of an existing image
-- generate vector embeddings for text input
-- create a chat completion
-- create image
-- embeddings create
-- ai
-- create chat completion
-- openai
 - images create
-- generate an image
+- edit an existing image with a text prompt
+- list models
+- text to speech
+- transcribe audio to text using whisper
+- images edit
+- chat create completion
+- create chat completion
+- models list
+- images create variation
+- artificial intelligence
+- generate a conversational response using gpt models
+- openai
+- ai
+- generate speech
+- generate an image from a text prompt using dall-e
+- text embeddings
+- image generation
+- chat completion
+- embeddings create
+- create embedding
+- audio create transcription
 - audio create speech
+- create embeddings
+- available models
+- generate an image
+- create speech
+- create a variation of an existing image
+- generate audio from text using tts models
+- create image
+- generate vector embeddings for text input
+- translate audio to english text
+- models get
+- t1
+- large language models
+- audio create translation
+- get details of a specific model
+- content generation
+- create a chat completion
+- list all available openai models
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

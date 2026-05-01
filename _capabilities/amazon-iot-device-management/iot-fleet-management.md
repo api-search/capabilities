@@ -15,31 +15,31 @@ personas: []
 provider_name: Amazon IoT Device Management
 provider_slug: amazon-iot-device-management
 search_terms:
-- manages amazon iot device management resources and operations
-- amazon iot device management resources
-- onboard, organize, and manage iot devices at scale.
+- list job executions
+- amazon iot device management list thing groups
+- ota updates
 - add thing to group
 - iot
-- Operations Engineer
+- amazon iot device management add thing to group
+- list things in group
 - amazon iot device management create thing group
-- amazon iot device management list job executions
+- manages amazon iot device management resources and operations
+- device management
 - amazon iot device management list things in group
+- amazon iot device management list job executions
+- amazon iot device management describe job
+- onboard, organize, and manage iot devices at scale.
+- amazon iot device management list jobs
+- amazon iot device management resources
+- describe job
+- amazon iot device management create job
+- list jobs
 - create thing group
 - list thing groups
 - aws
-- list jobs
-- list job executions
-- list things in group
-- amazon iot device management add thing to group
-- ota updates
-- describe job
-- amazon iot device management describe job
 - IoT Engineer
-- amazon iot device management create job
-- device management
-- amazon iot device management list thing groups
+- Operations Engineer
 - fleet management
-- amazon iot device management list jobs
 - create job
 slug: iot-fleet-management
 source_filename: iot-fleet-management.yaml
@@ -51,7 +51,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Device Manag
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-device-management/refs/heads/main/capabilities/iot-fleet-management.yaml
 tags:
 - IoT
-- AWS
 - Device Management
 - Fleet Management
 tools:

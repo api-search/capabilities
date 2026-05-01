@@ -10,26 +10,26 @@ personas: []
 provider_name: Appsmith
 provider_slug: appsmith
 search_terms:
-- lists all low-code internal tool applications built in appsmith
-- appsmith
-- connecting databases and apis to power application data
-- list team workspaces
-- workflow automation
-- lists datasources connected to appsmith for powering internal tools
 - developer productivity
-- list internal tools
-- builds low-code internal tools and workflow applications
-- manages workspaces and application access for teams
+- lists all low-code internal tool applications built in appsmith
 - lists workspaces available for organizing internal tools
-- creating and managing low-code applications
-- internal tools
-- low-code
+- connecting databases and apis to power application data
 - create internal tool
-- build and deploy low-code internal tools with appsmith
-- list connected datasources
+- lists datasources connected to appsmith for powering internal tools
+- builds low-code internal tools and workflow applications
+- list team workspaces
+- manages workspaces and application access for teams
+- list internal tools
 - creates a new internal tool application in appsmith
+- list connected datasources
+- build and deploy low-code internal tools with appsmith
+- appsmith
+- workflow automation
+- low-code
+- internal tools
 - open source
 - developer tools
+- creating and managing low-code applications
 slug: internal-tool-builder
 source_filename: internal-tool-builder.yaml
 source_heading: Capability Spec

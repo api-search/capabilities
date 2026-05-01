@@ -34,46 +34,46 @@ personas: []
 provider_name: Ampersand
 provider_slug: ampersand
 search_terms:
-- oauth connections to third-party saas providers.
-- Platform Engineer
-- integration definitions for a project.
-- list all integration installations mapping end-user groups to integration configurations in ampersand.
-- list integrations
-- list all oauth connections to third-party saas providers established by end users in an ampersand project.
-- integration installations for end-user connections.
-- list all integration installations for end-user connections.
-- list connections
-- list all integration definitions in an ampersand project.
-- list all data destinations configured in an ampersand project for integration data delivery to webhooks, databases, or other targets.
-- list all saas providers available for integration through ampersand, including salesforce, hubspot, marketo, zendesk, and hundreds more.
-- list all destinations for integration data delivery.
-- saas
-- list installations
-- data sync
-- create installation
-- list providers
-- native product integrations between saas applications using managed oauth, data sync, and field mapping.
-- saas integrations
-- create a new integration installation for an end user.
-- available saas provider connectors.
-- data destinations for integration output delivery.
-- infrastructure engineer automating integration deployment and managing connections at scale.
-- integration management
-- workflow for managing saas integrations, connections, and installations.
-- integrations
-- Product Developer
-- oauth
-- list all integration definitions configured in an ampersand project for a saas product.
-- webhooks
 - ampersand
-- finops
-- list destinations
 - list all connections established for saas providers in a project.
-- platform
-- list all saas providers available for integration through ampersand.
-- create a new ampersand integration installation to connect an end user's saas account with a configured integration.
+- available saas provider connectors.
+- create a new integration installation for an end user.
+- list all integration definitions in an ampersand project.
+- integrations
+- oauth
+- integration definitions for a project.
+- data sync
+- list all integration definitions configured in an ampersand project for a saas product.
+- integration management
 - saas product developer building native integrations with third-party tools using ampersand.
+- oauth connections to third-party saas providers.
+- list integrations
+- list connections
+- webhooks
+- list destinations
+- create a new ampersand integration installation to connect an end user's saas account with a configured integration.
+- list installations
+- list all data destinations configured in an ampersand project for integration data delivery to webhooks, databases, or other targets.
+- list providers
+- data destinations for integration output delivery.
+- Product Developer
+- saas integrations
+- list all destinations for integration data delivery.
+- Platform Engineer
+- saas
+- list all integration installations mapping end-user groups to integration configurations in ampersand.
+- list all saas providers available for integration through ampersand.
+- native product integrations between saas applications using managed oauth, data sync, and field mapping.
+- list all saas providers available for integration through ampersand, including salesforce, hubspot, marketo, zendesk, and hundreds more.
+- finops
+- workflow for managing saas integrations, connections, and installations.
+- infrastructure engineer automating integration deployment and managing connections at scale.
+- list all oauth connections to third-party saas providers established by end users in an ampersand project.
 - developer tools
+- create installation
+- platform
+- list all integration installations for end-user connections.
+- integration installations for end-user connections.
 slug: integration-management
 source_filename: integration-management.yaml
 source_heading: Capability Spec

@@ -10,31 +10,31 @@ personas: []
 provider_name: Amazon KMS
 provider_slug: amazon-kms
 search_terms:
-- decrypts ciphertext that was encrypted by a kms key.
-- security
-- creates a unique customer managed kms key in your aws account and region.
-- amazon kms
-- keys create key
 - data protection
-- workflow
-- Administrator
-- encrypts plaintext of up to 4,096 bytes using a kms key.
-- returns a unique symmetric data key for use outside of kms.
-- aws
-- encryption
-- cryptography
-- key management
-- crypto generate data key
-- keys list keys
-- crypto encrypt
-- Developer
-- gets a list of all kms keys in the caller's aws account and region.
-- keys describe key
-- unified workflow for amazon kms resource management
-- manages resources and configurations
-- crypto decrypt
-- integrates api into applications
+- decrypts ciphertext that was encrypted by a kms key.
 - provides detailed information about a kms key.
+- workflow
+- key management
+- creates a unique customer managed kms key in your aws account and region.
+- keys create key
+- crypto decrypt
+- Administrator
+- integrates api into applications
+- crypto encrypt
+- returns a unique symmetric data key for use outside of kms.
+- manages resources and configurations
+- keys list keys
+- encrypts plaintext of up to 4,096 bytes using a kms key.
+- cryptography
+- gets a list of all kms keys in the caller's aws account and region.
+- encryption
+- amazon kms
+- unified workflow for amazon kms resource management
+- aws
+- security
+- Developer
+- keys describe key
+- crypto generate data key
 slug: amazon-kms-workflow
 source_filename: amazon-kms-workflow.yaml
 source_heading: Capability Spec
@@ -44,7 +44,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon KMS Workflow\n  desc
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-kms/refs/heads/main/capabilities/amazon-kms-workflow.yaml
 tags:
 - Amazon KMS
-- AWS
 - Workflow
 tools:
 - description: Creates a unique customer managed KMS key in your AWS account and Region.

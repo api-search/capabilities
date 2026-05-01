@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- describe profiling group
-- Platform Engineer
-- get optimization recommendations for a profiling group
-- create profiling group
-- post agent profile
-- amazon
-- get aggregated profile data
-- list findings reports for a profiling group
-- devops engineer persona.
-- application performance
-- create a new profiling group
-- list profile times
-- DevOps Engineer
-- machine learning
-- get profile
-- platform engineer persona.
-- list profiling groups in the account
-- aws
-- list findings reports
-- devops
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- submit profiling agent data
-- Developer
 - get details about a profiling group
-- list profile collection times for a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- create profiling group
+- Developer
+- list findings reports
 - list profiling groups
-- developer persona.
-- get recommendations
+- devops engineer persona.
+- platform engineer persona.
 - profiling
+- application performance
+- list findings reports for a profiling group
+- get recommendations
+- post agent profile
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- devops
+- machine learning
+- list profiling groups in the account
+- Platform Engineer
+- get profile
+- get aggregated profile data
+- developer persona.
+- list profile times
+- describe profiling group
+- aws
+- DevOps Engineer
+- amazon
+- list profile collection times for a profiling group
+- create a new profiling group
+- get optimization recommendations for a profiling group
+- submit profiling agent data
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
 slug: amazon-codeguru-profiler-application-performance
 source_filename: amazon-codeguru-profiler-application-performance.yaml
 source_heading: Capability Spec
@@ -50,7 +50,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Profiler Ap
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codeguru-profiler/refs/heads/main/capabilities/amazon-codeguru-profiler-application-performance.yaml
 tags:
 - Amazon
-- AWS
 - Application Performance
 - Profiling
 - DevOps

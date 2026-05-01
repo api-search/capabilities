@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon License Manager
 provider_slug: amazon-license-manager
 search_terms:
-- integrates api into applications
-- cost management
-- Developer
-- amazon license manager
-- software licensing
 - workflow
-- license configurations get license configuration
-- Administrator
-- manages resources and configurations
 - creates a license configuration.
-- license management
-- lists the license configurations for your account.
-- license configurations create license configuratio
-- aws
 - license configurations list license configurations
-- unified workflow for amazon license manager resource management
-- gets detailed information about the specified license configuration.
+- aws
+- manages resources and configurations
+- license configurations get license configuration
+- amazon license manager
+- license configurations create license configuratio
+- lists the license configurations for your account.
+- integrates api into applications
 - compliance
+- unified workflow for amazon license manager resource management
+- cost management
+- license management
+- software licensing
+- Developer
+- Administrator
+- gets detailed information about the specified license configuration.
 slug: amazon-license-manager-workflow
 source_filename: amazon-license-manager-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon License Manager Work
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/capabilities/amazon-license-manager-workflow.yaml
 tags:
 - Amazon License Manager
-- AWS
 - Workflow
 tools:
 - description: Creates a license configuration.

@@ -21,22 +21,22 @@ personas: []
 provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
+- list resources
 - cloud operations
 - engineer managing amazon ses resources
-- email
-- aws cloud resource management
-- list amazon ses resources
-- list resources
-- marketing email
-- smtp
-- amazon ses
-- email deliverability
-- amazon ses resources
 - aws
-- automation workflow for amazon ses
 - email service
+- amazon ses resources
+- smtp
+- email deliverability
 - notifications
 - transactional email
+- marketing email
+- amazon ses
+- aws cloud resource management
+- automation workflow for amazon ses
+- email
+- list amazon ses resources
 slug: amazon-ses
 source_filename: amazon-ses.yaml
 source_heading: Capability Spec
@@ -45,7 +45,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Ses Operations\n  de
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-ses/refs/heads/main/capabilities/amazon-ses.yaml
 tags:
 - Amazon Ses
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Ses resources

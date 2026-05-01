@@ -25,7 +25,6 @@ implementations:
   provider_slug: amazon-s3
   tags:
   - Amazon
-  - AWS
   - S3
   - Storage Management
   - Cloud Storage

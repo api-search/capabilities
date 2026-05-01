@@ -31,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- publish batch
-- delete an sns topic
-- check if a phone number has opted out of sms
-- amazon
-- topic management
-- set topic attributes
-- push notifications
-- list subscriptions for a specific topic
-- list subscriptions
-- publish a message to a topic
-- create a subscription
-- sms
-- subscribe
-- create platform application
-- publish up to 10 messages in a batch
-- set attributes on an sns topic
-- get sms messaging attributes
-- notifications
-- aws
-- get sms attributes
-- add tags to an sns resource
-- tag resource
-- list tags
-- create topic
-- get topic attributes
-- check phone opted out
 - list topics
-- pub/sub
-- list subscriptions by topic
-- list all subscriptions
+- publish a message to a topic
 - create a subscription to a topic
-- messaging
-- unsubscribe
 - list tags for an sns resource
-- list all sns topics
-- create a platform application for mobile push
-- subscription management
-- email
-- publish
 - get attributes of an sns topic
+- create a platform application for mobile push
+- list subscriptions by topic
+- list tags
+- check if a phone number has opted out of sms
+- create platform application
+- get sms messaging attributes
+- publish batch
+- message publishing
+- get sms attributes
+- list all sns topics
 - delete topic
 - get attributes of a subscription
+- list all subscriptions
+- list subscriptions for a specific topic
+- email
+- create a subscription
+- subscription management
+- notifications
 - create a new sns topic
-- message publishing
-- publish a message to a topic or endpoint
-- get subscription attributes
+- pub/sub
 - unsubscribe from a topic
+- set topic attributes
+- publish
+- sms
+- create topic
+- push notifications
+- set attributes on an sns topic
+- messaging
+- topic management
+- get subscription attributes
+- subscribe
+- publish a message to a topic or endpoint
+- unsubscribe
+- add tags to an sns resource
+- publish up to 10 messages in a batch
+- aws
+- check phone opted out
+- amazon
+- tag resource
+- get topic attributes
+- delete an sns topic
+- list subscriptions
 slug: pub-sub-messaging
 source_filename: pub-sub-messaging.yaml
 source_heading: Capability Spec
@@ -92,7 +92,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon SNS Pub/Sub 
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-sns/refs/heads/main/capabilities/pub-sub-messaging.yaml
 tags:
 - Amazon
-- AWS
 - Messaging
 - Notifications
 - Pub/Sub

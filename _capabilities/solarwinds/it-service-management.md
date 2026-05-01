@@ -30,32 +30,32 @@ provider_slug: solarwinds
 search_terms:
 - query infrastructure
 - it management
-- database monitoring
-- get incident details
-- infrastructure
-- observability
-- list changes
-- solarwinds
-- list assets
-- ip address management
-- list service desk incidents
-- asset management
-- get incident
-- itsm
-- service desk
-- create incident
-- application monitoring
-- list service requests
-- list change requests
-- list hardware assets
-- list incidents
-- incident management
-- network monitoring
-- change management
-- query orion infrastructure data via swql
-- create a new incident
 - service request management
+- network monitoring
+- create incident
+- ip address management
+- asset management
+- list service desk incidents
+- list assets
+- get incident details
+- list incidents
+- itsm
+- solarwinds
+- create a new incident
+- query orion infrastructure data via swql
+- application monitoring
+- database monitoring
+- infrastructure
+- list service requests
+- service desk
+- list hardware assets
+- incident management
+- list changes
+- list change requests
+- change management
+- observability
 - log management
+- get incident
 slug: it-service-management
 source_filename: it-service-management.yaml
 source_heading: Capability Spec

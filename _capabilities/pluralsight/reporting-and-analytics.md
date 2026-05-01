@@ -63,42 +63,42 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- download a course usage report as csv
-- query content progress
-- courses
 - analytics
-- video training
-- learning
-- course usage reports as csv downloads (legacy rest, deprecated)
-- query course daily usage
-- download user report
+- download course completion report
 - download course usage report
-- learning progress
-- download a course completion report as csv. deprecated - migrate to graphql.
-- download a user report as csv. deprecated - migrate to graphql.
+- download a course usage report as csv
+- track user course progress and completion status
+- course completion reports as csv downloads (legacy rest, deprecated)
+- education
 - user course progress including completion status and viewing history
+- download a user report as csv
+- technology
+- download a course completion report as csv
+- download a course completion report as csv. deprecated - migrate to graphql.
+- query course progress
+- download user report
+- skills assessment
+- retrieve daily course engagement metrics
+- query content progress
+- query course daily usage
+- learning progress
 - daily course engagement metrics and usage statistics
+- course completion
+- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
+- courses
 - track user progress across all content types
 - reporting
-- skills assessment
-- download a user report as csv
-- track user progress across all content types including videos, guides, paths, interactive courses, and projects.
-- query course progress
+- user progress across all content types including videos, guides, paths, and projects
+- user reports as csv downloads (legacy rest, deprecated)
+- engineering metrics
+- learning
+- video training
+- course usage reports as csv downloads (legacy rest, deprecated)
+- download a user report as csv. deprecated - migrate to graphql.
 - retrieve daily course engagement metrics and usage statistics.
 - pluralsight
-- download course completion report
-- track user course progress including completion status and viewing history for video courses.
-- course completion
-- course completion reports as csv downloads (legacy rest, deprecated)
-- download a course completion report as csv
 - download a course usage report as csv. deprecated - migrate to graphql.
-- user reports as csv downloads (legacy rest, deprecated)
-- technology
-- engineering metrics
-- retrieve daily course engagement metrics
-- user progress across all content types including videos, guides, paths, and projects
-- education
-- track user course progress and completion status
+- track user course progress including completion status and viewing history for video courses.
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

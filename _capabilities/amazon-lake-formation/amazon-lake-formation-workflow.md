@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Lake Formation
 provider_slug: amazon-lake-formation
 search_terms:
-- access control
-- retrieves the current data access role for the given resource registered in lake formation.
-- amazon lake formation
-- data lake
 - analytics
-- unified workflow for amazon lake formation resource management
 - data governance
 - workflow
-- resources list resources
-- Administrator
-- aws
 - resources register resource
-- lists the resources registered as managed by lake formation.
-- resources describe resource
-- s3
-- Developer
-- registers an amazon s3 path as a data lake location managed by lake formation.
-- manages resources and configurations
 - integrates api into applications
+- registers an amazon s3 path as a data lake location managed by lake formation.
+- resources describe resource
+- manages resources and configurations
+- access control
+- unified workflow for amazon lake formation resource management
+- resources list resources
+- retrieves the current data access role for the given resource registered in lake formation.
+- lists the resources registered as managed by lake formation.
+- aws
+- amazon lake formation
+- Developer
+- Administrator
+- data lake
+- s3
 slug: amazon-lake-formation-workflow
 source_filename: amazon-lake-formation-workflow.yaml
 source_heading: Capability Spec
@@ -37,7 +37,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lake Formation Workf
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lake-formation/refs/heads/main/capabilities/amazon-lake-formation-workflow.yaml
 tags:
 - Amazon Lake Formation
-- AWS
 - Workflow
 tools:
 - description: Registers an Amazon S3 path as a data lake location managed by Lake Formation.

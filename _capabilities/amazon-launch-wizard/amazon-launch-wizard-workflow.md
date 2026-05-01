@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon Launch Wizard
 provider_slug: amazon-launch-wizard
 search_terms:
-- deployments create deployment
-- sql server
-- deployments get deployment
-- deployment
-- returns information about the deployment.
-- unified workflow for amazon launch wizard resource management
 - workflow
-- amazon launch wizard
-- Administrator
-- manages resources and configurations
-- sap
-- creates a deployment for the given workload.
-- aws
-- lists the deployments that have been created.
-- Developer
-- integrates api into applications
 - deployments list deployments
+- aws
+- amazon launch wizard
+- manages resources and configurations
+- deployments get deployment
+- sap
+- lists the deployments that have been created.
 - enterprise applications
+- creates a deployment for the given workload.
+- integrates api into applications
+- sql server
+- deployment
+- deployments create deployment
+- returns information about the deployment.
+- Developer
+- Administrator
+- unified workflow for amazon launch wizard resource management
 slug: amazon-launch-wizard-workflow
 source_filename: amazon-launch-wizard-workflow.yaml
 source_heading: Capability Spec
@@ -36,7 +36,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Launch Wizard Workfl
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-launch-wizard/refs/heads/main/capabilities/amazon-launch-wizard-workflow.yaml
 tags:
 - Amazon Launch Wizard
-- AWS
 - Workflow
 tools:
 - description: Creates a deployment for the given workload.

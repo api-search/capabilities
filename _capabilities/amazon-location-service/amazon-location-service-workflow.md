@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
-- unified workflow for amazon location service resource management
-- map resources describe map
-- map resources list maps
-- workflow
-- Administrator
 - lists map resources in your aws account.
-- geocoding
-- aws
-- location
-- Developer
-- retrieves the map resource details.
-- creates a map resource in your aws account.
-- maps
+- unified workflow for amazon location service resource management
 - routing
-- map resources create map
+- workflow
 - amazon location service
-- geofencing
-- manages resources and configurations
 - integrates api into applications
+- maps
+- location
+- retrieves the map resource details.
+- map resources list maps
+- manages resources and configurations
+- geocoding
+- map resources create map
+- map resources describe map
+- geofencing
+- aws
+- creates a map resource in your aws account.
+- Developer
+- Administrator
 slug: amazon-location-service-workflow
 source_filename: amazon-location-service-workflow.yaml
 source_heading: Capability Spec
@@ -37,7 +37,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Location Service Wor
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-location-service/refs/heads/main/capabilities/amazon-location-service-workflow.yaml
 tags:
 - Amazon Location Service
-- AWS
 - Workflow
 tools:
 - description: Creates a map resource in your AWS account.

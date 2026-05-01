@@ -10,11 +10,11 @@ provider_name: Apache Helix
 provider_slug: apache-helix
 search_terms:
 - apache
-- cluster management
-- open source
-- distributed systems
 - partitioning
+- open source
 - replication
+- distributed systems
+- cluster management
 slug: helix-cluster-management
 source_filename: helix-cluster-management.yaml
 source_heading: Capability Spec

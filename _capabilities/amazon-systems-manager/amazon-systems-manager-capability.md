@@ -12,7 +12,6 @@ search_terms:
 - operations
 - management
 - automation
-- aws
 slug: amazon-systems-manager-capability
 source_filename: amazon-systems-manager-capability.yaml
 source_heading: Capability Spec

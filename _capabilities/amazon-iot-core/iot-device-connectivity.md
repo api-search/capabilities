@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Core
 provider_slug: amazon-iot-core
 search_terms:
-- amazon iot core create thing
-- amazon iot core attach policy
-- amazon iot core list things
-- attach policy
-- amazon iot core delete thing
-- message routing
-- delete thing
-- iot
-- amazon iot core resources
-- amazon iot core get thing
-- create topic rule
-- amazon iot core list rules
-- IoT Developer
-- aws
-- amazon iot core create topic rule
-- create policy
-- list things
 - get thing
-- amazon iot core create policy
-- managed cloud service for iot device connectivity and message routing.
+- amazon iot core delete thing
 - create thing
+- message routing
+- amazon iot core create policy
+- list things
+- create policy
+- mqtt
+- iot
+- delete thing
+- amazon iot core create topic rule
+- attach policy
 - manages amazon iot core resources and operations
 - device management
-- Solutions Architect
-- mqtt
+- IoT Developer
+- managed cloud service for iot device connectivity and message routing.
 - list rules
+- amazon iot core create thing
+- amazon iot core resources
+- amazon iot core get thing
+- Solutions Architect
+- aws
+- amazon iot core list things
+- amazon iot core list rules
+- create topic rule
+- amazon iot core attach policy
 slug: iot-device-connectivity
 source_filename: iot-device-connectivity.yaml
 source_heading: Capability Spec
@@ -51,7 +51,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Core - Iot D
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-core/refs/heads/main/capabilities/iot-device-connectivity.yaml
 tags:
 - IoT
-- AWS
 - Device Management
 - MQTT
 - Message Routing

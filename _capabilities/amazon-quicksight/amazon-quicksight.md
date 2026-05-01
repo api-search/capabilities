@@ -21,22 +21,22 @@ personas: []
 provider_name: Amazon QuickSight
 provider_slug: amazon-quicksight
 search_terms:
-- cloud operations
-- amazon quicksight resources
-- machine learning
-- dashboards
-- aws cloud resource management
-- list resources
-- bi
-- automation workflow for amazon quicksight
 - engineer managing amazon quicksight resources
+- list resources
+- cloud operations
 - analytics
-- business intelligence
 - aws
-- reporting
-- visualization
-- amazon quicksight
+- bi
+- machine learning
+- business intelligence
 - list amazon quicksight resources
+- amazon quicksight
+- reporting
+- aws cloud resource management
+- dashboards
+- amazon quicksight resources
+- automation workflow for amazon quicksight
+- visualization
 slug: amazon-quicksight
 source_filename: amazon-quicksight.yaml
 source_heading: Capability Spec
@@ -45,7 +45,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Quicksight Operation
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-quicksight/refs/heads/main/capabilities/amazon-quicksight.yaml
 tags:
 - Amazon Quicksight
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Quicksight resources

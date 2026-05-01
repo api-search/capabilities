@@ -22,7 +22,6 @@ implementations:
   provider_slug: amazon-ecr
   tags:
   - Amazon ECR
-  - AWS
   - Containers
   - Container Registry
   tool_count: 6

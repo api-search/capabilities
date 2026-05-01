@@ -52,54 +52,54 @@ personas:
 provider_name: BeyondTrust
 provider_slug: beyondtrust
 search_terms:
-- list secrets stored in beyondtrust secrets safe
-- retrieve credentials for an approved privileged access request
-- create an access request
-- security
-- secrets management
-- zero trust
-- just in time access
-- get request credentials
-- list managed accounts
-- delete a secret
-- list requests
-- delete request
-- security team member managing privileged access policies and requests
-- privileged account discovery
-- create request
-- managed system discovery
-- credential retrieval for approved requests
-- list all active privileged access requests
-- compliance
-- create secret
 - devops engineer
-- get credentials for approved request
-- security engineer
-- devops engineer retrieving secrets and credentials for ci/cd pipelines
-- store a new secret in secrets safe
-- access request management
-- secure storage and retrieval of secrets and credentials
-- list secrets
-- just-in-time access to privileged accounts on managed systems
-- credentials
-- secrets
-- list access requests
-- create a just-in-time access request for a privileged account
-- cancel and delete an access request
-- get a secret value
-- access management
-- list systems registered in password safe
-- individual secret operations
-- get secret
-- access
-- privileged access
-- list privileged accounts available for just-in-time access
-- beyondtrust
 - create a new secret
-- delete secret
+- delete request
+- managed system discovery
+- delete a secret
+- cancel and delete an access request
+- get credentials for approved request
 - list managed systems
+- get a secret value
+- retrieve credentials for an approved privileged access request
+- list systems registered in password safe
+- get request credentials
+- devops engineer retrieving secrets and credentials for ci/cd pipelines
+- secrets management
+- secure storage and retrieval of secrets and credentials
 - privileged access management
+- just-in-time access to privileged accounts on managed systems
+- list requests
+- security engineer
+- create request
+- credential retrieval for approved requests
+- access management
+- secrets
+- privileged access
+- create an access request
+- privileged account discovery
+- get secret
+- list secrets stored in beyondtrust secrets safe
+- beyondtrust
+- security team member managing privileged access policies and requests
+- just in time access
 - retrieve a specific secret value from secrets safe
+- access
+- credentials
+- individual secret operations
+- access request management
+- list managed accounts
+- compliance
+- create a just-in-time access request for a privileged account
+- list privileged accounts available for just-in-time access
+- list access requests
+- list all active privileged access requests
+- delete secret
+- store a new secret in secrets safe
+- security
+- list secrets
+- zero trust
+- create secret
 slug: privileged-access-management
 source_filename: privileged-access-management.yaml
 source_heading: Capability Spec

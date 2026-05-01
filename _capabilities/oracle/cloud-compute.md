@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- update instance details
-- update image
-- create a custom image from an instance
-- list console connections
-- get details of a specific image
-- list vnic attachments
-- infrastructure
-- instance action
-- create a custom image
-- saas
-- manage compute images
-- get image
-- get details of a specific instance
-- launch instance
-- list compute images
-- list volume attachments
-- launch a new compute instance
-- list instances
-- enterprise
-- list instance console connections
-- oracle
-- list compute instances in a compartment
-- terminate an instance
-- list shapes
-- get instance
-- list images
-- manage a specific image
-- manage a specific compute instance
-- update instance
-- delete image
-- get image details
-- database
-- compute
-- list vnic attachments in a compartment
-- create image
-- update image details
-- cloud
-- perform an action on an instance (start, stop, reset)
-- get instance details
-- list available compute shapes
-- terminate instance
-- list volume attachments in a compartment
-- delete a custom image
 - manage compute instances
+- list vnic attachments
+- list instance console connections
+- list available compute shapes
+- instance action
+- update instance details
+- launch instance
+- perform an action on an instance (start, stop, reset)
+- list volume attachments in a compartment
+- compute
+- manage compute images
+- update image
+- cloud
+- terminate instance
+- list shapes
+- list console connections
+- get image
+- database
+- delete a custom image
+- terminate an instance
+- get details of a specific image
+- manage a specific compute instance
+- get instance details
+- create a custom image from an instance
+- list instances
+- manage a specific image
+- saas
+- get details of a specific instance
+- infrastructure
+- get instance
+- create image
+- get image details
+- enterprise
+- create a custom image
+- list compute instances in a compartment
+- update instance
+- list vnic attachments in a compartment
+- launch a new compute instance
+- delete image
+- update image details
+- list compute images
+- list images
+- list volume attachments
+- oracle
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

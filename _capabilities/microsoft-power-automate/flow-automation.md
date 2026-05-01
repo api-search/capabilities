@@ -39,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- Platform Administrator
-- get details of a specific connector
-- rpa
-- manages environments, connectors, and permissions
-- list all environments
-- automation
-- create a new automation flow
-- microsoft power automate
-- flow management
-- list environments
-- turn off flow
-- get connector
-- stop/deactivate a flow
-- business process
-- workflow
-- flow lifecycle management
-- creating, running, and managing automation flows
-- list connectors
-- managing environments and available connectors
 - list all power automate environments
-- power platform
-- environment management
+- update a flow
+- stop/deactivate a flow
 - update a flow's properties
-- delete flow
-- low-code
-- get details of a specific flow
+- list connectors
+- delete a flow
 - list available connectors in an environment
 - list flows
-- list flows in an environment
-- create flow
-- update a flow
-- get flow details
-- start/activate a flow
-- turn on flow
-- delete a flow
-- update flow
-- connector management
-- Automation Engineer
+- get details of a specific connector
+- create a new automation flow
+- power platform
+- workflow
+- get connector
+- creating, running, and managing automation flows
+- list environments
 - integration
-- get flow
+- delete flow
+- create flow
+- flow management
+- flow lifecycle management
+- turn on flow
+- start/activate a flow
 - manage flows, environments, and connectors
+- get flow
+- automation
+- business process
 - microsoft
+- get flow details
+- Automation Engineer
 - create a flow
+- low-code
+- list flows in an environment
+- connector management
+- get details of a specific flow
+- microsoft power automate
+- manages environments, connectors, and permissions
+- managing environments and available connectors
+- turn off flow
+- list all environments
+- rpa
+- environment management
+- update flow
 - creates and manages automation flows
+- Platform Administrator
 slug: flow-automation
 source_filename: flow-automation.yaml
 source_heading: Capability Spec

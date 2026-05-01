@@ -9,12 +9,12 @@ personas: []
 provider_name: BBVA
 provider_slug: bbva
 search_terms:
-- financial services
-- banking
-- psd2
-- spain
-- mexico
 - open banking
+- mexico
+- banking
+- financial services
+- spain
+- psd2
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

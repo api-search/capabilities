@@ -27,50 +27,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- edi
-- retrieve outbound edi transactions.
-- login
-- authenticate.
-- edi get code conversions
-- business applications
-- authenticate and obtain session token.
-- erp
-- list inbound transactions.
-- authentication.
-- retrieve inbound edi transactions.
-- isg logout
+- retrieve trading partners.
+- edi get outbound transactions
 - list outbound transactions.
-- inbound edi transactions.
-- get trading partner by id.
-- trading partner management.
-- edi import inbound transaction
-- e-business suite
+- initialize responsibility context.
+- list inbound transactions.
+- list trading partners.
+- isg login
+- edi get inbound transactions
 - get inbound transactions
 - edi get trading partner by id
-- isg initialize
-- outbound edi transactions.
-- retrieve code conversion mappings.
-- isg get service wadl
-- enterprise
-- oracle
-- soa gateway
-- isg invoke rest method
-- import an inbound edi transaction.
-- invoke a rest method on a service.
 - edi get trading partners
-- initialize responsibility context.
-- end the current session.
 - extract an outbound edi transaction.
-- get trading partners
-- get outbound transactions
-- isg login
-- get wadl for a rest service.
-- edi get outbound transactions
-- integration
-- edi get inbound transactions
+- get trading partner by id.
+- retrieve inbound edi transactions.
+- edi import inbound transaction
 - edi extract outbound transaction
-- retrieve trading partners.
-- list trading partners.
+- integration
+- outbound edi transactions.
+- get wadl for a rest service.
+- soa gateway
+- end the current session.
+- login
+- get trading partners
+- business applications
+- import an inbound edi transaction.
+- isg invoke rest method
+- trading partner management.
+- invoke a rest method on a service.
+- retrieve code conversion mappings.
+- e-business suite
+- enterprise
+- edi
+- isg logout
+- get outbound transactions
+- authenticate and obtain session token.
+- authenticate.
+- retrieve outbound edi transactions.
+- edi get code conversions
+- authentication.
+- erp
+- isg initialize
+- inbound edi transactions.
+- isg get service wadl
+- oracle
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml
 source_heading: Capability Spec

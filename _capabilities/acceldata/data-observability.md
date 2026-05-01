@@ -9,12 +9,12 @@ personas: []
 provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
-- data pipeline
-- intelligence
-- observability
 - data quality
-- data observability
+- intelligence
 - ai agents
+- observability
+- data pipeline
+- data observability
 - data management
 slug: data-observability
 source_filename: data-observability.yaml

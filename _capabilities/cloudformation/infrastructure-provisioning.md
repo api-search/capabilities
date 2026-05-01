@@ -75,81 +75,81 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- describe stacks
-- list resources in a stack
-- single resource operations
-- template validation
-- create a cloud resource via cloud control
-- cloudformation
-- iac
-- cancel resource request
-- delete resource
-- validate template
-- get resource request status
-- detect drift on a stack
-- stack management
-- get template
-- execute change set
-- list stacks
-- describe change set
-- update a cloud resource via cloud control
-- list exports
-- get status of a resource operation
-- stack events
-- list resources of a specified type
-- detect stack drift
-- create a change set
-- change set operations
-- cancel an in-progress resource operation
-- cloud control
-- automation
-- list resources
-- describe stack events
-- list resources by type
-- get the template for a stack
-- list stack exports
-- validate a cloudformation template
-- list stack sets
-- update a resource
-- delete a cloud resource via cloud control
-- read a cloud resource via cloud control
-- aws
-- delete a stack
-- detect drift
-- single stack operations
-- describe a stack
-- create a cloud resource
-- describe cloudformation stacks
-- create change set
-- get resource
-- cloud resources
-- create a stack
-- provisioning
-- cloudformation stack operations
-- stack drift detection
-- update stack
-- describe a change set
-- list all stacks
-- get a resource
-- list types
-- update a stack
 - create resource
-- validate a template
-- cloud control resource operations
-- describe stack
-- stack resources
-- delete a resource
-- update resource
-- list stack resources
+- stack drift detection
+- get resource
+- get template
+- stack management
 - create a change set for a stack
-- infrastructure as code
-- create stack
-- delete stack
-- list registry extension types
+- validate a template
+- read a cloud resource via cloud control
+- cloud control resource operations
+- single stack operations
+- stack resources
+- describe a change set
 - single change set
+- create a stack
 - execute a change set
-- get stack events
+- list stack exports
+- detect stack drift
+- update a stack
+- list registry extension types
+- stack events
+- get status of a resource operation
+- create a cloud resource
 - create a cloudformation stack
+- delete stack
+- cloudformation
+- get stack events
+- delete a resource
+- cloudformation stack operations
+- template validation
+- validate template
+- list stack resources
+- cloud control
+- provisioning
+- list resources
+- list stack sets
+- get the template for a stack
+- list resources by type
+- list types
+- list resources of a specified type
+- list stacks
+- change set operations
+- get a resource
+- delete resource
+- automation
+- delete a stack
+- detect drift on a stack
+- describe stack events
+- create a change set
+- describe a stack
+- cloud resources
+- create stack
+- list resources in a stack
+- detect drift
+- describe cloudformation stacks
+- update a cloud resource via cloud control
+- delete a cloud resource via cloud control
+- single resource operations
+- list exports
+- get resource request status
+- aws
+- validate a cloudformation template
+- cancel an in-progress resource operation
+- describe stack
+- iac
+- update resource
+- update stack
+- create change set
+- create a cloud resource via cloud control
+- describe stacks
+- list all stacks
+- infrastructure as code
+- describe change set
+- execute change set
+- cancel resource request
+- update a resource
 slug: infrastructure-provisioning
 source_filename: infrastructure-provisioning.yaml
 source_heading: Capability Spec
@@ -170,7 +170,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AWS Infrastructure 
   \ true\n            idempotent: true\n          call: \"cloud-control.list-resources\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-resource-request-status\n          description: \"Get status of a resource operation\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"cloud-control.get-resource-request-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: cancel-resource-request\n          description: \"Cancel an in-progress resource operation\"\n          hints:\n            readOnly: false\n          call: \"cloud-control.cancel-resource-request\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/cloudformation/refs/heads/main/capabilities/infrastructure-provisioning.yaml
 tags:
-- AWS
 - CloudFormation
 - Cloud Control
 - Infrastructure As Code

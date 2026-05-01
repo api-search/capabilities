@@ -33,40 +33,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- Platform Engineer
-- create eventmesh topic
-- manage topics, subscriptions, and publish cloudevents
-- serverless
-- application developers building event-driven services on eventmesh
-- pub-sub, request-reply, and broadcast messaging patterns
-- list eventmesh topics
-- publish events
-- publish a cloudevent to an eventmesh topic
-- subscribe to eventmesh topics
-- subscribe a consumer to an eventmesh topic
-- list all eventmesh topics
-- manage eventmesh topics
-- create subscription
-- pub-sub
-- create topic
-- platform engineering
 - list topics
+- subscribe to eventmesh topics
+- publish a cloudevent to an eventmesh topic
+- create eventmesh topic
+- publish a cloudevent
 - apache eventmesh
 - list all topics registered in eventmesh
-- publish cloud event
-- messaging
+- list all eventmesh topics
+- publish events
 - manage event subscriptions
-- Developer
-- topic management and event publishing via cloudevents
-- apache
-- subscribe to topic
-- cloudevents
-- event-driven
-- engineers managing the eventmesh cluster and messaging infrastructure
-- open source
-- publish a cloudevent
-- create a new eventmesh topic
+- manage topics, subscriptions, and publish cloudevents
 - publish event
+- subscribe a consumer to an eventmesh topic
+- pub-sub
+- platform engineering
+- application developers building event-driven services on eventmesh
+- cloudevents
+- subscribe to topic
+- create topic
+- Platform Engineer
+- engineers managing the eventmesh cluster and messaging infrastructure
+- topic management and event publishing via cloudevents
+- messaging
+- pub-sub, request-reply, and broadcast messaging patterns
+- apache
+- create a new eventmesh topic
+- create subscription
+- list eventmesh topics
+- publish cloud event
+- open source
+- event-driven
+- manage eventmesh topics
+- Developer
+- serverless
 slug: eventmesh-event-streaming
 source_filename: eventmesh-event-streaming.yaml
 source_heading: Capability Spec

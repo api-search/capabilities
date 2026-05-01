@@ -47,56 +47,56 @@ personas: []
 provider_name: Amazon Well-Architected Tool
 provider_slug: amazon-well-architected-tool
 search_terms:
-- get workload details.
-- get workload
-- create a milestone to capture review state.
-- create a new workload to begin an architectural review.
-- save a milestone snapshot of the current workload review state.
-- list lens reviews for a workload.
-- consolidated governance reports.
-- get details and metadata for a specific workload.
-- create a new workload for architectural review.
-- list lenses
-- Governance Team
-- cloud workload design and best practices
-- architectural review answers.
+- get consolidated report
+- list profiles.
 - list profiles
-- Cloud Architect
-- list answers
-- workload profiles.
-- designs and reviews cloud workload architectures against aws best practices.
+- architecture
+- create a milestone to capture review state.
+- list available aws and custom lenses for architectural reviews.
+- list available lenses.
+- well-architected
+- list workload profiles used to customize reviews.
 - list lens reviews for a specific workload.
 - lens reviews for workloads.
-- lens catalog for architectural reviews.
-- get consolidated report
-- list lens reviews
-- get consolidated architectural review report.
-- create workload
-- workload review milestones.
-- regulatory and organizational policy adherence
-- aws
-- manage workloads under architectural review.
-- list answers for a workload lens review.
-- compliance
-- list all workloads under architectural review in the aws account.
-- list architectural review answers for a workload and lens.
-- list available aws and custom lenses for architectural reviews.
-- single workload management.
 - workloads
-- generate a consolidated architectural review report across workloads.
-- list all workloads in the account.
-- well-architected
+- get details and metadata for a specific workload.
+- Cloud Architect
 - list workloads
-- list workload profiles used to customize reviews.
-- create milestone
-- architecture
-- list profiles.
-- oversight and compliance of cloud architecture decisions
-- best practices
+- lens catalog for architectural reviews.
+- Governance Team
+- workload review milestones.
+- single workload management.
+- consolidated governance reports.
+- list lens reviews for a workload.
 - unified workflow for cloud architects and governance teams to manage workloads, run lens reviews, track answers, create milestones, and generate reports.
-- oversees architectural compliance and risk across the cloud portfolio.
-- list available lenses.
+- cloud workload design and best practices
+- list answers for a workload lens review.
 - cloud governance
+- create workload
+- get workload
+- compliance
+- create milestone
+- list lenses
+- workload profiles.
+- oversees architectural compliance and risk across the cloud portfolio.
+- list lens reviews
+- list all workloads under architectural review in the aws account.
+- get workload details.
+- create a new workload to begin an architectural review.
+- architectural review answers.
+- create a new workload for architectural review.
+- best practices
+- designs and reviews cloud workload architectures against aws best practices.
+- aws
+- get consolidated architectural review report.
+- regulatory and organizational policy adherence
+- oversight and compliance of cloud architecture decisions
+- manage workloads under architectural review.
+- list architectural review answers for a workload and lens.
+- save a milestone snapshot of the current workload review state.
+- generate a consolidated architectural review report across workloads.
+- list answers
+- list all workloads in the account.
 slug: architecture-governance
 source_filename: architecture-governance.yaml
 source_heading: Capability Spec
@@ -112,7 +112,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Well-Archite
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-well-architected-tool/refs/heads/main/capabilities/architecture-governance.yaml
 tags:
 - Architecture
-- AWS
 - Cloud Governance
 - Well-Architected
 - Compliance

@@ -10,22 +10,22 @@ personas: []
 provider_name: AWS Lake Formation
 provider_slug: amazon-lakeformation
 search_terms:
-- integrates api into applications
 - databases get database
-- creates a new database in the data catalog.
-- databases list databases
-- databases create database
 - workflow
-- Administrator
-- manages resources and configurations
 - analytics
-- data lake
-- aws
-- lists all the registered databases in the data catalog.
-- Developer
-- governance
 - retrieves the definition of a specified database.
+- lists all the registered databases in the data catalog.
+- aws
+- Developer
+- manages resources and configurations
 - unified workflow for aws lake formation resource management
+- databases create database
+- Administrator
+- integrates api into applications
+- databases list databases
+- creates a new database in the data catalog.
+- data lake
+- governance
 - aws lake formation
 slug: amazon-lakeformation-workflow
 source_filename: amazon-lakeformation-workflow.yaml
@@ -35,7 +35,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: AWS Lake Formation Workflow
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lakeformation/refs/heads/main/capabilities/amazon-lakeformation-workflow.yaml
 tags:
 - AWS Lake Formation
-- AWS
 - Workflow
 tools:
 - description: Creates a new database in the Data Catalog.

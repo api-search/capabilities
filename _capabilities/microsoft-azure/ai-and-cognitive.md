@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cognitive list models
-- openai create chat completion
-- list available ai models
-- create embedding
-- openai create transcription
-- t1
-- openai list deployments
-- create text embeddings
-- openai create speech
-- infrastructure as a service
-- create a text completion
-- list cognitive accounts
-- enterprise
-- generate images from text
-- cloud computing
-- azure
-- api management
-- list available openai models
-- openai create embedding
-- openai list models
-- list model deployments
-- translate audio to english
-- generate speech from text
-- create a chat completion using azure openai
-- model listing
-- create a chat completion
-- cognitive services
-- openai create completion
-- ai
-- cognitive list accounts
-- cloud
-- embedding operations
-- chat completion operations
-- create chat completion
-- openai
-- list cognitive services accounts
-- openai create translation
 - platform as a service
-- transcribe audio to text
+- openai create completion
+- create text embeddings
+- cognitive list models
+- api management
 - openai create image
 - cognitive services accounts
+- list model deployments
+- cognitive list accounts
+- openai create chat completion
+- generate speech from text
+- list cognitive accounts
+- transcribe audio to text
+- cloud
+- embedding operations
+- cognitive services
+- infrastructure as a service
+- create chat completion
+- create a chat completion using azure openai
+- openai
+- ai
+- create a text completion
 - list openai models
+- chat completion operations
+- generate images from text
+- create embedding
+- list cognitive services accounts
+- openai create speech
+- t1
+- openai list models
+- enterprise
+- openai create translation
+- translate audio to english
+- openai create embedding
+- model listing
+- list available openai models
+- create a chat completion
+- cloud computing
+- openai create transcription
+- openai list deployments
+- list available ai models
+- azure
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

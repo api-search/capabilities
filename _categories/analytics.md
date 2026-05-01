@@ -71,7 +71,6 @@ implementations:
   - SQL
   - Analytics
   - Serverless
-  - AWS
   tool_count: 10
 - capability_name: Amazon Clean Rooms Secure Data Collaboration
   capability_slug: secure-data-collaboration
@@ -97,7 +96,6 @@ implementations:
   provider_slug: amazon-redshift
   tags:
   - Amazon
-  - AWS
   - Analytics
   - Data Warehouse
   - SQL

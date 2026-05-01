@@ -58,40 +58,39 @@ personas: []
 provider_name: Amazon EventBridge Scheduler
 provider_slug: amazon-eventbridge-scheduler
 search_terms:
-- scheduling
-- GetScheduleGroup
-- serverless
-- amazon web services
-- amazon eventbridge scheduler untagresource
-- amazon eventbridge scheduler deleteschedulegroup
-- amazon eventbridge scheduler listschedules
-- fully managed scheduling service for running tasks at scale
-- GetSchedule
-- amazon eventbridge scheduler listschedulegroups
-- amazon eventbridge scheduler createschedule
-- amazon eventbridge scheduler getschedule
-- CreateSchedule
-- ListSchedules
-- amazon eventbridge scheduler createschedulegroup
-- CreateScheduleGroup
-- aws
-- DeleteSchedule
-- UpdateSchedule
-- TagResource
-- DeleteScheduleGroup
-- amazon eventbridge scheduler getschedulegroup
-- amazon eventbridge scheduler listtagsforresource
-- unified capability for managing amazon eventbridge scheduler resources. combines amazon eventbridge scheduler apis for devops engineer workflows in task scheduling.
-- amazon eventbridge scheduler deleteschedule
-- ListTagsForResource
-- UntagResource
-- cron
-- amazon eventbridge scheduler tagresource
-- event-driven
 - amazon eventbridge scheduler updateschedule
+- amazon eventbridge scheduler createschedule
+- fully managed scheduling service for running tasks at scale
+- amazon eventbridge scheduler createschedulegroup
 - developers building applications using amazon eventbridge scheduler
-- ListScheduleGroups
+- amazon eventbridge scheduler listschedulegroups
+- amazon eventbridge scheduler deleteschedulegroup
+- DeleteScheduleGroup
+- amazon eventbridge scheduler deleteschedule
+- amazon eventbridge scheduler tagresource
+- unified capability for managing amazon eventbridge scheduler resources. combines amazon eventbridge scheduler apis for devops engineer workflows in task scheduling.
+- GetScheduleGroup
+- UntagResource
+- amazon eventbridge scheduler getschedulegroup
+- DeleteSchedule
+- ListSchedules
+- CreateSchedule
+- CreateScheduleGroup
+- amazon eventbridge scheduler untagresource
+- cron
+- TagResource
+- amazon web services
 - operations teams managing amazon eventbridge scheduler infrastructure
+- scheduling
+- UpdateSchedule
+- ListScheduleGroups
+- ListTagsForResource
+- amazon eventbridge scheduler listschedules
+- event-driven
+- amazon eventbridge scheduler listtagsforresource
+- GetSchedule
+- serverless
+- amazon eventbridge scheduler getschedule
 slug: amazon-eventbridge-scheduler-capability
 source_filename: amazon-eventbridge-scheduler-capability.yaml
 source_heading: Capability Spec

@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- model details.
-- cancel message batch
-- model discovery.
-- list batches
-- count message tokens.
-- machine learning
 - list models
-- count message tokens
-- create a message batch.
-- send a message to claude and receive a response.
-- list available claude models.
-- generative ai
-- get model
-- count tokens
-- message operations.
-- list all message batches.
-- create message
-- count tokens in a message.
+- create batch
+- delete a batch.
 - create a batch of message requests.
 - create message batch
+- model details.
+- get batch
+- get model metadata.
+- cancel message batch
+- create a message.
+- get model
+- list available models.
+- count message tokens.
+- create a message batch.
+- claude
+- delete message batch
 - artificial intelligence
-- create batch
-- chatbot
+- list all message batches.
+- ai
+- get batch status.
+- individual batch management.
+- count message tokens
+- message operations.
+- send a message to claude and receive a response.
+- delete batch
+- model discovery.
+- list batches
+- count tokens
+- machine learning
 - natural language processing
-- list message batches
-- list message batches.
+- count tokens in a message.
+- delete a completed batch.
+- messaging
+- token counting.
+- cancel an in-progress batch.
+- generative ai
+- get completed batch results.
+- retrieve message batch
+- chatbot
 - get message batch status and details.
 - large language models
-- retrieve message batch results
-- list available models.
-- conversational ai
-- messaging
-- get batch status.
 - anthropic
-- cancel an in-progress batch.
-- get completed batch results.
-- delete a completed batch.
-- individual batch management.
-- token counting.
-- claude
+- list message batches
+- list available claude models.
+- conversational ai
+- retrieve message batch results
 - batch management.
-- ai
-- retrieve message batch
-- get batch
-- delete a batch.
-- delete message batch
-- create a message.
-- get model metadata.
-- delete batch
+- create message
+- list message batches.
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

@@ -15,17 +15,17 @@ provider_name: Amazon Shield
 provider_slug: amazon-shield
 search_terms:
 - cloud operations
-- list amazon shield resources
-- aws cloud resource management
 - list resources
-- automation workflow for amazon shield
+- aws
 - security
+- list amazon shield resources
+- automation workflow for amazon shield
+- amazon shield resources
+- ddos protection
 - amazon shield
 - engineer managing amazon shield resources
-- aws
-- ddos protection
+- aws cloud resource management
 - networking
-- amazon shield resources
 slug: amazon-shield
 source_filename: amazon-shield.yaml
 source_heading: Capability Spec
@@ -34,7 +34,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Shield Operations\n 
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-shield/refs/heads/main/capabilities/amazon-shield.yaml
 tags:
 - Amazon Shield
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Shield resources

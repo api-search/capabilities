@@ -19,58 +19,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- real-time communication
-- serverless
-- security
-- images list variants
-- list all videos.
-- edge
-- images
-- images create direct upload
-- media
-- video
-- cloudflare
-- delete a video.
-- list live streaming inputs.
-- list image variants.
-- dns
-- edge computing
-- object storage
-- artificial intelligence
-- get image details.
-- list images
-- stream create direct upload
-- upload a video from url.
-- video management.
-- get video details.
-- create a direct upload url for images.
-- images list images
-- stream get video
-- stream upload video
-- web performance
-- cdn
-- ai gateway
-- containers
-- stream delete video
-- create a live streaming input.
 - stream list videos
-- list all images.
-- list videos.
-- create a direct upload url.
-- list images.
-- upload an image.
-- delete an image.
+- list all videos.
+- get video details.
+- get image details.
 - api gateway
+- containers
+- dns
+- images upload image
+- media
+- edge
 - cloud
+- images list variants
+- list videos
+- stream create direct upload
+- list videos.
+- video
+- list all images.
+- artificial intelligence
+- real-time communication
+- images get image
+- delete a video.
+- images
+- images list images
+- object storage
+- web performance
+- video management.
+- list live streaming inputs.
+- images create direct upload
+- ai gateway
+- delete an image.
+- upload a video from url.
+- stream upload video
+- create a direct upload url for images.
 - stream create live input
+- cloudflare
+- create a direct upload url.
 - stream list live inputs
+- edge computing
+- security
+- list image variants.
+- image management.
+- list images
 - platform
 - images delete image
-- image management.
+- stream delete video
+- cdn
 - ddos protection
-- list videos
-- images upload image
-- images get image
+- upload an image.
+- serverless
+- create a live streaming input.
+- list images.
+- stream get video
 slug: media-and-content
 source_filename: media-and-content.yaml
 source_heading: Capability Spec

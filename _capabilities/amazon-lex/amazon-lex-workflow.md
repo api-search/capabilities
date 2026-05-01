@@ -10,20 +10,20 @@ personas: []
 provider_name: Amazon Lex
 provider_slug: amazon-lex
 search_terms:
-- provides metadata information about a bot.
-- unified workflow for amazon lex resource management
-- bots list bots
-- creates an amazon lex conversational bot.
 - workflow
-- Administrator
-- bots describe bot
-- manages resources and configurations
 - gets a list of available bots.
 - aws
+- manages resources and configurations
+- unified workflow for amazon lex resource management
 - amazon lex
-- Developer
-- bots create bot
+- bots list bots
 - integrates api into applications
+- bots create bot
+- bots describe bot
+- provides metadata information about a bot.
+- Developer
+- Administrator
+- creates an amazon lex conversational bot.
 slug: amazon-lex-workflow
 source_filename: amazon-lex-workflow.yaml
 source_heading: Capability Spec
@@ -32,7 +32,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lex Workflow\n  desc
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lex/refs/heads/main/capabilities/amazon-lex-workflow.yaml
 tags:
 - Amazon Lex
-- AWS
 - Workflow
 tools:
 - description: Creates an Amazon Lex conversational bot.

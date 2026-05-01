@@ -11,35 +11,35 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- get details about multiple findings
-- security
-- amazon
-- devsecops
-- batch get findings
-- get security metrics summary
-- sast
-- aws
-- list scans
-- get scan
-- DevSecOps Engineer
-- code analysis
-- get security findings from a scan
-- get metrics summary
-- get findings
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
-- create scan
-- list findings by account
-- Developer
-- create a new security scan
-- Security Engineer
-- security engineer persona.
-- list findings across all scans in the account
-- developer persona.
-- devsecops engineer persona.
 - get details about a security scan
+- Developer
+- batch get findings
+- list scans
+- create a new security scan
 - list security scans
-- developer tools
+- sast
+- get scan
+- Security Engineer
+- code analysis
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vu
+- get metrics summary
+- get security metrics summary
+- list findings across all scans in the account
+- DevSecOps Engineer
+- security engineer persona.
+- developer persona.
+- create scan
+- get findings
+- get security findings from a scan
+- aws
+- security
 - unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
+- amazon
+- list findings by account
+- developer tools
+- devsecops engineer persona.
+- get details about multiple findings
+- devsecops
 slug: amazon-codeguru-security-security-scanning
 source_filename: amazon-codeguru-security-security-scanning.yaml
 source_heading: Capability Spec
@@ -50,7 +50,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon CodeGuru Security Ap
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-codeguru-security/refs/heads/main/capabilities/amazon-codeguru-security-security-scanning.yaml
 tags:
 - Amazon
-- AWS
 - Security
 - SAST
 - Code Analysis

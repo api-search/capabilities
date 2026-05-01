@@ -10,27 +10,27 @@ personas: []
 provider_name: AppyWay
 provider_slug: appyway
 search_terms:
-- checks real-time traffic congestion and flow data for route planning
-- manages fleet routing and parking compliance using kerbside data
-- finds available parking spaces near a location using appyway real-time data
-- traffic management
-- real-time data on parking space availability
-- find available parking
-- smart parking
-- parking
-- find and route to available parking using real-time appyway data
-- appyway
-- smart cities
-- check traffic congestion
-- finds available parking and avoids congestion zones
-- traffic
-- list kerbside locations
-- location data for parking bays with restrictions and charging
 - urban mobility
-- uses traffic and parking data for urban mobility planning
+- find and route to available parking using real-time appyway data
+- traffic
+- checks real-time traffic congestion and flow data for route planning
+- smart parking
+- finds available parking and avoids congestion zones
+- find available parking
+- manages fleet routing and parking compliance using kerbside data
+- check traffic congestion
+- parking
+- finds available parking spaces near a location using appyway real-time data
 - lists kerbside parking locations with restrictions and ev charging availability
+- uses traffic and parking data for urban mobility planning
 - real-time and historical traffic flow data
+- appyway
+- real-time data on parking space availability
+- list kerbside locations
 - ev charging
+- smart cities
+- location data for parking bays with restrictions and charging
+- traffic management
 slug: smart-parking
 source_filename: smart-parking.yaml
 source_heading: Capability Spec

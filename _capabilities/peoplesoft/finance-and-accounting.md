@@ -67,50 +67,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- accounts payable vouchers
-- crm
-- approve, deny, or push back a finance approval request.
-- erp
-- hcm
-- list analytics reports
-- general ledger
-- peoplesoft
-- retrieve accounts receivable items.
-- list ar items
-- enterprise software
-- retrieve accounts payable vouchers.
-- list vouchers
-- performance analytics reports
 - finance approval requests
+- performance analytics reports
+- list forecasts
+- campus solutions
+- list journal entries
+- retrieve general ledger journal entries.
+- expense reports
+- peopletools platform services.
+- forecast data and projections
+- finance
+- general ledger journal entries
+- list pending approvals
+- approve, deny, or push back a finance approval request.
+- budget definitions and data
+- crm
+- forecasting
+- peoplesoft
+- accounting
+- retrieve pending finance approval requests.
 - campus solutions.
 - financial and supply chain management.
-- list journal entries
-- accounting
-- retrieve expense reports.
-- retrieve general ledger journal entries.
-- accounts receivable items
-- finance
-- campus solutions
-- budget definitions and data
-- retrieve budget definitions and data.
-- individual approval operations
-- list pending approvals
+- list analytics reports
 - list expense reports
-- forecast data and projections
-- process approval
-- supply chain management
-- peopletools platform services.
-- list budgets
-- retrieve performance analytics reports.
+- list vouchers
 - human capital management.
-- retrieve pending finance approval requests.
+- list ar items
+- general ledger
+- list budgets
+- retrieve accounts payable vouchers.
+- supply chain management
 - budgeting
+- retrieve expense reports.
+- hcm
 - financial management
-- general ledger journal entries
-- expense reports
+- individual approval operations
+- retrieve performance analytics reports.
+- retrieve accounts receivable items.
+- enterprise software
+- erp
 - retrieve forecast data and projections.
-- list forecasts
-- forecasting
+- retrieve budget definitions and data.
+- accounts receivable items
+- accounts payable vouchers
+- process approval
 slug: finance-and-accounting
 source_filename: finance-and-accounting.yaml
 source_heading: Capability Spec

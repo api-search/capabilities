@@ -34,45 +34,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
+- manages email campaigns, automations, and contact segmentation
+- Account Manager
+- Marketing Manager
+- email, sms, and multi-channel marketing automation
+- get deal
+- activecampaign
+- builds integrations, automation workflows, and uses the api directly
+- Growth Engineer
 - tracks deals, manages accounts, and uses crm features
-- customer experience
-- Sales Representative
-- create account
+- create a new sales deal in activecampaign crm
 - crm
-- create a new deal
-- list all sales deals in activecampaign crm
-- deals
+- email marketing
 - create a new company account in activecampaign crm
-- Email Marketer
+- retrieve a specific deal by id
+- Revenue Operations
+- create a new account
+- customer experience
+- create deal
 - list accounts
 - crm, pipeline management, and revenue operations
-- Revenue Operations
-- activecampaign
-- manages email campaigns, automations, and contact segmentation
-- company account management
-- Marketing Manager
-- create a new sales deal in activecampaign crm
-- get deal
-- list all accounts
-- Account Manager
-- create deal
-- email marketing
-- retrieve a specific deal by id
-- sales deal management
-- manage sales pipeline, deals, accounts, and tasks
 - marketing automation
-- sales
-- list all deals
-- create a new account
-- Growth Engineer
-- builds integrations, automation workflows, and uses the api directly
+- sales deal management
+- list all accounts
 - cross-channel contact engagement and personalization
-- orchestrate contact journeys, campaigns, automations, and list management
-- accounts
-- list deals
-- list all company accounts in activecampaign crm
+- create account
 - sales automation
-- email, sms, and multi-channel marketing automation
+- Email Marketer
+- list all sales deals in activecampaign crm
+- manage sales pipeline, deals, accounts, and tasks
+- Sales Representative
+- company account management
+- accounts
+- list all deals
+- list all company accounts in activecampaign crm
+- orchestrate contact journeys, campaigns, automations, and list management
+- create a new deal
+- list deals
+- deals
+- sales
 slug: crm-sales
 source_filename: crm-sales.yaml
 source_heading: Capability Spec

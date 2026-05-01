@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaPackage
 provider_slug: amazon-mediapackage
 search_terms:
-- broadcasting
-- createchannel
-- create origin endpoint
-- list harvest jobs
-- manage media processing jobs
-- media
-- developer building media processing applications
-- amazon mediapackage media processing workflow
+- Broadcast Engineer
+- list channels
+- createoriginendpoint
 - list origin endpoints
-- describechannel
-- workflow
+- listoriginendpoints
+- create harvest job
+- broadcasting
+- create channel
+- list harvest jobs
+- describe channel
+- media
 - media processing
+- workflow
+- createharvestjob
+- configure logs
+- describechannel
+- aws media processing and delivery
+- amazon mediapackage media processing workflow
+- create origin endpoint
+- listchannels
+- list jobs
 - configurelogs
 - Media Developer
-- aws
-- list jobs
-- listharvestjobs
-- describe channel
-- listoriginendpoints
-- create channel
-- create harvest job
-- listchannels
-- configure logs
-- Broadcast Engineer
 - engineer managing broadcast media workflows
-- createoriginendpoint
-- list channels
-- aws media processing and delivery
-- createharvestjob
+- developer building media processing applications
+- manage media processing jobs
+- listharvestjobs
+- aws
+- createchannel
 slug: amazon-mediapackage-media-workflow
 source_filename: amazon-mediapackage-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaPackage Workflo
   \      hints:\n        readOnly: true\n        openWorld: true\n      call: mediapackage.describe-channel\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mediapackage/refs/heads/main/capabilities/amazon-mediapackage-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

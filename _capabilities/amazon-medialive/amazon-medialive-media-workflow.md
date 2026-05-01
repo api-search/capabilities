@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaLive
 provider_slug: amazon-medialive
 search_terms:
+- Broadcast Engineer
 - broadcasting
-- describe schedule
-- batch delete
-- manage media processing jobs
-- batch stop
-- accept input device transfer
 - media
-- developer building media processing applications
-- deleteschedule
-- workflow
 - media processing
 - batchupdateschedule
-- Media Developer
-- aws
-- list jobs
-- acceptinputdevicetransfer
-- amazon medialive media processing workflow
-- batchdelete
-- delete schedule
-- Broadcast Engineer
-- batch update schedule
+- workflow
 - cancelinputdevicetransfer
-- batch start
-- describeschedule
-- engineer managing broadcast media workflows
-- batchstop
-- cancel input device transfer
+- amazon medialive media processing workflow
+- batch update schedule
 - aws media processing and delivery
+- acceptinputdevicetransfer
+- batch delete
+- describeschedule
+- cancel input device transfer
+- deleteschedule
+- describe schedule
+- accept input device transfer
+- delete schedule
+- list jobs
+- Media Developer
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- batchstop
+- batchdelete
+- batch start
+- manage media processing jobs
 - batchstart
+- aws
+- batch stop
 slug: amazon-medialive-media-workflow
 source_filename: amazon-medialive-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaLive Workflow\n
   \ false\n        openWorld: true\n      call: medialive.cancel-input-device-transfer\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/capabilities/amazon-medialive-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

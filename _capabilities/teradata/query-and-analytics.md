@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
+- available systems.
+- analytics
+- sql
+- query sessions.
+- execute a sql query against teradata vantage.
 - manage querygrid data fabric infrastructure.
-- execute query
+- create session
+- list available vantage systems.
+- create a new query session on a vantage system.
+- cloud
+- Application Developer
 - list cross-system query summaries from querygrid.
 - teradata
-- executes queries and analyzes data across vantage systems.
-- Platform Administrator
-- analytics
 - list available vantage systems for query execution.
+- executes queries and analyzes data across vantage systems.
+- database
+- Platform Administrator
+- get query status
 - create a query session.
-- data warehousing
-- integrates applications with teradata via rest apis.
-- available systems.
-- sql query execution and session management.
-- machine learning
+- execute query
+- execute sql queries and analytics.
 - Data Analyst
-- list available vantage systems.
-- create session
-- get the status and results of a submitted query.
-- list querygrid queries
-- Application Developer
-- health monitoring and issue detection.
-- data management
+- manages data fabric infrastructure and cross-system connectivity.
+- machine learning
 - list query systems
 - enterprise
-- execute a sql query.
-- get query status
-- system and fabric configuration management.
-- Data Engineer
-- execute sql queries and analytics.
-- create a new query session on a vantage system.
-- database
-- execute a sql query against teradata vantage.
-- query sessions.
-- sql queries.
-- cloud
-- administers querygrid systems, nodes, and software.
-- sql
+- get the status and results of a submitted query.
+- sql query execution and session management.
 - query
-- manages data fabric infrastructure and cross-system connectivity.
+- Data Engineer
+- health monitoring and issue detection.
+- administers querygrid systems, nodes, and software.
+- sql queries.
+- integrates applications with teradata via rest apis.
+- data warehousing
+- data management
+- system and fabric configuration management.
+- list querygrid queries
+- execute a sql query.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

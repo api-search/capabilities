@@ -23,7 +23,6 @@ implementations:
   provider_name: Amazon Incident Manager
   provider_slug: amazon-incident-manager
   tags:
-  - AWS
   - Incident Management
   - DevOps
   - Operations

@@ -10,10 +10,10 @@ provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
 - sentiment analysis
-- economic data
-- stocks
-- market data
 - financial
+- stocks
+- economic data
+- market data
 - technical indicators
 slug: financial-data-analytics
 source_filename: financial-data-analytics.yaml

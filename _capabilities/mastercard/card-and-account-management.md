@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- issue card
-- card issuance and management
-- mastercard
-- account management
-- manage a payment account
-- digital identity
-- payment account management
-- issuers
-- query payment account reference to link tokens to accounts
-- validate account details
-- get billing updates
-- bin lookup
-- submit pan-related event for account level management
-- manage a payment account lifecycle
-- manage account
-- request updated card credentials
-- list bins
-- submit pan event
-- look up bin information
-- get card details
 - payments
-- fraud detection
-- card management
-- look up bin information for a card
-- open banking
-- get account catalog
-- retrieve account catalog data
-- get payment account reference
-- credit cards
-- request updated card credentials for card-on-file
-- financial services
-- create a physical card fulfillment order
-- manage payment account
-- automatic billing updates
-- lookup bin
-- list available mastercard bins
-- issue a new card
+- mastercard
+- issue card
+- manage a payment account
 - create fulfillment order
+- get payment account reference
+- financial services
+- get account catalog
 - validate account
+- fraud detection
+- manage a payment account lifecycle
+- retrieve account catalog data
+- payment account management
+- issue a new card
+- submit pan-related event for account level management
+- bin lookup
+- submit pan event
+- request updated card credentials for card-on-file
+- lookup bin
+- credit cards
+- query payment account reference to link tokens to accounts
+- get card details
+- list bins
+- account management
+- digital identity
+- request updated card credentials
+- automatic billing updates
+- card issuance and management
+- list available mastercard bins
+- issuers
+- manage account
+- validate account details
+- open banking
+- create a physical card fulfillment order
 - issue a new mastercard card
+- card management
+- look up bin information
+- manage payment account
+- look up bin information for a card
+- get billing updates
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MediaTailor
 provider_slug: amazon-mediatailor
 search_terms:
-- broadcasting
-- createchannel
-- manage media processing jobs
-- updatechannel
-- media
-- configurelogsforchannel
-- developer building media processing applications
-- configure logs for playback configuration
-- describechannel
-- workflow
-- createlivesource
-- configure logs for channel
-- configurelogsforplaybackconfiguration
-- media processing
-- Media Developer
-- aws
-- list jobs
-- describe channel
-- amazon mediatailor media processing workflow
-- create channel
-- describelivesource
-- delete channel
-- deletechannel
 - Broadcast Engineer
 - create live source
-- update channel
-- engineer managing broadcast media workflows
+- describe channel
+- broadcasting
+- create channel
+- deletechannel
+- describelivesource
+- media
+- amazon mediatailor media processing workflow
+- media processing
+- delete channel
+- workflow
+- configure logs for playback configuration
+- configure logs for channel
+- describechannel
 - aws media processing and delivery
+- createlivesource
+- list jobs
+- update channel
+- Media Developer
+- engineer managing broadcast media workflows
+- developer building media processing applications
+- manage media processing jobs
+- updatechannel
+- aws
 - describe live source
+- createchannel
+- configurelogsforchannel
+- configurelogsforplaybackconfiguration
 slug: amazon-mediatailor-media-workflow
 source_filename: amazon-mediatailor-media-workflow.yaml
 source_heading: Capability Spec
@@ -52,7 +52,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon MediaTailor Workflow
   \ - name: create-live-source\n      description: CreateLiveSource\n      hints:\n        readOnly: false\n        openWorld: true\n      call: mediatailor.create-live-source\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-mediatailor/refs/heads/main/capabilities/amazon-mediatailor-media-workflow.yaml
 tags:
-- AWS
 - Media
 - Broadcasting
 - Workflow

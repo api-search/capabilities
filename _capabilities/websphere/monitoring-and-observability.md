@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- check if liberty server is ready for traffic
-- get log messages
-- j2ee
-- get was health
-- list batch job instances
-- get batch job instance details
-- health check endpoints
-- get open liberty overall health
-- metrics collection
-- metrics
-- observability
-- get liberty health
-- monitoring
-- get was performance monitoring data
 - list jakarta batch job instances
-- get liberty metrics
-- get log config
-- get liberty log messages
-- performance data
-- get liberty logging configuration
-- get liberty admin metrics
-- microservices
-- get all open liberty metrics
-- list batch jobs
-- get open liberty overall health status
-- middleware
-- batch job monitoring
-- get batch job
 - cloud native
-- application server
-- get was server health status
+- get batch job
+- get log config
+- performance data
+- list batch job instances
 - get was server health
-- ibm websphere
-- enterprise java
-- check if liberty server is alive
-- get recent liberty log messages
-- get readiness
+- get liberty log messages
+- get liberty health
+- check if liberty server is ready for traffic
 - get liveness
 - get all metrics
+- health check endpoints
+- get open liberty overall health status
+- get open liberty overall health
+- get liberty admin metrics
+- middleware
+- get was performance monitoring data
+- get was health
+- get all open liberty metrics
+- j2ee
+- get log messages
+- monitoring
+- application server
+- get was server health status
+- ibm websphere
+- check if liberty server is alive
+- metrics
+- get recent liberty log messages
+- get batch job instance details
+- get readiness
+- enterprise java
+- microservices
 - get performance data
+- get liberty logging configuration
+- observability
 - log management
+- get liberty metrics
+- batch job monitoring
+- list batch jobs
+- metrics collection
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

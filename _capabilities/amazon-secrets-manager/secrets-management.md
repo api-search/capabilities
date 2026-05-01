@@ -46,50 +46,49 @@ personas: []
 provider_name: Amazon Secrets Manager
 provider_slug: amazon-secrets-manager
 search_terms:
-- update the value stored in a secret
-- security
-- create a new secret in amazon secrets manager
-- secret rotation management
-- DevOps Engineer
-- get metadata for a secret
-- amazon secrets manager
-- secret lifecycle management
-- secret value retrieval and update
-- get secret value
-- cancel scheduled deletion and restore a secret
-- get random password
 - put secret value
-- secure storage and access control for sensitive credentials and configuration
-- aws
-- retrieve the current value of a secret
-- engineers who manage application infrastructure and configure secrets rotation and access policies
-- devops
-- Application Developer
-- trigger rotation for a secret
-- create and store a new secret
-- lifecycle management of secrets including rotation, versioning, and audit
-- create secret
-- individual secret management
 - restore secret
-- list all managed secrets
-- get metadata and configuration details of a secret
-- list secrets
-- configuration
-- credentials
-- secrets
-- developers who integrate applications with secrets manager to retrieve credentials at runtime
+- Application Developer
 - schedule a secret for deletion
-- list all secrets stored in amazon secrets manager
-- rotation
-- generate a cryptographically secure random password
-- rotate secret
-- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
-- update the value of a secret
-- retrieve the plaintext value of a secret
-- random password generation
-- delete secret
-- describe secret
 - trigger automatic rotation for a secret
+- get random password
+- secret rotation management
+- rotate secret
+- developers who integrate applications with secrets manager to retrieve credentials at runtime
+- end-to-end secrets lifecycle management including creation, retrieval, rotation, and deletion
+- lifecycle management of secrets including rotation, versioning, and audit
+- individual secret management
+- secrets
+- retrieve the current value of a secret
+- trigger rotation for a secret
+- secure storage and access control for sensitive credentials and configuration
+- credentials
+- cancel scheduled deletion and restore a secret
+- devops
+- get secret value
+- retrieve the plaintext value of a secret
+- create and store a new secret
+- generate a cryptographically secure random password
+- list all secrets stored in amazon secrets manager
+- secret lifecycle management
+- random password generation
+- describe secret
+- amazon secrets manager
+- get metadata for a secret
+- update the value of a secret
+- get metadata and configuration details of a secret
+- secret value retrieval and update
+- delete secret
+- security
+- configuration
+- rotation
+- DevOps Engineer
+- list all managed secrets
+- list secrets
+- engineers who manage application infrastructure and configure secrets rotation and access policies
+- create a new secret in amazon secrets manager
+- create secret
+- update the value stored in a secret
 slug: secrets-management
 source_filename: secrets-management.yaml
 source_heading: Capability Spec

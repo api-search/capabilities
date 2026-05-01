@@ -21,18 +21,18 @@ personas: []
 provider_name: Amazon Route 53 Resolver
 provider_slug: amazon-route53-resolver
 search_terms:
+- engineer managing amazon route53 resolver resources
+- list resources
 - cloud operations
+- aws
 - amazon route53 resolver
 - list amazon route53 resolver resources
-- aws cloud resource management
-- list resources
-- amazon route53 resolver resources
-- aws
 - hybrid cloud
-- dns
-- networking
-- engineer managing amazon route53 resolver resources
 - automation workflow for amazon route53 resolver
+- dns
+- amazon route53 resolver resources
+- aws cloud resource management
+- networking
 slug: amazon-route53-resolver
 source_filename: amazon-route53-resolver.yaml
 source_heading: Capability Spec
@@ -41,7 +41,6 @@ source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Route53 Resolver Ope
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/capabilities/amazon-route53-resolver.yaml
 tags:
 - Amazon Route53 Resolver
-- AWS
 - Cloud Operations
 tools:
 - description: List Amazon Route53 Resolver resources

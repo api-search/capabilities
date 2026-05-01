@@ -96,7 +96,6 @@ implementations:
   provider_slug: amazon-codeguru-security
   tags:
   - Amazon
-  - AWS
   - Security
   - SAST
   - Code Analysis
@@ -125,7 +124,6 @@ implementations:
   provider_name: Amazon IAM Access Analyzer
   provider_slug: amazon-iam-access-analyzer
   tags:
-  - AWS
   - IAM
   - Security
   - Access Control
@@ -142,7 +140,6 @@ implementations:
   tags:
   - Security
   - Vulnerability Management
-  - AWS
   - Compliance
   - Container Security
   tool_count: 8
@@ -155,7 +152,6 @@ implementations:
   provider_slug: amazon-private-ca
   tags:
   - Amazon
-  - AWS
   - PKI
   - Certificate Authority
   - Security
@@ -188,7 +184,6 @@ implementations:
   - Security
   - Compliance
   - CSPM
-  - AWS
   tool_count: 6
 - capability_name: Amazon Security Lake Security Data Lake
   capability_slug: security-data-lake

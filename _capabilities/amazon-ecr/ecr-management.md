@@ -35,36 +35,36 @@ personas: []
 provider_name: Amazon ECR
 provider_slug: amazon-ecr
 search_terms:
-- batchGetImage
-- workflow capability for container registry management.
-- container registry
 - amazon ecr create repository
-- amazon ecr delete repository
-- amazon web services
-- ecr
-- delete repository
-- amazon ecr
-- aws
-- amazon ecr put image
-- amazon ecr describe repositories
-- put image
-- batch get image
-- list images
-- createRepository
-- putImage
+- batchGetImage
+- container registry
 - containers
-- container registry management business domain for amazon ecr.
-- listImages
-- create repository
-- describeRepositories
-- amazon ecr batch get image
-- amazon ecr list images
-- docker
-- oci
+- delete repository
+- workflow capability for container registry management.
 - container images
+- batch get image
+- amazon ecr batch get image
 - deleteRepository
+- amazon ecr
+- amazon ecr delete repository
 - describe repositories
+- put image
+- amazon ecr describe repositories
+- putImage
+- create repository
+- oci
 - engineers managing amazon ecr resources on aws.
+- createRepository
+- amazon web services
+- describeRepositories
+- container registry management business domain for amazon ecr.
+- aws
+- listImages
+- docker
+- list images
+- ecr
+- amazon ecr put image
+- amazon ecr list images
 slug: ecr-management
 source_filename: ecr-management.yaml
 source_heading: Capability Spec
@@ -77,7 +77,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon ECR Containe
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-ecr/refs/heads/main/capabilities/ecr-management.yaml
 tags:
 - Amazon ECR
-- AWS
 - Containers
 - Container Registry
 tools:

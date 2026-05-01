@@ -15,34 +15,34 @@ personas: []
 provider_name: Amazon IoT Greengrass
 provider_slug: amazon-iot-greengrass
 search_terms:
-- extend aws compute and services to edge devices.
-- real-time processing
-- amazon iot greengrass resources
-- amazon iot greengrass describe component
-- get core device
-- list deployments
-- iot
-- machine learning
-- amazon iot greengrass list deployments
 - list components
-- list core devices
-- IoT Developer
-- aws
-- edge computing
-- list component versions
 - describe component
+- amazon iot greengrass list core devices
+- amazon iot greengrass resources
+- iot
+- amazon iot greengrass list deployments
 - amazon iot greengrass get core device
+- device management
+- list core devices
+- extend aws compute and services to edge devices.
+- IoT Developer
+- get core device
+- amazon iot greengrass create deployment
+- real-time processing
+- list deployments
+- machine learning
 - create deployment
 - amazon iot greengrass create component version
-- Edge Computing Engineer
-- amazon iot greengrass create deployment
-- lambda
-- amazon iot greengrass list components
 - manages amazon iot greengrass resources and operations
-- device management
-- amazon iot greengrass list component versions
-- amazon iot greengrass list core devices
+- amazon iot greengrass list components
 - create component version
+- Edge Computing Engineer
+- edge computing
+- aws
+- amazon iot greengrass list component versions
+- lambda
+- amazon iot greengrass describe component
+- list component versions
 slug: edge-device-management
 source_filename: edge-device-management.yaml
 source_heading: Capability Spec
@@ -53,7 +53,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT Greengrass -
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-greengrass/refs/heads/main/capabilities/edge-device-management.yaml
 tags:
 - IoT
-- AWS
 - Edge Computing
 - Lambda
 - Device Management

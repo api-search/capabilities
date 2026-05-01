@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- create a new cryptographic key.
-- verify
 - secret management.
-- key vault
-- security
-- set a secret.
-- secrets management
-- key management
-- list secrets.
-- list certificates.
-- set a secret value.
-- key management.
-- get certificate
-- delete key
-- encrypt
-- list certificates
-- create a new certificate.
-- get a secret value.
-- delete a certificate.
-- get key
-- create certificate
-- encrypt data using a key.
-- get a secret.
-- list cryptographic keys in the vault.
-- cloud security
-- list keys
-- decrypt
-- get a certificate.
-- verify a signature.
-- list keys.
-- create key
-- azure
-- create a key.
-- certificates
-- cryptography
-- delete certificate
-- sign a digest using a key.
-- certificate management.
 - individual key management.
-- list secrets
-- individual secret management.
-- get a key.
-- list secrets in the vault.
-- list certificates in the vault.
-- get key details.
-- get secret
-- delete a key.
-- set secret
-- delete a secret.
-- delete secret
+- get a secret value.
+- list keys
 - decrypt data using a key.
+- create a new certificate.
+- get key
 - sign
+- create a key.
+- get a secret.
+- list secrets in the vault.
+- set a secret.
+- create certificate
+- secrets management
+- create key
+- verify a signature.
+- get a key.
+- list certificates.
+- certificates
+- get a certificate.
+- delete certificate
+- key management
+- encrypt data using a key.
+- delete a key.
+- list certificates
+- get secret
+- key management.
+- create a new cryptographic key.
+- encrypt
+- get key details.
+- list keys.
+- list cryptographic keys in the vault.
+- decrypt
+- get certificate
+- list certificates in the vault.
+- verify
+- key vault
+- cloud security
+- cryptography
+- delete a secret.
+- sign a digest using a key.
+- list secrets.
+- delete secret
+- individual secret management.
+- security
+- delete a certificate.
+- set a secret value.
+- list secrets
+- certificate management.
+- set secret
+- delete key
+- azure
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

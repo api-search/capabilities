@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- order management
-- list field lists
-- get historical data for securities
-- search available bloomberg data fields
-- reference data access
-- historical data access
-- create a bloomberg data request
-- financial analytics
 - get historical end-of-day data
-- data distributions
-- bloomberg
-- list completed data distributions
-- search fields
-- reference data
-- financial data
-- field list management
-- list security universes
-- market data
-- portfolio management
-- list available data catalogs
-- get intraday bars
-- create data request
-- get intraday bar data
+- list universes
 - search instruments
+- reference data
+- bloomberg
 - get catalog
-- create a security universe for data requests
-- get reference data for securities
-- security universe management
-- data catalog browsing
-- get reference data
 - list available bloomberg data catalogs
 - list catalogs
-- get reference data for securities via http api
-- list field lists for data requests
-- get data catalog details
-- create universe
-- list universes
-- search for securities and instruments
-- get historical data
-- trading
+- field list management
+- get reference data
 - list distributions
+- list security universes
+- reference data access
+- market data
+- financial data
+- get reference data for securities via http api
+- get data catalog details
+- create a bloomberg data request
+- list available data catalogs
+- get historical data for securities
+- order management
+- trading
+- get historical data
+- security universe management
+- list completed data distributions
+- list field lists for data requests
+- search available bloomberg data fields
+- portfolio management
+- create a security universe for data requests
+- get reference data for securities
+- get intraday bar data
+- get intraday bars
+- financial analytics
+- data distributions
+- search fields
+- list field lists
+- create universe
+- search for securities and instruments
+- create data request
+- historical data access
+- data catalog browsing
 slug: market-data-and-analytics
 source_filename: market-data-and-analytics.yaml
 source_heading: Capability Spec

@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- amazon ec2 terminate instances
-- amazon ec2
-- createImage
-- describeImages
-- start instances
-- describe images
-- stopInstances
-- deregisterImage
-- amazon ec2 describe amis
-- amazon ec2 start stopped instances
 - runInstances
-- amazon ec2 launch ec2 instances
-- infrastructure
-- terminateInstances
-- amazon ec2 describe ec2 instances
-- amazon ec2 deregister an ami
-- iaas
-- describe instance status
-- describeInstanceStatus
-- run instances
-- startInstances
-- virtual machines
-- aws
-- deregister image
-- engineers managing amazon ec2 resources on aws.
-- amazon ec2 reboot instances
-- cloud computing
-- amazon ec2 stop running instances
-- stop instances
-- cloud compute management business domain for amazon ec2.
-- reboot instances
-- compute
-- create image
-- workflow capability for cloud compute management.
-- describeInstances
-- describe instances
-- terminate instances
-- rebootInstances
-- amazon ec2 create an ami from an instance
 - amazon ec2 describe instance status
+- cloud compute management business domain for amazon ec2.
+- stop instances
+- virtual machines
+- amazon ec2 stop running instances
+- workflow capability for cloud compute management.
+- compute
+- describeImages
+- describe instances
+- describeInstances
+- amazon ec2 reboot instances
+- start instances
+- amazon ec2
+- run instances
+- engineers managing amazon ec2 resources on aws.
+- startInstances
+- terminateInstances
+- deregister image
+- deregisterImage
+- stopInstances
+- amazon ec2 describe ec2 instances
+- amazon ec2 launch ec2 instances
+- rebootInstances
+- describe images
+- amazon ec2 describe amis
+- describeInstanceStatus
+- iaas
+- amazon ec2 start stopped instances
+- infrastructure
+- amazon ec2 terminate instances
+- createImage
+- reboot instances
+- create image
+- terminate instances
+- amazon ec2 create an ami from an instance
+- aws
+- amazon ec2 deregister an ami
+- describe instance status
+- cloud computing
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec
@@ -105,7 +105,6 @@ source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EC2 Cloud Co
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-ec2/refs/heads/main/capabilities/ec2-management.yaml
 tags:
 - Amazon EC2
-- AWS
 - Compute
 - Cloud Computing
 tools:
