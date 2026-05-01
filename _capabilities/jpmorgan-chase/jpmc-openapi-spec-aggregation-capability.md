@@ -2,7 +2,7 @@
 categories: []
 consumed_apis:
 - jpmorgan-chase
-description: A capability that crawls every place a Chase OpenAPI spec might live — GitHub Search across Chase orgs/repos, plus the gateway estate (AWS API Gateway, Kong, Apigee) — and exposes the unified result as REST + MCP + Agent Skills so any developer or agent can discover specs across the whole estate from one tool call.
+description: A capability that crawls every place a Chase OpenAPI spec might live — GitHub Search across Chase orgs/repos, plus AWS API Gateway — and exposes the unified result as REST + MCP + Agent Skills so any developer or agent can discover specs across the whole estate from one tool call.
 layout: capability
 naftiko_layer: service-anchored
 naftiko_partner: Mark McAllister
@@ -19,4 +19,4 @@ search_terms:
 - place
 ---
 
-A capability that crawls every place a Chase OpenAPI spec might live — GitHub Search across Chase orgs/repos, plus the gateway estate (AWS API Gateway, Kong, Apigee) — and exposes the unified result as REST + MCP + Agent Skills so any developer or agent can discover specs across the whole estate from one tool call. His verbatim ask was "Pulling OpenAPIs from GitHub repos, AWS API Gateway, and Kong" — this is the single capability that unifies all four sources behind one discovery interface, callable from any surface his developers reach for (REST tool, IDE-attached MCP, or installed Skill).
+A capability that crawls every place a Chase OpenAPI spec might live — GitHub Search across Chase orgs/repos, plus AWS API Gateway — and exposes the unified result as REST + MCP + Agent Skills so any developer or agent can discover specs across the whole estate from one tool call. His verbatim ask was "Pulling OpenAPIs from GitHub repos and AWS API Gateway" — this is the single capability that unifies both sources behind one discovery interface, callable from any surface his developers reach for (REST tool, IDE-attached MCP, or installed Skill).
