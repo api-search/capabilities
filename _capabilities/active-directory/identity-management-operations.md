@@ -72,58 +72,58 @@ personas: []
 provider_name: Microsoft Active Directory
 provider_slug: active-directory
 search_terms:
-- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
-- service principals
-- conditional access policy automation for zero-trust enforcement
-- list users
-- periodic access reviews and identity risk remediation
-- microsoft entra
-- individual user operations
-- list microsoft entra id users with optional filtering by department, job title, or other attributes
-- unified user, group, and application management for microsoft entra id
+- create a new user account in microsoft entra id with required profile and password settings
+- get user by id or upn
+- application registrations
+- group member management
 - get user
+- signed-in user profile
+- get group
+- periodic access reviews and identity risk remediation
+- get signed-in user profile
+- list microsoft entra id users with optional filtering by department, job title, or other attributes
+- get the signed-in user's microsoft entra profile
+- list microsoft entra id groups — security groups and microsoft 365 groups
+- authorization
+- enterprise it admin managing user accounts, groups, device policies, and access management
+- list applications
+- zero trust
+- list groups
+- list service principals in the microsoft entra tenant
 - individual group operations
 - get details about a specific microsoft entra user by object id or userprincipalname
-- get group
-- signed-in user profile
-- get signed-in user profile
-- create, update, and deactivate user accounts throughout the employee/guest lifecycle
-- active directory
-- user management
-- zero trust
-- IT Administrator
-- group member management
-- get application
-- identity management
-- create user
-- security professional monitoring identity risks, conditional access policies, and audit logs
-- registered and joined device management for compliant device access policies
-- list applications
-- Security Analyst
-- create a new user account in microsoft entra id with required profile and password settings
-- application registrations
 - directory services
-- get details about a specific microsoft entra group including type and membership settings
-- user lifecycle management
-- list group members
-- get me
-- list service principals
-- list service principals in the microsoft entra tenant
-- list microsoft entra id groups — security groups and microsoft 365 groups
-- Identity Engineer
-- group-based access control and app role assignment for resource permissions
-- create group
-- get details about a specific microsoft entra application registration
-- list groups
-- authentication
-- authorization
-- get the signed-in user's microsoft entra profile
-- list direct members of a microsoft entra group
+- conditional access policy automation for zero-trust enforcement
 - group management
-- get user by id or upn
+- Security Analyst
+- group-based access control and app role assignment for resource permissions
+- identity platform engineer managing application registrations, service principals, and oauth2 permission grants
+- list service principals
+- microsoft entra
+- service principals
+- user lifecycle management
+- user management
 - application registration and service principal lifecycle for zero-trust app governance
+- IT Administrator
+- security professional monitoring identity risks, conditional access policies, and audit logs
+- list group members
 - list application registrations in the microsoft entra tenant
-- enterprise it admin managing user accounts, groups, device policies, and access management
+- get details about a specific microsoft entra group including type and membership settings
+- Identity Engineer
+- list users
+- get application
+- get details about a specific microsoft entra application registration
+- individual user operations
+- list direct members of a microsoft entra group
+- unified user, group, and application management for microsoft entra id
+- create user
+- get me
+- registered and joined device management for compliant device access policies
+- authentication
+- create, update, and deactivate user accounts throughout the employee/guest lifecycle
+- identity management
+- active directory
+- create group
 slug: identity-management-operations
 source_filename: identity-management-operations.yaml
 source_heading: Capability Spec

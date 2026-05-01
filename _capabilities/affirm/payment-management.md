@@ -56,61 +56,61 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- payment transaction management.
-- capture a transaction.
-- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
-- promotional messaging.
-- capture transaction
-- checkout session management.
-- specific dispute operations.
-- initiation and management of customer financing sessions.
-- displaying financing terms and promotional messaging to customers.
-- get promo messaging
-- read checkout
-- get dispute details.
-- merchant operations team member managing transaction reconciliation and dispute resolution.
-- transactions
-- submit evidence to contest an affirm payment dispute.
-- submit dispute evidence
-- void an authorized affirm transaction before capture.
-- list all affirm payment transactions for reconciliation.
-- refund a captured affirm transaction partially or fully.
-- authorize an affirm transaction using a checkout token.
-- capture an authorized transaction.
-- authorize a transaction.
-- payment ops
-- refund transaction
-- checkout
-- read a checkout session.
-- disputes
-- list all disputes.
-- refund a captured transaction.
-- create an affirm checkout session.
-- void transaction
-- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
-- merchant engineer
-- authorization, capture, void, and refund of payment transactions.
-- handling of customer chargebacks and disputes.
-- dispute management.
-- read an affirm checkout session by token.
-- authorize transaction
-- list all transactions.
-- create an affirm bnpl checkout session for a customer purchase.
-- get promo
-- refund a transaction.
-- retrieve or update a checkout session.
-- payments
-- list disputes
-- get promotional financing terms.
-- affirm
 - list all affirm payment disputes for a merchant.
 - buy now pay later
-- get affirm promotional financing terms and messaging for a purchase amount.
-- get details of a specific affirm payment dispute.
-- store checkout
-- list transactions
+- get promotional financing terms.
+- handling of customer chargebacks and disputes.
+- read a checkout session.
+- submit evidence to contest an affirm payment dispute.
+- specific dispute operations.
+- displaying financing terms and promotional messaging to customers.
+- initiation and management of customer financing sessions.
+- transactions
+- capture transaction
 - capture an authorized affirm transaction to collect funds.
+- checkout session management.
+- refund a captured transaction.
+- capture a transaction.
+- authorize an affirm transaction using a checkout token.
+- read an affirm checkout session by token.
+- payments
+- merchant engineer
+- disputes
+- list all disputes.
+- get affirm promotional financing terms and messaging for a purchase amount.
+- retrieve or update a checkout session.
+- get promo messaging
+- authorize transaction
+- list transactions
+- store checkout
+- refund a transaction.
+- create an affirm bnpl checkout session for a customer purchase.
+- authorize a transaction.
+- payment ops
+- list all transactions.
+- refund a captured affirm transaction partially or fully.
+- list disputes
+- checkout
+- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- get dispute details.
+- dispute management.
+- void an authorized affirm transaction before capture.
 - get dispute
+- read checkout
+- void transaction
+- promotional messaging.
+- get promo
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- list all affirm payment transactions for reconciliation.
+- authorization, capture, void, and refund of payment transactions.
+- refund transaction
+- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
+- capture an authorized transaction.
+- payment transaction management.
+- get details of a specific affirm payment dispute.
+- create an affirm checkout session.
+- submit dispute evidence
+- affirm
 slug: payment-management
 source_filename: payment-management.yaml
 source_heading: Capability Spec

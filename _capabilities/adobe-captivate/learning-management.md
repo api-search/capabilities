@@ -55,70 +55,70 @@ personas: []
 provider_name: Adobe Captivate
 provider_slug: adobe-captivate
 search_terms:
-- list enrollments
-- compliance
-- list certification programs for compliance and credential tracking.
-- list users
-- list certifications
-- list badges
-- list all enrollments.
-- bulk import/export job management.
-- list content catalogs organizing learning objects for targeted delivery.
-- list all certifications.
-- certification program management.
-- create bulk export job
-- get detailed information about a specific learning object including instances, skills, and prerequisites.
-- enroll a learner in a course, certification, or learning program.
-- list all catalogs.
-- create bulk job
-- list all available courses, learning programs, certifications, and job aids in adobe learning manager.
-- enroll learner
-- list all users in the account.
-- real-time webhook events for downstream integrations.
-- learning content catalog management.
-- get account
-- list all available learning objects.
-- list catalogs
-- list learners, managers, authors, and admin users in adobe learning manager.
-- learner and admin user management.
-- scorm
-- create a bulk data import or export job.
-- create user
-- badge and achievement management.
-- create a bulk export job for learner transcripts or training reports.
-- list all badges.
-- unified workflow for managing learning objects, enrollments, users, and compliance.
-- skill tracking and management.
-- learning management
-- education
-- core lms functionality including course delivery, enrollment, and progress tracking.
-- elearning
-- single learning object details.
-- list learner enrollments across all learning objects.
-- HR Integration Developer
-- learning and development professional managing course catalogs, enrollments, and compliance tracking.
-- xapi
-- retrieve account-level configuration and settings for adobe learning manager.
-- authoring
-- create a new user account.
-- L&D Administrator
-- training
-- adobe captivate
-- list badges and achievements available to learners.
-- list learning objects
-- learner enrollment management.
-- list skills
-- list all skills.
-- learner progress, skill attainment, and completion reporting.
-- enroll a learner in a learning object.
-- certification and mandatory training compliance tracking.
-- list all skills defined in the account for skill gap analysis.
-- get details of a specific learning object.
 - lms
+- single learning object details.
+- get details of a specific learning object.
+- list all catalogs.
+- list badges
+- unified workflow for managing learning objects, enrollments, users, and compliance.
+- training
+- compliance
+- learning content catalog management.
+- real-time webhook events for downstream integrations.
+- list all available learning objects.
+- create a new user account.
+- bulk import/export job management.
+- list all available courses, learning programs, certifications, and job aids in adobe learning manager.
+- badge and achievement management.
+- HR Integration Developer
+- xapi
+- list enrollments
+- adobe captivate
+- learning management
+- elearning
+- list catalogs
+- enroll learner
+- list all enrollments.
+- list all skills.
+- create a bulk data import or export job.
+- enroll a learner in a course, certification, or learning program.
+- get account
+- learning and development professional managing course catalogs, enrollments, and compliance tracking.
+- education
+- list all skills defined in the account for skill gap analysis.
+- create bulk export job
+- certification and mandatory training compliance tracking.
+- enroll a learner in a learning object.
+- list certifications
+- create a bulk export job for learner transcripts or training reports.
+- learner progress, skill attainment, and completion reporting.
+- list badges and achievements available to learners.
+- create bulk job
+- list all certifications.
+- list learning objects
+- list certification programs for compliance and credential tracking.
+- core lms functionality including course delivery, enrollment, and progress tracking.
+- scorm
+- skill tracking and management.
+- list users
+- get detailed information about a specific learning object including instances, skills, and prerequisites.
+- list learners, managers, authors, and admin users in adobe learning manager.
+- L&D Administrator
+- learner and admin user management.
 - courses, learning programs, certifications, and job aids.
-- create a new user account in adobe learning manager for a new learner or employee.
-- get learning object
+- authoring
+- certification program management.
+- create user
+- retrieve account-level configuration and settings for adobe learning manager.
+- list all badges.
+- learner enrollment management.
 - developer integrating hris systems with adobe learning manager for user provisioning and data sync.
+- list skills
+- list all users in the account.
+- get learning object
+- list learner enrollments across all learning objects.
+- create a new user account in adobe learning manager for a new learner or employee.
+- list content catalogs organizing learning objects for targeted delivery.
 slug: learning-management
 source_filename: learning-management.yaml
 source_heading: Capability Spec

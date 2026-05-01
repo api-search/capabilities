@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- compliance
 - create control
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- update settings
-- get audit manager account settings including default destinations and process owners.
-- create a new compliance assessment using a regulatory framework.
-- amazon audit manager
-- list all assessments
-- aws
-- list available frameworks
-- list all compliance assessments to understand current audit coverage.
-- audit
-- list frameworks
-- get assessment
+- compliance
 - list generated assessment reports for compliance documentation.
-- create a new assessment
-- get complete details of a compliance assessment including control status.
-- list assessments
+- list all compliance assessments to understand current audit coverage.
+- amazon audit manager
+- generate a compliance assessment report from collected evidence.
+- get settings
+- aws
+- get audit manager account settings including default destinations and process owners.
+- risk management
 - list assessment reports
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- compliance assessment management
+- compliance framework management
+- create a custom compliance control for use in frameworks and assessments.
+- get complete details of a compliance assessment including control status.
+- create assessment
+- list all assessments
+- list frameworks
+- audit
+- get assessment
+- create a new assessment
+- list assessments
+- update audit manager settings including sns notifications and default report destination.
+- create a new compliance assessment using a regulatory framework.
 - list controls
 - list compliance controls available for building assessments.
-- create a custom compliance control for use in frameworks and assessments.
 - create assessment report
-- get settings
-- risk management
-- compliance assessment management
-- generate a compliance assessment report from collected evidence.
-- create assessment
-- compliance framework management
-- update audit manager settings including sns notifications and default report destination.
+- update settings
+- list available frameworks
 slug: compliance-auditing
 source_filename: compliance-auditing.yaml
 source_heading: Capability Spec

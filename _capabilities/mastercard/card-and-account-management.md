@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- card issuance and management
-- lookup bin
-- get card details
-- credit cards
-- manage a payment account lifecycle
-- query payment account reference to link tokens to accounts
 - card management
-- get payment account reference
-- create a physical card fulfillment order
-- manage payment account
-- create fulfillment order
-- submit pan event
-- get account catalog
-- request updated card credentials for card-on-file
-- validate account details
-- account management
-- list bins
-- bin lookup
+- open banking
 - financial services
-- issue card
-- look up bin information
-- manage account
-- manage a payment account
-- issuers
+- card issuance and management
+- retrieve account catalog data
+- create fulfillment order
+- mastercard
+- get card details
+- create a physical card fulfillment order
+- automatic billing updates
+- manage payment account
+- list bins
+- validate account
+- account management
+- query payment account reference to link tokens to accounts
+- get billing updates
+- payments
+- get account catalog
+- list available mastercard bins
 - payment account management
 - fraud detection
-- retrieve account catalog data
-- mastercard
-- automatic billing updates
-- open banking
+- manage a payment account lifecycle
+- get payment account reference
+- issue card
+- credit cards
 - issue a new card
-- validate account
+- look up bin information
 - digital identity
-- payments
-- list available mastercard bins
+- bin lookup
 - look up bin information for a card
-- submit pan-related event for account level management
-- get billing updates
+- submit pan event
+- issuers
+- lookup bin
+- manage account
 - request updated card credentials
+- request updated card credentials for card-on-file
+- submit pan-related event for account level management
 - issue a new mastercard card
+- manage a payment account
+- validate account details
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

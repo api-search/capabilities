@@ -19,85 +19,85 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- xdr
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- tenant operator
-- red team operator
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- threat hunter
+- palo alto networks
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- sase admin
+- network security engineer
+- manages logging infrastructure, integrations, and platform automation.
+- investigates security incidents, triages alerts, and coordinates response actions.
 - soar
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- ai security engineer
-- compliance officer
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- executes containment, eradication, and recovery actions during security incidents.
+- digital experience monitoring, log management, and best practice assessment.
+- manages enterprise browser policies and secure browsing configurations.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- mssp operator
+- manage enterprise browser policies, user sessions, and deployments.
 - sre
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- cloud security
-- firewall
-- platform engineer
-- sase
-- analyzes suspicious files and samples for malware characteristics.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- designs and implements network security architectures and policies.
 - incident responder
-- identity and access management, tenant hierarchies, and subscription management.
-- vulnerability manager
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- compliance team
-- cloud security engineer
+- analyzes suspicious files and samples for malware characteristics.
+- designs sase and sd-wan network architectures for secure remote access.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- soc analyst
+- threat intel analyst
 - saas security admin
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- manages multi-tenant security operations at scale for managed service providers.
-- sd wan operator
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- security rules
+- secures ai applications with runtime scanning and vulnerability assessment.
 - subscription manager
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- cloud security
+- ai security engineer
+- network security
+- xdr
+- enterprise it
+- data protection analyst
+- identity and access management, tenant hierarchies, and subscription management.
+- platform engineer
+- investigates dlp incidents and manages sensitive data protection policies.
+- cybersecurity
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- cloud security posture management, compliance monitoring, and workload protection.
+- browser security admin
+- vulnerability manager
+- conducts automated adversarial testing against ai systems and llm applications.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- firewall admin
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- sase
+- data loss prevention, saas security monitoring, and identity security posture.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- security rules
+- red team operator
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manages multi-tenant security operations at scale for managed service providers.
+- threat intelligence
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- cloud security engineer
+- enterprise browser policy management and secure browsing.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- compliance officer
+- network operations
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- firewall
+- iam admin
+- sd wan operator
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
 - configuration
 - ai runtime security scanning and automated red teaming for ai applications.
-- executes containment, eradication, and recovery actions during security incidents.
 - proactively searches for threats and iocs across telemetry data.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- soc analyst
-- network security
-- network operations
-- enterprise browser policy management and secure browsing.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- threat intel analyst
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- manages service accounts, roles, and access policies for platform api access.
-- threat hunter
-- enterprise it
-- browser security admin
-- network security engineer
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- malware researcher
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- manages enterprise browser policies and secure browsing configurations.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manage enterprise browser policies, user sessions, and deployments.
-- mssp operator
-- cybersecurity
-- network architect
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- digital experience monitoring, log management, and best practice assessment.
-- sase admin
-- designs sase and sd-wan network architectures for secure remote access.
-- data protection analyst
+- compliance team
 - monitors network health, performance, and digital experience metrics.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- palo alto networks
-- data loss prevention, saas security monitoring, and identity security posture.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- investigates dlp incidents and manages sensitive data protection policies.
-- firewall admin
-- iam admin
-- manages logging infrastructure, integrations, and platform automation.
-- threat intelligence
-- cloud security posture management, compliance monitoring, and workload protection.
-- conducts automated adversarial testing against ai systems and llm applications.
+- manages service accounts, roles, and access policies for platform api access.
+- network architect
+- tenant operator
+- malware researcher
+- designs and implements network security architectures and policies.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
 slug: network-security-config
 source_filename: network-security-config.yaml
 source_heading: Capability Spec

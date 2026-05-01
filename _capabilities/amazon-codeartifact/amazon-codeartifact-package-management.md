@@ -10,60 +10,60 @@ personas: []
 provider_name: Amazon CodeArtifact
 provider_slug: amazon-codeartifact
 search_terms:
-- get details about a package in a repository
-- governance and security of external package dependencies and internal packages.
-- DevOps Engineer
-- storage and retrieval of software artifacts and their metadata.
-- list versions of a package in a repository
-- connect a repository to a public package registry like npmjs or pypi
-- nuget
-- package management
-- copy package versions between repositories in the same domain
-- describe domain
-- generate a temporary authorization token for accessing codeartifact repositories
-- get repository endpoint
-- list packages in a repository
-- npm
-- amazon
-- publish a new package version to a repository
-- get details about a codeartifact repository
-- aws
-- managing software package lifecycle including publishing, versioning, and deprecation.
-- delete specific package versions from a repository
-- describe repository
-- manages repository infrastructure, external connections, and domain policies.
-- create repository
-- list repositories
-- describe package
-- unified workflow for managing artifact repositories, packages, and software supply chain governance.
 - associate external connection
-- create domain
-- publishes and consumes packages from codeartifact repositories.
-- artifact repository
-- sets up domains, repositories, and governance controls across teams.
-- get the package-format-specific endpoint url for a repository
-- get authorization token
-- list packages
-- delete package versions
-- devops
-- Platform Engineer
-- publish package version
-- manage packages and package versions
-- create a new codeartifact repository within a domain
-- list repositories in a domain
-- list all codeartifact domains in the account
-- create a new codeartifact domain
-- get details about a codeartifact domain
-- list package versions
-- manage codeartifact repositories
-- software supply chain
 - manage codeartifact domains
-- maven
-- Software Developer
-- pypi
-- copy package versions
 - list domains
+- create a new codeartifact domain
+- copy package versions between repositories in the same domain
+- publishes and consumes packages from codeartifact repositories.
+- manage packages and package versions
+- governance and security of external package dependencies and internal packages.
+- list repositories
+- managing software package lifecycle including publishing, versioning, and deprecation.
+- create a new codeartifact repository within a domain
+- amazon
+- get the package-format-specific endpoint url for a repository
+- list repositories in a domain
+- list packages in a repository
+- get details about a package in a repository
+- DevOps Engineer
+- publish a new package version to a repository
+- pypi
+- unified workflow for managing artifact repositories, packages, and software supply chain governance.
+- get details about a codeartifact domain
+- nuget
+- list versions of a package in a repository
+- get repository endpoint
+- aws
+- get authorization token
+- package management
+- artifact repository
+- create repository
+- list package versions
+- create domain
+- connect a repository to a public package registry like npmjs or pypi
+- get details about a codeartifact repository
+- npm
+- delete package versions
+- delete specific package versions from a repository
+- generate a temporary authorization token for accessing codeartifact repositories
 - get authorization tokens for package managers
+- devops
+- list all codeartifact domains in the account
+- describe repository
+- Platform Engineer
+- manages repository infrastructure, external connections, and domain policies.
+- software supply chain
+- copy package versions
+- manage codeartifact repositories
+- list packages
+- describe domain
+- storage and retrieval of software artifacts and their metadata.
+- Software Developer
+- describe package
+- maven
+- publish package version
+- sets up domains, repositories, and governance controls across teams.
 slug: amazon-codeartifact-package-management
 source_filename: amazon-codeartifact-package-management.yaml
 source_heading: Capability Spec

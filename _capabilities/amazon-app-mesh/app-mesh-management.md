@@ -21,19 +21,19 @@ personas: []
 provider_name: Amazon App Mesh
 provider_slug: amazon-app-mesh
 search_terms:
-- list resources
-- amazon
-- DevOps Engineer
-- manage amazon app mesh api resources.
-- aws
-- engineer managing microservices networking infrastructure.
-- list resources.
-- engineer managing service deployments and traffic routing.
-- Platform Engineer
-- service mesh
 - list amazon app mesh api resources.
 - networking
+- manage amazon app mesh api resources.
+- DevOps Engineer
 - microservices
+- engineer managing service deployments and traffic routing.
+- aws
+- engineer managing microservices networking infrastructure.
+- Platform Engineer
+- list resources.
+- list resources
+- service mesh
+- amazon
 slug: app-mesh-management
 source_filename: app-mesh-management.yaml
 source_heading: Capability Spec

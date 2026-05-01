@@ -75,89 +75,89 @@ personas: []
 provider_name: GitHub Actions
 provider_slug: github-actions
 search_terms:
-- repository secrets
-- list jobs for a workflow run
-- actions
-- single artifact
-- ci/cd
-- list workflow runs
-- get artifact
-- list runners
-- single workflow
-- list actions caches for a repository
-- delete a repository variable
-- workflow runs
-- cancel a running workflow
-- trigger workflow
-- delete run
-- cancel a workflow run
-- list workflows
-- delete artifact
-- delete variable
-- list secrets
-- dispatch
-- get a specific workflow
-- delete a repository secret
-- delete cache
-- delete runner
-- get workflow
-- list runs
-- disable workflow
-- get runner
-- list repository secrets (names only, not values)
-- trigger a workflow dispatch
-- create variable
-- re-run a workflow
-- create or update secret
-- get details of a specific artifact
-- list repository variables
-- list artifacts
-- list workflow runs for a repository
-- list self-hosted runners for a repository
-- create a repository variable
-- create or update a repository secret
-- re-run only the failed jobs from a workflow run
-- action caches
-- rerun failed jobs
-- automation
-- list repository workflows
 - list repository secrets
-- self-hosted runners
-- rerun workflow
-- get a specific job from a workflow run
-- get a workflow run
-- jobs for a workflow run
-- enable a workflow
-- delete a specific cache entry
-- remove a self-hosted runner from a repository
-- rerun
-- delete an artifact
-- get details of a specific workflow run
-- get an artifact
-- disable a workflow
-- trigger a workflow
-- cancel run
-- workflows
-- workflow artifacts
-- repository variables
-- list jobs
-- github
-- list workflow artifacts for a repository
-- delete secret
-- delete a workflow artifact
-- get run
-- enable workflow
-- list variables
-- single workflow run
-- devops
-- delete a workflow run
-- cancel
-- trigger a workflow dispatch event
 - get job
-- get a specific self-hosted runner
-- get a specific workflow by id or filename
-- list self-hosted runners
+- rerun workflow
+- list self-hosted runners for a repository
+- delete secret
+- self-hosted runners
+- cancel a running workflow
+- get a specific workflow
+- workflow runs
+- get artifact
+- get workflow
+- workflow artifacts
+- rerun failed jobs
+- delete run
+- delete runner
+- trigger a workflow dispatch event
+- delete cache
+- cancel run
+- list repository workflows
+- list variables
+- trigger a workflow dispatch
+- create or update secret
+- jobs for a workflow run
+- create variable
+- cancel
+- dispatch
+- list secrets
+- list workflows
 - list caches
+- delete a repository secret
+- trigger a workflow
+- list jobs for a workflow run
+- action caches
+- single workflow run
+- re-run a workflow
+- get a specific workflow by id or filename
+- list repository secrets (names only, not values)
+- single workflow
+- single artifact
+- get details of a specific artifact
+- delete a repository variable
+- delete a workflow run
+- delete variable
+- workflows
+- get run
+- list workflow artifacts for a repository
+- list runners
+- delete an artifact
+- get a workflow run
+- list artifacts
+- delete a specific cache entry
+- get runner
+- disable workflow
+- delete a workflow artifact
+- repository secrets
+- devops
+- list workflow runs for a repository
+- remove a self-hosted runner from a repository
+- github
+- list actions caches for a repository
+- ci/cd
+- list jobs
+- get a specific self-hosted runner
+- get an artifact
+- list repository variables
+- list workflow runs
+- create or update a repository secret
+- cancel a workflow run
+- trigger workflow
+- automation
+- create a repository variable
+- re-run only the failed jobs from a workflow run
+- list self-hosted runners
+- delete artifact
+- enable a workflow
+- disable a workflow
+- rerun
+- actions
+- get details of a specific workflow run
+- enable workflow
+- list runs
+- get a specific job from a workflow run
+- repository variables
 slug: ci-cd-automation
 source_filename: ci-cd-automation.yaml
 source_heading: Capability Spec

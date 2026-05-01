@@ -10,10 +10,10 @@ provider_name: BBVA
 provider_slug: bbva
 search_terms:
 - open banking
-- spain
+- mexico
 - financial services
 - banking
-- mexico
+- spain
 - psd2
 slug: open-banking
 source_filename: open-banking.yaml

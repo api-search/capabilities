@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- list message batches
+- generative ai
+- conversational ai
 - cancel message batch
 - list available models.
-- generative ai
-- model details.
-- ai
-- messaging
-- list message batches.
-- delete message batch
-- anthropic
-- machine learning
-- conversational ai
-- create a message.
 - individual batch management.
-- delete a completed batch.
-- count tokens in a message.
-- list models
-- get batch status.
-- token counting.
-- create message
-- batch management.
-- cancel an in-progress batch.
-- retrieve message batch results
-- large language models
-- list available claude models.
-- create a batch of message requests.
-- get model metadata.
-- delete batch
-- chatbot
-- retrieve message batch
-- natural language processing
-- list all message batches.
-- model discovery.
-- create a message batch.
-- list batches
-- get model
-- artificial intelligence
-- count tokens
-- get batch
-- count message tokens.
-- get completed batch results.
-- create batch
-- claude
-- count message tokens
-- delete a batch.
-- message operations.
 - get message batch status and details.
+- get model metadata.
+- list message batches
+- create message
+- retrieve message batch
+- list batches
+- list models
+- batch management.
+- list message batches.
 - create message batch
+- natural language processing
+- create a message.
+- list all message batches.
+- token counting.
+- get batch
+- delete a batch.
+- cancel an in-progress batch.
+- machine learning
+- get model
+- get batch status.
+- artificial intelligence
+- anthropic
+- chatbot
+- claude
+- ai
+- message operations.
+- count message tokens
+- messaging
+- model discovery.
+- count tokens in a message.
+- create batch
+- list available claude models.
+- create a message batch.
+- large language models
+- delete message batch
+- retrieve message batch results
+- delete a completed batch.
+- get completed batch results.
+- count tokens
+- model details.
+- count message tokens.
 - send a message to claude and receive a response.
+- create a batch of message requests.
+- delete batch
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

@@ -9,14 +9,14 @@ personas: []
 provider_name: Apache HBase
 provider_slug: apache-hbase
 search_terms:
-- apache
-- bigtable
-- wide column
-- hadoop
-- nosql
-- open source
 - big data
+- wide column
+- open source
+- hadoop
+- bigtable
+- apache
 - database
+- nosql
 slug: hbase-data-access
 source_filename: hbase-data-access.yaml
 source_heading: Capability Spec

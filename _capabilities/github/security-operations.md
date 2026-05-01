@@ -59,74 +59,74 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
+- get dependabot alert
+- get code scanning alert
+- source control
+- code scanning analyses
+- code scanning alert management
+- security
+- individual secret scanning alert
+- code scanning
+- update a secret scanning alert (resolve, reopen)
+- check vulnerability alerts
+- individual code scanning alert
+- get default setup
+- list analyses
+- list code scanning alerts for a repository
+- platform
+- dependabot
+- update a code scanning alert
+- getDependabotAlert
+- get code scanning default setup configuration
+- getCodeScanningAlert
+- secret scanning alert management
+- listCodeScanningAlertsForRepository
+- listDependabotAlertsForRepository
+- update a dependabot alert
+- software development
+- vulnerability management
+- t1
+- upload sarif analysis data
+- update a dependabot alert (dismiss, reopen)
+- list code scanning alerts
+- pipelines
+- update code scanning alert
+- enable vulnerability alerts
+- updateDependabotAlert
+- listSecretScanningAlertsForRepository
+- check if vulnerability alerts are enabled
 - secret scanning
 - updateSecretScanningAlert
-- getDependabotAlert
-- list secret scanning alerts
-- updateDependabotAlert
-- get secret scanning alert
-- get code scanning analysis
-- update dependabot alert
-- get dependabot alert
-- update a dependabot alert
-- getSecretScanningAlert
-- update a code scanning alert
-- getCodeScanningAlert
-- github
-- update default setup
-- check vulnerability alerts
-- update a code scanning alert (dismiss, reopen)
-- get code scanning default setup configuration
-- code scanning alert management
-- list dependabot alerts
-- get a dependabot alert
-- individual dependabot alert
-- individual secret scanning alert
-- dependabot alert management
-- upload sarif analysis data
-- update secret scanning alert
-- check if vulnerability alerts are enabled
-- check vulnerability alert status
-- pipelines
-- get a secret scanning alert
-- secret scanning alert management
-- list locations for a secret scanning alert
-- update a secret scanning alert (resolve, reopen)
-- dependabot
-- list code scanning analyses
-- t1
-- individual code scanning alert
-- update a dependabot alert (dismiss, reopen)
-- update a secret scanning alert
-- listCodeScanningAnalysesForRepository
-- disable vulnerability alerts
-- list code scanning alerts
-- listDependabotAlertsForRepository
-- enable vulnerability alerts
-- list code scanning alerts for a repository
-- get code scanning alert
-- upload sarif
-- updateCodeScanningAlert
-- get default setup
-- list dependabot secrets
-- code scanning analyses
-- platform
-- source control
-- get a code scanning alert
-- checkIfVulnerabilityAlertsAreEnabledForRepository
-- listSecretScanningAlertsForRepository
 - code
-- vulnerability management
-- enableVulnerabilityAlerts
-- vulnerability alert settings
-- update code scanning alert
-- software development
-- security
-- get a code scanning analysis
-- listCodeScanningAlertsForRepository
+- update default setup
+- get code scanning analysis
+- get a dependabot alert
 - update code scanning default setup
-- list analyses
-- code scanning
+- update secret scanning alert
+- list dependabot secrets
+- list code scanning analyses
+- dependabot alert management
+- list secret scanning alerts
+- update a secret scanning alert
+- get secret scanning alert
+- updateCodeScanningAlert
+- vulnerability alert settings
+- github
+- list locations for a secret scanning alert
+- check vulnerability alert status
+- update a code scanning alert (dismiss, reopen)
+- update dependabot alert
+- list dependabot alerts
+- getSecretScanningAlert
+- checkIfVulnerabilityAlertsAreEnabledForRepository
+- get a code scanning analysis
+- listCodeScanningAnalysesForRepository
+- enableVulnerabilityAlerts
+- get a secret scanning alert
+- disable vulnerability alerts
+- upload sarif
+- get a code scanning alert
+- individual dependabot alert
 - list secret scanning locations
 slug: security-operations
 source_filename: security-operations.yaml

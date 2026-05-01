@@ -40,59 +40,59 @@ personas: []
 provider_name: Avalara
 provider_slug: avalara
 search_terms:
-- create exemption certificate
-- sales tax
-- tax compliance
-- list customers
-- e-invoicing
-- check e-invoicing mandate requirements for a country
-- list tax exemption certificates for exempt customers
-- import duties, vat, and e-invoicing for international trade
-- tax calculations for transactions
-- International Trade Manager
-- list certificates
-- list submitted einvoices
-- exemptions
-- tax exemption certificates
-- oversees tax strategy, compliance automation, and cost optimization
-- avalara
-- list exemption certificates
-- integrates avalara apis into erp and billing systems
-- hs code and tax code classification for products
-- vat returns, 1099 filing, and lodging tax reporting
-- e-invoice submission
-- real-time tax calculation across us and global jurisdictions
-- create certificate
-- check einvoicing mandate
-- calculate sales tax, vat, or gst
-- list submitted e-invoice documents and their status
-- calculate tax
-- list mandates
-- submit e-invoice for compliance
-- list certcapture customer accounts
 - validate postal address and determine jurisdiction
-- list e-invoicing mandates by country
-- manages cross-border compliance, tariff classification, and e-invoicing
-- list tax transactions
-- sales tax calculation, certificate management, and e-invoicing
-- e-invoicing mandate requirements
-- validate address
-- manages sales tax compliance, exemption certificates, and returns filing
-- tax exemption certificate collection and validation
+- tax exemption certificates
+- list customers
+- import duties, vat, and e-invoicing for international trade
+- list tax exemption certificates for exempt customers
+- validate postal address
+- submit an e-invoice document for cross-border or domestic compliance
+- list submitted einvoices
+- Tax Manager
+- sales tax
+- check einvoicing mandate
 - address validation
 - submit einvoice
+- check e-invoicing mandate requirements for a country
+- list submitted e-invoice documents and their status
 - taxes
-- Finance Director
-- calculate sales tax
-- country-specific e-invoicing mandate compliance
-- create a new tax exemption certificate for a customer
-- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- validate address
+- list tax transactions
+- manages sales tax compliance, exemption certificates, and returns filing
 - validate a postal address and determine the applicable tax jurisdiction
-- Tax Manager
-- list historical tax transactions for audit and reconciliation
+- avalara
+- list mandates
 - list transactions
-- submit an e-invoice document for cross-border or domestic compliance
-- validate postal address
+- tax exemption certificate collection and validation
+- manages cross-border compliance, tariff classification, and e-invoicing
+- list certcapture customer accounts
+- tax compliance
+- calculate tax
+- calculate sales tax, vat, or gst
+- create a new tax exemption certificate for a customer
+- vat returns, 1099 filing, and lodging tax reporting
+- oversees tax strategy, compliance automation, and cost optimization
+- integrates avalara apis into erp and billing systems
+- calculate sales tax
+- list certificates
+- submit e-invoice for compliance
+- e-invoicing mandate requirements
+- real-time tax calculation across us and global jurisdictions
+- e-invoice submission
+- Finance Director
+- calculate sales tax, vat, or gst for a transaction across all jurisdictions
+- list exemption certificates
+- hs code and tax code classification for products
+- create exemption certificate
+- exemptions
+- list e-invoicing mandates by country
+- sales tax calculation, certificate management, and e-invoicing
+- list historical tax transactions for audit and reconciliation
+- country-specific e-invoicing mandate compliance
+- e-invoicing
+- International Trade Manager
+- create certificate
+- tax calculations for transactions
 slug: avalara-tax-compliance
 source_filename: avalara-tax-compliance.yaml
 source_heading: Capability Spec

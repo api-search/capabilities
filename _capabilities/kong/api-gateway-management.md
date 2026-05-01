@@ -39,76 +39,76 @@ personas: []
 provider_name: Kong
 provider_slug: kong
 search_terms:
-- list all consumers.
-- api gateway
-- create a new route for a service.
-- list enabled plugins
-- list all plugins.
-- retrieve gateway node info.
-- configuration
-- update a route.
-- get service
-- get route
-- delete plugin
-- list all configured plugins.
-- upstream service management.
-- retrieve a specific consumer.
-- list plugins
-- create a new route.
 - list all routes.
-- update a service configuration.
-- get node status
-- create plugin
-- list upstreams
-- delete an upstream.
-- list certificates
-- get consumer
-- list all upstream load balancers.
-- delete a service.
 - delete a route.
-- create a new upstream for load balancing.
-- update service
-- retrieve kong gateway node information.
-- create a new api consumer.
-- create upstream
-- plugin management.
-- kong
-- update route
-- get plugin
-- open source
-- create service
-- delete a consumer.
-- delete consumer
-- retrieve a specific plugin configuration.
-- delete route
-- create a new service.
-- list services
-- list all configured routes.
-- list routes
-- list all configured upstream services.
-- create a new upstream service.
-- list all services.
-- list consumers
-- list all api consumers.
-- create consumer
-- create a new plugin configuration.
-- delete a plugin.
-- gateway node information.
-- create route
-- retrieve kong gateway node status.
-- route management.
-- retrieve a specific route.
 - list all tags and tagged entities.
-- get node info
-- nginx
-- list all tls certificates.
-- delete service
-- list all enabled plugin names on the node.
-- list tags
-- api consumer management.
-- delete upstream
+- list services
 - lua
+- list consumers
+- create a new upstream service.
+- api consumer management.
+- delete a consumer.
+- update a route.
+- create a new service.
+- retrieve kong gateway node status.
+- update service
+- update a service configuration.
+- retrieve a specific consumer.
+- upstream service management.
 - retrieve a specific service.
+- get node status
+- plugin management.
+- create a new route.
+- list routes
+- delete consumer
+- create upstream
+- nginx
+- delete a service.
+- create a new upstream for load balancing.
+- delete route
+- list all configured plugins.
+- list all tls certificates.
+- create a new route for a service.
+- create a new plugin configuration.
+- delete plugin
+- create a new api consumer.
+- list all services.
+- delete a plugin.
+- list all consumers.
+- create consumer
+- list certificates
+- delete an upstream.
+- open source
+- create route
+- create plugin
+- get service
+- list enabled plugins
+- delete upstream
+- delete service
+- configuration
+- get plugin
+- create service
+- retrieve kong gateway node information.
+- kong
+- list tags
+- get node info
+- list plugins
+- get route
+- route management.
+- list all api consumers.
+- get consumer
+- list all plugins.
+- list all configured routes.
+- retrieve a specific route.
+- update route
+- retrieve a specific plugin configuration.
+- list all configured upstream services.
+- list upstreams
+- api gateway
+- gateway node information.
+- list all upstream load balancers.
+- retrieve gateway node info.
+- list all enabled plugin names on the node.
 slug: api-gateway-management
 source_filename: api-gateway-management.yaml
 source_heading: Capability Spec

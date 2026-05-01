@@ -40,50 +40,50 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- esg data.
-- get classifications
-- fundamental data.
-- get fundamentals.
-- fundamentals
-- entity data
-- entity data.
-- get entity data.
-- id lookup
-- translate between identifier types.
-- get people
-- get esg scores.
-- get esg data.
-- company research
-- market data
-- factset
-- get ownership data.
-- get esg
-- look up security identifiers.
-- portfolio analytics
-- people data.
-- get fundamentals
-- concordance lookup.
-- concordance lookup
-- get geographic revenue.
-- get people data.
-- get entities
-- financial
-- symbology translate
-- get rbics
 - get entity
+- market data
+- portfolio analytics
+- get esg data.
+- symbology translate
+- fundamentals
+- financial
 - financial data
-- entity concordance.
+- get fundamentals.
+- get fundamentals
+- fundamental data.
 - concordance entity lookup.
-- concord
-- get rbics classifications.
-- get entity reference data.
+- get industry classifications.
+- get people
+- get entity data.
+- get entities
+- get classifications
+- get ownership data.
+- entity concordance.
+- company research
 - get fundamental financial data.
 - get ownership
-- research
-- get industry classifications.
-- investment analytics
-- get people profiles.
+- entity data.
+- concordance lookup
+- get geographic revenue.
+- factset
+- get entity reference data.
+- id lookup
+- look up security identifiers.
+- esg data.
+- translate between identifier types.
+- concord
+- get esg scores.
 - get georev
+- get people data.
+- get rbics classifications.
+- entity data
+- investment analytics
+- research
+- concordance lookup.
+- get esg
+- get people profiles.
+- get rbics
+- people data.
 slug: company-research
 source_filename: company-research.yaml
 source_heading: Capability Spec

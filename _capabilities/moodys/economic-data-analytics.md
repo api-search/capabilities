@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- check health
-- compliance
-- list all orders
-- search series
-- update a basket
-- create order
-- search for available series
-- get order
-- kyc
-- list vintages
-- entity verification
-- get basket
-- delete basket
-- get order status and details
+- list frequencies
 - retrieve multiple time series
-- retrieve a time series
+- compliance
+- get basket
+- kyc
 - list all data baskets
-- list supported output file types
-- credit risk
-- screening
-- list file types
-- analytics
-- risk
-- download order
+- list vintages
+- get basket details
+- list all orders
+- create basket
 - retrieve a single time series by mnemonic
-- time series data
+- financial analytics
+- list baskets
+- moody's
+- analytics
+- delete a basket
+- list orders
+- list file types
+- create a new data basket
 - get multi series
+- check health
+- entity verification
+- download completed order output
+- list vintages for a series
+- list available data frequencies
 - forecasting
+- retrieve a time series
+- credit risk
+- create order
 - create a new data order
 - check data buffet api health
-- get series
-- download completed order output
-- delete a basket
-- list vintages for a series
-- climate risk
 - economic data
-- get basket details
-- list orders
+- get order status and details
 - insurance
-- list available data frequencies
-- financial analytics
-- create a new data basket
-- list baskets
-- list frequencies
-- moody's
-- create basket
+- get series
+- download order
 - update basket
+- delete basket
+- risk
+- list supported output file types
+- screening
+- search series
+- get order
+- climate risk
+- update a basket
+- search for available series
+- time series data
 slug: economic-data-analytics
 source_filename: economic-data-analytics.yaml
 source_heading: Capability Spec

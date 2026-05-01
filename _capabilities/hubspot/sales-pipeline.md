@@ -68,77 +68,77 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- get a contact by id
-- sales
-- create deal
-- list all deals
-- update contact
-- deal management
-- marketing automation
-- search any crm object type
-- hubspot
-- list call engagements
-- update a contact
-- create company
-- search companies with filters
-- pipeline
-- list crm lists
-- crm
-- operations
-- search companies
-- get a company by id
-- get company
-- update a deal
-- list calls
-- search contacts
-- log a call engagement
-- log a meeting engagement
-- search crm objects
-- list contacts
-- create a task engagement
-- update deal
-- search deals with filters
-- engagements
-- create a note engagement
-- email marketing
-- get deal
-- analytics
 - commerce
-- customer service
-- get contact
-- create a new company
-- task engagements
-- list note engagements
-- list meeting engagements
-- content
-- list notes
-- log an email engagement
-- create note
+- crm
 - marketing
-- get a deal by id
-- company management
-- create a new deal
-- list task engagements
-- create a new contact
-- list meetings
 - individual deal
-- create email engagement
-- list crm lists for segmentation
-- list all crm contacts
-- list tasks
-- create meeting
-- search contacts with filters
-- list deals
-- call engagements
-- list all companies
-- create call
+- customer service
+- update a deal
 - create task
-- list companies
-- create contact
+- search contacts
 - individual contact
-- contact management
-- list email engagements
+- create contact
+- get company
+- search contacts with filters
+- update a contact
+- search companies with filters
+- list crm lists for segmentation
+- marketing automation
+- analytics
+- list contacts
+- get a company by id
+- call engagements
+- create a note engagement
+- create company
+- deal management
+- get a deal by id
+- list deals
+- list call engagements
+- create call
+- search companies
+- get contact
+- update contact
 - search deals
+- list task engagements
+- email marketing
+- create a new deal
+- create note
+- company management
+- hubspot
+- get deal
+- search any crm object type
+- list calls
+- log a call engagement
+- list companies
+- list meetings
+- list crm lists
+- create a new contact
+- update deal
+- log an email engagement
+- operations
+- search deals with filters
+- list tasks
+- search crm objects
+- sales
+- create a new company
+- list all deals
+- create email engagement
+- list all companies
+- contact management
+- create a task engagement
+- pipeline
+- list all crm contacts
+- list note engagements
+- list notes
+- content
+- list meeting engagements
+- engagements
+- create deal
+- task engagements
+- log a meeting engagement
+- get a contact by id
+- create meeting
+- list email engagements
 slug: sales-pipeline
 source_filename: sales-pipeline.yaml
 source_heading: Capability Spec

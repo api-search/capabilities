@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- keyvault get secret
-- arm list resources
-- list items in a container
-- list blobs
-- keyvault list certificates
-- cloud computing
-- download a blob
-- cosmos db
-- list cosmos db databases
-- list secrets
-- list cryptographic keys
-- list certificates
-- enterprise
-- azure
-- list azure subscriptions
-- api management
-- cosmos list databases
-- keyvault list secrets
-- list databases
-- blob get properties
-- get blob properties
-- t1
-- list containers in a database
-- infrastructure as a service
-- keyvault list keys
 - list subscription tags
-- blob download
+- list databases
+- cosmos list databases
+- cosmos list items
+- list resource providers
+- cosmos db
 - key vault
+- list cryptographic keys
+- blob get properties
+- list azure subscriptions
 - list blobs in a container
-- list subscriptions
 - cosmos list containers
-- list resources in a subscription
+- get a secret value
+- list resource groups
+- cosmos db database management
+- keyvault list keys
+- subscription management
+- list subscriptions
+- get blob properties
+- keyvault list certificates
+- t1
+- enterprise
+- api management
+- blob storage operations
+- list blobs
+- list secrets
+- arm list resources
+- list certificates
+- keyvault get secret
+- blob list blobs
+- infrastructure as a service
+- list cosmos db databases
+- keyvault list secrets
+- cloud computing
+- arm list subscriptions
+- arm list providers
+- blob storage
 - platform as a service
 - arm list tags
-- list resource providers
+- azure
 - arm list resource groups
-- blob storage
-- arm list subscriptions
-- list resource groups
+- blob download
 - cloud
-- get a secret value
-- blob storage operations
-- blob list blobs
-- subscription management
-- cosmos list items
-- key vault secret management
-- cosmos db database management
-- arm list providers
+- list containers in a database
+- download a blob
 - resource manager
+- list resources in a subscription
+- key vault secret management
+- list items in a container
 slug: data-and-security
 source_filename: data-and-security.yaml
 source_heading: Capability Spec

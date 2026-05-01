@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- update an existing apisix route.
-- create an api consumer.
-- api gateway
-- cloud native
-- configuration
-- route, upstream, consumer, and ssl management workflow.
-- kubernetes
-- list upstreams
 - create a new gateway route.
-- apache
-- create a backend upstream.
-- apache apisix
-- create a new backend upstream with load balancing config.
-- list all apisix gateway routes.
-- create upstream
-- list all api consumers and their plugin configs.
-- create a new apisix route for traffic routing.
-- update route
-- open source
-- traffic management
-- delete route
-- list routes
-- create consumer
+- lua
 - list consumers
 - delete an apisix route.
-- create route
-- administrators configuring routes, consumers, and security policies.
-- Platform Engineer
-- list all gateway routes.
+- apache apisix
 - list api consumers.
-- list all backend upstream configurations.
-- nginx
-- authentication
-- engineers deploying and managing api gateway infrastructure.
 - list backend upstreams.
+- list all backend upstream configurations.
+- create a new apisix route for traffic routing.
+- kubernetes
+- list routes
+- create upstream
+- create a new backend upstream with load balancing config.
+- nginx
+- create a backend upstream.
+- delete route
+- cloud native
+- create an api consumer.
+- update an existing apisix route.
+- create consumer
+- open source
+- Platform Engineer
+- create route
+- apache
+- administrators configuring routes, consumers, and security policies.
 - create a new api consumer with authentication plugins.
-- lua
+- configuration
+- route, upstream, consumer, and ssl management workflow.
+- engineers deploying and managing api gateway infrastructure.
+- list all apisix gateway routes.
+- traffic management
+- list upstreams
+- update route
+- authentication
 - API Gateway Administrator
+- api gateway
+- list all gateway routes.
+- list all api consumers and their plugin configs.
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

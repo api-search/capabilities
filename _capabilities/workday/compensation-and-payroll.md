@@ -44,51 +44,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- comp list plans
-- list all benefit plans
-- list compensation scorecards
-- list compensation grades
-- workday
-- submit a compensation change request
-- payroll list pay slips
-- cloud computing
-- comp list scorecards
-- list all pay groups
-- comp request change
-- enterprise software
-- payroll list pay groups
-- get a pay group by id
-- payroll list inputs
-- benefit plans
 - saas
-- request a one-time payment
-- hcm
-- benefits
-- list benefit plans
-- list compensation plans
-- compensation
-- list payroll inputs
 - benefits get eligible plans
-- benefits list elections
-- benefits list dependents
-- benefits change
-- pay groups
-- financial management
-- list pay groups
-- list benefit elections
-- payroll
-- payroll get pay group details
-- list pay slips
-- compensation plans
-- payroll get pay group
-- submit a benefits change request
-- get pay group details
-- list dependents
+- list benefit plans
 - comp request one time payment
-- benefits list plans
-- get eligible benefit plans for a worker
+- submit a benefits change request
+- benefits list elections
+- list all benefit plans
+- benefits
+- payroll list inputs
+- list pay slips
+- hcm
+- get a pay group by id
+- comp list plans
+- list benefit elections
+- compensation plans
+- list dependents
+- list all pay groups
+- submit a compensation change request
+- payroll get pay group
+- payroll
+- list compensation grades
+- list compensation plans
+- comp request change
+- list payroll inputs
+- workday
+- get pay group details
 - list plans
 - comp list grades
+- benefits change
+- comp list scorecards
+- payroll list pay groups
+- list compensation scorecards
+- cloud computing
+- enterprise software
+- list pay groups
+- pay groups
+- request a one-time payment
+- payroll get pay group details
+- payroll list pay slips
+- financial management
+- benefits list plans
+- get eligible benefit plans for a worker
+- compensation
+- benefits list dependents
+- benefit plans
 slug: compensation-and-payroll
 source_filename: compensation-and-payroll.yaml
 source_heading: Capability Spec

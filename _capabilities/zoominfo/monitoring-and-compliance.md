@@ -52,45 +52,45 @@ provider_slug: zoominfo
 search_terms:
 - lead generation
 - compliance
-- data compliance operations.
-- list webhooks
-- delete a webhook subscription.
-- api usage tracking.
-- get api usage data and consumption metrics.
-- check compliance status for specified contacts.
-- list all webhook subscriptions.
-- monitoring
-- create a new webhook subscription.
-- available webhook subscription types.
-- zoominfo
-- webhooks
-- contacts
-- update webhook
-- marketing intelligence
-- data
-- validate target url
-- validate a webhook target url.
-- individual webhook management.
-- webhook target url validation.
-- validate a webhook target url is reachable.
 - webhook subscription management.
-- create a new webhook subscription for data change notifications.
-- check data compliance status for specified contacts.
-- sales intelligence
-- get usage
-- api usage
-- company data
-- b2b
-- create webhook
-- delete webhook
 - b2b data
-- check compliance
-- get api usage data.
-- list all configured webhook subscriptions.
-- contact database
-- get available webhook subscription types.
+- get api usage data and consumption metrics.
+- company data
 - get subscription types
+- create a new webhook subscription for data change notifications.
+- delete webhook
+- individual webhook management.
+- validate a webhook target url.
+- list all configured webhook subscriptions.
+- available webhook subscription types.
+- update webhook
+- get api usage data.
+- marketing intelligence
+- api usage tracking.
+- contact database
+- api usage
+- create a new webhook subscription.
+- list webhooks
+- data
+- check compliance status for specified contacts.
 - update an existing webhook subscription.
+- webhooks
+- check data compliance status for specified contacts.
+- list all webhook subscriptions.
+- validate target url
+- get usage
+- webhook target url validation.
+- sales intelligence
+- check compliance
+- monitoring
+- data compliance operations.
+- get available webhook subscription types.
+- validate a webhook target url is reachable.
+- b2b
+- delete a webhook subscription.
+- create webhook
+- contacts
+- zoominfo
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

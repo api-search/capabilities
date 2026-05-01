@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- google
+- subscribe to a youtube channel
+- update channel settings
+- unsubscribe from a youtube channel
+- list youtube channels
+- manage individual comments
+- unsubscribe
+- moderation
+- create comment thread
+- list comments
+- unsubscribe from a channel
+- list channel subscriptions
+- update channel
+- update a comment
 - subscribe to a channel
 - update an existing comment
-- create comment thread
-- video
-- moderation
-- subscribe to a youtube channel
-- community
-- youtube
-- update a comment
-- comments
-- list youtube channels
-- list comments
-- videos
-- set moderation status on comments
-- subscriptions
-- create a new comment thread
-- unsubscribe from a channel
-- subscribe
-- delete comment
-- update comment thread
-- manage channel information
-- create comment
-- update a comment thread
-- streaming
-- list comment threads
-- unsubscribe
-- update comment
-- unsubscribe from channel
-- manage individual comments
-- update channel settings
-- list channel subscriptions
-- unsubscribe from a youtube channel
-- list comments on a video or channel
-- manage channel subscriptions
-- manage comment threads
-- list subscriptions
-- subscribe to channel
-- update channel
-- media
-- post a new comment
-- list channels
 - set moderation status
+- google
+- update comment thread
+- list subscriptions
+- subscribe
+- subscriptions
+- manage comment threads
+- comments
+- update comment
+- list channels
+- community
+- manage channel information
 - delete a comment
+- update a comment thread
+- delete comment
+- media
+- youtube
+- manage channel subscriptions
+- videos
+- subscribe to channel
+- post a new comment
+- create a new comment thread
+- streaming
+- unsubscribe from channel
+- video
 - social
+- set moderation status on comments
+- list comment threads
+- create comment
+- list comments on a video or channel
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

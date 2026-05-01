@@ -10,31 +10,31 @@ personas: []
 provider_name: Amazon KMS
 provider_slug: amazon-kms
 search_terms:
-- provides detailed information about a kms key.
-- crypto encrypt
 - amazon kms
-- cryptography
-- Developer
-- keys describe key
-- unified workflow for amazon kms resource management
-- workflow
-- aws
-- gets a list of all kms keys in the caller's aws account and region.
-- data protection
-- key management
-- Administrator
-- keys create key
-- decrypts ciphertext that was encrypted by a kms key.
-- encrypts plaintext of up to 4,096 bytes using a kms key.
 - creates a unique customer managed kms key in your aws account and region.
-- returns a unique symmetric data key for use outside of kms.
-- integrates api into applications
-- encryption
-- manages resources and configurations
-- crypto generate data key
+- provides detailed information about a kms key.
+- keys create key
 - security
+- workflow
+- crypto generate data key
+- manages resources and configurations
+- data protection
+- Developer
+- Administrator
+- returns a unique symmetric data key for use outside of kms.
+- decrypts ciphertext that was encrypted by a kms key.
+- aws
+- encryption
+- unified workflow for amazon kms resource management
 - keys list keys
+- crypto encrypt
+- keys describe key
+- gets a list of all kms keys in the caller's aws account and region.
+- key management
+- encrypts plaintext of up to 4,096 bytes using a kms key.
 - crypto decrypt
+- integrates api into applications
+- cryptography
 slug: amazon-kms-workflow
 source_filename: amazon-kms-workflow.yaml
 source_heading: Capability Spec

@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- update a beta group.
-- list apps
-- testflight
+- read app
+- get beta tester details.
+- app management.
+- create tester
 - read build
-- technology
-- list all builds.
-- macos
-- delete beta group
 - modify build
-- list beta testers.
-- get details of a specific app.
+- create a beta group.
 - beta tester management.
+- technology
+- list all apps.
+- list beta testers
+- list builds
+- list all beta groups.
+- add a beta tester.
+- build management.
+- remove a beta tester.
+- list groups
+- developer
+- list apps
+- update app metadata.
+- modify app
+- add a new beta tester.
+- get beta group details.
+- update a beta group.
+- list all apps in app store connect.
+- beta group management.
+- get details of a specific app.
+- app management
+- list all builds.
+- delete a beta group.
+- delete beta tester
+- modify beta group
+- macos
+- get build details.
+- ios
+- create a new beta group.
+- testflight
+- list beta testers.
+- list beta groups
+- create beta tester
+- list testers
+- delete beta group
 - list all beta testers.
 - list beta groups.
-- get beta tester details.
-- list all apps.
-- remove a beta tester.
-- app management.
-- list testers
-- add a new beta tester.
-- create tester
-- list all beta groups.
-- delete beta tester
-- update build information.
-- get beta group details.
-- list beta groups
-- delete a beta group.
-- beta group management.
-- create beta tester
-- app management
-- apple
-- modify beta group
-- list all apps in app store connect.
-- list beta testers
-- add a beta tester.
-- create a new beta group.
-- get build details.
+- mobile
 - read beta tester
 - create beta group
-- read app
-- mobile
-- read beta group
 - create group
-- list groups
-- update app metadata.
-- ios
-- create a beta group.
-- developer
-- list builds
 - app store
-- build management.
-- modify app
+- apple
+- read beta group
+- update build information.
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

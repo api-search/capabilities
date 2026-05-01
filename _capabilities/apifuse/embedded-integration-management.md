@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- list workflows
-- browse and manage integrations.
-- manage workflows.
-- managing native integrations within saas products.
-- integrations
-- list all integrations.
-- workflow automation
 - saas
+- SaaS Product Manager
+- integration analytics.
+- developer implementing and automating embedded integration workflows.
+- managing native integrations within saas products.
+- list all integrations.
+- integrations
+- list all pre-built connectors available for embedding into your saas product.
+- browse and manage integrations.
+- create a new automation workflow connecting two or more integrated platforms.
+- workflow automation
+- browse pre-built connectors.
+- browse all available embedded integrations, optionally filtered by category.
 - list all integration workflows configured in the embedded marketplace.
-- product manager building native integrations into a saas product.
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- get analytics
+- manage workflows.
+- list workflows
+- list workflows.
 - create workflow
 - embedded integrations
-- integration platform
+- apifuse
+- get analytics
 - Integration Developer
 - list integrations
-- create a workflow.
-- integration analytics.
-- browse pre-built connectors.
-- list all pre-built connectors available for embedding into your saas product.
-- browse all available embedded integrations, optionally filtered by category.
-- ipaas
-- list all connectors.
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
 - list connectors
-- get analytics data.
-- SaaS Product Manager
-- apifuse
 - marketplace
-- list workflows.
-- create a new automation workflow connecting two or more integrated platforms.
-- developer implementing and automating embedded integration workflows.
+- get analytics data.
+- product manager building native integrations into a saas product.
+- ipaas
+- create a workflow.
+- integration platform
+- list all connectors.
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

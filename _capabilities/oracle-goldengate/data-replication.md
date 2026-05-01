@@ -57,72 +57,72 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- core create replicat
-- get data stream
-- list process metrics
-- delete an extract process
-- list data streams
-- delete extract
-- core issue extract command
-- get details of a specific extract process
-- cdc
-- replicat process management
-- real-time replication
-- oracle goldengate
-- create data stream
-- list distribution paths
-- core get extract
-- core issue replicat command
-- list all big data replicat processes
-- enterprise
-- data stream management
-- core get replicat
-- list data target types
-- get service health details
-- list all extract processes from the core goldengate deployment
-- issue a command (start, stop, kill) to an extract
-- list credential domains
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- core list extracts
-- list credential store domains
-- list extracts
-- data replication
-- list replicats
-- service health
-- credential store management
-- create extract
-- bigdata list replicats
-- create a new extract process
-- get details of a specific replicat process
-- data synchronization
-- list all extract processes
-- list big data replicats
-- core list replicats
-- distribution path management
-- get a big data replicat process
-- create a new data stream for downstream distribution
-- list available big data target types
-- list all replicat processes
-- data integration
-- big data replicat processes
-- list data distribution paths
-- execute a ggsci-style goldengate command
-- available big data target types
-- list all configured data streams
-- create a new replicat process
-- extract process management across core and big data deployments
-- get extract
-- get performance metrics for all running processes
-- list all data streams
-- bigdata get replicat
-- issue a command to a replicat process
-- get service health
-- get configuration of a specific data stream
-- core create extract
 - execute command
-- get a specific extract process
-- database
+- core get replicat
+- core issue extract command
+- create a new extract process
+- create a new replicat process
+- list data streams
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- distribution path management
+- issue a command (start, stop, kill) to an extract
+- get performance metrics for all running processes
+- core create extract
+- data integration
+- issue a command to a replicat process
+- list available big data target types
+- data synchronization
+- get extract
+- list extracts
+- list all replicat processes
+- bigdata get replicat
+- extract process management across core and big data deployments
 - individual extract operations
+- credential store management
+- core issue replicat command
+- oracle goldengate
+- list big data replicats
+- get service health
+- get a big data replicat process
+- delete extract
+- list all data streams
+- list credential store domains
+- data stream management
+- list data distribution paths
+- list all extract processes from the core goldengate deployment
+- database
+- available big data target types
+- create extract
+- create data stream
+- get details of a specific replicat process
+- core list replicats
+- list all big data replicat processes
+- service health
+- delete an extract process
+- core list extracts
+- get details of a specific extract process
+- enterprise
+- get service health details
+- list distribution paths
+- core create replicat
+- execute a ggsci-style goldengate command
+- replicat process management
+- list credential domains
+- create a new data stream for downstream distribution
+- cdc
+- list all extract processes
+- list all configured data streams
+- get configuration of a specific data stream
+- get data stream
+- list data target types
+- real-time replication
+- big data replicat processes
+- core get extract
+- list replicats
+- list process metrics
+- get a specific extract process
+- bigdata list replicats
+- data replication
 slug: data-replication
 source_filename: data-replication.yaml
 source_heading: Capability Spec

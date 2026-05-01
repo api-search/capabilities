@@ -9,12 +9,12 @@ personas: []
 provider_name: Apache CloudStack
 provider_slug: apache-cloudstack
 search_terms:
-- apache
-- cloud
-- iaas
-- infrastructure
-- open source
 - virtualization
+- iaas
+- cloud
+- open source
+- apache
+- infrastructure
 slug: cloudstack-iaas-management
 source_filename: cloudstack-iaas-management.yaml
 source_heading: Capability Spec

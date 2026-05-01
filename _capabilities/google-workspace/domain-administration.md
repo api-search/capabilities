@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- individual user management.
-- create a new user.
-- create org unit
-- user account management.
-- list users
-- create an organizational unit.
 - get user
-- google workspace
-- sign out a user from all sessions.
-- update a user.
-- patch user properties.
-- email
-- delete user
-- make user admin
 - get group
-- sign out user
-- list org units
-- group management.
-- get group details.
-- make a user an admin.
-- create a new user in the domain.
-- undelete a deleted user.
-- user management
-- get user details.
-- update group
-- collaboration
-- domain administration
-- create user
-- delete a group.
-- list users in the google workspace domain.
-- list organizational units.
-- patch user
-- productivity
-- storage
-- list groups in the domain.
-- create a new group.
-- undelete user
-- organizational unit management.
-- delete a user.
-- create group
-- list groups
-- update a group.
 - calendar
-- video conferencing
+- update a group.
+- delete a user.
+- delete group
+- create a new user in the domain.
+- list groups.
 - create a group.
 - individual group management.
-- list groups.
+- create org unit
+- delete a group.
+- individual user management.
+- list groups
+- undelete user
+- list org units
+- email
+- domain administration
+- make a user an admin.
+- update a user.
 - group management
+- patch user properties.
+- google workspace
+- delete user
+- update group
+- sign out a user from all sessions.
+- create a new group.
+- get group details.
+- user management
+- organizational unit management.
+- sign out user
+- video conferencing
 - update user
+- get user details.
+- group management.
+- patch user
+- user account management.
+- list users
+- collaboration
+- productivity
+- create a new user.
+- make user admin
+- create an organizational unit.
+- list groups in the domain.
+- create user
+- list users in the google workspace domain.
 - list users in the domain.
-- delete group
+- undelete a deleted user.
+- list organizational units.
+- create group
+- storage
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

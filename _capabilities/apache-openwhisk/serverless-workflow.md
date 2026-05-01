@@ -31,50 +31,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- DevOps Engineer
-- activation history
-- create a new serverless action
-- list all actions
-- cloud native
-- list triggers
-- serverless
-- list all action packages
-- apache
-- apache openwhisk
-- invoke action
-- list all event triggers
-- event triggers
-- event driven
-- action packages
-- faas
 - get activation
-- open source
-- Platform Administrator
+- get details of a specific activation
+- serverless function actions
+- delete a serverless action
+- create action
+- list all serverless functions/actions
+- create a new serverless action
+- event driven
+- list all actions
+- serverless
+- list rules
+- DevOps Engineer
+- list all event triggers
+- apache openwhisk
+- activation history
 - serverless computing
-- manages serverless deployments and ci/cd pipelines
-- functions as a service
-- invoke a serverless action/function
-- list packages
+- fire trigger
+- list all trigger-to-action rules
+- builds event-driven applications using serverless functions
 - list activation history
-- Backend Developer
 - list actions
 - invoke an action
-- manages namespaces, limits, and platform configuration
-- list activations
-- list all trigger-to-action rules
-- serverless function actions
-- list rules
-- create action
-- fire trigger
-- delete action
-- fire an event trigger
-- functions
+- action packages
+- manages serverless deployments and ci/cd pipelines
+- cloud native
+- list triggers
 - event-driven architecture
-- list all serverless functions/actions
-- delete a serverless action
+- invoke action
+- list activations
+- Backend Developer
 - event-driven
-- get details of a specific activation
-- builds event-driven applications using serverless functions
+- invoke a serverless action/function
+- delete action
+- open source
+- list all action packages
+- event triggers
+- apache
+- functions
+- list packages
+- fire an event trigger
+- faas
+- manages namespaces, limits, and platform configuration
+- functions as a service
+- Platform Administrator
 slug: serverless-workflow
 source_filename: serverless-workflow.yaml
 source_heading: Capability Spec

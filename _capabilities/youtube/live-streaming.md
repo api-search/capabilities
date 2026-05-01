@@ -66,60 +66,60 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- add a live chat moderator
+- broadcasting
+- create a new live broadcast event
 - manage live broadcasts
-- delete a live broadcast
-- google
-- transition broadcast status (testing, live, complete)
 - create stream
-- create a new live video stream
-- video
-- list live broadcasts
-- delete broadcast
-- list chat messages
-- create a new live broadcast
-- delete a broadcast
-- update broadcast
-- youtube
-- live streaming
-- bind broadcast
-- videos
-- remove a live chat moderator
-- transition broadcast
-- bind a broadcast to a video stream
 - update stream
-- create a new live stream
 - send a live chat message
-- streaming
+- bind broadcast
+- list broadcasts
+- send a message to live chat
+- create a new live stream
 - delete a live chat message
+- list live streams
+- google
+- create broadcast
+- manage live chat moderators
+- transition broadcast status (testing, live, complete)
+- update broadcast
+- update stream settings
+- remove a live chat moderator
+- delete a live broadcast
 - update broadcast settings
+- manage live video streams
+- list moderators
+- transition broadcast
+- create a new live broadcast
+- delete broadcast
+- create a new live video stream
+- manage live chat messages
+- add moderator
+- media
+- youtube
+- videos
+- list streams
+- delete a broadcast
+- bind a broadcast to a video stream
+- list live broadcasts
+- remove moderator
+- update live broadcast settings
+- list messages in live chat
+- streaming
+- video
+- live streaming
+- social
+- list live video streams
+- list chat messages
+- list youtube live broadcasts
+- list live chat messages
+- list live chat moderators
 - delete a live stream
 - live chat
-- update live broadcast settings
-- remove moderator
-- list streams
-- manage live chat messages
-- send chat message
-- manage live chat moderators
-- list broadcasts
-- media
-- list moderators
-- send a message to live chat
-- list live video streams
 - delete chat message
-- add moderator
-- list messages in live chat
+- send chat message
+- add a live chat moderator
 - delete stream
-- list youtube live broadcasts
-- broadcasting
-- create broadcast
-- list live chat messages
-- update stream settings
-- social
-- create a new live broadcast event
-- manage live video streams
-- list live chat moderators
-- list live streams
 slug: live-streaming
 source_filename: live-streaming.yaml
 source_heading: Capability Spec

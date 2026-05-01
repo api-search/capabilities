@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- create incident
-- get incident
-- create a new incident response plan with escalation contacts
-- get details of a specific incident
-- manage incident response plans
-- incident management
-- list timeline events
-- operations
-- aws
-- list all response plans
-- automated incident response plans and escalation
-- list active incidents
-- monitors system reliability and coordinates incident resolution
 - start a new incident and trigger response plan
-- Site Reliability Engineer
-- create response plan
-- list response plans
-- list incidents
-- automation
-- update incident
-- list timeline events for an incident
-- devops
-- create a new incident
-- Operations Engineer
-- creating, tracking, and resolving operational incidents
-- manages incident response plans and responds to operational incidents
-- update the summary or status of an active incident
-- list active and recent incidents
 - manage active incidents
+- create a new incident response plan with escalation contacts
+- monitors system reliability and coordinates incident resolution
+- create incident
+- list all response plans
+- create a new incident
+- list active and recent incidents
+- automation
+- list active incidents
+- creating, tracking, and resolving operational incidents
+- aws
+- get details of a specific incident
+- Operations Engineer
+- update the summary or status of an active incident
+- manages incident response plans and responds to operational incidents
+- list timeline events
+- create response plan
+- devops
+- get incident
+- list response plans
 - list all incident response plans
+- operations
+- incident management
+- list incidents
+- update incident
+- automated incident response plans and escalation
+- list timeline events for an incident
+- Site Reliability Engineer
+- manage incident response plans
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

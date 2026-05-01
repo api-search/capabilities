@@ -30,28 +30,28 @@ personas: []
 provider_name: Apache James
 provider_slug: apache-james
 search_terms:
-- list all user accounts in the james mail server
-- imap
-- create a new email domain in the james server
-- list users
-- java
-- smtp
-- email
-- open source
-- Mail Administrator
-- create domain
-- list all email domains configured in the james server
-- create a new mail user account
-- create user
 - mail server
+- list domains
+- list all email domains configured in the james server
 - list asynchronous administrative tasks and their statuses
+- smtp
+- imap
 - email administration
 - apache james
-- list tasks
-- jmap
+- email
 - administrators who manage james mail server domains, users, and queues
+- Mail Administrator
+- jmap
+- create domain
+- create a new email domain in the james server
+- open source
+- java
+- list users
+- list tasks
+- list all user accounts in the james mail server
+- create a new mail user account
 - mail server management
-- list domains
+- create user
 slug: mail-server-management
 source_filename: mail-server-management.yaml
 source_heading: Capability Spec

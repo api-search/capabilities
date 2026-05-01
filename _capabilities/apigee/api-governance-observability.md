@@ -20,40 +20,40 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- API Product Manager
-- api gateway
-- API Platform Engineer
-- google cloud
-- list observed apis
-- discover shadow apis
-- shadow apis discovered via apim.
-- list apis
-- integrations
-- api discovery
-- api catalog from api hub.
-- api catalog
-- apigee
-- list all apis in the apigee api hub catalog.
-- enterprise
-- list all catalogued apis.
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- api management
-- list catalogued apis
-- analytics
-- engineer managing api proxies, deployments, and policies in apigee.
-- manager packaging api products and managing developer relationships.
-- microservices
-- list api specifications tracked in the apigee registry.
-- developer portal
-- list observed shadow apis.
-- api governance
-- monetization
 - leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- hybrid
-- list api specs
-- Platform Architect
+- api discovery
+- developer portal
+- list all apis in the apigee api hub catalog.
+- microservices
+- api catalog
+- list apis
+- list catalogued apis
+- API Product Manager
+- list api specifications tracked in the apigee registry.
+- list observed shadow apis.
 - API Governance Lead
+- analytics
 - architect overseeing api platform strategy and governance across the organization.
+- integrations
+- api catalog from api hub.
+- monetization
+- shadow apis discovered via apim.
+- list api specs
+- google cloud
+- Platform Architect
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- hybrid
+- enterprise
+- api management
+- discover shadow apis
+- api governance
+- manager packaging api products and managing developer relationships.
+- apigee
+- engineer managing api proxies, deployments, and policies in apigee.
+- API Platform Engineer
+- list all catalogued apis.
+- api gateway
+- list observed apis
 - api hub
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml

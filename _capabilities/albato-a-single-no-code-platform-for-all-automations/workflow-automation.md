@@ -24,42 +24,42 @@ personas: []
 provider_name: Albato A Single No Code Platform For All Automations
 provider_slug: albato-a-single-no-code-platform-for-all-automations
 search_terms:
-- list apps
-- monitors automation health, execution rates, and error rates. reviews workflow performance and ensures business processes run reliably.
-- list connections
-- integrations
 - list execution history for an albato automation, showing successes, errors, and step completion counts.
-- workflow automation
-- app integration
-- embedded ipaas
-- list all albato automation workflows including their status, trigger counts, and success/error rates.
-- get details for a specific albato automation workflow by id.
-- list albato apps
-- no-code
-- webhooks
-- list albato connections
-- automation workflows
-- creates and manages no-code automation workflows in albato, connecting apps and configuring triggers, actions, and conditions to automate business processes.
-- get albato automation
-- embedded integration
-- albato
-- list automations
+- connect apps and manage webhooks
+- list all app connections configured in the albato account.
 - build and manage no-code automation workflows across 1,000+ apps
 - available app integrations
-- browse 1,000+ available app integrations in albato. search by name or filter by category.
-- Operations Manager
-- no-code automation
-- list albato executions
-- list all app connections
-- list all automation workflows
-- app connections
-- list all app connections configured in the albato account.
-- ipaas
-- connect apps and manage webhooks
-- list albato automations
-- browse available apps
-- create and manage automation workflows
 - Automation Builder
+- list connections
+- albato
+- get details for a specific albato automation workflow by id.
+- integrations
+- list all app connections
+- list apps
+- embedded integration
+- no-code automation
+- workflow automation
+- get albato automation
+- app connections
+- browse available apps
+- list automations
+- webhooks
+- creates and manages no-code automation workflows in albato, connecting apps and configuring triggers, actions, and conditions to automate business processes.
+- list all albato automation workflows including their status, trigger counts, and success/error rates.
+- list albato executions
+- list albato automations
+- automation workflows
+- list all automation workflows
+- embedded ipaas
+- browse 1,000+ available app integrations in albato. search by name or filter by category.
+- no-code
+- monitors automation health, execution rates, and error rates. reviews workflow performance and ensures business processes run reliably.
+- create and manage automation workflows
+- ipaas
+- list albato apps
+- list albato connections
+- Operations Manager
+- app integration
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

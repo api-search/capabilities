@@ -38,45 +38,45 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- chat
-- list emoji
-- list stars
-- messaging
-- list files.
-- post a message.
-- add a reaction.
-- list starred items.
-- bots
-- communication
-- manage channel bookmarks.
-- add pin
-- message management.
-- slack
-- search messages and files.
-- manage reminders
-- add reaction
-- manage reminders.
-- search
-- manage bookmarks
-- list conversations
-- t1
-- collaboration
-- manage canvases.
-- pin a message.
 - manage lists.
-- search workspace.
-- productivity
-- file management.
-- search messages
-- manage canvases
-- post a message to a channel.
-- list files
-- list custom emoji.
-- manage lists
-- team communication
-- conversation management.
-- list conversations.
+- list stars
+- add reaction
+- slack
+- chat
 - post message
+- message management.
+- manage channel bookmarks.
+- list conversations
+- manage bookmarks
+- bots
+- search workspace.
+- post a message to a channel.
+- search
+- list conversations.
+- manage lists
+- manage reminders
+- list files
+- pin a message.
+- list custom emoji.
+- list files.
+- manage canvases.
+- t1
+- search messages
+- list starred items.
+- list emoji
+- file management.
+- add pin
+- communication
+- messaging
+- post a message.
+- collaboration
+- manage canvases
+- productivity
+- manage reminders.
+- search messages and files.
+- team communication
+- add a reaction.
+- conversation management.
 slug: messaging-communication
 source_filename: messaging-communication.yaml
 source_heading: Capability Spec

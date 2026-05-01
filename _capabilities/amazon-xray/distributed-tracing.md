@@ -31,42 +31,42 @@ personas: []
 provider_name: Amazon X-Ray
 provider_slug: amazon-xray
 search_terms:
-- Developer
-- get x-ray groups used to filter and organize traces.
-- get service graph
-- get summaries of x-ray insights identifying anomalies and performance issues.
-- trace filtering groups.
-- application tracing and service map visualization
-- latency analysis and bottleneck identification
-- monitoring
-- get the service map.
-- get trace groups.
-- aws
-- batch get traces
-- service dependency visualization.
-- get trace summaries for a time range.
-- get the service map showing inter-service dependencies and request flow.
-- get trace summaries
-- retrieve complete trace documents for specific trace ids.
-- get sampling rules
-- Site Reliability Engineer
 - distributed tracing
+- observability
+- Site Reliability Engineer
+- get trace groups.
+- get x-ray groups used to filter and organize traces.
 - debugging
-- get all trace sampling rules to understand data collection configuration.
-- trace sampling configuration.
-- analyzes traces to debug application issues.
+- retrieve complete trace documents for specific trace ids.
+- Developer
 - application performance insights.
-- get summaries of distributed traces for a specified time range.
 - get insight summaries
-- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
-- get insight summaries.
+- get all trace sampling rules to understand data collection configuration.
+- trace filtering groups.
+- get the service map showing inter-service dependencies and request flow.
+- aws
+- get groups
+- get summaries of x-ray insights identifying anomalies and performance issues.
+- application performance
+- application tracing and service map visualization
 - monitors service health and performance using x-ray.
-- root cause analysis using distributed trace data
 - trace data access and analysis.
 - get sampling rules.
-- get groups
-- application performance
-- observability
+- workflow for developers and operations teams to analyze traces, service maps, sampling rules, groups, and performance insights.
+- root cause analysis using distributed trace data
+- trace sampling configuration.
+- get trace summaries for a time range.
+- get summaries of distributed traces for a specified time range.
+- get the service map.
+- get sampling rules
+- monitoring
+- get trace summaries
+- latency analysis and bottleneck identification
+- batch get traces
+- service dependency visualization.
+- get insight summaries.
+- analyzes traces to debug application issues.
+- get service graph
 slug: distributed-tracing
 source_filename: distributed-tracing.yaml
 source_heading: Capability Spec

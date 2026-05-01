@@ -32,39 +32,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- get signals.
-- get signals
-- get callstreet events
-- get global regulatory filings.
-- conversational ai query.
-- natural language search.
-- get material event signals.
-- get earnings call transcripts.
 - nlp
+- market data
+- get news articles.
+- get callstreet events
+- streetaccount news.
+- conversational query
+- portfolio analytics
+- news
+- financial
+- search answers
+- financial data
+- search
+- conversational ai query.
+- run nlp analysis on text.
+- get global regulatory filings.
+- run nlp
+- get news
+- get regulatory filings.
+- get streetaccount news.
+- factset
 - global filings.
 - material event signals.
-- get news articles.
-- market data
-- news
-- get filings
-- search answers
+- get earnings call transcripts.
 - search for answers.
-- factset
-- search
-- run nlp analysis on text.
-- signals
-- portfolio analytics
-- get regulatory filings.
-- content
-- financial
-- financial data
-- get streetaccount news.
-- run nlp
-- research
-- get news
-- conversational query
+- get filings
 - investment analytics
-- streetaccount news.
+- research
+- signals
+- natural language search.
+- content
+- get signals
+- get signals.
+- get material event signals.
 slug: content-intelligence
 source_filename: content-intelligence.yaml
 source_heading: Capability Spec

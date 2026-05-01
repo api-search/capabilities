@@ -54,58 +54,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- delete issue
-- get project details.
-- create a new issue.
-- get statuses
-- get all jira issue types.
 - delete an issue.
-- list all jira projects.
-- agile
-- get issue types
-- itsm
-- add a comment.
-- get issue
-- issue comments.
-- get transitions
-- single project.
-- add a comment to a jira issue.
-- issue lifecycle management.
+- perform a transition.
 - project management
-- add comment
+- transition an issue through its workflow.
+- itsm
+- get jira issue details.
 - get all jira priorities.
-- workflow transitions.
-- get comments
-- search with jql.
-- project management.
-- edit an issue.
-- get all jira issue statuses.
-- get project
+- issue lifecycle management.
 - create issue
+- list projects
+- edit an existing jira issue.
+- get all jira issue statuses.
+- edit an issue.
+- jql issue search.
+- get comments on a jira issue.
+- edit issue
 - search issues
+- add comment
+- workflow transitions.
+- delete issue
+- search jira issues using jql.
+- search with jql.
+- create a new issue.
+- single project.
+- get priorities
+- issue comments.
+- get available workflow transitions.
+- get jira project details.
+- get comments
+- agile
+- get issue comments.
+- service management
+- get project
+- add a comment.
+- get all jira issue types.
+- get available transitions.
+- list all jira projects.
+- jira
 - single issue operations.
 - delete a jira issue.
-- get available transitions.
-- get jira issue details.
-- issue tracking
-- get jira project details.
-- transition an issue through its workflow.
-- get issue comments.
-- list projects
-- get available workflow transitions.
-- edit an existing jira issue.
-- list all projects.
+- get issue
+- get issue types
+- add a comment to a jira issue.
 - get issue details.
-- get priorities
-- search jira issues using jql.
-- do transition
-- jira
-- jql issue search.
-- service management
-- perform a transition.
-- edit issue
+- issue tracking
 - create a new jira issue.
-- get comments on a jira issue.
+- get project details.
+- project management.
+- list all projects.
+- get statuses
+- do transition
+- get transitions
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

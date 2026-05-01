@@ -49,47 +49,47 @@ personas: []
 provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
-- create a project
-- resource management
-- create a new google cloud project
-- google cloud
-- search for organizations
-- governance
-- cloud computing
-- get folder
-- folder management
-- update project
-- list google cloud projects under a parent
-- search for projects matching a query
-- create a new tag key
-- create tag key
-- create project
-- delete a google cloud project
-- update a project
-- project management
-- search organizations
-- delete a folder
-- search projects
-- api management
-- delete a project
 - get project details
-- create a folder
-- create folder
-- get project
-- delete folder
-- list tag keys
-- single project operations
-- list tag keys for resource tagging
-- platform as a service
-- list folders under a parent
-- organization operations
-- get organization details
-- list folders
-- get folder details
-- delete project
-- infrastructure
-- list projects
 - get organization
+- project management
+- governance
+- delete folder
+- list tag keys for resource tagging
+- create a new google cloud project
+- list projects
+- single project operations
+- create a folder
+- list tag keys
+- google cloud
+- search projects
+- search for projects matching a query
+- delete a google cloud project
+- create project
+- infrastructure
+- api management
+- resource management
+- create a new tag key
+- create a project
+- update a project
+- organization operations
+- get folder details
+- get project
+- folder management
+- delete a project
+- create tag key
+- create folder
+- platform as a service
+- delete project
+- get organization details
+- cloud computing
+- list google cloud projects under a parent
+- search organizations
+- get folder
+- list folders under a parent
+- delete a folder
+- search for organizations
+- list folders
+- update project
 slug: resource-hierarchy-management
 source_filename: resource-hierarchy-management.yaml
 source_heading: Capability Spec

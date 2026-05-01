@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- export api specifications to standard formats.
-- import api specifications from various formats.
-- API Developer
-- documentation
-- export openapi spec
-- export
 - import openapi
-- managing the complete lifecycle of api specifications from design to deployment.
-- import openapi spec
-- api design
-- collaboration
-- apidog
-- developer building and managing apis using apidog's design-first platform.
-- design-first
-- import
-- export openapi
-- api lifecycle
-- export openapi specification from apidog project.
-- Platform Engineer
 - mocking
-- platform
-- import a postman collection into apidog for converting to openapi-based workflows.
-- import openapi specification into apidog project.
-- api testing
+- api design
 - import an openapi/swagger specification into an apidog project for design-first development.
-- engineer automating api specification workflows via ci/cd integration.
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- design-first
+- import openapi spec
+- export openapi spec
+- API Developer
+- platform
+- api testing
+- apidog
+- export openapi
 - import postman collection
+- managing the complete lifecycle of api specifications from design to deployment.
+- engineer automating api specification workflows via ci/cd integration.
+- export api specifications to standard formats.
+- Platform Engineer
+- developer building and managing apis using apidog's design-first platform.
+- documentation
+- export openapi specification from apidog project.
+- import a postman collection into apidog for converting to openapi-based workflows.
+- collaboration
+- export
+- import
 - unified workflow for managing api specifications lifecycle.
+- api lifecycle
+- import openapi specification into apidog project.
+- import api specifications from various formats.
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

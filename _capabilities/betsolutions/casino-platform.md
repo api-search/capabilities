@@ -30,46 +30,46 @@ personas: []
 provider_name: BetSolutions
 provider_slug: betsolutions
 search_terms:
-- list games
-- sports betting
-- betting
-- Platform Developer
-- get the complete casino game catalog
-- get player profile
-- casino game catalog
-- table games
-- developer building casino platform features using the betsolutions api
-- deposit funds
-- available casino games and product metadata
-- slots
-- withdraw funds from player wallet
-- casinos
-- list casino games
-- withdraw funds
-- get player profile and account information
-- get player
-- deposit funds to a casino player's wallet account for game play
-- get the complete list of available betsolutions casino games with rtp and product metadata
-- player profile and account information
-- gambling
-- withdraw funds from a casino player's wallet account
-- deposit funds to a player's casino wallet
-- wallet management, game catalog, and player operations for casino operators
-- retrieve current wallet balance for a player
-- casino
-- wallet
-- betsolutions
-- Casino Operator
-- online casino operator integrating betsolutions into their gaming platform
-- gaming
-- player fund deposits, withdrawals, and balance operations
 - deposit funds to player wallet
-- withdraw funds from a player's casino wallet
-- get player balance
-- player information
+- Platform Developer
+- withdraw funds from a casino player's wallet account
+- get player profile
 - get profile and account information for a casino player
 - get player wallet balance
 - get the current wallet balance for a casino player
+- betting
+- get the complete casino game catalog
+- player profile and account information
+- casinos
+- betsolutions
+- sports betting
+- get the complete list of available betsolutions casino games with rtp and product metadata
+- developer building casino platform features using the betsolutions api
+- get player
+- withdraw funds
+- available casino games and product metadata
+- player information
+- casino game catalog
+- retrieve current wallet balance for a player
+- withdraw funds from a player's casino wallet
+- online casino operator integrating betsolutions into their gaming platform
+- deposit funds to a casino player's wallet account for game play
+- withdraw funds from player wallet
+- slots
+- player fund deposits, withdrawals, and balance operations
+- deposit funds to a player's casino wallet
+- list games
+- Casino Operator
+- get player balance
+- gambling
+- casino
+- list casino games
+- wallet management, game catalog, and player operations for casino operators
+- get player profile and account information
+- deposit funds
+- table games
+- wallet
+- gaming
 slug: casino-platform
 source_filename: casino-platform.yaml
 source_heading: Capability Spec

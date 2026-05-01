@@ -14,34 +14,34 @@ personas: []
 provider_name: nOps
 provider_slug: nops
 search_terms:
-- enable scheduler
-- finops
-- optimization
-- list products in a map project
-- disable scheduler
-- cloud costs
-- nops
-- list map projects
-- list map products
-- list resources in a map project
-- get map migration project details
-- get utilization summary
-- costs
-- manually trigger a scheduler
-- list map resources
-- get scheduler workload summary
-- create a scheduler
-- get scheduler workload recommendations
-- get map project
-- get utilization recommendations
-- get workload summary
-- map migration projects
-- enable a scheduler
 - list map migration projects
-- create scheduler
-- trigger scheduler
+- list map products
+- get map project
+- get workload summary
+- cloud costs
+- map migration projects
+- list map resources
+- manually trigger a scheduler
+- costs
+- list products in a map project
+- list resources in a map project
+- get utilization summary
+- create a scheduler
+- get scheduler workload summary
+- get map migration project details
 - get workload recommendations
+- get utilization recommendations
+- enable a scheduler
+- list map projects
+- get scheduler workload recommendations
+- finops
+- trigger scheduler
+- create scheduler
+- enable scheduler
+- optimization
 - disable a scheduler
+- disable scheduler
+- nops
 slug: cloud-cost-optimization
 source_filename: cloud-cost-optimization.yaml
 source_heading: Capability Spec

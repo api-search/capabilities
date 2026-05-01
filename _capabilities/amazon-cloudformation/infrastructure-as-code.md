@@ -11,13 +11,13 @@ provider_name: Amazon CloudFormation
 provider_slug: amazon-cloudformation
 search_terms:
 - DevOps Engineer
+- amazon cloudformation
 - aws
-- infrastructure as code
+- devops
 - amazon web services
 - iac
-- devops
 - cloudformation
-- amazon cloudformation
+- infrastructure as code
 slug: infrastructure-as-code
 source_filename: infrastructure-as-code.yaml
 source_heading: Capability Spec

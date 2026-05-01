@@ -10,11 +10,11 @@ provider_name: Bancontact
 provider_slug: bancontact
 search_terms:
 - banking
-- belgium
 - payments
-- e-commerce
-- debit cards
 - fintech
+- belgium
+- debit cards
+- e-commerce
 slug: bancontact-payment-capability
 source_filename: bancontact-payment-capability.yaml
 source_heading: Capability Spec

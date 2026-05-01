@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
-- get profile
-- get optimization recommendations for a profiling group
-- list profile collection times for a profiling group
-- create a new profiling group
-- get recommendations
-- list profiling groups in the account
-- list findings reports
-- DevOps Engineer
-- Developer
-- post agent profile
-- devops engineer persona.
-- machine learning
-- profiling
-- amazon
-- aws
-- platform engineer persona.
-- submit profiling agent data
-- create profiling group
-- list profiling groups
-- developer persona.
-- get details about a profiling group
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- get aggregated profile data
-- devops
-- describe profiling group
-- Platform Engineer
-- list findings reports for a profiling group
 - unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
-- list profile times
+- developer persona.
+- get profile
+- devops engineer persona.
+- Developer
+- amazon
+- DevOps Engineer
+- list profiling groups in the account
+- aws
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- create a new profiling group
+- get aggregated profile data
 - application performance
+- get optimization recommendations for a profiling group
+- list findings reports for a profiling group
+- list findings reports
+- machine learning
+- list profiling groups
+- get details about a profiling group
+- devops
+- Platform Engineer
+- describe profiling group
+- platform engineer persona.
+- post agent profile
+- get recommendations
+- create profiling group
+- profiling
+- list profile collection times for a profiling group
+- list profile times
+- submit profiling agent data
 slug: amazon-codeguru-profiler-application-performance
 source_filename: amazon-codeguru-profiler-application-performance.yaml
 source_heading: Capability Spec

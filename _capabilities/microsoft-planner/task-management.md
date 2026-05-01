@@ -63,64 +63,64 @@ personas: []
 provider_name: Microsoft Planner
 provider_slug: microsoft-planner
 search_terms:
-- create plan
-- update a plan
-- planner
-- list plans for a group
-- get bucket
-- update a bucket
-- delete a bucket
-- list all buckets in a plan
 - delete a plan
+- delete task
+- create a new bucket in a plan
+- create a new task in a plan
+- update a plan
+- project management
+- get bucket
+- create task
+- list tasks in a specific bucket
+- delete a bucket
+- list bucket tasks
+- list group plans
+- get task details including checklist and references
+- get task details
+- get details of a specific plan
+- manage a specific bucket
+- get plan details including category labels
+- get details of a specific bucket
+- microsoft 365
+- microsoft
+- list plans for a group
+- manage plans
+- create a new task
+- list tasks assigned to the current user
+- list my tasks
+- manage tasks
+- manage a specific plan
+- update a task
+- get task
+- list plan tasks
 - update bucket
 - create a new plan
-- manage tasks
-- get plan
-- manage a specific bucket
-- project management
-- create a new task
-- get details of a specific bucket
-- update a task
-- delete task
-- delete a task
-- update task details including checklist items
-- create a new task in a plan
-- delete plan
-- create a new bucket
-- task management
-- manage a specific task
-- get task details
-- get plan details
-- create a new planner plan
-- manage buckets
-- collaboration
-- list plan buckets
-- list bucket tasks
-- get bucket details
-- update plan
-- get plan details including category labels
-- manage plans
-- update task
-- list plan tasks
-- get details of a specific plan
-- list tasks in a specific bucket
-- productivity
-- manage a specific plan
-- list tasks assigned to the current user
-- list group plans
-- update plan details
-- microsoft
 - list all tasks in a plan
-- microsoft 365
+- create a new bucket
+- get bucket details
+- update task
+- manage a specific task
 - delete bucket
-- create task
-- create a new bucket in a plan
-- get details of a specific task
-- list my tasks
-- update task details
-- get task details including checklist and references
-- get task
+- create plan
+- collaboration
+- delete plan
+- delete a task
+- create a new planner plan
+- productivity
+- planner
+- manage buckets
+- list all buckets in a plan
+- update task details including checklist items
 - create bucket
+- get plan details
+- get plan
+- list plan buckets
+- update plan details
+- get details of a specific task
+- task management
+- update task details
+- update plan
+- update a bucket
 slug: task-management
 source_filename: task-management.yaml
 source_heading: Capability Spec

@@ -53,61 +53,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- update table
-- scan an entire table or index.
-- database management
-- update a table.
-- query
-- query operations.
-- serverless
-- item operations.
-- delete an item.
-- batch write item
-- individual table management.
-- list dynamodb tables.
-- list on-demand backups.
-- aws
-- table management.
-- list backups
-- get an item by primary key.
-- delete a table.
-- write items in a transaction.
-- create a table.
-- get multiple items from one or more tables.
-- nosql
-- delete table
 - query items.
-- batch get item
-- get items in a transaction.
-- put item
-- create backup
-- list tables
-- update an item.
-- create a new dynamodb table.
-- delete a dynamodb table.
-- transact write items
-- create an on-demand backup.
-- create or replace an item.
-- delete item
-- list tables.
-- scan
+- list on-demand backups.
+- table management.
+- item operations.
+- update a table.
 - describe a table.
-- get item
-- create table
+- create a new dynamodb table.
+- scan
+- batch get item
+- database management
+- batch write item
+- create an on-demand backup.
 - document store
-- key-value
-- query items by primary key.
-- cloud
-- update item
-- scan a table.
-- get an item.
+- serverless
 - describe a dynamodb table.
-- describe table
-- transact get items
-- managed service
-- put or delete multiple items in batch.
 - dynamodb
+- aws
+- query items by primary key.
+- delete item
 - database
+- list tables.
+- put or delete multiple items in batch.
+- nosql
+- query operations.
+- put item
+- update item
+- delete a table.
+- list backups
+- create a table.
+- delete table
+- transact write items
+- scan an entire table or index.
+- individual table management.
+- get items in a transaction.
+- update an item.
+- transact get items
+- get an item.
+- create or replace an item.
+- create table
+- list dynamodb tables.
+- create backup
+- scan a table.
+- delete a dynamodb table.
+- query
+- cloud
+- managed service
+- key-value
+- list tables
+- delete an item.
+- update table
+- write items in a transaction.
+- describe table
+- get multiple items from one or more tables.
+- get an item by primary key.
+- get item
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

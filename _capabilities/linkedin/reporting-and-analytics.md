@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
+- uses sales navigator for lead generation and crm sync.
+- marketing
+- get ad analytics
+- business
+- professional networking
+- careers
+- get learning activity reports
+- analytics
+- b2b advertising, audience targeting, and campaign analytics.
+- retrieve ad analytics by various pivots and dimensions.
+- authentication, sharing, and verification for consumer apps.
+- retrieve learning activity reports.
+- recruiting
+- reporting
+- learning
+- retrieve ad analytics by various pivots.
+- data portability and advertiser transparency for dma.
+- job posting, recruiting, and applicant tracking.
+- sales intelligence, lead management, and crm integration.
+- social media
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- posts jobs and manages candidates through ats integrations.
+- archives communications for regulatory compliance.
+- tracks employee learning activity and completions.
+- manages b2b ad campaigns and audience targeting on linkedin.
 - message archiving and regulatory communications governance.
 - employee development tracking and content access.
-- social media
-- sales intelligence, lead management, and crm integration.
-- reporting
 - integrates linkedin authentication and sharing into applications.
-- tracks employee learning activity and completions.
-- archives communications for regulatory compliance.
-- careers
-- manages b2b ad campaigns and audience targeting on linkedin.
-- retrieve ad analytics by various pivots.
-- get ad analytics
-- get learning activity reports
-- uses sales navigator for lead generation and crm sync.
-- analytics
-- recruiting
-- posts jobs and manages candidates through ats integrations.
-- b2b advertising, audience targeting, and campaign analytics.
-- learning
-- business
-- marketing
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- retrieve ad analytics by various pivots and dimensions.
-- job posting, recruiting, and applicant tracking.
-- data portability and advertiser transparency for dma.
-- retrieve learning activity reports.
-- professional networking
 - linkedin
-- authentication, sharing, and verification for consumer apps.
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

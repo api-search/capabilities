@@ -26,37 +26,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- DevOps Engineer
-- list all instances registered with a specific cloud map service
-- discover healthy service instances by namespace and service name
-- list services registered in cloud map
-- create a new cloud map service within a namespace
-- dns
-- create a service
-- list all namespaces
-- aws
-- amazon web services
-- engineers managing service registries and microservice infrastructure
-- create service
-- discover instances
-- microservices
-- register instance
-- dynamic microservice registration and discovery
 - list services
-- service discovery
+- microservices
+- discover healthy service instances by namespace and service name
+- list all namespaces
 - list instances
-- cloud map
+- engineers managing service registries and microservice infrastructure
+- dynamic microservice registration and discovery
+- list all cloud map service discovery namespaces
+- DevOps Engineer
+- register instance
+- create a service
+- list all instances registered with a specific cloud map service
+- aws
+- manage services
+- amazon web services
+- discover healthy instances
+- service discovery
+- create a new cloud map service within a namespace
 - devops
 - Platform Engineer
-- devops practitioners automating service registration and health monitoring
-- list all cloud map service discovery namespaces
-- discover service instances
-- register an instance with a cloud map service
-- discover healthy instances
-- dynamic service registry and health-based routing
 - list namespaces
+- create service
+- register an instance with a cloud map service
 - manage service discovery namespaces
-- manage services
+- list services registered in cloud map
+- devops practitioners automating service registration and health monitoring
+- discover instances
+- dns
+- cloud map
+- discover service instances
+- dynamic service registry and health-based routing
 slug: service-discovery
 source_filename: service-discovery.yaml
 source_heading: Capability Spec

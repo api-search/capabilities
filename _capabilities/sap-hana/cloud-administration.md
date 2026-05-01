@@ -39,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- get instance
-- performance metrics.
-- update alert rules for an instance.
-- update instance
-- delete an instance mapping.
-- list all instances in the inventory.
-- update alert rules
-- create mapping
-- create a new instance mapping.
-- retrieve database performance metrics.
-- monitoring
-- enterprise
-- list alert rules for an instance.
-- sap hana
-- delete a service instance permanently.
-- list all sap hana cloud service instances.
-- list alerts
 - individual instance operations.
-- alert monitoring.
-- analytics
-- get metering
 - delete instance
-- list triggered alert events for an instance.
-- administration
 - list instances
-- list inventory
-- list mappings
-- list instance mappings.
-- list alert events.
-- delete an instance.
-- update an instance.
-- provision a new sap hana cloud instance.
-- retrieve consumption metering data.
-- delete mapping
-- instance lifecycle management.
-- cloud
-- get metrics
-- create instance
-- get database metrics.
-- provision a new instance.
-- list alert rules
 - list all sap hana cloud instances.
-- get instance details.
+- create a new instance mapping.
+- create instance
+- list alert rules
+- list mappings
+- retrieve consumption metering data.
 - get details of a specific instance.
-- database
-- update instance configuration.
+- create mapping
+- alert monitoring.
+- list triggered alert events for an instance.
+- analytics
 - in-memory
+- provision a new sap hana cloud instance.
+- sap hana
+- delete an instance mapping.
+- provision a new instance.
+- update instance
+- administration
+- list alert events.
+- update alert rules for an instance.
+- database
+- retrieve database performance metrics.
+- list all sap hana cloud service instances.
+- enterprise
+- list all instances in the inventory.
+- delete mapping
+- update an instance.
+- list instance mappings.
+- get database metrics.
+- monitoring
+- performance metrics.
+- get metrics
+- update alert rules
+- delete an instance.
+- cloud
+- instance lifecycle management.
+- delete a service instance permanently.
+- get instance
+- list alerts
+- update instance configuration.
+- list inventory
+- get instance details.
+- list alert rules for an instance.
+- get metering
 slug: cloud-administration
 source_filename: cloud-administration.yaml
 source_heading: Capability Spec

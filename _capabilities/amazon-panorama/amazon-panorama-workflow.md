@@ -14,19 +14,19 @@ personas: []
 provider_name: Amazon Panorama
 provider_slug: amazon-panorama
 search_terms:
-- list resources
-- list and manage openapi.yml resources
-- primary amazon panorama resources
+- amazon panorama
 - Developer
+- list and manage openapi.yml resources
+- industrial iot
+- core api workflow
 - computer vision
 - aws
 - edge ml
 - developer using amazon panorama apis
-- industrial iot
-- core api workflow
-- amazon panorama
-- cameras
 - list openapi.yml
+- cameras
+- list resources
+- primary amazon panorama resources
 - list amazon panorama resources
 slug: amazon-panorama-workflow
 source_filename: amazon-panorama-workflow.yaml

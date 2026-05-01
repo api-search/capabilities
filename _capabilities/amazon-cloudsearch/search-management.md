@@ -10,13 +10,13 @@ personas: []
 provider_name: Amazon CloudSearch
 provider_slug: amazon-cloudsearch
 search_terms:
-- Application Developer
-- aws
 - amazon cloudsearch
-- amazon web services
 - managed
 - cloudsearch
+- aws
+- Application Developer
 - search
+- amazon web services
 - full-text search
 slug: search-management
 source_filename: search-management.yaml

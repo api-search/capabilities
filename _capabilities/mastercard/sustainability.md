@@ -25,29 +25,29 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - environmental impact scoring
-- credit cards
-- sustainability
-- carbon footprint calculations
+- open banking
+- financial services
+- mastercard
+- carbon footprint
+- calculate carbon footprint from transactions
+- create environmental donation
 - create a donation to environmental causes
 - get impact score
-- donate to environment
-- financial services
-- calculate the carbon footprint of payment transactions
-- create environmental donation
-- calculate carbon footprint
-- calculate carbon footprint from transactions
-- fraud detection
-- mastercard
-- esg
-- open banking
-- digital identity
+- create a donation to support environmental causes
 - payments
 - get environmental impact score
+- fraud detection
+- environmental impact
+- calculate carbon footprint
+- credit cards
+- esg
 - environmental cause donations
 - get the environmental impact score for a transaction using the aland index
-- carbon footprint
-- create a donation to support environmental causes
-- environmental impact
+- carbon footprint calculations
+- digital identity
+- donate to environment
+- sustainability
+- calculate the carbon footprint of payment transactions
 slug: sustainability
 source_filename: sustainability.yaml
 source_heading: Capability Spec

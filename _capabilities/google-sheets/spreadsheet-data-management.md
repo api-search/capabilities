@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- search developer metadata matching filters
-- apply batch updates to a spreadsheet
-- get spreadsheet details
-- batch get values
-- read values from a spreadsheet range
-- spreadsheet lifecycle operations
-- get developer metadata by id
-- google workspace
-- read values from a range
-- batch update spreadsheet
-- get spreadsheet details by id
-- write values to a spreadsheet range
-- clear values from multiple ranges
-- batch clear values
-- single spreadsheet operations
-- copy sheet
-- write values to a range
-- cell value read and write operations
 - write values to multiple ranges at once
-- clear values
-- clear values from a spreadsheet range
-- append values to a range
-- data management
-- automation
+- append values
+- spreadsheet lifecycle operations
+- clear values from multiple ranges
 - google sheets
-- get spreadsheet
-- batch update values
-- get developer metadata
+- update values
 - get values
-- spreadsheets
-- copy a sheet to another spreadsheet
-- productivity
+- clear values
 - append rows of data to a spreadsheet
 - read values from multiple ranges at once
-- update values
+- single spreadsheet operations
 - search developer metadata
-- clear values from a range
-- append values
-- create spreadsheet
-- create a new spreadsheet
+- batch update spreadsheet
 - create a new google sheets spreadsheet
+- copy a sheet to another spreadsheet
+- automation
+- batch get values
+- cell value read and write operations
+- write values to a spreadsheet range
+- google workspace
+- apply batch updates to a spreadsheet
+- get spreadsheet
+- write values to a range
+- create a new spreadsheet
+- get developer metadata by id
+- clear values from a range
+- get spreadsheet details
+- batch clear values
+- productivity
+- read values from a spreadsheet range
+- clear values from a spreadsheet range
+- batch update values
+- get developer metadata
+- read values from a range
+- data management
+- copy sheet
+- spreadsheets
+- create spreadsheet
+- get spreadsheet details by id
+- search developer metadata matching filters
+- append values to a range
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

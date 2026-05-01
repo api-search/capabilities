@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list secrets for a property
-- server-side event forwarding properties
-- create event forwarding property
 - list event forwarding rules
-- create a secret for an event forwarding destination
-- list event forwarding rules for a property
-- send an interactive event to edge network
-- list event forwarding properties
-- start media session
-- send batch events to edge network
-- edge network
-- list secrets
-- end media session
-- send batch events
-- tag management
 - secrets for event forwarding destinations
-- end a media tracking session
 - edge network data ingestion
-- create a new event forwarding rule
-- marketing technology
-- create event forwarding rule
-- data collection
-- adobe launch
-- event forwarding rules
-- send batch events to adobe edge network
-- list secrets for authenticating with forwarding destinations
-- event forwarding
-- create secret
-- send interactive event
-- start a media tracking session
+- send an interactive event to edge network
 - send an interactive event to adobe edge network
-- list server-side event forwarding properties
+- list event forwarding properties
 - create a new event forwarding property
+- edge network
+- send batch events
+- list event forwarding rules for a property
+- list secrets for authenticating with forwarding destinations
+- end a media tracking session
+- create event forwarding property
+- marketing technology
+- send interactive event
+- server-side event forwarding properties
+- create secret
+- create a new event forwarding rule
+- event forwarding rules
+- list secrets
+- tag management
+- start a media tracking session
+- adobe launch
+- list secrets for a property
+- end media session
+- send batch events to edge network
+- create a secret for an event forwarding destination
+- list server-side event forwarding properties
+- event forwarding
+- data collection
+- create event forwarding rule
+- send batch events to adobe edge network
+- start media session
 slug: data-collection-pipeline
 source_filename: data-collection-pipeline.yaml
 source_heading: Capability Spec

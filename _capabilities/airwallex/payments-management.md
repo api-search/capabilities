@@ -11,11 +11,11 @@ provider_slug: airwallex
 search_terms:
 - cross-border payments
 - payments
-- global
-- embedded finance
-- multi-currency
 - fintech
 - foreign exchange
+- embedded finance
+- global
+- multi-currency
 slug: payments-management
 source_filename: payments-management.yaml
 source_heading: Capability Spec

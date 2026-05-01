@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- realm users.
-- create a user.
-- create a new user in a realm.
-- list users
-- list all realms.
-- list identity providers.
-- containers
-- list groups in a realm.
-- red hat
-- list all keycloak realms.
-- keycloak realms.
-- get user
-- list users.
-- kubernetes
-- list realm roles
-- delete user
-- delete session
-- enterprise
-- identity
-- list users in a realm.
-- list external identity providers.
-- identity providers.
-- list client applications in a realm.
-- get realm configuration details.
-- open source
-- list roles
-- get user details.
-- register a new client application.
-- hybrid cloud
-- list clients
-- create client
-- specific realm.
-- create user
-- get realm details.
-- get realm
-- delete a user from a realm.
-- list roles.
-- list realms
-- access management
-- linux
-- list identity providers
-- realm roles.
-- terminate a user session.
-- list groups
-- cloud
-- realm groups.
-- list roles in a realm.
-- list groups.
-- keycloak
 - realm clients.
+- get user
+- specific realm.
+- create a user.
+- list roles
+- create a new user in a realm.
+- containers
+- list groups.
+- list identity providers
+- hybrid cloud
+- register a new client application.
+- linux
+- get realm details.
+- kubernetes
+- access management
+- list external identity providers.
+- create client
+- keycloak realms.
+- identity
+- list groups
+- delete a user from a realm.
+- identity providers.
+- get realm
+- delete user
+- list realm roles
+- terminate a user session.
+- realm users.
+- realm groups.
+- list users in a realm.
+- list users.
+- red hat
+- list client applications in a realm.
+- list clients
+- list realms
+- list all realms.
+- enterprise
 - list clients.
+- list identity providers.
+- open source
+- get user details.
+- list groups in a realm.
+- list all keycloak realms.
+- list users
+- keycloak
+- create user
+- delete session
+- cloud
+- realm roles.
+- get realm configuration details.
+- list roles in a realm.
+- list roles.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

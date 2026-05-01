@@ -67,50 +67,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- general ledger journal entries
-- retrieve general ledger journal entries.
-- campus solutions.
-- expense reports
-- accounting
-- general ledger
-- list ar items
-- accounts payable vouchers
-- list budgets
-- approve, deny, or push back a finance approval request.
-- crm
-- enterprise software
-- individual approval operations
-- retrieve pending finance approval requests.
+- finance
 - finance approval requests
+- crm
+- supply chain management
+- retrieve general ledger journal entries.
 - retrieve budget definitions and data.
-- human capital management.
-- retrieve accounts payable vouchers.
 - hcm
-- process approval
-- list expense reports
-- retrieve expense reports.
-- erp
-- list analytics reports
-- budget definitions and data
-- financial management
-- financial and supply chain management.
 - forecast data and projections
 - list pending approvals
-- forecasting
-- supply chain management
-- retrieve forecast data and projections.
 - budgeting
+- budget definitions and data
+- list ar items
 - performance analytics reports
-- retrieve performance analytics reports.
 - campus solutions
-- peopletools platform services.
+- accounting
 - peoplesoft
 - list journal entries
-- list forecasts
+- list expense reports
+- list budgets
+- list analytics reports
+- peopletools platform services.
+- expense reports
+- approve, deny, or push back a finance approval request.
+- retrieve performance analytics reports.
 - list vouchers
-- accounts receivable items
+- forecasting
+- retrieve forecast data and projections.
+- general ledger
+- list forecasts
+- retrieve accounts payable vouchers.
+- campus solutions.
+- accounts payable vouchers
+- process approval
 - retrieve accounts receivable items.
-- finance
+- retrieve expense reports.
+- enterprise software
+- retrieve pending finance approval requests.
+- human capital management.
+- accounts receivable items
+- financial management
+- general ledger journal entries
+- financial and supply chain management.
+- individual approval operations
+- erp
 slug: finance-and-accounting
 source_filename: finance-and-accounting.yaml
 source_heading: Capability Spec

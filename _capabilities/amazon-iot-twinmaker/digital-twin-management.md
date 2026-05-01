@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT TwinMaker
 provider_slug: amazon-iot-twinmaker
 search_terms:
-- Solutions Architect
-- create workspace
-- amazon iot twinmaker list entities
-- aws
-- amazon iot twinmaker list workspaces
-- list workspaces
-- amazon iot twinmaker list scenes
 - amazon iot twinmaker create entity
-- list components
-- amazon iot twinmaker update entity
-- amazon iot twinmaker list components
+- amazon iot twinmaker create workspace
 - update entity
-- digital twin
-- create entity
-- create digital twins of physical systems and environments.
-- create scene
+- amazon iot twinmaker list workspaces
+- amazon iot twinmaker list scenes
+- amazon iot twinmaker list components
 - Industrial Engineer
-- manages amazon iot twinmaker resources and operations
-- list entities
+- aws
+- create entity
+- amazon iot twinmaker resources
+- list scenes
+- Solutions Architect
+- digital twin
+- list components
+- create workspace
 - amazon iot twinmaker create scene
 - iot
 - industrial iot
+- amazon iot twinmaker list entities
+- create scene
+- create digital twins of physical systems and environments.
+- list workspaces
 - 3d visualization
-- amazon iot twinmaker create workspace
-- list scenes
-- amazon iot twinmaker resources
+- amazon iot twinmaker update entity
+- manages amazon iot twinmaker resources and operations
+- list entities
 slug: digital-twin-management
 source_filename: digital-twin-management.yaml
 source_heading: Capability Spec

@@ -11,31 +11,31 @@ personas: []
 provider_name: Amazon Lambda
 provider_slug: amazon-lambda
 search_terms:
+- functions list functions
+- event source mappings create event source mapping
+- workflow
+- manages resources and configurations
 - returns details about an event source mapping.
 - Developer
-- compute
-- event source mappings get event source mapping
-- workflow
-- serverless
-- returns a list of lambda functions, with the version-specific configuration of each.
-- aws
-- faas
-- lists event source mappings.
-- Administrator
-- functions create function
-- unified workflow for amazon lambda resource management
-- returns information about the function or function version.
-- functions list functions
 - creates a mapping between an event source and an aws lambda function.
+- compute
+- Administrator
+- serverless
+- event source mappings list event source mappings
+- unified workflow for amazon lambda resource management
+- functions create function
+- aws
+- lists event source mappings.
+- event-driven
+- returns information about the function or function version.
+- event source mappings get event source mapping
+- functions
+- amazon lambda
+- returns a list of lambda functions, with the version-specific configuration of each.
+- faas
 - integrates api into applications
 - creates a lambda function.
-- event source mappings create event source mapping
 - functions get function
-- event source mappings list event source mappings
-- manages resources and configurations
-- amazon lambda
-- functions
-- event-driven
 slug: amazon-lambda-workflow
 source_filename: amazon-lambda-workflow.yaml
 source_heading: Capability Spec

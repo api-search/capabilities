@@ -27,36 +27,36 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- list ofdb databases.
-- standard datafeed.
-- get direct streaming data.
-- list datafeeds
 - get content feeds
-- get xdf model
-- get xdf snapshot
-- list databases.
-- list datafeeds.
-- get exchange datafeed model.
-- get prog env
-- get content feeds dictionary.
 - market data
-- factset
-- list databases
 - ofdb database management.
-- datafeed
+- get xdf snapshot
 - portfolio analytics
-- list ofdb
-- data management
-- get standard datafeed
+- list databases
 - financial
-- financial data
-- get programmatic environment.
-- etl
 - get exchange datafeed snapshot.
-- research
-- investment analytics
-- get streaming
+- list ofdb databases.
+- financial data
+- get direct streaming data.
+- list databases.
+- list ofdb
+- get content feeds dictionary.
+- standard datafeed.
 - get standard datafeed.
+- factset
+- datafeed
+- list datafeeds
+- get xdf model
+- get standard datafeed
+- get programmatic environment.
+- get prog env
+- get streaming
+- list datafeeds.
+- investment analytics
+- research
+- etl
+- data management
+- get exchange datafeed model.
 slug: data-management
 source_filename: data-management.yaml
 source_heading: Capability Spec

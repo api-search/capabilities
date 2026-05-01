@@ -10,14 +10,14 @@ provider_name: Biogen
 provider_slug: biogen
 search_terms:
 - discovery of available biogen api services
+- api key lifecycle and access management
+- biotechnology
+- discover and manage access to biogen pharmaceutical apis
 - pharmaceuticals
 - developer integrating with biogen pharmaceutical services apis
-- discover and manage access to biogen pharmaceutical apis
-- healthcare
-- api key lifecycle and access management
 - neurology
-- biotechnology
 - life sciences
+- healthcare
 slug: api-access-management
 source_filename: api-access-management.yaml
 source_heading: Capability Spec

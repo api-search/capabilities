@@ -11,42 +11,42 @@ personas: []
 provider_name: Amazon CodeCatalyst
 provider_slug: amazon-codecatalyst
 search_terms:
-- DevOps Engineer
-- Developer
-- start workflow run
-- list workflows
-- create dev environment
-- manage projects
-- create project
-- manage codecatalyst spaces
-- amazon
-- project management
-- aws
-- list dev environments
-- create a new project
-- continuous integration and deployment workflows.
-- create a source repository
-- manages ci/cd workflows and project automation.
-- ci/cd
-- list workflow runs
-- list projects in a space
-- list codecatalyst spaces
-- create a cloud dev environment
-- collaboration
-- manage ci/cd workflows
-- create source repository
-- project and workflow management for development teams.
-- devops
-- list workflows for a project
-- team collaboration on code and projects.
 - list source repositories
+- list workflow runs
 - source control
-- writes code and manages repos and dev environments.
-- developer tools
-- list spaces
-- start a workflow run
-- developer collaboration
+- project management
+- Developer
+- amazon
 - list projects
+- continuous integration and deployment workflows.
+- DevOps Engineer
+- start workflow run
+- project and workflow management for development teams.
+- aws
+- create project
+- create dev environment
+- team collaboration on code and projects.
+- create a cloud dev environment
+- manages ci/cd workflows and project automation.
+- list workflows
+- devops
+- list projects in a space
+- create a new project
+- list spaces
+- manage ci/cd workflows
+- developer tools
+- list workflows for a project
+- create a source repository
+- manage projects
+- collaboration
+- manage codecatalyst spaces
+- writes code and manages repos and dev environments.
+- list dev environments
+- create source repository
+- ci/cd
+- developer collaboration
+- start a workflow run
+- list codecatalyst spaces
 slug: amazon-codecatalyst-developer-collaboration
 source_filename: amazon-codecatalyst-developer-collaboration.yaml
 source_heading: Capability Spec

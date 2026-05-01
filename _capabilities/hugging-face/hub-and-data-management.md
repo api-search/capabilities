@@ -47,76 +47,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- hub
-- get model revision
-- list and search datasets on the hub.
-- user information
-- get size information for a dataset.
-- get dataset details
-- get dataset rows
-- get detailed information about a specific model.
-- search for rows matching a query in a dataset.
-- get dataset parquet
-- get statistical information about a dataset split.
-- list and search datasets
-- get parquet file urls for a dataset.
-- get authenticated user info
-- create repositories
-- whoami
-- delete repo
-- get the first rows of a dataset split for preview.
-- get dataset information
-- hugging face
-- get croissant metadata for a dataset.
-- get model information
-- create repo
-- list dataset tags
-- list models
-- get dataset splits
-- get croissant metadata
-- get model details
-- manage spaces on the hub
-- create a new repository
-- get model information at a specific revision or branch.
-- update repo settings
-- list and search ml models on the hugging face hub.
-- get information about the authenticated user.
-- check dataset validity
-- data management
 - create a new model, dataset, or space repository on the hub.
-- list all available dataset tags grouped by type.
+- search dataset rows
+- get detailed information about a specific model.
+- delete repo
+- list and search datasets
+- search rows
+- list and search datasets on the hub.
+- manage models on the hub
+- get dataset details
+- get space
 - list and search models
-- search rows in a dataset
-- get detailed information about a specific space.
+- create a new repository
+- datasets
+- filter dataset rows using a condition.
+- list and search spaces on the hub.
+- models
+- list dataset tags
+- get size information for a dataset.
+- filter dataset
+- create repositories
+- manage datasets on the hub
+- list and search spaces
+- get dataset statistics
+- get dataset parquet
+- list models
+- get model details
+- list and search ml models on the hugging face hub.
 - update settings for a repository.
 - get dataset
-- get model
-- search rows
-- list and search spaces on the hub.
-- get space
-- preview dataset rows
-- list model tags
-- delete a repository from the hub.
-- manage models on the hub
-- list and search spaces
-- manage datasets on the hub
-- list datasets
-- list spaces
-- get rows from a dataset split with pagination.
-- filter dataset
-- get rows
-- search dataset rows
-- check if a dataset is valid and available on the hub.
-- filter dataset rows using a condition.
+- whoami
+- get model information
+- search for rows matching a query in a dataset.
+- get information about the authenticated user.
 - get the list of splits for a dataset.
-- get rows from a dataset
-- datasets
-- get detailed information about a specific dataset.
-- get dataset size
+- list model tags
+- update repo settings
+- get model
+- search rows in a dataset
+- manage spaces on the hub
+- preview dataset rows
+- user information
+- hub
+- get model revision
+- list spaces
+- create repo
+- get croissant metadata for a dataset.
+- get dataset splits
 - list all available model tags grouped by type.
-- get dataset statistics
-- models
+- get detailed information about a specific space.
+- list datasets
 - search dataset
+- get dataset rows
+- hugging face
+- get the first rows of a dataset split for preview.
+- get parquet file urls for a dataset.
+- get authenticated user info
+- list all available dataset tags grouped by type.
+- check dataset validity
+- get dataset size
+- get croissant metadata
+- get rows from a dataset split with pagination.
+- data management
+- get rows
+- get model information at a specific revision or branch.
+- get rows from a dataset
+- get detailed information about a specific dataset.
+- delete a repository from the hub.
+- get dataset information
+- check if a dataset is valid and available on the hub.
+- get statistical information about a dataset split.
 slug: hub-and-data-management
 source_filename: hub-and-data-management.yaml
 source_heading: Capability Spec

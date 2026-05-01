@@ -96,97 +96,97 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- create an annotation for a report suite date range.
-- get server call estimate
-- list annotations.
-- list report suites
-- create a calculated metric.
-- reporting
-- list report suites.
-- create repair job
-- create a repair job.
-- customer intelligence
-- analysis
-- create annotation
-- estimate repair scope.
-- list analytics annotations.
-- single report suite.
-- create a new analytics segment.
-- list saved date ranges.
-- data repair jobs.
-- analytics reporting.
-- list calculated metrics
-- estimate the scope and cost of a data repair job.
-- delete calculated metric
-- permanently delete a calculated metric.
-- digital marketing
-- segments
-- get segment
-- get repair job status.
-- data repair cost estimation.
-- run an analytics report.
-- create calculated metric
-- business intelligence
-- get report suite details.
-- list all tags used on analytics components.
-- get report suite
-- calculated metrics
-- retrieve a calculated metric by id.
-- retrieve a specific segment by id.
-- get a calculated metric.
-- list tags
-- get calculated metric
-- list repair jobs.
-- list metrics for a report suite.
-- list repair jobs
-- delete a segment.
-- metric discovery.
-- list dimensions for a report suite.
-- calculated metric management.
-- list segments.
-- list all metrics available in a report suite.
-- run an adobe analytics report with metrics, dimensions, and date filters.
-- single calculated metric operations.
-- update an existing segment.
-- create a new calculated metric.
 - get status of a specific data repair job.
 - marketing
-- list analytics segments.
-- create an annotation.
-- segment management.
-- list annotations
-- web analytics
-- list calculated metrics.
-- single repair job.
-- create a segment.
-- delete segment
-- delete a calculated metric.
-- list accessible report suites.
-- dimension discovery.
-- run report
-- data governance
-- annotation management.
-- list date ranges
-- permanently delete a segment.
-- adobe
-- create a data repair job to delete or transform ingested data.
-- update calculated metric
-- get details for a specific report suite.
-- list metrics
-- update a segment.
-- report suite management.
-- list recent data repair jobs for a report suite.
-- analytics
-- update segment
-- list dimensions
-- single segment operations.
-- get repair job
+- data repair jobs.
 - update a calculated metric.
-- create segment
-- get a segment.
-- adobe analytics
-- list all dimensions available in a report suite.
+- data repair cost estimation.
+- run an adobe analytics report with metrics, dimensions, and date filters.
+- list metrics for a report suite.
+- get details for a specific report suite.
+- list dimensions for a report suite.
+- annotation management.
+- estimate the scope and cost of a data repair job.
+- list repair jobs.
+- create repair job
+- update an existing segment.
+- list segments.
+- delete calculated metric
+- list dimensions
+- segments
+- list recent data repair jobs for a report suite.
+- create a data repair job to delete or transform ingested data.
+- create an annotation for a report suite date range.
+- create a segment.
+- list report suites.
+- get report suite
+- permanently delete a calculated metric.
+- list analytics segments.
+- get repair job status.
+- list all metrics available in a report suite.
+- analytics reporting.
+- delete a segment.
+- list date ranges
+- estimate repair scope.
+- web analytics
+- single report suite.
+- update calculated metric
 - list segments
+- update a segment.
+- single segment operations.
+- report suite management.
+- create a new analytics segment.
+- list report suites
+- segment management.
+- run report
+- list all tags used on analytics components.
+- create a repair job.
+- list saved date ranges.
+- run an analytics report.
+- list repair jobs
+- get a segment.
+- single calculated metric operations.
+- calculated metric management.
+- list annotations.
+- create segment
+- delete segment
+- list metrics
+- create a new calculated metric.
+- customer intelligence
+- create calculated metric
+- get segment
+- data governance
+- business intelligence
+- create an annotation.
+- get a calculated metric.
+- list all dimensions available in a report suite.
+- list tags
+- list annotations
+- adobe
+- digital marketing
+- retrieve a calculated metric by id.
+- update segment
+- list calculated metrics.
+- metric discovery.
+- retrieve a specific segment by id.
+- adobe analytics
+- get repair job
+- analysis
+- get report suite details.
+- permanently delete a segment.
+- analytics
+- reporting
+- list analytics annotations.
+- get server call estimate
+- calculated metrics
+- get calculated metric
+- single repair job.
+- create a calculated metric.
+- dimension discovery.
+- list accessible report suites.
+- delete a calculated metric.
+- create annotation
+- list calculated metrics
 slug: reporting-and-analysis
 source_filename: reporting-and-analysis.yaml
 source_heading: Capability Spec

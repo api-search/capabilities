@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- text to speech
-- chat completion
-- ai
 - models list
-- translate audio to english text
-- create a chat completion
-- openai
-- edit an existing image with a text prompt
-- create chat completion
-- list models
-- generate speech
-- text embeddings
-- image generation
-- available models
-- images edit
-- large language models
-- t1
-- audio create speech
-- images create
-- generate an image from a text prompt using dall-e
-- content generation
-- create image
-- generate audio from text using tts models
-- generate a conversational response using gpt models
-- get details of a specific model
-- create embedding
-- audio create transcription
-- create embeddings
-- models get
-- chat create completion
-- transcribe audio to text using whisper
-- artificial intelligence
-- images create variation
-- create a variation of an existing image
-- audio create translation
-- generate an image
-- embeddings create
-- generate vector embeddings for text input
-- list all available openai models
 - create speech
+- images edit
+- audio create translation
+- openai
+- audio create speech
+- available models
+- text to speech
+- generate audio from text using tts models
+- list models
+- generate a conversational response using gpt models
+- create a chat completion
+- chat create completion
+- t1
+- models get
+- edit an existing image with a text prompt
+- images create
+- images create variation
+- generate speech
+- artificial intelligence
+- ai
+- generate an image from a text prompt using dall-e
+- create embeddings
+- image generation
+- translate audio to english text
+- chat completion
+- content generation
+- audio create transcription
+- text embeddings
+- create image
+- list all available openai models
+- transcribe audio to text using whisper
+- generate vector embeddings for text input
+- get details of a specific model
+- create a variation of an existing image
+- generate an image
+- large language models
+- create embedding
+- embeddings create
+- create chat completion
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

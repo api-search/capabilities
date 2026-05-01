@@ -36,42 +36,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
+- batch event upload.
+- adobe analytics
+- marketing
 - upload a gzip-compressed csv file of batched analytics event data.
-- list report suites to identify data collection targets.
-- digital marketing
-- validate event files.
-- get details for a report suite to verify collection configuration.
-- adobe
-- list report suites
-- validate a batch events file without ingesting.
-- list available metrics to validate event data mapping.
-- report suite discovery for data collection targeting.
-- list metrics
-- business intelligence
-- list available dimensions to validate event data mapping.
-- bulk data insertion
+- report suite details.
+- web analytics
 - get report suite details.
-- server side
 - analytics
+- server side
+- validate a batch events file without ingesting.
+- list report suites to identify collection targets.
+- validate event files.
+- list metrics
+- upload a batch events file.
+- validate a batch events file without ingesting data.
+- customer intelligence
+- report suite discovery for data collection targeting.
+- list metrics to validate event data mapping.
+- upload events
 - events
 - list dimensions
-- get report suite
-- list metrics to validate event data mapping.
-- customer intelligence
-- dimension discovery for event mapping.
-- validate events
-- marketing
-- report suite details.
-- data collection
-- upload a batch events file.
-- web analytics
-- metric discovery for event mapping.
-- list report suites to identify collection targets.
+- business intelligence
+- bulk data insertion
+- list report suites
 - list dimensions to validate event data mapping.
-- upload events
-- adobe analytics
-- batch event upload.
-- validate a batch events file without ingesting data.
+- list available dimensions to validate event data mapping.
+- adobe
+- dimension discovery for event mapping.
+- list report suites to identify data collection targets.
+- list available metrics to validate event data mapping.
+- digital marketing
+- get report suite
+- data collection
+- get details for a report suite to verify collection configuration.
+- validate events
+- metric discovery for event mapping.
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

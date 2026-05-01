@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- credit cards
-- get conversion rate
-- cross-border
 - create a disbursement
-- get account information for a send recipient
-- verify send account
-- mastercard send
-- process direct transaction
-- currency conversion rates
-- create a funding transaction
-- create p2p transfer
-- validate account details before transfer
-- get currency conversion rate for cross-border transactions
-- get currency conversion rate
-- p2p transfers
-- create a cross-border payment
-- financial services
-- process a direct service transaction
-- fraud detection
-- disbursements
-- mastercard
-- create a person-to-person money transfer
-- open banking
-- create cross border payment
-- create disbursement
 - get account info
-- create a funding transaction via mastercard send
-- validate account
-- cross-border payment processing
-- digital identity
-- verify account eligibility for mastercard send
-- payments
-- money transfer
+- get conversion rate
 - create a cross-border international payment
+- open banking
+- financial services
+- money transfer
+- p2p transfers
+- mastercard
+- validate account details before transfer
+- disbursements
+- get currency conversion rate for cross-border transactions
+- create a person-to-person money transfer
+- validate account
+- create a cross-border payment
+- payments
+- cross-border payment processing
+- get account information for a send recipient
+- verify account eligibility for mastercard send
+- create disbursement
+- create a funding transaction
+- get currency conversion rate
+- fraud detection
+- verify send account
+- create funding
+- currency conversion rates
+- create a funding transaction via mastercard send
+- process a direct service transaction
+- create cross border payment
+- credit cards
 - disbursement transactions
 - funding transactions
-- create a person-to-person transfer
+- mastercard send
+- digital identity
 - create a disbursement to send money to a recipient
-- create funding
+- process direct transaction
+- create p2p transfer
+- cross-border
+- create a person-to-person transfer
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT SiteWise
 provider_slug: amazon-iot-sitewise
 search_terms:
-- list portals
-- create portal
-- create asset model
-- collect, organize, and analyze industrial equipment data.
-- amazon iot sitewise create portal
-- aws
-- amazon iot sitewise create asset
-- amazon iot sitewise list portals
-- asset management
-- time series data
-- list assets
-- amazon iot sitewise list asset models
-- OT Engineer
-- list asset models
-- amazon iot sitewise batch put asset property value
-- get asset property value
-- Data Analyst
-- amazon iot sitewise resources
-- iot
 - amazon iot sitewise get asset property value
-- industrial iot
-- amazon iot sitewise list assets
-- amazon iot sitewise create asset model
+- amazon iot sitewise list portals
 - batch put asset property value
+- asset management
+- amazon iot sitewise batch put asset property value
+- amazon iot sitewise create asset
+- create asset model
+- amazon iot sitewise list asset models
+- list asset models
+- amazon iot sitewise list assets
+- collect, organize, and analyze industrial equipment data.
 - create asset
+- aws
+- create portal
+- list portals
+- amazon iot sitewise create portal
+- amazon iot sitewise create asset model
+- list assets
+- get asset property value
+- OT Engineer
+- iot
+- amazon iot sitewise resources
+- industrial iot
+- Data Analyst
 - manages amazon iot sitewise resources and operations
+- time series data
 slug: industrial-asset-management
 source_filename: industrial-asset-management.yaml
 source_heading: Capability Spec

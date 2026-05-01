@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Transfer Family
 provider_slug: amazon-transfer-family
 search_terms:
-- aws
-- file transfer
 - sftp
 - ftp
+- file transfer
+- aws
 slug: amazon-transfer-family-capability
 source_filename: amazon-transfer-family-capability.yaml
 source_heading: Capability Spec

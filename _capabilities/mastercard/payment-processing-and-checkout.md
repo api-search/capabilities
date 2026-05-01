@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- register contactless reader
-- credit cards
-- create checkout session
-- create a unified checkout session
-- create a buy-now-pay-later installment plan
-- process a payment through the mastercard gateway
-- process a payment through the gateway
-- payment processing
-- unified checkout sessions
-- get payment
-- create an installment plan
-- create installment plan
-- e-commerce
-- checkout
-- merchant
-- qr code payment acceptance
 - checkout session management
-- process a cloud commerce transaction
-- generate a merchant qr code for payment
-- financial services
-- create a unified checkout session supporting multiple payment methods
 - generate a merchant-presented qr code for payment
-- generate qr code
-- retrieve payment transaction details
-- fraud detection
-- create a new checkout session for a merchant
-- get payment details
-- mastercard
-- process cloud transaction
 - open banking
-- digital identity
-- buy-now-pay-later installment plans
-- payments
-- create a new checkout session
-- register a contactless reader device
-- create unified session
+- financial services
+- generate a merchant qr code for payment
+- create a new checkout session for a merchant
+- mastercard
+- create a unified checkout session
 - process payment
+- e-commerce
+- merchant
+- register a contactless reader device
+- qr code payment acceptance
+- get payment
+- get payment details
+- register contactless reader
+- retrieve payment transaction details
+- process a cloud commerce transaction
+- payments
+- buy-now-pay-later installment plans
+- create installment plan
+- create an installment plan
+- process a payment through the mastercard gateway
+- generate qr code
+- create unified session
+- fraud detection
+- checkout
+- payment processing
+- credit cards
+- unified checkout sessions
+- create a unified checkout session supporting multiple payment methods
+- digital identity
+- create a buy-now-pay-later installment plan
+- create checkout session
+- process a payment through the gateway
+- process cloud transaction
+- create a new checkout session
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

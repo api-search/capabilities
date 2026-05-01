@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- compute
-- terminate instances
-- describeImages
-- cloud computing
-- describe images
-- describe instances
-- start instances
-- aws
-- amazon ec2 describe ec2 instances
-- engineers managing amazon ec2 resources on aws.
-- amazon ec2 describe instance status
-- amazon ec2 deregister an ami
-- describeInstances
-- amazon ec2 stop running instances
 - startInstances
-- terminateInstances
-- amazon ec2 start stopped instances
-- rebootInstances
-- describe instance status
-- createImage
-- stopInstances
-- iaas
-- workflow capability for cloud compute management.
-- cloud compute management business domain for amazon ec2.
-- create image
-- amazon ec2 describe amis
-- deregister image
-- amazon ec2 reboot instances
 - amazon ec2
-- run instances
-- stop instances
-- deregisterImage
-- reboot instances
-- virtual machines
 - runInstances
+- terminate instances
+- stop instances
+- amazon ec2 stop running instances
+- start instances
+- stopInstances
+- rebootInstances
+- amazon ec2 terminate instances
+- compute
+- amazon ec2 describe ec2 instances
+- run instances
+- amazon ec2 describe instance status
+- engineers managing amazon ec2 resources on aws.
+- aws
+- deregisterImage
+- amazon ec2 start stopped instances
+- createImage
 - infrastructure
 - describeInstanceStatus
-- amazon ec2 terminate instances
-- amazon ec2 launch ec2 instances
+- describeInstances
+- workflow capability for cloud compute management.
+- virtual machines
+- amazon ec2 deregister an ami
+- describe instances
+- terminateInstances
+- cloud compute management business domain for amazon ec2.
+- describe images
+- cloud computing
 - amazon ec2 create an ami from an instance
+- create image
+- amazon ec2 describe amis
+- describeImages
+- iaas
+- describe instance status
+- amazon ec2 reboot instances
+- deregister image
+- amazon ec2 launch ec2 instances
+- reboot instances
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

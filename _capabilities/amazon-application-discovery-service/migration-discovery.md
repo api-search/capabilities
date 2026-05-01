@@ -29,40 +29,40 @@ personas: []
 provider_name: Amazon Application Discovery Service
 provider_slug: amazon-application-discovery-service
 search_terms:
-- describe export tasks
-- discovered configuration items
-- migration
-- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
-- find servers that communicate with a specific server to map application dependencies for migration grouping.
-- create application
-- create application groupings from discovered servers to organize migration waves.
-- check status of export tasks
-- start import task
-- list all aws application discovery service agents and their health status. use this to verify agents are running before starting discovery.
-- amazon application discovery service
-- aws
-- asset discovery summary
-- list server neighbors
-- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
-- start export task
-- discovery
-- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
-- get detailed attributes for specific discovered configuration items to understand server specifications.
-- check the status of discovery data export tasks to know when data is ready for analysis.
 - describe configurations
-- get discovery summary
-- start data collection
-- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
-- list discovered servers, processes, and connections
-- get count of discovered servers, agents, and applications
-- list configurations
-- start data collection on specified agents to begin discovering on-premises servers and processes.
-- list all discovery agents and their health status
 - export discovered data to s3
-- infrastructure
-- discovery agents
-- describe agents
+- list discovered configuration items such as servers, processes, connections, and applications for migration planning.
+- check the status of discovery data export tasks to know when data is ready for analysis.
+- list discovered servers, processes, and connections
+- get detailed attributes for specific discovered configuration items to understand server specifications.
+- find servers that communicate with a specific server to map application dependencies for migration grouping.
+- discovery
+- describe export tasks
 - data export tasks
+- export all discovered server data to amazon s3 for detailed migration analysis and reporting.
+- amazon application discovery service
+- create application groupings from discovered servers to organize migration waves.
+- discovery agents
+- list all discovery agents and their health status
+- aws
+- list configurations
+- get discovery summary
+- start import task
+- describe agents
+- list all aws application discovery service agents and their health status. use this to verify agents are running before starting discovery.
+- infrastructure
+- start data collection on specified agents to begin discovering on-premises servers and processes.
+- import on-premises server inventory from a csv file in amazon s3 when agents cannot be installed.
+- start data collection
+- create application
+- migration
+- asset discovery summary
+- check status of export tasks
+- list server neighbors
+- discovered configuration items
+- get count of discovered servers, agents, and applications
+- start export task
+- get a summary count of all discovered servers, applications, and agents to understand the scope of the environment.
 slug: migration-discovery
 source_filename: migration-discovery.yaml
 source_heading: Capability Spec

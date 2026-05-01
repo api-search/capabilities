@@ -20,26 +20,26 @@ provider_name: American Airlines
 provider_slug: american-airlines
 search_terms:
 - travel app workflow for searching and tracking american airlines flights
-- booking
 - get real-time status of an american airlines flight
-- american airlines
-- Travel Technology Developer
-- flights
-- airlines
-- search flights
-- aviation
-- travel technology
-- travel
 - uses flight data to assist customers with bookings
-- search american airlines flight schedules by origin, destination, and date
-- builds travel apps integrating american airlines flight data
-- search flight schedules
-- developer experience
-- real-time flight status
-- get flight status
-- Booking Agent
-- flight operations
+- booking
+- travel
 - flight search and schedules
+- flights
+- search flights
+- real-time flight status
+- search flight schedules
+- Travel Technology Developer
+- builds travel apps integrating american airlines flight data
+- travel technology
+- get flight status
+- developer experience
+- Booking Agent
+- search american airlines flight schedules by origin, destination, and date
+- airlines
+- aviation
+- flight operations
+- american airlines
 slug: flight-operations
 source_filename: flight-operations.yaml
 source_heading: Capability Spec

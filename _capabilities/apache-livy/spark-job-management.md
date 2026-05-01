@@ -30,37 +30,37 @@ personas: []
 provider_name: Apache Livy
 provider_slug: apache-livy
 search_terms:
-- spark
-- create spark session
+- list sessions
+- Data Engineer
+- submit a batch spark job to the cluster via livy
+- get the current state of a batch spark job
+- get the current state of a spark session
+- create session
+- apache livy
+- interactive computing
+- list batches
+- engineers who submit and monitor batch spark jobs via livy
 - get session state
 - data engineering
-- create session
-- get the current state of a batch spark job
-- apache livy
-- execute a code statement in an interactive spark session
-- get batch state
-- create a new interactive spark session for code execution
-- delete spark session
-- open source
-- Data Engineer
-- list all active interactive spark sessions on the livy server
 - run spark code
-- big data
-- list batches
-- interactive computing
-- scientists who use interactive spark sessions for exploratory analysis
-- data science
-- delete an interactive spark session
-- submit a batch spark job to the cluster via livy
-- list sessions
 - list spark sessions
-- submit batch spark job
 - run statement
-- engineers who submit and monitor batch spark jobs via livy
-- create batch
-- rest
+- scientists who use interactive spark sessions for exploratory analysis
+- open source
+- list all active interactive spark sessions on the livy server
+- delete spark session
 - Data Scientist
-- get the current state of a spark session
+- get batch state
+- spark
+- create a new interactive spark session for code execution
+- delete an interactive spark session
+- submit batch spark job
+- create batch
+- big data
+- rest
+- data science
+- create spark session
+- execute a code statement in an interactive spark session
 slug: spark-job-management
 source_filename: spark-job-management.yaml
 source_heading: Capability Spec

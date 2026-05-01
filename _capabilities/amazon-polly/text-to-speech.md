@@ -42,48 +42,48 @@ personas: []
 provider_name: Amazon Polly
 provider_slug: amazon-polly
 search_terms:
-- start synthesis task
+- speech synthesis
 - generative ai
-- Application Developer
-- asynchronous synthesis tasks
+- available synthesis voices
+- ssml
+- text-to-speech
 - creates audio content from written text using polly
-- ai
-- get lexicon
 - start an asynchronous speech synthesis task
-- create or update a pronunciation lexicon
 - Content Creator
-- machine learning
-- voice applications
 - amazon
-- list synthesis tasks
-- neural engine
+- list available voices by language and engine
+- get lexicon
+- list custom pronunciation lexicons for controlling how words are spoken
 - aws
+- asynchronous synthesis tasks
 - synthesize speech
-- builds voice-enabled applications using polly speech synthesis
-- create or update a custom pronunciation lexicon
-- multi-channel text-to-speech synthesis workflow
-- list voices
+- list lexicons
+- list available amazon polly voices filterable by language and engine type
+- voice applications
 - speech synthesis from text
-- convert text to lifelike speech audio using amazon polly
+- create lexicon
 - custom pronunciation lexicons
 - list pronunciation lexicons
-- voice
-- tts
-- start an asynchronous synthesis task for long text with s3 output
-- create lexicon
-- available synthesis voices
-- list tasks
-- list available voices by language and engine
-- list and monitor asynchronous speech synthesis tasks
-- text-to-speech
-- list custom pronunciation lexicons for controlling how words are spoken
-- ssml
-- list available amazon polly voices filterable by language and engine type
-- start task
-- speech synthesis
-- list lexicons
+- machine learning
 - convert text to speech audio
+- start an asynchronous synthesis task for long text with s3 output
+- convert text to lifelike speech audio using amazon polly
+- list and monitor asynchronous speech synthesis tasks
+- ai
+- list voices
+- builds voice-enabled applications using polly speech synthesis
+- tts
+- list tasks
+- create or update a custom pronunciation lexicon
+- create or update a pronunciation lexicon
 - get the content of a pronunciation lexicon
+- start task
+- start synthesis task
+- multi-channel text-to-speech synthesis workflow
+- Application Developer
+- list synthesis tasks
+- voice
+- neural engine
 slug: text-to-speech
 source_filename: text-to-speech.yaml
 source_heading: Capability Spec

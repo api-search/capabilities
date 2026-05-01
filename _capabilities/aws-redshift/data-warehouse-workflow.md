@@ -12,27 +12,27 @@ personas: []
 provider_name: AWS Redshift
 provider_slug: aws-redshift
 search_terms:
-- get the result of a sql statement execution
-- cloud database
-- execute a sql statement against a redshift cluster
-- cancel_sql_statement
-- cancel a running sql statement
-- list all redshift clusters in the account
-- sql
-- data warehouse
-- create a new amazon redshift cluster
-- execute_sql
-- create a snapshot of a redshift cluster
-- analytics
-- get_sql_result
-- list_clusters
 - delete_cluster
-- big data
-- list_sql_statements
-- create_cluster
-- create_snapshot
+- get the result of a sql statement execution
 - list recent sql statement executions
+- list_sql_statements
+- execute_sql
+- cancel_sql_statement
+- data warehouse
+- analytics
+- execute a sql statement against a redshift cluster
+- create a new amazon redshift cluster
+- cancel a running sql statement
+- get_sql_result
 - delete a redshift cluster
+- list_clusters
+- list all redshift clusters in the account
+- cloud database
+- create_cluster
+- sql
+- big data
+- create_snapshot
+- create a snapshot of a redshift cluster
 slug: data-warehouse-workflow
 source_filename: data-warehouse-workflow.yaml
 source_heading: Capability Spec

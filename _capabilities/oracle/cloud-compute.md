@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- get instance
-- list compute instances in a compartment
-- list console connections
-- compute
-- terminate instance
-- update instance
-- get image details
-- update image details
-- create a custom image from an instance
-- get details of a specific instance
-- get instance details
-- list volume attachments in a compartment
-- get image
-- list available compute shapes
-- delete a custom image
-- get details of a specific image
-- create a custom image
-- delete image
-- update image
-- list vnic attachments
-- enterprise
-- list shapes
-- instance action
 - saas
-- list instance console connections
+- list available compute shapes
 - update instance details
-- perform an action on an instance (start, stop, reset)
-- list images
-- manage compute instances
-- manage compute images
+- update image details
 - list instances
-- create image
+- list images
+- create a custom image
 - launch instance
-- oracle
-- manage a specific compute instance
-- list compute images
-- cloud
-- infrastructure
-- list vnic attachments in a compartment
+- list instance console connections
+- get details of a specific instance
+- list vnic attachments
+- compute
+- create a custom image from an instance
+- manage compute instances
+- list compute instances in a compartment
 - launch a new compute instance
+- get instance details
 - manage a specific image
 - list volume attachments
-- database
+- delete a custom image
+- terminate instance
+- instance action
+- update instance
 - terminate an instance
+- database
+- perform an action on an instance (start, stop, reset)
+- infrastructure
+- list console connections
+- enterprise
+- manage a specific compute instance
+- manage compute images
+- get image details
+- oracle
+- update image
+- create image
+- list volume attachments in a compartment
+- list shapes
+- cloud
+- list vnic attachments in a compartment
+- get image
+- get instance
+- list compute images
+- delete image
+- get details of a specific image
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

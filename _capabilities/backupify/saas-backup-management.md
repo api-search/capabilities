@@ -22,35 +22,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- backupify
-- list backup domains
-- MSP Technician
+- saas backup
 - msp
+- list domains
+- bulk license/unlicense/pause seats
 - list backup seats
-- google workspace
-- customer backup seats
-- bulk change seat licenses
 - datto
-- list seats
-- managed service provider technician managing backup coverage across customer accounts
+- MSP Technician
+- list backup domains
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
 - data protection
-- IT Administrator
 - saas backup domains
+- cloud-to-cloud backup and recovery for saas platforms
+- microsoft 365
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- list all backupify saas backup domains with customer ids and subscription information
+- google workspace
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- bulk change seat licenses
+- managed service provider technician managing backup coverage across customer accounts
+- customer backup seats
+- list seats for a customer
+- list seats
+- IT Administrator
+- list all backup customer domains
 - cloud backup
 - bulk seat management
 - bulk seat change
 - domain and seat management for backupify cloud-to-cloud backup
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- bulk license/unlicense/pause seats
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- microsoft 365
-- list all backup customer domains
-- saas backup
-- list domains
-- list all backupify saas backup domains with customer ids and subscription information
-- cloud-to-cloud backup and recovery for saas platforms
-- list seats for a customer
+- backupify
 slug: saas-backup-management
 source_filename: saas-backup-management.yaml
 source_heading: Capability Spec

@@ -24,45 +24,45 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- API Product Manager
-- api gateway
-- API Platform Engineer
-- google cloud
-- list proxies
-- integrations
-- Platform Architect
-- list api proxies
-- manage api products.
 - list api proxies.
-- apigee
-- list all api products packaged for developer consumption.
-- enterprise
-- list all registered api developers in the organization.
-- manage api developers.
-- api management
-- list api products
-- analytics
-- engineer managing api proxies, deployments, and policies in apigee.
-- manager packaging api products and managing developer relationships.
-- list developers.
-- microservices
-- list environments
 - list all api proxies in an apigee organization.
-- developer portal
-- api lifecycle
-- list api products.
-- list products
-- api governance
-- monetization
-- list hub apis
+- list environments
 - leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list developers
-- hybrid
-- list all apis catalogued in apigee api hub for discovery and governance.
+- developer portal
 - list all environments (e.g., dev, staging, prod) in the organization.
+- microservices
+- list api products.
 - manage api proxies.
+- list developers.
+- manage api developers.
+- list developers
+- list proxies
+- API Product Manager
+- analytics
 - API Governance Lead
+- integrations
 - architect overseeing api platform strategy and governance across the organization.
+- monetization
+- google cloud
+- Platform Architect
+- hybrid
+- enterprise
+- api management
+- list all registered api developers in the organization.
+- manage api products.
+- list all apis catalogued in apigee api hub for discovery and governance.
+- list api proxies
+- api governance
+- list products
+- manager packaging api products and managing developer relationships.
+- apigee
+- list api products
+- list hub apis
+- api lifecycle
+- engineer managing api proxies, deployments, and policies in apigee.
+- API Platform Engineer
+- api gateway
+- list all api products packaged for developer consumption.
 - api hub
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml

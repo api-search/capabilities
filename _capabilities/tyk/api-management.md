@@ -44,64 +44,64 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
-- check health
-- get a specific api definition
-- dashboard get api
-- create a new api definition in the dashboard
-- api gateway
-- list all dashboard users
-- dashboard get policy
-- dashboard get catalogue
-- list users
-- list all api definitions from dashboard
-- dashboard list apis
-- list all api definitions directly from the gateway
-- list apis
-- dashboard users
-- get a specific policy
-- portal catalogue
-- dashboard update api
-- update an api definition in the dashboard
-- get the developer portal catalogue
-- create a new api definition
-- get catalogue
-- api management
-- get portal catalogue
-- check gateway health
-- delete an api definition from the dashboard
-- get a specific api definition from the dashboard
-- create a new api key
-- open source
-- list all api keys
-- security policies
 - get api
-- gateway health
-- list all api definitions from the tyk dashboard
-- dashboard list users
-- list policies
-- dashboard delete api
-- check the gateway health status
-- gateway check health
-- gateway list apis
-- dashboard create key
-- gateway list certificates
-- hot reload the gateway configuration
-- list all security policies
-- dashboard list policies
-- create a new security policy
-- dashboard list keys
-- tyk
-- api definitions
-- gateway hot reload
-- dashboard create api
-- dashboard create policy
+- dashboard update api
 - graphql
-- gateway
-- api keys
-- list all policies
-- list keys
-- list all certificates on the gateway
+- create a new api key
+- dashboard get api
+- dashboard list policies
+- get a specific api definition from the dashboard
+- list apis
+- get the developer portal catalogue
+- dashboard users
 - create api
+- dashboard create policy
+- check gateway health
+- list keys
+- update an api definition in the dashboard
+- dashboard create key
+- check the gateway health status
+- tyk
+- dashboard list users
+- security policies
+- gateway
+- dashboard list apis
+- dashboard get policy
+- gateway list apis
+- check health
+- list all certificates on the gateway
+- gateway health
+- get a specific policy
+- gateway list certificates
+- dashboard delete api
+- hot reload the gateway configuration
+- list all api definitions from dashboard
+- api management
+- get catalogue
+- get portal catalogue
+- delete an api definition from the dashboard
+- create a new security policy
+- dashboard get catalogue
+- open source
+- api keys
+- dashboard list keys
+- list users
+- list all api definitions from the tyk dashboard
+- list all api definitions directly from the gateway
+- list all policies
+- dashboard create api
+- list all dashboard users
+- create a new api definition in the dashboard
+- gateway hot reload
+- api definitions
+- gateway check health
+- list policies
+- list all security policies
+- get a specific api definition
+- list all api keys
+- api gateway
+- portal catalogue
+- create a new api definition
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

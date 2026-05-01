@@ -80,74 +80,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- create incident
-- get incident
-- resolve an incident
-- on-call
-- single monitor operations
-- list all incidents
-- logs
-- create monitor
-- incident response
-- acknowledge incident
-- acknowledge an active incident
-- list all uptime monitors
-- single incident operations
-- get monitor availability
-- list monitors
-- get monitor availability summary
-- resolve incident
-- monitoring
-- incident management
-- resolve an active incident once the issue is fixed
-- on call engineer
-- get monitor details
-- list all heartbeat monitors for scheduled jobs
-- create a new uptime monitor for a url or api
-- get monitor
-- observability
-- list all heartbeats
-- update a monitor
-- create a manual incident
 - get incident details
-- engineer on-call rotation responsible for responding to incidents
-- heartbeat monitor management
-- managing team access and membership
-- list incidents
-- incidents
-- get heartbeat availability
-- list incidents with optional date and filter parameters
+- resolve an incident
+- get availability for a heartbeat monitor
 - acknowledge an active incident to indicate someone is working on it
-- delete incident
-- create heartbeat
-- uptime
-- site reliability engineer managing infrastructure uptime and incident response
-- status
-- heartbeats
-- get availability metrics for a monitor
-- sre
-- delete monitor
-- better stack
-- create a heartbeat monitor
-- resolve an active incident
-- uptime and availability monitoring for services and scheduled jobs
-- platform
-- create a new uptime monitor
-- get details for a specific uptime monitor
-- list all uptime monitors to check what is being monitored
+- engineer on-call rotation responsible for responding to incidents
+- managing team access and membership
+- incidents
+- sre engineer
+- observability
 - detection, acknowledgement, and resolution of service incidents
 - monitor management for uptime checks
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- get details for a specific incident
-- delete an incident
-- update monitor
-- sre engineer
-- communicating service health to customers and stakeholders
-- delete a monitor
-- acknowledge an incident
-- get availability for a heartbeat monitor
+- list all heartbeats
+- list all uptime monitors
+- list all uptime monitors to check what is being monitored
+- delete monitor
+- list incidents with optional date and filter parameters
+- acknowledge incident
+- list monitors
+- create incident
+- logs
 - monitor availability metrics
+- platform
+- create monitor
+- get monitor availability
+- resolve an active incident
+- create a new uptime monitor for a url or api
+- uptime
+- uptime and availability monitoring for services and scheduled jobs
+- on-call
+- list all incidents
+- delete incident
+- communicating service health to customers and stakeholders
+- update a monitor
+- delete a monitor
+- get heartbeat availability
 - list heartbeats
+- get availability metrics for a monitor
+- resolve an active incident once the issue is fixed
+- on call engineer
+- heartbeat monitor management
+- get details for a specific uptime monitor
+- acknowledge an incident
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- single monitor operations
+- get monitor
+- get incident
+- monitoring
+- list all heartbeat monitors for scheduled jobs
+- incident management
+- single incident operations
+- list incidents
+- incident response
+- create a heartbeat monitor
+- get details for a specific incident
+- status
+- create heartbeat
+- create a new uptime monitor
+- get monitor availability summary
+- resolve incident
+- sre
+- get monitor details
+- site reliability engineer managing infrastructure uptime and incident response
+- acknowledge an active incident
+- heartbeats
+- update monitor
+- better stack
+- delete an incident
+- create a manual incident
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

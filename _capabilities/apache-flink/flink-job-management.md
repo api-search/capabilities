@@ -27,43 +27,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- Platform Operator
+- job management
+- get job
+- metrics, checkpoints, and cluster health monitoring
+- Data Engineer
+- shutdown cluster
+- stream processing
+- get job metrics
+- get details of a specific job
+- get flink job
+- job submission, tracking, and lifecycle management
+- apache flink
 - real-time analytics
-- manage and monitor flink streaming and batch jobs
+- shut down the flink cluster
+- job performance metrics
 - stateful computing
 - data engineering
-- list taskmanagers
-- list jobs
 - taskmanager management
-- shut down the flink cluster
-- list all taskmanagers in the flink cluster
-- list flink jobs
-- job submission, tracking, and lifecycle management
-- monitoring
-- apache
-- get performance metrics for a flink job
-- job performance metrics
-- list all flink streaming and batch jobs
-- metrics, checkpoints, and cluster health monitoring
-- get flink job
-- get details of a specific job
-- open source
-- Data Engineer
-- flink job management
-- get job metrics
-- list all taskmanagers
-- big data
-- stream processing
-- batch processing
-- get metrics for a flink job
 - list all flink jobs
-- shutdown cluster
-- get job
 - get detailed status and information for a specific flink job
-- job management
-- engineers submitting and monitoring flink streaming and batch jobs
-- apache flink
+- batch processing
+- list all flink streaming and batch jobs
+- open source
+- manage and monitor flink streaming and batch jobs
+- apache
+- list taskmanagers
+- monitoring
 - operators managing the flink cluster and ensuring job reliability
+- get performance metrics for a flink job
+- Platform Operator
+- big data
+- get metrics for a flink job
+- list flink jobs
+- list jobs
+- engineers submitting and monitoring flink streaming and batch jobs
+- flink job management
+- list all taskmanagers
+- list all taskmanagers in the flink cluster
 slug: flink-job-management
 source_filename: flink-job-management.yaml
 source_heading: Capability Spec

@@ -67,67 +67,67 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
+- experiment management api getFlag
 - getFlags
-- updateExperiment
-- experiment evaluation api evaluateVariants
-- manage and evaluate a/b experiments and feature flags. for product managers.
+- amplitude update a flag
+- amplitude list all experiments
 - listExperiments
-- listDeployments
-- experiment management api updateFlag
-- experiment management api getExperiment
-- amplitude list flag and experiment versions
-- amplitude evaluate variants for a user
-- amplitude list all flags
-- experiment management api listFlags
-- experimentation
-- getDeployment
-- experiment management api createExperiment
-- listFlags
-- experiment management api listDeployments
-- product analytics
-- experiment evaluation api evaluateVariantsGet
-- experiment evaluation api getFlags
-- amplitude get an experiment
-- amplitude get a deployment
-- manages privacy and compliance
-- runs experiments and feature flags
-- getFlag
-- amplitude create an experiment
 - experiment management api updateExperiment
-- amplitude create a flag
-- export raw event data and manage behavioral cohorts. for data analysts.
-- evaluateVariants
 - amplitude
 - createFlag
-- evaluateVariantsGet
-- amplitude evaluate variants for a user via get
-- amplitude get a flag
-- amplitude update an experiment
-- listVersions
-- experiment management api createFlag
-- ingests and exports event data
-- analytics
-- experiment management api getDeployment
-- getExperiment
-- feature flags
-- amplitude update a flag
-- a/b testing
-- data governance
-- identity management
-- experiment management api listExperiments
-- unified workflow for sending events and identifying users. for data engineers.
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- amplitude get flag configurations
-- amplitude list all experiments
-- createExperiment
-- experiment management api getFlag
-- manage event schemas and chart annotations. for data governance teams.
-- analyzes data and manages cohorts
-- experiment management api listVersions
+- amplitude get an experiment
+- getFlag
 - user behavior
-- privacy compliance
+- amplitude list all flags
+- getDeployment
+- amplitude get a flag
+- experiment management api listFlags
+- analytics
+- a/b testing
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- createExperiment
+- experiment evaluation api evaluateVariants
+- experiment evaluation api evaluateVariantsGet
+- experiment management api createFlag
+- amplitude evaluate variants for a user
+- experiment management api createExperiment
+- amplitude get flag configurations
 - updateFlag
+- amplitude get a deployment
+- export raw event data and manage behavioral cohorts. for data analysts.
+- unified workflow for sending events and identifying users. for data engineers.
+- listVersions
+- privacy compliance
+- data governance
+- experiment management api listExperiments
+- evaluateVariantsGet
+- analyzes data and manages cohorts
+- experiment management api updateFlag
+- amplitude create a flag
+- evaluateVariants
+- listDeployments
+- amplitude evaluate variants for a user via get
+- experiment management api getExperiment
+- feature flags
+- experiment evaluation api getFlags
+- experiment management api getDeployment
+- manage event schemas and chart annotations. for data governance teams.
+- experimentation
+- runs experiments and feature flags
+- product analytics
 - amplitude list all deployments
+- manages privacy and compliance
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- ingests and exports event data
+- amplitude update an experiment
+- identity management
+- experiment management api listVersions
+- amplitude list flag and experiment versions
+- updateExperiment
+- listFlags
+- getExperiment
+- amplitude create an experiment
+- experiment management api listDeployments
 slug: amplitude-experimentation
 source_filename: amplitude-experimentation.yaml
 source_heading: Capability Spec

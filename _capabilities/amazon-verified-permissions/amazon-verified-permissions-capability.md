@@ -10,9 +10,9 @@ provider_name: Amazon Verified Permissions
 provider_slug: amazon-verified-permissions
 search_terms:
 - aws
+- permissions
 - security
 - authorization
-- permissions
 slug: amazon-verified-permissions-capability
 source_filename: amazon-verified-permissions-capability.yaml
 source_heading: Capability Spec

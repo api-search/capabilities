@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
+- caching
+- list functions
+- apache geode
+- platform engineering
+- engineers managing the geode cluster infrastructure
+- execute oql query
+- region crud operations, oql queries, and function execution
+- in-memory
+- developers using geode as a fast data store for applications
+- high-performance in-memory data caching and distribution
+- get all keys stored in a geode region
+- list geode regions
+- distributed systems
 - in-memory data grid
 - list all geode regions
-- Application Developer
-- platform engineering
-- high-performance in-memory data caching and distribution
-- list geode functions
-- execute an oql query
-- list regions
-- region crud operations, oql queries, and function execution
-- apache
-- apache geode
-- data grid
-- distributed systems
+- manage in-memory data with regions, queries, and functions
+- get region keys
 - open source
-- developers using geode as a fast data store for applications
+- Platform Engineer
+- apache
+- execute an oql query against geode regions
 - list available functions
 - server-side function execution
-- get all keys stored in a geode region
-- manage in-memory data with regions, queries, and functions
-- data management
-- execute oql query
-- execute query
-- Platform Engineer
-- list geode regions
-- get region keys
-- caching
+- data grid
 - list all server-side functions available in the cluster
-- list all regions in the apache geode data grid
-- oql query execution
+- execute an oql query
+- list geode functions
 - geode region management
-- engineers managing the geode cluster infrastructure
-- execute an oql query against geode regions
-- list functions
-- in-memory
+- Application Developer
+- data management
+- oql query execution
+- execute query
+- list regions
+- list all regions in the apache geode data grid
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

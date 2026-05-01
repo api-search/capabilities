@@ -30,42 +30,42 @@ personas: []
 provider_name: acuity-brands
 provider_slug: acuity-brands
 search_terms:
-- distributor
-- get product
-- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
-- track shipment
-- lighting
-- list inventory with optional filters
-- order status and tracking
-- inventory
 - developers building e-commerce sites that display acuity brands product data, pricing, and availability
-- get shipment records for an order including carrier name and pro number for freight tracking
-- get product inventory
-- product inventory availability
-- search products
-- list catalog
-- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
-- acuity brands
-- E Commerce Developer
-- product catalog search
 - b2b distributor ordering, inventory management, and shipment tracking
-- Electrical Distributor
-- get full order status and details including estimated and actual ship dates
-- get detailed inventory including warehouse locations and estimated ship dates for a specific product
-- list inventory
+- acuity brands
+- distributor
+- track order
+- order management
 - get full product details including specifications, certifications, list price, and data sheet
 - search the acuity brands product catalog by keyword, brand, or product category
-- search product catalog
-- commercial, industrial, and residential lighting products and controls
-- order management
-- b2b
-- check inventory availability for an acuity brands product by product number or brand
-- track order
-- electrical distributors who carry acuity brands products and need real-time inventory and order data
-- ERP Integration Developer
+- track shipment
+- get product
 - list orders
-- list recent orders filtered by status or date range
+- search products
+- commercial, industrial, and residential lighting products and controls
+- product inventory availability
+- developers integrating acuity brands data into erp systems for automated ordering and inventory sync
+- get product inventory
+- inventory lookup, order tracking, product catalog search, and shipment tracking for distributors
+- inventory
+- ERP Integration Developer
+- list inventory with optional filters
+- get detailed inventory including warehouse locations and estimated ship dates for a specific product
+- get full order status and details including estimated and actual ship dates
+- check inventory availability for an acuity brands product by product number or brand
 - check inventory
+- search product catalog
+- order status and tracking
+- Electrical Distributor
+- b2b
+- product catalog search
+- list inventory
+- get shipment records for an order including carrier name and pro number for freight tracking
+- list recent orders filtered by status or date range
+- electrical distributors who carry acuity brands products and need real-time inventory and order data
+- list catalog
+- lighting
+- E Commerce Developer
 slug: distributor-integration
 source_filename: distributor-integration.yaml
 source_heading: Capability Spec

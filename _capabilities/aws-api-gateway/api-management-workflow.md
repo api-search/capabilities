@@ -65,81 +65,81 @@ personas: []
 provider_name: Amazon API Gateway
 provider_slug: aws-api-gateway
 search_terms:
-- delete a rest api
+- creates and configures apis for application services
+- list stages
+- list all http and websocket apis
+- disconnect a websocket client from the api
+- http and websocket api management
+- list api keys
+- create api key
+- send a message to a connected websocket client
+- delete rest api
+- rest api stages
+- disconnect client
+- get details of a specific rest api
+- websocket
+- rest api management
+- creating, versioning, deploying, and retiring apis
+- list http apis
+- api key management
+- create http api
+- get information about a connected websocket client
+- rest api deployments
+- list rest api deployments
+- list deployments
+- list all usage plans
+- serverless
+- create a new rest api
 - create a new api key for access control
-- API Platform Engineer
-- api gateway
+- list routes
+- http api route management
+- aws
+- get websocket connection
+- deployment
 - deploy rest api
+- delete a rest api
+- list deployment stages for a rest api
+- websocket connection management
+- list rest apis
+- list all rest apis
+- Backend Developer
+- get rest api
+- create a new route for an http api
+- create a new http or websocket api
+- list all api keys in the account
+- api management
+- deploy a rest api to a stage
+- list deployments for a rest api
+- send websocket message
+- list http api routes
+- list usage plans
+- disconnect a websocket client
+- create route
+- list routes for an http api
+- create a new rest api in api gateway
+- manages api lifecycle, deployments, and governance across the organization
+- list all backend integrations for an http api
+- list integrations
+- rest
+- list stages for a rest api
+- usage plan management
+- list rest api stages
+- managing api keys, usage plans, and authorization
 - get websocket connection info
 - list all routes for an http api
-- http api route management
-- list all api keys in the account
-- list usage plans
-- list all rest apis
-- create api key
-- list stages for a rest api
-- rest api management
-- get information about a connected websocket client
-- send a message to a connected websocket client
-- websocket api management and connection handling
-- list stages
-- get details of a specific rest api
-- serverless
-- delete rest api
-- rest api deployments
-- websocket connection management
-- list api keys
-- disconnect a websocket client from the api
-- aws
-- deploy a rest api to a stage
-- create http api
-- api management
-- list deployments for a rest api
-- list all usage plans and their api key associations
-- create a new api key
-- usage plan management
-- api key management
-- managing api keys, usage plans, and authorization
-- list all api keys
-- create rest api
-- http and websocket api management
-- get connection
-- disconnect client
-- deployment
 - disconnect websocket client
-- manages api lifecycle, deployments, and governance across the organization
-- get websocket connection
-- list rest apis
-- disconnect a websocket client
-- create a new route for an http api
-- get rest api
-- list all usage plans
-- list routes
-- create a new http or websocket api
-- unified workflow for creating, deploying, and managing rest and http apis
-- Backend Developer
-- create route
-- list integrations
-- create a new rest api
-- websocket
-- rest api stages
-- list http apis
-- list deployment stages for a rest api
+- create rest api
 - cloud
+- list all api keys
+- API Platform Engineer
+- api gateway
+- get connection
+- websocket api management and connection handling
 - list all rest apis in the aws account
-- list all backend integrations for an http api
+- unified workflow for creating, deploying, and managing rest and http apis
+- list all usage plans and their api key associations
 - amazon api gateway
-- creates and configures apis for application services
-- list all http and websocket apis
-- list http api routes
-- list routes for an http api
-- creating, versioning, deploying, and retiring apis
-- list rest api stages
-- rest
-- create a new rest api in api gateway
-- send websocket message
-- list deployments
-- list rest api deployments
+- create a new api key
 slug: api-management-workflow
 source_filename: api-management-workflow.yaml
 source_heading: Capability Spec

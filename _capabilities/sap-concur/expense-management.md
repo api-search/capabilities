@@ -42,55 +42,55 @@ personas: []
 provider_name: SAP Concur
 provider_slug: sap-concur
 search_terms:
-- get expense entries for a report.
-- submit report
+- get expenses for a report.
+- financial services
 - individual report operations.
-- report comments.
-- get report
-- submit for approval.
-- approve report.
-- get expense
-- send back an expense report for revision.
+- create report comment
 - invoice management
+- update report
 - recall report
-- send back report
+- retrieve an expense report by id.
 - get reports to approve
 - sap concur
-- get reports pending approval.
-- retrieve an expense report by id.
-- update report
-- expense entry operations.
-- travel management
-- approve report
-- business travel
-- expense management
-- get comments
-- update an unsubmitted expense report.
-- list expense reports pending approval.
-- create comment
-- create report
-- submit an expense report for approval.
-- get expense allocations.
-- financial services
-- get a single expense entry.
-- get expenses
-- delete report
-- add a report comment.
-- approval workflows
-- add a comment to an expense report.
-- expense report lifecycle management.
-- get allocations
-- get comments on an expense report.
-- approve an expense report.
+- get expense
 - get report comments
-- create report comment
-- retrieve a report.
-- submit report.
+- get reports pending approval.
+- expense entry operations.
+- approval workflows
 - recall a submitted expense report.
-- get report comments.
-- delete an unsubmitted expense report.
+- expense report lifecycle management.
+- submit report.
+- get expenses
+- travel management
+- expense management
+- report comments.
+- send back report
+- get expense entries for a report.
+- submit report
+- delete report
+- approve report
 - create a new expense report.
-- get expenses for a report.
+- get a single expense entry.
+- get comments
+- submit an expense report for approval.
+- list expense reports pending approval.
+- delete an unsubmitted expense report.
+- get expense allocations.
+- retrieve a report.
+- business travel
+- get report comments.
+- get comments on an expense report.
+- create report
+- send back an expense report for revision.
+- get allocations
+- add a report comment.
+- add a comment to an expense report.
+- submit for approval.
+- approve an expense report.
+- approve report.
+- create comment
+- get report
+- update an unsubmitted expense report.
 slug: expense-management
 source_filename: expense-management.yaml
 source_heading: Capability Spec

@@ -62,66 +62,66 @@ personas: []
 provider_name: Absence.io
 provider_slug: absence-io
 search_terms:
-- create a new absence record for an employee.
-- hr
-- delete absence
-- list departments.
-- leave management
-- delete an absence.
-- list users
-- list all employees.
-- a specific employee record.
-- list reason types
-- get detailed information about a specific employee.
-- list all absence reason types (vacation, sick leave, parental leave, etc.).
-- unified workflow for managing employee absences, leave balances, and org structure
-- developers building integrations between absence.io and erp/hris systems
-- list employees
-- absence management
-- list locations
-- update absence
-- employee absence records.
-- employee leave allowances.
-- get user
-- organizational departments.
-- list all office locations.
-- delete an absence record permanently.
-- list absence reason types.
-- update an existing absence record (change dates, reason, etc.).
-- get absence
-- get an employee by id.
-- list allowances
-- get details of a specific absence record by its id.
-- employee absence tracking, approval workflows, and leave balance management
-- list leave allowances
-- a specific absence record.
-- employee records.
-- list departments
-- absence reason types.
-- list absence types
-- list employee leave allowances and remaining balances for the year.
-- HR Manager
-- payroll
-- update an absence.
-- list all employee absences.
-- Payroll Processor
-- Integration Developer
-- payroll teams using absence data to calculate leave deductions and entitlements
-- create a new absence record.
-- list all organizational departments.
-- hr professionals managing employee leave requests and approvals
 - list employee absences. supports date range filtering and pagination.
-- get an absence by id.
-- create absence
-- list all employees in the organization with their department and location assignments.
-- absences
-- employees
+- developers building integrations between absence.io and erp/hris systems
 - office locations.
-- list employee leave allowances.
-- list locations.
+- list employee leave allowances and remaining balances for the year.
+- get user
+- list departments
+- list employees
+- employee absence tracking, approval workflows, and leave balance management
+- organizational departments.
+- absence reason types.
+- get detailed information about a specific employee.
+- hr professionals managing employee leave requests and approvals
+- list leave allowances
+- absence management
+- list allowances
+- leave management
+- a specific absence record.
+- get details of a specific absence record by its id.
+- list departments.
+- list absence types
+- create absence
+- get absence
+- get an absence by id.
+- update an existing absence record (change dates, reason, etc.).
+- Payroll Processor
+- employee records.
+- absences
+- payroll
 - list absences
+- hr
+- list employee leave allowances.
+- payroll teams using absence data to calculate leave deductions and entitlements
+- list locations
+- list all office locations.
+- list reason types
+- list absence reason types.
+- employee leave allowances.
+- delete an absence.
+- employees
+- list all organizational departments.
+- employee absence records.
+- create a new absence record.
+- list users
+- delete absence
+- HR Manager
+- a specific employee record.
 - get employee
+- Integration Developer
+- update an absence.
+- list all employees in the organization with their department and location assignments.
+- unified workflow for managing employee absences, leave balances, and org structure
+- update absence
+- list all absence reason types (vacation, sick leave, parental leave, etc.).
+- list all employee absences.
+- list locations.
+- delete an absence record permanently.
 - organizational structure including departments, locations, and employees
+- get an employee by id.
+- list all employees.
+- create a new absence record for an employee.
 slug: absence-management
 source_filename: absence-management.yaml
 source_heading: Capability Spec

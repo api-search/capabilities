@@ -52,54 +52,54 @@ personas:
 provider_name: BeyondTrust
 provider_slug: beyondtrust
 search_terms:
+- devops engineer retrieving secrets and credentials for ci/cd pipelines
+- delete a secret
 - compliance
-- security team member managing privileged access policies and requests
-- list managed accounts
+- security
+- list systems registered in password safe
+- delete secret
 - get secret
+- managed system discovery
+- privileged access management
+- list privileged accounts available for just-in-time access
+- retrieve credentials for an approved privileged access request
+- privileged account discovery
+- retrieve a specific secret value from secrets safe
+- store a new secret in secrets safe
+- zero trust
+- individual secret operations
+- list secrets stored in beyondtrust secrets safe
+- access
+- access management
+- just-in-time access to privileged accounts on managed systems
+- delete request
+- create request
+- get a secret value
+- list access requests
+- secrets management
+- list managed systems
+- just in time access
+- secure storage and retrieval of secrets and credentials
+- list managed accounts
+- get credentials for approved request
+- create secret
+- security team member managing privileged access policies and requests
 - create an access request
-- cancel and delete an access request
-- access request management
 - list requests
 - list secrets
-- beyondtrust
-- just in time access
-- privileged access management
-- delete request
-- list secrets stored in beyondtrust secrets safe
-- get request credentials
-- delete secret
-- list privileged accounts available for just-in-time access
-- list all active privileged access requests
-- store a new secret in secrets safe
-- credential retrieval for approved requests
-- secure storage and retrieval of secrets and credentials
-- retrieve credentials for an approved privileged access request
-- list systems registered in password safe
-- secrets
-- delete a secret
-- list access requests
-- zero trust
-- managed system discovery
-- create a new secret
-- privileged account discovery
-- devops engineer retrieving secrets and credentials for ci/cd pipelines
-- create a just-in-time access request for a privileged account
 - privileged access
-- list managed systems
-- retrieve a specific secret value from secrets safe
-- access management
-- access
-- create secret
-- get a secret value
-- get credentials for approved request
-- individual secret operations
-- security engineer
-- security
-- create request
-- just-in-time access to privileged accounts on managed systems
-- devops engineer
-- secrets management
 - credentials
+- create a just-in-time access request for a privileged account
+- access request management
+- cancel and delete an access request
+- beyondtrust
+- security engineer
+- get request credentials
+- credential retrieval for approved requests
+- list all active privileged access requests
+- create a new secret
+- devops engineer
+- secrets
 slug: privileged-access-management
 source_filename: privileged-access-management.yaml
 source_heading: Capability Spec

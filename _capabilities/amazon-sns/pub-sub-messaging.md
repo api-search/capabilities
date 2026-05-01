@@ -31,52 +31,52 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- list topics
-- messaging
 - set attributes on an sns topic
-- check if a phone number has opted out of sms
-- delete an sns topic
-- create platform application
+- topic management
+- publish a message to a topic or endpoint
+- unsubscribe from a topic
+- notifications
+- unsubscribe
+- get subscription attributes
+- amazon
 - tag resource
 - publish a message to a topic
-- create a subscription
-- sms
+- check if a phone number has opted out of sms
+- list tags for an sns resource
+- email
+- create a subscription to a topic
+- list subscriptions by topic
+- aws
+- subscription management
+- list subscriptions
+- list all sns topics
+- subscribe
+- get sms attributes
+- check phone opted out
+- create platform application
+- publish up to 10 messages in a batch
+- set topic attributes
+- get attributes of an sns topic
 - push notifications
 - get sms messaging attributes
-- amazon
-- email
-- aws
-- get topic attributes
-- subscribe
-- publish up to 10 messages in a batch
-- unsubscribe
-- pub/sub
+- sms
+- create topic
+- messaging
+- delete an sns topic
 - delete topic
-- list all sns topics
+- create a new sns topic
 - list tags
 - list subscriptions for a specific topic
-- list all subscriptions
-- create a subscription to a topic
-- topic management
-- list subscriptions
-- check phone opted out
-- get sms attributes
-- message publishing
-- get attributes of a subscription
-- create a new sns topic
-- publish batch
-- publish a message to a topic or endpoint
-- get subscription attributes
-- list tags for an sns resource
-- get attributes of an sns topic
-- create topic
-- unsubscribe from a topic
-- list subscriptions by topic
-- subscription management
+- get topic attributes
 - add tags to an sns resource
+- message publishing
+- publish batch
+- list all subscriptions
+- create a subscription
 - create a platform application for mobile push
-- notifications
-- set topic attributes
+- get attributes of a subscription
+- pub/sub
+- list topics
 - publish
 slug: pub-sub-messaging
 source_filename: pub-sub-messaging.yaml

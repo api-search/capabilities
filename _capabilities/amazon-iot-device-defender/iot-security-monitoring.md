@@ -16,32 +16,32 @@ provider_name: Amazon IoT Device Defender
 provider_slug: amazon-iot-device-defender
 search_terms:
 - compliance
-- amazon iot device defender list violations
-- create security profile
-- amazon iot device defender resources
+- security
 - amazon iot device defender start audit
 - amazon iot device defender create security profile
-- amazon iot device defender list security profiles
-- amazon iot device defender describe security profile
-- amazon iot device defender list audit tasks
-- list violations
-- list audit findings
-- aws
-- amazon iot device defender list detect mitigations
-- manages amazon iot device defender resources and operations
-- list security profiles
-- list audit tasks
-- security service for iot fleet auditing and anomaly detection.
-- amazon iot device defender list audit findings
-- describe security profile
-- start audit
 - Security Engineer
+- start audit
+- amazon iot device defender list audit findings
+- amazon iot device defender describe security profile
+- manages amazon iot device defender resources and operations
+- aws
 - list detect mitigations
-- device management
-- iot
 - vulnerability management
+- amazon iot device defender resources
+- amazon iot device defender list audit tasks
+- list audit findings
+- create security profile
+- list violations
+- device management
+- list security profiles
 - IoT Developer
-- security
+- describe security profile
+- iot
+- amazon iot device defender list violations
+- amazon iot device defender list detect mitigations
+- security service for iot fleet auditing and anomaly detection.
+- amazon iot device defender list security profiles
+- list audit tasks
 slug: iot-security-monitoring
 source_filename: iot-security-monitoring.yaml
 source_heading: Capability Spec

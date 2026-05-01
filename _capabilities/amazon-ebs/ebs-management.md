@@ -38,39 +38,39 @@ personas: []
 provider_name: Amazon EBS
 provider_slug: amazon-ebs
 search_terms:
-- attach volume
 - amazon ebs create snapshot
-- delete volume
-- detachVolume
-- amazon ebs detach volume
-- block storage management business domain for amazon ebs.
-- amazon ebs
-- describe volumes
-- amazon ebs create volume
-- aws
-- createVolume
-- attachVolume
-- describeSnapshots
-- amazon web services
-- ec2
-- snapshots
-- describeVolumes
-- createSnapshot
-- volumes
-- detach volume
-- amazon ebs describe volumes
-- block storage
-- describe snapshots
-- storage
-- amazon ebs delete volume
-- engineers managing amazon ebs resources on aws.
-- create volume
-- create snapshot
 - amazon ebs attach volume
-- amazon ebs describe snapshots
-- workflow capability for block storage management.
+- attachVolume
+- amazon ebs
+- amazon ebs detach volume
+- delete volume
+- describe volumes
+- aws
+- createSnapshot
+- attach volume
+- amazon ebs delete volume
+- amazon ebs create volume
+- amazon web services
+- block storage
+- describeVolumes
+- create volume
+- volumes
 - ebs
+- engineers managing amazon ebs resources on aws.
+- amazon ebs describe volumes
+- describe snapshots
+- describeSnapshots
 - deleteVolume
+- amazon ebs describe snapshots
+- createVolume
+- block storage management business domain for amazon ebs.
+- detach volume
+- detachVolume
+- workflow capability for block storage management.
+- create snapshot
+- ec2
+- storage
+- snapshots
 slug: ebs-management
 source_filename: ebs-management.yaml
 source_heading: Capability Spec

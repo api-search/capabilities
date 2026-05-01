@@ -59,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list vendors
-- sales
-- list inventory items
-- dynamics 365
-- list journals
-- list sales orders
-- navision
-- list customers
-- create a sales order
-- business central
-- inventory
+- inventory items
+- finance
 - list employees
-- general journals
-- create vendor
+- create a sales order
 - get a customer
-- list general ledger accounts
-- create a new inventory item
-- list all purchase orders
-- create a new sales order
-- list all sales orders
-- vendor management
-- company information
-- list all vendors
-- sales invoices
-- customer management
+- list customers
+- general journals
 - create a new vendor
+- dynamics 365
+- list vendors
 - list purchase invoices
-- list items
-- erp
-- purchase orders
-- list all customers
-- list all employees
-- business management
-- create item
-- create purchase order
-- list all items
-- list available companies
-- sales orders
-- general ledger accounts
-- create customer
-- create a customer
-- list accounts
 - list sales invoices
-- get a customer by id
+- list all sales orders
+- list inventory items
+- list general ledger accounts
+- list all purchase orders
 - create a new customer
+- company information
 - microsoft
-- create a new purchase order
-- list general journals
-- list companies
-- single customer
+- create customer
+- list all items
+- sales invoices
+- vendor management
+- customer management
+- list all vendors
+- sales orders
+- purchase orders
+- create item
+- general ledger accounts
+- list journals
+- list accounts
 - get customer
+- list available companies
+- list items
+- create a customer
+- list general journals
 - create sales order
+- inventory
+- navision
+- list companies
+- list sales orders
 - list purchase orders
+- list all employees
+- create a new inventory item
+- create a new sales order
+- create purchase order
+- list all customers
 - purchasing
 - dynamics nav
-- finance
-- inventory items
+- sales
+- business central
+- create a new purchase order
+- get a customer by id
+- create vendor
+- business management
+- single customer
+- erp
 slug: business-operations
 source_filename: business-operations.yaml
 source_heading: Capability Spec

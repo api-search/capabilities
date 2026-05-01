@@ -35,58 +35,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- list qod sessions
-- list active qod sessions
-- IoT Engineer
-- network-based security signals for fraud detection and identity verification
-- qod create session
-- quality of service
-- network-based fraud prevention and authentication using sim swap and number verification
-- check connectivity
-- check device connectivity and network connection type
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- get qod session
-- Identity Developer
-- sim swap
-- device connectivity status
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- device roaming status
-- device check roaming
-- edge computing
-- camara
-- list active quality on demand sessions for the application
-- Security Developer
-- 5g network quality monitoring and on-demand qos enhancement
-- check roaming
-- individual qod session
-- qod terminate session
 - check if device is roaming
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- check if an at&t subscriber device is roaming on a partner network and get location
-- qod get session
-- terminate an active quality on demand session and restore normal network quality
-- get the current status of a quality on demand session
-- network performance
-- device status
-- telecommunications
-- delete qod session
-- create qod session
-- 5g
-- quality on demand session management
+- 5g network quality monitoring and on-demand qos enhancement
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- Identity Developer
 - developer building fraud prevention and identity verification using network signals
-- get qod session status
+- qod terminate session
+- device connectivity status
+- terminate an active quality on demand session and restore normal network quality
+- device status
 - connectivity
 - terminate qod session
-- device check connectivity
-- developer implementing passwordless or frictionless mobile authentication
-- qod list sessions
-- mobile or web developer building connectivity-aware applications
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
-- request enhanced qos for a device
-- App Developer
-- mobile network-based authentication without otp
-- at&t
+- edge computing
+- network-based fraud prevention and authentication using sim swap and number verification
+- device check roaming
 - network apis
+- IoT Engineer
+- get qod session
+- camara
+- create qod session
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
+- list qod sessions
+- get the current status of a quality on demand session
+- network-based security signals for fraud detection and identity verification
+- get qod session status
+- mobile or web developer building connectivity-aware applications
+- check if an at&t subscriber device is roaming on a partner network and get location
+- list active quality on demand sessions for the application
+- at&t
+- Security Developer
+- telecommunications
+- request enhanced qos for a device
+- delete qod session
+- device roaming status
+- qod get session
+- 5g
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- quality of service
+- check connectivity
+- network performance
+- sim swap
+- check device connectivity and network connection type
+- device check connectivity
+- individual qod session
+- qod create session
+- App Developer
+- developer implementing passwordless or frictionless mobile authentication
+- list active qod sessions
+- mobile network-based authentication without otp
+- qod list sessions
+- check roaming
+- quality on demand session management
 slug: network-performance
 source_filename: network-performance.yaml
 source_heading: Capability Spec

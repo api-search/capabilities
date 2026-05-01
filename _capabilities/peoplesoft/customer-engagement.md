@@ -68,47 +68,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- sales
-- list cases
-- retrieve support and service cases.
-- fulfill intent
-- list customers
-- retrieve details for a specific customer.
-- chatbot intents
-- chatbot intent fulfillments
-- create case
-- notification management
-- campus solutions.
-- case management
-- enterprise software
-- crm
-- list notifications
-- send a notification via email, text, or in-app channels.
-- list opportunities
-- human capital management.
-- hcm
-- customer engagement
-- erp
-- list intents
-- retrieve sales opportunities.
-- create a new support or service case.
-- financial management
-- financial and supply chain management.
-- individual customer details
-- chatbot
-- retrieve available chatbot intents.
-- supply chain management
-- support and service cases
-- process a chatbot intent fulfillment request.
-- retrieve customer records.
-- retrieve notifications for the current user.
-- sales opportunities
-- campus solutions
-- peopletools platform services.
-- peoplesoft
-- get customer
 - send notification
+- crm
+- process a chatbot intent fulfillment request.
+- support and service cases
+- list customers
+- supply chain management
+- retrieve notifications for the current user.
+- hcm
+- retrieve customer records.
+- campus solutions
+- retrieve sales opportunities.
+- peoplesoft
+- fulfill intent
+- peopletools platform services.
+- list cases
+- list intents
+- case management
+- customer engagement
+- chatbot intents
+- notification management
+- get customer
+- send a notification via email, text, or in-app channels.
+- campus solutions.
+- retrieve details for a specific customer.
+- chatbot
+- chatbot intent fulfillments
+- individual customer details
 - customer records
+- retrieve available chatbot intents.
+- sales
+- enterprise software
+- sales opportunities
+- create a new support or service case.
+- human capital management.
+- list notifications
+- financial management
+- retrieve support and service cases.
+- financial and supply chain management.
+- create case
+- list opportunities
+- erp
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

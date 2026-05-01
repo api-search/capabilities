@@ -19,57 +19,57 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- api gateway
-- object storage
-- stream get video
-- video
-- video management.
-- real-time communication
-- image management.
-- containers
+- list live streaming inputs.
 - cdn
-- images get image
-- web performance
+- images upload image
+- stream create live input
+- stream list live inputs
+- security
+- containers
+- list images
+- delete a video.
+- upload a video from url.
+- list images.
+- platform
+- edge computing
 - serverless
+- delete an image.
+- get image details.
+- ai gateway
+- list videos.
+- images list images
+- object storage
+- video management.
+- image management.
+- stream upload video
+- ddos protection
+- stream delete video
+- get video details.
 - list all videos.
 - images create direct upload
-- stream list videos
-- edge
-- stream upload video
-- dns
-- delete a video.
 - images delete image
-- stream list live inputs
-- list image variants.
-- edge computing
-- create a direct upload url for images.
-- images
 - stream create direct upload
-- images list variants
-- images list images
-- list images
-- list live streaming inputs.
-- ddos protection
-- list videos
+- web performance
 - create a direct upload url.
-- delete an image.
-- ai gateway
-- cloudflare
-- media
-- stream delete video
-- list all images.
-- platform
-- stream create live input
+- images
+- images list variants
 - artificial intelligence
+- media
+- real-time communication
+- list all images.
+- stream get video
+- cloudflare
+- video
+- edge
+- stream list videos
 - upload an image.
 - cloud
-- images upload image
-- get image details.
-- list videos.
-- security
-- get video details.
-- list images.
-- upload a video from url.
+- dns
+- images get image
+- create a direct upload url for images.
+- api gateway
+- list image variants.
+- list videos
 - create a live streaming input.
 slug: media-and-content
 source_filename: media-and-content.yaml

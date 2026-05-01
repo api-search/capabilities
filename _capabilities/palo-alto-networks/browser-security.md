@@ -49,109 +49,109 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- xdr
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- get browser policy
-- prisma access
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- tenant operator
-- red team operator
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- soar
-- manage browser deployments across platforms.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- ai security engineer
-- compliance officer
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- sre
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- cloud security
-- update a specific browser policy by id.
-- firewall
-- create browser deployment
-- list all browser users with pagination.
-- create a new browser policy.
-- platform engineer
-- create a new browser deployment.
-- sase
-- create browser policy
-- analyzes suspicious files and samples for malware characteristics.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- designs and implements network security architectures and policies.
-- incident responder
-- identity and access management, tenant hierarchies, and subscription management.
-- enterprise browser
-- update browser policy
-- vulnerability manager
-- delete browser policy
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- compliance team
-- cloud security engineer
-- saas security admin
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- manages multi-tenant security operations at scale for managed service providers.
-- sd wan operator
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- get a specific browser policy by id.
-- subscription manager
-- ai runtime security scanning and automated red teaming for ai applications.
-- executes containment, eradication, and recovery actions during security incidents.
-- proactively searches for threats and iocs across telemetry data.
-- get user sessions
-- get sessions for a specific browser user.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- researches threat actors, malware campaigns, and vulnerability trends.
-- soc analyst
-- list browser policies
-- network security
-- network operations
-- enterprise browser policy management and secure browsing.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- list all browser deployments with pagination.
-- threat intel analyst
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- manages service accounts, roles, and access policies for platform api access.
-- get sessions for a specific user.
 - threat hunter
-- enterprise it
-- browser security admin
-- network security engineer
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- malware researcher
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- manages enterprise browser policies and secure browsing configurations.
-- list browser deployments
-- delete a specific browser policy by id.
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manage enterprise browser policies, user sessions, and deployments.
-- mssp operator
-- cybersecurity
-- network architect
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- manage enterprise browser security policies.
-- digital experience monitoring, log management, and best practice assessment.
-- sase admin
-- designs sase and sd-wan network architectures for secure remote access.
-- data protection analyst
-- monitors network health, performance, and digital experience metrics.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- list all browser deployments with pagination.
 - palo alto networks
-- data loss prevention, saas security monitoring, and identity security posture.
 - manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- sase admin
+- network security engineer
+- delete browser policy
+- update browser policy
+- manages logging infrastructure, integrations, and platform automation.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- list browser policies
+- soar
+- executes containment, eradication, and recovery actions during security incidents.
+- digital experience monitoring, log management, and best practice assessment.
+- manages enterprise browser policies and secure browsing configurations.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- mssp operator
+- manage browser deployments across platforms.
+- get browser policy
+- create browser deployment
+- manage enterprise browser policies, user sessions, and deployments.
+- sre
+- incident responder
+- list all browser users with pagination.
+- analyzes suspicious files and samples for malware characteristics.
+- designs sase and sd-wan network architectures for secure remote access.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- soc analyst
+- threat intel analyst
+- saas security admin
+- secures ai applications with runtime scanning and vulnerability assessment.
+- list browser users
+- subscription manager
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- cloud security
+- ai security engineer
+- network security
+- get sessions for a specific user.
+- browser security
+- xdr
+- update a specific browser policy by id.
+- enterprise browser
+- enterprise it
+- data protection analyst
+- manage a specific browser policy by id.
+- identity and access management, tenant hierarchies, and subscription management.
+- get a specific browser policy by id.
+- platform engineer
 - investigates dlp incidents and manages sensitive data protection policies.
+- list browser deployments
+- cybersecurity
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- cloud security posture management, compliance monitoring, and workload protection.
+- browser security admin
+- get sessions for a specific browser user.
+- manage enterprise browser security policies.
+- vulnerability manager
+- get user sessions
+- conducts automated adversarial testing against ai systems and llm applications.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
 - firewall admin
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- sase
+- data loss prevention, saas security monitoring, and identity security posture.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- prisma access
+- red team operator
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manages multi-tenant security operations at scale for managed service providers.
+- threat intelligence
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- delete a specific browser policy by id.
+- cloud security engineer
+- enterprise browser policy management and secure browsing.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- compliance officer
+- create a new browser policy.
+- network operations
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- list enterprise browser users.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- firewall
 - list all browser policies with pagination.
 - iam admin
-- manages logging infrastructure, integrations, and platform automation.
-- browser security
-- threat intelligence
-- cloud security posture management, compliance monitoring, and workload protection.
-- list enterprise browser users.
-- conducts automated adversarial testing against ai systems and llm applications.
-- manage a specific browser policy by id.
-- list browser users
+- sd wan operator
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- ai runtime security scanning and automated red teaming for ai applications.
+- create browser policy
+- create a new browser deployment.
+- proactively searches for threats and iocs across telemetry data.
+- compliance team
+- monitors network health, performance, and digital experience metrics.
+- manages service accounts, roles, and access policies for platform api access.
+- network architect
+- tenant operator
+- malware researcher
+- designs and implements network security architectures and policies.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
 slug: browser-security
 source_filename: browser-security.yaml
 source_heading: Capability Spec

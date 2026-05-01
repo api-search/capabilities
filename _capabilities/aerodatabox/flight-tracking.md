@@ -37,49 +37,49 @@ personas: []
 provider_name: AeroDataBox
 provider_slug: aerodatabox
 search_terms:
-- find nearby airports.
-- track a flight by number.
-- flights
-- look up an aircraft.
-- get aircraft
-- find airports near a geographic location.
-- airport information, runway data, and location search.
-- aerodatabox
-- look up aircraft details by tail number or icao24 hex code.
-- airport operations
-- track a flight in real-time by flight number or callsign.
-- real-time and historical flight tracking, status monitoring, and fids data.
-- flight data
-- aviation
-- get fleet for an airline.
-- get all aircraft in an airline's fleet.
-- aircraft registrations, fleet composition, and aircraft imagery.
-- travel
-- search airports
-- retrieve airport details.
-- get airline fleet
-- builds flight tracking, travel, and aviation applications using aerodatabox apis.
-- search airports by location.
-- get flight status data.
-- get details for an airport by iata or icao code.
-- get airport departures and arrivals.
-- get fids for an airport.
-- get airport information.
-- get airport departures arrivals
-- get aircraft data.
-- analyzes aviation performance, delay patterns, and route statistics using historical data.
-- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
-- airport data
-- get airport
-- integrates flight data into travel booking and notification systems.
-- flight tracking
-- get flight status
-- aerospace
-- get airline fleet.
-- search airports near location
 - get airport fids
 - get all departures and arrivals at an airport for a time window.
+- retrieve airport details.
+- search airports by location.
+- get airline fleet.
+- get airline fleet
+- airport operations
+- travel
+- look up an aircraft.
+- integrates flight data into travel booking and notification systems.
+- aircraft registrations, fleet composition, and aircraft imagery.
+- find airports near a geographic location.
+- airport information, runway data, and location search.
+- flights
 - delay statistics, route performance, and trend analysis.
+- get airport information.
+- get airport departures and arrivals.
+- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
+- flight data
+- get airport
+- search airports near location
+- aerospace
+- look up aircraft details by tail number or icao24 hex code.
+- analyzes aviation performance, delay patterns, and route statistics using historical data.
+- aerodatabox
+- get airport departures arrivals
+- get fids for an airport.
+- get details for an airport by iata or icao code.
+- search airports
+- get flight status data.
+- real-time and historical flight tracking, status monitoring, and fids data.
+- get fleet for an airline.
+- get flight status
+- builds flight tracking, travel, and aviation applications using aerodatabox apis.
+- airport data
+- flight tracking
+- get all aircraft in an airline's fleet.
+- get aircraft data.
+- track a flight in real-time by flight number or callsign.
+- find nearby airports.
+- aviation
+- get aircraft
+- track a flight by number.
 slug: flight-tracking
 source_filename: flight-tracking.yaml
 source_heading: Capability Spec

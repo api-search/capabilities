@@ -9,21 +9,21 @@ personas: []
 provider_name: Apache POI
 provider_slug: apache-poi
 search_terms:
-- developer generating automated excel or word reports
-- extracting structured data from office file formats
-- engineer extracting and transforming data from office files
-- apache
-- java developer building office document generation features
-- end-to-end workflow for creating and manipulating office documents
-- excel
 - workflow for extracting data from excel, word, and powerpoint files
+- document processing
+- end-to-end workflow for creating and manipulating office documents
+- engineer extracting and transforming data from office files
+- excel
+- developer generating automated excel or word reports
 - word
-- java
-- creation, manipulation, and conversion of office documents
+- microsoft office
 - powerpoint
 - open source
-- document processing
-- microsoft office
+- java
+- apache
+- extracting structured data from office file formats
+- creation, manipulation, and conversion of office documents
+- java developer building office document generation features
 slug: poi-workflow
 source_filename: poi-workflow.yaml
 source_heading: Capability Spec

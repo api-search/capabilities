@@ -10,14 +10,14 @@ personas: []
 provider_name: Amazon Cloud9
 provider_slug: amazon-cloud9
 search_terms:
+- Software Developer
+- amazon cloud9
+- browser-based
 - development
 - aws
-- Software Developer
-- browser-based
-- amazon web services
-- cloud9
-- amazon cloud9
 - ide
+- cloud9
+- amazon web services
 slug: development-environment
 source_filename: development-environment.yaml
 source_heading: Capability Spec

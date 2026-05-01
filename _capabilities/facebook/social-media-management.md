@@ -33,56 +33,56 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- create and publish instagram content.
-- create facebook post
-- Social Media Manager
-- social media
-- messaging
-- get instagram performance insights.
-- facebook
 - facebook post management.
-- publishing and managing content across platforms.
-- Content Creator
-- direct messaging and customer communication.
-- create threads post
-- content management
-- social networking
-- content publishing
-- publishing
-- create a new facebook post.
-- list posts
-- performance tracking and insights.
-- get threads performance insights.
-- threads content management.
-- Ad Operations
-- handles customer inquiries via messaging channels.
-- get posts from a user's feed.
-- get threads insights
-- campaign management and audience targeting.
-- instagram content management.
-- manages day-to-day ad campaign optimization.
-- advertising
-- publish instagram media.
-- create a threads post.
-- creates and publishes visual and text content.
-- plans and executes advertising campaigns.
-- get facebook feed
-- list instagram media for an account.
-- manages content and engagement across meta platforms.
-- create post
-- publish instagram media
-- list instagram media.
 - create instagram media
+- manage content across facebook, instagram, and threads.
+- Social Media Manager
+- customer messaging across messenger and whatsapp.
+- list instagram media for an account.
+- get instagram insights
+- creates and publishes visual and text content.
+- direct messaging and customer communication.
+- create and publish instagram content.
+- manages day-to-day ad campaign optimization.
+- publishing and managing content across platforms.
+- create post
+- get posts from a facebook user's feed.
+- Content Creator
+- Conversational Commerce
+- get posts from a user's feed.
+- content management
+- advertising
+- list posts
 - create a new threads post.
 - Marketing Manager
-- manage content across facebook, instagram, and threads.
-- customer messaging across messenger and whatsapp.
-- Customer Support
-- Conversational Commerce
-- manage advertising campaigns and performance.
+- campaign management and audience targeting.
+- create facebook post
+- plans and executes advertising campaigns.
+- list instagram media.
+- instagram content management.
 - list instagram media
-- get posts from a facebook user's feed.
-- get instagram insights
+- get threads insights
+- facebook
+- social media
+- performance tracking and insights.
+- get instagram performance insights.
+- create a threads post.
+- publish instagram media.
+- manage advertising campaigns and performance.
+- messaging
+- social networking
+- manages content and engagement across meta platforms.
+- Customer Support
+- create a new facebook post.
+- get threads performance insights.
+- publishing
+- handles customer inquiries via messaging channels.
+- Ad Operations
+- get facebook feed
+- threads content management.
+- publish instagram media
+- create threads post
+- content publishing
 slug: social-media-management
 source_filename: social-media-management.yaml
 source_heading: Capability Spec
